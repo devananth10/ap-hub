@@ -32,7 +32,7 @@ Development builds use `.next-preview/`, while production builds use `.next/`. B
 - Six-bullet **demo** summary from original topic notes; no AI backend or video analysis.
 - One original, unscored **demo MCQ**. Its answer is retained while switching study tabs during the session. Original MCQs, FRQs, and a question bank are planned.
 - Prominent **Start Practice** actions on the dashboard, course cards, course outlines, units, topics, and Study Workspace. The practice page filters by course, unit, and topic; empty scopes explain that questions are coming soon. FRQ and mixed modes are visibly disabled.
-- Eight original lightweight SVG designs: chemistry, biology, calculus, physics, computer science, history, geography, and literature. Only the home hero chooses randomly on each fresh load. Course cards, course pages, and workspaces use their fixed subject artwork.
+- Eight original lightweight SVG designs: chemistry, biology, calculus, physics, computer science, history, geography, and literature. Only the home hero chooses randomly on each fresh load. Course pages and workspaces use their fixed subject artwork. Course cards stay minimal, with soft subject colors and a simple icon.
 - Responsive layouts, keyboard tab navigation, friendly missing-page states, and a warning when local saving fails.
 
 ## Official resources: owner approval required

@@ -2,6 +2,8 @@
 
 Verified October 17, 2026, for the practice navigation and academic artwork milestone, building on the existing prototype.
 
+Follow-up: simplified every subject card to its original soft color background, category label, and single subject icon. Removed the detailed SVG scenes from the shared card component. The home hero and course/workspace illustrations remain unchanged. Updated the dashboard screenshot after checking Local Preview; TypeScript, production build, and the existing automated suite passed again.
+
 ## Automated checks
 
 - TypeScript check: passed.
