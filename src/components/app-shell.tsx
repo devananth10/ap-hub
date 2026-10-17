@@ -46,7 +46,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
       if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
     }}>
-      <Link href="/" className="brand"><span className="brand-mark"><GraduationCap size={23} /></span><span>AP<span className="brand-hub">hub</span><span className="brand-dot">.</span></span></Link>
+      <Link href="/" className="brand"><span className="brand-mark"><GraduationCap size={23} /></span><span>Prep<span className="brand-hub">Atlas</span><span className="brand-dot">.</span></span></Link>
       <button className="icon-button sidebar-close" aria-label="Close menu" onClick={() => { setMobileOpen(false); mobileTrigger.current?.focus(); }}><X size={19} /></button>
       <span className="workspace-label">YOUR STUDY SPACE</span>
       <nav className="main-nav">{nav.map(({ href, label, icon: Icon }) => <Link href={href} key={href} className={`nav-link ${path === href || href === "/courses" && path.startsWith("/courses/") ? "active" : ""}`} aria-current={path === href ? "page" : undefined}><Icon size={19} strokeWidth={1.7} /><span>{label}</span>{path === href && <span className="active-dot" />}</Link>)}</nav>
@@ -56,12 +56,12 @@ export function AppShell({ children }: { children: ReactNode }) {
       <div className="local-profile"><span className="avatar">Y</span><span><strong>Your workspace</strong><small>Saved on this device</small></span><span className="online-dot" /></div></div>
     </aside>
     <div className="app-body" inert={isMobile && mobileOpen}>
-      <header className="topbar"><div className="header-left"><button ref={mobileTrigger} className="icon-button mobile-menu" aria-label={mobileOpen ? "Close menu" : "Open menu"} aria-expanded={mobileOpen} onClick={() => setMobileOpen((open) => !open)}>{mobileOpen ? <X size={20} /> : <Menu size={20} />}</button><span className="breadcrumb-top">My workspace <ChevronRight size={14} /><strong>{path === "/" ? "Overview" : path.startsWith("/courses/") ? "Study space" : nav.find((item) => item.href === path)?.label || "AP Hub"}</strong></span></div>
+      <header className="topbar"><div className="header-left"><button ref={mobileTrigger} className="icon-button mobile-menu" aria-label={mobileOpen ? "Close menu" : "Open menu"} aria-expanded={mobileOpen} onClick={() => setMobileOpen((open) => !open)}>{mobileOpen ? <X size={20} /> : <Menu size={20} />}</button><span className="breadcrumb-top">My workspace <ChevronRight size={14} /><strong>{path === "/" ? "Overview" : path.startsWith("/courses/") ? "Study space" : nav.find((item) => item.href === path)?.label || "PrepAtlas"}</strong></span></div>
         <div className="header-actions"><button className="search-trigger" aria-label="Search courses and topics" onClick={() => setSearchOpen(true)}><Search size={17} /><span>Find a course or topic</span><kbd><Command size={10} /> K</kbd></button><span className="header-divider" /><button className="icon-button theme-toggle" aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`} onClick={toggleTheme}>{theme === "light" ? <Moon size={20} /> : <Sun size={20} />}</button><span className="avatar header-avatar">Y</span></div>
       </header>
       {storageError && <div className="storage-warning" role="alert">Local saving is unavailable. Keep this tab open and copy any important notes before leaving.</div>}
       <main id="main-content" className="main-content">{children}</main>
-      <footer className="app-footer"><span>A little more understanding, every day.</span><span>AP Hub prototype <span>·</span> Independent of College Board</span></footer>
+      <footer className="app-footer"><span>A little more understanding, every day.</span><span>PrepAtlas prototype <span>·</span> Independent of College Board</span></footer>
     </div>
     {pickerOpen && <CoursePicker onClose={() => setPickerOpen(false)} />}
     {searchOpen && <SearchDialog onClose={() => setSearchOpen(false)} />}

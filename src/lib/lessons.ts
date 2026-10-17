@@ -1,11 +1,9 @@
-import { resources, topicKey, video } from "./courses";
+import { topicKey } from "./courses";
 
 export type PracticeDemo = { prompt: string; options: string[]; correctIndex: number; explanation: string };
 export type Lesson = {
   tagline: string;
   posterHeading: string;
-  video: typeof video;
-  resources: typeof resources;
   overview: { heading: string; introduction: string; objectives: string[]; prompt: string };
   sampleRecap: string[];
   practice: PracticeDemo;
@@ -16,8 +14,6 @@ export const lessons: Record<string, Lesson> = {
   [topicKey("chemistry", "electron-configuration")]: {
     tagline: "Small particles. A bigger understanding of how matter works.",
     posterHeading: "It all starts\nwith electrons.",
-    video,
-    resources,
     overview: {
       heading: "Understand the arrangement.",
       introduction: "Explore how electrons are organized into shells, subshells, and orbitals, then connect that arrangement to an element’s place in the periodic table.",
@@ -26,12 +22,15 @@ export const lessons: Record<string, Lesson> = {
         "Write a ground-state electron configuration for a main-group atom.",
         "Identify core and valence electrons.",
       ],
-      prompt: "Pause and count the electrons in each configuration. Does the total match the atomic number?",
+      prompt: "Count the electrons in each configuration you write. Does the total match the atomic number?",
     },
     sampleRecap: [
       "Electron configurations describe how electrons occupy atomic orbitals.",
       "Each orbital holds up to two electrons with opposite spins.",
       "For a neutral atom, the total number of electrons equals its atomic number.",
+      "The s and p subshells can hold up to 2 and 6 electrons, respectively.",
+      "Ground-state arrangements occupy lower-energy orbitals first, with exceptions for some elements.",
+      "Valence electrons help explain bonding patterns and periodic trends.",
     ],
     practice: {
       prompt: "Which is the ground-state electron configuration of a neutral oxygen atom (atomic number 8)?",

@@ -1,6 +1,6 @@
 # Saving milestones to GitHub
 
-The local StudyHub directory is the working copy. Git records meaningful checkpoints as commits, and pushing sends those commits to the GitHub repository. Saving a file alone does not upload it.
+The local project directory is the working copy. Git records meaningful checkpoints as commits, and pushing sends those commits to the GitHub repository. Saving a file alone does not upload it.
 
 ## Milestone workflow
 
@@ -21,7 +21,7 @@ The local StudyHub directory is the working copy. Git records meaningful checkpo
    pnpm test
    ```
 
-   Stop that verification server with Ctrl+C when finished. Keep your normal preview server running. Do not run a production build while `pnpm dev` is using the same `.next` directory.
+   Stop that verification server with Ctrl+C when finished. Keep your normal preview server running. Development output uses `.next-preview` and production output uses `.next`, so a production validation build can run while the development preview stays available.
 
 4. Stage only the files belonging to the milestone, review the staged diff, and commit:
 

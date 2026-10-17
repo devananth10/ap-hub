@@ -1,4 +1,16 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+
+const catalog = JSON.parse(readFileSync(new URL("../src/config/official-resources.json", import.meta.url), "utf8"));
+const approved = catalog.resources.filter((resource) => resource.approval?.status === "approved");
+const draftUrls = catalog.resources.filter((resource) => resource.approval?.status !== "approved").map((resource) => resource.url);
+const chemistryResources = approved.filter((resource) => resource.courseId === "chemistry" && resource.unitNumber === 1 && (!resource.topicIds.length || resource.topicIds.includes("electron-configuration")));
+const withdrawnUrls = [
+  "https://www.youtube.com/watch?v=2AFPfg0Como",
+  "https://www.bozemanscience.com/ap-chem-005-electron-configuration",
+  "https://openstax.org/books/chemistry-2e/pages/6-4-electronic-structure-of-atoms-electron-configurations",
+  "https://www.rsc.org/periodic-table",
+].filter((url) => !approved.some((resource) => resource.url === url));
 
 const base = process.env.BASE_URL || "http://127.0.0.1:3000";
 const cases = [
@@ -22,6 +34,15 @@ for (const [path, expected] of cases) {
   assert.ok(html.includes(expected), `${path} should render ${expected}`);
   assert.ok(!html.includes("NEXT_REDIRECT"), `${path} should not redirect unexpectedly`);
   assert.ok(html.includes('lang="en"'), "Document language should be declared");
+  assert.ok(html.includes("PrepAtlas"), `${path} should use PrepAtlas branding`);
+  assert.ok(!/AP Hub|APHub|StudyHub/.test(html), `${path} should not render old branding`);
+  for (const url of [...draftUrls, ...withdrawnUrls]) assert.ok(!html.replaceAll("&amp;", "&").includes(url), `${path} should not expose an unapproved or withdrawn URL`);
+  assert.ok(!/youtube-nocookie\.com\/embed\//.test(html), `${path} should not embed an unapproved video`);
+  if (path.endsWith("electron-configuration")) {
+    if (!chemistryResources.some((resource) => resource.kind === "video")) assert.ok(html.includes("No approved videos yet"), "Video area should explain the approval state");
+    if (!chemistryResources.length) assert.ok(html.includes("No approved resources yet"), "Resource area should explain the approval state");
+    assert.ok(!html.includes('id="topic-notes"'), "Notes should be hidden by default");
+  }
   console.log(`PASS ${path}`);
 }
 const home = await (await fetch(base)).text();

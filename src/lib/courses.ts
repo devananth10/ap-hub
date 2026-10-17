@@ -60,16 +60,6 @@ export const courses: Course[] = [
 export const exampleTopic = courses[0].units[0].topics[4];
 export const topicKey = (courseId: string, topicId: string) => `${courseId}/${topicId}`;
 export const lessonHref = "/courses/chemistry/electron-configuration";
-export const video = {
-  id: "2AFPfg0Como", title: "Electron Configuration", creator: "Bozeman Science",
-  source: "https://www.bozemanscience.com/ap-chem-005-electron-configuration",
-  url: "https://www.youtube.com/watch?v=2AFPfg0Como",
-};
-export const resources = [
-  { id: "openstax", title: "Electron configurations, explained", publisher: "OpenStax · Chemistry 2e", type: "Reading", description: "A deeper look at orbitals, filling order, and electron arrangements.", url: "https://openstax.org/books/chemistry-2e/pages/6-4-electronic-structure-of-atoms-electron-configurations" },
-  { id: "bozeman", title: "The companion lesson", publisher: "Bozeman Science", type: "Video & resources", description: "Visit the creator’s original lesson and supporting resource links.", url: video.source },
-  { id: "periodic-table", title: "Interactive periodic table", publisher: "Royal Society of Chemistry", type: "Reference", description: "Explore elements and check their atomic numbers as you study.", url: "https://www.rsc.org/periodic-table" },
-];
 export function findTopic(courseId: string, topicId: string) {
   const course = courses.find((item) => item.id === courseId);
   const unit = course?.units.find((item) => item.topics.some((topic) => topic.id === topicId));

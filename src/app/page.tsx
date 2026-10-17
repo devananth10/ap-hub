@@ -1,2 +1,3 @@
 import { Dashboard } from "@/components/dashboard";
-export default function Home() { return <Dashboard />; }
+import { getApprovedResources } from "@/lib/official-resources";
+export default function Home() { return <Dashboard approvedResources={getApprovedResources()} />; }

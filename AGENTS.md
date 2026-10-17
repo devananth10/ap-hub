@@ -8,7 +8,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 <!-- END:nextjs-agent-rules -->
 
-## AP Hub milestone workflow
+## PrepAtlas milestone workflow
 
 The user wants this app backed up to GitHub at each logical milestone.
 
@@ -19,3 +19,11 @@ The user wants this app backed up to GitHub at each logical milestone.
 - Use normal pushes. Never force-push, discard work, merge branches, or change repository visibility without explicit authorization.
 - Use the `codex/` prefix for new feature branches. Do not create a new branch for routine milestone saves unless the task needs isolation or the user requests one.
 - If authentication or access is unavailable, preserve the local work and report that the push is pending. Never claim GitHub is up to date until the remote commit is verified.
+
+## Branding and editorial approval
+
+- The working brand is PrepAtlas. Domain and trademark availability have not been verified. Keep the existing project folder and `devananth10/ap-hub` repository.
+- Never automatically select, publish, import, or replace external educational resources. Every official resource requires the owner's explicit approval of its exact URL. A preferred creator/channel is not approval of its videos.
+- The official catalog in `src/config/official-resources.json` is intentionally empty until the owner provides approved URLs. Drafts must remain server-side and unpublished. Follow `docs/RESOURCE_APPROVAL.md` when editing the catalog. Never invent approval records.
+- Preserve the legacy browser-storage keys so branding changes do not reset student data. Keep any future student-private resource collection separate from the official catalog.
+- Preserve the live development preview at port 3000 during active work. Production output uses `.next`; development uses `.next-preview` so builds do not replace the live preview's files.

@@ -1,104 +1,107 @@
-# AP Hub
+# PrepAtlas
 
-A local-first AP study prototype built with **Next.js App Router, TypeScript, React, and Tailwind CSS**. No authentication, billing, AI service, database, API key, or environment file is needed.
+An existing Next.js, TypeScript, and Tailwind study prototype, renamed to **PrepAtlas**. This is a working brand: domain and trademark availability have not been verified. The project folder and existing GitHub repository remain unchanged.
 
-## Run locally
+## Preview the application
 
-Install Node.js 20.9 or newer and pnpm 11.25 or newer. From this project directory:
+From the project folder, with Node.js 22.18 or newer and pnpm installed:
 
 ```sh
 pnpm install
 pnpm dev
 ```
 
-Open **http://127.0.0.1:3000**. Stop the server with Ctrl+C.
+Open **http://127.0.0.1:3000** in Local Preview or your browser. Keep the development server running. Saving an application file updates the preview automatically; refresh if your browser still shows an older page. Ctrl+C stops the server. A connection-refused message means the server must be started again.
 
-If PowerShell cannot find `pnpm`, install pnpm and open a new terminal so the executable is available on PATH.
+In this Codex-bundled Windows environment, if `pnpm` is not on PATH, run this from the project folder instead:
 
-The committed `pnpm-lock.yaml` pins the dependency tree. If you prefer npm, `npm install` and `npm run dev` also work, but use one package manager consistently.
+```powershell
+& "$env:USERPROFILE/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback/pnpm.cmd" dev
+```
+
+The files are in the local project directory you opened in Codex. Its name has not changed with the brand. Source code lives in `src/`; the existing remote is [devananth10/ap-hub](https://github.com/devananth10/ap-hub). GitHub stores source code; it does not automatically keep a local server running.
+
+Development builds use `.next-preview/`, while production builds use `.next/`. Both are ignored by Git. The development preview can stay open during production validation.
 
 ## What works
 
-- Dashboard with course selection, an empty state, and real completion/note counts. Chemistry, Biology, and Calculus AB are initially selected so the layout can be explored immediately.
-- Six selectable AP course outlines. Chemistry, Biology, and Calculus include multiple units; the remaining subjects have one illustrative unit. These are prototype outlines, not complete course curricula.
-- One complete study workspace: **AP Chemistry → Unit 1 → Topic 1.5 → Atomic structure and electron configuration**.
-- Click-to-load YouTube privacy-enhanced embed, plus a direct source link when playback isn't permitted or a school network blocks YouTube. No video or third-party lesson content is downloaded or reproduced.
-- Video iframe stays mounted while opening notes or the sample summary and switching between resources, overview, and practice. Resource links open in new tabs. Leaving the topic or reloading restarts the player; cross-page timestamp restoration isn't included.
-- Optional notes, hidden initially, saved per topic in localStorage. A notes library lets you return to them. Course selection, bookmarks, completion, last topic, and theme also persist locally.
-- Quick AI summary **placeholder** with an original sample topic recap. No AI API is connected, no transcript is fetched, and no video analysis is claimed.
-- AP-style practice **placeholder** with one original unscored question and answer feedback. It is not an official AP question. No question bank or exam scoring is implemented.
-- Light/dark themes, responsive navigation, keyboard-accessible dialogs, tab navigation, mobile menu focus management, invalid-route handling, and a warning when local saving fails.
+- Dashboard, selectable course outlines, search, unit/topic navigation, and the primary AP Chemistry example workspace.
+- Optional notes, hidden until opened, with local autosave and a notes library.
+- Local course selections, official resource bookmark IDs, completion tracking, last topic, and light/dark mode.
+- Owner-approved resource cards and an approved-video selector, ready for individually approved URLs. Video frames remain mounted when notes, summaries, or study tabs change. Switching between approved videos pauses the previous player and preserves its frame; returning requires resuming it. Leaving/reloading the topic resets playback.
+- Six-bullet **demo** summary from original topic notes; no AI backend or video analysis.
+- One original, unscored **demo MCQ**. Its answer is retained while switching study tabs during the session. Original MCQs, FRQs, and a question bank are planned.
+- Responsive layouts, keyboard tab navigation, friendly missing-page states, and a warning when local saving fails.
 
-## Verify the prototype
+## Official resources: owner approval required
+
+**No external educational resources are currently approved or published.** The previously selected external resources have been removed. Jeremy Krug is the owner's preferred AP Chemistry creator, but no individual video is approved until the owner supplies its exact URL. No playlists are imported.
+
+The empty resource area is intentional. The topic overview, original practice demo, notes, and completion tracking remain usable.
+
+Use [docs/RESOURCE_APPROVAL.md](docs/RESOURCE_APPROVAL.md) for the configuration format and approval process. Edit `src/config/official-resources.json` to add, edit, unpublish, or remove entries. Every published entry needs a stable ID, valid course/unit/topic association, safe URL, and a dated owner approval reference. Draft metadata stays server-side. This is an editorial configuration system; there is no administrator UI or authentication yet.
+
+Student-private resource bookmarks are a future separate collection. Existing saved official IDs are retained locally; withdrawn/unapproved links are not displayed. The application cannot use student browser storage to publish official resources.
+
+## Data stays on this device
+
+The existing internal storage keys are intentionally unchanged by the rename. Notes, selections, completion, saved IDs, and theme remain available at the same browser origin. Clearing site data, changing hostname/port, using another browser/profile, or moving to another device does not carry that local data with you. There is no cloud synchronization or database.
+
+## Run checks
 
 ```sh
 pnpm typecheck
+pnpm test:unit
 pnpm build
-pnpm start
 ```
 
-Keep `pnpm start` running. In a second terminal:
+Keep `pnpm dev` running at port 3000 and run `pnpm test` in another terminal. This runs policy/storage tests plus HTTP route/CSS checks. To test the production build separately:
 
 ```sh
+pnpm start --port 3100
+```
+
+Then in a second PowerShell terminal:
+
+```powershell
+$env:BASE_URL = 'http://127.0.0.1:3100'
 pnpm test
 ```
 
-The smoke suite checks 12 app routes, compiled CSS, and three 404 routes. It uses Node's built-in fetch/assert and needs no browser installation. To use a different server: `BASE_URL=http://127.0.0.1:3001 pnpm test` (PowerShell: `$env:BASE_URL='http://127.0.0.1:3001'; pnpm test`).
+The suite checks approval gating, draft exclusion, exact course/unit/topic assignments, URL/video policy, legacy saved-data compatibility, 12 app routes, branding, absence of unapproved resources, compiled CSS, and three 404 routes. Synthetic test fixtures are never published or fetched from a provider.
 
-Browser interaction checklist:
+Browser checklist:
 
-1. Open **Manage courses**, toggle a subject, close the dialog, and reload. Check that the dashboard and sidebar agree. Remove all courses to check the empty state, then add one again.
-2. Open Chemistry, expand/collapse a unit, and select Topic 1.5. Select a planned topic to confirm its honest coming-soon state. Search for a course or topic using the header search or Ctrl/Cmd+K.
-3. Click the video play button. Open resources in another tab and return. Switch the lower tabs and open/close the summary and notes; the video iframe must remain in place.
-4. Open notes, enter text, close/reopen the panel, reload, and verify the text remains. Visit **My notes** and follow **Continue writing**. Reloading normally leaves notes hidden; following a `#notes` link intentionally opens them.
-5. Bookmark a resource, check **Saved resources**, reload, and unsave it.
-6. Open the summary and verify its placeholder disclosure. Open Practice, choose an incorrect answer, check the explanation, retry, and choose the correct answer. Completion changes only when you explicitly mark a topic complete.
-7. Switch themes and reload. Check dashboard and lesson at 1440, 768, 390, and 320 pixels wide: no horizontal scrolling, usable controls, and readable content. Test mobile navigation, Escape, Tab/Shift+Tab, and arrow keys in the study tabs.
-8. In browser developer tools, block localStorage writes and type a note. Verify the save warning; keep/copy the note before closing the page. Do this in a disposable browser profile to protect your personal notes.
+1. Check PrepAtlas branding, course selection/reload, empty course state, search, and expandable units.
+2. Open Chemistry Topic 1.5. Verify the honest empty-video/resource states and that no unapproved iframe or resource link appears.
+3. Open notes, write, hide/reopen, and reload. Check the notes library and explicit completion. Keep notes hidden unless opened or following a notes deep link.
+4. Open the summary: check the demo disclosure and six bullets. Try both incorrect/correct MCQ answers and switch tabs to confirm the answer remains.
+5. Check themes, mobile navigation, keyboard tab controls, and 320/390/768/1440-pixel layouts.
+6. Once the owner supplies approved video URLs, test switching videos, playback continuity while using tools, provider restrictions, and the original-link fallback. Actual approved video playback cannot be verified while the catalog is empty.
+7. In a disposable browser profile, block localStorage writes and confirm the save warning. Copy important notes before closing any tab where saving fails.
+
+## File guide
+
+- `src/lib/courses.ts`: existing typed course/unit/topic catalog. No additional courses were automatically added.
+- `src/lib/lessons.ts`: original per-topic study prompts, sample recaps, and demo practice.
+- `src/config/official-resources.json`: owner-controlled resource catalog.
+- `src/lib/resource-policy.ts`: validation, publishing gate, video parsing, and topic selection.
+- `src/lib/official-resources.ts`: server-only catalog loading; only approved entries reach the client.
+- `src/lib/study-storage.ts`: preserved local storage schema and keys.
+- `src/components/`: reusable navigation, dashboard, outlines, video lessons, study tools, resource cards, and libraries.
+- `tests/`: automated policy/storage and HTTP smoke checks.
 
 ## Troubleshooting
 
-- **Turbopack worker panic on Windows:** both dev and build scripts explicitly use Next.js's supported `--webpack` option. This avoids the worker failure observed in this environment.
-- **Port 3000 is busy:** `pnpm dev --port 3001` or `pnpm start --port 3001`, then open the URL printed by Next.js. Set `BASE_URL` for smoke tests.
-- **PowerShell cannot find pnpm:** install pnpm and reopen your terminal. This app doesn't require a globally installed Next.js CLI.
-- **Dependency installation blocked:** allow access to the package registry and pnpm's package store. Restricted Windows environments may need permission to create package-store links.
-- **Build output permissions or stale chunks:** stop all owned Next.js processes, then remove only this project's `.next` folder and rerun `pnpm build`. Don't run dev and a production build against the same `.next` output at once.
-- **Video unavailable:** use the visible YouTube or original lesson link. Embedding, playback, advertisements, network access, and regional restrictions are controlled by the video provider. The local interface doesn't depend on successful playback.
-- **Notes not surviving:** storage must be enabled for this origin. Private browsing, changing hostname/port, clearing site data, or switching devices/profiles changes or removes local data. A visible warning appears when saving fails. There is no cloud sync.
+- **Connection refused:** run `pnpm dev` and keep it open. Use the printed local URL; if port 3000 is occupied, identify the existing app before starting another copy. Different ports use separate browser storage.
+- **pnpm not found:** install pnpm, then open a new terminal so PATH is refreshed. Codex's bundled pnpm can also be invoked by its full path on this machine.
+- **Video area is empty:** waiting for owner-approved exact URLs is expected. Do not add a replacement automatically.
+- **An approved video will not play:** use its original link. Provider, school-network, regional, and embedding restrictions remain outside this prototype's control.
+- **Windows Turbopack worker failure:** the existing scripts use the supported `--webpack` option.
+- **Stale build output:** stop only the affected server, remove only its project-local output directory, and restart. Do not delete student browser storage to fix a build.
 
-## Verification performed
+No authentication, payments, production database, paid AI API, or real AI summary service is included. All interface artwork, overview prompts, recap examples, and practice text are original. AP is a trademark of College Board, which is not affiliated with this independent prototype.
 
-Verified on October 17, 2026:
+For commits and pushes to the existing repository, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-- TypeScript and the final Webpack production build passed.
-- All 16 HTTP/CSS smoke checks passed against both development and production servers.
-- Browser checks passed for course selection persistence and empty state, topic search and empty search, unit expansion/collapse, planned-topic messaging, bookmark persistence, notes save/reopen/reload and library links, explicit completion, dark-mode persistence, summary disclosure, and both correct/incorrect practice feedback.
-- The actual embedded video played successfully and remained paused at its current position while switching study tools.
-- Dashboard/course/workspace layouts were inspected between 320 and 1440 pixels. DOM width checks found no horizontal overflow at tested mobile/tablet sizes. Keyboard navigation between study tabs worked. No browser console errors or warnings were observed in the final production check.
-- The localStorage-denial scenario is documented in the manual checklist but was not simulated during this browser run. Provider/network restrictions may still affect video playback on other devices.
-
-Preview captures are saved in `artifacts/ap-hub-dashboard.jpg`, `artifacts/ap-hub-workspace.jpg`, and `artifacts/ap-hub-mobile.jpg`.
-
-## Extend it
-
-```text
-src/app/                       App Router pages, layout, error and 404 views
-src/components/study-provider  Local data and theme state
-src/components/app-shell       Responsive navigation and global search
-src/components/dashboard       Dashboard and reusable course cards
-src/components/course-outline  Units and topics
-src/components/study-workspace Video, optional notes, recap and practice preview
-src/components/resource-card   Resource links and bookmarking
-src/components/ui              Shared dialog, course icons and original SVG art
-src/lib/courses.ts             Typed course/unit/topic catalog and resource metadata
-src/lib/lessons.ts             Per-topic lesson content, recap, and original practice demo
-tests/smoke.mjs                HTTP route and CSS smoke checks
-```
-
-Add courses, units, and topics to the typed catalog. Leave unimplemented topics without `ready: true`. To enable a new topic, add its typed `Lesson` to `src/lib/lessons.ts` under `courseId/topicId`, supplying video metadata, resource links, overview prompts, sample recap, and an original practice example; then mark that topic ready in the catalog. The existing workspace renders those fields. Keep provider state local until a later increment explicitly introduces accounts and a persistence service.
-
-All interface artwork and practice/overview text are original. Third-party resources are linked and attributed: [Bozeman Science](https://www.bozemanscience.com/ap-chem-005-electron-configuration), [OpenStax](https://openstax.org/books/chemistry-2e/pages/6-4-electronic-structure-of-atoms-electron-configurations), and the [Royal Society of Chemistry](https://periodic-table.rsc.org/). AP is a trademark of College Board, which is not affiliated with this prototype.
-
-## GitHub milestones
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for authentication, milestone validation, commits, and pushes. The project instructions in `AGENTS.md` record the preference to push completed milestones during active development.
+The latest verification results and preview images are listed in [docs/VALIDATION.md](docs/VALIDATION.md).

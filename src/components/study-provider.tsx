@@ -3,9 +3,8 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import { courses } from "@/lib/courses";
 
-const STORAGE_KEY = "ap-hub:v1";
-type StudyData = { selected: string[]; notes: Record<string, string>; completed: string[]; saved: string[]; lastTopic: string | null };
-const defaults: StudyData = { selected: ["chemistry", "biology", "calculus-ab"], notes: {}, completed: [], saved: [], lastTopic: null };
+import { STORAGE_KEY, THEME_KEY, defaultStudyData, parseStudyData, type StudyData } from "@/lib/study-storage";
+
 type StudyContext = StudyData & {
   ready: boolean; storageError: boolean; theme: "light" | "dark";
   toggleCourse: (id: string) => void; setNote: (id: string, text: string) => void;
@@ -14,11 +13,8 @@ type StudyContext = StudyData & {
 };
 const Context = createContext<StudyContext | null>(null);
 
-function stringArray(value: unknown): value is string[] {
-  return Array.isArray(value) && value.every((item) => typeof item === "string");
-}
 export function StudyProvider({ children }: { children: ReactNode }) {
-  const [data, setData] = useState<StudyData>(defaults);
+  const [data, setData] = useState<StudyData>(defaultStudyData);
   const [ready, setReady] = useState(false);
   const [storageError, setStorageError] = useState(false);
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -26,11 +22,7 @@ export function StudyProvider({ children }: { children: ReactNode }) {
     try {
       const stored = localStorage.getItem(STORAGE_KEY);
       if (stored) {
-        const parsed: unknown = JSON.parse(stored);
-        if (!parsed || typeof parsed !== "object") throw new Error("Invalid saved data");
-        const value = parsed as Partial<StudyData>;
-        if (!stringArray(value.selected) || !stringArray(value.completed) || !stringArray(value.saved) || !value.notes || typeof value.notes !== "object" || Array.isArray(value.notes) || !Object.values(value.notes).every((note) => typeof note === "string")) throw new Error("Invalid saved data");
-        setData({ selected: value.selected.filter((id) => courses.some((course) => course.id === id)), completed: value.completed, saved: value.saved, notes: value.notes, lastTopic: typeof value.lastTopic === "string" ? value.lastTopic : null });
+        setData(parseStudyData(JSON.parse(stored), courses));
       }
     } catch { setStorageError(true); }
     setTheme(document.documentElement.dataset.theme === "dark" ? "dark" : "light");
@@ -46,7 +38,7 @@ export function StudyProvider({ children }: { children: ReactNode }) {
     const next = theme === "light" ? "dark" : "light";
     setTheme(next);
     document.documentElement.dataset.theme = next;
-    try { localStorage.setItem("ap-hub:theme", next); } catch { setStorageError(true); }
+    try { localStorage.setItem(THEME_KEY, next); } catch { setStorageError(true); }
   };
   return <Context.Provider value={{ ...data, ready, storageError, theme, toggleTheme, toggleCourse: (id) => toggleList("selected", id), toggleCompleted: (id) => toggleList("completed", id), toggleSaved: (id) => toggleList("saved", id), setNote: (id, text) => setData((current) => ({ ...current, notes: { ...current.notes, [id]: text } })), visitTopic: (id) => setData((current) => current.lastTopic === id ? current : { ...current, lastTopic: id }) }}>{children}</Context.Provider>;
 }
