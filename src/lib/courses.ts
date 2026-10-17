@@ -1,15 +1,17 @@
+import type { AcademicTheme } from "./artwork.ts";
+
 export type Topic = { id: string; number: string; title: string; ready?: boolean };
 export type Unit = { number: number; title: string; topics: Topic[] };
 export type Course = {
   id: string; title: string; shortTitle: string; category: string;
   color: "teal" | "violet" | "peach" | "blue" | "rose" | "amber";
   icon: "flask" | "leaf" | "function" | "atom" | "book" | "globe";
-  description: string; units: Unit[];
+  description: string; units: Unit[]; artwork: AcademicTheme;
 };
 
 export const courses: Course[] = [
   {
-    id: "chemistry", title: "AP Chemistry", shortTitle: "Chemistry", category: "Science", color: "teal", icon: "flask",
+    id: "chemistry", artwork: "chemistry", title: "AP Chemistry", shortTitle: "Chemistry", category: "Science", color: "teal", icon: "flask",
     description: "Make sense of the molecular world, one concept at a time.",
     units: [
       { number: 1, title: "Atomic Structure and Properties", topics: [
@@ -32,7 +34,7 @@ export const courses: Course[] = [
       { number: 9, title: "Thermodynamics and Electrochemistry", topics: [{ id: "entropy", number: "9.1", title: "Introduction to entropy" }] },
     ],
   },
-  { id: "biology", title: "AP Biology", shortTitle: "Biology", category: "Science", color: "violet", icon: "leaf", description: "Explore the remarkable systems that make life possible.", units: [
+  { id: "biology", artwork: "biology", title: "AP Biology", shortTitle: "Biology", category: "Science", color: "violet", icon: "leaf", description: "Explore the remarkable systems that make life possible.", units: [
     { number: 1, title: "Chemistry of Life", topics: [{ id: "water", number: "1.1", title: "Structure of water and hydrogen bonding" }] },
     { number: 2, title: "Cells", topics: [{ id: "cells", number: "2.1", title: "Cell structure and function" }] },
     { number: 3, title: "Cellular Energetics", topics: [{ id: "enzymes", number: "3.1", title: "Enzymes" }] },
@@ -42,7 +44,7 @@ export const courses: Course[] = [
     { number: 7, title: "Natural Selection", topics: [{ id: "selection", number: "7.1", title: "Natural selection" }] },
     { number: 8, title: "Ecology", topics: [{ id: "ecosystems", number: "8.1", title: "Responses to the environment" }] },
   ] },
-  { id: "calculus-ab", title: "AP Calculus AB", shortTitle: "Calculus AB", category: "Mathematics", color: "peach", icon: "function", description: "Find your flow with limits, derivatives, and integrals.", units: [
+  { id: "calculus-ab", artwork: "calculus", title: "AP Calculus AB", shortTitle: "Calculus AB", category: "Mathematics", color: "peach", icon: "function", description: "Find your flow with limits, derivatives, and integrals.", units: [
     { number: 1, title: "Limits and Continuity", topics: [{ id: "limits", number: "1.1", title: "Introducing limits" }] },
     { number: 2, title: "Differentiation: Definition and Fundamental Properties", topics: [{ id: "derivatives", number: "2.1", title: "Defining the derivative" }] },
     { number: 3, title: "Differentiation: Composite, Implicit, and Inverse Functions", topics: [{ id: "chain-rule", number: "3.1", title: "The chain rule" }] },
@@ -52,9 +54,9 @@ export const courses: Course[] = [
     { number: 7, title: "Differential Equations", topics: [{ id: "equations", number: "7.1", title: "Modeling with differential equations" }] },
     { number: 8, title: "Applications of Integration", topics: [{ id: "average", number: "8.1", title: "Average value of a function" }] },
   ] },
-  { id: "physics-1", title: "AP Physics 1", shortTitle: "Physics 1", category: "Science", color: "blue", icon: "atom", description: "Discover the principles behind how our world moves.", units: [{ number: 1, title: "Kinematics", topics: [{ id: "motion", number: "1.1", title: "Position, velocity, and acceleration" }] }] },
-  { id: "english-language", title: "AP English Language", shortTitle: "English Language", category: "Humanities", color: "rose", icon: "book", description: "Read with intention. Write with confidence.", units: [{ number: 1, title: "Rhetorical Foundations", topics: [{ id: "rhetoric", number: "1.1", title: "Understanding rhetorical situations" }] }] },
-  { id: "us-history", title: "AP U.S. History", shortTitle: "U.S. History", category: "Humanities", color: "amber", icon: "globe", description: "Connect the people, ideas, and events that shaped a nation.", units: [{ number: 1, title: "Period 1: 1491–1607", topics: [{ id: "context", number: "1.1", title: "Contextualizing Period 1" }] }] },
+  { id: "physics-1", artwork: "physics", title: "AP Physics 1", shortTitle: "Physics 1", category: "Science", color: "blue", icon: "atom", description: "Discover the principles behind how our world moves.", units: [{ number: 1, title: "Kinematics", topics: [{ id: "motion", number: "1.1", title: "Position, velocity, and acceleration" }] }] },
+  { id: "english-language", artwork: "literature", title: "AP English Language", shortTitle: "English Language", category: "Humanities", color: "rose", icon: "book", description: "Read with intention. Write with confidence.", units: [{ number: 1, title: "Rhetorical Foundations", topics: [{ id: "rhetoric", number: "1.1", title: "Understanding rhetorical situations" }] }] },
+  { id: "us-history", artwork: "history", title: "AP U.S. History", shortTitle: "U.S. History", category: "Humanities", color: "amber", icon: "globe", description: "Connect the people, ideas, and events that shaped a nation.", units: [{ number: 1, title: "Period 1: 1491–1607", topics: [{ id: "context", number: "1.1", title: "Contextualizing Period 1" }] }] },
 ];
 
 export const exampleTopic = courses[0].units[0].topics[4];

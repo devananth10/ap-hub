@@ -10,8 +10,8 @@
     "build": "next build --webpack",
     "start": "next start --hostname 127.0.0.1",
     "typecheck": "tsc --noEmit",
-    "test": "node --experimental-strip-types --test tests/resource-policy.test.mjs && node tests/smoke.mjs",
-    "test:unit": "node --experimental-strip-types --test tests/resource-policy.test.mjs",
+    "test": "node --experimental-strip-types --test tests/resource-policy.test.mjs tests/practice-artwork.test.mjs && node tests/smoke.mjs",
+    "test:unit": "node --experimental-strip-types --test tests/resource-policy.test.mjs tests/practice-artwork.test.mjs",
     "test:smoke": "node tests/smoke.mjs"
   },
   "dependencies": {

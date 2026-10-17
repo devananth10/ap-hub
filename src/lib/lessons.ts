@@ -1,4 +1,4 @@
-import { topicKey } from "./courses";
+import { topicKey } from "./courses.ts";
 
 export type PracticeDemo = { prompt: string; options: string[]; correctIndex: number; explanation: string };
 export type Lesson = {

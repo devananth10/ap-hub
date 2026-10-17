@@ -1,5 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
+import { courses } from "../src/lib/courses.ts";
+import { academicThemes } from "../src/lib/artwork.ts";
 
 const catalog = JSON.parse(readFileSync(new URL("../src/config/official-resources.json", import.meta.url), "utf8"));
 const approved = catalog.resources.filter((resource) => resource.approval?.status === "approved");
@@ -26,19 +28,24 @@ const cases = [
   ["/courses/chemistry/moles", "This topic is on the roadmap"],
   ["/notes", "My notes"],
   ["/resources", "Saved resources"],
+  ["/practice", "Practice with purpose."],
+  ["/practice?course=chemistry", "1 original MCQ demo"],
+  ["/practice?course=chemistry&unit=1", "1 original MCQ demo"],
+  ["/practice?course=chemistry&unit=1&topic=electron-configuration", "1 original MCQ demo"],
+  ["/practice?course=biology", "Practice is coming to this scope."],
 ];
 for (const [path, expected] of cases) {
   const response = await fetch(`${base}${path}`);
   assert.equal(response.status, 200, `${path} should return 200`);
   const html = await response.text();
-  assert.ok(html.includes(expected), `${path} should render ${expected}`);
+  assert.ok(html.replace(/<!--.*?-->/g, "").includes(expected), `${path} should render ${expected}`);
   assert.ok(!html.includes("NEXT_REDIRECT"), `${path} should not redirect unexpectedly`);
   assert.ok(html.includes('lang="en"'), "Document language should be declared");
   assert.ok(html.includes("PrepAtlas"), `${path} should use PrepAtlas branding`);
   assert.ok(!/AP Hub|APHub|StudyHub/.test(html), `${path} should not render old branding`);
   for (const url of [...draftUrls, ...withdrawnUrls]) assert.ok(!html.replaceAll("&amp;", "&").includes(url), `${path} should not expose an unapproved or withdrawn URL`);
   assert.ok(!/youtube-nocookie\.com\/embed\//.test(html), `${path} should not embed an unapproved video`);
-  if (path.endsWith("electron-configuration")) {
+  if (path === "/courses/chemistry/electron-configuration") {
     if (!chemistryResources.some((resource) => resource.kind === "video")) assert.ok(html.includes("No approved videos yet"), "Video area should explain the approval state");
     if (!chemistryResources.length) assert.ok(html.includes("No approved resources yet"), "Resource area should explain the approval state");
     assert.ok(!html.includes('id="topic-notes"'), "Notes should be hidden by default");
@@ -52,11 +59,27 @@ const cssResponse = await fetch(new URL(css[1].replaceAll("&amp;", "&"), base));
 assert.equal(cssResponse.status, 200, "The stylesheet should load");
 assert.ok((await cssResponse.text()).includes("welcome-banner"), "App styles should be compiled");
 console.log("PASS compiled CSS");
-for (const path of ["/missing-page", "/courses/not-a-course", "/courses/chemistry/not-a-topic"]) {
+for (const path of ["/missing-page", "/courses/not-a-course", "/courses/chemistry/not-a-topic", "/practice?course=missing", "/practice?unit=1", "/practice?course=biology&unit=1&topic=electron-configuration", "/practice?course=chemistry&course=biology"]) {
   const response = await fetch(`${base}${path}`);
   const html = await response.text();
   assert.equal(response.status, 404, `${path} should return 404`);
   assert.ok(html.includes("in the syllabus"), "A friendly 404 should be rendered");
   console.log(`PASS 404 ${path}`);
 }
-console.log("16 smoke checks passed. See README for the browser interaction checklist.");
+for (const course of courses) {
+  const html = await (await fetch(`${base}/courses/${course.id}`)).text();
+  assert.ok(html.includes(`data-course-art="${course.artwork}"`), `${course.id} should have fixed subject art`);
+  assert.ok(!html.includes("data-dashboard-art"), "Course art should not be randomized");
+  assert.ok(html.includes(`/practice?course=${course.id}`), "Each course should link to scoped practice");
+}
+console.log("PASS all six fixed course themes and practice entry points");
+const draws = new Set();
+for (let index = 0; index < 12; index++) {
+  const html = await (await fetch(base, { cache: "no-store" })).text();
+  const theme = html.match(/data-dashboard-art="([^"]+)"/)?.[1];
+  assert.ok(academicThemes.some((item) => item.id === theme), "Dashboard art must come from the academic pool");
+  draws.add(theme);
+}
+assert.ok(draws.size > 1, "Fresh home responses should draw different academic subjects");
+console.log(`PASS homepage randomization (${draws.size} themes across 12 fresh responses)`);
+console.log(`${cases.length} page routes, CSS, seven 404s, six fixed course themes, and homepage randomization passed. See README for browser checks.`);

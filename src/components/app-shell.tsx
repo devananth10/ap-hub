@@ -3,13 +3,13 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { ArrowRight, BookOpen, Bookmark, ChevronRight, Command, GraduationCap, LayoutGrid, Menu, Moon, Plus, Search, Sparkles, StickyNote, Sun, X } from "lucide-react";
+import { ArrowRight, BookOpen, Bookmark, ChevronRight, Command, GraduationCap, LayoutGrid, Menu, Moon, Plus, Search, Sparkles, StickyNote, Sun, Target, X } from "lucide-react";
 import { courses } from "@/lib/courses";
 import { useStudy } from "./study-provider";
 import { CourseIcon, Dialog } from "./ui";
 import { CoursePicker } from "./course-picker";
 
-const nav = [ { href: "/", label: "Overview", icon: LayoutGrid }, { href: "/courses", label: "My courses", icon: BookOpen }, { href: "/resources", label: "Saved resources", icon: Bookmark }, { href: "/notes", label: "My notes", icon: StickyNote } ];
+const nav = [ { href: "/", label: "Overview", icon: LayoutGrid }, { href: "/courses", label: "My courses", icon: BookOpen }, { href: "/practice", label: "Practice", icon: Target }, { href: "/resources", label: "Saved resources", icon: Bookmark }, { href: "/notes", label: "My notes", icon: StickyNote } ];
 export function AppShell({ children }: { children: ReactNode }) {
   const path = usePathname();
   const { selected, theme, toggleTheme, storageError } = useStudy();
@@ -49,7 +49,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       <Link href="/" className="brand"><span className="brand-mark"><GraduationCap size={23} /></span><span>Prep<span className="brand-hub">Atlas</span><span className="brand-dot">.</span></span></Link>
       <button className="icon-button sidebar-close" aria-label="Close menu" onClick={() => { setMobileOpen(false); mobileTrigger.current?.focus(); }}><X size={19} /></button>
       <span className="workspace-label">YOUR STUDY SPACE</span>
-      <nav className="main-nav">{nav.map(({ href, label, icon: Icon }) => <Link href={href} key={href} className={`nav-link ${path === href || href === "/courses" && path.startsWith("/courses/") ? "active" : ""}`} aria-current={path === href ? "page" : undefined}><Icon size={19} strokeWidth={1.7} /><span>{label}</span>{path === href && <span className="active-dot" />}</Link>)}</nav>
+      <nav className="main-nav">{nav.map(({ href, label, icon: Icon }) => <Link href={href} key={href} className={`nav-link ${href === "/practice" ? "nav-practice" : ""} ${path === href || href === "/courses" && path.startsWith("/courses/") ? "active" : ""}`} aria-current={path === href ? "page" : undefined}><Icon size={19} strokeWidth={1.7} /><span>{label}</span>{path === href && <span className="active-dot" />}</Link>)}</nav>
       <div className="sidebar-section-title"><span>MY COURSES</span><button className="icon-button small-icon" aria-label="Manage courses" onClick={() => setPickerOpen(true)}><Plus size={17} /></button></div>
       <nav className="course-nav">{courses.filter((course) => selected.includes(course.id)).map((course) => <Link href={`/courses/${course.id}`} key={course.id} className={path.includes(`/courses/${course.id}`) ? "current" : ""}><span className={`course-dot ${course.color}`} />{course.title}</Link>)}{selected.length === 0 && <p className="small muted">Your courses will appear here.</p>}</nav>
       <div className="sidebar-bottom"><div className="sidebar-note"><span className="tiny-label"><Sparkles size={14} /> A LITTLE, EVERY DAY</span><p>Big goals start with<br />small study sessions.</p><Link href="/courses">Find your next topic <ArrowRight size={14} /></Link></div>

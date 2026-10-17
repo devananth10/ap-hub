@@ -31,6 +31,8 @@ Development builds use `.next-preview/`, while production builds use `.next/`. B
 - Owner-approved resource cards and an approved-video selector, ready for individually approved URLs. Video frames remain mounted when notes, summaries, or study tabs change. Switching between approved videos pauses the previous player and preserves its frame; returning requires resuming it. Leaving/reloading the topic resets playback.
 - Six-bullet **demo** summary from original topic notes; no AI backend or video analysis.
 - One original, unscored **demo MCQ**. Its answer is retained while switching study tabs during the session. Original MCQs, FRQs, and a question bank are planned.
+- Prominent **Start Practice** actions on the dashboard, course cards, course outlines, units, topics, and Study Workspace. The practice page filters by course, unit, and topic; empty scopes explain that questions are coming soon. FRQ and mixed modes are visibly disabled.
+- Eight original lightweight SVG designs: chemistry, biology, calculus, physics, computer science, history, geography, and literature. Only the home hero chooses randomly on each fresh load. Course cards, course pages, and workspaces use their fixed subject artwork.
 - Responsive layouts, keyboard tab navigation, friendly missing-page states, and a warning when local saving fails.
 
 ## Official resources: owner approval required
@@ -68,7 +70,7 @@ $env:BASE_URL = 'http://127.0.0.1:3100'
 pnpm test
 ```
 
-The suite checks approval gating, draft exclusion, exact course/unit/topic assignments, URL/video policy, legacy saved-data compatibility, 12 app routes, branding, absence of unapproved resources, compiled CSS, and three 404 routes. Synthetic test fixtures are never published or fetched from a provider.
+The suite includes 26 unit tests, 17 page-route checks, compiled CSS, seven invalid-route checks, all six fixed course-art mappings, and multiple fresh homepage responses to verify artwork rotation. It also checks approval gating, draft exclusion, scope isolation, URL/video policy, legacy saved-data compatibility, branding, and absence of unapproved resources. Synthetic test fixtures are never published or fetched from a provider.
 
 Browser checklist:
 
@@ -79,17 +81,23 @@ Browser checklist:
 5. Check themes, mobile navigation, keyboard tab controls, and 320/390/768/1440-pixel layouts.
 6. Once the owner supplies approved video URLs, test switching videos, playback continuity while using tools, provider restrictions, and the original-link fallback. Actual approved video playback cannot be verified while the catalog is empty.
 7. In a disposable browser profile, block localStorage writes and confirm the save warning. Copy important notes before closing any tab where saving fails.
+8. Use Start Practice from the dashboard, a course, a unit, and a topic. Check the selected scope. Biology and unimplemented Chemistry topics should show honest empty states, never unrelated questions.
+9. Refresh the homepage several times: subjects should vary, although a random draw can repeat. Opening menus or course management must leave that page's art unchanged. Refresh a course page: its artwork must stay subject-specific.
 
 ## File guide
 
 - `src/lib/courses.ts`: existing typed course/unit/topic catalog. No additional courses were automatically added.
 - `src/lib/lessons.ts`: original per-topic study prompts, sample recaps, and demo practice.
+- `src/lib/practice.ts`: validated practice scopes, links, and question selection from the existing catalog.
+- `src/lib/artwork.ts` and `src/components/academic-art.tsx`: artwork pool and original SVGs. Each course's `artwork` field selects its fixed theme. Computer science/geography artwork is ready for future courses; those courses have not been added.
 - `src/config/official-resources.json`: owner-controlled resource catalog.
 - `src/lib/resource-policy.ts`: validation, publishing gate, video parsing, and topic selection.
 - `src/lib/official-resources.ts`: server-only catalog loading; only approved entries reach the client.
 - `src/lib/study-storage.ts`: preserved local storage schema and keys.
 - `src/components/`: reusable navigation, dashboard, outlines, video lessons, study tools, resource cards, and libraries.
 - `tests/`: automated policy/storage and HTTP smoke checks.
+
+Homepage artwork is selected on the server after `connection()` and passed as a stable prop. The SVG has a fixed aspect ratio and uses React-generated unique gradient IDs, so hydration does not draw another image or change its size. The artwork has no external image downloads or animations. Randomness never changes study data, resources, notes, or progress. Navigating back may reuse Next.js's cached page; a fresh load/refresh requests a new draw.
 
 ## Troubleshooting
 

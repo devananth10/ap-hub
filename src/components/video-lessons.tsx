@@ -3,9 +3,10 @@
 import { useEffect, useRef, useState } from "react";
 import { ExternalLink, FlaskConical, Play, ShieldCheck } from "lucide-react";
 import { youtubeVideoId, type PublishedResource } from "@/lib/resource-policy";
-import { OrbitArt } from "./ui";
+import { AcademicArt } from "./academic-art";
+import type { AcademicTheme } from "@/lib/artwork";
 
-export function VideoLessons({ resources, selectedId, onSelect, courseTitle, topicNumber, topicTitle, posterHeading }: {
+export function VideoLessons({ resources, selectedId, onSelect, courseTitle, topicNumber, topicTitle, posterHeading, artwork }: {
   resources: PublishedResource[];
   selectedId: string | null;
   onSelect: (id: string) => void;
@@ -13,6 +14,7 @@ export function VideoLessons({ resources, selectedId, onSelect, courseTitle, top
   topicNumber: string;
   topicTitle: string;
   posterHeading: string;
+  artwork: AcademicTheme;
 }) {
   if (!resources.length) return (
     <section className="video-card panel" aria-label="Video lessons awaiting approval">
@@ -23,7 +25,7 @@ export function VideoLessons({ resources, selectedId, onSelect, courseTitle, top
           <p>No approved videos yet.</p>
           <span>Video lessons will appear after the PrepAtlas owner approves exact URLs for this topic.</span>
         </div>
-        <OrbitArt compact />
+        <AcademicArt theme={artwork} compact />
       </div>
       <div className="video-info"><div><h2>Awaiting approved videos</h2><span className="small muted">Your study tools are ready below.</span></div><ShieldCheck size={21} className="text-teal" /></div>
     </section>
@@ -32,14 +34,14 @@ export function VideoLessons({ resources, selectedId, onSelect, courseTitle, top
     <section className="video-card panel" aria-label="Approved video lessons">
       {resources.length > 1 && <label className="video-picker">Approved lesson<select aria-label="Choose approved video" value={selectedId || resources[0].id} onChange={(event) => onSelect(event.target.value)}>{resources.map((resource) => <option key={resource.id} value={resource.id}>{resource.title} · {resource.publisher}</option>)}</select></label>}
       {resources.map((resource) => (
-        <VideoPlayer key={resource.id} resource={resource} active={resource.id === selectedId} courseTitle={courseTitle} topicNumber={topicNumber} topicTitle={topicTitle} posterHeading={posterHeading} />
+        <VideoPlayer key={resource.id} resource={resource} active={resource.id === selectedId} courseTitle={courseTitle} topicNumber={topicNumber} topicTitle={topicTitle} posterHeading={posterHeading} artwork={artwork} />
       ))}
     </section>
   );
 }
 
-function VideoPlayer({ resource, active, courseTitle, topicNumber, topicTitle, posterHeading }: {
-  resource: PublishedResource; active: boolean; courseTitle: string; topicNumber: string; topicTitle: string; posterHeading: string;
+function VideoPlayer({ resource, active, courseTitle, topicNumber, topicTitle, posterHeading, artwork }: {
+  resource: PublishedResource; active: boolean; courseTitle: string; topicNumber: string; topicTitle: string; posterHeading: string; artwork: AcademicTheme;
 }) {
   const [started, setStarted] = useState(false);
   const [origin, setOrigin] = useState("");
@@ -59,7 +61,7 @@ function VideoPlayer({ resource, active, courseTitle, topicNumber, topicTitle, p
         ) : (
           <div className="video-poster">
             <span className="poster-top"><FlaskConical size={17} />{courseTitle.toUpperCase()}<span>TOPIC {topicNumber}</span></span>
-            <div className="poster-content"><div><span className="hero-eyebrow">APPROVED FOR THIS TOPIC</span><h2 style={{ whiteSpace: "pre-line" }}>{posterHeading}</h2><span className="poster-subtitle">{topicTitle}</span></div><OrbitArt compact /></div>
+            <div className="poster-content"><div><span className="hero-eyebrow">APPROVED FOR THIS TOPIC</span><h2 style={{ whiteSpace: "pre-line" }}>{posterHeading}</h2><span className="poster-subtitle">{topicTitle}</span></div><AcademicArt theme={artwork} compact /></div>
             {canEmbed && <button className="video-play" aria-label={`Play ${resource.title} video`} onClick={() => { setOrigin(window.location.origin); setStarted(true); }}><Play size={23} fill="currentColor" /></button>}
             <span className="poster-bottom">{resource.publisher}<span>{canEmbed ? "WATCH & UNDERSTAND" : "OPEN ORIGINAL TO WATCH"}</span></span>
           </div>
