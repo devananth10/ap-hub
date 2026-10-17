@@ -4,6 +4,8 @@ Verified October 17, 2026, for the practice navigation and academic artwork mile
 
 Follow-up: simplified every subject card to its original soft color background, category label, and single subject icon, then added a faint, low-detail subject motif at the owner's request. These small SVGs use only a few plain strokes with no gradients, glow, or animation. The home hero and course/workspace illustrations remain unchanged. Updated the dashboard screenshot after checking Local Preview; TypeScript, production build, and the existing automated suite passed again.
 
+Latest artwork refinement: removed gradients, halos, sparkle marks, background grids, and excess detail from all eight large illustrations. They now use flat muted strokes and small dots, with more detail than course-card motifs. The shared artwork component keeps course/workspace art consistent too; card art and rotation behavior were not changed. Local Preview was visually checked, and TypeScript, production build, and all existing tests passed. The dashboard image below reflects this flatter style; the other screenshots document the earlier layout milestone.
+
 ## Automated checks
 
 - TypeScript check: passed.

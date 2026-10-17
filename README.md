@@ -97,7 +97,7 @@ Browser checklist:
 - `src/components/`: reusable navigation, dashboard, outlines, video lessons, study tools, resource cards, and libraries.
 - `tests/`: automated policy/storage and HTTP smoke checks.
 
-Homepage artwork is selected on the server after `connection()` and passed as a stable prop. The SVG has a fixed aspect ratio and uses React-generated unique gradient IDs, so hydration does not draw another image or change its size. The artwork has no external image downloads or animations. Randomness never changes study data, resources, notes, or progress. Navigating back may reuse Next.js's cached page; a fresh load/refresh requests a new draw.
+Homepage artwork is selected on the server after `connection()` and passed as a stable prop. The SVG has a fixed aspect ratio, so hydration does not draw another image or change its size. All eight large illustrations use flat, muted line work and dots without gradients, halos, sparkles, or glossy fills. They retain more subject detail than the small course-card motifs. The artwork has no external image downloads or animations. Randomness never changes study data, resources, notes, or progress. Navigating back may reuse Next.js's cached page; a fresh load/refresh requests a new draw.
 
 ## Troubleshooting
 
