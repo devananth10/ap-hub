@@ -4,8 +4,8 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 
 - Official inventory: 91 topics in nine units; target 1,001 questions (11 per topic).
 - Live approved questions: 11 in Topic 1.1 only. Original 001–010 preserved; owner authorized validated 011.
-- Complete unpublished working sets: 83, 913 questions. These require human scientific review and owner approval; they are not additional live questions.
-- Next topic in the owner-authorized completion order: 1.2 — Mass Spectra of Elements, ID `mass-spectra`. Finish Units 7–9 first, then reconcile earlier gaps.
+- Complete unpublished working sets: 84, 924 questions. These require human scientific review and owner approval; they are not additional live questions.
+- Next topic in the owner-authorized completion order: 1.3 — Elemental Composition of Pure Substances, ID `composition`. Finish Units 7–9 first, then reconcile earlier gaps.
 - Topic 1.5 demonstration removed entirely; its page/workspace and student storage keys are preserved. Its pending eleven-question set is separate.
 - Recovered originals: three complete sets (1.4, 1.5, 1.8) and fragments (1.6, 1.7, 2.1). Archived unchanged; complete working copies audited separately.
 - The fragments contain 29 complete recovered question objects (10/10/9); corrected partial working copies and known scope/variety flags are recorded in `qa/partial-recovery.md`. They are not complete banks and do not count toward complete-topic totals.
@@ -27,7 +27,7 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 | Topic | Official name | Internal topicId | Live | Complete pending | Status |
 | --- | --- | --- | ---: | ---: | --- |
 | 1.1 | Moles and Molar Mass | `moles` | 11 | 0 | approved-live |
-| 1.2 | Mass Spectra of Elements | `mass-spectra` | 0 | 0 | earlier-source-unavailable |
+| 1.2 | Mass Spectra of Elements | `mass-spectra` | 0 | 11 | draft; human-review-pending (see QA) |
 | 1.3 | Elemental Composition of Pure Substances | `composition` | 0 | 0 | earlier-source-unavailable |
 | 1.4 | Composition of Mixtures | `mixtures` | 0 | 11 | draft; human-review-pending (see QA) |
 | 1.5 | Atomic Structure and Electron Configuration | `electron-configuration` | 0 | 11 | draft; human-review-pending (see QA) |

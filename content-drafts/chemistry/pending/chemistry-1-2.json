@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 1,
+  "topicId": "mass-spectra",
+  "questions": [
+    {
+      "id": "chem-1-2-001",
+      "prompt": "A single-element mass spectrum contains only singly charged monatomic ions with approximate isotopic masses20 u and22 u. Their abundances are90.0% and10.0%. What is the average atomic mass?",
+      "options": [
+        "21.0 u",
+        "42.0 u",
+        "2.0 u",
+        "20.2 u"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The weighted mean is0.900(20)+0.100(22)=20.2 u. A is incorrect: that gives equal weight to the two isotopes despite unequal abundance. B is incorrect: that adds masses without abundance weighting. C is incorrect: that is the mass spacing, not the mean."
+    },
+    {
+      "id": "chem-1-2-002",
+      "prompt": "For a single element, singly charged monatomic-ion peaks occur near63 u and65 u with relative intensities3:1. Assuming intensity is proportional to abundance, what is the average mass?",
+      "options": [
+        "64.0 u",
+        "63.5 u",
+        "64.5 u",
+        "128 u"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Normalized fractions are3/4 and1/4; the mean is.75(63)+.25(65)=63.5 u. A is incorrect: that assumes equal isotope abundance. C is incorrect: that assigns the larger abundance to the heavier isotope. D is incorrect: that adds the two isotopic masses."
+    },
+    {
+      "id": "chem-1-2-003",
+      "prompt": "An element has only two isotopes with approximate masses10 u and11 u. Its average atomic mass is10.80 u. What fraction of its atoms are the11 u isotope?",
+      "options": [
+        "0.200",
+        "0.108",
+        "0.800",
+        "0.500"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Let x be the heavy-isotope fraction:10(1−x)+11x=10.80, givingx=.800. A is incorrect: that is the light-isotope fraction. B is incorrect: that divides the average by100 without using isotope masses. D is incorrect: equal abundance would give10.50 u."
+    },
+    {
+      "id": "chem-1-2-004",
+      "prompt": "Two peaks in a pure-element mass spectrum correspond to isotopes of the same element. Which atomic feature differs between those isotopes?",
+      "options": [
+        "Their neutron counts.",
+        "Their proton counts",
+        "Their chemical symbols must identify different elements",
+        "Their charges must differ because the peaks differ in mass"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Isotopes have the same proton number but different neutron numbers and therefore different masses. B is incorrect: different proton counts define different elements. C is incorrect: the spectrum is of one element with multiple isotopes. D is incorrect: all detected ions are stipulated singly charged; mass differences can arise from isotopes."
+    },
+    {
+      "id": "chem-1-2-005",
+      "prompt": "Approximate isotope masses24 u,25 u,and26 u have relative abundances80%,10%,and10% in a single-element sample. What weighted mean is predicted?",
+      "options": [
+        "25.0 u",
+        "24.3 u",
+        "24.0 u",
+        "75.0 u"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. 0.80(24)+0.10(25)+0.10(26)=24.3 u. A is incorrect: that takes an unweighted mean. C is incorrect: that uses only the most abundant isotope. D is incorrect: that adds the masses without normalized weights."
+    },
+    {
+      "id": "chem-1-2-006",
+      "prompt": "In a single-element spectrum, two singly charged monatomic-ion peaks have relative heights100 and25. Which statement correctly interprets these normalized signal units?",
+      "options": [
+        "The first isotope is100% abundant and the second25%",
+        "The abundance fractions are75% and25%",
+        "Both isotopes are equally abundant because there are two peaks",
+        "The corresponding abundance fractions are80% and20%."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The total signal is125 units, so fractions are100/125 and25/125. A is incorrect: relative heights normalized to a base peak are not already percentages of the total. B is incorrect: that subtracts from100 instead of normalizing by125. C is incorrect: peak intensities indicate unequal populations."
+    },
+    {
+      "id": "chem-1-2-007",
+      "prompt": "A pure element has only isotopes near63 u and65 u, and its average atomic mass is63.5 u. Must individual atoms of mass63.5 u occur?",
+      "options": [
+        "No; the average can lie between the masses of all individual isotopes present.",
+        "Yes; every atom must equal the average atomic mass",
+        "Yes; a third peak at63.5 u is required",
+        "No; average atomic mass must instead equal an integer"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. A weighted mean describes the population, not a required intermediate-mass isotope. B is incorrect: individual isotope masses remain distinct. C is incorrect: two isotope populations can already yield the stated mean. D is incorrect: weighted atomic masses need not be integers."
+    },
+    {
+      "id": "chem-1-2-008",
+      "prompt": "Two samples of the same element contain different proportions of its lighter and heavier isotopes. What happens to average atomic mass when the heavy-isotope fraction increases?",
+      "options": [
+        "It decreases because heavier atoms count less",
+        "The element necessarily becomes the next element on the periodic table",
+        "It increases without changing the element’s proton number.",
+        "It stays fixed regardless of isotopic composition"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Changing isotope proportions changes the weighted mass while preserving elemental identity. A is incorrect: the abundance weights multiply the heavier masses positively. B is incorrect: proton number does not change through isotope enrichment. D is incorrect: the weighted mean depends on the isotope fractions."
+    },
+    {
+      "id": "chem-1-2-009",
+      "prompt": "An element has isotope masses50 u and54 u. Which stated average is impossible for a mixture containing only these isotopes?",
+      "options": [
+        "55 u",
+        "51 u",
+        "52 u",
+        "53 u"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. A weighted average with nonnegative fractions must lie between50 and54 u. B is incorrect: this lies within the allowed interval and can be produced by weighting. C is incorrect: equal abundances give this mean. D is incorrect: this also lies between the isotope masses."
+    },
+    {
+      "id": "chem-1-2-010",
+      "prompt": "A detector preferentially misses some lighter isotope ions in a two-isotope single-element sample. The analyst incorrectly treats the remaining counts as unbiased abundances. How is the inferred average mass biased?",
+      "options": [
+        "Too low, because any missing signal lowers an average mass",
+        "Too high, because the heavy isotope is overrepresented.",
+        "Unchanged, because only peak positions matter",
+        "It must become exactly the heavier isotope mass"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Undercounting the lighter isotope increases the normalized heavy-isotope fraction. A is incorrect: which isotope is lost determines the direction of bias. C is incorrect: abundance weights are also needed for the mean. D is incorrect: some lighter ions remain, so the exact bias depends on their remaining counts."
+    },
+    {
+      "id": "chem-1-2-011",
+      "prompt": "A single element has approximate isotope masses50,52,and54 u. The50 u isotope is20.0% abundant, and the average is52.4 u. What is the52 u isotope abundance?",
+      "options": [
+        "20.0%",
+        "60.0%",
+        "80.0%",
+        "40.0%"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Let its fraction bex; the54 u fraction is.800−x. Then50(.200)+52x+54(.800−x)=52.4, givingx=.400. A is incorrect: that reuses the known light-isotope fraction and gives the wrong mean. B is incorrect: that gives52.0 u, not52.4 u. C is incorrect: that leaves no54 u isotope and gives51.6 u."
+    }
+  ]
+}
