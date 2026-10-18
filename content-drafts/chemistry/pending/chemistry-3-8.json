@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 3,
+  "topicId": "topic-3-8",
+  "questions": [
+    {
+      "id": "chem-3-8-001",
+      "prompt": "NaCl is assumed to dissolve completely into separate ions in water without reaction. Which description is a valid particulate model of the resulting homogeneous solution?",
+      "options": [
+        "Only permanently bonded NaCl pairs arranged in a regular crystal throughout the water.",
+        "Two Na+ ions for every Cl- ion, with no other charged species.",
+        "Equal numbers of Na+ and Cl- ions dispersed among intact water molecules.",
+        "Neutral Na atoms and neutral Cl atoms, with no ions."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Complete dissociation of NaCl gives a 1:1 Na+:Cl- ratio and an electrically neutral solution, with the water molecules remaining intact. A retains a crystal and permanent paired units instead of the stated separated dissolved ions. B violates the formula ratio and leaves an unbalanced positive charge. D changes the ions to neutral atoms, which would require chemical electron transfer not specified in the dissolution model. The drawing should distinguish particle identities and charges, not just show unlabelled dots."
+    },
+    {
+      "id": "chem-3-8-002",
+      "prompt": "Two diagrams use the same solute symbol and the same number of particles per symbol. P shows six solute symbols in volume V; Q shows nine in volume 3V. What is concentration P divided by concentration Q?",
+      "options": [
+        "2",
+        "2/3",
+        "1",
+        "3"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. P has 6/V symbol-amount per volume, while Q has 9/(3V) = 3/V. The ratio is 2. B compares the raw symbol counts, 6/9, without accounting for volume. C assumes the same chemical identity fixes concentration. D uses only the volume ratio and ignores that Q contains more symbols. A meaningful diagram comparison requires both the symbol scale and the represented volume, which are explicitly supplied here."
+    },
+    {
+      "id": "chem-3-8-003",
+      "prompt": "A drawing shows aqueous Mg2+ and Cl- ions with nearby water molecules. Which pair of preferred orientations should it show?",
+      "options": [
+        "Water H ends toward Mg2+ and O ends toward Cl-.",
+        "Water O ends toward both Mg2+ and Cl-.",
+        "Water H ends toward both Mg2+ and Cl-.",
+        "Water O ends toward Mg2+ and H ends toward Cl-."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The oxygen region of water is partially negative and is attracted toward Mg2+. The hydrogen region is partially positive and is attracted toward Cl-. A reverses both charge-based orientations. B gets the cation orientation right but points a negative end toward the anion. C gets the anion orientation right but points positive ends toward the cation. These are preferred local orientations, not rigid permanent covalent bonds or a requirement that every water molecule point identically at every instant."
+    },
+    {
+      "id": "chem-3-8-004",
+      "prompt": "Glucose is modeled as a neutral, nonionizing molecular solute. Which drawing best represents a homogeneous aqueous glucose solution?",
+      "options": [
+        "All glucose molecules broken into separate carbon, hydrogen, and oxygen atoms.",
+        "Intact glucose molecules distributed among intact water molecules, with no required ionic fragments.",
+        "Glucose converted completely into positive and negative ions solely because it dissolves.",
+        "Glucose molecules confined to a separate settled layer beneath pure water."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Dissolution can disperse intact neutral molecules without chemical decomposition or ionization. A breaks covalent molecular connectivity despite the stated nonreactive molecular model. C assumes every solute becomes an electrolyte, contrary to the supplied nonionizing behavior. D represents a separate phase rather than the homogeneous solution described. A complete interaction model could show suitable hydrogen-bond contacts with water, but it should not replace glucose molecules with atoms or invented ions."
+    },
+    {
+      "id": "chem-3-8-005",
+      "prompt": "Each symbol in a set of diagrams represents the same particle amount. One starting sample contains four Na+ and four Cl- symbols; another contains four K+ and two SO4^2- symbols. All ions remain dissolved and no reaction or loss occurs on mixing. Which counts belong in a drawing of the entire combined sample?",
+      "options": [
+        "Two Na+, two Cl-, two K+, and one SO4^2-.",
+        "Eight Na+, eight Cl-, eight K+, and four SO4^2-.",
+        "Four Na+, four Cl-, four K+, and two SO4^2-.",
+        "Four Na+, four Cl-, two K+, and four SO4^2-."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Mixing conserves the amount of each ionic species, so the complete final diagram retains every starting symbol. The final charge is +4 − 4 + 4 − 4 = 0. A halves amounts, confusing lower concentration after mixing with loss of particles. B doubles amounts merely because a larger volume is drawn. D reverses the potassium/sulfate ratio, violating species conservation and charge balance. The prompt specifies the entire final sample and a fixed symbol scale, so a change of drawing scale cannot justify a different count."
+    },
+    {
+      "id": "chem-3-8-006",
+      "prompt": "A diagram shows six dissolved solute molecules in a volume V. Pure water is added and the sample is stirred until homogeneous, with a final volume 2V and no reaction or solute loss. Which revised diagram correctly represents dilution at the same symbol scale?",
+      "options": [
+        "Twelve solute molecules in 2V, because adding solvent creates twice as much solute.",
+        "Three solute molecules in 2V, because halving concentration destroys half the solute.",
+        "Six solute molecules confined to the original V beside a separate pure-water region, with those unmixed regions labeled as the final homogeneous solution.",
+        "Six solute molecules distributed throughout 2V, with additional water represented."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Dilution preserves the solute amount while increasing total solution volume and decreasing solute number density. A creates solute and would preserve rather than halve concentration. B removes solute in addition to changing volume. C labels segregated regions as the final homogeneous solution; after mixing the solute is distributed through the larger volume. The number of added water symbols depends on the chosen drawing convention, but it must not be represented as newly created solute."
+    },
+    {
+      "id": "chem-3-8-007",
+      "prompt": "Equal-volume solutions have the same analytical formula concentration: one is NaCl, the other CaCl2. Both dissociate completely. If the NaCl diagram contains N Na+ symbols and N Cl- symbols, what counts should the CaCl2 diagram show at the same scale?",
+      "options": [
+        "N Ca2+ symbols and 2N Cl- symbols.",
+        "2N Ca2+ symbols and N Cl- symbols.",
+        "N Ca2+ symbols and N Cl- symbols because equal formula concentrations require equal total ion counts.",
+        "No separate ions, because equal concentration requires intact CaCl2 molecules."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Equal formula amount in equal volume gives the same number N of cation formula equivalents, but each CaCl2 provides two chlorides, so the second model has N Ca2+ and 2N Cl-. B reverses the formula ratio and fails charge balance. C confuses equal formula concentration with equal counts of every individual ion or equal total dissolved particles. D contradicts complete dissociation. This is a representation of composition, not a colligative-property prediction."
+    },
+    {
+      "id": "chem-3-8-008",
+      "prompt": "Diagram P contains more solute dots than diagram Q, but neither diagram gives its represented volume or the particle amount represented by one dot. What can be concluded about their concentrations?",
+      "options": [
+        "P must be more concentrated because it has more visible dots.",
+        "The concentrations cannot be compared reliably without compatible symbol scales and represented volumes.",
+        "Q must be more concentrated if its dots are drawn larger.",
+        "The concentrations must be equal because both drawings use dots."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Concentration is amount per volume, and both the amount scale and volume scale are missing. A assumes raw dot count alone determines concentration. C confuses artistic symbol size with chemical concentration. D assumes a shared symbol shape guarantees equal amount-to-volume ratios. A useful model must supply or consistently imply the scales needed for the claimed comparison; an attractive drawing alone does not provide that information."
+    },
+    {
+      "id": "chem-3-8-009",
+      "prompt": "A small amount of neutral O2 dissolves in water without reaction. Which described model preserves the species and includes a possible interaction?",
+      "options": [
+        "O2 molecules all become separate O atoms, and the water remains unchanged.",
+        "Every dissolved O2 becomes O2- merely because water is polar.",
+        "Water and O2 must form a new covalent peroxide molecule whenever they approach.",
+        "Intact O2 and water molecules remain present; a nearby water dipole can induce a distortion in the O2 electron cloud."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. A nonpolar molecular solute can remain intact while interacting with a polar solvent through induced-dipole and dispersion effects. A breaks the O=O molecular bond despite no reaction. B assumes full electron transfer and creates an ion without the specified chemistry. C imposes a new covalent product rather than dissolution. The model does not assert that O2 is highly soluble or that all gas/solvent combinations mix without limit; only the stated small dissolved amount is represented."
+    },
+    {
+      "id": "chem-3-8-010",
+      "prompt": "A static drawing shows water molecules oriented around a dissolved cation. Which caution is appropriate when interpreting this hydration-shell model?",
+      "options": [
+        "The lines showing preferred orientation prove every water molecule is permanently covalently bonded to the ion.",
+        "The ion and all nearby water molecules must be motionless because a shell is drawn.",
+        "The drawing represents preferred local interactions; real water molecules can exchange and reorient as the solution moves.",
+        "Every water molecule in the shell must keep exactly the same absolute laboratory orientation as the ion diffuses."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A hydration drawing summarizes favorable electrostatic orientations but need not depict a rigid permanent complex. Water and ions undergo motion, and molecules can enter or leave local solvation regions. A equates an interaction marker with a new covalent bond. B mistakes a snapshot for an absence of dynamics. D treats one depicted orientation as a fixed absolute direction rather than a local relation to a moving ion with thermal fluctuations. A static model is useful while remaining an approximation."
+    },
+    {
+      "id": "chem-3-8-011",
+      "prompt": "A homogeneous aqueous solution is pictured with randomly dispersed solute particles. Two very small equal-volume regions happen to contain different solute counts in one snapshot. Which evaluation is best?",
+      "options": [
+        "The sample cannot be homogeneous unless every microscopic region always contains exactly the same integer count.",
+        "Random microscopic fluctuations can occur while macroscopic composition remains uniform; homogeneity does not require a fixed solute lattice.",
+        "Any random arrangement necessarily proves two separate bulk phases.",
+        "A correct homogeneous-solution model must place every solute particle at a permanent repeating crystal site."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Homogeneity describes uniform macroscopic properties, while small regions in a fluctuating solution need not contain identical instantaneous integer counts. A imposes exact microscopic equality at every instant. C confuses local statistical variation with macroscopic phase separation. D replaces a fluid solution with a rigid crystal model. Representative sampling at an appropriate scale matters when connecting a particulate snapshot to a bulk concentration."
+    }
+  ]
+}

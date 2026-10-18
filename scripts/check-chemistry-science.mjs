@@ -150,4 +150,12 @@ close(.200*.250*6.022,.3011); // ×10^23 molecules
 assert.ok(.050/.251 < .050/.250); // overfilling at fixed amount
 close(.0500/.200,.250);
 close((.0500*.200+.0500*.100)/.1000,.150);
-console.log('Independent arithmetic/charge/Lewis/vector/distribution checks passed through Topic 3.7. Qualitative items require the separate review described in each QA document.');
+// Topic 3.8: particulate amount/volume scales and conservation of ionic species.
+close((6/1)/(9/3),2);
+const ionicCharge = counts => counts.Na - counts.Cl + counts.K - 2*counts.sulfate;
+const combined = {Na:4,Cl:4,K:4,sulfate:2};
+assert.equal(ionicCharge(combined),0);
+assert.equal(ionicCharge({Na:4,Cl:4,K:2,sulfate:4}),-6);
+close((6/2)/(6/1),.5);
+assert.equal(2*1+2*(-1),0); // one Ca2+ and two Cl−
+console.log('Independent arithmetic/charge/Lewis/vector/distribution checks passed through Topic 3.8. Qualitative items require the separate review described in each QA document.');
