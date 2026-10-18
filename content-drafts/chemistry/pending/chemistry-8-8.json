@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 8,
+  "topicId": "topic-8-8",
+  "questions": [
+    {
+      "id": "chem-8-8-001",
+      "prompt": "Which mixture is a buffer near the pKa of HA, assuming all listed components are dissolved at appreciable concentrations?",
+      "options": [
+        "HCl and NaCl",
+        "Weak acid HA and its conjugate base supplied as NaA.",
+        "NaCl alone",
+        "Exactly neutralized HCl and NaOH with only spectator salt remaining"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The conjugate partners can consume small additions of strong base and strong acid, respectively. A is incorrect: chloride is too weak a base in water to provide a useful conjugate buffering reservoir. C is incorrect: spectator ions do not provide a weak conjugate pair. D is incorrect: the strong reagents are consumed and no weak buffering pair remains."
+    },
+    {
+      "id": "chem-8-8-002",
+      "prompt": "A small amount of OH− is added to an HA/A− buffer. Which reaction chiefly accounts for resistance to the pH increase?",
+      "options": [
+        "A− + OH− → HA",
+        "HA → H+ + A− with all added OH− remaining free",
+        "A− precipitates quantitatively with OH−",
+        "HA + OH− → A− + H2O"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The acid component donates a proton to consume the added strong base. A is incorrect: this does not conserve charge or the needed proton inventory. B is incorrect: the added hydroxide is consumed rather than simply accumulating. C is incorrect: buffering does not require such a precipitation reaction."
+    },
+    {
+      "id": "chem-8-8-003",
+      "prompt": "A small amount of H3O+ is added to an HA/A− buffer. Which net process mainly removes the added strong acid?",
+      "options": [
+        "A− + H3O+ → HA + H2O",
+        "HA + H3O+ → A− +2H2O",
+        "A− releases more H3O+ until the acid doubles",
+        "All ions disappear into neutral atoms"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The conjugate-base component accepts the added proton. B is incorrect: the proposed direction deprotonates the acid while adding more protons and is not a balanced buffering reaction. C is incorrect: proton acceptance, not production, counters the acid addition. D is incorrect: buffering is proton transfer, not reduction of ions to atoms."
+    },
+    {
+      "id": "chem-8-8-004",
+      "prompt": "An NH3/NH4+ buffer receives a small addition of HCl. Which component is consumed and which is produced in the main reaction?",
+      "options": [
+        "NH4+ is consumed and NH3 is produced",
+        "Both NH3 and NH4+ are consumed in equal amounts",
+        "NH3 is consumed and NH4+ is produced.",
+        "Neither changes because buffer pH is perfectly fixed"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. NH3 accepts the strong-acid proton, limiting the increase in free hydronium. A is incorrect: that describes the response to added base. B is incorrect: proton transfer converts one partner into the other. D is incorrect: buffering occurs through changes in the component amounts."
+    },
+    {
+      "id": "chem-8-8-005",
+      "prompt": "Which equation describes the primary response of an NH3/NH4+ buffer to added hydroxide?",
+      "options": [
+        "NH3 + OH− → NH4+",
+        "NH4+ + OH− → N2 + H2",
+        "NH3 + H2O → NH4+ + OH− with no consumption of added hydroxide",
+        "NH4+ + OH− → NH3 + H2O"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The conjugate acid consumes strong base, forming the weak base and water with balanced charge and atoms. A is incorrect: this lacks a proton source and fails charge balance. B is incorrect: that is not the proton-transfer buffering process. C is incorrect: that produces rather than neutralizes the introduced strong base."
+    },
+    {
+      "id": "chem-8-8-006",
+      "prompt": "Why does adding a small amount of strong acid usually change buffer pH only slightly rather than not at all?",
+      "options": [
+        "The added acid is chemically destroyed without products",
+        "Most added acid is consumed, but the acid/base component ratio still changes.",
+        "The added acid cannot enter a buffered liquid",
+        "The buffer equilibrium constant instantly changes to preserve pH"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The weak pair converts added strong acid into the weak-acid form; its changed ratio causes a limited pH shift. A is incorrect: proton transfer conserves atoms and charge. C is incorrect: it enters and reacts. D is incorrect: Ka is unchanged at constant temperature."
+    },
+    {
+      "id": "chem-8-8-007",
+      "prompt": "Pure water and an appreciable HA/A− buffer both initially have pH7 at25°C. Equal small amounts of acid are added to equal volumes. Why can the buffer change pH much less?",
+      "options": [
+        "The water initially contains more free H3O+ than the buffer",
+        "A pH of7 automatically gives unlimited buffer capacity",
+        "The buffer contains a substantial conjugate-base reservoir to accept protons.",
+        "The buffer contains no water, so acid cannot ionize"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The same initial pH does not imply the same ability to consume added acid. A is incorrect: equal initial pH means equal free hydronium under the same model. B is incorrect: pH alone does not provide a reservoir. D is incorrect: aqueous buffers contain water and acid reacts normally."
+    },
+    {
+      "id": "chem-8-8-008",
+      "prompt": "Why is a solution containing only a weak acid HA generally much less effective against added strong acid than a prepared HA/A− buffer?",
+      "options": [
+        "It initially contains much less conjugate base available to consume the added acid.",
+        "A weak acid is incapable of any proton transfer",
+        "Every weak-acid-only solution has exactly zero A−",
+        "Buffers work only if the acid component is itself strong"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. A weak-acid-only solution is mostly HA; deliberately adding A− supplies the missing acid-neutralizing partner. B is incorrect: weak acids do ionize to a limited extent. C is incorrect: some conjugate base forms through ionization. D is incorrect: useful aqueous buffers usually use weak conjugate pairs."
+    },
+    {
+      "id": "chem-8-8-009",
+      "prompt": "A buffer initially contains10.0 mmol HA and10.0 mmol A−. After1.00 mmol strong acid is consumed, which statement correctly describes the main change?",
+      "options": [
+        "HA becomes9.00 mmol and A− becomes11.0 mmol, so pH rises",
+        "The amounts stay10.0 mmol each because it is a buffer",
+        "HA becomes11.0 mmol and A− becomes9.00 mmol, so pH decreases slightly.",
+        "The free strong-acid amount remains1.00 mmol"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. One millimole of A− accepts the added proton; the base/acid ratio falls from1 to9/11. A is incorrect: that reverses the response to added acid. B is incorrect: the neutralization reaction changes the reservoir amounts. D is incorrect: the available conjugate base consumes it."
+    },
+    {
+      "id": "chem-8-8-010",
+      "prompt": "Which addition to an NH3 solution directly supplies the conjugate-acid component needed for an ammonia buffer?",
+      "options": [
+        "Dissolved NaCl only",
+        "Enough NaOH to make all base strong",
+        "Only pure water",
+        "Dissolved NH4Cl at an appreciable concentration."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. NH4Cl supplies NH4+, which is the conjugate acid of NH3; chloride is a spectator. A is incorrect: it supplies neither ammonia conjugate partner. B is incorrect: strong hydroxide does not supply NH4+. C is incorrect: dilution does not deliberately supply a substantial NH4+ reservoir."
+    },
+    {
+      "id": "chem-8-8-011",
+      "prompt": "A buffer is diluted moderately with water at constant temperature, so both conjugate components remain appreciable and water autoionization is negligible. Why is its pH often approximately unchanged initially?",
+      "options": [
+        "Neither component concentration changes during dilution",
+        "Both component concentrations decrease by the same factor, leaving their ratio nearly unchanged.",
+        "Ka changes inversely with volume",
+        "Dilution creates equal amounts of strong acid and base"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The equilibrium hydronium level depends primarily on the conjugate ratio in this buffer regime. A is incorrect: both decrease. C is incorrect: Ka is unchanged at fixed temperature. D is incorrect: no such strong-reagent creation is required."
+    }
+  ]
+}

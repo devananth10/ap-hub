@@ -671,4 +671,8 @@ close((2*.1*.025)/(.1*.025),2);
 close(10**(3-5),.01);close(10**(8-6),100);close(10**(9-7),100);
 close(10**(6-4),100);close(14-4,10);assert.ok(3<5.5 && 5.5<8);
 assert.equal([4,6,8.5,12].sort((a,b)=>Math.abs(a-8.7)-Math.abs(b-8.7))[0],8.5);
+// Topic 8.8: conjugate interconversion conserves inventory and charge.
+close((10-1)+(10+1),20);assert.ok(9/11<1);close((.1/10)/(.2/10),.1/.2);
+assert.ok(balanced([[1,'NH4',1],[1,'OH',-1]],[[1,'NH3'],[1,'H2O']]));
+assert.ok(balanced([[1,'NH3'],[1,'H3O',1]],[[1,'NH4',1],[1,'H2O']]));
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
