@@ -4,8 +4,8 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 
 - Official inventory: 91 topics in nine units; target 1,001 questions (11 per topic).
 - Live approved questions: 11 in Topic 1.1 only. Original 001–010 preserved; owner authorized validated 011.
-- Complete unpublished working sets: 16, 176 questions. These require human scientific review and owner approval; they are not additional live questions.
-- Next new topic without an unavailable-source dependency: 3.10 — Solubility, ID `topic-3-10`. Earlier unavailable/partial sets still need reconciliation.
+- Complete unpublished working sets: 17, 187 questions. These require human scientific review and owner approval; they are not additional live questions.
+- Next new topic without an unavailable-source dependency: 3.11 — Spectroscopy and the Electromagnetic Spectrum, ID `topic-3-11`. Earlier unavailable/partial sets still need reconciliation.
 - Topic 1.5 demonstration removed entirely; its page/workspace and student storage keys are preserved. Its pending eleven-question set is separate.
 - Recovered originals: three complete sets (1.4, 1.5, 1.8) and fragments (1.6, 1.7, 2.1). Archived unchanged; complete working copies audited separately.
 - The fragments contain 29 complete recovered question objects (10/10/9); corrected partial working copies and known scope/variety flags are recorded in `qa/partial-recovery.md`. They are not complete banks and do not count toward complete-topic totals.
@@ -50,7 +50,7 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 | 3.7 | Solutions and Mixtures | `topic-3-7` | 0 | 11 | draft; human-review-pending (see QA) |
 | 3.8 | Representations of Solutions | `topic-3-8` | 0 | 11 | draft; human-review-pending (see QA) |
 | 3.9 | Separation of Solutions and Mixtures | `topic-3-9` | 0 | 11 | draft; human-review-pending (see QA) |
-| 3.10 | Solubility | `topic-3-10` | 0 | 0 | not-started |
+| 3.10 | Solubility | `topic-3-10` | 0 | 11 | draft; human-review-pending (see QA) |
 | 3.11 | Spectroscopy and the Electromagnetic Spectrum | `topic-3-11` | 0 | 0 | not-started |
 | 3.12 | Properties of Photons | `topic-3-12` | 0 | 0 | not-started |
 | 3.13 | Beer-Lambert Law | `topic-3-13` | 0 | 0 | not-started |
