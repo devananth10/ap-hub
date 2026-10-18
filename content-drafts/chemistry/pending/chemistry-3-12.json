@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 3,
+  "topicId": "topic-3-12",
+  "questions": [
+    {
+      "id": "chem-3-12-001",
+      "prompt": "Light has a wavelength of 500. nm in vacuum. What is its frequency? Use c = 3.00 × 10^8 m/s.",
+      "options": [
+        "6.00 × 10^5 Hz",
+        "1.50 × 10^2 Hz",
+        "6.00 × 10^14 Hz",
+        "1.67 × 10^-15 Hz"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Convert 500. nm to 5.00 × 10^-7 m, then use nu = c/lambda: (3.00 × 10^8)/(5.00 × 10^-7) = 6.00 × 10^14 s^-1. A divides by the numerical nanometer value without converting to meters. B multiplies c by the converted wavelength rather than dividing, giving the wrong dimensions. D computes lambda/c, a period in seconds, and mislabels it as frequency. The result has three significant figures from the supplied data."
+    },
+    {
+      "id": "chem-3-12-002",
+      "prompt": "A photon has frequency 4.00 × 10^14 s^-1. What is its energy? Use h = 6.626 × 10^-34 J·s.",
+      "options": [
+        "6.04 × 10^47 J",
+        "1.66 × 10^-48 J",
+        "2.65 × 10^-20 J",
+        "2.65 × 10^-19 J"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. E = h nu = (6.626 × 10^-34 J·s)(4.00 × 10^14 s^-1) = 2.6504 × 10^-19 J, or 2.65 × 10^-19 J. A uses nu/h instead of multiplication. B uses h/nu, which also has the wrong dimensions. C is a factor of ten too small from exponent handling. The time units cancel in the correct product, leaving energy per photon in joules."
+    },
+    {
+      "id": "chem-3-12-003",
+      "prompt": "Compare one 400 nm photon with one 800 nm photon in vacuum. Which energy comparison follows from E = hc/lambda?",
+      "options": [
+        "They have equal energies because both travel at c.",
+        "The 400 nm photon has twice the energy of the 800 nm photon.",
+        "The 400 nm photon has half the energy of the 800 nm photon.",
+        "The 400 nm photon has four times the energy because energy is inversely proportional to wavelength squared."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Photon energy is inversely proportional to wavelength, so E400/E800 = 800/400 = 2. A confuses equal propagation speed with equal frequency and energy. C reverses the ratio. D uses an inverse-square relationship that is not present in E = hc/lambda. The comparison needs no absolute value of h or c because those constants cancel."
+    },
+    {
+      "id": "chem-3-12-004",
+      "prompt": "A hypothetical atom has allowed bound levels at 0.0 eV, 2.0 eV, and 5.0 eV relative to a chosen reference. Assume all listed upward transitions are allowed. Which listed absorption requires a 3.0 eV photon?",
+      "options": [
+        "2.0 eV to 5.0 eV.",
+        "0.0 eV to 2.0 eV.",
+        "5.0 eV to 2.0 eV.",
+        "0.0 eV to 5.0 eV."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Absorption raises the atom’s energy, and the 2.0-to-5.0 eV gap is 3.0 eV. B requires 2.0 eV, not 3.0. C has a 3.0 eV energy difference but is downward, corresponding to emission rather than absorption. D requires 5.0 eV. Only the stated level differences matter; the arbitrary energy reference does not change any photon energy."
+    },
+    {
+      "id": "chem-3-12-005",
+      "prompt": "An atom emits a photon while changing from a 6.0 eV level to a 2.0 eV level. What are the photon energy and the atom’s energy change, respectively?",
+      "options": [
+        "−4.0 eV and +4.0 eV.",
+        "+6.0 eV and −2.0 eV.",
+        "+4.0 eV and −4.0 eV.",
+        "+2.0 eV and −6.0 eV."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The atom’s change is Efinal − Einitial = 2.0 − 6.0 = −4.0 eV. The emitted photon carries positive energy +4.0 eV, conserving energy. A reverses the signs and assigns a negative photon energy. B and D use individual level values instead of their difference. A negative change for the emitting species does not mean that the emitted photon has negative energy."
+    },
+    {
+      "id": "chem-3-12-006",
+      "prompt": "An emitted photon has energy 3.00 × 10^-19 J. What is its wavelength? Use h = 6.626 × 10^-34 J·s and c = 3.00 × 10^8 m/s.",
+      "options": [
+        "6.63 × 10^-7 nm",
+        "663 nm",
+        "66.3 nm",
+        "1.51 × 10^6 nm"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Lambda = hc/E = [(6.626 × 10^-34)(3.00 × 10^8)]/(3.00 × 10^-19) = 6.626 × 10^-7 m. Multiplying by 10^9 nm/m gives 662.6 nm, or 663 nm. A keeps the numerical result in meters but labels it nanometers. C introduces a tenfold conversion error. D uses the reciprocal E/(hc), which is a wavenumber rather than a wavelength, and then assigns length units. Checking dimensions helps distinguish these paths."
+    },
+    {
+      "id": "chem-3-12-007",
+      "prompt": "The intensity of a steady monochromatic beam is increased while its frequency and beam cross-sectional area remain fixed. In the photon model, which change explains the greater delivered energy per second?",
+      "options": [
+        "Each photon has a greater energy even though its frequency is unchanged.",
+        "The wavelength must decrease even though c and frequency are unchanged.",
+        "The photons travel faster than c because the beam is brighter.",
+        "More photons arrive per second, while each photon retains the same energy."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. At fixed frequency, E = h nu per photon is fixed. Greater energy per second over the same area therefore corresponds to a greater photon arrival rate. A assigns intensity dependence to the individual photon energy rather than to photon number. B violates c = lambda nu for the fixed quantities. C changes propagation speed without basis. This ideal monochromatic comparison separates photon energy from the amount of light delivered."
+    },
+    {
+      "id": "chem-3-12-008",
+      "prompt": "An idealized isolated atom has a specified allowed bound transition with a 2.0 eV gap. Consider only single-photon absorption into that transition, excluding other levels and ionization. Which statement is correct?",
+      "options": [
+        "A 2.0 eV photon matches the gap; simply having more energy does not guarantee absorption into that same bound transition.",
+        "Any 3.0 eV photon must excite the transition and discard the extra 1.0 eV without another process.",
+        "All photons have the same energy because they travel at the same speed.",
+        "Two lower-energy photons are automatically combined in the specified single-photon event."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The photon energy must match the energy change for the specified allowed bound transition in this idealized model. B treats a discrete transition as an arbitrary threshold with automatic disposal of excess energy. C confuses equal speed with equal energy. D invokes a multiphoton process even though the question explicitly limits the event to one photon. Other possible levels, broadening, collisions, and ionization are excluded rather than silently used to justify a different outcome."
+    },
+    {
+      "id": "chem-3-12-009",
+      "prompt": "Each photon in a beam has energy 3.20 × 10^-19 J. What energy corresponds to one mole of these photons? Use NA = 6.022 × 10^23 mol^-1.",
+      "options": [
+        "1.93 × 10^5 kJ/mol",
+        "193 kJ/mol",
+        "3.20 × 10^-22 kJ/mol",
+        "5.31 × 10^-46 kJ/mol"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Multiply energy per photon by photons per mole: (3.20 × 10^-19)(6.022 × 10^23) = 1.92704 × 10^5 J/mol. Dividing by 1000 gives 192.704 kJ/mol, or 193 kJ/mol. A omits the joule-to-kilojoule conversion. C converts one photon’s energy to kilojoules but omits NA. D divides by NA instead of multiplying, then converts units. Energy per photon and energy per mole are different quantities even though they describe the same radiation frequency."
+    },
+    {
+      "id": "chem-3-12-010",
+      "prompt": "A hypothetical atom has levels at 0.0, 1.0, and 4.0 eV. It can relax from 4.0 to 0.0 eV either directly or through the 1.0 eV level; assume all indicated emissions are allowed and no other energy is transferred. Which comparison is correct?",
+      "options": [
+        "Each of the two cascade photons has energy 4.0 eV, so the cascade emits twice the total energy.",
+        "The cascade must divide the energy equally into two 2.0 eV photons regardless of the level spacings.",
+        "Every photon in both paths has the same wavelength because the initial and final atomic levels match.",
+        "Both paths emit 4.0 eV total, but the direct path emits one 4.0 eV photon while the cascade emits 3.0 and 1.0 eV photons."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The direct gap is 4.0 eV. The cascade gaps are 4.0 − 1.0 = 3.0 eV and 1.0 − 0.0 = 1.0 eV; their sum is also 4.0 eV. A applies the full gap to each step and violates energy conservation. B ignores the actual intermediate level. C confuses equal total energy loss with equal individual photon energies; different energies imply different frequencies/wavelengths. The number of photons can differ while the total released energy remains the same."
+    },
+    {
+      "id": "chem-3-12-011",
+      "prompt": "Two monochromatic beams deliver the same total energy, with negligible losses. One has wavelength 400 nm and the other 800 nm. Using Etotal = N E_photon and E_photon = hc/lambda, which comparison of photon counts is correct?",
+      "options": [
+        "The 400 nm beam contains twice as many photons.",
+        "Both beams contain the same number of photons because total energy is equal.",
+        "The 800 nm beam contains twice as many photons.",
+        "The 800 nm beam contains four times as many photons."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. An 800 nm photon has half the energy of a 400 nm photon, so twice as many are needed to deliver the same total energy. A reverses the count ratio. B ignores the different energies per photon. D applies an incorrect squared wavelength dependence. Both proportionalities are needed: energy per photon decreases with wavelength, while count at fixed total energy increases in inverse proportion to that photon energy."
+    }
+  ]
+}

@@ -2,6 +2,9 @@
 // These do not prove conceptual validity, originality, or scientific completeness.
 import assert from 'node:assert/strict';
 const close = (actual, expected, tolerance = 1e-8) => assert.ok(Math.abs(actual - expected) < tolerance, `${actual} != ${expected}`);
+// Relative checks are essential for photon energies; an absolute 1e-8 J
+// tolerance would incorrectly accept zero for an expected 1e-19 J result.
+const relativeClose = (actual,expected,tolerance=1e-10) => assert.ok(Math.abs(actual-expected)<=Math.abs(expected)*tolerance,`${actual} != ${expected}`);
 
 // Existing approved Topic 1.1: no edits; independently recalculate supplied data.
 close(8.80 / 44.0 * 6.022, 1.2044); // ×10^23 molecules, #002
@@ -161,4 +164,15 @@ assert.equal(2*1+2*(-1),0); // one Ca2+ and two Cl−
 // Topic 3.9: normalized migration uses a common origin and is dimensionless.
 close(2.4/8.0,.30);
 assert.ok(2.4/8.0>=0 && 2.4/8.0<=1);
-console.log('Independent arithmetic/charge/Lewis/vector/distribution checks passed through Topic 3.9. Qualitative items require the separate review described in each QA document.');
+// Topic 3.12: given rounded constants, per-photon/mole units, and level gaps.
+const planck=6.626e-34, lightSpeed=3.00e8, avogadro=6.022e23;
+relativeClose(lightSpeed/(500e-9),6.00e14);
+relativeClose(planck*4.00e14,2.6504e-19);
+close((planck*lightSpeed/(400e-9))/(planck*lightSpeed/(800e-9)),2);
+close(5-2,3); close(2-6,-4);
+relativeClose(planck*lightSpeed/(3.00e-19),6.626e-7);
+relativeClose(3.20e-19*avogadro/1000,192.704);
+close((4-1)+(1-0),4);
+const energy400=planck*lightSpeed/(400e-9), energy800=planck*lightSpeed/(800e-9);
+close((10/energy800)/(10/energy400),2);
+console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
