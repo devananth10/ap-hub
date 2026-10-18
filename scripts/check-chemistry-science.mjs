@@ -430,4 +430,19 @@ assert.ok(balanced([[1,'CO'],[1,'NO2']],[[1,'CO2'],[1,'NO']]));
   close(30-(-70),100);
   assert.ok(40>30); // inconsistent with a sole highest level30 then descent to40
 }
+// Topic 5.7: add signed stoichiometric vectors before identifying net roles.
+function netSteps(...steps) {
+  const total={};
+  for(const step of steps) for(const [species,coefficient] of Object.entries(step)) total[species]=(total[species] || 0)+coefficient;
+  return Object.fromEntries(Object.entries(total).filter(([,coefficient])=>coefficient!==0));
+}
+assert.deepEqual(netSteps({NO2:-2,NO3:1,NO:1},{NO3:-1,CO:-1,NO2:1,CO2:1}),{NO2:-1,NO:1,CO:-1,CO2:1});
+assert.deepEqual(netSteps({NO:-1,O3:-1,NO2:1,O2:1},{NO2:-1,O:-1,NO:1,O2:1}),{O3:-1,O2:2,O:-1});
+assert.deepEqual(netSteps({A:-1,B:-1,I:1},{I:-1,C:-1,P:1}),{A:-1,B:-1,C:-1,P:1});
+assert.deepEqual(netSteps({A:-1,K:-1,I:1},{I:-1,B:-1,P:1,K:1}),{A:-1,B:-1,P:1});
+assert.deepEqual(netSteps({A:-1,B:-1,I:1},{I:-1,B:-1,P:1}),{A:-1,B:-2,P:1});
+assert.deepEqual(netSteps({A:-1,I:2},{I:-2,B:-2,P:2}),{A:-1,B:-2,P:2});
+assert.ok(balanced([[2,'NO2']],[[1,'NO3'],[1,'NO']]));
+assert.ok(balanced([[1,'NO3'],[1,'CO']],[[1,'NO2'],[1,'CO2']]));
+assert.ok(balanced([[1,'O3'],[1,'O']],[[2,'O2']]));
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
