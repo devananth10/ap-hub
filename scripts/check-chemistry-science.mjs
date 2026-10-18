@@ -115,4 +115,20 @@ close(.200/(.200+.300)*2.50,1.00);
 close((127+273.15)/(27+273.15),1.3331667499583542);
 close((2.00*1.00+1.00*3.00)/4.00,1.25);
 assert.ok(330/300>1); // warm gas analyzed with a lower temperature overestimates n
-console.log('Independent arithmetic/charge/Lewis/vector/model checks passed, including Topic 3.4. Topics 3.2/3.3 are qualitative; see per-topic QA for their checks and limitations.');
+// Topic 3.5: RMS scaling and normalized Maxwell energy distributions (kB=1).
+close(Math.sqrt(800/200),2);
+close(Math.sqrt(4/1),2);
+const energyDensity = (energy,temp) => 2/Math.sqrt(Math.PI)*Math.sqrt(energy)/(temp**1.5)*Math.exp(-energy/temp);
+function integrate(fn,left,right,steps=20000) {
+  const h=(right-left)/steps;
+  let sum=fn(left)+fn(right);
+  for(let i=1;i<steps;i++) sum+=(i%2 ? 4 : 2)*fn(left+i*h);
+  return sum*h/3;
+}
+for(const temp of [1,2]) {
+  close(integrate(energy=>energyDensity(energy,temp),0,100),1,.001);
+  close(integrate(energy=>energy*energyDensity(energy,temp),0,100),1.5*temp,.001);
+}
+assert.ok(integrate(energy=>energyDensity(energy,2),3,100)>integrate(energy=>energyDensity(energy,1),3,100));
+close((2+(-2))/2,0); close((2**2+(-2)**2)/2,4);
+console.log('Independent arithmetic/charge/Lewis/vector/distribution checks passed through Topic 3.5. Topics 3.2/3.3 are qualitative; see per-topic QA for their checks and limitations.');
