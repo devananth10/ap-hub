@@ -353,4 +353,14 @@ assert.ok(balanced([[1,'Cl2'],[2,'OH',-1]],[[1,'Cl',-1],[1,'ClO',-1],[1,'H2O']])
 assert.ok(balanced([[2,'H2']],[[4,'H',1],[4,'e',-1]]));
 assert.ok(balanced([[1,'O2'],[4,'H',1],[4,'e',-1]],[[2,'H2O']]));
 assert.ok(balanced([[2,'H2'],[1,'O2']],[[2,'H2O']]));
+// Topic 5.1: concentration changes per time and stoichiometric species rates.
+close((.800-.680)/40*(4/2),.00600);
+close((.500-.320)/30,.00600);
+close((.320-.260)/30,.00200);
+close(((.500-.320)/30)/((.320-.260)/30),3);
+close(5/10,.5); close(8/10,.8);
+close(.0060/.0040,1.5);
+close(.0200/2*3,.0300); close(.0200/2,.0100);
+close((.600/100-.300/100)/20,.000150);
+assert.ok(balanced([[2,'N2O5']],[[4,'NO2'],[1,'O2']]));
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');

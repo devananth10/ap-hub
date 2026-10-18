@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 5,
+  "topicId": "rates",
+  "questions": [
+    {
+      "id": "chem-5-1-001",
+      "prompt": "At constant volume, N2O5 decomposes by 2N2O5 → 4NO2 + O2. Its concentration decreases from 0.800 M to 0.680 M in 40.0 s. What is the average rate of NO2 formation over this interval?",
+      "options": [
+        "1.50 × 10^-3 M/s",
+        "6.00 × 10^-3 M/s",
+        "3.00 × 10^-3 M/s",
+        "1.20 × 10^-2 M/s"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. N2O5 disappears at (0.800 − 0.680)/40.0 = 3.00 × 10^-3 M/s. Twice as much NO2 forms per mole of N2O5 consumed, so its formation rate is 6.00 × 10^-3 M/s. A divides by two and corresponds to the normalized reaction rate or O2 formation rate. C ignores the 4:2 coefficient ratio. D uses the product coefficient four without dividing by the reactant coefficient two. All rates refer to the same interval at fixed volume."
+    },
+    {
+      "id": "chem-5-1-002",
+      "prompt": "In a constant-volume reaction, [A] is 0.500 M at 0 s, 0.320 M at 30.0 s, and 0.260 M at 60.0 s. How does the average disappearance rate of A in the first 30.0 s compare with that in the second 30.0 s?",
+      "options": [
+        "The first rate is three times the second: 0.00600 versus 0.00200 M/s.",
+        "The rates are equal because the intervals have equal duration.",
+        "The second rate is three times the first because more time has passed.",
+        "The first rate is 0.0167 M/s because it equals the initial concentration divided by 30.0 s."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The concentration changes are 0.180 M and 0.060 M, each over 30.0 s, giving rates 0.00600 and 0.00200 M/s. B ignores unequal amounts consumed. C reverses the observed change in rate. D divides the initial amount by time instead of using the concentration change. These interval averages do not establish an exact rate law or an instantaneous rate at every point."
+    },
+    {
+      "id": "chem-5-1-003",
+      "prompt": "Two experiments use equal initial quantities of the same limiting reactant and collect the same gaseous product at the same gas temperature and pressure. At 10 s, experiment I has collected 5 mL and II has collected 8 mL. Both eventually collect 20 mL. Which conclusion is supported?",
+      "options": [
+        "II has a larger final product amount because its 10 s volume is larger.",
+        "Both have identical rates at every time because their final volumes match.",
+        "II must have begun with more limiting reactant despite the stated equal quantities.",
+        "II has a greater average gas-production rate over the first 10 s, while the final product amounts are the same."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. With gas conditions matched, volume tracks gas amount. The first-interval averages are 0.5 and 0.8 mL/s, whereas equal final volumes indicate equal collected amounts. A confuses early production with final yield. B confuses completion amount with the time needed to produce it. C contradicts the controlled starting quantities and is unnecessary to explain different rates. The data compare interval averages, not necessarily instantaneous rates at exactly 10 s."
+    },
+    {
+      "id": "chem-5-1-004",
+      "prompt": "Equal masses of the same pure carbonate solid react with excess acid at identical concentration, temperature, and stirring. One sample is a single compact piece; the other is crushed into smaller pieces without losing material. Which explanation predicts the usual greater initial rate for the crushed sample?",
+      "options": [
+        "Crushing creates additional moles of carbonate from the same mass.",
+        "Crushing changes the reaction coefficients so that more gas forms per carbonate unit.",
+        "Crushing exposes more solid surface to the solution, increasing the accessible reacting interface.",
+        "Crushing must increase the final theoretical gas amount even though the carbonate mass is unchanged."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. More exposed surface provides greater access for a heterogeneous reaction under otherwise matched conditions. A violates the mass-to-mole relation for the same substance. B invents a stoichiometric change. D confuses faster production with a larger theoretical amount from equal limiting reactant. The prediction concerns comparable accessible surfaces, not arbitrary samples whose composition or mixing also differs."
+    },
+    {
+      "id": "chem-5-1-005",
+      "prompt": "A student wants to isolate the effect of temperature on the initial rate of a solution reaction. Which pair of experiments provides the cleanest comparison?",
+      "options": [
+        "20 °C at 0.100 M A versus 40 °C at 0.200 M A, with all other conditions matched.",
+        "20 °C versus 40 °C with the same initial reactant concentrations, volumes, catalyst condition, mixing, and measurement method.",
+        "20 °C without catalyst versus 40 °C with catalyst, with all other conditions matched.",
+        "20 °C measured over the first 5 s versus 40 °C measured only after most reactant has been consumed."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Temperature is the intended changed variable while other major rate-related conditions and the initial-rate measurement are controlled. A also changes concentration. C also changes catalyst condition. D compares different stages rather than comparable initial rates. A measured difference in a confounded pair could not be assigned uniquely to temperature. The concentrations are specified at the actual reaction conditions."
+    },
+    {
+      "id": "chem-5-1-006",
+      "prompt": "A catalyst test gives faster product formation than a control, but the catalyzed solution was also 10 °C warmer. Which follow-up best tests whether adding the catalyst affects the rate?",
+      "options": [
+        "Repeat with twice as much reactant only in the catalyzed trial.",
+        "Compare only the final product masses after both trials finish.",
+        "Assume the entire difference is due to catalyst because temperature never affects rate.",
+        "Repeat catalyzed and uncatalyzed trials at the same controlled temperature and matched initial reactant conditions."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Matching temperature removes the identified confounding variable while changing catalyst condition. A introduces another confound. B measures final amount rather than production per time and may miss a rate difference. C contradicts temperature's influence on reaction kinetics. This design tests a catalyst-associated rate effect without requiring a detailed catalytic mechanism or activation-energy calculation."
+    },
+    {
+      "id": "chem-5-1-007",
+      "prompt": "With temperature and all other starting conditions controlled, increasing initial [A] from 0.100 M to 0.200 M changes a measured initial product-formation rate from 0.0040 M/s to 0.0060 M/s. Which claim is directly supported without assuming a rate-law form?",
+      "options": [
+        "Under these conditions, the higher initial [A] gives a 1.5-fold greater measured initial rate.",
+        "Doubling any reactant concentration must always double every reaction's rate.",
+        "The data prove that the overall reaction is an elementary two-particle collision.",
+        "The rate constant must have increased because [A] increased at fixed temperature."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The observed ratio is 0.0060/0.0040 = 1.5 for the stated comparison. B contradicts the actual ratio and invents a universal concentration rule. C infers a mechanism from insufficient data. D confuses a rate change with a change of rate constant; concentration dependence can change rate without changing the constant at fixed conditions. A specific empirical exponent is not required for this evidence-based conclusion."
+    },
+    {
+      "id": "chem-5-1-008",
+      "prompt": "A reactant solution is rapidly diluted with nonreactive solvent. Its concentration immediately falls, but a mole inventory shows no reactant consumption and no products formed during the dilution. Why should that immediate concentration drop not be reported as the reaction's disappearance rate?",
+      "options": [
+        "Any decrease in concentration must mean the reactant decomposed.",
+        "Concentrations can be used to monitor reactions only in gases.",
+        "The drop results from changed solution volume rather than conversion of reactant into products; the concentration-rate interpretation requires accounting for volume changes.",
+        "Adding solvent changes the number of atoms in each reactant molecule."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Concentration is amount divided by volume, so it can fall by dilution even when the reactant amount is unchanged. A ignores that distinction. B falsely excludes solution kinetics. D invents a change inside the solute molecules. At constant volume, concentration change can directly track reacting amounts; with changing volume, the inventory and volume effects must be separated."
+    },
+    {
+      "id": "chem-5-1-009",
+      "prompt": "For the symbolic reaction 2A + 3B → C at fixed volume, the instantaneous disappearance rate of A is 0.0200 M/s. A, B, and C label substances. What are the simultaneous disappearance rate of B and formation rate of C?",
+      "options": [
+        "B: 0.0200 M/s; C: 0.0200 M/s",
+        "B: 0.0133 M/s; C: 0.0400 M/s",
+        "B: 0.0600 M/s; C: 0.0200 M/s",
+        "B: 0.0300 M/s; C: 0.0100 M/s"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The normalized reaction rate is (0.0200)/2 = 0.0100 M/s. B disappears at three times that rate, 0.0300 M/s, while C forms at the normalized rate. A ignores all coefficient ratios. B reverses the ratios relative to A. C multiplies by B's coefficient without dividing by A's and treats the C coefficient as equal to A's. These proportional rates follow stoichiometry, not an assumed kinetic rate law."
+    },
+    {
+      "id": "chem-5-1-010",
+      "prompt": "A reaction's product-formation rate decreases continuously from mixing onward. A sensor starts recording only after a delay and reports the average rate during a later interval as the 'initial rate.' Relative to the true rate at mixing, how is that reported value biased?",
+      "options": [
+        "Too high, because every later average must exceed an earlier instantaneous value.",
+        "Too low, because all rates during the later interval are below the stated rate at mixing.",
+        "Unchanged, because every average rate equals the initial instantaneous rate.",
+        "Its direction cannot be judged even though the prompt specifies continuously decreasing rate."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. With the stipulated monotonically decreasing rate, every rate sampled in the delayed interval is lower than the initial value, so their average is also lower. A reverses that ordering. C equates an interval average with an instantaneous initial rate without justification. D ignores the provided monotonic behavior that determines the direction. Without that behavior, a general delayed measurement would require more information."
+    },
+    {
+      "id": "chem-5-1-011",
+      "prompt": "Only reactant A absorbs at a monitoring wavelength, and absorbance = (100. M^-1)[A] throughout the experiment at fixed volume and path length. Absorbance falls from 0.600 to 0.300 over 20.0 s. What is A's average disappearance rate?",
+      "options": [
+        "1.50 × 10^-2 M/s",
+        "3.00 × 10^-4 M/s",
+        "1.50 × 10^-4 M/s",
+        "−1.50 × 10^-4 M/s"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Concentrations are 0.00600 and 0.00300 M, so the positive disappearance rate is (0.00600 − 0.00300)/20.0 = 1.50 × 10^-4 M/s. A divides absorbance change by time without converting to concentration. B uses the initial concentration divided by time instead of the change. D gives the signed concentration slope rather than the requested positive disappearance rate. The given calibration and single absorber make absorbance a valid concentration monitor."
+    }
+  ]
+}
