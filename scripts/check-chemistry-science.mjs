@@ -639,4 +639,9 @@ assert.ok(1e-5/.01<.002);assert.ok((2e-4/2)**2<2e-8);
 relativeClose(1e-10/.01,1e-8);relativeClose(1e-8/.01,1e-6);
 close((1e-10/.02)/(1e-10/.01),.5);relativeClose(2e-8*(.005+2e-8),1.000004e-10);
 relativeClose(1e-4*(1e-4+1e-4),2e-8);
+// Topic 8.1: neutral pH at the supplied temperature, not a universal seven.
+relativeClose(Math.sqrt(1e-14),1e-7);close(-Math.log10(Math.sqrt(4e-14)),6.698970004336019);
+relativeClose(10**(-6.5)*10**(-6.5),1e-13);close(2*6.8,13.6);
+relativeClose(1e-12/1e-7,1e-5);close(15/2,7.5);close(-Math.log10(Math.sqrt(9e-14)),6.522878745280337);
+close(1/.01,100);assert.ok(balanced([[2,'H2O']],[[1,'H3O',1],[1,'OH',-1]]));
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');

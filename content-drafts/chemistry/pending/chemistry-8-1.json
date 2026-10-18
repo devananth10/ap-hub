@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 8,
+  "topicId": "acids",
+  "questions": [
+    {
+      "id": "chem-8-1-001",
+      "prompt": "Pure water at25°C has Kw=1.0×10−14. What are its equilibrium hydronium and hydroxide concentrations?",
+      "options": [
+        "Both are1.0×10−14 M.",
+        "[H3O+]=1.0×10−14 M and [OH−]=1.0 M.",
+        "Both are1.0×10−7 M.",
+        "Both are exactly zero."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Neutral water has equal concentrations; each equals√Kw. A is incorrect: their product would then be10−28, not Kw. B is incorrect: those unequal concentrations do not describe pure neutral water. D is incorrect: water autoionizes to a small but nonzero extent."
+    },
+    {
+      "id": "chem-8-1-002",
+      "prompt": "At a certain temperature, Kw=4.0×10−14. What is the pH of pure neutral water at this temperature?",
+      "options": [
+        "6.70",
+        "7.00",
+        "13.40",
+        "7.30"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Neutral [H3O+]=√(4.0×10−14)=2.0×10−7 M; pH=−log(2.0×10−7)=6.70. B is incorrect: that assumes Kw=1.0×10−14 despite the given temperature-dependent value. C is incorrect: that is pKw, twice the neutral pH. D is incorrect: that gives the wrong sign for the logarithmic effect of the factor two."
+    },
+    {
+      "id": "chem-8-1-003",
+      "prompt": "Pure neutral water at a specified temperature has pH6.50. What is Kw at that temperature?",
+      "options": [
+        "1.0×10−14",
+        "1.0×10−13",
+        "3.2×10−7",
+        "1.0×10−26"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Neutrality gives pOH=6.50, so pKw=13.00 and Kw=10−13. A is incorrect: that assumes the25°C value instead of using the measured neutral pH. C is incorrect: that is approximately [H3O+], not the product of equal ion concentrations. D is incorrect: that squares10−13 a second time even though it already represents the ion product."
+    },
+    {
+      "id": "chem-8-1-004",
+      "prompt": "Which equation correctly represents water autoionization with balanced atoms and charge?",
+      "options": [
+        "H2O(l) ⇌ H3O+(aq) + OH−(aq)",
+        "2H2O(l) ⇌ 2H3O+(aq)",
+        "2H2O(l) ⇌ H2(g) + O2(g)",
+        "2H2O(l) ⇌ H3O+(aq) + OH−(aq)"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Two water molecules exchange a proton, producing one hydronium and one hydroxide; total charge remains zero. A is incorrect: the left side lacks the required second oxygen and two hydrogens. B is incorrect: this creates positive charge and does not conserve hydrogen. C is incorrect: that is neither balanced as written nor the autoionization process."
+    },
+    {
+      "id": "chem-8-1-005",
+      "prompt": "A neutral aqueous sample at a certain temperature has pOH6.80. What are pH and pKw at that temperature?",
+      "options": [
+        "pH6.80 and pKw13.60",
+        "pH7.20 and pKw14.00",
+        "pH13.60 and pKw20.40",
+        "pH0 and pKw6.80"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Equal hydronium and hydroxide concentrations mean equal pH and pOH; their sum is pKw. B is incorrect: that imposes the25°C sum without justification. C is incorrect: neutrality requires pH=pOH. D is incorrect: zero pH would imply far more hydronium than hydroxide."
+    },
+    {
+      "id": "chem-8-1-006",
+      "prompt": "Which statement correctly describes neutral pure water at25°C?",
+      "options": [
+        "Neutrality means no charged particles are present.",
+        "Every water molecule is ionized.",
+        "It contains small equal concentrations of H3O+ and OH−, not an absence of ions.",
+        "H3O+ can exist only if an external acid was added."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Autoionization establishes both ions at10−7 M while the solution remains neutral. A is incorrect: equal positive and negative ion concentrations can coexist. B is incorrect: only a tiny fraction is ionized. D is incorrect: water itself forms hydronium by autoionization."
+    },
+    {
+      "id": "chem-8-1-007",
+      "prompt": "Pure water at an elevated temperature has Kw=1.0×10−12 and measured pH6.00. Is it acidic, neutral, or basic at that temperature?",
+      "options": [
+        "Acidic solely because pH is below7.",
+        "Basic because Kw is larger than its25°C value.",
+        "Impossible because pure water must always have pH7.",
+        "Neutral, because [H3O+]=[OH−]=1.0×10−6 M."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The neutral pH depends on temperature; both ions equal√Kw. A is incorrect: the neutral reference is6 at this temperature. B is incorrect: larger equal ion concentrations do not favor either ion. C is incorrect: Kw is temperature dependent."
+    },
+    {
+      "id": "chem-8-1-008",
+      "prompt": "At a temperature where Kw=1.0×10−12, an aqueous sample has pH7.00. Which classification follows?",
+      "options": [
+        "Neutral because every sample at pH7 is neutral.",
+        "Basic, because [OH−]=1.0×10−5 M exceeds [H3O+]=1.0×10−7 M.",
+        "Acidic because pKw is only12.",
+        "Neutral because hydronium is nonzero."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Using Kw/[H3O+] gives10−5 M hydroxide, so this is above the neutral pH6 at that temperature. A is incorrect: neutral pH here is6. C is incorrect: the ion comparison shows hydroxide predominates. D is incorrect: both acidic and basic aqueous samples also contain hydronium."
+    },
+    {
+      "id": "chem-8-1-009",
+      "prompt": "At a temperature where pKw=15.00, what is the pH of neutral water?",
+      "options": [
+        "7.00",
+        "15.00",
+        "3.75",
+        "7.50"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Neutrality gives pH=pOH and2pH=pKw=15.00. A is incorrect: that uses the25°C neutral value regardless of the given pKw. B is incorrect: that equates pH to the sum of pH and pOH. C is incorrect: that divides by four rather than two."
+    },
+    {
+      "id": "chem-8-1-010",
+      "prompt": "A pH probe reads7.00 for a pure-water reference held at a temperature where Kw=9.0×10−14. Under the ideal model, what reference pH should be used to assess the reading?",
+      "options": [
+        "Approximately6.52",
+        "7.00 by definition at every temperature",
+        "Approximately13.05",
+        "Approximately7.48"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Neutral [H3O+]=3.0×10−7 M and pH≈6.52; the given temperature must be used. B is incorrect: neutrality is equal ion concentrations, not a universal pH. C is incorrect: that is pKw rather than neutral pH. D is incorrect: that reverses the logarithmic shift from a larger hydronium concentration."
+    },
+    {
+      "id": "chem-8-1-011",
+      "prompt": "Two clean containers hold0.0100 L and1.00 L of pure neutral water at25°C. Which comparison is correct?",
+      "options": [
+        "The larger sample has100 times the hydronium concentration.",
+        "The smaller sample must have a pH two units higher.",
+        "The ion concentrations are equal, but the larger sample contains100 times as many moles of each ion.",
+        "The samples contain equal moles of hydroxide."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Both have10−7 M of each ion; moles equal concentration×volume, and the volume ratio is100. A is incorrect: amount changes with volume, but equilibrium concentration does not. B is incorrect: the concentrations, and therefore pH values, are equal. D is incorrect: equal concentration in unequal volumes gives unequal amounts."
+    }
+  ]
+}
