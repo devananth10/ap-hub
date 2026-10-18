@@ -1,5 +1,14 @@
 # PrepAtlas milestone verification
 
+## Unit 3 content checkpoint — October 18, 2026
+
+- Saved twenty complete unpublished sets (220 questions), including all thirteen Unit 3 topics. Topic 1.1 remains the only live bank, with eleven questions. Total complete-file coverage is 231 of the 1,001 target; the bank is unfinished. Recovered partials and unavailable earlier sets are tracked separately.
+- All draft structure/ID/count/answer-position checks and implemented numerical/model checks pass. Every pending topic has a scope/QA record; normalized exact duplicate prompts are rejected. Human scientific review and owner approval are still pending.
+- TypeScript, production build, all 31 unit tests, and development/production smoke suites passed. Each smoke suite checks 19 routes, CSS, seven 404 cases, six course-art mappings, and home-art rotation. The temporary production server was stopped; the restored background development preview remains on 3000.
+- Mobile course outline at 390 pixels with Units 3/9 open wraps long new names without horizontal overflow. Unit 3 practice shows zero, verifying unpublished drafts stay out of the app. Topic 1.1 shows eleven without the removed badge. The browser console was clean and viewport override reset. Existing selections/theme restored after the preview restart.
+- The official resource catalog is unchanged and empty. All 103 source-index videos remain suggestions, with provider metadata checked October 17; no playback/embed approval is inferred.
+- Detailed verification and exact next work are in [the content checkpoint](../content-drafts/chemistry/VALIDATION.md) and [progress ledger](../content-drafts/chemistry/PROGRESS.md). Git checkpoints remain local under the handoff's no-push restriction.
+
 ## Current curriculum and question checkpoint — October 17, 2026
 
 - Topic 1.1 now has exactly eleven questions: original 001–010 preserved, plus the owner-requested independently recalculated 011. Topic 1.5 demo deleted; its workspace remains, published count zero. Owner-approval question badges removed for every question.

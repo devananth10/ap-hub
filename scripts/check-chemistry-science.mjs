@@ -166,6 +166,7 @@ close(2.4/8.0,.30);
 assert.ok(2.4/8.0>=0 && 2.4/8.0<=1);
 // Topic 3.12: given rounded constants, per-photon/mole units, and level gaps.
 const planck=6.626e-34, lightSpeed=3.00e8, avogadro=6.022e23;
+assert.throws(()=>relativeClose(0,2.6504e-19)); // reject a zero result, unlike an oversized absolute tolerance
 relativeClose(lightSpeed/(500e-9),6.00e14);
 relativeClose(planck*4.00e14,2.6504e-19);
 close((planck*lightSpeed/(400e-9))/(planck*lightSpeed/(800e-9)),2);
@@ -175,4 +176,13 @@ relativeClose(3.20e-19*avogadro/1000,192.704);
 close((4-1)+(1-0),4);
 const energy400=planck*lightSpeed/(400e-9), energy800=planck*lightSpeed/(800e-9);
 close((10/energy800)/(10/energy400),2);
+// Topic 3.13: Beer-Lambert products, calibration, dilution, and units.
+close(150*2.00*.00300,.900);
+close(.150/.00200,75); close(.300/.00400,75);
+close(.225/75,.00300);
+close(1.20*10/50,.240);
+close(2*.5,1);
+close(220/110,2);
+assert.ok(.6/75 > .5/75); // extra apparent absorbance at fixed positive slope
+close(1/2,.5); // equal A and b, epsilonP=2 epsilonQ
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');

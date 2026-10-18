@@ -4,8 +4,8 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 
 - Official inventory: 91 topics in nine units; target 1,001 questions (11 per topic).
 - Live approved questions: 11 in Topic 1.1 only. Original 001–010 preserved; owner authorized validated 011.
-- Complete unpublished working sets: 19, 209 questions. These require human scientific review and owner approval; they are not additional live questions.
-- Next new topic without an unavailable-source dependency: 3.13 — Beer-Lambert Law, ID `topic-3-13`. Earlier unavailable/partial sets still need reconciliation.
+- Complete unpublished working sets: 20, 220 questions. These require human scientific review and owner approval; they are not additional live questions.
+- Next new topic without an unavailable-source dependency: 4.1 — Introduction for Reactions, ID `reactions`. Earlier unavailable/partial sets still need reconciliation.
 - Topic 1.5 demonstration removed entirely; its page/workspace and student storage keys are preserved. Its pending eleven-question set is separate.
 - Recovered originals: three complete sets (1.4, 1.5, 1.8) and fragments (1.6, 1.7, 2.1). Archived unchanged; complete working copies audited separately.
 - The fragments contain 29 complete recovered question objects (10/10/9); corrected partial working copies and known scope/variety flags are recorded in `qa/partial-recovery.md`. They are not complete banks and do not count toward complete-topic totals.
@@ -53,7 +53,7 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 | 3.10 | Solubility | `topic-3-10` | 0 | 11 | draft; human-review-pending (see QA) |
 | 3.11 | Spectroscopy and the Electromagnetic Spectrum | `topic-3-11` | 0 | 11 | draft; human-review-pending (see QA) |
 | 3.12 | Properties of Photons | `topic-3-12` | 0 | 11 | draft; human-review-pending (see QA) |
-| 3.13 | Beer-Lambert Law | `topic-3-13` | 0 | 0 | not-started |
+| 3.13 | Beer-Lambert Law | `topic-3-13` | 0 | 11 | draft; human-review-pending (see QA) |
 | 4.1 | Introduction for Reactions | `reactions` | 0 | 0 | not-started |
 | 4.2 | Net Ionic Equations | `topic-4-2` | 0 | 0 | not-started |
 | 4.3 | Representations of Reactions | `topic-4-3` | 0 | 0 | not-started |
