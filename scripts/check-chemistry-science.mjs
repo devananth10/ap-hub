@@ -703,4 +703,9 @@ close(15-298*.080,-8.84);close(-25-298*(-.120),10.76);close(700+20-725,-5);
 close(20-35,-15);close(50-3*20,-10);close(18-30.5,-12.5);close(15+25,40);
 assert.deepEqual(netSteps({A:-1,C:-1,I:1,X:1},{I:-1,B:1}),{A:-1,C:-1,X:1,B:1});
 assert.ok(2*20-55<0 && 3*20-55>0);
+// Topic 9.8: electron/atom/charge bookkeeping, no electrode-sign labels.
+assert.ok(balanced([[1,'Zn']],[[1,'Zn',2],[2,'e',-1]]));
+assert.ok(balanced([[1,'Cu',2],[2,'e',-1]],[[1,'Cu']]));
+assert.ok(balanced([[1,'Na',1],[1,'e',-1]],[[1,'Na']]));
+assert.ok(balanced([[2,'H',1],[2,'e',-1]],[[1,'H2']]));
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
