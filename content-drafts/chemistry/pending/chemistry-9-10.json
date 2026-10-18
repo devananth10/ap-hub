@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 9,
+  "topicId": "topic-9-10",
+  "questions": [
+    {
+      "id": "chem-9-10-001",
+      "prompt": "For Zn(s)+Cu2+(aq)→Zn2+(aq)+Cu(s), Q=[Zn2+]/[Cu2+]. At fixed temperature, [Zn2+] is increased while [Cu2+] is unchanged. What happens to the cell potential for the written direction?",
+      "options": [
+        "It increases because more product always strengthens the forward drive",
+        "E° changes by the same amount as Q",
+        "It is unchanged because zinc metal is omitted from Q",
+        "It decreases because Q increases."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. In E=E°−(RT/nF)lnQ, the larger positive coefficient-times-log subtraction lowers E. A is incorrect: more dissolved product raises Q and reduces the written-direction driving force. B is incorrect: E° is unchanged at fixed temperature. C is incorrect: dissolved Zn2+ is included even though pure Zn is omitted."
+    },
+    {
+      "id": "chem-9-10-002",
+      "prompt": "For the Zn/Cu reaction with Q=[Zn2+]/[Cu2+], [Cu2+] is increased at fixed [Zn2+] and temperature. Which potential trend follows?",
+      "options": [
+        "E decreases because Q increases",
+        "E increases because Q decreases.",
+        "E° increases because a reactant was added",
+        "E must become exactly zero regardless of concentrations"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. A larger denominator lowers lnQ, making the subtracted term smaller. A is incorrect: the quotient denominator, not numerator, was increased. C is incorrect: standard potential remains fixed at the same temperature. D is incorrect: zero potential occurs at Q=K, not after any addition."
+    },
+    {
+      "id": "chem-9-10-003",
+      "prompt": "The final ion concentration in a Zn half-cell is halved while the Cu2+ concentration and temperature are held fixed. What qualitative change follows for the Zn+Cu2+ reaction potential?",
+      "options": [
+        "It decreases because every dilution reduces every cell voltage",
+        "It stays fixed because both ions have charge2+",
+        "It increases as the product/reactant quotient falls.",
+        "The standard potential necessarily changes sign"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The Zn2+ numerator is halved, lowering Q and increasing E in the Nernst relationship. A is incorrect: the effect depends on which active species is changed. B is incorrect: equal charge does not cancel a concentration change in only one species. D is incorrect: composition changes do not alter E°."
+    },
+    {
+      "id": "chem-9-10-004",
+      "prompt": "Under the concentration/activity model for a cell, what condition gives E=E° at the stated temperature?",
+      "options": [
+        "Q=1",
+        "Q=0",
+        "Q=K for every possible cell",
+        "Equal masses of the two electrodes"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The correction term vanishes because ln1=0. B is incorrect: ln0 is undefined and not the standard quotient condition. C is incorrect: that gives E=0, not generally E°. D is incorrect: pure-metal masses do not specify Q."
+    },
+    {
+      "id": "chem-9-10-005",
+      "prompt": "What happens to a cell potential when the reacting system reaches equilibrium at Q=K?",
+      "options": [
+        "E must equal E° even when K≠1",
+        "E becomes zero for the reaction.",
+        "E must increase without limit",
+        "The equilibrium constant becomes zero"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. At equilibrium there is no net thermodynamic driving force for that reaction. A is incorrect: standard composition and equilibrium are different conditions. C is incorrect: the driving force vanishes at equilibrium. D is incorrect: K remains a positive property of the reaction and temperature."
+    },
+    {
+      "id": "chem-9-10-006",
+      "prompt": "For a written redox direction at fixed temperature, Q>K. Which potential sign is consistent with the direction needed to approach equilibrium?",
+      "options": [
+        "E>0 for the written direction",
+        "E=0 because Q is finite",
+        "The sign cannot depend on concentrations",
+        "E<0 for the written direction; the reverse direction is favored."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Using E=(RT/nF)ln(K/Q), Q>K gives a negative logarithm. A is incorrect: that would favor moving farther in the wrong thermodynamic direction. B is incorrect: zero requires Q=K. C is incorrect: nonstandard concentrations determine Q and can affect the sign."
+    },
+    {
+      "id": "chem-9-10-007",
+      "prompt": "A copper concentration cell has identical Cu electrodes in0.010 M and1.0 M Cu2+ solutions at the same temperature. Which operating direction reduces the concentration difference?",
+      "options": [
+        "Cu dissolves in the dilute half-cell and Cu2+ plates in the concentrated half-cell.",
+        "Cu plates on the dilute side and dissolves on the concentrated side",
+        "Both electrodes dissolve without any reduction",
+        "No voltage is possible because the metals are identical"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Oxidation raises dilute-side ion concentration while reduction lowers concentrated-side ion concentration; electrons travel through the wire from dilute-side metal to concentrated-side metal. B is incorrect: that would increase the concentration difference. C is incorrect: electron production requires a corresponding consumption process. D is incorrect: a concentration difference can supply a driving force."
+    },
+    {
+      "id": "chem-9-10-008",
+      "prompt": "A concentration cell has identical electrodes and identical active-ion concentrations at the same temperature. No other gradient is present. What is its initial thermodynamic potential?",
+      "options": [
+        "The potential of two different metals chosen from a table",
+        "Always one volt",
+        "Zero",
+        "Infinite because both ion concentrations match"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. With no concentration difference or other asymmetry, there is no net reaction driving force. A is incorrect: the electrodes are identical, so that difference is absent. B is incorrect: there is no universal one-volt value. D is incorrect: equal concentrations remove rather than maximize this driving force."
+    },
+    {
+      "id": "chem-9-10-009",
+      "prompt": "During ideal discharge of a galvanic cell in its favorable direction, Q approaches K. What happens to the magnitude of its thermodynamic cell potential?",
+      "options": [
+        "It approaches zero.",
+        "It increases without limit",
+        "It stays equal to E° for every composition",
+        "It must reverse sign before equilibrium is reached"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. As the reacting composition approaches equilibrium, the driving force for further discharge diminishes. B is incorrect: equilibrium is the zero-driving-force condition. C is incorrect: the nonstandard correction changes with Q. D is incorrect: the favorable-direction potential can decrease to zero without first reversing."
+    },
+    {
+      "id": "chem-9-10-010",
+      "prompt": "A cell reaction has positive E° but is placed in a nonstandard composition with Q>K. Which claim is correct?",
+      "options": [
+        "Its potential must remain positive because E° is positive",
+        "Its potential for the written direction can be negative despite positive E°.",
+        "Its standard potential has permanently become negative",
+        "The setup disproves the equilibrium constant relationship"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Standard favorability does not guarantee forward favorability at every possible composition. A is incorrect: the concentration correction can outweigh E°. C is incorrect: E° is not changed by the chosen concentrations. D is incorrect: the relationship predicts this possible reversal."
+    },
+    {
+      "id": "chem-9-10-011",
+      "prompt": "For Zn+Cu2+→Zn2++Cu, both active-ion concentrations are multiplied by the same factor at constant temperature, with ideal behavior. What happens to E?",
+      "options": [
+        "It doubles whenever both concentrations double",
+        "It must become zero because the scaling factors match",
+        "E° changes by the concentration factor",
+        "It stays the same because [Zn2+]/[Cu2+] is unchanged."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Only their ratio enters Q for this reaction; equal scaling cancels. A is incorrect: potential does not scale with the concentration sum. B is incorrect: an unchanged ratio need not equal K. C is incorrect: standard potential is fixed at the temperature."
+    }
+  ]
+}

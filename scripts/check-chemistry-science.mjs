@@ -712,4 +712,8 @@ assert.ok(balanced([[2,'H',1],[2,'e',-1]],[[1,'H2']]));
 close(.34-(-.76),1.10);close(-2*96485*.46/1000,-88.7662);close(.34-(-1.66),2);
 close(2*3,3*2);close(-2*96485*.5/1000,-96.485);close(28945.5/(3*96485),.1);
 close(.6-(-.2),.8);assert.ok(balanced([[2,'Al'],[3,'Cu',2]],[[2,'Al',3],[3,'Cu']]));
+// Topic 9.10: qualitative Nernst signs/ratios only, no numeric voltage item.
+assert.ok(Math.log(2)>Math.log(1));assert.ok(Math.log(.5)<Math.log(1));
+close(Math.log(1),0);assert.ok(Math.log(10/20)<0);close((.1*3)/(.2*3),.1/.2);
+assert.ok(.01/1<1);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
