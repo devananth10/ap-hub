@@ -1,0 +1,84 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 6,
+  "topicId": "topic-6-8",
+  "questions": [
+    {
+      "id": "chem-6-8-001",
+      "prompt": "A standard formation equation produces exactly one mole of a substance from elements in their standard reference forms. Taking graphite as carbon's specified reference form, which equation meets that definition for CO2(g)?",
+      "options": ["2C(graphite) + 2O2(g) → 2CO2(g)", "C(graphite) + O2(g) → CO2(g)", "CO(g) + (1/2)O2(g) → CO2(g)", "C(diamond) + O2(g) → CO2(g)"],
+      "correctIndex": 1,
+      "explanation": "B is correct. It forms one mole CO2 from the specified elemental reference forms. A forms two moles, so its enthalpy would be twice the one-mole formation value. C begins with a compound, not only reference elements. D uses a different carbon form than the specified reference. Fractional elemental coefficients are allowed when needed to form one mole of product."
+    },
+    {
+      "id": "chem-6-8-002",
+      "prompt": "At one standard reference condition, ΔH_f° values in kJ/mol are CO(g) −110.5, CO2(g) −393.5, and O2(g) 0. What is ΔH° for CO(g) + (1/2)O2(g) → CO2(g)?",
+      "options": ["+283.0 kJ", "−504.0 kJ", "−393.5 kJ", "−283.0 kJ"],
+      "correctIndex": 3,
+      "explanation": "D is correct. Products minus reactants gives −393.5 − [−110.5 + (1/2)(0)] = −283.0 kJ. A reverses the subtraction. B adds the two negative formation values instead of subtracting the reactant contribution. C omits CO's formation enthalpy. The reference-element term is zero, not every reactant term."
+    },
+    {
+      "id": "chem-6-8-003",
+      "prompt": "Use standard formation values CH4(g) −74.8, CO2(g) −393.5, H2O(l) −285.8, and O2(g) 0 kJ/mol, all at the same reference conditions. What is ΔH° for CH4 + 2O2 → CO2 + 2H2O(l)?",
+      "options": ["−890.3 kJ", "−1039.9 kJ", "−604.5 kJ", "+890.3 kJ"],
+      "correctIndex": 0,
+      "explanation": "A is correct. Product sum is −393.5 + 2(−285.8) = −965.1 kJ; subtracting reactant sum −74.8 gives −890.3 kJ. B adds rather than subtracts the negative CH4 contribution. C counts only one water. D reverses the overall subtraction. The result is for the equation's one mole CH4 with liquid-water products."
+    },
+    {
+      "id": "chem-6-8-004",
+      "prompt": "For CaCO3(s) → CaO(s) + CO2(g), use ΔH_f° values −1206.9, −635.1, and −393.5 kJ/mol respectively at matched reference conditions. What is ΔH°?",
+      "options": ["−178.3 kJ", "−2235.5 kJ", "+178.3 kJ", "+571.8 kJ"],
+      "correctIndex": 2,
+      "explanation": "C is correct. ΔH° = [−635.1 − 393.5] − [−1206.9] = +178.3 kJ. A reverses products and reactants. B adds every negative entry. D omits the CO2 product. All formation values are negative, but their weighted difference can still be positive."
+    },
+    {
+      "id": "chem-6-8-005",
+      "prompt": "At the same reference conditions, ΔH_f°[H2O(g)] = −241.8 and ΔH_f°[H2O(l)] = −285.8 kJ/mol. What is ΔH° for H2O(g) → H2O(l)?",
+      "options": ["+44.0 kJ", "−527.6 kJ", "0 kJ", "−44.0 kJ"],
+      "correctIndex": 3,
+      "explanation": "D is correct. Liquid minus gas gives −285.8 − (−241.8) = −44.0 kJ. A is the opposite vaporization direction. B adds the two values. C ignores phase-dependent enthalpy because the formulas match. Formation tables can describe physical transformations when phases and reference conditions are handled consistently."
+    },
+    {
+      "id": "chem-6-8-006",
+      "prompt": "For Fe2O3(s) + 3CO(g) → 2Fe(s) + 3CO2(g), use ΔH_f° values Fe2O3 −824.2, CO −110.5, Fe 0, and CO2 −393.5 kJ/mol at one reference condition. What is ΔH° as written?",
+      "options": ["−24.8 kJ", "+24.8 kJ", "+762.2 kJ", "−849.0 kJ"],
+      "correctIndex": 0,
+      "explanation": "A is correct. Products total 3(−393.5) = −1180.5; reactants total −824.2 + 3(−110.5) = −1155.7 kJ. Their difference is −24.8 kJ. B reverses sign. C counts only one CO2 product. D omits Fe2O3 from the reactant sum. The zero Fe reference term does not remove the other weighted terms."
+    },
+    {
+      "id": "chem-6-8-007",
+      "prompt": "N2(g) + 3H2(g) → 2NH3(g) has standard reaction enthalpy −92.2 kJ. The elemental reference formation values are zero. What is ΔH_f° for NH3(g)?",
+      "options": ["−184.4 kJ/mol", "−92.2 kJ/mol", "−46.1 kJ/mol", "+46.1 kJ/mol"],
+      "correctIndex": 2,
+      "explanation": "C is correct. The product sum is twice the one-mole NH3 formation value, so ΔH_f° = −92.2/2 = −46.1 kJ/mol. A multiplies rather than divides by two. B reports the two-mole reaction heat per mole. D reverses the formation sign. A formation value is normalized to one mole of the specified compound."
+    },
+    {
+      "id": "chem-6-8-008",
+      "prompt": "Why does a formation table assign ΔH_f° = 0 to O2(g) in its specified standard reference condition but not automatically to O(g) or every other oxygen-containing species?",
+      "options": ["Every species containing an oxygen atom has zero enthalpy of formation.", "Zero is assigned to the element's specified reference form; changing form or making compounds can have nonzero formation values.", "O2(g) contains no bond energy because its formation value is zero.", "All gases must have zero formation values regardless of composition."],
+      "correctIndex": 1,
+      "explanation": "B is correct. The zero is a reference convention for the elemental reference form, not an assertion of no internal energy or no bond strength. A extends it incorrectly to compounds and other species. C confuses a relative formation reference with dissociation energy. D extends it to all gases. Correct use of the table requires the exact species and phase."
+    },
+    {
+      "id": "chem-6-8-009",
+      "prompt": "For CH3OH(l) + (3/2)O2(g) → CO2(g) + 2H2O(l), use ΔH_f° in kJ/mol: methanol −238.7, CO2 −393.5, water −285.8, O2 0. Under the corresponding constant-pressure reference conditions, what q accompanies reaction of 0.500 mol methanol?",
+      "options": ["−726.4 kJ", "+363.2 kJ", "−601.9 kJ", "−363.2 kJ"],
+      "correctIndex": 3,
+      "explanation": "D is correct. Per written mole methanol, ΔH° = −393.5 + 2(−285.8) − (−238.7) = −726.4 kJ. Half a mole gives −363.2 kJ. A omits amount scaling. B reverses sign. C adds the negative methanol formation term instead of subtracting it before scaling by 0.500. Coefficients, phase labels and reacted amount all matter."
+    },
+    {
+      "id": "chem-6-8-010",
+      "prompt": "For 2NO(g) + O2(g) → 2NO2(g), use ΔH_f°[NO] = +90.3, ΔH_f°[NO2] = +33.2, and ΔH_f°[O2] = 0 kJ/mol. What is ΔH° as written?",
+      "options": ["+114.2 kJ", "−57.1 kJ", "−114.2 kJ", "+247.0 kJ"],
+      "correctIndex": 2,
+      "explanation": "C is correct. ΔH° = 2(33.2) − 2(90.3) = −114.2 kJ. A reverses subtraction. B calculates for half the written equation. D adds the two weighted formation contributions. Positive formation enthalpies do not require the reaction between those compounds to absorb heat; the weighted difference determines the sign."
+    },
+    {
+      "id": "chem-6-8-011",
+      "prompt": "A supplied hypothetical table gives ΔH_f°[X(s)] = −300 and ΔH_f°[X(g)] = −100 kJ/mol at the same reference conditions. What is ΔH° for X(s) → X(g)?",
+      "options": ["−400 kJ", "+200 kJ", "−200 kJ", "0 kJ"],
+      "correctIndex": 1,
+      "explanation": "B is correct. Product minus reactant is −100 − (−300) = +200 kJ. A adds the entries. C reverses their order. D assumes matching chemical formulas force matching phase energies. Two negative formation values can yield positive phase-change enthalpy when the final phase is at higher enthalpy. The values are explicitly hypothetical rather than a claimed table for a real X compound."
+    }
+  ]
+}

@@ -558,4 +558,17 @@ close(4*413+2*498-(799+4*463),-3); // missed CO2 bond distractor
 assert.ok(balanced([[1,'CH4'],[1,'Cl2']],[[1,'CH3Cl'],[1,'HCl']]));
 assert.ok(balanced([[1,'C2H4'],[1,'H2']],[[1,'C2H6']]));
 assert.ok(balanced([[1,'CH4'],[2,'O2']],[[1,'CO2'],[2,'H2O']]));
+// Topic 6.8: coefficient-weighted formation sums, including wrong-option arithmetic.
+close(-393.5-(-110.5),-283.0);
+close(-393.5+2*(-285.8)-(-74.8),-890.3);
+close(-635.1+(-393.5)-(-1206.9),178.3);
+close(-285.8-(-241.8),-44);
+close(3*(-393.5)-(-824.2+3*(-110.5)),-24.8);
+close(-393.5-(-824.2+3*(-110.5)),762.2);
+close(3*(-393.5)-3*(-110.5),-849);
+close(-92.2/2,-46.1);
+close((-393.5+2*(-285.8)-(-238.7))*.500,-363.2);
+close((-393.5+2*(-285.8)+(-238.7))*.500,-601.9);
+close(2*33.2-2*90.3,-114.2);
+close(-100-(-300),200);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
