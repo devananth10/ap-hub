@@ -251,4 +251,35 @@ assert.equal(-2-1+3,0); // two A−, one OH− and three Na+
 assert.ok(balanced([[1,'HCl'],[1,'H2O']],[[1,'H3O',1],[1,'Cl',-1]]));
 assert.ok(balanced([[2,'H2O2']],[[2,'H2O'],[1,'O2']]));
 assert.ok(balanced([[3,'O2']],[[2,'O3']]));
+// Topic 4.5: separately compute amounts from the supplied prompt inputs.
+{
+  const extent=Math.min(.400/2,.450/3);
+  close(2*extent,.300); close(.400-2*extent,.100);
+  close(25*.800/100.1*44.01,8.793206793206793);
+  close(12.25/122.5*(3/2)*.08206*300,3.6927);
+  close((.150*.400-3*.100*.100)/.250,.120);
+  close(Math.min(.0200*.150,.0300*.0800)*143.32,.343968);
+  close(5.60/56.0*(3/2)*28,4.20);
+  const theoreticalCopper=10.00/79.55*63.55;
+  close(theoreticalCopper,7.988686360779384);
+  close(6.80/theoreticalCopper*100,85.12037765538946);
+  assert.deepEqual([5,3,4].map(coefficient=>Number((.200*coefficient).toFixed(3))),[1,.6,.8]);
+  close(4.20/(.100*40.30)*100,104.21836228287841);
+  close(2*Math.min(2.00/2,.750),1.50);
+  close(2*Math.min(4.00/2,.750),1.50);
+  const hydrogen=(1.000-.0300)*.500/(.08206*300);
+  close(hydrogen*(2/3)*26.98,.3543558913532104);
+  close(1.000*.500/(.08206*300)*(2/3)*26.98,.3653153519105262);
+  close(hydrogen*26.98,.5315338370298156);
+  close(hydrogen*(3/2)*26.98,.7973007555447234);
+  assert.ok(balanced([[2,'Al'],[3,'Cl2']],[[2,'AlCl3']]));
+  assert.ok(balanced([[1,'CaCO3']],[[1,'CaO'],[1,'CO2']]));
+  assert.ok(balanced([[2,'KClO3']],[[2,'KCl'],[3,'O2']]));
+  assert.ok(balanced([[1,'H3PO4'],[3,'OH',-1]],[[1,'PO4',-3],[3,'H2O']]));
+  assert.ok(balanced([[1,'Fe2O3'],[3,'CO']],[[2,'Fe'],[3,'CO2']]));
+  assert.ok(balanced([[1,'CuO'],[1,'H2']],[[1,'Cu'],[1,'H2O']]));
+  assert.ok(balanced([[1,'C3H8'],[5,'O2']],[[3,'CO2'],[4,'H2O']]));
+  assert.ok(balanced([[2,'Mg'],[1,'O2']],[[2,'MgO']]));
+  assert.ok(balanced([[2,'Al'],[6,'HCl']],[[2,'AlCl3'],[3,'H2']]));
+}
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');

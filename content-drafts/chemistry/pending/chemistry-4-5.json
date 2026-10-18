@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 4,
+  "topicId": "topic-4-5",
+  "questions": [
+    {
+      "id": "chem-4-5-001",
+      "prompt": "For 2Al + 3Cl2 → 2AlCl3, a mixture initially contains 0.400 mol Al and 0.450 mol Cl2. Assuming complete reaction with no side reactions, which amounts describe the AlCl3 formed and the Al remaining?",
+      "options": [
+        "0.400 mol AlCl3 formed; no Al remains.",
+        "0.450 mol AlCl3 formed; no Al remains.",
+        "0.150 mol AlCl3 formed; 0.250 mol Al remains.",
+        "0.300 mol AlCl3 formed; 0.100 mol Al remains."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The reaction extents allowed by Al and Cl2 are 0.400/2 = 0.200 mol and 0.450/3 = 0.150 mol respectively, so chlorine limits the reaction. It consumes 2(0.150) = 0.300 mol Al and forms the same amount of AlCl3, leaving 0.100 mol Al. A ignores the chlorine shortage. B uses a 1:1 Cl2-to-product ratio and exceeds the available aluminum. C confuses reaction extent with product amount, omitting the product coefficient of two."
+    },
+    {
+      "id": "chem-4-5-002",
+      "prompt": "A 25.0 g dry sample is 80.0% CaCO3 by mass; the rest is inert. All CaCO3 decomposes by CaCO3 → CaO + CO2. Using molar masses 100.1 g/mol for CaCO3 and 44.01 g/mol for CO2, what theoretical mass of CO2 forms?",
+      "options": [
+        "11.0 g",
+        "8.79 g",
+        "20.0 g",
+        "7.03 g"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The sample contains 25.0(0.800) = 20.0 g CaCO3, or 20.0/100.1 mol. The 1:1 mole ratio gives (20.0/100.1)(44.01) = 8.79 g CO2. A treats all 25.0 g as carbonate. C treats the reactant mass as product mass without allowing for CaO. D applies the 80.0% purity correction twice. The inert material does not contribute CO2 under the stated conditions."
+    },
+    {
+      "id": "chem-4-5-003",
+      "prompt": "A 12.25 g sample of KClO3 (122.5 g/mol) decomposes completely by 2KClO3 → 2KCl + 3O2. What volume does the dry O2 occupy at 300. K and 1.00 atm, assuming ideal behavior and R = 0.08206 L·atm·mol^-1·K^-1?",
+      "options": [
+        "3.69 L",
+        "2.46 L",
+        "1.64 L",
+        "7.39 L"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. There are 0.1000 mol KClO3, producing 0.1500 mol O2 by the 3:2 coefficient ratio. V = nRT/P = (0.1500)(0.08206)(300.)/1.00 = 3.69 L. B assumes a 1:1 mole ratio. C reverses the correct 3:2 ratio. D uses three moles of O2 per mole of KClO3 rather than per two moles. The gas is specified as dry, so no water-vapor subtraction is needed."
+    },
+    {
+      "id": "chem-4-5-004",
+      "prompt": "Mix 150. mL of 0.400 M NaOH with 100. mL of 0.100 M H3PO4. Use H3PO4 + 3OH− → PO4^3− + 3H2O as the complete stoichiometric reaction. Neglect later equilibria and assume a final volume of 250. mL. What concentration of excess OH− remains?",
+      "options": [
+        "0.240 M",
+        "0.200 M",
+        "0.120 M",
+        "0.0300 M"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Initial hydroxide is (0.150)(0.400) = 0.0600 mol. Acid is (0.100)(0.100) = 0.0100 mol and consumes 0.0300 mol OH−. The remaining 0.0300 mol in 0.250 L gives 0.120 M. A ignores consumption. B uses only one OH− per H3PO4. D reports the remaining mole number as a molarity, omitting division by final liters. The explicit approximation avoids a phosphate-equilibrium calculation."
+    },
+    {
+      "id": "chem-4-5-005",
+      "prompt": "Mix 20.0 mL of 0.150 M AgNO3 with 30.0 mL of 0.0800 M NaCl. Assume Ag+ + Cl− → AgCl(s) proceeds quantitatively and ignore solubility corrections. With AgCl molar mass 143.32 g/mol, what theoretical precipitate mass forms?",
+      "options": [
+        "0.430 g",
+        "0.774 g",
+        "0.0860 g",
+        "0.344 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Silver provides 0.0200(0.150) = 0.00300 mol and chloride provides 0.0300(0.0800) = 0.00240 mol. Chloride limits the 1:1 reaction, giving 0.00240(143.32) = 0.344 g AgCl. A incorrectly uses all the silver. B adds the two initial ion amounts as if both independently formed a full formula unit. C uses the excess silver amount, 0.000600 mol, as the precipitate amount."
+    },
+    {
+      "id": "chem-4-5-006",
+      "prompt": "For Fe2O3 + 3CO → 2Fe + 3CO2, what minimum mass of CO must be consumed to produce 5.60 g Fe, assuming complete conversion and sufficient Fe2O3? Use 56.0 g/mol for Fe and 28.0 g/mol for CO.",
+      "options": [
+        "4.20 g",
+        "2.80 g",
+        "8.40 g",
+        "1.87 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The target iron amount is 5.60/56.0 = 0.100 mol. The equation requires 3/2 mol CO per mol Fe, so 0.150 mol CO or 4.20 g is consumed. B assumes a 1:1 ratio. C uses the coefficient three without dividing by the iron coefficient two. D reverses the 3:2 ratio. The question asks for CO consumed at the theoretical stoichiometric minimum, not an arbitrary excess supplied to an industrial reactor."
+    },
+    {
+      "id": "chem-4-5-007",
+      "prompt": "A 10.00 g CuO sample reacts with excess hydrogen by CuO + H2 → Cu + H2O. A student isolates 6.80 g dry Cu. Using molar masses 79.55 g/mol for CuO and 63.55 g/mol for Cu, what is the percent yield?",
+      "options": [
+        "68.0%",
+        "117%",
+        "85.1%",
+        "80.0%"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The theoretical copper mass is (10.00/79.55)(63.55) = 7.989 g. Percent yield is (6.80/7.989)(100) = 85.1%. A divides actual copper mass by the initial oxide mass instead of the theoretical copper mass. B reverses actual and theoretical yield. D uses the approximate copper mass fraction in CuO as though it were the experimental yield, ignoring the isolated mass. The product is specified as dry copper."
+    },
+    {
+      "id": "chem-4-5-008",
+      "prompt": "During complete combustion, 0.200 mol C3H8 is consumed according to C3H8 + 5O2 → 3CO2 + 4H2O. Which set of amount changes is consistent with this progress? A minus sign means consumption and a plus sign means formation.",
+      "options": [
+        "O2: −0.200 mol; CO2: +0.600 mol; H2O: +0.800 mol",
+        "O2: −1.00 mol; CO2: +0.600 mol; H2O: +0.800 mol",
+        "O2: −1.00 mol; CO2: +0.200 mol; H2O: +0.200 mol",
+        "O2: +1.00 mol; CO2: −0.600 mol; H2O: −0.800 mol"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Multiplying the equation's coefficients by 0.200 gives 1.00 mol O2 consumed, 0.600 mol CO2 formed, and 0.800 mol water formed. A omits the oxygen coefficient five. C ignores the product coefficients. D reverses all signs despite the stated forward consumption of propane. Coefficients determine changes, not necessarily the total final inventory when excess reactants or initial products are present."
+    },
+    {
+      "id": "chem-4-5-009",
+      "prompt": "For 2Mg + O2 → 2MgO, 0.100 mol Mg is the limiting reactant and oxygen is in excess. Using 40.30 g/mol for MgO, the theoretical yield is 4.03 g, but a container labeled 'MgO product' holds 4.20 g after collection. Which proposed error can explain an apparent yield above 100%?",
+      "options": [
+        "Some inert foreign solid was collected and weighed with the MgO.",
+        "Some Mg remained unreacted and was removed before the product was weighed.",
+        "Some MgO was lost during transfer to the weighing container.",
+        "The experiment stopped before all limiting Mg could react, and only pure MgO was collected."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Including nonproduct solid in the reported product mass can inflate the apparent yield to (4.20/4.03)(100) = 104%. B and D reduce the amount of pure MgO produced relative to complete conversion. C reduces the amount recovered. None of B–D alone explains excess mass when the weighed material is only pure product. An apparent yield above 100% indicates a measurement, composition, or assumption problem, not creation of extra magnesium atoms."
+    },
+    {
+      "id": "chem-4-5-010",
+      "prompt": "A mixture of 2.00 mol H2 and 0.750 mol O2 reacts by 2H2 + O2 → 2H2O. A second experiment doubles only the initial H2 while keeping O2 at 0.750 mol. Both reactions go to completion. How does the theoretical water amount change?",
+      "options": [
+        "It doubles from 1.50 mol to 3.00 mol.",
+        "It increases from 2.00 mol to 4.00 mol.",
+        "It halves from 1.50 mol to 0.750 mol.",
+        "It remains 1.50 mol because oxygen limits both experiments."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. In each experiment, 0.750 mol O2 consumes 1.50 mol H2 and produces 1.50 mol water. Both initial hydrogen amounts exceed 1.50 mol. A assumes doubling a reagent always doubles yield even when that reagent is already in excess. B treats hydrogen as limiting and overlooks oxygen. C applies the oxygen coefficient inversely and predicts a decrease without a reduced limiting amount. Doubling only an excess reactant need not change theoretical yield."
+    },
+    {
+      "id": "chem-4-5-011",
+      "prompt": "Aluminum reacts with excess acid by 2Al + 6HCl → 2AlCl3 + 3H2. The collected gas occupies 0.500 L at 300. K with total pressure 1.000 atm; its only components are H2 and water vapor, whose partial pressure is 0.0300 atm. Assuming ideal behavior and R = 0.08206 L·atm·mol^-1·K^-1, what mass of Al was consumed? Use 26.98 g/mol for Al.",
+      "options": [
+        "0.365 g",
+        "0.532 g",
+        "0.354 g",
+        "0.797 g"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The hydrogen pressure is 1.000 − 0.0300 = 0.9700 atm. Its amount is PV/RT = (0.9700)(0.500)/(0.08206 × 300.) = 0.01970 mol. The 2:3 Al-to-H2 ratio gives (0.01970)(2/3)(26.98) = 0.354 g Al. A uses total gas pressure without subtracting water vapor. B uses a 1:1 Al-to-H2 ratio after the pressure correction. D reverses the 2:3 ratio. Only hydrogen made by the reaction is used to infer aluminum consumption."
+    }
+  ]
+}
