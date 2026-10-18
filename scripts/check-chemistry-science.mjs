@@ -363,4 +363,22 @@ close(.0060/.0040,1.5);
 close(.0200/2*3,.0300); close(.0200/2,.0100);
 close((.600/100-.300/100)/20,.000150);
 assert.ok(balanced([[2,'N2O5']],[[4,'NO2'],[1,'O2']]));
+// Topic 5.2: controlled initial-rate comparisons, dimensions and normalization.
+{
+  const trials=[[.100,.100,.00200],[.200,.100,.00800],[.200,.200,.0160]];
+  const proposedOrders=[[1,1],[1,2],[2,1],[2,2]];
+  const fits=proposedOrders.map(([aOrder,bOrder])=>{
+    const [a,b,rate]=trials[0], k=rate/(a**aOrder*b**bOrder);
+    return trials.every(([x,y,observed])=>Math.abs(k*x**aOrder*y**bOrder-observed)<1e-12);
+  });
+  assert.deepEqual(fits,[false,false,true,false]);
+  close(.180/(.300*.200),3);
+  close(3**0*(.5)**2,.25);
+  assert.equal(1-3,-2); // M exponent of k for third order
+  close(.200/.0500,4); close(4**0,1);
+  assert.equal(1+2,3); close(2**1*2**2,8);
+  for(const [m,n] of [[2,0],[1,1],[0,2]]) close(2**m*2**n,4);
+  close(.0120/60,.000200); close((.0120/60)/.0500,.00400);
+  close((.0600/2)/(.200**2),.750);
+}
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');

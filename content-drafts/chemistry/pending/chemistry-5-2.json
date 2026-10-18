@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 5,
+  "topicId": "topic-5-2",
+  "questions": [
+    {
+      "id": "chem-5-2-001",
+      "prompt": "At one temperature, initial-rate data for A and B are: trial I, [A] = 0.100 M, [B] = 0.100 M, rate = 0.00200 M/s; trial II, [A] = 0.200 M, [B] = 0.100 M, rate = 0.00800 M/s; trial III, [A] = 0.200 M, [B] = 0.200 M, rate = 0.0160 M/s. Which power-law expression is consistent with all three trials?",
+      "options": [
+        "rate = k[A][B]",
+        "rate = k[A][B]^2",
+        "rate = k[A]^2[B]",
+        "rate = k[A]^2[B]^2"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Comparing I and II holds B constant: doubling A quadruples rate, so the A exponent is two. Comparing II and III holds A constant: doubling B doubles rate, so the B exponent is one. A predicts only a twofold increase from I to II. B assigns the squared dependence to the wrong species. D predicts a fourfold rather than twofold increase from II to III. Orders are inferred from controlled comparisons, not merely from coefficients in an overall equation."
+    },
+    {
+      "id": "chem-5-2-002",
+      "prompt": "A reaction obeys rate = k[A][B]. At a fixed temperature its rate is 0.180 M/s when [A] = 0.300 M and [B] = 0.200 M. What value and units follow for k?",
+      "options": [
+        "0.0108 M^-1·s^-1",
+        "3.00 M^-1·s^-1",
+        "30.0 M^-1·s^-1",
+        "0.600 s^-1"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. k = rate/([A][B]) = 0.180/(0.300 × 0.200) = 3.00. Units are (M/s)/M^2 = M^-1·s^-1. A multiplies rate by the concentration product rather than dividing. C makes a decimal-place error in that product. D divides only by A, omitting B and consequently obtaining the wrong value and units. The rate constant is evaluated at the stated temperature."
+    },
+    {
+      "id": "chem-5-2-003",
+      "prompt": "For rate = k[A]^0[B]^2 at fixed temperature, initial [A] is tripled while initial [B] is halved. By what factor does the initial rate change?",
+      "options": [
+        "3/2",
+        "3/4",
+        "1/2",
+        "1/4"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The rate factor is 3^0(1/2)^2 = 1/4. A assumes first-order dependence on both species. B incorrectly uses first-order A dependence while retaining second-order B dependence. C omits the square on B. Zero order in A means its concentration has no effect within the specified rate-law regime; it does not mean A must be absent from the chemical process."
+    },
+    {
+      "id": "chem-5-2-004",
+      "prompt": "A rate is expressed in M/s, and its power-law rate constant has units M^-2·s^-1. What can be concluded from these units alone?",
+      "options": [
+        "The overall concentration order is three, but the separate reactant orders are not determined by the units alone.",
+        "The overall order is two because the concentration exponent in k is −2.",
+        "The reaction must be first order in every reactant, regardless of how many reactants occur.",
+        "The reaction must be second order in A and first order in B, even without concentration data."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. For total order n, k has units M^(1−n)·s^-1. Thus 1−n = −2 and n = 3. B overlooks the M/s units of the rate itself. C invents separate exponents without knowing the species or their dependences. D gives one possible allocation totaling three but is not uniquely implied; other allocations can give the same units. Dimensional analysis gives overall order, not a full experimentally established rate law."
+    },
+    {
+      "id": "chem-5-2-005",
+      "prompt": "At matched temperature and identical initial concentrations of every other reactant, increasing [B] from 0.0500 M to 0.200 M leaves the measured initial rate unchanged within experimental precision. Which assignment is consistent with a simple power-law fit over this tested range?",
+      "options": [
+        "First order in B, because B's concentration changed.",
+        "Second order in B, because its concentration was increased substantially.",
+        "Zero order in B, because a fourfold concentration change produces a rate factor of approximately one.",
+        "A fourfold larger rate constant, which exactly cancels the unchanged rate."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. In a simple fit, 4^n ≈ 1 gives n ≈ 0, consistent with no observed B dependence in this range. A and B would predict fourfold and sixteenfold rate increases respectively. D invents a change in k at matched conditions and does not explain the data. A measured zero-order regime does not prove that B can never affect the reaction at any other concentration or condition."
+    },
+    {
+      "id": "chem-5-2-006",
+      "prompt": "For rate = k[A][B]^2, both initial reactant concentrations are doubled at fixed temperature. Which statement gives the overall order and the initial-rate factor?",
+      "options": [
+        "Overall order two; rate increases by four.",
+        "Overall order three; rate increases by six.",
+        "Overall order two; rate increases by eight.",
+        "Overall order three; rate increases by eight."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Overall order is the sum 1 + 2 = 3, and the simultaneous rate factor is 2^1 × 2^2 = 8. A counts the number of reactant species rather than the exponent sum and misses the squared dependence. B multiplies the overall order by two instead of multiplying concentration factors. C obtains the rate factor but assigns the wrong overall order. The exponents, not the number of brackets, define order."
+    },
+    {
+      "id": "chem-5-2-007",
+      "prompt": "Only two initial-rate trials are available for rate = k[A]^m[B]^n at fixed temperature. In the second, both [A] and [B] are doubled and the rate is four times as large. What does this comparison establish about the exponents?",
+      "options": [
+        "It uniquely establishes m = 2 and n = 0.",
+        "It establishes m + n = 2, but separate controlled changes are needed to identify m and n individually.",
+        "It uniquely establishes m = 1 and n = 1.",
+        "It establishes overall order four because the rate factor is four."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The ratio gives 2^m2^n = 2^(m+n) = 4 = 2^2, so only the sum is fixed. A and C are each possible assignments, but neither is uniquely required; m = 0 and n = 2 is another example. D mistakes a rate ratio for an exponent. Varying one concentration while holding the other fixed would distinguish the individual orders under the assumed model."
+    },
+    {
+      "id": "chem-5-2-008",
+      "prompt": "A colored reactant R is the only absorber at a monitoring wavelength, with absorbance = (60.0 M^-1)[R]. At initial [R] = 0.0500 M, the initial absorbance slope is −0.0120 s^-1. If disappearance rate = k[R], what is k?",
+      "options": [
+        "0.00400 s^-1",
+        "0.240 s^-1",
+        "0.000200 s^-1",
+        "−0.00400 s^-1"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The positive concentration-disappearance rate is 0.0120/60.0 = 0.000200 M/s. Thus k = 0.000200/0.0500 = 0.00400 s^-1. B divides the absorbance slope directly by concentration without calibration. C reports the concentration-rate number as if it were k, omitting division by [R]. D retains the negative concentration slope even though the disappearance rate and k are positive in the supplied law. Calibration is assumed valid and constant."
+    },
+    {
+      "id": "chem-5-2-009",
+      "prompt": "Trial I has [A] = 0.100 M at 20 °C. Trial II has [A] = 0.200 M at 40 °C, and the measured initial rate is larger. Other reactant concentrations are matched. Why is the rate ratio alone insufficient to assign the order in A?",
+      "options": [
+        "Reaction order is determined only from the overall balanced coefficients.",
+        "Temperature affects only final yield and never initial rate.",
+        "Doubling concentration forces first-order behavior regardless of the measured ratio.",
+        "Changing temperature can change k, so the comparison mixes concentration dependence with a rate-constant change."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. To infer the A exponent from rate ratios using one k, the measurements must have matched relevant conditions, including temperature. A treats a general overall equation as a rate-law derivation, which is not valid. B denies temperature dependence of k. C assumes an exponent instead of determining it. A matched-temperature series is needed to isolate concentration effects."
+    },
+    {
+      "id": "chem-5-2-010",
+      "prompt": "For 2A → B at constant volume, define the normalized reaction rate as r = −(1/2)d[A]/dt. Experiments establish r = k[A]^2. At [A] = 0.200 M, the positive disappearance rate of A is 0.0600 M/s. What is k for the stated definition of r?",
+      "options": [
+        "1.50 M^-1·s^-1",
+        "0.150 s^-1",
+        "0.750 M^-1·s^-1",
+        "0.00120 M·s^-1"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The normalized rate is 0.0600/2 = 0.0300 M/s. Therefore k = 0.0300/(0.200)^2 = 0.750 M^-1·s^-1. A uses the unnormalized A-disappearance rate. B uses first-order division instead of the given square. D multiplies the normalized rate by [A]^2 rather than dividing and has incorrect units. Different species-rate conventions can assign different numerical constants, so the prompt defines the convention explicitly."
+    },
+    {
+      "id": "chem-5-2-011",
+      "prompt": "In a series of experiments, B is held at one large fixed concentration and initial [A] is varied. The measured rate is proportional to [A]. Which conclusion is justified without any additional B-variation experiments?",
+      "options": [
+        "The reaction must be zero order in B because B was held constant.",
+        "The observed A dependence is first order under these conditions, but B's order is not identified by this series.",
+        "The overall reaction must be first order, whatever dependence on B might exist.",
+        "B cannot be a reactant because it does not vary between trials."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. A proportional rate response identifies exponent one for A in the tested regime, while any B dependence remains absorbed into a constant factor because B was not varied. A confuses controlling a variable with demonstrating zero order. C cannot establish the exponent sum without B's order. D mistakes an experimental control for absence from the chemical reaction. Additional controlled B changes would be needed to determine its order."
+    }
+  ]
+}
