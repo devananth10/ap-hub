@@ -9,12 +9,16 @@ const videos = JSON.parse(readFileSync(`${root}/research/video-candidates.json`,
 const sourceNeeded = new Set(['1.2', '1.3', '2.2', '2.3']);
 const partial = new Set(['1.6', '1.7', '2.1']);
 const chemistry = courses.find(course => course.id === 'chemistry');
+const asOf = process.argv[2] || new Intl.DateTimeFormat('en-CA', {timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+if (!/^\d{4}-\d{2}-\d{2}$/.test(asOf)) throw new Error('Use an ISO date for the optional report date.');
+const next = chemistry.units.flatMap(unit => unit.topics).find(topic => !questionBatches.some(batch => batch.topicId === topic.id) && !pending.some(batch => batch.topicId === topic.id) && !sourceNeeded.has(topic.number) && !partial.has(topic.number));
 const lines = [
   '# AP Chemistry progress checkpoint', '',
-  'Updated 2026-10-17. This ledger describes saved files, not background work or a claim that the 1,001-question goal is complete.', '',
+  `Updated ${asOf}. This ledger describes saved files, not background work or a claim that the 1,001-question goal is complete.`, '',
   `- Official inventory: 91 topics in nine units; target 1,001 questions (11 per topic).`,
   `- Live approved questions: ${questionBatches.reduce((sum,batch) => sum + batch.questions.length,0)} in Topic 1.1 only. Original 001–010 preserved; owner authorized validated 011.`,
   `- Complete unpublished working sets: ${pending.length}, ${pending.length * 11} questions. These require human scientific review and owner approval; they are not additional live questions.`,
+  `- Next new topic without an unavailable-source dependency: ${next ? `${next.number} — ${next.title}, ID \`${next.id}\`` : 'none'}. Earlier unavailable/partial sets still need reconciliation.`,
   '- Topic 1.5 demonstration removed entirely; its page/workspace and student storage keys are preserved. Its pending eleven-question set is separate.',
   '- Recovered originals: three complete sets (1.4, 1.5, 1.8) and fragments (1.6, 1.7, 2.1). Archived unchanged; complete working copies audited separately.',
   '- The fragments contain 29 complete recovered question objects (10/10/9); corrected partial working copies and known scope/variety flags are recorded in `qa/partial-recovery.md`. They are not complete banks and do not count toward complete-topic totals.',

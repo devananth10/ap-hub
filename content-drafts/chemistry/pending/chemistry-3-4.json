@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 3,
+  "topicId": "topic-3-4",
+  "questions": [
+    {
+      "id": "chem-3-4-001",
+      "prompt": "A sealed flexible container holds a fixed amount of ideal gas at 1.20 atm, 2.00 L, and 300.0 K. Its final volume is 3.00 L and final temperature is 450.0 K. What is the final pressure?",
+      "options": [
+        "0.800 atm",
+        "1.80 atm",
+        "1.20 atm",
+        "2.70 atm"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. For fixed n, P1V1/T1 = P2V2/T2. Thus P2 = 1.20(2.00/3.00)(450/300) = 1.20 atm. The 1.50-fold temperature increase exactly offsets the 1.50-fold volume increase. A accounts for volume but ignores temperature. B accounts for temperature but ignores volume. D inverts the volume ratio, multiplying by both 1.50 factors. Temperatures must be absolute; the values are already given in kelvin."
+    },
+    {
+      "id": "chem-3-4-002",
+      "prompt": "Separate rigid containers of the same volume hold equal mole amounts of He and CO2 at the same temperature. Treat both gases as ideal. Which statement about their pressures is correct?",
+      "options": [
+        "CO2 has the greater pressure because each molecule has greater mass.",
+        "He has the greater pressure because its particles move faster at the same temperature.",
+        "CO2 has three times the pressure because each molecule contains three atoms.",
+        "The pressures are equal because n, T, and V are equal in P = nRT/V."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The ideal-gas equation depends on the number of moles of gas particles, temperature, and volume, not on gas identity or molar mass. A substitutes molecular mass for mole amount. B uses a speed difference without accounting for the full momentum/energy relationship and contradicts the macroscopic ideal-gas result. C counts atoms within a molecule as if they were separate gas particles. Equal mole amounts here mean equal numbers of He atoms and CO2 molecules, not equal numbers of constituent atoms."
+    },
+    {
+      "id": "chem-3-4-003",
+      "prompt": "An ideal gas leaks slowly from a rigid vessel while its temperature remains constant. The pressure decreases from 1.00 atm to 0.750 atm. What percentage of the original gas mole amount has escaped?",
+      "options": [
+        "25.0%",
+        "75.0%",
+        "33.3%",
+        "0%, because the temperature did not change."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. At fixed V and T, P is proportional to n. The remaining fraction is 0.750/1.00 = 0.750, so the escaped fraction is 1 − 0.750 = 0.250, or 25.0%. B reports the fraction remaining rather than lost. C divides the pressure loss by the final pressure instead of the original pressure. D ignores that n can change even when T is constant; the prompt explicitly permits leakage. No chemical reaction or change of vessel volume is needed."
+    },
+    {
+      "id": "chem-3-4-004",
+      "prompt": "A nonreactive gas is collected over water. The total pressure is 0.982 atm, and the water-vapor partial pressure at the collection temperature is 0.0313 atm. What is the partial pressure of the collected gas?",
+      "options": [
+        "1.013 atm",
+        "0.951 atm",
+        "0.0313 atm",
+        "0.982 atm"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Dalton’s law gives Ptotal = Pgas + Pwater. Therefore Pgas = 0.982 − 0.0313 = 0.9507 atm, or 0.951 atm to the total-pressure decimal precision. A adds the vapor pressure instead of subtracting it. C reports only the water contribution. D treats the mixture’s total pressure as though it came entirely from the dry gas. The nonreactive condition allows the two gaseous contributions to be treated independently in the ideal-mixture model."
+    },
+    {
+      "id": "chem-3-4-005",
+      "prompt": "A 0.820 g sample of a pure ideal gas occupies 0.500 L at 1.00 atm and 300.0 K. What is its molar mass? Use R = 0.08206 L·atm·mol^-1·K^-1.",
+      "options": [
+        "20.2 g/mol",
+        "0.0404 g/mol",
+        "40.4 g/mol",
+        "80.7 g/mol"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The amount is n = PV/(RT) = (1.00 atm)(0.500 L)/[(0.08206 L·atm·mol^-1·K^-1)(300.0 K)] = 0.02031 mol. M = m/n = 0.820 g/0.02031 mol = 40.4 g/mol. A is half this value, as would result from doubling the stated volume. B is a factor of one thousand too small, confusing a kilogram-scale number with the requested grams per mole. D is twice the result, as would follow from halving the volume. Units cancel to moles before mass is divided by amount."
+    },
+    {
+      "id": "chem-3-4-006",
+      "prompt": "A rigid container holds a nonreacting ideal-gas mixture of 0.200 mol He and 0.300 mol N2 at a total pressure of 2.50 atm. What is the He partial pressure?",
+      "options": [
+        "1.00 atm",
+        "1.25 atm",
+        "1.50 atm",
+        "2.50 atm"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The total mole amount is 0.500 mol, so XHe = 0.200/0.500 = 0.400. PHe = XHePtotal = 0.400(2.50 atm) = 1.00 atm. B assumes equal mole fractions merely because two gases are present. C is the nitrogen partial pressure, 0.600(2.50) = 1.50 atm. D assigns the total pressure to helium alone. The partial pressures sum to 2.50 atm, providing a consistency check."
+    },
+    {
+      "id": "chem-3-4-007",
+      "prompt": "A rigid tank contains ideal N2 at a partial pressure of 1.20 atm. An equal mole amount of He is added without changing the tank volume or temperature. No reaction occurs. What is the final N2 partial pressure?",
+      "options": [
+        "2.40 atm, because adding any gas doubles every partial pressure.",
+        "0.600 atm, because the N2 mole fraction is now one half and the original total pressure stays fixed.",
+        "Greater than 1.20 atm, because He permanently takes up a volume that is unavailable to N2.",
+        "1.20 atm, because the N2 amount, temperature, and accessible volume are unchanged."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. PN2 = nN2RT/V remains 1.20 atm. Helium contributes another 1.20 atm, making the final total 2.40 atm; N2 is half of that new total. A confuses total and component pressure. B correctly notices the new mole fraction but incorrectly holds the total pressure at its old value. C assigns helium a separate excluded compartment; ideal gases both share the entire accessible tank volume. Gases share the accessible volume rather than each occupying a separate fixed compartment."
+    },
+    {
+      "id": "chem-3-4-008",
+      "prompt": "For a fixed mole amount of ideal gas in a rigid container, which graph of pressure P versus temperature T agrees with the model?",
+      "options": [
+        "A straight line through P = 0 at T = 0°C when temperature is plotted in degrees Celsius.",
+        "A decreasing inverse curve when temperature is plotted in kelvin.",
+        "A straight line through the mathematical origin when temperature is plotted in kelvin.",
+        "A horizontal line because a rigid container fixes pressure as well as volume."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. P = (nR/V)T gives a positive constant slope for P versus absolute temperature. A incorrectly uses the Celsius zero as zero absolute temperature; the extrapolated Celsius intercept is near −273°C. B describes inverse proportionality instead of direct proportionality. D confuses fixed volume with fixed pressure. The zero-temperature intercept is an ideal-model extrapolation, not a claim that a real gas stays gaseous or that absolute zero can be reached experimentally."
+    },
+    {
+      "id": "chem-3-4-009",
+      "prompt": "A sealed rigid container of ideal gas is heated from 27°C to 127°C. Approximately what is the ratio Pfinal/Pinitial?",
+      "options": [
+        "4.70",
+        "3.70",
+        "0.750",
+        "1.33"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. At fixed n and V, the pressure ratio is the absolute-temperature ratio: (127 + 273.15)/(27 + 273.15) = 400.15/300.15 ≈ 1.33. A divides Celsius readings directly, 127/27. B divides the Celsius temperature change by the initial Celsius reading, 100/27, rather than forming an absolute-temperature ratio. C reverses the approximate Kelvin ratio. Temperature intervals and absolute temperatures play different roles; the gas-law proportionality uses absolute temperature."
+    },
+    {
+      "id": "chem-3-4-010",
+      "prompt": "Two rigid bulbs are connected by opening a valve. Bulb 1 initially contains He at 2.00 atm in 1.00 L; bulb 2 contains Ne at 1.00 atm in 3.00 L. The gases are ideal and nonreacting, temperature stays constant, valve volume is negligible, and the final accessible volume is 4.00 L. What is the final total pressure?",
+      "options": [
+        "1.25 atm",
+        "1.50 atm",
+        "3.00 atm",
+        "0.750 atm"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. At the common temperature, total nRT is P1V1 + P2V2 = (2.00)(1.00) + (1.00)(3.00) = 5.00 L·atm. Dividing by 4.00 L gives 1.25 atm. B takes an unweighted average of initial pressures despite unequal bulb volumes. C adds initial pressures without allowing either gas to expand into the combined volume. D includes only the Ne contribution, 3.00/4.00 = 0.750 atm, and omits helium’s 0.500 atm contribution. Both initial gas amounts are conserved."
+    },
+    {
+      "id": "chem-3-4-011",
+      "prompt": "A sealed syringe is rapidly compressed. Immediately afterward its ideal gas is warmer than room temperature. A student uses the measured post-compression P and V but room temperature in n = PV/(RT). No gas leaks. How is the calculated mole amount biased?",
+      "options": [
+        "It is too small because the denominator uses a temperature below the actual gas temperature.",
+        "It is too large because the denominator uses a temperature below the actual gas temperature.",
+        "It must be correct because a sealed syringe makes the equation insensitive to temperature.",
+        "The direction cannot be determined unless the gas’s molar mass is known."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The measured product PV equals nactualRTactual. Using Troom < Tactual gives ncalculated = nactual(Tactual/Troom), which is greater than nactual. A reverses the effect of a smaller denominator. C confuses conservation of the true mole amount with correctness of a calculation using an incorrect temperature. D adds an unnecessary variable; the ideal-gas equation determines amount without molar mass. Allowing thermal equilibration before using room temperature would address the stated measurement mismatch."
+    }
+  ]
+}

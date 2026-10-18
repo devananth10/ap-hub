@@ -106,4 +106,13 @@ assert.ok(crossEnergy([[0,-1],[1,1]],[[3,1],[4,-1]]) > 0); // head to head
 assert.ok(-1/2 + 1/4 < 1/2 - 1/4); // negative dipole end nearer a cation
 const inducedEnergy = (alpha,field) => -.5*alpha*field**2;
 assert.ok(inducedEnergy(2,2) < inducedEnergy(2,1)); // larger field strengthens attraction
-console.log('Independent arithmetic/charge/Lewis/vector/model checks passed through Topic 3.1. See per-topic QA for conceptual checks and limitations.');
+// Topic 3.4: separate ideal-gas and mixture calculations from prompt inputs.
+close(1.20 * 2.00 / 3.00 * 450.0 / 300.0,1.20);
+close((1-.750/1.00)*100,25);
+close(.982-.0313,.9507);
+close(.820 * .08206 * 300.0 / (1.00*.500),40.37352);
+close(.200/(.200+.300)*2.50,1.00);
+close((127+273.15)/(27+273.15),1.3331667499583542);
+close((2.00*1.00+1.00*3.00)/4.00,1.25);
+assert.ok(330/300>1); // warm gas analyzed with a lower temperature overestimates n
+console.log('Independent arithmetic/charge/Lewis/vector/model checks passed, including Topic 3.4. Topics 3.2/3.3 are qualitative; see per-topic QA for their checks and limitations.');
