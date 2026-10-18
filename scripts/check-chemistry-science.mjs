@@ -601,4 +601,7 @@ close((2*.25)**2/(2*.5),.25);close(.4**2/((.8-.4)/2)**2,4);
 close(.2**2*.1/.4**2,.025);close((.6/3)/(.8-.6/3),1/3);
 close(.060/(.2*.3),1);close(.3/.1,3);close(1.2/.4,3);close((2*.2)**2/.2**2,4);
 assert.ok(balanced([[2,'NOCl']],[[2,'NO'],[1,'Cl2']]));
+// Topic 7.5: magnitude interpreted with the actual powers and inventories.
+close(1e-5/.5,2e-5);close(198/2,99);close(Math.sqrt(4*.001),.06324555320336758);
+close(.9000/.000100,9000);close(.9000+.000100,.9001);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
