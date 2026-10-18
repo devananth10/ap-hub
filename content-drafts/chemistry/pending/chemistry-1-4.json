@@ -29,7 +29,7 @@
     },
     {
       "id": "chem-1-4-003",
-      "prompt": "An 80.0 g homogeneous aqueous solution contains 20.0% NaCl by mass. A student withdraws a representative 25.0 g portion. No water evaporates and no other material is lost. What is the NaCl mass percentage in the solution remaining in the container?",
+      "prompt": "An 80.0 g thoroughly mixed powder contains 20.0% NaCl by mass, with the rest consisting of fine inert grains. A student removes a representative 25.0 g portion without selectively losing either component. What is the NaCl mass percentage in the powder remaining in the container?",
       "options": [
         "29.1%",
         "6.25%",
@@ -37,7 +37,7 @@
         "20.0%"
       ],
       "correctIndex": 3,
-      "explanation": "D is correct. The original solution contains 0.200(80.0 g) = 16.0 g NaCl. The representative portion contains 0.200(25.0 g) = 5.00 g NaCl. The remaining solution contains 11.0 g NaCl in 55.0 g solution, so its mass percentage is (11.0/55.0)100 = 20.0%. Representative sampling removes solute and solvent in the same proportion. A incorrectly keeps all 16.0 g of salt while removing solution mass. B divides the removed salt mass by the original solution mass. C divides the remaining salt mass by the original solution mass, instead of by the remaining solution mass."
+      "explanation": "D is correct. The original powder contains 0.200(80.0 g) = 16.0 g NaCl. The representative portion contains 0.200(25.0 g) = 5.00 g NaCl. The remaining powder contains 11.0 g NaCl in 55.0 g total powder, so its mass percentage is (11.0/55.0)100 = 20.0%. Representative sampling removes the two components in the same mass proportion. A incorrectly keeps all 16.0 g of salt while removing mixture mass. B divides the removed salt mass by the original mixture mass. C divides the remaining salt mass by the original mixture mass, instead of by the remaining mixture mass."
     },
     {
       "id": "chem-1-4-004",
@@ -125,15 +125,15 @@
     },
     {
       "id": "chem-1-4-011",
-      "prompt": "A student analyzes a homogeneous aqueous NaCl solution that is known to contain 15.0% NaCl by mass. The student places 20.0 g of the solution in an evaporating dish and heats it to remove the water. The student then measures 3.50 g of solid residue, even though the expected mass of NaCl is 3.00 g. Which experimental error would best explain the unexpectedly high measured residue mass?",
+      "prompt": "A 20.0 g dry mixture of NaCl and inert insoluble sand is known to contain 15.0% NaCl by mass. A student adds water to dissolve the NaCl, filters out the sand, and heats the filtrate to recover the salt. The measured residue is 3.50 g instead of the expected 3.00 g. Assume no sand passes the filter. Which error best explains the high measured residue mass?",
       "options": [
-        "Some NaCl was accidentally spilled from the evaporating dish before the final mass was measured.",
-        "Some water remained in the evaporating dish with the NaCl when the residue was weighed.",
-        "The original solution contained less than 15.0% NaCl by mass.",
-        "Some NaCl was lost through splattering during the heating process."
+        "Some NaCl was spilled before the final residue was weighed.",
+        "Some water remained with the recovered NaCl when the residue was weighed.",
+        "The original dry mixture contained less than 15.0% NaCl by mass.",
+        "Some dissolved NaCl was lost through splattering during heating."
       ],
       "correctIndex": 1,
-      "explanation": "B is correct. A 20.0 g sample of a solution containing 15.0% NaCl by mass should contain 20.0 g × 0.150 = 3.00 g NaCl. If the water is completely removed without losing any NaCl, the final dry residue should have a mass of 3.00 g. A measured residue mass of 3.50 g is greater than expected. If some water remained in the evaporating dish, the measured mass would include both NaCl and residual water, producing an artificially high result. A is incorrect because spilling NaCl would decrease the measured residue mass. C is incorrect because a lower initial NaCl concentration would produce less than 3.00 g of NaCl in a 20.0 g sample, not more. D is incorrect because losing NaCl through splattering would also decrease the measured residue mass. This experiment illustrates how the composition of a mixture can be determined through mass measurements and how incomplete separation can introduce systematic error."
+      "explanation": "B is correct. The original dry mixture contains 20.0 g × 0.150 = 3.00 g NaCl. With complete recovery and drying, the salt residue should have that mass. Residual water adds to the measured mass, so incomplete drying can produce 3.50 g. A and D lose NaCl and would lower the recovered mass. C would mean less than 3.00 g of salt was initially present, also lowering the expected result rather than explaining a higher residue. This calculation concerns the composition of a dry solid mixture and recovery of its component, not the mass-percent concentration of the aqueous intermediate."
     }
   ]
 }

@@ -32,7 +32,7 @@ The recovered prompts/options were solved before consulting their answer keys an
 
 1. Carbon fraction = (0.4mP + 0.4mQ)/(mP + mQ) = 0.4 for every ratio: C. Neither inequality nor equality is identifiable.
 2. 3.55 g Cl × 58.5/35.5 = 5.85 g NaCl, or 58.5%: A. Other choices are chlorine percentage, chlorine fraction in pure salt, and sand percentage.
-3. Remaining salt = 16.0 − 5.00 = 11.0 g; solution = 55.0 g; 20.0%: D. Distractors use original salt or the wrong denominator.
+3. Remaining salt = 16.0 − 5.00 = 11.0 g; remaining powder = 55.0 g; 20.0%: D. Distractors use original salt or the wrong denominator.
 4. Carbon = 4.80 g; total = 14.40 g; 33.3%: B. Pure-component fractions and equal-mole/equal-mass confusion fail.
 5. Separate molecule types retain identities, with ratios 2:1 and 1:2: C. No fixed combined formula or change in elements follows.
 6. 36.0/40.0 = 90.0% purity: A. Remaining choices confuse impurity, sample carbon percentage, and pure-compound carbon percentage.
@@ -40,6 +40,10 @@ The recovered prompts/options were solved before consulting their answer keys an
 8. Oxygen = 1.60 + 3.20 = 4.80 g of 5.40 g; 88.9%: D. Each distractor omits a contribution or reports a component fraction.
 9. Top-layer result does not establish bulk composition: A. Compound composition does not fix mixture ratio; mass fraction is not mole fraction; repeating biased sampling does not remove bias.
 10. Only Mg has an oxygen fraction below 30%, allowing a weighted average of 30% with MgO (39.7%): C. O2, water, and silica all increase oxygen fraction.
-11. Expected dry salt = 20.0 × 0.150 = 3.00 g; residual water can raise residue to 3.50 g: B. Salt loss or a lower starting concentration lowers the result.
+11. Expected salt from the dry mixture = 20.0 × 0.150 = 3.00 g; residual water can raise residue to 3.50 g: B. Salt loss or a lower starting concentration lowers the result.
 
 Calculations are also exercised by `scripts/check-chemistry-science.mjs`. Answer counts A/B/C/D = 3/3/3/2. Distinct purposes were checked across all eleven; 002 and 006 share purity as an intended central skill but use formula-based marker mass versus percentage-ratio reasoning. Numerical precision is sufficient to distinguish every option. No external question bank was used to write replacements. This is not an independent human review or a guarantee against accidental similarity.
+
+## Cross-topic exclusion correction — 2026-10-18
+
+The explicit 3.8 exclusion (CED printed p.67 / PDF74) says solution molality, percent-by-mass, and percent-by-volume calculations are not assessed. Question 003 was revised from an aqueous solution to a representative dry-powder mixture; 011 now begins with a dry NaCl/sand mixture and tests recovery/drying error. Neither calculates solution mass-percent concentration. Calculations, keys, and IDs remain the same. The 011 provenance decision above is superseded from “retain” to “revise context for scope”; its correct error direction is preserved. Recovered originals remain unchanged. No approved/live question was edited.
