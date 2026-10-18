@@ -1,8 +1,8 @@
 import { courses, type Course, type Topic, type Unit } from "./courses.ts";
-import { lessons, type PracticeDemo } from "./lessons.ts";
+import { questionBatches, type BankQuestion } from "./practice-bank.ts";
 
 export type PracticeScope = { courseId?: string; unitNumber?: number; topicId?: string };
-export type PracticeEntry = { course: Course; unit: Unit; topic: Topic; question: PracticeDemo };
+export type PracticeEntry = { id: string; course: Course; unit: Unit; topic: Topic; question: BankQuestion };
 
 export function practiceHref(scope: PracticeScope = {}) {
   const params = new URLSearchParams();
@@ -22,8 +22,7 @@ export function validPracticeScope(scope: PracticeScope): boolean {
 export function practiceEntries(scope: PracticeScope = {}): PracticeEntry[] {
   if (!validPracticeScope(scope)) return [];
   return courses.flatMap((course) => course.units.flatMap((unit) => unit.topics.flatMap((topic) => {
-    const lesson = lessons[`${course.id}/${topic.id}`];
-    if (!topic.ready || !lesson?.practice || scope.courseId && course.id !== scope.courseId || scope.unitNumber !== undefined && unit.number !== scope.unitNumber || scope.topicId && topic.id !== scope.topicId) return [];
-    return [{ course, unit, topic, question: lesson.practice }];
+    if (scope.courseId && course.id !== scope.courseId || scope.unitNumber !== undefined && unit.number !== scope.unitNumber || scope.topicId && topic.id !== scope.topicId) return [];
+    return questionBatches.filter((batch) => batch.courseId === course.id && batch.unitNumber === unit.number && batch.topicId === topic.id).flatMap((batch) => batch.questions.map((question) => ({ id: question.id, course, unit, topic, question })));
   })));
 }

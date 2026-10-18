@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 1,
+  "topicId": "valence",
+  "questions": [
+    {
+      "id": "chem-1-8-001",
+      "prompt": "A neutral main-group element X has the ground-state electron configuration [Ne] 3s² 3p⁴. When X forms a binary ionic compound with lithium, which empirical formula is most likely?",
+      "options": [
+        "LiX",
+        "LiX₂",
+        "Li₂X",
+        "Li₂X₃"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The electron configuration [Ne] 3s² 3p⁴ indicates that X has six valence electrons and belongs to Group 16. Main-group elements in Group 16 typically gain two electrons when forming simple monatomic anions, producing X²⁻. Lithium belongs to Group 1 and typically loses one valence electron to form Li⁺. Two Li⁺ ions are required to balance the charge of one X²⁻ ion, giving the empirical formula Li₂X. A is incorrect because a 1:1 ratio of Li⁺ to X²⁻ would produce a net charge of −1. B is incorrect because one Li⁺ ion and two X²⁻ ions would produce a net charge of −3. D is incorrect because two Li⁺ ions and three X²⁻ ions would produce a net charge of −4. The empirical formula of an ionic compound represents the simplest whole-number ratio of ions that produces electrical neutrality. The configuration identifies X as sulfur, so the corresponding compound is Li₂S."
+    },
+    {
+      "id": "chem-1-8-002",
+      "prompt": "A particulate model of a pure ionic solid shows 12 ions of M²⁺ and 8 ions of N³⁻ in a representative portion of the crystal. Which empirical formula correctly represents the compound?",
+      "options": [
+        "M₃N₂",
+        "M₂N₃",
+        "M₁₂N₈",
+        "MN"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The particulate model contains 12 M²⁺ ions and 8 N³⁻ ions. The ratio of M ions to N ions is 12:8, which simplifies to 3:2. Therefore, the empirical formula is M₃N₂. This formula also satisfies electrical neutrality because three M²⁺ ions contribute a total charge of +6, while two N³⁻ ions contribute a total charge of −6. B is incorrect because M₂N₃ represents a 2:3 ion ratio, which does not match the model and would produce a net charge of 2(+2) + 3(−3) = −5. C is incorrect because M₁₂N₈ describes the actual particle counts in the representative portion but does not express the simplest whole-number ratio. D is incorrect because a 1:1 ratio of M²⁺ to N³⁻ would produce a net charge of −1. Ionic compounds are represented by empirical formulas rather than formulas describing discrete molecules. The ion ratio must be reduced to the smallest whole numbers while maintaining electrical neutrality."
+    },
+    {
+      "id": "chem-1-8-003",
+      "prompt": "Calcium forms the ionic compound CaF₂ with fluorine. A student predicts that strontium will form a chemically analogous compound with fluorine because calcium and strontium belong to the same group of the periodic table. Which formula and explanation best support the student's prediction?",
+      "options": [
+        "Sr₂F, because strontium has twice as many valence electrons as fluorine.",
+        "SrF, because all metals and nonmetals combine in a 1:1 ion ratio.",
+        "Sr₂F₃, because strontium has more occupied electron shells than calcium.",
+        "SrF₂, because calcium and strontium each have two valence electrons and typically form ions with a charge of +2."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Calcium and strontium are both Group 2 elements. Their neutral atoms have two valence electrons, which they typically lose when forming simple monatomic cations. Calcium forms Ca²⁺, and strontium forms Sr²⁺. Fluorine is a Group 17 element that typically gains one electron to form F⁻. Two fluoride ions are required to balance the +2 charge of one strontium ion, producing SrF₂. A is incorrect because strontium does not have twice as many valence electrons as fluorine; strontium has two valence electrons, while fluorine has seven. The proposed Sr₂F formula would also have a net positive charge. B is incorrect because ionic compounds do not necessarily contain equal numbers of cations and anions. Their ion ratios depend on charge balance. C is incorrect because the additional occupied electron shells in strontium affect properties such as atomic radius but do not change its typical +2 ionic charge. Elements in the same periodic-table group tend to form analogous compounds because they have similar valence-electron configurations."
+    },
+    {
+      "id": "chem-1-8-004",
+      "prompt": "Two unknown main-group elements, Q and R, form simple monatomic ions in ionic compounds. Element Q forms the compound QBr with bromine, while element R forms the compound MgR with magnesium. Assuming bromine forms Br⁻ and magnesium forms Mg²⁺, which empirical formula is most likely when Q and R form a binary ionic compound?",
+      "options": [
+        "QR",
+        "Q₂R",
+        "QR₂",
+        "Q₂R₃"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The formula QBr indicates that Q forms a +1 ion because bromide has a charge of −1 and the compound is electrically neutral. Therefore, Q forms Q⁺. The formula MgR indicates that R forms a −2 ion because magnesium has a charge of +2 and the compound contains one magnesium ion for every R ion. Therefore, R forms R²⁻. When Q⁺ and R²⁻ combine, two Q⁺ ions are required to balance the charge of one R²⁻ ion. The resulting empirical formula is Q₂R. A is incorrect because one Q⁺ ion and one R²⁻ ion would produce a net charge of −1. C is incorrect because one Q⁺ ion and two R²⁻ ions would produce a net charge of −3. D is incorrect because two Q⁺ ions and three R²⁻ ions would produce a net charge of −4. This question demonstrates how the formulas of known ionic compounds can provide evidence about the typical ionic charges of unknown elements."
+    },
+    {
+      "id": "chem-1-8-005",
+      "prompt": "A neutral aluminum atom has the ground-state electron configuration [Ne] 3s² 3p¹. Which electron configuration correctly represents the aluminum ion most commonly found in simple ionic compounds, and why?",
+      "options": [
+        "[Ne], because aluminum typically loses its three valence electrons to form Al³⁺.",
+        "[Ne] 3s², because aluminum typically loses only its 3p electron to form Al⁺.",
+        "[Ne] 3s¹, because aluminum typically loses two valence electrons to form Al²⁺.",
+        "[Ne] 3s² 3p⁶, because aluminum typically gains five electrons to complete its third principal energy level."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Aluminum belongs to Group 13 and has three valence electrons: two in the 3s subshell and one in the 3p subshell. In simple ionic compounds, aluminum typically forms Al³⁺ by losing these three electrons. The resulting ion contains ten electrons and has the electron configuration [Ne], which is a filled-shell configuration. B is incorrect because removing only the 3p electron would produce Al⁺ with the configuration [Ne] 3s², but +1 is not aluminum's typical charge in simple ionic compounds. C is incorrect because removing two electrons would produce Al²⁺ with the configuration [Ne] 3s¹, which is not the typical aluminum ion. D is incorrect because gaining five electrons would produce Al⁵⁻, which is not the typical ionic behavior of aluminum. For a main-group metal with three valence electrons, losing those electrons generally produces a more characteristic ionic charge than gaining enough electrons to fill the outer shell. The typical +3 charge of aluminum can be predicted from its position in Group 13."
+    },
+    {
+      "id": "chem-1-8-006",
+      "prompt": "Sodium and chlorine react to form solid NaCl. Which particulate-level explanation best describes why the resulting ions form a stable ionic compound?",
+      "options": [
+        "A proton transfers from the sodium nucleus to the chlorine nucleus, producing two neutral atoms with filled valence shells.",
+        "Sodium gains an electron from chlorine, producing Na⁻ and Cl⁺ ions that attract one another.",
+        "Sodium loses its valence electron, chlorine gains an electron, and the resulting Na⁺ and Cl⁻ ions are held together by electrostatic attractions in an extended ionic structure.",
+        "Sodium and chlorine each lose one electron, producing two positively charged ions that attract one another."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A neutral sodium atom has one valence electron, while a neutral chlorine atom has seven. In the formation of solid NaCl, sodium loses an electron to form Na⁺, and chlorine gains an electron to form Cl⁻. Sodium's resulting electron configuration is [Ne], while chloride has the configuration [Ar]. The oppositely charged ions experience strong electrostatic attractions and form an extended ionic crystal. The stability of the solid is associated with the favorable interactions among many cations and anions in the lattice. A is incorrect because ordinary chemical bonding involves valence electrons rather than the transfer of protons between atomic nuclei. B is incorrect because sodium typically loses an electron, while chlorine gains one; the proposed Na⁻ and Cl⁺ ions do not represent the ions in sodium chloride. D is incorrect because two positively charged ions would repel one another rather than attract. The formation of ionic compounds is governed by interactions involving valence electrons and the electrostatic attractions between the resulting ions."
+    },
+    {
+      "id": "chem-1-8-007",
+      "prompt": "A sample of solid MgF2 is electrically neutral overall. A student concludes that every magnesium-containing particle in the solid must therefore be a neutral Mg atom. Which statement best evaluates that conclusion?",
+      "options": [
+        "It is correct because fluorine transfers protons to each magnesium nucleus until both particles are neutral.",
+        "It is incorrect because the sample contains Mg2+ and F- ions whose total positive and negative charges balance.",
+        "It is correct because every Mg2+ ion regains two electrons after the solid forms.",
+        "It is incorrect because every magnesium ion has charge +1 and every fluorine ion has charge -2."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Electrical neutrality applies to the total charge of the sample, not to every constituent particle. Magnesium typically loses its two valence electrons to form Mg2+, while fluorine typically gains one to form F-. Two fluoride ions balance each magnesium ion, but the ions retain their charges in the ionic model. A incorrectly transfers protons during ordinary chemical bonding; the nuclei retain their identities. C would turn magnesium ions back into neutral atoms and does not describe the ions in MgF2. D reverses the typical charge magnitudes: Group 2 magnesium is +2 and Group 17 fluorine is -1."
+    },
+    {
+      "id": "chem-1-8-008",
+      "prompt": "In comparable demonstrations with water, the observed reactivity of the Group 1 metals increases from lithium to sodium to potassium. Which atomic trend is consistent with this observation?",
+      "options": [
+        "The number of valence electrons increases from one in lithium to three in potassium.",
+        "The nuclear charge decreases from lithium to potassium, reducing attraction for the valence electron.",
+        "The valence electron occupies a progressively lower principal energy level from lithium to potassium.",
+        "The valence electron occupies a higher principal energy level with more core-electron shielding down the group, making it easier to remove."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Lithium, sodium, and potassium each have one valence electron. Down the group that electron occupies a higher principal energy level and is more shielded by core electrons; the observed first ionization energy decreases. Easier loss of the valence electron is consistent with the stated increase in reactivity. This is a qualitative connection, not a complete calculation of reaction energetics or rates. A confuses occupied shell number with valence-electron number; all three have one valence electron. B is incorrect because proton number and nuclear charge increase down the group. C reverses the trend: the valence electron is in 2s for Li, 3s for Na, and 4s for K."
+    },
+    {
+      "id": "chem-1-8-009",
+      "prompt": "A laboratory investigates three unknown main-group metals, M, N, and P. Each metal forms a pure binary ionic compound with chlorine. Elemental analysis establishes the empirical formulas MCl, NCl₂, and PCl. Assuming chlorine forms Cl⁻ in all three compounds, which conclusion is best supported by the data?",
+      "options": [
+        "M and N most likely belong to the same group because both form compounds containing chlorine.",
+        "N and P most likely belong to the same group because their compounds contain different numbers of chlorine ions.",
+        "M and P most likely belong to the same group because both typically form +1 ions and therefore have analogous ionic behavior.",
+        "None of the metals can belong to the same group because all three compounds have different elemental compositions."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Chlorine typically forms Cl⁻ in simple binary ionic compounds. The formulas MCl and PCl therefore indicate that M and P each form ions with a charge of +1. The formula NCl₂ indicates that N forms an ion with a charge of +2. Main-group metals that typically form +1 ions commonly belong to Group 1, while metals that typically form +2 ions commonly belong to Group 2. Consequently, M and P are the strongest candidates for elements in the same periodic-table group. A is incorrect because the presence of chlorine in both compounds does not establish that M and N have the same valence-electron configurations; their different chloride formulas indicate different typical charges. B is incorrect because N and P form ions with different charges, +2 and +1, respectively. D is incorrect because MCl and PCl have the same cation-to-anion ratio even though M and P are different elements. The experiment provides evidence of analogous chemical behavior, although ionic formulas alone do not conclusively establish periodic-table group membership."
+    },
+    {
+      "id": "chem-1-8-010",
+      "prompt": "Under ordinary conditions, sodium readily forms the ionic compound NaCl with chlorine, but it does not form a comparable stable simple ionic compound with argon. Which explanation best accounts for this difference?",
+      "options": [
+        "Chlorine has seven valence electrons and can gain one electron to form Cl⁻, whereas argon already has a filled valence shell and does not readily form a stable monatomic anion.",
+        "Argon has fewer valence electrons than chlorine, so it cannot accept an electron from sodium.",
+        "Chlorine and sodium have the same number of occupied principal energy levels, so they must form an ionic compound.",
+        "Argon has a greater nuclear charge than chlorine, so an electron transferred from sodium would experience no attraction to argon's nucleus."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Chlorine has the electron configuration [Ne] 3s² 3p⁵, giving it seven valence electrons. Gaining one electron produces Cl⁻ with a filled 3s/3p valence shell. Sodium typically loses its single 3s valence electron to form Na⁺. The resulting oppositely charged ions can form a stable ionic solid. Argon, however, already has the filled-shell configuration [Ne] 3s² 3p⁶. Adding an electron to an isolated argon atom would require placing it in a higher-energy orbital, so argon does not readily form a stable simple monatomic anion under ordinary conditions. B is incorrect because argon has eight valence electrons, one more than chlorine, not fewer. C is incorrect because occupying the same number of principal energy levels does not guarantee that two elements will form an ionic compound. Their valence-electron configurations and the energetics of the interactions are more important. D is incorrect because argon's nucleus still attracts negatively charged electrons; the problem is not an absence of electrostatic attraction. Instead, argon's filled valence shell makes the formation of a stable simple anion energetically unfavorable. This comparison illustrates how periodic patterns in valence-electron configurations help explain differences in chemical reactivity."
+    },
+    {
+      "id": "chem-1-8-011",
+      "prompt": "A student is constructing a particulate model of a pure sample of magnesium fluoride, MgF₂. The model must contain 0.250 mol of Mg²⁺ ions. How many moles of F⁻ ions must the student represent to maintain the correct composition and electrical neutrality of the compound?",
+      "options": [
+        "0.125 mol",
+        "0.500 mol",
+        "0.250 mol",
+        "0.750 mol"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Magnesium fluoride has the empirical formula MgF₂ because magnesium typically forms Mg²⁺ ions and fluorine typically forms F⁻ ions. Each Mg²⁺ ion contributes a charge of +2, so two F⁻ ions are required to balance its charge. Therefore, the number of fluoride ions must be twice the number of magnesium ions. The required amount is 0.250 mol Mg²⁺ × (2 mol F⁻/1 mol Mg²⁺) = 0.500 mol F⁻. A is incorrect because 0.125 mol F⁻ would provide only half as many fluoride ions as magnesium ions, producing a large excess of positive charge. C is incorrect because 0.250 mol F⁻ would give a 1:1 ion ratio rather than the required 1:2 ratio. D is incorrect because 0.750 mol F⁻ would give a 1:3 ratio, resulting in excess negative charge. The correct model must represent the fixed ion ratio of the pure ionic compound. This ratio applies regardless of whether the sample is described using individual ions, formula units, or moles."
+    }
+  ]
+}

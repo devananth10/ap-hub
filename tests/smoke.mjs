@@ -24,14 +24,16 @@ const cases = [
   ["/courses/physics-1", "Kinematics"],
   ["/courses/english-language", "Rhetorical Foundations"],
   ["/courses/us-history", "1491"],
-  ["/courses/chemistry/electron-configuration", "Atomic structure and electron configuration"],
-  ["/courses/chemistry/moles", "This topic is on the roadmap"],
+  ["/courses/chemistry/electron-configuration", "Atomic Structure and Electron Configuration"],
+  ["/courses/chemistry/moles", "11 MCQs are ready for this topic"],
+  ["/courses/chemistry/mass-spectra", "This topic is on the roadmap"],
   ["/notes", "My notes"],
   ["/resources", "Saved resources"],
   ["/practice", "Practice with purpose."],
-  ["/practice?course=chemistry", "1 original MCQ demo"],
-  ["/practice?course=chemistry&unit=1", "1 original MCQ demo"],
-  ["/practice?course=chemistry&unit=1&topic=electron-configuration", "1 original MCQ demo"],
+  ["/practice?course=chemistry", "11 MCQ questions"],
+  ["/practice?course=chemistry&unit=1", "11 MCQ questions"],
+  ["/practice?course=chemistry&unit=1&topic=moles", "11 MCQ questions"],
+  ["/practice?course=chemistry&unit=1&topic=electron-configuration", "Practice is coming to this scope."],
   ["/practice?course=biology", "Practice is coming to this scope."],
 ];
 for (const [path, expected] of cases) {
@@ -45,10 +47,15 @@ for (const [path, expected] of cases) {
   assert.ok(!/AP Hub|APHub|StudyHub/.test(html), `${path} should not render old branding`);
   for (const url of [...draftUrls, ...withdrawnUrls]) assert.ok(!html.replaceAll("&amp;", "&").includes(url), `${path} should not expose an unapproved or withdrawn URL`);
   assert.ok(!/youtube-nocookie\.com\/embed\//.test(html), `${path} should not embed an unapproved video`);
+  assert.ok(!html.includes("PREPATLAS MCQ") && !html.includes("OWNER-APPROVED"), "Question approval badges should never be rendered");
   if (path === "/courses/chemistry/electron-configuration") {
     if (!chemistryResources.some((resource) => resource.kind === "video")) assert.ok(html.includes("No approved videos yet"), "Video area should explain the approval state");
     if (!chemistryResources.length) assert.ok(html.includes("No approved resources yet"), "Resource area should explain the approval state");
     assert.ok(!html.includes('id="topic-notes"'), "Notes should be hidden by default");
+  }
+  if (path === "/practice?course=chemistry&unit=1&topic=moles") {
+    assert.ok(html.replace(/<!--.*?-->/g, "").includes("Question 1 of 11"), "Question navigation should show the full set");
+    assert.ok(html.includes("This is not an official College Board question"), "Practice must not be presented as official College Board questions");
   }
   console.log(`PASS ${path}`);
 }

@@ -1,0 +1,512 @@
+[
+  {
+    "number": 1,
+    "title": "Atomic Structure and Properties",
+    "topics": [
+      {
+        "id": "moles",
+        "number": "1.1",
+        "title": "Moles and Molar Mass"
+      },
+      {
+        "id": "mass-spectra",
+        "number": "1.2",
+        "title": "Mass Spectra of Elements"
+      },
+      {
+        "id": "composition",
+        "number": "1.3",
+        "title": "Elemental Composition of Pure Substances"
+      },
+      {
+        "id": "mixtures",
+        "number": "1.4",
+        "title": "Composition of Mixtures"
+      },
+      {
+        "id": "electron-configuration",
+        "number": "1.5",
+        "title": "Atomic Structure and Electron Configuration",
+        "ready": true
+      },
+      {
+        "id": "photoelectron-spectroscopy",
+        "number": "1.6",
+        "title": "Photoelectron Spectroscopy"
+      },
+      {
+        "id": "periodic-trends",
+        "number": "1.7",
+        "title": "Periodic Trends"
+      },
+      {
+        "id": "valence",
+        "number": "1.8",
+        "title": "Valence Electrons and Ionic Compounds"
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "title": "Compound Structure and Properties",
+    "topics": [
+      {
+        "id": "bonds",
+        "number": "2.1",
+        "title": "Types of Chemical Bonds"
+      },
+      {
+        "id": "potential-energy",
+        "number": "2.2",
+        "title": "Intramolecular Force and Potential Energy"
+      },
+      {
+        "id": "topic-2-3",
+        "number": "2.3",
+        "title": "Structure of Ionic Solids"
+      },
+      {
+        "id": "topic-2-4",
+        "number": "2.4",
+        "title": "Structure of Metals and Alloys"
+      },
+      {
+        "id": "topic-2-5",
+        "number": "2.5",
+        "title": "Lewis Diagrams"
+      },
+      {
+        "id": "topic-2-6",
+        "number": "2.6",
+        "title": "Resonance and Formal Charge"
+      },
+      {
+        "id": "topic-2-7",
+        "number": "2.7",
+        "title": "VSEPR and Hybridization"
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "title": "Properties of Substances and Mixtures",
+    "topics": [
+      {
+        "id": "intermolecular-forces",
+        "number": "3.1",
+        "title": "Intermolecular and Interparticle Forces"
+      },
+      {
+        "id": "topic-3-2",
+        "number": "3.2",
+        "title": "Properties of Solids"
+      },
+      {
+        "id": "topic-3-3",
+        "number": "3.3",
+        "title": "Solids, Liquids, and Gases"
+      },
+      {
+        "id": "topic-3-4",
+        "number": "3.4",
+        "title": "Ideal Gas Law"
+      },
+      {
+        "id": "topic-3-5",
+        "number": "3.5",
+        "title": "Kinetic Molecular Theory"
+      },
+      {
+        "id": "topic-3-6",
+        "number": "3.6",
+        "title": "Deviation from Ideal Gas Law"
+      },
+      {
+        "id": "topic-3-7",
+        "number": "3.7",
+        "title": "Solutions and Mixtures"
+      },
+      {
+        "id": "topic-3-8",
+        "number": "3.8",
+        "title": "Representations of Solutions"
+      },
+      {
+        "id": "topic-3-9",
+        "number": "3.9",
+        "title": "Separation of Solutions and Mixtures"
+      },
+      {
+        "id": "topic-3-10",
+        "number": "3.10",
+        "title": "Solubility"
+      },
+      {
+        "id": "topic-3-11",
+        "number": "3.11",
+        "title": "Spectroscopy and the Electromagnetic Spectrum"
+      },
+      {
+        "id": "topic-3-12",
+        "number": "3.12",
+        "title": "Properties of Photons"
+      },
+      {
+        "id": "topic-3-13",
+        "number": "3.13",
+        "title": "Beer-Lambert Law"
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "title": "Chemical Reactions",
+    "topics": [
+      {
+        "id": "reactions",
+        "number": "4.1",
+        "title": "Introduction for Reactions"
+      },
+      {
+        "id": "topic-4-2",
+        "number": "4.2",
+        "title": "Net Ionic Equations"
+      },
+      {
+        "id": "topic-4-3",
+        "number": "4.3",
+        "title": "Representations of Reactions"
+      },
+      {
+        "id": "topic-4-4",
+        "number": "4.4",
+        "title": "Physical and Chemical Changes"
+      },
+      {
+        "id": "topic-4-5",
+        "number": "4.5",
+        "title": "Stoichiometry"
+      },
+      {
+        "id": "topic-4-6",
+        "number": "4.6",
+        "title": "Introduction to Titration"
+      },
+      {
+        "id": "topic-4-7",
+        "number": "4.7",
+        "title": "Types of Chemical Reactions"
+      },
+      {
+        "id": "topic-4-8",
+        "number": "4.8",
+        "title": "Introduction to Acid-Base Reactions"
+      },
+      {
+        "id": "topic-4-9",
+        "number": "4.9",
+        "title": "Oxidation-Reduction (Redox) Reactions"
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "title": "Kinetics",
+    "topics": [
+      {
+        "id": "rates",
+        "number": "5.1",
+        "title": "Reaction Rates"
+      },
+      {
+        "id": "topic-5-2",
+        "number": "5.2",
+        "title": "Introduction to Rate Law"
+      },
+      {
+        "id": "topic-5-3",
+        "number": "5.3",
+        "title": "Concentration Changes Over Time"
+      },
+      {
+        "id": "topic-5-4",
+        "number": "5.4",
+        "title": "Elementary Reactions"
+      },
+      {
+        "id": "topic-5-5",
+        "number": "5.5",
+        "title": "Collision Model"
+      },
+      {
+        "id": "topic-5-6",
+        "number": "5.6",
+        "title": "Reaction Energy Profile"
+      },
+      {
+        "id": "topic-5-7",
+        "number": "5.7",
+        "title": "Introduction to Reaction Mechanisms"
+      },
+      {
+        "id": "topic-5-8",
+        "number": "5.8",
+        "title": "Reaction Mechanism and Rate Law"
+      },
+      {
+        "id": "topic-5-9",
+        "number": "5.9",
+        "title": "Pre-Equilibrium Approximation"
+      },
+      {
+        "id": "topic-5-10",
+        "number": "5.10",
+        "title": "Multistep Reaction Energy Profile"
+      },
+      {
+        "id": "topic-5-11",
+        "number": "5.11",
+        "title": "Catalysis"
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "title": "Thermochemistry",
+    "topics": [
+      {
+        "id": "energy",
+        "number": "6.1",
+        "title": "Endothermic and Exothermic Processes"
+      },
+      {
+        "id": "topic-6-2",
+        "number": "6.2",
+        "title": "Energy Diagrams"
+      },
+      {
+        "id": "topic-6-3",
+        "number": "6.3",
+        "title": "Heat Transfer and Thermal Equilibrium"
+      },
+      {
+        "id": "topic-6-4",
+        "number": "6.4",
+        "title": "Heat Capacity and Calorimetry"
+      },
+      {
+        "id": "topic-6-5",
+        "number": "6.5",
+        "title": "Energy of Phase Changes"
+      },
+      {
+        "id": "topic-6-6",
+        "number": "6.6",
+        "title": "Introduction to Enthalpy of Reaction"
+      },
+      {
+        "id": "topic-6-7",
+        "number": "6.7",
+        "title": "Bond Enthalpies"
+      },
+      {
+        "id": "topic-6-8",
+        "number": "6.8",
+        "title": "Enthalpy of Formation"
+      },
+      {
+        "id": "topic-6-9",
+        "number": "6.9",
+        "title": "Hess’s Law"
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "title": "Equilibrium",
+    "topics": [
+      {
+        "id": "equilibrium",
+        "number": "7.1",
+        "title": "Introduction to Equilibrium"
+      },
+      {
+        "id": "topic-7-2",
+        "number": "7.2",
+        "title": "Direction of Reversible Reactions"
+      },
+      {
+        "id": "topic-7-3",
+        "number": "7.3",
+        "title": "Reaction Quotient and Equilibrium Constant"
+      },
+      {
+        "id": "topic-7-4",
+        "number": "7.4",
+        "title": "Calculating the Equilibrium Constant"
+      },
+      {
+        "id": "topic-7-5",
+        "number": "7.5",
+        "title": "Magnitude of the Equilibrium Constant"
+      },
+      {
+        "id": "topic-7-6",
+        "number": "7.6",
+        "title": "Properties of the Equilibrium Constant"
+      },
+      {
+        "id": "topic-7-7",
+        "number": "7.7",
+        "title": "Calculating Equilibrium Concentrations"
+      },
+      {
+        "id": "topic-7-8",
+        "number": "7.8",
+        "title": "Representations of Equilibrium"
+      },
+      {
+        "id": "topic-7-9",
+        "number": "7.9",
+        "title": "Introduction to Le Châtelier’s Principle"
+      },
+      {
+        "id": "topic-7-10",
+        "number": "7.10",
+        "title": "Reaction Quotient and Le Châtelier’s Principle"
+      },
+      {
+        "id": "topic-7-11",
+        "number": "7.11",
+        "title": "Introduction to Solubility Equilibria"
+      },
+      {
+        "id": "topic-7-12",
+        "number": "7.12",
+        "title": "Common-Ion Effect"
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "title": "Acids and Bases",
+    "topics": [
+      {
+        "id": "acids",
+        "number": "8.1",
+        "title": "Introduction to Acids and Bases"
+      },
+      {
+        "id": "topic-8-2",
+        "number": "8.2",
+        "title": "pH and pOH of Strong Acids and Bases"
+      },
+      {
+        "id": "topic-8-3",
+        "number": "8.3",
+        "title": "Weak Acid and Base Equilibria"
+      },
+      {
+        "id": "topic-8-4",
+        "number": "8.4",
+        "title": "Acid-Base Reactions and Buffers"
+      },
+      {
+        "id": "topic-8-5",
+        "number": "8.5",
+        "title": "Acid-Base Titrations"
+      },
+      {
+        "id": "topic-8-6",
+        "number": "8.6",
+        "title": "Molecular Structure of Acids and Bases"
+      },
+      {
+        "id": "topic-8-7",
+        "number": "8.7",
+        "title": "pH and pKa"
+      },
+      {
+        "id": "topic-8-8",
+        "number": "8.8",
+        "title": "Properties of Buffers"
+      },
+      {
+        "id": "topic-8-9",
+        "number": "8.9",
+        "title": "Henderson-Hasselbalch Equation"
+      },
+      {
+        "id": "topic-8-10",
+        "number": "8.10",
+        "title": "Buffer Capacity"
+      },
+      {
+        "id": "topic-8-11",
+        "number": "8.11",
+        "title": "pH and Solubility"
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "title": "Thermodynamics and Electrochemistry",
+    "topics": [
+      {
+        "id": "entropy",
+        "number": "9.1",
+        "title": "Introduction to Entropy"
+      },
+      {
+        "id": "topic-9-2",
+        "number": "9.2",
+        "title": "Absolute Entropy and Entropy Change"
+      },
+      {
+        "id": "topic-9-3",
+        "number": "9.3",
+        "title": "Gibbs Free Energy and Thermodynamic Favorability"
+      },
+      {
+        "id": "topic-9-4",
+        "number": "9.4",
+        "title": "Thermodynamic and Kinetic Control"
+      },
+      {
+        "id": "topic-9-5",
+        "number": "9.5",
+        "title": "Free Energy and Equilibrium"
+      },
+      {
+        "id": "topic-9-6",
+        "number": "9.6",
+        "title": "Free Energy of Dissolution"
+      },
+      {
+        "id": "topic-9-7",
+        "number": "9.7",
+        "title": "Coupled Reactions"
+      },
+      {
+        "id": "topic-9-8",
+        "number": "9.8",
+        "title": "Galvanic (Voltaic) and Electrolytic Cells"
+      },
+      {
+        "id": "topic-9-9",
+        "number": "9.9",
+        "title": "Cell Potential and Free Energy"
+      },
+      {
+        "id": "topic-9-10",
+        "number": "9.10",
+        "title": "Cell Potential Under Nonstandard Conditions"
+      },
+      {
+        "id": "topic-9-11",
+        "number": "9.11",
+        "title": "Electrolysis and Faraday’s Law"
+      }
+    ]
+  }
+]

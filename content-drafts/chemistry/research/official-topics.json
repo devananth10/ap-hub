@@ -1,0 +1,554 @@
+{
+  "source": "https://apcentral.collegeboard.org/media/pdf/ap-chemistry-course-and-exam-description.pdf",
+  "edition": "Effective Fall 2024; applicable to 2026-27 per College Board changes overview",
+  "accessed": "2026-10-17",
+  "sourceSha256": "b5dfe8677ef3d88c613865d2e2a3e8d6125d652e2b24c71ef1e8ce4e011094f0",
+  "topics": [
+    {
+      "number": "1.1",
+      "title": "Moles and Molar Mass",
+      "pdfPage": 37,
+      "printedPage": 30
+    },
+    {
+      "number": "1.2",
+      "title": "Mass Spectra of Elements",
+      "pdfPage": 38,
+      "printedPage": 31
+    },
+    {
+      "number": "1.3",
+      "title": "Elemental Composition of Pure Substances",
+      "pdfPage": 39,
+      "printedPage": 32
+    },
+    {
+      "number": "1.4",
+      "title": "Composition of Mixtures",
+      "pdfPage": 40,
+      "printedPage": 33
+    },
+    {
+      "number": "1.5",
+      "title": "Atomic Structure and Electron Configuration",
+      "pdfPage": 41,
+      "printedPage": 34
+    },
+    {
+      "number": "1.6",
+      "title": "Photoelectron Spectroscopy",
+      "pdfPage": 43,
+      "printedPage": 36
+    },
+    {
+      "number": "1.7",
+      "title": "Periodic Trends",
+      "pdfPage": 44,
+      "printedPage": 37
+    },
+    {
+      "number": "1.8",
+      "title": "Valence Electrons and Ionic Compounds",
+      "pdfPage": 45,
+      "printedPage": 38
+    },
+    {
+      "number": "2.1",
+      "title": "Types of Chemical Bonds",
+      "pdfPage": 51,
+      "printedPage": 44
+    },
+    {
+      "number": "2.2",
+      "title": "Intramolecular Force and Potential Energy",
+      "pdfPage": 53,
+      "printedPage": 46
+    },
+    {
+      "number": "2.3",
+      "title": "Structure of Ionic Solids",
+      "pdfPage": 54,
+      "printedPage": 47
+    },
+    {
+      "number": "2.4",
+      "title": "Structure of Metals and Alloys",
+      "pdfPage": 55,
+      "printedPage": 48
+    },
+    {
+      "number": "2.5",
+      "title": "Lewis Diagrams",
+      "pdfPage": 56,
+      "printedPage": 49
+    },
+    {
+      "number": "2.6",
+      "title": "Resonance and Formal Charge",
+      "pdfPage": 57,
+      "printedPage": 50
+    },
+    {
+      "number": "2.7",
+      "title": "VSEPR and Hybridization",
+      "pdfPage": 58,
+      "printedPage": 51
+    },
+    {
+      "number": "3.1",
+      "title": "Intermolecular and Interparticle Forces",
+      "pdfPage": 65,
+      "printedPage": 58
+    },
+    {
+      "number": "3.2",
+      "title": "Properties of Solids",
+      "pdfPage": 67,
+      "printedPage": 60
+    },
+    {
+      "number": "3.3",
+      "title": "Solids, Liquids, and Gases",
+      "pdfPage": 69,
+      "printedPage": 62
+    },
+    {
+      "number": "3.4",
+      "title": "Ideal Gas Law",
+      "pdfPage": 70,
+      "printedPage": 63
+    },
+    {
+      "number": "3.5",
+      "title": "Kinetic Molecular Theory",
+      "pdfPage": 71,
+      "printedPage": 64
+    },
+    {
+      "number": "3.6",
+      "title": "Deviation from Ideal Gas Law",
+      "pdfPage": 72,
+      "printedPage": 65
+    },
+    {
+      "number": "3.7",
+      "title": "Solutions and Mixtures",
+      "pdfPage": 73,
+      "printedPage": 66
+    },
+    {
+      "number": "3.8",
+      "title": "Representations of Solutions",
+      "pdfPage": 74,
+      "printedPage": 67
+    },
+    {
+      "number": "3.9",
+      "title": "Separation of Solutions and Mixtures",
+      "pdfPage": 75,
+      "printedPage": 68
+    },
+    {
+      "number": "3.10",
+      "title": "Solubility",
+      "pdfPage": 76,
+      "printedPage": 69
+    },
+    {
+      "number": "3.11",
+      "title": "Spectroscopy and the Electromagnetic Spectrum",
+      "pdfPage": 77,
+      "printedPage": 70
+    },
+    {
+      "number": "3.12",
+      "title": "Properties of Photons",
+      "pdfPage": 78,
+      "printedPage": 71
+    },
+    {
+      "number": "3.13",
+      "title": "Beer-Lambert Law",
+      "pdfPage": 79,
+      "printedPage": 72
+    },
+    {
+      "number": "4.1",
+      "title": "Introduction for Reactions",
+      "pdfPage": 85,
+      "printedPage": 78
+    },
+    {
+      "number": "4.2",
+      "title": "Net Ionic Equations",
+      "pdfPage": 86,
+      "printedPage": 79
+    },
+    {
+      "number": "4.3",
+      "title": "Representations of Reactions",
+      "pdfPage": 87,
+      "printedPage": 80
+    },
+    {
+      "number": "4.4",
+      "title": "Physical and Chemical Changes",
+      "pdfPage": 88,
+      "printedPage": 81
+    },
+    {
+      "number": "4.5",
+      "title": "Stoichiometry",
+      "pdfPage": 89,
+      "printedPage": 82
+    },
+    {
+      "number": "4.6",
+      "title": "Introduction to Titration",
+      "pdfPage": 90,
+      "printedPage": 83
+    },
+    {
+      "number": "4.7",
+      "title": "Types of Chemical Reactions",
+      "pdfPage": 91,
+      "printedPage": 84
+    },
+    {
+      "number": "4.8",
+      "title": "Introduction to Acid-Base Reactions",
+      "pdfPage": 93,
+      "printedPage": 86
+    },
+    {
+      "number": "4.9",
+      "title": "Oxidation-Reduction (Redox) Reactions",
+      "pdfPage": 94,
+      "printedPage": 87
+    },
+    {
+      "number": "5.1",
+      "title": "Reaction Rates",
+      "pdfPage": 101,
+      "printedPage": 94
+    },
+    {
+      "number": "5.2",
+      "title": "Introduction to Rate Law",
+      "pdfPage": 102,
+      "printedPage": 95
+    },
+    {
+      "number": "5.3",
+      "title": "Concentration Changes Over Time",
+      "pdfPage": 103,
+      "printedPage": 96
+    },
+    {
+      "number": "5.4",
+      "title": "Elementary Reactions",
+      "pdfPage": 105,
+      "printedPage": 98
+    },
+    {
+      "number": "5.5",
+      "title": "Collision Model",
+      "pdfPage": 106,
+      "printedPage": 99
+    },
+    {
+      "number": "5.6",
+      "title": "Reaction Energy Profile",
+      "pdfPage": 107,
+      "printedPage": 100
+    },
+    {
+      "number": "5.7",
+      "title": "Introduction to Reaction Mechanisms",
+      "pdfPage": 108,
+      "printedPage": 101
+    },
+    {
+      "number": "5.8",
+      "title": "Reaction Mechanism and Rate Law",
+      "pdfPage": 109,
+      "printedPage": 102
+    },
+    {
+      "number": "5.9",
+      "title": "Pre-Equilibrium Approximation",
+      "pdfPage": 110,
+      "printedPage": 103
+    },
+    {
+      "number": "5.10",
+      "title": "Multistep Reaction Energy Profile",
+      "pdfPage": 111,
+      "printedPage": 104
+    },
+    {
+      "number": "5.11",
+      "title": "Catalysis",
+      "pdfPage": 112,
+      "printedPage": 105
+    },
+    {
+      "number": "6.1",
+      "title": "Endothermic and Exothermic Processes",
+      "pdfPage": 119,
+      "printedPage": 112
+    },
+    {
+      "number": "6.2",
+      "title": "Energy Diagrams",
+      "pdfPage": 120,
+      "printedPage": 113
+    },
+    {
+      "number": "6.3",
+      "title": "Heat Transfer and Thermal Equilibrium",
+      "pdfPage": 121,
+      "printedPage": 114
+    },
+    {
+      "number": "6.4",
+      "title": "Heat Capacity and Calorimetry",
+      "pdfPage": 122,
+      "printedPage": 115
+    },
+    {
+      "number": "6.5",
+      "title": "Energy of Phase Changes",
+      "pdfPage": 124,
+      "printedPage": 117
+    },
+    {
+      "number": "6.6",
+      "title": "Introduction to Enthalpy of Reaction",
+      "pdfPage": 125,
+      "printedPage": 118
+    },
+    {
+      "number": "6.7",
+      "title": "Bond Enthalpies",
+      "pdfPage": 126,
+      "printedPage": 119
+    },
+    {
+      "number": "6.8",
+      "title": "Enthalpy of Formation",
+      "pdfPage": 127,
+      "printedPage": 120
+    },
+    {
+      "number": "6.9",
+      "title": "Hess’s Law",
+      "pdfPage": 128,
+      "printedPage": 121
+    },
+    {
+      "number": "7.1",
+      "title": "Introduction to Equilibrium",
+      "pdfPage": 135,
+      "printedPage": 128
+    },
+    {
+      "number": "7.2",
+      "title": "Direction of Reversible Reactions",
+      "pdfPage": 136,
+      "printedPage": 129
+    },
+    {
+      "number": "7.3",
+      "title": "Reaction Quotient and Equilibrium Constant",
+      "pdfPage": 137,
+      "printedPage": 130
+    },
+    {
+      "number": "7.4",
+      "title": "Calculating the Equilibrium Constant",
+      "pdfPage": 139,
+      "printedPage": 132
+    },
+    {
+      "number": "7.5",
+      "title": "Magnitude of the Equilibrium Constant",
+      "pdfPage": 140,
+      "printedPage": 133
+    },
+    {
+      "number": "7.6",
+      "title": "Properties of the Equilibrium Constant",
+      "pdfPage": 141,
+      "printedPage": 134
+    },
+    {
+      "number": "7.7",
+      "title": "Calculating Equilibrium Concentrations",
+      "pdfPage": 142,
+      "printedPage": 135
+    },
+    {
+      "number": "7.8",
+      "title": "Representations of Equilibrium",
+      "pdfPage": 143,
+      "printedPage": 136
+    },
+    {
+      "number": "7.9",
+      "title": "Introduction to Le Châtelier’s Principle",
+      "pdfPage": 144,
+      "printedPage": 137
+    },
+    {
+      "number": "7.10",
+      "title": "Reaction Quotient and Le Châtelier’s Principle",
+      "pdfPage": 145,
+      "printedPage": 138
+    },
+    {
+      "number": "7.11",
+      "title": "Introduction to Solubility Equilibria",
+      "pdfPage": 146,
+      "printedPage": 139
+    },
+    {
+      "number": "7.12",
+      "title": "Common-Ion Effect",
+      "pdfPage": 147,
+      "printedPage": 140
+    },
+    {
+      "number": "8.1",
+      "title": "Introduction to Acids and Bases",
+      "pdfPage": 153,
+      "printedPage": 146
+    },
+    {
+      "number": "8.2",
+      "title": "pH and pOH of Strong Acids and Bases",
+      "pdfPage": 154,
+      "printedPage": 147
+    },
+    {
+      "number": "8.3",
+      "title": "Weak Acid and Base Equilibria",
+      "pdfPage": 155,
+      "printedPage": 148
+    },
+    {
+      "number": "8.4",
+      "title": "Acid-Base Reactions and Buffers",
+      "pdfPage": 157,
+      "printedPage": 150
+    },
+    {
+      "number": "8.5",
+      "title": "Acid-Base Titrations",
+      "pdfPage": 159,
+      "printedPage": 152
+    },
+    {
+      "number": "8.6",
+      "title": "Molecular Structure of Acids and Bases",
+      "pdfPage": 161,
+      "printedPage": 154
+    },
+    {
+      "number": "8.7",
+      "title": "pH and pKa",
+      "pdfPage": 162,
+      "printedPage": 155
+    },
+    {
+      "number": "8.8",
+      "title": "Properties of Buffers",
+      "pdfPage": 163,
+      "printedPage": 156
+    },
+    {
+      "number": "8.9",
+      "title": "Henderson-Hasselbalch Equation",
+      "pdfPage": 164,
+      "printedPage": 157
+    },
+    {
+      "number": "8.10",
+      "title": "Buffer Capacity",
+      "pdfPage": 165,
+      "printedPage": 158
+    },
+    {
+      "number": "8.11",
+      "title": "pH and Solubility",
+      "pdfPage": 166,
+      "printedPage": 159
+    },
+    {
+      "number": "9.1",
+      "title": "Introduction to Entropy",
+      "pdfPage": 173,
+      "printedPage": 166
+    },
+    {
+      "number": "9.2",
+      "title": "Absolute Entropy and Entropy Change",
+      "pdfPage": 174,
+      "printedPage": 167
+    },
+    {
+      "number": "9.3",
+      "title": "Gibbs Free Energy and Thermodynamic Favorability",
+      "pdfPage": 175,
+      "printedPage": 168
+    },
+    {
+      "number": "9.4",
+      "title": "Thermodynamic and Kinetic Control",
+      "pdfPage": 177,
+      "printedPage": 170
+    },
+    {
+      "number": "9.5",
+      "title": "Free Energy and Equilibrium",
+      "pdfPage": 178,
+      "printedPage": 171
+    },
+    {
+      "number": "9.6",
+      "title": "Free Energy of Dissolution",
+      "pdfPage": 179,
+      "printedPage": 172
+    },
+    {
+      "number": "9.7",
+      "title": "Coupled Reactions",
+      "pdfPage": 180,
+      "printedPage": 173
+    },
+    {
+      "number": "9.8",
+      "title": "Galvanic (Voltaic) and Electrolytic Cells",
+      "pdfPage": 181,
+      "printedPage": 174
+    },
+    {
+      "number": "9.9",
+      "title": "Cell Potential and Free Energy",
+      "pdfPage": 182,
+      "printedPage": 175
+    },
+    {
+      "number": "9.10",
+      "title": "Cell Potential Under Nonstandard Conditions",
+      "pdfPage": 183,
+      "printedPage": 176
+    },
+    {
+      "number": "9.11",
+      "title": "Electrolysis and Faraday’s Law",
+      "pdfPage": 185,
+      "printedPage": 178
+    }
+  ]
+}

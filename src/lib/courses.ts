@@ -1,3 +1,4 @@
+import chemistryUnits from "../config/chemistry-curriculum.json" with { type: "json" };
 import type { AcademicTheme } from "./artwork.ts";
 
 export type Topic = { id: string; number: string; title: string; ready?: boolean };
@@ -13,26 +14,7 @@ export const courses: Course[] = [
   {
     id: "chemistry", artwork: "chemistry", title: "AP Chemistry", shortTitle: "Chemistry", category: "Science", color: "teal", icon: "flask",
     description: "Make sense of the molecular world, one concept at a time.",
-    units: [
-      { number: 1, title: "Atomic Structure and Properties", topics: [
-        { id: "moles", number: "1.1", title: "Moles and molar mass" },
-        { id: "mass-spectra", number: "1.2", title: "Mass spectra of elements" },
-        { id: "composition", number: "1.3", title: "Elemental composition of pure substances" },
-        { id: "mixtures", number: "1.4", title: "Composition of mixtures" },
-        { id: "electron-configuration", number: "1.5", title: "Atomic structure and electron configuration", ready: true },
-        { id: "photoelectron-spectroscopy", number: "1.6", title: "Photoelectron spectroscopy" },
-        { id: "periodic-trends", number: "1.7", title: "Periodic trends" },
-        { id: "valence", number: "1.8", title: "Valence electrons and ionic compounds" },
-      ] },
-      { number: 2, title: "Compound Structure and Properties", topics: [{ id: "bonds", number: "2.1", title: "Types of chemical bonds" }, { id: "potential-energy", number: "2.2", title: "Intramolecular force and potential energy" }] },
-      { number: 3, title: "Properties of Substances and Mixtures", topics: [{ id: "intermolecular-forces", number: "3.1", title: "Intermolecular and interparticle forces" }] },
-      { number: 4, title: "Chemical Reactions", topics: [{ id: "reactions", number: "4.1", title: "Introduction to reactions" }] },
-      { number: 5, title: "Kinetics", topics: [{ id: "rates", number: "5.1", title: "Reaction rates" }] },
-      { number: 6, title: "Thermochemistry", topics: [{ id: "energy", number: "6.1", title: "Endothermic and exothermic processes" }] },
-      { number: 7, title: "Equilibrium", topics: [{ id: "equilibrium", number: "7.1", title: "Introduction to equilibrium" }] },
-      { number: 8, title: "Acids and Bases", topics: [{ id: "acids", number: "8.1", title: "Introduction to acids and bases" }] },
-      { number: 9, title: "Thermodynamics and Electrochemistry", topics: [{ id: "entropy", number: "9.1", title: "Introduction to entropy" }] },
-    ],
+    units: chemistryUnits,
   },
   { id: "biology", artwork: "biology", title: "AP Biology", shortTitle: "Biology", category: "Science", color: "violet", icon: "leaf", description: "Explore the remarkable systems that make life possible.", units: [
     { number: 1, title: "Chemistry of Life", topics: [{ id: "water", number: "1.1", title: "Structure of water and hydrogen bonding" }] },

@@ -1,0 +1,130 @@
+{
+  "officialTopicNumber": "1.6",
+  "status": "partial-working-copy-human-review-pending",
+  "completeQuestions": [
+    {
+      "id": "chem-1-6-001",
+      "prompt": "The photoelectron spectrum (PES) of an unknown neutral atom contains four peaks. In order of decreasing binding energy, the peaks have relative heights of 2, 2, 6, and 1. Assume that each peak corresponds to a different occupied subshell and that peak height is proportional to the number of electrons in that subshell. Which ground-state electron configuration is most consistent with the spectrum?",
+      "options": [
+        "1s² 2s² 2p⁶ 3s²",
+        "1s² 2s² 2p⁶",
+        "1s² 2s² 2p⁶ 3s¹",
+        "1s² 2s² 2p⁶ 3p¹"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. In an idealized PES spectrum, the relative height of each peak is proportional to the number of electrons occupying the corresponding subshell. The four peaks indicate electron populations of 2, 2, 6, and 1. Electrons in inner subshells generally have greater binding energies than electrons in outer subshells. Therefore, the peaks correspond to 1s², 2s², 2p⁶, and 3s¹, giving a total of 11 electrons. This is the ground-state electron configuration of neutral sodium. A is incorrect because it represents 12 electrons and would produce a final 3s peak with a relative height of 2 rather than 1. B is incorrect because it represents only 10 electrons and would produce three occupied-subshell peaks rather than four. D is incorrect because it places the eleventh electron in the higher-energy 3p subshell while the lower-energy 3s subshell remains empty. That arrangement is not the ground state of a neutral 11-electron atom. The spectrum provides experimental evidence for both the number of electrons in occupied subshells and their relative binding energies."
+    },
+    {
+      "id": "chem-1-6-002",
+      "prompt": "A researcher obtains the complete photoelectron spectrum of a neutral oxygen atom in its ground state. The spectrum contains peaks corresponding to the 1s, 2s, and 2p subshells. Which subshell produces the peak at the greatest binding energy?",
+      "options": [
+        "The 1s subshell, because its electrons are, on average, closest to the nucleus and experience strong electrostatic attraction.",
+        "The 2p subshell, because it contains more electrons than either the 1s or 2s subshell.",
+        "The 2s subshell, because its electrons have greater binding energies than electrons in the 1s subshell.",
+        "All three subshells produce peaks at the same binding energy because their electrons are attracted to the same nucleus."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Binding energy is the energy required to remove an electron from an atom or ion. The 1s electrons are, on average, much closer to the positively charged nucleus than the electrons in the second principal energy level. According to Coulomb's law, electrostatic attraction becomes stronger as the distance between opposite charges decreases. The 1s electrons also experience relatively little shielding by other electrons. Consequently, the 1s peak occurs at the greatest binding energy. B is incorrect because the number of electrons occupying a subshell determines its ideal relative peak height, not necessarily its binding energy. The four 2p electrons in oxygen are less tightly bound than the two 1s electrons. C is incorrect because 2s electrons are generally farther from the nucleus and more shielded than 1s electrons, so they have lower binding energies. D is incorrect because electrons in different subshells experience different effective nuclear attractions and therefore have different binding energies. PES distinguishes occupied subshells through these differences."
+    },
+    {
+      "id": "chem-1-6-003",
+      "prompt": "A scientist compares the photoelectron spectra of neutral sodium and magnesium atoms. Both atoms contain six electrons in the 2p subshell. The scientist observes that the 2p peak of magnesium occurs at a greater binding energy than the corresponding peak of sodium. Which explanation best accounts for this observation?",
+      "options": [
+        "Sodium has a lower 2p binding energy because its 2p subshell contains fewer electrons than magnesium's 2p subshell.",
+        "The 2p binding energies should be identical because both atoms have six electrons in that subshell.",
+        "Magnesium has a lower effective nuclear charge than sodium because magnesium contains more electrons.",
+        "Magnesium has a greater nuclear charge while the 2p electrons experience broadly similar core-electron shielding, resulting in stronger electron-nucleus attraction."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Sodium has 11 protons, while magnesium has 12. Both neutral atoms contain six electrons in the 2p subshell and have the same number of electrons in the inner 1s and 2s subshells. Magnesium's greater nuclear charge produces a stronger effective attraction for its 2p electrons. As a result, more energy is required to remove a 2p electron from magnesium than from sodium. A is incorrect because both atoms contain six 2p electrons; their different binding energies cannot be explained by different 2p electron counts. B is incorrect because identical subshell populations do not guarantee identical binding energies. Nuclear charge and shielding must also be considered. C is incorrect because adding a proton while maintaining similar inner-electron shielding generally increases the effective nuclear attraction experienced by corresponding electrons. The shift in peak position demonstrates that PES provides information about electron-nucleus interactions in addition to electron counts."
+    },
+    {
+      "id": "chem-1-6-004",
+      "prompt": "An idealized photoelectron spectrum of an unknown neutral main-group atom contains five peaks. In order of decreasing binding energy, their relative heights are 2, 2, 6, 2, and 5. Assuming the atom is in its ground state, how many valence electrons does it contain?",
+      "options": [
+        "5",
+        "7",
+        "12",
+        "17"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The five peaks correspond to the occupied subshells 1s², 2s², 2p⁶, 3s², and 3p⁵. The total number of electrons is 2 + 2 + 6 + 2 + 5 = 17, identifying the neutral atom as chlorine. For a main-group element, valence electrons occupy the outermost principal energy level. Chlorine's outermost occupied level is n = 3, which contains two 3s electrons and five 3p electrons. Therefore, chlorine has seven valence electrons. A is incorrect because it counts only the five electrons in 3p and omits the two valence electrons in 3s. C is incorrect because it does not correctly distinguish electrons in the outermost principal energy level from core electrons. D is incorrect because 17 is the total electron count, including both core and valence electrons. PES peak heights can be used to reconstruct the electron configuration and identify the number of valence electrons."
+    },
+    {
+      "id": "chem-1-6-005",
+      "prompt": "A researcher compares the photoelectron spectra of neutral nitrogen and oxygen atoms in their ground states. Nitrogen has the configuration 1s² 2s² 2p³, while oxygen has the configuration 1s² 2s² 2p⁴. Assuming ideal spectra with a common per-electron intensity normalization, in which peak height is proportional to the number of electrons in each subshell, which comparison is correct?",
+      "options": [
+        "Oxygen's 2p peak should be twice as tall as nitrogen's 2p peak because oxygen contains one additional electron.",
+        "Nitrogen's 2p peak should be taller than oxygen's 2p peak because nitrogen has a half-filled 2p subshell.",
+        "Oxygen's 2p peak should be four-thirds as tall as nitrogen's 2p peak, while their 2s peaks should have equal heights.",
+        "Oxygen's 1s peak should be twice as tall as nitrogen's 1s peak because oxygen has a greater nuclear charge."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Nitrogen contains three electrons in its 2p subshell, while oxygen contains four. Because ideal PES peak height is proportional to the number of electrons occupying the subshell, the oxygen-to-nitrogen 2p peak-height ratio is 4/3. Both atoms contain two electrons in their 2s subshells, so their ideal 2s peak heights should be equal when measured using the same normalization. A is incorrect because oxygen has four 2p electrons compared with nitrogen's three, not twice as many. B is incorrect because the half-filled arrangement of nitrogen's 2p subshell does not increase its electron count or ideal peak height above that of oxygen. D is incorrect because both atoms contain two 1s electrons. Greater nuclear charge can affect the position of a PES peak by changing electron binding energy, but it does not double the number of electrons represented by that peak. This comparison illustrates the distinction between peak height, which reflects electron population, and peak position, which reflects binding energy."
+    },
+    {
+      "id": "chem-1-6-006",
+      "prompt": "A scientist obtains idealized photoelectron spectra of neutral calcium atoms and Ca²⁺ ions, both in their ground states. Neutral calcium has the electron configuration [Ar] 4s². Which change is expected when comparing the spectrum of Ca²⁺ with that of neutral calcium?",
+      "options": [
+        "The peak corresponding to the 4s subshell disappears because the two 4s electrons have been removed, while the peaks for the occupied inner subshells remain.",
+        "The peak corresponding to the 3p subshell disappears because calcium loses its highest-energy core electrons when forming Ca²⁺.",
+        "Every peak decreases in height by two units because the ion contains two fewer electrons than the neutral atom.",
+        "The 4s peak remains unchanged because removing electrons to form a cation affects only the nucleus."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Neutral calcium has 20 electrons and the ground-state configuration [Ar] 4s². When calcium forms Ca²⁺, it loses its two outermost 4s electrons, producing the configuration [Ar], which contains 18 electrons. Therefore, the Ca²⁺ spectrum no longer contains a peak corresponding to occupied 4s electrons. Peaks corresponding to the occupied 1s, 2s, 2p, 3s, and 3p subshells remain, although their binding energies may change because the ion has a different electron distribution and effective electron-nucleus interactions. B is incorrect because calcium loses electrons from 4s rather than 3p when forming Ca²⁺. C is incorrect because the two electrons are removed from one occupied subshell, not distributed as a loss of two electrons from every subshell. D is incorrect because ion formation changes the electron configuration even though the number of protons remains constant. Comparing PES spectra of atoms and their ions provides experimental evidence for which electrons are removed during ion formation."
+    },
+    {
+      "id": "chem-1-6-007",
+      "prompt": "A student examines an idealized PES spectrum of neutral silicon. The two peaks with the lowest binding energies each have a relative height of 2. One occurs at a binding energy of 1.8 MJ/mol, and the other occurs at 0.8 MJ/mol. The student assigns the 1.8 MJ/mol peak to the 3p subshell and the 0.8 MJ/mol peak to the 3s subshell. Which evaluation of the student's assignments is most appropriate?",
+      "options": [
+        "The assignments are correct because 3p electrons always have greater binding energies than 3s electrons.",
+        "The assignments should be reversed because 3s electrons generally experience stronger effective nuclear attraction and have greater binding energies than 3p electrons in the same atom.",
+        "Both peaks must correspond to the 3p subshell because the two peaks have equal heights.",
+        "One of the peaks must correspond to the 2p subshell because the 3s and 3p subshells cannot each contain two electrons."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Neutral silicon has the ground-state electron configuration 1s² 2s² 2p⁶ 3s² 3p². Its two outermost occupied subshells each contain two electrons, so their ideal PES peaks can have equal heights. However, the 3s and 3p electrons have different binding energies. The 3s electrons have greater penetration toward the nucleus and generally experience stronger effective nuclear attraction than the 3p electrons. Therefore, the 3s peak should occur at the greater binding energy, 1.8 MJ/mol, while the 3p peak should occur at the lower binding energy, 0.8 MJ/mol. A is incorrect because it reverses the expected relative binding energies of 3s and 3p electrons. C is incorrect because different subshells can contain equal numbers of electrons and therefore produce peaks of equal height. D is incorrect because silicon's configuration contains two electrons in both 3s and 3p, so both peaks are consistent with those subshell populations. Peak height alone does not identify a subshell; relative binding energy and electron configuration must also be considered."
+    },
+    {
+      "id": "chem-1-6-008",
+      "prompt": "In a photoelectron spectroscopy experiment, atoms are irradiated with photons having an energy of 60 eV per photon. Electrons emitted from one particular subshell are measured to have a kinetic energy of 18 eV per electron. Assuming negligible additional energy losses and using the relationship photon energy = electron binding energy + emitted electron kinetic energy, what is the binding energy of electrons in that subshell?",
+      "options": [
+        "78 eV",
+        "18 eV",
+        "3.33 eV",
+        "42 eV"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Conservation of energy requires that the energy supplied by an absorbed photon be divided between the energy needed to remove the electron and the kinetic energy of the emitted electron. Using the relationship provided in the prompt, binding energy = photon energy - kinetic energy = 60 eV - 18 eV = 42 eV. A is incorrect because adding the photon energy and kinetic energy gives 78 eV, but the kinetic energy is part of the supplied photon energy rather than an additional energy input. B is incorrect because 18 eV is the measured kinetic energy of the emitted electron, not its binding energy. C is incorrect because dividing 60 eV by 18 eV does not represent the energy balance and produces a dimensionless ratio rather than an energy. The calculation demonstrates how experimental measurements of emitted photoelectrons can be used to determine electron binding energies. Under the stated assumptions, the result is 42 eV per electron."
+    },
+    {
+      "id": "chem-1-6-009",
+      "prompt": "A researcher compares the idealized photoelectron spectra of neutral magnesium and aluminum atoms in their ground states. Magnesium has the configuration [Ne] 3s², while aluminum has the configuration [Ne] 3s² 3p¹. Which statement correctly predicts differences between their spectra?",
+      "options": [
+        "Aluminum should have an additional low-binding-energy peak corresponding to its 3p electron, and its 3s peak should occur at a greater binding energy than magnesium's 3s peak.",
+        "Aluminum and magnesium should have the same number of peaks because both atoms contain electrons in the third principal energy level.",
+        "Aluminum should have no 3s peak because its additional electron occupies the 3p subshell.",
+        "Aluminum's 1s peak should occur at a lower binding energy than magnesium's 1s peak because aluminum has a greater nuclear charge."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Magnesium has occupied 1s, 2s, 2p, and 3s subshells, giving four peaks in an idealized complete PES spectrum. Aluminum has an additional electron in the 3p subshell, producing a fifth peak at a binding energy lower than that of its 3s electrons. Aluminum also has 13 protons compared with magnesium's 12. Because corresponding 3s electrons experience broadly similar inner-electron shielding, aluminum's greater nuclear charge results in stronger effective attraction and a greater 3s binding energy. B is incorrect because the number of occupied subshells, not merely the number of occupied principal energy levels, determines the number of idealized PES peaks. C is incorrect because aluminum retains two electrons in 3s; adding an electron to 3p does not empty the 3s subshell. D is incorrect because aluminum's greater nuclear charge produces stronger attraction for its inner electrons, so its 1s binding energy is greater rather than smaller. The comparison shows how PES reveals both the occupation of an additional subshell and changes in electron binding energy across a period."
+    },
+    {
+      "id": "chem-1-6-010",
+      "prompt": "An unknown singly charged negative ion, X⁻, produces an idealized photoelectron spectrum with five peaks. In order of decreasing binding energy, the relative peak heights are 2, 2, 6, 2, and 6. Assuming the ion is in its ground state, which element is X?",
+      "options": [
+        "Sulfur, S",
+        "Argon, Ar",
+        "Chlorine, Cl",
+        "Potassium, K"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The relative peak heights indicate the electron configuration 1s² 2s² 2p⁶ 3s² 3p⁶. Adding the electron populations gives 2 + 2 + 6 + 2 + 6 = 18 electrons. Because the species is X⁻, it contains one more electron than protons. Therefore, the nucleus contains 18 - 1 = 17 protons. Atomic number 17 corresponds to chlorine, so the ion is Cl⁻. A is incorrect because sulfur has 16 protons. A singly charged sulfur ion, S⁻, would contain 17 electrons rather than 18; S²⁻ would contain 18 electrons but has a different charge from the specified ion. B is incorrect because argon has 18 protons, so Ar⁻ would contain 19 electrons. D is incorrect because potassium has 19 protons, so K⁻ would contain 20 electrons. The problem demonstrates how PES data and ionic charge can be combined to determine the identity of an element."
+    }
+  ],
+  "unrecoveredEndMustNotBeInvented": true,
+  "courseId": "chemistry",
+  "unitNumber": 1,
+  "topicId": "photoelectron-spectroscopy"
+}

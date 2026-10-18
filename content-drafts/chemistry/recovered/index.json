@@ -1,0 +1,48 @@
+{
+  "sourcePath": "C:\\Users\\devan\\Documents\\Codex\\2026-10-17\\referenced-chatgpt-conversation-this-is-an\\outputs\\PrepAtlas_Recovered_Drafts_UNAUDITED.md",
+  "sha256": "e05fb3a700830cdd48396b9b8cba86a01e0e4855628840df5ac8d913e38ba9a3",
+  "topics": [
+    {
+      "number": "1.4",
+      "status": "complete-source-unaudited",
+      "questionCount": 11,
+      "historicalTopicId": "composition-of-mixtures",
+      "path": "content-drafts/chemistry/recovered/topic-1-4.json"
+    },
+    {
+      "number": "1.5",
+      "status": "complete-source-unaudited",
+      "questionCount": 11,
+      "historicalTopicId": "electron-configuration",
+      "path": "content-drafts/chemistry/recovered/topic-1-5.json"
+    },
+    {
+      "number": "1.6",
+      "status": "fragment-only",
+      "questionCount": null,
+      "completeRecoveredQuestionCount": 10,
+      "parsedFragmentPath": "content-drafts/chemistry/recovered/fragment-1-6.json"
+    },
+    {
+      "number": "1.7",
+      "status": "fragment-only",
+      "questionCount": null,
+      "completeRecoveredQuestionCount": 10,
+      "parsedFragmentPath": "content-drafts/chemistry/recovered/fragment-1-7.json"
+    },
+    {
+      "number": "1.8",
+      "status": "complete-source-unaudited",
+      "questionCount": 11,
+      "historicalTopicId": "valence-electrons-and-ionic-compounds",
+      "path": "content-drafts/chemistry/recovered/topic-1-8.json"
+    },
+    {
+      "number": "2.1",
+      "status": "fragment-only",
+      "questionCount": null,
+      "completeRecoveredQuestionCount": 9,
+      "parsedFragmentPath": "content-drafts/chemistry/recovered/fragment-2-1.json"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 1,
+  "topicId": "moles",
+  "questions": [
+    {
+      "id": "chem-1-1-001",
+      "prompt": "A student obtains a 0.500 mol sample of He(g) and a 0.500 mol sample of CO₂(g). Which statement correctly compares the two samples?",
+      "options": [
+        "Both samples contain the same total number of atoms.",
+        "Both samples contain the same number of representative particles, but their masses differ.",
+        "The CO₂ sample contains three times as many molecules as the helium sample contains atoms.",
+        "Both samples have the same mass because their mole amounts are equal."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Both samples contain 0.500 mol of representative particles, or 3.011 × 10²³ particles. However, their masses differ because helium and carbon dioxide have different molar masses. A is incorrect because each CO₂ molecule contains three atoms, whereas each helium particle is one atom. C is incorrect because both samples have the same number of representative particles. D is incorrect because equal numbers of moles do not imply equal masses."
+    },
+    {
+      "id": "chem-1-1-002",
+      "prompt": "A sealed container holds 8.80 g of pure CO₂(g). Approximately how many CO₂ molecules are present? The molar mass of CO₂ is 44.0 g/mol, and Avogadro's number is 6.022 × 10²³ mol⁻¹.",
+      "options": [
+        "0.200 molecules",
+        "5.30 × 10²⁴ molecules",
+        "1.20 × 10²³ molecules",
+        "2.40 × 10²³ molecules"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The number of moles is 8.80 g ÷ 44.0 g/mol = 0.200 mol. Multiplying by Avogadro's number gives 1.20 × 10²³ CO₂ molecules. A incorrectly treats the number of moles as the number of molecules. B incorrectly multiplies the mass in grams directly by Avogadro's number. D is approximately the number of oxygen atoms in the sample, not the number of CO₂ molecules."
+    },
+    {
+      "id": "chem-1-1-003",
+      "prompt": "A pure sample contains 0.250 mol of CaCl₂ formula units. How many chloride ions are present in the sample? Use Avogadro's number, 6.022 × 10²³ mol⁻¹.",
+      "options": [
+        "3.01 × 10²³ chloride ions",
+        "1.51 × 10²³ chloride ions",
+        "4.52 × 10²³ chloride ions",
+        "6.02 × 10²³ chloride ions"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Each CaCl₂ formula unit contains two chloride ions. Therefore, 0.250 mol CaCl₂ contains 0.500 mol chloride ions. Multiplying 0.500 by 6.022 × 10²³ gives 3.01 × 10²³ chloride ions. B counts only the formula units. C incorrectly counts all three ions in each formula unit as chloride ions. D assumes four chloride ions per formula unit instead of two."
+    },
+    {
+      "id": "chem-1-1-004",
+      "prompt": "What mass of N₂(g) contains 6.022 × 10²³ nitrogen atoms? Assume the molar mass of N₂ is 28.0 g/mol and Avogadro's number is 6.022 × 10²³ mol⁻¹.",
+      "options": [
+        "7.00 g",
+        "28.0 g",
+        "56.0 g",
+        "14.0 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Each N₂ molecule contains two nitrogen atoms. Therefore, one mole of nitrogen atoms corresponds to 0.500 mol of N₂ molecules. The mass is 0.500 mol × 28.0 g/mol = 14.0 g. A corresponds to 0.250 mol N₂ and contains only half the required nitrogen atoms. B corresponds to 1.00 mol N₂ and contains twice the required number of nitrogen atoms. C corresponds to 2.00 mol N₂ and contains four times the required number."
+    },
+    {
+      "id": "chem-1-1-005",
+      "prompt": "Four containers each hold 16.0 g of a different pure gas. Which container has the greatest number of molecules? Assume the gases have the following molar masses: CH₄ = 16.0 g/mol, N₂ = 28.0 g/mol, O₂ = 32.0 g/mol, and CO₂ = 44.0 g/mol.",
+      "options": [
+        "The container holding O₂",
+        "The container holding CH₄",
+        "The container holding N₂",
+        "The container holding CO₂"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. For equal masses, the substance with the smallest molar mass has the greatest number of moles and therefore the greatest number of molecules. The CH₄ sample contains 1.00 mol, compared with approximately 0.571 mol N₂, 0.500 mol O₂, and 0.364 mol CO₂. A, C, and D are incorrect because those gases have larger molar masses and therefore fewer molecules in a 16.0 g sample."
+    },
+    {
+      "id": "chem-1-1-006",
+      "prompt": "A student has 0.500 mol of pure Ca₃(PO₄)₂. Approximately how many oxygen atoms are present in the sample? Use Avogadro's number, 6.022 × 10²³ mol⁻¹.",
+      "options": [
+        "3.01 × 10²³ oxygen atoms",
+        "6.02 × 10²³ oxygen atoms",
+        "2.41 × 10²⁴ oxygen atoms",
+        "4.82 × 10²⁴ oxygen atoms"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Each formula unit of Ca₃(PO₄)₂ contains eight oxygen atoms because the two phosphate groups each contain four oxygen atoms. Therefore, 0.500 mol of the compound contains 4.00 mol of oxygen atoms. Multiplying by Avogadro's number gives 2.41 × 10²⁴ oxygen atoms. A counts formula units instead of oxygen atoms. B corresponds to one mole of atoms and ignores the eight oxygen atoms per formula unit. D incorrectly doubles the correct oxygen atom count."
+    },
+    {
+      "id": "chem-1-1-007",
+      "prompt": "A sample of pure NaCl contains 3.011 × 10²³ formula units. What is the mass of the sample? The molar mass of NaCl is 58.44 g/mol, and Avogadro's number is 6.022 × 10²³ mol⁻¹.",
+      "options": [
+        "116.88 g",
+        "58.44 g",
+        "14.61 g",
+        "29.22 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Dividing 3.011 × 10²³ formula units by 6.022 × 10²³ formula units/mol gives 0.500 mol NaCl. The mass is 0.500 mol × 58.44 g/mol = 29.22 g. A represents 2.00 mol NaCl, which is four times the required amount. B represents 1.00 mol NaCl, which is twice the required amount. C represents 0.250 mol NaCl, which is half the required amount."
+    },
+    {
+      "id": "chem-1-1-008",
+      "prompt": "The average atomic mass of phosphorus is approximately 30.97 amu. Which statement correctly relates this value to the molar mass of phosphorus?",
+      "options": [
+        "One mole of phosphorus atoms has a mass of approximately 30.97 g.",
+        "A single phosphorus atom has a mass of approximately 30.97 g.",
+        "One mole of phosphorus atoms contains approximately 30.97 atoms.",
+        "A sample containing 30.97 mol of phosphorus atoms has a mass of 1.00 g."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The average atomic mass of an element in amu is numerically equal to its molar mass in g/mol. Therefore, phosphorus has a molar mass of approximately 30.97 g/mol. B is incorrect because 30.97 amu describes the average mass of one atom, not 30.97 g. C is incorrect because one mole contains 6.022 × 10²³ representative particles. D is incorrect because 30.97 mol of phosphorus atoms would have a mass of approximately 959 g, not 1.00 g."
+    },
+    {
+      "id": "chem-1-1-009",
+      "prompt": "Two pure samples each have a mass of 20.0 g. One contains calcium atoms, and the other contains zinc atoms. The molar masses are 40.1 g/mol for calcium and 65.4 g/mol for zinc. Which statement best compares the number of atoms in the samples?",
+      "options": [
+        "The zinc sample contains approximately 1.63 times as many atoms as the calcium sample.",
+        "Both samples contain the same number of atoms because their masses are equal.",
+        "The calcium sample contains approximately 1.63 times as many atoms as the zinc sample.",
+        "The calcium sample contains approximately 0.613 times as many atoms as the zinc sample."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The calcium sample contains 20.0/40.1 = 0.499 mol, while the zinc sample contains 20.0/65.4 = 0.306 mol. Their atom-count ratio equals their mole ratio, approximately 0.499/0.306 = 1.63. Therefore, calcium contains approximately 1.63 times as many atoms. A reverses the relationship. B incorrectly assumes equal masses mean equal numbers of atoms. D also reverses the comparison, since 0.613 is approximately the ratio of zinc atoms to calcium atoms."
+    },
+    {
+      "id": "chem-1-1-010",
+      "prompt": "An element X has an average atomic mass of 63.5 amu. A laboratory sample contains 1.27 g of pure X. Approximately how many atoms of X are present? Use Avogadro's number, 6.022 × 10²³ mol⁻¹.",
+      "options": [
+        "1.20 × 10²² atoms",
+        "4.86 × 10²⁵ atoms",
+        "6.02 × 10²³ atoms",
+        "7.65 × 10²³ atoms"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The molar mass of X is 63.5 g/mol. Dividing 1.27 g by 63.5 g/mol gives 0.0200 mol. Multiplying by 6.022 × 10²³ atoms/mol gives 1.20 × 10²² atoms. B results from multiplying by the molar mass instead of dividing before converting to atoms. C assumes the sample contains exactly one mole. D incorrectly treats the numerical mass in grams, 1.27, as the number of moles."
+    },
+    {
+      "id": "chem-1-1-011",
+      "prompt": "A student intends to measure 0.1000 mol of pure copper using a balance. An empty weighing boat has a mass of 0.250 g. The student forgets to tare the balance and adds copper until the displayed total mass is 6.350 g. Assume all readings are accurate and no copper is lost. The molar mass of copper is 63.50 g/mol. Which pair correctly gives the amount of copper actually present and the adjustment needed to obtain 0.1000 mol of copper?",
+      "options": [
+        "0.09606 mol; remove 0.250 g of copper",
+        "0.1000 mol; no adjustment is needed",
+        "0.1039 mol; remove 0.250 g of copper",
+        "0.09606 mol; add 0.250 g of copper"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The copper mass is the total mass minus the boat mass: 6.350 g − 0.250 g = 6.100 g. Thus n(Cu) = 6.100 g ÷ 63.50 g/mol = 0.09606 mol. The desired copper mass is 0.1000 mol × 63.50 g/mol = 6.350 g, so the student must add 6.350 g − 6.100 g = 0.250 g of copper. A calculates the amount correctly but removes copper from a sample that is already too small. B mistakes the total mass of the boat and copper for the copper mass. C incorrectly adds the boat mass to the total, giving 6.600 g and approximately 0.1039 mol; the boat mass must instead be subtracted. Taring the balance would have excluded the boat mass from the displayed reading."
+    }
+  ]
+}

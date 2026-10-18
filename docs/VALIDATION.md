@@ -1,5 +1,37 @@
 # PrepAtlas milestone verification
 
+## Current curriculum and question checkpoint — October 17, 2026
+
+- Topic 1.1 now has exactly eleven questions: original 001–010 preserved, plus the owner-requested independently recalculated 011. Topic 1.5 demo deleted; its workspace remains, published count zero. Owner-approval question badges removed for every question.
+- All 91 official Chemistry topics registered using verified display names. Seventeen existing topic IDs retained, 74 new mappings documented. Other course data and legacy storage remain unchanged.
+- Three recovered complete banks were audited into unpublished working files (33 questions). Historical source text remains unchanged; unavailable sets/fragments are recorded in the progress ledger.
+- Creator-index research contains 103 exact YouTube links covering 91 topics. All public metadata checks succeeded and matched Jeremy Krug; actual playback/embedding permission was not tested. Every link remains pending approval. Official resource catalog SHA-256 remains `3544CEB6D9770BA4A72E429A8A73EEC3313C482365C4B8C35784F3709E4A0571`.
+- TypeScript, production build, and all 31 unit tests passed. Live preview smoke checks passed 19 routes, CSS, seven 404s, all six course themes, and artwork rotation (8 themes in 12 fresh responses).
+- Browser: eleven-question counter; correct/incorrect feedback; Try again; Previous/Next answer retention; first/last boundaries; new question 011 correct response; reload reset; optional notes; six-bullet summary disclosure; Topic 1.5 Practice 0 empty state. No student notes/completion were edited. No console warnings/errors observed.
+- Responsive checks at 390 and 1440 pixels showed no horizontal overflow. Preview screenshots below now show the current eleven-question bank without the badge. Viewport override was reset after testing.
+- Development preview remains on port 3000. No pending questions/videos were registered. The continuation restricts Git saves to local checkpoints; no push/deployment was authorized in this content task.
+
+Earlier entries below document historical states; the ten-question/demo counts in those entries are superseded by this checkpoint.
+
+## Earlier Topic 1.1 practice set — October 17, 2026
+
+- Added the owner's ten approved questions, mapping the incoming topic ID to the existing `moles` route. No question text, options, answer indexes, or explanations were changed.
+- Verified AP Chemistry's nine unit names and 17 existing topic display titles against the official College Board course description. Internal IDs, existing storage keys, and other course outlines were preserved. The naming reference and future batch workflow are documented in [PRACTICE.md](PRACTICE.md).
+- TypeScript and the Webpack production build passed. All 29 unit tests passed, including malformed-batch rejection, question-scope isolation, practice independent of lesson readiness, and official title checks.
+- Production HTTP checks passed for 19 app routes, compiled CSS, seven invalid paths, six fixed course-art mappings, and 12 fresh home responses. Existing resource approval and saved-data compatibility checks still passed. No external resources were added.
+- Browser checks reached all ten questions; verified incorrect/correct feedback, Try again, Previous/Next, retained answers and feedback, and disabled navigation at the first/last question. Reload cleared the answers. Switching to Topic 1.5 showed the separate one-question demo, and its workspace Start Practice button still selected the practice tab.
+- Topic 1.1's topic page and course outline correctly distinguished available practice from the planned lesson workspace. Course/unit/topic names, counts, and links matched the selected scope.
+- Inspected desktop at 1440 pixels and mobile at 390 pixels. Mobile answer options wrapped cleanly, navigation worked, and there was no horizontal overflow. No browser console errors or warnings were observed. No personal notes or completion values were edited.
+- The development preview remained running on port 3000 during production checks. The temporary production verification server used port 3100.
+
+Practice remains unscored and session-only. Refreshing, leaving practice, or changing scope resets question answers; existing local notes and completion behavior is unchanged. FRQ/mixed modes, the Topic 1.1 lesson workspace, real AI summaries, and exact owner-approved videos remain unfinished.
+
+![Topic 1.1 question set](../artifacts/prepatlas-topic-1-1.jpg)
+
+[Mobile practice preview](../artifacts/prepatlas-topic-1-1-mobile.jpg)
+
+## Earlier layout and artwork milestone
+
 Verified October 17, 2026, for the practice navigation and academic artwork milestone, building on the existing prototype.
 
 Follow-up: simplified every subject card to its original soft color background, category label, and single subject icon, then added a faint, low-detail subject motif at the owner's request. These small SVGs use only a few plain strokes with no gradients, glow, or animation. The home hero and course/workspace illustrations remain unchanged. Updated the dashboard screenshot after checking Local Preview; TypeScript, production build, and the existing automated suite passed again.

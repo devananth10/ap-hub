@@ -1,0 +1,115 @@
+{
+  "officialTopicNumber": "2.1",
+  "status": "partial-source-not-importable",
+  "completeQuestions": [
+    {
+      "id": "chem-2-1-001",
+      "prompt": "A researcher compares four single covalent bonds: H–F, H–Cl, H–Br, and H–I. The electronegativity values of the atoms are H = 2.1, F = 4.0, Cl = 3.0, Br = 2.8, and I = 2.5. Based on these values, which bond is expected to have the greatest bond dipole?",
+      "options": [
+        "H–Br, because bromine has a larger atomic radius than fluorine.",
+        "H–I, because iodine has more occupied electron shells than the other halogens.",
+        "H–F, because it has the greatest electronegativity difference between the bonded atoms.",
+        "H–Cl, because chlorine has a greater nuclear charge than fluorine."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. For the single bonds being compared, a greater electronegativity difference generally produces greater unequal sharing of bonding electrons and a greater bond dipole. The electronegativity differences are H–F: |4.0 − 2.1| = 1.9; H–Cl: |3.0 − 2.1| = 0.9; H–Br: |2.8 − 2.1| = 0.7; and H–I: |2.5 − 2.1| = 0.4. H–F has the greatest difference and is expected to have the greatest bond dipole. A is incorrect because bromine's larger atomic radius does not make H–Br more polar than H–F; its electronegativity difference is smaller. B is incorrect because iodine's additional occupied electron shells do not make H–I the most polar bond. Iodine attracts shared electrons less strongly than fluorine. D is incorrect because chlorine has fewer protons than fluorine's atomic number? Chlorine actually has more protons than fluorine, but nuclear charge alone does not determine electronegativity. Chlorine's greater shielding and larger atomic radius result in a lower electronegativity than fluorine. Therefore, H–Cl has a smaller electronegativity difference than H–F."
+    },
+    {
+      "id": "chem-2-1-002",
+      "prompt": "A molecule contains a polar covalent bond between nitrogen and oxygen. The electronegativity of nitrogen is 3.0, while that of oxygen is 3.5. Which description most accurately represents the distribution of bonding electrons and partial charges in the bond?",
+      "options": [
+        "The bonding electrons are shared unequally, with oxygen having a partial negative charge and nitrogen having a partial positive charge.",
+        "The bonding electrons are shared equally because nitrogen and oxygen are both nonmetals.",
+        "The bonding electrons are shared unequally, with nitrogen having a partial negative charge because it has fewer protons than oxygen.",
+        "The bonding electrons are completely transferred from nitrogen to oxygen, producing N⁺ and O⁻ ions in every nitrogen–oxygen bond."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Oxygen has a greater electronegativity than nitrogen, meaning oxygen attracts the shared bonding electrons more strongly. Consequently, the electron density in the bond is shifted toward oxygen. Oxygen develops a partial negative charge, represented by δ−, while nitrogen develops a partial positive charge, represented by δ+. This unequal sharing characterizes a polar covalent bond. B is incorrect because two nonmetals do not necessarily have equal electronegativities. Bonds between different nonmetals are frequently polar covalent. C is incorrect because the direction of bond polarity is determined by relative electronegativity, not simply by comparing proton counts. Oxygen is more electronegative and therefore develops the partial negative charge. D is incorrect because polar covalent bonding involves unequal sharing rather than complete electron transfer. Partial charges do not indicate that the bonded atoms have become separate ions with full integer charges. The distinction between partial and full charges is important when comparing covalent and ionic bonding."
+    },
+    {
+      "id": "chem-2-1-003",
+      "prompt": "A scientist investigates an unknown pure solid and records the following observations: The solid has a relatively high melting point, does not conduct electricity in the solid state, and conducts electricity when completely melted. Which bonding classification is most strongly supported by these observations?",
+      "options": [
+        "Nonpolar molecular covalent bonding, because neutral molecules generally contain electrons that can move freely between molecules.",
+        "Metallic bonding, because metals conduct electricity only after their particles become mobile in the liquid state.",
+        "Polar molecular covalent bonding, because unequal sharing of electrons always produces freely moving ions when a substance melts.",
+        "Predominantly ionic bonding, because the solid contains charged particles that become mobile when the substance melts."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The observations are characteristic of many ionic compounds. In a solid ionic compound, positively and negatively charged ions are held in relatively fixed positions by electrostatic attractions. Because the ions cannot move freely through the solid, the material generally does not conduct electricity in the solid state. When the compound melts, the ions become mobile and can transport electrical charge, allowing the liquid to conduct electricity. The relatively high melting point is also consistent with strong electrostatic attractions in an ionic solid. A is incorrect because nonpolar molecular substances generally consist of neutral molecules and do not acquire freely moving charged particles simply by melting. B is incorrect because metallic solids typically conduct electricity before melting due to their delocalized electrons. C is incorrect because polar covalent molecules contain partial charges, but unequal electron sharing does not automatically produce mobile ions upon melting. Although no single observation establishes bonding type with absolute certainty, the combination of properties strongly supports predominantly ionic bonding."
+    },
+    {
+      "id": "chem-2-1-004",
+      "prompt": "A sample of pure copper metal conducts electricity when a voltage is applied across it, even though the copper atoms remain in an ordered solid structure. Which explanation best accounts for this observation?",
+      "options": [
+        "Copper atoms transfer all their electrons to neighboring atoms, producing alternating Cu⁺ and Cu⁻ ions.",
+        "Valence electrons in the metallic solid are delocalized and can move through the structure, allowing electrical charge to be transported.",
+        "Copper atoms form separate neutral molecules whose electrons remain localized between pairs of atoms.",
+        "Copper conducts electricity because its positively charged atomic nuclei move through the solid when a voltage is applied."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Metallic bonding is characterized by delocalized valence electrons that are not associated exclusively with individual atoms or individual pairs of atoms. In solid copper, the positively charged atomic cores occupy positions in a metallic structure, while mobile electronic charge carriers can respond to an applied electric field. This electron mobility allows copper to conduct electricity without requiring the atomic nuclei to move through the solid. A is incorrect because metallic copper is not accurately represented as an alternating arrangement of Cu⁺ and Cu⁻ ions formed through complete electron transfer between neighboring atoms. C is incorrect because metallic copper does not consist of separate neutral molecules with electrons localized between individual pairs of atoms. That description is more consistent with localized covalent bonding. D is incorrect because the atomic nuclei remain associated with their positions in the solid structure during ordinary electrical conduction. The movement of electronic charge, rather than the movement of nuclei, accounts for the conductivity of solid copper."
+    },
+    {
+      "id": "chem-2-1-005",
+      "prompt": "A student claims that every chemical bond can be classified as either completely ionic or completely covalent using one exact electronegativity-difference cutoff. Which response best evaluates the student's claim?",
+      "options": [
+        "The claim is incorrect because ionic and covalent bonding represent a continuum, and experimental properties should also be considered when characterizing bonding.",
+        "The claim is correct because all bonds with unequal electronegativities involve complete electron transfer.",
+        "The claim is correct because every bond between two different elements must be either 100% ionic or 100% covalent.",
+        "The claim is incorrect because electronegativity has no relationship to bond polarity or ionic character."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Ionic and covalent bonding are useful models for describing how electrons are distributed between atoms, but real chemical bonds do not fall into two perfectly separated categories. A polar covalent bond has some ionic character because the bonding electrons are attracted more strongly toward one atom. As the electronegativity difference generally increases, the ionic character of a bond tends to increase. However, no single universal numerical cutoff perfectly distinguishes ionic from covalent bonding in every substance. The physical properties and electronic structure of a compound provide additional evidence for its bonding classification. B is incorrect because unequal electronegativity generally causes unequal electron sharing, not necessarily complete electron transfer. C is incorrect because real bonds can exhibit intermediate degrees of ionic and covalent character. D is incorrect because electronegativity is directly related to the distribution of shared electrons and is useful for predicting bond polarity. The important distinction is that electronegativity difference is informative but not sufficient by itself to classify every bond definitively."
+    },
+    {
+      "id": "chem-2-1-006",
+      "prompt": "Fluorine, chlorine, bromine, and iodine are all Group 17 elements. Their electronegativities generally decrease in the order F > Cl > Br > I. Which explanation best accounts for this trend?",
+      "options": [
+        "The number of protons decreases from fluorine to iodine, causing progressively weaker attraction for shared electrons.",
+        "The number of valence electrons decreases down the group, reducing the ability of each atom to form covalent bonds.",
+        "Additional occupied electron shells increase the distance and shielding between the nucleus and bonding electrons, generally weakening the attraction for shared electrons down the group.",
+        "The nuclear charge increases down the group, causing the atoms to attract shared electrons more strongly and therefore become less electronegative."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Electronegativity describes an atom's tendency to attract shared electrons in a chemical bond. Moving down Group 17, atoms have additional occupied principal energy levels. Their valence regions are generally farther from the nucleus, and inner electrons provide increased shielding. According to Coulomb's law, electrostatic attraction decreases as the distance between charged particles increases. Although nuclear charge increases down the group, the effects of greater distance and shielding generally cause electronegativity to decrease. Therefore, fluorine is more electronegative than chlorine, bromine, and iodine. A is incorrect because the number of protons increases rather than decreases down the group. B is incorrect because all four halogens have seven valence electrons; their different electronegativities are not caused by decreasing valence-electron counts. D is incorrect because increasing nuclear charge alone would tend to strengthen electron attraction, not explain decreasing electronegativity. The observed trend requires consideration of nuclear charge, electron shielding, and the distance of the bonding electrons from the nucleus."
+    },
+    {
+      "id": "chem-2-1-007",
+      "prompt": "A researcher examines four pure substances: H₂, HF, NaF, and Al(s). Which substance contains bonds best described by unequal sharing of valence electrons between two nonmetal atoms?",
+      "options": [
+        "H₂, because the two hydrogen atoms attract the shared electrons with different strengths.",
+        "HF, because fluorine attracts the shared bonding electrons more strongly than hydrogen does.",
+        "NaF, because sodium and fluorine share their valence electrons equally.",
+        "Al(s), because metallic bonding consists of localized electron pairs shared between individual aluminum atoms."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Hydrogen and fluorine are both nonmetals, so the bond in HF is predominantly covalent. However, fluorine is significantly more electronegative than hydrogen and attracts the shared bonding electrons more strongly. The resulting unequal electron distribution makes the H–F bond polar covalent. A is incorrect because the two atoms in H₂ are identical and have equal electronegativities. Their bonding electrons are shared equally on average, producing a nonpolar covalent bond. C is incorrect because NaF is predominantly ionic. Sodium typically forms Na⁺, while fluorine forms F⁻, and electrostatic attractions between the resulting ions characterize the bonding. The description of equal electron sharing is inconsistent with NaF. D is incorrect because metallic aluminum contains delocalized valence electrons rather than electron pairs localized between individual pairs of atoms. The four substances illustrate nonpolar covalent, polar covalent, ionic, and metallic bonding, respectively."
+    },
+    {
+      "id": "chem-2-1-008",
+      "prompt": "A student compares the C–H and N–H single bonds using electronegativity values of C = 2.5, H = 2.1, and N = 3.0. Which conclusion is best supported by these values?",
+      "options": [
+        "The C–H bond is more polar because carbon has a lower electronegativity than nitrogen.",
+        "Both bonds must have identical polarity because they each contain one hydrogen atom.",
+        "The C–H bond is ionic, while the N–H bond is nonpolar covalent.",
+        "The N–H bond is more polar because its electronegativity difference is greater, while the C–H bond is commonly treated as effectively nonpolar."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The electronegativity difference for C–H is |2.5 − 2.1| = 0.4, while the difference for N–H is |3.0 − 2.1| = 0.9. The N–H bond therefore exhibits greater unequal sharing of bonding electrons and is expected to have a greater bond dipole. Carbon–hydrogen bonds are commonly treated as effectively nonpolar in introductory and AP Chemistry, even though carbon is slightly more electronegative than hydrogen. A is incorrect because carbon's lower electronegativity compared with nitrogen results in a smaller electronegativity difference with hydrogen, not a larger one. B is incorrect because bond polarity depends on the electronegativities of both bonded atoms; sharing one element does not guarantee identical polarity. C is incorrect because C–H is not predominantly ionic, and N–H is polar rather than nonpolar. The calculation demonstrates that bond polarity can be compared quantitatively using electronegativity differences while recognizing that the classification of a weakly polar bond is approximate."
+    },
+    {
+      "id": "chem-2-1-009",
+      "prompt": "A researcher studies an unknown pure binary compound containing a metal and a nonmetal. The compound has a relatively low melting point, does not conduct electricity as a solid, and remains essentially nonconductive when melted. Which conclusion is most scientifically justified?",
+      "options": [
+        "The observations suggest that the compound may be predominantly molecular covalent despite containing a metal and a nonmetal, because experimental properties provide important evidence about bonding type.",
+        "The compound must be ionic because every combination of a metal and a nonmetal involves complete electron transfer.",
+        "The compound must be metallic because the presence of a metal guarantees delocalized electrons throughout the solid.",
+        "The compound must contain nonpolar covalent bonds because every substance that fails to conduct electricity has equal sharing of bonding electrons."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Compounds containing metals and nonmetals are often predominantly ionic, but the identities of the elements alone do not guarantee a particular bonding classification. The relatively low melting point and absence of significant electrical conductivity in both the solid and molten states are more consistent with a molecular covalent substance than with a typical ionic solid. Molecular covalent substances generally contain neutral molecules and do not necessarily produce mobile charged particles when melted. Some compounds containing metals and nonmetals have substantial covalent character, so experimental evidence must be considered. B is incorrect because the metal–nonmetal classification is a useful generalization rather than an absolute rule. C is incorrect because a compound containing a metal does not necessarily exhibit metallic bonding; metallic bonding is characteristic of metallic substances with delocalized electrons. D is incorrect because electrical nonconductivity does not establish that bonds are nonpolar. Polar molecular substances can also be poor electrical conductors. The evidence supports a predominantly covalent classification, although additional structural measurements would strengthen the conclusion."
+    }
+  ],
+  "unrecoveredEndMustNotBeInvented": true
+}

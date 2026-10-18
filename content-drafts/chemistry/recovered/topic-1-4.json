@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 1,
+  "topicId": "composition-of-mixtures",
+  "questions": [
+    {
+      "id": "chem-1-4-001",
+      "prompt": "A laboratory analyzes two samples that are claimed to be the same pure compound containing only elements X and Y. Sample A contains 40.0% X by mass, while Sample B contains 55.0% X by mass. Assuming the measurements are accurate, which conclusion is best supported by the data?",
+      "options": [
+        "Both samples must be the same pure compound because they contain the same two elements.",
+        "The difference in mass percentages can be explained solely by the samples having different total masses.",
+        "The samples cannot both be the same pure compound because a pure compound has a fixed elemental composition by mass.",
+        "Sample B must contain more atoms of X than Sample A, regardless of the total masses of the samples."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. According to the law of definite proportions, a pure compound has a fixed elemental composition by mass, regardless of sample size. If Sample A contains 40.0% X and Sample B contains 55.0% X, the samples cannot both be accurately measured samples of the same pure compound. At least one sample may contain an impurity, or the samples may represent different compounds. A is incorrect because different compounds can contain the same elements in different proportions. B is incorrect because changing the total mass of a pure compound does not change its elemental mass percentages. D is incorrect because the percentage by mass alone does not establish the absolute number of atoms in a sample. The total sample masses would also be needed. The evidence establishes a difference in composition, not the specific cause of that difference."
+    },
+    {
+      "id": "chem-1-4-002",
+      "prompt": "A 10.0 g sample consists of pure NaCl mixed with sand that contains no chlorine. Elemental analysis shows that the sample contains 3.55 g of chlorine. What percentage of the original sample is NaCl by mass? Use atomic masses Na = 23.0 amu and Cl = 35.5 amu.",
+      "options": [
+        "58.5%",
+        "35.5%",
+        "60.7%",
+        "41.5%"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The molar mass of NaCl is 23.0 + 35.5 = 58.5 g/mol. Chlorine accounts for 35.5/58.5 = 0.6068 of the mass of pure NaCl. Because all the chlorine in the sample comes from NaCl, the mass of NaCl is 3.55 g divided by 0.6068, giving 5.85 g. The percentage of NaCl in the original sample is (5.85 g/10.0 g) × 100% = 58.5%. B is incorrect because it treats the numerical mass of chlorine, 3.55 g, as though it directly represented 35.5% of the sample. C is incorrect because 60.7% is the percentage of chlorine within pure NaCl, not the percentage of NaCl in the mixture. D is incorrect because 41.5% is the percentage of sand in the mixture. Elemental analysis can determine the purity of a sample when the composition of the desired compound and the contribution of impurities are known."
+    },
+    {
+      "id": "chem-1-4-003",
+      "prompt": "A 12.00 g mixture contains only NaCl and KCl. Elemental analysis determines that the mixture contains 2.30 g of sodium. What is the mass of KCl in the mixture? Use atomic masses Na = 23.0 amu, K = 39.1 amu, and Cl = 35.5 amu.",
+      "options": [
+        "2.30 g",
+        "5.85 g",
+        "9.70 g",
+        "6.15 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Sodium is present only in NaCl, so the measured sodium mass can be used to determine the amount of NaCl. The number of moles of sodium is 2.30 g/23.0 g/mol = 0.100 mol. Because each NaCl formula unit contains one sodium ion, the mixture contains 0.100 mol NaCl. The mass of NaCl is 0.100 mol × 58.5 g/mol = 5.85 g. The remaining mass must be KCl: 12.00 g - 5.85 g = 6.15 g. A is incorrect because 2.30 g is the measured mass of sodium alone, not the mass of KCl. B is incorrect because 5.85 g is the calculated mass of NaCl. C is incorrect because subtracting the sodium mass directly from the total mass ignores the chlorine associated with sodium in NaCl. This problem demonstrates how the measured mass of an element found in only one component can reveal the composition of a mixture."
+    },
+    {
+      "id": "chem-1-4-004",
+      "prompt": "A gaseous mixture contains 0.200 mol of CO and 0.200 mol of CO₂. What percentage of the total mass of the mixture is carbon? Use atomic masses C = 12.0 amu and O = 16.0 amu.",
+      "options": [
+        "27.3%",
+        "33.3%",
+        "42.9%",
+        "50.0%"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The molar masses of CO and CO₂ are 28.0 g/mol and 44.0 g/mol, respectively. The mass of CO is 0.200 mol × 28.0 g/mol = 5.60 g, and the mass of CO₂ is 0.200 mol × 44.0 g/mol = 8.80 g. The total mixture mass is 14.40 g. Each molecule of CO and CO₂ contains one carbon atom, so the total amount of carbon is 0.400 mol. The carbon mass is 0.400 mol × 12.0 g/mol = 4.80 g. Therefore, the carbon mass percentage is (4.80/14.40) × 100% = 33.3%. A is incorrect because 27.3% is the carbon mass percentage in pure CO₂, not the mixture. C is incorrect because 42.9% is the carbon mass percentage in pure CO. D is incorrect because equal mole amounts of CO and CO₂ do not imply that carbon accounts for half the total mass. The elemental composition of a mixture depends on both the chemical formulas and the relative amounts of its components."
+    },
+    {
+      "id": "chem-1-4-005",
+      "prompt": "A particulate model represents two samples containing stable molecular substances A and B. Sample P contains 8 molecules of A and 4 molecules of B. Sample Q contains 4 molecules of A and 8 molecules of B. No chemical reaction occurs when A and B are combined. Which statement best describes the samples?",
+      "options": [
+        "Both samples are pure compounds because each contains only two types of molecules.",
+        "Sample P has the chemical formula A₂B, while Sample Q has the chemical formula AB₂.",
+        "Both samples are mixtures of the same two substances, but their relative compositions differ.",
+        "The samples must contain different chemical elements because their numbers of A and B molecules differ."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A mixture contains two or more distinct substances whose relative proportions can vary. Sample P has an A:B molecular number ratio of 8:4, or 2:1. Sample Q has an A:B ratio of 4:8, or 1:2. Both samples contain the same two molecular substances, but their compositions differ. A is incorrect because a pure substance contains only one type of constituent particle; both samples contain two distinct types of molecules. B is incorrect because A₂B and AB₂ would represent chemical formulas describing atoms chemically combined within individual particles, whereas the model describes separate molecules of A and B. D is incorrect because changing the relative numbers of molecules does not change the chemical identities of A and B. This distinction explains why mixtures can have variable compositions while pure compounds have fixed chemical formulas."
+    },
+    {
+      "id": "chem-1-4-006",
+      "prompt": "A pure compound contains 40.0% carbon by mass. A 5.00 g laboratory sample contains the compound mixed with an impurity that contains no carbon. Elemental analysis shows that the laboratory sample contains 36.0% carbon by mass. What percentage of the laboratory sample is the pure compound?",
+      "options": [
+        "90.0%",
+        "10.0%",
+        "36.0%",
+        "40.0%"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Because the impurity contains no carbon, all the carbon measured in the laboratory sample must come from the pure compound. The mass of carbon in the 5.00 g sample is 5.00 g × 0.360 = 1.80 g. Since carbon represents 40.0% of the pure compound's mass, the mass of pure compound is 1.80 g/0.400 = 4.50 g. The percentage of pure compound in the laboratory sample is (4.50 g/5.00 g) × 100% = 90.0%. Equivalently, the purity can be calculated directly as 36.0%/40.0% = 0.900. B is incorrect because 10.0% is the impurity percentage, not the purity. C is incorrect because 36.0% is the carbon percentage of the entire laboratory sample. D is incorrect because 40.0% is the carbon percentage within the pure compound. This method works because the impurity is specified to contain none of the element used in the analysis."
+    },
+    {
+      "id": "chem-1-4-007",
+      "prompt": "Two samples each have a total mass of 4.00 g. Sample A contains pure NaCl, while Sample B contains pure KCl. Which statement correctly compares the masses of chlorine in the samples? Use atomic masses Na = 23.0 amu, K = 39.1 amu, and Cl = 35.5 amu.",
+      "options": [
+        "Both samples contain the same mass of chlorine because their total masses are equal.",
+        "Sample A contains more chlorine by mass because chlorine represents a greater fraction of the mass of NaCl than of KCl.",
+        "Sample B contains more chlorine by mass because potassium has a greater atomic mass than sodium.",
+        "Neither sample contains chlorine atoms because chlorine is present as chloride ions."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The molar mass of NaCl is 58.5 g/mol, so its chlorine mass fraction is 35.5/58.5 = 0.6068. A 4.00 g sample of NaCl therefore contains approximately 2.43 g chlorine. The molar mass of KCl is 74.6 g/mol, so its chlorine mass fraction is 35.5/74.6 = 0.4759. A 4.00 g sample of KCl contains approximately 1.90 g chlorine. Sample A consequently contains more chlorine by mass. A is incorrect because equal total masses of different compounds do not necessarily contain equal masses of a particular element. C is incorrect because the greater atomic mass of potassium increases the fraction of the compound's mass contributed by potassium, decreasing the chlorine mass percentage. D is incorrect because chloride ions still contain chlorine atoms; gaining an electron changes the ionic charge but not the elemental identity. Elemental mass percentages depend on the formula and molar mass of each compound."
+    },
+    {
+      "id": "chem-1-4-008",
+      "prompt": "A gas mixture contains 2.20 g of CO₂ and 3.20 g of O₂. What percentage of the total mass of the mixture is oxygen? Use atomic masses C = 12.0 amu and O = 16.0 amu.",
+      "options": [
+        "59.3%",
+        "29.6%",
+        "40.7%",
+        "88.9%"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Oxygen is present in both components of the mixture. The molar mass of CO₂ is 44.0 g/mol, of which 32.0 g/mol comes from oxygen. Therefore, the mass of oxygen contributed by CO₂ is 2.20 g × (32.0/44.0) = 1.60 g. Because O₂ contains only oxygen, the 3.20 g of O₂ contributes another 3.20 g of oxygen. The total oxygen mass is 1.60 g + 3.20 g = 4.80 g. The total mixture mass is 2.20 g + 3.20 g = 5.40 g. The oxygen mass percentage is (4.80/5.40) × 100% = 88.9%. A is incorrect because 59.3% counts only the oxygen from O₂ and ignores the oxygen in CO₂. B is incorrect because 29.6% counts only the oxygen contributed by CO₂. C is incorrect because 40.7% is the mass percentage of CO₂ in the mixture, not the percentage of oxygen. Elemental analysis of a mixture must account for an element's contribution from every component containing that element."
+    },
+    {
+      "id": "chem-1-4-009",
+      "prompt": "A 10.0 g solid mixture contains only CaCO₃ and SiO₂. Elemental analysis shows that the mixture contains 2.00 g of calcium. What percentage of the mixture is CaCO₃ by mass? Use atomic masses Ca = 40.0 amu, C = 12.0 amu, O = 16.0 amu, and Si = 28.1 amu.",
+      "options": [
+        "50.0%",
+        "20.0%",
+        "40.0%",
+        "80.0%"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Calcium is present only in CaCO₃, so the calcium mass can be used to determine the amount of CaCO₃ in the mixture. The molar mass of CaCO₃ is 40.0 + 12.0 + 3(16.0) = 100.0 g/mol. Calcium therefore accounts for 40.0/100.0 = 0.400 of the mass of pure CaCO₃. The mass of CaCO₃ in the mixture is 2.00 g/0.400 = 5.00 g. The percentage of CaCO₃ in the original sample is (5.00 g/10.0 g) × 100% = 50.0%. B is incorrect because 20.0% is the percentage of calcium in the entire mixture, not the percentage of CaCO₃. C is incorrect because 40.0% is the calcium mass percentage within pure CaCO₃. D is incorrect because it does not account correctly for the fact that calcium represents only 40.0% of the mass of CaCO₃. The remaining 5.00 g of the mixture is SiO₂. This calculation is possible because SiO₂ contains no calcium."
+    },
+    {
+      "id": "chem-1-4-010",
+      "prompt": "A pure sample of MgO contains approximately 39.7% oxygen by mass. A laboratory sample believed to contain MgO is found to contain only 30.0% oxygen by mass. Assuming the sample contains MgO mixed with exactly one of the substances listed below, which impurity could explain the lower measured oxygen percentage? Use atomic masses Mg = 24.3 amu, Si = 28.1 amu, H = 1.0 amu, and O = 16.0 amu.",
+      "options": [
+        "Pure O₂, which contains 100% oxygen by mass",
+        "H₂O, which contains approximately 88.9% oxygen by mass",
+        "Mg metal, which contains 0% oxygen by mass",
+        "SiO₂, which contains approximately 53.3% oxygen by mass"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A mixture's elemental mass percentage is a mass-weighted average of the elemental mass percentages of its components. Pure MgO contains approximately 16.0/(24.3 + 16.0) × 100% = 39.7% oxygen. Mixing MgO with magnesium metal, which contains no oxygen, decreases the overall oxygen percentage. A sufficiently large amount of Mg metal could reduce the oxygen percentage to 30.0%. A is incorrect because adding pure O₂, which contains 100% oxygen by mass, would increase the oxygen percentage above 39.7%. B is incorrect because water contains approximately 88.9% oxygen by mass, so adding water would also increase the oxygen percentage. D is incorrect because SiO₂ contains approximately 53.3% oxygen by mass, greater than the oxygen percentage of MgO, so adding SiO₂ would increase rather than decrease the mixture's oxygen percentage. The measured composition of a mixture must lie between the corresponding elemental mass percentages of its components."
+    },
+    {
+      "id": "chem-1-4-011",
+      "prompt": "A student analyzes a homogeneous aqueous NaCl solution that is known to contain 15.0% NaCl by mass. The student places 20.0 g of the solution in an evaporating dish and heats it to remove the water. The student then measures 3.50 g of solid residue, even though the expected mass of NaCl is 3.00 g. Which experimental error would best explain the unexpectedly high measured residue mass?",
+      "options": [
+        "Some NaCl was accidentally spilled from the evaporating dish before the final mass was measured.",
+        "Some water remained in the evaporating dish with the NaCl when the residue was weighed.",
+        "The original solution contained less than 15.0% NaCl by mass.",
+        "Some NaCl was lost through splattering during the heating process."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. A 20.0 g sample of a solution containing 15.0% NaCl by mass should contain 20.0 g × 0.150 = 3.00 g NaCl. If the water is completely removed without losing any NaCl, the final dry residue should have a mass of 3.00 g. A measured residue mass of 3.50 g is greater than expected. If some water remained in the evaporating dish, the measured mass would include both NaCl and residual water, producing an artificially high result. A is incorrect because spilling NaCl would decrease the measured residue mass. C is incorrect because a lower initial NaCl concentration would produce less than 3.00 g of NaCl in a 20.0 g sample, not more. D is incorrect because losing NaCl through splattering would also decrease the measured residue mass. This experiment illustrates how the composition of a mixture can be determined through mass measurements and how incomplete separation can introduce systematic error."
+    }
+  ]
+}
