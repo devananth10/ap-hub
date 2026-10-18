@@ -98,4 +98,12 @@ const bf3 = [0,2*Math.PI/3,4*Math.PI/3].map(angle=>[Math.cos(angle),Math.sin(ang
 vectorSum(bf3).forEach(value=>close(value,0));
 assert.deepEqual(vectorSum([[1,0,0],[-1,0,0],[0,1,0],[0,-1,0]]),[0,0,0]); // XeF4
 assert.notDeepEqual(vectorSum([[1,1,1],[1,-1,-1],[-1,1,-1]]),[0,0,0]); // three tetrahedral directions, NH3 model
-console.log('Independent arithmetic/charge/Lewis/vector checks passed through Topic 2.7. See per-topic QA for conceptual checks and limitations.');
+// Topic 3.1: controlled electrostatic models check orientation/induction signs.
+// Arbitrary consistent units; these are NOT measured molecular energies.
+const crossEnergy = (first,second) => first.reduce((sum,[x,q])=>sum+second.reduce((sub,[y,p])=>sub+q*p/Math.abs(x-y),0),0);
+assert.ok(crossEnergy([[0,1],[1,-1]],[[3,1],[4,-1]]) < 0); // head to tail
+assert.ok(crossEnergy([[0,-1],[1,1]],[[3,1],[4,-1]]) > 0); // head to head
+assert.ok(-1/2 + 1/4 < 1/2 - 1/4); // negative dipole end nearer a cation
+const inducedEnergy = (alpha,field) => -.5*alpha*field**2;
+assert.ok(inducedEnergy(2,2) < inducedEnergy(2,1)); // larger field strengthens attraction
+console.log('Independent arithmetic/charge/Lewis/vector/model checks passed through Topic 3.1. See per-topic QA for conceptual checks and limitations.');

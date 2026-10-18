@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 3,
+  "topicId": "intermolecular-forces",
+  "questions": [
+    {
+      "id": "chem-3-1-001",
+      "prompt": "Methane molecules have no permanent molecular dipole. Which model explains an attractive interaction between two CH4 molecules?",
+      "options": [
+        "A permanent positive charge on one methane ion attracts a permanent negative charge on another.",
+        "Each methane molecule permanently aligns a C–H bond dipole with the net dipole of its neighbor.",
+        "A fluctuation in one electron cloud creates a temporary dipole that induces a correlated dipole in a neighboring molecule.",
+        "Dispersion attraction can occur only after a nearby ion permanently polarizes each methane molecule."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. London dispersion interactions arise from temporary fluctuations and induced, correlated electron-cloud distortions. They occur even when molecules have no permanent dipoles, and also occur in polar species. A incorrectly treats neutral methane molecules as ions. B assumes a permanent molecular dipole despite methane’s symmetric cancellation of its bond dipoles. D incorrectly requires a pre-existing ion and permanent polarization; dispersion fluctuations do not require either. London dispersion is a specific interaction term; it should not be used as a synonym for every interaction sometimes grouped under van der Waals forces."
+    },
+    {
+      "id": "chem-3-1-002",
+      "prompt": "Argon and xenon are both monatomic, nonpolar species. Why are dispersion interactions generally stronger between Xe atoms than between Ar atoms at comparable relative separations?",
+      "options": [
+        "Xe has a larger electron cloud with more electrons, making it more readily polarized.",
+        "Xe has a permanent molecular dipole, whereas Ar does not.",
+        "Xe has a larger net positive charge, which attracts its neighbors more strongly.",
+        "Xe has fewer electrons, so its electron cloud is less shielded and cannot fluctuate."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Xenon’s larger, more electron-rich cloud is more polarizable, so correlated temporary dipoles can produce stronger dispersion interactions. B assigns a permanent dipole to an isolated spherical atom. C confuses greater nuclear charge with net atomic charge; both atoms are neutral overall. D reverses the electron-count comparison and incorrectly excludes fluctuations. Atomic or molecular mass can correlate with electron count within a series, but polarizability—not mass itself as an electrical charge—is the relevant microscopic idea."
+    },
+    {
+      "id": "chem-3-1-003",
+      "prompt": "Two nonpolar C5H12 isomers have the same number of electrons. One has an extended chain shape; the other is compact and highly branched. Which prediction follows from the contact-area part of the dispersion model?",
+      "options": [
+        "The compact isomer must form hydrogen bonds because branching increases the number of C–H bonds.",
+        "The extended isomer can have stronger net dispersion interactions because neighboring molecules can contact over a larger area.",
+        "The two isomers must have identical intermolecular interactions because their molecular formulas are identical.",
+        "The extended isomer has no dispersion interactions because its bonds are nonpolar."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Similar electron counts do not eliminate shape effects: extended molecules can provide more contact area for attractive dispersion interactions than compact isomers. A incorrectly infers an N–H, O–H, or F–H donor from branching; both isomers contain only C and H and have the same total C–H count. C ignores the geometry/contact-area contribution. D reverses the reason dispersion is important: nonpolar species still exhibit electron-cloud fluctuations. This is a qualitative interaction comparison, not an exact melting-point prediction."
+    },
+    {
+      "id": "chem-3-1-004",
+      "prompt": "Pure dimethyl ether, CH3–O–CH3, is a polar molecular substance. In the usual AP intermolecular-force model, which interactions occur between its own molecules?",
+      "options": [
+        "Only hydrogen bonding, because any molecule containing oxygen is a hydrogen-bond donor.",
+        "Only dispersion forces, because a molecule with no O–H bond cannot be polar.",
+        "Ion–dipole interactions, because every C–O bond creates a full O2- ion.",
+        "Dispersion and dipole–dipole interactions; it lacks an N–H, O–H, or F–H donor for self hydrogen bonding."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Polar ether molecules have permanent dipoles and all molecules have dispersion interactions. The ether oxygen can accept a hydrogen bond from a suitable different molecule, but pure dimethyl ether has no conventional N–H, O–H, or F–H donor. A confuses an oxygen acceptor with a donor. B confuses lack of a donor with lack of a molecular dipole. C turns covalent partial charges into full ions; intact ether molecules are neutral. The classification uses the stated introductory hydrogen-bonding convention."
+    },
+    {
+      "id": "chem-3-1-005",
+      "prompt": "A methanol molecule, CH3–O–H, approaches a dimethyl ether molecule, CH3–O–CH3. Which contact can form a conventional hydrogen bond between these different molecules?",
+      "options": [
+        "The carbon of methanol approaching a hydrogen bonded to carbon in the ether.",
+        "Any two carbon-bound hydrogens approaching, because all hydrogen atoms are hydrogen-bond donors.",
+        "The hydrogen on methanol’s O–H group pointing toward a lone-pair region on the ether oxygen.",
+        "The two oxygen ends point directly toward one another while methanol’s O–H hydrogen points away from the ether oxygen."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Methanol supplies an O–H donor and the ether oxygen supplies an acceptor lone-pair region. Both molecules need not contain O–H groups for a hydrogen bond between them. A lacks the required conventional donor–acceptor contact. B incorrectly treats C–H hydrogens as the usual AP N/O/F-bound donors. D places the two partially negative oxygen regions toward one another while the donor H points away; it lacks the stated favorable O–H···O donor–acceptor orientation. Dispersion and other dipolar interactions can also coexist; identifying this hydrogen bond does not remove them."
+    },
+    {
+      "id": "chem-3-1-006",
+      "prompt": "A water molecule near a Na+ ion can rotate. Which orientation is favored by the ion–dipole interaction?",
+      "options": [
+        "The partially positive H end points toward Na+, because all positive charges attract.",
+        "The partially negative O end points toward Na+.",
+        "Orientation has no effect because water is neutral overall.",
+        "Water must first split into H+ and OH- before an attractive orientation toward Na+ is possible."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Water’s oxygen end is partially negative and is attracted to the positive sodium ion. A reverses electrostatic attraction: bringing positive ends together is unfavorable. C ignores spatial separation of partial charges within a neutral polar molecule. D incorrectly requires covalent-bond cleavage and separate ions; intact polar water can interact with Na+. No covalent bond to Na+ or chemical transformation is needed to explain the favored orientation."
+    },
+    {
+      "id": "chem-3-1-007",
+      "prompt": "An intact polar HCl molecule approaches a neutral Ar atom. In addition to dispersion, which interaction is expected in the introductory model?",
+      "options": [
+        "Dipole-induced dipole, because HCl’s permanent dipole can distort Ar’s electron cloud.",
+        "Permanent dipole–permanent dipole, because a neutral Ar atom has a fixed positive and negative end.",
+        "Ion–dipole, because every HCl molecule must already be separate H+ and Cl- ions.",
+        "Conventional hydrogen bonding, because every molecule containing H forms such bonds with any neighbor."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. A polar molecule can induce an electron-cloud distortion in a nonpolar neighbor, producing a dipole-induced dipole attraction. B incorrectly assigns a permanent dipole to isolated Ar. C contradicts the specified intact HCl molecule; its covalent partial charges are not separate full ions here. D ignores the conventional N/O/F donor and acceptor requirements and supplies no suitable acceptor on Ar. The induced interaction occurs without permanent ion formation."
+    },
+    {
+      "id": "chem-3-1-008",
+      "prompt": "Consider two arrangements of the same pair of HCl molecules at comparable center-to-center separation. In I, one molecule’s partially positive H end points toward the other’s partially negative Cl end. In II, the two partially positive H ends point toward each other. Which dipole-based comparison is appropriate?",
+      "options": [
+        "II is favored because like partial charges attract one another.",
+        "The arrangements must have equal interaction energies because each molecule has the same dipole magnitude in both.",
+        "I is favored because unlike partial charges face one another; relative orientation matters as well as dipole magnitude.",
+        "Neither arrangement can have an intermolecular interaction because both molecules are neutral."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The head-to-tail arrangement places unlike partial charges near one another, giving a favorable dipole alignment. A reverses the charge-attraction rule. B omits orientation from a dipole–dipole comparison; equal dipole magnitudes do not imply equal interaction energies at different orientations. D confuses net neutrality with absence of local partial charges or dispersion. The comparison isolates the stated geometries and comparable separations; it does not claim that molecules in a liquid remain permanently frozen in one orientation."
+    },
+    {
+      "id": "chem-3-1-009",
+      "prompt": "A student argues that any small polar molecule must have stronger net intermolecular attractions than every large nonpolar molecule. Which response best evaluates that claim?",
+      "options": [
+        "The claim is correct because dispersion forces vanish whenever a permanent dipole is absent.",
+        "The claim is correct because a permanent dipole always dominates every possible dispersion interaction.",
+        "The claim is incorrect because polar molecules have only dispersion forces and no dipole–dipole interactions.",
+        "The claim is too broad: a large, highly polarizable nonpolar molecule can have stronger net intermolecular attractions than a small polar species because of substantial dispersion interactions."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Interaction strength depends on polarizability, contact area, dipoles, and geometry. Dispersion can dominate the net attractions of large species; there is no universal ranking that ignores size and structure. A reverses the existence of dispersion in nonpolar species. B makes the unsupported absolute assertion that any permanent dipole outweighs every dispersion contribution. C incorrectly removes the additional dipole–dipole interactions of polar species. A comparison must consider the actual molecules rather than just their polar/nonpolar labels."
+    },
+    {
+      "id": "chem-3-1-010",
+      "prompt": "Two distant regions of one large biomolecule approach during folding. One region has an O–H group and another has a carbonyl oxygen with an available lone-pair region. No covalent bonds are changed. Which statement is consistent with the intermolecular/interparticle model?",
+      "options": [
+        "A hydrogen-bond contact between these regions can stabilize the folded arrangement, even though both regions belong to the same molecule.",
+        "Hydrogen bonding is impossible because it can occur only between separate molecules.",
+        "The contact must create a new O–O covalent bond and remove the O–H bond.",
+        "The carbonyl oxygen cannot be an acceptor because it is already bonded to carbon."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Conventional hydrogen bonding can occur between different molecules or between appropriate regions of one large molecule. An O–H donor can interact with a carbonyl-O acceptor without changing covalent connectivity. B wrongly excludes intramolecular contacts. C changes covalent bonds contrary to the stated scenario and the noncovalent model. D confuses being covalently bonded with lacking available lone pairs; carbonyl oxygen can accept a hydrogen bond. The question says the contact can stabilize this arrangement, not that one contact alone determines all folding energetics."
+    },
+    {
+      "id": "chem-3-1-011",
+      "prompt": "A simplified comparison holds the separation, orientation, and polarizability of a nonpolar partner constant. The permanent dipole magnitude of its polar partner is increased. What happens to the dipole-induced dipole attraction in this model?",
+      "options": [
+        "It becomes weaker because a larger permanent dipole prevents electron-cloud distortion.",
+        "It becomes stronger because the larger permanent dipole induces a larger distortion in the polarizable partner.",
+        "It becomes repulsive because induced dipoles always oppose attractive interactions.",
+        "It remains identical because only permanent dipole–permanent dipole interactions depend on dipole magnitude."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Holding the nonpolar partner and geometry fixed, a stronger polar field produces a greater induced dipole and a stronger attractive induced interaction. A reverses the field-distortion relationship. C confuses the induced charge arrangement with an inherently repulsive force; the induced arrangement is attractive in this model. D omits a central dependence of dipole-induced dipole strength. This constrained comparison does not assert that changing a real molecule leaves every other interaction or geometry unchanged."
+    }
+  ]
+}
