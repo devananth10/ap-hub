@@ -1,5 +1,13 @@
 # PrepAtlas milestone verification
 
+## Unit 5 content checkpoint — October 18, 2026
+
+- All eleven kinetics topics are drafted, eleven questions each (121 new pending questions). Total complete-file coverage is 451 of 1,001: eleven live and 440 awaiting human scientific review and owner approval in forty sets. Fifty topics remain incomplete, with unavailable earlier drafts tracked separately.
+- Draft structural checks and implemented numerical/model checks passed. Each set has a separate scope/solve record. Arrhenius calculations and intermediate-data collection were excluded; free versus bound/total quantities, rate normalization and pre-equilibrium limits are explicit.
+- TypeScript and all 31 unit tests passed again. Application code has not changed during this draft-only unit; the previously passed Unit 4 production build remains current. Its affected practice route was rechecked with HTTP 200 on a temporary production server, then that server was stopped.
+- The first development smoke run caught an intermittent HTTP 500 with `Unexpected end of JSON input`; a generated-file audit found no currently invalid JSON, the targeted practice request returned 200, and the full unmodified smoke rerun passed all 19 routes, CSS, seven 404s, six course themes and home rotation (eight themes in twelve responses). Exact cause remains unconfirmed; no permanent-fix claim is made. Details are in the content validation record.
+- Preview remains on 3000, HTTP 200; approved resource catalog hash is unchanged. No pending questions or video suggestions were published or pushed. Next new topic is 6.1, Endothermic and Exothermic Processes (`energy`).
+
 ## Unit 4 content checkpoint — October 18, 2026
 
 - Saved all nine Unit 4 topics as eleven-question drafts: 99 new questions. Complete-file coverage is now 330 of 1,001: eleven live in Topic 1.1 and 319 pending in 29 sets. None of the Unit 4 questions are registered in the application. The bank remains unfinished.

@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 5,
+  "topicId": "topic-5-11",
+  "questions": [
+    {
+      "id": "chem-5-11-001",
+      "prompt": "At the same temperature, a catalyst increases a reaction's rate. Which microscopic explanation is consistent with catalysis without changing the identities of the net reactants and products?",
+      "options": [
+        "It must raise every reactant molecule's kinetic energy despite the fixed temperature.",
+        "It must lower the energy of the final products alone, increasing the net energy released.",
+        "It must supply an extra atom permanently to every product and be consumed in proportion to product amount.",
+        "It can provide a different pathway with a lower activation requirement and/or more effective reactant encounters, while being regenerated."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Catalysts can change the route and effectiveness of reaction events, often through new intermediates, and are regenerated in a completed catalytic cycle. A confuses a catalytic route change with heating at unchanged temperature. B changes a fixed product endpoint rather than the pathway between the same species. C describes stoichiometric consumption rather than regeneration. Catalytic acceleration need not be explained solely by giving all molecules more energy."
+    },
+    {
+      "id": "chem-5-11-002",
+      "prompt": "A proposed peroxide cycle is H2O2 + I− → H2O + IO−, followed by H2O2 + IO− → H2O + O2 + I−. Which description correctly identifies the catalyst and net conversion?",
+      "options": [
+        "I− is regenerated as a catalyst; the net reaction is 2H2O2 → 2H2O + O2.",
+        "IO− is the initial catalyst, and I− is consumed in the net reaction.",
+        "I− must be a net reactant because it is consumed in the first step.",
+        "No catalysis is possible because the iodine-containing species changes identity during the cycle."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. I− is used and then returned, while IO− forms and is consumed internally. Canceling both iodine-containing species leaves two peroxide molecules forming two waters and one oxygen molecule. B reverses catalyst and intermediate roles. C ignores regeneration in the second step. D wrongly requires a catalyst to retain its free form at every instant. A catalytic species can be temporarily incorporated into a different intermediate."
+    },
+    {
+      "id": "chem-5-11-003",
+      "prompt": "An enzyme model is E + S ⇌ ES followed by ES → E + P. Only free E and one-enzyme ES complexes contain enzyme. Total enzyme concentration is 10.0 μM; at one instant [ES] = 6.00 μM. Which statement is consistent with catalyst conservation?",
+      "options": [
+        "Free [E] is still 10.0 μM, so the total enzyme concentration has become 16.0 μM.",
+        "Six μM of enzyme has been destroyed because it is bound to substrate.",
+        "Free [E] is 4.00 μM; the conserved 10.0 μM total includes both free and bound enzyme, which can be regenerated after turnover.",
+        "The model cannot be catalytic because free [E] is allowed to vary."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The enzyme balance is [E]_total = [E] + [ES], so free E is 10.0 − 6.00 = 4.00 μM. A double-counts bound enzyme while leaving all initial enzyme free. B treats binding as destruction. D confuses conserved total catalyst with an individually constant free-species concentration. During a cycle, catalyst can be distributed among bound forms without being consumed net."
+    },
+    {
+      "id": "chem-5-11-004",
+      "prompt": "An enzyme binds two reactants near one another with the groups that form a new bond facing each other. Which explanation connects this binding to catalytic acceleration?",
+      "options": [
+        "The enzyme changes the balanced atom ratio so that fewer reactants are needed per product.",
+        "Binding can increase the fraction of encounters with a useful orientation and provide a favorable reaction route through bound intermediates.",
+        "Binding guarantees that all substrate molecules in the entire solution have identical kinetic energy.",
+        "The enzyme must become a permanent atom-containing part of every final product."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Organizing reactive groups can make encounters more effective and can alter the energetic pathway through enzyme-bound intermediates. A changes net stoichiometry without justification. C replaces a thermal distribution with one common energy. D denies catalyst regeneration. This explanation does not require a detailed enzyme-rate equation or assume that binding alone guarantees infinitely fast conversion."
+    },
+    {
+      "id": "chem-5-11-005",
+      "prompt": "A symbolic acid-catalyzed route is S + H+ → SH+, followed by SH+ + H2O → P + H+. What explains the catalytic role of H+ in this supplied cycle?",
+      "options": [
+        "H+ is consumed overall because it appears in the first step.",
+        "SH+ is the only catalyst because it appears in the middle of the mechanism.",
+        "No covalent interaction involving a catalyst is permitted.",
+        "Protonation creates a different intermediate, and H+ is regenerated; the net conversion is S + H2O → P."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Protonation and subsequent deprotonation introduce new elementary chemistry while returning H+ after the complete sequence. A ignores its second-step production. B confuses the formed-then-consumed intermediate with the initially supplied regenerated species. C falsely excludes bonding or proton transfer involving a catalyst. The symbolic species labels stand for a chemically consistent supplied route; no detailed organic mechanism is required."
+    },
+    {
+      "id": "chem-5-11-006",
+      "prompt": "A surface model uses * for a vacant catalytic site: A + * → A*, B + * → B*, then A* + B* → P + 2*. What is the role of the sites and bound species in a completed cycle?",
+      "options": [
+        "Two sites are permanently consumed per P, so the surface must vanish stoichiometrically.",
+        "A* and B* are final products that cannot react further.",
+        "A* and B* are bound intermediates, and the two sites are regenerated, leaving net A + B → P.",
+        "The star symbols are new element atoms added permanently to P."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Adsorption occupies sites, the bound reactants convert, and product release restores two vacant sites. A ignores their regeneration. B ignores the supplied reaction of the bound forms. D mistakes a surface-site notation for an element formula or product atom. Surface catalysis can involve binding and new elementary steps without consuming the site framework in the ideal cycle."
+    },
+    {
+      "id": "chem-5-11-007",
+      "prompt": "A nonreacting contaminant binds tightly to catalytic metal sites and prevents reactants from reaching them. Temperature, reactant concentrations, and total metal mass are unchanged, but the rate falls. Which explanation is consistent with surface catalysis?",
+      "options": [
+        "Fewer active sites remain available for adsorption and productive bound-reaction sequences.",
+        "The bulk reactant molecules must have lost all kinetic energy.",
+        "The balanced reaction coefficients must change because the metal mass is the same.",
+        "Site occupation cannot affect rate unless metal atoms are destroyed."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Blocking sites reduces the available productive interface even when the physical quantity of metal is unchanged. B is not implied at fixed temperature. C confuses rate with stoichiometry. D overlooks occupancy and accessibility of catalytic sites. A real catalyst can become less active through blockage without violating regeneration in the ideal unblocked catalytic cycle."
+    },
+    {
+      "id": "chem-5-11-008",
+      "prompt": "A catalyzed reaction proceeds faster than a control at the same measured bulk temperature. Which claim avoids confusing catalytic action with heating?",
+      "options": [
+        "The catalyst must have increased the mean reactant kinetic energy even though temperature is unchanged.",
+        "The catalyst can change the route or effectiveness of encounters; increased mean kinetic energy is not required at the same temperature.",
+        "A faster rate proves that the original reactant chemical formulas have all changed before they encounter the catalyst.",
+        "A catalyst can work only by removing every energetic and geometric requirement."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Catalytic acceleration can arise from an alternate pathway or favorable binding/orientation while the bulk thermal energy distribution remains set by the controlled temperature. A treats rate increase as evidence of a hotter sample despite the control. C invents a prior change in all reactants. D makes an absolute barrier-free, orientation-free claim not required by catalysis. A lower barrier or more effective encounter is not the same as no requirements at all."
+    },
+    {
+      "id": "chem-5-11-009",
+      "prompt": "An uncatalyzed reaction is represented by one pathway, while a proposed catalytic route includes a catalyst-substrate intermediate and additional elementary steps. Must a catalyst preserve the original sequence and simply lower the same drawn peak?",
+      "options": [
+        "Yes; any new intermediate would make catalyst regeneration impossible.",
+        "Yes; changing the mechanism necessarily changes the final product's chemical identity.",
+        "No; catalytic binding can introduce new intermediates and elementary steps that provide a different productive route between the same net endpoints.",
+        "No; a catalyst must permanently disappear whenever a new intermediate forms."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Catalysts often change the mechanism, including bound or protonated intermediates, while being regenerated and preserving the specified net reaction. A falsely forbids a common catalytic feature. B assumes different routes require different final products. D confuses temporary incorporation with permanent consumption. A catalytic energy profile can therefore have a different number of peaks from the uncatalyzed one."
+    },
+    {
+      "id": "chem-5-11-010",
+      "prompt": "A proposed route uses Q in S + Q → SQ, followed by SQ → P. No step regenerates Q, and the net equation is S + Q → P. The reaction is fast. What can be concluded about calling Q a catalyst from this mechanism alone?",
+      "options": [
+        "Q is automatically a catalyst because any species that makes a fast reaction is catalytic.",
+        "Q is a catalyst because its name disappears inside the product label P.",
+        "Q is a catalyst because intermediate SQ is consumed.",
+        "The stated route consumes Q stoichiometrically rather than regenerating it, so it does not establish a catalytic cycle for Q."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. In the supplied complete route, Q has a negative net coefficient and is not returned; speed alone does not meet the regeneration criterion. A substitutes fast reaction for a catalytic mechanism. B hides Q's material contribution inside a symbolic product instead of recovering Q. C confuses consumption of an intermediate with regeneration of the proposed catalyst. A missing regeneration step would need evidence and an explicit mechanism update rather than an assumption that it exists."
+    },
+    {
+      "id": "chem-5-11-011",
+      "prompt": "Two catalyst models bind the same substrate into intermediates. Model I has bound-intermediate energy −20 kJ/mol and the next transition state at 0; model II has intermediate energy −100 and the next transition state also at 0. Other kinetic factors are assumed comparable. Why might the stronger binding in II hinder escape toward product rather than automatically improve turnover?",
+      "options": [
+        "A lower intermediate energy always means a smaller local activation barrier, regardless of the next peak.",
+        "Its next local barrier is 100 kJ/mol rather than 20 kJ/mol, so excessive stabilization of the bound state can make the productive escape more difficult.",
+        "A bound intermediate cannot participate in any catalytic route.",
+        "The unchanged absolute peak forces both local barriers to be zero."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The next barrier is measured from the bound intermediate: 0 − (−20) = 20 for I and 0 − (−100) = 100 kJ/mol for II. Stronger binding alone does not guarantee rapid product formation or release. A ignores the starting-well depth. C contradicts the supplied catalytic models and common bound intermediates. D treats absolute peak energy as a gap. The comparison assumes other factors comparable and illustrates a possible limitation, not a complete enzyme kinetic prediction."
+    }
+  ]
+}

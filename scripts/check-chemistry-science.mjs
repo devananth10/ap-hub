@@ -490,4 +490,13 @@ assert.ok(balanced([[1,'NOCl2'],[1,'NO']],[[2,'NOCl']]));
   assert.ok(40>30); // proposed intermediate above its preceding claimed maximum
   assert.deepEqual(forwardBarriers([0,45,5,40,-30]),[45,35]);
 }
+// Topic 5.11: catalyst/site conservation across a completed cycle.
+close(10.0-6.00,4.00); // micromolar free enzyme from total minus complex
+assert.deepEqual(netSteps({H2O2:-1,I:-1,H2O:1,IO:1},{H2O2:-1,IO:-1,H2O:1,O2:1,I:1}),{H2O2:-2,H2O:2,O2:1});
+assert.ok(balanced([[1,'H2O2'],[1,'I',-1]],[[1,'H2O'],[1,'IO',-1]]));
+assert.ok(balanced([[1,'H2O2'],[1,'IO',-1]],[[1,'H2O'],[1,'O2'],[1,'I',-1]]));
+assert.deepEqual(netSteps({S:-1,H:-1,SH:1},{SH:-1,H2O:-1,P:1,H:1}),{S:-1,H2O:-1,P:1});
+assert.deepEqual(netSteps({A:-1,'*':-1,'A*':1},{B:-1,'*':-1,'B*':1},{'A*':-1,'B*':-1,P:1,'*':2}),{A:-1,B:-1,P:1});
+assert.deepEqual(netSteps({S:-1,Q:-1,SQ:1},{SQ:-1,P:1}),{S:-1,Q:-1,P:1});
+close(0-(-20),20); close(0-(-100),100);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
