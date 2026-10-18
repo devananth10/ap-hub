@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 8,
+  "topicId": "topic-8-10",
+  "questions": [
+    {
+      "id": "chem-8-10-001",
+      "prompt": "Equal volumes of two buffers contain the same HA/A− pair in a1:1 ratio. Their component concentrations are0.010 M each and0.100 M each. Which comparison is correct?",
+      "options": [
+        "The dilute buffer has higher capacity because it contains more water",
+        "The concentrated buffer must have pH one unit higher",
+        "Their capacities must match because their pH values match",
+        "Their approximate pH values match, but the more concentrated buffer resists added acid/base more strongly."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The ratio fixes approximate pH while the larger reservoirs increase capacity. A is incorrect: water does not replace the conjugate reservoirs. B is incorrect: both ratios remain one. C is incorrect: equal pH does not imply equal available neutralizing amounts."
+    },
+    {
+      "id": "chem-8-10-002",
+      "prompt": "A buffer has0.200 M HA and0.0200 M A−. Which directional capacity is larger for equal test volumes?",
+      "options": [
+        "Capacity to consume added acid, because HA is more abundant",
+        "Capacity to consume added strong base, because HA is more abundant.",
+        "Both reservoirs neutralize only strong base",
+        "Neither direction is buffered because the ratio is not exactly one"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The acid reservoir neutralizes OH−, whereas the smaller base reservoir neutralizes added acid. A is incorrect: added acid is consumed mainly by A−, not HA. C is incorrect: A− accepts added protons. D is incorrect: a nonunit ratio can still provide useful buffering."
+    },
+    {
+      "id": "chem-8-10-003",
+      "prompt": "A buffer contains much more A− than HA. Which challenge is it better prepared to neutralize before a component becomes scarce?",
+      "options": [
+        "Added strong base",
+        "Only added neutral salt",
+        "Added strong acid.",
+        "Neither acid nor base because pH exceeds pKa"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The abundant conjugate base accepts added protons; the smaller HA pool limits strong-base resistance. A is incorrect: that consumes the less abundant HA pool. B is incorrect: neutral salt is not the acid/base challenge addressed by buffer capacity. D is incorrect: a base-rich buffer can still have appreciable capacity."
+    },
+    {
+      "id": "chem-8-10-004",
+      "prompt": "A buffer is diluted tenfold and tested in the same final sample volume as before. Both partners remain appreciable. What changes?",
+      "options": [
+        "Approximate pH stays similar, but capacity per sample volume decreases.",
+        "Approximate pH changes tenfold and capacity is unchanged",
+        "Capacity increases because dilution makes more A− from nothing",
+        "Ka decreases tenfold"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The conjugate ratio is retained while each reservoir per liter is ten times smaller. B is incorrect: pH is logarithmic and the reservoirs were diluted. C is incorrect: dilution does not create solute. D is incorrect: Ka remains fixed at constant temperature."
+    },
+    {
+      "id": "chem-8-10-005",
+      "prompt": "Two buffers have identical component concentrations and ratio, but one sample volume is100 mL and the other1.00 L. Which comparison distinguishes total reservoir from capacity per liter?",
+      "options": [
+        "The100 mL sample has ten times the total reservoirs",
+        "The1.00 L sample has ten times the total neutralizing amounts, but the same capacity per liter.",
+        "The larger sample has ten times the pH",
+        "The total reservoirs are equal because molarity is equal"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Amounts scale with sample volume at unchanged concentrations. A is incorrect: it contains less solution at the same concentration. C is incorrect: pH depends on concentrations and ratio, not total volume alone. D is incorrect: moles are molarity times volume."
+    },
+    {
+      "id": "chem-8-10-006",
+      "prompt": "A buffer initially has2.0 mmol A− and8.0 mmol HA. More than2.0 mmol strong acid is added. Why can resistance to further acid become poor?",
+      "options": [
+        "HA can neutralize unlimited additional strong acid",
+        "Ka becomes infinite once2.0 mmol is reached",
+        "A− is regenerated in unlimited amounts without changing composition",
+        "The initial A− reservoir can be largely consumed, leaving added strong acid without a substantial proton-accepting partner."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Buffering is finite; the base component, not total acid plus base alone, supplies resistance to acid. A is incorrect: the acid partner is not an unlimited proton acceptor. B is incorrect: capacity exhaustion does not redefine the equilibrium constant. C is incorrect: equilibrium cannot provide unlimited material while holding all amounts fixed."
+    },
+    {
+      "id": "chem-8-10-007",
+      "prompt": "For a fixed total concentration of one weak conjugate pair, which distribution generally provides the most balanced resistance to small additions of either acid or base near its pKa?",
+      "options": [
+        "Comparable concentrations of both partners.",
+        "Nearly all HA and almost no A−",
+        "Nearly all A− and almost no HA",
+        "No dissolved conjugate components"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Neither neutralizing reservoir is then especially scarce, giving balanced resistance in the two directions. B is incorrect: the acid-addition reservoir is small. C is incorrect: the base-addition reservoir is small. D is incorrect: there is no substantial buffering reservoir."
+    },
+    {
+      "id": "chem-8-10-008",
+      "prompt": "Equal-volume buffers start at the same pH and use the same conjugate pair. After the same small acid addition, sample I stays close to its starting pH, while sample II becomes much more acidic. What does this evidence support?",
+      "options": [
+        "Sample II must have the larger reservoir because its pH changes more",
+        "The original pH proves both had identical capacities",
+        "Sample I has greater effective capacity against that acid challenge.",
+        "Sample I experienced no acid-base reaction"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Under the controlled comparison, its smaller response indicates a larger available proton-accepting reservoir. A is incorrect: a larger change indicates weaker resistance, other conditions equal. B is incorrect: initial pH alone does not specify reservoir concentrations. D is incorrect: its reservoir reaction is what consumes the added acid."
+    },
+    {
+      "id": "chem-8-10-009",
+      "prompt": "A buffer preparation is accidentally diluted to twice the intended final volume without losing solute. What is the main expected effect under the ordinary buffer approximation?",
+      "options": [
+        "The pH stays approximately the same, but capacity per liter is reduced.",
+        "pH must increase by exactly two",
+        "The original total moles of both components double",
+        "The buffer necessarily becomes pure water"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Both concentrations halve together, preserving their ratio but lowering reservoirs per unit volume. B is incorrect: the ratio remains unchanged. C is incorrect: adding water does not add conjugate solute. D is incorrect: the solutes remain present after dilution."
+    },
+    {
+      "id": "chem-8-10-010",
+      "prompt": "Two buffers have the same measured pH and use the same conjugate pair. What extra information is most useful to compare their capacity for equal-volume tests?",
+      "options": [
+        "Only the color of the containers",
+        "The absolute concentrations of both conjugate components.",
+        "Only the numerical ratio again, without either concentration",
+        "Whether the pH is written to one or two decimal places"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The pH mainly constrains their ratio; absolute reservoir sizes determine resistance. A is incorrect: container appearance does not give solute inventories. C is incorrect: that does not reveal the reservoir scale. D is incorrect: reporting precision does not determine chemical capacity."
+    },
+    {
+      "id": "chem-8-10-011",
+      "prompt": "How can a prepared buffer be made more resistant to both acid and base while keeping approximately the same pH and final volume?",
+      "options": [
+        "Add only water",
+        "Remove most A− while leaving HA unchanged",
+        "Replace the conjugate pair with an equal-molarity spectator salt",
+        "Increase both conjugate-component concentrations proportionally."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. This preserves the base/acid ratio and increases both neutralizing reservoirs. A is incorrect: that lowers concentrations and capacity per volume. B is incorrect: that weakens acid resistance and changes the ratio. C is incorrect: a spectator salt does not supply the required proton-transfer pair."
+    }
+  ]
+}
