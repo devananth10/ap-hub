@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 5,
+  "topicId": "topic-5-9",
+  "questions": [
+    {
+      "id": "chem-5-9-001",
+      "prompt": "A + B ⇌ I rapidly establishes pre-equilibrium with concentration ratio K = [I]/([A][B]). The following elementary step I + C → P is slow, with event rate r = k2[I][C]. While pre-equilibrium remains valid, which expression eliminates I using free reactant concentrations?",
+      "options": [
+        "r = k2[A][B][C]/K",
+        "r = k2K[A][B]/[C]",
+        "r = k2K[A][B][C]",
+        "r = k2[I][C], with no possible relation to [A] and [B]"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The fast relation gives [I] ≈ K[A][B]; substitution into the slow-step expression gives r ≈ k2K[A][B][C]. A inverts the defined K. B puts C in the denominator instead of retaining its slow-step factor. D ignores the supplied pre-equilibrium relation. This is an approximation conditional on rapid equilibration, not a general replacement for every intermediate in every mechanism."
+    },
+    {
+      "id": "chem-5-9-002",
+      "prompt": "A model has 2NO ⇌ N2O2 as a fast pre-equilibrium with K = [N2O2]/[NO]^2, followed by slow elementary N2O2 + O2 → 2NO2. Which concentration dependence follows for the slow event rate?",
+      "options": [
+        "r = k2K[NO]^2[O2]",
+        "r = k2K[NO][O2]",
+        "r = k2[NO]^2[O2]/K",
+        "r = k2K[NO]^2/[O2]"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The fast relation supplies [N2O2] ≈ K[NO]^2, and the slow elementary law is k2[N2O2][O2]. B loses one NO factor. C reverses K despite its definition. D puts the slow reactant O2 in the denominator. The rate is the event rate; NO2 formation would have an additional constant factor two without changing these concentration orders."
+    },
+    {
+      "id": "chem-5-9-003",
+      "prompt": "For fast elementary A ⇌ I, the forward and reverse constants are k1 and k_−1. A slow elementary step I + B → P has constant k2. Under pre-equilibrium, which event-rate expression follows?",
+      "options": [
+        "r = (k_−1 k2/k1)[A][B]",
+        "r = (k1 + k_−1 + k2)[A][B]",
+        "r = k1[A], because the first step always controls the overall reaction",
+        "r = (k1 k2/k_−1)[A][B]"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Approximate equality of the fast forward and reverse rates gives k1[A] ≈ k_−1[I], so [I] ≈ (k1/k_−1)[A]. Substituting into k2[I][B] gives D. A inverts the fast ratio. B adds constants from different steps without deriving an intermediate concentration and generally also mixes incompatible units. C applies a slow-first-step rule even though the problem specifies a fast first equilibrium and slow second reaction."
+    },
+    {
+      "id": "chem-5-9-004",
+      "prompt": "A2 ⇌ 2A rapidly establishes Kd = [A]^2/[A2]. The slow elementary step is A + B → P. Using free [A2] and [B] while pre-equilibrium holds, which expression follows for the slow event rate?",
+      "options": [
+        "r = k2Kd[A2][B]",
+        "r = k2 sqrt(Kd[A2]) [B]",
+        "r = k2[A2][B]/Kd",
+        "r = k2Kd[A2]^2[B]"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The fast relation gives [A] ≈ sqrt(Kd[A2]), using the positive concentration root. Substitution into r = k2[A][B] gives B. A omits the square root when solving for [A]. C both inverts Kd and omits the root. D incorrectly transfers a squared dependence to A2. Fractional apparent order in A2 can arise from eliminating a pre-equilibrium species without a fractional number of particles in an elementary event. The needed relation is supplied."
+    },
+    {
+      "id": "chem-5-9-005",
+      "prompt": "A student replaces [I] with zero because A ⇌ I is described as a fast pre-equilibrium. What is the key error?",
+      "options": [
+        "Fast equilibration means that A and I must have equal concentrations for every equilibrium constant.",
+        "Fast equilibration means that the forward reaction occurs but the reverse reaction stops.",
+        "Nearly balanced forward and reverse rates can maintain a nonzero I concentration; approximate zero net change in the fast pair is not the same as [I] = 0.",
+        "Every intermediate must have a higher concentration than every reactant."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Pre-equilibrium uses a relation between concentrations obtained from near balance of opposing fast processes, not absence of the intermediate. A confuses equal opposing rates with equal concentrations. B removes the reverse event needed for equilibrium. D invents a concentration-ranking rule. Slow removal can perturb the fast equilibrium slightly, so the approximation is not a claim that both fast rates are exactly equal during net conversion."
+    },
+    {
+      "id": "chem-5-9-006",
+      "prompt": "For A + B ⇌ I followed by I + C → P, the first pair is initially much faster than product formation. Which condition most directly threatens the pre-equilibrium approximation for I?",
+      "options": [
+        "The first forward and reverse events remain much faster than removal of I.",
+        "Temperature and free reactant concentrations remain in the validated regime.",
+        "The slow-step rate is reduced while the fast forward and reverse rates remain unchanged.",
+        "C becomes so large that trapping of I as product competes with or exceeds its rapid return through the reverse first step."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Strong I removal can prevent the fast pair from maintaining its approximate equilibrium relation. A and C favor separation of equilibration and consumption timescales. B preserves rather than challenges the validated conditions. A step labeled 'fast' does not guarantee pre-equilibrium at every concentration; the relevant competition depends on actual rates such as k_−1[I] versus k2[I][C]."
+    },
+    {
+      "id": "chem-5-9-007",
+      "prompt": "A symbolic mechanism has fast A ⇌ I + B with K = [I][B]/[A], followed by slow elementary I + C → P. For nonzero appreciable [B] in a regime where pre-equilibrium holds, which event-rate law follows?",
+      "options": [
+        "r = k2K[A][B][C]",
+        "r = k2K[A][C]/[B]",
+        "r = k2[A][B]/(K[C])",
+        "r = k2K[B][C]/[A]"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Solving the stated relation gives [I] ≈ K[A]/[B], which multiplies the slow-step C factor. A puts B on the wrong side of the concentration ratio. C reverses K and misplaces C. D reverses the A-to-B relation. A negative apparent B order is possible because B suppresses the pre-equilibrium amount of I; it is not a negative elementary participant count. The formula must not be extrapolated to [B] = 0 outside its assumed regime."
+    },
+    {
+      "id": "chem-5-9-008",
+      "prompt": "For fast A + B ⇌ I, K = [I]/([A][B]) = 4.00 M^-1. Free [A] = 0.100 M and free [B] = 0.0500 M. The slow event I + C → P has k2 = 0.300 M^-1·s^-1 and [C] = 0.200 M. Assuming valid pre-equilibrium, what is the event rate?",
+      "options": [
+        "0.00120 M/s",
+        "0.00600 M/s",
+        "0.000300 M/s",
+        "0.0000750 M/s"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. [I] ≈ (4.00)(0.100)(0.0500) = 0.0200 M, so r ≈ (0.300)(0.0200)(0.200) = 0.00120 M/s. B omits the C factor. C omits K while substituting the free A and B concentrations. D inverts K instead of using the stated forward ratio. The prompt supplies free concentrations, avoiding an unperformed mass-balance calculation from total starting amounts."
+    },
+    {
+      "id": "chem-5-9-009",
+      "prompt": "Fast A ⇌ I has K = [I]/[A] = 2.00. At the instant considered, the remaining A-containing pool satisfies [A] + [I] = 0.300 M. The slow event I + B → P has k2 = 0.500 M^-1·s^-1 and [B] = 0.100 M. Using pre-equilibrium and the supplied pool balance, what is the event rate?",
+      "options": [
+        "0.0300 M/s",
+        "0.00750 M/s",
+        "0.00500 M/s",
+        "0.0100 M/s"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Since [I] = 2[A], the pool balance gives 3[A] = 0.300 M, so [A] = 0.100 M and [I] = 0.200 M. Thus r = (0.500)(0.200)(0.100) = 0.0100 M/s. A treats total pool as free A, generating an impossible 0.600 M I from the 0.300 M pool. B splits the pool equally despite K = 2. C uses free A in place of I in the slow law. The stated pool is the remaining pool at this instant, not the original total including product already formed."
+    },
+    {
+      "id": "chem-5-9-010",
+      "prompt": "Fast 2A ⇌ I gives [I] ≈ (k1/k_−1)[A]^2, and slow I + B → P gives r ≈ k_eff[A]^2[B], with k_eff = k2k1/k_−1. If r is in M/s, what units must k_eff have?",
+      "options": [
+        "s^-1",
+        "M^-1·s^-1",
+        "M^-2·s^-1",
+        "M^2·s^-1"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Dividing M/s by [A]^2[B], whose units are M^3, gives M^-2·s^-1. A would fit overall first order. B would fit second order, counting only the slow step's two particles without the substituted A dependence. D has the concentration powers in the wrong direction. Equivalently, k2 has M^-1·s^-1, k1 has M^-1·s^-1, and k_−1 has s^-1, giving the same combined units."
+    },
+    {
+      "id": "chem-5-9-011",
+      "prompt": "Mechanism I uses fast A + B ⇌ I, then slow I + C → P. Mechanism II uses fast A + C ⇌ J, then slow J + B → P. Both valid pre-equilibrium reductions predict an event rate proportional to [A][B][C]. What does an observed matching concentration dependence establish?",
+      "options": [
+        "It proves mechanism I uniquely because first-order B dependence requires B to participate in the fast first step.",
+        "It is consistent with both predicted forms, so the concentration exponents alone do not uniquely distinguish these mechanisms.",
+        "It proves mechanism II uniquely because first-order C dependence requires C to participate in the fast first step.",
+        "It proves a simultaneous three-particle elementary step, making both two-step proposals impossible."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Different microscopic schemes can yield the same apparent exponents after eliminating fast-equilibrium intermediates. Additional evidence would be needed to distinguish them. A and C each infer which species must participate in the fast rather than slow step from a shared apparent first-order factor, which does not follow. D mistakes overall third-order concentration dependence for proof of a single three-particle event. Matching a rate-law form is a consistency check, not unique mechanistic certification or proof of identical numerical constants."
+    }
+  ]
+}

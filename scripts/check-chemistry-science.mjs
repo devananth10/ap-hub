@@ -454,4 +454,24 @@ close(.00300/(.200**2),.0750);
 close(.00300/(.200**2*.0500),1.50);
 assert.ok(balanced([[1,'NO'],[1,'Cl2']],[[1,'NOCl2']]));
 assert.ok(balanced([[1,'NOCl2'],[1,'NO']],[[2,'NOCl']]));
+// Topic 5.9: supplied pre-equilibrium algebra and free/pool concentrations.
+{
+  const K=4, a=.100, b=.0500, c=.200, k2=.300;
+  const intermediate=K*a*b;
+  close(intermediate,.0200); close(k2*intermediate*c,.00120);
+  const kForward=8, kReverse=2;
+  close(kForward*a,kReverse*(kForward/kReverse*a));
+  close(k2*(kForward/kReverse*a)*b,(k2*kForward/kReverse)*a*b);
+  const kd=.040, dimer=.250;
+  close(Math.sqrt(kd*dimer),.100);
+  close(Math.sqrt(kd*(4*dimer))/Math.sqrt(kd*dimer),2); // half-order in dimer
+  close((K*a*c/(2*b))/(K*a*c/b),.5); // inverse apparent B dependence in its valid regime
+  const pool=.300, ratio=2.00;
+  const freeA=pool/(1+ratio), freeI=ratio*freeA;
+  close(freeA,.100); close(freeI,.200); close(freeA+freeI,pool);
+  close(.500*freeI*.100,.0100);
+  assert.equal((-1)+(-1)-0,-2); // M powers: k2 k1 / k_reverse
+  assert.ok(balanced([[2,'NO']],[[1,'N2O2']]));
+  assert.ok(balanced([[1,'N2O2'],[1,'O2']],[[2,'NO2']]));
+}
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
