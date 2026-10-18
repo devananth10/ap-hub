@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 3,
+  "topicId": "topic-3-13",
+  "questions": [
+    {
+      "id": "chem-3-13-001",
+      "prompt": "At a chosen wavelength, a species has molar absorptivity 150. L·mol^-1·cm^-1. Its concentration is 0.00300 mol/L and the light path is 2.00 cm. What absorbance does A = epsilon b c predict?",
+      "options": [
+        "0.225",
+        "0.900",
+        "0.450",
+        "9.00 × 10^2"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. A = (150. L·mol^-1·cm^-1)(2.00 cm)(0.00300 mol/L) = 0.900. The units cancel, so absorbance is dimensionless. A divides by path length instead of multiplying. C omits the factor of two from the path. D treats the concentration as 3.00 rather than 0.00300 mol/L, introducing a thousandfold error. The calculation assumes the stated Beer-Lambert relation is valid at this concentration and wavelength."
+    },
+    {
+      "id": "chem-3-13-002",
+      "prompt": "A blank-corrected calibration at fixed wavelength and path length gives concentration/absorbance pairs (0 M, 0), (0.00200 M, 0.150), and (0.00400 M, 0.300). The relation is linear. What concentration corresponds to an unknown absorbance of 0.225?",
+      "options": [
+        "0.00150 M",
+        "0.00600 M",
+        "0.300 M",
+        "0.00300 M"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The slope is 0.150/0.00200 = 75.0 M^-1, consistent with the second nonzero standard. Thus c = 0.225/75.0 = 0.00300 M; it is also the midpoint between the two nonzero concentration standards. A can result from pairing 0.00200 M with the wrong standard absorbance of 0.300. B makes the opposite mismatched pairing, 0.00400 M with 0.150. C reads an absorbance entry as a concentration. Correctly paired axes and units are necessary to interpret the calibration."
+    },
+    {
+      "id": "chem-3-13-003",
+      "prompt": "A solution has absorbance 1.20 in a range where Beer-Lambert behavior is valid. A 10.0 mL portion is diluted to a final volume of 50.0 mL without reaction. What absorbance is expected at the same wavelength and path length?",
+      "options": [
+        "0.240",
+        "6.00",
+        "1.20",
+        "0.300"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Dilution lowers concentration by 10.0/50.0 = 0.200, and absorbance changes by the same factor at fixed epsilon and b. The final absorbance is 1.20(0.200) = 0.240. B reverses the dilution factor. C ignores the concentration decrease. D divides by the 40.0 mL of added solvent rather than the 50.0 mL final solution volume. The stated validity and no-reaction conditions keep molar absorptivity unchanged."
+    },
+    {
+      "id": "chem-3-13-004",
+      "prompt": "For one species at a fixed wavelength in the linear Beer-Lambert regime, concentration is doubled and path length is halved. What happens to absorbance?",
+      "options": [
+        "It doubles.",
+        "It quadruples.",
+        "It remains unchanged.",
+        "It is halved."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Absorbance depends on the product bc. The combined factor is 2 × 1/2 = 1, with epsilon unchanged. A considers only the concentration change. D considers only the path change. B incorrectly treats halving the path as another doubling. Holding one factor constant is not the only way to preserve absorbance; compensating changes can give the same product."
+    },
+    {
+      "id": "chem-3-13-005",
+      "prompt": "Why is a spectrophotometer often set to the analyte’s wavelength of maximum absorbance when constructing a concentration calibration?",
+      "options": [
+        "That wavelength always transmits the greatest fraction of light through the analyte.",
+        "The larger molar absorptivity produces a greater change in absorbance for a given concentration change at fixed path length.",
+        "That wavelength forces analyte absorbance to zero at every concentration.",
+        "The shortest available wavelength always makes concentration irrelevant."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The calibration slope is epsilon b, so a larger epsilon gives greater absorbance sensitivity to concentration changes at fixed b. A reverses maximum absorption and maximum transmission. C would eliminate sensitivity rather than improve it. D confuses choosing an appropriate absorption feature with simply maximizing photon energy and ignores the concentration term. The optimum wavelength is selected for the species and measurement, not from a universal shortest-wavelength rule."
+    },
+    {
+      "id": "chem-3-13-006",
+      "prompt": "Calibration and blank measurements use clean cuvettes. An unknown is measured in a cuvette with a fingerprint that blocks additional transmitted light before it reaches the detector. The instrument records that loss as extra absorbance. If the old calibration is used, what is the concentration bias?",
+      "options": [
+        "The estimated concentration is too high.",
+        "The estimated concentration is too low.",
+        "There is no bias because the fingerprint is not the analyte.",
+        "The direction cannot be determined unless the analyte’s molar mass is known."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The added attenuation raises apparent absorbance, and a positive-slope concentration calibration interprets that excess as more analyte. B reverses the direction. C ignores that the detector measures transmitted light rather than identifying the chemical cause of every loss. D adds an irrelevant variable; the stated optical effect and calibration direction are sufficient. The prompt specifies the extra light loss so the sign is not left dependent on an unspecified scattering geometry."
+    },
+    {
+      "id": "chem-3-13-007",
+      "prompt": "A calibration experiment uses a solvent mixture and additional non-analyte reagents that may absorb at the chosen wavelength. Which blank best controls that background?",
+      "options": [
+        "Pure water in every experiment, regardless of the actual solvent and reagents.",
+        "A concentrated analyte solution, so the instrument subtracts all analyte absorption.",
+        "An empty dry cuvette with air, regardless of the liquid matrix.",
+        "The same solvent mixture and non-analyte reagents prepared without the analyte."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. A matrix-matched blank accounts for the cuvette/solvent/reagent background while leaving the target analyte contribution for measurement. A and C omit the actual liquid matrix and possible reagent absorption. B includes the signal being determined and would remove rather than establish the appropriate reference for analyte measurement. The blank should follow the relevant preparation conditions; it is not a guarantee that every later instrumental error is corrected."
+    },
+    {
+      "id": "chem-3-13-008",
+      "prompt": "A linear plot of absorbance versus concentration has slope 2.20 × 10^2 M^-1. At that wavelength, epsilon is 1.10 × 10^2 L·mol^-1·cm^-1. What path length is consistent with the calibration?",
+      "options": [
+        "0.500 cm",
+        "220. cm",
+        "2.00 cm",
+        "1.00 cm"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The slope equals epsilon b, so b = (220. L/mol)/(110. L·mol^-1·cm^-1) = 2.00 cm. A inverts this ratio. B reports the numerical slope as a length without dividing by epsilon or respecting units. D assumes a common 1-cm cuvette even though the supplied slope requires 2 cm. A calibration slope contains information about both the absorbing species at that wavelength and the optical path."
+    },
+    {
+      "id": "chem-3-13-009",
+      "prompt": "An unknown contains the target analyte and a second dissolved species known to absorb at the same measurement wavelength. Calibration standards contain only the target. What limitation matters when interpreting one unknown absorbance?",
+      "options": [
+        "The second species can contribute to the reading, so target concentration cannot be assigned unambiguously without controlling or accounting for the interference.",
+        "The target-only calibration is automatically valid for every mixture because the target’s identity is unchanged.",
+        "Only the species with the greatest molar absorptivity can absorb; all others are invisible.",
+        "Choosing the target’s maximum-absorbance wavelength automatically makes every other species nonabsorbing."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. A measured absorbance need not come solely from the target when another absorber is present. Appropriate controls, a different suitable wavelength, separation, or additional calibrated measurements may be needed. B ignores the second contribution. C treats absorption as exclusive to one species. D assumes maximum sensitivity for the target also guarantees selectivity, which does not follow. The question asks a limitation of the measurement, not a two-component equilibrium or multivariate calculation."
+    },
+    {
+      "id": "chem-3-13-010",
+      "prompt": "A spectrophotometer has a validated linear calibration only for absorbances from 0.10 to 1.00. An unknown reads above that range. Its stable absorbing species does not react or change identity on dilution. Which procedure is most defensible?",
+      "options": [
+        "Extrapolate the calibration indefinitely and assume any off-range reading is equally reliable.",
+        "Switch to a more strongly absorbing wavelength but keep the old wavelength’s calibration unchanged.",
+        "Decrease incident brightness until the display looks in range, without validating a new measurement condition.",
+        "Apply a known dilution, measure within the validated range, and multiply the inferred diluted concentration by the dilution factor."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. A controlled dilution brings the sample into the tested range; concentration of the original sample is recovered using the known volume factor. A extends a calibration beyond evidence. B changes epsilon while keeping a calibration based on the old wavelength. C substitutes an unvalidated instrumental adjustment for a controlled sample dilution and does not establish correct absorbance behavior. The stable-species condition is supplied so the ordinary dilution correction remains appropriate."
+    },
+    {
+      "id": "chem-3-13-011",
+      "prompt": "Solutions P and Q contain different absorbing species. At one wavelength, epsilonP is twice epsilonQ. They are measured with the same path length and have equal absorbance in their linear ranges. How do their concentrations compare?",
+      "options": [
+        "cP = cQ, because equal absorbance always means equal concentration.",
+        "cP = 2cQ.",
+        "cP = cQ/2.",
+        "They cannot be compared even though the epsilon ratio and path relation are known."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Equal absorbances give epsilonP b cP = epsilonQ b cQ. Since epsilonP = 2epsilonQ, cP = cQ/2. A assumes the same molar absorptivity for different species. B reverses the compensation between absorptivity and concentration. D overlooks that the known ratio is enough even without absolute epsilon values. Absorbance can compare concentrations directly only when the relevant species, wavelength, path length, and calibration relationship are appropriately controlled."
+    }
+  ]
+}

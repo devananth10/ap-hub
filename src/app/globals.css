@@ -236,3 +236,13 @@ kbd { display:flex; gap:3px; align-items:center; margin-left:auto; padding:0 4px
   .video-empty>.orbit-art { position:absolute; right:-62px; width:220px; opacity:.35; }
   .video-picker { padding:13px; flex-direction:column; align-items:stretch; gap:5px; }
 }
+
+/* Session-only practice scoring; retain the existing theme and layout. */
+.practice-score-policy { margin:10px 25px 0; line-height:1.7; }
+.practice-navigation-actions { display:flex; flex-wrap:wrap; gap:9px; justify-content:flex-end; }
+.practice-result { padding:28px 25px; }
+.practice-result h2 { margin:12px 0; font-size:24px; }
+.practice-result p { margin:12px 0; line-height:1.8; }
+.practice-result .practice-result-score { font-size:30px; color:var(--teal); font-weight:600; }
+.practice-result .flex-actions { margin-top:23px; }
+@media(max-width:760px) { .practice-score-policy { margin:10px 20px 0; }.practice-result { padding:24px 20px; }.practice-navigation-actions { flex:1; }.topic-practice-link { white-space:nowrap; } }

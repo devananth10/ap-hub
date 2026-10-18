@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { courses } from "../src/lib/courses.ts";
 import { academicThemes, dashboardThemeAt } from "../src/lib/artwork.ts";
-import { practiceEntries, practiceHref, validPracticeScope } from "../src/lib/practice.ts";
+import { practiceEntries, practiceHref, validPracticeScope, practiceCount } from "../src/lib/practice.ts";
 import { questionBatches, validateQuestionBatches } from "../src/lib/practice-bank.ts";
 import { readFileSync } from "node:fs";
 import { lessons } from "../src/lib/lessons.ts";
@@ -27,13 +27,13 @@ test("invalid or mismatched practice scopes cannot leak unrelated questions", ()
   }
 });
 test("approved practice stays scoped and the removed demo is not counted", () => {
-  assert.equal(practiceEntries().length, 11);
+  assert.equal(practiceEntries().length, 1001);
   const scope = { courseId: "chemistry", unitNumber: 1, topicId: "electron-configuration" };
-  assert.equal(practiceEntries(scope).length, 0);
+  assert.equal(practiceEntries(scope).length, 11);
   assert.equal(practiceEntries({ courseId: "biology" }).length, 0);
   assert.equal(practiceEntries({ courseId: "chemistry", unitNumber: 1, topicId: "moles" }).length, 11);
-  assert.equal(practiceEntries({ courseId: "chemistry", unitNumber: 2 }).length, 0);
-  assert.equal(practiceEntries({ courseId: "chemistry", unitNumber: 1, topicId: "mass-spectra" }).length, 0);
+  assert.equal(practiceEntries({ courseId: "chemistry", unitNumber: 2 }).length, 77);
+  assert.equal(practiceEntries({ courseId: "chemistry", unitNumber: 1, topicId: "mass-spectra" }).length, 11);
   const question = practiceEntries({courseId:"chemistry",unitNumber:1,topicId:"moles"})[0].question;
   assert.ok(question.correctIndex >= 0 && question.correctIndex < question.options.length);
 });
@@ -80,9 +80,31 @@ test("all 91 Chemistry topics match the verified official inventory and retain s
   assert.ok(lessons["chemistry/electron-configuration"]);
 });
 
-test("pending draft questions never enter the approved question registry", () => {
-  assert.deepEqual(questionBatches.map(batch => batch.topicId), ["moles"]);
-  for (const topicId of ["mixtures", "electron-configuration", "valence", "topic-2-4"]) assert.equal(practiceEntries({courseId:"chemistry", unitNumber:Number(topicId.startsWith("topic-2") ? 2 : 1), topicId}).length, 0);
+test("bulk-authorized publication covers every Chemistry topic exactly once without leaking other subjects", () => {
+  const chemistry = courses.find(course => course.id === "chemistry");
+  assert.equal(questionBatches.length, 91);
+  assert.equal(new Set(questionBatches.map(batch => batch.topicId)).size, 91);
+  const publishedIds = new Set();
+  for (const unit of chemistry.units) {
+    assert.equal(practiceEntries({ courseId: "chemistry", unitNumber: unit.number }).length, unit.topics.length * 11);
+    for (const topic of unit.topics) {
+      const scope = { courseId: "chemistry", unitNumber: unit.number, topicId: topic.id };
+      const entries = practiceEntries(scope);
+      assert.equal(entries.length, 11);
+      assert.equal(practiceCount(scope), entries.length);
+      for (const entry of entries) {
+        assert.equal(entry.topic.id, topic.id);
+        assert.equal(entry.unit.number, unit.number);
+        assert.ok(!publishedIds.has(entry.id));
+        publishedIds.add(entry.id);
+      }
+    }
+  }
+  assert.equal(publishedIds.size, 1001);
+  for (const course of courses.filter(course => course.id !== "chemistry")) {
+    assert.equal(practiceCount({ courseId: course.id }), 0);
+    assert.equal(practiceEntries({ courseId: course.id }).length, 0);
+  }
 });
 
 test("Chemistry titles use verified College Board names while preserving storage IDs", () => {

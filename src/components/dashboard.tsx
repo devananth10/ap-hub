@@ -10,7 +10,7 @@ import { CoursePicker } from "./course-picker";
 import { CourseCardArt } from "./course-card-art";
 import { AcademicArt } from "./academic-art";
 import type { AcademicTheme } from "@/lib/artwork";
-import { practiceHref } from "@/lib/practice";
+import { practiceHref } from "@/lib/practice-scope";
 import { resourcesForTopic, type PublishedResource } from "@/lib/resource-policy";
 
 export function CourseCard({ course }: { course: Course }) {

@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 8,
+  "topicId": "topic-8-4",
+  "questions": [
+    {
+      "id": "chem-8-4-001",
+      "prompt": "At25°C,20.0 mL of0.100 M HCl is mixed with10.0 mL of0.100 M NaOH. Volumes add. What is the approximate resulting pH?",
+      "options": [
+        "7.00",
+        "1.48",
+        "1.00",
+        "12.52"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Acid excess is0.00200−0.00100=0.00100 mol in0.0300 L; [H3O+]=0.0333 M and pH1.477. A is incorrect: equal starting molarities do not mean equal amounts at different volumes. C is incorrect: that ignores neutralization and dilution. D is incorrect: that assigns the excess to hydroxide rather than hydronium."
+    },
+    {
+      "id": "chem-8-4-002",
+      "prompt": "Equal25.0 mL portions of0.0200 M fully dissolved Ba(OH)2 and0.0200 M HCl are mixed at25°C. What is pH?",
+      "options": [
+        "7.00",
+        "2.00",
+        "12.60",
+        "12.00"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The base supplies0.00100 mol OH− and acid supplies0.000500 mol H3O+. Excess OH− is0.000500 mol in0.0500 L, or0.0100 M. A is incorrect: it ignores the two hydroxides per Ba(OH)2. B is incorrect: the excess is base, not acid. C is incorrect: that uses initial hydroxide without both neutralization and final-volume accounting."
+    },
+    {
+      "id": "chem-8-4-003",
+      "prompt": "A solution initially contains0.0100 mol weak monoprotic HA. Addition of0.00400 mol NaOH causes quantitative neutralization. Ignoring small subsequent equilibration changes, what remains?",
+      "options": [
+        "0.00600 mol HA and0.00400 mol A−, a buffer pair.",
+        "0.0100 mol HA and0.00400 mol OH−",
+        "0.0140 mol A− and no HA",
+        "Only0.00600 mol A−"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Each mole OH− converts one HA into A−; HA remains in excess. B is incorrect: the acid and strong base react rather than persist independently. C is incorrect: this exceeds the initial acid amount. D is incorrect: the remaining HA and produced A− have been interchanged and one component omitted."
+    },
+    {
+      "id": "chem-8-4-004",
+      "prompt": "A weak monoprotic acid HA is mixed with exactly an equal number of moles of NaOH. The conjugate base A− is appreciably basic. Why is the final solution not neutral at25°C?",
+      "options": [
+        "Unreacted strong OH− must remain in stoichiometric excess.",
+        "All salts force pH7.",
+        "A− reacts with water to form some HA and OH−.",
+        "HA remains the predominant solute acid because NaOH is weak."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Stoichiometric neutralization leaves a weak base whose hydrolysis raises pH above7. A is incorrect: the amounts were exactly equal; hydroxide arises from the subsequent equilibrium. B is incorrect: salts of weak acids can be basic. D is incorrect: NaOH is a strong base and quantitatively neutralizes HA."
+    },
+    {
+      "id": "chem-8-4-005",
+      "prompt": "A0.100 L final mixture contains initial amounts0.00200 mol HA and0.00300 mol NaOH. Neutralization is quantitative, and25°C is maintained. What mainly determines pH?",
+      "options": [
+        "The original HA concentration alone",
+        "Equal HA/A− concentrations, so pH=pKa",
+        "A requirement that all acid-base mixtures end at pH7",
+        "The0.00100 mol excess OH− gives approximately pH12.00."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. OH− left after consuming HA has concentration0.0100 M; strong-base excess dominates the weak-base contribution. A is incorrect: HA is consumed by excess strong base. B is incorrect: no substantial unneutralized HA remains to form that buffer. C is incorrect: neutralization mixtures can contain excess strong reagent."
+    },
+    {
+      "id": "chem-8-4-006",
+      "prompt": "A weak base B initially has0.0100 mol present. It reacts quantitatively with0.00300 mol HCl. Which major species and amounts remain before small equilibrium adjustments?",
+      "options": [
+        "0.0100 mol B and0.00300 mol free H3O+",
+        "0.00700 mol B and0.00300 mol BH+, forming a buffer.",
+        "0.0130 mol BH+ only",
+        "0.00700 mol H3O+ and0.00300 mol B"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Strong acid protonates that amount of B, leaving both conjugate partners. A is incorrect: the strong acid reacts with B. C is incorrect: that exceeds the total initial base amount. D is incorrect: the acid is limiting, not in excess."
+    },
+    {
+      "id": "chem-8-4-007",
+      "prompt": "Equal moles of weak base B and strong acid are mixed. BH+ is a weak acid whose ionization is significant compared with water. What determines the solution after neutralization?",
+      "options": [
+        "Excess strong acid necessarily gives pH0",
+        "Remaining B necessarily makes the solution basic",
+        "BH+ acid equilibrium gives pH below7 at25°C.",
+        "A universal neutral-salt rule gives pH7"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The predominant product BH+ donates a small fraction of its protons to water. A is incorrect: no stoichiometric strong acid excess was specified. B is incorrect: essentially all B was protonated before weak equilibration. D is incorrect: the conjugate acid is not a spectator toward water."
+    },
+    {
+      "id": "chem-8-4-008",
+      "prompt": "A final0.100 L mixture initially combines0.00200 mol weak base B with0.00300 mol HCl at25°C. What approximate pH results when excess strong acid dominates?",
+      "options": [
+        "2.00",
+        "12.00",
+        "7.00",
+        "pH=pKa(BH+) automatically"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. After protonating B,0.00100 mol H3O+ remains in0.100 L, giving0.0100 M and pH2. B is incorrect: that treats the excess as hydroxide. C is incorrect: the strong acid is in excess. D is incorrect: there is no substantial unprotonated B to make an equimolar buffer."
+    },
+    {
+      "id": "chem-8-4-009",
+      "prompt": "For HA + B ⇌ A− + BH+, the supplied equilibrium constant is1.0×10−2. Equal initial amounts of HA and B are mixed with no products. Which approach is justified?",
+      "options": [
+        "Convert all HA and B to products before any equilibrium calculation.",
+        "Assume no product forms at all because both reactants are weak.",
+        "Use the equilibrium expression; quantitative completion cannot be assumed.",
+        "Replace the supplied K with Kw regardless of the reactants."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Unlike strong-acid/base neutralization, this weak-acid/weak-base transfer has a finite small K and retains substantial reactants. A is incorrect: the small supplied K does not justify completion. B is incorrect: a positive finite K allows some proton transfer. D is incorrect: the transfer constant is specific to this conjugate system."
+    },
+    {
+      "id": "chem-8-4-010",
+      "prompt": "A buffer contains3.00 mmol HA and7.00 mmol A−. Addition of2.00 mmol HCl is quantitatively consumed. What are the principal acid/base amounts afterward?",
+      "options": [
+        "1.00 mmol HA and9.00 mmol A−",
+        "3.00 mmol HA and7.00 mmol A−",
+        "3.00 mmol HA,7.00 mmol A−, and2.00 mmol free strong acid",
+        "5.00 mmol HA and5.00 mmol A−"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Added acid protonates2.00 mmol A−, increasing HA by2.00 and decreasing A− by2.00. A is incorrect: that applies the response to added strong base instead. B is incorrect: buffering consumes added acid by changing the conjugate amounts; they are not unchanged. C is incorrect: the conjugate base consumes the small added acid."
+    },
+    {
+      "id": "chem-8-4-011",
+      "prompt": "At25°C,10.0 mL of0.0100 M HCl is mixed with90.0 mL of0.00100 M NaOH. Volumes add. What is the approximate pH after reaction?",
+      "options": [
+        "6.50",
+        "4.00",
+        "7.00",
+        "10.00"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Acid supplies0.100 mmol and base0.0900 mmol. Excess0.0100 mmol H3O+ in100.0 mL is1.00×10−4 M. A is incorrect: averaging the initial pH values does not account for mole neutralization. C is incorrect: the reagent amounts are close but not equal. D is incorrect: this assigns the small excess to base instead of acid."
+    }
+  ]
+}

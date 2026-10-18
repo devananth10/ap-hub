@@ -7,13 +7,14 @@ The existing 17 topic IDs are preserved. The other 74 topics were not registered
 ## Question files and publication
 
 - Approved application banks: `src/content/practice/`; publication registry: `src/lib/practice-bank.ts`.
-- Unpublished working questions: `content-drafts/chemistry/pending/`; never import this directory into application components.
+- Historical source snapshots: `content-drafts/chemistry/pending/`; all ninety completed sets were copied into the live bank under the October 18 bulk authorization. Keep these source copies for provenance and never import this directory into application components or count them twice. Future unregistered drafts remain unpublished.
 - One JSON object per file: only `courseId`, `unitNumber`, `topicId`, `questions`.
 - Question fields: only `id`, `prompt`, `options`, `correctIndex`, `explanation`.
 - IDs: `chem-<unit>-<topic>-001` through `011`; four distinct options; answer index 0–3. Every new complete set has exactly eleven questions.
-- Human scientific review is pending for new drafts. Do not register them for students without explicit approval.
+- The owner explicitly authorized the existing completed 1,001-question bank for bulk publication after checks on 2026-10-18; all 91 sets are now registered. No independent human scientific review is claimed. Future new drafts still require separate explicit publication authorization. See `content-drafts/chemistry/PUBLICATION_REVIEW.md`.
 - The owner separately authorized one validated addition to the preserved ten Topic 1.1 questions and removal of the Topic 1.5 demo on 2026-10-17.
 - No general upload/import dashboard exists. Draft validation is a dry run; registration in the approved module is the publication operation.
+- The lightweight `src/config/published-practice-index.json` must match every registered course/unit/topic count. Run `pnpm test:publication` after publication changes; use the frozen audit hashes to detect unintended question edits.
 
 ## Exact Chemistry mappings
 

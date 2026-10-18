@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 5,
+  "topicId": "topic-5-7",
+  "questions": [
+    {
+      "id": "chem-5-7-001",
+      "prompt": "A proposed mechanism is (1) 2NO2 → NO3 + NO; (2) NO3 + CO → NO2 + CO2. Which species is produced in one step and consumed in another with zero net coefficient, making it an intermediate in this mechanism?",
+      "options": [
+        "CO",
+        "NO",
+        "NO3",
+        "CO2"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. NO3 is formed in step 1 and consumed in step 2, canceling from the net equation NO2 + CO → NO + CO2. A is a net reactant. B and D are net products. NO2 also appears on both sides of the summed steps, but one NO2 remains consumed overall, so mere appearance on both sides would not make it a catalyst. Component roles require signed coefficient bookkeeping as well as step order."
+    },
+    {
+      "id": "chem-5-7-002",
+      "prompt": "A proposed pathway is (1) NO + O3 → NO2 + O2; (2) NO2 + O → NO + O2. Which statement correctly identifies the roles of NO and NO2 in one completed cycle?",
+      "options": [
+        "NO is consumed then regenerated as a catalyst; NO2 is formed then consumed as an intermediate.",
+        "NO and NO2 are both net products because each appears on a product side.",
+        "NO2 is the catalyst and NO is the intermediate because both cancel from the sum.",
+        "Neither can have a mechanistic role because species that cancel never exist during reaction."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. NO is supplied and used in the first step, then returned by the second; NO2 is generated within the pathway and then consumed. The net equation is O3 + O → 2O2. B ignores consumption in the other step. C reverses the sequence-based roles. D confuses absence from the net equation with absence during the process. Regeneration distinguishes a catalyst cycle from simple net consumption."
+    },
+    {
+      "id": "chem-5-7-003",
+      "prompt": "In a symbolic mechanism, step 1 is A + B → I and step 2 is I + C → P. Each letter labels a substance, and I cancels when the steps occur once each. Which overall equation follows?",
+      "options": [
+        "A + B + I + C → P",
+        "A + B → I + P",
+        "A + C → P",
+        "A + B + C → P"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Adding the two steps puts one I on each side, which cancels, leaving A, B and C consumed and P formed. A retains I as an extra reactant after also using its production. B leaves I as a product and deletes C. C loses B from the net inventory. Mechanistic summation cancels identical species with matching amounts, not arbitrary reactants that seem less important."
+    },
+    {
+      "id": "chem-5-7-004",
+      "prompt": "A target overall reaction is 2A + B → P. A proposed complete mechanism contains only A + B → I followed by I → P, once each. Why does it fail a necessary stoichiometric check?",
+      "options": [
+        "Any mechanism containing an intermediate is invalid.",
+        "Its summed equation is A + B → P, so it does not account for the second A in the target equation.",
+        "A two-step mechanism can never represent an overall reaction with two reactant species.",
+        "The intermediate must appear in the final overall equation rather than cancel."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Canceling I leaves only one A consumed, so these stated steps do not sum to the specified target reaction. A falsely excludes intermediates, which are common mechanistic components. C invents a relationship between the number of steps and number of reactant species. D reverses the defining cancellation of an intermediate from the completed net process. A mechanism matching the overall equation would still need kinetic and other evidence; matching is necessary, not sufficient."
+    },
+    {
+      "id": "chem-5-7-005",
+      "prompt": "A proposed peroxide pathway forms IO− in its first step and consumes it in its second. Existing measurements show a transient IO− signal during reaction, while an alternative proposed pathway contains no IO−. What is the most justified interpretation of that supplied evidence?",
+      "options": [
+        "The signal proves every detail of the IO− pathway uniquely, regardless of other evidence.",
+        "An intermediate cannot be detected because it is absent from the net equation.",
+        "The transient signal supports considering the IO−-containing pathway, but does not alone prove that pathway uniquely or that every detected IO− is on the productive route.",
+        "The signal requires IO− to be a final stoichiometric product in both pathways."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Detecting a proposed intermediate can support one mechanism relative to another, while possible side processes and alternative pathways still need consideration. A overstates the uniqueness of a single observation. B confuses net cancellation with no transient presence. D ignores that an intermediate can form and later disappear. The question interprets supplied results; it does not ask students to design or perform an intermediate-detection experiment."
+    },
+    {
+      "id": "chem-5-7-006",
+      "prompt": "Path I represents 2NO + O2 → 2NO2 as one proposed elementary step. Path II uses NO + O2 → NO3 followed by NO3 + NO → 2NO2. Both sum to the same overall equation. What follows from that agreement alone?",
+      "options": [
+        "Both mechanisms must occur with equal frequency.",
+        "The one-step mechanism is proven because it uses fewer written steps.",
+        "The two-step mechanism is proven because any intermediate makes a mechanism correct.",
+        "Both pass this stoichiometric comparison, but additional evidence is needed to distinguish their microscopic pathways."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Summing to the overall equation is a required consistency check, but more than one proposed mechanism can satisfy it. A infers equal kinetic participation without data. B treats simplicity as proof. C treats the presence of an intermediate as proof. The first path's simultaneous three-particle event may warrant scrutiny, but rarity alone does not uniquely establish the alternative from this comparison."
+    },
+    {
+      "id": "chem-5-7-007",
+      "prompt": "A symbolic catalytic cycle is A + K → I followed by I + B → P + K. Which assignment is consistent with the sequence?",
+      "options": [
+        "I is the catalyst and K is the net product.",
+        "K is the catalyst and I is the intermediate; the net conversion is A + B → P.",
+        "K is consumed stoichiometrically, so the net conversion must include K on the left only.",
+        "Both K and I must be omitted from every elementary step because they are absent from the net equation."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. K participates initially and is regenerated, while I is formed and then consumed. A reverses those roles and overlooks regeneration. C cancels K on only one side. D confuses a net equation with the mechanism that explains the conversion. The catalyst can be temporarily incorporated into an intermediate; regeneration does not require it to remain chemically unchanged at every instant."
+    },
+    {
+      "id": "chem-5-7-008",
+      "prompt": "For A → I followed by I → P, a student says that canceling I from the overall equation means its concentration must be exactly zero at all times. Which response is correct?",
+      "options": [
+        "Cancellation states zero net production after a completed sequence, not zero transient concentration while formation and consumption occur.",
+        "The student is correct because an intermediate has no atoms.",
+        "The student is correct because any detectable species must be a final product.",
+        "Cancellation changes I into a catalyst even though it is formed before being consumed."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The intermediate can exist during the reaction even though one complete sequence forms and consumes equal amounts. B incorrectly denies matter in the intermediate. C overlooks temporary species. D changes a formed-then-consumed intermediate into a consumed-then-regenerated catalyst without support. The net equation does not specify the time-dependent intermediate concentration or require it to be large."
+    },
+    {
+      "id": "chem-5-7-009",
+      "prompt": "A mechanism uses A + B → I followed by I + B → P, once each. Which overall equation preserves every net reactant amount?",
+      "options": [
+        "A + B → P",
+        "2A + B → P",
+        "A + 2B + I → P",
+        "A + 2B → P"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. B is consumed once in each step, so two B remain on the reactant side after I cancels. A loses one B contribution. B puts the repeated coefficient on the wrong substance. C keeps I as an extra net reactant even though it is formed internally. Species appearing in multiple steps must have their signed coefficients added before cancellation."
+    },
+    {
+      "id": "chem-5-7-010",
+      "prompt": "Step 1 of a symbolic pathway is A → 2I, and step 2 is I + B → P. What relative numbers of these steps eliminate I from a completed net sequence without changing either step's internal stoichiometry?",
+      "options": [
+        "Two occurrences of step 1 and one of step 2.",
+        "One occurrence of each, canceling both I despite their unequal coefficients.",
+        "One occurrence of step 1 and two of step 2, giving A + 2B → 2P.",
+        "One occurrence of step 1, deleting its coefficient two on I before adding the steps."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. One first step produces two I, which two second steps consume along with two B, producing two P. A produces four I but consumes one. B leaves one I net because equal symbols with unequal amounts cannot fully cancel. D changes a supplied elementary step rather than scaling the number of times it occurs. Mechanistic summation may require different step multiplicities."
+    },
+    {
+      "id": "chem-5-7-011",
+      "prompt": "An aqueous mixture contains an inert spectator ion S that does not participate in either supplied step A + B → I and I → P. A student calls S a catalyst only because it is unchanged and absent from A + B → P. Which evaluation is correct?",
+      "options": [
+        "The claim follows because every unchanged species is a catalyst.",
+        "The stated mechanism gives S no participating catalytic role; absence from the net equation alone does not distinguish a catalyst from an inert spectator.",
+        "S must instead be the intermediate because both spectators and intermediates are absent from the net equation.",
+        "S must be a net product because it is still present after reaction."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. A mechanistic catalyst participates and is regenerated, whereas S is explicitly stated not to participate. A ignores that distinction. C labels an initially present inert spectator as a formed-then-consumed intermediate. D confuses remaining in solution with net formation. Real changes of medium can affect rates, but the supplied model specifically excludes S participation; its unchanged presence alone is not evidence of a catalytic cycle."
+    }
+  ]
+}

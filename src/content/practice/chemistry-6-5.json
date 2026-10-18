@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 6,
+  "topicId": "topic-6-5",
+  "questions": [
+    {
+      "id": "chem-6-5-001",
+      "prompt": "At its melting temperature and constant pressure, 2.00 mol ice melts completely without warming. With ΔH_fus = +6.01 kJ/mol, what heat enters the sample?",
+      "options": [
+        "+3.01 kJ",
+        "+12.0 kJ",
+        "−12.0 kJ",
+        "+6.01 kJ"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct: q = nΔH_fus = 2.00(6.01) = +12.0 kJ. A divides by amount instead of multiplying. C has the freezing sign rather than melting's uptake sign. D ignores the two-mole sample. Temperature can stay constant while energy enters during a phase change."
+    },
+    {
+      "id": "chem-6-5-002",
+      "prompt": "A 36.0 g water-vapor sample condenses at its condensation temperature without further cooling. Use molar mass 18.0 g/mol and ΔH_vap = +40.7 kJ/mol at those conditions. What is q for the condensing sample?",
+      "options": [
+        "+81.4 kJ",
+        "−40.7 kJ",
+        "−1.47 × 10^3 kJ",
+        "−81.4 kJ"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The sample contains 36.0/18.0 = 2.00 mol, and condensation has ΔH = −40.7 kJ/mol, so q = −81.4 kJ. A reverses the transfer sign. B treats the sample as one mole. C multiplies the gram number directly by a per-mole enthalpy, omitting conversion to moles."
+    },
+    {
+      "id": "chem-6-5-003",
+      "prompt": "A pure liquid at its boiling temperature absorbs 20.0 kJ solely for vaporization. If ΔH_vap = 25.0 kJ/mol, how much liquid vaporizes?",
+      "options": [
+        "0.800 mol",
+        "1.25 mol",
+        "5.00 × 10^2 mol",
+        "0 mol"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. n = q/ΔH_vap = 20.0/25.0 = 0.800 mol. B reverses the ratio. C multiplies quantities whose units would not give moles. D assumes unchanged temperature means no energy uptake or phase conversion, contrary to the stated boiling process."
+    },
+    {
+      "id": "chem-6-5-004",
+      "prompt": "During partial melting of a pure substance at constant pressure, a heater supplies energy while solid and liquid remain together at the melting temperature. Why is q = mcΔT alone inappropriate for that interval?",
+      "options": [
+        "The supplied heat must vanish because ΔT is zero.",
+        "The substance's specific heat must become negative.",
+        "Energy changes the phase amount at nearly constant temperature, so a phase-change enthalpy term is needed.",
+        "Melting must change the substance into different chemical elements."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A latent-energy contribution converts solid to liquid without a temperature rise during the specified equilibrium phase change. A mistakes zero sensible-temperature change for zero heat. B invents a negative heat capacity. D confuses a physical phase transition with a nuclear change. The melting amount is related to q by nΔH_fus."
+    },
+    {
+      "id": "chem-6-5-005",
+      "prompt": "At constant pressure, 10.0 g ice at 0.0 °C is melted and the resulting liquid warmed to 20.0 °C. Use water molar mass 18.0 g/mol, ΔH_fus = 6.01 kJ/mol, and c_liquid = 4.184 J·g^-1·K^-1. Neglect losses and other heat capacities. What total heat is required?",
+      "options": [
+        "0.837 kJ",
+        "3.34 kJ",
+        "60.9 kJ",
+        "4.18 kJ"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Melting requires (10.0/18.0)(6.01) = 3.339 kJ; warming requires (10.0)(4.184)(20.0)/1000 = 0.8368 kJ. Their sum is 4.18 kJ. A omits melting. B omits liquid warming. C uses grams directly with the molar fusion enthalpy, then adds warming. Separate stages need their own appropriate energy terms."
+    },
+    {
+      "id": "chem-6-5-006",
+      "prompt": "A 1.00 mol pure solid at its melting temperature receives 3.00 kJ, all used for melting at constant pressure. Its ΔH_fus is 6.00 kJ/mol. Which final description is consistent before any additional heating?",
+      "options": [
+        "0.500 mol liquid and 0.500 mol solid at the melting temperature.",
+        "1.00 mol liquid above the melting temperature.",
+        "0.500 mol liquid with the other 0.500 mol destroyed.",
+        "1.00 mol solid with no phase change because temperature is constant."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The energy melts 3.00/6.00 = 0.500 mol, leaving 0.500 mol solid in coexistence. B requires more energy to finish melting and then warm. C loses matter. D ignores partial phase conversion at constant temperature. A phase-change calculation can determine extent without a temperature increase."
+    },
+    {
+      "id": "chem-6-5-007",
+      "prompt": "For a substance with ΔH_fus = +8.00 kJ/mol, 0.250 mol liquid freezes at the phase-change temperature. Which heat and direction describe the sample?",
+      "options": [
+        "+2.00 kJ, absorbed",
+        "−32.0 kJ, released",
+        "−2.00 kJ, released",
+        "+32.0 kJ, absorbed"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Freezing reverses fusion, so q = (0.250)(−8.00) = −2.00 kJ. A uses the melting sign. B divides the molar enthalpy by amount rather than multiplying. D makes both errors. Complementary transitions between the same states have equal energy magnitudes and opposite directions."
+    },
+    {
+      "id": "chem-6-5-008",
+      "prompt": "A heater delivers a constant 100. J/s to a 0.750 mol sample during a 300. s boiling plateau. All supplied energy vaporizes the sample completely; losses and vessel heating are negligible. What molar vaporization enthalpy is inferred?",
+      "options": [
+        "30.0 kJ/mol",
+        "40.0 kJ/mol",
+        "22.5 kJ/mol",
+        "0.444 kJ/mol"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Heat is power times time, 100.(300.) = 30000 J = 30.0 kJ; dividing by 0.750 mol gives 40.0 kJ/mol. A reports batch heat as a molar value. C multiplies by amount instead of dividing. D divides power by time and then by amount, which also fails the required units. The constant-power and no-loss assumptions are essential."
+    },
+    {
+      "id": "chem-6-5-009",
+      "prompt": "Liquids A and B each have ΔH_vap = 30.0 kJ/mol at their respective boiling conditions. Their molar masses are 20.0 and 40.0 g/mol. Equal 10.0 g portions vaporize completely without warming. How does their required heat compare?",
+      "options": [
+        "The heats are equal because the molar enthalpies match.",
+        "B requires twice as much because its molar mass is larger.",
+        "A requires twice as much: 15.0 kJ versus 7.50 kJ.",
+        "A requires four times as much because the molar-mass ratio must be squared."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A has 10.0/20.0 = 0.500 mol and B has 0.250 mol, requiring 15.0 and 7.50 kJ. A confuses equal mass with equal moles. B reverses the mole-count effect. D adds an unsupported square. Equal molar enthalpies do not imply equal energy per gram when molar masses differ."
+    },
+    {
+      "id": "chem-6-5-010",
+      "prompt": "At 1 atm, 1.00 mol water vapor at 100.0 °C condenses and the resulting 18.0 g liquid cools to 25.0 °C. Use ΔH_vap = 40.7 kJ/mol and c_liquid = 4.184 J·g^-1·K^-1. What is the total q for the water sample, neglecting losses to any unaccounted part?",
+      "options": [
+        "−40.7 kJ",
+        "−5.65 kJ",
+        "+46.3 kJ",
+        "−46.3 kJ"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Condensation releases 40.7 kJ and cooling contributes (18.0)(4.184)(25.0−100.0)/1000 = −5.6484 kJ. Total q = −46.3 kJ. A omits liquid cooling. B omits condensation. C has the correct magnitude but treats both releases as uptake. The two stages have distinct phase and temperature-change terms."
+    },
+    {
+      "id": "chem-6-5-011",
+      "prompt": "A 0.500 mol sample melts completely and then freezes completely at the same phase-change temperature and pressure. ΔH_fus = +6.00 kJ/mol. No other changes occur. Which account distinguishes the two heat exchanges from their net sum?",
+      "options": [
+        "No heat enters or leaves in either stage because the final state matches the initial state.",
+        "Melting absorbs 3.00 kJ and freezing releases 3.00 kJ, so the net heat is zero.",
+        "Both stages absorb 3.00 kJ, giving net +6.00 kJ.",
+        "The net heat is −6.00 kJ because two phase changes occur."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Opposite transitions for the same amount have heat +3.00 and −3.00 kJ, which cancel in the complete cycle. A mistakes zero net exchange for no exchange in either stage. C assigns the melting sign to freezing. D adds magnitudes and assigns a release sign without following the directions."
+    }
+  ]
+}

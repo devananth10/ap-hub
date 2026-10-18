@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 6,
+  "topicId": "topic-6-9",
+  "questions": [
+    {
+      "id": "chem-6-9-001",
+      "prompt": "At matched constant-pressure conditions, A → B has ΔH = +30.0 kJ and B → C has ΔH = −50.0 kJ for their stated amounts. What is ΔH for the summed transformation A → C?",
+      "options": [
+        "+80.0 kJ",
+        "−80.0 kJ",
+        "+20.0 kJ",
+        "−20.0 kJ"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. B cancels, and the enthalpy changes add: +30.0 − 50.0 = −20.0 kJ. A and B add magnitudes without retaining each sign. C reverses the net sign. Hess's law combines the signed changes of equations that actually sum to the target."
+    },
+    {
+      "id": "chem-6-9-002",
+      "prompt": "The equation 2H2(g) + O2(g) → 2H2O(l) has ΔH = −572 kJ. What ΔH accompanies the reversed equation 2H2O(l) → 2H2(g) + O2(g) at the same reference conditions?",
+      "options": [
+        "−572 kJ",
+        "+572 kJ",
+        "+286 kJ",
+        "0 kJ"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Reversing the complete equation reverses the enthalpy sign while preserving magnitude, so ΔH becomes +572 kJ. A fails to reverse the sign. C also halves the amount despite unchanged coefficients. D assumes reversal eliminates the energy difference instead of exchanging its direction."
+    },
+    {
+      "id": "chem-6-9-003",
+      "prompt": "N2(g) + 3H2(g) → 2NH3(g) has ΔH = −92.0 kJ. What value corresponds to (1/2)N2(g) + (3/2)H2(g) → NH3(g)?",
+      "options": [
+        "−46.0 kJ",
+        "−184 kJ",
+        "+46.0 kJ",
+        "−92.0 kJ"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Every coefficient is halved, so ΔH is also halved to −46.0 kJ. B scales the wrong way. C incorrectly reverses the sign even though the direction is unchanged. D leaves enthalpy unscaled. Fractional coefficients can specify an enthalpy for a smaller reaction amount."
+    },
+    {
+      "id": "chem-6-9-004",
+      "prompt": "Given C(graphite) + O2(g) → CO2(g), ΔH = −393.5 kJ, and CO(g) + (1/2)O2(g) → CO2(g), ΔH = −283.0 kJ, find ΔH for C(graphite) + (1/2)O2(g) → CO(g).",
+      "options": [
+        "−676.5 kJ",
+        "+110.5 kJ",
+        "−110.5 kJ",
+        "+676.5 kJ"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Reverse the CO combustion equation, changing its enthalpy to +283.0 kJ, then add it to carbon combustion. CO2 cancels and the oxygen coefficient reduces to one-half. ΔH = −393.5 + 283.0 = −110.5 kJ. A adds the unreversed values, which do not produce the target. B reverses the target sign. D adds magnitudes with a positive sign."
+    },
+    {
+      "id": "chem-6-9-005",
+      "prompt": "At matched reference conditions, NO(g) + (1/2)O2(g) → NO2(g) has ΔH = −57.1 kJ, and 2NO2(g) → N2O4(g) has ΔH = −57.2 kJ. What is ΔH for 2NO(g) + O2(g) → N2O4(g)?",
+      "options": [
+        "−114.3 kJ",
+        "+171.4 kJ",
+        "−0.100 kJ",
+        "−171.4 kJ"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Double the first equation to supply two NO2, then add the second: 2(−57.1) − 57.2 = −171.4 kJ. A fails to double the first enthalpy. B reverses the target direction. C subtracts the nearly equal one-copy enthalpies instead of matching the required coefficients. Intermediate NO2 must cancel in the correct amount."
+    },
+    {
+      "id": "chem-6-9-006",
+      "prompt": "A supplied sequence has A(s) → A(g), ΔH = +25.0 kJ, then A(g) + B(g) → P(g), ΔH = −40.0 kJ. What is ΔH for A(s) + B(g) → P(g)?",
+      "options": [
+        "−65.0 kJ",
+        "−15.0 kJ",
+        "+15.0 kJ",
+        "−40.0 kJ"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The matching gaseous A cancels, so ΔH = +25.0 − 40.0 = −15.0 kJ. A treats the required vaporization as energy release. C reverses the net sign. D ignores the initial solid-to-gas step. The initial reactant's physical state is part of the target equation and cannot be silently changed."
+    },
+    {
+      "id": "chem-6-9-007",
+      "prompt": "A → C has ΔH = −12.0 kJ. A proposed Hess sequence is A → B with unknown ΔH1, then B → C with ΔH2 = −35.0 kJ. What ΔH1 makes the sequence consistent?",
+      "options": [
+        "−23.0 kJ",
+        "−47.0 kJ",
+        "+23.0 kJ",
+        "+47.0 kJ"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. ΔH1 + (−35.0) = −12.0, so ΔH1 = +23.0 kJ. A reverses the required sign. B adds the two negative given changes instead of solving the equation. D adds magnitudes 35.0 and 12.0. A net exothermic sequence can contain an endothermic individual step."
+    },
+    {
+      "id": "chem-6-9-008",
+      "prompt": "Two manipulations of exact thermochemical input equations claim to produce the identical fully balanced target with identical phases and reference conditions, but one gives −100 kJ and the other −80 kJ. Which response is appropriate?",
+      "options": [
+        "Recheck the input consistency, equation signs, coefficient scaling and cancellation; the two exact claims cannot both describe that same target correctly.",
+        "Accept both because every different algebraic route must give a different target enthalpy.",
+        "Choose the more negative answer because larger heat release always makes an equation more balanced.",
+        "Average them without checking because Hess's law applies only approximately even for exact inputs."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Consistently adding exact equations and their heat transfers for the same specified conversion must yield a consistent net energy transfer. B denies that energy-accounting requirement. C substitutes a numerical preference for stoichiometric and sign checks. D masks a discrepancy that the prompt explicitly excludes as rounding or measurement uncertainty. The task is algebraic consistency, not identification of a faster physical pathway."
+    },
+    {
+      "id": "chem-6-9-009",
+      "prompt": "When adding thermochemical equations, a student cancels H2O(l) on one side with the same amount of H2O(g) on the other, leaving their enthalpies unchanged. What is the key issue?",
+      "options": [
+        "Matching formulas are sufficient, so phases never matter in cancellation.",
+        "Deleting phase labels makes the cancellation energetically correct.",
+        "Liquid and gas are different specified states; an appropriate phase-change equation and enthalpy are needed to connect them rather than canceling them as identical.",
+        "Water can never be canceled from any pair of thermochemical equations."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Exact cancellation requires matching species and physical states in the required amounts. A ignores phase enthalpy. B removes information instead of accounting for the conversion. D is too broad: equal water amounts in the same state can cancel normally. A phase-change step can repair the accounting while contributing its own heat."
+    },
+    {
+      "id": "chem-6-9-010",
+      "prompt": "For the symbolic reaction A + 2B → C, ΔH = −45.0 kJ. What ΔH belongs to 2C → 2A + 4B?",
+      "options": [
+        "−90.0 kJ",
+        "+45.0 kJ",
+        "−22.5 kJ",
+        "+90.0 kJ"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Reverse the original equation to make ΔH +45.0 kJ, then double every coefficient and the enthalpy to +90.0 kJ. A doubles without reversing the sign. B reverses without scaling. C halves instead of doubles and retains the forward sign. Both operations must be applied consistently to the entire equation."
+    },
+    {
+      "id": "chem-6-9-011",
+      "prompt": "Three supplied symbolic equations are (1) 2X → Y, ΔH = +20.0 kJ; (2) Y + Z → P, ΔH = −50.0 kJ; (3) Z → W, ΔH = +10.0 kJ. Which combination and result give the target 2X + Z → P?",
+      "options": [
+        "Add all three; ΔH = −20.0 kJ.",
+        "Add equations 1 and 2 only; ΔH = −30.0 kJ.",
+        "Reverse equation 1 and add equation 2; ΔH = −70.0 kJ.",
+        "Reverse the sum of equations 1 and 2; ΔH = +30.0 kJ."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Equations 1 and 2 cancel Y and leave exactly 2X + Z → P, with heat +20.0 − 50.0 = −30.0 kJ. A introduces W and an extra consumption of Z, changing the target. C fails to cancel Y in the needed direction. D represents the reversed target. Supplied equations should be selected to match the target, not automatically all added."
+    }
+  ]
+}

@@ -26,14 +26,14 @@ const cases = [
   ["/courses/us-history", "1491"],
   ["/courses/chemistry/electron-configuration", "Atomic Structure and Electron Configuration"],
   ["/courses/chemistry/moles", "11 MCQs are ready for this topic"],
-  ["/courses/chemistry/mass-spectra", "This topic is on the roadmap"],
+  ["/courses/chemistry/mass-spectra", "11 MCQs are ready for this topic"],
   ["/notes", "My notes"],
   ["/resources", "Saved resources"],
   ["/practice", "Practice with purpose."],
-  ["/practice?course=chemistry", "11 MCQ questions"],
-  ["/practice?course=chemistry&unit=1", "11 MCQ questions"],
+  ["/practice?course=chemistry", "1001 MCQ questions"],
+  ["/practice?course=chemistry&unit=1", "88 MCQ questions"],
   ["/practice?course=chemistry&unit=1&topic=moles", "11 MCQ questions"],
-  ["/practice?course=chemistry&unit=1&topic=electron-configuration", "Practice is coming to this scope."],
+  ["/practice?course=chemistry&unit=1&topic=electron-configuration", "11 MCQ questions"],
   ["/practice?course=biology", "Practice is coming to this scope."],
 ];
 for (const [path, expected] of cases) {

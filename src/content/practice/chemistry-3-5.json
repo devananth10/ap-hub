@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 3,
+  "topicId": "topic-3-5",
+  "questions": [
+    {
+      "id": "chem-3-5-001",
+      "prompt": "Separate ideal-gas samples of monatomic He and Ne are at the same temperature. Which comparison of their particles is correct?",
+      "options": [
+        "Their average speeds and average translational kinetic energies are both equal.",
+        "Their average translational kinetic energies are equal, but He particles have a greater characteristic speed.",
+        "Ne particles have greater average translational kinetic energy because each particle has greater mass.",
+        "He particles have greater average translational kinetic energy because they move faster."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Average translational kinetic energy depends on absolute temperature, so it is equal for the two samples. A lighter particle needs a greater characteristic speed to have the same kinetic energy; He is lighter than Ne. A incorrectly makes their speed distributions identical. C considers mass without the compensating speed difference. D considers speed without the lower mass. The comparison concerns average translational kinetic energy and a distribution of speeds, not a claim that every particle in either sample has one speed."
+    },
+    {
+      "id": "chem-3-5-002",
+      "prompt": "The same ideal gas is heated from 200.0 K to 800.0 K. Its average translational kinetic energy is proportional to T and equals (1/2)m(v_rms)^2, where v_rms is the root-mean-square speed. How does v_rms change?",
+      "options": [
+        "It becomes four times as large.",
+        "It becomes half as large.",
+        "It stays unchanged.",
+        "It becomes twice as large."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The temperature and average translational kinetic energy increase by a factor of four. At fixed particle mass, v_rms is proportional to the square root of T, so its ratio is sqrt(800/200) = 2. A treats speed as directly proportional to temperature. B reverses the change. C ignores the greater average kinetic energy. The square-root relationship applies to the characteristic speed, not to an identical multiplication of every individual particle’s speed during a collision process."
+    },
+    {
+      "id": "chem-3-5-003",
+      "prompt": "Ideal monatomic gases X and Y are at the same temperature. A Y particle has four times the mass of an X particle. What is v_rms,X / v_rms,Y?",
+      "options": [
+        "2",
+        "4",
+        "1/2",
+        "1"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Equal temperature gives equal average translational kinetic energy: mX(vX)^2 = mY(vY)^2. Thus vX/vY = sqrt(mY/mX) = sqrt(4) = 2. B omits the square root. C reverses the mass ratio. D assumes equal temperature means equal speed despite the different masses. The particle-mass ratio is sufficient; no absolute masses or gas amounts are needed."
+    },
+    {
+      "id": "chem-3-5-004",
+      "prompt": "Two normalized Maxwell–Boltzmann speed-distribution curves describe the same gas at different temperatures. Each curve has unit total area. Which description matches the higher-temperature curve?",
+      "options": [
+        "It is narrower, taller, and shifted toward lower speeds.",
+        "It has a greater total area because heating creates more particles.",
+        "It is broader with a lower peak and more weight at higher speeds, while retaining the same total area.",
+        "It collapses to one sharp line because every particle reaches the same speed."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A higher temperature broadens the range of speeds and increases characteristic speeds. With the same normalized area, the peak becomes lower as the distribution spreads. A describes the opposite trend. B confuses changing energy with creating particles and ignores normalization. D replaces a distribution with one identical speed, contrary to KMT. Peak height is a probability-density feature; it is not the total number of particles or their average energy."
+    },
+    {
+      "id": "chem-3-5-005",
+      "prompt": "Two ideal monatomic gases with different particle masses are at the same temperature. Their distributions are plotted first against translational kinetic energy and then against speed, with each curve normalized. Which statement is correct?",
+      "options": [
+        "Both the kinetic-energy and speed distributions must be identical.",
+        "The kinetic-energy distributions coincide in the classical model, but the heavier gas has a speed distribution shifted toward lower characteristic speeds.",
+        "The heavier gas has a kinetic-energy distribution shifted to greater energies because each particle has greater mass.",
+        "The speed distributions coincide, but the kinetic-energy distributions differ."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. At fixed temperature, the classical translational-energy distribution depends on T rather than particle mass. The speed corresponding to a given kinetic energy does depend on mass, so heavier particles have lower characteristic speeds. A ignores the distinction between the two horizontal axes. C changes the average energy despite equal temperatures and overlooks the speed compensation. D reverses which distribution is mass-dependent. The statement is about ideal classical translational motion, not internal molecular rotation or vibration."
+    },
+    {
+      "id": "chem-3-5-006",
+      "prompt": "In the kinetic molecular model, what microscopic process produces the pressure of an ideal gas on its container wall?",
+      "options": [
+        "Particles collide with the wall and transfer momentum to it.",
+        "Particles attract one another so strongly that they pull the wall inward.",
+        "Every particle rests against the bottom wall, and only its weight creates pressure on all walls.",
+        "Pressure requires chemical bonds to form between every gas particle and the wall."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Collisions change particle momentum; repeated momentum transfers to the wall produce an average force per area. B invokes strong interparticle attractions that the ideal model neglects and does not describe wall pressure. C replaces continuous random motion with particles resting at the bottom and cannot explain pressure on all walls. D requires chemical reactions that are unnecessary for pressure. Even a nonreactive ideal gas exerts pressure through collisions."
+    },
+    {
+      "id": "chem-3-5-007",
+      "prompt": "Two structureless ideal-gas particles undergo an elastic collision, with negligible external forces during the collision. Which statement is required by this model?",
+      "options": [
+        "Each particle keeps exactly its original speed and direction.",
+        "The pair loses some kinetic energy on every collision, so temperature continually falls without heat transfer.",
+        "Each particle’s individual momentum remains unchanged even when its direction changes.",
+        "The total momentum and total kinetic energy of the pair are conserved, although the individual velocities can change."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. An elastic collision conserves the pair’s total kinetic energy, and negligible external impulse gives conservation of total momentum. Individual particles can exchange energy and momentum. A incorrectly applies conservation to every individual velocity. B describes inelastic energy loss rather than the stated elastic idealization. C ignores that momentum is a vector and changes with direction. These statements concern a two-particle collision; a single particle need not have the sample’s average kinetic energy before or after it."
+    },
+    {
+      "id": "chem-3-5-008",
+      "prompt": "Normalized translational kinetic-energy distributions describe the same ideal gas at T1 and T2, with T2 > T1. For a fixed positive energy threshold E0, which comparison is appropriate?",
+      "options": [
+        "The fraction above E0 is smaller at T2 because the distribution peak is lower.",
+        "Every particle at T2 must lie above E0, whatever threshold is chosen.",
+        "The fraction above E0 is greater at T2; it is represented by the area under the curve to the right of E0.",
+        "The fraction above E0 is the height of the curve exactly at E0, independent of area."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Higher temperature places more probability at greater translational energies, increasing the fraction above a fixed positive threshold. That fraction is an area over a range, not a point height. A confuses peak height with tail area. B ignores that even a hot sample retains a distribution including lower energies. D confuses probability density at one energy with the fraction in an interval. No chemical reaction or activation-energy model is needed to interpret this energy-distribution comparison."
+    },
+    {
+      "id": "chem-3-5-009",
+      "prompt": "A sealed ideal-gas sample is cooled and allowed to reach a lower nonzero equilibrium temperature. Which statement must be true in the kinetic molecular model?",
+      "options": [
+        "The average translational kinetic energy decreases, but the particles still have a distribution of energies.",
+        "Every particle has exactly the same final speed.",
+        "All particles stop moving because cooling removes the random character of their motion.",
+        "The number of gas particles doubles to compensate for their lower temperature."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Lower absolute temperature means lower average translational kinetic energy, while the equilibrium gas still has a spread of particle energies and speeds. B replaces a distribution with a single speed. C would require zero motion rather than simply a lower nonzero temperature and ignores continuing collisions. D creates particles in a sealed nonreacting sample. A statement about an average does not require every particular particle to have the same energy change."
+    },
+    {
+      "id": "chem-3-5-010",
+      "prompt": "An ideal gas is heated in a sealed rigid container. Which collision-based account best explains the higher pressure after equilibration?",
+      "options": [
+        "Heating creates additional particles, which is the only cause of more wall collisions.",
+        "Only collision frequency increases; momentum transfer in a typical wall collision stays unchanged.",
+        "Heating creates a persistent one-direction bulk flow, and only that flow produces the higher pressure.",
+        "Particles move faster on average, causing more frequent wall collisions and greater typical momentum transfer per collision."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. At fixed number and volume, higher temperature raises characteristic speeds. Particles reach walls more often and transfer more momentum in a typical collision, producing higher pressure. A violates the fixed particle number. B captures part of the effect but incorrectly holds typical momentum transfer constant as speeds increase. C replaces random equilibrium thermal motion with an unsupported persistent bulk flow; directed flow is not required for pressure on all walls. The microscopic account is consistent with P proportional to T for the stated fixed variables."
+    },
+    {
+      "id": "chem-3-5-011",
+      "prompt": "A gas has no bulk flow, so the average velocity vector of its particles is approximately zero. It nevertheless has a positive temperature and exerts pressure. Which explanation resolves this apparent conflict?",
+      "options": [
+        "Zero average velocity vector requires every particle to be at rest, so the temperature measurement is impossible.",
+        "Pressure depends only on the average signed velocity, so equal motion in opposite directions cancels the pressure.",
+        "Opposite velocity directions can cancel in a vector average while the average of speed squared, and thus translational kinetic energy, remains positive.",
+        "Positive temperature requires the gas to move as a whole in one preferred direction."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Random motion in opposite directions can give nearly zero net velocity vector even though particles have positive speeds. Kinetic energy involves v squared, which does not cancel when direction reverses. Wall momentum transfers also produce pressure without net bulk flow. A confuses a zero vector average with all individual velocities being zero. B applies directional cancellation to the wrong quantity. D confuses thermal motion with a directed flow. Distinguishing average velocity from mean-square speed is essential when applying KE = (1/2)mv^2 to a gas distribution."
+    }
+  ]
+}

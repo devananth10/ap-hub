@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 3,
+  "topicId": "topic-3-3",
+  "questions": [
+    {
+      "id": "chem-3-3-001",
+      "prompt": "Three particulate models show the same substance. I: particles vibrate near fixed positions in a repeating array. II: particles stay close but continually change neighbors. III: particles are widely separated and travel throughout the container. Which labels match I, II, and III?",
+      "options": [
+        "Liquid, solid, gas.",
+        "Solid, gas, liquid.",
+        "Gas, liquid, solid.",
+        "Crystalline solid, liquid, gas."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. A crystalline solid has long-range order with motion near relatively fixed sites. A liquid has close neighbors but permits continual rearrangement and translational motion. A gas has large average separations and fills available space. A confuses fixed-site vibration with liquid motion. B swaps the close, mobile liquid with the widely separated gas. C assigns gas behavior to a fixed ordered array. All three models can contain the same constituent particles; phase does not determine a new chemical identity."
+    },
+    {
+      "id": "chem-3-3-002",
+      "prompt": "A material has a definite shape. Its particles show no regular long-range repeating arrangement, but they do not undergo liquid-like overall translation relative to neighboring particles on the observation timescale. Which model is most consistent with these observations?",
+      "options": [
+        "A gas, because absence of long-range order means the particles must be widely separated.",
+        "An amorphous solid, because solid behavior does not require a repeating crystal lattice.",
+        "A liquid, because every disordered arrangement must flow.",
+        "A crystalline solid, because every solid must have long-range periodic order."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. An amorphous solid lacks the regular long-range arrangement of a crystal but can retain shape and restricted particle motion. A confuses disorder with the large separations of a gas. C treats disorder alone as proof of liquid-like motion, ignoring the observed mechanical and dynamic behavior. D imposes crystalline order on all solids. The stated observation timescale matters for the behavior of amorphous materials; lack of a perfect lattice does not automatically make a material a liquid."
+    },
+    {
+      "id": "chem-3-3-003",
+      "prompt": "For a particular molecular substance, the solid and liquid molar volumes are similar, whereas the gas molar volume under ordinary low-pressure conditions is much larger. Which model explains this comparison?",
+      "options": [
+        "Molecules contain many fewer atoms in the gas than in the condensed phases.",
+        "Each molecule becomes thousands of times larger when it enters the gas phase.",
+        "Particles remain close in the solid and liquid, but their average separations are much larger in the gas.",
+        "The solid contains no empty space of any kind, while the liquid contains only empty space."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Condensed phases both have close particle contacts, so their volumes per mole are commonly comparable. A low-pressure gas contains large spaces between particles. A changes molecular composition and conflicts with a phase comparison of the same substance. B assigns the bulk volume change to individual molecular expansion rather than spacing. D is an extreme and inaccurate description of both condensed phases. This comparison does not require every solid to be denser than its liquid; open crystal structures can produce exceptions."
+    },
+    {
+      "id": "chem-3-3-004",
+      "prompt": "A liquid is transferred from a narrow cylinder to a wider beaker without losing material or changing temperature. It takes the beaker’s shape while keeping approximately the same volume. Which particle-level description explains both observations?",
+      "options": [
+        "Particles can change neighbors and positions while remaining in close contact with other liquid particles.",
+        "Particles remain at fixed lattice sites, so only the container changes shape around them.",
+        "Each individual molecule must reshape itself to match the contour of the beaker.",
+        "Particles become widely separated and independently fill the entire room."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Liquid particles can rearrange and flow, allowing the sample to conform to a container, while close packing makes its volume relatively insensitive to container shape. B gives a rigid crystalline model that cannot explain ordinary liquid flow. C assigns the container-scale shape change to reshaping every molecule rather than to rearranging the molecules. D describes unrestricted gas expansion rather than a confined dense liquid. The approximate volume statement allows normal small effects without treating the particles as immobile or individually reshaped."
+    },
+    {
+      "id": "chem-3-3-005",
+      "prompt": "A fixed number of intact gas molecules expands into an initially empty adjoining chamber. The final sample remains a gas at the original temperature. Which change should appear in a correct final particulate model?",
+      "options": [
+        "More molecules, each the same distance apart as before.",
+        "The same molecules permanently enlarged to fill the new space.",
+        "Half as many molecules, because expansion dilutes and therefore destroys particles.",
+        "The same number and type of molecules distributed over the larger accessible volume."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Expansion changes the accessible volume and average spacing, not the number or chemical identity of the intact molecules. A creates matter. B confuses the size of a molecule with the volume occupied by the sample. C confuses reduced number density with loss of molecules. No ideal-gas calculation is needed: conservation and the gas model are sufficient. The temperature condition prevents an unneeded comparison of thermal motion from becoming the central task."
+    },
+    {
+      "id": "chem-3-3-006",
+      "prompt": "Which correction is needed in a model that depicts a crystalline solid above absolute zero with every particle completely motionless?",
+      "options": [
+        "Remove all attractive interactions, because any motion requires a gas.",
+        "Allow every particle to stream freely through the container while keeping the solid label.",
+        "Show particle vibrations near lattice positions without requiring liquid-like overall translation.",
+        "Show particles continuously growing in size at fixed centers instead of vibrating."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Solid particles have thermal motion, commonly modeled as vibrations near relatively fixed sites. A confuses restricted motion with absence of interactions and would not maintain a solid. B introduces gas-like long-range translation. D confuses molecular size with thermal motion; particles need not grow continuously to move around their lattice sites. A solid’s definite shape does not imply zero particle motion; it reflects the constrained relative positions of its constituents."
+    },
+    {
+      "id": "chem-3-3-007",
+      "prompt": "At the same initial temperature, gentle compression changes the volume of a gas much more than that of a liquid. Which particle model best accounts for this difference?",
+      "options": [
+        "Gas molecules are much softer and shrink, whereas liquid molecules are completely rigid.",
+        "A gas has much more space between particles that can be reduced; a liquid already has close particle contacts.",
+        "Every liquid molecule is covalently bonded to all its neighbors, preventing a volume change.",
+        "Compression destroys gas molecules while leaving liquid molecules intact."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Large gas-phase separations permit substantial reduction of space between particles. A condensed liquid has much less available separation to remove under gentle compression. A assigns the effect mainly to individual molecules shrinking rather than to spacing; molecular sizes are not the main distinction. C invents a covalent network between every pair of liquid neighbors; close contacts and limited free space do not require that network. D describes chemical destruction rather than ordinary compression. The comparison is qualitative and does not assert that a liquid has exactly zero compressibility."
+    },
+    {
+      "id": "chem-3-3-008",
+      "prompt": "A closed sample of liquid N2 is represented by ten N–N pairs. It vaporizes completely without decomposition or loss. Which gas-phase model conserves the particles and their chemical identity?",
+      "options": [
+        "Twenty separated single N atoms.",
+        "Five separated N–N pairs.",
+        "Ten separated N–N–N groups.",
+        "Ten separated N–N pairs."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Vaporization preserves the ten diatomic molecules while increasing their separations. A preserves the total atom count but breaks each molecule, which would be dissociation rather than the stated physical change. B loses half the molecules and atoms. C creates extra nitrogen atoms and changes the molecular identity. A correct phase-change representation must conserve both composition and particle count, not just show more empty space."
+    },
+    {
+      "id": "chem-3-3-009",
+      "prompt": "A single static image shows closely packed, disordered particles. A student labels it a liquid solely because it lacks a repeating lattice. What additional evidence would best distinguish a liquid from an amorphous solid?",
+      "options": [
+        "Time-resolved observations of whether particles continually change neighbors and undergo overall translation on the relevant timescale.",
+        "A count of the particles in that one image, without volume or motion information.",
+        "The fact that the particles are not shown in a perfect repeating lattice, repeated as a second identical image.",
+        "The number of protons in the particles alone, without any information about motion or bulk behavior."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Both a liquid and an amorphous solid can have disordered close-packed snapshots, so motion over time helps distinguish their behavior. B supplies a particle count without information about density, motion, or mechanical behavior, so it does not resolve the two proposed phases. C adds no new evidence; repeating the same static arrangement does not reveal rearrangement. D can identify composition but not the state under the given conditions. The comparison requires a relevant timescale because some amorphous materials flow on very long timescales."
+    },
+    {
+      "id": "chem-3-3-010",
+      "prompt": "A sealed container holds a pure molecular liquid and its vapor above it, with no decomposition. Which particulate representation is appropriate?",
+      "options": [
+        "Diatomic molecules in the liquid and unbonded atoms in the vapor, regardless of the substance’s molecular identity.",
+        "The same close-packed molecular arrangement in both phases, because the chemical formula is unchanged.",
+        "A dense group of molecules in the liquid and a much more dilute population of the same molecular species in the space above it.",
+        "A perfectly fixed crystalline lattice throughout both the liquid and the vapor."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Coexisting liquid and vapor contain the same chemical species at very different number densities and with different particle arrangements. A imposes dissociation on a phase change and even assumes an unsupported diatomic identity. B confuses unchanged molecular identity with unchanged arrangement and number density; a vapor is much more dilute under the stated ordinary model. D removes the mobility and spacing characteristic of both fluid phases. The model represents phase coexistence; it does not require interpreting a phase diagram or claiming that molecules stop moving at equilibrium."
+    },
+    {
+      "id": "chem-3-3-011",
+      "prompt": "A molecular liquid freezes into an open crystal structure, and its density decreases. No material is lost and the molecules remain intact. Which explanation is consistent with the observations?",
+      "options": [
+        "Each molecule must lose mass when it freezes.",
+        "The same molecules occupy a more open arrangement, increasing the volume per molecule without changing molecular mass.",
+        "The solid must contain fewer molecules because solids are always denser than liquids.",
+        "The crystal particles must be closer together than in the liquid, so the observed decrease in density is impossible for any solid."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. A more open solid arrangement can increase bulk volume for the same mass, decreasing density. A changes molecular mass even though the molecules remain intact. C both violates the no-loss condition and imposes a false universal density rule. D imposes the same universal close-packing rule despite the explicitly open crystal structure and measured density decrease. Solid and liquid volumes are often similar, but similarity does not mean the solid must always be the denser phase. Packing and interparticle structure matter."
+    }
+  ]
+}

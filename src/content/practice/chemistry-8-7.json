@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 8,
+  "topicId": "topic-8-7",
+  "questions": [
+    {
+      "id": "chem-8-7-001",
+      "prompt": "A weak acid HA has pKa5.00. In a solution maintained at pH3.00, which form predominates?",
+      "options": [
+        "HA, because pH is below pKa.",
+        "A−, because low pH removes protons",
+        "Equal HA and A−",
+        "Neither form can exist below pKa"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The hydronium level favors the protonated form; [A−]/[HA]=10^(3−5)=0.010. B is incorrect: low pH favors protonation, not deprotonation. C is incorrect: equality occurs near pH=pKa. D is incorrect: pKa sets an equilibrium ratio, not an existence boundary."
+    },
+    {
+      "id": "chem-8-7-002",
+      "prompt": "For HA/A− with pKa6.00, which form predominates at pH8.00?",
+      "options": [
+        "HA, with approximately100 times the concentration of A−",
+        "Equal amounts",
+        "A−, with approximately100 times the concentration of HA.",
+        "Only HA can exist because it was the original acid"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Two pH units above pKa give a base/acid ratio10². A is incorrect: that reverses the high-pH protonation trend. B is incorrect: the pH differs from pKa. D is incorrect: equilibrium protonation depends on the current pH."
+    },
+    {
+      "id": "chem-8-7-003",
+      "prompt": "For a dilute monoprotic HA/A− system, what follows when pH=pKa?",
+      "options": [
+        "Both concentrations must be1.0 M",
+        "The solution must be neutral at25°C",
+        "All HA is fully deprotonated",
+        "The concentrations of HA and A− are approximately equal."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The mass-action relationship gives [A−]/[HA]=1 under the concentration model. A is incorrect: a unit ratio does not set absolute concentrations. B is incorrect: pKa may differ substantially from7. C is incorrect: equal partners means substantial protonated acid remains."
+    },
+    {
+      "id": "chem-8-7-004",
+      "prompt": "The conjugate acid BH+ of a weak base has pKa9.00. Which form predominates in a solution maintained at pH7.00?",
+      "options": [
+        "B, because pH7 always removes all bound protons",
+        "BH+, the protonated form.",
+        "Both in exactly equal concentration",
+        "B2−, regardless of molecular structure"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. pH below the conjugate-acid pKa favors BH+ over B by approximately100:1. A is incorrect: neutrality does not imply full deprotonation of every solute. C is incorrect: equality would occur near pH9. D is incorrect: this conjugate pair differs by one proton, not the invented charge state."
+    },
+    {
+      "id": "chem-8-7-005",
+      "prompt": "An indicator HIn is yellow and In− is blue, with pKa7.00. What color should predominate at pH9.00 if these are the only colored forms?",
+      "options": [
+        "Yellow, because lower proton concentration favors HIn",
+        "The color must be exactly halfway between yellow and blue",
+        "Blue, because In− predominates.",
+        "Color cannot depend on pH"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The base/acid ratio is approximately100, so the deprotonated blue form dominates. A is incorrect: lower hydronium favors deprotonation. B is incorrect: equal form concentrations occur near pH7. D is incorrect: the stated protonation-dependent colors make it pH-sensitive."
+    },
+    {
+      "id": "chem-8-7-006",
+      "prompt": "A titration has a steep pH change around equivalence at pH8.7. Which available indicator pKa is the best match?",
+      "options": [
+        "8.5",
+        "4.0",
+        "6.0",
+        "12.0"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. An indicator whose transition is near the equivalence pH is most likely to change within the steep region. B is incorrect: its transition is much too acidic. C is incorrect: its transition is farther below equivalence than8.5. D is incorrect: its transition is much too basic."
+    },
+    {
+      "id": "chem-8-7-007",
+      "prompt": "A weak-base/strong-acid titration has a sharp equivalence region near pH5.0. Which indicator is preferable among pKa3.0,5.1,8.5,and11.0?",
+      "options": [
+        "The indicator with pKa11.0 because the analyte was initially basic",
+        "The indicator with pKa5.1.",
+        "The indicator with pKa8.5 because every endpoint is basic",
+        "The indicator with pKa3.0 because the titrant is a strong acid"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Its protonation transition lies closest to the supplied equivalence region. A is incorrect: indicator choice concerns the equivalence region, not initial pH. C is incorrect: weak-base equivalence can be acidic. D is incorrect: titrant identity alone does not set the appropriate endpoint transition."
+    },
+    {
+      "id": "chem-8-7-008",
+      "prompt": "At pH6.00, a solute with pKa4.00 has which approximate distribution between A− and HA?",
+      "options": [
+        "About2 A− for every1 HA",
+        "About1 A− for every100 HA",
+        "Exactly no HA molecules",
+        "About100 A− for every1 HA."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The difference pH−pKa=2 gives [A−]/[HA]=10². A is incorrect: pH differences convert to powers of ten, not direct ratios. B is incorrect: that inverts the ratio. C is incorrect: a finite pH/pKa difference permits a nonzero minor form."
+    },
+    {
+      "id": "chem-8-7-009",
+      "prompt": "A diprotic acid has well-separated pKa values3.0 and8.0. Which acid-derived form generally predominates at pH5.5?",
+      "options": [
+        "H2A",
+        "HA−",
+        "A2−",
+        "All three must have equal concentrations"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The pH is above the first pKa but below the second, favoring loss of one proton while retaining the other. A is incorrect: pH well above pKa1 disfavors the fully protonated form. C is incorrect: pH well below pKa2 disfavors extensive second deprotonation. D is incorrect: equal populations do not follow from an intermediate pH."
+    },
+    {
+      "id": "chem-8-7-010",
+      "prompt": "At25°C, weak base B has pKb4.00. Its solution is maintained at pH8.00. Which comparison determines whether B or BH+ predominates?",
+      "options": [
+        "Compare pH8 directly with pKb4; B must predominate",
+        "BH+ and B are equal because pH+pKb=12",
+        "Use pKa(BH+)=10.00; BH+ predominates because pH<10.00.",
+        "Only temperature determines the ratio, so pH is irrelevant"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The conjugate relation gives pKa=14−pKb. Compare pH with that acid pKa, not directly with pKb. A is incorrect: pH must be compared to the conjugate-acid pKa in this form of the rule. B is incorrect: that sum is not the conjugate equality condition. D is incorrect: the imposed hydronium concentration controls protonation balance."
+    },
+    {
+      "id": "chem-8-7-011",
+      "prompt": "A weak-acid/strong-base titration has equivalence near pH9. An indicator changes well before the steep region, near pH4, and the student stops at that early change. What is the likely effect on calculated acid amount?",
+      "options": [
+        "It is underestimated because too little base has been delivered.",
+        "It is overestimated because the indicator pKa is lower",
+        "It is exact because any visible change defines equivalence",
+        "The acid Ka becomes larger during the measurement"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. An early indicator endpoint is short of stoichiometric equivalence, so the titrant moles used to infer acid moles are too small. B is incorrect: the early endpoint uses fewer, not more, titrant moles. C is incorrect: an indicator endpoint can differ from the stoichiometric equivalence point. D is incorrect: indicator selection does not redefine the analyte Ka."
+    }
+  ]
+}

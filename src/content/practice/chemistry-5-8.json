@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 5,
+  "topicId": "topic-5-8",
+  "questions": [
+    {
+      "id": "chem-5-8-001",
+      "prompt": "A proposed mechanism is 2NO2 → NO3 + NO (slow), followed by NO3 + CO → NO2 + CO2 (fast). Under the slow-first-step approximation with rapid intermediate consumption, which concentration dependence is predicted for the overall reaction rate?",
+      "options": [
+        "k[NO2][CO]",
+        "k[NO2]^2",
+        "k[NO3][CO]",
+        "k[NO2]^2[CO]"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The first elementary event involves two NO2 molecules and limits throughput, giving squared NO2 dependence. A uses overall net coefficients instead of slow-step participants. C uses the fast step and an intermediate rather than the controlling first step. D adds a CO factor because CO appears later, although its fast consumption step is not limiting under the stated conditions. CO still participates in the net reaction even when it is absent from this approximate law."
+    },
+    {
+      "id": "chem-5-8-002",
+      "prompt": "For A + B → I (slow), I + C → P (fast), assume the fast step remains much faster and consumes I promptly. At fixed [A], [B], temperature, and medium, increasing [C] has no measurable effect on the overall rate. Which interpretation is consistent with this model?",
+      "options": [
+        "C cannot be a net reactant because its measured order is zero in this regime.",
+        "The slow step must change to involve one C whenever [C] is increased.",
+        "The unchanged rate proves that no molecular collisions involving C occur.",
+        "The controlling first-step rate is k[A][B]; C participates later without controlling throughput under the stated conditions."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The slow supply of I sets the approximate throughput while C reacts in a sufficiently rapid following step. A confuses absence from the approximate rate law with absence from net stoichiometry. B invents a changed mechanism. C denies the later step rather than distinguishing its speed from the limiting event. The conclusion is conditional: if C became too scarce for rapid I consumption, the same simple approximation might fail."
+    },
+    {
+      "id": "chem-5-8-003",
+      "prompt": "A model has 2A → I as a slow elementary first step and I + B → P as a much faster second step. Under its usual slow-step approximation, which set of relative rates should occur when a baseline [A],[B] experiment has rate r0?",
+      "options": [
+        "Double A only: 2r0; double B only: 2r0.",
+        "Double A only: r0; double B only: 4r0.",
+        "Double A only: 4r0; double B only: r0.",
+        "Double A only: 4r0; double B only: 2r0."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The first-step law is k[A]^2, so doubling A gives fourfold throughput, while B does not enter this law when the second step remains fast. A uses first powers from overall reactants. B assigns dependence to the wrong step. D adds a B factor from its appearance in the net equation. All comparisons assume unchanged temperature and a continuing separation of step timescales."
+    },
+    {
+      "id": "chem-5-8-004",
+      "prompt": "In the proposed mechanism R → I (slow), I + S → P (fast), what approximate rate law follows when S is sufficient for rapid consumption of I?",
+      "options": [
+        "rate = k[R]",
+        "rate = k[R][S]",
+        "rate = k[I][S]",
+        "rate = k[P]"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The rate-limiting first step is unimolecular in R. B inserts the later reactant S into the controlling law. C gives the fast-step expression without using the slow supply that limits its throughput. D gives product dependence without a reverse or inhibition step. The approximation does not require S to be chemically absent; it requires its subsequent reaction not to become the bottleneck."
+    },
+    {
+      "id": "chem-5-8-005",
+      "prompt": "A proposed slow-first-step mechanism begins with 2A → I, followed by fast I + B → P. Carefully controlled data instead give a rate proportional to [A][B] over the tested range. Which evaluation is best?",
+      "options": [
+        "The mechanism is proven because both reactant names occur somewhere in it.",
+        "The data must be ignored because balanced mechanisms always predict correct rates.",
+        "The proposed slow-first-step approximation predicts [A]^2, so it does not match the observed independent concentration dependences and needs revision or a different regime explanation.",
+        "Replace the fast-step coefficient of B with two; this automatically repairs the slow-step rate law."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The stated controlling elementary step predicts second order in A and zero order in B, unlike the measured first order in each. A checks names instead of exponents. B treats stoichiometric consistency as kinetic proof. D changes a later step but leaves the assumed slow-first-step dependence unchanged. A disagreement calls for reassessing the mechanism or approximation, not silently changing measured data."
+    },
+    {
+      "id": "chem-5-8-006",
+      "prompt": "A catalytic mechanism is A + K → I (slow), I + B → P + K (fast). Under the slow-first-step approximation, which dependence is predicted on the free catalyst K and reactant A?",
+      "options": [
+        "No K dependence is possible because catalysts cancel from overall equations.",
+        "rate = k[A][K], because free K participates in the controlling elementary step.",
+        "rate = k[I][B], with no need to account for the slow first step.",
+        "rate = k[A][B][K], because all initial names must appear in every rate law."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Catalyst regeneration removes K from net stoichiometry, but does not remove its participation from the slow elementary event. A wrongly equates net cancellation with no kinetic effect. C selects the following fast step alone. D inserts B despite its absence from the rate-limiting step. The law is written for free K; a relationship between free and total catalyst would require additional information not supplied here."
+    },
+    {
+      "id": "chem-5-8-007",
+      "prompt": "For A + B → I (slow) followed by I → 2P (fast), let the first-step event rate be r1 = k[A][B]. After a short initial transient, I has negligible net accumulation and the fast step remains fast. What is the approximate formation rate of P using that same k?",
+      "options": [
+        "k[A][B]",
+        "(1/2)k[A][B]",
+        "k[A]^2[B]^2",
+        "2k[A][B]"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Each slow event supplies one I, which promptly yields two P, so P forms at twice the first-step event rate after the stated transient. A omits the product multiplicity. B reverses it. C mistakes a constant stoichiometric factor for extra concentration exponents. Keeping the same k matters; a separately defined product-rate constant could absorb the factor of two. The approximation is not asserted at the exact first instant before any I exists."
+    },
+    {
+      "id": "chem-5-8-008",
+      "prompt": "A + B → I is initially much slower than I + C → P. Which change most directly threatens an approximation in which the first step alone controls product throughput?",
+      "options": [
+        "Reducing C so much that the I-consuming step is no longer fast compared with I formation.",
+        "Increasing C while other conditions and the elementary rate laws remain unchanged.",
+        "Reducing A while B, C, temperature, and medium remain unchanged.",
+        "Increasing the speed of the I-consuming step without changing the rate of the first step."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The approximation requires rapid downstream consumption; severe C depletion can cause I accumulation and make the later step important to observed throughput. B makes the elementary I + C consumption faster at the same I concentration. C slows the elementary A + B supply of I relative to unchanged consumption conditions. D explicitly strengthens rather than threatens rapid downstream processing. A nominal 'fast' label is conditional on concentrations and conditions, not an unconditional guarantee at every possible composition."
+    },
+    {
+      "id": "chem-5-8-009",
+      "prompt": "Two proposed slow-first-step models have the same net reaction A + B + C → P. Model I begins A + B → I (slow), then I + C → P (fast). Model II begins B + C → J (slow), then J + A → P (fast). Which controlled comparison best distinguishes their predicted concentration dependences while later steps remain fast?",
+      "options": [
+        "Compare only final product amounts after both reactions finish.",
+        "Double A, B, and C together; both models must then give different factors.",
+        "Change temperature and A together, then attribute the rate change only to A.",
+        "Vary A while keeping B, C, temperature, and medium fixed; I predicts A dependence, while II does not in its stated regime."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Model I predicts k1[A][B]; model II predicts k2[B][C]. An isolated A change therefore distinguishes their approximate orders in A. A checks final stoichiometry rather than rate. B gives the same fourfold concentration factor for both bimolecular first steps and does not distinguish their forms by itself. C confounds k's temperature dependence with concentration dependence. The comparison tests predictions, not unique proof of either mechanism."
+    },
+    {
+      "id": "chem-5-8-010",
+      "prompt": "A proposed mechanism begins NO + Cl2 → NOCl2 (slow), then NOCl2 + NO → 2NOCl (fast). Define r as the first-step event rate under the slow-step approximation. At [NO] = 0.200 M and [Cl2] = 0.0500 M, r = 0.00300 M/s. What is the first-step k?",
+      "options": [
+        "0.0750 M^-1·s^-1",
+        "1.50 M^-2·s^-1",
+        "0.300 M^-1·s^-1",
+        "0.600 M^-1·s^-1"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The slow elementary law is r = k[NO][Cl2], so k = 0.00300/(0.200 × 0.0500) = 0.300 M^-1·s^-1. A incorrectly uses [NO]^2 without the chlorine factor. B uses overall 2NO stoichiometry to square NO as well as including Cl2. D converts the specified event rate into twice as large a product-formation rate but then incorrectly uses that different rate with the original event-rate constant. The prompt defines r to remove that ambiguity."
+    },
+    {
+      "id": "chem-5-8-011",
+      "prompt": "A slow-first-step model predicts that intermediate I is supplied slowly and consumed rapidly. Existing measurements do not resolve an appreciable I concentration. Which interpretation is justified?",
+      "options": [
+        "The model is automatically disproved because every intermediate must accumulate to a high concentration.",
+        "Low unresolved I concentration is compatible with rapid consumption, but does not uniquely establish the mechanism.",
+        "The model is proven uniquely because an undetected species can never be part of an alternative mechanism.",
+        "The overall reaction cannot occur until I becomes the most abundant substance."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. A slowly supplied, quickly consumed intermediate can remain at low concentration, possibly below the resolution of the stated measurements. A and D invent an accumulation requirement contrary to the model. C overstates what nondetection can prove and ignores alternative explanations. This is interpretation of supplied observations, not a request to collect intermediate-detection data or a derivation of a steady-state formula."
+    }
+  ]
+}

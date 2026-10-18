@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 2,
+  "topicId": "topic-2-5",
+  "questions": [
+    {
+      "id": "chem-2-5-001",
+      "prompt": "How many valence electrons must be included in a complete Lewis diagram of NH4+? Nitrogen contributes five valence electrons and hydrogen contributes one per atom.",
+      "options": [
+        "5, because only the central atom contributes electrons.",
+        "9, because the ion has the same electron count as the neutral collection of atoms.",
+        "10, because a positive charge adds an electron to the neutral-atom total.",
+        "8, because one electron is subtracted from the neutral-atom total of nine."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The neutral-atom total is 5 + 4(1) = 9 valence electrons. A +1 charge means one fewer electron, giving 8. A omits the four hydrogen contributions and the charge correction. B includes the atoms but ignores the positive charge. C adds an electron instead of subtracting it, giving 10; addition would be appropriate for a −1 charge, not a +1 charge. In NH4+, the eight electrons can form four N–H single bonds with no lone pair on nitrogen."
+    },
+    {
+      "id": "chem-2-5-002",
+      "prompt": "For HCN with the connectivity H–C–N, which Lewis diagram uses the ten available valence electrons and gives each second-period atom an octet and hydrogen a duet?",
+      "options": [
+        "H–C≡N, with one lone pair on N and none on C.",
+        "H–C–N, with three lone pairs on N and none on C.",
+        "H=C=N, with one lone pair on N and none on C.",
+        "H–C=N, with two lone pairs on N and none on C."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The H–C single bond uses two electrons, the C≡N triple bond uses six, and the N lone pair uses two, totaling ten. C has four shared pairs, N has three shared pairs plus one lone pair, and H has one shared pair. B uses ten electrons but leaves C with only four electrons around it. C gives H a double bond and four surrounding electrons, violating its duet. D uses ten electrons but gives C only six surrounding electrons. Correct bookkeeping alone is insufficient unless the local valence requirements also fit."
+    },
+    {
+      "id": "chem-2-5-003",
+      "prompt": "The connectivity in H2O2 is H–O–O–H. After the three single bonds are drawn, how should the remaining valence electrons be placed in a Lewis diagram that gives both oxygen atoms octets?",
+      "options": [
+        "One lone pair on each oxygen atom.",
+        "Three lone pairs on each oxygen atom.",
+        "Two lone pairs on each oxygen atom.",
+        "All remaining electrons as lone pairs on the hydrogen atoms."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. H2O2 has 2(1) + 2(6) = 14 valence electrons. Three single bonds use six, leaving eight electrons, or four lone pairs. Each O already shares two bonding pairs and needs two lone pairs to complete its octet. A places only four of the remaining eight electrons and leaves each O with six surrounding electrons. B requires twelve lone-pair electrons and gives each O ten surrounding electrons. D puts extra electrons on H atoms that already satisfy their duet; it also leaves oxygen octets incomplete."
+    },
+    {
+      "id": "chem-2-5-004",
+      "prompt": "Which description is a valid Lewis diagram for neutral CO2, using sixteen valence electrons and satisfying the octet rule for carbon and oxygen?",
+      "options": [
+        "O–C–O, with three lone pairs on each O and none on C.",
+        "O=C=O, with two lone pairs on each O and none on C.",
+        "O=C=O, with three lone pairs on each O and none on C.",
+        "O=C–O, with two lone pairs on each O and none on C."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Two double bonds use eight electrons, and the four oxygen lone pairs use eight more. Carbon and each oxygen have octets. A also uses sixteen electrons, but its carbon has only four electrons around it. C uses twenty electrons and gives each oxygen ten surrounding electrons. D uses fourteen electrons rather than sixteen and leaves carbon and the single-bonded oxygen with incomplete octets. The valid diagram must satisfy both the total electron count and the local octets."
+    },
+    {
+      "id": "chem-2-5-005",
+      "prompt": "A student draws four C–F single bonds in CF4 and adds one lone pair to each fluorine. What change is required to complete the usual Lewis diagram?",
+      "options": [
+        "Add one lone pair to carbon and leave each fluorine unchanged.",
+        "Convert every C–F single bond to a double bond.",
+        "Remove the lone pairs from fluorine because a bonded atom cannot also have lone pairs.",
+        "Add two more lone pairs to each fluorine and leave carbon with no lone pairs."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. CF4 has 4 + 4(7) = 32 valence electrons. Four single bonds use eight, leaving twenty-four electrons: three lone pairs on each F. Carbon already has an octet from its four bonds. A would put ten electrons around carbon and would not complete the fluorine octets. B gives second-period carbon sixteen surrounding electrons and is not a valid octet diagram. C wrongly removes nonbonding electrons needed by fluorine. A fluorine atom can have a bonding pair and three lone pairs in this molecule."
+    },
+    {
+      "id": "chem-2-5-006",
+      "prompt": "A Lewis diagram of PH3 contains three P–H single bonds. Phosphorus contributes five valence electrons and each hydrogen contributes one. What must be added to finish the diagram using all available electrons?",
+      "options": [
+        "Three lone pairs on phosphorus.",
+        "One lone pair on phosphorus.",
+        "One additional P–H bond to a fourth hydrogen not in the formula.",
+        "One lone pair on each hydrogen, with none on phosphorus."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. PH3 has 5 + 3(1) = 8 valence electrons. The three single bonds use six, leaving one pair on P. P then has an octet and each H a duet. A requires six nonbonding electrons instead of the two available. C changes the molecular formula and uses electrons from a nonexistent fourth H. D requires six additional electrons and gives each H more than its permitted duet. Lone pairs must be included even when a simplified line drawing omits them."
+    },
+    {
+      "id": "chem-2-5-007",
+      "prompt": "Which description correctly represents a complete Lewis diagram of the hydronium ion, H3O+?",
+      "options": [
+        "Three O–H single bonds and one lone pair on O, with brackets and an overall + charge.",
+        "Three O–H single bonds and two lone pairs on O, with an overall + charge.",
+        "Two O–H single bonds and two lone pairs on O, with the third H omitted.",
+        "Three O–H single bonds and no lone pair on O, with an overall + charge."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The valence-electron total is 6 + 3(1) − 1 = 8. Three single bonds use six electrons and the O lone pair uses two. O has an octet and each H a duet; the brackets indicate the total ionic charge. B uses ten electrons and gives O ten surrounding electrons. C depicts only two hydrogens, so it does not represent H3O+. D uses only six of the eight electrons and leaves O with six surrounding electrons. The positive charge does not mean that lone pairs must be absent."
+    },
+    {
+      "id": "chem-2-5-008",
+      "prompt": "In C2H4, each carbon is attached to two hydrogen atoms and to the other carbon. All C–H bonds are single. What C–C bond order and carbon lone-pair arrangement produce the usual neutral Lewis diagram with twelve valence electrons?",
+      "options": [
+        "A C–C single bond and no carbon lone pairs.",
+        "A C–C single bond and one lone pair on each carbon.",
+        "A C=C double bond and no carbon lone pairs.",
+        "A C≡C triple bond and no carbon lone pairs."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Four C–H bonds use eight electrons and the C=C double bond uses four, totaling twelve. Each carbon has two C–H bonding pairs and two C=C bonding pairs, completing an octet. A uses only ten electrons and leaves each carbon with six surrounding electrons. B uses fourteen electrons, exceeding the total. D uses fourteen electrons and gives each carbon ten surrounding electrons, which second-period carbon cannot accommodate in a valid Lewis octet model. No geometry or hybridization calculation is needed."
+    },
+    {
+      "id": "chem-2-5-009",
+      "prompt": "Two proposed neutral Lewis connectivities for C2H6O are CH3–CH2–O–H and CH3–O–CH3. In both, all bonds are single and oxygen has two lone pairs. Which statement is correct?",
+      "options": [
+        "Only CH3–CH2–O–H is valid because oxygen can bond only to hydrogen.",
+        "Both are valid Lewis structures with the same molecular formula but different atom connectivity.",
+        "Only CH3–O–CH3 is valid because a molecule cannot contain an O–H bond.",
+        "Neither is valid because a molecular formula uniquely determines the order in which atoms are connected."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Both arrangements contain two carbons, six hydrogens, and one oxygen. Each carbon has four bonds; oxygen has two bonds and two lone pairs; each H has one bond. Both use twenty valence electrons. They are different constitutional structures, not resonance contributors, because their atom connectivity differs. A and C impose false restrictions on oxygen bonding; O can bond to C or H in these structures. D incorrectly assumes a formula uniquely determines connectivity. Additional chemical evidence is needed to identify which compound a particular sample contains."
+    },
+    {
+      "id": "chem-2-5-010",
+      "prompt": "For N2H4, each nitrogen is bonded to two hydrogens and to the other nitrogen. Which arrangement uses fourteen valence electrons and gives both nitrogen atoms octets?",
+      "options": [
+        "One N–N single bond, four N–H single bonds, and one lone pair on each N.",
+        "One N–N single bond, four N–H single bonds, and no lone pairs.",
+        "One N=N double bond, four N–H single bonds, and one lone pair on each N.",
+        "One N≡N triple bond, four N–H single bonds, and no lone pairs."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Five single bonds use ten electrons and the two N lone pairs use four, totaling fourteen. Each N shares three bonding pairs and has one lone pair. B omits four electrons and leaves each N with only six surrounding electrons. C uses sixteen electrons and puts ten around each N. D uses fourteen electrons but also gives each N ten surrounding electrons because each has a triple bond and two N–H bonds. Second-period nitrogen cannot exceed an octet in this model; matching the total alone does not validate a structure."
+    },
+    {
+      "id": "chem-2-5-011",
+      "prompt": "The usual electron-deficient Lewis diagram of BF3 has three B–F single bonds, three lone pairs on each F, and no lone pairs on B. Which statement correctly describes that diagram?",
+      "options": [
+        "It contains thirty valence electrons and gives B an octet.",
+        "It is missing six valence electrons because every atom must always have an octet.",
+        "It uses all twenty-four valence electrons, but B has only six electrons around it.",
+        "It gives every F only six surrounding electrons because the B–F bond does not count toward an octet."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. B contributes three valence electrons and three F atoms contribute twenty-one, for twenty-four total. Three bonds use six electrons and nine F lone pairs use eighteen. Each F has an octet, while B shares only three pairs and has six surrounding electrons. A miscounts the electrons and boron occupancy. B treats the octet rule as universal; boron compounds can be electron-deficient in the introductory Lewis model. D ignores the bonding pair that counts toward each F octet. The question explicitly uses the usual electron-deficient model and does not ask for a formal-charge or resonance comparison."
+    }
+  ]
+}

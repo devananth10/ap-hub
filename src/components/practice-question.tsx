@@ -1,13 +1,13 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useId } from "react";
 import { ArrowRight, RotateCcw } from "lucide-react";
 import type { BankQuestion } from "@/lib/practice-bank";
+import type { PracticeAnswer } from "@/lib/practice-session";
 
-export function PracticeQuestion({ practice }: { practice: BankQuestion }) {
+export function PracticeQuestion({ practice, answer, onSelect, onCheck, onRetry }: { practice: BankQuestion; answer: PracticeAnswer; onSelect: (index: number) => void; onCheck: () => void; onRetry: () => void }) {
   const groupName = useId();
-  const [answer, setAnswer] = useState<string | null>(null);
-  const [checked, setChecked] = useState(false);
+  const { selected, checked } = answer;
   const { options, prompt, correctIndex, explanation } = practice;
   return (
     <div className="practice-preview">
@@ -16,19 +16,19 @@ export function PracticeQuestion({ practice }: { practice: BankQuestion }) {
       <fieldset disabled={checked}>
         <legend>{prompt}</legend>
         <div className="practice-options">{options.map((option, index) => (
-          <label key={option} className={`${answer === option ? "selected" : ""} ${checked && index === correctIndex ? "correct" : ""}`}>
-            <input type="radio" name={groupName} value={option} checked={answer === option} onChange={() => setAnswer(option)} />
+          <label key={option} className={`${selected === index ? "selected" : ""} ${checked && index === correctIndex ? "correct" : ""}`}>
+            <input type="radio" name={groupName} value={String(index)} checked={selected === index} onChange={() => onSelect(index)} />
             <span>{String.fromCharCode(65 + index)}</span>{option}
           </label>
         ))}</div>
       </fieldset>
       {checked ? (
         <div role="status" className="practice-feedback">
-          <strong>{answer === options[correctIndex] ? "That’s it." : "Not quite. Review the explanation."}</strong>
+          <strong>{selected === correctIndex ? "That’s it." : "Not quite. Review the explanation."}</strong>
           <p>{explanation}</p>
-          <button className="text-button" onClick={() => { setChecked(false); setAnswer(null); }}><RotateCcw size={14} />Try again</button>
+          <button className="text-button" onClick={onRetry}><RotateCcw size={14} />Try again</button>
         </div>
-      ) : <button className="button primary" disabled={!answer} onClick={() => setChecked(true)}>Check answer<ArrowRight size={15} /></button>}
+      ) : <button className="button primary" disabled={selected === null} onClick={onCheck}>Check answer<ArrowRight size={15} /></button>}
     </div>
   );
 }

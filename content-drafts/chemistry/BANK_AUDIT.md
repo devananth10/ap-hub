@@ -1,5 +1,7 @@
 # Complete AP Chemistry draft-bank audit
 
+> Historical prepublication snapshot at `627b7e2`. The eleven-live/990-pending figures and review flags below describe that checkpoint. On October 18 the owner authorized bulk publication; **all 1,001 are now published, zero withheld**. Read [PUBLICATION_REVIEW.md](PUBLICATION_REVIEW.md) for current status and dispositions of every flagged concern, and [PROGRESS.md](PROGRESS.md) for current counts. The frozen `BANK_AUDIT.json` and source hashes remain unchanged; no human scientific approval is claimed.
+
 Completed October 18, 2026. **91 topics × 11 questions = 1,001 complete questions.** Eleven Topic 1.1 questions are live; **990 questions in 90 sets remain unpublished and pending human scientific review and owner approval**. Draft completion is not publication or independent scientific certification.
 
 ## Coverage

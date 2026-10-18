@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 8,
+  "topicId": "topic-8-2",
+  "questions": [
+    {
+      "id": "chem-8-2-001",
+      "prompt": "What is the pH of2.50×10−3 M HCl at25°C, assuming complete ionization and negligible water contribution?",
+      "options": [
+        "3.40",
+        "11.40",
+        "0.00250",
+        "2.60"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. [H3O+]=2.50×10−3 M, so pH=−log[H3O+]=2.602. A is incorrect: that uses the wrong logarithmic shift for the factor2.50. B is incorrect: that is the corresponding pOH, not pH. C is incorrect: that is the hydronium concentration, not its negative logarithm."
+    },
+    {
+      "id": "chem-8-2-002",
+      "prompt": "A25°C solution contains4.00×10−3 M dissolved NaOH. What is its pH under the ideal complete-dissociation model?",
+      "options": [
+        "2.40",
+        "11.60",
+        "3.60",
+        "12.00"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. [OH−]=0.00400 M, pOH=2.398, and pH=14.00−2.398=11.602. A is incorrect: that is pOH rather than pH. C is incorrect: that applies the logarithmic factor with the wrong sign and omits conversion to pH. D is incorrect: that incorrectly rounds the hydroxide concentration to10−2 M."
+    },
+    {
+      "id": "chem-8-2-003",
+      "prompt": "What is the pH of1.50×10−3 M fully dissolved Ba(OH)2 at25°C?",
+      "options": [
+        "11.18",
+        "2.52",
+        "11.48",
+        "12.48"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Each formula unit supplies two OH−, so [OH−]=3.00×10−3 M, pOH=2.523 and pH=11.477. A is incorrect: that uses the formula-unit concentration without the factor two. B is incorrect: that is pOH. D is incorrect: that is one pH unit too high and corresponds to ten times the hydroxide concentration."
+    },
+    {
+      "id": "chem-8-2-004",
+      "prompt": "At25°C,25.0 mL of0.0100 M HNO3 is diluted with water to a total volume of250.0 mL. What is the final pH?",
+      "options": [
+        "3.00",
+        "2.00",
+        "1.00",
+        "13.00"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Dilution reduces [H3O+] by ten to0.00100 M, giving pH3.00. B is incorrect: that is the initial pH and ignores dilution. C is incorrect: that predicts a tenfold concentration increase. D is incorrect: that treats the acid as a source of hydroxide."
+    },
+    {
+      "id": "chem-8-2-005",
+      "prompt": "A solution is prepared by dissolving0.0365 g HCl to make1.00 L solution. Use molar mass36.5 g/mol and complete ionization at25°C. What is pH?",
+      "options": [
+        "1.44",
+        "3.00",
+        "11.00",
+        "0.00100"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The amount is0.00100 mol, giving [H3O+]=0.00100 M and pH3.00. A is incorrect: that treats grams per liter as molarity. C is incorrect: that is pOH, not pH. D is incorrect: that is concentration rather than pH."
+    },
+    {
+      "id": "chem-8-2-006",
+      "prompt": "Two ideal HBr solutions at25°C have pH2.00 and3.00. How does [H3O+] in the first compare with that in the second?",
+      "options": [
+        "It is1.5 times larger.",
+        "It is ten times smaller.",
+        "It is equal because both acids are strong.",
+        "It is ten times larger."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. A one-unit decrease in pH corresponds to a tenfold increase in hydronium concentration. A is incorrect: pH values are logarithms, so their direct ratio is not a concentration ratio. B is incorrect: the lower-pH sample has greater hydronium concentration. C is incorrect: strength specifies extent of ionization, not equal analytical concentrations."
+    },
+    {
+      "id": "chem-8-2-007",
+      "prompt": "A student calls0.000100 M HCl a weak acid because its concentration is small. Which statement corrects this?",
+      "options": [
+        "It is a dilute strong acid; its dissolved molecules ionize essentially completely.",
+        "It becomes a weak acid whenever concentration falls below1 M.",
+        "All strong-acid solutions have pH0.",
+        "The small concentration prevents any hydronium from forming."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Acid strength and analytical concentration describe different properties; its ideal pH is4.00. B is incorrect: dilution does not redefine HCl as a weak acid. C is incorrect: pH depends on concentration. D is incorrect: strong acid still supplies hydronium at this concentration."
+    },
+    {
+      "id": "chem-8-2-008",
+      "prompt": "Compare0.00100 M NaOH and0.00100 M Ca(OH)2, both fully dissolved at25°C. What is the pH difference pH(Ca(OH)2)−pH(NaOH)?",
+      "options": [
+        "Exactly0",
+        "Exactly+2.00",
+        "Approximately+0.30",
+        "Approximately−0.30"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Calcium hydroxide supplies twice as much OH−, so its pH is higher by log10(2)=0.301. A is incorrect: equal formula-unit concentrations do not mean equal hydroxide concentrations. B is incorrect: two hydroxides produce a factor two, not a hundredfold factor. D is incorrect: greater hydroxide makes pH higher, not lower."
+    },
+    {
+      "id": "chem-8-2-009",
+      "prompt": "At25°C,25.0 mL of0.0100 M HCl is mixed with75.0 mL of0.0300 M HCl. Volumes are additive. What is the final pH?",
+      "options": [
+        "1.60",
+        "1.70",
+        "2.00",
+        "1.40"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Total hydronium amount is0.000250+0.002250=0.002500 mol in0.1000 L, giving0.02500 M and pH1.602. B is incorrect: that takes the unweighted concentration average0.0200 M. C is incorrect: that uses only the more dilute starting solution. D is incorrect: that adds starting molarities without weighting volumes."
+    },
+    {
+      "id": "chem-8-2-010",
+      "prompt": "An ideal NaOH solution at25°C has pH12.00. It is diluted to100 times its original volume, with water autoionization still negligible. What is the new pH?",
+      "options": [
+        "14.00",
+        "10.00",
+        "6.00",
+        "0.12"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Initial pOH2.00 means0.0100 M OH−. Hundredfold dilution gives10−4 M OH−, pOH4.00 and pH10.00. A is incorrect: dilution reduces rather than increases basicity. C is incorrect: diluting a base with pure water does not make it acidic. D is incorrect: pH cannot be scaled directly by the volume factor."
+    },
+    {
+      "id": "chem-8-2-011",
+      "prompt": "A proposed calculation assigns pH8 to1.0×10−8 M HCl in pure water at25°C by setting [H3O+] equal only to added acid. What is the key correction?",
+      "options": [
+        "Accept pH8 because every negative exponent becomes the pH.",
+        "Treat HCl as a weak acid with a new Ka.",
+        "Set both ion concentrations to zero.",
+        "Include water autoionization; the solution is slightly acidic, with pH just below7."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. At this tiny acid concentration water contributes appreciably. The charge balance [H3O+]=[OH−]+10−8 with Kw gives more hydronium than hydroxide. A is incorrect: that neglects the significant water contribution and predicts a basic acid solution. B is incorrect: water contribution does not change its strong-acid character. C is incorrect: water autoionization and added acid prevent this."
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 9,
+  "topicId": "topic-9-8",
+  "questions": [
+    {
+      "id": "chem-9-8-001",
+      "prompt": "A galvanic cell operates by Zn(s)+Cu2+(aq)→Zn2+(aq)+Cu(s). Which electrode is the anode?",
+      "options": [
+        "The Cu electrode, because Cu2+ gains electrons there",
+        "The Zn electrode, where Zn loses electrons.",
+        "The salt bridge, because it contains ions",
+        "Both electrodes because both are metals"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Oxidation occurs at the anode; zinc forms Zn2+ and releases two electrons. A is incorrect: gain of electrons is reduction at the cathode. C is incorrect: the bridge is not the oxidation electrode. D is incorrect: electrode identity follows the half-reaction, not simply material class."
+    },
+    {
+      "id": "chem-9-8-002",
+      "prompt": "For a working Zn/Cu galvanic cell with Zn oxidation and Cu2+ reduction, which path carries electrons through the external circuit?",
+      "options": [
+        "From Cu to Zn",
+        "Through the salt bridge from Zn2+ to Cu2+",
+        "From each solution directly to the other without a conductor",
+        "From the Zn electrode toward the Cu electrode."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Oxidation releases electrons at Zn; reduction consumes them at Cu. A is incorrect: that reverses the operating half-reactions. B is incorrect: the bridge conducts ions, not the external electron current. C is incorrect: the electrons are carried through the connected electrode circuit."
+    },
+    {
+      "id": "chem-9-8-003",
+      "prompt": "In a separated Zn/Cu galvanic cell using an inert KNO3 bridge, which ion movement supports charge balance during Zn oxidation and Cu2+ reduction?",
+      "options": [
+        "NO3− tends toward the Zn half-cell and K+ toward the Cu half-cell.",
+        "K+ toward Zn and NO3− toward Cu",
+        "Only electrons move through the bridge",
+        "No bridge ions move while current flows"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Anions offset production of Zn2+; cations offset loss of dissolved Cu2+. B is incorrect: that would worsen the respective ionic charge imbalances. C is incorrect: ions carry charge through the bridge. D is incorrect: continued operation requires ionic charge compensation."
+    },
+    {
+      "id": "chem-9-8-004",
+      "prompt": "During Zn(s)+Cu2+(aq)→Zn2+(aq)+Cu(s), with no side reactions, what happens to the metal electrode masses?",
+      "options": [
+        "Both decrease",
+        "Both increase",
+        "Zn mass decreases and Cu mass increases.",
+        "Zn increases and Cu decreases"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Zinc metal dissolves by oxidation while copper ions plate as metal by reduction. A is incorrect: copper is deposited, not dissolved. B is incorrect: zinc is consumed. D is incorrect: that describes the reverse redox direction."
+    },
+    {
+      "id": "chem-9-8-005",
+      "prompt": "A salt bridge is removed from an otherwise connected separated-half-cell galvanic apparatus. Why does sustained current soon stop?",
+      "options": [
+        "The bridge was the sole source of electrons",
+        "The metal atoms instantly lose all chemical energy",
+        "The voltmeter chemically consumes every ion",
+        "Charge imbalance builds in the solutions without compensating ion transport."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Electron transfer cannot continue indefinitely while each half-cell accumulates uncompensated charge. A is incorrect: electrons arise from the oxidation reaction. B is incorrect: loss of ionic connection does not erase reactant thermodynamics. C is incorrect: the measurement device is not responsible for such a reaction."
+    },
+    {
+      "id": "chem-9-8-006",
+      "prompt": "Which statement correctly distinguishes the external wire from the salt bridge in a separated electrochemical cell?",
+      "options": [
+        "Both paths conduct only free electrons",
+        "The wire carries electronic charge; the bridge supports ionic transport between half-cells.",
+        "The wire transports dissolved metal ions into the opposite beaker",
+        "The bridge exists to force equal concentrations of all ions"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The two conducting paths complete the circuit through different charge carriers. A is incorrect: aqueous bridge conduction is ionic. C is incorrect: the external metal conductor carries electrons, not bulk solution ions. D is incorrect: its primary role is charge balance, not concentration equality."
+    },
+    {
+      "id": "chem-9-8-007",
+      "prompt": "In electrolysis of molten NaCl with inert electrodes and no water present, which half-reaction occurs at the cathode?",
+      "options": [
+        "2Cl− → Cl2 +2e−",
+        "Na → Na+ + e−",
+        "Na+ + e− → Na",
+        "H2O +e− → H2 +OH−"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Reduction always occurs at the cathode; the cation gains an electron. A is incorrect: that is oxidation at the anode. B is incorrect: that is oxidation, opposite to cathodic reduction. D is incorrect: water is absent, and the written reaction is not balanced."
+    },
+    {
+      "id": "chem-9-8-008",
+      "prompt": "An Fe3+/Fe2+ half-cell uses a platinum electrode that does not participate chemically. Why can the electrode function without being consumed?",
+      "options": [
+        "It provides an electronically conducting surface for solution-species electron transfer.",
+        "Every electrode must dissolve, so this setup is impossible",
+        "Pt must be oxidized stoichiometrically for every Fe3+ ion reduced",
+        "The electrode replaces the need for electron conservation"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The Fe ions undergo the redox change while inert Pt connects them to the external circuit. B is incorrect: inert electrodes can support redox reactions of dissolved species. C is incorrect: the stipulated inert electrode is not consumed; it conducts electrons between solution species and the circuit. D is incorrect: electrons still balance in the half-reaction."
+    },
+    {
+      "id": "chem-9-8-009",
+      "prompt": "At one electrode, the supplied half-reaction is2H+(aq)+2e−→H2(g). Which observation and label are consistent?",
+      "options": [
+        "Hydrogen gas forms at the anode because a gas is produced",
+        "The electrode must lose metal mass in this half-reaction",
+        "Hydrogen gas forms at the cathode.",
+        "Oxygen gas forms because electrons are consumed"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The half-reaction consumes electrons, so it is reduction and occurs at the cathode. A is incorrect: gas formation alone does not define oxidation. B is incorrect: the supplied process reduces hydrogen ions and need not consume electrode metal. D is incorrect: the listed product is H2, not O2."
+    },
+    {
+      "id": "chem-9-8-010",
+      "prompt": "Which instrument/setup is appropriate for measuring a cell potential while drawing very little current?",
+      "options": [
+        "An ammeter alone used as the potential-reading device",
+        "A balance connected between electrodes",
+        "An open salt bridge with no electrical measurement connection",
+        "A high-input-resistance voltmeter connected across the electrodes."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. A voltmeter measures potential difference and its high resistance limits discharge during measurement. A is incorrect: an ammeter measures current, not voltage. B is incorrect: a balance measures mass rather than potential difference. C is incorrect: that does not provide a voltage reading."
+    },
+    {
+      "id": "chem-9-8-011",
+      "prompt": "Which statement applies to both galvanic and electrolytic cells, despite their different energy roles?",
+      "options": [
+        "Both operate indefinitely without any external energy for the intended direction",
+        "Oxidation occurs at the anode and reduction at the cathode.",
+        "Reduction occurs at the anode only in electrolysis",
+        "Every cathode must be made from the metal being oxidized"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Those electrode definitions hold in both cell types; external energy is needed for the uphill electrolytic direction. A is incorrect: electrolytic operation requires an energy source. C is incorrect: the cathode is always the reduction site. D is incorrect: inert electrodes and different reacting species are possible."
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 4,
+  "topicId": "topic-4-4",
+  "questions": [
+    {
+      "id": "chem-4-4-001",
+      "prompt": "Liquid methanol, CH3OH, boils without decomposition. Which microscopic description best connects the phase change to the interactions involved?",
+      "options": [
+        "Every O–H covalent bond breaks, releasing separate H atoms.",
+        "C–O bonds break and reform as C=O bonds in a new substance.",
+        "Methanol molecules become larger because their atoms expand to fill the gas volume.",
+        "Methanol molecules separate as intermolecular attractions are overcome, while their covalent structures remain intact."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Boiling the unchanged molecular substance increases separation between molecules without requiring cleavage of the C–O, C–H, or O–H covalent bonds within them. A describes dissociation rather than vaporization. B proposes a chemical transformation excluded by the prompt. C attributes gas expansion to atomic growth rather than greater spacing between particles. Methanol's hydrogen bonding is an intermolecular interaction here, not the O–H covalent bond itself."
+    },
+    {
+      "id": "chem-4-4-002",
+      "prompt": "When NaCl dissolves in water, ions separate from the ionic lattice and become hydrated by ion–dipole interactions. One student calls the process physical because the ions retain their identities; another emphasizes disruption of ionic bonding and formation of new ion–water interactions. Which evaluation is most appropriate?",
+      "options": [
+        "The microscopic changes are agreed upon; this is a boundary case where a classification should be justified rather than decided by an absolute 'no bonds break in physical changes' rule.",
+        "The first student must be correct because no electrostatic attractions are disrupted during dissolution.",
+        "The second student must be correct because sodium atoms are created from Na+ during hydration.",
+        "Neither description is possible because water cannot attract ions without transferring electrons."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Salt dissolution illustrates the limitations of a rigid bond-breaking classification rule: ionic lattice interactions are disrupted and ion–dipole interactions form, while the ions remain identifiable. B denies the stated lattice disruption. C invents reduction of Na+ to neutral sodium, which hydration does not require. D incorrectly equates electrostatic attraction with electron transfer. A justified account of the interactions is more informative than asserting that all dissolution must belong to one category for the same reason."
+    },
+    {
+      "id": "chem-4-4-003",
+      "prompt": "Process I converts I2(s) to I2(g) without decomposition. Process II uses light to convert I2(g) into separate I(g) atoms. Which interaction-based classification is consistent with these descriptions?",
+      "options": [
+        "Both are physical because only iodine atoms are present.",
+        "Both are chemical because particles move farther apart.",
+        "I is physical because molecules separate without losing their I–I bonds; II is chemical because I–I covalent bonds are broken.",
+        "I is chemical because dispersion attractions are disrupted; II is physical because light supplies the energy."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Sublimation separates intact I2 molecules by overcoming intermolecular attractions, whereas the specified photodissociation changes molecular iodine into atomic iodine. A overlooks a change in chemical species even though the element is the same. B confuses intermolecular separation with covalent dissociation. D treats disruption of dispersion attractions as sufficient for a chemical change and incorrectly uses the energy source to classify II."
+    },
+    {
+      "id": "chem-4-4-004",
+      "prompt": "A thermoplastic softens on warming and can be reshaped; analysis shows that its covalent polymer chains remain intact. At a much higher temperature it produces identified smaller molecules by cleavage of chain bonds. Which description best distinguishes the two processes?",
+      "options": [
+        "Both are only physical because heating is used in each.",
+        "Softening can involve changes in noncovalent interactions and chain mobility; producing smaller molecules by covalent cleavage is chemical decomposition.",
+        "Softening must break every covalent bond, while decomposition changes only chain spacing.",
+        "Both must be chemical because the material's macroscopic properties change."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The stated intact chains support a physical rearrangement during softening, while new molecular products from chain cleavage establish chemical change at higher temperature. A incorrectly uses heating as a classification rule. C reverses the specified bond changes. D ignores that shape and mobility can change without new substances. The prompt concerns this thermoplastic under the stated conditions, not every polymer's response to heat."
+    },
+    {
+      "id": "chem-4-4-005",
+      "prompt": "Water vapor condenses to liquid water and transfers energy to the surroundings. Which explanation correctly connects the energy release to interactions without requiring a chemical reaction?",
+      "options": [
+        "Condensation releases energy because O–H covalent bonds in the vapor are all destroyed.",
+        "Energy release proves that oxygen and hydrogen elements formed.",
+        "Any process that releases energy must change the chemical formula of the substance.",
+        "Closer water molecules develop more extensive favorable intermolecular interactions while remaining H2O molecules."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Condensation forms a liquid with more extensive cohesive intermolecular contacts, lowering potential energy as energy is transferred away. The water molecules retain their covalent identity. A would describe bond cleavage rather than the specified phase change and also misuses bond breaking as the explanation for released energy. B and C incorrectly make energy release conclusive evidence of chemical transformation. A physical phase change can exchange substantial energy."
+    },
+    {
+      "id": "chem-4-4-006",
+      "prompt": "In one experiment HCl(g) molecules are converted in water to H3O+(aq) and Cl−(aq), as represented by HCl + H2O → H3O+ + Cl−. Which explanation identifies a chemical change rather than merely greater spacing of unchanged HCl molecules?",
+      "options": [
+        "The water molecules simply keep all HCl molecules intact and farther apart.",
+        "The chlorine nucleus gains a proton, changing chlorine into a different element.",
+        "The H–Cl covalent linkage is broken and a new O–H linkage forms as the proton becomes part of hydronium.",
+        "An HCl molecule becomes a chloride ion solely because it enters a larger volume."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The supplied equation represents proton transfer with changed covalent connectivity and new ionic species. A describes dispersion of intact HCl, contrary to the stated products. B invents a nuclear transformation; the chlorine element does not change. D overlooks loss of the hydrogen from HCl and formation of hydronium, and volume change alone cannot perform that transformation. This specified molecular-acid reaction is distinct from merely separating pre-existing ions in an ionic lattice."
+    },
+    {
+      "id": "chem-4-4-007",
+      "prompt": "Ethanol and water are mixed. The final volume is smaller than the sum of the initial volumes, but measurements show unchanged ethanol and water molecular identities. Which account is consistent with a physical mixing process?",
+      "options": [
+        "Changes in intermolecular contacts and molecular packing can change volume without breaking and reconstructing the molecules' covalent structures.",
+        "Volume contraction requires some oxygen nuclei to disappear.",
+        "Each ethanol molecule must split into carbon dioxide and hydrogen to fill the smaller volume.",
+        "Any change in hydrogen bonding must mean the O–H covalent bonds were all broken."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Mixture volume need not be additive because different intermolecular interactions and packing can alter the spacing of intact molecules. B violates conservation of matter. C invents products contradicted by the supplied identity measurements. D confuses intermolecular hydrogen bonding with an O–H covalent bond. A macroscopic volume change alone does not establish covalent reaction."
+    },
+    {
+      "id": "chem-4-4-008",
+      "prompt": "A student claims that the gas above boiling pure water consists of separate H and O atoms because boiling breaks the O–H bonds. Which observation most directly tests the student's proposed microscopic explanation?",
+      "options": [
+        "The gas has a much lower density than the liquid.",
+        "Analysis identifies intact H2O molecules in the gas rather than separate H and O atoms.",
+        "Energy must be supplied to maintain boiling.",
+        "The liquid surface moves during boiling."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Direct identification of the vapor particles distinguishes intermolecular separation of intact water from cleavage into atoms. A is consistent with either kind of widely separated gas particles and does not identify their connectivity. C shows an energy requirement but not which interactions are overcome. D is a macroscopic motion observation without chemical-identity information. The specific particle evidence addresses the proposed bond-breaking explanation."
+    },
+    {
+      "id": "chem-4-4-009",
+      "prompt": "Represent hydrogen peroxide as H–O–O–H. For the net reaction 2H2O2 → 2H2O + O2, compare only the initial and final bond inventories, not the sequence of mechanistic steps. Which comparison supports classification as a chemical change?",
+      "options": [
+        "Only distances between unchanged H2O2 molecules change; every initial covalent bond remains in the products.",
+        "All four initial O–H bonds disappear and no O–H bonds occur in the products.",
+        "The initial inventory has two O–O single bonds; the final inventory has an O=O bond in O2 instead, so covalent connectivity changes.",
+        "The formation of gas proves that no covalent bonds changed."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Two peroxide molecules initially contain two O–O single bonds and four O–H bonds. The products contain four O–H bonds in two waters and an O=O bond in oxygen, demonstrating a changed covalent inventory. A is inconsistent with the product formulas. B overlooks the O–H bonds in water. D gives gas formation the opposite of a justified mechanistic interpretation. Comparing net inventories does not imply that the reaction occurs in one elementary step or identify which individual O–H bonds persist throughout a real mechanism."
+    },
+    {
+      "id": "chem-4-4-010",
+      "prompt": "Light separates Cl2 molecules into Cl atoms. Under other conditions the Cl atoms recombine into Cl2. Which explanation correctly addresses both the bond changes and the fact that the transformation can be reversed?",
+      "options": [
+        "Breaking and reforming Cl–Cl covalent bonds changes the chemical species; reversibility does not make those changes purely physical.",
+        "Both directions are physical because the original substance can be recovered.",
+        "Only the light-driven direction is physical because supplied energy prevents chemical change.",
+        "Recombination is physical because forming any bond is a physical process."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The specified processes change covalent grouping between molecular and atomic chlorine, and both can be chemical transformations. B substitutes reversibility for a bond/species analysis. C incorrectly bases classification on whether energy is supplied. D treats all bond formation as physical and ignores the creation of Cl2 from atoms. A reversible chemical transformation is compatible with conservation of the chlorine element."
+    },
+    {
+      "id": "chem-4-4-011",
+      "prompt": "An energy-driven process converts a sample of O2 into O3 while conserving the total number of oxygen atoms. A student argues that the change is physical because the sample still contains only oxygen. Which response best uses bonding and particle identity?",
+      "options": [
+        "The student is correct because chemical changes must create a new element.",
+        "O2 and O3 are different chemical species; rearranging covalent bonding into three-atom groups is a chemical change even though the element is unchanged.",
+        "The student is correct because conserving atoms requires conserving all molecular identities.",
+        "The change must be physical because both species can exist as gases."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Chemical transformations rearrange atoms into different species without requiring a change of element. Producing O3 from O2 changes covalent groupings. A incorrectly requires a nuclear change. C confuses atom conservation with molecule conservation. D uses phase instead of bonding and identity. The question does not require a detailed ozone mechanism or bond-order calculation; the supplied two-atom versus three-atom groups are sufficient."
+    }
+  ]
+}

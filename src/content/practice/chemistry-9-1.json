@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 9,
+  "topicId": "entropy",
+  "questions": [
+    {
+      "id": "chem-9-1-001",
+      "prompt": "An ideal gas expands isothermally into a larger available volume. What is the sign of its entropy change?",
+      "options": [
+        "Negative, because the gas becomes less dense",
+        "Zero, because temperature is constant",
+        "Positive, because the particles can be dispersed through more space.",
+        "Impossible to discuss unless gas molecules break apart"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Greater accessible volume permits more spatial arrangements at the same temperature. A is incorrect: lower density during expansion corresponds to greater dispersal. B is incorrect: volume can change entropy even at fixed temperature. D is incorrect: entropy can change without a chemical reaction."
+    },
+    {
+      "id": "chem-9-1-002",
+      "prompt": "Water vapor condenses to liquid at the same transition temperature. What happens to the entropy of the water sample?",
+      "options": [
+        "It decreases.",
+        "It increases because attractions become stronger",
+        "It remains unchanged because the molecules stay H2O",
+        "It must become negative in absolute value"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The particles become much less spatially dispersed in the condensed phase. B is incorrect: stronger constraints in the liquid do not imply more dispersal. C is incorrect: entropy can change in a physical process. D is incorrect: a negative entropy change does not mean negative absolute entropy."
+    },
+    {
+      "id": "chem-9-1-003",
+      "prompt": "What best explains the positive entropy change when an ordinary crystalline solid melts?",
+      "options": [
+        "Every intramolecular covalent bond must break",
+        "Particles gain access to more arrangements and freedom of motion.",
+        "The particles lose all motion in the liquid",
+        "The substance necessarily produces more atoms"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The liquid is less constrained than the ordered crystal, increasing matter and energy dispersal. A is incorrect: melting a molecular solid need not destroy its molecules. C is incorrect: liquid particles continue moving. D is incorrect: melting conserves atom inventory."
+    },
+    {
+      "id": "chem-9-1-004",
+      "prompt": "A gas sample is heated at fixed volume without reacting. Why does its entropy generally increase?",
+      "options": [
+        "Every particle acquires exactly the same speed",
+        "Heating must compress the gas into a smaller spatial volume",
+        "Its entropy can change only if volume also increases",
+        "Energy is distributed among a wider range of accessible particle energies."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The broader energy distribution increases the ways energy can be dispersed. A is incorrect: thermal speeds remain distributed. B is incorrect: the volume is explicitly fixed, so the entropy increase must not be attributed to compression. C is incorrect: temperature changes can alter entropy independently."
+    },
+    {
+      "id": "chem-9-1-005",
+      "prompt": "Which qualitative entropy trend is expected for2NO2(g) → N2O4(g)?",
+      "options": [
+        "A decrease, consistent with fewer gas molecules.",
+        "An increase because the product formula is longer",
+        "No change because nitrogen and oxygen atoms are conserved",
+        "An increase because one molecule always has more entropy than two molecules"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Association reduces total gas moles from two to one, generally reducing matter dispersal. B is incorrect: formula length is not the relevant gas inventory criterion. C is incorrect: atom conservation does not force equal entropy. D is incorrect: the reaction compares stoichiometric totals, not a single molecule in isolation."
+    },
+    {
+      "id": "chem-9-1-006",
+      "prompt": "For CaCO3(s) → CaO(s) + CO2(g), what sign is generally expected for the reaction entropy change?",
+      "options": [
+        "Negative because there are fewer product species",
+        "Zero because the equation is balanced",
+        "Positive, because gas is produced from initially solid material.",
+        "Always negative whenever a solid remains"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The newly available gaseous particles give much greater dispersal. A is incorrect: there are two product species, and gas production is the dominant qualitative clue. B is incorrect: balancing conserves atoms, not entropy. D is incorrect: a remaining solid does not negate the entropy contribution from gas production."
+    },
+    {
+      "id": "chem-9-1-007",
+      "prompt": "Ice is warmed from a lower temperature to a higher temperature while remaining entirely solid. What is the expected entropy trend?",
+      "options": [
+        "Entropy cannot change unless melting occurs",
+        "Entropy decreases because the crystal contains the same atoms",
+        "Entropy becomes exactly zero at the warmer temperature",
+        "Entropy increases as energy becomes more dispersed within the solid."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. A phase change is not required for heating to increase entropy. A is incorrect: energy redistribution can change entropy within one phase. B is incorrect: unchanged composition does not imply decreasing entropy. C is incorrect: a warmer solid does not lose all accessible thermal arrangements."
+    },
+    {
+      "id": "chem-9-1-008",
+      "prompt": "Which process decreases the entropy of an ideal gas through both of the stated changes?",
+      "options": [
+        "Heating and expanding the gas",
+        "Cooling and compressing the gas.",
+        "Heating at fixed volume",
+        "Isothermal expansion"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Cooling reduces energy dispersal and compression reduces available spatial volume; both contributions lower gas entropy. A is incorrect: both changes tend to increase entropy. C is incorrect: this increases energy dispersal. D is incorrect: this increases spatial dispersal."
+    },
+    {
+      "id": "chem-9-1-009",
+      "prompt": "For equal amounts of the same substance, why is vaporization generally associated with a larger entropy increase than melting?",
+      "options": [
+        "Melting always has a negative entropy change",
+        "Vaporization destroys all atoms",
+        "Vaporization requires no energy dispersal",
+        "The transition to gas produces a much greater increase in spatial freedom."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Gas particles have far more accessible volume and arrangements than either condensed phase. A is incorrect: ordinary melting has positive entropy change. B is incorrect: it changes phase without destroying atoms. C is incorrect: both matter and energy dispersal contribute."
+    },
+    {
+      "id": "chem-9-1-010",
+      "prompt": "For H2(g) + Cl2(g) → 2HCl(g), why is gas-mole counting alone insufficient to establish the entropy-change sign?",
+      "options": [
+        "The total gas coefficient is unchanged, so molecular entropy data are needed for a reliable sign.",
+        "The reaction must have exactly zero entropy change",
+        "Balanced reactions cannot change entropy",
+        "Chlorine has no entropy because it is an element"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Equal gas mole totals remove the strongest simple counting clue; species-specific entropies can still differ. B is incorrect: equal gas coefficients do not ensure equal entropy totals. C is incorrect: balanced equations conserve atoms, not entropy. D is incorrect: elements have nonzero standard molar entropy at ordinary temperatures."
+    },
+    {
+      "id": "chem-9-1-011",
+      "prompt": "A liquid freezes at its transition temperature. Which statement correctly separates molecular identity from the entropy change?",
+      "options": [
+        "Entropy stays constant whenever molecular formulas stay constant",
+        "The negative entropy change means matter is lost",
+        "The molecular identities can remain unchanged while the sample entropy decreases.",
+        "The solid must contain more independent gas particles"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Freezing restricts particle arrangements without requiring a chemical transformation. A is incorrect: physical rearrangements and phase changes can change entropy. B is incorrect: entropy change does not measure loss of atoms. D is incorrect: freezing does not create a gas population."
+    }
+  ]
+}

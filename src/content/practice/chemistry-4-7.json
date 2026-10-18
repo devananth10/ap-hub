@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 4,
+  "topicId": "topic-4-7",
+  "questions": [
+    {
+      "id": "chem-4-7-001",
+      "prompt": "Which explanation best identifies the reaction NH3(aq) + H3O+(aq) → NH4+(aq) + H2O(l)?",
+      "options": [
+        "Precipitation, because NH4+ must be an insoluble solid.",
+        "Redox, because the total positive charge moves from one ion to another.",
+        "Acid-base, because a proton transfers from hydronium to ammonia.",
+        "Combustion, because the equation contains oxygen atoms."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. NH3 accepts a proton from H3O+, forming NH4+ and H2O. A invents a solid contrary to the aqueous product state. B confuses proton transfer and changed ion charge with electron transfer; nitrogen remains −3 and oxygen remains −2 in this equation. D mistakes the presence of oxygen atoms in water for combustion with O2. Reaction type must follow the specified species changes, not a charge or element appearing in isolation."
+    },
+    {
+      "id": "chem-4-7-002",
+      "prompt": "For Zn(s) + Cu^2+(aq) → Zn^2+(aq) + Cu(s), which description correctly classifies the reaction and identifies the electron-transfer direction?",
+      "options": [
+        "Redox: zinc loses electrons and Cu^2+ gains them.",
+        "Redox: Cu^2+ loses electrons and zinc gains them.",
+        "Acid-base: zinc transfers protons to Cu^2+.",
+        "Precipitation of an ionic salt: copper metal is an insoluble cation-anion compound."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Zinc changes from oxidation number 0 to +2 and loses two electrons, while copper changes from +2 to 0 and gains two. B reverses those directions. C introduces proton transfer that is absent from the equation. D misidentifies elemental copper as an ionic salt; deposition of a metal in a redox reaction is not, by itself, the formation of an insoluble ionic compound from unchanged ions."
+    },
+    {
+      "id": "chem-4-7-003",
+      "prompt": "Mixing Pb(NO3)2(aq) and KI(aq) forms insoluble PbI2(s): Pb^2+(aq) + 2I−(aq) → PbI2(s). Lead remains +2 and iodine remains −1. Which classification is supported?",
+      "options": [
+        "Redox, because changing phase always changes oxidation numbers.",
+        "Acid-base, because two iodide ions mean two protons were transferred.",
+        "No reaction, because oxidation numbers remain unchanged.",
+        "Precipitation, because dissolved ions form the specified insoluble ionic compound."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The ions form an insoluble ionic solid without the stated oxidation numbers changing. A falsely equates phase change with electron transfer. B substitutes iodide ions for protons. C incorrectly assumes every chemical reaction must be redox; a precipitate can form while oxidation numbers remain unchanged. Solubility is provided, so no unstated lead-salt rule is required."
+    },
+    {
+      "id": "chem-4-7-004",
+      "prompt": "Ethanol undergoes complete combustion: C2H5OH + 3O2 → 2CO2 + 3H2O. Which statement correctly identifies this reaction?",
+      "options": [
+        "It cannot be redox because no charged ions appear in the equation.",
+        "It is redox combustion: oxygen from O2 is reduced from oxidation number 0 to −2 as the fuel is oxidized.",
+        "It is only precipitation because water is formed.",
+        "It is acid-base neutralization solely because ethanol contains hydrogen."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Complete combustion with oxygen is a redox process; O atoms from O2 go from 0 to −2, and the carbon in the fuel is oxidized on conversion to CO2. A incorrectly requires explicit ions for redox. C calls a molecular product an insoluble ionic precipitate. D uses the presence of hydrogen instead of identifying proton transfer between an acid and a base. The carbon atoms need not have identical initial oxidation numbers for the overall fuel oxidation to occur."
+    },
+    {
+      "id": "chem-4-7-005",
+      "prompt": "The reaction CO3^2−(aq) + 2H+(aq) → CO2(g) + H2O(l) occurs in acid. Carbon has oxidation number +4 in both carbonate and carbon dioxide. Which interpretation is best?",
+      "options": [
+        "It must be redox because a gas forms.",
+        "It must be precipitation because a dissolved ion disappears.",
+        "It involves acid-base proton transfer and gas formation, without a redox change in the supplied species.",
+        "It is physical evaporation because a gas appears on the product side."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Carbonate reacts with protons, and the net products include CO2 and water. Carbon remains +4, hydrogen +1, and oxygen −2, so no oxidation-number change is needed. A makes gas formation a redox criterion. B invents an insoluble solid. D overlooks the changed chemical species and the consumed acid. Acid-base reaction may have subsequent product decomposition; a net equation need not display each intermediate."
+    },
+    {
+      "id": "chem-4-7-006",
+      "prompt": "Hydrogen peroxide decomposes by 2H2O2 → 2H2O + O2. Oxygen has oxidation number −1 in H2O2, −2 in water, and 0 in O2. Which conclusion follows?",
+      "options": [
+        "No redox occurs because all reactant molecules have the same formula.",
+        "Only oxidation occurs because oxygen gas is produced.",
+        "Only reduction occurs because water is produced.",
+        "Redox occurs: some oxygen is reduced and some is oxidized, even though both changes originate in the same reactant substance."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Oxygen going from −1 to −2 is reduced, while oxygen going from −1 to 0 is oxidized. These changes balance within the overall reaction. A assumes redox requires two different initial substances. B ignores the oxygen in water. C ignores the oxygen in O2. The supplied oxidation numbers, rather than the presence of oxygen in a name, establish the classification."
+    },
+    {
+      "id": "chem-4-7-007",
+      "prompt": "Aqueous NaCl and KNO3 are mixed under conditions where all four ions remain dissolved and unchanged. Which classification is justified by that description?",
+      "options": [
+        "There is no net chemical reaction to classify as acid-base, redox, or precipitation.",
+        "Precipitation, because swapping the written ion partners always makes a solid.",
+        "Redox, because Na+ and K+ have different elemental identities.",
+        "Acid-base, because every aqueous solution transfers a proton in its net mixing reaction."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The prompt specifies no species change on mixing. B infers a precipitate from molecular partner swapping instead of solubility and observed species. C does not identify any change in oxidation number or electron transfer. D overgeneralizes acid-base chemistry; the existence of water does not require a net proton-transfer reaction between these solutes. A classification should not be forced when the stated conditions show no net reaction."
+    },
+    {
+      "id": "chem-4-7-008",
+      "prompt": "Use only the guideline that sodium, potassium, ammonium, and nitrate salts are soluble in water. Which proposed compound requires additional solubility information rather than being covered by one of those classes?",
+      "options": [
+        "K2SO4",
+        "Mg(OH)2",
+        "NH4Cl",
+        "Na2CO3"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Mg(OH)2 contains none of the cations or nitrate anion in the supplied guideline, so that guideline alone does not determine its solubility. A is a potassium salt, C is an ammonium salt, and D is a sodium salt; each is covered. Requiring additional information is not the same as concluding insolubility from the absence of a listed ion. No wider solubility table is required."
+    },
+    {
+      "id": "chem-4-7-009",
+      "prompt": "Experiment I is Zn(s) + 2H+(aq) → Zn^2+(aq) + H2(g). Experiment II is CO3^2−(aq) + 2H+(aq) → CO2(g) + H2O(l). Both release a gas. Which comparison is correct?",
+      "options": [
+        "Both are precipitation reactions because a phase appears.",
+        "Both are redox solely because each consumes H+.",
+        "Neither is redox because both conserve total charge.",
+        "I is redox because Zn and hydrogen change oxidation numbers; II is acid-base chemistry with no oxidation-number change."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. In I, Zn goes 0 to +2 and H goes +1 to 0. In II, carbonate carbon remains +4, O remains −2, and H remains +1; the net process consumes protons. A incorrectly calls a gas an ionic precipitate. B confuses proton presence with electron transfer. C overlooks that charge conservation applies to redox as well as other balanced reactions. Similar macroscopic gas evolution does not require the same microscopic reaction type."
+    },
+    {
+      "id": "chem-4-7-010",
+      "prompt": "For 2Fe^2+(aq) + Cl2(aq) → 2Fe^3+(aq) + 2Cl−(aq), which statement correctly identifies the reaction even though O2 is absent?",
+      "options": [
+        "It cannot be redox because redox requires reaction with oxygen gas.",
+        "It is redox: Fe^2+ loses electrons and chlorine gains electrons.",
+        "It is acid-base because Fe^3+ has a larger positive charge than Fe^2+.",
+        "It is precipitation because chloride ions are shown as products."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Iron increases from +2 to +3, losing one electron per Fe, and chlorine decreases from 0 to −1, gaining two electrons per Cl2. A treats combustion as the only possible redox process. C mistakes a charge change for proton transfer. D invents an insoluble solid despite the aqueous product state. Oxidation and reduction refer to electron accounting, not a requirement to include the oxygen element."
+    },
+    {
+      "id": "chem-4-7-011",
+      "prompt": "For SO2 + 2H2S → 3S + 2H2O, sulfur is +4 in SO2, −2 in H2S, and 0 in elemental S. Which electron-accounting interpretation is consistent with the equation?",
+      "options": [
+        "All sulfur is oxidized because elemental sulfur appears.",
+        "No redox occurs because both sulfur-containing reactants become the same element.",
+        "Sulfur in SO2 is reduced by four oxidation-number units, while two sulfur atoms from H2S are each oxidized by two units.",
+        "Sulfur in SO2 is oxidized by four units, while sulfur in H2S is reduced by two units."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The sulfur initially at +4 decreases to 0 and gains four electrons in formal accounting; the two sulfur atoms initially at −2 each increase to 0 and lose two electrons, balancing four lost with four gained. A ignores the reduction of sulfur from SO2. B overlooks changes from two different oxidation numbers to zero. D reverses both oxidation and reduction directions. Hydrogen stays +1 and oxygen −2; no half-reaction balancing method is needed to interpret the supplied equation."
+    }
+  ]
+}

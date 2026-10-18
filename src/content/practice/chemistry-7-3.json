@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 7,
+  "topicId": "topic-7-3",
+  "questions": [
+    {
+      "id": "chem-7-3-001",
+      "prompt": "For N2(g) + 3H2(g) ⇌ 2NH3(g), which is the concentration reaction quotient?",
+      "options": [
+        "Qc = [NH3]/([N2][H2])",
+        "Qc = [NH3]²/([N2][H2]³)",
+        "Qc = [N2][H2]³/[NH3]²",
+        "Qc = 2[NH3]/([N2] + 3[H2])"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Products appear over reactants, with balanced coefficients as exponents. A is incorrect: it omits the required powers. C is incorrect: it is the quotient for the reversed equation. D is incorrect: coefficients are exponents, not additive concentration weights."
+    },
+    {
+      "id": "chem-7-3-002",
+      "prompt": "For CaCO3(s) ⇌ CaO(s) + CO2(g), with both pure solids present, what is Qp?",
+      "options": [
+        "Qp = PCO2[CaO]/[CaCO3]",
+        "Qp = 1/PCO2",
+        "Qp = Ptotal²",
+        "Qp = PCO2"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Pure solids have constant activity in this model, leaving only the gaseous product pressure. A is incorrect: pure solid amounts do not enter the expression. B is incorrect: CO2 is a product, not a reactant. C is incorrect: the coefficient on the only gas is one, not two."
+    },
+    {
+      "id": "chem-7-3-003",
+      "prompt": "For HA(aq) + H2O(l) ⇌ H3O+(aq) + A−(aq) in a dilute solution, which expression is appropriate?",
+      "options": [
+        "Qc = [H3O+][A−]/[HA]",
+        "Qc = [HA]/([H3O+][A−])",
+        "Qc = [H3O+]/[HA]",
+        "Qc = [H3O+][A−]/([HA][H2O]) with changing solvent concentration as a solute"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Water is the essentially pure solvent and is omitted; the three dissolved solutes remain. B is incorrect: this reverses products and reactant. C is incorrect: the conjugate-base concentration is also required. D is incorrect: the standard dilute aqueous expression absorbs water activity into the constant."
+    },
+    {
+      "id": "chem-7-3-004",
+      "prompt": "For NH4HS(s) ⇌ NH3(g) + H2S(g), which Qp expression uses the gas partial pressures?",
+      "options": [
+        "Qp = PNH3 + PH2S",
+        "Qp = PNH3/PH2S",
+        "Qp = PNH3 PH2S",
+        "Qp = (PNH3 PH2S)/mNH4HS"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Each gaseous product contributes its partial pressure to the first power; the pure solid is omitted. A is incorrect: mass action uses products, not a sum. B is incorrect: both gases are products. D is incorrect: the mass of pure solid does not belong in Qp."
+    },
+    {
+      "id": "chem-7-3-005",
+      "prompt": "For PCl5(g) ⇌ PCl3(g) + Cl2(g), measured pressures at an arbitrary instant are 0.80, 0.20, and 0.40 atm, respectively. Which value is the instantaneous Qp in the usual AP pressure convention?",
+      "options": [
+        "10",
+        "0.70",
+        "0.50",
+        "0.10"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Qp = (0.20)(0.40)/0.80 = 0.10; the mixture need not yet be at equilibrium. A is incorrect: that is the reciprocal quotient. B is incorrect: an average pressure is not the quotient. C is incorrect: the PCl3 factor cannot be omitted."
+    },
+    {
+      "id": "chem-7-3-006",
+      "prompt": "A student computes [B]/[A] for A(g) ⇌ B(g) before equilibrium is established. Which label is justified?",
+      "options": [
+        "Kc at every instant",
+        "Qc; it equals Kc only when the composition is at equilibrium at that temperature.",
+        "The forward rate constant kf",
+        "No quotient can be calculated until the rates are equal."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The expression can be evaluated at any time, but only its equilibrium value is Kc. A is incorrect: Kc is not an arbitrary instantaneous ratio. C is incorrect: a concentration ratio is not a kinetic rate constant. D is incorrect: Qc is defined away from equilibrium too."
+    },
+    {
+      "id": "chem-7-3-007",
+      "prompt": "For H2(g) + I2(g) ⇌ 2HI(g), which set of data is sufficient to calculate Qp directly?",
+      "options": [
+        "Only the total pressure",
+        "Only the volume and temperature",
+        "The current partial pressure of each of the three gases.",
+        "Only the mass of the vessel"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The expression PHI²/(PH2 PI2) requires the three individual pressures. A is incorrect: many compositions have the same total pressure. B is incorrect: these do not specify the amounts or gas composition. D is incorrect: container mass does not determine gas pressures."
+    },
+    {
+      "id": "chem-7-3-008",
+      "prompt": "For FeO(s) + CO(g) ⇌ Fe(s) + CO2(g), which expression correctly omits species of constant pure-phase activity?",
+      "options": [
+        "Qc = [CO2]/[CO]",
+        "Qc = [Fe][CO2]/([FeO][CO])",
+        "Qc = [CO]/[CO2]",
+        "Qc = [CO2]"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The two gases enter the concentration expression; FeO and Fe are pure solids. B is incorrect: the pure solid concentrations are omitted. C is incorrect: this corresponds to the reverse reaction. D is incorrect: the gaseous reactant CO cannot be omitted."
+    },
+    {
+      "id": "chem-7-3-009",
+      "prompt": "Why is doubling the mass of a pure solid, while leaving its phase present and all gas partial pressures unchanged, not a reason to alter the reaction quotient?",
+      "options": [
+        "Every species, including gases, is omitted from Q.",
+        "All equilibrium quotients equal one.",
+        "The pure solid contribution is independent of its amount and is omitted.",
+        "Doubling solid mass necessarily doubles each gas pressure instantly."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A pure phase has constant activity at the stated conditions; increasing its amount does not multiply Q. A is incorrect: gas partial pressures generally enter Qp. B is incorrect: their values depend on the gas or solute composition. D is incorrect: the prompt explicitly holds the gas pressures unchanged."
+    },
+    {
+      "id": "chem-7-3-010",
+      "prompt": "For 2NO2(g) ⇌ N2O4(g), which expression correctly uses pressure rather than concentration?",
+      "options": [
+        "Qp = [N2O4]/[NO2]²",
+        "Qp = PN2O4/(2PNO2)",
+        "Qp = (PNO2)²/PN2O4",
+        "Qp = PN2O4/(PNO2)²"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The numerator is the product partial pressure and the reactant pressure is squared. A is incorrect: that is Qc, not the requested pressure form. B is incorrect: the coefficient two is an exponent. C is incorrect: that inverts the specified reaction."
+    },
+    {
+      "id": "chem-7-3-011",
+      "prompt": "A mixture for A(g) ⇌ 2B(g) has total pressure 2.0 atm, with mole fractions yA = 0.25 and yB = 0.75. What is Qp in the usual AP pressure convention?",
+      "options": [
+        "2.25",
+        "4.5",
+        "3.0",
+        "0.22"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. PA = 0.50 atm and PB = 1.50 atm, so PB²/PA = 2.25/0.50 = 4.5. A is incorrect: that uses mole fractions without converting to the required pressures. C is incorrect: that divides PB by PA without squaring PB. D is incorrect: that is approximately the reciprocal quotient."
+    }
+  ]
+}

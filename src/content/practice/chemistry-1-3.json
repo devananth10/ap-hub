@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 1,
+  "topicId": "composition",
+  "questions": [
+    {
+      "id": "chem-1-3-001",
+      "prompt": "A pure compound is40.0% C,6.7% H,and53.3% O by mass. Use atomic masses C12.0,H1.0,O16.0. Which empirical formula best matches the rounded data?",
+      "options": [
+        "CH2O",
+        "CHO",
+        "C2H2O",
+        "C2HO2"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. In100 g, amounts are about3.33 mol C,6.7 mol H,and3.33 mol O, giving1:2:1. B is incorrect: that misses the two-to-one hydrogen ratio. C is incorrect: that does not match the normalized mole ratios. D is incorrect: that gives too little hydrogen relative to carbon and oxygen."
+    },
+    {
+      "id": "chem-1-3-002",
+      "prompt": "A pure magnesium oxide sample contains2.40 g Mg and1.60 g O. Use atomic masses Mg24.0 and O16.0. What is its empirical formula?",
+      "options": [
+        "Mg2O",
+        "MgO2",
+        "MgO",
+        "Mg2O3"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Each element contributes0.100 mol, so their atom ratio is1:1. A is incorrect: the mass ratio is not the atom ratio. B is incorrect: there are not twice as many oxygen atoms. D is incorrect: that does not match the equal mole amounts."
+    },
+    {
+      "id": "chem-1-3-003",
+      "prompt": "What is the empirical formula of a molecular compound whose molecular formula is C2H6?",
+      "options": [
+        "C2H6",
+        "CH6",
+        "C2H3",
+        "CH3"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Divide both subscripts by their common factor two to obtain the lowest whole-number atom ratio. A is incorrect: that is not the lowest ratio. B is incorrect: both subscripts must be reduced by the same factor. C is incorrect: reducing only hydrogen changes the atom ratio."
+    },
+    {
+      "id": "chem-1-3-004",
+      "prompt": "Which description of the formula CaCl2 in a pure ionic solid is appropriate?",
+      "options": [
+        "It proves the solid consists of separate three-atom molecules",
+        "It gives the fixed1:2 ratio of calcium ions to chloride ions, not necessarily isolated CaCl2 molecules.",
+        "It means calcium and chlorine contribute equal masses",
+        "It means each sample can contain any calcium/chloride ratio"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. A formula unit records the composition of the extended ionic structure. A is incorrect: an ionic lattice need not contain isolated molecular units. C is incorrect: atom ratios and mass ratios differ. D is incorrect: a pure stoichiometric compound has fixed proportions."
+    },
+    {
+      "id": "chem-1-3-005",
+      "prompt": "Two pure samples of the same compound have different total masses but unchanged isotopic composition. What does definite proportions predict?",
+      "options": [
+        "The larger sample must contain a greater oxygen mass percentage",
+        "Both samples must contain equal numbers of atoms",
+        "The constituent element mass ratios are the same.",
+        "The empirical formula must double for the larger sample"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Scaling a sample changes amounts proportionally without changing composition. A is incorrect: sample size alone does not change composition. B is incorrect: different sample masses generally contain different total amounts. D is incorrect: formula ratios do not scale with sample size."
+    },
+    {
+      "id": "chem-1-3-006",
+      "prompt": "A pure iron oxide contains5.60 g Fe and2.40 g O. Use atomic masses Fe56.0 and O16.0. What is its empirical formula?",
+      "options": [
+        "Fe2O3",
+        "FeO",
+        "Fe3O2",
+        "FeO3"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Moles are0.100 Fe and0.150 O, giving1:1.5; multiplying both by two gives2:3. B is incorrect: that ignores the1.5 oxygen ratio. C is incorrect: that reverses the normalized ratio. D is incorrect: that doubles only the oxygen subscript rather than the whole ratio."
+    },
+    {
+      "id": "chem-1-3-007",
+      "prompt": "Analysis of a pure nitrogen oxide gives a mole ratio N:O=1.00:2.50. Which is the empirical formula?",
+      "options": [
+        "NO2",
+        "N2O5",
+        "NO3",
+        "N2O2.5"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Multiplying both terms by two gives the lowest whole-number ratio2:5. A is incorrect: rounding2.50 down to2 changes the measured ratio substantially. C is incorrect: rounding2.50 up to3 likewise changes the ratio. D is incorrect: subscripts must be scaled together into whole numbers."
+    },
+    {
+      "id": "chem-1-3-008",
+      "prompt": "A1.42 g pure phosphorus oxide sample contains0.620 g P; the remainder is oxygen. Use atomic masses P31.0 and O16.0. What is the empirical formula?",
+      "options": [
+        "PO",
+        "P5O2",
+        "P2O3",
+        "P2O5"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Oxygen mass is0.800 g, giving0.0200 mol P and0.0500 mol O. The1:2.5 ratio becomes2:5. A is incorrect: the mole amounts are unequal. B is incorrect: that reverses the ratio. C is incorrect: the measured oxygen-to-phosphorus ratio is2.5, not1.5."
+    },
+    {
+      "id": "chem-1-3-009",
+      "prompt": "One pure compound sample contains2.00 g X and3.00 g Y; another contains4.00 g X and6.00 g Y. Which conclusion follows from these mass data?",
+      "options": [
+        "The second has twice the Y percentage",
+        "The samples have the same elemental mass ratio, consistent with the same empirical composition.",
+        "Their empirical formulas must differ because their masses differ",
+        "X:Y atom ratio must be2:3 without knowing atomic masses"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Both X:Y ratios are2:3; proportional amounts support definite proportions, though they do not uniquely prove molecular structure. A is incorrect: both contain60% Y by mass. C is incorrect: sample size does not change normalized composition. D is incorrect: mass ratio alone is not an atom ratio."
+    },
+    {
+      "id": "chem-1-3-010",
+      "prompt": "A magnesium-oxide experiment leaves moisture in the final weighed product. The student subtracts the known initial magnesium mass from product mass and assigns all remaining mass to oxygen. How is the inferred O:Mg mole ratio biased?",
+      "options": [
+        "Too low, because extra product mass removes oxygen",
+        "Unchanged, because any product mass error cancels on subtraction",
+        "Too high, because retained moisture is incorrectly counted as oxygen gained from oxide formation.",
+        "It necessarily equals exactly2:1"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The fixed magnesium amount is paired with an overestimated oxygen mass. A is incorrect: extra assigned nonmetal mass increases the inferred oxygen numerator. B is incorrect: the added moisture remains in the difference. D is incorrect: the error size depends on the amount of retained moisture."
+    },
+    {
+      "id": "chem-1-3-011",
+      "prompt": "A compound has empirical formula XO2. Atomic masses are X=32.0 and O=16.0. What mass percentage of oxygen is predicted?",
+      "options": [
+        "50.0%",
+        "66.7%",
+        "33.3%",
+        "100%"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The formula ratio contains32.0 mass units of X and2×16.0=32.0 of O; oxygen is32.0/64.0 of the total. B is incorrect: that mistakes atom fraction for mass fraction. C is incorrect: that uses the X atom fraction rather than the oxygen mass fraction. D is incorrect: the X contribution must be included in total mass."
+    }
+  ]
+}

@@ -1,10 +1,10 @@
-// Full-bank dry run. This script never imports drafts into the application.
+// Frozen pre-publication source audit (627b7e2). For current live counts run check-chemistry-publication.mjs.
 // Use --write only after reviewing intentional content changes to refresh the inventory.
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { readFileSync, readdirSync, writeFileSync, existsSync } from 'node:fs';
-import { questionBatches, validateQuestionBatches } from '../src/lib/practice-bank.ts';
+import { validateQuestionBatches } from '../src/lib/practice-bank.ts';
 import curriculum from '../src/config/chemistry-curriculum.json' with { type: 'json' };
 
 const root = 'content-drafts/chemistry';
@@ -13,17 +13,18 @@ const canonical = value => Array.isArray(value) ? value.map(canonical)
   : value && typeof value === 'object' ? Object.fromEntries(Object.keys(value).sort().map(key => [key, canonical(value[key])])) : value;
 const hash = value => createHash('sha256').update(JSON.stringify(canonical(value))).digest('hex');
 const fileHash = path => createHash('sha256').update(readFileSync(path)).digest('hex');
+const historicalLive = [read('src/content/practice/chemistry-1-1.json')];
 const pendingFiles = readdirSync(`${root}/pending`).filter(name => name.endsWith('.json'));
 const pending = pendingFiles.map(name => read(`${root}/pending/${name}`));
-const batches = validateQuestionBatches([...questionBatches, ...pending]);
+const batches = validateQuestionBatches([...historicalLive, ...pending]);
 const topics = curriculum.flatMap(unit => unit.topics.map(topic => ({ ...topic, unitNumber: unit.number })));
 const official = read(`${root}/research/official-topics.json`).topics;
 assert.equal(topics.length, 91);
 assert.deepEqual(topics.map(({ number, title }) => ({ number, title })), official.map(({ number, title }) => ({ number, title })));
 assert.equal(batches.length, 91);
 assert.equal(new Set(batches.map(batch => batch.topicId)).size, 91, 'One and only one active complete set per topic');
-assert.equal(questionBatches.length, 1, 'No automatic publication');
-assert.equal(questionBatches[0].topicId, 'moles');
+assert.equal(historicalLive.length, 1, 'No automatic publication');
+assert.equal(historicalLive[0].topicId, 'moles');
 assert.equal(pending.length, 90);
 assert.equal(batches.reduce((sum, batch) => sum + batch.questions.length, 0), 1001);
 
@@ -47,7 +48,7 @@ const inventory = topics.map(topic => {
   });
   assert.ok(distribution.every(count => count >= 2 && count <= 3));
   assert.ok(existsSync(`${root}/qa/topic-${topic.number.replace('.', '-')}.md`));
-  const live = questionBatches.includes(batch);
+  const live = historicalLive.includes(batch);
   return {
     number: topic.number, title: topic.title, topicId: topic.id, count: 11,
     path: live ? 'src/content/practice/chemistry-1-1.json' : `${root}/pending/chemistry-${topic.number.replace('.', '-')}.json`,
@@ -56,7 +57,7 @@ const inventory = topics.map(topic => {
   };
 });
 
-assert.equal(hash(questionBatches[0].questions.slice(0, 10)), '6491d0fb6efa4e05967a0f31e8a431565ab6a9a9e2cd0a0c2b44905ed99be091', 'Original approved ten changed');
+assert.equal(hash(historicalLive[0].questions.slice(0, 10)), '6491d0fb6efa4e05967a0f31e8a431565ab6a9a9e2cd0a0c2b44905ed99be091', 'Original approved ten changed');
 let preservedPartialCount = 0;
 for (const number of ['1-6', '1-7', '2-1']) {
   const partial = read(`${root}/partial/topic-${number}.json`).completeQuestions;
@@ -102,4 +103,4 @@ if (process.argv.includes('--write')) {
 } else {
   assert.deepEqual(read(manifestPath), report, 'Inventory changed: review changes before explicitly refreshing with --write');
 }
-console.log('PASS: 91 topics × 11 = 1,001; 11 live / 990 unpublished. All 49 baseline sets, 29 recovered objects and original approved ten preserved. See BANK_AUDIT.md for review limits.');
+console.log('SNAPSHOT PASS: 91 topics × 11 = 1,001; originally 11 live / 990 unpublished. All 49 baseline sets, 29 recovered objects and original approved ten preserved. See BANK_AUDIT.md for review limits.');

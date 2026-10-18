@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 9,
+  "topicId": "topic-9-5",
+  "questions": [
+    {
+      "id": "chem-9-5-001",
+      "prompt": "At298 K, a reaction has K=100. Use R=8.314 J mol−1 K−1. What is its standard molar Gibbs free-energy change?",
+      "options": [
+        "+11.4 kJ/mol",
+        "−4.96 kJ/mol",
+        "Approximately−11.4 kJ/mol",
+        "−11.4 J/mol"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. ΔG°=−RT lnK=−8.314(298)ln100≈−11410 J/mol. A is incorrect: that loses the leading negative sign. B is incorrect: that uses log10 rather than the required natural logarithm. D is incorrect: that converts the number to kJ but retains J units."
+    },
+    {
+      "id": "chem-9-5-002",
+      "prompt": "At a positive temperature, a reaction has K=0.010. Which statement correctly describes ΔG° and equilibrium favorability?",
+      "options": [
+        "ΔG° is positive, and reactants are favored in the mass-action sense.",
+        "ΔG° is negative and products are favored",
+        "ΔG° is zero because K is finite",
+        "The reaction must be rapid because K is small"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. lnK is negative, so−RT lnK is positive. B is incorrect: that reverses the K/sign relationship. C is incorrect: only K=1 gives zero standard free-energy change. D is incorrect: K does not determine reaction speed."
+    },
+    {
+      "id": "chem-9-5-003",
+      "prompt": "At298 K, ΔG°≈−5.71 kJ/mol. Use RT≈2.48 kJ/mol. Which K is closest?",
+      "options": [
+        "0.10",
+        "10",
+        "2.30",
+        "1000"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. lnK=−ΔG°/RT≈2.30, so K≈e^2.30≈10. A is incorrect: that uses the opposite sign in the exponential. C is incorrect: that reports lnK instead of K. D is incorrect: the supplied free energy corresponds to about one, not three, powers of ten."
+    },
+    {
+      "id": "chem-9-5-004",
+      "prompt": "What equilibrium constant corresponds to ΔG°=0 at positive temperature?",
+      "options": [
+        "K=0",
+        "K=−1",
+        "K must be infinite",
+        "K=1"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. −RT lnK=0 requires lnK=0 and therefore K=1. A is incorrect: the natural logarithm of zero is undefined. B is incorrect: a concentration/activity equilibrium constant is positive. C is incorrect: an infinite K would correspond to an unbounded negative logarithmic free-energy value, not zero."
+    },
+    {
+      "id": "chem-9-5-005",
+      "prompt": "Two reactions at the same temperature have K values10−8 and10^8. Which comparison is justified?",
+      "options": [
+        "The second has more negative ΔG° and stronger product favorability.",
+        "The first has more negative ΔG°",
+        "The second must have a faster forward rate",
+        "Both have ΔG°=0 because their K magnitudes use the same exponent"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The logarithmic sign changes across K=1; large positive lnK gives negative ΔG°. B is incorrect: a tiny K gives positive ΔG°. C is incorrect: equilibrium favorability does not determine the kinetic barrier. D is incorrect: the logarithms have opposite signs."
+    },
+    {
+      "id": "chem-9-5-006",
+      "prompt": "At300 K, ΔG°=+20.0 kJ/mol. Use R=8.314 J mol−1 K−1. Which approximate K follows?",
+      "options": [
+        "3.0×10^3",
+        "0.992",
+        "3.3×10−4",
+        "8.02"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. K=exp[−20000/(8.314×300)]≈3.29×10−4. A is incorrect: that uses the positive exponent and is approximately the reciprocal. B is incorrect: that mixes20.0 kJ numerically with R in joules. D is incorrect: that reports the magnitude of lnK rather than exponentiating its negative value."
+    },
+    {
+      "id": "chem-9-5-007",
+      "prompt": "A reaction has K=25 and ΔG°=−RT ln25 at a fixed temperature. For the reversed equation, which pair is correct?",
+      "options": [
+        "Kreverse=−25 and ΔG°reverse=+RT ln25",
+        "Kreverse=25 and ΔG°reverse=−RT ln25",
+        "Kreverse=1/25 and ΔG°reverse=−RT ln25",
+        "Kreverse=1/25 and ΔG°reverse=+RT ln25"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Reversal inverts the equilibrium quotient and changes the free-energy sign. A is incorrect: K does not become negative. B is incorrect: the direction was reversed, so both thermodynamic expressions must change. C is incorrect: the logarithm of the reciprocal reverses the sign."
+    },
+    {
+      "id": "chem-9-5-008",
+      "prompt": "A reaction has ΔG°=−RT at the temperature under consideration. What is K?",
+      "options": [
+        "1/e≈0.368",
+        "e≈2.72",
+        "1",
+        "10"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. lnK=−ΔG°/(RT)=1. A is incorrect: that corresponds to ΔG°=+RT. C is incorrect: that corresponds to ΔG°=0. D is incorrect: that would require ΔG°=−RT ln10."
+    },
+    {
+      "id": "chem-9-5-009",
+      "prompt": "A reaction has ΔG°=+0.010RT. Which description of K is most accurate?",
+      "options": [
+        "Exactly0",
+        "Much greater than10^6",
+        "Exactly1 because small numbers can always be discarded",
+        "Slightly below1, about0.990."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. K=e^(−0.010), so it deviates only slightly from unity. A is incorrect: a finite small free energy gives a finite positive K. B is incorrect: that would require a large negative free-energy ratio. C is incorrect: near zero is not identically zero."
+    },
+    {
+      "id": "chem-9-5-010",
+      "prompt": "At one temperature, reactionI has K=10 and reactionII has K=1000. How do their standard free-energy changes compare?",
+      "options": [
+        "ΔG°II=3ΔG°I; both are negative.",
+        "ΔG°II=100ΔG°I",
+        "They are equal because both favor products",
+        "ΔG°II is positive"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. ln1000=3ln10, so the standard free-energy change scales by three. B is incorrect: K changes by100, but its logarithm changes by a factor three here. C is incorrect: different K values imply different logarithmic free energies at the same temperature. D is incorrect: K>1 gives negative ΔG°."
+    },
+    {
+      "id": "chem-9-5-011",
+      "prompt": "At300 K, ΔG°=−12.471 kJ/mol and R=8.314 J mol−1 K−1. What is K to two significant figures?",
+      "options": [
+        "5.0",
+        "1.0×10^5",
+        "1.5×10^2",
+        "6.7×10−3"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. −ΔG°/RT=12471/(8.314×300)=5.00, so K=e^5≈148. A is incorrect: that is lnK, not K. B is incorrect: that incorrectly treats the natural logarithm as a base-ten logarithm. D is incorrect: that is e^(−5), the reciprocal."
+    }
+  ]
+}

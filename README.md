@@ -19,7 +19,7 @@ In this Codex-bundled Windows environment, if `pnpm` is not on PATH, run this fr
 & "$env:USERPROFILE/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback/pnpm.cmd" dev
 ```
 
-The files are in the local project directory you opened in Codex. Its name has not changed with the brand. Source code lives in `src/`; the existing remote is [devananth10/ap-hub](https://github.com/devananth10/ap-hub). GitHub stores source code; it does not automatically keep a local server running.
+The files are in `C:\Users\devan\OneDrive\Documents\ChatGPT\StudyHub` on this computer. Its name has not changed with the brand. Source code lives in `src/`; the existing remote is [devananth10/ap-hub](https://github.com/devananth10/ap-hub). GitHub stores source code; it does not automatically keep a local server running.
 
 Development builds use `.next-preview/`, while production builds use `.next/`. Both are ignored by Git. The development preview can stay open during production validation.
 
@@ -30,8 +30,9 @@ Development builds use `.next-preview/`, while production builds use `.next/`. B
 - Local course selections, official resource bookmark IDs, completion tracking, last topic, and light/dark mode.
 - Owner-approved resource cards and an approved-video selector, ready for individually approved URLs. Video frames remain mounted when notes, summaries, or study tabs change. Switching between approved videos pauses the previous player and preserves its frame; returning requires resuming it. Leaving/reloading the topic resets playback.
 - Six-bullet **demo** summary from original topic notes; no AI backend or video analysis.
-- Eleven approved MCQs for AP Chemistry Topic 1.1, **Moles and Molar Mass**, with answer explanations, a question counter, and Previous/Next navigation. Answers and feedback are retained between questions during the session; no scores or results are saved.
-- Topic 1.5 has no published questions; its demonstration was removed at the owner’s request. Its Study Workspace, notes, overview, and summary remain available. Other completed question drafts stay unpublished until reviewed and approved. FRQs and mixed practice are planned.
+- **1,001 original AP Chemistry MCQs across all 91 official topics, eleven per topic**, published under the owner's explicit October 18 bulk authorization. Question content, IDs, keys and explanations match the completed checkpoint. No human scientific approval is claimed; see the [publication review](content-drafts/chemistry/PUBLICATION_REVIEW.md).
+- One question at a time, Previous/Next, retained selections/feedback, explanations of all four options, and final session scores with review/restart. First graded answers count once; retries are for learning. Finishing grades remaining selections; unanswered questions count as incorrect. Reload, leaving Practice or changing scope resets the session; results are not saved.
+- Topic 1.5's demonstration remains removed; its eleven proper original questions are now available. Its Study Workspace, notes, overview and summary remain available. FRQs and mixed practice remain disabled and planned.
 - Prominent **Start Practice** actions on the dashboard, course cards, course outlines, units, topics, and Study Workspace. The practice page filters by course, unit, and topic; empty scopes explain that questions are coming soon. Practice can be available before a lesson workspace is ready. FRQ and mixed modes are visibly disabled.
 - Eight original lightweight SVG designs: chemistry, biology, calculus, physics, computer science, history, geography, and literature. Only the home hero chooses randomly on each fresh load. Course pages and workspaces use their fixed subject artwork. Course cards stay minimal, with soft subject colors, a simple icon, and a faint subject-specific line motif with no glow or fine detail.
 - Responsive layouts, keyboard tab navigation, friendly missing-page states, and a warning when local saving fails.
@@ -40,7 +41,7 @@ Development builds use `.next-preview/`, while production builds use `.next/`. B
 
 **No external educational resources are currently approved or published.** The previously selected external resources have been removed. Jeremy Krug is the owner's preferred AP Chemistry creator, but no individual video is approved until the owner supplies its exact URL. No playlists are imported.
 
-The empty resource area is intentional. The Topic 1.5 overview, notes, summary, and completion tracking remain usable. Topic 1.1 offers eleven MCQs.
+The empty resource area is intentional. The Topic 1.5 overview, notes, summary and completion tracking remain usable. All 91 Chemistry topics offer eleven MCQs independently of video availability.
 
 Use [docs/RESOURCE_APPROVAL.md](docs/RESOURCE_APPROVAL.md) for the configuration format and approval process. Edit `src/config/official-resources.json` to add, edit, unpublish, or remove entries. Every published entry needs a stable ID, valid course/unit/topic association, safe URL, and a dated owner approval reference. Draft metadata stays server-side. This is an editorial configuration system; there is no administrator UI or authentication yet.
 
@@ -56,6 +57,7 @@ The existing internal storage keys are intentionally unchanged by the rename. No
 pnpm typecheck
 pnpm test:unit
 pnpm build
+pnpm test:publication
 ```
 
 Keep `pnpm dev` running at port 3000 and run `pnpm test` in another terminal. This runs policy/storage tests plus HTTP route/CSS checks. To test the production build separately:
@@ -71,25 +73,25 @@ $env:BASE_URL = 'http://127.0.0.1:3100'
 pnpm test
 ```
 
-The suite includes 31 unit tests, 19 page-route checks, compiled CSS, seven invalid-route checks, all six fixed course-art mappings, and multiple fresh homepage responses to verify artwork rotation. It also checks question-batch validation, approval gating, draft exclusion, scope isolation, URL/video policy, legacy saved-data compatibility, branding, and absence of unapproved resources. Synthetic test fixtures are never published or fetched from a provider.
+The suite includes 37 unit tests, 19 page-route checks, compiled CSS, seven invalid-route checks, all six fixed course-art mappings and multiple fresh homepage responses to verify artwork rotation. It checks all 1,001 answer keys, scoring/navigation, question-batch validation, publication scope/counts, URL/video policy, legacy saved-data compatibility, branding and absence of unapproved resources. Synthetic test fixtures are never published or fetched from a provider. `pnpm test:publication` additionally verifies all 91 topic routes, nine unit routes and the full Chemistry course, plus frozen question hashes and flagged calculations; it needs a running server. `BASE_URL` also selects its production target.
 
 Browser checklist:
 
 1. Check PrepAtlas branding, course selection/reload, empty course state, search, and expandable units.
 2. Open Chemistry Topic 1.5. Verify the honest empty-video/resource states and that no unapproved iframe or resource link appears.
 3. Open notes, write, hide/reopen, and reload. Check the notes library and explicit completion. Keep notes hidden unless opened or following a notes deep link.
-4. Open the summary: check the demo disclosure and six bullets. Check that Topic 1.5 practice shows zero questions; test answers in Topic 1.1 instead.
+4. Open the summary: check the demo disclosure and six bullets. Topic 1.5 now offers eleven proper MCQs, with its former demonstration absent.
 5. Check themes, mobile navigation, keyboard tab controls, and 320/390/768/1440-pixel layouts.
 6. Once the owner supplies approved video URLs, test switching videos, playback continuity while using tools, provider restrictions, and the original-link fallback. Actual approved video playback cannot be verified while the catalog is empty.
 7. In a disposable browser profile, block localStorage writes and confirm the save warning. Copy important notes before closing any tab where saving fails.
-8. Use Start Practice from the dashboard, a course, a unit, and a topic. Check the selected scope. Topic 1.1 has eleven questions: test incorrect/correct answers, Try again, Previous/Next, answer retention, first/last boundaries, and a reload reset. Biology and unimplemented Chemistry topics should show honest empty states, never unrelated questions.
+8. Use Start Practice from the dashboard, a course, a unit and a topic. Chemistry has 1,001 questions; every topic has eleven. Test incorrect/correct answers, Try again, Previous/Next, checked and unchecked answer retention, first/last boundaries, Finish practice, final score, Review answers, Start again and reload reset. First graded answers must continue to count after retries; unanswered questions count as incorrect. Biology should show an honest empty state, never unrelated Chemistry questions.
 9. Refresh the homepage several times: subjects should vary, although a random draw can repeat. Opening menus or course management must leave that page's art unchanged. Refresh a course page: its artwork must stay subject-specific.
 
 ## File guide
 
 - `src/lib/courses.ts`: existing typed course/unit/topic catalog. No additional courses were automatically added.
 - `src/lib/lessons.ts`: original per-topic study prompts, sample recaps, and demo practice.
-- `src/lib/practice.ts`: validated practice scopes, links, and question selection from the existing catalog.
+- `src/lib/practice.ts`: server-side question selection. `practice-scope.ts` and `src/config/published-practice-index.json` provide lightweight scope/count helpers to client components. `practice-session.ts` holds session scoring/navigation logic.
 - `src/content/practice/` and `src/lib/practice-bank.ts`: owner-approved question batches and their validated publication registry. See [docs/PRACTICE.md](docs/PRACTICE.md) for adding more questions and the official Chemistry naming reference.
 - `src/lib/artwork.ts` and `src/components/academic-art.tsx`: artwork pool and original SVGs. Each course's `artwork` field selects its fixed theme. Computer science/geography artwork is ready for future courses; those courses have not been added.
 - `src/config/official-resources.json`: owner-controlled resource catalog.
@@ -103,14 +105,15 @@ Homepage artwork is selected on the server after `connection()` and passed as a 
 
 ## Chemistry content development
 
-The complete official Chemistry outline now contains 91 topics, with exactly 11 questions per topic saved across the approved registry and unpublished drafts (1,001 total: 11 live, 990 unpublished). See [CONTENT_IMPORT_GUIDE.md](CONTENT_IMPORT_GUIDE.md) for exact IDs and the distinction between preserved IDs and newly assigned IDs. The current [progress ledger](content-drafts/chemistry/PROGRESS.md) lists every topic and identifies unavailable historical drafts.
+The complete official Chemistry outline contains 91 topics, each with eleven published questions (1,001 total, zero withheld). See [CONTENT_IMPORT_GUIDE.md](CONTENT_IMPORT_GUIDE.md) for exact IDs and the distinction between preserved IDs and newly assigned IDs. The [progress ledger](content-drafts/chemistry/PROGRESS.md) lists every topic and identifies unavailable historical sources. The [publication review](content-drafts/chemistry/PUBLICATION_REVIEW.md) records authorization, concern dispositions, preservation and verification limits.
 
-New question sets and video candidates live under `content-drafts/chemistry/` and are not application imports. Validation does not approve or publish them. Run:
+The ninety completed files under `content-drafts/chemistry/pending/` remain unchanged historical source snapshots of the now-published bank. Do not count these copies twice. Other drafts and video candidates are not application imports. Validation alone does not approve or publish future content. Run:
 
 ```sh
 node --experimental-strip-types scripts/check-question-drafts.mjs
 node scripts/check-chemistry-science.mjs
 node --experimental-strip-types scripts/audit-chemistry-bank.mjs
+node --experimental-strip-types scripts/check-chemistry-publication.mjs
 node --experimental-strip-types scripts/report-chemistry-progress.mjs
 ```
 
@@ -131,4 +134,4 @@ For commits and pushes to the existing repository, see [CONTRIBUTING.md](CONTRIB
 
 The latest verification results and preview images are listed in [docs/VALIDATION.md](docs/VALIDATION.md).
 
-The full-bank [audit report](content-drafts/chemistry/BANK_AUDIT.md) lists preservation evidence, review limits and known editorial follow-up. The inventory hashes are checked by default; refresh them with `--write` only after reviewing intentional content changes. No pending file becomes live merely by saving, auditing, committing or pushing it.
+The frozen prepublication [audit report](content-drafts/chemistry/BANK_AUDIT.md) retains preservation evidence and historical review flags; the current publication review records their dispositions. Inventory hashes are checked by default; refresh them with `--write` only after reviewing intentional content changes. No future draft becomes live merely by saving, auditing, committing or pushing it. The current bank was explicitly registered under the owner's bulk authorization. No public website deployment was performed.

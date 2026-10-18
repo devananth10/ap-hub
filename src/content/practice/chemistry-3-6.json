@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 3,
+  "topicId": "topic-3-6",
+  "questions": [
+    {
+      "id": "chem-3-6-001",
+      "prompt": "For a gas that remains in a single gas phase, which conditions generally make the ideal-gas approximation most appropriate?",
+      "options": [
+        "Low pressure and high temperature.",
+        "High pressure and low temperature near condensation.",
+        "High pressure at any temperature, because crowding makes particle volume negligible.",
+        "Low temperature at any pressure, because slow particles cannot attract one another."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Low density makes particle volumes small relative to the available space, and high temperature reduces the importance of attractions relative to particle kinetic energy. B favors both crowding and attraction-related departures. C reverses the finite-volume argument: crowding makes particle size more important. D reverses the attraction argument: slower particles can be more strongly affected by intermolecular attractions. The statement is a general trend within a gas phase, not a claim that every gas is ideal at one universal pressure or temperature."
+    },
+    {
+      "id": "chem-3-6-002",
+      "prompt": "A gas has a measured pressure below nRT/V at known n, T, and V. Assume the measurements are accurate and attractive interactions dominate other deviations. Which explanation is consistent with the lower pressure?",
+      "options": [
+        "Attractions force the particles to strike the wall with more momentum than in the ideal model.",
+        "Finite particle size always lowers wall-collision rates by increasing the freely available space.",
+        "Attractive interactions reduce the wall-directed momentum transfer relative to the noninteracting ideal model.",
+        "The ideal equation must predict a lower pressure whenever attractions are present."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Attractions can pull particles back toward the surrounding gas and reduce the momentum transfer responsible for wall pressure compared with the ideal prediction. A predicts the opposite direction of effect. B reverses the finite-volume effect: finite particle size reduces, rather than increases, freely available space. D reverses the comparison: the measured pressure is lower than the ideal prediction under the stated attraction-dominated conditions. Accurate n, T, and V are necessary to interpret the discrepancy in this way."
+    },
+    {
+      "id": "chem-3-6-003",
+      "prompt": "At very high density, repulsive finite-volume effects dominate a real gas’s departure from the point-particle model. At the same n, T, and container V, which pressure comparison is expected from that model?",
+      "options": [
+        "The measured pressure must be lower because particle size increases the space available for center-of-mass motion.",
+        "The measured pressure can be higher because finite-sized particles have less freely available space than ideal point particles.",
+        "The measured pressure must be exactly ideal because container volume alone eliminates size effects.",
+        "The measured pressure can only be lower because real gases always have attractions, even when repulsive effects dominate."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Finite particle size and short-range repulsion become important when the sample is crowded; the point-particle approximation overestimates the freely available space. These effects can raise pressure above nRT/V. A reverses the available-space change. C ignores the distinction between geometric container volume and the space available to finite particle centers. D assumes attractions must always determine the sign, ignoring the explicitly dominant repulsive finite-volume effects. The question explicitly states which effect dominates; it does not say every real gas always lies above the ideal pressure."
+    },
+    {
+      "id": "chem-3-6-004",
+      "prompt": "Nonpolar gases X and Y have similar particle volumes, but X is much more polarizable. Compare them at the same n, T, and V in a regime where attractions dominate deviations. Which prediction is most consistent with the model?",
+      "options": [
+        "Y must deviate farther below the ideal pressure because weaker attractions always cause larger negative deviations.",
+        "Neither can deviate because nonpolar particles have no attractive interactions.",
+        "X must lie above ideal pressure because stronger attractions increase available volume.",
+        "X can show a larger downward pressure deviation because its more polarizable particles have stronger dispersion attractions."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Greater polarizability can strengthen dispersion interactions even in nonpolar gases. With particle volumes comparable and attractions stated to dominate, X can show a stronger negative departure. A reverses the relation between attraction strength and the stated effect. B ignores dispersion. C gives the wrong pressure direction and misidentifies attraction as a source of extra available volume. Specifying the regime avoids treating polarizability alone as a universal ranking at every density and temperature."
+    },
+    {
+      "id": "chem-3-6-005",
+      "prompt": "A gas is heated at fixed n and V in a moderately dilute regime where attraction-related deviations dominate and finite-volume effects are small. Why does increasing temperature generally reduce the relative importance of those deviations?",
+      "options": [
+        "Greater particle kinetic energy makes the attractive interactions less influential relative to the thermal motion.",
+        "Heating physically removes every intermolecular force from the gas.",
+        "Heating reduces the mole amount even though the container is sealed and no reaction occurs.",
+        "Heating makes the particle radii exactly zero."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The attractions do not have to vanish; they become less important relative to the higher thermal kinetic energy. B confuses a reduced relative effect with complete removal of forces. C violates the fixed amount and no-reaction conditions. D turns a useful approximation into a literal disappearance of particle size. The statement concerns the specified dilute attraction-dominated regime, not a universal claim that all volume-related departures vanish on heating."
+    },
+    {
+      "id": "chem-3-6-006",
+      "prompt": "A single-phase real gas is expanded isothermally to a much larger volume without losing particles. It becomes very dilute. Which change helps the ideal approximation become more accurate?",
+      "options": [
+        "Every individual molecule becomes physically smaller as the container expands.",
+        "Particle volume occupies a smaller fraction of the container and interactions between widely separated particles become less important.",
+        "The number of molecules falls in proportion to density, despite the absence of a leak.",
+        "The particles stop moving because they encounter one another less often."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Lower density reduces the significance of finite particle size relative to container volume and weakens the influence of interactions between separated particles. A confuses sample dilution with a change of molecular dimensions. C confuses number density with the conserved total number. D confuses collision frequency with the existence of thermal motion. The prompt keeps the sample in a gas phase, so an intervening phase transition is not being used to explain the trend."
+    },
+    {
+      "id": "chem-3-6-007",
+      "prompt": "In a hypothetical isothermal compression experiment that remains in a single gas phase, the ratios Pmeasured/(nRT/V) are 0.99 at low density, 0.86 at intermediate density, and 1.20 at very high density. Which interpretation is consistent with these data?",
+      "options": [
+        "Attraction alone must raise the high-density pressure above ideal, so finite particle volume can never matter.",
+        "The gas is exactly ideal at all three densities because every ratio is positive.",
+        "Attractions can dominate the negative intermediate-density departure, while repulsive finite-volume effects can dominate the positive high-density departure.",
+        "Once the ratio is below one it cannot rise above one unless the amount changes, so the observations must reflect a leak."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A ratio below one means measured pressure is lower than the ideal baseline; a ratio above one means it is higher. Opposing attraction and finite-volume/repulsive effects can produce the observed change in sign. A assigns the positive high-density effect to attractions alone. B confuses a positive ratio with the ideal value of one. D imposes an unjustified monotonic rule and assigns a leak without evidence; competing effects can change the sign at fixed amount. These data are a hypothetical model comparison, not measurements copied from a particular gas."
+    },
+    {
+      "id": "chem-3-6-008",
+      "prompt": "A real-gas sample gives PV/(nRT) very close to one at one measured condition. What conclusion is justified?",
+      "options": [
+        "The ideal equation is accurate at that condition within measurement precision, but this does not prove attractions and finite-volume effects are individually zero.",
+        "The particles must literally have zero radius.",
+        "The sample must obey the ideal equation exactly at every other pressure and temperature.",
+        "All intermolecular attractions must be absent, regardless of possible volume effects."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. A small net departure can result from individually small effects or from partial cancellation of opposing effects. Agreement at one condition does not establish the literal ideal assumptions or all-condition behavior. B turns an approximation into proof of zero particle size. C extrapolates one observation to every condition. D rules out attractions without separating their contribution from finite-volume effects. Measurement precision also limits what a near-unity ratio can establish."
+    },
+    {
+      "id": "chem-3-6-009",
+      "prompt": "A rigid insert occupies part of a vessel. A student uses the empty vessel’s larger volume to calculate nRT/V, but the gas can occupy only the space outside the insert. The measured pressure is higher than that calculation. What should be done before attributing the difference to gas nonideality?",
+      "options": [
+        "Conclude immediately that the gas molecules are large, because every high pressure proves finite-volume effects.",
+        "Conclude that attractions increased the pressure, without checking the volume.",
+        "Ignore the insert because ideal point particles can occupy the solid insert’s interior.",
+        "Use the actual accessible gas volume; the incorrect larger volume can itself make the predicted pressure too low."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Even an ideal gas in the smaller accessible volume has a pressure greater than a calculation using the empty vessel’s larger volume. A confuses a possible measurement/model-input error with proof of molecular excluded-volume effects. B gives attractions the wrong typical pressure effect and ignores the known error. C confuses negligible molecular size with the ability to pass through a macroscopic solid. Reliable n, T, V, and pressure calibration are needed before interpreting a discrepancy as intrinsic nonideality."
+    },
+    {
+      "id": "chem-3-6-010",
+      "prompt": "Two gas samples at the same temperature and container volume have different measured pressures, but their mole amounts are unknown. A student concludes that the higher-pressure sample must deviate more from ideal behavior. Which evaluation is best?",
+      "options": [
+        "The conclusion follows because larger absolute pressure always means a larger measured-minus-ideal difference.",
+        "The conclusion is unsupported without an ideal baseline for each sample, which requires the mole amounts as well as T and V.",
+        "The conclusion can be checked from the elements’ proton numbers alone.",
+        "Only molar mass is needed to predict each pressure, regardless of the amount present."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Pressure magnitude is not itself a deviation: each sample must be compared with its own nRT/V baseline. More moles can give a higher pressure even for perfectly ideal gases. A equates an absolute measurement with its difference from an unknown baseline. C substitutes nuclear identity for the missing amount and molecular-interaction information. D omits amount; molar mass alone does not determine n without a corresponding mass measurement. This distinction is necessary for a controlled comparison of real-gas behavior."
+    },
+    {
+      "id": "chem-3-6-011",
+      "prompt": "A known mass of gas has a pressure below its ideal value because attractions dominate; finite-volume effects are negligible. A student estimates its molar mass using M = mRT/(PV) with the measured P, V, and T. How does the estimate compare with the true molar mass?",
+      "options": [
+        "It is too small because the measured pressure is too small.",
+        "It is exactly correct because molar mass is an intrinsic property, regardless of the model used to calculate it.",
+        "The direction cannot be determined unless the proton count is known.",
+        "It is too large because a smaller measured pressure appears in the denominator."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Let Pmeasured = r(nRT/V), with r < 1. The ideal-based calculation gives Mcalculated = mRT/(PmeasuredV) = (m/n)/r = Mtrue/r, which is too large. A reverses the denominator effect. B confuses a fixed true property with an estimate obtained using an inaccurate gas model. C introduces an unnecessary variable; the stated pressure-departure direction is enough. If a different effect made the pressure greater than ideal, the error direction could reverse, which is why the attraction-dominated condition matters."
+    }
+  ]
+}

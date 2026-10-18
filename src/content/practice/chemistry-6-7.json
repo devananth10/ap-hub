@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 6,
+  "topicId": "topic-6-7",
+  "questions": [
+    {
+      "id": "chem-6-7-001",
+      "prompt": "Estimate ΔH for H2(g) + Cl2(g) → 2HCl(g). Average bond enthalpies are H–H 436, Cl–Cl 243, and H–Cl 431 kJ/mol of bonds. Use energy required for bonds broken minus energy released forming bonds.",
+      "options": [
+        "+183 kJ",
+        "+248 kJ",
+        "−183 kJ",
+        "−679 kJ"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Break one H–H and one Cl–Cl, costing 436 + 243 = 679 kJ; form two H–Cl, releasing 862 kJ. The estimate is 679 − 862 = −183 kJ. A reverses subtraction. B counts only one H–Cl product bond. D assigns the breaking-energy total a release sign and ignores product formation."
+    },
+    {
+      "id": "chem-6-7-002",
+      "prompt": "For N2(g) + 3H2(g) → 2NH3(g), use N≡N 945, H–H 436, and N–H 391 kJ/mol of bonds. What ΔH is estimated for the equation as written?",
+      "options": [
+        "+93 kJ",
+        "−1038 kJ",
+        "+1471 kJ",
+        "−93 kJ"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Breaking costs 945 + 3(436) = 2253 kJ. Two ammonia molecules contain six N–H bonds, forming which releases 6(391) = 2346 kJ. Difference is −93 kJ. A reverses the sign. B omits N2 bond breaking. C counts only two N–H bonds, one per ammonia, instead of three per molecule."
+    },
+    {
+      "id": "chem-6-7-003",
+      "prompt": "For gas-phase CH4 + Cl2 → CH3Cl + HCl, use C–H 413, Cl–Cl 243, C–Cl 328, and H–Cl 431 kJ/mol of bonds. Three C–H bonds occur unchanged on both sides. What is the estimated ΔH?",
+      "options": [
+        "−103 kJ",
+        "+103 kJ",
+        "+328 kJ",
+        "−1342 kJ"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. After canceling unchanged bond counts, break one C–H and one Cl–Cl and form one C–Cl and one H–Cl: 413 + 243 − 328 − 431 = −103 kJ. B reverses the subtraction. C omits H–Cl formation. D subtracts the three retained C–H bonds without also including their corresponding reactant contribution. Cancellation is accounting, not a claimed elementary mechanism."
+    },
+    {
+      "id": "chem-6-7-004",
+      "prompt": "Estimate ΔH for C2H4(g) + H2(g) → C2H6(g). Use C=C 614, C–C 347, C–H 413, and H–H 436 kJ/mol of bonds. The four original C–H bonds cancel in the net inventory.",
+      "options": [
+        "+123 kJ",
+        "−123 kJ",
+        "+703 kJ",
+        "−737 kJ"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The remaining accounting is 614 + 436 − 347 − 2(413) = −123 kJ. A reverses the sign. C omits the two additional product C–H bonds. D omits the reactant C=C breaking contribution while retaining the product bond terms. Replacing a double bond by a single bond must account for both complete bond enthalpy values."
+    },
+    {
+      "id": "chem-6-7-005",
+      "prompt": "For 2H2(g) + O2(g) → 2H2O(g), a bond-energy model gives ΔH = −484 kJ. Using H–H 436 and O=O 498 kJ/mol, what average O–H bond enthalpy makes the model consistent?",
+      "options": [
+        "343 kJ/mol",
+        "222 kJ/mol",
+        "464 kJ/mol",
+        "927 kJ/mol"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Broken-bond cost is 2(436) + 498 = 1370 kJ. Let D be O–H enthalpy; four product bonds give −484 = 1370 − 4D, hence D = 463.5 ≈ 464 kJ/mol. A ignores the reaction energy. B uses its sign incorrectly. D divides the formation-energy total by two water molecules rather than four O–H bonds."
+    },
+    {
+      "id": "chem-6-7-006",
+      "prompt": "Which bond-energy account is consistent with an exothermic chemical reaction?",
+      "options": [
+        "Energy released by forming product bonds exceeds energy required to break reactant bonds.",
+        "Breaking reactant bonds releases the energy, while forming product bonds always absorbs it.",
+        "Every individual bond change must release energy, so no reactant bond can be broken.",
+        "The total breaking cost must equal formation release in every balanced reaction."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. A negative broken-minus-formed result means formation releases more than breaking requires. B reverses the energetic roles of breaking and forming. C confuses net release with the sign of each contribution. D mistakes atom conservation for equality of bond-energy totals; bonds and molecular environments can change even though atoms are conserved."
+    },
+    {
+      "id": "chem-6-7-007",
+      "prompt": "Why is a reaction enthalpy calculated from tabulated average gas-phase bond enthalpies usually an estimate rather than an exact value for a particular molecular reaction?",
+      "options": [
+        "Energy conservation does not apply to gas-phase reactions.",
+        "Every bond with the same element labels has exactly the same enthalpy in every molecule.",
+        "Average tables include only product bonds and cannot describe breaking.",
+        "The actual bond energies depend on molecular environment, while the table averages related bonds across environments."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Molecular surroundings affect bond strengths, so averages need not reproduce every specific reaction exactly. A incorrectly removes conservation. B states the opposite of the environment dependence. C misrepresents the same positive bond-breaking values, which can be used with opposite signs for formation. Phase effects may also require separate accounting if nongaseous species are requested."
+    },
+    {
+      "id": "chem-6-7-008",
+      "prompt": "A gas-phase bond estimate for 2H2 + O2 → 2H2O(g) is −484 kJ. At the same specified reference conditions, each mole H2O(g) → H2O(l) has ΔH = −44.0 kJ. What estimate follows when the reaction product is two moles liquid water instead?",
+      "options": [
+        "−484 kJ",
+        "−572 kJ",
+        "−396 kJ",
+        "−528 kJ"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Add condensation of both water moles: −484 + 2(−44.0) = −572 kJ. A ignores the phase contribution. C assigns condensation the vaporization sign. D accounts for only one mole. Gas-phase bond inventories alone do not include the energy change associated with forming liquid-phase intermolecular contacts."
+    },
+    {
+      "id": "chem-6-7-009",
+      "prompt": "The gas-phase bond dissociation Br2(g) → 2Br(g) requires 193 kJ per mole Br2. What heat corresponds to dissociating 0.200 mol Br2 under the specified bond-energy model?",
+      "options": [
+        "−38.6 kJ",
+        "+193 kJ",
+        "+965 kJ",
+        "+38.6 kJ"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. One Br–Br bond is broken per Br2, so q = 0.200(193) = +38.6 kJ. A gives the sign for recombination. B uses a one-mole amount. C divides by amount instead of multiplying. Producing two atoms does not mean two initial Br–Br bonds were broken per molecule."
+    },
+    {
+      "id": "chem-6-7-010",
+      "prompt": "One bond requires 450 kJ/mol to break and another requires 300 kJ/mol. Without a complete reactant/product bond inventory, which conclusion is justified?",
+      "options": [
+        "A reaction involving the 450 kJ/mol bond must always be more exothermic.",
+        "Forming the 450 kJ/mol bond must absorb more energy than forming the 300 kJ/mol bond.",
+        "Breaking the first bond requires more energy per mole, but a full reaction enthalpy also depends on the other bonds broken and formed.",
+        "Both require equal energy because each is described as one bond."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The dissociation comparison is direct, but a net reaction includes the complete energy balance. A infers an overall sign from only one breaking contribution. B incorrectly treats bond formation as endothermic in this model. D ignores the given different bond enthalpies. Stronger individual bonding does not by itself specify a whole reaction's energy change."
+    },
+    {
+      "id": "chem-6-7-011",
+      "prompt": "Estimate ΔH for CH4(g) + 2O2(g) → CO2(g) + 2H2O(g). Use C–H 413, O=O 498, C=O in CO2 799, and O–H 463 kJ/mol of bonds.",
+      "options": [
+        "+802 kJ",
+        "−802 kJ",
+        "−3 kJ",
+        "−1300 kJ"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Break four C–H and two O=O: 2648 kJ. Form two C=O and four O–H: 3450 kJ. Difference is −802 kJ. A reverses the subtraction. C counts only one C=O in CO2. D counts only one O2 bond instead of two. Product water is explicitly gaseous, so no condensation correction is included here."
+    }
+  ]
+}

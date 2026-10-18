@@ -1,0 +1,134 @@
+{
+  "reviewedOn": "2026-10-18",
+  "sourceCommit": "627b7e2ae77c6a162d01425379e88eda504f0507",
+  "authorization": {
+    "approvedBy": "owner",
+    "mode": "bulk-publication-after-automated-checks",
+    "reference": "Owner message: PREPATLAS — PUBLISH THE COMPLETE AP CHEMISTRY QUESTION BANK",
+    "scope": "All 1001 existing Chemistry MCQs across 91 topics; internal Practice publication only; no public deployment.",
+    "individualManualApprovalRequired": false,
+    "humanScientificReviewPerformed": false
+  },
+  "publishedQuestions": 1001,
+  "publishedTopics": 91,
+  "withheldQuestionIds": [],
+  "contentChanges": [],
+  "reviewMethod": [
+    "Re-ran frozen source inventory, strict schema/ID/count checks and existing arithmetic/scientific-model suite.",
+    "Separately re-solved flagged PES, periodic-trend, polarity and pre-equilibrium cases; checked all alternatives and assumptions.",
+    "Compared TF-IDF prompt similarity within each topic; reviewed all12 pairs with cosine greater than0.62. Similarity is a triage tool, not a proof of semantic originality.",
+    "Retained all1001 question objects unchanged after review. No independently human-reviewed status is asserted."
+  ],
+  "decisions": [
+    {
+      "ids": [
+        "chem-1-6-008"
+      ],
+      "decision": "publish-retain",
+      "reason": "The supplied photon energy balance yields binding energy42eV with exactly one numerical option. The task interprets a PES measurement, directly supporting1.6.A; overlap with later photon arithmetic is intentional reinforcement, not a duplicate or missing prerequisite formula."
+    },
+    {
+      "ids": [
+        "chem-1-7-006",
+        "chem-1-7-010"
+      ],
+      "decision": "publish-retain",
+      "reason": "006 explains a qualitative down-group ranking;010 estimates a missing value from supplied numerical data. Both use the same periodic principle but assess explanation versus data-based estimation. No need to invent an exceptional Aufbau configuration."
+    },
+    {
+      "ids": [
+        "chem-2-1-001",
+        "chem-2-1-002",
+        "chem-2-1-007",
+        "chem-2-1-008"
+      ],
+      "decision": "publish-retain",
+      "reason": "Separate targets are relative bond polarity, partial-charge direction, distinguishing bonding classes, and the effectively nonpolar C–H convention. Supplied electronegativities support one answer; no universal cutoff or exact dipole magnitude is inferred."
+    },
+    {
+      "ids": [
+        "chem-5-9-004",
+        "chem-5-9-007"
+      ],
+      "decision": "publish-retain",
+      "reason": "Upper-difficulty algebraic application, not advanced-mechanism recall. The positive-root and inverse-concentration relations are supplied. Slow-step substitution yields unique forms under explicitly restricted pre-equilibrium conditions. No fractional molecularity, zero-concentration extrapolation, steady-state differential equations or Arrhenius calculation is required."
+    },
+    {
+      "ids": [
+        "chem-5-9-008",
+        "chem-5-9-009",
+        "chem-5-9-010"
+      ],
+      "decision": "publish-retain",
+      "reason": "Free concentrations and remaining-pool balances are explicitly distinguished. Recalculated rates0.00120 and0.0100M/s and third-order effective units M^-2 s^-1; no alternative matches."
+    }
+  ],
+  "similarityPairs": [
+    {
+      "cosine": 0.8098736272533095,
+      "first": "chem-9-10-001",
+      "second": "chem-9-10-002"
+    },
+    {
+      "cosine": 0.80751398952596,
+      "first": "chem-7-4-001",
+      "second": "chem-7-4-005"
+    },
+    {
+      "cosine": 0.7570483627669136,
+      "first": "chem-1-4-004",
+      "second": "chem-1-4-008"
+    },
+    {
+      "cosine": 0.7278112109222196,
+      "first": "chem-8-4-001",
+      "second": "chem-8-4-011"
+    },
+    {
+      "cosine": 0.6999455667995809,
+      "first": "chem-9-5-006",
+      "second": "chem-9-5-011"
+    },
+    {
+      "cosine": 0.6854284813175612,
+      "first": "chem-7-12-003",
+      "second": "chem-7-12-004"
+    },
+    {
+      "cosine": 0.6679816926932122,
+      "first": "chem-7-6-001",
+      "second": "chem-7-6-002"
+    },
+    {
+      "cosine": 0.6587135964102958,
+      "first": "chem-3-12-003",
+      "second": "chem-3-12-011"
+    },
+    {
+      "cosine": 0.6569492520426827,
+      "first": "chem-7-6-004",
+      "second": "chem-7-6-005"
+    },
+    {
+      "cosine": 0.6489565184474675,
+      "first": "chem-3-12-002",
+      "second": "chem-3-12-006"
+    },
+    {
+      "cosine": 0.6348707226470982,
+      "first": "chem-1-2-003",
+      "second": "chem-1-2-007"
+    },
+    {
+      "cosine": 0.6229671660022043,
+      "first": "chem-1-6-004",
+      "second": "chem-1-6-010"
+    }
+  ],
+  "limitations": [
+    "Automated/same-assistant scientific review is not independent human scientific review and does not guarantee absence of every error.",
+    "Lexical similarity does not detect all conceptual repetition; retained overlaps represent different operations or complementary cases.",
+    "Some conceptual correct choices are longer than distractors; future editorial calibration can reduce cues without a known scientific withholding reason.",
+    "The original unavailable historical full sources remain unavailable. Published replacements retain the recorded provenance."
+  ]
+}

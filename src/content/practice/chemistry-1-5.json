@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 1,
+  "topicId": "electron-configuration",
+  "questions": [
+    {
+      "id": "chem-1-5-001",
+      "prompt": "A neutral phosphorus atom has an atomic number of 15. Which electron configuration correctly represents phosphorus in its ground state?",
+      "options": [
+        "[Ne] 3s² 3p²",
+        "[Ne] 3s² 3p³",
+        "[Ne] 3s² 3p⁴",
+        "[Ne] 3s¹ 3p⁴"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. A neutral phosphorus atom contains 15 electrons. The neon core represents 10 electrons, leaving five electrons to occupy the third energy level. According to the Aufbau principle, the lower-energy 3s subshell fills before the 3p subshell. Two electrons occupy 3s, and the remaining three occupy 3p, producing [Ne] 3s² 3p³. A is incorrect because it represents only 14 electrons, corresponding to neutral silicon. C is incorrect because it represents 16 electrons, corresponding to neutral sulfur. D is incorrect because it contains 15 electrons but does not represent the ground state: an electron has been placed in the higher-energy 3p subshell while the lower-energy 3s subshell remains incompletely filled. A correct ground-state electron configuration must satisfy both the electron count and the expected filling order."
+    },
+    {
+      "id": "chem-1-5-002",
+      "prompt": "A neutral nitrogen atom has the electron configuration 1s² 2s² 2p³. Which orbital diagram correctly represents the three electrons in its 2p subshell in the ground state? Each pair of brackets represents one orbital.",
+      "options": [
+        "[↑↓] [↑] [ ]",
+        "[↑↓] [↑↓] [↑]",
+        "[↑] [↑] [ ]",
+        "[↑] [↑] [↑]"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The 2p subshell contains three orbitals of equal energy. According to Hund's rule, electrons occupy these orbitals individually with parallel spins before any pairing occurs. Nitrogen has three 2p electrons, so its ground-state orbital diagram is [↑] [↑] [↑]. A is incorrect because it pairs two electrons in one orbital while another orbital remains empty, violating Hund's rule for the ground state. B is incorrect because it represents five electrons in the 2p subshell rather than the three electrons present in nitrogen. C is incorrect because it represents only two 2p electrons. The correct diagram must show the appropriate number of electrons distributed according to the Aufbau principle, Hund's rule, and the Pauli exclusion principle."
+    },
+    {
+      "id": "chem-1-5-003",
+      "prompt": "A neutral oxygen atom has eight protons and eight electrons. When the atom gains two electrons to form O²⁻, which electron configuration represents the resulting ion in its ground state?",
+      "options": [
+        "1s² 2s² 2p⁶",
+        "1s² 2s² 2p⁴",
+        "1s² 2s² 2p⁵",
+        "1s² 2s² 2p⁸"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. A neutral oxygen atom has eight electrons and the configuration 1s² 2s² 2p⁴. Forming O²⁻ requires gaining two electrons, increasing the total electron count to ten. Both additional electrons enter the 2p subshell, producing 1s² 2s² 2p⁶. This is the same electron configuration as neutral neon. B is incorrect because it represents neutral oxygen before the two electrons are gained. C is incorrect because it contains nine electrons and corresponds to O⁻ rather than O²⁻. D is incorrect because a p subshell can accommodate a maximum of six electrons, not eight. The formation of an anion changes the number of electrons but does not change the number of protons in the nucleus."
+    },
+    {
+      "id": "chem-1-5-004",
+      "prompt": "Neutral sodium and magnesium atoms have the ground-state electron configurations [Ne] 3s¹ and [Ne] 3s², respectively. The first ionization energy of magnesium is greater than that of sodium. Which explanation best accounts for this difference?",
+      "options": [
+        "The outermost electron of sodium is more strongly attracted to the nucleus because sodium has fewer protons.",
+        "Both atoms have electrons in the 3s subshell, so their first ionization energies must be identical.",
+        "Magnesium has a greater nuclear charge with similar core-electron shielding, resulting in a stronger net attraction for its 3s electrons.",
+        "Magnesium has a lower first ionization energy because electron-electron repulsion in its filled 3s subshell completely cancels the additional nuclear attraction."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Sodium has 11 protons, while magnesium has 12. Both atoms contain the same neon-like core of ten electrons, and their outermost electrons occupy the 3s subshell. Because magnesium has a greater nuclear charge while experiencing broadly similar core-electron shielding, its 3s electrons experience a stronger effective nuclear attraction. Consequently, more energy is required to remove the first electron from magnesium. A is incorrect because sodium's smaller nuclear charge generally produces weaker attraction for an electron in the same subshell when shielding is comparable. B is incorrect because electrons occupying the same subshell in different elements can experience different effective nuclear charges. D is incorrect because although electron-electron repulsion influences electron energies, it does not completely cancel magnesium's greater nuclear attraction. The experimentally observed first ionization energy of magnesium is higher than that of sodium. This comparison illustrates the qualitative application of Coulomb's law to electron binding."
+    },
+    {
+      "id": "chem-1-5-005",
+      "prompt": "A neutral sulfur atom has an atomic number of 16 and a ground-state electron configuration of 1s² 2s² 2p⁶ 3s² 3p⁴. How many core electrons and valence electrons does the atom contain, respectively?",
+      "options": [
+        "12 core electrons and 4 valence electrons",
+        "10 core electrons and 6 valence electrons",
+        "6 core electrons and 10 valence electrons",
+        "0 core electrons and 16 valence electrons"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. For a main-group atom, valence electrons occupy the outermost principal energy level. Sulfur's highest occupied principal energy level is n = 3, containing two electrons in 3s and four in 3p. Sulfur therefore has six valence electrons. The remaining ten electrons occupy the inner 1s, 2s, and 2p subshells and are classified as core electrons. A is incorrect because it counts only the four 3p electrons as valence electrons and incorrectly includes the two 3s electrons among the core electrons. C is incorrect because it reverses the correct numbers of core and valence electrons. D is incorrect because not all electrons in an atom are valence electrons; electrons occupying lower principal energy levels are generally classified as core electrons. Distinguishing core and valence electrons is important because the outer electrons are most directly involved in chemical bonding and reactions."
+    },
+    {
+      "id": "chem-1-5-006",
+      "prompt": "A student is determining the ground-state electron configuration of a neutral potassium atom, which has atomic number 19. After accounting for the first 18 electrons, the student must place one additional electron. Which configuration correctly represents the ground state of potassium?",
+      "options": [
+        "[Ar] 4s¹",
+        "[Ar] 3d¹",
+        "[Ar] 4s²",
+        "[Ar] 4p¹"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. A neutral potassium atom contains 19 electrons. The argon core accounts for 18 electrons. According to the Aufbau principle, the next electron occupies the 4s subshell because 4s is lower in energy than 3d for the ground-state filling of neutral potassium. The configuration is therefore [Ar] 4s¹. B is incorrect because it places the nineteenth electron in 3d before occupying the lower-energy 4s subshell. C is incorrect because [Ar] 4s² contains 20 electrons and represents the ground-state configuration of neutral calcium. D is incorrect because it places the nineteenth electron in 4p while the lower-energy 4s subshell remains empty. The principal quantum number alone does not determine the order in which subshells fill; the relative energies of the subshells must also be considered."
+    },
+    {
+      "id": "chem-1-5-007",
+      "prompt": "A neutral iron atom has atomic number 26 and the ground-state electron configuration [Ar] 4s² 3d⁶. When iron forms Fe³⁺, three electrons are removed. Which configuration correctly represents Fe³⁺ in its ground state?",
+      "options": [
+        "[Ar] 4s² 3d³",
+        "[Ar] 3d³",
+        "[Ar] 4s¹ 3d⁴",
+        "[Ar] 3d⁵"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Neutral iron has 26 electrons, while Fe³⁺ has 23 electrons. Starting from the given neutral-atom configuration, electrons are removed from 4s before 3d when forming iron cations. The relative subshell energies change with electron occupancy; removal is not simply the reverse of the introductory filling sequence. Removing the two 4s electrons from [Ar] 4s² 3d⁶ produces Fe²⁺ with the configuration [Ar] 3d⁶. Removing one additional 3d electron produces Fe³⁺ with the configuration [Ar] 3d⁵. A is incorrect because it removes three electrons from 3d while leaving the 4s electrons in place, which does not give the ground-state configuration of Fe³⁺. B is incorrect because [Ar] 3d³ contains only 21 electrons rather than the required 23. C is incorrect because it leaves an electron in 4s while removing additional electrons from 3d; this is not the ground-state arrangement of Fe³⁺. The order in which electrons are removed from transition-metal atoms is not necessarily the reverse of the order in which the subshells were initially filled."
+    },
+    {
+      "id": "chem-1-5-008",
+      "prompt": "In a simplified electrostatic model, an electron experiences an attractive force of magnitude F from a positively charged nucleus. In a second hypothetical system, the positive nuclear charge is doubled, but the electron is located twice as far from the nucleus. Assuming the charges can be treated as point charges and all other conditions remain unchanged, what is the magnitude of the attractive force in the second system?",
+      "options": [
+        "2F",
+        "F",
+        "F/2",
+        "F/4"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. According to Coulomb's law, the magnitude of the electrostatic force between two charged particles is proportional to the product of the magnitudes of their charges divided by the square of their separation: F ∝ |q₁q₂|/r². Doubling the positive nuclear charge increases the force by a factor of two, while doubling the separation decreases it by a factor of four. The combined change is 2/4 = 1/2, so the new force is F/2. A is incorrect because it considers only the doubled nuclear charge and ignores the increase in separation. B is incorrect because it effectively assumes that doubling the charge and doubling the distance cancel directly, overlooking the inverse-square dependence on distance. D is incorrect because it accounts for the doubled distance but ignores the doubled nuclear charge. This idealized model demonstrates how nuclear charge and electron-nucleus distance influence electrostatic attraction. In real multielectron atoms, shielding and electron distributions must also be considered."
+    },
+    {
+      "id": "chem-1-5-009",
+      "prompt": "A researcher examines an ion containing 17 protons, 18 neutrons, and 18 electrons. Which identification of the ion is correct?",
+      "options": [
+        "A chlorine-35 ion with a charge of −1",
+        "A neutral argon-35 atom",
+        "A neutral chlorine-35 atom",
+        "A chlorine-36 ion with a charge of −1"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The number of protons determines the identity of an element. An atom or ion containing 17 protons is chlorine. The mass number equals the number of protons plus the number of neutrons: 17 + 18 = 35. The species is therefore chlorine-35. Because it contains 18 electrons but only 17 protons, it has one additional negative charge and is represented as ³⁵Cl⁻. B is incorrect because argon has 18 protons, whereas the given species has only 17. C is incorrect because a neutral chlorine atom would contain 17 electrons, not 18. D is incorrect because chlorine-36 would contain 19 neutrons rather than the specified 18. The proton count determines elemental identity, the neutron count determines the isotope, and the difference between proton and electron counts determines the ionic charge."
+    },
+    {
+      "id": "chem-1-5-010",
+      "prompt": "In a neutral sulfur atom, electrons occupy both the 3s and 3p subshells. Which statement best explains why a 3s electron generally requires more energy to remove than a 3p electron from the same atom?",
+      "options": [
+        "A 3p electron is more strongly attracted to the nucleus because the 3p subshell contains more electrons than the 3s subshell.",
+        "A 3s electron has greater penetration toward the nucleus and experiences a stronger effective nuclear attraction than a 3p electron.",
+        "Electrons in the 3s and 3p subshells must have identical binding energies because both subshells belong to the third principal energy level.",
+        "A 3s electron is easier to remove because the 3s subshell can hold fewer electrons than the 3p subshell."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Although the 3s and 3p subshells belong to the same principal energy level, their electrons have different spatial distributions. A 3s electron has greater penetration toward the nucleus than a 3p electron, meaning it has a greater probability of being found relatively close to the nucleus. As a result, 3s electrons generally experience stronger effective nuclear attraction and have lower energy than 3p electrons in the same multielectron atom. More energy is therefore required to remove a 3s electron. A is incorrect because the number of electrons in a subshell does not by itself determine the strength of attraction between an electron and the nucleus. C is incorrect because subshells with the same principal energy level can have different energies in multielectron atoms due to penetration, shielding, and electron-electron interactions. D is incorrect because the maximum electron capacity of a subshell does not directly determine how strongly its electrons are bound. This comparison demonstrates why subshell energies depend on more than the principal energy level."
+    },
+    {
+      "id": "chem-1-5-011",
+      "prompt": "An unknown main-group element X forms a stable X²⁺ ion with the ground-state electron configuration [Ne] 3s² 3p⁶. Which element is X?",
+      "options": [
+        "Argon, Ar",
+        "Sulfur, S",
+        "Calcium, Ca",
+        "Potassium, K"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The configuration [Ne] 3s² 3p⁶ contains 10 + 2 + 6 = 18 electrons. Because the ion has a charge of +2, its neutral parent atom must have contained two additional electrons, giving a total of 20 electrons. A neutral atom with 20 electrons has 20 protons and is calcium. Neutral calcium has the ground-state configuration [Ar] 4s². Removing its two 4s electrons produces Ca²⁺ with the configuration [Ar], equivalent to [Ne] 3s² 3p⁶. A is incorrect because neutral argon already contains 18 electrons, so Ar²⁺ would contain only 16 electrons. B is incorrect because sulfur has atomic number 16, and S²⁺ would contain 14 electrons rather than 18. D is incorrect because potassium has atomic number 19, so K²⁺ would contain 17 electrons. Identifying an element from an ionic electron configuration requires accounting for the ionic charge before determining the atomic number."
+    }
+  ]
+}

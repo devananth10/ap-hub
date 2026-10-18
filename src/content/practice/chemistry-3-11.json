@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 3,
+  "topicId": "topic-3-11",
+  "questions": [
+    {
+      "id": "chem-3-11-001",
+      "prompt": "A researcher wants to investigate transitions involving stretching and bending of bonds in stable molecules. Which spectral region is most characteristic of these transitions in the introductory AP model?",
+      "options": [
+        "Infrared.",
+        "Microwave.",
+        "Ultraviolet/visible.",
+        "X-ray."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Infrared absorption is characteristically associated with molecular vibrational transitions, including bond stretching and bending. B is more characteristically associated with rotational transitions. C commonly probes electronic transitions rather than the usual bond-vibration spacing. D is much higher in photon energy and is not the characteristic region for these bound molecular vibrations. The statement identifies the usual correspondence, not a claim that every molecule absorbs every infrared wavelength."
+    },
+    {
+      "id": "chem-3-11-002",
+      "prompt": "An absorption feature in a polar molecular gas is assigned to a change in the molecule’s rotational energy level rather than its vibrational or electronic state. Which spectral region is most typical for that assignment?",
+      "options": [
+        "Ultraviolet/visible.",
+        "Infrared.",
+        "Microwave.",
+        "X-ray."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Microwave radiation is characteristically associated with changes among molecular rotational levels. B typically probes molecular vibrations, while A usually probes electronic excitation. D is not the typical energy region for a simple rotational transition. Assigning a feature requires the type of energy change, not merely knowing that the sample is a gas or that its particles are moving. No rotational selection-rule calculation is required because the feature is stated to have an allowed rotational assignment."
+    },
+    {
+      "id": "chem-3-11-003",
+      "prompt": "A molecular solution absorbs visible light in an ordinary electronic absorption band. Which primary change does the band represent in the AP spectroscopy model?",
+      "options": [
+        "A directed bulk flow of all the solution molecules.",
+        "Only a change in rigid rotation with no electronic excitation.",
+        "Only a change in bond-stretching vibration with no electronic excitation.",
+        "A transition to a higher electronic energy level."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Ultraviolet/visible absorption is characteristically associated with electronic excitation. A describes macroscopic transport rather than a quantized absorption band. B assigns the characteristic microwave rotational process to the visible band. C assigns the characteristic infrared vibrational process instead. Energy can later be redistributed through relaxation, but the question asks about the primary transition assigned to the absorption, not every subsequent effect of absorbed light."
+    },
+    {
+      "id": "chem-3-11-004",
+      "prompt": "A molecule emits an ultraviolet photon during relaxation. Which model is most consistent with the usual spectral-region assignment?",
+      "options": [
+        "The molecule gains electronic energy at the same time it emits the photon, with no other energy input.",
+        "An excited electronic state relaxes to a lower electronic state and releases light.",
+        "Only the center-of-mass translational speed changes, which always produces a discrete ultraviolet line.",
+        "A pure low-energy rigid-rotation transition must emit ultraviolet rather than microwave radiation."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Ultraviolet emission commonly accompanies a decrease in electronic-state energy. A reverses the energy direction for emission without another input. C replaces an internal state transition with a universal claim about translation and discrete UV emission. D assigns the usual small rotational spacing to the much higher ultraviolet region. The assignment is qualitative; calculating the photon energy from a specific gap belongs to a separate photon-properties task."
+    },
+    {
+      "id": "chem-3-11-005",
+      "prompt": "A gas sample has both microwave rotational features and infrared vibrational features. A student concludes that at least two different compounds must be present. Which evaluation is best?",
+      "options": [
+        "One molecular species can have both rotational and vibrational energy levels, so the two types of features alone do not prove a mixture.",
+        "The conclusion is required because one molecule can have only one type of internal motion.",
+        "The conclusion is required because all infrared features must come from a second chemical phase.",
+        "Neither feature can belong to a molecule because only electronic transitions can absorb radiation."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. A molecule can support several kinds of internal energy changes, and different regions can probe different changes in the same species. B incorrectly restricts a molecule to one internal motion. C infers phase separation from a spectral region without evidence. D excludes the rotational and vibrational transitions explicitly included in the molecular model. More detailed spectral evidence may establish composition, but two different transition types alone do not force two compounds."
+    },
+    {
+      "id": "chem-3-11-006",
+      "prompt": "Three typical molecular level spacings are classified as small rotational gaps, intermediate vibrational gaps, and larger electronic gaps. Which sequence of associated spectral regions is appropriate in that order?",
+      "options": [
+        "Ultraviolet/visible, microwave, infrared.",
+        "Infrared, ultraviolet/visible, microwave.",
+        "Microwave, ultraviolet/visible, infrared.",
+        "Microwave, infrared, ultraviolet/visible."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The usual ordering associates small rotational spacings with microwaves, vibrational spacings with infrared, and larger electronic spacings with ultraviolet/visible radiation. A, B, and C each mismatch one or more transition types with their characteristic region. These are typical introductory correspondences, not a universal ordering of every conceivable transition in every species. No numerical level spacing or wavelength conversion is needed to use the supplied classification."
+    },
+    {
+      "id": "chem-3-11-007",
+      "prompt": "An infrared band is assigned to excitation between two bound vibrational levels of a molecule. Which particle-level description fits that assignment?",
+      "options": [
+        "The absorbed photon must completely ionize the molecule.",
+        "All nuclei must become fixed at one position with no relative motion.",
+        "The relative motions of bonded atoms change vibrational state while the molecular connectivity can remain intact.",
+        "The only change is rigid rotation of the entire molecule, with no change in internal vibrational motion."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A bound vibrational transition changes the state of stretching/bending motion without requiring the molecule to dissociate. A substitutes ionization for the stated bound-level transition. B removes rather than changes vibration. D describes a purely rotational change rather than the assigned vibration. Infrared excitation does not automatically imply covalent-bond cleavage; the specified level assignment determines what the observed feature represents."
+    },
+    {
+      "id": "chem-3-11-008",
+      "prompt": "A team wants to compare electronic absorption features of two related molecular species. Which measurement most directly addresses that question in the usual AP model?",
+      "options": [
+        "Microwave spectroscopy of rotational features only.",
+        "UV/visible absorption spectroscopy over an appropriate wavelength range.",
+        "Infrared spectroscopy restricted to bond-vibration bands.",
+        "A boiling-point measurement alone, without a spectrum."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. An appropriate UV/visible range directly probes the electronic transitions under investigation. A primarily addresses rotational levels; C primarily addresses vibrations. D can provide bulk-property information but does not directly resolve electronic absorption features. The wavelength range must actually cover the features of interest; choosing a technique does not guarantee that every species has an observable band at every available wavelength."
+    },
+    {
+      "id": "chem-3-11-009",
+      "prompt": "For an appropriate polar diatomic molecule, a microwave feature is assigned to rotation and an infrared feature to vibration. Which description distinguishes the motions?",
+      "options": [
+        "Both features describe only faster center-of-mass translation through the container.",
+        "The rotational feature requires the bond to break, whereas vibration requires no relative motion of the atoms.",
+        "Microwave excitation changes only bond stretching, while infrared excitation changes only rigid rotation.",
+        "Rotation changes molecular orientation, whereas vibration changes the relative nuclear separation around the bonded arrangement."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. A rigid-rotation model changes the orientation of the molecule, while a vibrational model changes the relative positions of its bonded atoms, such as their separation in a diatomic. A confuses internal degrees of motion with whole-particle translation. B incorrectly requires dissociation for rotation and removes motion from vibration. C reverses the assignments. The allowed features are supplied, so students do not need to infer selection rules from symmetry."
+    },
+    {
+      "id": "chem-3-11-010",
+      "prompt": "Under controlled conditions, two samples have very similar UV/visible absorption features but different infrared patterns. Which conclusion is reasonable?",
+      "options": [
+        "Similar UV/visible features prove that every bond vibration must also be identical.",
+        "Infrared patterns describe only rigid rotation, so they cannot provide information about vibrational environments.",
+        "The vibrational environments can differ even when the observed electronic absorption features are similar.",
+        "Because UV/visible photons are more energetic, matching those features proves identical spectra in every other region."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Different spectral regions probe different kinds of transitions. Similar observed electronic features do not determine all vibrational behavior, so the infrared patterns can distinguish environments not resolved by that comparison. A overstates what one region establishes. B assigns IR only to rotation instead of its characteristic vibrational information. D treats higher photon energy as complete structural information across all regions. The observations do not alone specify the exact chemical difference or prove a particular reaction occurred."
+    },
+    {
+      "id": "chem-3-11-011",
+      "prompt": "An isolated monatomic gas shows electronic absorption lines. A student expects the individual atoms also to show the same intramolecular bond-stretching modes as a diatomic molecule. Which response is best?",
+      "options": [
+        "Electronic transitions require bonds, so the observed lines must prove contamination by molecules.",
+        "An isolated atom has no intramolecular bond to stretch, but it can still have electronic energy levels and transitions.",
+        "Without a bond-stretching mode, an atom cannot have any translational kinetic energy.",
+        "Every electronic excitation automatically creates a new chemical bond and therefore a molecular stretching mode."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. An isolated atom has electronic states but no pair of bonded nuclei defining a molecular bond-stretching coordinate. A wrongly requires molecular bonding for all electronic spectroscopy. C confuses absence of one internal mode with absence of translational motion. D imposes automatic bond formation on electronic excitation. This distinction concerns molecular vibration, not a claim about the absence of all possible atomic motions or electronic angular behavior."
+    }
+  ]
+}

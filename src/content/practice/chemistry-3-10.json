@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 3,
+  "topicId": "topic-3-10",
+  "questions": [
+    {
+      "id": "chem-3-10-001",
+      "prompt": "A small neutral molecular solute has several accessible O–H groups and only a small nonpolar region. Which interaction-based prediction is most reasonable when comparing water and hexane as solvents?",
+      "options": [
+        "It must be insoluble in both because every soluble substance must form ions.",
+        "Hexane must be better because O–H groups are nonpolar and cannot interact with water.",
+        "The two solvents must dissolve identical amounts because the solute’s molar mass is unchanged.",
+        "Water is likely to be more compatible because it can form favorable hydrogen-bond contacts with the solute’s O–H groups."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Accessible O–H groups can donate and accept appropriate hydrogen-bond contacts with water, making aqueous solvation favorable relative to a nonpolar solvent for the stated small molecule. A incorrectly requires ionization for molecular dissolution. B misclassifies O–H groups and ignores their water interactions. C treats molar mass as the only factor and ignores solvent identity. This is a qualitative prediction, not a guarantee of one exact solubility or complete miscibility for every molecule containing O–H."
+    },
+    {
+      "id": "chem-3-10-002",
+      "prompt": "I2 is a nonpolar molecular solute. Which explanation supports predicting greater compatibility with nonpolar hexane than with water in the usual intermolecular-interaction model?",
+      "options": [
+        "Hexane converts every iodine molecule into free iodide ions without another reactant.",
+        "I2 and hexane can have favorable dispersion interactions, while introducing I2 into water does not replace water’s hydrogen-bonding environment equally well.",
+        "Water has no dispersion interactions, so it cannot attract any neutral molecule.",
+        "All nonpolar molecules have permanent positive and negative ends that form ion–dipole bonds."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Polarizable iodine molecules can interact through dispersion with a nonpolar solvent, while water’s strong solvent–solvent interactions are not compensated in the same way by this nonpolar solute. A introduces unsupported electron transfer. C falsely removes dispersion from water; all molecular species have electron-cloud fluctuations. D assigns permanent charges/dipoles to nonpolar molecules and mislabels ion–dipole interactions. The comparison is an interaction-based tendency, not a claim that iodine has exactly zero aqueous solubility."
+    },
+    {
+      "id": "chem-3-10-003",
+      "prompt": "A series of neutral alcohols each has one O–H group. Their compatibility with water generally decreases as the hydrocarbon chain becomes much longer. Which explanation best accounts for the trend?",
+      "options": [
+        "A larger nonpolar region must always improve water compatibility solely because the molecular mass increases.",
+        "Every alcohol must have identical solubility because each contains the same one O–H group.",
+        "The growing nonpolar region becomes a larger part of the molecule, so the same O–H group does not compensate for water interactions to the same extent.",
+        "Water becomes nonpolar whenever a long-chain alcohol is added."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A single polar group can be outweighed by a growing nonpolar region, so the balance of solute–solvent and solvent–solvent interactions changes with molecular structure. A transfers a mass/dispersion trend into an unjustified universal water-solubility rule and ignores the competing solvent interactions. B treats one functional group as sufficient to fix the behavior of the entire molecule. D changes the identity/polarity of water rather than considering the mixed interactions. The trend is qualitative and does not require a sharp universal chain-length cutoff."
+    },
+    {
+      "id": "chem-3-10-004",
+      "prompt": "A student predicts that every ionic compound must be highly soluble in water because water is polar. Which response best evaluates the prediction?",
+      "options": [
+        "Water can stabilize separated ions, but the prediction must also consider the interactions holding the solid together and the overall balance of interactions.",
+        "The prediction is always correct because any polar solvent completely removes every ionic attraction.",
+        "The prediction is always false because neutral water molecules cannot interact with charged ions.",
+        "The prediction is correct only if the ionic solid first becomes a set of neutral atoms."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Ion–dipole solvation can favor separation of ions, but it does not universally overcome the interactions in every ionic solid and changes in the solvent environment. B equates favorable solvation with guaranteed complete dissolution of any lattice. C ignores attraction between an ion and water’s partial charges. D requires a chemical change to neutral atoms that is not necessary for ionic dissolution. A qualitative interaction model gives a basis for comparison without claiming a universal solubility rule or requiring a Ksp calculation here."
+    },
+    {
+      "id": "chem-3-10-005",
+      "prompt": "Why is hexane generally a poor solvent for NaCl compared with water?",
+      "options": [
+        "Hexane has stronger permanent dipoles than water, so it repels all ions.",
+        "Water can dissolve NaCl only by changing Na+ into neutral sodium atoms.",
+        "NaCl must dissolve equally well in both solvents because its ion charges do not depend on solvent identity.",
+        "Hexane does not provide the strong conventional ion–dipole stabilization that polar water can provide to separated Na+ and Cl- ions."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Water’s dipole can stabilize separated cations and anions; nonpolar hexane does not provide comparable permanent-dipole solvation for this salt, making the strong ionic lattice difficult to offset. A incorrectly assigns strong permanent dipoles to hexane and replaces solvation with universal repulsion. B neutralizes the ions without the specified chemical electron transfer. C confuses unchanged ion identities with unchanged solute–solvent interactions; the solvent’s structure and polarity still matter. Nonpolar solvents can still have induced-dipole interactions; the point is not that every possible ion–solvent attraction is exactly zero."
+    },
+    {
+      "id": "chem-3-10-006",
+      "prompt": "Two hypothetical ionic solids have similar ion sizes. One consists of +2 and −2 ions, the other of +1 and −1 ions. A student argues that stronger hydration of the doubly charged ions proves their solid is more water-soluble. Which evaluation is best?",
+      "options": [
+        "The claim is guaranteed because only hydration strength matters.",
+        "The claim is guaranteed false because stronger lattice interactions alone always rule out dissolution, regardless of hydration.",
+        "The conclusion cannot follow from hydration alone, because the larger charges can also strengthen attractions within the solid.",
+        "The two solids must have identical solubility because their ion sizes are similar."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Greater charge can strengthen both ion–dipole solvation and ion–ion attractions in the original solid. Considering just the favorable side does not establish the final solubility ranking. A ignores the competing interactions. B makes the opposite one-sided argument by ignoring favorable solvation and treating lattice strength alone as decisive. D uses size alone while omitting charge and the overall balance. This question asks the limits of a qualitative argument; no lattice-energy, hydration-enthalpy, entropy, or equilibrium-constant calculation is required."
+    },
+    {
+      "id": "chem-3-10-007",
+      "prompt": "A neutral molecular solute dissolves intact in a suitable molecular solvent, with no reaction. Which particle-level account is appropriate?",
+      "options": [
+        "Every covalent bond inside the solute must break before any mixing can occur.",
+        "Some original solute–solute and solvent–solvent contacts are replaced by solute–solvent contacts while the molecules retain their identities.",
+        "All solute and solvent molecules must become fully separated, with no attractions remaining in the solution.",
+        "The solute must acquire a permanent full ionic charge even though the stated model is nonreactive molecular dissolution."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Mixing changes which particles interact with one another; it does not require destroying the molecules or removing every cohesive interaction. A confuses dissolution with covalent decomposition. C describes complete separation rather than a condensed molecular solution. D incorrectly requires ion formation. The relative balance of the old and new interactions helps explain compatibility, but a qualitative interaction description is not a complete quantitative thermodynamic calculation."
+    },
+    {
+      "id": "chem-3-10-008",
+      "prompt": "A small polar molecule has an oxygen atom with available lone pairs but no O–H, N–H, or F–H bond. A student claims it cannot interact favorably with water because it is not a conventional hydrogen-bond donor. Which response is best?",
+      "options": [
+        "Water can donate an O–H hydrogen bond to the solute’s acceptor oxygen; the solute need not also be a donor.",
+        "Any molecule without its own O–H bond can have only dispersion interactions with water.",
+        "The oxygen must form a full O2- ion before water can approach it.",
+        "Both partners must each donate and accept a hydrogen bond in every individual contact."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. A solute oxygen can accept a hydrogen bond from water’s O–H group, even when the solute has no conventional donor of its own. B excludes dipolar and acceptor interactions without justification. C replaces a molecular lone-pair acceptor with an unsupported full ionic species. D imposes simultaneous donor/acceptor roles on both partners in one contact; one donor and one suitable acceptor suffice. This reasoning supports favorable interactions but does not guarantee that every such molecule is fully miscible with water."
+    },
+    {
+      "id": "chem-3-10-009",
+      "prompt": "Which statement best describes the usefulness of the phrase “like dissolves like”?",
+      "options": [
+        "It guarantees complete miscibility between every pair of polar substances.",
+        "It proves every nonpolar molecule has exactly zero solubility in water.",
+        "It is a qualitative guide based on compatible intermolecular interactions, with the full molecular structures and competing interactions still relevant.",
+        "It means substances dissolve only when solute and solvent have the same molecular formula."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Similar interaction types often make mixing favorable, but the phrase is a tendency rather than an exact universal law. A makes polarity alone a guarantee despite differences in structure and interaction balance. B replaces low compatibility with an absolute zero-solubility claim. D confuses similar interactions with identical chemical identity. A useful model should explain trends while acknowledging what it cannot quantify or guarantee from a single label."
+    },
+    {
+      "id": "chem-3-10-010",
+      "prompt": "Two liquids form separate bulk layers, but reliable analysis detects a small dissolved amount of each liquid in the other layer. Which interpretation is consistent with solubility concepts?",
+      "options": [
+        "Two layers prove every detected cross-layer molecule must have changed its molecular formula.",
+        "Limited mutual solubility can coexist with bulk phase separation; separate layers do not require exactly zero molecules of the other component.",
+        "The two layers must have equal composition because the liquids were shaken together.",
+        "Any detected molecule in the other layer proves complete miscibility, regardless of the persistent separate phases."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. A system can have finite but limited mutual solubility and still separate into phases with different compositions. A invokes chemical change rather than physical partitioning. C assumes shaking guarantees equal equilibrium composition. D confuses a small dissolved amount with unlimited mixing into one homogeneous phase. The analysis is stipulated reliable, so the question does not ask students to diagnose sampling contamination or calculate a distribution coefficient."
+    },
+    {
+      "id": "chem-3-10-011",
+      "prompt": "Adding some ethanol to water increases the dissolved amount of a particular nonpolar molecular solute in a given experiment. Ethanol contains both an O–H group and a small hydrocarbon region. Which structural explanation is consistent with this observation?",
+      "options": [
+        "Ethanol must convert the nonpolar solute into a new ionic compound before it can dissolve.",
+        "Once ethanol is present, only water–water contacts matter; solute–solvent contacts remain irrelevant.",
+        "Any increase in solubility requires exactly equal numbers of water and solute molecules.",
+        "Ethanol can maintain favorable contacts with water through its O–H group while offering additional nonpolar-region interactions with the solute."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. A solvent component with both polar and nonpolar regions can change the balance of interactions and help accommodate the stated solute in the solvent mixture. A requires an unsupported chemical ionization. B excludes the new solute–solvent contacts that can change the balance of interactions. C imposes a fixed one-to-one mixture ratio not required by the observation or by solution behavior. The observation is supplied; the explanation does not claim that ethanol makes every nonpolar compound infinitely soluble or that all solvent mixtures behave identically."
+    }
+  ]
+}

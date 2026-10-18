@@ -1,5 +1,18 @@
 # PrepAtlas milestone verification
 
+## Complete Chemistry bank publication — October 18, 2026
+
+- **All 1,001 MCQs are available in Practice: 91 topics × eleven; zero withheld.** Owner bulk authorization supersedes prior per-question approval for the completed bank. All content/IDs/keys/explanations match the frozen checkpoint. No human scientific approval is claimed. [Publication review](../content-drafts/chemistry/PUBLICATION_REVIEW.md) resolves the documented scope, difficulty and repetition flags and records limitations.
+- Structural/ID/count checks, frozen semantic hashes and preservation audit, full scientific-model suite and new publication/flagged-calculation checks passed. Original Topic 1.1, recovered objects, earlier saved banks and empty official resource catalog are preserved.
+- TypeScript, all **37 unit tests** and fresh production build passed. Tests cover every key's four choices, retained selections, retry/first-score policy, incomplete sessions, boundaries, restart and a complete 1,001/1,001 score.
+- Development and separate production suites passed all 19 page routes, CSS, seven invalid routes, six fixed course themes and fresh homepage rotation. Expanded publication suite passed all **91 topic routes, nine units and course scope** on both servers, verifying counts, correct first-question identity and one-question rendering.
+- Browser quiz: initial incorrect answer, correct retry, then ten correct answers produced **10/11 (91%)**. Both graded and ungraded selections survived Previous/Next. Full explanations, first/last boundaries, review and restart worked. Finish with one selected/unchecked correct answer yielded **1/11 (9%)**, ten unanswered. Unit/topic filters and reload reset passed. At 390px, feedback/navigation remained usable without horizontal overflow; captured browser warnings/errors: none.
+- Only selected-scope questions are passed from server pages to Practice; dashboard/course count helpers use a lightweight index, avoiding a full-bank client import. One question form is mounted at a time.
+- Preview remains at `http://127.0.0.1:3000`; temporary production server 3100 was stopped. Storage keys/notes/resources/progress remain untouched. No public deployment, new resources, videos or major redesign.
+- Browser proof: `C:/Users/devan/.codex/visualizations/2026/10/17/01a14a50-98cd-74d2-a847-9845fa66437d/prepatlas-published-chemistry-results.jpg`.
+
+Earlier sections retain historical checkpoint results; their unpublished counts no longer describe the current application.
+
 ## Complete 1,001-question bank checkpoint — October 18, 2026
 
 - All 91 topics now contain exactly 11 complete questions: 1,001 total. Only the original authorized Topic1.1 bank (11) is live; 990 remain unpublished in 90 pending sets. No missing counts or structural/ID defects remain.

@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 3,
+  "topicId": "topic-3-7",
+  "questions": [
+    {
+      "id": "chem-3-7-001",
+      "prompt": "A solution contains 0.150 mol NaCl in a final solution volume of 750. mL. What is its NaCl molarity?",
+      "options": [
+        "2.00 × 10^-4 M",
+        "5.00 M",
+        "0.113 M",
+        "0.200 M"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The final volume is 0.750 L, so M = n/V = 0.150 mol/0.750 L = 0.200 mol/L. A divides by the number of milliliters without converting to liters. B inverts the amount-to-volume ratio. C multiplies amount by volume instead of dividing. Molarity uses liters of the complete solution, not liters of solvent alone or a volume with unspecified units."
+    },
+    {
+      "id": "chem-3-7-002",
+      "prompt": "What mass of KNO3 is needed to prepare 250. mL of 0.100 M KNO3 solution? The molar mass is 101.1 g/mol.",
+      "options": [
+        "0.0250 g",
+        "2.53 g",
+        "25.3 g",
+        "40.4 g"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The required amount is (0.100 mol/L)(0.250 L) = 0.0250 mol. Multiplying by 101.1 g/mol gives 2.5275 g, or 2.53 g. A reports the numerical mole amount as grams. C is a factor of ten too large, as from a tenfold volume-conversion error. D uses molarity times molar mass divided by volume rather than multiplied by volume, giving an incorrect dimension and value. The weighed solute must ultimately be diluted to the stated final solution volume."
+    },
+    {
+      "id": "chem-3-7-003",
+      "prompt": "A 25.0 mL portion of 0.400 M stock solution is diluted with solvent to a final volume of 100.0 mL. No solute is lost or reacts. What is the final molarity?",
+      "options": [
+        "0.100 M",
+        "1.60 M",
+        "0.133 M",
+        "0.400 M"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The solute amount is conserved: M1V1 = M2V2. Thus M2 = 0.400(25.0/100.0) = 0.100 M. B reverses the dilution ratio and raises concentration when solvent is added. C uses the 75.0 mL of added solvent rather than the 100.0 mL final solution volume. D ignores the fourfold final volume. The same volume unit may be used in both sides of this ratio because it cancels."
+    },
+    {
+      "id": "chem-3-7-004",
+      "prompt": "A student combines 100.0 mL of 0.200 M NaCl and 300.0 mL of 0.400 M NaCl. Volumes are additive, and there is no reaction or solute loss. What is the final NaCl molarity?",
+      "options": [
+        "0.300 M",
+        "0.600 M",
+        "0.350 M",
+        "0.140 M"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The portions contain (0.1000 L)(0.200 mol/L) = 0.0200 mol and (0.3000 L)(0.400 mol/L) = 0.120 mol. Total amount is 0.140 mol in 0.4000 L, giving 0.350 M. A takes an unweighted average despite unequal volumes. B adds concentrations instead of amounts. D labels the total mole amount as a concentration without dividing by total volume. The result appropriately lies between the two starting concentrations, closer to the larger-volume portion’s value."
+    },
+    {
+      "id": "chem-3-7-005",
+      "prompt": "CaCl2 is assumed to dissociate completely in water. A solution has an analytical CaCl2 concentration of 0.100 M and a final volume of 0.250 L. What is the chloride-ion concentration?",
+      "options": [
+        "0.100 M",
+        "0.0500 M",
+        "0.300 M",
+        "0.200 M"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Each dissolved CaCl2 formula unit provides two Cl- ions, so [Cl-] = 2(0.100 M) = 0.200 M. Equivalently, 0.0250 mol CaCl2 gives 0.0500 mol Cl- in 0.250 L. A omits the two-chloride ratio. B reports the numerical chloride mole amount as molarity. C counts all ions, including Ca2+, rather than chloride alone. Complete dissociation is an explicit model assumption; no activity or equilibrium calculation is required."
+    },
+    {
+      "id": "chem-3-7-006",
+      "prompt": "A solution contains intact dissolved glucose molecules at 0.200 M. How many glucose molecules are in 250. mL? Use NA = 6.022 × 10^23 mol^-1.",
+      "options": [
+        "3.01 × 10^22 molecules",
+        "1.20 × 10^23 molecules",
+        "7.53 × 10^23 molecules",
+        "3.01 × 10^25 molecules"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The amount is (0.200 mol/L)(0.250 L) = 0.0500 mol. Multiplication by NA gives 3.011 × 10^22 molecules, or 3.01 × 10^22. B uses molarity times NA without including the sample volume. C divides volume by molarity instead of multiplying, then converts the resulting incorrect amount to particles. D treats 250 mL as 250 L. The question counts glucose molecules, so the number of atoms inside each molecule does not multiply this result."
+    },
+    {
+      "id": "chem-3-7-007",
+      "prompt": "A student correctly weighs the solute needed for a target molarity, dissolves all of it, but fills a volumetric flask above its calibration mark. No solute is lost. How does the actual molarity compare with the target?",
+      "options": [
+        "It is higher because the total mass of solution is greater.",
+        "It is lower because the same solute amount is in a larger final solution volume.",
+        "It is unchanged because conserving the solute amount alone fixes molarity.",
+        "The direction cannot be determined without the solute’s molar mass, even though the correct amount was weighed."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. M = n/V, so increasing V at fixed n decreases concentration. A substitutes total solution mass for the amount-per-volume definition. C ignores the denominator: conservation of n does not imply conservation of M when volume changes. D asks for information unnecessary to determine the direction once the solute amount is fixed. This is a preparation error in the final volume, not a chemical loss of solute."
+    },
+    {
+      "id": "chem-3-7-008",
+      "prompt": "Consider three samples: I, a single-phase homogeneous Cu–Ni solid alloy; II, a uniform He–N2 gas mixture; III, oil and water that separate into layers after shaking. Which are consistent with the solution/homogeneous-mixture model?",
+      "options": [
+        "Only I, because a gas mixture cannot be a solution.",
+        "Only II, because a solid cannot be a solution.",
+        "I, II, and III, because all mixtures must be homogeneous.",
+        "I and II only, because solutions can be solid or gaseous while the layered sample has location-dependent composition."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. A homogeneous mixture has uniform macroscopic composition and can be solid, liquid, or gas. The explicitly single-phase alloy and uniform gas meet that criterion; the separated oil/water layers do not. A and B incorrectly restrict the possible phase of a solution. C equates all mixtures with homogeneous mixtures despite the layered evidence. The classification does not claim every alloy or every gas combination is homogeneous under all conditions; those properties are supplied for these samples."
+    },
+    {
+      "id": "chem-3-7-009",
+      "prompt": "A homogeneous solution is warmed without solute loss or reaction. Its measured solution volume increases slightly while the solute mole amount remains unchanged. What happens to its molarity?",
+      "options": [
+        "It must increase simply because temperature increased.",
+        "It must stay exactly constant because the number of solute moles is conserved.",
+        "It decreases because molarity is solute amount divided by the measured solution volume.",
+        "The direction cannot be determined unless the solute’s formula is known."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. With fixed n and a larger solution volume, M = n/V decreases. A incorrectly assumes warming always raises concentration; the stated volume change is the relevant information. B confuses fixed amount with fixed amount per liter. D is unnecessary because the direction follows without identifying the solute. The prompt supplies the volume response rather than requiring a thermal-expansion coefficient or a colligative-property calculation."
+    },
+    {
+      "id": "chem-3-7-010",
+      "prompt": "A student has correctly measured 0.0500 mol of a soluble, nonreactive solute. Which procedure properly targets 250. mL of 0.200 M solution?",
+      "options": [
+        "Add exactly 250. mL of water and assume the solution’s final volume is exactly the water volume.",
+        "Dissolve the solute in less than 250. mL of solvent, then add solvent until the final solution volume is 250. mL at the calibration temperature.",
+        "Use 0.200 mol of solute instead and dilute to 250. mL.",
+        "Use the 0.0500 mol portion but dilute it to a final volume of 1.00 L."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The desired final volume is n/M = 0.0500/0.200 = 0.250 L. Dissolving first and then adjusting the total solution volume implements that definition. A confuses solvent volume with solution volume; dissolving a solute need not preserve the initial solvent volume exactly. C gives 0.800 M, four times the target. D gives 0.0500 M, one quarter of the target. The calibration-temperature condition prevents an avoidable volume mismatch from being hidden in the procedure."
+    },
+    {
+      "id": "chem-3-7-011",
+      "prompt": "A student mixes 50.0 mL of 0.200 M NaCl with 50.0 mL of 0.100 M KCl. Both salts dissociate completely, no reaction occurs, and volumes are additive. What is the final chloride-ion concentration?",
+      "options": [
+        "0.100 M",
+        "0.0500 M",
+        "0.150 M",
+        "0.300 M"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. NaCl supplies (0.0500 L)(0.200 mol/L) = 0.0100 mol Cl-, and KCl supplies (0.0500 L)(0.100 mol/L) = 0.00500 mol Cl-. Total chloride is 0.0150 mol in 0.1000 L, giving 0.150 M. A counts only chloride from NaCl after dilution. B counts only chloride from KCl after dilution. D adds the original concentrations without accounting for the doubled volume. Sodium and potassium are distinct ions, but both salts contribute to the same chloride population."
+    }
+  ]
+}

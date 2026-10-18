@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 4,
+  "topicId": "topic-4-8",
+  "questions": [
+    {
+      "id": "chem-4-8-001",
+      "prompt": "For HF(aq) + H2O(l) ⇌ H3O+(aq) + F−(aq), which choice lists the two conjugate acid-base pairs?",
+      "options": [
+        "HF/H2O and H3O+/F−",
+        "HF/H3O+ and H2O/F−",
+        "HF/F− and HF/H3O+",
+        "HF/F− and H3O+/H2O"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. HF loses one proton to become F−, and H2O gains one proton to become H3O+. Each conjugate pair differs by exactly H+ with the corresponding one-unit charge change. A pairs the two reacting partners rather than conjugates. B pairs species with different nonhydrogen atoms. C includes the correct HF/F− pair but gives HF/H3O+ as the second, which does not differ solely by one proton."
+    },
+    {
+      "id": "chem-4-8-002",
+      "prompt": "In separate aqueous reactions, HCO3− + H3O+ → H2CO3 + H2O and HCO3− + OH− → CO3^2− + H2O. What do these equations establish about HCO3−?",
+      "options": [
+        "It is an acid in both reactions because its formula contains H.",
+        "It is a base in both reactions because it has negative charge.",
+        "It accepts a proton in the first reaction and donates one in the second, so it can act as either a Brønsted-Lowry base or acid.",
+        "It cannot have an acid-base role because it is a polyatomic ion."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Formation of H2CO3 adds H+ to bicarbonate, while formation of CO3^2− removes H+. Thus its role depends on the reacting partner. A mistakes hydrogen content for proof of donation in every reaction. B mistakes negative charge for a fixed base-only role. D incorrectly excludes polyatomic ions from proton transfer. The supplied equations establish the roles without requiring equilibrium amounts."
+    },
+    {
+      "id": "chem-4-8-003",
+      "prompt": "For NH3(aq) + H2O(l) ⇌ NH4+(aq) + OH−(aq), which description correctly identifies water's role and its conjugate partner?",
+      "options": [
+        "Water is the base, and NH4+ is its conjugate acid.",
+        "Water is the acid, and OH− is its conjugate base.",
+        "Water is the acid, and NH3 is its conjugate base.",
+        "Water has no acid-base role because it is the solvent."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Water donates H+ to ammonia, leaving OH− as its conjugate base. A reverses water's role and assigns it ammonia's conjugate partner. C identifies the correct role but pairs water with a nitrogen-containing molecule instead of its own deprotonated form. D ignores that a solvent can participate as a proton donor or acceptor. Water need not have the same role in every aqueous reaction."
+    },
+    {
+      "id": "chem-4-8-004",
+      "prompt": "Ethylamine reacts in water by C2H5NH2 + H3O+ → C2H5NH3+ + H2O. Which reactant is the Brønsted-Lowry base, and what directly establishes that role?",
+      "options": [
+        "C2H5NH2, because it accepts a proton to form C2H5NH3+.",
+        "C2H5NH2, because every nitrogen-containing species must be a base in every reaction.",
+        "H3O+, because a positively charged species must accept a proton.",
+        "H3O+, because it becomes water by accepting an electron."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The amine gains one H+ and its charge rises from 0 to +1, identifying proton acceptance. B reaches the same species choice through an invalid universal claim; nitrogen content alone does not define its role in every reaction. C contradicts hydronium's loss of a proton. D substitutes electron transfer for the proton transfer shown. A base need not contain OH− in its formula."
+    },
+    {
+      "id": "chem-4-8-005",
+      "prompt": "In HSO4−(aq) + H2O(l) ⇌ SO4^2−(aq) + H3O+(aq), which statement correctly describes the proton transfer?",
+      "options": [
+        "SO4^2− is formed when HSO4− gains H+.",
+        "Water acts as an acid and becomes hydronium by donating H+.",
+        "HSO4− donates H+ to water; water acts as a base and becomes H3O+.",
+        "The negative charge on HSO4− prevents it from donating a proton."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Hydrogen sulfate loses a proton and becomes sulfate, while water gains it and becomes hydronium. A reverses the change in hydrogen count and charge. B reverses water's role: hydronium formation requires proton acceptance. D assigns acid-base behavior from charge alone, contrary to the supplied equation. A negatively charged species can act as an acid if it donates a proton in the reaction being considered."
+    },
+    {
+      "id": "chem-4-8-006",
+      "prompt": "Which species is the conjugate acid of HPO4^2−, formed by adding exactly one proton without changing the phosphorus-oxygen framework?",
+      "options": [
+        "PO4^3−",
+        "H3PO4",
+        "H2PO4^2−",
+        "H2PO4−"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Adding H+ increases the hydrogen count from one to two and raises the charge from −2 to −1. A is the conjugate base, formed by removing H+. B differs by two protons and is not the immediate conjugate acid of HPO4^2−. C adds hydrogen without the required one-unit charge increase, violating proton/charge accounting. Conjugate pairs differ by one proton, even in a species with several possible protonation stages."
+    },
+    {
+      "id": "chem-4-8-007",
+      "prompt": "Which species is the conjugate base formed when CH3NH3+ donates one proton in aqueous solution?",
+      "options": [
+        "CH3NH4^2+",
+        "CH3NH2",
+        "CH3NH2−",
+        "CH3− + NH3"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Removing H+ from CH3NH3+ gives neutral CH3NH2: hydrogen count decreases by one and charge decreases by one unit, from +1 to 0. A adds a proton rather than removes one. C removes hydrogen but lowers the charge by two units instead of one. D breaks the carbon-nitrogen framework into different species rather than forming a conjugate partner by proton loss. Positively charged species can have neutral conjugate bases."
+    },
+    {
+      "id": "chem-4-8-008",
+      "prompt": "In water under the same conditions, HA is a stronger acid than HB. Which comparison of their conjugate bases A− and B− follows?",
+      "options": [
+        "A− is the weaker base because it is the conjugate base of the stronger acid.",
+        "A− is the stronger base because acid and conjugate-base strengths always increase together.",
+        "A− and B− must be equally basic because their charges are equal.",
+        "Neither can be a base because neither formula contains hydrogen."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. For conjugate partners in the same solvent, greater tendency of an acid to donate H+ corresponds to a weaker tendency of its conjugate base to accept H+. B reverses this relationship. C treats equal charge as a complete measure of basicity. D overlooks proton acceptance by a species that need not initially contain H. The comparison concerns relative strengths, not whether the weaker base has exactly zero basic behavior."
+    },
+    {
+      "id": "chem-4-8-009",
+      "prompt": "For HA + B− ⇌ A− + HB in water, HA is known to be a stronger acid than HB under the stated conditions. Which qualitative explanation supports a product-favored proton-transfer equilibrium?",
+      "options": [
+        "The products contain more atoms than the reactants.",
+        "Any reaction that forms a neutral molecule must proceed completely.",
+        "The negative charge changes from −1 overall to zero overall, forcing products to form.",
+        "The products pair the weaker acid HB with the weaker base A−, relative to the reacting HA and B−."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The stronger acid HA has weaker conjugate base A−; the weaker acid HB has stronger conjugate base B−. Proton transfer therefore favors the weaker acid/base side qualitatively. A violates atom accounting. B makes a universal completion claim not implied by neutrality or relative strength. C miscounts charge: each side has total charge −1. Product-favored does not mean every particle reacts or that the equilibrium constant can be calculated from the supplied ranking alone."
+    },
+    {
+      "id": "chem-4-8-010",
+      "prompt": "In the aqueous reaction CH3COOH + CN− ⇌ CH3COO− + HCN, which statement correctly follows the proton from donor to acceptor?",
+      "options": [
+        "CH3COO− is the conjugate acid of CN− because both are negatively charged.",
+        "CH3COOH and CN− are a conjugate pair because they react with each other.",
+        "CH3COOH donates H+ and becomes CH3COO−; CN− accepts H+ and becomes its conjugate acid HCN.",
+        "CN− donates an electron to become HCN, so no proton transfer occurs."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The two matched conjugate pairs are acetic acid/acetate and HCN/CN−, with one proton transferred between them. A pairs species with different nonhydrogen frameworks solely by charge. B confuses reacting acid-base partners with conjugates. D omits the added hydrogen in HCN and incorrectly replaces proton acceptance with electron donation. Identifying roles does not require a numerical equilibrium calculation or assuming complete reaction."
+    },
+    {
+      "id": "chem-4-8-011",
+      "prompt": "For the symbolic proton-transfer representation H2O + H2O ⇌ H3O+ + OH−, which description of the two reacting water molecules is consistent with Brønsted-Lowry roles?",
+      "options": [
+        "Both water molecules donate a proton because both products are ions.",
+        "One water molecule donates a proton and becomes OH−; the other accepts it and becomes H3O+.",
+        "One oxygen nucleus is converted into hydrogen so the products can form.",
+        "Neither water molecule participates as acid or base because a substance cannot react with another molecule of itself."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The donor water acts as an acid and leaves OH−, while the acceptor water acts as a base and becomes H3O+. A fails to identify a proton acceptor and is inconsistent with hydronium gaining H+. C invents a nuclear transformation. D falsely requires an acid and base to have different chemical formulas before reaction. The model describes two participating molecules with different roles; it does not imply that all water molecules are ionized."
+    }
+  ]
+}

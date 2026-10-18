@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 6,
+  "topicId": "topic-6-6",
+  "questions": [
+    {
+      "id": "chem-6-6-001",
+      "prompt": "For 2H2(g) + O2(g) → 2H2O(l), ΔH = −572 kJ for the reaction as written. At constant pressure, what q accompanies complete reaction of 0.500 mol H2 with excess O2?",
+      "options": [
+        "−143 kJ",
+        "−286 kJ",
+        "+143 kJ",
+        "−572 kJ"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The specified equation consumes 2 mol H2 per −572 kJ, so q = (0.500/2)(−572) = −143 kJ. B treats −572 as per one mole H2. C reverses release to uptake. D applies the full equation amount despite only one-fourth of its H2 quantity reacting. The sign refers to the reacting system."
+    },
+    {
+      "id": "chem-6-6-002",
+      "prompt": "N2(g) + 3H2(g) → 2NH3(g) has ΔH = −92.0 kJ as written. If 0.300 mol NH3 forms at constant pressure, with no side reaction, what is the reaction heat?",
+      "options": [
+        "−27.6 kJ",
+        "+13.8 kJ",
+        "−13.8 kJ",
+        "−9.20 kJ"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Formation of two moles NH3 corresponds to −92.0 kJ, so 0.300 mol gives (0.300/2)(−92.0) = −13.8 kJ. A omits the product coefficient two. B reverses the sign. D divides the measured NH3 amount by the H2 coefficient three instead of the NH3 coefficient two."
+    },
+    {
+      "id": "chem-6-6-003",
+      "prompt": "CaCO3(s) → CaO(s) + CO2(g) has ΔH = +178 kJ per mole CaCO3 decomposed. What heat must a constant-pressure process supply for complete decomposition of 10.0 g pure CaCO3, using 100.0 g/mol? Neglect separate heating of the apparatus and reactant to reaction temperature.",
+      "options": [
+        "1.78 kJ",
+        "17.8 kJ",
+        "178 kJ",
+        "1.78 × 10^3 kJ"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The sample is 10.0/100.0 = 0.100 mol, requiring 0.100(178) = 17.8 kJ. A introduces a factor-of-ten error. C uses a full mole rather than 0.100 mol. D multiplies grams directly by a per-mole enthalpy. The calculation concerns reaction heat alone, with sensible-heating contributions explicitly excluded."
+    },
+    {
+      "id": "chem-6-6-004",
+      "prompt": "A constant-pressure reaction absorbs 45.0 kJ. Its stated molar reaction enthalpy is +90.0 kJ per mole of A consumed. What amount of A reacts?",
+      "options": [
+        "2.00 mol",
+        "4.05 × 10^3 mol",
+        "−0.500 mol",
+        "0.500 mol"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. n_A = q/ΔH_per_mol_A = 45.0/90.0 = 0.500 mol. A reverses the ratio. B multiplies heat by a molar enthalpy, producing inappropriate units. C makes the reacting amount negative despite positive uptake and positive molar enthalpy. The amount basis is explicitly per mole A, not an unstated equation coefficient."
+    },
+    {
+      "id": "chem-6-6-005",
+      "prompt": "For 2Al(s) + 3Cl2(g) → 2AlCl3(s), ΔH = −1400 kJ as written. Initially 0.300 mol Al and 0.300 mol Cl2 react to completion at constant pressure. What is q, assuming only this reaction?",
+      "options": [
+        "−140 kJ",
+        "−210 kJ",
+        "−420 kJ",
+        "+140 kJ"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Chlorine limits the equation extent to 0.300/3 = 0.100 mol of reaction as written; q = 0.100(−1400) = −140 kJ. B uses the Al-allowed extent 0.300/2 while ignoring the chlorine shortage. C multiplies by 0.300 without coefficient normalization. D gives the correct extent but wrong heat direction."
+    },
+    {
+      "id": "chem-6-6-006",
+      "prompt": "Complete reaction of 0.0250 mol A at constant pressure transfers 1.25 kJ to the measured thermal surroundings. Other exchanges are negligible. What reaction enthalpy per mole A consumed follows?",
+      "options": [
+        "+50.0 kJ/mol A",
+        "−0.0313 kJ/mol A",
+        "−1.25 kJ/mol A",
+        "−50.0 kJ/mol A"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The system releases q = −1.25 kJ, and division by 0.0250 mol A gives −50.0 kJ/mol A. A assigns the surroundings' positive sign to the reaction. B multiplies by amount instead of dividing. C reports batch heat as a molar quantity without normalization. Equal and opposite system/surroundings transfers preserve energy."
+    },
+    {
+      "id": "chem-6-6-007",
+      "prompt": "A reaction has negative molar enthalpy at constant pressure. Which additional conclusion is NOT justified by that sign alone?",
+      "options": [
+        "The reaction releases heat for the stated forward conversion.",
+        "Its product enthalpy is lower than its reactant enthalpy on the same amount basis.",
+        "It must occur rapidly at room temperature without any kinetic barrier information.",
+        "Its measured thermal surroundings can gain energy from the reaction."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is the unsupported conclusion. An energy-releasing endpoint difference does not determine activation barriers or a room-temperature rate. A follows the constant-pressure definition. B expresses the negative endpoint difference. D is compatible with heat transfer from the system to its surroundings. Reaction energetics and kinetics answer different questions."
+    },
+    {
+      "id": "chem-6-6-008",
+      "prompt": "A reaction releases 56.0 kJ per mole A consumed at constant pressure. Complete reaction of 0.100 mol A heats a 100. g thermal mixture with c = 4.00 J·g^-1·K^-1. All reaction heat enters that mixture, and vessel heating/losses are negligible. What temperature increase is expected?",
+      "options": [
+        "0.0140 K",
+        "14.0 K",
+        "140 K",
+        "−14.0 K"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Reaction heat is −5.60 kJ and the mixture receives +5600 J. ΔT = 5600/(100. × 4.00) = +14.0 K. A uses 5.60 as joules instead of converting kilojoules to joules. C omits the 0.100 mol factor. D uses the reacting system's sign for the receiving mixture. The model separates reaction enthalpy from thermal response."
+    },
+    {
+      "id": "chem-6-6-009",
+      "prompt": "At the same specified reference conditions, forming 1 mol H2O(g) from H2 and O2 has ΔH = −242 kJ, while forming 1 mol H2O(l) has ΔH = −286 kJ. Which interpretation correctly uses the phase labels?",
+      "options": [
+        "The two values must be identical because both product formulas are H2O.",
+        "Forming the gas releases 44 kJ more per mole than forming the liquid.",
+        "The negative signs mean neither reaction transfers heat to surroundings.",
+        "Forming liquid water releases 44 kJ more per mole, so product phase is part of the thermochemical specification."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The liquid-forming heat is 44 kJ/mol more negative, consistent with the lower enthalpy of liquid relative to vapor at the stated comparison conditions. A ignores phase-dependent energy. B reverses the difference. C reverses the meaning of heat release at constant pressure. The formula alone does not fully specify a thermochemical state."
+    },
+    {
+      "id": "chem-6-6-010",
+      "prompt": "For 2A → P, ΔH = −100. kJ as written. A constant-pressure experiment begins with 0.400 mol A, but only 60.0% is converted by this reaction. What reaction heat corresponds to that conversion?",
+      "options": [
+        "−20.0 kJ",
+        "−24.0 kJ",
+        "−12.0 kJ",
+        "−33.3 kJ"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A consumed is 0.400(0.600) = 0.240 mol. Dividing by coefficient two gives extent 0.120 mol of reaction as written, so q = −12.0 kJ. A assumes full conversion. B accounts for 60.0% but ignores the coefficient two. D divides the full-conversion heat by 0.600 instead of multiplying. Unreacted material does not contribute the unperformed reaction's heat."
+    },
+    {
+      "id": "chem-6-6-011",
+      "prompt": "For 2A + B → P, the enthalpy change is −80.0 kJ for the reaction as written. Which statement makes the per-mole amount basis consistent with those coefficients?",
+      "options": [
+        "−80.0 kJ per mole A consumed, equivalent to −160 kJ per mole P formed.",
+        "−80.0 kJ per mole P formed, equivalent to −40.0 kJ per mole A consumed.",
+        "−40.0 kJ per mole P formed, equivalent to −80.0 kJ per mole A consumed.",
+        "−160 kJ per mole P formed, equivalent to −80.0 kJ per mole B consumed."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. One written reaction forms one mole P and consumes two moles A, so −80.0 per P corresponds to −40.0 per A. A incorrectly assigns the full reaction heat to each A. C interchanges the two amount bases. D doubles the heat per P while assigning a mismatched value to B, whose coefficient is one. A molar reaction enthalpy should identify its reaction or species basis."
+    }
+  ]
+}

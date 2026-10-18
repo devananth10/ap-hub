@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 9,
+  "topicId": "topic-9-9",
+  "questions": [
+    {
+      "id": "chem-9-9-001",
+      "prompt": "Standard reduction potentials are Cu2++2e−→Cu, +0.34 V, and Zn2++2e−→Zn, −0.76 V. What is E°cell for Zn+Cu2+→Zn2++Cu?",
+      "options": [
+        "−0.42 V",
+        "−1.10 V",
+        "+1.10 V",
+        "+0.42 V"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. E°cell=E°red,cathode−E°red,anode=0.34−(−0.76)=1.10 V. A is incorrect: that adds both reduction potentials without reversing zinc. B is incorrect: that is the reverse reaction potential. D is incorrect: that subtracts magnitudes rather than signed reduction potentials."
+    },
+    {
+      "id": "chem-9-9-002",
+      "prompt": "For Cu(s)+2Ag+(aq)→Cu2+(aq)+2Ag(s), E°cell=0.46 V. Use F=96485 C/mol e−. What is ΔG° per equation as written?",
+      "options": [
+        "Approximately−88.8 kJ",
+        "−44.4 kJ",
+        "+88.8 kJ",
+        "−88.8 J"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Two electrons transfer, so ΔG°=−2(96485)(0.46)=−88766 J. B is incorrect: that uses one electron instead of two. C is incorrect: that loses the negative sign in−nFE°. D is incorrect: that converts the number to kJ but retains J units."
+    },
+    {
+      "id": "chem-9-9-003",
+      "prompt": "For2Al+3Cu2+→2Al3++3Cu, use reduction potentials−1.66 V for Al3+/Al and+0.34 V for Cu2+/Cu. Which E°cell and electron count are correct?",
+      "options": [
+        "E°cell=4.34 V and n=6",
+        "E°cell=2.00 V and n=6",
+        "E°cell=2.00 V and n=5",
+        "E°cell=−2.00 V and n=6"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The potential difference is0.34−(−1.66)=2.00 V. Balancing two three-electron oxidations with three two-electron reductions transfers six electrons. A is incorrect: reduction potentials are not multiplied by balancing coefficients. C is incorrect: electron count is balanced transfer, not the sum of individual ion charges3+2. D is incorrect: that gives the opposite redox direction."
+    },
+    {
+      "id": "chem-9-9-004",
+      "prompt": "A standard cell reaction transfers2 mol electrons per stated reaction amount and has E°=+0.500 V. With F=96485 C/mol, what is ΔG°?",
+      "options": [
+        "+96.5 kJ",
+        "−48.2 kJ",
+        "−193 kJ",
+        "−96.5 kJ"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. −nFE°=−2×96485×0.500=−96485 J. A is incorrect: positive cell potential gives negative standard free-energy change. B is incorrect: that omits the factor two. C is incorrect: that omits multiplication by0.500 V."
+    },
+    {
+      "id": "chem-9-9-005",
+      "prompt": "A balanced redox equation has n=3 and ΔG°=−28.9455 kJ. Use F=96485 C/mol. What is E°cell?",
+      "options": [
+        "+0.100 V",
+        "−0.100 V",
+        "+0.300 V",
+        "+0.000100 V"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. E°=−ΔG°/(nF)=28945.5/(3×96485)=0.100. B is incorrect: that fails to apply the leading minus sign. C is incorrect: that omits n in the denominator. D is incorrect: that fails to convert kJ to J."
+    },
+    {
+      "id": "chem-9-9-006",
+      "prompt": "For the intended standard redox direction, E°cell=−0.20 V. What does this imply?",
+      "options": [
+        "ΔG° is negative because any voltage implies favorability",
+        "The direction must be self-powered under standard conditions",
+        "ΔG° is positive, so that direction requires external driving under standard conditions.",
+        "The reaction violates charge conservation"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. With n and F positive,−nFE° is positive when E° is negative. A is incorrect: the cell-potential sign matters. B is incorrect: negative E° opposes that interpretation. D is incorrect: thermodynamic unfavorability is not a balancing defect."
+    },
+    {
+      "id": "chem-9-9-007",
+      "prompt": "Every coefficient of a balanced redox equation is doubled. At the same standard conditions, how do E°cell and ΔG° change?",
+      "options": [
+        "Both double",
+        "E°cell doubles and ΔG° stays unchanged",
+        "Both change sign",
+        "E°cell is unchanged and ΔG° doubles."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Voltage is intensive; transferred electron amount and free-energy change scale with the equation amount. A is incorrect: potential is not multiplied by stoichiometric scale. B is incorrect: the extensive and intensive behaviors are reversed. C is incorrect: coefficient scaling does not reverse direction."
+    },
+    {
+      "id": "chem-9-9-008",
+      "prompt": "A standard cell reaction has E°=+0.75 V. What is the standard potential for the exactly reversed reaction?",
+      "options": [
+        "+0.75 V",
+        "−0.75 V",
+        "+1.33 V",
+        "0 V"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Reversal changes the sign of the driving potential and standard free-energy change. A is incorrect: that leaves the redox direction unchanged. C is incorrect: voltage is not inverted on reversal. D is incorrect: reversal does not eliminate the endpoint free-energy difference."
+    },
+    {
+      "id": "chem-9-9-009",
+      "prompt": "Standard reduction potentials for M2+/M and N2+/N are+0.60 V and−0.20 V. Which pairing gives the favorable standard cell direction?",
+      "options": [
+        "Reduce N2+ and oxidize M, giving E°cell=+0.80 V",
+        "Reduce both M2+ and N2+ without any oxidation",
+        "Add the listed reductions to get E°cell=+0.40 V",
+        "Reduce M2+ and oxidize N, giving E°cell=+0.80 V."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The more positive reduction is paired with the reverse of the less positive reduction. A is incorrect: that direction actually gives−0.80 V. B is incorrect: a complete cell reaction requires an electron source. C is incorrect: one half-reaction must be reversed to balance electrons."
+    },
+    {
+      "id": "chem-9-9-010",
+      "prompt": "Why are standard reduction potentials not multiplied when half-reaction coefficients are scaled to balance electrons?",
+      "options": [
+        "Scaling changes both free energy and transferred charge proportionally, leaving their ratio unchanged.",
+        "Because electron conservation is unnecessary in a cell",
+        "Because free energy never scales with reaction amount",
+        "Because all standard reduction potentials are equal"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. E°=−ΔG°/(nF) is unchanged when numerator and electron amount scale together. B is incorrect: electron conservation is still required. C is incorrect: free energy is extensive and does scale. D is incorrect: different half-reactions have different potentials."
+    },
+    {
+      "id": "chem-9-9-011",
+      "prompt": "A balanced standard cell reaction has E°cell>0. Which thermodynamic pair follows?",
+      "options": [
+        "ΔG°>0 and K<1",
+        "ΔG°=0 and K=1",
+        "ΔG°<0 and K>1 for that equation at that temperature.",
+        "K>1 and necessarily instantaneous completion"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The cell relation gives negative ΔG°; the equilibrium relation−RTlnK then implies K>1. A is incorrect: both signs correspond to the opposite standard direction. B is incorrect: that requires zero standard potential. D is incorrect: equilibrium favorability does not guarantee fast or exactly complete conversion."
+    }
+  ]
+}

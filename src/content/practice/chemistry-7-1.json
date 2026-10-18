@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 7,
+  "topicId": "equilibrium",
+  "questions": [
+    {
+      "id": "chem-7-1-001",
+      "prompt": "In a sealed vessel containing liquid water and its vapor at constant temperature, the vapor pressure becomes constant while liquid remains. Which molecular description explains this observation?",
+      "options": [
+        "Both processes stop.",
+        "Evaporation and condensation continue at equal rates.",
+        "Evaporation stops but condensation continues.",
+        "Liquid and vapor must contain equal numbers of molecules."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Equal opposing rates keep the vapor amount constant without stopping molecular exchange. A is incorrect: molecules continue crossing the interface. C is incorrect: that would decrease the vapor amount. D is incorrect: equal rates do not require equal phase amounts."
+    },
+    {
+      "id": "chem-7-1-002",
+      "prompt": "A closed, fixed-volume vessel contains A(g) ⇌ B(g). Successive measurements give [A] = 0.80 M and [B] = 0.20 M at each time, with both interconversions independently detected. What is supported?",
+      "options": [
+        "Equilibrium is impossible because [A] differs from [B].",
+        "All A has been consumed.",
+        "The forward rate is four times the reverse rate.",
+        "The mixture is in dynamic equilibrium."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Constant unequal concentrations and ongoing opposing transformations are consistent with equal reaction rates. A is incorrect: concentrations need not be equal. B is incorrect: 0.80 M A remains. C is incorrect: the concentration ratio alone does not give the rate ratio."
+    },
+    {
+      "id": "chem-7-1-003",
+      "prompt": "For A(g) ⇌ B(g) in a closed vessel initially containing only A, which concentration-time behavior is consistent with reaching equilibrium at constant volume and temperature?",
+      "options": [
+        "[A] decreases and [B] increases, then both level off at positive values.",
+        "[A] and [B] must meet at the same value.",
+        "[B] must reach zero at equilibrium.",
+        "Both concentrations continually increase without a source of material."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Net conversion initially produces B; constant concentrations later reflect equal opposing rates. B is incorrect: equal equilibrium concentrations are not required. C is incorrect: both species can remain present. D is incorrect: that violates conservation for this one-to-one closed system."
+    },
+    {
+      "id": "chem-7-1-004",
+      "prompt": "A saturated salt solution is sealed at constant temperature with excess solid remaining. Isotopically labeled ions from the solid later appear in the solution, although dissolved concentration is unchanged. What does this show?",
+      "options": [
+        "The solid is chemically inert and never exchanges ions.",
+        "All solid must eventually disappear.",
+        "Dissolution and crystallization continue at equal rates.",
+        "The solution concentration must increase continuously."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The label traces particle exchange while the unchanged concentration indicates no net dissolution. A is incorrect: label transfer directly contradicts this claim. B is incorrect: continued exchange does not imply net dissolution. D is incorrect: equal opposing rates prevent a net increase."
+    },
+    {
+      "id": "chem-7-1-005",
+      "prompt": "A student says a constant color in a reacting solution proves equilibrium. Which additional observation best distinguishes dynamic equilibrium from a reaction that is simply too slow to detect?",
+      "options": [
+        "The solution is at room temperature.",
+        "The reactant and product have the same molar mass.",
+        "Only one color measurement was taken.",
+        "A suitable tracer shows both opposing reactions continuing at equal rates."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The tracer supplies evidence of ongoing balanced reactions rather than merely an unchanged macroscopic signal. A is incorrect: temperature alone does not establish balanced rates. B is incorrect: molar mass does not establish equilibrium. C is incorrect: one measurement cannot even establish constancy over time."
+    },
+    {
+      "id": "chem-7-1-006",
+      "prompt": "A covered flask at constant temperature contains a reversible gas reaction. Which rate-time pattern identifies equilibrium after an initial transient?",
+      "options": [
+        "Both rates must become exactly zero.",
+        "Forward and reverse rates approach the same nonzero value and then remain equal.",
+        "Only the forward rate remains nonzero.",
+        "The rates become constant but remain unequal."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Equilibrium is dynamic, so equal continuing rates give no net chemical change. A is incorrect: reaction events continue at equilibrium. C is incorrect: that would cause net product formation. D is incorrect: unequal rates still change composition in this closed system."
+    },
+    {
+      "id": "chem-7-1-007",
+      "prompt": "A shallow open dish of water loses mass steadily in dry flowing air at constant temperature. Why is the water-air system not at liquid-vapor equilibrium?",
+      "options": [
+        "All evaporation is irreversible at the molecular level.",
+        "Liquid-vapor equilibrium requires ice.",
+        "Net evaporation is occurring because vapor is continually removed.",
+        "Constant temperature guarantees equilibrium, so the mass cannot actually decrease."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The mass decrease demonstrates evaporation exceeds condensation in this open setup. A is incorrect: water molecules can also condense. B is incorrect: ice is not required for liquid-vapor coexistence. D is incorrect: constant temperature alone does not prevent net matter transfer."
+    },
+    {
+      "id": "chem-7-1-008",
+      "prompt": "A sealed fixed-volume vessel contains a reversible reaction and exhibits unchanging partial pressures at constant temperature. Which claim is NOT required by dynamic equilibrium?",
+      "options": [
+        "Every species has the same partial pressure.",
+        "Reactants and products can remain present.",
+        "Forward and reverse reactions continue.",
+        "There is no net change in composition."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Equilibrium requires constant pressures and balanced rates, not equal pressures among species. B is incorrect: coexistence is consistent with equilibrium. C is incorrect: ongoing reactions are the dynamic aspect. D is incorrect: that follows from equal opposing rates."
+    },
+    {
+      "id": "chem-7-1-009",
+      "prompt": "In a fixed-volume A(g) ⇌ B(g) system, measurements at 10 s, 20 s, and 30 s give [A] = 0.65, 0.55, 0.50 M and [B] = 0.35, 0.45, 0.50 M. What can be concluded at 30 s from these data alone?",
+      "options": [
+        "Equilibrium necessarily began at 30 s because concentrations match.",
+        "The reverse reaction must be impossible.",
+        "Equal concentrations at 30 s do not establish equilibrium; later measurements are needed.",
+        "The total concentration doubled."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The concentrations were still changing over the preceding interval. A crossing is not evidence that future slopes vanish. A is incorrect: equality is not the criterion. B is incorrect: the concentration data do not exclude reverse events. D is incorrect: the total remains 1.00 M at each listed time."
+    },
+    {
+      "id": "chem-7-1-010",
+      "prompt": "A sealed vessel with A(g) ⇌ B(g) has unchanged composition while individual A and B molecules continually interconvert. Which statement about equilibrium best explains why bulk measurements cannot reveal those individual events?",
+      "options": [
+        "Individual molecules stop moving.",
+        "Each molecule permanently keeps its identity.",
+        "The instrument must report equal concentrations.",
+        "Equal forward and reverse conversions cancel their net effect on bulk composition."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Macroscopic constancy averages over continuing opposing molecular changes. A is incorrect: thermal motion continues. B is incorrect: the observed interconversion contradicts this. C is incorrect: constant signals need not have equal values."
+    },
+    {
+      "id": "chem-7-1-011",
+      "prompt": "For A(g) ⇌ B(g) at constant volume, a proposed equilibrium model predicts 18 forward conversions and 18 reverse conversions in a representative interval. What is the predicted net change in B over that interval?",
+      "options": [
+        "An increase of 36 molecules.",
+        "Zero molecules in the model count.",
+        "A decrease of 18 molecules.",
+        "An increase of 18 molecules."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Each forward event adds one B and each reverse event removes one B: 18 − 18 = 0. A is incorrect: opposing changes subtract rather than add. C is incorrect: forward production also occurs. D is incorrect: reverse consumption also occurs."
+    }
+  ]
+}

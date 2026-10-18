@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 7,
+  "topicId": "topic-7-5",
+  "questions": [
+    {
+      "id": "chem-7-5-001",
+      "prompt": "For A(g) ⇌ B(g), Kc = 1.0 × 10^6 at the stated temperature. What does this imply about an equilibrium mixture with both species present?",
+      "options": [
+        "[A] is one million times [B].",
+        "[B] is one million times [A].",
+        "A and B have equal concentrations.",
+        "The forward rate is one million times the reverse rate at equilibrium."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. For this one-to-one equation Kc = [B]/[A], so products strongly predominate. A is incorrect: that inverts the ratio. C is incorrect: that would give Kc = 1. D is incorrect: the opposing rates are equal at equilibrium regardless of K."
+    },
+    {
+      "id": "chem-7-5-002",
+      "prompt": "For X(aq) ⇌ Y(aq), Kc = 2.0 × 10−5. Which equilibrium composition is consistent with that value?",
+      "options": [
+        "[X] = 1.0 × 10−5 M and [Y] = 0.500 M",
+        "[X] = 0.500 M and [Y] = 0.500 M",
+        "[X] = 0.500 M and [Y] = 0 M exactly",
+        "[X] = 0.500 M and [Y] = 1.0 × 10−5 M"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The ratio Y/X is 2.0 × 10−5, indicating predominantly X. A is incorrect: this gives a very large ratio, opposite to the stated K. B is incorrect: this gives K = 1. C is incorrect: this gives zero rather than the positive K."
+    },
+    {
+      "id": "chem-7-5-003",
+      "prompt": "Two one-to-one reactions, A ⇌ B and C ⇌ D, have Kc values of 3.0 × 10^8 and 2.0 × 10−7 at the same temperature. Which comparison is justified?",
+      "options": [
+        "B predominates over A at equilibrium, whereas C predominates over D.",
+        "The first must reach equilibrium faster.",
+        "Both have equal product and reactant concentrations.",
+        "D predominates over C more strongly than B over A."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The first product/reactant ratio is very large and the second very small. B is incorrect: K describes equilibrium position, not how quickly it is reached. C is incorrect: neither K is near one. D is incorrect: the second reaction favors its reactant, C."
+    },
+    {
+      "id": "chem-7-5-004",
+      "prompt": "A reaction has a very large positive equilibrium constant. A student concludes that no reactant molecules can remain at equilibrium. Which correction is best?",
+      "options": [
+        "A very large K means reactants predominate.",
+        "K cannot exceed one.",
+        "A very large finite K permits a very small nonzero reactant concentration.",
+        "A large K requires both reaction rates to vanish."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Essentially complete conversion is an approximation; a finite equilibrium ratio need not mean exactly zero reactant. A is incorrect: it favors the product side in the mass-action sense. B is incorrect: equilibrium constants can be much larger than one. D is incorrect: equilibrium remains dynamic."
+    },
+    {
+      "id": "chem-7-5-005",
+      "prompt": "For A(g) ⇌ B(g), an equilibrium particle model has 2 A particles and 198 B particles in the same representative volume. Which approximate Kc best matches this ratio?",
+      "options": [
+        "0.0101",
+        "200",
+        "196",
+        "99"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The equal-volume concentration ratio is 198/2 = 99. A is incorrect: that is the reverse ratio. B is incorrect: that is the total particle count. C is incorrect: that is the difference rather than the ratio."
+    },
+    {
+      "id": "chem-7-5-006",
+      "prompt": "For A(aq) ⇌ B(aq), Kc = 1.0. What can be inferred about an equilibrium mixture?",
+      "options": [
+        "Both concentrations must equal 1.0 M.",
+        "[A] = [B], but their shared concentration is not fixed by K alone.",
+        "Neither substance can be present.",
+        "The mixture must be pure B."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The one-to-one quotient is unity; the total amount is still needed to determine the concentrations. A is incorrect: a ratio of one does not set its individual terms. C is incorrect: nonzero equal concentrations satisfy the ratio. D is incorrect: that cannot give a finite ratio of one with A absent."
+    },
+    {
+      "id": "chem-7-5-007",
+      "prompt": "For A(g) ⇌ 2B(g), Kc = 4.0 using concentrations in mol L−1. An equilibrium sample has [A] = 1.0 × 10−3 M. What does the value of K actually require?",
+      "options": [
+        "[B] = 0.0040 M because B/A = 4.0.",
+        "[B] = 4.0 M regardless of [A].",
+        "[B] = approximately 0.063 M because [B]²/[A] = 4.0.",
+        "[A] must exceed [B] because A has the smaller coefficient."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Taking the square root of 4.0 × 10−3 gives 0.063 M; K is not the simple B/A ratio here. A is incorrect: the product concentration must be squared. B is incorrect: the equilibrium expression includes both concentrations. D is incorrect: coefficients alone do not rank concentrations."
+    },
+    {
+      "id": "chem-7-5-008",
+      "prompt": "A chemical synthesis has Kc = 5 × 10^12 but proceeds imperceptibly slowly at room temperature without a catalyst. Are those observations compatible?",
+      "options": [
+        "Yes; product favorability and reaction speed are different properties.",
+        "No; K sets the forward rate numerically.",
+        "No; any slow reaction must have K less than one.",
+        "Yes, because a catalyst would make K much larger."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. A large equilibrium constant concerns composition after equilibrium, while activation barriers can make approach very slow. B is incorrect: equilibrium and kinetic constants are different quantities. C is incorrect: slow reactions can strongly favor products. D is incorrect: a catalyst changes rates, not K at fixed temperature."
+    },
+    {
+      "id": "chem-7-5-009",
+      "prompt": "For A ⇌ B, a tiny positive Kc is reported. A sensitive instrument detects a small amount of B at equilibrium. Which interpretation is correct?",
+      "options": [
+        "The measured B proves Kc is exactly zero.",
+        "Every small K requires B to be undetectable by any instrument.",
+        "The detection is consistent with a reactant-favored equilibrium containing some B.",
+        "Detection alone proves products predominate."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A small positive ratio allows a small nonzero product amount. A is incorrect: a positive product concentration rules out an exactly zero ratio. B is incorrect: detectability depends on concentration and instrument sensitivity. D is incorrect: presence and predominance are different claims."
+    },
+    {
+      "id": "chem-7-5-010",
+      "prompt": "At one temperature, A(g) ⇌ 2B(g) has Kc = 1.0. Which statement avoids an incorrect interpretation of the magnitude?",
+      "options": [
+        "All equilibrium concentrations must be equal.",
+        "The equilibrium mixture must contain twice as many B molecules as A molecules.",
+        "The equilibrium must contain no A.",
+        "The equilibrium concentrations obey [B]² = [A], not necessarily [B] = [A]."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Stoichiometric powers remain part of the expression even when K equals one. A is incorrect: that does not follow when powers differ. B is incorrect: balanced coefficients give changes, not an equilibrium count ratio. C is incorrect: a finite K cannot be interpreted that way."
+    },
+    {
+      "id": "chem-7-5-011",
+      "prompt": "For A ⇌ B with Kc = 9.0 × 10^3, the conserved total concentration [A] + [B] is 0.9001 M. Which equilibrium pair best illustrates the meaning of this large K?",
+      "options": [
+        "[A] = 0.9000 M; [B] = 0.000100 M",
+        "[A] = 0.000100 M; [B] = 0.9000 M",
+        "[A] = [B] = 0.45005 M",
+        "[A] = 0 M; [B] = 0.9001 M exactly"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The sum is 0.9001 M and the product/reactant ratio is 9000. A is incorrect: this favors reactant and gives the reciprocal ratio. C is incorrect: this gives K = 1. D is incorrect: a zero denominator cannot yield the specified finite ratio."
+    }
+  ]
+}

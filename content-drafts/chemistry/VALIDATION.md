@@ -1,5 +1,19 @@
 # Chemistry checkpoint validation — 2026-10-18
 
+## Current authorized publication checkpoint
+
+**1,001 published MCQs, 91 topics, eleven per topic, zero withheld.** The owner explicitly authorized this completed bank for bulk publication after automated checks. All question objects match the frozen `627b7e2` inventory. Prior manual-approval requirements are superseded for this bank only; no human scientific approval is asserted. [PUBLICATION_REVIEW.md](PUBLICATION_REVIEW.md) records the scope/difficulty/repetition dispositions and remaining verification limits.
+
+- Re-ran source structure/ID/count checks, the full scientific-model suite, frozen inventory/preservation audit and the new publication registry/hash/count/flagged-calculation audit: passed.
+- TypeScript, all 37 unit tests and fresh production build: passed. Tests exercise all four choices against every key, all-question scoring, answer retention, retry policy, incomplete sessions, boundaries and restart.
+- Development and separate production smoke suites: passed all 19 routes, CSS, seven invalid routes, six fixed course themes and fresh homepage rotation. Expanded publication suite passed all 91 topic routes, nine unit routes and full-course scope on both servers.
+- Browser: full eleven-question quiz gave 10/11 (91%) after an initial wrong answer followed by a correct retry; first-attempt scoring preserved. Correct/incorrect grading, all-option explanations, checked/unchecked navigation retention, review, restart, unit/topic scope changes, incomplete-session grading and reload reset passed. At 390px no horizontal overflow appeared; browser warnings/errors captured during verification: none.
+- Student storage code/keys and official resource catalog unchanged. All 103 videos remain unpublished. Preview 3000 preserved; temporary production verification server 3100 stopped. No public deployment.
+
+The remainder is retained historical completion evidence. Its eleven-live/990-pending figures describe the checkpoint before this publication, and its flagged review items are addressed in the current publication review.
+
+## Historical prepublication validation
+
 Final complete-bank checkpoint. Consult `BANK_AUDIT.md`, its reproducible inventory and `PROGRESS.md` for coverage and remaining human-review items.
 
 ## Saved content

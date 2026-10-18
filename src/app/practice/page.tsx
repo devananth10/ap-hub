@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { PracticeCenter } from "@/components/practice-center";
-import { validPracticeScope, type PracticeScope } from "@/lib/practice";
+import { practiceEntries, validPracticeScope, type PracticeScope } from "@/lib/practice";
 
 export const metadata = { title: "Practice" };
 type Search = Record<string, string | string[] | undefined>;
@@ -13,5 +13,5 @@ export default async function PracticePage({ searchParams }: { searchParams: Pro
     ...(params.topic ? { topicId: String(params.topic) } : {}),
   };
   if (!validPracticeScope(scope)) notFound();
-  return <PracticeCenter scope={scope} />;
+  return <PracticeCenter scope={scope} entries={practiceEntries(scope)} />;
 }

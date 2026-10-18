@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 4,
+  "topicId": "topic-4-6",
+  "questions": [
+    {
+      "id": "chem-4-6-001",
+      "prompt": "A 20.00 mL HCl aliquot reaches equivalence after addition of 18.40 mL of 0.1250 M NaOH. Use H+ + OH− → H2O and assume quantitative reaction. What was the HCl concentration in the original aliquot?",
+      "options": [
+        "0.136 M",
+        "0.1150 M",
+        "0.002300 M",
+        "0.05990 M"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Hydroxide delivered is (0.1250)(0.01840) = 0.002300 mol, equal to the initial acid amount at equivalence. Dividing by 0.02000 L gives 0.1150 M. A reverses the volume ratio. C treats the mole amount as a concentration without dividing by the aliquot volume. D divides by the combined acid-plus-titrant volume and therefore does not give the requested original concentration."
+    },
+    {
+      "id": "chem-4-6-002",
+      "prompt": "A 10.00 mL aliquot of 0.0800 M H2A is titrated with 0.1000 M NaOH. At the specified equivalence point both acidic protons have reacted according to H2A + 2OH− → A^2− + 2H2O. What titrant volume is required?",
+      "options": [
+        "8.00 mL",
+        "4.00 mL",
+        "32.0 mL",
+        "16.0 mL"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. There are 0.01000(0.0800) = 0.000800 mol H2A, requiring 0.00160 mol OH−. Dividing by 0.1000 mol/L gives 0.0160 L or 16.0 mL. A assumes a 1:1 ratio instead of complete reaction of both protons. B reverses the factor of two. C counts the two protons twice. The equivalence condition is specified to avoid ambiguity about which stage of a diprotic titration is intended."
+    },
+    {
+      "id": "chem-4-6-003",
+      "prompt": "A 5.00 mL aliquot containing only Fe^2+ as the reacting analyte is titrated with 0.0200 M Ce^4+. The quantitative reaction is Fe^2+ + Ce^4+ → Fe^3+ + Ce^3+, and equivalence occurs at 12.50 mL titrant. What is the original Fe^2+ concentration?",
+      "options": [
+        "0.00800 M",
+        "0.0143 M",
+        "0.0500 M",
+        "0.100 M"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The 1:1 equation gives initial Fe^2+ amount (0.0200)(0.01250) = 0.000250 mol. Dividing by 0.00500 L gives 0.0500 M. A reverses the titrant-to-aliquot volume ratio. B uses final combined volume rather than the original aliquot volume. D incorrectly introduces a factor of two despite the supplied 1:1 stoichiometry. Titration is not restricted to acid-base reactions."
+    },
+    {
+      "id": "chem-4-6-004",
+      "prompt": "A color indicator is used to signal the end of a titration. Which statement correctly distinguishes the equivalence point from the observed endpoint?",
+      "options": [
+        "Equivalence is the stoichiometric consumption of analyte by titrant; the endpoint is an observed signal chosen to occur close to that condition.",
+        "Equivalence is always the first visible color change, regardless of the reaction amounts.",
+        "The endpoint is defined by equal analyte and titrant volumes, regardless of concentration or stoichiometry.",
+        "Equivalence can be reached only if titrant and analyte have equal molar concentrations."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Equivalence is defined by the reaction's stoichiometric amounts, while an endpoint is a measurable event used to estimate that condition. A suitable indicator makes the two close, but they are not identical definitions. B confuses an observable signal with the stoichiometric criterion. C ignores concentration and coefficient ratios. D imposes an unnecessary concentration equality; different concentrations simply require different volumes."
+    },
+    {
+      "id": "chem-4-6-005",
+      "prompt": "For a 25.00 mL HCl aliquot, a burette containing 0.1000 M NaOH reads 3.15 mL initially and 24.65 mL at equivalence. Assuming 1:1 reaction and no delivery error, what original HCl concentration follows?",
+      "options": [
+        "0.09860 M",
+        "0.0860 M",
+        "0.0126 M",
+        "0.00860 M"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Delivered volume is 24.65 − 3.15 = 21.50 mL, giving (0.1000)(0.02150) = 0.002150 mol base and thus acid. Dividing by 0.02500 L gives 0.0860 M. A uses the final reading alone. C uses the initial reading alone. D makes a factor-of-ten volume error, such as converting 25.00 mL to 0.2500 L. Burette readings are cumulative positions, so the difference gives the delivered volume."
+    },
+    {
+      "id": "chem-4-6-006",
+      "prompt": "A student transfers an exact 25.00 mL analyte aliquot into a flask, then adds 50.0 mL distilled water before titration. The analyte is stable, none is lost, and the reaction with titrant remains quantitative. Compared with titrating the same aliquot without added water, what happens to the titrant volume required for equivalence at the same titrant concentration?",
+      "options": [
+        "It triples because the flask now contains three times the original volume.",
+        "It decreases to one-third because the analyte is diluted.",
+        "It is unchanged because the aliquot still contains the same amount of reacting analyte.",
+        "It becomes zero because dilution consumes the analyte."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Added water lowers the analyte concentration in the flask but does not change its mole amount, so the same stoichiometric titrant amount and volume are needed. A incorrectly makes required moles proportional to total solution volume at fixed original analyte amount. B applies the dilution factor to moles instead of concentration. D invents analyte consumption excluded by the stated stability. This conclusion concerns equivalence, not every indicator's visual behavior."
+    },
+    {
+      "id": "chem-4-6-007",
+      "prompt": "A burette is rinsed with water but not conditioned with titrant. Residual water uniformly dilutes a labeled 0.1000 M NaOH titrant below 0.1000 M. The student uses the label concentration and the accurately measured equivalence volume to calculate the concentration of a fixed HCl aliquot. What systematic effect follows?",
+      "options": [
+        "The calculated HCl concentration is too low because the required titrant volume is smaller.",
+        "There is no effect because equivalence always requires equal volumes.",
+        "There is no effect because adding water to the burette is equivalent to adding it only to the analyte flask.",
+        "The calculated HCl concentration is too high because more dilute titrant is needed, but the student multiplies that volume by the larger label concentration."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The true analyte amount equals the lower actual titrant concentration times its larger equivalence volume. Using 0.1000 M for that same volume overestimates titrant and analyte moles. A reverses the volume and bias directions. B ignores concentration and stoichiometry. C confuses dilution of the reagent used to infer moles with dilution of an analyte aliquot whose moles are unchanged. The prompt specifies uniform dilution so the concentration-error direction is unambiguous."
+    },
+    {
+      "id": "chem-4-6-008",
+      "prompt": "At the start of a titration, an air bubble occupies part of the burette tip. During delivery the bubble is replaced by titrant, and the tip is full at the end. Some liquid counted by the burette reading change therefore filled the tip instead of entering the analyte flask. If the student ignores this, how is the analyte amount inferred from the endpoint biased, assuming the endpoint itself correctly signals equivalence?",
+      "options": [
+        "Too high, because the recorded volume exceeds the titrant volume that actually reacted in the flask.",
+        "Too low, because every bubble reduces the recorded reading difference.",
+        "Unchanged, because any liquid leaving the burette barrel must have reacted with analyte.",
+        "Unchanged, because endpoint detection also measures the volume trapped in the tip."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The reading difference includes both liquid delivered to the flask and liquid retained to fill the initially empty tip space, so multiplying that difference by titrant concentration overestimates reacted moles. B reverses the specified volume discrepancy. C overlooks retention in the tip. D attributes a volume correction to the indicator that it does not supply. The stated initial-to-final tip change is necessary; an unchanged bubble volume would require a different analysis."
+    },
+    {
+      "id": "chem-4-6-009",
+      "prompt": "A graph of unreacted analyte amount (mmol) versus added titrant volume (mL) has a straight segment from (0.0, 0.400) to (20.0, 0.000), then remains at zero for larger volumes. The titrant reacts specifically and quantitatively with the analyte. Which point identifies stoichiometric equivalence?",
+      "options": [
+        "0.0 mL, because no titrant has yet contaminated the analyte.",
+        "10.0 mL, because half of the original analyte remains.",
+        "Every volume above 20.0 mL, because the unreacted analyte amount is zero.",
+        "20.0 mL, where the analyte first becomes fully consumed without excess reacting titrant."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The graph's corner marks exhaustion of the analyte at the stoichiometric titrant amount. A is the initial state, not equivalence. B is partial consumption. C overlooks that volumes beyond the corner add excess titrant even though analyte remains absent. The plateau alone does not make every later point an equivalence point. Both axes and units are specified, so the corner can be interpreted without an acid-base pH model."
+    },
+    {
+      "id": "chem-4-6-010",
+      "prompt": "Equal aliquots of one analyte give titrant endpoint volumes 25.10, 25.05, and 30.60 mL. The student documented that the third trial was accidentally continued well past the intended endpoint. What is the best next step for a defensible analyte determination?",
+      "options": [
+        "Average all three without qualification because every numerical result must have equal weight.",
+        "Use 30.60 mL alone because a larger titrant amount guarantees more complete equivalence.",
+        "Record the known endpoint overshoot, repeat the trial, and base the determination on justified concordant trials rather than treating the overshoot as an equivalence measurement.",
+        "Change the titrant label concentration until all three calculations agree."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The documented procedural error supplies a reason to reject that trial as an equivalence estimate, retain the record, and obtain a replacement measurement. A would knowingly include a positively biased endpoint. B confuses excess titrant with the stoichiometric condition. D alters a known reagent concentration without evidence. Numerical disagreement alone should not justify silently deleting data; here the overshoot was independently observed and documented."
+    },
+    {
+      "id": "chem-4-6-011",
+      "prompt": "A chemist wants to determine the amount of species X in a solution that also contains other solutes. Which proposed titration setup best supports calculating the amount of X from the titrant volume?",
+      "options": [
+        "A titrant that reacts only partly with X and has an unknown concentration.",
+        "A standardized titrant that reacts specifically and quantitatively with X by a known equation, with a measured signal close to equivalence.",
+        "A titrant that consumes several unknown solutes in unknown proportions, using their combined endpoint as if only X reacted.",
+        "A colored titrant of unknown concentration, assuming that any visible color gives the initial amount of X."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Known concentration, known stoichiometry, quantitative and sufficiently selective reaction, and a usable equivalence signal connect measured volume to X's mole amount. A lacks both quantitative completion and concentration information. C includes unknown interference, so the measured consumption is not attributable uniquely to X. D supplies a visible event without a calibrated mole scale or a justified stoichiometric interpretation. Color alone is not a titration calculation."
+    }
+  ]
+}

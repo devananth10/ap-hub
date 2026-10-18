@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 2,
+  "topicId": "topic-2-4",
+  "questions": [
+    {
+      "id": "chem-2-4-001",
+      "prompt": "Which particulate model best represents the bonding in a pure sample of solid magnesium?",
+      "options": [
+        "Alternating Mg2+ and Mg2- ions, with electrons confined to the negative ions.",
+        "An array of positive metal cores surrounded by valence electrons delocalized throughout the solid.",
+        "Separate Mg2 molecules with a localized electron pair between the two atoms in each molecule.",
+        "Neutral metal atoms at fixed sites, with every valence electron permanently confined to its own atom."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The metallic model contains positive metal cores and a shared, delocalized population of valence electrons. The positive and negative charges balance overall. A invents alternating magnesium cations and anions rather than metallic bonding. C describes discrete molecules with localized pair bonds, which do not represent bulk magnesium metal. D keeps all valence electrons localized on individual atoms, omitting the delocalization essential to the metallic model. Positive metal cores retain their inner electrons; they are not bare nuclei."
+    },
+    {
+      "id": "chem-2-4-002",
+      "prompt": "A metal wire carries electrical current while its atomic cores remain near their lattice positions. Which feature of a metallic-bonding model accounts for the charge transport?",
+      "options": [
+        "Positive atomic cores flow from one end of the solid wire to the other.",
+        "Localized electron pairs move only by carrying an entire metal molecule with them.",
+        "Mobile negative metal ions pass between fixed positive metal ions.",
+        "Delocalized valence electrons respond to the applied electric field while the cores remain in the solid structure."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Delocalized electrons can transport charge through a metallic solid without requiring the atomic cores to travel through it. A treats solid-state conduction as the bulk motion of positive ions. B assumes discrete molecules and localized electron pairs, neither of which describes the metallic electron sea. C substitutes a mobile-anion ionic model for the delocalized electronic charge in a metal. The observation specifically separates mobile electronic charge from the largely fixed core positions."
+    },
+    {
+      "id": "chem-2-4-003",
+      "prompt": "A single-phase alloy contains metal atoms A and B of comparable radius. An atomic-position model shows B occupying some of the regular lattice sites that A occupied in the pure host. How should the alloy be classified?",
+      "options": [
+        "Substitutional, because B replaces A at regular lattice sites.",
+        "Interstitial, because every added element must lie between regular lattice sites.",
+        "A molecular solid, because the presence of two elements requires separate AB molecules.",
+        "A pure ionic compound, because replacing a metal atom necessarily creates alternating positive and negative ions."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Substitutional alloying places comparable-size atoms at sites in the host lattice. B conflicts with the stated site replacement; interstitial atoms occupy spaces between host sites. C confuses an alloy with a collection of discrete molecules and imposes a fixed AB unit not supported by the model. D incorrectly assumes that two metallic elements must create an ionic lattice; the alloy retains metallic bonding."
+    },
+    {
+      "id": "chem-2-4-004",
+      "prompt": "A simplified model of an iron–carbon alloy places much smaller carbon atoms in spaces between the larger iron atoms. The model does not replace iron atoms at their regular sites. Which description matches this arrangement?",
+      "options": [
+        "A substitutional alloy, because carbon occupies the original iron lattice sites.",
+        "A coating, because any smaller atom must remain on the external surface.",
+        "An interstitial alloy, because smaller atoms occupy gaps within the host structure.",
+        "A pure compound with one fixed Fe:C ratio, because the presence of carbon alone requires a fixed formula."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Interstitial alloying places small atoms in spaces within a host lattice; carbon in iron is the introductory example. A contradicts the absence of host-site replacement. B incorrectly limits the added atoms to the surface even though the model locates them within the structure. D infers a fixed compound formula merely from the presence of two elements; the stated alloy model does not establish one required Fe:C ratio. This simplified model does not assert that every iron–carbon material has the same phase or composition."
+    },
+    {
+      "id": "chem-2-4-005",
+      "prompt": "In a particular substitutional alloy, added atoms distort the host lattice. The alloy is observed to resist permanent deformation more strongly than the pure host. Which model-based explanation is most consistent with that observation?",
+      "options": [
+        "Greater hardness proves that every host–host attraction is stronger, regardless of the distortions.",
+        "The lattice distortions impede the movement of atomic layers or defects involved in permanent deformation.",
+        "The distortions make atomic layers slide more freely, causing greater resistance to deformation.",
+        "Only the total sample mass controls hardness; changes in atomic arrangement cannot matter."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Size mismatch can obstruct the structural rearrangements needed for plastic deformation, consistent with the given increased resistance. A overinterprets hardness as proof that every host–host attraction strengthens; an obstruction to rearrangement can matter without that claim. C predicts easier sliding, which would not account for the observed greater resistance to permanent deformation. D ignores the role of microscopic structure and confuses an intensive mechanical property with total sample mass. The claim concerns this observed alloy; it does not assert that every alloy is harder than its pure components."
+    },
+    {
+      "id": "chem-2-4-006",
+      "prompt": "A thin sheet of a pure metal can be bent without immediately breaking into pieces. Which feature of the metallic model best explains this behavior?",
+      "options": [
+        "Every positive metal core becomes neutral whenever a layer moves.",
+        "Each metal core is permanently bonded to exactly one particular neighboring core by a localized electron pair.",
+        "As neighboring cores shift, they can remain attracted to the delocalized electrons throughout the material.",
+        "Positive cores flow independently as in a liquid, while all valence electrons remain fixed to their original sites."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Metallic bonding is not restricted to one fixed set of localized pair bonds, so changing neighbor positions can preserve attractions between positive cores and delocalized electrons. A incorrectly changes the charge of every core during a mechanical deformation. B would impose a highly directional, fixed-pair description inconsistent with the metallic model. D treats a bent solid as a liquid of independently flowing cores and freezes the electronic population, contradicting the metallic solid model. The explanation addresses malleability without claiming a metal can be bent indefinitely without damage."
+    },
+    {
+      "id": "chem-2-4-007",
+      "prompt": "Two homogeneous substitutional alloys use the same metals A and B. Alloy P contains 80 A atoms for every 20 B atoms in a representative model; alloy Q contains 60 A atoms for every 40 B atoms. Which conclusion follows from these models?",
+      "options": [
+        "The relative amounts of A and B can vary while both samples remain substitutional alloys.",
+        "Only P can be an alloy because every alloy must have the atom ratio 4:1.",
+        "Q must contain AB molecules because its fraction of B is larger.",
+        "P and Q must have identical atomic compositions because they contain the same elements."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Both given models place atoms in a substitutional structure, while their A:B number ratios differ (4:1 versus 3:2). The term alloy does not impose one universal integer ratio like the formula of a particular pure compound. B invents a required 4:1 composition. C infers discrete molecules from composition alone, contrary to the stated model. D confuses sharing the same component identities with sharing the same proportions. The conclusion is limited to the two homogeneous alloys stated to exist; it does not claim every ratio of every pair of metals forms one phase."
+    },
+    {
+      "id": "chem-2-4-008",
+      "prompt": "A sample is proposed to be either a copper object with nickel only on its surface or a homogeneous copper–nickel alloy. Measurements find the same nonzero nickel fraction in multiple interior sections and in the surface region. Which model is better supported?",
+      "options": [
+        "Nickel exists only as an external layer, because a metal cannot contain another element in its interior.",
+        "All nickel must occupy interstitial spaces, because its presence in the interior determines its lattice position.",
+        "The material must be a pure compound with one fixed Cu:Ni formula, because its composition is uniform.",
+        "Nickel is distributed through the bulk copper-containing material, consistent with the homogeneous-alloy model."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Finding nickel in interior sections as well as at the surface supports bulk mixing rather than a surface-only coating. A contradicts the interior measurements. B overinterprets composition: identifying the lattice positions requires structural evidence, not just a depth profile. C confuses uniform mixture composition with proof of a pure compound or a fixed chemical formula. These measurements favor the alloy model among the two proposals but do not, alone, resolve all microscopic structural details."
+    },
+    {
+      "id": "chem-2-4-009",
+      "prompt": "A deliberately simplified metallic model contains 100 positive metal cores, each labeled +2, and a delocalized electron population. How many electrons must that population contain for the model to be electrically neutral?",
+      "options": [
+        "50 electrons",
+        "100 electrons",
+        "200 electrons",
+        "400 electrons"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The cores contribute 100(+2) = +200 elementary charges. Each electron contributes −1, so 200 delocalized electrons give a total charge of zero. A leaves a net charge of +150; B leaves +100; D gives a net charge of −200. The +2 core label is supplied as an assumption of this simplified model, not a claim that all metals delocalize the same number of electrons. Core electrons are already included within the positive cores and are not counted again in the electron sea."
+    },
+    {
+      "id": "chem-2-4-010",
+      "prompt": "A structural model shows a metal host with comparable-size atoms B replacing some host atoms and much smaller atoms C occupying gaps between host sites. Which description best matches the model?",
+      "options": [
+        "The model includes both substitutional and interstitial alloying.",
+        "The model is only substitutional, because an alloy can never contain atoms in gaps.",
+        "The model is only interstitial, because replacing host atoms does not count as alloying.",
+        "The model must describe isolated ABC molecules rather than an extended solid."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. B atoms occupy substitutional sites and C atoms occupy interstitial positions, so both features occur in the stated model. B ignores the explicit gap occupancy; C ignores explicit host-site replacement. D imposes discrete molecules and an ABC formula unsupported by the extended structure. The classifications describe where added atoms are located, and are not mutually exclusive for a model containing multiple added elements."
+    },
+    {
+      "id": "chem-2-4-011",
+      "prompt": "An unknown alloy is harder than its pure host metal. A student claims that this observation alone proves the alloy is interstitial rather than substitutional. Which evaluation is best?",
+      "options": [
+        "The claim is justified because substitutional atoms never affect mechanical behavior.",
+        "The claim is not justified; hardness alone does not determine whether added atoms replace host sites or occupy gaps.",
+        "The claim is justified because hardness directly measures atomic radius and uniquely identifies the positions of added atoms.",
+        "The claim is not justified because interstitial alloys cannot be harder than their pure hosts."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Either type of alloy can alter mechanical behavior; classification requires evidence about the positions and sizes of added atoms. A incorrectly excludes structural effects from substitutional alloying. C mistakes a mechanical response for a direct measurement of atomic size or site occupancy; hardness does not uniquely resolve either. D makes the opposite unsupported absolute claim: interstitial atoms can hinder deformation. Useful additional evidence would resolve host-site replacement versus occupation of interstitial spaces rather than relying on hardness alone."
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 2,
+  "topicId": "topic-2-7",
+  "questions": [
+    {
+      "id": "chem-2-7-001",
+      "prompt": "Three Lewis models have five electron domains around the central atom: PF5 has five bonds and no lone pairs; SF4 has four bonds and one lone pair; ClF3 has three bonds and two lone pairs. Which sequence gives their molecular geometries, in that order?",
+      "options": [
+        "Trigonal bipyramidal; seesaw; T-shaped.",
+        "Trigonal bipyramidal; tetrahedral; trigonal planar.",
+        "Octahedral; square planar; trigonal pyramidal.",
+        "Trigonal planar; seesaw; bent."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Five electron domains have a trigonal-bipyramidal arrangement. PF5 occupies all five positions with bonded atoms. In SF4, a lone pair prefers an equatorial position, leaving a seesaw molecular shape. In ClF3, two lone pairs occupy equatorial positions, leaving a T-shaped arrangement of the bonded atoms. B ignores the lone pairs when assigning the underlying domain arrangement. C incorrectly starts with six-domain shapes. D misidentifies PF5 and ClF3. Molecular geometry describes bonded-atom positions, while electron-domain geometry includes lone pairs. No d-orbital hybridization label is required."
+    },
+    {
+      "id": "chem-2-7-002",
+      "prompt": "BF3 is trigonal planar with three identical B–F bonds. NH3 is trigonal pyramidal with three identical N–H bonds and one lone pair on N. Which comparison of their molecular dipole moments follows from these models?",
+      "options": [
+        "Both must be nonpolar because each contains three identical bonds.",
+        "BF3 is polar and NH3 is nonpolar because only fluorine can produce a bond dipole.",
+        "BF3 has cancelling bond dipoles by symmetry, whereas NH3 has a nonzero molecular dipole.",
+        "Both must have the same molecular dipole because each has three polar bonds."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The three equal B–F dipoles are arranged at 120° in a plane and cancel vectorially. The N–H dipoles in the pyramidal NH3 geometry do not cancel, giving a nonzero molecular dipole. A ignores geometry: identical polar bonds cancel only in an appropriate symmetric arrangement. B reverses the result and incorrectly excludes N–H polarity. D equates the number of polar bonds with their vector sum. A lone pair affects the geometry but is not itself a bond to an additional atom."
+    },
+    {
+      "id": "chem-2-7-003",
+      "prompt": "The Lewis diagram of CO2 is O=C=O with no lone pairs on carbon. In the introductory hybridization model, what description applies to the central carbon?",
+      "options": [
+        "sp3, with four electron domains and ideal angles of 109.5°.",
+        "sp2, with three electron domains and ideal angles of 120°.",
+        "sp3, because the two double bonds contain four shared electron pairs.",
+        "sp, with two electron domains and an O–C–O angle of 180°."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Each double bond counts as one electron domain for VSEPR, so carbon has two domains. Their linear arrangement corresponds to sp terminology and a 180° ideal angle. A and C count individual bonding pairs rather than regions of electron density. B would require three domains, such as three separate bonding directions. Multiple bonding affects the orbitals involved in a bond but does not make a double bond point in two different VSEPR directions."
+    },
+    {
+      "id": "chem-2-7-004",
+      "prompt": "Water has two O–H bonds and two lone pairs on oxygen. Its H–O–H angle is smaller than the ideal tetrahedral angle. Which VSEPR explanation is most appropriate?",
+      "options": [
+        "The two lone pairs are ignored, so the two bonding pairs must be 180° apart.",
+        "The four electron domains have an approximately tetrahedral arrangement, and lone-pair repulsions compress the angle between the bonds.",
+        "Oxygen uses only two electron domains because lone pairs have no spatial extent.",
+        "The H–O–H angle must equal 120° because every atom with a lone pair is trigonal planar."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Water has four regions of electron density: two bonds and two lone pairs. The electron-domain arrangement is approximately tetrahedral, while the molecular shape is bent. Lone pairs exert stronger repulsions in the simple VSEPR model, reducing the bond angle below 109.5°. A and C omit two real electron domains. D substitutes a three-domain ideal angle and assumes a lone pair fixes one universal geometry. VSEPR gives a qualitative reason for the compression; it is not an exact calculation of the measured angle."
+    },
+    {
+      "id": "chem-2-7-005",
+      "prompt": "In the Lewis/VSEPR model of XeF4, xenon has four Xe–F bonds and two lone pairs. The lone pairs occupy opposite positions in an octahedral electron-domain arrangement. Which statement follows?",
+      "options": [
+        "The molecular geometry is square planar, and the four equivalent bond dipoles cancel.",
+        "The molecular geometry is tetrahedral because there are four bonded atoms, regardless of the lone pairs.",
+        "The molecular geometry is square pyramidal because both lone pairs count as bonded atoms.",
+        "The molecular geometry is seesaw because every central atom with four bonds has five domains."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Removing the two opposite lone-pair directions from an octahedral domain arrangement leaves four F atoms in one square plane. Equivalent Xe–F bond dipoles cancel in opposite pairs. B ignores the two lone-pair domains. C describes five bonded atoms and one lone pair, not four bonds and two pairs. D assigns five domains despite the six explicitly present. This shape prediction does not require naming hybridization involving d orbitals."
+    },
+    {
+      "id": "chem-2-7-006",
+      "prompt": "For HC≡CH, how many sigma bonds and pi bonds occur in the molecule, and what hybridization label applies to each carbon in the introductory model?",
+      "options": [
+        "Two sigma bonds, three pi bonds, and sp2 carbon atoms.",
+        "Five sigma bonds, no pi bonds, and sp3 carbon atoms.",
+        "Three sigma bonds, one pi bond, and sp2 carbon atoms.",
+        "Three sigma bonds, two pi bonds, and sp carbon atoms."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Each of the two C–H bonds is sigma. The C≡C triple bond contains one sigma bond and two pi bonds, for three sigma and two pi bonds overall. Each carbon has two electron domains and is described as sp hybridized. A omits the C–C sigma bond and overcounts pi bonds. B treats all three components of a triple bond as sigma and assigns four-domain hybridization. C counts the pi portion of a double rather than a triple bond. A multiple bond always contains just one sigma component along the internuclear axis."
+    },
+    {
+      "id": "chem-2-7-007",
+      "prompt": "In H2C=CH2, rotation of one CH2 group relative to the other about the C=C axis is strongly restricted compared with rotation about a C–C single bond. What feature of the bonding model explains this restriction?",
+      "options": [
+        "The C=C bond has no sigma component, so neither carbon can remain attached during any motion.",
+        "Twisting the groups reduces the side-by-side alignment of the p orbitals that form the pi bond.",
+        "Rotation is restricted only by hydrogen–hydrogen repulsion; twisting does not change the relative orientation of the p orbitals.",
+        "Both components of the double bond are cylindrically symmetric sigma bonds, so rotation strengthens them equally."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The pi bond requires parallel p-orbital alignment for side-by-side overlap. Twisting the groups disrupts that overlap and is energetically costly. A is incorrect because a C=C bond includes a sigma bond as well as a pi bond. C incorrectly excludes the change in p-orbital alignment; hydrogen interactions alone do not explain the characteristic pi-bond rotation barrier. D misidentifies the pi component as sigma; its directional overlap is precisely why free rotation is restricted. The statement does not mean rotation is impossible at any energy; it identifies the bonding reason for the barrier."
+    },
+    {
+      "id": "chem-2-7-008",
+      "prompt": "The connectivity in CH3–C≡N has a methyl carbon bonded to three H atoms and the nitrile carbon. The nitrile carbon is single-bonded to the methyl carbon and triple-bonded to N. Which pair of hybridization labels and local geometries is appropriate for the two carbons?",
+      "options": [
+        "Methyl sp2/trigonal planar; nitrile sp3/tetrahedral.",
+        "Methyl sp/linear; nitrile sp2/trigonal planar.",
+        "Methyl sp3/tetrahedral; nitrile sp/linear.",
+        "Both sp3/tetrahedral because both participate in four shared electron pairs."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The methyl carbon has four distinct bonding directions, giving four domains, sp3 terminology, and an approximately tetrahedral local geometry. The nitrile carbon has two bonding directions: one single bond and one triple bond. It therefore has two domains, sp terminology, and a linear local geometry. A and B assign domain counts inconsistent with the stated connections. D mistakes the number of shared pairs for the number of directions around the nitrile carbon. Hybridization is assigned locally; different atoms in the same molecule can have different labels."
+    },
+    {
+      "id": "chem-2-7-009",
+      "prompt": "Compare the C–C single bond in C2H6 with the C≡C triple bond in C2H2. Which qualitative prediction is appropriate for these bonds between the same elements?",
+      "options": [
+        "The triple bond is shorter and has a greater total bond energy than the single bond.",
+        "The triple bond is longer and has a smaller total bond energy because more electrons repel one another.",
+        "The bonds must have identical lengths because both join two carbon atoms.",
+        "The triple bond has exactly three times the total bond energy because it consists of three identical sigma bonds."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. For comparable bonds between the same elements, higher bond order is associated with shorter bond length and greater total energy required to separate the bonded atoms. B reverses both trends and considers repulsion without the stabilizing bonding interactions. C ignores bond order. D invents an exact factor and incorrectly describes all three components as sigma bonds. A triple bond is not simply three identical single bonds; its sigma and pi components contribute differently, so no exact threefold energy rule is implied."
+    },
+    {
+      "id": "chem-2-7-010",
+      "prompt": "In supplied Lewis models, SF6 has six S–F bonds and no central lone pairs; BrF5 has five Br–F bonds and one central lone pair. Both have six electron domains at the central atom. What are their molecular geometries, respectively?",
+      "options": [
+        "Trigonal bipyramidal and seesaw.",
+        "Octahedral and square pyramidal.",
+        "Square planar and trigonal pyramidal.",
+        "Tetrahedral and trigonal bipyramidal."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Six electron domains have an octahedral arrangement. Six bonded atoms give octahedral SF6. Replacing one bonded-atom direction with a lone pair leaves square-pyramidal BrF5. A assigns five-domain shapes; C assigns four bonded atoms with two lone pairs and a three-bond/one-lone-pair shape; D assigns four- and five-domain geometries. Molecular geometry counts the positions of bonded atoms, but its prediction must include all electron domains. No d-hybridization nomenclature is needed or used."
+    },
+    {
+      "id": "chem-2-7-011",
+      "prompt": "For comparable atomic orbitals in the introductory bonding model, which statement distinguishes sigma and pi bonding?",
+      "options": [
+        "A sigma bond is formed only by side-by-side overlap, while a pi bond is formed only along the internuclear axis.",
+        "A pi bond can be the only bonding component of a usual C=C double bond.",
+        "A sigma bond results from overlap along the internuclear axis and generally has stronger overlap than the side-by-side overlap of a pi bond.",
+        "Every single bond contains one sigma and one pi component."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Sigma overlap is directed along the internuclear axis; pi overlap is side-by-side, with electron density on opposite sides of that axis. In the comparable-orbital introductory model, stronger sigma overlap corresponds to a stronger individual bonding interaction than a pi component. A reverses the overlap descriptions. B omits the sigma component present in a usual double bond. D gives a single bond the two-component description of a double bond. This comparison concerns individual components, not a claim that a single bond has a greater total bond energy than a corresponding double or triple bond."
+    }
+  ]
+}
