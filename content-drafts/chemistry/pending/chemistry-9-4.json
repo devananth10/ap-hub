@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 9,
+  "topicId": "topic-9-4",
+  "questions": [
+    {
+      "id": "chem-9-4-001",
+      "prompt": "A reaction is independently known to be thermodynamically favored under the stored conditions, yet no measurable conversion occurs over a week. Which explanation is consistent?",
+      "options": [
+        "Its free-energy change must actually be zero solely because no change is seen",
+        "A high activation barrier makes the reaction kinetically slow.",
+        "All thermodynamically favored reactions finish immediately",
+        "The reactants must have no thermal motion"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Thermodynamic driving force and the rate of crossing a barrier are separate properties. A is incorrect: lack of measurable conversion does not establish equilibrium. C is incorrect: favorability does not imply rapid kinetics. D is incorrect: a small reactive fraction can make conversion slow despite ongoing motion."
+    },
+    {
+      "id": "chem-9-4-002",
+      "prompt": "A catalyst greatly accelerates a slow favorable reaction at constant temperature. What does it primarily change?",
+      "options": [
+        "The sign of ΔG° from positive to negative",
+        "Only the product molar mass",
+        "The final equilibrium constant by the same factor as the rate",
+        "The reaction pathway and activation barrier, not the equilibrium free-energy difference."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. A catalyst allows faster approach through a different route while preserving reactant/product thermodynamics. A is incorrect: catalysis does not redefine the standard free-energy difference. B is incorrect: catalysts do not change the chemical identities in the specified net reaction. C is incorrect: equilibrium constants are not multiplied by catalytic acceleration."
+    },
+    {
+      "id": "chem-9-4-003",
+      "prompt": "Two pathways lead from the same reactants to the same products at the same conditions. PathI has activation energy80 kJ/mol and pathII has40 kJ/mol. What can be concluded about the reaction free-energy change?",
+      "options": [
+        "It is the same for both pathways, even though their rates can differ.",
+        "It is twice as large for pathI",
+        "It must be negative only for pathII",
+        "It is zero for both because two paths exist"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Initial and final states determine the thermodynamic difference; barriers describe the routes. B is incorrect: activation-energy magnitude is not the reaction free-energy difference. C is incorrect: lowering a barrier does not change reaction favorability. D is incorrect: the existence of alternate paths does not require equilibrium."
+    },
+    {
+      "id": "chem-9-4-004",
+      "prompt": "A fuel-oxidizer mixture is thermodynamically favored to react under its initial conditions but requires an ignition event to react rapidly. Why?",
+      "options": [
+        "Ignition permanently changes the equilibrium constant into a rate constant",
+        "A favorable reaction cannot require any initiation",
+        "Ignition supplies an initial population capable of crossing the activation barrier.",
+        "Ignition must create atoms missing from the balanced reaction"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Starting a thermodynamically favorable reaction can still require overcoming a kinetic barrier. A is incorrect: those quantities remain distinct. B is incorrect: that confuses thermodynamics with kinetics. D is incorrect: the trigger need not add net reaction atoms."
+    },
+    {
+      "id": "chem-9-4-005",
+      "prompt": "A reaction with positive ΔG° is studied under standard conditions. Can an ordinary catalyst alone make its forward standard free-energy change negative?",
+      "options": [
+        "Yes, any sufficiently powerful catalyst reverses ΔG°",
+        "Yes, but only if it is a solid catalyst",
+        "Yes, because only the forward reaction is catalyzed",
+        "No; the catalyst cannot change that thermodynamic difference."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. External energy, coupling or changed conditions may alter the situation, but catalysis alone only modifies pathways. A is incorrect: barrier reduction does not change the endpoint free-energy difference. B is incorrect: catalyst phase does not override thermodynamics. C is incorrect: a catalytic pathway also supports the reverse process."
+    },
+    {
+      "id": "chem-9-4-006",
+      "prompt": "A gas reaction becomes much faster on heating. What does that observation alone establish?",
+      "options": [
+        "The reaction necessarily changed from unfavorable to favorable",
+        "Its kinetics changed; the sign of its thermodynamic driving force is not determined by speed alone.",
+        "Its equilibrium constant must be numerically equal to the new rate",
+        "The activation barrier must have vanished entirely"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Higher temperature can increase the reactive collision population without the rate measurement itself identifying equilibrium favorability. A is incorrect: a rate increase does not prove a sign change. C is incorrect: kinetic and equilibrium quantities differ. D is incorrect: more particles can cross a finite barrier."
+    },
+    {
+      "id": "chem-9-4-007",
+      "prompt": "Why can a gas mixture have many collisions but extremely slow chemical conversion?",
+      "options": [
+        "Every collision must form product, so slow reaction is impossible",
+        "A negative ΔG requires zero activation energy",
+        "Only a small fraction of collisions may have sufficient energy and suitable orientation.",
+        "Slow conversion proves particles are motionless"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Total collision frequency is not the same as successful reactive collision frequency. A is incorrect: most collisions can be unproductive. B is incorrect: free-energy difference does not set the barrier to zero. D is incorrect: collisions demonstrate motion."
+    },
+    {
+      "id": "chem-9-4-008",
+      "prompt": "A sample remains chemically unchanged for months. What additional evidence is needed before interpreting it as equilibrium rather than kinetic persistence?",
+      "options": [
+        "Evidence that opposing processes are balanced under the actual conditions.",
+        "Only a larger sample of the same unchanged material",
+        "Proof that its standard enthalpy is negative",
+        "A claim that all stable-looking samples must have ΔG°=0"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Macroscopic constancy alone does not distinguish dynamic equilibrium from a reaction too slow to observe. B is incorrect: more material does not by itself identify balanced rates. C is incorrect: enthalpy sign alone does not establish equilibrium. D is incorrect: appearance is not a thermodynamic measurement."
+    },
+    {
+      "id": "chem-9-4-009",
+      "prompt": "A solid conversion is assigned a negative free-energy change under the stated conditions but has a very high rearrangement barrier. Which description is appropriate?",
+      "options": [
+        "Thermodynamically unfavorable solely because it is slow",
+        "At equilibrium solely because the solid is visible",
+        "Thermodynamically favored but kinetically hindered.",
+        "Certain to complete instantly because ΔG is negative"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The driving force favors products, while slow atomic rearrangement limits the observed rate. A is incorrect: slowness concerns the barrier, not the given driving force. B is incorrect: persistence does not prove equal opposing rates. D is incorrect: favorability alone does not specify a time scale."
+    },
+    {
+      "id": "chem-9-4-010",
+      "prompt": "A slow favorable reaction is accelerated by a catalyst. At equilibrium, both catalyzed forward and reverse rates are greater than before catalyst addition. Why is there still no net change?",
+      "options": [
+        "The reverse reaction must stop at equilibrium",
+        "The catalyst consumes exactly all product formed",
+        "The equilibrium constant must decrease until both rates become zero",
+        "The two opposing rates remain equal."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Catalysis can increase both balanced rates without changing the equilibrium composition. A is incorrect: dynamic equilibrium includes reverse events. B is incorrect: the catalyst is not a net sink for the reaction product. C is incorrect: rates need not vanish and K is unchanged at fixed temperature."
+    },
+    {
+      "id": "chem-9-4-011",
+      "prompt": "An energy diagram has products lower than reactants, but a tall intermediate barrier. Which design change could increase rate while retaining the same net reactants and products at the same temperature?",
+      "options": [
+        "Raise the product energy solely to make ΔG more negative",
+        "Provide a catalytic path with a lower barrier.",
+        "Remove all collisions between reactants",
+        "Assume the existing tall barrier is irrelevant because products are lower"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Changing the pathway can reduce kinetic hindrance without moving the endpoint energy levels. A is incorrect: raising product energy does not make the forward thermodynamic change more favorable. C is incorrect: that prevents rather than accelerates conversion. D is incorrect: the barrier still controls the reactive population."
+    }
+  ]
+}
