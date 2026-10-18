@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 4,
+  "topicId": "reactions",
+  "questions": [
+    {
+      "id": "chem-4-1-001",
+      "prompt": "Experiment I converts pure liquid water to water vapor. Experiment II converts water into separately identified hydrogen and oxygen gases. Which classification is supported by the identities of the products?",
+      "options": [
+        "I is physical; II is chemical, because only II produces different substances.",
+        "Both are chemical, because a gas appears in each experiment.",
+        "Both are physical, because each experiment begins with water.",
+        "I is chemical; II is physical, because II produces elements."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Water remains H2O during vaporization, whereas formation of H2 and O2 changes the substances present. B treats gas formation as conclusive without identifying the gas; vaporization is a counterexample. C ignores the different product identities in II. D reverses the classification: producing elements from a compound is a chemical change, while changing water's phase is physical."
+    },
+    {
+      "id": "chem-4-1-002",
+      "prompt": "Two colorless solutions become cloudy when mixed. Which additional investigation most directly tests whether a new insoluble substance formed, rather than assuming that cloudiness alone proves a reaction?",
+      "options": [
+        "Record whether the final mixture occupies more volume than either initial portion.",
+        "Stir the mixture and classify any process accelerated by stirring as chemical.",
+        "Isolate and characterize the cloudy material, then compare its chemical identity with the starting substances.",
+        "Measure the total mass and classify the change as chemical only if mass decreases."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Characterization can establish whether the suspended material is a new product rather than, for example, droplets or previously present material. A does not establish a change in identity; combining portions commonly increases volume without reaction. B supplies no valid chemical-versus-physical criterion because stirring can accelerate mixing and dissolution. D conflicts with conservation of mass in a closed system and cannot identify a product. Cloudiness is useful possible evidence, not a substitute for interpretation."
+    },
+    {
+      "id": "chem-4-1-003",
+      "prompt": "A dry salt is added to water in an insulated cup, and the temperature falls. No product-identification data are available. Which conclusion is best supported by the temperature observation alone?",
+      "options": [
+        "A new substance must have formed because all cooling processes are chemical.",
+        "Energy transfer occurred, but a temperature change alone does not establish that a new substance formed.",
+        "The salt must have evaporated because chemical changes always release heat.",
+        "The salt's chemical identity must be unchanged because cooling rules out reaction."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Cooling can accompany physical processes such as some dissolutions or chemical processes; additional evidence about the species is needed. A overstates the diagnostic value of temperature. C invents evaporation and incorrectly excludes energy-absorbing reactions. D makes the opposite unsupported certainty: a temperature decrease does not rule out a chemical reaction. The question asks what this observation alone establishes, not whether every salt behaves identically in water."
+    },
+    {
+      "id": "chem-4-1-004",
+      "prompt": "An ethanol-water mixture is separated by distillation. Analysis identifies ethanol and water in the collected fractions, with changed proportions but no new substances. How should the separation be classified?",
+      "options": [
+        "Chemical, because the fractions have different ethanol percentages.",
+        "Chemical, because heating changes liquid to vapor.",
+        "Chemical, because a mixture cannot be separated without producing new substances.",
+        "Physical, because the existing substances are separated without changing their chemical identities."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The fractions differ in mixture composition, but ethanol remains ethanol and water remains water. A confuses a change in mixture proportions with transformation into new substances. B treats a phase change as inherently chemical. C incorrectly assumes separation requires reaction. The supplied analysis is important: it identifies the constituents rather than inferring identity merely from their appearance."
+    },
+    {
+      "id": "chem-4-1-005",
+      "prompt": "A student claims that bubbles appearing when an unidentified liquid is warmed prove chemical decomposition. Which finding most directly challenges that claim?",
+      "options": [
+        "Analysis shows that the bubbles contain only the original substance in its vapor phase.",
+        "The bubble rate increases when the liquid is warmed more strongly.",
+        "Bubbles rise to the surface instead of remaining at the bottom.",
+        "The liquid loses mass while the bubbles escape from the open vessel."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Identification of the gas as the original substance supports vaporization, which does not itself produce a new chemical substance. B is consistent with faster vaporization as well as some reactions. C describes buoyant motion rather than chemical identity. D can result from loss of vapor during a physical change, but an open-system mass loss alone cannot distinguish that from escape of a reaction product."
+    },
+    {
+      "id": "chem-4-1-006",
+      "prompt": "A blue solution becomes paler after colorless water is added. Spectral measurements show the same dissolved colored species before and after addition, at a lower concentration, and no detectable new species. Which interpretation best uses all these observations?",
+      "options": [
+        "The color change by itself proves formation of a new compound.",
+        "The water converted the colored species into an element.",
+        "The evidence supports physical dilution; the appearance changed without an identified change in chemical identity.",
+        "The original colored species disappeared completely because the color became less intense."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Lower concentration of the same species explains the paler appearance without requiring a reaction. A ignores the compositional evidence; color is possible evidence of reaction but is not universally decisive. B proposes an elemental product for which there is no evidence. D contradicts detection of the original colored species after dilution. The stated measurements support this interpretation rather than a general rule that adding water can never cause reaction."
+    },
+    {
+      "id": "chem-4-1-007",
+      "prompt": "A metal strip is heated in oxygen. A dark surface layer forms, and analysis identifies that layer as a metal oxide rather than the original metal. Which conclusion is most strongly supported?",
+      "options": [
+        "Only a physical change occurred because the sample remained solid.",
+        "Only a physical change occurred because the original metal is still present beneath the layer.",
+        "No classification is possible unless gas bubbles were also observed.",
+        "A chemical change occurred at the surface because a new substance formed."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The identified oxide is chemically different from the initial metal, so at least part of the strip reacted. A incorrectly requires a phase change for reaction. B overlooks partial reaction: unreacted material can remain alongside a product. C imposes an unnecessary gas-evolution requirement; chemical changes need not produce visible bubbles. The identification of the oxide is stronger evidence than darkening alone."
+    },
+    {
+      "id": "chem-4-1-008",
+      "prompt": "A metal wire is cut into pieces that cannot practically be joined back to their original shape. In a separate experiment, substances X and Y react to form Z, and suitable conditions convert Z back into X and Y. What do these examples show about reversibility as a classification rule?",
+      "options": [
+        "Any practically irreversible change must be chemical.",
+        "Reversibility alone is not a reliable rule; cutting preserves the metal's identity, while the reversible transformation changes the substances present.",
+        "Any reversible transformation must be physical, so forming Z is physical.",
+        "Both examples are chemical because each requires an external action."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Chemical identity, not practical ease of reversal, is the distinction. Cutting changes shape without creating a different substance, and a chemical reaction can be reversed. A fails for the cut wire. C fails for the explicitly described formation and decomposition of Z. D is not a valid criterion because many physical processes require an external action or energy input."
+    },
+    {
+      "id": "chem-4-1-009",
+      "prompt": "In a sealed vessel, reactants form an identified new solid and an identified new gas. The total mass of the vessel and its contents is unchanged. A student says the unchanged mass means that no chemical change occurred. Which response is correct?",
+      "options": [
+        "The student is correct because every chemical change reduces total mass.",
+        "The student is correct because mass conservation requires the starting substances to remain unchanged.",
+        "The new substance identities support chemical change; conservation of total mass is compatible with a reaction in the sealed vessel.",
+        "The mass measurement proves that the gas was present initially rather than produced."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Atoms are rearranged into different substances while the total mass of this closed system is conserved. A wrongly predicts mass loss for every reaction. B confuses conservation of matter with preservation of molecular or ionic identities. D cannot be inferred from total mass; a reaction can produce gas without matter escaping the vessel. The product-identification evidence, rather than mass change alone, establishes the chemical transformation."
+    },
+    {
+      "id": "chem-4-1-010",
+      "prompt": "A green ink separates into yellow and blue bands during chromatography. Each isolated band is identified as a dye already present in the original ink, with no detected new dye. Which statement best describes the result?",
+      "options": [
+        "This is evidence of physical separation of an existing mixture, even though new colored regions become visible.",
+        "This proves that a green compound decomposed into two newly formed elements.",
+        "This must be a chemical change because the number of visible bands increased.",
+        "This proves that each separated dye has a different chemical identity from its identity in the ink."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The identified constituents were present before separation, so making them spatially distinct does not itself create new substances. B mistakes a mixture for a single green compound and dyes for elements. C uses visible regions as a count of newly created species, which the identification data contradict. D incorrectly assumes that separating a constituent changes its identity. Chromatography conditions that caused an actual reaction would require different evidence; the prompt specifies the observed identities."
+    },
+    {
+      "id": "chem-4-1-011",
+      "prompt": "An electrically heated metal filament emits visible light but remains the same metal. In a separate experiment, burning magnesium emits bright light and produces identified magnesium oxide. Which statement best evaluates light emission as evidence?",
+      "options": [
+        "Both changes must be chemical because light is emitted.",
+        "Light emission can accompany either process; the identified new oxide, rather than light alone, supports chemical change in the magnesium experiment.",
+        "Neither change can be chemical because light carries energy away.",
+        "Only the filament change is chemical because electrical heating always changes chemical identity."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. A hot object can emit light without forming a new substance, whereas magnesium oxide is a new product. A overstates light's diagnostic value. C incorrectly treats energy release as incompatible with reaction. D invents a universal rule for electrical heating and ignores the specified unchanged identity of the filament. Heat, light, color, gas, and solid formation are possible clues that require interpretation in context."
+    }
+  ]
+}
