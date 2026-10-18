@@ -49,7 +49,7 @@ close(.250 * 2, .500);
 assert.equal(100 * 2 - 200, 0);
 assert.deepEqual([80 / 20, 60 / 40], [4, 1.5]);
 // Independently reconstruct Lewis bookkeeping from atom/edge lists, not saved keys.
-const valence = {H:1,B:3,C:4,N:5,O:6,F:7,P:5,S:6};
+const valence = {H:1,B:3,C:4,N:5,O:6,F:7,P:5,S:6,Cl:7,Br:7,Xe:8};
 function lewis(elements, edges, lonePairs, charge = 0, exceptions = {}) {
   const orders = elements.map(() => 0);
   for (const [a,b,order] of edges) { orders[a] += order; orders[b] += order; }
@@ -86,4 +86,16 @@ assert.deepEqual(lewis(['S','F','F','F','F','F','F'],[[0,1,1],[0,2,1],[0,3,1],[0
 assert.deepEqual(lewis(['C','O'],[[0,1,3]],[1,1]),[-1,1]);
 assert.deepEqual(lewis(['N','O','O','O'],[[0,1,2],[0,2,1],[0,3,1]],[0,2,3,3],-1),[1,0,-1,-1]);
 assert.throws(() => lewis(['N','O','O','O'],[[0,1,2],[0,2,2],[0,3,1]],[0,2,2,3],-1),/Occupancy at atom 0/);
-console.log('Independent arithmetic/charge/Lewis checks passed through Topic 2.6. See per-topic QA for conceptual checks and limitations.');
+// Topic 2.7: count the domains and electrons before assigning geometries.
+for (const [element,bonds,pairs] of [['P',5,0],['S',4,1],['Cl',3,2],['Xe',4,2],['Br',5,1]]) {
+  lewis([element,...Array(bonds).fill('F')],Array.from({length:bonds},(_,i)=>[0,i+1,1]),[pairs,...Array(bonds).fill(3)],0,{0:2*(bonds+pairs)});
+}
+lewis(['C','C','H','H'],[[0,1,3],[0,2,1],[1,3,1]],[0,0,0,0]);
+assert.deepEqual([3,2],[2+1,3-1]); // C2H2 sigma/pi totals
+lewis(['C','C','N','H','H','H'],[[0,1,1],[1,2,3],[0,3,1],[0,4,1],[0,5,1]],[0,0,1,0,0,0]);
+const vectorSum = vectors => vectors.reduce((sum,vector)=>sum.map((value,index)=>value+vector[index]),[0,0,0]);
+const bf3 = [0,2*Math.PI/3,4*Math.PI/3].map(angle=>[Math.cos(angle),Math.sin(angle),0]);
+vectorSum(bf3).forEach(value=>close(value,0));
+assert.deepEqual(vectorSum([[1,0,0],[-1,0,0],[0,1,0],[0,-1,0]]),[0,0,0]); // XeF4
+assert.notDeepEqual(vectorSum([[1,1,1],[1,-1,-1],[-1,1,-1]]),[0,0,0]); // three tetrahedral directions, NH3 model
+console.log('Independent arithmetic/charge/Lewis/vector checks passed through Topic 2.7. See per-topic QA for conceptual checks and limitations.');

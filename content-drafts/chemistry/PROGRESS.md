@@ -4,7 +4,7 @@ Updated 2026-10-17. This ledger describes saved files, not background work or a 
 
 - Official inventory: 91 topics in nine units; target 1,001 questions (11 per topic).
 - Live approved questions: 11 in Topic 1.1 only. Original 001–010 preserved; owner authorized validated 011.
-- Complete unpublished working sets: 6, 66 questions. These require human scientific review and owner approval; they are not additional live questions.
+- Complete unpublished working sets: 7, 77 questions. These require human scientific review and owner approval; they are not additional live questions.
 - Topic 1.5 demonstration removed entirely; its page/workspace and student storage keys are preserved. Its pending eleven-question set is separate.
 - Recovered originals: three complete sets (1.4, 1.5, 1.8) and fragments (1.6, 1.7, 2.1). Archived unchanged; complete working copies audited separately.
 - The fragments contain 29 complete recovered question objects (10/10/9); corrected partial working copies and known scope/variety flags are recorded in `qa/partial-recovery.md`. They are not complete banks and do not count toward complete-topic totals.
@@ -39,7 +39,7 @@ Updated 2026-10-17. This ledger describes saved files, not background work or a 
 | 2.4 | Structure of Metals and Alloys | `topic-2-4` | 0 | 11 | draft; human-review-pending (see QA) |
 | 2.5 | Lewis Diagrams | `topic-2-5` | 0 | 11 | draft; human-review-pending (see QA) |
 | 2.6 | Resonance and Formal Charge | `topic-2-6` | 0 | 11 | draft; human-review-pending (see QA) |
-| 2.7 | VSEPR and Hybridization | `topic-2-7` | 0 | 0 | not-started |
+| 2.7 | VSEPR and Hybridization | `topic-2-7` | 0 | 11 | draft; human-review-pending (see QA) |
 | 3.1 | Intermolecular and Interparticle Forces | `intermolecular-forces` | 0 | 0 | not-started |
 | 3.2 | Properties of Solids | `topic-3-2` | 0 | 0 | not-started |
 | 3.3 | Solids, Liquids, and Gases | `topic-3-3` | 0 | 0 | not-started |
