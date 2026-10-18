@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 9,
+  "topicId": "topic-9-3",
+  "questions": [
+    {
+      "id": "chem-9-3-001",
+      "prompt": "A process has ΔH°<0 and ΔS°>0. Assuming those signs remain valid over the temperature range, when is ΔG° negative?",
+      "options": [
+        "At every positive absolute temperature in that range.",
+        "Only at very high temperature",
+        "Only at very low temperature",
+        "At no temperature"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Both the negative enthalpy and the term−TΔS° favor a negative free-energy change. B is incorrect: the entropy term helps at high temperature, but the enthalpy is already favorable. C is incorrect: increasing temperature makes the favorable entropy contribution larger. D is incorrect: both terms favor negative ΔG°."
+    },
+    {
+      "id": "chem-9-3-002",
+      "prompt": "A process has ΔH°>0 and ΔS°<0. Under the constant-sign model, which statement is correct?",
+      "options": [
+        "It is favorable at all temperatures",
+        "It becomes favorable merely by heating sufficiently",
+        "It is thermodynamically unfavorable in the standard direction at every positive temperature considered.",
+        "It must have ΔG°=0"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. ΔH° is positive and−TΔS° is also positive, so ΔG°>0. A is incorrect: both terms oppose favorability. B is incorrect: the unfavorable entropy term grows on heating. D is incorrect: opposite signs of ΔH° and ΔS° do not cancel in this combination."
+    },
+    {
+      "id": "chem-9-3-003",
+      "prompt": "A process has ΔH°=+30.0 kJ and ΔS°=+100 J K−1 for the stated reaction amount. Treat both as constant. At what temperatures is it favored in the standard direction?",
+      "options": [
+        "Below300 K",
+        "At every positive temperature",
+        "Only below30 K",
+        "Above300 K."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. ΔG°=30.0−T(0.100) kJ becomes negative above300 K. A is incorrect: at lower temperature the positive enthalpy dominates. B is incorrect: the entropy contribution must first outweigh the enthalpy. C is incorrect: that fails to convert the entropy units consistently."
+    },
+    {
+      "id": "chem-9-3-004",
+      "prompt": "A process has ΔH°=−60.0 kJ and ΔS°=−200 J K−1. With constant values, when is ΔG°<0?",
+      "options": [
+        "Above300 K",
+        "Below300 K.",
+        "At all temperatures",
+        "At no temperature"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. ΔG°=−60.0+0.200T kJ is negative for T<300 K. A is incorrect: the entropy penalty dominates at higher temperature. C is incorrect: a sufficiently large positive0.200T term can overcome the enthalpy. D is incorrect: the enthalpy term favors the process at low temperature."
+    },
+    {
+      "id": "chem-9-3-005",
+      "prompt": "At300 K, a reaction amount has ΔH°=+10.0 kJ and ΔS°=+50.0 J K−1. What is ΔG°?",
+      "options": [
+        "+25.0 kJ",
+        "+9.985 kJ",
+        "−5.00 kJ",
+        "−14990 kJ"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. TΔS°=300×0.0500=15.0 kJ; ΔG°=10.0−15.0. A is incorrect: that adds rather than subtracts TΔS°. B is incorrect: that introduces an extra factor1000 in converting entropy. D is incorrect: that mixes50.0 J/K numerically with10.0 kJ."
+    },
+    {
+      "id": "chem-9-3-006",
+      "prompt": "At298 K, ΔH°=−25.0 kJ and ΔS°=−100 J K−1 for a stated process. What is ΔG°?",
+      "options": [
+        "+4.80 kJ",
+        "−54.8 kJ",
+        "−4.80 kJ",
+        "−25.0 kJ"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The entropy term is−29.8 kJ, so−25.0−(−29.8)=+4.80. B is incorrect: that adds the signed TΔS° instead of subtracting it. C is incorrect: that reverses the final sign. D is incorrect: that ignores the entropy contribution."
+    },
+    {
+      "id": "chem-9-3-007",
+      "prompt": "For CO(g)+(1/2)O2(g)→CO2(g), use ΔGf°(CO)=−137.2 and ΔGf°(CO2)=−394.4 kJ/mol; elemental O2 has ΔGf°=0. What is ΔG°?",
+      "options": [
+        "+257.2 kJ",
+        "−257.2 kJ",
+        "−531.6 kJ",
+        "−394.4 kJ"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Products minus reactants gives−394.4−(−137.2)=−257.2. A is incorrect: that reverses the subtraction. C is incorrect: that adds the two negative formation values. D is incorrect: that omits the nonzero CO reactant formation value."
+    },
+    {
+      "id": "chem-9-3-008",
+      "prompt": "For2NO(g)+O2(g)→2NO2(g), ΔGf°(NO)=86.6 and ΔGf°(NO2)=51.3 kJ/mol; O2 has zero formation free energy. What is ΔG°?",
+      "options": [
+        "−35.3 kJ",
+        "+70.6 kJ",
+        "+275.8 kJ",
+        "−70.6 kJ"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. 2(51.3)−2(86.6)=−70.6. A is incorrect: that omits the coefficient two on both nitrogen oxides. B is incorrect: that reverses products minus reactants. C is incorrect: that adds rather than subtracts the two coefficient-weighted values."
+    },
+    {
+      "id": "chem-9-3-009",
+      "prompt": "For a phase change, ΔH°=15.0 kJ and ΔS°=50.0 J K−1. What is ΔG° at300 K under the constant-value approximation?",
+      "options": [
+        "+30.0 kJ",
+        "0 kJ",
+        "−15.0 kJ",
+        "+15.0 kJ"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The enthalpy15.0 kJ equals TΔS°=15.0 kJ at that temperature. A is incorrect: that adds the two terms. C is incorrect: that omits the enthalpy contribution. D is incorrect: that omits the entropy contribution."
+    },
+    {
+      "id": "chem-9-3-010",
+      "prompt": "A process has ΔH°=5.00 kJ and ΔS°=20.0 J K−1 at25°C. Use T≈298 K. What is ΔG°?",
+      "options": [
+        "+4.50 kJ",
+        "+10.96 kJ",
+        "−0.960 kJ",
+        "−5955 kJ"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Absolute temperature is required:5.00−298(0.0200)=−0.960 kJ. A is incorrect: that incorrectly substitutes25 into TΔS°. B is incorrect: that adds the entropy term. D is incorrect: that mixes joules and kilojoules."
+    },
+    {
+      "id": "chem-9-3-011",
+      "prompt": "A reaction has ΔG°=−40 kJ under the stated standard conditions. Which conclusion is justified from that value alone?",
+      "options": [
+        "The forward reaction is thermodynamically favored under standard conditions.",
+        "It must finish instantly",
+        "It must release exactly40 kJ as heat",
+        "Every possible nonstandard mixture must proceed forward"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Negative standard free-energy change indicates standard thermodynamic favorability, without specifying reaction speed. B is incorrect: free-energy favorability is not a rate measurement. C is incorrect: ΔG° is not generally identical to ΔH°. D is incorrect: a standard-state result does not specify the direction at every possible composition."
+    }
+  ]
+}

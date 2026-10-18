@@ -687,4 +687,8 @@ close(2*192.8-(191.6+3*130.7),-198.1);close(2*69.9-(2*130.7+205.2),-326.8);
 close(188.8-69.9,118.9);close(39.8+213.8-92.9,160.7);close(304.3-2*240.1,-175.9);
 close(2*27.3+3*213.8-(87.4+3*197.7),15.5);close(.2*118.9,23.78);
 close(-2*25,-50);close(-40+2*100,160);close(102.5+56.5-82.6,76.4);
+// Topic 9.3: signs, absolute T, entropy-unit conversion and formation sums.
+close(30/.100,300);close((-60)/(-.200),300);close(10-300*.050,-5);
+close(-25-298*(-.100),4.8);close(-394.4-(-137.2),-257.2);
+close(2*51.3-2*86.6,-70.6);close(15-300*.05,0);close(5-298*.020,-.96);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
