@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 5,
+  "topicId": "topic-5-5",
+  "questions": [
+    {
+      "id": "chem-5-5-001",
+      "prompt": "Two reactant molecules collide with energy above the specified activation-energy threshold, but their orientation does not allow the required bonds to rearrange. What does the collision model predict?",
+      "options": [
+        "Products must form because energy alone is always sufficient.",
+        "Products must form because every collision of reactant molecules is reactive.",
+        "The collision need not produce products because appropriate orientation is also required.",
+        "The molecules must lose all kinetic energy because the collision is unreactive."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Successful encounters require both sufficient energy and a suitable orientation for the specified rearrangement. A ignores the geometric requirement. B ignores that only a fraction of collisions are successful. D invents total kinetic-energy loss; an unreactive collision can redistribute energy and change trajectories without stopping the particles or producing products. Above-threshold energy is not a guarantee of reaction in every encounter."
+    },
+    {
+      "id": "chem-5-5-002",
+      "prompt": "For the same elementary reaction pathway, temperature is increased while the activation-energy threshold and orientation requirement are unchanged. Which collision-energy explanation supports a usual increase in rate?",
+      "options": [
+        "The activation-energy threshold must become zero whenever temperature rises.",
+        "A larger fraction of the collision-energy distribution can exceed the unchanged threshold.",
+        "Every molecule acquires exactly the same energy, equal to the threshold.",
+        "The total area under a normalized energy-probability curve must increase above one."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Heating shifts the energy distribution so that more encounters can have enough energy to overcome the fixed barrier. A changes the stated pathway requirement without justification. C replaces a distribution with a single energy. D confuses redistribution of normalized probability with an increase in total probability; the area remains one. Collision frequency may also change, but a greater energetic fraction is a separate important effect."
+    },
+    {
+      "id": "chem-5-5-003",
+      "prompt": "More reactant molecules are placed in the same volume at unchanged temperature, without changing their identities or reaction pathway. Which effect distinguishes increased concentration from increased temperature in the simple collision model?",
+      "options": [
+        "More potential reactant encounters occur per volume and time, without requiring a higher mean kinetic energy per particle.",
+        "The mean kinetic energy per particle must double whenever concentration doubles.",
+        "The activation-energy threshold must decrease because there are more particles.",
+        "The orientation requirement disappears once enough molecules are present."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Increasing the number density can increase encounter frequency while the temperature-controlled particle-energy distribution remains unchanged in the simple model. B conflates concentration with temperature. C invents a barrier change for the same pathway. D removes a geometric condition that particle number alone does not remove. The exact rate factor still depends on the participating species and model; no universal doubling rule is implied."
+    },
+    {
+      "id": "chem-5-5-004",
+      "prompt": "In a supplied collision model, each successful encounter forms one P molecule. System I has 2.0 × 10^6 reactant encounters per second, with 0.020 successful. System II has 3.0 × 10^6 encounters per second, with 0.010 successful. Which comparison of P formation is correct? Here each decimal is the fraction of that system's encounters that succeeds.",
+      "options": [
+        "II is faster because total encounter count alone determines product formation.",
+        "The systems form P equally fast because both have small successful fractions.",
+        "I forms 2.0 × 10^6 P/s and II forms 3.0 × 10^6 P/s.",
+        "I forms 4.0 × 10^4 P/s, exceeding II's 3.0 × 10^4 P/s despite fewer total encounters."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Multiply total encounters by the successful fraction: I gives (2.0 × 10^6)(0.020) = 4.0 × 10^4 P/s and II gives (3.0 × 10^6)(0.010) = 3.0 × 10^4 P/s. A ignores success probability. B treats unequal small fractions as equal effects. C assumes every encounter succeeds. A larger raw collision frequency does not guarantee a larger reaction rate if the energetic/geometric success fraction also differs."
+    },
+    {
+      "id": "chem-5-5-005",
+      "prompt": "Two normalized Maxwell-Boltzmann particle-energy curves represent the same substance at T_low and T_high, with T_high > T_low. A vertical line marks a fixed activation-energy threshold. Which feature is relevant to estimating the energetically capable fraction qualitatively?",
+      "options": [
+        "Only the height of the distribution's peak, regardless of its width or tail.",
+        "The area to the left of zero energy, which increases on warming.",
+        "The area to the right of the threshold, which is larger for the higher-temperature distribution.",
+        "The total area, which must be larger at the higher temperature even after normalization."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Tail area beyond a specified threshold is the relevant qualitative measure of the energetic fraction. A uses a single height rather than an integrated fraction. B refers to negative kinetic energies outside this distribution's domain. D ignores normalization to equal total probability. A particle-energy curve is a qualitative guide to collision-energy availability, not an exact determination of every reaction's rate without orientation and encounter information."
+    },
+    {
+      "id": "chem-5-5-006",
+      "prompt": "A model of CO + NO2 → CO2 + NO specifies that a new bond forms between the carbon of CO and a transferable oxygen of NO2. With collision energy held sufficient, which encounter orientation best supports that stated rearrangement?",
+      "options": [
+        "The carbon end of CO approaches the transferable oxygen of NO2.",
+        "The oxygen end of CO approaches that oxygen while carbon points away, with no reorientation.",
+        "The carbon end of CO points away from all NO2 atoms throughout the encounter.",
+        "Any orientation is equally suitable because the reactants' formulas are already balanced."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The specified new C–O contact is most directly accessible when carbon approaches the oxygen being transferred. B and C orient the required carbon away from that contact under the stated no-reorientation conditions. D confuses atom balance with geometric access to bond rearrangement. The model supplies the reactive contact; no memorized three-dimensional transition-state geometry is required or asserted as a complete mechanism."
+    },
+    {
+      "id": "chem-5-5-007",
+      "prompt": "For one elementary model, the number of reactant encounters per second doubles. The fraction with sufficient energy and the conditional fraction with suitable orientation are both unchanged. What happens to the predicted number of successful encounters per second?",
+      "options": [
+        "It is unchanged because the energy fraction is unchanged.",
+        "It quadruples because every doubling always gives a squared effect.",
+        "It halves because more collisions reduce the energy available per collision.",
+        "It doubles because the same successful fraction applies to twice as many encounters."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Successful-event count equals total encounter count times the specified success fractions, so a twofold encounter change gives a twofold result when those fractions stay fixed. A ignores the count increase. B adds an unsupported second factor of two. C assumes an energy redistribution ruled out by the unchanged fractions. The problem supplies the encounter change, so it does not assume a particular concentration-rate law."
+    },
+    {
+      "id": "chem-5-5-008",
+      "prompt": "A reaction slows when its temperature is lowered, but it does not stop completely. Which statement is consistent with an energy distribution rather than a single common particle energy?",
+      "options": [
+        "Every particle must now be below the threshold, so all observed product is impossible.",
+        "The mean energy is lower, but a nonzero high-energy fraction can still meet the threshold and react when suitably oriented.",
+        "Lower temperature makes every collision automatically have the correct orientation.",
+        "Any particles above the mean energy must violate energy conservation."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. A distribution includes energies above and below the mean; reducing temperature can reduce the capable fraction without making it exactly zero. A equates a lower mean with an absolute upper bound. C invents a geometric guarantee from cooling. D incorrectly applies conservation to require all particles to equal the mean; particles exchange energy while the distribution describes the ensemble. A finite barrier does not require all reaction to cease immediately upon cooling."
+    },
+    {
+      "id": "chem-5-5-009",
+      "prompt": "Two hypothetical pathways at the same temperature require collision energies of at least 40 kJ/mol and 60 kJ/mol respectively. Ignore orientation differences and compare only the energy thresholds using the same collision-energy distribution. Which statement must hold?",
+      "options": [
+        "Every collision meeting the 60 kJ/mol threshold also meets the 40 kJ/mol threshold, so the lower threshold cannot have a smaller energetically capable fraction.",
+        "The 60 kJ/mol threshold must have the larger capable fraction because its required energy is larger.",
+        "Exactly half the collisions meet each threshold, regardless of temperature.",
+        "A collision with 50 kJ/mol satisfies neither threshold."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The energies at or above 60 are a subset of those at or above 40, so lowering the threshold cannot remove energetic candidates. B reverses that inclusion. C invents a universal 50% fraction. D overlooks that 50 exceeds 40 while remaining below 60. This comparison concerns only energy eligibility; it does not claim that different real pathways necessarily have identical collision frequencies or orientation probabilities."
+    },
+    {
+      "id": "chem-5-5-010",
+      "prompt": "Two supplied elementary models have equal total reactant encounter counts and equal fractions of above-threshold encounters, but model II produces one-fourth as many successful events as I. Which single difference could account for that result within the collision model?",
+      "options": [
+        "Model II has four times as many total encounters, despite the stated equal counts.",
+        "Model II produces a different number of atoms than it consumes.",
+        "Among its energetic encounters, model II has one-fourth the fraction with the required orientation.",
+        "Orientation has no effect, so the models must actually have the same successful count."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. With encounter count and energetic fraction fixed, a fourfold smaller conditional orientation fraction gives fourfold fewer successful events. A contradicts the given control. B violates conservation rather than supplying a legitimate kinetic explanation. D removes the orientation factor and cannot explain the stipulated model difference. C is a possible explanation within the supplied model, not proof of an unmeasured mechanism in a real experiment."
+    },
+    {
+      "id": "chem-5-5-011",
+      "prompt": "A model counts 1.0 × 10^7 reactant encounters per second. Of all encounters, 0.040 have sufficient energy; of those energetic encounters, 0.25 have suitable orientation. Each successful encounter forms one product molecule. What product count per second is predicted?",
+      "options": [
+        "2.5 × 10^6 molecules/s",
+        "1.0 × 10^5 molecules/s",
+        "4.0 × 10^5 molecules/s",
+        "2.9 × 10^6 molecules/s"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Multiply the encounter count by the energetic fraction and then the conditional orientation fraction: (1.0 × 10^7)(0.040)(0.25) = 1.0 × 10^5 molecules/s. A applies only the orientation factor. C applies only the energy factor. D adds the two fractions instead of requiring both conditions. The orientation fraction is explicitly conditional on energetic encounters, so no unsupported statistical-independence assumption is needed."
+    }
+  ]
+}

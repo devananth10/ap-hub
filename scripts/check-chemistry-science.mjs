@@ -409,4 +409,12 @@ close(4*.5,2);
 assert.notEqual(2**1,2**2); // distinguish measured first versus proposed second H2 order
 close((2*.01)/.01,2); // A disappears twice per P event
 assert.ok(balanced([[1,'CH3Br'],[1,'OH',-1]],[[1,'CH3OH'],[1,'Br',-1]]));
+// Topic 5.5: successful-encounter products and qualitative tail inclusions.
+close(2e6*.020,4e4); close(3e6*.010,3e4);
+assert.ok(2e6*.020>3e6*.010);
+close((2*1e6*.040*.25)/(1e6*.040*.25),2);
+close(1e7*.040*.25,1e5);
+assert.ok(integrate(energy=>energyDensity(energy,1),2,100)>integrate(energy=>energyDensity(energy,1),3,100));
+assert.ok(integrate(energy=>energyDensity(energy,2),3,100)>integrate(energy=>energyDensity(energy,1),3,100));
+assert.ok(balanced([[1,'CO'],[1,'NO2']],[[1,'CO2'],[1,'NO']]));
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
