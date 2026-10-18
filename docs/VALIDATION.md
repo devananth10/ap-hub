@@ -1,5 +1,12 @@
 # PrepAtlas milestone verification
 
+## Unit 9 content checkpoint — October 18, 2026
+
+- All eleven thermodynamics/electrochemistry topics have eleven-question unpublished files (121 new questions). Coverage924/1,001: eleven live and913 pending in83 sets. Seven earlier topics remain incomplete.
+- Structure and science checks pass, with separate calculations, stoichiometric/electron balances and conceptual reviews. Decimal verification corrected a too-precise expected log value in the checker; the rounded question answer was already correct. This is not independent human approval.
+- TypeScript, all31 tests and the full development smoke passed. No app code changed; the Unit6 production build remains representative. Preview preserved, eight home themes observed in twelve fresh responses.
+- Units7–9 are finished as drafts. Return now to1.2/1.3/1.6/1.7/2.1/2.2/2.3, retaining valid recovered questions and writing only missing or justified replacement content. No publication or redesign started.
+
 ## Unit 8 content checkpoint — October 18, 2026
 
 - All eleven acid/base topics have eleven-question unpublished files (121 new questions). Coverage803/1,001: eleven live and792 pending across72 sets. Eighteen topics remain incomplete.

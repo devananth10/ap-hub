@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 9,
+  "topicId": "topic-9-11",
+  "questions": [
+    {
+      "id": "chem-9-11-001",
+      "prompt": "A current of2.00 A passes for965 s through a Cu2+ electroplating cell at100% current efficiency. Use F=96500 C/mol e− and M(Cu)=63.5 g/mol. What mass of Cu deposits?",
+      "options": [
+        "0.635 g",
+        "1.27 g",
+        "0.3175 g",
+        "63.5 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Charge=It=1930 C gives0.0200 mol electrons and0.0100 mol Cu for Cu2++2e−→Cu; mass=.0100×63.5. B is incorrect: that omits the two electrons required per copper ion. C is incorrect: that divides by the electron factor twice. D is incorrect: that assumes one mole of copper without charge accounting."
+    },
+    {
+      "id": "chem-9-11-002",
+      "prompt": "A1.00 A current flows for1930 s in an Ag+ plating cell with100% efficiency. Use F=96500 C/mol e− and M(Ag)=107.9 g/mol. What mass deposits?",
+      "options": [
+        "1.08 g",
+        "21.6 g",
+        "2.16 g",
+        "0.0200 g"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. 1930 C corresponds to0.0200 mol electrons and the same moles of Ag; mass=2.158 g. A is incorrect: that incorrectly assumes two electrons per Ag+. B is incorrect: that is ten times the charge-limited mass. D is incorrect: that reports the numerical mole amount as grams."
+    },
+    {
+      "id": "chem-9-11-003",
+      "prompt": "Al3+ is reduced in a molten-salt cell at2.50 A for1158 s with100% efficiency. Use F=96500 C/mol e− and M(Al)=27.0 g/mol. What Al mass forms?",
+      "options": [
+        "0.810 g",
+        "0.0900 g",
+        "27.0 g",
+        "0.270 g"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Charge is2895 C, or0.0300 mol electrons. Three electrons per Al3+ give0.0100 mol Al. A is incorrect: that treats electron moles as aluminum moles. B is incorrect: that divides by three twice. C is incorrect: that assumes one mole regardless of charge."
+    },
+    {
+      "id": "chem-9-11-004",
+      "prompt": "How long must0.500 A flow to deposit0.635 g Cu from Cu2+ at100% efficiency? Use M(Cu)=63.5 g/mol and F=96500 C/mol e−.",
+      "options": [
+        "965 s",
+        "3860 s",
+        "1930 s",
+        "7720 s"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The deposit is0.0100 mol Cu, requiring0.0200 mol electrons or1930 C; t=q/I=3860 s. A is incorrect: that multiplies charge by current rather than dividing. C is incorrect: that treats charge in coulombs as time without dividing by0.500 A. D is incorrect: that doubles the already balanced electron requirement."
+    },
+    {
+      "id": "chem-9-11-005",
+      "prompt": "A Ni2+ plating cell deposits0.587 g Ni in965 s with100% efficiency. Use M(Ni)=58.7 g/mol and F=96500 C/mol e−. What current flowed?",
+      "options": [
+        "1.00 A",
+        "4.00 A",
+        "2.00 A",
+        "0.00200 A"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. 0.0100 mol Ni requires0.0200 mol electrons and1930 C; I=1930/965=2.00 A. A is incorrect: that assumes one electron per Ni2+. B is incorrect: that doubles the two-electron requirement again. D is incorrect: that introduces an extra factor1000."
+    },
+    {
+      "id": "chem-9-11-006",
+      "prompt": "A zinc anode loses0.654 g by Zn→Zn2++2e− with100% efficiency. Use M(Zn)=65.4 g/mol and F=96500 C/mol e−. What charge corresponds to this loss?",
+      "options": [
+        "1930 C",
+        "965 C",
+        "3860 C",
+        "0.0200 C"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. 0.0100 mol Zn releases0.0200 mol electrons, so q=0.0200F=1930 C. B is incorrect: that assumes one electron per zinc atom. C is incorrect: that applies the two-electron factor twice. D is incorrect: that mistakes electron moles for coulombs."
+    },
+    {
+      "id": "chem-9-11-007",
+      "prompt": "Reduction of an unknown M^z+ requires1930 C to deposit0.560 g metal with molar mass56.0 g/mol at100% efficiency. Use F=96500 C/mol e−. What is z?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The charge supplies0.0200 mol electrons while the metal amount is0.0100 mol; two electrons reduce each ion. A is incorrect: that would require only965 C for the given metal amount. C is incorrect: that would require2895 C. D is incorrect: that would require3860 C."
+    },
+    {
+      "id": "chem-9-11-008",
+      "prompt": "An electrode produces H2 by2H++2e−→H2 at1.93 A for1000 s, with100% efficiency. Use F=96500 C/mol e− and a specified gas molar volume22.4 L/mol. What H2 volume is produced?",
+      "options": [
+        "0.448 L",
+        "22.4 L",
+        "0.112 L",
+        "0.224 L"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. 1930 C gives0.0200 mol electrons and0.0100 mol H2; volume=.0100×22.4. A is incorrect: that omits the two electrons per H2. B is incorrect: that assumes a full mole of gas. C is incorrect: that divides by two an extra time."
+    },
+    {
+      "id": "chem-9-11-009",
+      "prompt": "The same charge passes through ideal Ag+ and Cu2+ plating cells, each with100% efficiency. What is the ratio of moles of Ag deposited to moles of Cu deposited?",
+      "options": [
+        "1:1",
+        "2:1",
+        "1:2",
+        "The ratio equals their molar-mass ratio"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Ag+ consumes one electron per atom, whereas Cu2+ consumes two; equal electron moles therefore deposit twice as many Ag atoms. A is incorrect: that ignores the different electron requirements. C is incorrect: that reverses the stoichiometric ratio. D is incorrect: mole ratio depends on ionic charge, not atomic mass."
+    },
+    {
+      "id": "chem-9-11-010",
+      "prompt": "A Cu2+ cell receives1930 C, but only80.0% of charge produces Cu; the rest supports a side reaction. Use F=96500 C/mol e− and M(Cu)=63.5 g/mol. What mass deposits?",
+      "options": [
+        "0.635 g",
+        "0.794 g",
+        "0.508 g",
+        "1.016 g"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The ideal mass is0.635 g, and80.0% efficiency gives0.800×0.635=0.508 g. A is incorrect: that assumes100% efficiency. B is incorrect: that divides by efficiency rather than multiplying. D is incorrect: that ignores the two-electron requirement before applying efficiency."
+    },
+    {
+      "id": "chem-9-11-011",
+      "prompt": "A current is0.500 A for600 s, then1.50 A for600 s in an ideal Ag+ plating cell. Use F=96500 C/mol e− and M(Ag)=107.9 g/mol. What mass deposits?",
+      "options": [
+        "Approximately1.34 g",
+        "Approximately0.671 g",
+        "Approximately2.01 g",
+        "Approximately0.335 g"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Total charge is0.500×600+1.50×600=1200 C; one electron per Ag gives mass=(1200/96500)×107.9≈1.342 g. B is incorrect: that uses a two-electron requirement inappropriate for Ag+. C is incorrect: that uses the higher current for the entire1200 s. D is incorrect: that uses only the first stage of delivered charge."
+    }
+  ]
+}

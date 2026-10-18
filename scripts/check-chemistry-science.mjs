@@ -716,4 +716,10 @@ close(.6-(-.2),.8);assert.ok(balanced([[2,'Al'],[3,'Cu',2]],[[2,'Al',3],[3,'Cu']
 assert.ok(Math.log(2)>Math.log(1));assert.ok(Math.log(.5)<Math.log(1));
 close(Math.log(1),0);assert.ok(Math.log(10/20)<0);close((.1*3)/(.2*3),.1/.2);
 assert.ok(.01/1<1);
+// Topic 9.11: Faraday charge/time/current and explicit efficiency.
+close(2*965/96500/2*63.5,.635);close(1930/96500*107.9,2.158);
+close(2.5*1158/96500/3*27,.270);close((.635/63.5*2*96500)/.5,3860);
+close(.587/58.7*2*96500/965,2);close(.654/65.4*2*96500,1930);
+close((1930/96500)/(.560/56),2);close(1.93*1000/96500/2*22.4,.224);
+close(.8*.635,.508);close((.5*600+1.5*600)/96500*107.9,1.341761658031088);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
