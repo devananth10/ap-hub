@@ -4,8 +4,8 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 
 - Official inventory: 91 topics in nine units; target 1,001 questions (11 per topic).
 - Live approved questions: 11 in Topic 1.1 only. Original 001–010 preserved; owner authorized validated 011.
-- Complete unpublished working sets: 65, 715 questions. These require human scientific review and owner approval; they are not additional live questions.
-- Next topic in the owner-authorized completion order: 8.5 — Acid-Base Titrations, ID `topic-8-5`. Finish Units 7–9 first, then reconcile earlier gaps.
+- Complete unpublished working sets: 66, 726 questions. These require human scientific review and owner approval; they are not additional live questions.
+- Next topic in the owner-authorized completion order: 8.6 — Molecular Structure of Acids and Bases, ID `topic-8-6`. Finish Units 7–9 first, then reconcile earlier gaps.
 - Topic 1.5 demonstration removed entirely; its page/workspace and student storage keys are preserved. Its pending eleven-question set is separate.
 - Recovered originals: three complete sets (1.4, 1.5, 1.8) and fragments (1.6, 1.7, 2.1). Archived unchanged; complete working copies audited separately.
 - The fragments contain 29 complete recovered question objects (10/10/9); corrected partial working copies and known scope/variety flags are recorded in `qa/partial-recovery.md`. They are not complete banks and do not count toward complete-topic totals.
@@ -99,7 +99,7 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 | 8.2 | pH and pOH of Strong Acids and Bases | `topic-8-2` | 0 | 11 | draft; human-review-pending (see QA) |
 | 8.3 | Weak Acid and Base Equilibria | `topic-8-3` | 0 | 11 | draft; human-review-pending (see QA) |
 | 8.4 | Acid-Base Reactions and Buffers | `topic-8-4` | 0 | 11 | draft; human-review-pending (see QA) |
-| 8.5 | Acid-Base Titrations | `topic-8-5` | 0 | 0 | not-started |
+| 8.5 | Acid-Base Titrations | `topic-8-5` | 0 | 11 | draft; human-review-pending (see QA) |
 | 8.6 | Molecular Structure of Acids and Bases | `topic-8-6` | 0 | 0 | not-started |
 | 8.7 | pH and pKa | `topic-8-7` | 0 | 0 | not-started |
 | 8.8 | Properties of Buffers | `topic-8-8` | 0 | 0 | not-started |

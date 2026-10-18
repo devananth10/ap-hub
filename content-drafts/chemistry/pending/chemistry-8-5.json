@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 8,
+  "topicId": "topic-8-5",
+  "questions": [
+    {
+      "id": "chem-8-5-001",
+      "prompt": "A25.0 mL monoprotic acid sample requires30.0 mL of0.100 M NaOH to reach equivalence. What is the original acid concentration?",
+      "options": [
+        "0.0833 M",
+        "0.0545 M",
+        "0.120 M",
+        "0.100 M"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. At equivalence, acid moles equal0.0300×0.100=0.00300 mol; divide by0.0250 L. A is incorrect: that reverses the volume ratio. B is incorrect: that divides by the combined volume rather than the original analyte volume. D is incorrect: equal moles do not require equal concentrations at unequal volumes."
+    },
+    {
+      "id": "chem-8-5-002",
+      "prompt": "A weak monoprotic acid is titrated with strong base. The curve has an equivalence volume of24.0 mL. Its pH at12.0 mL is4.60. What is the acid pKa?",
+      "options": [
+        "4.60",
+        "9.20",
+        "7.00",
+        "12.0"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. At half-equivalence, the conjugate acid and base are present in equal principal amounts, so pH=pKa. B is incorrect: the pH is not doubled. C is incorrect: half-equivalence is not a universal neutral point. D is incorrect: that is a volume in milliliters, not pKa."
+    },
+    {
+      "id": "chem-8-5-003",
+      "prompt": "For a weak monoprotic acid titrated with NaOH at25°C, why is the equivalence-point pH commonly above7?",
+      "options": [
+        "NaOH must always be present in stoichiometric excess at equivalence.",
+        "The conjugate base produced at equivalence reacts with water to generate OH−.",
+        "The original acid has become a strong base molecule.",
+        "All equivalence points are basic regardless of reagents."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Equivalence consumes the acid stoichiometrically, leaving a hydrolyzing weak base rather than a neutral spectator. A is incorrect: equal neutralizing amounts define equivalence. C is incorrect: its conjugate base, not unchanged acid, accepts protons from water. D is incorrect: strong-acid/strong-base equivalence is neutral at25°C."
+    },
+    {
+      "id": "chem-8-5-004",
+      "prompt": "A weak base B is titrated with HCl at25°C. Which major species best explains an acidic equivalence-point pH?",
+      "options": [
+        "Unreacted excess HCl necessarily remaining at equivalence",
+        "OH− formed by complete dissociation of B",
+        "Neutral water alone because every salt is inert",
+        "BH+, which can donate a proton to water."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Stoichiometric protonation leaves the conjugate weak acid as the major acid-base-active solute. A is incorrect: there is no stoichiometric strong-acid excess at that point. B is incorrect: a weak molecular base does not dissociate completely into hydroxide. C is incorrect: BH+ can undergo acid equilibrium."
+    },
+    {
+      "id": "chem-8-5-005",
+      "prompt": "At25°C, a strong monoprotic acid is titrated with a strong base. What is the pH exactly at equivalence under the ideal model with spectator ions?",
+      "options": [
+        "7.00",
+        "pKa of the strong acid in every case",
+        "Greater than7 because base was added",
+        "Less than7 because the original sample was acidic"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Neither strong reagent is in excess, and spectator ions do not hydrolyze; neutral water determines pH at25°C. B is incorrect: the half-equivalence weak-acid relation does not determine this point. C is incorrect: the added base has been quantitatively consumed. D is incorrect: initial acidity does not persist after equivalent strong base reacts."
+    },
+    {
+      "id": "chem-8-5-006",
+      "prompt": "A weak diprotic acid H2A shows two well-separated titration steps at20.0 mL and40.0 mL of the same strong-base titrant. Which interpretation is supported?",
+      "options": [
+        "The second step proves the sample contains twice as many acid molecules as initially.",
+        "The acid must be monoprotic because there is one initial sample.",
+        "Two acidic protons are neutralized in successive stoichiometric stages.",
+        "The two equivalence pH values must both equal7.00"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The second equivalence requires twice the first-stage base amount for complete two-proton neutralization. A is incorrect: molecule number is not doubled by titration. B is incorrect: one molecule can donate more than one proton. D is incorrect: polyprotic conjugate species can hydrolyze."
+    },
+    {
+      "id": "chem-8-5-007",
+      "prompt": "For a diprotic acid with well-separated titration steps, equivalence volumes are20.0 and40.0 mL. At30.0 mL the pH is7.20. Which constant is estimated by this midpoint?",
+      "options": [
+        "pKa1≈7.20",
+        "pKb1 must equal7.20",
+        "Both pKa values must equal7.20",
+        "pKa2≈7.20"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Halfway between the two equivalence volumes, HA− and A2− are present in approximately equal principal amounts. A is incorrect: the first half-equivalence occurs near10.0 mL, not30.0 mL. B is incorrect: the stated acidic second-step midpoint gives pKa2. C is incorrect: well-separated stages do not imply equal constants."
+    },
+    {
+      "id": "chem-8-5-008",
+      "prompt": "For a diprotic H2A acid with well-separated pKa values, which acid-derived species generally predominates at the first equivalence point of a strong-base titration?",
+      "options": [
+        "H2A exclusively",
+        "HA−",
+        "A2− exclusively",
+        "Free H3O+ as the principal acid-derived species"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. One proton per original acid molecule has been neutralized; the intermediate conjugate form is the principal species. A is incorrect: the first proton has been mostly removed. C is incorrect: complete second-stage removal requires more base. D is incorrect: the principal dissolved acid framework remains HA−, not free hydronium."
+    },
+    {
+      "id": "chem-8-5-009",
+      "prompt": "A25.0 mL0.100 M HCl sample is titrated with0.100 M NaOH. At30.0 mL of added base, what is the approximate pH at25°C?",
+      "options": [
+        "7.00",
+        "2.04",
+        "12.30",
+        "11.96"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Excess OH− is0.00300−0.00250=0.000500 mol in0.0550 L; pOH=2.041 and pH=11.959. A is incorrect: 30.0 mL is past the25.0 mL equivalence volume. B is incorrect: that is pOH, not pH. C is incorrect: that uses the original sample volume rather than total volume for the excess."
+    },
+    {
+      "id": "chem-8-5-010",
+      "prompt": "A burette tip initially contains an air bubble. During an acid titration the bubble fills with NaOH, and the student includes that volume in the reported delivered titrant. How is calculated acid concentration biased?",
+      "options": [
+        "Too high, because the reported NaOH volume exceeds the volume actually reaching the flask.",
+        "Too low, because the reported volume is smaller than actual delivery",
+        "Unaffected, because equivalence eliminates volume errors",
+        "Always exactly doubled"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The calculation attributes extra neutralizing moles to the acid even though part of the apparent delivery only filled the tip. B is incorrect: the direction of the delivery error is reversed. C is incorrect: the concentration calculation still uses the biased volume. D is incorrect: the error size depends on the bubble volume."
+    },
+    {
+      "id": "chem-8-5-011",
+      "prompt": "Two equal-volume samples of the same weak monoprotic acid have concentrationsC and2C. They are titrated with the same strong-base solution. How do equivalence volumes compare?",
+      "options": [
+        "They are equal because both acids have the same Ka",
+        "The2C sample requires half the volume",
+        "The2C sample requires twice the titrant volume.",
+        "The ratio cannot be predicted without initial pH"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Neutralization depends on total acid moles; doubling concentration at fixed analyte volume doubles the required base amount. A is incorrect: Ka does not replace the stoichiometric acid inventory. B is incorrect: it contains more acid, not less. D is incorrect: acid moles and titrant concentration determine equivalence volume."
+    }
+  ]
+}

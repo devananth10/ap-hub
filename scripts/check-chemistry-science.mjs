@@ -663,4 +663,8 @@ close(-Math.log10((.020*.1-.010*.1)/.030),1.4771212547196626);
 close(14+Math.log10((2*.025*.02-.025*.02)/.05),12);
 close(.010-.004,.006);close(.003-.002,.001);close(.010-.003,.007);
 close(3+2,5);close(7-2,5);close(-Math.log10((.010*.010-.090*.001)/.100),4);
+// Topic 8.5: titration inventories and graphical midpoint arithmetic.
+close(.030*.1/.025,.12);close(24/2,12);close((20+40)/2,30);
+close(14+Math.log10((.030*.1-.025*.1)/.055),11.958607314841775);
+close((2*.1*.025)/(.1*.025),2);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
