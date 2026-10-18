@@ -699,4 +699,8 @@ close(Math.exp(-.01),.9900498337491681);close(Math.log(1000)/Math.log(10),3);
 close(12471/(8.314*300),5);close(Math.exp(5),148.4131591025766);
 // Topic 9.6: all supplied dissolution contributions retained.
 close(15-298*.080,-8.84);close(-25-298*(-.120),10.76);close(700+20-725,-5);
+// Topic 9.7: coupled amounts, direction and shared-intermediate cancellation.
+close(20-35,-15);close(50-3*20,-10);close(18-30.5,-12.5);close(15+25,40);
+assert.deepEqual(netSteps({A:-1,C:-1,I:1,X:1},{I:-1,B:1}),{A:-1,C:-1,X:1,B:1});
+assert.ok(2*20-55<0 && 3*20-55>0);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');

@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 9,
+  "topicId": "topic-9-7",
+  "questions": [
+    {
+      "id": "chem-9-7-001",
+      "prompt": "Two chemically linked steps at matched conditions have ΔG values+20.0 kJ and−35.0 kJ for the coupled amounts. What is the net free-energy change?",
+      "options": [
+        "−15.0 kJ",
+        "+55.0 kJ",
+        "+15.0 kJ",
+        "−35.0 kJ"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Free-energy changes add for the linked net process:20.0−35.0=−15.0. B is incorrect: that adds magnitudes rather than signed changes. C is incorrect: that reverses the net sign. D is incorrect: that omits the unfavorable step."
+    },
+    {
+      "id": "chem-9-7-002",
+      "prompt": "A designed coupled mechanism links one+50 kJ transformation to three occurrences of a−20 kJ driving step. What is the net free-energy change for that linked cycle?",
+      "options": [
+        "+30 kJ",
+        "−70 kJ",
+        "−10 kJ",
+        "+110 kJ"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The driver contribution is3(−20)=−60 kJ, so the sum is50−60=−10. A is incorrect: that includes only one driving occurrence. B is incorrect: that does not use the specified stoichiometric combination. D is incorrect: that adds the driver magnitude with the wrong sign."
+    },
+    {
+      "id": "chem-9-7-003",
+      "prompt": "Supplied linked steps are A+C→I+X, ΔG=+25 kJ, and I→B, ΔG=−40 kJ. Which net equation and value result?",
+      "options": [
+        "A+C+I→B+X, ΔG=−15 kJ",
+        "A+C→B+X, ΔG=+65 kJ",
+        "B+X→A+C, ΔG=−15 kJ",
+        "A+C→B+X, ΔG=−15 kJ"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The common intermediate I cancels, and signed free energies add. A is incorrect: I is both produced and consumed and cancels from the net equation. B is incorrect: the signs must be retained. C is incorrect: reversing the net equation also reverses its free-energy sign."
+    },
+    {
+      "id": "chem-9-7-004",
+      "prompt": "For a supplied matched set of conditions, an uphill biosynthetic step has ΔG=+18.0 kJ per cycle and a linked ATP-hydrolysis step has ΔG=−30.5 kJ per cycle. What is the linked net change?",
+      "options": [
+        "+48.5 kJ per cycle",
+        "−12.5 kJ per cycle",
+        "−30.5 kJ per cycle",
+        "+12.5 kJ per cycle"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The mechanism-coupled sum is18.0−30.5=−12.5 under the supplied conditions. A is incorrect: that adds magnitudes. C is incorrect: that omits the synthesis cost. D is incorrect: that reverses the net sign."
+    },
+    {
+      "id": "chem-9-7-005",
+      "prompt": "How can an electrolytic apparatus drive a redox process that is thermodynamically unfavorable in the intended direction?",
+      "options": [
+        "A wire alone makes every reaction favorable",
+        "The negative ΔG of the isolated chemical process changes sign merely because electrodes are named",
+        "An external electrical source supplies energy to the process.",
+        "A salt bridge creates unlimited chemical energy"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The powered overall system can drive a chemical change that would not operate as a self-powered cell in that direction. A is incorrect: a conductor is not an energy source. B is incorrect: the chemical direction remains uphill; external work drives it. D is incorrect: a bridge supports ionic charge balance rather than supplying energy."
+    },
+    {
+      "id": "chem-9-7-006",
+      "prompt": "Light can drive an overall photosynthetic conversion that would be unfavorable without an energy input. What role does light play?",
+      "options": [
+        "It supplies external energy coupled to chemical transformations.",
+        "It is only a catalyst and supplies no energy",
+        "It eliminates conservation of energy",
+        "It guarantees the isolated dark reaction has negative ΔG"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Photon energy can support uphill chemical storage through an appropriate reaction pathway. B is incorrect: absorbed light can deliver energy. C is incorrect: the energy input is part of the overall accounting. D is incorrect: external driving does not prove that the unpowered reaction is favorable."
+    },
+    {
+      "id": "chem-9-7-007",
+      "prompt": "Why does simply placing an unrelated exergonic reaction beside an endergonic reaction not necessarily drive the latter?",
+      "options": [
+        "The two ΔG values can never be added even for a genuinely linked net process",
+        "An effective chemical or energetic coupling pathway is required.",
+        "Every exergonic reaction stops when any endergonic reactant is nearby",
+        "Endergonic processes violate thermodynamics under every possible external drive"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Free energy released into an unrelated route may dissipate rather than be transferred to the desired transformation. A is incorrect: they can be added when the equations and amounts form the intended coupled process. C is incorrect: mere proximity does not impose that rule. D is incorrect: coupling or external energy can make them occur."
+    },
+    {
+      "id": "chem-9-7-008",
+      "prompt": "A target step has ΔG=+15 kJ. A proposed driver has ΔG=−25 kJ in its forward direction, but the proposed linkage actually requires that driver in reverse. What is the net ΔG for one occurrence of each?",
+      "options": [
+        "−10 kJ",
+        "−40 kJ",
+        "+10 kJ",
+        "+40 kJ"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The reversed driver costs+25 kJ, so the sum is15+25=40 kJ. A is incorrect: that uses the driver in the wrong direction. B is incorrect: that incorrectly negates both uphill contributions. C is incorrect: that subtracts magnitudes despite both linked steps being uphill."
+    },
+    {
+      "id": "chem-9-7-009",
+      "prompt": "For two genuinely coupled steps in fixed matching amounts, one uphill and one downhill, when is their overall process favorable under the specified conditions?",
+      "options": [
+        "Whenever either step is downhill, regardless of magnitude",
+        "When the magnitude of the negative contribution exceeds the positive contribution.",
+        "Only when each individual step is downhill",
+        "Whenever a catalyst is added, regardless of the sum"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Their signed sum must be negative. A is incorrect: a small favorable contribution may not offset a larger cost. C is incorrect: an uphill step can be supported by a sufficiently favorable linked step. D is incorrect: catalysis does not replace the net free-energy requirement."
+    },
+    {
+      "id": "chem-9-7-010",
+      "prompt": "An ideal designed cycle can couple one−55 kJ driving event to an integer number of+20 kJ target events. What is the largest number of target events that still gives a negative total ΔG?",
+      "options": [
+        "1",
+        "3",
+        "2",
+        "Any number"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Two cost40 kJ, giving−15 kJ net; three cost60 kJ, giving+5 kJ and no longer a negative total. A is incorrect: one is feasible, but two also retain a negative sum. B is incorrect: the resulting+5 kJ is not favorable. D is incorrect: the finite driver energy limits how many uphill events it can offset."
+    },
+    {
+      "id": "chem-9-7-011",
+      "prompt": "A power supply is disconnected after driving an uphill chemical conversion. Which statement avoids confusing thermodynamic driving with subsequent kinetics?",
+      "options": [
+        "The external drive is gone, but the produced material may persist if its reverse transformation is kinetically slow.",
+        "The material must instantly reverse because the power was removed",
+        "The material proves the unpowered forward reaction became permanently favorable",
+        "A catalyst must now supply the same energy indefinitely"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Removing the energy source does not require immediate chemical reversal; barriers still affect the time scale. B is incorrect: thermodynamics alone does not set an instantaneous rate. C is incorrect: externally driven formation does not establish that claim. D is incorrect: a catalyst is not an energy source."
+    }
+  ]
+}
