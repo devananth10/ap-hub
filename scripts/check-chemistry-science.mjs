@@ -571,4 +571,16 @@ close((-393.5+2*(-285.8)-(-238.7))*.500,-363.2);
 close((-393.5+2*(-285.8)+(-238.7))*.500,-601.9);
 close(2*33.2-2*90.3,-114.2);
 close(-100-(-300),200);
+// Topic 6.9: reversal, scaling, exact target vectors and Hess sums.
+close(30+(-50),-20); close(-(-572),572); close(.5*(-92),-46);
+close(-393.5-(-283.0),-110.5);
+close(2*(-57.1)+(-57.2),-171.4);
+close(25+(-40),-15); close(-12-(-35),23);
+close((-2)*(-45),90); close(20+(-50),-30);
+assert.deepEqual(netSteps({C:-1,O2:-1,CO2:1},{CO2:-1,CO:1,O2:.5}),{C:-1,O2:-.5,CO:1});
+assert.deepEqual(netSteps({NO:-2,O2:-1,NO2:2},{NO2:-2,N2O4:1}),{NO:-2,O2:-1,N2O4:1});
+assert.deepEqual(netSteps({'A(s)':-1,'A(g)':1},{'A(g)':-1,B:-1,P:1}),{'A(s)':-1,B:-1,P:1});
+assert.deepEqual(netSteps({'H2O(l)':1},{'H2O(g)':-1}),{'H2O(l)':1,'H2O(g)':-1}); // not identical states
+assert.deepEqual(netSteps({X:-2,Y:1},{Y:-1,Z:-1,P:1}),{X:-2,Z:-1,P:1});
+assert.notDeepEqual(netSteps({X:-2,Y:1},{Y:-1,Z:-1,P:1},{Z:-1,W:1}),{X:-2,Z:-1,P:1});
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');

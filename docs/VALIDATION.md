@@ -1,5 +1,13 @@
 # PrepAtlas milestone verification
 
+## Unit 6 content checkpoint — October 18, 2026
+
+- All nine thermochemistry topics have eleven-question pending sets (99 new questions). Total complete-file coverage is 550/1,001: eleven live and 539 unpublished in49 sets. Forty-one topics remain incomplete.
+- Draft structure and implemented science checks pass, including phase/state matching, calorimetry, bond inventories, formation sums and Hess equation cancellation. Detailed per-topic solve records distinguish these checks from pending human scientific review.
+- TypeScript, all31 unit tests, fresh production build and full normal development/production smoke suites pass. The recurring development JSON-render error was investigated and recovered after restart; its exact cause and a permanent fix remain unconfirmed. The temporary diagnostic was removed and only the temporary production server stopped. Preview3000 remains accessible.
+- Browser confirms eleven live Topic1.1 questions and no approval badge. No student data, application features, approved resources or publication registry changed.
+- Next is7.1 Introduction to Equilibrium (`equilibrium`). Finish Units7–9, then preserve and complete earlier recovered/unavailable gaps under the latest owner's instruction. Local checkpoints remain subject to the handoff's no-push restriction.
+
 ## Unit 5 content checkpoint — October 18, 2026
 
 - All eleven kinetics topics are drafted, eleven questions each (121 new pending questions). Total complete-file coverage is 451 of 1,001: eleven live and 440 awaiting human scientific review and owner approval in forty sets. Fifty topics remain incomplete, with unavailable earlier drafts tracked separately.

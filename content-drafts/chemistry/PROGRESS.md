@@ -4,12 +4,12 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 
 - Official inventory: 91 topics in nine units; target 1,001 questions (11 per topic).
 - Live approved questions: 11 in Topic 1.1 only. Original 001–010 preserved; owner authorized validated 011.
-- Complete unpublished working sets: 48, 528 questions. These require human scientific review and owner approval; they are not additional live questions.
-- Next new topic without an unavailable-source dependency: 6.9 — Hess’s Law, ID `topic-6-9`. Earlier unavailable/partial sets still need reconciliation.
+- Complete unpublished working sets: 49, 539 questions. These require human scientific review and owner approval; they are not additional live questions.
+- Next topic in the owner-authorized completion order: 7.1 — Introduction to Equilibrium, ID `equilibrium`. Finish Units 7–9 first, then reconcile earlier gaps.
 - Topic 1.5 demonstration removed entirely; its page/workspace and student storage keys are preserved. Its pending eleven-question set is separate.
 - Recovered originals: three complete sets (1.4, 1.5, 1.8) and fragments (1.6, 1.7, 2.1). Archived unchanged; complete working copies audited separately.
 - The fragments contain 29 complete recovered question objects (10/10/9); corrected partial working copies and known scope/variety flags are recorded in `qa/partial-recovery.md`. They are not complete banks and do not count toward complete-topic totals.
-- Earlier full drafts for 1.2, 1.3, 2.2, 2.3 and the original import guide remain unavailable. Unavailable does not mean never created. Do not regenerate them by default.
+- Earlier full drafts for 1.2, 1.3, 2.2, 2.3 and the original import guide remain unavailable. Unavailable does not mean never created. The October 18 continuation authorizes new replacement/additional questions after Unit 9, preserving valid recovered work and recording provenance.
 - `CONTENT_IMPORT_GUIDE.md` is newly established from the actual repository: 17 existing IDs preserved, 74 new canonical assignments explicitly recorded.
 - Video research: 103 exact creator-index URLs cover 91/91 topics. 103 provider metadata checks passed. Every candidate remains pending owner approval; actual playback and embed permission are unverified.
 - Official resource catalog: zero entries, unchanged. No researched video has been published.
@@ -17,8 +17,8 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 ## Resume order
 
 1. Inspect this ledger, Git status, and `VALIDATION.md`; do not replace existing work.
-2. Audit any newly supplied unavailable source files before writing replacements. Partial fragments must not be completed by inventing truncated endings.
-3. Continue the first `not-started` topic in the table, using its exact registered ID. Read its CED scope and exclusions, write exactly eleven original questions, then do a separate solve/distractor pass and programmatic calculations where appropriate.
+2. Audit any newly supplied unavailable source files before writing replacements. Preserve valid recovered questions. Newly written missing questions must be identified as new work, never recovered endings.
+3. Complete remaining Units 7–9 sequentially, then fill earlier gaps with only the missing valid questions, using each exact registered ID. Read its CED scope and exclusions, write exactly eleven original questions, then do a separate solve/distractor pass and programmatic calculations where appropriate.
 4. Save new banks in `pending/`, QA in `qa/`; run the draft/science checks and this report after each batch. Never import pending content without explicit approval.
 5. Save coherent local Git checkpoints. The attached continuation limits this task to local commits; it does not authorize pushing or deployment.
 
@@ -82,7 +82,7 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 | 6.6 | Introduction to Enthalpy of Reaction | `topic-6-6` | 0 | 11 | draft; human-review-pending (see QA) |
 | 6.7 | Bond Enthalpies | `topic-6-7` | 0 | 11 | draft; human-review-pending (see QA) |
 | 6.8 | Enthalpy of Formation | `topic-6-8` | 0 | 11 | draft; human-review-pending (see QA) |
-| 6.9 | Hess’s Law | `topic-6-9` | 0 | 0 | not-started |
+| 6.9 | Hess’s Law | `topic-6-9` | 0 | 11 | draft; human-review-pending (see QA) |
 | 7.1 | Introduction to Equilibrium | `equilibrium` | 0 | 0 | not-started |
 | 7.2 | Direction of Reversible Reactions | `topic-7-2` | 0 | 0 | not-started |
 | 7.3 | Reaction Quotient and Equilibrium Constant | `topic-7-3` | 0 | 0 | not-started |
