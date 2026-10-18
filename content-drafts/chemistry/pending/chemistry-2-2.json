@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 2,
+  "topicId": "potential-energy",
+  "questions": [
+    {
+      "id": "chem-2-2-001",
+      "prompt": "A model potential-energy curve for two atoms has U=−100 kJ/mol at100 pm, U=−400 kJ/mol at150 pm, and U=−150 kJ/mol at200 pm. If the smooth curve has its minimum at150 pm, what is the equilibrium bond length?",
+      "options": [
+        "100 pm",
+        "200 pm",
+        "400 pm",
+        "150 pm"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The equilibrium separation is the minimum of potential energy, where the attraction/repulsion balance is stable. A is incorrect: the shortest listed separation is not automatically most stable. B is incorrect: that energy is higher than the minimum. C is incorrect: 400 is an energy magnitude here, not the minimum’s separation."
+    },
+    {
+      "id": "chem-2-2-002",
+      "prompt": "Two separated atoms define U=0. Their bound pair has minimum potential energy−350 kJ/mol. What energy must be supplied to dissociate one mole of these pairs to the separated reference?",
+      "options": [
+        "−350 kJ",
+        "+350 kJ",
+        "0 kJ",
+        "+700 kJ"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Raising potential energy from−350 to0 costs350 kJ per mole of pairs. A is incorrect: dissociation requires input, not release. C is incorrect: the bound minimum differs from the separated reference. D is incorrect: that doubles the well depth without a stoichiometric reason."
+    },
+    {
+      "id": "chem-2-2-003",
+      "prompt": "What generally happens when two bonded atoms are pushed much closer than their equilibrium separation?",
+      "options": [
+        "Potential energy falls without limit",
+        "All electrostatic interactions disappear",
+        "Strong short-range repulsion raises their potential energy.",
+        "The equilibrium bond length becomes zero by definition"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Nuclear and electron-cloud repulsions dominate at sufficiently small separation. A is incorrect: repulsion prevents unlimited stabilization as the atoms overlap. B is incorrect: charged particles still interact strongly. D is incorrect: the potential minimum occurs at a finite separation."
+    },
+    {
+      "id": "chem-2-2-004",
+      "prompt": "CurveI has minimum−500 kJ/mol at120 pm; curveII has minimum−300 kJ/mol at160 pm. Both use the same separated-atom zero. Which comparison is supported?",
+      "options": [
+        "BondI is shorter and requires more energy to dissociate.",
+        "BondI is longer and weaker",
+        "BondII is stronger because its minimum energy is less negative",
+        "The bond lengths cannot be compared because energies are negative"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The minimum is at a smaller separation and its well is deeper relative to zero. B is incorrect: both comparisons reverse the given data. C is incorrect: a shallower well costs less energy to leave. D is incorrect: the listed minimum positions directly give the lengths."
+    },
+    {
+      "id": "chem-2-2-005",
+      "prompt": "For bonds between the same two carbon atoms, which general ordering correctly compares single, double, and triple bonds?",
+      "options": [
+        "Single bonds are shortest and strongest",
+        "Triple bonds are shortest and strongest; single bonds are longest and weakest.",
+        "All have identical lengths because atom types match",
+        "Triple bonds are longest because they contain more shared electrons"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Increasing bond order generally shortens and strengthens a bond between the same atom types. A is incorrect: that reverses the bond-order trend. C is incorrect: bond order also affects length. D is incorrect: additional bonding electron density generally draws the atoms closer."
+    },
+    {
+      "id": "chem-2-2-006",
+      "prompt": "Why is an H−F bond generally shorter than an H−Cl bond, when comparing their equilibrium distances?",
+      "options": [
+        "Chlorine has fewer occupied shells than fluorine",
+        "Bond length equals total proton count numerically",
+        "Both must be equal because each bond contains hydrogen",
+        "Fluorine’s smaller atomic core permits a shorter bonded separation."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The smaller halogen generally supports a shorter H−X bond. A is incorrect: chlorine has an additional occupied principal level. B is incorrect: there is no such length rule. C is incorrect: the partner atom size matters."
+    },
+    {
+      "id": "chem-2-2-007",
+      "prompt": "Two isolated ion pairs have the same center-to-center separation. PairI is+1/−1; pairII is+2/−2. In the simple Coulomb model, how do attractive-force magnitudes compare?",
+      "options": [
+        "PairII has four times the magnitude.",
+        "PairII has twice the magnitude",
+        "The magnitudes are equal because each pair is neutral overall",
+        "PairII has one-quarter the magnitude"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. At fixed distance the magnitude is proportional to the product of charge magnitudes:2×2 versus1×1. B is incorrect: both ionic charge factors double. C is incorrect: net pair charge does not remove the interaction between the ions. D is incorrect: larger charge magnitudes strengthen rather than weaken the attraction."
+    },
+    {
+      "id": "chem-2-2-008",
+      "prompt": "For the same cation and anion charges, how does decreasing center-to-center separation affect their electrostatic attraction in the Coulomb model?",
+      "options": [
+        "It becomes weaker because the nuclei are nearer",
+        "It changes from attractive to repulsive solely because distance decreases",
+        "The attraction becomes stronger.",
+        "It becomes zero at any distance below1 nm"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Opposite-charge interactions increase in magnitude at smaller separation. A is incorrect: the distance dependence gives the opposite trend. B is incorrect: the sign of a simple pairwise Coulomb interaction is set by the charge signs. D is incorrect: there is no universal cutoff of that kind."
+    },
+    {
+      "id": "chem-2-2-009",
+      "prompt": "At the minimum of a stable two-atom potential-energy curve, which statement is correct?",
+      "options": [
+        "The net force is zero because attractive and repulsive contributions balance.",
+        "Every attractive and repulsive interaction individually vanishes",
+        "The net force must still pull the atoms steadily closer",
+        "The potential energy must equal the separated-atom zero"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. A potential minimum is a stable balance point, not an absence of all microscopic interactions. B is incorrect: nonzero contributions can cancel. C is incorrect: that would not be a stable equilibrium separation. D is incorrect: a bound minimum is below the separated reference."
+    },
+    {
+      "id": "chem-2-2-010",
+      "prompt": "Two initially separated atoms form one mole of bonds whose potential minimum is−200 kJ/mol relative to the separated atoms. What happens to200 kJ in reaching that minimum?",
+      "options": [
+        "It must be supplied as the net bond-formation energy",
+        "It is released to other degrees of freedom or the surroundings.",
+        "It disappears, violating energy conservation",
+        "The final pair’s energy remains zero"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The pair’s potential energy decreases by200 kJ; total energy is conserved through transfer elsewhere. A is incorrect: bond formation lowers the pair’s potential energy. C is incorrect: energy is transferred, not destroyed. D is incorrect: the stated minimum is−200 kJ/mol."
+    },
+    {
+      "id": "chem-2-2-011",
+      "prompt": "Which pairwise comparison best supports stronger electrostatic binding in MgO than NaCl within a simple ionic model?",
+      "options": [
+        "MgO is stronger only because its formula has fewer letters",
+        "NaCl has greater attraction because singly charged ions repel less",
+        "Both must have identical binding because their formulas are1:1",
+        "Mg2+ and O2− have larger charge magnitudes and generally smaller separation than Na+ and Cl−."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Both the larger charge product and shorter ionic distance strengthen the attraction. A is incorrect: formula spelling has no physical significance. B is incorrect: the relevant pairwise cation-anion attraction is weaker for smaller charge product at comparable distance. C is incorrect: stoichiometric ratio alone does not set charge magnitudes or distance."
+    }
+  ]
+}

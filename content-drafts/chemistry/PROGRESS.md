@@ -4,8 +4,8 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 
 - Official inventory: 91 topics in nine units; target 1,001 questions (11 per topic).
 - Live approved questions: 11 in Topic 1.1 only. Original 001–010 preserved; owner authorized validated 011.
-- Complete unpublished working sets: 88, 968 questions. These require human scientific review and owner approval; they are not additional live questions.
-- Next topic in the owner-authorized completion order: 2.2 — Intramolecular Force and Potential Energy, ID `potential-energy`. Finish Units 7–9 first, then reconcile earlier gaps.
+- Complete unpublished working sets: 89, 979 questions. These require human scientific review and owner approval; they are not additional live questions.
+- Next topic in the owner-authorized completion order: 2.3 — Structure of Ionic Solids, ID `topic-2-3`. Finish Units 7–9 first, then reconcile earlier gaps.
 - Topic 1.5 demonstration removed entirely; its page/workspace and student storage keys are preserved. Its pending eleven-question set is separate.
 - Recovered originals: three complete sets (1.4, 1.5, 1.8) and fragments (1.6, 1.7, 2.1). Archived unchanged; complete working copies audited separately.
 - The fragments contain 29 complete recovered question objects (10/10/9); corrected partial working copies and known scope/variety flags are recorded in `qa/partial-recovery.md`. They are not complete banks and do not count toward complete-topic totals.
@@ -35,7 +35,7 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 | 1.7 | Periodic Trends | `periodic-trends` | 0 | 11 | draft; human-review-pending (see QA) |
 | 1.8 | Valence Electrons and Ionic Compounds | `valence` | 0 | 11 | draft; human-review-pending (see QA) |
 | 2.1 | Types of Chemical Bonds | `bonds` | 0 | 11 | draft; human-review-pending (see QA) |
-| 2.2 | Intramolecular Force and Potential Energy | `potential-energy` | 0 | 0 | earlier-source-unavailable |
+| 2.2 | Intramolecular Force and Potential Energy | `potential-energy` | 0 | 11 | draft; human-review-pending (see QA) |
 | 2.3 | Structure of Ionic Solids | `topic-2-3` | 0 | 0 | earlier-source-unavailable |
 | 2.4 | Structure of Metals and Alloys | `topic-2-4` | 0 | 11 | draft; human-review-pending (see QA) |
 | 2.5 | Lewis Diagrams | `topic-2-5` | 0 | 11 | draft; human-review-pending (see QA) |
