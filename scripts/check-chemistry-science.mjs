@@ -282,4 +282,21 @@ assert.ok(balanced([[3,'O2']],[[2,'O3']]));
   assert.ok(balanced([[2,'Mg'],[1,'O2']],[[2,'MgO']]));
   assert.ok(balanced([[2,'Al'],[6,'HCl']],[[2,'AlCl3'],[3,'H2']]));
 }
+// Topic 4.6: equivalence amounts and controlled examples of error directions.
+{
+  close(.1250*.01840/.02000,.1150);
+  close(2*.01000*.0800/.1000*1000,16.0);
+  close(.0200*.01250/.00500,.0500);
+  close(24.65-3.15,21.50);
+  close(.1000*((24.65-3.15)/1000)/.02500,.0860);
+  const analyte=.00200;
+  close(analyte/.1000,(analyte/.07500)*(.07500/.1000)); // known amount, fixed reagent concentration
+  const weakerActual=.0800, assumed=.1000;
+  const neededVolume=analyte/weakerActual;
+  assert.ok(assumed*neededVolume>analyte);
+  const flaskVolume=analyte/.1000, tipFill=.00020;
+  assert.ok(.1000*(flaskVolume+tipFill)>analyte);
+  close(.400/(.400/20),20); // mmol / (mmol/mL), graph corner
+  assert.ok(balanced([[1,'H2A'],[2,'OH',-1]],[[1,'A',-2],[2,'H2O']])); // A is a symbolic conserved group
+}
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
