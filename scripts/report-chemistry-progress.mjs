@@ -1,9 +1,10 @@
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { courses } from '../src/lib/courses.ts';
-import { questionBatches } from '../src/lib/practice-bank.ts';
+import { questionBatches, validateQuestionBatches } from '../src/lib/practice-bank.ts';
 
 const root = 'content-drafts/chemistry';
 const pending = readdirSync(`${root}/pending`).filter(name => name.endsWith('.json')).map(name => JSON.parse(readFileSync(`${root}/pending/${name}`, 'utf8')));
+validateQuestionBatches([...questionBatches, ...pending]);
 const videos = JSON.parse(readFileSync(`${root}/research/video-candidates.json`, 'utf8'));
 const sourceNeeded = new Set(['1.2', '1.3', '2.2', '2.3']);
 const partial = new Set(['1.6', '1.7', '2.1']);
@@ -34,7 +35,7 @@ const lines = [
 for (const unit of chemistry.units) for (const topic of unit.topics) {
   const live = questionBatches.find(batch => batch.topicId === topic.id)?.questions.length || 0;
   const draft = pending.find(batch => batch.topicId === topic.id)?.questions.length || 0;
-  const status = live ? 'approved-live' : draft ? 'audited-draft; human-review-pending' : partial.has(topic.number) ? 'source-fragment; full-set-unavailable' : sourceNeeded.has(topic.number) ? 'earlier-source-unavailable' : 'not-started';
+  const status = live ? 'approved-live' : draft ? 'draft; human-review-pending (see QA)' : partial.has(topic.number) ? 'source-fragment; full-set-unavailable' : sourceNeeded.has(topic.number) ? 'earlier-source-unavailable' : 'not-started';
   lines.push(`| ${topic.number} | ${topic.title} | \`${topic.id}\` | ${live} | ${draft} | ${status} |`);
 }
 lines.push('', '## Checks and provenance', '',

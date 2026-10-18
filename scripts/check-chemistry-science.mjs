@@ -48,4 +48,29 @@ close(.250 * 2, .500);
 // Topic 2.4: model neutrality and the supplied alloy number ratios.
 assert.equal(100 * 2 - 200, 0);
 assert.deepEqual([80 / 20, 60 / 40], [4, 1.5]);
-console.log('Independent arithmetic/charge checks passed for Topics 1.1, 1.4, 1.5, 1.8, and 2.4. See per-topic QA for conceptual checks and limitations.');
+// Independently reconstruct Lewis bookkeeping from atom/edge lists, not saved keys.
+const valence = {H:1,B:3,C:4,N:5,O:6,F:7,P:5,S:6};
+function lewis(elements, edges, lonePairs, charge = 0, exceptions = {}) {
+  const orders = elements.map(() => 0);
+  for (const [a,b,order] of edges) { orders[a] += order; orders[b] += order; }
+  const budget = elements.reduce((sum,element) => sum + valence[element],0) - charge;
+  const used = edges.reduce((sum,edge) => sum + 2 * edge[2],0) + lonePairs.reduce((sum,pairs) => sum + 2 * pairs,0);
+  assert.equal(used,budget,'Lewis electron total');
+  elements.forEach((element,index) => assert.equal(2 * orders[index] + 2 * lonePairs[index], exceptions[index] ?? (element === 'H' ? 2 : 8), `Occupancy at atom ${index}`));
+  const charges = elements.map((element,index) => valence[element] - 2 * lonePairs[index] - orders[index]);
+  assert.equal(charges.reduce((sum,value) => sum + value,0),charge);
+  return charges;
+}
+lewis(['N','H','H','H','H'], [[0,1,1],[0,2,1],[0,3,1],[0,4,1]], [0,0,0,0,0],1); // 2.5 #001
+lewis(['H','C','N'],[[0,1,1],[1,2,3]],[0,0,1]); // #002
+lewis(['H','O','O','H'],[[0,1,1],[1,2,1],[2,3,1]],[0,2,2,0]); // #003
+lewis(['O','C','O'],[[0,1,2],[1,2,2]],[2,0,2]); // #004
+lewis(['C','F','F','F','F'],[[0,1,1],[0,2,1],[0,3,1],[0,4,1]],[0,3,3,3,3]); // #005
+lewis(['P','H','H','H'],[[0,1,1],[0,2,1],[0,3,1]],[1,0,0,0]); // #006
+lewis(['O','H','H','H'],[[0,1,1],[0,2,1],[0,3,1]],[1,0,0,0],1); // #007
+lewis(['C','C','H','H','H','H'],[[0,1,2],[0,2,1],[0,3,1],[1,4,1],[1,5,1]],[0,0,0,0,0,0]); // #008
+lewis(['C','C','O','H','H','H','H','H','H'],[[0,1,1],[1,2,1],[2,3,1],[0,4,1],[0,5,1],[0,6,1],[1,7,1],[1,8,1]],[0,0,2,0,0,0,0,0,0]); // #009 ethanol
+lewis(['C','O','C','H','H','H','H','H','H'],[[0,1,1],[1,2,1],[0,3,1],[0,4,1],[0,5,1],[2,6,1],[2,7,1],[2,8,1]],[0,2,0,0,0,0,0,0,0]); // ether
+lewis(['N','N','H','H','H','H'],[[0,1,1],[0,2,1],[0,3,1],[1,4,1],[1,5,1]],[1,1,0,0,0,0]); // #010
+lewis(['B','F','F','F'],[[0,1,1],[0,2,1],[0,3,1]],[0,3,3,3],0,{0:6}); // #011 explicit B exception
+console.log('Independent arithmetic/charge/Lewis checks passed through Topic 2.5. See per-topic QA for conceptual checks and limitations.');

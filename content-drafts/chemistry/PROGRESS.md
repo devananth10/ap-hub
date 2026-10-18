@@ -4,7 +4,7 @@ Updated 2026-10-17. This ledger describes saved files, not background work or a 
 
 - Official inventory: 91 topics in nine units; target 1,001 questions (11 per topic).
 - Live approved questions: 11 in Topic 1.1 only. Original 001–010 preserved; owner authorized validated 011.
-- Complete unpublished working sets: 4, 44 questions. These require human scientific review and owner approval; they are not additional live questions.
+- Complete unpublished working sets: 5, 55 questions. These require human scientific review and owner approval; they are not additional live questions.
 - Topic 1.5 demonstration removed entirely; its page/workspace and student storage keys are preserved. Its pending eleven-question set is separate.
 - Recovered originals: three complete sets (1.4, 1.5, 1.8) and fragments (1.6, 1.7, 2.1). Archived unchanged; complete working copies audited separately.
 - The fragments contain 29 complete recovered question objects (10/10/9); corrected partial working copies and known scope/variety flags are recorded in `qa/partial-recovery.md`. They are not complete banks and do not count toward complete-topic totals.
@@ -28,16 +28,16 @@ Updated 2026-10-17. This ledger describes saved files, not background work or a 
 | 1.1 | Moles and Molar Mass | `moles` | 11 | 0 | approved-live |
 | 1.2 | Mass Spectra of Elements | `mass-spectra` | 0 | 0 | earlier-source-unavailable |
 | 1.3 | Elemental Composition of Pure Substances | `composition` | 0 | 0 | earlier-source-unavailable |
-| 1.4 | Composition of Mixtures | `mixtures` | 0 | 11 | audited-draft; human-review-pending |
-| 1.5 | Atomic Structure and Electron Configuration | `electron-configuration` | 0 | 11 | audited-draft; human-review-pending |
+| 1.4 | Composition of Mixtures | `mixtures` | 0 | 11 | draft; human-review-pending (see QA) |
+| 1.5 | Atomic Structure and Electron Configuration | `electron-configuration` | 0 | 11 | draft; human-review-pending (see QA) |
 | 1.6 | Photoelectron Spectroscopy | `photoelectron-spectroscopy` | 0 | 0 | source-fragment; full-set-unavailable |
 | 1.7 | Periodic Trends | `periodic-trends` | 0 | 0 | source-fragment; full-set-unavailable |
-| 1.8 | Valence Electrons and Ionic Compounds | `valence` | 0 | 11 | audited-draft; human-review-pending |
+| 1.8 | Valence Electrons and Ionic Compounds | `valence` | 0 | 11 | draft; human-review-pending (see QA) |
 | 2.1 | Types of Chemical Bonds | `bonds` | 0 | 0 | source-fragment; full-set-unavailable |
 | 2.2 | Intramolecular Force and Potential Energy | `potential-energy` | 0 | 0 | earlier-source-unavailable |
 | 2.3 | Structure of Ionic Solids | `topic-2-3` | 0 | 0 | earlier-source-unavailable |
-| 2.4 | Structure of Metals and Alloys | `topic-2-4` | 0 | 11 | audited-draft; human-review-pending |
-| 2.5 | Lewis Diagrams | `topic-2-5` | 0 | 0 | not-started |
+| 2.4 | Structure of Metals and Alloys | `topic-2-4` | 0 | 11 | draft; human-review-pending (see QA) |
+| 2.5 | Lewis Diagrams | `topic-2-5` | 0 | 11 | draft; human-review-pending (see QA) |
 | 2.6 | Resonance and Formal Charge | `topic-2-6` | 0 | 0 | not-started |
 | 2.7 | VSEPR and Hybridization | `topic-2-7` | 0 | 0 | not-started |
 | 3.1 | Intermolecular and Interparticle Forces | `intermolecular-forces` | 0 | 0 | not-started |
