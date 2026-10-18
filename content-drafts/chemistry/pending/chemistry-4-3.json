@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 4,
+  "topicId": "topic-4-3",
+  "questions": [
+    {
+      "id": "chem-4-3-001",
+      "prompt": "In a particle model, each label represents one ion. Before precipitation, the frame contains 4 Ag+, 4 NO3−, 6 Na+, and 6 Cl−. The reaction Ag+(aq) + Cl−(aq) → AgCl(s) goes to completion. Solvent is omitted. Which final frame is consistent with the reaction?",
+      "options": [
+        "A solid containing 6 AgCl formula units, with 6 Na+ and 4 NO3− dispersed in solution.",
+        "A solid containing 4 AgCl formula units, with 6 Na+, 4 NO3−, and 2 Cl− dispersed in solution.",
+        "A solid containing 4 AgCl formula units and no dissolved ions.",
+        "A solid containing 4 AgCl formula units, with 6 Na+, 4 NO3−, and 6 Cl− dispersed in solution."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Four silver ions combine with four chloride ions; two chloride ions and all spectator ions remain dispersed. The remaining solution has charge +6 − 4 − 2 = 0. A invents two silver-containing formula units. C deletes spectator ions and excess chloride. D retains all six initial chlorides in solution after also placing four in the solid, duplicating chlorine. A solid is represented as an aggregate with the stated formula-unit ratio, not as dispersed AgCl molecules."
+    },
+    {
+      "id": "chem-4-3-002",
+      "prompt": "A model legend uses H–O–H for one water molecule, H–H for one hydrogen molecule, and O–O for one oxygen molecule. Six water molecules undergo complete decomposition according to 2H2O → 2H2 + O2. Which final collection is consistent with the equation?",
+      "options": [
+        "3 H–H and 3 O–O",
+        "6 H–H and 6 O–O",
+        "6 H–H and 3 O–O",
+        "12 H–H and 3 O–O"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The starting molecules contain twelve H atoms and six O atoms, giving six H2 and three O2 molecules. A has only six H atoms. B has twelve O atoms instead of six. D has twenty-four H atoms instead of twelve. The legend identifies bonded groups, so a count of atoms must not be mistaken for a count of diatomic molecules."
+    },
+    {
+      "id": "chem-4-3-003",
+      "prompt": "Each CO pair, O2 pair, and CO2 group in a model represents one molecule. A closed frame initially has 6 CO molecules and 4 O2 molecules. Reaction proceeds to completion according to 2CO + O2 → 2CO2. Which final frame is consistent?",
+      "options": [
+        "6 CO2 molecules and 1 O2 molecule",
+        "6 CO2 molecules and no other molecules",
+        "3 CO2 molecules and 1 O2 molecule",
+        "8 CO2 molecules and no other molecules"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Converting six CO requires three O2, leaving one O2 and producing six CO2. B deletes the two oxygen atoms in the excess O2. C fails to conserve the initial six carbon atoms. D invents two carbon atoms. A consistent final particle frame must show both products and any unconsumed reactant, rather than only species written to the right of the reaction arrow."
+    },
+    {
+      "id": "chem-4-3-004",
+      "prompt": "Two formula units of CaCl2(s) dissolve completely according to CaCl2(s) → Ca^2+(aq) + 2Cl−(aq). Water molecules are omitted and ion pairing is neglected. Which final particle representation is consistent with this model?",
+      "options": [
+        "Two neutral CaCl2 molecules dispersed in the water.",
+        "Two Ca^2+ ions and two Cl− ions dispersed in the water.",
+        "One Ca^4+ ion and four Cl− ions dispersed in the water.",
+        "Two Ca^2+ ions and four Cl− ions dispersed in the water."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Each formula unit supplies one calcium ion and two chloride ions, so the doubled model contains two and four respectively. A represents an intact nonelectrolyte rather than the specified dissociation. B loses two chlorides and has unbalanced charge. C merges two calcium atoms into one ion and changes the given ionic identity. Omitting water does not justify omitting any solute ions."
+    },
+    {
+      "id": "chem-4-3-005",
+      "prompt": "In a model, circles labeled A and B represent atoms of two different elements; connected circles form a molecule. The initial frame contains three A–A molecules and three B–B molecules. The final frame contains six A–B molecules and nothing else. Which smallest whole-number equation is consistent with the two frames?",
+      "options": [
+        "A + B → AB",
+        "A2 + B2 → 2AB",
+        "A2 + 2B2 → 2AB2",
+        "2A2 + B2 → 2AB"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. One A2 and one B2 supply two A atoms and two B atoms, forming two AB molecules; the frames show three copies of that ratio. A substitutes unbonded starting atoms for the specified diatomic molecules. C has the wrong reactant ratio and a different product group. D fails A-atom conservation. The actual number of depicted molecules can be an integer multiple of the equation's primitive coefficients."
+    },
+    {
+      "id": "chem-4-3-006",
+      "prompt": "The reaction 2NO2 → N2O4 is represented using one large circle per N atom and one small circle per O atom. Eight separate NO2 groups are converted completely, with no atoms entering or leaving. Which final drawing specification is correct?",
+      "options": [
+        "Eight groups, each containing two N circles and four O circles.",
+        "Four groups, each containing one N circle and two O circles.",
+        "Four N circles and eight O circles, all unconnected.",
+        "Four groups, each containing two N circles and four O circles."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Pairing eight NO2 molecules gives four N2O4 molecules while preserving eight N and sixteen O atoms. A doubles the atom inventory. B halves it and also retains the reactant's NO2 composition rather than N2O4. C halves the inventory and represents atoms instead of product molecules. A lower molecule count does not imply that atoms disappeared; each product group is larger."
+    },
+    {
+      "id": "chem-4-3-007",
+      "prompt": "A closed particle frame initially contains five widely separated H2O molecules in the gas phase. All of the sample condenses without reaction or loss of matter. Which final model best represents this change?",
+      "options": [
+        "Five separate O atoms and ten separate H atoms clustered together.",
+        "Five H2 molecules and five O2 molecules clustered together.",
+        "Five intact H2O molecules close together, with the same H:O atom ratio inside each molecule.",
+        "One large molecule with formula H10O5, formed by bonding all five original molecules together."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Condensation changes molecular spacing and intermolecular organization without changing the H2O molecules' chemical identity in this model. A dissociates the molecules into atoms. B changes identity and also doubles the oxygen inventory. D introduces covalent bonding into an invented larger molecule. Close packing in a liquid should not be drawn as new intramolecular bonds between every neighboring molecule."
+    },
+    {
+      "id": "chem-4-3-008",
+      "prompt": "A symbolic particle frame represents NH4NO3(s) → NH4+(aq) + NO3−(aq). Three formula units dissolve completely. Hydrolysis and ion pairing are neglected. Which final representation correctly retains the identities of the polyatomic ions?",
+      "options": [
+        "Three intact NH4+ groups and three intact NO3− groups, separately dispersed.",
+        "Three N^3− ions, twelve H+ ions, three N^5+ ions, and nine O^2− ions, separately dispersed.",
+        "Three intact NH4+ groups and one intact NO3− group, separately dispersed.",
+        "Three neutral NH4NO3 molecules, each drawn as one undissociated solute particle."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Dissociation separates ammonium from nitrate, but the covalently bonded atoms within each polyatomic ion remain grouped. B confuses oxidation-number-style labels with the actual dissolved species; even conservation of atoms and total charge would not make that species model correct. C loses two nitrate groups and leaves net positive charge. D does not depict the dissociation specified by the equation."
+    },
+    {
+      "id": "chem-4-3-009",
+      "prompt": "A particle frame begins with 2 Fe atoms in a metal solid and a solution containing 4 Cu^2+ and 4 SO4^2− ions. The reaction Fe(s) + Cu^2+(aq) → Fe^2+(aq) + Cu(s) consumes all the iron. Sulfate is a spectator and ion pairing is neglected. Which final inventory is consistent?",
+      "options": [
+        "4 Cu atoms in metal, 2 Fe^2+ ions, and 4 SO4^2− ions.",
+        "2 Cu atoms in metal, 2 Fe^2+ ions, 2 Cu^2+ ions, and 4 SO4^2− ions.",
+        "2 Cu atoms in metal, 2 Fe^3+ ions, 2 Cu^2+ ions, and 4 SO4^2− ions.",
+        "2 Cu atoms in metal and 2 Fe^2+ ions, with no copper or sulfate ions remaining."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Two reaction events convert two Fe atoms to two Fe^2+ and two Cu^2+ to two Cu atoms; two Cu^2+ and all four sulfate ions remain. A reduces twice as much copper without the required iron and fails charge conservation. C substitutes Fe^3+ for the stated Fe^2+ product and gives an extra +2 charge overall. D deletes excess Cu^2+ and spectator sulfate. Spectators remain in a full inventory even when omitted from a net ionic equation."
+    },
+    {
+      "id": "chem-4-3-010",
+      "prompt": "A simplified model starts with 2 neutral HA molecules, 3 OH− ions, and 3 Na+ ions. It treats the weak acid initially as molecular and uses HA + OH− → A− + H2O. Ignore further equilibria, and omit bulk solvent water from the drawing. When all HA has reacted, which inventory describes the solute particles plus the water newly formed by this equation?",
+      "options": [
+        "2 A−, 3 Na+, and 2 newly formed H2O, with no OH−.",
+        "2 A−, 1 OH−, and 2 newly formed H2O, with no Na+.",
+        "2 A−, 1 OH−, 3 Na+, and 2 newly formed H2O.",
+        "1 A−, 2 OH−, 3 Na+, and 1 newly formed H2O, with no HA remaining."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Two HA consume two of the three hydroxides, generating two A− and two waters; one hydroxide and all three sodium ions remain. A deletes the excess hydroxide. B deletes spectator sodium. D describes only one reaction event yet says all HA is gone, losing one acid unit. The drawing explicitly counts water formed by the net equation separately from the omitted bulk solvent, rather than asserting that the solution contains only two water molecules."
+    },
+    {
+      "id": "chem-4-3-011",
+      "prompt": "A drawing labeled 'net ionic change only' shows two H+ symbols and two OH− groups before mixing, then two H2O groups after reaction. The actual reactant solutions were HCl(aq) and NaOH(aq). Which interpretation of the drawing's missing Na+ and Cl− is justified?",
+      "options": [
+        "They may remain in the real solution; the stated model omits unchanged spectator ions rather than depicting the complete particle inventory.",
+        "They must have disappeared from the real solution when water formed.",
+        "They must have combined to form a precipitate because they are not drawn.",
+        "Their absence proves that the drawing violates atom conservation even as a net ionic representation."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. A model explicitly restricted to the net ionic change need not display spectator ions or all bulk solvent molecules. B incorrectly turns omission into destruction. C invents a precipitate without evidence. D ignores the model's declared scope: H and O are conserved in the depicted net process, while unchanged sodium and chloride would appear on both sides of a complete inventory. Model limitations must be read before inferring the full solution composition."
+    }
+  ]
+}

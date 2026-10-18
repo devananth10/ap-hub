@@ -233,4 +233,18 @@ assert.ok(!balanced([[1,'CaCO3'],[1,'H',1]],[[1,'Ca',2],[1,'CO2'],[1,'H2O']]));
 assert.ok(balanced([[3,'Ca',2],[2,'PO4',-3]],[[1,'Ca3(PO4)2']]));
 assert.ok(balanced([[6,'Ca',2],[4,'PO4',-3]],[[2,'Ca3(PO4)2']])); // valid but not primitive
 assert.equal([6,4,2].every(coefficient=>coefficient%2===0),true);
+// Topic 4.3: complete before/after particle inventories, including excess/spectators.
+assert.ok(balanced([[4,'Ag',1],[4,'NO3',-1],[6,'Na',1],[6,'Cl',-1]],[[4,'AgCl'],[4,'NO3',-1],[6,'Na',1],[2,'Cl',-1]]));
+assert.ok(balanced([[6,'H2O']],[[6,'H2'],[3,'O2']]));
+assert.ok(!balanced([[6,'H2O']],[[6,'H2'],[6,'O2']]));
+assert.ok(balanced([[6,'CO'],[4,'O2']],[[6,'CO2'],[1,'O2']]));
+assert.equal(4-6/2,1); // leftover oxygen
+assert.ok(!balanced([[6,'CO'],[4,'O2']],[[6,'CO2']]));
+assert.ok(balanced([[2,'CaCl2']],[[2,'Ca',2],[4,'Cl',-1]]));
+assert.ok(balanced([[8,'NO2']],[[4,'N2O4']]));
+assert.ok(balanced([[3,'NH4NO3']],[[3,'NH4',1],[3,'NO3',-1]]));
+assert.ok(balanced([[2,'Fe'],[4,'Cu',2],[4,'SO4',-2]],[[2,'Cu'],[2,'Fe',2],[2,'Cu',2],[4,'SO4',-2]]));
+assert.ok(!balanced([[2,'Fe'],[4,'Cu',2],[4,'SO4',-2]],[[2,'Cu'],[2,'Fe',3],[2,'Cu',2],[4,'SO4',-2]]));
+assert.equal(3-2,1); // leftover hydroxide in the simplified HA frame
+assert.equal(-2-1+3,0); // two A−, one OH− and three Na+
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
