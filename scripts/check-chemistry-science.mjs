@@ -627,4 +627,9 @@ assert.ok(balanced([[1,'N2O4']],[[2,'NO2']]));
 close(.25/(.5*.5),1);close(2*2,4);close(1**2/1,1);close((.5)/(.5*.5),2);
 close((1/3)**2/((1/3)*(1/3)),1);close(.6/.4,1.5);close(.75/.25,3);
 close(1/(1*.5),2);assert.ok(10>2);
+// Topic 7.11: stoichiometric solubility powers and mass conversion.
+relativeClose(Math.sqrt(4e-10),2e-5);relativeClose(4*(2e-4)**3,3.2e-11);
+relativeClose(4*(3e-4)**3,1.08e-10);relativeClose((1e-5)**2,1e-10);
+close(Math.sqrt(9e-10)*.2*100*1000,.6);relativeClose(Math.cbrt(4e-12/4),1e-4);
+assert.ok(1e-6*1e-6<1e-10);assert.ok(balanced([[1,'Mg(OH)2']],[[1,'Mg',2],[2,'OH',-1]]));
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');

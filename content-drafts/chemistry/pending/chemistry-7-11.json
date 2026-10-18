@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 7,
+  "topicId": "topic-7-11",
+  "questions": [
+    {
+      "id": "chem-7-11-001",
+      "prompt": "For AX(s) ⇌ A+(aq) + X−(aq), Ksp =4.0 × 10−10 at the stated temperature. Assuming ideal dilute behavior and no other source of either ion, what is the molar solubility?",
+      "options": [
+        "2.0 × 10−5 M",
+        "4.0 × 10−10 M",
+        "4.0 × 10−5 M",
+        "1.6 × 10−19 M"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. If s mol/L dissolves, each ion concentration is s and Ksp=s². The positive square root gives2.0×10−5 M. B is incorrect: that equates s with s². C is incorrect: that incorrectly doubles the square root. D is incorrect: that squares Ksp rather than taking its root."
+    },
+    {
+      "id": "chem-7-11-002",
+      "prompt": "For MX2(s) ⇌ M2+(aq) + 2X−(aq), Ksp =3.2 × 10−11. With no initial ions and negligible side reactions, what is the molar solubility?",
+      "options": [
+        "3.2 × 10−11 M",
+        "5.7 × 10−6 M",
+        "2.0 × 10−4 M",
+        "8.0 × 10−12 M"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. [M2+]=s and [X−]=2s, so Ksp=4s³; s=(8.0×10−12)^(1/3)=2.0×10−4 M. A is incorrect: that ignores both dissociation stoichiometry and concentration powers. B is incorrect: that takes a square root appropriate to a one-to-one salt. D is incorrect: that is Ksp/4 before taking the cube root."
+    },
+    {
+      "id": "chem-7-11-003",
+      "prompt": "For M2X(s) ⇌ 2M+(aq) + X2−(aq), Ksp =1.08 × 10−10. What is the equilibrium [M+] in pure water if ion activities are approximated by concentrations?",
+      "options": [
+        "3.0 × 10−4 M",
+        "1.08 × 10−10 M",
+        "1.5 × 10−4 M",
+        "6.0 × 10−4 M"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Ksp=(2s)²s=4s³ gives s=3.0×10−4 M; the cation concentration is2s. A is incorrect: that is formula-unit solubility, not the cation concentration. B is incorrect: that equates a concentration with Ksp. C is incorrect: that halves s instead of doubling it."
+    },
+    {
+      "id": "chem-7-11-004",
+      "prompt": "A saturated BaSO4 solution in pure water has measured molar solubility1.0 × 10−5 M. Neglect side reactions. What is Ksp for BaSO4(s) ⇌ Ba2+(aq) + SO4^2−(aq)?",
+      "options": [
+        "1.0 × 10−5",
+        "1.0 × 10−10",
+        "2.0 × 10−5",
+        "1.0 × 10−15"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Each ion concentration is1.0×10−5 M, and their product is1.0×10−10. A is incorrect: that uses one concentration instead of their product. C is incorrect: that adds ion concentrations rather than multiplying. D is incorrect: that introduces a third concentration factor absent from the equation."
+    },
+    {
+      "id": "chem-7-11-005",
+      "prompt": "An ideal one-to-one salt AX has Ksp =9.0 × 10−10 and molar mass100.0 g mol−1. What mass dissolves in0.200 L of initially pure water at saturation, assuming no side reactions?",
+      "options": [
+        "3.00 mg",
+        "0.00600 mg",
+        "0.600 mg",
+        "6.00 mg"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. s=3.0×10−5 mol/L; mass=s×0.200 L×100.0 g/mol=0.000600 g=0.600 mg. A is incorrect: that gives the mass for1.00 L rather than0.200 L. B is incorrect: that mishandles the gram-to-milligram conversion by a factor100. D is incorrect: that is ten times the calculated mass."
+    },
+    {
+      "id": "chem-7-11-006",
+      "prompt": "Salt AX has Ksp =1.0 × 10−8 and dissociates into two ions in a1:1 ratio. Salt MX2 has Ksp =4.0 × 10−12 and dissociates into M2+ + 2X−. In pure water under the same ideal assumptions, how do their molar solubilities compare?",
+      "options": [
+        "They are equal: both are1.0 × 10−4 M.",
+        "AX is2500 times more soluble because its Ksp is2500 times larger.",
+        "MX2 is more soluble because it yields more ions per formula unit.",
+        "Their solubilities cannot be calculated from these data."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. For AX, s=√Ksp=10−4; for MX2, s=(Ksp/4)^(1/3)=10−4. Different stoichiometries prevent direct ranking by raw Ksp. B is incorrect: the powers of s differ. C is incorrect: ion count alone does not set its numerical solubility. D is incorrect: Ksp and the stated stoichiometries are sufficient under the assumptions."
+    },
+    {
+      "id": "chem-7-11-007",
+      "prompt": "Which is the solubility-product expression for Mg(OH)2(s) ⇌ Mg2+(aq) + 2OH−(aq)?",
+      "options": [
+        "Ksp=[Mg2+][OH−]",
+        "Ksp=[Mg2+][OH−]²",
+        "Ksp=[Mg2+]+2[OH−]",
+        "Ksp=[Mg2+][OH−]²/[Mg(OH)2(s)]"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The dissolved ions appear with stoichiometric exponents; the pure solid is omitted. A is incorrect: the hydroxide concentration must be squared. C is incorrect: mass action multiplies concentration powers. D is incorrect: pure-solid concentration is omitted from the expression."
+    },
+    {
+      "id": "chem-7-11-008",
+      "prompt": "For AX(s) ⇌ A+ + X−, a solution has [A+]=1.0 × 10−6 M and [X−]=1.0 × 10−6 M. Ksp is1.0 × 10−10. If a small crystal is added, what is initially favored?",
+      "options": [
+        "Precipitation, because Qsp>Ksp.",
+        "No dissolution because every solid salt is completely insoluble.",
+        "A decrease in Ksp until it equals Qsp.",
+        "Dissolution, because Qsp=1.0 × 10−12<Ksp."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The unsaturated ion product is too small for equilibrium; available solid can dissolve. A is incorrect: the supplied product is smaller than Ksp. B is incorrect: small solubility is not zero solubility. C is incorrect: Ksp is fixed at the stated temperature."
+    },
+    {
+      "id": "chem-7-11-009",
+      "prompt": "Two saturated AX solutions at the same temperature each retain undissolved solid. One flask contains ten times more excess solid, but otherwise identical conditions apply. How do dissolved concentrations compare?",
+      "options": [
+        "They are ten times greater in the flask with more solid.",
+        "They are the same under the stated ideal conditions.",
+        "They are ten times smaller in the flask with more solid.",
+        "They must both be zero because a solid remains."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Saturation concentrations are set by Ksp and solution composition, not the amount of excess pure solid. A is incorrect: pure-solid amount does not enter Ksp. C is incorrect: adding excess solid does not reduce its own saturated concentration. D is incorrect: a saturated solution generally contains dissolved ions."
+    },
+    {
+      "id": "chem-7-11-010",
+      "prompt": "A saturated AX solution is diluted with pure water at fixed temperature while abundant undissolved AX remains. After equilibrium returns, what happens under the ideal model?",
+      "options": [
+        "All ions precipitate because dilution raises Qsp.",
+        "Ksp permanently decreases.",
+        "More solid dissolves, restoring the original saturated ion concentrations.",
+        "The original dissolved amount remains fixed, so the final solution must stay unsaturated."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Dilution lowers Qsp; dissolution restores the Ksp condition while solid remains available. A is incorrect: dilution lowers the ion product. B is incorrect: the temperature has not changed. D is incorrect: remaining solid supplies additional dissolved ions."
+    },
+    {
+      "id": "chem-7-11-011",
+      "prompt": "A one-to-one salt is assigned Ksp>1 under the course concentration convention. Which qualitative interpretation is most appropriate?",
+      "options": [
+        "The dissolution equilibrium favors substantial dissolved-ion concentrations rather than tiny trace solubility.",
+        "The salt cannot dissolve at all.",
+        "An unlimited mass dissolves in any finite amount of water.",
+        "Its dissolution must be instantaneous."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. For a one-to-one ideal model s=√Ksp, so a large Ksp is associated with a soluble salt; concentrated real solutions may need nonideal treatment. B is incorrect: that conflicts with a large product of equilibrium ion concentrations. C is incorrect: large solubility does not mean infinite capacity. D is incorrect: an equilibrium constant does not determine speed."
+    }
+  ]
+}
