@@ -609,4 +609,13 @@ close(1/4,.25);close(3**2,9);close(16**.5,4);close(.2*.1,.02);close(100/5,20);
 close(25**(-.5),.2);close(1/.3,10/3);close(.1*20,2);close(2*3,6);close((9*4)**(-.5),1/6);
 assert.deepEqual(netSteps({'A(s)':-1,'A(g)':1},{'A(g)':-1,B:-1,C:1}),{'A(s)':-1,B:-1,C:1});
 assert.deepEqual(netSteps({A:-2,B:1},{B:-1,C:2}),{A:-2,C:2});
+// Topic 7.7: independent mass-action substitution and physically allowed roots.
+close(.6/.2,3);close(.25/(.5-.25)**2,4);close(.3**2/.45,.2);
+close((2*.2)**2/(.6-.2),.4);[.5,.78125].forEach(x=>close(x/(1.25-2*x)**2,8));
+assert.ok(1.25-2*.5>=0 && 1.25-2*.78125<0);
+close(.4/.4,1);close(.4+.4,.2+.6);close(.01*.1*.2,.0002);
+const smallProduct = (1.003-Math.sqrt(1.003**2-4*.01*.0002))/(2*.01);
+close(smallProduct/((.1-smallProduct)*(.2-smallProduct)),.01);
+assert.ok(Math.abs(.0002-smallProduct)/smallProduct<.0031 && smallProduct/.1<.0021);
+close(.4/.2,2);close(.8-.2,.6);close(.8**2/.2**2,16);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
