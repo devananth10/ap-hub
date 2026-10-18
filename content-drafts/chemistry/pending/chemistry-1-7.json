@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 1,
+  "topicId": "periodic-trends",
+  "questions": [
+    {
+      "id": "chem-1-7-001",
+      "prompt": "Three neutral atoms, Na, Mg, and Al, are located consecutively in Period 3 of the periodic table. Which ordering correctly represents their atomic radii from largest to smallest, and why?",
+      "options": [
+        "Al > Mg > Na, because atomic radius increases as the number of protons increases across a period.",
+        "Mg > Na > Al, because magnesium has a completely filled 3s subshell.",
+        "Na > Mg > Al, because increasing nuclear charge across the period attracts the valence electrons more strongly while the number of occupied principal energy levels remains the same.",
+        "Na > Al > Mg, because aluminum's additional 3p electron causes its atomic radius to exceed magnesium's."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Sodium, magnesium, and aluminum all have valence electrons in the third principal energy level. Moving from Na to Mg to Al, the number of protons increases from 11 to 12 to 13. Although electrons are also added, they enter the same principal energy level, so the additional shielding does not completely offset the increasing nuclear charge. The effective nuclear attraction experienced by the valence electrons generally increases, drawing the electron cloud closer to the nucleus. Therefore, the atomic radii decrease in the order Na > Mg > Al. A is incorrect because increasing nuclear charge across a period generally decreases, rather than increases, atomic radius. B is incorrect because a filled 3s subshell does not make magnesium larger than sodium; the increasing effective nuclear charge remains important. D is incorrect because adding an electron to aluminum's 3p subshell does not cause its atomic radius to exceed magnesium's. This trend illustrates how nuclear charge and shielding jointly determine atomic size."
+    },
+    {
+      "id": "chem-1-7-002",
+      "prompt": "The ions O²⁻, F⁻, Na⁺, and Mg²⁺ are isoelectronic, meaning each contains ten electrons. Which ion has the largest ionic radius?",
+      "options": [
+        "O²⁻, because it has the smallest nuclear charge and therefore attracts the shared ten-electron configuration least strongly.",
+        "Mg²⁺, because its greater positive charge causes the electron cloud to expand.",
+        "Na⁺, because sodium has more protons than oxygen and fluorine.",
+        "F⁻, because fluorine has the greatest electronegativity among the four elements."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. All four ions contain ten electrons with the configuration 1s² 2s² 2p⁶. However, their nuclear charges differ: oxygen has 8 protons, fluorine has 9, sodium has 11, and magnesium has 12. Because the electron configurations are identical, the ion with the smallest nuclear charge experiences the weakest electron-nucleus attraction and has the largest radius. The ionic radii therefore decrease in the order O²⁻ > F⁻ > Na⁺ > Mg²⁺. B is incorrect because magnesium's greater nuclear charge pulls its ten electrons more strongly toward the nucleus, making Mg²⁺ the smallest ion in this series. C is incorrect because sodium's greater nuclear charge makes Na⁺ smaller than O²⁻ and F⁻, not larger. D is incorrect because electronegativity describes an atom's tendency to attract shared electrons in a chemical bond and does not make F⁻ the largest of these isoelectronic ions. Comparing isoelectronic species demonstrates the importance of nuclear charge when electron count and electron configuration are held constant."
+    },
+    {
+      "id": "chem-1-7-003",
+      "prompt": "The first ionization energy of magnesium is approximately 738 kJ/mol, while that of aluminum is approximately 578 kJ/mol. This is an exception to the general increase in first ionization energy across a period. Which explanation best accounts for the lower first ionization energy of aluminum?",
+      "options": [
+        "Aluminum has fewer protons than magnesium, so its valence electrons experience weaker nuclear attraction.",
+        "Magnesium has a larger atomic radius than aluminum, making its electrons easier to remove.",
+        "Aluminum's first electron is removed from the 2p subshell, which is farther from the nucleus than magnesium's 3s subshell.",
+        "Aluminum's first electron is removed from the higher-energy 3p subshell, whereas magnesium's first electron is removed from the lower-energy 3s subshell."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Magnesium has the ground-state electron configuration [Ne] 3s², while aluminum has [Ne] 3s² 3p¹. The first electron removed from magnesium comes from its filled 3s subshell. The first electron removed from aluminum comes from its higher-energy 3p subshell. Because the 3p electron is less penetrating and generally experiences weaker effective nuclear attraction than a 3s electron in the same atom, it is easier to remove despite aluminum's greater nuclear charge. Consequently, aluminum has a lower first ionization energy than magnesium. A is incorrect because aluminum has 13 protons, one more than magnesium's 12. B is incorrect because magnesium does have a larger atomic radius, but that observation alone would suggest weaker attraction in magnesium and does not explain why its first ionization energy is higher. C is incorrect because aluminum's outermost electron occupies the 3p subshell, not 2p. This exception shows that ionization energy depends on subshell energies and electron configurations, not merely on the number of protons."
+    },
+    {
+      "id": "chem-1-7-004",
+      "prompt": "Nitrogen has a first ionization energy of approximately 1402 kJ/mol, while oxygen has a first ionization energy of approximately 1314 kJ/mol. Why is nitrogen's first ionization energy greater even though oxygen has a higher nuclear charge?",
+      "options": [
+        "Nitrogen's valence electrons occupy a principal energy level closer to the nucleus than oxygen's valence electrons.",
+        "Nitrogen has a half-filled 2p subshell with three unpaired electrons, while oxygen has one pair of 2p electrons whose repulsion makes an electron easier to remove.",
+        "Oxygen has fewer protons than nitrogen, resulting in weaker attraction for its valence electrons.",
+        "Nitrogen has more core electrons than oxygen, resulting in greater shielding and stronger electron binding."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Nitrogen has the configuration 1s² 2s² 2p³, with one electron occupying each of the three 2p orbitals. Oxygen has the configuration 1s² 2s² 2p⁴, requiring two electrons to occupy one 2p orbital. The paired electrons in oxygen experience additional electron-electron repulsion, making removal of one of them relatively favorable. Nitrogen's half-filled 2p arrangement is comparatively stable, so removing an electron requires more energy. This effect outweighs the increase in nuclear charge from nitrogen to oxygen, producing the observed exception to the general periodic trend. A is incorrect because both elements have valence electrons in the second principal energy level. C is incorrect because oxygen has eight protons, while nitrogen has seven. D is incorrect because both atoms have two 1s core electrons, so nitrogen does not have more core-electron shielding than oxygen. The comparison demonstrates that electron pairing and subshell occupancy can modify otherwise predictable ionization-energy trends."
+    },
+    {
+      "id": "chem-1-7-005",
+      "prompt": "A researcher measures the successive ionization energies of an unknown main-group element X. The results are shown below. First ionization energy: 590 kJ/mol; second: 1145 kJ/mol; third: 4912 kJ/mol; fourth: 6490 kJ/mol. Based on the data, which group of the periodic table most likely contains X?",
+      "options": [
+        "Group 1, because the first electron is removed with the least energy.",
+        "Group 13, because the third ionization energy is much greater than the second.",
+        "Group 2, because the large increase between the second and third ionization energies indicates that two valence electrons are removed before a core electron must be removed.",
+        "Group 17, because the large ionization energies indicate that the atom has seven valence electrons."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Successive ionization energies increase because removing each electron leaves a more positively charged species that attracts its remaining electrons more strongly. However, an especially large increase occurs when removal begins from an inner electron shell rather than the valence shell. The first two ionization energies are 590 and 1145 kJ/mol, while the third jumps to 4912 kJ/mol. This large increase indicates that the atom has two valence electrons and that the third electron would be removed from a more strongly bound core subshell. Main-group elements with two valence electrons belong to Group 2. A is incorrect because a Group 1 element would show its largest initial jump between the first and second ionization energies. B is incorrect because a Group 13 element would typically show a large jump between the third and fourth ionization energies after losing three valence electrons. D is incorrect because a Group 17 element has seven valence electrons and would not show this characteristic large jump after removing only two electrons. The numerical data are consistent with calcium, a Group 2 element."
+    },
+    {
+      "id": "chem-1-7-006",
+      "prompt": "Lithium, sodium, and potassium are all Group 1 elements. Which ordering correctly represents their first ionization energies from greatest to least?",
+      "options": [
+        "K > Na > Li, because nuclear charge increases down the group.",
+        "Na > Li > K, because sodium has more occupied electron shells than lithium.",
+        "Li > K > Na, because potassium has more protons than sodium.",
+        "Li > Na > K, because additional occupied electron shells and increased shielding generally weaken the attraction between the nucleus and the outermost electron down the group."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Lithium has the configuration [He] 2s¹, sodium has [Ne] 3s¹, and potassium has [Ar] 4s¹. Moving down Group 1, the valence electron occupies a principal energy level farther from the nucleus. Additional inner electron shells also increase shielding. Although nuclear charge increases, the greater electron-nucleus distance and increased shielding generally reduce the effective attraction experienced by the outermost electron. Consequently, less energy is required to remove that electron, giving the order Li > Na > K. A is incorrect because it considers increasing nuclear charge without accounting for the larger distance and greater shielding of the valence electron. B is incorrect because sodium's additional occupied shell makes its outermost electron easier to remove than lithium's, not harder. C is incorrect because potassium's greater proton count does not overcome the effects of its larger electron-nucleus distance and additional shielding. The first ionization energy generally decreases down a group."
+    },
+    {
+      "id": "chem-1-7-007",
+      "prompt": "Four elements in Period 2 are carbon, nitrogen, oxygen, and fluorine. Which ordering correctly represents their electronegativities from greatest to least?",
+      "options": [
+        "F > O > N > C",
+        "C > N > O > F",
+        "O > F > N > C",
+        "F > N > O > C"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Electronegativity describes the tendency of an atom to attract shared electrons in a chemical bond. Across Period 2, electronegativity generally increases from left to right because nuclear charge increases while the valence electrons remain in the same principal energy level. The increasing effective nuclear attraction strengthens the ability of the atoms to attract bonding electrons. Therefore, the order is F > O > N > C. B is incorrect because it reverses the general electronegativity trend across the period. C is incorrect because fluorine is more electronegative than oxygen. D is incorrect because oxygen is more electronegative than nitrogen. Unlike first ionization energy, which exhibits an exception between nitrogen and oxygen due to electron pairing, the electronegativity values of these elements follow the stated increasing trend. Fluorine has the greatest electronegativity of all elements on the commonly used Pauling scale."
+    },
+    {
+      "id": "chem-1-7-008",
+      "prompt": "A scientist compares the addition of one electron to an isolated gaseous chlorine atom and an isolated gaseous argon atom. The electron-addition process is represented by X(g) + e⁻ → X⁻(g). Which statement best predicts the relative energy changes for these processes?",
+      "options": [
+        "Adding an electron to argon is more energetically favorable because argon has a greater nuclear charge than chlorine.",
+        "Adding an electron to chlorine is more energetically favorable because the added electron completes its partially filled 3p subshell, whereas an electron added to argon must occupy a higher-energy shell.",
+        "Adding an electron to chlorine and argon produces approximately equal energy changes because both atoms are in Period 3.",
+        "Adding an electron to argon is more energetically favorable because its completely filled valence shell creates additional available space for an electron."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Chlorine has the ground-state configuration [Ne] 3s² 3p⁵. Adding an electron completes its 3p subshell, producing the stable closed-shell configuration [Ar]. This process is energetically favorable and releases energy. Argon already has the closed-shell configuration [Ne] 3s² 3p⁶. An additional electron would have to occupy a higher-energy orbital outside its filled valence shell, so forming a stable isolated Ar⁻ ion is not energetically favorable under ordinary gas-phase conditions. A is incorrect because greater nuclear charge alone does not determine electron affinity; the energy and occupancy of the orbital receiving the electron are also important. C is incorrect because elements in the same period can have substantially different electron affinities due to their electron configurations. D is incorrect because a completely filled valence shell does not provide an additional low-energy orbital for an electron. Electron affinity reflects the energy change associated with electron addition and is strongly influenced by subshell occupancy and effective nuclear attraction."
+    },
+    {
+      "id": "chem-1-7-009",
+      "prompt": "A researcher compares the ionic radii of Fe²⁺ and Fe³⁺ ions in comparable coordination environments and spin states. Both ions contain 26 protons, but Fe²⁺ contains 24 electrons while Fe³⁺ contains 23 electrons. Which statement correctly predicts their relative sizes?",
+      "options": [
+        "Fe³⁺ is larger because its greater positive charge causes the electron cloud to expand.",
+        "Both ions have identical radii because their nuclei contain the same number of protons.",
+        "Fe²⁺ is smaller because its additional electron increases the attractive force exerted by the nucleus on every electron.",
+        "Fe³⁺ is smaller because removing an additional electron reduces electron-electron repulsion and allows the remaining electrons to experience stronger effective nuclear attraction."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Both ions contain the same nucleus with 26 protons, but Fe³⁺ has one fewer electron than Fe²⁺. The ground-state configurations are approximately [Ar] 3d⁶ for Fe²⁺ and [Ar] 3d⁵ for Fe³⁺. Removing an additional electron decreases electron-electron repulsion and shielding among the remaining electrons. The positively charged nucleus therefore attracts the remaining electron cloud more strongly, resulting in a smaller ionic radius for Fe³⁺. A is incorrect because a greater positive ionic charge does not cause the electron cloud to expand when comparing ions of the same element; the more positively charged ion is generally smaller. B is incorrect because ionic radius depends on both nuclear charge and the number and arrangement of electrons. C is incorrect because the additional electron in Fe²⁺ increases electron-electron repulsion rather than making the ion smaller. This comparison illustrates why higher oxidation states of the same metal generally correspond to smaller ionic radii."
+    },
+    {
+      "id": "chem-1-7-010",
+      "prompt": "A student measures the first ionization energies of three consecutive Group 1 elements and obtains the following values: Li = 520 kJ/mol, Na = 496 kJ/mol, and K = 419 kJ/mol. Based on these data and the periodic trend, which value is the most reasonable estimate for the first ionization energy of rubidium, Rb, the next element below potassium in Group 1?",
+      "options": [
+        "Approximately 800 kJ/mol",
+        "Approximately 520 kJ/mol",
+        "Approximately 400 kJ/mol",
+        "Approximately 100 kJ/mol"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The first ionization energy generally decreases down Group 1 because each successive element has an additional occupied principal energy level. The valence electron is farther from the nucleus and experiences greater shielding from inner electrons. The measured values decrease from 520 kJ/mol for lithium to 496 kJ/mol for sodium and 419 kJ/mol for potassium. Rubidium is below potassium, so its first ionization energy should be somewhat lower than 419 kJ/mol. Approximately 400 kJ/mol is the most reasonable estimate among the choices and is close to rubidium's experimentally measured value of about 403 kJ/mol. A is incorrect because 800 kJ/mol would represent a large increase rather than the expected decrease down the group. B is incorrect because 520 kJ/mol is lithium's value and does not account for rubidium's additional occupied electron shells. D is incorrect because 100 kJ/mol is far below the observed progression and would imply an unusually large decrease not supported by the data. Periodic trends can be used to make reasonable estimates when exact experimental values are unavailable."
+    },
+    {
+      "id": "chem-1-7-011",
+      "prompt": "Neutral Li has configuration1s²2s¹, whereas Li+ has configuration1s². Which explanation best accounts for the much smaller radius of Li+ compared with Li?",
+      "options": [
+        "Li+ has a smaller nucleus because its proton number decreases during ionization.",
+        "Removing the2s electron eliminates the occupied outer shell while the same nucleus attracts the remaining1s electrons.",
+        "Li+ gains a new occupied shell that compresses the original shells.",
+        "Li+ is larger because every positive charge makes electrons repel the nucleus."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Lithium retains its three-proton nucleus during ionization but loses its only n=2 electron. The occupied electron cloud of Li+ is then confined to the inner1s shell, giving a substantially smaller radius. A is incorrect because ordinary electron removal does not change proton number. C is incorrect because the cation has fewer occupied shells, not a new shell. D is incorrect because electrons are attracted to the positive nucleus, and a cation is generally smaller than its parent atom. The supplied configurations identify the shell change without requiring an anomalous Aufbau configuration."
+    }
+  ]
+}
