@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 3,
+  "topicId": "topic-3-2",
+  "questions": [
+    {
+      "id": "chem-3-2-001",
+      "prompt": "A brittle ionic crystal fractures when stress shifts one layer relative to the next. Which particulate explanation is consistent with this behavior?",
+      "options": [
+        "The shift removes the charges from every ion, so all electrostatic interactions disappear.",
+        "The shift changes every cation into an anion without changing the electron distribution.",
+        "The ions become discrete neutral molecules whose covalent bonds all break.",
+        "The shift can bring like-charged ions next to one another, creating repulsions that favor fracture."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. An ionic lattice is stabilized by its arrangement of positive and negative ions. A layer displacement can align like charges, producing strong repulsive interactions and brittleness. A incorrectly neutralizes ions merely by moving them. B changes ionic charge without the required electron transfer. C replaces the ionic array with a molecular model. Fracture changes the arrangement and separation of charged particles; it does not require every ion to become neutral."
+    },
+    {
+      "id": "chem-3-2-002",
+      "prompt": "Diamond is a three-dimensional covalent network, whereas solid I2 consists of discrete I2 molecules. Why is diamond much more resistant to deformation in the introductory structure model?",
+      "options": [
+        "Deforming its rigid network requires disrupting strong directional covalent interactions, whereas neighboring I2 molecules are held together by weaker intermolecular interactions.",
+        "Diamond consists of individual carbon molecules with stronger dispersion forces solely because carbon atoms are lighter.",
+        "I2 must contain an ionic lattice because iodine atoms have many electrons.",
+        "Every covalent substance must be harder than every noncovalent solid, independent of its network or layer structure."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Diamond’s fixed three-dimensional network resists rearrangement through strong covalent connections. I2 molecules retain internal covalent bonds but interact with neighboring molecules mainly through dispersion. B incorrectly makes diamond molecular and treats smaller mass as a cause of stronger dispersion. C equates a large electron count with ionic bonding. D makes an unjustified universal rule; layered graphite, for example, illustrates why connectivity and directions of interaction matter. The conclusion here concerns the specified structures, not a ranking based only on the word covalent."
+    },
+    {
+      "id": "chem-3-2-003",
+      "prompt": "A dry solid composite contains NaCl crystals and a continuous connected copper network bridging two electrodes. It conducts electricity while the NaCl remains crystalline. Which conclusion is most appropriate?",
+      "options": [
+        "The conductivity proves that every ion in the NaCl crystals can migrate freely; the copper network is irrelevant.",
+        "The copper must be an insulator because particles can carry electrical charge only after a solid melts.",
+        "Mobile delocalized electrons in the connected copper network can account for the current without requiring the NaCl ions to migrate.",
+        "Current must be carried by neutral NaCl formula units moving through the fixed copper network."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The connected metallic network provides a path for mobile electronic charge carriers, even while the ionic component remains a nonconducting crystal. A incorrectly transfers a property of the whole composite to every component and ignores the explicit metallic path. B contradicts metallic solid-state conduction. D assigns charge transport to neutral formula units rather than identifying mobile charged particles. Conductivity of a multicomponent solid does not, by itself, prove that each component conducts or that the ionic lattice has melted."
+    },
+    {
+      "id": "chem-3-2-004",
+      "prompt": "A sample of molecular solid CO2 sublimes to CO2 gas without chemical decomposition. Which interactions are primarily overcome as molecules separate?",
+      "options": [
+        "The C=O covalent bonds within every molecule.",
+        "The intermolecular attractions between intact CO2 molecules.",
+        "Covalent bonds connecting different CO2 units throughout a continuous carbon–oxygen network.",
+        "The ionic attractions between separate C4+ and O2- ions in a CO2 lattice."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Sublimation separates intact molecules by overcoming intermolecular cohesion. A would break the CO2 molecules into different chemical species, contradicting the stated absence of decomposition. C incorrectly treats molecular solid CO2 as a covalent network connecting different CO2 units. D imposes an ionic lattice on a molecular solid. The internal C=O bonds remain present in both the solid and gas; a physical phase change need not sever covalent bonds within the molecules."
+    },
+    {
+      "id": "chem-3-2-005",
+      "prompt": "Two molecular solids have different melting points. A student concludes that the solid with the higher melting point must have stronger covalent bonds inside its molecules. Which evaluation is best?",
+      "options": [
+        "The conclusion follows because melting always breaks every covalent bond inside each molecule.",
+        "The conclusion follows because a melting point is a direct measurement of an individual bond energy.",
+        "The conclusion fails only if one sample contains more total grams than the other.",
+        "The conclusion is unsupported: intermolecular interactions and crystal packing can affect melting without breaking the intramolecular bonds."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Melting molecular solids rearranges the interactions between molecules; differences in packing and intermolecular cohesion affect the transition. A confuses melting with chemical decomposition. B treats a bulk phase-transition temperature as a direct isolated-bond measurement. C confuses total sample mass with the structural factors controlling a melting point. A higher melting point alone does not establish stronger internal covalent bonds, and melting trends can be more subtle than a simple force-strength ranking."
+    },
+    {
+      "id": "chem-3-2-006",
+      "prompt": "Two stable molecular liquids P and Q have similar molecular sizes and shapes, but P has stronger net intermolecular attractions. At the same temperature where both remain liquids, which qualitative prediction is appropriate?",
+      "options": [
+        "P has a higher vapor pressure and a lower normal boiling point.",
+        "P and Q must have identical vapor pressures because their molecules have similar sizes.",
+        "P generally has a lower vapor pressure and a higher normal boiling point.",
+        "P must decompose into ions before any molecules enter the vapor."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Stronger cohesion generally makes escape into the vapor less favorable at a given temperature, lowering equilibrium vapor pressure. More heating is then needed for its vapor pressure to reach the same external pressure, giving a higher boiling point. A reverses both trends. B omits the stated difference in interactions. D substitutes chemical ion formation for vaporization of a stable molecular liquid. The prediction is the usual qualitative model for comparable liquids, not a claim that size alone fixes their properties."
+    },
+    {
+      "id": "chem-3-2-007",
+      "prompt": "An unknown solid has a high melting point and does not conduct electricity while solid. Is this evidence alone sufficient to distinguish an ionic solid from a three-dimensional covalent network solid?",
+      "options": [
+        "No; both can fit these observations, so additional structural or appropriate conductivity evidence is needed.",
+        "Yes; every nonconducting solid with a high melting point must be ionic.",
+        "Yes; every ionic solid conducts electricity before melting.",
+        "No; neither type can have a high melting point."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Many ionic solids and three-dimensional network solids have strong interactions, high melting points, and poor solid-state conductivity. The observations do not uniquely identify one structure. B overstates the diagnostic power of two shared properties. C ignores the limited mobility of ions in an ionic crystal. D reverses the expected effect of strong interactions. Appropriate additional evidence could include a structural model or molten conductivity where the material can be melted and remains chemically stable; no single unsafe or universally feasible experiment is prescribed."
+    },
+    {
+      "id": "chem-3-2-008",
+      "prompt": "Heating changes a protein’s shape and its ability to bind another molecule, while analysis shows that its covalent backbone remains intact. Which explanation is consistent with this observation?",
+      "options": [
+        "The loss of binding proves that every peptide bond in the backbone was broken.",
+        "Noncovalent contacts that help stabilize its folded shape were disrupted or rearranged, changing its binding geometry.",
+        "The unchanged backbone proves that all three-dimensional interactions and the shape remained unchanged.",
+        "Only the protein’s total molecular mass determines binding; its folded shape cannot matter."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. A biomolecule’s function can depend on its three-dimensional arrangement, which is supported by many noncovalent contacts. Rearranging those contacts can change binding even while the covalent backbone stays intact. A contradicts the stated intact covalent backbone and confuses loss of folded structure with cleavage of every peptide bond. C ignores noncovalent interactions beyond the backbone. D excludes the geometric and chemical fit of a binding site and incorrectly treats total mass as sufficient to determine binding. The observation does not specify one universal unfolding pathway; it supports a structure/function explanation involving noncovalent interactions."
+    },
+    {
+      "id": "chem-3-2-009",
+      "prompt": "Graphite has strong covalent bonding within carbon sheets but is soft and can leave layers on paper. Which feature of its structure explains the softness?",
+      "options": [
+        "Every carbon atom is an independent nonbonded particle with no covalent neighbors.",
+        "The strong bonds within each sheet must all break whenever two sheets slide.",
+        "Adjacent sheets can slide relative to one another because interlayer attractions are weaker than the covalent connections within a sheet.",
+        "Graphite is an ionic solid whose layers contain alternating C4+ and C4- ions."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Graphite’s layered structure is strongly bonded within sheets but more weakly held between them, allowing relative layer motion. A erases the two-dimensional covalent network. B incorrectly requires breaking the within-sheet network for interlayer sliding. D substitutes unsupported full ionic charges for covalently connected carbon. The example shows why a material’s properties depend on the dimensional arrangement of interactions as well as their type."
+    },
+    {
+      "id": "chem-3-2-010",
+      "prompt": "An interstitial alloy is less easily bent than its pure metallic host but still conducts electricity. Which combination of microscopic features can account for both observations?",
+      "options": [
+        "Small added atoms hinder structural rearrangement, while the alloy retains mobile delocalized electrons.",
+        "Small added atoms obstruct deformation, but electrical current is carried by metal cores migrating through the solid.",
+        "The alloy becomes a fixed ionic lattice whose stationary charged particles carry electrical current without moving.",
+        "The added atoms make the host layers slide more freely, while all electrons become permanently localized."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Interstitial atoms can increase rigidity by obstructing rearrangement of the metal structure, yet metallic delocalized electrons can remain available for conduction. B can account for rigidity but incorrectly assigns ordinary solid-metal current to migrating cores. C replaces metallic bonding with an ionic lattice and then supplies no mobile charge carrier; stationary charges do not carry a current through the material. D predicts easier bending and reduced electronic mobility, opposite to the stated combination. Mechanical resistance and electrical conduction depend on related but different aspects of the structure; one does not force the other to disappear."
+    },
+    {
+      "id": "chem-3-2-011",
+      "prompt": "A molecular solid melts into a cohesive liquid without decomposition. A student draws the liquid with widely separated molecules experiencing no intermolecular attractions. What is the main defect in this model?",
+      "options": [
+        "The liquid’s volume can be explained only by each molecule becoming physically larger.",
+        "Liquid molecules remain close together and interacting; melting rearranges their contacts rather than eliminating all intermolecular cohesion.",
+        "The liquid must contain isolated atoms because melting destroys molecular identity.",
+        "The liquid molecules must occupy perfectly fixed repeating lattice positions."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. A liquid retains close neighbors and significant interparticle attractions while allowing molecules to change relative positions. A attributes bulk phase behavior entirely to individual molecules swelling rather than to their relative arrangements and motion. C contradicts the absence of decomposition. D retains the fixed crystalline arrangement of a solid. Complete removal of cohesive interactions is a useful contrast for a widely separated gas model, not for the dense liquid described here. Melting can therefore be more sensitive to rearrangement and packing than a simple all-forces-removed picture."
+    }
+  ]
+}
