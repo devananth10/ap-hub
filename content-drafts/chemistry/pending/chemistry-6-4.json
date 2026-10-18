@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 6,
+  "topicId": "topic-6-4",
+  "questions": [
+    {
+      "id": "chem-6-4-001",
+      "prompt": "A 50.0 g water sample warms from 20.0 °C to 32.0 °C without a phase change. Using c = 4.184 J·g^-1·K^-1 and q = mcΔT, what heat is absorbed by the water?",
+      "options": [
+        "+0.251 kJ",
+        "−2.51 kJ",
+        "+2.51 kJ",
+        "+6.69 kJ"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. ΔT = 32.0 − 20.0 = 12.0 K, so q = (50.0)(4.184)(12.0) = 2510.4 J = +2.51 kJ. A introduces a factor-of-ten error. B gives the wrong sign for heat entering the water. D uses the final temperature 32.0 instead of the change. A Celsius temperature difference and a kelvin difference have the same numerical size."
+    },
+    {
+      "id": "chem-6-4-002",
+      "prompt": "A 30.0 g metal sample with c = 0.385 J·g^-1·K^-1 cools from 90.0 °C to 25.0 °C. What is q for the metal, using positive q for absorbed heat?",
+      "options": [
+        "−0.751 kJ",
+        "+0.751 kJ",
+        "−1.04 kJ",
+        "−0.289 kJ"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. q = (30.0)(0.385)(25.0 − 90.0) = −750.75 J = −0.751 kJ. B gives the magnitude but reverses the cooling sign. C multiplies by the initial Celsius temperature rather than ΔT. D uses the final temperature magnitude instead. The negative value describes heat leaving the named metal sample; it would be positive for surroundings receiving that same amount in an isolated exchange."
+    },
+    {
+      "id": "chem-6-4-003",
+      "prompt": "A 0.250 mol sample absorbs 540. J without reaction or phase change. Its molar heat capacity is constant at 24.0 J·mol^-1·K^-1. What temperature increase follows from q = nC_mΔT?",
+      "options": [
+        "22.5 K",
+        "5.63 K",
+        "2.16 × 10^3 K",
+        "90.0 K"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The sample heat capacity is nC_m = (0.250)(24.0) = 6.00 J/K, so ΔT = 540./6.00 = 90.0 K. A omits the mole amount and divides only by C_m. B multiplies by the mole amount instead of dividing by it. C divides only by n and omits C_m. A molar heat capacity must be combined with moles rather than grams."
+    },
+    {
+      "id": "chem-6-4-004",
+      "prompt": "A 15.0 g sample absorbs 225 J while warming by 20.0 K, without other energy changes. What specific heat capacity is inferred?",
+      "options": [
+        "15.0 J·g^-1·K^-1",
+        "0.750 J·g^-1·K^-1",
+        "300. J·g^-1·K^-1",
+        "0.0500 J·g^-1·K^-1"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. c = q/(mΔT) = 225/(15.0 × 20.0) = 0.750 J·g^-1·K^-1. A divides by mass but omits ΔT. C multiplies by ΔT instead of dividing. D divides by mass twice, introducing an extra factor of 15.0. The units distinguish specific heat capacity from total sample heat capacity, which would be 11.25 J/K here."
+    },
+    {
+      "id": "chem-6-4-005",
+      "prompt": "A reaction warms 100. g of solution by 5.00 K in a calorimeter. The solution's specific heat is 4.00 J·g^-1·K^-1, and the calorimeter hardware has heat capacity 50.0 J/K. Solution and hardware share the same initial temperature and the same final temperature. Neglect heat exchange with the room and other work. What q is assigned to the reaction process?",
+      "options": [
+        "−2.00 kJ",
+        "+2.25 kJ",
+        "−2.25 kJ",
+        "−0.250 kJ"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Solution absorbs (100.)(4.00)(5.00) = 2000 J, and hardware absorbs (50.0)(5.00) = 250 J. Thus q_reaction = −(2000 + 250) = −2.25 kJ. A omits hardware heating. B assigns the surroundings' positive heat to the reaction. D counts only hardware and omits solution. The thermal masses share the measured temperature increase, so both must be included."
+    },
+    {
+      "id": "chem-6-4-006",
+      "prompt": "Mix 200. g water at 80.0 °C with 100. g water at 20.0 °C in an isolated container of negligible heat capacity. The specific heat is the same constant for both portions, and no phase change occurs. What equilibrium temperature follows from conservation?",
+      "options": [
+        "50.0 °C",
+        "40.0 °C",
+        "80.0 °C",
+        "60.0 °C"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Set 200c(Tf − 80.0) + 100c(Tf − 20.0) = 0. Cancel c and solve 300Tf = 18000, giving Tf = 60.0 °C. A uses an unweighted mean despite unequal masses. B reverses which portion has the larger mass. C ignores cooling of the hot portion while energy warms the cold portion. The final value is between the initial temperatures and closer to that of the larger thermal mass."
+    },
+    {
+      "id": "chem-6-4-007",
+      "prompt": "Equal masses of solids A and B each absorb the same heat without phase change. Their specific heats are c_A = 0.400 and c_B = 0.800 J·g^-1·K^-1. How do their temperature increases compare?",
+      "options": [
+        "ΔT_A = 2ΔT_B",
+        "ΔT_A = ΔT_B",
+        "ΔT_A = (1/2)ΔT_B",
+        "ΔT_A = 4ΔT_B"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. With q and mass matched, ΔT = q/(mc), so ΔT_A/ΔT_B = c_B/c_A = 2. B ignores unequal specific heats. C makes the temperature change proportional rather than inversely proportional to c. D squares the heat-capacity ratio without support. A lower specific heat means a larger temperature response to the same heat per mass."
+    },
+    {
+      "id": "chem-6-4-008",
+      "prompt": "A dissolution process lowers the temperature of a 120. g final mixture by 3.50 K in an insulated calorimeter whose hardware heat capacity is negligible. Use c_mixture = 4.184 J·g^-1·K^-1 and neglect other work. What heat is assigned to dissolution?",
+      "options": [
+        "−1.76 kJ",
+        "+1.76 kJ",
+        "+0.420 kJ",
+        "+17.6 kJ"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The thermal mixture change is q_mixture = (120.)(4.184)(−3.50) = −1757.28 J. The dissolution process absorbs the opposite amount, +1.76 kJ. A reports the mixture's sign instead of the process sign. C omits the specific-heat factor. D introduces a factor-of-ten error. The supplied mass is the final mixture mass, so neither a water-only mass nor a separate solute subtraction is needed."
+    },
+    {
+      "id": "chem-6-4-009",
+      "prompt": "An electric calibration deposits 1.20 kJ into a calorimeter plus its fixed contents, increasing their common temperature from 10.0 °C to 16.0 °C. Heat loss is negligible. What constant total heat capacity C_total follows from q = C_totalΔT?",
+      "options": [
+        "7.20 × 10^3 J/K",
+        "75.0 J/K",
+        "1.20 × 10^3 J/K",
+        "200. J/K"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. C_total = 1200 J/(16.0 − 10.0) K = 200. J/K. A multiplies q by ΔT instead of dividing. B uses the final Celsius temperature 16.0 rather than its change. C reports heat amount as heat capacity without dividing by temperature change. This is total heat capacity in J/K, not specific heat per gram or molar heat capacity."
+    },
+    {
+      "id": "chem-6-4-010",
+      "prompt": "An exothermic reaction warms its calorimeter above room temperature. A student waits while some heat escapes to the room, then uses the smaller remaining temperature rise to calculate reaction heat, assuming no loss. Masses and heat capacities are otherwise correct. How is the inferred magnitude of released heat biased?",
+      "options": [
+        "Too large, because any delay increases the recorded temperature rise.",
+        "Unchanged, because the room cannot receive thermal energy.",
+        "Too small, because the measured temperature rise omits energy that already left the calorimeter.",
+        "Its sign must become endothermic even though the measured final temperature remains above the initial value."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Using q_surroundings = C_totalΔT with a reduced rise undercounts heat released by the reaction before some escaped. A reverses the stipulated temperature effect. B denies the stated loss. D changes the sign despite a still-positive thermal rise; the error reduces the inferred exothermic magnitude rather than necessarily reversing it. Correcting for heat exchange requires more than silently assuming the system was insulated."
+    },
+    {
+      "id": "chem-6-4-011",
+      "prompt": "A substance has molar mass 60.0 g/mol and molar heat capacity 90.0 J·mol^-1·K^-1. Which pair gives its specific heat c and the heat needed to warm 10.0 g by 4.00 K without phase change?",
+      "options": [
+        "c = 90.0 J·g^-1·K^-1; q = 3.60 × 10^3 J",
+        "c = 1.50 J·g^-1·K^-1; q = 60.0 J",
+        "c = 0.667 J·g^-1·K^-1; q = 26.7 J",
+        "c = 1.50 J·g^-1·K^-1; q = 15.0 J"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. c = C_m/M = 90.0/60.0 = 1.50 J·g^-1·K^-1. Then q = (10.0)(1.50)(4.00) = 60.0 J. A uses the molar-capacity number as a per-gram value. C inverts the conversion ratio and gives incompatible conversion units despite its displayed labels. D obtains c but omits ΔT from the heat calculation. Equivalently, the sample has 10.0/60.0 mol and q = nC_mΔT."
+    }
+  ]
+}

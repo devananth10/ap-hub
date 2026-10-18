@@ -506,4 +506,18 @@ close(2*(-12),-24);
 close((-75)+75,0);
 close(0-20,-20);
 close(40-(-20),60); close(3*20,60);
+// Topic 6.4: q=mcΔT, molar/total capacity, and calorimeter conservation.
+close(50.0*4.184*(32.0-20.0),2510.4);
+close(30.0*.385*(25.0-90.0),-750.75);
+close(540/(.250*24.0),90);
+close(225/(15.0*20.0),.750);
+close(-(100*4.00+50.0)*5.00,-2250);
+const mixedWaterTemperature=(200*80+100*20)/(200+100);
+close(mixedWaterTemperature,60);
+close(200*4.184*(mixedWaterTemperature-80)+100*4.184*(mixedWaterTemperature-20),0);
+close(.800/.400,2);
+close(-120*4.184*(-3.50),1757.28);
+close(1200/(16-10),200);
+close(90.0/60.0,1.50); close(10.0*(90/60)*4,60);
+close((10.0/60.0)*90.0*4,60);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
