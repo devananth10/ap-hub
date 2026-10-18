@@ -4,8 +4,8 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 
 - Official inventory: 91 topics in nine units; target 1,001 questions (11 per topic).
 - Live approved questions: 11 in Topic 1.1 only. Original 001–010 preserved; owner authorized validated 011.
-- Complete unpublished working sets: 42, 462 questions. These require human scientific review and owner approval; they are not additional live questions.
-- Next new topic without an unavailable-source dependency: 6.3 — Heat Transfer and Thermal Equilibrium, ID `topic-6-3`. Earlier unavailable/partial sets still need reconciliation.
+- Complete unpublished working sets: 43, 473 questions. These require human scientific review and owner approval; they are not additional live questions.
+- Next new topic without an unavailable-source dependency: 6.4 — Heat Capacity and Calorimetry, ID `topic-6-4`. Earlier unavailable/partial sets still need reconciliation.
 - Topic 1.5 demonstration removed entirely; its page/workspace and student storage keys are preserved. Its pending eleven-question set is separate.
 - Recovered originals: three complete sets (1.4, 1.5, 1.8) and fragments (1.6, 1.7, 2.1). Archived unchanged; complete working copies audited separately.
 - The fragments contain 29 complete recovered question objects (10/10/9); corrected partial working copies and known scope/variety flags are recorded in `qa/partial-recovery.md`. They are not complete banks and do not count toward complete-topic totals.
@@ -76,7 +76,7 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 | 5.11 | Catalysis | `topic-5-11` | 0 | 11 | draft; human-review-pending (see QA) |
 | 6.1 | Endothermic and Exothermic Processes | `energy` | 0 | 11 | draft; human-review-pending (see QA) |
 | 6.2 | Energy Diagrams | `topic-6-2` | 0 | 11 | draft; human-review-pending (see QA) |
-| 6.3 | Heat Transfer and Thermal Equilibrium | `topic-6-3` | 0 | 0 | not-started |
+| 6.3 | Heat Transfer and Thermal Equilibrium | `topic-6-3` | 0 | 11 | draft; human-review-pending (see QA) |
 | 6.4 | Heat Capacity and Calorimetry | `topic-6-4` | 0 | 0 | not-started |
 | 6.5 | Energy of Phase Changes | `topic-6-5` | 0 | 0 | not-started |
 | 6.6 | Introduction to Enthalpy of Reaction | `topic-6-6` | 0 | 0 | not-started |

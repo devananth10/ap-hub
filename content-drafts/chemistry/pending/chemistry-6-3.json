@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 6,
+  "topicId": "topic-6-3",
+  "questions": [
+    {
+      "id": "chem-6-3-001",
+      "prompt": "A warm solid and a cooler solid are placed in thermal contact inside an insulated enclosure. Which particle-level account best explains the initial net heat-transfer direction?",
+      "options": [
+        "A substance called cold moves from the cooler solid into the warm solid.",
+        "Interactions between particles transfer energy statistically from the higher-temperature body to the lower-temperature body.",
+        "All particles in the warmer body stop moving and release their entire energy at once.",
+        "The two solids must react chemically before any energy can pass between them."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Particle interactions across thermal contact redistribute energy, with a net flow from warmer to cooler under the stated conditions. A treats cold as a material substance rather than a lower-temperature condition. C replaces distributed ongoing motion with complete stopping. D incorrectly requires a chemical reaction for heat exchange. Insulation prevents external exchange but permits internal transfer between the bodies."
+    },
+    {
+      "id": "chem-6-3-002",
+      "prompt": "Two samples at the same temperature contain very different numbers of particles. Which statement follows from equal temperature without additional information about their amounts or structures?",
+      "options": [
+        "They must have equal total internal energy.",
+        "Every particle in each sample must have exactly the same kinetic energy.",
+        "They must have equal masses and equal volumes.",
+        "They are at the same thermal condition for net heat exchange, but their total energies need not be equal."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Equal temperature is the thermal-equilibrium criterion for bodies able to exchange heat; it does not fix their total amount-dependent energy. A ignores particle number and other contributions. B replaces a distribution of energies with one value for every particle. C infers extensive properties from temperature alone. The equality concerns temperature and the associated thermal distribution scale, not an equality of every total energy contribution."
+    },
+    {
+      "id": "chem-6-3-003",
+      "prompt": "Two bodies in thermal contact reach the same stable temperature with no external energy source. What happens microscopically at thermal equilibrium?",
+      "options": [
+        "Particle motion and energy-exchanging interactions continue, but there is no sustained net heat transfer between the bodies.",
+        "Every particle stops moving because heat transfer is complete.",
+        "Particles cease to interact so that energy conservation can begin.",
+        "One body continues losing energy indefinitely while both temperatures stay fixed without any other exchange."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Equilibrium is dynamic at the microscopic level: exchanges continue without a sustained directional imbalance. B confuses equal temperature with zero kinetic energy. C invents a requirement that interactions stop; conservation applies throughout. D contradicts the isolated stable-temperature condition by requiring an unexplained continuing energy loss. Net zero exchange is not the same as no individual exchanges."
+    },
+    {
+      "id": "chem-6-3-004",
+      "prompt": "Monatomic ideal helium and argon gases are in thermal equilibrium. Argon atoms are about ten times as massive as helium atoms. Which comparison is consistent with equal temperature?",
+      "options": [
+        "They have equal typical speeds because temperature ignores particle mass.",
+        "Argon atoms must have ten times the average translational kinetic energy because they are heavier.",
+        "Their average translational kinetic energies are equal, but the lighter helium atoms have greater root-mean-square speed.",
+        "Helium must be hotter because its atoms move faster."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. For monatomic ideal gases at the same temperature, average translational kinetic energy is the same. Because kinetic energy contains mass times speed squared, helium has the larger root-mean-square speed. A equates speed with energy despite different masses. B assigns energy directly from mass instead of temperature. D ignores that faster motion can reflect smaller mass at the same temperature. The monatomic ideal-gas premise makes the kinetic comparison explicit."
+    },
+    {
+      "id": "chem-6-3-005",
+      "prompt": "A small warm object and a much larger cooler object are compared before contact. Why does the warmer object's higher temperature not prove that it contains more total internal energy?",
+      "options": [
+        "Temperature is unrelated to any particle energy.",
+        "The colder object must contain no particle motion.",
+        "Every object has the same total internal energy regardless of size.",
+        "Temperature characterizes thermal energy per particle statistically, whereas total internal energy also depends on amount and other microscopic contributions."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. A higher temperature does not determine an extensive total without knowing how much material is present and its relevant energy modes. A denies the thermal-kinetic connection. B equates cooler with motionless. C ignores amount dependence. The statement does not assign a larger total to either particular object without enough information; it rejects an inference from temperature alone."
+    },
+    {
+      "id": "chem-6-3-006",
+      "prompt": "A warmer gas and a cooler gas exchange energy through particle collisions. Can an individual encounter transfer energy in the direction opposite to the initial net warmer-to-cooler flow?",
+      "options": [
+        "No, because every particle in the warmer gas has more energy than every particle in the cooler gas.",
+        "Yes; the energy distributions overlap, so individual exchanges can oppose the average direction even while net transfer is warmer to cooler.",
+        "Yes, but only if that collision violates conservation of energy.",
+        "No, because the cooler gas has no moving particles to transfer energy."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Temperature describes distributions and averages, not an ordering of every individual particle energy. A denies distribution overlap. C falsely equates an opposite individual exchange with nonconservation. D treats lower temperature as zero motion. Many collisions collectively produce the net thermal direction even though one collision need not follow that average direction."
+    },
+    {
+      "id": "chem-6-3-007",
+      "prompt": "Two solid blocks at different temperatures are separated by an ideal thermal insulator. The insulator is replaced by a conducting link while the whole assembly remains isolated from the room. What change makes thermal equilibration between the blocks possible?",
+      "options": [
+        "The link creates energy that was absent from both blocks.",
+        "The link forces the blocks to have identical particle masses.",
+        "The link permits energy-transferring interactions between the bodies, enabling net transfer until their temperatures become equal.",
+        "The link removes conservation of energy so one block can warm without another energy change."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A conducting connection provides a path for thermal exchange that the ideal insulating barrier prevented. A and D violate conservation. B is unnecessary: bodies of different materials can reach the same temperature without their particles becoming identical. The isolated assembly can redistribute its existing energy internally. No melting, chemical reaction or external heating is required by the scenario."
+    },
+    {
+      "id": "chem-6-3-008",
+      "prompt": "For two bodies already in thermal equilibrium, a model counts energy crossing their contact in both directions over a long interval. Which result is consistent with no net heat transfer?",
+      "options": [
+        "Equal average energy transfer in opposite directions, even though the individual exchanges fluctuate.",
+        "Strictly zero particle interactions in either direction.",
+        "A sustained larger energy flow in one direction without any compensating external input.",
+        "Identical energy for every individual particle at every instant."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Opposing energy exchanges can balance statistically while microscopic fluctuations continue. B confuses zero net exchange with no interactions. C describes a sustained imbalance that would change an isolated body's energy rather than equilibrium. D imposes microscopic uniformity not required by a thermal distribution. The relevant comparison is averaged energy transfer, not identical particle counts or energies in each individual collision."
+    },
+    {
+      "id": "chem-6-3-009",
+      "prompt": "Ordinary solid bodies initially at 30 °C and 90 °C exchange heat in an isolated enclosure. Neither reacts nor changes phase, and each body's energy increases continuously with its temperature. What can be said about their common final temperature without amounts or heat capacities?",
+      "options": [
+        "It must be 90 °C because the warmer object sets every equilibrium temperature.",
+        "It must be exactly 60 °C, the arithmetic mean, for any two bodies.",
+        "It must exceed 90 °C because collisions add new energy to the assembly.",
+        "It lies between 30 °C and 90 °C, but need not equal 60 °C without further information."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Net energy redistribution cools the initially warm body and warms the initially cool one until a shared intermediate temperature is reached under the stated ordinary-material conditions. A leaves the hot body with no energy loss while warming the other. B requires an equal thermal-capacity condition that is not given. C creates energy without a source. This qualitative bound does not require calculating heat capacities or assuming equal masses."
+    },
+    {
+      "id": "chem-6-3-010",
+      "prompt": "A thermometer initially cooler than a sample is placed in thermal contact with it. The reading rises gradually. Which account explains why an equilibrium reading is sought rather than treating the first instant's reading as the sample's temperature?",
+      "options": [
+        "The thermometer must stop all particles in the sample before measuring it.",
+        "The thermometer reads the sample's original temperature instantly without exchanging energy.",
+        "Energy exchange brings the thermometer toward thermal equilibrium with the sample; its calibrated reading initially reflects its own cooler state.",
+        "Thermal equilibrium requires the thermometer and sample to have equal total internal energies."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A contact thermometer must exchange energy as its sensing material approaches the sample's thermal condition. A invents particle stopping. B ignores the stated gradual response and initial temperature difference. D confuses equal temperature with equal total energy. A non-negligible probe can also perturb the sample, so an equilibrium reading is not automatically proof that the original undisturbed sample temperature was unchanged."
+    },
+    {
+      "id": "chem-6-3-011",
+      "prompt": "Two bodies in thermal contact are held at constant but different temperatures, 80 °C and 20 °C, by external heaters and coolers. Energy flows steadily between them. Are the bodies in mutual thermal equilibrium merely because each temperature is constant?",
+      "options": [
+        "Yes, because any time-independent temperature indicates mutual equilibrium.",
+        "No; external inputs maintain a temperature difference and net heat flow, which differs from mutual thermal equilibrium at equal temperature.",
+        "Yes, because each body receives external energy at the same average rate that it loses energy.",
+        "No, because thermal equilibrium would require all particle collisions to stop."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. A maintained steady state with unequal temperatures and ongoing net exchange is not mutual thermal equilibrium. A ignores the external energy flows balancing that exchange. C describes a maintained energy balance but does not establish equal temperatures or absence of net transfer between the two bodies. D replaces equal temperature with an incorrect requirement that collisions stop. Constant macroscopic readings can arise either from equilibrium or from externally maintained balances, so the energy boundary matters."
+    }
+  ]
+}
