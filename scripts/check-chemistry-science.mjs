@@ -299,4 +299,15 @@ assert.ok(balanced([[3,'O2']],[[2,'O3']]));
   close(.400/(.400/20),20); // mmol / (mmol/mL), graph corner
   assert.ok(balanced([[1,'H2A'],[2,'OH',-1]],[[1,'A',-2],[2,'H2O']])); // A is a symbolic conserved group
 }
+// Topic 4.7: reaction accounting and changes in formal oxidation numbers.
+assert.ok(balanced([[1,'NH3'],[1,'H3O',1]],[[1,'NH4',1],[1,'H2O']]));
+assert.ok(balanced([[1,'Pb',2],[2,'I',-1]],[[1,'PbI2']]));
+assert.ok(balanced([[1,'C2H5OH'],[3,'O2']],[[2,'CO2'],[3,'H2O']]));
+assert.ok(balanced([[1,'CO3',-2],[2,'H',1]],[[1,'CO2'],[1,'H2O']]));
+assert.ok(balanced([[1,'Zn'],[2,'H',1]],[[1,'Zn',2],[1,'H2']]));
+assert.ok(balanced([[2,'Fe',2],[1,'Cl2']],[[2,'Fe',3],[2,'Cl',-1]]));
+assert.ok(balanced([[1,'SO2'],[2,'H2S']],[[3,'S'],[2,'H2O']]));
+assert.equal(2*((-1)-(-2)),2*(0-(-1))); // peroxide: formal electrons gained/lost
+assert.equal(2*(3-2),2*(0-(-1))); // iron/chlorine
+assert.equal(4-0,2*(0-(-2))); // sulfur species
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
