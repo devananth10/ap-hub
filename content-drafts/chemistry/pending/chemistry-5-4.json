@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 5,
+  "topicId": "topic-5-4",
+  "questions": [
+    {
+      "id": "chem-5-4-001",
+      "prompt": "The reaction NO + O3 → NO2 + O2 is specified to occur as one elementary step involving one NO and one O3 molecule. Which forward rate law follows for this step at fixed conditions?",
+      "options": [
+        "rate = k[NO2][O2]",
+        "rate = k[NO]^2[O3]",
+        "rate = k([NO] + [O3])",
+        "rate = k[NO][O3]"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The specified elementary event involves one particle of each reactant, giving first-order dependence on each concentration in the elementary-step rate law. A uses products instead of forward reactants. B invents a second NO participant. C adds concentrations instead of using the joint concentration dependence of a two-particle encounter. The elementary-step premise is essential; the same inference is not generally valid from an arbitrary overall equation alone."
+    },
+    {
+      "id": "chem-5-4-002",
+      "prompt": "Two NO2 molecules combine in the elementary step 2NO2 → N2O4. Which concentration dependence describes its forward reaction-event rate?",
+      "options": [
+        "k[NO2]",
+        "k[NO2]^2",
+        "k[N2O4]",
+        "k[NO2][N2O4]"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Two reactant NO2 particles participate in the elementary event, giving second-order NO2 dependence. A counts only one participant. C describes dependence on the product, relevant to a specified reverse step rather than this forward event. D incorrectly requires product to participate as a forward reactant. Any constant factor arising from the chosen species-rate convention is included in the rate constant and does not change the concentration exponent."
+    },
+    {
+      "id": "chem-5-4-003",
+      "prompt": "A proposed elementary step is the unimolecular decomposition SO2Cl2 → SO2 + Cl2. If that elementary description applies, which forward concentration dependence is expected?",
+      "options": [
+        "First order in SO2Cl2, because one reactant molecule participates in each specified event.",
+        "Second order in SO2Cl2, because two product molecules form.",
+        "Zero order in SO2Cl2, because a second reactant species is not written.",
+        "First order in each product, because products determine the forward event frequency."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. A unimolecular elementary disappearance has a rate proportional to the concentration of the participating reactant molecules under the stated model. B incorrectly uses the number of product molecules to set forward order. C confuses one reactant with no concentration dependence. D assigns the forward law from products. The problem supplies a proposed elementary description rather than claiming that every measured SO2Cl2 experiment must follow a single-step mechanism under all conditions."
+    },
+    {
+      "id": "chem-5-4-004",
+      "prompt": "An overall reaction is 2NO + 2H2 → N2 + 2H2O. Its measured forward rate law is k[NO]^2[H2] over a tested regime. Which conclusion best compares the overall coefficients with an elementary-step claim?",
+      "options": [
+        "The measured law must be wrong because every overall coefficient is always a rate-law exponent.",
+        "The overall equation proves that four molecules collide simultaneously in every reaction event.",
+        "The overall equation alone does not establish an elementary step; the measured law differs from the simple four-particle elementary law implied by its reactant coefficients.",
+        "The reaction is zero order in H2 because its measured exponent is smaller than its overall coefficient."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. If the entire written reaction were one simple elementary four-reactant event, its elementary law would contain [NO]^2[H2]^2, not the measured first-power H2 dependence. The overall equation therefore cannot be used as proof of that event. A and B wrongly equate net stoichiometry with elementary molecularity. D mistakes an exponent of one for zero. The data do not by themselves identify a unique alternative mechanism."
+    },
+    {
+      "id": "chem-5-4-005",
+      "prompt": "A model explicitly proposes an elementary event involving two A particles and one B particle, represented as 2A + B → P. Which statement is consistent with elementary-step kinetics and the rarity of simultaneous multiparticle encounters?",
+      "options": [
+        "The event is impossible because no elementary process can ever involve three particles.",
+        "The forward law is k[A][B], because only two different reactant names appear.",
+        "The law is k[A]^2[B]^2, because every written species must have exponent two.",
+        "The proposed law is k[A]^2[B]; such three-particle elementary events are rare rather than logically forbidden."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Counting participating particles gives two A factors and one B factor, while simultaneous three-particle events are generally uncommon. A changes 'rare' into 'impossible.' B counts species names instead of particles. C invents a second B participant. The symbolic labels denote substances, and the question evaluates the supplied elementary model rather than deriving a real mechanism from an overall equation."
+    },
+    {
+      "id": "chem-5-4-006",
+      "prompt": "An established elementary event is A + B → P. Someone rewrites its net stoichiometry as 2A + 2B → 2P and claims that the same physical event must now obey k[A]^2[B]^2. What is the best evaluation?",
+      "options": [
+        "Multiplying an equation does not turn a two-particle event into a four-particle event; the original event's concentration dependence remains proportional to [A][B].",
+        "The claim is correct because algebraic rescaling always changes the physical molecularity.",
+        "The new concentration dependence must be zero order because all coefficients share a common factor.",
+        "The product coefficient alone makes the forward step second order in P."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The doubled equation can count two copies of the original event but does not redefine its microscopic participants. A rate-convention rescaling can change a numerical constant without creating new concentration exponents. B confuses symbolic multiplication with a changed mechanism. C invents a zero-order criterion. D uses product stoichiometry as a forward reactant dependence. Elementary laws must be tied to the actual stated event, not an arbitrarily multiplied equation."
+    },
+    {
+      "id": "chem-5-4-007",
+      "prompt": "For elementary 2A → P, define the event rate as r = d[P]/dt = k[A]^2. What is the positive disappearance rate −d[A]/dt using the same k?",
+      "options": [
+        "k[A]^2",
+        "(1/2)k[A]^2",
+        "2k[A]^2",
+        "k[A]"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Each event consumes two A for each P formed, so A's disappearance rate is twice the specified event rate. A ignores that stoichiometric factor. B reverses it. D changes the elementary concentration exponent instead of applying a constant coefficient factor. If a different species-rate constant were defined, its numerical value could absorb the factor two; the prompt instead asks to keep the same k."
+    },
+    {
+      "id": "chem-5-4-008",
+      "prompt": "The forward and reverse directions of A + B ⇌ C are both specified as elementary steps. Which pair of rate laws correctly describes their separate event rates?",
+      "options": [
+        "Forward k_f[C]; reverse k_r[A][B]",
+        "Forward k_f[A][B]; reverse k_r[C]",
+        "Forward k_f[A][B][C]; reverse k_r[C]",
+        "Forward k_f([A] + [B]); reverse k_r[C]^2"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The forward event requires one A and one B, while the reverse event involves one C. A exchanges the directions. C adds C as a participant in the forward step without support. D replaces the joint reactant dependence with a sum and invents two reverse C participants. Separate forward and reverse rates are not the same as the net rate, which would be their difference. No equilibrium constant is required here."
+    },
+    {
+      "id": "chem-5-4-009",
+      "prompt": "For elementary A + B → P at fixed conditions, initial [A] is quadrupled and initial [B] is halved. What factor is predicted for the initial forward event rate?",
+      "options": [
+        "8",
+        "4",
+        "2",
+        "1/2"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The elementary law is r = k[A][B], giving a factor 4(1/2) = 2. A treats halving B as doubling it. B ignores the B decrease. D ignores the A increase. Both concentrations affect the frequency of the specified two-particle encounter, so their changes must be combined multiplicatively."
+    },
+    {
+      "id": "chem-5-4-010",
+      "prompt": "Why should a proposed single elementary step requiring two NO molecules and one Cl2 molecule to meet simultaneously receive particular scrutiny, even if its net equation is balanced?",
+      "options": [
+        "Any balanced equation automatically proves that all reactant particles collide simultaneously.",
+        "Three-particle collisions violate conservation of atoms.",
+        "Cl2 contains two atoms, so the step must actually require four separately colliding reactant particles.",
+        "A simultaneous three-particle encounter is generally much less probable than simpler encounters; balance alone is not evidence that the proposed event is elementary."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Elementary molecularity concerns the number of participating particles in an event, and simultaneous three-particle events are rare. A confuses conservation with mechanistic proof. B invents a conservation prohibition. C counts atoms inside one Cl2 molecule as separate incoming particles even though the proposed reactant is an intact Cl2 molecule. Rarity motivates testing, not declaring the event impossible without evidence."
+    },
+    {
+      "id": "chem-5-4-011",
+      "prompt": "A model specifies the elementary solution step CH3Br + OH− → CH3OH + Br−. Water is the solvent and is not a reactant participant in this stated step. At fixed solvent conditions, which forward law follows from the specified participants?",
+      "options": [
+        "rate = k[CH3Br][OH−][H2O] because every solvent molecule must be included as a reactant factor",
+        "rate = k[CH3Br][OH−]",
+        "rate = k[CH3OH][Br−]",
+        "rate = k[OH−] because a neutral reactant cannot affect a collision rate"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The stated elementary event involves one CH3Br and one OH−, so each contributes one concentration factor. A invents solvent participation from its presence alone; solvent conditions can affect k without giving water a stoichiometric role in this specified step. C uses products for the forward law. D excludes a participating neutral molecule without justification. The elementary premise and fixed medium are supplied rather than inferred from a generic overall substitution equation."
+    }
+  ]
+}

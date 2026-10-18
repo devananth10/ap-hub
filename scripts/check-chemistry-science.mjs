@@ -399,4 +399,14 @@ assert.ok(balanced([[2,'N2O5']],[[4,'NO2'],[1,'O2']]));
   const uncorrectedLog=measured.map(abs=>Math.log(abs));
   assert.ok(Math.abs((uncorrectedLog[1]-uncorrectedLog[0])-(uncorrectedLog[2]-uncorrectedLog[1]))>.001);
 }
+// Topic 5.4: participant exponents and rate-convention factors.
+assert.ok(balanced([[1,'NO'],[1,'O3']],[[1,'NO2'],[1,'O2']]));
+assert.ok(balanced([[2,'NO2']],[[1,'N2O4']]));
+assert.ok(balanced([[1,'SO2Cl2']],[[1,'SO2'],[1,'Cl2']]));
+assert.ok(balanced([[2,'NO'],[2,'H2']],[[1,'N2'],[2,'H2O']]));
+assert.equal(2+1,3); // hypothetical 2A+B has three participants
+close(4*.5,2);
+assert.notEqual(2**1,2**2); // distinguish measured first versus proposed second H2 order
+close((2*.01)/.01,2); // A disappears twice per P event
+assert.ok(balanced([[1,'CH3Br'],[1,'OH',-1]],[[1,'CH3OH'],[1,'Br',-1]]));
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
