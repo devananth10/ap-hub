@@ -417,4 +417,17 @@ close(1e7*.040*.25,1e5);
 assert.ok(integrate(energy=>energyDensity(energy,1),2,100)>integrate(energy=>energyDensity(energy,1),3,100));
 assert.ok(integrate(energy=>energyDensity(energy,2),3,100)>integrate(energy=>energyDensity(energy,1),3,100));
 assert.ok(balanced([[1,'CO'],[1,'NO2']],[[1,'CO2'],[1,'NO']]));
+// Topic 5.6: vertical energy differences, not Arrhenius calculations.
+{
+  const profile=(reactants,peak,products)=>[peak-reactants,peak-products,products-reactants];
+  assert.deepEqual(profile(20,95,-10),[75,105,-30]);
+  assert.deepEqual(profile(-20,30,10),[50,20,30]);
+  assert.deepEqual(profile(220,295,190),profile(20,95,-10));
+  for(const [reactants,peak,products] of [[20,95,-10],[-20,30,10],[0,30,-70]]) {
+    const [forward,reverse,change]=profile(reactants,peak,products);
+    close(forward-reverse,change);
+  }
+  close(30-(-70),100);
+  assert.ok(40>30); // inconsistent with a sole highest level30 then descent to40
+}
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');

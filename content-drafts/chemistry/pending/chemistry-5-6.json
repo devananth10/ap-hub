@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 5,
+  "topicId": "topic-5-6",
+  "questions": [
+    {
+      "id": "chem-5-6-001",
+      "prompt": "A single-step reaction-energy profile places reactants at 20 kJ/mol, the transition-state peak at 95 kJ/mol, and products at −10 kJ/mol on one common energy scale. Which set gives forward activation energy, reverse activation energy, and overall forward energy change, respectively?",
+      "options": [
+        "75, 105, −30 kJ/mol",
+        "95, 95, −10 kJ/mol",
+        "75, 85, +30 kJ/mol",
+        "105, 75, −30 kJ/mol"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Forward activation energy is 95 − 20 = 75 kJ/mol; reverse activation energy is 95 − (−10) = 105 kJ/mol; the forward endpoint change is −10 − 20 = −30 kJ/mol. B treats absolute plotted levels as the required energy differences. C mishandles the negative product level and reverses the endpoint-change sign. D exchanges the forward and reverse starting levels. Activation energy is measured from the relevant reactants, not from an arbitrary zero."
+    },
+    {
+      "id": "chem-5-6-002",
+      "prompt": "An elementary profile has reactant energy −20 kJ/mol, product energy +10 kJ/mol, and peak energy +30 kJ/mol. Which description is consistent with this profile?",
+      "options": [
+        "Energy-releasing forward change, with forward barrier 10 kJ/mol.",
+        "Energy-absorbing forward change, with forward barrier 30 kJ/mol.",
+        "Energy-releasing forward change, with reverse barrier 50 kJ/mol.",
+        "Energy-absorbing forward change of 30 kJ/mol, with forward barrier 50 kJ/mol."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Products lie 10 − (−20) = 30 kJ/mol above reactants, while the peak is 30 − (−20) = 50 kJ/mol above reactants. A and C reverse the endpoint energy direction. B gives the absolute peak value rather than the gap from reactants. The reverse barrier is 30 − 10 = 20 kJ/mol, not the forward barrier. The profile depicts energy, so these conclusions do not require a separate entropy or equilibrium calculation."
+    },
+    {
+      "id": "chem-5-6-003",
+      "prompt": "Two hypothetical elementary pathways share reactant level 0 kJ/mol and product level −25 kJ/mol. Path I has peak 40 kJ/mol; path II has peak 70 kJ/mol. At the same temperature, assume equal encounter and orientation factors. What comparison is supported?",
+      "options": [
+        "II must be faster because a higher peak releases more endpoint energy.",
+        "I is expected to be faster because its lower forward barrier can be crossed by a larger energetic fraction, while the endpoint energy change is the same.",
+        "The rates must be equal because the product energies are equal.",
+        "I must form a different product because its peak energy differs."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. With other kinetic factors explicitly matched, I has a smaller activation-energy requirement, so more encounters can cross it. Both pathways have endpoint change −25 kJ/mol. A confuses peak height with net released energy. C treats equal endpoint energy as equal kinetic barrier. D contradicts the supplied shared endpoints. An energy profile alone would not fix every real pathway's encounter/orientation factors; those are controlled here."
+    },
+    {
+      "id": "chem-5-6-004",
+      "prompt": "A graphing program adds 200 kJ/mol to every vertical energy value in a reaction profile, changing only the chosen zero of energy. How do forward activation energy and overall energy change respond?",
+      "options": [
+        "Both increase by 200 kJ/mol.",
+        "Activation energy increases, but overall change stays the same.",
+        "Both remain unchanged because each is a difference between two levels shifted by the same amount.",
+        "Both become zero because the energy reference was changed."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Subtracting shifted levels cancels the common offset: (E_peak + 200) − (E_reactants + 200) equals the original barrier, and the endpoint difference behaves the same way. A and B treat a reference shift as a physical change in a gap. D incorrectly erases relative energies. Only vertical differences, not the absolute zero chosen for plotting, determine these quantities."
+    },
+    {
+      "id": "chem-5-6-005",
+      "prompt": "What does the horizontal reaction-coordinate axis of an elementary energy profile represent?",
+      "options": [
+        "A collective description of the structural motions and rearrangements connecting reactants to products, rather than an elapsed-time scale.",
+        "Elapsed time, so the horizontal width of a peak directly gives reaction duration.",
+        "The number of molecules that must be present in the laboratory vessel.",
+        "Temperature, so moving right always means the sample becomes hotter."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Reaction coordinate tracks progress through molecular rearrangement along the represented pathway. B mistakes it for a kinetic time trace; width alone does not measure reaction duration. C substitutes particle inventory for structural progress. D substitutes temperature for reaction coordinate. The vertical axis gives energy along that coordinate, not how much time a sample spends at each position."
+    },
+    {
+      "id": "chem-5-6-006",
+      "prompt": "For an unchanged elementary pathway, heating increases the measured rate. Which explanation is compatible with keeping the same reactant, product, and transition-state levels on a simplified energy profile?",
+      "options": [
+        "The activation energy must fall because any faster rate requires a lower drawn peak.",
+        "The distribution changes so that a larger fraction of encounters can reach the same transition-state energy requirement.",
+        "The products must move below the reactants even if the original change was energy-absorbing.",
+        "Heating removes the need for reactants to pass through any transition-state region."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Rate can increase because the energetic population changes without changing the pathway's simplified barrier. A equates every rate increase with a barrier decrease. C invents a change in endpoint energy ordering. D removes the pathway requirement instead of explaining increased access to it. This is a qualitative temperature argument, not an Arrhenius-equation calculation or a claim that all thermodynamic levels are exactly temperature-independent in every detailed model."
+    },
+    {
+      "id": "chem-5-6-007",
+      "prompt": "For one single-peak pathway, define ΔE = E_products − E_reactants, E_a,f = E_peak − E_reactants, and E_a,r = E_peak − E_products. Which relationship follows?",
+      "options": [
+        "ΔE = E_a,f + E_a,r",
+        "ΔE = E_a,r − E_a,f",
+        "ΔE = E_a,f × E_a,r",
+        "ΔE = E_a,f − E_a,r"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Subtracting the reverse barrier from the forward barrier cancels E_peak and leaves E_products − E_reactants. A adds the barriers instead of eliminating their shared peak. B reverses the endpoint-change sign. C has squared-energy units and cannot represent an energy difference. For energy-releasing forward reactions, the forward barrier is smaller than the reverse barrier along this same pathway."
+    },
+    {
+      "id": "chem-5-6-008",
+      "prompt": "A reaction profile has reactants at 0 kJ/mol, products at −40 kJ/mol, and a peak at +50 kJ/mol. Why does the product level alone not establish that the reaction will occur rapidly at room temperature?",
+      "options": [
+        "A negative endpoint change means the forward activation energy must also be negative.",
+        "Energy-releasing reactions cannot have transition states.",
+        "The forward process still has a 50 kJ/mol barrier; favorable endpoint energy does not by itself specify how many encounters can cross it per time.",
+        "A lower-energy product can form only after all particles have exactly the peak energy."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The endpoint difference describes net energy change, whereas rate depends on access to the barrier and other kinetic factors. A confuses ΔE with activation energy. B incorrectly removes barriers from energy-releasing processes. D replaces an energy distribution with a single shared value for all particles. The profile supports a positive forward barrier, not an unconditional room-temperature speed prediction."
+    },
+    {
+      "id": "chem-5-6-009",
+      "prompt": "In a one-step energy profile, what is the most appropriate interpretation of the molecular arrangement at its single maximum?",
+      "options": [
+        "A final stable product that accumulates because it has the highest energy.",
+        "A measure of the average temperature of all molecules in the sample.",
+        "The reactant mixture before any structural rearrangement has begun.",
+        "A transition-state arrangement along the pathway, associated with the barrier between reactants and products."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The maximum corresponds to the transition-state region of the specified elementary pathway. A mistakes a barrier maximum for a stable product level. B confuses pathway potential energy with a bulk temperature measurement. C places the unmodified starting state at the peak despite the profile's separate reactant level. The diagram is a representation along a coordinate, not a claim that this maximum is an isolatable accumulated substance."
+    },
+    {
+      "id": "chem-5-6-010",
+      "prompt": "An elementary forward reaction has activation energy 30 kJ/mol and overall energy change ΔE = −70 kJ/mol. Along the same pathway, what is the reverse activation energy?",
+      "options": [
+        "40 kJ/mol",
+        "100 kJ/mol",
+        "−40 kJ/mol",
+        "70 kJ/mol"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. E_a,r = E_a,f − ΔE = 30 − (−70) = 100 kJ/mol. With reactants chosen as zero, the peak is +30 and products −70, giving the same 100 kJ/mol gap. A subtracts the magnitudes without retaining the sign. C adds the signed endpoint change to the forward barrier and gives a negative reverse barrier inconsistent with this single-peak model. D confuses the magnitude of net energy change with the full reverse climb."
+    },
+    {
+      "id": "chem-5-6-011",
+      "prompt": "A proposed simple single-peak profile places reactants at 0, the claimed highest transition-state peak at +30, and products at +40 kJ/mol. The drawing is meant to rise from reactants through that sole maximum and then descend to products. Which evaluation is correct?",
+      "options": [
+        "It is automatically valid because every activation energy can be smaller than any product level without qualification.",
+        "It becomes valid merely by increasing temperature, without changing any plotted level or the claimed shape.",
+        "The levels are inconsistent with the stated sole-maximum-then-descent shape because the products lie above the claimed highest peak.",
+        "It is invalid only because energy-absorbing reactions can never occur."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A curve descending from its highest +30 level cannot end at +40; the supplied simple peak description and numerical levels cannot all hold. A overlooks that internal graphical inconsistency. B changes the particle-energy population but does not repair the stated ordering of plotted levels. D wrongly excludes energy-absorbing reactions rather than addressing this drawing. This check concerns the explicitly claimed simple profile, not every possible barrierless or more complex pathway."
+    }
+  ]
+}
