@@ -1,5 +1,14 @@
 # PrepAtlas milestone verification
 
+## Unit 4 content checkpoint — October 18, 2026
+
+- Saved all nine Unit 4 topics as eleven-question drafts: 99 new questions. Complete-file coverage is now 330 of 1,001: eleven live in Topic 1.1 and 319 pending in 29 sets. None of the Unit 4 questions are registered in the application. The bank remains unfinished.
+- Draft structure/ID/count/distribution checks, separate documented solves, and implemented numerical/model checks passed. Atom/charge balancing now includes half-reaction electrons and controlled wrong-answer cases. Curriculum exclusions and salt-dissolution nuance are recorded in the topic QA files.
+- TypeScript, all 31 unit tests, production build, and development/production smoke suites passed. Each smoke suite checks 19 routes, compiled CSS, seven 404 cases, six fixed course-art mappings and twelve fresh home responses. Those responses showed five themes in development and seven in production.
+- Browser confirms Unit 4 has zero live questions and all nine official topic options; Topic 1.1 still shows eleven without the approval badge. Original 001–010 were re-compared to the supplied file unchanged. The original recovered archive hash and empty official catalog hash are also unchanged.
+- Temporary production server on 3100 was stopped and the user's preview on 3000 preserved, HTTP 200. The home tab is kept open. Prior mobile, navigation, notes and session checks remain recorded below; no application code changed during the Unit 4 drafting batch.
+- Next new topic is 5.1, Reaction Rates (`rates`). Full source gaps remain unavailable and must be reconciled rather than regenerated automatically. All new questions still require human scientific review and owner approval. Commits remain local under the handoff's no-push restriction.
+
 ## Unit 3 content checkpoint — October 18, 2026
 
 - Saved twenty complete unpublished sets (220 questions), including all thirteen Unit 3 topics. Topic 1.1 remains the only live bank, with eleven questions. Total complete-file coverage is 231 of the 1,001 target; the bank is unfinished. Recovered partials and unavailable earlier sets are tracked separately.
@@ -9,7 +18,7 @@
 - The official resource catalog is unchanged and empty. All 103 source-index videos remain suggestions, with provider metadata checked October 17; no playback/embed approval is inferred.
 - Detailed verification and exact next work are in [the content checkpoint](../content-drafts/chemistry/VALIDATION.md) and [progress ledger](../content-drafts/chemistry/PROGRESS.md). Git checkpoints remain local under the handoff's no-push restriction.
 
-## Current curriculum and question checkpoint — October 17, 2026
+## Earlier curriculum and question checkpoint — October 17, 2026
 
 - Topic 1.1 now has exactly eleven questions: original 001–010 preserved, plus the owner-requested independently recalculated 011. Topic 1.5 demo deleted; its workspace remains, published count zero. Owner-approval question badges removed for every question.
 - All 91 official Chemistry topics registered using verified display names. Seventeen existing topic IDs retained, 74 new mappings documented. Other course data and legacy storage remain unchanged.

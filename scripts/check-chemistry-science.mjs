@@ -210,6 +210,7 @@ const equationSide = terms => {
   const totals={charge:0};
   for(const [coefficient,formula,charge=0] of terms) {
     totals.charge+=coefficient*charge;
+    if(formula==='e') { assert.equal(charge,-1); continue; } // electron has charge, no nuclei
     for(const [element,count] of Object.entries(formulaAtoms(formula))) totals[element]=(totals[element] || 0)+coefficient*count;
   }
   return Object.fromEntries(Object.entries(totals).sort(([a],[b])=>a.localeCompare(b)));
@@ -326,4 +327,30 @@ assert.ok(conjugates('CH3NH3',1,'CH3NH2',0));
 assert.ok(!conjugates('CH3NH3',1,'CH3NH2',-1));
 assert.ok(balanced([[1,'CH3COOH'],[1,'CN',-1]],[[1,'CH3COO',-1],[1,'HCN']]));
 assert.ok(balanced([[2,'H2O']],[[1,'H3O',1],[1,'OH',-1]]));
+// Topic 4.9: acidic/basic half-reactions and canceled net equations.
+assert.ok(balanced([[1,'Fe',2]],[[1,'Fe',3],[1,'e',-1]]));
+assert.ok(!balanced([[1,'Fe',2],[1,'e',-1]],[[1,'Fe',3]]));
+assert.ok(balanced([[1,'Cr2O7',-2],[14,'H',1],[6,'e',-1]],[[2,'Cr',3],[7,'H2O']]));
+assert.ok(!balanced([[1,'Cr2O7',-2],[14,'H',1],[3,'e',-1]],[[2,'Cr',3],[7,'H2O']]));
+assert.ok(!balanced([[1,'Cr2O7',-2],[7,'H',1],[6,'e',-1]],[[2,'Cr',3],[7,'H2O']]));
+assert.ok(balanced([[1,'MnO4',-1],[8,'H',1],[5,'Fe',2]],[[1,'Mn',2],[4,'H2O'],[5,'Fe',3]]));
+assert.ok(!balanced([[1,'MnO4',-1],[8,'H',1],[1,'Fe',2]],[[1,'Mn',2],[4,'H2O'],[1,'Fe',3]]));
+assert.ok(balanced([[1,'MnO4',-1],[2,'H2O'],[3,'e',-1]],[[1,'MnO2'],[4,'OH',-1]]));
+assert.ok(!balanced([[1,'MnO4',-1],[2,'H2O'],[2,'e',-1]],[[1,'MnO2'],[4,'OH',-1]]));
+assert.ok(balanced([[1,'Zn'],[1,'Ni',2]],[[1,'Zn',2],[1,'Ni']]));
+assert.ok(balanced([[2,'I',-1]],[[1,'I2'],[2,'e',-1]]));
+assert.ok(!balanced([[1,'I',-1]],[[1,'I2'],[1,'e',-1]]));
+assert.ok(balanced([[1,'NO3',-1],[4,'H',1],[3,'e',-1]],[[1,'NO'],[2,'H2O']]));
+assert.ok(!balanced([[1,'NO3',-1],[4,'H',1],[5,'e',-1]],[[1,'NO'],[2,'H2O']]));
+assert.ok(balanced([[1,'H2O2'],[2,'H',1],[2,'I',-1]],[[1,'I2'],[2,'H2O']]));
+const gcd=(a,b)=>b ? gcd(b,a%b) : a;
+const electronLCM=3*2/gcd(3,2);
+assert.equal(electronLCM,6); assert.equal(electronLCM/3,2); assert.equal(electronLCM/2,3);
+assert.ok(balanced([[2,'Al'],[3,'Cu',2]],[[2,'Al',3],[3,'Cu']]));
+assert.ok(balanced([[1,'Cl2'],[2,'e',-1]],[[2,'Cl',-1]]));
+assert.ok(balanced([[1,'Cl2'],[4,'OH',-1]],[[2,'ClO',-1],[2,'H2O'],[2,'e',-1]]));
+assert.ok(balanced([[1,'Cl2'],[2,'OH',-1]],[[1,'Cl',-1],[1,'ClO',-1],[1,'H2O']]));
+assert.ok(balanced([[2,'H2']],[[4,'H',1],[4,'e',-1]]));
+assert.ok(balanced([[1,'O2'],[4,'H',1],[4,'e',-1]],[[2,'H2O']]));
+assert.ok(balanced([[2,'H2'],[1,'O2']],[[2,'H2O']]));
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');

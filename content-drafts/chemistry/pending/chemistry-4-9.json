@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 4,
+  "topicId": "topic-4-9",
+  "questions": [
+    {
+      "id": "chem-4-9-001",
+      "prompt": "Which balanced oxidation half-reaction represents the specified conversion of Fe^2+(aq) to Fe^3+(aq)?",
+      "options": [
+        "Fe^2+(aq) → Fe^3+(aq) + e−",
+        "Fe^2+(aq) + e− → Fe^3+(aq)",
+        "Fe^2+(aq) → Fe^3+(aq) + 2e−",
+        "Fe^2+(aq) + H+(aq) → Fe^3+(aq)"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Losing one electron raises iron's charge from +2 to +3, and the product-side charge is +3 − 1 = +2. B puts an electron on the wrong side and gives unequal charges. C loses two electrons even though the charge increases by only one unit. D introduces a hydrogen atom that disappears; matching total charge alone does not satisfy atom conservation or represent the specified electron transfer."
+    },
+    {
+      "id": "chem-4-9-002",
+      "prompt": "In acidic aqueous solution, dichromate is reduced to Cr^3+. Which half-reaction balances both atoms and charge?",
+      "options": [
+        "Cr2O7^2− + 14H+ + 3e− → 2Cr^3+ + 7H2O",
+        "Cr2O7^2− + 7H+ + 6e− → 2Cr^3+ + 7H2O",
+        "Cr2O7^2− + 14H+ → 2Cr^3+ + 7H2O + 6e−",
+        "Cr2O7^2− + 14H+ + 6e− → 2Cr^3+ + 7H2O"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Two Cr atoms become two Cr^3+, seven oxygens form seven waters, and fourteen H+ provide their hydrogen. The left charge is −2 + 14 − 6 = +6, equal to the right charge. A supplies only three electrons instead of six. B supplies seven H atoms for fourteen in the waters. C puts the electrons on the oxidation side rather than the reduction side and fails charge conservation. The acidic medium permits H+ and water as balancing species."
+    },
+    {
+      "id": "chem-4-9-003",
+      "prompt": "Combine these half-reactions in acidic solution: MnO4− + 8H+ + 5e− → Mn^2+ + 4H2O, and Fe^2+ → Fe^3+ + e−. Which net equation has the smallest whole-number coefficients and no free electrons?",
+      "options": [
+        "MnO4− + 8H+ + Fe^2+ → Mn^2+ + 4H2O + Fe^3+",
+        "5MnO4− + 40H+ + Fe^2+ → 5Mn^2+ + 20H2O + Fe^3+",
+        "MnO4− + 8H+ + 5Fe^2+ → Mn^2+ + 4H2O + 5Fe^3+",
+        "MnO4− + 5H+ + 8Fe^2+ → Mn^2+ + 4H2O + 8Fe^3+"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Multiply the iron half-reaction by five so that five electrons are produced and consumed, then cancel them. A cancels unequal electron amounts. B multiplies the wrong half-reaction, worsening the mismatch. D swaps proton and iron coefficients, failing both H and charge conservation. C has total charge −1 + 8 + 10 = +17 on the left and +2 + 15 = +17 on the right."
+    },
+    {
+      "id": "chem-4-9-004",
+      "prompt": "In basic aqueous solution, MnO4− is reduced to MnO2(s). Which balanced half-reaction uses water and hydroxide appropriately for the specified medium?",
+      "options": [
+        "MnO4− + 4H+ + 3e− → MnO2(s) + 2H2O",
+        "MnO4− + 2H2O + 3e− → MnO2(s) + 4OH−",
+        "MnO4− + 2H2O + 2e− → MnO2(s) + 4OH−",
+        "MnO4− + 3e− → MnO2(s) + 2OH−"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Both sides have one Mn, six O, four H, and charge −4. A is a balanced acidic-form half-reaction, but it is not expressed using the water/hydroxide form requested for basic medium. C has left charge −3 rather than −4. D supplies no hydrogen for the product hydroxide and does not conserve oxygen. An acidic intermediate can be converted by adding OH− to both sides and canceling the resulting waters."
+    },
+    {
+      "id": "chem-4-9-005",
+      "prompt": "Given Zn(s) → Zn^2+(aq) + 2e− and Ni^2+(aq) + 2e− → Ni(s), which is the combined net reaction in its smallest whole-number ratio?",
+      "options": [
+        "Zn(s) + Ni^2+(aq) + 2e− → Zn^2+(aq) + Ni(s)",
+        "Zn(s) + Ni(s) → Zn^2+(aq) + Ni^2+(aq)",
+        "2Zn(s) + Ni^2+(aq) → 2Zn^2+(aq) + Ni(s)",
+        "Zn(s) + Ni^2+(aq) → Zn^2+(aq) + Ni(s)"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The two electrons on opposite sides cancel directly, leaving one zinc atom reacting with one nickel ion. A leaves electrons as a net reactant despite equal production and consumption. B reverses the nickel reduction into another oxidation, so the half-reactions no longer exchange electrons with each other. C unnecessarily doubles zinc and fails charge conservation. No multiplication is needed when the electron coefficients already match."
+    },
+    {
+      "id": "chem-4-9-006",
+      "prompt": "Which half-reaction correctly represents oxidation of iodide ions to I2 with both iodine atoms and charge balanced?",
+      "options": [
+        "2I− → I2 + 2e−",
+        "I− → I2 + e−",
+        "2I− + 2e− → I2",
+        "I2 → 2I− + 2e−"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Two iodides provide the two atoms in I2 and lose two electrons in total; each side has net charge −2. B supplies only one iodine atom for a two-atom product, so it does not conserve iodine. C puts electrons on the wrong side for oxidation and gives unequal charge. D places iodine on the reactant side while also emitting electrons, which does not represent the specified conversion and is not charge-balanced. A half-reaction must satisfy both the intended species change and conservation."
+    },
+    {
+      "id": "chem-4-9-007",
+      "prompt": "Nitrate is reduced to NO in acidic aqueous solution. After balancing N and O, the skeleton is NO3− + H+ + e− → NO + 2H2O. What coefficients for H+ and e− complete the smallest whole-number half-reaction?",
+      "options": [
+        "2 H+ and 1 e−",
+        "4 H+ and 3 e−",
+        "4 H+ and 5 e−",
+        "2 H+ and 3 e−"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Two waters require four H+, and charge balance then requires three electrons: −1 + 4 − 3 = 0, matching neutral products. A and D supply only two hydrogen atoms for four in the products. C balances H but gives total reactant charge −2. Nitrogen decreases from +5 in nitrate to +2 in NO, independently confirming the gain of three electrons. The skeleton's unnumbered H+ and e− are balancing placeholders, not already fixed coefficients of one."
+    },
+    {
+      "id": "chem-4-9-008",
+      "prompt": "Combine H2O2 + 2H+ + 2e− → 2H2O with 2I− → I2 + 2e− in acidic solution. Which net equation follows after electron cancellation?",
+      "options": [
+        "H2O2 + 2I− → I2 + 2H2O",
+        "H2O2 + 2H+ + I− → I2 + 2H2O",
+        "H2O2 + 2H+ + 2I− → I2 + 2H2O",
+        "H2O2 + 2I− → I2 + 2H2O + 2H+"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The electron coefficients already match, so the electrons cancel while the two H+ remain as net reactants. A incorrectly deletes the required protons and fails H and charge conservation. B supplies only one iodine atom for I2 and has net positive reactant charge. D puts the protons on the wrong side and also fails H and charge conservation. Cancel only identical species appearing in equal amounts on opposite sides."
+    },
+    {
+      "id": "chem-4-9-009",
+      "prompt": "Aluminum oxidation releases three electrons per Al atom; Cu^2+ reduction consumes two electrons per Cu atom formed. What smallest whole-number pair of amounts can be combined with no electrons left in the net reaction?",
+      "options": [
+        "1 Al atom oxidized and 1 Cu^2+ reduced",
+        "3 Al atoms oxidized and 2 Cu^2+ reduced",
+        "2 Al atoms oxidized and 2 Cu^2+ reduced",
+        "2 Al atoms oxidized and 3 Cu^2+ reduced"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The least common electron count is six, obtained from two aluminum oxidations and three copper reductions. A gives three electrons lost but two gained. B gives nine lost but four gained. C gives six lost but four gained. The resulting net equation is 2Al + 3Cu^2+ → 2Al^3+ + 3Cu, which conserves atoms and total charge +6. Matching electron counts sets the coefficient ratio; swapping the electron counts directly gives the wrong result."
+    },
+    {
+      "id": "chem-4-9-010",
+      "prompt": "In basic solution, add the half-reactions Cl2 + 2e− → 2Cl− and Cl2 + 4OH− → 2ClO− + 2H2O + 2e−. Which final net equation has the smallest whole-number coefficients?",
+      "options": [
+        "2Cl2 + 4OH− → 2Cl− + 2ClO− + 2H2O",
+        "Cl2 + 2OH− → Cl− + ClO− + H2O",
+        "Cl2 + OH− → Cl− + ClO− + H2O",
+        "Cl2 + 2OH− + 2e− → Cl− + ClO− + H2O"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Adding the given halves cancels two electrons and first gives A. Dividing every remaining coefficient by two gives B, with charge −2 and two Cl atoms on each side. A is balanced but not the requested smallest ratio. C fails O, H, and charge conservation. D retains electrons after they should cancel and has unequal charge. An electron-balanced sum may still need a final common-factor reduction."
+    },
+    {
+      "id": "chem-4-9-011",
+      "prompt": "A student combines 2H2 → 4H+ + 4e− with O2 + 4H+ + 4e− → 2H2O, then writes 2H2 + O2 + 4H+ → 2H2O + 4H+. Which correction gives the simplified net reaction and the correct conclusion about protons?",
+      "options": [
+        "Keep H+ only on the left; four protons are consumed net.",
+        "Keep H+ only on the right; four protons are produced net.",
+        "Cancel the four H+ on both sides, giving 2H2 + O2 → 2H2O with no net H+ consumption or production.",
+        "Cancel O2 instead of H+ because oxygen also appears inside water."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. After electron cancellation, the same four H+ occur on opposite sides and also cancel. A and B delete only one occurrence of a spectator balancing species, violating the summed equation. D cancels atoms embedded in different chemical species rather than identical species. H+ can appear in individual acidic half-reactions without being consumed or produced in the final net reaction. This bookkeeping does not establish a kinetic mechanism for hydrogen combustion."
+    }
+  ]
+}
