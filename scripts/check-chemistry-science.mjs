@@ -531,4 +531,17 @@ close(100*300/1000/.750,40);
 close((10/20)*30,15); close((10/40)*30,7.50);
 close(-40.7+18*4.184*(25-100)/1000,-46.3484);
 close(.500*6.00+.500*(-6.00),0);
+// Topic 6.6: reaction-as-written extents and explicit per-species bases.
+close(.500/2*(-572),-143);
+close(.300/2*(-92.0),-13.8);
+close(10.0/100.0*178,17.8);
+close(45.0/90.0,.500);
+close(Math.min(.300/2,.300/3)*(-1400),-140);
+close(-1.25/.0250,-50.0);
+close(.100*56.0*1000/(100*4),14.0);
+close(-286-(-242),-44);
+close(.400*.600/2*(-100),-12.0);
+close(-80/2,-40);
+assert.ok(balanced([[2,'H2'],[1,'O2']],[[2,'H2O']]));
+assert.ok(balanced([[1,'N2'],[3,'H2']],[[2,'NH3']]));
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
