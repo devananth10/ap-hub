@@ -544,4 +544,18 @@ close(.400*.600/2*(-100),-12.0);
 close(-80/2,-40);
 assert.ok(balanced([[2,'H2'],[1,'O2']],[[2,'H2O']]));
 assert.ok(balanced([[1,'N2'],[3,'H2']],[[2,'NH3']]));
+// Topic 6.7: separately counted bonds, broken minus formed (gas phase).
+close(436+243-2*431,-183);
+close(945+3*436-6*391,-93);
+close(413+243-328-431,-103);
+close(4*413+243-(3*413+328+431),-103);
+close(614+436-347-2*413,-123);
+close((2*436+498+484)/4,463.5);
+close(-484+2*(-44),-572);
+close(.200*193,38.6);
+close(4*413+2*498-(2*799+4*463),-802);
+close(4*413+2*498-(799+4*463),-3); // missed CO2 bond distractor
+assert.ok(balanced([[1,'CH4'],[1,'Cl2']],[[1,'CH3Cl'],[1,'HCl']]));
+assert.ok(balanced([[1,'C2H4'],[1,'H2']],[[1,'C2H6']]));
+assert.ok(balanced([[1,'CH4'],[2,'O2']],[[1,'CO2'],[2,'H2O']]));
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
