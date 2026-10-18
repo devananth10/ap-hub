@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 4,
+  "topicId": "topic-4-2",
+  "questions": [
+    {
+      "id": "chem-4-2-001",
+      "prompt": "Aqueous BaCl2 and Na2SO4 are strong electrolytes. When mixed, they form insoluble BaSO4; NaCl remains dissolved. Which equation represents the net ionic change?",
+      "options": [
+        "BaCl2(aq) + Na2SO4(aq) → BaSO4(s) + 2NaCl(aq)",
+        "Ba^2+(aq) + SO4^2−(aq) → Ba^2+(aq) + SO4^2−(aq)",
+        "Ba^2+(aq) + SO4^2−(aq) → BaSO4(s)",
+        "Ba^2+(aq) + 2Cl−(aq) → BaCl2(s)"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The dissolved barium and sulfate ions form the specified solid, while sodium and chloride remain spectator ions. A is a balanced molecular equation for the reaction, but the question asks for the net ionic form. B leaves the barium and sulfate dissolved and represents no precipitation. D invents an insoluble chloride contrary to the stated aqueous BaCl2 and omits the observed sulfate product. C conserves one Ba, one S, four O, and zero net charge on each side."
+    },
+    {
+      "id": "chem-4-2-002",
+      "prompt": "For 2AgNO3(aq) + CaCl2(aq) → 2AgCl(s) + Ca(NO3)2(aq), all aqueous salts are strong electrolytes. Which is the balanced COMPLETE ionic equation, before spectator ions are canceled?",
+      "options": [
+        "Ag+(aq) + Cl−(aq) → AgCl(s)",
+        "2Ag+(aq) + NO3−(aq) + Ca^2+(aq) + 2Cl−(aq) → 2AgCl(s) + Ca^2+(aq) + NO3−(aq)",
+        "2Ag+(aq) + 2NO3−(aq) + Ca^2+(aq) + 2Cl−(aq) → 2Ag+(aq) + 2Cl−(aq) + Ca^2+(aq) + 2NO3−(aq)",
+        "2Ag+(aq) + 2NO3−(aq) + Ca^2+(aq) + 2Cl−(aq) → 2AgCl(s) + Ca^2+(aq) + 2NO3−(aq)"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Each dissolved salt is represented by its constituent ions with the molecular equation's multiplicities, but the precipitate remains intact. A is the reduced net ionic equation, not the requested complete ionic form. B has only one nitrate on each side, so it does not represent the quantities in the supplied molecular equation even though its own nitrate count matches across the arrow. C incorrectly dissociates the solid AgCl and therefore erases the precipitation. Complete ionic notation must represent both the specified quantities and physical states."
+    },
+    {
+      "id": "chem-4-2-003",
+      "prompt": "A dilute solution of weak acid CH3COOH is mixed with aqueous NaOH. Use the usual net ionic representation that keeps the weak acid predominantly molecular; NaOH and sodium acetate are strong electrolytes. Which equation represents neutralization?",
+      "options": [
+        "CH3COOH(aq) + OH−(aq) → CH3COO−(aq) + H2O(l)",
+        "H+(aq) + OH−(aq) → H2O(l)",
+        "CH3COOH(aq) + Na+(aq) → CH3COONa(s) + H+(aq)",
+        "CH3COOH(aq) + OH−(aq) → CH3COO−(aq) + H2(g)"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Molecular acetic acid donates a proton to hydroxide, forming dissolved acetate and water; sodium is a spectator. B treats the weak acid as a completely dissociated source of H+ and omits its conversion from CH3COOH to CH3COO− in the requested representation. C consumes spectator sodium, invents an insoluble salt, and does not describe neutralization by hydroxide. D replaces water with hydrogen gas and fails oxygen conservation. Keeping the weak electrolyte molecular here is a representation convention, not a claim that absolutely no acid is ionized initially."
+    },
+    {
+      "id": "chem-4-2-004",
+      "prompt": "A sample of Al2(SO4)3(s) dissolves completely. For this representation, neglect hydrolysis and ion pairing. Which equation correctly shows the dissolved ionic species and their proportions?",
+      "options": [
+        "Al2(SO4)3(s) → Al2^6+(aq) + 3SO4^2−(aq)",
+        "Al2(SO4)3(s) → 2Al^3+(aq) + 3SO4^2−(aq)",
+        "Al2(SO4)3(s) → 2Al^3+(aq) + SO4^2−(aq)",
+        "Al2(SO4)3(s) → 2Al^3+(aq) + 3S^2−(aq) + 12O^2−(aq)"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Each formula unit supplies two aluminum ions and three intact sulfate ions; total charge is 2(+3) + 3(−2) = 0. A invents a dissolved Al2^6+ species instead of separate Al^3+ ions. C loses two sulfate ions and gives a net positive product charge. D breaks the polyatomic sulfate into ions that are not the species produced by the stated dissolution and also fails charge conservation. Subscripts inside a polyatomic ion remain part of its formula."
+    },
+    {
+      "id": "chem-4-2-005",
+      "prompt": "Which symbolic representation describes vaporization of pure water without changing its chemical identity?",
+      "options": [
+        "H2O(l) → H2(g) + O(g)",
+        "2H2O(l) → 2H2(g) + O2(g)",
+        "H2O(l) → H2O(s)",
+        "H2O(l) → H2O(g)"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The formula remains H2O and only the state changes from liquid to gas. A describes different chemical species, even though the written atom counts match. B is a balanced decomposition into hydrogen and oxygen, not vaporization. C preserves identity but represents freezing rather than vaporization. An equation can represent a physical change; balancing alone is not enough to identify which process is represented."
+    },
+    {
+      "id": "chem-4-2-006",
+      "prompt": "Ethane undergoes complete combustion to form only carbon dioxide and water. What are the smallest whole-number coefficients, in order, for C2H6 + O2 → CO2 + H2O?",
+      "options": [
+        "2, 7, 4, 6",
+        "1, 3, 2, 3",
+        "2, 5, 4, 6",
+        "1, 7, 2, 6"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Two C2H6 units contain four C atoms and twelve H atoms, giving four CO2 and six H2O. Those products contain fourteen O atoms and therefore require seven O2. B has six O atoms on the left but seven on the right. C supplies ten O atoms instead of fourteen. D fails both hydrogen and oxygen conservation. Coefficients multiply whole formulas; changing subscripts would change the substances rather than balance this reaction."
+    },
+    {
+      "id": "chem-4-2-007",
+      "prompt": "Zinc metal reacts with Ag+(aq), forming Zn^2+(aq) and silver metal. Which net ionic equation conserves both atoms and charge?",
+      "options": [
+        "Zn(s) + Ag+(aq) → Zn^2+(aq) + Ag(s)",
+        "Zn(s) + 2Ag+(aq) → Zn^2+(aq) + Ag2(s)",
+        "Zn(s) + 2Ag+(aq) → Zn^2+(aq) + 2Ag(s)",
+        "2Zn(s) + Ag+(aq) → 2Zn^2+(aq) + Ag(s)"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. One zinc atom and two silver atoms appear on both sides, and total charge is +2 on both sides. A conserves atoms but changes net charge from +1 to +2. B replaces the specified elemental silver formula Ag(s) with an invented Ag2(s) formula instead of using a coefficient. D changes total charge from +1 to +4. Charge conservation is an additional requirement beyond counting atoms, and balancing must preserve the supplied species identities."
+    },
+    {
+      "id": "chem-4-2-008",
+      "prompt": "Dilute KNO3(aq) and NaCl(aq) are mixed. All four ions remain dissolved and unchanged; no gas, weak electrolyte, or solid forms. What is the appropriate net ionic description?",
+      "options": [
+        "K+(aq) + Cl−(aq) → KCl(s)",
+        "There is no net ionic reaction under the stated conditions; all ions cancel unchanged.",
+        "Na+(aq) + NO3−(aq) → NaNO3(s)",
+        "K+(aq) + Na+(aq) → KNa^2+(aq)"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Every ionic species appears unchanged in solution, so complete ionic bookkeeping cancels to no net chemical change. A and C invent precipitates contrary to the given conditions. D invents a new polyatomic cation despite the explicit statement that the ions remain unchanged. Exchanging cation-anion partners in a molecular bookkeeping equation does not establish that a reaction occurred in solution."
+    },
+    {
+      "id": "chem-4-2-009",
+      "prompt": "Consider the complete ionic equation Fe^2+(aq) + Ce^4+(aq) + 6NO3−(aq) → Fe^3+(aq) + Ce^3+(aq) + 6NO3−(aq). Which cancellation is valid when obtaining the net ionic equation?",
+      "options": [
+        "Cancel iron because an Fe symbol appears on both sides.",
+        "Cancel cerium because each side contains one Ce atom.",
+        "Cancel every ion because the total charge is zero on each side.",
+        "Cancel the six nitrate ions on each side, but retain the iron and cerium ions because their charges change."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Nitrate has the same formula, charge, state, and amount on both sides. Fe^2+ and Fe^3+ are different species, as are Ce^4+ and Ce^3+, so they cannot be canceled as spectators. A and B confuse conservation of an element with unchanged ionic identity. C mistakes equality of total charge for equality of every species. After nitrate cancellation, each side has total charge +6; equal nonzero total charge is valid."
+    },
+    {
+      "id": "chem-4-2-010",
+      "prompt": "Solid CaCO3 reacts with aqueous HCl to form CaCl2(aq), CO2(g), and H2O(l). Treat HCl and CaCl2 as strong electrolytes. Which net ionic equation correctly preserves the solid reactant and balances atoms and charge?",
+      "options": [
+        "CO3^2−(aq) + 2H+(aq) → CO2(g) + H2O(l)",
+        "CaCO3(s) + 2H+(aq) → Ca^2+(aq) + CO2(g) + H2O(l)",
+        "CaCO3(s) + H+(aq) → Ca^2+(aq) + CO2(g) + H2O(l)",
+        "CaCO3(s) + 2Cl−(aq) → CaCl2(aq) + CO2(g)"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Calcium carbonate remains an intact solid in the reactant notation, while chloride is a spectator. B conserves Ca, C, O, H, and net charge +2. A can describe reaction of dissolved carbonate ions, but it omits calcium and does not represent the specified solid reactant. C supplies only one hydrogen atom and has unequal charge on the two sides. D consumes spectator chloride, omits the reacting acid, and fails oxygen and charge accounting. Product identities are supplied; no solubility memorization is required."
+    },
+    {
+      "id": "chem-4-2-011",
+      "prompt": "Aqueous CaCl2 and Na3PO4 form insoluble Ca3(PO4)2; sodium and chloride remain unchanged in solution. Which equation is the net ionic equation in its smallest whole-number ratio?",
+      "options": [
+        "Ca^2+(aq) + PO4^3−(aq) → CaPO4(s)",
+        "Ca3^6+(aq) + (PO4)2^6−(aq) → Ca3(PO4)2(s)",
+        "3Ca^2+(aq) + 2PO4^3−(aq) → Ca3(PO4)2(s)",
+        "6Ca^2+(aq) + 4PO4^3−(aq) → 2Ca3(PO4)2(s)"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Three calcium ions and two phosphate ions supply the solid's formula and net charge 3(+2) + 2(−3) = 0. A changes the product identity and is not charge-balanced. B converts coefficients into invented grouped aqueous ions rather than showing the actual dissolved species. D conserves atoms and charge and describes the same reaction, but its coefficients share a factor of two and therefore do not meet the requested smallest whole-number ratio."
+    }
+  ]
+}

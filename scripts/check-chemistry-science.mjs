@@ -185,4 +185,52 @@ close(2*.5,1);
 close(220/110,2);
 assert.ok(.6/75 > .5/75); // extra apparent absorbance at fixed positive slope
 close(1/2,.5); // equal A and b, epsilonP=2 epsilonQ
+// Topic 4.2: supplied species and stoichiometric vectors, including charge.
+// Formula parsing is intentionally limited to simple formulas used below;
+// this verifies accounting, not solubility, speciation, or chemical feasibility.
+function formulaAtoms(formula) {
+  const tokens=formula.match(/[A-Z][a-z]?|\d+|[()]/g) || [];
+  assert.equal(tokens.join(''),formula);
+  let cursor=0;
+  function group(nested=false) {
+    const counts={};
+    while(cursor<tokens.length && tokens[cursor]!==')') {
+      let part;
+      if(tokens[cursor]==='(') { cursor++; part=group(true); }
+      else { assert.match(tokens[cursor],/^[A-Z][a-z]?$/); part={[tokens[cursor++]]:1}; }
+      const multiple=/^\d+$/.test(tokens[cursor] || '') ? Number(tokens[cursor++]) : 1;
+      for(const [element,count] of Object.entries(part)) counts[element]=(counts[element] || 0)+count*multiple;
+    }
+    if(nested) { assert.equal(tokens[cursor],')'); cursor++; }
+    return counts;
+  }
+  const result=group(); assert.equal(cursor,tokens.length); return result;
+}
+const equationSide = terms => {
+  const totals={charge:0};
+  for(const [coefficient,formula,charge=0] of terms) {
+    totals.charge+=coefficient*charge;
+    for(const [element,count] of Object.entries(formulaAtoms(formula))) totals[element]=(totals[element] || 0)+coefficient*count;
+  }
+  return Object.fromEntries(Object.entries(totals).sort(([a],[b])=>a.localeCompare(b)));
+};
+const balanced=(left,right)=>JSON.stringify(equationSide(left))===JSON.stringify(equationSide(right));
+assert.ok(balanced([[1,'Ba',2],[1,'SO4',-2]],[[1,'BaSO4']]));
+assert.ok(balanced([[2,'Ag',1],[2,'NO3',-1],[1,'Ca',2],[2,'Cl',-1]],[[2,'AgCl'],[1,'Ca',2],[2,'NO3',-1]]));
+assert.ok(balanced([[1,'CH3COOH'],[1,'OH',-1]],[[1,'CH3COO',-1],[1,'H2O']]));
+assert.ok(!balanced([[1,'CH3COOH'],[1,'OH',-1]],[[1,'CH3COO',-1],[1,'H2']]));
+assert.ok(balanced([[1,'Al2(SO4)3']],[[2,'Al',3],[3,'SO4',-2]]));
+assert.ok(!balanced([[1,'Al2(SO4)3']],[[2,'Al',3],[1,'SO4',-2]]));
+assert.ok(balanced([[2,'C2H6'],[7,'O2']],[[4,'CO2'],[6,'H2O']]));
+for(const [fuel,oxygen,carbonDioxide,water] of [[1,3,2,3],[2,5,4,6],[1,7,2,6]])
+  assert.ok(!balanced([[fuel,'C2H6'],[oxygen,'O2']],[[carbonDioxide,'CO2'],[water,'H2O']]));
+assert.ok(balanced([[1,'Zn'],[2,'Ag',1]],[[1,'Zn',2],[2,'Ag']]));
+assert.ok(!balanced([[1,'Zn'],[1,'Ag',1]],[[1,'Zn',2],[1,'Ag']]));
+assert.ok(!balanced([[2,'Zn'],[1,'Ag',1]],[[2,'Zn',2],[1,'Ag']]));
+assert.ok(balanced([[1,'Fe',2],[1,'Ce',4]],[[1,'Fe',3],[1,'Ce',3]]));
+assert.ok(balanced([[1,'CaCO3'],[2,'H',1]],[[1,'Ca',2],[1,'CO2'],[1,'H2O']]));
+assert.ok(!balanced([[1,'CaCO3'],[1,'H',1]],[[1,'Ca',2],[1,'CO2'],[1,'H2O']]));
+assert.ok(balanced([[3,'Ca',2],[2,'PO4',-3]],[[1,'Ca3(PO4)2']]));
+assert.ok(balanced([[6,'Ca',2],[4,'PO4',-3]],[[2,'Ca3(PO4)2']])); // valid but not primitive
+assert.equal([6,4,2].every(coefficient=>coefficient%2===0),true);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
