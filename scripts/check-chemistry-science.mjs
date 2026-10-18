@@ -140,4 +140,14 @@ const measuredPressure=.9*idealPressure(amount,temp,volume);
 const estimatedMolarMass=(trueMass*amount)*.08206*temp/(measuredPressure*volume);
 close(estimatedMolarMass/trueMass,1/.9);
 assert.ok(estimatedMolarMass>trueMass);
-console.log('Independent arithmetic/charge/Lewis/vector/distribution checks passed through Topic 3.6. Qualitative items require the separate review described in each QA document.');
+// Topic 3.7: molarity, conservation on dilution/mixing, and species counts.
+close(.150/.750,.200);
+close(.100*.250*101.1,2.5275);
+close(.400*25.0/100.0,.100);
+close((.1000*.200+.3000*.400)/.4000,.350);
+close(.100*2,.200);
+close(.200*.250*6.022,.3011); // ×10^23 molecules
+assert.ok(.050/.251 < .050/.250); // overfilling at fixed amount
+close(.0500/.200,.250);
+close((.0500*.200+.0500*.100)/.1000,.150);
+console.log('Independent arithmetic/charge/Lewis/vector/distribution checks passed through Topic 3.7. Qualitative items require the separate review described in each QA document.');
