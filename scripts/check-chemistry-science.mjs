@@ -632,4 +632,11 @@ relativeClose(Math.sqrt(4e-10),2e-5);relativeClose(4*(2e-4)**3,3.2e-11);
 relativeClose(4*(3e-4)**3,1.08e-10);relativeClose((1e-5)**2,1e-10);
 close(Math.sqrt(9e-10)*.2*100*1000,.6);relativeClose(Math.cbrt(4e-12/4),1e-4);
 assert.ok(1e-6*1e-6<1e-10);assert.ok(balanced([[1,'Mg(OH)2']],[[1,'Mg',2],[2,'OH',-1]]));
+// Topic 7.12: common-ion approximations, mixing dilution and exact small-root case.
+relativeClose(1e-10/.1,1e-9);relativeClose(4e-12/.02**2,1e-8);
+relativeClose(Math.sqrt(4e-12/(4*.01)),1e-5);
+assert.ok(1e-5/.01<.002);assert.ok((2e-4/2)**2<2e-8);
+relativeClose(1e-10/.01,1e-8);relativeClose(1e-8/.01,1e-6);
+close((1e-10/.02)/(1e-10/.01),.5);relativeClose(2e-8*(.005+2e-8),1.000004e-10);
+relativeClose(1e-4*(1e-4+1e-4),2e-8);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');

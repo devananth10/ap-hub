@@ -1,5 +1,12 @@
 # PrepAtlas milestone verification
 
+## Unit 7 content checkpoint — October 18, 2026
+
+- All twelve equilibrium topics now have eleven-question pending files (132 new questions). Total complete-file coverage is682/1,001: eleven live and671 unpublished in61 sets. Twenty-nine topics remain incomplete.
+- JSON/scope/ID/count/duplicate-prompt checks and the implemented numerical/model suite pass. Root feasibility, concentration scale in particle models, gas pressure scaling, solubility stoichiometry and common-ion approximation checks are documented separately. Human scientific review remains pending.
+- TypeScript and all31 unit tests pass again. Production build/full production smoke passed at Unit6; application code is unchanged. The first Unit7 development smoke caught a transient `Manifest file is empty` failure; the affected route recovered without a restart and the full unchanged rerun passed, with seven home themes in twelve responses. No permanent fix is claimed. Preview3000 is preserved.
+- Next8.1 (`acids`), then the remaining Units8–9 followed by earlier recovery gaps. No pending content, videos or UI features published.
+
 ## Unit 6 content checkpoint — October 18, 2026
 
 - All nine thermochemistry topics have eleven-question pending sets (99 new questions). Total complete-file coverage is 550/1,001: eleven live and 539 unpublished in49 sets. Forty-one topics remain incomplete.

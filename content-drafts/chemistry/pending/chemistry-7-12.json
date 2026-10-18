@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 7,
+  "topicId": "topic-7-12",
+  "questions": [
+    {
+      "id": "chem-7-12-001",
+      "prompt": "Which solution should dissolve less AgCl than pure water at the same temperature, assuming no complex formation and negligible activity corrections?",
+      "options": [
+        "0.010 M NaNO3",
+        "0.010 M NaCl",
+        "Pure water with twice as much excess solid AgCl",
+        "Pure water in a larger container with the same conditions"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Added Cl− is a common ion of AgCl and suppresses its dissolution. A is incorrect: it supplies neither Ag+ nor Cl− under the stated ideal model. C is incorrect: excess solid amount does not reduce saturated concentration. D is incorrect: volume changes total dissolved amount, not pure-water molar solubility."
+    },
+    {
+      "id": "chem-7-12-002",
+      "prompt": "For AX(s) ⇌ A+ + X−, Ksp=1.0×10−10. What is the approximate molar solubility in0.100 M X−, assuming dissolution adds negligible X−?",
+      "options": [
+        "1.0×10−5 M",
+        "1.0×10−11 M",
+        "0.100 M",
+        "1.0×10−9 M"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Ksp≈s(0.100), so s=1.0×10−9 M. This is negligible relative to0.100 M. A is incorrect: that is the pure-water solubility and ignores the common ion. B is incorrect: that multiplies by0.100 instead of dividing. C is incorrect: the common-ion concentration is not the amount of salt dissolved."
+    },
+    {
+      "id": "chem-7-12-003",
+      "prompt": "For MX2(s) ⇌ M2+ + 2X−, Ksp=4.0×10−12. What is the approximate molar solubility in0.0200 M X− if other reactions are negligible?",
+      "options": [
+        "1.0×10−8 M",
+        "2.0×10−4 M",
+        "2.0×10−10 M",
+        "2.0×10−8 M"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Ksp≈s(0.0200)², giving s=1.0×10−8 M; the added2s is negligible compared with0.0200. B is incorrect: that is the pure-water result and omits the common ion. C is incorrect: that uses only the first power of the common-anion concentration. D is incorrect: that incorrectly doubles the formula-unit solubility."
+    },
+    {
+      "id": "chem-7-12-004",
+      "prompt": "For MX2(s) ⇌ M2+ + 2X−, Ksp=4.0×10−12. The solvent initially contains0.0100 M M2+ and no X−. What is the approximate molar solubility?",
+      "options": [
+        "2.0×10−5 M",
+        "4.0×10−10 M",
+        "1.0×10−5 M",
+        "2.0×10−4 M"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. [M2+]≈0.0100 and [X−]=2s, so4.0×10−12≈0.0100(2s)². The result s=1.0×10−5 is only0.10% of the initial cation concentration. A is incorrect: that is the approximate anion concentration, not formula-unit solubility. B is incorrect: that omits the square-root and stoichiometric operations. D is incorrect: that is the pure-water result, ignoring the common cation."
+    },
+    {
+      "id": "chem-7-12-005",
+      "prompt": "NaCl is added to a saturated AgCl solution at fixed temperature. Under an ideal no-complexation model, which pair describes the result?",
+      "options": [
+        "Both solubility and Ksp decrease.",
+        "Solubility increases; Ksp stays unchanged.",
+        "Both solubility and Ksp increase.",
+        "AgCl molar solubility decreases; Ksp stays unchanged."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Common Cl− suppresses dissolution, while the equilibrium constant remains fixed by temperature. A is incorrect: the changed composition does not change Ksp. B is incorrect: common-ion addition favors precipitation rather than dissolution. C is incorrect: neither direction is correct for this setup."
+    },
+    {
+      "id": "chem-7-12-006",
+      "prompt": "Equal volumes of2.0×10−4 M A+ solution and2.0×10−4 M X− solution are mixed. AX has Ksp=2.0×10−8. Does precipitation occur initially under the ideal model?",
+      "options": [
+        "Yes; Qsp=4.0×10−8>Ksp.",
+        "No; after dilution Qsp=1.0×10−8<Ksp.",
+        "Yes; any mixture containing both ions must precipitate.",
+        "No; Ksp becomes zero after mixing."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Each ion is diluted to1.0×10−4 M on mixing, so their product is below the precipitation threshold. A is incorrect: that incorrectly uses the premixing concentrations. C is incorrect: the ion product must exceed Ksp. D is incorrect: mixing at unchanged temperature does not change Ksp."
+    },
+    {
+      "id": "chem-7-12-007",
+      "prompt": "A solution initially has0.010 M A+ and0.010 M B+. Salts AX and BX have Ksp values1.0×10−10 and1.0×10−8. X− is added slowly at essentially constant volume. Which salt begins precipitating first?",
+      "options": [
+        "BX, at1.0×10−6 M X−, before AX forms.",
+        "Both necessarily begin at the same X− concentration.",
+        "AX, at an X− concentration of approximately1.0×10−8 M.",
+        "AX, only after X− reaches1.0×10−2 M."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The threshold is Ksp/[cation]: AX reaches saturation at10−8 M X−, whereas BX requires10−6 M. A is incorrect: AX has already reached its lower threshold. B is incorrect: their thresholds differ by a factor100. D is incorrect: the initial cation concentration is not the threshold for the anion."
+    },
+    {
+      "id": "chem-7-12-008",
+      "prompt": "A saturated AX solution contains excess solid and a much larger common-ion concentration of X− than that from dissolution. It is diluted tenfold with water at unchanged temperature, with solid still remaining. Relative to the original solution, what is expected for equilibrium dissolved [A+]?",
+      "options": [
+        "It increases as the common-ion concentration falls.",
+        "It decreases because dilution must lower every final saturated concentration.",
+        "It is forced to zero.",
+        "Ksp increases tenfold to compensate."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. With Ksp fixed and X− still dominating, [A+]≈Ksp/[X−]; reducing common X− allows greater dissolution. B is incorrect: solid can dissolve during re-equilibration. C is incorrect: lowering the common ion favors dissolution, not complete removal of A+. D is incorrect: the equilibrium constant does not change with dilution."
+    },
+    {
+      "id": "chem-7-12-009",
+      "prompt": "Under ideal no-complexation assumptions, AgCl is equilibrated separately with0.010 M NaCl and0.010 M CaCl2. Common Cl− dominates in both. How does its molar solubility in the CaCl2 solution compare with that in NaCl?",
+      "options": [
+        "Approximately twice as large.",
+        "Exactly the same because both salt formulas are0.010 M.",
+        "Approximately one-half as large.",
+        "Approximately one-quarter as large because Cl− is squared."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. CaCl2 supplies0.020 M Cl−, twice the chloride from NaCl; s≈Ksp/[Cl−] is therefore halved. A is incorrect: more common chloride suppresses, rather than increases, dissolution. B is incorrect: the chloride stoichiometry differs. D is incorrect: AgCl has one chloride in its Ksp expression, not two."
+    },
+    {
+      "id": "chem-7-12-010",
+      "prompt": "AX dissolves in a solution initially containing0.00500 M X−. The measured molar solubility is2.00×10−8 M. What is the approximate Ksp if no other source of A+ exists?",
+      "options": [
+        "4.00×10−16",
+        "4.00×10−6",
+        "0.00500",
+        "1.00×10−10"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. [A+]=2.00×10−8 M and [X−]≈0.00500 M, giving their product1.00×10−10. The small added X− changes only negligible later digits. A is incorrect: that uses s² and ignores the initial common ion. B is incorrect: that divides the concentrations instead of multiplying. C is incorrect: that uses only the common-ion concentration."
+    },
+    {
+      "id": "chem-7-12-011",
+      "prompt": "For AX(s) ⇌ A+ + X−, Ksp=2.00×10−8. Initially [X−]=1.00×10−4 M and [A+]=0. Here added X− from dissolution cannot be neglected. What is the molar solubility?",
+      "options": [
+        "2.00×10−4 M",
+        "1.00×10−4 M",
+        "1.41×10−4 M",
+        "2.00×10−8 M"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The exact relation is s(1.00×10−4+s)=2.00×10−8; s=1.00×10−4 M satisfies it. A is incorrect: that neglects s in the anion concentration even though it is comparable with the initial amount. C is incorrect: that is the pure-water square-root estimate and ignores initial X−. D is incorrect: that equates solubility to the product constant."
+    }
+  ]
+}
