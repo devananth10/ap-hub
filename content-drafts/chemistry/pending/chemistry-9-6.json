@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 9,
+  "topicId": "topic-9-6",
+  "questions": [
+    {
+      "id": "chem-9-6-001",
+      "prompt": "A salt dissolves readily while the insulated solution becomes cooler. How can dissolution still be thermodynamically favorable under the conditions?",
+      "options": [
+        "Every favorable dissolution must release heat",
+        "Cooling proves no ions entered solution",
+        "The salt must have a negative absolute entropy",
+        "A favorable entropy contribution can outweigh the positive enthalpy change."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Endothermic dissolution can be favorable when−TΔS is sufficiently negative. A is incorrect: enthalpy alone does not determine free-energy favorability. B is incorrect: temperature decrease is compatible with endothermic dissolution. C is incorrect: the relevant quantity is the net entropy change, not a required negative absolute value."
+    },
+    {
+      "id": "chem-9-6-002",
+      "prompt": "What is the enthalpic effect of separating oppositely charged ions from their attractive crystal lattice, considered as one step of a dissolution model?",
+      "options": [
+        "Energy is necessarily released in this separation step",
+        "Energy is required, giving a positive contribution.",
+        "It has no energy cost because the crystal is electrically neutral overall",
+        "It is identical to forming ion-water attractions"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Overcoming attractive ion-ion interactions costs energy. A is incorrect: breaking attractive interactions requires input. C is incorrect: net neutrality does not remove strong local attractions. D is incorrect: lattice separation and hydration are distinct model steps."
+    },
+    {
+      "id": "chem-9-6-003",
+      "prompt": "When separated ions form attractive interactions with surrounding polar water molecules, what is the usual enthalpic contribution of that interaction-formation step?",
+      "options": [
+        "Positive solely because the ions are charged",
+        "Exactly zero for every ion",
+        "Negative, because forming favorable ion-water attractions releases energy.",
+        "It must equal the entire dissolution enthalpy"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Hydration can offset the energy cost of separating lattice and solvent interactions. A is incorrect: charge supports attractive hydration rather than determining a positive formation cost. B is incorrect: different ions have substantial, different hydration energies. D is incorrect: other steps also contribute."
+    },
+    {
+      "id": "chem-9-6-004",
+      "prompt": "Why can solvent reorganization oppose the entropy gain from dispersing a salt into ions?",
+      "options": [
+        "Water molecules can become more constrained in hydration arrangements around ions.",
+        "All water molecules disappear chemically on contact with salt",
+        "Dissolved ions cannot move",
+        "Entropy counts only solute particles and excludes solvent"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Local solvent ordering can contribute negatively to entropy even while solute particles disperse. B is incorrect: hydration does not consume all solvent. C is incorrect: hydrated ions still move. D is incorrect: the total solution change includes solvent arrangements."
+    },
+    {
+      "id": "chem-9-6-005",
+      "prompt": "A student claims every ionic dissolution must have positive ΔS because the number of separated ions increases. What correction is needed?",
+      "options": [
+        "Every dissolution must instead have negative ΔS",
+        "Include both solute dispersal and solvent reorganization before assigning the net sign.",
+        "Ion count directly gives the exact entropy change in joules per kelvin",
+        "Only the crystal color determines ΔS"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Competing contributions can make total entropy change smaller or even negative. A is incorrect: that is another unjustified universal claim. C is incorrect: molecular arrangements and solvent effects require more information. D is incorrect: color is not a general entropy measure."
+    },
+    {
+      "id": "chem-9-6-006",
+      "prompt": "At298 K, a specified dissolution has ΔH°=+15.0 kJ/mol and ΔS°=+80.0 J mol−1 K−1. What is ΔG°?",
+      "options": [
+        "+38.84 kJ/mol",
+        "+15.0 kJ/mol",
+        "−23825 kJ/mol",
+        "−8.84 kJ/mol"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. 15.0−298(0.0800)=−8.84; the favorable entropy term outweighs endothermic enthalpy. A is incorrect: that adds TΔS rather than subtracting it. B is incorrect: that ignores entropy. C is incorrect: that combines joules and kilojoules without conversion."
+    },
+    {
+      "id": "chem-9-6-007",
+      "prompt": "A dissolution model gives ΔH°=−25.0 kJ/mol and ΔS°=−120 J mol−1 K−1 at298 K. Which result shows why exothermicity alone is insufficient?",
+      "options": [
+        "ΔG°=+10.8 kJ/mol, because the entropy penalty outweighs heat release.",
+        "ΔG°=−60.8 kJ/mol",
+        "ΔG° must be negative whenever ΔH° is negative",
+        "ΔG°=0 for all dissolutions"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. −25.0−298(−0.120)=+10.76 kJ/mol under standard conditions. B is incorrect: that adds the signed entropy term rather than subtracting it. C is incorrect: the entropy term can oppose it. D is incorrect: dissolution free energies depend on the substance and conditions."
+    },
+    {
+      "id": "chem-9-6-008",
+      "prompt": "A simplified enthalpy ledger for dissolution lists lattice separation+700 kJ/mol, solvent rearrangement+20 kJ/mol, and ion-solvent interaction formation−725 kJ/mol. What is the net dissolution enthalpy?",
+      "options": [
+        "+1445 kJ/mol",
+        "−725 kJ/mol",
+        "−5 kJ/mol",
+        "+25 kJ/mol"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Adding all stated contributions gives700+20−725=−5. A is incorrect: that treats the favorable negative interaction term as positive. B is incorrect: that omits both positive contributions. D is incorrect: that reverses the sign of the lattice-plus-hydration subtotal and omits the +20 solvent term."
+    },
+    {
+      "id": "chem-9-6-009",
+      "prompt": "Why is a large lattice-separation energy alone insufficient to rank the solubility of two salts?",
+      "options": [
+        "Hydration, solvent reorganization and entropy contributions can differ and offset the lattice cost.",
+        "Lattice energy has no physical effect at all",
+        "Both salts must have identical ion-water interactions",
+        "The salt with the larger formula mass is always more soluble"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Overall free energy depends on the combined contributions, not one isolated model step. B is incorrect: it contributes, but is not the whole balance. C is incorrect: different ions can interact differently with solvent. D is incorrect: formula mass alone does not determine the free-energy balance."
+    },
+    {
+      "id": "chem-9-6-010",
+      "prompt": "A dissolving salt produces a substantial temperature decrease. What further thermodynamic information is needed to judge standard favorability from ΔH°−TΔS°?",
+      "options": [
+        "Only the size of the stirring rod",
+        "The entropy change and the absolute temperature.",
+        "Only whether individual ions have positive or negative charge",
+        "No further information; cooling proves the standard process is unfavorable"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Knowing only endothermic enthalpy does not establish the sign of the free-energy change. A is incorrect: it does not supply the missing entropy term. C is incorrect: charge signs alone do not give total entropy change. D is incorrect: an entropy-driven dissolution can be favorable."
+    },
+    {
+      "id": "chem-9-6-011",
+      "prompt": "Stirring makes a salt reach its saturated concentration faster at the same controlled temperature. What conclusion is justified?",
+      "options": [
+        "Ksp must increase in proportion to stirring speed",
+        "The hydration enthalpy must become zero",
+        "All salts become infinitely soluble if stirred long enough",
+        "The approach rate increased; equilibrium solubility need not change."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Mixing improves transport but does not itself change the fixed-temperature dissolution free-energy balance. A is incorrect: transport rate is not an equilibrium constant. B is incorrect: stirring does not erase ion-water interaction energies. C is incorrect: finite equilibrium solubility remains a thermodynamic constraint."
+    }
+  ]
+}

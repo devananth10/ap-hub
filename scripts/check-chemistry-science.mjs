@@ -697,4 +697,6 @@ assert.ok(Math.abs(Math.exp(5.71/2.48)-10)<.02);
 assert.ok(Math.abs(Math.exp(-20000/(8.314*300))-3.3e-4)<1e-6);
 close(Math.exp(-.01),.9900498337491681);close(Math.log(1000)/Math.log(10),3);
 close(12471/(8.314*300),5);close(Math.exp(5),148.4131591025766);
+// Topic 9.6: all supplied dissolution contributions retained.
+close(15-298*.080,-8.84);close(-25-298*(-.120),10.76);close(700+20-725,-5);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
