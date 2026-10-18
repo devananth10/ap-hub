@@ -474,4 +474,20 @@ assert.ok(balanced([[1,'NOCl2'],[1,'NO']],[[2,'NOCl']]));
   assert.ok(balanced([[2,'NO']],[[1,'N2O2']]));
   assert.ok(balanced([[1,'N2O2'],[1,'O2']],[[2,'NO2']]));
 }
+// Topic 5.10: interleaved minimum/maximum levels, local direction and endpoints.
+{
+  const forwardBarriers=levels=>levels.filter((_,i)=>i%2===1).map((peak,i)=>peak-levels[2*i]);
+  const reverseBarriers=levels=>levels.filter((_,i)=>i%2===1).map((peak,i)=>peak-levels[2*i+2]).reverse();
+  assert.deepEqual(forwardBarriers([10,70,-20,40,0]),[60,60]);
+  assert.deepEqual(forwardBarriers([5,45,15,75,25,55,-5]),[40,60,30]);
+  assert.deepEqual(reverseBarriers([5,45,15,75,25,55,-5]),[60,50,30]);
+  close(25+(-60),-35);
+  assert.deepEqual(reverseBarriers([0,40,-20,30,-50]),[80,60]);
+  assert.deepEqual(forwardBarriers([0,60,20,90,-10]),[60,70]);
+  assert.deepEqual(forwardBarriers([0,60,10,90,-10]),[60,80]);
+  const intermediate=0-10, secondPeak=intermediate+30, product=intermediate+20;
+  assert.deepEqual([0+50,intermediate,secondPeak,product],[50,-10,20,10]);
+  assert.ok(40>30); // proposed intermediate above its preceding claimed maximum
+  assert.deepEqual(forwardBarriers([0,45,5,40,-30]),[45,35]);
+}
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');

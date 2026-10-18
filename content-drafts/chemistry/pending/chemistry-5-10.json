@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 5,
+  "topicId": "topic-5-10",
+  "questions": [
+    {
+      "id": "chem-5-10-001",
+      "prompt": "Along a proposed reaction coordinate, energy rises from reactants to a maximum, falls to an internal minimum, rises to a second maximum, then falls to products. How many elementary steps and internal intermediates does this simple profile represent?",
+      "options": [
+        "One step and two intermediates.",
+        "Two steps and one intermediate.",
+        "Three steps and two intermediates.",
+        "Two steps and two intermediates."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Each of the two barrier maxima corresponds to a transition-state region for one elementary step, and the internal minimum between them represents one intermediate. A counts the entire net conversion as one elementary event and mistakes maxima for intermediates. C counts the intermediate as an extra step. D counts both maxima or an endpoint as intermediates. Reactants and final products are endpoint species, not additional internal intermediates."
+    },
+    {
+      "id": "chem-5-10-002",
+      "prompt": "A two-step profile has reactants at 10 kJ/mol, first peak at 70, intermediate at −20, second peak at 40, and products at 0. What are the forward activation energies of steps 1 and 2?",
+      "options": [
+        "70 and 40 kJ/mol",
+        "60 and 30 kJ/mol",
+        "60 and 60 kJ/mol",
+        "90 and 40 kJ/mol"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Step 1 climbs from 10 to 70, a 60 kJ/mol barrier. Step 2 climbs from −20 to 40, also 60 kJ/mol. A uses absolute peak levels. B measures the second peak from the original reactants rather than its preceding intermediate. D measures the first peak from the intermediate on its other side and uses an absolute second peak. Different peak heights on the same reference scale need not mean different local forward barriers."
+    },
+    {
+      "id": "chem-5-10-003",
+      "prompt": "A three-step profile has successive levels R = 5, TS1 = 45, I1 = 15, TS2 = 75, I2 = 25, TS3 = 55, P = −5, all in kJ/mol. Which ordered list gives the three local forward activation energies?",
+      "options": [
+        "40, 60, 30 kJ/mol",
+        "45, 75, 55 kJ/mol",
+        "40, 70, 50 kJ/mol",
+        "30, 50, 60 kJ/mol"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Subtract each preceding minimum from its next peak: 45 − 5 = 40, 75 − 15 = 60, and 55 − 25 = 30 kJ/mol. B uses absolute peak levels. C measures every peak from the original reactant level. D uses the gaps from each peak to the following minimum, which are local reverse rather than forward barriers. A multistep profile requires identifying the starting well for each elementary direction."
+    },
+    {
+      "id": "chem-5-10-004",
+      "prompt": "For a two-step pathway R → I → P, the first elementary energy change is +25 kJ/mol and the second is −60 kJ/mol, measured for the same completed pathway amount. What is the overall R-to-P energy change?",
+      "options": [
+        "+85 kJ/mol",
+        "−85 kJ/mol",
+        "+35 kJ/mol",
+        "−35 kJ/mol"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The intermediate level cancels when step changes add, giving +25 + (−60) = −35 kJ/mol. A adds magnitudes and assigns a positive sign. B adds magnitudes and assigns a negative sign. C reverses the final sign after subtraction. Peak energies are not needed to determine this endpoint difference, and activation barriers must not be added as if they were net energy changes."
+    },
+    {
+      "id": "chem-5-10-005",
+      "prompt": "A two-step profile has R = 0, TS1 = 40, I = −20, TS2 = 30, and P = −50 kJ/mol. Starting from P and moving backward toward I, what activation energy is required for the first reverse elementary step?",
+      "options": [
+        "50 kJ/mol",
+        "80 kJ/mol",
+        "30 kJ/mol",
+        "90 kJ/mol"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The first reverse event starts at P = −50 and crosses TS2 = +30, giving 30 − (−50) = 80 kJ/mol. A gives the corresponding forward I-to-TS2 barrier, 30 − (−20). C uses the absolute TS2 level. D uses TS1, which is not the first peak encountered in the reverse direction. Reverse traversal changes the relevant starting well and reverses the order of steps."
+    },
+    {
+      "id": "chem-5-10-006",
+      "prompt": "In a multistep energy profile, what distinguishes an internal valley from either neighboring maximum?",
+      "options": [
+        "The valley is a transition-state maximum, while both neighboring peaks are stable intermediates.",
+        "The valley must be the final product because its energy is locally low.",
+        "The valley represents an intermediate state between steps, while the maxima represent transition-state regions separating the states.",
+        "The valley shows that no atoms are present until the next step begins."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. An internal minimum can represent a reaction intermediate, separated from adjacent states by barriers. A reverses minima and maxima. B mistakes a local minimum for the final endpoint despite the remaining steps. D treats a lower-energy molecular arrangement as absence of matter. An intermediate need not be lower than the original reactants or accumulate in a large measured quantity merely because it is a local minimum."
+    },
+    {
+      "id": "chem-5-10-007",
+      "prompt": "A two-step profile has fixed R = 0, TS1 = 60, TS2 = 90, and P = −10 kJ/mol. A model revision lowers only the intermediate from 20 to 10 kJ/mol, leaving both peaks and endpoints fixed. How does this affect step 2's forward barrier and the overall energy change?",
+      "options": [
+        "Step 2's barrier falls by 10 kJ/mol; the overall change becomes 10 kJ/mol more negative.",
+        "Step 2's barrier is unchanged because TS2 stays at 90 kJ/mol.",
+        "Step 2's barrier rises by 10 kJ/mol; the overall change rises by 10 kJ/mol.",
+        "Step 2's barrier rises from 70 to 80 kJ/mol; the overall change remains −10 kJ/mol."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The climb from the intermediate to TS2 changes from 90 − 20 = 70 to 90 − 10 = 80 kJ/mol, while P − R remains −10. A reverses the barrier effect and changes fixed endpoints. B uses absolute peak height rather than a gap. C obtains the local barrier direction but incorrectly changes the endpoint difference. Stabilizing an intermediate can increase the next local escape barrier even if the peak itself does not move."
+    },
+    {
+      "id": "chem-5-10-008",
+      "prompt": "Take R as 0 kJ/mol. Step 1 has forward activation energy 50 kJ/mol and energy change −10 kJ/mol. Step 2 has forward activation energy 30 kJ/mol and energy change +20 kJ/mol. Which levels correctly reconstruct TS1, I, TS2, and P in order?",
+      "options": [
+        "+50, −10, +20, +10 kJ/mol",
+        "+50, −10, +30, +20 kJ/mol",
+        "+50, +10, +40, +30 kJ/mol",
+        "+50, −10, +80, −30 kJ/mol"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. I lies 10 below R, so TS2 is −10 + 30 = +20 and P is −10 + 20 = +10. TS1 is 0 + 50 = +50. B treats second-step gaps as absolute levels. C reverses the first-step energy-change sign. D adds the two activation energies to locate TS2 and miscombines endpoint changes. Reconstructing each level from its preceding state keeps local and global energies distinct."
+    },
+    {
+      "id": "chem-5-10-009",
+      "prompt": "A drawing is described as rising from R = 0 to a first maximum at 30, descending to an intermediate at 40, rising to a second maximum at 70, then descending to P = 10 kJ/mol. Which feature is internally inconsistent with that described shape?",
+      "options": [
+        "Products lie above reactants, which is forbidden for every reaction.",
+        "There are two maxima, which is forbidden for every mechanism.",
+        "The stated intermediate at 40 lies above the preceding maximum at 30, so it cannot be reached by the claimed descent from that maximum.",
+        "The second maximum is higher than the first, which is forbidden for consecutive steps."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A valley reached by descending from a local maximum must lie below that adjacent maximum, contrary to 40 > 30. A falsely excludes energy-absorbing net changes. B falsely excludes multistep reactions. D invents a requirement that consecutive peaks decrease in absolute height. The problem checks consistency of a specified drawing, not a universal ranking of reactants, intermediates and products."
+    },
+    {
+      "id": "chem-5-10-010",
+      "prompt": "Which claim about a multistep energy profile is justified without additional kinetic measurements or parameters?",
+      "options": [
+        "The widest drawn intermediate valley necessarily has the longest lifetime in seconds.",
+        "The highest absolute peak necessarily has the largest local forward barrier, regardless of the preceding minimum.",
+        "Adding more elementary steps necessarily makes the reaction faster.",
+        "An internal minimum identifies a proposed intermediate, but the drawing alone does not give its clock-time lifetime or prove substantial accumulation."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The profile provides relative pathway energies and structural states, not a calibrated time axis or a full kinetic population model. A mistakes coordinate width for time. B ignores differences in starting-well energy. C substitutes step count for barrier and kinetic information. Determining overall control or intermediate accumulation can require concentration, prefactor, reversibility and timescale information beyond the drawing."
+    },
+    {
+      "id": "chem-5-10-011",
+      "prompt": "Two pathways share R = 0 and P = −30 kJ/mol. Path X has one peak at 100. Path Y has peaks at 45 and 40 with an intermediate at 5 kJ/mol. Which comparison describes their energies without claiming a rate from the profile alone?",
+      "options": [
+        "Path Y releases 45 kJ/mol because its first peak is at 45.",
+        "Path Y has local forward barriers 45 and 35 kJ/mol, while both pathways have overall change −30 kJ/mol.",
+        "Path Y must have a different overall energy change because it has more steps.",
+        "Path Y's final product is the intermediate at 5 kJ/mol rather than the stated P."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Y's barriers are 45 − 0 = 45 and 40 − 5 = 35, and each path's endpoint difference is −30 − 0 = −30 kJ/mol. A confuses a barrier level with net released energy. C assumes changing the path changes fixed endpoints. D replaces the final product with an internal state. The lower local barriers are an energetic comparison; predicting a complete measured rate additionally requires appropriate kinetic assumptions."
+    }
+  ]
+}
