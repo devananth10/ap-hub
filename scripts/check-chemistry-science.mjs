@@ -131,4 +131,13 @@ for(const temp of [1,2]) {
 }
 assert.ok(integrate(energy=>energyDensity(energy,2),3,100)>integrate(energy=>energyDensity(energy,1),3,100));
 close((2+(-2))/2,0); close((2**2+(-2)**2)/2,4);
-console.log('Independent arithmetic/charge/Lewis/vector/distribution checks passed through Topic 3.5. Topics 3.2/3.3 are qualitative; see per-topic QA for their checks and limitations.');
+// Topic 3.6: distinguish a volume-input error from intrinsic nonideality,
+// and check molar-mass error direction for a sub-ideal measured pressure.
+const idealPressure = (amount,temp,volume) => amount*.08206*temp/volume;
+assert.ok(idealPressure(1,300,1.6)>idealPressure(1,300,2));
+const trueMass = 40, amount = .100, temp = 300, volume = 2;
+const measuredPressure=.9*idealPressure(amount,temp,volume);
+const estimatedMolarMass=(trueMass*amount)*.08206*temp/(measuredPressure*volume);
+close(estimatedMolarMass/trueMass,1/.9);
+assert.ok(estimatedMolarMass>trueMass);
+console.log('Independent arithmetic/charge/Lewis/vector/distribution checks passed through Topic 3.6. Qualitative items require the separate review described in each QA document.');
