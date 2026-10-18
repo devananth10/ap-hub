@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 2,
+  "topicId": "topic-2-6",
+  "questions": [
+    {
+      "id": "chem-2-6-001",
+      "prompt": "The two usual Lewis resonance contributors for O3 place a single O–O bond on opposite sides of the central oxygen. Measurements show that the two O–O bonds in one ozone molecule have equal lengths. Which interpretation is consistent with these observations?",
+      "options": [
+        "The molecule rapidly switches between one long bond and one short bond, and the measurement proves that each bond is always either purely single or purely double.",
+        "The actual electron distribution is delocalized; neither individual contributor alone describes the two equivalent bonds.",
+        "The two contributors describe different compounds that must be present as an equal mixture.",
+        "The oxygen nuclei exchange positions every time the electrons move."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Resonance contributors are alternative Lewis descriptions of one species with fixed atom connectivity. The actual electron distribution is not confined to either one single/double-bond drawing, consistent with equivalent O–O bonds. A treats the drawings as separate configurations between which the molecule literally switches; resonance is not that process. C confuses contributors with different compounds in a mixture. D incorrectly moves nuclei; resonance changes electron placement in the representation, not atom identity or connectivity."
+    },
+    {
+      "id": "chem-2-6-002",
+      "prompt": "One Lewis contributor for CO3^2- has one C=O double bond and two C–O single bonds. The double-bonded O has two lone pairs; each single-bonded O has three. Carbon has none. What formal charges belong on these atoms?",
+      "options": [
+        "C is −2 and all three O atoms are 0.",
+        "C is 0, the double-bonded O is −2, and both single-bonded O atoms are 0.",
+        "C is 0, the double-bonded O is 0, and each single-bonded O is −1.",
+        "C is +2, the double-bonded O is 0, and each single-bonded O is −2."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Formal charge is valence electrons minus nonbonding electrons minus half the bonding electrons. Carbon has 4 − 0 − 4 = 0. The double-bonded O has 6 − 4 − 2 = 0. Each single-bonded O has 6 − 6 − 1 = −1. The sum is −2. A assigns carbon the net ionic charge instead of calculating its share. B places the negative charge on the double-bonded oxygen while ignoring the extra nonbonding electrons on the single-bonded oxygens. D overstates both carbon and oxygen charge magnitudes. Having the correct net sum alone does not make those alternatives valid assignments."
+    },
+    {
+      "id": "chem-2-6-003",
+      "prompt": "The three equivalent principal resonance contributors for NO3- each contain one N=O bond and two N–O single bonds. What average N–O bond order is predicted by this equal-contributor model?",
+      "options": [
+        "4/3 for each N–O bond.",
+        "1 for two fixed bonds and 2 for one permanently different bond.",
+        "3/2 for each N–O bond.",
+        "2 for each N–O bond."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. For any selected N–O bond, its order is 2 in one contributor and 1 in each of the other two. The equal-contributor average is (2 + 1 + 1)/3 = 4/3. B uses only one contributor and ignores the equivalence of the three O positions. C is the arithmetic average of just one single and one double bond, not the average over these three contributors. D would count all three bonds as double bonds and is not supported by the stated model. Fractional average bond order describes the delocalized model; it does not mean a fraction of an electron is assigned to an individual Lewis bond."
+    },
+    {
+      "id": "chem-2-6-004",
+      "prompt": "In a Lewis diagram of OH-, oxygen has three lone pairs and one O–H single bond. What is the formal charge on oxygen? Oxygen has six valence electrons.",
+      "options": [
+        "−2",
+        "0",
+        "+1",
+        "−1"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Oxygen has six nonbonding electrons and is assigned one electron from the single bond. Its formal charge is 6 − 6 − 1 = −1. Hydrogen is assigned one bonding electron and has formal charge 1 − 1 = 0, so the ion sums to −1. A is too negative and can result from assigning both bonding electrons to O rather than half. B ignores the bonding-electron share or assumes an octet guarantees zero charge. C reverses the sign of the electron excess. Formal charge is bookkeeping and differs from counting all eight electrons surrounding oxygen."
+    },
+    {
+      "id": "chem-2-6-005",
+      "prompt": "Neutral NO2 has seventeen valence electrons. Which conclusion identifies a limitation of an all-paired, octet-satisfying Lewis representation for this species?",
+      "options": [
+        "The electron total must be changed to sixteen because only even totals are permitted for neutral molecules.",
+        "An odd total prevents every electron from being paired; a useful Lewis model must allow an unpaired electron and cannot give all three atoms complete octets.",
+        "The odd total proves that nitrogen must use d orbitals to complete an octet.",
+        "An eighteenth electron can be added without changing the identity or charge of the species."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Seventeen cannot be partitioned entirely into electron pairs. The usual odd-electron Lewis model of NO2 includes an unpaired electron and an incomplete octet, illustrating a limitation of the simplest octet model. A discards an electron without justification; neutrality fixes the valence total at 5 + 2(6) = 17. C does not follow from parity, and second-period nitrogen does not use an expanded-valence d-orbital explanation. D would form a different charge state, NO2-, rather than neutral NO2. Lewis-model limitations do not imply that the actual molecule cannot exist."
+    },
+    {
+      "id": "chem-2-6-006",
+      "prompt": "Two octet-satisfying Lewis contributors for OCN- have the same O–C–N connectivity. In I, O–C is single, C≡N is triple, O has three lone pairs, and N has one. In II, O=C=N has two lone pairs on each terminal atom. Oxygen is more electronegative than nitrogen. Which is favored by the formal-charge/electronegativity criterion?",
+      "options": [
+        "I, because its −1 formal charge is on O rather than on N as in II.",
+        "II, because two double bonds are always preferable to one single and one triple bond.",
+        "I, because every atom in I has zero formal charge.",
+        "Neither, because an atom with a nonzero formal charge cannot have an octet."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. In I, formal charges O/C/N are −1/0/0. In II, they are 0/0/−1. Both use sixteen electrons and give all atoms octets, so placing the negative formal charge on the more electronegative O favors I by the stated criterion. B invents a universal preference based only on counting double bonds. C ignores the −1 on O and the overall ionic charge. D confuses formal charge with local octet occupancy; charged atoms can have complete octets. Favored does not mean the other contributor is absent from a fuller resonance description."
+    },
+    {
+      "id": "chem-2-6-007",
+      "prompt": "A Lewis drawing of NO2- has one N=O bond and one N–O bond. N has one lone pair, the double-bonded O has two, and the single-bonded O has three. Which operation generates the other usual resonance contributor?",
+      "options": [
+        "Move an oxygen nucleus so the connectivity becomes N–O–O.",
+        "Remove an electron so that the drawing represents neutral NO2.",
+        "Use a lone pair on the single-bonded O to form N=O while moving the original N=O pi-bond electrons onto its O atom.",
+        "Rotate the entire drawing on the page and count that orientation as a new contributor."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Reassigning the indicated electron pairs exchanges the single/double bond placement while preserving the nuclei, total electrons, charge, and octets. A changes connectivity and therefore describes a different structural arrangement, not resonance. B changes the electron number and ionic charge, producing a different species. D changes only page orientation and produces no distinct electron-placement contributor. Resonance drawings differ in electron placement, not atom connectivity or total charge."
+    },
+    {
+      "id": "chem-2-6-008",
+      "prompt": "In a supplied expanded-valence Lewis model of SF6, sulfur has six S–F single bonds and no lone pairs. Each F has three lone pairs. What is the formal charge on sulfur? Sulfur contributes six valence electrons.",
+      "options": [
+        "+6",
+        "0",
+        "−6",
+        "+2"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Sulfur is assigned half of the twelve bonding electrons, or six, and has no nonbonding electrons. Its formal charge is 6 − 0 − 6 = 0. A ignores sulfur’s share of the bonds. C assigns all twelve bonding electrons to sulfur instead of half. D can result from imposing an octet-based four-electron allocation rather than applying the formula to the supplied diagram. Each F also has formal charge 7 − 6 − 1 = 0. This is electron bookkeeping in the stated expanded-valence Lewis model, not a claim about d-orbital hybridization."
+    },
+    {
+      "id": "chem-2-6-009",
+      "prompt": "A Lewis diagram for CO has a C≡O triple bond and one lone pair on each atom. What are the formal charges on carbon and oxygen, respectively?",
+      "options": [
+        "0 and 0",
+        "+1 and −1",
+        "−2 and +2",
+        "−1 and +1"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Carbon is assigned two nonbonding electrons plus three from the triple bond, giving 4 − 2 − 3 = −1. Oxygen is assigned the same five electrons but starts with six valence electrons, giving 6 − 2 − 3 = +1. The charges sum to zero and both atoms have octets. A equates net neutrality with zero charge on every atom. B reverses the assignments by relying on electronegativity rather than the formal-charge formula. C doubles the charge magnitudes. Formal charges are model assignments, not measured full ionic charges on the atoms."
+    },
+    {
+      "id": "chem-2-6-010",
+      "prompt": "Two proposed Lewis diagrams for the same species both have formal charges that sum to the correct net charge. A student concludes that the two diagrams must be equally good models. Which response is best?",
+      "options": [
+        "The charge sum is necessary but insufficient; electron count, permitted local occupancies, charge separation, and where charges are placed must also be checked.",
+        "Equal charge sums prove that the two diagrams have identical atom connectivity and electron placement.",
+        "If the species is neutral, every atom in every valid diagram must have zero formal charge.",
+        "The better diagram is always the one with the largest formal-charge magnitudes on all atoms."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. A correct total charge does not by itself verify the valence-electron budget, second-period octets, or the plausibility of the individual charge assignments. B infers structural identity from only one numerical sum. C confuses net neutrality with the charges on individual atoms; a neutral species can have separated positive and negative formal charges. D reverses the usual preference to avoid unnecessary large charge separation, while also treating one criterion as universal. Several features of a Lewis model must be considered together."
+    },
+    {
+      "id": "chem-2-6-011",
+      "prompt": "A proposed Lewis diagram for NO3- has two N=O double bonds and one N–O single bond, with no lone pairs on N. Each double-bonded O has two lone pairs and the single-bonded O has three. The drawing uses twenty-four valence electrons and minimizes formal-charge separation. Why is it still rejected as a usual valid Lewis diagram for nitrate?",
+      "options": [
+        "Any N=O double bond is forbidden in a Lewis diagram.",
+        "Any diagram with twenty-four electrons must represent a neutral molecule.",
+        "The second-period nitrogen has ten electrons around it, exceeding its permitted octet in this model.",
+        "The single-bonded oxygen has only six electrons around it."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Two double bonds and one single bond place 4 + 4 + 2 = 10 electrons around N. Second-period nitrogen cannot use an expanded octet in the usual Lewis model. A is incorrect because an N=O double bond is allowed; the usual nitrate contributors each have one. B confuses the electron total with charge: N contributes 5, three O contribute 18, and the −1 charge adds 1, giving 24. D ignores the O–N bonding pair; that O has six lone-pair electrons plus two bonding electrons, an octet. Reducing formal-charge separation cannot override nitrogen’s local occupancy constraint."
+    }
+  ]
+}

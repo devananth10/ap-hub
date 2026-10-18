@@ -73,4 +73,17 @@ lewis(['C','C','O','H','H','H','H','H','H'],[[0,1,1],[1,2,1],[2,3,1],[0,4,1],[0,
 lewis(['C','O','C','H','H','H','H','H','H'],[[0,1,1],[1,2,1],[0,3,1],[0,4,1],[0,5,1],[2,6,1],[2,7,1],[2,8,1]],[0,2,0,0,0,0,0,0,0]); // ether
 lewis(['N','N','H','H','H','H'],[[0,1,1],[0,2,1],[0,3,1],[1,4,1],[1,5,1]],[1,1,0,0,0,0]); // #010
 lewis(['B','F','F','F'],[[0,1,1],[0,2,1],[0,3,1]],[0,3,3,3],0,{0:6}); // #011 explicit B exception
-console.log('Independent arithmetic/charge/Lewis checks passed through Topic 2.5. See per-topic QA for conceptual checks and limitations.');
+// Topic 2.6: derive formal charges from assigned electron shares.
+assert.deepEqual(lewis(['O','O','O'],[[0,1,2],[1,2,1]],[2,1,3]),[0,1,-1]);
+assert.deepEqual(lewis(['C','O','O','O'],[[0,1,2],[0,2,1],[0,3,1]],[0,2,3,3],-2),[0,0,-1,-1]);
+close((2+1+1)/3,4/3);
+assert.deepEqual(lewis(['O','H'],[[0,1,1]],[3,0],-1),[-1,0]);
+assert.equal(5 + 2*6,17); assert.equal(17 % 2,1); // NO2 odd electron total
+assert.deepEqual(lewis(['O','C','N'],[[0,1,1],[1,2,3]],[3,0,1],-1),[-1,0,0]);
+assert.deepEqual(lewis(['O','C','N'],[[0,1,2],[1,2,2]],[2,0,2],-1),[0,0,-1]);
+assert.deepEqual(lewis(['N','O','O'],[[0,1,2],[0,2,1]],[1,2,3],-1),[0,0,-1]);
+assert.deepEqual(lewis(['S','F','F','F','F','F','F'],[[0,1,1],[0,2,1],[0,3,1],[0,4,1],[0,5,1],[0,6,1]],[0,3,3,3,3,3,3],0,{0:12}),[0,0,0,0,0,0,0]);
+assert.deepEqual(lewis(['C','O'],[[0,1,3]],[1,1]),[-1,1]);
+assert.deepEqual(lewis(['N','O','O','O'],[[0,1,2],[0,2,1],[0,3,1]],[0,2,3,3],-1),[1,0,-1,-1]);
+assert.throws(() => lewis(['N','O','O','O'],[[0,1,2],[0,2,2],[0,3,1]],[0,2,2,3],-1),/Occupancy at atom 0/);
+console.log('Independent arithmetic/charge/Lewis checks passed through Topic 2.6. See per-topic QA for conceptual checks and limitations.');
