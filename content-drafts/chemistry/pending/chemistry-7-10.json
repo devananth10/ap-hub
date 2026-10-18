@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 7,
+  "topicId": "topic-7-10",
+  "questions": [
+    {
+      "id": "chem-7-10-001",
+      "prompt": "For A + B ⇌ C, Kc = 4.0. Immediately after mixing, [A] = 0.50 M, [B] = 0.50 M, and [C] = 0.25 M. Which comparison predicts the net direction?",
+      "options": [
+        "Qc = 1.0 > Kc, so net reverse reaction occurs.",
+        "Qc = 4.0, so the mixture is already at equilibrium.",
+        "Qc = 0.0625, so Kc changes to this value.",
+        "Qc = 1.0 < Kc, so net forward reaction occurs."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Qc = 0.25/(0.50×0.50) = 1.0; more C forms as Q rises toward4.0. A is incorrect: 1.0 is less than4.0. B is incorrect: the given concentrations yield1.0. C is incorrect: multiplying all concentrations is not Q, and composition does not change K."
+    },
+    {
+      "id": "chem-7-10-002",
+      "prompt": "An equilibrium A ⇌ B mixture has Kc = 2.0. At unchanged volume and temperature, [B] is suddenly doubled while [A] is unchanged. What is the immediate quotient and subsequent net direction?",
+      "options": [
+        "Qc = 1.0; net forward reaction.",
+        "Qc = 4.0; net reverse reaction.",
+        "Qc = 2.0; no response.",
+        "Kc = 4.0; no response."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Doubling the numerator doubles Q from2.0 to4.0, exceeding the unchanged K. A is incorrect: that would follow halving rather than doubling the numerator. C is incorrect: composition was disturbed, so Q changes. D is incorrect: K does not double with product concentration."
+    },
+    {
+      "id": "chem-7-10-003",
+      "prompt": "For N2O4(g) ⇌ 2NO2(g), Kp = 0.50. An equilibrium sample has both partial pressures0.50 atm. It is compressed isothermally to half its volume. What occurs before and during re-equilibration?",
+      "options": [
+        "Qp becomes0.25, then net dissociation occurs.",
+        "Qp stays0.50 because all pressures double.",
+        "Qp becomes1.0, then net association occurs.",
+        "Kp becomes1.0 because pressure increases."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Both pressures initially double to1.0 atm; Q = 1.0²/1.0 =1.0 > K, favoring N2O4. A is incorrect: the squared numerator makes Q increase on compression. B is incorrect: the total numerator and denominator powers differ. D is incorrect: temperature is unchanged."
+    },
+    {
+      "id": "chem-7-10-004",
+      "prompt": "For A(aq) + B(aq) ⇌ C(aq), an equilibrium solution is diluted to twice its volume at constant temperature. What happens immediately to Qc relative to Kc?",
+      "options": [
+        "Qc becomes2Kc, so net reverse reaction follows.",
+        "Qc becomesKc/2, so net forward reaction follows.",
+        "Qc remainsKc because all concentrations halve.",
+        "Kc doubles, keeping Qc equal to Kc."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Each concentration halves: Qnew = ([C]/2)/(([A]/2)([B]/2)) =2Qold. B is incorrect: that scaling applies the concentration powers incorrectly. C is incorrect: the denominator has two factors but the numerator only one. D is incorrect: dilution changes Q, not K, at fixed temperature."
+    },
+    {
+      "id": "chem-7-10-005",
+      "prompt": "An ideal H2(g) + I2(g) ⇌ 2HI(g) mixture at equilibrium is expanded isothermally to three times its volume. How does Qp change immediately?",
+      "options": [
+        "It becomes3Kp.",
+        "It remains equal to Kp because both numerator and denominator scale by1/9.",
+        "It becomesKp/9.",
+        "It becomes zero because pressure decreases."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Every partial pressure becomes one-third; PHI² and PH2PI2 both acquire a factor1/9. A is incorrect: the equal total gas powers cancel the scaling. C is incorrect: the denominator also scales, not just the numerator. D is incorrect: finite positive partial pressures yield a finite quotient."
+    },
+    {
+      "id": "chem-7-10-006",
+      "prompt": "For A + B ⇌ C, an equilibrium mixture has Qc = Kc. Half the C is selectively removed without changing volume or temperature. Which description is correct?",
+      "options": [
+        "Qc becomes2Kc, and the reaction proceeds net reverse.",
+        "Kc becomesKc/2 and no reaction occurs.",
+        "Qc staysKc because the system was previously at equilibrium.",
+        "Qc becomesKc/2, and the reaction proceeds net forward."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Only the numerator halves; Q<K until some C is replaced by reaction. A is incorrect: removing product reduces rather than increases Q. B is incorrect: a concentration change does not change K. C is incorrect: a disturbance can take a system away from equilibrium."
+    },
+    {
+      "id": "chem-7-10-007",
+      "prompt": "For an exothermic A(g) ⇌ B(g) process, Kc is10 at a lower temperature and2 at a higher temperature. A rigid equilibrium mixture at the lower temperature is heated; concentrations have not yet changed. What predicts the chemical response?",
+      "options": [
+        "The immediate Qc remains10 while the new Kc is2, so net reverse reaction occurs.",
+        "Qc instantly becomes2 with no molecular redistribution.",
+        "Kc stays10 because the vessel volume is fixed.",
+        "Qc<Kc, so net forward reaction occurs."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Concentrations initially retain their ratio in the rigid vessel, but heating changes the applicable equilibrium constant. B is incorrect: the concentration ratio does not instantly adopt the new K. C is incorrect: temperature, not a volume constraint, determines the applicable K. D is incorrect: the actual comparison is10>2."
+    },
+    {
+      "id": "chem-7-10-008",
+      "prompt": "An inert gas is injected into a rigid ideal-gas equilibrium vessel at constant temperature. How do Qp and Kp for the reacting gases respond?",
+      "options": [
+        "Qp increases because total pressure increases.",
+        "Kp increases while Qp stays fixed.",
+        "Neither changes, so no net chemical shift is required.",
+        "Both double regardless of the amount of inert gas added."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Reacting partial pressures remain nRT/V, and temperature is unchanged. A is incorrect: Qp uses reacting species partial pressures, not simply total pressure. B is incorrect: Kp is fixed at constant temperature. D is incorrect: neither quantity depends on inert-gas amount in this setup."
+    },
+    {
+      "id": "chem-7-10-009",
+      "prompt": "A catalyst is added to an equilibrium mixture without changing concentrations or temperature. Which Q/K argument explains why equilibrium composition is unchanged?",
+      "options": [
+        "Q still equals the same K because neither concentrations nor temperature changed.",
+        "Q increases because the forward activation barrier falls.",
+        "K increases because more collisions are effective.",
+        "Q becomes zero because the reaction restarts."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The catalyst modifies kinetics while the composition quotient and equilibrium constant remain matched. B is incorrect: activation barriers do not appear in the composition quotient. C is incorrect: catalytic acceleration does not change K at fixed temperature. D is incorrect: the pre-existing concentrations remain nonzero."
+    },
+    {
+      "id": "chem-7-10-010",
+      "prompt": "For A ⇌ B at fixed temperature, Kc = 3.0. An equilibrium mixture has [A] =0.20 M and [B] =0.60 M. A is added to make its immediate concentration0.40 M without changing [B] or volume. What is the response?",
+      "options": [
+        "Qc becomes6.0; net reverse conversion occurs.",
+        "Qc becomes1.5; net forward conversion raises [B] to0.75 M at the new equilibrium.",
+        "Kc becomes1.5, so composition remains unchanged.",
+        "All added A is consumed, restoring the exact original composition."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Q=0.60/0.40=1.5<K. The new total is1.00 M, so final A=.25 M and B=.75 M. A is incorrect: increasing a denominator decreases the quotient. C is incorrect: K is not altered by adding A. D is incorrect: the new conserved total differs from the old total."
+    },
+    {
+      "id": "chem-7-10-011",
+      "prompt": "For A + B ⇌ C at equilibrium, [A] = [B] = [C] =0.50 M and Kc =2.0. A simultaneous manipulation doubles [A] and [C] while leaving [B], temperature, and volume unchanged. What does Q predict?",
+      "options": [
+        "Q doubles because C was added.",
+        "Q halves because A was added.",
+        "K doubles because two species were changed.",
+        "Q remains2.0, so no net shift is required."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The numerator and one denominator factor both double:1.00/(1.00×0.50)=2.0. A is incorrect: A was also added and doubles a denominator factor. B is incorrect: C was also doubled in the numerator. C is incorrect: K is unchanged at fixed temperature."
+    }
+  ]
+}

@@ -623,4 +623,8 @@ close(18/6,3);close(2*6+8,20);close(3+5,8);close(.8**2/.4,1.6);
 close(8/2,4);close(4/2,2);assert.notEqual(3+3,3+2);
 close(4+2,6);close(8*2,4*2+8);close(8*4,4*4+8*2);close(4+8,12);
 assert.ok(balanced([[1,'N2O4']],[[2,'NO2']]));
+// Topic 7.10: disturbance scaling, instantaneous Q and final mass balance.
+close(.25/(.5*.5),1);close(2*2,4);close(1**2/1,1);close((.5)/(.5*.5),2);
+close((1/3)**2/((1/3)*(1/3)),1);close(.6/.4,1.5);close(.75/.25,3);
+close(1/(1*.5),2);assert.ok(10>2);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
