@@ -675,4 +675,11 @@ assert.equal([4,6,8.5,12].sort((a,b)=>Math.abs(a-8.7)-Math.abs(b-8.7))[0],8.5);
 close((10-1)+(10+1),20);assert.ok(9/11<1);close((.1/10)/(.2/10),.1/.2);
 assert.ok(balanced([[1,'NH4',1],[1,'OH',-1]],[[1,'NH3'],[1,'H2O']]));
 assert.ok(balanced([[1,'NH3'],[1,'H3O',1]],[[1,'NH4',1],[1,'H2O']]));
+// Topic 8.9: initial buffer preparations only; no excluded post-addition pH calculation.
+close(4.76+Math.log10(.2/.1),5.061029995663981);close(5+Math.log10(.1),4);
+close(10**(.5),Math.sqrt(10));close(4+Math.log10(.03/.01),4.477121254719663);
+close((14-4.75)+Math.log10(.1/.2),8.948970004336019);close(.05*.2,.1*.1);
+close(-Math.log10(1.8e-5),4.7447274948966935);close(Math.log10(5)-Math.log10(.5),1);
+close(4.76+Math.log10((.820/82)/.020),4.458970004336019);
+close(-Math.log10(2e-5*.02/.1),5.3979400086720375);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');

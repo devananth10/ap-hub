@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 8,
+  "topicId": "topic-8-9",
+  "questions": [
+    {
+      "id": "chem-8-9-001",
+      "prompt": "A buffer has pKa4.76, [HA]=0.100 M, and [A−]=0.200 M. What is its approximate pH under the concentration-form Henderson–Hasselbalch model?",
+      "options": [
+        "4.46",
+        "4.76",
+        "5.06",
+        "6.76"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. pH=4.76+log(0.200/0.100)=5.061. A is incorrect: that reverses the base/acid ratio. B is incorrect: the ratio is two, not one. D is incorrect: the ratio enters as a logarithm, not as an added number two."
+    },
+    {
+      "id": "chem-8-9-002",
+      "prompt": "An HA/A− buffer with pKa5.00 has [A−]/[HA]=0.100. What is its pH?",
+      "options": [
+        "4.00",
+        "6.00",
+        "5.10",
+        "0.500"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. log(0.100)=−1, so pH=5.00−1.00. B is incorrect: that reverses the sign of the logarithm. C is incorrect: that adds the raw ratio instead of its logarithm. D is incorrect: that multiplies pKa by the ratio."
+    },
+    {
+      "id": "chem-8-9-003",
+      "prompt": "To prepare an HA/A− buffer at pH6.00 using an acid with pKa5.50, what base/acid concentration ratio is required?",
+      "options": [
+        "0.316",
+        "Approximately3.16",
+        "0.500",
+        "11.5"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. [A−]/[HA]=10^(pH−pKa)=10^0.50=3.16. A is incorrect: that inverts the requested ratio. C is incorrect: that is the logarithm of the ratio, not the ratio. D is incorrect: that adds pH and pKa."
+    },
+    {
+      "id": "chem-8-9-004",
+      "prompt": "A prepared buffer contains0.0300 mol A− and0.0100 mol HA in the same solution. The acid pKa is4.00. What is approximate pH?",
+      "options": [
+        "3.52",
+        "4.00",
+        "7.00",
+        "4.48"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The common volume cancels in the ratio; pH=4.00+log(3.00)=4.477. A is incorrect: that uses the inverse ratio. B is incorrect: the conjugate components are not equimolar. C is incorrect: that adds the raw mole ratio instead of its logarithm."
+    },
+    {
+      "id": "chem-8-9-005",
+      "prompt": "At25°C, base B has pKb4.75. A buffer contains0.100 M B and0.200 M BH+. What is its approximate pH?",
+      "options": [
+        "8.95",
+        "5.05",
+        "9.55",
+        "4.45"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. pKa(BH+)=14.00−4.75=9.25, then pH=9.25+log(0.100/0.200)=8.949. B is incorrect: that calculates pOH but reports it as pH. C is incorrect: that inverts B/BH+ in the pH expression. D is incorrect: that treats pKb as the conjugate-acid pKa."
+    },
+    {
+      "id": "chem-8-9-006",
+      "prompt": "A buffer is prepared by mixing50.0 mL0.200 M HA with100.0 mL0.100 M NaA. Volumes add, and pKa=4.50. What is its approximate initial pH?",
+      "options": [
+        "4.20",
+        "4.80",
+        "4.50",
+        "7.00"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Each component contributes0.0100 mol, so their final concentration ratio is one. A is incorrect: that uses the stock molarity ratio while ignoring unequal volumes. B is incorrect: that reverses the same inappropriate stock ratio. D is incorrect: equimolar conjugate partners give pH=pKa, not universally seven."
+    },
+    {
+      "id": "chem-8-9-007",
+      "prompt": "A buffer has equal HA and A− concentrations. If Ka=1.8×10−5, what is pH?",
+      "options": [
+        "5.00",
+        "9.26",
+        "1.8×10−5",
+        "4.74"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. With a unit conjugate ratio, pH=pKa=−log(1.8×10−5)=4.745. A is incorrect: that ignores the factor1.8 in Ka. B is incorrect: that is pOH at25°C for this pH. C is incorrect: that reports Ka itself rather than a logarithmic pH."
+    },
+    {
+      "id": "chem-8-9-008",
+      "prompt": "Two buffers are prepared separately with the same HA/A− pair at the same temperature. Their base/acid ratios are0.50 and5.0. How do their approximate pH values compare?",
+      "options": [
+        "The second is ten pH units higher.",
+        "The second is1.00 pH unit higher.",
+        "They are identical because pKa is the same.",
+        "The second is1.00 pH unit lower."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The ratio differs by ten, so the logarithmic term differs by log10(10)=1.00. No acid or base is being added to an existing buffer. A is incorrect: a tenfold ratio gives one logarithmic unit. C is incorrect: the conjugate ratio also affects pH. D is incorrect: the larger base/acid ratio gives higher pH."
+    },
+    {
+      "id": "chem-8-9-009",
+      "prompt": "A student applies pH=pKa+log([A−]/[HA]) to a freshly prepared weak-acid-only solution by setting [A−]=0. Why is that calculation invalid?",
+      "options": [
+        "The equation requires every buffer to have pH7",
+        "Ka becomes zero whenever no conjugate salt was added",
+        "Water contains no ions at all",
+        "The logarithm of zero is undefined, and acid ionization must establish a nonzero equilibrium conjugate-base amount."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The buffer approximation requires meaningful conjugate concentrations; a weak-acid-only problem needs its acid equilibrium calculation. A is incorrect: it applies around many different pKa values. B is incorrect: the acid retains its equilibrium constant. C is incorrect: water autoionizes and the acid also supplies ions."
+    },
+    {
+      "id": "chem-8-9-010",
+      "prompt": "A buffer is prepared with0.0200 mol HA and0.820 g NaA of molar mass82.0 g/mol in one solution. If pKa=4.76, what is approximate pH?",
+      "options": [
+        "4.46",
+        "5.06",
+        "4.76",
+        "6.37"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. NaA supplies0.0100 mol A−, so base/acid=0.500 and pH=4.76−0.301. B is incorrect: that inverts the ratio. C is incorrect: the components are not equimolar. D is incorrect: that treats the numerical gram amount directly as a mole ratio."
+    },
+    {
+      "id": "chem-8-9-011",
+      "prompt": "A buffer has [A−]=0.100 M, [HA]=0.0200 M, and Ka=2.0×10−5. What is its approximate pH?",
+      "options": [
+        "4.00",
+        "4.70",
+        "5.40",
+        "8.60"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The acid equilibrium gives [H3O+]=Ka[HA]/[A−]=4.0×10−6 M, whose negative logarithm is5.398. A is incorrect: that instead multiplies Ka by the base/acid ratio. B is incorrect: that reports pKa alone despite the nonunit ratio. D is incorrect: that is the corresponding pOH at25°C."
+    }
+  ]
+}
