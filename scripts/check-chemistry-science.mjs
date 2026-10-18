@@ -158,4 +158,7 @@ assert.equal(ionicCharge(combined),0);
 assert.equal(ionicCharge({Na:4,Cl:4,K:2,sulfate:4}),-6);
 close((6/2)/(6/1),.5);
 assert.equal(2*1+2*(-1),0); // one Ca2+ and two Cl−
-console.log('Independent arithmetic/charge/Lewis/vector/distribution checks passed through Topic 3.8. Qualitative items require the separate review described in each QA document.');
+// Topic 3.9: normalized migration uses a common origin and is dimensionless.
+close(2.4/8.0,.30);
+assert.ok(2.4/8.0>=0 && 2.4/8.0<=1);
+console.log('Independent arithmetic/charge/Lewis/vector/distribution checks passed through Topic 3.9. Qualitative items require the separate review described in each QA document.');

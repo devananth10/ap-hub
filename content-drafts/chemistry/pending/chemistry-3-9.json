@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 3,
+  "topicId": "topic-3-9",
+  "questions": [
+    {
+      "id": "chem-3-9-001",
+      "prompt": "A sample contains water and dissolved nonvolatile NaCl, with no suspended solid. Which method can recover water separately from the salt?",
+      "options": [
+        "Ordinary filtration, because dissolved ions are trapped by filter paper.",
+        "Distillation, by vaporizing water and condensing its vapor while the nonvolatile salt remains behind.",
+        "Settling, because dissolved ions must form a separate bottom layer.",
+        "Paper chromatography alone, because it automatically collects the bulk solvent as a pure condensed liquid."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Distillation uses the difference in volatility: water enters the vapor and can be condensed, while the specified nonvolatile salt stays in the original vessel under suitable conditions. A confuses dissolved ions with suspended particles. C assumes a homogeneous solution spontaneously settles into its components. D describes a different method and does not provide bulk solvent recovery by condensation. The separation is physical; it does not require converting NaCl into neutral atoms."
+    },
+    {
+      "id": "chem-3-9-002",
+      "prompt": "A TLC experiment uses a polar silica stationary phase and a relatively nonpolar mobile phase. Solutes A and B are both soluble in the mobile phase, but A interacts more strongly with silica relative to that mobile phase. What migration pattern is expected?",
+      "options": [
+        "A travels less far than B because it spends more time associated with the stationary phase.",
+        "A travels farther than B because stronger stationary-phase attraction always increases transport by the solvent.",
+        "Both travel exactly as far as the solvent front because all dissolved substances move identically.",
+        "A must form a permanent new covalent compound with silica rather than undergoing reversible interactions."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Stronger relative retention by the stationary phase reduces the fraction of time a component moves with the mobile phase, giving less migration. B reverses the retention/migration relationship. C ignores differences in intermolecular interactions. D treats adsorption as a required permanent chemical reaction; reversible attractions can produce separation without changing molecular identity. The relevant comparison is affinity for stationary versus mobile phase, not an absolute polarity rule independent of the experimental phases."
+    },
+    {
+      "id": "chem-3-9-003",
+      "prompt": "In a chromatography run, a solute spot travels 2.4 cm from the origin and the solvent front travels 8.0 cm from the same origin. If Rf is solute distance divided by solvent-front distance, what is Rf?",
+      "options": [
+        "3.3",
+        "5.6",
+        "2.4",
+        "0.30"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Rf = 2.4/8.0 = 0.30, a dimensionless ratio. A inverts the distances and gives a value greater than one for a spot behind the solvent front. B subtracts the distances, producing a length rather than the defined ratio. C reports only the solute distance. Both distances must be measured from the same origin, as stated, and the two-significant-figure result matches the supplied measurements."
+    },
+    {
+      "id": "chem-3-9-004",
+      "prompt": "Two unknown solutes have the same Rf in one TLC system run under identical conditions. What conclusion is justified?",
+      "options": [
+        "They must be the same compound, because Rf uniquely identifies every molecule.",
+        "They must both be nonpolar, regardless of the stationary and mobile phases.",
+        "They may be the same or different compounds; co-migration in one system is not conclusive identification.",
+        "Different spot intensities alone prove that they are different compounds."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Different compounds can have similar relative affinities and co-migrate under one condition. Another separation condition or independent chemical evidence can help distinguish them. A overstates the specificity of one Rf measurement. B ignores that Rf depends on both phases and can coincide for compounds of various polarities. D treats intensity as identity evidence, though different amounts of the same compound can give different intensities. A successful separation measurement still has limits as an identification method."
+    },
+    {
+      "id": "chem-3-9-005",
+      "prompt": "A normal-phase TLC run uses polar silica. The mobile phase is changed to one that competes more strongly for adsorption sites, while the solutes remain neutral and dissolved. Which trend is consistent with the competition model?",
+      "options": [
+        "Stronger mobile-phase competition always strengthens solute adsorption, so every spot stays closer to the origin.",
+        "Solutes can spend less time retained on silica and travel farther, increasing their Rf values.",
+        "The solutes must change their molecular formulas before their migration can change.",
+        "Every Rf must become exactly 1.00, regardless of solute identity."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. A mobile phase that competes more effectively with solutes for stationary-phase interactions can reduce retention and increase migration. A reverses the effect of competition on solute retention. C requires a chemical transformation that is unnecessary for a change in physical partitioning. D turns a general trend into a universal complete-loss-of-retention rule. The conditions specify the type of phase competition, so the question does not assume that increasing any solvent property has the same effect in every chromatographic method."
+    },
+    {
+      "id": "chem-3-9-006",
+      "prompt": "A near-ideal, nonreacting binary liquid mixture contains X and Y. At the distillation temperature, X is more volatile than Y. Which statement about the initial vapor and its condensed distillate is appropriate?",
+      "options": [
+        "The first distillate is automatically pure X, regardless of starting composition or apparatus.",
+        "The remaining liquid must immediately become enriched in X because the more volatile component stays in the vessel.",
+        "No separation is possible because both components are molecular liquids.",
+        "The initial vapor and its condensate can be enriched in X relative to the starting liquid, without necessarily being pure X."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The more volatile component contributes disproportionately to the vapor, so its condensed fraction can be enriched in X. A incorrectly treats simple distillation as guaranteed complete purification. B reverses the usual enrichment directions; preferential removal of X tends to enrich the remaining liquid in Y. C ignores differences in intermolecular interactions and vapor pressures among molecular liquids. The near-ideal, nonreacting context avoids requiring an azeotrope or a chemical reaction to be analyzed."
+    },
+    {
+      "id": "chem-3-9-007",
+      "prompt": "A mixture contains an inert insoluble powder and a small nonvolatile, thermally stable molecular solute dissolved in water. Which sequence can separate the powder and then recover the dissolved solute as a solid?",
+      "options": [
+        "Filter out the powder, then gently remove water from the filtrate by evaporation.",
+        "Use ordinary filtration alone to trap both the powder and every dissolved molecule on the same filter.",
+        "Evaporate all the water first, then use an ordinary dry filter to separate the two mixed dry solids solely because one was previously dissolved.",
+        "Distill the nonvolatile solute into the receiver while leaving all water in the original vessel."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Filtration removes the suspended insoluble material, while the dissolved molecules pass through with water. Removing solvent from that filtrate recovers the specified stable nonvolatile solute. B assumes ordinary filter paper retains individual dissolved molecules as it retains suspended particles. C leaves the two solids mixed; prior dissolution does not itself give a dry filter a new separation mechanism. D reverses which component is volatile. The procedure uses different physical properties in the appropriate order."
+    },
+    {
+      "id": "chem-3-9-008",
+      "prompt": "In a TLC setup, the initial sample spot is submerged below the liquid mobile-phase level. Why can this make the separation unreliable?",
+      "options": [
+        "Submerging the spot guarantees stronger adsorption and sharper separated bands.",
+        "The solvent front must remain stationary because the origin is wet.",
+        "Sample can dissolve directly into the solvent reservoir rather than beginning as a controlled spot transported up the stationary phase.",
+        "Every solute must acquire Rf = 1.00 regardless of what happens to the sample."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A submerged sample can wash into the reservoir, reducing or redistributing the material that should start at the origin. A incorrectly treats direct immersion as a guarantee of improved resolution. B assumes wetting the origin prevents solvent movement; it does not explain capillary migration. D assigns a universal numerical result when the initial condition is not controlled. Keeping the sample origin above the reservoir level addresses this particular error without requiring a change in molecular identity."
+    },
+    {
+      "id": "chem-3-9-009",
+      "prompt": "In a column separation, a greatly increased sample load exceeds the available stationary-phase adsorption capacity and produces overlapping broad bands. Which interpretation is best?",
+      "options": [
+        "The components must have become the same chemical compound because their bands overlap.",
+        "Overlapping bands prove that the components have exactly equal intrinsic phase affinities, regardless of sample load.",
+        "Relative affinities guarantee equally good resolution at every load, so the supplied capacity limit cannot affect the result.",
+        "Overloading can reduce resolution; a smaller load can help restore separation without changing the components’ identities."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Finite interaction capacity and overloaded bands can compromise resolution even when the mixture contains the same compounds. The capacity condition is supplied, so no detailed column-transport equation is required. A confuses unresolved migration with chemical identity. B overinterprets overlap as proof of identical intrinsic affinities despite the stated capacity effect. C incorrectly assumes intrinsic affinity differences guarantee unlimited resolution at any load and ignores the stated finite capacity. A poor separation does not by itself prove that the components have identical affinities or have chemically reacted."
+    },
+    {
+      "id": "chem-3-9-010",
+      "prompt": "A solute repeatedly associates with and leaves a stationary-phase surface as it is carried by a mobile phase. Which mechanism explains chromatographic separation without requiring a change in its molecular formula?",
+      "options": [
+        "Reversible intermolecular interactions give different components different relative residence times in the two phases.",
+        "Every sample molecule must form a permanent covalent attachment to the stationary phase before it can move with the solvent.",
+        "All solutes have identical relative affinities for the phases, and interaction differences cannot influence their relative migration.",
+        "Chromatographic movement requires permanent ionization of every solute, including neutral molecular substances."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Reversible interactions and different relative affinities produce different average transport rates while preserving chemical identity. B requires a permanent attachment incompatible with repeated reversible exchange and unnecessary for physical separation. C assumes away the interaction differences that the method exploits. D incorrectly restricts chromatography to permanently ionized species; neutral molecules can also be retained and transported. Molecular mass alone is not a universal substitute for the phase-interaction explanation."
+    },
+    {
+      "id": "chem-3-9-011",
+      "prompt": "During distillation of water from a solution of a nonvolatile, thermally stable solute, vigorous boiling carries visible liquid droplets toward the receiver and contaminates the distillate. Which change best addresses this problem?",
+      "options": [
+        "Increase heating further so still more droplets leave the vessel.",
+        "Stop cooling the condenser so water vapor cannot condense efficiently.",
+        "Reduce the heating rate to maintain controlled boiling and limit mechanical droplet carryover.",
+        "Keep the vigorous boiling and use ordinary filter paper afterward to remove the dissolved solute from the collected liquid."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Droplet entrainment can transport dissolved nonvolatile solute mechanically, without the solute having appreciable vapor pressure. Controlled boiling reduces this carryover. A aggravates the observed mechanism. B reduces solvent recovery and does not prevent droplets from carrying solute. D relies on ordinary filtration to remove dissolved particles, which it cannot accomplish. Contamination does not automatically prove that the solute itself vaporized or decomposed; the visible droplets provide a physical explanation."
+    }
+  ]
+}
