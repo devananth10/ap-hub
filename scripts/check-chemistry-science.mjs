@@ -691,4 +691,10 @@ close(-2*25,-50);close(-40+2*100,160);close(102.5+56.5-82.6,76.4);
 close(30/.100,300);close((-60)/(-.200),300);close(10-300*.050,-5);
 close(-25-298*(-.100),4.8);close(-394.4-(-137.2),-257.2);
 close(2*51.3-2*86.6,-70.6);close(15-300*.05,0);close(5-298*.020,-.96);
+// Topic 9.5: natural logs, matched energy units and exponential inverses.
+close(-8.314*298*Math.log(100)/1000,-11.40964070803889);
+assert.ok(Math.abs(Math.exp(5.71/2.48)-10)<.02);
+assert.ok(Math.abs(Math.exp(-20000/(8.314*300))-3.3e-4)<1e-6);
+close(Math.exp(-.01),.9900498337491681);close(Math.log(1000)/Math.log(10),3);
+close(12471/(8.314*300),5);close(Math.exp(5),148.4131591025766);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
