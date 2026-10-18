@@ -381,4 +381,22 @@ assert.ok(balanced([[2,'N2O5']],[[4,'NO2'],[1,'O2']]));
   close(.0120/60,.000200); close((.0120/60)/.0500,.00400);
   close((.0600/2)/(.200**2),.750);
 }
+// Topic 5.3: integrated laws, half-lives, and a controlled blank-offset example.
+{
+  const zeroK=(.800-.500)/60;
+  close(zeroK,.00500); close(.800-zeroK*100,.300);
+  close((1/.100-1/.200)/50,.100);
+  close(.800*.5**(90/30),.100);
+  assert.equal(64*.5**3,8); assert.equal(3*8,24);
+  close(1/(4+.0250*120),1/7);
+  close(Math.log(.300/.0600)/.0400,40.23594781085251);
+  close((.800-.400)/20,(.400-.200)/10);
+  close(1/(.500*.200),10); close(1/(.500*.400),5);
+  const measured=[0,10,20].map(t=>50*.006*Math.exp(-.0200*t)+.100);
+  const correctedLog=measured.map(abs=>Math.log((abs-.100)/50));
+  close((correctedLog[1]-correctedLog[0])/10,-.0200);
+  close((correctedLog[2]-correctedLog[1])/10,-.0200);
+  const uncorrectedLog=measured.map(abs=>Math.log(abs));
+  assert.ok(Math.abs((uncorrectedLog[1]-uncorrectedLog[0])-(uncorrectedLog[2]-uncorrectedLog[1]))>.001);
+}
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');

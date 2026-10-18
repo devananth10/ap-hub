@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 5,
+  "topicId": "topic-5-3",
+  "questions": [
+    {
+      "id": "chem-5-3-001",
+      "prompt": "At fixed conditions, a single-reactant disappearance process gives a linear plot of ln([A]/1 M) versus time with slope −0.0200 s^-1. Plots of [A] and 1/[A] versus time are detectably curved. Which order and rate constant are consistent with these data?",
+      "options": [
+        "Zero order; k = 0.0200 M/s",
+        "First order; k = 0.0200 s^-1",
+        "Second order; k = 0.0200 M^-1·s^-1",
+        "First order; k = −0.0200 s^-1"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The first-order integrated law is ln([A]t/[A]0) = −kt, so the natural-log plot has slope −k. A would require a linear concentration plot and different units. C would require a linear reciprocal-concentration plot. D mistakes the negative plot slope for a negative rate constant. Dividing concentration by a fixed 1 M reference makes the logarithm dimensionless without changing the slope."
+    },
+    {
+      "id": "chem-5-3-002",
+      "prompt": "A zero-order reactant decreases from 0.800 M at t = 0 to 0.500 M at t = 60.0 s. If the same zero-order regime remains valid, what concentration is predicted at t = 100. s? Use [A]t = [A]0 − kt.",
+      "options": [
+        "0.500 M",
+        "0.200 M",
+        "0.480 M",
+        "0.300 M"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. k = (0.800 − 0.500)/60.0 = 0.00500 M/s, so [A]100 = 0.800 − (0.00500)(100.) = 0.300 M. A leaves the concentration at its 60 s value. B subtracts a further full 60 s loss from 0.500 M even though only 40 s more have passed. C multiplies the initial concentration by 60/100 instead of using the measured linear concentration loss. The positive result lies before depletion; the law must not be extrapolated to negative concentrations."
+    },
+    {
+      "id": "chem-5-3-003",
+      "prompt": "A second-order disappearance law uses −d[A]/dt = k[A]^2. The concentration falls from 0.200 M to 0.100 M in 50.0 s. From 1/[A]t − 1/[A]0 = kt, what is k?",
+      "options": [
+        "0.00200 M/s",
+        "0.0139 s^-1",
+        "0.100 M^-1·s^-1",
+        "0.300 M^-1·s^-1"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. k = (1/0.100 − 1/0.200)/50.0 = (10.0 − 5.00)/50.0 = 0.100 M^-1·s^-1. A uses a concentration difference as though the law were zero order. B uses ln(2)/50.0, a first-order calculation with wrong units for this model. D adds the reciprocal concentrations rather than subtracting. The differential convention is supplied so no stoichiometric normalization factor is hidden."
+    },
+    {
+      "id": "chem-5-3-004",
+      "prompt": "A first-order reactant has half-life 30.0 s and initial concentration 0.800 M. Assuming unchanged conditions, what is its concentration after 90.0 s?",
+      "options": [
+        "0.100 M",
+        "0.267 M",
+        "0.200 M",
+        "0 M"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Ninety seconds is three half-lives, so [A] = 0.800(1/2)^3 = 0.100 M. B divides by three instead of halving three times. C applies only two half-lives. D incorrectly treats three half-lives as complete disappearance or extrapolates a constant absolute loss; ideal first-order decay approaches zero continuously. Half-life is constant for this first-order model."
+    },
+    {
+      "id": "chem-5-3-005",
+      "prompt": "A radioactive isotope follows first-order decay with half-life 8.0 h. In a closed sample, its measured activity is proportional to the amount of that isotope. How long is required for its activity to fall from 64 arbitrary units to 8 units?",
+      "options": [
+        "8.0 h",
+        "16 h",
+        "24 h",
+        "64 h"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The sequence 64 → 32 → 16 → 8 requires three half-lives, giving 3(8.0) = 24 h. A applies one half-life. B applies two. D multiplies the initial-to-final ratio of eight by the half-life instead of counting repeated halvings. The stated activity proportionality avoids an assumption about detector response or a contribution from other isotopes."
+    },
+    {
+      "id": "chem-5-3-006",
+      "prompt": "For a second-order disappearance process, a plot of 1/[A] versus time obeys 1/[A] = (4.00 M^-1) + (0.0250 M^-1·s^-1)t. What concentration does it predict at t = 120. s?",
+      "options": [
+        "7.00 M",
+        "0.143 M",
+        "0.250 M",
+        "0.333 M"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The reciprocal concentration is 4.00 + 0.0250(120.) = 7.00 M^-1, so [A] = 1/7.00 = 0.143 M. A reports the reciprocal value as a concentration. C uses only the intercept, which gives the initial concentration 0.250 M. D omits the intercept and inverts only kt = 3.00 M^-1. The positive slope is expected for reciprocal concentration as reactant is consumed."
+    },
+    {
+      "id": "chem-5-3-007",
+      "prompt": "Only a very small concentration change is measured, and [A], ln([A]/1 M), and 1/[A] plots all appear approximately linear within the measurement uncertainty. Which conclusion is most defensible?",
+      "options": [
+        "All three orders are simultaneously exact descriptions over every concentration range.",
+        "The reaction must be first order because logarithms are always the correct transformation.",
+        "The reaction must be second order because reciprocals always amplify the true trend.",
+        "These limited data do not distinguish the models reliably; obtain a wider well-measured time/concentration range while keeping conditions controlled."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Over a narrow range, different smooth trends can look nearly linear within uncertainty, so the data may not identify a unique order. A turns limited resolution into simultaneous exact laws. B and C assign privileged status to a mathematical transformation without evidence. More discriminating data should remain within a stable reaction regime rather than changing temperature or mechanism during the comparison."
+    },
+    {
+      "id": "chem-5-3-008",
+      "prompt": "A first-order disappearance process has k = 0.0400 s^-1. How long does [A] take to decrease from 0.300 M to 0.0600 M? Use ln([A]t/[A]0) = −kt.",
+      "options": [
+        "40.2 s",
+        "6.00 s",
+        "17.3 s",
+        "125 s"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. t = ln(0.300/0.0600)/0.0400 = ln(5)/0.0400 = 40.2 s. B divides the concentration difference by k, which is not dimensionally a time for a first-order k. C uses one half-life, 0.693/k, but the concentration falls to one-fifth rather than one-half. D divides the raw ratio five by k and omits the logarithm. Taking the correct ratio also yields a positive elapsed time."
+    },
+    {
+      "id": "chem-5-3-009",
+      "prompt": "A reactant falls from 0.800 M to 0.400 M in 20.0 s, then from 0.400 M to 0.200 M in the next 10.0 s. Concentration versus time is linear throughout this interval. Which interpretation is consistent with the data?",
+      "options": [
+        "First order, because every halving must have the same half-life even though these times differ.",
+        "Second order, because successive half-lives become shorter as concentration falls.",
+        "No kinetic model can have different successive halving times.",
+        "Zero order over the measured interval, with constant absolute disappearance rate 0.0200 M/s and shorter halving time at lower concentration."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The rates are 0.400/20.0 = 0.0200 M/s and 0.200/10.0 = 0.0200 M/s, matching the stated linear concentration plot. A contradicts the unequal halving times and linear plot. B predicts the opposite half-life trend for a simple second-order disappearance law. C overlooks zero- and second-order models with concentration-dependent half-lives. A constant first-order half-life is a model-specific property, not a rule for all reactions."
+    },
+    {
+      "id": "chem-5-3-010",
+      "prompt": "For −d[A]/dt = k[A]^2 with k = 0.500 M^-1·s^-1, the second-order half-life is t1/2 = 1/(k[A]0). How does the half-life change when initial concentration increases from 0.200 M to 0.400 M at the same temperature?",
+      "options": [
+        "It stays 10.0 s because every half-life is concentration-independent.",
+        "It increases from 10.0 s to 20.0 s.",
+        "It decreases from 10.0 s to 5.00 s.",
+        "It decreases from 5.00 s to 2.50 s."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The two values are 1/(0.500 × 0.200) = 10.0 s and 1/(0.500 × 0.400) = 5.00 s. A applies the first-order constant-half-life rule to a second-order model. B makes half-life proportional rather than inversely proportional to initial concentration. D introduces an extra factor of two not present in the supplied differential convention and half-life equation. The formula is supplied, so it need not be memorized separately."
+    },
+    {
+      "id": "chem-5-3-011",
+      "prompt": "A disappearing reactant is the only time-varying absorber. Measured absorbance obeys A_meas = (50.0 M^-1)[R] + 0.100, where the constant 0.100 is a measured nonreacting background. How should the data be prepared to test a first-order concentration-time model?",
+      "options": [
+        "Take ln(A_meas) directly because a constant additive background can never affect logarithmic linearity.",
+        "Subtract 0.100, convert the remaining absorbance to [R] with the calibration, then test whether ln([R]/1 M) versus time is linear.",
+        "Add another 0.100 to every measurement before taking its logarithm.",
+        "Use 1/A_meas versus time, which is the required first-order transformation."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Removing the additive blank isolates the reactant contribution; division by 50.0 M^-1 then gives concentration. A constant multiplicative calibration changes the log intercept, but an unremoved additive background generally distorts the log-time relation. A ignores that difference. C worsens the offset. D uses an uncorrected reciprocal transformation rather than the first-order natural-log concentration test. The correction method is justified by the explicitly supplied measurement model."
+    }
+  ]
+}
