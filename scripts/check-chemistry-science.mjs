@@ -247,4 +247,8 @@ assert.ok(balanced([[2,'Fe'],[4,'Cu',2],[4,'SO4',-2]],[[2,'Cu'],[2,'Fe',2],[2,'C
 assert.ok(!balanced([[2,'Fe'],[4,'Cu',2],[4,'SO4',-2]],[[2,'Cu'],[2,'Fe',3],[2,'Cu',2],[4,'SO4',-2]]));
 assert.equal(3-2,1); // leftover hydroxide in the simplified HA frame
 assert.equal(-2-1+3,0); // two A−, one OH− and three Na+
+// Topic 4.4: accounting for the specified transformations (not a mechanism).
+assert.ok(balanced([[1,'HCl'],[1,'H2O']],[[1,'H3O',1],[1,'Cl',-1]]));
+assert.ok(balanced([[2,'H2O2']],[[2,'H2O'],[1,'O2']]));
+assert.ok(balanced([[3,'O2']],[[2,'O3']]));
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
