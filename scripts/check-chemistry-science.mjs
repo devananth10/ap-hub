@@ -445,4 +445,13 @@ assert.deepEqual(netSteps({A:-1,I:2},{I:-2,B:-2,P:2}),{A:-1,B:-2,P:2});
 assert.ok(balanced([[2,'NO2']],[[1,'NO3'],[1,'NO']]));
 assert.ok(balanced([[1,'NO3'],[1,'CO']],[[1,'NO2'],[1,'CO2']]));
 assert.ok(balanced([[1,'O3'],[1,'O']],[[2,'O2']]));
+// Topic 5.8: approximate slow-first-step laws and explicit rate conventions.
+close(2**2,4); close(2**0,1);
+close((.2*.03)/(.1*.03),2); // first-order A with free K fixed
+close(2*.003,.006); // two products per event, same event k
+close(.00300/(.200*.0500),.300);
+close(.00300/(.200**2),.0750);
+close(.00300/(.200**2*.0500),1.50);
+assert.ok(balanced([[1,'NO'],[1,'Cl2']],[[1,'NOCl2']]));
+assert.ok(balanced([[1,'NOCl2'],[1,'NO']],[[2,'NOCl']]));
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
