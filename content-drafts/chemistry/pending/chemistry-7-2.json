@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 7,
+  "topicId": "topic-7-2",
+  "questions": [
+    {
+      "id": "chem-7-2-001",
+      "prompt": "For the elementary reaction A(g) ⇌ B(g), measured forward and reverse reaction rates are 0.030 and 0.010 mol L−1 s−1. What is the instantaneous net rate of formation of B?",
+      "options": [
+        "0.040 mol L−1 s−1",
+        "0.020 mol L−1 s−1",
+        "−0.020 mol L−1 s−1",
+        "0.030 mol L−1 s−1"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Net B production is forward production minus reverse consumption: 0.030 − 0.010 = 0.020. A is incorrect: adding counts opposing conversions as if both produced B. C is incorrect: the forward rate is larger, so B increases. D is incorrect: reverse consumption cannot be neglected."
+    },
+    {
+      "id": "chem-7-2-002",
+      "prompt": "A closed fixed-volume A(g) ⇌ B(g) system has a reverse reaction rate greater than its forward rate at an instant. Which changes follow immediately?",
+      "options": [
+        "[A] decreases and [B] increases.",
+        "Both concentrations increase.",
+        "Both concentrations remain constant.",
+        "[A] increases and [B] decreases."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Reverse conversion produces A from B faster than forward conversion consumes A. A is incorrect: that requires the forward rate to dominate. B is incorrect: one-to-one interconversion in a closed vessel conserves their sum. C is incorrect: that requires equal opposing rates."
+    },
+    {
+      "id": "chem-7-2-003",
+      "prompt": "At one instant in a closed A(g) ⇌ B(g) system, [A] = [B], but the measured forward rate exceeds the reverse rate. Which conclusion is correct?",
+      "options": [
+        "The system is not at equilibrium and has net formation of B.",
+        "It is at equilibrium because concentrations are equal.",
+        "Net conversion is toward A because the reverse reaction exists.",
+        "Both directions must have zero rate."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The rate comparison, not concentration equality, determines net direction. B is incorrect: equal concentrations alone do not balance rates. C is incorrect: existence of a reverse reaction does not make it faster. D is incorrect: the stated nonzero unequal measurements contradict this."
+    },
+    {
+      "id": "chem-7-2-004",
+      "prompt": "For 2A(g) ⇌ B(g), forward and reverse rates of reaction extent are 0.040 and 0.010 mol L−1 s−1. What is d[A]/dt at this instant?",
+      "options": [
+        "−0.030 mol L−1 s−1",
+        "+0.060 mol L−1 s−1",
+        "−0.060 mol L−1 s−1",
+        "−0.100 mol L−1 s−1"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The net extent rate is 0.030; each forward extent consumes two A, so d[A]/dt = −2(0.030). A is incorrect: that omits the stoichiometric factor of two. B is incorrect: net forward conversion consumes A. D is incorrect: adding rather than subtracting the rates gives the wrong net extent."
+    },
+    {
+      "id": "chem-7-2-005",
+      "prompt": "A model for an elementary reversible A ⇌ B process uses rf = kf[A] and rr = kr[B]. At an instant, kf = 0.20 s−1, kr = 0.050 s−1, [A] = 0.10 M, and [B] = 0.80 M. What happens next?",
+      "options": [
+        "There is net conversion of A into B.",
+        "The system is at equilibrium because kf is larger.",
+        "Both rates equal 0.10 M s−1.",
+        "There is net conversion of B into A."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. rf = 0.020 M s−1 and rr = 0.040 M s−1, so the reverse direction dominates. A is incorrect: it ignores the larger reverse rate. B is incorrect: rate constants must be combined with concentrations. C is incorrect: neither multiplication gives that value."
+    },
+    {
+      "id": "chem-7-2-006",
+      "prompt": "In a closed reversible A ⇌ B system starting with only B, which early rate behavior is expected if both directions are possible?",
+      "options": [
+        "The forward rate is initially positive even with no A.",
+        "The reverse rate is initially positive, and the forward rate increases as A appears.",
+        "The reverse rate must always remain zero.",
+        "The system cannot approach equilibrium from the product side."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Initial B allows reverse events; newly formed A then permits forward events. A is incorrect: this process requires A for forward conversion. C is incorrect: B is initially available to react in reverse. D is incorrect: equilibrium can be approached from either side."
+    },
+    {
+      "id": "chem-7-2-007",
+      "prompt": "A rate graph for A ⇌ B shows rf falling from 0.080 toward 0.025 M s−1 and rr rising from zero toward 0.025 M s−1. When is there no net conversion?",
+      "options": [
+        "When rf first becomes less than its initial value.",
+        "When rr first becomes nonzero.",
+        "When both rates have reached the same value.",
+        "Only when both curves reach zero."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The net rate rf − rr vanishes when the two curves coincide. A is incorrect: it can still exceed rr. B is incorrect: a nonzero reverse rate need not equal the forward rate. D is incorrect: dynamic equilibrium allows equal nonzero rates."
+    },
+    {
+      "id": "chem-7-2-008",
+      "prompt": "A closed A ⇌ B mixture has 0.60 M A and 0.40 M B. Over a short interval, reverse conversions exceed forward conversions by 0.010 mol per liter. What are the resulting concentrations?",
+      "options": [
+        "[A] = 0.610 M and [B] = 0.390 M",
+        "[A] = 0.590 M and [B] = 0.410 M",
+        "[A] = 0.610 M and [B] = 0.410 M",
+        "[A] = 0.600 M and [B] = 0.400 M"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Net reverse conversion adds 0.010 M A and removes 0.010 M B, preserving the 1.00 M total. B is incorrect: that describes net forward conversion. C is incorrect: it creates both species without an external source. D is incorrect: unequal opposing conversions imply a net change."
+    },
+    {
+      "id": "chem-7-2-009",
+      "prompt": "Two fixed-volume systems contain the same reversible A ⇌ B process. In vessel I, rf = 0.012 and rr = 0.012 M s−1. In vessel II, rf = 0.024 and rr = 0.006 M s−1. Which classification is supported?",
+      "options": [
+        "Both are at equilibrium because both directions occur.",
+        "Neither can be at equilibrium because all rates are nonzero.",
+        "I is at equilibrium; II is undergoing net forward conversion.",
+        "I converts net in reverse; II is at equilibrium."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. I has zero net rate; II has positive net forward rate 0.018 M s−1. A is incorrect: opposing rates must also be equal. B is incorrect: nonzero equal rates characterize dynamic equilibrium. D is incorrect: neither assignment matches the supplied comparisons."
+    },
+    {
+      "id": "chem-7-2-010",
+      "prompt": "In a continuously supplied flow reactor, [A] and [B] remain constant even though independently measured rf exceeds rr for A ⇌ B. Why does concentration constancy not establish equilibrium here?",
+      "options": [
+        "Equal concentrations are always required for equilibrium.",
+        "A reverse reaction cannot occur in a flow reactor.",
+        "A constant concentration forces rf to be zero.",
+        "External flow can balance a nonzero net reaction rate."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Inputs and outputs can maintain steady composition while the chemical conversion remains net forward. A is incorrect: equality between species is not required. B is incorrect: flow does not forbid molecular reverse events. C is incorrect: material transport can offset chemical production or consumption."
+    },
+    {
+      "id": "chem-7-2-011",
+      "prompt": "For A ⇌ B, independently counted forward and reverse events in equal observation intervals are (60, 10), then (45, 25), then (35, 35). Which interpretation is consistent with this model?",
+      "options": [
+        "Net forward conversion increases throughout.",
+        "Net forward conversion decreases and reaches zero in the final interval.",
+        "The final interval has no molecular interconversion.",
+        "The reverse direction dominates in the second interval."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Forward minus reverse counts are 50, 20, and 0; both directions still occur in the last interval. A is incorrect: the differences decrease. C is incorrect: 35 events occur in each direction. D is incorrect: 45 forward events exceed 25 reverse events."
+    }
+  ]
+}

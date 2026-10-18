@@ -4,8 +4,8 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 
 - Official inventory: 91 topics in nine units; target 1,001 questions (11 per topic).
 - Live approved questions: 11 in Topic 1.1 only. Original 001–010 preserved; owner authorized validated 011.
-- Complete unpublished working sets: 50, 550 questions. These require human scientific review and owner approval; they are not additional live questions.
-- Next topic in the owner-authorized completion order: 7.2 — Direction of Reversible Reactions, ID `topic-7-2`. Finish Units 7–9 first, then reconcile earlier gaps.
+- Complete unpublished working sets: 51, 561 questions. These require human scientific review and owner approval; they are not additional live questions.
+- Next topic in the owner-authorized completion order: 7.3 — Reaction Quotient and Equilibrium Constant, ID `topic-7-3`. Finish Units 7–9 first, then reconcile earlier gaps.
 - Topic 1.5 demonstration removed entirely; its page/workspace and student storage keys are preserved. Its pending eleven-question set is separate.
 - Recovered originals: three complete sets (1.4, 1.5, 1.8) and fragments (1.6, 1.7, 2.1). Archived unchanged; complete working copies audited separately.
 - The fragments contain 29 complete recovered question objects (10/10/9); corrected partial working copies and known scope/variety flags are recorded in `qa/partial-recovery.md`. They are not complete banks and do not count toward complete-topic totals.
@@ -84,7 +84,7 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 | 6.8 | Enthalpy of Formation | `topic-6-8` | 0 | 11 | draft; human-review-pending (see QA) |
 | 6.9 | Hess’s Law | `topic-6-9` | 0 | 11 | draft; human-review-pending (see QA) |
 | 7.1 | Introduction to Equilibrium | `equilibrium` | 0 | 11 | draft; human-review-pending (see QA) |
-| 7.2 | Direction of Reversible Reactions | `topic-7-2` | 0 | 0 | not-started |
+| 7.2 | Direction of Reversible Reactions | `topic-7-2` | 0 | 11 | draft; human-review-pending (see QA) |
 | 7.3 | Reaction Quotient and Equilibrium Constant | `topic-7-3` | 0 | 0 | not-started |
 | 7.4 | Calculating the Equilibrium Constant | `topic-7-4` | 0 | 0 | not-started |
 | 7.5 | Magnitude of the Equilibrium Constant | `topic-7-5` | 0 | 0 | not-started |

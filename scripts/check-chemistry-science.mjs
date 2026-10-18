@@ -585,4 +585,9 @@ assert.deepEqual(netSteps({X:-2,Y:1},{Y:-1,Z:-1,P:1}),{X:-2,Z:-1,P:1});
 assert.notDeepEqual(netSteps({X:-2,Y:1},{Y:-1,Z:-1,P:1},{Z:-1,W:1}),{X:-2,Z:-1,P:1});
 // Topic 7.1: balanced interconversion and conserved one-to-one totals.
 close(18-18,0); [ [.65,.35],[.55,.45],[.50,.50] ].forEach(([a,b])=>close(a+b,1));
+// Topic 7.2: net rates, stoichiometric derivative and finite inventory.
+close(.030-.010,.020);close(-2*(.040-.010),-.060);
+close(.20*.10,.020);close(.050*.80,.040);
+close(.60+.010,.610);close(.40-.010,.390);close(.024-.006,.018);
+assert.deepEqual([[60,10],[45,25],[35,35]].map(([f,r])=>f-r),[50,20,0]);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
