@@ -4,8 +4,8 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 
 - Official inventory: 91 topics in nine units; target 1,001 questions (11 per topic).
 - Live approved questions: 11 in Topic 1.1 only. Original 001–010 preserved; owner authorized validated 011.
-- Complete unpublished working sets: 54, 594 questions. These require human scientific review and owner approval; they are not additional live questions.
-- Next topic in the owner-authorized completion order: 7.6 — Properties of the Equilibrium Constant, ID `topic-7-6`. Finish Units 7–9 first, then reconcile earlier gaps.
+- Complete unpublished working sets: 55, 605 questions. These require human scientific review and owner approval; they are not additional live questions.
+- Next topic in the owner-authorized completion order: 7.7 — Calculating Equilibrium Concentrations, ID `topic-7-7`. Finish Units 7–9 first, then reconcile earlier gaps.
 - Topic 1.5 demonstration removed entirely; its page/workspace and student storage keys are preserved. Its pending eleven-question set is separate.
 - Recovered originals: three complete sets (1.4, 1.5, 1.8) and fragments (1.6, 1.7, 2.1). Archived unchanged; complete working copies audited separately.
 - The fragments contain 29 complete recovered question objects (10/10/9); corrected partial working copies and known scope/variety flags are recorded in `qa/partial-recovery.md`. They are not complete banks and do not count toward complete-topic totals.
@@ -88,7 +88,7 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 | 7.3 | Reaction Quotient and Equilibrium Constant | `topic-7-3` | 0 | 11 | draft; human-review-pending (see QA) |
 | 7.4 | Calculating the Equilibrium Constant | `topic-7-4` | 0 | 11 | draft; human-review-pending (see QA) |
 | 7.5 | Magnitude of the Equilibrium Constant | `topic-7-5` | 0 | 11 | draft; human-review-pending (see QA) |
-| 7.6 | Properties of the Equilibrium Constant | `topic-7-6` | 0 | 0 | not-started |
+| 7.6 | Properties of the Equilibrium Constant | `topic-7-6` | 0 | 11 | draft; human-review-pending (see QA) |
 | 7.7 | Calculating Equilibrium Concentrations | `topic-7-7` | 0 | 0 | not-started |
 | 7.8 | Representations of Equilibrium | `topic-7-8` | 0 | 0 | not-started |
 | 7.9 | Introduction to Le Châtelier’s Principle | `topic-7-9` | 0 | 0 | not-started |

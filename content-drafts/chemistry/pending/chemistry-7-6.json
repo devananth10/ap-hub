@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 7,
+  "topicId": "topic-7-6",
+  "questions": [
+    {
+      "id": "chem-7-6-001",
+      "prompt": "At a fixed temperature, A(g) ⇌ B(g) has Kc = 4.00. What is Kc for B(g) ⇌ A(g)?",
+      "options": [
+        "−4.00",
+        "4.00",
+        "16.0",
+        "0.250"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Reversing the equation inverts K: 1/4.00 = 0.250. A is incorrect: equilibrium constants do not become negative on reversal. B is incorrect: that leaves the forward ratio unchanged. C is incorrect: that squares rather than inverts K."
+    },
+    {
+      "id": "chem-7-6-002",
+      "prompt": "For A(g) ⇌ 2B(g), Kc = 3.00. What is Kc for 2A(g) ⇌ 4B(g) at the same temperature?",
+      "options": [
+        "6.00",
+        "9.00",
+        "1.50",
+        "0.111"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Doubling every coefficient squares the entire equilibrium expression, giving 3.00². A is incorrect: K is raised to a power, not multiplied by the coefficient factor. C is incorrect: halving K is not coefficient scaling. D is incorrect: that is the inverse of the squared constant."
+    },
+    {
+      "id": "chem-7-6-003",
+      "prompt": "At one temperature, 2X(g) ⇌ Y(g) has Kc = 16.0. What is Kc for X(g) ⇌ (1/2)Y(g)?",
+      "options": [
+        "8.00",
+        "256",
+        "4.00",
+        "0.0625"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Halving the coefficients takes the positive square root of K. A is incorrect: coefficient division does not directly divide K. B is incorrect: that doubles instead of halves the coefficients. D is incorrect: that reverses the original reaction without halving."
+    },
+    {
+      "id": "chem-7-6-004",
+      "prompt": "At the same temperature, A ⇌ B has K1 = 0.20 and B ⇌ C has K2 = 0.10. What is K for the net A ⇌ C process?",
+      "options": [
+        "0.020",
+        "0.30",
+        "2.0",
+        "50"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. B cancels when equations are added, and the constants multiply: 0.20×0.10. B is incorrect: equilibrium constants multiply rather than add. C is incorrect: that divides the constants instead. D is incorrect: that inverts the product and corresponds to the reversed net process."
+    },
+    {
+      "id": "chem-7-6-005",
+      "prompt": "Supplied at one temperature are A ⇌ B with K1 = 100 and C ⇌ B with K2 = 5.0. What K corresponds to A ⇌ C?",
+      "options": [
+        "500",
+        "20",
+        "0.050",
+        "95"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Reverse the second equation, then add; K = K1/K2 = 100/5.0. A is incorrect: that adds the two equations without reversing the second and does not cancel B. C is incorrect: that is K2/K1 for the opposite net direction. D is incorrect: subtracting equations does not subtract their constants."
+    },
+    {
+      "id": "chem-7-6-006",
+      "prompt": "For N2(g) + 3H2(g) ⇌ 2NH3(g), Kp = 25.0. What is Kp for NH3(g) ⇌ (1/2)N2(g) + (3/2)H2(g) at the same temperature?",
+      "options": [
+        "5.00",
+        "0.0400",
+        "−12.5",
+        "0.200"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Reverse and halve the equation: Knew = 25.0^(−1/2) = 0.200. A is incorrect: that halves coefficients without reversing. B is incorrect: that reverses without halving. C is incorrect: K cannot be obtained by negating and halving its numerical value."
+    },
+    {
+      "id": "chem-7-6-007",
+      "prompt": "At a nonequilibrium instant for A ⇌ B, Q = 0.30. For the reversed equation B ⇌ A, what is Q for the same mixture?",
+      "options": [
+        "3.3",
+        "−0.30",
+        "0.090",
+        "It cannot be transformed unless the mixture is at equilibrium."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Reversing swaps numerator and denominator, so Qreverse = 1/0.30 ≈ 3.3 even away from equilibrium. B is incorrect: a positive concentration quotient does not change sign. C is incorrect: that squares rather than inverts Q. D is incorrect: valid quotient algebra applies at any composition where the expression is defined."
+    },
+    {
+      "id": "chem-7-6-008",
+      "prompt": "Two equilibria at one temperature are A(s) ⇌ A(g), K1 = 0.10, and A(g) + B(g) ⇌ C(g), K2 = 20.0. What is K for A(s) + B(g) ⇌ C(g)?",
+      "options": [
+        "200",
+        "20.1",
+        "2.00",
+        "No result is possible because a solid appears."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The gaseous A cancels; multiplying the constants gives 0.10×20.0 = 2.00. The pure solid is omitted. A is incorrect: that divides K2 by K1 despite adding equations in their supplied directions. B is incorrect: constants are not added. D is incorrect: heterogeneous equilibria can be combined with pure-phase activities omitted."
+    },
+    {
+      "id": "chem-7-6-009",
+      "prompt": "Three supplied equations are A ⇌ B (K1 = 2), B ⇌ C (K2 = 3), and C ⇌ D (K3 = 5), all at one temperature. What K belongs specifically to A ⇌ C?",
+      "options": [
+        "6",
+        "30",
+        "5",
+        "1.5"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Only the first two equations are needed, so K = 2×3 = 6. B is incorrect: including the third equation changes the net product to D. C is incorrect: adding K1 and K2 is not the combination rule. D is incorrect: that divides instead of multiplies the first two constants."
+    },
+    {
+      "id": "chem-7-6-010",
+      "prompt": "A student multiplies K values measured at different temperatures to calculate K for a summed equation at 298 K. What must be corrected?",
+      "options": [
+        "Replace multiplication with addition at any temperatures.",
+        "Obtain the constituent constants at 298 K before applying the product rule.",
+        "Assume every K is independent of temperature.",
+        "Convert both constants into rate constants first."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The combination rule requires consistent temperature because each equilibrium constant depends on temperature. A is incorrect: addition is not the rule and does not resolve inconsistent temperatures. C is incorrect: temperature can change equilibrium constants. D is incorrect: kinetic constants are not required for this thermodynamic algebra."
+    },
+    {
+      "id": "chem-7-6-011",
+      "prompt": "At a single temperature, 2A ⇌ B has K1 = 9 and B ⇌ 2C has K2 = 4. What K corresponds to C ⇌ A?",
+      "options": [
+        "36",
+        "6",
+        "1/36",
+        "1/6"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Adding gives 2A ⇌ 2C with K = 36; reversing and halving gives 36^(−1/2) = 1/6. A is incorrect: that belongs to 2A ⇌ 2C. B is incorrect: that belongs to A ⇌ C. C is incorrect: that reverses but fails to halve the net equation."
+    }
+  ]
+}

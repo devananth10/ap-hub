@@ -604,4 +604,9 @@ assert.ok(balanced([[2,'NOCl']],[[2,'NO'],[1,'Cl2']]));
 // Topic 7.5: magnitude interpreted with the actual powers and inventories.
 close(1e-5/.5,2e-5);close(198/2,99);close(Math.sqrt(4*.001),.06324555320336758);
 close(.9000/.000100,9000);close(.9000+.000100,.9001);
+// Topic 7.6: transformed constants and exact equation cancellation.
+close(1/4,.25);close(3**2,9);close(16**.5,4);close(.2*.1,.02);close(100/5,20);
+close(25**(-.5),.2);close(1/.3,10/3);close(.1*20,2);close(2*3,6);close((9*4)**(-.5),1/6);
+assert.deepEqual(netSteps({'A(s)':-1,'A(g)':1},{'A(g)':-1,B:-1,C:1}),{'A(s)':-1,B:-1,C:1});
+assert.deepEqual(netSteps({A:-2,B:1},{B:-1,C:2}),{A:-2,C:2});
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
