@@ -667,4 +667,8 @@ close(3+2,5);close(7-2,5);close(-Math.log10((.010*.010-.090*.001)/.100),4);
 close(.030*.1/.025,.12);close(24/2,12);close((20+40)/2,30);
 close(14+Math.log10((.030*.1-.025*.1)/.055),11.958607314841775);
 close((2*.1*.025)/(.1*.025),2);
+// Topic 8.7: protonation ratios and appropriate pK comparison.
+close(10**(3-5),.01);close(10**(8-6),100);close(10**(9-7),100);
+close(10**(6-4),100);close(14-4,10);assert.ok(3<5.5 && 5.5<8);
+assert.equal([4,6,8.5,12].sort((a,b)=>Math.abs(a-8.7)-Math.abs(b-8.7))[0],8.5);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
