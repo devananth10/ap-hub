@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 7,
+  "topicId": "topic-7-8",
+  "questions": [
+    {
+      "id": "chem-7-8-001",
+      "prompt": "A representative equilibrium box for A ⇌ B shows 6 A particles and 18 B particles. Every symbol represents the same number of molecules in the same volume. What is Kc?",
+      "options": [
+        "1/3",
+        "3",
+        "24",
+        "12"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. For this one-to-one reaction, the common concentration-per-symbol factor cancels: B/A = 18/6. A is incorrect: that corresponds to the reverse equation. C is incorrect: that is the total number of symbols. D is incorrect: that is the count difference."
+    },
+    {
+      "id": "chem-7-8-002",
+      "prompt": "A closed box initially contains 10 X2 molecules and no X atoms. For X2 ⇌ 2X, which later particle inventory conserves X atoms after four molecules dissociate?",
+      "options": [
+        "6 X2 molecules and 4 X atoms",
+        "4 X2 molecules and 6 X atoms",
+        "10 X2 molecules and 8 X atoms",
+        "6 X2 molecules and 8 X atoms"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Four dimers produce eight atoms; six dimers remain. Total X atoms are 2×6 + 8 = 20. A is incorrect: each dissociated dimer produces two atoms, not one. B is incorrect: that contains only fourteen X atoms. C is incorrect: that creates eight atoms without removing dimers."
+    },
+    {
+      "id": "chem-7-8-003",
+      "prompt": "For A + B ⇌ AB, an initial representative box contains 8 free A and 8 free B particles. Which equilibrium box is consistent with formation of 5 AB particles and no material entering or leaving?",
+      "options": [
+        "3 free A, 3 free B, and 5 AB",
+        "5 free A, 5 free B, and 3 AB",
+        "3 free A, 8 free B, and 5 AB",
+        "8 free A, 8 free B, and 5 AB"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Each AB contains one A and one B, leaving 8−5 = 3 free particles of each type. B is incorrect: that corresponds to three, not five, AB formations. C is incorrect: five B particles must also be incorporated into AB. D is incorrect: that creates additional atoms."
+    },
+    {
+      "id": "chem-7-8-004",
+      "prompt": "Equal-volume representative boxes show equilibrium for four different one-to-one reactions A ⇌ B. Which box corresponds to the largest product/reactant equilibrium ratio?",
+      "options": [
+        "8 A and 8 B",
+        "4 A and 12 B",
+        "1 A and 15 B",
+        "2 A and 14 B"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The B/A ratio is15, greater than the ratios1,3,and7 in the other boxes. A is incorrect: this ratio is1. B is incorrect: this ratio is3. D is incorrect: this ratio is7."
+    },
+    {
+      "id": "chem-7-8-005",
+      "prompt": "For A ⇌ 2B, an equilibrium box contains 4 A symbols and 8 B symbols. Each symbol represents 0.100 M of that species. What is Kc?",
+      "options": [
+        "2.00",
+        "16.0",
+        "0.625",
+        "1.60"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. [A] = 0.400 M and [B] = 0.800 M, so Kc = 0.800²/0.400 = 1.60. A is incorrect: that omits the required square on B. B is incorrect: that uses bare symbol counts without the stated concentration scale. C is incorrect: that inverts the concentration quotient."
+    },
+    {
+      "id": "chem-7-8-006",
+      "prompt": "An equilibrium box of volume V for 2A ⇌ A2 contains 4 A and 2 A2 symbols. Which box of volume 2V has the same concentrations and therefore the same equilibrium quotient?",
+      "options": [
+        "4 A and 2 A2 symbols",
+        "8 A and 4 A2 symbols",
+        "8 A and 2 A2 symbols",
+        "4 A and 4 A2 symbols"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Doubling both particle counts with volume preserves both concentrations and their mass-action quotient. A is incorrect: unchanged counts in twice the volume halve each concentration. C is incorrect: only the A concentration is preserved. D is incorrect: only the dimer concentration is preserved."
+    },
+    {
+      "id": "chem-7-8-007",
+      "prompt": "A sealed box initially contains 6 AB particles. During AB ⇌ A + B, which proposed later box is impossible because it violates atom conservation?",
+      "options": [
+        "4 AB, 2 A, and 2 B",
+        "5 AB, 1 A, and 1 B",
+        "3 AB, 3 A, and 2 B",
+        "2 AB, 4 A, and 4 B"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. This contains six A atoms but only five B atoms, whereas the initial box contains six of each. A is incorrect: this conserves six of each atom. B is incorrect: this conserves six of each atom. D is incorrect: this also conserves six of each atom."
+    },
+    {
+      "id": "chem-7-8-008",
+      "prompt": "Two equilibrium snapshots of A2 ⇌ 2A show the same numbers of dimers and atoms, but labeled atoms have exchanged pairing partners. Which model is consistent with both snapshots?",
+      "options": [
+        "Dissociation and recombination continue with no net inventory change.",
+        "Each original dimer remains permanently intact.",
+        "Only dissociation occurs.",
+        "Equal numbers of dimers and free atoms are required."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Partner exchange reveals microscopic events while balanced opposing processes preserve average counts. B is incorrect: changed partners contradict this. C is incorrect: that would reduce the dimer count with no offsetting recombination. D is incorrect: balanced rates do not require equal particle inventories."
+    },
+    {
+      "id": "chem-7-8-009",
+      "prompt": "For AB ⇌ A + B, a box starts with 6 AB particles and reaches an equilibrium snapshot containing 4 AB particles. If no other species occur, what free particles must be shown?",
+      "options": [
+        "4 A and 4 B",
+        "2 A and no B",
+        "2 A and 2 B",
+        "1 A and 1 B"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Two net AB dissociations release two particles of each element. A is incorrect: that corresponds to four dissociations. B is incorrect: each dissociation produces both elements. D is incorrect: that accounts for only one missing AB particle."
+    },
+    {
+      "id": "chem-7-8-010",
+      "prompt": "A model initially shows 8 N2O4 molecules. A later closed-box snapshot for N2O4 ⇌ 2NO2 shows 4 N2O4 and 8 NO2 molecules. Which comparison is correct?",
+      "options": [
+        "The later box violates conservation because it has more molecules.",
+        "The later box contains twice as many N atoms.",
+        "The total molecule count remains8.",
+        "Atom counts are conserved although the total molecule count increases from8 to12."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Both boxes contain16 N atoms and32 O atoms. Dissociation increases molecule number without creating atoms. A is incorrect: molecule number need not be conserved in a chemical reaction. B is incorrect: the initial dimers already contain two N atoms each. C is incorrect: the later inventory contains4+8=12 molecules."
+    },
+    {
+      "id": "chem-7-8-011",
+      "prompt": "An equilibrium particle diagram for 2A ⇌ B gives numbers of A and B symbols but provides no volume or concentration-per-symbol scale. Why can those counts alone be insufficient for a numerical Kc?",
+      "options": [
+        "Kc can never be estimated from any particle model.",
+        "The concentration scale does not cancel in [B]/[A]².",
+        "Balanced coefficients should be ignored when counting particles.",
+        "The particle numbers must be equal at equilibrium."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Unlike a one-to-one ratio, this expression retains one inverse concentration factor, so the diagram needs a scale. A is incorrect: a model with a concentration scale can be used. C is incorrect: the exponent two is essential. D is incorrect: equilibrium does not require equal counts."
+    }
+  ]
+}

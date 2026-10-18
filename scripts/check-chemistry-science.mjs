@@ -618,4 +618,9 @@ const smallProduct = (1.003-Math.sqrt(1.003**2-4*.01*.0002))/(2*.01);
 close(smallProduct/((.1-smallProduct)*(.2-smallProduct)),.01);
 assert.ok(Math.abs(.0002-smallProduct)/smallProduct<.0031 && smallProduct/.1<.0021);
 close(.4/.2,2);close(.8-.2,.6);close(.8**2/.2**2,16);
+// Topic 7.8: representative boxes, density scaling and atom inventories.
+close(18/6,3);close(2*6+8,20);close(3+5,8);close(.8**2/.4,1.6);
+close(8/2,4);close(4/2,2);assert.notEqual(3+3,3+2);
+close(4+2,6);close(8*2,4*2+8);close(8*4,4*4+8*2);close(4+8,12);
+assert.ok(balanced([[1,'N2O4']],[[2,'NO2']]));
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
