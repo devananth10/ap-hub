@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 9,
+  "topicId": "topic-9-2",
+  "questions": [
+    {
+      "id": "chem-9-2-001",
+      "prompt": "For N2(g) +3H2(g) →2NH3(g), use S° values191.6,130.7,and192.8 J mol−1 K−1, respectively. What is ΔS° for the equation as written?",
+      "options": [
+        "+198.1 J K−1",
+        "−129.5 J K−1",
+        "+63.3 J K−1",
+        "−198.1 J K−1"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Products minus reactants gives2(192.8)−[191.6+3(130.7)]=−198.1. A is incorrect: that reverses the subtraction. B is incorrect: that ignores all stoichiometric coefficients. C is incorrect: that does not give the coefficient-weighted product-minus-reactant sum."
+    },
+    {
+      "id": "chem-9-2-002",
+      "prompt": "For2H2(g)+O2(g)→2H2O(l), S°(H2)=130.7, S°(O2)=205.2, and S°(H2O(l))=69.9 J mol−1 K−1. What is ΔS°?",
+      "options": [
+        "+326.8 J K−1",
+        "−326.8 J K−1",
+        "−65.4 J K−1",
+        "−0.3268 J K−1"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. 2(69.9)−[2(130.7)+205.2]=−326.8; the gas-to-liquid formation decreases entropy. A is incorrect: that reverses products minus reactants. C is incorrect: that omits the H2 reactant contribution. D is incorrect: that converts to kJ numerically but retains J units."
+    },
+    {
+      "id": "chem-9-2-003",
+      "prompt": "At the stated temperature, S° of H2O(g) is188.8 and of H2O(l) is69.9 J mol−1 K−1. What is the standard entropy change for1 mol of liquid becoming vapor?",
+      "options": [
+        "−118.9 J K−1",
+        "+258.7 J K−1",
+        "+118.9 J K−1",
+        "0 J K−1"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Subtract liquid entropy from gas entropy:188.8−69.9=118.9. A is incorrect: that is condensation rather than vaporization. B is incorrect: that adds the two phase entropies. D is incorrect: identical chemical formulas do not imply identical phase entropies."
+    },
+    {
+      "id": "chem-9-2-004",
+      "prompt": "For CaCO3(s)→CaO(s)+CO2(g), S° values are92.9,39.8,and213.8 J mol−1 K−1. What is ΔS°?",
+      "options": [
+        "+160.7 J K−1",
+        "−160.7 J K−1",
+        "+120.9 J K−1",
+        "+346.5 J K−1"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. 39.8+213.8−92.9=160.7. B is incorrect: that reverses the entropy sum. C is incorrect: that omits the CaO product contribution. D is incorrect: that adds the reactant entropy instead of subtracting it."
+    },
+    {
+      "id": "chem-9-2-005",
+      "prompt": "For2NO2(g)→N2O4(g), S°(NO2)=240.1 and S°(N2O4)=304.3 J mol−1 K−1. What is ΔS°?",
+      "options": [
+        "+64.2 J K−1",
+        "−175.9 J K−1",
+        "+175.9 J K−1",
+        "+544.4 J K−1"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. 304.3−2(240.1)=−175.9. A is incorrect: that omits the factor two on NO2. C is incorrect: that reverses the subtraction. D is incorrect: that adds one reactant molar entropy rather than subtracting two."
+    },
+    {
+      "id": "chem-9-2-006",
+      "prompt": "For Fe2O3(s)+3CO(g)→2Fe(s)+3CO2(g), use S° values87.4,197.7,27.3,and213.8 J mol−1 K−1, respectively. What is ΔS°?",
+      "options": [
+        "−39.1 J K−1",
+        "−15.5 J K−1",
+        "+138.5 J K−1",
+        "+15.5 J K−1"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. [2(27.3)+3(213.8)]−[87.4+3(197.7)]=696.0−680.5=15.5. A is incorrect: that sets the elemental iron entropy to zero. B is incorrect: that reverses the subtraction. C is incorrect: that does not apply the full stoichiometric sum."
+    },
+    {
+      "id": "chem-9-2-007",
+      "prompt": "A table lists S°(O2(g))=205.2 J mol−1 K−1 at298 K. A student replaces it with zero because oxygen is in its elemental reference state. What is the correction?",
+      "options": [
+        "Use205.2; zero reference formation enthalpy is not zero standard molar entropy.",
+        "Use zero for every elemental reactant but not elemental products",
+        "Use−205.2 because oxygen is an element",
+        "Use205.2 only if O2 first ionizes"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Absolute entropy data for elements at ordinary temperatures are not discarded in the reaction entropy sum. B is incorrect: the same entropy accounting applies to both sides. C is incorrect: species molar entropy is not negated because of elemental identity. D is incorrect: ionization is not needed to include a gas entropy."
+    },
+    {
+      "id": "chem-9-2-008",
+      "prompt": "A phase change has standard molar entropy change+118.9 J mol−1 K−1. What entropy change corresponds to0.200 mol undergoing that change under matching conditions?",
+      "options": [
+        "+594.5 J K−1",
+        "−23.78 J K−1",
+        "+23.78 J K−1",
+        "+118.9 J K−1"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The entropy change scales with amount:0.200×118.9=23.78. A is incorrect: that divides by amount rather than multiplying. B is incorrect: the process direction is unchanged. D is incorrect: that leaves the one-mole value unscaled."
+    },
+    {
+      "id": "chem-9-2-009",
+      "prompt": "For A(s)→A(l), the standard entropy change for one mole is+25.0 J K−1. What is ΔS° for2 mol undergoing the reverse phase change?",
+      "options": [
+        "−50.0 J K−1",
+        "+50.0 J K−1",
+        "−12.5 J K−1",
+        "−25.0 J K−1"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Reverse the sign and double the amount:−2(25.0)=−50.0. B is incorrect: that scales but does not reverse. C is incorrect: that halves instead of doubles. D is incorrect: that reverses but leaves the amount unchanged."
+    },
+    {
+      "id": "chem-9-2-010",
+      "prompt": "For2X(g)→X2(g), ΔS°=−40.0 J K−1 per equation as written. If S°(X)=100.0 J mol−1 K−1, what is S°(X2)?",
+      "options": [
+        "60.0 J mol−1 K−1",
+        "160.0 J mol−1 K−1",
+        "240.0 J mol−1 K−1",
+        "−40.0 J mol−1 K−1"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. S°(X2)−2(100.0)=−40.0, so S°(X2)=160.0. A is incorrect: that omits the reactant coefficient two. C is incorrect: that uses the wrong sign for the given change. D is incorrect: that equates a reaction change with a species molar entropy."
+    },
+    {
+      "id": "chem-9-2-011",
+      "prompt": "For KCl(s)→K+(aq)+Cl−(aq), use consistent tabulated S° values82.6,102.5,and56.5 J mol−1 K−1. What is ΔS° for the stated dissolution amount of1 mol?",
+      "options": [
+        "−76.4 J K−1",
+        "+19.9 J K−1",
+        "0 J K−1",
+        "+76.4 J K−1"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. 102.5+56.5−82.6=76.4 using both dissolved-ion contributions. A is incorrect: that reverses products minus reactants. B is incorrect: that omits the chloride product entropy. C is incorrect: unchanged total charge does not imply unchanged entropy."
+    }
+  ]
+}

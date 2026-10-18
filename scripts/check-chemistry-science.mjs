@@ -682,4 +682,9 @@ close((14-4.75)+Math.log10(.1/.2),8.948970004336019);close(.05*.2,.1*.1);
 close(-Math.log10(1.8e-5),4.7447274948966935);close(Math.log10(5)-Math.log10(.5),1);
 close(4.76+Math.log10((.820/82)/.020),4.458970004336019);
 close(-Math.log10(2e-5*.02/.1),5.3979400086720375);
+// Topic 9.2: independent coefficient-weighted absolute entropy sums.
+close(2*192.8-(191.6+3*130.7),-198.1);close(2*69.9-(2*130.7+205.2),-326.8);
+close(188.8-69.9,118.9);close(39.8+213.8-92.9,160.7);close(304.3-2*240.1,-175.9);
+close(2*27.3+3*213.8-(87.4+3*197.7),15.5);close(.2*118.9,23.78);
+close(-2*25,-50);close(-40+2*100,160);close(102.5+56.5-82.6,76.4);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
