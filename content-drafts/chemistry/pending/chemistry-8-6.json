@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 8,
+  "topicId": "topic-8-6",
+  "questions": [
+    {
+      "id": "chem-8-6-001",
+      "prompt": "Why is the O−H proton of CH3COOH much more acidic than the O−H proton of CH3CH2OH?",
+      "options": [
+        "Acetic acid contains more total hydrogen atoms",
+        "Ethanol cannot form any conjugate base",
+        "Acetate has no net negative charge",
+        "The carboxylate conjugate base delocalizes negative charge over two oxygens."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Resonance stabilization favors formation of acetate relative to the more localized ethoxide ion. A is incorrect: ethanol actually has more, and total hydrogen count does not establish acidity. B is incorrect: it can lose an O−H proton to form ethoxide, although much less readily. C is incorrect: resonance distributes the charge but does not remove its net value."
+    },
+    {
+      "id": "chem-8-6-002",
+      "prompt": "ClCH2COOH is more acidic than CH3COOH. Which structural explanation is most appropriate?",
+      "options": [
+        "Chlorine donates its proton to water",
+        "Chlorine withdraws electron density inductively and stabilizes the carboxylate conjugate base.",
+        "The C−Cl bond must break in every acid ionization",
+        "The extra atom makes every molecule with chlorine a strong acid"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. An electron-withdrawing substituent near the acidic group helps stabilize the anionic product. A is incorrect: the acidic proton is on the carboxyl O−H group, not chlorine. C is incorrect: proton transfer does not require cleavage of that bond. D is incorrect: substituent identity and position matter; chlorine alone does not guarantee strong acidity."
+    },
+    {
+      "id": "chem-8-6-003",
+      "prompt": "Two otherwise similar carboxylic acids have a chlorine substituent close to or several bonds away from the COOH group. Which trend is expected from induction?",
+      "options": [
+        "The farther chlorine must always have the larger effect",
+        "Position cannot affect acidity",
+        "The closer chlorine generally gives greater acid strengthening.",
+        "Both lose a proton from chlorine rather than oxygen"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The electron-withdrawing inductive effect decreases with distance through bonds. A is incorrect: the through-bond inductive influence weakens with distance. B is incorrect: substituent distance can change conjugate-base stabilization. D is incorrect: neither structure has the acidic proton on chlorine."
+    },
+    {
+      "id": "chem-8-6-004",
+      "prompt": "For the similar oxyacids HOCl and HOBr, why is HOCl the stronger acid?",
+      "options": [
+        "The more electronegative Cl withdraws electron density and better stabilizes the conjugate base.",
+        "The H atom is bonded directly to Cl in HOCl",
+        "Cl is less electronegative than Br",
+        "HOCl is stronger because every chlorine compound is ionic"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. With the same H−O−X framework and oxygen count, central-atom electronegativity supports the trend. B is incorrect: it is bonded to oxygen. C is incorrect: the stated electronegativity trend is reversed. D is incorrect: HOCl is molecular and the structural comparison concerns conjugate-base stability."
+    },
+    {
+      "id": "chem-8-6-005",
+      "prompt": "Why does adding oxygen atoms generally increase acid strength in an oxyacid series with the same central atom and the acidic H bonded to oxygen?",
+      "options": [
+        "It necessarily increases the number of acidic hydrogens",
+        "Additional oxygens withdraw electron density and help stabilize the conjugate base.",
+        "It makes the conjugate base more eager to accept a proton",
+        "It eliminates all O−H bonds before dissolution"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Inductive withdrawal and charge delocalization favor deprotonation in the higher-oxygen oxyacids. A is incorrect: oxygen addition need not add any hydrogen. C is incorrect: greater conjugate-base stability corresponds to weaker basicity. D is incorrect: the acid still contains its proton before ionization."
+    },
+    {
+      "id": "chem-8-6-006",
+      "prompt": "HI is a stronger acid in water than HF despite F being more electronegative. Which factor explains this down-group comparison?",
+      "options": [
+        "The H−F bond is weaker than the H−I bond",
+        "HF has no hydrogen capable of transfer",
+        "Iodide must be a stronger base than fluoride",
+        "The weaker H−I bond and the large, polarizable iodide conjugate base favor proton loss."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Bond strength changes down the group can outweigh an electronegativity-only argument for these binary acids. A is incorrect: the relevant bond-strength trend is opposite. B is incorrect: HF can donate a proton but does so incompletely in water. C is incorrect: the conjugate base of the stronger acid is weaker."
+    },
+    {
+      "id": "chem-8-6-007",
+      "prompt": "Which structural feature lets NH3 act as a Brønsted base toward hydronium?",
+      "options": [
+        "The nitrogen lone pair can form a bond to an incoming proton.",
+        "An N−H bond must release an electron to become metallic",
+        "NH3 contains a pre-existing hydroxide ion",
+        "Nitrogen must gain an additional lone pair before any proton can bind"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Proton acceptance converts NH3 to NH4+ using its available electron pair. B is incorrect: acid-base proton transfer is not metal formation. C is incorrect: it is a molecular base and produces hydroxide by reacting with water. D is incorrect: its existing lone pair provides the required pair."
+    },
+    {
+      "id": "chem-8-6-008",
+      "prompt": "Which proton in CH3C(=O)OH is most readily lost in its ordinary aqueous weak-acid behavior?",
+      "options": [
+        "Any methyl C−H proton equally readily",
+        "A proton attached to the carbonyl oxygen that is not present in the written structure",
+        "The proton on the O−H bond.",
+        "No proton, because all carboxylic acids are non-acidic"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Its loss gives resonance-stabilized carboxylate; removing a methyl C−H proton is much less favorable. A is incorrect: those removals do not give the same conjugate-base stabilization. B is incorrect: the neutral structure has its O−H proton on the hydroxyl oxygen. D is incorrect: carboxylic acids are a common weak-acid class."
+    },
+    {
+      "id": "chem-8-6-009",
+      "prompt": "Perchloric acid is strong in water, whereas acetic acid is weak. Which comparison of their conjugate bases is consistent with conjugate stability?",
+      "options": [
+        "ClO4− is a much weaker proton acceptor than CH3COO−.",
+        "ClO4− must be the stronger base because it contains more oxygen atoms",
+        "Both bases must be equally strong because they carry−1 charge",
+        "CH3COO− cannot accept a proton because it has resonance"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The very stable conjugate base of a strong acid has little tendency to recapture a proton from water. B is incorrect: oxygen count alone does not imply stronger proton acceptance. C is incorrect: net charge alone does not specify base strength. D is incorrect: resonance stabilizes acetate but does not prevent its weak basicity."
+    },
+    {
+      "id": "chem-8-6-010",
+      "prompt": "Why can OH− accept a proton more readily than H2O in their conjugate relationship?",
+      "options": [
+        "OH− has no electron pairs and accepts a proton without bonding",
+        "Its negative charge and available oxygen electron density favor formation of neutral H2O.",
+        "H2O and OH− must have equal basicity because both contain oxygen",
+        "OH− is basic only because it contains two oxygens"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Protonation of hydroxide relieves its negative charge, making it a much stronger base than neutral water. A is incorrect: oxygen electron pairs participate in the bond. C is incorrect: charge and bonding environment differ. D is incorrect: hydroxide contains one oxygen."
+    },
+    {
+      "id": "chem-8-6-011",
+      "prompt": "For a typical diprotic acid H2A, the second proton is less readily removed from HA− than the first from neutral H2A. Which structural-charge argument supports this trend?",
+      "options": [
+        "Each deprotonation always increases acid strength",
+        "HA− has no hydrogen left",
+        "The second proton is removed as an electron",
+        "Removing a proton from an already negative ion creates a more highly charged anion."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The growing negative charge generally makes further proton loss less favorable, contributing to Ka2<Ka1. A is incorrect: successive ionizations commonly become less favorable. B is incorrect: it still contains one acidic hydrogen in this notation. C is incorrect: acid ionization transfers a proton, not an electron."
+    }
+  ]
+}
