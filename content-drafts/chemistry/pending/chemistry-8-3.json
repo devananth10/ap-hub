@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 8,
+  "topicId": "topic-8-3",
+  "questions": [
+    {
+      "id": "chem-8-3-001",
+      "prompt": "A0.100 M monoprotic weak acid HA has Ka=1.0×10−5 at25°C. Using a justified small-ionization approximation, what is its pH?",
+      "options": [
+        "Approximately3.00",
+        "1.00",
+        "5.00",
+        "11.00"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. [H3O+]≈√(KaC)=1.0×10−3 M, only1% of the initial acid, so the approximation is consistent. B is incorrect: that assumes complete ionization. C is incorrect: that sets hydronium equal to Ka. D is incorrect: that reports pOH instead of pH."
+    },
+    {
+      "id": "chem-8-3-002",
+      "prompt": "A0.0400 M weak base B has Kb=4.0×10−6 at25°C. What is its approximate pH?",
+      "options": [
+        "3.40",
+        "12.60",
+        "10.60",
+        "4.40"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. [OH−]≈√(KbC)=4.0×10−4 M, giving pOH3.398 and pH10.602; ionization is about1%. A is incorrect: that is pOH. B is incorrect: that is two pH units too high. D is incorrect: that does not follow the hydroxide-to-pH calculation."
+    },
+    {
+      "id": "chem-8-3-003",
+      "prompt": "A0.100 M solution of a monoprotic weak acid HA has measured pH3.00 at25°C. No conjugate base was initially added. What is Ka, neglecting water autoionization?",
+      "options": [
+        "1.00×10−3",
+        "1.00×10−2",
+        "9.90×10^4",
+        "Approximately1.01×10−5"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. [H3O+]=[A−]=0.00100 M and [HA]=0.0990 M, so Ka=10−6/0.0990. A is incorrect: that is hydronium concentration, not Ka. B is incorrect: that is the fractional ionization, not the equilibrium quotient. C is incorrect: that is the reciprocal of Ka."
+    },
+    {
+      "id": "chem-8-3-004",
+      "prompt": "A0.200 M monoprotic acid is2.00% ionized. What is its acid-ionization constant under the dilute concentration model?",
+      "options": [
+        "2.00×10−2",
+        "8.16×10−5",
+        "4.00×10−3",
+        "8.00×10−7"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Ionized concentration is0.00400 M and remaining HA is0.196 M; Ka=0.00400²/0.196. A is incorrect: that is fractional ionization, not Ka. C is incorrect: that is the ionized concentration. D is incorrect: that is approximately100 times too small, as would result from using a tenfold-too-small ionized concentration in the squared numerator."
+    },
+    {
+      "id": "chem-8-3-005",
+      "prompt": "At25°C, HA has Ka=2.0×10−5. What is Kb for its conjugate base A−?",
+      "options": [
+        "2.0×10−5",
+        "2.0×10−19",
+        "5.0×10−10",
+        "5.0×10^4"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. For a conjugate pair KaKb=Kw=1.0×10−14, so Kb=Kw/Ka. A is incorrect: acid and conjugate-base constants are not generally equal. B is incorrect: that multiplies Ka by Kw instead of dividing. D is incorrect: that is1/Ka and omits Kw."
+    },
+    {
+      "id": "chem-8-3-006",
+      "prompt": "A conjugate acid-base pair at25°C has pKa4.80. What is pKb of the conjugate base?",
+      "options": [
+        "9.20",
+        "4.80",
+        "19.20",
+        "2.92"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. pKa+pKb=pKw=14.00, so pKb=14.00−4.80. B is incorrect: equal acid and base pK values are not implied. C is incorrect: the relation requires subtraction, not addition. D is incorrect: pK values are summed in the relation, not divided."
+    },
+    {
+      "id": "chem-8-3-007",
+      "prompt": "A weak monoprotic acid solution is diluted with water at constant temperature, in a range where water autoionization is negligible. What usually happens to hydronium concentration and percent ionization?",
+      "options": [
+        "Both increase.",
+        "Hydronium concentration decreases while percent ionization increases.",
+        "Both decrease.",
+        "Hydronium increases while percent ionization decreases."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. For small ionization, [H3O+]≈√(KaC) decreases with C, but the fraction≈√(Ka/C) increases. A is incorrect: dilution lowers the hydronium concentration despite increasing the fraction ionized. C is incorrect: the fraction ionized increases as acid concentration falls. D is incorrect: both trends are reversed."
+    },
+    {
+      "id": "chem-8-3-008",
+      "prompt": "For HA(aq) + H2O(l) ⇌ H3O+(aq) + A−(aq), initial [HA]=0.100 M and Ka=0.0500. Which equilibrium hydronium concentration satisfies the exact acid mass balance, neglecting water autoionization?",
+      "options": [
+        "0.0707 M",
+        "0.100 M",
+        "0.00500 M",
+        "0.0500 M"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. x²/(0.100−x)=0.0500 is satisfied by x=0.0500; ionization is50%, so neglecting x in the denominator is invalid. A is incorrect: that is√(KaC), obtained by an invalid small-x approximation here. B is incorrect: complete consumption leaves no HA and cannot satisfy a finite Ka. C is incorrect: its quotient is much smaller than0.0500."
+    },
+    {
+      "id": "chem-8-3-009",
+      "prompt": "A weak base B reacts with water by B + H2O ⇌ BH+ + OH−. In an initially base-only solution with small ionization and negligible water contribution, which major-species description is correct?",
+      "options": [
+        "All B becomes free OH− without any conjugate acid.",
+        "Most base remains B, with approximately equal smaller concentrations of BH+ and OH−.",
+        "[BH+] must equal the initial base concentration.",
+        "[H3O+] exceeds [OH−] because BH+ is an acid."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Each base ionization produces one BH+ and one OH−; small ionization leaves most B unchanged. A is incorrect: proton transfer also produces BH+ and weak ionization is incomplete. C is incorrect: that assumes complete reaction. D is incorrect: the base solution produces hydroxide and is basic."
+    },
+    {
+      "id": "chem-8-3-010",
+      "prompt": "Two conjugate acids HA and HB have Ka values1.0×10−4 and1.0×10−8 at25°C. Which comparison of their conjugate bases is correct?",
+      "options": [
+        "A− is stronger by10^4.",
+        "Both bases have equal strength because both are anions.",
+        "B− is the stronger base; its Kb is10^4 times that of A−.",
+        "Kb for both equals the parent Ka."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Kb(A−)=10−10 and Kb(B−)=10−6; the weaker acid has the stronger conjugate base. A is incorrect: that reverses the inverse Ka/Kb relationship. B is incorrect: charge alone does not determine base strength. D is incorrect: the constants are related by their product Kw, not equality."
+    },
+    {
+      "id": "chem-8-3-011",
+      "prompt": "Two0.100 M weak monoprotic acids HX and HY have Ka values1.0×10−4 and1.0×10−6. Assuming no other solutes and negligible water contribution, which has the lower pH and why?",
+      "options": [
+        "HX, because its larger Ka gives a larger equilibrium hydronium concentration.",
+        "HY, because a smaller Ka produces more hydronium.",
+        "They must have equal pH because their initial concentrations match.",
+        "HX, because it must ionize100% whenever Ka exceeds10−5."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. At equal analytical concentration, the stronger weak acid ionizes to a greater extent and has lower pH. B is incorrect: that reverses the strength-ionization relationship. C is incorrect: their different equilibrium constants produce different ionization fractions. D is incorrect: there is no such complete-ionization threshold; its ionization is still partial."
+    }
+  ]
+}

@@ -652,4 +652,10 @@ close((.025*.01+.075*.03)/.1,.025);close(14+Math.log10(.01/100),10);
 const diluteH=(1e-8+Math.sqrt((1e-8)**2+4e-14))/2;
 assert.ok(-Math.log10(diluteH)<7 && -Math.log10(diluteH)>6.97);
 relativeClose(diluteH-1e-14/diluteH,1e-8);
+// Topic 8.3: weak equilibria, exact balances and conjugate constants.
+close(-Math.log10(Math.sqrt(1e-5*.1)),3);close(14+Math.log10(Math.sqrt(4e-6*.04)),10.602059991327963);
+relativeClose(.001**2/(.1-.001),1.0101010101010101e-5);
+relativeClose((.2*.02)**2/(.2-.2*.02),8.16326530612245e-5);
+relativeClose(1e-14/2e-5,5e-10);close(14-4.8,9.2);close(.05**2/(.1-.05),.05);
+close((1e-14/1e-8)/(1e-14/1e-4),1e4);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
