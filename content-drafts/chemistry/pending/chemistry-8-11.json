@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 8,
+  "topicId": "topic-8-11",
+  "questions": [
+    {
+      "id": "chem-8-11-001",
+      "prompt": "How does adding dilute strong acid generally affect Mg(OH)2 solubility at fixed temperature if complex formation is negligible?",
+      "options": [
+        "It increases solubility by consuming OH− from the dissolution equilibrium.",
+        "It decreases solubility because H3O+ is a common ion of Mg(OH)2",
+        "It increases Ksp directly",
+        "It has no effect because all solids ignore solution pH"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Hydronium neutralizes hydroxide, favoring further dissolution to replenish a product. B is incorrect: hydronium is not a constituent ion of the hydroxide solid. C is incorrect: acid changes solution composition, not the fixed-temperature constant. D is incorrect: salts containing hydroxide can be strongly pH-sensitive."
+    },
+    {
+      "id": "chem-8-11-002",
+      "prompt": "Why can a carbonate solid dissolve more readily in acid than in neutral water?",
+      "options": [
+        "Acid supplies extra free carbonate",
+        "Protonation necessarily makes Ksp zero",
+        "Carbonate is protonated, reducing free CO3^2− and favoring dissolution.",
+        "The solid becomes electrically charged as a whole and disappears without products"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Acid-base consumption of a constituent anion pulls the dissolution equilibrium forward; further carbonic-acid chemistry can reinforce this. A is incorrect: it consumes carbonate by protonation. B is incorrect: Ksp is unchanged at fixed temperature. D is incorrect: dissolution and proton transfer conserve atoms and charge."
+    },
+    {
+      "id": "chem-8-11-003",
+      "prompt": "CaF2 is placed in dilute acid. HF is a weak acid, and no metal complexes form. What qualitative effect is expected?",
+      "options": [
+        "Less dissolution because HF supplies a large common-ion fluoride concentration regardless of pH",
+        "No pH effect because fluorine is a nonmetal",
+        "All Ca2+ is reduced to calcium metal",
+        "Greater dissolution because F− is converted partly into HF."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Removing free fluoride through protonation allows more CaF2 to dissolve. A is incorrect: protonation lowers free F− rather than supplying it as assumed. B is incorrect: the anion acid-base equilibrium, not element classification, matters. C is incorrect: acid-base solubility changes do not imply metal reduction."
+    },
+    {
+      "id": "chem-8-11-004",
+      "prompt": "AgCl is exposed to dilute HNO3 at fixed temperature. Assume no complexes, activity corrections, or side reactions; Cl− is not appreciably protonated. What pH-specific effect is expected?",
+      "options": [
+        "A large increase because every anion is readily protonated in water",
+        "Little direct enhancement of dissolution from protonating chloride.",
+        "A decrease because HNO3 adds common Cl−",
+        "Ksp must increase in exact proportion to acidity"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Chloride is the very weak conjugate base of a strong acid, so acid does not substantially remove it as molecular HCl in this model. A is incorrect: conjugate-base strength matters. C is incorrect: nitric acid supplies nitrate, not chloride. D is incorrect: composition does not change Ksp at fixed temperature."
+    },
+    {
+      "id": "chem-8-11-005",
+      "prompt": "At constant temperature, OH− is added to a saturated Mg(OH)2 solution while complexation remains negligible. What happens to its molar solubility?",
+      "options": [
+        "It increases because all high-pH solutions dissolve hydroxides",
+        "It remains unchanged because OH− is absent from Ksp",
+        "It decreases because added hydroxide is a common ion.",
+        "Ksp decreases because hydroxide was added"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Higher free OH− favors solid formation until the ion product again matches Ksp. A is incorrect: hydroxide common-ion suppression applies here. B is incorrect: OH− appears squared in the expression. D is incorrect: the constant is unchanged at fixed temperature."
+    },
+    {
+      "id": "chem-8-11-006",
+      "prompt": "A salt contains an anion that is a weak base. Its solutions are held separately at lower and higher pH, without metal complexation. Why may lower pH increase total dissolved salt?",
+      "options": [
+        "More anion is protonated, reducing the free anion that enters Ksp.",
+        "Lower pH always makes every ion concentration individually smaller",
+        "The salt changes its stoichiometric formula in the Ksp expression",
+        "The equilibrium constant must become negative"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Coupling to proton transfer allows greater total dissolution even though the free-ion product remains constrained. B is incorrect: more metal can dissolve while free anion is consumed. C is incorrect: the original dissolution equation remains the reference. D is incorrect: equilibrium constants remain positive."
+    },
+    {
+      "id": "chem-8-11-007",
+      "prompt": "A metal hydroxide dissolves further after acidification at unchanged temperature. Which statement about its Ksp is correct?",
+      "options": [
+        "Ksp must increase because more total metal dissolves",
+        "Ksp remains the same; free-ion concentrations redistribute.",
+        "Ksp must decrease because acid was consumed",
+        "Ksp no longer applies whenever any acid is present"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Acid consumes hydroxide, and more solid dissolves while equilibrium still satisfies the same constant. A is incorrect: solubility and Ksp are not interchangeable when other equilibria change. C is incorrect: consuming acid does not alter the temperature-specific constant. D is incorrect: the dissolution equilibrium still constrains free ions under the stated model."
+    },
+    {
+      "id": "chem-8-11-008",
+      "prompt": "Which constituent makes a salt especially likely to show acid-enhanced solubility through anion protonation?",
+      "options": [
+        "An anion that is an extremely weak proton acceptor under the conditions",
+        "An inert neutral solid contaminant with no ions",
+        "A cation that is stipulated to have no acid-base or complexation behavior, paired with an inert anion",
+        "An anion that is an appreciable weak base in water."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Protonation removes free basic anion from the dissolution equilibrium. A is incorrect: such an anion is less readily removed by acid. B is incorrect: it does not provide the specified acid-base coupling. C is incorrect: no relevant pH-coupled process is supplied."
+    },
+    {
+      "id": "chem-8-11-009",
+      "prompt": "An aqueous Mg2+ solution is made more basic. Over the range considered, soluble hydroxo complexes are negligible. Why can Mg(OH)2 precipitate?",
+      "options": [
+        "OH− removes all Mg atoms by evaporation",
+        "Increasing OH− raises the ion product until it can exceed Ksp.",
+        "Higher pH forces Ksp to zero",
+        "Precipitation requires the solution to contain no water"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Once the free-ion product is too large, solid formation reduces dissolved concentrations toward saturation. A is incorrect: that is not the precipitation mechanism. C is incorrect: the fixed-temperature Ksp remains unchanged. D is incorrect: the solid can form directly from an aqueous mixture."
+    },
+    {
+      "id": "chem-8-11-010",
+      "prompt": "Compare adding a small amount of HCl or MgCl2 to saturated Mg(OH)2 at fixed temperature and negligible volume change. No complexes form. Which comparison is correct?",
+      "options": [
+        "Both are equivalent because both contain chloride",
+        "Both raise Ksp because dissolved salt concentration increases",
+        "HCl favors dissolution by consuming OH−; MgCl2 suppresses it by supplying common Mg2+.",
+        "HCl supplies common hydroxide while MgCl2 neutralizes it"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The two additions affect different free-ion concentrations in opposite directions. A is incorrect: chloride is a spectator here; hydronium and magnesium differ. B is incorrect: neither addition changes Ksp at fixed temperature. D is incorrect: the roles of the added species are reversed."
+    },
+    {
+      "id": "chem-8-11-011",
+      "prompt": "A student acidifies AgCl suspensions using HCl and HNO3, then attributes different dissolved Ag+ amounts solely to pH. Assume dilute no-complexation conditions. What important difference must be controlled?",
+      "options": [
+        "HCl also supplies common Cl−, which can suppress AgCl dissolution independently of pH.",
+        "HNO3 supplies common Ag+",
+        "Both acids necessarily change Ksp differently at the same temperature",
+        "No control is needed because all strong acids add identical ions"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Acid identity changes ion composition as well as pH; chloride is not removed appreciably by protonation in this model. B is incorrect: nitric acid does not contain silver. C is incorrect: Ksp is a property of the specified dissolution equilibrium at that temperature. D is incorrect: their conjugate anions differ."
+    }
+  ]
+}

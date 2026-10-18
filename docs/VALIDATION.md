@@ -1,5 +1,12 @@
 # PrepAtlas milestone verification
 
+## Unit 8 content checkpoint — October 18, 2026
+
+- All eleven acid/base topics have eleven-question unpublished files (121 new questions). Coverage803/1,001: eleven live and792 pending across72 sets. Eighteen topics remain incomplete.
+- Structure/ID/count/duplicate-prompt checks and implemented science calculations pass, with separate scope/solve notes for all topics. Buffer pH-change, full polyprotic species and numerical pH-solubility exclusions are respected. Human review and owner publication approval remain pending.
+- TypeScript, all31 tests and the full development smoke passed. Production build/smoke passed at Unit6 and app code is unchanged. No preview restart was needed for this unit’s passing suite.
+- Next9.1 (`entropy`); finish Unit9, then only the missing earlier questions while preserving valid recovered material. Resource catalog and live registry unchanged.
+
 ## Unit 7 content checkpoint — October 18, 2026
 
 - All twelve equilibrium topics now have eleven-question pending files (132 new questions). Total complete-file coverage is682/1,001: eleven live and671 unpublished in61 sets. Twenty-nine topics remain incomplete.
