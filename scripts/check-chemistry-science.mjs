@@ -595,4 +595,10 @@ close(.20*.40/.80,.10);close((.75*2)**2/(.25*2),4.5);close(.75**2/.25,2.25);
 assert.ok(balanced([[1,'CaCO3']],[[1,'CaO'],[1,'CO2']]));
 assert.ok(balanced([[1,'NH4HS']],[[1,'NH3'],[1,'H2S']]));
 assert.ok(balanced([[1,'FeO'],[1,'CO']],[[1,'Fe'],[1,'CO2']]));
+// Topic 7.4: independently substituted experimental equilibria.
+close(.4**2/(.1*.2),8);close(.2**2/.5,.08);close((.2/2)/(.6/2)**2,10/9);
+close((2*.25)**2/(2*.5),.25);close(.4**2/((.8-.4)/2)**2,4);
+close(.2**2*.1/.4**2,.025);close((.6/3)/(.8-.6/3),1/3);
+close(.060/(.2*.3),1);close(.3/.1,3);close(1.2/.4,3);close((2*.2)**2/.2**2,4);
+assert.ok(balanced([[2,'NOCl']],[[2,'NO'],[1,'Cl2']]));
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');

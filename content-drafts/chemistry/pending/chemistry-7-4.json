@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 7,
+  "topicId": "topic-7-4",
+  "questions": [
+    {
+      "id": "chem-7-4-001",
+      "prompt": "For H2(g) + I2(g) ⇌ 2HI(g), equilibrium concentrations are [H2] = 0.100 M, [I2] = 0.200 M, and [HI] = 0.400 M. What is Kc?",
+      "options": [
+        "20.0",
+        "8.00",
+        "0.125",
+        "2.00"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Kc = 0.400²/(0.100×0.200) = 8.00. A is incorrect: that omits the square on HI. C is incorrect: that inverts the quotient. D is incorrect: that ratio does not apply the complete mass-action expression."
+    },
+    {
+      "id": "chem-7-4-002",
+      "prompt": "For N2O4(g) ⇌ 2NO2(g), equilibrium partial pressures are PN2O4 = 0.500 atm and PNO2 = 0.200 atm. What is Kp in the usual AP pressure convention?",
+      "options": [
+        "0.400",
+        "12.5",
+        "0.800",
+        "0.0800"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Kp = 0.200²/0.500 = 0.0800. A is incorrect: that omits the product exponent. B is incorrect: that is the reciprocal. C is incorrect: that is ten times the calculated quotient."
+    },
+    {
+      "id": "chem-7-4-003",
+      "prompt": "At equilibrium for 2A(g) ⇌ B(g), a 2.00 L vessel contains 0.600 mol A and 0.200 mol B. What is Kc?",
+      "options": [
+        "1.11",
+        "0.556",
+        "0.333",
+        "0.900"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. [A] = 0.300 M and [B] = 0.100 M; Kc = 0.100/0.300² = 1.11. B is incorrect: that uses mole amounts without accounting for volume. C is incorrect: that omits the square on A. D is incorrect: that inverts the concentration quotient."
+    },
+    {
+      "id": "chem-7-4-004",
+      "prompt": "A PCl5(g) ⇌ PCl3(g) + Cl2(g) mixture at equilibrium has total pressure 2.00 atm and mole fractions 0.500, 0.250, and 0.250, respectively. What is Kp?",
+      "options": [
+        "0.125",
+        "4.00",
+        "0.250",
+        "1.00"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The partial pressures are 1.00, 0.500, and 0.500 atm; their quotient is 0.500×0.500/1.00 = 0.250. A is incorrect: that uses mole fractions in place of pressures. B is incorrect: that inverts the correct quotient. D is incorrect: that is the PCl5 pressure alone, not the quotient."
+    },
+    {
+      "id": "chem-7-4-005",
+      "prompt": "A fixed-volume vessel initially contains 0.800 M HI and no H2 or I2. For H2(g) + I2(g) ⇌ 2HI(g), [HI] becomes 0.400 M at equilibrium. What is Kc?",
+      "options": [
+        "1.00",
+        "0.250",
+        "16.0",
+        "4.00"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Dissociation of 0.400 M HI produces 0.200 M each of H2 and I2. Kc = 0.400²/(0.200×0.200) = 4.00. A is incorrect: that assumes each product gains the full 0.400 M despite the coefficient two on HI. B is incorrect: that inverts the specified synthesis quotient. C is incorrect: that uses the initial HI concentration instead of its equilibrium value."
+    },
+    {
+      "id": "chem-7-4-006",
+      "prompt": "For 2NOCl(g) ⇌ 2NO(g) + Cl2(g), equilibrium pressures are PNOCl = 0.400 atm, PNO = 0.200 atm, and PCl2 = 0.100 atm. What is Kp?",
+      "options": [
+        "0.0500",
+        "0.0250",
+        "40.0",
+        "0.250"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Kp = (0.200²×0.100)/0.400² = 0.0250. A is incorrect: that omits both squared concentration factors and uses a first-power ratio. C is incorrect: that is the reciprocal. D is incorrect: that leaves out the chlorine pressure factor."
+    },
+    {
+      "id": "chem-7-4-007",
+      "prompt": "Only B absorbs the measuring light in A(aq) ⇌ B(aq). A calibration gives absorbance = (3.00 L mol−1)[B]. At equilibrium absorbance is 0.600, and the conserved total [A] + [B] is 0.800 M. What is Kc = [B]/[A]?",
+      "options": [
+        "0.750",
+        "3.00",
+        "0.333",
+        "0.250"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The calibration gives [B] = 0.200 M, so [A] = 0.600 M and Kc = 0.200/0.600. A is incorrect: that treats absorbance directly as molarity and divides by total concentration. B is incorrect: that inverts the concentration ratio. D is incorrect: that divides B by the total rather than by A."
+    },
+    {
+      "id": "chem-7-4-008",
+      "prompt": "At equilibrium, a vessel containing CaCO3(s), CaO(s), and CO2(g) at a specified temperature has PCO2 = 0.650 atm. What is Kp for CaCO3(s) ⇌ CaO(s) + CO2(g)?",
+      "options": [
+        "0.650",
+        "1.54",
+        "0.423",
+        "It cannot be found without both solid masses."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Only CO2 enters the expression because both pure solids are present. B is incorrect: that inverts the specified reaction. C is incorrect: that unnecessarily squares the pressure. D is incorrect: pure solid masses are absent from this equilibrium expression."
+    },
+    {
+      "id": "chem-7-4-009",
+      "prompt": "For A(aq) + B(aq) ⇌ C(aq), measured equilibrium concentrations are 0.200 M A, 0.300 M B, and 0.0600 M C. What is Kc?",
+      "options": [
+        "0.120",
+        "0.00360",
+        "1.00",
+        "5.00"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Kc = 0.0600/(0.200×0.300) = 1.00; equal numerical K does not require equal concentrations. A is incorrect: that divides by the sum rather than the product of reactant concentrations. B is incorrect: that multiplies all three concentrations. D is incorrect: that divides B by C and omits A."
+    },
+    {
+      "id": "chem-7-4-010",
+      "prompt": "For A(g) ⇌ B(g), two equilibrium samples at the same temperature have ([A], [B]) = (0.100, 0.300) M and (0.400, 1.20) M. Which experimental conclusion follows?",
+      "options": [
+        "Kc is four times greater in the second sample.",
+        "The second sample cannot be at equilibrium because it is more concentrated.",
+        "Kc equals the sum of A and B.",
+        "Both samples give Kc = 3.00 despite different concentrations."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The ratio B/A is 3.00 for each equilibrium mixture at the same temperature. A is incorrect: all concentrations scale together, leaving this ratio unchanged. B is incorrect: different absolute concentrations can give the same equilibrium ratio. C is incorrect: the balanced one-to-one reaction requires a ratio."
+    },
+    {
+      "id": "chem-7-4-011",
+      "prompt": "For N2O4(g) ⇌ 2NO2(g), a pressure sensor reports twice the true equilibrium PNO2 while PN2O4 is measured correctly. How does the calculated Kp compare with the true value?",
+      "options": [
+        "It is twice too large.",
+        "It is four times too large.",
+        "It is four times too small.",
+        "It is unchanged."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The reported NO2 pressure is squared, so a factor-of-two error becomes a factor of four. A is incorrect: that ignores the exponent two. C is incorrect: the erroneous value is in the numerator. D is incorrect: a biased equilibrium measurement changes the computed quotient."
+    }
+  ]
+}
