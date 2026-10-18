@@ -520,4 +520,15 @@ close(-120*4.184*(-3.50),1757.28);
 close(1200/(16-10),200);
 close(90.0/60.0,1.50); close(10.0*(90/60)*4,60);
 close((10.0/60.0)*90.0*4,60);
+// Topic 6.5: separate latent and sensible heat terms with consistent kJ units.
+close(2.00*6.01,12.02);
+close(-(36.0/18.0)*40.7,-81.4);
+close(20.0/25.0,.800);
+close((10/18)*6.01+10*4.184*20/1000,4.175688888888889);
+close(3.00/6.00,.500); close(1.00-3.00/6.00,.500);
+close(.250*(-8.00),-2);
+close(100*300/1000/.750,40);
+close((10/20)*30,15); close((10/40)*30,7.50);
+close(-40.7+18*4.184*(25-100)/1000,-46.3484);
+close(.500*6.00+.500*(-6.00),0);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
