@@ -644,4 +644,12 @@ relativeClose(Math.sqrt(1e-14),1e-7);close(-Math.log10(Math.sqrt(4e-14)),6.69897
 relativeClose(10**(-6.5)*10**(-6.5),1e-13);close(2*6.8,13.6);
 relativeClose(1e-12/1e-7,1e-5);close(15/2,7.5);close(-Math.log10(Math.sqrt(9e-14)),6.522878745280337);
 close(1/.01,100);assert.ok(balanced([[2,'H2O']],[[1,'H3O',1],[1,'OH',-1]]));
+// Topic 8.2: strong-species accounting, dilution and water correction.
+close(-Math.log10(.0025),2.6020599913279625);close(14+Math.log10(.004),11.602059991327963);
+close(14+Math.log10(2*.0015),11.477121254719663);close(-Math.log10(.01*.025/.250),3);
+close(.0365/36.5,.001);close(Math.log10(2),.3010299956639812);
+close((.025*.01+.075*.03)/.1,.025);close(14+Math.log10(.01/100),10);
+const diluteH=(1e-8+Math.sqrt((1e-8)**2+4e-14))/2;
+assert.ok(-Math.log10(diluteH)<7 && -Math.log10(diluteH)>6.97);
+relativeClose(diluteH-1e-14/diluteH,1e-8);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
