@@ -310,4 +310,20 @@ assert.ok(balanced([[1,'SO2'],[2,'H2S']],[[3,'S'],[2,'H2O']]));
 assert.equal(2*((-1)-(-2)),2*(0-(-1))); // peroxide: formal electrons gained/lost
 assert.equal(2*(3-2),2*(0-(-1))); // iron/chlorine
 assert.equal(4-0,2*(0-(-2))); // sulfur species
+// Topic 4.8: match conjugates by exactly one H+ and the corresponding charge.
+const conjugates=(acid,acidCharge,base,baseCharge)=>balanced([[1,base,baseCharge],[1,'H',1]],[[1,acid,acidCharge]]);
+assert.ok(conjugates('HF',0,'F',-1));
+assert.ok(conjugates('H3O',1,'H2O',0));
+assert.ok(conjugates('H2CO3',0,'HCO3',-1));
+assert.ok(conjugates('HCO3',-1,'CO3',-2));
+assert.ok(conjugates('H2O',0,'OH',-1));
+assert.ok(conjugates('C2H5NH3',1,'C2H5NH2',0));
+assert.ok(conjugates('HSO4',-1,'SO4',-2));
+assert.ok(conjugates('H2PO4',-1,'HPO4',-2));
+assert.ok(!conjugates('H3PO4',0,'HPO4',-2));
+assert.ok(!conjugates('H2PO4',-2,'HPO4',-2));
+assert.ok(conjugates('CH3NH3',1,'CH3NH2',0));
+assert.ok(!conjugates('CH3NH3',1,'CH3NH2',-1));
+assert.ok(balanced([[1,'CH3COOH'],[1,'CN',-1]],[[1,'CH3COO',-1],[1,'HCN']]));
+assert.ok(balanced([[2,'H2O']],[[1,'H3O',1],[1,'OH',-1]]));
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
