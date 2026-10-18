@@ -45,4 +45,7 @@ for (const [positive, negative, cations, anions] of [[1,-2,2,1],[2,-3,3,2],[2,-1
   assert.equal(positive * cations + negative * anions, 0);
 }
 close(.250 * 2, .500);
-console.log('Independent arithmetic/charge checks passed for Topics 1.1, 1.4, 1.5, and 1.8. See per-topic QA for conceptual checks and limitations.');
+// Topic 2.4: model neutrality and the supplied alloy number ratios.
+assert.equal(100 * 2 - 200, 0);
+assert.deepEqual([80 / 20, 60 / 40], [4, 1.5]);
+console.log('Independent arithmetic/charge checks passed for Topics 1.1, 1.4, 1.5, 1.8, and 2.4. See per-topic QA for conceptual checks and limitations.');
