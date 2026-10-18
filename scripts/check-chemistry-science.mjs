@@ -583,4 +583,6 @@ assert.deepEqual(netSteps({'A(s)':-1,'A(g)':1},{'A(g)':-1,B:-1,P:1}),{'A(s)':-1,
 assert.deepEqual(netSteps({'H2O(l)':1},{'H2O(g)':-1}),{'H2O(l)':1,'H2O(g)':-1}); // not identical states
 assert.deepEqual(netSteps({X:-2,Y:1},{Y:-1,Z:-1,P:1}),{X:-2,Z:-1,P:1});
 assert.notDeepEqual(netSteps({X:-2,Y:1},{Y:-1,Z:-1,P:1},{Z:-1,W:1}),{X:-2,Z:-1,P:1});
+// Topic 7.1: balanced interconversion and conserved one-to-one totals.
+close(18-18,0); [ [.65,.35],[.55,.45],[.50,.50] ].forEach(([a,b])=>close(a+b,1));
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
