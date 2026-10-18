@@ -590,4 +590,9 @@ close(.030-.010,.020);close(-2*(.040-.010),-.060);
 close(.20*.10,.020);close(.050*.80,.040);
 close(.60+.010,.610);close(.40-.010,.390);close(.024-.006,.018);
 assert.deepEqual([[60,10],[45,25],[35,35]].map(([f,r])=>f-r),[50,20,0]);
+// Topic 7.3: instantaneous pressure quotients, partial-pressure conversion.
+close(.20*.40/.80,.10);close((.75*2)**2/(.25*2),4.5);close(.75**2/.25,2.25);
+assert.ok(balanced([[1,'CaCO3']],[[1,'CaO'],[1,'CO2']]));
+assert.ok(balanced([[1,'NH4HS']],[[1,'NH3'],[1,'H2S']]));
+assert.ok(balanced([[1,'FeO'],[1,'CO']],[[1,'Fe'],[1,'CO2']]));
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
