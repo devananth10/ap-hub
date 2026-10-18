@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 6,
+  "topicId": "topic-6-2",
+  "questions": [
+    {
+      "id": "chem-6-2-001",
+      "prompt": "A specified transformation absorbs 35 kJ per mole of process as written, with no other energy transfer. Taking its initial energy as zero, which two-level system diagram represents that transformation?",
+      "options": [
+        "Initial 0; final −35 kJ/mol; downward change arrow.",
+        "Initial +35; final 0 kJ/mol; downward change arrow.",
+        "Initial 0; final +35 kJ/mol; upward change arrow.",
+        "Initial 0; final 0 kJ/mol; no energy-change arrow."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The specified system gains 35 kJ/mol, so its final level lies that amount above its initial level. A and B each show a 35 kJ/mol loss rather than gain. D shows no energy change. The zero is only a reference; the arrow's direction and magnitude represent the signed difference. No activation barrier is determined by a two-level diagram alone."
+    },
+    {
+      "id": "chem-6-2-002",
+      "prompt": "A process releases 18 kJ for the specified batch, with no other energy transfer. If the initial system level on an energy-in-kJ diagram is 50, what final level is consistent?",
+      "options": [
+        "32 kJ",
+        "68 kJ",
+        "18 kJ",
+        "−18 kJ"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Final energy equals initial energy plus the signed change, 50 + (−18) = 32 kJ. B treats release as gain. C replaces the final level with the magnitude of the change. D uses the signed change as an absolute final value, ignoring the chosen initial reference. Exothermic behavior means a lower final level, not necessarily a negative absolute plotted value."
+    },
+    {
+      "id": "chem-6-2-003",
+      "prompt": "A fixed water sample vaporizes at its boiling temperature while absorbing energy and remaining H2O. Which energy-level description represents the liquid-to-vapor process?",
+      "options": [
+        "Vapor below liquid because gas particles are farther apart.",
+        "Equal liquid and vapor levels because their temperatures are equal.",
+        "Separate H and O atoms as the product labels because vaporization breaks every molecule.",
+        "H2O vapor above H2O liquid, showing energy uptake without requiring a chemical-identity change."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. At the specified phase-change conditions the sample absorbs energy, so the vapor state lies higher for this comparison even though temperature and H2O identity are retained. A reverses the energetic direction of vaporization. B equates equal temperature with equal total energy across different phases. C mislabels the products as atoms rather than unchanged water molecules. Energy diagrams can represent physical as well as chemical transformations."
+    },
+    {
+      "id": "chem-6-2-004",
+      "prompt": "A diagram places an initial system at −40 kJ/mol and its final state at −10 kJ/mol on the same reference scale. Which energy change and classification follow for a heat-only transformation?",
+      "options": [
+        "−30 kJ/mol, exothermic",
+        "+30 kJ/mol, endothermic",
+        "−50 kJ/mol, exothermic",
+        "+50 kJ/mol, endothermic"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Final minus initial is −10 − (−40) = +30 kJ/mol, so the system gains energy. A reverses the subtraction. C adds the two signed levels. D adds their magnitudes. Both levels being negative does not determine the process sign; only their relative difference does. The heat-only condition connects the energy gain to endothermic uptake without an unaccounted work contribution."
+    },
+    {
+      "id": "chem-6-2-005",
+      "prompt": "An energy diagram for a complete small batch has initial level 0 kJ and final level −12 kJ. For twice the amount undergoing the same complete transformation under otherwise matched conditions, what total-energy gap should a new batch diagram show? The axis is kJ for the entire batch, not kJ/mol.",
+      "options": [
+        "−6 kJ",
+        "−12 kJ",
+        "−24 kJ",
+        "+24 kJ"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Doubling the amount doubles the total released energy, so the gap is 2(−12) = −24 kJ. A reverses the amount scaling. B would keep a per-mole gap unchanged but ignores that this axis represents total batch energy. D scales the magnitude but changes release to uptake. Explicit amount basis and energy units prevent confusing an extensive total with energy per mole."
+    },
+    {
+      "id": "chem-6-2-006",
+      "prompt": "A system-only diagram shows a 75 J decrease during a heat-only process in an isolated system-plus-surroundings assembly. Which companion surroundings diagram is consistent with conservation?",
+      "options": [
+        "A 75 J decrease, because both parts must move in the same direction.",
+        "No change, because energy leaving the system disappears.",
+        "A 150 J increase, because conservation doubles transferred energy.",
+        "A 75 J increase, opposite and equal to the system's decrease."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The energy lost by the named system is received by its surroundings, so the paired changes sum to zero. A assigns a net loss to the isolated assembly. B destroys energy. C creates an extra 75 J. Separate diagrams must identify their boundaries before arrows are compared; an exothermic system corresponds to energy gain by the receiving surroundings."
+    },
+    {
+      "id": "chem-6-2-007",
+      "prompt": "A heat-only forward transformation has initial level 0 and final level +20 kJ/mol. What energy change should the reverse transformation's diagram show between these same two states?",
+      "options": [
+        "+20 kJ/mol, because reversing a process cannot change the sign.",
+        "−20 kJ/mol, because the reverse initial state is 20 and the reverse final state is 0.",
+        "0 kJ/mol, because the two processes involve the same substances.",
+        "−40 kJ/mol, because both the arrow and the state labels are reversed."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Swapping the same endpoints changes final minus initial from +20 to −20 kJ/mol, keeping magnitude but reversing direction. A ignores the endpoint exchange. C confuses unchanged identities of the pair with no difference between their energies. D counts the reversal twice. This endpoint result does not identify a transition-state height or a reverse reaction rate."
+    },
+    {
+      "id": "chem-6-2-008",
+      "prompt": "An otherwise unlabeled two-level system diagram shows a final energy above the initial energy. The process involves heat transfer only. Which conclusion can be drawn without adding information about particle identities or a pathway?",
+      "options": [
+        "The system gains energy, but the diagram alone does not tell whether the transformation is chemical or physical.",
+        "The process must break every covalent bond because the final energy is higher.",
+        "The process must be rapid because its endpoint gap points upward.",
+        "The sample temperature must increase even if the process is a phase change."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. An upward endpoint gap gives energy gain for the stated boundary, while identity, microscopic bonding and kinetic information remain unspecified. B invents molecular breakup. C equates net energy change with speed. D ignores energy uptake at constant phase-change temperature. A diagram's supported conclusion must be limited to the quantities and labels actually supplied."
+    },
+    {
+      "id": "chem-6-2-009",
+      "prompt": "A vertical energy axis has equally spaced labels −20, 0, +20, and +40 kJ/mol. A process begins at −20 and ends at +40. What is the energy change represented by the three equal vertical intervals between those levels?",
+      "options": [
+        "+20 kJ/mol",
+        "+40 kJ/mol",
+        "+80 kJ/mol",
+        "+60 kJ/mol"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Final minus initial is 40 − (−20) = +60 kJ/mol, equal to three intervals of 20. A reports one interval. B uses the absolute final level instead of the gap. C counts four tick labels as four intervals. Correct scale and units are needed to turn a vertical arrow into an energy difference."
+    },
+    {
+      "id": "chem-6-2-010",
+      "prompt": "Two proposed processes each have energy-level diagrams with the same initial and final levels, a 25 kJ/mol decrease, but no pathway barriers or kinetic data are shown. Which comparison is justified?",
+      "options": [
+        "Their rates must be equal because their endpoint gaps match.",
+        "The one drawn with a steeper connecting arrow must finish faster.",
+        "Their specified energy changes are equal, but these endpoint diagrams alone do not compare their reaction rates.",
+        "Their rates must differ because separate diagrams were drawn."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The diagrams fix the same net energy change but provide no complete barrier, encounter, concentration or timescale information. A and D infer rates without evidence. B mistakes the artistic slope of a connector for a calibrated time-dependent quantity. An endpoint energy comparison is not a concentration-versus-time measurement."
+    },
+    {
+      "id": "chem-6-2-011",
+      "prompt": "A fixed sample of N2 is warmed by heat transfer without chemical reaction. Which labels and energy ordering best represent that physical transformation on a total-energy diagram?",
+      "options": [
+        "N2(cooler) below 2N(warmer), because all heating must dissociate molecules.",
+        "N2(cooler) below N2(warmer), retaining the molecular identity while showing the sample's energy increase.",
+        "N2(cooler) above N2(warmer), because absorbed heat lowers the system's energy.",
+        "N2(cooler) and N2(warmer) at the same total-energy level, because their formulas match."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The sample gains energy during the specified warming, while N2 remains intact. A adds a chemical transformation excluded by the prompt. C reverses the energy direction. D assumes chemical identity uniquely fixes total energy, ignoring temperature. The axis is explicitly total energy, so the warming contribution is not being mislabeled as a required change in bond potential energy."
+    }
+  ]
+}

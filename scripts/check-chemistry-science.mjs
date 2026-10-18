@@ -499,4 +499,11 @@ assert.deepEqual(netSteps({S:-1,H:-1,SH:1},{SH:-1,H2O:-1,P:1,H:1}),{S:-1,H2O:-1,
 assert.deepEqual(netSteps({A:-1,'*':-1,'A*':1},{B:-1,'*':-1,'B*':1},{'A*':-1,'B*':-1,P:1,'*':2}),{A:-1,B:-1,P:1});
 assert.deepEqual(netSteps({S:-1,Q:-1,SQ:1},{SQ:-1,P:1}),{S:-1,Q:-1,P:1});
 close(0-(-20),20); close(0-(-100),100);
+// Topic 6.2: signed endpoint gaps and explicit total-batch scaling.
+close(50-18,32);
+close(-10-(-40),30);
+close(2*(-12),-24);
+close((-75)+75,0);
+close(0-20,-20);
+close(40-(-20),60); close(3*20,60);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
