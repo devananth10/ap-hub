@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 6,
+  "topicId": "energy",
+  "questions": [
+    {
+      "id": "chem-6-1-001",
+      "prompt": "A chemical process warms the surrounding water in an insulated apparatus. No heater operates, and heat loss to the room and other work are negligible. Treat the reacting process as the system and the water as thermal surroundings. Which description follows?",
+      "options": [
+        "The process is endothermic because the surroundings become warmer.",
+        "The process is exothermic because energy passes from the reacting system to the water.",
+        "No energy transfer occurs because the apparatus is insulated from the room.",
+        "Energy is created by the process because the water gains heat."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The water's energy gain comes from the reacting process under the stated controls, so the process releases energy to its thermal surroundings. A reverses the transfer direction. C confuses isolation from the room with no internal exchange between process and water. D ignores conservation: energy lost by the system is gained by the surroundings. Identifying the system boundary is necessary before assigning the direction."
+    },
+    {
+      "id": "chem-6-1-002",
+      "prompt": "A dissolving process absorbs energy from its surrounding water, causing the water to cool in an otherwise insulated experiment. Which statement correctly describes that process?",
+      "options": [
+        "It is exothermic because the thermometer reading falls.",
+        "It cannot involve an energy change because dissolution is not combustion.",
+        "It must destroy energy because the surrounding water loses heat.",
+        "It is endothermic because the dissolution process gains energy from its thermal surroundings."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Endothermic describes energy uptake by the specified process, consistent with energy leaving the surrounding water. A assigns the system's transfer sign from the surroundings' temperature direction without tracking the boundary. B incorrectly restricts energy changes to combustion. C treats energy redistribution as destruction. This description does not imply that every dissolution is endothermic or that every part of the entire insulated apparatus gains energy."
+    },
+    {
+      "id": "chem-6-1-003",
+      "prompt": "At constant pressure, ice at its melting temperature becomes liquid water at the same temperature while absorbing heat. How is the melting process classified?",
+      "options": [
+        "Endothermic, even though the temperature stays constant during the phase change.",
+        "Exothermic, because the final water is liquid.",
+        "Neither endothermic nor exothermic, because every energy transfer must change temperature.",
+        "Chemical decomposition, because absorbed heat must break all O–H covalent bonds."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Heat enters the melting sample and changes its phase-related intermolecular organization without requiring a temperature increase during coexistence. B reverses the heat direction. C incorrectly makes temperature change a necessary condition for energy transfer. D confuses a physical phase change with covalent decomposition. The same H2O identity can persist while the sample absorbs energy."
+    },
+    {
+      "id": "chem-6-1-004",
+      "prompt": "Water vapor condenses on a cooler metal plate and transfers heat to the plate. Considering the condensing water as the system, which description is correct?",
+      "options": [
+        "Endothermic, because intermolecular attractions form.",
+        "Endothermic, because all phase changes absorb energy.",
+        "Exothermic, because the water releases energy as favorable liquid-phase intermolecular contacts develop.",
+        "No energy change, because the formula remains H2O."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The specified heat flow out of the condensing water is energy release to its surroundings. Formation of favorable cohesive contacts is consistent with that release. A gives the wrong transfer direction. B falsely assigns the same sign to opposite phase changes. D confuses unchanged chemical identity with unchanged energy. Physical transformations can release or absorb energy."
+    },
+    {
+      "id": "chem-6-1-005",
+      "prompt": "Reactants and their thermal bath initially have temperature −10 °C. A controlled reaction raises the bath to −8 °C by transferring heat to it; no other heat source operates. A student says the reaction cannot be exothermic because the bath remains below room temperature. Which evaluation is correct?",
+      "options": [
+        "The student is correct because exothermic requires a final temperature above 25 °C.",
+        "The student is correct because all processes below 0 °C absorb heat.",
+        "The reaction's energy direction depends only on the sign of the Celsius temperature.",
+        "The reaction is exothermic relative to the specified system because it supplies heat to the bath; absolute hotness relative to the room is not the criterion."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The measured increase from −10 to −8 °C is warming of the surroundings caused by heat released from the reacting system. A and B invent temperature cutoffs for the classification. C confuses a temperature-scale reference with a transfer direction. An exothermic process can occur in a cold apparatus, and an endothermic process can occur in a hot one."
+    },
+    {
+      "id": "chem-6-1-006",
+      "prompt": "Under comparable controlled conditions, dissolving solute X warms the water, while dissolving solute Y cools it. Which microscopic explanation can account for opposite energy changes?",
+      "options": [
+        "Dissolution can only break interactions and can never form new solute-solvent contacts.",
+        "The balance of energy required to separate existing particles and energy released by new solute-solvent interactions can differ for the two solutes.",
+        "Every ion releases the same net energy on dissolving, regardless of its original solid or solvent interactions.",
+        "A temperature change proves that one solute changes its atomic nuclei into a new element."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Dissolution involves disrupting initial interactions and establishing new ones; their relative energy contributions can give net release or uptake. A omits new solvation contacts. C ignores differences in lattice, solute and solvent interactions. D invents nuclear changes unsupported by thermal observations. A measured energy sign is a net balance, not proof that every individual interaction change has the same sign."
+    },
+    {
+      "id": "chem-6-1-007",
+      "prompt": "A reacting system transfers 120 J of heat to its surroundings, with no other energy transfers. Which paired heat amounts preserve energy conservation using positive heat for energy entering the named part?",
+      "options": [
+        "System +120 J; surroundings +120 J",
+        "System −120 J; surroundings −120 J",
+        "System −120 J; surroundings +120 J",
+        "System +120 J; surroundings −120 J"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Heat leaving the system is negative for it and positive for the receiving surroundings; the two amounts sum to zero. A adds energy to both parts without a source. B removes energy from both without a destination. D conserves the sum but reverses the stated transfer direction. The reacting process is exothermic under this specified heat-only boundary."
+    },
+    {
+      "id": "chem-6-1-008",
+      "prompt": "A copper sample is placed in a warmer bath and absorbs heat until its temperature rises. No chemical reaction occurs. Taking copper as the system, which statement is correct?",
+      "options": [
+        "Heating the copper is an endothermic physical process for that system because it receives energy.",
+        "It cannot be endothermic because only chemical reactions can absorb energy.",
+        "It is exothermic because the copper's temperature increases.",
+        "The copper must create a new substance whenever its energy changes."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The sample gains heat and energy during physical warming. B wrongly restricts endothermic processes to reactions. C interprets a system temperature rise as heat release even though the prompt specifies heat entering it. D confuses energy change with chemical-identity change. This example differs from a reaction warming surrounding water: the named system here is the heated metal itself."
+    },
+    {
+      "id": "chem-6-1-009",
+      "prompt": "A student adds a solute to water while an electric heater runs. The water temperature rises, and the student concludes that dissolution must be exothermic. Which assessment is most appropriate?",
+      "options": [
+        "The conclusion is certain because every temperature rise has only one possible source.",
+        "The conclusion is certain because a heater can never affect a dissolving mixture.",
+        "The heater supplies an additional energy input, so the temperature rise alone cannot assign the dissolution's energy sign without appropriate controls or accounting.",
+        "The dissolution must be endothermic because electrical heating forbids energy-releasing transformations."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. The measured warming includes external energy input, which can mask or reinforce the dissolution's contribution. A and B ignore the known confound. D invents a restriction on reactions or dissolutions in a heated apparatus. Removing or quantifying the heater contribution and using matched conditions is necessary before attributing the net temperature observation to dissolution alone."
+    },
+    {
+      "id": "chem-6-1-010",
+      "prompt": "Liquid water freezes at its freezing temperature while transferring heat to a colder environment. The sample temperature remains constant during the phase change. Which description is consistent with the specified transfer?",
+      "options": [
+        "Endothermic, because the sample must absorb the energy needed to become ordered.",
+        "No energy transfer, because the thermometer is constant.",
+        "Chemical decomposition, because ice contains a different oxygen element.",
+        "Exothermic freezing, because energy leaves the sample despite its constant temperature during the phase change."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. The given heat flow is outward, so freezing releases energy to the surroundings. A reverses that direction. B ignores latent-energy transfer at constant phase-change temperature. C invents an elemental change; ice and liquid water both consist of H2O. Constant temperature does not by itself establish zero energy change."
+    },
+    {
+      "id": "chem-6-1-011",
+      "prompt": "A chemical reaction is held at constant temperature by equipment that removes heat from the reacting sample. The equipment's removal rate matches heat release from the reaction, and other work is negligible. How should the reaction be classified?",
+      "options": [
+        "Neither endothermic nor exothermic, because a constant temperature rules out energy transfer.",
+        "Exothermic, because heat is released and removed even though feedback prevents a temperature increase.",
+        "Endothermic, because any temperature-control equipment must supply heat rather than remove it.",
+        "Endothermic, because the sample does not become hotter than its initial temperature."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The specified outward heat flow identifies energy release; temperature control removes the energy that would otherwise contribute to warming. A and D mistake absence of temperature change for absence of heat release. C contradicts the stated direction of the equipment's operation. A temperature observation must be interpreted with the system boundary and external energy exchanges, not used as an unconditional classification rule."
+    }
+  ]
+}
