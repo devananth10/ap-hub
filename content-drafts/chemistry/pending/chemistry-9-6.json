@@ -115,13 +115,13 @@
       "id": "chem-9-6-010",
       "prompt": "A dissolving salt produces a substantial temperature decrease. What further thermodynamic information is needed to judge standard favorability from ΔH°−TΔS°?",
       "options": [
-        "Only the size of the stirring rod",
+        "Only a more precise measurement of the heat absorbed per mole",
         "The entropy change and the absolute temperature.",
         "Only whether individual ions have positive or negative charge",
         "No further information; cooling proves the standard process is unfavorable"
       ],
       "correctIndex": 1,
-      "explanation": "B is correct. Knowing only endothermic enthalpy does not establish the sign of the free-energy change. A is incorrect: it does not supply the missing entropy term. C is incorrect: charge signs alone do not give total entropy change. D is incorrect: an entropy-driven dissolution can be favorable."
+      "explanation": "B is correct. Knowing only endothermic enthalpy does not establish the sign of the free-energy change. A is incorrect: better enthalpy precision still does not supply the missing entropy contribution. C is incorrect: charge signs alone do not give total entropy change. D is incorrect: an entropy-driven dissolution can be favorable."
     },
     {
       "id": "chem-9-6-011",

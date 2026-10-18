@@ -1,13 +1,14 @@
 # Chemistry checkpoint validation — 2026-10-18
 
-Snapshot at completion of the Unit 9 draft batch. Consult `PROGRESS.md` for later counts and the next task.
+Final complete-bank checkpoint. Consult `BANK_AUDIT.md`, its reproducible inventory and `PROGRESS.md` for coverage and remaining human-review items.
 
 ## Saved content
 
-- 84 complete topic files in the active approved/draft workflow: **924 questions toward the 1,001 target**. Only the eleven Topic 1.1 questions are live; 913 in eighty-three pending sets require human scientific review and owner approval. Seven topics still lack complete working sets, including the unavailable earlier sources; the remaining complete-set target is 77 questions.
-- All eleven Unit 9 topics are drafted (121 pending questions). All eleven Unit 8 topics are drafted (121 pending questions). All twelve Unit 7 topics are drafted (132 pending questions). All nine Unit 6 topics are drafted (99 pending questions). All eleven Unit 5 topics are drafted (121 pending questions), along with all nine Unit 4 topics (99) and all thirteen Unit 3 topics (143). New Unit 2 drafts cover 2.4–2.7 (44 questions). Three recovered complete sets were audited into working copies (33 questions).
-- Twenty-nine complete objects from truncated 1.6/1.7/2.1 sources are preserved as partial work. They are not complete banks and are excluded from these totals. Earlier full 1.2/1.3/2.2/2.3 sources remain unavailable, not assumed nonexistent.
-- Next new topic: **1.2 — Mass Spectra of Elements**, preserved internal ID `mass-spectra`. Read its official scope before writing. After Unit 9, the latest owner instruction authorizes completing earlier gaps while preserving valid recovered questions and identifying new replacement/additional work.
+- **91 complete topic files, exactly11 questions each:1,001 total.** Only eleven Topic1.1 questions are live;990 in90 pending sets remain unpublished and require human scientific review and owner approval. No missing topic/count remains.
+- All units are complete: topic counts8/7/13/9/11/9/12/11/11. Units7–9 contribute374 newly written questions. Four unavailable-source topics now have44 newly written replacements, explicitly distinguished from recovered work.
+- All29 valid corrected recovered objects (10/10/9 in1.6/1.7/2.1) are preserved exactly inside complete pending banks. Only four new additions completed those sets. Historical partial copies and raw archive remain unchanged and are not counted again.
+- All49 complete pending sets from the verified Unit6 checkpoint34fb9df remain deep-equal. Original approved001–010 remain deep-equal to the supplied file. The bank audit freezes semantic content hashes for all91 complete sets.
+- No further generation is needed. Remaining work is independent human scientific/editorial review, then a separately authorized publication workflow. No redesign, video integration, fullscreen or automatic publication was started.
 
 ## Verification performed
 
@@ -25,17 +26,17 @@ Snapshot at completion of the Unit 9 draft batch. Consult `PROGRESS.md` for late
 
 ## Application checks
 
-- `pnpm typecheck`: passed again at the Unit 9 checkpoint.
-- `pnpm test:unit`: all 31 passed again at the Unit 9 checkpoint.
-- `pnpm build`: passed freshly with Next.js 16.4.2/Webpack at Unit 6. No application/configuration/dependency changes were made during Unit 6 drafting.
-- Full development and fresh production smoke suites passed: 19 routes, compiled CSS, seven friendly 404 cases, six fixed course-art mappings, and home-art rotation (seven themes in twelve development responses; five in production).
+- `pnpm typecheck`: passed again at the final complete-bank checkpoint.
+- `pnpm test:unit`: all 31 passed again at the final complete-bank checkpoint.
+- `pnpm build`: passed freshly with Next.js16.4.2/Webpack at the final checkpoint. The first sandboxed attempt could not create a generated output folder (EPERM); the authorized retry completed successfully. No application/configuration/dependency changes were made during this continuation.
+- Full development and fresh production smoke suites passed: 19 routes, compiled CSS, seven friendly 404 cases, six fixed course-art mappings, and home-art rotation (five themes in twelve final development responses; six in final production responses).
 - Unit 9 development smoke passed on its first run: all19routes/CSS/seven404s/sixfixedthemes and eight home themes in twelve responses. Preview preserved.
 - Unit 8 development smoke passed on its first run: all19routes/CSS/seven404s/sixfixedthemes and seven home themes in twelve responses. The normal preview was preserved; no app code changed.
 - Unit 7 development smoke initially received HTTP500 for `/practice?course=chemistry&unit=1`; logs now identified `Manifest file is empty` in the Next loader. Only one development parent/worker pair was present. The targeted route returned200 without a restart, then the full unchanged suite passed (seven home themes/twelve responses). This reinforces a transient generated-manifest symptom but does not identify the exact path or permanent cause.
 - The intermittent development `Unexpected end of JSON input` seen at Unit 5 recurred on a Physics route during Unit 6 smoke testing. Only one development server was running, and all 3,684 generated JSON files parsed when inspected. Next's loader source discusses manifest read/write races, but a temporary read-only diagnostic hook captured no failing file during a passing smoke run. The hook was removed and the normal preview command restored; the full unmodified development suite passed again. Exact cause remains unconfirmed; no permanent fix or OneDrive attribution is claimed. No application JSON was altered to mask the error.
-- The temporary Unit 6 production verification server (PID33900, port3100) was stopped after its passing suite. The normal hidden preview (parent PID17652) remains on port3000 and returned HTTP200 afterward. Home remains open. No diagnostic code or dependencies were retained.
-- Latest browser recheck confirms Topic 1.1 shows Question1 of11, full options and session navigation without the owner-approval badge. A screenshot is saved outside the repository in the task visualization folder. Only a disposable verification tab was closed; the visible home tab remains.
+- The temporary final production verification server (PID17144, port3100) was stopped after its passing suite; the earlier Unit6 serverPID33900 was also stopped. The normal hidden preview (parent PID17652) remains on port3000 and returned HTTP200 afterward. Home remains open. No diagnostic code or dependencies were retained.
+- Latest browser recheck confirms Unit9 has zero live questions and all11 official topic options, and Topic1.1 shows Question1 of11, full options and session navigation without the owner-approval badge. A screenshot is saved outside the repository in the task visualization folder. Only a disposable verification tab was closed; the visible home tab remains.
 - Browser: Unit 4 practice shows **zero** and all nine topic options, confirming its 99 new drafts remain unpublished. Following its Topic 1.1 link shows eleven questions, one at a time, without the removed owner-approval badge. Earlier mobile 390-pixel course outline with Units3/9 expanded showed no horizontal overflow (375-pixel document width); long names wrap and the viewport override was reset. Earlier browser console checks showed no warnings/errors.
 - Earlier same-milestone browser checks verified correct/incorrect feedback, Try again, Previous/Next answer retention, first/last boundaries, refresh reset, optional notes, demonstration summary disclosure, and preserved Topic 1.5 workspace with Practice 0. No notes/completion values were edited.
 
-These are structural, calculation, model, and application checks, **not independent human scientific review**. No guarantee is made that an automated check proves conceptual correctness, pedagogical quality, absence of accidental similarity, or publication approval. All remaining topic drafts must follow the same scope/solve/review workflow. No pending material has been published, deployed, or pushed; the current handoff limits this work to local checkpoints.
+These are structural, calculation, model, and application checks, **not independent human scientific review**. No guarantee is made that an automated check proves conceptual correctness, pedagogical quality, absence of accidental similarity, or publication approval. All draft sets are complete but remain subject to human review. The current owner-provided AGENTS.md milestone workflow supersedes the older handoff no-push restriction and authorizes a normal backup push after checks; verify the remote SHA before reporting success. A Git push does not register, publish or deploy the pending content.

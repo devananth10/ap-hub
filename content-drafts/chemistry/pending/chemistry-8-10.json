@@ -115,13 +115,13 @@
       "id": "chem-8-10-010",
       "prompt": "Two buffers have the same measured pH and use the same conjugate pair. What extra information is most useful to compare their capacity for equal-volume tests?",
       "options": [
-        "Only the color of the containers",
+        "Only the concentration of a neutral spectator salt, without either conjugate-component concentration",
         "The absolute concentrations of both conjugate components.",
         "Only the numerical ratio again, without either concentration",
         "Whether the pH is written to one or two decimal places"
       ],
       "correctIndex": 1,
-      "explanation": "B is correct. The pH mainly constrains their ratio; absolute reservoir sizes determine resistance. A is incorrect: container appearance does not give solute inventories. C is incorrect: that does not reveal the reservoir scale. D is incorrect: reporting precision does not determine chemical capacity."
+      "explanation": "B is correct. The pH mainly constrains their ratio; absolute reservoir sizes determine resistance. A is incorrect: spectator-salt concentration alone does not reveal the acid/base reservoir amounts. C is incorrect: that does not reveal the reservoir scale. D is incorrect: reporting precision does not determine chemical capacity."
     },
     {
       "id": "chem-8-10-011",

@@ -44,12 +44,12 @@
       "prompt": "A gas sample is heated at fixed volume without reacting. Why does its entropy generally increase?",
       "options": [
         "Every particle acquires exactly the same speed",
-        "The gas must become a perfect crystal",
+        "Heating must compress the gas into a smaller spatial volume",
         "Its entropy can change only if volume also increases",
         "Energy is distributed among a wider range of accessible particle energies."
       ],
       "correctIndex": 3,
-      "explanation": "D is correct. The broader energy distribution increases the ways energy can be dispersed. A is incorrect: thermal speeds remain distributed. B is incorrect: heating the stated gas does not imply crystallization. C is incorrect: temperature changes can alter entropy independently."
+      "explanation": "D is correct. The broader energy distribution increases the ways energy can be dispersed. A is incorrect: thermal speeds remain distributed. B is incorrect: the volume is explicitly fixed, so the entropy increase must not be attributed to compression. C is incorrect: temperature changes can alter entropy independently."
     },
     {
       "id": "chem-9-1-005",

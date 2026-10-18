@@ -34,10 +34,10 @@
         "A− + H3O+ → HA + H2O",
         "HA + H3O+ → A− +2H2O",
         "A− releases more H3O+ until the acid doubles",
-        "All ions disappear into neutral atoms"
+        "HA reacts with OH− to form A− and water"
       ],
       "correctIndex": 0,
-      "explanation": "A is correct. The conjugate-base component accepts the added proton. B is incorrect: the proposed direction deprotonates the acid while adding more protons and is not a balanced buffering reaction. C is incorrect: proton acceptance, not production, counters the acid addition. D is incorrect: buffering is proton transfer, not reduction of ions to atoms."
+      "explanation": "A is correct. The conjugate-base component accepts the added proton. B is incorrect: the proposed direction deprotonates the acid while adding more protons and is not a balanced buffering reaction. C is incorrect: proton acceptance, not production, counters the acid addition. D is incorrect: that is the response to added base, not the proton-consuming response to added acid."
     },
     {
       "id": "chem-8-8-004",

@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 2,
+  "topicId": "topic-2-3",
+  "questions": [
+    {
+      "id": "chem-2-3-001",
+      "prompt": "Which particulate description best represents a typical ionic crystal?",
+      "options": [
+        "An extended periodic three-dimensional arrangement balancing unlike-ion attractions and like-ion repulsions.",
+        "Separate neutral molecules held only by weak intermolecular attractions",
+        "All cations clustered on one side and all anions on the other",
+        "Only neutral atoms sharing a common pool of delocalized electrons"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The lattice organizes charged particles to lower net electrostatic energy without treating the solid as isolated neutral molecules. B is incorrect: that describes a molecular solid rather than the ionic lattice model. C is incorrect: charge separation and like-charge crowding are unfavorable. D is incorrect: that is a metallic model, not an ionic crystal."
+    },
+    {
+      "id": "chem-2-3-002",
+      "prompt": "A particulate model of MgCl2(s) represents complete neutral bulk composition. Which ion-count ratio is required?",
+      "options": [
+        "One Mg2+ for every one Cl−",
+        "Two Mg2+ for every one Cl−",
+        "One Mg2+ for every two Cl−.",
+        "Equal numbers of Mg atoms and neutral Cl2 molecules"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A+2 cation requires two−1 anions for net neutrality, matching the formula-unit ratio. A is incorrect: that gives net+1 charge per pair. B is incorrect: that gives net+3 charge per group. D is incorrect: the model must represent the ions in the stated ionic solid."
+    },
+    {
+      "id": "chem-2-3-003",
+      "prompt": "A crystal contains M2+ cations and X3− anions. What smallest whole-number formula ratio gives a neutral solid?",
+      "options": [
+        "M2X3",
+        "MX",
+        "M3X",
+        "M3X2"
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Three+2 ions and two−3 ions give+6−6=0. A is incorrect: that gives+4−9, not zero. B is incorrect: that gives net−1 per pair. C is incorrect: that gives net+3 per group."
+    },
+    {
+      "id": "chem-2-3-004",
+      "prompt": "Which statement about a one-to-one M+/X− crystal correctly relates nearest-neighbor arrangement to electrostatic attraction?",
+      "options": [
+        "Every ion should have only neighbors of the same charge",
+        "A stable local arrangement generally places opposite charges near one another rather than grouping like charges together.",
+        "Cations attract cations because both have lost electrons",
+        "Opposite charges should be separated as far as possible to maximize attraction"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. Unlike-charge attraction favors neighboring opposite ions, with the complete lattice also accounting for other repulsions and attractions. A is incorrect: that emphasizes repulsion. C is incorrect: like charges repel. D is incorrect: attraction weakens with separation."
+    },
+    {
+      "id": "chem-2-3-005",
+      "prompt": "Why can shifting planes in an ionic crystal cause brittle fracture?",
+      "options": [
+        "Ions become neutral atoms whenever a plane moves",
+        "Every ionic solid has mobile metallic electrons that lubricate the planes",
+        "The shift can bring like-charged ions into adjacent positions, creating strong repulsion.",
+        "Oppositely charged ions begin to repel solely because the solid is strained"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A displacement can disrupt the favorable alternating-charge arrangement and separate the lattice. A is incorrect: mechanical displacement does not automatically transfer electrons to neutralize ions. B is incorrect: that is not the ionic-lattice model. D is incorrect: their charge signs still produce attraction; unfavorable like-charge alignments matter."
+    },
+    {
+      "id": "chem-2-3-006",
+      "prompt": "Why is a typical ionic crystal a poor electrical conductor while its melt can conduct?",
+      "options": [
+        "In the crystal the ions are constrained in lattice positions; in the melt they can move and carry charge.",
+        "The crystal contains no charged particles",
+        "Melting must convert every ion into a free electron",
+        "The melt conducts because its ions become stationary"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. The carriers are already charged in both states, but their mobility changes. B is incorrect: the lattice consists of ions. C is incorrect: mobile ions, not that conversion, explain molten conduction. D is incorrect: charge transport requires mobility."
+    },
+    {
+      "id": "chem-2-3-007",
+      "prompt": "A drawing depicts NaCl(s) as widely separated, independent NaCl molecules. What key feature is missing from this ionic-solid model?",
+      "options": [
+        "An obligatory two-atom covalent molecule for every formula unit",
+        "The extended network of electrostatic interactions among many neighboring ions.",
+        "A requirement that all ions have zero charge",
+        "A specific memorized coordination number for every possible ionic solid"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. A formula unit gives a composition ratio, not a boundary around an isolated molecule in the lattice. A is incorrect: that retains the mistaken molecular interpretation. C is incorrect: removing ionic charges would discard the defining interactions. D is incorrect: the general lattice model does not require memorizing a particular crystal structure."
+    },
+    {
+      "id": "chem-2-3-008",
+      "prompt": "A model labels every nearest separation in an ionic solid as attractive and includes no repulsive interactions anywhere. Why is this incomplete?",
+      "options": [
+        "Every unlike-charge interaction must instead be repulsive",
+        "No electrostatic interaction occurs in a neutral solid",
+        "Repulsion matters only in gases, never solids",
+        "Like-charge ions and short-range overlap also contribute repulsion to the lattice energy balance."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. A stable arrangement reflects competing interactions rather than attraction without limit. A is incorrect: opposite ionic charges attract. B is incorrect: bulk neutrality does not eliminate local charged-particle interactions. C is incorrect: repulsions are important in condensed structures too."
+    },
+    {
+      "id": "chem-2-3-009",
+      "prompt": "A simplified NaCl model is given the ionic-size information that Na+ is smaller than Cl−. Which representation is consistent with that information and bulk neutrality?",
+      "options": [
+        "Twice as many smaller+1 spheres as larger−1 spheres",
+        "Equal numbers of smaller+1 spheres and larger−1 spheres in an extended arrangement.",
+        "Equal numbers with the+1 spheres drawn larger despite the supplied sizes",
+        "Only one type of uncharged sphere"
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The supplied size ordering and1:1 charge balance must both be represented. A is incorrect: that gives excess positive charge. C is incorrect: that contradicts the stated ionic-radius relationship. D is incorrect: that omits both ion identities and electrostatic structure."
+    },
+    {
+      "id": "chem-2-3-010",
+      "prompt": "A complete neutral bulk model of an M+/X− ionic solid is enlarged without changing its composition. What must happen to the particle-count ratio?",
+      "options": [
+        "The cation fraction must increase with crystal size",
+        "The formula subscripts must equal the total numbers in each larger sample",
+        "It stays1:1 even though the total number of represented ions increases.",
+        "The larger model must contain neutral molecules instead of ions"
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Extending a crystal adds proportional numbers of cations and anions; it does not change its formula ratio. A is incorrect: bulk neutrality and composition constrain the ratio. B is incorrect: formula units express reduced composition, not sample size. D is incorrect: sample size does not change bonding type."
+    },
+    {
+      "id": "chem-2-3-011",
+      "prompt": "An ionic lattice model uses the same charges but allows opposite-ion centers to collapse to zero separation, claiming unlimited stability. Which correction is essential?",
+      "options": [
+        "Include short-range repulsion and finite ion size, which prevent unbounded collapse.",
+        "Remove all attraction between opposite charges",
+        "Assume ions have no electrons and no finite extent",
+        "Treat point-charge attraction as accurate at every separation without any overlap correction"
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Real stable separations result from a balance; a point-charge attraction alone is incomplete at extremely short range. B is incorrect: attraction is real and remains part of the model. C is incorrect: that removes the physical origin of important short-range effects. D is incorrect: the point-charge-only approximation omits the short-range physics that prevents collapse."
+    }
+  ]
+}

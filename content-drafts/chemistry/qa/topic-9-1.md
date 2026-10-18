@@ -11,3 +11,5 @@ PDF173 / printed166; LO9.1.A sign/relative magnitude from matter and energy disp
 Separate sign pass:001expansion+;002condensation−;003melting+;004heating+;005association−;006gasproduction+;007solidwarming+;008cool/compressboth−;009vaporizationgenerallylargerincrease;010equalgascoeffrequiresdata;011freezing−withoutidentitychange. Negative change distinguished from negative absolute entropy; atom conservation distinguished from entropy constancy.
 
 Keys: C/A/B/D/A/C/D/B/D/A/C. Each explanation addresses all four options. No third-party question text consulted. Same-assistant separate solves and reproducible calculations are not independent human approval.
+
+Whole-bank editorial pass: item004 weak distractor replaced with a closer conceptual misconception; correct answer/index unchanged.

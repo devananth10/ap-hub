@@ -11,3 +11,5 @@ PDF181 / printed174; LO9.8.A cell components, charge paths, electrode processes,
 Separate half-reaction/charge pass: Zn→Zn2++2e at anode; Cu2++2e→Cu at cathode; electronsZn→Cu; anionsanode/cationscathode for these cation-based compartments; Znloses/Cugains; Na+reductionmolten; inertPtnetunchanged; H+reductiongasatcathode. Wire/bridge carrier distinction and voltmeter role checked. No universal ion-flow rule applied without this specific half-cell chemistry.
 
 Keys: B/D/A/C/D/B/C/A/C/D/B. Each explanation addresses all four options. No third-party question text consulted. Same-assistant separate solves and reproducible calculations are not independent human approval.
+
+Whole-bank editorial pass: item008 weak distractor replaced with a closer conceptual misconception; correct answer/index unchanged.

@@ -11,3 +11,5 @@ PDF165 / printed158; LO8.10.A absolute concentration and directional conjugate r
 Separate reservoir audit:001same1:1ratio/tenfoldconcentrations;002acid-rich=>OHcapacity;003base-rich=>Hcapacity;004tenfolddilutionlowersreservoirsperL;005tenfoldvolume=>tenfoldtotalmoles;006A−2mmollimitation;007balancedpartners;008smallerobservedresponse=>greatercapacityundercontrols;009halvedconcentrationsnotmoles;010absoluteconcentrationsneeded;011proportionalscaling. No claim that equal pH means equal capacity or that buffers never fail.
 
 Keys: D/B/C/A/B/D/A/C/A/B/D. Each explanation addresses all four options. No third-party question text consulted. Same-assistant separate solves and reproducible calculations are not independent human approval.
+
+Whole-bank editorial pass: item010 weak distractor replaced with a closer conceptual misconception; correct answer/index unchanged.

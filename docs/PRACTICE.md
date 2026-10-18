@@ -12,6 +12,8 @@ All 91 Chemistry topic display names and nine units were reconciled with the off
 
 The canonical mapping is [CONTENT_IMPORT_GUIDE.md](../CONTENT_IMPORT_GUIDE.md), created from the actual repository rather than presented as a recovered historical guide. Seventeen existing IDs remain stable; 74 newly registered topics receive documented number-based IDs. Do not assume that unavailable older drafts used these new IDs. Match official numbers and record conversions explicitly.
 
+Complete draft coverage as of October 18: 91 topics  × 11 = 1,001 questions, including 11 live and 990 unpublished. All 29 corrected recovered partial objects were preserved; four new questions completed those sets. Four unavailable-source sets were newly written and labeled as replacements. See [the full-bank audit](../content-drafts/chemistry/BANK_AUDIT.md).
+
 See [the progress ledger](../content-drafts/chemistry/PROGRESS.md) for unavailable full sets and recovered fragments. Missing files are not evidence that work never existed. Preserve recovered originals; correct working copies with an audit log. Never invent a truncated question's ending.
 
 ## Draft, validate, review, then publish

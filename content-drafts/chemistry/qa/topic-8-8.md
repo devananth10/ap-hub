@@ -11,3 +11,5 @@ PDF163 / printed156; LO8.8.A conjugate reservoirs and reactions consuming added 
 Separate reaction/charge and species pass: addedOHconsumesHA orNH4+; addedHconsumesA−orNH3; pair interconverts rather than vanishes. Item00910/10→11/9mmol, ratio9/11<1. Item011common dilution factor cancels in ratio but does not imply unchanged amounts or unlimited resistance. All four options challenged for each conceptual item.
 
 Keys: B/D/A/C/D/B/C/A/C/D/B. Each explanation addresses all four options. No third-party question text consulted. Same-assistant separate solves and reproducible calculations are not independent human approval.
+
+Whole-bank editorial pass: item003 weak distractor replaced with a closer conceptual misconception; correct answer/index unchanged.

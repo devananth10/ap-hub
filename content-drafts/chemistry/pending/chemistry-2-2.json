@@ -127,13 +127,13 @@
       "id": "chem-2-2-011",
       "prompt": "Which pairwise comparison best supports stronger electrostatic binding in MgO than NaCl within a simple ionic model?",
       "options": [
-        "MgO is stronger only because its formula has fewer letters",
+        "MgO is stronger because Mg2+ is larger than Na+ while both salts have the same charge product",
         "NaCl has greater attraction because singly charged ions repel less",
         "Both must have identical binding because their formulas are1:1",
         "Mg2+ and O2− have larger charge magnitudes and generally smaller separation than Na+ and Cl−."
       ],
       "correctIndex": 3,
-      "explanation": "D is correct. Both the larger charge product and shorter ionic distance strengthen the attraction. A is incorrect: formula spelling has no physical significance. B is incorrect: the relevant pairwise cation-anion attraction is weaker for smaller charge product at comparable distance. C is incorrect: stoichiometric ratio alone does not set charge magnitudes or distance."
+      "explanation": "D is correct. Both the larger charge product and shorter ionic distance strengthen the attraction. A is incorrect: Mg2+ is smaller than Na+, and the charge products are four versus one, not equal. B is incorrect: the relevant pairwise cation-anion attraction is weaker for smaller charge product at comparable distance. C is incorrect: stoichiometric ratio alone does not set charge magnitudes or distance."
     }
   ]
 }

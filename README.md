@@ -103,13 +103,14 @@ Homepage artwork is selected on the server after `connection()` and passed as a 
 
 ## Chemistry content development
 
-The complete official Chemistry outline now contains 91 topics. See [CONTENT_IMPORT_GUIDE.md](CONTENT_IMPORT_GUIDE.md) for exact IDs and the distinction between preserved IDs and newly assigned IDs. The current [progress ledger](content-drafts/chemistry/PROGRESS.md) lists every topic and identifies unavailable historical drafts.
+The complete official Chemistry outline now contains 91 topics, with exactly 11 questions per topic saved across the approved registry and unpublished drafts (1,001 total: 11 live, 990 unpublished). See [CONTENT_IMPORT_GUIDE.md](CONTENT_IMPORT_GUIDE.md) for exact IDs and the distinction between preserved IDs and newly assigned IDs. The current [progress ledger](content-drafts/chemistry/PROGRESS.md) lists every topic and identifies unavailable historical drafts.
 
 New question sets and video candidates live under `content-drafts/chemistry/` and are not application imports. Validation does not approve or publish them. Run:
 
 ```sh
 node --experimental-strip-types scripts/check-question-drafts.mjs
 node scripts/check-chemistry-science.mjs
+node --experimental-strip-types scripts/audit-chemistry-bank.mjs
 node --experimental-strip-types scripts/report-chemistry-progress.mjs
 ```
 
@@ -129,3 +130,5 @@ No authentication, payments, production database, paid AI API, or real AI summar
 For commits and pushes to the existing repository, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 The latest verification results and preview images are listed in [docs/VALIDATION.md](docs/VALIDATION.md).
+
+The full-bank [audit report](content-drafts/chemistry/BANK_AUDIT.md) lists preservation evidence, review limits and known editorial follow-up. The inventory hashes are checked by default; refresh them with `--write` only after reviewing intentional content changes. No pending file becomes live merely by saving, auditing, committing or pushing it.

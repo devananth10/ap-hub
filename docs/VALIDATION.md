@@ -1,5 +1,13 @@
 # PrepAtlas milestone verification
 
+## Complete 1,001-question bank checkpoint — October 18, 2026
+
+- All 91 topics now contain exactly 11 complete questions: 1,001 total. Only the original authorized Topic1.1 bank (11) is live; 990 remain unpublished in 90 pending sets. No missing counts or structural/ID defects remain.
+- The full audit checks coverage, exact schema, unique ordered IDs, answer/explanation labels, normalized exact prompt duplicates, per-topic QA, frozen semantic hashes and preservation. All 49 Unit 6 baseline draft sets, the original approved ten objects and all 29 corrected recovered partial objects remain unchanged. Four newly authored questions completed the partials;44 new replacements fill unavailable-source topics without claiming to recover them.
+- Numerical/model checks, TypeScript, all 31 unit tests and a fresh production build pass. The final normal development and temporary production smoke suites pass all 19 routes, CSS, seven 404 cases and six fixed themes; home rotation showed five/six themes in twelve responses respectively. The temporary production serverPID 17144 was stopped and preview 3000 preserved.
+- Browser confirms Unit 9 has 0 live questions and 11 official topic options; Topic 1.1 still has 11 without the approval badge. No student notes or progress were edited. Earlier intermittent generated-manifest failures remain documented; final passes do not prove a permanent fix.
+- See the [full-bank audit](../content-drafts/chemistry/BANK_AUDIT.md) for remaining human scientific, difficulty and variety review. No redesign, video integration, fullscreen or automatic publication was started. The current AGENTS milestone workflow authorizes a normal GitHub backup push, superseding the older handoff restriction; remote success must be verified separately.
+
 ## Unit 9 content checkpoint — October 18, 2026
 
 - All eleven thermodynamics/electrochemistry topics have eleven-question unpublished files (121 new questions). Coverage924/1,001: eleven live and913 pending in83 sets. Seven earlier topics remain incomplete.

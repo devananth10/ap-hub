@@ -1,0 +1,1436 @@
+{
+  "asOf": "2026-10-18",
+  "topics": 91,
+  "questions": 1001,
+  "live": 11,
+  "unpublished": 990,
+  "unitQuestionCounts": [
+    {
+      "unit": 1,
+      "topics": 8,
+      "questions": 88
+    },
+    {
+      "unit": 2,
+      "topics": 7,
+      "questions": 77
+    },
+    {
+      "unit": 3,
+      "topics": 13,
+      "questions": 143
+    },
+    {
+      "unit": 4,
+      "topics": 9,
+      "questions": 99
+    },
+    {
+      "unit": 5,
+      "topics": 11,
+      "questions": 121
+    },
+    {
+      "unit": 6,
+      "topics": 9,
+      "questions": 99
+    },
+    {
+      "unit": 7,
+      "topics": 12,
+      "questions": 132
+    },
+    {
+      "unit": 8,
+      "topics": 11,
+      "questions": 121
+    },
+    {
+      "unit": 9,
+      "topics": 11,
+      "questions": 121
+    }
+  ],
+  "preservation": {
+    "originalApprovedTen": true,
+    "unit6Baseline": "34fb9df",
+    "completeBaselineSets": 49,
+    "recoveredWorkingQuestions": 29,
+    "archiveSha256": "e05fb3a700830cdd48396b9b8cba86a01e0e4855628840df5ac8d913e38ba9a3"
+  },
+  "limitations": [
+    "Structural checks and reproducible arithmetic/model checks do not constitute independent human scientific review.",
+    "Human review of difficulty, semantic variety, pedagogical quality and accidental similarity remains pending.",
+    "Recovered 1.6 item008 overlaps later spectroscopy arithmetic; retained as valid supplied-relation PES interpretation.",
+    "Recovered 1.7 items006/010 and 2.1 polarity items have variety overlap; valid existing work retained.",
+    "Topic5.9 supplied fractional/inverse apparent-order examples need human difficulty calibration.",
+    "Original full sources for1.2/1.3/2.2/2.3 remain unavailable; current complete sets are new replacement work, not recovered sources."
+  ],
+  "inventory": [
+    {
+      "number": "1.1",
+      "title": "Moles and Molar Mass",
+      "topicId": "moles",
+      "count": 11,
+      "path": "src/content/practice/chemistry-1-1.json",
+      "status": "owner-authorized-live",
+      "answerDistribution": [
+        3,
+        2,
+        3,
+        3
+      ],
+      "semanticSha256": "e294c5adf8903f06089c7a595abdb97dcd2dbcb9b85af9b6eac14af91513c30b"
+    },
+    {
+      "number": "1.2",
+      "title": "Mass Spectra of Elements",
+      "topicId": "mass-spectra",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-1-2.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "semanticSha256": "af48556cdbd207a3701f8ff02e412d04cd4f21a6eb36e85d24f51543413a9305"
+    },
+    {
+      "number": "1.3",
+      "title": "Elemental Composition of Pure Substances",
+      "topicId": "composition",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-1-3.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "9b3b0dd034516a62822969e6860d0d66b8b744358becf53fcc42d6fc378c6554"
+    },
+    {
+      "number": "1.4",
+      "title": "Composition of Mixtures",
+      "topicId": "mixtures",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-1-4.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "463b9b8b0ed368e8bc80d1ec4aabe3d97e17fd069e1e0ac68304f87a56a117b5"
+    },
+    {
+      "number": "1.5",
+      "title": "Atomic Structure and Electron Configuration",
+      "topicId": "electron-configuration",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-1-5.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "c85946cfd2182c179277517666bb9a7ec58eeabccb5425973664ff2ccab1f498"
+    },
+    {
+      "number": "1.6",
+      "title": "Photoelectron Spectroscopy",
+      "topicId": "photoelectron-spectroscopy",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-1-6.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "acf7a69f2d9ac39c32a71f747eabfb5cc76b2a108ddd199c065e17c42a091c5d"
+    },
+    {
+      "number": "1.7",
+      "title": "Periodic Trends",
+      "topicId": "periodic-trends",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-1-7.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "80d2477dbdaa1a6bf54f73d8a6ba89dcc53e2f10d69b7b34e05deca8bbeca251"
+    },
+    {
+      "number": "1.8",
+      "title": "Valence Electrons and Ionic Compounds",
+      "topicId": "valence",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-1-8.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "bc9f2278f3c9c7841054157944e5efad4ff4f42b03efd641a3b7b6e49d3257af"
+    },
+    {
+      "number": "2.1",
+      "title": "Types of Chemical Bonds",
+      "topicId": "bonds",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-2-1.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        2,
+        3,
+        3
+      ],
+      "semanticSha256": "1f810d74d7151d0e13321887624fd340f9570f46a2445208bef344d8afa3bd07"
+    },
+    {
+      "number": "2.2",
+      "title": "Intramolecular Force and Potential Energy",
+      "topicId": "potential-energy",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-2-2.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "semanticSha256": "7e64a35aedf8511ee343583ac6cdb9a32a355da77e3d2cd81888414cd574fb9d"
+    },
+    {
+      "number": "2.3",
+      "title": "Structure of Ionic Solids",
+      "topicId": "topic-2-3",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-2-3.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "d41145923281c8f617a5788a5b3fdb7c891adffb54a6408e1d4fb3246179e912"
+    },
+    {
+      "number": "2.4",
+      "title": "Structure of Metals and Alloys",
+      "topicId": "topic-2-4",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-2-4.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "ceb65b57ed6bdb25194745b9e4a9b5ec70c623d89184be9a3baef2c8cf80f167"
+    },
+    {
+      "number": "2.5",
+      "title": "Lewis Diagrams",
+      "topicId": "topic-2-5",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-2-5.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "d08ccd5805116c083a74f478504692e38ce446a7c3fd48baee70af8c670463b3"
+    },
+    {
+      "number": "2.6",
+      "title": "Resonance and Formal Charge",
+      "topicId": "topic-2-6",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-2-6.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "ecf0a04e7981dc38f9f075e0890d980a83992d021960f52cd3b18c4b2a87a44f"
+    },
+    {
+      "number": "2.7",
+      "title": "VSEPR and Hybridization",
+      "topicId": "topic-2-7",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-2-7.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "690082a6c9cd45e01eab90b80273ac5516d52b33621cd1d0024f13d4b56e917a"
+    },
+    {
+      "number": "3.1",
+      "title": "Intermolecular and Interparticle Forces",
+      "topicId": "intermolecular-forces",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-3-1.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "e56ec1f3c5070a022f8e0d71ca35300c8544d0ae01642c4d328a62cc48f2a2e9"
+    },
+    {
+      "number": "3.2",
+      "title": "Properties of Solids",
+      "topicId": "topic-3-2",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-3-2.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "104061152de9e4b0d37e6539cdc6deb4836e5f6c32995e1a34a915757ea7549e"
+    },
+    {
+      "number": "3.3",
+      "title": "Solids, Liquids, and Gases",
+      "topicId": "topic-3-3",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-3-3.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "74b1a7c447dedc2d3d7332cc7c6a24a10151cf4696d85eb4f560bf27d384a958"
+    },
+    {
+      "number": "3.4",
+      "title": "Ideal Gas Law",
+      "topicId": "topic-3-4",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-3-4.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        2,
+        3,
+        3
+      ],
+      "semanticSha256": "3692c72e071636e917fa0493d9151a0f527ef177ace8af72f6366cf747c19232"
+    },
+    {
+      "number": "3.5",
+      "title": "Kinetic Molecular Theory",
+      "topicId": "topic-3-5",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-3-5.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        2,
+        3,
+        3
+      ],
+      "semanticSha256": "18e32c259fdc49d3e412df1b6887de1d5f712b0a4d5bd7cb1a739ca0d81d6963"
+    },
+    {
+      "number": "3.6",
+      "title": "Deviation from Ideal Gas Law",
+      "topicId": "topic-3-6",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-3-6.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "semanticSha256": "729b831c87da7f60ab446eebb995761ef7318e8aebdea2f9335c9d4c46f73360"
+    },
+    {
+      "number": "3.7",
+      "title": "Solutions and Mixtures",
+      "topicId": "topic-3-7",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-3-7.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "f3d85d84b230dbbab08d7a4c1c22ebea23a891e24258c3b732e46e220d6b98ba"
+    },
+    {
+      "number": "3.8",
+      "title": "Representations of Solutions",
+      "topicId": "topic-3-8",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-3-8.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "2455e3fd8f8682309a40f5e67e311de2da6481602ba26d4f488a70be78143c9f"
+    },
+    {
+      "number": "3.9",
+      "title": "Separation of Solutions and Mixtures",
+      "topicId": "topic-3-9",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-3-9.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        2,
+        3,
+        3
+      ],
+      "semanticSha256": "d3eb6fdc30a473aa09803b91b0808fa27a1deb19a8c2a67767788f443cc08350"
+    },
+    {
+      "number": "3.10",
+      "title": "Solubility",
+      "topicId": "topic-3-10",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-3-10.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "447683d9c79bb4e0c0a162375adb40926b5dd499fddac2c94bd7d86b79e4490a"
+    },
+    {
+      "number": "3.11",
+      "title": "Spectroscopy and the Electromagnetic Spectrum",
+      "topicId": "topic-3-11",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-3-11.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "ca18b4561ac2287d1cc6cb0476c73678dadb1426fe6a1b6f2d5d7ed5290521ad"
+    },
+    {
+      "number": "3.12",
+      "title": "Properties of Photons",
+      "topicId": "topic-3-12",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-3-12.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "c18214a0377bca31e3da9f25d20199c6bd27e200f7db14b5a0e13bc5e8f05e14"
+    },
+    {
+      "number": "3.13",
+      "title": "Beer-Lambert Law",
+      "topicId": "topic-3-13",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-3-13.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        2,
+        3,
+        3
+      ],
+      "semanticSha256": "89d2e01c83d84fcdb4aa012fda6a57f86bee5eaf90315fc4abf6b97332d39770"
+    },
+    {
+      "number": "4.1",
+      "title": "Introduction for Reactions",
+      "topicId": "reactions",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-4-1.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "d1146cc82c9bbc8b4c270bb4085b4504e7ca135c28c8207b31eb510195dff58c"
+    },
+    {
+      "number": "4.2",
+      "title": "Net Ionic Equations",
+      "topicId": "topic-4-2",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-4-2.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "068a4105ef9a16c3a0b6614e7ff27c4d74dfce0e6b5e9e3b91c0753ba828646d"
+    },
+    {
+      "number": "4.3",
+      "title": "Representations of Reactions",
+      "topicId": "topic-4-3",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-4-3.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "37ff501e8729c2de7bf5d21a06a180b9d61ed0f76b9c79a27318fd958e0bc0b5"
+    },
+    {
+      "number": "4.4",
+      "title": "Physical and Chemical Changes",
+      "topicId": "topic-4-4",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-4-4.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "f4b861f9e088665a21ef1569db3b85dd461af33ddd46f34ce42b4ddb59cecafc"
+    },
+    {
+      "number": "4.5",
+      "title": "Stoichiometry",
+      "topicId": "topic-4-5",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-4-5.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        2,
+        3,
+        3
+      ],
+      "semanticSha256": "8ba38e7060a51f8f33682e9019b9c541405aaf8b26247f8ca9fc2834f17ad096"
+    },
+    {
+      "number": "4.6",
+      "title": "Introduction to Titration",
+      "topicId": "topic-4-6",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-4-6.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "fc748d135d69fd218265c916ec78093f7aa07d38691e4f867249569e4181d18d"
+    },
+    {
+      "number": "4.7",
+      "title": "Types of Chemical Reactions",
+      "topicId": "topic-4-7",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-4-7.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "cd93e020f685df63f90865bffe720ee785c78c902f61ab6480b46d3f9efa54a4"
+    },
+    {
+      "number": "4.8",
+      "title": "Introduction to Acid-Base Reactions",
+      "topicId": "topic-4-8",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-4-8.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "9100cf4a75aa95b441368e480a1785f578bfca31f10463b025dd5f3f571a5d84"
+    },
+    {
+      "number": "4.9",
+      "title": "Oxidation-Reduction (Redox) Reactions",
+      "topicId": "topic-4-9",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-4-9.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "6ac4cd1d168b595bed2650b636d84b576ac099baf9a543671370cc3a4317784f"
+    },
+    {
+      "number": "5.1",
+      "title": "Reaction Rates",
+      "topicId": "rates",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-5-1.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "aaf7974470db23bb018676a20e5b1497fd8361882e96dc23667380b928e30629"
+    },
+    {
+      "number": "5.2",
+      "title": "Introduction to Rate Law",
+      "topicId": "topic-5-2",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-5-2.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "1a33ab1fbb9554abaaa8a6f1915e2319ec5840baa0dad3576c54f478141a3269"
+    },
+    {
+      "number": "5.3",
+      "title": "Concentration Changes Over Time",
+      "topicId": "topic-5-3",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-5-3.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "b54ccba1c68037531b9c61b1fe9635d5c78be00ac40c570ec2b75cae4afa6652"
+    },
+    {
+      "number": "5.4",
+      "title": "Elementary Reactions",
+      "topicId": "topic-5-4",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-5-4.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "aac29245264f5acfacfdfcf05e5fe3031a5ab5386b54209eae141c15da93971e"
+    },
+    {
+      "number": "5.5",
+      "title": "Collision Model",
+      "topicId": "topic-5-5",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-5-5.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "fc09453b475b195d1c81cc0cf481c6d93396de00fef23f3d4b7699b1b7b7a21a"
+    },
+    {
+      "number": "5.6",
+      "title": "Reaction Energy Profile",
+      "topicId": "topic-5-6",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-5-6.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "91e5986ab64025284cd195f8c31a8f756ee1fdd5bd68d6d04e70bacd5619f2cb"
+    },
+    {
+      "number": "5.7",
+      "title": "Introduction to Reaction Mechanisms",
+      "topicId": "topic-5-7",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-5-7.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "ffc9b3d8c8ad2cf1a03cc2f17158b25a3848b978d364c68650c2d3fccc9fa2b2"
+    },
+    {
+      "number": "5.8",
+      "title": "Reaction Mechanism and Rate Law",
+      "topicId": "topic-5-8",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-5-8.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "9c8684bfff263da0feb94ea938e62fe3e074fad3542d2f56e30284e489a9b8ea"
+    },
+    {
+      "number": "5.9",
+      "title": "Pre-Equilibrium Approximation",
+      "topicId": "topic-5-9",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-5-9.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "bb81e007a77e4ccbe9e55c23a070d44372cade8f8d1f4fd04ab2c23b51a2c6f4"
+    },
+    {
+      "number": "5.10",
+      "title": "Multistep Reaction Energy Profile",
+      "topicId": "topic-5-10",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-5-10.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "9db83612820628d2326bb6b979a8ae3b3723912b11f632f9eedf544692ff6038"
+    },
+    {
+      "number": "5.11",
+      "title": "Catalysis",
+      "topicId": "topic-5-11",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-5-11.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "f0c39fc0c30c37549c4225b1eb9aa0d784799cfe8f209c84659614ca17d0fd20"
+    },
+    {
+      "number": "6.1",
+      "title": "Endothermic and Exothermic Processes",
+      "topicId": "energy",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-6-1.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "fe987122149a4c54c8d92604d32cb23e857f7906d552a2221e62aa5eea5fceaf"
+    },
+    {
+      "number": "6.2",
+      "title": "Energy Diagrams",
+      "topicId": "topic-6-2",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-6-2.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "10d1a641ab62ad9eb93e18712471d0a0e257e58d11dc078321803483b5dd617d"
+    },
+    {
+      "number": "6.3",
+      "title": "Heat Transfer and Thermal Equilibrium",
+      "topicId": "topic-6-3",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-6-3.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "78ea84abd0938a1aa3937d451351f65915045dfaa38e17e90258b796130eb494"
+    },
+    {
+      "number": "6.4",
+      "title": "Heat Capacity and Calorimetry",
+      "topicId": "topic-6-4",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-6-4.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "b9f9f0516142bb1692d1e6311a27e144b0dd280568463693bc920231a533d25b"
+    },
+    {
+      "number": "6.5",
+      "title": "Energy of Phase Changes",
+      "topicId": "topic-6-5",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-6-5.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "46475b739a7c5ee9351251b1e87eb364453fb4b47d4771a045077224f29cc0b5"
+    },
+    {
+      "number": "6.6",
+      "title": "Introduction to Enthalpy of Reaction",
+      "topicId": "topic-6-6",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-6-6.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "384185999713bd05d0cf28d52cccc92cca91ad09c8d9081dc00bfd1efa255a96"
+    },
+    {
+      "number": "6.7",
+      "title": "Bond Enthalpies",
+      "topicId": "topic-6-7",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-6-7.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "93906dcdd2780e8a8474531ffc083f6c842ab47f278abc6301a23470f0cf49d1"
+    },
+    {
+      "number": "6.8",
+      "title": "Enthalpy of Formation",
+      "topicId": "topic-6-8",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-6-8.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "2fd60609f3eccbfb42a228b5bc40d9133aff6c2e54546a786beb1dc8ac187672"
+    },
+    {
+      "number": "6.9",
+      "title": "Hess’s Law",
+      "topicId": "topic-6-9",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-6-9.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "3e37f5c8e891dc0d3a90e7aa2fcf2c658673e6795be386ed106895d92bb4a6f9"
+    },
+    {
+      "number": "7.1",
+      "title": "Introduction to Equilibrium",
+      "topicId": "equilibrium",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-7-1.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "0c6026d3f5cca5c7f796aa9d89323bc2b5d313a003b11642a3f066ddf7ab2198"
+    },
+    {
+      "number": "7.2",
+      "title": "Direction of Reversible Reactions",
+      "topicId": "topic-7-2",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-7-2.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "6d7d500348e332cfe2035787937b6c4dfae7cc472a72e888d4c6efce4ad7e680"
+    },
+    {
+      "number": "7.3",
+      "title": "Reaction Quotient and Equilibrium Constant",
+      "topicId": "topic-7-3",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-7-3.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "6cbeaecfcc92f138e501eaea135624123d9d76b097a1db84798caca4b9b49814"
+    },
+    {
+      "number": "7.4",
+      "title": "Calculating the Equilibrium Constant",
+      "topicId": "topic-7-4",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-7-4.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "df6474c3c1f1b05de0ee0a59291060df3c94e2e2a260df3d198801d19f6b31d6"
+    },
+    {
+      "number": "7.5",
+      "title": "Magnitude of the Equilibrium Constant",
+      "topicId": "topic-7-5",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-7-5.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "f4db7e5042870577c280452fd282f51573d46831c51e8ac951aa970880d9b7de"
+    },
+    {
+      "number": "7.6",
+      "title": "Properties of the Equilibrium Constant",
+      "topicId": "topic-7-6",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-7-6.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "semanticSha256": "84579c470fbfaab9301dade2690d55eb9ffd9f9bdb7730d8c7e3ef1c487d86ec"
+    },
+    {
+      "number": "7.7",
+      "title": "Calculating Equilibrium Concentrations",
+      "topicId": "topic-7-7",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-7-7.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "f6601310c422a7d1aa8a995280ad6f613b83c4efc345eaf65a6fb9715cbeb2a8"
+    },
+    {
+      "number": "7.8",
+      "title": "Representations of Equilibrium",
+      "topicId": "topic-7-8",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-7-8.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "be7c4eb41656658d941b676c6bf703109a1ef67b6fab678e293cccfee3c35be1"
+    },
+    {
+      "number": "7.9",
+      "title": "Introduction to Le Châtelier’s Principle",
+      "topicId": "topic-7-9",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-7-9.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        2,
+        3,
+        3
+      ],
+      "semanticSha256": "de0f8a1f7cadbb29ef44050a0fd44967aef38639470612aefd7501a50d1962c3"
+    },
+    {
+      "number": "7.10",
+      "title": "Reaction Quotient and Le Châtelier’s Principle",
+      "topicId": "topic-7-10",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-7-10.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "semanticSha256": "7a750e97219ebeb8a3db55b30e35c3b58001eb26c8a6f5b987ab65d2d1ce828b"
+    },
+    {
+      "number": "7.11",
+      "title": "Introduction to Solubility Equilibria",
+      "topicId": "topic-7-11",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-7-11.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "84e0f56519f3a16a3d069fe865a8880e2347cb21f25933b5ac5bf71aa43e2cfc"
+    },
+    {
+      "number": "7.12",
+      "title": "Common-Ion Effect",
+      "topicId": "topic-7-12",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-7-12.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "e658766d17755193c557b6087a001fe206c623e1375337dbe0ebe22fe73030ff"
+    },
+    {
+      "number": "8.1",
+      "title": "Introduction to Acids and Bases",
+      "topicId": "acids",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-8-1.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        2,
+        3,
+        3
+      ],
+      "semanticSha256": "3990af57504dcc50d2548f188ba4f595060aef0b825644e8139fcac4cc96e4f0"
+    },
+    {
+      "number": "8.2",
+      "title": "pH and pOH of Strong Acids and Bases",
+      "topicId": "topic-8-2",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-8-2.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "semanticSha256": "d3aa654825b99e05da739c3d660b4e2f7d5506640b3528d2176bb4e0bf83897b"
+    },
+    {
+      "number": "8.3",
+      "title": "Weak Acid and Base Equilibria",
+      "topicId": "topic-8-3",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-8-3.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "dcc21fabb8126b5dd854febea641aa1bd8f2bd73aa4258cfcf73e8de55fa52e2"
+    },
+    {
+      "number": "8.4",
+      "title": "Acid-Base Reactions and Buffers",
+      "topicId": "topic-8-4",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-8-4.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "d19102082668222886f7ea9b908495ecc168d7166b0582c090523ecaee143458"
+    },
+    {
+      "number": "8.5",
+      "title": "Acid-Base Titrations",
+      "topicId": "topic-8-5",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-8-5.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        2,
+        3,
+        3
+      ],
+      "semanticSha256": "843870b4607e5a2140deb4142b16930166c15760e2ef0e18a4d4d379daf42aec"
+    },
+    {
+      "number": "8.6",
+      "title": "Molecular Structure of Acids and Bases",
+      "topicId": "topic-8-6",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-8-6.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "semanticSha256": "00b92b8a62a7b17d71308813a2a3d5a2564143375cf82787f4ef25a8dfb204d1"
+    },
+    {
+      "number": "8.7",
+      "title": "pH and pKa",
+      "topicId": "topic-8-7",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-8-7.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "9d3a952c2d1b12582ce6d02de148510a11a4b39109e117db427ff553a4dd1f73"
+    },
+    {
+      "number": "8.8",
+      "title": "Properties of Buffers",
+      "topicId": "topic-8-8",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-8-8.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "f07c3102d617435f189ad9d39842721c9ff13b62191a3ab509527d80a3b620d0"
+    },
+    {
+      "number": "8.9",
+      "title": "Henderson-Hasselbalch Equation",
+      "topicId": "topic-8-9",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-8-9.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        2,
+        3,
+        3
+      ],
+      "semanticSha256": "5caf49bd484b2214dd9fa24b40a048c3db90932342c1708d9ec0ecc72b1b55f8"
+    },
+    {
+      "number": "8.10",
+      "title": "Buffer Capacity",
+      "topicId": "topic-8-10",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-8-10.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "semanticSha256": "3613f90b9be3b994799fe2bb20733e1c220a322fc9753ae506fadee1d55e29aa"
+    },
+    {
+      "number": "8.11",
+      "title": "pH and Solubility",
+      "topicId": "topic-8-11",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-8-11.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "e694ccca2d19d4703d34a5f38eb59b8acac155e7e7096c2ce7a8b504846ff7e4"
+    },
+    {
+      "number": "9.1",
+      "title": "Introduction to Entropy",
+      "topicId": "entropy",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-9-1.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        2,
+        3,
+        3
+      ],
+      "semanticSha256": "f4270b87255d5ea8078d38a268129756dd9154b63094285860b418c15b1628e0"
+    },
+    {
+      "number": "9.2",
+      "title": "Absolute Entropy and Entropy Change",
+      "topicId": "topic-9-2",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-9-2.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "semanticSha256": "e582e1fb07b1073462cb5ce6ecfed54704368569ea9b74aa28482ae3bbf57e66"
+    },
+    {
+      "number": "9.3",
+      "title": "Gibbs Free Energy and Thermodynamic Favorability",
+      "topicId": "topic-9-3",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-9-3.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "85998849ed807bb684792b0db1f2deca73e5707a14f4b68831dbdd9d6ea339e1"
+    },
+    {
+      "number": "9.4",
+      "title": "Thermodynamic and Kinetic Control",
+      "topicId": "topic-9-4",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-9-4.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "760ec33f1f7a56523621c48e6e728329b82a32244faededc45362251d7879d38"
+    },
+    {
+      "number": "9.5",
+      "title": "Free Energy and Equilibrium",
+      "topicId": "topic-9-5",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-9-5.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        2,
+        3,
+        3
+      ],
+      "semanticSha256": "511bbf95d35f0e08f76d06ef14b5281821e17556d5cf126540c89b7564a54f2e"
+    },
+    {
+      "number": "9.6",
+      "title": "Free Energy of Dissolution",
+      "topicId": "topic-9-6",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-9-6.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "semanticSha256": "98e2199e85b1657671281bf09211da8a9a417e681f7cc3ca9daeff32455e2979"
+    },
+    {
+      "number": "9.7",
+      "title": "Coupled Reactions",
+      "topicId": "topic-9-7",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-9-7.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "7a7c290ce5cce52c83b1d6a157202009a975d2974eb4665e66c91b09fa243342"
+    },
+    {
+      "number": "9.8",
+      "title": "Galvanic (Voltaic) and Electrolytic Cells",
+      "topicId": "topic-9-8",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-9-8.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "semanticSha256": "460a078b3ec9aa4087510466aa5dbb846552f8c293560a4b84130f7819fbb682"
+    },
+    {
+      "number": "9.9",
+      "title": "Cell Potential and Free Energy",
+      "topicId": "topic-9-9",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-9-9.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        2,
+        3,
+        3
+      ],
+      "semanticSha256": "379d2f0a275649bb0f7671e2a7c8dc12eea26057bb3bde401d41c0353b0d366c"
+    },
+    {
+      "number": "9.10",
+      "title": "Cell Potential Under Nonstandard Conditions",
+      "topicId": "topic-9-10",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-9-10.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "semanticSha256": "33fa88ddf587c807428570afc7a8fdb1bac91553d786b7db8d85d3f68fa43c1d"
+    },
+    {
+      "number": "9.11",
+      "title": "Electrolysis and Faraday’s Law",
+      "topicId": "topic-9-11",
+      "count": 11,
+      "path": "content-drafts/chemistry/pending/chemistry-9-11.json",
+      "status": "unpublished-human-review-pending",
+      "answerDistribution": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "semanticSha256": "bd7edf7f9984123ed7ce12487e9fb6d69b732a9791c4c299e8c3bf7379fa8e4a"
+    }
+  ]
+}

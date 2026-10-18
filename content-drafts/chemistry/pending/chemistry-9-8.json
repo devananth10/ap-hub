@@ -93,11 +93,11 @@
       "options": [
         "It provides an electronically conducting surface for solution-species electron transfer.",
         "Every electrode must dissolve, so this setup is impossible",
-        "Pt supplies an unlimited amount of Fe atoms",
+        "Pt must be oxidized stoichiometrically for every Fe3+ ion reduced",
         "The electrode replaces the need for electron conservation"
       ],
       "correctIndex": 0,
-      "explanation": "A is correct. The Fe ions undergo the redox change while inert Pt connects them to the external circuit. B is incorrect: inert electrodes can support redox reactions of dissolved species. C is incorrect: it provides no iron inventory. D is incorrect: electrons still balance in the half-reaction."
+      "explanation": "A is correct. The Fe ions undergo the redox change while inert Pt connects them to the external circuit. B is incorrect: inert electrodes can support redox reactions of dissolved species. C is incorrect: the stipulated inert electrode is not consumed; it conducts electrons between solution species and the circuit. D is incorrect: electrons still balance in the half-reaction."
     },
     {
       "id": "chem-9-8-009",

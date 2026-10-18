@@ -1,15 +1,15 @@
 # AP Chemistry progress checkpoint
 
-Updated 2026-10-18. This ledger describes saved files, not background work or a claim that the 1,001-question goal is complete.
+Updated 2026-10-18. This ledger describes saved files. Complete draft coverage is distinct from human scientific review and publication approval.
 
 - Official inventory: 91 topics in nine units; target 1,001 questions (11 per topic).
 - Live approved questions: 11 in Topic 1.1 only. Original 001–010 preserved; owner authorized validated 011.
-- Complete unpublished working sets: 89, 979 questions. These require human scientific review and owner approval; they are not additional live questions.
-- Next topic in the owner-authorized completion order: 2.3 — Structure of Ionic Solids, ID `topic-2-3`. Finish Units 7–9 first, then reconcile earlier gaps.
+- Complete unpublished working sets: 90, 990 questions. These require human scientific review and owner approval; they are not additional live questions.
+- Next topic in the owner-authorized completion order: none. All topics are complete when no next topic is listed; use BANK_AUDIT.md for remaining review items.
 - Topic 1.5 demonstration removed entirely; its page/workspace and student storage keys are preserved. Its pending eleven-question set is separate.
 - Recovered originals: three complete sets (1.4, 1.5, 1.8) and fragments (1.6, 1.7, 2.1). Archived unchanged; complete working copies audited separately.
-- The fragments contain 29 complete recovered question objects (10/10/9); corrected partial working copies and known scope/variety flags are recorded in `qa/partial-recovery.md`. They are not complete banks and do not count toward complete-topic totals.
-- Earlier full drafts for 1.2, 1.3, 2.2, 2.3 and the original import guide remain unavailable. Unavailable does not mean never created. The October 18 continuation authorizes new replacement/additional questions after Unit 9, preserving valid recovered work and recording provenance.
+- The fragments contain 29 complete recovered question objects (10/10/9); corrected partial working copies and known scope/variety flags are recorded in `qa/partial-recovery.md`. Those historical partial files remain unchanged; all 29 objects are retained in complete pending banks with four newly written additions. Count only the pending banks, never the archived duplicates.
+- Earlier full drafts for 1.2, 1.3, 2.2, 2.3 and the original import guide remain unavailable. Unavailable does not mean never created. After Unit 9, the October 18 continuation authorized new replacement/additional work. All four unavailable-source topics now have new eleven-question sets, explicitly distinguished from recovered content.
 - `CONTENT_IMPORT_GUIDE.md` is newly established from the actual repository: 17 existing IDs preserved, 74 new canonical assignments explicitly recorded.
 - Video research: 103 exact creator-index URLs cover 91/91 topics. 103 provider metadata checks passed. Every candidate remains pending owner approval; actual playback and embed permission are unverified.
 - Official resource catalog: zero entries, unchanged. No researched video has been published.
@@ -18,9 +18,9 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 
 1. Inspect this ledger, Git status, and `VALIDATION.md`; do not replace existing work.
 2. Audit any newly supplied unavailable source files before writing replacements. Preserve valid recovered questions. Newly written missing questions must be identified as new work, never recovered endings.
-3. Complete remaining Units 7–9 sequentially, then fill earlier gaps with only the missing valid questions, using each exact registered ID. Read its CED scope and exclusions, write exactly eleven original questions, then do a separate solve/distractor pass and programmatic calculations where appropriate.
+3. All 91 topics now have complete sets. Review BANK_AUDIT.md and per-topic QA for scientific/editorial follow-up; do not generate extra questions beyond 11 per topic.
 4. Save new banks in `pending/`, QA in `qa/`; run the draft/science checks and this report after each batch. Never import pending content without explicit approval.
-5. Save coherent local Git checkpoints. The attached continuation limits this task to local commits; it does not authorize pushing or deployment.
+5. Save coherent Git checkpoints and normal pushes to the existing upstream under the current owner-provided AGENTS.md milestone workflow. This later instruction supersedes the older handoff no-push restriction. Pushing drafts is not publication approval; do not deploy or register them.
 
 ## Full inventory
 
@@ -36,7 +36,7 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 | 1.8 | Valence Electrons and Ionic Compounds | `valence` | 0 | 11 | draft; human-review-pending (see QA) |
 | 2.1 | Types of Chemical Bonds | `bonds` | 0 | 11 | draft; human-review-pending (see QA) |
 | 2.2 | Intramolecular Force and Potential Energy | `potential-energy` | 0 | 11 | draft; human-review-pending (see QA) |
-| 2.3 | Structure of Ionic Solids | `topic-2-3` | 0 | 0 | earlier-source-unavailable |
+| 2.3 | Structure of Ionic Solids | `topic-2-3` | 0 | 11 | draft; human-review-pending (see QA) |
 | 2.4 | Structure of Metals and Alloys | `topic-2-4` | 0 | 11 | draft; human-review-pending (see QA) |
 | 2.5 | Lewis Diagrams | `topic-2-5` | 0 | 11 | draft; human-review-pending (see QA) |
 | 2.6 | Resonance and Formal Charge | `topic-2-6` | 0 | 11 | draft; human-review-pending (see QA) |
@@ -122,6 +122,7 @@ Updated 2026-10-18. This ledger describes saved files, not background work or a 
 
 - `node --experimental-strip-types scripts/check-question-drafts.mjs`: schema, exact scope/IDs/count, global duplicate IDs, answer-position distribution; dry run only.
 - `node scripts/check-chemistry-science.mjs`: separately derived numerical/charge checks; not a substitute for conceptual or human review.
+- `node --experimental-strip-types scripts/audit-chemistry-bank.mjs`: complete 91-topic inventory, frozen content hashes, explanation markers and preservation checks; see BANK_AUDIT.md.
 - Per-topic QA documents describe scope, retained/replaced questions, alternate-answer checks, and verification limitations.
 - `recovered/index.json` records the source archive path and SHA-256. Source material is unaudited provenance, not a publication registry.
 - Curriculum authority and page references: `research/official-topics.json`; exact URL research: `research/video-candidates.json`.

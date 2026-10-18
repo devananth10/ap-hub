@@ -31,3 +31,7 @@ The complete recovered prompts/options were solved before explanations/keys were
 | chem-2-1-007/008 | Conceptually valid but overlap other polarity comparisons; review whole-bank variety after complete retrieval. |
 
 Working IDs are explicitly mapped to `photoelectron-spectroscopy`, `periodic-trends`, and `bonds` from the established import guide. All corrections remain unpublished. The original archive was compared byte-for-byte to the recovered source and matches its recorded SHA-256. These checks do not constitute independent human scientific review. Resume by obtaining the unavailable endings/full sets; never fabricate them or silently call partial work complete.
+
+## October18 completion continuation
+
+The owner later explicitly authorized completing earlier gaps after Unit9. The original archive, recovered fragments and partial working files remain unchanged. Complete pending banks now retain all29 corrected working objects exactly, with new1.6-011,1.7-011,2.1-010 and2.1-011. These additions are new work, not recovered truncated endings. Earlier scope/variety flags remain for human review; no valid question was discarded. Per-topic QA records distinguish the retained content from additions.

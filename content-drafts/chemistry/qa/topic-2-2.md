@@ -11,3 +11,5 @@ PDF53 / printed46; LO2.2.A potential-energy curves, equilibrium distance/well de
 Earlier full source unavailable. All11 are newly authored replacement drafts under October18 authorization, not recovered text. Separate checks001minimum150pm;002zero−(−350)=+350kJ;004Ishorter/deeper;005sameatomsbondorder;007chargeproductfactor4;008distanceattraction;009netforcebalance;010formationrelease200;011charge/distancebothfavorMgO. Force/potential distinctions and reference-zero assumptions checked.
 
 Keys: D/B/C/A/B/D/A/C/A/B/D. Each explanation addresses all four options. No third-party question text consulted. Same-assistant separate solves and reproducible calculations are not independent human approval.
+
+Whole-bank editorial pass: item011 weak distractor replaced with a closer conceptual misconception; correct answer/index unchanged.

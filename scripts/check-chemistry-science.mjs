@@ -731,4 +731,7 @@ close(((1.42-.620)/16)/(.620/31),2.5);close(3/(2+3),6/(4+6));close(32/(32+2*16),
 // Newly written earlier gap 2.2: well depth, charge product and distance models.
 close(0-(-350),350);assert.ok(120<160 && 500>300);close((2*2)/(1*1),4);
 assert.ok(1/(.2**2)>1/(.3**2));close(-200-0,-200);
+// Newly written earlier gap 2.3: bulk charge neutrality and model scaling.
+close(2+2*(-1),0);close(3*2+2*(-3),0);close(8*1+8*(-1),0);
+assert.notEqual(2*2+3*(-3),0);close((8*3)/(8*3),1);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
