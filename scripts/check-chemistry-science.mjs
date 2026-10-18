@@ -725,4 +725,7 @@ close(.8*.635,.508);close((.5*600+1.5*600)/96500*107.9,1.341761658031088);
 // Newly written earlier gap 1.2: singly charged one-element isotope weights.
 close(.9*20+.1*22,20.2);close(.75*63+.25*65,63.5);close((10.8-10)/(11-10),.8);
 close(.8*24+.1*25+.1*26,24.3);close(100/(100+25),.8);close(.2*50+.4*52+.4*54,52.4);
+// Newly written earlier gap 1.3: masses to atom ratios, never direct mass subscripts.
+close(2.4/24,1.6/16);close((2.4/16)/(5.6/56),1.5);
+close(((1.42-.620)/16)/(.620/31),2.5);close(3/(2+3),6/(4+6));close(32/(32+2*16),.5);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
