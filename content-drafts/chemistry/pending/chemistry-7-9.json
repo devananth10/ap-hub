@@ -1,0 +1,139 @@
+{
+  "courseId": "chemistry",
+  "unitNumber": 7,
+  "topicId": "topic-7-9",
+  "questions": [
+    {
+      "id": "chem-7-9-001",
+      "prompt": "For Fe3+(aq) + SCN−(aq) ⇌ FeSCN2+(aq), only the complex contributes appreciably to red absorbance at the chosen wavelength. A small amount of concentrated SCN− solution is added with negligible volume change. What is expected after re-equilibration?",
+      "options": [
+        "The red absorbance decreases because added reactant consumes the complex.",
+        "All Fe3+ must disappear completely.",
+        "The red absorbance increases as additional complex forms.",
+        "No change is possible because the original solution was at equilibrium."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Adding a reactant favors net consumption of some added SCN− and formation of more absorbing complex. A is incorrect: net forward reaction forms rather than consumes the complex. B is incorrect: a finite equilibrium constant does not imply complete consumption. D is incorrect: a composition disturbance can shift an equilibrium."
+    },
+    {
+      "id": "chem-7-9-002",
+      "prompt": "For N2(g) + 3H2(g) ⇌ 2NH3(g), some NH3 is selectively removed at constant temperature and volume. What chemical response follows?",
+      "options": [
+        "Net forward reaction produces additional NH3.",
+        "Net reverse reaction produces more N2 and H2.",
+        "K decreases because NH3 was removed.",
+        "The reverse reaction permanently stops."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Removing product favors its replacement through forward conversion of reactants. B is incorrect: that would consume the depleted product further. C is incorrect: composition changes do not change K at fixed temperature. D is incorrect: both directions can continue as the system re-equilibrates."
+    },
+    {
+      "id": "chem-7-9-003",
+      "prompt": "A closed isothermal N2O4(g) ⇌ 2NO2(g) mixture at equilibrium is compressed. Which change in equilibrium composition is favored by the pressure increase?",
+      "options": [
+        "A larger fraction must be NO2.",
+        "A larger fraction of the nitrogen-containing gas molecules is N2O4.",
+        "The dissociation equilibrium constant increases.",
+        "Both gases are completely consumed."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. The side with fewer gas molecules is favored, so net association forms more N2O4. A is incorrect: the right side has more gas molecules and is disfavored by compression. C is incorrect: temperature is unchanged. D is incorrect: association conserves nitrogen and oxygen; it cannot remove all gas."
+    },
+    {
+      "id": "chem-7-9-004",
+      "prompt": "Helium is added to an ideal reacting gas mixture at equilibrium while temperature and container volume are fixed. Helium does not react. What happens to the equilibrium composition?",
+      "options": [
+        "It always shifts toward fewer gas molecules.",
+        "It always shifts toward more gas molecules.",
+        "K changes in proportion to total pressure.",
+        "It remains unchanged because reacting-gas partial pressures are unchanged."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Added helium increases total pressure but does not change nRT/V for any reacting gas. A is incorrect: total-pressure increase from inert gas at fixed volume does not compress the reacting gases. B is incorrect: their partial pressures have not decreased. C is incorrect: K is unchanged at fixed temperature."
+    },
+    {
+      "id": "chem-7-9-005",
+      "prompt": "N2O4(g) ⇌ 2NO2(g) is endothermic in the forward direction. NO2 is brown and N2O4 is nearly colorless. A rigid sealed equilibrium vessel is heated. What compositional response is expected?",
+      "options": [
+        "Net dissociation forms more NO2, strengthening its brown absorbance.",
+        "More N2O4 forms because heating favors every association reaction.",
+        "The brown color must disappear because particles move faster.",
+        "Composition cannot change because no material enters."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. Heating favors the endothermic direction; more NO2 forms at fixed volume. B is incorrect: the specified forward direction absorbs heat. C is incorrect: speed alone does not remove the absorbing species. D is incorrect: a closed system can change its internal chemical composition."
+    },
+    {
+      "id": "chem-7-9-006",
+      "prompt": "The forward synthesis N2(g) + 3H2(g) ⇌ 2NH3(g) is exothermic. At fixed volume, cooling an equilibrium mixture favors which change in composition?",
+      "options": [
+        "More N2 and H2 are formed because cooling always favors dissociation.",
+        "K must remain exactly unchanged because volume is fixed.",
+        "More NH3 is formed as the heat-releasing direction is favored.",
+        "All molecular collisions cease."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. Cooling favors the exothermic direction, increasing the equilibrium extent of ammonia formation. A is incorrect: the direction depends on enthalpy, not a universal dissociation rule. B is incorrect: temperature changes can change K. D is incorrect: thermal motion persists at ordinary lower temperatures."
+    },
+    {
+      "id": "chem-7-9-007",
+      "prompt": "For A(aq) + B(aq) ⇌ C(aq), a dilute equilibrium solution is diluted with water at constant temperature. No side reactions occur. What net chemical response is favored?",
+      "options": [
+        "A and B combine to make more C.",
+        "K becomes smaller because concentrations decrease.",
+        "All C must dissociate regardless of K.",
+        "Some C dissociates into A and B."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Dilution favors the side with more dissolved solute particles, here two on the reactant side. A is incorrect: that favors fewer solute particles, opposite to the dilution response. B is incorrect: K remains fixed at constant temperature. C is incorrect: a shift does not imply complete conversion."
+    },
+    {
+      "id": "chem-7-9-008",
+      "prompt": "A catalyst is added without changing temperature, volume, or composition to an equilibrium gas mixture. What happens to the equilibrium amounts?",
+      "options": [
+        "Products necessarily increase because only the forward path is catalyzed.",
+        "They remain unchanged, although both opposing reactions can become faster.",
+        "Reactants necessarily increase.",
+        "K increases because the activation barrier decreases."
+      ],
+      "correctIndex": 1,
+      "explanation": "B is correct. A catalyst changes the approach kinetics without changing equilibrium position at fixed temperature. A is incorrect: a catalyst also provides a reverse path and cannot alter equilibrium favorability. C is incorrect: there is no imposed composition disturbance favoring that direction. D is incorrect: barriers control rates, not the equilibrium constant."
+    },
+    {
+      "id": "chem-7-9-009",
+      "prompt": "At fixed temperature, CaCO3(s) ⇌ CaO(s) + CO2(g) is at equilibrium with both solids present. More pure CaCO3 is added without changing gas volume. What happens to equilibrium PCO2?",
+      "options": [
+        "It doubles if the solid mass doubles.",
+        "It falls to zero.",
+        "It increases because K increases with the number of solid particles.",
+        "It remains unchanged."
+      ],
+      "correctIndex": 3,
+      "explanation": "D is correct. Adding more of an already present pure solid does not change its activity or the equilibrium gas pressure. A is incorrect: pure-solid mass is absent from the expression. B is incorrect: the disturbance does not remove CO2. C is incorrect: K is unchanged at fixed temperature."
+    },
+    {
+      "id": "chem-7-9-010",
+      "prompt": "For H2(g) + I2(g) ⇌ 2HI(g), all gases behave ideally. What compositional response is favored by an isothermal compression of an equilibrium mixture?",
+      "options": [
+        "No net shift, because both sides have the same total gas coefficient.",
+        "A shift right because every compression favors products.",
+        "A shift left because there are two named reactant species.",
+        "A shift right because K becomes larger."
+      ],
+      "correctIndex": 0,
+      "explanation": "A is correct. All reacting partial pressures scale together and the equal gas coefficients leave the equilibrium ratio unchanged. B is incorrect: the response depends on relative gas molecule counts. C is incorrect: gas stoichiometric totals, not the number of species names, determine this effect. D is incorrect: isothermal compression does not change K."
+    },
+    {
+      "id": "chem-7-9-011",
+      "prompt": "In A ⇌ B at fixed temperature and volume, a small amount of A is added to an equilibrium mixture. Which description correctly limits the compensating response?",
+      "options": [
+        "Every added A must disappear to recover the exact original amounts.",
+        "No B can form because B was already present.",
+        "Some added A converts to B; equilibrium does not require the added A to be completely removed.",
+        "The reaction becomes permanently irreversible."
+      ],
+      "correctIndex": 2,
+      "explanation": "C is correct. A disturbance is partly counteracted until the equilibrium ratio is restored; final amounts can differ from the original ones. A is incorrect: Le Châtelier response does not demand restoration of the original amounts. B is incorrect: existing product does not prevent a net forward response. D is incorrect: a concentration change does not eliminate the reverse process."
+    }
+  ]
+}
