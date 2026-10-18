@@ -658,4 +658,9 @@ relativeClose(.001**2/(.1-.001),1.0101010101010101e-5);
 relativeClose((.2*.02)**2/(.2-.2*.02),8.16326530612245e-5);
 relativeClose(1e-14/2e-5,5e-10);close(14-4.8,9.2);close(.05**2/(.1-.05),.05);
 close((1e-14/1e-8)/(1e-14/1e-4),1e4);
+// Topic 8.4: neutralization moles first, then concentration/equilibrium.
+close(-Math.log10((.020*.1-.010*.1)/.030),1.4771212547196626);
+close(14+Math.log10((2*.025*.02-.025*.02)/.05),12);
+close(.010-.004,.006);close(.003-.002,.001);close(.010-.003,.007);
+close(3+2,5);close(7-2,5);close(-Math.log10((.010*.010-.090*.001)/.100),4);
 console.log('Implemented numerical and scientific-model checks passed. See per-topic QA for coverage, qualitative review, and human-review limits.');
