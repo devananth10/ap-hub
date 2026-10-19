@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 3,
+  "topicId": "topic-3-4",
+  "questions": [
+    {
+      "id": "calc-ab-3-4-001",
+      "prompt": "Angles are in radians. For −1<x<1, which expression is d(arcsin x)/dx? Here arcsin denotes the inverse sine, not a reciprocal.",
+      "options": [
+        "1/√(1−x²)",
+        "−1/√(1−x²)",
+        "1/(1+x²)",
+        "1/(1−x²)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Let y=arcsin x, so sin y=x with −π/2<y<π/2. Differentiating gives cos y·y′=1. The positive cosine on that interval is √(1−x²), giving y′=1/√(1−x²). A: On the principal inverse-sine range, cosine is positive and equals √(1−x²). B: This is the inverse-cosine derivative and has the wrong sign. C: This is the inverse-tangent derivative. D: This omits the square root from the denominator."
+    },
+    {
+      "id": "calc-ab-3-4-002",
+      "prompt": "Angles are in radians. For −1<x<1, which formula is the derivative of arccos x?",
+      "options": [
+        "1/√(1−x²)",
+        "−1/√(1−x²)",
+        "−1/(1+x²)",
+        "−√(1−x²)"
+      ],
+      "correctIndex": 1,
+      "explanation": "With y=arccos x, the principal interior range is 0<y<π, so sin y=√(1−x²)>0. The relation cos y=x gives −sin y·y′=1. Thus y′=−1/√(1−x²). A: This misses the negative sign and would describe inverse sine. B: Implicitly differentiating cos y=x gives −sin y·y′=1. C: This uses the inverse-tangent denominator. D: The derivative is the reciprocal of the original slope, not the slope itself."
+    },
+    {
+      "id": "calc-ab-3-4-003",
+      "prompt": "Angles are in radians. Which expression is d(arctan x)/dx for real x?",
+      "options": [
+        "1/(1−x²)",
+        "−1/(1+x²)",
+        "1/(1+x²)",
+        "arctan x"
+      ],
+      "correctIndex": 2,
+      "explanation": "Let y=arctan x with −π/2<y<π/2. Then tan y=x, so sec²y·y′=1. Since sec²y=1+x², the derivative is 1/(1+x²), which is defined and positive for every real x. A: This uses a minus sign instead of the tangent identity’s plus sign. B: Inverse tangent is increasing, so its derivative is positive. C: The inverse tangent derivative follows from sec²y=1+tan²y=1+x². D: Inverse tangent is not equal to its derivative."
+    },
+    {
+      "id": "calc-ab-3-4-004",
+      "prompt": "Angles are in radians. For f(x)=arcsin(2x), what is f′(0)?",
+      "options": [
+        "1",
+        "0",
+        "−2",
+        "2"
+      ],
+      "correctIndex": 3,
+      "explanation": "On −1/2<x<1/2, f′(x)=2/√(1−4x²). At 0 the denominator is 1, so f′(0)=2. The input lies strictly inside the differentiability domain. A: This omits the chain-rule multiplier. B: The value arcsin 0=0 is not the derivative. C: The inverse-sine derivative has a positive sign at 0. D: The inverse-sine derivative is multiplied by the inner derivative 2."
+    },
+    {
+      "id": "calc-ab-3-4-005",
+      "prompt": "Angles are in radians. If f(x)=arctan(3x), what is f′(1)?",
+      "options": [
+        "3/10",
+        "1/10",
+        "3/4",
+        "−3/10"
+      ],
+      "correctIndex": 0,
+      "explanation": "Differentiate the inverse tangent at the unchanged inner input 3x and multiply by 3: f′(x)=3/(1+9x²). Thus f′(1)=3/(1+9)=3/10. A: The chain rule gives 3/[1+(3x)²], evaluated at 1. B: This omits the inner derivative 3. C: This uses 1+3x instead of 1+(3x)² in the denominator. D: This inserts an incorrect negative sign."
+    },
+    {
+      "id": "calc-ab-3-4-006",
+      "prompt": "Angles are in radians. Let g(x)=arccos(x²). What is g′(0)?",
+      "options": [
+        "−1",
+        "0",
+        "1",
+        "2"
+      ],
+      "correctIndex": 1,
+      "explanation": "The chain rule gives g′(x)=−2x/√(1−x⁴) for −1<x<1. At 0 the numerator is zero and the denominator is 1, yielding g′(0)=0. The original function is defined in a full neighborhood of 0. A: This keeps the outer derivative but omits the zero inner rate. B: The derivative −2x/√(1−x⁴) vanishes at the interior input 0. C: This loses the inverse-cosine sign and omits the inner rate. D: This treats the derivative of x² at 0 as the constant 2."
+    },
+    {
+      "id": "calc-ab-3-4-007",
+      "prompt": "Angles are in radians. For −2<x<2, which expression is the derivative of F(x)=arcsin(x/2)?",
+      "options": [
+        "2/√(4−x²)",
+        "−1/√(4−x²)",
+        "1/√(4−x²)",
+        "1/(4−x²)"
+      ],
+      "correctIndex": 2,
+      "explanation": "The unsimplified chain-rule derivative is (1/2)/√(1−x²/4). On the stated interval, √(1−x²/4)=√(4−x²)/2. Dividing gives F′(x)=1/√(4−x²). A: This omits the chain-rule factor 1/2. B: This uses the sign of inverse cosine instead of inverse sine. C: The inner factor 1/2 cancels the 1/2 produced when simplifying the square-root denominator. D: This omits the square root."
+    },
+    {
+      "id": "calc-ab-3-4-008",
+      "prompt": "For y=arctan x in radians, which implicit-differentiation argument correctly produces dy/dx?",
+      "options": [
+        "tan y=x gives sec²x·y′=1, so y′=cos²x.",
+        "tan y=x gives y′=sec²y=1+x².",
+        "tan y=x gives cot y=x, so y′=−csc²x.",
+        "tan y=x gives sec²y·y′=1, so y′=1/(1+x²)."
+      ],
+      "correctIndex": 3,
+      "explanation": "The original relation is tan y=x with y in the principal tangent interval. The chain rule gives sec²y·y′=1. Divide by sec²y and use sec²y=1+tan²y=1+x² to obtain y′=1/(1+x²). A: The secant factor must be evaluated at y, not at x. B: This omits solving the derivative equation for y′. C: Taking an inverse is not replacing tangent by its reciprocal. D: Use tan y=x in the identity sec²y=1+tan²y after differentiating."
+    },
+    {
+      "id": "calc-ab-3-4-009",
+      "prompt": "Angles are in radians. Which statement correctly describes f(x)=arcsin x at x=−1 and x=1?",
+      "options": [
+        "The function is defined at both endpoints, but has no finite derivative at either endpoint.",
+        "The function is undefined at both endpoints.",
+        "The derivative is zero at both endpoints because the inverse-sine graph stops there.",
+        "The derivative equals 1 at both endpoints because their absolute inputs equal 1."
+      ],
+      "correctIndex": 0,
+      "explanation": "The real inverse sine is defined on [−1,1], including f(±1)=±π/2. Its derivative formula on the interior is 1/√(1−x²). The slope grows without bound near either endpoint; no finite endpoint derivative is supplied by that formula. A: The one-sided slope magnitudes grow without bound as the endpoints are approached from inside the domain. B: The inverse sine has values −π/2 and π/2 there. C: An endpoint does not imply a zero slope; the slopes are unbounded. D: The denominator √(1−x²) tends to zero, not 1."
+    },
+    {
+      "id": "calc-ab-3-4-010",
+      "prompt": "Angles are in radians. For −1<x<1, what is the derivative of S(x)=arcsin x+arccos x?",
+      "options": [
+        "2/√(1−x²)",
+        "0",
+        "1",
+        "1/(1+x²)"
+      ],
+      "correctIndex": 1,
+      "explanation": "Differentiate both terms: S′=1/√(1−x²)−1/√(1−x²)=0. Equivalently, the principal inverse identities give S(x)=π/2, a constant. The open interval avoids undefined individual endpoint derivatives. A: This misses the negative sign of the inverse-cosine derivative. B: The inverse-sine and inverse-cosine derivatives cancel on their common interior domain. C: A constant sum does not have derivative equal to its constant height. D: This is an inverse-tangent derivative, unrelated to the stated sum."
+    },
+    {
+      "id": "calc-ab-3-4-011",
+      "prompt": "Angles are in radians. Let H(x)=arctan(eˣ). What is H′(0)?",
+      "options": [
+        "1",
+        "0",
+        "1/2",
+        "−1/2"
+      ],
+      "correctIndex": 2,
+      "explanation": "Apply the inverse-tangent derivative at u=eˣ and multiply by u′=eˣ: H′(x)=eˣ/(1+e^(2x)). At 0, the numerator is 1 and denominator is 2, so H′(0)=1/2. A: This omits the inverse-tangent denominator at the inner input 1. B: This uses the input 0 instead of the inner value e⁰=1. C: The derivative eˣ/[1+(eˣ)²] gives 1/(1+1) at 0. D: Both derivative factors are positive, so the negative sign is incorrect."
+    }
+  ]
+}

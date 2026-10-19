@@ -230,3 +230,20 @@ test('implicit slope checks reject off-curve points and wrong derivative signs',
   const bad=structuredClone(batch.questions[0]);bad.correctIndex=bad.options.indexOf('3/4');
   assert.throws(()=>verifyCalculusQuestion(bad,qa.questions[0]),/implicit slope key/);
 });
+test('inverse checks bind the corresponding input and preserve a negative branch slope',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-3-3');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-3-3.json','utf8'));
+  verifyCalculusQuestion(batch.questions[7],qa.questions[7]);
+  const bad=structuredClone(qa.questions[7]);bad.check.originalInput=-3;
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[7],bad),/inverse input mismatch/);
+  const wrong=structuredClone(batch.questions[7]);wrong.correctIndex=wrong.options.indexOf('1/4');
+  assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[7]),/inverse slope key/);
+});
+test('inverse trig numerical models enforce real domains and negative arccosine slopes',()=>{
+  assert.throws(()=>evaluateExpression(['asin',1.1]),/Invalid real arithmetic domain/);
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-3-4');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-3-4.json','utf8'));
+  verifyCalculusQuestion(batch.questions[1],qa.questions[1]);
+  const wrong=structuredClone(batch.questions[1]);wrong.correctIndex=wrong.options.indexOf('1/√(1−x²)');
+  assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[1]),/derivative function key/);
+});

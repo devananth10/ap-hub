@@ -23,9 +23,9 @@ export function evaluateExpression(expression,x) {
   if(typeof expression==='number') {assert.ok(Number.isFinite(expression));return expression;}
   assert.ok(Array.isArray(expression)&&expression.length>=2);
   const [operation,...children]=expression,values=children.map(child=>evaluateExpression(child,x));
-  const operations={add:(...xs)=>xs.reduce((a,b)=>a+b,0),mul:(...xs)=>xs.reduce((a,b)=>a*b,1),sub:(a,b)=>a-b,div:(a,b)=>a/b,pow:(a,b)=>a**b,sqrt:Math.sqrt,abs:Math.abs,cbrt:Math.cbrt,sin:Math.sin,cos:Math.cos,tan:Math.tan,exp:Math.exp,ln:Math.log};
+  const operations={add:(...xs)=>xs.reduce((a,b)=>a+b,0),mul:(...xs)=>xs.reduce((a,b)=>a*b,1),sub:(a,b)=>a-b,div:(a,b)=>a/b,pow:(a,b)=>a**b,sqrt:Math.sqrt,abs:Math.abs,cbrt:Math.cbrt,sin:Math.sin,cos:Math.cos,tan:Math.tan,asin:Math.asin,acos:Math.acos,atan:Math.atan,exp:Math.exp,ln:Math.log};
   assert.ok(operations[operation],'Unknown arithmetic expression operation');
-  const expectedArity={sub:2,div:2,pow:2,sqrt:1,abs:1,cbrt:1,sin:1,cos:1,tan:1,exp:1,ln:1}[operation];
+  const expectedArity={sub:2,div:2,pow:2,sqrt:1,abs:1,cbrt:1,sin:1,cos:1,tan:1,asin:1,acos:1,atan:1,exp:1,ln:1}[operation];
   assert.ok(expectedArity?values.length===expectedArity:values.length>=2,'Invalid arithmetic expression arity');
   const value=operations[operation](...values);assert.ok(Number.isFinite(value),'Invalid real arithmetic domain');return value;
 }
@@ -117,7 +117,22 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='implicit-slope') {
+  if (review.check.type==='inverse-slope') {
+    const check=review.check,h=check.step||0.00001,a=check.originalInput;
+    assert.ok(Math.abs(evaluateExpression(check.expression,a)-check.inverseInput)<1e-9,question.id+' inverse input mismatch');
+    const slope=(evaluateExpression(check.expression,a+h)-evaluateExpression(check.expression,a-h))/(2*h);
+    assert.ok(Math.abs(slope)>1e-6,'Inverse slope must be nonzero');
+    const matches=question.options.map(option=>Math.abs(numericalOption(option)-1/slope)<(check.tolerance||0.00001));
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique inverse slope');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' inverse slope key');
+  } else if (review.check.type==='table-inverse-slope') {
+    const check=review.check,table=practiceTables[question.id];assert.ok(table&&table.headers.join('|')==='x|f(x)|f′(x)');
+    const rows=table.rows.map(row=>row.map(s=>Number(s.replace('−','-')))),mapped=rows.filter(row=>row[1]===check.inverseInput);assert.equal(mapped.length,1);
+    assert.notEqual(mapped[0][2],0,'Inverse slope must be nonzero');
+    const matches=question.options.map(option=>Math.abs(numericalOption(option)-1/mapped[0][2])<1e-10);
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique inverse table slope');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' inverse table key');
+  } else if (review.check.type==='implicit-slope') {
     const check=review.check,[x,y]=check.point,h=check.step||0.0001;
     assert.ok([x,y,h].every(Number.isFinite)&&h>0);
     const setY=(expression,y)=>expression==='y'?y:Array.isArray(expression)?expression.map(child=>setY(child,y)):expression;

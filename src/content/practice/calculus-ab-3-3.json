@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 3,
+  "topicId": "topic-3-3",
+  "questions": [
+    {
+      "id": "calc-ab-3-3-001",
+      "prompt": "A one-to-one differentiable function f has f(a)=b and f′(a)≠0. Its inverse g is differentiable at b. Which formula gives g′(b)?",
+      "options": [
+        "1/f′(b)",
+        "f′(a)",
+        "−f′(a)",
+        "1/f′(a)"
+      ],
+      "correctIndex": 3,
+      "explanation": "The identity f(g(x))=x differentiates to f′(g(x))g′(x)=1. Since g(b)=a, evaluate at b and divide by the nonzero f′(a): g′(b)=1/f′(a). A: This generally evaluates f′ at the wrong input. B: Inverse derivatives are reciprocal, not generally identical. C: Taking an inverse is not changing the sign of the original derivative. D: The inverse derivative is the reciprocal at the corresponding original input a=g(b)."
+    },
+    {
+      "id": "calc-ab-3-3-002",
+      "prompt": "Let f(x)=x³+2x+1, which is one-to-one on the real numbers, and let g=f⁻¹. What is g′(4)?",
+      "options": [
+        "1/5",
+        "5",
+        "1/50",
+        "1"
+      ],
+      "correctIndex": 0,
+      "explanation": "First solve f(a)=4. Since f(1)=1+2+1=4 and f is one-to-one, g(4)=1. The original derivative is f′(x)=3x²+2, so f′(1)=5. Therefore g′(4)=1/5. A: The original input mapping to 4 is 1, where f′(1)=5. B: This uses the original slope rather than its reciprocal. C: This evaluates f′ at the inverse input 4 rather than at g(4)=1. D: This uses the original input as though it were the inverse derivative."
+    },
+    {
+      "id": "calc-ab-3-3-003",
+      "prompt": "Use the table below for the one-to-one function f. If g=f⁻¹ is differentiable at 0, what is g′(0)?",
+      "options": [
+        "−4",
+        "−1/4",
+        "−1/2",
+        "1/4"
+      ],
+      "correctIndex": 1,
+      "explanation": "Find the output 0 in the f(x) column, not in the x column. It occurs at x=1. Hence g(0)=1 and g′(0)=1/f′(1)=1/(−4)=−1/4. A: This retains the original slope instead of taking its reciprocal. B: The row f(1)=0 selects original input 1, whose slope is −4. C: This selects the row whose output is 3 rather than 0. D: This loses the original derivative’s negative sign."
+    },
+    {
+      "id": "calc-ab-3-3-004",
+      "prompt": "Suppose f is one-to-one and differentiable near 3, with f(3)=−2 and f′(3)=−5. If its inverse g is differentiable at −2, what is g′(−2)?",
+      "options": [
+        "−5",
+        "1/5",
+        "−1/5",
+        "−3/2"
+      ],
+      "correctIndex": 2,
+      "explanation": "Because f(3)=−2, the inverse satisfies g(−2)=3. Apply the reciprocal-slope rule at the matched point: g′(−2)=1/f′(3)=−1/5. Inverse reflection preserves the sign of a finite nonzero slope. A: This keeps the original slope instead of reciprocating it. B: A reciprocal retains the negative sign. C: The corresponding original input is 3, so the inverse rate is 1/(−5). D: This divides the point coordinates, which does not determine the tangent slope."
+    },
+    {
+      "id": "calc-ab-3-3-005",
+      "prompt": "For f(x)=eˣ+1 and g=f⁻¹, what is g′(2)?",
+      "options": [
+        "1/2",
+        "0",
+        "−1",
+        "1"
+      ],
+      "correctIndex": 3,
+      "explanation": "The corresponding original input is 0 because e⁰+1=2. The original derivative there is e⁰=1. Thus g′(2)=1/1=1. Equivalently, the inverse is ln(x−1) for x>1. A: This reciprocates the output 2 instead of the original derivative at 0. B: This uses the original input 0 as the inverse derivative. C: The increasing original function has an increasing inverse near this point. D: Since f(0)=2 and f′(0)=1, the inverse slope is 1."
+    },
+    {
+      "id": "calc-ab-3-3-006",
+      "prompt": "Let f(x)=x³ on the real numbers and g=f⁻¹. What can be concluded about a finite derivative g′(0)?",
+      "options": [
+        "It does not exist; the inverse cube-root graph has a vertical tangent at 0.",
+        "g′(0)=0 because f′(0)=0.",
+        "g′(0)=1 because f and g both pass through the origin.",
+        "g′(0)=1/f′(0)=0."
+      ],
+      "correctIndex": 0,
+      "explanation": "Here g(x)=∛x. At 0 its defining difference quotient is ∛h/h=1/|h|^(2/3) for nonzero h. This tends to positive infinity, so no finite derivative exists. The reciprocal derivative theorem requires a nonzero original slope. A: The defining quotient grows without bound instead of approaching a finite number. B: A zero original slope does not become a zero inverse slope. C: Point incidence does not establish a unit slope. D: Division by the zero original derivative is invalid."
+    },
+    {
+      "id": "calc-ab-3-3-007",
+      "prompt": "Let f(x)=x³−1 and g=f⁻¹. What is g′(7)?",
+      "options": [
+        "12",
+        "1/12",
+        "1/147",
+        "1/6"
+      ],
+      "correctIndex": 1,
+      "explanation": "Find g(7) from f(a)=7: a³−1=7 implies a=2. Since f′(2)=3·2²=12≠0, the inverse derivative is g′(7)=1/12. A: This keeps the original slope rather than its reciprocal. B: The output 7 corresponds to original input 2, whose slope is 3·2²=12. C: This evaluates f′ at 7 rather than at g(7)=2. D: This uses 3x instead of 3x² as the original derivative."
+    },
+    {
+      "id": "calc-ab-3-3-008",
+      "prompt": "Restrict f(x)=x² to x<0 and let g be its inverse, defined for x>0. What is g′(4)?",
+      "options": [
+        "1/4",
+        "−4",
+        "−1/4",
+        "−1/2"
+      ],
+      "correctIndex": 2,
+      "explanation": "On the stated negative-input branch, g(x)=−√x. Thus g(4)=−2, and f′(−2)=−4. The inverse derivative is −1/4. The branch restriction determines the sign and cannot be discarded. A: This uses the positive square-root branch, which is not the given inverse. B: This is the original derivative, before reciprocation. C: The restriction selects original input −2, where f′=−4. D: This reciprocates the original input instead of its slope."
+    },
+    {
+      "id": "calc-ab-3-3-009",
+      "prompt": "A one-to-one function f has f(2)=5 and f′(2)=3. If g=f⁻¹ is differentiable at 5, which line is tangent to y=g(x) there?",
+      "options": [
+        "y−5=(1/3)(x−2)",
+        "y−2=3(x−5)",
+        "y−2=−(1/3)(x−5)",
+        "y−2=(1/3)(x−5)"
+      ],
+      "correctIndex": 3,
+      "explanation": "The inverse identity gives g(5)=2 and g′(5)=1/f′(2)=1/3. The tangent must pass through (5,2) with that slope, so y−2=(1/3)(x−5). Both the point and the slope transform. A: This retains the original point rather than swapping its coordinates. B: This swaps the point but retains the original slope. C: Reflection across y=x reciprocates the slope without changing its sign. D: The inverse point is (5,2) and its slope is the reciprocal 1/3."
+    },
+    {
+      "id": "calc-ab-3-3-010",
+      "prompt": "Suppose f is one-to-one near a, f(a)=b and f′(a)>1. Its inverse g is differentiable at b. Which inequality must hold?",
+      "options": [
+        "0<g′(b)<1",
+        "g′(b)>1",
+        "g′(b)<0",
+        "g′(b)=0"
+      ],
+      "correctIndex": 0,
+      "explanation": "The inverse derivative is g′(b)=1/f′(a). With f′(a)>1 and finite, this reciprocal lies strictly between 0 and 1. The inverse is locally increasing but has a smaller positive slope than 1. A: The reciprocal of a positive number greater than 1 is positive and less than 1. B: This retains the original slope’s size rather than reciprocating it. C: Taking an inverse does not reverse the sign of a nonzero slope. D: The reciprocal of a finite nonzero derivative cannot be zero."
+    },
+    {
+      "id": "calc-ab-3-3-011",
+      "prompt": "A one-to-one differentiable function f satisfies f(2)=7 and f′(2)=−4. Let g=f⁻¹ be differentiable near 7 and H(x)=g(3x+1). What is H′(2)?",
+      "options": [
+        "−1/4",
+        "−3/4",
+        "−12",
+        "3/4"
+      ],
+      "correctIndex": 1,
+      "explanation": "First, 3·2+1=7. The matched inverse slope is g′(7)=1/f′(2)=−1/4. Applying the chain rule to H gives H′(2)=g′(7)·3=−3/4. A: This omits the derivative of the inner linear function. B: At x=2 the inner output is 7; g′(7)=−1/4 is multiplied by 3. C: This multiplies by f′(2) instead of its reciprocal. D: This loses the sign of the original nonzero slope."
+    }
+  ]
+}

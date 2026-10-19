@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 308,
+  "questionsChecked": 330,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -911,6 +911,81 @@
       "questionId": "calc-ab-3-2-009",
       "method": "implicit-slope",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-3-002",
+      "method": "inverse-slope",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-3-003",
+      "method": "table-inverse-slope",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-3-004",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-3-3-005",
+      "method": "inverse-slope",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-3-007",
+      "method": "inverse-slope",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-3-008",
+      "method": "inverse-slope",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-3-011",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-3-4-001",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-4-002",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-4-003",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-4-004",
+      "method": "finite-difference-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-4-005",
+      "method": "finite-difference-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-4-006",
+      "method": "finite-difference-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-4-007",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-4-011",
+      "method": "finite-difference-estimate",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -1039,7 +1114,14 @@
     "calc-ab-3-2-006",
     "calc-ab-3-2-007",
     "calc-ab-3-2-010",
-    "calc-ab-3-2-011"
+    "calc-ab-3-2-011",
+    "calc-ab-3-3-001",
+    "calc-ab-3-3-006",
+    "calc-ab-3-3-009",
+    "calc-ab-3-3-010",
+    "calc-ab-3-4-008",
+    "calc-ab-3-4-009",
+    "calc-ab-3-4-010"
   ],
   "humanReviewPerformed": false,
   "limitations": [

@@ -1,0 +1,232 @@
+{
+  "topicNumber": "3.3",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "f516f80d39c94d37f52c1178112c54687665bd2afe78cb835dba22b62f023a39",
+  "scopeReview": "CED FUN-3.E.1 inverse derivative using the chain rule and inverse identity when the required derivative exists. One-to-one hypotheses, corresponding inputs, nonzero original slope and branch restrictions explicit.",
+  "varietyReview": "General rule, nonlinear polynomial, actual output-indexed table, negative local slope, shifted exponential, zero-original-slope failure, cubic inverse, negative square-root branch, reflected tangent, reciprocal inequality and a composed inverse.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-3-3-001",
+      "independentReasoning": "The chain-rule identity establishes the reciprocal and the correct input. For example, f(x)=3x+2 maps a=1 to b=5; its inverse has slope 1/3, excluding identical- and negative-slope claims. A nonlinear example f=x³+1 distinguishes using a rather than b.",
+      "optionReview": [
+        "This generally evaluates f′ at the wrong input.",
+        "Inverse derivatives are reciprocal, not generally identical.",
+        "Taking an inverse is not changing the sign of the original derivative.",
+        "The inverse derivative is the reciprocal at the corresponding original input a=g(b)."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "1/f′(a)"
+      }
+    },
+    {
+      "questionId": "calc-ab-3-3-002",
+      "independentReasoning": "The original derivative is always positive, establishing global one-to-one behavior. Expand f(1+h)=4+5h+3h²+h³. The inverse rate is h/[f(1+h)−4]→1/5. Original-function differences independently recover slope 5 before reciprocation.",
+      "optionReview": [
+        "The original input mapping to 4 is 1, where f′(1)=5.",
+        "This uses the original slope rather than its reciprocal.",
+        "This evaluates f′ at the inverse input 4 rather than at g(4)=1.",
+        "This uses the original input as though it were the inverse derivative."
+      ],
+      "check": {
+        "type": "inverse-slope",
+        "originalInput": 1,
+        "inverseInput": 4,
+        "expression": [
+          "add",
+          [
+            "pow",
+            "x",
+            3
+          ],
+          [
+            "mul",
+            2,
+            "x"
+          ],
+          1
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-3-3-003",
+      "independentReasoning": "Read the output-to-input correspondence separately from the derivative column. The actual row (1,0,−4) supplies both g(0) and the nonzero original slope. The checker finds exactly one matching output and compares its reciprocal to every offered numerical option.",
+      "optionReview": [
+        "This retains the original slope instead of taking its reciprocal.",
+        "The row f(1)=0 selects original input 1, whose slope is −4.",
+        "This selects the row whose output is 3 rather than 0.",
+        "This loses the original derivative’s negative sign."
+      ],
+      "check": {
+        "type": "table-inverse-slope",
+        "inverseInput": 0
+      },
+      "tableSha256": "4e1f191cc804e0c759c5f4e10c2047b95f733d5263a34235dcf337821ed91d97"
+    },
+    {
+      "questionId": "calc-ab-3-3-004",
+      "independentReasoning": "The original local relation is output increment −5h+o(h) for input increment h. Reversing the relation yields inverse increment ratio h/[−5h+o(h)]→−1/5. Coordinates locate the point but their ratio is not a derivative.",
+      "optionReview": [
+        "This keeps the original slope instead of reciprocating it.",
+        "A reciprocal retains the negative sign.",
+        "The corresponding original input is 3, so the inverse rate is 1/(−5).",
+        "This divides the point coordinates, which does not determine the tangent slope."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          3,
+          -2,
+          -5
+        ],
+        "expression": [
+          "div",
+          1,
+          -5
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-3-3-005",
+      "independentReasoning": "Independently differentiate the explicit inverse ln(x−1): its derivative 1/(x−1) equals 1 at 2. The original increment eʰ−1 has unit limiting rate at 0, corroborating the reciprocal calculation.",
+      "optionReview": [
+        "This reciprocates the output 2 instead of the original derivative at 0.",
+        "This uses the original input 0 as the inverse derivative.",
+        "The increasing original function has an increasing inverse near this point.",
+        "Since f(0)=2 and f′(0)=1, the inverse slope is 1."
+      ],
+      "check": {
+        "type": "inverse-slope",
+        "originalInput": 0,
+        "inverseInput": 2,
+        "expression": [
+          "add",
+          [
+            "exp",
+            "x"
+          ],
+          1
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-3-3-006",
+      "independentReasoning": "Evaluate the actual quotient for h of either sign: both give the same positive quantity |h|^(−2/3), unbounded as h→0. This directly establishes the vertical tangent instead of treating division by zero as an assigned numerical derivative.",
+      "optionReview": [
+        "The defining quotient grows without bound instead of approaching a finite number.",
+        "A zero original slope does not become a zero inverse slope.",
+        "Point incidence does not establish a unit slope.",
+        "Division by the zero original derivative is invalid."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It does not exist; the inverse cube-root graph has a vertical tangent at 0."
+      }
+    },
+    {
+      "questionId": "calc-ab-3-3-007",
+      "independentReasoning": "The inverse is explicitly g(x)=∛(x+1). At x=7 its chain/power derivative is (1/3)8^(−2/3)=1/12. Independently, f(2+h)−7=12h+6h²+h³, so the reversed input/output rate tends to 1/12.",
+      "optionReview": [
+        "This keeps the original slope rather than its reciprocal.",
+        "The output 7 corresponds to original input 2, whose slope is 3·2²=12.",
+        "This evaluates f′ at 7 rather than at g(7)=2.",
+        "This uses 3x instead of 3x² as the original derivative."
+      ],
+      "check": {
+        "type": "inverse-slope",
+        "originalInput": 2,
+        "inverseInput": 7,
+        "expression": [
+          "sub",
+          [
+            "pow",
+            "x",
+            3
+          ],
+          1
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-3-3-008",
+      "independentReasoning": "Differentiate the explicit branch −√x to obtain −1/(2√x), which is −1/4 at 4. The original square function has negative slope on x<0; centered differences at −2 corroborate −4 before taking the reciprocal.",
+      "optionReview": [
+        "This uses the positive square-root branch, which is not the given inverse.",
+        "This is the original derivative, before reciprocation.",
+        "The restriction selects original input −2, where f′=−4.",
+        "This reciprocates the original input instead of its slope."
+      ],
+      "check": {
+        "type": "inverse-slope",
+        "originalInput": -2,
+        "inverseInput": 4,
+        "expression": [
+          "pow",
+          "x",
+          2
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-3-3-009",
+      "independentReasoning": "Reflect the original tangent y−5=3(x−2) across y=x: x−5=3(y−2), or y−2=(x−5)/3. Check each proposed line for incidence at (5,2) and slope 1/3. This geometric argument independently agrees with the inverse theorem.",
+      "optionReview": [
+        "This retains the original point rather than swapping its coordinates.",
+        "This swaps the point but retains the original slope.",
+        "Reflection across y=x reciprocates the slope without changing its sign.",
+        "The inverse point is (5,2) and its slope is the reciprocal 1/3."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "y−2=(1/3)(x−5)"
+      }
+    },
+    {
+      "questionId": "calc-ab-3-3-010",
+      "independentReasoning": "Apply the exact reciprocal inequality to the positive denominator. There is no possible equality at 0 or 1 under the strict hypothesis. The example f(x)=2x, with inverse slope 1/2 everywhere, illustrates the required interval and excludes the other assertions.",
+      "optionReview": [
+        "The reciprocal of a positive number greater than 1 is positive and less than 1.",
+        "This retains the original slope’s size rather than reciprocating it.",
+        "Taking an inverse does not reverse the sign of a nonzero slope.",
+        "The reciprocal of a finite nonzero derivative cannot be zero."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "0<g′(b)<1"
+      }
+    },
+    {
+      "questionId": "calc-ab-3-3-011",
+      "independentReasoning": "An output increment 3h into the inverse near 7 produces input increment (−1/4)(3h)+o(h). This local increment argument independently verifies the rate −3/4 and distinguishes the reciprocal step from the inner multiplier.",
+      "optionReview": [
+        "This omits the derivative of the inner linear function.",
+        "At x=2 the inner output is 7; g′(7)=−1/4 is multiplied by 3.",
+        "This multiplies by f′(2) instead of its reciprocal.",
+        "This loses the sign of the original nonzero slope."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          2,
+          7,
+          -4,
+          3,
+          1
+        ],
+        "expression": [
+          "mul",
+          3,
+          [
+            "div",
+            1,
+            -4
+          ]
+        ]
+      }
+    }
+  ]
+}

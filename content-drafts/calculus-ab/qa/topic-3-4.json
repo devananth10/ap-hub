@@ -1,0 +1,479 @@
+{
+  "topicNumber": "3.4",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "253771d4516bfd5ae60ed52146044c914781175abd95bf390ca1163d0f313a12",
+  "scopeReview": "CED FUN-3.E.2 inverse trigonometric derivatives using inverse identities and chain rule. Uses inverse sine, cosine and tangent on principal real ranges, radians throughout. Reciprocal trig notation distinguished from inverse functions; domain interiors and endpoints checked.",
+  "varietyReview": "Three core derivative formulas, linear and quadratic compositions, special-point slopes, scaled radical simplification, derivation selection, defined-but-nondifferentiable endpoints, constant inverse identity and exponential composition.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-3-4-001",
+      "independentReasoning": "The inverse derivative theorem applied to sine on its principal one-to-one interval gives the same positive reciprocal slope. Original arcsine centered differences at −1/2,0,1/2 corroborate the formula and distinguish all alternate signs/denominators.",
+      "optionReview": [
+        "On the principal inverse-sine range, cosine is positive and equals √(1−x²).",
+        "This is the inverse-cosine derivative and has the wrong sign.",
+        "This is the inverse-tangent derivative.",
+        "This omits the square root from the denominator."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "asin",
+          "x"
+        ],
+        "samplePoints": [
+          -0.5,
+          0,
+          0.5
+        ],
+        "step": 0.00001,
+        "tolerance": 0.00001,
+        "candidates": {
+          "1/√(1−x²)": [
+            "div",
+            1,
+            [
+              "sqrt",
+              [
+                "sub",
+                1,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ]
+            ]
+          ],
+          "−1/√(1−x²)": [
+            "div",
+            -1,
+            [
+              "sqrt",
+              [
+                "sub",
+                1,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ]
+            ]
+          ],
+          "1/(1+x²)": [
+            "div",
+            1,
+            [
+              "add",
+              1,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ]
+          ],
+          "1/(1−x²)": [
+            "div",
+            1,
+            [
+              "sub",
+              1,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-3-4-002",
+      "independentReasoning": "The original cosine is strictly decreasing on its principal interval, so its inverse derivative must be negative. Original arccosine differences at −1/2,0,1/2 corroborate the reciprocal magnitude as well as the sign.",
+      "optionReview": [
+        "This misses the negative sign and would describe inverse sine.",
+        "Implicitly differentiating cos y=x gives −sin y·y′=1.",
+        "This uses the inverse-tangent denominator.",
+        "The derivative is the reciprocal of the original slope, not the slope itself."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "acos",
+          "x"
+        ],
+        "samplePoints": [
+          -0.5,
+          0,
+          0.5
+        ],
+        "step": 0.00001,
+        "tolerance": 0.00001,
+        "candidates": {
+          "−1/√(1−x²)": [
+            "div",
+            -1,
+            [
+              "sqrt",
+              [
+                "sub",
+                1,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ]
+            ]
+          ],
+          "1/√(1−x²)": [
+            "div",
+            1,
+            [
+              "sqrt",
+              [
+                "sub",
+                1,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ]
+            ]
+          ],
+          "−1/(1+x²)": [
+            "div",
+            -1,
+            [
+              "add",
+              1,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ]
+          ],
+          "−√(1−x²)": [
+            "mul",
+            -1,
+            [
+              "sqrt",
+              [
+                "sub",
+                1,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-3-4-003",
+      "independentReasoning": "The principal tangent has positive derivative and covers all real outputs, giving a positive inverse derivative. Centered differences of the original arctangent at −1/2,0,1/2 corroborate the formula. The exact identity establishes its all-real domain.",
+      "optionReview": [
+        "This uses a minus sign instead of the tangent identity’s plus sign.",
+        "Inverse tangent is increasing, so its derivative is positive.",
+        "The inverse tangent derivative follows from sec²y=1+tan²y=1+x².",
+        "Inverse tangent is not equal to its derivative."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "atan",
+          "x"
+        ],
+        "samplePoints": [
+          -0.5,
+          0,
+          0.5
+        ],
+        "step": 0.00001,
+        "tolerance": 0.00001,
+        "candidates": {
+          "1/(1+x²)": [
+            "div",
+            1,
+            [
+              "add",
+              1,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ]
+          ],
+          "1/(1−x²)": [
+            "div",
+            1,
+            [
+              "sub",
+              1,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ]
+          ],
+          "−1/(1+x²)": [
+            "div",
+            -1,
+            [
+              "add",
+              1,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ]
+          ],
+          "arctan x": [
+            "atan",
+            "x"
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-3-4-004",
+      "independentReasoning": "From y=arcsin(2x), sin y=2x. At x=0,y=0, implicit differentiation gives y′cos 0=2, hence y′=2. Centered differences of the original inverse-sine composition provide an independent numerical check.",
+      "optionReview": [
+        "This omits the chain-rule multiplier.",
+        "The value arcsin 0=0 is not the derivative.",
+        "The inverse-sine derivative has a positive sign at 0.",
+        "The inverse-sine derivative is multiplied by the inner derivative 2."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 0,
+        "step": 0.00001,
+        "expression": [
+          "asin",
+          [
+            "mul",
+            2,
+            "x"
+          ]
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-3-4-005",
+      "independentReasoning": "The identity tan(f(x))=3x gives sec²(f(x))f′(x)=3. At x=1, tan(f(1))=3 and sec²(f(1))=10, so the slope is 3/10. Original arctangent-composition differences corroborate this result.",
+      "optionReview": [
+        "The chain rule gives 3/[1+(3x)²], evaluated at 1.",
+        "This omits the inner derivative 3.",
+        "This uses 1+3x instead of 1+(3x)² in the denominator.",
+        "This inserts an incorrect negative sign."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 1,
+        "step": 0.00001,
+        "expression": [
+          "atan",
+          [
+            "mul",
+            3,
+            "x"
+          ]
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-3-4-006",
+      "independentReasoning": "The original function arccos(x²) is even and smooth near 0; its defining increment is of order x², so the derivative at 0 is zero. Its centered difference is identically zero at symmetric inputs, corroborating the exact chain-rule result.",
+      "optionReview": [
+        "This keeps the outer derivative but omits the zero inner rate.",
+        "The derivative −2x/√(1−x⁴) vanishes at the interior input 0.",
+        "This loses the inverse-cosine sign and omits the inner rate.",
+        "This treats the derivative of x² at 0 as the constant 2."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 0,
+        "step": 0.00001,
+        "expression": [
+          "acos",
+          [
+            "pow",
+            "x",
+            2
+          ]
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-3-4-007",
+      "independentReasoning": "Use the implicit identity sin(F(x))=x/2: cos(F(x))F′(x)=1/2, with positive cosine on the principal range. This gives the same radical formula. Original-function differences at −1,0,1 distinguish all four candidate expressions.",
+      "optionReview": [
+        "This omits the chain-rule factor 1/2.",
+        "This uses the sign of inverse cosine instead of inverse sine.",
+        "The inner factor 1/2 cancels the 1/2 produced when simplifying the square-root denominator.",
+        "This omits the square root."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "asin",
+          [
+            "div",
+            "x",
+            2
+          ]
+        ],
+        "samplePoints": [
+          -1,
+          0,
+          1
+        ],
+        "step": 0.00001,
+        "tolerance": 0.00001,
+        "candidates": {
+          "1/√(4−x²)": [
+            "div",
+            1,
+            [
+              "sqrt",
+              [
+                "sub",
+                4,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ]
+            ]
+          ],
+          "2/√(4−x²)": [
+            "div",
+            2,
+            [
+              "sqrt",
+              [
+                "sub",
+                4,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ]
+            ]
+          ],
+          "−1/√(4−x²)": [
+            "div",
+            -1,
+            [
+              "sqrt",
+              [
+                "sub",
+                4,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ]
+            ]
+          ],
+          "1/(4−x²)": [
+            "div",
+            1,
+            [
+              "sub",
+              4,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-3-4-008",
+      "independentReasoning": "Track which variable is the argument of the original trigonometric function. The original tangent slope is at y, so the inverse derivative is its reciprocal. At x=1,y=π/4 the selected argument gives 1/2, independently excluding the wrong-input and unsolved-equation alternatives.",
+      "optionReview": [
+        "The secant factor must be evaluated at y, not at x.",
+        "This omits solving the derivative equation for y′.",
+        "Taking an inverse is not replacing tangent by its reciprocal.",
+        "Use tan y=x in the identity sec²y=1+tan²y after differentiating."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "tan y=x gives sec²y·y′=1, so y′=1/(1+x²)."
+      }
+    },
+    {
+      "questionId": "calc-ab-3-4-009",
+      "independentReasoning": "Near the upper endpoint write x=cos t with t→0⁺. The endpoint secant slope is t/(1−cos t), which grows like 2/t. Odd symmetry gives the same unbounded positive slope magnitude at the lower endpoint. This distinguishes defined values from finite differentiability.",
+      "optionReview": [
+        "The one-sided slope magnitudes grow without bound as the endpoints are approached from inside the domain.",
+        "The inverse sine has values −π/2 and π/2 there.",
+        "An endpoint does not imply a zero slope; the slopes are unbounded.",
+        "The denominator √(1−x²) tends to zero, not 1."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The function is defined at both endpoints, but has no finite derivative at either endpoint."
+      }
+    },
+    {
+      "questionId": "calc-ab-3-4-010",
+      "independentReasoning": "For y=arcsin x, the angle π/2−y lies in the principal arccosine range and has cosine x, proving arccos x=π/2−arcsin x. The exact constant identity independently gives derivative zero without adding undefined endpoint quantities.",
+      "optionReview": [
+        "This misses the negative sign of the inverse-cosine derivative.",
+        "The inverse-sine and inverse-cosine derivatives cancel on their common interior domain.",
+        "A constant sum does not have derivative equal to its constant height.",
+        "This is an inverse-tangent derivative, unrelated to the stated sum."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "0"
+      }
+    },
+    {
+      "questionId": "calc-ab-3-4-011",
+      "independentReasoning": "Use tan(H(x))=eˣ. At x=0, H(0)=π/4, so implicit differentiation gives 2H′(0)=1. The original arctangent-exponential centered quotient corroborates 1/2, independently checking the inner evaluation.",
+      "optionReview": [
+        "This omits the inverse-tangent denominator at the inner input 1.",
+        "This uses the input 0 instead of the inner value e⁰=1.",
+        "The derivative eˣ/[1+(eˣ)²] gives 1/(1+1) at 0.",
+        "Both derivative factors are positive, so the negative sign is incorrect."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 0,
+        "step": 0.00001,
+        "expression": [
+          "atan",
+          [
+            "exp",
+            "x"
+          ]
+        ],
+        "tolerance": 0.00001
+      }
+    }
+  ]
+}

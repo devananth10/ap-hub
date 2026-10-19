@@ -1,5 +1,9 @@
 # Calculus AB validation and continuation notes
 
+## Topics 3.3–3.4 checkpoint
+
+Published 22 inverse-function and inverse-trigonometric MCQs, bringing the bank to 330 (197 programmatic models, 133 recorded reasoning reviews). Original-function finite differences corroborate inverse slopes at separately matched input/output pairs; an actual inverse table selects by output rather than row input. Exact inverse identities, branch restrictions and endpoint quotient arguments are recorded separately. Principal arcsine/arccosine/arctangent numerical operations reject invalid real domains. New mutation tests reject changed inverse correspondences, positive slopes on the negative square branch and an arccosine sign error. All 75 unit tests, production build, TypeScript, standard smoke and all Calculus scopes pass. Both full new topic browser sessions showed every option rationale and finished 11/11. Frozen Chemistry remains unchanged. Next: 3.5; 51 topics/561 questions remain.
+
 ## Topics 3.1–3.2 checkpoint
 
 Published 22 chain-rule and implicit-differentiation questions. The bank now contains 308 MCQs, with 182 programmatic corroborations and 126 separately recorded reasoning reviews. New models follow the inner output to the correct actual table row and compute implicit slopes from centered differences of the original residual, checking curve membership and a nonzero local y coefficient. These are numerical corroborations of separately written exact arguments, not proofs of arbitrary implicit-function claims. Mutation tests reject wrong composition rows, off-curve points and reversed signs. All 73 unit tests, build, TypeScript and standard/all-81-topic smoke pass. Each new topic's browser session graded all eleven keys correctly, displayed four option rationales and finished 11/11. Frozen Chemistry passes unchanged. Next: 3.3; 53 topics/583 questions remain.
