@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 649,
+  "questionsChecked": 682,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -1801,6 +1801,141 @@
       "questionId": "calc-ab-6-8-009",
       "method": "antiderivative-candidates",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-9-001",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-9-002",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-9-003",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-9-004",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-9-005",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-9-006",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-9-007",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-9-008",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-9-009",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-9-010",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-10-001",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-10-002",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-10-003",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-10-004",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-10-005",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-10-006",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-10-007",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-10-008",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-10-010",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-14-001",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-14-002",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-14-003",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-14-005",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-14-006",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-14-008",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-14-009",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-14-010",
+      "method": "definite-integral",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -2092,7 +2227,13 @@
     "calc-ab-6-6-010",
     "calc-ab-6-7-008",
     "calc-ab-6-8-010",
-    "calc-ab-6-8-011"
+    "calc-ab-6-8-011",
+    "calc-ab-6-9-011",
+    "calc-ab-6-10-009",
+    "calc-ab-6-10-011",
+    "calc-ab-6-14-004",
+    "calc-ab-6-14-007",
+    "calc-ab-6-14-011"
   ],
   "humanReviewPerformed": false,
   "limitations": [

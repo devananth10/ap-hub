@@ -1,0 +1,806 @@
+{
+  "topicNumber": "6.9",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "1cffa4e2186ec3833fca8365c382024a3411a396318fe214ab16b140f8b14b5e",
+  "scopeReview": "CED FUN-6.D.1–2: substitution for indefinite and definite integrals, corresponding transformed bounds and differential factors. All logarithm and radical domains are checked; nested logs use x>1. Changed-bound signs are retained, including decreasing trigonometric substitution. No trigonometric-substitution method, integration by parts, partial fractions or improper integrals is assessed.",
+  "varietyReview": "Power composite, radical cancellation, affine exponential, trig-over-denominator log, nested-log domain, squared-input cosine bounds, reciprocal quadratic log bounds, decreasing cosine substitution, radical-input exponential bounds, exponential inverse tangent and differential error analysis. Ten original-integrand/candidate-derivative corroborations supplement exact substitutions and derivative-back proofs.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-6-9-001",
+      "independentReasoning": "Differentiate the selected expression by the chain rule: (1/5)·5(x²+3)⁴·2x recovers the original integrand exactly. Separately differentiate the three alternatives; their extra scale or product term prevents equality. Numerical differences use moderate inputs to control cancellation.",
+      "optionReview": [
+        "This inserts an extra factor 1/2 even though 2x dx already equals du.",
+        "The differential du=2x dx leaves the basic power integral ∫u⁴ du.",
+        "This omits division by the new exponent 5.",
+        "The original factor 2x is absorbed in du and must not remain outside."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "mul",
+          2,
+          "x",
+          [
+            "pow",
+            [
+              "add",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              3
+            ],
+            4
+          ]
+        ],
+        "primitives": {
+          "(x²+3)⁵/5+C": [
+            "div",
+            [
+              "pow",
+              [
+                "add",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                3
+              ],
+              5
+            ],
+            5
+          ],
+          "(x²+3)⁵/10+C": [
+            "div",
+            [
+              "pow",
+              [
+                "add",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                3
+              ],
+              5
+            ],
+            10
+          ],
+          "(x²+3)⁵+C": [
+            "pow",
+            [
+              "add",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              3
+            ],
+            5
+          ],
+          "2x(x²+3)⁵/5+C": [
+            "mul",
+            2,
+            "x",
+            [
+              "div",
+              [
+                "pow",
+                [
+                  "add",
+                  [
+                    "pow",
+                    "x",
+                    2
+                  ],
+                  3
+                ],
+                5
+              ],
+              5
+            ]
+          ]
+        },
+        "samplePoints": [
+          -1,
+          0.4,
+          1
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-9-002",
+      "independentReasoning": "Independently differentiate the square root: its derivative is (1/2)(x²+4)^(−1/2)·2x=x/√(x²+4). Both substitution factors cancel. The coefficient and reciprocal alternatives fail this exact derivative-back check.",
+      "optionReview": [
+        "This omits the factor 1/2 from du=2x dx.",
+        "This retains an extra factor 1/2 after integrating u^(−1/2).",
+        "Substitution gives one half of ∫u^(−1/2) du, cancelling the power-rule factor 2.",
+        "This fails to raise the substituted exponent."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "div",
+          "x",
+          [
+            "sqrt",
+            [
+              "add",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              4
+            ]
+          ]
+        ],
+        "primitives": {
+          "√(x²+4)+C": [
+            "sqrt",
+            [
+              "add",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              4
+            ]
+          ],
+          "2√(x²+4)+C": [
+            "mul",
+            2,
+            [
+              "sqrt",
+              [
+                "add",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                4
+              ]
+            ]
+          ],
+          "√(x²+4)/2+C": [
+            "mul",
+            0.5,
+            [
+              "sqrt",
+              [
+                "add",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                4
+              ]
+            ]
+          ],
+          "1/√(x²+4)+C": [
+            "div",
+            1,
+            [
+              "sqrt",
+              [
+                "add",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                4
+              ]
+            ]
+          ]
+        },
+        "samplePoints": [
+          -1,
+          0.5,
+          2
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-9-003",
+      "independentReasoning": "Direct differentiation of e^(3x−2) gives 3e^(3x−2). The alternate scaled formulas give e^(3x−2) or 9e^(3x−2), and the changed exponent gives e^(x−2). Checking the exponent as well as its coefficient independently rules them out.",
+      "optionReview": [
+        "This divides by 3 after the original factor 3 has already supplied du.",
+        "This keeps an extra factor 3 outside the substituted primitive.",
+        "This changes the exponent rather than reversing its chain factor.",
+        "The factor 3 dx is exactly the differential of the exponent."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "mul",
+          3,
+          [
+            "exp",
+            [
+              "sub",
+              [
+                "mul",
+                3,
+                "x"
+              ],
+              2
+            ]
+          ]
+        ],
+        "primitives": {
+          "e^(3x−2)+C": [
+            "exp",
+            [
+              "sub",
+              [
+                "mul",
+                3,
+                "x"
+              ],
+              2
+            ]
+          ],
+          "e^(3x−2)/3+C": [
+            "div",
+            [
+              "exp",
+              [
+                "sub",
+                [
+                  "mul",
+                  3,
+                  "x"
+                ],
+                2
+              ]
+            ],
+            3
+          ],
+          "3e^(3x−2)+C": [
+            "mul",
+            3,
+            [
+              "exp",
+              [
+                "sub",
+                [
+                  "mul",
+                  3,
+                  "x"
+                ],
+                2
+              ]
+            ]
+          ],
+          "e^(x−2)+C": [
+            "exp",
+            [
+              "sub",
+              "x",
+              2
+            ]
+          ]
+        },
+        "samplePoints": [
+          -0.2,
+          0.1,
+          0.5
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-9-004",
+      "independentReasoning": "Differentiate the selected logarithm and independently verify its domain lower bound 1. The reciprocal alternative differentiates to −cos x/(2+sin x)²; the cosine-log alternative has a different inner derivative and denominator. All numerical samples are in valid real domains.",
+      "optionReview": [
+        "The numerator is the derivative of the positive denominator.",
+        "This gives the negative of the required derivative.",
+        "This changes the denominator and introduces a negative sine numerator.",
+        "Differentiating a reciprocal produces a squared denominator and a minus sign."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "div",
+          [
+            "cos",
+            "x"
+          ],
+          [
+            "add",
+            2,
+            [
+              "sin",
+              "x"
+            ]
+          ]
+        ],
+        "primitives": {
+          "ln(2+sin x)+C": [
+            "ln",
+            [
+              "add",
+              2,
+              [
+                "sin",
+                "x"
+              ]
+            ]
+          ],
+          "−ln(2+sin x)+C": [
+            "mul",
+            -1,
+            [
+              "ln",
+              [
+                "add",
+                2,
+                [
+                  "sin",
+                  "x"
+                ]
+              ]
+            ]
+          ],
+          "ln(2+cos x)+C": [
+            "ln",
+            [
+              "add",
+              2,
+              [
+                "cos",
+                "x"
+              ]
+            ]
+          ],
+          "1/(2+sin x)+C": [
+            "div",
+            1,
+            [
+              "add",
+              2,
+              [
+                "sin",
+                "x"
+              ]
+            ]
+          ]
+        },
+        "samplePoints": [
+          -0.8,
+          0.2,
+          1.1
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-9-005",
+      "independentReasoning": "Differentiate the nested logarithm directly: [1/(ln x)]·(1/x). It exactly matches the integrand. Separately compare derivatives of the power, reciprocal and single-log candidates, retaining the positive-domain restriction in every check.",
+      "optionReview": [
+        "This differentiates to (ln x)/x, not its reciprocal-log form.",
+        "Setting u=ln x leaves ∫du/u, and ln x is positive on this interval.",
+        "This gives derivative −1/[x(ln x)²].",
+        "This omits the factor 1/ln x in the original integrand."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "div",
+          1,
+          [
+            "mul",
+            "x",
+            [
+              "ln",
+              "x"
+            ]
+          ]
+        ],
+        "primitives": {
+          "ln(ln x)+C": [
+            "ln",
+            [
+              "ln",
+              "x"
+            ]
+          ],
+          "(ln x)²/2+C": [
+            "mul",
+            0.5,
+            [
+              "pow",
+              [
+                "ln",
+                "x"
+              ],
+              2
+            ]
+          ],
+          "1/ln x+C": [
+            "div",
+            1,
+            [
+              "ln",
+              "x"
+            ]
+          ],
+          "ln x+C": [
+            "ln",
+            "x"
+          ]
+        },
+        "samplePoints": [
+          1.5,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-9-006",
+      "independentReasoning": "The original primitive sin(x²) differentiates to 2x cos(x²), providing an independent endpoint evaluation. Quadrature of the original x-integrand agrees; both the substitution method and direct FTC use radian trigonometry.",
+      "optionReview": [
+        "This evaluates the transformed integrand rather than its sine primitive.",
+        "This keeps an extra factor 2 after absorbing 2x dx in du.",
+        "The transformed bounds are u=0 and u=1, giving ∫ cos u du.",
+        "This is the integral of sin u rather than cos u."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          2,
+          "x",
+          [
+            "cos",
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ]
+        ],
+        "start": 0,
+        "end": 1,
+        "optionExpressions": {
+          "sin 1": [
+            "sin",
+            1
+          ],
+          "cos 1": [
+            "cos",
+            1
+          ],
+          "2 sin 1": [
+            "mul",
+            2,
+            [
+              "sin",
+              1
+            ]
+          ],
+          "1−cos 1": [
+            "sub",
+            1,
+            [
+              "cos",
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-6-9-007",
+      "independentReasoning": "An independent primitive is (1/2)ln(x²+1). Substituting the original x endpoints gives the same difference. The integrand is positive on [1,2], ruling out the reversed logarithmic ratio; original-integrand quadrature corroborates the exact value.",
+      "optionReview": [
+        "This omits the differential factor 1/2.",
+        "This omits the lower transformed endpoint contribution.",
+        "This reverses the transformed bounds.",
+        "The transformed bounds are 2 and 5, and x dx=du/2."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "div",
+          "x",
+          [
+            "add",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            1
+          ]
+        ],
+        "start": 1,
+        "end": 2,
+        "optionExpressions": {
+          "(1/2) ln(5/2)": [
+            "mul",
+            0.5,
+            [
+              "ln",
+              [
+                "div",
+                5,
+                2
+              ]
+            ]
+          ],
+          "ln(5/2)": [
+            "ln",
+            [
+              "div",
+              5,
+              2
+            ]
+          ],
+          "(1/2) ln 5": [
+            "mul",
+            0.5,
+            [
+              "ln",
+              5
+            ]
+          ],
+          "(1/2) ln(2/5)": [
+            "mul",
+            0.5,
+            [
+              "ln",
+              [
+                "div",
+                2,
+                5
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-6-9-008",
+      "independentReasoning": "Independently differentiate −e^(cos x): its derivative is sin x·e^(cos x). The primitive changes from −e to −1 across the original endpoints, giving e−1. The original integrand is nonnegative, confirming the positive sign.",
+      "optionReview": [
+        "The negative differential and descending transformed bounds cancel.",
+        "This changes bounds without retaining the differential’s minus sign.",
+        "This adds the endpoint primitive values instead of subtracting.",
+        "This loses the exponential change across the transformed interval."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          [
+            "sin",
+            "x"
+          ],
+          [
+            "exp",
+            [
+              "cos",
+              "x"
+            ]
+          ]
+        ],
+        "start": 0,
+        "end": 1.5707963267948966,
+        "optionExpressions": {
+          "1": 1,
+          "e−1": [
+            "sub",
+            [
+              "exp",
+              1
+            ],
+            1
+          ],
+          "1−e": [
+            "sub",
+            1,
+            [
+              "exp",
+              1
+            ]
+          ],
+          "e+1": [
+            "add",
+            [
+              "exp",
+              1
+            ],
+            1
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-6-9-009",
+      "independentReasoning": "Differentiate the original-variable primitive 2e^(√x): its derivative is e^(√x)/√x for x>0. Evaluate it directly at 4 and 1 to obtain the same two-endpoint expression. Original-function quadrature checks the numerical result independently.",
+      "optionReview": [
+        "This omits the factor 2 in the transformed differential.",
+        "With u=√x, dx=2u du cancels the denominator and changes bounds to 1 and 2.",
+        "The factor 2 applies to both endpoint values.",
+        "This keeps the original upper bound after changing variables."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "div",
+          [
+            "exp",
+            [
+              "sqrt",
+              "x"
+            ]
+          ],
+          [
+            "sqrt",
+            "x"
+          ]
+        ],
+        "start": 1,
+        "end": 4,
+        "optionExpressions": {
+          "2(e²−e)": [
+            "mul",
+            2,
+            [
+              "sub",
+              [
+                "exp",
+                2
+              ],
+              [
+                "exp",
+                1
+              ]
+            ]
+          ],
+          "e²−e": [
+            "sub",
+            [
+              "exp",
+              2
+            ],
+            [
+              "exp",
+              1
+            ]
+          ],
+          "2e²−e": [
+            "sub",
+            [
+              "mul",
+              2,
+              [
+                "exp",
+                2
+              ]
+            ],
+            [
+              "exp",
+              1
+            ]
+          ],
+          "2(e⁴−e)": [
+            "mul",
+            2,
+            [
+              "sub",
+              [
+                "exp",
+                4
+              ],
+              [
+                "exp",
+                1
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-6-9-010",
+      "independentReasoning": "Apply the chain rule independently to arctan(eˣ): [1/(1+(eˣ)²)]eˣ matches the original expression. The logarithmic candidate would require numerator 2e^(2x), and the direct arctangent omits both transformed argument and numerator factor.",
+      "optionReview": [
+        "This reverses the sign of a positive integrand.",
+        "This differentiates to 2e^(2x)/(1+e^(2x)).",
+        "The substitution u=eˣ gives du=eˣ dx and denominator 1+u².",
+        "This ignores the exponential substitution and its differential."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "div",
+          [
+            "exp",
+            "x"
+          ],
+          [
+            "add",
+            1,
+            [
+              "exp",
+              [
+                "mul",
+                2,
+                "x"
+              ]
+            ]
+          ]
+        ],
+        "primitives": {
+          "arctan(eˣ)+C": [
+            "atan",
+            [
+              "exp",
+              "x"
+            ]
+          ],
+          "−arctan(eˣ)+C": [
+            "mul",
+            -1,
+            [
+              "atan",
+              [
+                "exp",
+                "x"
+              ]
+            ]
+          ],
+          "ln(1+e^(2x))+C": [
+            "ln",
+            [
+              "add",
+              1,
+              [
+                "exp",
+                [
+                  "mul",
+                  2,
+                  "x"
+                ]
+              ]
+            ]
+          ],
+          "arctan x+C": [
+            "atan",
+            "x"
+          ]
+        },
+        "samplePoints": [
+          -1,
+          0.3,
+          1
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-9-011",
+      "independentReasoning": "Complete the transformed power integral to obtain u³/6+C=(x²+1)³/6+C. Its derivative is (1/6)·3(x²+1)²·2x=x(x²+1)². This independent derivative-back computation confirms the differential factor and rejects the extra-u candidate.",
+      "optionReview": [
+        "This omits the factor 1/2.",
+        "This inserts an extra x²=u−1 even though the original x dx has already been absorbed.",
+        "This reverses the differential conversion factor.",
+        "Since du=2x dx, the product x dx is du/2."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "(1/2)∫ u² du"
+      }
+    }
+  ]
+}

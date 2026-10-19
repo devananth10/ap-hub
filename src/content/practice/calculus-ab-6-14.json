@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 6,
+  "topicId": "topic-6-14",
+  "questions": [
+    {
+      "id": "calc-ab-6-14-001",
+      "prompt": "For ∫ (5x+1)⁶ dx, which method-and-result pair is correct?",
+      "options": [
+        "Apply the power rule without changing dx; obtain (5x+1)⁷/7+C.",
+        "Differentiate the expression; obtain 30(5x+1)⁵+C.",
+        "Set u=5x+1; obtain (5x+1)⁷/35+C.",
+        "Treat the expression as constant; obtain x(5x+1)⁶+C."
+      ],
+      "correctIndex": 2,
+      "explanation": "The affine inner function suggests substitution u=5x+1. Then ∫u⁶du/5=u⁷/35+C. Polynomial expansion would also be valid, but none of the other listed result formulas differentiates back to the integrand. A: This omits the inner derivative factor 5. B: This computes a derivative rather than an antiderivative. C: The differential dx=du/5 supplies a factor in addition to division by the new power 7. D: The expression varies with x, so product differentiation adds an unwanted term."
+    },
+    {
+      "id": "calc-ab-6-14-002",
+      "prompt": "For ∫ x⁴/(x²+1) dx, which method-and-result pair is correct?",
+      "options": [
+        "Use division; obtain x³/3+x+arctan x+C.",
+        "Integrate the numerator while holding the denominator fixed; obtain x⁵/[5(x²+1)]+C.",
+        "Use u=x²+1 without adjusting the numerator; obtain (1/2)ln(x²+1)+C.",
+        "Use division; obtain x³/3−x+arctan x+C."
+      ],
+      "correctIndex": 3,
+      "explanation": "Since the numerator degree is higher, division is useful: x⁴=(x²+1)(x²−1)+1. Integrate x²−1+1/(x²+1) term by term to obtain x³/3−x+arctan x+C. A: This uses the wrong sign for the constant term of the quotient. B: The denominator also varies, so this quotient is not a primitive. C: The numerator is x⁴, not the x factor needed for that logarithmic result. D: Division produces x²−1+1/(x²+1), a polynomial plus a basic inverse-tangent form."
+    },
+    {
+      "id": "calc-ab-6-14-003",
+      "prompt": "For ∫ 1/(x²+8x+20) dx, which method-and-result pair is correct?",
+      "options": [
+        "Complete the square; obtain (1/2)arctan((x+4)/2)+C.",
+        "Take the logarithm of the denominator; obtain ln(x²+8x+20)+C.",
+        "Ignore the remaining square-completion constant; obtain arctan(x+4)+C.",
+        "Keep the denominator as a reciprocal; obtain 1/(x²+8x+20)+C."
+      ],
+      "correctIndex": 0,
+      "explanation": "Complete the square as x²+8x+20=(x+4)²+4. The shift and scale lead to (1/2)arctan((x+4)/2)+C. A logarithmic substitution would require a matching linear numerator that is absent here. A: The denominator becomes (x+4)²+4, a shifted scaled inverse-tangent form. B: The original numerator is not the denominator derivative 2x+8. C: This gives denominator 1+(x+4)² rather than 4+(x+4)². D: Differentiating a reciprocal produces an extra numerator and a squared denominator."
+    },
+    {
+      "id": "calc-ab-6-14-004",
+      "prompt": "For ∫ sin x cos x dx, with x in radians, which statement about choosing a substitution is correct?",
+      "options": [
+        "Only u=sin x can work.",
+        "Both u=sin x and u=cos x work; the resulting primitives differ by a constant.",
+        "Only u=cos x can work.",
+        "Neither works because a product of trigonometric functions cannot be handled by substitution."
+      ],
+      "correctIndex": 1,
+      "explanation": "With u=sin x, du=cos x dx and the primitive is sin²x/2. With u=cos x, du=−sin x dx and the primitive is −cos²x/2. Their difference is (sin²x+cos²x)/2=1/2, so they describe the same arbitrary-constant family. A: The cosine substitution works when its negative differential is retained. B: They give (1/2)sin²x and −(1/2)cos²x, whose difference is 1/2. C: The sine substitution has the exact matching factor cos x dx. D: Both inner derivatives are present as factors in this integrand."
+    },
+    {
+      "id": "calc-ab-6-14-005",
+      "prompt": "On x>0, which method-and-result pair is correct for ∫ x^(−1) dx?",
+      "options": [
+        "Raise the exponent to zero; obtain 1+C.",
+        "Differentiate the power; obtain −1/x²+C.",
+        "Use the logarithm exception; obtain ln x+C.",
+        "Decrease the exponent before integrating; obtain −1/(2x²)+C."
+      ],
+      "correctIndex": 2,
+      "explanation": "The antiderivative power rule requires exponent different from −1. Here that excluded case is recognized by the reciprocal form 1/x. On the positive interval, its primitive is ln x+C; no invalid division by zero is performed. A: A constant derivative is zero and cannot recover 1/x. B: This is the derivative of x^(−1), not its primitive. C: The usual power-rule division would have zero denominator at exponent −1. D: This differentiates to x^(−3), not x^(−1)."
+    },
+    {
+      "id": "calc-ab-6-14-006",
+      "prompt": "On 0<x<1, which method-and-result pair is correct for ∫ (4x³−2)/√(x⁴−2x+5) dx?",
+      "options": [
+        "Use the same u but omit the power factor; obtain √(x⁴−2x+5)+C.",
+        "Use a logarithmic rule; obtain ln(x⁴−2x+5)+C.",
+        "Use the same u with a negative sign; obtain −2√(x⁴−2x+5)+C.",
+        "Use u=x⁴−2x+5; obtain 2√(x⁴−2x+5)+C."
+      ],
+      "correctIndex": 3,
+      "explanation": "The quartic expression has derivative 4x³−2, exactly the numerator. Substitution therefore leaves ∫du/√u=2√u+C. On the stated interval the radicand is at least 5−2x>3, so all expressions remain real. A: This differentiates to half the required integrand. B: The denominator is √u, not u. C: This gives the negative of the original integrand. D: The full numerator is du/dx, leaving ∫u^(−1/2) du."
+    },
+    {
+      "id": "calc-ab-6-14-007",
+      "prompt": "Which proposed approach gives a justified numerical approximation to ∫ from 0 to 1 of e^(x²) dx using a definite-integral calculator?",
+      "options": [
+        "Apply the numerical-integral command to the original continuous integrand on [0,1].",
+        "Use e^(x²)/(2x) as a primitive and substitute both endpoints.",
+        "Use e^(x²)/2 as a primitive.",
+        "Use e^(x³/3) as a primitive."
+      ],
+      "correctIndex": 0,
+      "explanation": "The original exponential is continuous on the whole finite interval, so a calculator’s numerical-integration routine provides an appropriate approximation. Each offered primitive must be checked by differentiation; none of the three proposed formulas is valid. A chain-rule factor cannot be removed by dividing by a variable and then ignoring its derivative. A: Numerical integration can approximate this finite integral without asserting an unverified elementary primitive. B: This expression is undefined at 0 and its derivative is not e^(x²). C: Its derivative is x e^(x²), with an unwanted factor x. D: Its derivative is x²e^(x³/3), not the original integrand."
+    },
+    {
+      "id": "calc-ab-6-14-008",
+      "prompt": "On −1<x<1, which method-and-result pair is correct for ∫ 1/(9+x²) dx?",
+      "options": [
+        "Take a logarithm; obtain ln(9+x²)+C.",
+        "Recognize a scaled inverse tangent; obtain (1/3)arctan(x/3)+C.",
+        "Use inverse sine; obtain arcsin(x/3)+C.",
+        "Ignore the scale; obtain arctan x+C."
+      ],
+      "correctIndex": 1,
+      "explanation": "Use u=x/3, so dx=3du and 9+x²=9(1+u²). The integral is (1/3)∫du/(1+u²)=(1/3)arctan(x/3)+C. The interval keeps even the incorrect inverse-sine candidate real for a direct comparison. A: That derivative contains a missing numerator factor 2x. B: Factoring 9 and scaling x by 3 gives the standard reciprocal quadratic. C: Its derivative has a radical difference denominator rather than a quadratic sum. D: This gives 1/(1+x²), not 1/(9+x²)."
+    },
+    {
+      "id": "calc-ab-6-14-009",
+      "prompt": "On x>0, which method-and-result pair is correct for ∫ (x²−1)/x dx?",
+      "options": [
+        "Divide separate primitives; obtain (x³/3−x)/(x²/2)+C.",
+        "Take the logarithm of the numerator; obtain ln|x²−1|+C.",
+        "Split the quotient; obtain x²/2−ln x+C.",
+        "Hold the denominator fixed while integrating; obtain (x³/3−x)/x+C."
+      ],
+      "correctIndex": 2,
+      "explanation": "First simplify the quotient as x−1/x on its positive domain. Integrating the two terms gives x²/2−ln x+C. Integrating a numerator and denominator separately, or treating a variable denominator as a constant, has no general justification. A: There is no quotient-of-antiderivatives integration rule. B: Its derivative has a different denominator, and the formula also fails at x=1. C: The integrand is x−1/x, so linearity and the logarithm exception apply. D: The denominator varies, so the quotient rule changes the derivative."
+    },
+    {
+      "id": "calc-ab-6-14-010",
+      "prompt": "For ∫ from −2 to 2 of x(x²+1)³ dx, which method-and-value pair is correct?",
+      "options": [
+        "Add the magnitudes from both halves; the value is 156.",
+        "Evaluate the integrand only at the upper endpoint; the value is 250.",
+        "Use only the positive half; the value is 78.",
+        "Use odd symmetry; the value is 0."
+      ],
+      "correctIndex": 3,
+      "explanation": "The factor x is odd and (x²+1)³ is even, so their product is odd. Equal opposite signed contributions cancel over [−2,2], giving zero. This recognition avoids unnecessary algebra; a valid substitution could also be used. A: This evaluates unsigned area instead of the signed integral. B: An endpoint height is not an accumulated integral. C: The negative half must also be included with its sign. D: The integrand is odd on a symmetric interval."
+    },
+    {
+      "id": "calc-ab-6-14-011",
+      "prompt": "On x>0, why does setting u=x² in ∫ sin(x²) dx not directly turn it into ∫ sin u du?",
+      "options": [
+        "Because du=2x dx, the transformed integral still contains the factor 1/(2√u).",
+        "Because sine is discontinuous at positive inputs.",
+        "Because substitution only permits linear inner functions.",
+        "Because substitution can never be used for trigonometric functions."
+      ],
+      "correctIndex": 0,
+      "explanation": "The substitution gives du=2x dx. On x>0, x=√u, so dx=du/(2√u). Therefore the transformed integral is ∫[sin u/(2√u)]du, not ∫sin u du. A substitution is not a license to erase an unmatched differential factor. A: The missing x factor in the original integral cannot simply be discarded. B: Sine is continuous at every real input. C: Nonlinear substitutions are valid when their differentials are handled correctly. D: Many trigonometric composites have matching inner derivatives."
+    }
+  ]
+}

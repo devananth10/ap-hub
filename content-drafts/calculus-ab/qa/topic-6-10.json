@@ -1,0 +1,862 @@
+{
+  "topicNumber": "6.10",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "c962f8970d75146472d83a66a8e789894280ba18706c127cbaf7c8adba709c7f",
+  "scopeReview": "CED FUN-6.D.3 rearrangements by polynomial long division and completing the square, combined with previously developed substitution/basic primitives. Linear-factor rational remainders come directly from division, not BC-only partial fractions. Positive quadratic denominators, retained cancelled-point domains and finite endpoints are checked. No trigonometric substitution or integration by parts is required.",
+  "varietyReview": "Linear-divisor quotient and log remainder, cubic/quadratic remainder substitution, shifted/scaled arctangent, shifted definite bounds, cancelled polynomial ratio with retained domain, constant quotient and atan remainder, nonunit quadratic leading coefficient, numerator splitting, multiply-back division error analysis, higher-degree finite ratio and square-completion coefficient error analysis. Nine original-integrand/candidate computations and two exact algebra reviews.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-6-10-001",
+      "independentReasoning": "Multiply the quotient and divisor back to obtain x²+3x+2, then add remainder 3 to recover the original numerator. Independently differentiate the complete primitive and combine its terms over x+1. The logarithm remains real because x+1>0.",
+      "optionReview": [
+        "This swaps the quotient constant and remainder coefficient.",
+        "This loses the remainder factor 3.",
+        "Division gives x+2+3/(x+1), which can be integrated term by term.",
+        "The numerator is not the derivative of that logarithm’s argument."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "div",
+          [
+            "add",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            [
+              "mul",
+              3,
+              "x"
+            ],
+            5
+          ],
+          [
+            "add",
+            "x",
+            1
+          ]
+        ],
+        "primitives": {
+          "x²/2+2x+3 ln(x+1)+C": [
+            "add",
+            [
+              "mul",
+              0.5,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ],
+            [
+              "mul",
+              2,
+              "x"
+            ],
+            [
+              "mul",
+              3,
+              [
+                "ln",
+                [
+                  "add",
+                  "x",
+                  1
+                ]
+              ]
+            ]
+          ],
+          "x²/2+3x+2 ln(x+1)+C": [
+            "add",
+            [
+              "mul",
+              0.5,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ],
+            [
+              "mul",
+              3,
+              "x"
+            ],
+            [
+              "mul",
+              2,
+              [
+                "ln",
+                [
+                  "add",
+                  "x",
+                  1
+                ]
+              ]
+            ]
+          ],
+          "x²/2+2x+ln(x+1)+C": [
+            "add",
+            [
+              "mul",
+              0.5,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ],
+            [
+              "mul",
+              2,
+              "x"
+            ],
+            [
+              "ln",
+              [
+                "add",
+                "x",
+                1
+              ]
+            ]
+          ],
+          "ln(x²+3x+5)+C": [
+            "ln",
+            [
+              "add",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              [
+                "mul",
+                3,
+                "x"
+              ],
+              5
+            ]
+          ]
+        },
+        "samplePoints": [
+          -0.5,
+          0.5,
+          2
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-10-002",
+      "independentReasoning": "Differentiate x²/2−(1/2)ln(x²+1) to get x−x/(x²+1)=[x(x²+1)−x]/(x²+1)=x³/(x²+1). This exact recombination independently checks both the division remainder and chain coefficient. The denominator is always positive.",
+      "optionReview": [
+        "This reverses the sign of the division remainder.",
+        "This omits the factor 1/2 in the logarithmic substitution.",
+        "This drops the polynomial quotient and uses the wrong remainder sign.",
+        "Division gives x−x/(x²+1), and the remaining log term needs factor 1/2."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "div",
+          [
+            "pow",
+            "x",
+            3
+          ],
+          [
+            "add",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            1
+          ]
+        ],
+        "primitives": {
+          "x²/2−(1/2)ln(x²+1)+C": [
+            "sub",
+            [
+              "mul",
+              0.5,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ],
+            [
+              "mul",
+              0.5,
+              [
+                "ln",
+                [
+                  "add",
+                  [
+                    "pow",
+                    "x",
+                    2
+                  ],
+                  1
+                ]
+              ]
+            ]
+          ],
+          "x²/2+(1/2)ln(x²+1)+C": [
+            "add",
+            [
+              "mul",
+              0.5,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ],
+            [
+              "mul",
+              0.5,
+              [
+                "ln",
+                [
+                  "add",
+                  [
+                    "pow",
+                    "x",
+                    2
+                  ],
+                  1
+                ]
+              ]
+            ]
+          ],
+          "x²/2−ln(x²+1)+C": [
+            "sub",
+            [
+              "mul",
+              0.5,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ],
+            [
+              "ln",
+              [
+                "add",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                1
+              ]
+            ]
+          ],
+          "(1/2)ln(x²+1)+C": [
+            "mul",
+            0.5,
+            [
+              "ln",
+              [
+                "add",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                1
+              ]
+            ]
+          ]
+        },
+        "samplePoints": [
+          -1,
+          0.3,
+          1.5
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-10-003",
+      "independentReasoning": "Independently differentiate (1/2)arctan((x+3)/2): the derivative is (1/4)/[1+(x+3)²/4]=1/[(x+3)²+4]. Expanding that denominator recovers the original polynomial, verifying both the shift and scale.",
+      "optionReview": [
+        "Completing the square gives (x+3)²+4, including a scale 2.",
+        "This is four times the required primitive.",
+        "This omits the outer factor 1/2.",
+        "This fails to scale the shifted input by 2."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "div",
+          1,
+          [
+            "add",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            [
+              "mul",
+              6,
+              "x"
+            ],
+            13
+          ]
+        ],
+        "primitives": {
+          "(1/2)arctan((x+3)/2)+C": [
+            "mul",
+            0.5,
+            [
+              "atan",
+              [
+                "div",
+                [
+                  "add",
+                  "x",
+                  3
+                ],
+                2
+              ]
+            ]
+          ],
+          "2 arctan((x+3)/2)+C": [
+            "mul",
+            2,
+            [
+              "atan",
+              [
+                "div",
+                [
+                  "add",
+                  "x",
+                  3
+                ],
+                2
+              ]
+            ]
+          ],
+          "arctan((x+3)/2)+C": [
+            "atan",
+            [
+              "div",
+              [
+                "add",
+                "x",
+                3
+              ],
+              2
+            ]
+          ],
+          "(1/2)arctan(x+3)+C": [
+            "mul",
+            0.5,
+            [
+              "atan",
+              [
+                "add",
+                "x",
+                3
+              ]
+            ]
+          ]
+        },
+        "samplePoints": [
+          -4,
+          -2,
+          0
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-10-004",
+      "independentReasoning": "Check the primitive derivative directly and independently note that the shifted interval is [−1,1], with an even reciprocal-quadratic integrand. Twice the known integral from 0 to 1 is π/2. Original-integrand quadrature corroborates the value.",
+      "optionReview": [
+        "This counts only one endpoint contribution.",
+        "The shifted arctangent changes from −π/4 to +π/4.",
+        "This reverses the endpoint order.",
+        "This replaces the denominator by its minimum throughout the interval."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "div",
+          1,
+          [
+            "add",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            [
+              "mul",
+              -2,
+              "x"
+            ],
+            2
+          ]
+        ],
+        "start": 0,
+        "end": 2,
+        "optionExpressions": {
+          "2": 2,
+          "π/2": [
+            "div",
+            "pi",
+            2
+          ],
+          "π/4": [
+            "div",
+            "pi",
+            4
+          ],
+          "−π/2": [
+            "div",
+            [
+              "mul",
+              -1,
+              "pi"
+            ],
+            2
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-6-10-005",
+      "independentReasoning": "Differentiate the selected primitive to recover x+2, then multiply it by the original denominator to recover x²−4. The interval restriction is retained throughout. Numerical checks stay to the right of the cancelled point rather than assigning a value to the original ratio there.",
+      "optionReview": [
+        "The ratio simplifies to a line, not a reciprocal.",
+        "This keeps the wrong sign after cancelling the common factor.",
+        "The original ratio equals x+2 on its allowed domain.",
+        "This is the simplified integrand, not its primitive."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "div",
+          [
+            "sub",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            4
+          ],
+          [
+            "sub",
+            "x",
+            2
+          ]
+        ],
+        "primitives": {
+          "x²/2+2x+C": [
+            "add",
+            [
+              "mul",
+              0.5,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ],
+            [
+              "mul",
+              2,
+              "x"
+            ]
+          ],
+          "ln(x−2)+C": [
+            "ln",
+            [
+              "sub",
+              "x",
+              2
+            ]
+          ],
+          "x²/2−2x+C": [
+            "sub",
+            [
+              "mul",
+              0.5,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ],
+            [
+              "mul",
+              2,
+              "x"
+            ]
+          ],
+          "x+2+C": [
+            "add",
+            "x",
+            2
+          ]
+        },
+        "samplePoints": [
+          2.5,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-10-006",
+      "independentReasoning": "Differentiate the proposed primitive: 1−1/[1+x²/4]=1−4/(x²+4)=x²/(x²+4). This independent simplification verifies the scale of the inverse tangent and the subtraction sign. All formulas are evaluated on a denominator-positive real domain.",
+      "optionReview": [
+        "This loses a factor 2 in the integrated remainder.",
+        "This gives the wrong sign to the division remainder.",
+        "This omits the quotient and uses the opposite remainder contribution.",
+        "Division gives 1−4/(x²+4), with the scaled inverse-tangent remainder."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "div",
+          [
+            "pow",
+            "x",
+            2
+          ],
+          [
+            "add",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            4
+          ]
+        ],
+        "primitives": {
+          "x−2 arctan(x/2)+C": [
+            "sub",
+            "x",
+            [
+              "mul",
+              2,
+              [
+                "atan",
+                [
+                  "div",
+                  "x",
+                  2
+                ]
+              ]
+            ]
+          ],
+          "x−arctan(x/2)+C": [
+            "sub",
+            "x",
+            [
+              "atan",
+              [
+                "div",
+                "x",
+                2
+              ]
+            ]
+          ],
+          "x+2 arctan(x/2)+C": [
+            "add",
+            "x",
+            [
+              "mul",
+              2,
+              [
+                "atan",
+                [
+                  "div",
+                  "x",
+                  2
+                ]
+              ]
+            ]
+          ],
+          "2 arctan(x/2)+C": [
+            "mul",
+            2,
+            [
+              "atan",
+              [
+                "div",
+                "x",
+                2
+              ]
+            ]
+          ]
+        },
+        "samplePoints": [
+          -2,
+          0.5,
+          2
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-10-007",
+      "independentReasoning": "Differentiate (1/4)arctan(x+1/2) to obtain 1/[4(1+(x+1/2)²)]. Expansion of the denominator is 4x²+4x+5. This separately checks the leading coefficient, half-shift and residual constant.",
+      "optionReview": [
+        "The denominator is 4[(x+1/2)²+1].",
+        "This is twice the required primitive.",
+        "This omits the denominator’s outer factor 4.",
+        "This changes the shifted input’s scale without compensating correctly."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "div",
+          1,
+          [
+            "add",
+            [
+              "mul",
+              4,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ],
+            [
+              "mul",
+              4,
+              "x"
+            ],
+            5
+          ]
+        ],
+        "primitives": {
+          "(1/4)arctan(x+1/2)+C": [
+            "mul",
+            0.25,
+            [
+              "atan",
+              [
+                "add",
+                "x",
+                0.5
+              ]
+            ]
+          ],
+          "(1/2)arctan(x+1/2)+C": [
+            "mul",
+            0.5,
+            [
+              "atan",
+              [
+                "add",
+                "x",
+                0.5
+              ]
+            ]
+          ],
+          "arctan(x+1/2)+C": [
+            "atan",
+            [
+              "add",
+              "x",
+              0.5
+            ]
+          ],
+          "(1/4)arctan(2x+1)+C": [
+            "mul",
+            0.25,
+            [
+              "atan",
+              [
+                "add",
+                [
+                  "mul",
+                  2,
+                  "x"
+                ],
+                1
+              ]
+            ]
+          ]
+        },
+        "samplePoints": [
+          -1,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-10-008",
+      "independentReasoning": "Independently integrate the polynomial and reciprocal pieces over the same interval. The linear area is a trapezoid of width 1 and heights 1,2, giving 3/2; the reciprocal integral is ln 2. Original-ratio quadrature agrees with their sum.",
+      "optionReview": [
+        "This omits the factor 1/2 in the polynomial primitive.",
+        "Division gives x+1/x, whose endpoint contributions are 3/2 and ln 2.",
+        "This incorrectly subtracts the reciprocal remainder contribution.",
+        "This drops the polynomial quotient."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "div",
+          [
+            "add",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            1
+          ],
+          "x"
+        ],
+        "start": 1,
+        "end": 2,
+        "optionExpressions": {
+          "3/2+ln 2": [
+            "add",
+            1.5,
+            [
+              "ln",
+              2
+            ]
+          ],
+          "3+ln 2": [
+            "add",
+            3,
+            [
+              "ln",
+              2
+            ]
+          ],
+          "3/2−ln 2": [
+            "sub",
+            1.5,
+            [
+              "ln",
+              2
+            ]
+          ],
+          "ln 2": [
+            "ln",
+            2
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-6-10-009",
+      "independentReasoning": "Multiply the selected rewrite by x−2: (2x+3)(x−2)+10=2x²−x+4, exactly the original numerator. The first wrong rewrite yields 2x²−9x+4, and using remainder 4 yields constant −2. Changing the divisor also changes the excluded input and cannot be an equivalent formula.",
+      "optionReview": [
+        "Multiplication gives the wrong linear coefficient.",
+        "This uses the numerator constant as the remainder without subtracting the quotient product.",
+        "Multiplying the quotient by x−2 leaves remainder 10.",
+        "This changes the original divisor and pole."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "2x+3+10/(x−2)"
+      }
+    },
+    {
+      "questionId": "calc-ab-6-10-010",
+      "independentReasoning": "Multiply the quotient x²−x+1 by x+1 to get x³+1; the remainder −1 recovers x³. Differentiate the complete primitive independently and note the final value is positive, about 0.140186. Quadrature of the original ratio corroborates it.",
+      "optionReview": [
+        "This reverses the remainder sign.",
+        "This omits the net contribution 1/3−1/2 of the higher polynomial powers.",
+        "The polynomial endpoint contribution is 5/6, not 1/6; this option also gives a negative value for a positive integrand.",
+        "Long division gives x²−x+1−1/(x+1)."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "div",
+          [
+            "pow",
+            "x",
+            3
+          ],
+          [
+            "add",
+            "x",
+            1
+          ]
+        ],
+        "start": 0,
+        "end": 1,
+        "optionExpressions": {
+          "5/6−ln 2": [
+            "sub",
+            [
+              "div",
+              5,
+              6
+            ],
+            [
+              "ln",
+              2
+            ]
+          ],
+          "5/6+ln 2": [
+            "add",
+            [
+              "div",
+              5,
+              6
+            ],
+            [
+              "ln",
+              2
+            ]
+          ],
+          "1−ln 2": [
+            "sub",
+            1,
+            [
+              "ln",
+              2
+            ]
+          ],
+          "1/6−ln 2": [
+            "sub",
+            [
+              "div",
+              1,
+              6
+            ],
+            [
+              "ln",
+              2
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-6-10-011",
+      "independentReasoning": "Expand every candidate exactly: their constants are 13,22,13 and 5 respectively, and the third has linear term +6x. Only the first matches all coefficients. The remaining positive constant 4 also independently verifies the original denominator never vanishes.",
+      "optionReview": [
+        "Expanding the square contributes 9, leaving 13−9=4.",
+        "This adds an extra 9 to the original constant.",
+        "This gives the wrong sign for the linear term.",
+        "This gives constant 5 rather than 13."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "x²−6x+13=(x−3)²+4"
+      }
+    }
+  ]
+}

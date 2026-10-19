@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 6,
+  "topicId": "topic-6-9",
+  "questions": [
+    {
+      "id": "calc-ab-6-9-001",
+      "prompt": "Which is ∫ 2x(x²+3)⁴ dx?",
+      "options": [
+        "(x²+3)⁵/10+C",
+        "(x²+3)⁵/5+C",
+        "(x²+3)⁵+C",
+        "2x(x²+3)⁵/5+C"
+      ],
+      "correctIndex": 1,
+      "explanation": "Set u=x²+3, so du=2x dx. The integral becomes ∫u⁴ du=u⁵/5+C. Substituting back gives (x²+3)⁵/5+C. Every original x factor has been accounted for in the transformed differential. A: This inserts an extra factor 1/2 even though 2x dx already equals du. B: The differential du=2x dx leaves the basic power integral ∫u⁴ du. C: This omits division by the new exponent 5. D: The original factor 2x is absorbed in du and must not remain outside."
+    },
+    {
+      "id": "calc-ab-6-9-002",
+      "prompt": "Which is ∫ x/√(x²+4) dx?",
+      "options": [
+        "2√(x²+4)+C",
+        "√(x²+4)/2+C",
+        "√(x²+4)+C",
+        "1/√(x²+4)+C"
+      ],
+      "correctIndex": 2,
+      "explanation": "Let u=x²+4 and du=2x dx. The integral is (1/2)∫u^(−1/2) du=(1/2)·2√u+C=√(x²+4)+C. The radical is positive for every real x, so the result has no additional real-domain restriction. A: This omits the factor 1/2 from du=2x dx. B: This retains an extra factor 1/2 after integrating u^(−1/2). C: Substitution gives one half of ∫u^(−1/2) du, cancelling the power-rule factor 2. D: This fails to raise the substituted exponent."
+    },
+    {
+      "id": "calc-ab-6-9-003",
+      "prompt": "Which is ∫ 3e^(3x−2) dx?",
+      "options": [
+        "e^(3x−2)/3+C",
+        "3e^(3x−2)+C",
+        "e^(x−2)+C",
+        "e^(3x−2)+C"
+      ],
+      "correctIndex": 3,
+      "explanation": "Use u=3x−2, so du=3 dx. The integral becomes ∫eᵘ du=eᵘ+C, giving e^(3x−2)+C. The original coefficient already matches the derivative of the exponent. A: This divides by 3 after the original factor 3 has already supplied du. B: This keeps an extra factor 3 outside the substituted primitive. C: This changes the exponent rather than reversing its chain factor. D: The factor 3 dx is exactly the differential of the exponent."
+    },
+    {
+      "id": "calc-ab-6-9-004",
+      "prompt": "With x in radians, which is ∫ cos x/(2+sin x) dx?",
+      "options": [
+        "ln(2+sin x)+C",
+        "−ln(2+sin x)+C",
+        "ln(2+cos x)+C",
+        "1/(2+sin x)+C"
+      ],
+      "correctIndex": 0,
+      "explanation": "Let u=2+sin x, so du=cos x dx. Then ∫du/u=ln|u|+C. Since 2+sin x≥1, the absolute value may be dropped, giving ln(2+sin x)+C on the whole real line. A: The numerator is the derivative of the positive denominator. B: This gives the negative of the required derivative. C: This changes the denominator and introduces a negative sine numerator. D: Differentiating a reciprocal produces a squared denominator and a minus sign."
+    },
+    {
+      "id": "calc-ab-6-9-005",
+      "prompt": "On x>1, which is ∫ 1/(x ln x) dx?",
+      "options": [
+        "(ln x)²/2+C",
+        "ln(ln x)+C",
+        "1/ln x+C",
+        "ln x+C"
+      ],
+      "correctIndex": 1,
+      "explanation": "Set u=ln x, with du=dx/x. The integral becomes ∫du/u=ln|u|+C. On x>1, u>0, so the result is ln(ln x)+C. The interval restriction avoids both the original zero logarithm and nonpositive outer-log inputs. A: This differentiates to (ln x)/x, not its reciprocal-log form. B: Setting u=ln x leaves ∫du/u, and ln x is positive on this interval. C: This gives derivative −1/[x(ln x)²]. D: This omits the factor 1/ln x in the original integrand."
+    },
+    {
+      "id": "calc-ab-6-9-006",
+      "prompt": "Angles are in radians. Evaluate ∫ from 0 to 1 of 2x cos(x²) dx.",
+      "options": [
+        "cos 1",
+        "2 sin 1",
+        "sin 1",
+        "1−cos 1"
+      ],
+      "correctIndex": 2,
+      "explanation": "Let u=x², so du=2x dx. The x bounds 0 and 1 become u bounds 0 and 1. The transformed integral is ∫ from 0 to 1 of cos u du=sin 1−sin 0=sin 1. A: This evaluates the transformed integrand rather than its sine primitive. B: This keeps an extra factor 2 after absorbing 2x dx in du. C: The transformed bounds are u=0 and u=1, giving ∫ cos u du. D: This is the integral of sin u rather than cos u."
+    },
+    {
+      "id": "calc-ab-6-9-007",
+      "prompt": "Evaluate ∫ from 1 to 2 of x/(x²+1) dx.",
+      "options": [
+        "ln(5/2)",
+        "(1/2) ln 5",
+        "(1/2) ln(2/5)",
+        "(1/2) ln(5/2)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Use u=x²+1, with du=2x dx. At x=1, u=2; at x=2, u=5. Thus the integral is (1/2)∫ from 2 to 5 of du/u=(1/2)[ln 5−ln 2]=(1/2)ln(5/2). A: This omits the differential factor 1/2. B: This omits the lower transformed endpoint contribution. C: This reverses the transformed bounds. D: The transformed bounds are 2 and 5, and x dx=du/2."
+    },
+    {
+      "id": "calc-ab-6-9-008",
+      "prompt": "Angles are in radians. Evaluate ∫ from 0 to π/2 of sin x·e^(cos x) dx.",
+      "options": [
+        "e−1",
+        "1−e",
+        "e+1",
+        "1"
+      ],
+      "correctIndex": 0,
+      "explanation": "With u=cos x, du=−sin x dx. The bounds change from x=0,π/2 to u=1,0. Therefore the integral is −∫ from 1 to 0 of eᵘ du=−(1−e)=e−1. Both orientation and the differential sign must be retained. A: The negative differential and descending transformed bounds cancel. B: This changes bounds without retaining the differential’s minus sign. C: This adds the endpoint primitive values instead of subtracting. D: This loses the exponential change across the transformed interval."
+    },
+    {
+      "id": "calc-ab-6-9-009",
+      "prompt": "Evaluate ∫ from 1 to 4 of e^(√x)/√x dx.",
+      "options": [
+        "e²−e",
+        "2(e²−e)",
+        "2e²−e",
+        "2(e⁴−e)"
+      ],
+      "correctIndex": 1,
+      "explanation": "Let u=√x, so x=u² and dx=2u du. The integrand becomes 2eᵘ du, and x=1,4 correspond to u=1,2. The value is 2[e²−e]. Mixing transformed integrands with old bounds would be inconsistent. A: This omits the factor 2 in the transformed differential. B: With u=√x, dx=2u du cancels the denominator and changes bounds to 1 and 2. C: The factor 2 applies to both endpoint values. D: This keeps the original upper bound after changing variables."
+    },
+    {
+      "id": "calc-ab-6-9-010",
+      "prompt": "Which is ∫ eˣ/(1+e^(2x)) dx?",
+      "options": [
+        "−arctan(eˣ)+C",
+        "ln(1+e^(2x))+C",
+        "arctan(eˣ)+C",
+        "arctan x+C"
+      ],
+      "correctIndex": 2,
+      "explanation": "Set u=eˣ and du=eˣ dx. The denominator becomes 1+u², giving ∫du/(1+u²)=arctan u+C=arctan(eˣ)+C. The denominator stays positive for all real x. A: This reverses the sign of a positive integrand. B: This differentiates to 2e^(2x)/(1+e^(2x)). C: The substitution u=eˣ gives du=eˣ dx and denominator 1+u². D: This ignores the exponential substitution and its differential."
+    },
+    {
+      "id": "calc-ab-6-9-011",
+      "prompt": "To evaluate ∫ x(x²+1)² dx, a student sets u=x²+1. Which transformed integral correctly accounts for the differential?",
+      "options": [
+        "∫ u² du",
+        "(1/2)∫ (u−1)u² du",
+        "2∫ u² du",
+        "(1/2)∫ u² du"
+      ],
+      "correctIndex": 3,
+      "explanation": "Differentiate the substitution to get du=2x dx. Treat the whole product x dx as du/2. The remaining factor (x²+1)² becomes u², so the correct transformed integral is (1/2)∫u² du. No x factor remains to convert separately. A: This omits the factor 1/2. B: This inserts an extra x²=u−1 even though the original x dx has already been absorbed. C: This reverses the differential conversion factor. D: Since du=2x dx, the product x dx is du/2."
+    }
+  ]
+}

@@ -1,0 +1,753 @@
+{
+  "topicNumber": "6.14",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "1d2fe5fa2f36d80460adccb419e76144c8df71b045cbf630ad9ed24b07fba281",
+  "scopeReview": "CED Topic 6.14 and Skill 1.C: choose justified antidifferentiation procedures from AB content already developed. Non-exclusive valid methods are acknowledged; selection considers derivative matching, degrees, completed squares, domains, parity and numerical integration. No BC-only method is introduced. Written strategy validity and every distractor are separately reviewed; numeric models corroborate the associated result rather than universally proving a prose method.",
+  "varietyReview": "Affine-power chain factor, degree-based division, shifted quadratic completion, two valid trig substitutions with constants differing, power-rule exception −1, full nonlinear inner derivative, numerical integration versus false primitives, scaled inverse tangent, invalid quotient integration, odd-symmetry shortcut and a missing-differential factor. Eight primitive/integral result corroborations and three exact strategy/domain reasoning reviews.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-6-14-001",
+      "independentReasoning": "Differentiate each proposed result independently. The selected coefficient cancels both factors 7 and 5; the /7 result differentiates to five times the integrand. The remaining results have incompatible powers or a product-rule term, corroborated at three original inputs.",
+      "optionReview": [
+        "This omits the inner derivative factor 5.",
+        "This computes a derivative rather than an antiderivative.",
+        "The differential dx=du/5 supplies a factor in addition to division by the new power 7.",
+        "The expression varies with x, so product differentiation adds an unwanted term."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "pow",
+          [
+            "add",
+            [
+              "mul",
+              5,
+              "x"
+            ],
+            1
+          ],
+          6
+        ],
+        "primitives": {
+          "Set u=5x+1; obtain (5x+1)⁷/35+C.": [
+            "div",
+            [
+              "pow",
+              [
+                "add",
+                [
+                  "mul",
+                  5,
+                  "x"
+                ],
+                1
+              ],
+              7
+            ],
+            35
+          ],
+          "Apply the power rule without changing dx; obtain (5x+1)⁷/7+C.": [
+            "div",
+            [
+              "pow",
+              [
+                "add",
+                [
+                  "mul",
+                  5,
+                  "x"
+                ],
+                1
+              ],
+              7
+            ],
+            7
+          ],
+          "Differentiate the expression; obtain 30(5x+1)⁵+C.": [
+            "mul",
+            30,
+            [
+              "pow",
+              [
+                "add",
+                [
+                  "mul",
+                  5,
+                  "x"
+                ],
+                1
+              ],
+              5
+            ]
+          ],
+          "Treat the expression as constant; obtain x(5x+1)⁶+C.": [
+            "mul",
+            "x",
+            [
+              "pow",
+              [
+                "add",
+                [
+                  "mul",
+                  5,
+                  "x"
+                ],
+                1
+              ],
+              6
+            ]
+          ]
+        },
+        "samplePoints": [
+          -0.1,
+          0,
+          0.1
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-14-002",
+      "independentReasoning": "Multiply the proposed quotient and divisor back and add the remainder to recover x⁴. Independently differentiate the selected primitive and combine x²−1+1/(x²+1) over its common denominator. Candidate numerical derivatives check the conclusion but method validity is separately justified.",
+      "optionReview": [
+        "This uses the wrong sign for the constant term of the quotient.",
+        "The denominator also varies, so this quotient is not a primitive.",
+        "The numerator is x⁴, not the x factor needed for that logarithmic result.",
+        "Division produces x²−1+1/(x²+1), a polynomial plus a basic inverse-tangent form."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "div",
+          [
+            "pow",
+            "x",
+            4
+          ],
+          [
+            "add",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            1
+          ]
+        ],
+        "primitives": {
+          "Use division; obtain x³/3−x+arctan x+C.": [
+            "add",
+            [
+              "div",
+              [
+                "pow",
+                "x",
+                3
+              ],
+              3
+            ],
+            [
+              "mul",
+              -1,
+              "x"
+            ],
+            [
+              "atan",
+              "x"
+            ]
+          ],
+          "Use division; obtain x³/3+x+arctan x+C.": [
+            "add",
+            [
+              "div",
+              [
+                "pow",
+                "x",
+                3
+              ],
+              3
+            ],
+            "x",
+            [
+              "atan",
+              "x"
+            ]
+          ],
+          "Integrate the numerator while holding the denominator fixed; obtain x⁵/[5(x²+1)]+C.": [
+            "div",
+            [
+              "pow",
+              "x",
+              5
+            ],
+            [
+              "mul",
+              5,
+              [
+                "add",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                1
+              ]
+            ]
+          ],
+          "Use u=x²+1 without adjusting the numerator; obtain (1/2)ln(x²+1)+C.": [
+            "mul",
+            0.5,
+            [
+              "ln",
+              [
+                "add",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                1
+              ]
+            ]
+          ]
+        },
+        "samplePoints": [
+          -1,
+          0.4,
+          1.5
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-14-003",
+      "independentReasoning": "Differentiate the selected shifted inverse tangent to get 1/[(x+4)²+4]. Expanding recovers the original denominator. Separately examine each alternative derivative, retaining the positive residual constant rather than silently changing the integrand.",
+      "optionReview": [
+        "The denominator becomes (x+4)²+4, a shifted scaled inverse-tangent form.",
+        "The original numerator is not the denominator derivative 2x+8.",
+        "This gives denominator 1+(x+4)² rather than 4+(x+4)².",
+        "Differentiating a reciprocal produces an extra numerator and a squared denominator."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "div",
+          1,
+          [
+            "add",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            [
+              "mul",
+              8,
+              "x"
+            ],
+            20
+          ]
+        ],
+        "primitives": {
+          "Complete the square; obtain (1/2)arctan((x+4)/2)+C.": [
+            "mul",
+            0.5,
+            [
+              "atan",
+              [
+                "div",
+                [
+                  "add",
+                  "x",
+                  4
+                ],
+                2
+              ]
+            ]
+          ],
+          "Take the logarithm of the denominator; obtain ln(x²+8x+20)+C.": [
+            "ln",
+            [
+              "add",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              [
+                "mul",
+                8,
+                "x"
+              ],
+              20
+            ]
+          ],
+          "Ignore the remaining square-completion constant; obtain arctan(x+4)+C.": [
+            "atan",
+            [
+              "add",
+              "x",
+              4
+            ]
+          ],
+          "Keep the denominator as a reciprocal; obtain 1/(x²+8x+20)+C.": [
+            "div",
+            1,
+            [
+              "add",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              [
+                "mul",
+                8,
+                "x"
+              ],
+              20
+            ]
+          ]
+        },
+        "samplePoints": [
+          -5,
+          -3,
+          0
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-14-004",
+      "independentReasoning": "Differentiate both primitive forms separately to obtain sin x cos x, then use the Pythagorean identity to compute their constant difference. This checks two valid methods rather than incorrectly declaring one exclusively correct because of a preferred workflow.",
+      "optionReview": [
+        "The cosine substitution works when its negative differential is retained.",
+        "They give (1/2)sin²x and −(1/2)cos²x, whose difference is 1/2.",
+        "The sine substitution has the exact matching factor cos x dx.",
+        "Both inner derivatives are present as factors in this integrand."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Both u=sin x and u=cos x work; the resulting primitives differ by a constant."
+      }
+    },
+    {
+      "questionId": "calc-ab-6-14-005",
+      "independentReasoning": "Differentiate ln x directly and compare it with the derivatives of all alternatives. Their rates are 0, 2/x³ and 1/x³, rather than 1/x over the full interval. Domain-restricted numerical comparisons independently corroborate the exact exception.",
+      "optionReview": [
+        "A constant derivative is zero and cannot recover 1/x.",
+        "This is the derivative of x^(−1), not its primitive.",
+        "The usual power-rule division would have zero denominator at exponent −1.",
+        "This differentiates to x^(−3), not x^(−1)."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "div",
+          1,
+          "x"
+        ],
+        "primitives": {
+          "Use the logarithm exception; obtain ln x+C.": [
+            "ln",
+            "x"
+          ],
+          "Raise the exponent to zero; obtain 1+C.": 1,
+          "Differentiate the power; obtain −1/x²+C.": [
+            "div",
+            -1,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          "Decrease the exponent before integrating; obtain −1/(2x²)+C.": [
+            "div",
+            -0.5,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ]
+        },
+        "samplePoints": [
+          0.5,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-14-006",
+      "independentReasoning": "Independently apply the chain rule to 2√(x⁴−2x+5); the outer derivative 1/√u multiplies the entire inner derivative. This verifies every coefficient. The logarithmic alternative instead divides by u and therefore cannot match the radical denominator.",
+      "optionReview": [
+        "This differentiates to half the required integrand.",
+        "The denominator is √u, not u.",
+        "This gives the negative of the original integrand.",
+        "The full numerator is du/dx, leaving ∫u^(−1/2) du."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "div",
+          [
+            "sub",
+            [
+              "mul",
+              4,
+              [
+                "pow",
+                "x",
+                3
+              ]
+            ],
+            2
+          ],
+          [
+            "sqrt",
+            [
+              "add",
+              [
+                "pow",
+                "x",
+                4
+              ],
+              [
+                "mul",
+                -2,
+                "x"
+              ],
+              5
+            ]
+          ]
+        ],
+        "primitives": {
+          "Use u=x⁴−2x+5; obtain 2√(x⁴−2x+5)+C.": [
+            "mul",
+            2,
+            [
+              "sqrt",
+              [
+                "add",
+                [
+                  "pow",
+                  "x",
+                  4
+                ],
+                [
+                  "mul",
+                  -2,
+                  "x"
+                ],
+                5
+              ]
+            ]
+          ],
+          "Use the same u but omit the power factor; obtain √(x⁴−2x+5)+C.": [
+            "sqrt",
+            [
+              "add",
+              [
+                "pow",
+                "x",
+                4
+              ],
+              [
+                "mul",
+                -2,
+                "x"
+              ],
+              5
+            ]
+          ],
+          "Use a logarithmic rule; obtain ln(x⁴−2x+5)+C.": [
+            "ln",
+            [
+              "add",
+              [
+                "pow",
+                "x",
+                4
+              ],
+              [
+                "mul",
+                -2,
+                "x"
+              ],
+              5
+            ]
+          ],
+          "Use the same u with a negative sign; obtain −2√(x⁴−2x+5)+C.": [
+            "mul",
+            -2,
+            [
+              "sqrt",
+              [
+                "add",
+                [
+                  "pow",
+                  "x",
+                  4
+                ],
+                [
+                  "mul",
+                  -2,
+                  "x"
+                ],
+                5
+              ]
+            ]
+          ]
+        },
+        "samplePoints": [
+          0.1,
+          0.4,
+          0.8
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-14-007",
+      "independentReasoning": "Differentiate the first false primitive to get e^(x²)−e^(x²)/(2x²) for x≠0, and note its artificial endpoint singularity. Differentiate the other two as stated in their option reviews. Independently e^(x²) lies between 1 and e on [0,1], so the numerical area is finite and positive; no improper integral or unproved elementary-primitive claim is introduced.",
+      "optionReview": [
+        "Numerical integration can approximate this finite integral without asserting an unverified elementary primitive.",
+        "This expression is undefined at 0 and its derivative is not e^(x²).",
+        "Its derivative is x e^(x²), with an unwanted factor x.",
+        "Its derivative is x²e^(x³/3), not the original integrand."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Apply the numerical-integral command to the original continuous integrand on [0,1]."
+      }
+    },
+    {
+      "questionId": "calc-ab-6-14-008",
+      "independentReasoning": "Differentiate the chosen scaled inverse tangent: (1/9)/[1+x²/9]=1/(9+x²). The other candidate derivatives have distinct numerator or denominator structures. The exact scale argument is recorded separately from numerical candidate checks.",
+      "optionReview": [
+        "That derivative contains a missing numerator factor 2x.",
+        "Factoring 9 and scaling x by 3 gives the standard reciprocal quadratic.",
+        "Its derivative has a radical difference denominator rather than a quadratic sum.",
+        "This gives 1/(1+x²), not 1/(9+x²)."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "div",
+          1,
+          [
+            "add",
+            9,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ]
+        ],
+        "primitives": {
+          "Recognize a scaled inverse tangent; obtain (1/3)arctan(x/3)+C.": [
+            "div",
+            [
+              "atan",
+              [
+                "div",
+                "x",
+                3
+              ]
+            ],
+            3
+          ],
+          "Take a logarithm; obtain ln(9+x²)+C.": [
+            "ln",
+            [
+              "add",
+              9,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ]
+          ],
+          "Use inverse sine; obtain arcsin(x/3)+C.": [
+            "asin",
+            [
+              "div",
+              "x",
+              3
+            ]
+          ],
+          "Ignore the scale; obtain arctan x+C.": [
+            "atan",
+            "x"
+          ]
+        },
+        "samplePoints": [
+          -0.5,
+          0,
+          0.5
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-14-009",
+      "independentReasoning": "Differentiate the selected primitive directly. The first incorrect ratio simplifies to 2x/3−2/x, with derivative 2/3+2/x². The last simplifies to x²/3−1, with derivative 2x/3. The log-of-numerator candidate has derivative 2x/(x²−1) and is undefined at a point allowed by the original domain.",
+      "optionReview": [
+        "There is no quotient-of-antiderivatives integration rule.",
+        "Its derivative has a different denominator, and the formula also fails at x=1.",
+        "The integrand is x−1/x, so linearity and the logarithm exception apply.",
+        "The denominator varies, so the quotient rule changes the derivative."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "div",
+          [
+            "sub",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            1
+          ],
+          "x"
+        ],
+        "primitives": {
+          "Split the quotient; obtain x²/2−ln x+C.": [
+            "sub",
+            [
+              "mul",
+              0.5,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ],
+            [
+              "ln",
+              "x"
+            ]
+          ],
+          "Divide separate primitives; obtain (x³/3−x)/(x²/2)+C.": [
+            "div",
+            [
+              "sub",
+              [
+                "div",
+                [
+                  "pow",
+                  "x",
+                  3
+                ],
+                3
+              ],
+              "x"
+            ],
+            [
+              "mul",
+              0.5,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ]
+          ],
+          "Take the logarithm of the numerator; obtain ln|x²−1|+C.": [
+            "ln",
+            [
+              "abs",
+              [
+                "sub",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                1
+              ]
+            ]
+          ],
+          "Hold the denominator fixed while integrating; obtain (x³/3−x)/x+C.": [
+            "div",
+            [
+              "sub",
+              [
+                "div",
+                [
+                  "pow",
+                  "x",
+                  3
+                ],
+                3
+              ],
+              "x"
+            ],
+            "x"
+          ]
+        },
+        "samplePoints": [
+          0.5,
+          1.5,
+          2
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-14-010",
+      "independentReasoning": "As an independent check, a primitive is (x²+1)⁴/8. It has the same value 625/8 at both endpoints, giving zero. The positive half contributes (625−1)/8=78, explaining the unsigned total 156 while confirming that neither is the requested signed integral.",
+      "optionReview": [
+        "This evaluates unsigned area instead of the signed integral.",
+        "An endpoint height is not an accumulated integral.",
+        "The negative half must also be included with its sign.",
+        "The integrand is odd on a symmetric interval."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          "x",
+          [
+            "pow",
+            [
+              "add",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              1
+            ],
+            3
+          ]
+        ],
+        "start": -2,
+        "end": 2,
+        "optionExpressions": {
+          "Use odd symmetry; the value is 0.": 0,
+          "Add the magnitudes from both halves; the value is 156.": 156,
+          "Evaluate the integrand only at the upper endpoint; the value is 250.": 250,
+          "Use only the positive half; the value is 78.": 78
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-6-14-011",
+      "independentReasoning": "Differentiate the naive primitive −cos(x²): its derivative is 2x sin(x²), displaying the exact extra factor missing from the original integrand. This derivative-back check independently diagnoses the invalid simplification without claiming that all nonlinear or trigonometric substitutions fail.",
+      "optionReview": [
+        "The missing x factor in the original integral cannot simply be discarded.",
+        "Sine is continuous at every real input.",
+        "Nonlinear substitutions are valid when their differentials are handled correctly.",
+        "Many trigonometric composites have matching inner derivatives."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Because du=2x dx, the transformed integral still contains the factor 1/(2√u)."
+      }
+    }
+  ]
+}
