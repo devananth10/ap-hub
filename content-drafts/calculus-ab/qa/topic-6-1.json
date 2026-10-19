@@ -1,0 +1,236 @@
+{
+  "topicNumber": "6.1",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "e374261f54c2c960b83db208f1612dccfd41d9e99525cb632cf57bb16ed0cee7",
+  "scopeReview": "CED CHA-4.A.1–4: interpret rate-graph area as signed accumulated change, exact geometry and rate-times-independent-variable units. No antiderivative, accumulation-function derivative or later application theorem is required. Original line graphs include complete coordinate descriptions; piecewise constant rates are integrated geometrically.",
+  "varietyReview": "Position versus displacement and distance, inflow/outflow, unspecified initial population, cancelling temperature changes, marginal cost, sign-crossing velocity, time-unit conversion, queue net rate, spatial density, signed-area imbalance and an increasing negative rate. Three original graphs and explicit dimensional distractors; context and reasoning varied beyond parameter substitutions.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-6-1-001",
+      "independentReasoning": "Independently split the actual polyline into the two positive triangles of area 4 each and the negative triangle of area −2. Their signed sum is 6, whereas the absolute sum is 10. The initial 10 shifts position, not velocity. Geometry and the graph-coordinate model agree.",
+      "optionReview": [
+        "This is the displacement alone, omitting the initial position.",
+        "Signed velocity area gives displacement 8−2=6 m, which is added to the initial position.",
+        "This adds the two unsigned areas and confuses distance with displacement.",
+        "This subtracts the net displacement instead of adding it."
+      ],
+      "check": {
+        "type": "figure-accumulation",
+        "start": 0,
+        "end": 6,
+        "initial": 10,
+        "figureSha256": "9a428e4befa2f231ca5fc29ee41758a755063a9ad490889f7ff9e30d8b0fe538"
+      },
+      "figureSha256": "9a428e4befa2f231ca5fc29ee41758a755063a9ad490889f7ff9e30d8b0fe538"
+    },
+    {
+      "questionId": "calc-ab-6-1-002",
+      "independentReasoning": "Separately total the entering volume 7·3=21 L and leaving volume 9·3=27 L. Mass balance gives 30+21−27=24 L, agreeing with the net-rate calculation. The lowest amount on this interval is the final 24 L.",
+      "optionReview": [
+        "This reverses the direction of the net flow.",
+        "This is the magnitude of the change, not the remaining amount.",
+        "The net rate is −2 L/min, producing a change of −6 L.",
+        "This is the signed change, omitting the positive initial amount."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          30,
+          7,
+          9,
+          3
+        ],
+        "expression": [
+          "add",
+          30,
+          [
+            "mul",
+            [
+              "sub",
+              7,
+              9
+            ],
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-1-003",
+      "independentReasoning": "Use a direct difference interpretation: starting populations 100 and 200 would finish at 124 and 224, respectively, while both have the same change 24. Multiplying the displayed units gives animals, distinguishing change from rate and second derivative.",
+      "optionReview": [
+        "That would additionally require an initial population of zero.",
+        "Multiplication by days removes the per-day unit.",
+        "Accumulating a population rate does not differentiate it.",
+        "Rate times elapsed time measures the change; the initial population is still needed for the total."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "An increase of 24 animals, not a specified final population."
+      }
+    },
+    {
+      "questionId": "calc-ab-6-1-004",
+      "independentReasoning": "Write the temperature relative to an arbitrary initial value T₀: T₀−2t up to time 2 and T₀−4+(t−2) from time 2 to 6. The pieces join and end at T₀. This verifies the intermediate variation independently of the cancelling-area shortcut.",
+      "optionReview": [
+        "The signed changes are −4 °C and +4 °C, which cancel.",
+        "Zero net change does not prevent intermediate decreases and increases.",
+        "This adds both magnitudes and discards the cooling sign.",
+        "This counts only the first part and ignores the later warming."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It returns to its starting temperature, although it was not constant."
+      }
+    },
+    {
+      "questionId": "calc-ab-6-1-005",
+      "independentReasoning": "A constant rate implies C(q)=120+7(q−10) on the stated interval. Direct substitution at 18 gives 176 and at 10 reproduces 120. Dimensional multiplication (dollars/item)·items confirms that the accumulated change is measured in dollars.",
+      "optionReview": [
+        "This is only the accumulated cost change.",
+        "The additional eight items increase cost by 7·8=56 dollars.",
+        "This incorrectly charges 7 dollars for all eighteen items on top of C(10).",
+        "This charges for only one additional item rather than eight."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          10,
+          18,
+          7,
+          120
+        ],
+        "expression": [
+          "add",
+          120,
+          [
+            "mul",
+            7,
+            [
+              "sub",
+              18,
+              10
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-1-006",
+      "independentReasoning": "The straight segment has endpoint velocities 3 and −3, so its signed trapezoid area over the full width is 6(3−3)/2=0. Splitting at the crossing independently gives the unsigned distance 9 and verifies why it is a distractor.",
+      "optionReview": [
+        "This is the total distance, obtained by adding both unsigned areas.",
+        "This is the final velocity value, not accumulated position change.",
+        "The equal positive and negative triangular velocity areas cancel.",
+        "This ignores the triangular shape and the sign change."
+      ],
+      "check": {
+        "type": "figure-accumulation",
+        "start": 0,
+        "end": 6,
+        "figureSha256": "d4b46de34b56861e39d2b6c5b47e6461ec4ebcbb819c1a6c3e1a4ba79d0443af"
+      },
+      "figureSha256": "d4b46de34b56861e39d2b6c5b47e6461ec4ebcbb819c1a6c3e1a4ba79d0443af"
+    },
+    {
+      "questionId": "calc-ab-6-1-007",
+      "independentReasoning": "As an independent conversion, 120 L/hour equals 2 L/min. Then 2·15=30 L. Both paths produce liters and agree, while directly multiplying liters/hour by an unconverted minute count does not.",
+      "optionReview": [
+        "This treats 15 minutes as 15 hours.",
+        "This divides a rate by time rather than accumulating it.",
+        "This is the hourly delivery, not the quarter-hour amount.",
+        "Fifteen minutes is one quarter of an hour, so multiply 120 by 1/4."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          120,
+          15
+        ],
+        "expression": [
+          "mul",
+          120,
+          [
+            "div",
+            15,
+            60
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-1-008",
+      "independentReasoning": "The two graph segments each enclose a trapezoid of width 2 and average height (1+3)/2=2. Their total area is 4+4=8, independently checking the rectangle-plus-triangle decomposition. The initial queue is added once.",
+      "optionReview": [
+        "The signed rate area is 8 people, added to the starting 12.",
+        "This is the change rather than the final queue size.",
+        "This uses the peak rate 3 for all four hours.",
+        "This adds the final rate value rather than its accumulated area."
+      ],
+      "check": {
+        "type": "figure-accumulation",
+        "start": 0,
+        "end": 4,
+        "initial": 12,
+        "figureSha256": "330bef425681726588fdc74502b518945a31413e1ec385ad3044cb2bbe21ced1"
+      },
+      "figureSha256": "330bef425681726588fdc74502b518945a31413e1ec385ad3044cb2bbe21ced1"
+    },
+    {
+      "questionId": "calc-ab-6-1-009",
+      "independentReasoning": "Divide the rod into five one-centimeter pieces. Each has mass 2 g, giving total mass 10 g. This independent physical decomposition checks both the number and units, including the equal-number distractor carrying the wrong unit.",
+      "optionReview": [
+        "The length factor cancels the denominator centimeter.",
+        "Density times length has units (g/cm)·cm=g.",
+        "This copies the density number without multiplying by length.",
+        "This treats length as squared, which is not the width of this one-dimensional interval."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "10 g"
+      }
+    },
+    {
+      "questionId": "calc-ab-6-1-010",
+      "independentReasoning": "Use separate gains and losses: gain 8 units and lose 12 units, leaving a net loss of 4. For any initial value Q₀ the final value is Q₀−4, verifying the sign without assuming an initial total or treating the negative region as a gain.",
+      "optionReview": [
+        "This is the sum of magnitudes, not signed net change.",
+        "This reverses which side of the axis contributes positively.",
+        "Positive area contributes +8 and below-axis area contributes −12.",
+        "This ignores the positive contribution."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          8,
+          12
+        ],
+        "expression": [
+          "sub",
+          8,
+          12
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-1-011",
+      "independentReasoning": "For a concrete independent check, r(t)=−3+t on [0,2] rises from −3 to −1 while its signed trapezoid area is −4. Starting amounts 10 and 2 finish at 6 and −2, respectively, proving that negative net change alone does not determine the sign of the final value.",
+      "optionReview": [
+        "Direction depends on the sign of the rate, not its trend.",
+        "A continuous strictly negative rate over a nonzero interval has negative signed area.",
+        "A negative change does not determine the final value without the initial amount.",
+        "Increasing a negative rate does not make its accumulated change positive."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The quantity continues decreasing, with a less negative instantaneous rate."
+      }
+    }
+  ]
+}

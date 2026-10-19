@@ -1,9 +1,9 @@
 {
   "officialTopics": 81,
   "targetQuestions": 891,
-  "completedTopics": 51,
-  "questions": 561,
-  "numeric": 305,
+  "completedTopics": 53,
+  "questions": 583,
+  "numeric": 319,
   "repeatedPromptPatterns": [],
   "topics": [
     {
@@ -362,11 +362,23 @@
       "count": 11,
       "status": "validated",
       "file": "src/content/practice/calculus-ab-5-12.json"
+    },
+    {
+      "topic": "6.1",
+      "topicId": "integrals",
+      "count": 11,
+      "status": "validated",
+      "file": "src/content/practice/calculus-ab-6-1.json"
+    },
+    {
+      "topic": "6.2",
+      "topicId": "topic-6-2",
+      "count": 11,
+      "status": "validated",
+      "file": "src/content/practice/calculus-ab-6-2.json"
     }
   ],
   "missing": [
-    "6.1",
-    "6.2",
     "6.3",
     "6.4",
     "6.5",

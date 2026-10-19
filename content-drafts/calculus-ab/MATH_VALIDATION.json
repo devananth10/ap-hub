@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 561,
+  "questionsChecked": 583,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -1526,6 +1526,76 @@
       "questionId": "calc-ab-5-12-011",
       "method": "implicit-curvature",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-1-001",
+      "method": "figure-accumulation",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-1-002",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-6-1-005",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-6-1-006",
+      "method": "figure-accumulation",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-1-007",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-6-1-008",
+      "method": "figure-accumulation",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-1-010",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-6-2-001",
+      "method": "table-riemann",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-2-002",
+      "method": "table-riemann",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-2-003",
+      "method": "riemann-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-2-004",
+      "method": "table-riemann",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-2-008",
+      "method": "riemann-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-2-009",
+      "method": "riemann-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-2-010",
+      "method": "figure-riemann",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -1784,7 +1854,15 @@
     "calc-ab-5-12-006",
     "calc-ab-5-12-008",
     "calc-ab-5-12-009",
-    "calc-ab-5-12-010"
+    "calc-ab-5-12-010",
+    "calc-ab-6-1-003",
+    "calc-ab-6-1-004",
+    "calc-ab-6-1-009",
+    "calc-ab-6-1-011",
+    "calc-ab-6-2-005",
+    "calc-ab-6-2-006",
+    "calc-ab-6-2-007",
+    "calc-ab-6-2-011"
   ],
   "humanReviewPerformed": false,
   "limitations": [

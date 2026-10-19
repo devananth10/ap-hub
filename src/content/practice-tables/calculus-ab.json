@@ -974,5 +974,113 @@
         "2"
       ]
     ]
+  },
+  "calc-ab-6-2-001": {
+    "caption": "Values of a continuous rate r at the nonuniform partition endpoints",
+    "headers": [
+      "t (min)",
+      "r(t) (L/min)"
+    ],
+    "rows": [
+      [
+        "0",
+        "2"
+      ],
+      [
+        "1",
+        "5"
+      ],
+      [
+        "3",
+        "4"
+      ],
+      [
+        "6",
+        "8"
+      ]
+    ]
+  },
+  "calc-ab-6-2-002": {
+    "caption": "Values of a continuous delivery rate at the specified partition endpoints",
+    "headers": [
+      "t (hours)",
+      "r(t) (kg/hour)"
+    ],
+    "rows": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "2",
+        "4"
+      ],
+      [
+        "5",
+        "6"
+      ],
+      [
+        "6",
+        "3"
+      ]
+    ]
+  },
+  "calc-ab-6-2-004": {
+    "caption": "Function values at nonuniform trapezoid endpoints",
+    "headers": [
+      "x",
+      "f(x)"
+    ],
+    "rows": [
+      [
+        "0",
+        "2"
+      ],
+      [
+        "1",
+        "6"
+      ],
+      [
+        "4",
+        "4"
+      ]
+    ]
+  },
+  "calc-ab-6-2-007": {
+    "caption": "Only the endpoint values are known; no monotonicity is assumed",
+    "headers": [
+      "x",
+      "f(x)"
+    ],
+    "rows": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "2"
+      ]
+    ]
+  },
+  "calc-ab-6-2-011": {
+    "caption": "Left and right sums for the same strictly increasing continuous function",
+    "headers": [
+      "Equal subintervals n",
+      "Left sum Lₙ",
+      "Right sum Rₙ"
+    ],
+    "rows": [
+      [
+        "4",
+        "7",
+        "11"
+      ],
+      [
+        "8",
+        "8",
+        "10"
+      ]
+    ]
   }
 }

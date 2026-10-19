@@ -39,7 +39,7 @@ export function validateCalculusBank() {
       if(question.prompt.includes('table below')) {
         const table=practiceTables[question.id];assert.ok(table,question.id+' missing table');
         assert.equal(semanticHash(table),review.tableSha256,'Table changed after review: '+question.id);
-        assert.ok(table.caption && table.headers.length>=2 && table.rows.length>=3);
+        assert.ok(table.caption && table.headers.length>=2 && table.rows.length>=2);
         assert.ok(table.rows.every(row=>row.length===table.headers.length&&row.every(value=>typeof value==='string'&&value.length>0)));
       }
       if(question.prompt.includes('graph below')) {

@@ -1380,5 +1380,133 @@
     ],
     "dots": [],
     "description": "This is f′, with straight segments through (−1,3),(0,0),(1,−1),(2,0),(3,3). It is zero at 0 and 2, decreasing until its minimum at 1, then increasing."
+  },
+  "calc-ab-6-1-001": {
+    "xRange": [
+      0,
+      6
+    ],
+    "yRange": [
+      -2,
+      4
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            -2
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": [],
+    "description": "The graphed f is velocity v in m/s versus time t in seconds. Straight segments join (0,0), (2,4), (4,0) and (6,−2). The region from 0 to 4 is a triangle above the time axis; from 4 to 6 is a triangle below it."
+  },
+  "calc-ab-6-1-006": {
+    "xRange": [
+      0,
+      6
+    ],
+    "yRange": [
+      -3,
+      3
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            0,
+            3
+          ],
+          [
+            6,
+            -3
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": [],
+    "description": "The graphed f is velocity v in m/s versus time t in seconds. One straight segment joins (0,3) to (6,−3), crossing the time axis at t=3. The two triangular regions have equal areas on opposite sides of that axis."
+  },
+  "calc-ab-6-1-008": {
+    "xRange": [
+      0,
+      4
+    ],
+    "yRange": [
+      0,
+      4
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": [],
+    "description": "The graphed f is a net queue growth rate in people per hour versus time t in hours. Straight segments join (0,1), (2,3) and (4,1). All rates are positive."
+  },
+  "calc-ab-6-2-010": {
+    "xRange": [
+      0,
+      4
+    ],
+    "yRange": [
+      0,
+      5
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": [],
+    "description": "This graph is f, made of straight segments joining (0,2), (2,4) and (4,2). The midpoints of [0,2] and [2,4] have heights f(1)=3 and f(3)=3."
   }
 }

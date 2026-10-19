@@ -1,0 +1,233 @@
+{
+  "topicNumber": "6.2",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "222921feadcf7ca769309f26cc84d8fe806eb5eb560aead6a2cf8f154042e510",
+  "scopeReview": "CED LIM-5.A.1–4: graphical, tabular, analytic and verbal integral estimates; left/right/midpoint/trapezoidal methods with uniform and nonuniform partitions; with/without calculator; justified over/underestimation from interval-wide behavior. All tables and graphs are local originals, and finite samples are not asserted to establish global shape.",
+  "varietyReview": "Nonuniform left rate sum, nonuniform right delivery sum, polynomial midpoint estimate, unequal trapezoids, decreasing endpoint bounds, strict-concavity error directions, finite-data insufficiency, negative signed right estimate, rounded radical calculator estimate, actual graph midpoints/exact linear geometry, and intersected monotonicity bounds. Five complete tables and one original graph; no unsupported missing representations.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-6-2-001",
+      "independentReasoning": "Recompute contributions one interval at a time: 2 L, 10 L and 12 L, totaling 24. The same table gives right estimate 5+8+24=37 and trapezoidal estimate (24+37)/2=30.5. These are estimates of an unknown continuous rate, not exact accumulated volumes.",
+      "optionReview": [
+        "This is the right-endpoint sum, not the requested left sum.",
+        "This adds the three left heights without their widths.",
+        "Use left heights 2, 5 and 4 with respective widths 1, 2 and 3.",
+        "This averages left and right sums and gives the trapezoidal estimate."
+      ],
+      "check": {
+        "type": "table-riemann",
+        "partition": [
+          0,
+          1,
+          3,
+          6
+        ],
+        "method": "left"
+      },
+      "tableSha256": "92cb56d31fdf6f4ef63388b14d95c9067bbb06dd18541a38ec20deb1fcf42990"
+    },
+    {
+      "questionId": "calc-ab-6-2-002",
+      "independentReasoning": "Separately enumerate intervals [0,2], [2,5], [5,6] and their chosen endpoint sample. The left sum is 2·1+3·4+1·6=20; averaging it with 29 gives 24.5, matching the separate trapezoid distractor. All mass units come from kg/hour times hours.",
+      "optionReview": [
+        "This uses the left endpoints instead.",
+        "This is the trapezoidal estimate, not the right sum.",
+        "This sums every listed rate without multiplying by time widths.",
+        "Use endpoint heights 4, 6 and 3 with widths 2, 3 and 1."
+      ],
+      "check": {
+        "type": "table-riemann",
+        "partition": [
+          0,
+          2,
+          5,
+          6
+        ],
+        "method": "right"
+      },
+      "tableSha256": "ff0c6b1d6aa0a29d5c94e0693a3e1457b8497df58f50782dbbf5df3c76d4698c"
+    },
+    {
+      "questionId": "calc-ab-6-2-003",
+      "independentReasoning": "Evaluate the original expression independently at the two midpoints: 1²=1 and 3²=9. Separate endpoint estimates give L=8 and R=40, whose average 24 is the trapezoidal estimate. Since x² is strictly convex, the midpoint estimate is below the true area.",
+      "optionReview": [
+        "The width is 2 and the sample inputs are 1 and 3.",
+        "This is the left sum using heights at 0 and 2.",
+        "This is the right sum using heights at 2 and 4.",
+        "This is the corresponding trapezoidal sum."
+      ],
+      "check": {
+        "type": "riemann-expression",
+        "partition": [
+          0,
+          2,
+          4
+        ],
+        "method": "midpoint",
+        "expression": [
+          "pow",
+          "x",
+          2
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-2-004",
+      "independentReasoning": "Compute the nonuniform left and right sums directly: L=1·2+3·6=20 and R=1·6+3·4=18. Their average is 19, independently agreeing with the two-trapezoid calculation. No linear interpolation is asserted to be the exact original function.",
+      "optionReview": [
+        "This is the nonuniform left sum, not the trapezoidal sum.",
+        "The two trapezoid contributions are 1(2+6)/2 and 3(6+4)/2.",
+        "This is the right sum; it also results from incorrectly imposing equal widths on the trapezoids.",
+        "This merely adds the three sampled heights."
+      ],
+      "check": {
+        "type": "table-riemann",
+        "partition": [
+          0,
+          1,
+          4
+        ],
+        "method": "trapezoid"
+      },
+      "tableSha256": "57924d39153a6fc0c381d00a4134063682e81ad5c9418a0a76de1e841a5aee2e"
+    },
+    {
+      "questionId": "calc-ab-6-2-005",
+      "independentReasoning": "Apply f(right)<f(x)<f(left) at every interior x and multiply by the positive width, then sum. This interval-wide argument does not infer monotonicity from a few samples and does not require equal widths or concavity assumptions.",
+      "optionReview": [
+        "These are the reversed inequalities for a decreasing function.",
+        "Each right rectangle lies below the curve in its subinterval.",
+        "On each interval the left height exceeds interior heights and the right height is smaller.",
+        "Strict decrease on nonzero intervals prevents endpoint rectangles from matching the entire area."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The left sum overestimates and the right sum underestimates."
+      }
+    },
+    {
+      "questionId": "calc-ab-6-2-006",
+      "independentReasoning": "Use the defining strict concavity inequality on each chord for the trapezoid result. For the midpoint result pair inputs m−u and m+u: [f(m−u)+f(m+u)]/2<f(m) for u>0. Integration of those paired inequalities proves the error direction even if f takes negative values.",
+      "optionReview": [
+        "Those inequalities apply to strictly concave-up functions.",
+        "The trapezoidal chords lie below a concave-down curve.",
+        "Concavity determines these error directions without a monotonicity requirement.",
+        "Strict concavity down puts chords below the curve and the midpoint rectangle above its average height."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The midpoint estimate is too large and the trapezoidal estimate too small."
+      }
+    },
+    {
+      "questionId": "calc-ab-6-2-007",
+      "independentReasoning": "Independently compute the two geometric trapezoids for that continuous polyline: (1/2)(1+7/2)/2=9/8 and (1/2)(7/2+2)/2=11/8, totaling 20/8=5/2>2. A polyline through (0,1), (1/2,−1/2), (1,2) instead has signed areas 1/8 and 3/8, totaling 1/2<1. No positivity assumption was stated. These exact geometric counterexamples need no later antiderivative technique and prove that endpoints alone give neither bound.",
+      "optionReview": [
+        "Continuity permits an interior bulge or dip that changes the integral without changing either endpoint.",
+        "Two samples cannot establish monotonicity between them.",
+        "Many nonlinear continuous curves pass through the same two endpoints.",
+        "There is no universal error direction without additional shape information."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "No; the two endpoint values alone do not control the interior values."
+      },
+      "tableSha256": "d633d3f18ed37fe2c9d9e25a2ade0a587a0c4256658de62513633544947fa3a0"
+    },
+    {
+      "questionId": "calc-ab-6-2-008",
+      "independentReasoning": "Evaluate the original linear expression at each endpoint. Geometric signed area for the whole interval is 2(−4−2)/2=−6, checking the overestimate as the less negative number. Left sampling separately yields −7 and unsigned right rectangles yield +5.",
+      "optionReview": [
+        "This discards the signs and estimates unsigned area instead.",
+        "The width is 1 and the right heights are −3 and −2.",
+        "This is the left sum using heights −4 and −3.",
+        "This is the exact signed area and trapezoidal value, not the requested right sum."
+      ],
+      "check": {
+        "type": "riemann-expression",
+        "partition": [
+          0,
+          1,
+          2
+        ],
+        "method": "right",
+        "expression": [
+          "sub",
+          "x",
+          4
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-2-009",
+      "independentReasoning": "Independently evaluate √2≈1.414213562 and √5≈2.236067977, giving 4.650281539 before rounding. The right sum is about 6.812559200, midpoint sum about 5.613392030, and their endpoint trapezoid average about 5.731420370. The model recomputes the original function and permits only the stated rounding error.",
+      "optionReview": [
+        "This is the right sum using √2, √5 and √10.",
+        "This is the midpoint sum using inputs 0.5, 1.5 and 2.5.",
+        "The left sample heights are 1, √2 and √5, each with width 1.",
+        "This is the trapezoidal estimate from the endpoint sums."
+      ],
+      "check": {
+        "type": "riemann-expression",
+        "partition": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "method": "left",
+        "expression": [
+          "sqrt",
+          [
+            "add",
+            1,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ]
+        ],
+        "tolerance": 0.00051
+      }
+    },
+    {
+      "questionId": "calc-ab-6-2-010",
+      "independentReasoning": "Interpolate within each actual graph segment rather than reading heights at the peak or endpoints. Each interval has average endpoint height (2+4)/2=3, so the geometric area is 6 per segment. This exactness is special to the piecewise-linear alignment, not a claim about every midpoint estimate.",
+      "optionReview": [
+        "This uses the left height 2 on both intervals instead of their midpoint heights.",
+        "This uses the peak height 4 on the entire interval.",
+        "This adds the midpoint heights but omits their widths.",
+        "The midpoint heights are 3 and 3, multiplied by width 2."
+      ],
+      "check": {
+        "type": "figure-riemann",
+        "partition": [
+          0,
+          2,
+          4
+        ],
+        "method": "midpoint",
+        "figureSha256": "e33382428a76a1edfab2c569a547b44c8063640ed2122b9c6418ce223441c3e2"
+      },
+      "figureSha256": "e33382428a76a1edfab2c569a547b44c8063640ed2122b9c6418ce223441c3e2"
+    },
+    {
+      "questionId": "calc-ab-6-2-011",
+      "independentReasoning": "Apply the increasing-function rectangle inequalities independently for n=4 and n=8, then intersect the two open ranges. The intersection is (8,10). These bounds do not establish equality with their midpoint; the shape between sampling points remains unspecified. No exact integral or finite-sample curve shape is inferred beyond the given global monotonicity.",
+      "optionReview": [
+        "The finer partition’s left and right sums give the tighter guaranteed bounds.",
+        "The midpoint of two bounds need not equal the integral.",
+        "An increasing function lies above its left sum.",
+        "An increasing function lies below its right sum."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "8<I<10"
+      },
+      "tableSha256": "5a65c54f2547c1770edd22fbe8f3712d27a24f70aeedd507e7ff4a3057397608"
+    }
+  ]
+}

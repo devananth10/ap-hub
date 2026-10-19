@@ -8,6 +8,7 @@ import {validateCalculusBank} from '../scripts/check-calculus-bank.mjs';
 import {verifyCalculusQuestion,figureLimit,evaluateExpression,numericalOption,rationalBehavior,rationalPoleSides,rationalEndLimit,intervalOption,domainMatches} from '../scripts/check-calculus-math.mjs';
 import {practiceFigures} from '../src/lib/practice-figures.ts';
 import {completeCandidateRows} from '../scripts/check-calculus-math.mjs';
+import {piecewiseArea,riemannApproximation} from '../scripts/check-calculus-math.mjs';
 test('official Calculus AB inventory keeps all eight old IDs and excludes BC-only gaps',()=>{
   const course=courses.find(course=>course.id==='calculus-ab');
   const topics=course.units.flatMap(unit=>unit.topics);
@@ -333,4 +334,40 @@ test('implicit curvature corroboration includes the mixed term and distinguishes
   verifyCalculusQuestion(batch.questions[6],qa.questions[6]);verifyCalculusQuestion(batch.questions[10],qa.questions[10]);
   const wrong=structuredClone(batch.questions[6]);wrong.correctIndex=wrong.options.indexOf('−1');
   assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[6]),/implicit slope key/);
+});
+test('piecewise rate area clips intervals and splits unsigned area at interior zero crossings',()=>{
+  const points=[[0,3],[6,-3]];
+  assert.equal(piecewiseArea(points,0,6),0);assert.equal(piecewiseArea(points,0,6,true),9);
+  assert.equal(piecewiseArea(points,2,5),-1.5);assert.equal(piecewiseArea(points,2,5,true),2.5);
+  assert.equal(piecewiseArea(points,0,1),2.5);
+  assert.throws(()=>piecewiseArea(points,5,2),/interval must increase/);
+  assert.throws(()=>piecewiseArea(points,-1,2),/outside graph/);
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='integrals');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-6-1.json','utf8'));
+  const wrong=structuredClone(batch.questions[0]);wrong.correctIndex=wrong.options.indexOf('20 m');
+  assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[0]),/graph key/);
+});
+test('Riemann estimates use each width, method and actual table sample rather than an answer label',()=>{
+  const rows=new Map([[0,2],[1,5],[3,4],[6,8]]),partition=[0,1,3,6];
+  assert.equal(riemannApproximation(partition,'left',x=>rows.get(x)),24);
+  assert.equal(riemannApproximation(partition,'right',x=>rows.get(x)),37);
+  assert.equal(riemannApproximation(partition,'trapezoid',x=>rows.get(x)),30.5);
+  assert.equal(riemannApproximation([0,2,4],'midpoint',x=>x*x),20);
+  assert.throws(()=>riemannApproximation([0,2,1],'left',x=>x),/Invalid Riemann partition/);
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-6-2');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-6-2.json','utf8'));
+  const wrong=structuredClone(batch.questions[0]);wrong.correctIndex=wrong.options.indexOf('37');
+  assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[0]),/Riemann key/);
+  const bad=structuredClone(qa.questions[0]);bad.check.partition=[0,1,3,5];bad.check.method='right';
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[0],bad),/sample missing/);
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[0],{...qa.questions[0],tableSha256:'stale'}),/Table changed/);
+});
+test('graph midpoint sampling and rounded analytic sums reject alternate or equivalent answer keys',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-6-2');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-6-2.json','utf8'));
+  verifyCalculusQuestion(batch.questions[8],qa.questions[8]);verifyCalculusQuestion(batch.questions[9],qa.questions[9]);
+  const wrong=structuredClone(batch.questions[9]);wrong.correctIndex=wrong.options.indexOf('6');
+  assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[9]),/graph key/);
+  const duplicate=structuredClone(batch.questions[8]);duplicate.options[(duplicate.correctIndex+1)%4]='4.6500';
+  assert.throws(()=>verifyCalculusQuestion(duplicate,qa.questions[8]),/unique Riemann result/);
 });

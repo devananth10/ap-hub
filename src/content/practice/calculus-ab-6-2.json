@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 6,
+  "topicId": "topic-6-2",
+  "questions": [
+    {
+      "id": "calc-ab-6-2-001",
+      "prompt": "Using the table below and the three subintervals [0,1], [1,3] and [3,6], what is the left Riemann-sum estimate for the accumulated volume, in L?",
+      "options": [
+        "37",
+        "11",
+        "24",
+        "30.5"
+      ],
+      "correctIndex": 2,
+      "explanation": "Each rectangle needs its own width. The left estimate is 1·r(0)+2·r(1)+3·r(3)=1·2+2·5+3·4=24 L. The unequal widths prohibit multiplying all sampled heights by a single common interval length. A: This is the right-endpoint sum, not the requested left sum. B: This adds the three left heights without their widths. C: Use left heights 2, 5 and 4 with respective widths 1, 2 and 3. D: This averages left and right sums and gives the trapezoidal estimate."
+    },
+    {
+      "id": "calc-ab-6-2-002",
+      "prompt": "Use the table below and the partition 0, 2, 5, 6 hours. What is the right Riemann-sum estimate for the delivered mass, in kg?",
+      "options": [
+        "20",
+        "24.5",
+        "14",
+        "29"
+      ],
+      "correctIndex": 3,
+      "explanation": "The right heights are r(2)=4, r(5)=6 and r(6)=3. Multiply by the individual widths: 2·4+3·6+1·3=8+18+3=29 kg. A rate sample at time zero is not used in a right sum for this partition. A: This uses the left endpoints instead. B: This is the trapezoidal estimate, not the right sum. C: This sums every listed rate without multiplying by time widths. D: Use endpoint heights 4, 6 and 3 with widths 2, 3 and 1."
+    },
+    {
+      "id": "calc-ab-6-2-003",
+      "prompt": "For f(x)=x² on [0,4], what is the midpoint Riemann sum using two equal subintervals?",
+      "options": [
+        "20",
+        "8",
+        "40",
+        "24"
+      ],
+      "correctIndex": 0,
+      "explanation": "The subintervals are [0,2] and [2,4], each of width 2. Their midpoints are 1 and 3, so the estimate is 2[f(1)+f(3)]=2(1+9)=20. Midpoint inputs are the centers of the subintervals, not the centers of the listed function heights. A: The width is 2 and the sample inputs are 1 and 3. B: This is the left sum using heights at 0 and 2. C: This is the right sum using heights at 2 and 4. D: This is the corresponding trapezoidal sum."
+    },
+    {
+      "id": "calc-ab-6-2-004",
+      "prompt": "Using the table below, what is the trapezoidal estimate for the signed area from x=0 to x=4, with subintervals [0,1] and [1,4]?",
+      "options": [
+        "20",
+        "19",
+        "18",
+        "12"
+      ],
+      "correctIndex": 1,
+      "explanation": "Average endpoint heights separately on each interval and multiply by that interval’s width. The estimate is 1·(2+6)/2+3·(6+4)/2=4+15=19. Using one width for both trapezoids would ignore the nonuniform partition. A: This is the nonuniform left sum, not the trapezoidal sum. B: The two trapezoid contributions are 1(2+6)/2 and 3(6+4)/2. C: This is the right sum; it also results from incorrectly imposing equal widths on the trapezoids. D: This merely adds the three sampled heights."
+    },
+    {
+      "id": "calc-ab-6-2-005",
+      "prompt": "A function f is continuous, positive and strictly decreasing on [a,b], where a<b. Using the same partition, how do its left and right Riemann sums compare with its exact area?",
+      "options": [
+        "The left sum underestimates and the right sum overestimates.",
+        "Both sums must overestimate.",
+        "The left sum overestimates and the right sum underestimates.",
+        "Both sums equal the exact area for every such f."
+      ],
+      "correctIndex": 2,
+      "explanation": "On each subinterval, decreasing f has its largest height at the left endpoint and smallest at the right. Thus every left rectangle is above the interior curve and every right rectangle below it. Adding the strict interval inequalities gives left sum > exact area > right sum. A: These are the reversed inequalities for a decreasing function. B: Each right rectangle lies below the curve in its subinterval. C: On each interval the left height exceeds interior heights and the right height is smaller. D: Strict decrease on nonzero intervals prevents endpoint rectangles from matching the entire area."
+    },
+    {
+      "id": "calc-ab-6-2-006",
+      "prompt": "A twice differentiable function has f″(x)<0 throughout [a,b], with a<b. Using any partition, which comparison is correct for its midpoint and trapezoidal estimates of the definite integral?",
+      "options": [
+        "The midpoint estimate is too small and the trapezoidal estimate too large.",
+        "Both must be too large because f″ is negative.",
+        "The comparison cannot be known unless f is also increasing.",
+        "The midpoint estimate is too large and the trapezoidal estimate too small."
+      ],
+      "correctIndex": 3,
+      "explanation": "For concave-down f, the chord on each subinterval lies below the curve, making its trapezoid an underestimate. The mean of symmetric values about a midpoint is below the midpoint value, so the midpoint rectangle overestimates the interval integral. Summing preserves both inequalities. A: Those inequalities apply to strictly concave-up functions. B: The trapezoidal chords lie below a concave-down curve. C: Concavity determines these error directions without a monotonicity requirement. D: Strict concavity down puts chords below the curve and the midpoint rectangle above its average height."
+    },
+    {
+      "id": "calc-ab-6-2-007",
+      "prompt": "The table below gives only f(0)=1 and f(1)=2 for an otherwise unknown continuous function on [0,1]. Its one-interval left and right sums are 1 and 2. Must the definite integral lie between 1 and 2?",
+      "options": [
+        "No; the two endpoint values alone do not control the interior values.",
+        "Yes; increasing endpoint samples prove the function increases everywhere.",
+        "Yes; continuity forces the graph to be the straight chord.",
+        "No; every continuous function has an integral larger than its right sum."
+      ],
+      "correctIndex": 0,
+      "explanation": "Endpoint sums bound the integral only with an additional hypothesis such as monotonicity over the whole interval. A continuous graph made of straight segments through (0,1), (1/2,7/2) and (1,2) has the listed endpoints but signed area 5/2, outside the proposed bounds. The interior bulge is not controlled by the two samples. A: Continuity permits an interior bulge or dip that changes the integral without changing either endpoint. B: Two samples cannot establish monotonicity between them. C: Many nonlinear continuous curves pass through the same two endpoints. D: There is no universal error direction without additional shape information."
+    },
+    {
+      "id": "calc-ab-6-2-008",
+      "prompt": "For f(x)=x−4 on [0,2], what is the right Riemann sum using two equal subintervals? Keep the sign of the function values.",
+      "options": [
+        "5",
+        "−5",
+        "−7",
+        "−6"
+      ],
+      "correctIndex": 1,
+      "explanation": "The subinterval width is 1, and the right sample inputs are 1 and 2. Thus R=1[f(1)+f(2)]=−3−2=−5. Because f increases, this right estimate is larger than the exact signed area −6, even though both values are negative. A: This discards the signs and estimates unsigned area instead. B: The width is 1 and the right heights are −3 and −2. C: This is the left sum using heights −4 and −3. D: This is the exact signed area and trapezoidal value, not the requested right sum."
+    },
+    {
+      "id": "calc-ab-6-2-009",
+      "prompt": "Using a calculator as needed, estimate the area under f(x)=√(1+x²) on [0,3] by a left Riemann sum with three equal subintervals. Round to three decimal places.",
+      "options": [
+        "6.813",
+        "5.613",
+        "4.650",
+        "5.731"
+      ],
+      "correctIndex": 2,
+      "explanation": "The width is (3−0)/3=1, so the left sum is f(0)+f(1)+f(2)=1+√2+√5≈4.650281540. Rounding once at the end gives 4.650. The square root applies to the whole expression 1+x² at each selected input. A: This is the right sum using √2, √5 and √10. B: This is the midpoint sum using inputs 0.5, 1.5 and 2.5. C: The left sample heights are 1, √2 and √5, each with width 1. D: This is the trapezoidal estimate from the endpoint sums."
+    },
+    {
+      "id": "calc-ab-6-2-010",
+      "prompt": "The graph below consists of the specified straight segments. What is its midpoint Riemann sum on [0,4] using the two subintervals [0,2] and [2,4]?",
+      "options": [
+        "8",
+        "16",
+        "6",
+        "12"
+      ],
+      "correctIndex": 3,
+      "explanation": "Read the midpoint heights f(1)=3 and f(3)=3 from the straight segments. The midpoint sum is 2·3+2·3=12. In this particular graph each subinterval is linear, so its midpoint rectangle also happens to equal that segment’s exact trapezoidal area. A: This uses the left height 2 on both intervals instead of their midpoint heights. B: This uses the peak height 4 on the entire interval. C: This adds the midpoint heights but omits their widths. D: The midpoint heights are 3 and 3, multiplied by width 2."
+    },
+    {
+      "id": "calc-ab-6-2-011",
+      "prompt": "The table below gives endpoint sums for one continuous strictly increasing function on a fixed interval [a,b]. If I is its definite integral, which is the strongest conclusion listed?",
+      "options": [
+        "8<I<10",
+        "I=9",
+        "I<8",
+        "I>10"
+      ],
+      "correctIndex": 0,
+      "explanation": "Strict increase gives Lₙ<I<Rₙ on every nonzero partition interval. The four-interval estimates bound I between 7 and 11; the eight-interval estimates improve that to 8<I<10. The bounds do not determine an exact value such as their midpoint. A: The finer partition’s left and right sums give the tighter guaranteed bounds. B: The midpoint of two bounds need not equal the integral. C: An increasing function lies above its left sum. D: An increasing function lies below its right sum."
+    }
+  ]
+}

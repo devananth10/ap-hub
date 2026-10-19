@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 6,
+  "topicId": "integrals",
+  "questions": [
+    {
+      "id": "calc-ab-6-1-001",
+      "prompt": "The graph below shows a particle’s velocity v(t), in m/s, for 0≤t≤6 seconds. Its position at t=0 is 10 m. What is its position at t=6?",
+      "options": [
+        "6 m",
+        "16 m",
+        "20 m",
+        "4 m"
+      ],
+      "correctIndex": 1,
+      "explanation": "The triangle above the axis has area (1/2)·4·4=8 m. The triangle below has area (1/2)·2·2=2 m and contributes negatively. Displacement is 8−2=6 m, so the final position is 10+6=16 m. The velocity value at the final instant is not a displacement. A: This is the displacement alone, omitting the initial position. B: Signed velocity area gives displacement 8−2=6 m, which is added to the initial position. C: This adds the two unsigned areas and confuses distance with displacement. D: This subtracts the net displacement instead of adding it."
+    },
+    {
+      "id": "calc-ab-6-1-002",
+      "prompt": "A tank initially holds 30 L. Water enters at a constant 7 L/min and leaves at a constant 9 L/min for 3 minutes. What amount of water remains at the end?",
+      "options": [
+        "36 L",
+        "6 L",
+        "24 L",
+        "−6 L"
+      ],
+      "correctIndex": 2,
+      "explanation": "Use the net rate, inflow minus outflow: 7−9=−2 L/min. Over 3 minutes the signed rectangular area is −2·3=−6 L. The tank’s amount is therefore 30−6=24 L. It stays positive throughout, so there is no empty-tank interruption of the stated flow. A: This reverses the direction of the net flow. B: This is the magnitude of the change, not the remaining amount. C: The net rate is −2 L/min, producing a change of −6 L. D: This is the signed change, omitting the positive initial amount."
+    },
+    {
+      "id": "calc-ab-6-1-003",
+      "prompt": "A population changes at a constant rate of 4 animals per day for 6 days. Its initial size is not given. What does the area 4·6 represent?",
+      "options": [
+        "A final population of exactly 24 animals.",
+        "An increase of 24 animals per day.",
+        "An acceleration of 24 animals per day squared.",
+        "An increase of 24 animals, not a specified final population."
+      ],
+      "correctIndex": 3,
+      "explanation": "The rate graph is a rectangle of height 4 animals/day and width 6 days. Its area is a positive change of 24 animals. A final size would be the unknown initial population plus 24, so the area alone cannot determine that size. A: That would additionally require an initial population of zero. B: Multiplication by days removes the per-day unit. C: Accumulating a population rate does not differentiate it. D: Rate times elapsed time measures the change; the initial population is still needed for the total."
+    },
+    {
+      "id": "calc-ab-6-1-004",
+      "prompt": "A temperature changes at −2 °C/hour for the first 2 hours and at +1 °C/hour for the next 4 hours. Which statement must be true?",
+      "options": [
+        "It returns to its starting temperature, although it was not constant.",
+        "It stays constant throughout the 6 hours.",
+        "It finishes 8 °C warmer than it started.",
+        "It finishes 4 °C colder than it started."
+      ],
+      "correctIndex": 0,
+      "explanation": "Cooling contributes (−2)(2)=−4 °C, and warming contributes (1)(4)=+4 °C. The net change is zero. The temperature first falls and then rises by the same amount, so its final value equals the starting value without being constant during the interval. A: The signed changes are −4 °C and +4 °C, which cancel. B: Zero net change does not prevent intermediate decreases and increases. C: This adds both magnitudes and discards the cooling sign. D: This counts only the first part and ignores the later warming."
+    },
+    {
+      "id": "calc-ab-6-1-005",
+      "prompt": "For production quantities 10≤q≤18, marginal cost C′(q) is a constant 7 dollars per item. If C(10)=120 dollars, what is C(18), in dollars?",
+      "options": [
+        "56",
+        "176",
+        "246",
+        "127"
+      ],
+      "correctIndex": 1,
+      "explanation": "Marginal cost is the rate of total cost with respect to quantity. The interval width is 18−10=8 items, so the rectangular rate area is 7·8=56 dollars. Add it to the given cost: C(18)=120+56=176 dollars. A: This is only the accumulated cost change. B: The additional eight items increase cost by 7·8=56 dollars. C: This incorrectly charges 7 dollars for all eighteen items on top of C(10). D: This charges for only one additional item rather than eight."
+    },
+    {
+      "id": "calc-ab-6-1-006",
+      "prompt": "The graph below is velocity in m/s over 0≤t≤6 seconds. What is the particle’s net change in position, in m, during this interval?",
+      "options": [
+        "9",
+        "−3",
+        "0",
+        "18"
+      ],
+      "correctIndex": 2,
+      "explanation": "The velocity crosses zero at t=3. The first triangular area is (1/2)·3·3=4.5 m and the second contributes −4.5 m. Their signed sum is zero, so the particle returns to its starting position despite moving a total distance of 9 m. A: This is the total distance, obtained by adding both unsigned areas. B: This is the final velocity value, not accumulated position change. C: The equal positive and negative triangular velocity areas cancel. D: This ignores the triangular shape and the sign change."
+    },
+    {
+      "id": "calc-ab-6-1-007",
+      "prompt": "A pump delivers water at a constant 120 L/hour for 15 minutes. How much water does it deliver, in L?",
+      "options": [
+        "1800",
+        "8",
+        "120",
+        "30"
+      ],
+      "correctIndex": 3,
+      "explanation": "The time unit must match the rate unit before multiplying. Convert 15 minutes to 15/60=1/4 hour. The accumulated volume is the rate-times-time rectangle 120·(1/4)=30 L. Multiplying 120 by the unconverted number 15 would use inconsistent units. A: This treats 15 minutes as 15 hours. B: This divides a rate by time rather than accumulating it. C: This is the hourly delivery, not the quarter-hour amount. D: Fifteen minutes is one quarter of an hour, so multiply 120 by 1/4."
+    },
+    {
+      "id": "calc-ab-6-1-008",
+      "prompt": "The graph below is the net rate of change of a queue, in people per hour, for 0≤t≤4 hours. The queue starts with 12 people. Using the straight segments exactly, how many people are in the queue at t=4?",
+      "options": [
+        "20",
+        "8",
+        "24",
+        "13"
+      ],
+      "correctIndex": 0,
+      "explanation": "Split the rate region into a rectangle of width 4 and height 1, plus a triangle of base 4 and extra height 2. The change is 4·1+(1/2)·4·2=8 people. All rates are positive, so the queue grows to 12+8=20 people. A: The signed rate area is 8 people, added to the starting 12. B: This is the change rather than the final queue size. C: This uses the peak rate 3 for all four hours. D: This adds the final rate value rather than its accumulated area."
+    },
+    {
+      "id": "calc-ab-6-1-009",
+      "prompt": "A thin rod has constant linear mass density 2 g/cm from x=0 to x=5 cm. What mass is represented by the area under its density graph over that interval?",
+      "options": [
+        "10 g/cm",
+        "10 g",
+        "2 g",
+        "50 g"
+      ],
+      "correctIndex": 1,
+      "explanation": "The graph is a rectangle of height 2 g/cm and width 5 cm. Its area is 2·5=10 g. Accumulation is not restricted to time: here integrating a mass-per-length rate along the rod produces mass, with the centimeter units cancelling. A: The length factor cancels the denominator centimeter. B: Density times length has units (g/cm)·cm=g. C: This copies the density number without multiplying by length. D: This treats length as squared, which is not the width of this one-dimensional interval."
+    },
+    {
+      "id": "calc-ab-6-1-010",
+      "prompt": "Over a time interval, a quantity’s rate graph encloses area 8 above the time axis and area 12 below it, both measured in the quantity’s units. What is the signed net change in the quantity?",
+      "options": [
+        "20",
+        "4",
+        "−4",
+        "12"
+      ],
+      "correctIndex": 2,
+      "explanation": "A below-axis rate decreases the accumulated quantity. Therefore the change is 8−12=−4. It finishes four units below its initial value. The two nonnegative geometric area magnitudes must receive opposite signs before being combined. A: This is the sum of magnitudes, not signed net change. B: This reverses which side of the axis contributes positively. C: Positive area contributes +8 and below-axis area contributes −12. D: This ignores the positive contribution."
+    },
+    {
+      "id": "calc-ab-6-1-011",
+      "prompt": "A stored quantity has a continuous rate r(t)<0 throughout an interval, but r(t) increases toward zero as time passes. Which conclusion is justified?",
+      "options": [
+        "The quantity must be increasing because the rate is increasing.",
+        "Its net change over the interval must be zero.",
+        "Its final value must be negative.",
+        "The quantity continues decreasing, with a less negative instantaneous rate."
+      ],
+      "correctIndex": 3,
+      "explanation": "Because the rate stays negative, every rate-area contribution is negative and the quantity decreases throughout. The rising rate means that decrease becomes less rapid. It need not cross zero, and the final stored amount cannot be determined without an initial value. A: Direction depends on the sign of the rate, not its trend. B: A continuous strictly negative rate over a nonzero interval has negative signed area. C: A negative change does not determine the final value without the initial amount. D: Increasing a negative rate does not make its accumulated change positive."
+    }
+  ]
+}

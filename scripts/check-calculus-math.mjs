@@ -117,6 +117,28 @@ export function completeCandidateRows(table) {
   for(let i=1;i<rows.length;i++)assert.notEqual(rows[i][1],rows[i-1][1],'Equal adjacent values require another critical candidate by Rolle or a constant interval');
   return rows;
 }
+export function piecewiseArea(points,start,end,absolute=false) {
+  assert.ok(Number.isFinite(start)&&Number.isFinite(end)&&start<end,'Area interval must increase');
+  assert.ok(points.length>=2&&points.every((p,i)=>p.length===2&&p.every(Number.isFinite)&&(!i||p[0]>points[i-1][0])),'Invalid piecewise-linear rate');
+  assert.ok(points[0][0]<=start&&end<=points.at(-1)[0],'Area interval outside graph');
+  let total=0;
+  for(let i=1;i<points.length;i++) {
+    const [x0,y0]=points[i-1],[x1,y1]=points[i],a=Math.max(start,x0),b=Math.min(end,x1);
+    if(a>=b)continue;
+    const value=x=>y0+(x-x0)*(y1-y0)/(x1-x0),ya=value(a),yb=value(b);
+    if(absolute&&ya*yb<0){const zero=a-ya*(b-a)/(yb-ya);total+=(Math.abs(ya)*(zero-a)+Math.abs(yb)*(b-zero))/2;}
+    else total+=(absolute?Math.abs(ya)+Math.abs(yb):ya+yb)*(b-a)/2;
+  }
+  return total;
+}
+export function riemannApproximation(partition,method,value) {
+  assert.ok(partition.length>=2&&partition.every((x,i)=>Number.isFinite(x)&&(!i||x>partition[i-1])),'Invalid Riemann partition');
+  assert.ok(['left','right','midpoint','trapezoid'].includes(method),'Unknown Riemann method');
+  return partition.slice(1).reduce((total,b,i)=>{
+    const a=partition[i],height=method==='left'?value(a):method==='right'?value(b):method==='midpoint'?value((a+b)/2):(value(a)+value(b))/2;
+    assert.ok(Number.isFinite(height),'Missing or invalid Riemann sample');return total+(b-a)*height;
+  },0);
+}
 export function verifyCalculusQuestion(question, review) {
   assert.equal(review.questionId,question.id);
   assert.equal(review.optionReview.length,4);
@@ -124,7 +146,18 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='function-jet') {
+  if (review.check.type==='table-riemann'||review.check.type==='riemann-expression') {
+    const c=review.check;
+    const table=practiceTables[question.id];
+    const value=x=>{
+      if(c.type==='riemann-expression')return evaluateExpression(c.expression,x);
+      const rows=table.rows.filter(r=>Number(r[0])===x);assert.equal(rows.length,1,'Required Riemann sample missing or repeated');
+      return Number(rows[0][1].replaceAll('−','-'));
+    };
+    const expected=riemannApproximation(c.partition,c.method,value),tolerance=c.tolerance??1e-10;
+    const matches=question.options.map(option=>Math.abs(numericalOption(option)-expected)<tolerance);
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique Riemann result');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' Riemann key');
+  } else if (review.check.type==='function-jet') {
     const c=review.check,x=c.inputX,f=a=>evaluateExpression(c.expression,a),h=0.001;
     const expected=[f(x),(f(x+0.0001)-f(x-0.0001))/0.0002,(f(x+h)-2*f(x)+f(x-h))/(h*h)];
     const matches=question.options.map(option=>{const jet=c.optionJets[option];assert.ok(Array.isArray(jet)&&jet.length===3);return jet.every((v,i)=>Math.abs(v-expected[i])<0.00001);});
@@ -375,7 +408,17 @@ export function verifyCalculusQuestion(question, review) {
     assert.equal(createHash('sha256').update(JSON.stringify(figure)).digest('hex'),review.check.figureSha256,'Graph changed after review: '+question.id);
     const actual=question.options.map(option=>option.startsWith('Does not exist')?'DNE':numericalOption(option));
     let matches;
-    if(review.check.type==='figure-constant-change') {
+    if(review.check.type==='figure-riemann') {
+      const c=review.check;assert.equal(figure.curves.length,1);const points=figure.curves[0].points;
+      piecewiseArea(points,c.partition[0],c.partition.at(-1));
+      const value=x=>{const i=points.findIndex((p,i)=>i&&points[i-1][0]<=x&&x<=p[0]);assert.ok(i>0);const [a,fa]=points[i-1],[b,fb]=points[i];return fa+(x-a)*(fb-fa)/(b-a);};
+      const expected=riemannApproximation(c.partition,c.method,value);
+      matches=actual.map(answer=>Math.abs(answer-expected)<1e-10);
+    } else if(review.check.type==='figure-accumulation') {
+      const c=review.check;assert.equal(figure.curves.length,1);
+      const expected=(c.initial??0)+(c.scale??1)*piecewiseArea(figure.curves[0].points,c.start,c.end,c.absolute??false);
+      matches=actual.map(answer=>Math.abs(answer-expected)<1e-10);
+    } else if(review.check.type==='figure-constant-change') {
       assert.equal(figure.curves.length,1);const points=figure.curves[0].points,value=points[0][1];
       assert.ok(points.every(p=>p[1]===value));assert.ok(figure.xRange[0]<=review.check.start&&review.check.start<review.check.end&&review.check.end<=figure.xRange[1]);
       matches=actual.map(answer=>Math.abs(answer-value*(review.check.end-review.check.start))<1e-10);
