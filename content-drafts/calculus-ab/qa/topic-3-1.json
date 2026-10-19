@@ -1,0 +1,473 @@
+{
+  "topicNumber": "3.1",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "c9244683e82f9ac0b3f94436638fefb6b97e3a8131a71fcf16a79303920876d9",
+  "scopeReview": "CED FUN-3.C.1 chain rule for compositions, including identification of inner/outer inputs. Uses previous basic derivatives. Trigonometry in radians and logarithm/root domains checked. No implicit or inverse derivative rules required.",
+  "varietyReview": "General hypotheses and evaluation, polynomial composite, fundamental trig limit, logarithm, exponential sign, actual two-row table composition, Leibniz rates, root/exponential composition, reversed composition order, error diagnosis and zero-inner-rate reasoning.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-3-1-001",
+      "independentReasoning": "Take g(x)=2x and f(u)=u³ at a=1. The original composite is 8x³ with derivative 24; the correct expression gives 3(2)²·2=24. The alternatives give 6,12 and 14 respectively, so none is a valid general replacement.",
+      "optionReview": [
+        "The outer derivative must be evaluated at g(a), not generally at a.",
+        "Differentiate the outer function at the inner output and multiply by the inner derivative.",
+        "The inner derivative is a multiplier, not the input to the outer derivative.",
+        "Composition rates multiply; the sum rule applies to a different operation."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f′(g(a))g′(a)"
+      }
+    },
+    {
+      "questionId": "calc-ab-3-1-002",
+      "independentReasoning": "Independently expand (3x²−1)⁴=81x⁸−108x⁶+54x⁴−12x²+1 and differentiate termwise. The resulting polynomial factors to the selected formula. Original-function differences at −1,1/2,1 corroborate its signs and coefficient.",
+      "optionReview": [
+        "This omits the derivative of the inner quadratic.",
+        "This fails to lower the outer power when differentiating.",
+        "The outer derivative 4(3x²−1)³ is multiplied by the inner derivative 6x.",
+        "This uses 3x instead of 6x as the quadratic derivative."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "pow",
+          [
+            "sub",
+            [
+              "mul",
+              3,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ],
+            1
+          ],
+          4
+        ],
+        "samplePoints": [
+          -1,
+          0.5,
+          1
+        ],
+        "step": 0.000001,
+        "tolerance": 0.0001,
+        "candidates": {
+          "24x(3x²−1)³": [
+            "mul",
+            24,
+            "x",
+            [
+              "pow",
+              [
+                "sub",
+                [
+                  "mul",
+                  3,
+                  [
+                    "pow",
+                    "x",
+                    2
+                  ]
+                ],
+                1
+              ],
+              3
+            ]
+          ],
+          "4(3x²−1)³": [
+            "mul",
+            4,
+            [
+              "pow",
+              [
+                "sub",
+                [
+                  "mul",
+                  3,
+                  [
+                    "pow",
+                    "x",
+                    2
+                  ]
+                ],
+                1
+              ],
+              3
+            ]
+          ],
+          "24x(3x²−1)⁴": [
+            "mul",
+            24,
+            "x",
+            [
+              "pow",
+              [
+                "sub",
+                [
+                  "mul",
+                  3,
+                  [
+                    "pow",
+                    "x",
+                    2
+                  ]
+                ],
+                1
+              ],
+              4
+            ]
+          ],
+          "12x(3x²−1)³": [
+            "mul",
+            12,
+            "x",
+            [
+              "pow",
+              [
+                "sub",
+                [
+                  "mul",
+                  3,
+                  [
+                    "pow",
+                    "x",
+                    2
+                  ]
+                ],
+                1
+              ],
+              3
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-3-1-003",
+      "independentReasoning": "The original defining quotient sin(5h)/h=5·sin(5h)/(5h) tends to 5 using the fundamental radian sine limit. A centered quotient of the original function independently corroborates this value.",
+      "optionReview": [
+        "This omits the multiplier from differentiating 5x.",
+        "This uses the original sine value instead of the derivative.",
+        "The sine derivative is positive cosine, not negative cosine.",
+        "The inner derivative contributes 5, and cos 0=1."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 0,
+        "step": 0.00001,
+        "expression": [
+          "sin",
+          [
+            "mul",
+            5,
+            "x"
+          ]
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-3-1-004",
+      "independentReasoning": "Rewrite the original increment using ln[( (x+h)²+4)/(x²+4)]. The inner ratio is 1+(2xh+h²)/(x²+4); the natural-log defining limit gives 2x/(x²+4). Original-function differences at −1,0,2 distinguish all options.",
+      "optionReview": [
+        "The logarithm derivative is the reciprocal of its input, multiplied by that input’s derivative 2x.",
+        "This omits the inner derivative 2x.",
+        "The denominator is the logarithm’s input, not the logarithm itself.",
+        "This differentiates only the input and omits the logarithm derivative."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "ln",
+          [
+            "add",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            4
+          ]
+        ],
+        "samplePoints": [
+          -1,
+          0,
+          2
+        ],
+        "step": 0.00001,
+        "tolerance": 0.00001,
+        "candidates": {
+          "2x/(x²+4)": [
+            "div",
+            [
+              "mul",
+              2,
+              "x"
+            ],
+            [
+              "add",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              4
+            ]
+          ],
+          "1/(x²+4)": [
+            "div",
+            1,
+            [
+              "add",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              4
+            ]
+          ],
+          "2x/ln(x²+4)": [
+            "div",
+            [
+              "mul",
+              2,
+              "x"
+            ],
+            [
+              "ln",
+              [
+                "add",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                4
+              ]
+            ]
+          ],
+          "2x": [
+            "mul",
+            2,
+            "x"
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-3-1-005",
+      "independentReasoning": "At 1/2 the original difference quotient is (e^(−2h)−1)/h. Factoring −2 and using the natural-exponential defining limit gives −2. Centered differences corroborate the exact result without differentiating the answer candidate.",
+      "optionReview": [
+        "This is the exponential height at 1/2 and omits the inner derivative.",
+        "The inner derivative is −2 and the exponential value at 1/2 is 1.",
+        "This loses the negative sign of the inner linear rate.",
+        "A zero exponent gives exponential value 1, not zero derivative."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 0.5,
+        "step": 0.00001,
+        "expression": [
+          "exp",
+          [
+            "sub",
+            1,
+            [
+              "mul",
+              2,
+              "x"
+            ]
+          ]
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-3-1-006",
+      "independentReasoning": "Follow the input mapping separately before multiplying rates. The inner value selects row 2 for g′, while the inner derivative remains in row 0. The automated model reads both actual table rows and verifies the result against all four numerical choices.",
+      "optionReview": [
+        "This uses g′(0)=5 instead of the outer input f(0)=2.",
+        "This is g(f(0))=g(2), a function value rather than the derivative.",
+        "Use f(0)=2, so the outer derivative is g′(2)=4, then multiply by f′(0)=−3.",
+        "This finds the outer derivative but omits the inner rate −3."
+      ],
+      "check": {
+        "type": "table-composition",
+        "inputX": 0
+      },
+      "tableSha256": "ed6d0b119b059299a3311f47c8a173d8ca7c4086f4fb3308a232d0b17558568a"
+    },
+    {
+      "questionId": "calc-ab-3-1-007",
+      "independentReasoning": "The inner increment is 2h+o(h). Near u=3 the outer increment is −4 times that quantity plus a smaller-order term, giving net increment −8h+o(h). This local increment argument independently checks the product and sign.",
+      "optionReview": [
+        "This divides the two rates instead of multiplying them.",
+        "This omits the inner derivative q′(1).",
+        "This retains only the inner derivative.",
+        "The outer rate at u=3 multiplies the inner rate at x=1."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          1,
+          3,
+          -4,
+          2
+        ],
+        "expression": [
+          "mul",
+          -4,
+          2
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-3-1-008",
+      "independentReasoning": "Rationalize the original difference quotient: [e^(x+h)−eˣ]/[h(√(1+e^(x+h))+√(1+eˣ))]. The numerator rate tends to eˣ and the remaining denominator to 2√(1+eˣ). Original-function samples at −1,0,1 corroborate this independent limit argument.",
+      "optionReview": [
+        "The outer square-root rate is multiplied by the inner exponential derivative.",
+        "This omits the inner derivative eˣ.",
+        "This omits the factor 2 from the square-root derivative.",
+        "A derivative cannot be passed directly inside a square root."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "sqrt",
+          [
+            "add",
+            1,
+            [
+              "exp",
+              "x"
+            ]
+          ]
+        ],
+        "samplePoints": [
+          -1,
+          0,
+          1
+        ],
+        "step": 0.00001,
+        "tolerance": 0.00001,
+        "candidates": {
+          "eˣ/(2√(1+eˣ))": [
+            "div",
+            [
+              "exp",
+              "x"
+            ],
+            [
+              "mul",
+              2,
+              [
+                "sqrt",
+                [
+                  "add",
+                  1,
+                  [
+                    "exp",
+                    "x"
+                  ]
+                ]
+              ]
+            ]
+          ],
+          "1/(2√(1+eˣ))": [
+            "div",
+            1,
+            [
+              "mul",
+              2,
+              [
+                "sqrt",
+                [
+                  "add",
+                  1,
+                  [
+                    "exp",
+                    "x"
+                  ]
+                ]
+              ]
+            ]
+          ],
+          "eˣ/√(1+eˣ)": [
+            "div",
+            [
+              "exp",
+              "x"
+            ],
+            [
+              "sqrt",
+              [
+                "add",
+                1,
+                [
+                  "exp",
+                  "x"
+                ]
+              ]
+            ]
+          ],
+          "√(eˣ)": [
+            "sqrt",
+            [
+              "exp",
+              "x"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-3-1-009",
+      "independentReasoning": "Trace the two input paths separately: 1→4 for g then f, and 1→2 for f then g. Check each local rate product and compare both ordered entries of every answer pair. No supplied derivative at an unrelated input can be substituted.",
+      "optionReview": [
+        "This evaluates both outer derivatives at 1 instead of their inner outputs.",
+        "H uses f′(4)g′(1)=−10 while K uses g′(2)f′(1)=21.",
+        "This interchanges the two composition orders.",
+        "This finds the correct outer derivatives but omits both inner multipliers."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "(−10, 21)"
+      }
+    },
+    {
+      "questionId": "calc-ab-3-1-010",
+      "independentReasoning": "At x=1, the original composite has centered rate −2sin 1, whereas the student’s expression is only −sin 1. A local input increment (1+h)²−1=2h+h² independently supplies the missing factor 2 at that point.",
+      "optionReview": [
+        "The negative cosine-derivative sign was already correct.",
+        "The original inner function remains the outer derivative’s input.",
+        "The derivative of the inner quadratic must multiply the outer cosine derivative.",
+        "For a composite input, the chain rule still requires its rate."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Multiply by 2x, giving −2x sin(x²)."
+      }
+    },
+    {
+      "questionId": "calc-ab-3-1-011",
+      "independentReasoning": "For a counterexample to the extra claims, take g(x)=x²+2, f(u)=3u+1 and a=0. The inner slope is 0, the outer slope is 3, the composite slope is 0 and the composite height is 7. These values test every proposed conclusion.",
+      "optionReview": [
+        "The inner derivative being zero imposes no such restriction on f.",
+        "A zero derivative factor is valid and does not prevent differentiability.",
+        "A zero rate does not determine the composition’s height.",
+        "The finite outer derivative is multiplied by the zero inner derivative."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "H′(a)=0, even if f′(g(a)) is nonzero."
+      }
+    }
+  ]
+}

@@ -117,7 +117,26 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='table-derivative-rule') {
+  if (review.check.type==='implicit-slope') {
+    const check=review.check,[x,y]=check.point,h=check.step||0.0001;
+    assert.ok([x,y,h].every(Number.isFinite)&&h>0);
+    const setY=(expression,y)=>expression==='y'?y:Array.isArray(expression)?expression.map(child=>setY(child,y)):expression;
+    const residual=(a,b)=>evaluateExpression(setY(check.expression,b),a);
+    assert.ok(Math.abs(residual(x,y))<1e-9,question.id+' point not on implicit curve');
+    const fx=(residual(x+h,y)-residual(x-h,y))/(2*h),fy=(residual(x,y+h)-residual(x,y-h))/(2*h);
+    assert.ok(Math.abs(fy)>1e-6,question.id+' needs nonzero local y coefficient');
+    const slope=-fx/fy,matches=question.options.map(option=>Math.abs(numericalOption(option)-slope)<(check.tolerance||0.00001));
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique implicit slope');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' implicit slope key');
+  } else if (review.check.type==='table-composition') {
+    const check=review.check,table=practiceTables[question.id];assert.ok(table&&table.headers.join('|')==='x|f(x)|f′(x)|g(x)|g′(x)');
+    const rows=table.rows.map(row=>row.map(s=>Number(s.replace('−','-'))));assert.ok(rows.flat().every(Number.isFinite));
+    const inner=rows.find(row=>row[0]===check.inputX);assert.ok(inner);
+    const outer=rows.find(row=>row[0]===inner[1]);assert.ok(outer,'Missing composition outer input');
+    const value=outer[4]*inner[2],matches=question.options.map(option=>Math.abs(numericalOption(option)-value)<1e-10);
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique table composition');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' table composition key');
+  } else if (review.check.type==='table-derivative-rule') {
     const check=review.check,table=practiceTables[question.id];assert.ok(table);
     const row=table.rows.find(row=>Number(row[0].replace('−','-'))===check.inputX);assert.ok(row&&row.length===5);
     const [u,up,v,vp]=row.slice(1).map(s=>Number(s.replace('−','-')));assert.ok([u,up,v,vp].every(Number.isFinite));

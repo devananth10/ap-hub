@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 286,
+  "questionsChecked": 308,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -846,6 +846,71 @@
       "questionId": "calc-ab-2-10-010",
       "method": "derivative-function",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-1-002",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-1-003",
+      "method": "finite-difference-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-1-004",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-1-005",
+      "method": "finite-difference-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-1-006",
+      "method": "table-composition",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-1-007",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-3-1-008",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-2-001",
+      "method": "implicit-slope",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-2-002",
+      "method": "implicit-slope",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-2-003",
+      "method": "implicit-slope",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-2-004",
+      "method": "implicit-slope",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-2-008",
+      "method": "implicit-slope",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-2-009",
+      "method": "implicit-slope",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -965,7 +1030,16 @@
     "calc-ab-2-9-011",
     "calc-ab-2-10-007",
     "calc-ab-2-10-009",
-    "calc-ab-2-10-011"
+    "calc-ab-2-10-011",
+    "calc-ab-3-1-001",
+    "calc-ab-3-1-009",
+    "calc-ab-3-1-010",
+    "calc-ab-3-1-011",
+    "calc-ab-3-2-005",
+    "calc-ab-3-2-006",
+    "calc-ab-3-2-007",
+    "calc-ab-3-2-010",
+    "calc-ab-3-2-011"
   ],
   "humanReviewPerformed": false,
   "limitations": [

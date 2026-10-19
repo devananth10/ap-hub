@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 3,
+  "topicId": "topic-3-2",
+  "questions": [
+    {
+      "id": "calc-ab-3-2-001",
+      "prompt": "A differentiable branch of x²+y²=25 passes through (3,4). What is dy/dx at that point?",
+      "options": [
+        "3/4",
+        "−4/3",
+        "−3/4",
+        "0"
+      ],
+      "correctIndex": 2,
+      "explanation": "Treat y as a function of x. Differentiating gives 2x+2y(dy/dx)=0. Since y=4≠0 at the point, dy/dx=−x/y=−3/4. Both coordinates satisfy the original equation: 9+16=25. A: This omits the negative sign after moving the x term. B: This reverses the ratio and would instead be dx/dy. C: Implicit differentiation gives 2x+2y y′=0, so y′=−x/y. D: A point on the circle need not have a horizontal tangent."
+    },
+    {
+      "id": "calc-ab-3-2-002",
+      "prompt": "A differentiable branch of xy+y²=10 passes through (3,2). What is its slope dy/dx there?",
+      "options": [
+        "−7/2",
+        "−2/3",
+        "2/7",
+        "−2/7"
+      ],
+      "correctIndex": 3,
+      "explanation": "The derivative of xy is y+x y′, and the derivative of y² is 2y y′. Thus y+(x+2y)y′=0. At (3,2), y′=−2/(3+4)=−2/7. The original point gives 6+4=10. A: This reverses the slope ratio. B: This omits the derivative contribution 2y y′ from y². C: This loses the subtraction sign when isolating y′. D: Differentiating the product and square gives y+(x+2y)y′=0."
+    },
+    {
+      "id": "calc-ab-3-2-003",
+      "prompt": "Angles are in radians. A differentiable branch of sin y+x²=1 passes through (1,0). What is dy/dx at that point?",
+      "options": [
+        "−2",
+        "2",
+        "0",
+        "−1/2"
+      ],
+      "correctIndex": 0,
+      "explanation": "Differentiate sine using the chain rule: d(sin y)/dx=cos y·y′. Hence cos y·y′+2x=0. At (1,0), the coefficient of y′ is 1 and 2x=2, so y′=−2. A: The derivative equation is cos y·y′+2x=0, and cos 0=1. B: This loses the negative sign when solving for y′. C: The value sin 0=0 is not the derivative coefficient cos 0. D: This reverses the coefficient ratio."
+    },
+    {
+      "id": "calc-ab-3-2-004",
+      "prompt": "A differentiable branch of eʸ+xy=1 passes through (1,0). What is dy/dx there?",
+      "options": [
+        "1",
+        "0",
+        "−1/2",
+        "−1"
+      ],
+      "correctIndex": 1,
+      "explanation": "Differentiate eʸ as eʸy′ and xy as y+x y′. Then (eʸ+x)y′+y=0. At (1,0) this gives 2y′+0=0, so y′=0. A nonzero coefficient of y′ allows the division. A: This treats the exponential height as the whole curve’s slope. B: The derivative equation (eʸ+x)y′+y=0 has numerator −y=0 and denominator 2. C: This replaces y=0 in the numerator by 1. D: This ignores both the zero numerator and the two contributions to the coefficient of y′."
+    },
+    {
+      "id": "calc-ab-3-2-005",
+      "prompt": "For a differentiable branch of x²+y³=7 at a point with y≠0, which formula is dy/dx?",
+      "options": [
+        "−2x/(3y)",
+        "2x/(3y²)",
+        "−2x/(3y²)",
+        "2x+3y²"
+      ],
+      "correctIndex": 2,
+      "explanation": "Because y depends on x, d(y³)/dx=3y²(dy/dx). The full derivative equation is 2x+3y²y′=0. Dividing by the stated nonzero coefficient 3y² gives y′=−2x/(3y²). A: This differentiates y³ with the wrong power of y. B: This loses the negative sign from moving 2x to the other side. C: The derivative equation 2x+3y²y′=0 is solved for y′. D: This treats y as an independent variable and does not solve the derivative equation."
+    },
+    {
+      "id": "calc-ab-3-2-006",
+      "prompt": "For the circle x²+y²=16, what kind of tangent occurs at (4,0)?",
+      "options": [
+        "A horizontal tangent y=0 because the y coordinate is zero.",
+        "A tangent with slope 0 because −x/y can be assigned zero when y=0.",
+        "No tangent of any kind, because the expression −x/y has a zero denominator.",
+        "A vertical tangent x=4; no finite dy/dx exists there."
+      ],
+      "correctIndex": 3,
+      "explanation": "The usual expression dy/dx=−x/y cannot give a finite value at (4,0). View x instead as √(16−y²) near y=0. Its derivative dx/dy is zero there, so the geometric tangent is vertical: x=4. A: A zero height does not imply a zero slope. B: Division by zero cannot be assigned the value zero. C: A vertical geometric tangent can exist even without a finite dy/dx. D: The circle is regular there, but it cannot be expressed as a differentiable y(x) with finite slope at that point."
+    },
+    {
+      "id": "calc-ab-3-2-007",
+      "prompt": "Which line is tangent to the differentiable branch of x²+xy+y²=7 at (1,2)?",
+      "options": [
+        "y−2=−(4/5)(x−1)",
+        "y−2=(4/5)(x−1)",
+        "y−2=−(5/4)(x−1)",
+        "y−1=−(4/5)(x−2)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Differentiate to obtain 2x+y+x y′+2y y′=0. Thus y′=−(2x+y)/(x+2y), which equals −4/5 at (1,2). The tangent line through that point is y−2=−(4/5)(x−1). A: The derivative equation gives slope −(2x+y)/(x+2y)=−4/5 at the stated point. B: This passes through the point but has the opposite slope. C: This reverses the slope ratio. D: This uses the coordinates in the wrong order and does not pass through (1,2)."
+    },
+    {
+      "id": "calc-ab-3-2-008",
+      "prompt": "A differentiable branch of x³+y³=6xy passes through (3,3). What is dy/dx at that point?",
+      "options": [
+        "1",
+        "−1",
+        "0",
+        "−3"
+      ],
+      "correctIndex": 1,
+      "explanation": "Differentiating gives 3x²+3y²y′=6y+6x y′. Collecting y′ gives (3y²−6x)y′=6y−3x². At (3,3), the ratio is (18−27)/(27−18)=−9/9=−1. A: This loses the negative sign of the numerator at the given point. B: The derivative equation gives (18−27)/(27−18)=−1. C: Equal coordinates do not by themselves imply a horizontal tangent. D: This does not retain both product-rule contributions on the right side."
+    },
+    {
+      "id": "calc-ab-3-2-009",
+      "prompt": "On the domain y>0, a differentiable branch of ln y+xy=2 passes through (2,1). What is dy/dx there?",
+      "options": [
+        "−1/2",
+        "1/3",
+        "−1/3",
+        "−3"
+      ],
+      "correctIndex": 2,
+      "explanation": "Using the chain and product rules gives y′/y+y+x y′=0. Collect terms: (1/y+x)y′=−y. At (2,1), the coefficient is 1+2=3 and the right side is −1, so y′=−1/3. A: This omits the logarithm’s contribution to the coefficient of y′. B: This loses the sign when moving the term y. C: The equation y′/y+y+x y′=0 gives −1/(1+2). D: This reverses the required ratio."
+    },
+    {
+      "id": "calc-ab-3-2-010",
+      "prompt": "When y is a differentiable function of x, which expression is d(x²y)/dx?",
+      "options": [
+        "x²(dy/dx)",
+        "2xy(dy/dx)",
+        "2xy+x²",
+        "2xy+x²(dy/dx)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Regard x² and y(x) as two factors. The product rule gives d(x²y)/dx=(2x)y+x²(dy/dx). The derivative of y with respect to x is y′, which need not equal 1. A: This omits the contribution from differentiating x². B: This multiplies the two separate derivatives instead of applying the product rule. C: This replaces dy/dx by 1 without justification. D: The product rule differentiates x² and y in separate terms."
+    },
+    {
+      "id": "calc-ab-3-2-011",
+      "prompt": "At which points on x²+xy+y²=12 does the curve have a horizontal tangent?",
+      "options": [
+        "(2,−4) and (−2,4)",
+        "(2,4) and (−2,−4)",
+        "(0,√12) and (0,−√12)",
+        "(√12,0) and (−√12,0)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Implicit differentiation gives y′=−(2x+y)/(x+2y). A horizontal tangent needs 2x+y=0 and x+2y≠0. Substitute y=−2x into the curve: x²−2x²+4x²=3x²=12. Thus x=±2, with y=∓4. At both points the denominator −3x is nonzero. A: The slope numerator requires y=−2x; the curve then gives 3x²=12, with nonzero denominator at both points. B: These sign choices do not satisfy the original equation. C: These points lie on the curve but have slope −1/2 rather than zero. D: These points lie on the curve but have slope −2 rather than zero."
+    }
+  ]
+}

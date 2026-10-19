@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 3,
+  "topicId": "chain-rule",
+  "questions": [
+    {
+      "id": "calc-ab-3-1-001",
+      "prompt": "If g is differentiable at a and f is differentiable at g(a), which expression equals the derivative of H(x)=f(g(x)) at x=a?",
+      "options": [
+        "f′(a)g′(a)",
+        "f′(g(a))g′(a)",
+        "f′(g′(a))",
+        "f′(g(a))+g′(a)"
+      ],
+      "correctIndex": 1,
+      "explanation": "The chain rule gives H′(a)=f′(g(a))g′(a). The two functions generally use different inputs: g uses a, while f uses the output g(a). The stated differentiability assumptions ensure both factors exist. A: The outer derivative must be evaluated at g(a), not generally at a. B: Differentiate the outer function at the inner output and multiply by the inner derivative. C: The inner derivative is a multiplier, not the input to the outer derivative. D: Composition rates multiply; the sum rule applies to a different operation."
+    },
+    {
+      "id": "calc-ab-3-1-002",
+      "prompt": "For F(x)=(3x²−1)⁴, which expression is F′(x)?",
+      "options": [
+        "4(3x²−1)³",
+        "24x(3x²−1)⁴",
+        "24x(3x²−1)³",
+        "12x(3x²−1)³"
+      ],
+      "correctIndex": 2,
+      "explanation": "Let u=3x²−1. Then F=u⁴, so dF/du=4u³ and du/dx=6x. Multiplying gives F′=4(3x²−1)³·6x=24x(3x²−1)³. A: This omits the derivative of the inner quadratic. B: This fails to lower the outer power when differentiating. C: The outer derivative 4(3x²−1)³ is multiplied by the inner derivative 6x. D: This uses 3x instead of 6x as the quadratic derivative."
+    },
+    {
+      "id": "calc-ab-3-1-003",
+      "prompt": "Angles are in radians. If f(x)=sin(5x), what is f′(0)?",
+      "options": [
+        "1",
+        "0",
+        "−5",
+        "5"
+      ],
+      "correctIndex": 3,
+      "explanation": "The chain rule gives f′(x)=cos(5x)·5. At 0 the cosine is 1, so f′(0)=5. The factor 5 remains even though the inner input becomes zero. A: This omits the multiplier from differentiating 5x. B: This uses the original sine value instead of the derivative. C: The sine derivative is positive cosine, not negative cosine. D: The inner derivative contributes 5, and cos 0=1."
+    },
+    {
+      "id": "calc-ab-3-1-004",
+      "prompt": "For f(x)=ln(x²+4), which formula is f′(x) on its real domain?",
+      "options": [
+        "2x/(x²+4)",
+        "1/(x²+4)",
+        "2x/ln(x²+4)",
+        "2x"
+      ],
+      "correctIndex": 0,
+      "explanation": "The inner expression x²+4 is positive for all real x, so f is defined everywhere. The chain rule for ln u is u′/u, giving f′(x)=2x/(x²+4). A: The logarithm derivative is the reciprocal of its input, multiplied by that input’s derivative 2x. B: This omits the inner derivative 2x. C: The denominator is the logarithm’s input, not the logarithm itself. D: This differentiates only the input and omits the logarithm derivative."
+    },
+    {
+      "id": "calc-ab-3-1-005",
+      "prompt": "Let E(x)=e^(1−2x). What is E′(1/2)?",
+      "options": [
+        "1",
+        "−2",
+        "2",
+        "0"
+      ],
+      "correctIndex": 1,
+      "explanation": "The derivative of eᵘ is eᵘu′. Here u=1−2x, so E′(x)=−2e^(1−2x). At x=1/2 the exponent is zero, yielding E′(1/2)=−2. A: This is the exponential height at 1/2 and omits the inner derivative. B: The inner derivative is −2 and the exponential value at 1/2 is 1. C: This loses the negative sign of the inner linear rate. D: A zero exponent gives exponential value 1, not zero derivative."
+    },
+    {
+      "id": "calc-ab-3-1-006",
+      "prompt": "Use the table below. If H(x)=g(f(x)), what is H′(0)?",
+      "options": [
+        "−15",
+        "−2",
+        "−12",
+        "4"
+      ],
+      "correctIndex": 2,
+      "explanation": "The chain rule gives H′(0)=g′(f(0))f′(0). First read f(0)=2. Then read g′(2)=4 from the different row, and multiply by f′(0)=−3 to get −12. A: This uses g′(0)=5 instead of the outer input f(0)=2. B: This is g(f(0))=g(2), a function value rather than the derivative. C: Use f(0)=2, so the outer derivative is g′(2)=4, then multiply by f′(0)=−3. D: This finds the outer derivative but omits the inner rate −3."
+    },
+    {
+      "id": "calc-ab-3-1-007",
+      "prompt": "Suppose y=p(u) and u=q(x), with q(1)=3, p′(3)=−4 and q′(1)=2. What is dy/dx at x=1?",
+      "options": [
+        "−2",
+        "−4",
+        "2",
+        "−8"
+      ],
+      "correctIndex": 3,
+      "explanation": "At x=1, the corresponding outer input is u=q(1)=3. Therefore dy/dx=p′(3)q′(1)=(−4)(2)=−8. The variables in the two derivative factors match the successive stages of the composition. A: This divides the two rates instead of multiplying them. B: This omits the inner derivative q′(1). C: This retains only the inner derivative. D: The outer rate at u=3 multiplies the inner rate at x=1."
+    },
+    {
+      "id": "calc-ab-3-1-008",
+      "prompt": "For R(x)=√(1+eˣ), which expression is R′(x)?",
+      "options": [
+        "eˣ/(2√(1+eˣ))",
+        "1/(2√(1+eˣ))",
+        "eˣ/√(1+eˣ)",
+        "√(eˣ)"
+      ],
+      "correctIndex": 0,
+      "explanation": "The input 1+eˣ is positive for every real x. The outer derivative is 1/(2√(1+eˣ)), while the inner derivative is eˣ. Their product is eˣ/(2√(1+eˣ)). A: The outer square-root rate is multiplied by the inner exponential derivative. B: This omits the inner derivative eˣ. C: This omits the factor 2 from the square-root derivative. D: A derivative cannot be passed directly inside a square root."
+    },
+    {
+      "id": "calc-ab-3-1-009",
+      "prompt": "Differentiable functions satisfy f(1)=2, f′(1)=3, g(1)=4, g′(1)=−2, f′(4)=5 and g′(2)=7. For H=f∘g and K=g∘f, which pair is (H′(1), K′(1))?",
+      "options": [
+        "(−6, −6)",
+        "(−10, 21)",
+        "(21, −10)",
+        "(5, 7)"
+      ],
+      "correctIndex": 1,
+      "explanation": "For H, the inner output is g(1)=4, so H′(1)=f′(4)g′(1)=5(−2)=−10. For K, the inner output is f(1)=2, so K′(1)=g′(2)f′(1)=7(3)=21. Composition is not generally commutative. A: This evaluates both outer derivatives at 1 instead of their inner outputs. B: H uses f′(4)g′(1)=−10 while K uses g′(2)f′(1)=21. C: This interchanges the two composition orders. D: This finds the correct outer derivatives but omits both inner multipliers."
+    },
+    {
+      "id": "calc-ab-3-1-010",
+      "prompt": "Angles are in radians. A student differentiates cos(x²) as −sin(x²). Which correction is required?",
+      "options": [
+        "Change the sign only, giving sin(x²).",
+        "Replace x² by 2x inside sine, giving −sin(2x).",
+        "Multiply by 2x, giving −2x sin(x²).",
+        "No correction is required because the cosine rule already handles every input."
+      ],
+      "correctIndex": 2,
+      "explanation": "The outer cosine derivative is −sin evaluated at the unchanged inner input x². Multiply by d(x²)/dx=2x to obtain −2x sin(x²). Differentiating the inner function does not replace the argument inside sine. A: The negative cosine-derivative sign was already correct. B: The original inner function remains the outer derivative’s input. C: The derivative of the inner quadratic must multiply the outer cosine derivative. D: For a composite input, the chain rule still requires its rate."
+    },
+    {
+      "id": "calc-ab-3-1-011",
+      "prompt": "Let H=f∘g, where g is differentiable at a and f is differentiable at g(a). If g′(a)=0, which conclusion is guaranteed?",
+      "options": [
+        "f′(g(a)) must also be zero.",
+        "H′(a) cannot exist because one chain-rule factor is zero.",
+        "H(a)=0.",
+        "H′(a)=0, even if f′(g(a)) is nonzero."
+      ],
+      "correctIndex": 3,
+      "explanation": "The given differentiability assumptions allow the chain rule: H′(a)=f′(g(a))·0=0. The outer derivative is finite, so the product is well defined. This conclusion concerns slope, not function height. A: The inner derivative being zero imposes no such restriction on f. B: A zero derivative factor is valid and does not prevent differentiability. C: A zero rate does not determine the composition’s height. D: The finite outer derivative is multiplied by the zero inner derivative."
+    }
+  ]
+}

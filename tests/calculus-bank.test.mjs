@@ -214,3 +214,19 @@ test('exact pi fractions and reciprocal-trig formula checks reject sign errors',
   const bad=structuredClone(batch.questions[1]);bad.correctIndex=bad.options.indexOf('csc²x');
   assert.throws(()=>verifyCalculusQuestion(bad,qa.questions[1]),/derivative function key/);
 });
+test('chain table checks follow the inner output to a different derivative row',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='chain-rule');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-3-1.json','utf8'));
+  verifyCalculusQuestion(batch.questions[5],qa.questions[5]);
+  const bad=structuredClone(batch.questions[5]);bad.correctIndex=bad.options.indexOf('−15');
+  assert.throws(()=>verifyCalculusQuestion(bad,qa.questions[5]),/table composition key/);
+});
+test('implicit slope checks reject off-curve points and wrong derivative signs',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-3-2');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-3-2.json','utf8'));
+  verifyCalculusQuestion(batch.questions[0],qa.questions[0]);
+  const off=structuredClone(qa.questions[0]);off.check.point=[3,3];
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[0],off),/point not on implicit curve/);
+  const bad=structuredClone(batch.questions[0]);bad.correctIndex=bad.options.indexOf('3/4');
+  assert.throws(()=>verifyCalculusQuestion(bad,qa.questions[0]),/implicit slope key/);
+});

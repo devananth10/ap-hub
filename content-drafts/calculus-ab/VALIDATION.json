@@ -1,9 +1,9 @@
 {
   "officialTopics": 81,
   "targetQuestions": 891,
-  "completedTopics": 26,
-  "questions": 286,
-  "numeric": 169,
+  "completedTopics": 28,
+  "questions": 308,
+  "numeric": 182,
   "repeatedPromptPatterns": [],
   "topics": [
     {
@@ -187,11 +187,23 @@
       "count": 11,
       "status": "validated",
       "file": "src/content/practice/calculus-ab-2-10.json"
+    },
+    {
+      "topic": "3.1",
+      "topicId": "chain-rule",
+      "count": 11,
+      "status": "validated",
+      "file": "src/content/practice/calculus-ab-3-1.json"
+    },
+    {
+      "topic": "3.2",
+      "topicId": "topic-3-2",
+      "count": 11,
+      "status": "validated",
+      "file": "src/content/practice/calculus-ab-3-2.json"
     }
   ],
   "missing": [
-    "3.1",
-    "3.2",
     "3.3",
     "3.4",
     "3.5",
