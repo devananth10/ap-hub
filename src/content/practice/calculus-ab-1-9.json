@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 1,
+  "topicId": "topic-1-9",
+  "questions": [
+    {
+      "id": "calc-ab-1-9-001",
+      "prompt": "The graph below agrees near x=3 with f(x)=(x²−x−6)/(x−3) for x≠3, and f(3)=0. Which value is supported by both the graph and an algebraic simplification for lim(x→3) f(x)?",
+      "options": [
+        "0",
+        "5",
+        "3",
+        "Does not exist because the graph has a hole."
+      ],
+      "correctIndex": 1,
+      "explanation": "Factor x²−x−6=(x−3)(x+2). For x≠3 the quotient equals x+2, whose limit at 3 is 5. The two plotted branches approach (3,5); the filled point (3,0) does not change that limit. A: This is the separate point value f(3), not the height approached by nearby branches. B: Both graph branches approach height 5, and cancellation gives x+2 near 3. C: This is the approach input rather than the output limit. D: A shared open endpoint can still give a two-sided limit."
+    },
+    {
+      "id": "calc-ab-1-9-002",
+      "prompt": "For x≠4, f(x)=(x²−16)/(x−4), and f(4)=99. The table below records some values. What is the exact limit lim(x→4) f(x), supported by the table and justified by the formula?",
+      "options": [
+        "99",
+        "4",
+        "8",
+        "0"
+      ],
+      "correctIndex": 2,
+      "explanation": "For x≠4, x²−16=(x−4)(x+4), so f(x)=x+4. Therefore the exact limit is 8. Nearby table values on both sides support this result, but the algebra, rather than a finite table alone, establishes it. A: The assigned value at 4 does not determine the nearby limit. B: This is the target input, not the limit of x+4. C: Factoring yields x+4 near 4, matching the table values approaching 8. D: The zero numerator at the excluded input cannot be used without resolving the zero denominator."
+    },
+    {
+      "id": "calc-ab-1-9-003",
+      "prompt": "A verbal description states: “As x gets arbitrarily close to 2 from either side, f(x) gets arbitrarily close to −4. At x=2 the function value is 11.” Which symbolic statement correctly expresses the nearby behavior?",
+      "options": [
+        "lim(x→2) f(x)=11",
+        "lim(x→−4) f(x)=2",
+        "lim(x→2⁺) f(x)≠lim(x→2⁻) f(x)",
+        "lim(x→2) f(x)=−4"
+      ],
+      "correctIndex": 3,
+      "explanation": "The description specifies a two-sided limit at input 2 with output −4. Thus lim(x→2) f(x)=−4, even though f(2)=11. A limit statement and a statement of the value at a point convey different information. A: This substitutes the assigned point value for the described nearby limit. B: This interchanges the roles of the approach input and limiting output. C: The description explicitly says both sides approach the same output. D: This keeps 2 as the approach input and −4 as the approached output."
+    },
+    {
+      "id": "calc-ab-1-9-004",
+      "prompt": "The graph below shows f(x)=x+1 for x<1, f(x)=x−2 for x>1, and f(1)=4. Which conclusion about lim(x→1) f(x) agrees with both the graph and the piecewise formulas?",
+      "options": [
+        "Does not exist because the one-sided limits differ.",
+        "4",
+        "2",
+        "−1"
+      ],
+      "correctIndex": 0,
+      "explanation": "The left formula gives lim(x→1⁻) f(x)=2 and the right formula gives lim(x→1⁺) f(x)=−1. The graph shows these distinct open endpoint heights. Since the one-sided limits disagree, the two-sided limit does not exist, regardless of f(1)=4. A: The left branch approaches 2 while the right branch approaches −1. B: This uses only the separate filled point and ignores both nearby branches. C: This is the left-hand limit only; the right branch approaches a different height. D: This is the right-hand limit only; the left branch approaches a different height."
+    },
+    {
+      "id": "calc-ab-1-9-005",
+      "prompt": "For x≠−1, p(x)=|x+1|/(x+1), and p(−1)=0. Use the formula together with the table below to determine lim(x→−1) p(x).",
+      "options": [
+        "0",
+        "Does not exist because the one-sided limits are −1 and 1.",
+        "1",
+        "−1"
+      ],
+      "correctIndex": 1,
+      "explanation": "For x<−1, x+1<0 so |x+1|=−(x+1) and p(x)=−1. For x>−1 the quotient is 1. The table confirms these constant branches. The unequal one-sided limits prevent a two-sided limit. A: This is the separately assigned value at the approach point. B: The sign formula gives different constant outputs on the two sides. C: The right-hand outputs do not describe the negative side. D: The left-hand outputs do not describe the positive side."
+    },
+    {
+      "id": "calc-ab-1-9-006",
+      "prompt": "Let f(x)=2−x for x<0, f(x)=2+x for x>0, and f(0)=9. Which graph description is consistent with all three formulas?",
+      "options": [
+        "Two rays meet at a filled point (0,2), and there is no other point at x=0.",
+        "Both branches approach height 9, with an open point at (0,9).",
+        "Two rays approach an open point at (0,2), with a separate filled point at (0,9).",
+        "The left branch approaches (0,−2) while the right branch approaches (0,2)."
+      ],
+      "correctIndex": 2,
+      "explanation": "Both formulas for nonzero inputs approach 2 as x→0. Because neither branch formula supplies the value at 0, their shared endpoint is open at (0,2). The separate assignment f(0)=9 produces a filled point at (0,9). A: This assigns f(0)=2 instead of the specified value 9. B: The nearby formulas approach 2, not 9, and the assigned point should be filled. C: Both branch limits are 2 while the assigned value is 9. D: The left formula 2−x approaches positive 2, not negative 2."
+    },
+    {
+      "id": "calc-ab-1-9-007",
+      "prompt": "A verbal rule says that at every input x≠−2 sufficiently close to −2, f(x) equals 3x+1, but f(−2)=100. Which statement about an equivalent nearby formula and limit is correct?",
+      "options": [
+        "The nearby formula must be the constant 100, so the limit is 100.",
+        "The limit is 0 because x approaches a negative input.",
+        "The limit does not exist because the value 100 differs from −5.",
+        "The nearby formula is 3x+1 and lim(x→−2) f(x)=−5."
+      ],
+      "correctIndex": 3,
+      "explanation": "The function agrees with 3x+1 on a punctured neighborhood of −2. That expression approaches 3(−2)+1=−5. A change at the single point −2 cannot change the limit, even though it creates a mismatch between the point value and the nearby limit. A: The rule specifies 100 at one input only, not throughout a neighborhood. B: A negative approach input does not make an affine output vanish. C: A mismatched point value affects continuity but does not destroy the limit. D: The isolated assignment at −2 leaves the affine nearby behavior unchanged."
+    },
+    {
+      "id": "calc-ab-1-9-008",
+      "prompt": "The graph below shows f near x=−2. Define g(t)=2f(t−3)+1 for t near 1. Use the graph and this symbolic transformation to find lim(t→1) g(t).",
+      "options": [
+        "7",
+        "−1",
+        "3",
+        "5"
+      ],
+      "correctIndex": 0,
+      "explanation": "The graph gives lim(x→−2) f(x)=3 because both branches approach the same open point. When t→1, the input t−3 approaches −2 from corresponding sides. Thus lim(t→1) g(t)=2·3+1=7; the separate filled point does not alter this limit. A: As t→1, t−3→−2, so the limit is twice the graph height 3 plus 1. B: This comes from the isolated value f(−2)=−1 instead of the limiting height 3. C: This is the limit of f at the shifted input, before applying the output transformation. D: This subtracts rather than adds the final constant 1 after doubling 3."
+    },
+    {
+      "id": "calc-ab-1-9-009",
+      "prompt": "For nonzero x near 0, g(x)=(√(9+x)−3)/x, and g(0)=4. The rounded values in the table below suggest a limit. Which exact value is justified by rationalizing the formula?",
+      "options": [
+        "4",
+        "1/6",
+        "0",
+        "6"
+      ],
+      "correctIndex": 1,
+      "explanation": "For x≠0 multiply numerator and denominator by √(9+x)+3. The numerator becomes x, leaving 1/(√(9+x)+3). Since this denominator approaches 6, the exact limit is 1/6. The rounded table supports the result but does not alone prove its exact value. A: The isolated point value is not the approached quotient value. B: Rationalizing gives 1/(√(9+x)+3), whose limit is 1/6. C: The numerator approaches zero, but so does the denominator, so direct substitution is inconclusive. D: This is the limit of the rationalized denominator, not of its reciprocal."
+    },
+    {
+      "id": "calc-ab-1-9-010",
+      "prompt": "The table below lists four samples. No formula or behavior at other inputs is known. Which statement correctly connects this finite table to a graph or exact limit claim?",
+      "options": [
+        "Every graph through these points must have lim(x→3) f(x)=6.",
+        "The table proves f(3)=6.",
+        "The values suggest a limit near 6, but do not force every compatible graph to have limit 6.",
+        "The table proves a jump discontinuity at 3."
+      ],
+      "correctIndex": 2,
+      "explanation": "The four samples are consistent with f(x)=x+3 and a limit of 6. They are also consistent with a function that agrees only at those four inputs but oscillates on all other sufficiently close inputs. Thus they suggest a trend but cannot force a unique exact limiting graph. A: A graph can agree at the listed points yet behave differently arbitrarily close to 3. B: No value at x=3 is given, and a nearby trend would not fix that value anyway. C: A finite collection of plotted samples does not specify behavior at all closer inputs. D: Samples on opposite sides approaching similar outputs do not establish unequal one-sided limits."
+    },
+    {
+      "id": "calc-ab-1-9-011",
+      "prompt": "A function f has lim(x→5⁻) f(x)=−2 and lim(x→5⁺) f(x)=−2, but f(5) is undefined. Define h(x)=f(x)+4 wherever f is defined. Which verbal description matches these statements?",
+      "options": [
+        "The outputs of h approach −2 because adding a constant cannot change a limit.",
+        "The outputs of h approach 9 because the approach input is 5.",
+        "There is no two-sided limit of h because h(5) is undefined.",
+        "The nearby outputs of h approach 2 from both sides of input 5, even though h(5) is undefined."
+      ],
+      "correctIndex": 3,
+      "explanation": "Agreement of the stated one-sided limits gives lim(x→5) f(x)=−2. The sum law yields lim(x→5) h(x)=−2+4=2. The original domain still omits 5, so h can approach 2 without taking any value at that input. A: Adding 4 changes the limiting output by 4. B: The transformation acts on output −2, not on the input 5. C: Both one-sided limits exist and agree, and the point value is unnecessary. D: Adding 4 shifts the common limiting height from −2 to 2 without filling the missing input."
+    }
+  ]
+}

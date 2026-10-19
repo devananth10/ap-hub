@@ -99,7 +99,7 @@ export function verifyCalculusQuestion(question, review) {
     else {
       const target=review.check.inputX+(review.check.inputShift||0);
       const limit=figureLimit(figure,target,review.check.side);
-      const result=typeof limit==='number'?limit*(review.check.outputScale??1):limit;
+      const result=typeof limit==='number'?limit*(review.check.outputScale??1)+(review.check.outputOffset||0):limit;
       matches=actual.map(value=>typeof result==='number'?typeof value==='number'&&Math.abs(value-result)<1e-9:value===result);
     }
     assert.equal(matches.filter(Boolean).length,1,question.id+' unique graph-based result');

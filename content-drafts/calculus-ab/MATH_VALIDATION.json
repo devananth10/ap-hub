@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 88,
+  "questionsChecked": 99,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -291,6 +291,36 @@
       "questionId": "calc-ab-1-8-011",
       "method": "punctured-expression",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-9-001",
+      "method": "figure-limit",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-9-002",
+      "method": "table-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-9-004",
+      "method": "figure-limit",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-9-005",
+      "method": "table-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-9-008",
+      "method": "figure-limit",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-9-009",
+      "method": "table-estimate",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -323,7 +353,12 @@
     "calc-ab-1-7-006",
     "calc-ab-1-8-005",
     "calc-ab-1-8-007",
-    "calc-ab-1-8-010"
+    "calc-ab-1-8-010",
+    "calc-ab-1-9-003",
+    "calc-ab-1-9-006",
+    "calc-ab-1-9-007",
+    "calc-ab-1-9-010",
+    "calc-ab-1-9-011"
   ],
   "humanReviewPerformed": false,
   "limitations": [

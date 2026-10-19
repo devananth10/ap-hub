@@ -99,3 +99,13 @@ test('squeeze checks compare both bounding limits, enforce their order and rejec
   assert.throws(()=>verifyCalculusQuestion(question,{...review,check:{...review.check,upper:4}}),/bounding limits disagree/);
   assert.throws(()=>verifyCalculusQuestion(question,{...review,check:{...review.check,lower:review.check.upper,upper:review.check.lower}}),/lower bound exceeds/);
 });
+test('cross-representation checks use graph input/output transformations and verify rounded formula tables',()=>{
+  const batch=questionBatches.find(batch=>batch.courseId==='calculus-ab'&&batch.topicId==='topic-1-9');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-1-9.json','utf8'));
+  const q=batch.questions[7],r=qa.questions[7];verifyCalculusQuestion(q,r);
+  assert.throws(()=>verifyCalculusQuestion(q,{...r,check:{...r.check,outputOffset:0}}),/unique graph-based result|graph key/);
+  const tables=JSON.parse(readFileSync('src/content/practice-tables/calculus-ab.json','utf8'));
+  for(const [sx,sy] of tables['calc-ab-1-9-009'].rows) {
+    const x=Number(sx.replace('−','-'));if(x!==0)assert.ok(Math.abs(1/(Math.sqrt(9+x)+3)-Number(sy))<0.00000051);
+  }
+});

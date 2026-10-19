@@ -329,5 +329,117 @@
         "3"
       ]
     ]
+  },
+  "calc-ab-1-9-002": {
+    "caption": "Values of f(x); f(4)=99 is assigned separately.",
+    "headers": [
+      "x",
+      "f(x)"
+    ],
+    "rows": [
+      [
+        "3.9",
+        "7.9"
+      ],
+      [
+        "3.99",
+        "7.99"
+      ],
+      [
+        "4",
+        "99"
+      ],
+      [
+        "4.01",
+        "8.01"
+      ],
+      [
+        "4.1",
+        "8.1"
+      ]
+    ]
+  },
+  "calc-ab-1-9-005": {
+    "caption": "Values from the stated absolute-value formula, with p(−1)=0.",
+    "headers": [
+      "x",
+      "p(x)"
+    ],
+    "rows": [
+      [
+        "−1.1",
+        "−1"
+      ],
+      [
+        "−1.01",
+        "−1"
+      ],
+      [
+        "−1",
+        "0"
+      ],
+      [
+        "−0.99",
+        "1"
+      ],
+      [
+        "−0.9",
+        "1"
+      ]
+    ]
+  },
+  "calc-ab-1-9-009": {
+    "caption": "Rounded quotient values from the stated formula; g(0)=4 is assigned separately.",
+    "headers": [
+      "x",
+      "g(x)"
+    ],
+    "rows": [
+      [
+        "−0.1",
+        "0.167132"
+      ],
+      [
+        "−0.01",
+        "0.166713"
+      ],
+      [
+        "0",
+        "4"
+      ],
+      [
+        "0.01",
+        "0.166620"
+      ],
+      [
+        "0.1",
+        "0.166206"
+      ]
+    ]
+  },
+  "calc-ab-1-9-010": {
+    "caption": "A finite set of samples with no formula or intervening behavior specified.",
+    "headers": [
+      "x",
+      "f(x)"
+    ],
+    "rows": [
+      [
+        "2.9",
+        "5.9"
+      ],
+      [
+        "2.99",
+        "5.99"
+      ],
+      [
+        "3.01",
+        "6.01"
+      ],
+      [
+        "3.1",
+        "6.1"
+      ]
+    ]
   }
 }

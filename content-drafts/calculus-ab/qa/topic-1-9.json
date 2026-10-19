@@ -1,0 +1,182 @@
+{
+  "topicNumber": "1.9",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "1e916e2009d807b10c55240cc8ae2c6e9f6372f7517053e0875a18d031a221df",
+  "scopeReview": "CED Topic 1.9 connects graphical, numerical, analytical and verbal limit representations. Each item translates or reconciles at least two representations, including correct limits despite isolated assignments and limits of finite tabular evidence. No derivatives or epsilon–delta proofs.",
+  "varietyReview": "Three original graphs and four original tables anchor distinct cross-representation problems; remaining items translate notation, formulas, verbal graph descriptions, finite-data uncertainty and output shifts. No reused prior figures or merely renamed prior question prompts.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-1-9-001",
+      "independentReasoning": "Independent expansion of (x−3)(x+2) recovers x²−x−6. The original graph approaches height 5 from both sides, consistent with the simplified formula. The isolated value 0 and input 3 cannot replace the limiting height; a hole alone does not imply DNE.",
+      "optionReview": [
+        "This is the separate point value f(3), not the height approached by nearby branches.",
+        "Both graph branches approach height 5, and cancellation gives x+2 near 3.",
+        "This is the approach input rather than the output limit.",
+        "A shared open endpoint can still give a two-sided limit."
+      ],
+      "check": {
+        "type": "figure-limit",
+        "inputX": 3,
+        "side": "both",
+        "figureSha256": "564176e38f5da3892b6171c9db84286dbc3604556e5d966bd430c8c46fed478c"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-9-002",
+      "independentReasoning": "Expanding (x−4)(x+4) gives x²−16; evaluate the cancelled expression at 4 to get 8. The nearest paired samples average to 8, while the isolated value 99 is deliberately excluded. None of the other options equals the proven limit.",
+      "optionReview": [
+        "The assigned value at 4 does not determine the nearby limit.",
+        "This is the target input, not the limit of x+4.",
+        "Factoring yields x+4 near 4, matching the table values approaching 8.",
+        "The zero numerator at the excluded input cannot be used without resolving the zero denominator."
+      ],
+      "check": {
+        "type": "table-estimate",
+        "inputX": 4,
+        "tolerance": 0.02
+      },
+      "tableSha256": "2e50bb19d330328604e298bb662f81b0484d14e7b11ec40d015d393035182169"
+    },
+    {
+      "questionId": "calc-ab-1-9-003",
+      "independentReasoning": "Translate each part separately: input approaches 2, both sides are included, output approaches −4. The additional f(2)=11 is compatible with that limit but not equal to it. The swapped-variable and unequal-side statements contradict explicit parts of the description.",
+      "optionReview": [
+        "This substitutes the assigned point value for the described nearby limit.",
+        "This interchanges the roles of the approach input and limiting output.",
+        "The description explicitly says both sides approach the same output.",
+        "This keeps 2 as the approach input and −4 as the approached output."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "lim(x→2) f(x)=−4"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-9-004",
+      "independentReasoning": "Evaluate x+1 and x−2 independently at input 1 to obtain 2 and −1. The graph endpoint geometry gives the same pair. No single numerical option can be the two-sided limit because the two sides differ; the isolated value 4 has no effect.",
+      "optionReview": [
+        "The left branch approaches 2 while the right branch approaches −1.",
+        "This uses only the separate filled point and ignores both nearby branches.",
+        "This is the left-hand limit only; the right branch approaches a different height.",
+        "This is the right-hand limit only; the left branch approaches a different height."
+      ],
+      "check": {
+        "type": "figure-limit",
+        "inputX": 1,
+        "side": "both",
+        "figureSha256": "75d08513ca4e0422681af127f246c07ad0dd364213ccff367a1bb714bcb0ecad"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-9-005",
+      "independentReasoning": "The denominator is nonzero for every nearby x except −1. Sign analysis makes the table entries exact rather than mere estimates. The two branch limits differ by 2, so averaging them or using the isolated value is invalid; neither single branch alone is the answer.",
+      "optionReview": [
+        "This is the separately assigned value at the approach point.",
+        "The sign formula gives different constant outputs on the two sides.",
+        "The right-hand outputs do not describe the negative side.",
+        "The left-hand outputs do not describe the positive side."
+      ],
+      "check": {
+        "type": "table-estimate",
+        "inputX": -1,
+        "tolerance": 0.01,
+        "disagree": true
+      },
+      "tableSha256": "4db18dab3d64a747b8a66da18f0f903249405199bdb43a59027d491398af5777"
+    },
+    {
+      "questionId": "calc-ab-1-9-006",
+      "independentReasoning": "Evaluate the two continuous affine branch extensions at 0: both give 2. Then separately apply the value f(0)=9. The requested representation is a verbal graph description, not a missing image; the only matching option distinguishes the open limit point from the filled assigned value.",
+      "optionReview": [
+        "This assigns f(0)=2 instead of the specified value 9.",
+        "The nearby formulas approach 2, not 9, and the assigned point should be filled.",
+        "Both branch limits are 2 while the assigned value is 9.",
+        "The left formula 2−x approaches positive 2, not negative 2."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Two rays approach an open point at (0,2), with a separate filled point at (0,9)."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-9-007",
+      "independentReasoning": "Independently substitute −2 in the affine extension to get −6+1=−5. Every sufficiently close input other than the target follows that extension. The stated exception is exactly at the target, so neither a constant extension of 100 nor a conclusion of nonexistence is justified.",
+      "optionReview": [
+        "The rule specifies 100 at one input only, not throughout a neighborhood.",
+        "A negative approach input does not make an affine output vanish.",
+        "A mismatched point value affects continuity but does not destroy the limit.",
+        "The isolated assignment at −2 leaves the affine nearby behavior unchanged."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The nearby formula is 3x+1 and lim(x→−2) f(x)=−5."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-9-008",
+      "independentReasoning": "Track the input shift separately from the output operation. Input 1 maps to −2, where the original plotted left and right heights are both 3, not the filled height −1. The affine output transform then gives 7; each distractor implements a specific incorrect step.",
+      "optionReview": [
+        "As t→1, t−3→−2, so the limit is twice the graph height 3 plus 1.",
+        "This comes from the isolated value f(−2)=−1 instead of the limiting height 3.",
+        "This is the limit of f at the shifted input, before applying the output transformation.",
+        "This subtracts rather than adds the final constant 1 after doubling 3."
+      ],
+      "check": {
+        "type": "figure-limit",
+        "inputX": 1,
+        "inputShift": -3,
+        "outputScale": 2,
+        "outputOffset": 1,
+        "side": "both",
+        "figureSha256": "c6e43da1ca2f3434b013bc576b9b91f3bcf3eeca6e5a13bc57ef7908d60f1463"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-9-009",
+      "independentReasoning": "The real domain includes a full neighborhood of 0 since 9+x>0 there. Independently evaluate the continuous rationalized form at 0 to get 1/6. The displayed nearest pair averages to approximately 0.1666665, distinct from the other options; g(0)=4 is excluded from the limit estimate.",
+      "optionReview": [
+        "The isolated point value is not the approached quotient value.",
+        "Rationalizing gives 1/(√(9+x)+3), whose limit is 1/6.",
+        "The numerator approaches zero, but so does the denominator, so direct substitution is inconclusive.",
+        "This is the limit of the rationalized denominator, not of its reciprocal."
+      ],
+      "check": {
+        "type": "table-estimate",
+        "inputX": 0,
+        "tolerance": 0.00001
+      },
+      "tableSha256": "4bea25979dc52aae4635d29f13288caa2a11a9baffec67e627853b21fb72147a"
+    },
+    {
+      "questionId": "calc-ab-1-9-010",
+      "independentReasoning": "Construct two models explicitly: x+3 everywhere, and x+3 at the four listed inputs with 6+sin(1/(x−3)) elsewhere for x≠3. Both match the finite data. The second has no limit; either can be assigned any value at 3. This defeats each asserted proof in the alternatives.",
+      "optionReview": [
+        "A graph can agree at the listed points yet behave differently arbitrarily close to 3.",
+        "No value at x=3 is given, and a nearby trend would not fix that value anyway.",
+        "A finite collection of plotted samples does not specify behavior at all closer inputs.",
+        "Samples on opposite sides approaching similar outputs do not establish unequal one-sided limits."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The values suggest a limit near 6, but do not force every compatible graph to have limit 6."
+      },
+      "tableSha256": "70180ed4c04f30b3637b7b9edc19343430f848d4798987b5b9de4a3048aa7872"
+    },
+    {
+      "questionId": "calc-ab-1-9-011",
+      "independentReasoning": "First apply the criterion for a two-sided finite limit, then apply an output translation by 4. Do not substitute the input 5 into an unspecified formula or fill the domain hole. The consistent verbal statement must preserve both the limiting height 2 and the undefined point value.",
+      "optionReview": [
+        "Adding 4 changes the limiting output by 4.",
+        "The transformation acts on output −2, not on the input 5.",
+        "Both one-sided limits exist and agree, and the point value is unnecessary.",
+        "Adding 4 shifts the common limiting height from −2 to 2 without filling the missing input."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The nearby outputs of h approach 2 from both sides of input 5, even though h(5) is undefined."
+      }
+    }
+  ]
+}

@@ -48,6 +48,7 @@ export function validateCalculusBank() {
         assert.ok(figure.xRange[0]<=0 && figure.xRange[1]>=0 && figure.yRange[0]<=0 && figure.yRange[1]>=0,'Graph must show origin accurately');
         for(const curve of figure.curves) {
           assert.ok(curve.points.length>=2);
+          assert.ok(['open','closed'].includes(curve.start)&&['open','closed'].includes(curve.end),question.id+' graph endpoints must be explicit');
           curve.points.forEach(([x,y],i)=>{assert.ok(Number.isFinite(x)&&Number.isFinite(y));assert.ok(x>=figure.xRange[0]&&x<=figure.xRange[1]&&y>=figure.yRange[0]&&y<=figure.yRange[1]);if(i)assert.ok(x>curve.points[i-1][0]);});
         }
       }
