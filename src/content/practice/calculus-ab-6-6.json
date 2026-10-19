@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 6,
+  "topicId": "topic-6-6",
+  "questions": [
+    {
+      "id": "calc-ab-6-6-001",
+      "prompt": "For continuous f, ∫ from 1 to 4 of f(x) dx=6 and ∫ from 4 to 7 of f(x) dx=−2. What is ∫ from 7 to 1 of f(x) dx?",
+      "options": [
+        "4",
+        "−8",
+        "−4",
+        "8"
+      ],
+      "correctIndex": 2,
+      "explanation": "First add adjacent intervals: ∫ from 1 to 7 of f=6+(−2)=4. Reverse the bounds to obtain ∫ from 7 to 1 of f=−4. A negative contribution on one subinterval keeps its sign when the forward intervals are combined. A: This is the integral from 1 to 7, before reversal. B: This incorrectly treats the second forward integral as +2 before negating. C: The forward adjacent integrals sum to 4, then reversing the whole interval changes its sign. D: This adds unsigned magnitudes instead of signed adjacent integrals."
+    },
+    {
+      "id": "calc-ab-6-6-002",
+      "prompt": "Suppose ∫ from −2 to 3 of f(x) dx=5 and ∫ from −2 to 3 of g(x) dx=−4. What is ∫ from −2 to 3 of [3f(x)−2g(x)+1] dx?",
+      "options": [
+        "23",
+        "12",
+        "24",
+        "28"
+      ],
+      "correctIndex": 3,
+      "explanation": "Apply linearity to the two functions and the constant separately. The first two terms contribute 15 and +8. The integral of 1 over [−2,3] is its width 5, so the total is 15+8+5=28. The constant is accumulated across the entire interval. A: This omits the integral of the constant 1. B: This loses the negative sign of the given g integral. C: This integrates the constant term as 1 instead of the interval length 5. D: Linearity gives 3·5−2(−4)+(3−(−2))=28."
+    },
+    {
+      "id": "calc-ab-6-6-003",
+      "prompt": "Evaluate ∫ from −3 to 3 of (3−|x|) dx using geometry.",
+      "options": [
+        "9",
+        "18",
+        "0",
+        "6"
+      ],
+      "correctIndex": 0,
+      "explanation": "The function rises linearly from 0 at −3 to 3 at 0 and then falls linearly to 0 at 3. The full region is one triangle of base 6 and height 3, entirely above the axis. Its integral is (1/2)·6·3=9. A: The graph is a nonnegative triangle of base 6 and height 3. B: This uses a rectangle and omits the triangle factor 1/2. C: The integrand is even and positive inside the interval, not odd. D: This is the interval length alone, ignoring graph height and shape."
+    },
+    {
+      "id": "calc-ab-6-6-004",
+      "prompt": "What is ∫ from −3 to 3 of √(9−x²) dx?",
+      "options": [
+        "9π",
+        "9π/2",
+        "3π",
+        "−9π/2"
+      ],
+      "correctIndex": 1,
+      "explanation": "The equation y=√(9−x²) describes the upper half of x²+y²=9, a circle of radius 3. Over [−3,3] its signed area is positive and equals half the disk area: (1/2)π·3²=9π/2. No antiderivative of the radical is required. A: This is the full-circle area rather than the upper half. B: The positive square root traces an upper semicircle of radius 3. C: This uses radius rather than radius squared in the area calculation. D: The graph is above the axis and the bounds run left to right."
+    },
+    {
+      "id": "calc-ab-6-6-005",
+      "prompt": "If f is continuous and odd on [−4,4], evaluate ∫ from −4 to 4 of [f(x)+2] dx.",
+      "options": [
+        "0",
+        "8",
+        "16",
+        "−16"
+      ],
+      "correctIndex": 2,
+      "explanation": "Odd symmetry means f(−x)=−f(x), so its signed contributions on the two symmetric halves cancel. By linearity, only ∫ from −4 to 4 of 2 dx remains. It is 2·8=16, even though the original odd function need not be zero. A: Only the odd term cancels; the added constant remains. B: This uses the interval width but omits the constant height 2. C: The odd contribution cancels, leaving a height-2 rectangle of width 8. D: The bounds run in the positive orientation, so the constant contribution is positive."
+    },
+    {
+      "id": "calc-ab-6-6-006",
+      "prompt": "On [0,4], let f(x)=2 for 0≤x<1, f(1)=100, and f(x)=−1 for 1<x≤4. What is its definite integral from 0 to 4?",
+      "options": [
+        "1",
+        "99",
+        "5",
+        "−1"
+      ],
+      "correctIndex": 3,
+      "explanation": "A bounded jump and an isolated point do not prevent this function from being Riemann integrable. The first interval contributes +2 and the second −3, giving −1. Changing the value at exactly x=1 cannot contribute a rectangle of positive width. A: This reverses the sign of the net accumulation. B: This treats the single high point as if it contributed a nonzero-width area. C: This is the sum of unsigned rectangular areas rather than their signed sum. D: The interval contributions are 2·1 and −1·3; one isolated value changes no area."
+    },
+    {
+      "id": "calc-ab-6-6-007",
+      "prompt": "Continuous f and g on [0,1] satisfy ∫ f=3 and ∫ g=5 over that same interval. Which statement necessarily follows?",
+      "options": [
+        "∫ from 0 to 1 of (f+g) dx=8",
+        "∫ from 0 to 1 of fg dx=15",
+        "∫ from 0 to 1 of f² dx=9",
+        "∫ from 0 to 1 of (f−g) dx=2"
+      ],
+      "correctIndex": 0,
+      "explanation": "Linearity guarantees ∫(f+g)=∫f+∫g=3+5=8. It does not extend to multiplying or squaring integrals. The corresponding difference is 3−5=−2, so reversing that subtraction is also incorrect. A: Definite integrals are additive in the integrand. B: There is no general product-of-integrals rule. C: Squaring an integral does not generally equal integrating the square. D: Linearity gives 3−5=−2 instead."
+    },
+    {
+      "id": "calc-ab-6-6-008",
+      "prompt": "The table below gives F(x)=∫ from 0 to x of a continuous f(t) dt. What is ∫ from 5 to −1 of f(t) dt?",
+      "options": [
+        "2",
+        "−2",
+        "10",
+        "−7"
+      ],
+      "correctIndex": 1,
+      "explanation": "The common-base accumulations cancel to give ∫ from 5 to −1 of f=F(−1)−F(5)=4−6=−2. The table’s middle row is unnecessary; if the interval were split there, its two appearances would cancel. A: This reverses the requested bounds. B: The requested oriented difference is F(−1)−F(5)=4−6. C: This adds the two accumulated values instead of subtracting them. D: This mixes in the value at the unrelated middle endpoint 2."
+    },
+    {
+      "id": "calc-ab-6-6-009",
+      "prompt": "Continuous f and g satisfy f(x)≥g(x) on [1,4], and ∫ from 1 to 4 of g(x) dx=2. What must be true?",
+      "options": [
+        "∫ from 1 to 4 of f(x) dx>2 in every case",
+        "∫ from 1 to 4 of f(x) dx=2 in every case",
+        "∫ from 1 to 4 of f(x) dx≥2",
+        "f(x)≥2 at every point"
+      ],
+      "correctIndex": 2,
+      "explanation": "Since f−g≥0 everywhere, its integral is nonnegative. Linearity gives ∫f−∫g≥0 and therefore ∫f≥2. Equality or a larger result is possible. The integral comparison gives no pointwise bound f≥2. A: Equality remains possible when the two functions coincide. B: The difference may have positive area, so equality is not guaranteed. C: Integrating the nonnegative difference f−g preserves the inequality. D: An integral value is not a pointwise lower bound on either function."
+    },
+    {
+      "id": "calc-ab-6-6-010",
+      "prompt": "A continuous even f satisfies ∫ from 0 to 3 of f(x) dx=−2. What is ∫ from −3 to 0 of f(x) dx?",
+      "options": [
+        "2",
+        "−4",
+        "0",
+        "−2"
+      ],
+      "correctIndex": 3,
+      "explanation": "Even symmetry means f(−x)=f(x), so the signed areas on [−3,0] and [0,3] are equal when both are traversed left to right. Hence the requested integral is −2. Negative input coordinates do not reverse the orientation of the bounds. A: This incorrectly adds a minus sign for the negative inputs. B: This is the integral over the whole symmetric interval, not just its left half. C: Symmetric cancellation is a property of odd functions, not arbitrary even ones. D: Even symmetry gives equal signed integrals on the two halves with forward-oriented bounds."
+    },
+    {
+      "id": "calc-ab-6-6-011",
+      "prompt": "For continuous f on [0,4], ∫ from 0 to 4 of f(x) dx=−3 and ∫ from 0 to 4 of |f(x)| dx=7. What is the total geometric area of the regions above the axis?",
+      "options": [
+        "2",
+        "5",
+        "7",
+        "−3"
+      ],
+      "correctIndex": 0,
+      "explanation": "Let P and N be the nonnegative area magnitudes above and below the axis. The signed integral gives P−N=−3, while the absolute-value integral gives P+N=7. Adding these equations yields 2P=4, so P=2 and N=5. A: If P is positive-region area and N negative-region magnitude, P−N=−3 and P+N=7. B: This is the below-axis area magnitude N. C: This is the total unsigned area on both sides. D: This is the signed net integral, not a geometric area."
+    }
+  ]
+}

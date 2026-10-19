@@ -389,3 +389,29 @@ test('original accumulation differences reject missing chain factors and negativ
   const bad=structuredClone(qa.questions[2]);bad.check.lower=5;bad.check.upper='x';
   assert.throws(()=>verifyCalculusQuestion(batch.questions[2],bad),/accumulation derivative key/);
 });
+test('geometric pi areas parse rational multiples and reject undefined denominators',()=>{
+  assert.equal(numericalOption('9π/2'),9*Math.PI/2);
+  assert.equal(numericalOption('−9π/2'),-9*Math.PI/2);
+  assert.equal(numericalOption('4.5π'),4.5*Math.PI);
+  assert.throws(()=>numericalOption('9π/0'),/Zero pi denominator/);
+});
+test('accumulation tables retain derivative order and negative-input orientation',()=>{
+  const jet=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-6-5');
+  const jq=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-6-5.json','utf8'));
+  const wrong=structuredClone(jet.questions[3]);wrong.correctIndex=wrong.options.indexOf('(3, −4)');
+  assert.throws(()=>verifyCalculusQuestion(wrong,jq.questions[3]),/accumulation table key/);
+  const difference=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-6-6');
+  const dq=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-6-6.json','utf8'));
+  verifyCalculusQuestion(difference.questions[7],dq.questions[7]);
+  const bad=structuredClone(dq.questions[7]);[bad.check.start,bad.check.end]=[bad.check.end,bad.check.start];
+  assert.throws(()=>verifyCalculusQuestion(difference.questions[7],bad),/accumulation table key/);
+});
+test('graph accumulation maxima compare all zeros and clipped interval endpoints',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-6-5');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-6-5.json','utf8'));
+  verifyCalculusQuestion(batch.questions[6],qa.questions[6]);
+  const q=structuredClone(batch.questions[6]),review=structuredClone(qa.questions[6]);
+  review.check.start=2;q.options=['2','5','6','4'];q.correctIndex=0;
+  verifyCalculusQuestion(q,review);
+  q.correctIndex=2;assert.throws(()=>verifyCalculusQuestion(q,review),/graph key/);
+});

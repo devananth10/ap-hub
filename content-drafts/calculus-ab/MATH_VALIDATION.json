@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 605,
+  "questionsChecked": 627,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -1641,6 +1641,71 @@
       "questionId": "calc-ab-6-4-009",
       "method": "accumulation-derivative",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-5-001",
+      "method": "figure-sign-transition",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-5-002",
+      "method": "figure-accumulation",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-5-004",
+      "method": "table-accumulation-jet",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-5-007",
+      "method": "figure-accumulation-extremum",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-5-009",
+      "method": "figure-accumulation",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-6-001",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-6-6-002",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-6-6-003",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-6-6-004",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-6-6-005",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-6-6-006",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-6-6-008",
+      "method": "table-accumulation-difference",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-6-011",
+      "method": "numeric",
+      "operation": "evaluate"
     }
   ],
   "reasoningReviews": [
@@ -1920,7 +1985,16 @@
     "calc-ab-6-4-005",
     "calc-ab-6-4-007",
     "calc-ab-6-4-010",
-    "calc-ab-6-4-011"
+    "calc-ab-6-4-011",
+    "calc-ab-6-5-003",
+    "calc-ab-6-5-005",
+    "calc-ab-6-5-006",
+    "calc-ab-6-5-008",
+    "calc-ab-6-5-010",
+    "calc-ab-6-5-011",
+    "calc-ab-6-6-007",
+    "calc-ab-6-6-009",
+    "calc-ab-6-6-010"
   ],
   "humanReviewPerformed": false,
   "limitations": [

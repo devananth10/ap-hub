@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 6,
+  "topicId": "topic-6-5",
+  "questions": [
+    {
+      "id": "calc-ab-6-5-001",
+      "prompt": "For the continuous f graphed below, let g(x)=∫ from 0 to x of f(t) dt. At which interior input does g have a relative maximum?",
+      "options": [
+        "1",
+        "5",
+        "2",
+        "4"
+      ],
+      "correctIndex": 1,
+      "explanation": "FTC gives g′=f. A relative maximum of g requires the derivative to change from positive to negative. The plotted f does that at 5. Its crossing at 1 has the opposite direction; a corner or plateau in f above the axis does not make g turn. A: That sign change is negative to positive and produces a relative minimum of g. B: The integrand f=g′ changes from positive to negative there. C: The positive integrand reaches a plateau there, but g continues increasing. D: The integrand begins decreasing there but remains positive immediately on both sides."
+    },
+    {
+      "id": "calc-ab-6-5-002",
+      "prompt": "For f shown in the graph below, define g(x)=∫ from 2 to x of f(t) dt. What is g(0)?",
+      "options": [
+        "2",
+        "0",
+        "−2",
+        "−4"
+      ],
+      "correctIndex": 2,
+      "explanation": "The graph above the axis on [0,2] is a triangle of base 2 and height 2, with area 2. Since g(0) integrates from 2 back to 0, its signed value is −2. The accumulation is zero at its base input 2, not automatically at input 0. A: This is the integral from 0 to 2 rather than from 2 to 0. B: A zero upper input is not a zero-width integral when the base is 2. C: The positive triangle on [0,2] has area 2, and reversing the bounds negates it. D: This uses a rectangle rather than the triangular area."
+    },
+    {
+      "id": "calc-ab-6-5-003",
+      "prompt": "Let g(x)=∫ from 0 to x of the continuous f graphed below. On 0<x<2, which description of g is correct?",
+      "options": [
+        "Increasing and concave up.",
+        "Decreasing and concave down.",
+        "Increasing and concave down.",
+        "Decreasing and concave up."
+      ],
+      "correctIndex": 3,
+      "explanation": "The graph of f gives g′, not the height of g. Here f<0, so g decreases. The line rises with slope +1, so g″=f′=1>0 and g is concave up. Its decrease becomes less rapid as the integrand approaches the axis. A: An increasing integrand does not make its accumulation increase when the integrand stays negative. B: The integrand’s positive slope gives positive, not negative, second derivative of g. C: Both the sign and slope translations are reversed. D: The integrand is negative but increasing, so g′<0 and g″>0 there."
+    },
+    {
+      "id": "calc-ab-6-5-004",
+      "prompt": "The table below lists a differentiable f and its derivative. If g(x)=∫ from 0 to x of f(t) dt, what is (g′(2),g″(2))?",
+      "options": [
+        "(−4, 3)",
+        "(3, −4)",
+        "(−4, −2)",
+        "(0, 3)"
+      ],
+      "correctIndex": 0,
+      "explanation": "FTC yields g′(x)=f(x), and differentiating once more gives g″(x)=f′(x). At input 2 the table shows f(2)=−4 and f′(2)=3, so the pair is (−4,3). Thus g is decreasing and locally concave up at that input. A: FTC gives the ordered pair (f(2),f′(2)). B: This reverses the roles of the first and second accumulation derivatives. C: This takes the second derivative value from the row for input 1. D: The base accumulation g(0)=0 does not make its derivative at 2 zero."
+    },
+    {
+      "id": "calc-ab-6-5-005",
+      "prompt": "Suppose f is continuous and strictly positive on [0,4], and g(x)=∫ from 3 to x of f(t) dt. Which description of g at x=2 is justified?",
+      "options": [
+        "Its value is negative, and it is decreasing.",
+        "Its value is negative, and it is increasing.",
+        "Its value is positive, and it is increasing.",
+        "Its value is zero because the integrand is positive."
+      ],
+      "correctIndex": 1,
+      "explanation": "Because 2<3, g(2)=−∫ from 2 to 3 of f(t) dt<0. But FTC gives g′(2)=f(2)>0. The accumulated function can be below zero while moving upward; value sign and rate sign measure different features. A: A negative accumulated value does not imply a negative derivative. B: The bounds give a negative accumulated value, while g′(2)=f(2)>0. C: The upper bound 2 lies below the base 3, reversing the positive area. D: Positive integrand gives nonzero area on the nonzero interval from 2 to 3."
+    },
+    {
+      "id": "calc-ab-6-5-006",
+      "prompt": "Let g(x)=∫ from 0 to x of (t−1)² dt. What happens to g at x=1?",
+      "options": [
+        "It has a relative maximum.",
+        "It has a relative minimum.",
+        "It has a horizontal tangent but no relative maximum or minimum.",
+        "It is undefined there because the integrand is zero."
+      ],
+      "correctIndex": 2,
+      "explanation": "FTC gives g′(x)=(x−1)². This is zero at 1 and positive on each side, so g keeps increasing through the point. Its tangent is horizontal, but there is no local extremum. A zero accumulation derivative alone is not a turning-point test. A: The derivative does not change from positive to negative. B: The derivative does not change from negative to positive. C: The derivative vanishes at 1 yet is positive on both neighboring sides. D: A zero integrand value causes no domain problem for the accumulation."
+    },
+    {
+      "id": "calc-ab-6-5-007",
+      "prompt": "For the continuous f in the graph below, define g(x)=∫ from 0 to x of f(t) dt on [0,6]. At which input does g attain its absolute maximum on this closed interval?",
+      "options": [
+        "0",
+        "5",
+        "6",
+        "1"
+      ],
+      "correctIndex": 3,
+      "explanation": "The candidate inputs are endpoints 0 and 6 and the zeros 1 and 5 of f=g′. Geometry gives g(0)=0, g(1)=1, g(5)=−5 and g(6)=−4. The greatest value is 1, attained at input 1. A later rise does not by itself make the final value the largest. A: The initial accumulation is 0, below the positive value at 1. B: That sign crossing produces a local minimum of g. C: The late positive contribution does not recover the earlier accumulated loss. D: The first positive area creates the highest accumulated value before the larger negative contribution."
+    },
+    {
+      "id": "calc-ab-6-5-008",
+      "prompt": "Let g(x)=∫ from −2 to x of the continuous f graphed below. Which statement about g at x=0 is correct?",
+      "options": [
+        "It has an inflection point with a nonzero positive slope.",
+        "It has a relative minimum because f has a minimum.",
+        "It has a horizontal tangent because f changes direction.",
+        "It has no derivative because f has a corner."
+      ],
+      "correctIndex": 0,
+      "explanation": "FTC gives g′(0)=f(0)=1. To the left, f has slope −1, so g is concave down; to the right, f has slope +1, so g is concave up. The concavity change makes 0 an inflection point of g, despite its nonzero slope and nonexistent second derivative there. A: The integrand changes from decreasing to increasing while its value at 0 stays 1. B: A minimum of the integrand need not be a minimum of the accumulation. C: The slope of g is f(0)=1, not the slope of the integrand. D: Continuity of f suffices for g′ even when f′ fails."
+    },
+    {
+      "id": "calc-ab-6-5-009",
+      "prompt": "Use f in the graph below on [2,6]. If g(x)=∫ from 2 to x of f(t) dt, what is g(6)−g(3)?",
+      "options": [
+        "9/2",
+        "−9/2",
+        "15/2",
+        "−3"
+      ],
+      "correctIndex": 1,
+      "explanation": "Subtracting the two accumulations cancels their common portion from 2 to 3. On [3,4], the remaining positive triangle has area (1/2)·1·3=3/2. On [4,6], the negative triangle contributes −(1/2)·2·6=−6. The difference is 3/2−6=−9/2. A: This reverses the signed accumulation difference. B: The area from 3 to 4 is +3/2 and from 4 to 6 contributes −6. C: This adds the unsigned areas instead of subtracting the negative contribution. D: This includes the extra positive triangle from 2 to 3."
+    },
+    {
+      "id": "calc-ab-6-5-010",
+      "prompt": "Let f(x)=(x−2)³+1 and g(x)=∫ from 0 to x of f(t) dt. Which statement about g near x=2 is correct?",
+      "options": [
+        "g has an inflection point because every zero second derivative forces one.",
+        "g has a relative maximum because f′(2)=0.",
+        "g″(2)=0, but g has no inflection point there.",
+        "g has a horizontal tangent at 2."
+      ],
+      "correctIndex": 2,
+      "explanation": "FTC gives g′=f and g″=f′=3(x−2)². Although g″(2)=0, it is positive on both sides, so g is concave up through the point rather than changing concavity. Also g′(2)=1, so the tangent is not horizontal. A: A zero second derivative needs an actual concavity change. B: Relative extrema of g depend on the sign change of f, not just a zero of f′. C: The second derivative 3(x−2)² stays positive on both sides. D: The first derivative is f(2)=1."
+    },
+    {
+      "id": "calc-ab-6-5-011",
+      "prompt": "Define g(x)=∫ from 0 to x of (2−t) dt for 0≤x≤5. Besides x=0, at which input is g(x)=0?",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "4"
+      ],
+      "correctIndex": 3,
+      "explanation": "The integrand is a line crossing the axis at 2. Its positive triangle on [0,2] has area 2. For x>2 the negative triangular magnitude is (x−2)²/2. Equality with 2 requires x−2=2, giving x=4. This is the nonzero accumulation root in the given domain. A: This is the zero of the integrand and the location of maximum accumulation, not zero accumulation. B: The negative area has not yet cancelled the earlier positive area. C: The negative area already exceeds the earlier positive contribution. D: The negative triangular area from 2 to 4 exactly cancels the positive triangle from 0 to 2."
+    }
+  ]
+}

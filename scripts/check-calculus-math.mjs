@@ -10,7 +10,8 @@ export function numericalOption(text) {
   if(clean==='∞'||clean==='+∞')return Infinity;
   if(clean==='-∞')return -Infinity;
   const piFraction=clean.match(/^([+-]?\d+)\/π$/);if(piFraction)return Number(piFraction[1])/Math.PI;
-  const piMultiple=clean.match(/^([+-]?\d+)π(?:$|\s+[A-Za-z])/);if(piMultiple)return Number(piMultiple[1])*Math.PI;
+  const piMultiple=clean.match(/^([+-]?\d+(?:\.\d+)?)π(?:\/([+-]?\d+(?:\.\d+)?))?(?:$|\s+[A-Za-z])/);
+  if(piMultiple){const denominator=piMultiple[2]===undefined?1:Number(piMultiple[2]);assert.notEqual(denominator,0,'Zero pi denominator');return Number(piMultiple[1])*Math.PI/denominator;}
   const fraction=clean.match(/^([+-]?\d+(?:\.\d+)?)\/([+-]?\d+(?:\.\d+)?)(?:$|\s+[A-Za-z])/);
   if(fraction) return Number(fraction[1])/Number(fraction[2]);
   const root=clean.match(/^([+-]?)√(\d+(?:\.\d+)?)$/);if(root) return (root[1]==='-'?-1:1)*Math.sqrt(Number(root[2]));
@@ -153,7 +154,14 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='accumulation-derivative') {
+  if (review.check.type==='table-accumulation-jet'||review.check.type==='table-accumulation-difference') {
+    const c=review.check,table=practiceTables[question.id];
+    const row=x=>{const rows=table.rows.filter(r=>Number(r[0].replaceAll('−','-'))===x);assert.equal(rows.length,1,'Missing accumulation table input');return rows[0].slice(1).map(s=>Number(s.replaceAll('−','-')));};
+    let matches;
+    if(c.type==='table-accumulation-jet'){const expected=row(c.inputX);assert.equal(expected.length,2);matches=question.options.map(option=>{const pair=c.optionPairs[option];return pair.length===2&&pair.every((x,i)=>x===expected[i]);});}
+    else{const expected=row(c.end)[0]-row(c.start)[0];matches=question.options.map(option=>Math.abs(numericalOption(option)-expected)<1e-10);}
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique accumulation table result');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' accumulation table key');
+  } else if (review.check.type==='accumulation-derivative') {
     const c=review.check,h=0.0001;
     const accumulation=x=>integralValue(c.integrand,evaluateExpression(c.lower,x),evaluateExpression(c.upper,x));
     const slope=x=>(accumulation(x+h)-accumulation(x-h))/(2*h);
@@ -422,7 +430,14 @@ export function verifyCalculusQuestion(question, review) {
     assert.equal(createHash('sha256').update(JSON.stringify(figure)).digest('hex'),review.check.figureSha256,'Graph changed after review: '+question.id);
     const actual=question.options.map(option=>option.startsWith('Does not exist')?'DNE':numericalOption(option));
     let matches;
-    if(review.check.type==='figure-riemann') {
+    if(review.check.type==='figure-accumulation-extremum') {
+      const c=review.check;assert.equal(figure.curves.length,1);const points=figure.curves[0].points;
+      const candidates=[c.start,c.end];
+      for(let i=1;i<points.length;i++){const [a,fa]=points[i-1],[b,fb]=points[i];assert.ok(fa!==0||fb!==0,'Zero plateaus need separate extrema review');if(fa===0)candidates.push(a);if(fb===0)candidates.push(b);if(fa*fb<0)candidates.push(a-fa*(b-a)/(fb-fa));}
+      const xs=[...new Set(candidates)].filter(x=>c.start<=x&&x<=c.end),values=xs.map(x=>x===c.start?0:piecewiseArea(points,c.start,x));
+      assert.ok(['maximum','minimum'].includes(c.kind));const extreme=c.kind==='maximum'?Math.max(...values):Math.min(...values);
+      const expected=xs.filter((x,i)=>Math.abs(values[i]-extreme)<1e-10);matches=actual.map(x=>expected.includes(x));
+    } else if(review.check.type==='figure-riemann') {
       const c=review.check;assert.equal(figure.curves.length,1);const points=figure.curves[0].points;
       piecewiseArea(points,c.partition[0],c.partition.at(-1));
       const value=x=>{const i=points.findIndex((p,i)=>i&&points[i-1][0]<=x&&x<=p[0]);assert.ok(i>0);const [a,fa]=points[i-1],[b,fb]=points[i];return fa+(x-a)*(fb-fa)/(b-a);};

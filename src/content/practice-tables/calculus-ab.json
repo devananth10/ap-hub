@@ -1103,5 +1103,51 @@
         "−2"
       ]
     ]
+  },
+  "calc-ab-6-5-004": {
+    "caption": "Values and derivatives of a differentiable function f at selected inputs",
+    "headers": [
+      "x",
+      "f(x)",
+      "f′(x)"
+    ],
+    "rows": [
+      [
+        "0",
+        "2",
+        "−1"
+      ],
+      [
+        "1",
+        "−1",
+        "−2"
+      ],
+      [
+        "2",
+        "−4",
+        "3"
+      ]
+    ]
+  },
+  "calc-ab-6-6-008": {
+    "caption": "Values of the accumulation F(x)=∫ from 0 to x of f(t) dt for a continuous f",
+    "headers": [
+      "x",
+      "F(x)"
+    ],
+    "rows": [
+      [
+        "−1",
+        "4"
+      ],
+      [
+        "2",
+        "−3"
+      ],
+      [
+        "5",
+        "6"
+      ]
+    ]
   }
 }
