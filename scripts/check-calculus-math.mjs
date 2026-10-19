@@ -7,6 +7,8 @@ import {practiceFigures} from '../src/lib/practice-figures.ts';
 import {practiceTables} from '../src/lib/practice-tables.ts';
 export function numericalOption(text) {
   const clean=text.replaceAll('−','-').trim();
+  if(clean==='∞'||clean==='+∞')return Infinity;
+  if(clean==='-∞')return -Infinity;
   const fraction=clean.match(/^([+-]?\d+(?:\.\d+)?)\/([+-]?\d+(?:\.\d+)?)(?:$|\s+[A-Za-z])/);
   if(fraction) return Number(fraction[1])/Number(fraction[2]);
   const root=clean.match(/^([+-]?)√(\d+(?:\.\d+)?)$/);if(root) return (root[1]==='-'?-1:1)*Math.sqrt(Number(root[2]));
@@ -49,22 +51,28 @@ export function approachValue(check) {
   if(!agree) assert.equal(check.allowSideDisagreement,true,'Numerical approaches do not agree');
   return agree?(left+right)/2:'DNE';
 }
-export function rationalBehavior(numerator,denominator,point) {
-  const at=(coefficients,x)=>coefficients.reduce((value,coefficient)=>value*x+coefficient,0);
-  const order=original=>{
+const polynomialAt=(coefficients,x)=>coefficients.reduce((value,coefficient)=>value*x+coefficient,0);
+function polynomialRootData(original,point) {
     let coefficients=[...original],multiplicity=0;
     assert.ok(coefficients.length&&coefficients.every(Number.isFinite)&&coefficients[0]!==0,'Invalid polynomial coefficients');
-    while(coefficients.length>1&&Math.abs(at(coefficients,point))<1e-10) {
+    while(coefficients.length>1&&Math.abs(polynomialAt(coefficients,point))<1e-10) {
       const quotient=[coefficients[0]];
       for(let i=1;i<coefficients.length-1;i++)quotient.push(coefficients[i]+point*quotient[i-1]);
       coefficients=quotient;multiplicity++;
     }
-    return {multiplicity,value:at(coefficients,point)};
-  };
-  const n=order(numerator),d=order(denominator);
-  if(d.multiplicity===0)return {kind:'No discontinuity',limit:at(numerator,point)/at(denominator,point)};
+    return {multiplicity,value:polynomialAt(coefficients,point)};
+}
+export function rationalBehavior(numerator,denominator,point) {
+  const n=polynomialRootData(numerator,point),d=polynomialRootData(denominator,point);
+  if(d.multiplicity===0)return {kind:'No discontinuity',limit:polynomialAt(numerator,point)/polynomialAt(denominator,point)};
   if(n.multiplicity<d.multiplicity)return {kind:'Infinite discontinuity',limit:'unbounded'};
   return {kind:'Removable discontinuity',limit:n.multiplicity>d.multiplicity?0:n.value/d.value};
+}
+export function rationalPoleSides(numerator,denominator,point) {
+  const n=polynomialRootData(numerator,point),d=polynomialRootData(denominator,point),power=d.multiplicity-n.multiplicity;
+  assert.ok(power>0,'No rational pole at this input');
+  const sign=Math.sign(n.value/d.value),label=s=>s>0?'+∞':'−∞';
+  return {left:label(sign*((power%2)?-1:1)),right:label(sign)};
 }
 export function intervalOption(text) {
   if(text==='All real numbers')return [{lo:-Infinity,hi:Infinity,lc:false,rc:false}];
@@ -102,7 +110,14 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='domain-intervals') {
+  if (review.check.type==='rational-pole') {
+    const check=review.check,sides=rationalPoleSides(check.numerator,check.denominator,check.point);
+    const expected=check.side==='pair'?`Left: ${sides.left}; right: ${sides.right}`:check.side==='both'?(sides.left===sides.right?sides.left:'Does not exist'):sides[check.side];
+    assert.ok(expected,'Unknown pole side');
+    const matches=question.options.map(option=>option===expected||(expected==='Does not exist'&&option.startsWith(expected)));
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique pole limit');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' pole sign key');
+  } else if (review.check.type==='domain-intervals') {
     const matches=question.options.map(option=>domainMatches(intervalOption(option),review.check.constraints));
     assert.equal(matches.filter(Boolean).length,1,question.id+' unique domain interval');
     assert.equal(matches.indexOf(true),question.correctIndex,question.id+' domain key');

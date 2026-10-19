@@ -733,5 +733,52 @@
       }
     ],
     "description": "A straight line y=x+3 approaches the open point (0,3) from both sides. The only assigned value at x=0 is a separate filled point (0,5). There are no other branches near 0."
+  },
+  "calc-ab-1-13-010": {
+    "xRange": [
+      0,
+      6
+    ],
+    "yRange": [
+      -5,
+      5
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            -2
+          ]
+        ],
+        "start": "closed",
+        "end": "open"
+      },
+      {
+        "points": [
+          [
+            3,
+            -2
+          ],
+          [
+            6,
+            -5
+          ]
+        ],
+        "start": "open",
+        "end": "closed"
+      }
+    ],
+    "dots": [
+      {
+        "x": 3,
+        "y": 4
+      }
+    ],
+    "description": "A descending line y=1−x approaches an open point at (3,−2) from both sides. A separate filled point at (3,4) is the currently assigned value. The branches near x=3 are otherwise unchanged."
   }
 }

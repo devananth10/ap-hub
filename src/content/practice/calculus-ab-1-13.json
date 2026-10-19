@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 1,
+  "topicId": "topic-1-13",
+  "questions": [
+    {
+      "id": "calc-ab-1-13-001",
+      "prompt": "Define f(x)=(2x²−5x−3)/(x−3) for x≠3 and f(3)=k. Which k makes f continuous at 3?",
+      "options": [
+        "0",
+        "7",
+        "3",
+        "−5"
+      ],
+      "correctIndex": 1,
+      "explanation": "Since 2x²−5x−3=(x−3)(2x+1), the nearby quotient equals 2x+1. It approaches 2·3+1=7. Continuity requires the assigned value f(3)=k to equal this finite limit, so k=7. A: The uncancelled numerator being zero at 3 does not make the quotient limit zero. B: Factoring the numerator gives (x−3)(2x+1), so the nearby limit is 7. C: The approach input is not the required output value. D: The linear coefficient is not the limit of the reduced expression."
+    },
+    {
+      "id": "calc-ab-1-13-002",
+      "prompt": "For x≠4 close to 4 let f(x)=(√(x+5)−3)/(x−4), and set f(4)=k. What value of k gives continuity at 4?",
+      "options": [
+        "6",
+        "0",
+        "1/6",
+        "1/3"
+      ],
+      "correctIndex": 2,
+      "explanation": "Multiply by the conjugate to obtain (x+5−9)/[(x−4)(√(x+5)+3)]. For x≠4 this equals 1/(√(x+5)+3). The limiting denominator is 3+3=6, so k must be 1/6. A: This is the limiting denominator of the rationalized expression, not its reciprocal. B: The original 0/0 form is indeterminate, not a zero limit. C: Rationalizing leaves 1/(√(x+5)+3), whose value at 4 is 1/6. D: This omits one of the two contributions of 3 in the conjugate denominator."
+    },
+    {
+      "id": "calc-ab-1-13-003",
+      "prompt": "Let f(x)=ax−1 for x≤2 and f(x)=x²+3 for x>2. Which a makes f continuous at the joining input 2?",
+      "options": [
+        "3",
+        "7",
+        "−4",
+        "4"
+      ],
+      "correctIndex": 3,
+      "explanation": "The right-hand limit is 2²+3=7. The left-hand limit and the assigned value at 2 both equal 2a−1. Therefore 2a−1=7, so 2a=8 and a=4. The polynomial branches are continuous elsewhere. A: This gives the left-hand value 5, which does not match the right-hand limit 7. B: This sets the coefficient equal to the desired output and produces 13 at the join. C: This gives a left-hand value of −9 instead of 7. D: The required equality is 2a−1=7, giving a=4."
+    },
+    {
+      "id": "calc-ab-1-13-004",
+      "prompt": "A piecewise function equals x+4 for x<0, equals 2x−1 for x>0, and is assigned f(0)=k. Which statement about a continuous choice of k is correct?",
+      "options": [
+        "No real k works, because the one-sided limits are 4 and −1.",
+        "k=3/2 works because it is the average of the two branch limits.",
+        "k=4 works because it matches the left branch.",
+        "k=−1 works because it matches the right branch."
+      ],
+      "correctIndex": 0,
+      "explanation": "The left-hand limit at 0 is 4 and the right-hand limit is −1. Their inequality means no two-sided limit exists. Redefining only the value at 0 cannot change these limits, so there is no continuous choice of k. A: A single value cannot repair unequal finite branch limits. B: Averaging does not make the branch limits equal. C: The right-hand limit would still differ from the assigned value. D: The left-hand limit would still differ from the assigned value."
+    },
+    {
+      "id": "calc-ab-1-13-005",
+      "prompt": "Define f(x)=x²+1 for x<0, f(x)=ax+b for 0≤x≤2, and f(x)=3x−1 for x>2. Which pair makes f continuous at both joins?",
+      "options": [
+        "a=1, b=1",
+        "a=2, b=1",
+        "a=2, b=3",
+        "a=3, b=1"
+      ],
+      "correctIndex": 1,
+      "explanation": "At 0, the left limit is 1 and the middle value is b, so b=1. At 2, the right limit is 3·2−1=5 and the middle value is 2a+b. Thus 2a+1=5, giving a=2. Both joins then match their assigned values. A: This matches the join at 0 but gives middle output 3 at 2 instead of 5. B: The joins require b=1 and 2a+b=5, whose solution is (2,1). C: This gives the wrong value 3 at 0 and the wrong value 7 at 2. D: This matches 0 but gives middle output 7 at 2 instead of 5."
+    },
+    {
+      "id": "calc-ab-1-13-006",
+      "prompt": "Angles are in radians. Let f(x)=sin(3x)/x for x≠0 and f(0)=k. Using lim(u→0) sin u/u=1, which k makes f continuous at 0?",
+      "options": [
+        "1",
+        "0",
+        "3",
+        "1/3"
+      ],
+      "correctIndex": 2,
+      "explanation": "For x≠0, sin(3x)/x=3·sin(3x)/(3x). As x→0, the inner input 3x approaches 0, so the given fundamental limit yields 3. The value at 0 must therefore be k=3. A: This misses the scale factor 3 created by the argument substitution. B: The numerator and denominator both approach zero, which is not a zero quotient limit. C: Rewrite the quotient as 3[sin(3x)/(3x)], whose limit is 3. D: The substitution produces a multiplying factor 3 rather than its reciprocal."
+    },
+    {
+      "id": "calc-ab-1-13-007",
+      "prompt": "For x≠2 define f(x)=(x²+ax−6)/(x−2), and assign f(2)=k. Which pair (a,k) makes f continuous at 2?",
+      "options": [
+        "a=0, k=5",
+        "a=1, k=0",
+        "a=−1, k=3",
+        "a=1, k=5"
+      ],
+      "correctIndex": 3,
+      "explanation": "A finite removable limit requires 4+2a−6=0, giving a=1. With that value, x²+x−6=(x−2)(x+3), so the nearby quotient tends to 5. Thus continuity requires both a=1 and k=5. A: The numerator at 2 would be −2, leaving unbounded behavior instead of a finite limit. B: This removes the numerator zero correctly but assigns the wrong point value. C: The numerator at 2 would be −4, so no finite assignment can repair it. D: The numerator must vanish at 2, forcing a=1; the reduced quotient is then x+3 with limit 5."
+    },
+    {
+      "id": "calc-ab-1-13-008",
+      "prompt": "The function f(x)=(x+1)/(x−1) is defined for x≠1. Which choice can remove its discontinuity at 1 by assigning a single finite value f(1)?",
+      "options": [
+        "No finite value can remove it, because the quotient is unbounded near 1.",
+        "Assign f(1)=2.",
+        "Assign f(1)=0.",
+        "Assign f(1)=1."
+      ],
+      "correctIndex": 0,
+      "explanation": "Near 1 the numerator remains close to the nonzero number 2, while the denominator approaches 0. The left and right behaviors are unbounded with opposite signs. Since no finite two-sided limit exists, no finite assigned value can produce continuity at 1. A: The numerator approaches 2 while the denominator approaches zero without cancellation. B: The numerator limit alone is not the quotient limit. C: No finite point assignment can change the unbounded nearby behavior. D: The approach input is not a finite limit of the quotient."
+    },
+    {
+      "id": "calc-ab-1-13-009",
+      "prompt": "Let f(x)=ln(1+x) for x<1 sufficiently close to 1 and f(x)=k+ln x for x≥1. Which k makes f continuous at 1?",
+      "options": [
+        "0",
+        "ln 2",
+        "ln 3",
+        "1"
+      ],
+      "correctIndex": 1,
+      "explanation": "The left-hand limit is ln(1+1)=ln 2. On the included right branch, f(1)=k+ln 1=k, which is also its right-hand limit. Equality therefore requires k=ln 2. Both logarithms are defined and continuous in the relevant one-sided neighborhoods. A: This gives right-hand value 0, whereas ln 2 is positive. B: The left-hand limit is ln 2 and the right-hand limit and value are k+ln 1=k. C: This is the logarithm at the wrong left-branch argument and exceeds ln 2. D: The logarithm is natural, so ln 2 is not 1."
+    },
+    {
+      "id": "calc-ab-1-13-010",
+      "prompt": "The graph below has a currently assigned value at (3,4). If every other function value stays fixed, what replacement for f(3) makes the function continuous at 3?",
+      "options": [
+        "4",
+        "3",
+        "−2",
+        "1"
+      ],
+      "correctIndex": 2,
+      "explanation": "The descending branches both approach (3,−2), so lim(x→3) f(x)=−2. Continuity requires the new assigned value to equal that common limit. Move the single point value from 4 to −2; no other value needs to change. A: This keeps the current mismatch between the point value and the common limit. B: This is the input coordinate, not the approached output. C: Both nearby branches approach the open point with height −2. D: This is the line’s output at input 0, not its limiting height at input 3."
+    },
+    {
+      "id": "calc-ab-1-13-011",
+      "prompt": "For r(x)=(x²+2x−8)/(x²−16) on its natural domain, which statement correctly identifies the possible finite point repair at its excluded inputs?",
+      "options": [
+        "Assign r(4)=3/4, while −4 has an unrepairable vertical asymptote.",
+        "Assign zero at both −4 and 4 to make the whole function continuous.",
+        "Neither excluded input can be repaired by a finite value.",
+        "Assign r(−4)=3/4 to remove the hole; no finite assignment at 4 removes its vertical asymptote."
+      ],
+      "correctIndex": 3,
+      "explanation": "Factor the numerator as (x+4)(x−2) and the denominator as (x+4)(x−4). The reduced quotient has limit (−6)/(−8)=3/4 at −4, so assigning that value repairs the hole. At 4 its numerator approaches 2 while its denominator vanishes, leaving an unrepairable vertical asymptote. A: This reverses the cancelled and uncancelled denominator roots. B: One excluded input has nonzero finite limit 3/4 and the other has no finite limit. C: At −4 a finite common limit exists and can be assigned. D: Only the x+4 denominator factor cancels; the remaining quotient is (x−2)/(x−4)."
+    }
+  ]
+}

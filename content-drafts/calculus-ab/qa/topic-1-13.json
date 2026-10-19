@@ -1,0 +1,247 @@
+{
+  "topicNumber": "1.13",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "a88379357d8e0a44d3440e447986bb09f747ccc025f359bd8448e1ff4a40b02f",
+  "scopeReview": "CED LIM-2.C: determine point values or parameters that remove discontinuities if possible; piecewise boundary equations must match both limits and the actual value. Uses a permitted fundamental trigonometric limit, logarithm continuity and no derivative rules.",
+  "varietyReview": "Repairs involve a polynomial quotient, conjugate, one affine join, an impossible jump, two joins, trig scaling, a parameter removing a pole before assigning a value, an impossible pole, a logarithmic join, original graphical replacement and two differently classified excluded inputs.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-1-13-001",
+      "independentReasoning": "Expand the proposed factorization independently: 2x²+x−6x−3=2x²−5x−3. The denominator factor cancels only away from 3; the reduced polynomial has value 7 there. The raw quotient model corroborates this result from both sides and all numerical choices differ.",
+      "optionReview": [
+        "The uncancelled numerator being zero at 3 does not make the quotient limit zero.",
+        "Factoring the numerator gives (x−3)(2x+1), so the nearby limit is 7.",
+        "The approach input is not the required output value.",
+        "The linear coefficient is not the limit of the reduced expression."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 3,
+        "expression": [
+          "div",
+          [
+            "sub",
+            [
+              "sub",
+              [
+                "mul",
+                2,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ],
+              [
+                "mul",
+                5,
+                "x"
+              ]
+            ],
+            3
+          ],
+          [
+            "sub",
+            "x",
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-13-002",
+      "independentReasoning": "The radicand is positive throughout a neighborhood of 4. Rationalization produces x−4 in the numerator exactly, and cancellation is valid at all nonpoint nearby inputs. Evaluating the remaining continuous reciprocal gives 1/6, with a nonzero denominator; raw sampling checks the original quotient.",
+      "optionReview": [
+        "This is the limiting denominator of the rationalized expression, not its reciprocal.",
+        "The original 0/0 form is indeterminate, not a zero limit.",
+        "Rationalizing leaves 1/(√(x+5)+3), whose value at 4 is 1/6.",
+        "This omits one of the two contributions of 3 in the conjugate denominator."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 4,
+        "expression": [
+          "div",
+          [
+            "sub",
+            [
+              "sqrt",
+              [
+                "add",
+                "x",
+                5
+              ]
+            ],
+            3
+          ],
+          [
+            "sub",
+            "x",
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-13-003",
+      "independentReasoning": "Compute the required right output 7 independently, add 1, and divide by the boundary input 2 to obtain 4. Substituting each alternative coefficient into 2a−1 gives 5, 13 or −9 rather than 7, proving uniqueness and checking the actual assigned branch.",
+      "optionReview": [
+        "This gives the left-hand value 5, which does not match the right-hand limit 7.",
+        "This sets the coefficient equal to the desired output and produces 13 at the join.",
+        "This gives a left-hand value of −9 instead of 7.",
+        "The required equality is 2a−1=7, giving a=4."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          2,
+          3
+        ],
+        "expression": [
+          "div",
+          [
+            "add",
+            [
+              "pow",
+              2,
+              2
+            ],
+            3,
+            1
+          ],
+          2
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-13-004",
+      "independentReasoning": "Independently substitute 0 into the two affine extensions. They differ by 5. The midpoint 3/2 matches neither side, and the two branch-matching options each leave the opposite side unmatched. This is a jump, which cannot be removed by a point assignment.",
+      "optionReview": [
+        "A single value cannot repair unequal finite branch limits.",
+        "Averaging does not make the branch limits equal.",
+        "The right-hand limit would still differ from the assigned value.",
+        "The left-hand limit would still differ from the assigned value."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "No real k works, because the one-sided limits are 4 and −1."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-13-005",
+      "independentReasoning": "Solve the two boundary equations in sequence, rather than matching only one boundary. Substitution of the correct pair gives middle outputs 1 and 5. Every alternative is explicitly tested at both joins, and each fails at least one; the polynomial branches have no other continuity problems.",
+      "optionReview": [
+        "This matches the join at 0 but gives middle output 3 at 2 instead of 5.",
+        "The joins require b=1 and 2a+b=5, whose solution is (2,1).",
+        "This gives the wrong value 3 at 0 and the wrong value 7 at 2.",
+        "This matches 0 but gives middle output 7 at 2 instead of 5."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "a=2, b=1"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-13-006",
+      "independentReasoning": "Independently set u=3x, so x=u/3 and sin u/(u/3)=3 sin u/u. The factor is 3 with no sign reversal, and radian measure is stated. The raw expression sampling corroborates the exact substitution argument and distinguishes all four numerical choices.",
+      "optionReview": [
+        "This misses the scale factor 3 created by the argument substitution.",
+        "The numerator and denominator both approach zero, which is not a zero quotient limit.",
+        "Rewrite the quotient as 3[sin(3x)/(3x)], whose limit is 3.",
+        "The substitution produces a multiplying factor 3 rather than its reciprocal."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 0,
+        "expression": [
+          "div",
+          [
+            "sin",
+            [
+              "mul",
+              3,
+              "x"
+            ]
+          ],
+          "x"
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-13-007",
+      "independentReasoning": "First use the nonzero-numerator-over-vanishing-denominator obstruction to force the unique parameter a. Then expand the factorization for a=1 and evaluate its reduced quotient. Alternatives with a=0 or −1 retain a pole; a=1,k=0 has a finite limit but fails the point-value equality.",
+      "optionReview": [
+        "The numerator at 2 would be −2, leaving unbounded behavior instead of a finite limit.",
+        "This removes the numerator zero correctly but assigns the wrong point value.",
+        "The numerator at 2 would be −4, so no finite assignment can repair it.",
+        "The numerator must vanish at 2, forcing a=1; the reduced quotient is then x+3 with limit 5."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "a=1, k=5"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-13-008",
+      "independentReasoning": "Rewrite the quotient exactly as 1+2/(x−1). The reciprocal term dominates near 1 and cannot be changed by a point assignment. This is a vertical asymptote, not a hole; all three proposed finite repairs fail the same necessary finite-limit condition.",
+      "optionReview": [
+        "The numerator approaches 2 while the denominator approaches zero without cancellation.",
+        "The numerator limit alone is not the quotient limit.",
+        "No finite point assignment can change the unbounded nearby behavior.",
+        "The approach input is not a finite limit of the quotient."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "No finite value can remove it, because the quotient is unbounded near 1."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-13-009",
+      "independentReasoning": "The two inner arguments at the join are 2 and 1, both positive. Independently use ln 1=0 to reduce the matching equation to k=ln 2. Since 0<ln 2<1 and ln 2<ln 3, every alternative is distinct and fails the equality.",
+      "optionReview": [
+        "This gives right-hand value 0, whereas ln 2 is positive.",
+        "The left-hand limit is ln 2 and the right-hand limit and value are k+ln 1=k.",
+        "This is the logarithm at the wrong left-branch argument and exceeds ln 2.",
+        "The logarithm is natural, so ln 2 is not 1."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "ln 2"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-13-010",
+      "independentReasoning": "Read the open endpoint height independently on both sides and compare it with the separate filled point. Both branch heights are −2, so the repair is unique. The graph is original and hash-bound; it provides all required data without an external diagram.",
+      "optionReview": [
+        "This keeps the current mismatch between the point value and the common limit.",
+        "This is the input coordinate, not the approached output.",
+        "Both nearby branches approach the open point with height −2.",
+        "This is the line’s output at input 0, not its limiting height at input 3."
+      ],
+      "check": {
+        "type": "figure-limit",
+        "inputX": 3,
+        "side": "both",
+        "figureSha256": "89aca9ce04f8be79dd51fe2be0e1293681fea5e2b5da363126e3a56478aae94c"
+      },
+      "figureSha256": "89aca9ce04f8be79dd51fe2be0e1293681fea5e2b5da363126e3a56478aae94c"
+    },
+    {
+      "questionId": "calc-ab-1-13-011",
+      "independentReasoning": "Expand both factorizations to check the coefficients. At −4 the root orders cancel and the cofactor ratio is exactly 3/4. At 4 the numerator is nonzero and a denominator factor remains. Thus the two excluded inputs require different conclusions, and the proposed repair is unique.",
+      "optionReview": [
+        "This reverses the cancelled and uncancelled denominator roots.",
+        "One excluded input has nonzero finite limit 3/4 and the other has no finite limit.",
+        "At −4 a finite common limit exists and can be assigned.",
+        "Only the x+4 denominator factor cancels; the remaining quotient is (x−2)/(x−4)."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Assign r(−4)=3/4 to remove the hole; no finite assignment at 4 removes its vertical asymptote."
+      }
+    }
+  ]
+}

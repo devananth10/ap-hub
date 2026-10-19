@@ -1,0 +1,255 @@
+{
+  "topicNumber": "1.14",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "a41535ed899f78b57cb438a3d23dbf8ec91317f28900354c8585065921ee3241",
+  "scopeReview": "CED LIM-2.D.1–2: infinite limits, unbounded behavior and vertical asymptotes. Distinguishes infinity notation from a finite real limit, allows a single one-sided asymptote and preserves domain/sign information. No L’Hôpital rule.",
+  "varietyReview": "Five exact rational-pole sign/multiplicity models, two raw-expression finite-limit corroborations and four conceptual classifications cover opposite sides, even powers, cancellation, logarithmic endpoint behavior, point assignments and exponential damping.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-1-14-001",
+      "independentReasoning": "The denominator has a simple root at 2 and the numerator has nonzero value 3. Its cofactor ratio is positive, giving a positive pole on the right. A sign check at x=2+h yields (3+h)/h=1+3/h for h>0, which increases without bound as h shrinks.",
+      "optionReview": [
+        "This would use a negative denominator, which occurs on the other side.",
+        "A vanishing denominator with a nonzero numerator does not make the quotient vanish.",
+        "The numerator approaches 3>0 while the denominator approaches 0 through positive values.",
+        "This uses the numerator limit and ignores the small denominator."
+      ],
+      "check": {
+        "type": "rational-pole",
+        "point": 2,
+        "numerator": [
+          1,
+          1
+        ],
+        "denominator": [
+          1,
+          -2
+        ],
+        "side": "right"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-14-002",
+      "independentReasoning": "Set x=−1−h with h>0. The quotient becomes (−3−2h)/(−h)=3/h+2, which grows positively without bound. This direct substitution in a positive distance parameter independently checks the cofactor sign result.",
+      "optionReview": [
+        "This overlooks that the denominator is negative on the requested side.",
+        "This is only the finite numerator limit, not the quotient behavior.",
+        "The denominator shrinking in magnitude makes this quotient grow in magnitude.",
+        "Near −1 on the left, both numerator and denominator are negative, and the denominator tends to zero."
+      ],
+      "check": {
+        "type": "rational-pole",
+        "point": -1,
+        "numerator": [
+          2,
+          -1
+        ],
+        "denominator": [
+          1,
+          1
+        ],
+        "side": "left"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-14-003",
+      "independentReasoning": "The denominator has a double root with positive remaining coefficient, and the numerator is −5. Even pole order preserves the same negative sign on both sides. Writing x=3±h gives exactly −5/h² in either case, independently confirming the classification.",
+      "optionReview": [
+        "The squared denominator is positive on both sides, so the negative quotient is unbounded below.",
+        "The square fixes the denominator sign but does not remove the negative numerator.",
+        "A positive denominator tending to zero does not make this nonzero-numerator quotient vanish.",
+        "Both sides have the same negative unbounded behavior in this even-power case."
+      ],
+      "check": {
+        "type": "rational-pole",
+        "point": 3,
+        "numerator": [
+          -5
+        ],
+        "denominator": [
+          1,
+          -6,
+          9
+        ],
+        "side": "both"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-14-004",
+      "independentReasoning": "Compare root multiplicities: numerator order 1, denominator order 3, leaving pole order 2 with positive cofactor ratio. At x=1±h the original quotient is (±h)/(±h)³=1/h²>0. Thus both sides grow positively without bound.",
+      "optionReview": [
+        "The remaining denominator is a square, so its reciprocal is positive.",
+        "After cancelling one factor, the remaining reciprocal square is positive and unbounded on both sides.",
+        "More zero factors remain in the denominator than in the numerator.",
+        "The residual pole has even order, so the unbounded signs agree."
+      ],
+      "check": {
+        "type": "rational-pole",
+        "point": 1,
+        "numerator": [
+          1,
+          -1
+        ],
+        "denominator": [
+          1,
+          -3,
+          3,
+          -1
+        ],
+        "side": "both"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-14-005",
+      "independentReasoning": "Expand the denominator as x²−3x−4. At its simple root 4, the cofactor is 5 and the numerator is 6, so locally the sign behaves like (6/5)/(x−4). Independent factor sign analysis confirms the ordered pair and rules out each alternative.",
+      "optionReview": [
+        "This reverses the sign of x−4 on the two sides of 4.",
+        "The simple denominator factor x−4 changes sign across the asymptote.",
+        "The numerator and x+1 factor are positive near 4; the x−4 factor determines the sign.",
+        "The right-hand denominator is positive near 4, giving a positive quotient."
+      ],
+      "check": {
+        "type": "rational-pole",
+        "point": 4,
+        "numerator": [
+          1,
+          2
+        ],
+        "denominator": [
+          1,
+          -3,
+          -4
+        ],
+        "side": "pair"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-14-006",
+      "independentReasoning": "Factor x²−1=(x−1)(x+1) and cancel exactly one factor. Evaluate the reduced cofactor at 1 to get 2/(−2)=−1, then note the numerator at 3 is 4. These separate root checks establish only the asymptote at 3.",
+      "optionReview": [
+        "This confuses the cancelled factor with the remaining denominator factor.",
+        "A denominator root is not a vertical asymptote when cancellation leaves a finite limit there.",
+        "The x−3 factor remains and has nonzero numerator near 3.",
+        "The x−1 factor cancels, leaving a finite limit at 1 and an uncancelled pole at 3."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "x=3 only."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-14-007",
+      "independentReasoning": "For positive h, f(2−h)=−1/h and f(2+h)=1/h. These become unbounded independently of f(2). The correct conclusion and its stated reason must both be true; the last option gives the correct yes/no result but an explicitly false infinite-height reason.",
+      "optionReview": [
+        "A vertical asymptote is determined by nearby infinite limits, not whether a value is assigned at the input.",
+        "A finite point value cannot change nearby unbounded outputs.",
+        "One-sided unbounded growth with either sign can establish a vertical asymptote.",
+        "That assigned point has the finite height 7; the reason is nearby unbounded growth."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Yes; the one-sided unbounded behavior is unchanged by the finite assignment at 2."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-14-008",
+      "independentReasoning": "Use x=−3+e^(−n) with n→∞: the argument is e^(−n)>0 and the output is −n. More generally log is increasing, so every positive argument smaller than e^(−M) has log below −M. This verifies unbounded decrease, not merely a selected numerical sequence.",
+      "optionReview": [
+        "The logarithm grows positively when its argument grows, not when a positive argument shrinks to zero.",
+        "The argument approaches 0 through positive values, where the natural logarithm decreases without bound.",
+        "The identity ln 1=0 does not apply to an argument approaching zero.",
+        "For x>−3 sufficiently close to −3, x+3 is positive."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "−∞"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-14-009",
+      "independentReasoning": "For every 0<|x−2|<δ, the output is between 0 and exp(−1/δ²). This upper bound tends to zero as δ shrinks. The exact monotonic bound proves the result; original-expression numerical samples may underflow to zero and are only corroborative.",
+      "optionReview": [
+        "The exponent does not approach zero; it approaches negative infinity.",
+        "A large negative exponent makes the exponential small, not large.",
+        "The exponent decreases without bound and the positive exponential tends to zero on both sides.",
+        "An exponential is positive and cannot decrease without bound below zero."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 2,
+        "expression": [
+          "exp",
+          [
+            "div",
+            -1,
+            [
+              "pow",
+              [
+                "sub",
+                "x",
+                2
+              ],
+              2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-14-010",
+      "independentReasoning": "Counterexamples to the insufficient conditions are a line with one point removed and a rational quotient whose common factor cancels. A finite jump has bounded branch limits. A logarithm at its domain endpoint shows why a single available unbounded side suffices.",
+      "optionReview": [
+        "A common factor can make the excluded input a hole rather than an asymptote.",
+        "A missing value alone does not imply unbounded nearby behavior.",
+        "That describes a finite jump, not a vertical asymptote.",
+        "Unbounded approach from one side is enough; the other side and the assigned value need not match."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "At least one of the one-sided limits at a is +∞ or −∞."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-14-011",
+      "independentReasoning": "The numerator has root order 3 and the denominator order 2 at −2. After cancellation, the remaining factor vanishes instead of creating a reciprocal pole. Both side limits are zero, and the raw expression corroborates the exact factor argument.",
+      "optionReview": [
+        "The denominator is (x+2)², so the nearby quotient simplifies to x+2.",
+        "All denominator factors cancel and an extra numerator factor remains, so there is no pole.",
+        "The reduced function approaches zero, not negative unbounded values.",
+        "The excluded point does not prevent a finite limit after valid nearby cancellation."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": -2,
+        "expression": [
+          "div",
+          [
+            "pow",
+            [
+              "add",
+              "x",
+              2
+            ],
+            3
+          ],
+          [
+            "add",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            [
+              "mul",
+              4,
+              "x"
+            ],
+            4
+          ]
+        ]
+      }
+    }
+  ]
+}

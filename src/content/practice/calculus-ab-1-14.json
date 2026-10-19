@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 1,
+  "topicId": "topic-1-14",
+  "questions": [
+    {
+      "id": "calc-ab-1-14-001",
+      "prompt": "What is lim(x→2⁺) (x+1)/(x−2)? Use infinite-limit notation for unbounded growth.",
+      "options": [
+        "−∞",
+        "0",
+        "+∞",
+        "3"
+      ],
+      "correctIndex": 2,
+      "explanation": "For x just greater than 2, x+1 is positive and stays near 3, while x−2 is positive and arbitrarily small. The quotient grows without bound positively, so the right-hand infinite limit is +∞ and x=2 is a vertical asymptote. A: This would use a negative denominator, which occurs on the other side. B: A vanishing denominator with a nonzero numerator does not make the quotient vanish. C: The numerator approaches 3>0 while the denominator approaches 0 through positive values. D: This uses the numerator limit and ignores the small denominator."
+    },
+    {
+      "id": "calc-ab-1-14-002",
+      "prompt": "Determine lim(x→−1⁻) (2x−1)/(x+1).",
+      "options": [
+        "−∞",
+        "−3",
+        "0",
+        "+∞"
+      ],
+      "correctIndex": 3,
+      "explanation": "As x approaches −1 from below, the numerator approaches −3 and the denominator approaches 0 from below. Their quotient is positive and unbounded. Therefore the stated one-sided infinite limit is +∞. A: This overlooks that the denominator is negative on the requested side. B: This is only the finite numerator limit, not the quotient behavior. C: The denominator shrinking in magnitude makes this quotient grow in magnitude. D: Near −1 on the left, both numerator and denominator are negative, and the denominator tends to zero."
+    },
+    {
+      "id": "calc-ab-1-14-003",
+      "prompt": "What is the two-sided infinite limit lim(x→3) [−5/(x−3)²]?",
+      "options": [
+        "−∞",
+        "+∞",
+        "0",
+        "Does not exist because the one-sided unbounded signs are opposite."
+      ],
+      "correctIndex": 0,
+      "explanation": "For x≠3, (x−3)²>0. As x→3 through either side, this positive denominator tends to 0 and the quotient −5/(x−3)² decreases without bound. Both one-sided infinite limits are −∞, so the two-sided infinite limit is −∞. A: The squared denominator is positive on both sides, so the negative quotient is unbounded below. B: The square fixes the denominator sign but does not remove the negative numerator. C: A positive denominator tending to zero does not make this nonzero-numerator quotient vanish. D: Both sides have the same negative unbounded behavior in this even-power case."
+    },
+    {
+      "id": "calc-ab-1-14-004",
+      "prompt": "For x≠1, f(x)=(x−1)/(x−1)³. Which is lim(x→1) f(x)?",
+      "options": [
+        "−∞",
+        "+∞",
+        "0",
+        "Does not exist because the one-sided signs are opposite."
+      ],
+      "correctIndex": 1,
+      "explanation": "For x≠1, f(x)=1/(x−1)². Both sides approach +∞ because the denominator is positive and tends to 0. Cancellation does not remove the vertical asymptote when a squared denominator factor remains. A: The remaining denominator is a square, so its reciprocal is positive. B: After cancelling one factor, the remaining reciprocal square is positive and unbounded on both sides. C: More zero factors remain in the denominator than in the numerator. D: The residual pole has even order, so the unbounded signs agree."
+    },
+    {
+      "id": "calc-ab-1-14-005",
+      "prompt": "For f(x)=(x+2)/[(x−4)(x+1)], which pair describes the one-sided infinite limits at x=4?",
+      "options": [
+        "Left: +∞; right: −∞",
+        "Left: +∞; right: +∞",
+        "Left: −∞; right: +∞",
+        "Left: −∞; right: −∞"
+      ],
+      "correctIndex": 2,
+      "explanation": "Near 4, x+2≈6>0 and x+1≈5>0. Thus the sign is controlled by x−4: negative on the left and positive on the right. Magnitudes grow without bound, giving left −∞ and right +∞. A: This reverses the sign of x−4 on the two sides of 4. B: The simple denominator factor x−4 changes sign across the asymptote. C: The numerator and x+1 factor are positive near 4; the x−4 factor determines the sign. D: The right-hand denominator is positive near 4, giving a positive quotient."
+    },
+    {
+      "id": "calc-ab-1-14-006",
+      "prompt": "Which vertical asymptote or asymptotes belong to the natural-domain function f(x)=(x²−1)/[(x−1)(x−3)]?",
+      "options": [
+        "x=1 only.",
+        "Both x=1 and x=3.",
+        "No vertical asymptotes.",
+        "x=3 only."
+      ],
+      "correctIndex": 3,
+      "explanation": "For x≠1,3 the quotient simplifies to (x+1)/(x−3). Its limit at 1 is −1, so that excluded input is a hole. At 3 the numerator tends to 4 while the denominator tends to 0, making x=3 a vertical asymptote. A: This confuses the cancelled factor with the remaining denominator factor. B: A denominator root is not a vertical asymptote when cancellation leaves a finite limit there. C: The x−3 factor remains and has nonzero numerator near 3. D: The x−1 factor cancels, leaving a finite limit at 1 and an uncancelled pole at 3."
+    },
+    {
+      "id": "calc-ab-1-14-007",
+      "prompt": "Let f(x)=1/(x−2) for x≠2 and f(2)=7. Is x=2 still a vertical asymptote?",
+      "options": [
+        "Yes; the one-sided unbounded behavior is unchanged by the finite assignment at 2.",
+        "No; assigning any value at 2 removes a vertical asymptote.",
+        "No; a vertical asymptote requires both one-sided limits to be +∞.",
+        "Yes, because the point (2,7) itself has infinite height."
+      ],
+      "correctIndex": 0,
+      "explanation": "The left-hand limit is −∞ and the right-hand limit is +∞. Assigning f(2)=7 changes none of those nearby values, so x=2 remains a vertical asymptote. The point value itself is finite and is not what establishes the asymptote. A: A vertical asymptote is determined by nearby infinite limits, not whether a value is assigned at the input. B: A finite point value cannot change nearby unbounded outputs. C: One-sided unbounded growth with either sign can establish a vertical asymptote. D: That assigned point has the finite height 7; the reason is nearby unbounded growth."
+    },
+    {
+      "id": "calc-ab-1-14-008",
+      "prompt": "What is lim(x→−3⁺) ln(x+3) on the real domain?",
+      "options": [
+        "+∞",
+        "−∞",
+        "0",
+        "Does not exist because the argument is negative on the requested side."
+      ],
+      "correctIndex": 1,
+      "explanation": "On the requested right-hand approach, x+3→0⁺ and remains in the logarithm domain. The natural logarithm tends to −∞ as its positive argument approaches zero. Hence x=−3 is a right-side vertical asymptote of this real-domain function. A: The logarithm grows positively when its argument grows, not when a positive argument shrinks to zero. B: The argument approaches 0 through positive values, where the natural logarithm decreases without bound. C: The identity ln 1=0 does not apply to an argument approaching zero. D: For x>−3 sufficiently close to −3, x+3 is positive."
+    },
+    {
+      "id": "calc-ab-1-14-009",
+      "prompt": "For x≠2, define g(x)=exp[−1/(x−2)²], where exp t=eᵗ. What is lim(x→2) g(x)?",
+      "options": [
+        "1",
+        "+∞",
+        "0",
+        "−∞"
+      ],
+      "correctIndex": 2,
+      "explanation": "The square (x−2)² is positive and tends to zero, so −1/(x−2)²→−∞ from either side. The exponential of a quantity tending to −∞ tends to 0. Thus g has a finite nearby limit rather than a vertical asymptote. A: The exponent does not approach zero; it approaches negative infinity. B: A large negative exponent makes the exponential small, not large. C: The exponent decreases without bound and the positive exponential tends to zero on both sides. D: An exponential is positive and cannot decrease without bound below zero."
+    },
+    {
+      "id": "calc-ab-1-14-010",
+      "prompt": "Which condition is sufficient to establish a vertical asymptote x=a for a real-valued function?",
+      "options": [
+        "The denominator of one written formula equals zero at a.",
+        "The value f(a) is undefined.",
+        "The left and right limits are finite but unequal.",
+        "At least one of the one-sided limits at a is +∞ or −∞."
+      ],
+      "correctIndex": 3,
+      "explanation": "A vertical asymptote is established by an infinite one-sided limit at that input. It does not require both sides to grow with the same sign or the function to be undefined at the point. Merely missing a value or seeing a zero denominator is insufficient. A: A common factor can make the excluded input a hole rather than an asymptote. B: A missing value alone does not imply unbounded nearby behavior. C: That describes a finite jump, not a vertical asymptote. D: Unbounded approach from one side is enough; the other side and the assigned value need not match."
+    },
+    {
+      "id": "calc-ab-1-14-011",
+      "prompt": "For x≠−2, let f(x)=(x+2)³/(x²+4x+4). What is lim(x→−2) f(x)?",
+      "options": [
+        "0",
+        "+∞",
+        "−∞",
+        "Does not exist because the denominator is zero at −2."
+      ],
+      "correctIndex": 0,
+      "explanation": "Factor x²+4x+4=(x+2)². For x≠−2 the quotient equals x+2, whose limit at −2 is 0. This excluded input is a removable hole, demonstrating why a vanishing denominator alone does not prove a vertical asymptote. A: The denominator is (x+2)², so the nearby quotient simplifies to x+2. B: All denominator factors cancel and an extra numerator factor remains, so there is no pole. C: The reduced function approaches zero, not negative unbounded values. D: The excluded point does not prevent a finite limit after valid nearby cancellation."
+    }
+  ]
+}

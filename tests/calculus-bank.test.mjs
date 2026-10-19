@@ -5,7 +5,7 @@ import {courses} from '../src/lib/courses.ts';
 import {practiceEntries,practiceCount,practiceHref} from '../src/lib/practice.ts';
 import {questionBatches} from '../src/lib/practice-bank.ts';
 import {validateCalculusBank} from '../scripts/check-calculus-bank.mjs';
-import {verifyCalculusQuestion,figureLimit,evaluateExpression,numericalOption,rationalBehavior,intervalOption,domainMatches} from '../scripts/check-calculus-math.mjs';
+import {verifyCalculusQuestion,figureLimit,evaluateExpression,numericalOption,rationalBehavior,rationalPoleSides,intervalOption,domainMatches} from '../scripts/check-calculus-math.mjs';
 import {practiceFigures} from '../src/lib/practice-figures.ts';
 test('official Calculus AB inventory keeps all eight old IDs and excludes BC-only gaps',()=>{
   const course=courses.find(course=>course.id==='calculus-ab');
@@ -130,4 +130,14 @@ test('interval-domain checks distinguish open, closed, missing and extra boundar
   const batch=questionBatches.find(batch=>batch.courseId==='calculus-ab'&&batch.topicId==='topic-1-12');
   const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-1-12.json','utf8'));
   assert.throws(()=>verifyCalculusQuestion({...batch.questions[9],correctIndex:(batch.questions[9].correctIndex+1)%4},qa.questions[9]),/domain key/);
+});
+test('pole-side signs follow exact residual multiplicity, not large finite samples',()=>{
+  assert.deepEqual(rationalPoleSides([2,-1],[1,1],-1),{left:'+∞',right:'−∞'});
+  assert.deepEqual(rationalPoleSides([-5],[1,-6,9],3),{left:'−∞',right:'−∞'});
+  assert.deepEqual(rationalPoleSides([1,-1],[1,-3,3,-1],1),{left:'+∞',right:'+∞'});
+  assert.throws(()=>rationalPoleSides([1,-1],[1,-1],1),/No rational pole/);
+  assert.equal(numericalOption('−∞'),-Infinity);
+  const batch=questionBatches.find(batch=>batch.courseId==='calculus-ab'&&batch.topicId==='topic-1-14');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-1-14.json','utf8'));
+  assert.throws(()=>verifyCalculusQuestion({...batch.questions[1],correctIndex:(batch.questions[1].correctIndex+1)%4},qa.questions[1]),/pole sign key/);
 });
