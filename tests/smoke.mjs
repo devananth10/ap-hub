@@ -34,7 +34,8 @@ const cases = [
   ["/practice?course=chemistry&unit=1", "88 MCQ questions"],
   ["/practice?course=chemistry&unit=1&topic=moles", "11 MCQ questions"],
   ["/practice?course=chemistry&unit=1&topic=electron-configuration", "11 MCQ questions"],
-  ["/practice?course=biology", "Practice is coming to this scope."],
+  ["/practice?course=calculus-ab&unit=1&topic=limits", "AP Calculus AB practice questions are coming soon."],
+  ["/practice?course=biology", "AP Biology practice questions are coming soon."],
 ];
 for (const [path, expected] of cases) {
   const response = await fetch(`${base}${path}`);
@@ -56,6 +57,11 @@ for (const [path, expected] of cases) {
   if (path === "/practice?course=chemistry&unit=1&topic=moles") {
     assert.ok(html.replace(/<!--.*?-->/g, "").includes("Question 1 of 11"), "Question navigation should show the full set");
     assert.ok(html.includes("This is not an official College Board question"), "Practice must not be presented as official College Board questions");
+  }
+  if (path.includes('course=calculus-ab')) {
+    const empty = html.match(/<div class="empty-state practice-empty">([\s\S]*?)<\/section>/)?.[1];
+    assert.ok(empty && !empty.includes('Chemistry') && !empty.includes('course=chemistry'), 'Calculus empty state must stay in its own course');
+    assert.ok(empty.includes('/courses/calculus-ab/limits'), 'Preserve topic return context');
   }
   console.log(`PASS ${path}`);
 }

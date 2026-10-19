@@ -10,7 +10,7 @@ import { CoursePicker } from "./course-picker";
 import { CourseCardArt } from "./course-card-art";
 import { AcademicArt } from "./academic-art";
 import type { AcademicTheme } from "@/lib/artwork";
-import { practiceHref } from "@/lib/practice-scope";
+import { practiceCount, practiceHref } from "@/lib/practice-scope";
 import { resourcesForTopic, type PublishedResource } from "@/lib/resource-policy";
 
 export function CourseCard({ course }: { course: Course }) {
@@ -20,7 +20,7 @@ export function CourseCard({ course }: { course: Course }) {
   return <article className={`course-card ${course.color}`}><Link className="course-card-main" href={`/courses/${course.id}`}>
     <div className={`course-card-art ${course.color}`}><CourseIcon course={course} size={36} /><span className="subject-category">{course.category}</span><CourseCardArt theme={course.artwork} /></div>
     <div className="course-card-content"><div className="course-title-row"><h3>{course.title}</h3><ChevronRight size={19} /></div><p>{course.description}</p><div className="course-meta"><span><Layers3 size={14} />{course.units.length} {course.units.length === 1 ? "sample unit" : "units"}</span><span className={available.length ? "available-label" : "muted"}>{available.length ? `${available.length} study workspace${available.length === 1 ? "" : "s"}` : "Outline preview"}</span></div><div className="progress-track"><span style={{ width: `${available.length ? count / available.length * 100 : 0}%` }} /></div><span className="small muted">{available.length ? `${count} of ${available.length} available topic completed` : "Lessons coming soon"}</span></div>
-  </Link><Link className="course-card-practice" href={practiceHref({ courseId: course.id })} aria-label={`Start Practice for ${course.title}`}><Target size={15} />Start Practice<ArrowRight size={14} /></Link></article>;
+  </Link><Link className="course-card-practice" href={practiceHref({ courseId: course.id })} aria-label={`${practiceCount({ courseId: course.id }) ? "Start Practice" : "Practice availability"} for ${course.title}`}><Target size={15} />{practiceCount({ courseId: course.id }) ? "Start Practice" : "Practice coming soon"}<ArrowRight size={14} /></Link></article>;
 }
 
 export function Dashboard({ library = false, approvedResources, illustration = "chemistry" }: { library?: boolean; approvedResources: PublishedResource[]; illustration?: AcademicTheme }) {
