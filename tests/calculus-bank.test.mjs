@@ -80,5 +80,13 @@ test('algebraic manipulation answers are corroborated from raw punctured express
   const fraction=batch.questions[6];assert.equal(fraction.options[fraction.correctIndex],'−1/4');
   assert.throws(()=>verifyCalculusQuestion({...fraction,correctIndex:(fraction.correctIndex+1)%4},qa.questions[6]),/punctured-expression key/);
   const sides=qa.questions[9];
-  assert.throws(()=>verifyCalculusQuestion(batch.questions[9],{...sides,check:{...sides.check,allowSideDisagreement:false}}),/numerical approaches do not agree/);
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[9],{...sides,check:{...sides.check,allowSideDisagreement:false}}),/Numerical approaches do not agree/);
+});
+test('procedure selections corroborate their underlying limits and preserve one-sided real domains',()=>{
+  const batch=questionBatches.find(batch=>batch.courseId==='calculus-ab'&&batch.topicId==='topic-1-7');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-1-7.json','utf8'));
+  for(const i of [0,1,2,3,6,7,8,9,10]) verifyCalculusQuestion(batch.questions[i],qa.questions[i]);
+  assert.throws(()=>verifyCalculusQuestion({...batch.questions[0],correctIndex:(batch.questions[0].correctIndex+1)%4},qa.questions[0]),/procedure answer/);
+  const right=qa.questions[9];
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[9],{...right,check:{...right.check,limitCheck:{...right.check.limitCheck,side:'both'}}}),/domain/);
 });

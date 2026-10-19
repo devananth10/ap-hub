@@ -1,9 +1,9 @@
 {
   "officialTopics": 81,
   "targetQuestions": 891,
-  "completedTopics": 6,
-  "questions": 66,
-  "numeric": 41,
+  "completedTopics": 7,
+  "questions": 77,
+  "numeric": 50,
   "repeatedPromptPatterns": [],
   "topics": [
     {
@@ -47,10 +47,16 @@
       "count": 11,
       "status": "validated",
       "file": "src/content/practice/calculus-ab-1-6.json"
+    },
+    {
+      "topic": "1.7",
+      "topicId": "topic-1-7",
+      "count": 11,
+      "status": "validated",
+      "file": "src/content/practice/calculus-ab-1-7.json"
     }
   ],
   "missing": [
-    "1.7",
     "1.8",
     "1.9",
     "1.10",

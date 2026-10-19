@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 1,
+  "topicId": "topic-1-7",
+  "questions": [
+    {
+      "id": "calc-ab-1-7-001",
+      "prompt": "A student wants lim(x→1) (x²+3)/(x+2). Which initial procedure is justified and sufficient?",
+      "options": [
+        "Factor out x−1 from the numerator and cancel it.",
+        "Use a ratio of leading coefficients because the numerator has higher degree.",
+        "Declare the quotient undefined near 1 because it contains a denominator.",
+        "Use direct substitution because both polynomials are continuous and the denominator approaches 3≠0."
+      ],
+      "correctIndex": 3,
+      "explanation": "Check substitution before choosing a more elaborate strategy. At x=1 the numerator is 4 and the denominator is 3. Both component functions are continuous there, and the nonzero denominator makes direct substitution sufficient. No cancellation or end-behavior rule is needed. A: The numerator equals 4 at x=1, so x−1 is not its factor. B: That end-behavior reasoning does not apply at the finite input 1. C: The denominator is nonzero throughout a neighborhood of 1. D: Correct: the quotient law applies immediately and gives 4/3."
+    },
+    {
+      "id": "calc-ab-1-7-002",
+      "prompt": "Direct substitution in lim(x→5) [√(x+4)−3]/(x−5) gives 0/0. Which algebraic step resolves the obstacle?",
+      "options": [
+        "Multiply numerator and denominator by √(x+4)+3, then cancel the resulting common factor.",
+        "Cancel √(x+4) with x−5 as if they were equal factors.",
+        "Replace the quotient 0/0 by 0.",
+        "Discard constants and use only the highest powers of x."
+      ],
+      "correctIndex": 0,
+      "explanation": "Use the conjugate because the vanishing numerator is a difference involving a square root. Multiplying by √(x+4)+3 makes its product (x+4)−9=x−5. Cancelling for x≠5 gives 1/[√(x+4)+3], whose limit is 1/6. A: Correct: the conjugate turns the numerator into x−5. B: These are different expressions, so that cancellation is invalid. C: An indeterminate form is not an arithmetic value. D: The limit is at a finite input, and the cancellation near that input matters."
+    },
+    {
+      "id": "calc-ab-1-7-003",
+      "prompt": "Which procedure correctly handles lim(x→2) |x−2|/(x−2)?",
+      "options": [
+        "Cancel the numerator with the denominator after replacing |x−2| by x−2 for every x.",
+        "Write separate expressions for x<2 and x>2, then compare their one-sided limits.",
+        "Set the quotient equal to zero because the numerator approaches zero.",
+        "Average the two side values and call that the two-sided limit."
+      ],
+      "correctIndex": 1,
+      "explanation": "For x<2, |x−2|=−(x−2), so the ratio is −1. For x>2 it is 1. Side-by-side analysis reveals the disagreement, hence the two-sided limit does not exist. Treating the absolute value as one expression globally would miss the sign change. A: That absolute-value replacement fails for x<2. B: Correct: the sign of x−2 changes, so the two sides must be checked separately. C: The denominator also approaches zero, and its sign matters. D: Averaging unequal side limits does not produce a common approached value."
+    },
+    {
+      "id": "calc-ab-1-7-004",
+      "prompt": "For lim(x→2) (x³−8)/(x−2), which action produces an equivalent expression suitable for substitution?",
+      "options": [
+        "Cancel individual x terms inside the differences.",
+        "Use 8 as the limit because it is the subtracted constant.",
+        "Factor the difference of cubes and cancel x−2 for x≠2.",
+        "Ignore the constant 8 because x³ is the higher-degree term."
+      ],
+      "correctIndex": 2,
+      "explanation": "Recognize x³−2³=(x−2)(x²+2x+4). Cancellation is allowed for nearby x≠2 and leaves a continuous polynomial. Substitution then gives 4+4+4=12. The original value at 2 remains undefined, but it is not needed for the limit. A: Terms in sums or differences are not factors that can be cancelled that way. B: A constant appearing in a numerator does not determine the quotient limit. C: Correct: the quotient becomes x²+2x+4 on the relevant punctured neighborhood. D: Near x=2 the constant is exactly what makes the numerator vanish, so it cannot be ignored."
+    },
+    {
+      "id": "calc-ab-1-7-005",
+      "prompt": "A calculator gives four rounded outputs near x=1, all displayed as 4.000. You need to justify an exact two-sided limit of 4, rather than merely estimate it. Which next step is appropriate?",
+      "options": [
+        "Average the four displayed outputs; their mean proves the limit.",
+        "Assign f(1)=4 and conclude that the nearby limit is now 4.",
+        "Declare the display exact because four agreeing samples eliminate rounding effects.",
+        "Obtain an analytic description or rigorous nearby bounds and examine behavior from both sides."
+      ],
+      "correctIndex": 3,
+      "explanation": "Separate numerical evidence from a justification. A finite rounded display can suggest 4, but an analytic formula, appropriate bounds or other rigorous local information is needed to establish the exact two-sided behavior. The next procedure should address both sides and unsampled inputs. A: An average of sampled outputs does not control all nearby behavior. B: Changing a point value does not determine a limit. C: Agreement after rounding does not prove agreement before rounding or at unsampled inputs. D: Correct: additional information can support an exact argument beyond finitely many rounded samples."
+    },
+    {
+      "id": "calc-ab-1-7-006",
+      "prompt": "Near x=1, f(x)=x+2 for x<1 and f(x)=2x+1 for x>1, while f(1)=0. Which procedure correctly determines lim(x→1) f(x)?",
+      "options": [
+        "Evaluate each branch’s one-sided limit and compare the two results.",
+        "Use the assigned value f(1)=0 as the limit.",
+        "Declare that no limit exists because the displayed point is separate from the branches.",
+        "Average f(0) and f(2) to determine the local limit."
+      ],
+      "correctIndex": 0,
+      "explanation": "Use x+2 from the left and 2x+1 from the right. At the approaching input 1, these continuous expressions tend to 3 and 3. Their agreement gives the limit 3; the assigned value 0 affects continuity but not this limit. A: Correct: both branches approach 3, so their common value gives the two-sided limit. B: The single point value does not determine either approaching branch. C: A separate point value can coexist with an existing two-sided limit. D: Two distant values do not replace the behavior of branches near 1."
+    },
+    {
+      "id": "calc-ab-1-7-007",
+      "prompt": "Which step is valid for finding lim(x→0) x²/(x²+x)?",
+      "options": [
+        "Cancel x² from the numerator with only the x² term in the denominator.",
+        "Factor the denominator as x(x+1), cancel x for x≠0, then evaluate x/(x+1).",
+        "Set 0/0 equal to 0 at the first substitution.",
+        "Use the common leading coefficient 1 as the finite-input limit."
+      ],
+      "correctIndex": 1,
+      "explanation": "Write x²/[x(x+1)]=x/(x+1) for x≠0 near zero. The remaining denominator tends to 1, so the limit is 0. The correct conclusion must come from the equivalent nearby expression, not from assigning a value to 0/0. A: Cancellation cannot be performed against just one term in a sum. B: Correct: the simplified denominator approaches 1, making substitution valid afterward. C: That is invalid arithmetic, even though the correct limit happens to be zero after valid simplification. D: The leading-coefficient ratio is not the applicable rule near x=0."
+    },
+    {
+      "id": "calc-ab-1-7-008",
+      "prompt": "Which procedure is sufficient for lim(x→π/3) sin(x)/[2+cos(x)]?",
+      "options": [
+        "Treat any quotient containing trigonometric functions as automatically 0/0.",
+        "Cancel sin(x) with cos(x) because both contain x.",
+        "Apply continuity of sine and cosine and use the quotient law, since the denominator approaches 5/2.",
+        "Multiply only the numerator by cos(x) to remove trigonometry."
+      ],
+      "correctIndex": 2,
+      "explanation": "Sine and cosine are continuous at π/3. The denominator tends to 2+1/2=5/2≠0, so direct substitution gives (√3/2)/(5/2)=√3/5. No special indeterminate-form procedure is required. A: The supplied finite target gives denominator 5/2 and nonzero numerator, not that indeterminate form. B: Sharing an input does not make these different functions common multiplicative factors. C: Correct: the denominator limit is nonzero, so direct evaluation is justified. D: Changing only the numerator changes the function."
+    },
+    {
+      "id": "calc-ab-1-7-009",
+      "prompt": "To simplify lim(x→2) [(1/(x+1))−(1/3)]/(x−2), which is the useful first algebraic step?",
+      "options": [
+        "Subtract the denominators of the numerator fractions to replace their difference by 1/(x−2).",
+        "Cancel x−2 from just the fraction 1/(x+1) before combining.",
+        "Evaluate the numerator as zero and ignore the denominator.",
+        "Combine the two numerator fractions over the common denominator 3(x+1)."
+      ],
+      "correctIndex": 3,
+      "explanation": "Use 1/(x+1)−1/3=[3−(x+1)]/[3(x+1)]=(2−x)/[3(x+1)]. Dividing by x−2 and using 2−x=−(x−2) gives −1/[3(x+1)], with limit −1/9. Common denominators reveal the cancellable factor. A: Subtracting fractions does not work by subtracting only denominators. B: The needed factor is not present in that term alone; cancellation must follow a valid factorization of the whole numerator. C: The denominator also approaches zero, so that substitution does not evaluate the quotient. D: Correct: the combined numerator exposes 2−x, which is the negative of the vanishing denominator factor."
+    },
+    {
+      "id": "calc-ab-1-7-010",
+      "prompt": "Choose a valid procedure for lim(x→0⁺) √x/(x+√x), with real square roots.",
+      "options": [
+        "For x>0, factor √x from the denominator and cancel it, leaving 1/(√x+1).",
+        "Cancel √x against only the √x term of the denominator, leaving 1/x.",
+        "Use negative real inputs to check the other side with the same square-root formula.",
+        "Assign 0/0 the value 1 without simplifying."
+      ],
+      "correctIndex": 0,
+      "explanation": "For positive x, write x+√x=√x(√x+1). Since √x>0, cancellation is valid on that right-side neighborhood. The remaining expression tends to 1/(0+1)=1. The domain restriction is part of the method, not an optional detail. A: Correct: the right-side restriction permits division by the positive nonzero factor. B: Cancellation across an addition is invalid. C: The real square root is not defined there, and the question requests only the positive-side approach. D: Undefined division is not justified even if the correct limit after valid work is 1."
+    },
+    {
+      "id": "calc-ab-1-7-011",
+      "prompt": "For lim(x→0) [1/x−1/(x+x²)], which approach preserves the information needed to find the limit?",
+      "options": [
+        "Declare the limit nonexistent solely because the individual terms do not have finite limits.",
+        "Combine the terms over a common denominator and simplify before taking the limit.",
+        "Write infinity minus infinity equals zero.",
+        "Discard x² from the second denominator and subtract 1/x−1/x."
+      ],
+      "correctIndex": 1,
+      "explanation": "Since x+x²=x(1+x), combine the terms: 1/x−1/[x(1+x)]=[(1+x)−1]/[x(1+x)]=1/(1+x) for x≠0 near zero. Its limit is 1. Taking separate divergent limits or dropping the smaller term loses essential cancellation information. A: Their difference can have a finite limit after cancellation. B: Correct: the difference equals 1/(1+x) on a sufficiently small punctured neighborhood. C: Infinity is not a real number to which ordinary subtraction applies here. D: That approximation loses the finite difference being investigated."
+    }
+  ]
+}

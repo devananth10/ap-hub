@@ -40,6 +40,15 @@ export function figureLimit(figure,target,side='both') {
   const left=one('left'),right=one('right');
   return typeof left==='number' && typeof right==='number' && Math.abs(left-right)<1e-9?left:'DNE';
 }
+export function approachValue(check) {
+  const c=check.point,h=check.step||0.001,tolerance=check.tolerance||0.00001,factor=2**(check.order||1);
+  const sample=x=>evaluateExpression(check.expression,x);
+  const side=sign=>(factor*sample(c+sign*h/2)-sample(c+sign*h))/(factor-1);
+  if(check.side==='left'||check.side==='right') return side(check.side==='left'?-1:1);
+  const left=side(-1),right=side(1),agree=Math.abs(left-right)<tolerance;
+  if(!agree) assert.equal(check.allowSideDisagreement,true,'Numerical approaches do not agree');
+  return agree?(left+right)/2:'DNE';
+}
 export function verifyCalculusQuestion(question, review) {
   assert.equal(review.questionId,question.id);
   assert.equal(review.optionReview.length,4);
@@ -47,13 +56,12 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='punctured-expression') {
-    const c=review.check.point,h=0.001,tolerance=review.check.tolerance||0.00001;
-    const sample=x=>evaluateExpression(review.check.expression,x);
-    const left=2*sample(c-h/2)-sample(c-h),right=2*sample(c+h/2)-sample(c+h);
-    const agree=Math.abs(left-right)<tolerance;
-    if(!agree) assert.equal(review.check.allowSideDisagreement,true,question.id+' numerical approaches do not agree');
-    const result=agree?(left+right)/2:'DNE';
+  if (review.check.type==='procedure') {
+    const result=approachValue(review.check.limitCheck),expected=review.check.expectedLimit;
+    assert.ok(typeof expected==='number'?typeof result==='number'&&Math.abs(result-expected)<(review.check.limitCheck.tolerance||0.00001):result===expected,question.id+' underlying limit corroboration');
+    assert.equal(answer,review.check.expectedAnswer,question.id+' procedure answer needs re-review');
+  } else if (review.check.type==='punctured-expression') {
+    const tolerance=review.check.tolerance||0.00001,result=approachValue(review.check);
     const matches=question.options.map(option=>result==='DNE'?option.startsWith('Does not exist'):Math.abs(numericalOption(option)-result)<tolerance);
     assert.equal(matches.filter(Boolean).length,1,question.id+' unique punctured-expression result');
     assert.equal(matches.indexOf(true),question.correctIndex,question.id+' punctured-expression key');
