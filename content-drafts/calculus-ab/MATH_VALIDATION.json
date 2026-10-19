@@ -1,0 +1,155 @@
+{
+  "status": "passed-for-present-sets-with-recorded-limitations",
+  "questionsChecked": 44,
+  "programmaticModelChecks": [
+    {
+      "questionId": "calc-ab-1-1-001",
+      "method": "numeric",
+      "operation": "secant"
+    },
+    {
+      "questionId": "calc-ab-1-1-004",
+      "method": "numeric",
+      "operation": "line-slope"
+    },
+    {
+      "questionId": "calc-ab-1-1-005",
+      "method": "numeric",
+      "operation": "quadratic-rate"
+    },
+    {
+      "questionId": "calc-ab-1-1-007",
+      "method": "numeric",
+      "operation": "secant"
+    },
+    {
+      "questionId": "calc-ab-1-1-011",
+      "method": "numeric",
+      "operation": "quadratic-rate"
+    },
+    {
+      "questionId": "calc-ab-1-3-001",
+      "method": "figure-limit",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-3-002",
+      "method": "figure-limit",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-3-003",
+      "method": "figure-limit",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-3-004",
+      "method": "figure-limit",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-3-005",
+      "method": "figure-limit",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-3-006",
+      "method": "figure-limit",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-3-007",
+      "method": "figure-limit",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-3-008",
+      "method": "figure-limit",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-3-009",
+      "method": "figure-limit",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-3-010",
+      "method": "figure-limit",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-3-011",
+      "method": "figure-limit-location",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-4-001",
+      "method": "table-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-4-002",
+      "method": "table-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-4-003",
+      "method": "table-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-4-004",
+      "method": "table-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-4-005",
+      "method": "table-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-4-007",
+      "method": "table-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-4-009",
+      "method": "table-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-4-010",
+      "method": "table-estimate",
+      "operation": null
+    }
+  ],
+  "reasoningReviews": [
+    "calc-ab-1-1-002",
+    "calc-ab-1-1-003",
+    "calc-ab-1-1-006",
+    "calc-ab-1-1-008",
+    "calc-ab-1-1-009",
+    "calc-ab-1-1-010",
+    "calc-ab-1-2-001",
+    "calc-ab-1-2-002",
+    "calc-ab-1-2-003",
+    "calc-ab-1-2-004",
+    "calc-ab-1-2-005",
+    "calc-ab-1-2-006",
+    "calc-ab-1-2-007",
+    "calc-ab-1-2-008",
+    "calc-ab-1-2-009",
+    "calc-ab-1-2-010",
+    "calc-ab-1-2-011",
+    "calc-ab-1-4-006",
+    "calc-ab-1-4-008",
+    "calc-ab-1-4-011"
+  ],
+  "humanReviewPerformed": false,
+  "limitations": [
+    "Inputs/graph/table definitions are separately reviewed, not inferred by a general prose or symbolic theorem prover.",
+    "Table estimations verify displayed numerical consistency, not existence of an exact limit from finite data.",
+    "Expected-answer/hash checks detect stale changes; conceptual validity relies on the separately recorded reasoning review.",
+    "No automated guarantee of perfect originality, semantic variety, AP difficulty or freedom from all conceptual errors."
+  ]
+}

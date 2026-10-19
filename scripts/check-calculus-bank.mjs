@@ -5,6 +5,7 @@ import { courses } from '../src/lib/courses.ts';
 import { validateQuestionBatches } from '../src/lib/practice-bank.ts';
 import { verifyCalculusQuestion } from './check-calculus-math.mjs';
 import {practiceFigures} from '../src/lib/practice-figures.ts';
+import {practiceTables} from '../src/lib/practice-tables.ts';
 const read=file=>JSON.parse(readFileSync(file,'utf8'));
 export const semanticHash=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
 export function validateCalculusBank() {
@@ -35,6 +36,12 @@ export function validateCalculusBank() {
       for(const letter of ['A','B','C','D']) assert.ok(question.explanation.includes(letter+':'),question.id+' needs explanation for every choice');
       assert.ok(question.explanation.length>240,question.id+' needs a complete explanation');
       const review=qa.questions.find(item=>item.questionId===question.id);assert.ok(review);
+      if(question.prompt.includes('table below')) {
+        const table=practiceTables[question.id];assert.ok(table,question.id+' missing table');
+        assert.equal(semanticHash(table),review.tableSha256,'Table changed after review: '+question.id);
+        assert.ok(table.caption && table.headers.length>=2 && table.rows.length>=3);
+        assert.ok(table.rows.every(row=>row.length===table.headers.length&&row.every(value=>typeof value==='string'&&value.length>0)));
+      }
       if(question.prompt.includes('graph below')) {
         const figure=practiceFigures[question.id];assert.ok(figure,question.id+' missing graph');
         assert.ok(figure.description.length>50);

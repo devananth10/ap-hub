@@ -298,3 +298,8 @@ kbd { display:flex; gap:3px; align-items:center; margin-left:auto; padding:0 4px
 .practice-figure .plot-curves { fill:none; stroke:var(--teal); stroke-width:2.5; stroke-linejoin:round; }
 .practice-figure circle { stroke:var(--teal); stroke-width:2; }.practice-figure .open { fill:var(--surface); }.practice-figure .closed { fill:var(--teal); }
 .practice-figure figcaption { font-size:11px; color:var(--muted); margin-top:6px; line-height:1.7; }
+.practice-table-wrap { max-width:100%; overflow-x:auto; margin:20px 0 24px; }
+.practice-table { width:100%; max-width:440px; border-collapse:collapse; border:1px solid var(--border); font-size:13px; font-variant-numeric:tabular-nums; }
+.practice-table caption { text-align:left; color:var(--muted); font-size:12px; line-height:1.7; padding-bottom:12px; }
+.practice-table th,.practice-table td { padding:9px 15px; text-align:center; border:1px solid var(--border); font-weight:400; }
+.practice-table thead th { font-weight:600; background:var(--teal-light); }.practice-table tbody th { color:var(--muted); }

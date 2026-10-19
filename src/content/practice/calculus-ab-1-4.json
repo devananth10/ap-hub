@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 1,
+  "topicId": "topic-1-4",
+  "questions": [
+    {
+      "id": "calc-ab-1-4-001",
+      "prompt": "Use the table below to choose the best estimate of lim(x→2) f(x), assuming the displayed nearby trends continue.",
+      "options": [
+        "7",
+        "2",
+        "6.9",
+        "14"
+      ],
+      "correctIndex": 0,
+      "explanation": "Read both directions toward x=2. The left samples increase toward 7, while the right samples decrease toward 7. Their common suggested value is 7. This is an estimate from the displayed trend, not a general proof from finitely many values. A: Correct: the closest samples on both sides are 6.999 and 7.001, approaching 7. B: This is the target input rather than the approached output. C: This uses a relatively distant sample instead of the continuing nearby trend. D: Adding the two side estimates counts the same approaching value twice."
+    },
+    {
+      "id": "calc-ab-1-4-002",
+      "prompt": "From the table below, what is the best estimate of lim(x→−1⁺) f(x), assuming the shown right-side trend continues?",
+      "options": [
+        "4",
+        "−2",
+        "9",
+        "−1"
+      ],
+      "correctIndex": 1,
+      "explanation": "For a right-hand approach to −1, use inputs −0.99 and −0.9, not the inputs smaller than −1. As those inputs move closer, their outputs move from −2.2 to −2.02, suggesting −2. The isolated row at x=−1 is irrelevant to the limit. A: This is suggested by the left-side data, not the requested right-side approach. B: Correct: for x greater than −1, the closest displayed output is −2.02 and the nearby trend points toward −2. C: This is the assigned point value f(−1), not the neighboring right-side trend. D: This is the input being approached."
+    },
+    {
+      "id": "calc-ab-1-4-003",
+      "prompt": "Assume the left- and right-side trends in the table below continue as x approaches 0. Which conclusion is most consistent with the data for the two-sided limit?",
+      "options": [
+        "0.5",
+        "−2",
+        "Does not exist: the sides suggest different limiting values.",
+        "3"
+      ],
+      "correctIndex": 2,
+      "explanation": "The negative inputs suggest an approached output of −2, and the positive inputs suggest 3. Under the stated continuation assumption, the sides disagree, so they do not define a common two-sided limit. An arithmetic mean cannot repair the disagreement. A: This is the mean of −2 and 3, not a value suggested by either side’s nearby outputs. B: This describes only the left-side trend. C: Correct: the left outputs approach −2 while the right outputs approach 3. D: This describes only the right-side trend."
+    },
+    {
+      "id": "calc-ab-1-4-004",
+      "prompt": "The table below has an undefined entry at x=4. Assuming its nearby trends continue, what is the best estimate of lim(x→4) f(x)?",
+      "options": [
+        "4",
+        "0",
+        "Does not exist because f(4) is undefined",
+        "8"
+      ],
+      "correctIndex": 3,
+      "explanation": "Ignore the undefined entry when estimating a limit and examine the rows approaching it from both directions. The data suggest outputs tending toward 8. A missing value at the approached input does not negate this estimate. A: This is the approached input, not the output. B: An undefined point value does not force nearby outputs toward zero. C: The missing point value alone does not prevent a nearby limit. D: Correct: the nearest outputs 7.99 and 8.01 suggest the common value 8."
+    },
+    {
+      "id": "calc-ab-1-4-005",
+      "prompt": "Use the table below to estimate lim(x→0) f(x), assuming the nearby trend continues. The entry at x=0 is a separately assigned value.",
+      "options": [
+        "0",
+        "5",
+        "1",
+        "Does not exist because the side outputs are positive"
+      ],
+      "correctIndex": 0,
+      "explanation": "Read the rows with nonzero inputs closest to zero: f(−0.001)=0.001 and f(0.001)=0.001. Progressively smaller magnitudes suggest zero as the common limit. The value f(0)=5 does not affect the estimate. A: Correct: the surrounding positive outputs get smaller toward zero on both sides. B: This is f(0), which is different from the nearby trend. C: This does not match the progressively smaller nearby outputs. D: Positive outputs can approach zero without becoming negative."
+    },
+    {
+      "id": "calc-ab-1-4-006",
+      "prompt": "The table below states that its nonzero-input values follow f(x)=1/x². Which behavior describes f(x) as x approaches 0 from either side?",
+      "options": [
+        "The outputs approach 0.",
+        "The outputs grow without bound in the positive direction (+∞).",
+        "The outputs approach 1,000,000 as a finite largest value.",
+        "The outputs grow without bound in the negative direction (−∞)."
+      ],
+      "correctIndex": 1,
+      "explanation": "For f(x)=1/x², inputs ten times closer to zero make outputs one hundred times larger. The formula supplied with the table continues this pattern for arbitrarily small nonzero inputs, so the outputs are unbounded above. No finite displayed maximum is a limiting bound. A: This describes the denominator x² rather than its reciprocal. B: Correct: squaring makes the denominator positive, and its size approaches zero. C: The largest displayed entry is not a bound on the stated function nearer zero. D: The square denominator keeps all nonzero-input outputs positive."
+    },
+    {
+      "id": "calc-ab-1-4-007",
+      "prompt": "Use only the appropriate side of the table below to estimate lim(x→3⁻) f(x), assuming the nearby trend continues.",
+      "options": [
+        "4",
+        "−7",
+        "1",
+        "3"
+      ],
+      "correctIndex": 2,
+      "explanation": "The minus sign directs attention to 2.9, 2.99 and 2.999. Their outputs approach 1. The exact row at 3 and the rows with x>3 answer different questions and are not used for this left-sided estimate. A: This is suggested by the right-side rows. B: This is the assigned value f(3). C: Correct: the inputs just smaller than 3 have outputs 0.9, 0.99 and 0.999, suggesting 1. D: This is the input coordinate rather than a limiting output."
+    },
+    {
+      "id": "calc-ab-1-4-008",
+      "prompt": "All outputs in the table below were rounded to three decimal places. Which statement about the apparent limit at x=1 is defensible from these displayed data alone?",
+      "options": [
+        "The table proves f(x)=1 at every real input.",
+        "Each unrounded sampled output must equal exactly 1.",
+        "The table proves that no limit can exist at x=1.",
+        "Rounding can conceal variation, so the displayed equality does not prove exact constancy or a limit of 1."
+      ],
+      "correctIndex": 3,
+      "explanation": "A displayed 1.000 can represent unrounded values slightly above or below 1. Moreover, a finite set of samples cannot control all nearby inputs. A limit of 1 may be suggested, but neither exact constancy nor existence or nonexistence is proved by this display alone. A: Four rounded nearby outputs give no such global information. B: Rounding to 1.000 also represents nearby unrounded values. C: The displayed data are compatible with a limit; lack of proof is not proof of nonexistence. D: Correct: finite rounded samples do not establish all sufficiently nearby behavior."
+    },
+    {
+      "id": "calc-ab-1-4-009",
+      "prompt": "Using the table below, estimate lim(x→5) [f(x)−4]/(x−5), assuming the quotients at the nearby nonzero differences continue their trend.",
+      "options": [
+        "2",
+        "4",
+        "5",
+        "Does not exist solely because f(5)=9"
+      ],
+      "correctIndex": 0,
+      "explanation": "At x=4.99, calculate (3.9801−4)/(4.99−5)=1.99. At x=5.01, calculate (4.0201−4)/(5.01−5)=2.01. The more distant quotients are 1.9 and 2.1, so the shrinking-side pattern suggests 2. Do not substitute the row x=5. A: Correct: the nearest displayed quotients are 1.99 and 2.01, suggesting 2. B: This is the nearby value of f, not the ratio of differences requested. C: This is the approached input and does not evaluate the quotient. D: The expression at x=5 is excluded; that isolated row does not determine the nearby quotient."
+    },
+    {
+      "id": "calc-ab-1-4-010",
+      "prompt": "The table below gives gas pressure P(V) near volume V=2 liters. Assuming the smooth nearby trend continues, which is the best estimate of lim(V→2) P(V)?",
+      "options": [
+        "2 kPa",
+        "50 kPa",
+        "100 kPa",
+        "0 kPa"
+      ],
+      "correctIndex": 1,
+      "explanation": "As volume approaches 2 from below, pressure values approach 50 from above; from above, they approach 50 from below. The closest pressures 50.251 and 49.751 bracket a common estimate near 50 kPa. Keep the units of the output pressure. A: This confuses the input volume with the output pressure. B: Correct: pressures from either side converge toward about 50 kPa. C: This is approximately the sum of the two closest outputs, not their common approached value. D: The nearby pressures stay near 50, not near zero."
+    },
+    {
+      "id": "calc-ab-1-4-011",
+      "prompt": "The table below gives only three samples, at x=0, 1, and 2. No formula or additional behavior is known. What can be concluded about lim(x→10) f(x)?",
+      "options": [
+        "The limit must be 11.",
+        "The limit must be 10.",
+        "These data do not determine the limit near x=10.",
+        "The limit must be 0 because the table ends before x=10."
+      ],
+      "correctIndex": 2,
+      "explanation": "The three points are compatible with many functions having different behavior near 10. A straight-line pattern on those points is not a rule for all other inputs. Therefore the limit at the distant target cannot be determined from the supplied table. A: This extrapolates a linear rule that was not given. B: The approached input does not determine the approached output. C: Correct: none of the samples describes arbitrarily nearby behavior at the target 10. D: A lack of samples near 10 does not force the function to approach zero."
+    }
+  ]
+}

@@ -2,6 +2,8 @@
 
 The live progress/count ledger is PROGRESS.json / PROGRESS.md. The official inventory is research/official-topics.json (81 topics, 891-question target). Chemistry content is not part of this generation task and remains frozen.
 
+Structural coverage is recorded separately in VALIDATION.json. MATH_VALIDATION.json lists the questions checked by programmatic models versus recorded conceptual reasoning, with explicit limitations. Both are partial-bank records until every topic is complete; neither is a claim of independent human review.
+
 ## Checks and honest limits
 
 - `pnpm test:calculus`: exact schemas, eleven per complete topic, official scope/IDs, answer positions, exact duplicate prompts, complete A/B/C/D explanations, missing dependencies/raw unsupported LaTeX, and per-topic QA semantic hashes. It never treats missing sets as completed questions.
@@ -28,3 +30,9 @@ Topic 1.2 adds eleven distinct notation/interpretation questions. Reasoning revi
 Topic 1.3 adds eleven original SVG graphs and eleven limit questions. The separate verifier calculates one-/two-sided heights directly from the plotted piecewise segments, including jumps, holes, domain endpoints, reflection, shifted inputs and a multiple-location task. A graph hash mismatch or changed key fails the check. All eleven graphs rendered and all eleven correct choices graded correctly in a 390×844 browser run, ending 11/11 (100%); desktop layout was visually checked. Axis labels were increased for mobile readability. The coordinate system is checked to include a genuine origin, and accessible descriptions state the full local geometry. This is original question imagery, not an added external resource.
 
 At this checkpoint: 33/891 questions published, 3/81 topics complete, 16 numerical/graph-model checks plus 17 recorded reasoning reviews, no exact duplicate prompts or number-normalized repeated prompt patterns detected. Semantic similarity and difficulty remain reviewed judgments. Fifty-three unit tests, production build/typecheck, preview route/CSS smoke, all Calculus routes and frozen Chemistry publication checks passed. This is a partial-course checkpoint; no full-bank completion is claimed.
+
+## Topic 1.4 checks
+
+Eleven questions include actual accessible HTML tables, scoped row/column headers and original numerical data. Eight estimates are checked by recomputing from the actual nearest paired values and specified side, including a transformed quotient. The checker tests a unique option within the stated QA tolerance, not a theorem that finite samples determine an exact limit. Questions explicitly describe estimates/trend assumptions. Three reasoning items cover formula-backed unbounded growth, rounded-data limitations and lack of data near a distant target (two explicit countermodels). All table sidecars are hashed against QA, so stale data/keys fail checks. No external table/image dependency or question-schema change is introduced.
+
+All eleven tables and questions were exercised in a 390×844 browser session: each rendered its table, every expected choice graded correctly and the final score was 11/11 (100%). The viewport was reset afterward. At 44 questions the unit suite has 54 passing tests; build/typecheck and all Calculus route/count checks passed. Existing reviews/reports and all Chemistry content remain unchanged.

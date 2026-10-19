@@ -1,0 +1,194 @@
+{
+  "topicNumber": "1.4",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "0319932b9b6547b12472c090de2dcd6f36a687d18368881fc066d1f91e1822c0",
+  "scopeReview": "CED Topic 1.4 LIM-1.C: numerical estimates from explicit tables, side direction, scale/rounding limitations, and distinguishing point values from nearby behavior. Finite samples are not presented as proofs. The infinite-limit item explicitly supplies its formula, and the transformed-quotient item uses direct table arithmetic rather than a differentiation rule.",
+  "varietyReview": "Eleven original paired tables cover two-sided/one-sided estimates, conflicting sides, missing values, isolated assignments, formula-backed unbounded growth, rounded data limitations, a multistep transformed quotient, contextual units and unjustified distant extrapolation. Eight programmatic numerical table checks plus three separately reasoned limitations/formula items.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-1-4-001",
+      "independentReasoning": "The closest samples straddle 2 symmetrically by 0.001, and their outputs straddle 7 symmetrically by 0.001. Their average is exactly 7, and each differs from 7 by only 0.001; all alternative options are substantially farther.",
+      "optionReview": [
+        "Correct: the closest samples on both sides are 6.999 and 7.001, approaching 7.",
+        "This is the target input rather than the approached output.",
+        "This uses a relatively distant sample instead of the continuing nearby trend.",
+        "Adding the two side estimates counts the same approaching value twice."
+      ],
+      "check": {
+        "type": "table-estimate",
+        "inputX": 2,
+        "side": "both",
+        "tolerance": 0.03
+      },
+      "tableSha256": "2c8400f1ad812087ddfd5dfe3c17fb80c77d108b87c9589ead01e6aa1562dc3c"
+    },
+    {
+      "questionId": "calc-ab-1-4-002",
+      "independentReasoning": "The selected right-side rows have distances 0.1 and 0.01 from −1 and output deviations −0.2 and −0.02 from −2. The left rows follow a different trend toward 4, so no averaging of the two sides is justified.",
+      "optionReview": [
+        "This is suggested by the left-side data, not the requested right-side approach.",
+        "Correct: for x greater than −1, the closest displayed output is −2.02 and the nearby trend points toward −2.",
+        "This is the assigned point value f(−1), not the neighboring right-side trend.",
+        "This is the input being approached."
+      ],
+      "check": {
+        "type": "table-estimate",
+        "inputX": -1,
+        "side": "right",
+        "tolerance": 0.03
+      },
+      "tableSha256": "c60ded39fe488e4376eb6eeb4e4a001c65b4e9fa8f3ccb42fb8ac9e012078eda"
+    },
+    {
+      "questionId": "calc-ab-1-4-003",
+      "independentReasoning": "The nearest rows give −2.001 at −0.001 and 3.001 at 0.001. Each is only 0.001 from its separate suggested side value, while the gap between sides is about 5. The result is a trend-based conclusion, not an unconditional proof from the finite sample.",
+      "optionReview": [
+        "This is the mean of −2 and 3, not a value suggested by either side’s nearby outputs.",
+        "This describes only the left-side trend.",
+        "Correct: the left outputs approach −2 while the right outputs approach 3.",
+        "This describes only the right-side trend."
+      ],
+      "check": {
+        "type": "table-estimate",
+        "inputX": 0,
+        "side": "both",
+        "tolerance": 0.1,
+        "disagree": true
+      },
+      "tableSha256": "21f52191b1695e9f1b287dd48b01d62e9eb27c05ab79b00d4993d38a77f6c6b9"
+    },
+    {
+      "questionId": "calc-ab-1-4-004",
+      "independentReasoning": "The symmetric nearest inputs 3.99 and 4.01 yield outputs equally spaced around 8. Their average is 8. The domain exception at the exact input contributes no sample to either approaching side.",
+      "optionReview": [
+        "This is the approached input, not the output.",
+        "An undefined point value does not force nearby outputs toward zero.",
+        "The missing point value alone does not prevent a nearby limit.",
+        "Correct: the nearest outputs 7.99 and 8.01 suggest the common value 8."
+      ],
+      "check": {
+        "type": "table-estimate",
+        "inputX": 4,
+        "side": "both",
+        "tolerance": 0.03
+      },
+      "tableSha256": "26dfedf2c0cbed1eac4419a112a50538b15f276b03120c62ce26b07f6458af80"
+    },
+    {
+      "questionId": "calc-ab-1-4-005",
+      "independentReasoning": "After removing the isolated row at x=0, the nearby samples have y=|x|. Their magnitudes decrease through 0.1, 0.01 and 0.001 on both sides. This independently distinguishes an approached value of zero from the assigned point value 5.",
+      "optionReview": [
+        "Correct: the surrounding positive outputs get smaller toward zero on both sides.",
+        "This is f(0), which is different from the nearby trend.",
+        "This does not match the progressively smaller nearby outputs.",
+        "Positive outputs can approach zero without becoming negative."
+      ],
+      "check": {
+        "type": "table-estimate",
+        "inputX": 0,
+        "side": "both",
+        "tolerance": 0.03
+      },
+      "tableSha256": "4ff8ad5c361f65bff13b9137244cda7a09361194be229e802f2345e61532a98e"
+    },
+    {
+      "questionId": "calc-ab-1-4-006",
+      "independentReasoning": "To exceed any positive threshold M, choose a nonzero input with |x|<1/√M. Then x²<1/M and 1/x²>M, on either side. The table ratios 10000/100 and 1000000/10000 are both 100, consistent with this separate argument; the formula, not finite data alone, supplies the conclusion.",
+      "optionReview": [
+        "This describes the denominator x² rather than its reciprocal.",
+        "Correct: squaring makes the denominator positive, and its size approaches zero.",
+        "The largest displayed entry is not a bound on the stated function nearer zero.",
+        "The square denominator keeps all nonzero-input outputs positive."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The outputs grow without bound in the positive direction (+∞)."
+      },
+      "tableSha256": "131c0c63d67f99ded0bd265be6676d1592c62cd0a3e8c79cf5cc31cd3b38d012"
+    },
+    {
+      "questionId": "calc-ab-1-4-007",
+      "independentReasoning": "Distances to 3 on the chosen side are 0.1, 0.01 and 0.001; deviations from output 1 are their negatives. That shrinking deviation pattern supports the unique nearby choice 1, while the opposite side suggests a different value.",
+      "optionReview": [
+        "This is suggested by the right-side rows.",
+        "This is the assigned value f(3).",
+        "Correct: the inputs just smaller than 3 have outputs 0.9, 0.99 and 0.999, suggesting 1.",
+        "This is the input coordinate rather than a limiting output."
+      ],
+      "check": {
+        "type": "table-estimate",
+        "inputX": 3,
+        "side": "left",
+        "tolerance": 0.03
+      },
+      "tableSha256": "2999b399acaafd0f5e0b793d5ebc783c974b1706be9c9ac08ebca670084e0e99"
+    },
+    {
+      "questionId": "calc-ab-1-4-008",
+      "independentReasoning": "Both an exactly constant function and a gently varying function whose sampled values round to 1.000 fit the display. A function changed only at unsampled inputs can also fit it. These separate constructions eliminate exact-equality and definite-existence/nonexistence claims.",
+      "optionReview": [
+        "Four rounded nearby outputs give no such global information.",
+        "Rounding to 1.000 also represents nearby unrounded values.",
+        "The displayed data are compatible with a limit; lack of proof is not proof of nonexistence.",
+        "Correct: finite rounded samples do not establish all sufficiently nearby behavior."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Rounding can conceal variation, so the displayed equality does not prove exact constancy or a limit of 1."
+      },
+      "tableSha256": "0eb34fdc4a22359abdef2f722769c192066c9c428d5b2d6baba9ed9a9599696d"
+    },
+    {
+      "questionId": "calc-ab-1-4-009",
+      "independentReasoning": "Independently using the exact decimal differences gives −0.0199/−0.01=1.99 and 0.0201/0.01=2.01. Their average is 2. A local model f(x)=4+2(x−5)+(x−5)² away from 5 reproduces every nearby table entry and makes the quotient 2+(x−5).",
+      "optionReview": [
+        "Correct: the nearest displayed quotients are 1.99 and 2.01, suggesting 2.",
+        "This is the nearby value of f, not the ratio of differences requested.",
+        "This is the approached input and does not evaluate the quotient.",
+        "The expression at x=5 is excluded; that isolated row does not determine the nearby quotient."
+      ],
+      "check": {
+        "type": "table-estimate",
+        "inputX": 5,
+        "side": "both",
+        "tolerance": 0.03,
+        "quotientBase": 4
+      },
+      "tableSha256": "10916203b5c53c5c51c9fe37d8184d70d83f460a71a89fb1717d00d3eb79e918"
+    },
+    {
+      "questionId": "calc-ab-1-4-010",
+      "independentReasoning": "A separate symmetric numerical estimate averages the nearest pressures: (50.251+49.751)/2=50.001 kPa, consistent with 50 after table precision is considered. The estimate is not asserted as an exact theorem from finitely many rounded measurements.",
+      "optionReview": [
+        "This confuses the input volume with the output pressure.",
+        "Correct: pressures from either side converge toward about 50 kPa.",
+        "This is approximately the sum of the two closest outputs, not their common approached value.",
+        "The nearby pressures stay near 50, not near zero."
+      ],
+      "check": {
+        "type": "table-estimate",
+        "inputX": 2,
+        "side": "both",
+        "tolerance": 0.3
+      },
+      "tableSha256": "0e23147bb8d7ff36e7f8d6cf54215249899596ae4ec5b555c56b1b128f7817b0"
+    },
+    {
+      "questionId": "calc-ab-1-4-011",
+      "independentReasoning": "Both f(x)=x+1 and f(x)=x+1+x(x−1)(x−2) match all three samples. Their limits at 10 are 11 and 731 respectively. This explicit pair of continuous countermodels proves the supplied data do not force one limiting value.",
+      "optionReview": [
+        "This extrapolates a linear rule that was not given.",
+        "The approached input does not determine the approached output.",
+        "Correct: none of the samples describes arbitrarily nearby behavior at the target 10.",
+        "A lack of samples near 10 does not force the function to approach zero."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "These data do not determine the limit near x=10."
+      },
+      "tableSha256": "9773f3c5cc5d66a0d1290dd5c1be69422bd4d070557347733c26d92c1645ca07"
+    }
+  ]
+}

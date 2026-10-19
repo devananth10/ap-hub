@@ -4,6 +4,7 @@
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {practiceFigures} from '../src/lib/practice-figures.ts';
+import {practiceTables} from '../src/lib/practice-tables.ts';
 export function figureLimit(figure,target,side='both') {
   function one(direction) {
     const values=[];
@@ -24,7 +25,20 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.optionReview.every(text=>typeof text==='string' && text.length>=20));
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
-  if (review.check.type.startsWith('figure-')) {
+  if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
+  if (review.check.type==='table-estimate') {
+    const table=practiceTables[question.id];assert.ok(table);
+    const target=review.check.inputX;
+    const samples=table.rows.map(row=>row.map(value=>Number(value.replace('−','-')))).filter(([x,y])=>Number.isFinite(x)&&Number.isFinite(y)&&x!==target);
+    const side=direction=>samples.filter(([x])=>direction==='left'?x<target:x>target).sort((a,b)=>Math.abs(a[0]-target)-Math.abs(b[0]-target))[0];
+    const transform=([x,y])=>review.check.quotientBase!==undefined?(y-review.check.quotientBase)/(x-target):y;
+    const left=side('left'),right=side('right');
+    const values=review.check.side==='left'?[transform(left)]:review.check.side==='right'?[transform(right)]:[transform(left),transform(right)];
+    if(review.check.disagree) assert.ok(Math.abs(values[0]-values[1])>review.check.tolerance,question.id+' side estimates must disagree');
+    const result=review.check.disagree?'DNE':values.reduce((a,b)=>a+b,0)/values.length;
+    const matches=question.options.map(option=>typeof result==='number'?Math.abs(Number.parseFloat(option.replace('−','-'))-result)<review.check.tolerance:option.startsWith('Does not exist'));
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique numerical estimate');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' table estimate key');
+  } else if (review.check.type.startsWith('figure-')) {
     const figure=practiceFigures[question.id];assert.ok(figure,'Missing original graph: '+question.id);
     assert.equal(createHash('sha256').update(JSON.stringify(figure)).digest('hex'),review.check.figureSha256,'Graph changed after review: '+question.id);
     const actual=question.options.map(option=>option.startsWith('Does not exist')?'DNE':Number.parseFloat(option.replace('−','-')));

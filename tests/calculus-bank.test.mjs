@@ -53,3 +53,11 @@ test('original graph models distinguish holes, jumps, endpoints and transformati
   assert.throws(()=>verifyCalculusQuestion(batch.questions[0],{...qa.questions[0],check:{...qa.questions[0].check,figureSha256:'changed'}}),/Graph changed/);
   assert.throws(()=>verifyCalculusQuestion({...batch.questions[7],correctIndex:(batch.questions[7].correctIndex+1)%4},qa.questions[7]),/graph key/);
 });
+test('table estimates check actual paired data, omit isolated values and reject wrong keys or stale tables',()=>{
+  const batch=questionBatches.find(batch=>batch.courseId==='calculus-ab'&&batch.topicId==='topic-1-4');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-1-4.json','utf8'));
+  for(const i of [0,1,2,3,4,6,8,9]) verifyCalculusQuestion(batch.questions[i],qa.questions[i]);
+  const quotient=batch.questions[8];
+  assert.throws(()=>verifyCalculusQuestion({...quotient,correctIndex:(quotient.correctIndex+1)%4},qa.questions[8]),/table estimate key/);
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[0],{...qa.questions[0],tableSha256:'changed'}),/Table changed/);
+});
