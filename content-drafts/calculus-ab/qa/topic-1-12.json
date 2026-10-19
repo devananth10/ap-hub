@@ -1,0 +1,239 @@
+{
+  "topicNumber": "1.12",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "bf77fabf3efa711e32b7be9a52344121d469b87192a5e4bad1ff4eb219d2f159",
+  "scopeReview": "CED LIM-2.B: continuity at every point of an interval and elementary functions continuous on their domains. Explicit one-sided convention for included natural endpoints. Roots, logarithms, quotient restrictions and a piecewise join; radians for tangent.",
+  "varietyReview": "Varied polynomial, rational, radical, logarithm, radical denominator, intersecting restrictions, tangent, original versus extended domain, piecewise join, bounded radical domain and quadratic logarithm domain. Nine independently solved polynomial-domain models and two separate conceptual proofs.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-1-12-001",
+      "independentReasoning": "The powers are nonnegative integers, with no division, logarithm or even root to restrict the domain. Values at negative inputs and at zero are well defined. The four candidate sets differ by omitted inputs; only the whole real line matches the unrestricted polynomial domain.",
+      "optionReview": [
+        "Polynomials have a real value and are continuous at every real input.",
+        "Negative inputs and zero are also allowed for a polynomial.",
+        "There is no denominator or other restriction excluding zero.",
+        "The constant coefficient does not restrict the input domain to a bounded interval."
+      ],
+      "check": {
+        "type": "domain-intervals",
+        "constraints": []
+      }
+    },
+    {
+      "questionId": "calc-ab-1-12-002",
+      "independentReasoning": "Solve the denominator equation independently to get roots ±3. The numerator values there are −2 and 4, both nonzero. At −1 the denominator is −8, so excluding the numerator root would be an error. The sign-cell domain checker verifies both excluded points and all intervening intervals.",
+      "optionReview": [
+        "A zero of the numerator at −1 does not exclude that input.",
+        "The rational function is continuous wherever its denominator is nonzero, excluding exactly −3 and 3.",
+        "This fails to exclude the other denominator root −3.",
+        "The denominator vanishes at two real inputs."
+      ],
+      "check": {
+        "type": "domain-intervals",
+        "constraints": [
+          {
+            "coefficients": [
+              1,
+              0,
+              -9
+            ],
+            "relation": "!="
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-12-003",
+      "independentReasoning": "Independently solve the linear inequality by subtracting 4 to obtain x≥−4. The endpoint value and right-hand limit are both zero. The problem explicitly uses one-sided endpoint continuity, so the closed left bracket is intended and unambiguous.",
+      "optionReview": [
+        "This unnecessarily omits the defined, right-continuous endpoint.",
+        "This solves x+4≥0 with the wrong sign.",
+        "The radicand is nonnegative for x≥−4, and the right-hand limit at −4 equals f(−4)=0.",
+        "Inputs below −4 produce a negative radicand and no real square root."
+      ],
+      "check": {
+        "type": "domain-intervals",
+        "constraints": [
+          {
+            "coefficients": [
+              1,
+              4
+            ],
+            "relation": ">="
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-12-004",
+      "independentReasoning": "Test the side of the boundary using x=4, where the argument is 1, and x=6, where it is −1. The equality input 5 gives a forbidden zero argument. Solving the inequality and checking these samples identifies the unique open interval.",
+      "optionReview": [
+        "The argument is zero at 5, and ln 0 is not a real value.",
+        "This reverses the inequality when solving 5−x>0.",
+        "The logarithm is not defined when 5−x≤0.",
+        "A logarithm requires its argument to be strictly positive: 5−x>0."
+      ],
+      "check": {
+        "type": "domain-intervals",
+        "constraints": [
+          {
+            "coefficients": [
+              -1,
+              5
+            ],
+            "relation": ">"
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-12-005",
+      "independentReasoning": "Separate the two restrictions rather than only checking the radical: x≥2 and x≠2. Their intersection is x>2. At x=2 the denominator is exactly zero, and below it no real square root exists, ruling out every alternative interval.",
+      "optionReview": [
+        "The square-root radicand must be positive because the resulting root is also a denominator.",
+        "Although the root exists at 2, the denominator is then zero.",
+        "Inputs below 2 have a negative radicand.",
+        "Both the even root and nonzero denominator impose restrictions."
+      ],
+      "check": {
+        "type": "domain-intervals",
+        "constraints": [
+          {
+            "coefficients": [
+              1,
+              -2
+            ],
+            "relation": ">"
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-12-006",
+      "independentReasoning": "Intersect the closed ray from the radicand with the punctured line from the denominator. At the included endpoint −1 the denominator is safely nonzero, while at 3 the numerator equals 2 and cannot remove the pole. The resulting two components have exactly the displayed brackets.",
+      "optionReview": [
+        "This omits the defined endpoint −1, where the right-hand limit equals the value.",
+        "The root allows x≥−1 and the denominator additionally excludes 3.",
+        "This includes the forbidden zero denominator at 3.",
+        "This allows inputs below −1 with a negative radicand."
+      ],
+      "check": {
+        "type": "domain-intervals",
+        "constraints": [
+          {
+            "coefficients": [
+              1,
+              1
+            ],
+            "relation": ">="
+          },
+          {
+            "coefficients": [
+              1,
+              -3
+            ],
+            "relation": "!="
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-12-007",
+      "independentReasoning": "The cosine zeros have form π/2+kπ. Exactly two lie strictly between −π and π. At 0 the denominator is 1, so tangent is continuous there. This trigonometric domain argument is recorded separately rather than passed through the polynomial domain checker.",
+      "optionReview": [
+        "A zero numerator gives tan 0=0, not a discontinuity.",
+        "A quotient of continuous functions still requires a nonzero denominator.",
+        "Tangent is sin x divided by cos x and is continuous wherever that denominator is nonzero.",
+        "These endpoints are outside the restricted interval, and cosine is nonzero there anyway."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The breaks are at x=−π/2 and x=π/2, where cos x=0."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-12-008",
+      "independentReasoning": "Check the original denominator, not merely the reduced expression: x−2=0 only at 2. At −2 the original quotient has value zero and is continuous. The distinction between a hole and a filled continuous extension is preserved in the interval answer.",
+      "optionReview": [
+        "The simplified polynomial is a continuous extension, not the original function at the excluded input.",
+        "The original denominator is nonzero at −2, so that numerator root is allowed.",
+        "The original input 2 is forbidden and negative inputs are not generally excluded.",
+        "The equivalent expression agrees away from 2 but does not add 2 to the original domain."
+      ],
+      "check": {
+        "type": "domain-intervals",
+        "constraints": [
+          {
+            "coefficients": [
+              1,
+              -2
+            ],
+            "relation": "!="
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-12-009",
+      "independentReasoning": "The only possible interior failure of this piecewise affine function is at its partition point. Substitution into both extensions gives 2, and the included branch gives the same actual value. There are no domain restrictions elsewhere, so none of the three smaller proposed sets is maximal.",
+      "optionReview": [
+        "Each branch is polynomial and their limiting and assigned values agree at the only boundary, x=1.",
+        "This unnecessarily deletes the matching boundary point.",
+        "The right branch is also continuous and joins correctly to the left branch.",
+        "The left branch and the boundary point are also continuous."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "All real numbers"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-12-010",
+      "independentReasoning": "Factor 9−x²=(3−x)(3+x) and check its sign: positive between the two roots, zero at them, negative outside. The endpoint square roots are defined and approached from inside the interval. This independently determines both boundaries and closed brackets.",
+      "optionReview": [
+        "This excludes two defined endpoints whose relevant one-sided limits equal zero.",
+        "The radicand is nonnegative exactly when −3≤x≤3, with zero values at both endpoints.",
+        "This selects where x²≥9 instead of where 9−x²≥0.",
+        "A square root output is nonnegative, but negative input values in the domain are allowed."
+      ],
+      "check": {
+        "type": "domain-intervals",
+        "constraints": [
+          {
+            "coefficients": [
+              -1,
+              0,
+              9
+            ],
+            "relation": ">="
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-12-011",
+      "independentReasoning": "Use a sign chart or compare |x| with 2. At x=0 the argument is −4, while at x=3 and x=−3 it is 5. The zeros at ±2 are forbidden for ln, establishing outside intervals with open endpoints rather than inside or closed alternatives.",
+      "optionReview": [
+        "The argument is nonpositive between the roots and vanishes at the endpoints.",
+        "This selects the region where the logarithm argument is negative.",
+        "The argument must be positive, which occurs outside the two roots ±2.",
+        "The two endpoints make the logarithm argument zero and must be excluded."
+      ],
+      "check": {
+        "type": "domain-intervals",
+        "constraints": [
+          {
+            "coefficients": [
+              1,
+              0,
+              -4
+            ],
+            "relation": ">"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 1,
+  "topicId": "topic-1-12",
+  "questions": [
+    {
+      "id": "calc-ab-1-12-001",
+      "prompt": "On which set is the polynomial p(x)=4x⁵−2x+7 continuous?",
+      "options": [
+        "All real numbers",
+        "(0,∞)",
+        "(−∞,0) ∪ (0,∞)",
+        "[−7,7]"
+      ],
+      "correctIndex": 0,
+      "explanation": "Every term of the polynomial is continuous for every real input. Finite sums and constant multiples preserve that continuity. Thus p is continuous throughout its entire domain, which is all real numbers. A: Polynomials have a real value and are continuous at every real input. B: Negative inputs and zero are also allowed for a polynomial. C: There is no denominator or other restriction excluding zero. D: The constant coefficient does not restrict the input domain to a bounded interval."
+    },
+    {
+      "id": "calc-ab-1-12-002",
+      "prompt": "For r(x)=(x+1)/(x²−9) with its natural domain, which union lists all maximal intervals on which r is continuous?",
+      "options": [
+        "(−∞,−1) ∪ (−1,∞)",
+        "(−∞,−3) ∪ (−3,3) ∪ (3,∞)",
+        "(−∞,3) ∪ (3,∞)",
+        "All real numbers"
+      ],
+      "correctIndex": 1,
+      "explanation": "Factor x²−9=(x−3)(x+3). The denominator is zero exactly at −3 and 3; the numerator does not cancel either factor. A rational function is continuous at every other real input, giving the three listed open intervals. A: A zero of the numerator at −1 does not exclude that input. B: The rational function is continuous wherever its denominator is nonzero, excluding exactly −3 and 3. C: This fails to exclude the other denominator root −3. D: The denominator vanishes at two real inputs."
+    },
+    {
+      "id": "calc-ab-1-12-003",
+      "prompt": "Consider f(x)=√(x+4). Include a natural-domain endpoint when the appropriate one-sided continuity condition holds. On which complete natural domain is f continuous?",
+      "options": [
+        "(−4,∞)",
+        "[4,∞)",
+        "[−4,∞)",
+        "All real numbers"
+      ],
+      "correctIndex": 2,
+      "explanation": "The real square root requires x+4≥0, so x≥−4. The square-root function is continuous on this natural domain. At its included left endpoint, the right-hand limit is 0 and equals f(−4), satisfying the endpoint condition. A: This unnecessarily omits the defined, right-continuous endpoint. B: This solves x+4≥0 with the wrong sign. C: The radicand is nonnegative for x≥−4, and the right-hand limit at −4 equals f(−4)=0. D: Inputs below −4 produce a negative radicand and no real square root."
+    },
+    {
+      "id": "calc-ab-1-12-004",
+      "prompt": "Where is the real-valued function g(x)=ln(5−x) continuous on its full natural domain?",
+      "options": [
+        "(−∞,5]",
+        "(5,∞)",
+        "All real numbers",
+        "(−∞,5)"
+      ],
+      "correctIndex": 3,
+      "explanation": "The logarithm is continuous for positive arguments. Requiring 5−x>0 gives x<5. Since the inner affine expression is continuous, the composition is continuous throughout (−∞,5), with 5 excluded. A: The argument is zero at 5, and ln 0 is not a real value. B: This reverses the inequality when solving 5−x>0. C: The logarithm is not defined when 5−x≤0. D: A logarithm requires its argument to be strictly positive: 5−x>0."
+    },
+    {
+      "id": "calc-ab-1-12-005",
+      "prompt": "For h(x)=1/√(x−2), which interval describes the full real domain on which h is continuous?",
+      "options": [
+        "(2,∞)",
+        "[2,∞)",
+        "(−∞,2)",
+        "All real numbers"
+      ],
+      "correctIndex": 0,
+      "explanation": "The square root alone would allow x−2≥0, but division by that root also requires it to be nonzero. Combining these gives x−2>0, or x>2. The reciprocal composition is continuous at every input in that open interval. A: The square-root radicand must be positive because the resulting root is also a denominator. B: Although the root exists at 2, the denominator is then zero. C: Inputs below 2 have a negative radicand. D: Both the even root and nonzero denominator impose restrictions."
+    },
+    {
+      "id": "calc-ab-1-12-006",
+      "prompt": "Let f(x)=√(x+1)/(x−3). With one-sided continuity at an included natural endpoint, which union gives all maximal intervals of continuity?",
+      "options": [
+        "(−1,3) ∪ (3,∞)",
+        "[−1,3) ∪ (3,∞)",
+        "[−1,∞)",
+        "(−∞,3) ∪ (3,∞)"
+      ],
+      "correctIndex": 1,
+      "explanation": "Require x+1≥0 for the real root and x−3≠0 for division. Thus the domain is x≥−1 with x=3 removed. At −1, the root tends to 0 from the right and the denominator tends to −4, so the endpoint value and right-hand limit are both 0. A: This omits the defined endpoint −1, where the right-hand limit equals the value. B: The root allows x≥−1 and the denominator additionally excludes 3. C: This includes the forbidden zero denominator at 3. D: This allows inputs below −1 with a negative radicand."
+    },
+    {
+      "id": "calc-ab-1-12-007",
+      "prompt": "Angles are in radians. Restrict f(x)=tan x to inputs in (−π,π). Which statement identifies all breaks in continuity inside this restricted interval?",
+      "options": [
+        "The only break is at x=0, where sin x=0.",
+        "There are no breaks because sine and cosine are each continuous.",
+        "The breaks are at x=−π/2 and x=π/2, where cos x=0.",
+        "The only breaks are at x=−π and x=π."
+      ],
+      "correctIndex": 2,
+      "explanation": "Use tan x=sin x/cos x. Within (−π,π), cosine vanishes at −π/2 and π/2 and sine is nonzero at both. Tangent is continuous on the three components separated by these two excluded inputs. A: A zero numerator gives tan 0=0, not a discontinuity. B: A quotient of continuous functions still requires a nonzero denominator. C: Tangent is sin x divided by cos x and is continuous wherever that denominator is nonzero. D: These endpoints are outside the restricted interval, and cosine is nonzero there anyway."
+    },
+    {
+      "id": "calc-ab-1-12-008",
+      "prompt": "A student simplifies r(x)=(x²−4)/(x−2) to x+2 and claims the original natural-domain function is continuous on all real numbers. Which set is actually its full set of continuity?",
+      "options": [
+        "All real numbers",
+        "(−∞,−2) ∪ (−2,∞)",
+        "[2,∞)",
+        "(−∞,2) ∪ (2,∞)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Cancellation is valid only when x≠2. On that natural domain the quotient equals x+2 and is continuous. The original formula still has no value at 2, so its maximal continuity intervals are (−∞,2) and (2,∞); a separately defined extension would be a different function at that input. A: The simplified polynomial is a continuous extension, not the original function at the excluded input. B: The original denominator is nonzero at −2, so that numerator root is allowed. C: The original input 2 is forbidden and negative inputs are not generally excluded. D: The equivalent expression agrees away from 2 but does not add 2 to the original domain."
+    },
+    {
+      "id": "calc-ab-1-12-009",
+      "prompt": "Define f(x)=x+1 for x≤1 and f(x)=3−x for x>1. On which largest interval is f continuous?",
+      "options": [
+        "All real numbers",
+        "(−∞,1) ∪ (1,∞)",
+        "(−∞,1]",
+        "(1,∞)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Each affine branch is continuous on its own interval. At x=1 the left-hand value is 2, the right-hand limit is 2, and the assigned value from the x≤1 branch is 2. Therefore the function is continuous at the boundary as well as everywhere else, giving the whole real line. A: Each branch is polynomial and their limiting and assigned values agree at the only boundary, x=1. B: This unnecessarily deletes the matching boundary point. C: The right branch is also continuous and joins correctly to the left branch. D: The left branch and the boundary point are also continuous."
+    },
+    {
+      "id": "calc-ab-1-12-010",
+      "prompt": "For f(x)=√(9−x²), include endpoints when one-sided continuity holds. What is its full real domain of continuity?",
+      "options": [
+        "(−3,3)",
+        "[−3,3]",
+        "(−∞,−3] ∪ [3,∞)",
+        "[0,3]"
+      ],
+      "correctIndex": 1,
+      "explanation": "The condition 9−x²≥0 is equivalent to x²≤9, or −3≤x≤3. The polynomial and square root composition is continuous throughout that domain, using a right-hand limit at −3 and a left-hand limit at 3. Both endpoint values are 0. A: This excludes two defined endpoints whose relevant one-sided limits equal zero. B: The radicand is nonnegative exactly when −3≤x≤3, with zero values at both endpoints. C: This selects where x²≥9 instead of where 9−x²≥0. D: A square root output is nonnegative, but negative input values in the domain are allowed."
+    },
+    {
+      "id": "calc-ab-1-12-011",
+      "prompt": "Which union is the full set of continuity for the real function F(x)=ln(x²−4)?",
+      "options": [
+        "[−2,2]",
+        "(−2,2)",
+        "(−∞,−2) ∪ (2,∞)",
+        "(−∞,−2] ∪ [2,∞)"
+      ],
+      "correctIndex": 2,
+      "explanation": "Require x²−4>0. Since x²−4=(x−2)(x+2), the product is positive for x<−2 or x>2. The logarithm of the continuous positive inner expression is continuous on these two open intervals; neither endpoint is in the real domain. A: The argument is nonpositive between the roots and vanishes at the endpoints. B: This selects the region where the logarithm argument is negative. C: The argument must be positive, which occurs outside the two roots ±2. D: The two endpoints make the logarithm argument zero and must be excluded."
+    }
+  ]
+}

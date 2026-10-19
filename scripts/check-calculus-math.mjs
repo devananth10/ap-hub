@@ -66,6 +66,35 @@ export function rationalBehavior(numerator,denominator,point) {
   if(n.multiplicity<d.multiplicity)return {kind:'Infinite discontinuity',limit:'unbounded'};
   return {kind:'Removable discontinuity',limit:n.multiplicity>d.multiplicity?0:n.value/d.value};
 }
+export function intervalOption(text) {
+  if(text==='All real numbers')return [{lo:-Infinity,hi:Infinity,lc:false,rc:false}];
+  const bound=s=>s==='−∞'?-Infinity:s==='∞'?Infinity:numericalOption(s);
+  return text.split(' ∪ ').map(part=>{
+    const match=part.match(/^([[(])([^,]+),([^\])]+)([\])])$/);assert.ok(match,'Unsupported interval notation: '+part);
+    const lo=bound(match[2]),hi=bound(match[3]),lc=match[1]==='[',rc=match[4]===']';
+    assert.ok(lo<hi&&(!lc||Number.isFinite(lo))&&(!rc||Number.isFinite(hi)),'Invalid interval endpoints');
+    return {lo,hi,lc,rc};
+  });
+}
+export function domainMatches(intervals,constraints) {
+  const value=(coefficients,x)=>coefficients.reduce((total,c)=>total*x+c,0);
+  const roots=coefficients=>{
+    assert.ok(coefficients.length>=2&&coefficients.length<=3&&coefficients.every(Number.isFinite)&&coefficients[0]!==0,'Unsupported domain polynomial');
+    if(coefficients.length===2)return [-coefficients[1]/coefficients[0]];
+    const [a,b,c]=coefficients,d=b*b-4*a*c;return d<0?[]:d===0?[-b/(2*a)]:[(-b-Math.sqrt(d))/(2*a),(-b+Math.sqrt(d))/(2*a)];
+  };
+  const cuts=[...new Set([...constraints.flatMap(c=>roots(c.coefficients)),...intervals.flatMap(i=>[i.lo,i.hi]).filter(Number.isFinite)])].sort((a,b)=>a-b);
+  const edges=[-Infinity,...cuts,Infinity];
+  const samples=[...cuts,...edges.slice(1).map((hi,i)=>!Number.isFinite(edges[i])?(!Number.isFinite(hi)?0:hi-1):!Number.isFinite(hi)?edges[i]+1:(edges[i]+hi)/2)];
+  return samples.every(x=>{
+    const actual=intervals.some(i=>(x>i.lo||(i.lc&&x===i.lo))&&(x<i.hi||(i.rc&&x===i.hi)));
+    const expected=constraints.every(c=>{
+      const y=value(c.coefficients,x);assert.ok(['>','>=','!='].includes(c.relation));
+      return c.relation==='>'?y>1e-10:c.relation==='>='?y>=-1e-10:Math.abs(y)>1e-10;
+    });
+    return actual===expected;
+  });
+}
 export function verifyCalculusQuestion(question, review) {
   assert.equal(review.questionId,question.id);
   assert.equal(review.optionReview.length,4);
@@ -73,7 +102,11 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='rational-classification') {
+  if (review.check.type==='domain-intervals') {
+    const matches=question.options.map(option=>domainMatches(intervalOption(option),review.check.constraints));
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique domain interval');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' domain key');
+  } else if (review.check.type==='rational-classification') {
     const result=rationalBehavior(review.check.numerator,review.check.denominator,review.check.point);
     assert.equal(result.limit,review.check.expectedLimit,question.id+' separately computed rational limit');
     const matches=question.options.map(option=>option.startsWith(result.kind));

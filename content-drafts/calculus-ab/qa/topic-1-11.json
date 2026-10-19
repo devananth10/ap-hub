@@ -1,0 +1,205 @@
+{
+  "topicNumber": "1.11",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "db00828735a4add9dd687ed6ea61f5f2a46f7de8662bb98bdcb3e0e5dad5a685",
+  "scopeReview": "CED LIM-2.A.2: defined point value, existing finite limit and equality. Questions test the definition directly, identify missing/failed clauses and justify continuity via composition, differences and a squeeze bound. Parameter-solving repairs are reserved for 1.13.",
+  "varietyReview": "Covers sufficiency, missing value, matching piecewise values, unequal point/limit, nonexistent common limit, rational substitution, composition input, difference inference, a false converse, damped oscillation and an evaluated consequence.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-1-11-001",
+      "independentReasoning": "Check necessity of each part with a hole, a jump and a mismatched point on a straight line. For the slope distractor, define f(x)=0 for x≠a and f(a)=1: all nearby nonpoint slopes are zero but continuity fails at a. Only the full three-part condition excludes all failures.",
+      "optionReview": [
+        "A right-hand limit with the same value is still needed at this interior point.",
+        "A finite nearby limit can differ from the assigned point value.",
+        "Nearby slopes do not ensure that the value at a matches the nearby limit.",
+        "These are precisely the point-value, finite-limit and equality requirements."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f(a) is defined, lim(x→a) f(x) exists as a finite number, and that limit equals f(a)."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-11-002",
+      "independentReasoning": "Expand (x−5)(x+5) to recover x²−25, and evaluate the extension x+5 at 5. The two-sided finite limit condition is therefore satisfied independently of the missing f(5). Equality with an existing point value is the only missing requirement among the options.",
+      "optionReview": [
+        "The nearby finite limit already exists, but the necessary matching point value is absent.",
+        "Unequal side limits would prevent continuity instead of supplying a missing requirement.",
+        "Factoring fixes the actual nearby limit at 10; a desired point value cannot change it.",
+        "Continuity does not require constant nearby outputs."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The function value f(5) must exist and equal 10."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-11-003",
+      "independentReasoning": "Substitute the boundary input into each polynomial extension separately and compare the results to the assigned value. All three equal 5. The difference in algebraic form and any slope issue do not alter these equalities, while a derivative is unnecessary.",
+      "optionReview": [
+        "Different formulas can meet with the same value and common limit.",
+        "The two formulas have matching limiting values and the assigned value agrees.",
+        "The input 1 need not equal the output required for continuity.",
+        "Continuity is determined by values and limits, not by a derivative requirement."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f is continuous at 1 because both one-sided limits and f(1) equal 5."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-11-004",
+      "independentReasoning": "Keep the three definition clauses separate: existence of f(−3) is true, existence of the finite limit is true, and equality is false. Each alternative incorrectly denies a supplied fact or introduces an irrelevant sign condition.",
+      "optionReview": [
+        "The value f(−3)=12 is explicitly assigned.",
+        "The finite limit is explicitly given as 4.",
+        "Both quantities exist, but 4 and 12 are different.",
+        "Continuity has no restriction that the input must be positive."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The existing finite limit does not equal the existing point value."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-11-005",
+      "independentReasoning": "The hypotheses give a defined point value and two distinct finite branch limits. No averaging rule applies. The three-part continuity test therefore fails at its limit-existence condition, regardless of any comparison of the point value with those two numbers.",
+      "optionReview": [
+        "Two-sided limits are not found by averaging unequal side limits.",
+        "Being between the side limits does not make them equal.",
+        "The assigned value f(a)=0 explicitly satisfies that existence condition.",
+        "A shared finite limit is required before it can be compared with f(a)."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The two-sided limit fails to exist because its one-sided limits disagree."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-11-006",
+      "independentReasoning": "Compute numerator and denominator independently as 3 and 5, and verify the latter is nonzero. Comparing all four displayed fractions gives exactly one value 0.6. The domain condition holds not just at 1 but throughout the real line since x²+4>0.",
+      "optionReview": [
+        "Continuity makes the limit equal f(1)=(1+2)/(1+4).",
+        "This omits the added 2 in the numerator at input 1.",
+        "This omits the squared-input contribution 1 in the denominator.",
+        "This reverses the quotient of the evaluated numerator and denominator."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          1,
+          2,
+          4
+        ],
+        "expression": [
+          "div",
+          [
+            "add",
+            1,
+            2
+          ],
+          [
+            "add",
+            [
+              "pow",
+              1,
+              2
+            ],
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-11-007",
+      "independentReasoning": "Track the two inputs distinctly: x approaches 2 in f, then f(x) approaches −1 in g. The outer function is continuous exactly where needed. The computed point value and composition limit agree at 6; no value or continuity of g at 2 is required.",
+      "optionReview": [
+        "This stops after the inner function instead of applying g.",
+        "The inner values approach −1, where the outer function is continuous and has value 6.",
+        "A negative input to g does not obstruct continuity at its stated continuity point.",
+        "The required outer continuity point is f(2)=−1, not the original input 2."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "h is continuous at 2 and lim(x→2) h(x)=h(2)=6."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-11-008",
+      "independentReasoning": "Rearrange the given identity before taking any limit. Both required finite limits exist by hypothesis, making the difference law valid. For nonzero/nonconstant alternatives take f(x)=0 and g(x)=x+1 near a=0, which satisfies the hypotheses but violates their extra claims.",
+      "optionReview": [
+        "Here one summand f is already continuous, so it cannot cancel a discontinuity in g while keeping F continuous.",
+        "Continuity of the difference imposes no requirement that its value be zero.",
+        "Subtracting the two existing finite limits produces F(a)−f(a)=g(a).",
+        "A difference of continuous functions can vary with x while remaining continuous."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "g is continuous at a because g=F−f and the limit of this difference equals its value at a."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-11-009",
+      "independentReasoning": "Check the required counterexample in two separate stages: absolute-value continuity must hold while original continuity fails. The sign step meets both; the polynomial, absolute value and constant options fail the second requirement. There is exactly one counterexample among these explicit formulas.",
+      "optionReview": [
+        "Both f and |f| are continuous at 0, so this does not disprove the implication.",
+        "This f is itself continuous at 0 and is not a counterexample.",
+        "A constant function is continuous, so it cannot demonstrate the claimed failure.",
+        "Its absolute value is constantly 1, while f has unequal one-sided limits at 0."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f(x)=−1 for x<0 and f(x)=1 for x≥0."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-11-010",
+      "independentReasoning": "Use the universal sine bound rather than an invalid product law with a nonexistent sine-factor limit. Both sides satisfy the same magnitude bound. The separate point assignment supplies the value equal to the limiting product, completing all continuity clauses.",
+      "optionReview": [
+        "The oscillation has vanishing amplitude, establishing the needed limit-value equality.",
+        "The limit of that factor is unnecessary when the entire product is squeezed to zero.",
+        "Continuity requires no monotonicity near the point.",
+        "The function f already has a point value, and only its product behavior is relevant."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f is continuous at 0 because |f(x)|≤|x| forces its limit to equal f(0)=0."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-11-011",
+      "independentReasoning": "Independently compute the scalar product −10 and the squared input 9 before subtracting. The limit exists because each constituent has a finite limit, and the numerical options are pairwise distinct. This uses the defining continuity equality, not an assumption that the input equals the output.",
+      "optionReview": [
+        "This adds the squared-input limit to −10 instead of subtracting it.",
+        "Continuity gives f(x)→−2, so the expression tends to 5(−2)−9.",
+        "This uses 5·2−9 and loses the negative sign of f(3).",
+        "This treats 5f(x) as 5+f(x) before subtracting x²."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          3,
+          -2,
+          5
+        ],
+        "expression": [
+          "sub",
+          [
+            "mul",
+            5,
+            -2
+          ],
+          [
+            "pow",
+            3,
+            2
+          ]
+        ]
+      }
+    }
+  ]
+}

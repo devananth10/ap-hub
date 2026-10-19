@@ -5,7 +5,7 @@ import {courses} from '../src/lib/courses.ts';
 import {practiceEntries,practiceCount,practiceHref} from '../src/lib/practice.ts';
 import {questionBatches} from '../src/lib/practice-bank.ts';
 import {validateCalculusBank} from '../scripts/check-calculus-bank.mjs';
-import {verifyCalculusQuestion,figureLimit,evaluateExpression,numericalOption,rationalBehavior} from '../scripts/check-calculus-math.mjs';
+import {verifyCalculusQuestion,figureLimit,evaluateExpression,numericalOption,rationalBehavior,intervalOption,domainMatches} from '../scripts/check-calculus-math.mjs';
 import {practiceFigures} from '../src/lib/practice-figures.ts';
 test('official Calculus AB inventory keeps all eight old IDs and excludes BC-only gaps',()=>{
   const course=courses.find(course=>course.id==='calculus-ab');
@@ -118,4 +118,16 @@ test('rational discontinuities distinguish removable roots from remaining poles 
   const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-1-10.json','utf8'));
   assert.throws(()=>verifyCalculusQuestion({...batch.questions[5],correctIndex:(batch.questions[5].correctIndex+1)%4},qa.questions[5]),/classification key/);
   assert.throws(()=>verifyCalculusQuestion(batch.questions[0],{...qa.questions[0],check:{...qa.questions[0].check,numerator:[1,1,-9]}}),/rational limit/);
+});
+test('interval-domain checks distinguish open, closed, missing and extra boundaries across every sign cell',()=>{
+  assert.equal(domainMatches(intervalOption('[−4,∞)'),[{coefficients:[1,4],relation:'>='}]),true);
+  assert.equal(domainMatches(intervalOption('(−4,∞)'),[{coefficients:[1,4],relation:'>='}]),false);
+  assert.equal(domainMatches(intervalOption('[2,∞)'),[{coefficients:[1,-2],relation:'>'}]),false);
+  assert.equal(domainMatches(intervalOption('(−∞,−2) ∪ (2,∞)'),[{coefficients:[1,0,-4],relation:'>'}]),true);
+  assert.equal(domainMatches(intervalOption('(−∞,−2] ∪ [2,∞)'),[{coefficients:[1,0,-4],relation:'>'}]),false);
+  assert.equal(domainMatches(intervalOption('(−∞,−3) ∪ (−3,2) ∪ (2,∞)'),[{coefficients:[1,0,-9],relation:'!='}]),false);
+  assert.throws(()=>intervalOption('[−∞,3)'),/Invalid interval/);
+  const batch=questionBatches.find(batch=>batch.courseId==='calculus-ab'&&batch.topicId==='topic-1-12');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-1-12.json','utf8'));
+  assert.throws(()=>verifyCalculusQuestion({...batch.questions[9],correctIndex:(batch.questions[9].correctIndex+1)%4},qa.questions[9]),/domain key/);
 });
