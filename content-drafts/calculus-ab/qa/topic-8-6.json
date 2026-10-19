@@ -1,0 +1,234 @@
+{
+  "topicNumber": "8.6",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "ba86b8226570c708eabc73d49fd2329be3fff99649c71cb67ab6de313d87df18",
+  "scopeReview": "CED CHA-5.A.3: sum positive subregion integrals or integrate absolute difference, splitting at all relevant crossings and checking actual ordering. Distinguish touching from crossing and finite data from exact curve information; no BC-only methods.",
+  "varietyReview": "Original two-boundary crossing graph, odd cubic cancellation, full-period sine, touching absolute-value/parabola boundaries, outer pieces with vertical caps, signed subintegral totals with explicit sign hypotheses, factored integral setup, irrational crossings, finite-data exactness table, even-multiplicity contacts and negative amplitude scaling. Six original-gap/graph numerical corroborations plus five exact sign/evidence reviews.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-8-6-001",
+      "independentReasoning": "Independently subtract the actual piecewise-linear curves, split each zero crossing and integrate the absolute gap. The left signed contribution is +2 and the right −3; their absolute values sum to 5. The graph model checks the original boundary coordinates, not a hand-entered total.",
+      "optionReview": [
+        "This is the signed integral of f−g rather than geometric area.",
+        "This is the absolute value of the net signed integral, which permits cancellation first.",
+        "Add the positive magnitudes 2 and 3 of the two triangular regions.",
+        "This counts only the larger right-hand region."
+      ],
+      "check": {
+        "type": "figure-between-total",
+        "start": -2,
+        "end": 2,
+        "upperCurve": 0,
+        "figureSha256": "cb171d9b376c5be0732588732af79e167b1f90bbf66ddafdfcbe5fd849108b50"
+      },
+      "figureSha256": "cb171d9b376c5be0732588732af79e167b1f90bbf66ddafdfcbe5fd849108b50"
+    },
+    {
+      "questionId": "calc-ab-8-6-002",
+      "independentReasoning": "Independently integrate each signed piece using x⁴/4−x²/2, obtaining +1/4 and −1/4. Adding magnitudes gives 1/2. Quadrature uses the absolute original expression, so it does not repeat the invalid odd-cancellation shortcut.",
+      "optionReview": [
+        "Odd-function cancellation gives signed integral, not total area.",
+        "This includes only one enclosed lobe.",
+        "This doubles the two-lobe total once too many.",
+        "The roots are −1,0,1, and the two equal lobes each have area 1/4."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "abs",
+          [
+            "sub",
+            [
+              "pow",
+              "x",
+              3
+            ],
+            "x"
+          ]
+        ],
+        "start": -1,
+        "end": 1
+      }
+    },
+    {
+      "questionId": "calc-ab-8-6-003",
+      "independentReasoning": "The primitive −cos x gives signed values +2 and −2 on the two halves. Their magnitudes sum to 4. The actual absolute-sine quadrature independently corroborates the piecewise calculation, with zero crossings aligned to the partition.",
+      "optionReview": [
+        "The positive and negative sine lobes each have area magnitude 2.",
+        "This is the signed integral over a full period.",
+        "This includes only one lobe.",
+        "This uses the maximum height 1 across the entire interval."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "abs",
+          [
+            "sin",
+            "x"
+          ]
+        ],
+        "start": 0,
+        "end": 6.283185307179586
+      }
+    },
+    {
+      "questionId": "calc-ab-8-6-004",
+      "independentReasoning": "Let u=|x| between 0 and 1. The gap is u−u²=u(1−u)≥0, which proves the same ordering on both sides. Original-gap quadrature corroborates the area while exact symmetry handles the absolute-value corner.",
+      "optionReview": [
+        "An interior intersection does not force the two areas to cancel.",
+        "The absolute-value curve stays above the parabola on both subintervals, each contributing 1/6.",
+        "This counts only one side of the symmetric region.",
+        "This doubles the correct total again."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "sub",
+          [
+            "abs",
+            "x"
+          ],
+          [
+            "pow",
+            "x",
+            2
+          ]
+        ],
+        "start": -1,
+        "end": 1
+      }
+    },
+    {
+      "questionId": "calc-ab-8-6-005",
+      "independentReasoning": "Using primitive x⁴/4−x²/2 gives 0,−1/4,2 at x=0,1,2. Hence the two positive half-areas are 1/4 and 9/4. Doubling accounts for the reflected side, and the supplied vertical boundaries include the outer pieces.",
+      "optionReview": [
+        "This is the signed integral of an odd difference, after cancellation.",
+        "This counts only the two middle regions between −1 and 1.",
+        "The inner two pieces contribute 1/2 and the outer two pieces 9/2.",
+        "This counts only the outer regions, omitting the middle ones."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "abs",
+          [
+            "sub",
+            [
+              "pow",
+              "x",
+              3
+            ],
+            "x"
+          ]
+        ],
+        "start": -2,
+        "end": 2
+      }
+    },
+    {
+      "questionId": "calc-ab-8-6-006",
+      "independentReasoning": "Independently compute the net signed integral 4−7+2=−1, contrasting it with the sum of magnitudes 13. Integral totals alone would not establish no hidden crossing within each piece; this question explicitly supplies the pointwise sign hypotheses.",
+      "optionReview": [
+        "This is the sum of the signed integrals.",
+        "This takes the absolute value only after signed cancellation.",
+        "This subtracts the first region instead of adding all area magnitudes.",
+        "The specified signs make the three areas 4,7,2."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "13"
+      }
+    },
+    {
+      "questionId": "calc-ab-8-6-007",
+      "independentReasoning": "Independent sample signs at x=3/2 and x=3 are respectively positive and negative. Each factor is nonzero between successive roots, so those signs hold throughout the entire intervals. Both regions have strictly positive area, precluding equivalence with an omitted or reversed contribution.",
+      "optionReview": [
+        "The product is positive on (1,2) and negative on (2,4).",
+        "This allows the opposite-signed pieces to cancel.",
+        "This makes both region contributions negative.",
+        "This omits the second enclosed region."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "∫ from 1 to 2 of (f−g) dx − ∫ from 2 to 4 of (f−g) dx"
+      }
+    },
+    {
+      "questionId": "calc-ab-8-6-008",
+      "independentReasoning": "Independently scale x=√2 u: the absolute gap times dx becomes 4|u³−u|du on [−1,1]. Its integral is 4·(1/2)=2. Exact root placement and sign, not a rounded intersection, establish the bounds.",
+      "optionReview": [
+        "Odd symmetry cancels the signed integral but not geometric area.",
+        "The roots are −√2,0,√2, and each lobe has area 1.",
+        "This includes just one lobe.",
+        "This doubles the already-combined total."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "abs",
+          [
+            "sub",
+            [
+              "pow",
+              "x",
+              3
+            ],
+            [
+              "mul",
+              2,
+              "x"
+            ]
+          ]
+        ],
+        "start": -1.4142135623730951,
+        "end": 1.4142135623730951
+      }
+    },
+    {
+      "questionId": "calc-ab-8-6-009",
+      "independentReasoning": "Add a nonzero smooth function vanishing at each sampled input to one boundary. It preserves all listed data and continuity yet can change area and introduce extra crossings. This independently disproves the insufficient hypotheses without requiring a fabricated exact diagram.",
+      "optionReview": [
+        "Continuous curves can bend or cross again between observations.",
+        "Spacing alone does not determine the curves between samples.",
+        "Then the straight segments represent the actual curves, making their split areas exact.",
+        "Known zeros do not identify every crossing or the intervening geometry."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Both boundaries are linear on each interval between consecutive listed inputs."
+      },
+      "tableSha256": "90fc58a0ec483c8aabab4cbb87f643152f20f78ab6f561fe97d78fce2586132a"
+    },
+    {
+      "questionId": "calc-ab-8-6-010",
+      "independentReasoning": "At x=±1/2 the product is positive, and squared factors cannot make it negative anywhere. An even-power zero at 0 touches without changing sign. This exact factor argument establishes validity without asking for an unnecessarily expanded sixth-degree antiderivative.",
+      "optionReview": [
+        "Even-multiplicity zeros need not reverse the boundary ordering.",
+        "The gap is strictly positive at many intermediate points.",
+        "The signs of coordinates do not reverse a product of squares.",
+        "All factors are squared, so f stays at or above g throughout."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Use ∫ from −1 to 1 of (f−g) dx without reversing the sign at 0."
+      }
+    },
+    {
+      "questionId": "calc-ab-8-6-011",
+      "independentReasoning": "Independently each half-period contributes magnitude 2|a|, so their sum is 4|a|. For a=−2 the result is 8, corroborating the sign convention; the exact absolute-value scaling proves the statement for every allowed constant.",
+      "optionReview": [
+        "Area is 4|a| and |a|=−a for a<0.",
+        "This would be negative despite the positive geometric area.",
+        "The signed full-period integral is zero, but the two lobes still enclose area.",
+        "This is negative and does not include both lobe magnitudes."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "−4a"
+      }
+    }
+  ]
+}

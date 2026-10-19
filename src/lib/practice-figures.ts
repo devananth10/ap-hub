@@ -1,6 +1,7 @@
 import calculusFigures from "../content/practice-figures/calculus-ab.json" with { type: "json" };
 export type PracticeFigure = {
   xRange: number[]; yRange: number[]; description: string;
+  title?:string; caption?:string;
   curves: { points: number[][]; start: "open" | "closed"; end: "open" | "closed" }[];
   dots: {x:number;y:number}[];
   slopeField?: {x:number;y:number;slope:number}[];

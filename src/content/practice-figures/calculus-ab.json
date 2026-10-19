@@ -2767,5 +2767,189 @@
       }
     ],
     "dots": []
+  },
+  "calc-ab-8-3-004": {
+    "xRange": [
+      0,
+      6
+    ],
+    "yRange": [
+      -2,
+      4
+    ],
+    "description": "This is the net rate of change of the number of people in a hall, in people per minute. Straight segments join (0,4), (2,0), (4,−2) and (6,0). There are 100 people initially.",
+    "curves": [
+      {
+        "points": [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            4,
+            -2
+          ],
+          [
+            6,
+            0
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": []
+  },
+  "calc-ab-8-4-006": {
+    "xRange": [
+      0,
+      4
+    ],
+    "yRange": [
+      0,
+      4
+    ],
+    "description": "Two continuous boundaries on [0,4]. The upper boundary f consists of straight segments joining (0,3), (1,4) and (4,2). The lower boundary g is the horizontal segment from (0,1) to (4,1). Vertical boundaries at 0 and 4 close the region.",
+    "curves": [
+      {
+        "points": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      },
+      {
+        "points": [
+          [
+            0,
+            1
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": [],
+    "title": "Boundary curves f and g",
+    "caption": "Upper boundary f joins (0,3), (1,4), (4,2). Lower boundary g is y=1. Vertical endpoint lines close the region."
+  },
+  "calc-ab-8-5-001": {
+    "xRange": [
+      0,
+      4
+    ],
+    "yRange": [
+      0,
+      2
+    ],
+    "title": "Region between x=y and x=4−y",
+    "description": "The left boundary is the segment x=y from (0,0) to (2,2). The right boundary is x=4−y from (4,0) to (2,2). The horizontal segment y=0 closes the triangular region. Horizontal slice widths shrink from 4 at y=0 to 0 at y=2.",
+    "caption": "Left: x=y. Right: x=4−y. Bottom: y=0. Integrate horizontal slice widths with respect to y.",
+    "curves": [
+      {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      },
+      {
+        "points": [
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": []
+  },
+  "calc-ab-8-6-001": {
+    "xRange": [
+      -2,
+      2
+    ],
+    "yRange": [
+      -3,
+      2
+    ],
+    "title": "Crossing boundaries f and g",
+    "description": "The boundary f is piecewise linear through (−2,0), (−1,2), (0,0), (1,−3), (2,0). Boundary g is y=0 from x=−2 to x=2. Their intersections are −2,0,2. The left triangular region has area 2 and the right has area 3.",
+    "caption": "f joins (−2,0), (−1,2), (0,0), (1,−3), (2,0). g is y=0. Find total area of both enclosed regions.",
+    "curves": [
+      {
+        "points": [
+          [
+            -2,
+            0
+          ],
+          [
+            -1,
+            2
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            -3
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      },
+      {
+        "points": [
+          [
+            -2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": []
   }
 }

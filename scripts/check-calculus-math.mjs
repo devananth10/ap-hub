@@ -7,6 +7,7 @@ import {practiceFigures} from '../src/lib/practice-figures.ts';
 import {practiceTables} from '../src/lib/practice-tables.ts';
 export function numericalOption(text) {
   const clean=text.replaceAll('−','-').trim();
+  assert.ok(!/^[+-]?\d+(?:\.\d+)?(?:\/\d+(?:\.\d+)?)?\s+(?:ln|log|sin|cos|tan|exp|√|π)\b/.test(clean),'Symbolic numerical option needs an explicit verified parser: '+text);
   if(clean==='∞'||clean==='+∞')return Infinity;
   if(clean==='-∞')return -Infinity;
   const piFraction=clean.match(/^([+-]?\d+)\/π$/);if(piFraction)return Number(piFraction[1])/Math.PI;
@@ -243,7 +244,8 @@ export function verifyCalculusQuestion(question, review) {
     const value=x=>{
       if(c.type==='riemann-expression')return evaluateExpression(c.expression,x);
       const rows=table.rows.filter(r=>Number(r[0])===x);assert.equal(rows.length,1,'Required Riemann sample missing or repeated');
-      return Number(rows[0][1].replaceAll('−','-'));
+      const parse=i=>Number(rows[0][i].replaceAll('−','-'));
+      return c.differenceColumns?parse(c.differenceColumns[0])-parse(c.differenceColumns[1]):parse(1);
     };
     const expected=(c.initial??0)+(c.scale??1)*riemannApproximation(c.partition,c.method,value),tolerance=c.tolerance??1e-10;
     const matches=question.options.map(option=>Math.abs(numericalOption(option)-expected)<tolerance);
@@ -499,7 +501,17 @@ export function verifyCalculusQuestion(question, review) {
     assert.equal(createHash('sha256').update(JSON.stringify(figure)).digest('hex'),review.check.figureSha256,'Graph changed after review: '+question.id);
     const actual=question.options.map(option=>option.startsWith('Does not exist')?'DNE':numericalOption(option));
     let matches;
-    if(review.check.type==='figure-accumulation-extremum') {
+    if(review.check.type==='figure-between'||review.check.type==='figure-between-total') {
+      const c=review.check;assert.equal(figure.curves.length,2);
+      const upper=figure.curves[c.upperCurve].points,lower=figure.curves[1-c.upperCurve].points;
+      const interpolate=(points,x)=>{const i=points.findIndex((p,i)=>i&&points[i-1][0]<=x&&x<=p[0]);assert.ok(i>0);const[a,fa]=points[i-1],[b,fb]=points[i];return fa+(x-a)*(fb-fa)/(b-a);};
+      const boundaries=[c.start,c.end,...upper.map(p=>p[0]),...lower.map(p=>p[0])].filter(x=>c.start<=x&&x<=c.end);
+      const total=c.type==='figure-between-total';
+      if(!total)assert.ok(boundaries.every(x=>interpolate(upper,x)>=interpolate(lower,x)),'Upper boundary is below lower boundary');
+      const gaps=[...new Set(boundaries)].sort((a,b)=>a-b).map(x=>[x,interpolate(upper,x)-interpolate(lower,x)]);
+      const expected=piecewiseArea(gaps,c.start,c.end,total);
+      matches=actual.map(answer=>Math.abs(answer-expected)<1e-10);
+    } else if(review.check.type==='figure-accumulation-extremum') {
       const c=review.check;assert.equal(figure.curves.length,1);const points=figure.curves[0].points;
       const candidates=[c.start,c.end];
       for(let i=1;i<points.length;i++){const [a,fa]=points[i-1],[b,fb]=points[i];assert.ok(fa!==0||fb!==0,'Zero plateaus need separate extrema review');if(fa===0)candidates.push(a);if(fb===0)candidates.push(b);if(fa*fb<0)candidates.push(a-fa*(b-a)/(fb-fa));}

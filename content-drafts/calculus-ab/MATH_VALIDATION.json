@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 781,
+  "questionsChecked": 825,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -2181,6 +2181,136 @@
       "questionId": "calc-ab-8-2-011",
       "method": "definite-integral",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-3-001",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-3-004",
+      "method": "figure-accumulation",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-3-005",
+      "method": "table-riemann",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-3-007",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-3-008",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-3-009",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-4-001",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-4-002",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-4-003",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-4-004",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-4-006",
+      "method": "figure-between",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-4-010",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-5-001",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-5-002",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-5-003",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-5-004",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-5-007",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-5-008",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-5-009",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-5-011",
+      "method": "table-riemann",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-6-001",
+      "method": "figure-between-total",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-6-002",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-6-003",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-6-004",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-6-005",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-6-008",
+      "method": "definite-integral",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -2528,7 +2658,25 @@
     "calc-ab-8-1-010",
     "calc-ab-8-2-006",
     "calc-ab-8-2-009",
-    "calc-ab-8-2-010"
+    "calc-ab-8-2-010",
+    "calc-ab-8-3-002",
+    "calc-ab-8-3-003",
+    "calc-ab-8-3-006",
+    "calc-ab-8-3-010",
+    "calc-ab-8-3-011",
+    "calc-ab-8-4-005",
+    "calc-ab-8-4-007",
+    "calc-ab-8-4-008",
+    "calc-ab-8-4-009",
+    "calc-ab-8-4-011",
+    "calc-ab-8-5-005",
+    "calc-ab-8-5-006",
+    "calc-ab-8-5-010",
+    "calc-ab-8-6-006",
+    "calc-ab-8-6-007",
+    "calc-ab-8-6-009",
+    "calc-ab-8-6-010",
+    "calc-ab-8-6-011"
   ],
   "humanReviewPerformed": false,
   "limitations": [

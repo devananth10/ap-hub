@@ -1,0 +1,298 @@
+{
+  "topicNumber": "8.5",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "96ae59c3b81b1878239030e8a4ae1ebfe448d48417e46450999d62fcc4d46aa5",
+  "scopeReview": "CED CHA-5.A.2: horizontal slices, right-minus-left, y-bounds and coordinate-consistent representations. Parameter scaling uses AB algebra/integration; logarithmic primitive is checked by differentiation, without requiring BC integration by parts.",
+  "varietyReview": "Original triangle diagram with geometry check, fixed horizontal bounds, all-negative x-coordinates, symmetric two-parabola lens, slice setup, sideways parabola with both y branches, exponential width, logarithmic width, negative left coordinate, symbolic parameter scaling and nonuniform paired-boundary table. Eight original-width integral/table corroborations plus exact geometric/branch reasoning.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-8-5-001",
+      "independentReasoning": "Independently use triangle geometry: the horizontal base has length 4 and the vertical height is 2, giving area (1/2)·4·2=4. The actual boundary segments and visible y-bounds match the formula; the computational variable x in the internal AST is only a dummy integrator.",
+      "optionReview": [
+        "This is the bounding rectangle area without the triangle factor.",
+        "The horizontal width is 4−2y for 0≤y≤2, whose integral is 4.",
+        "This is the top y-coordinate, not the area.",
+        "This subtracts left minus right rather than right minus left."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "sub",
+          4,
+          [
+            "mul",
+            2,
+            "x"
+          ]
+        ],
+        "start": 0,
+        "end": 2
+      },
+      "figureSha256": "01e0b613b4edf6ab78fb901b01b9717cfd491b3ab6cb7ebb43701f7d454a1027"
+    },
+    {
+      "questionId": "calc-ab-8-5-002",
+      "independentReasoning": "Independently calculate the right-boundary integral 12−2=10 and the left-boundary integral 8/3. Their difference is 22/3. Exact factor signs establish the entire boundary ordering; the horizontal bound y=0 is given and need not be a curve intersection.",
+      "optionReview": [
+        "This reverses right and left.",
+        "This integrates the right boundary without subtracting the left.",
+        "The right boundary is 6−y and the left is y² on this y-interval.",
+        "This integrates the left parabola alone."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "sub",
+          [
+            "sub",
+            6,
+            "x"
+          ],
+          [
+            "pow",
+            "x",
+            2
+          ]
+        ],
+        "start": 0,
+        "end": 2
+      }
+    },
+    {
+      "questionId": "calc-ab-8-5-003",
+      "independentReasoning": "Use symmetry independently: 2∫ from 0 to 3 of (9−y²)dy=2(27−9)=36. The rectangle has width 9 and height 6, hence area 54, confirming the difference between a bounding rectangle and the actual curved region.",
+      "optionReview": [
+        "This confuses negative x-coordinates with negative geometric area.",
+        "This counts only the part above the x-axis.",
+        "This is the bounding rectangle area before subtracting the parabolic portion.",
+        "The y-bounds are −3 and 3, with horizontal width 9−y²."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "sub",
+          9,
+          [
+            "pow",
+            "x",
+            2
+          ]
+        ],
+        "start": -3,
+        "end": 3
+      }
+    },
+    {
+      "questionId": "calc-ab-8-5-004",
+      "independentReasoning": "Independently exploit even symmetry: twice the integral from 0 to 2 gives 2(16−16/3)=64/3. At y=0 the gap is 8 and at y=±2 it vanishes, consistent with the selected ordering and a value less than the 32-unit bounding rectangle.",
+      "optionReview": [
+        "The width is 8−2y² from y=−2 to y=2.",
+        "This counts only half the symmetric region.",
+        "This is the enclosing rectangle area before accounting for shrinking widths.",
+        "This reverses the horizontal boundary order."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "sub",
+          8,
+          [
+            "mul",
+            2,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ]
+        ],
+        "start": -2,
+        "end": 2
+      }
+    },
+    {
+      "questionId": "calc-ab-8-5-005",
+      "independentReasoning": "Independently check a rectangle with L=−1, R=3 and y from 2 to 5. The formula gives (3−(−1))(5−2)=12, matching width times height. It also checks the units as horizontal length times vertical length.",
+      "optionReview": [
+        "This reverses the nonnegative strip width.",
+        "A strip’s horizontal width is right minus left, and its thickness is dy.",
+        "The sum of coordinates is not the distance between them.",
+        "The stated bounds and functions use y, so the strip thickness must use y as well."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "∫ from c to d of [R(y)−L(y)] dy"
+      }
+    },
+    {
+      "questionId": "calc-ab-8-5-006",
+      "independentReasoning": "Independent integration gives [y²/2+2y−y³/3] from −1 to 2=10/3−(−7/6)=9/2. A vertical method is possible but requires changing the lower boundary at x=1, explaining why the horizontal representation is simpler.",
+      "optionReview": [
+        "These are x-extents, not the y-bounds required by the displayed functions.",
+        "This reverses right and left.",
+        "The y-intersections are −1 and 2, and the line is the right boundary between them.",
+        "Adding horizontal coordinates does not give slice width."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "∫ from −1 to 2 of (y+2−y²) dy"
+      }
+    },
+    {
+      "questionId": "calc-ab-8-5-007",
+      "independentReasoning": "Independently substitute u=eʸ: du=eʸdy and the bounds become 1 and 3, giving ∫ from 1 to 3 of 1 du=2. This checks both the lower endpoint and the coordinate roles.",
+      "optionReview": [
+        "This omits the lower-endpoint contribution.",
+        "This uses unit width rather than the varying width eʸ.",
+        "This treats the arithmetic mean of the endpoint widths as exact for an exponential.",
+        "Integrating eʸ from 0 to ln 3 gives 3−1."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "exp",
+          "x"
+        ],
+        "start": 0,
+        "end": 1.0986122886681096,
+        "optionExpressions": {
+          "2": 2,
+          "3": 3,
+          "ln 3": [
+            "ln",
+            3
+          ],
+          "2 ln 3": [
+            "mul",
+            2,
+            [
+              "ln",
+              3
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-5-008",
+      "independentReasoning": "Independently substitute u=y+1 to turn the area into ∫ from 1 to 4 of ln u du. The known primitive u ln u−u has derivative ln u and gives the same result. Quadrature of the actual horizontal width corroborates it.",
+      "optionReview": [
+        "A primitive is (y+1)ln(y+1)−(y+1), with both endpoints included.",
+        "This is the final width, not the accumulated area.",
+        "This omits the lower primitive value −1.",
+        "This treats the maximum width as constant over the entire height."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "ln",
+          [
+            "add",
+            "x",
+            1
+          ]
+        ],
+        "start": 0,
+        "end": 3,
+        "optionExpressions": {
+          "4 ln 4−3": [
+            "sub",
+            [
+              "mul",
+              4,
+              [
+                "ln",
+                4
+              ]
+            ],
+            3
+          ],
+          "ln 4": [
+            "ln",
+            4
+          ],
+          "4 ln 4−4": [
+            "sub",
+            [
+              "mul",
+              4,
+              [
+                "ln",
+                4
+              ]
+            ],
+            4
+          ],
+          "3 ln 4": [
+            "mul",
+            3,
+            [
+              "ln",
+              4
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-5-009",
+      "independentReasoning": "Independent trapezoid geometry uses widths 2 and 5 and height 3, giving 3(2+5)/2=21/2. Integrating only y+1 yields 9/2; the left-of-axis rectangle contributes the missing area 6.",
+      "optionReview": [
+        "This subtracts the magnitude 2 instead of subtracting the left coordinate −2.",
+        "Its endpoint widths are 2 and 5 across a height of 3.",
+        "This integrates only the right coordinate and ignores the left boundary.",
+        "This uses the maximum width 5 across the whole height."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "add",
+          "x",
+          3
+        ],
+        "start": -1,
+        "end": 2
+      }
+    },
+    {
+      "questionId": "calc-ab-8-5-010",
+      "independentReasoning": "Independently scale y=√a u. The width becomes a(1−u²) and the thickness √a du, so the area is a^(3/2)∫ from −1 to 1 of (1−u²)du=(4/3)a^(3/2). This checks the coefficient and exponent separately.",
+      "optionReview": [
+        "This uses the wrong power for the vertical scale √a.",
+        "This includes only half of the symmetric region.",
+        "The y-bounds are ±√a and the width is a−y².",
+        "This is the bounding rectangle area before subtracting the parabola contribution."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "(4/3)a^(3/2)"
+      }
+    },
+    {
+      "questionId": "calc-ab-8-5-011",
+      "independentReasoning": "Independently compute the right-coordinate trapezoids as 1(4+5)/2+2(5+7)/2=33/2 and the left-coordinate trapezoids as 1(1+2)/2+2(2+2)/2=11/2. Their difference is 11. Finite data support this specified approximation, not an exact area for every interpolating boundary.",
+      "optionReview": [
+        "This ignores the wider second y-interval.",
+        "This estimates the integral of the right boundary alone.",
+        "This reverses left and right widths.",
+        "The widths are 3,3,5, giving 3+8=11."
+      ],
+      "check": {
+        "type": "table-riemann",
+        "partition": [
+          0,
+          1,
+          3
+        ],
+        "method": "trapezoid",
+        "differenceColumns": [
+          2,
+          1
+        ]
+      },
+      "tableSha256": "900841122f64bd4b4b61472500f246130fc5adab47689d2c49cfbd8e4b53a446"
+    }
+  ]
+}

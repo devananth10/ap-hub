@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 8,
+  "topicId": "topic-8-5",
+  "questions": [
+    {
+      "id": "calc-ab-8-5-001",
+      "prompt": "Use horizontal slices to find the area of the triangular region in the graph below, bounded by x=y, x=4−y and y=0.",
+      "options": [
+        "8",
+        "4",
+        "2",
+        "−4"
+      ],
+      "correctIndex": 1,
+      "explanation": "The boundaries meet at y=4−y, so y=2. At a fixed y between 0 and 2, the right x-coordinate is 4−y and the left coordinate is y. The slice width is 4−2y. Integrating gives ∫ from 0 to 2 of (4−2y)dy=[4y−y²] from 0 to 2=4. A: This is the bounding rectangle area without the triangle factor. B: The horizontal width is 4−2y for 0≤y≤2, whose integral is 4. C: This is the top y-coordinate, not the area. D: This subtracts left minus right rather than right minus left."
+    },
+    {
+      "id": "calc-ab-8-5-002",
+      "prompt": "Find the area between x=y² and x=6−y for 0≤y≤2, closed by the horizontal endpoint lines.",
+      "options": [
+        "−22/3",
+        "10",
+        "22/3",
+        "8/3"
+      ],
+      "correctIndex": 2,
+      "explanation": "The horizontal gap is (6−y)−y², nonnegative on [0,2] because it equals (2−y)(y+3). Area is ∫ from 0 to 2 of (6−y−y²)dy=[6y−y²/2−y³/3] from 0 to 2=12−2−8/3=22/3. A: This reverses right and left. B: This integrates the right boundary without subtracting the left. C: The right boundary is 6−y and the left is y² on this y-interval. D: This integrates the left parabola alone."
+    },
+    {
+      "id": "calc-ab-8-5-003",
+      "prompt": "The sideways parabola x=−y² and the vertical line x=−9 enclose a region. What is its area?",
+      "options": [
+        "−36",
+        "18",
+        "54",
+        "36"
+      ],
+      "correctIndex": 3,
+      "explanation": "Intersections satisfy −y²=−9, so y=±3. The right boundary is −y² and the left is −9, giving width 9−y². Integrate from −3 to 3: [9y−y³/3] from −3 to 3=36. Being left of the y-axis does not make the area negative. A: This confuses negative x-coordinates with negative geometric area. B: This counts only the part above the x-axis. C: This is the bounding rectangle area before subtracting the parabolic portion. D: The y-bounds are −3 and 3, with horizontal width 9−y²."
+    },
+    {
+      "id": "calc-ab-8-5-004",
+      "prompt": "Find the area enclosed by x=4−y² and x=y²−4.",
+      "options": [
+        "64/3",
+        "32/3",
+        "32",
+        "−64/3"
+      ],
+      "correctIndex": 0,
+      "explanation": "Set 4−y²=y²−4 to get y²=4, so the bounds are −2 and 2. Between them the right curve is 4−y² and the left is y²−4. Their difference is 8−2y². The integral is [8y−(2/3)y³] from −2 to 2=64/3. A: The width is 8−2y² from y=−2 to y=2. B: This counts only half the symmetric region. C: This is the enclosing rectangle area before accounting for shrinking widths. D: This reverses the horizontal boundary order."
+    },
+    {
+      "id": "calc-ab-8-5-005",
+      "prompt": "A region has left boundary x=L(y), right boundary x=R(y), and c≤y≤d, where R(y)≥L(y). Which integral gives its area using horizontal strips?",
+      "options": [
+        "∫ from c to d of [L(y)−R(y)] dy",
+        "∫ from c to d of [R(y)−L(y)] dy",
+        "∫ from c to d of [R(y)+L(y)] dy",
+        "∫ from c to d of [R(y)−L(y)] dx"
+      ],
+      "correctIndex": 1,
+      "explanation": "At a fixed y, the region extends horizontally from L(y) to R(y). Its small strip area is approximately [R(y)−L(y)]Δy. Summing and taking the limit gives the integral with respect to y from c to d. Horizontal and vertical methods are both valid when the corresponding functions and bounds are used consistently. A: This reverses the nonnegative strip width. B: A strip’s horizontal width is right minus left, and its thickness is dy. C: The sum of coordinates is not the distance between them. D: The stated bounds and functions use y, so the strip thickness must use y as well."
+    },
+    {
+      "id": "calc-ab-8-5-006",
+      "prompt": "The curves x=y² and x=y+2 enclose a region. Which horizontal-slice integral computes its area without splitting into upper and lower parabola branches?",
+      "options": [
+        "∫ from 0 to 4 of (y+2−y²) dy",
+        "∫ from −1 to 2 of (y²−y−2) dy",
+        "∫ from −1 to 2 of (y+2−y²) dy",
+        "∫ from −1 to 2 of (y+2+y²) dy"
+      ],
+      "correctIndex": 2,
+      "explanation": "Solve y²=y+2 to obtain (y−2)(y+1)=0, so y runs from −1 to 2. The width y+2−y²=(2−y)(y+1) is nonnegative there. Horizontal slicing therefore uses one integral across the whole region, including both signs of y without replacing y²=x by only its positive square-root branch. A: These are x-extents, not the y-bounds required by the displayed functions. B: This reverses right and left. C: The y-intersections are −1 and 2, and the line is the right boundary between them. D: Adding horizontal coordinates does not give slice width."
+    },
+    {
+      "id": "calc-ab-8-5-007",
+      "prompt": "A region lies between the y-axis x=0 and x=eʸ, with horizontal boundaries y=0 and y=ln 3. What is its area?",
+      "options": [
+        "3",
+        "ln 3",
+        "2 ln 3",
+        "2"
+      ],
+      "correctIndex": 3,
+      "explanation": "The right boundary is eʸ and the left boundary is 0. Area is ∫ from 0 to ln 3 of eʸdy=[eʸ] from 0 to ln 3=3−1=2. The variable y determines strip thickness; the x-coordinates supply the width. A: This omits the lower-endpoint contribution. B: This uses unit width rather than the varying width eʸ. C: This treats the arithmetic mean of the endpoint widths as exact for an exponential. D: Integrating eʸ from 0 to ln 3 gives 3−1."
+    },
+    {
+      "id": "calc-ab-8-5-008",
+      "prompt": "Find the area between x=ln(y+1) and x=0 for 0≤y≤3.",
+      "options": [
+        "4 ln 4−3",
+        "ln 4",
+        "4 ln 4−4",
+        "3 ln 4"
+      ],
+      "correctIndex": 0,
+      "explanation": "On this y-interval, ln(y+1)≥0, so it is the right boundary. Verify by differentiation that a primitive is (y+1)ln(y+1)−(y+1). Its endpoint difference is (4ln 4−4)−(−1)=4ln 4−3. This uses a verified primitive and does not require an integration-by-parts method. A: A primitive is (y+1)ln(y+1)−(y+1), with both endpoints included. B: This is the final width, not the accumulated area. C: This omits the lower primitive value −1. D: This treats the maximum width as constant over the entire height."
+    },
+    {
+      "id": "calc-ab-8-5-009",
+      "prompt": "A region has left boundary x=−2, right boundary x=y+1, and −1≤y≤2. What is its area?",
+      "options": [
+        "−3/2",
+        "21/2",
+        "9/2",
+        "15"
+      ],
+      "correctIndex": 1,
+      "explanation": "The horizontal width is (y+1)−(−2)=y+3. Thus area is ∫ from −1 to 2 of (y+3)dy=[y²/2+3y] from −1 to 2=8−(−5/2)=21/2. Subtracting a negative coordinate increases the distance between the boundaries. A: This subtracts the magnitude 2 instead of subtracting the left coordinate −2. B: Its endpoint widths are 2 and 5 across a height of 3. C: This integrates only the right coordinate and ignores the left boundary. D: This uses the maximum width 5 across the whole height."
+    },
+    {
+      "id": "calc-ab-8-5-010",
+      "prompt": "For a>0, the region between x=0 and x=a−y² is bounded by their intersections. Which expression gives its area?",
+      "options": [
+        "(4/3)a³",
+        "(2/3)a^(3/2)",
+        "(4/3)a^(3/2)",
+        "2a^(3/2)"
+      ],
+      "correctIndex": 2,
+      "explanation": "The intersections satisfy y²=a, so y runs from −√a to √a. By symmetry the area is 2∫ from 0 to √a of (a−y²)dy=2[a y−y³/3] from 0 to √a=(4/3)a^(3/2). The assumption a>0 ensures a genuine bounded region. A: This uses the wrong power for the vertical scale √a. B: This includes only half of the symmetric region. C: The y-bounds are ±√a and the width is a−y². D: This is the bounding rectangle area before subtracting the parabola contribution."
+    },
+    {
+      "id": "calc-ab-8-5-011",
+      "prompt": "Using the table below and trapezoidal estimates on the y-intervals [0,1] and [1,3], estimate the area between the right and left boundaries.",
+      "options": [
+        "7",
+        "33/2",
+        "−11",
+        "11"
+      ],
+      "correctIndex": 3,
+      "explanation": "First form horizontal widths R−L: 4−1=3, 5−2=3 and 7−2=5. The trapezoidal estimate is 1(3+3)/2+2(3+5)/2=3+8=11. The y-spacings determine the strip thicknesses; they are not equally spaced here. A: This ignores the wider second y-interval. B: This estimates the integral of the right boundary alone. C: This reverses left and right widths. D: The widths are 3,3,5, giving 3+8=11."
+    }
+  ]
+}

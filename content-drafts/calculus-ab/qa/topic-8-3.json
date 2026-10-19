@@ -1,0 +1,289 @@
+{
+  "topicNumber": "8.3",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "5bacf58ed3c5967ba2483a93bc668720159363decea4d11133ca5ed747ea55f7",
+  "scopeReview": "CED CHA-4.D.1–2 and CHA-4.E.1: interpret and compute accumulation/net change in applied contexts, including units, initial values and physical validity. No unrelated question/resource import or BC technique.",
+  "varietyReview": "Tank balance, spatial mass density, maximum stored amount, actual occupancy-rate graph, nonuniform production table, derivative sign versus state sign, marginal cost, zero net change versus variation, nonzero-time charge datum, arrivals versus average rate and a physical emptying constraint. Six original-data integral/graph/table corroborations and five exact contextual reviews.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-8-3-001",
+      "independentReasoning": "Independently compute total inflow 28 liters and total outflow 8 liters. The balance 30+28−8=50 confirms the signed-rate integral. Both rates are measured per minute, so integrating over minutes produces liters.",
+      "optionReview": [
+        "This is the net change without the initial 30 liters.",
+        "This includes inflow but ignores the outflow.",
+        "This subtracts the net increase instead of adding it.",
+        "The net rate is 3+t, whose four-minute integral is 20 liters."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "add",
+          3,
+          "x"
+        ],
+        "start": 0,
+        "end": 4,
+        "initial": 30
+      }
+    },
+    {
+      "questionId": "calc-ab-8-3-002",
+      "independentReasoning": "Check dimensions independently and compare the constant-density special case ρ=2 grams/cm: the integral gives 20 grams, while average density is 2 grams/cm and length is 10 cm. These distinct results rule out confusing a total with a normalized average.",
+      "optionReview": [
+        "Density per unit length times small lengths accumulates mass.",
+        "Average density additionally requires division by length 10.",
+        "The variable is position, not time, and no time rate is supplied.",
+        "Integrating a nonconstant density does not simply recover length."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The rod’s mass in grams"
+      }
+    },
+    {
+      "questionId": "calc-ab-8-3-003",
+      "independentReasoning": "Complete the square independently: W(t)=21−(t−3)². Its largest value on [0,5] is exactly 21 at the contained input 3. This also confirms positivity of the modeled amount throughout the interval and exhausts the endpoint comparison.",
+      "optionReview": [
+        "This is the final amount W(5), below the interior maximum.",
+        "The amount increases until t=3, where W=12+18−9=21.",
+        "This is the increase by t=3 without the initial amount.",
+        "This is the time of the maximum, not the amount."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "21 units"
+      }
+    },
+    {
+      "questionId": "calc-ab-8-3-004",
+      "independentReasoning": "Independent segment trapezoids give the same signed sum 4−2=2. The check integrates only up to t=4, excluding the later negative segment. The initial amount is preserved and added after the rate accumulation.",
+      "optionReview": [
+        "This adds both area magnitudes instead of respecting the negative net rate.",
+        "This is the net change, not the occupancy.",
+        "The signed area is +4−2=2 people, added to the initial occupancy.",
+        "This subtracts the actual net increase from the initial occupancy."
+      ],
+      "check": {
+        "type": "figure-accumulation",
+        "start": 0,
+        "end": 4,
+        "initial": 100,
+        "figureSha256": "af6bf497681bdd12852ec79c39406f72353a2357ae51b1084d8129f36967f3cc"
+      },
+      "figureSha256": "af6bf497681bdd12852ec79c39406f72353a2357ae51b1084d8129f36967f3cc"
+    },
+    {
+      "questionId": "calc-ab-8-3-005",
+      "independentReasoning": "Independently compute the right sum 2·4+3·8+1·10=42 and their trapezoidal mean 34, explaining the other totals. The left sum is 26, not the unweighted sum of sampled rates, and its units are items.",
+      "optionReview": [
+        "This omits the already-produced 100 items.",
+        "This uses right-endpoint rates, contrary to the requested rule.",
+        "This uses the trapezoidal estimate instead of left rectangles.",
+        "The estimated new production is 2·3+3·4+1·8=26."
+      ],
+      "check": {
+        "type": "table-riemann",
+        "partition": [
+          0,
+          2,
+          5,
+          6
+        ],
+        "method": "left",
+        "initial": 100
+      },
+      "tableSha256": "d5e4f16a0a1b3920d0bc21c522836f0829885f8801f410767138cd20a6c426e9"
+    },
+    {
+      "questionId": "calc-ab-8-3-006",
+      "independentReasoning": "A constant example r=−1 with A(0)=50 gives A(2)=48 and A(4)=46: positive values with a negative change. Other negative rates yield different endpoint differences, so neither a negative amount nor an exact sign-reversed endpoint follows.",
+      "optionReview": [
+        "The sign of the net rate determines whether the amount rises or falls.",
+        "A negative derivative does not force a negative accumulated amount.",
+        "Its initial height does not determine the sign of the stated derivative.",
+        "A derivative sign alone does not specify exact endpoint values."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "A decreases on (2,4), regardless of whether its values are positive."
+      }
+    },
+    {
+      "questionId": "calc-ab-8-3-007",
+      "independentReasoning": "Independently differentiate C(q)=q²+5q+40 to recover the original marginal cost and check C(0)=40. The integral’s units (dollars/item)(items)=dollars are compatible with adding the fixed cost.",
+      "optionReview": [
+        "This omits the fixed cost.",
+        "The variable cost increase is 24 dollars, added to the fixed cost 40.",
+        "This adds only the marginal cost at q=3 to the fixed cost.",
+        "This does not integrate the increasing marginal rate correctly."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "add",
+          [
+            "mul",
+            2,
+            "x"
+          ],
+          5
+        ],
+        "start": 0,
+        "end": 3,
+        "initial": 40
+      }
+    },
+    {
+      "questionId": "calc-ab-8-3-008",
+      "independentReasoning": "The explicit accumulation is M(t)=5+2sin t. It reaches 7 at π/2 and returns to 5 at π. Therefore the rise and fall each have magnitude 2, confirming both zero net change and total variation 4 as different quantities.",
+      "optionReview": [
+        "This is the total variation, obtained by adding the rise and fall magnitudes.",
+        "This is the initial and final amount, not the net change.",
+        "The integral 2sin t evaluated at 0 and π is zero.",
+        "This counts only the rise over the first half of the interval."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          2,
+          [
+            "cos",
+            "x"
+          ]
+        ],
+        "start": 0,
+        "end": 3.141592653589793
+      }
+    },
+    {
+      "questionId": "calc-ab-8-3-009",
+      "independentReasoning": "Independently construct Q(t)=10+3e^(−1)−3e^(−t) and differentiate it to recover the rate. Evaluation at t=1 gives exactly 10, checking the lower-bound constant independently of the later numerical value.",
+      "optionReview": [
+        "This reverses the sign of the accumulated increase.",
+        "This gives only the increase and omits the initial charge.",
+        "This integrates from 0 instead of the time 1 of the given charge.",
+        "The charge increases by the integral of the positive rate from 1 to 3."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          3,
+          [
+            "exp",
+            [
+              "mul",
+              -1,
+              "x"
+            ]
+          ]
+        ],
+        "start": 1,
+        "end": 3,
+        "initial": 10,
+        "optionExpressions": {
+          "10+3(e^(−1)−e^(−3))": [
+            "add",
+            10,
+            [
+              "mul",
+              3,
+              [
+                "sub",
+                [
+                  "exp",
+                  -1
+                ],
+                [
+                  "exp",
+                  -3
+                ]
+              ]
+            ]
+          ],
+          "10+3(e^(−3)−e^(−1))": [
+            "add",
+            10,
+            [
+              "mul",
+              3,
+              [
+                "sub",
+                [
+                  "exp",
+                  -3
+                ],
+                [
+                  "exp",
+                  -1
+                ]
+              ]
+            ]
+          ],
+          "3(e^(−1)−e^(−3))": [
+            "mul",
+            3,
+            [
+              "sub",
+              [
+                "exp",
+                -1
+              ],
+              [
+                "exp",
+                -3
+              ]
+            ]
+          ],
+          "10+3(1−e^(−3))": [
+            "add",
+            10,
+            [
+              "mul",
+              3,
+              [
+                "sub",
+                1,
+                [
+                  "exp",
+                  -3
+                ]
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-3-010",
+      "independentReasoning": "Independently apply conservation of people: initial occupants plus all entrants minus zero departures. The unit check confirms that the integral is measured in people and can be added directly to the initial count. No inference about individual instantaneous rates is needed.",
+      "optionReview": [
+        "The integral gives 40 additional people, added to the 18 already present.",
+        "This treats the accumulated arrivals as the final occupancy.",
+        "This divides arrivals by elapsed time and gives an average arrival rate instead.",
+        "This subtracts arrivals even though nobody leaves."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "58 people"
+      }
+    },
+    {
+      "questionId": "calc-ab-8-3-011",
+      "independentReasoning": "Solve the balance 2−t=0 independently and check the endpoint values V(0)=2 and V(2)=0. Negative formal values after 2 are not negative water; they signal that the assumed constant-rate description no longer applies.",
+      "optionReview": [
+        "This would continue the constant drain after the water is exhausted and produce negative volume.",
+        "The accumulation V(t)=2−t stays nonnegative until it first reaches zero at t=2.",
+        "The constant-drain model must stop or change after the tank empties.",
+        "This stops with a liter remaining and does not include the emptying instant."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "0≤t≤2"
+      }
+    }
+  ]
+}

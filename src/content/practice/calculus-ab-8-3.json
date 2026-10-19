@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 8,
+  "topicId": "topic-8-3",
+  "questions": [
+    {
+      "id": "calc-ab-8-3-001",
+      "prompt": "A tank initially contains 30 liters. Water enters at 5+t liters per minute and leaves at 2 liters per minute for 0≤t≤4. How much water is in the tank at t=4?",
+      "options": [
+        "20 liters",
+        "58 liters",
+        "10 liters",
+        "50 liters"
+      ],
+      "correctIndex": 3,
+      "explanation": "The volume rate is inflow minus outflow: V′=(5+t)−2=3+t. Thus V(4)=30+∫ from 0 to 4 of (3+t)dt=30+12+8=50 liters. The net rate stays positive, so the modeled volume never reaches an empty-tank constraint during this interval. A: This is the net change without the initial 30 liters. B: This includes inflow but ignores the outflow. C: This subtracts the net increase instead of adding it. D: The net rate is 3+t, whose four-minute integral is 20 liters."
+    },
+    {
+      "id": "calc-ab-8-3-002",
+      "prompt": "A thin rod occupies 0≤x≤10 centimeters. Its continuous linear density ρ(x) is measured in grams per centimeter. What does ∫ from 0 to 10 of ρ(x) dx represent?",
+      "options": [
+        "The rod’s mass in grams",
+        "The rod’s average density in grams per centimeter",
+        "The rate at which the rod’s mass changes in grams per second",
+        "The rod’s length in centimeters"
+      ],
+      "correctIndex": 0,
+      "explanation": "Partition the rod into small pieces. Each piece has approximate mass ρ(x)Δx, so the sum tends to the density integral. The units are (grams/cm)(cm)=grams. This is spatial accumulation; the integration variable need not be time. A: Density per unit length times small lengths accumulates mass. B: Average density additionally requires division by length 10. C: The variable is position, not time, and no time rate is supplied. D: Integrating a nonconstant density does not simply recover length."
+    },
+    {
+      "id": "calc-ab-8-3-003",
+      "prompt": "A reservoir has W(0)=12 units of water and net rate W′(t)=6−2t for 0≤t≤5. What is its greatest amount on this interval?",
+      "options": [
+        "17 units",
+        "21 units",
+        "9 units",
+        "3 units"
+      ],
+      "correctIndex": 1,
+      "explanation": "Accumulation gives W(t)=12+∫ from 0 to t of (6−2u)du=12+6t−t². The net rate changes from positive to negative at t=3. Candidate values are W(0)=12, W(3)=21 and W(5)=17, so the greatest amount is 21 units. A: This is the final amount W(5), below the interior maximum. B: The amount increases until t=3, where W=12+18−9=21. C: This is the increase by t=3 without the initial amount. D: This is the time of the maximum, not the amount."
+    },
+    {
+      "id": "calc-ab-8-3-004",
+      "prompt": "The graph below shows the net rate of change in a hall’s occupancy. Starting with 100 people at t=0, how many people does the model give at t=4?",
+      "options": [
+        "106",
+        "2",
+        "102",
+        "98"
+      ],
+      "correctIndex": 2,
+      "explanation": "From 0 to 2 the positive triangle has area (1/2)·2·4=4 people. From 2 to 4 the negative triangle contributes −(1/2)·2·2=−2 people. The occupancy at 4 is therefore 100+4−2=102. The graph is already a net rate, so no second subtraction of departures is needed. A: This adds both area magnitudes instead of respecting the negative net rate. B: This is the net change, not the occupancy. C: The signed area is +4−2=2 people, added to the initial occupancy. D: This subtracts the actual net increase from the initial occupancy."
+    },
+    {
+      "id": "calc-ab-8-3-005",
+      "prompt": "A factory has produced 100 items by t=0. Using the table below and left-endpoint rectangles on [0,2], [2,5] and [5,6], estimate its cumulative production by t=6.",
+      "options": [
+        "26 items",
+        "142 items",
+        "134 items",
+        "126 items"
+      ],
+      "correctIndex": 3,
+      "explanation": "The left-rate sum uses each actual time width: 2(3)+3(4)+1(8)=26 new items. Add the initial cumulative count to obtain 126 items. The estimate is determined by the specified approximation method, not by assuming an exact continuous rate between the observations. A: This omits the already-produced 100 items. B: This uses right-endpoint rates, contrary to the requested rule. C: This uses the trapezoidal estimate instead of left rectangles. D: The estimated new production is 2·3+3·4+1·8=26."
+    },
+    {
+      "id": "calc-ab-8-3-006",
+      "prompt": "A quantity has initial value A(0)=50 and satisfies A′(t)=r(t). If r(t)<0 for every t in (2,4), which conclusion follows?",
+      "options": [
+        "A decreases on (2,4), regardless of whether its values are positive.",
+        "A is negative throughout (2,4)",
+        "A decreases only if A(2)<0",
+        "A(4)=−A(2)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Because A′=r<0, the quantity is decreasing on the interval. For any two inputs u<v inside it, the Mean Value Theorem gives A(v)−A(u)=A′(c)(v−u)<0 for some c between them. The negative change can occur while the actual amount remains positive; a derivative sign does not determine the sign of the state. A: The sign of the net rate determines whether the amount rises or falls. B: A negative derivative does not force a negative accumulated amount. C: Its initial height does not determine the sign of the stated derivative. D: A derivative sign alone does not specify exact endpoint values."
+    },
+    {
+      "id": "calc-ab-8-3-007",
+      "prompt": "A total cost C(q) in dollars has marginal cost C′(q)=2q+5 dollars per item and fixed cost C(0)=40 dollars. What is C(3)?",
+      "options": [
+        "24 dollars",
+        "64 dollars",
+        "51 dollars",
+        "73 dollars"
+      ],
+      "correctIndex": 1,
+      "explanation": "Total cost equals fixed cost plus accumulated marginal cost. Thus C(3)=40+∫ from 0 to 3 of (2q+5)dq=40+[q²+5q] from 0 to 3=40+9+15=64 dollars. A marginal cost at one output level is not a total cost. A: This omits the fixed cost. B: The variable cost increase is 24 dollars, added to the fixed cost 40. C: This adds only the marginal cost at q=3 to the fixed cost. D: This does not integrate the increasing marginal rate correctly."
+    },
+    {
+      "id": "calc-ab-8-3-008",
+      "prompt": "A stored quantity satisfies M(0)=5 and M′(t)=2cos t for 0≤t≤π, with angles in radians. What is its net change over this interval?",
+      "options": [
+        "4",
+        "5",
+        "0",
+        "2"
+      ],
+      "correctIndex": 2,
+      "explanation": "Net change is M(π)−M(0)=∫ from 0 to π of 2cos t dt=[2sin t] from 0 to π=0. The quantity first rises and then falls back to its starting level. An accumulated amount can vary even when its net change over a full interval is zero. A: This is the total variation, obtained by adding the rise and fall magnitudes. B: This is the initial and final amount, not the net change. C: The integral 2sin t evaluated at 0 and π is zero. D: This counts only the rise over the first half of the interval."
+    },
+    {
+      "id": "calc-ab-8-3-009",
+      "prompt": "A battery’s charge satisfies Q′(t)=3e^(−t) coulombs per second and Q(1)=10 coulombs. What is Q(3)?",
+      "options": [
+        "10+3(e^(−3)−e^(−1))",
+        "3(e^(−1)−e^(−3))",
+        "10+3(1−e^(−3))",
+        "10+3(e^(−1)−e^(−3))"
+      ],
+      "correctIndex": 3,
+      "explanation": "Use the datum at its stated time: Q(3)=10+∫ from 1 to 3 of 3e^(−t)dt. The antiderivative is −3e^(−t), so the increase is 3e^(−1)−3e^(−3). It is positive because the rate remains positive, even though the rate itself is decreasing. A: This reverses the sign of the accumulated increase. B: This gives only the increase and omits the initial charge. C: This integrates from 0 instead of the time 1 of the given charge. D: The charge increases by the integral of the positive rate from 1 to 3."
+    },
+    {
+      "id": "calc-ab-8-3-010",
+      "prompt": "Visitors enter a room at continuous rate r(t) people per minute, and nobody leaves. At t=2 there are 18 people. If ∫ from 2 to 6 of r(t)dt=40, what is the occupancy at t=6?",
+      "options": [
+        "58 people",
+        "40 people",
+        "10 people",
+        "−22 people"
+      ],
+      "correctIndex": 0,
+      "explanation": "The rate is arrival rate and there are no departures, so it is also the occupancy’s net rate. Therefore N(6)=N(2)+∫ from 2 to 6 of r(t)dt=18+40=58. Dividing by the four-minute duration would produce a rate rather than a count. A: The integral gives 40 additional people, added to the 18 already present. B: This treats the accumulated arrivals as the final occupancy. C: This divides arrivals by elapsed time and gives an average arrival rate instead. D: This subtracts arrivals even though nobody leaves."
+    },
+    {
+      "id": "calc-ab-8-3-011",
+      "prompt": "A tank contains 2 liters at t=0 and drains at exactly 1 liter per minute, with no inflow. Which interval describes the physically valid draining phase up to and including the instant it becomes empty?",
+      "options": [
+        "0≤t≤5",
+        "0≤t≤2",
+        "t≥0 with no upper bound",
+        "0≤t≤1"
+      ],
+      "correctIndex": 1,
+      "explanation": "During the draining phase V(t)=2+∫ from 0 to t of (−1)du=2−t. Volume reaches zero at t=2 and is nonnegative only for t≤2 in the forward-time phase. Continuing the same drain beyond that time would violate the context, so its physical model must change. A: This would continue the constant drain after the water is exhausted and produce negative volume. B: The accumulation V(t)=2−t stays nonnegative until it first reaches zero at t=2. C: The constant-drain model must stop or change after the tank empties. D: This stops with a liter remaining and does not include the emptying instant."
+    }
+  ]
+}

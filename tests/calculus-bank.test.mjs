@@ -533,3 +533,23 @@ test('average-value checks require interval normalization and preserve initial-v
   const unsigned=structuredClone(mq.questions[1]);unsigned.check.integrand=unsigned.check.integrand[1];
   assert.throws(()=>verifyCalculusQuestion(motion.questions[1],unsigned),/definite integral key/);
 });
+
+test('two-boundary graph checks split crossings before taking magnitudes and enforce boundary order',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-8-6');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-8-6.json'));
+  verifyCalculusQuestion(batch.questions[0],qa.questions[0]);
+  const signed=structuredClone(qa.questions[0]);signed.check.type='figure-between';
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[0],signed),/Upper boundary is below/);
+  const q=structuredClone(batch.questions[0]),review=structuredClone(qa.questions[0]);q.options=['5/2','0','1','4'];q.correctIndex=0;review.check.start=-1;review.check.end=1;
+  verifyCalculusQuestion(q,review);
+  q.correctIndex=1;assert.throws(()=>verifyCalculusQuestion(q,review),/graph key/);
+});
+test('horizontal table areas subtract paired coordinates before applying nonuniform trapezoids',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-8-5');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-8-5.json'));
+  verifyCalculusQuestion(batch.questions[10],qa.questions[10]);
+  const wrong=structuredClone(qa.questions[10]);wrong.check.differenceColumns=[1,2];
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[10],wrong),/Riemann key/);
+  assert.throws(()=>numericalOption('2 ln 3'),/Symbolic numerical option/);
+  assert.equal(numericalOption('2 meters'),2);
+});

@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 8,
+  "topicId": "topic-8-4",
+  "questions": [
+    {
+      "id": "calc-ab-8-4-001",
+      "prompt": "Find the area of the region enclosed by y=4−x² and y=x+2.",
+      "options": [
+        "9/2",
+        "−9/2",
+        "9",
+        "7/6"
+      ],
+      "correctIndex": 0,
+      "explanation": "Solve 4−x²=x+2: (x+2)(x−1)=0, so the bounds are −2 and 1. Between them, (4−x²)−(x+2)=2−x−x² is nonnegative. Integrate this difference: [2x−x²/2−x³/3] from −2 to 1=7/6−(−10/3)=9/2. A: The intersections are −2 and 1, with the parabola above the line between them. B: This reverses top minus bottom and produces signed negative area. C: This doubles the actual area without a valid symmetry factor. D: This is only the primitive’s upper value; the lower value must also be subtracted."
+    },
+    {
+      "id": "calc-ab-8-4-002",
+      "prompt": "Both bounding curves y=−x² and y=−4 lie on or below the x-axis for −2≤x≤2. What area do they enclose?",
+      "options": [
+        "−32/3",
+        "32/3",
+        "16/3",
+        "16"
+      ],
+      "correctIndex": 1,
+      "explanation": "Intersections occur at x=±2. The upper curve is −x² and the lower curve is −4, so the height is 4−x² even though both heights are nonpositive. Area is ∫ from −2 to 2 of (4−x²)dx=[4x−x³/3] from −2 to 2=32/3. A: Geometric area is nonnegative; this subtracts in the wrong order. B: The vertical height is (−x²)−(−4)=4−x². C: This counts only half of the symmetric region. D: This is the enclosing rectangle area before removing the curved portion."
+    },
+    {
+      "id": "calc-ab-8-4-003",
+      "prompt": "With angles in radians, find the area between y=cos x and y=sin x on 0≤x≤π/4.",
+      "options": [
+        "1−√2",
+        "√2",
+        "√2−1",
+        "1"
+      ],
+      "correctIndex": 2,
+      "explanation": "On [0,π/4], cos x≥sin x. Thus area is ∫ from 0 to π/4 of (cos x−sin x)dx=[sin x+cos x] from 0 to π/4=√2−1. The upper and lower boundary order follows from their values throughout this first-quadrant interval. A: This reverses the boundary order and gives a negative result. B: This omits the lower-endpoint value 1. C: Cosine is above sine, and the integral of their difference is sin x+cos x. D: This does not integrate the varying vertical difference."
+    },
+    {
+      "id": "calc-ab-8-4-004",
+      "prompt": "The region between y=eˣ and y=1 is bounded by the vertical lines x=0 and x=ln 2. What is its area?",
+      "options": [
+        "ln 2−1",
+        "1",
+        "2−ln 2",
+        "1−ln 2"
+      ],
+      "correctIndex": 3,
+      "explanation": "For 0≤x≤ln 2, eˣ≥1, so area is ∫ from 0 to ln 2 of (eˣ−1)dx=[eˣ−x] from 0 to ln 2=(2−ln 2)−1=1−ln 2. Here the vertical bounds are specified lines, not two intersections of the curves. A: This reverses the positive boundary difference. B: This ignores the area below y=1 that must be subtracted. C: This omits the lower-endpoint contribution of eˣ. D: The upper exponential integral contributes 1 and the lower rectangle contributes ln 2."
+    },
+    {
+      "id": "calc-ab-8-4-005",
+      "prompt": "Which integral gives the area of the bounded region enclosed by y=x and y=x²?",
+      "options": [
+        "∫ from 0 to 1 of (x−x²) dx",
+        "∫ from 0 to 1 of (x²−x) dx",
+        "∫ from 0 to 2 of (x−x²) dx",
+        "∫ from 0 to 1 of (x+x²) dx"
+      ],
+      "correctIndex": 0,
+      "explanation": "Find the endpoints from x=x², giving x=0 and x=1. On that interval x−x²=x(1−x)≥0, so a vertical slice has height x−x². Integrating this slice height yields the enclosed area. The bounds must come from the actual intersections rather than a convenient unrelated endpoint. A: The intersections are 0 and 1, and the line is above the parabola between them. B: This uses lower minus upper and is negative. C: The extra interval beyond 1 is not part of the enclosed region. D: Adding heights does not give the vertical distance between the two curves."
+    },
+    {
+      "id": "calc-ab-8-4-006",
+      "prompt": "The graph below gives upper boundary f and lower boundary g on [0,4]. What is the area between them, closed by the vertical endpoint lines?",
+      "options": [
+        "25/2",
+        "17/2",
+        "33/2",
+        "9/2"
+      ],
+      "correctIndex": 1,
+      "explanation": "Subtract the boundary heights before computing area. The gaps at x=0,1,4 are 2,3,1. Since the boundaries are linear on each piece, the exact area is 1(2+3)/2+3(3+1)/2=5/2+6=17/2. Both pieces use their own widths. A: This is the integral under the upper boundary alone. B: The gap heights are 2,3,1, giving trapezoid areas 5/2 and 6. C: This adds the lower rectangle instead of subtracting it. D: This does not use the correct widths 1 and 3 for the two gap trapezoids."
+    },
+    {
+      "id": "calc-ab-8-4-007",
+      "prompt": "Continuous f and g satisfy f(x)≥g(x) on [a,b]. If ∫ from a to b of f(x)dx=−3 and ∫ from a to b of g(x)dx=−8, what is the area between them?",
+      "options": [
+        "−5",
+        "11",
+        "5",
+        "−11"
+      ],
+      "correctIndex": 2,
+      "explanation": "The ordering guarantees that f−g is nonnegative throughout the interval. Therefore area is ∫(f−g)=∫f−∫g=−3−(−8)=5. The individual integrals may be negative; it is the difference in boundary heights that determines the positive geometric area. A: This reverses upper and lower boundary order. B: This adds the magnitudes of the two signed integrals. C: The signed integral difference is −3−(−8)=5. D: This adds the two integrals instead of subtracting boundary heights."
+    },
+    {
+      "id": "calc-ab-8-4-008",
+      "prompt": "For 0<a≤3, the region between y=3 and y=x on [0,a] has area 4. What is a?",
+      "options": [
+        "1",
+        "3",
+        "4",
+        "2"
+      ],
+      "correctIndex": 3,
+      "explanation": "Because a≤3, the upper boundary is 3 and the lower one is x. Set ∫ from 0 to a of (3−x)dx=3a−a²/2=4. Multiplying by 2 and factoring gives a²−6a+8=(a−2)(a−4)=0. The domain restriction selects a=2. A: The area on [0,1] is 5/2, not 4. B: The area on [0,3] is 9/2, not 4. C: This root of the unqualified quadratic lies outside the stated interval and would cross the boundary intersection. D: The area equation 3a−a²/2=4 has roots 2 and 4, and only 2 satisfies a≤3."
+    },
+    {
+      "id": "calc-ab-8-4-009",
+      "prompt": "Let f(x)=x and g(x)=x² on [0,1]. Replace both curves by F(x)=f(x−2)+5 and G(x)=g(x−2)+5 on [2,3]. What happens to the area between the curves?",
+      "options": [
+        "It remains 1/6",
+        "It becomes 5+1/6",
+        "It doubles to 1/3",
+        "It becomes negative because the interval shifts right"
+      ],
+      "correctIndex": 0,
+      "explanation": "The new difference is F(x)−G(x)=f(x−2)−g(x−2); the two constants 5 cancel. Substitute u=x−2, so [2,3] becomes [0,1] and dx=du. The area remains ∫ from 0 to 1 of (u−u²)du=1/6. A: The common vertical shift cancels, and the horizontal shift preserves slice widths. B: A common vertical translation changes neither gap nor area. C: Horizontal translation by 2 is not horizontal scaling by 2. D: A translation does not reverse the ordering of the bounds or boundaries."
+    },
+    {
+      "id": "calc-ab-8-4-010",
+      "prompt": "Find the area enclosed by y=√x and y=x/2.",
+      "options": [
+        "−4/3",
+        "4/3",
+        "16/3",
+        "4"
+      ],
+      "correctIndex": 1,
+      "explanation": "Real intersections solve √x=x/2 with x≥0, giving x=0 or 4. On [0,4], √x≥x/2. Thus area is ∫ from 0 to 4 of (√x−x/2)dx=[(2/3)x^(3/2)−x²/4] from 0 to 4=16/3−4=4/3. A: This reverses the upper and lower curves. B: The intersections are 0 and 4, and the square root is above the line between them. C: This integrates the upper curve without subtracting the line. D: This is the area under the line, not the gap between the two curves."
+    },
+    {
+      "id": "calc-ab-8-4-011",
+      "prompt": "For a positive constant k, which expression gives the area enclosed by y=kx and y=x²?",
+      "options": [
+        "k²/6",
+        "k³/3",
+        "k³/6",
+        "k³/2"
+      ],
+      "correctIndex": 2,
+      "explanation": "Solve kx=x² to get x=0 and x=k. Since k>0, the height x(k−x) is nonnegative between these bounds. Area is ∫ from 0 to k of (kx−x²)dx=[kx²/2−x³/3] from 0 to k=k³/6. A: This loses one power from the integration bounds and height scale. B: This is the lower-parabola integral, not the difference between the curves. C: The intersections are 0 and k, and integrating kx−x² gives k³/2−k³/3. D: This is the upper-line integral without subtracting the parabola."
+    }
+  ]
+}

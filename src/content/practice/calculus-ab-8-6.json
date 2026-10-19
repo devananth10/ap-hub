@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 8,
+  "topicId": "topic-8-6",
+  "questions": [
+    {
+      "id": "calc-ab-8-6-001",
+      "prompt": "Find the total area of the two enclosed regions between f and g in the graph below.",
+      "options": [
+        "−1",
+        "1",
+        "5",
+        "3"
+      ],
+      "correctIndex": 2,
+      "explanation": "The curves meet at x=−2,0,2. On the left f is above g, giving area (1/2)·2·2=2. On the right g is above f, giving area (1/2)·2·3=3. Total area is 2+3=5. Taking an absolute value only after adding signed areas would incorrectly allow cancellation. A: This is the signed integral of f−g rather than geometric area. B: This is the absolute value of the net signed integral, which permits cancellation first. C: Add the positive magnitudes 2 and 3 of the two triangular regions. D: This counts only the larger right-hand region."
+    },
+    {
+      "id": "calc-ab-8-6-002",
+      "prompt": "What is the total area enclosed by y=x³−x and the x-axis between their leftmost and rightmost intersections?",
+      "options": [
+        "0",
+        "1/4",
+        "1",
+        "1/2"
+      ],
+      "correctIndex": 3,
+      "explanation": "Factor x³−x=x(x−1)(x+1), with roots −1,0,1. The function is positive on (−1,0) and negative on (0,1). By symmetry total area is 2∫ from 0 to 1 of (x−x³)dx=2(1/2−1/4)=1/2. A: Odd-function cancellation gives signed integral, not total area. B: This includes only one enclosed lobe. C: This doubles the two-lobe total once too many. D: The roots are −1,0,1, and the two equal lobes each have area 1/4."
+    },
+    {
+      "id": "calc-ab-8-6-003",
+      "prompt": "With angles in radians, find the total area between y=sin x and y=0 on [0,2π].",
+      "options": [
+        "4",
+        "0",
+        "2",
+        "2π"
+      ],
+      "correctIndex": 0,
+      "explanation": "Split at the interior intersection x=π. Area is ∫ from 0 to π of sin x dx−∫ from π to 2π of sin x dx=2−(−2)=4. Equivalently integrate |sin x| over the full interval, retaining both lobes as positive area. A: The positive and negative sine lobes each have area magnitude 2. B: This is the signed integral over a full period. C: This includes only one lobe. D: This uses the maximum height 1 across the entire interval."
+    },
+    {
+      "id": "calc-ab-8-6-004",
+      "prompt": "The curves y=|x| and y=x² meet at x=−1,0,1. What is their total enclosed area?",
+      "options": [
+        "0",
+        "1/3",
+        "1/6",
+        "2/3"
+      ],
+      "correctIndex": 1,
+      "explanation": "For −1≤x≤1, |x|≥x², including both sides of the meeting point at zero. Thus total area is 2∫ from 0 to 1 of (x−x²)dx=2(1/2−1/3)=1/3. The boundary ordering does not reverse at every intersection; it must be checked rather than assumed. A: An interior intersection does not force the two areas to cancel. B: The absolute-value curve stays above the parabola on both subintervals, each contributing 1/6. C: This counts only one side of the symmetric region. D: This doubles the correct total again."
+    },
+    {
+      "id": "calc-ab-8-6-005",
+      "prompt": "Vertical lines x=−2 and x=2 close a region between y=x³ and y=x. What is its total area?",
+      "options": [
+        "0",
+        "1/2",
+        "5",
+        "9/2"
+      ],
+      "correctIndex": 2,
+      "explanation": "The boundary difference x³−x vanishes at −1,0,1, so split at all three interior crossings. By symmetry area is 2[∫ from 0 to 1 of (x−x³)dx+∫ from 1 to 2 of (x³−x)dx]=2(1/4+9/4)=5. A: This is the signed integral of an odd difference, after cancellation. B: This counts only the two middle regions between −1 and 1. C: The inner two pieces contribute 1/2 and the outer two pieces 9/2. D: This counts only the outer regions, omitting the middle ones."
+    },
+    {
+      "id": "calc-ab-8-6-006",
+      "prompt": "Let d=f−g be continuous, nonnegative on [0,1], nonpositive on [1,3], and nonnegative on [3,4]. Its integrals on those intervals are 4, −7 and 2, respectively. What is the total area between f and g on [0,4]?",
+      "options": [
+        "−1",
+        "1",
+        "9",
+        "13"
+      ],
+      "correctIndex": 3,
+      "explanation": "The pointwise sign information justifies interpreting each signed integral as plus or minus a region’s area. Total area is 4−(−7)+2=13. A negative value of ∫(f−g) on one interval means the other boundary is upper there; it does not make that geometric area negative. A: This is the sum of the signed integrals. B: This takes the absolute value only after signed cancellation. C: This subtracts the first region instead of adding all area magnitudes. D: The specified signs make the three areas 4,7,2."
+    },
+    {
+      "id": "calc-ab-8-6-007",
+      "prompt": "On [1,4], continuous f and g satisfy f(x)−g(x)=(x−1)(x−2)(x−4). Which expression gives their total area?",
+      "options": [
+        "∫ from 1 to 2 of (f−g) dx − ∫ from 2 to 4 of (f−g) dx",
+        "∫ from 1 to 4 of (f−g) dx",
+        "−∫ from 1 to 2 of (f−g) dx + ∫ from 2 to 4 of (f−g) dx",
+        "∫ from 1 to 2 of (f−g) dx only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Check one sign in each open interval, or use the factors: on (1,2), one factor is positive and two are negative, so the product is positive. On (2,4), two are positive and one negative, so it is negative. Therefore integrate the difference first, then subtract its negative second integral. A: The product is positive on (1,2) and negative on (2,4). B: This allows the opposite-signed pieces to cancel. C: This makes both region contributions negative. D: This omits the second enclosed region."
+    },
+    {
+      "id": "calc-ab-8-6-008",
+      "prompt": "The graph of y=x³−2x meets y=0 at three points. Find the total area of its two enclosed regions.",
+      "options": [
+        "0",
+        "2",
+        "1",
+        "4"
+      ],
+      "correctIndex": 1,
+      "explanation": "Factor x³−2x=x(x²−2) to obtain the three roots. On (0,√2) the function is negative, so one lobe has area ∫ from 0 to √2 of (2x−x³)dx=[x²−x⁴/4] from 0 to √2=2−1=1. The reflected lobe has the same area, giving total 2. A: Odd symmetry cancels the signed integral but not geometric area. B: The roots are −√2,0,√2, and each lobe has area 1. C: This includes just one lobe. D: This doubles the already-combined total."
+    },
+    {
+      "id": "calc-ab-8-6-009",
+      "prompt": "Only the boundary values in the table below are given. Which additional assumption would justify finding the exact area by joining successive data points with straight lines and splitting the resulting crossings?",
+      "options": [
+        "Both boundaries are merely continuous.",
+        "The x-values are equally spaced.",
+        "Both boundaries are linear on each interval between consecutive listed inputs.",
+        "Some entries are zero."
+      ],
+      "correctIndex": 2,
+      "explanation": "Joining samples by line segments always defines a piecewise-linear interpolant, but it equals the actual boundaries only under a corresponding linearity assumption. With that assumption, crossings and piecewise trapezoid/triangle areas can be computed exactly. Continuity or equal spacing alone supports no such exactness claim. A: Continuous curves can bend or cross again between observations. B: Spacing alone does not determine the curves between samples. C: Then the straight segments represent the actual curves, making their split areas exact. D: Known zeros do not identify every crossing or the intervening geometry."
+    },
+    {
+      "id": "calc-ab-8-6-010",
+      "prompt": "On [−1,1], suppose f−g=x²(x−1)²(x+1)². Which area method is valid even though the curves meet at −1,0,1?",
+      "options": [
+        "Subtract the left integral from the right integral because every intersection reverses order.",
+        "The area is zero because the curves meet at three points.",
+        "Use ∫ from −1 to 1 of (g−f) dx because x can be negative.",
+        "Use ∫ from −1 to 1 of (f−g) dx without reversing the sign at 0."
+      ],
+      "correctIndex": 3,
+      "explanation": "The gap is nonnegative everywhere, with zeros only at the stated intersections. Thus f is always an upper boundary, including both sides of zero, and a single nonnegative-gap integral is valid. Multiple intersections do not by themselves require alternating signs; boundary order is the criterion. A: Even-multiplicity zeros need not reverse the boundary ordering. B: The gap is strictly positive at many intermediate points. C: The signs of coordinates do not reverse a product of squares. D: All factors are squared, so f stays at or above g throughout."
+    },
+    {
+      "id": "calc-ab-8-6-011",
+      "prompt": "Let a<0 be constant. What is the total area between y=a sin x and y=0 over 0≤x≤2π, with angles in radians?",
+      "options": [
+        "−4a",
+        "4a",
+        "0",
+        "2a"
+      ],
+      "correctIndex": 0,
+      "explanation": "Scale the absolute sine area: ∫ from 0 to 2π of |a sin x|dx=|a|∫ from 0 to 2π of |sin x|dx=4|a|. Because a<0, |a|=−a, so the result is −4a>0. The negative amplitude reverses which half-period lies above the axis but does not cancel area. A: Area is 4|a| and |a|=−a for a<0. B: This would be negative despite the positive geometric area. C: The signed full-period integral is zero, but the two lobes still enclose area. D: This is negative and does not include both lobe magnitudes."
+    }
+  ]
+}
