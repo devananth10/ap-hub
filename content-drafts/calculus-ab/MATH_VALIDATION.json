@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 44,
+  "questionsChecked": 55,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -121,6 +121,41 @@
       "questionId": "calc-ab-1-4-010",
       "method": "table-estimate",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-5-001",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-1-5-002",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-1-5-003",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-1-5-004",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-1-5-005",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-1-5-008",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-1-5-009",
+      "method": "numeric",
+      "operation": "evaluate"
     }
   ],
   "reasoningReviews": [
@@ -143,7 +178,11 @@
     "calc-ab-1-2-011",
     "calc-ab-1-4-006",
     "calc-ab-1-4-008",
-    "calc-ab-1-4-011"
+    "calc-ab-1-4-011",
+    "calc-ab-1-5-006",
+    "calc-ab-1-5-007",
+    "calc-ab-1-5-010",
+    "calc-ab-1-5-011"
   ],
   "humanReviewPerformed": false,
   "limitations": [

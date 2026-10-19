@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 1,
+  "topicId": "topic-1-5",
+  "questions": [
+    {
+      "id": "calc-ab-1-5-001",
+      "prompt": "Suppose lim(x→1) f(x)=3 and lim(x→1) g(x)=−2. What is lim(x→1) [2f(x)−3g(x)]?",
+      "options": [
+        "0",
+        "12",
+        "−12",
+        "3"
+      ],
+      "correctIndex": 1,
+      "explanation": "Both supplied limits are finite, so linear-combination laws apply. Substitute the approached outputs, keeping parentheses around the negative value: 2(3)−3(−2)=6+6=12. Function values at x=1 are not required. A: This loses the subtraction of the negative value 3g(x). B: Correct: constant-multiple and difference laws give 2·3−3·(−2)=12. C: This reverses the sign of the entire result. D: This uses only the limit of f and ignores the expression’s coefficients and g term."
+    },
+    {
+      "id": "calc-ab-1-5-002",
+      "prompt": "At x→5, f(x) approaches −4 and g(x) approaches 2. Determine lim(x→5) [f(x)]²/g(x).",
+      "options": [
+        "−8",
+        "4",
+        "8",
+        "16"
+      ],
+      "correctIndex": 2,
+      "explanation": "The power law gives lim[f(x)]²=16. Since lim g(x)=2≠0, the quotient law applies and yields 16/2=8. Distinguish squaring the negative value from preserving its sign. A: Squaring a negative limiting value gives a positive numerator. B: This uses the magnitude of the numerator’s limit alone, omitting both the square and the division. C: Correct: the numerator approaches (−4)²=16 and the denominator approaches nonzero 2. D: This is the numerator limit alone and omits the denominator."
+    },
+    {
+      "id": "calc-ab-1-5-003",
+      "prompt": "Evaluate lim(x→−2) (x³−5x+7) using algebraic limit properties.",
+      "options": [
+        "−11",
+        "25",
+        "7",
+        "9"
+      ],
+      "correctIndex": 3,
+      "explanation": "A polynomial is continuous at every real input, so its limit equals its value at −2. Compute (−2)³−5(−2)+7=−8+10+7=9. The odd power preserves the negative sign of the input. A: This treats the term −5x as −10 at x=−2 instead of +10. B: This incorrectly changes the sign of the cube of −2. C: This discards the nonzero contributions of the variable terms. D: Correct: the polynomial is continuous, so substitution gives −8+10+7=9."
+    },
+    {
+      "id": "calc-ab-1-5-004",
+      "prompt": "What is lim(x→2) (3x+1)/(x²+2)?",
+      "options": [
+        "7/6",
+        "7/4",
+        "3/2",
+        "5/6"
+      ],
+      "correctIndex": 0,
+      "explanation": "The numerator and denominator are continuous polynomials. At x=2 their values are 7 and 6. Since 6≠0, the quotient law gives 7/6. Leading-coefficient shortcuts concern certain limits at infinity, not this finite substitution. A: Correct: numerator and denominator approach 7 and 6, and the denominator limit is nonzero. B: This omits the constant 2 in the denominator. C: This divides only selected leading terms, which is not valid at the finite input 2. D: This incorrectly replaces the numerator value 3·2+1=7 by 5."
+    },
+    {
+      "id": "calc-ab-1-5-005",
+      "prompt": "Suppose lim(x→6) f(x)=5 and lim(x→6) g(x)=−1. Find lim(x→6) √(2f(x)+g(x)).",
+      "options": [
+        "9",
+        "3",
+        "√11",
+        "−3"
+      ],
+      "correctIndex": 1,
+      "explanation": "First apply the sum and constant-multiple laws to the radicand: 2f(x)+g(x) approaches 9. This positive limiting radicand is eventually in the real square-root domain. Continuity of the square root at 9 gives √9=3. A: This is the radicand limit, not its square root. B: Correct: the radicand approaches 2·5−1=9 and the real square-root function is continuous at 9. C: This changes the negative contribution from g into a positive one. D: The principal real square root is nonnegative."
+    },
+    {
+      "id": "calc-ab-1-5-006",
+      "prompt": "Suppose lim(x→−1) g(x)=2. The function f is continuous for all real inputs, and f(2)=−5. What is lim(x→−1) f(g(x))?",
+      "options": [
+        "2",
+        "−1",
+        "−5",
+        "Does not exist unless g(−1)=2"
+      ],
+      "correctIndex": 2,
+      "explanation": "Track the inner input first: g(x) approaches 2. Since f is continuous at 2 and defined for every real inner value, f(g(x)) approaches f(2)=−5. No assumption about g’s assigned value at −1 is necessary. A: This is the inner limit, not the output of the outer function. B: This is the input location approached by x. C: Correct: continuity of the outer function at the approached inner value allows the limit f(2)=−5. D: The isolated value g(−1) is not needed for this composition limit."
+    },
+    {
+      "id": "calc-ab-1-5-007",
+      "prompt": "Suppose lim(x→0) f(x)=0 and lim(x→0) g(x)=0, with g(x)≠0 for sufficiently small nonzero x. Which conclusion about lim(x→0) f(x)/g(x) is justified from these facts alone?",
+      "options": [
+        "It must equal 0.",
+        "It must equal 1.",
+        "It must fail to exist.",
+        "The quotient limit is not determined by the two supplied zero limits."
+      ],
+      "correctIndex": 3,
+      "explanation": "The quotient law requires a nonzero denominator limit, which is missing here. If f(x)=x and g(x)=x, the quotient is 1; if f(x)=x² and g(x)=x, it approaches 0. Thus the provided information does not determine one answer or force nonexistence. A: A numerator approaching zero does not determine a quotient when the denominator also approaches zero. B: The two functions need not approach zero at the same relative rate. C: For example, equal nonzero functions on the punctured neighborhood have quotient 1. D: Correct: the form 0/0 does not specify a limiting quotient."
+    },
+    {
+      "id": "calc-ab-1-5-008",
+      "prompt": "If lim(x→4) g(x)=−3, what is lim(x→4) 1/g(x)?",
+      "options": [
+        "−1/3",
+        "1/3",
+        "−3",
+        "0"
+      ],
+      "correctIndex": 0,
+      "explanation": "A denominator approaching −3 stays away from zero sufficiently near the point. The quotient law therefore applies to numerator 1 and denominator g(x), giving −1/3. A: Correct: the denominator limit is nonzero, so the reciprocal limit is 1/(−3). B: This drops the sign of the nonzero limiting denominator. C: This repeats the limit of g rather than taking its reciprocal. D: A finite nonzero denominator does not make a constant numerator’s quotient vanish."
+    },
+    {
+      "id": "calc-ab-1-5-009",
+      "prompt": "Suppose lim(x→2) f(x)=0 and lim(x→2) [f(x)+g(x)]=7. What is lim(x→2) g(x)?",
+      "options": [
+        "0",
+        "7",
+        "−7",
+        "It cannot be determined because g’s limit was not separately supplied."
+      ],
+      "correctIndex": 1,
+      "explanation": "Rewrite before applying the limit laws: g(x)=[f(x)+g(x)]−f(x). Both expressions on the right have known finite limits, so the difference law gives 7−0=7. It is not necessary to assume g’s limit in advance. A: This incorrectly transfers the limit of f to g. B: Correct: g=(f+g)−f, so its limit is 7−0=7. C: This reverses the subtraction needed to isolate g. D: The identity g=(f+g)−f expresses g using two functions whose finite limits are supplied."
+    },
+    {
+      "id": "calc-ab-1-5-010",
+      "prompt": "Suppose lim(x→0) f(x)=2 and lim(x→0) g(x)=0, with g(x)≠0 for all sufficiently small nonzero x. Which statement about f(x)/g(x) is forced?",
+      "options": [
+        "It must approach +∞ from both sides.",
+        "It must approach −∞ from both sides.",
+        "It cannot approach a finite real number, but its sign of unbounded behavior is not determined by these facts.",
+        "It must approach 0."
+      ],
+      "correctIndex": 2,
+      "explanation": "If the quotient had finite limit L, multiplying it by g would force f’s limit to equal 0·L=0, contradicting 2. Thus a finite real limit is impossible. The sign and one-sided agreement are not fixed: denominator signs can produce +∞, −∞, or differing sides. A: Taking g(x)=−x² with f(x)=2 instead gives negative unbounded behavior. B: Taking g(x)=x² with f(x)=2 instead gives positive unbounded behavior. C: Correct: a hypothetical finite quotient limit would contradict f(x)=g(x)·[f(x)/g(x)] and the given nonzero numerator limit. D: A finite quotient limit of zero would make the numerator’s limit zero by the product law."
+    },
+    {
+      "id": "calc-ab-1-5-011",
+      "prompt": "Suppose lim(x→0) g(x)=2 and f(2)=6, but no information about f near 2 is given. Must lim(x→0) f(g(x)) equal 6?",
+      "options": [
+        "Yes; substitution into any outer function is always valid.",
+        "No; the composition limit must fail to exist.",
+        "No; the composition limit is necessarily the inner limit 2.",
+        "No; the point value f(2) alone does not control the composition’s nearby behavior."
+      ],
+      "correctIndex": 3,
+      "explanation": "The composition law cannot be applied using only the single value f(2). For example, take g(x)=x+2 and let f(t)=1 when t≠2 but f(2)=6. Then f(g(x)) approaches 1, not 6. Other outer functions can yield 6, so neither a specific value nor nonexistence is forced. A: This omits the necessary hypothesis about the outer function near the limiting input. B: It can exist, for example if f is a constant function. C: The inner limit is an input to f and need not be f’s output. D: Correct: outer continuity or appropriate nearby information is needed to substitute the inner limit."
+    }
+  ]
+}

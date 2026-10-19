@@ -5,7 +5,7 @@ import {courses} from '../src/lib/courses.ts';
 import {practiceEntries,practiceCount,practiceHref} from '../src/lib/practice.ts';
 import {questionBatches} from '../src/lib/practice-bank.ts';
 import {validateCalculusBank} from '../scripts/check-calculus-bank.mjs';
-import {verifyCalculusQuestion,figureLimit} from '../scripts/check-calculus-math.mjs';
+import {verifyCalculusQuestion,figureLimit,evaluateExpression,numericalOption} from '../scripts/check-calculus-math.mjs';
 import {practiceFigures} from '../src/lib/practice-figures.ts';
 test('official Calculus AB inventory keeps all eight old IDs and excludes BC-only gaps',()=>{
   const course=courses.find(course=>course.id==='calculus-ab');
@@ -60,4 +60,16 @@ test('table estimates check actual paired data, omit isolated values and reject 
   const quotient=batch.questions[8];
   assert.throws(()=>verifyCalculusQuestion({...quotient,correctIndex:(quotient.correctIndex+1)%4},qa.questions[8]),/table estimate key/);
   assert.throws(()=>verifyCalculusQuestion(batch.questions[0],{...qa.questions[0],tableSha256:'changed'}),/Table changed/);
+});
+test('limit-law verifier checks signs, fractions, roots and domains and catches equivalent alternate answers',()=>{
+  assert.equal(numericalOption('7/6'),7/6);assert.equal(numericalOption('−1/3'),-1/3);assert.equal(numericalOption('√9'),3);
+  assert.equal(evaluateExpression(['sub',['mul',2,3],['mul',3,-2]]),12);
+  assert.throws(()=>evaluateExpression(['sqrt',-1]),/domain/);assert.throws(()=>evaluateExpression(['div',1,0]),/domain/);
+  assert.throws(()=>numericalOption('2^3'),/explicit verified parser/);
+  const batch=questionBatches.find(batch=>batch.courseId==='calculus-ab'&&batch.topicId==='topic-1-5');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-1-5.json','utf8'));
+  for(const [i,equivalent] of [[3,'14/12'],[4,'√9']]) {
+    const question=structuredClone(batch.questions[i]);question.options[(question.correctIndex+1)%4]=equivalent;
+    assert.throws(()=>verifyCalculusQuestion(question,qa.questions[i]),/must have one numerical answer/);
+  }
 });
