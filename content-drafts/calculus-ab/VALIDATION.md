@@ -1,5 +1,11 @@
 # Calculus AB validation and continuation notes
 
+## Topics 6.7–6.8 — 649 questions
+
+Published 22 FTC-evaluation and basic antiderivative MCQs, bringing the bank to 649 in 59 topics (360 programmatic corroborations, 289 recorded reasoning reviews). Original-integrand Simpson quadrature independently checks nine explicit finite integrals; an actual primitive-value table checks another. Candidate-primitive differences corroborate nine separate exact derivative arguments. Domain reviews distinguish negative-interval ln|x|, tangent poles, inverse-sine endpoints, the zero-integrand constant family and independent constants on disconnected intervals. Bounded |x| is split correctly and symbolic number models reject equivalent alternate choices. These numerical methods are corroborations, not general symbolic proofs or human review.
+
+All 96 tests, build, TypeScript, standard/all-Calculus smoke and frozen Chemistry pass. Both full browser sessions display every option rationale and finish 11/11; 6.8 passed at 390×844 and the viewport was reset. Existing questions, videos and student storage are preserved. Next: 6.9; 22 topics/242 MCQs remain. Verify the normal GitHub checkpoint before continuing.
+
 ## Continuation from 970e0b0: Topics 6.5–6.6 — 627 questions
 
 Verified the clean 605-question baseline and that d602aea and the later wording checkpoint 970e0b0 were already pushed. Fresh 91-test, build/typecheck, standard/all-Calculus-route and frozen-Chemistry checks passed; both saved 6.3/6.4 browser sessions finished 11/11. One selection immediately after viewport/navigation initialization did not stick; inspecting the unselected state and selecting the visible answer afterward produced a normal complete session, without an application change.

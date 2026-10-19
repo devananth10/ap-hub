@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 6,
+  "topicId": "topic-6-7",
+  "questions": [
+    {
+      "id": "calc-ab-6-7-001",
+      "prompt": "Evaluate ∫ from −1 to 2 of (3x²−4x+2) dx.",
+      "options": [
+        "−9",
+        "4",
+        "−1",
+        "9"
+      ],
+      "correctIndex": 3,
+      "explanation": "An antiderivative is F(x)=x³−2x²+2x. Evaluate F(2)=4 and F(−1)=−5. FTC gives F(2)−F(−1)=4−(−5)=9. Both endpoints must be substituted into the same antiderivative. A: This reverses the endpoint subtraction. B: This is the upper primitive value alone. C: This adds the endpoint values rather than subtracting them. D: Subtracting the lower primitive value −5 from the upper value 4 gives 9."
+    },
+    {
+      "id": "calc-ab-6-7-002",
+      "prompt": "Evaluate ∫ from 1 to 4 of 1/x dx.",
+      "options": [
+        "ln 4",
+        "3",
+        "1/4",
+        "ln 3"
+      ],
+      "correctIndex": 0,
+      "explanation": "The integrand is continuous on [1,4]. Its primitive is ln x on this positive interval, so the integral is ln 4−ln 1=ln 4. In general ln b−ln a=ln(b/a), not ln(b−a). A: The positive-domain primitive ln x gives ln 4−ln 1. B: This treats the integrand as the constant 1. C: This is only the integrand value at the upper endpoint. D: The logarithm of a difference is not the difference of logarithms."
+    },
+    {
+      "id": "calc-ab-6-7-003",
+      "prompt": "Angles are in radians. Evaluate ∫ from 0 to π/3 of cos x dx.",
+      "options": [
+        "1/2",
+        "√3/2",
+        "√3",
+        "−√3/2"
+      ],
+      "correctIndex": 1,
+      "explanation": "An antiderivative of cos x is sin x. Hence the integral is sin(π/3)−sin 0=√3/2. The lower endpoint contributes zero, and the cosine graph is positive throughout this interval. A: This uses the upper cosine value instead of the sine primitive. B: The sine primitive gives sin(π/3)−sin 0. C: This doubles the correct sine difference. D: This reverses the sign of the primitive difference."
+    },
+    {
+      "id": "calc-ab-6-7-004",
+      "prompt": "For continuous f, F′(x)=f(x), and selected values of F are in the table below. What is ∫ from −2 to 3 of f(x) dx?",
+      "options": [
+        "12",
+        "2",
+        "−12",
+        "−5"
+      ],
+      "correctIndex": 2,
+      "explanation": "Because F is an antiderivative of continuous f, the definite integral equals F(3)−F(−2). The table gives −5−7=−12. Values of the antiderivative are sufficient; no formula or graph of f is needed. A: This subtracts endpoints in the reverse order. B: This adds F(−2) and F(3) instead of subtracting. C: FTC uses F(3)−F(−2)=−5−7. D: This omits the lower-endpoint primitive value."
+    },
+    {
+      "id": "calc-ab-6-7-005",
+      "prompt": "Evaluate ∫ from 3 to 1 of (2x−1) dx.",
+      "options": [
+        "6",
+        "−2",
+        "0",
+        "−6"
+      ],
+      "correctIndex": 3,
+      "explanation": "Use F(x)=x²−x. The written upper bound is 1 and lower bound is 3, giving F(1)−F(3)=0−6=−6. Descending bounds reverse the sign even when the function is positive between them. A: This is the forward integral from 1 to 3. B: This uses only an endpoint integrand difference. C: The integrand is positive on [1,3], so the nonzero reversed integral is negative. D: The primitive x²−x has values 0 at 1 and 6 at 3."
+    },
+    {
+      "id": "calc-ab-6-7-006",
+      "prompt": "A student uses F(x)=x²/2 on the entire interval [−1,1] and obtains 0 for ∫ from −1 to 1 of |x| dx. What is the correct value?",
+      "options": [
+        "1",
+        "0",
+        "2",
+        "−1"
+      ],
+      "correctIndex": 0,
+      "explanation": "The function |x| is −x for x<0 and x for x≥0. Split at zero and apply the appropriate primitives −x²/2 and x²/2. Each half contributes 1/2, so the integral is 1. One formula whose derivative is wrong on half the interval cannot justify FTC. A: The negative and positive halves each contribute area 1/2. B: The proposed primitive differentiates to x rather than |x| on the negative half. C: This doubles the total triangular area. D: The integrand is nonnegative and the bounds run left to right."
+    },
+    {
+      "id": "calc-ab-6-7-007",
+      "prompt": "Evaluate ∫ from 0 to 1 of eˣ dx.",
+      "options": [
+        "e",
+        "e−1",
+        "1−e",
+        "1"
+      ],
+      "correctIndex": 1,
+      "explanation": "The exponential is its own antiderivative. FTC gives e¹−e⁰=e−1. The lower bound is zero, but the exponential at zero is 1, so that endpoint does not contribute zero. A: This omits the lower-endpoint value 1. B: The primitive eˣ gives e¹−e⁰. C: This reverses the endpoint subtraction. D: This substitutes interval length for accumulated exponential area."
+    },
+    {
+      "id": "calc-ab-6-7-008",
+      "prompt": "If F is an antiderivative of continuous f on [a,b], why does choosing F+C instead of F give the same definite integral?",
+      "options": [
+        "Every antiderivative has C=0 by definition.",
+        "The constant must be added only at the upper endpoint.",
+        "The constant appears at both endpoints and cancels in (F(b)+C)−(F(a)+C).",
+        "FTC requires the primitive itself to be zero at the lower endpoint."
+      ],
+      "correctIndex": 2,
+      "explanation": "FTC evaluates the change in one antiderivative across the interval. Replacing it by F+C gives F(b)+C−F(a)−C=F(b)−F(a). The constants cancel, explaining why a definite integral is a fixed number rather than an indefinite family with a trailing arbitrary constant. A: Different constant translates are equally valid primitives. B: The same chosen primitive must be used at both endpoints. C: The definite integral depends on the primitive’s change, not its absolute vertical position. D: No such normalization is needed."
+    },
+    {
+      "id": "calc-ab-6-7-009",
+      "prompt": "Evaluate ∫ from 0 to 1 of 1/(1+x²) dx.",
+      "options": [
+        "π/2",
+        "1",
+        "−π/4",
+        "π/4"
+      ],
+      "correctIndex": 3,
+      "explanation": "The denominator is positive everywhere, and an antiderivative is arctan x. Evaluate arctan 1=π/4 and arctan 0=0. Therefore the integral equals π/4, a positive value smaller than the unit rectangle above the curve. A: This uses the wrong inverse-tangent angle at 1. B: This treats the varying integrand as the constant 1. C: This reverses the sign of the endpoint difference. D: The arctangent primitive gives arctan 1−arctan 0."
+    },
+    {
+      "id": "calc-ab-6-7-010",
+      "prompt": "Evaluate ∫ from 1 to 4 of √x dx.",
+      "options": [
+        "14/3",
+        "7",
+        "2",
+        "16/3"
+      ],
+      "correctIndex": 0,
+      "explanation": "The power rule gives the primitive (2/3)x^(3/2). On the positive interval, 4^(3/2)=8 and 1^(3/2)=1. Subtracting yields (2/3)(8−1)=14/3. Fractional powers are evaluated before the endpoint subtraction. A: The primitive (2/3)x^(3/2) gives (2/3)(8−1). B: This omits the factor 2/3 in the primitive. C: This is the integrand value at the upper endpoint only. D: This omits the lower-endpoint primitive value 2/3."
+    },
+    {
+      "id": "calc-ab-6-7-011",
+      "prompt": "Evaluate ∫ from −2 to 2 of (x³−2x²) dx.",
+      "options": [
+        "0",
+        "−32/3",
+        "32/3",
+        "−16/3"
+      ],
+      "correctIndex": 1,
+      "explanation": "An antiderivative is F(x)=x⁴/4−2x³/3. Its values are F(2)=−4/3 and F(−2)=28/3, so the difference is −32/3. Symmetric bounds do not cancel an even integrand term. A: Only the odd part cancels under symmetric bounds. B: The odd cubic contribution cancels, but the even negative quadratic contribution remains. C: This drops the negative coefficient of x². D: This is the contribution from one half of the symmetric interval."
+    }
+  ]
+}

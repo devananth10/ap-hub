@@ -154,7 +154,15 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='table-accumulation-jet'||review.check.type==='table-accumulation-difference') {
+  if (review.check.type==='definite-integral') {
+    const c=review.check,expected=integralValue(c.integrand,c.start,c.end);
+    const matches=question.options.map(option=>Math.abs((c.optionExpressions?evaluateExpression(c.optionExpressions[option]):numericalOption(option))-expected)<(c.tolerance??0.000001));
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique definite integral');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' definite integral key');
+  } else if(review.check.type==='antiderivative-candidates') {
+    const c=review.check,h=c.step??0.00001;assert.ok(new Set(c.samplePoints).size>=3&&h>0,'Antiderivatives need varied inputs');
+    const matches=question.options.map(option=>c.samplePoints.every(x=>{const primitive=c.primitives[option],rate=(evaluateExpression(primitive,x+h)-evaluateExpression(primitive,x-h))/(2*h);return Math.abs(rate-evaluateExpression(c.integrand,x))<(c.tolerance??0.00001);}));
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique antiderivative');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' antiderivative key');
+  } else if (review.check.type==='table-accumulation-jet'||review.check.type==='table-accumulation-difference') {
     const c=review.check,table=practiceTables[question.id];
     const row=x=>{const rows=table.rows.filter(r=>Number(r[0].replaceAll('−','-'))===x);assert.equal(rows.length,1,'Missing accumulation table input');return rows[0].slice(1).map(s=>Number(s.replaceAll('−','-')));};
     let matches;

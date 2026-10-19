@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 6,
+  "topicId": "topic-6-8",
+  "questions": [
+    {
+      "id": "calc-ab-6-8-001",
+      "prompt": "Which is ∫ (6x²−4x+5) dx, where C is an arbitrary constant?",
+      "options": [
+        "2x³−2x²+5x+C",
+        "2x³−4x²+5x+C",
+        "6x³−4x²+5x+C",
+        "12x−4+C"
+      ],
+      "correctIndex": 0,
+      "explanation": "Integrating term by term gives 6x³/3−4x²/2+5x+C=2x³−2x²+5x+C. The single arbitrary constant accounts for all vertical translates on the real-number interval. A: Integrate each term using the power rule and linearity. B: The linear term −4x integrates to −2x², not −4x². C: This raises powers without dividing by their new exponents. D: This differentiates the original expression rather than finding a primitive."
+    },
+    {
+      "id": "calc-ab-6-8-002",
+      "prompt": "On x>0, which is ∫ x^(−3) dx?",
+      "options": [
+        "1/(2x²)+C",
+        "−1/(2x²)+C",
+        "−3/x⁴+C",
+        "ln x+C"
+      ],
+      "correctIndex": 1,
+      "explanation": "For a power other than −1, add 1 to the exponent and divide by that new exponent. Here −3+1=−2, giving x^(−2)/(−2)+C=−1/(2x²)+C. The positive interval avoids the original pole at zero. A: This loses the sign from dividing by −2. B: The new power is −2 and dividing by it supplies the negative factor 1/2. C: This is the derivative of x^(−3), not its antiderivative. D: The logarithm rule applies to x^(−1), not x^(−3)."
+    },
+    {
+      "id": "calc-ab-6-8-003",
+      "prompt": "On the interval x<0, which is ∫ 1/x dx?",
+      "options": [
+        "−ln|x|+C",
+        "−1/x+C",
+        "ln|x|+C",
+        "x ln|x|−x+C"
+      ],
+      "correctIndex": 2,
+      "explanation": "For x<0, |x|=−x>0. The chain rule gives d[ln(−x)]/dx=(−1)/(−x)=1/x. Thus ln|x|+C is the primitive on the specified negative interval; the real formula ln x alone would not be defined there. A: This would have derivative −1/x. B: This has derivative 1/x² rather than 1/x. C: The absolute value keeps the logarithm real and its derivative is 1/x on this interval. D: This has derivative ln|x| rather than 1/x."
+    },
+    {
+      "id": "calc-ab-6-8-004",
+      "prompt": "Angles are in radians. Which is ∫ cos x dx?",
+      "options": [
+        "−sin x+C",
+        "cos x+C",
+        "−cos x+C",
+        "sin x+C"
+      ],
+      "correctIndex": 3,
+      "explanation": "An antiderivative must differentiate back to the integrand. Since d(sin x)/dx=cos x in radians, the indefinite integral is sin x+C. Retaining cosine or applying the sine derivative in reverse with the wrong sign does not work. A: This has derivative −cos x. B: This has derivative −sin x. C: This has derivative sin x. D: The derivative of sine is cosine."
+    },
+    {
+      "id": "calc-ab-6-8-005",
+      "prompt": "Which is ∫ (3 cos x−2 sin x) dx, with x in radians?",
+      "options": [
+        "3 sin x+2 cos x+C",
+        "3 sin x−2 cos x+C",
+        "−3 sin x+2 cos x+C",
+        "3 cos x−2 sin x+C"
+      ],
+      "correctIndex": 0,
+      "explanation": "Linearity gives 3∫cos x dx−2∫sin x dx. Since ∫sin x dx=−cos x+C, the result is 3 sin x+2 cos x+C. The two constants may be combined into one arbitrary constant. A: The sine contribution integrates to a positive cosine term because its derivative carries a minus. B: This differentiates to 3 cos x+2 sin x. C: This gives the wrong sign on the cosine integrand term. D: This retains the integrand rather than integrating it."
+    },
+    {
+      "id": "calc-ab-6-8-006",
+      "prompt": "On x>0, which formula is ∫ eˣ dx?",
+      "options": [
+        "x eˣ+C",
+        "eˣ+C",
+        "ln x+C",
+        "e^(−x)+C"
+      ],
+      "correctIndex": 1,
+      "explanation": "Because d(eˣ)/dx=eˣ, the primitive is eˣ+C. Unlike integrating a constant, integrating a variable exponential does not mean multiplying it by x. The other formulas fail the derivative-back check. A: The product rule produces the extra term x eˣ in its derivative. B: The exponential is its own derivative and hence its own primitive. C: This differentiates to 1/x, not eˣ. D: The inner negative sign gives derivative −e^(−x)."
+    },
+    {
+      "id": "calc-ab-6-8-007",
+      "prompt": "On −π/2<x<π/2, which is ∫ sec²x dx, with angles in radians?",
+      "options": [
+        "−tan x+C",
+        "sec x+C",
+        "tan x+C",
+        "cot x+C"
+      ],
+      "correctIndex": 2,
+      "explanation": "The basic derivative d(tan x)/dx=sec²x gives the primitive tan x+C. The specified interval excludes the tangent poles. A primitive for the entire interval must also be defined at zero, which cotangent is not. A: This gives derivative −sec²x. B: The secant derivative is sec x tan x, not sec²x. C: The tangent derivative is sec²x on this pole-free interval. D: The cotangent derivative is −csc²x where it is defined, and cotangent also fails at zero."
+    },
+    {
+      "id": "calc-ab-6-8-008",
+      "prompt": "Which is ∫ 1/(1+x²) dx on the real numbers?",
+      "options": [
+        "−arctan x+C",
+        "ln(1+x²)+C",
+        "x/(1+x²)+C",
+        "arctan x+C"
+      ],
+      "correctIndex": 3,
+      "explanation": "The standard derivative d(arctan x)/dx=1/(1+x²) identifies the primitive arctan x+C. The denominator is positive for all real x, so no interval split or absolute value is needed. A logarithm would require a matching numerator derivative. A: This changes the derivative sign. B: Its derivative has the extra numerator factor 2x. C: The quotient derivative is (1−x²)/(1+x²)². D: The inverse-tangent derivative matches the entire reciprocal quadratic."
+    },
+    {
+      "id": "calc-ab-6-8-009",
+      "prompt": "On −1<x<1, which is ∫ 1/√(1−x²) dx?",
+      "options": [
+        "arcsin x+C",
+        "−arcsin x+C",
+        "arctan x+C",
+        "√(1−x²)+C"
+      ],
+      "correctIndex": 0,
+      "explanation": "The basic inverse-sine derivative is 1/√(1−x²) on (−1,1). Therefore arcsin x+C is the primitive. The endpoints are excluded because the integrand denominator vanishes there; no claim of a finite endpoint derivative is made. A: The principal inverse-sine derivative matches the positive radical reciprocal. B: This gives the negative of the required derivative. C: This has derivative 1/(1+x²), a different denominator. D: This has derivative −x/√(1−x²), with an extra numerator."
+    },
+    {
+      "id": "calc-ab-6-8-010",
+      "prompt": "Which describes all antiderivatives of the zero function on the real numbers?",
+      "options": [
+        "Only F(x)=0.",
+        "F(x)=C, where C is any real constant.",
+        "Only F(x)=1.",
+        "F(x)=Cx for arbitrary real C."
+      ],
+      "correctIndex": 1,
+      "explanation": "An antiderivative F must satisfy F′=0 everywhere. Every constant F=C works. Conversely, for any a<b the Mean Value Theorem gives F(b)−F(a)=F′(c)(b−a)=0, so F cannot vary. Thus the complete family is precisely the constant functions. A: Zero is one valid constant, but it is not the only one. B: Every constant has zero derivative, and the Mean Value Theorem excludes nonconstant primitives. C: One is another valid constant, but all real constants are allowed. D: This family generally has derivative C rather than zero."
+    },
+    {
+      "id": "calc-ab-6-8-011",
+      "prompt": "For F′(x)=1/x on the disconnected domain x≠0, which statement about antiderivative constants is correct?",
+      "options": [
+        "The additive constants must be the same on both intervals.",
+        "No antiderivative exists on either interval.",
+        "The intervals x<0 and x>0 may have independent additive constants.",
+        "An arbitrary nonconstant function of x may replace the constant on either interval."
+      ],
+      "correctIndex": 2,
+      "explanation": "On each connected interval, primitives have the form ln|x| plus a constant. A derivative equation on x≠0 imposes no matching condition across the excluded zero. The negative and positive sides may therefore use different constants, each fixed within its own interval. A: That conclusion requires one connected interval spanning both points, which this domain lacks. B: The function ln|x| differentiates to 1/x on each interval. C: Zero is excluded, so there is no condition joining the two separate interval primitives. D: Such an addition would generally change the derivative."
+    }
+  ]
+}

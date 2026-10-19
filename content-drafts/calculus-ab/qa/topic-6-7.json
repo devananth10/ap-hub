@@ -1,0 +1,338 @@
+{
+  "topicNumber": "6.7",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "a9da4f8cfd4b3323c6d16680e0fc6ac6d70e37735503d16f3b0f3595fec24538",
+  "scopeReview": "CED FUN-6.B.1–3: antiderivative definition and analytic evaluation F(b)−F(a) for continuous integrands. All finite intervals respect real domains; piecewise |x| is split correctly. Basic previously known derivative formulas identify primitives; no substitution, integration by parts, partial fractions or improper integrals are required.",
+  "varietyReview": "Polynomial endpoints, positive reciprocal/logarithm, radian cosine, an actual primitive-value table, descending bounds, an invalid whole-interval absolute-value primitive, exponential lower endpoint, cancellation of arbitrary constants, inverse tangent, fractional-power primitive and mixed parity. Ten original-integrand quadrature/table checks complement exact FTC derivations.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-6-7-001",
+      "independentReasoning": "Differentiate F to recover all three terms of the original integrand. As a separate termwise evaluation, the cubic contribution is 9, the −2x² contribution −6 and the 2x contribution +6, again totaling 9. Original-integrand quadrature corroborates the result.",
+      "optionReview": [
+        "This reverses the endpoint subtraction.",
+        "This is the upper primitive value alone.",
+        "This adds the endpoint values rather than subtracting them.",
+        "Subtracting the lower primitive value −5 from the upper value 4 gives 9."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "add",
+          [
+            "mul",
+            3,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          [
+            "mul",
+            -4,
+            "x"
+          ],
+          2
+        ],
+        "start": -1,
+        "end": 2
+      }
+    },
+    {
+      "questionId": "calc-ab-6-7-002",
+      "independentReasoning": "Check d(ln x)/dx=1/x for positive x and the original endpoint ln 1=0. The integral is positive and between the lower/upper rectangle bounds 3/4 and 3. Numerical quadrature of the original reciprocal independently agrees with ln 4.",
+      "optionReview": [
+        "The positive-domain primitive ln x gives ln 4−ln 1.",
+        "This treats the integrand as the constant 1.",
+        "This is only the integrand value at the upper endpoint.",
+        "The logarithm of a difference is not the difference of logarithms."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "div",
+          1,
+          "x"
+        ],
+        "start": 1,
+        "end": 4,
+        "optionExpressions": {
+          "3": 3,
+          "ln 4": [
+            "ln",
+            4
+          ],
+          "1/4": [
+            "div",
+            1,
+            4
+          ],
+          "ln 3": [
+            "ln",
+            3
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-6-7-003",
+      "independentReasoning": "Differentiate the chosen primitive independently and use the unit-circle value sin(π/3)=√3/2. The original positive cosine integral is corroborated by quadrature with radian bounds, separating it from its endpoint integrand value 1/2.",
+      "optionReview": [
+        "This uses the upper cosine value instead of the sine primitive.",
+        "The sine primitive gives sin(π/3)−sin 0.",
+        "This doubles the correct sine difference.",
+        "This reverses the sign of the primitive difference."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "cos",
+          "x"
+        ],
+        "start": 0,
+        "end": 1.0471975511965976,
+        "optionExpressions": {
+          "√3/2": [
+            "div",
+            [
+              "sqrt",
+              3
+            ],
+            2
+          ],
+          "1/2": 0.5,
+          "√3": [
+            "sqrt",
+            3
+          ],
+          "−√3/2": [
+            "mul",
+            -0.5,
+            [
+              "sqrt",
+              3
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-6-7-004",
+      "independentReasoning": "Independently split the interval at 0: F(0)−F(−2)=4−7=−3 and F(3)−F(0)=−5−4=−9. Adding the two oriented changes gives −12 and cancels the shared value F(0).",
+      "optionReview": [
+        "This subtracts endpoints in the reverse order.",
+        "This adds F(−2) and F(3) instead of subtracting.",
+        "FTC uses F(3)−F(−2)=−5−7.",
+        "This omits the lower-endpoint primitive value."
+      ],
+      "check": {
+        "type": "table-accumulation-difference",
+        "start": -2,
+        "end": 3
+      },
+      "tableSha256": "1bb24058a84734968591345a6ed4103451d8fb27c9e68a3c1da85fe8d73b7496"
+    },
+    {
+      "questionId": "calc-ab-6-7-005",
+      "independentReasoning": "The forward region is a trapezoid of width 2 and heights 1 and 5, with area 6. Reversing it independently gives −6, agreeing with FTC and the oriented original-integrand quadrature.",
+      "optionReview": [
+        "This is the forward integral from 1 to 3.",
+        "This uses only an endpoint integrand difference.",
+        "The integrand is positive on [1,3], so the nonzero reversed integral is negative.",
+        "The primitive x²−x has values 0 at 1 and 6 at 3."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "sub",
+          [
+            "mul",
+            2,
+            "x"
+          ],
+          1
+        ],
+        "start": 3,
+        "end": 1
+      }
+    },
+    {
+      "questionId": "calc-ab-6-7-006",
+      "independentReasoning": "Independently use the two right triangles of base 1 and height 1, each of area 1/2. Direct differentiation of the student’s F at a negative input gives a negative value, contrary to |x|. Piecewise exact geometry and original-integrand quadrature agree.",
+      "optionReview": [
+        "The negative and positive halves each contribute area 1/2.",
+        "The proposed primitive differentiates to x rather than |x| on the negative half.",
+        "This doubles the total triangular area.",
+        "The integrand is nonnegative and the bounds run left to right."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "abs",
+          "x"
+        ],
+        "start": -1,
+        "end": 1
+      }
+    },
+    {
+      "questionId": "calc-ab-6-7-007",
+      "independentReasoning": "Differentiate the primitive to recover eˣ, then evaluate both original endpoint values independently. Since eˣ>1 except at the starting endpoint, its integral over a unit interval exceeds 1; quadrature agrees with e−1≈1.71828.",
+      "optionReview": [
+        "This omits the lower-endpoint value 1.",
+        "The primitive eˣ gives e¹−e⁰.",
+        "This reverses the endpoint subtraction.",
+        "This substitutes interval length for accumulated exponential area."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "exp",
+          "x"
+        ],
+        "start": 0,
+        "end": 1,
+        "optionExpressions": {
+          "1": 1,
+          "e−1": [
+            "sub",
+            [
+              "exp",
+              1
+            ],
+            1
+          ],
+          "e": [
+            "exp",
+            1
+          ],
+          "1−e": [
+            "sub",
+            1,
+            [
+              "exp",
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-6-7-008",
+      "independentReasoning": "Translate the whole primitive graph vertically by any fixed amount. Its endpoint height difference is unchanged. This independent geometric interpretation agrees with the exact cancellation and rules out adding a constant at only one endpoint.",
+      "optionReview": [
+        "Different constant translates are equally valid primitives.",
+        "The same chosen primitive must be used at both endpoints.",
+        "The definite integral depends on the primitive’s change, not its absolute vertical position.",
+        "No such normalization is needed."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The constant appears at both endpoints and cancels in (F(b)+C)−(F(a)+C)."
+      }
+    },
+    {
+      "questionId": "calc-ab-6-7-009",
+      "independentReasoning": "Verify d(arctan x)/dx=1/(1+x²) and the principal inverse-tangent values in radians. The original integrand lies between 1/2 and 1 on [0,1], so its integral must lie strictly between those bounds; π/4 does, while the other numeric alternatives do not.",
+      "optionReview": [
+        "This uses the wrong inverse-tangent angle at 1.",
+        "This treats the varying integrand as the constant 1.",
+        "This reverses the sign of the endpoint difference.",
+        "The arctangent primitive gives arctan 1−arctan 0."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "div",
+          1,
+          [
+            "add",
+            1,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ]
+        ],
+        "start": 0,
+        "end": 1,
+        "optionExpressions": {
+          "1": 1,
+          "π/4": [
+            "div",
+            "pi",
+            4
+          ],
+          "π/2": [
+            "div",
+            "pi",
+            2
+          ],
+          "−π/4": [
+            "div",
+            [
+              "mul",
+              -1,
+              "pi"
+            ],
+            4
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-6-7-010",
+      "independentReasoning": "Differentiate the proposed primitive: (2/3)(3/2)x^(1/2)=√x. Independently evaluate its endpoint heights as 16/3 and 2/3. Their positive difference 14/3 is corroborated by quadrature of the original radical away from its endpoint domain boundary.",
+      "optionReview": [
+        "The primitive (2/3)x^(3/2) gives (2/3)(8−1).",
+        "This omits the factor 2/3 in the primitive.",
+        "This is the integrand value at the upper endpoint only.",
+        "This omits the lower-endpoint primitive value 2/3."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "sqrt",
+          "x"
+        ],
+        "start": 1,
+        "end": 4
+      }
+    },
+    {
+      "questionId": "calc-ab-6-7-011",
+      "independentReasoning": "Independently use parity: ∫ x³=0 over [−2,2], while −2 times twice ∫ from 0 to 2 of x² equals −4·(8/3)=−32/3. This termwise symmetry calculation agrees with the full primitive and original polynomial quadrature.",
+      "optionReview": [
+        "Only the odd part cancels under symmetric bounds.",
+        "The odd cubic contribution cancels, but the even negative quadratic contribution remains.",
+        "This drops the negative coefficient of x².",
+        "This is the contribution from one half of the symmetric interval."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "sub",
+          [
+            "pow",
+            "x",
+            3
+          ],
+          [
+            "mul",
+            2,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ]
+        ],
+        "start": -2,
+        "end": 2
+      }
+    }
+  ]
+}

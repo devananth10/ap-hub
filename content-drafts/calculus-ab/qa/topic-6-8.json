@@ -1,0 +1,691 @@
+{
+  "topicNumber": "6.8",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "9c1c0c3dac1899f6b921a5ee466730de166ce13075d7f8b636b1f8155506ed67",
+  "scopeReview": "CED FUN-6.C.1–3: indefinite integrals and primitive families from known derivative rules, linearity and power-rule exception −1. Basic sine, cosine, exponential, tangent, inverse-tangent and inverse-sine primitives respect their real domains. C is constant on a connected interval; disconnected components are treated independently. No integration by parts or partial fractions appears; closed-form availability is not assumed for arbitrary functions.",
+  "varietyReview": "Polynomial sum, negative power versus logarithm exception, logarithm on a negative interval, basic cosine, mixed signed trigonometric sum, exponential versus product confusion, secant-square pole/domain checks, inverse tangent, inverse sine, the full constant family for zero integrand and separate constants on disconnected intervals. Nine candidate-derivative computations with independently stated exact proofs; conceptual family/domain assertions are separately reviewed.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-6-8-001",
+      "independentReasoning": "Differentiate every candidate independently. The selected one returns 6x²−4x+5, while the alternatives give 6x²−8x+5, 18x²−8x+5 and 12. Original candidate differences at varied inputs corroborate the exact derivative comparison.",
+      "optionReview": [
+        "Integrate each term using the power rule and linearity.",
+        "The linear term −4x integrates to −2x², not −4x².",
+        "This raises powers without dividing by their new exponents.",
+        "This differentiates the original expression rather than finding a primitive."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "add",
+          [
+            "mul",
+            6,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          [
+            "mul",
+            -4,
+            "x"
+          ],
+          5
+        ],
+        "primitives": {
+          "2x³−2x²+5x+C": [
+            "add",
+            [
+              "mul",
+              2,
+              [
+                "pow",
+                "x",
+                3
+              ]
+            ],
+            [
+              "mul",
+              -2,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ],
+            [
+              "mul",
+              5,
+              "x"
+            ]
+          ],
+          "2x³−4x²+5x+C": [
+            "add",
+            [
+              "mul",
+              2,
+              [
+                "pow",
+                "x",
+                3
+              ]
+            ],
+            [
+              "mul",
+              -4,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ],
+            [
+              "mul",
+              5,
+              "x"
+            ]
+          ],
+          "6x³−4x²+5x+C": [
+            "add",
+            [
+              "mul",
+              6,
+              [
+                "pow",
+                "x",
+                3
+              ]
+            ],
+            [
+              "mul",
+              -4,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ],
+            [
+              "mul",
+              5,
+              "x"
+            ]
+          ],
+          "12x−4+C": [
+            "sub",
+            [
+              "mul",
+              12,
+              "x"
+            ],
+            4
+          ]
+        },
+        "samplePoints": [
+          -1,
+          0.5,
+          2
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-8-002",
+      "independentReasoning": "Differentiate −(1/2)x^(−2): the coefficient becomes (−1/2)(−2)=1 and the exponent becomes −3. Separately check the three alternatives: their derivatives are −x^(−3), 12x^(−5) and 1/x, none the original power on the whole interval.",
+      "optionReview": [
+        "This loses the sign from dividing by −2.",
+        "The new power is −2 and dividing by it supplies the negative factor 1/2.",
+        "This is the derivative of x^(−3), not its antiderivative.",
+        "The logarithm rule applies to x^(−1), not x^(−3)."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "pow",
+          "x",
+          -3
+        ],
+        "primitives": {
+          "−1/(2x²)+C": [
+            "div",
+            -0.5,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          "1/(2x²)+C": [
+            "div",
+            0.5,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          "−3/x⁴+C": [
+            "div",
+            -3,
+            [
+              "pow",
+              "x",
+              4
+            ]
+          ],
+          "ln x+C": [
+            "ln",
+            "x"
+          ]
+        },
+        "samplePoints": [
+          0.5,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-8-003",
+      "independentReasoning": "Rewrite the chosen candidate as ln(−x) and differentiate directly, keeping the inner negative sign. Independently differentiate the product candidate using the product rule: ln|x|+1−1=ln|x|. Numerical checks stay strictly negative and away from the pole.",
+      "optionReview": [
+        "This would have derivative −1/x.",
+        "This has derivative 1/x² rather than 1/x.",
+        "The absolute value keeps the logarithm real and its derivative is 1/x on this interval.",
+        "This has derivative ln|x| rather than 1/x."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "div",
+          1,
+          "x"
+        ],
+        "primitives": {
+          "ln|x|+C": [
+            "ln",
+            [
+              "abs",
+              "x"
+            ]
+          ],
+          "−ln|x|+C": [
+            "mul",
+            -1,
+            [
+              "ln",
+              [
+                "abs",
+                "x"
+              ]
+            ]
+          ],
+          "−1/x+C": [
+            "div",
+            -1,
+            "x"
+          ],
+          "x ln|x|−x+C": [
+            "sub",
+            [
+              "mul",
+              "x",
+              [
+                "ln",
+                [
+                  "abs",
+                  "x"
+                ]
+              ]
+            ],
+            "x"
+          ]
+        },
+        "samplePoints": [
+          -2,
+          -1,
+          -0.5
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-8-004",
+      "independentReasoning": "Compute the derivative of all four offered primitives separately and compare their functions, not just their values at a special angle. Varied negative and positive sample inputs independently reject sign and sine/cosine swaps.",
+      "optionReview": [
+        "This has derivative −cos x.",
+        "This has derivative −sin x.",
+        "This has derivative sin x.",
+        "The derivative of sine is cosine."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "cos",
+          "x"
+        ],
+        "primitives": {
+          "sin x+C": [
+            "sin",
+            "x"
+          ],
+          "−sin x+C": [
+            "mul",
+            -1,
+            [
+              "sin",
+              "x"
+            ]
+          ],
+          "cos x+C": [
+            "cos",
+            "x"
+          ],
+          "−cos x+C": [
+            "mul",
+            -1,
+            [
+              "cos",
+              "x"
+            ]
+          ]
+        },
+        "samplePoints": [
+          -0.8,
+          0.25,
+          1.3
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-8-005",
+      "independentReasoning": "Differentiate the selected sum directly: 3 cos x−2 sin x. Independently check that each wrong candidate changes at least one coefficient/function/sign; original candidate differences corroborate the complete sum at three nonspecial inputs.",
+      "optionReview": [
+        "The sine contribution integrates to a positive cosine term because its derivative carries a minus.",
+        "This differentiates to 3 cos x+2 sin x.",
+        "This gives the wrong sign on the cosine integrand term.",
+        "This retains the integrand rather than integrating it."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "sub",
+          [
+            "mul",
+            3,
+            [
+              "cos",
+              "x"
+            ]
+          ],
+          [
+            "mul",
+            2,
+            [
+              "sin",
+              "x"
+            ]
+          ]
+        ],
+        "primitives": {
+          "3 sin x+2 cos x+C": [
+            "add",
+            [
+              "mul",
+              3,
+              [
+                "sin",
+                "x"
+              ]
+            ],
+            [
+              "mul",
+              2,
+              [
+                "cos",
+                "x"
+              ]
+            ]
+          ],
+          "3 sin x−2 cos x+C": [
+            "sub",
+            [
+              "mul",
+              3,
+              [
+                "sin",
+                "x"
+              ]
+            ],
+            [
+              "mul",
+              2,
+              [
+                "cos",
+                "x"
+              ]
+            ]
+          ],
+          "−3 sin x+2 cos x+C": [
+            "add",
+            [
+              "mul",
+              -3,
+              [
+                "sin",
+                "x"
+              ]
+            ],
+            [
+              "mul",
+              2,
+              [
+                "cos",
+                "x"
+              ]
+            ]
+          ],
+          "3 cos x−2 sin x+C": [
+            "sub",
+            [
+              "mul",
+              3,
+              [
+                "cos",
+                "x"
+              ]
+            ],
+            [
+              "mul",
+              2,
+              [
+                "sin",
+                "x"
+              ]
+            ]
+          ]
+        },
+        "samplePoints": [
+          -1,
+          0.4,
+          1.2
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-8-006",
+      "independentReasoning": "Direct product-rule differentiation gives d(x eˣ)/dx=(1+x)eˣ, which exceeds eˣ on the stated positive interval. The logarithmic and negative-exponential alternatives have different derivatives as well. Centered differences of the original candidates corroborate these distinctions.",
+      "optionReview": [
+        "The product rule produces the extra term x eˣ in its derivative.",
+        "The exponential is its own derivative and hence its own primitive.",
+        "This differentiates to 1/x, not eˣ.",
+        "The inner negative sign gives derivative −e^(−x)."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "exp",
+          "x"
+        ],
+        "primitives": {
+          "eˣ+C": [
+            "exp",
+            "x"
+          ],
+          "x eˣ+C": [
+            "mul",
+            "x",
+            [
+              "exp",
+              "x"
+            ]
+          ],
+          "ln x+C": [
+            "ln",
+            "x"
+          ],
+          "e^(−x)+C": [
+            "exp",
+            [
+              "mul",
+              -1,
+              "x"
+            ]
+          ]
+        },
+        "samplePoints": [
+          0.5,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-8-007",
+      "independentReasoning": "Independently express the integrand as 1/cos²x and differentiate the quotient sin x/cos x. The quotient rule gives (cos²x+sin²x)/cos²x=sec²x. Numerical candidate checks use interior nonzero samples; the separate domain review also rejects the cotangent gap.",
+      "optionReview": [
+        "This gives derivative −sec²x.",
+        "The secant derivative is sec x tan x, not sec²x.",
+        "The tangent derivative is sec²x on this pole-free interval.",
+        "The cotangent derivative is −csc²x where it is defined, and cotangent also fails at zero."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "div",
+          1,
+          [
+            "pow",
+            [
+              "cos",
+              "x"
+            ],
+            2
+          ]
+        ],
+        "primitives": {
+          "tan x+C": [
+            "tan",
+            "x"
+          ],
+          "−tan x+C": [
+            "mul",
+            -1,
+            [
+              "tan",
+              "x"
+            ]
+          ],
+          "sec x+C": [
+            "div",
+            1,
+            [
+              "cos",
+              "x"
+            ]
+          ],
+          "cot x+C": [
+            "div",
+            [
+              "cos",
+              "x"
+            ],
+            [
+              "sin",
+              "x"
+            ]
+          ]
+        },
+        "samplePoints": [
+          -0.6,
+          0.3,
+          0.8
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-8-008",
+      "independentReasoning": "Check all formulas by differentiating, including both quotient-rule terms for x/(1+x²). The chosen primitive is increasing everywhere like its positive integrand; the negative inverse tangent and the other varying derivatives fail the exact identity. Original candidate differences corroborate this.",
+      "optionReview": [
+        "This changes the derivative sign.",
+        "Its derivative has the extra numerator factor 2x.",
+        "The quotient derivative is (1−x²)/(1+x²)².",
+        "The inverse-tangent derivative matches the entire reciprocal quadratic."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "div",
+          1,
+          [
+            "add",
+            1,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ]
+        ],
+        "primitives": {
+          "arctan x+C": [
+            "atan",
+            "x"
+          ],
+          "−arctan x+C": [
+            "mul",
+            -1,
+            [
+              "atan",
+              "x"
+            ]
+          ],
+          "ln(1+x²)+C": [
+            "ln",
+            [
+              "add",
+              1,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ]
+          ],
+          "x/(1+x²)+C": [
+            "div",
+            "x",
+            [
+              "add",
+              1,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ]
+          ]
+        },
+        "samplePoints": [
+          -1,
+          0.2,
+          1.5
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-8-009",
+      "independentReasoning": "Using sin y=x on the principal branch gives cos y=√(1−x²)>0 and y′=1/cos y. This independently derives the selected formula. Check all alternatives directly and keep every numerical input strictly inside the radical domain.",
+      "optionReview": [
+        "The principal inverse-sine derivative matches the positive radical reciprocal.",
+        "This gives the negative of the required derivative.",
+        "This has derivative 1/(1+x²), a different denominator.",
+        "This has derivative −x/√(1−x²), with an extra numerator."
+      ],
+      "check": {
+        "type": "antiderivative-candidates",
+        "integrand": [
+          "div",
+          1,
+          [
+            "sqrt",
+            [
+              "sub",
+              1,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ]
+          ]
+        ],
+        "primitives": {
+          "arcsin x+C": [
+            "asin",
+            "x"
+          ],
+          "−arcsin x+C": [
+            "mul",
+            -1,
+            [
+              "asin",
+              "x"
+            ]
+          ],
+          "arctan x+C": [
+            "atan",
+            "x"
+          ],
+          "√(1−x²)+C": [
+            "sqrt",
+            [
+              "sub",
+              1,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ]
+          ]
+        },
+        "samplePoints": [
+          -0.6,
+          0.2,
+          0.7
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-8-010",
+      "independentReasoning": "The implication from zero derivative to constant is valid on this connected interval, the real line. Directly differentiate the four proposed descriptions and distinguish a single correct primitive from the full required family. The linear family only works for its special choice C=0.",
+      "optionReview": [
+        "Zero is one valid constant, but it is not the only one.",
+        "Every constant has zero derivative, and the Mean Value Theorem excludes nonconstant primitives.",
+        "One is another valid constant, but all real constants are allowed.",
+        "This family generally has derivative C rather than zero."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "F(x)=C, where C is any real constant."
+      }
+    },
+    {
+      "questionId": "calc-ab-6-8-011",
+      "independentReasoning": "Construct F(x)=ln|x| for x>0 and F(x)=ln|x|+7 for x<0. It is differentiable at every point of its stated domain and has derivative 1/x, yet no single common constant describes both sides relative to ln|x|. The example proves the interval qualification independently.",
+      "optionReview": [
+        "That conclusion requires one connected interval spanning both points, which this domain lacks.",
+        "The function ln|x| differentiates to 1/x on each interval.",
+        "Zero is excluded, so there is no condition joining the two separate interval primitives.",
+        "Such an addition would generally change the derivative."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The intervals x<0 and x>0 may have independent additive constants."
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 627,
+  "questionsChecked": 649,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -1706,6 +1706,101 @@
       "questionId": "calc-ab-6-6-011",
       "method": "numeric",
       "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-6-7-001",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-7-002",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-7-003",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-7-004",
+      "method": "table-accumulation-difference",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-7-005",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-7-006",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-7-007",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-7-009",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-7-010",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-7-011",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-8-001",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-8-002",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-8-003",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-8-004",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-8-005",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-8-006",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-8-007",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-8-008",
+      "method": "antiderivative-candidates",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-8-009",
+      "method": "antiderivative-candidates",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -1994,7 +2089,10 @@
     "calc-ab-6-5-011",
     "calc-ab-6-6-007",
     "calc-ab-6-6-009",
-    "calc-ab-6-6-010"
+    "calc-ab-6-6-010",
+    "calc-ab-6-7-008",
+    "calc-ab-6-8-010",
+    "calc-ab-6-8-011"
   ],
   "humanReviewPerformed": false,
   "limitations": [

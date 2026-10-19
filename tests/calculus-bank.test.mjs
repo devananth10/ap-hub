@@ -415,3 +415,22 @@ test('graph accumulation maxima compare all zeros and clipped interval endpoints
   verifyCalculusQuestion(q,review);
   q.correctIndex=2;assert.throws(()=>verifyCalculusQuestion(q,review),/graph key/);
 });
+test('definite integral checks preserve orientation and detect equivalent symbolic answers',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-6-7');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-6-7.json','utf8'));
+  const wrong=structuredClone(batch.questions[4]);wrong.correctIndex=wrong.options.indexOf('6');
+  assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[4]),/definite integral key/);
+  const q=structuredClone(batch.questions[1]),review=structuredClone(qa.questions[1]);
+  q.options[(q.correctIndex+1)%4]='2 ln 2';review.check.optionExpressions['2 ln 2']=['mul',2,['ln',2]];
+  assert.throws(()=>verifyCalculusQuestion(q,review),/unique definite integral/);
+  assert.throws(()=>integralValue(['div',1,'x'],-1,1),/Invalid real arithmetic domain/);
+});
+test('antiderivative checks use candidate derivatives and respect the original real interval',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-6-8');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-6-8.json','utf8'));
+  verifyCalculusQuestion(batch.questions[2],qa.questions[2]);
+  const wrong=structuredClone(batch.questions[2]);wrong.correctIndex=wrong.options.indexOf('−ln|x|+C');
+  assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[2]),/antiderivative key/);
+  const bad=structuredClone(qa.questions[2]);bad.check.samplePoints=[-1,0,1];
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[2],bad),/Invalid real arithmetic domain/);
+});

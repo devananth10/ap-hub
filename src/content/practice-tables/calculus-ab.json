@@ -1149,5 +1149,26 @@
         "6"
       ]
     ]
+  },
+  "calc-ab-6-7-004": {
+    "caption": "Values of an antiderivative F of the continuous integrand f",
+    "headers": [
+      "x",
+      "F(x)"
+    ],
+    "rows": [
+      [
+        "−2",
+        "7"
+      ],
+      [
+        "0",
+        "4"
+      ],
+      [
+        "3",
+        "−5"
+      ]
+    ]
   }
 }
