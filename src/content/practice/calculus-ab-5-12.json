@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 5,
+  "topicId": "topic-5-12",
+  "questions": [
+    {
+      "id": "calc-ab-5-12-001",
+      "prompt": "On the upper branch y>0 of x²+y²=20, which point has a horizontal tangent and is a local maximum of y?",
+      "options": [
+        "(0,√20)",
+        "(√20,0)",
+        "(0,−√20)",
+        "(√10,√10)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Implicit differentiation gives y′=−x/y for y≠0. A horizontal tangent on the upper branch requires x=0, and the original equation then gives y=√20. The local explicit branch is y=√(20−x²), which has its largest nearby height at 0. A: The derivative −x/y vanishes there and the positive branch bends downward. B: This boundary point has a vertical tangent and does not satisfy y>0. C: This point belongs to the lower branch, not the specified upper branch. D: This point lies on the upper curve but has slope −1 rather than zero."
+    },
+    {
+      "id": "calc-ab-5-12-002",
+      "prompt": "A smooth branch of x²+xy+y²=3 passes through (1,1). What is y″ at that point?",
+      "options": [
+        "−1",
+        "−2/3",
+        "2/3",
+        "−2"
+      ],
+      "correctIndex": 1,
+      "explanation": "First differentiate: 2x+y+(x+2y)y′=0, giving y′=−1 at (1,1). Differentiating again yields 2+2y′+2(y′)²+(x+2y)y″=0. Thus y″=−(2−2+2)/3=−2/3, so the local branch is concave down. A: This is the first derivative rather than the second. B: The slope is −1 and differentiating again gives y″=−[2+2y′+2(y′)²]/(x+2y). C: This loses the negative sign when isolating y″. D: This omits division by x+2y=3."
+    },
+    {
+      "id": "calc-ab-5-12-003",
+      "prompt": "A smooth branch of y²=x³−3x+3 passes through (1,1). What is y″ there?",
+      "options": [
+        "0",
+        "−3",
+        "3",
+        "6"
+      ],
+      "correctIndex": 2,
+      "explanation": "Differentiate: 2yy′=3x²−3, so y′=0 at (1,1). Differentiate again: 2(y′)²+2yy″=6x. Substitution gives 0+2y″=6, hence y″=3. The stationary point is a local minimum on this positive smooth branch. A: A zero first derivative does not force a zero second derivative. B: This reverses the sign of the cubic second derivative contribution. C: The first derivative is zero and 2(y′)²+2yy″=6x gives y″=3. D: This omits the coefficient 2y=2 when solving for y″."
+    },
+    {
+      "id": "calc-ab-5-12-004",
+      "prompt": "For the implicit relation y²=x² at (0,0), what does the expression y′=x/y tell us?",
+      "options": [
+        "It establishes a unique horizontal tangent of slope 0.",
+        "It establishes a unique vertical tangent.",
+        "The origin is missing from the relation.",
+        "It is indeterminate there; the relation has two distinct branches y=x and y=−x with different slopes."
+      ],
+      "correctIndex": 3,
+      "explanation": "Differentiating gives 2yy′=2x, but division by y is invalid at the origin. The original equation factors as (y−x)(y+x)=0, showing two crossing line branches with slopes +1 and −1. The quotient 0/0 cannot choose one branch. A: The two actual branches have slopes +1 and −1. B: Neither of the two line branches is vertical. C: The original equation does contain the origin, even though the quotient formula fails there. D: The zero denominator and numerator do not supply a unique local branch or tangent slope."
+    },
+    {
+      "id": "calc-ab-5-12-005",
+      "prompt": "For x²+y²=9, which description of the tangent at (3,0) is correct?",
+      "options": [
+        "The geometric tangent is vertical, x=3, and no finite dy/dx is available there.",
+        "The tangent is horizontal because y=0.",
+        "The tangent has slope zero by assigning −3/0 the value zero.",
+        "No geometric tangent exists because the formula y′=−x/y fails."
+      ],
+      "correctIndex": 0,
+      "explanation": "The implicit slope formula y′=−x/y cannot give a finite number at (3,0). Parametrize the circle as (3cos t,3sin t): at t=0 its nonzero tangent direction is (0,3), proving the geometric tangent is vertical, x=3. A: A regular circle point can have a vertical tangent even though the y-as-function-of-x slope fails. B: A zero height does not imply zero slope. C: Division by zero cannot be assigned that value. D: The circle does have a well-defined vertical tangent at that point."
+    },
+    {
+      "id": "calc-ab-5-12-006",
+      "prompt": "For the implicit relation y³=x, what happens at the origin?",
+      "options": [
+        "It has a local minimum because the derivative formula has a zero denominator.",
+        "The branch has a vertical tangent and no local maximum or minimum there.",
+        "It has a horizontal tangent because y=0.",
+        "It splits into two different real y branches near the origin."
+      ],
+      "correctIndex": 1,
+      "explanation": "The relation defines y=∛x. Its origin difference quotient is ∛h/h=|h|^(−2/3), tending to positive infinity, so no finite derivative exists and the tangent is vertical. The function increases through negative and positive values, so the origin is neither local extremum. A: A derivative failure does not by itself establish an extremum. B: The cube-root branch increases through the origin with unbounded positive slope. C: The defining quotient grows without bound rather than tending to zero. D: Every real x has a unique real cube root."
+    },
+    {
+      "id": "calc-ab-5-12-007",
+      "prompt": "On the branch of xy=4 through (2,2), what is y″ at that point?",
+      "options": [
+        "−1",
+        "0",
+        "1",
+        "2"
+      ],
+      "correctIndex": 2,
+      "explanation": "Differentiating xy=4 gives y+xy′=0, hence y′=−y/x=−1 at (2,2). Differentiating again gives 2y′+xy″=0. Therefore y″=−2(−1)/2=1, giving concave-up behavior locally. A: This is the first derivative rather than the curvature value. B: This drops the mixed product contributions on the second differentiation. C: Differentiating y+xy′=0 gives 2y′+xy″=0 and y′=−1. D: This omits division by the current x=2."
+    },
+    {
+      "id": "calc-ab-5-12-008",
+      "prompt": "For the upper branch y>0 of x²+y²=1, which statement about concavity is correct for −1<x<1?",
+      "options": [
+        "It changes concavity at x=0 because y′=0 there.",
+        "It is concave up because y is positive.",
+        "Both circle endpoints are interior inflection points.",
+        "It is concave down everywhere on that branch and has no interior inflection point."
+      ],
+      "correctIndex": 3,
+      "explanation": "From y′=−x/y and x²+y²=1, a second differentiation gives y″=−(x²+y²)/y³=−1/y³. Since y>0 on the specified branch, this is negative throughout. There is no interior concavity change. A: A horizontal tangent does not imply an inflection. B: The sign of height does not determine curvature. C: They are outside the stated open upper-branch domain. D: The second derivative is −1/y³, which is negative while y>0."
+    },
+    {
+      "id": "calc-ab-5-12-009",
+      "prompt": "A student claims (1,−2) is a horizontal-tangent point of x²+xy+y²=7 because the formula y′=−(2x+y)/(x+2y) gives zero there. What check is missing?",
+      "options": [
+        "The proposed point is not on the original curve: 1−2+4=3, not 7.",
+        "The denominator is zero at that point.",
+        "A horizontal tangent requires a nonzero numerator.",
+        "Every zero slope is automatically a vertical tangent."
+      ],
+      "correctIndex": 0,
+      "explanation": "Before classifying a tangent, verify that its proposed point satisfies the original relation. Here x²+xy+y²=3 rather than 7, so (1,−2) is not a point of that curve. The derivative formula alone does not override this failure. A: A slope formula evaluated off the relation cannot establish a tangent to it. B: It equals 1−4=−3, which is nonzero. C: A finite horizontal slope instead requires zero numerator and nonzero denominator. D: A zero finite slope is horizontal, not vertical."
+    },
+    {
+      "id": "calc-ab-5-12-010",
+      "prompt": "A student twice differentiates x²+y²=4 and writes 2+2yy″=0. Which correction is required?",
+      "options": [
+        "The equation should be 2+2y′+2yy″=0.",
+        "The equation should be 2+2(y′)²+2yy″=0.",
+        "The equation should be 2+2(y′)²+2y²y″=0.",
+        "No correction is needed."
+      ],
+      "correctIndex": 1,
+      "explanation": "The first derivative equation is 2x+2yy′=0. Differentiating its product gives 2[y′·y′+y·y″], so the complete second derivative equation is 2+2(y′)²+2yy″=0. The term involving the square of the first derivative cannot be discarded. A: The first product contribution is 2(y′)², not 2y′. B: Differentiating 2yy′ requires both product-rule terms. C: The coefficient of y″ remains 2y, not 2y². D: The derivative of y in the product 2yy′ contributes a missing term."
+    },
+    {
+      "id": "calc-ab-5-12-011",
+      "prompt": "A smooth branch of eʸ+x²=2 passes through (1,0). What is y″ there?",
+      "options": [
+        "−2",
+        "−4",
+        "−6",
+        "6"
+      ],
+      "correctIndex": 2,
+      "explanation": "Differentiating gives eʸy′+2x=0, so y′=−2 at (1,0). Differentiating again gives eʸ[(y′)²+y″]+2=0. With e⁰=1 and (y′)²=4, this is 4+y″+2=0, hence y″=−6. A: This is the first derivative rather than the second. B: This omits the second derivative 2 of x². C: The first derivative is −2 and the second equation gives (y′)²+y″+2=0 at y=0. D: This reverses the sign when solving the second-derivative equation."
+    }
+  ]
+}

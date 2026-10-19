@@ -327,3 +327,10 @@ test('function jets compare all three ordered derivative levels',()=>{
   const wrong=structuredClone(batch.questions[10]);wrong.correctIndex=wrong.options.indexOf('(1, 0, 1)');
   assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[10]),/function jet key/);
 });
+test('implicit curvature corroboration includes the mixed term and distinguishes first derivative',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-5-12');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-5-12.json','utf8'));
+  verifyCalculusQuestion(batch.questions[6],qa.questions[6]);verifyCalculusQuestion(batch.questions[10],qa.questions[10]);
+  const wrong=structuredClone(batch.questions[6]);wrong.correctIndex=wrong.options.indexOf('−1');
+  assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[6]),/implicit slope key/);
+});

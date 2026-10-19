@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 539,
+  "questionsChecked": 561,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -1451,6 +1451,81 @@
       "questionId": "calc-ab-5-10-008",
       "method": "candidate-extremum",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-11-001",
+      "method": "candidate-extremum",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-11-002",
+      "method": "candidate-extremum",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-11-003",
+      "method": "candidate-extremum",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-11-004",
+      "method": "second-derivative-test",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-11-005",
+      "method": "candidate-extremum",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-11-006",
+      "method": "candidate-extremum",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-11-007",
+      "method": "candidate-extremum",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-11-008",
+      "method": "candidate-extremum",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-11-009",
+      "method": "second-derivative-test",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-11-010",
+      "method": "candidate-extremum",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-11-011",
+      "method": "candidate-extremum",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-12-002",
+      "method": "implicit-curvature",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-12-003",
+      "method": "implicit-curvature",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-12-007",
+      "method": "implicit-curvature",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-12-011",
+      "method": "implicit-curvature",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -1702,7 +1777,14 @@
     "calc-ab-5-10-006",
     "calc-ab-5-10-009",
     "calc-ab-5-10-010",
-    "calc-ab-5-10-011"
+    "calc-ab-5-10-011",
+    "calc-ab-5-12-001",
+    "calc-ab-5-12-004",
+    "calc-ab-5-12-005",
+    "calc-ab-5-12-006",
+    "calc-ab-5-12-008",
+    "calc-ab-5-12-009",
+    "calc-ab-5-12-010"
   ],
   "humanReviewPerformed": false,
   "limitations": [

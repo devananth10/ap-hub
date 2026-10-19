@@ -1,0 +1,431 @@
+{
+  "topicNumber": "5.11",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "7bf4aade13a6712ff2359f3a53c95baf1e0eadaa8c3eb37c67a7ac588e1a4093",
+  "scopeReview": "CED FUN-4.C.1 calculated optimization results interpreted in context with units, feasible geometry, candidate completeness and global justifications. Closed-model boundary limits are distinguished from nondegenerate physical objects. All numerical winners separately bounded or sign-verified. Radians for trig.",
+  "varietyReview": "Perimeter area, river fencing, folded-box volume, closed-cylinder surface, profit versus quantity, nearest-point squared distance, trig maximum, semicircle rectangle, unequal poster margins, fixed-sum cubes and average versus total cost.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-5-11-001",
+      "independentReasoning": "Independently complete the square: A=144−(x−12)²≤144, with equality at the feasible side x=12. This exact bound proves global optimality and the area units; the numerical model compares the original area over its closure candidates.",
+      "optionReview": [
+        "This doubles the area instead of multiplying the two optimal side lengths.",
+        "A 24 m by 24 m square would violate the perimeter constraint.",
+        "This is the perimeter, not an area.",
+        "The sides are 12 m and 12 m at the maximum."
+      ],
+      "check": {
+        "type": "candidate-extremum",
+        "interval": [
+          0,
+          24
+        ],
+        "candidates": [
+          0,
+          12,
+          24
+        ],
+        "expression": [
+          "mul",
+          "x",
+          [
+            "sub",
+            24,
+            "x"
+          ]
+        ],
+        "kind": "maximum",
+        "answer": "value"
+      }
+    },
+    {
+      "questionId": "calc-ab-5-11-002",
+      "independentReasoning": "Complete the square as A=800−2(x−20)². It is never greater than 800 and attains that bound with positive sides satisfying 20+20+40=80. Recompute both geometric constraint and area independently.",
+      "optionReview": [
+        "The perpendicular sides are 20 m each and the parallel fenced side is 40 m.",
+        "This uses the square of the perpendicular length instead of multiplying by the parallel side.",
+        "A 40 m by 40 m pen would require 120 m of three-side fencing.",
+        "This is the fencing length, not the enclosed area."
+      ],
+      "check": {
+        "type": "candidate-extremum",
+        "interval": [
+          0,
+          40
+        ],
+        "candidates": [
+          0,
+          20,
+          40
+        ],
+        "expression": [
+          "mul",
+          "x",
+          [
+            "sub",
+            80,
+            [
+              "mul",
+              2,
+              "x"
+            ]
+          ]
+        ],
+        "kind": "maximum",
+        "answer": "value"
+      }
+    },
+    {
+      "questionId": "calc-ab-5-11-003",
+      "independentReasoning": "The derivative is positive before 2 and negative after 2 until the excluded degenerate endpoint 6. This proves the global interior maximum. Directly evaluating the original dimensions verifies both volume 128 and the nonoptimal cut-3 value 108.",
+      "optionReview": [
+        "This is only the optimal base area, omitting the height factor 2.",
+        "Cut size 2 cm gives base 8 cm by 8 cm and height 2 cm.",
+        "This is the volume at cut size 3 cm, not the optimum.",
+        "This is the limiting volume at a degenerate endpoint, not the maximum."
+      ],
+      "check": {
+        "type": "candidate-extremum",
+        "interval": [
+          0,
+          6
+        ],
+        "candidates": [
+          0,
+          2,
+          6
+        ],
+        "expression": [
+          "mul",
+          "x",
+          [
+            "pow",
+            [
+              "sub",
+              12,
+              [
+                "mul",
+                2,
+                "x"
+              ]
+            ],
+            2
+          ]
+        ],
+        "kind": "maximum",
+        "answer": "value"
+      }
+    },
+    {
+      "questionId": "calc-ab-5-11-004",
+      "independentReasoning": "The exact derivative sign proves globality over all positive radii; S also diverges as r approaches zero or infinity. Original-area first/second differences corroborate stationarity and positive curvature at 2. Substitution checks volume π·4·4=16π.",
+      "optionReview": [
+        "This is the optimal height, not radius.",
+        "This reports r³ without taking its cube root.",
+        "The reduced area has derivative zero when r³=8, and decreases then increases across r=2.",
+        "The surface-area derivative is not zero at this radius."
+      ],
+      "check": {
+        "type": "second-derivative-test",
+        "kind": "minimum",
+        "domain": "(0,∞)",
+        "expression": [
+          "add",
+          [
+            "mul",
+            2,
+            "pi",
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          [
+            "div",
+            [
+              "mul",
+              32,
+              "pi"
+            ],
+            "x"
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-5-11-005",
+      "independentReasoning": "Independently write P=1300−2(q−30)². This proves the global upper bound and its feasible attaining input. Evaluating the original expression separately distinguishes the optimal quantity, total variable contribution and final profit.",
+      "optionReview": [
+        "This omits the fixed cost 500.",
+        "This is the maximizing input, not profit.",
+        "This is the profit at zero production.",
+        "The maximizing quantity is 30 and P(30)=−1800+3600−500."
+      ],
+      "check": {
+        "type": "candidate-extremum",
+        "interval": [
+          0,
+          50
+        ],
+        "candidates": [
+          0,
+          30,
+          50
+        ],
+        "expression": [
+          "add",
+          [
+            "mul",
+            -2,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          [
+            "mul",
+            120,
+            "x"
+          ],
+          -500
+        ],
+        "kind": "maximum",
+        "answer": "value"
+      }
+    },
+    {
+      "questionId": "calc-ab-5-11-006",
+      "independentReasoning": "Complete the square: D²=(x²−1/2)²+3/4. This independently proves the global minimum and both allowed attaining inputs. The question asks squared distance, so no final square root is taken.",
+      "optionReview": [
+        "The squared-distance polynomial has minima at x=±1/√2.",
+        "This is the squared distance at x=0, a nonoptimal candidate.",
+        "This omits the squared vertical separation at the optimum.",
+        "The point (0,1) does not lie on the parabola."
+      ],
+      "check": {
+        "type": "candidate-extremum",
+        "interval": [
+          -2,
+          2
+        ],
+        "candidates": [
+          -2,
+          -0.7071067811865475,
+          0,
+          0.7071067811865475,
+          2
+        ],
+        "expression": [
+          "add",
+          [
+            "pow",
+            "x",
+            2
+          ],
+          [
+            "pow",
+            [
+              "sub",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              1
+            ],
+            2
+          ]
+        ],
+        "kind": "minimum",
+        "answer": "value"
+      }
+    },
+    {
+      "questionId": "calc-ab-5-11-007",
+      "independentReasoning": "Independently use sin x+cos x=√2 sin(x+π/4), which never exceeds √2 and attains it at π/4. Exact special-angle values and original-function candidate evaluation agree.",
+      "optionReview": [
+        "This is the value at either endpoint.",
+        "The stationary input π/4 gives two contributions √2/2.",
+        "Sine and cosine cannot both equal 1 at the same input.",
+        "Both summands are nonnegative and their sum is positive on this interval."
+      ],
+      "check": {
+        "type": "candidate-extremum",
+        "interval": [
+          0,
+          1.5707963267948966
+        ],
+        "candidates": [
+          0,
+          0.7853981633974483,
+          1.5707963267948966
+        ],
+        "expression": [
+          "add",
+          [
+            "sin",
+            "x"
+          ],
+          [
+            "cos",
+            "x"
+          ]
+        ],
+        "kind": "maximum",
+        "answer": "value"
+      }
+    },
+    {
+      "questionId": "calc-ab-5-11-008",
+      "independentReasoning": "The constraint x²+y²=25 and inequality (x−y)²≥0 imply 2xy≤25. Equality occurs at positive x=y=5/√2. This independent algebraic bound verifies global optimality without relying only on the derivative root.",
+      "optionReview": [
+        "A rectangle cannot simultaneously have full diameter width 10 and height 5.",
+        "This uses half-width times height rather than the full width.",
+        "The half-width and height are both 5/√2, giving area 2xy=25.",
+        "This is the semicircle radius rather than an area."
+      ],
+      "check": {
+        "type": "candidate-extremum",
+        "interval": [
+          0,
+          5
+        ],
+        "candidates": [
+          0,
+          3.5355339059327373,
+          5
+        ],
+        "expression": [
+          "mul",
+          2,
+          "x",
+          [
+            "sqrt",
+            [
+              "sub",
+              25,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ]
+          ]
+        ],
+        "kind": "maximum",
+        "answer": "value"
+      }
+    },
+    {
+      "questionId": "calc-ab-5-11-009",
+      "independentReasoning": "Check the two-sided horizontal margin total 2 and vertical total 4 before forming the area. As x→0⁺ or infinity the area diverges; the derivative sign proves the unique global minimum. Original-area differences corroborate the stationary width.",
+      "optionReview": [
+        "This ignores the different total horizontal and vertical margin widths.",
+        "The total-area derivative is negative there, so increasing width would reduce area.",
+        "The total-area derivative is positive there, past the minimum.",
+        "The total area is 104+4x+192/x and its stationary positive width satisfies x²=48."
+      ],
+      "check": {
+        "type": "second-derivative-test",
+        "kind": "minimum",
+        "domain": "(0,∞)",
+        "expression": [
+          "mul",
+          [
+            "add",
+            "x",
+            2
+          ],
+          [
+            "add",
+            [
+              "div",
+              96,
+              "x"
+            ],
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-5-11-010",
+      "independentReasoning": "Independently expand F=30(u−5)²+250. It is bounded below by 250, attained exactly at the feasible equal split. Both summands and the requested cubic objective are retained throughout.",
+      "optionReview": [
+        "The equal values u=v=5 give 125+125.",
+        "This counts only one of the two cubes at the optimum.",
+        "This is an endpoint value when one number is zero.",
+        "This is the fixed sum, not the sum of cubes."
+      ],
+      "check": {
+        "type": "candidate-extremum",
+        "interval": [
+          0,
+          10
+        ],
+        "candidates": [
+          0,
+          5,
+          10
+        ],
+        "expression": [
+          "add",
+          [
+            "pow",
+            "x",
+            3
+          ],
+          [
+            "pow",
+            [
+              "sub",
+              10,
+              "x"
+            ],
+            3
+          ]
+        ],
+        "kind": "minimum",
+        "answer": "value"
+      }
+    },
+    {
+      "questionId": "calc-ab-5-11-011",
+      "independentReasoning": "The exact identity A−24=(q−10)²/q≥0 for positive q independently proves the global minimum. Original total cost at 10 is 240, which becomes 24 only after division by quantity. This checks the requested units and output.",
+      "optionReview": [
+        "This is the total cost at q=10, not the cost per item.",
+        "Average cost is 100/q+4+q and is minimized at q=10.",
+        "This is the minimizing quantity rather than average cost.",
+        "This omits the fixed-cost-per-item and quadratic contributions."
+      ],
+      "check": {
+        "type": "candidate-extremum",
+        "interval": [
+          1,
+          50
+        ],
+        "candidates": [
+          1,
+          10,
+          50
+        ],
+        "expression": [
+          "add",
+          [
+            "div",
+            100,
+            "x"
+          ],
+          4,
+          "x"
+        ],
+        "kind": "minimum",
+        "answer": "value"
+      }
+    }
+  ]
+}

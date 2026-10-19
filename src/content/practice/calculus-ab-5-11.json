@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 5,
+  "topicId": "topic-5-11",
+  "questions": [
+    {
+      "id": "calc-ab-5-11-001",
+      "prompt": "What is the greatest area, in m², of a rectangle with perimeter 48 m?",
+      "options": [
+        "288",
+        "576",
+        "48",
+        "144"
+      ],
+      "correctIndex": 3,
+      "explanation": "Let sides be x and 24−x, so A=24x−x². The derivative 24−2x vanishes at x=12, with negative second derivative. The maximum area is 12·12=144 m². Boundary limits have zero area, so the interior nondegenerate rectangle wins. A: This doubles the area instead of multiplying the two optimal side lengths. B: A 24 m by 24 m square would violate the perimeter constraint. C: This is the perimeter, not an area. D: The sides are 12 m and 12 m at the maximum."
+    },
+    {
+      "id": "calc-ab-5-11-002",
+      "prompt": "A rectangular pen against a straight river uses 80 m of fencing for its other three sides. What is its greatest possible area, in m²?",
+      "options": [
+        "800",
+        "400",
+        "1600",
+        "80"
+      ],
+      "correctIndex": 0,
+      "explanation": "With perpendicular side x, the remaining fenced side is 80−2x. Then A=80x−2x² and A′=80−4x, zero at x=20. The other side is 40, giving maximum area 800 m². The concave quadratic and zero boundary limits establish a global maximum. A: The perpendicular sides are 20 m each and the parallel fenced side is 40 m. B: This uses the square of the perpendicular length instead of multiplying by the parallel side. C: A 40 m by 40 m pen would require 120 m of three-side fencing. D: This is the fencing length, not the enclosed area."
+    },
+    {
+      "id": "calc-ab-5-11-003",
+      "prompt": "An open box is formed by cutting equal corner squares from a 12 cm square sheet and folding up the sides. What is its maximum volume, in cm³?",
+      "options": [
+        "64",
+        "128",
+        "108",
+        "0"
+      ],
+      "correctIndex": 1,
+      "explanation": "The volume is V=x(12−2x)² for 0<x<6. Differentiate and factor: V′=(12−2x)(12−6x). The interior stationary cut is x=2, where V=2·8²=128 cm³. The volume tends to zero at both domain boundaries. A: This is only the optimal base area, omitting the height factor 2. B: Cut size 2 cm gives base 8 cm by 8 cm and height 2 cm. C: This is the volume at cut size 3 cm, not the optimum. D: This is the limiting volume at a degenerate endpoint, not the maximum."
+    },
+    {
+      "id": "calc-ab-5-11-004",
+      "prompt": "A closed cylinder has volume 16π cm³. What radius, in cm, minimizes its total surface area?",
+      "options": [
+        "4",
+        "8",
+        "2",
+        "1"
+      ],
+      "correctIndex": 2,
+      "explanation": "From πr²h=16π, h=16/r². The closed-cylinder area is S=2πr²+32π/r. Its derivative is 4π(r³−8)/r², negative for 0<r<2 and positive for r>2. Thus the unique global minimum has r=2 cm and h=4 cm. A: This is the optimal height, not radius. B: This reports r³ without taking its cube root. C: The reduced area has derivative zero when r³=8, and decreases then increases across r=2. D: The surface-area derivative is not zero at this radius."
+    },
+    {
+      "id": "calc-ab-5-11-005",
+      "prompt": "Profit is P(q)=−2q²+120q−500 dollars for 0≤q≤50. What is the greatest profit, in dollars?",
+      "options": [
+        "1800",
+        "30",
+        "−500",
+        "1300"
+      ],
+      "correctIndex": 3,
+      "explanation": "The derivative P′=−4q+120 vanishes at q=30. The second derivative is −4, and P(30)=1300. Compare endpoints P(0)=−500 and P(50)=500; both are smaller. Hence the greatest profit is 1300 dollars. A: This omits the fixed cost 500. B: This is the maximizing input, not profit. C: This is the profit at zero production. D: The maximizing quantity is 30 and P(30)=−1800+3600−500."
+    },
+    {
+      "id": "calc-ab-5-11-006",
+      "prompt": "A point (x,x²), with −2≤x≤2, is chosen closest to (0,1). What is the minimum squared distance?",
+      "options": [
+        "3/4",
+        "1",
+        "1/2",
+        "0"
+      ],
+      "correctIndex": 0,
+      "explanation": "Squared distance is D²=x²+(x²−1)²=x⁴−x²+1. Its derivative is 2x(2x²−1), giving candidates 0 and ±1/√2 along with endpoints. At the two nonzero stationary inputs, D²=1/2+1/4=3/4, smaller than 1 at 0 or 13 at either endpoint. A: The squared-distance polynomial has minima at x=±1/√2. B: This is the squared distance at x=0, a nonoptimal candidate. C: This omits the squared vertical separation at the optimum. D: The point (0,1) does not lie on the parabola."
+    },
+    {
+      "id": "calc-ab-5-11-007",
+      "prompt": "Angles are in radians. What is the maximum value of sin x+cos x on [0,π/2]?",
+      "options": [
+        "1",
+        "√2",
+        "2",
+        "0"
+      ],
+      "correctIndex": 1,
+      "explanation": "The derivative is cos x−sin x, zero at π/4 in the interval. Endpoint values are both 1, while the interior value is √2. The second derivative is −sin x−cos x<0 on the interval interior, confirming the maximum. A: This is the value at either endpoint. B: The stationary input π/4 gives two contributions √2/2. C: Sine and cosine cannot both equal 1 at the same input. D: Both summands are nonnegative and their sum is positive on this interval."
+    },
+    {
+      "id": "calc-ab-5-11-008",
+      "prompt": "A rectangle sits inside the upper semicircle x²+y²=25, with its bottom side on the horizontal diameter and its upper corners on the arc. What is its maximum area?",
+      "options": [
+        "50",
+        "12.5",
+        "25",
+        "5"
+      ],
+      "correctIndex": 2,
+      "explanation": "Write the upper-right corner as (x,√(25−x²)), with full width 2x. Area is A=2x√(25−x²). Its interior derivative vanishes at x²=25/2. Substitution gives A=25, while limiting boundary rectangles have zero area. A: A rectangle cannot simultaneously have full diameter width 10 and height 5. B: This uses half-width times height rather than the full width. C: The half-width and height are both 5/√2, giving area 2xy=25. D: This is the semicircle radius rather than an area."
+    },
+    {
+      "id": "calc-ab-5-11-009",
+      "prompt": "A poster must have a printed area of 96 cm². Its margins are 1 cm on each side and 2 cm at the top and bottom. What printed width, in cm, minimizes total paper area?",
+      "options": [
+        "√96",
+        "4",
+        "8",
+        "√48"
+      ],
+      "correctIndex": 3,
+      "explanation": "Let printed width be x>0 and printed height 96/x. Total area is (x+2)(96/x+4)=104+4x+192/x. Its derivative 4−192/x² changes from negative to positive at x=√48, giving the unique global minimum for positive width. A: This ignores the different total horizontal and vertical margin widths. B: The total-area derivative is negative there, so increasing width would reduce area. C: The total-area derivative is positive there, past the minimum. D: The total area is 104+4x+192/x and its stationary positive width satisfies x²=48."
+    },
+    {
+      "id": "calc-ab-5-11-010",
+      "prompt": "Nonnegative real numbers u and v satisfy u+v=10. What is the smallest possible value of u³+v³?",
+      "options": [
+        "250",
+        "125",
+        "1000",
+        "10"
+      ],
+      "correctIndex": 0,
+      "explanation": "Set v=10−u with 0≤u≤10. Then F=u³+(10−u)³, and F′=3u²−3(10−u)²=60u−300. It vanishes at u=5, with positive second derivative 60. Endpoint values are 1000 and the interior value is 250. A: The equal values u=v=5 give 125+125. B: This counts only one of the two cubes at the optimum. C: This is an endpoint value when one number is zero. D: This is the fixed sum, not the sum of cubes."
+    },
+    {
+      "id": "calc-ab-5-11-011",
+      "prompt": "A total-cost model is C(q)=100+4q+q² dollars for 1≤q≤50. What is the minimum average cost C(q)/q, in dollars per item?",
+      "options": [
+        "240",
+        "24",
+        "10",
+        "4"
+      ],
+      "correctIndex": 1,
+      "explanation": "Average cost is A=100/q+4+q. Its derivative 1−100/q² vanishes at the allowed input 10, changing from negative to positive. Then A(10)=10+4+10=24 dollars/item. Both endpoint values are larger. A: This is the total cost at q=10, not the cost per item. B: Average cost is 100/q+4+q and is minimized at q=10. C: This is the minimizing quantity rather than average cost. D: This omits the fixed-cost-per-item and quadratic contributions."
+    }
+  ]
+}

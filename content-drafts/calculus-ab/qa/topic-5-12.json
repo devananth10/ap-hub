@@ -1,0 +1,250 @@
+{
+  "topicNumber": "5.12",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "1b12f2e9f33a21fcd9f040974a1237de5ce572982b7ae2360bfa7a038414395f",
+  "scopeReview": "CED FUN-4.D.1 and FUN-4.E.1–2 critical points and behavior of implicit relations, including second derivatives involving y and y′. Curve membership, branch restrictions and regular nonzero y coefficients checked; singular crossings and vertical tangents justified directly from the relation. Partial residual differences are verification only, not a student prerequisite.",
+  "varietyReview": "Upper circle horizontal maximum, mixed-quadratic curvature, cubic-relation stationary minimum, singular two-line crossing, circle vertical tangent, cube-root vertical non-extremum, hyperbola curvature, branch-wide concavity, off-curve false candidate, missing second-derivative product term and exponential-relation curvature.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-5-12-001",
+      "independentReasoning": "Substitute every offered point into the curve and the stated branch restriction, then check the slope where finite. The upper branch satisfies y≤√20, with equality at the selected point, independently proving its local maximum without merely solving a derivative numerator.",
+      "optionReview": [
+        "The derivative −x/y vanishes there and the positive branch bends downward.",
+        "This boundary point has a vertical tangent and does not satisfy y>0.",
+        "This point belongs to the lower branch, not the specified upper branch.",
+        "This point lies on the upper curve but has slope −1 rather than zero."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "(0,√20)"
+      }
+    },
+    {
+      "questionId": "calc-ab-5-12-002",
+      "independentReasoning": "The original point satisfies 1+1+1=3 and the coefficient x+2y=3 is nonzero. Independently expand the original relation with x=1+h and y=1−h+kh²/2: the quadratic coefficient forces k=−2/3. Numerical original-residual curvature corroborates it.",
+      "optionReview": [
+        "This is the first derivative rather than the second.",
+        "The slope is −1 and differentiating again gives y″=−[2+2y′+2(y′)²]/(x+2y).",
+        "This loses the negative sign when isolating y″.",
+        "This omits division by x+2y=3."
+      ],
+      "check": {
+        "type": "implicit-curvature",
+        "point": [
+          1,
+          1
+        ],
+        "expression": [
+          "sub",
+          [
+            "add",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            [
+              "mul",
+              "x",
+              "y"
+            ],
+            [
+              "pow",
+              "y",
+              2
+            ]
+          ],
+          3
+        ],
+        "tolerance": 0.0001
+      }
+    },
+    {
+      "questionId": "calc-ab-5-12-003",
+      "independentReasoning": "The point lies on the original curve because 1=1−3+3. Around x=1+h the right side is 1+3h²+h³, so the positive square-root branch is 1+(3/2)h²+o(h²), giving second derivative 3. The nonzero y coefficient ensures a regular branch.",
+      "optionReview": [
+        "A zero first derivative does not force a zero second derivative.",
+        "This reverses the sign of the cubic second derivative contribution.",
+        "The first derivative is zero and 2(y′)²+2yy″=6x gives y″=3.",
+        "This omits the coefficient 2y=2 when solving for y″."
+      ],
+      "check": {
+        "type": "implicit-curvature",
+        "point": [
+          1,
+          1
+        ],
+        "expression": [
+          "sub",
+          [
+            "pow",
+            "y",
+            2
+          ],
+          [
+            "add",
+            [
+              "pow",
+              "x",
+              3
+            ],
+            [
+              "mul",
+              -3,
+              "x"
+            ],
+            3
+          ]
+        ],
+        "tolerance": 0.0001
+      }
+    },
+    {
+      "questionId": "calc-ab-5-12-004",
+      "independentReasoning": "Factor and inspect the original relation before interpreting a failed derivative formula. Each selected line branch is differentiable, but the full crossing relation is not a single uniquely specified y(x) near the point. No nonexistent universal slope is assigned.",
+      "optionReview": [
+        "The two actual branches have slopes +1 and −1.",
+        "Neither of the two line branches is vertical.",
+        "The original equation does contain the origin, even though the quotient formula fails there.",
+        "The zero denominator and numerator do not supply a unique local branch or tangent slope."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It is indeterminate there; the relation has two distinct branches y=x and y=−x with different slopes."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-12-005",
+      "independentReasoning": "Alternatively view x=√(9−y²) as a local function of y. Its derivative dx/dy is zero at y=0, independently giving the vertical tangent direction. This proves the geometry rather than assuming every zero slope denominator implies a vertical tangent.",
+      "optionReview": [
+        "A regular circle point can have a vertical tangent even though the y-as-function-of-x slope fails.",
+        "A zero height does not imply zero slope.",
+        "Division by zero cannot be assigned that value.",
+        "The circle does have a well-defined vertical tangent at that point."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The geometric tangent is vertical, x=3, and no finite dy/dx is available there."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-12-006",
+      "independentReasoning": "The real cube-root branch is unique and continuous. Direct original values at ±h lie below and above zero, ruling out both extrema. The quotient calculation independently establishes the vertical behavior without dividing the implicit equation by a zero coefficient.",
+      "optionReview": [
+        "A derivative failure does not by itself establish an extremum.",
+        "The cube-root branch increases through the origin with unbounded positive slope.",
+        "The defining quotient grows without bound rather than tending to zero.",
+        "Every real x has a unique real cube root."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The branch has a vertical tangent and no local maximum or minimum there."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-12-007",
+      "independentReasoning": "The original relation explicitly gives y=4/x on the positive branch. Its second derivative is 8/x³, equal to 1 at x=2. This independent one-variable calculation checks the mixed product term and the original-residual curvature model.",
+      "optionReview": [
+        "This is the first derivative rather than the curvature value.",
+        "This drops the mixed product contributions on the second differentiation.",
+        "Differentiating y+xy′=0 gives 2y′+xy″=0 and y′=−1.",
+        "This omits division by the current x=2."
+      ],
+      "check": {
+        "type": "implicit-curvature",
+        "point": [
+          2,
+          2
+        ],
+        "expression": [
+          "sub",
+          [
+            "mul",
+            "x",
+            "y"
+          ],
+          4
+        ],
+        "tolerance": 0.0001
+      }
+    },
+    {
+      "questionId": "calc-ab-5-12-008",
+      "independentReasoning": "The explicit branch y=√(1−x²) yields the same second derivative. The stationary top at x=0 retains negative curvature on both sides. Original branch restrictions keep the zero-y endpoints out of this interval-wide conclusion.",
+      "optionReview": [
+        "A horizontal tangent does not imply an inflection.",
+        "The sign of height does not determine curvature.",
+        "They are outside the stated open upper-branch domain.",
+        "The second derivative is −1/y³, which is negative while y>0."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It is concave down everywhere on that branch and has no interior inflection point."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-12-009",
+      "independentReasoning": "Substitute the two coordinates independently into the original equation and into the slope numerator/denominator. The quotient is indeed zero, but it describes the level relation through that point, not the different level 7. This separates algebraic slope evaluation from curve membership.",
+      "optionReview": [
+        "A slope formula evaluated off the relation cannot establish a tangent to it.",
+        "It equals 1−4=−3, which is nonzero.",
+        "A finite horizontal slope instead requires zero numerator and nonzero denominator.",
+        "A zero finite slope is horizontal, not vertical."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The proposed point is not on the original curve: 1−2+4=3, not 7."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-12-010",
+      "independentReasoning": "Apply the product rule to y and y′ as separate functions of x, then simplify their first product to (y′)². At a nonstationary circle point such as (1,√3), that term is nonzero, so omitting it changes the actual curvature.",
+      "optionReview": [
+        "The first product contribution is 2(y′)², not 2y′.",
+        "Differentiating 2yy′ requires both product-rule terms.",
+        "The coefficient of y″ remains 2y, not 2y².",
+        "The derivative of y in the product 2yy′ contributes a missing term."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The equation should be 2+2(y′)²+2yy″=0."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-12-011",
+      "independentReasoning": "The original point satisfies 1+1=2. The explicit local branch is y=ln(2−x²), defined near 1. Its second derivative is −2/(2−x²)−4x²/(2−x²)², giving −6 at 1, independently corroborating the implicit calculation.",
+      "optionReview": [
+        "This is the first derivative rather than the second.",
+        "This omits the second derivative 2 of x².",
+        "The first derivative is −2 and the second equation gives (y′)²+y″+2=0 at y=0.",
+        "This reverses the sign when solving the second-derivative equation."
+      ],
+      "check": {
+        "type": "implicit-curvature",
+        "point": [
+          1,
+          0
+        ],
+        "expression": [
+          "sub",
+          [
+            "add",
+            [
+              "exp",
+              "y"
+            ],
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          2
+        ],
+        "tolerance": 0.0001
+      }
+    }
+  ]
+}

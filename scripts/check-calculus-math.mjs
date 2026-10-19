@@ -214,7 +214,7 @@ export function verifyCalculusQuestion(question, review) {
     const matches=question.options.map(option=>Math.abs(numericalOption(option)-1/mapped[0][2])<1e-10);
     assert.equal(matches.filter(Boolean).length,1,question.id+' unique inverse table slope');
     assert.equal(matches.indexOf(true),question.correctIndex,question.id+' inverse table key');
-  } else if (review.check.type==='implicit-slope') {
+  } else if (review.check.type==='implicit-slope'||review.check.type==='implicit-curvature') {
     const check=review.check,[x,y]=check.point,h=check.step||0.0001;
     assert.ok([x,y,h].every(Number.isFinite)&&h>0);
     const setY=(expression,y)=>expression==='y'?y:Array.isArray(expression)?expression.map(child=>setY(child,y)):expression;
@@ -222,7 +222,13 @@ export function verifyCalculusQuestion(question, review) {
     assert.ok(Math.abs(residual(x,y))<1e-9,question.id+' point not on implicit curve');
     const fx=(residual(x+h,y)-residual(x-h,y))/(2*h),fy=(residual(x,y+h)-residual(x,y-h))/(2*h);
     assert.ok(Math.abs(fy)>1e-6,question.id+' needs nonzero local y coefficient');
-    const slope=-fx/fy,matches=question.options.map(option=>Math.abs(numericalOption(option)-slope)<(check.tolerance||0.00001));
+    const slope=-fx/fy;
+    let expected=slope;
+    if(check.type==='implicit-curvature') {
+      const fxx=(residual(x+h,y)-2*residual(x,y)+residual(x-h,y))/(h*h),fyy=(residual(x,y+h)-2*residual(x,y)+residual(x,y-h))/(h*h),fxy=(residual(x+h,y+h)-residual(x+h,y-h)-residual(x-h,y+h)+residual(x-h,y-h))/(4*h*h);
+      expected=-(fxx+2*fxy*slope+fyy*slope*slope)/fy;
+    }
+    const matches=question.options.map(option=>Math.abs(numericalOption(option)-expected)<(check.tolerance||0.00001));
     assert.equal(matches.filter(Boolean).length,1,question.id+' unique implicit slope');
     assert.equal(matches.indexOf(true),question.correctIndex,question.id+' implicit slope key');
   } else if (review.check.type==='table-composition') {
