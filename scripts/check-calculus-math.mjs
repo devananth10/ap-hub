@@ -111,6 +111,12 @@ export function domainMatches(intervals,constraints) {
     return actual===expected;
   });
 }
+export function completeCandidateRows(table) {
+  const rows=table.rows.map(row=>row.map(s=>Number(s.replace('−','-'))));
+  assert.ok(rows.length>=2&&rows.every((r,i)=>r.length===2&&r.every(Number.isFinite)&&(!i||r[0]>rows[i-1][0])));
+  for(let i=1;i<rows.length;i++)assert.notEqual(rows[i][1],rows[i-1][1],'Equal adjacent values require another critical candidate by Rolle or a constant interval');
+  return rows;
+}
 export function verifyCalculusQuestion(question, review) {
   assert.equal(review.questionId,question.id);
   assert.equal(review.optionReview.length,4);
@@ -118,15 +124,29 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='factor-sign-intervals'||review.check.type==='factor-extrema') {
+  if (review.check.type==='complete-extrema-table') {
+    const c=review.check,rows=completeCandidateRows(practiceTables[question.id]);assert.ok(['minimum','maximum'].includes(c.kind));
+    const target=c.kind==='minimum'?Math.min(...rows.map(r=>r[1])):Math.max(...rows.map(r=>r[1])),inputs=rows.filter(r=>r[1]===target).map(r=>r[0]);
+    const matches=question.options.map(option=>{const proposed=c.optionInputs[option];assert.ok(Array.isArray(proposed));return proposed.length===inputs.length&&proposed.every((x,i)=>x===inputs[i]);});
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique complete-table extrema');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' complete-table key');
+  } else if (review.check.type==='candidate-extremum') {
+    const c=review.check,[a,b]=c.interval;assert.ok(a<b&&c.candidates.includes(a)&&c.candidates.includes(b));
+    assert.ok(c.candidates.every(x=>Number.isFinite(x)&&a<=x&&x<=b));
+    assert.ok(['minimum','maximum'].includes(c.kind)&&['value','input'].includes(c.answer));
+    const values=c.candidates.map(x=>evaluateExpression(c.expression,x)),extreme=c.kind==='minimum'?Math.min(...values):Math.max(...values);
+    const expected=c.answer==='value'?[extreme]:c.candidates.filter((x,i)=>Math.abs(values[i]-extreme)<1e-10);
+    const matches=question.options.map(option=>expected.some(value=>Math.abs(numericalOption(option)-value)<1e-9));
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique candidate extremum');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' candidate extremum key');
+  } else if (['factor-sign-intervals','factor-extrema','factor-sign-change'].includes(review.check.type)) {
     const check=review.check;assert.ok(check.scale!==0&&Number.isFinite(check.scale));
     assert.ok(check.factors.every(f=>Number.isFinite(f.root)&&Number.isInteger(f.multiplicity)&&f.multiplicity>0));
     const roots=[...new Set(check.factors.map(f=>f.root))].sort((a,b)=>a-b),excluded=check.excluded||[];
     const sign=x=>Math.sign(check.scale)*check.factors.reduce((s,f)=>s*Math.sign(x-f.root)**f.multiplicity,1);
     let matches;
-    if(check.type==='factor-extrema') {
-      assert.ok(['maximum','minimum'].includes(check.kind));
-      const selected=roots.filter((r,i)=>{if(excluded.includes(r))return false;const left=i?roots[i-1]:r-2,right=i+1<roots.length?roots[i+1]:r+2;const sl=sign((left+r)/2),sr=sign((r+right)/2);return check.kind==='maximum'?sl>0&&sr<0:sl<0&&sr>0;});
+    if(check.type!=='factor-sign-intervals') {
+      if(check.type==='factor-extrema')assert.ok(['maximum','minimum'].includes(check.kind));
+      const selected=roots.filter((r,i)=>{if(excluded.includes(r))return false;const left=i?roots[i-1]:r-2,right=i+1<roots.length?roots[i+1]:r+2;const sl=sign((left+r)/2),sr=sign((r+right)/2);return check.type==='factor-sign-change'?sl*sr<0:check.kind==='maximum'?sl>0&&sr<0:sl<0&&sr>0;});
       matches=question.options.map(option=>selected.some(r=>Math.abs(numericalOption(option)-r)<1e-10));
     } else {
       assert.ok([1,-1].includes(check.sign));

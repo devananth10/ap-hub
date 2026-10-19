@@ -7,6 +7,7 @@ import {questionBatches} from '../src/lib/practice-bank.ts';
 import {validateCalculusBank} from '../scripts/check-calculus-bank.mjs';
 import {verifyCalculusQuestion,figureLimit,evaluateExpression,numericalOption,rationalBehavior,rationalPoleSides,rationalEndLimit,intervalOption,domainMatches} from '../scripts/check-calculus-math.mjs';
 import {practiceFigures} from '../src/lib/practice-figures.ts';
+import {completeCandidateRows} from '../scripts/check-calculus-math.mjs';
 test('official Calculus AB inventory keeps all eight old IDs and excludes BC-only gaps',()=>{
   const course=courses.find(course=>course.id==='calculus-ab');
   const topics=course.units.flatMap(unit=>unit.topics);
@@ -289,4 +290,19 @@ test('factor sign models retain log domains, rational holes and even-multiplicit
     const wrong=structuredClone(batch.questions[index]);wrong.correctIndex=(wrong.correctIndex+1)%4;
     assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[index]),/factor-sign key/);
   }
+});
+test('candidate models include endpoints and curvature models reject even-root inflections',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-5-5');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-5-5.json','utf8'));
+  const missing=structuredClone(qa.questions[0]);missing.check.candidates=missing.check.candidates.filter(x=>x!==3);
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[0],missing));
+  const curvature=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-5-6');
+  const cqa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-5-6.json','utf8'));
+  verifyCalculusQuestion(curvature.questions[6],cqa.questions[6]);
+  const wrong=structuredClone(curvature.questions[6]);wrong.correctIndex=wrong.options.indexOf('−2');
+  assert.throws(()=>verifyCalculusQuestion(wrong,cqa.questions[6]),/factor-sign key/);
+});
+test('a finite complete candidate table cannot omit the critical point between equal neighboring values',()=>{
+  assert.throws(()=>completeCandidateRows({rows:[['−1','0'],['1','−4'],['3','−4'],['5','2']]}),/Equal adjacent values/);
+  assert.equal(completeCandidateRows({rows:[['−1','0'],['1','−4'],['2','−1'],['3','−4'],['5','2']]}).length,5);
 });

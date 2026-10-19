@@ -1116,5 +1116,37 @@
     ],
     "dots": [],
     "description": "The graph is f′. Straight segments join (−2,2), (0,0), (1,−2), (2,0), (3,−2), (4,0), (5,2). It crosses from positive to negative at 0, touches zero from below at 2, and crosses from negative to positive at 4."
+  },
+  "calc-ab-5-6-006": {
+    "xRange": [
+      -2,
+      4
+    ],
+    "yRange": [
+      -5,
+      1
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            -2,
+            -3
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            4,
+            -4
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": [],
+    "description": "The graph is f′. Straight segments join (−2,−3), (1,−1) and (4,−4). All values are negative. The derivative graph increases from −2 to 1 and decreases from 1 to 4."
   }
 }

@@ -2,9 +2,9 @@
 
 Official inventory: 81 topics; target 891 original MCQs.
 
-Published: **473/891 MCQs in 43/81 complete topics**. Working-only drafts: 0. No unresolved questions in the published sets. No independent human review.
+Published: **495/891 MCQs in 45/81 complete topics**. Working-only drafts: 0. No unresolved questions in the published sets. No independent human review.
 
-Next topic: **5.5**. Missing topics: 5.5, 5.6, 5.7, 5.8, 5.9, 5.10, 5.11, 5.12, 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8, 6.9, 6.10, 6.14, 7.1, 7.2, 7.3, 7.4, 7.6, 7.7, 7.8, 8.1, 8.2, 8.3, 8.4, 8.5, 8.6, 8.7, 8.8, 8.9, 8.10, 8.11, 8.12.
+Next topic: **5.7**. Missing topics: 5.7, 5.8, 5.9, 5.10, 5.11, 5.12, 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8, 6.9, 6.10, 6.14, 7.1, 7.2, 7.3, 7.4, 7.6, 7.7, 7.8, 8.1, 8.2, 8.3, 8.4, 8.5, 8.6, 8.7, 8.8, 8.9, 8.10, 8.11, 8.12.
 
 Validated and published:
 - 1.1: 11 MCQs; stable ID limits
@@ -50,6 +50,8 @@ Validated and published:
 - 5.2: 11 MCQs; stable ID topic-5-2
 - 5.3: 11 MCQs; stable ID topic-5-3
 - 5.4: 11 MCQs; stable ID topic-5-4
+- 5.5: 11 MCQs; stable ID topic-5-5
+- 5.6: 11 MCQs; stable ID topic-5-6
 
 All new sets use the unchanged question schema, four choices and per-choice explanations. QA includes separate recomputation/logic records and semantic hashes. Plain Unicode math, original accessible SVG graph sidecars and complete data descriptions are supported; no raw LaTeX or external diagrams. Automated checks cannot prove all conceptual claims, originality or AP difficulty; read QA notes. Unfinished sets remain unavailable.
 

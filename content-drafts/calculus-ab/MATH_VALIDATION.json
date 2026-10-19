@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 473,
+  "questionsChecked": 495,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -1346,6 +1346,66 @@
       "questionId": "calc-ab-5-4-010",
       "method": "factor-extrema",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-5-001",
+      "method": "candidate-extremum",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-5-002",
+      "method": "candidate-extremum",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-5-003",
+      "method": "candidate-extremum",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-5-004",
+      "method": "candidate-extremum",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-5-005",
+      "method": "candidate-extremum",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-5-007",
+      "method": "complete-extrema-table",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-5-008",
+      "method": "candidate-extremum",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-5-009",
+      "method": "candidate-extremum",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-6-001",
+      "method": "factor-sign-intervals",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-6-002",
+      "method": "factor-sign-intervals",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-6-007",
+      "method": "factor-sign-change",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-6-010",
+      "method": "factor-sign-intervals",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -1552,7 +1612,17 @@
     "calc-ab-5-4-006",
     "calc-ab-5-4-008",
     "calc-ab-5-4-009",
-    "calc-ab-5-4-011"
+    "calc-ab-5-4-011",
+    "calc-ab-5-5-006",
+    "calc-ab-5-5-010",
+    "calc-ab-5-5-011",
+    "calc-ab-5-6-003",
+    "calc-ab-5-6-004",
+    "calc-ab-5-6-005",
+    "calc-ab-5-6-006",
+    "calc-ab-5-6-008",
+    "calc-ab-5-6-009",
+    "calc-ab-5-6-011"
   ],
   "humanReviewPerformed": false,
   "limitations": [

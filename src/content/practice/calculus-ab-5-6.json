@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 5,
+  "topicId": "topic-5-6",
+  "questions": [
+    {
+      "id": "calc-ab-5-6-001",
+      "prompt": "For f(x)=x⁴−4x³, where is f″(x)>0, giving concave-up intervals?",
+      "options": [
+        "(0,2)",
+        "(−∞,2)",
+        "(−∞,0) ∪ (2,∞)",
+        "(0,∞)"
+      ],
+      "correctIndex": 2,
+      "explanation": "Differentiate twice: f′=4x³−12x² and f″=12x²−24x=12x(x−2). The factors have equal signs before 0 and after 2, so f is concave up there. Between the roots it is concave down. A: The second derivative is negative between 0 and 2. B: This includes the negative-curvature interval (0,2). C: The second derivative is 12x(x−2), positive outside its roots. D: This incorrectly treats all positive inputs as positive second derivative."
+    },
+    {
+      "id": "calc-ab-5-6-002",
+      "prompt": "For f(x)=ln x, on which set is f″(x)<0, giving concave-down behavior?",
+      "options": [
+        "All real numbers",
+        "(−∞,0)",
+        "(1,∞)",
+        "(0,∞)"
+      ],
+      "correctIndex": 3,
+      "explanation": "The first derivative is 1/x and second derivative is −1/x². On the logarithm’s real domain x>0, the square denominator is positive, so f″<0 throughout. Concavity intervals cannot include inputs outside the original function’s domain. A: Negative inputs do not belong to the original real logarithm domain. B: This is entirely outside the original domain. C: The point 1 is not a boundary of the second derivative’s sign. D: The original real domain is positive, and f″=−1/x² is negative everywhere on it."
+    },
+    {
+      "id": "calc-ab-5-6-003",
+      "prompt": "For f(x)=x³, why is (0,0) a point of inflection?",
+      "options": [
+        "The function is continuous there and f″(x)=6x changes sign from negative to positive.",
+        "Because every zero of f is automatically an inflection point.",
+        "Because f′(0)=0 alone is sufficient.",
+        "Because f has a local minimum at 0."
+      ],
+      "correctIndex": 0,
+      "explanation": "The cubic is continuous at 0. Its second derivative 6x is negative on the left and positive on the right, so the graph changes concavity at (0,0). The point is an inflection point because of this change, not merely because either height or slope vanishes. A: The curvature changes from concave down to concave up across a point on the function. B: A function value zero does not determine curvature. C: A stationary input need not have a concavity change. D: The cubic increases through 0 and has no local extremum there."
+    },
+    {
+      "id": "calc-ab-5-6-004",
+      "prompt": "For f(x)=x⁴, does f″(0)=0 imply an inflection point at 0?",
+      "options": [
+        "Yes, because every zero of f″ is an inflection input.",
+        "No; f″=12x² is positive on both sides, so concavity does not change.",
+        "Yes, because f has a minimum at 0.",
+        "No, because inflection points require a nonzero function value."
+      ],
+      "correctIndex": 1,
+      "explanation": "The second derivative is 12x², positive for every nonzero x and zero only at 0. The graph remains concave up on both sides, so there is no inflection point. Evaluating f″ at one point alone cannot establish a change of concavity. A: A sign change or other evidence of changed concavity is required. B: The zero second derivative is only a candidate condition, not a sufficient test. C: A local minimum and a point of inflection are different features. D: The function height is not the deciding condition."
+    },
+    {
+      "id": "calc-ab-5-6-005",
+      "prompt": "For f(x)=1/x, which statement about concavity and x=0 is correct?",
+      "options": [
+        "Zero is an inflection input solely because f″ changes signs across it.",
+        "It is concave up on both branches because 1/x² is positive.",
+        "It is concave down for x<0 and concave up for x>0, but 0 is not an inflection input because f is undefined there.",
+        "It is concave down on both branches because f′<0."
+      ],
+      "correctIndex": 2,
+      "explanation": "Differentiating twice gives f″=2/x³. Its sign is negative for x<0 and positive for x>0. However, f has no value at 0, so the branchwise sign change does not create a point of inflection there. A: A missing function point cannot be a point of inflection. B: The second derivative is 2/x³, not 1/x². C: The second derivative 2/x³ changes sign across a gap rather than a point on the function. D: Decrease and concavity are governed by different derivative information."
+    },
+    {
+      "id": "calc-ab-5-6-006",
+      "prompt": "The graph below is f′ on [−2,4]. On which displayed open interval is f concave up?",
+      "options": [
+        "(1,4)",
+        "(−2,4)",
+        "There is no concave-up interval",
+        "(−2,1)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Concave-up behavior of f corresponds to increasing f′. The displayed derivative rises from −3 to −1 as x runs from −2 to 1, then falls afterward. Hence f is concave up on (−2,1); the negative derivative heights describe decrease of f, not its concavity. A: The derivative graph decreases there, giving concave-down behavior. B: The derivative reverses from increasing to decreasing at 1. C: A negative first derivative can still be increasing, giving a concave-up decreasing function. D: The derivative graph is increasing there, although its values remain negative."
+    },
+    {
+      "id": "calc-ab-5-6-007",
+      "prompt": "A twice-differentiable function on the real line has f″(x)=(x−1)³(x+2)². At which input does its concavity change?",
+      "options": [
+        "1",
+        "−2",
+        "0",
+        "There is no change"
+      ],
+      "correctIndex": 0,
+      "explanation": "The square factor is positive except at −2 and does not reverse signs. The cubic factor has the sign of x−1. Thus f″ is negative before 1 except its isolated zero at −2, then positive after 1. Concavity changes only at 1. A: The odd-multiplicity root reverses the second derivative sign. B: The even-multiplicity root touches zero without changing signs. C: The second derivative is negative and nonzero there. D: There is a genuine negative-to-positive sign change at 1."
+    },
+    {
+      "id": "calc-ab-5-6-008",
+      "prompt": "If a continuous graph changes concavity at c, must it have f′(c)=0?",
+      "options": [
+        "Yes, every inflection point is a stationary point.",
+        "No; an inflection point can have a nonzero tangent slope.",
+        "Yes, and f(c) must also be zero.",
+        "No, because inflection points always have undefined derivatives."
+      ],
+      "correctIndex": 1,
+      "explanation": "A point of inflection marks a concavity change, not necessarily a horizontal tangent. For example, f(x)=5+x+x³ has f″=6x, changing sign at 0, while f′(0)=1 and f(0)=5. It is a smooth nonstationary inflection point. A: A changing slope can pass through any finite value. B: Concavity concerns change of slope, not necessarily zero slope. C: Neither the tangent slope nor graph height must vanish. D: Many smooth functions have ordinary finite slopes at inflection points."
+    },
+    {
+      "id": "calc-ab-5-6-009",
+      "prompt": "For f(x)=e^(−x), which description is correct on the real line?",
+      "options": [
+        "It is increasing and concave up.",
+        "It is decreasing and concave down.",
+        "The function is decreasing and concave up.",
+        "It is increasing and concave down."
+      ],
+      "correctIndex": 2,
+      "explanation": "Differentiate to get f′=−e^(−x)<0 and f″=e^(−x)>0. The function therefore decreases while its slope becomes less negative, giving concave-up behavior. Decrease and concavity are separate classifications. A: The first derivative is −e^(−x), not positive. B: A negative first derivative does not imply a negative second derivative. C: Its first derivative is negative and its second derivative positive. D: Both sign conclusions are opposite to the actual derivatives."
+    },
+    {
+      "id": "calc-ab-5-6-010",
+      "prompt": "For f(x)=x/(1+x²), the second derivative is f″(x)=2x(x²−3)/(1+x²)³. Where is f″(x)<0?",
+      "options": [
+        "(−√3,0) ∪ (√3,∞)",
+        "(−∞,0)",
+        "(0,∞)",
+        "(−∞,−√3) ∪ (0,√3)"
+      ],
+      "correctIndex": 3,
+      "explanation": "The denominator (1+x²)³ is positive everywhere. The numerator has simple roots −√3,0,√3, giving signs −,+,−,+ across the four cells. Thus the requested negative set is (−∞,−√3) together with (0,√3). A: Those are the positive-second-derivative intervals. B: The sign reverses at −√3 within that set. C: The sign reverses at √3 within that set. D: The positive denominator leaves the sign of x(x−√3)(x+√3)."
+    },
+    {
+      "id": "calc-ab-5-6-011",
+      "prompt": "Define f(x)=x² for x≤0 and f(x)=−x² for x>0. Which statement about x=0 is correct?",
+      "options": [
+        "It is an inflection input even though f″(0) does not exist.",
+        "It cannot be an inflection input unless f″(0)=0.",
+        "It is discontinuous at 0.",
+        "It is a local maximum because f′(0)=0."
+      ],
+      "correctIndex": 0,
+      "explanation": "The formulas meet continuously at 0 and give f′(0)=0. Their second derivatives are 2 on the left and −2 on the right, so concavity changes there. The second derivative at 0 fails to exist, but that does not prevent a point of inflection. A: The graph is continuous, concave up to the left and concave down to the right. B: A second derivative need not exist at a genuine change of concavity. C: Both formulas approach and attain the same value 0. D: Values on the left are positive and values on the right negative, so neither extremum occurs."
+    }
+  ]
+}
