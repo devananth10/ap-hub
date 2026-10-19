@@ -1,0 +1,210 @@
+{
+  "topicNumber": "5.10",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "6eb65b0d258bb34bf7f6dbf87694d6b890810708da9ad825bdbfb8449f5aaf5e",
+  "scopeReview": "CED FUN-4.B.1 introducing optimization through constraints, one-variable objectives, feasible intervals and calculated candidate comparisons. Geometric formulas and units explained. No unrelated discrete optimization or unsupported resource required.",
+  "varietyReview": "Full-perimeter rectangle, three-side fence, cut-and-fold box, cylinder surface area, sum of squares, squared-distance objective, revenue maximum, infeasible critical input, wire constraint versus objective, proof checklist and two-cost path setup.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-5-10-001",
+      "independentReasoning": "Reconstruct the original geometry from each proposed expression. Only the selected model simultaneously satisfies perimeter 36 and multiplies the two side lengths. Checking both endpoint inequalities prevents algebraically possible negative side lengths.",
+      "optionReview": [
+        "This omits the factor 2 in the perimeter relation.",
+        "The fixed perimeter is not the second side length.",
+        "The other side is 18−x from 2x+2y=36, and both sides must be positive.",
+        "This is the fixed perimeter, not the area objective."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "A(x)=x(18−x), with 0<x<18."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-10-002",
+      "independentReasoning": "Count the three fenced segments explicitly before elimination. Substituting y back into 2x+y confirms the constant 60. The river-side edge is not an additional fence segment, and the requested area has square-meter units.",
+      "optionReview": [
+        "This counts only one of the two perpendicular sides.",
+        "This incorrectly treats all four sides as fenced.",
+        "This is the remaining side length, not the area.",
+        "Two perpendicular sides use 2x of fence, leaving 60−2x for the parallel side."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "A(x)=x(60−2x), with 0<x<30."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-10-003",
+      "independentReasoning": "Trace one base edge through both corner cuts to confirm the factor 2. Check geometric limiting cases: at x=0 height vanishes, and at x=10 the base vanishes. Neither endpoint represents a nondegenerate box.",
+      "optionReview": [
+        "The height is x and each base dimension loses two cuts.",
+        "Each base dimension loses two x-length pieces, not one.",
+        "The height is x, not the remaining base side.",
+        "Positive height alone does not keep the base dimensions positive."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "V(x)=x(20−2x)², with 0<x<10."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-10-004",
+      "independentReasoning": "Verify both cap count and dimensional units. The lateral term 2πr(54/r²) simplifies to 108π/r, not 108πr. Keeping the positive-radius restriction avoids a zero denominator or a nonphysical negative dimension.",
+      "optionReview": [
+        "A closed cylinder has two circular caps, not one.",
+        "The volume constraint gives h=54/r², substituted into two caps plus lateral area.",
+        "The height substitution leaves a reciprocal radius in the lateral term.",
+        "This is the fixed volume rather than a surface-area objective."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "S(r)=2πr²+108π/r."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-10-005",
+      "independentReasoning": "Substitute the eliminated variable back into both the constraint and the original objective. The selected function recovers exactly u²+v²; each alternative changes either the relation or the quantity being optimized.",
+      "optionReview": [
+        "This drops the square of v.",
+        "This uses the wrong sign when solving the constraint.",
+        "Use the sum constraint to eliminate v and keep both original squares.",
+        "This is the fixed sum, not the sum of squares objective."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "F(u)=u²+(12−u)² on 0<u<12."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-10-006",
+      "independentReasoning": "Derive the distance from the two actual coordinates before simplifying. The squared quantity is always nonnegative, so the monotone square-root transformation preserves minimizers without changing the feasible domain of real x.",
+      "optionReview": [
+        "This uses x rather than the point’s vertical coordinate x².",
+        "The vertical difference from height 3 is x²−3.",
+        "Vertical separation alone omits the horizontal distance.",
+        "Squared Euclidean distance has the same minimizing inputs as distance."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "D²(x)=x²+(x²−3)² for real x."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-10-007",
+      "independentReasoning": "Independently complete the square: R=800−0.5(q−40)². It cannot exceed 800 and attains it at the feasible input 40. Original-function candidate evaluations corroborate the same result.",
+      "optionReview": [
+        "The derivative 40−q vanishes at 40 and the concave quadratic has zero endpoint revenues.",
+        "This is the greatest allowed quantity, but the price and revenue are zero there.",
+        "The revenue derivative is still positive there.",
+        "This yields zero revenue, not its maximum."
+      ],
+      "check": {
+        "type": "candidate-extremum",
+        "interval": [
+          0,
+          80
+        ],
+        "candidates": [
+          0,
+          40,
+          80
+        ],
+        "expression": [
+          "mul",
+          "x",
+          [
+            "sub",
+            40,
+            [
+              "mul",
+              0.5,
+              "x"
+            ]
+          ]
+        ],
+        "kind": "maximum",
+        "answer": "input"
+      }
+    },
+    {
+      "questionId": "calc-ab-5-10-008",
+      "independentReasoning": "The square (x−6)² is minimized by the allowed input closest to 6, namely 4. This geometric comparison independently checks the derivative-based result and emphasizes that constraints cannot be discarded after solving a derivative equation.",
+      "optionReview": [
+        "This unrestricted critical input is outside the feasible domain.",
+        "The function is increasing throughout the feasible interval, so its right endpoint wins.",
+        "This endpoint is farther from the parabola’s vertex and gives a lower value.",
+        "This midpoint is not stationary and has a lower value than 4."
+      ],
+      "check": {
+        "type": "candidate-extremum",
+        "interval": [
+          0,
+          4
+        ],
+        "candidates": [
+          0,
+          4
+        ],
+        "expression": [
+          "sub",
+          20,
+          [
+            "pow",
+            [
+              "sub",
+              "x",
+              6
+            ],
+            2
+          ]
+        ],
+        "kind": "maximum",
+        "answer": "input"
+      }
+    },
+    {
+      "questionId": "calc-ab-5-10-009",
+      "independentReasoning": "Check units before calculus: every constraint term is meters and every objective term square meters. Counting the square’s four edges and the circle’s full circumference independently verifies the coefficients. This setup question does not presume whether zero-length pieces are allowed.",
+      "optionReview": [
+        "This exchanges area and length and mismatches their units.",
+        "The square uses four side lengths of wire.",
+        "Lengths add to the fixed wire total, while the two enclosed areas add in the objective.",
+        "The proposed objective has length terms rather than the two areas."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Constraint 2πr+4s=30; objective A=πr²+s²."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-10-010",
+      "independentReasoning": "The constrained parabola 20−(x−6)² on [0,4] has its derivative zero outside the feasible interval. The function x³ has a stationary point that is neither extremum. These independent counterexamples show why feasibility and classification are separate necessary checks.",
+      "optionReview": [
+        "Stationary inputs can be minima, maxima or neither.",
+        "The feasible set can impose additional bounds and relations.",
+        "The height zero has no general relation to optimality.",
+        "A stationary input alone may be outside the domain or may not be the desired maximum or minimum."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Feasibility and the relevant extrema/endpoints or end behavior, then the requested output quantity."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-10-011",
+      "independentReasoning": "Check the two geometric endpoints: x=0 uses a 3 m off-road leg plus 10 m road, while x=10 uses a direct off-road leg and no road remainder. The selected expression gives both costs correctly and retains dollar units.",
+      "optionReview": [
+        "Pythagoras gives the off-road distance, and the remaining road distance is 10−x.",
+        "This uses a square root without squaring the perpendicular lengths.",
+        "This incorrectly applies the off-road unit cost to the road segment too.",
+        "The road distance remaining decreases rather than increases with x."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "C(x)=2√(x²+9)+(10−x)."
+      }
+    }
+  ]
+}

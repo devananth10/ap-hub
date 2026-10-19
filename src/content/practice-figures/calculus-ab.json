@@ -1312,5 +1312,73 @@
     ],
     "dots": [],
     "description": "This graph is f′, a horizontal segment at height −2 from x=−2 to x=3. In particular, f′ is the constant −2 throughout [0,2]."
+  },
+  "calc-ab-5-9-003": {
+    "xRange": [
+      -2,
+      2
+    ],
+    "yRange": [
+      -3,
+      3
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            -2,
+            -2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": [],
+    "description": "This is the graph of f″, the straight line from (−2,−2) to (2,2), crossing zero at 0. The separate given value is f′(0)=−2; it is not the height of this second-derivative graph."
+  },
+  "calc-ab-5-9-004": {
+    "xRange": [
+      -1,
+      3
+    ],
+    "yRange": [
+      -2,
+      4
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            -1,
+            3
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": [],
+    "description": "This is f′, with straight segments through (−1,3),(0,0),(1,−1),(2,0),(3,3). It is zero at 0 and 2, decreasing until its minimum at 1, then increasing."
   }
 }

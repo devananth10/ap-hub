@@ -124,7 +124,12 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='second-derivative-test') {
+  if (review.check.type==='function-jet') {
+    const c=review.check,x=c.inputX,f=a=>evaluateExpression(c.expression,a),h=0.001;
+    const expected=[f(x),(f(x+0.0001)-f(x-0.0001))/0.0002,(f(x+h)-2*f(x)+f(x-h))/(h*h)];
+    const matches=question.options.map(option=>{const jet=c.optionJets[option];assert.ok(Array.isArray(jet)&&jet.length===3);return jet.every((v,i)=>Math.abs(v-expected[i])<0.00001);});
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique function jet');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' function jet key');
+  } else if (review.check.type==='second-derivative-test') {
     const c=review.check,domain=intervalOption(c.domain||'All real numbers'),h=0.001;assert.ok(['maximum','minimum'].includes(c.kind));
     const matches=question.options.map(option=>{const x=numericalOption(option);if(!Number.isFinite(x)||!domain.some(i=>x>i.lo&&x<i.hi))return false;const f=a=>evaluateExpression(c.expression,a),first=(f(x+0.0001)-f(x-0.0001))/0.0002,second=(f(x+h)-2*f(x)+f(x-h))/(h*h);return Math.abs(first)<0.00001&&(c.kind==='maximum'?second< -0.0001:second>0.0001);});
     assert.equal(matches.filter(Boolean).length,1,question.id+' unique second-derivative test');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' second-derivative key');

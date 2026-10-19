@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 5,
+  "topicId": "topic-5-9",
+  "questions": [
+    {
+      "id": "calc-ab-5-9-001",
+      "prompt": "Use the table below. Assume f is twice continuously differentiable near 2. Which description applies near x=2?",
+      "options": [
+        "It is below the axis, decreasing and concave up.",
+        "The graph is above the horizontal axis, decreasing and concave up.",
+        "It is above the axis, increasing and concave up.",
+        "It is above the axis, decreasing and concave down."
+      ],
+      "correctIndex": 1,
+      "explanation": "Read each derivative level separately: f gives height, f′ gives direction and f″ gives curvature. At 2 the signs are +,−,+, respectively, so the graph lies above the axis while descending and bending upward. Continuity of these quantities preserves their signs in a sufficiently small neighborhood. A: This confuses negative slope with negative height. B: The three relevant values are f(2)=5>0, f′(2)=−1<0 and f″(2)=3>0. C: The first derivative is negative. D: The second derivative is positive."
+    },
+    {
+      "id": "calc-ab-5-9-002",
+      "prompt": "For f(x)=x³−3x on 0<x<1, which sign pattern is (f(x), f′(x), f″(x))?",
+      "options": [
+        "Positive, negative, positive.",
+        "Negative, positive, positive.",
+        "Negative, negative, positive.",
+        "Negative, negative, negative."
+      ],
+      "correctIndex": 2,
+      "explanation": "The function is x(x²−3), negative since x>0 and x²<1<3. Its first derivative is 3(x²−1)<0, and second derivative is 6x>0. Therefore the graph is below the axis, decreasing and concave up. A: The original function is below zero there. B: Its derivative is negative because x²<1. C: The factors x(x²−3), 3(x²−1) and 6x have these signs throughout the interval. D: Its second derivative 6x is positive on the interval."
+    },
+    {
+      "id": "calc-ab-5-9-003",
+      "prompt": "The graph below is f″, and f′(0)=−2. Which description of f near 0 is correct?",
+      "options": [
+        "f has a local minimum at 0 because f″ crosses upward.",
+        "f has a horizontal tangent at 0.",
+        "f is concave up on both sides of 0.",
+        "f decreases through an inflection point at 0."
+      ],
+      "correctIndex": 3,
+      "explanation": "The second derivative changes from negative to positive, so f changes from concave down to concave up at 0. But its first derivative is −2 there and remains negative nearby by continuity of f′. Thus it is decreasing through a nonstationary inflection point. A: That crossing describes an extremum of f′, while f′(0) is nonzero. B: The given slope is −2 rather than zero. C: The plotted second derivative is negative on the left. D: The first derivative is negative nearby, while f″ changes from negative to positive."
+    },
+    {
+      "id": "calc-ab-5-9-004",
+      "prompt": "The graph below is f′ for a differentiable function. Which statement correctly identifies stationary inputs and a concavity-change input of f?",
+      "options": [
+        "Stationary inputs are 0 and 2; concavity changes at 1.",
+        "Stationary input is 1; concavity changes at 0 and 2.",
+        "All three inputs 0,1,2 are stationary.",
+        "There is no concavity change because f′ stays finite."
+      ],
+      "correctIndex": 0,
+      "explanation": "The displayed first derivative is zero at 0 and 2, giving horizontal tangents to f there. Its graph decreases until 1 and increases afterward, so f changes from concave down to concave up at 1. These are different graphical signals. A: Zeros of f′ give stationarity, while its change from decreasing to increasing gives the curvature change. B: This exchanges derivative zeros with derivative turning behavior. C: At 1 the derivative value is −1, not zero. D: A finite derivative can change from decreasing to increasing."
+    },
+    {
+      "id": "calc-ab-5-9-005",
+      "prompt": "If f is twice differentiable on an interval and f″(x)>0 everywhere there, what restriction follows for f′?",
+      "options": [
+        "f′ must be positive everywhere.",
+        "f′ is strictly increasing and can have at most one zero.",
+        "f′ must be concave up.",
+        "f′ must be constant."
+      ],
+      "correctIndex": 1,
+      "explanation": "Since the derivative of f′ is f″>0, the Mean Value Theorem makes f′ strictly increasing. If it had two distinct zeros, strict increase would be contradicted. Its increasing behavior does not determine whether its values are negative, positive or crossing zero. A: An increasing function may still have negative values. B: A strictly increasing derivative cannot take the same zero value at two distinct inputs. C: The sign of f″ determines the slope of f′, not the curvature of f′. D: A strictly positive derivative of f′ rules out constancy."
+    },
+    {
+      "id": "calc-ab-5-9-006",
+      "prompt": "On an interval, f′<0 and f″<0. How should the graph of f behave?",
+      "options": [
+        "It decreases while its negative slopes move toward zero.",
+        "It increases with slopes becoming more positive.",
+        "It decreases with slopes becoming more negative.",
+        "It must be below the horizontal axis."
+      ],
+      "correctIndex": 2,
+      "explanation": "The function decreases because f′ is negative. Since f″ is also negative, f′ decreases, meaning slopes become more negative as x grows. Thus the descent steepens with concave-down bending. The graph’s vertical position remains undetermined. A: That would describe increasing f′ and positive curvature. B: The negative first derivative forbids this direction. C: Negative slope gives decrease, and negative second derivative makes those slopes decrease further. D: Derivative signs do not determine original function height."
+    },
+    {
+      "id": "calc-ab-5-9-007",
+      "prompt": "At c, f′(c)=0; immediately left f″<0 and immediately right f″>0. Assume f is twice differentiable nearby and f′ is continuous at c. What happens to f?",
+      "options": [
+        "It has a local minimum at c because f′ has a minimum there.",
+        "It has a local maximum because f′(c)=0.",
+        "It is locally constant because f′ touches zero.",
+        "It increases through a stationary inflection point, with no local extremum at c."
+      ],
+      "correctIndex": 3,
+      "explanation": "The given second-derivative signs make f′ decrease toward zero from above and then increase from zero. Thus f′ is positive on both sides and f increases through c. The curvature of f changes there, producing a stationary inflection rather than a local maximum or minimum. A: An extremum of f′ is not the same as an extremum of f. B: Stationarity alone does not give a direction reversal. C: Neighboring derivative values are positive, not zero. D: The first derivative decreases to its minimum zero, then increases from it, so it is positive on both sides."
+    },
+    {
+      "id": "calc-ab-5-9-008",
+      "prompt": "Near c, f(c)>0, f′>0 and f″>0. For h(x)=−f(x), which description applies near c?",
+      "options": [
+        "Below the axis, decreasing and concave down.",
+        "Above the axis, decreasing and concave down.",
+        "Below the axis, increasing and concave up.",
+        "Below the axis, decreasing and concave up."
+      ],
+      "correctIndex": 0,
+      "explanation": "Multiplication by −1 gives h(c)<0, h′=−f′<0 and h″=−f″<0. Therefore h lies below the axis near c, decreases and bends concave down. The output reflection changes every derivative level’s sign. A: Negating the function negates its value and both derivative levels. B: The original positive height is also negated. C: The two derivative signs reverse under multiplication by −1. D: The second derivative becomes negative as well."
+    },
+    {
+      "id": "calc-ab-5-9-009",
+      "prompt": "If f is twice differentiable and f″=0 everywhere on a connected interval, what form must f have there?",
+      "options": [
+        "f must be constant.",
+        "f(x)=Ax+B for constants A and B.",
+        "f(x)=Ax²+B with arbitrary nonzero A.",
+        "f can have an arbitrary changing slope."
+      ],
+      "correctIndex": 1,
+      "explanation": "Apply the zero-derivative result first to f′: it must be a constant A. Then f−Ax has derivative zero and is a constant B. Hence f=Ax+B. The case A=0 is constant, but it is not forced. A: The constant first derivative may be nonzero. B: The first derivative is constant, so the original function is affine. C: Such a quadratic has second derivative 2A, not zero. D: Its slope derivative is identically zero, so the slope cannot change."
+    },
+    {
+      "id": "calc-ab-5-9-010",
+      "prompt": "If f′(x)=2x on the real line and f(0)=3, which pair is correct?",
+      "options": [
+        "f(x)=x² and f″(x)=2.",
+        "f(x)=2x+3 and f″(x)=0.",
+        "f(x)=x²+3 and f″(x)=2.",
+        "f(x)=x²+3 and f″(x)=2x."
+      ],
+      "correctIndex": 2,
+      "explanation": "The function x² has derivative 2x, so f−x² has derivative zero and is constant. The value at 0 sets that constant to 3. Differentiating the given f′=2x yields f″=2, giving the stated pair. A: The derivatives match but the initial height condition fails. B: The original derivative would be constant 2 rather than 2x. C: Differentiating the first formula gives the supplied first derivative and its derivative is 2. D: This keeps the first derivative instead of differentiating it again."
+    },
+    {
+      "id": "calc-ab-5-9-011",
+      "prompt": "Angles are in radians. For f(x)=sin x, what is the ordered triple (f(π/2), f′(π/2), f″(π/2))?",
+      "options": [
+        "(0, 1, 0)",
+        "(1, 0, 1)",
+        "(1, −1, 0)",
+        "(1, 0, −1)"
+      ],
+      "correctIndex": 3,
+      "explanation": "The three function levels are f=sin x, f′=cos x and f″=−sin x. At π/2 their values are 1,0,−1. The point is above the axis with a horizontal tangent and negative curvature, consistent with a local maximum. A: This uses the values at 0 instead of π/2. B: This loses the negative sign in the second derivative. C: This exchanges derivative levels and special-angle values. D: Sine, cosine and negative sine give those three values."
+    }
+  ]
+}

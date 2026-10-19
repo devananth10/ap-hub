@@ -1,5 +1,9 @@
 # Calculus AB validation and continuation notes
 
+## Topics 5.9–5.10 checkpoint: 539 questions
+
+Published 22 three-level derivative-relationship and introductory optimization questions. The bank passes with 290 programmatic models and 249 recorded reasoning reviews. A function-jet check compares original height and independently sampled first/second derivatives in their proper order. Two derivative-level graphs and a table support shape reasoning. Optimization models distinguish constraints, objective units, feasible domains, squared-distance equivalence and infeasible stationary inputs; exact candidate calculations establish two sample optima. All 85 unit tests, build, TypeScript, standard smoke and all Calculus scopes pass. Both full browser sessions display all four option reasons, grade every key correctly and finish 11/11. Next: 5.11; 32 topics/352 MCQs remain. Completed questions and Chemistry preserved.
+
 ## Topics 5.7–5.8 checkpoint: 517 questions
 
 Published 22 Second Derivative Test and graphical-relationship questions. The bank passes with 287 programmatic models and 230 recorded reasoning reviews. Original-function first/second differences corroborate exact stationary-point classifications, with a regression rejecting positive curvature without stationarity. Five original graphs distinguish f heights, f slopes, derivative crossings, curvature changes and flat derivative intervals. Direct plotted-coordinate models and mutations check crossing directions and constant-rate change; graphic shape conclusions remain separately reviewed. All 84 unit tests, build, TypeScript, standard smoke and all Calculus scopes pass. Full browser sessions show four option rationales and end 11/11; graph-heavy 5.8 passed at 390×844 and the viewport was reset. Next: 5.9; 34 topics/374 questions remain. Existing completed sets and Chemistry remain unchanged.

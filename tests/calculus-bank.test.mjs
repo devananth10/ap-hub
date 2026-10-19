@@ -320,3 +320,10 @@ test('graph transition and constant-rate checks read actual plotted values',()=>
   const wrong=structuredClone(batch.questions[1]);wrong.correctIndex=wrong.options.indexOf('−1');
   assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[1]),/graph key mismatch/);
 });
+test('function jets compare all three ordered derivative levels',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-5-9');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-5-9.json','utf8'));
+  verifyCalculusQuestion(batch.questions[10],qa.questions[10]);
+  const wrong=structuredClone(batch.questions[10]);wrong.correctIndex=wrong.options.indexOf('(1, 0, 1)');
+  assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[10]),/function jet key/);
+});

@@ -1,0 +1,194 @@
+{
+  "topicNumber": "5.9",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "94fe224d5519c2f1f7e9b78836eae2be70b77f4c1f3307fca13ef45a55c3b1ac",
+  "scopeReview": "CED FUN-4.A.11 connections among f, f′ and f″. Height, direction, curvature, extrema of derivatives, stationarity and function extrema kept distinct. Two original derivative-level graphs and a three-level table included; radian special angles specified.",
+  "varietyReview": "Three-column sign reading, interval-wide analytic triple, second-derivative crossing with supplied slope, first-derivative zeros versus trend changes, derivative monotonicity, steepening descent, stationary inflection, output reflection, affine conclusion, anchored derivative family and a numerical sine jet.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-5-9-001",
+      "independentReasoning": "Check all three actual table columns without exchanging their roles. The twice-continuous differentiability assumption makes a neighborhood description legitimate; isolated sampled data without this sign-continuity argument would not automatically describe an entire stated interval.",
+      "optionReview": [
+        "This confuses negative slope with negative height.",
+        "The three relevant values are f(2)=5>0, f′(2)=−1<0 and f″(2)=3>0.",
+        "The first derivative is negative.",
+        "The second derivative is positive."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The graph is above the horizontal axis, decreasing and concave up."
+      },
+      "tableSha256": "da25d3bccda4278245db529f78f0a77bb27727d7f5d9a4e18c78fdb9e6f197ee"
+    },
+    {
+      "questionId": "calc-ab-5-9-002",
+      "independentReasoning": "Derive both derivatives independently and use interval-wide inequalities rather than a single test input. Each factor has a fixed strict sign on (0,1), proving the entire three-level pattern, not just one sampled point.",
+      "optionReview": [
+        "The original function is below zero there.",
+        "Its derivative is negative because x²<1.",
+        "The factors x(x²−3), 3(x²−1) and 6x have these signs throughout the interval.",
+        "Its second derivative 6x is positive on the interval."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Negative, negative, positive."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-9-003",
+      "independentReasoning": "Read the actual sign crossing of the second-derivative graph and keep the separately supplied first-derivative value distinct. Integrating is unnecessary: curvature follows from f″ signs and local direction follows from the finite negative f′ value.",
+      "optionReview": [
+        "That crossing describes an extremum of f′, while f′(0) is nonzero.",
+        "The given slope is −2 rather than zero.",
+        "The plotted second derivative is negative on the left.",
+        "The first derivative is negative nearby, while f″ changes from negative to positive."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f decreases through an inflection point at 0."
+      },
+      "figureSha256": "95ed0de1f136a3f291523857566241a2434e29323814ba247cd1b0cee67350c7"
+    },
+    {
+      "questionId": "calc-ab-5-9-004",
+      "independentReasoning": "Inspect actual plotted derivative heights at 0,1,2: 0,−1,0. Then inspect segment slope signs on either side of 1, negative and positive. Other derivative vertices do not reverse its trend, so they do not supply additional curvature changes.",
+      "optionReview": [
+        "Zeros of f′ give stationarity, while its change from decreasing to increasing gives the curvature change.",
+        "This exchanges derivative zeros with derivative turning behavior.",
+        "At 1 the derivative value is −1, not zero.",
+        "A finite derivative can change from decreasing to increasing."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Stationary inputs are 0 and 2; concavity changes at 1."
+      },
+      "figureSha256": "a154856e30d1beff88128cd4abecb4fb18f61dd7c786e89b90bbaa4a68581978"
+    },
+    {
+      "questionId": "calc-ab-5-9-005",
+      "independentReasoning": "Apply the theorem directly to f′ between any two inputs. Their output difference is a positive f″ value times a positive input gap. The example f′(x)=x on (−2,2) confirms that an increasing derivative need not be positive throughout.",
+      "optionReview": [
+        "An increasing function may still have negative values.",
+        "A strictly increasing derivative cannot take the same zero value at two distinct inputs.",
+        "The sign of f″ determines the slope of f′, not the curvature of f′.",
+        "A strictly positive derivative of f′ rules out constancy."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f′ is strictly increasing and can have at most one zero."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-9-006",
+      "independentReasoning": "A local model f(x)=10−eˣ has both derivatives −eˣ<0, decreasing while its slopes get more negative. Adding a constant changes the height without either derivative sign, independently disproving any below-axis conclusion.",
+      "optionReview": [
+        "That would describe increasing f′ and positive curvature.",
+        "The negative first derivative forbids this direction.",
+        "Negative slope gives decrease, and negative second derivative makes those slopes decrease further.",
+        "Derivative signs do not determine original function height."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It decreases with slopes becoming more negative."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-9-007",
+      "independentReasoning": "The model f(x)=(x−c)³ has f′=3(x−c)² and f″=6(x−c), satisfying every sign and continuity condition. Direct original values on either side straddle f(c), proving no local extremum while the concavity changes.",
+      "optionReview": [
+        "An extremum of f′ is not the same as an extremum of f.",
+        "Stationarity alone does not give a direction reversal.",
+        "Neighboring derivative values are positive, not zero.",
+        "The first derivative decreases to its minimum zero, then increases from it, so it is positive on both sides."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It increases through a stationary inflection point, with no local extremum at c."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-9-008",
+      "independentReasoning": "Differentiate the constant multiple twice and evaluate the height separately. Continuity of f keeps its positive height near c before reflection. This confirms all three classifications rather than reflecting only the original graph’s vertical position.",
+      "optionReview": [
+        "Negating the function negates its value and both derivative levels.",
+        "The original positive height is also negated.",
+        "The two derivative signs reverse under multiplication by −1.",
+        "The second derivative becomes negative as well."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Below the axis, decreasing and concave down."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-9-009",
+      "independentReasoning": "Two successive Mean Value Theorem arguments establish the form without needing an integration rule. The explicit example f=3x+5 has zero second derivative but nonzero slope, excluding the stronger constant-function assertion.",
+      "optionReview": [
+        "The constant first derivative may be nonzero.",
+        "The first derivative is constant, so the original function is affine.",
+        "Such a quadratic has second derivative 2A, not zero.",
+        "Its slope derivative is identically zero, so the slope cannot change."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f(x)=Ax+B for constants A and B."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-9-010",
+      "independentReasoning": "Check the first derivative, the second derivative and the base height as three separate conditions. Only the selected pair satisfies all three. The constant-difference argument on the real interval establishes uniqueness of the original function.",
+      "optionReview": [
+        "The derivatives match but the initial height condition fails.",
+        "The original derivative would be constant 2 rather than 2x.",
+        "Differentiating the first formula gives the supplied first derivative and its derivative is 2.",
+        "This keeps the first derivative instead of differentiating it again."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f(x)=x²+3 and f″(x)=2."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-9-011",
+      "independentReasoning": "Use exact radian special-angle values, then independently corroborate the original sine height and centered first/second differences at π/2. The numerical model compares all three ordered entries, preventing a correct height from hiding an incorrect derivative sign.",
+      "optionReview": [
+        "This uses the values at 0 instead of π/2.",
+        "This loses the negative sign in the second derivative.",
+        "This exchanges derivative levels and special-angle values.",
+        "Sine, cosine and negative sine give those three values."
+      ],
+      "check": {
+        "type": "function-jet",
+        "inputX": 1.5707963267948966,
+        "expression": [
+          "sin",
+          "x"
+        ],
+        "optionJets": {
+          "(1, 0, −1)": [
+            1,
+            0,
+            -1
+          ],
+          "(0, 1, 0)": [
+            0,
+            1,
+            0
+          ],
+          "(1, 0, 1)": [
+            1,
+            0,
+            1
+          ],
+          "(1, −1, 0)": [
+            1,
+            -1,
+            0
+          ]
+        }
+      }
+    }
+  ]
+}
