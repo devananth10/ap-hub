@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 4,
+  "topicId": "topic-4-3",
+  "questions": [
+    {
+      "id": "calc-ab-4-3-001",
+      "prompt": "A culture is modeled by N(t)=500e^(0.2t) cells, where t is hours. What is its instantaneous population growth rate at t=0?",
+      "options": [
+        "500 cells/h",
+        "0.2 cells/h",
+        "2500 cells/h",
+        "100 cells/h"
+      ],
+      "correctIndex": 3,
+      "explanation": "Differentiate the model with the chain rule: N′(t)=500(0.2)e^(0.2t)=100e^(0.2t). At t=0 this is 100 cells/h. The exponential growth factor is dimensionless, and the derivative has cells-per-hour units. A: This is the initial population, relabeled as a rate. B: This uses only the exponential coefficient and omits the population scale. C: This divides by 0.2 instead of multiplying. D: The inner exponential rate 0.2 multiplies the initial 500 cells."
+    },
+    {
+      "id": "calc-ab-4-3-002",
+      "prompt": "A cooling object has temperature T(t)=20+60e^(−t/5) °C, where t is minutes. What is T′(0)?",
+      "options": [
+        "−12 °C/min",
+        "80 °C/min",
+        "12 °C/min",
+        "−60 °C/min"
+      ],
+      "correctIndex": 0,
+      "explanation": "The constant 20 contributes zero derivative. The chain rule gives T′(t)=−12e^(−t/5), so T′(0)=−12 °C/min. The negative rate means the object is cooling at that instant. A: Differentiating the decaying exponential gives 60(−1/5) at 0. B: This is the initial temperature, not its rate. C: This loses the negative cooling sign. D: This omits the inner factor 1/5."
+    },
+    {
+      "id": "calc-ab-4-3-003",
+      "prompt": "Revenue is modeled by R(q)=30q−0.02q² dollars, where q is the number of items sold. What is marginal revenue R′(100)?",
+      "options": [
+        "2800 dollars/item",
+        "26 dollars/item",
+        "28 dollars/item",
+        "30 dollars/item"
+      ],
+      "correctIndex": 1,
+      "explanation": "Marginal revenue is the derivative of total revenue with respect to item quantity. Here R′(q)=30−0.04q, so R′(100)=30−4=26 dollars/item. Average revenue and total revenue are different quantities. A: This is the total revenue R(100), incorrectly given derivative units. B: The derivative 30−0.04q gives 26 at q=100. C: This uses average revenue R(100)/100 instead of marginal revenue. D: This ignores the derivative of the quadratic term."
+    },
+    {
+      "id": "calc-ab-4-3-004",
+      "prompt": "C(q) is total cost in dollars and A(q)=C(q)/q is average cost per item. If C(50)=700 and C′(50)=10, what is A′(50)?",
+      "options": [
+        "0.2 dollars/item²",
+        "14 dollars/item²",
+        "−0.08 dollars/item²",
+        "0.08 dollars/item²"
+      ],
+      "correctIndex": 2,
+      "explanation": "Differentiate average cost with the quotient rule: A′(q)=[qC′(q)−C(q)]/q². At 50 this is (500−700)/2500=−200/2500=−0.08 dollars/item². The negative value means average cost is locally falling as production increases. A: This divides C′(50) by 50 and omits the denominator contribution. B: This is the average cost A(50), not its derivative. C: The quotient rule gives [50(10)−700]/50². D: This reverses the quotient numerator’s sign."
+    },
+    {
+      "id": "calc-ab-4-3-005",
+      "prompt": "A rod’s linear density is ρ(x)=2+0.1x³ grams per centimeter, with x measured in centimeters. What is ρ′(2)?",
+      "options": [
+        "2.8 g/cm²",
+        "0.3 g/cm²",
+        "1.2 g/s",
+        "1.2 g/cm²"
+      ],
+      "correctIndex": 3,
+      "explanation": "Differentiate with respect to position: ρ′(x)=0.3x². Thus ρ′(2)=1.2. Since ρ has units g/cm and x has units cm, the derivative has units g/cm², not a time-based unit. A: This is the density value at 2 rather than its spatial rate. B: This omits evaluation of x² at 2. C: This replaces spatial differentiation by time differentiation. D: The derivative 0.3x² gives 1.2, with density units divided by centimeters again."
+    },
+    {
+      "id": "calc-ab-4-3-006",
+      "prompt": "A(r)=πr² is a circle’s area in m² as a function of radius r in meters. Which statement correctly interprets A′(3)=6π?",
+      "options": [
+        "At radius 3 m, area changes instantaneously at 6π m² per meter of radius change.",
+        "At time 3 s, area increases at 6π m²/s.",
+        "The circle’s area is 6π m² when r=3.",
+        "Increasing radius from 3 m to 4 m adds exactly 6π m²."
+      ],
+      "correctIndex": 0,
+      "explanation": "A′(r)=2πr is the instantaneous area rate with respect to radius. At r=3 it is 6π m²/m. A time rate would additionally need dr/dt, and a finite one-meter radius change is not exactly determined by the derivative at its starting point. A: The independent variable is radius, so the derivative is an area-to-radius rate. B: No time variable or radius time-rate is given. C: The area is 9π m²; the stated derivative is a different quantity. D: The exact finite area change is 16π−9π=7π m², not the instantaneous derivative times 1."
+    },
+    {
+      "id": "calc-ab-4-3-007",
+      "prompt": "A plant’s height is modeled by H(t)=8t/(t+2) centimeters for t≥0 days. What is its instantaneous growth rate at t=2 days?",
+      "options": [
+        "4 cm/day",
+        "1 cm/day",
+        "2 cm/day",
+        "−1 cm/day"
+      ],
+      "correctIndex": 1,
+      "explanation": "The quotient rule gives H′(t)=[8(t+2)−8t]/(t+2)²=16/(t+2)². At t=2 this equals 16/16=1 cm/day. The original height is 4 cm, while the average growth since 0 is 2 cm/day. A: This is the height H(2), not its rate. B: The quotient derivative is 16/(t+2)², giving 1 at 2. C: This is the average height increase per day from 0 to 2, not the instantaneous rate. D: This reverses the quotient-rule subtraction."
+    },
+    {
+      "id": "calc-ab-4-3-008",
+      "prompt": "A dye concentration is M(t)=10t e^(−t) mg/L, with t in minutes. Which description is correct at t=2?",
+      "options": [
+        "Concentration is increasing because its value 20e^(−2) is positive.",
+        "Concentration is decreasing at 20e^(−2) mg/L per minute.",
+        "Concentration is decreasing at an instantaneous rate of 10e^(−2) mg/L per minute.",
+        "Concentration is momentarily constant because the exponential is decaying."
+      ],
+      "correctIndex": 2,
+      "explanation": "The product rule gives M′=10e^(−t)−10t e^(−t)=10e^(−t)(1−t). At 2, M′(2)=−10e^(−2) mg/L per minute. Thus the positive concentration is falling; its height is 20e^(−2) mg/L. A: A positive concentration value does not imply a positive rate. B: This is the concentration height’s magnitude, not the derivative magnitude. C: The product derivative is 10e^(−t)(1−t), which is negative at 2. D: The two derivative contributions do not cancel at t=2."
+    },
+    {
+      "id": "calc-ab-4-3-009",
+      "prompt": "Use the energy table below. Which value estimates the power at t=3 h using a centered secant from the nearest displayed times on either side? One kWh per hour equals one kW.",
+      "options": [
+        "14 kW",
+        "16 kW",
+        "8 kW",
+        "7 kW"
+      ],
+      "correctIndex": 3,
+      "explanation": "Power is the time derivative of accumulated energy. The centered estimate at 3 uses t=2 and t=4: E′(3)≈[24−10]/[4−2]=7 kWh/h=7 kW. The finite readings support an estimate, not an exact derivative. A: This omits division by the two-hour time gap. B: This is the energy at t=3, incorrectly relabeled as power. C: This uses the forward interval [3,4], not the requested centered one. D: The energy rise is 24−10=14 kWh over 4−2=2 h."
+    },
+    {
+      "id": "calc-ab-4-3-010",
+      "prompt": "Cumulative production is Q(t)=t³−6t²+15t units for 0≤t≤2 hours. What is happening at t=1 h?",
+      "options": [
+        "Production total is increasing, but the production rate is decreasing.",
+        "Production total is decreasing because Q″(1)<0.",
+        "Both the production total and its rate are increasing.",
+        "Production total is stationary because its rate is decreasing."
+      ],
+      "correctIndex": 0,
+      "explanation": "Differentiate to get Q′=3t²−12t+15 and Q″=6t−12. At 1 these are 6 units/h and −6 units/h². The total continues rising while the positive production rate is falling. A: Q′(1)=6>0 while Q″(1)=−6<0. B: The sign of Q′, not Q″, determines whether the total is increasing. C: The second derivative is negative at 1, so the rate is falling. D: A decreasing positive rate need not be zero."
+    },
+    {
+      "id": "calc-ab-4-3-011",
+      "prompt": "At an instant, culture A has 200 cells and grows at 30 cells/h; culture B has 100 cells and grows at 20 cells/h. Which comparison of their instantaneous growth is correct?",
+      "options": [
+        "A has both the larger absolute and percentage growth rates.",
+        "A has the larger absolute growth rate, but B has the larger percentage growth rate.",
+        "B has both the larger absolute and percentage growth rates.",
+        "Both percentage growth rates are equal because both cultures are growing."
+      ],
+      "correctIndex": 1,
+      "explanation": "Absolute growth compares the derivatives directly: 30>20 cells/h, so A grows faster by cell count. Percentage growth divides each derivative by its current population: A has 15%/h and B has 20%/h. Thus B has the larger relative rate. A: A has more cells, so its larger absolute rate does not imply the larger relative rate. B: Absolute rates compare 30 to 20; relative rates compare 30/200=15%/h to 20/100=20%/h. C: B’s relative rate is larger, but 20 cells/h is less than 30 cells/h. D: Positive rates can have different ratios to current population."
+    }
+  ]
+}

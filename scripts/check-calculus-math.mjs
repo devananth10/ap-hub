@@ -10,6 +10,7 @@ export function numericalOption(text) {
   if(clean==='∞'||clean==='+∞')return Infinity;
   if(clean==='-∞')return -Infinity;
   const piFraction=clean.match(/^([+-]?\d+)\/π$/);if(piFraction)return Number(piFraction[1])/Math.PI;
+  const piMultiple=clean.match(/^([+-]?\d+)π(?:$|\s+[A-Za-z])/);if(piMultiple)return Number(piMultiple[1])*Math.PI;
   const fraction=clean.match(/^([+-]?\d+(?:\.\d+)?)\/([+-]?\d+(?:\.\d+)?)(?:$|\s+[A-Za-z])/);
   if(fraction) return Number(fraction[1])/Number(fraction[2]);
   const root=clean.match(/^([+-]?)√(\d+(?:\.\d+)?)$/);if(root) return (root[1]==='-'?-1:1)*Math.sqrt(Number(root[2]));
@@ -117,7 +118,16 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='inverse-quantity') {
+  if (review.check.type==='dimensioned-derivative') {
+    const check=review.check,units={'g/cm':[1,-1,0],cm:[0,1,0],'g/cm²':[1,-2,0],'g/s':[1,0,-1]};
+    assert.ok(units[check.outputUnit]&&units[check.inputUnit]);
+    const dimensions=units[check.outputUnit].map((power,i)=>power-units[check.inputUnit][i]),h=check.step;
+    assert.ok(h>0&&Number.isFinite(h));
+    const value=(evaluateExpression(check.expression,check.inputX+h)-evaluateExpression(check.expression,check.inputX-h))/(2*h);
+    const matches=question.options.map(option=>{const parts=option.trim().split(' ');assert.equal(parts.length,2);assert.ok(units[parts[1]]);return units[parts[1]].every((power,i)=>power===dimensions[i])&&Math.abs(numericalOption(parts[0])-value)<check.tolerance;});
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique dimensioned derivative');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' dimensioned derivative key');
+  } else if (review.check.type==='inverse-quantity') {
     const check=review.check,units={'cm/s':[1,-1],'s/cm':[-1,1]};assert.ok(units[check.unit]&&check.value!==0);
     assert.ok(question.prompt.includes(String(check.value)+' '+check.unit),'Original rate missing from prompt');
     const expectedUnits=units[check.unit].map(power=>-power);

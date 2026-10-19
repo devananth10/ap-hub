@@ -1,0 +1,276 @@
+{
+  "topicNumber": "4.3",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "e6022d6985153b90c18037f393f7479ce7bb13384a76ff661e5306357ee7dec0",
+  "scopeReview": "CED CHA-3.C.1 non-motion applied rates, with context interpretation, derivative selection, signs, scaling and units. Population, temperature, cost, spatial density, geometry, height, concentration, power and production examples. Finite-table rates remain estimates.",
+  "varietyReview": "Seven distinct numerical models plus conceptual comparisons of geometric input rates, concentration height/rate, rising totals with falling rates and absolute versus percentage growth. Original energy table included.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-4-3-001",
+      "independentReasoning": "The original defining quotient at 0 is 500[e^(0.2h)−1]/h, whose limit is 500·0.2=100. Centered differences corroborate this value; the population height and the relative growth coefficient are checked as distinct quantities.",
+      "optionReview": [
+        "This is the initial population, relabeled as a rate.",
+        "This uses only the exponential coefficient and omits the population scale.",
+        "This divides by 0.2 instead of multiplying.",
+        "The inner exponential rate 0.2 multiplies the initial 500 cells."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 0,
+        "expression": [
+          "mul",
+          500,
+          [
+            "exp",
+            [
+              "mul",
+              0.2,
+              "x"
+            ]
+          ]
+        ],
+        "step": 0.0001,
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-4-3-002",
+      "independentReasoning": "Subtract T(0)=80 from the original function at a nearby time: the quotient is 60[e^(−h/5)−1]/h and tends to −12. The original-temperature centered quotient corroborates the sign and scale independently.",
+      "optionReview": [
+        "Differentiating the decaying exponential gives 60(−1/5) at 0.",
+        "This is the initial temperature, not its rate.",
+        "This loses the negative cooling sign.",
+        "This omits the inner factor 1/5."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 0,
+        "expression": [
+          "add",
+          20,
+          [
+            "mul",
+            60,
+            [
+              "exp",
+              [
+                "div",
+                [
+                  "mul",
+                  -1,
+                  "x"
+                ],
+                5
+              ]
+            ]
+          ]
+        ],
+        "step": 0.0001,
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-4-3-003",
+      "independentReasoning": "From the original model, [R(100+h)−R(100)]/h=26−0.02h, giving exact limit 26. Separately evaluate R(100)=2800 and its quotient by 100 as 28, verifying both distractor interpretations.",
+      "optionReview": [
+        "This is the total revenue R(100), incorrectly given derivative units.",
+        "The derivative 30−0.04q gives 26 at q=100.",
+        "This uses average revenue R(100)/100 instead of marginal revenue.",
+        "This ignores the derivative of the quadratic term."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 100,
+        "expression": [
+          "sub",
+          [
+            "mul",
+            30,
+            "x"
+          ],
+          [
+            "mul",
+            0.02,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ]
+        ],
+        "step": 0.001,
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-4-3-004",
+      "independentReasoning": "Use the local total-cost model C(50+h)=700+10h+o(h), divide by 50+h, and subtract 700/50. The resulting first-order coefficient is −0.08. This checks the quotient signs and distinguishes marginal cost, average cost and change of average cost.",
+      "optionReview": [
+        "This divides C′(50) by 50 and omits the denominator contribution.",
+        "This is the average cost A(50), not its derivative.",
+        "The quotient rule gives [50(10)−700]/50².",
+        "This reverses the quotient numerator’s sign."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          50,
+          700,
+          10
+        ],
+        "expression": [
+          "div",
+          [
+            "sub",
+            [
+              "mul",
+              50,
+              10
+            ],
+            700
+          ],
+          [
+            "pow",
+            50,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-4-3-005",
+      "independentReasoning": "The original difference quotient is 0.1[(2+h)³−8]/h=1.2+0.6h+0.1h², with limit 1.2. A centered quotient corroborates the numerical value, while output-unit powers minus input-unit powers independently distinguish g/cm² from the wrong time-based unit.",
+      "optionReview": [
+        "This is the density value at 2 rather than its spatial rate.",
+        "This omits evaluation of x² at 2.",
+        "This replaces spatial differentiation by time differentiation.",
+        "The derivative 0.3x² gives 1.2, with density units divided by centimeters again."
+      ],
+      "check": {
+        "type": "dimensioned-derivative",
+        "outputUnit": "g/cm",
+        "inputUnit": "cm",
+        "inputX": 2,
+        "expression": [
+          "add",
+          2,
+          [
+            "mul",
+            0.1,
+            [
+              "pow",
+              "x",
+              3
+            ]
+          ]
+        ],
+        "step": 0.0001,
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-4-3-006",
+      "independentReasoning": "Compute the exact area difference A(3+h)−A(3)=6πh+πh². Dividing by h and taking the limit gives 6π, while substituting h=1 gives 7π. This independently distinguishes instantaneous radius rate, finite change and an unspecified time rate.",
+      "optionReview": [
+        "The independent variable is radius, so the derivative is an area-to-radius rate.",
+        "No time variable or radius time-rate is given.",
+        "The area is 9π m²; the stated derivative is a different quantity.",
+        "The exact finite area change is 16π−9π=7π m², not the instantaneous derivative times 1."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "At radius 3 m, area changes instantaneously at 6π m² per meter of radius change."
+      }
+    },
+    {
+      "questionId": "calc-ab-4-3-007",
+      "independentReasoning": "Rewrite H=8−16/(t+2), then differentiate to obtain the same positive derivative. Original-function differences at 2 corroborate 1. The two alternative quantities H(2) and [H(2)−H(0)]/2 are computed separately to verify their distractor roles.",
+      "optionReview": [
+        "This is the height H(2), not its rate.",
+        "The quotient derivative is 16/(t+2)², giving 1 at 2.",
+        "This is the average height increase per day from 0 to 2, not the instantaneous rate.",
+        "This reverses the quotient-rule subtraction."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 2,
+        "expression": [
+          "div",
+          [
+            "mul",
+            8,
+            "x"
+          ],
+          [
+            "add",
+            "x",
+            2
+          ]
+        ],
+        "step": 0.0001,
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-4-3-008",
+      "independentReasoning": "Expand M(2+h)=10(2+h)e^(−2)e^(−h). Its linear term is −10e^(−2)h, independently establishing the negative slope and its magnitude. Check output and derivative units separately so concentration height is not substituted as a rate.",
+      "optionReview": [
+        "A positive concentration value does not imply a positive rate.",
+        "This is the concentration height’s magnitude, not the derivative magnitude.",
+        "The product derivative is 10e^(−t)(1−t), which is negative at 2.",
+        "The two derivative contributions do not cancel at t=2."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Concentration is decreasing at an instantaneous rate of 10e^(−2) mg/L per minute."
+      }
+    },
+    {
+      "questionId": "calc-ab-4-3-009",
+      "independentReasoning": "Read the actual table endpoints and divide their energy difference by the full interval length. The forward interval gives 24−16=8 kWh in one hour, which verifies the method-choice distractor. Units convert energy-per-hour to power without a further factor.",
+      "optionReview": [
+        "This omits division by the two-hour time gap.",
+        "This is the energy at t=3, incorrectly relabeled as power.",
+        "This uses the forward interval [3,4], not the requested centered one.",
+        "The energy rise is 24−10=14 kWh over 4−2=2 h."
+      ],
+      "check": {
+        "type": "table-rate",
+        "start": 2,
+        "end": 4
+      },
+      "tableSha256": "cb5711597408df41d25f657618168cdb79784b3ebacfef4d7475f8a9843c145d"
+    },
+    {
+      "questionId": "calc-ab-4-3-010",
+      "independentReasoning": "Independently rewrite Q′=3(t−2)²+3, always positive on the given interval, and Q″=6(t−2), negative before 2. These exact signs confirm the simultaneous behaviors and distinguish total amount from its rate.",
+      "optionReview": [
+        "Q′(1)=6>0 while Q″(1)=−6<0.",
+        "The sign of Q′, not Q″, determines whether the total is increasing.",
+        "The second derivative is negative at 1, so the rate is falling.",
+        "A decreasing positive rate need not be zero."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Production total is increasing, but the production rate is decreasing."
+      }
+    },
+    {
+      "questionId": "calc-ab-4-3-011",
+      "independentReasoning": "Compute the two ratios independently: 30/200=0.15 and 20/100=0.20, each per hour. The question asks about instantaneous rates, so no assumption of constant exponential or future percentage growth is needed.",
+      "optionReview": [
+        "A has more cells, so its larger absolute rate does not imply the larger relative rate.",
+        "Absolute rates compare 30 to 20; relative rates compare 30/200=15%/h to 20/100=20%/h.",
+        "B’s relative rate is larger, but 20 cells/h is less than 30 cells/h.",
+        "Positive rates can have different ratios to current population."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "A has the larger absolute growth rate, but B has the larger percentage growth rate."
+      }
+    }
+  ]
+}

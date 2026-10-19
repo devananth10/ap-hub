@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 374,
+  "questionsChecked": 396,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -1091,6 +1091,66 @@
       "questionId": "calc-ab-4-2-010",
       "method": "numeric",
       "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-3-001",
+      "method": "finite-difference-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-4-3-002",
+      "method": "finite-difference-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-4-3-003",
+      "method": "finite-difference-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-4-3-004",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-3-005",
+      "method": "dimensioned-derivative",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-4-3-007",
+      "method": "finite-difference-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-4-3-009",
+      "method": "table-rate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-4-4-002",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-4-004",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-4-005",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-4-007",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-4-011",
+      "method": "numeric",
+      "operation": "evaluate"
     }
   ],
   "reasoningReviews": [
@@ -1249,7 +1309,17 @@
     "calc-ab-4-2-005",
     "calc-ab-4-2-006",
     "calc-ab-4-2-009",
-    "calc-ab-4-2-011"
+    "calc-ab-4-2-011",
+    "calc-ab-4-3-006",
+    "calc-ab-4-3-008",
+    "calc-ab-4-3-010",
+    "calc-ab-4-3-011",
+    "calc-ab-4-4-001",
+    "calc-ab-4-4-003",
+    "calc-ab-4-4-006",
+    "calc-ab-4-4-008",
+    "calc-ab-4-4-009",
+    "calc-ab-4-4-010"
   ],
   "humanReviewPerformed": false,
   "limitations": [

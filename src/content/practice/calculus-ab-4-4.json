@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 4,
+  "topicId": "topic-4-4",
+  "questions": [
+    {
+      "id": "calc-ab-4-4-001",
+      "prompt": "A circle has differentiable radius r(t) and area A(t)=π[r(t)]², with time t in seconds. Which equation relates their time rates?",
+      "options": [
+        "dA/dt=2πr(dr/dt)",
+        "dA/dt=2πr",
+        "dA/dt=π(dr/dt)²",
+        "dA/dt=2π(dr/dt)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Differentiate the relation with respect to the common independent variable t. The chain rule gives A′(t)=π·2r(t)·r′(t), or dA/dt=2πr(dr/dt). The factor dr/dt connects the geometric radius derivative to a time rate. A: The square’s derivative is multiplied by the radius time-rate. B: This is dA/dr and omits the conversion from radius change to time change. C: The derivative of a square is not the square of the derivative. D: This omits the current radius factor."
+    },
+    {
+      "id": "calc-ab-4-4-002",
+      "prompt": "A sphere’s volume is V=(4/3)πr³. At an instant r=2 cm and dr/dt=3 cm/s. What is dV/dt then?",
+      "options": [
+        "16π cm³/s",
+        "48π cm³/s",
+        "24π cm³/s",
+        "−48π cm³/s"
+      ],
+      "correctIndex": 1,
+      "explanation": "Differentiate before substituting the instantaneous radius: dV/dt=4πr²(dr/dt). Now use r=2 and dr/dt=3 to obtain 4π(2²)(3)=48π cm³/s. Radius is changing, so its current value is not a constant radius for differentiation. A: This omits the radius time-rate 3. B: The derivative 4πr²(dr/dt) gives 4π·4·3. C: This uses r rather than r² in the derivative. D: The positive radius rate makes the volume rate positive."
+    },
+    {
+      "id": "calc-ab-4-4-003",
+      "prompt": "A rectangle’s length L(t) and width W(t) both vary differentiably with time. Which relation follows from A(t)=L(t)W(t)?",
+      "options": [
+        "dA/dt=(dL/dt)(dW/dt)",
+        "dA/dt=dL/dt+dW/dt",
+        "dA/dt=W(dL/dt)+L(dW/dt)",
+        "dA/dt=L(dL/dt)+W(dW/dt)"
+      ],
+      "correctIndex": 2,
+      "explanation": "Differentiate both changing factors with respect to t: A′=L′W+LW′. The length rate sweeps out area across the current width, while the width rate sweeps out area across the current length. A: A product derivative is not the product of derivatives. B: The current opposite side lengths must weight the two contributions. C: Each side contributes a weighted area rate through the product rule. D: This weights each changing side by itself rather than the opposite side."
+    },
+    {
+      "id": "calc-ab-4-4-004",
+      "prompt": "At an instant a rectangle has length 5 cm and width 3 cm. Length increases at 2 cm/min while width decreases at 1 cm/min. What is the area time-rate?",
+      "options": [
+        "11 cm²/min",
+        "−2 cm²/min",
+        "5 cm²/min",
+        "1 cm²/min"
+      ],
+      "correctIndex": 3,
+      "explanation": "The width’s derivative is −1 cm/min. The product rule gives A′=WL′+LW′=3·2+5(−1)=6−5=1 cm²/min. The two contributions nearly cancel, but the area is still increasing. A: This treats the decreasing width rate as positive. B: This multiplies the two side rates and omits the current side lengths. C: This uses only the magnitude of the shrinking-width contribution. D: Use 3(2)+5(−1)=1, with a negative width rate."
+    },
+    {
+      "id": "calc-ab-4-4-005",
+      "prompt": "Differentiable lengths x(t) and y(t) satisfy x²+y²=100. At an instant x=6 m, y=8 m and dx/dt=2 m/s. What is dy/dt?",
+      "options": [
+        "−3/2 m/s",
+        "3/2 m/s",
+        "−8/3 m/s",
+        "0 m/s"
+      ],
+      "correctIndex": 0,
+      "explanation": "Differentiate the persistent relation with respect to t: 2x x′+2y y′=0. Then y′=−(x/y)x′=−(6/8)·2=−3/2 m/s. The stated lengths satisfy 36+64=100. A: The common-time derivative gives x x′+y y′=0, so y′=−6·2/8. B: This omits the negative sign required by the fixed sum of squares. C: This reverses the x/y factor. D: A constant sum of squares does not require each changing length to be constant."
+    },
+    {
+      "id": "calc-ab-4-4-006",
+      "prompt": "A cone has volume V(t)=(π/3)[r(t)]²h(t), and both radius and height vary differentiably. Which time-rate equation is correct?",
+      "options": [
+        "dV/dt=(π/3)[2r(dr/dt)+dh/dt].",
+        "dV/dt=(π/3)[2rh(dr/dt)+r²(dh/dt)].",
+        "dV/dt=(π/3)[2r(dr/dt)(dh/dt)].",
+        "dV/dt=πr²h."
+      ],
+      "correctIndex": 1,
+      "explanation": "Keep both varying dimensions as functions of time. Applying the product rule to r²h gives (2rr′)h+r²h′. The constant π/3 remains a multiplier, giving the selected equation. A: This drops the current height and squared-radius weights. B: The product rule handles r²h and the chain rule differentiates r². C: This multiplies rates instead of adding the two product contributions. D: This changes a constant coefficient but does not differentiate either varying dimension."
+    },
+    {
+      "id": "calc-ab-4-4-007",
+      "prompt": "A cylinder has fixed radius 3 cm and volume V(t)=πr²h(t). Water volume increases at 18π cm³/s. What is dh/dt?",
+      "options": [
+        "18 cm/s",
+        "6 cm/s",
+        "2 cm/s",
+        "−2 cm/s"
+      ],
+      "correctIndex": 2,
+      "explanation": "Because radius is fixed throughout the process, V=9πh and V′=9πh′. Solving for the height rate gives h′=18π/(9π)=2 cm/s. Here treating the radius as constant is justified by the stated persistent condition. A: This omits the base-area factor 9π. B: This uses radius 3 rather than its square in the base area. C: For fixed r, V′=9πh′, so 18π/(9π)=2. D: Increasing volume in a fixed-radius cylinder requires increasing height."
+    },
+    {
+      "id": "calc-ab-4-4-008",
+      "prompt": "A cylinder has varying radius r(t) and height h(t), with V(t)=πr(t)²h(t). At one instant h=5. Why is replacing h by 5 before differentiating not generally justified?",
+      "options": [
+        "Numerical values can never be substituted into a derivative equation.",
+        "The cylinder volume formula is invalid when its height is 5.",
+        "Differentiating h=5 at one instant proves h′=0 there.",
+        "An instantaneous height value does not imply h′=0; substituting first can erase the term πr²h′."
+      ],
+      "correctIndex": 3,
+      "explanation": "The correct equation is V′=2πrh r′+πr²h′. The value h=5 may then be inserted at the stated instant, but h′ remains unless a persistent fixed-height condition or a zero height rate is given. Substituting a point value too early can delete a real rate contribution. A: They may be substituted after the correct variable-rate relation is established. B: The geometric formula remains valid; the issue is the time dependence of height. C: A point equality alone cannot be differentiated as an interval identity. D: A value known at only one instant is not a constant relation throughout a time interval."
+    },
+    {
+      "id": "calc-ab-4-4-009",
+      "prompt": "A cone keeps the geometric relation r(t)=h(t)/2 as it changes. Its volume is V=(π/3)r²h. Which relation correctly eliminates r and gives the volume time-rate?",
+      "options": [
+        "V=πh³/12 and dV/dt=(πh²/4)(dh/dt).",
+        "V=πh³/6 and dV/dt=(πh²/2)(dh/dt).",
+        "V=πh³/12 and dV/dt=πh²/4.",
+        "V=πh³/12 and dV/dt=π(dh/dt)³/12."
+      ],
+      "correctIndex": 0,
+      "explanation": "The relation r=h/2 holds throughout the process, so r²=h²/4 can be substituted before differentiation. Then V=(π/3)(h²/4)h=πh³/12. Differentiating with respect to time gives V′=(πh²/4)h′. A: Substitute the persistent similarity relation, then apply the chain rule. B: This fails to square the factor 1/2 in r². C: This omits the height time-rate from the chain rule. D: The derivative of a cube is not the cube of its derivative."
+    },
+    {
+      "id": "calc-ab-4-4-010",
+      "prompt": "A student knows dV/dr=4πr² for a sphere and needs dV/dt while the radius changes with time. Which additional step is required?",
+      "options": [
+        "Replace dV/dt directly by 4πr² without any other information.",
+        "Multiply 4πr² by dr/dt so both sides describe change with respect to time.",
+        "Divide 4πr² by dr/dt in every case.",
+        "Square dr/dt because the radius appears squared in 4πr²."
+      ],
+      "correctIndex": 1,
+      "explanation": "For V(r(t)), the chain rule is dV/dt=(dV/dr)(dr/dt)=4πr²(dr/dt). The quantities must be differentiated with respect to the correct common independent variable; a radius derivative alone is not a time derivative. A: That expression has area units rather than volume-per-time units. B: The chain rule connects a volume-per-radius rate to a radius-per-time rate. C: The chain-rule factors multiply, not divide. D: The radius power is already accounted for by dV/dr; its time-rate is an additional first-power factor."
+    },
+    {
+      "id": "calc-ab-4-4-011",
+      "prompt": "Dimensionless sensor variables satisfy y(t)=1/x(t). At an instant x=2 and dx/dt=−3 per second. What is dy/dt?",
+      "options": [
+        "−3/4 per second",
+        "3/2 per second",
+        "3/4 per second",
+        "0 per second"
+      ],
+      "correctIndex": 2,
+      "explanation": "Differentiate the relation with respect to time: y′=−x⁻²x′. At the stated instant this gives −(1/2²)(−3)=3/4 per second. The reciprocal variable is increasing as the positive x value decreases. A: This loses the reciprocal derivative’s negative sign. B: This uses x rather than x² in the denominator. C: The derivative is −x⁻²x′, so −(1/4)(−3)=3/4. D: Knowing a current x value does not make x constant in time."
+    }
+  ]
+}

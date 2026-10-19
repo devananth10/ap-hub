@@ -828,5 +828,26 @@
         "4"
       ]
     ]
+  },
+  "calc-ab-4-3-009": {
+    "caption": "Total electrical energy consumed E(t), measured in kilowatt-hours.",
+    "headers": [
+      "t (h)",
+      "E(t) (kWh)"
+    ],
+    "rows": [
+      [
+        "2",
+        "10"
+      ],
+      [
+        "3",
+        "16"
+      ],
+      [
+        "4",
+        "24"
+      ]
+    ]
   }
 }

@@ -263,3 +263,12 @@ test('inverse rate checks distinguish equal numbers with different dimensions',(
   const bad=structuredClone(batch.questions[9]);bad.correctIndex=bad.options.indexOf('0.4 cm/s');
   assert.throws(()=>verifyCalculusQuestion(bad,qa.questions[9]),/inverse quantity key/);
 });
+test('spatial-density units and related-rate pi factors are verified separately from magnitudes',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-4-3');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-4-3.json','utf8'));
+  verifyCalculusQuestion(batch.questions[4],qa.questions[4]);
+  const wrong=structuredClone(batch.questions[4]);wrong.correctIndex=wrong.options.indexOf('1.2 g/s');
+  assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[4]),/dimensioned derivative key/);
+  assert.equal(numericalOption('48π cm³/s'),48*Math.PI);
+  assert.equal(numericalOption('−48π cm³/s'),-48*Math.PI);
+});

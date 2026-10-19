@@ -1,0 +1,249 @@
+{
+  "topicNumber": "4.4",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "7e907ba87e35f8c3d7d201ea7943ef286dd45c0ccae74b28acfba7172d8eb972",
+  "scopeReview": "CED CHA-3.D.1–2 common-independent-variable chain rule for related rates, including product/quotient rules where needed. Distinguishes interval identities from instantaneous values and fixed dimensions from changing ones. Geometric formulas supplied.",
+  "varietyReview": "Circle relation, sphere rate, varying rectangle relation, signed rectangle rate, fixed sum of squares, two-variable cone, fixed-radius cylinder, early-substitution error, persistent similarity, derivative-variable units and reciprocal sensor variables.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-4-4-001",
+      "independentReasoning": "A small radius increment Δr produces area change 2πrΔr+π(Δr)². Divide by Δt and use Δr/Δt→r′ together with Δr→0; the second-order term vanishes. This independent increment argument yields the selected time-rate relation.",
+      "optionReview": [
+        "The square’s derivative is multiplied by the radius time-rate.",
+        "This is dA/dr and omits the conversion from radius change to time change.",
+        "The derivative of a square is not the square of the derivative.",
+        "This omits the current radius factor."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "dA/dt=2πr(dr/dt)"
+      }
+    },
+    {
+      "questionId": "calc-ab-4-4-002",
+      "independentReasoning": "The geometric derivative of (4/3)πr³ is 4πr². Multiply it by the separately supplied radius time-rate; units cm²·cm/s become cm³/s. Direct expansion of volume at r+Δr gives the same first-order coefficient.",
+      "optionReview": [
+        "This omits the radius time-rate 3.",
+        "The derivative 4πr²(dr/dt) gives 4π·4·3.",
+        "This uses r rather than r² in the derivative.",
+        "The positive radius rate makes the volume rate positive."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          4,
+          3,
+          2
+        ],
+        "expression": [
+          "mul",
+          4,
+          "pi",
+          [
+            "pow",
+            2,
+            2
+          ],
+          3
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-4-4-003",
+      "independentReasoning": "Expand the exact increment (L+ΔL)(W+ΔW)−LW=WΔL+LΔW+ΔLΔW. Divide by Δt. For differentiable sides, the product of increments gives no first-order contribution, leaving the two weighted rates in the selected formula.",
+      "optionReview": [
+        "A product derivative is not the product of derivatives.",
+        "The current opposite side lengths must weight the two contributions.",
+        "Each side contributes a weighted area rate through the product rule.",
+        "This weights each changing side by itself rather than the opposite side."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "dA/dt=W(dL/dt)+L(dW/dt)"
+      }
+    },
+    {
+      "questionId": "calc-ab-4-4-004",
+      "independentReasoning": "Over a small time increment h, the first-order side models are L=5+2h and W=3−h. Their product is 15+h−2h², with area rate 1. The exact first-order coefficient independently checks the sign and both side weights.",
+      "optionReview": [
+        "This treats the decreasing width rate as positive.",
+        "This multiplies the two side rates and omits the current side lengths.",
+        "This uses only the magnitude of the shrinking-width contribution.",
+        "Use 3(2)+5(−1)=1, with a negative width rate."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          5,
+          3,
+          2,
+          1
+        ],
+        "expression": [
+          "add",
+          [
+            "mul",
+            3,
+            2
+          ],
+          [
+            "mul",
+            5,
+            -1
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-4-4-005",
+      "independentReasoning": "At this point the local level-curve rate condition is 6x′+8y′=0. Substituting x′=2 gives 12+8y′=0. The negative sign is also required geometrically: increasing x with a fixed positive hypotenuse must decrease positive y.",
+      "optionReview": [
+        "The common-time derivative gives x x′+y y′=0, so y′=−6·2/8.",
+        "This omits the negative sign required by the fixed sum of squares.",
+        "This reverses the x/y factor.",
+        "A constant sum of squares does not require each changing length to be constant."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          100,
+          6,
+          8,
+          2
+        ],
+        "expression": [
+          "div",
+          [
+            "mul",
+            -6,
+            2
+          ],
+          8
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-4-4-006",
+      "independentReasoning": "For small increments, (r+Δr)²(h+Δh)−r²h has first-order terms 2rhΔr+r²Δh. Divide by Δt and discard only the higher-order increment products after taking the limit. This independently recovers both weighted time-rate terms.",
+      "optionReview": [
+        "This drops the current height and squared-radius weights.",
+        "The product rule handles r²h and the chain rule differentiates r².",
+        "This multiplies rates instead of adding the two product contributions.",
+        "This changes a constant coefficient but does not differentiate either varying dimension."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "dV/dt=(π/3)[2rh(dr/dt)+r²(dh/dt)]."
+      }
+    },
+    {
+      "questionId": "calc-ab-4-4-007",
+      "independentReasoning": "A height increment Δh changes volume by exactly the fixed base area 9π times Δh. Taking rates gives the same linear conversion. The units cm³/s divided by cm² become cm/s, and the sign is positive.",
+      "optionReview": [
+        "This omits the base-area factor 9π.",
+        "This uses radius 3 rather than its square in the base area.",
+        "For fixed r, V′=9πh′, so 18π/(9π)=2.",
+        "Increasing volume in a fixed-radius cylinder requires increasing height."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          3,
+          18
+        ],
+        "expression": [
+          "div",
+          [
+            "mul",
+            18,
+            "pi"
+          ],
+          [
+            "mul",
+            "pi",
+            [
+              "pow",
+              3,
+              2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-4-4-008",
+      "independentReasoning": "For example, take h(t)=5+t near t=0 and r(t)=1. The height is 5 at 0 but h′=1 and V′=π there. Replacing height by 5 first would incorrectly predict a constant volume and zero derivative.",
+      "optionReview": [
+        "They may be substituted after the correct variable-rate relation is established.",
+        "The geometric formula remains valid; the issue is the time dependence of height.",
+        "A point equality alone cannot be differentiated as an interval identity.",
+        "A value known at only one instant is not a constant relation throughout a time interval."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "An instantaneous height value does not imply h′=0; substituting first can erase the term πr²h′."
+      }
+    },
+    {
+      "questionId": "calc-ab-4-4-009",
+      "independentReasoning": "Alternatively retain both variables in the cone-rate equation and substitute r=h/2 and r′=h′/2 afterward. The two terms become (π/3)(h²h′/2+h²h′/4)=πh²h′/4, independently confirming both methods agree.",
+      "optionReview": [
+        "Substitute the persistent similarity relation, then apply the chain rule.",
+        "This fails to square the factor 1/2 in r².",
+        "This omits the height time-rate from the chain rule.",
+        "The derivative of a cube is not the cube of its derivative."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "V=πh³/12 and dV/dt=(πh²/4)(dh/dt)."
+      }
+    },
+    {
+      "questionId": "calc-ab-4-4-010",
+      "independentReasoning": "The units multiply as (volume/length)(length/time)=volume/time, cancelling the intermediate radius unit. Omitting, dividing by or squaring the radius rate fails this dimension check and the exact chain-rule composition identity.",
+      "optionReview": [
+        "That expression has area units rather than volume-per-time units.",
+        "The chain rule connects a volume-per-radius rate to a radius-per-time rate.",
+        "The chain-rule factors multiply, not divide.",
+        "The radius power is already accounted for by dV/dr; its time-rate is an additional first-power factor."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Multiply 4πr² by dr/dt so both sides describe change with respect to time."
+      }
+    },
+    {
+      "questionId": "calc-ab-4-4-011",
+      "independentReasoning": "Use the local model x(t+h)=2−3h+o(h). Its reciprocal is 1/2+(3/4)h+o(h), independently giving y′=3/4. Both sensor variables are dimensionless, so their time derivatives carry inverse-time units.",
+      "optionReview": [
+        "This loses the reciprocal derivative’s negative sign.",
+        "This uses x rather than x² in the denominator.",
+        "The derivative is −x⁻²x′, so −(1/4)(−3)=3/4.",
+        "Knowing a current x value does not make x constant in time."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          2,
+          -3
+        ],
+        "expression": [
+          "div",
+          3,
+          [
+            "pow",
+            2,
+            2
+          ]
+        ]
+      }
+    }
+  ]
+}

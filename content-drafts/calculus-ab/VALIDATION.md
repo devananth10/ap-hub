@@ -1,5 +1,9 @@
 # Calculus AB validation and continuation notes
 
+## Topics 4.3–4.4 checkpoint
+
+Published 22 non-motion applied-rate and introductory related-rate MCQs, bringing the bank to 396 (230 programmatic checks, 166 recorded reasoning reviews). Exact increment expansions corroborate growth, cooling, marginal/average costs and geometric time rates. An original energy table supports a centered power estimate. Spatial density checks combine original-function differences with dimensional exponents, rejecting an equal-number wrong-unit option; exact integer multiples of π are parsed for geometric rates. All 78 unit tests, build, TypeScript, standard smoke, all Calculus routes and frozen Chemistry pass. Both new browser sessions graded all eleven answers correctly, showed four rationales and finished 11/11. No existing question set was regenerated. Next: 4.5; 45 topics/495 questions remain.
+
 ## Topics 4.1–4.2 checkpoint
 
 Published 22 contextual-rate and rectilinear-motion questions, including two original local-line graphs and one velocity table. The bank is 374 questions (218 programmatic models, 156 recorded reasoning reviews). Interpretation reviews distinguish value, instantaneous rate, finite change, variable units, velocity versus speed, stationary versus reversing motion and distance versus displacement. Validation exposed a numerical-only comparison limitation for two choices with equal numbers but different units; a dedicated inverse-quantity model now also checks the inverted length/time dimensions, with a mutation test rejecting the wrong units. No question key needed changing. All 77 unit tests, production build, TypeScript, standard smoke, all Calculus routes and frozen Chemistry pass. Both topic browser sessions verified every answer, four option explanations, graph/table presence and 11/11 final scores. Next: 4.3; 47 topics/517 questions remain.
