@@ -1,0 +1,189 @@
+{
+  "topicNumber": "2.3",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "15fb0a3e7a9cbe442cc61aef98bd7dc00853565cfda2659402f74da3f42ee9ee",
+  "scopeReview": "CED CHA-2.D.1–2: estimate derivatives from tables, graphs and technology. All graphical derivatives use actual local straight segments away from vertices. All nonexact data estimates state the requested method and rounding/trend limits. No unintroduced differentiation rule is required.",
+  "varietyReview": "Seven original tables, three original local-line graphs and one technology quotient span symmetric/asymmetric intervals, signs, zero slope, coordinates versus rates, rounded-data uncertainty, exact finite quotients versus estimates and one-sided endpoint data.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-2-3-001",
+      "independentReasoning": "Read both coordinates from the actual sidecar and recompute the two changes independently. The full input separation is twice the half-width 0.2. Exactly one option equals the specified secant estimate; f(2) supplies a height rather than the requested rate.",
+      "optionReview": [
+        "This divides by a one-sided gap 0.2 instead of the full bracketing width 0.4.",
+        "This is the point value f(2), not the secant slope.",
+        "This is only the output change before normalization.",
+        "The output change 1.20 is divided by the input change 0.4."
+      ],
+      "check": {
+        "type": "table-rate",
+        "start": 1.8,
+        "end": 2.2
+      },
+      "tableSha256": "999b7e2ffdcd134149956c887729d12bbdc1e1ef90a91d1c292bae9a1eb40912"
+    },
+    {
+      "questionId": "calc-ab-2-3-002",
+      "independentReasoning": "Subtract endpoint positions in the same order as endpoint times. Units reduce to meters/second and the denominator is 0.4. The target position 10.49 is not used as a slope. Actual-table recomputation checks the unique numerical estimate.",
+      "optionReview": [
+        "The displacement 1.80 meters is divided by 0.4 second.",
+        "This omits division by elapsed time.",
+        "This uses only the half-width 0.2 second in the denominator.",
+        "This assigns rate units to the sampled position at the target time."
+      ],
+      "check": {
+        "type": "table-rate",
+        "start": 1.9,
+        "end": 2.3
+      },
+      "tableSha256": "d7713d41fbb0b88773830e272ac763937f947ef54f51916981cb533cfa47657c"
+    },
+    {
+      "questionId": "calc-ab-2-3-003",
+      "independentReasoning": "The table already contains normalized rates, so no extra division by h should be made. The nearest opposite-side values agree around 8, while their sum 16 is not a limiting rate. The trend assumption is explicit; finite tabular observations are not a proof of convergence.",
+      "optionReview": [
+        "This is the fixed base input, not the limiting quotient output.",
+        "The closest negative and positive increments give rates 8.002 and 7.998, approaching 8.",
+        "The increment tends to zero, but the quotient values do not.",
+        "The two sides support a common rate, rather than a sum of the rates."
+      ],
+      "check": {
+        "type": "table-estimate",
+        "inputX": 0,
+        "tolerance": 0.01
+      },
+      "tableSha256": "b16b4221139bca91e308627055ddb46d2c6832d5cc82a195f0a62bbcfeaea68e"
+    },
+    {
+      "questionId": "calc-ab-2-3-004",
+      "independentReasoning": "The target lies strictly between the two local vertices and is not a corner. Independently verify the line equation y=1−2x and its constant rate −2. The plot’s actual segment coordinates, not its apparent screen angle, determine the checked slope.",
+      "optionReview": [
+        "This is the graph height at input 0, not its slope.",
+        "This loses the negative sign of the descending segment.",
+        "The segment’s rise is −4 over a run of 2.",
+        "This reverses the rise/run ratio."
+      ],
+      "check": {
+        "type": "figure-slope",
+        "inputX": 0,
+        "figureSha256": "cfd8bbfd784477058a2a7ea92d0b0bf379949aa8f8ff9e19e9c9205c992a56ce"
+      },
+      "figureSha256": "cfd8bbfd784477058a2a7ea92d0b0bf379949aa8f8ff9e19e9c9205c992a56ce"
+    },
+    {
+      "questionId": "calc-ab-2-3-005",
+      "independentReasoning": "The target 1 is inside the straight horizontal segment from (0,2) to (2,2), not at either endpoint. Its rise is 0 over run 2. This confirms derivative zero without inferring it from the graph height or from unrelated corners.",
+      "optionReview": [
+        "The height is 2, but height and derivative are different quantities.",
+        "The target input is not the graph’s local slope.",
+        "Corners away from the target do not obstruct a derivative inside the horizontal segment.",
+        "The graph is horizontal near 1, so its output change over every sufficiently small input change is zero."
+      ],
+      "check": {
+        "type": "figure-slope",
+        "inputX": 1,
+        "figureSha256": "38431a619d7a0bf1ec28fc4d0fbae24bba8de60c8dfbd0136559b7ac6900d2f1"
+      },
+      "figureSha256": "38431a619d7a0bf1ec28fc4d0fbae24bba8de60c8dfbd0136559b7ac6900d2f1"
+    },
+    {
+      "questionId": "calc-ab-2-3-006",
+      "independentReasoning": "Independently rewrite the numerator as ln(1.01/0.99)=ln(101/99). Evaluating that ratio logarithm and dividing by 0.02 gives the same rounded result. The tolerance reflects rounding to three decimals, not an assertion of exact derivative equality.",
+      "optionReview": [
+        "The centered quotient is approximately 1.0000333, which rounds to 1.000.",
+        "This is the height ln 1, not the normalized nearby change.",
+        "This uses the half-width 0.01 instead of the full input gap 0.02.",
+        "This confuses the increment size with the quotient."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 1,
+        "step": 0.01,
+        "expression": [
+          "ln",
+          "x"
+        ],
+        "tolerance": 0.0005
+      }
+    },
+    {
+      "questionId": "calc-ab-2-3-007",
+      "independentReasoning": "Check which two coordinates belong to each numerator and require the denominator to use exactly their input difference. The symmetric points are 2.9 and 3.1. Recomputing all expressions gives 4,4.1,3.9 and 8, respectively by their formulas, distinguishing the specified method from other estimates.",
+      "optionReview": [
+        "This is the forward one-sided secant.",
+        "This uses both bracketing points and the complete input separation.",
+        "This is the backward one-sided secant.",
+        "This combines a two-sided output change with only a one-sided input change."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "(10.41−9.61)/(3.1−2.9)"
+      },
+      "tableSha256": "2a527d5e950020295935c908e135ca1790976d33bc6519b7a87db7970c69bd8b"
+    },
+    {
+      "questionId": "calc-ab-2-3-008",
+      "independentReasoning": "Evaluate both explicit smooth countermodels at all three listed inputs and round to three decimals. They produce identical displayed values while their exact slopes differ. This is an uncertainty in finite rounded information, not a conclusion that a derivative fails to exist.",
+      "optionReview": [
+        "Displayed equality after rounding is not equality of the actual nearby function values.",
+        "A point value is not a rate.",
+        "Both f(x)=2 and f(x)=2+10(x−1) fit all three rounded entries but have different slopes.",
+        "Repeated or rounded outputs do not prevent a smooth function from having a derivative."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The exact derivative is not determined; rounding can hide small changes and a nonzero slope."
+      },
+      "tableSha256": "d9a263447f5e594ac5a4cd4cd95eabcfc28cdbe1ae6ad2993dbf5420644ab522"
+    },
+    {
+      "questionId": "calc-ab-2-3-009",
+      "independentReasoning": "The actual plotted coordinates give a rise of 4 and run of 2. The line is y=2x+3 near 1, independently confirming a rate of 2 and a distinct point height 5. The target is not a vertex or endpoint, so no unprovided corner derivative is assumed.",
+      "optionReview": [
+        "This is the line’s height at x=1 rather than its slope.",
+        "This is the vertical change before dividing by horizontal change 2.",
+        "This interchanges the vertical and horizontal changes.",
+        "The local line rises from 3 to 7 while the input increases from 0 to 2."
+      ],
+      "check": {
+        "type": "figure-slope",
+        "inputX": 1,
+        "figureSha256": "8e9134fbf6340dce07fc665bd2a983afa06ddb2a6a28a74514b3828d5834d2be"
+      },
+      "figureSha256": "8e9134fbf6340dce07fc665bd2a983afa06ddb2a6a28a74514b3828d5834d2be"
+    },
+    {
+      "questionId": "calc-ab-2-3-010",
+      "independentReasoning": "Compute the actual endpoint distance as 0.1+0.2=0.3, not twice either one-sided gap. The two alternative one-sided slopes are 0.03/0.1=0.3 and 0.12/0.2=0.6. All choices are distinct, and the question specifies the bracketing method explicitly.",
+      "optionReview": [
+        "The output change 0.15 is divided by the actual full input gap 0.3.",
+        "This is the forward secant from 0 to 0.1, not the requested bracketing pair.",
+        "This is the backward secant from −0.2 to 0, not the requested pair.",
+        "This is the output change before dividing by the input change."
+      ],
+      "check": {
+        "type": "table-rate",
+        "start": -0.2,
+        "end": 0.1
+      },
+      "tableSha256": "19c740f8c9d90d8d35ae3b9bf6ffafd7ace8ac697cf71bdcde3363fff1096e4e"
+    },
+    {
+      "questionId": "calc-ab-2-3-011",
+      "independentReasoning": "Use the first two actual table rows and their displayed units. The output falls by 0.3 degree in 0.1 minute, giving −3°C/min. Independently the next wider interval gives −0.5/0.2=−2.5, confirming that the distractor corresponds to a different specified method.",
+      "optionReview": [
+        "This uses the longer interval from 0 to 0.2, not the nearest specified secant.",
+        "The temperature change −0.3°C is divided by 0.1 minute.",
+        "This is the initial temperature with incorrect rate units.",
+        "This omits division by the time change."
+      ],
+      "check": {
+        "type": "table-rate",
+        "start": 0,
+        "end": 0.1
+      },
+      "tableSha256": "fa4736aedf2bfca87436e6dd47907872041ca72b63eeb7d7c6f1ef07d9e5b46d"
+    }
+  ]
+}

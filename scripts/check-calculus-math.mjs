@@ -116,7 +116,13 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='derivative-function') {
+  if (review.check.type==='finite-difference-estimate') {
+    const check=review.check,h=check.step;assert.ok(h>0&&Number.isFinite(check.inputX));
+    const rate=(evaluateExpression(check.expression,check.inputX+h)-evaluateExpression(check.expression,check.inputX-h))/(2*h);
+    const matches=question.options.map(option=>Math.abs(numericalOption(option)-rate)<check.tolerance);
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique finite-difference estimate');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' finite-difference key');
+  } else if (review.check.type==='derivative-function') {
     const check=review.check,h=check.step||0.001;
     assert.ok(new Set(check.samplePoints).size>=3&&check.samplePoints.every(Number.isFinite),'Need distinct derivative verification inputs');
     const matches=question.options.map(option=>{
@@ -229,7 +235,15 @@ export function verifyCalculusQuestion(question, review) {
     assert.equal(createHash('sha256').update(JSON.stringify(figure)).digest('hex'),review.check.figureSha256,'Graph changed after review: '+question.id);
     const actual=question.options.map(option=>option.startsWith('Does not exist')?'DNE':numericalOption(option));
     let matches;
-    if(review.check.type==='figure-limit-location') matches=actual.map(target=>typeof target==='number'&&Number.isFinite(target)&&typeof figureLimit(figure,target)==='number');
+    if(review.check.type==='figure-slope') {
+      const slopes=[];
+      for(const curve of figure.curves)for(let i=1;i<curve.points.length;i++) {
+        const [x1,y1]=curve.points[i-1],[x2,y2]=curve.points[i];
+        if(x1<review.check.inputX&&review.check.inputX<x2)slopes.push((y2-y1)/(x2-x1));
+      }
+      assert.equal(slopes.length,1,question.id+' needs one local straight segment, not a vertex');
+      matches=actual.map(value=>Math.abs(value-slopes[0])<1e-10);
+    } else if(review.check.type==='figure-limit-location') matches=actual.map(target=>typeof target==='number'&&Number.isFinite(target)&&typeof figureLimit(figure,target)==='number');
     else {
       const target=review.check.inputX+(review.check.inputShift||0);
       const limit=figureLimit(figure,target,review.check.side);

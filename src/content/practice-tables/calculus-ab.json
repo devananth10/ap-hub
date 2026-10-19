@@ -499,5 +499,164 @@
         "40"
       ]
     ]
+  },
+  "calc-ab-2-3-001": {
+    "caption": "Samples of a differentiable function near x=2.",
+    "headers": [
+      "x",
+      "f(x)"
+    ],
+    "rows": [
+      [
+        "1.8",
+        "3.48"
+      ],
+      [
+        "2",
+        "4"
+      ],
+      [
+        "2.2",
+        "4.68"
+      ]
+    ]
+  },
+  "calc-ab-2-3-002": {
+    "caption": "Position p in meters; time t in seconds.",
+    "headers": [
+      "t",
+      "p(t)"
+    ],
+    "rows": [
+      [
+        "1.9",
+        "9.62"
+      ],
+      [
+        "2.1",
+        "10.49"
+      ],
+      [
+        "2.3",
+        "11.42"
+      ]
+    ]
+  },
+  "calc-ab-2-3-003": {
+    "caption": "Values of Q(h)=[f(1+h)−f(1)]/h for nonzero h.",
+    "headers": [
+      "h",
+      "Q(h)"
+    ],
+    "rows": [
+      [
+        "−0.1",
+        "8.2"
+      ],
+      [
+        "−0.01",
+        "8.02"
+      ],
+      [
+        "−0.001",
+        "8.002"
+      ],
+      [
+        "0.001",
+        "7.998"
+      ],
+      [
+        "0.01",
+        "7.98"
+      ],
+      [
+        "0.1",
+        "7.8"
+      ]
+    ]
+  },
+  "calc-ab-2-3-007": {
+    "caption": "Samples around x=3; use the explicitly requested centered secant.",
+    "headers": [
+      "x",
+      "f(x)"
+    ],
+    "rows": [
+      [
+        "2.9",
+        "9.61"
+      ],
+      [
+        "3",
+        "10"
+      ],
+      [
+        "3.1",
+        "10.41"
+      ]
+    ]
+  },
+  "calc-ab-2-3-008": {
+    "caption": "Values rounded to three decimal places.",
+    "headers": [
+      "x",
+      "f(x), rounded"
+    ],
+    "rows": [
+      [
+        "0.99999",
+        "2.000"
+      ],
+      [
+        "1",
+        "2.000"
+      ],
+      [
+        "1.00001",
+        "2.000"
+      ]
+    ]
+  },
+  "calc-ab-2-3-010": {
+    "caption": "Samples with unequal distances from the target input 0.",
+    "headers": [
+      "x",
+      "f(x)"
+    ],
+    "rows": [
+      [
+        "−0.2",
+        "1.88"
+      ],
+      [
+        "0",
+        "2"
+      ],
+      [
+        "0.1",
+        "2.03"
+      ]
+    ]
+  },
+  "calc-ab-2-3-011": {
+    "caption": "Temperature T in °C, time t in minutes after a sensor starts.",
+    "headers": [
+      "t",
+      "T(t)"
+    ],
+    "rows": [
+      [
+        "0",
+        "15"
+      ],
+      [
+        "0.1",
+        "14.7"
+      ],
+      [
+        "0.2",
+        "14.5"
+      ]
+    ]
   }
 }

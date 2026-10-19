@@ -174,3 +174,11 @@ test('derivative functions are corroborated from original function differences a
   assert.throws(()=>verifyCalculusQuestion(batch.questions[6],review),/domain/);
   review.check.samplePoints=[1,1,1];assert.throws(()=>verifyCalculusQuestion(batch.questions[6],review),/distinct derivative/);
 });
+test('derivative estimates use actual graph coordinates and the stated finite step',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-2-3');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-2-3.json','utf8'));
+  for(const i of [3,4,5,8])verifyCalculusQuestion(batch.questions[i],qa.questions[i]);
+  assert.throws(()=>verifyCalculusQuestion({...batch.questions[3],correctIndex:(batch.questions[3].correctIndex+1)%4},qa.questions[3]),/graph key/);
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[3],{...qa.questions[3],check:{...qa.questions[3].check,inputX:-1}}),/local straight segment/);
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[5],{...qa.questions[5],check:{...qa.questions[5].check,step:0.5}}),/unique finite-difference/);
+});

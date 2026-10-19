@@ -1,9 +1,9 @@
 {
   "officialTopics": 81,
   "targetQuestions": 891,
-  "completedTopics": 18,
-  "questions": 198,
-  "numeric": 111,
+  "completedTopics": 19,
+  "questions": 209,
+  "numeric": 120,
   "repeatedPromptPatterns": [],
   "topics": [
     {
@@ -131,10 +131,16 @@
       "count": 11,
       "status": "validated",
       "file": "src/content/practice/calculus-ab-2-2.json"
+    },
+    {
+      "topic": "2.3",
+      "topicId": "topic-2-3",
+      "count": 11,
+      "status": "validated",
+      "file": "src/content/practice/calculus-ab-2-3.json"
     }
   ],
   "missing": [
-    "2.3",
     "2.4",
     "2.5",
     "2.6",
@@ -199,9 +205,9 @@
     "8.12"
   ],
   "policy": "automatic-topic-publication-after-validation-2026-10-19",
-  "publishedQuestions": 198,
-  "publishedTopics": 18,
-  "nextTopic": "2.3",
+  "publishedQuestions": 209,
+  "publishedTopics": 19,
+  "nextTopic": "2.4",
   "withheldQuestionIds": [],
   "unresolvedConcerns": [],
   "humanReviewPerformed": false,
@@ -525,10 +531,10 @@
       "practiceRoute": "/practice?course=calculus-ab&unit=2&topic=topic-2-3",
       "file": "src/content/practice/calculus-ab-2-3.json",
       "mappingOrigin": "new canonical number-based ID",
-      "draftStatus": "not-started",
-      "validationStatus": "not-started",
-      "publicationStatus": "unpublished",
-      "questionCount": 0
+      "draftStatus": "complete",
+      "validationStatus": "passed",
+      "publicationStatus": "published",
+      "questionCount": 11
     },
     {
       "courseId": "calculus-ab",

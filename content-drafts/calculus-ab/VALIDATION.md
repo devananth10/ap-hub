@@ -1,5 +1,9 @@
 # Calculus AB validation and continuation notes
 
+## Continuation from 0c35397: Topic 2.3
+
+The clean 198-question baseline and remote SHA were verified; all 66 baseline tests, build/typecheck and preview scopes passed. Topic 2.3 adds eleven original questions with seven complete tables and three original piecewise-linear graphs. All graph targets lie strictly inside a local segment rather than at a vertex. Nine programmatic checks recompute actual tabular rates, plotted-coordinate slopes or the stated calculator quotient; two conceptual reviews distinguish centered methods and rounded-data uncertainty. Exact local-line slopes and finite secant computations are distinguished from estimates of an unknown smooth derivative. Tests reject wrong keys, sampling a graph vertex and changing the specified calculator step. All 209 saved questions pass (120 programmatic checks, 89 recorded reasoning reviews), all 67 unit tests pass, build/typecheck and standard/all-81-topic preview smoke pass. Browser: all eleven correct choices, all four explanations, graph/table dependencies, navigation and final 11/11 score passed. Existing 198 question objects and Chemistry/resources were not edited. Next: 2.4. This remains a partial course bank.
+
 The live progress/count ledger is PROGRESS.json / PROGRESS.md. The official inventory is research/official-topics.json (81 topics, 891-question target). Chemistry content is not part of this generation task and remains frozen.
 
 Structural coverage is recorded separately in VALIDATION.json. MATH_VALIDATION.json lists the questions checked by programmatic models versus recorded conceptual reasoning, with explicit limitations. Both are partial-bank records until every topic is complete; neither is a claim of independent human review.

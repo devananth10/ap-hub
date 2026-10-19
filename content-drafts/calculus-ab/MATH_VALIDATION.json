@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 198,
+  "questionsChecked": 209,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -556,6 +556,51 @@
       "questionId": "calc-ab-2-2-010",
       "method": "numeric",
       "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-2-3-001",
+      "method": "table-rate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-3-002",
+      "method": "table-rate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-3-003",
+      "method": "table-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-3-004",
+      "method": "figure-slope",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-3-005",
+      "method": "figure-slope",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-3-006",
+      "method": "finite-difference-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-3-009",
+      "method": "figure-slope",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-3-010",
+      "method": "table-rate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-3-011",
+      "method": "table-rate",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -645,7 +690,9 @@
     "calc-ab-2-2-005",
     "calc-ab-2-2-008",
     "calc-ab-2-2-009",
-    "calc-ab-2-2-011"
+    "calc-ab-2-2-011",
+    "calc-ab-2-3-007",
+    "calc-ab-2-3-008"
   ],
   "humanReviewPerformed": false,
   "limitations": [

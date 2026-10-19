@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 2,
+  "topicId": "topic-2-3",
+  "questions": [
+    {
+      "id": "calc-ab-2-3-001",
+      "prompt": "Use the table below to estimate f′(2) with the centered secant through x=1.8 and x=2.2.",
+      "options": [
+        "6",
+        "4",
+        "1.2",
+        "3"
+      ],
+      "correctIndex": 3,
+      "explanation": "The specified centered estimate is [f(2.2)−f(1.8)]/(2.2−1.8)=(4.68−3.48)/0.4=1.20/0.4=3. This approximates the local rate; finite samples alone do not prove the derivative is exactly 3. A: This divides by a one-sided gap 0.2 instead of the full bracketing width 0.4. B: This is the point value f(2), not the secant slope. C: This is only the output change before normalization. D: The output change 1.20 is divided by the input change 0.4."
+    },
+    {
+      "id": "calc-ab-2-3-002",
+      "prompt": "For the smooth position function sampled in the table below, estimate velocity at t=2.1 using the bracketing secant from t=1.9 to t=2.3.",
+      "options": [
+        "4.5 meters per second",
+        "1.8 meters per second",
+        "9 meters per second",
+        "10.49 meters per second"
+      ],
+      "correctIndex": 0,
+      "explanation": "The bracketing rate is [p(2.3)−p(1.9)]/(2.3−1.9)=(11.42−9.62)/0.4=4.5 meters per second. Using nearby values on both sides provides a local numerical estimate, not an exact derivative from a finite data set. A: The displacement 1.80 meters is divided by 0.4 second. B: This omits division by elapsed time. C: This uses only the half-width 0.2 second in the denominator. D: This assigns rate units to the sampled position at the target time."
+    },
+    {
+      "id": "calc-ab-2-3-003",
+      "prompt": "The table below lists shrinking-increment difference quotients Q(h). Assuming their visible trend continues to a common limit, what is the best estimate for f′(1)?",
+      "options": [
+        "1",
+        "8",
+        "0",
+        "16"
+      ],
+      "correctIndex": 1,
+      "explanation": "Derivative notation refers to the common limit of Q(h) as h→0. The negative-increment values decrease toward 8 while the positive-increment values increase toward 8. The nearest pair averages to (8.002+7.998)/2=8, the supported estimate under the stated trend assumption. A: This is the fixed base input, not the limiting quotient output. B: The closest negative and positive increments give rates 8.002 and 7.998, approaching 8. C: The increment tends to zero, but the quotient values do not. D: The two sides support a common rate, rather than a sum of the rates."
+    },
+    {
+      "id": "calc-ab-2-3-004",
+      "prompt": "The graph below is straight throughout a neighborhood of x=0. What value of f′(0) is supported by the local segment?",
+      "options": [
+        "1",
+        "2",
+        "−2",
+        "−1/2"
+      ],
+      "correctIndex": 2,
+      "explanation": "Use the local points (−1,3) and (1,−1). Their slope is (−1−3)/(1−(−1))=−4/2=−2. Because the graph is a straight segment on a whole neighborhood of 0, its derivative there equals that local slope. A: This is the graph height at input 0, not its slope. B: This loses the negative sign of the descending segment. C: The segment’s rise is −4 over a run of 2. D: This reverses the rise/run ratio."
+    },
+    {
+      "id": "calc-ab-2-3-005",
+      "prompt": "Use the graph below to determine f′(1) from its local straight segment.",
+      "options": [
+        "2",
+        "1",
+        "Does not exist because the graph has corners elsewhere.",
+        "0"
+      ],
+      "correctIndex": 3,
+      "explanation": "For all inputs sufficiently close to 1, the graph has the constant value 2. Every local difference quotient therefore has numerator zero and denominator nonzero, giving derivative 0. The other corners are not at the requested point. A: The height is 2, but height and derivative are different quantities. B: The target input is not the graph’s local slope. C: Corners away from the target do not obstruct a derivative inside the horizontal segment. D: The graph is horizontal near 1, so its output change over every sufficiently small input change is zero."
+    },
+    {
+      "id": "calc-ab-2-3-006",
+      "prompt": "A numerical calculator estimates the derivative of f(x)=ln x at x=1 by [f(1.01)−f(0.99)]/0.02. What is this estimate rounded to three decimal places?",
+      "options": [
+        "1.000",
+        "0.000",
+        "2.000",
+        "0.010"
+      ],
+      "correctIndex": 0,
+      "explanation": "Compute [ln(1.01)−ln(0.99)]/0.02≈1.000033335. Rounding only at the end gives 1.000. Both sampled inputs are positive, so the real logarithms are defined. This question uses a numerical difference quotient, not a differentiation rule for logarithms. A: The centered quotient is approximately 1.0000333, which rounds to 1.000. B: This is the height ln 1, not the normalized nearby change. C: This uses the half-width 0.01 instead of the full input gap 0.02. D: This confuses the increment size with the quotient."
+    },
+    {
+      "id": "calc-ab-2-3-007",
+      "prompt": "For the table below, which expression uses the centered secant about x=3, rather than just a forward or backward secant, to estimate f′(3)?",
+      "options": [
+        "(10.41−10)/(3.1−3)",
+        "(10.41−9.61)/(3.1−2.9)",
+        "(10−9.61)/(3−2.9)",
+        "(10.41−9.61)/(3.1−3)"
+      ],
+      "correctIndex": 1,
+      "explanation": "The centered pair is x=3−0.1 and x=3+0.1. Its rate uses [f(3.1)−f(2.9)]/(3.1−2.9)=0.80/0.20=4. The other expressions give a forward estimate 4.1, a backward estimate 3.9, or an incorrectly normalized value 8. A: This is the forward one-sided secant. B: This uses both bracketing points and the complete input separation. C: This is the backward one-sided secant. D: This combines a two-sided output change with only a one-sided input change."
+    },
+    {
+      "id": "calc-ab-2-3-008",
+      "prompt": "The table below gives f values rounded to three decimal places. A student claims it proves f′(1)=0 exactly. Which assessment is justified?",
+      "options": [
+        "The claim is proved because all displayed outputs are equal.",
+        "The derivative must be 2 because the displayed values are 2.000.",
+        "The exact derivative is not determined; rounding can hide small changes and a nonzero slope.",
+        "The derivative cannot exist whenever a table repeats an output."
+      ],
+      "correctIndex": 2,
+      "explanation": "A constant function f(x)=2 yields the displayed table and derivative 0. The line f(x)=2+10(x−1) gives actual neighboring outputs 1.9999 and 2.0001, which also round to 2.000, but its slope is 10. Thus the rounded data do not determine the exact derivative. A: Displayed equality after rounding is not equality of the actual nearby function values. B: A point value is not a rate. C: Both f(x)=2 and f(x)=2+10(x−1) fit all three rounded entries but have different slopes. D: Repeated or rounded outputs do not prevent a smooth function from having a derivative."
+    },
+    {
+      "id": "calc-ab-2-3-009",
+      "prompt": "The graph below is linear near x=1. Estimate f′(1) using the numbered axis scales.",
+      "options": [
+        "5",
+        "4",
+        "1/2",
+        "2"
+      ],
+      "correctIndex": 3,
+      "explanation": "Read the local points (0,3) and (2,7). The slope is (7−3)/(2−0)=2. The derivative at the interior input 1 equals this local line slope. Numerical axis labels matter even when the horizontal and vertical screen scales differ. A: This is the line’s height at x=1 rather than its slope. B: This is the vertical change before dividing by horizontal change 2. C: This interchanges the vertical and horizontal changes. D: The local line rises from 3 to 7 while the input increases from 0 to 2."
+    },
+    {
+      "id": "calc-ab-2-3-010",
+      "prompt": "Use the nearest listed input on each side of 0 in the table below to form a bracketing-secant estimate of f′(0). The input gaps are unequal. What is that estimate?",
+      "options": [
+        "0.5",
+        "0.3",
+        "0.6",
+        "0.15"
+      ],
+      "correctIndex": 0,
+      "explanation": "The requested endpoints are −0.2 and 0.1, giving [f(0.1)−f(−0.2)]/(0.1−(−0.2))=(2.03−1.88)/0.3=0.5. Do not assume a symmetric half-width. Because the bracketing points are unequally spaced, this remains an approximation to the derivative at 0. A: The output change 0.15 is divided by the actual full input gap 0.3. B: This is the forward secant from 0 to 0.1, not the requested bracketing pair. C: This is the backward secant from −0.2 to 0, not the requested pair. D: This is the output change before dividing by the input change."
+    },
+    {
+      "id": "calc-ab-2-3-011",
+      "prompt": "The table below samples a smooth temperature function for t≥0. Estimate its right-hand instantaneous rate at the starting time using only the nearest forward secant, from t=0 to t=0.1.",
+      "options": [
+        "−2.5 °C per minute",
+        "−3 °C per minute",
+        "15 °C per minute",
+        "−0.3 °C per minute"
+      ],
+      "correctIndex": 1,
+      "explanation": "The specified one-sided estimate is [T(0.1)−T(0)]/0.1=(14.7−15)/0.1=−3°C per minute. The negative sign indicates cooling. Only the right time side is available, and the finite secant gives an estimate, not a proof of an exact instantaneous value. A: This uses the longer interval from 0 to 0.2, not the nearest specified secant. B: The temperature change −0.3°C is divided by 0.1 minute. C: This is the initial temperature with incorrect rate units. D: This omits division by the time change."
+    }
+  ]
+}
