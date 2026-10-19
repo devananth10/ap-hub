@@ -196,3 +196,21 @@ test('linear derivative tables read the requested row and reject reversed coeffi
   verifyCalculusQuestion(batch.questions[7],qa.questions[7]);
   assert.throws(()=>verifyCalculusQuestion(batch.questions[7],{...qa.questions[7],check:{...qa.questions[7].check,weights:[1,3]}}),/derivative combination key/);
 });
+test('product and quotient table checks distinguish values, slopes and operation',()=>{
+  for(const [number,index] of [['2-8',4],['2-9',5]]){
+    const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-'+number);
+    const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-'+number+'.json','utf8'));
+    verifyCalculusQuestion(batch.questions[index],qa.questions[index]);
+    const bad=structuredClone(qa.questions[index]);bad.check.operation=bad.check.operation==='product'?'quotient':'product';
+    assert.throws(()=>verifyCalculusQuestion(batch.questions[index],bad),/tabular derivative rule|derivative rule key/);
+  }
+});
+test('exact pi fractions and reciprocal-trig formula checks reject sign errors',()=>{
+  assert.equal(numericalOption('−1/π'),-1/Math.PI);assert.equal(numericalOption('1/π'),1/Math.PI);
+  assert.throws(()=>numericalOption('1/(π+1)'),/Unsupported numerical/);
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-2-10');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-2-10.json','utf8'));
+  verifyCalculusQuestion(batch.questions[1],qa.questions[1]);
+  const bad=structuredClone(batch.questions[1]);bad.correctIndex=bad.options.indexOf('csc²x');
+  assert.throws(()=>verifyCalculusQuestion(bad,qa.questions[1]),/derivative function key/);
+});

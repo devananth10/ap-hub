@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 2,
+  "topicId": "topic-2-9",
+  "questions": [
+    {
+      "id": "calc-ab-2-9-001",
+      "prompt": "Suppose u and v are differentiable near x and v(x)≠0. Which expression equals the derivative of u(x)/v(x)?",
+      "options": [
+        "u′(x)/v′(x)",
+        "[u′(x)v(x)−u(x)v′(x)]/[v(x)]²",
+        "[u′(x)v(x)+u(x)v′(x)]/[v(x)]²",
+        "[u′(x)v(x)−u(x)v′(x)]/v(x)"
+      ],
+      "correctIndex": 1,
+      "explanation": "The quotient rule is (u/v)′=(u′v−uv′)/v² wherever the original denominator is nonzero. The order of subtraction matters, and squaring the denominator accounts for both denominators in the original difference quotient. A: Derivatives of quotients are not generally quotients of derivatives. B: The numerator uses denominator times numerator derivative minus numerator times denominator derivative, over the squared denominator. C: This uses addition instead of the required subtraction. D: The denominator must be squared."
+    },
+    {
+      "id": "calc-ab-2-9-002",
+      "prompt": "For x≠−2, f(x)=(x²+1)/(x+2). Which expression is f′(x)?",
+      "options": [
+        "2x",
+        "(x²+4x−1)/(x+2)",
+        "(x²+4x−1)/(x+2)²",
+        "(1−4x−x²)/(x+2)²"
+      ],
+      "correctIndex": 2,
+      "explanation": "Differentiate numerator and denominator separately, then apply the quotient rule: f′=[2x(x+2)−(x²+1)]/(x+2)². Simplifying the numerator gives x²+4x−1. The original excluded input remains −2. A: This divides the separate derivatives and ignores the quotient rule. B: This does not square the denominator. C: Expanding 2x(x+2)−(x²+1) gives x²+4x−1. D: This reverses the numerator’s required subtraction order."
+    },
+    {
+      "id": "calc-ab-2-9-003",
+      "prompt": "At x=1, differentiable functions satisfy u(1)=4, u′(1)=−2, v(1)=3 and v′(1)=5. For R(x)=u(x)/v(x), what is R′(1)?",
+      "options": [
+        "−2/5",
+        "14/9",
+        "−26/3",
+        "−26/9"
+      ],
+      "correctIndex": 3,
+      "explanation": "Since v(1)=3≠0, the quotient rule applies. It gives R′(1)=[(−2)3−4(5)]/3²=(−6−20)/9=−26/9. The denominator is the square of the function value, not the denominator’s derivative. A: This divides the two derivative values. B: This adds 4(5) instead of subtracting it. C: This uses v rather than v² in the denominator. D: The quotient numerator is (−2)3−4(5)=−26, divided by 3²."
+    },
+    {
+      "id": "calc-ab-2-9-004",
+      "prompt": "Angles are in radians. Let f(x)=(sin x)/x for x≠0. What is f′(π)?",
+      "options": [
+        "−1/π",
+        "1/π",
+        "−1",
+        "0"
+      ],
+      "correctIndex": 0,
+      "explanation": "The quotient rule gives f′(x)=[x cos x−sin x]/x². At π, cos π=−1 and sin π=0, so f′(π)=−π/π²=−1/π. The input π is in the original domain. A: The quotient rule gives [π cos π−sin π]/π²=−π/π². B: This loses the negative special-angle cosine value. C: This omits the factor π remaining in the denominator. D: A zero function value sin π/π does not imply a zero derivative."
+    },
+    {
+      "id": "calc-ab-2-9-005",
+      "prompt": "For x>0, let L(x)=(ln x)/x. Which expression is L′(x)?",
+      "options": [
+        "1/x²",
+        "(1−ln x)/x²",
+        "(1+ln x)/x²",
+        "(ln x−1)/x²"
+      ],
+      "correctIndex": 1,
+      "explanation": "Apply the quotient rule on x>0: L′=[(1/x)x−(ln x)·1]/x²=(1−ln x)/x². The positive domain comes from the original logarithm and also keeps the denominator nonzero. A: This omits the contribution from differentiating the denominator. B: The numerator becomes x(1/x)−ln x=1−ln x. C: This replaces the required subtraction by addition. D: This reverses the subtraction order."
+    },
+    {
+      "id": "calc-ab-2-9-006",
+      "prompt": "Use the table below. If Q(x)=u(x)/v(x), what is Q′(0)?",
+      "options": [
+        "−1/3",
+        "1/8",
+        "−5/8",
+        "−5/2"
+      ],
+      "correctIndex": 2,
+      "explanation": "The requested row has u=2, u′=−1, v=4 and v′=3. As v≠0, Q′(0)=[u′v−uv′]/v²=[−4−6]/16=−5/8. Read values and derivatives from their correct columns. A: This divides the derivative values −1 and 3. B: This uses addition in the quotient numerator, giving (−4+6)/16. C: The x=0 row gives [(−1)4−2(3)]/4²=−10/16. D: This omits the denominator square, giving −10/4."
+    },
+    {
+      "id": "calc-ab-2-9-007",
+      "prompt": "Suppose u(3)=v(3)=2 and u′(3)=v′(3)=5. What is the derivative of u(x)/v(x) at x=3?",
+      "options": [
+        "1",
+        "25",
+        "5",
+        "0"
+      ],
+      "correctIndex": 3,
+      "explanation": "At the stated input the quotient rule gives [5·2−2·5]/2²=0. Equal values and equal slopes make the two first-order quotient contributions cancel. The ratio value there is 1, a different quantity. A: This is the quotient’s value at 3, not its derivative. B: This multiplies the derivative values. C: This retains a factor’s derivative without applying the quotient rule. D: The quotient numerator is 5·2−2·5=0 and the denominator is nonzero."
+    },
+    {
+      "id": "calc-ab-2-9-008",
+      "prompt": "For f(x)=eˣ/(x²+1), what is f′(0)?",
+      "options": [
+        "1",
+        "0",
+        "−1",
+        "2"
+      ],
+      "correctIndex": 0,
+      "explanation": "The denominator x²+1 is always positive. The quotient rule gives f′=[eˣ(x²+1)−eˣ(2x)]/(x²+1)². At 0, the terms are 1 and 0, so the slope is 1. A: The quotient numerator is e⁰(1)−e⁰(0)=1 and the squared denominator is 1. B: A zero denominator derivative does not make the whole quotient derivative zero. C: This reverses the quotient numerator’s subtraction order. D: This incorrectly adds a second unit contribution from the quadratic derivative at 0."
+    },
+    {
+      "id": "calc-ab-2-9-009",
+      "prompt": "Let f(x)=(x+3)/(x²−9) on its original domain. Which statement about its derivative is correct?",
+      "options": [
+        "f′(x)=−1/(x−3)² for every x≠3, including x=−3.",
+        "f′(x)=−1/(x−3)² for x≠−3 and x≠3.",
+        "f′(x)=1/(x−3)² for x≠−3 and x≠3.",
+        "f′(−3)=−1/36 because the simplified derivative is finite there."
+      ],
+      "correctIndex": 1,
+      "explanation": "Factor x²−9=(x−3)(x+3). For original-domain inputs, f=1/(x−3), whose derivative is −1/(x−3)². Cancellation does not restore the missing original point at −3; neither −3 nor 3 belongs to f’s domain. A: The original function has no value at −3, even though the simplified expression does. B: Cancellation yields 1/(x−3) only on the original domain, so both excluded inputs remain excluded. C: Differentiating the reciprocal introduces a negative sign. D: A finite extension formula cannot give a derivative where the original function is undefined."
+    },
+    {
+      "id": "calc-ab-2-9-010",
+      "prompt": "Let g be differentiable near a, with g(a)=−2 and g′(a)=3. For R(x)=7/g(x), what is R′(a)?",
+      "options": [
+        "21/4",
+        "0",
+        "−21/4",
+        "21/2"
+      ],
+      "correctIndex": 2,
+      "explanation": "Treat the numerator as the constant function 7 with derivative zero. The quotient rule gives R′=(0·g−7g′)/g². Therefore R′(a)=−7(3)/(−2)²=−21/4. A: This loses the subtraction in the quotient numerator. B: A constant numerator does not make a quotient with varying denominator constant. C: The constant numerator contributes zero, leaving −7g′(a)/[g(a)]². D: This uses the unsquared negative denominator −2 instead of its square 4."
+    },
+    {
+      "id": "calc-ab-2-9-011",
+      "prompt": "A student claims d[(x²+1)/x]/dx=2x for x≠0 by dividing numerator and denominator derivatives. Which correction is valid?",
+      "options": [
+        "The student’s rule is valid for every quotient.",
+        "The derivative is 1+1/x² because reciprocal derivatives are positive.",
+        "The derivative is 2 because x²/x=x and the extra numerator term can be discarded.",
+        "Rewrite the function as x+1/x; its derivative is 1−1/x²."
+      ],
+      "correctIndex": 3,
+      "explanation": "For nonzero x, (x²+1)/x=x+x⁻¹. Termwise differentiation gives 1−x⁻²=1−1/x². The quotient rule yields the same expression, whereas dividing 2x by 1 is an invalid shortcut. A: Quotients of derivatives do not generally give derivatives of quotients. B: The derivative of x⁻¹ is −x⁻². C: The additional term 1/x is not zero and contributes a nonconstant derivative. D: Algebraic separation on the original nonzero domain gives an independent valid derivative."
+    }
+  ]
+}

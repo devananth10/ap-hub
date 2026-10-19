@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 253,
+  "questionsChecked": 286,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -721,6 +721,131 @@
       "questionId": "calc-ab-2-7-011",
       "method": "finite-difference-estimate",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-8-002",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-8-003",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-2-8-004",
+      "method": "finite-difference-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-8-005",
+      "method": "table-derivative-rule",
+      "operation": "product"
+    },
+    {
+      "questionId": "calc-ab-2-8-006",
+      "method": "finite-difference-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-8-007",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-2-8-008",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-8-009",
+      "method": "finite-difference-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-8-010",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-9-002",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-9-003",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-2-9-004",
+      "method": "finite-difference-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-9-005",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-9-006",
+      "method": "table-derivative-rule",
+      "operation": "quotient"
+    },
+    {
+      "questionId": "calc-ab-2-9-007",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-2-9-008",
+      "method": "finite-difference-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-9-010",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-2-10-001",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-10-002",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-10-003",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-10-004",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-10-005",
+      "method": "finite-difference-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-10-006",
+      "method": "finite-difference-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-10-008",
+      "method": "finite-difference-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-10-010",
+      "method": "derivative-function",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -832,7 +957,15 @@
     "calc-ab-2-7-007",
     "calc-ab-2-7-008",
     "calc-ab-2-7-009",
-    "calc-ab-2-7-010"
+    "calc-ab-2-7-010",
+    "calc-ab-2-8-001",
+    "calc-ab-2-8-011",
+    "calc-ab-2-9-001",
+    "calc-ab-2-9-009",
+    "calc-ab-2-9-011",
+    "calc-ab-2-10-007",
+    "calc-ab-2-10-009",
+    "calc-ab-2-10-011"
   ],
   "humanReviewPerformed": false,
   "limitations": [

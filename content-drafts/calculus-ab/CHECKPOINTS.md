@@ -20,5 +20,6 @@ Repository: `devananth10/ap-hub`, branch `main`. Each entry below was saved with
 | `977a54125fc5284f0ce2f26f3bc827d7fc247e8c` | 198 | Topics 2.1–2.2; 66 tests, build/typecheck, all Calculus routes and both full browser sessions |
 | `75f99f0961f8d8a3ddd0fa37cb4b7dfcca412c68` | 209 | Topic 2.3 with original tables/graphs and checked estimates; verified GitHub receipt |
 | `d440eed6e8bc044c1d0c1d4d91aabf990a9c8e89` | 231 | Topics 2.4–2.5, 68 tests, build/typecheck, full topic browser sessions; verified GitHub receipt |
+| `dc5b5797f2469d227a6e12d3306c4cb629e792e5` | 253 | Topics 2.6–2.7, 69 tests, build/typecheck, full topic browser sessions; verified GitHub receipt |
 
 The latest receipt recorded above is the 231-question push. PROGRESS.json records subsequent locally validated publication; Git log and the verified remote branch provide later receipts. Do not invent a future commit SHA inside progress files before committing.

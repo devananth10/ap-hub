@@ -1,0 +1,456 @@
+{
+  "topicNumber": "2.8",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "e4d97e091278cdcf1edb458a80cc6973960a909328563810b9e3ca07e8d9aeef",
+  "scopeReview": "CED FUN-3.B product rule for differentiable functions, using prior basic derivatives. No chain rule or quotient rule required. Trigonometric angles are radians; logarithm restricted to x>0.",
+  "varietyReview": "General rule, exponential formula, supplied factor data, special-angle slope, actual table, expansion cross-check, zero factor with nonzero rate, logarithmic product, three factors, trig product and cancellation without zero factors.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-2-8-001",
+      "independentReasoning": "Add and subtract u(x+h)v(x) in the original product increment. After division by h, the two terms tend to u′(x)v(x) and u(x)v′(x), since differentiable factors are continuous. Taking u=v=x gives 2x, excluding the three incorrect general formulas.",
+      "optionReview": [
+        "Each term differentiates one factor and retains the other.",
+        "The derivative of a product is not generally the product of derivatives.",
+        "The product rule adds the two contributions, rather than subtracting them.",
+        "This differentiates a sum of factors instead of their product."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "u′(x)v(x)+u(x)v′(x)"
+      }
+    },
+    {
+      "questionId": "calc-ab-2-8-002",
+      "independentReasoning": "Expand the original product increment at x=0: h²eʰ/h tends to 0. At x=1 and 2, centered differences of the original product match 3e and 8e². The three distinct sample inputs exclude each incomplete or incorrectly factored candidate.",
+      "optionReview": [
+        "This omits the contribution from differentiating eˣ.",
+        "The two product contributions are 2xeˣ and x²eˣ.",
+        "This omits the contribution from differentiating x².",
+        "This loses the factor x in the power-rule contribution."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "mul",
+          [
+            "pow",
+            "x",
+            2
+          ],
+          [
+            "exp",
+            "x"
+          ]
+        ],
+        "samplePoints": [
+          0,
+          1,
+          2
+        ],
+        "step": 0.00001,
+        "tolerance": 0.00001,
+        "candidates": {
+          "eˣ(x²+2x)": [
+            "mul",
+            [
+              "exp",
+              "x"
+            ],
+            [
+              "add",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              [
+                "mul",
+                2,
+                "x"
+              ]
+            ]
+          ],
+          "2xeˣ": [
+            "mul",
+            2,
+            "x",
+            [
+              "exp",
+              "x"
+            ]
+          ],
+          "x²eˣ": [
+            "mul",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            [
+              "exp",
+              "x"
+            ]
+          ],
+          "eˣ(x²+2)": [
+            "mul",
+            [
+              "exp",
+              "x"
+            ],
+            [
+              "add",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              2
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-2-8-003",
+      "independentReasoning": "Independently use local linear models u(2+h)=3−h+o(h) and v(2+h)=4+5h+o(h). Their product has linear coefficient 15−4=11. The constant product height is 12 and is not the requested derivative.",
+      "optionReview": [
+        "This multiplies the two derivative values and ignores the function values.",
+        "This keeps only u(2)v′(2).",
+        "The product rule gives (−1)4+3(5)=11.",
+        "This subtracts the second contribution instead of adding it."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          2,
+          3,
+          -1,
+          4,
+          5
+        ],
+        "expression": [
+          "add",
+          [
+            "mul",
+            -1,
+            4
+          ],
+          [
+            "mul",
+            3,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-2-8-004",
+      "independentReasoning": "Near π/2, write sin(π/2+h)=cos h. The difference quotient is cos h+(π/2)(cos h−1)/h, tending to 1+0. A centered quotient of the original product corroborates the exact result.",
+      "optionReview": [
+        "This multiplies the separate derivatives and loses the first product contribution.",
+        "The two contributions are not both 1; the cosine contribution is zero.",
+        "This introduces a negative sign into the sine derivative or special-angle value.",
+        "The derivative sin x+x cos x evaluates to 1+0."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 1.5707963267948966,
+        "step": 0.0001,
+        "expression": [
+          "mul",
+          "x",
+          [
+            "sin",
+            "x"
+          ]
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-2-8-005",
+      "independentReasoning": "Independently form the local products (2+3h)(−1+4h)=−2+5h+12h². The coefficient of h confirms 5. The checker reads the actual table row and recomputes both weighted terms rather than trusting copied values.",
+      "optionReview": [
+        "The x=1 row gives 3(−1)+2(4)=5.",
+        "This multiplies the two derivatives 3 and 4.",
+        "This is the function product 2(−1), not its derivative.",
+        "This subtracts 2(4) instead of adding it to 3(−1)."
+      ],
+      "check": {
+        "type": "table-derivative-rule",
+        "inputX": 1,
+        "operation": "product"
+      },
+      "tableSha256": "8e311384fb16b9a63366fae27ccd0aebc774c9e82825b13248c15d9f4ab28b48"
+    },
+    {
+      "questionId": "calc-ab-2-8-006",
+      "independentReasoning": "Independently expand f=x⁵+x³−2x²−2. Its derivative at 1 is 5+3−4=4. Original-function centered differences corroborate this value and distinguish every listed alternative.",
+      "optionReview": [
+        "This multiplies the two factor derivatives 2 and 3.",
+        "The product rule gives 2(−1)+2(3)=4 at 1.",
+        "This retains only the first product-rule term.",
+        "This loses the negative value of the factor x³−2 at 1."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 1,
+        "step": 0.0001,
+        "expression": [
+          "mul",
+          [
+            "add",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            1
+          ],
+          [
+            "sub",
+            [
+              "pow",
+              "x",
+              3
+            ],
+            2
+          ]
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-2-8-007",
+      "independentReasoning": "Use u(a+h)=3h+o(h) and v(a+h)=−2+7h+o(h). Their product has linear term −6h, so the derivative is −6. This independently shows why the zero-height inference is invalid.",
+      "optionReview": [
+        "A zero product value does not imply a zero product derivative.",
+        "This multiplies u′(a) by v′(a).",
+        "Only u′(a)v(a) remains, because u(a)v′(a)=0.",
+        "This loses the negative sign in v(a)."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          0,
+          3,
+          -2,
+          7
+        ],
+        "expression": [
+          "add",
+          [
+            "mul",
+            3,
+            -2
+          ],
+          [
+            "mul",
+            0,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-2-8-008",
+      "independentReasoning": "For positive x, rewrite the original increment as h ln(x+h)+x ln(1+h/x). Divide by h and use continuity of ln and its defining derivative limit. This gives ln x+1; centered differences at 1/2,1,3 corroborate the formula.",
+      "optionReview": [
+        "This differentiates only ln x and omits the product structure.",
+        "This omits the contribution from differentiating ln x.",
+        "The second term must retain the factor x before simplification.",
+        "The product contributions are ln x and x(1/x)=1."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "mul",
+          "x",
+          [
+            "ln",
+            "x"
+          ]
+        ],
+        "samplePoints": [
+          0.5,
+          1,
+          3
+        ],
+        "step": 0.00001,
+        "tolerance": 0.00001,
+        "candidates": {
+          "ln x+1": [
+            "add",
+            [
+              "ln",
+              "x"
+            ],
+            1
+          ],
+          "1/x": [
+            "div",
+            1,
+            "x"
+          ],
+          "ln x": [
+            "ln",
+            "x"
+          ],
+          "ln x+1/x": [
+            "add",
+            [
+              "ln",
+              "x"
+            ],
+            [
+              "div",
+              1,
+              "x"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-2-8-009",
+      "independentReasoning": "Directly from F(0)=0, the defining quotient is h eʰ sin h/h=eʰ sin h, which tends to 0. This separate one-line limit corroborates the three-factor rule without assuming a derivative of a composite function.",
+      "optionReview": [
+        "Every term in the three-factor derivative has a zero factor at 0.",
+        "Multiplying the three separate derivative values incorrectly gives 1.",
+        "The two terms containing x are zero, not unit contributions.",
+        "The product rule does not assign 1 to each of the three terms."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 0,
+        "step": 0.0001,
+        "expression": [
+          "mul",
+          "x",
+          [
+            "exp",
+            "x"
+          ],
+          [
+            "sin",
+            "x"
+          ]
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-2-8-010",
+      "independentReasoning": "At 0 the defining quotient sin h cos h/h tends to 1. At additional inputs 1/2 and 1, original-product centered differences distinguish the selected formula from the other candidates, including the always-one sum of squares.",
+      "optionReview": [
+        "This multiplies the two derivatives rather than using the product rule.",
+        "The sine derivative contributes cos²x and the cosine derivative contributes −sin²x.",
+        "This misses the negative sign from differentiating cosine.",
+        "This resembles differentiating a square of sine, which is a different original function."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "mul",
+          [
+            "sin",
+            "x"
+          ],
+          [
+            "cos",
+            "x"
+          ]
+        ],
+        "samplePoints": [
+          0,
+          0.5,
+          1
+        ],
+        "step": 0.0001,
+        "tolerance": 0.00001,
+        "candidates": {
+          "cos²x−sin²x": [
+            "sub",
+            [
+              "pow",
+              [
+                "cos",
+                "x"
+              ],
+              2
+            ],
+            [
+              "pow",
+              [
+                "sin",
+                "x"
+              ],
+              2
+            ]
+          ],
+          "−sin x cos x": [
+            "mul",
+            -1,
+            [
+              "sin",
+              "x"
+            ],
+            [
+              "cos",
+              "x"
+            ]
+          ],
+          "cos²x+sin²x": [
+            "add",
+            [
+              "pow",
+              [
+                "cos",
+                "x"
+              ],
+              2
+            ],
+            [
+              "pow",
+              [
+                "sin",
+                "x"
+              ],
+              2
+            ]
+          ],
+          "2sin x cos x": [
+            "mul",
+            2,
+            [
+              "sin",
+              "x"
+            ],
+            [
+              "cos",
+              "x"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-2-8-011",
+      "independentReasoning": "Local linear factors (2+h)(3−3h/2)=6−3h²/2 have no linear term, independently demonstrating cancellation. Taking u=v=x supplies a counterexample to the false claim that all nonzero products have zero derivative.",
+      "optionReview": [
+        "The product value is 2·3=6, not zero.",
+        "Their stated derivatives are 1 and −3/2, both nonzero.",
+        "The product has value 6 but derivative 3−3=0.",
+        "Nonzero values alone imply no cancellation of derivative contributions."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The weighted terms 1·3 and 2·(−3/2) cancel, so H′(2)=0."
+      }
+    }
+  ]
+}

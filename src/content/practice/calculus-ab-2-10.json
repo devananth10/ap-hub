@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 2,
+  "topicId": "topic-2-10",
+  "questions": [
+    {
+      "id": "calc-ab-2-10-001",
+      "prompt": "Angles are in radians. On the domain of tan x, which expression is its derivative?",
+      "options": [
+        "−sec²x",
+        "csc²x",
+        "sec²x",
+        "sec x tan x"
+      ],
+      "correctIndex": 2,
+      "explanation": "Write tan x=sin x/cos x where cos x≠0. Its derivative is [cos²x+sin²x]/cos²x=1/cos²x=sec²x. The identity cos²x+sin²x=1 simplifies the numerator. A: The tangent derivative is positive on its domain, not negative. B: This uses the reciprocal of sine instead of cosine. C: The quotient rule on sin x/cos x gives 1/cos²x. D: This is the derivative of sec x, not tan x."
+    },
+    {
+      "id": "calc-ab-2-10-002",
+      "prompt": "Angles are in radians. For every x where cot x is defined, what is d(cot x)/dx?",
+      "options": [
+        "csc²x",
+        "−sec²x",
+        "−csc x cot x",
+        "−csc²x"
+      ],
+      "correctIndex": 3,
+      "explanation": "Use cot x=cos x/sin x with sin x≠0. The quotient derivative is [−sin²x−cos²x]/sin²x=−1/sin²x=−csc²x. Both numerator contributions are negative. A: This loses the negative sign in the quotient numerator. B: The denominator of cot x is sine, so its squared reciprocal is cosecant squared. C: This is the derivative of csc x, a different function. D: Differentiating cos x/sin x gives −1/sin²x."
+    },
+    {
+      "id": "calc-ab-2-10-003",
+      "prompt": "Angles are in radians. Which formula is the derivative of sec x wherever sec x is defined?",
+      "options": [
+        "sec x tan x",
+        "sec²x",
+        "−sec x tan x",
+        "sec x"
+      ],
+      "correctIndex": 0,
+      "explanation": "Write sec x=1/cos x. The quotient rule gives [0·cos x−1(−sin x)]/cos²x=sin x/cos²x=sec x tan x. The formula applies where cos x≠0. A: Differentiating 1/cos x yields sin x/cos²x. B: This is the tangent derivative, not the secant derivative. C: The quotient subtraction and negative cosine derivative produce a positive product. D: Secant is not its own derivative."
+    },
+    {
+      "id": "calc-ab-2-10-004",
+      "prompt": "Angles are in radians. Which expression is the derivative of csc x on its domain?",
+      "options": [
+        "csc x cot x",
+        "−csc x cot x",
+        "−csc²x",
+        "sec x tan x"
+      ],
+      "correctIndex": 1,
+      "explanation": "Using csc x=1/sin x for sin x≠0, the quotient rule gives −cos x/sin²x. Factoring into reciprocal trigonometric functions gives −(1/sin x)(cos x/sin x)=−csc x cot x. A: This loses the negative sign from the quotient numerator. B: Differentiating 1/sin x gives −cos x/sin²x. C: This is the cotangent derivative. D: This is the secant derivative and uses a different denominator."
+    },
+    {
+      "id": "calc-ab-2-10-005",
+      "prompt": "Angles are in radians. If f(x)=tan x, what is f′(π/4)?",
+      "options": [
+        "1",
+        "√2",
+        "2",
+        "−2"
+      ],
+      "correctIndex": 2,
+      "explanation": "For tangent, f′(x)=sec²x. Since cos(π/4)=√2/2, the reciprocal square is 1/(1/2)=2. Tangent’s height at that input happens to be 1, but its derivative is 2. A: This is tan(π/4), the function value rather than its slope. B: This is sec(π/4), which still needs to be squared. C: The derivative is sec²(π/4)=1/(√2/2)²=2. D: This gives the incorrect negative sign for a tangent derivative."
+    },
+    {
+      "id": "calc-ab-2-10-006",
+      "prompt": "Angles are in radians. For g(x)=cot x, what is g′(π/6)?",
+      "options": [
+        "4",
+        "−2",
+        "−√3",
+        "−4"
+      ],
+      "correctIndex": 3,
+      "explanation": "The cotangent derivative is −csc²x. Since sin(π/6)=1/2, csc(π/6)=2 and g′(π/6)=−2²=−4. The square applies before the leading negative sign. A: This loses the negative sign of the cotangent derivative. B: This uses −csc x without squaring it. C: This is the negative cotangent value rather than its derivative. D: The derivative −csc²x gives −1/(1/2)²=−4."
+    },
+    {
+      "id": "calc-ab-2-10-007",
+      "prompt": "Angles are in radians. Which line is tangent to y=sec x at x=0?",
+      "options": [
+        "y=1",
+        "y=0",
+        "x=0",
+        "y=x+1"
+      ],
+      "correctIndex": 0,
+      "explanation": "At 0, cos 0=1 so sec 0=1. The derivative sec x tan x is zero there because tan 0=0. The tangent through (0,1) is horizontal, so its equation is y=1. A: Secant has value 1 and derivative sec 0 tan 0=0 at that input. B: The slope is zero, but the tangent point has height 1. C: This is a vertical line, whereas the finite derivative is zero. D: This passes through the point but has slope 1 instead of 0."
+    },
+    {
+      "id": "calc-ab-2-10-008",
+      "prompt": "Angles are in radians. Let y=2tan x−cot x. What is dy/dx at x=π/4?",
+      "options": [
+        "2",
+        "6",
+        "4",
+        "−6"
+      ],
+      "correctIndex": 1,
+      "explanation": "Differentiate the linear combination to obtain y′=2sec²x−(−csc²x)=2sec²x+csc²x. At π/4, both reciprocal squares equal 2, so the derivative is 4+2=6. A: This fails to reverse the cotangent derivative’s negative sign when subtracting it. B: The derivative 2sec²x+csc²x gives 2·2+2=6. C: This drops the cotangent contribution entirely. D: This reverses the signs of both derivative contributions."
+    },
+    {
+      "id": "calc-ab-2-10-009",
+      "prompt": "Angles are in radians. At x=π/2, which statement correctly distinguishes csc x and sec x?",
+      "options": [
+        "Both functions are defined and have derivative 0.",
+        "csc x is undefined while sec x has derivative 0.",
+        "csc x is defined with derivative 0; sec x is undefined.",
+        "Both are undefined because every reciprocal trigonometric function fails at π/2."
+      ],
+      "correctIndex": 2,
+      "explanation": "The original denominators must be checked before using derivative formulas. Since sin(π/2)=1, csc(π/2)=1 and its derivative −csc(π/2)cot(π/2)=−1·0=0. Since cos(π/2)=0, sec has no point there. A: Secant is 1/cos x and has a zero denominator at π/2. B: This interchanges the roles of sine and cosine in the two reciprocal functions. C: Sine is 1 and cosine is 0, so only the cosecant has a point and a derivative there. D: Cosecant’s denominator is sin(π/2)=1, which is nonzero."
+    },
+    {
+      "id": "calc-ab-2-10-010",
+      "prompt": "Angles are in radians. Given sec²x−tan²x=1 wherever cos x≠0, what is the derivative of F(x)=sec²x−tan²x at any input in that domain?",
+      "options": [
+        "1",
+        "2sec x tan x",
+        "sec²x",
+        "0"
+      ],
+      "correctIndex": 3,
+      "explanation": "Use the supplied identity before differentiating: F(x)=1 on its domain. A constant has derivative zero, so F′(x)=0 wherever cos x≠0. The identity does not define F at excluded cosine-zero inputs. A: This is the simplified function value, not its derivative. B: This does not differentiate the full difference and ignores its exact constant simplification. C: This is the derivative of tan x alone, not the given difference. D: The identity makes F a constant on every interval of its original domain."
+    },
+    {
+      "id": "calc-ab-2-10-011",
+      "prompt": "Angles are in radians. Which statement about horizontal tangents to y=cot x is correct?",
+      "options": [
+        "There are none, because −csc²x<0 at every input where cot x is defined.",
+        "They occur at x=nπ for every integer n.",
+        "They occur at x=π/2 because cot(π/2)=0.",
+        "They occur at x=π/4 because cot(π/4)=1."
+      ],
+      "correctIndex": 0,
+      "explanation": "A horizontal tangent requires a defined point with derivative zero. Cotangent has derivative −1/sin²x wherever sin x≠0. The denominator is positive on that domain, so the derivative is strictly negative and never zero. A: On the real domain sin x≠0, its reciprocal square is positive, so the derivative cannot be zero. B: Cotangent is undefined at these zero-sine inputs. C: A zero function value is not a zero slope; the derivative there is −1. D: The derivative there is −2 rather than zero."
+    }
+  ]
+}

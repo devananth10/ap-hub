@@ -1,0 +1,457 @@
+{
+  "topicNumber": "2.9",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "a6fe17f980fc0854a9572a1ee4d190aaf3c328d3e12bb14895fd3e2fe591c277",
+  "scopeReview": "CED FUN-3.B.2 quotient rule, nonzero denominator, supported by prior power/product/basic derivative rules. Radian trigonometry and positive logarithm domain explicit. No chain rule required.",
+  "varietyReview": "General rule, rational formula and polynomial division cross-check, supplied data, trig special-angle slope, logarithmic quotient, actual table, cancellation, exponential quotient, original-domain hole, reciprocal sign and an invalid-method correction.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-2-9-001",
+      "independentReasoning": "Combine [u(x+h)/v(x+h)−u(x)/v(x)]/h over the common denominator v(x+h)v(x), then add/subtract u(x)v(x+h) in the numerator. Continuity of v and v(x)≠0 give the exact formula. Examples u=x²+1,v=x distinguish the false general rules.",
+      "optionReview": [
+        "Derivatives of quotients are not generally quotients of derivatives.",
+        "The numerator uses denominator times numerator derivative minus numerator times denominator derivative, over the squared denominator.",
+        "This uses addition instead of the required subtraction.",
+        "The denominator must be squared."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "[u′(x)v(x)−u(x)v′(x)]/[v(x)]²"
+      }
+    },
+    {
+      "questionId": "calc-ab-2-9-002",
+      "independentReasoning": "Independently divide f=x−2+5/(x+2). Its derivative is 1−5/(x+2)², equal to the selected expression. Original-function centered differences at 0,1,3 distinguish every candidate while staying away from the pole.",
+      "optionReview": [
+        "This divides the separate derivatives and ignores the quotient rule.",
+        "This does not square the denominator.",
+        "Expanding 2x(x+2)−(x²+1) gives x²+4x−1.",
+        "This reverses the numerator’s required subtraction order."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "div",
+          [
+            "add",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            1
+          ],
+          [
+            "add",
+            "x",
+            2
+          ]
+        ],
+        "samplePoints": [
+          0,
+          1,
+          3
+        ],
+        "step": 0.00001,
+        "tolerance": 0.00001,
+        "candidates": {
+          "(x²+4x−1)/(x+2)²": [
+            "div",
+            [
+              "sub",
+              [
+                "add",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                [
+                  "mul",
+                  4,
+                  "x"
+                ]
+              ],
+              1
+            ],
+            [
+              "pow",
+              [
+                "add",
+                "x",
+                2
+              ],
+              2
+            ]
+          ],
+          "2x": [
+            "mul",
+            2,
+            "x"
+          ],
+          "(x²+4x−1)/(x+2)": [
+            "div",
+            [
+              "sub",
+              [
+                "add",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                [
+                  "mul",
+                  4,
+                  "x"
+                ]
+              ],
+              1
+            ],
+            [
+              "add",
+              "x",
+              2
+            ]
+          ],
+          "(1−4x−x²)/(x+2)²": [
+            "div",
+            [
+              "mul",
+              -1,
+              [
+                "sub",
+                [
+                  "add",
+                  [
+                    "pow",
+                    "x",
+                    2
+                  ],
+                  [
+                    "mul",
+                    4,
+                    "x"
+                  ]
+                ],
+                1
+              ]
+            ],
+            [
+              "pow",
+              [
+                "add",
+                "x",
+                2
+              ],
+              2
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-2-9-003",
+      "independentReasoning": "Use local linear models (4−2h)/(3+5h). Subtract 4/3 and divide by h: the exact quotient tends to −26/9. This independent expansion confirms both the negative numerator and the squared denominator.",
+      "optionReview": [
+        "This divides the two derivative values.",
+        "This adds 4(5) instead of subtracting it.",
+        "This uses v rather than v² in the denominator.",
+        "The quotient numerator is (−2)3−4(5)=−26, divided by 3²."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          1,
+          4,
+          -2,
+          3,
+          5
+        ],
+        "expression": [
+          "div",
+          [
+            "sub",
+            [
+              "mul",
+              -2,
+              3
+            ],
+            [
+              "mul",
+              4,
+              5
+            ]
+          ],
+          [
+            "pow",
+            3,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-2-9-004",
+      "independentReasoning": "Directly write sin(π+h)=−sin h in the original difference quotient: [−sin h/(π+h)]/h tends to −1/π. A centered difference of sin x/x corroborates this exact special-angle answer independently of the quotient-rule algebra.",
+      "optionReview": [
+        "The quotient rule gives [π cos π−sin π]/π²=−π/π².",
+        "This loses the negative special-angle cosine value.",
+        "This omits the factor π remaining in the denominator.",
+        "A zero function value sin π/π does not imply a zero derivative."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 3.141592653589793,
+        "step": 0.0001,
+        "expression": [
+          "div",
+          [
+            "sin",
+            "x"
+          ],
+          "x"
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-2-9-005",
+      "independentReasoning": "Independently write L=x⁻¹ln x and apply the already established product and power rules. They give x⁻²−x⁻²ln x, the selected formula. Original-function differences at 1,2,4 distinguish all candidates.",
+      "optionReview": [
+        "This omits the contribution from differentiating the denominator.",
+        "The numerator becomes x(1/x)−ln x=1−ln x.",
+        "This replaces the required subtraction by addition.",
+        "This reverses the subtraction order."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "div",
+          [
+            "ln",
+            "x"
+          ],
+          "x"
+        ],
+        "samplePoints": [
+          1,
+          2,
+          4
+        ],
+        "step": 0.00001,
+        "tolerance": 0.00001,
+        "candidates": {
+          "(1−ln x)/x²": [
+            "div",
+            [
+              "sub",
+              1,
+              [
+                "ln",
+                "x"
+              ]
+            ],
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          "1/x²": [
+            "div",
+            1,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          "(1+ln x)/x²": [
+            "div",
+            [
+              "add",
+              1,
+              [
+                "ln",
+                "x"
+              ]
+            ],
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          "(ln x−1)/x²": [
+            "div",
+            [
+              "sub",
+              [
+                "ln",
+                "x"
+              ],
+              1
+            ],
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-2-9-006",
+      "independentReasoning": "Independently subtract Q(0)=1/2 from the local quotient (2−h)/(4+3h); its difference quotient tends to −5/8. The automated check uses the actual sidecar row, including its denominator, rather than copied constants.",
+      "optionReview": [
+        "This divides the derivative values −1 and 3.",
+        "This uses addition in the quotient numerator, giving (−4+6)/16.",
+        "The x=0 row gives [(−1)4−2(3)]/4²=−10/16.",
+        "This omits the denominator square, giving −10/4."
+      ],
+      "check": {
+        "type": "table-derivative-rule",
+        "inputX": 0,
+        "operation": "quotient"
+      },
+      "tableSha256": "72975799e15841189bb126fe9e971a438f7d0870c0d8b9947c1cda6ed4c7f8d3"
+    },
+    {
+      "questionId": "calc-ab-2-9-007",
+      "independentReasoning": "Using local expansions u(3+h)=2+5h+o(h) and v(3+h)=2+5h+o(h), the ratio differs from 1 by o(h). Hence its derivative at 3 is 0, even though the functions need not be identical elsewhere.",
+      "optionReview": [
+        "This is the quotient’s value at 3, not its derivative.",
+        "This multiplies the derivative values.",
+        "This retains a factor’s derivative without applying the quotient rule.",
+        "The quotient numerator is 5·2−2·5=0 and the denominator is nonzero."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          3,
+          2,
+          5
+        ],
+        "expression": [
+          "div",
+          [
+            "sub",
+            [
+              "mul",
+              5,
+              2
+            ],
+            [
+              "mul",
+              2,
+              5
+            ]
+          ],
+          [
+            "pow",
+            2,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-2-9-008",
+      "independentReasoning": "Directly compare eʰ/(1+h²) to f(0)=1. The defining quotient is [(eʰ−1)/h−h]/(1+h²), tending to 1. Original-function centered differences corroborate the exact result.",
+      "optionReview": [
+        "The quotient numerator is e⁰(1)−e⁰(0)=1 and the squared denominator is 1.",
+        "A zero denominator derivative does not make the whole quotient derivative zero.",
+        "This reverses the quotient numerator’s subtraction order.",
+        "This incorrectly adds a second unit contribution from the quadratic derivative at 0."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 0,
+        "step": 0.0001,
+        "expression": [
+          "div",
+          [
+            "exp",
+            "x"
+          ],
+          [
+            "add",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            1
+          ]
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-2-9-009",
+      "independentReasoning": "Apply the quotient rule before cancelling: [(x²−9)−(x+3)2x]/(x²−9)²=−(x+3)²/[(x−3)²(x+3)²]. Simplification gives the selected formula only where the original factors are nonzero. This separately checks the sign and the lost-domain trap.",
+      "optionReview": [
+        "The original function has no value at −3, even though the simplified expression does.",
+        "Cancellation yields 1/(x−3) only on the original domain, so both excluded inputs remain excluded.",
+        "Differentiating the reciprocal introduces a negative sign.",
+        "A finite extension formula cannot give a derivative where the original function is undefined."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f′(x)=−1/(x−3)² for x≠−3 and x≠3."
+      }
+    },
+    {
+      "questionId": "calc-ab-2-9-010",
+      "independentReasoning": "Subtract R(a)=−7/2 from the local quotient 7/(−2+3h). The coefficient of h is −21/4. Since the denominator square is positive, the derivative has the opposite sign to positive g′, independently checking the answer sign.",
+      "optionReview": [
+        "This loses the subtraction in the quotient numerator.",
+        "A constant numerator does not make a quotient with varying denominator constant.",
+        "The constant numerator contributes zero, leaving −7g′(a)/[g(a)]².",
+        "This uses the unsquared negative denominator −2 instead of its square 4."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          7,
+          -2,
+          3
+        ],
+        "expression": [
+          "div",
+          [
+            "mul",
+            -7,
+            3
+          ],
+          [
+            "pow",
+            -2,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-2-9-011",
+      "independentReasoning": "At x=1, the original difference quotient of x+1/x tends to 0; the student’s candidate gives 2 there. At x=2 the valid derivative is 3/4, which also disproves the constant-2 and positive-reciprocal alternatives. Domain x≠0 is retained.",
+      "optionReview": [
+        "Quotients of derivatives do not generally give derivatives of quotients.",
+        "The derivative of x⁻¹ is −x⁻².",
+        "The additional term 1/x is not zero and contributes a nonconstant derivative.",
+        "Algebraic separation on the original nonzero domain gives an independent valid derivative."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Rewrite the function as x+1/x; its derivative is 1−1/x²."
+      }
+    }
+  ]
+}

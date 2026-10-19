@@ -9,6 +9,7 @@ export function numericalOption(text) {
   const clean=text.replaceAll('−','-').trim();
   if(clean==='∞'||clean==='+∞')return Infinity;
   if(clean==='-∞')return -Infinity;
+  const piFraction=clean.match(/^([+-]?\d+)\/π$/);if(piFraction)return Number(piFraction[1])/Math.PI;
   const fraction=clean.match(/^([+-]?\d+(?:\.\d+)?)\/([+-]?\d+(?:\.\d+)?)(?:$|\s+[A-Za-z])/);
   if(fraction) return Number(fraction[1])/Number(fraction[2]);
   const root=clean.match(/^([+-]?)√(\d+(?:\.\d+)?)$/);if(root) return (root[1]==='-'?-1:1)*Math.sqrt(Number(root[2]));
@@ -116,7 +117,17 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='table-linear-derivative') {
+  if (review.check.type==='table-derivative-rule') {
+    const check=review.check,table=practiceTables[question.id];assert.ok(table);
+    const row=table.rows.find(row=>Number(row[0].replace('−','-'))===check.inputX);assert.ok(row&&row.length===5);
+    const [u,up,v,vp]=row.slice(1).map(s=>Number(s.replace('−','-')));assert.ok([u,up,v,vp].every(Number.isFinite));
+    assert.ok(['product','quotient'].includes(check.operation));
+    if(check.operation==='quotient')assert.notEqual(v,0,'Zero quotient denominator');
+    const value=check.operation==='product'?up*v+u*vp:(up*v-u*vp)/(v*v);
+    const matches=question.options.map(option=>Math.abs(numericalOption(option)-value)<1e-10);
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique tabular derivative rule');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' derivative rule key');
+  } else if (review.check.type==='table-linear-derivative') {
     const check=review.check,row=practiceTables[question.id].rows.find(row=>Number(row[0].replace('−','-'))===check.inputX);assert.ok(row);
     assert.equal(row.length,check.weights.length+1);
     const value=check.weights.reduce((sum,weight,i)=>sum+weight*Number(row[i+1].replace('−','-')),0);

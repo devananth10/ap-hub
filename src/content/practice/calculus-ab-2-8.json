@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 2,
+  "topicId": "topic-2-8",
+  "questions": [
+    {
+      "id": "calc-ab-2-8-001",
+      "prompt": "If u and v are differentiable on an interval, which expression is the derivative of u(x)v(x)?",
+      "options": [
+        "u′(x)v(x)+u(x)v′(x)",
+        "u′(x)v′(x)",
+        "u′(x)v(x)−u(x)v′(x)",
+        "u′(x)+v′(x)"
+      ],
+      "correctIndex": 0,
+      "explanation": "The product rule is (uv)′=u′v+uv′. The first factor’s change is weighted by the second factor’s value, and the second factor’s change is weighted by the first factor’s value. Both contributions are needed. A: Each term differentiates one factor and retains the other. B: The derivative of a product is not generally the product of derivatives. C: The product rule adds the two contributions, rather than subtracting them. D: This differentiates a sum of factors instead of their product."
+    },
+    {
+      "id": "calc-ab-2-8-002",
+      "prompt": "For f(x)=x²eˣ, which formula gives f′(x)?",
+      "options": [
+        "2xeˣ",
+        "eˣ(x²+2x)",
+        "x²eˣ",
+        "eˣ(x²+2)"
+      ],
+      "correctIndex": 1,
+      "explanation": "Let u=x² and v=eˣ. Then u′=2x and v′=eˣ, so f′=2xeˣ+x²eˣ=eˣ(x²+2x). Factoring the common exponential does not remove the factor x from 2x. A: This omits the contribution from differentiating eˣ. B: The two product contributions are 2xeˣ and x²eˣ. C: This omits the contribution from differentiating x². D: This loses the factor x in the power-rule contribution."
+    },
+    {
+      "id": "calc-ab-2-8-003",
+      "prompt": "Suppose u(2)=3, u′(2)=−1, v(2)=4 and v′(2)=5. If H(x)=u(x)v(x), what is H′(2)?",
+      "options": [
+        "−5",
+        "15",
+        "11",
+        "−19"
+      ],
+      "correctIndex": 2,
+      "explanation": "Use the value and derivative of each factor: H′(2)=u′(2)v(2)+u(2)v′(2)=−4+15=11. A product derivative requires both weighted contributions, not only the separate slopes. A: This multiplies the two derivative values and ignores the function values. B: This keeps only u(2)v′(2). C: The product rule gives (−1)4+3(5)=11. D: This subtracts the second contribution instead of adding it."
+    },
+    {
+      "id": "calc-ab-2-8-004",
+      "prompt": "Angles are in radians. For f(x)=x sin x, what is f′(π/2)?",
+      "options": [
+        "0",
+        "2",
+        "−1",
+        "1"
+      ],
+      "correctIndex": 3,
+      "explanation": "The product rule gives f′(x)=sin x+x cos x. At π/2, sine is 1 and cosine is 0. Thus f′(π/2)=1+(π/2)·0=1. A: This multiplies the separate derivatives and loses the first product contribution. B: The two contributions are not both 1; the cosine contribution is zero. C: This introduces a negative sign into the sine derivative or special-angle value. D: The derivative sin x+x cos x evaluates to 1+0."
+    },
+    {
+      "id": "calc-ab-2-8-005",
+      "prompt": "Use the table below. If P(x)=u(x)v(x), what is P′(1)?",
+      "options": [
+        "5",
+        "12",
+        "−2",
+        "−11"
+      ],
+      "correctIndex": 0,
+      "explanation": "Read all four quantities from the x=1 row. The product rule gives P′(1)=u′(1)v(1)+u(1)v′(1)=3(−1)+2(4)=−3+8=5. Function values and slopes occupy different columns. A: The x=1 row gives 3(−1)+2(4)=5. B: This multiplies the two derivatives 3 and 4. C: This is the function product 2(−1), not its derivative. D: This subtracts 2(4) instead of adding it to 3(−1)."
+    },
+    {
+      "id": "calc-ab-2-8-006",
+      "prompt": "For f(x)=(x²+1)(x³−2), what is f′(1)?",
+      "options": [
+        "6",
+        "4",
+        "−2",
+        "8"
+      ],
+      "correctIndex": 1,
+      "explanation": "Differentiate both factors in turn: f′=2x(x³−2)+(x²+1)3x². At 1 this is 2(−1)+2·3=4. Expanding before differentiating gives the same result. A: This multiplies the two factor derivatives 2 and 3. B: The product rule gives 2(−1)+2(3)=4 at 1. C: This retains only the first product-rule term. D: This loses the negative value of the factor x³−2 at 1."
+    },
+    {
+      "id": "calc-ab-2-8-007",
+      "prompt": "At an input a, differentiable functions satisfy u(a)=0, u′(a)=3, v(a)=−2 and v′(a)=7. What is (uv)′(a)?",
+      "options": [
+        "0",
+        "21",
+        "−6",
+        "6"
+      ],
+      "correctIndex": 2,
+      "explanation": "Apply the product rule even though the product’s value is zero: (uv)′(a)=3(−2)+0(7)=−6. A function may cross height zero with a nonzero slope. A: A zero product value does not imply a zero product derivative. B: This multiplies u′(a) by v′(a). C: Only u′(a)v(a) remains, because u(a)v′(a)=0. D: This loses the negative sign in v(a)."
+    },
+    {
+      "id": "calc-ab-2-8-008",
+      "prompt": "For x>0, let f(x)=x ln x. Which expression is f′(x)?",
+      "options": [
+        "1/x",
+        "ln x",
+        "ln x+1/x",
+        "ln x+1"
+      ],
+      "correctIndex": 3,
+      "explanation": "On the positive domain, both x and ln x are differentiable. The product rule gives f′=1·ln x+x·(1/x)=ln x+1. The factor x in the second term cancels its reciprocal. A: This differentiates only ln x and omits the product structure. B: This omits the contribution from differentiating ln x. C: The second term must retain the factor x before simplification. D: The product contributions are ln x and x(1/x)=1."
+    },
+    {
+      "id": "calc-ab-2-8-009",
+      "prompt": "Angles are in radians. If F(x)=x eˣ sin x, what is F′(0)?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "correctIndex": 0,
+      "explanation": "Apply the product rule twice: F′=eˣ sin x+x eˣ sin x+x eˣ cos x. At 0, sin 0=0 and x=0, so all three terms vanish. Thus F′(0)=0. A: Every term in the three-factor derivative has a zero factor at 0. B: Multiplying the three separate derivative values incorrectly gives 1. C: The two terms containing x are zero, not unit contributions. D: The product rule does not assign 1 to each of the three terms."
+    },
+    {
+      "id": "calc-ab-2-8-010",
+      "prompt": "Angles are in radians. Which expression is the derivative of f(x)=sin x cos x?",
+      "options": [
+        "−sin x cos x",
+        "cos²x−sin²x",
+        "cos²x+sin²x",
+        "2sin x cos x"
+      ],
+      "correctIndex": 1,
+      "explanation": "Use (sin x)′=cos x and (cos x)′=−sin x. Then f′=(cos x)(cos x)+(sin x)(−sin x)=cos²x−sin²x. The plus in the product rule does not cancel the negative cosine derivative. A: This multiplies the two derivatives rather than using the product rule. B: The sine derivative contributes cos²x and the cosine derivative contributes −sin²x. C: This misses the negative sign from differentiating cosine. D: This resembles differentiating a square of sine, which is a different original function."
+    },
+    {
+      "id": "calc-ab-2-8-011",
+      "prompt": "Let u and v be differentiable, with u(2)=2, u′(2)=1, v(2)=3 and v′(2)=−3/2. Why does H(x)=u(x)v(x) have a horizontal tangent at x=2?",
+      "options": [
+        "The product value H(2) is zero.",
+        "Both factors have derivative zero at 2.",
+        "The weighted terms 1·3 and 2·(−3/2) cancel, so H′(2)=0.",
+        "Any product of nonzero differentiable functions has derivative zero."
+      ],
+      "correctIndex": 2,
+      "explanation": "A horizontal tangent requires derivative zero, not function value zero. The product rule gives H′(2)=1·3+2·(−3/2)=3−3=0. The tangent is at height H(2)=6, and neither factor is individually horizontal. A: The product value is 2·3=6, not zero. B: Their stated derivatives are 1 and −3/2, both nonzero. C: The product has value 6 but derivative 3−3=0. D: Nonzero values alone imply no cancellation of derivative contributions."
+    }
+  ]
+}
