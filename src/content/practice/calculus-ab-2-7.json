@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 2,
+  "topicId": "topic-2-7",
+  "questions": [
+    {
+      "id": "calc-ab-2-7-001",
+      "prompt": "Angles are in radians. For f(x)=sin x, which formula is f′(x)?",
+      "options": [
+        "−cos x",
+        "sin x",
+        "−sin x",
+        "cos x"
+      ],
+      "correctIndex": 3,
+      "explanation": "The basic radian derivative formula is d(sin x)/dx=cos x. In particular, the slope at 0 is cos 0=1, consistent with the fundamental limit sin h/h→1. A: This introduces an incorrect negative sign. B: This retains the original function rather than its derivative. C: This is the cosine derivative, not the sine derivative. D: The radian sine derivative is cosine."
+    },
+    {
+      "id": "calc-ab-2-7-002",
+      "prompt": "Angles are in radians. Which derivative belongs to g(x)=cos x?",
+      "options": [
+        "−sin x",
+        "sin x",
+        "cos x",
+        "−cos x"
+      ],
+      "correctIndex": 0,
+      "explanation": "The basic derivative is g′(x)=−sin x. The negative sign is essential: for example, cosine is descending near a small positive input, where sine is positive. A: Differentiating cosine introduces a negative sine term. B: This misses the required negative sign. C: Cosine is not equal to its derivative function. D: The negative sign is present but the trigonometric function is wrong."
+    },
+    {
+      "id": "calc-ab-2-7-003",
+      "prompt": "For f(x)=eˣ, what is f′(0)?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "−1"
+      ],
+      "correctIndex": 1,
+      "explanation": "The natural exponential satisfies f′(x)=eˣ. Evaluating at x=0 gives f′(0)=e⁰=1. This derivative value is a slope, even though it happens also to equal the function height here. A: The input is zero, but the exponential’s slope there is not zero. B: The exponential is its own derivative, and e⁰=1. C: There is no factor of 2 in this derivative. D: The exponential derivative is positive, not negative."
+    },
+    {
+      "id": "calc-ab-2-7-004",
+      "prompt": "Let f(x)=ln x on its real domain. What is f′(4)?",
+      "options": [
+        "4",
+        "ln 4",
+        "1/4",
+        "−1/4"
+      ],
+      "correctIndex": 2,
+      "explanation": "For x>0, d(ln x)/dx=1/x. Since 4 is in that domain, f′(4)=1/4. The function value ln 4 is not the requested slope. A: This uses the input as the slope rather than its reciprocal. B: This is the function height, not its derivative. C: The derivative 1/x is evaluated at the positive input 4. D: The logarithm derivative has a positive sign on its domain."
+    },
+    {
+      "id": "calc-ab-2-7-005",
+      "prompt": "Angles are in radians. For y=2sin x−3cos x+eˣ, what is dy/dx at x=0?",
+      "options": [
+        "2",
+        "1",
+        "0",
+        "3"
+      ],
+      "correctIndex": 3,
+      "explanation": "Apply the known basic derivatives and linearity: y′=2cos x+3sin x+eˣ. At 0, cosine is 1, sine is 0 and e⁰ is 1. Thus y′(0)=2+0+1=3. A: This omits the exponential derivative contribution e⁰=1. B: This drops the sine term’s derivative contribution 2cos 0=2. C: This treats the cosine derivative as cosine, wrongly including −3 instead of zero at 0. D: The derivative is 2cos x+3sin x+eˣ, giving 2+0+1."
+    },
+    {
+      "id": "calc-ab-2-7-006",
+      "prompt": "Angles are in radians. For x>0, h(x)=cos x+ln x. Which formula is h′(x)?",
+      "options": [
+        "−sin x+1/x",
+        "sin x+1/x",
+        "−sin x+ln x",
+        "cos x+1/x"
+      ],
+      "correctIndex": 0,
+      "explanation": "Differentiate the two terms separately on their common domain x>0. The cosine contributes −sin x and ln x contributes 1/x. Therefore h′(x)=−sin x+1/x. A: The sum rule combines the cosine derivative and natural-log derivative. B: This loses the negative sign in the cosine derivative. C: This leaves the logarithm term undifferentiated. D: This leaves the cosine term undifferentiated."
+    },
+    {
+      "id": "calc-ab-2-7-007",
+      "prompt": "Angles are in radians. Which line is tangent to y=cos x at x=π/2?",
+      "options": [
+        "y=x−π/2",
+        "y=−x+π/2",
+        "y=−x",
+        "y=π/2"
+      ],
+      "correctIndex": 1,
+      "explanation": "At x=π/2 the height is cos(π/2)=0 and the derivative is −sin(π/2)=−1. The tangent equation y−0=−1(x−π/2) simplifies to y=−x+π/2. A: This passes through the point but has the opposite slope. B: The point is (π/2,0) and the slope is −sin(π/2)=−1. C: This has slope −1 but fails to pass through the tangent point. D: This is horizontal at the wrong height."
+    },
+    {
+      "id": "calc-ab-2-7-008",
+      "prompt": "Let f(x)=aeˣ+b, where a and b are constants. If f(0)=5 and f′(0)=2, which pair is correct?",
+      "options": [
+        "a=5, b=2",
+        "a=3, b=2",
+        "a=2, b=3",
+        "a=2, b=5"
+      ],
+      "correctIndex": 2,
+      "explanation": "Since f′(x)=aeˣ, the derivative condition at 0 gives a=2. The value condition is a+b=5, so b=3. Differentiating b contributes zero. A: This confuses the point height with the exponential coefficient and gives height 7. B: The height is 5 but the derivative at 0 would be 3. C: The slope condition gives a=2, and the height condition then gives b=3. D: The derivative is correct but the height becomes 7."
+    },
+    {
+      "id": "calc-ab-2-7-009",
+      "prompt": "Angles are in radians. Which function has a horizontal tangent at x=0?",
+      "options": [
+        "f(x)=sin x",
+        "f(x)=eˣ",
+        "f(x)=ln x",
+        "f(x)=cos x"
+      ],
+      "correctIndex": 3,
+      "explanation": "A horizontal tangent at an input requires a defined point and derivative zero there. Cosine meets both conditions at 0. Sine and the natural exponential have slope 1, and the natural logarithm has no real point at that input. A: Its derivative at 0 is cos 0=1. B: Its derivative at 0 is e⁰=1. C: It is not defined at 0 on the real domain. D: It is defined at 0 and has derivative −sin 0=0."
+    },
+    {
+      "id": "calc-ab-2-7-010",
+      "prompt": "Which derivative statement includes the correct real domain for the function f(x)=ln x?",
+      "options": [
+        "f′(x)=1/x for x>0.",
+        "f′(x)=1/x for every nonzero real x.",
+        "f′(x)=−1/x for x>0.",
+        "f′(0)=0 because ln x becomes small near 0."
+      ],
+      "correctIndex": 0,
+      "explanation": "The real natural logarithm has domain x>0, and its derivative on that domain is 1/x. A derivative expression being algebraically defined elsewhere does not extend the domain of the original function. A: The original natural logarithm and its derivative are considered on the positive real domain. B: The algebraic derivative expression extends to negative numbers, but the original real ln x does not. C: This gives the wrong sign on the original domain. D: ln 0 is undefined and ln x decreases without bound as x→0⁺."
+    },
+    {
+      "id": "calc-ab-2-7-011",
+      "prompt": "Angles are in radians. For f(x)=sin x−x, what is f′(π)?",
+      "options": [
+        "0",
+        "−2",
+        "2",
+        "1"
+      ],
+      "correctIndex": 1,
+      "explanation": "Differentiate the two terms to get f′(x)=cos x−1. Since cos π=−1, f′(π)=−1−1=−2. Substituting sin π into the original function would compute a height instead of a slope. A: This would use cos π=1 instead of −1. B: The derivative cos x−1 gives −1−1 at π. C: This reverses both signs in the evaluated derivative. D: This omits the subtraction and the actual cosine value."
+    }
+  ]
+}

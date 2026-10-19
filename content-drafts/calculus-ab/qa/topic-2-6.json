@@ -1,0 +1,479 @@
+{
+  "topicNumber": "2.6",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "84d1ed7e73b79bf8184395c453c21fabb70d9007a0a885d7512c2e9a0d6eb3b5",
+  "scopeReview": "CED FUN-3.A constant, sum, difference and constant-multiple derivative rules combined with the established power rule. No product, quotient or chain differentiation rules assessed. Includes derivative-table interpretation and horizontal tangent slope zeros without extrema tests.",
+  "varietyReview": "Varied polynomial/radical/reciprocal sums, weighted supplied slopes, vertical translations, negative-input evaluation, a nontrivial constant, sum-rule error diagnosis, an original derivative table, parameter solving, heights versus slopes and horizontal tangent locations.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-2-6-001",
+      "independentReasoning": "Original-function centered differences at −1,0,1 independently corroborate rates 26,0,14. Only the selected candidate matches all three. In particular, the sign at a negative input and the zero contribution of the constant are checked separately.",
+      "optionReview": [
+        "This retains the constant instead of differentiating it to zero.",
+        "This lowers powers without multiplying by their original exponents.",
+        "Differentiate each power, retain its coefficient and sign, and replace the constant’s derivative by zero.",
+        "This changes the negative quadratic coefficient to positive."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "add",
+          [
+            "mul",
+            4,
+            [
+              "pow",
+              "x",
+              5
+            ]
+          ],
+          [
+            "mul",
+            -3,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          8
+        ],
+        "samplePoints": [
+          -1,
+          0,
+          1
+        ],
+        "step": 0.00001,
+        "tolerance": 0.000001,
+        "candidates": {
+          "20x⁴−6x": [
+            "sub",
+            [
+              "mul",
+              20,
+              [
+                "pow",
+                "x",
+                4
+              ]
+            ],
+            [
+              "mul",
+              6,
+              "x"
+            ]
+          ],
+          "20x⁴−6x+8": [
+            "add",
+            [
+              "sub",
+              [
+                "mul",
+                20,
+                [
+                  "pow",
+                  "x",
+                  4
+                ]
+              ],
+              [
+                "mul",
+                6,
+                "x"
+              ]
+            ],
+            8
+          ],
+          "4x⁴−3x": [
+            "sub",
+            [
+              "mul",
+              4,
+              [
+                "pow",
+                "x",
+                4
+              ]
+            ],
+            [
+              "mul",
+              3,
+              "x"
+            ]
+          ],
+          "20x⁴+6x": [
+            "add",
+            [
+              "mul",
+              20,
+              [
+                "pow",
+                "x",
+                4
+              ]
+            ],
+            [
+              "mul",
+              6,
+              "x"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-2-6-002",
+      "independentReasoning": "Check the reciprocal sign using the increasing function −2/x on positive inputs, and corroborate the whole sum from original-function differences at 1/2,1,4. The numerical comparisons use the original sum, not the differentiated candidate, and exact rules establish the formula.",
+      "optionReview": [
+        "The two negative factors from −2x⁻¹ multiply to a positive derivative term.",
+        "This leaves the square-root term undifferentiated.",
+        "This leaves the constant term undifferentiated.",
+        "The constant vanishes, the reciprocal term contributes positive 2/x², and the root contributes 1/(2√x)."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "add",
+          7,
+          [
+            "div",
+            -2,
+            "x"
+          ],
+          [
+            "sqrt",
+            "x"
+          ]
+        ],
+        "samplePoints": [
+          0.5,
+          1,
+          4
+        ],
+        "step": 0.00001,
+        "tolerance": 0.00001,
+        "candidates": {
+          "2/x²+1/(2√x)": [
+            "add",
+            [
+              "div",
+              2,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ],
+            [
+              "div",
+              1,
+              [
+                "mul",
+                2,
+                [
+                  "sqrt",
+                  "x"
+                ]
+              ]
+            ]
+          ],
+          "−2/x²+1/(2√x)": [
+            "add",
+            [
+              "div",
+              -2,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ],
+            [
+              "div",
+              1,
+              [
+                "mul",
+                2,
+                [
+                  "sqrt",
+                  "x"
+                ]
+              ]
+            ]
+          ],
+          "2/x²+√x": [
+            "add",
+            [
+              "div",
+              2,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ],
+            [
+              "sqrt",
+              "x"
+            ]
+          ],
+          "7+2/x²+1/(2√x)": [
+            "add",
+            7,
+            [
+              "div",
+              2,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ],
+            [
+              "div",
+              1,
+              [
+                "mul",
+                2,
+                [
+                  "sqrt",
+                  "x"
+                ]
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-2-6-003",
+      "independentReasoning": "Recompute the two weighted slopes as −3 and 10 before subtraction. Testing the three common error operations gives 7,−7 and −4, exactly the distinct distractors. The supplied quantities are derivative values, so no unknown f(4) or g(4) is substituted.",
+      "optionReview": [
+        "Derivative linearity gives 3(−1)−2(5), and the constant contributes zero.",
+        "This changes subtraction of 2g′ into addition.",
+        "This loses the negative sign of f′(4).",
+        "This incorrectly keeps the constant 9 as a derivative contribution."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          3,
+          2,
+          9,
+          4,
+          -1,
+          5
+        ],
+        "expression": [
+          "sub",
+          [
+            "mul",
+            3,
+            -1
+          ],
+          [
+            "mul",
+            2,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-2-6-004",
+      "independentReasoning": "Compare the actual increments before taking a limit; the constants cancel identically for every nonzero h. As a counterexample to the incorrect alternatives, take f(x)=x² at x=1, where both f and g have slope 2 rather than 13,22 or 0.",
+      "optionReview": [
+        "The derivative of the constant offset is zero, not 11.",
+        "A constant vertical shift cancels from every output increment.",
+        "Adding a constant is not multiplying the function by it.",
+        "A vertical shift does not make an arbitrary varying function constant."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "g′(x)=f′(x)"
+      }
+    },
+    {
+      "questionId": "calc-ab-2-6-005",
+      "independentReasoning": "Compute the odd-power sign independently and evaluate a centered difference of the original quartic at −1. It corroborates −14. The function height is separately 3+2+1=6, which verifies the height/rate distractor rather than using it as a slope.",
+      "optionReview": [
+        "This loses the negative sign of the odd power (−1)³.",
+        "This incorrectly adds the constant term’s value 1 to the derivative.",
+        "The derivative is 12x³−2, giving −12−2 at −1.",
+        "This is f(−1), the function height rather than its slope."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": -1,
+        "step": 0.0001,
+        "expression": [
+          "add",
+          [
+            "mul",
+            3,
+            [
+              "pow",
+              "x",
+              4
+            ]
+          ],
+          [
+            "mul",
+            -2,
+            "x"
+          ],
+          1
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-2-6-006",
+      "independentReasoning": "The original expression contains no variable dependence. Evaluating it at distinct inputs gives exactly the same output, so centered differences vanish. The actual constant is neither 0 nor 1, but that height is irrelevant to its derivative.",
+      "optionReview": [
+        "This treats the fixed number π as the variable x.",
+        "This keeps the original function value rather than its rate.",
+        "A nonzero constant does not have unit slope.",
+        "The entire expression is a fixed real constant independent of x."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "sub",
+          [
+            "pow",
+            "pi",
+            2
+          ],
+          [
+            "sqrt",
+            5
+          ]
+        ],
+        "samplePoints": [
+          -1,
+          0,
+          2
+        ],
+        "candidates": {
+          "0": 0,
+          "1": 1,
+          "2π": [
+            "mul",
+            2,
+            "pi"
+          ],
+          "π²−√5": [
+            "sub",
+            [
+              "pow",
+              "pi",
+              2
+            ],
+            [
+              "sqrt",
+              5
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-2-6-007",
+      "independentReasoning": "At x=0 the original difference quotient is (h²+h)/h=h+1, whose limit is 1. The student’s candidate gives 0 there, independently disproving it. The sum-rule result gives the correct local limit and the other candidates fail basic power rules.",
+      "optionReview": [
+        "The linear term contributes an added slope 1 rather than a multiplicative factor.",
+        "There is no such rule for sums.",
+        "Both variable terms must be differentiated.",
+        "Adding exponents is not a rule for differentiating a sum."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The derivative of a sum is the sum of derivatives, giving 2x+1."
+      }
+    },
+    {
+      "questionId": "calc-ab-2-6-008",
+      "independentReasoning": "Select the requested row before applying weights 1 and −3. Independently multiply 5 by 3 and subtract it from −1. The two neighboring rows yield different combinations, so an index mix-up cannot be accepted as the stated answer.",
+      "optionReview": [
+        "This adds the scaled g derivative instead of subtracting it.",
+        "The row x=1 gives f′=−1 and g′=5, so −1−3·5=−16.",
+        "This subtracts 3 without multiplying by the tabulated derivative 5.",
+        "This uses the row x=0, where 2−3·3=−7, instead of the requested row x=1."
+      ],
+      "check": {
+        "type": "table-linear-derivative",
+        "inputX": 1,
+        "weights": [
+          1,
+          -3
+        ]
+      },
+      "tableSha256": "245c979e91f5f999c3d7d70653bf45af1486d5b1a73ca05f1c4ba8de31afe3ab"
+    },
+    {
+      "questionId": "calc-ab-2-6-009",
+      "independentReasoning": "Substitute each proposed parameter into 2a·2+3: the outputs are 11,19,−5 and 35, so exactly one meets the condition. A raw quotient of the selected original polynomial at 2 also has limiting slope 11.",
+      "optionReview": [
+        "This gives derivative 19 at the target input.",
+        "This gives derivative −5 at the target input.",
+        "The derivative condition is 4a+3=11, so a=2.",
+        "This stops at 4a=8 without dividing by 4."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          2,
+          3,
+          5,
+          11
+        ],
+        "expression": [
+          "div",
+          [
+            "sub",
+            11,
+            3
+          ],
+          [
+            "mul",
+            2,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-2-6-010",
+      "independentReasoning": "Take explicit local lines f(x)=2+3(x−a) and g(x)=7+3(x−a). Their difference is the constant −5, whose value and derivative are exactly the claimed pair. This provides an independent concrete model of the given data.",
+      "optionReview": [
+        "This interchanges the function-value difference and derivative difference.",
+        "This computes the height correctly but fails to subtract the two slopes.",
+        "This reverses the value subtraction and adds instead of subtracting slopes.",
+        "The height difference is 2−7, while the slope difference is 3−3."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "(−5,0)"
+      }
+    },
+    {
+      "questionId": "calc-ab-2-6-011",
+      "independentReasoning": "Substitute both proposed roots into the derivative to confirm zero, and use the exact factorization to rule out any additional roots. The local function heights are 9 and 5, showing that horizontal tangent locations are not necessarily zeros of f itself. No extremum classification is asserted.",
+      "optionReview": [
+        "The derivative factors as 3x(x−2), whose zeros are 0 and 2.",
+        "This confuses a coefficient or function factor with the derivative’s second zero.",
+        "The derivative at 3 is 9, not zero.",
+        "The derivative has two real zeros."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "x=0 and x=2"
+      }
+    }
+  ]
+}

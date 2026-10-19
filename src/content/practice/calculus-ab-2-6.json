@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 2,
+  "topicId": "topic-2-6",
+  "questions": [
+    {
+      "id": "calc-ab-2-6-001",
+      "prompt": "Differentiate f(x)=4x⁵−3x²+8 using the constant-multiple, sum and difference rules.",
+      "options": [
+        "20x⁴−6x+8",
+        "4x⁴−3x",
+        "20x⁴−6x",
+        "20x⁴+6x"
+      ],
+      "correctIndex": 2,
+      "explanation": "Differentiate term by term: d(4x⁵)/dx=20x⁴, d(−3x²)/dx=−6x and d8/dx=0. Adding the derivative terms gives f′(x)=20x⁴−6x. A: This retains the constant instead of differentiating it to zero. B: This lowers powers without multiplying by their original exponents. C: Differentiate each power, retain its coefficient and sign, and replace the constant’s derivative by zero. D: This changes the negative quadratic coefficient to positive."
+    },
+    {
+      "id": "calc-ab-2-6-002",
+      "prompt": "For x>0, let f(x)=7−2/x+√x. Which formula is f′(x)?",
+      "options": [
+        "−2/x²+1/(2√x)",
+        "2/x²+√x",
+        "7+2/x²+1/(2√x)",
+        "2/x²+1/(2√x)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Write the variable terms as −2x⁻¹+x¹ᐟ². Their derivatives are (−2)(−1)x⁻²=2/x² and (1/2)x⁻¹ᐟ²=1/(2√x). The constant 7 contributes zero. The stated positive domain keeps every term defined. A: The two negative factors from −2x⁻¹ multiply to a positive derivative term. B: This leaves the square-root term undifferentiated. C: This leaves the constant term undifferentiated. D: The constant vanishes, the reciprocal term contributes positive 2/x², and the root contributes 1/(2√x)."
+    },
+    {
+      "id": "calc-ab-2-6-003",
+      "prompt": "Let h(x)=3f(x)−2g(x)+9. If f′(4)=−1 and g′(4)=5, what is h′(4)?",
+      "options": [
+        "−13",
+        "7",
+        "−7",
+        "−4"
+      ],
+      "correctIndex": 0,
+      "explanation": "Differentiate the linear combination: h′=3f′−2g′. Evaluate at 4 to get h′(4)=3(−1)−2(5)=−3−10=−13. No function values or second derivatives are needed. A: Derivative linearity gives 3(−1)−2(5), and the constant contributes zero. B: This changes subtraction of 2g′ into addition. C: This loses the negative sign of f′(4). D: This incorrectly keeps the constant 9 as a derivative contribution."
+    },
+    {
+      "id": "calc-ab-2-6-004",
+      "prompt": "Suppose f is differentiable on an interval and g(x)=f(x)+11 throughout it. Which relationship must hold there?",
+      "options": [
+        "g′(x)=f′(x)+11",
+        "g′(x)=f′(x)",
+        "g′(x)=11f′(x)",
+        "g′(x)=0 at every input"
+      ],
+      "correctIndex": 1,
+      "explanation": "The derivative of g is f′ plus the derivative of 11, which is zero. Directly, g(x+h)−g(x)=f(x+h)+11−f(x)−11=f(x+h)−f(x), so the derivative quotients and their limits agree. A: The derivative of the constant offset is zero, not 11. B: A constant vertical shift cancels from every output increment. C: Adding a constant is not multiplying the function by it. D: A vertical shift does not make an arbitrary varying function constant."
+    },
+    {
+      "id": "calc-ab-2-6-005",
+      "prompt": "For f(x)=3x⁴−2x+1, find f′(−1).",
+      "options": [
+        "10",
+        "−13",
+        "−14",
+        "6"
+      ],
+      "correctIndex": 2,
+      "explanation": "Using the sum and constant-multiple rules, f′(x)=12x³−2. At x=−1, the cubic is −1, so f′(−1)=−12−2=−14. The point value f(−1)=6 is a separate quantity. A: This loses the negative sign of the odd power (−1)³. B: This incorrectly adds the constant term’s value 1 to the derivative. C: The derivative is 12x³−2, giving −12−2 at −1. D: This is f(−1), the function height rather than its slope."
+    },
+    {
+      "id": "calc-ab-2-6-006",
+      "prompt": "Let C(x)=π²−√5 for every real x. What is C′(x)?",
+      "options": [
+        "2π",
+        "π²−√5",
+        "1",
+        "0"
+      ],
+      "correctIndex": 3,
+      "explanation": "Both π² and √5 are fixed numbers, so C is constant. Every difference C(x+h)−C(x) is zero, and the derivative is therefore zero at every input. A: This treats the fixed number π as the variable x. B: This keeps the original function value rather than its rate. C: A nonzero constant does not have unit slope. D: The entire expression is a fixed real constant independent of x."
+    },
+    {
+      "id": "calc-ab-2-6-007",
+      "prompt": "A student differentiates x²+x by multiplying the separate derivatives and obtains 2x. Which correction is justified?",
+      "options": [
+        "The derivative of a sum is the sum of derivatives, giving 2x+1.",
+        "The student is correct because differentiation always multiplies term rates.",
+        "The derivative is x²+1 because only the second term changes.",
+        "The derivative is 3x² because exponents should be added."
+      ],
+      "correctIndex": 0,
+      "explanation": "Apply linearity to the sum: d(x²+x)/dx=d(x²)/dx+d(x)/dx=2x+1. Multiplying 2x by 1 would be an unrelated operation and drops the added contribution of the linear term. A: The linear term contributes an added slope 1 rather than a multiplicative factor. B: There is no such rule for sums. C: Both variable terms must be differentiated. D: Adding exponents is not a rule for differentiating a sum."
+    },
+    {
+      "id": "calc-ab-2-6-008",
+      "prompt": "Use the derivative table below. If h(x)=f(x)−3g(x), what is h′(1)?",
+      "options": [
+        "14",
+        "−16",
+        "−4",
+        "−7"
+      ],
+      "correctIndex": 1,
+      "explanation": "Derivative linearity gives h′(1)=f′(1)−3g′(1). From the actual x=1 row, these values are −1 and 5, yielding −1−15=−16. The table contains derivatives already; do not differentiate the displayed numbers again. A: This adds the scaled g derivative instead of subtracting it. B: The row x=1 gives f′=−1 and g′=5, so −1−3·5=−16. C: This subtracts 3 without multiplying by the tabulated derivative 5. D: This uses the row x=0, where 2−3·3=−7, instead of the requested row x=1."
+    },
+    {
+      "id": "calc-ab-2-6-009",
+      "prompt": "Let f(x)=ax²+3x−5. Which a gives f′(2)=11?",
+      "options": [
+        "4",
+        "−2",
+        "2",
+        "8"
+      ],
+      "correctIndex": 2,
+      "explanation": "Differentiating term by term gives f′(x)=2ax+3. At input 2, this becomes 4a+3. Solve 4a+3=11 to get a=(11−3)/4=2. The constant −5 contributes zero. A: This gives derivative 19 at the target input. B: This gives derivative −5 at the target input. C: The derivative condition is 4a+3=11, so a=2. D: This stops at 4a=8 without dividing by 4."
+    },
+    {
+      "id": "calc-ab-2-6-010",
+      "prompt": "At an input a, f(a)=2, g(a)=7 and f′(a)=g′(a)=3. For h=f−g, which pair (h(a), h′(a)) is correct?",
+      "options": [
+        "(0,−5)",
+        "(−5,3)",
+        "(5,6)",
+        "(−5,0)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate the two requested quantities separately: h(a)=f(a)−g(a)=2−7=−5 and h′(a)=f′(a)−g′(a)=3−3=0. Matching slopes at one input does not require the function heights to be equal there. A: This interchanges the function-value difference and derivative difference. B: This computes the height correctly but fails to subtract the two slopes. C: This reverses the value subtraction and adds instead of subtracting slopes. D: The height difference is 2−7, while the slope difference is 3−3."
+    },
+    {
+      "id": "calc-ab-2-6-011",
+      "prompt": "For f(x)=x³−3x²+9, at which inputs are the tangent lines horizontal?",
+      "options": [
+        "x=0 and x=2",
+        "x=0 and x=3",
+        "x=3 only",
+        "No real inputs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Differentiate each term to get f′(x)=3x²−6x. A horizontal tangent requires slope zero, so solve 3x(x−2)=0. The solutions are x=0 and x=2. The constant 9 shifts heights but does not change these slope locations. A: The derivative factors as 3x(x−2), whose zeros are 0 and 2. B: This confuses a coefficient or function factor with the derivative’s second zero. C: The derivative at 3 is 9, not zero. D: The derivative has two real zeros."
+    }
+  ]
+}

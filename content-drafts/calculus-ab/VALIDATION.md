@@ -1,5 +1,9 @@
 # Calculus AB validation and continuation notes
 
+## Topics 2.6–2.7 checkpoint
+
+Published 22 original MCQs on derivative linearity and basic sine, cosine, exponential and logarithm derivatives. All 253 saved questions pass structural validation (144 programmatic models, 109 recorded reasoning reviews); 69 unit tests, production build, TypeScript, standard smoke and all 81 Calculus Practice/workspace scopes pass. Both full topic browser sessions displayed all four option explanations and finished 11/11. The first automated selection immediately after navigation to 2.6 preceded client initialization; after inspecting the disabled state and changing the selection, the full session passed. Subsequent navigation and testing were separated to allow normal initialization. No application error or permanent preview fix is claimed. Table-row coefficients are checked against the actual table and mutation-tested. All trigonometric angles are radians and logarithm domains remain positive. Existing questions, Chemistry and student storage were preserved. Next: 2.8.
+
 ## Continuation from 0c35397: Topic 2.3
 
 ### Topics 2.4–2.5 checkpoint

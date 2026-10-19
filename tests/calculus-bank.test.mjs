@@ -190,3 +190,9 @@ test('power-rule corroborations include a valid zero candidate and real fraction
   const review=structuredClone(qa.questions[3]);review.check.candidates[batch.questions[3].options[batch.questions[3].correctIndex]]=['div',1,['mul',3,['pow','x',2]]];
   assert.throws(()=>verifyCalculusQuestion(batch.questions[3],review),/unique derivative model/);
 });
+test('linear derivative tables read the requested row and reject reversed coefficient signs',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-2-6');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-2-6.json','utf8'));
+  verifyCalculusQuestion(batch.questions[7],qa.questions[7]);
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[7],{...qa.questions[7],check:{...qa.questions[7].check,weights:[1,3]}}),/derivative combination key/);
+});

@@ -658,5 +658,30 @@
         "14.5"
       ]
     ]
+  },
+  "calc-ab-2-6-008": {
+    "caption": "Derivative values of differentiable functions f and g.",
+    "headers": [
+      "x",
+      "f′(x)",
+      "g′(x)"
+    ],
+    "rows": [
+      [
+        "0",
+        "2",
+        "3"
+      ],
+      [
+        "1",
+        "−1",
+        "5"
+      ],
+      [
+        "2",
+        "4",
+        "−2"
+      ]
+    ]
   }
 }

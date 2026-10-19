@@ -1,0 +1,356 @@
+{
+  "topicNumber": "2.7",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "2bc0d07132d5ea5aa7c44f91a72b4519fa044570787e5c2d6ddf8421df31d248",
+  "scopeReview": "CED FUN-3.A basic derivatives of cos x, sin x, e^x and ln x, using prior linearity rules. All trig angles in radians; real logarithm domain is positive. No nontrivial inner functions requiring the chain rule.",
+  "varietyReview": "Basic function formulas, point slopes, a signed linear combination, a mixed trig/log sum, a tangent line, two exponential parameters, horizontal-tangent domain screening, logarithm domain and a special-angle slope.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-2-7-001",
+      "independentReasoning": "Use the original sine function in centered quotients at −1,0,1. They match cosine and distinguish all alternate formulas across those inputs. The defining quotient at 0 independently verifies the sign of the selected formula.",
+      "optionReview": [
+        "This introduces an incorrect negative sign.",
+        "This retains the original function rather than its derivative.",
+        "This is the cosine derivative, not the sine derivative.",
+        "The radian sine derivative is cosine."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "sin",
+          "x"
+        ],
+        "samplePoints": [
+          -1,
+          0,
+          1
+        ],
+        "step": 0.0001,
+        "candidates": {
+          "cos x": [
+            "cos",
+            "x"
+          ],
+          "−cos x": [
+            "mul",
+            -1,
+            [
+              "cos",
+              "x"
+            ]
+          ],
+          "sin x": [
+            "sin",
+            "x"
+          ],
+          "−sin x": [
+            "mul",
+            -1,
+            [
+              "sin",
+              "x"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-2-7-002",
+      "independentReasoning": "Centered differences of the original cosine at −1,1/2,2 corroborate the selected function. A sine addition identity in the difference quotient gives the same negative sign, independently of a memorized sign convention.",
+      "optionReview": [
+        "Differentiating cosine introduces a negative sine term.",
+        "This misses the required negative sign.",
+        "Cosine is not equal to its derivative function.",
+        "The negative sign is present but the trigonometric function is wrong."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "cos",
+          "x"
+        ],
+        "samplePoints": [
+          -1,
+          0.5,
+          2
+        ],
+        "step": 0.0001,
+        "candidates": {
+          "−sin x": [
+            "mul",
+            -1,
+            [
+              "sin",
+              "x"
+            ]
+          ],
+          "sin x": [
+            "sin",
+            "x"
+          ],
+          "cos x": [
+            "cos",
+            "x"
+          ],
+          "−cos x": [
+            "mul",
+            -1,
+            [
+              "cos",
+              "x"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-2-7-003",
+      "independentReasoning": "The defining quotient at 0 is (eʰ−1)/h, whose known limit is 1. Centered differences of the original exponential corroborate this value. No inner nontrivial function or chain-rule factor occurs.",
+      "optionReview": [
+        "The input is zero, but the exponential’s slope there is not zero.",
+        "The exponential is its own derivative, and e⁰=1.",
+        "There is no factor of 2 in this derivative.",
+        "The exponential derivative is positive, not negative."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 0,
+        "step": 0.0001,
+        "expression": [
+          "exp",
+          "x"
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-2-7-004",
+      "independentReasoning": "The point quotient can be rewritten as ln(1+h/4)/h, whose limit is 1/4 using the natural-log defining limit. Original-function centered differences near 4 corroborate the same value while staying inside the positive domain.",
+      "optionReview": [
+        "This uses the input as the slope rather than its reciprocal.",
+        "This is the function height, not its derivative.",
+        "The derivative 1/x is evaluated at the positive input 4.",
+        "The logarithm derivative has a positive sign on its domain."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 4,
+        "step": 0.0001,
+        "expression": [
+          "ln",
+          "x"
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-2-7-005",
+      "independentReasoning": "Centered differences of the complete original sum corroborate slope 3 at 0. Separately verify the double negative in the cosine term: (−3)(−sin x)=+3sin x. Its value at 0 is zero, while the sine derivative supplies 2.",
+      "optionReview": [
+        "This omits the exponential derivative contribution e⁰=1.",
+        "This drops the sine term’s derivative contribution 2cos 0=2.",
+        "This treats the cosine derivative as cosine, wrongly including −3 instead of zero at 0.",
+        "The derivative is 2cos x+3sin x+eˣ, giving 2+0+1."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 0,
+        "step": 0.0001,
+        "expression": [
+          "add",
+          [
+            "mul",
+            2,
+            [
+              "sin",
+              "x"
+            ]
+          ],
+          [
+            "mul",
+            -3,
+            [
+              "cos",
+              "x"
+            ]
+          ],
+          [
+            "exp",
+            "x"
+          ]
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-2-7-006",
+      "independentReasoning": "Centered quotients of the original sum at 1/2,1,2 distinguish all four formula candidates. Each tested interval stays positive, and both original terms are differentiable there. The exact basic derivative formulas and sum rule establish the result.",
+      "optionReview": [
+        "The sum rule combines the cosine derivative and natural-log derivative.",
+        "This loses the negative sign in the cosine derivative.",
+        "This leaves the logarithm term undifferentiated.",
+        "This leaves the cosine term undifferentiated."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "add",
+          [
+            "cos",
+            "x"
+          ],
+          [
+            "ln",
+            "x"
+          ]
+        ],
+        "samplePoints": [
+          0.5,
+          1,
+          2
+        ],
+        "step": 0.0001,
+        "tolerance": 0.00001,
+        "candidates": {
+          "−sin x+1/x": [
+            "add",
+            [
+              "mul",
+              -1,
+              [
+                "sin",
+                "x"
+              ]
+            ],
+            [
+              "div",
+              1,
+              "x"
+            ]
+          ],
+          "sin x+1/x": [
+            "add",
+            [
+              "sin",
+              "x"
+            ],
+            [
+              "div",
+              1,
+              "x"
+            ]
+          ],
+          "−sin x+ln x": [
+            "add",
+            [
+              "mul",
+              -1,
+              [
+                "sin",
+                "x"
+              ]
+            ],
+            [
+              "ln",
+              "x"
+            ]
+          ],
+          "cos x+1/x": [
+            "add",
+            [
+              "cos",
+              "x"
+            ],
+            [
+              "div",
+              1,
+              "x"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-2-7-007",
+      "independentReasoning": "Check slope and point incidence independently. The selected line gives output 0 at π/2 and has slope −1. Substitution into the three alternatives reveals either a wrong slope, a wrong value or both; exact special-angle values avoid numerical rounding ambiguity.",
+      "optionReview": [
+        "This passes through the point but has the opposite slope.",
+        "The point is (π/2,0) and the slope is −sin(π/2)=−1.",
+        "This has slope −1 but fails to pass through the tangent point.",
+        "This is horizontal at the wrong height."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "y=−x+π/2"
+      }
+    },
+    {
+      "questionId": "calc-ab-2-7-008",
+      "independentReasoning": "Substitute every proposed pair into the two independently required outputs: f(0)=a+b and f′(0)=a. Only (2,3) gives both 5 and 2. The separate height/rate tests prevent accepting a pair that satisfies just one condition.",
+      "optionReview": [
+        "This confuses the point height with the exponential coefficient and gives height 7.",
+        "The height is 5 but the derivative at 0 would be 3.",
+        "The slope condition gives a=2, and the height condition then gives b=3.",
+        "The derivative is correct but the height becomes 7."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "a=2, b=3"
+      }
+    },
+    {
+      "questionId": "calc-ab-2-7-009",
+      "independentReasoning": "Check original domains before slopes. The first three functions are defined at 0, but only cosine has zero derivative. The logarithm cannot furnish a tangent at an excluded input, even though the expression 1/x resembles a derivative formula away from it.",
+      "optionReview": [
+        "Its derivative at 0 is cos 0=1.",
+        "Its derivative at 0 is e⁰=1.",
+        "It is not defined at 0 on the real domain.",
+        "It is defined at 0 and has derivative −sin 0=0."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f(x)=cos x"
+      }
+    },
+    {
+      "questionId": "calc-ab-2-7-010",
+      "independentReasoning": "At x=−1 the expression 1/x is finite, but ln(−1) is not a real function value, so no real derivative of this f exists there. At positive x the derivative is positive. The excluded endpoint 0 cannot be filled by an arbitrary derivative value.",
+      "optionReview": [
+        "The original natural logarithm and its derivative are considered on the positive real domain.",
+        "The algebraic derivative expression extends to negative numbers, but the original real ln x does not.",
+        "This gives the wrong sign on the original domain.",
+        "ln 0 is undefined and ln x decreases without bound as x→0⁺."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f′(x)=1/x for x>0."
+      }
+    },
+    {
+      "questionId": "calc-ab-2-7-011",
+      "independentReasoning": "The centered quotient of sin x−x at π independently corroborates −2. The exact identity cos π=−1 and the derivative of x equal to 1 establish the result without a calculator approximation of the answer.",
+      "optionReview": [
+        "This would use cos π=1 instead of −1.",
+        "The derivative cos x−1 gives −1−1 at π.",
+        "This reverses both signs in the evaluated derivative.",
+        "This omits the subtraction and the actual cosine value."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 3.141592653589793,
+        "step": 0.0001,
+        "expression": [
+          "sub",
+          [
+            "sin",
+            "x"
+          ],
+          "x"
+        ],
+        "tolerance": 0.00001
+      }
+    }
+  ]
+}

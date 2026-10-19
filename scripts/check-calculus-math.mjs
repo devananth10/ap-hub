@@ -116,7 +116,14 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='finite-difference-estimate') {
+  if (review.check.type==='table-linear-derivative') {
+    const check=review.check,row=practiceTables[question.id].rows.find(row=>Number(row[0].replace('−','-'))===check.inputX);assert.ok(row);
+    assert.equal(row.length,check.weights.length+1);
+    const value=check.weights.reduce((sum,weight,i)=>sum+weight*Number(row[i+1].replace('−','-')),0);
+    const matches=question.options.map(option=>Math.abs(numericalOption(option)-value)<1e-10);
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique tabular derivative combination');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' derivative combination key');
+  } else if (review.check.type==='finite-difference-estimate') {
     const check=review.check,h=check.step;assert.ok(h>0&&Number.isFinite(check.inputX));
     const rate=(evaluateExpression(check.expression,check.inputX+h)-evaluateExpression(check.expression,check.inputX-h))/(2*h);
     const matches=question.options.map(option=>Math.abs(numericalOption(option)-rate)<check.tolerance);
