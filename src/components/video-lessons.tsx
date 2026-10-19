@@ -14,8 +14,8 @@ export function VideoLessons({ resources, selectedId, onSelect, topicNumber, top
   const index = Math.max(0, resources.findIndex(resource => resource.id === selectedId));
   const resource = resources[index];
   const watchedCount = resources.filter(item => watchedVideos.includes(watchedVideoKey(item) || "")).length;
-  if (!resource) return <section className="video-card panel" aria-label="Video lessons awaiting approval">
-    <div className="video-stage video-empty"><div className="video-empty-copy"><span className="hero-eyebrow"><ShieldCheck size={15} /> CURATED LEARNING</span><h2>Your next lesson<br />starts here.</h2><p>No approved videos yet.</p><span>Lessons for this topic are coming soon. Your notes and available practice are ready below.</span></div><AcademicArt theme={artwork} compact /></div>
+  if (!resource) return <section className="video-card panel" aria-label="Video lessons coming soon">
+    <div className="video-stage video-empty"><div className="video-empty-copy"><span className="hero-eyebrow"><ShieldCheck size={15} /> CURATED LEARNING</span><h2>Your next lesson<br />starts here.</h2><p>No videos yet.</p><span>Lessons for this topic are coming soon. Your notes and available practice are ready below.</span></div><AcademicArt theme={artwork} compact /></div>
     <div className="video-info"><h2>Video lessons coming soon</h2></div>
   </section>;
   const select = (next: number, focus = false) => {
@@ -23,7 +23,7 @@ export function VideoLessons({ resources, selectedId, onSelect, topicNumber, top
     onSelect(resources[next].id);
     if (focus) document.getElementById("video-tab-" + resources[next].id)?.focus();
   };
-  return <section className="video-card panel" aria-label="Approved video lessons">
+  return <section className="video-card panel" aria-label="Video lessons">
     {resources.length > 1 && <div className="video-tabs" role="tablist" aria-label="Video lessons">{resources.map((item, position) => <button
       key={item.id} id={"video-tab-" + item.id} role="tab" aria-selected={position === index} aria-controls="selected-video-panel" tabIndex={position === index ? 0 : -1}
       title={item.title} onClick={() => select(position)} onKeyDown={event => {

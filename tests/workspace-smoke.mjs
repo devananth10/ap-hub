@@ -12,7 +12,7 @@ for(const unit of courses.find(course=>course.id==='chemistry').units){
     assert.equal(response.status,200,topic.number);
     const html=strip(await response.text());
     const videos=resourcesForTopic(resources,'chemistry',unit.number,topic.id);
-    assert.ok(html.includes(`${videos.length} approved ${videos.length===1?'video':'videos'} · 11 MCQs available`),topic.number+' actual counts');
+    assert.ok(html.includes(`${videos.length} ${videos.length===1?'video':'videos'} · 11 MCQs available`),topic.number+' actual counts');
     assert.ok(html.includes('Show Notes') && !html.includes('id="topic-notes"'),topic.number+' optional notes');
     assert.ok(html.includes('Mark as Watched') && html.includes('Watch on YouTube'),topic.number+' video actions');
     assert.equal((html.match(/class="video-play"/g)||[]).length,1,topic.number+' exactly one main player');
@@ -25,6 +25,6 @@ for(const unit of courses.find(course=>course.id==='chemistry').units){
 }
 assert.equal(total,91);
 const empty=strip(await (await fetch(`${base}/courses/calculus-ab/limits`)).text());
-assert.ok(empty.includes('No approved videos yet') && empty.includes('0 MCQs available'));
+assert.ok(empty.includes('No videos yet') && empty.includes('0 MCQs available'));
 assert.ok(!empty.includes('class="video-play"') && !empty.includes('youtube-nocookie.com/embed/'));
 console.log('PASS all 91 Chemistry workspaces: videos, topic counts, optional notes, tabs and scoped Practice; empty Calculus workspace has no player or fake questions.');

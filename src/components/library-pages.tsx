@@ -12,9 +12,9 @@ export function ResourcesPage({ resources }: { resources: PublishedResource[] })
   return <div className="page">
     <div className="eyebrow">KEEP THE GOOD STUFF CLOSE</div>
     <h1>Saved resources</h1>
-    <p className="page-description">Your saved references from the owner-approved PrepAtlas library.</p>
-    {items.length ? <div className="panel saved-resource-list">{items.map((resource) => <ResourceCard key={resource.id} resource={resource} />)}</div> : <div className="empty-state panel"><Bookmark size={34} /><h2>A home for your lightbulb moments.</h2><p>Approved resources will appear here when you bookmark them. The official catalog is currently awaiting owner approval.</p><Link className="button primary" href={lessonHref}>Explore the study workspace<ArrowRight size={17} /></Link></div>}
-    {unavailable.length > 0 && <div className="panel saved-unavailable" role="status"><h2>Saved references preserved</h2><p>{unavailable.length} saved {unavailable.length === 1 ? "reference is" : "references are"} no longer in the approved library. Their IDs remain saved on this device, but unapproved links are not displayed or opened.</p></div>}
+    <p className="page-description">Your saved references from the PrepAtlas library.</p>
+    {items.length ? <div className="panel saved-resource-list">{items.map((resource) => <ResourceCard key={resource.id} resource={resource} />)}</div> : <div className="empty-state panel"><Bookmark size={34} /><h2>A home for your lightbulb moments.</h2><p>Resources will appear here when you bookmark them. Explore a study workspace to find videos and study links.</p><Link className="button primary" href={lessonHref}>Explore the study workspace<ArrowRight size={17} /></Link></div>}
+    {unavailable.length > 0 && <div className="panel saved-unavailable" role="status"><h2>Saved references preserved</h2><p>{unavailable.length} saved {unavailable.length === 1 ? "reference is" : "references are"} no longer available in the library. Their IDs remain saved on this device, but unavailable links cannot be opened.</p></div>}
     <div className="private-bookmark-notice"><h2>Personal bookmarks · planned</h2><p>Student-added private links will have a separate collection. Saving a personal link will never publish it to the official library.</p></div>
   </div>;
 }

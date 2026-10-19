@@ -50,8 +50,8 @@ for (const [path, expected] of cases) {
   assert.ok(!/youtube-nocookie\.com\/embed\//.test(html), `${path} should not embed an unapproved video`);
   assert.ok(!html.includes("PREPATLAS MCQ") && !html.includes("OWNER-APPROVED"), "Question approval badges should never be rendered");
   if (path === "/courses/chemistry/electron-configuration") {
-    if (!chemistryResources.some((resource) => resource.kind === "video")) assert.ok(html.includes("No approved videos yet"), "Video area should explain the approval state");
-    if (!chemistryResources.length) assert.ok(html.includes("No approved resources yet"), "Resource area should explain the approval state");
+    if (!chemistryResources.some((resource) => resource.kind === "video")) assert.ok(html.includes("No videos yet"), "Video area should explain lesson availability");
+    if (!chemistryResources.length) assert.ok(html.includes("No resources yet"), "Resource area should explain availability");
     assert.ok(!html.includes('id="topic-notes"'), "Notes should be hidden by default");
   }
   if (path === "/practice?course=chemistry&unit=1&topic=moles") {

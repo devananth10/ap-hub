@@ -15,7 +15,7 @@ export function ResourceCard({ resource, onSelect, active = false }: {
     <article className={`resource-card ${active ? "active-resource" : ""}`}>
       <span className="resource-icon"><Icon size={21} strokeWidth={1.6} /></span>
       <div>
-        <span className="tiny-label">Owner-approved · {resource.kind}</span>
+        <span className="tiny-label">{resource.kind}</span>
         {onSelect ? (
           <button className="resource-link" aria-pressed={active} onClick={onSelect}>{resource.title}<Play size={13} /></button>
         ) : (
