@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 2,
+  "topicId": "topic-2-4",
+  "questions": [
+    {
+      "id": "calc-ab-2-4-001",
+      "prompt": "Which implication is always valid for an ordinary finite derivative at an interior input a?",
+      "options": [
+        "If f is differentiable at a, then f is continuous at a.",
+        "If f is continuous at a, then f is differentiable at a.",
+        "If f is differentiable at a, then f(a)=0.",
+        "If f is continuous at a, then f′(a)=0."
+      ],
+      "correctIndex": 0,
+      "explanation": "If the difference quotient tends to a finite value, write f(a+h)−f(a)=h·[f(a+h)−f(a)]/h. The first factor tends to zero and the second has a finite limit, so the output difference tends to zero. This proves continuity; the converse is not guaranteed. A: A finite derivative forces the output increment to approach zero with the input increment. B: A continuous corner such as |x−a| can lack a derivative. C: A derivative controls local change, not the function’s height. D: A continuous nonhorizontal line has a nonzero derivative."
+    },
+    {
+      "id": "calc-ab-2-4-002",
+      "prompt": "For f(x)=|x−2|, which statement about the ordinary derivative f′(2) is correct?",
+      "options": [
+        "0, because f(2)=0.",
+        "Does not exist, although f is continuous at 2.",
+        "1, because the right-hand quotient is 1.",
+        "−1, because the left-hand quotient is −1."
+      ],
+      "correctIndex": 1,
+      "explanation": "The function is continuous at 2 with value 0. Its difference quotient there is |h|/h for h≠0: it equals −1 on the left and 1 on the right. The unequal one-sided limits mean no finite two-sided derivative exists. A: A zero height does not determine a slope, and the two quotient limits disagree. B: The quotient |h|/h has limits −1 and 1 from the two increment directions. C: The ordinary derivative requires the left-hand quotient to agree. D: The ordinary derivative also requires the right-hand quotient."
+    },
+    {
+      "id": "calc-ab-2-4-003",
+      "prompt": "The real function f(x)=∛x is continuous at 0. What prevents a finite ordinary derivative at that input?",
+      "options": [
+        "The function is not defined for negative inputs.",
+        "The function value at 0 is infinite.",
+        "Its difference quotient 1/(∛h)² grows without bound, giving a vertical tangent rather than a finite slope.",
+        "Continuity requires a derivative, so it must have a finite derivative."
+      ],
+      "correctIndex": 2,
+      "explanation": "For h≠0, [∛h−0]/h=1/(∛h)² because h=(∛h)³. The denominator is positive and tends to zero from either side, so the quotient tends to +∞. This describes a vertical tangent, while the ordinary derivative requires a finite slope. A: The real cube root is defined for negative inputs as well. B: The actual value is ∛0=0. C: Both sides have an unbounded positive quotient, so no finite derivative value exists. D: The necessity goes the other way: differentiability implies continuity."
+    },
+    {
+      "id": "calc-ab-2-4-004",
+      "prompt": "Let f(x)=x² for x<1 and f(x)=x²+2 for x≥1. Why can f not be differentiable at 1?",
+      "options": [
+        "The two branch formulas are polynomials.",
+        "Its assigned value is positive.",
+        "Every piecewise function is nondifferentiable at every join.",
+        "It is discontinuous there: the left-hand limit is 1 while f(1) and the right-hand limit are 3."
+      ],
+      "correctIndex": 3,
+      "explanation": "The left branch tends to 1²=1, while the included right branch has value 1²+2=3 and right-hand limit 3. The resulting jump violates continuity at 1. Since a finite derivative would imply continuity, no finite derivative exists there. A: Polynomial branches can join differentiably when the boundary conditions match. B: A positive height does not obstruct a derivative. C: Some piecewise formulas have matching values and slopes at their joins. D: Differentiability would require continuity first."
+    },
+    {
+      "id": "calc-ab-2-4-005",
+      "prompt": "Let f(x)=(x²−1)/(x−1) with its natural domain, so f(1) is undefined. A student cancels a factor and concludes f′(1)=1. What is the error?",
+      "options": [
+        "The original function has no value at 1, so its derivative at 1 is undefined; the filled extension is a different function at that input.",
+        "Cancelling the common factor is invalid at every nonzero input.",
+        "The derivative is 2 because the limiting height is 2.",
+        "A finite derivative can exist at a point outside the function’s domain."
+      ],
+      "correctIndex": 0,
+      "explanation": "For x≠1 the formula equals x+1, but the original f still omits input 1. The definition [f(1+h)−f(1)]/h cannot be formed. Assigning the extension value 2 would produce a new continuous function with derivative 1 there; it does not describe the original missing-domain function. A: Cancellation gives nearby values but does not add the missing point to the domain. B: Cancellation is valid for the nearby inputs x≠1. C: A height is not a derivative, and the original missing value still prevents the definition. D: The difference quotient requires the actual base value f(1)."
+    },
+    {
+      "id": "calc-ab-2-4-006",
+      "prompt": "For f(x)=x|x| on the whole real line, what is f′(0)?",
+      "options": [
+        "1",
+        "0",
+        "−1",
+        "Does not exist because an absolute value always creates a corner."
+      ],
+      "correctIndex": 1,
+      "explanation": "Since f(0)=0, the quotient [h|h|−0]/h equals |h| for every h≠0. Its two-sided limit is 0. The function is therefore differentiable at 0; the presence of an absolute value symbol alone does not determine differentiability. A: The quotient is |h|, not the sign quotient |h|/h. B: Its difference quotient at 0 equals |h|, which tends to zero from both sides. C: Negative inputs do not produce a negative limiting quotient in this example. D: Multiplying by x changes the local quotient and removes the corner obstruction here."
+    },
+    {
+      "id": "calc-ab-2-4-007",
+      "prompt": "The graph below has a corner at x=0. Which description of continuity and differentiability is correct there?",
+      "options": [
+        "Differentiable but discontinuous.",
+        "Both continuous and differentiable because the point is filled.",
+        "Continuous but not differentiable: both branches meet at height 1, but their slopes are 2 and −1.",
+        "Neither continuous nor differentiable because the slopes differ."
+      ],
+      "correctIndex": 2,
+      "explanation": "The graph gives a common nearby limit and point value 1, so it is continuous. The left local slope is [1−(−3)]/[0−(−2)]=2 and the right slope is (−1−1)/(2−0)=−1. The two difference-quotient limits disagree, so f′(0) does not exist. A: Finite differentiability cannot occur without continuity. B: A filled matching point does not ensure equal branch slopes. C: The matching heights give continuity while unequal quotient limits prevent a derivative. D: Unequal slopes do not by themselves destroy continuity of the joined graph."
+    },
+    {
+      "id": "calc-ab-2-4-008",
+      "prompt": "Suppose f(a)=9 and lim(h→0) [f(a+h)−f(a)]/h=−4. Which nearby function limit is forced?",
+      "options": [
+        "lim(x→a) f(x)=−4",
+        "lim(x→a) f(x)=0",
+        "The function limit cannot be determined from these facts.",
+        "lim(x→a) f(x)=9"
+      ],
+      "correctIndex": 3,
+      "explanation": "The stated quotient limit is a finite derivative f′(a)=−4. Hence f(a+h)−f(a) tends to 0, so f(a+h) tends to f(a)=9. The slope −4 does not replace the output height. A: This confuses the limiting rate with the function height. B: It is the output increment, not necessarily the function output, that tends to zero. C: The finite derivative and the supplied point value determine the limit by continuity. D: The existing finite derivative implies continuity, so the limit equals the assigned value."
+    },
+    {
+      "id": "calc-ab-2-4-009",
+      "prompt": "Let f(x)=ax+1 for x<0 and f(x)=x²+b for x≥0. Which pair makes f differentiable at 0?",
+      "options": [
+        "a=0, b=1",
+        "a=1, b=1",
+        "a=0, b=0",
+        "a=1, b=0"
+      ],
+      "correctIndex": 0,
+      "explanation": "Differentiability first requires continuity, giving b=1. With this choice f(0)=1. The left difference quotient is (ah+1−1)/h=a, while the right quotient is (h²+1−1)/h=h→0. Thus a=0 is necessary and sufficient. A: Continuity requires b=1, and then matching quotient limits requires a=0. B: This matches heights but leaves left slope 1 and right slope 0. C: The left limiting height 1 does not match the assigned value 0. D: The height mismatch already prevents differentiability."
+    },
+    {
+      "id": "calc-ab-2-4-010",
+      "prompt": "Define f(x)=5x for x≠0 and f(0)=1. For every nonzero x, f′(x)=5. What is true at x=0?",
+      "options": [
+        "f′(0)=5 because all nearby derivative values are 5.",
+        "f′(0) does not exist, even though lim(x→0) f′(x)=5.",
+        "f′(0)=1 because f(0)=1.",
+        "f is continuous at 0 because the nearby derivatives are constant."
+      ],
+      "correctIndex": 1,
+      "explanation": "The function limit at 0 is 0, but the actual value is 1, so f is discontinuous and cannot be differentiable. Directly, [f(h)−f(0)]/h=(5h−1)/h=5−1/h has no finite limit. Nearby derivative values cannot repair the base-point mismatch. A: A limit of derivatives nearby is not automatically the derivative of a mismatched point assignment. B: The assigned value creates a discontinuity and the base-point quotient is 5−1/h. C: The function value is not its derivative. D: The nearby function values approach 0, which differs from f(0)=1."
+    },
+    {
+      "id": "calc-ab-2-4-011",
+      "prompt": "Angles are in radians. Let f(x)=x² sin(1/x) for x≠0 and f(0)=0. What is f′(0), if it exists as an ordinary finite derivative?",
+      "options": [
+        "Does not exist because sin(1/h) has no limit.",
+        "1",
+        "0",
+        "+∞"
+      ],
+      "correctIndex": 2,
+      "explanation": "For h≠0 the defining quotient is [h² sin(1/h)−0]/h=h sin(1/h). Since |h sin(1/h)|≤|h|→0, its limit is 0. Thus f is differentiable at the origin despite infinitely many oscillations nearby. A: A vanishing factor can force a product limit despite oscillation in another factor. B: A bound is not a limiting value, and the factor h shrinks the whole quotient. C: The oscillating quotient is squeezed to zero. D: The composed sine remains bounded and its multiplier tends to zero."
+    }
+  ]
+}

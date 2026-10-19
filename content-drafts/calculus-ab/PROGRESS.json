@@ -1,9 +1,9 @@
 {
   "officialTopics": 81,
   "targetQuestions": 891,
-  "completedTopics": 19,
-  "questions": 209,
-  "numeric": 120,
+  "completedTopics": 21,
+  "questions": 231,
+  "numeric": 130,
   "repeatedPromptPatterns": [],
   "topics": [
     {
@@ -138,11 +138,23 @@
       "count": 11,
       "status": "validated",
       "file": "src/content/practice/calculus-ab-2-3.json"
+    },
+    {
+      "topic": "2.4",
+      "topicId": "topic-2-4",
+      "count": 11,
+      "status": "validated",
+      "file": "src/content/practice/calculus-ab-2-4.json"
+    },
+    {
+      "topic": "2.5",
+      "topicId": "topic-2-5",
+      "count": 11,
+      "status": "validated",
+      "file": "src/content/practice/calculus-ab-2-5.json"
     }
   ],
   "missing": [
-    "2.4",
-    "2.5",
     "2.6",
     "2.7",
     "2.8",
@@ -205,9 +217,9 @@
     "8.12"
   ],
   "policy": "automatic-topic-publication-after-validation-2026-10-19",
-  "publishedQuestions": 209,
-  "publishedTopics": 19,
-  "nextTopic": "2.4",
+  "publishedQuestions": 231,
+  "publishedTopics": 21,
+  "nextTopic": "2.6",
   "withheldQuestionIds": [],
   "unresolvedConcerns": [],
   "humanReviewPerformed": false,
@@ -548,10 +560,10 @@
       "practiceRoute": "/practice?course=calculus-ab&unit=2&topic=topic-2-4",
       "file": "src/content/practice/calculus-ab-2-4.json",
       "mappingOrigin": "new canonical number-based ID",
-      "draftStatus": "not-started",
-      "validationStatus": "not-started",
-      "publicationStatus": "unpublished",
-      "questionCount": 0
+      "draftStatus": "complete",
+      "validationStatus": "passed",
+      "publicationStatus": "published",
+      "questionCount": 11
     },
     {
       "courseId": "calculus-ab",
@@ -565,10 +577,10 @@
       "practiceRoute": "/practice?course=calculus-ab&unit=2&topic=topic-2-5",
       "file": "src/content/practice/calculus-ab-2-5.json",
       "mappingOrigin": "new canonical number-based ID",
-      "draftStatus": "not-started",
-      "validationStatus": "not-started",
-      "publicationStatus": "unpublished",
-      "questionCount": 0
+      "draftStatus": "complete",
+      "validationStatus": "passed",
+      "publicationStatus": "published",
+      "questionCount": 11
     },
     {
       "courseId": "calculus-ab",

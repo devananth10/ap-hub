@@ -182,3 +182,11 @@ test('derivative estimates use actual graph coordinates and the stated finite st
   assert.throws(()=>verifyCalculusQuestion(batch.questions[3],{...qa.questions[3],check:{...qa.questions[3].check,inputX:-1}}),/local straight segment/);
   assert.throws(()=>verifyCalculusQuestion(batch.questions[5],{...qa.questions[5],check:{...qa.questions[5].check,step:0.5}}),/unique finite-difference/);
 });
+test('power-rule corroborations include a valid zero candidate and real fractional-power domains',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-2-5');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-2-5.json','utf8'));
+  for(const i of [0,1,2,3,5,7,8])verifyCalculusQuestion(batch.questions[i],qa.questions[i]);
+  assert.throws(()=>verifyCalculusQuestion({...batch.questions[7],correctIndex:(batch.questions[7].correctIndex+1)%4},qa.questions[7]),/derivative function key/);
+  const review=structuredClone(qa.questions[3]);review.check.candidates[batch.questions[3].options[batch.questions[3].correctIndex]]=['div',1,['mul',3,['pow','x',2]]];
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[3],review),/unique derivative model/);
+});

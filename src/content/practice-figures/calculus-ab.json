@@ -888,5 +888,37 @@
     ],
     "dots": [],
     "description": "The piecewise linear graph passes through (−2,−1), (0,3), (2,7) and (3,8). Near x=1 it is the straight line segment joining (0,3) and (2,7), with both coordinates and numerical axis scales shown."
+  },
+  "calc-ab-2-4-007": {
+    "xRange": [
+      -2,
+      2
+    ],
+    "yRange": [
+      -3,
+      2
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            -2,
+            -3
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            -1
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": [],
+    "description": "A continuous piecewise linear graph joins (−2,−3) to (0,1) and then to (2,−1). The two segments share their included point (0,1). Their slopes are respectively 2 on the left and −1 on the right, forming a corner at 0."
   }
 }

@@ -19,6 +19,8 @@ import topic1_16 from "../content/practice/calculus-ab-1-16.json" with { type: "
 import topic2_1 from "../content/practice/calculus-ab-2-1.json" with { type: "json" };
 import topic2_2 from "../content/practice/calculus-ab-2-2.json" with { type: "json" };
 import topic2_3 from "../content/practice/calculus-ab-2-3.json" with { type: "json" };
+import topic2_4 from "../content/practice/calculus-ab-2-4.json" with { type: "json" };
+import topic2_5 from "../content/practice/calculus-ab-2-5.json" with { type: "json" };
 export const calculusABBatches = [
   topic1_1,
   topic1_2,
@@ -38,5 +40,7 @@ export const calculusABBatches = [
   topic1_16,
   topic2_1,
   topic2_2,
-  topic2_3
+  topic2_3,
+  topic2_4,
+  topic2_5
 ];

@@ -1,0 +1,422 @@
+{
+  "topicNumber": "2.5",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "eb2590da09fd9fabd1c64a592daf7e0fb0a2369be9ac069507ba5a4114366e35",
+  "scopeReview": "CED FUN-3.A.1: derivatives of x^r by definition or direct power rule, with applicable real domains. No product/quotient/chain rules assessed. Endpoint and negative-input fractional powers use explicit real-root interpretations.",
+  "varietyReview": "Four derivative-formula tasks are complemented by a point value, unknown exponent, direct derivative at zero, a positive-input slope equation, a slope ratio, error diagnosis and fractional-power domain analysis. Numeric differences corroborate exact power/root arguments rather than prove identities from samples.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-2-5-001",
+      "independentReasoning": "Centered differences of the original x⁷ at −1, 1/2 and 1 corroborate rates 7, 7/64 and 7. All four candidate functions are compared at all three inputs; only 7x⁶ matches. The power rule supplies the exact symbolic conclusion, not finite sampling alone.",
+      "optionReview": [
+        "This lowers the exponent but omits the factor 7.",
+        "The exponent becomes the coefficient and decreases by one.",
+        "This keeps the original exponent instead of subtracting one.",
+        "This changes the wrong parts of the power-rule expression."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "pow",
+          "x",
+          7
+        ],
+        "samplePoints": [
+          -1,
+          0.5,
+          1
+        ],
+        "step": 0.00001,
+        "tolerance": 0.000001,
+        "candidates": {
+          "7x⁶": [
+            "mul",
+            7,
+            [
+              "pow",
+              "x",
+              6
+            ]
+          ],
+          "x⁶": [
+            "pow",
+            "x",
+            6
+          ],
+          "7x⁷": [
+            "mul",
+            7,
+            [
+              "pow",
+              "x",
+              7
+            ]
+          ],
+          "6x⁷": [
+            "mul",
+            6,
+            [
+              "pow",
+              "x",
+              7
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-2-5-002",
+      "independentReasoning": "Apply the rule to the rewritten exponent and independently corroborate from centered differences of the original reciprocal cube at −2,−1,2. The rate is negative on both sides because the fourth power denominator is positive. Each alternate formula differs in sign, power or coefficient.",
+      "optionReview": [
+        "This loses the negative exponent’s coefficient sign.",
+        "This increases −3 to −2 instead of decreasing it by one.",
+        "The exponent −3 decreases to −4 and becomes coefficient −3.",
+        "The power rule multiplies by −3; it does not divide by 3."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "div",
+          1,
+          [
+            "pow",
+            "x",
+            3
+          ]
+        ],
+        "samplePoints": [
+          -2,
+          -1,
+          2
+        ],
+        "step": 0.0001,
+        "tolerance": 0.000001,
+        "candidates": {
+          "−3/x⁴": [
+            "div",
+            -3,
+            [
+              "pow",
+              "x",
+              4
+            ]
+          ],
+          "3/x⁴": [
+            "div",
+            3,
+            [
+              "pow",
+              "x",
+              4
+            ]
+          ],
+          "−3/x²": [
+            "div",
+            -3,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          "1/(3x⁴)": [
+            "div",
+            1,
+            [
+              "mul",
+              3,
+              [
+                "pow",
+                "x",
+                4
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-2-5-003",
+      "independentReasoning": "Independently rationalize the point difference quotient [√(9+h)−3]/h to obtain 1/[√(9+h)+3], whose limit is 1/6. Centered original-function samples at 9 corroborate this limit. The point is strictly positive, so both sides of the derivative are in the domain.",
+      "optionReview": [
+        "This omits the factor 1/2 from the exponent.",
+        "This is the point value √9, not its derivative.",
+        "This uses the derivative denominator rather than its reciprocal.",
+        "The derivative is (1/2)x⁻¹ᐟ², whose denominator at 9 is 2√9=6."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 9,
+        "step": 0.001,
+        "expression": [
+          "sqrt",
+          "x"
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-2-5-004",
+      "independentReasoning": "An independent difference-of-cubes identity gives [∛(x+h)−∛x]/h as the reciprocal of (∛(x+h))²+∛(x+h)∛x+(∛x)², approaching the claimed denominator. Original cube-root centered samples at −8,−1,1,8 corroborate both sign and magnitude.",
+      "optionReview": [
+        "The power rule gives (1/3)x⁻²ᐟ³, interpreted with the real cube root.",
+        "This replaces the fractional power with a full square of the input.",
+        "This reverses both the coefficient and reciprocal power.",
+        "This loses the square on the cube root and gives an incorrect sign at negative inputs."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "cbrt",
+          "x"
+        ],
+        "samplePoints": [
+          -8,
+          -1,
+          1,
+          8
+        ],
+        "step": 0.0001,
+        "tolerance": 0.00001,
+        "candidates": {
+          "1/[3(∛x)²]": [
+            "div",
+            1,
+            [
+              "mul",
+              3,
+              [
+                "pow",
+                [
+                  "cbrt",
+                  "x"
+                ],
+                2
+              ]
+            ]
+          ],
+          "1/(3x²)": [
+            "div",
+            1,
+            [
+              "mul",
+              3,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ]
+          ],
+          "3(∛x)²": [
+            "mul",
+            3,
+            [
+              "pow",
+              [
+                "cbrt",
+                "x"
+              ],
+              2
+            ]
+          ],
+          "1/(3∛x)": [
+            "div",
+            1,
+            [
+              "mul",
+              3,
+              [
+                "cbrt",
+                "x"
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-2-5-005",
+      "independentReasoning": "Substituting each candidate exponent into r·1ʳ⁻¹ gives −4,−3,4 and −1/4, respectively by its value, so exactly one matches. For the chosen exponent, the independent centered quotient of x⁻⁴ at 1 is approximately −4, consistent with the symbolic result.",
+      "optionReview": [
+        "This confuses the coefficient r with the new exponent r−1.",
+        "At input 1, the power-rule derivative r·1ʳ⁻¹ equals r.",
+        "This discards the sign of the supplied slope.",
+        "The coefficient is not the reciprocal of the supplied derivative value."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "−4"
+      }
+    },
+    {
+      "questionId": "calc-ab-2-5-006",
+      "independentReasoning": "The real cube root permits negative inputs, so both quotient directions are valid. Cancelling three powers of ∛h leaves exactly one, which tends to zero. Raw-expression corroboration uses cube-root-order extrapolation, while the exact cancellation is the proof.",
+      "optionReview": [
+        "The remaining cube-root increment does not approach 1.",
+        "A fractional exponent does not automatically prevent a finite derivative at 0.",
+        "Its defining quotient equals ∛h for h≠0 and tends to zero.",
+        "The normalized increment vanishes rather than growing without bound."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 0,
+        "order": 0.3333333333333333,
+        "expression": [
+          "div",
+          [
+            "pow",
+            [
+              "cbrt",
+              "x"
+            ],
+            4
+          ],
+          "x"
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-2-5-007",
+      "independentReasoning": "Substitute all candidates into the original derivative condition and separately enforce positivity. Both ±2 give slope 12, but only 2 meets the input condition. The raw difference quotient at input 2 also tends to 12, independently corroborating that candidate.",
+      "optionReview": [
+        "This has the same slope but violates the explicitly positive-input restriction.",
+        "This gives slope 3·16=48, not 12.",
+        "This treats the desired output slope as an input and gives slope 432.",
+        "The power rule gives 3x²=12, and the positive solution is 2."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "2"
+      }
+    },
+    {
+      "questionId": "calc-ab-2-5-008",
+      "independentReasoning": "Independently take the difference quotient of the constant function 1: its numerator is always 1−1=0. Original-function numerical differences at 1/2,1,2 confirm that only the zero candidate works at every tested input.",
+      "optionReview": [
+        "The coefficient r=0 multiplies x⁻¹, giving zero on this nonzero domain.",
+        "This lowers the exponent without multiplying by its original value zero.",
+        "This retains the original constant value instead of taking its rate.",
+        "The new exponent −1 is not the derivative coefficient."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": 1,
+        "samplePoints": [
+          0.5,
+          1,
+          2
+        ],
+        "candidates": {
+          "0": 0,
+          "1": 1,
+          "1/x": [
+            "div",
+            1,
+            "x"
+          ],
+          "−1/x": [
+            "div",
+            -1,
+            "x"
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-2-5-009",
+      "independentReasoning": "Compute the actual two slopes separately: 20 at 4 and 5/2 at 1, with quotient 8. Independently, small centered differences of the original x^(5/2) give these same slopes. The ratio of original function values is 32 and is a distinct quantity.",
+      "optionReview": [
+        "This uses the exponent 2 rather than the derivative exponent 3/2.",
+        "The common coefficient 5/2 cancels, leaving 4^(3/2)=8.",
+        "This treats the slope as proportional to x rather than x^(3/2).",
+        "This uses the original function-value ratio 4^(5/2), not the slope ratio."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          4,
+          1,
+          5,
+          2
+        ],
+        "expression": [
+          "div",
+          [
+            "mul",
+            [
+              "div",
+              5,
+              2
+            ],
+            [
+              "pow",
+              4,
+              [
+                "sub",
+                [
+                  "div",
+                  5,
+                  2
+                ],
+                1
+              ]
+            ]
+          ],
+          [
+            "mul",
+            [
+              "div",
+              5,
+              2
+            ],
+            [
+              "pow",
+              1,
+              [
+                "sub",
+                [
+                  "div",
+                  5,
+                  2
+                ],
+                1
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-2-5-010",
+      "independentReasoning": "At x=2, the correct derivative equals −1/4 while the student’s expression equals −1. Centered differences of the original 1/x² at 2 corroborate −1/4. This independent numerical distinction verifies that the exponent direction, not merely notation, changes the answer.",
+      "optionReview": [
+        "The original negative exponent becomes a negative coefficient, and the new exponent is still wrong.",
+        "The rule applies on their domain, which excludes zero here.",
+        "The coefficient is correct, but the exponent was increased instead of decreased.",
+        "The sign of an exponent does not make the function equal to its derivative."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The new exponent must be −2−1=−3, so the derivative is −2x⁻³."
+      }
+    },
+    {
+      "questionId": "calc-ab-2-5-011",
+      "independentReasoning": "Represent h=u⁵ with real u. Then f(h)=u² and f(h)/h=1/u³ for u≠0, proving the opposite unbounded signs directly. For any fixed nonzero real input the root expression and power-rule denominator are well defined, so no other point is excluded.",
+      "optionReview": [
+        "The real fifth root is defined at negative inputs, and the derivative is finite there when nonzero.",
+        "The usual positive-domain power rule gives a finite derivative at every positive input.",
+        "The negative derivative exponent −3/5 is singular at zero, and the definition confirms the failure there.",
+        "Away from zero the power rule is finite, while at zero the normalized increment has unbounded magnitude with opposite signs."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "0 only."
+      }
+    }
+  ]
+}

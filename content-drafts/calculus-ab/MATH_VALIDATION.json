@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 209,
+  "questionsChecked": 231,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -601,6 +601,56 @@
       "questionId": "calc-ab-2-3-011",
       "method": "table-rate",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-4-002",
+      "method": "punctured-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-4-006",
+      "method": "punctured-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-4-011",
+      "method": "punctured-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-5-001",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-5-002",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-5-003",
+      "method": "finite-difference-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-5-004",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-5-006",
+      "method": "punctured-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-5-008",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-5-009",
+      "method": "numeric",
+      "operation": "evaluate"
     }
   ],
   "reasoningReviews": [
@@ -692,7 +742,19 @@
     "calc-ab-2-2-009",
     "calc-ab-2-2-011",
     "calc-ab-2-3-007",
-    "calc-ab-2-3-008"
+    "calc-ab-2-3-008",
+    "calc-ab-2-4-001",
+    "calc-ab-2-4-003",
+    "calc-ab-2-4-004",
+    "calc-ab-2-4-005",
+    "calc-ab-2-4-007",
+    "calc-ab-2-4-008",
+    "calc-ab-2-4-009",
+    "calc-ab-2-4-010",
+    "calc-ab-2-5-005",
+    "calc-ab-2-5-007",
+    "calc-ab-2-5-010",
+    "calc-ab-2-5-011"
   ],
   "humanReviewPerformed": false,
   "limitations": [

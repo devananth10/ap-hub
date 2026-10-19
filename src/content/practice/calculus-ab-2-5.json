@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 2,
+  "topicId": "topic-2-5",
+  "questions": [
+    {
+      "id": "calc-ab-2-5-001",
+      "prompt": "For f(x)=x⁷, which formula is f′(x)?",
+      "options": [
+        "x⁶",
+        "7x⁶",
+        "7x⁷",
+        "6x⁷"
+      ],
+      "correctIndex": 1,
+      "explanation": "The power rule gives d(xʳ)/dx=r xʳ⁻¹ where applicable. With r=7, f′(x)=7x⁷⁻¹=7x⁶. The coefficient and new exponent are separate parts of the rule. A: This lowers the exponent but omits the factor 7. B: The exponent becomes the coefficient and decreases by one. C: This keeps the original exponent instead of subtracting one. D: This changes the wrong parts of the power-rule expression."
+    },
+    {
+      "id": "calc-ab-2-5-002",
+      "prompt": "Rewrite f(x)=1/x³ as a power before differentiating. Which formula for f′ is valid for x≠0?",
+      "options": [
+        "3/x⁴",
+        "−3/x²",
+        "−3/x⁴",
+        "1/(3x⁴)"
+      ],
+      "correctIndex": 2,
+      "explanation": "For nonzero x, f(x)=x⁻³. Therefore f′(x)=−3x⁻⁴=−3/x⁴. The excluded input 0 stays excluded from the original function and its derivative. A: This loses the negative exponent’s coefficient sign. B: This increases −3 to −2 instead of decreasing it by one. C: The exponent −3 decreases to −4 and becomes coefficient −3. D: The power rule multiplies by −3; it does not divide by 3."
+    },
+    {
+      "id": "calc-ab-2-5-003",
+      "prompt": "For f(x)=√x on x>0, what is f′(9)?",
+      "options": [
+        "1/3",
+        "3",
+        "6",
+        "1/6"
+      ],
+      "correctIndex": 3,
+      "explanation": "Write √x=x¹ᐟ². The power rule gives f′(x)=(1/2)x⁻¹ᐟ²=1/(2√x) for x>0. At input 9, √9=3, so f′(9)=1/(2·3)=1/6. A: This omits the factor 1/2 from the exponent. B: This is the point value √9, not its derivative. C: This uses the derivative denominator rather than its reciprocal. D: The derivative is (1/2)x⁻¹ᐟ², whose denominator at 9 is 2√9=6."
+    },
+    {
+      "id": "calc-ab-2-5-004",
+      "prompt": "For the real cube-root function f(x)=∛x, which formula for f′(x) works at both positive and negative nonzero inputs?",
+      "options": [
+        "1/[3(∛x)²]",
+        "1/(3x²)",
+        "3(∛x)²",
+        "1/(3∛x)"
+      ],
+      "correctIndex": 0,
+      "explanation": "For x≠0, the power rule for the real cube root gives f′(x)=(1/3)x⁻²ᐟ³=1/[3(∛x)²]. The square makes this derivative positive on both sides of 0. The formula does not provide a finite derivative at 0. A: The power rule gives (1/3)x⁻²ᐟ³, interpreted with the real cube root. B: This replaces the fractional power with a full square of the input. C: This reverses both the coefficient and reciprocal power. D: This loses the square on the cube root and gives an incorrect sign at negative inputs."
+    },
+    {
+      "id": "calc-ab-2-5-005",
+      "prompt": "Let f(x)=xʳ for x>0, where r is a real constant. If f′(1)=−4, what is r?",
+      "options": [
+        "−3",
+        "−4",
+        "4",
+        "−1/4"
+      ],
+      "correctIndex": 1,
+      "explanation": "For positive x the derivative is f′(x)=r xʳ⁻¹. At x=1 every real power of 1 equals 1, so f′(1)=r. The required slope −4 therefore forces r=−4. A: This confuses the coefficient r with the new exponent r−1. B: At input 1, the power-rule derivative r·1ʳ⁻¹ equals r. C: This discards the sign of the supplied slope. D: The coefficient is not the reciprocal of the supplied derivative value."
+    },
+    {
+      "id": "calc-ab-2-5-006",
+      "prompt": "Define f(x)=(∛x)⁴ for every real x. What is f′(0)?",
+      "options": [
+        "1",
+        "Does not exist because the exponent 4/3 is fractional.",
+        "0",
+        "+∞"
+      ],
+      "correctIndex": 2,
+      "explanation": "The point value is f(0)=0. For h≠0, write h=(∛h)³ to get [f(h)−f(0)]/h=(∛h)⁴/(∛h)³=∛h. This tends to 0 from both signs, so f′(0)=0. The direct definition confirms the power-rule endpoint value. A: The remaining cube-root increment does not approach 1. B: A fractional exponent does not automatically prevent a finite derivative at 0. C: Its defining quotient equals ∛h for h≠0 and tends to zero. D: The normalized increment vanishes rather than growing without bound."
+    },
+    {
+      "id": "calc-ab-2-5-007",
+      "prompt": "For f(x)=x³, at which positive input is the tangent slope 12?",
+      "options": [
+        "−2",
+        "4",
+        "12",
+        "2"
+      ],
+      "correctIndex": 3,
+      "explanation": "The slope function is f′(x)=3x². Requiring 3x²=12 gives x²=4 and x=±2. The question asks only for a positive input, so the unique permitted answer is x=2. A: This has the same slope but violates the explicitly positive-input restriction. B: This gives slope 3·16=48, not 12. C: This treats the desired output slope as an input and gives slope 432. D: The power rule gives 3x²=12, and the positive solution is 2."
+    },
+    {
+      "id": "calc-ab-2-5-008",
+      "prompt": "For x>0, use the power rule on f(x)=x⁰. What is f′(x)?",
+      "options": [
+        "0",
+        "1/x",
+        "1",
+        "−1/x"
+      ],
+      "correctIndex": 0,
+      "explanation": "On the stated domain x>0, x⁰=1. The power rule gives f′(x)=0·x⁻¹=0. There is no zero-input ambiguity because the question explicitly restricts the domain to positive inputs. A: The coefficient r=0 multiplies x⁻¹, giving zero on this nonzero domain. B: This lowers the exponent without multiplying by its original value zero. C: This retains the original constant value instead of taking its rate. D: The new exponent −1 is not the derivative coefficient."
+    },
+    {
+      "id": "calc-ab-2-5-009",
+      "prompt": "Let f(x)=x^(5/2) on x>0. What is the ratio f′(4)/f′(1)?",
+      "options": [
+        "16",
+        "8",
+        "4",
+        "32"
+      ],
+      "correctIndex": 1,
+      "explanation": "The derivative is f′(x)=(5/2)x^(3/2). Hence f′(4)/f′(1)=[(5/2)4^(3/2)]/[(5/2)1^(3/2)]=8. The denominator is 5/2, so the ratio is defined. A: This uses the exponent 2 rather than the derivative exponent 3/2. B: The common coefficient 5/2 cancels, leaving 4^(3/2)=8. C: This treats the slope as proportional to x rather than x^(3/2). D: This uses the original function-value ratio 4^(5/2), not the slope ratio."
+    },
+    {
+      "id": "calc-ab-2-5-010",
+      "prompt": "A student writes d(x⁻²)/dx=−2x⁻¹. Which diagnosis correctly identifies the power-rule error?",
+      "options": [
+        "The coefficient should be positive 2, but the exponent −1 is correct.",
+        "Negative powers cannot be differentiated by the power rule.",
+        "The new exponent must be −2−1=−3, so the derivative is −2x⁻³.",
+        "The derivative should equal x⁻² because its exponent is negative."
+      ],
+      "correctIndex": 2,
+      "explanation": "The rule uses r as coefficient and r−1 as exponent. With r=−2, the coefficient is −2 and the exponent is −3. Thus the derivative is −2x⁻³ for x≠0, rather than the student’s −2x⁻¹. A: The original negative exponent becomes a negative coefficient, and the new exponent is still wrong. B: The rule applies on their domain, which excludes zero here. C: The coefficient is correct, but the exponent was increased instead of decreased. D: The sign of an exponent does not make the function equal to its derivative."
+    },
+    {
+      "id": "calc-ab-2-5-011",
+      "prompt": "Let f(x) be the square of the real fifth root of x, so f(x)=x^(2/5) on its real-root interpretation. At which real input does it fail to have a finite ordinary derivative?",
+      "options": [
+        "Every negative input.",
+        "Every positive input.",
+        "No real input.",
+        "0 only."
+      ],
+      "correctIndex": 3,
+      "explanation": "For nonzero x, f′(x)=(2/5)x^(−3/5), using real fifth roots, is finite. At zero the quotient is f(h)/h=|h|^(2/5)/h. Its magnitude is |h|^(−3/5), which grows without bound, with negative sign on the left and positive on the right. Thus only 0 fails the finite-derivative test. A: The real fifth root is defined at negative inputs, and the derivative is finite there when nonzero. B: The usual positive-domain power rule gives a finite derivative at every positive input. C: The negative derivative exponent −3/5 is singular at zero, and the definition confirms the failure there. D: Away from zero the power rule is finite, while at zero the normalized increment has unbounded magnitude with opposite signs."
+    }
+  ]
+}

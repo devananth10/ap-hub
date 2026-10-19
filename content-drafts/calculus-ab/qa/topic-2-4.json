@@ -1,0 +1,208 @@
+{
+  "topicNumber": "2.4",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "ad398d1ce2a910acca5eb56114fb239fbaf175fa2dd3e57d755f2768d8a1857b",
+  "scopeReview": "CED FUN-2.A.1–2: differentiability implies continuity; a continuous function can lack a finite derivative. Covers corners, vertical tangent, excluded base point, point mismatch and direct quotient tests. No later derivative rules required.",
+  "varietyReview": "Tests implication/counterexamples, a corner, cube-root vertical tangent, a jump, missing-domain cancellation, differentiable absolute-value product, an original corner graph, reconstructing a function limit, two join parameters, a limit of nearby derivatives trap and damped oscillation.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-2-4-001",
+      "independentReasoning": "Check the implication by multiplying the defining quotient back by h, rather than merely restating the theorem. Counterexamples |x−a|, f(x)=x+7 and f(x)=x verify the failure of the three stronger or reversed claims.",
+      "optionReview": [
+        "A finite derivative forces the output increment to approach zero with the input increment.",
+        "A continuous corner such as |x−a| can lack a derivative.",
+        "A derivative controls local change, not the function’s height.",
+        "A continuous nonhorizontal line has a nonzero derivative."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "If f is differentiable at a, then f is continuous at a."
+      }
+    },
+    {
+      "questionId": "calc-ab-2-4-002",
+      "independentReasoning": "Use the actual point value f(2)=0 and substitute x=2+h before dividing. Sign analysis of h gives two different exact constants. Continuity follows from |h|→0, independently of the failed derivative limit.",
+      "optionReview": [
+        "A zero height does not determine a slope, and the two quotient limits disagree.",
+        "The quotient |h|/h has limits −1 and 1 from the two increment directions.",
+        "The ordinary derivative requires the left-hand quotient to agree.",
+        "The ordinary derivative also requires the right-hand quotient."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 0,
+        "allowSideDisagreement": true,
+        "expression": [
+          "div",
+          [
+            "abs",
+            "x"
+          ],
+          "x"
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-2-4-003",
+      "independentReasoning": "Check the real cube-root identity on both signs of h; squaring the cube root makes the denominator positive. The original function tends to its finite value zero, but its normalized increment is unbounded. An infinite slope notation is not a finite ordinary derivative.",
+      "optionReview": [
+        "The real cube root is defined for negative inputs as well.",
+        "The actual value is ∛0=0.",
+        "Both sides have an unbounded positive quotient, so no finite derivative value exists.",
+        "The necessity goes the other way: differentiability implies continuity."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Its difference quotient 1/(∛h)² grows without bound, giving a vertical tangent rather than a finite slope."
+      }
+    },
+    {
+      "questionId": "calc-ab-2-4-004",
+      "independentReasoning": "Compute the two branch limits and assigned value separately. A jump remains regardless of the smoothness of each branch away from the join. The theorem’s contrapositive, discontinuity implies nondifferentiability, is used correctly; no converse is assumed.",
+      "optionReview": [
+        "Polynomial branches can join differentiably when the boundary conditions match.",
+        "A positive height does not obstruct a derivative.",
+        "Some piecewise formulas have matching values and slopes at their joins.",
+        "Differentiability would require continuity first."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It is discontinuous there: the left-hand limit is 1 while f(1) and the right-hand limit are 3."
+      }
+    },
+    {
+      "questionId": "calc-ab-2-4-005",
+      "independentReasoning": "Distinguish equality on a punctured domain from equality of functions including the base input. The original f(1) is absent. A separately filled line has a well-defined derivative, showing precisely which extra operation the student silently performed.",
+      "optionReview": [
+        "Cancellation gives nearby values but does not add the missing point to the domain.",
+        "Cancellation is valid for the nearby inputs x≠1.",
+        "A height is not a derivative, and the original missing value still prevents the definition.",
+        "The difference quotient requires the actual base value f(1)."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The original function has no value at 1, so its derivative at 1 is undefined; the filled extension is a different function at that input."
+      }
+    },
+    {
+      "questionId": "calc-ab-2-4-006",
+      "independentReasoning": "Cancel only the nonzero increment h, leaving its absolute value, not a sign ratio. The remaining quantity is nonnegative and tends to zero from both directions. This direct limit also implies continuity and disproves the proposed blanket rule about absolute values.",
+      "optionReview": [
+        "The quotient is |h|, not the sign quotient |h|/h.",
+        "Its difference quotient at 0 equals |h|, which tends to zero from both sides.",
+        "Negative inputs do not produce a negative limiting quotient in this example.",
+        "Multiplying by x changes the local quotient and removes the corner obstruction here."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 0,
+        "expression": [
+          "div",
+          [
+            "mul",
+            "x",
+            [
+              "abs",
+              "x"
+            ]
+          ],
+          "x"
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-2-4-007",
+      "independentReasoning": "Compute heights and slopes as separate tests from the actual graph vertices. The included vertex is shared, but the local rises/runs give unequal slopes. The original graph is hash-bound; its corner, rather than an invented missing point, supports the conclusion.",
+      "optionReview": [
+        "Finite differentiability cannot occur without continuity.",
+        "A filled matching point does not ensure equal branch slopes.",
+        "The matching heights give continuity while unequal quotient limits prevent a derivative.",
+        "Unequal slopes do not by themselves destroy continuity of the joined graph."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Continuous but not differentiable: both branches meet at height 1, but their slopes are 2 and −1."
+      },
+      "figureSha256": "9d10cbbb259aad77c6047bb88be678b1e0ebe5f350c0766f62e5dc6a03e3b86a"
+    },
+    {
+      "questionId": "calc-ab-2-4-008",
+      "independentReasoning": "Multiply the quotient by h and use h→0 to recover the output increment. The product tends to zero despite a nonzero derivative. Adding back the known base value gives 9, ruling out the slope, zero and insufficient-information alternatives.",
+      "optionReview": [
+        "This confuses the limiting rate with the function height.",
+        "It is the output increment, not necessarily the function output, that tends to zero.",
+        "The finite derivative and the supplied point value determine the limit by continuity.",
+        "The existing finite derivative implies continuity, so the limit equals the assigned value."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "lim(x→a) f(x)=9"
+      }
+    },
+    {
+      "questionId": "calc-ab-2-4-009",
+      "independentReasoning": "Check both boundary requirements rather than matching just the formulas’ values. Substitution of (a,b)=(0,1) gives a constant left branch and a quadratic right branch with a common zero slope. Each other pair fails a height or slope test explicitly, proving uniqueness.",
+      "optionReview": [
+        "Continuity requires b=1, and then matching quotient limits requires a=0.",
+        "This matches heights but leaves left slope 1 and right slope 0.",
+        "The left limiting height 1 does not match the assigned value 0.",
+        "The height mismatch already prevents differentiability."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "a=0, b=1"
+      }
+    },
+    {
+      "questionId": "calc-ab-2-4-010",
+      "independentReasoning": "Independently compute the function limit and the actual base-point difference quotient. The derivative of the nearby line is indeed 5, so the nearby-derivative limit exists, but it does not change the original point value or the failed quotient at 0.",
+      "optionReview": [
+        "A limit of derivatives nearby is not automatically the derivative of a mismatched point assignment.",
+        "The assigned value creates a discontinuity and the base-point quotient is 5−1/h.",
+        "The function value is not its derivative.",
+        "The nearby function values approach 0, which differs from f(0)=1."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f′(0) does not exist, even though lim(x→0) f′(x)=5."
+      }
+    },
+    {
+      "questionId": "calc-ab-2-4-011",
+      "independentReasoning": "Form the actual derivative quotient before applying a bound; one power of h cancels and one remains. The universal magnitude bound proves both-sided convergence. Very small raw-expression samples corroborate the result but cannot substitute for the squeeze argument.",
+      "optionReview": [
+        "A vanishing factor can force a product limit despite oscillation in another factor.",
+        "A bound is not a limiting value, and the factor h shrinks the whole quotient.",
+        "The oscillating quotient is squeezed to zero.",
+        "The composed sine remains bounded and its multiplier tends to zero."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 0,
+        "step": 1e-9,
+        "expression": [
+          "div",
+          [
+            "mul",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            [
+              "sin",
+              [
+                "div",
+                1,
+                "x"
+              ]
+            ]
+          ],
+          "x"
+        ]
+      }
+    }
+  ]
+}

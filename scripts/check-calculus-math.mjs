@@ -126,7 +126,7 @@ export function verifyCalculusQuestion(question, review) {
     const check=review.check,h=check.step||0.001;
     assert.ok(new Set(check.samplePoints).size>=3&&check.samplePoints.every(Number.isFinite),'Need distinct derivative verification inputs');
     const matches=question.options.map(option=>{
-      const candidate=check.candidates[option];assert.ok(candidate,'Missing derivative candidate');
+      const candidate=check.candidates[option];assert.notEqual(candidate,undefined,'Missing derivative candidate');
       return check.samplePoints.every(x=>{
         const finiteDifference=(evaluateExpression(check.expression,x+h)-evaluateExpression(check.expression,x-h))/(2*h);
         return Math.abs(evaluateExpression(candidate,x)-finiteDifference)<(check.tolerance||0.00001);
