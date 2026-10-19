@@ -133,7 +133,9 @@ Run `pnpm test:workspace` against a running server to check all 91 workspaces, a
 
 Practice scores remain session-only. A safe local history proposal is documented in [development progress](docs/DEVELOPMENT_PROGRESS.md); it has not been implemented.
 
-No authentication, payments, production database, paid AI API, or real AI summary service is included. Interface artwork, original overview prompts, recap examples and practice text remain original; the linked videos belong to their creator. AP is a trademark of College Board, which is not affiliated with this independent prototype.
+The footer now includes **Rate PrepAtlas**, and every Practice MCQ has a small red **Report this question** flag, including in the Study Workspace. Both forms save to a real private SQLite database on the local server, outside the repository and browser storage. Reviews default to private; public display requires student opt-in and owner privacy moderation. No genuine public reviews exist yet, so that section stays hidden. Owner commands, storage location, abuse limits and future persistent-hosting setup are in [docs/FEEDBACK.md](docs/FEEDBACK.md).
+
+No authentication, payments, public hosting deployment, paid AI API, or real AI summary service is included. The feedback database is operational for this local Node server; it is not a configured production hosting service. Interface artwork, original overview prompts, recap examples and practice text remain original; the linked videos belong to their creator. AP is a trademark of College Board, which is not affiliated with this independent prototype.
 
 For commits and pushes to the existing repository, see [CONTRIBUTING.md](CONTRIBUTING.md).
 

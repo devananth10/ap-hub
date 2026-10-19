@@ -17,3 +17,9 @@ playwright-report/
 .DS_Store
 Thumbs.db
 tmp/
+# Private feedback must never enter Git or static assets.
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+private-feedback/

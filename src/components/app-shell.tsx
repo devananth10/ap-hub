@@ -8,6 +8,7 @@ import { courses } from "@/lib/courses";
 import { useStudy } from "./study-provider";
 import { CourseIcon, Dialog } from "./ui";
 import { CoursePicker } from "./course-picker";
+import { FeedbackDialog } from "./feedback-dialog";
 
 const nav = [ { href: "/", label: "Overview", icon: LayoutGrid }, { href: "/courses", label: "My courses", icon: BookOpen }, { href: "/practice", label: "Practice", icon: Target }, { href: "/resources", label: "Saved resources", icon: Bookmark }, { href: "/notes", label: "My notes", icon: StickyNote } ];
 export function AppShell({ children }: { children: ReactNode }) {
@@ -15,6 +16,7 @@ export function AppShell({ children }: { children: ReactNode }) {
   const { selected, theme, toggleTheme, storageError } = useStudy();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [pickerOpen, setPickerOpen] = useState(false);
+  const [feedbackOpen, setFeedbackOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const mobileTrigger = useRef<HTMLButtonElement>(null);
@@ -61,10 +63,11 @@ export function AppShell({ children }: { children: ReactNode }) {
       </header>
       {storageError && <div className="storage-warning" role="alert">Local saving is unavailable. Keep this tab open and copy any important notes before leaving.</div>}
       <main id="main-content" className="main-content">{children}</main>
-      <footer className="app-footer"><span>A little more understanding, every day.</span><span>PrepAtlas prototype <span>·</span> Independent of College Board</span></footer>
+      <footer className="app-footer"><span>A little more understanding, every day.</span><button className="text-button feedback-entry" onClick={() => setFeedbackOpen(true)}>Rate PrepAtlas</button><span>PrepAtlas prototype <span>·</span> Independent of College Board</span></footer>
     </div>
     {pickerOpen && <CoursePicker onClose={() => setPickerOpen(false)} />}
     {searchOpen && <SearchDialog onClose={() => setSearchOpen(false)} />}
+    {feedbackOpen && <FeedbackDialog onClose={() => setFeedbackOpen(false)} />}
   </>;
 }
 

@@ -6,6 +6,7 @@ import { ArrowLeft, ArrowRight, BookOpen, RotateCcw } from "lucide-react";
 import type { PracticeEntry } from "@/lib/practice";
 import { emptyAnswer, initialSession, sessionReducer, sessionScore } from "@/lib/practice-session";
 import { PracticeQuestion } from "./practice-question";
+import { QuestionReport } from "./feedback-dialog";
 
 export function PracticeSession({ entries }: { entries: PracticeEntry[] }) {
   const [state, dispatch] = useReducer(sessionReducer, initialSession);
@@ -34,7 +35,7 @@ export function PracticeSession({ entries }: { entries: PracticeEntry[] }) {
     <div className="flex-actions"><button className="button secondary" onClick={() => { move(0); dispatch({ type: "review" }); }}>Review answers</button><button className="button primary" onClick={() => { navigating.current = true; dispatch({ type: "restart" }); }}><RotateCcw size={15} />Start again</button></div>
   </div>;
   return <>
-    <div className="practice-position"><span role="status">Question {state.index + 1} of {entries.length}</span><span>{score.answered} checked · Answers are kept while you move between questions.</span></div>
+    <div className="practice-position"><span role="status">Question {state.index + 1} of {entries.length}</span><QuestionReport key={entry.id} entry={entry} displayedNumber={state.index+1} /><span className="practice-position-help">{score.answered} checked · Answers are kept while you move between questions.</span></div>
     <p className="practice-score-policy small muted">Your first graded answer counts. Finishing also grades remaining selections; unanswered questions count as incorrect. Retries are for learning.</p>
     <div className="progress-track practice-progress" aria-hidden="true"><span style={{ width: `${(state.index + 1) / entries.length * 100}%` }} /></div>
     <div ref={panel} role="group" tabIndex={-1} className="practice-question-frame" aria-label={`Question ${state.index + 1} of ${entries.length}`}>

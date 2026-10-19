@@ -19,6 +19,7 @@ const check = async scope => {
   const legend = html.match(/<legend[^>]*>(.*?)<\/legend>/s)?.[1];
   assert.equal(decode(legend), entries[0].question.prompt, `${path}: correct topic's first question`);
   assert.ok(html.includes('Finish practice'), `${path}: final-score entry`);
+  assert.equal((html.match(/aria-label="Report this question"/g) || []).length, 1, `${path}: current MCQ has exactly one reporting flag`);
   assert.ok(!html.includes('OWNER-APPROVED'), `${path}: no approval badge`);
 };
 await check({ courseId: 'chemistry' });

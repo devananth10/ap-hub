@@ -41,4 +41,10 @@ A later optional local history could use a separate versioned key, e.g. `prepatl
 
 ## Future roadmap
 
+### Ratings and question reports completed
+
+Added an optional footer rating dialog and a small current-question reporting flag shared by the Practice page and Study Workspace. Real server-side SQLite saves reviews/reports separately. Reviews are private by default, with opt-in and owner-only CLI moderation required for public excerpts. Reports attach stable IDs and canonical curriculum context and have new/reviewed/resolved status. Neither submission changes the question bank or student study data. Privacy, server limits, owner commands, storage/backup requirements and future hosting limits are documented in FEEDBACK.md. Full results are in VALIDATION.md (49 unit tests, build, live/production routes, isolated moderation checks and browser preservation checks). No genuine public reviews yet; no placeholder testimonials.
+
+This completes the feedback milestone, not a public deployment. Practice scores remain session-only; the previous local-history proposal is still deferred. The 9.8b alias remains pending and the earlier intermittent preview root cause remains unproven. The next task should be chosen independently; do not regenerate the Chemistry bank or expand educational resource approval.
+
 After the current learning experience is tested: independently reviewed question banks for another AP course, optional local score history, original SAT practice, and an optional tutor using authorized material if funding allows. No SAT platform, paid AI, authentication or analytics system is included here.
