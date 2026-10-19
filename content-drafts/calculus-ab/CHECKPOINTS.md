@@ -16,5 +16,6 @@ Repository: `devananth10/ap-hub`, branch `main`. Each entry below was saved with
 | `88502b70a28708547b740b1d5e0df3a5ddcf14a5` | 110 | Topic 1.10 discontinuities and root multiplicity |
 | `a1cb0bcfbd9226a915452911fe097cd46bcd4541` | 132 | Topics 1.11–1.12 point/interval continuity |
 | `8d4cbbfe41ea2d252956b7427af37c9b54887aea` | 154 | Topics 1.13–1.14 repairs and vertical asymptotes |
+| `4003187dc0d03e7abcb18f3b20dc37d54506a7fa` | 176 | Complete Unit 1; 64 tests, build/typecheck, browser sessions, full route/preservation/stability checks |
 
-The complete Unit 1 receipt is appended only after its push is verified. A receipt-documentation commit necessarily follows the development commit it records; use Git log and the remote branch to identify the latest documentation HEAD. Do not invent a future commit SHA inside progress files before committing.
+The complete Unit 1 push was verified at `4003187dc0d03e7abcb18f3b20dc37d54506a7fa`. The next unfinished topic is 2.1. A receipt-documentation commit necessarily follows the development commit it records; use Git log and the remote branch to identify the latest documentation HEAD. Do not invent a future commit SHA inside progress files before committing.
