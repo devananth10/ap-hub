@@ -1,0 +1,206 @@
+{
+  "topicNumber": "1.10",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "4d97e03d10c13c07f2b4c4bc9ddc1287f905a1b119dbd78c7082bed1367a0625",
+  "scopeReview": "CED LIM-2.A.1: removable, jump and vertical-asymptote discontinuities. Includes continuous corner as a nonexample and the distinction between finite jumps and opposite infinite sides. No BC-only material.",
+  "varietyReview": "Classifies holes, unequal finite sides, even-order pole, mismatched plotted value, unequal root multiplicities, residual pole after cancellation, impossibility of point repair, two reciprocal signs, continuous corner, two excluded points and damped oscillation with a jump.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-1-10-001",
+      "independentReasoning": "Synthetic division of numerator coefficients [1,0,−9] at 3 gives quotient x+3 with zero remainder. Numerator and denominator have equal simple root multiplicity; the remaining quotient has value 6. No unequal finite sides or residual denominator zero remains.",
+      "optionReview": [
+        "The left and right limits are both 6, so there is no jump.",
+        "The cancelled denominator factor leaves a finite nearby limit rather than unbounded values.",
+        "For x≠3 the formula equals x+3, which has a finite limit of 6.",
+        "The original natural domain excludes 3, so the missing value must be filled to make a continuous extension."
+      ],
+      "check": {
+        "type": "rational-classification",
+        "point": 3,
+        "numerator": [
+          1,
+          0,
+          -9
+        ],
+        "denominator": [
+          1,
+          -3
+        ],
+        "expectedLimit": 6
+      }
+    },
+    {
+      "questionId": "calc-ab-1-10-002",
+      "independentReasoning": "Recompute the polynomial extensions at 2 to get 5 and 3. The point value agrees with one side only. A jump is the applicable classification because both sides are finite but unequal; changing one assigned value cannot repair the mismatch.",
+      "optionReview": [
+        "No single point value can reconcile unequal nearby one-sided limits.",
+        "Both one-sided limits are finite; neither branch grows without bound near 2.",
+        "Matching f(2) to only the left-hand limit does not establish two-sided continuity.",
+        "The finite one-sided limits are 5 and 3, which differ."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Jump discontinuity"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-10-003",
+      "independentReasoning": "The numerator is the nonzero constant 1, while the denominator polynomial x²−8x+16 has a double root at 4. No cancellation is possible. Positivity on both sides establishes positive unbounded growth rather than a finite jump or a removable hole.",
+      "optionReview": [
+        "The positive denominator approaches zero and the reciprocal grows without bound from both sides.",
+        "There is no common numerator factor to cancel and no finite limit to use as a replacement value.",
+        "A jump requires unequal finite one-sided limits, not unbounded growth.",
+        "The function is undefined at 4 and is unbounded nearby."
+      ],
+      "check": {
+        "type": "rational-classification",
+        "point": 4,
+        "numerator": [
+          1
+        ],
+        "denominator": [
+          1,
+          -8,
+          16
+        ],
+        "expectedLimit": "unbounded"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-10-004",
+      "independentReasoning": "Read the two open endpoint heights independently: both are 3. Read the separate filled height: 5. The finite common limit and mismatched value are exactly the removable case, not a jump or vertical asymptote. The entire original graph is hash-bound to this review.",
+      "optionReview": [
+        "The graph approaches the same height from both sides, so there is no jump.",
+        "Both branches approach 3, but the assigned value 5 differs and can be replaced by 3.",
+        "All plotted values near 0 remain near 3, with no unbounded growth.",
+        "An existing point value is insufficient when it differs from the common nearby limit."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Removable discontinuity"
+      },
+      "figureSha256": "7a8433f883336b187d2d3d8fe8b1f5929d291aefd2353acf3e7169843164a216"
+    },
+    {
+      "questionId": "calc-ab-1-10-005",
+      "independentReasoning": "Expanded coefficients are numerator [1,−2,1] and denominator [1,1,−2]. The numerator has a double root at 1 and the denominator a single root, leaving a zero in the reduced numerator. The leftover denominator is nonzero there, giving the exact finite limit 0.",
+      "optionReview": [
+        "A zero remains in the numerator, not in the denominator at 1, after cancellation.",
+        "Both sides approach 0; crossing through different signs does not create a jump.",
+        "Cancelling one x−1 factor leaves (x−1)/(x+2), whose limit is 0.",
+        "The original denominator excludes x=1 even though a continuous extension exists."
+      ],
+      "check": {
+        "type": "rational-classification",
+        "point": 1,
+        "numerator": [
+          1,
+          -2,
+          1
+        ],
+        "denominator": [
+          1,
+          1,
+          -2
+        ],
+        "expectedLimit": 0
+      }
+    },
+    {
+      "questionId": "calc-ab-1-10-006",
+      "independentReasoning": "Compare root multiplicities independently: numerator order 1, denominator order 2. One denominator factor survives. The sign of the surviving reciprocal differs across the root but neither one-sided limit is finite, so the classification is infinite rather than jump.",
+      "optionReview": [
+        "Cancellation removes only one of the two denominator factors, leaving a pole.",
+        "The one-sided behavior is unbounded rather than two unequal finite limits.",
+        "The residual reciprocal and the excluded input prevent continuity.",
+        "Cancelling one factor leaves 1/(x−2), which is unbounded near 2."
+      ],
+      "check": {
+        "type": "rational-classification",
+        "point": 2,
+        "numerator": [
+          1,
+          -2
+        ],
+        "denominator": [
+          1,
+          -4,
+          4
+        ],
+        "expectedLimit": "unbounded"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-10-007",
+      "independentReasoning": "Test the proposed repairs against the definition: a common two-sided limit must exist before it can equal any assigned value. Neither 6, the midpoint 2, nor omitting the value changes the distinct branch limits, so only the no-repair statement is defensible.",
+      "optionReview": [
+        "A point assignment cannot change either nearby branch limit.",
+        "Continuity does not use an average of unequal branch limits.",
+        "At an interior point, two-sided continuity requires agreement of both sides and the value.",
+        "Deleting a point does not make unequal one-sided limits agree."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "No choice of f(a) removes the jump, because the one-sided limits remain unequal."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-10-008",
+      "independentReasoning": "Direct sign and magnitude analysis as |x| shrinks distinguishes the two reciprocal functions. Neither has a finite one-sided limiting pair, and both exclude 0. Infinite-limit notation describes unbounded growth, not ordinary real-valued limits; no replacement point value repairs either function.",
+      "optionReview": [
+        "The one-sided behaviors of f are not finite, so they do not form a jump discontinuity.",
+        "A vertical asymptote can have different unbounded signs on its sides.",
+        "A zero denominator alone does not imply a removable common-factor hole.",
+        "Positivity does not make the undefined and unbounded g continuous at 0."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Both have infinite discontinuities, even though f has opposite unbounded signs on the two sides and g does not."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-10-009",
+      "independentReasoning": "Use both linear branch formulas and compute the point value independently. All three values are zero. The graph direction changes at the corner but the output has no gap, hole or blow-up; differentiability is not needed to establish continuity.",
+      "optionReview": [
+        "There is no missing or mismatched point value to repair.",
+        "The two sides approach the same height, even though their slopes differ.",
+        "Both one-sided limits equal 0 and f(1)=0, despite the corner in the graph.",
+        "The function stays close to zero near 1 and is not unbounded there."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "No discontinuity"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-10-010",
+      "independentReasoning": "Expand both factorizations to recover the original polynomials. At −2 the cancelled x+2 factor has equal order in numerator and denominator and the remaining quotient is (−5)/(−4)=5/4. At 2 only the denominator vanishes, proving a pole. No finite unequal branch pair occurs at either input.",
+      "optionReview": [
+        "This reverses which denominator factor cancels with the numerator.",
+        "The numerator is nonzero at 2, so the x−2 denominator factor cannot cancel.",
+        "The reduced quotient has a finite common limit at −2 and unbounded behavior at 2, not two finite jumps.",
+        "Factoring cancels x+2 but leaves a denominator x−2."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Removable at −2; infinite at 2."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-10-011",
+      "independentReasoning": "Independently use a universal magnitude bound on the left and direct substitution in the right affine branch. The left oscillation is damped, so it causes no unbounded or oscillatory nonlimit there. The distinct side limits 0 and 2 establish a jump, with no possible one-point repair.",
+      "optionReview": [
+        "The squeezed left-hand limit is 0 while the right-hand limit is 2.",
+        "The oscillating left branch has magnitude at most x² and is not unbounded near 0.",
+        "The unequal finite branch limits cannot be reconciled by changing f(0).",
+        "Neither one-sided limit equals the assigned middle value 1, and the two sides do not agree."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Jump discontinuity"
+      }
+    }
+  ]
+}

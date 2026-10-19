@@ -44,6 +44,7 @@ export function validateCalculusBank() {
       }
       if(question.prompt.includes('graph below')) {
         const figure=practiceFigures[question.id];assert.ok(figure,question.id+' missing graph');
+        assert.equal(semanticHash(figure),review.figureSha256||review.check.figureSha256,'Graph changed after review: '+question.id);
         assert.ok(figure.description.length>50);
         assert.ok(figure.xRange[0]<=0 && figure.xRange[1]>=0 && figure.yRange[0]<=0 && figure.yRange[1]>=0,'Graph must show origin accurately');
         for(const curve of figure.curves) {

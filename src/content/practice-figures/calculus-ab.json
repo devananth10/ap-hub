@@ -686,5 +686,52 @@
       }
     ],
     "description": "The left line rises to an open point at (−2,3). The right branch starts at that same open point, falls through (0,1), then rises through (2,3). A filled point at (−2,−1) is separate from both branches."
+  },
+  "calc-ab-1-10-004": {
+    "xRange": [
+      -3,
+      3
+    ],
+    "yRange": [
+      -1,
+      6
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            -3,
+            0
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "start": "closed",
+        "end": "open"
+      },
+      {
+        "points": [
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "start": "open",
+        "end": "closed"
+      }
+    ],
+    "dots": [
+      {
+        "x": 0,
+        "y": 5
+      }
+    ],
+    "description": "A straight line y=x+3 approaches the open point (0,3) from both sides. The only assigned value at x=0 is a separate filled point (0,5). There are no other branches near 0."
   }
 }

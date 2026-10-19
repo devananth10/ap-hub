@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 1,
+  "topicId": "topic-1-10",
+  "questions": [
+    {
+      "id": "calc-ab-1-10-001",
+      "prompt": "Let f(x)=(x²−9)/(x−3), with its natural real domain. How should the behavior at x=3 be classified?",
+      "options": [
+        "Jump discontinuity",
+        "Infinite discontinuity (vertical asymptote)",
+        "Removable discontinuity",
+        "No discontinuity"
+      ],
+      "correctIndex": 2,
+      "explanation": "Factor x²−9=(x−3)(x+3). The quotient equals x+3 except at the excluded input 3, and both one-sided limits equal 6. This is a hole that can be repaired by defining f(3)=6. A: The left and right limits are both 6, so there is no jump. B: The cancelled denominator factor leaves a finite nearby limit rather than unbounded values. C: For x≠3 the formula equals x+3, which has a finite limit of 6. D: The original natural domain excludes 3, so the missing value must be filled to make a continuous extension."
+    },
+    {
+      "id": "calc-ab-1-10-002",
+      "prompt": "A function satisfies f(x)=x²+1 for x<2 and f(x)=2x−1 for x>2, with f(2)=5. Which type of discontinuity occurs at x=2?",
+      "options": [
+        "Removable discontinuity",
+        "Infinite discontinuity (vertical asymptote)",
+        "No discontinuity",
+        "Jump discontinuity"
+      ],
+      "correctIndex": 3,
+      "explanation": "The left branch approaches 2²+1=5 and the right branch approaches 2·2−1=3. The unequal finite one-sided limits create a jump. The choice f(2)=5 cannot change either branch limit. A: No single point value can reconcile unequal nearby one-sided limits. B: Both one-sided limits are finite; neither branch grows without bound near 2. C: Matching f(2) to only the left-hand limit does not establish two-sided continuity. D: The finite one-sided limits are 5 and 3, which differ."
+    },
+    {
+      "id": "calc-ab-1-10-003",
+      "prompt": "For f(x)=1/(x−4)² on its natural real domain, which classification applies at x=4?",
+      "options": [
+        "Infinite discontinuity (vertical asymptote)",
+        "Removable discontinuity",
+        "Jump discontinuity",
+        "No discontinuity"
+      ],
+      "correctIndex": 0,
+      "explanation": "For every x≠4 the squared denominator is positive. As x approaches 4 from either side, this denominator tends to 0 and f(x) increases without bound. Thus x=4 is a vertical asymptote and the discontinuity is infinite. A: The positive denominator approaches zero and the reciprocal grows without bound from both sides. B: There is no common numerator factor to cancel and no finite limit to use as a replacement value. C: A jump requires unequal finite one-sided limits, not unbounded growth. D: The function is undefined at 4 and is unbounded nearby."
+    },
+    {
+      "id": "calc-ab-1-10-004",
+      "prompt": "The graph below shows a line with an open point at (0,3) and a filled point at (0,5). How is the behavior at x=0 classified?",
+      "options": [
+        "Jump discontinuity",
+        "Removable discontinuity",
+        "Infinite discontinuity (vertical asymptote)",
+        "No discontinuity"
+      ],
+      "correctIndex": 1,
+      "explanation": "The graph gives lim(x→0) f(x)=3 while f(0)=5. The single incorrect point value creates a removable discontinuity. Replacing that value with 3 would place the filled point on the line without changing nearby behavior. A: The graph approaches the same height from both sides, so there is no jump. B: Both branches approach 3, but the assigned value 5 differs and can be replaced by 3. C: All plotted values near 0 remain near 3, with no unbounded growth. D: An existing point value is insufficient when it differs from the common nearby limit."
+    },
+    {
+      "id": "calc-ab-1-10-005",
+      "prompt": "Let f(x)=(x−1)²/[(x−1)(x+2)] with the natural domain. What type of discontinuity occurs at x=1?",
+      "options": [
+        "Infinite discontinuity (vertical asymptote)",
+        "Jump discontinuity",
+        "Removable discontinuity",
+        "No discontinuity"
+      ],
+      "correctIndex": 2,
+      "explanation": "For x≠1,−2 the quotient simplifies to (x−1)/(x+2). At x=1 this nearby expression tends to 0/3=0. The original function still has no value at 1, leaving a removable hole with limiting height 0. A: A zero remains in the numerator, not in the denominator at 1, after cancellation. B: Both sides approach 0; crossing through different signs does not create a jump. C: Cancelling one x−1 factor leaves (x−1)/(x+2), whose limit is 0. D: The original denominator excludes x=1 even though a continuous extension exists."
+    },
+    {
+      "id": "calc-ab-1-10-006",
+      "prompt": "A student claims f(x)=(x−2)/(x−2)² has a removable discontinuity at x=2 because both numerator and denominator have a factor x−2. Which classification is actually correct?",
+      "options": [
+        "Removable discontinuity",
+        "Jump discontinuity",
+        "No discontinuity",
+        "Infinite discontinuity (vertical asymptote)"
+      ],
+      "correctIndex": 3,
+      "explanation": "For x≠2 the reduced formula is 1/(x−2). The left-hand values decrease without bound and the right-hand values increase without bound near 2. Therefore x=2 remains a vertical asymptote; a common factor alone does not guarantee a hole. A: Cancellation removes only one of the two denominator factors, leaving a pole. B: The one-sided behavior is unbounded rather than two unequal finite limits. C: The residual reciprocal and the excluded input prevent continuity. D: Cancelling one factor leaves 1/(x−2), which is unbounded near 2."
+    },
+    {
+      "id": "calc-ab-1-10-007",
+      "prompt": "A function has a finite left-hand limit of 6 and a finite right-hand limit of −2 at x=a. Which statement describes the effect of redefining only f(a)?",
+      "options": [
+        "No choice of f(a) removes the jump, because the one-sided limits remain unequal.",
+        "Setting f(a)=2 removes the jump because 2 is the average of the one-sided limits.",
+        "Setting f(a)=6 removes the jump because continuity requires only the left-hand limit.",
+        "Deleting f(a) makes the discontinuity removable."
+      ],
+      "correctIndex": 0,
+      "explanation": "Changing one value leaves all values at nearby inputs unchanged. Thus the one-sided limits stay 6 and −2 and the two-sided limit still does not exist. No point assignment can convert this jump into continuity. A: A point assignment cannot change either nearby branch limit. B: Continuity does not use an average of unequal branch limits. C: At an interior point, two-sided continuity requires agreement of both sides and the value. D: Deleting a point does not make unequal one-sided limits agree."
+    },
+    {
+      "id": "calc-ab-1-10-008",
+      "prompt": "Compare f(x)=1/x and g(x)=1/x² at x=0, each on its natural real domain. Which statement correctly classifies both discontinuities?",
+      "options": [
+        "Only g has an infinite discontinuity; f has a jump.",
+        "Both have infinite discontinuities, even though f has opposite unbounded signs on the two sides and g does not.",
+        "Both have removable discontinuities because their denominators vanish at 0.",
+        "Only f is discontinuous, because g is positive on both sides."
+      ],
+      "correctIndex": 1,
+      "explanation": "For 1/x, the left and right behaviors are −∞ and +∞. For 1/x², both are +∞. In both cases x=0 is a vertical asymptote, so both discontinuities are infinite. The signs do not turn either case into a finite jump. A: The one-sided behaviors of f are not finite, so they do not form a jump discontinuity. B: A vertical asymptote can have different unbounded signs on its sides. C: A zero denominator alone does not imply a removable common-factor hole. D: Positivity does not make the undefined and unbounded g continuous at 0."
+    },
+    {
+      "id": "calc-ab-1-10-009",
+      "prompt": "Consider f(x)=|x−1| at x=1. Which classification is correct?",
+      "options": [
+        "Removable discontinuity",
+        "Jump discontinuity",
+        "No discontinuity",
+        "Infinite discontinuity (vertical asymptote)"
+      ],
+      "correctIndex": 2,
+      "explanation": "If x<1, |x−1|=1−x; if x>1, |x−1|=x−1. Both expressions approach 0 as x→1, and the actual value is also 0. A corner does not by itself create a discontinuity. A: There is no missing or mismatched point value to repair. B: The two sides approach the same height, even though their slopes differ. C: Both one-sided limits equal 0 and f(1)=0, despite the corner in the graph. D: The function stays close to zero near 1 and is not unbounded there."
+    },
+    {
+      "id": "calc-ab-1-10-010",
+      "prompt": "For f(x)=(x²−x−6)/(x²−4) with its natural domain, which pair correctly classifies the excluded inputs −2 and 2?",
+      "options": [
+        "Infinite at −2; removable at 2.",
+        "Removable at both −2 and 2.",
+        "Jump at both −2 and 2.",
+        "Removable at −2; infinite at 2."
+      ],
+      "correctIndex": 3,
+      "explanation": "Factor the numerator as (x−3)(x+2) and the denominator as (x−2)(x+2). Away from the excluded points the reduced formula is (x−3)/(x−2). At −2 it approaches 5/4, giving a hole. At 2 the numerator approaches −1 while the denominator approaches 0, leaving a vertical asymptote. A: This reverses which denominator factor cancels with the numerator. B: The numerator is nonzero at 2, so the x−2 denominator factor cannot cancel. C: The reduced quotient has a finite common limit at −2 and unbounded behavior at 2, not two finite jumps. D: Factoring cancels x+2 but leaves a denominator x−2."
+    },
+    {
+      "id": "calc-ab-1-10-011",
+      "prompt": "Angles are in radians. Let f(x)=x² sin(1/x) for x<0, f(x)=x+2 for x>0, and f(0)=1. How should x=0 be classified?",
+      "options": [
+        "Jump discontinuity",
+        "Infinite discontinuity (vertical asymptote)",
+        "Removable discontinuity",
+        "No discontinuity"
+      ],
+      "correctIndex": 0,
+      "explanation": "On the left, |x² sin(1/x)|≤x² forces the limit to 0 despite oscillations. On the right, x+2 tends to 2. Both limits are finite and unequal, so the function has a jump at 0. Its value 1 cannot remove that jump. A: The squeezed left-hand limit is 0 while the right-hand limit is 2. B: The oscillating left branch has magnitude at most x² and is not unbounded near 0. C: The unequal finite branch limits cannot be reconciled by changing f(0). D: Neither one-sided limit equals the assigned middle value 1, and the two sides do not agree."
+    }
+  ]
+}

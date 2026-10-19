@@ -49,6 +49,23 @@ export function approachValue(check) {
   if(!agree) assert.equal(check.allowSideDisagreement,true,'Numerical approaches do not agree');
   return agree?(left+right)/2:'DNE';
 }
+export function rationalBehavior(numerator,denominator,point) {
+  const at=(coefficients,x)=>coefficients.reduce((value,coefficient)=>value*x+coefficient,0);
+  const order=original=>{
+    let coefficients=[...original],multiplicity=0;
+    assert.ok(coefficients.length&&coefficients.every(Number.isFinite)&&coefficients[0]!==0,'Invalid polynomial coefficients');
+    while(coefficients.length>1&&Math.abs(at(coefficients,point))<1e-10) {
+      const quotient=[coefficients[0]];
+      for(let i=1;i<coefficients.length-1;i++)quotient.push(coefficients[i]+point*quotient[i-1]);
+      coefficients=quotient;multiplicity++;
+    }
+    return {multiplicity,value:at(coefficients,point)};
+  };
+  const n=order(numerator),d=order(denominator);
+  if(d.multiplicity===0)return {kind:'No discontinuity',limit:at(numerator,point)/at(denominator,point)};
+  if(n.multiplicity<d.multiplicity)return {kind:'Infinite discontinuity',limit:'unbounded'};
+  return {kind:'Removable discontinuity',limit:n.multiplicity>d.multiplicity?0:n.value/d.value};
+}
 export function verifyCalculusQuestion(question, review) {
   assert.equal(review.questionId,question.id);
   assert.equal(review.optionReview.length,4);
@@ -56,7 +73,13 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='squeeze-bounds') {
+  if (review.check.type==='rational-classification') {
+    const result=rationalBehavior(review.check.numerator,review.check.denominator,review.check.point);
+    assert.equal(result.limit,review.check.expectedLimit,question.id+' separately computed rational limit');
+    const matches=question.options.map(option=>option.startsWith(result.kind));
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique rational classification');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' rational classification key');
+  } else if (review.check.type==='squeeze-bounds') {
     const {lower,upper,...settings}=review.check;
     const tolerance=settings.tolerance||0.00001;
     const lo=approachValue({...settings,expression:lower}),hi=approachValue({...settings,expression:upper});

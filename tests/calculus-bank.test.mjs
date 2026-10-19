@@ -5,7 +5,7 @@ import {courses} from '../src/lib/courses.ts';
 import {practiceEntries,practiceCount,practiceHref} from '../src/lib/practice.ts';
 import {questionBatches} from '../src/lib/practice-bank.ts';
 import {validateCalculusBank} from '../scripts/check-calculus-bank.mjs';
-import {verifyCalculusQuestion,figureLimit,evaluateExpression,numericalOption} from '../scripts/check-calculus-math.mjs';
+import {verifyCalculusQuestion,figureLimit,evaluateExpression,numericalOption,rationalBehavior} from '../scripts/check-calculus-math.mjs';
 import {practiceFigures} from '../src/lib/practice-figures.ts';
 test('official Calculus AB inventory keeps all eight old IDs and excludes BC-only gaps',()=>{
   const course=courses.find(course=>course.id==='calculus-ab');
@@ -108,4 +108,14 @@ test('cross-representation checks use graph input/output transformations and ver
   for(const [sx,sy] of tables['calc-ab-1-9-009'].rows) {
     const x=Number(sx.replace('−','-'));if(x!==0)assert.ok(Math.abs(1/(Math.sqrt(9+x)+3)-Number(sy))<0.00000051);
   }
+});
+test('rational discontinuities distinguish removable roots from remaining poles and unequal multiplicities',()=>{
+  assert.deepEqual(rationalBehavior([1,-2,1],[1,1,-2],1),{kind:'Removable discontinuity',limit:0});
+  assert.deepEqual(rationalBehavior([1,-2],[1,-4,4],2),{kind:'Infinite discontinuity',limit:'unbounded'});
+  assert.deepEqual(rationalBehavior([1,-1,-6],[1,0,-4],-2),{kind:'Removable discontinuity',limit:5/4});
+  assert.equal(rationalBehavior([1,-1,-6],[1,0,-4],2).kind,'Infinite discontinuity');
+  const batch=questionBatches.find(batch=>batch.courseId==='calculus-ab'&&batch.topicId==='topic-1-10');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-1-10.json','utf8'));
+  assert.throws(()=>verifyCalculusQuestion({...batch.questions[5],correctIndex:(batch.questions[5].correctIndex+1)%4},qa.questions[5]),/classification key/);
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[0],{...qa.questions[0],check:{...qa.questions[0].check,numerator:[1,1,-9]}}),/rational limit/);
 });

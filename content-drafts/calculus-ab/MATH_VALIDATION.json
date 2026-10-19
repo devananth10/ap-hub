@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 99,
+  "questionsChecked": 110,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -321,6 +321,26 @@
       "questionId": "calc-ab-1-9-009",
       "method": "table-estimate",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-10-001",
+      "method": "rational-classification",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-10-003",
+      "method": "rational-classification",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-10-005",
+      "method": "rational-classification",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-10-006",
+      "method": "rational-classification",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -358,7 +378,14 @@
     "calc-ab-1-9-006",
     "calc-ab-1-9-007",
     "calc-ab-1-9-010",
-    "calc-ab-1-9-011"
+    "calc-ab-1-9-011",
+    "calc-ab-1-10-002",
+    "calc-ab-1-10-004",
+    "calc-ab-1-10-007",
+    "calc-ab-1-10-008",
+    "calc-ab-1-10-009",
+    "calc-ab-1-10-010",
+    "calc-ab-1-10-011"
   ],
   "humanReviewPerformed": false,
   "limitations": [
