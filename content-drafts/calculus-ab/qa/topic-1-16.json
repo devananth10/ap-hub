@@ -1,0 +1,175 @@
+{
+  "topicNumber": "1.16",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "ef2ca16a6061cfccf4989d9c287ff46a4668f7ba03742d36b798499fe51664d5",
+  "scopeReview": "CED FUN-1.A: IVT hypotheses and conclusions for continuous functions on closed intervals and strictly intermediate outputs. Includes valid closed-subinterval use inside an open domain; distinguishes existence, exact location and uniqueness. No MVT/EVT/differentiation assumptions.",
+  "varietyReview": "Eleven tasks include a polynomial bracket, output attainment, failed continuity, inconclusive same-sign endpoints, multiple roots from original exact table, a temperature context, interior subinterval construction, a logarithmic equation, uniqueness with an additional monotonicity hypothesis, graph intersections and endpoint-versus-interior targets.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-1-16-001",
+      "independentReasoning": "Recompute all endpoint outputs from the original polynomial: p(0)=−5, p(1)=−3, p(2)=5, p(3)=25 and p(4)=63. Exactly the pair at 1 and 2 changes sign. The conclusion is existence in an open interval, not a claim of a particular root value or uniqueness.",
+      "optionReview": [
+        "The polynomial is continuous and its endpoint values are −3 and 5, which straddle zero.",
+        "Both endpoint values are negative, so these endpoint data do not supply the required sign change.",
+        "Both endpoint values are positive, so there is no endpoint sign-change guarantee here.",
+        "Both endpoint values are positive, so this interval also lacks the stated guarantee."
+      ],
+      "check": {
+        "type": "ivt-bracket",
+        "coefficients": [
+          1,
+          0,
+          1,
+          -5
+        ],
+        "target": 0
+      }
+    },
+    {
+      "questionId": "calc-ab-1-16-002",
+      "independentReasoning": "Check the closed-domain hypothesis, the strict position of the target between endpoint outputs and the order of the input endpoints. A linear interpolant would reach 3 at c=0, disproving the claimed midpoint value; continuous curves can also cross the target several times.",
+      "optionReview": [
+        "Continuity and endpoint values alone give existence, not uniqueness.",
+        "The target 3 lies strictly between the endpoint outputs −1 and 5.",
+        "IVT does not prescribe the location of the guaranteed input.",
+        "The theorem guarantees at least one input for that target, not a constant function."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "There is at least one c in (−2,4) with f(c)=3."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-16-003",
+      "independentReasoning": "Check every required hypothesis, not just the endpoint signs. The missing interior value and vertical asymptote invalidate continuity on the closed interval. Solving 1/x=0 has no real solution, so the example cannot support the proposed IVT inference.",
+      "optionReview": [
+        "Opposite signs are appropriate for guaranteeing a zero when continuity holds.",
+        "Any function satisfying the continuity and target hypotheses is eligible.",
+        "The essential continuity hypothesis fails inside the proposed interval.",
+        "There is no such interval-length restriction."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The function is not continuous on the entire closed interval because it is undefined at 0."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-16-004",
+      "independentReasoning": "Evaluate each explicit countermodel at 0 and 2 to get 1 in both cases. The constant is never zero, and the square vanishes at 1. Thus both existence and nonexistence remain possible; same-sign endpoint values are inconclusive, not a proof of no zeros.",
+      "optionReview": [
+        "Equality of positive endpoint outputs does not place zero between them.",
+        "A continuous function can dip to zero or below between positive endpoints.",
+        "The endpoints do not determine a root count, and a function with no zeros satisfies all the facts.",
+        "A constant positive function has none, while (x−1)² matches the endpoint values and has a zero."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The information does not determine whether there are any zeros."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-16-005",
+      "independentReasoning": "Read the output signs in order: −,+,+,−,+,+. There are exactly three adjacent strict sign changes. Each pair defines its own closed subinterval where continuity holds, yielding distinct interior roots. Linear segments between adjacent points realize exactly three roots, so more cannot be guaranteed from these data.",
+      "optionReview": [
+        "The sign changes occur in three disjoint open intervals: (0,1), (2,3) and (3,4).",
+        "This overlooks one of the three separate sign changes.",
+        "There is not a sign change across every adjacent pair of listed inputs.",
+        "Continuity together with the listed sign changes guarantees some roots."
+      ],
+      "check": {
+        "type": "ivt-table",
+        "target": 0
+      },
+      "tableSha256": "fbfd90971a32190a637d2a80b463af2066f6984a8898e62dac6e39ca35cc81a3"
+    },
+    {
+      "questionId": "calc-ab-1-16-006",
+      "independentReasoning": "Check continuity over the whole closed time interval and the strict target inequality. A nonlinear warming curve can reach 20 before or after 9, and a curve with rises/falls can repeat the target or overshoot 26. Only existence follows without additional hypotheses.",
+      "optionReview": [
+        "That timing would require extra information about how the temperature changes.",
+        "The intermediate temperature lies strictly between the two endpoint readings and continuity supplies an occurrence.",
+        "A continuous temperature can rise and fall, crossing the target more than once.",
+        "Endpoint values and continuity do not impose a maximum over the whole interval."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "At some time strictly between 8:00 and 10:00 a.m., the temperature is 20°C."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-16-007",
+      "independentReasoning": "Do not incorrectly apply the closed-interval theorem directly to the missing endpoints. Instead select a in the left quarter and b in the right quarter with the signs ensured by the respective limits. The included closed subinterval has a continuous function and strict sign change. Location and uniqueness still do not follow.",
+      "optionReview": [
+        "IVT can be applied on an interior closed subinterval without using either missing endpoint.",
+        "The endpoint limits do not determine the location of the crossing.",
+        "The endpoint limits provide opposite signs at some nearby interior inputs where continuity holds.",
+        "Opposite limiting signs give existence but not uniqueness."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "A zero exists in (0,1): choose interior inputs with negative and positive outputs and apply IVT on the closed subinterval between them."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-16-008",
+      "independentReasoning": "Check the domain first: every point in [1,3] is positive. Independently calculate both endpoint expressions, using ln 1=0 and ln 3>0. These verified conditions give existence only; no derivative, numerical root finder or exact location is required.",
+      "optionReview": [
+        "Defined endpoint values alone do not establish continuity or a sign change.",
+        "There is no such midpoint-zero property.",
+        "Natural logarithms are negative for 0<x<1, and positivity alone would not prove the desired equation.",
+        "The logarithm is defined throughout the closed interval and the endpoint outputs straddle zero."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The function F(x)=ln x+x−3 is continuous on [1,3], with F(1)=−2 and F(3)=ln 3>0, so IVT applies."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-16-009",
+      "independentReasoning": "Separate the theorem’s existence conclusion from the additional monotonicity uniqueness proof. Strict increase means x₁<x₂ implies f(x₁)<f(x₂), so equal zero outputs at two inputs are impossible. No claim that IVT alone proves uniqueness is made.",
+      "optionReview": [
+        "Both hypotheses are used for separate parts of the conclusion.",
+        "A sign change guarantees at least one crossing, not two.",
+        "Continuity and the stated strict increase suffice without differentiability.",
+        "Strict increase allows any fixed output at most once."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Exactly one: IVT gives existence and strict increase prevents two distinct inputs from having the same output."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-16-010",
+      "independentReasoning": "Compute the differences in the stated order: −3 and 4. The zero of their difference is equivalent to an intersection, and continuity is preserved under subtraction. Continuous curves can intersect several times or at other locations/heights while retaining those endpoint differences.",
+      "optionReview": [
+        "The sign change gives an intersection but does not rule out repeated intersections.",
+        "The continuous difference f−g changes from −3 to 4, so it must be zero somewhere.",
+        "No formula or symmetry fixes the intersection at the midpoint.",
+        "The theorem gives equality of the outputs but no particular shared height."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "There is at least one c in (0,3) with f(c)=g(c)."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-16-011",
+      "independentReasoning": "Use the linear example f(x)=2x+3 to check the alternatives: it has the required endpoint values, reaches 5 inside, reaches 3 and 7 only at endpoints, and never reaches 8 on [0,2]. Thus only the strictly intermediate target is forced by the given conditions.",
+      "optionReview": [
+        "This is attained at the left endpoint, but another occurrence inside is not guaranteed.",
+        "This is attained at the right endpoint, but an interior occurrence is not forced.",
+        "It lies strictly between 3 and 7, so an interior input must attain it.",
+        "This lies outside the endpoint output range and need not be attained at all."
+      ],
+      "check": {
+        "type": "ivt-values",
+        "endpointValues": [
+          3,
+          7
+        ]
+      }
+    }
+  ]
+}

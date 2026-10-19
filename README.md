@@ -42,7 +42,7 @@ Development builds use `.next-preview/`, while production builds use `.next/`. B
 
 **The initial verified Jeremy Krug AP Chemistry collection is published:** 103 directory entries represent 102 unique videos covering 91 topics. All 102 unique videos passed current directory/metadata checks and received the owner’s one-time collection authorization. The separate 9.8b entry repeats Part A’s URL and remains pending as a distinct lesson. No replacement was guessed and no playlists were imported. Future unrelated resources still need explicit approval.
 
-Every Chemistry topic now has video lessons, optional notes and eleven MCQs in the existing workspace. Other courses show honest empty states without unrelated Chemistry suggestions. See [VIDEO_EDIT_GUIDE.md](VIDEO_EDIT_GUIDE.md) for editing/reordering/hiding resources and [verification evidence](docs/VIDEO_VERIFICATION.md) for the approval boundary and limitations.
+Every Chemistry topic now has video lessons, optional notes and eleven MCQs in the existing workspace. Calculus AB has published MCQs for completed topics; missing question sets and unapproved video scopes show honest empty states without unrelated Chemistry suggestions. See [VIDEO_EDIT_GUIDE.md](VIDEO_EDIT_GUIDE.md) for editing/reordering/hiding resources and [verification evidence](docs/VIDEO_VERIFICATION.md) for the approval boundary and limitations.
 
 Use [docs/RESOURCE_APPROVAL.md](docs/RESOURCE_APPROVAL.md) for the configuration format and approval process. Edit `src/config/official-resources.json` to add, edit, unpublish, or remove entries. Every published entry needs a stable ID, valid course/unit/topic association, safe URL, and a dated owner approval reference. Draft metadata stays server-side. This is an editorial configuration system; there is no administrator UI or authentication yet.
 
@@ -74,12 +74,12 @@ $env:BASE_URL = 'http://127.0.0.1:3100'
 pnpm test
 ```
 
-The suite includes 41 unit tests, 20 page-route checks, compiled CSS, seven invalid-route checks, all six fixed course-art mappings and multiple fresh homepage responses to verify artwork rotation. It checks all 1,001 answer keys, scoring/navigation, question-batch validation, publication scope/counts, URL/video policy, legacy saved-data compatibility, branding and absence of unapproved resources. Synthetic test fixtures are never published or fetched from a provider. `pnpm test:publication` additionally verifies all 91 topic routes, nine unit routes and the full Chemistry course, plus frozen question hashes and flagged calculations; it needs a running server. `BASE_URL` also selects its production target.
+The suite includes 64 unit tests, 20 page-route checks, compiled CSS, seven invalid-route checks, all six fixed course-art mappings and multiple fresh homepage responses to verify artwork rotation. It checks all published answer keys, scoring/navigation, question-batch validation, publication scope/counts, URL/video policy, legacy saved-data compatibility, branding and absence of unapproved resources. Calculus tests include mathematical-model mutations, original graph/table checks, domains and theorem hypotheses. Synthetic test fixtures are never published or fetched from a provider. `pnpm test:publication` additionally verifies all 91 Chemistry topic routes, nine unit routes and the full Chemistry course, plus frozen question hashes and flagged calculations; it needs a running server. `BASE_URL` also selects its production target.
 
 Browser checklist:
 
 1. Check PrepAtlas branding, course selection/reload, empty course state, search, and expandable units.
-2. Open Chemistry Topic 1.1 (two videos), Topic 1.2 (one), and Topic 4.5 (four). Test tab order, keyboard arrows/Home/End, Previous/Next Video, titles and attribution. Open Calculus Topic 1.1 for the honest zero-video/zero-question state.
+2. Open Chemistry Topic 1.1 (two videos), Topic 1.2 (one), and Topic 4.5 (four). Test tab order, keyboard arrows/Home/End, Previous/Next Video, titles and attribution. Open Calculus Topic 1.1 for eleven MCQs with the honest zero-video state; an unfinished Calculus topic should have zero MCQs.
 3. Open notes, write, hide/reopen, and reload. Check the notes library and explicit completion. Keep notes hidden unless opened or following a notes deep link.
 4. Open the summary: check the demo disclosure and six bullets. Topic 1.5 now offers eleven proper MCQs, with its former demonstration absent.
 5. Check themes, mobile navigation, keyboard tab controls, and 320/390/768/1440-pixel layouts.
@@ -93,7 +93,7 @@ Browser checklist:
 - `src/lib/courses.ts`: existing typed course/unit/topic catalog. No additional courses were automatically added.
 - `src/lib/lessons.ts`: original per-topic study prompts, sample recaps, and demo practice.
 - `src/lib/practice.ts`: server-side question selection. `practice-scope.ts` and `src/config/published-practice-index.json` provide lightweight scope/count helpers to client components. `practice-session.ts` holds session scoring/navigation logic.
-- `src/content/practice/` and `src/lib/practice-bank.ts`: owner-approved question batches and their validated publication registry. See [docs/PRACTICE.md](docs/PRACTICE.md) for adding more questions and the official Chemistry naming reference.
+- `src/content/practice/` and `src/lib/practice-bank.ts`: original question batches and their validated publication registry. See [docs/PRACTICE.md](docs/PRACTICE.md) for adding more questions and the official Chemistry naming reference.
 - `src/lib/artwork.ts` and `src/components/academic-art.tsx`: artwork pool and original SVGs. Each course's `artwork` field selects its fixed theme. Computer science/geography artwork is ready for future courses; those courses have not been added.
 - `src/config/official-resources.json`: owner-controlled resource catalog.
 - `src/lib/resource-policy.ts`: validation, publishing gate, video parsing, and topic selection.
@@ -131,7 +131,7 @@ The older research manifest is preserved as historical provenance. The official 
 
 Run `pnpm test:workspace` against a running server to check all 91 workspaces, and `pnpm test:preview` for a bounded 80-request development-stability check. The [preview investigation](docs/PREVIEW_STABILITY.md) records the unresolved intermittent manifest warning; passing tests are not a permanent-fix claim.
 
-AP Calculus AB development follows the verified 81-topic curriculum (891-MCQ target). Completed, validated original sets are automatically published one topic at a time under the October 19 policy; other scopes remain honestly empty. See [Calculus progress](content-drafts/calculus-ab/PROGRESS.md), [curriculum audit](content-drafts/calculus-ab/CURRICULUM_AUDIT.md) and [QA limitations](content-drafts/calculus-ab/VALIDATION.md). Run `pnpm test:calculus` for saved question/QA checks and `node --experimental-strip-types tests/calculus-smoke.mjs` against the preview for all 81 topic routes. The Chemistry bank and video catalog remain unchanged.
+AP Calculus AB development follows the verified 81-topic curriculum (891-MCQ target). Unit 1 now has 176 published original MCQs: eleven in every topic from 1.1 through 1.16. The remaining 65 topics/715 questions start at 2.1. Completed, validated original sets are automatically published one topic at a time under the October 19 policy; missing sets remain honestly empty. See [Calculus progress](content-drafts/calculus-ab/PROGRESS.md), [partial bank audit](content-drafts/calculus-ab/BANK_AUDIT.md), [curriculum audit](content-drafts/calculus-ab/CURRICULUM_AUDIT.md) and [QA limitations](content-drafts/calculus-ab/VALIDATION.md). Run `pnpm test:calculus` for saved question/QA checks and `node --experimental-strip-types tests/calculus-smoke.mjs` against the preview for all 81 topic routes. The Chemistry bank and video catalog remain unchanged.
 
 Practice scores remain session-only. A safe local history proposal is documented in [development progress](docs/DEVELOPMENT_PROGRESS.md); it has not been implemented.
 

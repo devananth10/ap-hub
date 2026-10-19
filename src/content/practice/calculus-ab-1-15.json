@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 1,
+  "topicId": "topic-1-15",
+  "questions": [
+    {
+      "id": "calc-ab-1-15-001",
+      "prompt": "Find lim(x→+∞) (6x²−x+5)/(3x²+4).",
+      "options": [
+        "0",
+        "1/2",
+        "+∞",
+        "2"
+      ],
+      "correctIndex": 3,
+      "explanation": "Divide numerator and denominator by x²: the quotient is (6−1/x+5/x²)/(3+4/x²). The reciprocal-power terms tend to zero as x→+∞, so the limit is 6/3=2. The right-end horizontal asymptote is y=2. A: Equal numerator and denominator degrees do not make the quotient tend to zero. B: This reverses the leading-coefficient ratio. C: The denominator has the same degree as the numerator, preventing unbounded quotient growth. D: After dividing by x², the lower-power terms vanish and the ratio is 6/3."
+    },
+    {
+      "id": "calc-ab-1-15-002",
+      "prompt": "Determine lim(x→−∞) (2x³+1)/(x⁴+7).",
+      "options": [
+        "0",
+        "2",
+        "−∞",
+        "+∞"
+      ],
+      "correctIndex": 0,
+      "explanation": "Divide by x⁴ to get (2/x+1/x⁴)/(1+7/x⁴). As x→−∞, the numerator tends to 0 and the denominator to 1. Thus the limit is 0, approached through negative quotient values for sufficiently negative inputs. A: The denominator degree is one larger, so the normalized numerator tends to zero. B: The leading-coefficient ratio applies as a finite nonzero limit only when degrees match. C: The quotient is negative for large negative x but its magnitude shrinks to zero. D: The higher denominator degree prevents unbounded positive growth."
+    },
+    {
+      "id": "calc-ab-1-15-003",
+      "prompt": "What is lim(x→+∞) (x³−4x)/(2x²+1)?",
+      "options": [
+        "1/2",
+        "+∞",
+        "0",
+        "−∞"
+      ],
+      "correctIndex": 1,
+      "explanation": "Divide by x² to write the expression as (x−4/x)/(2+1/x²). The numerator tends to +∞ and the positive denominator to 2, so the quotient tends to +∞. It therefore has no finite horizontal asymptote at the positive end. A: This discards the unmatched remaining factor of x in the leading-term ratio. B: The leading behavior is x/2, which grows without bound on the positive end. C: The numerator degree is larger, not smaller, than the denominator degree. D: For sufficiently large positive inputs, both numerator and denominator are positive."
+    },
+    {
+      "id": "calc-ab-1-15-004",
+      "prompt": "Evaluate lim(x→−∞) √(9x²+1)/x.",
+      "options": [
+        "3",
+        "0",
+        "−3",
+        "−∞"
+      ],
+      "correctIndex": 2,
+      "explanation": "Write √(9x²+1)=|x|√(9+1/x²). For negative x the quotient is −√(9+1/x²), which tends to −3. The absolute value is essential when extracting a squared input from a real square root. A: This incorrectly replaces √(x²) with x when x is negative. B: Both numerator and denominator have the same magnitude order, so their ratio does not vanish. C: The square root behaves like 3|x|, and |x|/x=−1 on the negative end. D: The numerator grows proportionally to |x| rather than faster than the denominator magnitude."
+    },
+    {
+      "id": "calc-ab-1-15-005",
+      "prompt": "Angles are in radians. What is lim(x→+∞) (cos x)/x?",
+      "options": [
+        "1",
+        "−1",
+        "Does not exist because cos x oscillates.",
+        "0"
+      ],
+      "correctIndex": 3,
+      "explanation": "For x>0, −1/x≤cos x/x≤1/x. Both bounds tend to 0 as x→+∞. The Squeeze Theorem gives a limit of 0 even though the numerator itself does not have a limit. A: Cosine does not approach 1, and division by an increasing positive x damps its magnitude. B: The oscillating sign cannot retain unit magnitude after division by x. C: A bounded oscillation divided by an unbounded positive input can converge. D: The quotient magnitude is bounded by 1/x, which tends to zero."
+    },
+    {
+      "id": "calc-ab-1-15-006",
+      "prompt": "Find lim(x→+∞) [√(4x²+x)−2x].",
+      "options": [
+        "1/4",
+        "0",
+        "1/2",
+        "+∞"
+      ],
+      "correctIndex": 0,
+      "explanation": "For large positive x, multiply by the conjugate to obtain x/(√(4x²+x)+2x). Divide this numerator and denominator by x>0, giving 1/(√(4+1/x)+2). Its limit is 1/(2+2)=1/4. A: Rationalization yields x/(√(4x²+x)+2x), whose normalized denominator tends to 4. B: The small difference of two large terms need not vanish; rationalization retains a nonzero constant. C: This accounts for only one of the two terms approaching 2 in the normalized denominator. D: Subtracting two divergent terms is indeterminate until their difference is analyzed."
+    },
+    {
+      "id": "calc-ab-1-15-007",
+      "prompt": "A function has lim(x→+∞) f(x)=2. Which statement about crossings of the line y=2 is justified?",
+      "options": [
+        "The graph cannot cross y=2 at any input.",
+        "The graph may cross y=2 infinitely many times while still having that horizontal asymptote.",
+        "The graph must eventually equal the constant 2 at all large inputs.",
+        "The same limit 2 must also hold as x→−∞."
+      ],
+      "correctIndex": 1,
+      "explanation": "A horizontal asymptote describes outputs approaching a finite height at an end. Crossings are allowed, including infinitely many: for x>0, f(x)=2+sin x/x approaches 2 and crosses that height at nπ for positive integers n. Opposite-end behavior is a separate question. A: A horizontal asymptote describes end behavior, not an absolute barrier. B: For example, 2+sin x/x on x>0 approaches 2 and equals 2 at every positive integer multiple of π. C: Approaching a value does not require becoming exactly constant. D: A statement about the positive end imposes no matching requirement at the negative end."
+    },
+    {
+      "id": "calc-ab-1-15-008",
+      "prompt": "For f(x)=(2eˣ+1)/(eˣ+3), which pair gives the horizontal asymptotes at the positive and negative ends, respectively?",
+      "options": [
+        "Positive end: y=1/3; negative end: y=2.",
+        "Positive end: y=2; negative end: y=2.",
+        "Positive end: y=2; negative end: y=1/3.",
+        "Positive end: y=0; negative end: y=0."
+      ],
+      "correctIndex": 2,
+      "explanation": "As x→+∞, division by eˣ gives (2+e⁻ˣ)/(1+3e⁻ˣ)→2. As x→−∞, eˣ→0, so the original quotient tends to 1/3. Thus the horizontal asymptotes are y=2 at the positive end and y=1/3 at the negative end. A: This reverses the limiting behavior of eˣ on the two ends. B: The leading exponential ratio is not the correct negative-end analysis when eˣ tends to zero. C: At the positive end divide by eˣ; at the negative end eˣ tends to zero. D: The numerator and denominator approach comparable nonzero ratios on both ends."
+    },
+    {
+      "id": "calc-ab-1-15-009",
+      "prompt": "Which rational function has horizontal asymptote y=−3 as x→+∞?",
+      "options": [
+        "f(x)=(−3x+1)/(x²+5)",
+        "f(x)=(6x²+1)/(2x²+5)",
+        "f(x)=(−6x³+1)/(2x²+5)",
+        "f(x)=(−6x²+1)/(2x²+5)"
+      ],
+      "correctIndex": 3,
+      "explanation": "A finite nonzero rational end limit occurs when the numerator and denominator degrees match. The formula (−6x²+1)/(2x²+5) has matching degree 2 and ratio −6/2=−3. The remaining formulas have limits 0, 3 and −∞ as explained individually below. A: Its smaller numerator degree gives limit 0, not −3. B: Its leading coefficient ratio is positive 3. C: Its numerator degree is larger, giving unbounded negative behavior on this end. D: Equal degrees and leading coefficient ratio −6/2 give −3."
+    },
+    {
+      "id": "calc-ab-1-15-010",
+      "prompt": "Angles are in radians. Which statement about horizontal asymptotes of f(x)=sin x is correct?",
+      "options": [
+        "There is no horizontal asymptote at either end because the outputs do not approach a single height.",
+        "The line y=0 is a horizontal asymptote because sine has infinitely many zeros.",
+        "The line y=1 is a horizontal asymptote because 1 is the maximum value.",
+        "Both y=−1 and y=1 are horizontal asymptotes because sine is bounded between them."
+      ],
+      "correctIndex": 0,
+      "explanation": "Sine continues to oscillate with full amplitude as inputs go to either infinity. For example, sin(2nπ)=0 and sin(π/2+2nπ)=1. Analogous sequences at the negative end also give distinct outputs. Thus neither end has a single finite limit, and there are no horizontal asymptotes. A: Sequences of inputs at either end produce distinct repeating outputs 0 and 1. B: Repeated zeros do not force all sufficiently distant outputs to approach zero. C: A bound or maximum is not necessarily an approached end value. D: Being bounded by two horizontal lines does not make either line an asymptote."
+    },
+    {
+      "id": "calc-ab-1-15-011",
+      "prompt": "You may use the fact that eˣ≥x⁴ for all sufficiently large positive x. What is lim(x→+∞) x³/eˣ?",
+      "options": [
+        "1",
+        "0",
+        "+∞",
+        "Does not exist because both numerator and denominator grow without bound."
+      ],
+      "correctIndex": 1,
+      "explanation": "For sufficiently large positive x, all quantities are positive and eˣ≥x⁴. Therefore 0≤x³/eˣ≤x³/x⁴=1/x. Since 1/x→0, squeezing gives the limit 0. The supplied eventual growth bound is enough; no derivative or series argument is required. A: Both terms growing does not force their quotient to approach 1. B: For sufficiently large positive x, the quotient lies between 0 and 1/x. C: The given bound says the exponential eventually exceeds a higher power than the numerator. D: That form is inconclusive on its own, but the supplied bound resolves it."
+    }
+  ]
+}

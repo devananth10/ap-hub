@@ -5,7 +5,7 @@ import {courses} from '../src/lib/courses.ts';
 import {practiceEntries,practiceCount,practiceHref} from '../src/lib/practice.ts';
 import {questionBatches} from '../src/lib/practice-bank.ts';
 import {validateCalculusBank} from '../scripts/check-calculus-bank.mjs';
-import {verifyCalculusQuestion,figureLimit,evaluateExpression,numericalOption,rationalBehavior,rationalPoleSides,intervalOption,domainMatches} from '../scripts/check-calculus-math.mjs';
+import {verifyCalculusQuestion,figureLimit,evaluateExpression,numericalOption,rationalBehavior,rationalPoleSides,rationalEndLimit,intervalOption,domainMatches} from '../scripts/check-calculus-math.mjs';
 import {practiceFigures} from '../src/lib/practice-figures.ts';
 test('official Calculus AB inventory keeps all eight old IDs and excludes BC-only gaps',()=>{
   const course=courses.find(course=>course.id==='calculus-ab');
@@ -140,4 +140,21 @@ test('pole-side signs follow exact residual multiplicity, not large finite sampl
   const batch=questionBatches.find(batch=>batch.courseId==='calculus-ab'&&batch.topicId==='topic-1-14');
   const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-1-14.json','utf8'));
   assert.throws(()=>verifyCalculusQuestion({...batch.questions[1],correctIndex:(batch.questions[1].correctIndex+1)%4},qa.questions[1]),/pole sign key/);
+});
+test('end limits use degree and direction, preserve radical signs and compare actual candidate formulas',()=>{
+  assert.equal(rationalEndLimit([6,-1,5],[3,0,4],1),2);
+  assert.equal(rationalEndLimit([2,0,0,1],[1,0,0,0,7],-1),0);
+  assert.equal(rationalEndLimit([1,0,0,0],[2,0,1],1),Infinity);
+  assert.equal(rationalEndLimit([1,0,0,0],[2,0,1],-1),-Infinity);
+  const batch=questionBatches.find(batch=>batch.courseId==='calculus-ab'&&batch.topicId==='topic-1-15');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-1-15.json','utf8'));
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[3],{...qa.questions[3],check:{...qa.questions[3].check,direction:1}}),/end limit key/);
+  const q=batch.questions[8];assert.throws(()=>verifyCalculusQuestion({...q,correctIndex:(q.correctIndex+1)%4},qa.questions[8]),/candidate key/);
+});
+test('IVT models check strict endpoint bracketing, distinct tabular crossings and interior targets',()=>{
+  const batch=questionBatches.find(batch=>batch.courseId==='calculus-ab'&&batch.topicId==='topic-1-16');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-1-16.json','utf8'));
+  for(const i of [0,4,10])verifyCalculusQuestion(batch.questions[i],qa.questions[i]);
+  for(const i of [0,4,10])assert.throws(()=>verifyCalculusQuestion({...batch.questions[i],correctIndex:(batch.questions[i].correctIndex+1)%4},qa.questions[i]),/IVT .*key/);
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[4],{...qa.questions[4],tableSha256:'stale'}),/Table changed/);
 });

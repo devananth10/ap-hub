@@ -74,6 +74,12 @@ export function rationalPoleSides(numerator,denominator,point) {
   const sign=Math.sign(n.value/d.value),label=s=>s>0?'+∞':'−∞';
   return {left:label(sign*((power%2)?-1:1)),right:label(sign)};
 }
+export function rationalEndLimit(numerator,denominator,direction) {
+  for(const c of [numerator,denominator])assert.ok(c.length&&c[0]!==0&&c.every(Number.isFinite),'Invalid leading polynomial data');
+  assert.ok(direction===1||direction===-1,'End direction must be ±1');
+  const degree=numerator.length-denominator.length,ratio=numerator[0]/denominator[0];
+  return degree<0?0:degree===0?ratio:Math.sign(ratio)*direction**degree*Infinity;
+}
 export function intervalOption(text) {
   if(text==='All real numbers')return [{lo:-Infinity,hi:Infinity,lc:false,rc:false}];
   const bound=s=>s==='−∞'?-Infinity:s==='∞'?Infinity:numericalOption(s);
@@ -110,7 +116,43 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='rational-pole') {
+  if (review.check.type==='ivt-bracket') {
+    const check=review.check,matches=question.options.map(option=>{
+      const intervals=intervalOption(option);assert.equal(intervals.length,1);
+      const {lo,hi}=intervals[0];assert.ok(Number.isFinite(lo)&&Number.isFinite(hi));
+      return (polynomialAt(check.coefficients,lo)-check.target)*(polynomialAt(check.coefficients,hi)-check.target)<0;
+    });
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique strict IVT bracket');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' IVT bracket key');
+  } else if (review.check.type==='ivt-table'||review.check.type==='ivt-values') {
+    const check=review.check;
+    let matches;
+    if(check.type==='ivt-values')matches=question.options.map(option=>{const value=numericalOption(option);return value>Math.min(...check.endpointValues)&&value<Math.max(...check.endpointValues);});
+    else {
+      const rows=practiceTables[question.id].rows.map(row=>row.map(s=>Number(s.replace('−','-'))));
+      assert.ok(rows.every(([x,y],i)=>Number.isFinite(x)&&Number.isFinite(y)&&(!i||x>rows[i-1][0])));
+      const count=rows.slice(1).filter(([x,y],i)=>(y-check.target)*(rows[i][1]-check.target)<0).length;
+      matches=question.options.map(option=>numericalOption(option)===count);
+    }
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique IVT guarantee');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' IVT guarantee key');
+  } else if (review.check.type==='rational-end-candidates') {
+    const check=review.check,matches=question.options.map(option=>{
+      const candidate=check.candidates[option];assert.ok(candidate,'Missing candidate model');
+      return rationalEndLimit(candidate.numerator,candidate.denominator,check.direction)===check.target;
+    });
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique end-behavior candidate');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' end-behavior candidate key');
+  } else if (review.check.type==='rational-end'||review.check.type==='end-expression') {
+    const check=review.check;
+    const expected=check.type==='rational-end'?rationalEndLimit(check.numerator,check.denominator,check.direction):(()=>{
+      const base=check.direction*(check.scale||10000),factor=2**(check.order||1);
+      return (factor*evaluateExpression(check.expression,2*base)-evaluateExpression(check.expression,base))/(factor-1);
+    })();
+    const matches=question.options.map(option=>{const value=numericalOption(option);return Number.isFinite(expected)?Math.abs(value-expected)<(check.tolerance||0.00001):value===expected;});
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique end limit');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' end limit key');
+  } else if (review.check.type==='rational-pole') {
     const check=review.check,sides=rationalPoleSides(check.numerator,check.denominator,check.point);
     const expected=check.side==='pair'?`Left: ${sides.left}; right: ${sides.right}`:check.side==='both'?(sides.left===sides.right?sides.left:'Does not exist'):sides[check.side];
     assert.ok(expected,'Unknown pole side');

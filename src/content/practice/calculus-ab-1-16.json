@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 1,
+  "topicId": "topic-1-16",
+  "questions": [
+    {
+      "id": "calc-ab-1-16-001",
+      "prompt": "For the polynomial p(x)=x³+x−5, which open interval contains a zero guaranteed by applying the Intermediate Value Theorem to its endpoint values?",
+      "options": [
+        "(1,2)",
+        "(0,1)",
+        "(2,3)",
+        "(3,4)"
+      ],
+      "correctIndex": 0,
+      "explanation": "A polynomial is continuous on every closed interval. Compute p(1)=−3 and p(2)=5. Since 0 lies strictly between these outputs, IVT guarantees at least one c in (1,2) with p(c)=0. The other listed endpoint pairs do not straddle zero. A: The polynomial is continuous and its endpoint values are −3 and 5, which straddle zero. B: Both endpoint values are negative, so these endpoint data do not supply the required sign change. C: Both endpoint values are positive, so there is no endpoint sign-change guarantee here. D: Both endpoint values are positive, so this interval also lacks the stated guarantee."
+    },
+    {
+      "id": "calc-ab-1-16-002",
+      "prompt": "A function f is continuous on [−2,4], with f(−2)=5 and f(4)=−1. What does the Intermediate Value Theorem guarantee?",
+      "options": [
+        "There is exactly one c in (−2,4) with f(c)=3.",
+        "There is at least one c in (−2,4) with f(c)=3.",
+        "The midpoint input c=1 must satisfy f(c)=3.",
+        "Every c in (−2,4) satisfies f(c)=3."
+      ],
+      "correctIndex": 1,
+      "explanation": "Continuity on the closed interval supplies the theorem hypothesis. Because −1<3<5, at least one interior input has output 3. No monotonicity or formula is provided, so neither a unique crossing nor its exact position follows. A: Continuity and endpoint values alone give existence, not uniqueness. B: The target 3 lies strictly between the endpoint outputs −1 and 5. C: IVT does not prescribe the location of the guaranteed input. D: The theorem guarantees at least one input for that target, not a constant function."
+    },
+    {
+      "id": "calc-ab-1-16-003",
+      "prompt": "A student applies IVT to f(x)=1/x on [−1,1], using f(−1)=−1 and f(1)=1 to claim a zero in (−1,1). Why is the argument invalid?",
+      "options": [
+        "The endpoint outputs must have the same sign for IVT to apply.",
+        "IVT applies only to polynomial functions.",
+        "The function is not continuous on the entire closed interval because it is undefined at 0.",
+        "The interval is too long to use IVT."
+      ],
+      "correctIndex": 2,
+      "explanation": "Although zero is between the endpoint outputs, 1/x is undefined and discontinuous at the interior input 0. Thus continuity on [−1,1] fails. Indeed, 1/x never equals zero at any input in its domain, directly exposing the invalid conclusion. A: Opposite signs are appropriate for guaranteeing a zero when continuity holds. B: Any function satisfying the continuity and target hypotheses is eligible. C: The essential continuity hypothesis fails inside the proposed interval. D: There is no such interval-length restriction."
+    },
+    {
+      "id": "calc-ab-1-16-004",
+      "prompt": "Only these facts are known: f is continuous on [0,2], and f(0)=f(2)=1. What can be concluded about zeros in (0,2)?",
+      "options": [
+        "There must be at least one zero because the endpoint outputs are equal.",
+        "There cannot be a zero because both endpoint outputs are positive.",
+        "There must be exactly two zeros.",
+        "The information does not determine whether there are any zeros."
+      ],
+      "correctIndex": 3,
+      "explanation": "IVT does not guarantee a target outside the interval between the endpoint outputs. Here both are 1, so zero is not bracketed. The models f(x)=1 and f(x)=(x−1)² are both continuous with the stated endpoint values, but only the second has an interior zero. A: Equality of positive endpoint outputs does not place zero between them. B: A continuous function can dip to zero or below between positive endpoints. C: The endpoints do not determine a root count, and a function with no zeros satisfies all the facts. D: A constant positive function has none, while (x−1)² matches the endpoint values and has a zero."
+    },
+    {
+      "id": "calc-ab-1-16-005",
+      "prompt": "The table below gives exact samples of f, which is continuous on [0,5]. Based on these values and continuity alone, what is the largest number of distinct solutions of f(x)=0 that is guaranteed in (0,5)?",
+      "options": [
+        "3",
+        "2",
+        "5",
+        "0"
+      ],
+      "correctIndex": 0,
+      "explanation": "IVT supplies a zero in each of (0,1), (2,3) and (3,4). These open intervals are disjoint and none of the tabulated boundary values is zero, so the roots are distinct. Three is the largest guaranteed count: a piecewise linear interpolant through all samples has exactly those three crossings. A: The sign changes occur in three disjoint open intervals: (0,1), (2,3) and (3,4). B: This overlooks one of the three separate sign changes. C: There is not a sign change across every adjacent pair of listed inputs. D: Continuity together with the listed sign changes guarantees some roots."
+    },
+    {
+      "id": "calc-ab-1-16-006",
+      "prompt": "A room’s temperature varies continuously from 14°C at 8:00 a.m. to 26°C at 10:00 a.m. Which statement is guaranteed?",
+      "options": [
+        "The temperature is exactly 20°C at 9:00 a.m.",
+        "At some time strictly between 8:00 and 10:00 a.m., the temperature is 20°C.",
+        "The temperature reaches 20°C exactly once.",
+        "The temperature never exceeds 26°C during the interval."
+      ],
+      "correctIndex": 1,
+      "explanation": "The continuous temperature function takes every intermediate value between its endpoint temperatures. Since 14<20<26, it must equal 20°C at an interior time. IVT gives neither the exact time, uniqueness, nor bounds on all other temperatures. A: That timing would require extra information about how the temperature changes. B: The intermediate temperature lies strictly between the two endpoint readings and continuity supplies an occurrence. C: A continuous temperature can rise and fall, crossing the target more than once. D: Endpoint values and continuity do not impose a maximum over the whole interval."
+    },
+    {
+      "id": "calc-ab-1-16-007",
+      "prompt": "Suppose f is continuous on (0,1), lim(x→0⁺) f(x)=−1 and lim(x→1⁻) f(x)=1. The endpoint values are not defined. Which conclusion is justified?",
+      "options": [
+        "No zero can be inferred because f(0) and f(1) are undefined.",
+        "The input 1/2 must be a zero.",
+        "A zero exists in (0,1): choose interior inputs with negative and positive outputs and apply IVT on the closed subinterval between them.",
+        "There is exactly one zero because the two endpoint limits have opposite signs."
+      ],
+      "correctIndex": 2,
+      "explanation": "The right-hand limit −1 at 0 ensures a negative value f(a) at some a near 0. The left-hand limit 1 at 1 ensures a positive value f(b) at some b near 1, with 0<a<b<1. Continuity on (0,1) implies continuity on [a,b], so IVT gives an interior zero there. A: IVT can be applied on an interior closed subinterval without using either missing endpoint. B: The endpoint limits do not determine the location of the crossing. C: The endpoint limits provide opposite signs at some nearby interior inputs where continuity holds. D: Opposite limiting signs give existence but not uniqueness."
+    },
+    {
+      "id": "calc-ab-1-16-008",
+      "prompt": "Which reasoning correctly proves that ln x+x−3=0 has at least one solution in (1,3)?",
+      "options": [
+        "The function must have a zero because it is defined at both endpoints.",
+        "Every logarithmic function has a zero at the midpoint of any interval.",
+        "The equation is guaranteed because ln x is positive for every x>0.",
+        "The function F(x)=ln x+x−3 is continuous on [1,3], with F(1)=−2 and F(3)=ln 3>0, so IVT applies."
+      ],
+      "correctIndex": 3,
+      "explanation": "For x in [1,3], the logarithm is continuous and real-valued, so F is continuous. Its endpoint values are F(1)=0+1−3=−2 and F(3)=ln 3+3−3=ln 3>0. The target zero lies between them, so IVT guarantees a solution strictly between 1 and 3. A: Defined endpoint values alone do not establish continuity or a sign change. B: There is no such midpoint-zero property. C: Natural logarithms are negative for 0<x<1, and positivity alone would not prove the desired equation. D: The logarithm is defined throughout the closed interval and the endpoint outputs straddle zero."
+    },
+    {
+      "id": "calc-ab-1-16-009",
+      "prompt": "A function f is continuous and strictly increasing on [−2,2], with f(−2)=−3 and f(2)=5. How many solutions of f(x)=0 are guaranteed in (−2,2)?",
+      "options": [
+        "Exactly one: IVT gives existence and strict increase prevents two distinct inputs from having the same output.",
+        "At least two because the endpoint signs differ.",
+        "No solution can be inferred without knowing a derivative.",
+        "Infinitely many because the interval has infinitely many inputs."
+      ],
+      "correctIndex": 0,
+      "explanation": "Since −3<0<5, IVT supplies at least one zero. If two distinct inputs had output 0, strict increase would require the larger input to have a larger output, a contradiction. Existence plus this at-most-one argument gives exactly one solution. A: Both hypotheses are used for separate parts of the conclusion. B: A sign change guarantees at least one crossing, not two. C: Continuity and the stated strict increase suffice without differentiability. D: Strict increase allows any fixed output at most once."
+    },
+    {
+      "id": "calc-ab-1-16-010",
+      "prompt": "Functions f and g are continuous on [0,3]. Their endpoint values are f(0)=1, g(0)=4, f(3)=6 and g(3)=2. Which conclusion is guaranteed?",
+      "options": [
+        "Their graphs intersect exactly once.",
+        "There is at least one c in (0,3) with f(c)=g(c).",
+        "Their graphs must intersect at the input 3/2.",
+        "The common output at an intersection must be 3."
+      ],
+      "correctIndex": 1,
+      "explanation": "Define h(x)=f(x)−g(x), which is continuous on [0,3]. Its endpoint values are h(0)=1−4=−3 and h(3)=6−2=4. By IVT, h(c)=0 for some interior c, which is exactly f(c)=g(c). Neither its location, height nor uniqueness follows. A: The sign change gives an intersection but does not rule out repeated intersections. B: The continuous difference f−g changes from −3 to 4, so it must be zero somewhere. C: No formula or symmetry fixes the intersection at the midpoint. D: The theorem gives equality of the outputs but no particular shared height."
+    },
+    {
+      "id": "calc-ab-1-16-011",
+      "prompt": "A function f is continuous on [0,2], with f(0)=3 and f(2)=7. Which output value is guaranteed to occur at an input strictly inside (0,2), solely by the Intermediate Value Theorem?",
+      "options": [
+        "3",
+        "7",
+        "5",
+        "8"
+      ],
+      "correctIndex": 2,
+      "explanation": "The strict inequality 3<5<7 guarantees f(c)=5 for some 0<c<2. Endpoints already attain 3 and 7, but IVT does not require those same endpoint heights at an interior input. A continuous function may or may not exceed 7, so 8 is not guaranteed. A: This is attained at the left endpoint, but another occurrence inside is not guaranteed. B: This is attained at the right endpoint, but an interior occurrence is not forced. C: It lies strictly between 3 and 7, so an interior input must attain it. D: This lies outside the endpoint output range and need not be attained at all."
+    }
+  ]
+}

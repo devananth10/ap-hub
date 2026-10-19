@@ -1,0 +1,304 @@
+{
+  "topicNumber": "1.15",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "15715de704f951db8eb21b53e037d2be28817fdd5a6cdb2cf333d47030f89de9",
+  "scopeReview": "CED LIM-2.D.3–5: end behavior, horizontal asymptotes and relative growth. Uses degree comparisons, negative-end square-root signs, algebraic rationalization, bounded oscillations and a provided eventual exponential bound. No L’Hôpital rule, series or BC-only methods.",
+  "varietyReview": "Tasks vary equal/unequal rational degrees, a sign-sensitive radical ratio, damped oscillation, cancellation of large radical terms, repeated asymptote crossings, different exponential end limits, choosing among function formulas, a bounded nonconvergent function and a proved relative-growth bound.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-1-15-001",
+      "independentReasoning": "Independently compare the leading degree 2 in both polynomials and their coefficients 6 and 3. The limiting denominator is nonzero. Lower-order terms vanish after normalization, and exactly one numerical option equals 2.",
+      "optionReview": [
+        "Equal numerator and denominator degrees do not make the quotient tend to zero.",
+        "This reverses the leading-coefficient ratio.",
+        "The denominator has the same degree as the numerator, preventing unbounded quotient growth.",
+        "After dividing by x², the lower-power terms vanish and the ratio is 6/3."
+      ],
+      "check": {
+        "type": "rational-end",
+        "direction": 1,
+        "numerator": [
+          6,
+          -1,
+          5
+        ],
+        "denominator": [
+          3,
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-15-002",
+      "independentReasoning": "The degree difference is 3−4=−1. The leading behavior 2/x tends to zero even on the negative end. Being negative near that end does not mean a negative infinite limit; the exact normalized expression establishes the finite limit.",
+      "optionReview": [
+        "The denominator degree is one larger, so the normalized numerator tends to zero.",
+        "The leading-coefficient ratio applies as a finite nonzero limit only when degrees match.",
+        "The quotient is negative for large negative x but its magnitude shrinks to zero.",
+        "The higher denominator degree prevents unbounded positive growth."
+      ],
+      "check": {
+        "type": "rational-end",
+        "direction": -1,
+        "numerator": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "denominator": [
+          1,
+          0,
+          0,
+          0,
+          7
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-15-003",
+      "independentReasoning": "The degree difference is 1 and the leading coefficient ratio is positive 1/2. For x>2, the original numerator x(x²−4) is positive. Its linear leading growth after normalization confirms the positive unbounded result independently of the finite lower-order terms.",
+      "optionReview": [
+        "This discards the unmatched remaining factor of x in the leading-term ratio.",
+        "The leading behavior is x/2, which grows without bound on the positive end.",
+        "The numerator degree is larger, not smaller, than the denominator degree.",
+        "For sufficiently large positive inputs, both numerator and denominator are positive."
+      ],
+      "check": {
+        "type": "rational-end",
+        "direction": 1,
+        "numerator": [
+          1,
+          0,
+          -4,
+          0
+        ],
+        "denominator": [
+          2,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-15-004",
+      "independentReasoning": "The square root output is positive while the denominator is negative, so a positive answer is already excluded. Factoring x² inside the root gives a magnitude ratio tending to 3 and a sign factor −1. The original unsimplified expression at two large negative scales corroborates the exact argument.",
+      "optionReview": [
+        "This incorrectly replaces √(x²) with x when x is negative.",
+        "Both numerator and denominator have the same magnitude order, so their ratio does not vanish.",
+        "The square root behaves like 3|x|, and |x|/x=−1 on the negative end.",
+        "The numerator grows proportionally to |x| rather than faster than the denominator magnitude."
+      ],
+      "check": {
+        "type": "end-expression",
+        "direction": -1,
+        "order": 2,
+        "expression": [
+          "div",
+          [
+            "sqrt",
+            [
+              "add",
+              [
+                "mul",
+                9,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ],
+              1
+            ]
+          ],
+          "x"
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-15-005",
+      "independentReasoning": "Use |cos x|≤1 at every real input and a positive denominator on the requested end. This universal bound proves convergence. Finite large-input samples merely corroborate the answer and cannot themselves rule out arbitrary unseen oscillation.",
+      "optionReview": [
+        "Cosine does not approach 1, and division by an increasing positive x damps its magnitude.",
+        "The oscillating sign cannot retain unit magnitude after division by x.",
+        "A bounded oscillation divided by an unbounded positive input can converge.",
+        "The quotient magnitude is bounded by 1/x, which tends to zero."
+      ],
+      "check": {
+        "type": "end-expression",
+        "direction": 1,
+        "scale": 10000000,
+        "expression": [
+          "div",
+          [
+            "cos",
+            "x"
+          ],
+          "x"
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-15-006",
+      "independentReasoning": "The conjugate product is exactly (4x²+x)−4x²=x. On the positive end √(x²)=x, so normalization is valid with no negative sign. The remaining continuous denominator tends to 4≠0; original-expression samples at two large scales corroborate this exact rationalization.",
+      "optionReview": [
+        "Rationalization yields x/(√(4x²+x)+2x), whose normalized denominator tends to 4.",
+        "The small difference of two large terms need not vanish; rationalization retains a nonzero constant.",
+        "This accounts for only one of the two terms approaching 2 in the normalized denominator.",
+        "Subtracting two divergent terms is indeterminate until their difference is analyzed."
+      ],
+      "check": {
+        "type": "end-expression",
+        "direction": 1,
+        "expression": [
+          "sub",
+          [
+            "sqrt",
+            [
+              "add",
+              [
+                "mul",
+                4,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ],
+              "x"
+            ]
+          ],
+          [
+            "mul",
+            2,
+            "x"
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-15-007",
+      "independentReasoning": "The example has vanishing oscillation amplitude by |sin x/x|≤1/x, and sine changes sign at successive multiples of π. It disproves the no-crossing and eventual-constant claims. One can define the function independently for x<0, disproving a forced negative-end limit.",
+      "optionReview": [
+        "A horizontal asymptote describes end behavior, not an absolute barrier.",
+        "For example, 2+sin x/x on x>0 approaches 2 and equals 2 at every positive integer multiple of π.",
+        "Approaching a value does not require becoming exactly constant.",
+        "A statement about the positive end imposes no matching requirement at the negative end."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The graph may cross y=2 infinitely many times while still having that horizontal asymptote."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-15-008",
+      "independentReasoning": "Normalize only on the end where eˣ grows; use direct exponential decay on the other end. The limiting denominators are 1 and 3, both nonzero. The two limiting ratios are different, demonstrating that a single function can have two different horizontal asymptotes.",
+      "optionReview": [
+        "This reverses the limiting behavior of eˣ on the two ends.",
+        "The leading exponential ratio is not the correct negative-end analysis when eˣ tends to zero.",
+        "At the positive end divide by eˣ; at the negative end eˣ tends to zero.",
+        "The numerator and denominator approach comparable nonzero ratios on both ends."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Positive end: y=2; negative end: y=1/3."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-15-009",
+      "independentReasoning": "Review every candidate independently: degree differences 0, −1, 0 and 1, with leading ratios −3, −3, 3 and −3. Applying the positive-end degree rule gives exactly one finite limit −3. Models are keyed by the actual full option text, so answer reordering cannot silently misalign them.",
+      "optionReview": [
+        "Its smaller numerator degree gives limit 0, not −3.",
+        "Its leading coefficient ratio is positive 3.",
+        "Its numerator degree is larger, giving unbounded negative behavior on this end.",
+        "Equal degrees and leading coefficient ratio −6/2 give −3."
+      ],
+      "check": {
+        "type": "rational-end-candidates",
+        "direction": 1,
+        "target": -3,
+        "candidates": {
+          "f(x)=(−6x²+1)/(2x²+5)": {
+            "numerator": [
+              -6,
+              0,
+              1
+            ],
+            "denominator": [
+              2,
+              0,
+              5
+            ]
+          },
+          "f(x)=(−3x+1)/(x²+5)": {
+            "numerator": [
+              -3,
+              1
+            ],
+            "denominator": [
+              1,
+              0,
+              5
+            ]
+          },
+          "f(x)=(6x²+1)/(2x²+5)": {
+            "numerator": [
+              6,
+              0,
+              1
+            ],
+            "denominator": [
+              2,
+              0,
+              5
+            ]
+          },
+          "f(x)=(−6x³+1)/(2x²+5)": {
+            "numerator": [
+              -6,
+              0,
+              0,
+              1
+            ],
+            "denominator": [
+              2,
+              0,
+              5
+            ]
+          }
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-1-15-010",
+      "independentReasoning": "The two positive-end sequences diverge to +∞ but have different constant output sequences. Replacing n by negative integers produces distinct outputs at −∞ as well. This rigorously contradicts a finite common end limit despite boundedness and infinitely many intersections with horizontal lines.",
+      "optionReview": [
+        "Sequences of inputs at either end produce distinct repeating outputs 0 and 1.",
+        "Repeated zeros do not force all sufficiently distant outputs to approach zero.",
+        "A bound or maximum is not necessarily an approached end value.",
+        "Being bounded by two horizontal lines does not make either line an asymptote."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "There is no horizontal asymptote at either end because the outputs do not approach a single height."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-15-011",
+      "independentReasoning": "Division by positive eˣ and x⁴ preserves the correct inequality for the quotient bound. The resulting upper bound vanishes. The hypothesis is a stated valid eventual-growth fact, not an unproved Taylor expansion or L’Hôpital computation introduced into this topic.",
+      "optionReview": [
+        "Both terms growing does not force their quotient to approach 1.",
+        "For sufficiently large positive x, the quotient lies between 0 and 1/x.",
+        "The given bound says the exponential eventually exceeds a higher power than the numerator.",
+        "That form is inconclusive on its own, but the supplied bound resolves it."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "0"
+      }
+    }
+  ]
+}
