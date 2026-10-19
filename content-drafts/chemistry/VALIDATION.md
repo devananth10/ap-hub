@@ -1,5 +1,8 @@
 # Chemistry checkpoint validation — 2026-10-18
 
+> Later post-publication update: all 1,001 questions below remain unchanged. The initial one-time Jeremy Krug collection now has 102 published unique videos covering all 91 topics, with the duplicate 9.8b alias pending. See `docs/DEVELOPMENT_PROGRESS.md`, `docs/VALIDATION.md`, and `docs/VIDEO_VERIFICATION.md` for the current workspace/video checks; earlier empty-catalog statements below describe the question-publication checkpoint.
+
+
 ## Current authorized publication checkpoint
 
 **1,001 published MCQs, 91 topics, eleven per topic, zero withheld.** The owner explicitly authorized this completed bank for bulk publication after automated checks. All question objects match the frozen `627b7e2` inventory. Prior manual-approval requirements are superseded for this bank only; no human scientific approval is asserted. [PUBLICATION_REVIEW.md](PUBLICATION_REVIEW.md) records the scope/difficulty/repetition dispositions and remaining verification limits.

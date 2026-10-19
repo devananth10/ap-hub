@@ -77,7 +77,7 @@ for (const path of earlierFiles) {
 }
 const recoveryIndex = read(`${root}/recovered/index.json`);
 assert.equal(fileHash(`${root}/recovered/archive-unaudited.md`), recoveryIndex.sha256);
-assert.equal(fileHash('src/config/official-resources.json'), '3544ceb6d9770ba4a72e429a8a73eec3313c482365c4b8c35784f3709e4a0571');
+assert.equal(createHash('sha256').update(execFileSync('git', ['show', '627b7e2:src/config/official-resources.json'])).digest('hex'), '3544ceb6d9770ba4a72e429a8a73eec3313c482365c4b8c35784f3709e4a0571');
 const videoManifest = read(`${root}/research/video-candidates.json`);
 assert.equal(videoManifest.videos.length, 103);
 assert.equal(videoManifest.coveredTopicCount, 91);

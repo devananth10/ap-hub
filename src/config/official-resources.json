@@ -1,3 +1,3638 @@
 {
-  "resources": []
+  "resources": [
+    {
+      "id": "krug-chemistry-001",
+      "title": "An Introduction to Moles and Molar Mass - AP Chem Unit 1, Topic 1a",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/wynFro1c09k",
+      "courseId": "chemistry",
+      "unitNumber": 1,
+      "topicIds": [
+        "moles"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "wynFro1c09k",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "1.1a"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/wynFro1c09k",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "A"
+    },
+    {
+      "id": "krug-chemistry-002",
+      "title": "Molar Mass and its Applications - AP Chem Unit 1, Topic 1b",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/dijmukeZ2WE",
+      "courseId": "chemistry",
+      "unitNumber": 1,
+      "topicIds": [
+        "moles"
+      ],
+      "visibility": "published",
+      "order": 2,
+      "video": {
+        "provider": "youtube",
+        "videoId": "dijmukeZ2WE",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "1.1b"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/dijmukeZ2WE",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "B"
+    },
+    {
+      "id": "krug-chemistry-003",
+      "title": "Isotopes, Atomic Mass, & Mass Spectra of Elements - AP Chem Unit 1, Topic 2",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/bzky1T4RYIs",
+      "courseId": "chemistry",
+      "unitNumber": 1,
+      "topicIds": [
+        "mass-spectra"
+      ],
+      "visibility": "published",
+      "order": 3,
+      "video": {
+        "provider": "youtube",
+        "videoId": "bzky1T4RYIs",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "1.2"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/bzky1T4RYIs",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-004",
+      "title": "Composition of Pure Substances - AP Chem Unit 1, Topic 3",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/_uqIROUX0js",
+      "courseId": "chemistry",
+      "unitNumber": 1,
+      "topicIds": [
+        "composition"
+      ],
+      "visibility": "published",
+      "order": 4,
+      "video": {
+        "provider": "youtube",
+        "videoId": "_uqIROUX0js",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "1.3"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/_uqIROUX0js",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-005",
+      "title": "Composition of Mixtures - AP Chem, Unit 1, Topic 4",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/00RufJkBZy4",
+      "courseId": "chemistry",
+      "unitNumber": 1,
+      "topicIds": [
+        "mixtures"
+      ],
+      "visibility": "published",
+      "order": 5,
+      "video": {
+        "provider": "youtube",
+        "videoId": "00RufJkBZy4",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "1.4"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/00RufJkBZy4",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-006",
+      "title": "Atomic Structure & Coulomb's Law - AP Chem Unit 1, Topic 5a",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/4tvfh15wYxY",
+      "courseId": "chemistry",
+      "unitNumber": 1,
+      "topicIds": [
+        "electron-configuration"
+      ],
+      "visibility": "published",
+      "order": 6,
+      "video": {
+        "provider": "youtube",
+        "videoId": "4tvfh15wYxY",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "1.5a"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/4tvfh15wYxY",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "A"
+    },
+    {
+      "id": "krug-chemistry-007",
+      "title": "Electron Configurations - AP Chem Unit 1, Topic 5b",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/lvhHMbXLi-U",
+      "courseId": "chemistry",
+      "unitNumber": 1,
+      "topicIds": [
+        "electron-configuration"
+      ],
+      "visibility": "published",
+      "order": 7,
+      "video": {
+        "provider": "youtube",
+        "videoId": "lvhHMbXLi-U",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "1.5b"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/lvhHMbXLi-U",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "B"
+    },
+    {
+      "id": "krug-chemistry-008",
+      "title": "Photoelectron Spectroscopy - AP Chem Unit 1, Topic 6 - Topic 1.6",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/EVn4_euvA6U",
+      "courseId": "chemistry",
+      "unitNumber": 1,
+      "topicIds": [
+        "photoelectron-spectroscopy"
+      ],
+      "visibility": "published",
+      "order": 8,
+      "video": {
+        "provider": "youtube",
+        "videoId": "EVn4_euvA6U",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "1.6"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/EVn4_euvA6U",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-009",
+      "title": "Periodic Trends: Ionization Energy - AP Chem Unit 1, Topic 7a",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/MftSzSxIWBA",
+      "courseId": "chemistry",
+      "unitNumber": 1,
+      "topicIds": [
+        "periodic-trends"
+      ],
+      "visibility": "published",
+      "order": 9,
+      "video": {
+        "provider": "youtube",
+        "videoId": "MftSzSxIWBA",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "1.7a"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/MftSzSxIWBA",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "A"
+    },
+    {
+      "id": "krug-chemistry-010",
+      "title": "Periodic Trends: Atomic Radius & Ionic Radius - AP Chem Unit 1, Topic 7b",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/6Uaub18RkAA",
+      "courseId": "chemistry",
+      "unitNumber": 1,
+      "topicIds": [
+        "periodic-trends"
+      ],
+      "visibility": "published",
+      "order": 10,
+      "video": {
+        "provider": "youtube",
+        "videoId": "6Uaub18RkAA",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "1.7b"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/6Uaub18RkAA",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "B"
+    },
+    {
+      "id": "krug-chemistry-011",
+      "title": "Periodic Trends: Electronegativity - AP Chem Unit 1, Topic 7c",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/u2aGKh_4HGI",
+      "courseId": "chemistry",
+      "unitNumber": 1,
+      "topicIds": [
+        "periodic-trends"
+      ],
+      "visibility": "published",
+      "order": 11,
+      "video": {
+        "provider": "youtube",
+        "videoId": "u2aGKh_4HGI",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "1.7c"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/u2aGKh_4HGI",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "C"
+    },
+    {
+      "id": "krug-chemistry-012",
+      "title": "Valence Electrons & Ionic Compounds - AP Chem Unit 1, Topic 8",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/4tWZl3-_ZZU",
+      "courseId": "chemistry",
+      "unitNumber": 1,
+      "topicIds": [
+        "valence"
+      ],
+      "visibility": "published",
+      "order": 12,
+      "video": {
+        "provider": "youtube",
+        "videoId": "4tWZl3-_ZZU",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "1.8"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/4tWZl3-_ZZU",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-013",
+      "title": "Types of Chemical Bonds - AP Chem Unit 2, Topic 1",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/SQk9E_Y2EWw",
+      "courseId": "chemistry",
+      "unitNumber": 2,
+      "topicIds": [
+        "bonds"
+      ],
+      "visibility": "published",
+      "order": 13,
+      "video": {
+        "provider": "youtube",
+        "videoId": "SQk9E_Y2EWw",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "2.1"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/SQk9E_Y2EWw",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-014",
+      "title": "Energy, Ionic Solids, Metals, & Alloys - AP Chem Unit 2, Topics 2-4",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/buRAe2IDBzQ",
+      "courseId": "chemistry",
+      "unitNumber": 2,
+      "topicIds": [
+        "potential-energy",
+        "topic-2-3",
+        "topic-2-4"
+      ],
+      "visibility": "published",
+      "order": 14,
+      "video": {
+        "provider": "youtube",
+        "videoId": "buRAe2IDBzQ",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "2.2, 2.3. 2.4"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/buRAe2IDBzQ",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-015",
+      "title": "Lewis Electron-Dot Diagrams - AP Chem Unit 2, Topic 5A",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/_lFg4z0OOOY",
+      "courseId": "chemistry",
+      "unitNumber": 2,
+      "topicIds": [
+        "topic-2-5"
+      ],
+      "visibility": "published",
+      "order": 15,
+      "video": {
+        "provider": "youtube",
+        "videoId": "_lFg4z0OOOY",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "2.5a"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/_lFg4z0OOOY",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "A"
+    },
+    {
+      "id": "krug-chemistry-016",
+      "title": "Exceptions to the Octet Rule - AP Chem Unit 2, Topic 5B",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/i4IqrxlrgDw",
+      "courseId": "chemistry",
+      "unitNumber": 2,
+      "topicIds": [
+        "topic-2-5"
+      ],
+      "visibility": "published",
+      "order": 16,
+      "video": {
+        "provider": "youtube",
+        "videoId": "i4IqrxlrgDw",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "2.5b"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/i4IqrxlrgDw",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "B"
+    },
+    {
+      "id": "krug-chemistry-017",
+      "title": "Resonance and Formal Charge - AP Chem Unit 2, Topic 6",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/Th3ZiNN313o",
+      "courseId": "chemistry",
+      "unitNumber": 2,
+      "topicIds": [
+        "topic-2-6"
+      ],
+      "visibility": "published",
+      "order": 17,
+      "video": {
+        "provider": "youtube",
+        "videoId": "Th3ZiNN313o",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "2.6"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/Th3ZiNN313o",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-018",
+      "title": "Sigma & Pi Bonds; Hybridization - AP Chem Unit 2, Topic 7A",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/8Xupo4rn2kA",
+      "courseId": "chemistry",
+      "unitNumber": 2,
+      "topicIds": [
+        "topic-2-7"
+      ],
+      "visibility": "published",
+      "order": 18,
+      "video": {
+        "provider": "youtube",
+        "videoId": "8Xupo4rn2kA",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "2.7a"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/8Xupo4rn2kA",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "A"
+    },
+    {
+      "id": "krug-chemistry-019",
+      "title": "VSEPR Theory & Molecular Geometry - AP Chem Unit 2, Topic 7B",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/a8xDFQLYtYE",
+      "courseId": "chemistry",
+      "unitNumber": 2,
+      "topicIds": [
+        "topic-2-7"
+      ],
+      "visibility": "published",
+      "order": 19,
+      "video": {
+        "provider": "youtube",
+        "videoId": "a8xDFQLYtYE",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "2.7b"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/a8xDFQLYtYE",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "B"
+    },
+    {
+      "id": "krug-chemistry-020",
+      "title": "Intermolecular & Interparticle Forces - London dispersion forces - AP Chem Unit 3, Topic 1A",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/a9YtU828MzM",
+      "courseId": "chemistry",
+      "unitNumber": 3,
+      "topicIds": [
+        "intermolecular-forces"
+      ],
+      "visibility": "published",
+      "order": 20,
+      "video": {
+        "provider": "youtube",
+        "videoId": "a9YtU828MzM",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "3.1a"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/a9YtU828MzM",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "A"
+    },
+    {
+      "id": "krug-chemistry-021",
+      "title": "Types of Intermolecular & Interparticle Forces - AP Chem Unit 3, Topic 1B",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/lOoLquXZH3M",
+      "courseId": "chemistry",
+      "unitNumber": 3,
+      "topicIds": [
+        "intermolecular-forces"
+      ],
+      "visibility": "published",
+      "order": 21,
+      "video": {
+        "provider": "youtube",
+        "videoId": "lOoLquXZH3M",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "3.1b"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/lOoLquXZH3M",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "B"
+    },
+    {
+      "id": "krug-chemistry-022",
+      "title": "Properties of Solids - AP Chem Unit 3, Topic 2",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/4_14asNzvc0",
+      "courseId": "chemistry",
+      "unitNumber": 3,
+      "topicIds": [
+        "topic-3-2"
+      ],
+      "visibility": "published",
+      "order": 22,
+      "video": {
+        "provider": "youtube",
+        "videoId": "4_14asNzvc0",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "3.2"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/4_14asNzvc0",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-023",
+      "title": "Solids, Liquids, & Gases - AP Chem Unit 3, Topic 3",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/9G88-AcHVbA",
+      "courseId": "chemistry",
+      "unitNumber": 3,
+      "topicIds": [
+        "topic-3-3"
+      ],
+      "visibility": "published",
+      "order": 23,
+      "video": {
+        "provider": "youtube",
+        "videoId": "9G88-AcHVbA",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "3.3"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/9G88-AcHVbA",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-024",
+      "title": "Boyle's Law, Charles' Law, Gay-Lussac's Law - AP Chem Unit 3, Topic 4A",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/rZxN6Zfzipc",
+      "courseId": "chemistry",
+      "unitNumber": 3,
+      "topicIds": [
+        "topic-3-4"
+      ],
+      "visibility": "published",
+      "order": 24,
+      "video": {
+        "provider": "youtube",
+        "videoId": "rZxN6Zfzipc",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "3.4a"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/rZxN6Zfzipc",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "A"
+    },
+    {
+      "id": "krug-chemistry-025",
+      "title": "Ideal Gas Law PV=nRT - AP Chem Unit 3, Topic 4B",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/77xhRWWpIi4",
+      "courseId": "chemistry",
+      "unitNumber": 3,
+      "topicIds": [
+        "topic-3-4"
+      ],
+      "visibility": "published",
+      "order": 25,
+      "video": {
+        "provider": "youtube",
+        "videoId": "77xhRWWpIi4",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "3.4b"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/77xhRWWpIi4",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "B"
+    },
+    {
+      "id": "krug-chemistry-026",
+      "title": "Dalton's Law of Partial Pressures / Gas Laws - AP Chem Unit 3, Topic 4c",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/-Hu2xBrbgjU",
+      "courseId": "chemistry",
+      "unitNumber": 3,
+      "topicIds": [
+        "topic-3-4"
+      ],
+      "visibility": "published",
+      "order": 26,
+      "video": {
+        "provider": "youtube",
+        "videoId": "-Hu2xBrbgjU",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "3.4c"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/-Hu2xBrbgjU",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "C"
+    },
+    {
+      "id": "krug-chemistry-027",
+      "title": "Kinetic-Molecular Theory & Graham's Law - AP Chem Unit 3, Topic 5",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/d3nEzAUWqfE",
+      "courseId": "chemistry",
+      "unitNumber": 3,
+      "topicIds": [
+        "topic-3-5"
+      ],
+      "visibility": "published",
+      "order": 27,
+      "video": {
+        "provider": "youtube",
+        "videoId": "d3nEzAUWqfE",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "3.5"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/d3nEzAUWqfE",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-028",
+      "title": "Deviation from the Ideal Gas Law - AP Chem Unit 3, Topic 6",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/BvGTzkVDcHI",
+      "courseId": "chemistry",
+      "unitNumber": 3,
+      "topicIds": [
+        "topic-3-6"
+      ],
+      "visibility": "published",
+      "order": 28,
+      "video": {
+        "provider": "youtube",
+        "videoId": "BvGTzkVDcHI",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "3.6"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/BvGTzkVDcHI",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-029",
+      "title": "Solutions and Mixtures - AP Chemistry Unit 3, Topic 7",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/aob4zGMCVIM",
+      "courseId": "chemistry",
+      "unitNumber": 3,
+      "topicIds": [
+        "topic-3-7"
+      ],
+      "visibility": "published",
+      "order": 29,
+      "video": {
+        "provider": "youtube",
+        "videoId": "aob4zGMCVIM",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "3.7"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/aob4zGMCVIM",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-030",
+      "title": "Representations of Solutions - AP Chem Unit 3, Topic 8A",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/W19S_PQOqgw",
+      "courseId": "chemistry",
+      "unitNumber": 3,
+      "topicIds": [
+        "topic-3-8"
+      ],
+      "visibility": "published",
+      "order": 30,
+      "video": {
+        "provider": "youtube",
+        "videoId": "W19S_PQOqgw",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "3.8a"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/W19S_PQOqgw",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "A"
+    },
+    {
+      "id": "krug-chemistry-031",
+      "title": "Electrolytes, Nonelectrolytes, & Dissociation into Ions - AP Chem Unit 3, Topic 8B",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/nFkcOaPpRHk",
+      "courseId": "chemistry",
+      "unitNumber": 3,
+      "topicIds": [
+        "topic-3-8"
+      ],
+      "visibility": "published",
+      "order": 31,
+      "video": {
+        "provider": "youtube",
+        "videoId": "nFkcOaPpRHk",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "3.8b"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/nFkcOaPpRHk",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "B"
+    },
+    {
+      "id": "krug-chemistry-032",
+      "title": "Chromatography, Distillation, & Solubility - AP Chem Unit 3, Topics 9-10",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/mWxgxb-RHTE",
+      "courseId": "chemistry",
+      "unitNumber": 3,
+      "topicIds": [
+        "topic-3-9",
+        "topic-3-10"
+      ],
+      "visibility": "published",
+      "order": 32,
+      "video": {
+        "provider": "youtube",
+        "videoId": "mWxgxb-RHTE",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "3.9, 3.10"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/mWxgxb-RHTE",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-033",
+      "title": "Waves, Light, and Photons - AP Chem Unit 3, Topic 11",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/g2bG4AdDbKM",
+      "courseId": "chemistry",
+      "unitNumber": 3,
+      "topicIds": [
+        "topic-3-11"
+      ],
+      "visibility": "published",
+      "order": 33,
+      "video": {
+        "provider": "youtube",
+        "videoId": "g2bG4AdDbKM",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "3.11"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/g2bG4AdDbKM",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-034",
+      "title": "The Nature of Light - Waves, Photons, & Energy - AP Chem Unit 3, Topic 12",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/trlFDyrjtOQ",
+      "courseId": "chemistry",
+      "unitNumber": 3,
+      "topicIds": [
+        "topic-3-12"
+      ],
+      "visibility": "published",
+      "order": 34,
+      "video": {
+        "provider": "youtube",
+        "videoId": "trlFDyrjtOQ",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "3.12"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/trlFDyrjtOQ",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-035",
+      "title": "Spectrophotometry and the Beer-Lambert Law - AP Chem Unit 3, Topic 13",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/jD3_pN5gR8A",
+      "courseId": "chemistry",
+      "unitNumber": 3,
+      "topicIds": [
+        "topic-3-13"
+      ],
+      "visibility": "published",
+      "order": 35,
+      "video": {
+        "provider": "youtube",
+        "videoId": "jD3_pN5gR8A",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "3.13"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/jD3_pN5gR8A",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-036",
+      "title": "Introduction for Reactions & Equations - AP Chem Unit 4, Topics 1-2a",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/KmI627EPza0",
+      "courseId": "chemistry",
+      "unitNumber": 4,
+      "topicIds": [
+        "reactions",
+        "topic-4-2"
+      ],
+      "visibility": "published",
+      "order": 36,
+      "video": {
+        "provider": "youtube",
+        "videoId": "KmI627EPza0",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "4.1, 4.2a"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/KmI627EPza0",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "A"
+    },
+    {
+      "id": "krug-chemistry-037",
+      "title": "Writing Net Ionic Equations - AP Chemistry Unit 4, Topic 2b",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/K5QDMQIOpmI",
+      "courseId": "chemistry",
+      "unitNumber": 4,
+      "topicIds": [
+        "topic-4-2"
+      ],
+      "visibility": "published",
+      "order": 37,
+      "video": {
+        "provider": "youtube",
+        "videoId": "K5QDMQIOpmI",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "4.2b"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/K5QDMQIOpmI",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "B"
+    },
+    {
+      "id": "krug-chemistry-038",
+      "title": "Predicting Products of Reactions - AP Chem Unit 4, Topic 2c",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/HhH15-vkgeY",
+      "courseId": "chemistry",
+      "unitNumber": 4,
+      "topicIds": [
+        "topic-4-2"
+      ],
+      "visibility": "published",
+      "order": 38,
+      "video": {
+        "provider": "youtube",
+        "videoId": "HhH15-vkgeY",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "4.2c"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/HhH15-vkgeY",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "C"
+    },
+    {
+      "id": "krug-chemistry-039",
+      "title": "Visually Representing Reactions / Physical vs Chemical Changes - AP Chem Unit 4, Topics 3-4",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/3lzI1vO118g",
+      "courseId": "chemistry",
+      "unitNumber": 4,
+      "topicIds": [
+        "topic-4-3",
+        "topic-4-4"
+      ],
+      "visibility": "published",
+      "order": 39,
+      "video": {
+        "provider": "youtube",
+        "videoId": "3lzI1vO118g",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "4.3, 4.4"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/3lzI1vO118g",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-040",
+      "title": "Reaction Stoichiometry Made Easy - AP Chemistry Unit 4, Topic 5a",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/pZHDvyv_z0c",
+      "courseId": "chemistry",
+      "unitNumber": 4,
+      "topicIds": [
+        "topic-4-5"
+      ],
+      "visibility": "published",
+      "order": 40,
+      "video": {
+        "provider": "youtube",
+        "videoId": "pZHDvyv_z0c",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "4.5a"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/pZHDvyv_z0c",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "A"
+    },
+    {
+      "id": "krug-chemistry-041",
+      "title": "Stoichiometry Problems - Limiting Reactant & Percent Yield - AP Chem Unit 4, Topic 5b",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/b7mKXr7LZ3I",
+      "courseId": "chemistry",
+      "unitNumber": 4,
+      "topicIds": [
+        "topic-4-5"
+      ],
+      "visibility": "published",
+      "order": 41,
+      "video": {
+        "provider": "youtube",
+        "videoId": "b7mKXr7LZ3I",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "4.5b"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/b7mKXr7LZ3I",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "B"
+    },
+    {
+      "id": "krug-chemistry-042",
+      "title": "Basics of Solution Stoichiometry - AP Chem Unit 4, Topic 5c",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/zb6_ak50Jlw",
+      "courseId": "chemistry",
+      "unitNumber": 4,
+      "topicIds": [
+        "topic-4-5"
+      ],
+      "visibility": "published",
+      "order": 42,
+      "video": {
+        "provider": "youtube",
+        "videoId": "zb6_ak50Jlw",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "4.5c"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/zb6_ak50Jlw",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "C"
+    },
+    {
+      "id": "krug-chemistry-043",
+      "title": "Solving Problems With Solution Stoichiometry - AP Chem Unit 4, Topic 5d",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/U9TGx77BWJ8",
+      "courseId": "chemistry",
+      "unitNumber": 4,
+      "topicIds": [
+        "topic-4-5"
+      ],
+      "visibility": "published",
+      "order": 43,
+      "video": {
+        "provider": "youtube",
+        "videoId": "U9TGx77BWJ8",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "4.5d"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/U9TGx77BWJ8",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "D"
+    },
+    {
+      "id": "krug-chemistry-044",
+      "title": "Introduction to Titration - AP Chemistry Unit 4, Topic 6",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/kxdu490P4Tw",
+      "courseId": "chemistry",
+      "unitNumber": 4,
+      "topicIds": [
+        "topic-4-6"
+      ],
+      "visibility": "published",
+      "order": 44,
+      "video": {
+        "provider": "youtube",
+        "videoId": "kxdu490P4Tw",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "4.6"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/kxdu490P4Tw",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-045",
+      "title": "Types of Chemical Reactions - AP Chemistry Unit 4, Topic 7A",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/B4khUScKJS8",
+      "courseId": "chemistry",
+      "unitNumber": 4,
+      "topicIds": [
+        "topic-4-7"
+      ],
+      "visibility": "published",
+      "order": 45,
+      "video": {
+        "provider": "youtube",
+        "videoId": "B4khUScKJS8",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "4.7a"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/B4khUScKJS8",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "A"
+    },
+    {
+      "id": "krug-chemistry-046",
+      "title": "How to Determine Oxidation State for ANY Atom - AP Chem Unit 4, Topic 7b",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/OEvI8yiSnxE",
+      "courseId": "chemistry",
+      "unitNumber": 4,
+      "topicIds": [
+        "topic-4-7"
+      ],
+      "visibility": "published",
+      "order": 46,
+      "video": {
+        "provider": "youtube",
+        "videoId": "OEvI8yiSnxE",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "4.7b"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/OEvI8yiSnxE",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "B"
+    },
+    {
+      "id": "krug-chemistry-047",
+      "title": "Introduction to Acid-Base Chemistry - AP Chemistry Unit 4, Topic 8",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/eX7soWYIGv8",
+      "courseId": "chemistry",
+      "unitNumber": 4,
+      "topicIds": [
+        "topic-4-8"
+      ],
+      "visibility": "published",
+      "order": 47,
+      "video": {
+        "provider": "youtube",
+        "videoId": "eX7soWYIGv8",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "4.8"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/eX7soWYIGv8",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-048",
+      "title": "Introduction to Redox Reactions - AP Chem Unit 4, Topic 9A",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/RySE0dy3Pfs",
+      "courseId": "chemistry",
+      "unitNumber": 4,
+      "topicIds": [
+        "topic-4-9"
+      ],
+      "visibility": "published",
+      "order": 48,
+      "video": {
+        "provider": "youtube",
+        "videoId": "RySE0dy3Pfs",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "4.9a"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/RySE0dy3Pfs",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "A"
+    },
+    {
+      "id": "krug-chemistry-049",
+      "title": "Redox Reactions: Halogens, Disproportionation, & Acids - AP Chem Unit 4, Topic 9b",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/eiNKXlhy0Ww",
+      "courseId": "chemistry",
+      "unitNumber": 4,
+      "topicIds": [
+        "topic-4-9"
+      ],
+      "visibility": "published",
+      "order": 49,
+      "video": {
+        "provider": "youtube",
+        "videoId": "eiNKXlhy0Ww",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "4.9b"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/eiNKXlhy0Ww",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "B"
+    },
+    {
+      "id": "krug-chemistry-050",
+      "title": "Balancing Oxidation-Reduction Reactions - AP Chem Unit 4, Topic 9c",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/-aypxLKg9B8",
+      "courseId": "chemistry",
+      "unitNumber": 4,
+      "topicIds": [
+        "topic-4-9"
+      ],
+      "visibility": "published",
+      "order": 50,
+      "video": {
+        "provider": "youtube",
+        "videoId": "-aypxLKg9B8",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "4.9c"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/-aypxLKg9B8",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "C"
+    },
+    {
+      "id": "krug-chemistry-051",
+      "title": "Reaction Rates & Introduction to Kinetics - AP Chem Unit 5, Topic 1",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/FDV_qaFCARA",
+      "courseId": "chemistry",
+      "unitNumber": 5,
+      "topicIds": [
+        "rates"
+      ],
+      "visibility": "published",
+      "order": 51,
+      "video": {
+        "provider": "youtube",
+        "videoId": "FDV_qaFCARA",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "5.1"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/FDV_qaFCARA",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-052",
+      "title": "Introduction to Rate Laws - AP Chem Unit 5, Topic 2",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/PWXJ7xxuhnw",
+      "courseId": "chemistry",
+      "unitNumber": 5,
+      "topicIds": [
+        "topic-5-2"
+      ],
+      "visibility": "published",
+      "order": 52,
+      "video": {
+        "provider": "youtube",
+        "videoId": "PWXJ7xxuhnw",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "5.2"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/PWXJ7xxuhnw",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-053",
+      "title": "Concentration Changes Over Time - AP Chem Unit 5, Topic 3",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/Jln8OrpjEsA",
+      "courseId": "chemistry",
+      "unitNumber": 5,
+      "topicIds": [
+        "topic-5-3"
+      ],
+      "visibility": "published",
+      "order": 53,
+      "video": {
+        "provider": "youtube",
+        "videoId": "Jln8OrpjEsA",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "5.3"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/Jln8OrpjEsA",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-054",
+      "title": "How Reactions Happen: Steps, Collisions, & Energy - AP Chem Unit 5, Topics 4, 5, and 6",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/AGte-WD8kdU",
+      "courseId": "chemistry",
+      "unitNumber": 5,
+      "topicIds": [
+        "topic-5-4",
+        "topic-5-5",
+        "topic-5-6"
+      ],
+      "visibility": "published",
+      "order": 54,
+      "video": {
+        "provider": "youtube",
+        "videoId": "AGte-WD8kdU",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "5.4, 5.5, 5.6"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/AGte-WD8kdU",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-055",
+      "title": "Reaction Mechanisms and Rate Laws - AP Chemistry Unit 5, Topics 7-10",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/0goaDsXV56w",
+      "courseId": "chemistry",
+      "unitNumber": 5,
+      "topicIds": [
+        "topic-5-7",
+        "topic-5-8",
+        "topic-5-9",
+        "topic-5-10"
+      ],
+      "visibility": "published",
+      "order": 55,
+      "video": {
+        "provider": "youtube",
+        "videoId": "0goaDsXV56w",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "5.7, 5.8, 5.9, 5.10"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/0goaDsXV56w",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-056",
+      "title": "Catalysis - AP Chemistry Unit 5, Topic 11 | AP Chem Topic 5.11",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/5zF6kurqvk4",
+      "courseId": "chemistry",
+      "unitNumber": 5,
+      "topicIds": [
+        "topic-5-11"
+      ],
+      "visibility": "published",
+      "order": 56,
+      "video": {
+        "provider": "youtube",
+        "videoId": "5zF6kurqvk4",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "5.11"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/5zF6kurqvk4",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-057",
+      "title": "Introduction to Thermodynamics - AP Chemistry Unit 6 Topic 1",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/Zmhdr-8E1Mo",
+      "courseId": "chemistry",
+      "unitNumber": 6,
+      "topicIds": [
+        "energy"
+      ],
+      "visibility": "published",
+      "order": 57,
+      "video": {
+        "provider": "youtube",
+        "videoId": "Zmhdr-8E1Mo",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "6.1"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/Zmhdr-8E1Mo",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-058",
+      "title": "How Heat Flows in Chemical Systems - AP Chem Unit 6, Topics 2-3",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/fwe9ApxkxSU",
+      "courseId": "chemistry",
+      "unitNumber": 6,
+      "topicIds": [
+        "topic-6-2",
+        "topic-6-3"
+      ],
+      "visibility": "published",
+      "order": 58,
+      "video": {
+        "provider": "youtube",
+        "videoId": "fwe9ApxkxSU",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "6.2, 6.3"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/fwe9ApxkxSU",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-059",
+      "title": "Calorimetry, Specific Heat Capacity, and Q=MCΔT - AP Chem Unit 6, Topic 4",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/Xn-vRyWu7mI",
+      "courseId": "chemistry",
+      "unitNumber": 6,
+      "topicIds": [
+        "topic-6-4"
+      ],
+      "visibility": "published",
+      "order": 59,
+      "video": {
+        "provider": "youtube",
+        "videoId": "Xn-vRyWu7mI",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "6.4"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/Xn-vRyWu7mI",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-060",
+      "title": "Phase Changes and Energy - AP Chemistry Unit 6, Topic 5",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/2IFMaefCIhk",
+      "courseId": "chemistry",
+      "unitNumber": 6,
+      "topicIds": [
+        "topic-6-5"
+      ],
+      "visibility": "published",
+      "order": 60,
+      "video": {
+        "provider": "youtube",
+        "videoId": "2IFMaefCIhk",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "6.5"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/2IFMaefCIhk",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-061",
+      "title": "How to Calculate Enthalpy of Reaction - AP Chem Unit 6, Topic 6a",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/LNPoyiCpLgM",
+      "courseId": "chemistry",
+      "unitNumber": 6,
+      "topicIds": [
+        "topic-6-6"
+      ],
+      "visibility": "published",
+      "order": 61,
+      "video": {
+        "provider": "youtube",
+        "videoId": "LNPoyiCpLgM",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "6.6a"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/LNPoyiCpLgM",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "A"
+    },
+    {
+      "id": "krug-chemistry-062",
+      "title": "Problem Walkthroughs - Enthalpy of Reaction - AP Chem Unit 6, Topic 6b",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/Y97W1aqDcps",
+      "courseId": "chemistry",
+      "unitNumber": 6,
+      "topicIds": [
+        "topic-6-6"
+      ],
+      "visibility": "published",
+      "order": 62,
+      "video": {
+        "provider": "youtube",
+        "videoId": "Y97W1aqDcps",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "6.6b"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/Y97W1aqDcps",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "B"
+    },
+    {
+      "id": "krug-chemistry-063",
+      "title": "Calculating ΔH Using Bond Enthalpies - AP Chem Unit 6, Topic 7",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/z3FziIDJjdk",
+      "courseId": "chemistry",
+      "unitNumber": 6,
+      "topicIds": [
+        "topic-6-7"
+      ],
+      "visibility": "published",
+      "order": 63,
+      "video": {
+        "provider": "youtube",
+        "videoId": "z3FziIDJjdk",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "6.7"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/z3FziIDJjdk",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-064",
+      "title": "Using Enthalpy of Formation to Calculate ΔH - AP Chem Unit 6, Topic 8",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/PVciNA7tVnM",
+      "courseId": "chemistry",
+      "unitNumber": 6,
+      "topicIds": [
+        "topic-6-8"
+      ],
+      "visibility": "published",
+      "order": 64,
+      "video": {
+        "provider": "youtube",
+        "videoId": "PVciNA7tVnM",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "6.8"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/PVciNA7tVnM",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-065",
+      "title": "Hess's Law and ΔH - Let's Practice! AP Chemistry Unit 6, Topic 9",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/d0Qlv_uXVvU",
+      "courseId": "chemistry",
+      "unitNumber": 6,
+      "topicIds": [
+        "topic-6-9"
+      ],
+      "visibility": "published",
+      "order": 65,
+      "video": {
+        "provider": "youtube",
+        "videoId": "d0Qlv_uXVvU",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "6.9"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/d0Qlv_uXVvU",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-066",
+      "title": "What Is Equilibrium? AP Chemistry Unit 7, Topic 1 Daily Video",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/Zmks1z6PT6U",
+      "courseId": "chemistry",
+      "unitNumber": 7,
+      "topicIds": [
+        "equilibrium"
+      ],
+      "visibility": "published",
+      "order": 66,
+      "video": {
+        "provider": "youtube",
+        "videoId": "Zmks1z6PT6U",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "7.1"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/Zmks1z6PT6U",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-067",
+      "title": "Writing an Equilibrium Constant Expression - AP Chem Unit 7 Topics 2-3 #apchem #apchemistry",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/yf7ZD9bOQC0",
+      "courseId": "chemistry",
+      "unitNumber": 7,
+      "topicIds": [
+        "topic-7-2",
+        "topic-7-3"
+      ],
+      "visibility": "published",
+      "order": 67,
+      "video": {
+        "provider": "youtube",
+        "videoId": "yf7ZD9bOQC0",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "7.2, 7.3"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/yf7ZD9bOQC0",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-068",
+      "title": "Magnitude of the Equilibrium Constant - AP Chem Unit 7, Topics 4-5",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/VkC0mQwKM1c",
+      "courseId": "chemistry",
+      "unitNumber": 7,
+      "topicIds": [
+        "topic-7-4",
+        "topic-7-5"
+      ],
+      "visibility": "published",
+      "order": 68,
+      "video": {
+        "provider": "youtube",
+        "videoId": "VkC0mQwKM1c",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "7.4, 7.5"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/VkC0mQwKM1c",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-069",
+      "title": "Manipulating Reactions and Its Effect on the Equilibrium Constant - AP Chem Unit 7, Topic 6",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/u4adSYN8tMM",
+      "courseId": "chemistry",
+      "unitNumber": 7,
+      "topicIds": [
+        "topic-7-6"
+      ],
+      "visibility": "published",
+      "order": 69,
+      "video": {
+        "provider": "youtube",
+        "videoId": "u4adSYN8tMM",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "7.6"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/u4adSYN8tMM",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-070",
+      "title": "Equilibrium Practice Problems - The ICE Box Method - AP Chem Unit 7, Topic 7a",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/IxYfMZulypc",
+      "courseId": "chemistry",
+      "unitNumber": 7,
+      "topicIds": [
+        "topic-7-7"
+      ],
+      "visibility": "published",
+      "order": 70,
+      "video": {
+        "provider": "youtube",
+        "videoId": "IxYfMZulypc",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "7.7a"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/IxYfMZulypc",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "A"
+    },
+    {
+      "id": "krug-chemistry-071",
+      "title": "Working With Very Small Equilibrium Constants - The 5% Rule - AP Chem Unit 7, Topic 7b #apchem",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/Dq4_DGACaDE",
+      "courseId": "chemistry",
+      "unitNumber": 7,
+      "topicIds": [
+        "topic-7-7"
+      ],
+      "visibility": "published",
+      "order": 71,
+      "video": {
+        "provider": "youtube",
+        "videoId": "Dq4_DGACaDE",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "7.7b"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/Dq4_DGACaDE",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "B"
+    },
+    {
+      "id": "krug-chemistry-072",
+      "title": "Representations of Equilibrium - AP Chem Unit 7, Topic 8",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/z40T4AN2veo",
+      "courseId": "chemistry",
+      "unitNumber": 7,
+      "topicIds": [
+        "topic-7-8"
+      ],
+      "visibility": "published",
+      "order": 72,
+      "video": {
+        "provider": "youtube",
+        "videoId": "z40T4AN2veo",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "7.8"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/z40T4AN2veo",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-073",
+      "title": "Le Chatelier's Principle - AP Chemistry Unit 7, Topic 9 #apchem #apchemistry #equilibriumchemistry",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/5t0PRjJgNmc",
+      "courseId": "chemistry",
+      "unitNumber": 7,
+      "topicIds": [
+        "topic-7-9"
+      ],
+      "visibility": "published",
+      "order": 73,
+      "video": {
+        "provider": "youtube",
+        "videoId": "5t0PRjJgNmc",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "7.9"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/5t0PRjJgNmc",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-074",
+      "title": "Reaction Quotient & Le Chatelier's Principle - AP Chem Unit 7, Topic 10",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/u2L9l6J4s7E",
+      "courseId": "chemistry",
+      "unitNumber": 7,
+      "topicIds": [
+        "topic-7-10"
+      ],
+      "visibility": "published",
+      "order": 74,
+      "video": {
+        "provider": "youtube",
+        "videoId": "u2L9l6J4s7E",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "7.10"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/u2L9l6J4s7E",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-075",
+      "title": "Introduction to Solubility Equilibria - AP Chem Unit 7, Topic 11a #apchemistry",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/1qqbnWTnZfQ",
+      "courseId": "chemistry",
+      "unitNumber": 7,
+      "topicIds": [
+        "topic-7-11"
+      ],
+      "visibility": "published",
+      "order": 75,
+      "video": {
+        "provider": "youtube",
+        "videoId": "1qqbnWTnZfQ",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "7.11a"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/1qqbnWTnZfQ",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "A"
+    },
+    {
+      "id": "krug-chemistry-076",
+      "title": "Solubility Product Constant Problems - Let's Practice! AP Chem Unit 7 Topic 11b #solubilityproduct",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/HI9y2l04aMY",
+      "courseId": "chemistry",
+      "unitNumber": 7,
+      "topicIds": [
+        "topic-7-11"
+      ],
+      "visibility": "published",
+      "order": 76,
+      "video": {
+        "provider": "youtube",
+        "videoId": "HI9y2l04aMY",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "7.11b"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/HI9y2l04aMY",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "B"
+    },
+    {
+      "id": "krug-chemistry-077",
+      "title": "The Common-Ion Effect | AP Chem Unit 7, Topic 12 - Topic 7.12",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/c3U_p7OjdAs",
+      "courseId": "chemistry",
+      "unitNumber": 7,
+      "topicIds": [
+        "topic-7-12"
+      ],
+      "visibility": "published",
+      "order": 77,
+      "video": {
+        "provider": "youtube",
+        "videoId": "c3U_p7OjdAs",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "7.12"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/c3U_p7OjdAs",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-078",
+      "title": "Acids, Bases, and the pH Concept - AP Chem Unit 8, Topic 1a",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/OUpYdKS7C6s",
+      "courseId": "chemistry",
+      "unitNumber": 8,
+      "topicIds": [
+        "acids"
+      ],
+      "visibility": "published",
+      "order": 78,
+      "video": {
+        "provider": "youtube",
+        "videoId": "OUpYdKS7C6s",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "8.1a"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/OUpYdKS7C6s",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "A"
+    },
+    {
+      "id": "krug-chemistry-079",
+      "title": "Calculations With pH and pOH - AP Chemistry Unit 8, Topic 1B",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/uVnJHXhq4q4",
+      "courseId": "chemistry",
+      "unitNumber": 8,
+      "topicIds": [
+        "acids"
+      ],
+      "visibility": "published",
+      "order": 79,
+      "video": {
+        "provider": "youtube",
+        "videoId": "uVnJHXhq4q4",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "8.1b"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/uVnJHXhq4q4",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "B"
+    },
+    {
+      "id": "krug-chemistry-080",
+      "title": "How to Calculate pH & pOH for Strong Acids & Bases - AP Chem Unit 8, Topic 2",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/8soANOG1O_0",
+      "courseId": "chemistry",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-2"
+      ],
+      "visibility": "published",
+      "order": 80,
+      "video": {
+        "provider": "youtube",
+        "videoId": "8soANOG1O_0",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "8.2"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/8soANOG1O_0",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-081",
+      "title": "Let's Solve Weak Acid Problems! - AP Chemistry Unit 8, Topic 3a",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/AjbAPEFSZvo",
+      "courseId": "chemistry",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-3"
+      ],
+      "visibility": "published",
+      "order": 81,
+      "video": {
+        "provider": "youtube",
+        "videoId": "AjbAPEFSZvo",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "8.3a"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/AjbAPEFSZvo",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "A"
+    },
+    {
+      "id": "krug-chemistry-082",
+      "title": "Weak Acids - Problem Walkthroughs - AP Chem Unit 8, Topic 3b",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/GyBJEVR9V58",
+      "courseId": "chemistry",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-3"
+      ],
+      "visibility": "published",
+      "order": 82,
+      "video": {
+        "provider": "youtube",
+        "videoId": "GyBJEVR9V58",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "8.3b"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/GyBJEVR9V58",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "B"
+    },
+    {
+      "id": "krug-chemistry-083",
+      "title": "Let's Solve Weak Base Problems! - AP Chem Unit 8, Topic 3c",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/3F8xA8AUfz4",
+      "courseId": "chemistry",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-3"
+      ],
+      "visibility": "published",
+      "order": 83,
+      "video": {
+        "provider": "youtube",
+        "videoId": "3F8xA8AUfz4",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "8.3c"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/3F8xA8AUfz4",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "C"
+    },
+    {
+      "id": "krug-chemistry-084",
+      "title": "Acid-Base Reactions and pH Calculations - AP Chem Unit 8, Topic 4",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/C3ni6qUi8os",
+      "courseId": "chemistry",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-4"
+      ],
+      "visibility": "published",
+      "order": 84,
+      "video": {
+        "provider": "youtube",
+        "videoId": "C3ni6qUi8os",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "8.4"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/C3ni6qUi8os",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-085",
+      "title": "Acid-Base Titrations - What You Should Know - AP Chem Unit 8, Topic 5a",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/lw3kDHbpOps",
+      "courseId": "chemistry",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-5"
+      ],
+      "visibility": "published",
+      "order": 85,
+      "video": {
+        "provider": "youtube",
+        "videoId": "lw3kDHbpOps",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "8.5a"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/lw3kDHbpOps",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "A"
+    },
+    {
+      "id": "krug-chemistry-086",
+      "title": "Analyzing Titrations of Weak Acids & Strong Bases - AP Chem Unit 8, Topic 5b",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/wtX4-LHe3bg",
+      "courseId": "chemistry",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-5"
+      ],
+      "visibility": "published",
+      "order": 86,
+      "video": {
+        "provider": "youtube",
+        "videoId": "wtX4-LHe3bg",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "8.5b"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/wtX4-LHe3bg",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "B"
+    },
+    {
+      "id": "krug-chemistry-087",
+      "title": "Special Types of Acid-Base Titrations - AP Chem Unit 8, Topic 5c",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/G4SChFPWJ5g",
+      "courseId": "chemistry",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-5"
+      ],
+      "visibility": "published",
+      "order": 87,
+      "video": {
+        "provider": "youtube",
+        "videoId": "G4SChFPWJ5g",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "8.5c"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/G4SChFPWJ5g",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "C"
+    },
+    {
+      "id": "krug-chemistry-088",
+      "title": "Molecular Structure of Acids and Bases - AP Chem Unit 8, Topic 6",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/NECIQ2Wp1m0",
+      "courseId": "chemistry",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-6"
+      ],
+      "visibility": "published",
+      "order": 88,
+      "video": {
+        "provider": "youtube",
+        "videoId": "NECIQ2Wp1m0",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "8.6"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/NECIQ2Wp1m0",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-089",
+      "title": "pH and pKa - Analyzing Titration Curves - AP Chem Unit 8, Topic 7",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/dtP2__hS1QE",
+      "courseId": "chemistry",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-7"
+      ],
+      "visibility": "published",
+      "order": 89,
+      "video": {
+        "provider": "youtube",
+        "videoId": "dtP2__hS1QE",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "8.7"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/dtP2__hS1QE",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-090",
+      "title": "What You Need to Know About Buffers - AP Chem Unit 8, Topics 8-10",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/H8kHwEN4SbM",
+      "courseId": "chemistry",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-8",
+        "topic-8-9",
+        "topic-8-10"
+      ],
+      "visibility": "published",
+      "order": 90,
+      "video": {
+        "provider": "youtube",
+        "videoId": "H8kHwEN4SbM",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "8.8, 8.9, 8.10"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/H8kHwEN4SbM",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-091",
+      "title": "pH and Solubility | AP Chem Unit 8, Topic 11 - How pH Affects the Solubility of an Ionic Compound",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/cpo0AeUIUPA",
+      "courseId": "chemistry",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-11"
+      ],
+      "visibility": "published",
+      "order": 91,
+      "video": {
+        "provider": "youtube",
+        "videoId": "cpo0AeUIUPA",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "8.11"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/cpo0AeUIUPA",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-092",
+      "title": "What You Need to Know About Entropy - AP Chem Unit 9, Topic 1",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/0VVLShoOjTc",
+      "courseId": "chemistry",
+      "unitNumber": 9,
+      "topicIds": [
+        "entropy"
+      ],
+      "visibility": "published",
+      "order": 92,
+      "video": {
+        "provider": "youtube",
+        "videoId": "0VVLShoOjTc",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "9.1"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/0VVLShoOjTc",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-093",
+      "title": "How to Calculate ΔS Change in Entropy - AP Chem Unit 9, Topic 2",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/ALMENyJ69lE",
+      "courseId": "chemistry",
+      "unitNumber": 9,
+      "topicIds": [
+        "topic-9-2"
+      ],
+      "visibility": "published",
+      "order": 93,
+      "video": {
+        "provider": "youtube",
+        "videoId": "ALMENyJ69lE",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "9.2"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/ALMENyJ69lE",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-094",
+      "title": "How to Tell If a Process Is Thermodynamically-Favored - AP Chem Unit 9, Topic 3a",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/XsujflbbkSI",
+      "courseId": "chemistry",
+      "unitNumber": 9,
+      "topicIds": [
+        "topic-9-3"
+      ],
+      "visibility": "published",
+      "order": 94,
+      "video": {
+        "provider": "youtube",
+        "videoId": "XsujflbbkSI",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "9.3a"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/XsujflbbkSI",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "A"
+    },
+    {
+      "id": "krug-chemistry-095",
+      "title": "How to Calculate ΔG Gibbs Free Energy - AP Chem Unit 9, Topic 3b",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/IUYUFrgoIOg",
+      "courseId": "chemistry",
+      "unitNumber": 9,
+      "topicIds": [
+        "topic-9-3"
+      ],
+      "visibility": "published",
+      "order": 95,
+      "video": {
+        "provider": "youtube",
+        "videoId": "IUYUFrgoIOg",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "9.3b"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/IUYUFrgoIOg",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "B"
+    },
+    {
+      "id": "krug-chemistry-096",
+      "title": "Kinetic Control - ΔG and the Equilibrium Constant - AP Chem Unit 9, Topics 4-5",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/5PIpBjUNIUc",
+      "courseId": "chemistry",
+      "unitNumber": 9,
+      "topicIds": [
+        "topic-9-4",
+        "topic-9-5"
+      ],
+      "visibility": "published",
+      "order": 96,
+      "video": {
+        "provider": "youtube",
+        "videoId": "5PIpBjUNIUc",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "9.4, 9.5"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/5PIpBjUNIUc",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-097",
+      "title": "Free Energy of Dissolution - AP Chemistry Unit 9, Topic 6 | ΔG and the Formation of Solutions",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/lQCzDV7uAdg",
+      "courseId": "chemistry",
+      "unitNumber": 9,
+      "topicIds": [
+        "topic-9-6"
+      ],
+      "visibility": "published",
+      "order": 97,
+      "video": {
+        "provider": "youtube",
+        "videoId": "lQCzDV7uAdg",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "9.6"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/lQCzDV7uAdg",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-098",
+      "title": "Calculating ΔG with Thermodynamic Coupling - AP Chem Unit 9, Topic 7",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/b62b73XSOZw",
+      "courseId": "chemistry",
+      "unitNumber": 9,
+      "topicIds": [
+        "topic-9-7"
+      ],
+      "visibility": "published",
+      "order": 98,
+      "video": {
+        "provider": "youtube",
+        "videoId": "b62b73XSOZw",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "9.7"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/b62b73XSOZw",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-099",
+      "title": "Electrochemistry and Galvanic Cells - AP Chem Unit 9, Topic 8a",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/Sl5mJT0tvSE",
+      "courseId": "chemistry",
+      "unitNumber": 9,
+      "topicIds": [
+        "topic-9-8"
+      ],
+      "visibility": "published",
+      "order": 99,
+      "video": {
+        "provider": "youtube",
+        "videoId": "Sl5mJT0tvSE",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "9.8a",
+          "9.8b"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/Sl5mJT0tvSE",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      },
+      "part": "A"
+    },
+    {
+      "id": "krug-chemistry-100",
+      "title": "Electrochemistry - Cell Potential and ΔG - AP Chem Unit 9, Topic 9 - AP Chemistry Topic 9.9",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/trObhsu0si4",
+      "courseId": "chemistry",
+      "unitNumber": 9,
+      "topicIds": [
+        "topic-9-9"
+      ],
+      "visibility": "published",
+      "order": 100,
+      "video": {
+        "provider": "youtube",
+        "videoId": "trObhsu0si4",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "9.9"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/trObhsu0si4",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-101",
+      "title": "The Nernst Equation and Nonstandard Conditions - AP Chem Unit 9, Topic 10 - AP Chemistry Topic 9.10",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/59H0LAJK0OY",
+      "courseId": "chemistry",
+      "unitNumber": 9,
+      "topicIds": [
+        "topic-9-10"
+      ],
+      "visibility": "published",
+      "order": 101,
+      "video": {
+        "provider": "youtube",
+        "videoId": "59H0LAJK0OY",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "9.10"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/59H0LAJK0OY",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    },
+    {
+      "id": "krug-chemistry-102",
+      "title": "Electrolysis and Faraday's Law | AP Chem Unit 9, Topic 11 - AP Chemistry Topic 9.11",
+      "publisher": "Jeremy Krug (krugslist)",
+      "description": "Jeremy Krug lesson linked from the creator’s AP Chemistry directory.",
+      "kind": "video",
+      "url": "https://youtu.be/51kjxyY8UTg",
+      "courseId": "chemistry",
+      "unitNumber": 9,
+      "topicIds": [
+        "topic-9-11"
+      ],
+      "visibility": "published",
+      "order": 102,
+      "video": {
+        "provider": "youtube",
+        "videoId": "51kjxyY8UTg",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://jeremykrug.com/ap-chem-videos/",
+        "labels": [
+          "9.11"
+        ],
+        "checkedOn": "2026-10-18",
+        "verification": "Official directory label/URL and public YouTube title/creator verified; full viewing and universal playback/embed permission not certified."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-18",
+        "approvedUrl": "https://youtu.be/51kjxyY8UTg",
+        "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
+      }
+    }
+  ]
 }

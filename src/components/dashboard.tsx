@@ -11,7 +11,7 @@ import { CourseCardArt } from "./course-card-art";
 import { AcademicArt } from "./academic-art";
 import type { AcademicTheme } from "@/lib/artwork";
 import { practiceCount, practiceHref } from "@/lib/practice-scope";
-import { resourcesForTopic, type PublishedResource } from "@/lib/resource-policy";
+import { courseWithResources, resourcesForTopic, type PublishedResource } from "@/lib/resource-policy";
 
 export function CourseCard({ course }: { course: Course }) {
   const { completed } = useStudy();
@@ -26,9 +26,9 @@ export function CourseCard({ course }: { course: Course }) {
 export function Dashboard({ library = false, approvedResources, illustration = "chemistry" }: { library?: boolean; approvedResources: PublishedResource[]; illustration?: AcademicTheme }) {
   const { selected, completed, notes, lastTopic } = useStudy();
   const [pickerOpen, setPickerOpen] = useState(false);
-  const selectedCourses = courses.filter((course) => selected.includes(course.id));
+  const selectedCourses = courses.filter((course) => selected.includes(course.id)).map(course => courseWithResources(course, approvedResources));
   const recent = lastTopic ? findTopic(...lastTopic.split("/") as [string, string]) : findTopic("chemistry", "electron-configuration");
-  const resume = recent.topic?.ready ? recent : findTopic("chemistry", "electron-configuration");
+  const resume = recent.topic && (recent.topic.ready || resourcesForTopic(approvedResources, recent.course!.id, recent.unit!.number, recent.topic.id).length) ? recent : findTopic("chemistry", "electron-configuration");
   const resourceCount = resourcesForTopic(approvedResources, resume.course!.id, resume.unit!.number, resume.topic!.id).length;
   const resumeHref = `/courses/${resume.course!.id}/${resume.topic!.id}`;
   const noteCount = Object.values(notes).filter((note) => note.trim()).length;

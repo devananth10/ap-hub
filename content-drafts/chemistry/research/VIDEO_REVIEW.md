@@ -1,3 +1,10 @@
+# Current publication note — October 18, 2026
+
+The review below is historical source research. Under the owner's later one-time authorization, 102 unique verified videos are now published across all 91 topics. The directory has 103 entries because 9.8a/b repeat one video ID; the separate 9.8b alias remains pending. Current evidence: `KRUG_VERIFICATION.json`, `docs/VIDEO_VERIFICATION.md`, and `docs/INITIAL_KRUG_APPROVAL.json`. Earlier pending flags are preserved as history, not current publication status.
+
+
+## Historical research (before collection approval)
+
 # Jeremy Krug video suggestions — awaiting approval
 
 This is an unpublished editorial list. Exact links were found in the creator index; public title/author metadata was checked on 2026-10-17. All 103 remain pending owner approval. No playback, embedding permission, transcript, or detailed lesson-content review is claimed. See `README.md` in this directory for verification limits.

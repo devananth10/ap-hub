@@ -13,9 +13,11 @@
     "start": "next start --hostname 127.0.0.1",
     "typecheck": "tsc --noEmit",
     "test": "pnpm test:unit && pnpm test:smoke",
-    "test:unit": "node --experimental-strip-types --test tests/resource-policy.test.mjs tests/practice-artwork.test.mjs tests/practice-session.test.mjs",
+    "test:unit": "node --experimental-strip-types --test tests/resource-policy.test.mjs tests/practice-artwork.test.mjs tests/practice-session.test.mjs tests/video-resources.test.mjs",
     "test:smoke": "node tests/smoke.mjs",
-    "test:publication": "node --experimental-strip-types scripts/check-chemistry-publication.mjs && node --experimental-strip-types tests/chemistry-publication-smoke.mjs"
+    "test:publication": "node --experimental-strip-types scripts/check-chemistry-publication.mjs && node --experimental-strip-types tests/chemistry-publication-smoke.mjs",
+    "test:workspace": "node --experimental-strip-types tests/workspace-smoke.mjs",
+    "test:preview": "node scripts/check-preview-stability.mjs"
   },
   "dependencies": {
     "next": "^16.0.0",

@@ -1,8 +1,8 @@
 # Official resource approval in PrepAtlas
 
-**Only the application owner can approve an official resource.** No video, playlist, website, study guide, or other external educational material may be added automatically. This rule applies to future development too.
+**Only the application owner can approve an official resource.** The owner explicitly authorized one initial verified Jeremy Krug AP Chemistry directory collection on October 18, 2026. Its 102 exact unique URLs are recorded in `INITIAL_KRUG_APPROVAL.json`; all are now published. One duplicate-looking 9.8b directory alias remains pending as a distinct lesson. This exception does not approve future imports, replacement URLs, other creators or other subjects. Normal manual approval resumes outside that recorded collection.
 
-The live catalog is `src/config/official-resources.json`. It deliberately starts with an empty `resources` array. The previous automatically chosen resources have been removed. No Jeremy Krug videos are approved yet: the owner will provide the exact URLs and their course/unit/topic assignments. Never import a playlist.
+The live catalog is `src/config/official-resources.json`. The previously selected unapproved resources remain removed. The new catalog contains the initial owner-authorized collection with verified creator-directory mapping, public titles and source provenance. Never import a playlist. See [VIDEO_EDIT_GUIDE.md](../VIDEO_EDIT_GUIDE.md) and [VIDEO_VERIFICATION.md](VIDEO_VERIFICATION.md).
 
 ## Add a resource
 
@@ -54,6 +54,8 @@ Drafts are not featured on PrepAtlas, but this repository is public: anyone who 
 - `url`: HTTPS only, without usernames/passwords in the URL.
 - `video`: required for `kind: "video"`; omit it for other resource types.
 - `embedPolicy`: `allowed` offers a click-to-load YouTube player, with the original link always available. Use `link-only` when embedding isn't permitted. Provider/network restrictions can still prevent playback; the original link is the fallback.
+- `video.videoId`: must match the exact YouTube URL when present. Duplicate video IDs within a course are rejected; associate one resource with multiple topic IDs instead.
+- `order`, `part`, `visibility` and `source`: define lesson ordering, verified part label, published/hidden visibility and directory verification provenance. Hidden and draft entries are filtered on the server. Reordering does not change resource IDs.
 
 The parser accepts individual YouTube `watch?v=…` or `youtu.be/…` video URLs. It extracts one video ID and never imports a channel, transcript, or playlist. No provider API or external fetch runs when adding catalog metadata.
 
@@ -76,8 +78,8 @@ Student-authored private bookmarks are a future, separate feature. Do not put pr
 
 `src/lib/courses.ts` defines the course → units → topics hierarchy. `src/lib/lessons.ts` supplies the original study-tool content for ready topics. The resource catalog independently associates approved material with those IDs. Add a course only when requested; no full course catalog is automatically populated.
 
-For a new ready topic, add its `Lesson` under `courseId/topicId`, then set that topic's `ready` flag. Reuse the existing course cards, outline, study workspace, video panel, notes, and resource cards. A topic can have functioning original study tools while waiting for approved external resources.
+The workspace shell supports any registered topic, with optional notes and published Practice even before detailed original lesson text is written. Approved video resources also make course-outline/dashboard workspace availability ready, without renaming catalog IDs. Add a `Lesson` under `courseId/topicId` only when its original overview/summary is actually written; do not fabricate those from a video's title. Reuse shared components.
 
 ## Summary and practice boundaries
 
-The six-bullet sample recap is original prototype text. No video has been analyzed, no transcript fetched, and no AI API connected. Real summaries will require accessible, authorized transcripts or other approved material. The MCQ is an original, unscored demonstration. Original MCQs/FRQs and a fuller question bank remain future work; do not copy College Board questions without permission.
+The existing six-bullet Topic 1.5 recap is original prototype text. Other topics honestly state when no sample summary exists. No video has been analyzed, no transcript fetched and no AI API connected. The 1,001 original Chemistry MCQs are already published and unchanged; scores are session-only. FRQs and mixed practice remain unavailable. Do not copy College Board questions without permission.

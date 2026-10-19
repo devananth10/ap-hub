@@ -1,4 +1,5 @@
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { publishOfficialResources } from '../src/lib/resource-policy.ts';
 import { courses } from '../src/lib/courses.ts';
 import { questionBatches, validateQuestionBatches } from '../src/lib/practice-bank.ts';
 
@@ -11,6 +12,8 @@ for (const snapshot of sourceSnapshots.filter(batch => publishedTopics.has(batch
   if (JSON.stringify(published) !== JSON.stringify(snapshot)) throw new Error(`Published/source content differs: ${snapshot.topicId}; review provenance before reporting.`);
 }
 validateQuestionBatches([...questionBatches, ...pending]);
+const liveResources = publishOfficialResources(JSON.parse(readFileSync('src/config/official-resources.json', 'utf8')), courses);
+const videoEvidence = JSON.parse(readFileSync(`${root}/research/KRUG_VERIFICATION.json`, 'utf8'));
 const videos = JSON.parse(readFileSync(`${root}/research/video-candidates.json`, 'utf8'));
 const sourceNeeded = new Set(['1.2', '1.3', '2.2', '2.3']);
 const partial = new Set(['1.6', '1.7', '2.1']);
@@ -32,14 +35,14 @@ const lines = [
   '- The fragments contain 29 complete recovered question objects (10/10/9); corrected partial working copies and historical scope/variety flags are recorded in `qa/partial-recovery.md`. All 29 objects and four completion additions remain intact in the published banks. Never count archived copies twice. Publication dispositions are in PUBLICATION_REVIEW.md.',
   '- Earlier full drafts for 1.2, 1.3, 2.2, 2.3 and the original import guide remain unavailable. Unavailable does not mean never created. After Unit 9, the October 18 continuation authorized new replacement/additional work. All four unavailable-source topics now have new eleven-question sets, explicitly distinguished from recovered content.',
   '- `CONTENT_IMPORT_GUIDE.md` is newly established from the actual repository: 17 existing IDs preserved, 74 new canonical assignments explicitly recorded.',
-  `- Video research: ${videos.videos.length} exact creator-index URLs cover ${videos.coveredTopicCount}/91 topics. ${videos.videos.filter(video => video.providerMetadataVerified && video.creatorIdentityMatched).length} provider metadata checks passed. Every candidate remains pending owner approval; actual playback and embed permission are unverified.`,
-  '- Official resource catalog: zero entries, unchanged. No researched video has been published.',
+  `- Video research: ${videos.videos.length} exact creator-index URLs cover ${videos.coveredTopicCount}/91 topics. ${videos.videos.filter(video => video.providerMetadataVerified && video.creatorIdentityMatched).length} provider metadata checks passed. This earlier research is historical. Current verification: ${videoEvidence.verifiedUniqueVideos} unique videos; the owner later authorized the initial collection once. Full viewing and universal embedding are not certified.`,
+  `- Official resource catalog: ${liveResources.length} published initial Jeremy Krug videos, all 91 Chemistry topics covered. Directory has 103 labels / 102 unique IDs; duplicate 9.8b remains pending as a distinct lesson. See docs/VIDEO_VERIFICATION.md and docs/INITIAL_KRUG_APPROVAL.json.`,
   '', '## Resume order', '',
   '1. Inspect this ledger, Git status, and `VALIDATION.md`; do not replace existing work.',
   '2. No further generation is needed. Audit any newly supplied historical files before considering replacements; preserve valid published objects and recorded provenance.',
   '3. PUBLICATION_REVIEW.md resolves the flagged scope, difficulty and similarity concerns. BANK_AUDIT.md and per-topic QA retain the earlier history. Independent human review remains a useful future quality step, not an approval status asserted here.',
   '4. Future new banks still need explicit publication authorization. The current authorization covers this completed bank only, not future questions or educational URLs.',
-  '5. Save coherent Git checkpoints and normal pushes to the existing upstream. No public deployment, videos, fullscreen or redesign is authorized in this milestone.',
+  '5. Save coherent Git checkpoints and normal pushes to the existing upstream. The later post-publication master prompt authorizes the initial verified video collection, fullscreen, watched status and workspace refinements. Track that work in docs/DEVELOPMENT_PROGRESS.md; no public deployment or paid AI is authorized.',
   '', '## Full inventory', '',
   '| Topic | Official name | Internal topicId | Live | Complete pending | Status |',
   '| --- | --- | --- | ---: | ---: | --- |',

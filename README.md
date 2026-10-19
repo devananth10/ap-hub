@@ -28,8 +28,9 @@ Development builds use `.next-preview/`, while production builds use `.next/`. B
 - Dashboard, selectable course outlines, search, unit/topic navigation, and the primary AP Chemistry example workspace.
 - Optional notes, hidden until opened, with local autosave and a notes library.
 - Local course selections, official resource bookmark IDs, completion tracking, last topic, and light/dark mode.
-- Owner-approved resource cards and an approved-video selector, ready for individually approved URLs. Video frames remain mounted when notes, summaries, or study tabs change. Switching between approved videos pauses the previous player and preserves its frame; returning requires resuming it. Leaving/reloading the topic resets playback.
-- Six-bullet **demo** summary from original topic notes; no AI backend or video analysis.
+- 102 verified Jeremy Krug video lessons across all 91 Chemistry topics under the owner’s one-time approval. Multipart tabs, Previous/Next Video, actual titles and attribution, a single click-to-load player, native fullscreen plus a page shortcut, and Watch on YouTube fallback. Switching videos resets that player; notes, summaries and study tabs keep the selected player mounted.
+- Optional local notes in every registered topic workspace. Manual Mark as Watched / Undo persists separately from topic completion and quiz scores. Watched identity follows a video when reordered/moved, but a different video replacement starts unwatched.
+- Six-bullet **demo** summary from the existing Topic 1.5 notes; other topics clearly state when no sample summary exists. No AI backend or video analysis.
 - **1,001 original AP Chemistry MCQs across all 91 official topics, eleven per topic**, published under the owner's explicit October 18 bulk authorization. Question content, IDs, keys and explanations match the completed checkpoint. No human scientific approval is claimed; see the [publication review](content-drafts/chemistry/PUBLICATION_REVIEW.md).
 - One question at a time, Previous/Next, retained selections/feedback, explanations of all four options, and final session scores with review/restart. First graded answers count once; retries are for learning. Finishing grades remaining selections; unanswered questions count as incorrect. Reload, leaving Practice or changing scope resets the session; results are not saved.
 - Topic 1.5's demonstration remains removed; its eleven proper original questions are now available. Its Study Workspace, notes, overview and summary remain available. FRQs and mixed practice remain disabled and planned.
@@ -39,9 +40,9 @@ Development builds use `.next-preview/`, while production builds use `.next/`. B
 
 ## Official resources: owner approval required
 
-**No external educational resources are currently approved or published.** The previously selected external resources have been removed. Jeremy Krug is the owner's preferred AP Chemistry creator, but no individual video is approved until the owner supplies its exact URL. No playlists are imported.
+**The initial verified Jeremy Krug AP Chemistry collection is published:** 103 directory entries represent 102 unique videos covering 91 topics. All 102 unique videos passed current directory/metadata checks and received the owner’s one-time collection authorization. The separate 9.8b entry repeats Part A’s URL and remains pending as a distinct lesson. No replacement was guessed and no playlists were imported. Future unrelated resources still need explicit approval.
 
-The empty resource area is intentional. The Topic 1.5 overview, notes, summary and completion tracking remain usable. All 91 Chemistry topics offer eleven MCQs independently of video availability.
+Every Chemistry topic now has video lessons, optional notes and eleven MCQs in the existing workspace. Other courses show honest empty states without unrelated Chemistry suggestions. See [VIDEO_EDIT_GUIDE.md](VIDEO_EDIT_GUIDE.md) for editing/reordering/hiding resources and [verification evidence](docs/VIDEO_VERIFICATION.md) for the approval boundary and limitations.
 
 Use [docs/RESOURCE_APPROVAL.md](docs/RESOURCE_APPROVAL.md) for the configuration format and approval process. Edit `src/config/official-resources.json` to add, edit, unpublish, or remove entries. Every published entry needs a stable ID, valid course/unit/topic association, safe URL, and a dated owner approval reference. Draft metadata stays server-side. This is an editorial configuration system; there is no administrator UI or authentication yet.
 
@@ -73,16 +74,16 @@ $env:BASE_URL = 'http://127.0.0.1:3100'
 pnpm test
 ```
 
-The suite includes 37 unit tests, 19 page-route checks, compiled CSS, seven invalid-route checks, all six fixed course-art mappings and multiple fresh homepage responses to verify artwork rotation. It checks all 1,001 answer keys, scoring/navigation, question-batch validation, publication scope/counts, URL/video policy, legacy saved-data compatibility, branding and absence of unapproved resources. Synthetic test fixtures are never published or fetched from a provider. `pnpm test:publication` additionally verifies all 91 topic routes, nine unit routes and the full Chemistry course, plus frozen question hashes and flagged calculations; it needs a running server. `BASE_URL` also selects its production target.
+The suite includes 41 unit tests, 20 page-route checks, compiled CSS, seven invalid-route checks, all six fixed course-art mappings and multiple fresh homepage responses to verify artwork rotation. It checks all 1,001 answer keys, scoring/navigation, question-batch validation, publication scope/counts, URL/video policy, legacy saved-data compatibility, branding and absence of unapproved resources. Synthetic test fixtures are never published or fetched from a provider. `pnpm test:publication` additionally verifies all 91 topic routes, nine unit routes and the full Chemistry course, plus frozen question hashes and flagged calculations; it needs a running server. `BASE_URL` also selects its production target.
 
 Browser checklist:
 
 1. Check PrepAtlas branding, course selection/reload, empty course state, search, and expandable units.
-2. Open Chemistry Topic 1.5. Verify the honest empty-video/resource states and that no unapproved iframe or resource link appears.
+2. Open Chemistry Topic 1.1 (two videos), Topic 1.2 (one), and Topic 4.5 (four). Test tab order, keyboard arrows/Home/End, Previous/Next Video, titles and attribution. Open Calculus Topic 1.1 for the honest zero-video/zero-question state.
 3. Open notes, write, hide/reopen, and reload. Check the notes library and explicit completion. Keep notes hidden unless opened or following a notes deep link.
 4. Open the summary: check the demo disclosure and six bullets. Topic 1.5 now offers eleven proper MCQs, with its former demonstration absent.
 5. Check themes, mobile navigation, keyboard tab controls, and 320/390/768/1440-pixel layouts.
-6. Once the owner supplies approved video URLs, test switching videos, playback continuity while using tools, provider restrictions, and the original-link fallback. Actual approved video playback cannot be verified while the catalog is empty.
+6. Select Play, test native fullscreen and its exit, then toggle notes/material tabs without restarting playback. Test Mark as Watched/Undo, refresh and navigation persistence. Provider/browser restrictions may require Watch on YouTube; actual mobile-device fullscreen behavior is not guaranteed.
 7. In a disposable browser profile, block localStorage writes and confirm the save warning. Copy important notes before closing any tab where saving fails.
 8. Use Start Practice from the dashboard, a course, a unit and a topic. Chemistry has 1,001 questions; every topic has eleven. Test incorrect/correct answers, Try again, Previous/Next, checked and unchecked answer retention, first/last boundaries, Finish practice, final score, Review answers, Start again and reload reset. First graded answers must continue to count after retries; unanswered questions count as incorrect. Biology should show an honest empty state, never unrelated Chemistry questions.
 9. Refresh the homepage several times: subjects should vary, although a random draw can repeat. Opening menus or course management must leave that page's art unchanged. Refresh a course page: its artwork must stay subject-specific.
@@ -117,18 +118,22 @@ node --experimental-strip-types scripts/check-chemistry-publication.mjs
 node --experimental-strip-types scripts/report-chemistry-progress.mjs
 ```
 
-The video manifest records creator-index links and public provider metadata, not verified playback or embedding permission. Every discovered video remains pending owner approval. The official catalog is unchanged.
+The older research manifest is preserved as historical provenance. The official catalog now contains the initial authorized collection; `KRUG_VERIFICATION.json` records fresh directory/public-metadata checks. Actual playback was spot-checked, not certified for all videos or devices. Future resource approval remains separate from question publication.
 
 ## Troubleshooting
 
 - **Connection refused:** run `pnpm dev` and keep it open. Use the printed local URL; if port 3000 is occupied, identify the existing app before starting another copy. Different ports use separate browser storage.
 - **pnpm not found:** install pnpm, then open a new terminal so PATH is refreshed. Codex's bundled pnpm can also be invoked by its full path on this machine.
-- **Video area is empty:** waiting for owner-approved exact URLs is expected. Do not add a replacement automatically.
+- **Video area is empty:** another course may have no approved resources. Hidden/unapproved videos do not display. Do not add a replacement without approval.
 - **An approved video will not play:** use its original link. Provider, school-network, regional, and embedding restrictions remain outside this prototype's control.
 - **Windows Turbopack worker failure:** the existing scripts use the supported `--webpack` option.
 - **Stale build output:** stop only the affected server, remove only its project-local output directory, and restart. Do not delete student browser storage to fix a build.
 
-No authentication, payments, production database, paid AI API, or real AI summary service is included. All interface artwork, overview prompts, recap examples, and practice text are original. AP is a trademark of College Board, which is not affiliated with this independent prototype.
+Run `pnpm test:workspace` against a running server to check all 91 workspaces, and `pnpm test:preview` for a bounded 80-request development-stability check. The [preview investigation](docs/PREVIEW_STABILITY.md) records the unresolved intermittent manifest warning; passing tests are not a permanent-fix claim.
+
+Practice scores remain session-only. A safe local history proposal is documented in [development progress](docs/DEVELOPMENT_PROGRESS.md); it has not been implemented.
+
+No authentication, payments, production database, paid AI API, or real AI summary service is included. Interface artwork, original overview prompts, recap examples and practice text remain original; the linked videos belong to their creator. AP is a trademark of College Board, which is not affiliated with this independent prototype.
 
 For commits and pushes to the existing repository, see [CONTRIBUTING.md](CONTRIBUTING.md).
 

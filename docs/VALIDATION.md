@@ -1,5 +1,19 @@
 # PrepAtlas milestone verification
 
+## Post-publication videos and workspaces — October 18, 2026
+
+- Chemistry preserved unchanged: all 1,001 MCQs / 91 topics / eleven per topic, frozen hashes, keys and explanations intact. No regeneration or reimport. Full numerical/scientific-model suite and frozen source audit passed.
+- Under the owner's one-time collection authorization: 103 creator-directory entries resolve to 102 unique verified YouTube IDs; all 102 are approved/published across 91 topics. Fresh public metadata returned HTTP 200 for every unique video. Duplicate 9.8b points to Part A; it remains pending as a distinct lesson, not a second published video. See VIDEO_VERIFICATION.md and INITIAL_KRUG_APPROVAL.json.
+- TypeScript, **41 unit tests**, production build, expanded **20-route** smoke, CSS, seven invalid routes, fixed course art and homepage rotation passed. All 91 Practice topic routes/nine units/full course and **all 91 topic workspace routes** passed on both the development preview and temporary production server. Counts, topic mapping, original links, optional notes, single-player rendering, conditional tabs and scoped Practice are checked.
+- Browser: actual Topic 1.1 Parts A/B playback, page fullscreen entry/exit, YouTube native fullscreen entry/exit at 390px, watched Mark/Undo and refresh/navigation persistence, notes autosave/reload with original text restored, single-video and four-part keyboard/boundary behavior, honest Calculus empty states and an integrated 11/11 (100%) quiz with restart were verified. 390px/768px checks had no horizontal overflow. Captured application browser warnings/errors: none.
+- Escape sent through the in-app browser did not exit provider fullscreen; native exit did. Do not report Escape or physical iOS/Android fullscreen as verified. Not all 102 videos were watched; directory/public metadata checks are not full lesson-content review or universal playback certification.
+- Eighty requests across eight preview routes at concurrency three passed without retries/new manifest parse errors while production output was being built separately. Historical/intermittent JSON warnings remain documented in PREVIEW_STABILITY.md; no permanent root-cause fix is claimed. One preview process tree was found; no caches or student data were deleted.
+- Manual watched state extends the existing local key additively. Notes/bookmarks/topic progress keep their legacy keys and meaning; Practice scores remain session-only. VIDEO_EDIT_GUIDE.md documents safe corrections and fresh approval for replacement URLs. No public deployment or paid AI.
+- Temporary production server 3100 stopped after checks; development preview 3000 preserved. Checkpoint/push receipt is recorded in the final report and local ignored `tmp/postpublication-push.json` after verification.
+
+Earlier sections retain historical milestone results and counts.
+
+
 ## Complete Chemistry bank publication — October 18, 2026
 
 - **All 1,001 MCQs are available in Practice: 91 topics × eleven; zero withheld.** Owner bulk authorization supersedes prior per-question approval for the completed bank. All content/IDs/keys/explanations match the frozen checkpoint. No human scientific approval is claimed. [Publication review](../content-drafts/chemistry/PUBLICATION_REVIEW.md) resolves the documented scope, difficulty and repetition flags and records limitations.

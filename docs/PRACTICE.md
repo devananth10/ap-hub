@@ -35,7 +35,7 @@ The bank validator rejects extra fields, invalid scopes, counts other than eleve
 - One question at a time, with Previous/Next, disabled end boundaries, feedback, and Try again. Approval badges have been removed for current and future questions.
 - Answers remain while moving within a session. First graded answers count once; Try again cannot inflate the score. Finish practice grades remaining selections and counts unanswered questions as incorrect. Results show correct/total, rounded percent and unanswered count, with Review answers and Start again. This percentage is not an AP score prediction.
 - Scope changes, leaving practice and refresh reset the session. Scores are session-only; no results are saved. Start again clears only the quiz state.
-- Practice availability is independent of lesson readiness. Topic 1.1 offers practice while its video/notes lesson workspace remains planned.
+- Practice availability is independent of lesson readiness. Every Chemistry topic now has approved video lessons and optional notes alongside its eleven MCQs. Other courses retain honest empty states.
 - FRQs and mixed sessions are disabled and honestly labeled coming soon.
 - Local notes, courses, saved resource IDs, completion, themes, and legacy storage keys retain their existing behavior.
 - PrepAtlas questions are original practice, not official College Board or AP Classroom questions.

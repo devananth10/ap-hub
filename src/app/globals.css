@@ -238,6 +238,22 @@ kbd { display:flex; gap:3px; align-items:center; margin-left:auto; padding:0 4px
 }
 
 /* Session-only practice scoring; retain the existing theme and layout. */
+.video-tabs { display:flex; gap:8px; overflow-x:auto; padding:14px 18px; border-bottom:1px solid var(--border); }
+.video-tabs>button { flex-shrink:0; display:flex; align-items:center; gap:8px; min-height:44px; padding:10px 17px; border:1px solid var(--border); border-radius:7px; color:var(--muted); }
+.video-tabs>button[aria-selected=true] { color:var(--ink); background:var(--teal-light); border-color:var(--teal); }
+.video-sequence,.video-navigation,.video-actions { display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; padding:13px 20px; }
+.video-sequence { color:var(--muted); font-size:11px; }
+.video-actions { justify-content:flex-start; padding-top:0; }
+.video-actions .button,.video-navigation .button { min-height:44px; }
+.video-actions .is-complete { color:var(--teal); border-color:var(--teal); background:var(--teal-light); }
+.video-info>div { min-width:0; }.video-info h2 { overflow-wrap:anywhere; }
+.video-stage:fullscreen { width:100vw; height:100vh; aspect-ratio:auto; background:#000; display:flex; align-items:center; justify-content:center; }
+.video-stage:fullscreen iframe { position:static; width:100%; height:100%; object-fit:contain; }
+.fullscreen-exit { position:absolute; z-index:2; top:14px; right:14px; }
+.workspace-heading h1>.small { font-size:.55em; display:block; margin-bottom:8px; }
+.workspace-grid.with-notes { grid-template-columns:minmax(0,1fr) 300px; }
+@media(max-width:1000px) { .workspace-grid.with-notes { grid-template-columns:minmax(0,1fr); }.workspace-grid.with-notes .lesson-side { order:0; } }
+@media(max-width:760px) { .video-info { flex-direction:column; align-items:flex-start; }.video-info h2 { font-size:17px; }.video-info .text-button { font-size:12px; min-height:44px; }.video-stage { min-height:200px; }.video-tabs { padding:12px; }.video-sequence { font-size:11px; }.lesson-toolbar>div { flex-wrap:wrap; gap:8px; }.lesson-toolbar .button { min-height:44px; } }
 .practice-score-policy { margin:10px 25px 0; line-height:1.7; }
 .practice-navigation-actions { display:flex; flex-wrap:wrap; gap:9px; justify-content:flex-end; }
 .practice-result { padding:28px 25px; }

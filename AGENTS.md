@@ -23,8 +23,8 @@ The user wants this app backed up to GitHub at each logical milestone.
 ## Branding and editorial approval
 
 - The working brand is PrepAtlas. Domain and trademark availability have not been verified. Keep the existing project folder and `devananth10/ap-hub` repository.
-- Never automatically select, publish, import, or replace external educational resources. Every official resource requires the owner's explicit approval of its exact URL. A preferred creator/channel is not approval of its videos.
-- The official catalog in `src/config/official-resources.json` is intentionally empty until the owner provides approved URLs. Drafts must remain server-side and unpublished. Follow `docs/RESOURCE_APPROVAL.md` when editing the catalog. Never invent approval records.
+- Every official resource normally requires the owner's explicit approval of its exact URL. A preferred creator/channel is not approval of its videos. Exception: the owner's October 18 post-publication master prompt Phase 3.1 explicitly authorized the initial verified Jeremy Krug Chemistry directory collection once. `docs/INITIAL_KRUG_APPROVAL.json` records its 102 unique exact URLs; the duplicate 9.8b alias remains pending. No future imports, other teachers or other subjects are covered.
+- The official catalog is `src/config/official-resources.json`. Unapproved or hidden resources never reach student pages. Follow `docs/RESOURCE_APPROVAL.md` and `VIDEO_EDIT_GUIDE.md`; never invent approval records or extend the initial collection authorization to replacement URLs.
 - Preserve the legacy browser-storage keys so branding changes do not reset student data. Keep any future student-private resource collection separate from the official catalog.
 - Preserve the live development preview at port 3000 during active work. Production output uses `.next`; development uses `.next-preview` so builds do not replace the live preview's files.
 - Randomize decorative artwork only on fresh home responses. Use fixed subject artwork on course pages and never randomize educational content or saved student data. Keep incomplete practice modes explicitly labeled and unavailable.

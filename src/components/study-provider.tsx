@@ -10,6 +10,7 @@ type StudyContext = StudyData & {
   toggleCourse: (id: string) => void; setNote: (id: string, text: string) => void;
   toggleCompleted: (id: string) => void; toggleSaved: (id: string) => void;
   visitTopic: (id: string) => void; toggleTheme: () => void;
+  toggleWatchedVideo: (id: string) => void;
 };
 const Context = createContext<StudyContext | null>(null);
 
@@ -33,14 +34,14 @@ export function StudyProvider({ children }: { children: ReactNode }) {
     try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); setStorageError(false); }
     catch { setStorageError(true); }
   }, [data, ready]);
-  const toggleList = (key: "selected" | "completed" | "saved", id: string) => setData((current) => ({ ...current, [key]: current[key].includes(id) ? current[key].filter((item) => item !== id) : [...current[key], id] }));
+  const toggleList = (key: "selected" | "completed" | "saved" | "watchedVideos", id: string) => setData((current) => ({ ...current, [key]: current[key].includes(id) ? current[key].filter((item) => item !== id) : [...current[key], id] }));
   const toggleTheme = () => {
     const next = theme === "light" ? "dark" : "light";
     setTheme(next);
     document.documentElement.dataset.theme = next;
     try { localStorage.setItem(THEME_KEY, next); } catch { setStorageError(true); }
   };
-  return <Context.Provider value={{ ...data, ready, storageError, theme, toggleTheme, toggleCourse: (id) => toggleList("selected", id), toggleCompleted: (id) => toggleList("completed", id), toggleSaved: (id) => toggleList("saved", id), setNote: (id, text) => setData((current) => ({ ...current, notes: { ...current.notes, [id]: text } })), visitTopic: (id) => setData((current) => current.lastTopic === id ? current : { ...current, lastTopic: id }) }}>{children}</Context.Provider>;
+  return <Context.Provider value={{ ...data, ready, storageError, theme, toggleTheme, toggleCourse: (id) => toggleList("selected", id), toggleCompleted: (id) => toggleList("completed", id), toggleSaved: (id) => toggleList("saved", id), toggleWatchedVideo: (id) => toggleList("watchedVideos", id), setNote: (id, text) => setData((current) => ({ ...current, notes: { ...current.notes, [id]: text } })), visitTopic: (id) => setData((current) => current.lastTopic === id ? current : { ...current, lastTopic: id }) }}>{children}</Context.Provider>;
 }
 export function useStudy() {
   const value = useContext(Context);

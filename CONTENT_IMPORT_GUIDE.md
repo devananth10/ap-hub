@@ -6,6 +6,8 @@ The existing 17 topic IDs are preserved. The other 74 topics were not registered
 
 ## Question files and publication
 
+Video links use a separate official resource catalog and approval system; see `VIDEO_EDIT_GUIDE.md`. Editing video metadata must not regenerate or reimport the published question files below.
+
 - Approved application banks: `src/content/practice/`; publication registry: `src/lib/practice-bank.ts`.
 - Historical source snapshots: `content-drafts/chemistry/pending/`; all ninety completed sets were copied into the live bank under the October 18 bulk authorization. Keep these source copies for provenance and never import this directory into application components or count them twice. Future unregistered drafts remain unpublished.
 - One JSON object per file: only `courseId`, `unitNumber`, `topicId`, `questions`.

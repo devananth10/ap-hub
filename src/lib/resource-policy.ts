@@ -15,8 +15,12 @@ export type OfficialResource = {
   unitNumber: number;
   /** An empty array associates a resource with the whole unit. */
   topicIds: string[];
+  visibility?: "published" | "hidden";
+  order?: number;
+  part?: string;
+  source?: { directory: string; labels: string[]; checkedOn: string; verification: string };
   approval: ResourceApproval;
-  video?: { provider: "youtube"; embedPolicy: "allowed" | "link-only" };
+  video?: { provider: "youtube"; embedPolicy: "allowed" | "link-only"; videoId?: string };
 };
 export type PublishedResource = OfficialResource & {
   approval: Extract<ResourceApproval, { status: "approved" }>;
@@ -52,6 +56,7 @@ export function youtubeVideoId(value: string): string | null {
 export function publishOfficialResources(config: unknown, courses: Course[]): PublishedResource[] {
   if (!isRecord(config) || !Array.isArray(config.resources)) throw new Error("Official resource config must contain a resources array.");
   const ids = new Set<string>();
+  const videoIds = new Set<string>();
   const published: PublishedResource[] = [];
   for (const entry of config.resources) {
     const fail = (reason: string): never => { throw new Error(`Official resource ${isRecord(entry) && typeof entry.id === "string" ? entry.id : "(unknown)"}: ${reason}`); };
@@ -61,6 +66,10 @@ export function publishOfficialResources(config: unknown, courses: Course[]): Pu
     const id = value.id as string;
     if (ids.has(id)) fail("duplicate id.");
     ids.add(id);
+    if (value.visibility !== undefined && !["published", "hidden"].includes(String(value.visibility))) fail("visibility must be published or hidden.");
+    if (value.order !== undefined && (typeof value.order !== "number" || !Number.isInteger(value.order) || value.order < 0)) fail("order must be a nonnegative integer.");
+    if (value.part !== undefined && !nonempty(value.part)) fail("part must be nonempty when supplied.");
+    if (value.source !== undefined && (!isRecord(value.source) || !safeResourceUrl(value.source.directory) || !Array.isArray(value.source.labels) || !value.source.labels.every(nonempty) || !nonempty(value.source.checkedOn) || !nonempty(value.source.verification))) fail("source provenance is incomplete.");
     if (!["title", "publisher", "description"].every((key) => nonempty(value[key]))) fail("title, publisher, and description are required.");
     if (!["video", "reading", "guide", "reference"].includes(String(value.kind))) fail("unknown resource kind.");
     if (!safeResourceUrl(value.url)) fail("use an HTTPS URL without embedded credentials.");
@@ -76,12 +85,30 @@ export function publishOfficialResources(config: unknown, courses: Course[]): Pu
     }
     if (value.kind === "video") {
       if (!isRecord(value.video) || value.video.provider !== "youtube" || !["allowed", "link-only"].includes(String(value.video.embedPolicy)) || !youtubeVideoId(value.url as string)) fail("video must specify one YouTube video and an explicit embed policy.");
+      const settings = value.video as Record<string, unknown>;
+      const videoId = youtubeVideoId(value.url as string)!;
+      if (settings.videoId !== undefined && settings.videoId !== videoId) fail("videoId must match the URL.");
+      const identity = `${value.courseId}:${videoId}`;
+      if (videoIds.has(identity)) fail("duplicate video ID; use multiple topicIds on one resource instead.");
+      videoIds.add(identity);
     } else if (value.video !== undefined) fail("only video resources can specify video settings.");
-    if (approval.status === "approved") published.push(entry as PublishedResource);
+    if (approval.status === "approved" && value.visibility !== "hidden") published.push(entry as PublishedResource);
   }
   return published;
 }
 
 export function resourcesForTopic(resources: PublishedResource[], courseId: string, unitNumber: number, topicId: string) {
-  return resources.filter((resource) => resource.courseId === courseId && resource.unitNumber === unitNumber && (resource.topicIds.length === 0 || resource.topicIds.includes(topicId)));
+  return resources.filter((resource) => resource.courseId === courseId && resource.unitNumber === unitNumber && (resource.topicIds.length === 0 || resource.topicIds.includes(topicId))).sort((a,b) => (a.order ?? 0) - (b.order ?? 0));
+}
+
+/** Moving/reordering a resource retains progress; replacing its video does not. */
+export function watchedVideoKey(resource: Pick<OfficialResource, "id" | "url">) {
+  const videoId = youtubeVideoId(resource.url);
+  return videoId ? `${resource.id}:${videoId}` : null;
+}
+
+export function courseWithResources(course: Course, resources: PublishedResource[]): Course {
+  return { ...course, units: course.units.map(unit => ({ ...unit, topics: unit.topics.map(topic => ({ ...topic,
+    ready: topic.ready || resourcesForTopic(resources, course.id, unit.number, topic.id).some(resource => resource.kind === "video"),
+  })) })) };
 }

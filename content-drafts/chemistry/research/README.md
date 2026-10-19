@@ -1,5 +1,8 @@
 # Unpublished Chemistry research
 
+> Current status: this directory retains historical source research. The owner later authorized the initial verified collection once; 102 unique videos are published across 91 topics. The duplicate 9.8b alias remains pending as a separate lesson. Read `docs/VIDEO_VERIFICATION.md` and `docs/INITIAL_KRUG_APPROVAL.json` for current status and evidence.
+
+
 These files are editorial research, not application resources. Nothing here is registered in `src/config/official-resources.json`, which remains empty. Do not import this directory into a page or client component.
 
 - `official-topics.json`: all 91 numbered topics, official titles, printed/PDF page references, source edition/access date/hash.

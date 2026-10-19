@@ -73,6 +73,6 @@ test("branding preserves legacy notes, courses, completion, bookmarks, and theme
   assert.equal(STORAGE_KEY, "ap-hub:v1");
   assert.equal(THEME_KEY, "ap-hub:theme");
   const legacy = { selected: ["chemistry", "biology"], notes: { "chemistry/electron-configuration": "My existing note" }, completed: ["chemistry/electron-configuration"], saved: ["openstax", "bozeman", "periodic-table"], lastTopic: "chemistry/electron-configuration" };
-  assert.deepEqual(parseStudyData(legacy, courses), legacy);
+  assert.deepEqual(parseStudyData(legacy, courses), { ...legacy, watchedVideos: [] });
   assert.throws(() => parseStudyData({ ...legacy, notes: { broken: 123 } }, courses));
 });
