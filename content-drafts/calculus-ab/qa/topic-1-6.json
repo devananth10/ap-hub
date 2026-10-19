@@ -1,0 +1,366 @@
+{
+  "topicNumber": "1.6",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "1170c09a5dbdfe118b100b3efdd4c952f1cde6a544fa579c56ab5a2cd5482272",
+  "scopeReview": "CED Topic 1.6 LIM-1.E: factor/cancel on punctured neighborhoods, rationalize, expand, combine rational expressions and use absolute-value cases. Real root domains and remaining denominator restrictions are stated. No assessed derivative rule, L’Hospital procedure or BC technique is required.",
+  "varietyReview": "Ten raw-expression two-sided numerical checks accompany separately worked exact algebra; the remaining factor/cancellation item has an independent remainder/factor-theorem check. Mixes linear/quadratic/cubic factors, roots and nested fractions, a two-factor radical cancellation, a cube-root identity, sign-sensitive absolute value and invalid cancellation. Numerical sampling is corroboration, not a proof of arbitrary limits.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-1-6-001",
+      "independentReasoning": "Independently evaluate the unsimplified quotient at x=5±0.001 and 5±0.0005. The approaching values agree at 10 after linear extrapolation. The original domain excludes 5, so this check does not redefine the function at its hole.",
+      "optionReview": [
+        "Substituting zero into the numerator alone ignores the simultaneous zero denominator.",
+        "This uses the input target rather than the simplified expression x+5.",
+        "Correct: factoring and cancelling the common factor for x≠5 leaves x+5, which approaches 10.",
+        "This uses the constant term’s magnitude and does not evaluate the quotient."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 5,
+        "expression": [
+          "div",
+          [
+            "sub",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            25
+          ],
+          [
+            "sub",
+            "x",
+            5
+          ]
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-1-6-002",
+      "independentReasoning": "Two-sided numerical evaluations of the original quadratic-over-quadratic expression near −3 independently approach 6. The factors also show that the remaining denominator is bounded away from zero near −3, so the cancellation does not hide a second singularity at the target.",
+      "optionReview": [
+        "This misses the negative denominator −1 after cancellation.",
+        "A ratio of leading coefficients is not the rule for this finite-input limit.",
+        "The 0/0 substitution is indeterminate, not zero.",
+        "Correct: cancel x+3 to obtain (x−3)/(x+2), whose value at −3 is 6."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": -3,
+        "expression": [
+          "div",
+          [
+            "sub",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            9
+          ],
+          [
+            "add",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            [
+              "mul",
+              5,
+              "x"
+            ],
+            6
+          ]
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-1-6-003",
+      "independentReasoning": "A separate numerical check evaluates the original difference of square roots divided by x at positive and negative small inputs, without using the cancelled form. Both extrapolated sides are approximately 0.166666667. This agrees only with the actual fractional option 1/6.",
+      "optionReview": [
+        "Correct: multiplying by the conjugate reduces the quotient to 1/[√(9+x)+3], which approaches 1/6.",
+        "This reverses the final reciprocal.",
+        "This omits one of the two terms approaching 3 in the conjugate denominator.",
+        "The original 0/0 form does not have the numerical value zero."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 0,
+        "expression": [
+          "div",
+          [
+            "sub",
+            [
+              "sqrt",
+              [
+                "add",
+                9,
+                "x"
+              ]
+            ],
+            3
+          ],
+          "x"
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-1-6-004",
+      "independentReasoning": "The original quotient evaluated directly at inputs just below and above 4 produces values approaching 4. The identity holds on a real open neighborhood of 4 excluding the target, and no negative-root branch is introduced.",
+      "optionReview": [
+        "This is the reciprocal of the requested quotient’s limit.",
+        "Correct: using x−4=(√x−2)(√x+2) leaves √x+2, which approaches 4.",
+        "This keeps only one term of the conjugate sum.",
+        "Direct substitution gives an indeterminate quotient rather than zero."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 4,
+        "expression": [
+          "div",
+          [
+            "sub",
+            "x",
+            4
+          ],
+          [
+            "sub",
+            [
+              "sqrt",
+              "x"
+            ],
+            2
+          ]
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-1-6-005",
+      "independentReasoning": "Independently sample the original h-dependent quotient on both sides of zero and extrapolate each side from two scales. The limiting coefficient is approximately 12. The numerical model’s internal variable represents h, and the expansion separately confirms the exact coefficient.",
+      "optionReview": [
+        "This omits part of the cubic’s linear-in-h coefficient.",
+        "This is the original constant cube rather than the approaching quotient.",
+        "Correct: expansion and cancellation give 12+6h+h², which approaches 12.",
+        "Cancelling the constant terms does not make the entire quotient zero."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 0,
+        "expression": [
+          "div",
+          [
+            "sub",
+            [
+              "pow",
+              [
+                "add",
+                2,
+                "x"
+              ],
+              3
+            ],
+            8
+          ],
+          "x"
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-1-6-006",
+      "independentReasoning": "The independent numerical pass evaluates the original cubic-over-quadratic expression for x slightly less and greater than 1. Two-scale extrapolation approaches 1.5 from both sides. The denominator after cancellation tends to 2, validating the exact fractional result.",
+      "optionReview": [
+        "Cancelling only the leading powers is not valid in differences.",
+        "This omits the remaining denominator, which approaches 2.",
+        "The 0/0 form does not determine the limit without further work.",
+        "Correct: cancel x−1 to obtain (x²+x+1)/(x+1), whose limiting value is 3/2."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 1,
+        "expression": [
+          "div",
+          [
+            "sub",
+            [
+              "pow",
+              "x",
+              3
+            ],
+            1
+          ],
+          [
+            "sub",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            1
+          ]
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-1-6-007",
+      "independentReasoning": "A separate two-sided numerical evaluation of the original nested quotient approaches −0.25. Both sides use positive x near 2, and the negative numerator-to-increment relationship confirms the sign independently of any assigned derivative rule.",
+      "optionReview": [
+        "Correct: the numerator is (2−x)/(2x), so the quotient simplifies to −1/(2x).",
+        "This loses the minus sign from 2−x=−(x−2).",
+        "This takes a reciprocal’s point value instead of the difference quotient.",
+        "The two vanishing differences form an indeterminate quotient, not zero."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 2,
+        "expression": [
+          "div",
+          [
+            "sub",
+            [
+              "div",
+              1,
+              "x"
+            ],
+            [
+              "div",
+              1,
+              2
+            ]
+          ],
+          [
+            "sub",
+            "x",
+            2
+          ]
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-1-6-008",
+      "independentReasoning": "The independent model evaluates the uncancelled quotient with its radical denominator at values on both sides of 7. Extrapolated outputs approach 84. Checking the conjugate product separately gives 14 times 6, so dropping either factor yields one of the distractors.",
+      "optionReview": [
+        "This keeps the polynomial factor but omits the conjugate factor.",
+        "Correct: rationalizing and cancelling gives (x+7)[√(x+2)+3], which approaches 14·6=84.",
+        "This keeps the conjugate factor but omits the polynomial factor.",
+        "The original 0/0 form requires simplification and does not equal zero."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 7,
+        "expression": [
+          "div",
+          [
+            "sub",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            49
+          ],
+          [
+            "sub",
+            [
+              "sqrt",
+              [
+                "add",
+                "x",
+                2
+              ]
+            ],
+            3
+          ]
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-1-6-009",
+      "independentReasoning": "A separate numerical pass samples the original quotient using the real cube-root function on each side of 27. Its two-scale estimates approach 27. This does not reuse the factored expression in the numerical computation.",
+      "optionReview": [
+        "This includes only one of the three terms approaching 9.",
+        "This is the approaching cube root itself, not the quotient.",
+        "Correct: factor the difference of cubes to leave (∛x)²+3∛x+9, whose limiting value is 27.",
+        "An indeterminate 0/0 substitution is not the quotient’s limit."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 27,
+        "expression": [
+          "div",
+          [
+            "sub",
+            "x",
+            27
+          ],
+          [
+            "sub",
+            [
+              "cbrt",
+              "x"
+            ],
+            3
+          ]
+        ],
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-1-6-010",
+      "independentReasoning": "The raw absolute-value expression is sampled at two negative and two positive increments around −4; its outputs are exactly the separate constants −1 and 1 within floating precision. The programmatic model is explicitly permitted to report side disagreement for this item, not to average the incompatible sides.",
+      "optionReview": [
+        "This gives only the left-hand limit.",
+        "This gives only the right-hand limit.",
+        "The 0/0 substitution and the mean of the side values do not define the two-sided limit.",
+        "Correct: for x<−4 the ratio is −1, and for x>−4 it is 1."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": -4,
+        "expression": [
+          "div",
+          [
+            "add",
+            "x",
+            4
+          ],
+          [
+            "abs",
+            [
+              "add",
+              "x",
+              4
+            ]
+          ]
+        ],
+        "tolerance": 0.00001,
+        "allowSideDisagreement": true
+      }
+    },
+    {
+      "questionId": "calc-ab-1-6-011",
+      "independentReasoning": "Independently multiply the proposed quotient part and denominator, then add the remainder: (x−2)(x+2)+8=x²−4+8=x²+4. The factor theorem also gives the nonzero remainder 8 at −2. Each other statement fails either expansion, factor cancellation or substitution arithmetic.",
+      "optionReview": [
+        "Correct: multiplying x−2 by x+2 gives x²−4, leaving remainder 8.",
+        "Expanding (x+2)² gives x²+4x+4, not the numerator x²+4.",
+        "Cancellation requires common factors, not terms within sums.",
+        "At x=−2 the numerator approaches 8, not 0; moreover 0/0 would not itself equal zero."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Polynomial division gives x−2+8/(x+2); the denominator factor does not cancel."
+      }
+    }
+  ]
+}

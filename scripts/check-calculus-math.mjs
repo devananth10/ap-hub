@@ -14,13 +14,15 @@ export function numericalOption(text) {
   assert.ok(!/^[+\-\d√π.]/.test(clean),'Unsupported numerical expression needs an explicit verified parser: '+text);
   return NaN;
 }
-export function evaluateExpression(expression) {
+export function evaluateExpression(expression,x) {
+  if(expression==='x') {assert.ok(Number.isFinite(x),'Missing numerical variable');return x;}
+  if(expression==='pi') return Math.PI;
   if(typeof expression==='number') {assert.ok(Number.isFinite(expression));return expression;}
   assert.ok(Array.isArray(expression)&&expression.length>=2);
-  const [operation,...children]=expression,values=children.map(evaluateExpression);
-  const operations={add:(...xs)=>xs.reduce((a,b)=>a+b,0),mul:(...xs)=>xs.reduce((a,b)=>a*b,1),sub:(a,b)=>a-b,div:(a,b)=>a/b,pow:(a,b)=>a**b,sqrt:Math.sqrt,abs:Math.abs};
+  const [operation,...children]=expression,values=children.map(child=>evaluateExpression(child,x));
+  const operations={add:(...xs)=>xs.reduce((a,b)=>a+b,0),mul:(...xs)=>xs.reduce((a,b)=>a*b,1),sub:(a,b)=>a-b,div:(a,b)=>a/b,pow:(a,b)=>a**b,sqrt:Math.sqrt,abs:Math.abs,cbrt:Math.cbrt,sin:Math.sin,cos:Math.cos,tan:Math.tan,exp:Math.exp,ln:Math.log};
   assert.ok(operations[operation],'Unknown arithmetic expression operation');
-  const expectedArity={sub:2,div:2,pow:2,sqrt:1,abs:1}[operation];
+  const expectedArity={sub:2,div:2,pow:2,sqrt:1,abs:1,cbrt:1,sin:1,cos:1,tan:1,exp:1,ln:1}[operation];
   assert.ok(expectedArity?values.length===expectedArity:values.length>=2,'Invalid arithmetic expression arity');
   const value=operations[operation](...values);assert.ok(Number.isFinite(value),'Invalid real arithmetic domain');return value;
 }
@@ -45,7 +47,17 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='table-estimate') {
+  if (review.check.type==='punctured-expression') {
+    const c=review.check.point,h=0.001,tolerance=review.check.tolerance||0.00001;
+    const sample=x=>evaluateExpression(review.check.expression,x);
+    const left=2*sample(c-h/2)-sample(c-h),right=2*sample(c+h/2)-sample(c+h);
+    const agree=Math.abs(left-right)<tolerance;
+    if(!agree) assert.equal(review.check.allowSideDisagreement,true,question.id+' numerical approaches do not agree');
+    const result=agree?(left+right)/2:'DNE';
+    const matches=question.options.map(option=>result==='DNE'?option.startsWith('Does not exist'):Math.abs(numericalOption(option)-result)<tolerance);
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique punctured-expression result');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' punctured-expression key');
+  } else if (review.check.type==='table-estimate') {
     const table=practiceTables[question.id];assert.ok(table);
     const target=review.check.inputX;
     const samples=table.rows.map(row=>row.map(value=>Number(value.replace('−','-')))).filter(([x,y])=>Number.isFinite(x)&&Number.isFinite(y)&&x!==target);

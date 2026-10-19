@@ -73,3 +73,12 @@ test('limit-law verifier checks signs, fractions, roots and domains and catches 
     assert.throws(()=>verifyCalculusQuestion(question,qa.questions[i]),/must have one numerical answer/);
   }
 });
+test('algebraic manipulation answers are corroborated from raw punctured expressions, with side disagreements preserved',()=>{
+  const batch=questionBatches.find(batch=>batch.courseId==='calculus-ab'&&batch.topicId==='topic-1-6');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-1-6.json','utf8'));
+  for(let i=0;i<10;i++) verifyCalculusQuestion(batch.questions[i],qa.questions[i]);
+  const fraction=batch.questions[6];assert.equal(fraction.options[fraction.correctIndex],'−1/4');
+  assert.throws(()=>verifyCalculusQuestion({...fraction,correctIndex:(fraction.correctIndex+1)%4},qa.questions[6]),/punctured-expression key/);
+  const sides=qa.questions[9];
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[9],{...sides,check:{...sides.check,allowSideDisagreement:false}}),/numerical approaches do not agree/);
+});
