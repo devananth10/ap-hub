@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 8,
+  "topicId": "topic-8-7",
+  "questions": [
+    {
+      "id": "calc-ab-8-7-001",
+      "prompt": "A solid has base enclosed by y=x and y=x². Cross sections perpendicular to the x-axis are squares whose sides lie in the base. What is its volume?",
+      "options": [
+        "1/6",
+        "1/3",
+        "1/15",
+        "1/30"
+      ],
+      "correctIndex": 3,
+      "explanation": "The intersections are x=0 and 1, and a square side has length x−x². Thus V=∫ from 0 to 1 of (x−x²)²dx=∫(x²−2x³+x⁴)dx=1/3−1/2+1/5=1/30. Volume requires cross-sectional area, not merely base width. A: This is the base area from integrating side length rather than cross-sectional area. B: This integrates x² alone and ignores the lower boundary. C: This doubles the actual volume without a geometric reason. D: The side is x−x² on [0,1], so integrate its square."
+    },
+    {
+      "id": "calc-ab-8-7-002",
+      "prompt": "The base of a solid is the disk x²+y²≤4. Cross sections perpendicular to the x-axis are squares, with each side equal to the full chord of the base at that x. Find the volume.",
+      "options": [
+        "128/3",
+        "32/3",
+        "32π/3",
+        "16"
+      ],
+      "correctIndex": 0,
+      "explanation": "For −2≤x≤2 the base chord runs from −√(4−x²) to +√(4−x²), so its length is 2√(4−x²). The square area is 4(4−x²). Integrating gives V=4[4x−x³/3] from −2 to 2=128/3. A: The chord is 2√(4−x²), so square area is 4(4−x²). B: This uses half the chord as the square side. C: This is the volume of a radius-2 sphere, a different cross-sectional shape. D: This does not integrate the varying square areas."
+    },
+    {
+      "id": "calc-ab-8-7-003",
+      "prompt": "A base lies between y=0 and y=2−x for 0≤x≤2. Cross sections perpendicular to the x-axis are rectangles whose height is three times their base segment’s length. What is the volume?",
+      "options": [
+        "8/3",
+        "8",
+        "6",
+        "24"
+      ],
+      "correctIndex": 1,
+      "explanation": "The base segment has length s=2−x and the rectangular height is 3s. Therefore cross-sectional area is s(3s)=3(2−x)². Integrate across the x-length: V=3∫ from 0 to 2 of (2−x)²dx=3·(8/3)=8. A: This is the square-section volume before multiplying by the height ratio 3. B: Each rectangle has area 3(2−x)², whose integral is 8. C: This integrates three times the width instead of three times its square. D: This applies the height ratio twice rather than once."
+    },
+    {
+      "id": "calc-ab-8-7-004",
+      "prompt": "A solid’s base is bounded by y=sin x, y=0, x=0 and x=π. Rectangular cross sections perpendicular to the x-axis have constant height 2 and base segment length sin x. What is its volume?",
+      "options": [
+        "π/2",
+        "2",
+        "4",
+        "2π"
+      ],
+      "correctIndex": 2,
+      "explanation": "On [0,π], sin x≥0. A rectangle has area base times height, so A(x)=2sin x. Thus V=∫ from 0 to π of 2sin x dx=[−2cos x] from 0 to π=4. The constant height is independent of the varying base width. A: This integrates sin²x and would describe squares, not the specified rectangles. B: This omits the fixed height factor 2. C: The rectangular area is 2sin x, integrated from 0 to π. D: This uses maximum base length 1 for every cross section."
+    },
+    {
+      "id": "calc-ab-8-7-005",
+      "prompt": "A solid has base enclosed by x=y² and x=4. Square cross sections are perpendicular to the y-axis, with sides in the base. Find its volume.",
+      "options": [
+        "32/3",
+        "256/15",
+        "64",
+        "512/15"
+      ],
+      "correctIndex": 3,
+      "explanation": "The y-bounds follow from y²=4: −2 and 2. A horizontal base segment has length 4−y², so V=∫ from −2 to 2 of (4−y²)²dy. Expand to 16−8y²+y⁴ and evaluate: 64−128/3+64/5=512/15. A: This is the two-dimensional base area, not the solid’s volume. B: This counts only the upper half of the solid. C: This uses the maximum square area across the entire y-length. D: The side is 4−y² on −2≤y≤2, so integrate (4−y²)² with respect to y."
+    },
+    {
+      "id": "calc-ab-8-7-006",
+      "prompt": "The table below gives cross-sectional areas A(x), not side lengths. Using trapezoids on [0,1] and [1,3], estimate the solid’s volume.",
+      "options": [
+        "33/2 cubic centimeters",
+        "10 cubic centimeters",
+        "19/2 cubic centimeters",
+        "249/2 cubic centimeters"
+      ],
+      "correctIndex": 0,
+      "explanation": "Volume is ∫A(x)dx. Because the table already supplies areas, apply the trapezoidal rule directly: (1)(1+4)/2+(2)(4+10)/2=5/2+14=33/2 cm³. Do not square area data as if they were square side lengths. A: The area trapezoids give 1(1+4)/2+2(4+10)/2. B: This uses an endpoint cross-sectional area as though it were volume. C: This ignores the width 2 of the second interval. D: This squares the listed areas before integrating, even though they are already area values."
+    },
+    {
+      "id": "calc-ab-8-7-007",
+      "prompt": "A solid extends from x=1 to x=7 and has volume 24 cubic units. What does 24/(7−1)=4 represent?",
+      "options": [
+        "The side length of every square cross section",
+        "The average cross-sectional area over the interval, in square units",
+        "The perimeter of every cross section",
+        "The maximum cross-sectional area"
+      ],
+      "correctIndex": 1,
+      "explanation": "Since V=∫ from 1 to 7 of A(x)dx, dividing by length 6 gives the average value of the area function: A_avg=4 square units. This says nothing about every individual cross section having that area, nor does it determine their maximum or perimeter. A: An average area does not force constant side length or constant area. B: Dividing volume by total thickness gives the mean of A(x). C: Volume divided by length has area units, not perimeter units. D: An average generally differs from a maximum."
+    },
+    {
+      "id": "calc-ab-8-7-008",
+      "prompt": "The graph below shows the upper boundary f of a base above y=0. A solid has square sections perpendicular to the x-axis with side f(x). Find its volume.",
+      "options": [
+        "3",
+        "12",
+        "4",
+        "2"
+      ],
+      "correctIndex": 2,
+      "explanation": "The base width is f(x), so the cross-sectional area is f(x)². The two exact line formulas give V=∫ from 0 to 1 of 4x²dx+∫ from 1 to 3 of (3−x)²dx=4/3+8/3=4. The split is at the graph’s corner, where the width formula changes. A: This is the triangular base area, not the square-section volume. B: This uses the maximum square area 4 for the full length 3. C: Integrate (2x)² on [0,1] and (3−x)² on [1,3]. D: This does not include the full squared-width accumulation."
+    },
+    {
+      "id": "calc-ab-8-7-009",
+      "prompt": "On 0≤x≤2, a solid’s rectangular cross section has base length 2−x and height x+1. What is its volume?",
+      "options": [
+        "8/3",
+        "5",
+        "4",
+        "10/3"
+      ],
+      "correctIndex": 3,
+      "explanation": "A rectangle’s area is the product of its two specified dimensions, even when both vary: A=(2−x)(x+1)=2+x−x². Thus V=∫ from 0 to 2 of A dx=[2x+x²/2−x³/3] from 0 to 2=4+2−8/3=10/3. A: This squares the base length and ignores the independently varying height. B: This does not integrate the actual product of base and height. C: This treats the cross-sectional area as constant 2. D: The area is (2−x)(x+1)=2+x−x²."
+    },
+    {
+      "id": "calc-ab-8-7-010",
+      "prompt": "A solid has square sections perpendicular to the x-axis and volume V. Every square’s side length is doubled while its x-position and the interval of x are unchanged. What is the new volume?",
+      "options": [
+        "4V",
+        "2V",
+        "8V",
+        "V"
+      ],
+      "correctIndex": 0,
+      "explanation": "If the old side is s(x), the new area is [2s(x)]²=4s(x)². Integrating over the same x-interval gives V_new=4∫s(x)²dx=4V. This is not a uniform three-dimensional dilation because the x-thicknesses are kept fixed. A: Each square area is multiplied by 2², while the integration thickness is unchanged. B: This scales side length but not square area. C: That would also require doubling the longitudinal dimension. D: Changing every positive side length changes the volume."
+    },
+    {
+      "id": "calc-ab-8-7-011",
+      "prompt": "A solid has base between y=√x and y=0 for 0≤x≤4. Cross sections perpendicular to the x-axis are squares with sides in the base. What is its volume?",
+      "options": [
+        "16/3",
+        "8",
+        "16",
+        "4"
+      ],
+      "correctIndex": 1,
+      "explanation": "The side is the vertical base width √x. Squaring gives A(x)=x, including at the zero-width endpoint. Thus V=∫ from 0 to 4 of x dx=[x²/2] from 0 to 4=8. Integrating side length alone would give a two-dimensional area instead. A: This is the base area from integrating √x alone. B: The square area is (√x)²=x, integrated over [0,4]. C: This uses the largest square area 4 across the entire interval. D: This is the largest cross-sectional area, not the total volume."
+    }
+  ]
+}

@@ -2,9 +2,9 @@
 
 Official inventory: 81 topics; target 891 original MCQs.
 
-Published: **825/891 MCQs in 75/81 complete topics**. Working-only drafts: 0. No unresolved questions in the published sets. No independent human review.
+Published: **847/891 MCQs in 77/81 complete topics**. Working-only drafts: 0. No unresolved questions in the published sets. No independent human review.
 
-Next topic: **8.7**. Missing topics: 8.7, 8.8, 8.9, 8.10, 8.11, 8.12.
+Next topic: **8.9**. Missing topics: 8.9, 8.10, 8.11, 8.12.
 
 Validated and published:
 - 1.1: 11 MCQs; stable ID limits
@@ -82,6 +82,8 @@ Validated and published:
 - 8.4: 11 MCQs; stable ID topic-8-4
 - 8.5: 11 MCQs; stable ID topic-8-5
 - 8.6: 11 MCQs; stable ID topic-8-6
+- 8.7: 11 MCQs; stable ID topic-8-7
+- 8.8: 11 MCQs; stable ID topic-8-8
 
 All new sets use the unchanged question schema, four choices and per-choice explanations. QA includes separate recomputation/logic records and semantic hashes. Plain Unicode math, original accessible SVG graph sidecars and complete data descriptions are supported; no raw LaTeX or external diagrams. Automated checks cannot prove all conceptual claims, originality or AP difficulty; read QA notes. Unfinished sets remain unavailable.
 

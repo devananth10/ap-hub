@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 8,
+  "topicId": "topic-8-8",
+  "questions": [
+    {
+      "id": "calc-ab-8-8-001",
+      "prompt": "A solid’s base is between y=2x and y=0 on 0≤x≤1. Cross sections perpendicular to the x-axis are equilateral triangles whose sides in the base have length 2x. What is its volume?",
+      "options": [
+        "√3/3",
+        "2/3",
+        "4/3",
+        "√3"
+      ],
+      "correctIndex": 0,
+      "explanation": "An equilateral triangle of side s has area (√3/4)s². With s=2x, its cross-sectional area is √3x². Thus V=∫ from 0 to 1 of √3x²dx=√3/3. The shape coefficient must be applied to the squared base segment before integration. A: The area is (√3/4)(2x)²=√3x², integrated over [0,1]. B: This uses the isosceles-right-triangle leg formula instead of equilateral area. C: This treats the triangles as squares. D: This omits the integration factor 1/3."
+    },
+    {
+      "id": "calc-ab-8-8-002",
+      "prompt": "A base lies between y=2−x and y=0 on [0,2]. Semicircular sections perpendicular to the x-axis have diameter equal to the base segment. Find the volume.",
+      "options": [
+        "4π/3",
+        "π/3",
+        "2π/3",
+        "8π/3"
+      ],
+      "correctIndex": 1,
+      "explanation": "For diameter d=2−x, radius is d/2. A semicircle has area (1/2)π(d/2)²=πd²/8. Therefore V=(π/8)∫ from 0 to 2 of (2−x)²dx=(π/8)(8/3)=π/3. A: This uses the full diameter as radius, multiplying each area by 4. B: The radius is (2−x)/2, giving semicircle area π(2−x)²/8. C: This uses full-circle area with the correct radius rather than half-circle area. D: This uses a full circle and the diameter as radius."
+    },
+    {
+      "id": "calc-ab-8-8-003",
+      "prompt": "A solid has base bounded by y=x², y=0, x=0 and x=2. Its sections perpendicular to the x-axis are isosceles right triangles with one leg in the base. What is the volume?",
+      "options": [
+        "4/3",
+        "32/5",
+        "16/5",
+        "8/5"
+      ],
+      "correctIndex": 2,
+      "explanation": "The two equal legs each have length x². Triangle area is (1/2)(x²)(x²)=x⁴/2. Integrating gives V=(1/2)∫ from 0 to 2 of x⁴dx=(1/2)(32/5)=16/5. The description of the base segment as a leg determines the factor. A: This integrates half the side instead of half its square. B: This is the square-section volume without the triangle factor 1/2. C: Each triangle has legs x², hence area x⁴/2. D: This uses the hypotenuse formula even though the base segment is a leg."
+    },
+    {
+      "id": "calc-ab-8-8-004",
+      "prompt": "The base of a solid is x²+y²≤1. Its perpendicular-to-x sections are isosceles right triangles with hypotenuse equal to the full base chord. What is its volume?",
+      "options": [
+        "8/3",
+        "16/3",
+        "π",
+        "4/3"
+      ],
+      "correctIndex": 3,
+      "explanation": "If each leg is ℓ, the hypotenuse is d=ℓ√2 and the area is ℓ²/2=d²/4. At x, the full disk chord is d=2√(1−x²), so A(x)=1−x². Integrate from −1 to 1 to get [x−x³/3] from −1 to 1=4/3. A: This treats the chord as a leg rather than a hypotenuse. B: This treats the chord as a square side. C: This is the planar base disk’s area, not the volume. D: A right-isosceles triangle with hypotenuse d has area d²/4; here d²=4(1−x²)."
+    },
+    {
+      "id": "calc-ab-8-8-005",
+      "prompt": "A solid has triangular cross sections perpendicular to x for 0≤x≤2. Each has base length 1+x and altitude 3. Find the volume.",
+      "options": [
+        "6",
+        "12",
+        "13/3",
+        "3"
+      ],
+      "correctIndex": 0,
+      "explanation": "Use the specified altitude rather than guessing a special triangle shape. The area is (1/2)(1+x)·3. Thus V=(3/2)∫ from 0 to 2 of (1+x)dx=(3/2)(2+2)=6. The altitude is constant, while the base length changes with x. A: The cross-sectional area is (3/2)(1+x). B: This omits the triangle factor 1/2. C: This assumes isosceles right triangles with both legs 1+x instead of the given altitude. D: This treats the base length as constantly 1."
+    },
+    {
+      "id": "calc-ab-8-8-006",
+      "prompt": "For 1≤x≤4, a solid’s equilateral triangular section has altitude √x. What is its volume?",
+      "options": [
+        "5/2",
+        "5√3/2",
+        "15√3/8",
+        "15/2"
+      ],
+      "correctIndex": 1,
+      "explanation": "For an equilateral triangle, h=√3s/2, hence s=2h/√3 and area sh/2=h²/√3. With h=√x this gives A=x/√3. Integrate: V=(1/√3)[x²/2] from 1 to 4=15/(2√3)=5√3/2. A: This does not use the equilateral altitude-to-area factor. B: An equilateral triangle with altitude h has area h²/√3. C: This incorrectly treats the given altitude as a side length. D: This integrates h² without its triangle coefficient."
+    },
+    {
+      "id": "calc-ab-8-8-007",
+      "prompt": "The graph below gives the diameter f(x) of semicircular cross sections perpendicular to the x-axis. What is the solid’s volume?",
+      "options": [
+        "2π",
+        "4π",
+        "π/2",
+        "3π/8"
+      ],
+      "correctIndex": 2,
+      "explanation": "The cross-sectional area is πf(x)²/8. From the graph, f=2x on [0,1] and f=3−x on [1,3]. The squared-width integral is 4/3+8/3=4, giving volume (π/8)·4=π/2. The triangular base area 3 is not the required squared-width integral. A: This treats the diameter as the radius of each semicircle. B: This treats it as the radius of a full circle. C: The squared-diameter integral is 4, multiplied by π/8. D: This integrates diameter rather than squared diameter."
+    },
+    {
+      "id": "calc-ab-8-8-008",
+      "prompt": "Each cross section is an isosceles right triangle with leg s(x) from the table below. Apply the trapezoidal rule to the cross-sectional areas on [0,1] and [1,3]. What volume estimate results?",
+      "options": [
+        "13",
+        "62",
+        "18",
+        "31"
+      ],
+      "correctIndex": 3,
+      "explanation": "First evaluate A=s²/2 at each measurement: 2,8,18. The trapezoidal estimate is 1(2+8)/2+2(8+18)/2=5+26=31. Converting lengths into shape areas must occur before applying the requested approximation; squaring a final length integral is not equivalent. A: This applies the trapezoidal rule to leg lengths rather than areas. B: This uses square areas s² instead of triangle areas s²/2. C: This uses the final cross-sectional area rather than an accumulated volume. D: Convert lengths to areas 2,8,18 first, then use trapezoids with widths 1 and 2."
+    },
+    {
+      "id": "calc-ab-8-8-009",
+      "prompt": "Two solids share the same base and perpendicular slicing interval. One has square sections of side s(x); the other has semicircular sections of diameter s(x). If the square-section volume is V>0, what is the semicircular-section volume?",
+      "options": [
+        "(π/8)V",
+        "(π/2)V",
+        "πV",
+        "V/2"
+      ],
+      "correctIndex": 0,
+      "explanation": "The square area is s². The semicircle has radius s/2 and area (1/2)π(s/2)²=(π/8)s². Since both solids use the same x-interval, this constant area ratio factors out of the integral, giving volume ratio π/8. A: Every semicircle area is π/8 times the corresponding square area. B: This treats s as a radius instead of a diameter. C: This assumes full circles with radius s. D: A semicircle is not generally half a square with matching diameter and side."
+    },
+    {
+      "id": "calc-ab-8-8-010",
+      "prompt": "A funnel-shaped solid extends from x=0 to x=2. Its circular cross section at x has radius 1+x. What is its volume?",
+      "options": [
+        "13π/3",
+        "26π/3",
+        "4π",
+        "18π"
+      ],
+      "correctIndex": 1,
+      "explanation": "The given sections are full circles, so A(x)=π(1+x)². Integrate: V=π[(1+x)³/3] from 0 to 2=π(27−1)/3=26π/3. No rotation assumption is required; the known-area cross-section method applies directly to the stated shape. A: This halves the circle area as though sections were semicircles. B: The full-circle area is π(1+x)², integrated on [0,2]. C: This integrates radius rather than radius squared. D: This uses the largest circle area 9π across the full length 2."
+    },
+    {
+      "id": "calc-ab-8-8-011",
+      "prompt": "A base lies under y=1+x above y=0 for 0≤x≤1. Cross sections perpendicular to x are right triangles with one leg equal to that base segment, but no other dimension or angle is specified. What can be concluded about the volume?",
+      "options": [
+        "It must be (1/2)∫ from 0 to 1 of (1+x)²dx.",
+        "It must be (√3/4)∫ from 0 to 1 of (1+x)²dx.",
+        "It is not uniquely determined without the other leg or an equivalent shape constraint.",
+        "It equals the base area because every section is a triangle."
+      ],
+      "correctIndex": 2,
+      "explanation": "A right triangle with one leg s=1+x and another leg h has area sh/2. The description leaves h(x) unspecified, so many solids fit it and yield different volumes. Being a right triangle alone does not force equal legs; an additional size or angle relation is required. A: This silently assumes isosceles right triangles, an unstated condition. B: This is the equilateral formula and is inconsistent with a right triangle. C: A right triangle’s area needs both leg lengths, and the second is not given. D: A planar base area does not supply the missing three-dimensional shape size."
+    }
+  ]
+}

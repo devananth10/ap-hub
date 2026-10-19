@@ -152,6 +152,17 @@ export function evaluateBivariate(expression,x,y) {
   const substitute=node=>node==='y'?y:Array.isArray(node)?node.map(substitute):node;
   return evaluateExpression(substitute(expression),x);
 }
+export function piecewiseSquareIntegral(points,start,end) {
+  piecewiseArea(points,start,end); // Validate the complete domain and ordered finite data.
+  let sum=0;
+  for(let i=1;i<points.length;i++) {
+    const [x0,y0]=points[i-1],[x1,y1]=points[i],a=Math.max(start,x0),b=Math.min(end,x1);
+    if(a>=b)continue;
+    const fa=y0+(a-x0)*(y1-y0)/(x1-x0),fb=y0+(b-x0)*(y1-y0)/(x1-x0);
+    sum+=(b-a)*(fa*fa+fa*fb+fb*fb)/3;
+  }
+  return sum;
+}
 export function validateSlopeField(figure,rhs) {
   assert.ok(figure?.slopeField?.length>=9,'Slope field needs a finite grid');
   const seen=new Set();
@@ -245,7 +256,9 @@ export function verifyCalculusQuestion(question, review) {
       if(c.type==='riemann-expression')return evaluateExpression(c.expression,x);
       const rows=table.rows.filter(r=>Number(r[0])===x);assert.equal(rows.length,1,'Required Riemann sample missing or repeated');
       const parse=i=>Number(rows[0][i].replaceAll('−','-'));
-      return c.differenceColumns?parse(c.differenceColumns[0])-parse(c.differenceColumns[1]):parse(1);
+      const value=c.differenceColumns?parse(c.differenceColumns[0])-parse(c.differenceColumns[1]):parse(1);
+      assert.ok([1,2].includes(c.valuePower??1),'Unsupported table value power');
+      return value**(c.valuePower??1);
     };
     const expected=(c.initial??0)+(c.scale??1)*riemannApproximation(c.partition,c.method,value),tolerance=c.tolerance??1e-10;
     const matches=question.options.map(option=>Math.abs(numericalOption(option)-expected)<tolerance);
@@ -499,9 +512,13 @@ export function verifyCalculusQuestion(question, review) {
   } else if (review.check.type.startsWith('figure-')) {
     const figure=practiceFigures[question.id];assert.ok(figure,'Missing original graph: '+question.id);
     assert.equal(createHash('sha256').update(JSON.stringify(figure)).digest('hex'),review.check.figureSha256,'Graph changed after review: '+question.id);
-    const actual=question.options.map(option=>option.startsWith('Does not exist')?'DNE':numericalOption(option));
+    const actual=question.options.map(option=>review.check.optionExpressions?evaluateExpression(review.check.optionExpressions[option]):option.startsWith('Does not exist')?'DNE':numericalOption(option));
     let matches;
-    if(review.check.type==='figure-between'||review.check.type==='figure-between-total') {
+    if(review.check.type==='figure-cross-section') {
+      const c=review.check;assert.equal(figure.curves.length,1);
+      const expected=(c.areaFactor??1)*piecewiseSquareIntegral(figure.curves[0].points,c.start,c.end);
+      matches=actual.map(answer=>Math.abs(answer-expected)<1e-10);
+    } else if(review.check.type==='figure-between'||review.check.type==='figure-between-total') {
       const c=review.check;assert.equal(figure.curves.length,2);
       const upper=figure.curves[c.upperCurve].points,lower=figure.curves[1-c.upperCurve].points;
       const interpolate=(points,x)=>{const i=points.findIndex((p,i)=>i&&points[i-1][0]<=x&&x<=p[0]);assert.ok(i>0);const[a,fa]=points[i-1],[b,fb]=points[i];return fa+(x-a)*(fb-fa)/(b-a);};

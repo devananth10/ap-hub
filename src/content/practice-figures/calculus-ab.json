@@ -2951,5 +2951,73 @@
       }
     ],
     "dots": []
+  },
+  "calc-ab-8-7-008": {
+    "xRange": [
+      0,
+      3
+    ],
+    "yRange": [
+      0,
+      2
+    ],
+    "title": "Base region under f",
+    "description": "The base lies between y=0 and the piecewise-linear f joining (0,0), (1,2) and (3,0). Square sections perpendicular to the x-axis use the vertical segment in the base as their side. Thus f=2x on [0,1] and f=3−x on [1,3].",
+    "caption": "Base: the region between the plotted f and y=0. Square cross sections have side length f(x).",
+    "curves": [
+      {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": []
+  },
+  "calc-ab-8-8-007": {
+    "xRange": [
+      0,
+      3
+    ],
+    "yRange": [
+      0,
+      2
+    ],
+    "title": "Diameter function for semicircular sections",
+    "description": "The base lies between y=0 and the piecewise-linear f through (0,0), (1,2), (3,0). At each x, f(x) is the diameter of a semicircular section perpendicular to x, not its radius.",
+    "caption": "The plotted height f(x) is each semicircle’s diameter. Use area πf(x)²/8.",
+    "curves": [
+      {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": []
   }
 }

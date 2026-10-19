@@ -1321,5 +1321,47 @@
         "0"
       ]
     ]
+  },
+  "calc-ab-8-7-006": {
+    "caption": "Cross-sectional areas of a solid",
+    "headers": [
+      "x (cm)",
+      "A(x) (cm²)"
+    ],
+    "rows": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "4"
+      ],
+      [
+        "3",
+        "10"
+      ]
+    ]
+  },
+  "calc-ab-8-8-008": {
+    "caption": "Leg lengths for isosceles right-triangle sections",
+    "headers": [
+      "x",
+      "Leg length s(x)"
+    ],
+    "rows": [
+      [
+        "0",
+        "2"
+      ],
+      [
+        "1",
+        "4"
+      ],
+      [
+        "3",
+        "6"
+      ]
+    ]
   }
 }

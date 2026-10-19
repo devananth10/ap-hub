@@ -553,3 +553,23 @@ test('horizontal table areas subtract paired coordinates before applying nonunif
   assert.throws(()=>numericalOption('2 ln 3'),/Symbolic numerical option/);
   assert.equal(numericalOption('2 meters'),2);
 });
+
+import {piecewiseSquareIntegral} from '../scripts/check-calculus-math.mjs';
+test('cross-section graphs integrate squared widths with corner and clipped-boundary handling',()=>{
+  const f=practiceFigures['calc-ab-8-7-008'];assert.equal(piecewiseSquareIntegral(f.curves[0].points,0,3),4);
+  assert.ok(Math.abs(piecewiseSquareIntegral(f.curves[0].points,.5,2)-3.5)<1e-12);
+  assert.throws(()=>piecewiseSquareIntegral(f.curves[0].points,-1,3));
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-8-8');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-8-8.json'));
+  const bad=structuredClone(qa.questions[6]);bad.check.areaFactor=Math.PI/2;
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[6],bad),/graph key/);
+});
+test('triangle table estimates convert side lengths to areas before trapezoidal integration',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-8-8');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-8-8.json'));
+  verifyCalculusQuestion(batch.questions[7],qa.questions[7]);
+  const square=structuredClone(qa.questions[7]);delete square.check.scale;
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[7],square),/Riemann key/);
+  const length=structuredClone(qa.questions[7]);delete length.check.valuePower;
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[7],length),/unique Riemann result/);
+});

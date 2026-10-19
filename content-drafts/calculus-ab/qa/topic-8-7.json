@@ -1,0 +1,291 @@
+{
+  "topicNumber": "8.7",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "c658c8707a5f53738c7f39b1215c6a0024c907b78b152eeb4b2ad8e7fa757090",
+  "scopeReview": "CED CHA-5.B.1: known square/rectangular cross-sectional areas integrated along the perpendicular coordinate, including whole chords, dy slices, varying aspect ratios, area data and dimensions. No BC methods.",
+  "varietyReview": "Polynomial boundary gap, circular-base chord, proportional rectangle height, fixed-height sine extrusion, horizontal parabolic square slices, nonuniform area table, average area interpretation, original piecewise-linear base graph, independently varying rectangle dimensions, transverse scaling and square-root side. Nine integral/graph/table corroborations and two exact geometric/dimensional reviews.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-8-7-001",
+      "independentReasoning": "Independently expand x²(1−x)² and combine with denominator 30: 10−15+6=1. The width is nonnegative on the entire interval and squaring gives square units before integration supplies the third dimension.",
+      "optionReview": [
+        "This is the base area from integrating side length rather than cross-sectional area.",
+        "This integrates x² alone and ignores the lower boundary.",
+        "This doubles the actual volume without a geometric reason.",
+        "The side is x−x² on [0,1], so integrate its square."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "pow",
+          [
+            "sub",
+            "x",
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          2
+        ],
+        "start": 0,
+        "end": 1
+      }
+    },
+    {
+      "questionId": "calc-ab-8-7-002",
+      "independentReasoning": "Independently the integral of 4−x² on [−2,2] is 32/3; using the full chord multiplies the squared half-width by 4. The square, not a circle, is specified, so inserting π would model a different solid.",
+      "optionReview": [
+        "The chord is 2√(4−x²), so square area is 4(4−x²).",
+        "This uses half the chord as the square side.",
+        "This is the volume of a radius-2 sphere, a different cross-sectional shape.",
+        "This does not integrate the varying square areas."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          4,
+          [
+            "sub",
+            4,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ]
+        ],
+        "start": -2,
+        "end": 2,
+        "optionExpressions": {
+          "16": 16,
+          "128/3": [
+            "div",
+            128,
+            3
+          ],
+          "32/3": [
+            "div",
+            32,
+            3
+          ],
+          "32π/3": [
+            "div",
+            [
+              "mul",
+              32,
+              "pi"
+            ],
+            3
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-7-003",
+      "independentReasoning": "Independently substitute u=2−x, reversing bounds to integrate 3u² from 0 to 2. The result is [u³] from 0 to 2=8. A rectangle’s area scales linearly with the height ratio and quadratically with the common side-length scale.",
+      "optionReview": [
+        "This is the square-section volume before multiplying by the height ratio 3.",
+        "Each rectangle has area 3(2−x)², whose integral is 8.",
+        "This integrates three times the width instead of three times its square.",
+        "This applies the height ratio twice rather than once."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          3,
+          [
+            "pow",
+            [
+              "sub",
+              2,
+              "x"
+            ],
+            2
+          ]
+        ],
+        "start": 0,
+        "end": 2
+      }
+    },
+    {
+      "questionId": "calc-ab-8-7-004",
+      "independentReasoning": "Independently a fixed height-2 extrusion of the sine-under-curve base has volume height times base area: 2·2=4. This checks that the cross section is rectangular and must not automatically use the square of its base segment.",
+      "optionReview": [
+        "This integrates sin²x and would describe squares, not the specified rectangles.",
+        "This omits the fixed height factor 2.",
+        "The rectangular area is 2sin x, integrated from 0 to π.",
+        "This uses maximum base length 1 for every cross section."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          2,
+          [
+            "sin",
+            "x"
+          ]
+        ],
+        "start": 0,
+        "end": 3.141592653589793,
+        "optionExpressions": {
+          "2": 2,
+          "4": 4,
+          "π/2": [
+            "div",
+            "pi",
+            2
+          ],
+          "2π": [
+            "mul",
+            2,
+            "pi"
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-7-005",
+      "independentReasoning": "Independently use even symmetry: 2[16y−(8/3)y³+y⁵/5] from 0 to 2=512/15. The dy thickness is essential because the cross sections are perpendicular to the y-axis. Squaring the actual horizontal width produces cross-sectional area.",
+      "optionReview": [
+        "This is the two-dimensional base area, not the solid’s volume.",
+        "This counts only the upper half of the solid.",
+        "This uses the maximum square area across the entire y-length.",
+        "The side is 4−y² on −2≤y≤2, so integrate (4−y²)² with respect to y."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "pow",
+          [
+            "sub",
+            4,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          2
+        ],
+        "start": -2,
+        "end": 2
+      }
+    },
+    {
+      "questionId": "calc-ab-8-7-006",
+      "independentReasoning": "Independently integrate the piecewise-linear area interpolant: its contributions are 5/2 and 14, totaling 33/2. Squaring the listed values would instead give 17/2+116=249/2 with dimensionally invalid units for this task. The table already records area, not side length.",
+      "optionReview": [
+        "The area trapezoids give 1(1+4)/2+2(4+10)/2.",
+        "This uses an endpoint cross-sectional area as though it were volume.",
+        "This ignores the width 2 of the second interval.",
+        "This squares the listed areas before integrating, even though they are already area values."
+      ],
+      "check": {
+        "type": "table-riemann",
+        "partition": [
+          0,
+          1,
+          3
+        ],
+        "method": "trapezoid"
+      },
+      "tableSha256": "b1d325d0c6990b4a007f1a859ebc097900ce5039bafefab0de899108f1d05210"
+    },
+    {
+      "questionId": "calc-ab-8-7-007",
+      "independentReasoning": "Independently check dimensions: cubic units divided by units gives square units. Different positive area functions can share integral 24 while varying with x, so a unique constant side or maximum cannot be inferred.",
+      "optionReview": [
+        "An average area does not force constant side length or constant area.",
+        "Dividing volume by total thickness gives the mean of A(x).",
+        "Volume divided by length has area units, not perimeter units.",
+        "An average generally differs from a maximum."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The average cross-sectional area over the interval, in square units"
+      }
+    },
+    {
+      "questionId": "calc-ab-8-7-008",
+      "independentReasoning": "Independently integrate the square of a linear width over each segment using length·(a²+ab+b²)/3 for endpoint widths a,b. The first contributes 1(0+0+4)/3=4/3 and the second 2(4+0+0)/3=8/3. The verifier uses actual clipped graph coordinates.",
+      "optionReview": [
+        "This is the triangular base area, not the square-section volume.",
+        "This uses the maximum square area 4 for the full length 3.",
+        "Integrate (2x)² on [0,1] and (3−x)² on [1,3].",
+        "This does not include the full squared-width accumulation."
+      ],
+      "check": {
+        "type": "figure-cross-section",
+        "start": 0,
+        "end": 3,
+        "figureSha256": "429f6d50df112c027abcf490dcc61685160786732d376ddc1fe6bb944e74ecfe"
+      },
+      "figureSha256": "429f6d50df112c027abcf490dcc61685160786732d376ddc1fe6bb944e74ecfe"
+    },
+    {
+      "questionId": "calc-ab-8-7-009",
+      "independentReasoning": "Independently expand the dimension product and differentiate the primitive 2x+x²/2−x³/3. The base and height are nonnegative on the whole interval, so the product is a valid area. There is no reason to replace the height by the base as in square sections.",
+      "optionReview": [
+        "This squares the base length and ignores the independently varying height.",
+        "This does not integrate the actual product of base and height.",
+        "This treats the cross-sectional area as constant 2.",
+        "The area is (2−x)(x+1)=2+x−x²."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          [
+            "sub",
+            2,
+            "x"
+          ],
+          [
+            "add",
+            "x",
+            1
+          ]
+        ],
+        "start": 0,
+        "end": 2
+      }
+    },
+    {
+      "questionId": "calc-ab-8-7-010",
+      "independentReasoning": "Independently compare a constant-sided prism: doubling both transverse dimensions multiplies its volume by four when length stays the same. The same pointwise area factor holds for varying cross sections and factors out of the integral.",
+      "optionReview": [
+        "Each square area is multiplied by 2², while the integration thickness is unchanged.",
+        "This scales side length but not square area.",
+        "That would also require doubling the longitudinal dimension.",
+        "Changing every positive side length changes the volume."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "4V"
+      }
+    },
+    {
+      "questionId": "calc-ab-8-7-011",
+      "independentReasoning": "Independently A is a linear function rising from 0 to 4, so its mean is 2 and its integral over length 4 is 8. This geometric check confirms the square-root cancellation before any numerical integration.",
+      "optionReview": [
+        "This is the base area from integrating √x alone.",
+        "The square area is (√x)²=x, integrated over [0,4].",
+        "This uses the largest square area 4 across the entire interval.",
+        "This is the largest cross-sectional area, not the total volume."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": "x",
+        "start": 0,
+        "end": 4
+      }
+    }
+  ]
+}
