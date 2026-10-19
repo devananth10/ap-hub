@@ -1,0 +1,327 @@
+{
+  "topicNumber": "3.6",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "517c2b72beea5c0ff9b00ac7bcf29bf30707d04c710f7b690b4c8f790e5fa549",
+  "scopeReview": "CED FUN-3.F.1–2 repeated differentiation and higher-order notation. Uses prior chain, product, implicit and inverse-trig rules. No Taylor-series knowledge required from students; series are only separate QA corroborations. Radians and original domains checked.",
+  "varietyReview": "Second derivative formula, exponential third order, trigonometric fourth-order cycle, logarithm, exponential product, given first derivative, implicit second derivative, first-but-not-twice differentiability, reciprocal third order, notation versus squaring and inverse-tangent second order.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-3-6-001",
+      "independentReasoning": "Independently compute the centered second difference of the original polynomial at −1,1/2,1. It corroborates the selected formula. Exact termwise differentiation establishes the identity; the second-difference truncation error is controlled by the chosen small step.",
+      "optionReview": [
+        "This is the first derivative, not the second.",
+        "This omits the factor 2 when differentiating −9x².",
+        "Differentiate the first derivative 5x⁴−9x²+2 once more.",
+        "Only the first derivative’s constant term vanishes; the other terms still vary."
+      ],
+      "check": {
+        "type": "higher-derivative",
+        "order": 2,
+        "expression": [
+          "add",
+          [
+            "pow",
+            "x",
+            5
+          ],
+          [
+            "mul",
+            -3,
+            [
+              "pow",
+              "x",
+              3
+            ]
+          ],
+          [
+            "mul",
+            2,
+            "x"
+          ]
+        ],
+        "samplePoints": [
+          -1,
+          0.5,
+          1
+        ],
+        "step": 0.0005,
+        "tolerance": 0.0001,
+        "candidates": {
+          "0": 0,
+          "20x³−18x": [
+            "sub",
+            [
+              "mul",
+              20,
+              [
+                "pow",
+                "x",
+                3
+              ]
+            ],
+            [
+              "mul",
+              18,
+              "x"
+            ]
+          ],
+          "5x⁴−9x²+2": [
+            "add",
+            [
+              "mul",
+              5,
+              [
+                "pow",
+                "x",
+                4
+              ]
+            ],
+            [
+              "mul",
+              -9,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ],
+            2
+          ],
+          "20x³−9x": [
+            "sub",
+            [
+              "mul",
+              20,
+              [
+                "pow",
+                "x",
+                3
+              ]
+            ],
+            [
+              "mul",
+              9,
+              "x"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-3-6-002",
+      "independentReasoning": "The original Taylor expansion e^(2h)=1+2h+2h²+(4/3)h³+O(h⁴) has third derivative 3!·(4/3)=8 at 0. A symmetric third-difference stencil of the original exponential corroborates the same value.",
+      "optionReview": [
+        "This stops after the first derivative.",
+        "This stops after the second derivative.",
+        "This differentiates once too many times.",
+        "Each differentiation supplies another factor 2, so f‴=8e^(2x)."
+      ],
+      "check": {
+        "type": "higher-derivative",
+        "order": 3,
+        "inputX": 0,
+        "expression": [
+          "exp",
+          [
+            "mul",
+            2,
+            "x"
+          ]
+        ],
+        "step": 0.001,
+        "tolerance": 0.0001
+      }
+    },
+    {
+      "questionId": "calc-ab-3-6-003",
+      "independentReasoning": "Check each step and its sign using the basic sine/cosine derivative rules. Two successive sign reversals restore positive sine at the fourth step. Evaluate only after reaching that function; earlier derivative values cannot be substituted for the requested order.",
+      "optionReview": [
+        "The fourth derivative returns to sin x, whose value at π/2 is 1.",
+        "This is the second derivative’s value at π/2.",
+        "The first and third derivatives vanish there, but the fourth does not.",
+        "The derivative order is not a multiplier applied to the function value."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "1"
+      }
+    },
+    {
+      "questionId": "calc-ab-3-6-004",
+      "independentReasoning": "The original centered second quotient is [ln(2+h)−2ln2+ln(2−h)]/h²=ln(1−h²/4)/h², which tends to −1/4. This exact logarithm identity independently confirms the sign and magnitude.",
+      "optionReview": [
+        "This is the first derivative at 2.",
+        "The second derivative is −1/x².",
+        "This omits the negative sign when differentiating x⁻¹.",
+        "This fails to increase the reciprocal power on the second derivative."
+      ],
+      "check": {
+        "type": "higher-derivative",
+        "order": 2,
+        "inputX": 2,
+        "expression": [
+          "ln",
+          "x"
+        ],
+        "step": 0.001,
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-3-6-005",
+      "independentReasoning": "The original series x eˣ=x+x²+x³/2+O(x⁴) has second derivative 2!·1=2 at 0. A centered second difference of the original product corroborates this result and distinguishes the original/first/third-order values.",
+      "optionReview": [
+        "This is y′(0), not y″(0).",
+        "This is the original function value at 0.",
+        "After two differentiations y″=(x+2)eˣ, giving 2 at 0.",
+        "This would be the third derivative’s value at 0."
+      ],
+      "check": {
+        "type": "higher-derivative",
+        "order": 2,
+        "inputX": 0,
+        "expression": [
+          "mul",
+          "x",
+          [
+            "exp",
+            "x"
+          ]
+        ],
+        "step": 0.001,
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-3-6-006",
+      "independentReasoning": "Independently expand the given first derivative as x⁶+3x⁴+3x²+1 and differentiate: at 1 the result is 6+12+6=24. A centered first difference of the supplied f′ corroborates the requested f″.",
+      "optionReview": [
+        "This evaluates the supplied first derivative at 1 without differentiating it.",
+        "This omits the inner quadratic’s factor 2.",
+        "This incorrectly retains the outer exponent 3 instead of lowering it to 2.",
+        "Differentiate the given first derivative with the chain rule: 6x(x²+1)²."
+      ],
+      "check": {
+        "type": "finite-difference-estimate",
+        "inputX": 1,
+        "expression": [
+          "pow",
+          [
+            "add",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            1
+          ],
+          3
+        ],
+        "step": 0.00001,
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-3-6-007",
+      "independentReasoning": "Independently use the explicit positive branch y=√(25−x²). Its second derivative simplifies to −25/(25−x²)^(3/2), which is −25/64 at x=3. Centered second differences of this original branch corroborate the value; the point is away from the vertical endpoints.",
+      "optionReview": [
+        "Differentiating 2x+2yy′=0 gives 2+2(y′)²+2yy″=0.",
+        "This is the first derivative at the point.",
+        "This loses the negative sign when isolating y″.",
+        "This incorrectly treats y as constant when differentiating the first-derivative expression −x/y."
+      ],
+      "check": {
+        "type": "higher-derivative",
+        "order": 2,
+        "inputX": 3,
+        "expression": [
+          "sqrt",
+          [
+            "sub",
+            25,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ]
+        ],
+        "step": 0.001,
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-3-6-008",
+      "independentReasoning": "Use the actual first-derivative difference quotient [2|h|−0]/h. It equals 2 for positive h and −2 for negative h, so the finite two-sided limit fails. This separates first differentiability from twice differentiability without assigning an average slope.",
+      "optionReview": [
+        "The value of the first derivative does not determine its own derivative.",
+        "The first derivative exists at 0, but it has a corner there.",
+        "This uses only the right-hand behavior.",
+        "This uses only the left-hand behavior."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It does not exist because f′(x)=2|x| has unequal one-sided slopes at 0."
+      }
+    },
+    {
+      "questionId": "calc-ab-3-6-009",
+      "independentReasoning": "The local geometric expansion 1/(1+h)=1−h+h²−h³+O(h⁴) gives third derivative 3!·(−1)=−6. A symmetric third-difference stencil of the original reciprocal function corroborates the sign and factorial coefficient.",
+      "optionReview": [
+        "This loses the alternating negative sign at the third step.",
+        "This is the second derivative at 1.",
+        "Successive derivatives are −x⁻², 2x⁻³ and −6x⁻⁴.",
+        "This is the first derivative at 1."
+      ],
+      "check": {
+        "type": "higher-derivative",
+        "order": 3,
+        "inputX": 1,
+        "expression": [
+          "div",
+          1,
+          "x"
+        ],
+        "step": 0.001,
+        "tolerance": 0.0001
+      }
+    },
+    {
+      "questionId": "calc-ab-3-6-010",
+      "independentReasoning": "Compute the derivative and square operations separately before evaluating. The actual first derivative at 1 is 3, so its square is 9. Its local rate of change is 6, confirming the distinct second derivative. Each incorrect pair fails at least one separate calculation.",
+      "optionReview": [
+        "This interchanges the two operations.",
+        "This incorrectly treats squaring the first derivative as differentiating it.",
+        "This replaces the second derivative by the square of the first.",
+        "The second derivative is 6x, while the square of the first derivative is (3x²)²."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "(6, 9)"
+      }
+    },
+    {
+      "questionId": "calc-ab-3-6-011",
+      "independentReasoning": "Differentiate the first-derivative formula by the quotient rule as a separate check, obtaining the same negative numerator. A centered second difference of the original arctangent at 1 corroborates −1/2, distinguishing the first derivative and its square.",
+      "optionReview": [
+        "Differentiating (1+x²)⁻¹ gives −2x/(1+x²)², which is −1/2 at 1.",
+        "This is the first derivative at 1.",
+        "The first derivative is not locally constant near 1.",
+        "This is the negative square of y′(1), which is a different operation."
+      ],
+      "check": {
+        "type": "higher-derivative",
+        "order": 2,
+        "inputX": 1,
+        "expression": [
+          "atan",
+          "x"
+        ],
+        "step": 0.001,
+        "tolerance": 0.00001
+      }
+    }
+  ]
+}

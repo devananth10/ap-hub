@@ -23,5 +23,6 @@ Repository: `devananth10/ap-hub`, branch `main`. Each entry below was saved with
 | `dc5b5797f2469d227a6e12d3306c4cb629e792e5` | 253 | Topics 2.6–2.7, 69 tests, build/typecheck, full topic browser sessions; verified GitHub receipt |
 | `a70aecb6232f768d14f2833be0a022aac841fb00` | 286 | Unit 2 complete, 71 tests, build/typecheck, three full browser sessions; verified GitHub receipt |
 | `1c6aeb19ec539c4b666bc57c6d95fc00cfcaa768` | 308 | Topics 3.1–3.2, 73 tests, build/typecheck, both full browser sessions; verified GitHub receipt |
+| `89b248e7bff2d8d2b11696aa1c3b032e9e457688` | 330 | Topics 3.3–3.4, 75 tests, build/typecheck, both full browser sessions; verified GitHub receipt |
 
 The latest receipt recorded above is the 231-question push. PROGRESS.json records subsequent locally validated publication; Git log and the verified remote branch provide later receipts. Do not invent a future commit SHA inside progress files before committing.

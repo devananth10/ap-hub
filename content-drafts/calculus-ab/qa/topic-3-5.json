@@ -1,0 +1,812 @@
+{
+  "topicNumber": "3.5",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "1c115dd92c2c46277e6237b22f46fa09688f28b9e4cf3dcc16d4e3e2128b67d2",
+  "scopeReview": "CED Topic 3.5 selecting appropriate procedures across all preceding derivative rules. Each selected procedure has a correct result, while alternatives contain a specific invalid step. Multiple valid methods are explicitly accepted when applicable. Domains and radian trigonometry checked.",
+  "varietyReview": "Mixed product/chain, domain-aware cancellation, log-trig composition, identity versus direct rules, radical composition, inverse-trig quotient, inverse versus reciprocal, implicit product inside a sine, exponential product, expansion versus chain and logarithm simplification.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-3-5-001",
+      "independentReasoning": "Independently expand F=x⁷+3x⁵+3x³+x. Its derivative 7x⁶+15x⁴+9x²+1 equals the selected factored expression. Original-function differences at −1,0,1 distinguish all proposed results.",
+      "optionReview": [
+        "A product derivative is not the product of its factor derivatives.",
+        "Differentiate each factor in turn, applying the chain rule inside the second factor.",
+        "This omits the factor x and the inner quadratic rate.",
+        "The second factor varies and contributes another term."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "mul",
+          "x",
+          [
+            "pow",
+            [
+              "add",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              1
+            ],
+            3
+          ]
+        ],
+        "samplePoints": [
+          -1,
+          0,
+          1
+        ],
+        "step": 0.00001,
+        "tolerance": 0.0001,
+        "candidates": {
+          "Use product and chain rules: F′=(x²+1)³+6x²(x²+1)².": [
+            "add",
+            [
+              "pow",
+              [
+                "add",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                1
+              ],
+              3
+            ],
+            [
+              "mul",
+              6,
+              [
+                "pow",
+                "x",
+                2
+              ],
+              [
+                "pow",
+                [
+                  "add",
+                  [
+                    "pow",
+                    "x",
+                    2
+                  ],
+                  1
+                ],
+                2
+              ]
+            ]
+          ],
+          "Multiply factor derivatives: F′=6x(x²+1)².": [
+            "mul",
+            6,
+            "x",
+            [
+              "pow",
+              [
+                "add",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                1
+              ],
+              2
+            ]
+          ],
+          "Differentiate only the outer cube: F′=3(x²+1)².": [
+            "mul",
+            3,
+            [
+              "pow",
+              [
+                "add",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                1
+              ],
+              2
+            ]
+          ],
+          "Use only the first-factor contribution: F′=(x²+1)³.": [
+            "pow",
+            [
+              "add",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              1
+            ],
+            3
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-3-5-002",
+      "independentReasoning": "Applying the quotient rule before cancellation gives [2x(x−1)−(x²−1)]/(x−1)²=(x−1)²/(x−1)²=1 for x≠1. Both methods agree on the original domain; neither supplies a value or derivative at its missing point.",
+      "optionReview": [
+        "The original function is undefined at 1, so its derivative there is not restored by simplification.",
+        "Taking a quotient of derivatives is not a valid differentiation rule.",
+        "Algebraic simplification is valid away from the original denominator zero and preserves the missing point.",
+        "Both quotient-rule calculation and domain-aware simplification are valid approaches."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Factor and cancel for x≠1 to get f=x+1, then f′=1 only on that original domain."
+      }
+    },
+    {
+      "questionId": "calc-ab-3-5-003",
+      "independentReasoning": "The identity e^(L(x))=sin x differentiates to e^L L′=cos x, giving L′=cos x/sin x independently. Original-function differences at 1/2,1,2 stay in the positive-sine interval and distinguish all answer expressions.",
+      "optionReview": [
+        "This omits the inner factor cos x.",
+        "This is a different logarithmic composition’s derivative, not the stated function.",
+        "This omits the logarithm’s reciprocal factor.",
+        "The outer logarithm derivative is multiplied by the inner sine derivative."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "ln",
+          [
+            "sin",
+            "x"
+          ]
+        ],
+        "samplePoints": [
+          0.5,
+          1,
+          2
+        ],
+        "step": 0.00001,
+        "tolerance": 0.0001,
+        "candidates": {
+          "Apply the chain rule: L′=cos x/sin x.": [
+            "div",
+            [
+              "cos",
+              "x"
+            ],
+            [
+              "sin",
+              "x"
+            ]
+          ],
+          "Differentiate the outer function only: L′=1/sin x.": [
+            "div",
+            1,
+            [
+              "sin",
+              "x"
+            ]
+          ],
+          "Replace the logarithm by cosine: L′=−sin x/cos x.": [
+            "div",
+            [
+              "mul",
+              -1,
+              [
+                "sin",
+                "x"
+              ]
+            ],
+            [
+              "cos",
+              "x"
+            ]
+          ],
+          "Differentiate only the inner sine: L′=cos x.": [
+            "cos",
+            "x"
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-3-5-004",
+      "independentReasoning": "The exact identity provides an independent constant-function argument. Separately inspect the two chain-rule terms and their opposite signs. This question explicitly accepts both valid methods rather than pretending a unique required algorithm exists.",
+      "optionReview": [
+        "The identity and the correctly applied derivative rules are compatible.",
+        "Equivalent formulas on the same domain have equal derivatives.",
+        "The derivative of the constant 1 is zero.",
+        "Each squared trigonometric function also requires its inner derivative."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Either simplify the sum to 1 first or differentiate both squares with the chain rule; both give 0."
+      }
+    },
+    {
+      "questionId": "calc-ab-3-5-005",
+      "independentReasoning": "Rationalizing the original difference quotient gives [(x+h)⁴−x⁴]/[h(√(1+(x+h)⁴)+√(1+x⁴))]. The numerator rate is 4x³ and the remaining denominator tends to 2√(1+x⁴). Centered differences corroborate the exact result.",
+      "optionReview": [
+        "This omits the inner derivative.",
+        "Multiply 1/(2√(1+x⁴)) by the inner rate 4x³ and simplify.",
+        "This loses the factor 1/2 from the square-root derivative.",
+        "This multiplies by the radical instead of dividing by it."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "sqrt",
+          [
+            "add",
+            1,
+            [
+              "pow",
+              "x",
+              4
+            ]
+          ]
+        ],
+        "samplePoints": [
+          -1,
+          0.5,
+          1
+        ],
+        "step": 0.00001,
+        "tolerance": 0.0001,
+        "candidates": {
+          "Use the chain rule: R′=2x³/√(1+x⁴).": [
+            "div",
+            [
+              "mul",
+              2,
+              [
+                "pow",
+                "x",
+                3
+              ]
+            ],
+            [
+              "sqrt",
+              [
+                "add",
+                1,
+                [
+                  "pow",
+                  "x",
+                  4
+                ]
+              ]
+            ]
+          ],
+          "Use only the outer rule: R′=1/(2√(1+x⁴)).": [
+            "div",
+            1,
+            [
+              "mul",
+              2,
+              [
+                "sqrt",
+                [
+                  "add",
+                  1,
+                  [
+                    "pow",
+                    "x",
+                    4
+                  ]
+                ]
+              ]
+            ]
+          ],
+          "Use R′=4x³/√(1+x⁴).": [
+            "div",
+            [
+              "mul",
+              4,
+              [
+                "pow",
+                "x",
+                3
+              ]
+            ],
+            [
+              "sqrt",
+              [
+                "add",
+                1,
+                [
+                  "pow",
+                  "x",
+                  4
+                ]
+              ]
+            ]
+          ],
+          "Use R′=2x³√(1+x⁴).": [
+            "mul",
+            2,
+            [
+              "pow",
+              "x",
+              3
+            ],
+            [
+              "sqrt",
+              [
+                "add",
+                1,
+                [
+                  "pow",
+                  "x",
+                  4
+                ]
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-3-5-006",
+      "independentReasoning": "Independently write Q=(arctan x)(1+x²)⁻¹ and apply the product and chain rules. Combining terms over the common denominator reproduces the selected numerator. Original-function differences at 1/2,1,2 distinguish all candidate formulas.",
+      "optionReview": [
+        "A quotient of derivatives is not the derivative of a quotient.",
+        "The quotient rule requires subtraction.",
+        "The numerator derivative multiplied by the denominator is 1, then subtract the denominator contribution.",
+        "The original quotient rule needs the denominator squared."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "div",
+          [
+            "atan",
+            "x"
+          ],
+          [
+            "add",
+            1,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ]
+        ],
+        "samplePoints": [
+          0.5,
+          1,
+          2
+        ],
+        "step": 0.00001,
+        "tolerance": 0.0001,
+        "candidates": {
+          "Use the quotient rule: Q′=[1−2x arctan x]/(1+x²)².": [
+            "div",
+            [
+              "sub",
+              1,
+              [
+                "mul",
+                2,
+                "x",
+                [
+                  "atan",
+                  "x"
+                ]
+              ]
+            ],
+            [
+              "pow",
+              [
+                "add",
+                1,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ],
+              2
+            ]
+          ],
+          "Divide separate derivatives: Q′=1/[2x(1+x²)].": [
+            "div",
+            1,
+            [
+              "mul",
+              2,
+              "x",
+              [
+                "add",
+                1,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ]
+            ]
+          ],
+          "Use addition in the quotient numerator: Q′=[1+2x arctan x]/(1+x²)².": [
+            "div",
+            [
+              "add",
+              1,
+              [
+                "mul",
+                2,
+                "x",
+                [
+                  "atan",
+                  "x"
+                ]
+              ]
+            ],
+            [
+              "pow",
+              [
+                "add",
+                1,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ],
+              2
+            ]
+          ],
+          "Leave the denominator unsquared: Q′=[1−2x arctan x]/(1+x²).": [
+            "div",
+            [
+              "sub",
+              1,
+              [
+                "mul",
+                2,
+                "x",
+                [
+                  "atan",
+                  "x"
+                ]
+              ]
+            ],
+            [
+              "add",
+              1,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-3-5-007",
+      "independentReasoning": "For the inverse, reverse the local original relation f(h)=1+2h+o(h), yielding rate 1/2. For the reciprocal, 1/f(h)=1−2h+o(h), yielding rate −2. These independent local expansions check both ordered entries and the distinct signs.",
+      "optionReview": [
+        "This interchanges inverse-function and reciprocal-function rules.",
+        "This retains the original slope for both unrelated operations.",
+        "This applies the inverse-function rule to the reciprocal function as well.",
+        "The inverse uses reciprocal slope at f(0)=1; the reciprocal function uses −f′/f² at 0."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "(1/2, −2)"
+      }
+    },
+    {
+      "questionId": "calc-ab-3-5-008",
+      "independentReasoning": "At the original curve point (1,0), substitution into the correct derivative equation gives 2+y′=0. The original increment with x=1+h,y=mh has first-order residual (2+m)h, confirming y′=−2. The general equation follows separately from the product and chain rules.",
+      "optionReview": [
+        "The chain rule differentiates sine and the product rule differentiates its inner argument xy.",
+        "This omits the product structure of the inner argument xy.",
+        "This fails to differentiate the outer sine to cosine.",
+        "This uses the wrong derivative for xy and differentiates the constant incorrectly."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "2x+cos(xy)[y+x(dy/dx)]=0."
+      }
+    },
+    {
+      "questionId": "calc-ab-3-5-009",
+      "independentReasoning": "Differentiate the exponential factor using the local input increment 2xh+h², and the cosine factor using its basic radian derivative. Original complete-product centered differences at −1,0,1 corroborate the assembled expression and distinguish omitted-factor and sign errors.",
+      "optionReview": [
+        "This omits the derivative contribution from cosine.",
+        "The exponential contribution requires the inner factor 2x, and the cosine contribution is negative sine.",
+        "The inner quadratic contributes 2x, not 1.",
+        "The cosine derivative is negative sine."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "mul",
+          [
+            "exp",
+            [
+              "sub",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              1
+            ]
+          ],
+          [
+            "cos",
+            "x"
+          ]
+        ],
+        "samplePoints": [
+          -1,
+          0,
+          1
+        ],
+        "step": 0.00001,
+        "tolerance": 0.0001,
+        "candidates": {
+          "Use product and chain rules: P′=e^(x²−1)[2x cos x−sin x].": [
+            "mul",
+            [
+              "exp",
+              [
+                "sub",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                1
+              ]
+            ],
+            [
+              "sub",
+              [
+                "mul",
+                2,
+                "x",
+                [
+                  "cos",
+                  "x"
+                ]
+              ],
+              [
+                "sin",
+                "x"
+              ]
+            ]
+          ],
+          "Differentiate only the exponential factor: P′=2x e^(x²−1)cos x.": [
+            "mul",
+            [
+              "exp",
+              [
+                "sub",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                1
+              ]
+            ],
+            [
+              "mul",
+              2,
+              "x",
+              [
+                "cos",
+                "x"
+              ]
+            ]
+          ],
+          "Omit the exponential’s inner rate: P′=e^(x²−1)[cos x−sin x].": [
+            "mul",
+            [
+              "exp",
+              [
+                "sub",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                1
+              ]
+            ],
+            [
+              "sub",
+              [
+                "cos",
+                "x"
+              ],
+              [
+                "sin",
+                "x"
+              ]
+            ]
+          ],
+          "Change the cosine derivative sign: P′=e^(x²−1)[2x cos x+sin x].": [
+            "mul",
+            [
+              "exp",
+              [
+                "sub",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                1
+              ]
+            ],
+            [
+              "add",
+              [
+                "mul",
+                2,
+                "x",
+                [
+                  "cos",
+                  "x"
+                ]
+              ],
+              [
+                "sin",
+                "x"
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-3-5-010",
+      "independentReasoning": "Compare the two exact algebraic results by factoring 4x from the expanded derivative. The original formulas are equal on all real numbers, with no domain change. This question accepts both valid procedures and rejects a false requirement to use just one.",
+      "optionReview": [
+        "The chain rule applies to differentiable composites, including integer powers.",
+        "Correct algebraic expansion preserves the function.",
+        "Expansion gives 4x³+4x, which factors to the chain-rule result.",
+        "Equivalent differentiable formulas have the same derivative at each input."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Both are valid and give f′(x)=4x(x²+1)."
+      }
+    },
+    {
+      "questionId": "calc-ab-3-5-011",
+      "independentReasoning": "Independently use the chain rule directly on ln A, where A=x√(1+x²). The product rule gives A′=√(1+x²)+x²/√(1+x²); dividing by A simplifies to the selected sum. Original-function differences at 1/2,1,2 corroborate it.",
+      "optionReview": [
+        "The second term must include the factor x after simplifying (1/2)(2x).",
+        "This omits the entire derivative of the logarithm’s input.",
+        "The original input is a product, so its logarithm splits into a sum.",
+        "Positivity permits the log identities, then each resulting term is differentiated with its inner rate."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "ln",
+          [
+            "mul",
+            "x",
+            [
+              "sqrt",
+              [
+                "add",
+                1,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ]
+            ]
+          ]
+        ],
+        "samplePoints": [
+          0.5,
+          1,
+          2
+        ],
+        "step": 0.00001,
+        "tolerance": 0.0001,
+        "candidates": {
+          "Use logarithm identities first: L=ln x+(1/2)ln(1+x²), so L′=1/x+x/(1+x²).": [
+            "add",
+            [
+              "div",
+              1,
+              "x"
+            ],
+            [
+              "div",
+              "x",
+              [
+                "add",
+                1,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ]
+            ]
+          ],
+          "Split the logarithm but omit an inner rate: L′=1/x+1/(1+x²).": [
+            "add",
+            [
+              "div",
+              1,
+              "x"
+            ],
+            [
+              "div",
+              1,
+              [
+                "add",
+                1,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ]
+            ]
+          ],
+          "Differentiate the logarithm only: L′=1/[x√(1+x²)].": [
+            "div",
+            1,
+            [
+              "mul",
+              "x",
+              [
+                "sqrt",
+                [
+                  "add",
+                  1,
+                  [
+                    "pow",
+                    "x",
+                    2
+                  ]
+                ]
+              ]
+            ]
+          ],
+          "Use a difference of logarithms: L′=1/x−x/(1+x²).": [
+            "sub",
+            [
+              "div",
+              1,
+              "x"
+            ],
+            [
+              "div",
+              "x",
+              [
+                "add",
+                1,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ]
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}

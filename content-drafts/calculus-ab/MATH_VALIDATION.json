@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 330,
+  "questionsChecked": 352,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -986,6 +986,76 @@
       "questionId": "calc-ab-3-4-011",
       "method": "finite-difference-estimate",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-5-001",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-5-003",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-5-005",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-5-006",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-5-009",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-5-011",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-6-001",
+      "method": "higher-derivative",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-6-002",
+      "method": "higher-derivative",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-6-004",
+      "method": "higher-derivative",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-6-005",
+      "method": "higher-derivative",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-6-006",
+      "method": "finite-difference-estimate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-6-007",
+      "method": "higher-derivative",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-6-009",
+      "method": "higher-derivative",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-3-6-011",
+      "method": "higher-derivative",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -1121,7 +1191,15 @@
     "calc-ab-3-3-010",
     "calc-ab-3-4-008",
     "calc-ab-3-4-009",
-    "calc-ab-3-4-010"
+    "calc-ab-3-4-010",
+    "calc-ab-3-5-002",
+    "calc-ab-3-5-004",
+    "calc-ab-3-5-007",
+    "calc-ab-3-5-008",
+    "calc-ab-3-5-010",
+    "calc-ab-3-6-003",
+    "calc-ab-3-6-008",
+    "calc-ab-3-6-010"
   ],
   "humanReviewPerformed": false,
   "limitations": [

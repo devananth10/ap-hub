@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 3,
+  "topicId": "topic-3-6",
+  "questions": [
+    {
+      "id": "calc-ab-3-6-001",
+      "prompt": "For f(x)=x⁵−3x³+2x, which expression is f″(x)?",
+      "options": [
+        "5x⁴−9x²+2",
+        "20x³−9x",
+        "20x³−18x",
+        "0"
+      ],
+      "correctIndex": 2,
+      "explanation": "First differentiate to get f′=5x⁴−9x²+2. Differentiate that function again: f″=20x³−18x. The constant 2 disappears on the second differentiation. A: This is the first derivative, not the second. B: This omits the factor 2 when differentiating −9x². C: Differentiate the first derivative 5x⁴−9x²+2 once more. D: Only the first derivative’s constant term vanishes; the other terms still vary."
+    },
+    {
+      "id": "calc-ab-3-6-002",
+      "prompt": "Let f(x)=e^(2x). What is f‴(0), the third derivative evaluated at 0?",
+      "options": [
+        "2",
+        "4",
+        "16",
+        "8"
+      ],
+      "correctIndex": 3,
+      "explanation": "Repeated use of the chain rule gives f′=2e^(2x), f″=4e^(2x) and f‴=8e^(2x). At 0 the exponential equals 1, so f‴(0)=8. A: This stops after the first derivative. B: This stops after the second derivative. C: This differentiates once too many times. D: Each differentiation supplies another factor 2, so f‴=8e^(2x)."
+    },
+    {
+      "id": "calc-ab-3-6-003",
+      "prompt": "Angles are in radians. If f(x)=sin x, what is f⁽⁴⁾(π/2), the fourth derivative at π/2?",
+      "options": [
+        "1",
+        "−1",
+        "0",
+        "4"
+      ],
+      "correctIndex": 0,
+      "explanation": "The derivative cycle is sin x → cos x → −sin x → −cos x → sin x. Thus f⁽⁴⁾(x)=sin x, and f⁽⁴⁾(π/2)=1. The superscript (4) denotes four differentiations, not a fourth power. A: The fourth derivative returns to sin x, whose value at π/2 is 1. B: This is the second derivative’s value at π/2. C: The first and third derivatives vanish there, but the fourth does not. D: The derivative order is not a multiplier applied to the function value."
+    },
+    {
+      "id": "calc-ab-3-6-004",
+      "prompt": "For f(x)=ln x on x>0, what is f″(2)?",
+      "options": [
+        "1/2",
+        "−1/4",
+        "1/4",
+        "−1/2"
+      ],
+      "correctIndex": 1,
+      "explanation": "First f′(x)=1/x=x⁻¹. Differentiating again gives f″(x)=−x⁻²=−1/x². At the positive input 2 this equals −1/4. A: This is the first derivative at 2. B: The second derivative is −1/x². C: This omits the negative sign when differentiating x⁻¹. D: This fails to increase the reciprocal power on the second derivative."
+    },
+    {
+      "id": "calc-ab-3-6-005",
+      "prompt": "If y=x eˣ, what is d²y/dx² at x=0?",
+      "options": [
+        "1",
+        "0",
+        "2",
+        "3"
+      ],
+      "correctIndex": 2,
+      "explanation": "The product rule gives y′=eˣ+x eˣ=(x+1)eˣ. Apply the product rule again: y″=eˣ+(x+1)eˣ=(x+2)eˣ. Therefore y″(0)=2. A: This is y′(0), not y″(0). B: This is the original function value at 0. C: After two differentiations y″=(x+2)eˣ, giving 2 at 0. D: This would be the third derivative’s value at 0."
+    },
+    {
+      "id": "calc-ab-3-6-006",
+      "prompt": "Suppose f′(x)=(x²+1)³ for all real x. What is f″(1)?",
+      "options": [
+        "8",
+        "12",
+        "48",
+        "24"
+      ],
+      "correctIndex": 3,
+      "explanation": "The second derivative is the derivative of the supplied f′. The chain rule gives f″(x)=3(x²+1)²·2x=6x(x²+1)². At 1 this is 6·1·4=24; the original f need not be recovered. A: This evaluates the supplied first derivative at 1 without differentiating it. B: This omits the inner quadratic’s factor 2. C: This incorrectly retains the outer exponent 3 instead of lowering it to 2. D: Differentiate the given first derivative with the chain rule: 6x(x²+1)²."
+    },
+    {
+      "id": "calc-ab-3-6-007",
+      "prompt": "A twice-differentiable branch of x²+y²=25 passes through (3,4). What is d²y/dx² at that point?",
+      "options": [
+        "−25/64",
+        "−3/4",
+        "25/64",
+        "−1/4"
+      ],
+      "correctIndex": 0,
+      "explanation": "First y′=−x/y=−3/4. Differentiating the first equation again gives 2+2(y′)²+2y y″=0. Hence y″=−[1+(y′)²]/y=−(1+9/16)/4=−25/64. A: Differentiating 2x+2yy′=0 gives 2+2(y′)²+2yy″=0. B: This is the first derivative at the point. C: This loses the negative sign when isolating y″. D: This incorrectly treats y as constant when differentiating the first-derivative expression −x/y."
+    },
+    {
+      "id": "calc-ab-3-6-008",
+      "prompt": "Let f(x)=x|x| on the real numbers. Which statement about f″(0) is correct?",
+      "options": [
+        "It equals 0 because f′(0)=0.",
+        "It does not exist because f′(x)=2|x| has unequal one-sided slopes at 0.",
+        "It equals 2 because f(x)=x² for x>0.",
+        "It equals −2 because f(x)=−x² for x<0."
+      ],
+      "correctIndex": 1,
+      "explanation": "For x>0, f=x² and f′=2x; for x<0, f=−x² and f′=−2x. Directly f′(0)=lim(h→0)|h|=0. Thus f′=2|x| everywhere, whose slopes at 0 are −2 from the left and 2 from the right. No second derivative exists there. A: The value of the first derivative does not determine its own derivative. B: The first derivative exists at 0, but it has a corner there. C: This uses only the right-hand behavior. D: This uses only the left-hand behavior."
+    },
+    {
+      "id": "calc-ab-3-6-009",
+      "prompt": "For f(x)=1/x on x≠0, what is f‴(1)?",
+      "options": [
+        "6",
+        "2",
+        "−6",
+        "−1"
+      ],
+      "correctIndex": 2,
+      "explanation": "Apply the power rule repeatedly to x⁻¹. It gives f′=−x⁻², f″=2x⁻³ and f‴=−6x⁻⁴. Evaluating at the allowed input 1 yields −6. A: This loses the alternating negative sign at the third step. B: This is the second derivative at 1. C: Successive derivatives are −x⁻², 2x⁻³ and −6x⁻⁴. D: This is the first derivative at 1."
+    },
+    {
+      "id": "calc-ab-3-6-010",
+      "prompt": "For y=x³ at x=1, which pair is (d²y/dx², (dy/dx)²)?",
+      "options": [
+        "(9, 6)",
+        "(6, 6)",
+        "(9, 9)",
+        "(6, 9)"
+      ],
+      "correctIndex": 3,
+      "explanation": "First y′=3x² and then y″=6x. At x=1, y″=6, whereas (y′)²=(3)²=9. The notation d²y/dx² denotes two differentiations, not a numerical square of dy/dx. A: This interchanges the two operations. B: This incorrectly treats squaring the first derivative as differentiating it. C: This replaces the second derivative by the square of the first. D: The second derivative is 6x, while the square of the first derivative is (3x²)²."
+    },
+    {
+      "id": "calc-ab-3-6-011",
+      "prompt": "Angles are in radians. If y=arctan x, what is y″(1)?",
+      "options": [
+        "−1/2",
+        "1/2",
+        "0",
+        "−1/4"
+      ],
+      "correctIndex": 0,
+      "explanation": "The first derivative is y′=1/(1+x²). Apply the chain rule to its reciprocal form: y″=−(1+x²)⁻²·2x=−2x/(1+x²)². At 1 this gives −2/4=−1/2. A: Differentiating (1+x²)⁻¹ gives −2x/(1+x²)², which is −1/2 at 1. B: This is the first derivative at 1. C: The first derivative is not locally constant near 1. D: This is the negative square of y′(1), which is a different operation."
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 3,
+  "topicId": "topic-3-5",
+  "questions": [
+    {
+      "id": "calc-ab-3-5-001",
+      "prompt": "Which procedure and result correctly differentiate F(x)=x(x²+1)³?",
+      "options": [
+        "Multiply factor derivatives: F′=6x(x²+1)².",
+        "Use product and chain rules: F′=(x²+1)³+6x²(x²+1)².",
+        "Differentiate only the outer cube: F′=3(x²+1)².",
+        "Use only the first-factor contribution: F′=(x²+1)³."
+      ],
+      "correctIndex": 1,
+      "explanation": "The outermost operation is multiplication, so begin with the product rule. Differentiating the second factor then requires the chain rule: d[(x²+1)³]/dx=6x(x²+1)². Thus F′=(x²+1)³+6x²(x²+1)². A: A product derivative is not the product of its factor derivatives. B: Differentiate each factor in turn, applying the chain rule inside the second factor. C: This omits the factor x and the inner quadratic rate. D: The second factor varies and contributes another term."
+    },
+    {
+      "id": "calc-ab-3-5-002",
+      "prompt": "For f(x)=(x²−1)/(x−1) on its original domain, which procedure and conclusion are valid?",
+      "options": [
+        "Cancel first and assign f′(1)=1 to the original function.",
+        "Divide numerator and denominator derivatives to get f′=2x.",
+        "Factor and cancel for x≠1 to get f=x+1, then f′=1 only on that original domain.",
+        "The quotient rule cannot be used because a simpler form exists."
+      ],
+      "correctIndex": 2,
+      "explanation": "Factoring x²−1=(x−1)(x+1) gives f=x+1 for x≠1. Differentiate that equivalent formula on the original domain to obtain f′=1. The quotient rule is also valid there and gives the same result. A: The original function is undefined at 1, so its derivative there is not restored by simplification. B: Taking a quotient of derivatives is not a valid differentiation rule. C: Algebraic simplification is valid away from the original denominator zero and preserves the missing point. D: Both quotient-rule calculation and domain-aware simplification are valid approaches."
+    },
+    {
+      "id": "calc-ab-3-5-003",
+      "prompt": "Angles are in radians and 0<x<π. Which procedure correctly differentiates L(x)=ln(sin x)?",
+      "options": [
+        "Differentiate the outer function only: L′=1/sin x.",
+        "Replace the logarithm by cosine: L′=−sin x/cos x.",
+        "Differentiate only the inner sine: L′=cos x.",
+        "Apply the chain rule: L′=cos x/sin x."
+      ],
+      "correctIndex": 3,
+      "explanation": "The stated interval makes sin x positive, so the real logarithm is defined. The chain rule gives L′=[1/(sin x)]cos x=cos x/sin x. There is composition rather than a product of ln x and sin x. A: This omits the inner factor cos x. B: This is a different logarithmic composition’s derivative, not the stated function. C: This omits the logarithm’s reciprocal factor. D: The outer logarithm derivative is multiplied by the inner sine derivative."
+    },
+    {
+      "id": "calc-ab-3-5-004",
+      "prompt": "Angles are in radians. A student must differentiate sin²x+cos²x. Which statement about procedure selection is correct?",
+      "options": [
+        "Either simplify the sum to 1 first or differentiate both squares with the chain rule; both give 0.",
+        "Only the chain rule is valid; trigonometric identities cannot be used before differentiation.",
+        "Simplifying to 1 gives derivative 1.",
+        "Differentiating each square gives 2sin x+2cos x, so no identity applies."
+      ],
+      "correctIndex": 0,
+      "explanation": "Using the Pythagorean identity first produces the constant 1 and derivative 0. Alternatively, the chain rule gives 2sin x cos x+2cos x(−sin x)=0. Both procedures preserve the same function on all real inputs. A: The identity and the correctly applied derivative rules are compatible. B: Equivalent formulas on the same domain have equal derivatives. C: The derivative of the constant 1 is zero. D: Each squared trigonometric function also requires its inner derivative."
+    },
+    {
+      "id": "calc-ab-3-5-005",
+      "prompt": "Which procedure and result correctly differentiate R(x)=√(1+x⁴)?",
+      "options": [
+        "Use only the outer rule: R′=1/(2√(1+x⁴)).",
+        "Use the chain rule: R′=2x³/√(1+x⁴).",
+        "Use R′=4x³/√(1+x⁴).",
+        "Use R′=2x³√(1+x⁴)."
+      ],
+      "correctIndex": 1,
+      "explanation": "The radicand 1+x⁴ is positive everywhere. Applying the square-root chain rule gives R′=4x³/[2√(1+x⁴)]=2x³/√(1+x⁴). No quotient rule is needed for the original function. A: This omits the inner derivative. B: Multiply 1/(2√(1+x⁴)) by the inner rate 4x³ and simplify. C: This loses the factor 1/2 from the square-root derivative. D: This multiplies by the radical instead of dividing by it."
+    },
+    {
+      "id": "calc-ab-3-5-006",
+      "prompt": "Angles are in radians. Which procedure and result correctly differentiate Q(x)=(arctan x)/(1+x²)?",
+      "options": [
+        "Divide separate derivatives: Q′=1/[2x(1+x²)].",
+        "Use addition in the quotient numerator: Q′=[1+2x arctan x]/(1+x²)².",
+        "Use the quotient rule: Q′=[1−2x arctan x]/(1+x²)².",
+        "Leave the denominator unsquared: Q′=[1−2x arctan x]/(1+x²)."
+      ],
+      "correctIndex": 2,
+      "explanation": "The outermost operation is division. The numerator derivative is 1/(1+x²), and the denominator derivative is 2x. Thus Q′={[(1/(1+x²))(1+x²)]−2x arctan x}/(1+x²)², which simplifies as stated. A: A quotient of derivatives is not the derivative of a quotient. B: The quotient rule requires subtraction. C: The numerator derivative multiplied by the denominator is 1, then subtract the denominator contribution. D: The original quotient rule needs the denominator squared."
+    },
+    {
+      "id": "calc-ab-3-5-007",
+      "prompt": "Let f(x)=x+eˣ, g=f⁻¹ and r(x)=1/f(x) where defined. Which pair is (g′(1), r′(0))?",
+      "options": [
+        "(−2, 1/2)",
+        "(2, 2)",
+        "(1/2, 1/2)",
+        "(1/2, −2)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Here f(0)=1 and f′(0)=1+1=2. Since f′>0 everywhere, f is one-to-one and g′(1)=1/f′(0)=1/2. Separately, r′(0)=−f′(0)/[f(0)]²=−2. Inverse and reciprocal are different operations. A: This interchanges inverse-function and reciprocal-function rules. B: This retains the original slope for both unrelated operations. C: This applies the inverse-function rule to the reciprocal function as well. D: The inverse uses reciprocal slope at f(0)=1; the reciprocal function uses −f′/f² at 0."
+    },
+    {
+      "id": "calc-ab-3-5-008",
+      "prompt": "Angles are in radians. Which derivative equation correctly follows from x²+sin(xy)=1 when y is a differentiable function of x?",
+      "options": [
+        "2x+cos(xy)[y+x(dy/dx)]=0.",
+        "2x+cos(xy)(dy/dx)=0.",
+        "2x+sin(xy)[y+x(dy/dx)]=0.",
+        "2x+cos(xy)[1+dy/dx]=1."
+      ],
+      "correctIndex": 0,
+      "explanation": "The sine argument xy changes with x through both factors. Its derivative is y+x y′. Multiplying by the outer derivative cos(xy) and adding 2x gives 2x+cos(xy)(y+x y′)=0, since the right side is constant. A: The chain rule differentiates sine and the product rule differentiates its inner argument xy. B: This omits the product structure of the inner argument xy. C: This fails to differentiate the outer sine to cosine. D: This uses the wrong derivative for xy and differentiates the constant incorrectly."
+    },
+    {
+      "id": "calc-ab-3-5-009",
+      "prompt": "Angles are in radians. Which procedure and result correctly differentiate P(x)=e^(x²−1)cos x?",
+      "options": [
+        "Differentiate only the exponential factor: P′=2x e^(x²−1)cos x.",
+        "Use product and chain rules: P′=e^(x²−1)[2x cos x−sin x].",
+        "Omit the exponential’s inner rate: P′=e^(x²−1)[cos x−sin x].",
+        "Change the cosine derivative sign: P′=e^(x²−1)[2x cos x+sin x]."
+      ],
+      "correctIndex": 1,
+      "explanation": "The product rule gives [2x e^(x²−1)]cos x+e^(x²−1)(−sin x). Factoring out the exponential gives e^(x²−1)[2x cos x−sin x]. The chain rule is needed only within the exponential factor. A: This omits the derivative contribution from cosine. B: The exponential contribution requires the inner factor 2x, and the cosine contribution is negative sine. C: The inner quadratic contributes 2x, not 1. D: The cosine derivative is negative sine."
+    },
+    {
+      "id": "calc-ab-3-5-010",
+      "prompt": "For f(x)=(x²+1)², which statement correctly compares expanding first with using the chain rule?",
+      "options": [
+        "Only expansion is valid because the outer power is an integer.",
+        "Only the chain rule is valid because expansion changes the function.",
+        "Both are valid and give f′(x)=4x(x²+1).",
+        "Both are valid but give different derivatives of the same function."
+      ],
+      "correctIndex": 2,
+      "explanation": "Expansion gives x⁴+2x²+1, with derivative 4x³+4x. The chain rule gives 2(x²+1)·2x=4x(x²+1). These are the same derivative, so either procedure is valid. A: The chain rule applies to differentiable composites, including integer powers. B: Correct algebraic expansion preserves the function. C: Expansion gives 4x³+4x, which factors to the chain-rule result. D: Equivalent differentiable formulas have the same derivative at each input."
+    },
+    {
+      "id": "calc-ab-3-5-011",
+      "prompt": "For x>0, which procedure and result correctly differentiate L(x)=ln(x√(1+x²))?",
+      "options": [
+        "Split the logarithm but omit an inner rate: L′=1/x+1/(1+x²).",
+        "Differentiate the logarithm only: L′=1/[x√(1+x²)].",
+        "Use a difference of logarithms: L′=1/x−x/(1+x²).",
+        "Use logarithm identities first: L=ln x+(1/2)ln(1+x²), so L′=1/x+x/(1+x²)."
+      ],
+      "correctIndex": 3,
+      "explanation": "For x>0, both factors inside the logarithm are positive. Therefore L=ln x+ln√(1+x²)=ln x+(1/2)ln(1+x²). Differentiate to obtain 1/x+(1/2)(2x)/(1+x²)=1/x+x/(1+x²). A: The second term must include the factor x after simplifying (1/2)(2x). B: This omits the entire derivative of the logarithm’s input. C: The original input is a product, so its logarithm splits into a sum. D: Positivity permits the log identities, then each resulting term is differentiated with its inner rate."
+    }
+  ]
+}

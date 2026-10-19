@@ -247,3 +247,12 @@ test('inverse trig numerical models enforce real domains and negative arccosine 
   const wrong=structuredClone(batch.questions[1]);wrong.correctIndex=wrong.options.indexOf('1/√(1−x²)');
   assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[1]),/derivative function key/);
 });
+test('higher-order models distinguish derivative orders and implicit second-derivative signs',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-3-6');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-3-6.json','utf8'));
+  verifyCalculusQuestion(batch.questions[1],qa.questions[1]);
+  const order=structuredClone(qa.questions[1]);order.check.order=2;
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[1],order),/higher derivative key/);
+  const wrong=structuredClone(batch.questions[6]);wrong.correctIndex=wrong.options.indexOf('25/64');
+  assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[6]),/higher derivative key/);
+});

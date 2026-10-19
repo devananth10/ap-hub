@@ -117,7 +117,16 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='inverse-slope') {
+  if (review.check.type==='higher-derivative') {
+    const check=review.check,h=check.step||0.001;assert.ok(h>0&&Number.isFinite(h)&&[2,3].includes(check.order));
+    const rate=x=>{const f=a=>evaluateExpression(check.expression,a);return check.order===2?(f(x+h)-2*f(x)+f(x-h))/(h*h):(f(x+2*h)-2*f(x+h)+2*f(x-h)-f(x-2*h))/(2*h*h*h);};
+    const matches=question.options.map(option=>{
+      if(check.candidates){const candidate=check.candidates[option];assert.notEqual(candidate,undefined);assert.ok(check.samplePoints.length>=3);return check.samplePoints.every(x=>Math.abs(evaluateExpression(candidate,x)-rate(x))<check.tolerance);}
+      return Math.abs(numericalOption(option)-rate(check.inputX))<check.tolerance;
+    });
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique higher derivative');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' higher derivative key');
+  } else if (review.check.type==='inverse-slope') {
     const check=review.check,h=check.step||0.00001,a=check.originalInput;
     assert.ok(Math.abs(evaluateExpression(check.expression,a)-check.inverseInput)<1e-9,question.id+' inverse input mismatch');
     const slope=(evaluateExpression(check.expression,a+h)-evaluateExpression(check.expression,a-h))/(2*h);
