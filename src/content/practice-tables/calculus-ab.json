@@ -1082,5 +1082,26 @@
         "10"
       ]
     ]
+  },
+  "calc-ab-6-4-005": {
+    "caption": "Selected values of a continuous function r; no interpolation rule is specified",
+    "headers": [
+      "t",
+      "r(t)"
+    ],
+    "rows": [
+      [
+        "2",
+        "5"
+      ],
+      [
+        "3",
+        "1"
+      ],
+      [
+        "4",
+        "−2"
+      ]
+    ]
   }
 }

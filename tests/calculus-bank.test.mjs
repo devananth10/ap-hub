@@ -8,7 +8,7 @@ import {validateCalculusBank} from '../scripts/check-calculus-bank.mjs';
 import {verifyCalculusQuestion,figureLimit,evaluateExpression,numericalOption,rationalBehavior,rationalPoleSides,rationalEndLimit,intervalOption,domainMatches} from '../scripts/check-calculus-math.mjs';
 import {practiceFigures} from '../src/lib/practice-figures.ts';
 import {completeCandidateRows} from '../scripts/check-calculus-math.mjs';
-import {piecewiseArea,riemannApproximation} from '../scripts/check-calculus-math.mjs';
+import {piecewiseArea,riemannApproximation,integralValue} from '../scripts/check-calculus-math.mjs';
 test('official Calculus AB inventory keeps all eight old IDs and excludes BC-only gaps',()=>{
   const course=courses.find(course=>course.id==='calculus-ab');
   const topics=course.units.flatMap(unit=>unit.topics);
@@ -370,4 +370,22 @@ test('graph midpoint sampling and rounded analytic sums reject alternate or equi
   assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[9]),/graph key/);
   const duplicate=structuredClone(batch.questions[8]);duplicate.options[(duplicate.correctIndex+1)%4]='4.6500';
   assert.throws(()=>verifyCalculusQuestion(duplicate,qa.questions[8]),/unique Riemann result/);
+});
+test('finite original-integrand quadrature preserves reversed and zero-width bounds',()=>{
+  assert.ok(Math.abs(integralValue(['pow','x',3],2,-1)+15/4)<1e-12);
+  assert.equal(integralValue(['exp','x'],2,2),0);
+  assert.ok(Math.abs(integralValue(['exp','x'],0,1)-(Math.E-1))<1e-10);
+  assert.ok(Math.abs(integralValue(['cos','x'],0,Math.PI))<1e-12);
+  assert.throws(()=>integralValue(['ln','x'],-1,2),/Invalid real arithmetic domain/);
+});
+test('original accumulation differences reject missing chain factors and negative-input sign changes',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-6-4');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-6-4.json','utf8'));
+  verifyCalculusQuestion(batch.questions[1],qa.questions[1]);
+  const wrong=structuredClone(batch.questions[1]);wrong.correctIndex=wrong.options.indexOf('cos(x²)');
+  assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[1]),/accumulation derivative key/);
+  const positive=structuredClone(batch.questions[8]);positive.correctIndex=positive.options.indexOf('12');
+  assert.throws(()=>verifyCalculusQuestion(positive,qa.questions[8]),/accumulation derivative key/);
+  const bad=structuredClone(qa.questions[2]);bad.check.lower=5;bad.check.upper='x';
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[2],bad),/accumulation derivative key/);
 });

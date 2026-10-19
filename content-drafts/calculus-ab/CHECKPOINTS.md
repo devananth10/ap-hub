@@ -37,4 +37,6 @@ Repository: `devananth10/ap-hub`, branch `main`. Each entry below was saved with
 
 | `c1beb239184230fd08324071d25b083149674760` | 561 | Unit 5 complete, 86 tests, build/typecheck, full route/preservation/stability checks and mobile implicit-relation session; verified GitHub receipt |
 
+| `b0fd4dfbc35fca68cbd7e09bbd7304b162931c33` | 583 | Topics 6.1–6.2, 89 tests, build/typecheck, full route/preservation/stability checks and mobile graph/table session; verified GitHub receipt |
+
 These rows record previously verified receipts. PROGRESS.json records subsequent locally validated publication; Git log and the verified remote branch provide later receipts. Do not invent a future commit SHA inside progress files before committing.

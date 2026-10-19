@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 6,
+  "topicId": "topic-6-4",
+  "questions": [
+    {
+      "id": "calc-ab-6-4-001",
+      "prompt": "Let H(x)=∫ from 1 to x of (3t²−2) dt. What is H′(2)?",
+      "options": [
+        "10",
+        "12",
+        "0",
+        "6"
+      ],
+      "correctIndex": 0,
+      "explanation": "The integrand is continuous, so the Fundamental Theorem of Calculus gives H′(x)=3x²−2. At x=2 this is 3·4−2=10. The theorem differentiates the accumulated area; it does not ask for the derivative of the integrand itself. A: The derivative is the original integrand evaluated at the variable upper limit x=2. B: This differentiates the integrand again instead of differentiating the accumulation. C: A fixed lower bound does not make the upper-limit accumulation constant. D: This drops the square and uses 3·2 instead of 3·2²−2."
+    },
+    {
+      "id": "calc-ab-6-4-002",
+      "prompt": "If F(x)=∫ from 0 to x² of cos t dt, which formula is F′(x)?",
+      "options": [
+        "cos(x²)",
+        "2x cos(x²)",
+        "2x sin(x²)",
+        "2x cos x"
+      ],
+      "correctIndex": 1,
+      "explanation": "Define A(u)=∫ from 0 to u of cos t dt, so A′(u)=cos u. Then F(x)=A(x²), giving F′(x)=A′(x²)·2x=2x cos(x²). Both the evaluated integrand and the derivative of the upper limit are needed. A: This omits the derivative of the upper limit. B: FTC evaluates the integrand at x² and the chain rule contributes 2x. C: This replaces the integrand with the wrong trigonometric function. D: This omits the squared input inside the cosine."
+    },
+    {
+      "id": "calc-ab-6-4-003",
+      "prompt": "Let G(x)=∫ from x to 5 of √(1+t²) dt. Which expression is G′(x)?",
+      "options": [
+        "√(1+x²)",
+        "0",
+        "−√(1+x²)",
+        "−x/√(1+x²)"
+      ],
+      "correctIndex": 2,
+      "explanation": "Reverse the bounds: G(x)=−∫ from 5 to x of √(1+t²) dt. FTC then gives G′(x)=−√(1+x²), because the integrand is continuous for every real t. Moving the lower limit upward removes positive area, which also explains the negative sign. A: This treats the variable lower bound as an upper bound. B: Only the upper bound is fixed; the lower bound still varies. C: A variable lower limit introduces a minus sign. D: This differentiates the integrand instead of applying FTC to the accumulation."
+    },
+    {
+      "id": "calc-ab-6-4-004",
+      "prompt": "Let P(x)=∫ from 2 to x of e^(−t²) dt. Which pair gives (P(2), P′(2))?",
+      "options": [
+        "(0, 0)",
+        "(e^(−4), 0)",
+        "(0, −e^(−4))",
+        "(0, e^(−4))"
+      ],
+      "correctIndex": 3,
+      "explanation": "At x=2 the integration interval has zero length, so P(2)=0. The continuous integrand gives P′(x)=e^(−x²), and therefore P′(2)=e^(−4)>0. Function value and instantaneous accumulation rate are different quantities. A: A zero accumulated value at the base point does not force zero derivative. B: This swaps the accumulation value with the integrand value. C: The variable bound is the upper limit, so no leading minus sign appears. D: Equal integration bounds give zero value, while the local slope is the positive integrand value."
+    },
+    {
+      "id": "calc-ab-6-4-005",
+      "prompt": "The table below contains selected values of a continuous r. If A(x)=∫ from 3 to x of r(t) dt, what is A′(4)?",
+      "options": [
+        "−2",
+        "1",
+        "0",
+        "4"
+      ],
+      "correctIndex": 0,
+      "explanation": "Continuity of r allows A′(x)=r(x). At x=4, the table gives r(4)=−2, so A′(4)=−2. The table does not need to determine the full area from 3 to 4 in order to determine this local derivative. A: FTC reads the integrand at the current upper input 4. B: This is r(3), evaluated at the fixed lower bound instead. C: The equal-bound value A(3)=0 does not determine the derivative at 4. D: This sums unrelated sampled rates rather than evaluating r(4)."
+    },
+    {
+      "id": "calc-ab-6-4-006",
+      "prompt": "For A(x)=∫ from 0 to 3x+1 of ln(1+t²) dt, which formula is A′(x)?",
+      "options": [
+        "ln(1+(3x+1)²)",
+        "3 ln(1+(3x+1)²)",
+        "3/(1+(3x+1)²)",
+        "ln(1+x²)"
+      ],
+      "correctIndex": 1,
+      "explanation": "The logarithm is defined and continuous because 1+t²>0 for all real t. FTC followed by the chain rule gives A′(x)=ln(1+(3x+1)²)·3. There is no need to find an antiderivative of the original logarithm. A: This omits the chain factor 3. B: The integrand is evaluated at 3x+1 and multiplied by the upper-limit derivative 3. C: This replaces the logarithm integrand by an unrelated reciprocal. D: This ignores both the transformed upper input and its derivative."
+    },
+    {
+      "id": "calc-ab-6-4-007",
+      "prompt": "Let H(x)=∫ from 0 to x of |t| dt. Which statement about H′ is correct?",
+      "options": [
+        "H′(x)=x for every real x.",
+        "H′(0) does not exist because |t| has a corner.",
+        "H′(x)=|x| for every real x, including x=0.",
+        "H′(x)=1 for x>0 and −1 for x<0."
+      ],
+      "correctIndex": 2,
+      "explanation": "The function |t| is continuous everywhere. Thus FTC applies at every x and gives H′(x)=|x|, including H′(0)=0. The integrand’s corner prevents differentiating the integrand there, but it does not prevent differentiating its accumulation once. A: This gives the wrong derivative on the negative side. B: FTC requires continuity of the integrand, not its differentiability. C: The integrand is continuous even though it is not differentiable at zero. D: This differentiates |x| instead of the accumulated function."
+    },
+    {
+      "id": "calc-ab-6-4-008",
+      "prompt": "For H(x)=∫ from sin x to 2 of eᵗ dt, with x in radians, which expression is H′(x)?",
+      "options": [
+        "e^(sin x) cos x",
+        "−eˣ",
+        "−e^(sin x)",
+        "−e^(sin x) cos x"
+      ],
+      "correctIndex": 3,
+      "explanation": "Write H(x)=−∫ from 2 to sin x of eᵗ dt. FTC and the chain rule give H′(x)=−e^(sin x)·cos x. The fixed endpoint 2 affects the function value but contributes no derivative term. A: This loses the sign from the lower limit. B: This ignores the transformed lower input in the evaluated integrand and its chain factor. C: This omits the derivative cos x of the lower limit. D: The variable lower limit supplies a minus sign and its derivative is cos x."
+    },
+    {
+      "id": "calc-ab-6-4-009",
+      "prompt": "Let B(x)=∫ from 1 to x² of (t−1) dt. What is B′(−2)?",
+      "options": [
+        "−12",
+        "12",
+        "3",
+        "−3"
+      ],
+      "correctIndex": 0,
+      "explanation": "FTC and the chain rule give B′(x)=(x²−1)·2x. At x=−2, the evaluated integrand is 3 and the chain factor is −4. Therefore B′(−2)=3(−4)=−12. A squared upper bound can decrease as a negative input increases. A: The upper-limit derivative is −4 and the integrand there is 4−1=3. B: This drops the negative sign of 2x at x=−2. C: This gives only the endpoint integrand and omits the chain factor. D: This evaluates t−1 at x rather than at the upper bound x²."
+    },
+    {
+      "id": "calc-ab-6-4-010",
+      "prompt": "If f is continuous and F(x)=7+∫ from 2 to x of f(t) dt, which formula is F′(x)?",
+      "options": [
+        "7f(x)",
+        "f(x)",
+        "7+f(x)",
+        "f′(x)"
+      ],
+      "correctIndex": 1,
+      "explanation": "Differentiate the constant term and accumulation separately. The constant contributes zero, while FTC gives the derivative f(x) for the variable-upper-limit integral. Thus F′(x)=f(x). The initial value is F(2)=7, which shifts all accumulated values without changing their rates. A: Adding an initial value does not multiply the rate. B: The constant initial value has zero derivative and the accumulation derivative is f(x). C: The derivative of the constant 7 is zero. D: The theorem does not require f itself to be differentiable."
+    },
+    {
+      "id": "calc-ab-6-4-011",
+      "prompt": "Let f(t)=1 for t<0 and f(t)=3 for t≥0, and let K(x)=∫ from 0 to x of f(t) dt. What is K′(0)?",
+      "options": [
+        "3",
+        "1",
+        "Does not exist: the left difference quotient is 1 and the right is 3.",
+        "2"
+      ],
+      "correctIndex": 2,
+      "explanation": "For x<0 the reversed integral is K(x)=x, and for x>0 it is K(x)=3x; K(0)=0. Hence K(h)/h is 1 on the left and 3 on the right. The two-sided derivative does not exist. The continuity hypothesis needed for FTC at zero is absent. A: The isolated value f(0)=3 does not justify FTC at a discontinuity. B: This uses only the left-hand slope. C: The accumulation has unequal one-sided slopes at the jump in its integrand. D: Averaging unequal one-sided slopes does not create a derivative."
+    }
+  ]
+}

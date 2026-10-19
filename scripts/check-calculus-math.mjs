@@ -139,6 +139,13 @@ export function riemannApproximation(partition,method,value) {
     assert.ok(Number.isFinite(height),'Missing or invalid Riemann sample');return total+(b-a)*height;
   },0);
 }
+export function integralValue(expression,a,b) {
+  assert.ok(Number.isFinite(a)&&Number.isFinite(b),'Invalid finite integral bounds');
+  if(a===b)return 0;
+  const n=1024,h=(b-a)/n;let sum=evaluateExpression(expression,a)+evaluateExpression(expression,b);
+  for(let i=1;i<n;i++)sum+=(i%2?4:2)*evaluateExpression(expression,a+i*h);
+  return h*sum/3;
+}
 export function verifyCalculusQuestion(question, review) {
   assert.equal(review.questionId,question.id);
   assert.equal(review.optionReview.length,4);
@@ -146,7 +153,14 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='table-riemann'||review.check.type==='riemann-expression') {
+  if (review.check.type==='accumulation-derivative') {
+    const c=review.check,h=0.0001;
+    const accumulation=x=>integralValue(c.integrand,evaluateExpression(c.lower,x),evaluateExpression(c.upper,x));
+    const slope=x=>(accumulation(x+h)-accumulation(x-h))/(2*h);
+    const matches=question.options.map(option=>c.candidates?c.samplePoints.every(x=>Math.abs(evaluateExpression(c.candidates[option],x)-slope(x))<(c.tolerance??0.0001)):Math.abs(numericalOption(option)-slope(c.inputX))<(c.tolerance??0.0001));
+    if(c.candidates)assert.ok(c.samplePoints.length>=3,'Accumulation formulas need varied input checks');
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique accumulation derivative');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' accumulation derivative key');
+  } else if (review.check.type==='table-riemann'||review.check.type==='riemann-expression') {
     const c=review.check;
     const table=practiceTables[question.id];
     const value=x=>{

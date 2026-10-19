@@ -1,0 +1,488 @@
+{
+  "topicNumber": "6.4",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "58a526eb507ad701608b820dc1a8f17bee8752e62f82c41f815bd20a2f03afe4",
+  "scopeReview": "CED FUN-5.A.1–2: functions defined by definite integrals and FTC derivative at a continuous integrand, combined with already-developed chain rule for transformed bounds. Fixed versus moving endpoint roles, original domains and continuity hypotheses checked. No elementary antiderivative is assumed where unavailable; explicit forms are independent verification only.",
+  "varietyReview": "Polynomial accumulation slope, squared-upper-limit cosine chain, variable-lower radical, zero base value versus nonzero local slope, actual continuous-function table lookup, affine-upper logarithm chain, continuous nondifferentiable absolute-value integrand, sine lower limit with exponential, negative-input squared endpoint, additive initial constant and a discontinuous-integrand corner counterexample. Six original-integral numerical difference checks corroborate separate exact FTC/chain/short-interval arguments.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-6-4-001",
+      "independentReasoning": "A separate exact check uses an antiderivative: H(x)=x³−2x−(1−2)=x³−2x+1, whose derivative at 2 is 10. Original-integrand quadrature followed by a centered difference corroborates the slope independently of the stored answer.",
+      "optionReview": [
+        "The derivative is the original integrand evaluated at the variable upper limit x=2.",
+        "This differentiates the integrand again instead of differentiating the accumulation.",
+        "A fixed lower bound does not make the upper-limit accumulation constant.",
+        "This drops the square and uses 3·2 instead of 3·2²−2."
+      ],
+      "check": {
+        "type": "accumulation-derivative",
+        "integrand": [
+          "sub",
+          [
+            "mul",
+            3,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          2
+        ],
+        "lower": 1,
+        "upper": "x",
+        "inputX": 2
+      }
+    },
+    {
+      "questionId": "calc-ab-6-4-002",
+      "independentReasoning": "Independently the accumulated function is sin(x²)−sin 0=sin(x²); direct chain-rule differentiation gives the same formula. Original-integral numerical differences at negative and positive nonzero inputs check both the chain sign and inner argument.",
+      "optionReview": [
+        "This omits the derivative of the upper limit.",
+        "FTC evaluates the integrand at x² and the chain rule contributes 2x.",
+        "This replaces the integrand with the wrong trigonometric function.",
+        "This omits the squared input inside the cosine."
+      ],
+      "check": {
+        "type": "accumulation-derivative",
+        "integrand": [
+          "cos",
+          "x"
+        ],
+        "lower": 0,
+        "upper": [
+          "pow",
+          "x",
+          2
+        ],
+        "samplePoints": [
+          -1,
+          0.5,
+          1.5
+        ],
+        "candidates": {
+          "2x cos(x²)": [
+            "mul",
+            2,
+            "x",
+            [
+              "cos",
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ]
+          ],
+          "cos(x²)": [
+            "cos",
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          "2x sin(x²)": [
+            "mul",
+            2,
+            "x",
+            [
+              "sin",
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ]
+          ],
+          "2x cos x": [
+            "mul",
+            2,
+            "x",
+            [
+              "cos",
+              "x"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-6-4-003",
+      "independentReasoning": "For a small positive change h, G(x+h)−G(x) is minus the integral over [x,x+h]. Its quotient tends to −√(1+x²) by continuity. This direct short-interval argument independently establishes the sign without needing an antiderivative of the radical.",
+      "optionReview": [
+        "This treats the variable lower bound as an upper bound.",
+        "Only the upper bound is fixed; the lower bound still varies.",
+        "A variable lower limit introduces a minus sign.",
+        "This differentiates the integrand instead of applying FTC to the accumulation."
+      ],
+      "check": {
+        "type": "accumulation-derivative",
+        "integrand": [
+          "sqrt",
+          [
+            "add",
+            1,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ]
+        ],
+        "lower": "x",
+        "upper": 5,
+        "samplePoints": [
+          0.5,
+          1,
+          2
+        ],
+        "candidates": {
+          "0": 0,
+          "−√(1+x²)": [
+            "mul",
+            -1,
+            [
+              "sqrt",
+              [
+                "add",
+                1,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ]
+            ]
+          ],
+          "√(1+x²)": [
+            "sqrt",
+            [
+              "add",
+              1,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ]
+          ],
+          "−x/√(1+x²)": [
+            "div",
+            [
+              "mul",
+              -1,
+              "x"
+            ],
+            [
+              "sqrt",
+              [
+                "add",
+                1,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-6-4-004",
+      "independentReasoning": "At the base point, P(2+h)/h is the average of the continuous integrand on the short oriented interval from 2 to 2+h. Its limit is e^(−4), although P(2) itself is exactly zero. This argument works from either side and requires no elementary antiderivative.",
+      "optionReview": [
+        "A zero accumulated value at the base point does not force zero derivative.",
+        "This swaps the accumulation value with the integrand value.",
+        "The variable bound is the upper limit, so no leading minus sign appears.",
+        "Equal integration bounds give zero value, while the local slope is the positive integrand value."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "(0, e^(−4))"
+      }
+    },
+    {
+      "questionId": "calc-ab-6-4-005",
+      "independentReasoning": "Use the original difference A(4+h)−A(4)=∫ from 4 to 4+h of r(t) dt. Dividing by h and using continuity gives r(4), independently separating the local rate from unknown accumulated area. The fixed-base value r(3)=1 is not the relevant row.",
+      "optionReview": [
+        "FTC reads the integrand at the current upper input 4.",
+        "This is r(3), evaluated at the fixed lower bound instead.",
+        "The equal-bound value A(3)=0 does not determine the derivative at 4.",
+        "This sums unrelated sampled rates rather than evaluating r(4)."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "−2"
+      },
+      "tableSha256": "ae4499d3ece891bc0d068e89496ecf432e46a954207497682299b5d526f4117b"
+    },
+    {
+      "questionId": "calc-ab-6-4-006",
+      "independentReasoning": "View a small input increment h as moving the upper endpoint by exactly 3h. The added integral divided by h tends to 3 times the endpoint integrand, establishing both the factor and argument independently. Quadrature differences at several original inputs corroborate this short-interval argument.",
+      "optionReview": [
+        "This omits the chain factor 3.",
+        "The integrand is evaluated at 3x+1 and multiplied by the upper-limit derivative 3.",
+        "This replaces the logarithm integrand by an unrelated reciprocal.",
+        "This ignores both the transformed upper input and its derivative."
+      ],
+      "check": {
+        "type": "accumulation-derivative",
+        "integrand": [
+          "ln",
+          [
+            "add",
+            1,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ]
+        ],
+        "lower": 0,
+        "upper": [
+          "add",
+          [
+            "mul",
+            3,
+            "x"
+          ],
+          1
+        ],
+        "samplePoints": [
+          -0.2,
+          0,
+          0.5
+        ],
+        "candidates": {
+          "3 ln(1+(3x+1)²)": [
+            "mul",
+            3,
+            [
+              "ln",
+              [
+                "add",
+                1,
+                [
+                  "pow",
+                  [
+                    "add",
+                    [
+                      "mul",
+                      3,
+                      "x"
+                    ],
+                    1
+                  ],
+                  2
+                ]
+              ]
+            ]
+          ],
+          "ln(1+(3x+1)²)": [
+            "ln",
+            [
+              "add",
+              1,
+              [
+                "pow",
+                [
+                  "add",
+                  [
+                    "mul",
+                    3,
+                    "x"
+                  ],
+                  1
+                ],
+                2
+              ]
+            ]
+          ],
+          "3/(1+(3x+1)²)": [
+            "div",
+            3,
+            [
+              "add",
+              1,
+              [
+                "pow",
+                [
+                  "add",
+                  [
+                    "mul",
+                    3,
+                    "x"
+                  ],
+                  1
+                ],
+                2
+              ]
+            ]
+          ],
+          "ln(1+x²)": [
+            "ln",
+            [
+              "add",
+              1,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-6-4-007",
+      "independentReasoning": "Direct geometry gives H(x)=x²/2 when x≥0 and −x²/2 when x<0, because negative upper bounds reverse orientation. Differentiate each side and compute H(h)/h=|h|/2→0 at the join. This independently verifies the whole derivative statement.",
+      "optionReview": [
+        "This gives the wrong derivative on the negative side.",
+        "FTC requires continuity of the integrand, not its differentiability.",
+        "The integrand is continuous even though it is not differentiable at zero.",
+        "This differentiates |x| instead of the accumulated function."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "H′(x)=|x| for every real x, including x=0."
+      }
+    },
+    {
+      "questionId": "calc-ab-6-4-008",
+      "independentReasoning": "An exact independent evaluation is H(x)=e²−e^(sin x), whose derivative is the selected formula. Original-integral numerical differences at varied negative and positive inputs also check the moving-lower-bound sign and the cosine chain factor.",
+      "optionReview": [
+        "This loses the sign from the lower limit.",
+        "This ignores the transformed lower input in the evaluated integrand and its chain factor.",
+        "This omits the derivative cos x of the lower limit.",
+        "The variable lower limit supplies a minus sign and its derivative is cos x."
+      ],
+      "check": {
+        "type": "accumulation-derivative",
+        "integrand": [
+          "exp",
+          "x"
+        ],
+        "lower": [
+          "sin",
+          "x"
+        ],
+        "upper": 2,
+        "samplePoints": [
+          -0.5,
+          0.25,
+          1
+        ],
+        "candidates": {
+          "−e^(sin x) cos x": [
+            "mul",
+            -1,
+            [
+              "exp",
+              [
+                "sin",
+                "x"
+              ]
+            ],
+            [
+              "cos",
+              "x"
+            ]
+          ],
+          "e^(sin x) cos x": [
+            "mul",
+            [
+              "exp",
+              [
+                "sin",
+                "x"
+              ]
+            ],
+            [
+              "cos",
+              "x"
+            ]
+          ],
+          "−eˣ": [
+            "mul",
+            -1,
+            [
+              "exp",
+              "x"
+            ]
+          ],
+          "−e^(sin x)": [
+            "mul",
+            -1,
+            [
+              "exp",
+              [
+                "sin",
+                "x"
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-6-4-009",
+      "independentReasoning": "Independently evaluate B(x)=(x²−1)²/2. Differentiating this explicit original accumulation gives 2x(x²−1), again −12 at −2. Numerical integral differences around that negative input corroborate the sign rather than replacing 2x by its magnitude.",
+      "optionReview": [
+        "The upper-limit derivative is −4 and the integrand there is 4−1=3.",
+        "This drops the negative sign of 2x at x=−2.",
+        "This gives only the endpoint integrand and omits the chain factor.",
+        "This evaluates t−1 at x rather than at the upper bound x²."
+      ],
+      "check": {
+        "type": "accumulation-derivative",
+        "integrand": [
+          "sub",
+          "x",
+          1
+        ],
+        "lower": 1,
+        "upper": [
+          "pow",
+          "x",
+          2
+        ],
+        "inputX": -2
+      }
+    },
+    {
+      "questionId": "calc-ab-6-4-010",
+      "independentReasoning": "Subtract F(x+h)−F(x); the two copies of 7 cancel exactly, leaving the short-interval integral from x to x+h. Continuity makes its quotient tend to f(x). This independent increment argument also shows why no derivative of f is required.",
+      "optionReview": [
+        "Adding an initial value does not multiply the rate.",
+        "The constant initial value has zero derivative and the accumulation derivative is f(x).",
+        "The derivative of the constant 7 is zero.",
+        "The theorem does not require f itself to be differentiable."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f(x)"
+      }
+    },
+    {
+      "questionId": "calc-ab-6-4-011",
+      "independentReasoning": "Compute the original signed constant-rate areas separately on both sides of the base point. Changing the integrand’s value at the single point 0 does not change either area, so that point value cannot select a derivative. Equal function values at the join ensure continuity, but the distinct slopes form a corner.",
+      "optionReview": [
+        "The isolated value f(0)=3 does not justify FTC at a discontinuity.",
+        "This uses only the left-hand slope.",
+        "The accumulation has unequal one-sided slopes at the jump in its integrand.",
+        "Averaging unequal one-sided slopes does not create a derivative."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Does not exist: the left difference quotient is 1 and the right is 3."
+      }
+    }
+  ]
+}

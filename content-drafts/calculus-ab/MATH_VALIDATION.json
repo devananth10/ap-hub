@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 583,
+  "questionsChecked": 605,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -1596,6 +1596,51 @@
       "questionId": "calc-ab-6-2-010",
       "method": "figure-riemann",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-3-002",
+      "method": "riemann-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-3-009",
+      "method": "riemann-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-3-011",
+      "method": "riemann-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-4-001",
+      "method": "accumulation-derivative",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-4-002",
+      "method": "accumulation-derivative",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-4-003",
+      "method": "accumulation-derivative",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-4-006",
+      "method": "accumulation-derivative",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-4-008",
+      "method": "accumulation-derivative",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-6-4-009",
+      "method": "accumulation-derivative",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -1862,7 +1907,20 @@
     "calc-ab-6-2-005",
     "calc-ab-6-2-006",
     "calc-ab-6-2-007",
-    "calc-ab-6-2-011"
+    "calc-ab-6-2-011",
+    "calc-ab-6-3-001",
+    "calc-ab-6-3-003",
+    "calc-ab-6-3-004",
+    "calc-ab-6-3-005",
+    "calc-ab-6-3-006",
+    "calc-ab-6-3-007",
+    "calc-ab-6-3-008",
+    "calc-ab-6-3-010",
+    "calc-ab-6-4-004",
+    "calc-ab-6-4-005",
+    "calc-ab-6-4-007",
+    "calc-ab-6-4-010",
+    "calc-ab-6-4-011"
   ],
   "humanReviewPerformed": false,
   "limitations": [

@@ -1,0 +1,194 @@
+{
+  "topicNumber": "6.3",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "c659573fe7f750b9476fc29558519a85ecb2276733221ea1c7a9f4d600c4419c",
+  "scopeReview": "CED LIM-5.B.1–2 and LIM-5.C.1–2: finite and limiting Riemann sums, summation indices, widths and sample points, mesh-to-zero convergence for continuous functions, translating to/from definite integrals. Unicode Σ is accompanied by explicit index ranges; integrals use readable “from … to …” bounds in the existing renderer. No unavailable TeX renderer or later integration method is required.",
+  "varietyReview": "Right-endpoint symbolic construction, arithmetic finite sum, shifted radical-limit translation, specifically midpoint sampling versus other valid sequences, nonuniform general formula, mesh condition and a fixed-wide-interval counterexample, signed integral interpretation, grouped polynomial integrand, midpoint finite expansion, dummy integration variable and indexed unequal reciprocal widths. Three original-function recomputations supplement exact independent notation and hypothesis reviews.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-6-3-001",
+      "independentReasoning": "Check the extreme sample indices independently: at i=1 the point is 2+5/n and at i=n it is 7. Width times count is n(5/n)=5. The left-endpoint candidate instead begins at 2 and stops at 7−5/n, so it is a different finite sum even though its limit would agree.",
+      "optionReview": [
+        "This starts sampling at 0 rather than at the left bound 2.",
+        "This omits the interval-length factor 5 in each width.",
+        "This uses left rather than right endpoints.",
+        "The width is 5/n and the right sample is 2+5i/n."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "(5/n) Σ [2+5i/n]²"
+      }
+    },
+    {
+      "questionId": "calc-ab-6-3-002",
+      "independentReasoning": "Expand the arithmetic sum independently: (3/4)[4·2+(3/4)(1+2+3+4)]=(3/4)(8+7.5)=11.625. Geometry gives exact area 3(2+5)/2=10.5; the left sum is 9.375. The original-function sample checker corroborates the finite value, not a limiting equality.",
+      "optionReview": [
+        "The four heights sum to 15.5 and each width is 0.75.",
+        "This is the exact trapezoidal area, not the requested right sum.",
+        "This is the corresponding left sum.",
+        "This adds sampled heights without the factor 3/4."
+      ],
+      "check": {
+        "type": "riemann-expression",
+        "partition": [
+          2,
+          2.75,
+          3.5,
+          4.25,
+          5
+        ],
+        "method": "right",
+        "expression": "x"
+      }
+    },
+    {
+      "questionId": "calc-ab-6-3-003",
+      "independentReasoning": "The first sample approaches 4 from the right and the last is exactly 7; all samples lie in the positive square-root domain. Rectangle widths sum to 3. Separately distinguish the factor controlling interval width from the function applied to each sample, ruling out the extra factor and double transformation.",
+      "optionReview": [
+        "This discards the shift 4 in the sampled input.",
+        "The sample input is xᵢ=4+3i/n and the width is 3/n.",
+        "The factor 3 is already included in Δx=3/n, not additionally in the height.",
+        "This applies the input change a second time after choosing the shifted interval."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "∫ from 4 to 7 of √x dx"
+      }
+    },
+    {
+      "questionId": "calc-ab-6-3-004",
+      "independentReasoning": "Check i=1 and i=n: the centers are 1/(2n) and 1−1/(2n), each half a width away from its adjacent boundary. No endpoint sample equals either center for a nonzero width. The missing-width sum cannot approximate a finite area by merely adding positive heights.",
+      "optionReview": [
+        "This uses right endpoints; its limit agrees but its finite samples are not midpoints.",
+        "This uses left endpoints rather than midpoints.",
+        "The sample (i−1/2)/n is the midpoint of the ith equal subinterval.",
+        "The midpoint heights are present, but the essential rectangle width is missing."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "(1/n) Σ e^(−((i−1/2)/n)²)"
+      }
+    },
+    {
+      "questionId": "calc-ab-6-3-005",
+      "independentReasoning": "Test a nonuniform partition 0,1,3 of f(x)=2. The correct formula gives 2·1+2·2=6, the exact rectangular area. The other formulas give 2, 3 and 3 respectively, so none is a formula valid for every continuous function and nonuniform partition.",
+      "optionReview": [
+        "The factor 1/n is not the general width of a nonuniform partition.",
+        "Dividing by width forms a rate-like quantity rather than rectangle area.",
+        "This sums widths alone and ignores the function heights.",
+        "Each sampled height is multiplied by its own subinterval width."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Σ f(xᵢ*)·(xᵢ−xᵢ₋₁), for i=1,…,n"
+      }
+    },
+    {
+      "questionId": "calc-ab-6-3-006",
+      "independentReasoning": "For a counterexample to count alone, keep [0,1/2] fixed with a left sample while subdividing [1/2,1] ever more finely. For f(x)=x² the first contribution stays zero although its true area is positive. The unsampled error on that fixed half-interval does not disappear as the count grows.",
+      "optionReview": [
+        "This forces all rectangles to become narrow and is the mesh condition.",
+        "One wide interval can remain unchanged while the others are repeatedly divided.",
+        "A tiny interval does not control the widths of the rest.",
+        "Interior, left and other valid samples also converge when the mesh vanishes."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The largest subinterval width tends to zero."
+      }
+    },
+    {
+      "questionId": "calc-ab-6-3-007",
+      "independentReasoning": "A continuous example is f(x)=x−2 on [0,3]: the below-axis triangle has area 2, the above-axis triangle area 1/2, so the integral is −3/2 even though f is positive after 2. This exact geometric check distinguishes net signed accumulation from pointwise sign and total area.",
+      "optionReview": [
+        "A function can have positive pieces while its total signed area is negative.",
+        "The integral is signed accumulation, not necessarily the sign of every point value.",
+        "An unsigned geometric area cannot be negative.",
+        "Sums converging to a negative number do not converge to zero."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The magnitude of the below-axis contribution exceeds the above-axis contribution."
+      }
+    },
+    {
+      "questionId": "calc-ab-6-3-008",
+      "independentReasoning": "At a generic sample, substitution into 1+x² gives exactly 1+(2i/n)². Substitution into 1+2x² gives 1+2(2i/n)², and into (1+x)² introduces a linear term as well. Thus the two alternate integrands do not reproduce the original bracket.",
+      "optionReview": [
+        "This uses the wrong interval length for the stated sample spacing.",
+        "The square applies to the entire sample 2i/n, not to an independently doubled x² term.",
+        "The interval width is 2 and each sample is xᵢ=2i/n.",
+        "This moves the square outside the entire sum of 1 and x."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "∫ from 0 to 2 of (1+x²) dx"
+      }
+    },
+    {
+      "questionId": "calc-ab-6-3-009",
+      "independentReasoning": "Independently calculate midpoint heights of the original function at 1,3,5 and multiply each by its interval width: 2+18+50=70. The result is below the exact area because x² is strictly convex. No claim is made that this three-term sum already equals its limiting integral.",
+      "optionReview": [
+        "This omits the width factor 2.",
+        "This is the right sum with sample inputs 2, 4 and 6.",
+        "This is the exact area rather than this finite midpoint sum.",
+        "The sampled inputs are 1, 3 and 5, whose squares sum to 35, then multiply by 2."
+      ],
+      "check": {
+        "type": "riemann-expression",
+        "partition": [
+          0,
+          2,
+          4,
+          6
+        ],
+        "method": "midpoint",
+        "expression": [
+          "pow",
+          "x",
+          2
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-6-3-010",
+      "independentReasoning": "For any partition and any sample inputs, rename each xᵢ* as tᵢ* without changing its numerical value. Every finite product f(sample)·width is identical term by term, hence the limiting sums are equal even for nonconstant f.",
+      "optionReview": [
+        "Both describe signed accumulation of the same function over the same input interval.",
+        "A variable name carries no ordering or numerical effect.",
+        "Renaming the integration variable performs no differentiation.",
+        "The equality applies to any continuous f on this interval."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "They are equal; the integration variable is a dummy name."
+      }
+    },
+    {
+      "questionId": "calc-ab-6-3-011",
+      "independentReasoning": "Enumerate both terms directly from the original reciprocal function and partition. Common denominator 10 gives 5/10+6/10=11/10. Reversing widths instead gives 3/2+1/5=17/10; unweighted heights total 7/10. All inputs are inside the positive reciprocal domain.",
+      "optionReview": [
+        "This swaps the two subinterval widths.",
+        "The two products are (1/2)·1 and (1/5)·3.",
+        "This adds the sampled heights without their widths.",
+        "This imposes a common width 2 on the unequal subintervals."
+      ],
+      "check": {
+        "type": "riemann-expression",
+        "partition": [
+          1,
+          2,
+          5
+        ],
+        "method": "right",
+        "expression": [
+          "div",
+          1,
+          "x"
+        ]
+      }
+    }
+  ]
+}
