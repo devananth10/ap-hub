@@ -37,7 +37,7 @@
         "6"
       ],
       "correctIndex": 0,
-      "explanation": "Since f(2)=8 and x³−8=(x−2)(x²+2x+4), the quotient equals x²+2x+4 for x≠2. The limit is 4+4+4=12, so the tangent slope f′(2) is 12. A: Factoring x³−8 leaves x²+2x+4, which tends to 12 at input 2. B: This is the point value f(2), not the derivative value. C: This is f(2)/2, which is not the difference quotient in the prompt. D: This omits one of the three contributions after factoring and evaluating."
+      "explanation": "Since f(2)=8 and x³−8=(x−2)(x²+2x+4), the quotient equals x²+2x+4 for x≠2. The limit is 4+4+4=12, so the tangent slope f′(2) is 12. A: Factoring x³−8 leaves x²+2x+4, which tends to 12 at input 2. B: This is the point value f(2), not the derivative value. C: This is f(2)/2, which is not the difference quotient in the prompt. D: This gives 3·2, which is not the value of the factored quotient x²+2x+4 at input 2."
     },
     {
       "id": "calc-ab-2-2-004",

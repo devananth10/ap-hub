@@ -2,7 +2,7 @@
   "topicNumber": "2.2",
   "status": "passed",
   "humanReviewPerformed": false,
-  "semanticSha256": "e16cb09e7114f22c952399c0f06910edeefc11b35207d822fc82f2a6ea146ee0",
+  "semanticSha256": "bdcdc1764497f52f107865d88183967b2f8417374ff1657051d5412a5c3c8a75",
   "scopeReview": "CED CHA-2.B.2–4 and CHA-2.C.1: derivative function, notation, equivalent limit forms and tangent-line slopes/equations. Derivatives are derived from limits; power/product/chain rules are not assessed before their topics. Domain restrictions are explicit.",
   "varietyReview": "Definition selection, identifying a base input, cubic point derivative, point-slope construction, derivative versus coordinate ratio, two derivative functions, unequal one-sided quotient limits, equivalent notation, tangent intercept and horizontal tangent height.",
   "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
@@ -42,7 +42,7 @@
         "Factoring x³−8 leaves x²+2x+4, which tends to 12 at input 2.",
         "This is the point value f(2), not the derivative value.",
         "This is f(2)/2, which is not the difference quotient in the prompt.",
-        "This omits one of the three contributions after factoring and evaluating."
+        "This gives 3·2, which is not the value of the factored quotient x²+2x+4 at input 2."
       ],
       "check": {
         "type": "punctured-expression",
