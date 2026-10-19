@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 7,
+  "topicId": "equations",
+  "questions": [
+    {
+      "id": "calc-ab-7-1-001",
+      "prompt": "A population P(t), measured in organisms, grows at a rate proportional to its current size, with t in minutes. When P=300, the growth rate is 12 organisms/minute. Which differential equation models the stated rule?",
+      "options": [
+        "dP/dt=12P",
+        "dP/dt=0.04P",
+        "dP/dt=0.04t",
+        "dP/dt=0.04"
+      ],
+      "correctIndex": 1,
+      "explanation": "Proportional growth has form P′=kP. Calibration at the given state gives 12=k·300, so k=0.04 minute⁻¹. Therefore P′=0.04P. The observed rate 12 is not itself a coefficient multiplying every future population. A: This uses the observed rate as the proportionality constant without dividing by population. B: The proportionality constant is 12/300=0.04 per minute. C: This makes the rate proportional to time rather than population. D: This models a constant rate rather than a population-dependent rate."
+    },
+    {
+      "id": "calc-ab-7-1-002",
+      "prompt": "A sample’s remaining mass M(t) decreases at a rate proportional to that remaining mass. Time is in days, and the positive decay coefficient is 0.07 day⁻¹. Which equation describes this?",
+      "options": [
+        "dM/dt=0.07M",
+        "dM/dt=−0.07t",
+        "dM/dt=−0.07M",
+        "M(t)=−0.07M′(t)"
+      ],
+      "correctIndex": 2,
+      "explanation": "The rate of decrease is the positive magnitude 0.07M, so the signed derivative is M′=−0.07M. The coefficient has inverse-day units, making the right side a mass-per-day rate. The sign encodes loss rather than growth. A: This describes growth of a positive mass. B: This makes the rate depend on elapsed time rather than remaining mass. C: The derivative is negative while the remaining positive mass sets its magnitude. D: Rearranging this gives a reciprocal decay coefficient, not the stated one."
+    },
+    {
+      "id": "calc-ab-7-1-003",
+      "prompt": "An object at temperature T(t) cools toward a constant surrounding temperature of 20 °C. Its rate of change equals −0.15 times the difference between its current temperature and 20 °C, with t in minutes. Which differential equation states that rule?",
+      "options": [
+        "dT/dt=−0.15T",
+        "dT/dt=0.15(T−20)",
+        "dT/dt=−0.15(T+20)",
+        "dT/dt=−0.15(T−20)"
+      ],
+      "correctIndex": 3,
+      "explanation": "The relevant difference is T−20. Multiplying it by the stated negative coefficient gives T′=−0.15(T−20). At T=20 the rate is zero, and above 20 the derivative is negative, as cooling toward the surroundings requires. A: This predicts continuing cooling even at the surrounding temperature. B: This moves a hotter object away from the surrounding temperature. C: This adds rather than subtracts the reference temperature. D: The temperature difference from the surroundings, not absolute temperature, sets the signed rate."
+    },
+    {
+      "id": "calc-ab-7-1-004",
+      "prompt": "A tank contains V(t) liters. Water enters at 5 L/min and leaves at 0.02V(t) L/min. Which equation gives its net volume rate while these flow rules apply?",
+      "options": [
+        "dV/dt=5−0.02V",
+        "dV/dt=5+0.02V",
+        "dV/dt=−0.02V",
+        "dV/dt=5−0.02t"
+      ],
+      "correctIndex": 0,
+      "explanation": "Add all signed volume contributions: entering water contributes +5 L/min and leaving water contributes −0.02V L/min. Thus V′=5−0.02V. This models rates at the current state, rather than asserting that V itself equals the net rate. A: Net volume rate equals inflow minus outflow. B: This counts outflow as an additional inflow. C: This omits the stated entering flow. D: This replaces the volume-dependent outflow by a time-dependent rule."
+    },
+    {
+      "id": "calc-ab-7-1-005",
+      "prompt": "In a simplified mathematical model, a balance B(t) receives a continuous deposit of 40 dollars per month and gains interest at an instantaneous rate of 0.01B dollars per month. Which equation combines these rules?",
+      "options": [
+        "dB/dt=0.01(B+40)",
+        "dB/dt=0.01B+40",
+        "dB/dt=40B+0.01",
+        "B(t)=0.01t+40"
+      ],
+      "correctIndex": 1,
+      "explanation": "Both deposits and interest increase the balance. Their instantaneous rates are 40 and 0.01B, so B′=0.01B+40. A rate equation combines quantities in dollars/month; it is not a claim that the balance follows a straight line. A: This incorrectly subjects the deposit rate to another factor 0.01. B: The proportional interest rate and constant deposit rate add. C: This swaps the constant flow and proportional coefficient. D: This gives a balance formula for a different constant-rate model."
+    },
+    {
+      "id": "calc-ab-7-1-006",
+      "prompt": "A particle’s downward position is s(t), so its downward velocity is s′(t). Acceleration equals 9.8 minus 0.4 times that velocity. Which equation models the statement?",
+      "options": [
+        "s′(t)=9.8−0.4s(t)",
+        "s″(t)=9.8+0.4s′(t)",
+        "s″(t)=9.8−0.4s′(t)",
+        "s(t)=9.8t−0.4s′(t)"
+      ],
+      "correctIndex": 2,
+      "explanation": "Differentiate position once for velocity and twice for acceleration. The given law is therefore s″=9.8−0.4s′. Keeping the derivative orders matters: neither s nor s′ alone is acceleration, and the resistance term uses s′ rather than s. A: This substitutes position for velocity and velocity for acceleration. B: This adds the stated resisting velocity term instead of subtracting it. C: Acceleration is the second position derivative, and resistance depends on velocity. D: This equates position to an expression that does not state the acceleration rule."
+    },
+    {
+      "id": "calc-ab-7-1-007",
+      "prompt": "For a circle with area A depending on radius r, the rate dA/dr is proportional to r. At r=3 cm that rate is 6π cm²/cm. Which equation models the radius-based rate?",
+      "options": [
+        "dA/dt=2πr",
+        "dA/dr=6π",
+        "A=2πr",
+        "dA/dr=2πr"
+      ],
+      "correctIndex": 3,
+      "explanation": "Write dA/dr=kr and use the observation 6π=k·3 to obtain k=2π. Thus dA/dr=2πr. The derivative is with respect to radius; replacing it by a time derivative would require additional information about r(t). A: No time dependence or radius time-rate has been specified. B: This makes the observed rate constant instead of proportional to radius. C: This equates area to a rate expression rather than modeling its derivative. D: The coefficient is (6π)/3=2π and the independent variable is radius."
+    },
+    {
+      "id": "calc-ab-7-1-008",
+      "prompt": "A plant’s height H(t), in cm, changes at a rate proportional to √t, with t in hours and t≥0. At t=4 its height rate is 6 cm/hour. Which equation models this rate?",
+      "options": [
+        "dH/dt=3√t",
+        "dH/dt=6√t",
+        "dH/dt=3t",
+        "dH/dt=3√H"
+      ],
+      "correctIndex": 0,
+      "explanation": "Use H′=k√t. The calibration 6=k√4=2k gives k=3, so H′=3√t. The height’s current value is not part of the given rate rule, and the initial height is not determined by the rate observation. A: The proportionality coefficient is 6/√4=3. B: This uses the observed rate as the coefficient without dividing by √4. C: This makes the rate proportional to t rather than √t. D: This changes the independent-variable dependence into height dependence."
+    },
+    {
+      "id": "calc-ab-7-1-009",
+      "prompt": "A moving object’s velocity increases by 2 m/s each second, and its velocity at time 0 is 3 m/s. If s(t) is position, which differential statement and initial datum express this?",
+      "options": [
+        "s′(t)=2s(t) and s(0)=3",
+        "s″(t)=2 and s′(0)=3",
+        "s″(t)=3 and s′(0)=2",
+        "s(t)=2t+3"
+      ],
+      "correctIndex": 1,
+      "explanation": "Velocity is s′ and its rate of change is s″. Increasing velocity by 2 per second means s″=2, while initial velocity 3 means s′(0)=3. No initial position was specified, so s(0) must not be invented. A: This invents position-proportional velocity and replaces initial velocity with position. B: A constant rate of velocity change is acceleration, and the initial velocity is a first-derivative value. C: This swaps the acceleration and initial-velocity data. D: This position formula has constant velocity 2 and zero acceleration."
+    },
+    {
+      "id": "calc-ab-7-1-010",
+      "prompt": "A dependent quantity y has a rate of change with respect to x equal to one plus the product of x and the square of its current value y. Which equation translates this statement?",
+      "options": [
+        "dy/dx=1+(xy)²",
+        "dy/dx=1+x²y",
+        "dy/dx=1+xy²",
+        "y=1+xy²"
+      ],
+      "correctIndex": 2,
+      "explanation": "The rate is dy/dx. The product described is x·y², and the additional one gives dy/dx=1+xy². Parentheses determine which factor is squared. A differential equation relates a derivative to the current variables, rather than replacing the derivative by y. A: This also squares x, which the statement does not say. B: This squares the wrong variable. C: The independent variable multiplies the square of the dependent quantity. D: This equates the function value, rather than its rate, to the stated expression."
+    },
+    {
+      "id": "calc-ab-7-1-011",
+      "prompt": "A tank initially contains 12 m³. Its net filling rate at time t is 2+sin t m³/hour, with t in hours and the sine argument in radians. Which initial-value statement records both pieces of information?",
+      "options": [
+        "V′(t)=12, V(0)=2",
+        "V(t)=2+sin t, V′(0)=12",
+        "V′(t)=2+sin t, V(12)=0",
+        "V′(t)=2+sin t, V(0)=12"
+      ],
+      "correctIndex": 3,
+      "explanation": "The net filling rate is the volume derivative V′=2+sin t. “Initially contains 12” means V(0)=12. The initial instantaneous rate is separately V′(0)=2, which must not be confused with the starting volume. A: This swaps a volume with a rate and drops the time-varying term. B: This treats the rate formula as the volume and the starting volume as a derivative. C: The initial condition refers to time 0 and volume 12, not the reverse. D: The rate rule and starting volume are recorded in different parts of the model."
+    }
+  ]
+}

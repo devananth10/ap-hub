@@ -8,7 +8,7 @@ import {validateCalculusBank} from '../scripts/check-calculus-bank.mjs';
 import {verifyCalculusQuestion,figureLimit,evaluateExpression,numericalOption,rationalBehavior,rationalPoleSides,rationalEndLimit,intervalOption,domainMatches} from '../scripts/check-calculus-math.mjs';
 import {practiceFigures} from '../src/lib/practice-figures.ts';
 import {completeCandidateRows} from '../scripts/check-calculus-math.mjs';
-import {piecewiseArea,riemannApproximation,integralValue} from '../scripts/check-calculus-math.mjs';
+import {piecewiseArea,riemannApproximation,integralValue,evaluateBivariate} from '../scripts/check-calculus-math.mjs';
 test('official Calculus AB inventory keeps all eight old IDs and excludes BC-only gaps',()=>{
   const course=courses.find(course=>course.id==='calculus-ab');
   const topics=course.units.flatMap(unit=>unit.topics);
@@ -433,4 +433,32 @@ test('antiderivative checks use candidate derivatives and respect the original r
   assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[2]),/antiderivative key/);
   const bad=structuredClone(qa.questions[2]);bad.check.samplePoints=[-1,0,1];
   assert.throws(()=>verifyCalculusQuestion(batch.questions[2],bad),/Invalid real arithmetic domain/);
+});
+test('differential rate models distinguish independent input, state and calibrated coefficient',()=>{
+  assert.equal(evaluateBivariate(['add',1,['mul','x',['pow','y',2]]],2,3),19);
+  assert.equal(evaluateBivariate(['add',1,['mul','x',['pow','y',2]]],-1,2),-3);
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='equations');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-7-1.json','utf8'));
+  const wrong=structuredClone(batch.questions[0]);wrong.correctIndex=wrong.options.indexOf('dP/dt=12P');
+  assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[0]),/differential model key/);
+  const bad=structuredClone(qa.questions[3]);bad.check.candidateRhs['dV/dt=5−0.02V']=['sub',5,['mul',.02,'x']];
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[3],bad),/unique differential model/);
+});
+test('solution verification checks initial data separately from the differential identity',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-7-2');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-7-2.json','utf8'));
+  verifyCalculusQuestion(batch.questions[1],qa.questions[1]);
+  const noInitial=structuredClone(qa.questions[1]);delete noInitial.check.initial;
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[1],noInitial),/unique differential solution/);
+  const wrong=structuredClone(batch.questions[6]);wrong.correctIndex=wrong.options.indexOf('y=sin x');
+  assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[6]),/differential solution key/);
+});
+test('solution verification retains derivative order and includes constant equilibrium functions',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-7-2');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-7-2.json','utf8'));
+  verifyCalculusQuestion(batch.questions[3],qa.questions[3]);verifyCalculusQuestion(batch.questions[9],qa.questions[9]);
+  const wrong=structuredClone(batch.questions[3]);wrong.correctIndex=wrong.options.indexOf('y=cos(4x)');
+  assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[3]),/differential solution key/);
+  const bad=structuredClone(qa.questions[3]);bad.check.order=1;
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[3],bad),/unique differential solution/);
 });

@@ -147,6 +147,10 @@ export function integralValue(expression,a,b) {
   for(let i=1;i<n;i++)sum+=(i%2?4:2)*evaluateExpression(expression,a+i*h);
   return h*sum/3;
 }
+export function evaluateBivariate(expression,x,y) {
+  const substitute=node=>node==='y'?y:Array.isArray(node)?node.map(substitute):node;
+  return evaluateExpression(substitute(expression),x);
+}
 export function verifyCalculusQuestion(question, review) {
   assert.equal(review.questionId,question.id);
   assert.equal(review.optionReview.length,4);
@@ -154,7 +158,16 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='definite-integral') {
+  if(review.check.type==='differential-model') {
+    const c=review.check;assert.ok(c.samples.length>=3,'Rate models need varied states');
+    const matches=question.options.map(option=>c.samples.every(([x,y,rate])=>Math.abs(evaluateBivariate(c.candidateRhs[option],x,y)-rate)<1e-9));
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique differential model');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' differential model key');
+  } else if(review.check.type==='differential-solution') {
+    const c=review.check,order=c.order??1,h=order===1?0.0001:0.001,tolerance=c.tolerance??0.0001;
+    assert.ok([1,2].includes(order)&&new Set(c.samplePoints).size>=3,'Invalid solution verification inputs');
+    const matches=question.options.map(option=>{const fn=c.functions[option],f=x=>evaluateExpression(fn,x);if(c.initial&&Math.abs(f(c.initial.x)-c.initial.y)>tolerance)return false;return c.samplePoints.every(x=>{const rate=order===1?(f(x+h)-f(x-h))/(2*h):(f(x+h)-2*f(x)+f(x-h))/(h*h);return Math.abs(rate-evaluateBivariate(c.rhs,x,f(x)))<tolerance;});});
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique differential solution');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' differential solution key');
+  } else if (review.check.type==='definite-integral') {
     const c=review.check,expected=integralValue(c.integrand,c.start,c.end);
     const matches=question.options.map(option=>Math.abs((c.optionExpressions?evaluateExpression(c.optionExpressions[option]):numericalOption(option))-expected)<(c.tolerance??0.000001));
     assert.equal(matches.filter(Boolean).length,1,question.id+' unique definite integral');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' definite integral key');

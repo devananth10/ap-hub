@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 7,
+  "topicId": "topic-7-2",
+  "questions": [
+    {
+      "id": "calc-ab-7-2-001",
+      "prompt": "Which function satisfies y′=3y for every real x?",
+      "options": [
+        "y=2e^(−3x)",
+        "y=6eˣ",
+        "y=2e^(3x)",
+        "y=2x³"
+      ],
+      "correctIndex": 2,
+      "explanation": "Differentiate the proposed solution and substitute the original function into the right side. For y=2e^(3x), y′=6e^(3x) and 3y=6e^(3x), identical for all real x. Matching a function’s general appearance is not enough; both sides must agree. A: Its derivative is −3y rather than 3y. B: Its derivative equals y rather than 3y. C: Its derivative is 6e^(3x), equal to three times its value. D: Its derivative 6x² does not equal 6x³ throughout an interval."
+    },
+    {
+      "id": "calc-ab-7-2-002",
+      "prompt": "On x>0, which function satisfies both y′=2x/y and y(1)=√5?",
+      "options": [
+        "y=−√(2x²+3)",
+        "y=√(x²+4)",
+        "y=√(2x²+1)",
+        "y=√(2x²+3)"
+      ],
+      "correctIndex": 3,
+      "explanation": "For the positive-root candidate, y′=(1/2)(2x²+3)^(−1/2)·4x=2x/y. At x=1 it equals √5, so both requirements hold. The negative branch is a valid differential-equation solution but fails the specified initial condition. A: It satisfies the equation but gives the negative initial value. B: Its initial value matches, but its derivative is x/y rather than 2x/y. C: It satisfies the equation but gives initial value √3. D: The derivative identity holds and its value at 1 is the required positive root."
+    },
+    {
+      "id": "calc-ab-7-2-003",
+      "prompt": "Which function satisfies y′=y−x on the real numbers?",
+      "options": [
+        "y=x+1+2eˣ",
+        "y=x−1+2eˣ",
+        "y=x+1+2e^(−x)",
+        "y=2eˣ"
+      ],
+      "correctIndex": 0,
+      "explanation": "For y=x+1+2eˣ, differentiation gives y′=1+2eˣ. Subtracting x from the original y gives exactly the same expression. The equality holds for every real x, independently of any initial condition. A: Both y′ and y−x equal 1+2eˣ. B: Its derivative and right side differ by 2. C: The exponential derivative has the wrong sign for the equation. D: The right side has the additional term −x that its derivative lacks."
+    },
+    {
+      "id": "calc-ab-7-2-004",
+      "prompt": "With x in radians, which function satisfies the second-derivative equation y″=−4y for every real x?",
+      "options": [
+        "y=cos(4x)",
+        "y=cos(2x)",
+        "y=sin x",
+        "y=4x"
+      ],
+      "correctIndex": 1,
+      "explanation": "For y=cos(2x), first differentiate to get −2sin(2x), then differentiate again to get −4cos(2x)=−4y. The equation requires the second derivative; checking only the first derivative would not verify the stated relation. A: Its second derivative is −16y rather than −4y. B: Differentiating twice gives −4cos(2x). C: Its second derivative is −y rather than −4y. D: Its second derivative is zero, but −4y is not identically zero."
+    },
+    {
+      "id": "calc-ab-7-2-005",
+      "prompt": "A student wants to verify y=5e^(x²) as a solution of y′=2xy. Which calculation correctly completes the verification?",
+      "options": [
+        "y′=10x²e^(x²), so it works.",
+        "y′=5e^(x²), so it works because the exponential is its own derivative.",
+        "y′=10x e^(x²), and 2xy=2x·5e^(x²)=10x e^(x²).",
+        "It works because y(0)=5, without checking any derivative."
+      ],
+      "correctIndex": 2,
+      "explanation": "Differentiate the entire composite: y′=5e^(x²)·2x=10x e^(x²). Separately substitute y into 2xy to get 2x·5e^(x²), the same expression. This checks an identity for all real x rather than merely an initial value. A: The inner derivative is 2x, not 2x², and this proposed derivative does not match the right side. B: This omits the inner derivative 2x. C: The chain-rule derivative and substituted right side agree identically. D: One point value does not verify a differential equation on an interval."
+    },
+    {
+      "id": "calc-ab-7-2-006",
+      "prompt": "On x>0, which function satisfies y′=y²?",
+      "options": [
+        "y=1/(x+2)",
+        "y=−1/(x²+2)",
+        "y=−1/(2x+2)",
+        "y=−1/(x+2)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Differentiate y=−(x+2)^(−1) to get y′=(x+2)^(−2). Squaring the original y gives the same positive expression. The negative sign in y is compatible with a positive derivative; it must not be discarded during verification. A: Its derivative is negative while y² is positive. B: Its derivative includes an extra factor 2x. C: Its derivative includes an extra factor 2. D: Its derivative is the positive square reciprocal, equal to y²."
+    },
+    {
+      "id": "calc-ab-7-2-007",
+      "prompt": "Which function satisfies y′=cos x and the initial condition y(0)=2, with angles in radians?",
+      "options": [
+        "y=sin x+2",
+        "y=−sin x+2",
+        "y=sin x",
+        "y=cos x+1"
+      ],
+      "correctIndex": 0,
+      "explanation": "Check the equation and initial condition independently. For y=sin x+2, y′=cos x and y(0)=0+2=2. Several candidates meet one requirement, but only the selected function meets both. A: Its derivative is cos x and its initial value is 2. B: Its initial value fits, but its derivative has the wrong sign. C: The derivative fits, but its initial value is 0. D: Its initial value fits, but its derivative is −sin x."
+    },
+    {
+      "id": "calc-ab-7-2-008",
+      "prompt": "For x>0, consider y=Cx² with C any real constant. Which statement about y′=2y/x is correct?",
+      "options": [
+        "Only C=1 works.",
+        "Every real C gives a solution on this interval, including C=0.",
+        "Only positive C works.",
+        "None works because C is not specified."
+      ],
+      "correctIndex": 1,
+      "explanation": "Differentiate y=Cx² to obtain y′=2Cx. Substituting the original y into 2y/x gives 2Cx²/x=2Cx for x>0. The equality holds for every fixed real C, illustrating infinitely many solutions for this particular differential equation. A: No such restriction appears after substitution. B: Both sides reduce to 2Cx for every fixed constant. C: The equation permits negative and zero function values as well. D: An unspecified fixed parameter can describe a whole family of solutions."
+    },
+    {
+      "id": "calc-ab-7-2-009",
+      "prompt": "A student tests h(x)=1+x in y′=y only at x=0, where h′(0)=h(0)=1, and declares it a solution on the real line. What is the correct assessment?",
+      "options": [
+        "It is a solution because one successful point is sufficient.",
+        "It is a solution because h(0)=1 is positive.",
+        "It is not a solution on an interval: h′(x)=1 differs from h(x)=1+x except at 0.",
+        "It is not a solution because solutions must always be nonlinear."
+      ],
+      "correctIndex": 2,
+      "explanation": "The derivative is h′=1, while the right side is h=1+x. They agree only at the isolated input 0. Therefore the proposed function does not solve y′=y on any nonzero interval about 0, despite passing the single-point test. A: Pointwise agreement cannot establish a function identity. B: The sign of an initial value does not verify a derivative equation. C: An equation must hold throughout the claimed solution interval, not at one isolated input. D: Linearity or nonlinearity alone is not a valid verification criterion."
+    },
+    {
+      "id": "calc-ab-7-2-010",
+      "prompt": "Which constant function solves y′=(y−2)² on the real numbers?",
+      "options": [
+        "y=0",
+        "y=−2",
+        "y=4",
+        "y=2"
+      ],
+      "correctIndex": 3,
+      "explanation": "A constant function has derivative zero. The equation then requires (y−2)²=0, so y=2 is the unique constant solution. Its verification is direct: 0=(2−2)². No division by a potentially zero state expression is needed. A: The derivative is zero but the right side is 4. B: The derivative is zero but the right side is 16. C: The derivative is zero but the right side is 4. D: Its derivative and the right side both equal zero."
+    },
+    {
+      "id": "calc-ab-7-2-011",
+      "prompt": "A student claims that the real function y=ln x solves xy′=1 for every real x. Which correction is required?",
+      "options": [
+        "The verification is valid on x>0; ln x is not a real function for x≤0.",
+        "It is valid on the whole real line because x cancels from x·(1/x).",
+        "It fails on x>0 because ln x can be negative there.",
+        "It works only at x=1."
+      ],
+      "correctIndex": 0,
+      "explanation": "For x>0, y′=1/x and xy′=1, so the verification works throughout that interval. The real logarithm is undefined at nonpositive inputs. In particular, no finite derivative at x=0 could satisfy 0·y′=1; a cancellation cannot extend the claimed domain. A: The derivative identity and the real domain must both be respected. B: That cancellation excludes zero and does not define ln x at negative inputs. C: A negative function value does not prevent the derivative equation from holding. D: The identity x·(1/x)=1 holds at every positive input."
+    }
+  ]
+}

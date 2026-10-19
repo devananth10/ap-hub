@@ -1,0 +1,525 @@
+{
+  "topicNumber": "7.2",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "9d1c7c1ae7b6dc1939dca0b26646f4d65182993fc3beb1448478c2dcde44c9e2",
+  "scopeReview": "CED FUN-7.B.1–2: verify proposed functions by differentiation/substitution on the claimed domain and check initial data independently. First and second derivatives use previously learned rules; no solution method beyond direct verification is required. The demonstrated parameter family shows that infinitely many solutions may occur, without asserting this for every equation. No Euler method or logistic modeling is assessed.",
+  "varietyReview": "Exponential sign/factor, root branches with a discriminating initial condition, inhomogeneous residual, second-derivative frequency, composite-chain verification argument, negative reciprocal with positive square rate, sine constant shift and initial value, a genuine all-real-parameter family, a failed isolated-point test, constant equilibrium without division and real-log domain. Seven original-function differential-residual checks and four exact conceptual reviews.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-7-2-001",
+      "independentReasoning": "Independently take the ratio y′/y for each nonzero exponential: it is 3, −3 and 1 respectively. The polynomial alternative has an inconsistent power. Original candidate finite differences corroborate these exact derivative identities at varied inputs.",
+      "optionReview": [
+        "Its derivative is −3y rather than 3y.",
+        "Its derivative equals y rather than 3y.",
+        "Its derivative is 6e^(3x), equal to three times its value.",
+        "Its derivative 6x² does not equal 6x³ throughout an interval."
+      ],
+      "check": {
+        "type": "differential-solution",
+        "rhs": [
+          "mul",
+          3,
+          "y"
+        ],
+        "functions": {
+          "y=2e^(3x)": [
+            "mul",
+            2,
+            [
+              "exp",
+              [
+                "mul",
+                3,
+                "x"
+              ]
+            ]
+          ],
+          "y=2e^(−3x)": [
+            "mul",
+            2,
+            [
+              "exp",
+              [
+                "mul",
+                -3,
+                "x"
+              ]
+            ]
+          ],
+          "y=6eˣ": [
+            "mul",
+            6,
+            [
+              "exp",
+              "x"
+            ]
+          ],
+          "y=2x³": [
+            "mul",
+            2,
+            [
+              "pow",
+              "x",
+              3
+            ]
+          ]
+        },
+        "samplePoints": [
+          -0.5,
+          0.2,
+          0.7
+        ],
+        "order": 1
+      }
+    },
+    {
+      "questionId": "calc-ab-7-2-002",
+      "independentReasoning": "Differentiate both root branches independently, retaining the negative sign in the negative branch. Check each initial value separately from its derivative identity. All radicands and y values are nonzero throughout x>0, so the equation’s denominator is valid; the initial condition selects exactly one of the offered functions.",
+      "optionReview": [
+        "It satisfies the equation but gives the negative initial value.",
+        "Its initial value matches, but its derivative is x/y rather than 2x/y.",
+        "It satisfies the equation but gives initial value √3.",
+        "The derivative identity holds and its value at 1 is the required positive root."
+      ],
+      "check": {
+        "type": "differential-solution",
+        "rhs": [
+          "div",
+          [
+            "mul",
+            2,
+            "x"
+          ],
+          "y"
+        ],
+        "functions": {
+          "y=√(2x²+3)": [
+            "sqrt",
+            [
+              "add",
+              [
+                "mul",
+                2,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ],
+              3
+            ]
+          ],
+          "y=−√(2x²+3)": [
+            "mul",
+            -1,
+            [
+              "sqrt",
+              [
+                "add",
+                [
+                  "mul",
+                  2,
+                  [
+                    "pow",
+                    "x",
+                    2
+                  ]
+                ],
+                3
+              ]
+            ]
+          ],
+          "y=√(x²+4)": [
+            "sqrt",
+            [
+              "add",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              4
+            ]
+          ],
+          "y=√(2x²+1)": [
+            "sqrt",
+            [
+              "add",
+              [
+                "mul",
+                2,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ],
+              1
+            ]
+          ]
+        },
+        "samplePoints": [
+          0.5,
+          1,
+          1.5
+        ],
+        "order": 1,
+        "initial": {
+          "x": 1,
+          "y": 2.23606797749979
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-7-2-003",
+      "independentReasoning": "Compute each alternative’s residual y′−(y−x): the selected function has residual 0, while the others give 2, −4e^(−x) and x. Those residuals are not identically zero on the real line. Numerical original-function derivative checks corroborate this separate exact substitution.",
+      "optionReview": [
+        "Both y′ and y−x equal 1+2eˣ.",
+        "Its derivative and right side differ by 2.",
+        "The exponential derivative has the wrong sign for the equation.",
+        "The right side has the additional term −x that its derivative lacks."
+      ],
+      "check": {
+        "type": "differential-solution",
+        "rhs": [
+          "sub",
+          "y",
+          "x"
+        ],
+        "functions": {
+          "y=x+1+2eˣ": [
+            "add",
+            "x",
+            1,
+            [
+              "mul",
+              2,
+              [
+                "exp",
+                "x"
+              ]
+            ]
+          ],
+          "y=x−1+2eˣ": [
+            "add",
+            "x",
+            -1,
+            [
+              "mul",
+              2,
+              [
+                "exp",
+                "x"
+              ]
+            ]
+          ],
+          "y=x+1+2e^(−x)": [
+            "add",
+            "x",
+            1,
+            [
+              "mul",
+              2,
+              [
+                "exp",
+                [
+                  "mul",
+                  -1,
+                  "x"
+                ]
+              ]
+            ]
+          ],
+          "y=2eˣ": [
+            "mul",
+            2,
+            [
+              "exp",
+              "x"
+            ]
+          ]
+        },
+        "samplePoints": [
+          -0.5,
+          0.2,
+          1
+        ],
+        "order": 1
+      }
+    },
+    {
+      "questionId": "calc-ab-7-2-004",
+      "independentReasoning": "Independently use the general identity d²[cos(kx)]/dx²=−k²cos(kx). Frequencies 2 and 4 therefore produce factors −4 and −16, respectively. The sine and linear alternatives fail direct substitution. Centered second differences corroborate the exact calculation.",
+      "optionReview": [
+        "Its second derivative is −16y rather than −4y.",
+        "Differentiating twice gives −4cos(2x).",
+        "Its second derivative is −y rather than −4y.",
+        "Its second derivative is zero, but −4y is not identically zero."
+      ],
+      "check": {
+        "type": "differential-solution",
+        "rhs": [
+          "mul",
+          -4,
+          "y"
+        ],
+        "functions": {
+          "y=cos(2x)": [
+            "cos",
+            [
+              "mul",
+              2,
+              "x"
+            ]
+          ],
+          "y=cos(4x)": [
+            "cos",
+            [
+              "mul",
+              4,
+              "x"
+            ]
+          ],
+          "y=sin x": [
+            "sin",
+            "x"
+          ],
+          "y=4x": [
+            "mul",
+            4,
+            "x"
+          ]
+        },
+        "samplePoints": [
+          -1,
+          0.2,
+          0.8
+        ],
+        "order": 2
+      }
+    },
+    {
+      "questionId": "calc-ab-7-2-005",
+      "independentReasoning": "Use the chain rule with outer exponential and inner square separately. The two sides match including the factor x, sign for negative inputs and coefficient 10. At x=2 both true sides equal 20e^4, whereas the two stated incorrect derivative formulas give 40e^4 and 5e^4. Thus the comparison independently distinguishes the missing or squared inner derivative.",
+      "optionReview": [
+        "The inner derivative is 2x, not 2x², and this proposed derivative does not match the right side.",
+        "This omits the inner derivative 2x.",
+        "The chain-rule derivative and substituted right side agree identically.",
+        "One point value does not verify a differential equation on an interval."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "y′=10x e^(x²), and 2xy=2x·5e^(x²)=10x e^(x²)."
+      }
+    },
+    {
+      "questionId": "calc-ab-7-2-006",
+      "independentReasoning": "Directly compare each residual y′−y². The selected residual is 0; the positive-reciprocal residual is −2/(x+2)², and the other negative reciprocals leave factors 2x−1 and 1 over their squared denominators. The interval keeps all offered denominators nonzero.",
+      "optionReview": [
+        "Its derivative is negative while y² is positive.",
+        "Its derivative includes an extra factor 2x.",
+        "Its derivative includes an extra factor 2.",
+        "Its derivative is the positive square reciprocal, equal to y²."
+      ],
+      "check": {
+        "type": "differential-solution",
+        "rhs": [
+          "pow",
+          "y",
+          2
+        ],
+        "functions": {
+          "y=−1/(x+2)": [
+            "div",
+            -1,
+            [
+              "add",
+              "x",
+              2
+            ]
+          ],
+          "y=1/(x+2)": [
+            "div",
+            1,
+            [
+              "add",
+              "x",
+              2
+            ]
+          ],
+          "y=−1/(x²+2)": [
+            "div",
+            -1,
+            [
+              "add",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              2
+            ]
+          ],
+          "y=−1/(2x+2)": [
+            "div",
+            -1,
+            [
+              "add",
+              [
+                "mul",
+                2,
+                "x"
+              ],
+              2
+            ]
+          ]
+        },
+        "samplePoints": [
+          0.2,
+          0.6,
+          1.2
+        ],
+        "order": 1
+      }
+    },
+    {
+      "questionId": "calc-ab-7-2-007",
+      "independentReasoning": "Differentiate every option first, then separately evaluate each at zero. The constant shift changes the initial value but not the derivative, which explains why sine alone solves the equation but not this initial-value problem. Numerical checks enforce both conditions.",
+      "optionReview": [
+        "Its derivative is cos x and its initial value is 2.",
+        "Its initial value fits, but its derivative has the wrong sign.",
+        "The derivative fits, but its initial value is 0.",
+        "Its initial value fits, but its derivative is −sin x."
+      ],
+      "check": {
+        "type": "differential-solution",
+        "rhs": [
+          "cos",
+          "x"
+        ],
+        "functions": {
+          "y=sin x+2": [
+            "add",
+            [
+              "sin",
+              "x"
+            ],
+            2
+          ],
+          "y=−sin x+2": [
+            "add",
+            [
+              "mul",
+              -1,
+              [
+                "sin",
+                "x"
+              ]
+            ],
+            2
+          ],
+          "y=sin x": [
+            "sin",
+            "x"
+          ],
+          "y=cos x+1": [
+            "add",
+            [
+              "cos",
+              "x"
+            ],
+            1
+          ]
+        },
+        "samplePoints": [
+          -0.5,
+          0.3,
+          1
+        ],
+        "order": 1,
+        "initial": {
+          "x": 0,
+          "y": 2
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-7-2-008",
+      "independentReasoning": "Check C=−2,0,3 separately as well as the exact symbolic identity. The denominator x is nonzero on the interval, so cancellation is valid. The conclusion concerns this demonstrated family and does not claim every differential equation has infinitely many solutions.",
+      "optionReview": [
+        "No such restriction appears after substitution.",
+        "Both sides reduce to 2Cx for every fixed constant.",
+        "The equation permits negative and zero function values as well.",
+        "An unspecified fixed parameter can describe a whole family of solutions."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Every real C gives a solution on this interval, including C=0."
+      }
+    },
+    {
+      "questionId": "calc-ab-7-2-009",
+      "independentReasoning": "Independently check x=1: the derivative is 1 but the function value is 2. More strongly the exact residual is −x, nonzero at every x≠0. The failure is the derivative identity, not an invented rule that all solutions must have a certain graph shape.",
+      "optionReview": [
+        "Pointwise agreement cannot establish a function identity.",
+        "The sign of an initial value does not verify a derivative equation.",
+        "An equation must hold throughout the claimed solution interval, not at one isolated input.",
+        "Linearity or nonlinearity alone is not a valid verification criterion."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It is not a solution on an interval: h′(x)=1 differs from h(x)=1+x except at 0."
+      }
+    },
+    {
+      "questionId": "calc-ab-7-2-010",
+      "independentReasoning": "Substitute every listed constant into the original right side, rather than dividing first by y−2. The resulting values are 0,4,16,4, so exactly one matches the common zero derivative. This is verification of a simple equation, not a logistic population model.",
+      "optionReview": [
+        "The derivative is zero but the right side is 4.",
+        "The derivative is zero but the right side is 16.",
+        "The derivative is zero but the right side is 4.",
+        "Its derivative and the right side both equal zero."
+      ],
+      "check": {
+        "type": "differential-solution",
+        "rhs": [
+          "pow",
+          [
+            "sub",
+            "y",
+            2
+          ],
+          2
+        ],
+        "functions": {
+          "y=2": 2,
+          "y=0": 0,
+          "y=−2": -2,
+          "y=4": 4
+        },
+        "samplePoints": [
+          -1,
+          0,
+          1
+        ],
+        "order": 1
+      }
+    },
+    {
+      "questionId": "calc-ab-7-2-011",
+      "independentReasoning": "Check the original function’s real domain before simplifying the equation. At any positive input such as 1/2 or 3, direct differentiation verifies it. A different formula ln|x| could cover a negative interval, but that is not the given real function ln x and still would not include zero.",
+      "optionReview": [
+        "The derivative identity and the real domain must both be respected.",
+        "That cancellation excludes zero and does not define ln x at negative inputs.",
+        "A negative function value does not prevent the derivative equation from holding.",
+        "The identity x·(1/x)=1 holds at every positive input."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The verification is valid on x>0; ln x is not a real function for x≤0."
+      }
+    }
+  ]
+}

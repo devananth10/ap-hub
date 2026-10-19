@@ -1,0 +1,342 @@
+{
+  "topicNumber": "7.1",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "cbf8d20450dfb04e99fe7ccd9ae52a44d8b9a3ed5ec0e7c1238fc35ef5caeb4d",
+  "scopeReview": "CED FUN-7.A.1: translate verbal rate statements into differential equations, respecting dependent/independent variables, derivative order, units, signs and initial data. Contexts supply every modeling law explicitly; no logistic model, Euler method or advanced differential-equation solution technique is introduced. Hypothetical numerical state tests corroborate mathematical rate relations, not unproved trajectories.",
+  "varietyReview": "Calibrated proportional growth, signed decay, temperature difference, inflow-minus-outflow, additive interest/deposit rate, acceleration versus velocity, a spatial radius derivative, square-root time rate, initial velocity versus position, verbal variable-square grouping and initial volume versus instantaneous rate. Four state-sample recomputations and seven separate verbal/dimensional reasoning reviews.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-7-1-001",
+      "independentReasoning": "Independently check the units and calibration: (minute⁻¹)·organisms gives organisms/minute and 0.04·300=12. Doubling the population doubles the rate to 24, while halving it gives 6, as the verbal proportionality requires.",
+      "optionReview": [
+        "This uses the observed rate as the proportionality constant without dividing by population.",
+        "The proportionality constant is 12/300=0.04 per minute.",
+        "This makes the rate proportional to time rather than population.",
+        "This models a constant rate rather than a population-dependent rate."
+      ],
+      "check": {
+        "type": "differential-model",
+        "samples": [
+          [
+            0,
+            300,
+            12
+          ],
+          [
+            1,
+            600,
+            24
+          ],
+          [
+            2,
+            150,
+            6
+          ]
+        ],
+        "candidateRhs": {
+          "dP/dt=0.04P": [
+            "mul",
+            0.04,
+            "y"
+          ],
+          "dP/dt=12P": [
+            "mul",
+            12,
+            "y"
+          ],
+          "dP/dt=0.04t": [
+            "mul",
+            0.04,
+            "x"
+          ],
+          "dP/dt=0.04": 0.04
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-7-1-002",
+      "independentReasoning": "At M=10 the rule gives M′=−0.7 mass units/day; at M=20 it gives −1.4, doubling the loss magnitude. The rearranged wrong equation would imply M′=−M/0.07, which has the wrong coefficient. Both direction and scale are independently checked.",
+      "optionReview": [
+        "This describes growth of a positive mass.",
+        "This makes the rate depend on elapsed time rather than remaining mass.",
+        "The derivative is negative while the remaining positive mass sets its magnitude.",
+        "Rearranging this gives a reciprocal decay coefficient, not the stated one."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "dM/dt=−0.07M"
+      }
+    },
+    {
+      "questionId": "calc-ab-7-1-003",
+      "independentReasoning": "Check three separate states: T=100 gives −12 °C/min, T=40 gives −3 °C/min and T=20 gives 0. Each follows the stated difference law and rejects the absolute-temperature and wrong-sign alternatives. No differential-equation solution formula is assumed.",
+      "optionReview": [
+        "This predicts continuing cooling even at the surrounding temperature.",
+        "This moves a hotter object away from the surrounding temperature.",
+        "This adds rather than subtracts the reference temperature.",
+        "The temperature difference from the surroundings, not absolute temperature, sets the signed rate."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "dT/dt=−0.15(T−20)"
+      }
+    },
+    {
+      "questionId": "calc-ab-7-1-004",
+      "independentReasoning": "At hypothetical volumes 100,200,250 L, independently compute inflow minus outflow as 3,1,0 L/min. The coefficient 0.02 has inverse-minute units. These state checks corroborate the model; they do not assert the tank visits those volumes at specified times.",
+      "optionReview": [
+        "Net volume rate equals inflow minus outflow.",
+        "This counts outflow as an additional inflow.",
+        "This omits the stated entering flow.",
+        "This replaces the volume-dependent outflow by a time-dependent rule."
+      ],
+      "check": {
+        "type": "differential-model",
+        "samples": [
+          [
+            0,
+            100,
+            3
+          ],
+          [
+            1,
+            200,
+            1
+          ],
+          [
+            2,
+            250,
+            0
+          ]
+        ],
+        "candidateRhs": {
+          "dV/dt=5−0.02V": [
+            "sub",
+            5,
+            [
+              "mul",
+              0.02,
+              "y"
+            ]
+          ],
+          "dV/dt=5+0.02V": [
+            "add",
+            5,
+            [
+              "mul",
+              0.02,
+              "y"
+            ]
+          ],
+          "dV/dt=−0.02V": [
+            "mul",
+            -0.02,
+            "y"
+          ],
+          "dV/dt=5−0.02t": [
+            "sub",
+            5,
+            [
+              "mul",
+              0.02,
+              "x"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-7-1-005",
+      "independentReasoning": "For balances 0,1000,2000 dollars, the stated rules independently give rates 40,50,60 dollars/month. The deposit rate remains 40 regardless of balance. The last option is rejected separately because it asserts a balance formula whose derivative is only 0.01.",
+      "optionReview": [
+        "This incorrectly subjects the deposit rate to another factor 0.01.",
+        "The proportional interest rate and constant deposit rate add.",
+        "This swaps the constant flow and proportional coefficient.",
+        "This gives a balance formula for a different constant-rate model."
+      ],
+      "check": {
+        "type": "differential-model",
+        "samples": [
+          [
+            0,
+            0,
+            40
+          ],
+          [
+            1,
+            1000,
+            50
+          ],
+          [
+            2,
+            2000,
+            60
+          ]
+        ],
+        "candidateRhs": {
+          "dB/dt=0.01B+40": [
+            "add",
+            [
+              "mul",
+              0.01,
+              "y"
+            ],
+            40
+          ],
+          "dB/dt=0.01(B+40)": [
+            "mul",
+            0.01,
+            [
+              "add",
+              "y",
+              40
+            ]
+          ],
+          "dB/dt=40B+0.01": [
+            "add",
+            [
+              "mul",
+              40,
+              "y"
+            ],
+            0.01
+          ],
+          "B(t)=0.01t+40": 0.01
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-7-1-006",
+      "independentReasoning": "Check physical dimensions: s″ and 9.8 have length/time² units, while coefficient 0.4 has inverse-time units multiplying velocity. At downward velocity 10, the acceleration rule gives 5.8; at zero velocity it gives 9.8. These checks verify sign and derivative roles without solving a second-order equation.",
+      "optionReview": [
+        "This substitutes position for velocity and velocity for acceleration.",
+        "This adds the stated resisting velocity term instead of subtracting it.",
+        "Acceleration is the second position derivative, and resistance depends on velocity.",
+        "This equates position to an expression that does not state the acceleration rule."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "s″(t)=9.8−0.4s′(t)"
+      }
+    },
+    {
+      "questionId": "calc-ab-7-1-007",
+      "independentReasoning": "The independently known area formula A=πr² has derivative 2πr, matching both the proportional rule and calibration. Its units are area per length, not area per time. This confirms the model without confusing it with the circumference-like rate expression itself.",
+      "optionReview": [
+        "No time dependence or radius time-rate has been specified.",
+        "This makes the observed rate constant instead of proportional to radius.",
+        "This equates area to a rate expression rather than modeling its derivative.",
+        "The coefficient is (6π)/3=2π and the independent variable is radius."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "dA/dr=2πr"
+      }
+    },
+    {
+      "questionId": "calc-ab-7-1-008",
+      "independentReasoning": "Independently evaluate the model at times 0,4,9 to get rates 0,6,9 cm/hour. Changing a hypothetical height at the same time leaves the rate unchanged, as required. The original square-root domain t≥0 is preserved.",
+      "optionReview": [
+        "The proportionality coefficient is 6/√4=3.",
+        "This uses the observed rate as the coefficient without dividing by √4.",
+        "This makes the rate proportional to t rather than √t.",
+        "This changes the independent-variable dependence into height dependence."
+      ],
+      "check": {
+        "type": "differential-model",
+        "samples": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            4,
+            2,
+            6
+          ],
+          [
+            9,
+            3,
+            9
+          ]
+        ],
+        "candidateRhs": {
+          "dH/dt=3√t": [
+            "mul",
+            3,
+            [
+              "sqrt",
+              "x"
+            ]
+          ],
+          "dH/dt=6√t": [
+            "mul",
+            6,
+            [
+              "sqrt",
+              "x"
+            ]
+          ],
+          "dH/dt=3t": [
+            "mul",
+            3,
+            "x"
+          ],
+          "dH/dt=3√H": [
+            "mul",
+            3,
+            [
+              "sqrt",
+              "y"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-7-1-009",
+      "independentReasoning": "Independently a compatible velocity is s′(t)=2t+3; differentiating it gives 2 and evaluating at 0 gives 3. Any position primitive of that velocity can differ by an arbitrary initial-position constant, confirming why the datum concerns s′ rather than s.",
+      "optionReview": [
+        "This invents position-proportional velocity and replaces initial velocity with position.",
+        "A constant rate of velocity change is acceleration, and the initial velocity is a first-derivative value.",
+        "This swaps the acceleration and initial-velocity data.",
+        "This position formula has constant velocity 2 and zero acceleration."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "s″(t)=2 and s′(0)=3"
+      }
+    },
+    {
+      "questionId": "calc-ab-7-1-010",
+      "independentReasoning": "At x=2,y=3 the stated rate is 1+2·9=19; the two incorrectly squared formulas give 37 and 13. At x=−1,y=2 it is −3. These independent state substitutions check the grouping and signs. The final algebraic-relation option is rejected separately because it has no rate expression.",
+      "optionReview": [
+        "This also squares x, which the statement does not say.",
+        "This squares the wrong variable.",
+        "The independent variable multiplies the square of the dependent quantity.",
+        "This equates the function value, rather than its rate, to the stated expression."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "dy/dx=1+xy²"
+      }
+    },
+    {
+      "questionId": "calc-ab-7-1-011",
+      "independentReasoning": "At time 0 the two model quantities have different units and values: 12 m³ of volume and 2 m³/hour of rate. An independent compatible volume is 12+2t+1−cos t, whose derivative and initial value reproduce both given statements. No full solution is required to formulate the model.",
+      "optionReview": [
+        "This swaps a volume with a rate and drops the time-varying term.",
+        "This treats the rate formula as the volume and the starting volume as a derivative.",
+        "The initial condition refers to time 0 and volume 12, not the reverse.",
+        "The rate rule and starting volume are recorded in different parts of the model."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "V′(t)=2+sin t, V(0)=12"
+      }
+    }
+  ]
+}
