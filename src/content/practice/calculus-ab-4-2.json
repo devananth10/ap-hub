@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 4,
+  "topicId": "topic-4-2",
+  "questions": [
+    {
+      "id": "calc-ab-4-2-001",
+      "prompt": "A particle’s position is s(t)=t³−6t²+9t meters, with t in seconds. Which pair is (velocity, speed) at t=2?",
+      "options": [
+        "(3 m/s, 3 m/s)",
+        "(−3 m/s, −3 m/s)",
+        "(−3 m/s, 3 m/s)",
+        "(2 m/s, 2 m/s)"
+      ],
+      "correctIndex": 2,
+      "explanation": "Differentiate position: v(t)=3t²−12t+9. At 2 this gives 12−24+9=−3 m/s. The speed is |v(2)|=3 m/s. The negative velocity identifies motion in the negative coordinate direction. A: This loses the negative sign of the velocity. B: Speed cannot be negative. C: Velocity is the signed derivative; speed is its absolute value. D: This substitutes the position value s(2)=2 for a rate."
+    },
+    {
+      "id": "calc-ab-4-2-002",
+      "prompt": "A particle has position s(t)=t⁴−4t² meters, with t in seconds. What is its acceleration at t=1?",
+      "options": [
+        "−4 m/s²",
+        "−3 m/s²",
+        "12 m/s²",
+        "4 m/s²"
+      ],
+      "correctIndex": 3,
+      "explanation": "Velocity is v=s′=4t³−8t, and acceleration is a=v′=12t²−8. At t=1 the acceleration is 12−8=4 m/s². Its units are position divided by time squared. A: This is the numerical velocity value at 1, relabeled as acceleration. B: This is the numerical position value at 1. C: This omits the second derivative −8 of the quadratic term. D: Twice differentiating gives a(t)=12t²−8."
+    },
+    {
+      "id": "calc-ab-4-2-003",
+      "prompt": "For t≥0, a particle has velocity v(t)=t²−4t+3 meters per second. On which interval is it moving in the negative direction?",
+      "options": [
+        "1<t<3",
+        "0<t<1",
+        "t>3",
+        "Every t>0"
+      ],
+      "correctIndex": 0,
+      "explanation": "Negative-direction motion requires v(t)<0. The factors t−1 and t−3 have opposite signs only for 1<t<3. At the endpoints the particle is at rest, so they are excluded. A: Factoring v=(t−1)(t−3) gives a negative product exactly between its roots. B: Both factors are negative there, so velocity is positive. C: Both factors are positive there, so velocity is positive. D: The sign of the polynomial is not negative throughout the time domain."
+    },
+    {
+      "id": "calc-ab-4-2-004",
+      "prompt": "At an instant, a particle moving along a line has velocity −4 m/s and acceleration −2 m/s². Which statement is correct?",
+      "options": [
+        "It moves in the negative direction and slows down at 2 m/s².",
+        "It moves in the negative direction and its speed is increasing at 2 m/s².",
+        "It moves in the positive direction because its speed is 4 m/s.",
+        "Its speed is −4 m/s and decreases at 2 m/s²."
+      ],
+      "correctIndex": 1,
+      "explanation": "Velocity −4 means negative-direction motion. Since velocity is nonzero, the local speed derivative is sign(v)a=(−1)(−2)=2 m/s². Thus the particle is speeding up while moving in the negative direction. A: Velocity and acceleration have the same sign, so the speed is increasing. B: With negative velocity, speed is −v locally, so its derivative is −a=2. C: Speed has no direction; the negative velocity specifies direction. D: Speed is the nonnegative magnitude of velocity."
+    },
+    {
+      "id": "calc-ab-4-2-005",
+      "prompt": "A particle has velocity v(t)=4t−8 m/s for 0≤t≤3 s. When does it change direction?",
+      "options": [
+        "At t=0 s, because observation begins there.",
+        "At t=1 s, because velocity is −4 m/s.",
+        "At t=2 s, because velocity changes from negative to positive.",
+        "Never, because acceleration is the constant 4 m/s²."
+      ],
+      "correctIndex": 2,
+      "explanation": "Solve v(t)=0 to get t=2. For times just before 2 the velocity is negative; just after 2 it is positive. This sign change establishes a change of direction. Constant acceleration does not prevent a reversal. A: Starting the recorded interval does not establish a direction reversal. B: A negative velocity value by itself is not a reversal. C: The zero at 2 separates opposite-sign velocity intervals. D: Constant positive acceleration can carry velocity through zero."
+    },
+    {
+      "id": "calc-ab-4-2-006",
+      "prompt": "A particle has velocity v(t)=(t−2)² m/s near t=2 s. Which statement is correct?",
+      "options": [
+        "It changes direction because every zero of velocity is a reversal.",
+        "It is never at rest because a square is always strictly positive.",
+        "It moves in the negative direction immediately before 2 s.",
+        "It is momentarily at rest at 2 s but does not change direction there."
+      ],
+      "correctIndex": 3,
+      "explanation": "The square gives v(2)=0, so the particle is at rest at that instant. For t≠2 sufficiently near 2, (t−2)²>0 on both sides. Thus there is no direction change despite the zero velocity. A: A sign change, not merely a zero value, is required. B: The square equals zero at its base zero. C: The squared quantity is positive before 2 as well as after it. D: Velocity is zero at 2 and positive on both sides."
+    },
+    {
+      "id": "calc-ab-4-2-007",
+      "prompt": "The graph below shows velocity v(t) in m/s versus time t in seconds. What is the acceleration at t=1 s?",
+      "options": [
+        "2 m/s²",
+        "0 m/s²",
+        "4 m/s²",
+        "−2 m/s²"
+      ],
+      "correctIndex": 0,
+      "explanation": "Acceleration is v′(t), the slope of the velocity graph. Time 1 lies inside the segment from (0,−2) to (2,2), so a(1)=[2−(−2)]/(2−0)=2 m/s². Zero velocity at that instant does not imply zero acceleration. A: Acceleration is the local graph slope (2−(−2))/(2−0). B: This uses the velocity height v(1)=0 instead of its slope. C: This uses the velocity rise without dividing by the 2-second run. D: This confuses the initial velocity height with acceleration."
+    },
+    {
+      "id": "calc-ab-4-2-008",
+      "prompt": "Use the velocity table below. Which value best estimates acceleration at t=2 s using a centered secant over the nearest displayed times on either side?",
+      "options": [
+        "7 m/s²",
+        "3.5 m/s²",
+        "−1 m/s²",
+        "5 m/s²"
+      ],
+      "correctIndex": 1,
+      "explanation": "The nearest displayed times on either side of 2 are 1 and 3. The centered secant estimate is a(2)≈[4−(−3)]/(3−1)=7/2=3.5 m/s². The finite table alone does not establish an exact derivative. A: This omits division by the 2-second time gap. B: Use [v(3)−v(1)]/(3−1)=[4−(−3)]/2. C: This is the velocity at t=2, not its rate of change. D: This is only the forward secant from 2 to 3, not the requested centered estimate."
+    },
+    {
+      "id": "calc-ab-4-2-009",
+      "prompt": "A particle has position s(t)=e^(−t) meters for t≥0, with time in seconds. Which description is correct just after t=0?",
+      "options": [
+        "It moves in the positive direction and speeds up.",
+        "It moves in the negative direction and speeds up.",
+        "It moves in the negative direction and slows down.",
+        "It is at rest because position is approaching zero."
+      ],
+      "correctIndex": 2,
+      "explanation": "Differentiate position to obtain v=−e^(−t) and a=e^(−t). Thus the particle moves toward decreasing position while its speed |v|=e^(−t) decreases. A positive position does not imply positive-direction motion. A: Position is positive, but direction depends on its negative derivative. B: Opposite signs of nonzero velocity and acceleration make speed decrease. C: Velocity is −e^(−t)<0 while acceleration is e^(−t)>0, so speed decreases. D: Velocity is nonzero at every finite time."
+    },
+    {
+      "id": "calc-ab-4-2-010",
+      "prompt": "A particle has position s(t)=t³−3t meters on 0≤t≤2 seconds. What total distance does it travel on this interval?",
+      "options": [
+        "2 m",
+        "4 m",
+        "0 m",
+        "6 m"
+      ],
+      "correctIndex": 3,
+      "explanation": "Velocity is 3t²−3, negative on (0,1) and positive on (1,2), with one reversal at 1. Positions are s(0)=0, s(1)=−2 and s(2)=2. Total distance is |−2−0|+|2−(−2)|=2+4=6 m, whereas net displacement is 2 m. A: This is the net displacement, which cancels motion in opposite directions. B: This counts only the motion after the turn. C: Returning through the starting position does not erase traveled distance. D: It moves from position 0 to −2, then from −2 to 2, for distance 2+4."
+    },
+    {
+      "id": "calc-ab-4-2-011",
+      "prompt": "Two coordinate systems describe the same straight-line motion with positions r(t)=s(t)+10 meters. Which statement is correct wherever s is twice differentiable?",
+      "options": [
+        "The velocities and accelerations are equal in both coordinate systems.",
+        "The velocity described by r exceeds that of s by 10 m/s.",
+        "The acceleration described by r exceeds that of s by 10 m/s².",
+        "The speed in the r system is always 10 m/s."
+      ],
+      "correctIndex": 0,
+      "explanation": "Differentiating r=s+10 gives r′=s′ and r″=s″. Thus velocity, acceleration and speed are unchanged by a fixed shift of the coordinate origin. The positions themselves differ, but their time increments are identical. A: The constant position offset has zero first and second derivatives. B: A constant position offset is not a velocity offset. C: Differentiating a constant twice still gives zero. D: Changing the coordinate origin does not prescribe a constant speed."
+    }
+  ]
+}

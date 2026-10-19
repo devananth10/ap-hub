@@ -807,5 +807,26 @@
         "−1"
       ]
     ]
+  },
+  "calc-ab-4-2-008": {
+    "caption": "Measured velocity v(t) of a particle moving along a line.",
+    "headers": [
+      "t (s)",
+      "v(t) (m/s)"
+    ],
+    "rows": [
+      [
+        "1",
+        "−3"
+      ],
+      [
+        "2",
+        "−1"
+      ],
+      [
+        "3",
+        "4"
+      ]
+    ]
   }
 }

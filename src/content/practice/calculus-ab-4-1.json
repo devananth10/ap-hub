@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 4,
+  "topicId": "rates",
+  "questions": [
+    {
+      "id": "calc-ab-4-1-001",
+      "prompt": "W(t) is the water volume in a tank, in liters, t minutes after observation begins. Which statement correctly interprets W′(6)=−12?",
+      "options": [
+        "At t=6 min, the tank contains −12 L.",
+        "At t=6 min, the volume is decreasing at an instantaneous rate of 12 L/min.",
+        "Exactly 12 L leave the tank during every minute after t=6.",
+        "During the first 6 min, exactly 12 L leave the tank."
+      ],
+      "correctIndex": 1,
+      "explanation": "W′(6) measures instantaneous volume change per minute at time 6. Its negative value means volume is decreasing at that instant, with magnitude 12 L/min. It does not specify the tank’s volume or a total change over a finite interval. A: This confuses the derivative with the volume itself. B: The sign gives decrease, and the derivative units are liters per minute. C: One instantaneous rate does not establish a constant future rate. D: The derivative at a single time is not total interval change."
+    },
+    {
+      "id": "calc-ab-4-1-002",
+      "prompt": "C(q) is production cost in dollars, where q counts hundreds of items. What does C′(3)=45 mean?",
+      "options": [
+        "At 3 items, total cost is 45 dollars.",
+        "At 300 items, cost increases at 45 dollars per single item.",
+        "At 300 items, cost is increasing instantaneously at 45 dollars per hundred items.",
+        "The total cost of producing the first 300 items is exactly 135 dollars."
+      ],
+      "correctIndex": 2,
+      "explanation": "The independent variable is measured in hundreds of items. Thus q=3 means 300 items, and C′ has units dollars per hundred items. The stated rate is 45 dollars per hundred items at that production level, equivalent locally to 0.45 dollar per item. A: This misreads both the scaled input and the derivative as a total. B: A hundred-item input unit cannot be replaced by one item without rescaling the rate. C: The input q=3 represents 300 items, and derivative units are dollars per hundred items. D: An instantaneous marginal rate does not determine an interval total."
+    },
+    {
+      "id": "calc-ab-4-1-003",
+      "prompt": "P(h) is air pressure in kilopascals at altitude h kilometers. Which units belong to P′(2)?",
+      "options": [
+        "Kilopascals per hour.",
+        "Kilometers per kilopascal.",
+        "Kilopascals times kilometers.",
+        "Kilopascals per kilometer."
+      ],
+      "correctIndex": 3,
+      "explanation": "The quotient [P(2+Δh)−P(2)]/Δh has pressure in its numerator and altitude in its denominator. Its units, and those of the derivative limit, are kPa/km. The number 2 specifies altitude, not elapsed time. A: Time is not the independent variable in P(h). B: This reverses the derivative’s input and output units. C: A difference quotient divides by an altitude change rather than multiplying by it. D: A derivative divides output pressure units by input altitude units."
+    },
+    {
+      "id": "calc-ab-4-1-004",
+      "prompt": "T(t) is temperature in °C after t minutes. If lim(h→0)[T(4+h)−T(4)]/h=−0.8, which statement follows?",
+      "options": [
+        "At 4 min, temperature is falling at an instantaneous rate of 0.8 °C/min.",
+        "T(4)=−0.8 °C.",
+        "Temperature falls by exactly 0.8 °C from t=4 to t=5.",
+        "The average rate from t=0 to t=4 is −0.8 °C/min."
+      ],
+      "correctIndex": 0,
+      "explanation": "The given limit is exactly the definition of T′(4). Its value −0.8 gives a negative instantaneous temperature rate at 4 min, in °C/min. The local limit does not determine a fixed-interval average or exact future decrement. A: The displayed limit is T′(4), with temperature-over-time units. B: The limit is a rate, not the function value. C: An instantaneous derivative alone does not give an exact one-minute change. D: The shrinking interval around 4 differs from the fixed interval [0,4]."
+    },
+    {
+      "id": "calc-ab-4-1-005",
+      "prompt": "B(t) is biomass in grams after t days and is differentiable near t=2. From B′(2)=0 alone, which conclusion is justified?",
+      "options": [
+        "Biomass is constant on an interval around day 2.",
+        "The instantaneous biomass rate at day 2 is zero.",
+        "Day 2 must be a local maximum of biomass.",
+        "B(2)=0 grams."
+      ],
+      "correctIndex": 1,
+      "explanation": "The derivative statement means a zero instantaneous rate at the specified day. It does not alone establish constant biomass, a local maximum or a zero amount. Those assertions require information beyond the single derivative value. A: A derivative at one point does not determine nearby derivatives. B: The derivative gives a zero local rate but no additional interval or extremum conclusion by itself. C: A zero derivative can occur without a local extremum. D: A zero slope does not imply zero height."
+    },
+    {
+      "id": "calc-ab-4-1-006",
+      "prompt": "R(t) measures stored volume in units of 100 liters, with t in hours. If R′(2)=3, what is the instantaneous volume rate in liters per hour at t=2?",
+      "options": [
+        "3 L/h",
+        "100 L/h",
+        "300 L/h",
+        "30 L/h"
+      ],
+      "correctIndex": 2,
+      "explanation": "One R unit represents 100 L. The physical volume is V(t)=100R(t), so V′(2)=100R′(2)=100·3=300 L/h. Scaling the output scales its derivative by the same factor. A: This ignores the 100-liter output scale. B: This uses the output unit size but omits the derivative magnitude 3. C: Multiply the rate 3 stored-volume units per hour by 100 liters per unit. D: This applies an incorrect scale factor of 10 rather than 100."
+    },
+    {
+      "id": "calc-ab-4-1-007",
+      "prompt": "C(q) is a smooth cost function in dollars, where q is the number of items. Which units and meaning belong to C″(50)=2?",
+      "options": [
+        "Dollars per item; total cost is exactly 2 dollars at 50 items.",
+        "Items² per dollar; output is increasing by 2 items.",
+        "Dollars; total cost increases by exactly 2 dollars over every next item.",
+        "Dollars per item²; at 50 items, marginal cost is increasing at 2 dollars per item for each additional item, instantaneously."
+      ],
+      "correctIndex": 3,
+      "explanation": "C′ has units dollars/item. Differentiating C′ with respect to q divides by items again, giving dollars/item². Positive C″ means the marginal cost C′ is increasing locally; its instantaneous rate with respect to q is 2 at q=50. A: This uses first-derivative units and confuses a second rate with total height. B: This reverses the derivative units and changes the dependent quantity. C: A second derivative is not a fixed finite increment of total cost. D: The second derivative measures the rate of the first derivative with respect to the same item variable."
+    },
+    {
+      "id": "calc-ab-4-1-008",
+      "prompt": "P(t) is a town’s population in thousands of people, t years after a census. If P(2)=18 and P′(2)=0.3, which interpretation is correct?",
+      "options": [
+        "Two years after the census, population is 18000 people and is growing instantaneously at 300 people per year.",
+        "Population is 300 people and is growing at 18000 people per year.",
+        "Population is 18 people and is growing at 0.3 person per year.",
+        "Exactly 300 people were added in each of the first two years."
+      ],
+      "correctIndex": 0,
+      "explanation": "P(2)=18 thousand means a population of 18000 at the stated time. P′(2)=0.3 thousand/year means an instantaneous positive rate of 300 people/year then. Values and rates must be interpreted separately before converting units. A: Rescale both the population and its derivative by 1000, keeping their different units. B: This swaps the function value and derivative. C: This ignores the thousand-person output scale. D: The instantaneous derivative at year 2 does not determine earlier yearly totals."
+    },
+    {
+      "id": "calc-ab-4-1-009",
+      "prompt": "T(t) is a differentiable temperature function with t in minutes. Which quantity answers “How fast is temperature changing exactly 5 minutes after observation begins?”",
+      "options": [
+        "T(5)",
+        "T′(5)",
+        "[T(5)−T(0)]/5",
+        "T″(5)"
+      ],
+      "correctIndex": 1,
+      "explanation": "“How fast” at an exact time asks for the first derivative at that time: T′(5), in temperature units per minute. A fixed secant gives an average; the second derivative measures change of the rate rather than the requested temperature rate. A: This is temperature itself, not its rate. B: A derivative at the specified time is the instantaneous temperature rate. C: This is an average rate over the first five minutes. D: This is the rate at which the temperature rate is changing."
+    },
+    {
+      "id": "calc-ab-4-1-010",
+      "prompt": "A differentiable radius function r(t) is locally invertible near t=4 and satisfies r′(4)=2.5 cm/s. What is dt/dr at the corresponding radius?",
+      "options": [
+        "2.5 s/cm",
+        "−0.4 s/cm",
+        "0.4 s/cm",
+        "0.4 cm/s"
+      ],
+      "correctIndex": 2,
+      "explanation": "The local inverse derivative is dt/dr=1/(dr/dt). Thus its value is 1/2.5=0.4, and its units are seconds per centimeter. Both the numerical rate and its units must be inverted. A: This reverses the units without reciprocating the numerical value. B: A positive nonzero local rate has a positive reciprocal. C: The inverse rate is the reciprocal of the nonzero radius rate. D: The number is reciprocated but the units are not."
+    },
+    {
+      "id": "calc-ab-4-1-011",
+      "prompt": "The graph below shows total scanned pages N(t), with time t in minutes on the horizontal axis and pages on the vertical axis. What is N′(3), in pages per minute?",
+      "options": [
+        "12 pages/min",
+        "16 pages/min",
+        "1/6 pages/min",
+        "6 pages/min"
+      ],
+      "correctIndex": 3,
+      "explanation": "Time 3 lies inside the straight segment joining (2,10) and (4,22). Its slope is (22−10)/(4−2)=12/2=6 pages/min. Because the graph is exactly straight near 3, this is the local derivative, not just a broad average estimate. A: This uses the page rise without dividing by elapsed time. B: This is the graph height N(3), relabeled incorrectly as a rate. C: This reverses rise over run. D: The local segment has rise 22−10=12 pages over 4−2=2 minutes."
+    }
+  ]
+}

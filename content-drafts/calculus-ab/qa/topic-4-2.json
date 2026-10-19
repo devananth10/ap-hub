@@ -1,0 +1,212 @@
+{
+  "topicNumber": "4.2",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "9c0651862f5666ba174f287fa99e7fafb4ec18d232915272f17489a28dfc7c8e",
+  "scopeReview": "CED CHA-3.B.1 rectilinear motion connecting position, signed velocity, nonnegative speed and acceleration. Direction changes require velocity sign changes; finite-data rates explicitly estimates. Original graphs/tables included. Total distance uses monotone position segments, without requiring integration.",
+  "varietyReview": "Velocity versus speed, polynomial acceleration, sign intervals, negative-direction speeding up, actual reversal, rest without reversal, velocity graph slope, centered acceleration table estimate, exponential slowing, distance versus displacement and coordinate-origin shifts.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-4-2-001",
+      "independentReasoning": "The original position quotient at t=2 is −3+h², so its limit is −3 independently of a memorized polynomial derivative. Taking the absolute value gives speed 3; position s(2)=2 is separately checked as a distractor.",
+      "optionReview": [
+        "This loses the negative sign of the velocity.",
+        "Speed cannot be negative.",
+        "Velocity is the signed derivative; speed is its absolute value.",
+        "This substitutes the position value s(2)=2 for a rate."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "(−3 m/s, 3 m/s)"
+      }
+    },
+    {
+      "questionId": "calc-ab-4-2-002",
+      "independentReasoning": "Expand the original centered second difference at t=1; it equals 4+2h², tending to 4. This independently corroborates the two successive derivative steps. Position and velocity values at 1 are −3 m and −4 m/s, not acceleration.",
+      "optionReview": [
+        "This is the numerical velocity value at 1, relabeled as acceleration.",
+        "This is the numerical position value at 1.",
+        "This omits the second derivative −8 of the quadratic term.",
+        "Twice differentiating gives a(t)=12t²−8."
+      ],
+      "check": {
+        "type": "higher-derivative",
+        "order": 2,
+        "inputX": 1,
+        "expression": [
+          "sub",
+          [
+            "pow",
+            "x",
+            4
+          ],
+          [
+            "mul",
+            4,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ]
+        ],
+        "step": 0.001,
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-4-2-003",
+      "independentReasoning": "Test the sign cells using t=1/2,2,4, yielding positive, negative and positive velocities. The only polynomial zeros in the nonnegative time domain are 1 and 3, so these cells exhaust the possible motion signs.",
+      "optionReview": [
+        "Factoring v=(t−1)(t−3) gives a negative product exactly between its roots.",
+        "Both factors are negative there, so velocity is positive.",
+        "Both factors are positive there, so velocity is positive.",
+        "The sign of the polynomial is not negative throughout the time domain."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "1<t<3"
+      }
+    },
+    {
+      "questionId": "calc-ab-4-2-004",
+      "independentReasoning": "Use a local velocity v(t+h)=−4−2h+o(h). For sufficiently small h it stays negative, so its magnitude is 4+2h+o(h), with rate +2. This independently distinguishes acceleration sign from speed change.",
+      "optionReview": [
+        "Velocity and acceleration have the same sign, so the speed is increasing.",
+        "With negative velocity, speed is −v locally, so its derivative is −a=2.",
+        "Speed has no direction; the negative velocity specifies direction.",
+        "Speed is the nonnegative magnitude of velocity."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It moves in the negative direction and its speed is increasing at 2 m/s²."
+      }
+    },
+    {
+      "questionId": "calc-ab-4-2-005",
+      "independentReasoning": "Check actual signs at t=1 and t=3: −4 and +4 m/s. The linear velocity has only one zero, and it lies inside the observed interval, so it supplies the only reversal there. Acceleration is a rate of velocity, not direction itself.",
+      "optionReview": [
+        "Starting the recorded interval does not establish a direction reversal.",
+        "A negative velocity value by itself is not a reversal.",
+        "The zero at 2 separates opposite-sign velocity intervals.",
+        "Constant positive acceleration can carry velocity through zero."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "At t=2 s, because velocity changes from negative to positive."
+      }
+    },
+    {
+      "questionId": "calc-ab-4-2-006",
+      "independentReasoning": "Evaluate v(2−h)=h² and v(2+h)=h² for any small positive h. The identical positive signs directly rule out a reversal. This is a counterexample to treating every stationary instant as a direction change.",
+      "optionReview": [
+        "A sign change, not merely a zero value, is required.",
+        "The square equals zero at its base zero.",
+        "The squared quantity is positive before 2 as well as after it.",
+        "Velocity is zero at 2 and positive on both sides."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It is momentarily at rest at 2 s but does not change direction there."
+      }
+    },
+    {
+      "questionId": "calc-ab-4-2-007",
+      "independentReasoning": "Read the actual line-segment endpoints and compute rise over run. The line is v=−2+2t nearby, giving height zero at 1 but slope 2. The target is strictly inside the segment rather than at a corner.",
+      "optionReview": [
+        "Acceleration is the local graph slope (2−(−2))/(2−0).",
+        "This uses the velocity height v(1)=0 instead of its slope.",
+        "This uses the velocity rise without dividing by the 2-second run.",
+        "This confuses the initial velocity height with acceleration."
+      ],
+      "check": {
+        "type": "figure-slope",
+        "inputX": 1,
+        "figureSha256": "cb12286389d04d95fc4d62e0a568970050fb9596cc519a6fa4ce4cfe037e4556"
+      },
+      "figureSha256": "cb12286389d04d95fc4d62e0a568970050fb9596cc519a6fa4ce4cfe037e4556"
+    },
+    {
+      "questionId": "calc-ab-4-2-008",
+      "independentReasoning": "Recompute the actual table endpoint change as +7 m/s and interval length as 2 s. Their ratio is 3.5 m/s². The separate forward estimate is (4−(−1))/(3−2)=5, confirming why it is not the requested method.",
+      "optionReview": [
+        "This omits division by the 2-second time gap.",
+        "Use [v(3)−v(1)]/(3−1)=[4−(−3)]/2.",
+        "This is the velocity at t=2, not its rate of change.",
+        "This is only the forward secant from 2 to 3, not the requested centered estimate."
+      ],
+      "check": {
+        "type": "table-rate",
+        "start": 1,
+        "end": 3
+      },
+      "tableSha256": "8a42e9c8dd7aeb1f1e8f98d99cba4f03ee33b4c9c2a8df55e98ffab21e965c28"
+    },
+    {
+      "questionId": "calc-ab-4-2-009",
+      "independentReasoning": "The exponential is positive for every finite time, so the velocity never vanishes and retains its negative sign. Differentiate the exact speed expression e^(−t) to get a negative rate, independently establishing slowing rather than relying only on a sign mnemonic.",
+      "optionReview": [
+        "Position is positive, but direction depends on its negative derivative.",
+        "Opposite signs of nonzero velocity and acceleration make speed decrease.",
+        "Velocity is −e^(−t)<0 while acceleration is e^(−t)>0, so speed decreases.",
+        "Velocity is nonzero at every finite time."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It moves in the negative direction and slows down."
+      }
+    },
+    {
+      "questionId": "calc-ab-4-2-010",
+      "independentReasoning": "Factor velocity as 3(t−1)(t+1), so 1 is the only interior zero on the given interval. This proves the two monotone motion segments used in the distance sum. Independently evaluate all three position values and add their absolute successive changes.",
+      "optionReview": [
+        "This is the net displacement, which cancels motion in opposite directions.",
+        "This counts only the motion after the turn.",
+        "Returning through the starting position does not erase traveled distance.",
+        "It moves from position 0 to −2, then from −2 to 2, for distance 2+4."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          3,
+          2
+        ],
+        "expression": [
+          "add",
+          [
+            "abs",
+            [
+              "sub",
+              -2,
+              0
+            ]
+          ],
+          [
+            "abs",
+            [
+              "sub",
+              2,
+              -2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-4-2-011",
+      "independentReasoning": "Directly compare r(t+h)−r(t) with s(t+h)−s(t); the offsets cancel for every h. The velocity limits are therefore equal, and differentiating their equality yields equal accelerations. No moving reference frame is being introduced.",
+      "optionReview": [
+        "The constant position offset has zero first and second derivatives.",
+        "A constant position offset is not a velocity offset.",
+        "Differentiating a constant twice still gives zero.",
+        "Changing the coordinate origin does not prescribe a constant speed."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The velocities and accelerations are equal in both coordinate systems."
+      }
+    }
+  ]
+}

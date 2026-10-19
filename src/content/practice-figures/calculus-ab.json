@@ -920,5 +920,77 @@
     ],
     "dots": [],
     "description": "A continuous piecewise linear graph joins (−2,−3) to (0,1) and then to (2,−1). The two segments share their included point (0,1). Their slopes are respectively 2 on the left and −1 on the right, forming a corner at 0."
+  },
+  "calc-ab-4-1-011": {
+    "xRange": [
+      0,
+      6
+    ],
+    "yRange": [
+      0,
+      28
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            4,
+            22
+          ],
+          [
+            6,
+            26
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": [],
+    "description": "The horizontal axis is time t in minutes and the vertical axis is total scanned pages N(t). Straight segments join (0,0), (2,10), (4,22) and (6,26). Time 3 is inside the segment from (2,10) to (4,22)."
+  },
+  "calc-ab-4-2-007": {
+    "xRange": [
+      0,
+      6
+    ],
+    "yRange": [
+      -3,
+      3
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            0,
+            -2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            6,
+            -2
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": [],
+    "description": "The horizontal axis is time t in seconds, and the vertical axis is velocity v in meters per second. Straight segments join (0,−2), (2,2), (4,2) and (6,−2). Time 1 is strictly inside the first segment."
   }
 }

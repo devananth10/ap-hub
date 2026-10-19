@@ -256,3 +256,10 @@ test('higher-order models distinguish derivative orders and implicit second-deri
   const wrong=structuredClone(batch.questions[6]);wrong.correctIndex=wrong.options.indexOf('25/64');
   assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[6]),/higher derivative key/);
 });
+test('inverse rate checks distinguish equal numbers with different dimensions',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='rates');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-4-1.json','utf8'));
+  verifyCalculusQuestion(batch.questions[9],qa.questions[9]);
+  const bad=structuredClone(batch.questions[9]);bad.correctIndex=bad.options.indexOf('0.4 cm/s');
+  assert.throws(()=>verifyCalculusQuestion(bad,qa.questions[9]),/inverse quantity key/);
+});

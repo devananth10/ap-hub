@@ -1,0 +1,178 @@
+{
+  "topicNumber": "4.1",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "4c7077fe515574abec2e9bba9b26b82baa18205d297a1a1029e4d782085a6cb9",
+  "scopeReview": "CED CHA-3.A.1–3 derivative as instantaneous rate in context and output/input units. Scaled quantities, defined variable meanings and finite-versus-instantaneous distinctions explicit. Second-rate units follow earlier higher-order differentiation; no integration or optimization needed.",
+  "varietyReview": "Signed volume interpretation, scaled item costs, altitude rather than time, a derivative-definition interpretation, zero-rate limits, volume conversion, second-rate units, population height/rate distinction, choosing the requested derivative, inverse units and an actual pages/time graph.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-4-1-001",
+      "independentReasoning": "The dimensions are output liters divided by input minutes. Local functions W(6+h)=100−12h and W(6+h)=100−12h+h² share the stated derivative but different future rates. Varying the constant height separately shows the derivative does not determine W(6).",
+      "optionReview": [
+        "This confuses the derivative with the volume itself.",
+        "The sign gives decrease, and the derivative units are liters per minute.",
+        "One instantaneous rate does not establish a constant future rate.",
+        "The derivative at a single time is not total interval change."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "At t=6 min, the volume is decreasing at an instantaneous rate of 12 L/min."
+      }
+    },
+    {
+      "questionId": "calc-ab-4-1-002",
+      "independentReasoning": "Let n be the number of individual items, so q=n/100. The derivative with respect to n is C′(n/100)/100, giving 45/100=0.45 at n=300. This unit conversion independently rejects the per-item error while preserving the instantaneous interpretation.",
+      "optionReview": [
+        "This misreads both the scaled input and the derivative as a total.",
+        "A hundred-item input unit cannot be replaced by one item without rescaling the rate.",
+        "The input q=3 represents 300 items, and derivative units are dollars per hundred items.",
+        "An instantaneous marginal rate does not determine an interval total."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "At 300 items, cost is increasing instantaneously at 45 dollars per hundred items."
+      }
+    },
+    {
+      "questionId": "calc-ab-4-1-003",
+      "independentReasoning": "Perform dimensional analysis on the defining difference quotient before taking the limit. No time variable or speed is given, so pressure change with altitude cannot be relabeled pressure change with time. The reciprocal units would instead describe an inverse relation.",
+      "optionReview": [
+        "Time is not the independent variable in P(h).",
+        "This reverses the derivative’s input and output units.",
+        "A difference quotient divides by an altitude change rather than multiplying by it.",
+        "A derivative divides output pressure units by input altitude units."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Kilopascals per kilometer."
+      }
+    },
+    {
+      "questionId": "calc-ab-4-1-004",
+      "independentReasoning": "Compare the displayed quotient’s base time and shrinking increment with a fixed secant quotient. A quadratic perturbation T(4+h)=20−0.8h+h² has the stated derivative but a different one-minute change, independently excluding the exact-interval claim.",
+      "optionReview": [
+        "The displayed limit is T′(4), with temperature-over-time units.",
+        "The limit is a rate, not the function value.",
+        "An instantaneous derivative alone does not give an exact one-minute change.",
+        "The shrinking interval around 4 differs from the fixed interval [0,4]."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "At 4 min, temperature is falling at an instantaneous rate of 0.8 °C/min."
+      }
+    },
+    {
+      "questionId": "calc-ab-4-1-005",
+      "independentReasoning": "The positive local model B(t)=5+(t−2)³ has B′(2)=0, height 5, no local maximum and no constant interval. This one counterexample disproves all three stronger claims while satisfying the stated differentiability and biomass interpretation.",
+      "optionReview": [
+        "A derivative at one point does not determine nearby derivatives.",
+        "The derivative gives a zero local rate but no additional interval or extremum conclusion by itself.",
+        "A zero derivative can occur without a local extremum.",
+        "A zero slope does not imply zero height."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The instantaneous biomass rate at day 2 is zero."
+      }
+    },
+    {
+      "questionId": "calc-ab-4-1-006",
+      "independentReasoning": "Write the physical volume difference quotient as 100[R(2+h)−R(2)]/h and take its limit. This independently verifies the scale factor and preserves time units; no hour-to-minute conversion is needed.",
+      "optionReview": [
+        "This ignores the 100-liter output scale.",
+        "This uses the output unit size but omits the derivative magnitude 3.",
+        "Multiply the rate 3 stored-volume units per hour by 100 liters per unit.",
+        "This applies an incorrect scale factor of 10 rather than 100."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          100,
+          2,
+          3
+        ],
+        "expression": [
+          "mul",
+          100,
+          3
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-4-1-007",
+      "independentReasoning": "Apply the derivative unit rule twice. The quotient [C′(50+h)−C′(50)]/h has numerator dollars/item and denominator items, so dollars/item². This establishes the units and the changing quantity without inferring a total cost or a constant future rate.",
+      "optionReview": [
+        "This uses first-derivative units and confuses a second rate with total height.",
+        "This reverses the derivative units and changes the dependent quantity.",
+        "A second derivative is not a fixed finite increment of total cost.",
+        "The second derivative measures the rate of the first derivative with respect to the same item variable."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Dollars per item²; at 50 items, marginal cost is increasing at 2 dollars per item for each additional item, instantaneously."
+      }
+    },
+    {
+      "questionId": "calc-ab-4-1-008",
+      "independentReasoning": "Define the population in people as N=1000P. Then N(2)=1000·18=18000 and N′(2)=1000·0.3=300 people/year. A local curve with a quadratic term can satisfy both facts while having different earlier and later annual changes.",
+      "optionReview": [
+        "Rescale both the population and its derivative by 1000, keeping their different units.",
+        "This swaps the function value and derivative.",
+        "This ignores the thousand-person output scale.",
+        "The instantaneous derivative at year 2 does not determine earlier yearly totals."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Two years after the census, population is 18000 people and is growing instantaneously at 300 people per year."
+      }
+    },
+    {
+      "questionId": "calc-ab-4-1-009",
+      "independentReasoning": "Assign dimensions to the four expressions: temperature, temperature/time and temperature/time² distinguish most choices. The average and instantaneous rates can share units but differ numerically, as T(t)=t² gives average 5 and instantaneous 10 at t=5.",
+      "optionReview": [
+        "This is temperature itself, not its rate.",
+        "A derivative at the specified time is the instantaneous temperature rate.",
+        "This is an average rate over the first five minutes.",
+        "This is the rate at which the temperature rate is changing."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "T′(5)"
+      }
+    },
+    {
+      "questionId": "calc-ab-4-1-010",
+      "independentReasoning": "A small radius increment is approximately 2.5 times the time increment in the given units. Reversing that local ratio gives Δt/Δr→1/2.5=0.4. The locally invertible/nonzero-rate hypotheses justify the inverse-rate step.",
+      "optionReview": [
+        "This reverses the units without reciprocating the numerical value.",
+        "A positive nonzero local rate has a positive reciprocal.",
+        "The inverse rate is the reciprocal of the nonzero radius rate.",
+        "The number is reciprocated but the units are not."
+      ],
+      "check": {
+        "type": "inverse-quantity",
+        "value": 2.5,
+        "unit": "cm/s"
+      }
+    },
+    {
+      "questionId": "calc-ab-4-1-011",
+      "independentReasoning": "Read the actual plotted endpoints and compute their output/input ratio. The segment’s midpoint height is 16 pages, a separate quantity. The graph target is strictly inside a segment, so no vertex derivative ambiguity occurs.",
+      "optionReview": [
+        "This uses the page rise without dividing by elapsed time.",
+        "This is the graph height N(3), relabeled incorrectly as a rate.",
+        "This reverses rise over run.",
+        "The local segment has rise 22−10=12 pages over 4−2=2 minutes."
+      ],
+      "check": {
+        "type": "figure-slope",
+        "inputX": 3,
+        "figureSha256": "cb2bece63632fd3f1e297d51bc066f903d76adf82867520ec33b3757a5cb0b45"
+      },
+      "figureSha256": "cb2bece63632fd3f1e297d51bc066f903d76adf82867520ec33b3757a5cb0b45"
+    }
+  ]
+}

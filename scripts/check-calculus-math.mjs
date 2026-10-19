@@ -117,7 +117,14 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='higher-derivative') {
+  if (review.check.type==='inverse-quantity') {
+    const check=review.check,units={'cm/s':[1,-1],'s/cm':[-1,1]};assert.ok(units[check.unit]&&check.value!==0);
+    assert.ok(question.prompt.includes(String(check.value)+' '+check.unit),'Original rate missing from prompt');
+    const expectedUnits=units[check.unit].map(power=>-power);
+    const matches=question.options.map(option=>{const parts=option.trim().split(' ');assert.equal(parts.length,2);assert.ok(units[parts[1]],'Unrecognized quantity unit');return units[parts[1]].every((power,i)=>power===expectedUnits[i])&&Math.abs(numericalOption(parts[0])-1/check.value)<1e-10;});
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique inverse quantity');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' inverse quantity key');
+  } else if (review.check.type==='higher-derivative') {
     const check=review.check,h=check.step||0.001;assert.ok(h>0&&Number.isFinite(h)&&[2,3].includes(check.order));
     const rate=x=>{const f=a=>evaluateExpression(check.expression,a);return check.order===2?(f(x+h)-2*f(x)+f(x-h))/(h*h):(f(x+2*h)-2*f(x+h)+2*f(x-h)-f(x-2*h))/(2*h*h*h);};
     const matches=question.options.map(option=>{
