@@ -1028,5 +1028,93 @@
     ],
     "dots": [],
     "description": "A continuous piecewise linear function on [0,5] joins closed point (0,−2), interior vertex (1,3), interior vertex (3,−1) and closed point (5,4) by straight segments. The point at x=1 is a peak near that input but is lower than the value at x=5."
+  },
+  "calc-ab-5-3-005": {
+    "xRange": [
+      -3,
+      5
+    ],
+    "yRange": [
+      -3,
+      3
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            -3,
+            2
+          ],
+          [
+            -1,
+            0
+          ],
+          [
+            1,
+            -2
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": [],
+    "description": "This is the graph of f′, not f. Straight segments connect (−3,2), (−1,0), (1,−2), (3,0) and (5,2). Its values are negative exactly between x=−1 and x=3."
+  },
+  "calc-ab-5-4-006": {
+    "xRange": [
+      -2,
+      5
+    ],
+    "yRange": [
+      -3,
+      3
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            -2,
+            2
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            -2
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            -2
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": [],
+    "description": "The graph is f′. Straight segments join (−2,2), (0,0), (1,−2), (2,0), (3,−2), (4,0), (5,2). It crosses from positive to negative at 0, touches zero from below at 2, and crosses from negative to positive at 4."
   }
 }

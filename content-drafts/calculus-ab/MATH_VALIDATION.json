@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 451,
+  "questionsChecked": 473,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -1301,6 +1301,51 @@
       "questionId": "calc-ab-5-1-011",
       "method": "mvt-point",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-3-001",
+      "method": "factor-sign-intervals",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-3-002",
+      "method": "factor-sign-intervals",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-3-004",
+      "method": "factor-sign-intervals",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-3-006",
+      "method": "factor-sign-intervals",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-3-009",
+      "method": "factor-sign-intervals",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-4-002",
+      "method": "factor-extrema",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-4-003",
+      "method": "factor-extrema",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-4-007",
+      "method": "factor-extrema",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-4-010",
+      "method": "factor-extrema",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -1494,7 +1539,20 @@
     "calc-ab-5-2-008",
     "calc-ab-5-2-009",
     "calc-ab-5-2-010",
-    "calc-ab-5-2-011"
+    "calc-ab-5-2-011",
+    "calc-ab-5-3-003",
+    "calc-ab-5-3-005",
+    "calc-ab-5-3-007",
+    "calc-ab-5-3-008",
+    "calc-ab-5-3-010",
+    "calc-ab-5-3-011",
+    "calc-ab-5-4-001",
+    "calc-ab-5-4-004",
+    "calc-ab-5-4-005",
+    "calc-ab-5-4-006",
+    "calc-ab-5-4-008",
+    "calc-ab-5-4-009",
+    "calc-ab-5-4-011"
   ],
   "humanReviewPerformed": false,
   "limitations": [

@@ -118,7 +118,28 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='mvt-point') {
+  if (review.check.type==='factor-sign-intervals'||review.check.type==='factor-extrema') {
+    const check=review.check;assert.ok(check.scale!==0&&Number.isFinite(check.scale));
+    assert.ok(check.factors.every(f=>Number.isFinite(f.root)&&Number.isInteger(f.multiplicity)&&f.multiplicity>0));
+    const roots=[...new Set(check.factors.map(f=>f.root))].sort((a,b)=>a-b),excluded=check.excluded||[];
+    const sign=x=>Math.sign(check.scale)*check.factors.reduce((s,f)=>s*Math.sign(x-f.root)**f.multiplicity,1);
+    let matches;
+    if(check.type==='factor-extrema') {
+      assert.ok(['maximum','minimum'].includes(check.kind));
+      const selected=roots.filter((r,i)=>{if(excluded.includes(r))return false;const left=i?roots[i-1]:r-2,right=i+1<roots.length?roots[i+1]:r+2;const sl=sign((left+r)/2),sr=sign((r+right)/2);return check.kind==='maximum'?sl>0&&sr<0:sl<0&&sr>0;});
+      matches=question.options.map(option=>selected.some(r=>Math.abs(numericalOption(option)-r)<1e-10));
+    } else {
+      assert.ok([1,-1].includes(check.sign));
+      const domain=intervalOption(check.domain||'All real numbers'),contains=(ranges,x)=>ranges.some(i=>(x>i.lo||(i.lc&&x===i.lo))&&(x<i.hi||(i.rc&&x===i.hi)));
+      matches=question.options.map(option=>{
+        const intervals=intervalOption(option),cuts=[...new Set([...roots,...excluded,...domain.flatMap(i=>[i.lo,i.hi]),...intervals.flatMap(i=>[i.lo,i.hi])].filter(Number.isFinite))].sort((a,b)=>a-b);
+        const edges=[-Infinity,...cuts,Infinity],samples=[...cuts,...edges.slice(1).map((hi,i)=>!Number.isFinite(edges[i])?(!Number.isFinite(hi)?0:hi-1):!Number.isFinite(hi)?edges[i]+1:(edges[i]+hi)/2)];
+        return samples.every(x=>contains(intervals,x)===(contains(domain,x)&&!excluded.includes(x)&&sign(x)===check.sign));
+      });
+    }
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique factor-sign answer');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' factor-sign key');
+  } else if (review.check.type==='mvt-point') {
     const check=review.check,[a,b]=check.interval,h=0.00001;assert.ok(Number.isFinite(a)&&Number.isFinite(b)&&a<b);
     const f=x=>evaluateExpression(check.expression,x),secant=(f(b)-f(a))/(b-a);
     const matches=question.options.map(option=>{const c=numericalOption(option);return Number.isFinite(c)&&a<c&&c<b&&Math.abs((f(c+h)-f(c-h))/(2*h)-secant)<0.00001;});

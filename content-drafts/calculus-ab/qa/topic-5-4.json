@@ -1,0 +1,207 @@
+{
+  "topicNumber": "5.4",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "5e93548b14b06e9cf0d4e887318a8ea52719f06d87f431bc7897fa260c376eb6",
+  "scopeReview": "CED FUN-4.A.2 First Derivative Test with continuity at the critical point, neighboring derivative signs and local conclusions. Odd/even multiplicity, corners, excluded points and isolated stationary inputs checked. Original sign table and derivative graph included.",
+  "varietyReview": "Sign table, cubic maximum, flat quartic minimum, stationary non-extremum, absolute-value corner, crossing versus touch in a derivative graph, mixed multiplicities, missing point, continuous nondifferentiable maximum, negative leading sign and local-versus-global scope.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-5-4-001",
+      "independentReasoning": "Read each neighboring sign pair from the actual table, and translate it into function increase/decrease before assigning the extremum label. No second-derivative value or zero derivative at the joining input is needed for this sign-based test.",
+      "optionReview": [
+        "The sign changes are positive-to-negative at −2 and negative-to-positive at 3.",
+        "This reverses both sign-change classifications.",
+        "The change at 3 is negative-to-positive, indicating a minimum.",
+        "Continuity and the neighboring sign changes suffice, even if a derivative at the point is undefined."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "A local maximum at −2 and a local minimum at 3."
+      },
+      "tableSha256": "dd20ff7a99323fb8286aad00eae8bc49642422687b0cb2b23cc8d8f160c0b17f"
+    },
+    {
+      "questionId": "calc-ab-5-4-002",
+      "independentReasoning": "Multiply the factored derivative back to the expanded derivative. Check sign cells at −2,0,4 and use continuity of the polynomial at both roots. The model compares the actual numeric answer choices with the roots carrying the required sign change.",
+      "optionReview": [
+        "The derivative changes from negative to positive there, giving a minimum.",
+        "The derivative 3(x−3)(x+1) changes from positive to negative at −1.",
+        "The derivative is −9 there, so the function is decreasing rather than at an extremum.",
+        "The derivative is positive there and does not change sign at that input."
+      ],
+      "check": {
+        "type": "factor-extrema",
+        "kind": "maximum",
+        "scale": 3,
+        "factors": [
+          {
+            "root": -1,
+            "multiplicity": 1
+          },
+          {
+            "root": 3,
+            "multiplicity": 1
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-5-4-003",
+      "independentReasoning": "The odd multiplicity of the derivative root forces a sign change from − to + with the positive leading factor. Independently x⁴≥0 with equality at 0 confirms the classification without relying on a second-derivative test.",
+      "optionReview": [
+        "The derivative is positive there and no sign change occurs.",
+        "The derivative is negative there and no sign change occurs.",
+        "The derivative 4x³ changes from negative to positive at 0.",
+        "The vanishing second derivative at 0 does not prevent the first-derivative sign test from establishing a minimum."
+      ],
+      "check": {
+        "type": "factor-extrema",
+        "kind": "minimum",
+        "scale": 4,
+        "factors": [
+          {
+            "root": 0,
+            "multiplicity": 3
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-5-4-004",
+      "independentReasoning": "For small h>0, the original values satisfy f(−h)<f(0)<f(h), directly confirming no extremum. Separately factor the derivative to verify that its isolated even-multiplicity root does not cause a sign reversal.",
+      "optionReview": [
+        "A zero derivative alone does not establish a sign change.",
+        "The even power makes the sign remain positive rather than reverse.",
+        "Both x² and 5x²+3 are positive for nonzero nearby inputs.",
+        "The derivative x²(5x²+3) vanishes at 0 without changing sign."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "There is no local extremum at 0 because f′ is positive on both sides."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-4-005",
+      "independentReasoning": "The exact local function values are f(−1±h)=h>0 for h>0, while f(−1)=0. This definition-based check independently confirms the first-derivative conclusion and shows why a zero derivative is not required here.",
+      "optionReview": [
+        "The function is continuous at the corner and its neighboring derivative signs reverse from negative to positive.",
+        "Derivative nonexistence alone does not classify an extremum; the actual sign change gives a minimum.",
+        "The sign test can apply at a continuous corner without an existing derivative there.",
+        "The signs, not only slope magnitudes, determine the local change."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "A local minimum, since the slope changes from −1 to +1."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-4-006",
+      "independentReasoning": "The actual graph has positive values before 0, negative values between 0 and 4 except its isolated zero at 2, and positive values after 4. Inspect the adjacent plotted segments at each zero. Derivative-graph valleys at 1 and 3 have negative heights and are not extrema of f.",
+      "optionReview": [
+        "At 2 the derivative touches zero but stays negative on both sides.",
+        "The derivative changes + to − at 0 and − to + at 4.",
+        "The zero at 2 does not change the function’s direction.",
+        "These are low points of the derivative graph, not zeros where its sign changes."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "0 and 4."
+      },
+      "figureSha256": "bbc5b882bccca92f6cb1b9379519fea1e6ab056e543d0e2faf51bfa06aeb8b53"
+    },
+    {
+      "questionId": "calc-ab-5-4-007",
+      "independentReasoning": "Check derivative signs at −2,0,3 and compare both sides of the double root separately. The exact multiplicities distinguish crossing at −1 from touching at 2. The function is differentiable at the supplied derivative roots.",
+      "optionReview": [
+        "The double root touches zero without a sign change.",
+        "The derivative equals 4 there and is positive nearby.",
+        "The simple root at −1 changes the derivative from negative to positive.",
+        "There is a conclusive negative-to-positive change at −1."
+      ],
+      "check": {
+        "type": "factor-extrema",
+        "kind": "minimum",
+        "scale": 1,
+        "factors": [
+          {
+            "root": -1,
+            "multiplicity": 1
+          },
+          {
+            "root": 2,
+            "multiplicity": 2
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-5-4-008",
+      "independentReasoning": "Check original domain membership before any sign test. Nearby outputs diverge with opposite signs rather than joining a finite value. The derivative is negative on both branches, which also provides no direction-reversing sign change.",
+      "optionReview": [
+        "One negative derivative sign alone does not establish a maximum, and the point is missing.",
+        "An asymptote is not an attained function value.",
+        "Equal neighboring signs would not give an extremum even at an appropriately continuous point.",
+        "A derivative-sign discussion cannot create an extremum at a missing function point."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "No; x=1 is outside the function’s domain."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-4-009",
+      "independentReasoning": "Use monotonicity on each side and take continuity limits toward the shared point: sufficiently nearby values on both sides are below f(2). A vertically shifted inverted absolute-value function gives an explicit example with arbitrary maximum height.",
+      "optionReview": [
+        "The continuous function rises toward 2 and falls afterward.",
+        "The neighboring sign test does not require the derivative to exist at the joining point.",
+        "That would require negative-to-positive derivative signs.",
+        "The extremum’s height is not fixed by derivative signs."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f has a local maximum at 2."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-4-010",
+      "independentReasoning": "Evaluate derivative signs on all root-separated cells and compare both neighbors of each root. Odd versus even multiplicity determines which zero causes a direction reversal; the leading negative factor determines maximum rather than minimum.",
+      "optionReview": [
+        "The even-multiplicity root there does not change sign.",
+        "The odd root 3 changes the derivative from positive to negative.",
+        "The derivative is positive and nonzero at 0.",
+        "The sign change at 3 is conclusive."
+      ],
+      "check": {
+        "type": "factor-extrema",
+        "kind": "maximum",
+        "scale": -1,
+        "factors": [
+          {
+            "root": -2,
+            "multiplicity": 2
+          },
+          {
+            "root": 3,
+            "multiplicity": 3
+          }
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-5-4-011",
+      "independentReasoning": "The polynomial f(x)=x²−x⁴ has a local minimum at 0 because f′=2x−4x³ changes − to + nearby. But f(2)=−12<f(0)=0, disproving the absolute-minimum overclaim while preserving the local sign pattern.",
+      "optionReview": [
+        "Distant function values can be lower without changing the local derivative signs.",
+        "The direction change is decreasing-to-increasing, which gives a minimum.",
+        "The sign test compares nearby values, not every value on the whole domain.",
+        "The stated right-hand derivative is positive."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "A local minimum occurs at c; an absolute minimum is not established."
+      }
+    }
+  ]
+}

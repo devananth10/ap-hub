@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 5,
+  "topicId": "topic-5-4",
+  "questions": [
+    {
+      "id": "calc-ab-5-4-001",
+      "prompt": "Use the derivative sign table below. If f is continuous at −2 and 3, what does the First Derivative Test establish?",
+      "options": [
+        "A local maximum at −2 and a local minimum at 3.",
+        "A local minimum at −2 and a local maximum at 3.",
+        "Local maxima at both inputs.",
+        "No local extrema because derivative values at the critical inputs are not supplied."
+      ],
+      "correctIndex": 0,
+      "explanation": "Positive f′ means f rises toward −2, then negative f′ means it falls afterward, producing a local maximum. At 3, f changes from falling to rising, producing a local minimum. The stated continuity connects the branches at both inputs. A: The sign changes are positive-to-negative at −2 and negative-to-positive at 3. B: This reverses both sign-change classifications. C: The change at 3 is negative-to-positive, indicating a minimum. D: Continuity and the neighboring sign changes suffice, even if a derivative at the point is undefined."
+    },
+    {
+      "id": "calc-ab-5-4-002",
+      "prompt": "For f(x)=x³−3x²−9x, at which input does the First Derivative Test give a local maximum?",
+      "options": [
+        "3",
+        "−1",
+        "0",
+        "−3"
+      ],
+      "correctIndex": 1,
+      "explanation": "Differentiate: f′=3x²−6x−9=3(x−3)(x+1). Its signs on the three cells are +,−,+. At −1 the sign goes from + to −, producing a local maximum; the root 3 gives the opposite classification. A: The derivative changes from negative to positive there, giving a minimum. B: The derivative 3(x−3)(x+1) changes from positive to negative at −1. C: The derivative is −9 there, so the function is decreasing rather than at an extremum. D: The derivative is positive there and does not change sign at that input."
+    },
+    {
+      "id": "calc-ab-5-4-003",
+      "prompt": "Using the First Derivative Test for f(x)=x⁴, where is its local minimum?",
+      "options": [
+        "1",
+        "−1",
+        "0",
+        "There is no local minimum"
+      ],
+      "correctIndex": 2,
+      "explanation": "The first derivative is 4x³, negative for x<0 and positive for x>0. Thus f falls toward 0 and rises afterward, giving a local minimum at 0. Although f″(0)=0, the First Derivative Test is conclusive. A: The derivative is positive there and no sign change occurs. B: The derivative is negative there and no sign change occurs. C: The derivative 4x³ changes from negative to positive at 0. D: The vanishing second derivative at 0 does not prevent the first-derivative sign test from establishing a minimum."
+    },
+    {
+      "id": "calc-ab-5-4-004",
+      "prompt": "For f(x)=x⁵+x³, which conclusion follows from the derivative signs near x=0?",
+      "options": [
+        "There is a local minimum because f′(0)=0.",
+        "There is a local maximum because the derivative contains an even power.",
+        "The derivative is negative immediately before 0.",
+        "There is no local extremum at 0 because f′ is positive on both sides."
+      ],
+      "correctIndex": 3,
+      "explanation": "Differentiate to get f′=5x⁴+3x²=x²(5x²+3). It is positive on both sides of 0 and zero only at 0. The function increases through that point, so it has neither a local maximum nor a local minimum there. A: A zero derivative alone does not establish a sign change. B: The even power makes the sign remain positive rather than reverse. C: Both x² and 5x²+3 are positive for nonzero nearby inputs. D: The derivative x²(5x²+3) vanishes at 0 without changing sign."
+    },
+    {
+      "id": "calc-ab-5-4-005",
+      "prompt": "For f(x)=|x+1|, what does the First Derivative Test show at x=−1?",
+      "options": [
+        "A local minimum, since the slope changes from −1 to +1.",
+        "A local maximum, since the derivative is undefined at the point.",
+        "No test is possible unless f′(−1)=0.",
+        "Neither extremum, since the derivative has constant magnitude 1."
+      ],
+      "correctIndex": 0,
+      "explanation": "For x<−1 the function is −x−1 with derivative −1. For x>−1 it is x+1 with derivative +1. Continuity at −1 and the negative-to-positive sign change give a local minimum despite the nonexistent derivative at the corner. A: The function is continuous at the corner and its neighboring derivative signs reverse from negative to positive. B: Derivative nonexistence alone does not classify an extremum; the actual sign change gives a minimum. C: The sign test can apply at a continuous corner without an existing derivative there. D: The signs, not only slope magnitudes, determine the local change."
+    },
+    {
+      "id": "calc-ab-5-4-006",
+      "prompt": "The graph below is f′, and f is differentiable on the displayed interior. Which inputs are a local maximum and a local minimum of f, respectively?",
+      "options": [
+        "0 and 2.",
+        "0 and 4.",
+        "2 and 4.",
+        "1 and 3."
+      ],
+      "correctIndex": 1,
+      "explanation": "Read the sign of f′ on each side of its zeros. At 0 it changes positive to negative, so f has a local maximum. At 4 it changes negative to positive, so f has a local minimum. The touch at 2 leaves f decreasing through that input. A: At 2 the derivative touches zero but stays negative on both sides. B: The derivative changes + to − at 0 and − to + at 4. C: The zero at 2 does not change the function’s direction. D: These are low points of the derivative graph, not zeros where its sign changes."
+    },
+    {
+      "id": "calc-ab-5-4-007",
+      "prompt": "Suppose f′(x)=(x−2)²(x+1). At which input does f have a local minimum?",
+      "options": [
+        "2",
+        "0",
+        "−1",
+        "There is no local minimum"
+      ],
+      "correctIndex": 2,
+      "explanation": "The square factor is positive except at 2, so it does not reverse the derivative sign there. The sign comes from x+1: negative before −1 and positive after it, except the isolated zero at 2. Thus −1 is a local minimum. A: The double root touches zero without a sign change. B: The derivative equals 4 there and is positive nearby. C: The simple root at −1 changes the derivative from negative to positive. D: There is a conclusive negative-to-positive change at −1."
+    },
+    {
+      "id": "calc-ab-5-4-008",
+      "prompt": "For f(x)=1/(x−1), can the First Derivative Test classify x=1 as a local extremum?",
+      "options": [
+        "Yes, a maximum because f′ is negative on the left.",
+        "Yes, a minimum because the graph has a vertical asymptote.",
+        "Yes, both because f′ is negative on both sides.",
+        "No; x=1 is outside the function’s domain."
+      ],
+      "correctIndex": 3,
+      "explanation": "The original function is undefined at 1. Although f′=−1/(x−1)² is negative on each separate domain interval, there is no function point at the gap to classify. A local extremum must be attained at a domain input. A: One negative derivative sign alone does not establish a maximum, and the point is missing. B: An asymptote is not an attained function value. C: Equal neighboring signs would not give an extremum even at an appropriately continuous point. D: A derivative-sign discussion cannot create an extremum at a missing function point."
+    },
+    {
+      "id": "calc-ab-5-4-009",
+      "prompt": "A function is continuous at 2, has f′>0 on (1,2) and f′<0 on (2,3), but f′(2) does not exist. Which conclusion is justified?",
+      "options": [
+        "f has a local maximum at 2.",
+        "f has no local extremum because f′(2) is undefined.",
+        "f has a local minimum at 2.",
+        "The value f(2) must be zero."
+      ],
+      "correctIndex": 0,
+      "explanation": "The function increases toward 2 on the left and decreases from 2 on the right. Continuity joins those behaviors at f(2), making it a local maximum. A corner or other derivative failure there does not invalidate the sign-based conclusion. A: The continuous function rises toward 2 and falls afterward. B: The neighboring sign test does not require the derivative to exist at the joining point. C: That would require negative-to-positive derivative signs. D: The extremum’s height is not fixed by derivative signs."
+    },
+    {
+      "id": "calc-ab-5-4-010",
+      "prompt": "If f′(x)=−(x−3)³(x+2)², at which input does the First Derivative Test give a local maximum?",
+      "options": [
+        "−2",
+        "3",
+        "0",
+        "There is no local maximum"
+      ],
+      "correctIndex": 1,
+      "explanation": "The factor (x+2)² does not reverse signs at −2. The cubic factor has the sign of x−3, and the leading minus reverses it. Thus f′ is positive before 3, except its isolated zero at −2, and negative after 3. A local maximum occurs at 3. A: The even-multiplicity root there does not change sign. B: The odd root 3 changes the derivative from positive to negative. C: The derivative is positive and nonzero at 0. D: The sign change at 3 is conclusive."
+    },
+    {
+      "id": "calc-ab-5-4-011",
+      "prompt": "A continuous function has f′<0 immediately left of c and f′>0 immediately right of c. Which conclusion follows from that local information alone?",
+      "options": [
+        "An absolute minimum must occur at c.",
+        "A local maximum occurs at c.",
+        "A local minimum occurs at c; an absolute minimum is not established.",
+        "f must be decreasing on its entire domain."
+      ],
+      "correctIndex": 2,
+      "explanation": "The First Derivative Test gives a local minimum from a negative-to-positive sign change at a continuous joining point. Without global interval or value information, it cannot establish absolute minimality. The scope of the conclusion must match the local evidence. A: Distant function values can be lower without changing the local derivative signs. B: The direction change is decreasing-to-increasing, which gives a minimum. C: The sign test compares nearby values, not every value on the whole domain. D: The stated right-hand derivative is positive."
+    }
+  ]
+}

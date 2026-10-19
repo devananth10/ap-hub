@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 5,
+  "topicId": "topic-5-3",
+  "questions": [
+    {
+      "id": "calc-ab-5-3-001",
+      "prompt": "If f′(x)=3(x−2)(x+1), on which set is f′(x)>0, so that f is increasing on each listed interval?",
+      "options": [
+        "(−1,2)",
+        "(−∞,2)",
+        "(−1,∞)",
+        "(−∞,−1) ∪ (2,∞)"
+      ],
+      "correctIndex": 3,
+      "explanation": "The derivative zeros are −1 and 2. The positive constant 3 does not change signs. Both factors are negative before −1, opposite between −1 and 2, and positive after 2. Thus f′>0 on (−∞,−1) and (2,∞). A: The factors have opposite signs there, giving a negative derivative. B: This incorrectly includes the negative-derivative interval between −1 and 2. C: This incorrectly includes negative derivative values before 2. D: The two linear factors have equal signs outside their roots."
+    },
+    {
+      "id": "calc-ab-5-3-002",
+      "prompt": "For f(x)=x³−6x²+9x, on which interval is f′(x)<0?",
+      "options": [
+        "(1,3)",
+        "(−∞,1)",
+        "(3,∞)",
+        "(−∞,1) ∪ (3,∞)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Differentiate to get f′=3x²−12x+9=3(x−1)(x−3). The two factors have opposite signs only for 1<x<3, so f decreases there. At the boundary roots the derivative is zero rather than negative. A: The derivative factors as 3(x−1)(x−3), negative between the two roots. B: Both factors are negative there, so their product is positive. C: Both factors are positive after 3. D: This is where the derivative is positive, reversing the requested sign."
+    },
+    {
+      "id": "calc-ab-5-3-003",
+      "prompt": "Suppose f is differentiable on the real numbers and f′(x)=(x−1)². Which statement is correct?",
+      "options": [
+        "f decreases for x<1 and increases for x>1.",
+        "f is strictly increasing on the whole real line, despite f′(1)=0.",
+        "f is constant on an interval around 1.",
+        "f cannot be increasing on any interval containing 1."
+      ],
+      "correctIndex": 1,
+      "explanation": "The derivative is positive for every x≠1 and zero only at 1. On either side f is strictly increasing, and continuity at 1 connects those increases. Equivalently, f differs by a constant from (x−1)³/3, a strictly increasing function. A: The squared derivative is positive on both sides, not negative on the left. B: The derivative is positive except at one isolated point, so that point does not create a constant or decreasing interval. C: A single zero derivative does not give an interval of zero derivatives. D: An isolated horizontal tangent does not prevent strict increase across it."
+    },
+    {
+      "id": "calc-ab-5-3-004",
+      "prompt": "For f(x)=ln x−x on x>0, where is f′(x)>0?",
+      "options": [
+        "(1,∞)",
+        "(−∞,1)",
+        "(0,1)",
+        "(0,∞)"
+      ],
+      "correctIndex": 2,
+      "explanation": "The derivative is 1/x−1=(1−x)/x. On the original positive domain, its denominator is positive; the numerator is positive when x<1. Hence f′>0 for 0<x<1 only. Domain exclusions must be applied before describing intervals. A: The numerator is negative there while the denominator is positive. B: The negative inputs are outside the real logarithm’s domain. C: The derivative (1−x)/x is positive only before 1 within the positive domain. D: The derivative changes sign at 1."
+    },
+    {
+      "id": "calc-ab-5-3-005",
+      "prompt": "The graph below is f′ on [−3,5]. On which open interval is f decreasing because the displayed derivative is negative?",
+      "options": [
+        "(−3,1)",
+        "(−3,−1) ∪ (3,5)",
+        "(1,5)",
+        "(−1,3)"
+      ],
+      "correctIndex": 3,
+      "explanation": "To determine decrease of f, inspect the sign of f′, not the slope of its graph. The displayed graph is below zero exactly for −1<x<3. Therefore f is decreasing on that interval, including the portion where f′ itself is increasing. A: This describes where the derivative graph slopes downward, not where its values are negative. B: Those are the positive-derivative intervals. C: A rising derivative graph can still have negative values before it crosses zero. D: The derivative graph lies below the horizontal axis between its two zeros."
+    },
+    {
+      "id": "calc-ab-5-3-006",
+      "prompt": "If f′(x)=eˣ(4−x), on which set is f′(x)>0?",
+      "options": [
+        "(−∞,4)",
+        "(4,∞)",
+        "(0,4)",
+        "All real numbers"
+      ],
+      "correctIndex": 0,
+      "explanation": "Since eˣ>0 for every real x, it contributes no zeros or sign changes. Thus f′ is positive precisely when 4−x>0, or x<4. At 4 the derivative is zero, so that input is excluded from the strict inequality. A: The exponential is positive everywhere, leaving the sign of 4−x. B: This reverses the sign of the remaining linear factor. C: The exponential is positive even for negative inputs, so no lower cutoff at zero is needed. D: The factor 4−x becomes negative after 4."
+    },
+    {
+      "id": "calc-ab-5-3-007",
+      "prompt": "For f(x)=1/(x−2), which statement about decrease is correct?",
+      "options": [
+        "It is decreasing on the entire real line including 2.",
+        "It is decreasing separately on (−∞,2) and (2,∞); the missing input prevents treating the domain as one interval.",
+        "It increases on both branches because its denominator increases.",
+        "Negative derivative everywhere on the domain makes every left-branch output larger than every right-branch output."
+      ],
+      "correctIndex": 1,
+      "explanation": "The derivative is −1/(x−2)²<0 wherever f exists. This ensures decrease on each connected interval of the domain. It does not justify a single decreasing ordering across a missing input: for example f(1)=−1<f(3)=1. A: The original function is undefined at 2. B: The derivative is negative on each branch, but the function has no value at 2. C: The derivative is −1/(x−2)², negative wherever defined. D: Left-branch values are negative and right-branch values positive, so that across-hole comparison fails."
+    },
+    {
+      "id": "calc-ab-5-3-008",
+      "prompt": "The table below gives three values of a differentiable function. Does it prove f′(x)>0 for every x∈(0,2)?",
+      "options": [
+        "Yes, because each sampled output is larger than the previous one.",
+        "Yes, and f′(x)=2 everywhere.",
+        "No; finitely many increasing sampled values do not determine all intervening derivative signs.",
+        "No, because a differentiable function cannot pass through these three points."
+      ],
+      "correctIndex": 2,
+      "explanation": "The samples show positive average rates over the displayed intervals. They do not specify the function between sample inputs, so they cannot establish a derivative sign at every interior point. Differentiability alone does not remove that uncertainty. A: Positive secant slopes do not force every intervening derivative to be positive. B: A straight interpolating line is one possible function, not the only one. C: A smooth function can match the samples and still decrease between some of them. D: The linear function 2x does pass through them."
+    },
+    {
+      "id": "calc-ab-5-3-009",
+      "prompt": "If f′(x)=(x+3)/(x−1), where is f′(x)>0?",
+      "options": [
+        "(−3,1)",
+        "(−∞,1)",
+        "(−3,∞)",
+        "(−∞,−3) ∪ (1,∞)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Use the numerator zero −3 and the excluded denominator zero 1 as sign boundaries. The quotient is positive before −3, negative between −3 and 1, and positive after 1. The zero derivative and the pole are both excluded from f′>0. A: The numerator is positive and denominator negative there. B: This includes the negative-sign cell between −3 and 1. C: This includes both a negative-sign cell and the excluded denominator zero. D: Numerator and denominator have the same sign on the two outside intervals."
+    },
+    {
+      "id": "calc-ab-5-3-010",
+      "prompt": "Suppose f′(x)=x²+2x+5 for all real x. What follows about f?",
+      "options": [
+        "It is strictly increasing on every real interval.",
+        "It decreases before x=−1 and increases afterward.",
+        "It has a horizontal tangent at x=−1.",
+        "It must cross the horizontal axis exactly once."
+      ],
+      "correctIndex": 0,
+      "explanation": "Rewrite the derivative as (x+1)²+4, which is strictly positive at every input. The Mean Value Theorem then gives f(v)−f(u)>0 whenever u<v. Thus f is strictly increasing; the minimum of f′ is not a minimum of f. A: Completing the square gives f′=(x+1)²+4>0 everywhere. B: That is the sign behavior of 2x+2, not of the stated derivative. C: The derivative there is 4, not zero. D: Derivative signs do not determine whether a function’s height crosses zero."
+    },
+    {
+      "id": "calc-ab-5-3-011",
+      "prompt": "For f(x)=x³−ax with real constant a, which condition makes f′(x)>0 for every real x?",
+      "options": [
+        "a≤0",
+        "a<0",
+        "a>0",
+        "Every real a"
+      ],
+      "correctIndex": 1,
+      "explanation": "The derivative is 3x²−a. Because 3x²≥0 with equality at 0, its smallest value is −a. It is strictly positive everywhere exactly when −a>0, or a<0. This asks about strict derivative positivity, not just strict increase of the function. A: At a=0 the derivative equals zero at x=0, failing the strict derivative condition. B: The derivative 3x²−a has minimum −a at 0, which must be positive. C: For positive a, the derivative at 0 is negative, contradicting strict positivity everywhere. D: Positive a provides an immediate counterexample at x=0."
+    }
+  ]
+}

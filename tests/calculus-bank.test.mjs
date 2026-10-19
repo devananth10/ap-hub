@@ -281,3 +281,12 @@ test('MVT models compare endpoint secants and require strictly interior theorem 
   const bad=structuredClone(batch.questions[1]);bad.correctIndex=bad.options.indexOf('3');
   assert.throws(()=>verifyCalculusQuestion(bad,qa.questions[1]),/MVT point key/);
 });
+test('factor sign models retain log domains, rational holes and even-multiplicity touches',()=>{
+  for(const [topic,index] of [['5-3',3],['5-4',6]]){
+    const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-'+topic);
+    const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-'+topic+'.json','utf8'));
+    verifyCalculusQuestion(batch.questions[index],qa.questions[index]);
+    const wrong=structuredClone(batch.questions[index]);wrong.correctIndex=(wrong.correctIndex+1)%4;
+    assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[index]),/factor-sign key/);
+  }
+});

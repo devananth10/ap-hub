@@ -1,5 +1,9 @@
 # Calculus AB validation and continuation notes
 
+## Continuation from c1cb9c2: Topics 5.3–5.4
+
+Verified clean local/remote c1cb9c2, 451 saved Calculus questions and the unchanged Chemistry bank. Added 22 original derivative-sign/First Derivative Test MCQs with two derivative graphs and two tables. The 473-question bank passes structural and mathematical checks: 269 programmatic corroborations, 204 recorded reasoning reviews. Factor sign models partition every root/domain boundary and compare all answer intervals; extrema models distinguish odd/even multiplicity and excluded poles. Exact factorization and hypotheses remain separately reviewed. A too-short draft rationale was expanded before publication. All 80 unit tests, build, TypeScript, standard smoke and all 81 Calculus Practice/workspace scopes pass. Both full new browser sessions showed four option rationales, graded every key correctly and ended 11/11. All 1,452 baseline MCQ objects at c1cb9c2 (451 Calculus and 1,001 Chemistry) are unchanged. Next: 5.5; 38 topics/418 questions remain. No independent human review claimed.
+
 ## Topics 5.1–5.2 checkpoint: 451 questions
 
 Published 22 Mean Value Theorem and extrema/critical-point MCQs. The bank now has 451/891 MCQs in 41/81 topics, with 260 programmatic corroborations and 191 separately recorded reasoning reviews. All completed sets contain eleven questions, none withheld for a known unresolved issue. Forty topics/440 questions remain, starting at 5.3. MVT point models recompute original-function endpoint secants and candidate slopes, rejecting endpoint answers; theorem hypotheses remain separately justified rather than inferred from numerical samples. Critical-point reviews check domain membership, attained versus limiting bounds, local/global definitions and necessary versus sufficient conditions. A new original graph distinguishes an interior local peak from the larger endpoint value.

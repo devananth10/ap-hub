@@ -849,5 +849,47 @@
         "24"
       ]
     ]
+  },
+  "calc-ab-5-3-008": {
+    "caption": "Three sampled values of a differentiable function f.",
+    "headers": [
+      "x",
+      "f(x)"
+    ],
+    "rows": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "2"
+      ],
+      [
+        "2",
+        "4"
+      ]
+    ]
+  },
+  "calc-ab-5-4-001": {
+    "caption": "Signs of the derivative of a continuous function f, differentiable away from the listed critical inputs.",
+    "headers": [
+      "Interval",
+      "Sign of f′"
+    ],
+    "rows": [
+      [
+        "x<−2",
+        "positive"
+      ],
+      [
+        "−2<x<3",
+        "negative"
+      ],
+      [
+        "x>3",
+        "positive"
+      ]
+    ]
   }
 }

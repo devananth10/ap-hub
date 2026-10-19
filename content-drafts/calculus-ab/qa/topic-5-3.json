@@ -1,0 +1,225 @@
+{
+  "topicNumber": "5.3",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "117b43c55c5c69f51f88c6a3418e682e96fdd2150d54bee7800b06531539f8f4",
+  "scopeReview": "CED FUN-4.A.1 derivative signs and increasing/decreasing behavior. Strict derivative-sign sets distinguished from monotonicity across isolated stationary inputs, and interval hypotheses from disconnected domains. Original derivative graph and finite-data counterexample provided.",
+  "varietyReview": "Factored signs, derivative of a cubic, isolated zero, logarithm domain, actual derivative graph, positive exponential factor, disconnected reciprocal, finite-table uncertainty, rational pole, positive completed square and a strict parameter condition.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-5-3-001",
+      "independentReasoning": "Check sign cells at −2,0,3: the products are positive, negative and positive. These cells cover every nonzero derivative input because there are no other roots. The exact sign model compares candidate interval membership in every cell and at boundaries.",
+      "optionReview": [
+        "The factors have opposite signs there, giving a negative derivative.",
+        "This incorrectly includes the negative-derivative interval between −1 and 2.",
+        "This incorrectly includes negative derivative values before 2.",
+        "The two linear factors have equal signs outside their roots."
+      ],
+      "check": {
+        "type": "factor-sign-intervals",
+        "scale": 3,
+        "factors": [
+          {
+            "root": -1,
+            "multiplicity": 1
+          },
+          {
+            "root": 2,
+            "multiplicity": 1
+          }
+        ],
+        "sign": 1
+      }
+    },
+    {
+      "questionId": "calc-ab-5-3-002",
+      "independentReasoning": "Independently differentiate the expanded polynomial and multiply the stated factors back to 3x²−12x+9. Testing the three sign cells yields +,−,+. The interval endpoints are excluded by the strict derivative inequality.",
+      "optionReview": [
+        "The derivative factors as 3(x−1)(x−3), negative between the two roots.",
+        "Both factors are negative there, so their product is positive.",
+        "Both factors are positive after 3.",
+        "This is where the derivative is positive, reversing the requested sign."
+      ],
+      "check": {
+        "type": "factor-sign-intervals",
+        "scale": 3,
+        "factors": [
+          {
+            "root": 1,
+            "multiplicity": 1
+          },
+          {
+            "root": 3,
+            "multiplicity": 1
+          }
+        ],
+        "sign": -1
+      }
+    },
+    {
+      "questionId": "calc-ab-5-3-003",
+      "independentReasoning": "Use the zero-derivative-implies-constant result on f−(x−1)³/3 to justify the explicit form without assuming a future integration method. For any u<v, the difference of the two cubes is positive, establishing strict increase even across 1.",
+      "optionReview": [
+        "The squared derivative is positive on both sides, not negative on the left.",
+        "The derivative is positive except at one isolated point, so that point does not create a constant or decreasing interval.",
+        "A single zero derivative does not give an interval of zero derivatives.",
+        "An isolated horizontal tangent does not prevent strict increase across it."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f is strictly increasing on the whole real line, despite f′(1)=0."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-3-004",
+      "independentReasoning": "The sign of (1−x)/x agrees away from 0 with the factored product −x(x−1). Check positive cells (0,1) and (1,∞) separately and discard the entire negative domain. The model binds these domain and sign decisions to the actual interval choices.",
+      "optionReview": [
+        "The numerator is negative there while the denominator is positive.",
+        "The negative inputs are outside the real logarithm’s domain.",
+        "The derivative (1−x)/x is positive only before 1 within the positive domain.",
+        "The derivative changes sign at 1."
+      ],
+      "check": {
+        "type": "factor-sign-intervals",
+        "scale": -1,
+        "factors": [
+          {
+            "root": 0,
+            "multiplicity": 1
+          },
+          {
+            "root": 1,
+            "multiplicity": 1
+          }
+        ],
+        "excluded": [
+          0
+        ],
+        "domain": "(0,∞)",
+        "sign": 1
+      }
+    },
+    {
+      "questionId": "calc-ab-5-3-005",
+      "independentReasoning": "Read the two axis crossings −1 and 3 from the actual plotted endpoints. All intervening line-segment values are negative, and the outside segments are positive. The lowest derivative at 1 is not a boundary of f’s decreasing interval.",
+      "optionReview": [
+        "This describes where the derivative graph slopes downward, not where its values are negative.",
+        "Those are the positive-derivative intervals.",
+        "A rising derivative graph can still have negative values before it crosses zero.",
+        "The derivative graph lies below the horizontal axis between its two zeros."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "(−1,3)"
+      },
+      "figureSha256": "758f287f4ade7fdc11fbc4d4a355c78c930f5d14be037976ded015cdaddd2e0a"
+    },
+    {
+      "questionId": "calc-ab-5-3-006",
+      "independentReasoning": "Factor out the globally positive exponential before sign analysis. The remaining factor is −(x−4), with one simple root and negative leading sign. Check values on both sides to establish the whole sign partition.",
+      "optionReview": [
+        "The exponential is positive everywhere, leaving the sign of 4−x.",
+        "This reverses the sign of the remaining linear factor.",
+        "The exponential is positive even for negative inputs, so no lower cutoff at zero is needed.",
+        "The factor 4−x becomes negative after 4."
+      ],
+      "check": {
+        "type": "factor-sign-intervals",
+        "scale": -1,
+        "factors": [
+          {
+            "root": 4,
+            "multiplicity": 1
+          }
+        ],
+        "sign": 1
+      }
+    },
+    {
+      "questionId": "calc-ab-5-3-007",
+      "independentReasoning": "Differentiate directly, verify the excluded point, and test a pair spanning the gap. The negative derivative theorem applies on intervals where the function is defined, not across a disconnected domain without the interval hypotheses.",
+      "optionReview": [
+        "The original function is undefined at 2.",
+        "The derivative is negative on each branch, but the function has no value at 2.",
+        "The derivative is −1/(x−2)², negative wherever defined.",
+        "Left-branch values are negative and right-branch values positive, so that across-hole comparison fails."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It is decreasing separately on (−∞,2) and (2,∞); the missing input prevents treating the domain as one interval."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-3-008",
+      "independentReasoning": "Both f(x)=2x and g(x)=2x+sin(2πx) match all three integer samples. But g′(1/2)=2−2π<0. This explicit smooth counterexample independently disproves the claimed everywhere-positive inference.",
+      "optionReview": [
+        "Positive secant slopes do not force every intervening derivative to be positive.",
+        "A straight interpolating line is one possible function, not the only one.",
+        "A smooth function can match the samples and still decrease between some of them.",
+        "The linear function 2x does pass through them."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "No; finitely many increasing sampled values do not determine all intervening derivative signs."
+      },
+      "tableSha256": "f232a474c98959e17d39a51915c2ecfbe4eb6743aa18bf254eebdd884dedfa5e"
+    },
+    {
+      "questionId": "calc-ab-5-3-009",
+      "independentReasoning": "The quotient’s sign agrees with (x+3)(x−1) away from the excluded pole. Test −4,0,2 to obtain +,−,+, and separately exclude both strict-inequality boundaries. No continuity across the pole is assumed.",
+      "optionReview": [
+        "The numerator is positive and denominator negative there.",
+        "This includes the negative-sign cell between −3 and 1.",
+        "This includes both a negative-sign cell and the excluded denominator zero.",
+        "Numerator and denominator have the same sign on the two outside intervals."
+      ],
+      "check": {
+        "type": "factor-sign-intervals",
+        "scale": 1,
+        "factors": [
+          {
+            "root": -3,
+            "multiplicity": 1
+          },
+          {
+            "root": 1,
+            "multiplicity": 1
+          }
+        ],
+        "excluded": [
+          1
+        ],
+        "sign": 1
+      }
+    },
+    {
+      "questionId": "calc-ab-5-3-010",
+      "independentReasoning": "For each u<v, the theorem expresses the output difference as f′(c)(v−u), a product of two positive numbers. This proves global strict increase from the sign. Adding a vertical constant does not change the derivative, showing why height claims are not inferred here.",
+      "optionReview": [
+        "Completing the square gives f′=(x+1)²+4>0 everywhere.",
+        "That is the sign behavior of 2x+2, not of the stated derivative.",
+        "The derivative there is 4, not zero.",
+        "Derivative signs do not determine whether a function’s height crosses zero."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It is strictly increasing on every real interval."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-3-011",
+      "independentReasoning": "Check necessity by evaluating at 0, giving −a>0. Check sufficiency by adding nonnegative 3x² to the positive constant −a. The boundary a=0 is intentionally excluded even though x³ itself is strictly increasing, separating two different statements.",
+      "optionReview": [
+        "At a=0 the derivative equals zero at x=0, failing the strict derivative condition.",
+        "The derivative 3x²−a has minimum −a at 0, which must be positive.",
+        "For positive a, the derivative at 0 is negative, contradicting strict positivity everywhere.",
+        "Positive a provides an immediate counterexample at x=0."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "a<0"
+      }
+    }
+  ]
+}
