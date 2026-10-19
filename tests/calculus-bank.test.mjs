@@ -518,3 +518,18 @@ test('calibrated exponentials use elapsed time, preserve rate sign and compare e
   assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[0]),/exponential key/);
   assert.ok(Math.abs(integralValue(['sin',['pow','x',2]],0,2)-.8047764893)<1e-9);
 });
+
+test('average-value checks require interval normalization and preserve initial-value offsets',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='average');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-8-1.json'));
+  const missingScale=structuredClone(qa.questions[0]);delete missingScale.check.scale;
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[0],missingScale),/definite integral key/);
+  const table=structuredClone(qa.questions[5]);delete table.check.scale;
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[5],table),/Riemann key/);
+  const motion=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-8-2');
+  const mq=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-8-2.json'));
+  const noInitial=structuredClone(mq.questions[2]);delete noInitial.check.initial;
+  assert.throws(()=>verifyCalculusQuestion(motion.questions[2],noInitial),/definite integral key/);
+  const unsigned=structuredClone(mq.questions[1]);unsigned.check.integrand=unsigned.check.integrand[1];
+  assert.throws(()=>verifyCalculusQuestion(motion.questions[1],unsigned),/definite integral key/);
+});

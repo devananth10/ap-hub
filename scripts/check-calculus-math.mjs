@@ -216,7 +216,7 @@ export function verifyCalculusQuestion(question, review) {
     const matches=question.options.map(option=>{const fn=c.functions[option],f=x=>evaluateExpression(fn,x);if(c.initial&&Math.abs(f(c.initial.x)-c.initial.y)>tolerance)return false;return c.samplePoints.every(x=>{const rate=order===1?(f(x+h)-f(x-h))/(2*h):(f(x+h)-2*f(x)+f(x-h))/(h*h);return Math.abs(rate-evaluateBivariate(c.rhs,x,f(x)))<tolerance;});});
     assert.equal(matches.filter(Boolean).length,1,question.id+' unique differential solution');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' differential solution key');
   } else if (review.check.type==='definite-integral') {
-    const c=review.check,expected=integralValue(c.integrand,c.start,c.end);
+    const c=review.check,expected=(c.initial??0)+(c.scale??1)*integralValue(c.integrand,c.start,c.end);
     const matches=question.options.map(option=>Math.abs((c.optionExpressions?evaluateExpression(c.optionExpressions[option]):numericalOption(option))-expected)<(c.tolerance??0.000001));
     assert.equal(matches.filter(Boolean).length,1,question.id+' unique definite integral');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' definite integral key');
   } else if(review.check.type==='antiderivative-candidates') {
@@ -245,7 +245,7 @@ export function verifyCalculusQuestion(question, review) {
       const rows=table.rows.filter(r=>Number(r[0])===x);assert.equal(rows.length,1,'Required Riemann sample missing or repeated');
       return Number(rows[0][1].replaceAll('−','-'));
     };
-    const expected=riemannApproximation(c.partition,c.method,value),tolerance=c.tolerance??1e-10;
+    const expected=(c.initial??0)+(c.scale??1)*riemannApproximation(c.partition,c.method,value),tolerance=c.tolerance??1e-10;
     const matches=question.options.map(option=>Math.abs(numericalOption(option)-expected)<tolerance);
     assert.equal(matches.filter(Boolean).length,1,question.id+' unique Riemann result');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' Riemann key');
   } else if (review.check.type==='function-jet') {

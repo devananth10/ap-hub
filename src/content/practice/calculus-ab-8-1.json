@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 8,
+  "topicId": "average",
+  "questions": [
+    {
+      "id": "calc-ab-8-1-001",
+      "prompt": "What is the average value of f(x)=x² on [1,4]?",
+      "options": [
+        "21",
+        "7",
+        "17/2",
+        "5"
+      ],
+      "correctIndex": 1,
+      "explanation": "Average value is (1/(4−1))∫ from 1 to 4 of x² dx. The antiderivative x³/3 gives (64−1)/3=21, and dividing by 3 gives 7. Endpoint averaging is not generally equal to a continuous function’s average value. A: This is the integral before division by the interval length. B: The integral is 21 and the interval length is 3. C: This averages the endpoint heights, which is not exact for this quadratic. D: This does not follow from the integral or the interval length."
+    },
+    {
+      "id": "calc-ab-8-1-002",
+      "prompt": "A temperature is T(t)=20+6sin(πt/12) for 0≤t≤12 hours, with angles in radians. What is the average temperature over this interval?",
+      "options": [
+        "26",
+        "20+6/π",
+        "20+12/π",
+        "20+72/π"
+      ],
+      "correctIndex": 2,
+      "explanation": "Compute (1/12)∫ from 0 to 12 of [20+6sin(πt/12)]dt. The constant contributes 20. The sine integral is [−72cos(πt/12)/π] from 0 to 12=144/π; dividing it by 12 gives 12/π. Thus the mean is 20+12/π, below the maximum 26. A: This is the maximum temperature, not the time average. B: This loses one of the two endpoint contributions from integrating sine. C: The constant averages to 20 and the sine contribution averages to 12/π. D: This is missing the required division by 12 in the oscillatory integral."
+    },
+    {
+      "id": "calc-ab-8-1-003",
+      "prompt": "What is the average value of f on [0,4] for the graph below?",
+      "options": [
+        "2",
+        "1",
+        "0",
+        "1/2"
+      ],
+      "correctIndex": 3,
+      "explanation": "From 0 to 2, the equal negative and positive triangles cancel. From 2 to 4, the positive triangle has area (1/2)·2·2=2. Thus ∫f=2, and the average value is 2/(4−0)=1/2. Counting unsigned area would answer a different question. A: This is the signed integral without normalization. B: This divides by the number of line segments instead of by the interval length. C: The first segment cancels, but the positive triangle from 2 to 4 remains. D: The signed integral is 2, and the interval length is 4."
+    },
+    {
+      "id": "calc-ab-8-1-004",
+      "prompt": "Find the average value of f(x)=x³−2x on [−2,2].",
+      "options": [
+        "0",
+        "2",
+        "4",
+        "−2"
+      ],
+      "correctIndex": 0,
+      "explanation": "The expression is odd because f(−x)=−f(x). Its signed integral from −2 to 2 is therefore zero. Dividing by the positive interval length 4 leaves average value zero, even though f is not identically zero and its graph has nonzero unsigned area. A: The continuous function is odd, so its integral on the symmetric interval is zero. B: This does not account for the exact cancellation of the odd function’s signed values. C: This does not account for the signed cancellation of an odd function. D: This keeps a negative contribution without its equal positive counterpart."
+    },
+    {
+      "id": "calc-ab-8-1-005",
+      "prompt": "A continuous function f has average value 3 on [2,6]. What is the average value of g(x)=2f(x)−5 on the same interval?",
+      "options": [
+        "−2",
+        "1",
+        "4",
+        "6"
+      ],
+      "correctIndex": 1,
+      "explanation": "Average value respects linear combinations. Since (1/4)∫ from 2 to 6 of f=3, the mean of 2f−5 is 2·3−5=1. The constant −5 contributes −5 to the mean, while its integral contribution is −20. A: This subtracts 5 without first scaling the original mean. B: Linearity gives 2 times the original mean minus 5. C: This is the integral of g over the interval, not its average. D: This includes the factor 2 but omits the constant shift."
+    },
+    {
+      "id": "calc-ab-8-1-006",
+      "prompt": "Using the table below and the trapezoidal rule on [0,1] and [1,4], estimate the average value of f on [0,4].",
+      "options": [
+        "16/3",
+        "24",
+        "6",
+        "4"
+      ],
+      "correctIndex": 2,
+      "explanation": "The nonuniform trapezoids give ∫f≈1(2+4)/2+3(4+10)/2=3+21=24. The average-value estimate is 24/4=6. The longer second subinterval must receive its actual width; three samples are not automatically equally weighted. A: This is the unweighted mean of the three listed heights, ignoring unequal time widths. B: This is the estimated integral before normalization. C: The estimated integral is 24; dividing by 4 gives 6. D: This is a sampled middle height, not the trapezoidal average."
+    },
+    {
+      "id": "calc-ab-8-1-007",
+      "prompt": "For f(x)=x² on [0,3], at which c in (0,3) does f(c) equal its average value on [0,3]?",
+      "options": [
+        "3/2",
+        "3",
+        "√6",
+        "√3"
+      ],
+      "correctIndex": 3,
+      "explanation": "The average value is (1/3)∫ from 0 to 3 of x²dx=(1/3)·9=3. Solve c²=3 and select c in the stated positive interval, giving c=√3. Continuity guarantees an average-height point, and monotonicity here makes it unique on (0,3). A: The interval midpoint need not attain the average height of a nonlinear function. B: This is an endpoint and its height is 9, not the mean 3. C: Its height is 6, twice the mean. D: The mean is 3, so the positive interior solution of c²=3 is √3."
+    },
+    {
+      "id": "calc-ab-8-1-008",
+      "prompt": "For f(x)=x² on [0,2], which pair correctly lists the average value of f and its average rate of change, in that order?",
+      "options": [
+        "4/3 and 2",
+        "2 and 4/3",
+        "4 and 2",
+        "8/3 and 4"
+      ],
+      "correctIndex": 0,
+      "explanation": "The mean height is (1/2)∫ from 0 to 2 of x²dx=(1/2)(8/3)=4/3. The average rate of change is [f(2)−f(0)]/2=4/2=2. Averaging values over an interval is different from averaging a derivative or computing a secant slope. A: Integral divided by interval length gives 4/3, while endpoint change divided by length gives 2. B: This reverses the two different quantities. C: The first number is the final height, not the mean height. D: These are an unnormalized integral and an unnormalized endpoint change."
+    },
+    {
+      "id": "calc-ab-8-1-009",
+      "prompt": "A student says the average value of f(x)=1/x on [−1,1] is 0 because f is odd. What is the issue with using the usual continuous-function average-value formula here?",
+      "options": [
+        "There is no issue; oddness always makes an average zero even at singularities.",
+        "The function is undefined at 0, so the required continuous-function definite integral on the interval is not available.",
+        "The average is the endpoint mean, (−1+1)/2=0.",
+        "The only problem is that the interval length is negative."
+      ],
+      "correctIndex": 1,
+      "explanation": "The standard formula in this topic assumes a continuous function on the closed interval. The expression 1/x is not defined at zero, so that hypothesis fails. A formal cancellation across the singularity is not a valid ordinary definite-integral computation. No value is assigned by this formula as stated. A: The continuity and integral requirements must be checked before using symmetry. B: Odd-function cancellation cannot repair the interior singularity. C: Endpoint averaging is not the average-value formula and does not fix the domain. D: The length is 1−(−1)=2, which is positive."
+    },
+    {
+      "id": "calc-ab-8-1-010",
+      "prompt": "The average value of continuous f is 4 on [0,2] and 9 on [2,5]. What is its average value on [0,5]?",
+      "options": [
+        "13/2",
+        "13",
+        "7",
+        "35/2"
+      ],
+      "correctIndex": 2,
+      "explanation": "Recover the two integrals: ∫ from 0 to 2 of f=2·4=8 and ∫ from 2 to 5 of f=3·9=27. Add to get ∫ from 0 to 5 of f=35, then divide by total length 5 to get 7. A mean over unequal intervals is length-weighted. A: This weights the two unequal subintervals equally. B: This adds the two mean heights without weighting or normalizing. C: The length-weighted average is (2·4+3·9)/5. D: This divides the total integral by the first subinterval length rather than the full length."
+    },
+    {
+      "id": "calc-ab-8-1-011",
+      "prompt": "What is the average value of f(x)=ln x on [1,e]?",
+      "options": [
+        "1",
+        "1/2",
+        "e/(e−1)",
+        "1/(e−1)"
+      ],
+      "correctIndex": 3,
+      "explanation": "An antiderivative is x ln x−x, verified by differentiation. At e it equals 0 and at 1 it equals −1, so the definite integral is 1. Divide by e−1 to obtain 1/(e−1). The real logarithm is continuous throughout the stated positive interval. A: This is the total integral or the final height, not the interval-normalized mean. B: This averages the endpoint heights rather than the continuous values. C: This incorrectly evaluates the definite integral as e. D: The integral is 1 and the interval length is e−1."
+    }
+  ]
+}

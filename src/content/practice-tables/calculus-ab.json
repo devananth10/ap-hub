@@ -1195,5 +1195,51 @@
         "1"
       ]
     ]
+  },
+  "calc-ab-8-1-006": {
+    "caption": "Measurements for an average-value estimate",
+    "headers": [
+      "t",
+      "f(t)"
+    ],
+    "rows": [
+      [
+        "0",
+        "2"
+      ],
+      [
+        "1",
+        "4"
+      ],
+      [
+        "4",
+        "10"
+      ]
+    ]
+  },
+  "calc-ab-8-2-008": {
+    "caption": "Velocity measurements for a displacement estimate",
+    "headers": [
+      "t (seconds)",
+      "v(t) (m/s)"
+    ],
+    "rows": [
+      [
+        "0",
+        "−2"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "3",
+        "4"
+      ],
+      [
+        "5",
+        "2"
+      ]
+    ]
   }
 }

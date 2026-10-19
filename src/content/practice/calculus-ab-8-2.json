@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 8,
+  "topicId": "topic-8-2",
+  "questions": [
+    {
+      "id": "calc-ab-8-2-001",
+      "prompt": "A particle has velocity v(t)=2t−3 meters per second for 0≤t≤4. What is its displacement over this interval?",
+      "options": [
+        "17/2 meters",
+        "5 meters",
+        "4 meters",
+        "−4 meters"
+      ],
+      "correctIndex": 2,
+      "explanation": "Displacement equals ∫ from 0 to 4 of (2t−3)dt=[t²−3t] from 0 to 4=16−12=4 meters. Negative velocity contributes negative displacement before t=3/2. Total distance would require integrating the absolute value and is a different quantity. A: This is total distance after splitting at t=3/2, not displacement. B: This is the final velocity’s numerical value, not accumulated position change. C: The signed integral [t²−3t] from 0 to 4 equals 4. D: This reverses the orientation of the time interval."
+    },
+    {
+      "id": "calc-ab-8-2-002",
+      "prompt": "A particle moves with v(t)=t²−4t+3 for 0≤t≤4. What total distance does it travel?",
+      "options": [
+        "4/3",
+        "8/3",
+        "0",
+        "4"
+      ],
+      "correctIndex": 3,
+      "explanation": "Factor v=(t−1)(t−3), so its signs on (0,1),(1,3),(3,4) are +,−,+. With F=t³/3−2t²+3t, the values F(0),F(1),F(3),F(4) are 0,4/3,0,4/3. Total distance adds the absolute changes: 4/3+4/3+4/3=4. A: This is the signed displacement, not total distance. B: This omits one of the three travel intervals. C: Returning to an earlier position at one time does not eliminate accumulated distance. D: Splitting at velocity zeros 1 and 3 gives three positive distance contributions of 4/3."
+    },
+    {
+      "id": "calc-ab-8-2-003",
+      "prompt": "A particle has acceleration a(t)=6t−4 meters per second squared and v(0)=3 meters per second. What is v(2)?",
+      "options": [
+        "7 meters per second",
+        "4 meters per second",
+        "8 meters per second",
+        "−1 meter per second"
+      ],
+      "correctIndex": 0,
+      "explanation": "Velocity is an accumulation of acceleration: v(2)=v(0)+∫ from 0 to 2 of (6t−4)dt=3+[3t²−4t] from 0 to 2=3+4=7 m/s. Acceleration’s final value is not the final velocity. A: The velocity change is 4, added to the initial velocity 3. B: This is the change in velocity without the initial value. C: This is the numerical value of the acceleration at t=2. D: This subtracts rather than adds the acceleration integral."
+    },
+    {
+      "id": "calc-ab-8-2-004",
+      "prompt": "A particle’s velocity is v(t)=3−t² and its position satisfies s(1)=5. What is s(2)?",
+      "options": [
+        "2/3",
+        "17/3",
+        "25/3",
+        "13/3"
+      ],
+      "correctIndex": 1,
+      "explanation": "Use the input attached to the given position: s(2)=5+∫ from 1 to 2 of (3−t²)dt. The integral is [3t−t³/3] from 1 to 2=10/3−8/3=2/3. Thus the position is 5+2/3=17/3. A: This is the displacement alone, not the final position. B: The displacement from 1 to 2 is 2/3, added to the given position. C: This incorrectly adds the displacement from 0 to 2 to a position given at t=1. D: This subtracts the actual displacement from the initial position."
+    },
+    {
+      "id": "calc-ab-8-2-005",
+      "prompt": "The graph below shows a particle’s velocity. If its position is s(0)=10 meters, what is s(4)?",
+      "options": [
+        "14 meters",
+        "−2 meters",
+        "8 meters",
+        "10 meters"
+      ],
+      "correctIndex": 2,
+      "explanation": "The positive triangle from 0 to 1 contributes 1 meter. The negative regions from 1 to 3 and 3 to 4 contribute −2 and −1 meters. Net displacement is −2 meters, so s(4)=10−2=8 meters. An endpoint velocity of zero tells us only that the particle is momentarily at rest. A: This adds total distance 4 instead of signed displacement. B: This is the displacement without the initial position. C: The signed velocity area is 1−2−1=−2, giving position 8. D: Final zero velocity does not imply zero displacement."
+    },
+    {
+      "id": "calc-ab-8-2-006",
+      "prompt": "A particle has velocity v(t)=2t−6 for t≥0 and initial position s(0)=4. At what positive time does it first return to its initial position?",
+      "options": [
+        "3",
+        "2",
+        "12",
+        "6"
+      ],
+      "correctIndex": 3,
+      "explanation": "Returning to the initial position requires ∫ from 0 to t of (2u−6)du=0, not v(t)=0. The displacement is t²−6t=t(t−6). Besides the initial time 0, the only positive root is 6. The particle turns at t=3 and then travels back. A: This is the time of zero velocity and the turning point, not the return time. B: The displacement there is −8, not zero. C: The return already occurred at 6 and the displacement at 12 is positive. D: Its displacement t²−6t vanishes again at t=6."
+    },
+    {
+      "id": "calc-ab-8-2-007",
+      "prompt": "With angles in radians, a particle has velocity v(t)=sin(πt/2) on [0,4]. What total distance does it travel?",
+      "options": [
+        "8/π",
+        "0",
+        "4/π",
+        "4"
+      ],
+      "correctIndex": 0,
+      "explanation": "The velocity is positive on (0,2) and negative on (2,4). The first lobe has area [−2cos(πt/2)/π] from 0 to 2=4/π. The second contributes the same magnitude after taking absolute value. Therefore total distance is 8/π, while displacement is zero. A: Each of the two opposite-signed lobes has unsigned area 4/π. B: The signed displacement is zero, but travel in opposite directions does not cancel distance. C: This counts only the first lobe. D: This multiplies the time by the maximum speed rather than integrating actual speed."
+    },
+    {
+      "id": "calc-ab-8-2-008",
+      "prompt": "Use the table below and trapezoidal subintervals [0,1], [1,3] and [3,5]. What is the resulting estimate of displacement from t=0 to t=5?",
+      "options": [
+        "11 meters",
+        "9 meters",
+        "6 meters",
+        "2 meters"
+      ],
+      "correctIndex": 1,
+      "explanation": "Apply each actual width: 1(−2+0)/2=−1, 2(0+4)/2=4 and 2(4+2)/2=6. Their signed sum is 9 meters. This is a specified-rule approximation from data; an exact displacement is not determined by the finite measurements alone. A: This changes the initial negative contribution to positive and estimates distance instead. B: The signed trapezoid contributions are −1, 4 and 6. C: This ignores the unequal widths and does not compute the stated trapezoids. D: This is the final measured velocity’s numerical value, not displacement."
+    },
+    {
+      "id": "calc-ab-8-2-009",
+      "prompt": "A particle has velocity v(t)=3(t−1)² on [0,2]. Which conclusion about its motion and accumulated travel is correct?",
+      "options": [
+        "It reverses direction at t=1 because velocity is zero there.",
+        "Its displacement is zero because the velocities at 0 and 2 agree.",
+        "It does not reverse direction at t=1, and total distance equals displacement on [0,2].",
+        "Its total distance is negative because it slows before t=1."
+      ],
+      "correctIndex": 2,
+      "explanation": "The square ensures v(t)≥0, with equality only at t=1. The particle moves in the same direction before and after the instant at rest. Therefore |v|=v throughout the interval and total distance equals displacement; both are ∫ from 0 to 2 of 3(t−1)²dt=2. A: A zero velocity alone does not imply a sign change. B: Equal endpoint velocities do not determine a zero integral. C: Velocity is nonnegative on both sides of its isolated zero. D: Distance is nonnegative, and slowing is not negative velocity."
+    },
+    {
+      "id": "calc-ab-8-2-010",
+      "prompt": "For the velocity graph below on [0,4], which pair gives average velocity and average speed, respectively?",
+      "options": [
+        "1 and 0",
+        "0 and 4",
+        "2 and 2",
+        "0 and 1"
+      ],
+      "correctIndex": 3,
+      "explanation": "The two positive triangles contribute +2 in total and the two negative triangles −2, so displacement is zero. Adding magnitudes instead gives total distance 4. Divide both quantities by elapsed time 4: average velocity is 0 and average speed is 1. A: This reverses the roles of signed displacement and total distance. B: The second entry is total distance without division by elapsed time. C: This uses the endpoint speed instead of either time average. D: Signed area cancels to zero, while total distance 4 divided by time 4 gives speed 1."
+    },
+    {
+      "id": "calc-ab-8-2-011",
+      "prompt": "A particle has v(t)=eᵗ and s(2)=10. What is s(0)?",
+      "options": [
+        "11−e²",
+        "9+e²",
+        "10−e²",
+        "e²−1"
+      ],
+      "correctIndex": 0,
+      "explanation": "The forward displacement is s(2)−s(0)=∫ from 0 to 2 of eᵗdt=e²−1. Rearranging gives s(0)=10−(e²−1)=11−e². Recovering an earlier position reverses the sign of the accumulated forward change. A: Subtract the forward displacement e²−1 from the final position 10. B: This adds the forward displacement instead of reversing it. C: This omits the lower-endpoint contribution from integrating eᵗ. D: This is displacement, not the unknown initial position."
+    }
+  ]
+}

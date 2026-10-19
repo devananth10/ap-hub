@@ -52,4 +52,6 @@ Repository: `devananth10/ap-hub`, branch `main`. Each entry below was saved with
 
 | `02d044f47e70fd5af10fbedcecf01899f7e31e29` | 726 | Slope fields 7.3–7.4, 101 tests, mobile/full browser sessions, build and preservation/stability checks; verified GitHub receipt |
 
+| `60cae3dfc6bf68142f8630cfd169b99189b41b20` | 759 | Unit 7 complete, 103 tests, build/typecheck, all Calculus routes and three full browser sessions; verified GitHub receipt |
+
 These rows record previously verified receipts. PROGRESS.json records subsequent locally validated publication; Git log and the verified remote branch provide later receipts. Do not invent a future commit SHA inside progress files before committing.

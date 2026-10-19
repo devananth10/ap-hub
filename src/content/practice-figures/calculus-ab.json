@@ -2667,5 +2667,105 @@
         "slope": -1
       }
     ]
+  },
+  "calc-ab-8-1-003": {
+    "xRange": [
+      0,
+      4
+    ],
+    "yRange": [
+      -2,
+      2
+    ],
+    "description": "The continuous graph of f consists of straight segments joining (0,−2), (2,2) and (4,0). It crosses the x-axis at x=1. Positive and negative triangular contributions must retain their signs.",
+    "curves": [
+      {
+        "points": [
+          [
+            0,
+            -2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": []
+  },
+  "calc-ab-8-2-005": {
+    "xRange": [
+      0,
+      4
+    ],
+    "yRange": [
+      -2,
+      2
+    ],
+    "description": "This is the velocity graph, with straight segments joining (0,2), (1,0), (3,−2) and (4,0). Time is in seconds and velocity in meters per second. The initial position is 10 meters.",
+    "curves": [
+      {
+        "points": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            3,
+            -2
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": []
+  },
+  "calc-ab-8-2-010": {
+    "xRange": [
+      0,
+      4
+    ],
+    "yRange": [
+      -2,
+      2
+    ],
+    "description": "This is a velocity graph. Straight segments join (0,2), (2,−2) and (4,2). The velocity crosses zero at t=1 and t=3. Each of the four signed triangular pieces has area magnitude 1.",
+    "curves": [
+      {
+        "points": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            -2
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "start": "closed",
+        "end": "closed"
+      }
+    ],
+    "dots": []
   }
 }
