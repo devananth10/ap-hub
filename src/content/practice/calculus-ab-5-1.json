@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 5,
+  "topicId": "mean-value",
+  "questions": [
+    {
+      "id": "calc-ab-5-1-001",
+      "prompt": "Which hypotheses and conclusion correctly state the Mean Value Theorem for a<b?",
+      "options": [
+        "If f is continuous on (a,b), the conclusion holds without any other assumptions.",
+        "If f is continuous on [a,b] and differentiable on (a,b), some c∈(a,b) satisfies f′(c)=[f(b)−f(a)]/(b−a).",
+        "If f is differentiable only at a and b, some interior c must have f′(c)=0.",
+        "Under the usual hypotheses, every c∈(a,b) has derivative equal to the secant slope."
+      ],
+      "correctIndex": 1,
+      "explanation": "The Mean Value Theorem requires continuity on the entire closed interval and differentiability on its open interior. It guarantees at least one interior input where the instantaneous rate equals the average endpoint rate. It does not generally specify that input or make it unique. A: Interior continuity alone does not ensure either endpoint continuity or interior differentiability. B: Continuity includes endpoints, differentiability is interior, and a tangent slope equals the secant slope. C: Endpoint derivatives are not the theorem’s hypotheses, and the guaranteed slope is not always zero. D: The theorem guarantees at least one such point, not every point."
+    },
+    {
+      "id": "calc-ab-5-1-002",
+      "prompt": "For f(x)=x²−x on [1,4], which c satisfies the Mean Value Theorem equation?",
+      "options": [
+        "2",
+        "3",
+        "5/2",
+        "4"
+      ],
+      "correctIndex": 2,
+      "explanation": "This polynomial is continuous on [1,4] and differentiable on (1,4). Its endpoint values are 0 and 12, so the secant slope is 12/3=4. Solve f′(c)=2c−1=4 to get c=5/2, inside the open interval. A: The derivative there is 3 rather than the secant slope 4. B: The derivative there is 5 rather than 4. C: The secant slope is 4 and 2c−1=4 gives c=5/2. D: The endpoint is excluded and its derivative is 7."
+    },
+    {
+      "id": "calc-ab-5-1-003",
+      "prompt": "For f(x)=√x on [0,9], which c satisfies the Mean Value Theorem equation?",
+      "options": [
+        "3/2",
+        "0",
+        "9",
+        "9/4"
+      ],
+      "correctIndex": 3,
+      "explanation": "The square root is continuous on [0,9] and differentiable on (0,9); it need not be differentiable at the endpoint 0. The secant slope is 3/9=1/3. Solving 1/(2√c)=1/3 gives √c=3/2 and c=9/4. A: This is √c rather than c. B: The theorem’s point must lie in the open interval, where the derivative exists. C: This is an excluded endpoint and its derivative is only 1/6. D: The secant slope is 1/3, and 1/(2√c)=1/3 gives c=9/4."
+    },
+    {
+      "id": "calc-ab-5-1-004",
+      "prompt": "Why can the Mean Value Theorem not be applied to f(x)=|x| on [−1,1]?",
+      "options": [
+        "It is not differentiable at the interior point 0.",
+        "It is not continuous at 0.",
+        "Its endpoint values are equal.",
+        "Every endpoint derivative must exist and equal zero."
+      ],
+      "correctIndex": 0,
+      "explanation": "The graph is continuous on [−1,1], but its left and right slopes at 0 are −1 and +1. Thus it fails the interior differentiability hypothesis. Indeed its secant slope is zero, while neither interior branch has zero derivative. A: Closed-interval continuity holds, but the corner violates interior differentiability. B: The absolute-value function is continuous there. C: Equal endpoint values do not invalidate the theorem. D: The theorem does not require endpoint derivatives or zero slopes there."
+    },
+    {
+      "id": "calc-ab-5-1-005",
+      "prompt": "Define f(x)=x for 0≤x<1 and f(1)=3. Why does the Mean Value Theorem fail to guarantee its secant slope at an interior point of [0,1]?",
+      "options": [
+        "The function is not differentiable anywhere in (0,1).",
+        "The function is not continuous at endpoint 1.",
+        "The theorem requires f(0)=f(1).",
+        "The secant interval has length zero."
+      ],
+      "correctIndex": 1,
+      "explanation": "Interior differentiability holds with slope 1. However, continuity on the closed interval fails at 1 because its left limit 1 differs from f(1)=3. The endpoint secant slope is 3, and no interior derivative equals 3. A: On the interior f(x)=x and its derivative is 1. B: The left limit is 1 but the defined endpoint value is 3. C: Equal endpoint values are not required by the Mean Value Theorem. D: The interval length is 1−0=1."
+    },
+    {
+      "id": "calc-ab-5-1-006",
+      "prompt": "A car’s straight-line coordinate s(t), in km, is continuous on [0,2] hours and differentiable on (0,2). If s(0)=10 and s(2)=170, what is guaranteed?",
+      "options": [
+        "Its velocity is 80 km/h throughout the trip.",
+        "Its velocity at exactly t=1 must be 80 km/h.",
+        "At some c∈(0,2), the signed velocity s′(c)=80 km/h.",
+        "Its speed never exceeds 80 km/h."
+      ],
+      "correctIndex": 2,
+      "explanation": "The stated continuity and differentiability meet the Mean Value Theorem hypotheses. The endpoint rate is (170−10)/(2−0)=80 km/h. Therefore at least one interior time has signed velocity 80 km/h; the theorem says neither when nor that all velocities equal it. A: A single average rate does not force constant velocity. B: The theorem does not identify the guaranteed time as the midpoint. C: The average coordinate rate is (170−10)/2=80, so the theorem guarantees that instantaneous rate. D: An attained average rate does not impose a maximum speed bound."
+    },
+    {
+      "id": "calc-ab-5-1-007",
+      "prompt": "For f(x)=x³ on [−2,2], which set gives all c satisfying the Mean Value Theorem equation?",
+      "options": [
+        "Only c=0.",
+        "Only c=2/√3.",
+        "c=−2 and c=2.",
+        "c=−2/√3 and c=2/√3."
+      ],
+      "correctIndex": 3,
+      "explanation": "The secant slope is [8−(−8)]/[2−(−2)]=16/4=4. Setting f′(c)=3c² equal to 4 gives c=±2/√3. Both lie inside (−2,2). The theorem guarantees existence but not uniqueness. A: The derivative there is 0, not 4. B: This omits the equally valid negative interior solution. C: These are endpoints and their derivatives are 12 rather than 4. D: The secant slope is 4 and 3c²=4 has two interior solutions."
+    },
+    {
+      "id": "calc-ab-5-1-008",
+      "prompt": "If f is continuous on [a,b], differentiable on (a,b), and f′(x)=0 for every interior x, what follows?",
+      "options": [
+        "f is constant on [a,b].",
+        "Only f(a)=0 is guaranteed.",
+        "f can take different endpoint values despite those hypotheses.",
+        "f must be discontinuous somewhere inside."
+      ],
+      "correctIndex": 0,
+      "explanation": "Choose any two points u<v in [a,b]. The theorem on [u,v] gives [f(v)−f(u)]/(v−u)=f′(c)=0 for some c between them. Hence f(v)=f(u). As the pair was arbitrary, the function is constant on the entire interval. A: Apply the Mean Value Theorem to any subinterval: its secant slope must equal zero. B: Zero derivative does not determine the function’s height. C: The theorem gives zero endpoint difference. D: Continuity is already assumed, and constant functions satisfy it."
+    },
+    {
+      "id": "calc-ab-5-1-009",
+      "prompt": "Suppose f is continuous on [2,5], differentiable on (2,5), and |f′(x)|≤3 there. What is the largest possible value of |f(5)−f(2)|?",
+      "options": [
+        "3",
+        "9",
+        "15",
+        "No finite upper bound"
+      ],
+      "correctIndex": 1,
+      "explanation": "By the Mean Value Theorem, f(5)−f(2)=f′(c)(5−2) for an interior c. Thus its magnitude is at most 3·3=9. The function f(x)=3x attains change 9 and satisfies the hypotheses, so the bound is sharp. A: This omits the interval-length multiplier. B: The theorem bounds the absolute change by 3 times the interval length 3, and a slope-3 line attains it. C: This multiplies by the right endpoint rather than the interval length. D: The uniform derivative bound does impose a finite change bound."
+    },
+    {
+      "id": "calc-ab-5-1-010",
+      "prompt": "Suppose f is continuous on [a,b], differentiable on (a,b), a<b, and f(a)=f(b). Which conclusion is guaranteed?",
+      "options": [
+        "The midpoint must have derivative zero.",
+        "The function is constant throughout [a,b].",
+        "Some c∈(a,b) has f′(c)=0.",
+        "The only possible critical points are the endpoints."
+      ],
+      "correctIndex": 2,
+      "explanation": "The average endpoint rate is [f(b)−f(a)]/(b−a)=0. The Mean Value Theorem therefore supplies an interior c with f′(c)=0. This special case is Rolle’s Theorem; the matching point need not be unique or centered. A: The theorem guarantees an interior point but does not fix its location. B: Equal endpoints alone do not require zero derivatives everywhere. C: The endpoint secant slope is zero, so the Mean Value Theorem gives an interior horizontal tangent. D: The theorem explicitly guarantees an interior zero derivative."
+    },
+    {
+      "id": "calc-ab-5-1-011",
+      "prompt": "For f(x)=1/x on [1,4], which c satisfies the Mean Value Theorem equation?",
+      "options": [
+        "−2",
+        "1/2",
+        "4",
+        "2"
+      ],
+      "correctIndex": 3,
+      "explanation": "The reciprocal is continuous and differentiable on this positive interval. The secant slope is [(1/4)−1]/(4−1)=−1/4. Solve −1/c²=−1/4 to get c²=4; only c=2 lies in (1,4). A: This solves the squared equation but lies outside the specified interval. B: This reverses the selected positive root. C: This is an endpoint and its derivative is −1/16. D: The secant slope is −1/4 and −1/c²=−1/4 gives the positive interior value 2."
+    }
+  ]
+}

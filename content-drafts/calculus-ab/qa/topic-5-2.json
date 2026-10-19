@@ -1,0 +1,166 @@
+{
+  "topicNumber": "5.2",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "9ddb421ddb83ad2fdaa814f1e88f14239c7ab63184af263d13c66b4338c7bf63",
+  "scopeReview": "CED FUN-1.C.1–3 Extreme Value Theorem, local versus global extrema and critical points. Attainment distinguished from bounds, sufficient theorem conditions from necessary conditions, and derivative failure on the domain from holes outside it. Endpoint/local-extremum convention ambiguity avoided.",
+  "varietyReview": "EVT existence versus uniqueness, bounded open interval, unbounded reciprocal, defined corner minimum, stationary non-extremum, missing-domain hole, polynomial critical roots, original local/global graph, constant extrema, discontinuous-but-attained extrema and an interior differentiable maximum.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-5-2-001",
+      "independentReasoning": "A constant function disproves uniqueness; f(x)=x on [0,1] puts both extrema at endpoints; and |x| on [−1,1] is continuous with a nondifferentiable interior point. All satisfy the theorem and independently exclude the stronger claims.",
+      "optionReview": [
+        "The theorem guarantees existence, not uniqueness of the attaining inputs.",
+        "An absolute extremum may occur at an endpoint.",
+        "Continuity on the closed bounded interval guarantees both extremal values are reached.",
+        "Continuity is the required hypothesis; differentiability is not a conclusion."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f attains both an absolute maximum and an absolute minimum on [a,b]."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-2-002",
+      "independentReasoning": "The two explicit interior points establish failure of both extrema for every proposed candidate. The infimum 0 and supremum 1 are bounds, but their absence from the domain prevents them from being attained extremal values.",
+      "optionReview": [
+        "Neither endpoint belongs to the stated domain.",
+        "Every domain point has another domain point with a smaller value.",
+        "The domain is not a closed interval, so continuity alone does not give that guarantee.",
+        "The bounds 0 and 1 are approached but never attained."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It has neither an absolute maximum nor an absolute minimum on that domain."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-2-003",
+      "independentReasoning": "For any x in the domain, x/2 is also in the domain and gives twice the value, so no candidate can be a maximum. The inequality 1/x≥1 separately proves the included endpoint is a minimum, rather than inferring both conclusions from theorem failure alone.",
+      "optionReview": [
+        "Every value is at least 1, while values grow without bound as x→0⁺.",
+        "Values exceed 1 at smaller positive inputs.",
+        "The included endpoint 1 does attain the minimum.",
+        "Zero is outside the domain and the reciprocal is undefined there."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The absolute minimum is 1 at x=1, and no absolute maximum exists."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-2-004",
+      "independentReasoning": "Check domain membership first, then the two derivative sides, then the exact nonnegative inequality. These are separate facts: a corner is not excluded from being critical, and an abrupt slope change alone does not determine whether its height is a minimum or maximum.",
+      "optionReview": [
+        "A defined function input with a nonexistent derivative can be critical.",
+        "The function is defined there, its two-sided derivative fails, and its nonnegative values attain zero there.",
+        "The definition also includes failure of the derivative at a defined point.",
+        "The corner is at the smallest value, not the largest."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It is a critical input and an absolute minimum, although f′(2) does not exist."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-2-005",
+      "independentReasoning": "The exact comparisons −h³<0<h³ hold arbitrarily close to 0 and disprove both extremum definitions. They also show why the necessary critical-point condition cannot be reversed into a sufficient extremum condition.",
+      "optionReview": [
+        "A zero derivative is not sufficient for an extremum.",
+        "A zero function height does not establish a maximum.",
+        "The derivative is zero there, while negative and positive nearby inputs give values on opposite sides of 0.",
+        "Differentiable inputs with derivative zero are critical."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It is critical but is neither a local maximum nor a local minimum."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-2-006",
+      "independentReasoning": "Substituting 1 into the original denominator gives zero, establishing non-membership before derivative classification. A continuous extension could define a different function at 1, but no such extension is part of the given problem.",
+      "optionReview": [
+        "Derivative failure outside the original domain does not create a point on the function.",
+        "Cancellation gives an equivalent formula only on the original domain.",
+        "A denominator zero may exclude the input entirely.",
+        "Critical inputs must belong to the function’s domain, even when derivative nonexistence is involved."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "No, because the original function is not defined at 1."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-2-007",
+      "independentReasoning": "Differentiate term by term, factor the cubic and solve both factors separately. Substituting ±√2 and 0 into 4x(x²−2) gives zero. A cubic factorization with these three distinct roots exhausts the real zeros, without needing to classify their extrema yet.",
+      "optionReview": [
+        "The polynomial derivative factors as 4x(x²−2), with exactly those real zeros.",
+        "This omits the zeros of the quadratic factor x²−2.",
+        "This confuses x²=2 with x=±2.",
+        "This omits the zero from the factor x."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "−√2, 0 and √2."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-2-008",
+      "independentReasoning": "Read the actual neighboring vertices (0,−2),(1,3),(3,−1) to verify the strict interior peak, and compare all segment endpoint heights to locate the larger global value 4. Each segment is linear, so no unseen segment height exceeds its endpoints. The diagram hash binds this review to the plotted data.",
+      "optionReview": [
+        "The larger endpoint value 4 prevents absolute maximality.",
+        "Nearby values are lower than f(1)=3, but the domain contains f(5)=4.",
+        "Both adjacent segments have smaller values near the peak.",
+        "The interior peak does satisfy the local maximum definition."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It is a local maximum but not an absolute maximum."
+      },
+      "figureSha256": "bd5010d212325c57b71218eaffa7e39354359cb7feb50e3c67cf39f005a8d9a1"
+    },
+    {
+      "questionId": "calc-ab-5-2-009",
+      "independentReasoning": "For any pair x,y in the domain, f(x)=f(y)=5, so both required inequalities f(x)≥f(y) and f(x)≤f(y) hold. This directly checks the definitions without relying on derivative-based intuition or endpoint conventions for local extrema.",
+      "optionReview": [
+        "Interior outputs are the same as the endpoint outputs.",
+        "A constant function attains both extrema everywhere.",
+        "All function outputs equal 5, so every point is simultaneously a maximizer and minimizer.",
+        "The derivative being zero does not make zero a function output."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Every input in the interval attains both values, and both extremal values are 5."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-2-010",
+      "independentReasoning": "Enumerate the complete output set {0,1}. Its least and greatest elements both have explicit attaining inputs. Separately check the endpoint discontinuity. These facts establish existence directly while showing why the theorem itself cannot be cited for this example.",
+      "optionReview": [
+        "The defined endpoint value 1 is an attained maximum here.",
+        "The example has extrema, but the theorem’s continuity hypothesis is not satisfied.",
+        "The function actually equals zero at all positive domain inputs.",
+        "Its maximum is 1 at 0 and its minimum is 0 at every other domain input."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "A function can attain both absolute extrema even when the continuity hypothesis of the Extreme Value Theorem fails."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-2-011",
+      "independentReasoning": "For h>0, the maximum gives [f(c+h)−f(c)]/h≤0; for h<0 the same numerator divided by h is ≥0. If their common finite limit exists, it must be 0. This independently proves the necessary condition and explains why differentiability and interior location matter.",
+      "optionReview": [
+        "The point is interior to the real domain and is also a local maximum, so differentiability forces zero slope.",
+        "The height of a maximum is unrelated to the required derivative value.",
+        "The necessary zero-derivative condition is not sufficient.",
+        "The real-number domain has no finite endpoints."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f′(c)=0."
+      }
+    }
+  ]
+}

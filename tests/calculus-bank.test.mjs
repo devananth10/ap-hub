@@ -272,3 +272,12 @@ test('spatial-density units and related-rate pi factors are verified separately 
   assert.equal(numericalOption('48π cm³/s'),48*Math.PI);
   assert.equal(numericalOption('−48π cm³/s'),-48*Math.PI);
 });
+test('MVT models compare endpoint secants and require strictly interior theorem points',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='mean-value');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-5-1.json','utf8'));
+  verifyCalculusQuestion(batch.questions[2],qa.questions[2]);
+  const endpoint=structuredClone(batch.questions[2]);endpoint.correctIndex=endpoint.options.indexOf('0');
+  assert.throws(()=>verifyCalculusQuestion(endpoint,qa.questions[2]),/MVT point key/);
+  const bad=structuredClone(batch.questions[1]);bad.correctIndex=bad.options.indexOf('3');
+  assert.throws(()=>verifyCalculusQuestion(bad,qa.questions[1]),/MVT point key/);
+});

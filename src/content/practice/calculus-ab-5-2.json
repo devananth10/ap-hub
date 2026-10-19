@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 5,
+  "topicId": "topic-5-2",
+  "questions": [
+    {
+      "id": "calc-ab-5-2-001",
+      "prompt": "Which conclusion is guaranteed by the Extreme Value Theorem when f is continuous on a closed bounded interval [a,b]?",
+      "options": [
+        "f has exactly one absolute maximum and exactly one absolute minimum.",
+        "Both absolute extrema must occur strictly inside (a,b).",
+        "f attains both an absolute maximum and an absolute minimum on [a,b].",
+        "f must be differentiable everywhere on [a,b]."
+      ],
+      "correctIndex": 2,
+      "explanation": "The Extreme Value Theorem guarantees attained maximum and minimum values for a continuous function on a closed bounded interval. The extrema may occur at endpoints or interior points and may be attained more than once. A: The theorem guarantees existence, not uniqueness of the attaining inputs. B: An absolute extremum may occur at an endpoint. C: Continuity on the closed bounded interval guarantees both extremal values are reached. D: Continuity is the required hypothesis; differentiability is not a conclusion."
+    },
+    {
+      "id": "calc-ab-5-2-002",
+      "prompt": "For f(x)=x on the open interval (0,1), which statement is correct?",
+      "options": [
+        "Its absolute minimum is 0 and maximum is 1.",
+        "It has a minimum but no maximum.",
+        "The Extreme Value Theorem guarantees both because f is continuous.",
+        "It has neither an absolute maximum nor an absolute minimum on that domain."
+      ],
+      "correctIndex": 3,
+      "explanation": "For any x in (0,1), x/2 is also in the domain and has smaller value, while (x+1)/2 has larger value. Thus no value is smallest or largest. Boundedness and continuity alone do not imply attainment on an open interval. A: Neither endpoint belongs to the stated domain. B: Every domain point has another domain point with a smaller value. C: The domain is not a closed interval, so continuity alone does not give that guarantee. D: The bounds 0 and 1 are approached but never attained."
+    },
+    {
+      "id": "calc-ab-5-2-003",
+      "prompt": "For f(x)=1/x on the domain 0<x≤1, which statement about absolute extrema is correct?",
+      "options": [
+        "The absolute minimum is 1 at x=1, and no absolute maximum exists.",
+        "Both absolute extrema occur at x=1.",
+        "There are no absolute extrema of either kind.",
+        "The absolute maximum occurs at x=0."
+      ],
+      "correctIndex": 0,
+      "explanation": "Since 0<x≤1, 1/x≥1 with equality at x=1. Hence 1 is the attained minimum. As x→0⁺ the values are unbounded above, so no maximum is attained. The missing zero endpoint prevents a closed-interval EVT guarantee. A: Every value is at least 1, while values grow without bound as x→0⁺. B: Values exceed 1 at smaller positive inputs. C: The included endpoint 1 does attain the minimum. D: Zero is outside the domain and the reciprocal is undefined there."
+    },
+    {
+      "id": "calc-ab-5-2-004",
+      "prompt": "For f(x)=|x−2| on the real numbers, which statement about x=2 is correct?",
+      "options": [
+        "It is not critical because the derivative is undefined.",
+        "It is a critical input and an absolute minimum, although f′(2) does not exist.",
+        "It is critical only if f′(2)=0.",
+        "It is an absolute maximum because the derivative changes abruptly."
+      ],
+      "correctIndex": 1,
+      "explanation": "The function value f(2)=0 exists, but the left slope is −1 and right slope is +1. Thus 2 is critical through derivative nonexistence. Since |x−2|≥0 everywhere, the value zero is an absolute minimum. A: A defined function input with a nonexistent derivative can be critical. B: The function is defined there, its two-sided derivative fails, and its nonnegative values attain zero there. C: The definition also includes failure of the derivative at a defined point. D: The corner is at the smallest value, not the largest."
+    },
+    {
+      "id": "calc-ab-5-2-005",
+      "prompt": "For f(x)=x³ on the real numbers, how should the point at x=0 be classified?",
+      "options": [
+        "It is a local minimum because f′(0)=0.",
+        "It is a local maximum because f(0)=0.",
+        "It is critical but is neither a local maximum nor a local minimum.",
+        "It is not critical because f is differentiable there."
+      ],
+      "correctIndex": 2,
+      "explanation": "The derivative f′(x)=3x² vanishes at 0, making the input critical. However, for every small h>0, f(−h)<f(0)<f(h). Hence 0 is neither a local maximum nor a local minimum. A: A zero derivative is not sufficient for an extremum. B: A zero function height does not establish a maximum. C: The derivative is zero there, while negative and positive nearby inputs give values on opposite sides of 0. D: Differentiable inputs with derivative zero are critical."
+    },
+    {
+      "id": "calc-ab-5-2-006",
+      "prompt": "Let f(x)=(x²−1)/(x−1) on its original domain x≠1. Is x=1 a critical input of this function?",
+      "options": [
+        "Yes, because the derivative fails to exist there.",
+        "Yes, because simplifying the formula fills the missing point automatically.",
+        "Yes, because every denominator zero is a critical point.",
+        "No, because the original function is not defined at 1."
+      ],
+      "correctIndex": 3,
+      "explanation": "A critical point is a point on the function where its derivative is zero or fails to exist. Here x=1 is not on the original function. On every allowed input the function simplifies to x+1 and has derivative 1, so the hole is not a critical point. A: Derivative failure outside the original domain does not create a point on the function. B: Cancellation gives an equivalent formula only on the original domain. C: A denominator zero may exclude the input entirely. D: Critical inputs must belong to the function’s domain, even when derivative nonexistence is involved."
+    },
+    {
+      "id": "calc-ab-5-2-007",
+      "prompt": "Which set contains all critical inputs of f(x)=x⁴−4x² on the real numbers?",
+      "options": [
+        "−√2, 0 and √2.",
+        "Only 0.",
+        "−2, 0 and 2.",
+        "−√2 and √2 only."
+      ],
+      "correctIndex": 0,
+      "explanation": "The function is differentiable everywhere, so critical inputs are the zeros of f′=4x³−8x=4x(x²−2). They are x=0 and x=±√2. No derivative-domain failures add other inputs. A: The polynomial derivative factors as 4x(x²−2), with exactly those real zeros. B: This omits the zeros of the quadratic factor x²−2. C: This confuses x²=2 with x=±2. D: This omits the zero from the factor x."
+    },
+    {
+      "id": "calc-ab-5-2-008",
+      "prompt": "For the continuous graph below on [0,5], which statement correctly describes the point at x=1?",
+      "options": [
+        "It is both a local and an absolute maximum.",
+        "It is a local maximum but not an absolute maximum.",
+        "It is a local minimum.",
+        "It is neither a local nor an absolute maximum."
+      ],
+      "correctIndex": 1,
+      "explanation": "The graph rises to (1,3) and then falls, so values sufficiently near 1 are below 3. This establishes a local maximum there. It is not absolute because the included endpoint at x=5 has value 4. A: The larger endpoint value 4 prevents absolute maximality. B: Nearby values are lower than f(1)=3, but the domain contains f(5)=4. C: Both adjacent segments have smaller values near the peak. D: The interior peak does satisfy the local maximum definition."
+    },
+    {
+      "id": "calc-ab-5-2-009",
+      "prompt": "For the constant function f(x)=5 on [−2,3], where are its absolute maximum and minimum attained?",
+      "options": [
+        "Only the endpoints attain extrema.",
+        "No extrema exist because the derivative is zero everywhere.",
+        "Every input in the interval attains both values, and both extremal values are 5.",
+        "The maximum is 5 but the minimum is 0."
+      ],
+      "correctIndex": 2,
+      "explanation": "The largest and smallest output are both 5. Every domain point attains that output, so every input is both an absolute maximizer and an absolute minimizer. The Extreme Value Theorem does not require different extremal values or unique attaining points. A: Interior outputs are the same as the endpoint outputs. B: A constant function attains both extrema everywhere. C: All function outputs equal 5, so every point is simultaneously a maximizer and minimizer. D: The derivative being zero does not make zero a function output."
+    },
+    {
+      "id": "calc-ab-5-2-010",
+      "prompt": "On [0,1], define f(0)=1 and f(x)=0 for 0<x≤1. What does this example show?",
+      "options": [
+        "A discontinuous function can never attain an absolute maximum.",
+        "The Extreme Value Theorem guarantees extrema for this function despite its discontinuity.",
+        "The minimum is not attained because values near 0 approach zero.",
+        "A function can attain both absolute extrema even when the continuity hypothesis of the Extreme Value Theorem fails."
+      ],
+      "correctIndex": 3,
+      "explanation": "The right limit at 0 is 0, different from f(0)=1, so the function is not continuous on [0,1]. Nevertheless, its outputs are exactly 0 and 1 and both are attained. The theorem gives sufficient conditions; failing them does not prove extrema absent. A: The defined endpoint value 1 is an attained maximum here. B: The example has extrema, but the theorem’s continuity hypothesis is not satisfied. C: The function actually equals zero at all positive domain inputs. D: Its maximum is 1 at 0 and its minimum is 0 at every other domain input."
+    },
+    {
+      "id": "calc-ab-5-2-011",
+      "prompt": "A function is differentiable on the real numbers and attains an absolute maximum at a finite input c. Which statement must be true?",
+      "options": [
+        "f′(c)=0.",
+        "f(c)=0.",
+        "Every point with derivative zero is also an absolute maximum.",
+        "c must be an endpoint of the domain."
+      ],
+      "correctIndex": 0,
+      "explanation": "An absolute maximum on the full real domain is also a local maximum at an interior point. Since the derivative exists there, it must equal zero. This necessary condition does not assert that every critical point is a maximum or determine the maximum height. A: The point is interior to the real domain and is also a local maximum, so differentiability forces zero slope. B: The height of a maximum is unrelated to the required derivative value. C: The necessary zero-derivative condition is not sufficient. D: The real-number domain has no finite endpoints."
+    }
+  ]
+}

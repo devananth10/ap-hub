@@ -118,7 +118,13 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='dimensioned-derivative') {
+  if (review.check.type==='mvt-point') {
+    const check=review.check,[a,b]=check.interval,h=0.00001;assert.ok(Number.isFinite(a)&&Number.isFinite(b)&&a<b);
+    const f=x=>evaluateExpression(check.expression,x),secant=(f(b)-f(a))/(b-a);
+    const matches=question.options.map(option=>{const c=numericalOption(option);return Number.isFinite(c)&&a<c&&c<b&&Math.abs((f(c+h)-f(c-h))/(2*h)-secant)<0.00001;});
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique MVT point');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' MVT point key');
+  } else if (review.check.type==='dimensioned-derivative') {
     const check=review.check,units={'g/cm':[1,-1,0],cm:[0,1,0],'g/cm²':[1,-2,0],'g/s':[1,0,-1]};
     assert.ok(units[check.outputUnit]&&units[check.inputUnit]);
     const dimensions=units[check.outputUnit].map((power,i)=>power-units[check.inputUnit][i]),h=check.step;

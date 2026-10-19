@@ -1,0 +1,206 @@
+{
+  "topicNumber": "5.1",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "f402fa230c695b4eb95f43f9e800ea0f0770eb8207e3c7e18c05d127af6992ab",
+  "scopeReview": "CED FUN-1.B.1 Mean Value Theorem hypotheses and justifications. Closed-interval continuity, open-interior differentiability and at-least-one quantifier checked. Includes Rolle special case, rate bound and nonunique theorem points. No endpoint derivative requirement invented.",
+  "varietyReview": "General statement, quadratic point, endpoint-nondifferentiable square root, absolute-value failure, discontinuous endpoint, coordinate-rate application, two cubic points, zero derivative implies constant, sharp rate bound, equal endpoints and a reciprocal interval.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-5-1-001",
+      "independentReasoning": "Check interval brackets and quantifiers separately. The function |x| on [−1,1] disproves continuity-only versions. The polynomial x² on [0,2] has secant slope 2 but derivative 2x equals 2 only at 1, disproving an every-point conclusion.",
+      "optionReview": [
+        "Interior continuity alone does not ensure either endpoint continuity or interior differentiability.",
+        "Continuity includes endpoints, differentiability is interior, and a tangent slope equals the secant slope.",
+        "Endpoint derivatives are not the theorem’s hypotheses, and the guaranteed slope is not always zero.",
+        "The theorem guarantees at least one such point, not every point."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "If f is continuous on [a,b] and differentiable on (a,b), some c∈(a,b) satisfies f′(c)=[f(b)−f(a)]/(b−a)."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-1-002",
+      "independentReasoning": "Independently use the original polynomial centered difference at each candidate to obtain its derivative, then compare to the actual endpoint quotient. The model also requires a<c<b, rejecting the endpoint even before a slope comparison.",
+      "optionReview": [
+        "The derivative there is 3 rather than the secant slope 4.",
+        "The derivative there is 5 rather than 4.",
+        "The secant slope is 4 and 2c−1=4 gives c=5/2.",
+        "The endpoint is excluded and its derivative is 7."
+      ],
+      "check": {
+        "type": "mvt-point",
+        "interval": [
+          1,
+          4
+        ],
+        "expression": [
+          "sub",
+          [
+            "pow",
+            "x",
+            2
+          ],
+          "x"
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-5-1-003",
+      "independentReasoning": "Check the allowed endpoint differentiability exception explicitly. The selected interior value has square root 3/2 and derivative 1/3. Original-function differences corroborate the derivative and the open-interval check excludes both endpoint alternatives.",
+      "optionReview": [
+        "This is √c rather than c.",
+        "The theorem’s point must lie in the open interval, where the derivative exists.",
+        "This is an excluded endpoint and its derivative is only 1/6.",
+        "The secant slope is 1/3, and 1/(2√c)=1/3 gives c=9/4."
+      ],
+      "check": {
+        "type": "mvt-point",
+        "interval": [
+          0,
+          9
+        ],
+        "expression": [
+          "sqrt",
+          "x"
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-5-1-004",
+      "independentReasoning": "Compute the actual endpoint quotient (1−1)/2=0 and the derivative values on each side. There is no interior point with existing derivative zero, so the missing hypothesis has a concrete consequence rather than just a formal failed checklist.",
+      "optionReview": [
+        "Closed-interval continuity holds, but the corner violates interior differentiability.",
+        "The absolute-value function is continuous there.",
+        "Equal endpoint values do not invalidate the theorem.",
+        "The theorem does not require endpoint derivatives or zero slopes there."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It is not differentiable at the interior point 0."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-1-005",
+      "independentReasoning": "Read the piecewise endpoint assignment separately from the limiting interior formula. The actual secant uses f(1)=3, not its left limit. This yields an explicit counterexample showing why endpoint continuity cannot be omitted.",
+      "optionReview": [
+        "On the interior f(x)=x and its derivative is 1.",
+        "The left limit is 1 but the defined endpoint value is 3.",
+        "Equal endpoint values are not required by the Mean Value Theorem.",
+        "The interval length is 1−0=1."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The function is not continuous at endpoint 1."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-1-006",
+      "independentReasoning": "The theorem is applied to the position coordinate, not a presumed constant-speed path. A model s(t)=10+40t² has the same endpoints and varying velocity 80t, illustrating that the average alone does not bound or fix every speed. Other smooth perturbations shift the matching time.",
+      "optionReview": [
+        "A single average rate does not force constant velocity.",
+        "The theorem does not identify the guaranteed time as the midpoint.",
+        "The average coordinate rate is (170−10)/2=80, so the theorem guarantees that instantaneous rate.",
+        "An attained average rate does not impose a maximum speed bound."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "At some c∈(0,2), the signed velocity s′(c)=80 km/h."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-1-007",
+      "independentReasoning": "Square each proposed root to get 4/3 and substitute into 3c²=4. The positive magnitude 2/√3 is less than 2, so both are interior. The quadratic equation exhausts the possible solutions and separately excludes the origin and endpoints.",
+      "optionReview": [
+        "The derivative there is 0, not 4.",
+        "This omits the equally valid negative interior solution.",
+        "These are endpoints and their derivatives are 12 rather than 4.",
+        "The secant slope is 4 and 3c²=4 has two interior solutions."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "c=−2/√3 and c=2/√3."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-1-008",
+      "independentReasoning": "The conclusion follows from zero derivatives at every interior input, not just at one input. For contrast, x³ has a zero derivative only at 0 and is not constant. A nonzero constant function disproves the claim that its height must be zero.",
+      "optionReview": [
+        "Apply the Mean Value Theorem to any subinterval: its secant slope must equal zero.",
+        "Zero derivative does not determine the function’s height.",
+        "The theorem gives zero endpoint difference.",
+        "Continuity is already assumed, and constant functions satisfy it."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f is constant on [a,b]."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-1-009",
+      "independentReasoning": "Separate the absolute derivative bound from the interval width: |f′(c)|≤3 and width 5−2=3. Their product is 9. The explicit affine example confirms that “largest possible” is attained rather than merely an unattainable upper estimate.",
+      "optionReview": [
+        "This omits the interval-length multiplier.",
+        "The theorem bounds the absolute change by 3 times the interval length 3, and a slope-3 line attains it.",
+        "This multiplies by the right endpoint rather than the interval length.",
+        "The uniform derivative bound does impose a finite change bound."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          2,
+          5,
+          3
+        ],
+        "expression": [
+          "mul",
+          3,
+          [
+            "sub",
+            5,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-5-1-010",
+      "independentReasoning": "On [0,1], f(x)=x²(1−x) has equal endpoint values but is not constant. Its interior zero derivative is at 2/3, while f′(1/2)=1/4≠0. This explicit example excludes the midpoint and constant-function overclaims.",
+      "optionReview": [
+        "The theorem guarantees an interior point but does not fix its location.",
+        "Equal endpoints alone do not require zero derivatives everywhere.",
+        "The endpoint secant slope is zero, so the Mean Value Theorem gives an interior horizontal tangent.",
+        "The theorem explicitly guarantees an interior zero derivative."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Some c∈(a,b) has f′(c)=0."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-1-011",
+      "independentReasoning": "Check the original-function derivative by centered quotients, separately compare it with the actual endpoint rate, and enforce the strict interior condition. The negative algebraic root is not a valid theorem point on the given interval.",
+      "optionReview": [
+        "This solves the squared equation but lies outside the specified interval.",
+        "This reverses the selected positive root.",
+        "This is an endpoint and its derivative is −1/16.",
+        "The secant slope is −1/4 and −1/c²=−1/4 gives the positive interior value 2."
+      ],
+      "check": {
+        "type": "mvt-point",
+        "interval": [
+          1,
+          4
+        ],
+        "expression": [
+          "div",
+          1,
+          "x"
+        ]
+      }
+    }
+  ]
+}
