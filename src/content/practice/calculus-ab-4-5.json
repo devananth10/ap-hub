@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 4,
+  "topicId": "topic-4-5",
+  "questions": [
+    {
+      "id": "calc-ab-4-5-001",
+      "prompt": "A rigid 13 m ladder rests against a vertical wall on level ground. Its foot is 5 m from the wall and moves away at 2 m/s. How fast is the top’s height changing then?",
+      "options": [
+        "5/6 m/s",
+        "−5/6 m/s",
+        "−12/5 m/s",
+        "−2 m/s"
+      ],
+      "correctIndex": 1,
+      "explanation": "Let x be horizontal foot distance and y be top height. The fixed ladder gives x²+y²=169. At x=5, y=√(169−25)=12. Differentiate in time: xx′+yy′=0. Thus y′=−5·2/12=−5/6 m/s, meaning descent. A: The top descends as the foot moves away, so the height rate is negative. B: The top height is 12 m and y′=−xx′/y=−10/12. C: This reverses the geometric ratio and omits the supplied foot rate. D: The two endpoint speeds need not have equal magnitudes."
+    },
+    {
+      "id": "calc-ab-4-5-002",
+      "prompt": "Water fills a conical region with height h=3r at all times, where h and r are in cm. Use V=(π/3)r²h. If dV/dt=4π cm³/s when h=6 cm, what is dh/dt?",
+      "options": [
+        "3 cm/s",
+        "1/3 cm/s",
+        "1 cm/s",
+        "4 cm/s"
+      ],
+      "correctIndex": 2,
+      "explanation": "The persistent relation r=h/3 gives V=πh³/27. Therefore V′=(πh²/9)h′. At h=6, V′=4πh′. Since the inflow is 4π cm³/s, h′=1 cm/s. A: This omits the factor 3 when differentiating the simplified cubic h³. B: This adds an extra factor 3 when differentiating the simplified cubic. C: Substitution gives V=πh³/27 and V′=(πh²/9)h′=4πh′ at h=6. D: This omits the geometric coefficient 4π multiplying h′ at the instant."
+    },
+    {
+      "id": "calc-ab-4-5-003",
+      "prompt": "A spherical bubble has volume V=(4/3)πr³. At r=3 cm its volume grows at 36π cm³/s. What is dr/dt?",
+      "options": [
+        "3 cm/s",
+        "9 cm/s",
+        "−1 cm/s",
+        "1 cm/s"
+      ],
+      "correctIndex": 3,
+      "explanation": "Differentiate with respect to time: V′=4πr²r′. At r=3 the coefficient is 4π·9=36π. Thus r′=36π/(36π)=1 cm/s; the bubble expands. A: This omits one radius factor in the geometric derivative. B: This divides by 4π without including r². C: The positive volume rate requires a positive radius rate. D: Divide the volume rate by 4πr²=36π cm²."
+    },
+    {
+      "id": "calc-ab-4-5-004",
+      "prompt": "A 6 m lamp illuminates a 2 m tall person walking away on level ground at 1.5 m/s. Let x be lamp-to-person distance and s the shadow length beyond the person. How fast does the shadow tip’s distance x+s from the lamp increase?",
+      "options": [
+        "9/4 m/s",
+        "3/4 m/s",
+        "3/2 m/s",
+        "3 m/s"
+      ],
+      "correctIndex": 0,
+      "explanation": "Similar triangles give 6/(x+s)=2/s. Hence 6s=2x+2s and s=x/2. The tip coordinate is x+s=3x/2, so its rate is (3/2)(1.5)=9/4 m/s. A: Similar triangles give s=x/2, so (x+s)′=(3/2)x′=9/4. B: This is the shadow-length rate s′, not the shadow-tip rate. C: This is the person’s speed and omits the growing shadow. D: This incorrectly doubles the person’s rate."
+    },
+    {
+      "id": "calc-ab-4-5-005",
+      "prompt": "Boat A is 6 km east of a dock and moves east at 3 km/h. Boat B is 8 km north of the dock and moves south toward it at 1 km/h. How fast is the distance between the boats changing at that instant?",
+      "options": [
+        "13/5 km/h",
+        "1 km/h",
+        "2 km/h",
+        "−1 km/h"
+      ],
+      "correctIndex": 1,
+      "explanation": "Let x and y be the positive east and north coordinate magnitudes, so D²=x²+y². Then D=10 km and D′=(xx′+yy′)/D=[6·3+8(−1)]/10=1 km/h. The boats are getting farther apart. A: This treats boat B’s northward coordinate as increasing rather than decreasing. B: The separation is 10 km and D′=[6(3)+8(−1)]/10. C: Subtracting the two speed magnitudes ignores the perpendicular geometry. D: The decreasing north coordinate does not outweigh the increasing east coordinate here."
+    },
+    {
+      "id": "calc-ab-4-5-006",
+      "prompt": "Water drains from a cylinder of fixed radius 2 cm at 5π cm³/min. With V=πr²h, what is the water-height rate dh/dt?",
+      "options": [
+        "5/4 cm/min",
+        "−5/2 cm/min",
+        "−5/4 cm/min",
+        "−5 cm/min"
+      ],
+      "correctIndex": 2,
+      "explanation": "Use V′=πr²h′=4πh′ because radius is fixed. Draining means V′=−5π, so h′=−5π/(4π)=−5/4 cm/min. The sign describes falling water level. A: Draining decreases height, so the rate is negative. B: This divides by radius instead of base area. C: The signed volume rate is −5π and the fixed base area is 4π. D: This omits the squared-radius base-area factor."
+    },
+    {
+      "id": "calc-ab-4-5-007",
+      "prompt": "An observer is 20 m horizontally from a balloon’s vertical path. The balloon rises at 3 m/s and is 15 m above the observer’s eye level. What is the rate of increase of the elevation angle θ, in radians per second?",
+      "options": [
+        "3/20 rad/s",
+        "3/25 rad/s",
+        "−12/125 rad/s",
+        "12/125 rad/s"
+      ],
+      "correctIndex": 3,
+      "explanation": "The geometry gives tan θ=y/20. Differentiate: sec²θ·θ′=y′/20. Using sec²θ=(20²+y²)/20² gives θ′=20y′/(20²+y²)=60/625=12/125 rad/s. A: This omits the sec²θ factor from differentiating tangent. B: This divides by line-of-sight distance rather than applying the angle relation. C: A rising balloon at fixed horizontal distance increases the elevation angle. D: From tan θ=y/20, θ′=20y′/(20²+y²)=60/625."
+    },
+    {
+      "id": "calc-ab-4-5-008",
+      "prompt": "A square’s area is increasing at 24 cm²/s. When the area is 144 cm², how fast is its perimeter increasing?",
+      "options": [
+        "4 cm/s",
+        "1 cm/s",
+        "8 cm/s",
+        "24 cm/s"
+      ],
+      "correctIndex": 0,
+      "explanation": "Let a be side length, so A=a² and P=4a. At A=144, a=12. Then A′=2aa′ gives a′=24/(24)=1 cm/s. Hence P′=4a′=4 cm/s. A: The side is 12 cm, side rate is 24/(2·12)=1 cm/s and perimeter rate is four times that. B: This is the side-length rate rather than the perimeter rate. C: This loses the factor 2 in differentiating area as the square of side length. D: This reuses the area-rate magnitude as a length rate."
+    },
+    {
+      "id": "calc-ab-4-5-009",
+      "prompt": "A rectangle keeps perimeter 40 cm. Its length is 12 cm and increases at 2 cm/s at an instant. What is the area rate then?",
+      "options": [
+        "8 cm²/s",
+        "−8 cm²/s",
+        "40 cm²/s",
+        "0 cm²/s"
+      ],
+      "correctIndex": 1,
+      "explanation": "From 2L+2W=40, W=20−L and W′=−L′=−2. At L=12 the width is 8. Thus A′=WL′+LW′=8·2+12(−2)=−8 cm²/s, so area decreases. A: This reverses the sign of the net area change. B: The width is 8 cm and decreases at 2 cm/s, so A′=8·2+12(−2). C: This treats both side rates as positive despite fixed perimeter. D: A fixed perimeter does not force fixed area."
+    },
+    {
+      "id": "calc-ab-4-5-010",
+      "prompt": "A cube has edge length 3 cm when its volume increases at 54 cm³/s. Its volume and surface area are V=a³ and S=6a². What is dS/dt then?",
+      "options": [
+        "24 cm²/s",
+        "108 cm²/s",
+        "72 cm²/s",
+        "54 cm²/s"
+      ],
+      "correctIndex": 2,
+      "explanation": "Differentiate V=a³ to get V′=3a²a′. At a=3, a′=54/27=2 cm/s. Then S′=12aa′=12·3·2=72 cm²/s. A: This omits the current edge factor in the surface-area derivative. B: This doubles the volume-rate magnitude without the geometric conversion factor 4/a. C: The edge rate is 54/(3·3²)=2 cm/s and S′=12a a′=72. D: This confuses volume-rate and surface-area-rate magnitudes and units."
+    },
+    {
+      "id": "calc-ab-4-5-011",
+      "prompt": "Water drains at a constant positive outflow magnitude c from a conical region whose volume is V=kh³, with constant k>0 and positive height h. How many times as large is the downward height-rate magnitude at h=2 as at h=4?",
+      "options": [
+        "2",
+        "1/4",
+        "1",
+        "4"
+      ],
+      "correctIndex": 3,
+      "explanation": "Since V′=−c and V=kh³, 3kh²h′=−c. Thus |h′|=c/(3kh²). The requested ratio is [c/(3k·2²)]/[c/(3k·4²)]=4²/2²=4. The narrower lower region loses height faster. A: This treats the inverse-square relation as inverse-first-power. B: This reverses which height has the larger rate magnitude. C: A constant volume outflow does not mean a constant height rate. D: Because |h′|=c/(3kh²), halving height multiplies the magnitude by four."
+    }
+  ]
+}

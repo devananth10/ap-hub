@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 4,
+  "topicId": "topic-4-6",
+  "questions": [
+    {
+      "id": "calc-ab-4-6-001",
+      "prompt": "Using the tangent-line approximation to f(x)=√x at a=9, what estimate is obtained for √9.3?",
+      "options": [
+        "3.005",
+        "3.3",
+        "3.05",
+        "3.15"
+      ],
+      "correctIndex": 2,
+      "explanation": "The linearization is L(x)=f(9)+f′(9)(x−9)=3+(x−9)/6. At x=9.3, L=3+0.3/6=3.05. This is the tangent-line estimate, not an assertion of exact equality to the square root. A: This uses input change 0.03 instead of 0.3. B: This treats the local derivative as 1 rather than 1/6. C: Use f(9)=3, f′(9)=1/6 and input change 0.3. D: This omits the root value in the derivative denominator, using 1/2."
+    },
+    {
+      "id": "calc-ab-4-6-002",
+      "prompt": "Using the linearization of f(x)=∛x at a=8, what estimate is obtained for ∛8.24?",
+      "options": [
+        "2.06",
+        "2.24",
+        "2.01",
+        "2.02"
+      ],
+      "correctIndex": 3,
+      "explanation": "At 8 the cube root is 2 and the derivative is (1/3)8^(−2/3)=1/12. Thus L(8.24)=2+(0.24)/12=2.02. The small correction is added to the base function value. A: This omits the factor 1/3 in the cube-root derivative. B: This uses unit slope rather than 1/12. C: This halves the correct linear correction. D: The slope is 1/(3·8^(2/3))=1/12 and the input change is 0.24."
+    },
+    {
+      "id": "calc-ab-4-6-003",
+      "prompt": "Use the tangent line to f(x)=ln x at a=1. What estimate does it give for ln(1.04)?",
+      "options": [
+        "0.04",
+        "1.04",
+        "−0.04",
+        "0"
+      ],
+      "correctIndex": 0,
+      "explanation": "The tangent-line formula is L(x)=ln1+(1/1)(x−1)=x−1. Therefore ln(1.04) is approximated by L(1.04)=0.04. The estimate is not an exact logarithm identity. A: The base height is ln1=0 and base slope is 1. B: This uses the input itself as the function value. C: The input change is positive and the logarithm slope at 1 is positive. D: This retains only the base height and ignores the input change."
+    },
+    {
+      "id": "calc-ab-4-6-004",
+      "prompt": "Using the tangent line to f(x)=eˣ at a=0, what estimate is obtained for e^(−0.03)?",
+      "options": [
+        "1.03",
+        "0.97",
+        "−0.03",
+        "1"
+      ],
+      "correctIndex": 1,
+      "explanation": "At 0, f(0)=1 and f′(0)=1. The tangent-line approximation is L(x)=1+x. Substituting −0.03 gives 0.97, a local estimate of the positive exponential. A: This reverses the input change sign. B: The linearization is 1+x, evaluated at −0.03. C: This reports only the linear change and omits base height 1. D: This ignores the nonzero input change."
+    },
+    {
+      "id": "calc-ab-4-6-005",
+      "prompt": "Suppose f(2)=5 and f′(2)=−3. What is the tangent-line estimate for f(1.9)?",
+      "options": [
+        "4.7",
+        "4.9",
+        "5.3",
+        "0.3"
+      ],
+      "correctIndex": 2,
+      "explanation": "Use L(x)=5−3(x−2). At 1.9 the input difference is −0.1, so L(1.9)=5+(−3)(−0.1)=5.3. A negative local slope can produce an increase when moving left from the base point. A: This reverses the sign of the input change. B: This treats the derivative as +1 rather than −3. C: The input change is −0.1, so the first-order output change is +0.3. D: This gives the estimated change without adding f(2)."
+    },
+    {
+      "id": "calc-ab-4-6-006",
+      "prompt": "Use the tangent line to f(x)=1/x at a=4. What estimate is obtained for 1/3.9?",
+      "options": [
+        "0.24375",
+        "0.25",
+        "0.275",
+        "0.25625"
+      ],
+      "correctIndex": 3,
+      "explanation": "The base height is 1/4=0.25 and slope is −1/4²=−1/16. Thus L(3.9)=0.25−(1/16)(3.9−4)=0.25625. The smaller denominator should increase the reciprocal, consistent with this sign. A: This reverses the correction sign. B: This omits the input correction. C: This uses slope −1/4 instead of −1/16. D: The slope −1/16 times the negative step −0.1 gives a positive correction 0.00625."
+    },
+    {
+      "id": "calc-ab-4-6-007",
+      "prompt": "For f(x)=x², use the tangent line at a=2 to estimate f(2.1). What is the exact difference “true value minus tangent estimate”?",
+      "options": [
+        "0.01",
+        "−0.01",
+        "0.1",
+        "0"
+      ],
+      "correctIndex": 0,
+      "explanation": "The tangent line is L(x)=4+4(x−2). Hence L(2.1)=4.4, while f(2.1)=4.41. The requested difference is 4.41−4.4=0.01. The tangent estimate is below the true curve. A: The true value is 4.41 and tangent estimate is 4.4. B: This reverses the specified error order. C: This uses the input step rather than its squared error. D: A tangent line does not coincide with a quadratic at every nearby input."
+    },
+    {
+      "id": "calc-ab-4-6-008",
+      "prompt": "A twice-differentiable function has f″(x)<0 throughout an interval. For distinct points a and b in that interval, how does the tangent-line value L(b)=f(a)+f′(a)(b−a) compare with f(b)?",
+      "options": [
+        "L(b)<f(b): the tangent line always gives an underestimate.",
+        "L(b)>f(b): the tangent line gives an overestimate.",
+        "L(b)=f(b) because tangency gives exact values throughout the interval.",
+        "No comparison is possible even with the strict second-derivative sign throughout the interval."
+      ],
+      "correctIndex": 1,
+      "explanation": "The negative second derivative means the curve is concave down on the entire interval. Its tangent at a lies above the curve at other points in that interval. Thus L(b)>f(b), so the tangent approximation overestimates. A: That direction corresponds to concave-up rather than concave-down behavior. B: The concave-down curve lies below its tangent line on the stated interval. C: Tangency guarantees the base value and slope, not equality everywhere. D: The given interval-wide shape information does determine the side of the tangent."
+    },
+    {
+      "id": "calc-ab-4-6-009",
+      "prompt": "Let y=x³. At x=2, a small input change is dx=−0.02. What is the differential dy=f′(2)dx, rather than the exact finite change Δy?",
+      "options": [
+        "−0.237608",
+        "0.24",
+        "−0.24",
+        "−0.02"
+      ],
+      "correctIndex": 2,
+      "explanation": "The derivative is f′(x)=3x², so f′(2)=12. Thus dy=12(−0.02)=−0.24. This differential approximates the actual output change but does not include the higher-order terms of the cubic. A: This is the exact finite change (1.98)³−8, a different quantity. B: This loses the sign of the negative input change. C: The tangent slope is 12 and its product with −0.02 is −0.24. D: This uses the input differential as though the slope were 1."
+    },
+    {
+      "id": "calc-ab-4-6-010",
+      "prompt": "Angles are in radians. Using the tangent line to sin x at a=π/6, which expression estimates sin(π/6+0.02)?",
+      "options": [
+        "1/2+0.02√3",
+        "1/2−0.01√3",
+        "1/2+0.01",
+        "1/2+0.01√3"
+      ],
+      "correctIndex": 3,
+      "explanation": "The tangent formula is sin a+cos a(x−a). At a=π/6, sin a=1/2 and cos a=√3/2. Multiplying the radian step 0.02 by √3/2 gives 0.01√3, so the estimate is 1/2+0.01√3. A: This doubles the tangent slope. B: This uses a negative slope instead of the positive cosine value. C: This replaces cos(π/6) by 1/2. D: The base sine is 1/2 and slope cos(π/6)=√3/2 multiplies 0.02."
+    },
+    {
+      "id": "calc-ab-4-6-011",
+      "prompt": "If f is differentiable at a with f′(a)=0, what does its tangent-line approximation predict for f(a+h) when h is small?",
+      "options": [
+        "It predicts f(a+h)≈f(a), but does not assert the values are exactly equal.",
+        "It proves f(a+h)=f(a) for every nearby h.",
+        "It predicts f(a+h)≈0 regardless of f(a).",
+        "No tangent-line approximation exists when the slope is zero."
+      ],
+      "correctIndex": 0,
+      "explanation": "The linearization is L(a+h)=f(a)+f′(a)h=f(a). This gives a locally constant first-order model, even though the original function can change through nonlinear terms. The approximation does not set the base height to zero. A: The linear correction f′(a)h is zero, while smaller-order nonlinear change may remain. B: A zero derivative at one point does not make the function locally constant. C: The base height is retained in a tangent approximation. D: A horizontal tangent is a valid linearization with constant output."
+    }
+  ]
+}

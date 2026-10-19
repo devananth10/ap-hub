@@ -1,0 +1,415 @@
+{
+  "topicNumber": "4.5",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "1e7bda5c70ad29a08ce6d7677e04d04442dea4d0629eb4349544a98b9fed5d69",
+  "scopeReview": "CED CHA-3.E.1 solving and interpreting related rates with a common time variable. Persistent geometry differentiated before instantaneous substitution; signed rates, physical units and requested quantity checked. Radian angle rate explicit. No unstated diagram required.",
+  "varietyReview": "Ladder, cone inflow, sphere expansion, shadow tip versus length, perpendicular boat motion, cylinder drainage, elevation angle, area-to-perimeter rate, fixed-perimeter rectangle, cube surface/volume conversion and changing height-rate magnitude under constant outflow.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-4-5-001",
+      "independentReasoning": "Check the geometry before rates: 5²+12²=13². The fixed-length first-order condition is 5(2)+12y′=0. Both the sign and magnitude follow independently from that condition; opposite endpoint motion does not mean equal speeds.",
+      "optionReview": [
+        "The top descends as the foot moves away, so the height rate is negative.",
+        "The top height is 12 m and y′=−xx′/y=−10/12.",
+        "This reverses the geometric ratio and omits the supplied foot rate.",
+        "The two endpoint speeds need not have equal magnitudes."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          13,
+          5,
+          2
+        ],
+        "expression": [
+          "div",
+          [
+            "mul",
+            -5,
+            2
+          ],
+          [
+            "sqrt",
+            [
+              "sub",
+              [
+                "pow",
+                13,
+                2
+              ],
+              [
+                "pow",
+                5,
+                2
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-4-5-002",
+      "independentReasoning": "Alternatively use V′=(π/3)(2rh r′+r²h′) with r=2 and r′=h′/3. This also gives 4πh′, independently verifying the similarity substitution, cube coefficient and positive height rate.",
+      "optionReview": [
+        "This omits the factor 3 when differentiating the simplified cubic h³.",
+        "This adds an extra factor 3 when differentiating the simplified cubic.",
+        "Substitution gives V=πh³/27 and V′=(πh²/9)h′=4πh′ at h=6.",
+        "This omits the geometric coefficient 4π multiplying h′ at the instant."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          3,
+          4,
+          6
+        ],
+        "expression": [
+          "div",
+          [
+            "mul",
+            4,
+            "pi"
+          ],
+          [
+            "div",
+            [
+              "mul",
+              "pi",
+              [
+                "pow",
+                6,
+                2
+              ]
+            ],
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-4-5-003",
+      "independentReasoning": "The geometric derivative dV/dr=4πr² has area units, and dividing volume/time by it gives length/time. Direct first-order volume expansion around r=3 confirms that a unit radius rate produces the supplied 36π volume rate.",
+      "optionReview": [
+        "This omits one radius factor in the geometric derivative.",
+        "This divides by 4π without including r².",
+        "The positive volume rate requires a positive radius rate.",
+        "Divide the volume rate by 4πr²=36π cm²."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          4,
+          3,
+          36
+        ],
+        "expression": [
+          "div",
+          [
+            "mul",
+            36,
+            "pi"
+          ],
+          [
+            "mul",
+            4,
+            "pi",
+            [
+              "pow",
+              3,
+              2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-4-5-004",
+      "independentReasoning": "Differentiate the triangle equation 4s=2x to get s′=x′/2=3/4 m/s. Add the person’s rate 3/2 to obtain tip rate 9/4. This separately verifies that shadow length and tip position are different changing quantities.",
+      "optionReview": [
+        "Similar triangles give s=x/2, so (x+s)′=(3/2)x′=9/4.",
+        "This is the shadow-length rate s′, not the shadow-tip rate.",
+        "This is the person’s speed and omits the growing shadow.",
+        "This incorrectly doubles the person’s rate."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          6,
+          2,
+          1.5
+        ],
+        "expression": [
+          "mul",
+          [
+            "div",
+            6,
+            [
+              "sub",
+              6,
+              2
+            ]
+          ],
+          1.5
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-4-5-005",
+      "independentReasoning": "The actual separation vector is (6,−8) and its velocity difference is (3,1). Their dot product is 18−8=10; divide by separation magnitude 10 to recover the same rate. The sign of the north-coordinate rate is essential.",
+      "optionReview": [
+        "This treats boat B’s northward coordinate as increasing rather than decreasing.",
+        "The separation is 10 km and D′=[6(3)+8(−1)]/10.",
+        "Subtracting the two speed magnitudes ignores the perpendicular geometry.",
+        "The decreasing north coordinate does not outweigh the increasing east coordinate here."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          6,
+          8,
+          3,
+          1
+        ],
+        "expression": [
+          "div",
+          [
+            "add",
+            [
+              "mul",
+              6,
+              3
+            ],
+            [
+              "mul",
+              8,
+              -1
+            ]
+          ],
+          [
+            "sqrt",
+            [
+              "add",
+              [
+                "pow",
+                6,
+                2
+              ],
+              [
+                "pow",
+                8,
+                2
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-4-5-006",
+      "independentReasoning": "An exact height drop Δh changes volume by base area 4π times Δh. Thus negative volume change gives negative height change, with units cm³/min divided by cm² equal to cm/min. The same linear relation verifies the rate.",
+      "optionReview": [
+        "Draining decreases height, so the rate is negative.",
+        "This divides by radius instead of base area.",
+        "The signed volume rate is −5π and the fixed base area is 4π.",
+        "This omits the squared-radius base-area factor."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          2,
+          5
+        ],
+        "expression": [
+          "div",
+          [
+            "mul",
+            -5,
+            "pi"
+          ],
+          [
+            "mul",
+            "pi",
+            [
+              "pow",
+              2,
+              2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-4-5-007",
+      "independentReasoning": "Alternatively θ=arctan(y/20). Apply the inverse-tangent chain rule at y=15,y′=3 to obtain (3/20)/(1+(15/20)²)=12/125. Both approaches use radians and the fixed horizontal distance.",
+      "optionReview": [
+        "This omits the sec²θ factor from differentiating tangent.",
+        "This divides by line-of-sight distance rather than applying the angle relation.",
+        "A rising balloon at fixed horizontal distance increases the elevation angle.",
+        "From tan θ=y/20, θ′=20y′/(20²+y²)=60/625."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          20,
+          3,
+          15
+        ],
+        "expression": [
+          "div",
+          [
+            "mul",
+            20,
+            3
+          ],
+          [
+            "add",
+            [
+              "pow",
+              20,
+              2
+            ],
+            [
+              "pow",
+              15,
+              2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-4-5-008",
+      "independentReasoning": "Independently write P=4√A and differentiate: P′=2A′/√A=2·24/12=4. The derivative converts area/time to length/time using the current side length; the perimeter itself is not 4 cm.",
+      "optionReview": [
+        "The side is 12 cm, side rate is 24/(2·12)=1 cm/s and perimeter rate is four times that.",
+        "This is the side-length rate rather than the perimeter rate.",
+        "This loses the factor 2 in differentiating area as the square of side length.",
+        "This reuses the area-rate magnitude as a length rate."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          24,
+          144
+        ],
+        "expression": [
+          "div",
+          [
+            "mul",
+            2,
+            24
+          ],
+          [
+            "sqrt",
+            144
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-4-5-009",
+      "independentReasoning": "Eliminate width first: A=L(20−L)=20L−L². Then A′=(20−2L)L′=(20−24)2=−8. This independent one-variable chain-rule calculation checks the constraint and product-rule signs.",
+      "optionReview": [
+        "This reverses the sign of the net area change.",
+        "The width is 8 cm and decreases at 2 cm/s, so A′=8·2+12(−2).",
+        "This treats both side rates as positive despite fixed perimeter.",
+        "A fixed perimeter does not force fixed area."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          40,
+          12,
+          2
+        ],
+        "expression": [
+          "mul",
+          [
+            "sub",
+            [
+              "div",
+              40,
+              2
+            ],
+            [
+              "mul",
+              2,
+              12
+            ]
+          ],
+          2
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-4-5-010",
+      "independentReasoning": "Eliminate the intermediate edge rate symbolically: S′/V′=(12a)/(3a²)=4/a. At a=3 this gives S′=(4/3)54=72. The cancellation independently checks the two-stage rate conversion.",
+      "optionReview": [
+        "This omits the current edge factor in the surface-area derivative.",
+        "This doubles the volume-rate magnitude without the geometric conversion factor 4/a.",
+        "The edge rate is 54/(3·3²)=2 cm/s and S′=12a a′=72.",
+        "This confuses volume-rate and surface-area-rate magnitudes and units."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          3,
+          54,
+          6
+        ],
+        "expression": [
+          "mul",
+          [
+            "div",
+            4,
+            3
+          ],
+          54
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-4-5-011",
+      "independentReasoning": "Take the ratio only after deriving the signed rate, so the unknown common constants cancel. Both heights are positive and the comparison concerns magnitudes of negative rates. Substitution into the inverse-square relation gives the exact factor four.",
+      "optionReview": [
+        "This treats the inverse-square relation as inverse-first-power.",
+        "This reverses which height has the larger rate magnitude.",
+        "A constant volume outflow does not mean a constant height rate.",
+        "Because |h′|=c/(3kh²), halving height multiplies the magnitude by four."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          2,
+          4
+        ],
+        "expression": [
+          "div",
+          [
+            "pow",
+            4,
+            2
+          ],
+          [
+            "pow",
+            2,
+            2
+          ]
+        ]
+      }
+    }
+  ]
+}

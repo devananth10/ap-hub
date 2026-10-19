@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 396,
+  "questionsChecked": 429,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -1151,6 +1151,136 @@
       "questionId": "calc-ab-4-4-011",
       "method": "numeric",
       "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-5-001",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-5-002",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-5-003",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-5-004",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-5-005",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-5-006",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-5-007",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-5-008",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-5-009",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-5-010",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-5-011",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-6-001",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-6-002",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-6-003",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-6-004",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-6-005",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-6-006",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-6-007",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-6-009",
+      "method": "numeric",
+      "operation": "evaluate"
+    },
+    {
+      "questionId": "calc-ab-4-7-001",
+      "method": "punctured-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-4-7-003",
+      "method": "punctured-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-4-7-004",
+      "method": "punctured-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-4-7-005",
+      "method": "punctured-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-4-7-007",
+      "method": "punctured-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-4-7-009",
+      "method": "punctured-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-4-7-010",
+      "method": "punctured-expression",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -1319,7 +1449,14 @@
     "calc-ab-4-4-006",
     "calc-ab-4-4-008",
     "calc-ab-4-4-009",
-    "calc-ab-4-4-010"
+    "calc-ab-4-4-010",
+    "calc-ab-4-6-008",
+    "calc-ab-4-6-010",
+    "calc-ab-4-6-011",
+    "calc-ab-4-7-002",
+    "calc-ab-4-7-006",
+    "calc-ab-4-7-008",
+    "calc-ab-4-7-011"
   ],
   "humanReviewPerformed": false,
   "limitations": [

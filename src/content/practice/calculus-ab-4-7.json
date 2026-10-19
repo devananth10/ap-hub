@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 4,
+  "topicId": "topic-4-7",
+  "questions": [
+    {
+      "id": "calc-ab-4-7-001",
+      "prompt": "What is lim(x→0)[e^(3x)−1]/x?",
+      "options": [
+        "1",
+        "0",
+        "Does not exist",
+        "3"
+      ],
+      "correctIndex": 3,
+      "explanation": "The numerator and denominator both tend to 0. They are differentiable near 0 and the denominator derivative is 1≠0. L’Hospital’s Rule gives lim(x→0)3e^(3x)=3. The displayed 0/0 form itself is not a numerical limit value. A: This omits the inner exponential derivative factor 3. B: The original numerator tends to zero, but so does the denominator. C: The 0/0 form is indeterminate, not proof of nonexistence. D: The form is 0/0 and the derivative ratio 3e^(3x)/1 tends to 3."
+    },
+    {
+      "id": "calc-ab-4-7-002",
+      "prompt": "What is lim(x→∞)(ln x)/x?",
+      "options": [
+        "0",
+        "1",
+        "+∞",
+        "Does not exist"
+      ],
+      "correctIndex": 0,
+      "explanation": "For x>0, both ln x and x tend to positive infinity. Their derivatives are 1/x and 1, and the derivative ratio tends to 0. L’Hospital’s Rule therefore gives the original limit 0. A: The ∞/∞ form permits the derivative ratio (1/x)/1, whose limit is 0. B: The numerator and denominator both diverging does not imply equal growth rates. C: The logarithm grows without bound but more slowly than the denominator. D: The ratio has a well-defined limit despite both separate functions diverging."
+    },
+    {
+      "id": "calc-ab-4-7-003",
+      "prompt": "Angles are in radians. What is lim(x→0)(sin x−x)/x³?",
+      "options": [
+        "1/6",
+        "−1/6",
+        "0",
+        "−1/3"
+      ],
+      "correctIndex": 1,
+      "explanation": "The original form is 0/0. Differentiating numerator and denominator gives (cos x−1)/(3x²), again 0/0, then (−sin x)/(6x), again 0/0. A third application gives (−cos x)/6, tending to −1/6. Each reapplication requires checking the new form. A: This loses the negative sign after repeated sine differentiation. B: Three justified applications give the final ratio −cos x/6. C: Both original terms vanish, but their ratio has a nonzero third-order limit. D: This misses a factor 2 from repeated differentiation of x³."
+    },
+    {
+      "id": "calc-ab-4-7-004",
+      "prompt": "What is lim(x→1)(ln x)/(x−1)?",
+      "options": [
+        "0",
+        "−1",
+        "1",
+        "Does not exist"
+      ],
+      "correctIndex": 2,
+      "explanation": "Both numerator and denominator tend to 0 as x→1 through the positive domain. They are differentiable on a neighborhood of 1, with denominator derivative 1. L’Hospital’s Rule gives lim(x→1)1/x=1. A: This uses the zero numerator limit without accounting for the denominator also tending to zero. B: The logarithm has positive slope at 1. C: The local form is 0/0 and the derivative ratio is 1/x. D: The missing original quotient value at 1 does not prevent a limit."
+    },
+    {
+      "id": "calc-ab-4-7-005",
+      "prompt": "What is lim(x→0)(x+1)/(x+2)?",
+      "options": [
+        "1",
+        "0",
+        "Does not exist",
+        "1/2"
+      ],
+      "correctIndex": 3,
+      "explanation": "Direct substitution gives (0+1)/(0+2)=1/2. The form is 1/2, so L’Hospital’s Rule is not applicable. Taking a derivative ratio 1/1 would change the limit rather than evaluate it correctly. A: This incorrectly takes the derivative ratio even though the original form is neither 0/0 nor ∞/∞. B: This drops the nonzero constants in the original numerator and denominator. C: The denominator is nonzero near 0, so the quotient is continuous there. D: Direct continuity applies because the denominator tends to 2, not 0."
+    },
+    {
+      "id": "calc-ab-4-7-006",
+      "prompt": "What is lim(x→∞)x²/eˣ?",
+      "options": [
+        "0",
+        "1",
+        "+∞",
+        "Does not exist"
+      ],
+      "correctIndex": 0,
+      "explanation": "The original form is ∞/∞. One application gives lim(x→∞)2x/eˣ, still ∞/∞. A second gives lim(x→∞)2/eˣ=0. Both original and intermediate denominator derivatives are nonzero. A: Two justified ∞/∞ applications lead to 2/eˣ→0. B: Unbounded numerator and denominator need not have the same growth rate. C: The exponential eventually grows faster than the polynomial. D: L’Hospital’s Rule gives a definite finite limit."
+    },
+    {
+      "id": "calc-ab-4-7-007",
+      "prompt": "What is lim(x→2)(x²−4)/(x−2)?",
+      "options": [
+        "2",
+        "4",
+        "0",
+        "1"
+      ],
+      "correctIndex": 1,
+      "explanation": "The form is 0/0, with differentiable polynomials and denominator derivative 1. L’Hospital’s Rule gives lim(x→2)2x=4. It gives the same answer as cancelling x−2 away from the missing point. A: This uses the target input instead of the numerator derivative at that input. B: The 0/0 quotient can be evaluated as the limit of 2x/1, or by factoring. C: The zero numerator limit alone is insufficient for an indeterminate quotient. D: This omits the numerator derivative factor 2x."
+    },
+    {
+      "id": "calc-ab-4-7-008",
+      "prompt": "What is lim(x→∞)eˣ/(x²+1)?",
+      "options": [
+        "0",
+        "1",
+        "+∞",
+        "Does not exist due to oscillation"
+      ],
+      "correctIndex": 2,
+      "explanation": "The original form is ∞/∞. L’Hospital’s Rule gives eˣ/(2x), again ∞/∞, then eˣ/2, whose limit is positive infinity. The denominator derivatives 2x and 2 are nonzero for sufficiently large positive x. A: This reverses the relative growth of exponential and polynomial. B: Both separate functions diverging does not force ratio 1. C: Two eligible ∞/∞ applications lead to eˣ/2, which grows without bound. D: Neither positive function has the claimed oscillation, and the ratio grows without bound."
+    },
+    {
+      "id": "calc-ab-4-7-009",
+      "prompt": "Angles are in radians. What is lim(x→0)[1−cos(2x)]/x²?",
+      "options": [
+        "1",
+        "0",
+        "4",
+        "2"
+      ],
+      "correctIndex": 3,
+      "explanation": "The form is 0/0. L’Hospital’s Rule gives [2sin(2x)]/(2x)=sin(2x)/x. A second eligible application gives 2cos(2x), tending to 2. Equivalently use the fundamental sine limit on the intermediate ratio. A: This loses the inner factor 2 in differentiating cos(2x). B: A zero numerator and denominator require further analysis. C: This keeps an extra factor 2 after cancelling the denominator derivative. D: After one application the ratio is sin(2x)/x, which tends to 2."
+    },
+    {
+      "id": "calc-ab-4-7-010",
+      "prompt": "Angles are in radians. What is lim(x→0)ln(1+2x)/sin(3x)?",
+      "options": [
+        "2/3",
+        "1/3",
+        "2",
+        "3/2"
+      ],
+      "correctIndex": 0,
+      "explanation": "In a sufficiently small neighborhood of 0, the logarithm input is positive and the quotient has form 0/0. The denominator derivative 3cos(3x) is nonzero there. L’Hospital’s Rule gives [2/(1+2x)]/[3cos(3x)]→2/3. A: The derivative ratio is [2/(1+2x)]/[3cos(3x)], giving 2/3 at 0. B: This omits the logarithm input’s derivative factor 2. C: This omits the sine input’s derivative factor 3. D: This reverses the ratio."
+    },
+    {
+      "id": "calc-ab-4-7-011",
+      "prompt": "For x≠0, let R(x)=[x+x²sin(1/x)]/x. Which statement about lim(x→0)R(x) and L’Hospital’s Rule is correct?",
+      "options": [
+        "The original limit fails because the derivative ratio oscillates.",
+        "The limit is 1, although the numerator-derivative to denominator-derivative ratio has no limit.",
+        "The limit is 0 because the original numerator tends to 0.",
+        "The limit is 2 because the derivative ratio sometimes approaches 2."
+      ],
+      "correctIndex": 1,
+      "explanation": "For nonzero x, R(x)=1+xsin(1/x). Since |xsin(1/x)|≤|x|, its limit is 1. The derivative ratio is 1+2xsin(1/x)−cos(1/x), which has no limit. L’Hospital’s Rule is a sufficient evaluation tool when its hypotheses hold, not a converse test for original-limit existence. A: Failure of a sufficient evaluation method does not prove failure of the original limit. B: Direct simplification gives 1+xsin(1/x)→1; the derivative ratio oscillates, so this use of L’Hospital’s Rule does not evaluate it. C: The denominator also tends to 0, so that observation alone does not give the quotient limit. D: A subsequence value of the derivative ratio is not the original quotient limit."
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "topicNumber": "4.7",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "9bbfbe39b9a0c688ec2af7fe97b884c724e562909eb49bb24b2e01e480ef3edd",
+  "scopeReview": "CED LIM-4.A.1–2 L’Hospital’s Rule for 0/0 and ∞/∞ quotients only. Every eligible use checks differentiability, denominator derivative and successive quotient form. Includes a non-indeterminate counterexample and failure-of-converse case. Excluded indeterminate products, differences and powers are not assessed; radian trig and real log domains explicit.",
+  "varietyReview": "Exponential linear scaling, logarithmic end rate, repeated finite 0/0, derivative-definition logarithm, invalid application, repeated polynomial/exponential end limit, factored cross-check, unbounded exponential ratio, trig identity, two inner chain factors and a direct-limit alternative when the derivative ratio oscillates.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-4-7-001",
+      "independentReasoning": "Independently factor the quotient as 3[e^(3x)−1]/(3x) and use the natural-exponential defining limit. Evaluation of the original uncancelled quotient from both sides corroborates 3 rather than merely trusting the derivative ratio.",
+      "optionReview": [
+        "This omits the inner exponential derivative factor 3.",
+        "The original numerator tends to zero, but so does the denominator.",
+        "The 0/0 form is indeterminate, not proof of nonexistence.",
+        "The form is 0/0 and the derivative ratio 3e^(3x)/1 tends to 3."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 0,
+        "expression": [
+          "div",
+          [
+            "sub",
+            [
+              "exp",
+              [
+                "mul",
+                3,
+                "x"
+              ]
+            ],
+            1
+          ],
+          "x"
+        ],
+        "step": 0.001,
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-4-7-002",
+      "independentReasoning": "Check the hypotheses on a sufficiently large positive interval: differentiability, nonzero denominator derivative and ∞/∞ form. The derivative ratio limit is exactly the reciprocal end limit 1/x→0. This is a symbolic limit argument, not a numerical large-input claim.",
+      "optionReview": [
+        "The ∞/∞ form permits the derivative ratio (1/x)/1, whose limit is 0.",
+        "The numerator and denominator both diverging does not imply equal growth rates.",
+        "The logarithm grows without bound but more slowly than the denominator.",
+        "The ratio has a well-defined limit despite both separate functions diverging."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "0"
+      }
+    },
+    {
+      "questionId": "calc-ab-4-7-003",
+      "independentReasoning": "The independent radian expansion sin x=x−x³/6+O(x⁵) corroborates the result; this is QA only, not a required student series method. Original-function quotient samples at two scales on both sides with quadratic extrapolation also distinguish the sign and magnitude.",
+      "optionReview": [
+        "This loses the negative sign after repeated sine differentiation.",
+        "Three justified applications give the final ratio −cos x/6.",
+        "Both original terms vanish, but their ratio has a nonzero third-order limit.",
+        "This misses a factor 2 from repeated differentiation of x³."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 0,
+        "expression": [
+          "div",
+          [
+            "sub",
+            [
+              "sin",
+              "x"
+            ],
+            "x"
+          ],
+          [
+            "pow",
+            "x",
+            3
+          ]
+        ],
+        "step": 0.01,
+        "tolerance": 0.00001,
+        "order": 2
+      }
+    },
+    {
+      "questionId": "calc-ab-4-7-004",
+      "independentReasoning": "The original quotient is independently the derivative definition for ln at 1, since ln1=0. Its known slope is 1. Two-sided original-expression samples remain positive in their logarithm input and corroborate the same value.",
+      "optionReview": [
+        "This uses the zero numerator limit without accounting for the denominator also tending to zero.",
+        "The logarithm has positive slope at 1.",
+        "The local form is 0/0 and the derivative ratio is 1/x.",
+        "The missing original quotient value at 1 does not prevent a limit."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 1,
+        "expression": [
+          "div",
+          [
+            "ln",
+            "x"
+          ],
+          [
+            "sub",
+            "x",
+            1
+          ]
+        ],
+        "step": 0.001,
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-4-7-005",
+      "independentReasoning": "The original rational function is continuous at 0, proving the limit directly. Original-function near-point evaluation corroborates 1/2. The selected method is separately checked: no eligible indeterminate quotient occurs here.",
+      "optionReview": [
+        "This incorrectly takes the derivative ratio even though the original form is neither 0/0 nor ∞/∞.",
+        "This drops the nonzero constants in the original numerator and denominator.",
+        "The denominator is nonzero near 0, so the quotient is continuous there.",
+        "Direct continuity applies because the denominator tends to 2, not 0."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 0,
+        "expression": [
+          "div",
+          [
+            "add",
+            "x",
+            1
+          ],
+          [
+            "add",
+            "x",
+            2
+          ]
+        ],
+        "step": 0.001,
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-4-7-006",
+      "independentReasoning": "Check each application on a large positive interval, where all functions are differentiable. The second derivative-ratio limit exists and equals zero, which justifies the intermediate and original limits in reverse order. No unsupported ∞−∞ or product form is used.",
+      "optionReview": [
+        "Two justified ∞/∞ applications lead to 2/eˣ→0.",
+        "Unbounded numerator and denominator need not have the same growth rate.",
+        "The exponential eventually grows faster than the polynomial.",
+        "L’Hospital’s Rule gives a definite finite limit."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "0"
+      }
+    },
+    {
+      "questionId": "calc-ab-4-7-007",
+      "independentReasoning": "Independently factor x²−4=(x−2)(x+2), so the original quotient equals x+2 for x≠2 and tends to 4. Original uncancelled samples corroborate the result without altering the excluded-point domain.",
+      "optionReview": [
+        "This uses the target input instead of the numerator derivative at that input.",
+        "The 0/0 quotient can be evaluated as the limit of 2x/1, or by factoring.",
+        "The zero numerator limit alone is insufficient for an indeterminate quotient.",
+        "This omits the numerator derivative factor 2x."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 2,
+        "expression": [
+          "div",
+          [
+            "sub",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            4
+          ],
+          [
+            "sub",
+            "x",
+            2
+          ]
+        ],
+        "step": 0.001,
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-4-7-008",
+      "independentReasoning": "Verify both successive quotient forms and derivative denominators before applying the rule. The final ratio is positive and unbounded, so the permitted extended limit is +∞. This reasoning establishes unbounded growth rather than treating it as a finite numerical value.",
+      "optionReview": [
+        "This reverses the relative growth of exponential and polynomial.",
+        "Both separate functions diverging does not force ratio 1.",
+        "Two eligible ∞/∞ applications lead to eˣ/2, which grows without bound.",
+        "Neither positive function has the claimed oscillation, and the ratio grows without bound."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "+∞"
+      }
+    },
+    {
+      "questionId": "calc-ab-4-7-009",
+      "independentReasoning": "Independently use 1−cos(2x)=2sin²x to rewrite the original quotient as 2(sin x/x)², whose limit is 2. Original-expression two-scale samples with quadratic extrapolation corroborate the value despite the removable zero denominator.",
+      "optionReview": [
+        "This loses the inner factor 2 in differentiating cos(2x).",
+        "A zero numerator and denominator require further analysis.",
+        "This keeps an extra factor 2 after cancelling the denominator derivative.",
+        "After one application the ratio is sin(2x)/x, which tends to 2."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 0,
+        "expression": [
+          "div",
+          [
+            "sub",
+            1,
+            [
+              "cos",
+              [
+                "mul",
+                2,
+                "x"
+              ]
+            ]
+          ],
+          [
+            "pow",
+            "x",
+            2
+          ]
+        ],
+        "step": 0.001,
+        "tolerance": 0.00001,
+        "order": 2
+      }
+    },
+    {
+      "questionId": "calc-ab-4-7-010",
+      "independentReasoning": "Independently factor the original ratio as [ln(1+2x)/(2x)]·[(3x)/sin(3x)]·(2/3). Both bracketed limits equal 1. Two-sided evaluation of the original ratio corroborates the exact constant and both inner chain factors.",
+      "optionReview": [
+        "The derivative ratio is [2/(1+2x)]/[3cos(3x)], giving 2/3 at 0.",
+        "This omits the logarithm input’s derivative factor 2.",
+        "This omits the sine input’s derivative factor 3.",
+        "This reverses the ratio."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 0,
+        "expression": [
+          "div",
+          [
+            "ln",
+            [
+              "add",
+              1,
+              [
+                "mul",
+                2,
+                "x"
+              ]
+            ]
+          ],
+          [
+            "sin",
+            [
+              "mul",
+              3,
+              "x"
+            ]
+          ]
+        ],
+        "step": 0.001,
+        "tolerance": 0.00001
+      }
+    },
+    {
+      "questionId": "calc-ab-4-7-011",
+      "independentReasoning": "For positive sequences with 1/x=2πn, the derivative ratio tends to 0; with 1/x=(2n+1)π it tends to 2, proving no unique derivative-ratio limit. Meanwhile the original bounded-product term tends to 0 along every approach by the squeeze bound. These separate arguments prevent an invalid converse.",
+      "optionReview": [
+        "Failure of a sufficient evaluation method does not prove failure of the original limit.",
+        "Direct simplification gives 1+xsin(1/x)→1; the derivative ratio oscillates, so this use of L’Hospital’s Rule does not evaluate it.",
+        "The denominator also tends to 0, so that observation alone does not give the quotient limit.",
+        "A subsequence value of the derivative ratio is not the original quotient limit."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The limit is 1, although the numerator-derivative to denominator-derivative ratio has no limit."
+      }
+    }
+  ]
+}
