@@ -1,9 +1,9 @@
 {
   "officialTopics": 81,
   "targetQuestions": 891,
-  "completedTopics": 79,
-  "questions": 869,
-  "numeric": 495,
+  "completedTopics": 81,
+  "questions": 891,
+  "numeric": 508,
   "repeatedPromptPatterns": [
     [
       "calc-ab-6-10-002",
@@ -563,10 +563,21 @@
       "count": 11,
       "status": "validated",
       "file": "src/content/practice/calculus-ab-8-10.json"
+    },
+    {
+      "topic": "8.11",
+      "topicId": "topic-8-11",
+      "count": 11,
+      "status": "validated",
+      "file": "src/content/practice/calculus-ab-8-11.json"
+    },
+    {
+      "topic": "8.12",
+      "topicId": "topic-8-12",
+      "count": 11,
+      "status": "validated",
+      "file": "src/content/practice/calculus-ab-8-12.json"
     }
   ],
-  "missing": [
-    "8.11",
-    "8.12"
-  ]
+  "missing": []
 }

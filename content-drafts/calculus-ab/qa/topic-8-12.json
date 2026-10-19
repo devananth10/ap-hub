@@ -1,0 +1,467 @@
+{
+  "topicNumber": "8.12",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "614000c6ada111cd7bf795d9eca932924a2e503cea11182c864d122cd829d12c",
+  "scopeReview": "CED CHA-5.C.4: washers about other horizontal/vertical axes with ordered distances, perpendicular coordinates and holes. Include algebraic shift effects without using shells, centroid formulas or BC-only techniques.",
+  "varietyReview": "Axis below a line region, axis above a parabola, shifted vertical quadratic washers, axis to the right of a square-root region, persistent hole below an axis-touching base, radius identification, two general shifted-axis setups, nonuniform paired-radius data, derived axis-displacement volume identity and inverse rectangle-axis distance. Six original-distance/table checks plus five exact geometric/algebraic reviews.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-8-12-001",
+      "independentReasoning": "Independently expand the annular area factor to 8−2x−x² and integrate to 16−4−8/3=28/3. The inner radius is positive and no slice crosses the axis; washer subtraction is therefore appropriate.",
+      "optionReview": [
+        "The outer radius is 3 and inner radius is x+1.",
+        "This uses the original y-coordinates as radii and ignores the shifted axis.",
+        "This squares the gap 2−x instead of subtracting squared distances.",
+        "This includes the central hole by using only the outer disk."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          "pi",
+          [
+            "sub",
+            [
+              "pow",
+              3,
+              2
+            ],
+            [
+              "pow",
+              [
+                "add",
+                "x",
+                1
+              ],
+              2
+            ]
+          ]
+        ],
+        "start": 0,
+        "end": 2,
+        "optionExpressions": {
+          "28π/3": [
+            "div",
+            [
+              "mul",
+              28,
+              "pi"
+            ],
+            3
+          ],
+          "16π/3": [
+            "div",
+            [
+              "mul",
+              16,
+              "pi"
+            ],
+            3
+          ],
+          "8π/3": [
+            "div",
+            [
+              "mul",
+              8,
+              "pi"
+            ],
+            3
+          ],
+          "18π": [
+            "mul",
+            18,
+            "pi"
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-12-002",
+      "independentReasoning": "Independently integrate the outer factor 25−10x²+x⁴ to get 100−160/3+64/5=892/15. The inner radius-1 cylinder contributes 4=60/15. Their difference is 832/15, confirming the expanded annular integrand and full interval.",
+      "optionReview": [
+        "This instead rotates about y=0.",
+        "The farther lower curve gives outer radius 5−x², while the upper line gives inner radius 1.",
+        "This squares the gap between the curves rather than subtracting their axis-distance squares.",
+        "This fills the inner radius-1 hole."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          "pi",
+          [
+            "sub",
+            [
+              "pow",
+              [
+                "sub",
+                5,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ],
+              2
+            ],
+            [
+              "pow",
+              1,
+              2
+            ]
+          ]
+        ],
+        "start": -2,
+        "end": 2,
+        "optionExpressions": {
+          "832π/15": [
+            "div",
+            [
+              "mul",
+              832,
+              "pi"
+            ],
+            15
+          ],
+          "256π/5": [
+            "div",
+            [
+              "mul",
+              256,
+              "pi"
+            ],
+            5
+          ],
+          "512π/15": [
+            "div",
+            [
+              "mul",
+              512,
+              "pi"
+            ],
+            15
+          ],
+          "892π/15": [
+            "div",
+            [
+              "mul",
+              892,
+              "pi"
+            ],
+            15
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-12-003",
+      "independentReasoning": "Independently expand to 24−2y²−y⁴, whose primitive is 24y−(2/3)y³−y⁵/5. Substituting y=2 and y=0 gives 544/15. Radii are ordered from 1 to 5 throughout the stated interval.",
+      "optionReview": [
+        "This squares the base gap 4−y² instead of subtracting radius squares.",
+        "This includes the inner solid rather than removing it.",
+        "The horizontal radii are 5 and y²+1.",
+        "This halves an interval that was already restricted to 0≤y≤2."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          "pi",
+          [
+            "sub",
+            [
+              "pow",
+              5,
+              2
+            ],
+            [
+              "pow",
+              [
+                "add",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                1
+              ],
+              2
+            ]
+          ]
+        ],
+        "start": 0,
+        "end": 2,
+        "optionExpressions": {
+          "544π/15": [
+            "div",
+            [
+              "mul",
+              544,
+              "pi"
+            ],
+            15
+          ],
+          "272π/15": [
+            "div",
+            [
+              "mul",
+              272,
+              "pi"
+            ],
+            15
+          ],
+          "256π/15": [
+            "div",
+            [
+              "mul",
+              256,
+              "pi"
+            ],
+            15
+          ],
+          "50π": [
+            "mul",
+            50,
+            "pi"
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-12-004",
+      "independentReasoning": "Independently compute the outer cylinder volume 27π. The inner volume is π∫ from 1 to 4 of (9−6√y+y)dy=13π/2; the difference is 41π/2. Since √y≤2<3, the inner radius stays positive and no disk-filling case occurs.",
+      "optionReview": [
+        "This rotates about x=0 instead of the specified line.",
+        "This fills the entire outer cylinder and ignores the hole.",
+        "This reverses outer and inner distances.",
+        "The outer radius is 3 and the inner radius is 3−√y."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          "pi",
+          [
+            "sub",
+            [
+              "pow",
+              3,
+              2
+            ],
+            [
+              "pow",
+              [
+                "sub",
+                3,
+                [
+                  "sqrt",
+                  "x"
+                ]
+              ],
+              2
+            ]
+          ]
+        ],
+        "start": 1,
+        "end": 4,
+        "optionExpressions": {
+          "41π/2": [
+            "div",
+            [
+              "mul",
+              41,
+              "pi"
+            ],
+            2
+          ],
+          "15π/2": [
+            "div",
+            [
+              "mul",
+              15,
+              "pi"
+            ],
+            2
+          ],
+          "27π": [
+            "mul",
+            27,
+            "pi"
+          ],
+          "−41π/2": [
+            "div",
+            [
+              "mul",
+              -41,
+              "pi"
+            ],
+            2
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-12-005",
+      "independentReasoning": "Independently the outer-disk volume is π(1/3+2+4)=19π/3. Removing the inner cylinder of volume 4π leaves 7π/3. This confirms that an axis outside a region does not give disks merely because the region touches y=0.",
+      "optionReview": [
+        "The washer has outer radius x+2 and inner radius 2.",
+        "This rotates about the x-axis instead of y=−2.",
+        "This includes the inner radius-2 cylinder.",
+        "This is the removed inner cylinder volume, not the material volume."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          "pi",
+          [
+            "sub",
+            [
+              "pow",
+              [
+                "add",
+                "x",
+                2
+              ],
+              2
+            ],
+            [
+              "pow",
+              2,
+              2
+            ]
+          ]
+        ],
+        "start": 0,
+        "end": 1,
+        "optionExpressions": {
+          "7π/3": [
+            "div",
+            [
+              "mul",
+              7,
+              "pi"
+            ],
+            3
+          ],
+          "π/3": [
+            "div",
+            "pi",
+            3
+          ],
+          "19π/3": [
+            "div",
+            [
+              "mul",
+              19,
+              "pi"
+            ],
+            3
+          ],
+          "4π": [
+            "mul",
+            4,
+            "pi"
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-12-006",
+      "independentReasoning": "Independently list every swept radial distance: as y ranges from 1 to 3, 5−y ranges from 4 down to 2. No radius below 2 occurs, proving both the outer extent and the positive inner hole.",
+      "optionReview": [
+        "These are endpoint coordinates rather than distances from y=5.",
+        "The lower endpoint is farther from the axis: 5−1=4 and 5−3=2.",
+        "This reverses outer and inner distances.",
+        "The segment does not reach the axis, so the central hole is not zero."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "4 and 2"
+      }
+    },
+    {
+      "questionId": "calc-ab-8-12-007",
+      "independentReasoning": "Expand the difference independently: (f−k)²−(g−k)²=f²−g²−2k(f−g). The extra term shows why simply using f²−g² is generally wrong for a shifted axis, while R≥r>0 guarantees the selected area is nonnegative.",
+      "optionReview": [
+        "This uses the x-axis as the reference unless k=0.",
+        "This squares thickness rather than subtracting the disk areas.",
+        "Both radii are distances above the lower axis, with f farther away.",
+        "This reverses the radius order and gives nonpositive area."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "π∫ from a to b of { [f(x)−k]²−[g(x)−k]² } dx"
+      }
+    },
+    {
+      "questionId": "calc-ab-8-12-008",
+      "independentReasoning": "Check constants h=5,L=1,R=3: swept radii range from 2 to 4, so outer and inner are 4 and 2. This concrete geometry confirms the symbolic ordering and the integration variable without invoking a shell method.",
+      "optionReview": [
+        "This reverses farther and nearer boundaries.",
+        "These signed differences are negative rather than distances.",
+        "The perpendicular slices and given bounds use y.",
+        "The left boundary is farther from the right-hand vertical axis."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Outer h−L(y), inner h−R(y), thickness dy"
+      }
+    },
+    {
+      "questionId": "calc-ab-8-12-009",
+      "independentReasoning": "Independently outer squared-radius trapezoids give 13+25/2=51/2 and inner ones give 2+5/2=9/2. Subtraction yields 21. Squaring thicknesses 1,2,2 instead gives the unrelated estimate 9, explaining that distractor.",
+      "optionReview": [
+        "Area factors 3,8,12 give trapezoid totals 11+10.",
+        "This squares radial thicknesses instead of subtracting squared radii.",
+        "This estimates the full outer solid, including the hole.",
+        "This estimates only the inner hole."
+      ],
+      "check": {
+        "type": "table-riemann",
+        "partition": [
+          0,
+          2,
+          3
+        ],
+        "method": "trapezoid",
+        "squaredDifferenceColumns": [
+          1,
+          2
+        ],
+        "scale": 3.141592653589793
+      },
+      "tableSha256": "9f4e29741755aa512116e344eae6fc985a6749a4cb23cac0051129fc6031514e"
+    },
+    {
+      "questionId": "calc-ab-8-12-010",
+      "independentReasoning": "Independently expand both squares and cancel the identical h² terms. The radius gap equals the planar slice height, so its integral is the given area A. Dimensions h·A are cubic, and no centroid theorem or BC-only technique is required.",
+      "optionReview": [
+        "The h² terms cancel when inner disk area is subtracted.",
+        "Both radii increase by h, and the squared-radius difference gains 2h times the original gap.",
+        "Moving only the axis changes distances; it is not a translation of both region and axis.",
+        "This inserts an extra factor h not present in the area expansion."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "2πhA"
+      }
+    },
+    {
+      "questionId": "calc-ab-8-12-011",
+      "independentReasoning": "Independently at a=2 the outer and inner cylinder volumes are 3π·4²=48π and 3π·2²=12π. Their difference is 36π. The axis lies below the whole rectangle, so no internal-axis or disk-overlap complication is present.",
+      "optionReview": [
+        "This produces 24π rather than 36π.",
+        "This produces 48π rather than 36π.",
+        "The annular volume is 3π[(a+2)²−a²]=12π(a+1).",
+        "This does not solve the stated annular-volume equation."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "2"
+      }
+    }
+  ]
+}

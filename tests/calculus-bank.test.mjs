@@ -573,3 +573,13 @@ test('triangle table estimates convert side lengths to areas before trapezoidal 
   const length=structuredClone(qa.questions[7]);delete length.check.valuePower;
   assert.throws(()=>verifyCalculusQuestion(batch.questions[7],length),/unique Riemann result/);
 });
+
+test('washer data subtract squared radii and reject reversed or thickness-squared models',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-8-11');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-8-11.json'));
+  verifyCalculusQuestion(batch.questions[7],qa.questions[7]);
+  const reversed=structuredClone(qa.questions[7]);reversed.check.squaredDifferenceColumns=[2,1];
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[7],reversed),/Invalid washer radii/);
+  const gap=structuredClone(qa.questions[7]);delete gap.check.squaredDifferenceColumns;gap.check.differenceColumns=[1,2];gap.check.valuePower=2;
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[7],gap),/Riemann key/);
+});

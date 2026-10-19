@@ -256,6 +256,11 @@ export function verifyCalculusQuestion(question, review) {
       if(c.type==='riemann-expression')return evaluateExpression(c.expression,x);
       const rows=table.rows.filter(r=>Number(r[0])===x);assert.equal(rows.length,1,'Required Riemann sample missing or repeated');
       const parse=i=>Number(rows[0][i].replaceAll('−','-'));
+      if(c.squaredDifferenceColumns) {
+        const [outer,inner]=c.squaredDifferenceColumns.map(parse);
+        assert.ok(outer>=inner&&inner>=0,'Invalid washer radii');
+        return outer*outer-inner*inner;
+      }
       const value=c.differenceColumns?parse(c.differenceColumns[0])-parse(c.differenceColumns[1]):parse(1);
       assert.ok([1,2].includes(c.valuePower??1),'Unsupported table value power');
       return value**(c.valuePower??1);

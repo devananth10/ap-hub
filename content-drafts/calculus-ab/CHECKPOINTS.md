@@ -60,4 +60,6 @@ Repository: `devananth10/ap-hub`, branch `main`. Each entry below was saved with
 
 | `fed5d7c8ba6d2d190d9528aa328892ab54740601` | 847 | Known cross sections, 108 tests, build/typecheck, routes and both full browser sessions; verified GitHub receipt |
 
+| `d4a304ae58e17e8d703e55868875a37e61742450` | 869 | Disc methods, 108 tests, build/typecheck, routes and both full browser sessions; verified GitHub receipt |
+
 These rows record previously verified receipts. PROGRESS.json records subsequent locally validated publication; Git log and the verified remote branch provide later receipts. Do not invent a future commit SHA inside progress files before committing.

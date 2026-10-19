@@ -1405,5 +1405,55 @@
         "4"
       ]
     ]
+  },
+  "calc-ab-8-11-008": {
+    "caption": "Washer-radius measurements",
+    "headers": [
+      "x",
+      "Outer radius R",
+      "Inner radius r"
+    ],
+    "rows": [
+      [
+        "0",
+        "3",
+        "1"
+      ],
+      [
+        "1",
+        "4",
+        "2"
+      ],
+      [
+        "3",
+        "5",
+        "3"
+      ]
+    ]
+  },
+  "calc-ab-8-12-009": {
+    "caption": "Distances from a shifted vertical rotation axis",
+    "headers": [
+      "y",
+      "Outer radius R",
+      "Inner radius r"
+    ],
+    "rows": [
+      [
+        "0",
+        "2",
+        "1"
+      ],
+      [
+        "2",
+        "3",
+        "1"
+      ],
+      [
+        "3",
+        "4",
+        "2"
+      ]
+    ]
   }
 }

@@ -1,0 +1,498 @@
+{
+  "topicNumber": "8.11",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "c0ef60eb82c9dc04ada42bd749d6a63f0538fd93612c69d0527be616ed7bc597",
+  "scopeReview": "CED CHA-5.C.3: washer volumes about coordinate axes with nonnegative ordered radii, dy slices and difference of disk areas. Negative coordinates use distances; no shells or BC material.",
+  "varietyReview": "Nested power curves, parabola/cylinder hole, horizontal square-root washers, constant tube geometry, exponential annulus, below-axis distances, area formula diagnosis, nonuniform paired-radius table, proportional hole, inverse-radius constraint and equal-thickness comparison. Seven original-radius/table corroborations and four exact geometric reviews.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-8-11-001",
+      "independentReasoning": "Independently compute the outer and inner solid volumes π/3 and π/5; the inner one is contained within the outer. Their difference is 2π/15. The squared-gap integral is 1/30, explaining the tempting but geometrically different alternative.",
+      "optionReview": [
+        "This squares the gap x−x² instead of subtracting squared radii.",
+        "This integrates the planar gap rather than washer area.",
+        "This reverses the squared-radius order.",
+        "Outer radius x and inner radius x² give π(x²−x⁴)."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          "pi",
+          [
+            "sub",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            [
+              "pow",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              2
+            ]
+          ]
+        ],
+        "start": 0,
+        "end": 1,
+        "optionExpressions": {
+          "2π/15": [
+            "div",
+            [
+              "mul",
+              2,
+              "pi"
+            ],
+            15
+          ],
+          "π/30": [
+            "div",
+            "pi",
+            30
+          ],
+          "π/6": [
+            "div",
+            "pi",
+            6
+          ],
+          "−2π/15": [
+            "div",
+            [
+              "mul",
+              -2,
+              "pi"
+            ],
+            15
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-11-002",
+      "independentReasoning": "Independently the outer cylinder volume is 64π, while rotating the excluded region below y=x² produces volume 64π/5. Subtract to obtain 256π/5. Both radii are nonnegative, and the order holds across all supplied bounds.",
+      "optionReview": [
+        "The washer area is π(16−x⁴).",
+        "This includes the inner solid instead of removing its hole.",
+        "This squares the gap 4−x² rather than subtracting radius squares.",
+        "This includes only half of the symmetric solid."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          "pi",
+          [
+            "sub",
+            [
+              "pow",
+              4,
+              2
+            ],
+            [
+              "pow",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              2
+            ]
+          ]
+        ],
+        "start": -2,
+        "end": 2,
+        "optionExpressions": {
+          "256π/5": [
+            "div",
+            [
+              "mul",
+              256,
+              "pi"
+            ],
+            5
+          ],
+          "64π": [
+            "mul",
+            64,
+            "pi"
+          ],
+          "512π/15": [
+            "div",
+            [
+              "mul",
+              512,
+              "pi"
+            ],
+            15
+          ],
+          "128π/5": [
+            "div",
+            [
+              "mul",
+              128,
+              "pi"
+            ],
+            5
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-11-003",
+      "independentReasoning": "Independently integrate the outer disk area πy to get 15π/2, then subtract the radius-1 cylinder of height 3 and volume 3π. Their difference is 9π/2, confirming orientation and hole size.",
+      "optionReview": [
+        "This includes the inner cylinder instead of removing it.",
+        "Horizontal washers have squared radii y and 1.",
+        "This uses constant unit area rather than the changing washer gap.",
+        "This reverses inner and outer radii."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          "pi",
+          [
+            "sub",
+            [
+              "pow",
+              [
+                "sqrt",
+                "x"
+              ],
+              2
+            ],
+            [
+              "pow",
+              1,
+              2
+            ]
+          ]
+        ],
+        "start": 1,
+        "end": 4,
+        "optionExpressions": {
+          "9π/2": [
+            "div",
+            [
+              "mul",
+              9,
+              "pi"
+            ],
+            2
+          ],
+          "15π/2": [
+            "div",
+            [
+              "mul",
+              15,
+              "pi"
+            ],
+            2
+          ],
+          "3π": [
+            "mul",
+            3,
+            "pi"
+          ],
+          "−9π/2": [
+            "div",
+            [
+              "mul",
+              -9,
+              "pi"
+            ],
+            2
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-11-004",
+      "independentReasoning": "Independently subtract cylinder volumes: π·3²·5−π·2²·5=45π−20π=25π. This exact geometry check distinguishes the hole from the material volume.",
+      "optionReview": [
+        "This squares the radial thickness 3−2 instead of subtracting disk areas.",
+        "This includes the central radius-2 hole.",
+        "The constant washer area is π(3²−2²)=5π across length 5.",
+        "This is the removed inner cylinder volume."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          "pi",
+          [
+            "sub",
+            [
+              "pow",
+              3,
+              2
+            ],
+            [
+              "pow",
+              2,
+              2
+            ]
+          ]
+        ],
+        "start": 0,
+        "end": 5,
+        "optionExpressions": {
+          "25π": [
+            "mul",
+            25,
+            "pi"
+          ],
+          "5π": [
+            "mul",
+            5,
+            "pi"
+          ],
+          "45π": [
+            "mul",
+            45,
+            "pi"
+          ],
+          "20π": [
+            "mul",
+            20,
+            "pi"
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-11-005",
+      "independentReasoning": "Independently the outer volume is π(e^(2ln2)−1)/2=3π/2. The inner cylinder has radius 1 and length ln 2, so subtract πln 2. The exact relation e^(2ln2)=4 checks the exponent and endpoint evaluation.",
+      "optionReview": [
+        "This integrates eˣ−1 rather than the difference of squared radii.",
+        "This omits the factor 1/2 in integrating e^(2x).",
+        "This includes the inner cylinder rather than removing it.",
+        "The washer area is π(e^(2x)−1), with an exponential-chain factor 1/2 in its primitive."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          "pi",
+          [
+            "sub",
+            [
+              "pow",
+              [
+                "exp",
+                "x"
+              ],
+              2
+            ],
+            [
+              "pow",
+              1,
+              2
+            ]
+          ]
+        ],
+        "start": 0,
+        "end": 0.6931471805599453,
+        "optionExpressions": {
+          "π(3/2−ln 2)": [
+            "mul",
+            "pi",
+            [
+              "sub",
+              1.5,
+              [
+                "ln",
+                2
+              ]
+            ]
+          ],
+          "π(1−ln 2)": [
+            "mul",
+            "pi",
+            [
+              "sub",
+              1,
+              [
+                "ln",
+                2
+              ]
+            ]
+          ],
+          "π(3−ln 2)": [
+            "mul",
+            "pi",
+            [
+              "sub",
+              3,
+              [
+                "ln",
+                2
+              ]
+            ]
+          ],
+          "3π/2": [
+            "div",
+            [
+              "mul",
+              3,
+              "pi"
+            ],
+            2
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-11-006",
+      "independentReasoning": "Independently subtract the inner disk solid π∫x dx=81π/2 from the outer cylinder volume 81π. Reflection across the x-axis preserves the generated solid and confirms the same positive radii.",
+      "optionReview": [
+        "Distances to the axis give outer radius 3 and inner radius √x.",
+        "Signed y-coordinates must not reverse the physical radius ordering.",
+        "This includes the whole radius-3 cylinder and ignores the hole.",
+        "This does not integrate the changing washer area."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          "pi",
+          [
+            "sub",
+            [
+              "pow",
+              3,
+              2
+            ],
+            [
+              "pow",
+              [
+                "sqrt",
+                "x"
+              ],
+              2
+            ]
+          ]
+        ],
+        "start": 0,
+        "end": 9,
+        "optionExpressions": {
+          "81π/2": [
+            "div",
+            [
+              "mul",
+              81,
+              "pi"
+            ],
+            2
+          ],
+          "−81π/2": [
+            "div",
+            [
+              "mul",
+              -81,
+              "pi"
+            ],
+            2
+          ],
+          "81π": [
+            "mul",
+            81,
+            "pi"
+          ],
+          "27π": [
+            "mul",
+            27,
+            "pi"
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-11-007",
+      "independentReasoning": "Check R=3,r=2 independently: the outer and inner areas are 9π and 4π, giving 5π, while the squared-gap expression gives π. The dimensional check also excludes a circumference-like expression.",
+      "optionReview": [
+        "This is a disk with radius equal to radial thickness, not an annulus.",
+        "Subtract the missing inner disk area from the full outer disk area.",
+        "The inner hole must be removed rather than added.",
+        "This has length units, not area units."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "π(R²−r²)"
+      }
+    },
+    {
+      "questionId": "calc-ab-8-11-008",
+      "independentReasoning": "Independently the outer squared-radius trapezoids total 107/2, and the inner ones total 31/2; their difference is 38. The pointwise gap is always 2, but squaring it gives a different solid and the incorrect 12π estimate.",
+      "optionReview": [
+        "This squares R−r instead of subtracting R²−r².",
+        "This estimates the outer solid without removing the hole.",
+        "The area factors R²−r² are 8,12,16, giving 10+28.",
+        "This estimates the inner hole only."
+      ],
+      "check": {
+        "type": "table-riemann",
+        "partition": [
+          0,
+          1,
+          3
+        ],
+        "method": "trapezoid",
+        "squaredDifferenceColumns": [
+          1,
+          2
+        ],
+        "scale": 3.141592653589793
+      },
+      "tableSha256": "948db282ac4e4eaf0e5dc7af1b61ac3e4dc021d40644dad0228ebaf595441c4a"
+    },
+    {
+      "questionId": "calc-ab-8-11-009",
+      "independentReasoning": "Independently take a constant-radius tube: its annular area ratio is (R²−R²/4)/R²=3/4. The same pointwise identity proves the statement for variable radii without assuming a cylindrical shape.",
+      "optionReview": [
+        "Halving radius quarters area rather than halves it.",
+        "This is the removed inner solid’s volume.",
+        "This leaves the central hole filled.",
+        "The inner disk area is one-quarter of the outer, leaving three-quarters."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "3D/4"
+      }
+    },
+    {
+      "questionId": "calc-ab-8-11-010",
+      "independentReasoning": "Independently the removed cylinder volume is outer volume 18π minus material volume 10π=8π. Dividing by length 2 gives inner area 4π and thus inner radius 2, confirming the algebra.",
+      "optionReview": [
+        "The equation 2π(9−r²)=10π gives r²=4.",
+        "This would give volume 16π.",
+        "This would give volume 8π.",
+        "This exceeds the specified outer radius."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "2"
+      }
+    },
+    {
+      "questionId": "calc-ab-8-11-011",
+      "independentReasoning": "Independently multiply thickness 1 by the radius sums 3 and 5, then by π. This exactly reproduces 3π and 5π and explains why equal thickness is not enough to infer equal washer volumes over a common length.",
+      "optionReview": [
+        "This substitutes the squared gap for the annular area.",
+        "Equal thickness does not fix area because R²−r² also depends on R+r.",
+        "Both outer and inner radii change, and their area difference must be computed.",
+        "The given radii fully determine each annular area."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The second has larger area, 5π versus 3π."
+      }
+    }
+  ]
+}

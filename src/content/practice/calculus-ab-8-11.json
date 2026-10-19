@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 8,
+  "topicId": "topic-8-11",
+  "questions": [
+    {
+      "id": "calc-ab-8-11-001",
+      "prompt": "Rotate the region between y=x and y=x² on [0,1] about the x-axis. What is the volume?",
+      "options": [
+        "π/30",
+        "π/6",
+        "−2π/15",
+        "2π/15"
+      ],
+      "correctIndex": 3,
+      "explanation": "On [0,1], x≥x²≥0, so each slice has outer radius x and inner radius x². Its area is π(x²−x⁴). Integrating gives V=π(1/3−1/5)=2π/15. The central hole must be removed by subtracting disk areas, not by making a disk whose radius is the gap. A: This squares the gap x−x² instead of subtracting squared radii. B: This integrates the planar gap rather than washer area. C: This reverses the squared-radius order. D: Outer radius x and inner radius x² give π(x²−x⁴)."
+    },
+    {
+      "id": "calc-ab-8-11-002",
+      "prompt": "Rotate the region x²≤y≤4, −2≤x≤2 about the x-axis. Find the volume.",
+      "options": [
+        "256π/5",
+        "64π",
+        "512π/15",
+        "128π/5"
+      ],
+      "correctIndex": 0,
+      "explanation": "Outer radius is 4 and inner radius is x². Thus V=π∫ from −2 to 2 of (16−x⁴)dx=π[16x−x⁵/5] from −2 to 2=64π−64π/5=256π/5. A slice may close its hole at x=0 without invalidating the washer formula. A: The washer area is π(16−x⁴). B: This includes the inner solid instead of removing its hole. C: This squares the gap 4−x² rather than subtracting radius squares. D: This includes only half of the symmetric solid."
+    },
+    {
+      "id": "calc-ab-8-11-003",
+      "prompt": "Rotate 1≤x≤√y, 1≤y≤4 about the y-axis. What is the volume?",
+      "options": [
+        "15π/2",
+        "9π/2",
+        "3π",
+        "−9π/2"
+      ],
+      "correctIndex": 1,
+      "explanation": "Use slices perpendicular to the y-axis: outer radius √y and inner radius 1. Hence A(y)=π(y−1) and V=π[y²/2−y] from 1 to 4=π(4−(−1/2))=9π/2. The thickness is dy because the radii and bounds are given in y. A: This includes the inner cylinder instead of removing it. B: Horizontal washers have squared radii y and 1. C: This uses constant unit area rather than the changing washer gap. D: This reverses inner and outer radii."
+    },
+    {
+      "id": "calc-ab-8-11-004",
+      "prompt": "Rotate the rectangle 0≤x≤5, 2≤y≤3 about the x-axis. Find its volume.",
+      "options": [
+        "5π",
+        "45π",
+        "25π",
+        "20π"
+      ],
+      "correctIndex": 2,
+      "explanation": "A perpendicular slice is an annulus with outer radius 3 and inner radius 2. Its area is π(9−4)=5π. Accumulate it over x-length 5 to get 25π. A radial thickness of 1 does not make the annulus a radius-1 disk. A: This squares the radial thickness 3−2 instead of subtracting disk areas. B: This includes the central radius-2 hole. C: The constant washer area is π(3²−2²)=5π across length 5. D: This is the removed inner cylinder volume."
+    },
+    {
+      "id": "calc-ab-8-11-005",
+      "prompt": "Rotate 1≤y≤eˣ, 0≤x≤ln 2 about the x-axis. What is its volume?",
+      "options": [
+        "π(1−ln 2)",
+        "π(3−ln 2)",
+        "3π/2",
+        "π(3/2−ln 2)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Outer radius is eˣ and inner radius 1, so V=π∫ from 0 to ln 2 of (e^(2x)−1)dx. The primitive is e^(2x)/2−x. Substitution yields π[(2−ln 2)−1/2]=π(3/2−ln 2). A: This integrates eˣ−1 rather than the difference of squared radii. B: This omits the factor 1/2 in integrating e^(2x). C: This includes the inner cylinder rather than removing it. D: The washer area is π(e^(2x)−1), with an exponential-chain factor 1/2 in its primitive."
+    },
+    {
+      "id": "calc-ab-8-11-006",
+      "prompt": "Rotate −3≤y≤−√x, 0≤x≤9 about the x-axis. What is the volume?",
+      "options": [
+        "81π/2",
+        "−81π/2",
+        "81π",
+        "27π"
+      ],
+      "correctIndex": 0,
+      "explanation": "The region is below the axis, but its radii are positive distances. The lower boundary y=−3 is farther, so R=3; the upper boundary gives r=√x. Thus V=π∫ from 0 to 9 of (9−x)dx=π(81−81/2)=81π/2. A: Distances to the axis give outer radius 3 and inner radius √x. B: Signed y-coordinates must not reverse the physical radius ordering. C: This includes the whole radius-3 cylinder and ignores the hole. D: This does not integrate the changing washer area."
+    },
+    {
+      "id": "calc-ab-8-11-007",
+      "prompt": "For a washer with outer radius R and inner radius r, where R>r>0, which area formula is correct?",
+      "options": [
+        "π(R−r)²",
+        "π(R²−r²)",
+        "π(R²+r²)",
+        "2π(R−r)"
+      ],
+      "correctIndex": 1,
+      "explanation": "The washer consists of the outer disk with its inner disk removed. Hence area is πR²−πr²=π(R²−r²). In general R²−r²=(R−r)(R+r), not (R−r)². The area depends on both radial thickness and radial position. A: This is a disk with radius equal to radial thickness, not an annulus. B: Subtract the missing inner disk area from the full outer disk area. C: The inner hole must be removed rather than added. D: This has length units, not area units."
+    },
+    {
+      "id": "calc-ab-8-11-008",
+      "prompt": "Estimate volume from the table below by applying trapezoids to washer areas on [0,1] and [1,3].",
+      "options": [
+        "12π",
+        "107π/2",
+        "38π",
+        "31π/2"
+      ],
+      "correctIndex": 2,
+      "explanation": "First compute the area at each input: π(9−1)=8π, π(16−4)=12π and π(25−9)=16π. The nonuniform trapezoids give 1(8π+12π)/2+2(12π+16π)/2=10π+28π=38π. A: This squares R−r instead of subtracting R²−r². B: This estimates the outer solid without removing the hole. C: The area factors R²−r² are 8,12,16, giving 10+28. D: This estimates the inner hole only."
+    },
+    {
+      "id": "calc-ab-8-11-009",
+      "prompt": "A washer solid has inner radius r(x)=R(x)/2 at every slice. If the corresponding full outer-disk solid has volume D>0, what is the washer volume?",
+      "options": [
+        "D/2",
+        "D/4",
+        "D",
+        "3D/4"
+      ],
+      "correctIndex": 3,
+      "explanation": "Each inner area is π(R/2)²=(1/4)πR². Subtracting from the outer area leaves (3/4)πR². Since the same x-interval is used, the factor 3/4 pulls out of the volume integral, giving 3D/4. A: Halving radius quarters area rather than halves it. B: This is the removed inner solid’s volume. C: This leaves the central hole filled. D: The inner disk area is one-quarter of the outer, leaving three-quarters."
+    },
+    {
+      "id": "calc-ab-8-11-010",
+      "prompt": "A cylindrical washer solid has constant outer radius 3, length 2 and volume 10π. What is its constant inner radius r, with 0≤r<3?",
+      "options": [
+        "2",
+        "1",
+        "√5",
+        "4"
+      ],
+      "correctIndex": 0,
+      "explanation": "The volume is length times annular area: 2π(3²−r²)=10π. Cancel 2π to get 9−r²=5, hence r²=4. Radius is nonnegative and less than 3, so r=2. A negative root is not a physical radius. A: The equation 2π(9−r²)=10π gives r²=4. B: This would give volume 16π. C: This would give volume 8π. D: This exceeds the specified outer radius."
+    },
+    {
+      "id": "calc-ab-8-11-011",
+      "prompt": "Two constant washers have the same radial thickness 1: one has radii 2 and 1, and the other 3 and 2. Which statement is correct?",
+      "options": [
+        "They have equal area π because both gaps equal 1.",
+        "The second has larger area, 5π versus 3π.",
+        "The first is larger because its inner hole is smaller.",
+        "Their areas cannot be determined from the radii."
+      ],
+      "correctIndex": 1,
+      "explanation": "The first area is π(2²−1²)=3π; the second is π(3²−2²)=5π. Although both radial gaps equal 1, the farther annulus has a larger area. The factorization (R−r)(R+r) makes the extra dependence explicit. A: This substitutes the squared gap for the annular area. B: Equal thickness does not fix area because R²−r² also depends on R+r. C: Both outer and inner radii change, and their area difference must be computed. D: The given radii fully determine each annular area."
+    }
+  ]
+}

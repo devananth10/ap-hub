@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 869,
+  "questionsChecked": 891,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -2476,6 +2476,71 @@
       "questionId": "calc-ab-8-10-009",
       "method": "table-riemann",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-11-001",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-11-002",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-11-003",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-11-004",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-11-005",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-11-006",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-11-008",
+      "method": "table-riemann",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-12-001",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-12-002",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-12-003",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-12-004",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-12-005",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-12-009",
+      "method": "table-riemann",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -2852,7 +2917,16 @@
     "calc-ab-8-10-006",
     "calc-ab-8-10-008",
     "calc-ab-8-10-010",
-    "calc-ab-8-10-011"
+    "calc-ab-8-10-011",
+    "calc-ab-8-11-007",
+    "calc-ab-8-11-009",
+    "calc-ab-8-11-010",
+    "calc-ab-8-11-011",
+    "calc-ab-8-12-006",
+    "calc-ab-8-12-007",
+    "calc-ab-8-12-008",
+    "calc-ab-8-12-010",
+    "calc-ab-8-12-011"
   ],
   "humanReviewPerformed": false,
   "limitations": [

@@ -1,6 +1,6 @@
 "use client";
 
-import { useId } from "react";
+import { useEffect, useId, useState } from "react";
 import { ArrowRight, RotateCcw } from "lucide-react";
 import type { BankQuestion } from "@/lib/practice-bank";
 import type { PracticeAnswer } from "@/lib/practice-session";
@@ -9,13 +9,16 @@ import { PracticeTable } from "./practice-table";
 
 export function PracticeQuestion({ practice, answer, onSelect, onCheck, onRetry }: { practice: BankQuestion; answer: PracticeAnswer; onSelect: (index: number) => void; onCheck: () => void; onRetry: () => void }) {
   const groupName = useId();
+  // Do not let an early native radio click precede React's controlled state.
+  const [ready, setReady] = useState(false);
+  useEffect(() => { setReady(true); }, []);
   const { selected, checked } = answer;
   const { options, prompt, correctIndex, explanation } = practice;
   return (
     <div className="practice-preview">
       <h2>A quick check for understanding.</h2>
       <p className="muted small">This is not an official College Board question. Answers stay in this session and reset on reload.</p>
-      <fieldset disabled={checked}>
+      <fieldset disabled={checked || !ready} aria-busy={!ready}>
         <legend>{prompt}</legend>
         <PracticeFigure questionId={practice.id} />
         <PracticeTable questionId={practice.id} />
@@ -32,7 +35,7 @@ export function PracticeQuestion({ practice, answer, onSelect, onCheck, onRetry 
           <p>{explanation}</p>
           <button className="text-button" onClick={onRetry}><RotateCcw size={14} />Try again</button>
         </div>
-      ) : <button className="button primary" disabled={selected === null} onClick={onCheck}>Check answer<ArrowRight size={15} /></button>}
+      ) : <button className="button primary" disabled={!ready || selected === null} onClick={onCheck}>Check answer<ArrowRight size={15} /></button>}
     </div>
   );
 }

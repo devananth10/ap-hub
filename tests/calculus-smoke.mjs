@@ -16,6 +16,7 @@ for(const unit of course.units) {
     assert.ok(html.includes(`${entries.length} MCQ questions`),topic.number+' actual count');
     if(entries.length) {
       assert.equal(entries.length,11);assert.ok(html.includes('Question 1 of 11'));
+      assert.ok(/<fieldset[^>]*disabled[^>]*aria-busy="true"/.test(html),'Server-rendered answers wait for interactive readiness');
       const legend=html.match(/<legend[^>]*>(.*?)<\/legend>/s)?.[1];assert.equal(decode(legend),entries[0].question.prompt,topic.number+' correct first question');
       assert.equal((html.match(/aria-label="Report this question"/g)||[]).length,1);
       if(practiceFigures[entries[0].id]) assert.ok(html.includes(`data-question-figure="${entries[0].id}"`),'Required original graph is rendered');

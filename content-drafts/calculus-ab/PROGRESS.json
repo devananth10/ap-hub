@@ -1,9 +1,9 @@
 {
   "officialTopics": 81,
   "targetQuestions": 891,
-  "completedTopics": 79,
-  "questions": 869,
-  "numeric": 495,
+  "completedTopics": 81,
+  "questions": 891,
+  "numeric": 508,
   "repeatedPromptPatterns": [
     [
       "calc-ab-6-10-002",
@@ -563,16 +563,27 @@
       "count": 11,
       "status": "validated",
       "file": "src/content/practice/calculus-ab-8-10.json"
+    },
+    {
+      "topic": "8.11",
+      "topicId": "topic-8-11",
+      "count": 11,
+      "status": "validated",
+      "file": "src/content/practice/calculus-ab-8-11.json"
+    },
+    {
+      "topic": "8.12",
+      "topicId": "topic-8-12",
+      "count": 11,
+      "status": "validated",
+      "file": "src/content/practice/calculus-ab-8-12.json"
     }
   ],
-  "missing": [
-    "8.11",
-    "8.12"
-  ],
+  "missing": [],
   "policy": "automatic-topic-publication-after-validation-2026-10-19",
-  "publishedQuestions": 869,
-  "publishedTopics": 79,
-  "nextTopic": "8.11",
+  "publishedQuestions": 891,
+  "publishedTopics": 81,
+  "nextTopic": null,
   "withheldQuestionIds": [],
   "unresolvedConcerns": [],
   "humanReviewPerformed": false,
@@ -1933,10 +1944,10 @@
       "practiceRoute": "/practice?course=calculus-ab&unit=8&topic=topic-8-11",
       "file": "src/content/practice/calculus-ab-8-11.json",
       "mappingOrigin": "new canonical number-based ID",
-      "draftStatus": "not-started",
-      "validationStatus": "not-started",
-      "publicationStatus": "unpublished",
-      "questionCount": 0
+      "draftStatus": "complete",
+      "validationStatus": "passed",
+      "publicationStatus": "published",
+      "questionCount": 11
     },
     {
       "courseId": "calculus-ab",
@@ -1950,10 +1961,10 @@
       "practiceRoute": "/practice?course=calculus-ab&unit=8&topic=topic-8-12",
       "file": "src/content/practice/calculus-ab-8-12.json",
       "mappingOrigin": "new canonical number-based ID",
-      "draftStatus": "not-started",
-      "validationStatus": "not-started",
-      "publicationStatus": "unpublished",
-      "questionCount": 0
+      "draftStatus": "complete",
+      "validationStatus": "passed",
+      "publicationStatus": "published",
+      "questionCount": 11
     }
   ]
 }
