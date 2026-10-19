@@ -1,0 +1,545 @@
+{
+  "calc-ab-1-3-001": {
+    "xRange": [
+      -1,
+      4
+    ],
+    "yRange": [
+      -2,
+      7
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            -1,
+            2
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      },
+      {
+        "points": [
+          [
+            2,
+            5
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      }
+    ],
+    "dots": [
+      {
+        "x": 2,
+        "y": -1
+      }
+    ],
+    "description": "Graph of f. The left and right branches meet at a hollow point (2,5). A separate filled point is at (2,−1)."
+  },
+  "calc-ab-1-3-002": {
+    "xRange": [
+      -4,
+      2
+    ],
+    "yRange": [
+      -4,
+      9
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            -4,
+            0
+          ],
+          [
+            -1,
+            3
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      },
+      {
+        "points": [
+          [
+            -1,
+            -2
+          ],
+          [
+            2,
+            -3
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      }
+    ],
+    "dots": [
+      {
+        "x": -1,
+        "y": 8
+      }
+    ],
+    "description": "Graph of f. At x=−1 the left branch ends at hollow (−1,3), the right branch begins at hollow (−1,−2), and a filled point is at (−1,8)."
+  },
+  "calc-ab-1-3-003": {
+    "xRange": [
+      0,
+      6
+    ],
+    "yRange": [
+      -4,
+      5
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            1,
+            4
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      },
+      {
+        "points": [
+          [
+            4,
+            -3
+          ],
+          [
+            6,
+            -1
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      }
+    ],
+    "dots": [
+      {
+        "x": 4,
+        "y": 4
+      }
+    ],
+    "description": "Graph of f. The left branch approaches hollow (4,1); the right branch approaches hollow (4,−3). The filled point at x=4 has height 4."
+  },
+  "calc-ab-1-3-004": {
+    "xRange": [
+      0,
+      4
+    ],
+    "yRange": [
+      0,
+      11
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            0.5,
+            0.25
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1.5,
+            2.25
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2.5,
+            6.25
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      },
+      {
+        "points": [
+          [
+            3,
+            9
+          ],
+          [
+            3.15,
+            9.9225
+          ],
+          [
+            3.3,
+            10.89
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      }
+    ],
+    "dots": [
+      {
+        "x": 3,
+        "y": 2
+      }
+    ],
+    "description": "Graph of f with a rising curved branch. Its two sides approach the hollow point (3,9). A separate filled point is at (3,2). Intermediate plotted vertices specify the displayed curve."
+  },
+  "calc-ab-1-3-005": {
+    "xRange": [
+      -3,
+      3
+    ],
+    "yRange": [
+      0,
+      9
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            -3,
+            4
+          ],
+          [
+            0,
+            7
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      },
+      {
+        "points": [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      }
+    ],
+    "dots": [
+      {
+        "x": 0,
+        "y": 6
+      }
+    ],
+    "description": "Graph of f. Left branch approaches hollow (0,7). Right branch approaches hollow (0,2). The actual value at x=0 is the filled point (0,6)."
+  },
+  "calc-ab-1-3-006": {
+    "xRange": [
+      -4,
+      5
+    ],
+    "yRange": [
+      -8,
+      4
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            -3,
+            2
+          ],
+          [
+            1,
+            -6
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      }
+    ],
+    "dots": [
+      {
+        "x": 1,
+        "y": -6
+      }
+    ],
+    "description": "Graph of f consists of connected line segments through (−3,2), (1,−6), and (4,0). The vertex (1,−6) is included."
+  },
+  "calc-ab-1-3-007": {
+    "xRange": [
+      -5,
+      0
+    ],
+    "yRange": [
+      0,
+      6
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            -5,
+            1
+          ],
+          [
+            -2,
+            4
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      }
+    ],
+    "dots": [
+      {
+        "x": -2,
+        "y": 1
+      }
+    ],
+    "description": "Graph of f near the domain endpoint −2. A left branch ends at hollow (−2,4). A separate filled point is at (−2,1). No right branch is shown or assumed."
+  },
+  "calc-ab-1-3-008": {
+    "xRange": [
+      -4,
+      2
+    ],
+    "yRange": [
+      -1,
+      6
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            -4,
+            5
+          ],
+          [
+            -1,
+            2
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      }
+    ],
+    "dots": [
+      {
+        "x": -1,
+        "y": 2
+      }
+    ],
+    "description": "Graph of f is a V made of line segments through (−4,5), (−1,2), and (2,5); its vertex is included."
+  },
+  "calc-ab-1-3-009": {
+    "xRange": [
+      0,
+      6
+    ],
+    "yRange": [
+      -5,
+      3
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            2,
+            -3
+          ],
+          [
+            3,
+            -2
+          ],
+          [
+            4,
+            -0.5
+          ],
+          [
+            5,
+            1.5
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      }
+    ],
+    "dots": [
+      {
+        "x": 2,
+        "y": -3
+      }
+    ],
+    "description": "Graph of f begins at the included endpoint (2,−3) and has only a right branch nearby. There are no domain values to the left of 2 near 2."
+  },
+  "calc-ab-1-3-010": {
+    "xRange": [
+      0,
+      6
+    ],
+    "yRange": [
+      0,
+      10
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      },
+      {
+        "points": [
+          [
+            3,
+            4
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      }
+    ],
+    "dots": [
+      {
+        "x": 3,
+        "y": 9
+      }
+    ],
+    "description": "Graph of f. Two sloping branches meet at hollow (3,4), with a separate filled point at (3,9)."
+  },
+  "calc-ab-1-3-011": {
+    "xRange": [
+      -1,
+      4
+    ],
+    "yRange": [
+      -2,
+      6
+    ],
+    "curves": [
+      {
+        "points": [
+          [
+            -1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      },
+      {
+        "points": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      },
+      {
+        "points": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      },
+      {
+        "points": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      },
+      {
+        "points": [
+          [
+            3,
+            -1
+          ],
+          [
+            4,
+            -1
+          ]
+        ],
+        "start": "open",
+        "end": "open"
+      }
+    ],
+    "dots": [
+      {
+        "x": 1,
+        "y": 5
+      }
+    ],
+    "description": "Graph of f. Horizontal branches have height 1 for −1<x<0, 2 for 0<x<1 and 1<x<2, 3 for 2<x<3, and −1 for 3<x<4. Branch endpoints are hollow, and f(1)=5 is a filled dot."
+  }
+}

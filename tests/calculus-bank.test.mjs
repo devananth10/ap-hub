@@ -5,7 +5,8 @@ import {courses} from '../src/lib/courses.ts';
 import {practiceEntries,practiceCount,practiceHref} from '../src/lib/practice.ts';
 import {questionBatches} from '../src/lib/practice-bank.ts';
 import {validateCalculusBank} from '../scripts/check-calculus-bank.mjs';
-import {verifyCalculusQuestion} from '../scripts/check-calculus-math.mjs';
+import {verifyCalculusQuestion,figureLimit} from '../scripts/check-calculus-math.mjs';
+import {practiceFigures} from '../src/lib/practice-figures.ts';
 test('official Calculus AB inventory keeps all eight old IDs and excludes BC-only gaps',()=>{
   const course=courses.find(course=>course.id==='calculus-ab');
   const topics=course.units.flatMap(unit=>unit.topics);
@@ -39,4 +40,16 @@ test('independent numeric verifier detects altered keys, input data and stale co
   assert.throws(()=>verifyCalculusQuestion({...first,prompt:'Changed input data.'},review));
   const concept=batch.questions[2];
   assert.throws(()=>verifyCalculusQuestion({...concept,correctIndex:(concept.correctIndex+1)%4},qa.questions[2]));
+});
+test('original graph models distinguish holes, jumps, endpoints and transformations; stale graphs fail review',()=>{
+  assert.equal(figureLimit(practiceFigures['calc-ab-1-3-001'],2),5);
+  assert.equal(figureLimit(practiceFigures['calc-ab-1-3-003'],4),'DNE');
+  assert.equal(figureLimit(practiceFigures['calc-ab-1-3-007'],-2,'left'),4);
+  assert.equal(figureLimit(practiceFigures['calc-ab-1-3-009'],2,'right'),-3);
+  const multi=practiceFigures['calc-ab-1-3-011'];
+  assert.deepEqual([0,1,2,3].map(x=>figureLimit(multi,x)),['DNE',2,'DNE','DNE']);
+  const batch=questionBatches.find(batch=>batch.courseId==='calculus-ab'&&batch.topicId==='topic-1-3');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-1-3.json','utf8'));
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[0],{...qa.questions[0],check:{...qa.questions[0].check,figureSha256:'changed'}}),/Graph changed/);
+  assert.throws(()=>verifyCalculusQuestion({...batch.questions[7],correctIndex:(batch.questions[7].correctIndex+1)%4},qa.questions[7]),/graph key/);
 });

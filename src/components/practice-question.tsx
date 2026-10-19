@@ -4,6 +4,7 @@ import { useId } from "react";
 import { ArrowRight, RotateCcw } from "lucide-react";
 import type { BankQuestion } from "@/lib/practice-bank";
 import type { PracticeAnswer } from "@/lib/practice-session";
+import { PracticeFigure } from "./practice-figure";
 
 export function PracticeQuestion({ practice, answer, onSelect, onCheck, onRetry }: { practice: BankQuestion; answer: PracticeAnswer; onSelect: (index: number) => void; onCheck: () => void; onRetry: () => void }) {
   const groupName = useId();
@@ -15,6 +16,7 @@ export function PracticeQuestion({ practice, answer, onSelect, onCheck, onRetry 
       <p className="muted small">This is not an official College Board question. Answers stay in this session and reset on reload.</p>
       <fieldset disabled={checked}>
         <legend>{prompt}</legend>
+        <PracticeFigure questionId={practice.id} />
         <div className="practice-options">{options.map((option, index) => (
           <label key={option} className={`${selected === index ? "selected" : ""} ${checked && index === correctIndex ? "correct" : ""}`}>
             <input type="radio" name={groupName} value={String(index)} checked={selected === index} onChange={() => onSelect(index)} />

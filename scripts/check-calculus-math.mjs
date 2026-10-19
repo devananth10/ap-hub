@@ -1,15 +1,44 @@
 // Independent recomputation pass; does not generate questions or overwrite keys.
-// Numerical checks parse the actual published prompt and answer. Concept checks
+// Numerical checks use separately reviewed prompt data and actual answer choices. Concept checks
 // bind separately recorded reasoning to the current semantic question hash.
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import {createHash} from 'node:crypto';
+import {practiceFigures} from '../src/lib/practice-figures.ts';
+export function figureLimit(figure,target,side='both') {
+  function one(direction) {
+    const values=[];
+    for(const curve of figure.curves) for(let i=1;i<curve.points.length;i++) {
+      const [x1,y1]=curve.points[i-1],[x2,y2]=curve.points[i];
+      if(direction==='left'?x1<target&&target<=x2:x1<=target&&target<x2) values.push(target===x1?y1:target===x2?y2:y1+(target-x1)*(y2-y1)/(x2-x1));
+    }
+    if(!values.length || values.some(value=>Math.abs(value-values[0])>1e-9)) return 'DNE';
+    return values[0];
+  }
+  if(side!=='both') return one(side);
+  const left=one('left'),right=one('right');
+  return typeof left==='number' && typeof right==='number' && Math.abs(left-right)<1e-9?left:'DNE';
+}
 export function verifyCalculusQuestion(question, review) {
   assert.equal(review.questionId,question.id);
   assert.equal(review.optionReview.length,4);
   assert.ok(review.optionReview.every(text=>typeof text==='string' && text.length>=20));
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
-  if (review.check.type==='numeric') {
+  if (review.check.type.startsWith('figure-')) {
+    const figure=practiceFigures[question.id];assert.ok(figure,'Missing original graph: '+question.id);
+    assert.equal(createHash('sha256').update(JSON.stringify(figure)).digest('hex'),review.check.figureSha256,'Graph changed after review: '+question.id);
+    const actual=question.options.map(option=>option.startsWith('Does not exist')?'DNE':Number.parseFloat(option.replace('−','-')));
+    let matches;
+    if(review.check.type==='figure-limit-location') matches=actual.map(target=>typeof target==='number'&&Number.isFinite(target)&&typeof figureLimit(figure,target)==='number');
+    else {
+      const target=review.check.inputX+(review.check.inputShift||0);
+      const limit=figureLimit(figure,target,review.check.side);
+      const result=typeof limit==='number'?limit*(review.check.outputScale??1):limit;
+      matches=actual.map(value=>typeof result==='number'?typeof value==='number'&&Math.abs(value-result)<1e-9:value===result);
+    }
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique graph-based result');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' graph key mismatch');
+  } else if (review.check.type==='numeric') {
     const inputs=review.check.inputs;
     // Inputs are separately transcribed from the prompt. Every literal must occur
     // in it, so changing a prompt requires a new review/check rather than stale QA.

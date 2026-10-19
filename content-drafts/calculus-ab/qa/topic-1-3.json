@@ -1,0 +1,187 @@
+{
+  "topicNumber": "1.3",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "c29ae0316a942fdb66f77fb7ba615170ba023c231de72c413b4bf0759ca24a94",
+  "scopeReview": "CED Topic 1.3 LIM-1.C: one-/two-sided function limits read from original plotted graphs, including graph scale/domain care. All eleven questions include an actual local SVG diagram plus a detailed accessible description. No absent-image references, formal derivative calculations or BC-only concepts.",
+  "varietyReview": "Graph types vary across holes, jumps, a sampled rising curve, continuous corners, endpoints, reflection, horizontal input shift and multiple candidate locations. Several require separating open/closed points and side direction; repeated hole/one-sided skills are intentional within this graph-reading topic, not merely parameter-swapped clones. All graphs are original coordinate constructions.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-1-3-001",
+      "independentReasoning": "The left segment ends and the right segment begins at exactly (2,5); their endpoint ordinates agree. The isolated dot at (2,−1) supplies only the point value. The plotted-segment solver separately reads both approach heights.",
+      "optionReview": [
+        "This is the assigned value f(2), not the common approaching height.",
+        "This is the target input coordinate, not the limiting output.",
+        "The hollow point does not prevent a limit; both sides approach the same height.",
+        "Correct: both nearby branches approach height 5."
+      ],
+      "check": {
+        "type": "figure-limit",
+        "inputX": 2,
+        "side": "both",
+        "figureSha256": "eb68d9a5fbcd3dd3050a0b80f93f940741c724f8834845d8da1c9513f0f83eb3"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-3-002",
+      "independentReasoning": "The plotted left segment rises from (−4,0) to (−1,3). Its equation near the endpoint is y=x+4, so its approaching height is 3 independently of the other plotted components.",
+      "optionReview": [
+        "Correct: the branch followed from inputs smaller than −1 approaches height 3.",
+        "This is the right-hand approaching height, not the left-hand height.",
+        "This is the filled point’s height and therefore f(−1).",
+        "This is the input approached, not a limiting output."
+      ],
+      "check": {
+        "type": "figure-limit",
+        "inputX": -1,
+        "side": "left",
+        "figureSha256": "d8dab7cbf639758de8c6d9698a73983e7eb89e16a2686f222164fde23cc500a0"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-3-003",
+      "independentReasoning": "Reading the endpoints from the original plotted line data gives ordered side values (1,−3). Their difference is 4 rather than zero. The independent segment routine therefore returns no common limit and checks exactly one matching choice.",
+      "optionReview": [
+        "Averaging the two heights does not produce an approached value from either side.",
+        "Correct: the left- and right-hand limits are 1 and −3, which disagree.",
+        "This is the filled point’s height, not a common nearby height.",
+        "This describes only the right-hand approach and ignores the left branch."
+      ],
+      "check": {
+        "type": "figure-limit",
+        "inputX": 4,
+        "side": "both",
+        "figureSha256": "af3d9233b3e9533943daca9c59a9971e1a51cc9e24a81e39a7f3454f01b2b5f6"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-3-004",
+      "independentReasoning": "The last point of the left polyline and first point of the right polyline both have coordinates (3,9). Their shared ordinate, not the isolated dot at y=2, determines the limit. No unplotted smoothness or exact parabola formula is assumed.",
+      "optionReview": [
+        "This is the point value f(3), shown by the separate filled dot.",
+        "This is the input coordinate rather than the output height.",
+        "Correct: the rising branch approaches the missing height 9 from both directions.",
+        "An isolated missing point on an otherwise joined branch does not destroy its limit."
+      ],
+      "check": {
+        "type": "figure-limit",
+        "inputX": 3,
+        "side": "both",
+        "figureSha256": "3dc5b88199d789fd82b8c0ab310ad38989164ab8b30328f5aca4050453221bf2"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-3-005",
+      "independentReasoning": "The right segment runs from (0,2) to (3,5), with local equation y=x+2. Inputs tending to zero from above therefore yield outputs tending to 2. The left endpoint at 7 is on the wrong side.",
+      "optionReview": [
+        "This is the left-hand limit, whereas the plus sign requests the right-hand limit.",
+        "The filled dot gives f(0), not the requested one-sided limit.",
+        "The arithmetic mean of the side heights is irrelevant to a specified right-hand approach.",
+        "Correct: the branch for positive inputs approaches the right hollow endpoint at height 2."
+      ],
+      "check": {
+        "type": "figure-limit",
+        "inputX": 0,
+        "side": "right",
+        "figureSha256": "0994501b743bcb84a99ecb9cc611ba5cfb01085798af81ebe8451bbddc00bc4b"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-3-006",
+      "independentReasoning": "The segment ending at x=1 and the segment beginning at x=1 each have endpoint ordinate −6. This is a function-value limit, not a derivative question, so different segment slopes create no ambiguity.",
+      "optionReview": [
+        "Correct: both segments join at the same vertex height −6.",
+        "A change in slope does not require the function’s limiting value to be zero.",
+        "This is the vertex’s x-coordinate, not its y-coordinate.",
+        "A corner may have a well-defined function limit even though its slopes differ."
+      ],
+      "check": {
+        "type": "figure-limit",
+        "inputX": 1,
+        "side": "both",
+        "figureSha256": "bb849ce5613d9aef0cc588bfd33636f8ca03be830627422b26ca21ca093a4e4d"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-3-007",
+      "independentReasoning": "The left segment from (−5,1) to (−2,4) has slope 1 and approaches y=4 at −2. The independent model uses left-side segments only; it does not impose or invent any right-side graph.",
+      "optionReview": [
+        "This is the assigned value at the endpoint.",
+        "Correct: the existing branch approaches height 4 from inputs less than −2.",
+        "This is the target input, not the approaching output.",
+        "A right branch is unnecessary for the explicitly requested left-hand limit."
+      ],
+      "check": {
+        "type": "figure-limit",
+        "inputX": -2,
+        "side": "left",
+        "figureSha256": "c37c98cd553851661794f88e48411b2c224aeaf41c913ed096c0d19cb48076fc"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-3-008",
+      "independentReasoning": "The two plotted segments share the vertex y=2. Negating each side’s endpoint value gives (−2,−2), which agree. The graph-model check performs the output sign change before testing the actual options.",
+      "optionReview": [
+        "This is the limit of f; the negative sign in g reverses its output.",
+        "This is the input location, not the reflected output.",
+        "Correct: f approaches 2 from both sides, so reflecting its outputs changes the approaching height to −2.",
+        "The corner does not prevent either f or its reflection from approaching a common height."
+      ],
+      "check": {
+        "type": "figure-limit",
+        "inputX": -1,
+        "side": "both",
+        "outputScale": -1,
+        "figureSha256": "f01e873b553878aefde2ec939b0a5cd96167fe069bba7d6eb484d3587d77b65e"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-3-009",
+      "independentReasoning": "The first plotted segment has endpoints (2,−3) and (3,−2), so its local equation is y=x−5. Approaching x=2 from above gives −3. This avoids a convention-dependent claim about two-sided limits at domain endpoints.",
+      "optionReview": [
+        "This is the endpoint’s input coordinate.",
+        "This changes the sign of the displayed endpoint height without justification.",
+        "A right-hand limit uses the existing right branch; no left-side domain values are needed.",
+        "Correct: the available right branch approaches the endpoint’s height −3."
+      ],
+      "check": {
+        "type": "figure-limit",
+        "inputX": 2,
+        "side": "right",
+        "figureSha256": "ea1b70775913c1d3291cb4f9c8003691a9a2b43e603b63bf288bfc4f97c168dd"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-3-010",
+      "independentReasoning": "After the horizontal input shift, sequences x=1±h sample f at 3±h. The two corresponding plotted segment endpoint heights are both 4. Their point-value assignment at exactly 3 is not sampled by the limiting sequence.",
+      "optionReview": [
+        "Correct: as x approaches 1, the input x+2 to f approaches 3, where the nearby graph height approaches 4.",
+        "This substitutes the isolated value f(3) for its nearby limiting behavior.",
+        "This is the approached input to f, not f’s approached output.",
+        "This is the approached input to g and does not give its output."
+      ],
+      "check": {
+        "type": "figure-limit",
+        "inputX": 1,
+        "side": "both",
+        "inputShift": 2,
+        "figureSha256": "ac525b64f4d131befb7ca736bbb74f265758b9899f7f1ac56034a75d1e3ba4c9"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-3-011",
+      "independentReasoning": "The plotted horizontal segments give side pairs at x=0,1,2,3 of (1,2), (2,2), (2,3), (3,−1). Exactly one pair agrees. The independent graph routine tests each numerical option as a candidate location rather than trusting a stored answer coordinate.",
+      "optionReview": [
+        "At x=0 the left and right heights are 1 and 2, so the sides disagree.",
+        "Correct: both sides at x=1 approach height 2, even though f(1)=5.",
+        "At x=2 the side heights are 2 and 3, which do not match.",
+        "At x=3 the side heights are 3 and −1, which also disagree."
+      ],
+      "check": {
+        "type": "figure-limit-location",
+        "figureSha256": "5ce1233100b72c9619ab8484c6ddbd668a1d6f5be06cc17f9ff65439a86c13c2"
+      }
+    }
+  ]
+}

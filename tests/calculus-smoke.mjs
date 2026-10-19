@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import {courses} from '../src/lib/courses.ts';
 import {practiceEntries,practiceHref,practiceCount} from '../src/lib/practice.ts';
+import {practiceFigures} from '../src/lib/practice-figures.ts';
 const base=process.env.BASE_URL||'http://127.0.0.1:3000';
 const course=courses.find(course=>course.id==='calculus-ab');
 const plain=text=>text.replace(/<!--.*?-->/g,'');
@@ -16,6 +17,7 @@ for(const unit of course.units) {
       assert.equal(entries.length,11);assert.ok(html.includes('Question 1 of 11'));
       const legend=html.match(/<legend[^>]*>(.*?)<\/legend>/s)?.[1];assert.equal(decode(legend),entries[0].question.prompt,topic.number+' correct first question');
       assert.equal((html.match(/aria-label="Report this question"/g)||[]).length,1);
+      if(practiceFigures[entries[0].id]) assert.ok(html.includes(`data-question-figure="${entries[0].id}"`),'Required original graph is rendered');
       completed++;questions+=entries.length;
     } else assert.ok(html.includes('coming soon')&&!html.includes('practice-question-frame'),topic.number+' honest empty state');
     const workspaceResponse=await fetch(`${base}/courses/calculus-ab/${topic.id}`);assert.equal(workspaceResponse.status,200);

@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 1,
+  "topicId": "topic-1-3",
+  "questions": [
+    {
+      "id": "calc-ab-1-3-001",
+      "prompt": "Use the graph below to determine lim(x→2) f(x). The hollow point is at (2,5), and the separate filled point is at (2,−1).",
+      "options": [
+        "−1",
+        "2",
+        "Does not exist",
+        "5"
+      ],
+      "correctIndex": 3,
+      "explanation": "Trace each branch toward x=2 without evaluating the filled point. From the left and the right, the graph approaches the hollow point at height 5. Thus the two-sided limit is 5 despite f(2)=−1. A: This is the assigned value f(2), not the common approaching height. B: This is the target input coordinate, not the limiting output. C: The hollow point does not prevent a limit; both sides approach the same height. D: Correct: both nearby branches approach height 5."
+    },
+    {
+      "id": "calc-ab-1-3-002",
+      "prompt": "For the graph below, determine lim(x→−1⁻) f(x). The filled point at (−1,8) is separate from both branches.",
+      "options": [
+        "3",
+        "−2",
+        "8",
+        "−1"
+      ],
+      "correctIndex": 0,
+      "explanation": "The minus superscript specifies movement toward −1 from smaller x-values. Following the left branch leads to the hollow endpoint (−1,3). The right branch and isolated point do not determine this one-sided limit. A: Correct: the branch followed from inputs smaller than −1 approaches height 3. B: This is the right-hand approaching height, not the left-hand height. C: This is the filled point’s height and therefore f(−1). D: This is the input approached, not a limiting output."
+    },
+    {
+      "id": "calc-ab-1-3-003",
+      "prompt": "Estimate lim(x→4) f(x) from the graph below. The two branches approach hollow points at (4,1) and (4,−3).",
+      "options": [
+        "−1",
+        "Does not exist",
+        "4",
+        "−3"
+      ],
+      "correctIndex": 1,
+      "explanation": "The left side approaches 1; the right side approaches −3. Since these values differ, a two-sided finite limit does not exist. The point plotted at (4,4) does not change either side. A: Averaging the two heights does not produce an approached value from either side. B: Correct: the left- and right-hand limits are 1 and −3, which disagree. C: This is the filled point’s height, not a common nearby height. D: This describes only the right-hand approach and ignores the left branch."
+    },
+    {
+      "id": "calc-ab-1-3-004",
+      "prompt": "The graph below has a hollow point at (3,9) on its rising branch and a separate filled point at (3,2). What is lim(x→3) f(x)?",
+      "options": [
+        "2",
+        "3",
+        "9",
+        "Does not exist"
+      ],
+      "correctIndex": 2,
+      "explanation": "Both visible portions of the rising branch converge to the same hollow location, (3,9). The limit uses that local height. The reassigned filled point at height 2 changes f(3) but does not change the approaching graph. A: This is the point value f(3), shown by the separate filled dot. B: This is the input coordinate rather than the output height. C: Correct: the rising branch approaches the missing height 9 from both directions. D: An isolated missing point on an otherwise joined branch does not destroy its limit."
+    },
+    {
+      "id": "calc-ab-1-3-005",
+      "prompt": "Use the graph below to find lim(x→0⁺) f(x). At x=0, the left hollow endpoint is at height 7, the right hollow endpoint is at height 2, and the filled dot is at height 6.",
+      "options": [
+        "7",
+        "6",
+        "4.5",
+        "2"
+      ],
+      "correctIndex": 3,
+      "explanation": "Positive inputs near zero lie on the right side. Following that branch toward the y-axis gives the approaching height 2. Neither the left branch nor f(0)=6 replaces that one-sided behavior. A: This is the left-hand limit, whereas the plus sign requests the right-hand limit. B: The filled dot gives f(0), not the requested one-sided limit. C: The arithmetic mean of the side heights is irrelevant to a specified right-hand approach. D: Correct: the branch for positive inputs approaches the right hollow endpoint at height 2."
+    },
+    {
+      "id": "calc-ab-1-3-006",
+      "prompt": "The graph below consists of connected line segments through (−3,2), (1,−6), and (4,0). What is lim(x→1) f(x)?",
+      "options": [
+        "−6",
+        "0",
+        "1",
+        "Does not exist"
+      ],
+      "correctIndex": 0,
+      "explanation": "The incoming and outgoing pieces both meet at (1,−6), so both one-sided function limits are −6. A corner concerns the slopes of the pieces; it does not prevent the plotted function values from approaching one height. A: Correct: both segments join at the same vertex height −6. B: A change in slope does not require the function’s limiting value to be zero. C: This is the vertex’s x-coordinate, not its y-coordinate. D: A corner may have a well-defined function limit even though its slopes differ."
+    },
+    {
+      "id": "calc-ab-1-3-007",
+      "prompt": "At the endpoint shown in the graph below, determine lim(x→−2⁻) f(x). The left branch ends at hollow (−2,4); the filled point is (−2,1).",
+      "options": [
+        "1",
+        "4",
+        "−2",
+        "Does not exist"
+      ],
+      "correctIndex": 1,
+      "explanation": "Only the left-hand approach is requested, so follow the existing left branch to its hollow endpoint. That endpoint has height 4. A lack of domain values on the right does not stop this left-hand approach. A: This is the assigned value at the endpoint. B: Correct: the existing branch approaches height 4 from inputs less than −2. C: This is the target input, not the approaching output. D: A right branch is unnecessary for the explicitly requested left-hand limit."
+    },
+    {
+      "id": "calc-ab-1-3-008",
+      "prompt": "The graph below is the graph of f. Let g(x)=−f(x). Using the V-shaped vertex at (−1,2), determine lim(x→−1) g(x).",
+      "options": [
+        "2",
+        "−1",
+        "−2",
+        "Does not exist"
+      ],
+      "correctIndex": 2,
+      "explanation": "Read the function limit from the V: both branches approach 2 at x=−1. Multiplying outputs by −1 reflects the graph across the x-axis and makes both approaching heights −2. This uses a graph transformation, not a differentiation rule. A: This is the limit of f; the negative sign in g reverses its output. B: This is the input location, not the reflected output. C: Correct: f approaches 2 from both sides, so reflecting its outputs changes the approaching height to −2. D: The corner does not prevent either f or its reflection from approaching a common height."
+    },
+    {
+      "id": "calc-ab-1-3-009",
+      "prompt": "For the graph below, which value is lim(x→2⁺) f(x)? The real domain begins at the included endpoint (2,−3).",
+      "options": [
+        "2",
+        "3",
+        "Does not exist",
+        "−3"
+      ],
+      "correctIndex": 3,
+      "explanation": "Approach x=2 using inputs greater than 2, which lie on the displayed branch. Their output heights approach −3. The chosen notation asks only about the right side of the domain endpoint. A: This is the endpoint’s input coordinate. B: This changes the sign of the displayed endpoint height without justification. C: A right-hand limit uses the existing right branch; no left-side domain values are needed. D: Correct: the available right branch approaches the endpoint’s height −3."
+    },
+    {
+      "id": "calc-ab-1-3-010",
+      "prompt": "The graph below represents f, with a hollow point at (3,4) and a filled point at (3,9). Define g(x)=f(x+2). What is lim(x→1) g(x)?",
+      "options": [
+        "4",
+        "9",
+        "3",
+        "1"
+      ],
+      "correctIndex": 0,
+      "explanation": "Track the input transformation first: x→1 implies x+2→3. The graph shows both branches of f approaching 4 at x=3. Consequently f(x+2) approaches 4, while g(1)=f(3)=9 need not equal that limit. A: Correct: as x approaches 1, the input x+2 to f approaches 3, where the nearby graph height approaches 4. B: This substitutes the isolated value f(3) for its nearby limiting behavior. C: This is the approached input to f, not f’s approached output. D: This is the approached input to g and does not give its output."
+    },
+    {
+      "id": "calc-ab-1-3-011",
+      "prompt": "For the step-like graph below, at which listed input does a finite two-sided limit of f exist? The isolated filled point is (1,5); all horizontal-branch endpoints are hollow.",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "correctIndex": 1,
+      "explanation": "Compare side heights at each proposed input. Only at x=1 do the adjacent branches have the same height, 2. The isolated filled dot changes the value f(1), not this limit. Each of the other listed inputs has a jump. A: At x=0 the left and right heights are 1 and 2, so the sides disagree. B: Correct: both sides at x=1 approach height 2, even though f(1)=5. C: At x=2 the side heights are 2 and 3, which do not match. D: At x=3 the side heights are 3 and −1, which also disagree."
+    }
+  ]
+}

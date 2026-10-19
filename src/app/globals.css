@@ -290,3 +290,11 @@ kbd { display:flex; gap:3px; align-items:center; margin-left:auto; padding:0 4px
 .report-trigger:hover .report-tooltip,.report-trigger:focus-visible .report-tooltip { display:block; }
 .public-reviews { padding-top:0; }.public-reviews h2 { font-size:21px; margin-bottom:20px; }.public-review-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr)); gap:16px; }.public-review { padding:22px; border:1px solid var(--border); border-radius:10px; background:var(--surface); }.public-review p { font-size:13px; line-height:1.8; white-space:pre-wrap; overflow-wrap:anywhere; margin:14px 0; }.public-review-stars { display:flex; gap:4px; color:var(--teal); margin-bottom:12px; }
 @media(max-width:760px) { .feedback-form,.feedback-success { padding:0 20px 20px; }.feedback-dialog .dialog-header h2 { font-size:18px; }.app-footer { flex-wrap:wrap; }.feedback-meta { flex-wrap:wrap; }.star-rating { gap:5px; } }
+.practice-figure { margin:18px 0 24px; padding:12px; border:1px solid var(--border); border-radius:9px; background:var(--surface); max-width:440px; }
+.practice-figure svg { display:block; width:100%; height:auto; overflow:visible; }
+.practice-figure .plot-grid { stroke:var(--border); stroke-width:.6; }
+.practice-figure .plot-axes { stroke:var(--muted); stroke-width:1; }
+.practice-figure .plot-labels { fill:var(--ink); font-size:14px; }
+.practice-figure .plot-curves { fill:none; stroke:var(--teal); stroke-width:2.5; stroke-linejoin:round; }
+.practice-figure circle { stroke:var(--teal); stroke-width:2; }.practice-figure .open { fill:var(--surface); }.practice-figure .closed { fill:var(--teal); }
+.practice-figure figcaption { font-size:11px; color:var(--muted); margin-top:6px; line-height:1.7; }
