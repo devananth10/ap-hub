@@ -920,5 +920,30 @@
         "2"
       ]
     ]
+  },
+  "calc-ab-5-7-009": {
+    "caption": "Derivative values at three candidate inputs of a smooth function.",
+    "headers": [
+      "x",
+      "f′(x)",
+      "f″(x)"
+    ],
+    "rows": [
+      [
+        "−1",
+        "0",
+        "−2"
+      ],
+      [
+        "1",
+        "0",
+        "4"
+      ],
+      [
+        "3",
+        "0",
+        "0"
+      ]
+    ]
   }
 }

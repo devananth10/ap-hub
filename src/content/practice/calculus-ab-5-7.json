@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 5,
+  "topicId": "topic-5-7",
+  "questions": [
+    {
+      "id": "calc-ab-5-7-001",
+      "prompt": "A function is twice continuously differentiable near 2, with f′(2)=0 and f″(2)=−3. What does the Second Derivative Test establish?",
+      "options": [
+        "A local minimum at x=2.",
+        "An absolute maximum on the entire domain.",
+        "An inconclusive test because f″(2) is not zero.",
+        "A local maximum at x=2."
+      ],
+      "correctIndex": 3,
+      "explanation": "The stationary condition f′(2)=0 is satisfied. Since f″(2)<0, the function is concave down near that input, making the stationary point a local maximum. This test supplies no global maximum claim without more information. A: Positive rather than negative second derivative would establish a minimum. B: The local test alone does not compare distant values. C: A nonzero second derivative is exactly the conclusive case. D: The stationary input has negative curvature."
+    },
+    {
+      "id": "calc-ab-5-7-002",
+      "prompt": "For f(x)=x³−6x²+5, which input is a local minimum established by the Second Derivative Test?",
+      "options": [
+        "4",
+        "0",
+        "2",
+        "−4"
+      ],
+      "correctIndex": 0,
+      "explanation": "The first derivative is 3x²−12x=3x(x−4), giving critical inputs 0 and 4. The second derivative is 6x−12. At 0 it is −12, while at 4 it is +12. Therefore the local minimum is at x=4. A: The derivative is zero there and the second derivative is 12>0. B: The derivative is zero but the second derivative is −12, giving a maximum. C: The derivative is −12, so it is not stationary. D: The derivative is nonzero there."
+    },
+    {
+      "id": "calc-ab-5-7-003",
+      "prompt": "Suppose f′(c)=0 and f″(c)=0. What conclusion follows from the Second Derivative Test alone?",
+      "options": [
+        "A local minimum must occur.",
+        "The test is inconclusive; a local minimum, local maximum or neither may occur.",
+        "A local maximum must occur.",
+        "No local extremum can occur."
+      ],
+      "correctIndex": 1,
+      "explanation": "The Second Derivative Test requires a strictly positive or strictly negative second derivative at a stationary point. When it is zero, another method is needed. At 0 the examples x⁴, −x⁴ and x³ yield a minimum, maximum and neither, respectively. A: The function −x⁴ at 0 disproves this. B: Zero curvature at the stationary point does not decide its nearby direction change. C: The function x⁴ at 0 disproves this. D: Both x⁴ and −x⁴ have extrema despite zero second derivatives at 0."
+    },
+    {
+      "id": "calc-ab-5-7-004",
+      "prompt": "For f(x)=x⁴+1, which statement correctly handles the critical input 0?",
+      "options": [
+        "The Second Derivative Test establishes a strict maximum.",
+        "There is no extremum because f″(0)=0.",
+        "The Second Derivative Test is inconclusive, but the First Derivative Test establishes a local minimum.",
+        "The function is locally constant because both derivatives vanish at 0."
+      ],
+      "correctIndex": 2,
+      "explanation": "The derivative 4x³ vanishes at 0, and f″(0)=0, so the second-derivative test says nothing. However, f′ is negative to the left and positive to the right. The first-derivative test therefore proves a local minimum, with value 1. A: Neither the second-derivative value nor neighboring values support a maximum. B: An inconclusive test does not rule out an actual minimum. C: The second derivative is zero, while 4x³ changes from negative to positive. D: The fourth-power term varies at every nonzero nearby input."
+    },
+    {
+      "id": "calc-ab-5-7-005",
+      "prompt": "For f(x)=x²+x, a student claims a local minimum at x=0 solely because f″(0)=2>0. What is wrong?",
+      "options": [
+        "Positive second derivative always indicates a maximum.",
+        "The second derivative must equal zero for the test.",
+        "Nothing is wrong; every concave-up point is a minimum.",
+        "The stationary condition fails: f′(0)=1, so the Second Derivative Test cannot classify 0 as a minimum."
+      ],
+      "correctIndex": 3,
+      "explanation": "The derivative is f′=2x+1, giving f′(0)=1≠0. Thus 0 is not a stationary input and is not classified by the Second Derivative Test. The function increases through that point even though it is concave up. A: At a stationary point it would indicate a minimum, not a maximum. B: Zero would instead make the test inconclusive. C: A concave-up curve can still be increasing through the point. D: Positive curvature alone does not imply a horizontal tangent or extremum."
+    },
+    {
+      "id": "calc-ab-5-7-006",
+      "prompt": "For f(x)=x²eˣ, which input is a local maximum established by the Second Derivative Test?",
+      "options": [
+        "−2",
+        "0",
+        "2",
+        "−1"
+      ],
+      "correctIndex": 0,
+      "explanation": "The first derivative is eˣ(x²+2x), with roots −2 and 0. Differentiating again gives f″=eˣ(x²+4x+2). At −2 the quadratic factor is −2, while at 0 it is 2. Thus −2 is a local maximum and 0 is a local minimum. A: The stationary input −2 has f″(−2)=−2e^(−2)<0. B: This stationary input has positive second derivative 2, so it is a minimum. C: The derivative eˣx(x+2) is nonzero there. D: The derivative is −e^(−1), not zero."
+    },
+    {
+      "id": "calc-ab-5-7-007",
+      "prompt": "For f(x)=ln x−x on x>0, why is its local maximum at x=1 also an absolute maximum?",
+      "options": [
+        "Every local maximum of any function is automatically absolute.",
+        "It is the only critical input, and f increases before 1 and decreases afterward on its connected domain.",
+        "The domain must be closed and bounded for any absolute maximum to exist.",
+        "The function value f(1)=−1 is positive."
+      ],
+      "correctIndex": 1,
+      "explanation": "The derivative (1−x)/x is positive on (0,1) and negative on (1,∞), with only one critical input. Thus all smaller inputs lead upward to f(1), and all larger inputs lead downward from it. This global sign structure makes the local maximum absolute on x>0. A: Other local maxima can have higher values without additional global evidence. B: The derivative sign argument compares every domain input with the peak. C: Closed bounded continuity is a sufficient guarantee, not a necessary condition for an actual maximum. D: The value is negative, and its sign does not determine global maximality."
+    },
+    {
+      "id": "calc-ab-5-7-008",
+      "prompt": "For f(x)=x⁴+bx² with real parameter b, which condition lets the Second Derivative Test establish a local maximum at x=0?",
+      "options": [
+        "b>0",
+        "b=0",
+        "b<0",
+        "Every real b"
+      ],
+      "correctIndex": 2,
+      "explanation": "The first derivative 4x³+2bx vanishes at 0 for every parameter. The second derivative is 12x²+2b, giving f″(0)=2b. The test establishes a local maximum only when b<0. At b=0 it is inconclusive even though the actual fourth power has a minimum. A: This yields positive curvature and a local minimum. B: The second derivative is zero, making this test inconclusive. C: The input is stationary for every b and f″(0)=2b is negative exactly then. D: The second derivative sign changes with b."
+    },
+    {
+      "id": "calc-ab-5-7-009",
+      "prompt": "Use the derivative table below. Which pair of inputs is conclusively a local maximum and local minimum, respectively, by the Second Derivative Test?",
+      "options": [
+        "−1 and 3.",
+        "1 and −1.",
+        "3 and 1.",
+        "−1 and 1."
+      ],
+      "correctIndex": 3,
+      "explanation": "Every listed first derivative is zero. At −1 the second derivative is −2, giving a local maximum; at 1 it is 4, giving a local minimum. At 3 it is zero, so this test does not classify that input. A: The second derivative at 3 is zero, so the test is inconclusive there. B: This reverses the curvature classifications. C: The zero second derivative at 3 does not establish a maximum. D: Both are stationary, with negative curvature at −1 and positive curvature at 1."
+    },
+    {
+      "id": "calc-ab-5-7-010",
+      "prompt": "Suppose f′(c)=0 and f″(c)>0. Without further global information, which conclusion is justified?",
+      "options": [
+        "A local minimum at c, but not necessarily an absolute minimum.",
+        "An absolute minimum over the entire domain.",
+        "A local maximum at c.",
+        "No extremum because the second derivative is nonzero."
+      ],
+      "correctIndex": 0,
+      "explanation": "The Second Derivative Test gives a local minimum from stationarity and positive second derivative. It does not by itself compare values throughout the domain. Global conclusions require additional interval, critical-point or value information. A: The Second Derivative Test controls nearby behavior only. B: Faraway values may be smaller. C: The positive curvature gives the opposite local type. D: A nonzero second derivative at a stationary input is conclusive."
+    },
+    {
+      "id": "calc-ab-5-7-011",
+      "prompt": "For f(x)=x+1/x on x>0, at which input does the Second Derivative Test establish a local minimum?",
+      "options": [
+        "−1",
+        "1",
+        "0",
+        "2"
+      ],
+      "correctIndex": 1,
+      "explanation": "The derivative f′=1−1/x² is zero at the allowed input 1. The second derivative is 2/x³, giving f″(1)=2>0. Thus the local minimum is at 1. The other algebraic root −1 and the zero denominator input are outside the domain. A: This algebraic root of f′ is outside the original positive domain. B: The first derivative vanishes and second derivative is 2>0 there. C: The function and its derivatives are undefined there. D: The first derivative is 3/4, so it is not stationary."
+    }
+  ]
+}

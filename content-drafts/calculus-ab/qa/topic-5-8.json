@@ -1,0 +1,174 @@
+{
+  "topicNumber": "5.8",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "190e178dd5638d4c8d97523b688091485249d2562344bbf603a55caf65de12a7",
+  "scopeReview": "CED FUN-4.A.9–10 relating graphical, numerical and analytic derivative features to function sketches. Five original graphs explicitly labeled f or f′; no missing image references. Derivative heights distinguished from slopes, sign crossings from touches, and transformations from original heights.",
+  "varietyReview": "Flat original segment slope, derivative crossings, parabola-to-line sketch, decreasing concave-up shape, corner derivative gap, vertical translation, reflected input, derivative peak versus original inflection, cubic derivative parabola, shared derivative family and constant-derivative endpoint change.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-5-8-001",
+      "independentReasoning": "Use the actual original graph segment containing 1 and compute (3−3)/(2−0)=0. The target is strictly inside that segment, so corner ambiguities at its endpoints do not occur. The neighboring segment slopes separately verify both slope-based distractors.",
+      "optionReview": [
+        "The original graph is horizontal near x=1, so its local slope is zero.",
+        "This is the original function height, not the derivative.",
+        "This is the slope of a different segment after x=2.",
+        "This is the slope of the original graph before x=0."
+      ],
+      "check": {
+        "type": "figure-slope",
+        "inputX": 1,
+        "figureSha256": "ef594373c7e3e5e6cbba48fb4df533c8c56ea6e6898c2c81e2931c446b90f4ef"
+      },
+      "figureSha256": "ef594373c7e3e5e6cbba48fb4df533c8c56ea6e6898c2c81e2931c446b90f4ef"
+    },
+    {
+      "questionId": "calc-ab-5-8-002",
+      "independentReasoning": "Compute the actual axis crossings from the plotted segments, then inspect derivative values immediately to both sides. The checker uses the plotted interpolation directly, not copied polynomial roots. The derivative graph’s peak at 0 is not a maximum of the original function.",
+      "optionReview": [
+        "That crossing is negative to positive and gives a local minimum.",
+        "The derivative crosses from positive to negative there.",
+        "That crossing also gives a local minimum.",
+        "The derivative has a positive peak there, so f is still increasing through it."
+      ],
+      "check": {
+        "type": "figure-sign-transition",
+        "kind": "maximum",
+        "figureSha256": "6483ef2f870dead00a612216f98d78ce4b42bd8b4643021a3f81af6a7a98dc9d"
+      },
+      "figureSha256": "6483ef2f870dead00a612216f98d78ce4b42bd8b4643021a3f81af6a7a98dc9d"
+    },
+    {
+      "questionId": "calc-ab-5-8-003",
+      "independentReasoning": "Differentiate the expanded original polynomial x²−4x+7 as a separate check. Its slopes at 1,2,3 are −2,0,2, agreeing with the described increasing line rather than any of the alternative sketches.",
+      "optionReview": [
+        "This describes the original function, not its derivative.",
+        "This uses the wrong sign for the horizontal shift.",
+        "The derivative is 2x−4, independent of the vertical shift 3.",
+        "The original vertical shift does not become a derivative height."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "A line with slope 2 crossing the horizontal axis at x=2."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-8-004",
+      "independentReasoning": "For an explicit model, f(x)=e^(−x) has derivative −e^(−x), which is negative and increasing. Its graph decreases while flattening upward, independently confirming the stated combination and distinguishing derivative height from derivative slope.",
+      "optionReview": [
+        "The sign of f′ is negative, so f cannot be increasing there.",
+        "A rising derivative graph indicates positive rather than negative curvature.",
+        "Both sign-to-feature translations are reversed.",
+        "Negative derivative means decreasing f, while increasing derivative means concave up."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Decreasing and concave up."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-8-005",
+      "independentReasoning": "Read the exact plotted segment slopes using their endpoints. The graph’s continuity at 0 is checked separately from differentiability. Both nonmatching slopes remain valid on their respective open sides, but neither nor their average is the derivative at the corner.",
+      "optionReview": [
+        "The left slope is −1 and the right slope +1, so no two-sided derivative exists.",
+        "A zero function height does not determine the slope at a corner.",
+        "A two-sided derivative cannot be chosen from only the left slope.",
+        "The right-hand slope alone does not give the two-sided derivative."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It should have no defined value there because the one-sided slopes of f differ."
+      },
+      "figureSha256": "bf404bb5ff4beeca8f4da80531a7e6516bcec4915f233fc3812904ab3ba44513"
+    },
+    {
+      "questionId": "calc-ab-5-8-006",
+      "independentReasoning": "The exact increments g(x+h)−g(x)=f(x+h)−f(x) prove equal difference quotients before limits. This independent slope argument rules out all derivative translations and stretches without relying solely on the constant-rule formula.",
+      "optionReview": [
+        "The constant shift vanishes when differentiating.",
+        "A constant vertical translation of a function changes no local slopes.",
+        "The original transformation changes output, not input.",
+        "Adding a constant does not multiply slopes."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "They coincide."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-8-007",
+      "independentReasoning": "Take f(x)=x²+x, so f′=2x+1. Then g=x²−x and g′=2x−1. Substituting into −f′(−x) gives exactly 2x−1, while each single-reflection or unchanged alternative fails for this example.",
+      "optionReview": [
+        "This omits the derivative of the inner input −x.",
+        "This omits the changed input to the original derivative.",
+        "The input reflection is accompanied by the chain factor −1.",
+        "An arbitrary derivative need not have the symmetry needed for that equality."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "g′(x)=−f′(−x): reflect the graph of f′ across the vertical axis and then across the horizontal axis."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-8-008",
+      "independentReasoning": "The actual derivative-segment slopes are +1 before 0 and −1 after 0, while its height at 0 is 3. These independently establish the concavity change and the nonstationary original slope. A peak of f′ is not automatically a peak of f.",
+      "optionReview": [
+        "The derivative remains positive on both sides, so the original function does not turn there.",
+        "No negative-to-positive derivative crossing occurs.",
+        "The derivative value there is 3, not zero.",
+        "The derivative stays positive but changes from increasing to decreasing at its peak."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f is increasing through an inflection point at 0."
+      },
+      "figureSha256": "d94b1204d46b0f52fa6c71c1da1d9b8334b235103c7b70b4f65cb9e7951010a8"
+    },
+    {
+      "questionId": "calc-ab-5-8-009",
+      "independentReasoning": "Evaluate original-function tangent slopes at −1,0,1 to obtain 0,−3,0, and note the derivative increases quadratically for large |x|. These checks distinguish both the opening direction and vertical position rather than matching only the two zeros.",
+      "optionReview": [
+        "The derivative is 3x²−3.",
+        "The quadratic coefficient in the derivative is positive.",
+        "This omits the constant −3 in the derivative.",
+        "That describes a second-derivative trend, not the first derivative."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "An upward-opening parabola with zeros at −1 and 1 and vertex (0,−3)."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-8-010",
+      "independentReasoning": "Apply the theorem to arbitrary pairs of inputs of f−g to prove its values agree. The example x² and x²+5 shows why exact equality of the original graphs is not guaranteed. The interval condition prevents unrelated constants on separate domain pieces.",
+      "optionReview": [
+        "The shared derivative does not determine the additive constant.",
+        "Their difference has derivative zero everywhere, so the Mean Value Theorem makes it constant.",
+        "Equal slopes at matching inputs do not imply a horizontal shift.",
+        "Identical derivatives impose identical matching-input slopes."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "They differ by a constant vertical translation on that interval."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-8-011",
+      "independentReasoning": "By the Mean Value Theorem, the endpoint secant slope equals f′(c)=−2 at an interior input, so the change must be −4. The checker confirms the actual derivative graph is horizontal throughout the interval before multiplying its height by the interval length.",
+      "optionReview": [
+        "This is the slope, not the change over two input units.",
+        "This loses the negative sign of the constant slope.",
+        "The derivative is the constant −2 on [0,2], so the output change is slope times interval length.",
+        "A constant derivative does not make the original function constant unless that derivative is zero."
+      ],
+      "check": {
+        "type": "figure-constant-change",
+        "start": 0,
+        "end": 2,
+        "figureSha256": "79cb7ee38581cd0eea3bf74b04583ccaf00376a2d33ace29a10e67c00b3033ad"
+      },
+      "figureSha256": "79cb7ee38581cd0eea3bf74b04583ccaf00376a2d33ace29a10e67c00b3033ad"
+    }
+  ]
+}

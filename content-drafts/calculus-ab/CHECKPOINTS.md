@@ -30,5 +30,6 @@ Repository: `devananth10/ap-hub`, branch `main`. Each entry below was saved with
 | `9f5265e61acdef9d147748ba742cf90249f3a177` | 429 | Unit 4 complete, 78 tests, full route/preservation/stability checks and mobile browser session; verified GitHub receipt |
 | `c1cb9c247ec5a38502b5227e1871473fd6b6a3d8` | 451 | Topics 5.1–5.2, 79 tests, full route/preservation/stability checks and mobile browser session; remote baseline verified on continuation |
 | `5061746ea2c1732e46e2b8b56251bc68a8bf28d8` | 473 | Topics 5.3–5.4, 80 tests, build/typecheck, all Calculus routes and both full browser sessions; verified GitHub receipt |
+| `9965e22b7df55102162488ed4f95956f9600ef98` | 495 | Topics 5.5–5.6, corrected complete table, 82 tests, build/typecheck, routes and full browser sessions; verified GitHub receipt |
 
 These rows record previously verified receipts. PROGRESS.json records subsequent locally validated publication; Git log and the verified remote branch provide later receipts. Do not invent a future commit SHA inside progress files before committing.

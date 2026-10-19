@@ -1,0 +1,206 @@
+{
+  "topicNumber": "5.7",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "3859d85cad409a174a1e7784431c9279698885e5ddac80814148fa4eac4fd95c",
+  "scopeReview": "CED FUN-4.A.7–8 Second Derivative Test at stationary inputs, inconclusive zero second derivative and local/global conclusions. Exact stationarity, curvature and domains are separately proved; numerical original-function differences corroborate selected point classifications.",
+  "varietyReview": "Signed derivative data, cubic classification, three inconclusive outcomes, flat fourth-power alternative test, missing stationarity hypothesis, exponential product, unique critical global maximum, parameter threshold, derivative table, local/global counterexample and positive-domain reciprocal.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-5-7-001",
+      "independentReasoning": "Continuity of the second derivative preserves its negative sign in a neighborhood. There the first derivative decreases through its zero, from positive to negative, independently recovering the First Derivative Test classification.",
+      "optionReview": [
+        "Positive rather than negative second derivative would establish a minimum.",
+        "The local test alone does not compare distant values.",
+        "A nonzero second derivative is exactly the conclusive case.",
+        "The stationary input has negative curvature."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "A local maximum at x=2."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-7-002",
+      "independentReasoning": "Solve the first-derivative equation before applying curvature. Original-function centered first and second differences corroborate stationarity and the opposite curvature signs at the two roots. Positive curvature at a nonstationary input would not qualify.",
+      "optionReview": [
+        "The derivative is zero there and the second derivative is 12>0.",
+        "The derivative is zero but the second derivative is −12, giving a maximum.",
+        "The derivative is −12, so it is not stationary.",
+        "The derivative is nonzero there."
+      ],
+      "check": {
+        "type": "second-derivative-test",
+        "kind": "minimum",
+        "expression": [
+          "add",
+          [
+            "pow",
+            "x",
+            3
+          ],
+          [
+            "mul",
+            -6,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          5
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-5-7-003",
+      "independentReasoning": "Differentiate all three examples twice: both derivatives vanish at 0 in each case. Compare original nearby function values to their values at 0 to establish the three different outcomes. This independently demonstrates that the test is inconclusive, not an absence-of-extrema test.",
+      "optionReview": [
+        "The function −x⁴ at 0 disproves this.",
+        "Zero curvature at the stationary point does not decide its nearby direction change.",
+        "The function x⁴ at 0 disproves this.",
+        "Both x⁴ and −x⁴ have extrema despite zero second derivatives at 0."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The test is inconclusive; a local minimum, local maximum or neither may occur."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-7-004",
+      "independentReasoning": "The exact inequality x⁴+1≥1 gives an additional direct proof of minimality. The isolated vanishing derivatives do not imply local constancy. The different test outcomes are kept distinct rather than treating an inconclusive result as a contradiction.",
+      "optionReview": [
+        "Neither the second-derivative value nor neighboring values support a maximum.",
+        "An inconclusive test does not rule out an actual minimum.",
+        "The second derivative is zero, while 4x³ changes from negative to positive.",
+        "The fourth-power term varies at every nonzero nearby input."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The Second Derivative Test is inconclusive, but the First Derivative Test establishes a local minimum."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-7-005",
+      "independentReasoning": "For small h>0, f(−h)=h²−h<0=f(0)<h²+h=f(h), directly ruling out either local extremum. This independently checks the missing hypothesis rather than only citing the test formula.",
+      "optionReview": [
+        "At a stationary point it would indicate a minimum, not a maximum.",
+        "Zero would instead make the test inconclusive.",
+        "A concave-up curve can still be increasing through the point.",
+        "Positive curvature alone does not imply a horizontal tangent or extremum."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The stationary condition fails: f′(0)=1, so the Second Derivative Test cannot classify 0 as a minimum."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-7-006",
+      "independentReasoning": "Differentiate the original product twice and check the exponential never vanishes. Evaluate the exact quadratic factors at both roots. Centered original-function first/second differences corroborate these stationary and curvature decisions.",
+      "optionReview": [
+        "The stationary input −2 has f″(−2)=−2e^(−2)<0.",
+        "This stationary input has positive second derivative 2, so it is a minimum.",
+        "The derivative eˣx(x+2) is nonzero there.",
+        "The derivative is −e^(−1), not zero."
+      ],
+      "check": {
+        "type": "second-derivative-test",
+        "kind": "maximum",
+        "expression": [
+          "mul",
+          [
+            "pow",
+            "x",
+            2
+          ],
+          [
+            "exp",
+            "x"
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-5-7-007",
+      "independentReasoning": "The Second Derivative Test also gives f″(1)=−1<0, confirming the local type. Globality is separately justified by signs throughout both parts of the domain, rather than assumed from that local test alone.",
+      "optionReview": [
+        "Other local maxima can have higher values without additional global evidence.",
+        "The derivative sign argument compares every domain input with the peak.",
+        "Closed bounded continuity is a sufficient guarantee, not a necessary condition for an actual maximum.",
+        "The value is negative, and its sign does not determine global maximality."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It is the only critical input, and f increases before 1 and decreases afterward on its connected domain."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-7-008",
+      "independentReasoning": "Check stationarity independently of the parameter, then evaluate curvature. For b<0, the quadratic term dominates sufficiently near zero and makes neighboring values negative, independently confirming the local maximum of height zero.",
+      "optionReview": [
+        "This yields positive curvature and a local minimum.",
+        "The second derivative is zero, making this test inconclusive.",
+        "The input is stationary for every b and f″(0)=2b is negative exactly then.",
+        "The second derivative sign changes with b."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "b<0"
+      }
+    },
+    {
+      "questionId": "calc-ab-5-7-009",
+      "independentReasoning": "Read both derivative columns at each actual table row. A positive or negative curvature is used only after confirming the stationary condition. The unspecified behavior at 3 must remain inconclusive rather than being inferred from its row order.",
+      "optionReview": [
+        "The second derivative at 3 is zero, so the test is inconclusive there.",
+        "This reverses the curvature classifications.",
+        "The zero second derivative at 3 does not establish a maximum.",
+        "Both are stationary, with negative curvature at −1 and positive curvature at 1."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "−1 and 1."
+      },
+      "tableSha256": "10b0a7144c254787468737330634189b67c4167a4ee662ae8c45bf832c544c56"
+    },
+    {
+      "questionId": "calc-ab-5-7-010",
+      "independentReasoning": "For f(x)=x²−x⁴ at c=0, f′(0)=0 and f″(0)=2>0, giving a local minimum. Yet f(2)=−12<f(0)=0. This exact counterexample disproves the global overclaim while satisfying the stated local hypotheses.",
+      "optionReview": [
+        "The Second Derivative Test controls nearby behavior only.",
+        "Faraway values may be smaller.",
+        "The positive curvature gives the opposite local type.",
+        "A nonzero second derivative at a stationary input is conclusive."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "A local minimum at c, but not necessarily an absolute minimum."
+      }
+    },
+    {
+      "questionId": "calc-ab-5-7-011",
+      "independentReasoning": "Apply the domain restriction before classifying roots. Original-expression differences near the positive input corroborate zero first derivative and positive curvature. The identity f(x)−2=(x−1)²/x≥0 additionally confirms an absolute minimum, though only the local test is requested.",
+      "optionReview": [
+        "This algebraic root of f′ is outside the original positive domain.",
+        "The first derivative vanishes and second derivative is 2>0 there.",
+        "The function and its derivatives are undefined there.",
+        "The first derivative is 3/4, so it is not stationary."
+      ],
+      "check": {
+        "type": "second-derivative-test",
+        "kind": "minimum",
+        "domain": "(0,∞)",
+        "expression": [
+          "add",
+          "x",
+          [
+            "div",
+            1,
+            "x"
+          ]
+        ]
+      }
+    }
+  ]
+}

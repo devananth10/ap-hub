@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 495,
+  "questionsChecked": 517,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -1406,6 +1406,36 @@
       "questionId": "calc-ab-5-6-010",
       "method": "factor-sign-intervals",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-7-002",
+      "method": "second-derivative-test",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-7-006",
+      "method": "second-derivative-test",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-7-011",
+      "method": "second-derivative-test",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-8-001",
+      "method": "figure-slope",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-8-002",
+      "method": "figure-sign-transition",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-5-8-011",
+      "method": "figure-constant-change",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -1622,7 +1652,23 @@
     "calc-ab-5-6-006",
     "calc-ab-5-6-008",
     "calc-ab-5-6-009",
-    "calc-ab-5-6-011"
+    "calc-ab-5-6-011",
+    "calc-ab-5-7-001",
+    "calc-ab-5-7-003",
+    "calc-ab-5-7-004",
+    "calc-ab-5-7-005",
+    "calc-ab-5-7-007",
+    "calc-ab-5-7-008",
+    "calc-ab-5-7-009",
+    "calc-ab-5-7-010",
+    "calc-ab-5-8-003",
+    "calc-ab-5-8-004",
+    "calc-ab-5-8-005",
+    "calc-ab-5-8-006",
+    "calc-ab-5-8-007",
+    "calc-ab-5-8-008",
+    "calc-ab-5-8-009",
+    "calc-ab-5-8-010"
   ],
   "humanReviewPerformed": false,
   "limitations": [

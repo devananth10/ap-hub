@@ -124,7 +124,11 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='complete-extrema-table') {
+  if (review.check.type==='second-derivative-test') {
+    const c=review.check,domain=intervalOption(c.domain||'All real numbers'),h=0.001;assert.ok(['maximum','minimum'].includes(c.kind));
+    const matches=question.options.map(option=>{const x=numericalOption(option);if(!Number.isFinite(x)||!domain.some(i=>x>i.lo&&x<i.hi))return false;const f=a=>evaluateExpression(c.expression,a),first=(f(x+0.0001)-f(x-0.0001))/0.0002,second=(f(x+h)-2*f(x)+f(x-h))/(h*h);return Math.abs(first)<0.00001&&(c.kind==='maximum'?second< -0.0001:second>0.0001);});
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique second-derivative test');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' second-derivative key');
+  } else if (review.check.type==='complete-extrema-table') {
     const c=review.check,rows=completeCandidateRows(practiceTables[question.id]);assert.ok(['minimum','maximum'].includes(c.kind));
     const target=c.kind==='minimum'?Math.min(...rows.map(r=>r[1])):Math.max(...rows.map(r=>r[1])),inputs=rows.filter(r=>r[1]===target).map(r=>r[0]);
     const matches=question.options.map(option=>{const proposed=c.optionInputs[option];assert.ok(Array.isArray(proposed));return proposed.length===inputs.length&&proposed.every((x,i)=>x===inputs[i]);});
@@ -360,7 +364,16 @@ export function verifyCalculusQuestion(question, review) {
     assert.equal(createHash('sha256').update(JSON.stringify(figure)).digest('hex'),review.check.figureSha256,'Graph changed after review: '+question.id);
     const actual=question.options.map(option=>option.startsWith('Does not exist')?'DNE':numericalOption(option));
     let matches;
-    if(review.check.type==='figure-slope') {
+    if(review.check.type==='figure-constant-change') {
+      assert.equal(figure.curves.length,1);const points=figure.curves[0].points,value=points[0][1];
+      assert.ok(points.every(p=>p[1]===value));assert.ok(figure.xRange[0]<=review.check.start&&review.check.start<review.check.end&&review.check.end<=figure.xRange[1]);
+      matches=actual.map(answer=>Math.abs(answer-value*(review.check.end-review.check.start))<1e-10);
+    } else if(review.check.type==='figure-sign-transition') {
+      const zeros=[];
+      for(const curve of figure.curves)for(let i=1;i<curve.points.length;i++){const [x1,y1]=curve.points[i-1],[x2,y2]=curve.points[i];assert.ok(y1!==0||y2!==0,'No zero plateau in this crossing model');if(y1===0)zeros.push(x1);if(y2===0)zeros.push(x2);if(y1*y2<0)zeros.push(x1-y1*(x2-x1)/(y2-y1));}
+      const selected=[...new Set(zeros)].filter(x=>{const left=figureLimit(figure,x-0.00001),right=figureLimit(figure,x+0.00001);return typeof left==='number'&&typeof right==='number'&&(review.check.kind==='maximum'?left>0&&right<0:left<0&&right>0);});
+      assert.ok(['maximum','minimum'].includes(review.check.kind));matches=actual.map(x=>selected.includes(x));
+    } else if(review.check.type==='figure-slope') {
       const slopes=[];
       for(const curve of figure.curves)for(let i=1;i<curve.points.length;i++) {
         const [x1,y1]=curve.points[i-1],[x2,y2]=curve.points[i];

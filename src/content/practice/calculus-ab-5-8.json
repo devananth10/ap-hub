@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 5,
+  "topicId": "topic-5-8",
+  "questions": [
+    {
+      "id": "calc-ab-5-8-001",
+      "prompt": "The graph below is f. What value belongs on the graph of f′ at x=1?",
+      "options": [
+        "0",
+        "3",
+        "−2",
+        "2"
+      ],
+      "correctIndex": 0,
+      "explanation": "The point x=1 lies inside the flat segment from (0,3) to (2,3). Its rise is zero over a nonzero run, so f′(1)=0. A derivative graph records slopes of f rather than copying its heights. A: The original graph is horizontal near x=1, so its local slope is zero. B: This is the original function height, not the derivative. C: This is the slope of a different segment after x=2. D: This is the slope of the original graph before x=0."
+    },
+    {
+      "id": "calc-ab-5-8-002",
+      "prompt": "The graph below is f′ for a differentiable function. At which displayed interior input does f have a local maximum?",
+      "options": [
+        "−1",
+        "1",
+        "3",
+        "0"
+      ],
+      "correctIndex": 1,
+      "explanation": "To identify a maximum of f from f′, locate a positive-to-negative sign crossing. The graph crosses that way at x=1 only. The crossings at −1 and 3 have the opposite direction and correspond to minima of f. A: That crossing is negative to positive and gives a local minimum. B: The derivative crosses from positive to negative there. C: That crossing also gives a local minimum. D: The derivative has a positive peak there, so f is still increasing through it."
+    },
+    {
+      "id": "calc-ab-5-8-003",
+      "prompt": "Which description fits the graph of f′ when f(x)=(x−2)²+3?",
+      "options": [
+        "An upward parabola with vertex (2,3).",
+        "A line with slope 2 crossing the horizontal axis at x=−2.",
+        "A line with slope 2 crossing the horizontal axis at x=2.",
+        "A horizontal line at height 3."
+      ],
+      "correctIndex": 2,
+      "explanation": "Differentiating gives f′(x)=2(x−2)=2x−4. Its graph is a straight line of slope 2 with zero at 2 and vertical intercept −4. The original parabola’s vertex height 3 disappears under differentiation. A: This describes the original function, not its derivative. B: This uses the wrong sign for the horizontal shift. C: The derivative is 2x−4, independent of the vertical shift 3. D: The original vertical shift does not become a derivative height."
+    },
+    {
+      "id": "calc-ab-5-8-004",
+      "prompt": "On an interval, the graph of f′ is below the horizontal axis but rises as x increases. Which shape should a sketch of f show there?",
+      "options": [
+        "Increasing and concave up.",
+        "Decreasing and concave down.",
+        "Increasing and concave down.",
+        "Decreasing and concave up."
+      ],
+      "correctIndex": 3,
+      "explanation": "Use two separate features of the derivative graph. Its negative heights imply f′<0, so f decreases. Its rising trend means the slopes of f become less negative, so f is concave up. Function direction and bending are independent. A: The sign of f′ is negative, so f cannot be increasing there. B: A rising derivative graph indicates positive rather than negative curvature. C: Both sign-to-feature translations are reversed. D: Negative derivative means decreasing f, while increasing derivative means concave up."
+    },
+    {
+      "id": "calc-ab-5-8-005",
+      "prompt": "The graph below is f. How should a sketch of f′ behave at x=0?",
+      "options": [
+        "It should have no defined value there because the one-sided slopes of f differ.",
+        "It should have value 0 because the original graph reaches height 0.",
+        "It should have value −1 because the left segment comes first.",
+        "It should have value 1 because the right segment rises."
+      ],
+      "correctIndex": 0,
+      "explanation": "The continuous V has a corner at 0. Its left-hand difference quotient tends to −1 and its right-hand quotient to +1. Since the limits disagree, f′(0) is undefined. A derivative sketch must not connect the two branches by inventing a value at that input. A: The left slope is −1 and the right slope +1, so no two-sided derivative exists. B: A zero function height does not determine the slope at a corner. C: A two-sided derivative cannot be chosen from only the left slope. D: The right-hand slope alone does not give the two-sided derivative."
+    },
+    {
+      "id": "calc-ab-5-8-006",
+      "prompt": "If g(x)=f(x)+7 on an interval and f is differentiable, how does the graph of g′ compare with the graph of f′?",
+      "options": [
+        "It is shifted upward by 7.",
+        "They coincide.",
+        "It is shifted right by 7.",
+        "It is stretched vertically by a factor of 7."
+      ],
+      "correctIndex": 1,
+      "explanation": "Differentiate g=f+7 to obtain g′=f′. Therefore their derivative graphs coincide at every interval input. Although the original graphs have different heights, their corresponding tangent slopes are identical. A: The constant shift vanishes when differentiating. B: A constant vertical translation of a function changes no local slopes. C: The original transformation changes output, not input. D: Adding a constant does not multiply slopes."
+    },
+    {
+      "id": "calc-ab-5-8-007",
+      "prompt": "Let g(x)=f(−x) for a differentiable function on the real numbers. Which rule correctly transforms the derivative graph?",
+      "options": [
+        "g′(x)=f′(−x): reflect only across the vertical axis.",
+        "g′(x)=−f′(x): reflect only across the horizontal axis.",
+        "g′(x)=−f′(−x): reflect the graph of f′ across the vertical axis and then across the horizontal axis.",
+        "g′(x)=f′(x): leave it unchanged for every f."
+      ],
+      "correctIndex": 2,
+      "explanation": "The chain rule gives g′(x)=f′(−x)(−1). On a derivative graph, the argument −x reflects inputs across the vertical axis, and the leading minus reflects outputs across the horizontal axis. Both operations are required. A: This omits the derivative of the inner input −x. B: This omits the changed input to the original derivative. C: The input reflection is accompanied by the chain factor −1. D: An arbitrary derivative need not have the symmetry needed for that equality."
+    },
+    {
+      "id": "calc-ab-5-8-008",
+      "prompt": "The graph below is f′. Which description of f near x=0 is correct?",
+      "options": [
+        "f has a local maximum at 0.",
+        "f has a local minimum at 0.",
+        "f has a horizontal tangent at 0.",
+        "f is increasing through an inflection point at 0."
+      ],
+      "correctIndex": 3,
+      "explanation": "The derivative is positive throughout, so f increases through 0. To the left f′ increases, giving concave-up f; to the right f′ decreases, giving concave-down f. Thus f has an inflection point at 0 with a nonzero slope, not a local extremum. A: The derivative remains positive on both sides, so the original function does not turn there. B: No negative-to-positive derivative crossing occurs. C: The derivative value there is 3, not zero. D: The derivative stays positive but changes from increasing to decreasing at its peak."
+    },
+    {
+      "id": "calc-ab-5-8-009",
+      "prompt": "Which description matches the derivative graph for f(x)=x³−3x?",
+      "options": [
+        "An upward-opening parabola with zeros at −1 and 1 and vertex (0,−3).",
+        "A downward-opening parabola with zeros at −1 and 1.",
+        "An upward-opening parabola with vertex (0,0).",
+        "A straight line with slope 6."
+      ],
+      "correctIndex": 0,
+      "explanation": "Differentiate termwise: f′=3x²−3. The positive leading coefficient makes an upward parabola; solving 3x²−3=0 gives ±1, and its vertex height at x=0 is −3. All three features must agree in the derivative sketch. A: The derivative is 3x²−3. B: The quadratic coefficient in the derivative is positive. C: This omits the constant −3 in the derivative. D: That describes a second-derivative trend, not the first derivative."
+    },
+    {
+      "id": "calc-ab-5-8-010",
+      "prompt": "Two differentiable functions have identical derivative graphs on the same connected interval. What can be concluded about their original graphs?",
+      "options": [
+        "They must be exactly the same graph.",
+        "They differ by a constant vertical translation on that interval.",
+        "They must differ by a horizontal translation.",
+        "They can have unrelated shapes and different local slope patterns."
+      ],
+      "correctIndex": 1,
+      "explanation": "If f′=g′ throughout the interval, then (f−g)′=0 there. The Mean Value Theorem implies f−g is a constant on the connected interval. Their original graphs therefore have the same shape and can differ only in height. A: The shared derivative does not determine the additive constant. B: Their difference has derivative zero everywhere, so the Mean Value Theorem makes it constant. C: Equal slopes at matching inputs do not imply a horizontal shift. D: Identical derivatives impose identical matching-input slopes."
+    },
+    {
+      "id": "calc-ab-5-8-011",
+      "prompt": "The graph below is f′. What is f(2)−f(0)?",
+      "options": [
+        "−2",
+        "4",
+        "−4",
+        "0"
+      ],
+      "correctIndex": 2,
+      "explanation": "The displayed derivative is −2 everywhere between 0 and 2. Thus f is a line of slope −2 there up to an additive constant. Its change is f(2)−f(0)=(−2)(2−0)=−4. The absolute height is not needed. A: This is the slope, not the change over two input units. B: This loses the negative sign of the constant slope. C: The derivative is the constant −2 on [0,2], so the output change is slope times interval length. D: A constant derivative does not make the original function constant unless that derivative is zero."
+    }
+  ]
+}

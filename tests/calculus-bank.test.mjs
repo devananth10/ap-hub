@@ -306,3 +306,17 @@ test('a finite complete candidate table cannot omit the critical point between e
   assert.throws(()=>completeCandidateRows({rows:[['−1','0'],['1','−4'],['3','−4'],['5','2']]}),/Equal adjacent values/);
   assert.equal(completeCandidateRows({rows:[['−1','0'],['1','−4'],['2','−1'],['3','−4'],['5','2']]}).length,5);
 });
+test('the second-derivative model requires stationarity as well as a curvature sign',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-5-7');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-5-7.json','utf8'));
+  verifyCalculusQuestion(batch.questions[1],qa.questions[1]);
+  const notStationary=structuredClone(qa.questions[1]);notStationary.check.expression=['add',['pow','x',2],'x'];
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[1],notStationary),/unique second-derivative test/);
+});
+test('graph transition and constant-rate checks read actual plotted values',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-5-8');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-5-8.json','utf8'));
+  verifyCalculusQuestion(batch.questions[1],qa.questions[1]);verifyCalculusQuestion(batch.questions[10],qa.questions[10]);
+  const wrong=structuredClone(batch.questions[1]);wrong.correctIndex=wrong.options.indexOf('−1');
+  assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[1]),/graph key mismatch/);
+});
