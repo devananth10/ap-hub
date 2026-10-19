@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 7,
+  "topicId": "topic-7-7",
+  "questions": [
+    {
+      "id": "calc-ab-7-7-001",
+      "prompt": "Solve y′=2xy with y(0)=3. Which particular solution results from separation?",
+      "options": [
+        "y=3e^(2x²)",
+        "y=e^(x²)+2",
+        "y=3eˣ",
+        "y=3e^(x²)"
+      ],
+      "correctIndex": 3,
+      "explanation": "For y≠0, dy/y=2x dx gives ln|y|=x²+K and y=Ce^(x²). Applying y(0)=3 yields C=3. The resulting function stays positive and is defined on the entire real line, so the separation and chosen sign are consistent with the initial value. A: Its derivative has twice the required rate. B: The additive shift makes the original equation fail away from x=0. C: Its rate is y rather than 2xy. D: The integrated exponent is x² and the initial condition fixes the multiplier at 3."
+    },
+    {
+      "id": "calc-ab-7-7-002",
+      "prompt": "Solving y′=y² with y(1)=−1 gives y=−1/x. What is the maximal open interval containing the initial input on which this particular solution is defined?",
+      "options": [
+        "(0,∞)",
+        "(−∞,∞)",
+        "(−∞,0)",
+        "(0,1)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Separate y^(−2)dy=dx to get −1/y=x+C. The condition y(1)=−1 gives C=0, so y=−1/x. The formula is finite for x>0 and fails at zero; therefore the largest open connected interval containing 1 is (0,∞). A: The pole at 0 separates the positive-input branch containing x=1. B: The formula is undefined at zero and cannot pass through that pole. C: This interval excludes the initial input x=1. D: This does not contain the initial input as an interior point and can be extended past 1."
+    },
+    {
+      "id": "calc-ab-7-7-003",
+      "prompt": "Solve y′=x/y with y(0)=−2. Which solution satisfies the initial condition?",
+      "options": [
+        "y=√(x²+4)",
+        "y=−√(x²+4)",
+        "y=−√(2x²+4)",
+        "y=−2+x²/2"
+      ],
+      "correctIndex": 1,
+      "explanation": "Separation gives y dy=x dx, so y²=x²+C. The initial value yields C=4 and requires the negative root: y=−√(x²+4). This branch never vanishes, making the original division by y valid for every real x. A: It solves the equation but has initial value +2. B: The initial condition selects the negative branch of y²=x²+4. C: It has the right initial value but derivative 2x/y. D: Its derivative x generally differs from x/y."
+    },
+    {
+      "id": "calc-ab-7-7-004",
+      "prompt": "On x>0, solve y′=y/x with y(2)=−3.",
+      "options": [
+        "y=−6/x",
+        "y=−3x",
+        "y=−3x/2",
+        "y=x−5"
+      ],
+      "correctIndex": 2,
+      "explanation": "Integrate dy/y=dx/x on a nonzero solution to obtain y=Cx for x>0. Substitution of the initial point gives −3=2C, hence C=−3/2. The negative coefficient is permitted and must be retained; separation does not require positive y. A: Its derivative has the opposite sign from y/x. B: It gives initial value −6 instead of −3. C: The family is Cx and the initial condition gives C=−3/2. D: Its derivative is 1, while y/x=1−5/x."
+    },
+    {
+      "id": "calc-ab-7-7-005",
+      "prompt": "A student divides by y−4 while solving y′=2(y−4), but the initial condition is y(0)=4. What is the particular solution?",
+      "options": [
+        "y=4+e^(2x)",
+        "y=4e^(2x)",
+        "No solution exists because division by y−4 failed",
+        "y=4"
+      ],
+      "correctIndex": 3,
+      "explanation": "Before dividing by a state expression, check when it is zero. The constant function y=4 has derivative zero and right side 2(4−4)=0, and it meets the initial condition. Equivalently the full shifted family y=4+Ce^(2x) has C=0 here. A: Its value at zero is 5, not 4. B: It has the required initial value but satisfies y′=2y rather than 2(y−4). C: An invalid intermediate division does not invalidate a solution of the original equation. D: The initial value lies on the constant solution excluded by that division."
+    },
+    {
+      "id": "calc-ab-7-7-006",
+      "prompt": "Solve y′=eˣ/y with y(0)=−2. Which expression gives the particular solution?",
+      "options": [
+        "y=−√(2eˣ+2)",
+        "y=√(2eˣ+2)",
+        "y=−√(eˣ+3)",
+        "y=−2eˣ"
+      ],
+      "correctIndex": 0,
+      "explanation": "Separate y dy=eˣ dx to get y²/2=eˣ+K. The initial point gives 4=2+C in y²=2eˣ+C, so C=2. Choose y=−√(2eˣ+2) because the initial height is negative. Its radicand stays positive for all real x. A: The integrated equation is y²=2eˣ+C and the datum gives C=2 with a negative branch. B: It has the wrong sign at the initial point. C: Its derivative is only eˣ/(2y). D: It has the initial height but its derivative does not equal eˣ/y."
+    },
+    {
+      "id": "calc-ab-7-7-007",
+      "prompt": "The general solution of y′=−2y is y=Ce^(−2x). If y(2)=3, which particular solution follows?",
+      "options": [
+        "y=3e^(−2x)",
+        "y=3e^(4−2x)",
+        "y=3e^(2x−4)",
+        "y=3e^(2−2x)"
+      ],
+      "correctIndex": 1,
+      "explanation": "Apply the datum at its actual input: 3=Ce^(−4), so C=3e⁴. Thus y=3e^(4−2x), equivalently 3e^(−2(x−2)). An initial condition at x=2 does not make the coefficient 3 in an exponential based at zero. A: Its value at 2 is 3e^(−4), not 3. B: It rewrites C=3e⁴ while keeping the required decay rate. C: Its initial value fits but its derivative has the wrong sign. D: Its value at 2 is 3e^(−2), not 3."
+    },
+    {
+      "id": "calc-ab-7-7-008",
+      "prompt": "Separation gives y=tan(x+π/4) for y′=1+y² with y(0)=1. What is its maximal open interval containing 0?",
+      "options": [
+        "(−π/2, π/2)",
+        "(−π/4, 3π/4)",
+        "(−3π/4, π/4)",
+        "(−∞,∞)"
+      ],
+      "correctIndex": 2,
+      "explanation": "Integrating dy/(1+y²)=dx gives arctan y=x+C. The condition at zero selects C=π/4 modulo tangent’s period. Poles satisfy x+π/4=π/2+kπ; the nearest pair bracketing zero is −3π/4 and π/4. The solution cannot be continued through either infinite limit as a finite real function. A: These poles belong to tan x, not the shifted expression. B: This interval crosses the actual pole at x=π/4. C: These are the nearest tangent poles on either side of the initial input. D: Tangent is not finite at every real input."
+    },
+    {
+      "id": "calc-ab-7-7-009",
+      "prompt": "For y>0, solve y′=x√y with y(0)=9.",
+      "options": [
+        "y=(3+x²/2)²",
+        "y=9+x²/2",
+        "y=(3−x²/4)²",
+        "y=(3+x²/4)²"
+      ],
+      "correctIndex": 3,
+      "explanation": "Divide by √y>0 and integrate: 2√y=x²/2+C. The initial condition gives C=6, so √y=3+x²/4. This quantity is positive for all real x, making y=(3+x²/4)² a globally valid positive solution with the intended square-root sign. A: Its derivative has twice the required factor. B: This treats √y as though it were constantly 1. C: Near zero its derivative has the wrong sign relative to x√y. D: Separation gives 2√y=x²/2+6 and hence √y=3+x²/4."
+    },
+    {
+      "id": "calc-ab-7-7-010",
+      "prompt": "A function satisfies y′=sin(x²) and y(2)=5. Which integral expression gives this particular solution without requiring an elementary antiderivative?",
+      "options": [
+        "y=5+∫ from 2 to x of sin(t²) dt",
+        "y=5−∫ from 2 to x of sin(t²) dt",
+        "y=5+∫ from 0 to x of sin(t²) dt",
+        "y=5+∫ from 2 to x of sin(x²) dt"
+      ],
+      "correctIndex": 0,
+      "explanation": "For y′=f(x) with y(a)=b, FTC gives y=b+∫ from a to x of f(t)dt. Here f(t)=sin(t²), a=2 and b=5. The lower bound enforces the initial condition, while the dummy variable t keeps the integrand independent of the moving upper input until differentiation. A: FTC gives the stated derivative and the integral is zero at the initial input. B: Its derivative has the opposite sign. C: This does not in general give height 5 at x=2; its integral there is not zero. D: Using x inside an integral with variable t creates (x−2)sin(x²), whose derivative has an extra term."
+    },
+    {
+      "id": "calc-ab-7-7-011",
+      "prompt": "Consider y′=(x+1)/(y−2) with the proposed initial condition y(0)=2. Which statement is correct for a classical differentiable solution satisfying the equation at the initial point?",
+      "options": [
+        "The constant function y=2 is a solution because its derivative is zero",
+        "No such solution exists because the right side is undefined at (0,2).",
+        "A solution exists after canceling y−2 from both sides",
+        "Any sign of a square root obtained after integration is valid at the initial point"
+      ],
+      "correctIndex": 1,
+      "explanation": "At x=0 and y=2, the numerator is 1 and the denominator is 0. Therefore the original equation cannot hold with a finite derivative at the initial point. Although separation away from y=2 can produce implicit curves, none is a classical solution of this initial-value problem as stated. A: The original equation is undefined at that height, not zero. B: The initial point is outside the domain of the differential equation. C: There is no matching factor in the numerator to cancel, and division by zero remains invalid. D: An implicit integrated relation cannot repair the undefined original right side."
+    }
+  ]
+}

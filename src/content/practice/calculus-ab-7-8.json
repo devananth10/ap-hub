@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 7,
+  "topicId": "topic-7-8",
+  "questions": [
+    {
+      "id": "calc-ab-7-8-001",
+      "prompt": "A culture has 250 cells at t=0 and follows P′=0.08P, with t measured in hours. To the nearest whole cell, what does the model predict at t=5?",
+      "options": [
+        "373",
+        "350",
+        "270",
+        "168"
+      ],
+      "correctIndex": 0,
+      "explanation": "Separation gives P(t)=250e^(0.08t). At five hours, P(5)=250e^0.4≈372.956, which rounds to 373 cells. The rate 0.08 has units per hour; it is not a constant increase of 0.08 cells per hour or a five-hour linear increment. A: The continuous model gives 250e^0.4≈372.956. B: This uses constant growth 20 cells per hour rather than growth proportional to the changing population. C: This adds only one initial hourly rate instead of evolving for five hours. D: This uses decay with the wrong exponent sign."
+    },
+    {
+      "id": "calc-ab-7-8-002",
+      "prompt": "A radioactive sample follows M′=kM and decreases from 80 grams to 20 grams in 12 days. What is its half-life in days?",
+      "options": [
+        "3",
+        "6",
+        "12",
+        "24"
+      ],
+      "correctIndex": 1,
+      "explanation": "The exponential model gives 20/80=e^(12k)=1/4, so k=−ln 4/12. A half-life h satisfies e^(kh)=1/2, hence h=ln(1/2)/k=6 days. The multiplicative reduction, not a linear loss of grams, determines the time scale. A: This divides the elapsed time by four instead of counting two halvings. B: A factor of 1/4 represents two equal half-life intervals. C: After 12 days the sample has halved twice, not once. D: A longer half-life would not account for the observed two halvings in 12 days."
+    },
+    {
+      "id": "calc-ab-7-8-003",
+      "prompt": "A quantity grows according to Q′=kQ. It is 40 at t=1 and 100 at t=4. Which expression equals k?",
+      "options": [
+        "ln(5/2)/4",
+        "20",
+        "ln(5/2)/3",
+        "ln(3)/3"
+      ],
+      "correctIndex": 2,
+      "explanation": "Divide the values of Q(t)=Ce^(kt) to eliminate C: 100/40=e^(k(4−1)). Taking logarithms gives k=ln(5/2)/3. The denominator is the difference in the input times, and k has units inverse to the time variable. A: This uses the second time rather than the elapsed time. B: This is the average absolute rate (100−40)/(4−1), not the proportional constant. C: The ratio of the two observations is 5/2 over an elapsed time of 3. D: The ratio is 100/40, not 3."
+    },
+    {
+      "id": "calc-ab-7-8-004",
+      "prompt": "A drug amount A in milligrams satisfies A′=−0.2A, with t in hours. At an instant when A=15, what is A′ in milligrams per hour?",
+      "options": [
+        "3",
+        "−0.2",
+        "−75",
+        "−3"
+      ],
+      "correctIndex": 3,
+      "explanation": "The differential equation directly gives the instantaneous rate from the current amount: A′=−0.2·15=−3 mg/hour. Negative rate means the amount is decreasing. Solving for a time or initial amount is unnecessary because the state value is already given. A: The rate is negative because the amount is decaying. B: This is the proportional constant, not the current absolute rate. C: This divides by the proportional constant instead of multiplying. D: Multiplying the current amount by −0.2 gives −3."
+    },
+    {
+      "id": "calc-ab-7-8-005",
+      "prompt": "An exponentially growing population has P(0)=600 and doubles every 4 years. At what time does it first reach 1800?",
+      "options": [
+        "4 ln 3 / ln 2 years",
+        "12 years",
+        "8 years",
+        "4 ln 2 / ln 3 years"
+      ],
+      "correctIndex": 0,
+      "explanation": "The doubling datum implies k=ln 2/4, so P(t)=600e^((ln 2)t/4). Set P=1800 and divide by 600 to obtain e^((ln 2)t/4)=3. Taking logarithms gives t=4 ln 3/ln 2, between 4 and 8 years as expected. A: Tripling requires e^(kt)=3 with k=ln 2/4. B: Three doubling intervals multiply by 8, not by 3. C: Two doubling intervals multiply by 4, not by 3. D: This inverts the logarithmic factor in the tripling time."
+    },
+    {
+      "id": "calc-ab-7-8-006",
+      "prompt": "Two positive quantities satisfy U′=0.03U and V′=0.03V, with U(0)=2V(0). Which relationship holds at every time for which the model is used?",
+      "options": [
+        "U(t)−V(t) stays equal to its initial value",
+        "U(t)=2V(t)",
+        "U′(t)=V′(t)",
+        "The ratio U(t)/V(t) grows at rate 0.03"
+      ],
+      "correctIndex": 1,
+      "explanation": "The solutions are U(t)=U(0)e^(0.03t) and V(t)=V(0)e^(0.03t). Dividing cancels the common factor, leaving the constant ratio U(0)/V(0)=2. Equal proportional rates do not imply equal absolute rates when the amounts differ. A: The difference also grows exponentially rather than remaining constant. B: Both amounts acquire the same exponential factor, preserving their initial ratio. C: Their rates remain in the same 2:1 ratio as their values. D: The common exponential factors cancel from the ratio."
+    },
+    {
+      "id": "calc-ab-7-8-007",
+      "prompt": "A continuously decaying quantity is 50 at t=0 and 40 at t=3. What does the same model predict at t=6?",
+      "options": [
+        "30",
+        "24",
+        "32",
+        "20"
+      ],
+      "correctIndex": 2,
+      "explanation": "Constant proportional decay means equal time intervals have equal multiplicative factors. The first three-unit interval multiplies the amount by 0.8. The second multiplies 40 by 0.8, giving 32. Equivalently 50e^(6k)=50(0.8)². A: This subtracts the first interval’s absolute loss again, using a linear model. B: This applies an unsupported reduction factor. C: Two equal time intervals apply the factor 40/50=0.8 twice. D: This assumes a halving in each interval despite the observed factor 0.8."
+    },
+    {
+      "id": "calc-ab-7-8-008",
+      "prompt": "A model satisfies N′=kN, where N is positive. Measurements give N(2)=90 and N′(2)=−9. Which statement is correct?",
+      "options": [
+        "k=−9, so N loses exactly 9 units at every time",
+        "k=10, so N is growing",
+        "k=0.1, so N grows by a constant proportional rate",
+        "k=−0.1, so N decreases by a constant proportional rate"
+      ],
+      "correctIndex": 3,
+      "explanation": "Use the differential equation at the measured instant: −9=k·90, hence k=−0.1. Since N>0, this negative coefficient gives exponential decay. The absolute rate becomes less negative as the quantity shrinks; it is not constantly −9. A: The derivative at one time is not the proportional constant. B: This inverts the quotient and discards the negative sign. C: The observed negative derivative requires a negative coefficient. D: Divide the instantaneous derivative by the simultaneous amount."
+    },
+    {
+      "id": "calc-ab-7-8-009",
+      "prompt": "A hot object has temperature T(t) and follows T′=−0.1(T−20), with T(0)=80. What temperature does the model approach as t tends to infinity?",
+      "options": [
+        "20",
+        "0",
+        "80",
+        "−20"
+      ],
+      "correctIndex": 0,
+      "explanation": "Set E=T−20. Then E′=−0.1E and E(0)=60, so T=20+60e^(−0.1t). As t increases, the exponential tends to zero and T approaches 20. This is an exponential model of the temperature difference from a fixed environment. A: The temperature excess above 20 decays exponentially to zero. B: It is the excess T−20, not T itself, that follows pure decay to zero. C: The initial value is not an equilibrium because its derivative is −6. D: This reverses the ambient-temperature shift."
+    },
+    {
+      "id": "calc-ab-7-8-010",
+      "prompt": "A positive model quantity Y satisfies Y′=kY and Y(0)=10. Which observation is incompatible with every real constant k?",
+      "options": [
+        "Y(3)=5",
+        "Y(3)=0",
+        "Y(3)=10",
+        "Y(3)=20"
+      ],
+      "correctIndex": 1,
+      "explanation": "The solution is Y(t)=10e^(kt). For every finite t and real k, the exponential is strictly positive. Thus it may decay toward zero but cannot reach zero at t=3. The other values are positive and each calibrates a finite real coefficient. A: This is possible with k=ln(1/2)/3. B: A positive initial amount times a finite real exponential cannot equal zero at a finite time. C: This is possible with k=0. D: This is possible with k=ln 2/3."
+    },
+    {
+      "id": "calc-ab-7-8-011",
+      "prompt": "A quantity Q follows Q′=0.4Q, with t in minutes. How many minutes are needed for the model to increase from 5 to 7?",
+      "options": [
+        "(7−5)/0.4",
+        "0.4 ln(7/5)",
+        "ln(7/5)/0.4",
+        "ln(5/7)/0.4"
+      ],
+      "correctIndex": 2,
+      "explanation": "Use the exponential model based at the instant Q=5: Q=5e^(0.4Δt). Setting Q=7 gives Δt=ln(7/5)/0.4≈0.841 minutes. The starting clock reading is irrelevant to elapsed time because the proportional coefficient is constant. A: This treats the proportional rate as a constant absolute rate. B: Solving 0.4Δt=ln(7/5) requires division by 0.4. C: The elapsed-time relation is 7/5=e^(0.4Δt). D: This reverses the ratio and yields negative elapsed time for growth."
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 7,
+  "topicId": "topic-7-6",
+  "questions": [
+    {
+      "id": "calc-ab-7-6-001",
+      "prompt": "Which complete family of real solutions of y′=4xy is obtained by separation of variables? Let C be any real constant.",
+      "options": [
+        "y=Ce^(4x²)",
+        "y=Ce^(2x)",
+        "y=Ce^(2x²)",
+        "y=2x²+C"
+      ],
+      "correctIndex": 2,
+      "explanation": "For y≠0, write dy/y=4x dx and integrate: ln|y|=2x²+K. Exponentiation gives y=Ce^(2x²), with either sign absorbed into C. Direct substitution also permits C=0, retaining the equilibrium lost during division. These solutions are defined for every real x. A: Its derivative is 8xy, twice the required rate. B: Its derivative is 2y, with the needed x factor missing. C: Differentiating gives 4x times the function, and C=0 retains the zero solution. D: This treats the dependent-variable factor as absent from the equation."
+    },
+    {
+      "id": "calc-ab-7-6-002",
+      "prompt": "On an interval where y≠0, separating y′=3x²/y gives which implicit general relation?",
+      "options": [
+        "y²=x³+C",
+        "y= x³+C",
+        "ln|y|=x³+C",
+        "y²=2x³+C"
+      ],
+      "correctIndex": 3,
+      "explanation": "Multiply by y to get y dy=3x² dx, then integrate both sides. The result y²/2=x³+K is equivalent to y²=2x³+C. A real differentiable branch must stay where 2x³+C>0 and select a fixed sign; points with y=0 are outside the original equation. A: This omits the factor 2 when clearing the integrated coefficient. B: This ignores the dependent-variable factor during separation. C: The left integral is ∫y dy, not ∫dy/y. D: Integrating y dy=3x² dx gives y²/2=x³+K."
+    },
+    {
+      "id": "calc-ab-7-6-003",
+      "prompt": "For y′=(1+y²)cos x, which family is produced by separation on intervals where its formula is finite?",
+      "options": [
+        "y=tan(sin x+C)",
+        "y=tan(cos x+C)",
+        "y=tan(2sin x+C)",
+        "y=sin x+C"
+      ],
+      "correctIndex": 0,
+      "explanation": "Separate to obtain dy/(1+y²)=cos x dx. Antidifferentiation gives arctan y=sin x+K, hence y=tan(sin x+C) on a branch avoiding tangent’s poles. Any fixed tangent-period shift can be absorbed into the arbitrary constant. The formula is not asserted to be finite on every real input. A: Integrating dy/(1+y²)=cos x dx gives arctan y=sin x+K. B: Its derivative introduces −sin x instead of cos x. C: Its derivative contains an extra factor 2. D: Its derivative lacks the factor 1+y²."
+    },
+    {
+      "id": "calc-ab-7-6-004",
+      "prompt": "On x>0, what is the complete family obtained from y′=2y/x?",
+      "options": [
+        "y=Cx for all real C",
+        "y=Cx² for all real C",
+        "y=C/x² for all real C",
+        "y=x²+C for all real C"
+      ],
+      "correctIndex": 1,
+      "explanation": "For nonzero y, integrate dy/y=2 dx/x to get ln|y|=2ln x+K on x>0. Thus y=Cx². Allowing positive and negative C accounts for both signs, and checking the original equation restores C=0. The domain restriction excludes the denominator’s zero. A: Its derivative has only half the required rate for nonzero C. B: Separation gives the square power, and C=0 includes the constant zero solution. C: Its derivative has the opposite sign from 2y/x. D: An additive constant does not in general satisfy this dependent-variable equation."
+    },
+    {
+      "id": "calc-ab-7-6-005",
+      "prompt": "A student separates y′=y² by dividing by y² and obtains y=−1/(x+C). What must be added to describe all solution types?",
+      "options": [
+        "No additional solution; division by y² is valid for every y",
+        "Every constant function, because all constant derivatives are zero",
+        "The constant solution y=0, checked in the original equation",
+        "The family y=1/(x+C), which has the same derivative"
+      ],
+      "correctIndex": 2,
+      "explanation": "For nonzero y, ∫y^(−2)dy=∫dx gives −1/y=x+C and thus y=−1/(x+C) on intervals avoiding its pole. The original equation additionally has y=0, since both sides vanish. Dividing before checking constant solutions can lose this valid solution. A: The division is not defined when y=0. B: The equation also requires the constant’s square to be zero. C: Division by y² excluded a valid zero solution. D: The positive reciprocal has derivative −y², not y²."
+    },
+    {
+      "id": "calc-ab-7-6-006",
+      "prompt": "Separating y′=x e^(−y) gives which family on intervals where the displayed logarithm is defined?",
+      "options": [
+        "y=ln(x²+C)",
+        "y=e^(x²/2)+C",
+        "y=x²/2+C",
+        "y=ln(x²/2+C)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Write eʸ dy=x dx and integrate: eʸ=x²/2+C. Taking the real logarithm gives y=ln(x²/2+C), valid only where x²/2+C>0. Differentiating gives x/(x²/2+C)=x e^(−y), verifying the separated family. A: Its derivative has an extra factor 2 relative to the stated equation. B: This does not satisfy the original exponential dependence on y. C: Its derivative omits the factor e^(−y). D: Multiplying by eʸ and integrating gives eʸ=x²/2+C."
+    },
+    {
+      "id": "calc-ab-7-6-007",
+      "prompt": "For x>−2, which family solves y′=(y+1)/(x+2), including the constant solution?",
+      "options": [
+        "y=C(x+2)−1 for all real C",
+        "y=C/(x+2)−1 for all real C",
+        "y=C(x+2)+1 for all real C",
+        "y=C ln(x+2)−1 for all real C"
+      ],
+      "correctIndex": 0,
+      "explanation": "For y≠−1, separation gives dy/(y+1)=dx/(x+2). Thus ln|y+1|=ln(x+2)+K and y+1=C(x+2). The original equation also allows y=−1, included by C=0 in y=C(x+2)−1. The stated x-domain keeps the denominator positive. A: The shifted variable y+1 is proportional to x+2 and C=0 gives y=−1. B: Differentiation gives the negative of the required rate. C: The shift has the wrong sign in y+1. D: Its derivative does not equal its shifted value divided by x+2."
+    },
+    {
+      "id": "calc-ab-7-6-008",
+      "prompt": "Which proposed step incorrectly claims a separation of variables for y′=x+y²?",
+      "options": [
+        "Recognizing that x+y² is not already a product of an x-only factor and a y-only factor",
+        "Writing dy/y²=x dx, because this drops the extra additive y² term",
+        "Checking whether a proposed solution satisfies the original equation",
+        "Keeping dy/dx=x+y² while deciding whether separation applies"
+      ],
+      "correctIndex": 1,
+      "explanation": "The proposed separated equation dy/y²=x dx would imply y′=xy², a different differential equation. The sum x+y² cannot be turned into that product by discarding a term. This question diagnoses an invalid manipulation; it does not require solving this nonseparable equation by any advanced method. A: This correctly identifies the obstacle to direct separation. B: Dividing the original right side by y² gives x/y²+1, not x. C: Direct substitution is always a valid verification step where defined. D: Retaining the original equation introduces no algebraic error."
+    },
+    {
+      "id": "calc-ab-7-6-009",
+      "prompt": "For y′=2x/(1+y²), which implicit relation results from separation?",
+      "options": [
+        "arctan y=x²+C",
+        "y+y³=x²+C",
+        "y+y³/3=x²+C",
+        "y+y³/3=2x²+C"
+      ],
+      "correctIndex": 2,
+      "explanation": "Multiply by 1+y² to obtain (1+y²)dy=2x dx. Integrating gives y+y³/3=x²+C. Differentiate this relation to check (1+y²)y′=2x, exactly the original equation. Since 1+y²>0 for real y, this separation loses no real constant state through division. A: This integrates the reciprocal instead of the factor moved to the left. B: The cubic term is missing its antiderivative coefficient 1/3. C: The separated left integral is ∫(1+y²)dy. D: The right integral of 2x is x², not 2x²."
+    },
+    {
+      "id": "calc-ab-7-6-010",
+      "prompt": "While solving y′=(x+1)y for y≠0, a student writes ln|y|=(x+1)²+C. Which correction is needed?",
+      "options": [
+        "Remove the absolute value and allow only positive solutions",
+        "Use ln|y|=x²+x+C",
+        "No correction is needed because every square differentiates to its base",
+        "Use ln|y|=x²/2+x+C, then restore y=0 separately"
+      ],
+      "correctIndex": 3,
+      "explanation": "Separation gives dy/y=(x+1)dx, so ln|y|=x²/2+x+C. Exponentiating yields a signed multiplicative-constant family, and direct substitution adds the zero solution. The proposed square has an extra factor 2 in its derivative that no additive constant can remove. A: Negative solutions are valid and would be lost by that restriction. B: Differentiating this gives 2x+1 rather than x+1. C: Differentiating (x+1)² gives 2(x+1), not x+1. D: The antiderivative of x+1 is x²/2+x."
+    },
+    {
+      "id": "calc-ab-7-6-011",
+      "prompt": "On an interval where y>0, which implicit relation follows from separating y′=cos x·√y?",
+      "options": [
+        "2√y=sin x+C",
+        "√y=sin x+C",
+        "2√y=−cos x+C",
+        "ln y=sin x+C"
+      ],
+      "correctIndex": 0,
+      "explanation": "Because y>0, divide by √y to get y^(−1/2)dy=cos x dx. Integrating yields 2√y=sin x+C. The right side must be positive on the chosen interval; squaring without that sign condition would introduce branches not represented by this relation. A: The integral of y^(−1/2) with respect to y is 2√y. B: This omits the factor 2 in the left antiderivative. C: The derivative of −cos x is sin x, not cos x. D: This would require a factor y rather than √y in the original equation."
+    }
+  ]
+}

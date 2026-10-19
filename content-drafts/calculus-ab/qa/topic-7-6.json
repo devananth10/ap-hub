@@ -1,0 +1,522 @@
+{
+  "topicNumber": "7.6",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "5886b050068cb9ea35f9da749b7d9821af01a37122f2bfaf7efd8f99ec1306cf",
+  "scopeReview": "CED FUN-7.D.1–2: general solutions via separation and previously learned antiderivatives. Retain constant solutions lost to division and real/domain/branch restrictions. An invalid-separation question does not ask for a nonseparable equation’s solution. No BC techniques.",
+  "varietyReview": "Multiplicative exponential, implicit power, inverse tangent/trig family, power-law scaling, lost zero solution, exponential-in-state logarithm, shifted affine family, algebraic nonseparability error, implicit cubic, antiderivative error diagnosis and positive square-root branch. Five sampled family corroborations vary both constant and input alongside exact derivations.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-7-6-001",
+      "independentReasoning": "Independently differentiate Ce^(2x²), obtaining C e^(2x²)·4x. Check negative, zero and positive constants as well as varied x. The exact separation argument establishes the family and restores y=0; sampled derivatives merely corroborate the identity.",
+      "optionReview": [
+        "Its derivative is 8xy, twice the required rate.",
+        "Its derivative is 2y, with the needed x factor missing.",
+        "Differentiating gives 4x times the function, and C=0 retains the zero solution.",
+        "This treats the dependent-variable factor as absent from the equation."
+      ],
+      "check": {
+        "type": "separable-family",
+        "rhs": [
+          "mul",
+          4,
+          "x",
+          "y"
+        ],
+        "families": {
+          "y=Ce^(2x²)": [
+            "mul",
+            "C",
+            [
+              "exp",
+              [
+                "mul",
+                2,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ]
+            ]
+          ],
+          "y=Ce^(4x²)": [
+            "mul",
+            "C",
+            [
+              "exp",
+              [
+                "mul",
+                4,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ]
+            ]
+          ],
+          "y=Ce^(2x)": [
+            "mul",
+            "C",
+            [
+              "exp",
+              [
+                "mul",
+                2,
+                "x"
+              ]
+            ]
+          ],
+          "y=2x²+C": [
+            "add",
+            [
+              "mul",
+              2,
+              [
+                "pow",
+                "x",
+                2
+              ]
+            ],
+            "C"
+          ]
+        },
+        "samplePoints": [
+          -0.6,
+          0.2,
+          0.8
+        ],
+        "constantSamples": [
+          -2,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-7-6-002",
+      "independentReasoning": "Differentiate the implicit relation directly: 2y y′=6x², so y′=3x²/y when y≠0. Each other relation yields a wrong coefficient or functional form after differentiation. There is no missing zero constant solution because the original right side is undefined at y=0.",
+      "optionReview": [
+        "This omits the factor 2 when clearing the integrated coefficient.",
+        "This ignores the dependent-variable factor during separation.",
+        "The left integral is ∫y dy, not ∫dy/y.",
+        "Integrating y dy=3x² dx gives y²/2=x³+K."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "y²=2x³+C"
+      }
+    },
+    {
+      "questionId": "calc-ab-7-6-003",
+      "independentReasoning": "The derivative of tan(sin x+C) is sec²(sin x+C)cos x=(1+y²)cos x. This exact chain-rule identity checks the separation. Varied constants and inputs away from poles distinguish the sign, scale and missing nonlinear factor in the alternatives.",
+      "optionReview": [
+        "Integrating dy/(1+y²)=cos x dx gives arctan y=sin x+K.",
+        "Its derivative introduces −sin x instead of cos x.",
+        "Its derivative contains an extra factor 2.",
+        "Its derivative lacks the factor 1+y²."
+      ],
+      "check": {
+        "type": "separable-family",
+        "rhs": [
+          "mul",
+          [
+            "add",
+            1,
+            [
+              "pow",
+              "y",
+              2
+            ]
+          ],
+          [
+            "cos",
+            "x"
+          ]
+        ],
+        "families": {
+          "y=tan(sin x+C)": [
+            "tan",
+            [
+              "add",
+              [
+                "sin",
+                "x"
+              ],
+              "C"
+            ]
+          ],
+          "y=tan(cos x+C)": [
+            "tan",
+            [
+              "add",
+              [
+                "cos",
+                "x"
+              ],
+              "C"
+            ]
+          ],
+          "y=tan(2sin x+C)": [
+            "tan",
+            [
+              "add",
+              [
+                "mul",
+                2,
+                [
+                  "sin",
+                  "x"
+                ]
+              ],
+              "C"
+            ]
+          ],
+          "y=sin x+C": [
+            "add",
+            [
+              "sin",
+              "x"
+            ],
+            "C"
+          ]
+        },
+        "samplePoints": [
+          -0.4,
+          0.2,
+          0.5
+        ],
+        "constantSamples": [
+          -0.2,
+          0,
+          0.3
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-7-6-004",
+      "independentReasoning": "Differentiate Cx² exactly to get 2Cx, and compare with 2(Cx²)/x=2Cx. Test C negative, zero and positive. Additive constants do not cancel from the original right side, explaining why a familiar antiderivative-shaped answer is not the general family.",
+      "optionReview": [
+        "Its derivative has only half the required rate for nonzero C.",
+        "Separation gives the square power, and C=0 includes the constant zero solution.",
+        "Its derivative has the opposite sign from 2y/x.",
+        "An additive constant does not in general satisfy this dependent-variable equation."
+      ],
+      "check": {
+        "type": "separable-family",
+        "rhs": [
+          "div",
+          [
+            "mul",
+            2,
+            "y"
+          ],
+          "x"
+        ],
+        "families": {
+          "y=Cx² for all real C": [
+            "mul",
+            "C",
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          "y=Cx for all real C": [
+            "mul",
+            "C",
+            "x"
+          ],
+          "y=C/x² for all real C": [
+            "div",
+            "C",
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          "y=x²+C for all real C": [
+            "add",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            "C"
+          ]
+        },
+        "samplePoints": [
+          0.5,
+          1,
+          2
+        ],
+        "constantSamples": [
+          -1,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-7-6-005",
+      "independentReasoning": "Differentiate the reciprocal family: its derivative is +(x+C)^(−2), equal to y². Separately substitute a constant k: 0=k² forces k=0. The negative versus positive reciprocal and the pole-domain restriction are checked independently.",
+      "optionReview": [
+        "The division is not defined when y=0.",
+        "The equation also requires the constant’s square to be zero.",
+        "Division by y² excluded a valid zero solution.",
+        "The positive reciprocal has derivative −y², not y²."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The constant solution y=0, checked in the original equation"
+      }
+    },
+    {
+      "questionId": "calc-ab-7-6-006",
+      "independentReasoning": "The integral of eʸ with respect to y is eʸ, while the integral of x with respect to x is x²/2. Direct substitution verifies both coefficient and sign. Numerical family checks use varied positive constants where all candidate logarithms are real; the domain restriction itself is justified exactly.",
+      "optionReview": [
+        "Its derivative has an extra factor 2 relative to the stated equation.",
+        "This does not satisfy the original exponential dependence on y.",
+        "Its derivative omits the factor e^(−y).",
+        "Multiplying by eʸ and integrating gives eʸ=x²/2+C."
+      ],
+      "check": {
+        "type": "separable-family",
+        "rhs": [
+          "mul",
+          "x",
+          [
+            "exp",
+            [
+              "mul",
+              -1,
+              "y"
+            ]
+          ]
+        ],
+        "families": {
+          "y=ln(x²/2+C)": [
+            "ln",
+            [
+              "add",
+              [
+                "div",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                2
+              ],
+              "C"
+            ]
+          ],
+          "y=ln(x²+C)": [
+            "ln",
+            [
+              "add",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              "C"
+            ]
+          ],
+          "y=e^(x²/2)+C": [
+            "add",
+            [
+              "exp",
+              [
+                "div",
+                [
+                  "pow",
+                  "x",
+                  2
+                ],
+                2
+              ]
+            ],
+            "C"
+          ],
+          "y=x²/2+C": [
+            "add",
+            [
+              "div",
+              [
+                "pow",
+                "x",
+                2
+              ],
+              2
+            ],
+            "C"
+          ]
+        },
+        "samplePoints": [
+          -0.5,
+          0.3,
+          1
+        ],
+        "constantSamples": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-7-6-007",
+      "independentReasoning": "Set z=y+1 and independently check z′=z/(x+2). For z=C(x+2), both sides equal C. Substitution for three real constants includes the equilibrium and checks that multiplicative rather than additive freedom survives after shifting.",
+      "optionReview": [
+        "The shifted variable y+1 is proportional to x+2 and C=0 gives y=−1.",
+        "Differentiation gives the negative of the required rate.",
+        "The shift has the wrong sign in y+1.",
+        "Its derivative does not equal its shifted value divided by x+2."
+      ],
+      "check": {
+        "type": "separable-family",
+        "rhs": [
+          "div",
+          [
+            "add",
+            "y",
+            1
+          ],
+          [
+            "add",
+            "x",
+            2
+          ]
+        ],
+        "families": {
+          "y=C(x+2)−1 for all real C": [
+            "sub",
+            [
+              "mul",
+              "C",
+              [
+                "add",
+                "x",
+                2
+              ]
+            ],
+            1
+          ],
+          "y=C/(x+2)−1 for all real C": [
+            "sub",
+            [
+              "div",
+              "C",
+              [
+                "add",
+                "x",
+                2
+              ]
+            ],
+            1
+          ],
+          "y=C(x+2)+1 for all real C": [
+            "add",
+            [
+              "mul",
+              "C",
+              [
+                "add",
+                "x",
+                2
+              ]
+            ],
+            1
+          ],
+          "y=C ln(x+2)−1 for all real C": [
+            "sub",
+            [
+              "mul",
+              "C",
+              [
+                "ln",
+                [
+                  "add",
+                  "x",
+                  2
+                ]
+              ]
+            ],
+            1
+          ]
+        },
+        "samplePoints": [
+          -1,
+          0.2,
+          1
+        ],
+        "constantSamples": [
+          -1,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-7-6-008",
+      "independentReasoning": "Multiply the alleged separated equation back by y²/dx to recover xy², then compare with the original at (x,y)=(1,2): 4 versus 5. The other three options are legitimate observations or checks, and no BC-only method is assessed.",
+      "optionReview": [
+        "This correctly identifies the obstacle to direct separation.",
+        "Dividing the original right side by y² gives x/y²+1, not x.",
+        "Direct substitution is always a valid verification step where defined.",
+        "Retaining the original equation introduces no algebraic error."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Writing dy/y²=x dx, because this drops the extra additive y² term"
+      }
+    },
+    {
+      "questionId": "calc-ab-7-6-009",
+      "independentReasoning": "Independent implicit differentiation checks both the left derivative factor 1+y² and the right derivative 2x. Each distractor produces a different multiplier or coefficient. The implicit relation is an acceptable general form and does not require solving a cubic explicitly.",
+      "optionReview": [
+        "This integrates the reciprocal instead of the factor moved to the left.",
+        "The cubic term is missing its antiderivative coefficient 1/3.",
+        "The separated left integral is ∫(1+y²)dy.",
+        "The right integral of 2x is x², not 2x²."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "y+y³/3=x²+C"
+      }
+    },
+    {
+      "questionId": "calc-ab-7-6-010",
+      "independentReasoning": "Differentiate both candidate antiderivatives independently: d(x²/2+x)/dx=x+1, whereas d((x+1)²)/dx=2x+2. The difference is not a constant. Checking y=0 in the original equation confirms that it must not disappear when dividing by y.",
+      "optionReview": [
+        "Negative solutions are valid and would be lost by that restriction.",
+        "Differentiating this gives 2x+1 rather than x+1.",
+        "Differentiating (x+1)² gives 2(x+1), not x+1.",
+        "The antiderivative of x+1 is x²/2+x."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Use ln|y|=x²/2+x+C, then restore y=0 separately"
+      }
+    },
+    {
+      "questionId": "calc-ab-7-6-011",
+      "independentReasoning": "Differentiate the implicit relation: y′/√y=cos x, hence y′=√y cos x as required. The original positivity restriction makes division valid. If the domain allowed y=0, constant solutions would need separate checking, but that is excluded by this question’s stated interval.",
+      "optionReview": [
+        "The integral of y^(−1/2) with respect to y is 2√y.",
+        "This omits the factor 2 in the left antiderivative.",
+        "The derivative of −cos x is sin x, not cos x.",
+        "This would require a factor y rather than √y in the original equation."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "2√y=sin x+C"
+      }
+    }
+  ]
+}

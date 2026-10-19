@@ -1,0 +1,303 @@
+{
+  "topicNumber": "7.8",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "7e232c0a664f09d451bf547cdb8a530e85bd7b1c989c04f214f1f5c43e2b2320",
+  "scopeReview": "CED FUN-7.F.1–2 and FUN-7.G.1: exponential growth/decay models, proportional rate, initial conditions and context. A shifted cooling model is explicitly exponential decay of excess temperature, not logistic modeling. No BC logistic formulas or Euler steps.",
+  "varietyReview": "Continuous population prediction with explicit rounding, half-life, nonzero-input calibration, instantaneous rate/units, tripling time, invariant ratio, repeated decay factors versus linear subtraction, signed rate calibration, ambient-temperature limit, positivity at finite times and elapsed threshold time. Six calibrated exponential-result models and one direct state-rate calculation corroborate separate exact reasoning.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-7-8-001",
+      "independentReasoning": "Compute the exponent as 0.08·5=0.4 independently, then exponentiate before rounding. A separate derivative check gives P′=0.08P and P(0)=250. Rounding is performed only after the full continuous model is evaluated.",
+      "optionReview": [
+        "The continuous model gives 250e^0.4≈372.956.",
+        "This uses constant growth 20 cells per hour rather than growth proportional to the changing population.",
+        "This adds only one initial hourly rate instead of evolving for five hours.",
+        "This uses decay with the wrong exponent sign."
+      ],
+      "check": {
+        "type": "exponential-model",
+        "initialValue": 250,
+        "initialTime": 0,
+        "rate": 0.08,
+        "at": 5,
+        "quantity": "value",
+        "decimals": 0
+      }
+    },
+    {
+      "questionId": "calc-ab-7-8-002",
+      "independentReasoning": "Independently list the model amounts after successive six-day intervals: 80,40,20. The same factor 1/2 applies each time, consistent with a constant proportional rate. Numerical calibration from the two given amounts corroborates this exact powers-of-two calculation.",
+      "optionReview": [
+        "This divides the elapsed time by four instead of counting two halvings.",
+        "A factor of 1/4 represents two equal half-life intervals.",
+        "After 12 days the sample has halved twice, not once.",
+        "A longer half-life would not account for the observed two halvings in 12 days."
+      ],
+      "check": {
+        "type": "exponential-model",
+        "initialValue": 80,
+        "initialTime": 0,
+        "observation": {
+          "time": 12,
+          "value": 20
+        },
+        "target": 40,
+        "quantity": "time-for-target"
+      }
+    },
+    {
+      "questionId": "calc-ab-7-8-003",
+      "independentReasoning": "Take the independent ratio 2.5 and check e^(3k)=2.5. The average absolute rate is 20 units per time, a different quantity whose units and meaning do not match k. Each symbolic option is independently evaluated numerically to reject equivalent alternate answers.",
+      "optionReview": [
+        "This uses the second time rather than the elapsed time.",
+        "This is the average absolute rate (100−40)/(4−1), not the proportional constant.",
+        "The ratio of the two observations is 5/2 over an elapsed time of 3.",
+        "The ratio is 100/40, not 3."
+      ],
+      "check": {
+        "type": "exponential-model",
+        "initialValue": 40,
+        "initialTime": 1,
+        "observation": {
+          "time": 4,
+          "value": 100
+        },
+        "quantity": "rate-constant",
+        "optionExpressions": {
+          "20": 20,
+          "ln(5/2)/3": [
+            "div",
+            [
+              "ln",
+              2.5
+            ],
+            3
+          ],
+          "ln(5/2)/4": [
+            "div",
+            [
+              "ln",
+              2.5
+            ],
+            4
+          ],
+          "ln(3)/3": [
+            "div",
+            [
+              "ln",
+              3
+            ],
+            3
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-7-8-004",
+      "independentReasoning": "Check units independently: (hour⁻¹)(mg)=mg/hour. The correct negative rate matches the decay description, while −0.2 has only inverse-time units. Direct numerical multiplication corroborates the value without assuming an unstated initial time.",
+      "optionReview": [
+        "The rate is negative because the amount is decaying.",
+        "This is the proportional constant, not the current absolute rate.",
+        "This divides by the proportional constant instead of multiplying.",
+        "Multiplying the current amount by −0.2 gives −3."
+      ],
+      "check": {
+        "type": "differential-point",
+        "rhs": [
+          "mul",
+          -0.2,
+          "y"
+        ],
+        "x": 0,
+        "y": 15
+      }
+    },
+    {
+      "questionId": "calc-ab-7-8-005",
+      "independentReasoning": "At t=4 the value is 1200, and at t=8 it is 2400, so a strictly increasing model must reach 1800 between these times. Substitution of the derived exact time gives exponent ln 3 and hence exactly 1800, corroborating the log manipulation.",
+      "optionReview": [
+        "Tripling requires e^(kt)=3 with k=ln 2/4.",
+        "Three doubling intervals multiply by 8, not by 3.",
+        "Two doubling intervals multiply by 4, not by 3.",
+        "This inverts the logarithmic factor in the tripling time."
+      ],
+      "check": {
+        "type": "exponential-model",
+        "initialValue": 600,
+        "initialTime": 0,
+        "observation": {
+          "time": 4,
+          "value": 1200
+        },
+        "target": 1800,
+        "quantity": "time-for-target",
+        "optionExpressions": {
+          "4 ln 3 / ln 2 years": [
+            "div",
+            [
+              "mul",
+              4,
+              [
+                "ln",
+                3
+              ]
+            ],
+            [
+              "ln",
+              2
+            ]
+          ],
+          "12 years": 12,
+          "8 years": 8,
+          "4 ln 2 / ln 3 years": [
+            "div",
+            [
+              "mul",
+              4,
+              [
+                "ln",
+                2
+              ]
+            ],
+            [
+              "ln",
+              3
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-7-8-006",
+      "independentReasoning": "Independently use the quotient rule: (U/V)′=(U′V−UV′)/V²=0 because both coefficients equal 0.03. Positivity keeps the denominator nonzero. The difference has derivative 0.03(U−V), so it is not a nonzero constant.",
+      "optionReview": [
+        "The difference also grows exponentially rather than remaining constant.",
+        "Both amounts acquire the same exponential factor, preserving their initial ratio.",
+        "Their rates remain in the same 2:1 ratio as their values.",
+        "The common exponential factors cancel from the ratio."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "U(t)=2V(t)"
+      }
+    },
+    {
+      "questionId": "calc-ab-7-8-007",
+      "independentReasoning": "Calibrate k=ln(40/50)/3, then independently evaluate the exponential at t=6. This agrees with the repeated-ratio calculation. A constant loss of 10 would instead describe a different differential equation with constant absolute rate.",
+      "optionReview": [
+        "This subtracts the first interval’s absolute loss again, using a linear model.",
+        "This applies an unsupported reduction factor.",
+        "Two equal time intervals apply the factor 40/50=0.8 twice.",
+        "This assumes a halving in each interval despite the observed factor 0.8."
+      ],
+      "check": {
+        "type": "exponential-model",
+        "initialValue": 50,
+        "initialTime": 0,
+        "observation": {
+          "time": 3,
+          "value": 40
+        },
+        "at": 6,
+        "quantity": "value"
+      }
+    },
+    {
+      "questionId": "calc-ab-7-8-008",
+      "independentReasoning": "Compute N′/N=−9/90=−1/10 and check its inverse-time units. For the solution 90e^(−0.1(t−2)), direct differentiation recovers both measurements at t=2 and confirms decay on the modeled interval.",
+      "optionReview": [
+        "The derivative at one time is not the proportional constant.",
+        "This inverts the quotient and discards the negative sign.",
+        "The observed negative derivative requires a negative coefficient.",
+        "Divide the instantaneous derivative by the simultaneous amount."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "k=−0.1, so N decreases by a constant proportional rate"
+      }
+    },
+    {
+      "questionId": "calc-ab-7-8-009",
+      "independentReasoning": "Direct differentiation gives T′=−6e^(−0.1t), equal to −0.1(T−20), and T(0)=80. Taking the exact exponential limit confirms the ambient value. The equation is affine with an exponentially decaying excess; no logistic model is involved.",
+      "optionReview": [
+        "The temperature excess above 20 decays exponentially to zero.",
+        "It is the excess T−20, not T itself, that follows pure decay to zero.",
+        "The initial value is not an equilibrium because its derivative is −6.",
+        "This reverses the ambient-temperature shift."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "20"
+      }
+    },
+    {
+      "questionId": "calc-ab-7-8-010",
+      "independentReasoning": "Check the three compatible coefficients by substitution into e^(3k). They give factors 1/2,1 and 2, respectively. No logarithm of zero is a real finite coefficient, and a limiting infinite-time statement cannot replace the specified finite observation.",
+      "optionReview": [
+        "This is possible with k=ln(1/2)/3.",
+        "A positive initial amount times a finite real exponential cannot equal zero at a finite time.",
+        "This is possible with k=0.",
+        "This is possible with k=ln 2/3."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Y(3)=0"
+      }
+    },
+    {
+      "questionId": "calc-ab-7-8-011",
+      "independentReasoning": "Independently substitute the exact elapsed time into 5e^(0.4Δt) to obtain 7. The log ratio is positive and the inverse-minute coefficient converts it to minutes. Numerical comparisons reject the reversed ratio and multiplication-versus-division distractors.",
+      "optionReview": [
+        "This treats the proportional rate as a constant absolute rate.",
+        "Solving 0.4Δt=ln(7/5) requires division by 0.4.",
+        "The elapsed-time relation is 7/5=e^(0.4Δt).",
+        "This reverses the ratio and yields negative elapsed time for growth."
+      ],
+      "check": {
+        "type": "exponential-model",
+        "initialValue": 5,
+        "initialTime": 0,
+        "rate": 0.4,
+        "target": 7,
+        "quantity": "time-for-target",
+        "optionExpressions": {
+          "ln(7/5)/0.4": [
+            "div",
+            [
+              "ln",
+              1.4
+            ],
+            0.4
+          ],
+          "(7−5)/0.4": [
+            "div",
+            2,
+            0.4
+          ],
+          "0.4 ln(7/5)": [
+            "mul",
+            0.4,
+            [
+              "ln",
+              1.4
+            ]
+          ],
+          "ln(5/7)/0.4": [
+            "div",
+            [
+              "ln",
+              [
+                "div",
+                5,
+                7
+              ]
+            ],
+            0.4
+          ]
+        }
+      }
+    }
+  ]
+}

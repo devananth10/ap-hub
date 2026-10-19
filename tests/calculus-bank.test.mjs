@@ -493,3 +493,28 @@ test('slope segment rendering preserves signed coordinate slope with unequal axi
     assert.ok(Math.abs((segment.y1+segment.y2)/2-170)<1e-10);
   }
 });
+
+test('separated families verify varied constants, including zero and negative branches',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-7-6');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-7-6.json'));
+  for(const i of [0,2,3,5,6])verifyCalculusQuestion(batch.questions[i],qa.questions[i]);
+  const wrong=structuredClone(batch.questions[0]);wrong.correctIndex=wrong.options.indexOf('y=Ce^(4x²)');
+  assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[0]),/separated family key/);
+  const duplicate=structuredClone(qa.questions[0]);duplicate.check.families['y=Ce^(4x²)']=duplicate.check.families['y=Ce^(2x²)'];
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[0],duplicate),/unique separated family/);
+  const tooFew=structuredClone(qa.questions[0]);tooFew.check.constantSamples=[1,1,1];
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[0],tooFew),/varied inputs and constants/);
+});
+test('calibrated exponentials use elapsed time, preserve rate sign and compare equivalent options',()=>{
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-7-8');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-7-8.json'));
+  const bad=structuredClone(qa.questions[2]);bad.check.initialTime=0;
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[2],bad),/exponential key/);
+  const duplicate=structuredClone(qa.questions[4]);duplicate.check.optionExpressions['8 years']=duplicate.check.optionExpressions['4 ln 3 / ln 2 years'];
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[4],duplicate),/unique exponential result/);
+  const invalid=structuredClone(qa.questions[6]);invalid.check.observation.value=0;
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[6],invalid));
+  const wrong=structuredClone(batch.questions[0]);wrong.correctIndex=wrong.options.indexOf('350');
+  assert.throws(()=>verifyCalculusQuestion(wrong,qa.questions[0]),/exponential key/);
+  assert.ok(Math.abs(integralValue(['sin',['pow','x',2]],0,2)-.8047764893)<1e-9);
+});

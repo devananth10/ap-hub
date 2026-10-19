@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 726,
+  "questionsChecked": 759,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -2021,6 +2021,96 @@
       "questionId": "calc-ab-7-4-001",
       "method": "differential-solution",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-6-001",
+      "method": "separable-family",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-6-003",
+      "method": "separable-family",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-6-004",
+      "method": "separable-family",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-6-006",
+      "method": "separable-family",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-6-007",
+      "method": "separable-family",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-7-001",
+      "method": "differential-solution",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-7-003",
+      "method": "differential-solution",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-7-004",
+      "method": "differential-solution",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-7-006",
+      "method": "differential-solution",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-7-007",
+      "method": "differential-solution",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-7-009",
+      "method": "differential-solution",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-8-001",
+      "method": "exponential-model",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-8-002",
+      "method": "exponential-model",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-8-003",
+      "method": "exponential-model",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-8-004",
+      "method": "differential-point",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-8-005",
+      "method": "exponential-model",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-8-007",
+      "method": "exponential-model",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-8-011",
+      "method": "exponential-model",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -2345,7 +2435,22 @@
     "calc-ab-7-4-008",
     "calc-ab-7-4-009",
     "calc-ab-7-4-010",
-    "calc-ab-7-4-011"
+    "calc-ab-7-4-011",
+    "calc-ab-7-6-002",
+    "calc-ab-7-6-005",
+    "calc-ab-7-6-008",
+    "calc-ab-7-6-009",
+    "calc-ab-7-6-010",
+    "calc-ab-7-6-011",
+    "calc-ab-7-7-002",
+    "calc-ab-7-7-005",
+    "calc-ab-7-7-008",
+    "calc-ab-7-7-010",
+    "calc-ab-7-7-011",
+    "calc-ab-7-8-006",
+    "calc-ab-7-8-008",
+    "calc-ab-7-8-009",
+    "calc-ab-7-8-010"
   ],
   "humanReviewPerformed": false,
   "limitations": [

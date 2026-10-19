@@ -1,9 +1,9 @@
 {
   "officialTopics": 81,
   "targetQuestions": 891,
-  "completedTopics": 66,
-  "questions": 726,
-  "numeric": 404,
+  "completedTopics": 69,
+  "questions": 759,
+  "numeric": 422,
   "repeatedPromptPatterns": [
     [
       "calc-ab-6-10-002",
@@ -472,12 +472,30 @@
       "count": 11,
       "status": "validated",
       "file": "src/content/practice/calculus-ab-7-4.json"
+    },
+    {
+      "topic": "7.6",
+      "topicId": "topic-7-6",
+      "count": 11,
+      "status": "validated",
+      "file": "src/content/practice/calculus-ab-7-6.json"
+    },
+    {
+      "topic": "7.7",
+      "topicId": "topic-7-7",
+      "count": 11,
+      "status": "validated",
+      "file": "src/content/practice/calculus-ab-7-7.json"
+    },
+    {
+      "topic": "7.8",
+      "topicId": "topic-7-8",
+      "count": 11,
+      "status": "validated",
+      "file": "src/content/practice/calculus-ab-7-8.json"
     }
   ],
   "missing": [
-    "7.6",
-    "7.7",
-    "7.8",
     "8.1",
     "8.2",
     "8.3",
@@ -492,9 +510,9 @@
     "8.12"
   ],
   "policy": "automatic-topic-publication-after-validation-2026-10-19",
-  "publishedQuestions": 726,
-  "publishedTopics": 66,
-  "nextTopic": "7.6",
+  "publishedQuestions": 759,
+  "publishedTopics": 69,
+  "nextTopic": "8.1",
   "withheldQuestionIds": [],
   "unresolvedConcerns": [],
   "humanReviewPerformed": false,
@@ -1634,10 +1652,10 @@
       "practiceRoute": "/practice?course=calculus-ab&unit=7&topic=topic-7-6",
       "file": "src/content/practice/calculus-ab-7-6.json",
       "mappingOrigin": "new canonical number-based ID",
-      "draftStatus": "not-started",
-      "validationStatus": "not-started",
-      "publicationStatus": "unpublished",
-      "questionCount": 0
+      "draftStatus": "complete",
+      "validationStatus": "passed",
+      "publicationStatus": "published",
+      "questionCount": 11
     },
     {
       "courseId": "calculus-ab",
@@ -1651,10 +1669,10 @@
       "practiceRoute": "/practice?course=calculus-ab&unit=7&topic=topic-7-7",
       "file": "src/content/practice/calculus-ab-7-7.json",
       "mappingOrigin": "new canonical number-based ID",
-      "draftStatus": "not-started",
-      "validationStatus": "not-started",
-      "publicationStatus": "unpublished",
-      "questionCount": 0
+      "draftStatus": "complete",
+      "validationStatus": "passed",
+      "publicationStatus": "published",
+      "questionCount": 11
     },
     {
       "courseId": "calculus-ab",
@@ -1668,10 +1686,10 @@
       "practiceRoute": "/practice?course=calculus-ab&unit=7&topic=topic-7-8",
       "file": "src/content/practice/calculus-ab-7-8.json",
       "mappingOrigin": "new canonical number-based ID",
-      "draftStatus": "not-started",
-      "validationStatus": "not-started",
-      "publicationStatus": "unpublished",
-      "questionCount": 0
+      "draftStatus": "complete",
+      "validationStatus": "passed",
+      "publicationStatus": "published",
+      "questionCount": 11
     },
     {
       "courseId": "calculus-ab",

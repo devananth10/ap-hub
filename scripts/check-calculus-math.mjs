@@ -188,6 +188,28 @@ export function verifyCalculusQuestion(question, review) {
     const c=review.check;assert.ok(c.samples.length>=3,'Rate models need varied states');
     const matches=question.options.map(option=>c.samples.every(([x,y,rate])=>Math.abs(evaluateBivariate(c.candidateRhs[option],x,y)-rate)<1e-9));
     assert.equal(matches.filter(Boolean).length,1,question.id+' unique differential model');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' differential model key');
+  } else if(review.check.type==='exponential-model') {
+    const c=review.check;assert.ok(c.initialValue>0&&Number.isFinite(c.initialTime));
+    if(c.observation)assert.ok(c.observation.value>0&&c.observation.time!==c.initialTime);
+    const k=c.observation?Math.log(c.observation.value/c.initialValue)/(c.observation.time-c.initialTime):c.rate;
+    assert.ok(Number.isFinite(k));let expected;
+    if(c.quantity==='value')expected=c.initialValue*Math.exp(k*(c.at-c.initialTime));
+    else if(c.quantity==='rate')expected=k*c.initialValue*Math.exp(k*(c.at-c.initialTime));
+    else if(c.quantity==='rate-constant')expected=k;
+    else if(c.quantity==='time-for-target'){assert.ok(c.target>0&&k!==0);expected=c.initialTime+Math.log(c.target/c.initialValue)/k;}
+    else assert.fail('Unknown exponential quantity');
+    if(c.decimals!==undefined){const scale=10**c.decimals;expected=Math.round(expected*scale)/scale;}
+    const matches=question.options.map(option=>Math.abs((c.optionExpressions?evaluateExpression(c.optionExpressions[option]):numericalOption(option))-expected)<(c.tolerance??1e-8));
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique exponential result');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' exponential key');
+  } else if(review.check.type==='separable-family') {
+    const c=review.check,h=0.00001;
+    assert.ok(new Set(c.samplePoints).size>=3&&new Set(c.constantSamples).size>=3,'Families need varied inputs and constants');
+    const matches=question.options.map(option=>c.constantSamples.every(constant=>{
+      const replace=node=>node==='C'?constant:Array.isArray(node)?node.map(replace):node;
+      const fn=replace(c.families[option]),f=x=>evaluateExpression(fn,x);
+      return c.samplePoints.every(x=>Math.abs((f(x+h)-f(x-h))/(2*h)-evaluateBivariate(c.rhs,x,f(x)))<(c.tolerance??0.00001));
+    }));
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique separated family');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' separated family key');
   } else if(review.check.type==='differential-solution') {
     const c=review.check,order=c.order??1,h=order===1?0.0001:0.001,tolerance=c.tolerance??0.0001;
     assert.ok([1,2].includes(order)&&new Set(c.samplePoints).size>=3,'Invalid solution verification inputs');
