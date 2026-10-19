@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 1,
+  "topicId": "limits",
+  "questions": [
+    {
+      "id": "calc-ab-1-1-001",
+      "prompt": "A moving cart is 18 meters from a marker at t=2 seconds and 45 meters from it at t=5 seconds. What is its average rate of change of position over this interval?",
+      "options": [
+        "27 m/s",
+        "9 m/s",
+        "3 m/s",
+        "18 m/s"
+      ],
+      "correctIndex": 1,
+      "explanation": "Subtract positions and times in the same order: (45−18)/(5−2)=27/3=9 m/s. This describes the interval average, not necessarily the rate at either endpoint. A: This is the position change alone; it omits division by the elapsed time. B: Correct: the position changes by 27 m during 3 s, giving 9 m/s. C: This is the elapsed time, not the change in position divided by time. D: This uses an initial position as a rate; a position is not a quotient of changes."
+    },
+    {
+      "id": "calc-ab-1-1-002",
+      "prompt": "For a smooth position curve, average velocities over shrinking intervals ending at t=4 are 5.8, 5.98, and 5.998 m/s. Over shrinking intervals beginning at t=4, they are 6.2, 6.02, and 6.002 m/s. Which value is the best estimate of the instantaneous velocity at t=4?",
+      "options": [
+        "0 m/s",
+        "4 m/s",
+        "6 m/s",
+        "12 m/s"
+      ],
+      "correctIndex": 2,
+      "explanation": "Look at the quantity being estimated: average velocities approach a common value from both sides of the instant. The sequences support 6 m/s as the best local estimate, rather than an exact conclusion from finitely many observations. A: Shrinking time intervals do not force their position-change/time-change ratios to approach zero. B: The input time 4 s is not a velocity and has different units. C: Correct: the short-interval rates on both sides approach 6 m/s. D: Adding the two limiting rates double-counts the same local rate."
+    },
+    {
+      "id": "calc-ab-1-1-003",
+      "prompt": "Why can instantaneous change not be defined simply by evaluating the average rate formula over the zero-length interval [a,a]?",
+      "options": [
+        "A function can never change at an instant.",
+        "The average rate on every interval containing a is zero.",
+        "A function must have value zero at a.",
+        "The formula divides by a change in the input equal to zero."
+      ],
+      "correctIndex": 3,
+      "explanation": "An average rate uses (f(b)−f(a))/(b−a) for b≠a. Setting b=a makes both differences zero and produces an undefined quotient. Calculus instead studies the behavior of quotients over nonzero shrinking intervals. A: An undefined zero-length quotient does not rule out a meaningful instantaneous rate obtained by a limiting process. B: Average rates on nonzero intervals can have any sign and need not be zero. C: The interval length places no condition on the function value at its endpoint. D: Correct: the denominator a−a is zero, so the quotient is undefined."
+    },
+    {
+      "id": "calc-ab-1-1-004",
+      "prompt": "When a smooth graph is viewed on increasingly smaller scales around (4,10), its local direction approaches that of the line through (3,7) and (5,13). What rate of change does this local linear picture suggest?",
+      "options": [
+        "3 output units per input unit",
+        "6 output units per input unit",
+        "2 output units per input unit",
+        "10 output units per input unit"
+      ],
+      "correctIndex": 0,
+      "explanation": "The slope of the locally approached line is rise/run=(13−7)/(5−3)=6/2=3. A locally linear view relates a smooth curve’s instantaneous direction to a rate of change. A: Correct: the reference line has slope (13−7)/(5−3)=3. B: This is the vertical change without division by the horizontal change. C: This is the horizontal change, not the slope. D: The height of the central point is a function value, not a rate."
+    },
+    {
+      "id": "calc-ab-1-1-005",
+      "prompt": "A particle has position s(t)=4t²+1 meters. To investigate its rate at t=3 seconds, a student computes [s(3+h)−s(3)]/h for h≠0. What value do these average rates approach as h approaches zero?",
+      "options": [
+        "37 m/s",
+        "24 m/s",
+        "12 m/s",
+        "0 m/s"
+      ],
+      "correctIndex": 1,
+      "explanation": "s(3+h)=37+24h+4h² and s(3)=37. For h≠0 the quotient is (24h+4h²)/h=24+4h. Its approaching value is 24 m/s. No differentiation rule is needed. A: This is s(3), the position, and not a rate of change. B: Correct: expanding and cancelling gives the average rate 24+4h, which approaches 24. C: This keeps only one of the two equal contributions from expanding (3+h)². D: Both differences approach zero, but their quotient approaches 24, not zero."
+    },
+    {
+      "id": "calc-ab-1-1-006",
+      "prompt": "Average temperature-change rates on progressively shorter intervals around noon approach −1.5 °C per minute. Which interpretation best describes this information?",
+      "options": [
+        "The temperature at noon is −1.5 °C.",
+        "The temperature decreases by exactly 1.5 °C during every later minute.",
+        "Near noon, temperature is decreasing at approximately 1.5 °C per minute.",
+        "Temperature cannot be changing because the intervals shrink to zero."
+      ],
+      "correctIndex": 2,
+      "explanation": "A negative local temperature rate means that temperature falls as time increases. The limiting average-rate description estimates the rate at noon. It specifies neither the actual temperature nor the rate far from noon. A: This confuses a rate measured in °C/min with a temperature measured in °C. B: Local instantaneous behavior does not impose a constant rate on later intervals. C: Correct: the negative sign indicates a decreasing temperature; the magnitude gives the local rate. D: Shrinking the intervals need not make the rate quotient approach zero."
+    },
+    {
+      "id": "calc-ab-1-1-007",
+      "prompt": "A conveyor marker follows a straight-line position graph. Its position is 12 cm at t=0 seconds and 6 cm at t=2 seconds. Which instantaneous position-change rate is consistent with this graph at every interior time?",
+      "options": [
+        "3 cm/s",
+        "6 cm/s",
+        "−6 cm/s",
+        "−3 cm/s"
+      ],
+      "correctIndex": 3,
+      "explanation": "The straight line represents a constant rate. Its slope is (6−12)/2=−3 cm/s. All nonzero shrinking secants on that line have this same rate, so its instantaneous rate agrees. A: This gives the magnitude but loses the negative direction of the position change. B: This is the final position, not a rate. C: This uses the change in position without dividing by two seconds. D: Correct: a straight position graph has the same slope (6−12)/(2−0)=−3 throughout."
+    },
+    {
+      "id": "calc-ab-1-1-008",
+      "prompt": "As nonzero intervals shrink toward a time c, the average position-change rates on intervals ending at c approach 4 m/s, while those on intervals beginning at c approach −2 m/s. What does this imply about assigning one instantaneous rate from these averages?",
+      "options": [
+        "The two sides do not support a single common instantaneous rate at c.",
+        "The instantaneous rate must be 1 m/s, the average of 4 and −2.",
+        "The instantaneous rate must be 4 m/s because time approaches from earlier values.",
+        "The instantaneous rate must be −2 m/s because later times take priority."
+      ],
+      "correctIndex": 0,
+      "explanation": "A well-defined common instantaneous rate must agree with the rates approached from both directions. Here 4≠−2, so this limiting-rate description has no single value. Taking their arithmetic mean does not resolve the disagreement. A: Correct: two different approaching rates cannot represent one common local rate. B: Averaging incompatible side behaviors does not make them approach a common value. C: Earlier times do not take priority over the stated right-side behavior. D: Later times do not override conflicting behavior from earlier intervals."
+    },
+    {
+      "id": "calc-ab-1-1-009",
+      "prompt": "A sensor records that the volume in a tank increases by 0.30 liter during a 0.02-minute interval. With no other information about the volume function, which rate is guaranteed by these observations?",
+      "options": [
+        "An instantaneous rate of exactly 15 liters per minute at the start",
+        "An average rate of 15 liters per minute over the recorded interval",
+        "An instantaneous rate of exactly 15 liters per minute at the end",
+        "A constant rate of 15 liters per minute at all times"
+      ],
+      "correctIndex": 1,
+      "explanation": "Divide the recorded volume change by the elapsed time to obtain the interval average 15 L/min. Neither endpoint instantaneous rate nor global constancy follows without additional information about the volume function. A: Endpoint instantaneous rates are not determined by one interval’s total change. B: Correct: the measured ratio is 0.30/0.02=15 L/min for that interval. C: The same interval average can occur for functions with different endpoint rates. D: A single interval measurement does not establish constant behavior."
+    },
+    {
+      "id": "calc-ab-1-1-010",
+      "prompt": "Two cyclists each travel 240 meters during the same 20-second interval, but their speed histories are not given. Which statement follows from these data alone?",
+      "options": [
+        "Their speeds at every instant are equal.",
+        "Both must travel at a constant speed.",
+        "Their average speeds over the interval are equal, but their speeds at a specified instant need not be equal.",
+        "Their speeds at the start must differ."
+      ],
+      "correctIndex": 2,
+      "explanation": "Each average speed is 240/20=12 m/s. One cyclist could travel at constant speed while the other varies speed and covers the same distance in the same time. Interval summaries do not identify a specified instantaneous speed. A: Different speed histories can have the same total distance over the same duration. B: The distance/time ratio does not imply constancy. C: Correct: equal total distances and durations give equal average speeds without prescribing local behavior. D: The data do not force a difference at the start; equal starting speeds are also possible."
+    },
+    {
+      "id": "calc-ab-1-1-011",
+      "prompt": "A position function is p(t)=5t−t² meters. At t=4 seconds, p(4)=4 meters. What value do the quotients [p(4+h)−p(4)]/h, for h≠0, approach as h approaches zero?",
+      "options": [
+        "4 m/s",
+        "3 m/s",
+        "−1 m/s",
+        "−3 m/s"
+      ],
+      "correctIndex": 3,
+      "explanation": "Expanding gives p(4+h)=4−3h−h². Subtract 4 and divide by nonzero h to obtain −3−h. These rates approach −3 m/s, indicating decreasing position even though the position itself is positive. A: This takes the position p(4) as a velocity. B: This discards the negative direction of the approaching rate. C: This confuses a quadratic coefficient with the local rate. D: Correct: the quotient simplifies to −3−h, whose approaching value is −3."
+    }
+  ]
+}

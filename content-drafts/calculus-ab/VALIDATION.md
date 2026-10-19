@@ -1,0 +1,22 @@
+# Calculus AB validation and continuation notes
+
+The live progress/count ledger is PROGRESS.json / PROGRESS.md. The official inventory is research/official-topics.json (81 topics, 891-question target). Chemistry content is not part of this generation task and remains frozen.
+
+## Checks and honest limits
+
+- `pnpm test:calculus`: exact schemas, eleven per complete topic, official scope/IDs, answer positions, exact duplicate prompts, complete A/B/C/D explanations, missing dependencies/raw unsupported LaTeX, and per-topic QA semantic hashes. It never treats missing sets as completed questions.
+- `scripts/check-calculus-math.mjs`: recomputes supported numerical models from separately transcribed/reviewed prompt data and compares all four actual answer choices for uniqueness. Implicit coefficients 0/±1 need not appear literally. Nontrivial input literals must appear in the prompt. This is not a general symbolic theorem prover or proof that transcribed models always match their prose.
+- Conceptual checks are separately reasoned in each QA record, with counterexamples/hypothesis checks where appropriate, and bound to the current question/answer through hashes. Expected-answer matching detects stale changes but is **not** independent mathematical proof. The assistant reviewed all four choices; no independent human reviewer is claimed.
+- Each topic QA records scope, variety and repetition review. Exact duplicate detection is automatic; semantic repetition and AP difficulty require judgment. Reusing a core skill within its own topic is intentional, but eleven parameter-swapped clones are not acceptable.
+- Conventional Unicode/plain-text math is used in the existing text renderer: division parentheses, superscripts, signs, `lim(x→a)` and fully specified descriptions. No raw TeX commands, missing image references or unsupported graph dependencies are allowed. Topic 1.3 may use a complete geometric description of a graph instead of an absent picture; tables must give explicit paired data. A future advanced renderer is not claimed or needed for the first topic.
+- Publishing means explicit registration in calculus-ab-bank.ts plus the shared count index, after checks under the permanent October 19 policy. No external resource or public website deployment is covered. Reports remain available through the existing flag.
+
+## First checkpoint (Topic 1.1)
+
+Eleven original MCQs were written after confirming CED CHA-1.A scope. Five numerical checks independently recompute secant/local-line or quadratic rates; six reasoning checks examine estimation, zero denominators, units, opposing local rates and limited interval data. Every distractor has an explanation. No preexisting Calculus question/draft file was found in the repository; this does not deny unavailable work elsewhere.
+
+Baseline: clean `5e4f611`, 49 original tests and production build passed; the feedback destination was read back successfully with the existing private verification records intact. Its local SQLite destination is configured and working; future hosting/backup limits remain as documented in docs/FEEDBACK.md. No feedback row was created or edited during this Calculus audit.
+
+After integration: 52 unit tests passed, including curriculum, multibank scoping/counts, numerical-verifier mutation failures and unchanged Chemistry checks. Development smoke checks cover the new Calculus Practice scope plus all 91 Chemistry workspaces and Practice routes. Browser Topic 1.1: every correct answer graded correctly, every explanation contained all four option labels, navigation worked and final score was 11/11 (100%). Existing original tabs and student data were preserved. Build/typecheck results and final GitHub receipt are verified at each milestone; use git log for actual commit IDs.
+
+Continue numerically from the PROGRESS.json nextTopic field. Do not regenerate valid completed files. Correct an error by stable question ID, recompute its QA hash only after reviewing the change, rerun checks and publish the correction normally.

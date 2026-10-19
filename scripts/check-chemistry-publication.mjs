@@ -20,9 +20,10 @@ assert.equal(review.authorization.humanScientificReviewPerformed, false);
 assert.equal(review.publishedQuestions, 1001);
 assert.deepEqual(review.withheldQuestionIds, []);
 validateQuestionBatches(questionBatches);
-assert.equal(questionBatches.length, 91);
-assert.equal(practiceEntries().length, 1001);
-assert.equal(practiceCount(), 1001);
+const chemistryBatches = questionBatches.filter(batch => batch.courseId === 'chemistry');
+assert.equal(chemistryBatches.length, 91);
+assert.equal(practiceEntries({courseId:'chemistry'}).length, 1001);
+assert.equal(practiceCount({courseId:'chemistry'}), 1001);
 const expectedIndex = [];
 const questions = new Map();
 const prompts = new Set();
@@ -30,7 +31,7 @@ for (const unit of courses.find(course => course.id === 'chemistry').units) {
   assert.equal(practiceEntries({ courseId: 'chemistry', unitNumber: unit.number }).length, unit.topics.length * 11);
   for (const topic of unit.topics) {
     const scope = { courseId: 'chemistry', unitNumber: unit.number, topicId: topic.id };
-    const batch = questionBatches.find(item => item.topicId === topic.id);
+    const batch = chemistryBatches.find(item => item.topicId === topic.id);
     const original = snapshot.inventory.find(item => item.topicId === topic.id);
     assert.ok(batch && original);
     assert.equal(hash(batch), original.semanticSha256, `Question content changed since authorized snapshot: ${topic.number}`);
@@ -48,7 +49,7 @@ for (const unit of courses.find(course => course.id === 'chemistry').units) {
     });
   }
 }
-assert.deepEqual(publishedIndex, expectedIndex, 'Client counts must match the actual published registry');
+assert.deepEqual(publishedIndex.filter(batch => batch.courseId === 'chemistry'), expectedIndex, 'Chemistry client counts must match its actual published registry');
 assert.equal(questions.size, 1001);
 assert.equal(practiceEntries({ courseId: 'biology' }).length, 0);
 

@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { courses } from "../src/lib/courses.ts";
 import { academicThemes } from "../src/lib/artwork.ts";
+import { practiceCount } from "../src/lib/practice-scope.ts";
 
 const catalog = JSON.parse(readFileSync(new URL("../src/config/official-resources.json", import.meta.url), "utf8"));
 const approved = catalog.resources.filter((resource) => resource.approval?.status === "approved");
@@ -34,7 +35,7 @@ const cases = [
   ["/practice?course=chemistry&unit=1", "88 MCQ questions"],
   ["/practice?course=chemistry&unit=1&topic=moles", "11 MCQ questions"],
   ["/practice?course=chemistry&unit=1&topic=electron-configuration", "11 MCQ questions"],
-  ["/practice?course=calculus-ab&unit=1&topic=limits", "AP Calculus AB practice questions are coming soon."],
+  ["/practice?course=calculus-ab&unit=1&topic=limits", `${practiceCount({courseId:'calculus-ab',unitNumber:1,topicId:'limits'})} MCQ questions`],
   ["/practice?course=biology", "AP Biology practice questions are coming soon."],
 ];
 for (const [path, expected] of cases) {
@@ -58,7 +59,7 @@ for (const [path, expected] of cases) {
     assert.ok(html.replace(/<!--.*?-->/g, "").includes("Question 1 of 11"), "Question navigation should show the full set");
     assert.ok(html.includes("This is not an official College Board question"), "Practice must not be presented as official College Board questions");
   }
-  if (path.includes('course=calculus-ab')) {
+  if (path.includes('course=calculus-ab') && !practiceCount({courseId:'calculus-ab',unitNumber:1,topicId:'limits'})) {
     const empty = html.match(/<div class="empty-state practice-empty">([\s\S]*?)<\/section>/)?.[1];
     assert.ok(empty && !empty.includes('Chemistry') && !empty.includes('course=chemistry'), 'Calculus empty state must stay in its own course');
     assert.ok(empty.includes('/courses/calculus-ab/limits'), 'Preserve topic return context');

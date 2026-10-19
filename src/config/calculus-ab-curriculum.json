@@ -1,0 +1,455 @@
+[
+  {
+    "number": 1,
+    "title": "Limits and Continuity",
+    "topics": [
+      {
+        "id": "limits",
+        "number": "1.1",
+        "title": "Introducing Calculus: Can Change Occur at an Instant?"
+      },
+      {
+        "id": "topic-1-2",
+        "number": "1.2",
+        "title": "Defining Limits and Using Limit Notation"
+      },
+      {
+        "id": "topic-1-3",
+        "number": "1.3",
+        "title": "Estimating Limit Values from Graphs"
+      },
+      {
+        "id": "topic-1-4",
+        "number": "1.4",
+        "title": "Estimating Limit Values from Tables"
+      },
+      {
+        "id": "topic-1-5",
+        "number": "1.5",
+        "title": "Determining Limits Using Algebraic Properties of Limits"
+      },
+      {
+        "id": "topic-1-6",
+        "number": "1.6",
+        "title": "Determining Limits Using Algebraic Manipulation"
+      },
+      {
+        "id": "topic-1-7",
+        "number": "1.7",
+        "title": "Selecting Procedures for Determining Limits"
+      },
+      {
+        "id": "topic-1-8",
+        "number": "1.8",
+        "title": "Determining Limits Using the Squeeze Theorem"
+      },
+      {
+        "id": "topic-1-9",
+        "number": "1.9",
+        "title": "Connecting Multiple Representations of Limits"
+      },
+      {
+        "id": "topic-1-10",
+        "number": "1.10",
+        "title": "Exploring Types of Discontinuities"
+      },
+      {
+        "id": "topic-1-11",
+        "number": "1.11",
+        "title": "Defining Continuity at a Point"
+      },
+      {
+        "id": "topic-1-12",
+        "number": "1.12",
+        "title": "Confirming Continuity over an Interval"
+      },
+      {
+        "id": "topic-1-13",
+        "number": "1.13",
+        "title": "Removing Discontinuities"
+      },
+      {
+        "id": "topic-1-14",
+        "number": "1.14",
+        "title": "Connecting Infinite Limits and Vertical Asymptotes"
+      },
+      {
+        "id": "topic-1-15",
+        "number": "1.15",
+        "title": "Connecting Limits at Infinity and Horizontal Asymptotes"
+      },
+      {
+        "id": "topic-1-16",
+        "number": "1.16",
+        "title": "Working with the Intermediate Value Theorem (IVT)"
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "title": "Differentiation: Definition and Fundamental Properties",
+    "topics": [
+      {
+        "id": "derivatives",
+        "number": "2.1",
+        "title": "Defining Average and Instantaneous Rates of Change at a Point"
+      },
+      {
+        "id": "topic-2-2",
+        "number": "2.2",
+        "title": "Defining the Derivative of a Function and Using Derivative Notation"
+      },
+      {
+        "id": "topic-2-3",
+        "number": "2.3",
+        "title": "Estimating Derivatives of a Function at a Point"
+      },
+      {
+        "id": "topic-2-4",
+        "number": "2.4",
+        "title": "Connecting Differentiability and Continuity: Determining When Derivatives Do and Do Not Exist"
+      },
+      {
+        "id": "topic-2-5",
+        "number": "2.5",
+        "title": "Applying the Power Rule"
+      },
+      {
+        "id": "topic-2-6",
+        "number": "2.6",
+        "title": "Derivative Rules: Constant, Sum, Difference, and Constant Multiple"
+      },
+      {
+        "id": "topic-2-7",
+        "number": "2.7",
+        "title": "Derivatives of cos x, sin x, eˣ, and ln x"
+      },
+      {
+        "id": "topic-2-8",
+        "number": "2.8",
+        "title": "The Product Rule"
+      },
+      {
+        "id": "topic-2-9",
+        "number": "2.9",
+        "title": "The Quotient Rule"
+      },
+      {
+        "id": "topic-2-10",
+        "number": "2.10",
+        "title": "Finding the Derivatives of Tangent, Cotangent, Secant, and/or Cosecant Functions"
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "title": "Differentiation: Composite, Implicit, and Inverse Functions",
+    "topics": [
+      {
+        "id": "chain-rule",
+        "number": "3.1",
+        "title": "The Chain Rule"
+      },
+      {
+        "id": "topic-3-2",
+        "number": "3.2",
+        "title": "Implicit Differentiation"
+      },
+      {
+        "id": "topic-3-3",
+        "number": "3.3",
+        "title": "Differentiating Inverse Functions"
+      },
+      {
+        "id": "topic-3-4",
+        "number": "3.4",
+        "title": "Differentiating Inverse Trigonometric Functions"
+      },
+      {
+        "id": "topic-3-5",
+        "number": "3.5",
+        "title": "Selecting Procedures for Calculating Derivatives"
+      },
+      {
+        "id": "topic-3-6",
+        "number": "3.6",
+        "title": "Calculating Higher-Order Derivatives"
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "title": "Contextual Applications of Differentiation",
+    "topics": [
+      {
+        "id": "rates",
+        "number": "4.1",
+        "title": "Interpreting the Meaning of the Derivative in Context"
+      },
+      {
+        "id": "topic-4-2",
+        "number": "4.2",
+        "title": "Straight-Line Motion: Connecting Position, Velocity, and Acceleration"
+      },
+      {
+        "id": "topic-4-3",
+        "number": "4.3",
+        "title": "Rates of Change in Applied Contexts Other Than Motion"
+      },
+      {
+        "id": "topic-4-4",
+        "number": "4.4",
+        "title": "Introduction to Related Rates"
+      },
+      {
+        "id": "topic-4-5",
+        "number": "4.5",
+        "title": "Solving Related Rates Problems"
+      },
+      {
+        "id": "topic-4-6",
+        "number": "4.6",
+        "title": "Approximating Values of a Function Using Local Linearity and Linearization"
+      },
+      {
+        "id": "topic-4-7",
+        "number": "4.7",
+        "title": "Using L’Hospital’s Rule for Determining Limits of Indeterminate Forms"
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "title": "Analytical Applications of Differentiation",
+    "topics": [
+      {
+        "id": "mean-value",
+        "number": "5.1",
+        "title": "Using the Mean Value Theorem"
+      },
+      {
+        "id": "topic-5-2",
+        "number": "5.2",
+        "title": "Extreme Value Theorem, Global Versus Local Extrema, and Critical Points"
+      },
+      {
+        "id": "topic-5-3",
+        "number": "5.3",
+        "title": "Determining Intervals on Which a Function Is Increasing or Decreasing"
+      },
+      {
+        "id": "topic-5-4",
+        "number": "5.4",
+        "title": "Using the First Derivative Test to Determine Relative (Local) Extrema"
+      },
+      {
+        "id": "topic-5-5",
+        "number": "5.5",
+        "title": "Using the Candidates Test to Determine Absolute (Global) Extrema"
+      },
+      {
+        "id": "topic-5-6",
+        "number": "5.6",
+        "title": "Determining Concavity of Functions over Their Domains"
+      },
+      {
+        "id": "topic-5-7",
+        "number": "5.7",
+        "title": "Using the Second Derivative Test to Determine Extrema"
+      },
+      {
+        "id": "topic-5-8",
+        "number": "5.8",
+        "title": "Sketching Graphs of Functions and Their Derivatives"
+      },
+      {
+        "id": "topic-5-9",
+        "number": "5.9",
+        "title": "Connecting a Function, Its First Derivative, and Its Second Derivative"
+      },
+      {
+        "id": "topic-5-10",
+        "number": "5.10",
+        "title": "Introduction to Optimization Problems"
+      },
+      {
+        "id": "topic-5-11",
+        "number": "5.11",
+        "title": "Solving Optimization Problems"
+      },
+      {
+        "id": "topic-5-12",
+        "number": "5.12",
+        "title": "Exploring Behaviors of Implicit Relations"
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "title": "Integration and Accumulation of Change",
+    "topics": [
+      {
+        "id": "integrals",
+        "number": "6.1",
+        "title": "Exploring Accumulations of Change"
+      },
+      {
+        "id": "topic-6-2",
+        "number": "6.2",
+        "title": "Approximating Areas with Riemann Sums"
+      },
+      {
+        "id": "topic-6-3",
+        "number": "6.3",
+        "title": "Riemann Sums, Summation Notation, and Definite Integral Notation"
+      },
+      {
+        "id": "topic-6-4",
+        "number": "6.4",
+        "title": "The Fundamental Theorem of Calculus and Accumulation Functions"
+      },
+      {
+        "id": "topic-6-5",
+        "number": "6.5",
+        "title": "Interpreting the Behavior of Accumulation Functions Involving Area"
+      },
+      {
+        "id": "topic-6-6",
+        "number": "6.6",
+        "title": "Applying Properties of Definite Integrals"
+      },
+      {
+        "id": "topic-6-7",
+        "number": "6.7",
+        "title": "The Fundamental Theorem of Calculus and Definite Integrals"
+      },
+      {
+        "id": "topic-6-8",
+        "number": "6.8",
+        "title": "Finding Antiderivatives and Indefinite Integrals: Basic Rules and Notation"
+      },
+      {
+        "id": "topic-6-9",
+        "number": "6.9",
+        "title": "Integrating Using Substitution"
+      },
+      {
+        "id": "topic-6-10",
+        "number": "6.10",
+        "title": "Integrating Functions Using Long Division and Completing the Square"
+      },
+      {
+        "id": "topic-6-14",
+        "number": "6.14",
+        "title": "Selecting Techniques for Antidifferentiation"
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "title": "Differential Equations",
+    "topics": [
+      {
+        "id": "equations",
+        "number": "7.1",
+        "title": "Modeling Situations with Differential Equations"
+      },
+      {
+        "id": "topic-7-2",
+        "number": "7.2",
+        "title": "Verifying Solutions for Differential Equations"
+      },
+      {
+        "id": "topic-7-3",
+        "number": "7.3",
+        "title": "Sketching Slope Fields"
+      },
+      {
+        "id": "topic-7-4",
+        "number": "7.4",
+        "title": "Reasoning Using Slope Fields"
+      },
+      {
+        "id": "topic-7-6",
+        "number": "7.6",
+        "title": "Finding General Solutions Using Separation of Variables"
+      },
+      {
+        "id": "topic-7-7",
+        "number": "7.7",
+        "title": "Finding Particular Solutions Using Initial Conditions and Separation of Variables"
+      },
+      {
+        "id": "topic-7-8",
+        "number": "7.8",
+        "title": "Exponential Models with Differential Equations"
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "title": "Applications of Integration",
+    "topics": [
+      {
+        "id": "average",
+        "number": "8.1",
+        "title": "Finding the Average Value of a Function on an Interval"
+      },
+      {
+        "id": "topic-8-2",
+        "number": "8.2",
+        "title": "Connecting Position, Velocity, and Acceleration of Functions Using Integrals"
+      },
+      {
+        "id": "topic-8-3",
+        "number": "8.3",
+        "title": "Using Accumulation Functions and Definite Integrals in Applied Contexts"
+      },
+      {
+        "id": "topic-8-4",
+        "number": "8.4",
+        "title": "Finding the Area Between Curves Expressed as Functions of x"
+      },
+      {
+        "id": "topic-8-5",
+        "number": "8.5",
+        "title": "Finding the Area Between Curves Expressed as Functions of y"
+      },
+      {
+        "id": "topic-8-6",
+        "number": "8.6",
+        "title": "Finding the Area Between Curves That Intersect at More Than Two Points"
+      },
+      {
+        "id": "topic-8-7",
+        "number": "8.7",
+        "title": "Volumes with Cross Sections: Squares and Rectangles"
+      },
+      {
+        "id": "topic-8-8",
+        "number": "8.8",
+        "title": "Volumes with Cross Sections: Triangles and Semicircles"
+      },
+      {
+        "id": "topic-8-9",
+        "number": "8.9",
+        "title": "Volume with Disc Method: Revolving Around the x- or y-Axis"
+      },
+      {
+        "id": "topic-8-10",
+        "number": "8.10",
+        "title": "Volume with Disc Method: Revolving Around Other Axes"
+      },
+      {
+        "id": "topic-8-11",
+        "number": "8.11",
+        "title": "Volume with Washer Method: Revolving Around the x- or y-Axis"
+      },
+      {
+        "id": "topic-8-12",
+        "number": "8.12",
+        "title": "Volume with Washer Method: Revolving Around Other Axes"
+      }
+    ]
+  }
+]

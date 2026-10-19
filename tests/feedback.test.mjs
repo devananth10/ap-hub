@@ -86,7 +86,7 @@ test('HTTP reports attach canonical metadata for any displayed position, retain 
     updateReportStatus(db,rows[0].id,'reviewed');updateReportStatus(db,rows[0].id,'resolved');
     assert.equal(db.prepare('SELECT status FROM question_reports WHERE id=?').get(rows[0].id).status,'resolved');
     assert.equal(db.prepare('SELECT COUNT(*) AS n FROM question_reports WHERE question_id=?').get(entry.id).n,5);
-    assert.equal(practiceEntries().length,1001);
+    assert.equal(practiceEntries({courseId:'chemistry'}).length,1001);
   } finally {db?.close();f.cleanup();}
 });
 

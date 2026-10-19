@@ -53,11 +53,11 @@ test('finishing grades remaining selections, counts unanswered as incorrect, and
   assert.deepEqual(sessionReducer(reviewed, { type: 'restart' }), initialSession);
 });
 
-test('a complete 1001-question session scores correctly with no persistence or rounding drift', () => {
+test('a complete published-bank session scores correctly with no persistence or rounding drift', () => {
   let state = initialSession;
   for (const question of questions) state = check(select(state, question, question.correctIndex), question);
   state = sessionReducer(state, { type: 'finish' });
-  assert.deepEqual(sessionScore(questions, state.answers), { correct: 1001, answered: 1001, total: 1001, percent: 100 });
+  assert.deepEqual(sessionScore(questions, state.answers), { correct: questions.length, answered: questions.length, total: questions.length, percent: 100 });
   assert.deepEqual(sessionScore([], {}), { correct: 0, answered: 0, total: 0, percent: 0 });
 });
 

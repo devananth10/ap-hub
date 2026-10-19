@@ -1,0 +1,193 @@
+{
+  "topicNumber": "1.1",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "87f2ebdf34f87d6fdbc8186357c22ba6677d7b7c6f04d22952e00a7196db3925",
+  "scopeReview": "CED Topic 1.1 CHA-1.A: instantaneous change interpreted through nonzero shrinking-interval averages. No formal differentiation rules, integration, MVT or BC-only content.",
+  "varietyReview": "Four numerical rate calculations plus a local-line slope, table estimation, zero-denominator reasoning, units/sign interpretation, disagreement of one-sided rates, limited-data inference and comparison of speed histories. Foundational 3; standard 5; multistep/conceptual challenge 3.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-1-1-001",
+      "independentReasoning": "An independent unit check and difference calculation give displacement 27 m and duration 3 s. The unique option equal to their ratio is 9 m/s; no constant-speed assumption was made.",
+      "optionReview": [
+        "This is the position change alone; it omits division by the elapsed time.",
+        "Correct: the position changes by 27 m during 3 s, giving 9 m/s.",
+        "This is the elapsed time, not the change in position divided by time.",
+        "This uses an initial position as a rate; a position is not a quotient of changes."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "secant",
+        "inputs": [
+          2,
+          18,
+          5,
+          45
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-1-002",
+      "independentReasoning": "The deviations from 6 have magnitudes 0.2, 0.02, 0.002 with opposite signs on the two sides. This is an estimation item; the wording deliberately does not claim a finite table proves a limit.",
+      "optionReview": [
+        "Shrinking time intervals do not force their position-change/time-change ratios to approach zero.",
+        "The input time 4 s is not a velocity and has different units.",
+        "Correct: the short-interval rates on both sides approach 6 m/s.",
+        "Adding the two limiting rates double-counts the same local rate."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "6 m/s"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-1-003",
+      "independentReasoning": "The denominator is exactly zero regardless of f(a), including for a nonzero constant function. A line of slope 2 has all nonzero-interval rates 2, disproving the claim that all rates must be zero.",
+      "optionReview": [
+        "An undefined zero-length quotient does not rule out a meaningful instantaneous rate obtained by a limiting process.",
+        "Average rates on nonzero intervals can have any sign and need not be zero.",
+        "The interval length places no condition on the function value at its endpoint.",
+        "Correct: the denominator a−a is zero, so the quotient is undefined."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The formula divides by a change in the input equal to zero."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-1-004",
+      "independentReasoning": "The independent line equation through the supplied points is y=3x−2; it also passes through (4,10). The prompt states the limiting local direction, so it does not infer an exact tangent solely from a distant secant.",
+      "optionReview": [
+        "Correct: the reference line has slope (13−7)/(5−3)=3.",
+        "This is the vertical change without division by the horizontal change.",
+        "This is the horizontal change, not the slope.",
+        "The height of the central point is a function value, not a rate."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "line-slope",
+        "inputs": [
+          3,
+          7,
+          5,
+          13
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-1-005",
+      "independentReasoning": "As a separate check, the coefficient of a small time increment for the quadratic at 3 is 2·4·3=24. Substituting h=0.01 and h=−0.01 gives 24.04 and 23.96, consistent with the algebra and a unique numerical choice.",
+      "optionReview": [
+        "This is s(3), the position, and not a rate of change.",
+        "Correct: expanding and cancelling gives the average rate 24+4h, which approaches 24.",
+        "This keeps only one of the two equal contributions from expanding (3+h)².",
+        "Both differences approach zero, but their quotient approaches 24, not zero."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "quadratic-rate",
+        "inputs": [
+          4,
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-1-006",
+      "independentReasoning": "A line T(t)=20−1.5t has this local rate with noon temperature 20, while T(t)=30−1.5t+t² has the same noon rate but changing later rates. These independent examples eliminate the value and global-constancy distractors.",
+      "optionReview": [
+        "This confuses a rate measured in °C/min with a temperature measured in °C.",
+        "Local instantaneous behavior does not impose a constant rate on later intervals.",
+        "Correct: the negative sign indicates a decreasing temperature; the magnitude gives the local rate.",
+        "Shrinking the intervals need not make the rate quotient approach zero."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Near noon, temperature is decreasing at approximately 1.5 °C per minute."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-1-007",
+      "independentReasoning": "Constructing the line explicitly gives s(t)=12−3t, which returns both supplied positions and changes by −3h over every increment h. Thus the ratio is always −3, not merely an endpoint average.",
+      "optionReview": [
+        "This gives the magnitude but loses the negative direction of the position change.",
+        "This is the final position, not a rate.",
+        "This uses the change in position without dividing by two seconds.",
+        "Correct: a straight position graph has the same slope (6−12)/(2−0)=−3 throughout."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "secant",
+        "inputs": [
+          0,
+          12,
+          2,
+          6
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-1-008",
+      "independentReasoning": "A continuous broken-line position model with slope 4 before c and −2 after c realizes the data. Each side keeps its own slope on arbitrarily short intervals, so 1 fails both sides and neither one-sided value is common.",
+      "optionReview": [
+        "Correct: two different approaching rates cannot represent one common local rate.",
+        "Averaging incompatible side behaviors does not make them approach a common value.",
+        "Earlier times do not take priority over the stated right-side behavior.",
+        "Later times do not override conflicting behavior from earlier intervals."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The two sides do not support a single common instantaneous rate at c."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-1-009",
+      "independentReasoning": "Independent dimensional arithmetic gives 30/2=15 after scaling numerator and denominator by 100. A nonlinear volume change over the interval can preserve the total 0.30 L while changing either endpoint rate; therefore only the average is guaranteed.",
+      "optionReview": [
+        "Endpoint instantaneous rates are not determined by one interval’s total change.",
+        "Correct: the measured ratio is 0.30/0.02=15 L/min for that interval.",
+        "The same interval average can occur for functions with different endpoint rates.",
+        "A single interval measurement does not establish constant behavior."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "An average rate of 15 liters per minute over the recorded interval"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-1-010",
+      "independentReasoning": "For a concrete separate model, cyclist one travels 12 m/s throughout; cyclist two travels 8 m/s for the first 10 s and 16 m/s for the last 10 s. Both cover 240 m, but the instantaneous speeds away from the switching time differ.",
+      "optionReview": [
+        "Different speed histories can have the same total distance over the same duration.",
+        "The distance/time ratio does not imply constancy.",
+        "Correct: equal total distances and durations give equal average speeds without prescribing local behavior.",
+        "The data do not force a difference at the start; equal starting speeds are also possible."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Their average speeds over the interval are equal, but their speeds at a specified instant need not be equal."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-1-011",
+      "independentReasoning": "A separate coefficient-of-increment calculation gives 5−2·4=−3. Values h=0.1 and h=−0.1 produce −3.1 and −2.9, checking the sign and distinguishing the positive position from its negative rate.",
+      "optionReview": [
+        "This takes the position p(4) as a velocity.",
+        "This discards the negative direction of the approaching rate.",
+        "This confuses a quadratic coefficient with the local rate.",
+        "Correct: the quotient simplifies to −3−h, whose approaching value is −3."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "quadratic-rate",
+        "inputs": [
+          -1,
+          5,
+          4
+        ]
+      }
+    }
+  ]
+}

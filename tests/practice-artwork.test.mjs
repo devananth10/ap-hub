@@ -27,7 +27,7 @@ test("invalid or mismatched practice scopes cannot leak unrelated questions", ()
   }
 });
 test("approved practice stays scoped and the removed demo is not counted", () => {
-  assert.equal(practiceEntries().length, 1001);
+  assert.equal(practiceEntries({courseId:'chemistry'}).length, 1001);
   const scope = { courseId: "chemistry", unitNumber: 1, topicId: "electron-configuration" };
   assert.equal(practiceEntries(scope).length, 11);
   assert.equal(practiceEntries({ courseId: "biology" }).length, 0);
@@ -82,8 +82,9 @@ test("all 91 Chemistry topics match the verified official inventory and retain s
 
 test("bulk-authorized publication covers every Chemistry topic exactly once without leaking other subjects", () => {
   const chemistry = courses.find(course => course.id === "chemistry");
-  assert.equal(questionBatches.length, 91);
-  assert.equal(new Set(questionBatches.map(batch => batch.topicId)).size, 91);
+  const chemistryBatches = questionBatches.filter(batch => batch.courseId === 'chemistry');
+  assert.equal(chemistryBatches.length, 91);
+  assert.equal(new Set(chemistryBatches.map(batch => batch.topicId)).size, 91);
   const publishedIds = new Set();
   for (const unit of chemistry.units) {
     assert.equal(practiceEntries({ courseId: "chemistry", unitNumber: unit.number }).length, unit.topics.length * 11);
@@ -101,7 +102,7 @@ test("bulk-authorized publication covers every Chemistry topic exactly once with
     }
   }
   assert.equal(publishedIds.size, 1001);
-  for (const course of courses.filter(course => course.id !== "chemistry")) {
+  for (const course of courses.filter(course => !["chemistry","calculus-ab"].includes(course.id))) {
     assert.equal(practiceCount({ courseId: course.id }), 0);
     assert.equal(practiceEntries({ courseId: course.id }).length, 0);
   }

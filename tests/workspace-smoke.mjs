@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { courses } from '../src/lib/courses.ts';
 import { publishOfficialResources, resourcesForTopic } from '../src/lib/resource-policy.ts';
+import { practiceCount } from '../src/lib/practice-scope.ts';
 const resources=publishOfficialResources(JSON.parse(readFileSync('src/config/official-resources.json','utf8')),courses);
 const base=process.env.BASE_URL || 'http://127.0.0.1:3000';
 const strip=html=>html.replace(/<!--.*?-->/g,'');
@@ -25,6 +26,6 @@ for(const unit of courses.find(course=>course.id==='chemistry').units){
 }
 assert.equal(total,91);
 const empty=strip(await (await fetch(`${base}/courses/calculus-ab/limits`)).text());
-assert.ok(empty.includes('No videos yet') && empty.includes('0 MCQs available'));
+assert.ok(empty.includes('No videos yet') && empty.includes(`${practiceCount({courseId:'calculus-ab',unitNumber:1,topicId:'limits'})} MCQs available`));
 assert.ok(!empty.includes('class="video-play"') && !empty.includes('youtube-nocookie.com/embed/'));
-console.log('PASS all 91 Chemistry workspaces: videos, topic counts, optional notes, tabs and scoped Practice; empty Calculus workspace has no player or fake questions.');
+console.log('PASS all 91 Chemistry workspaces: videos, topic counts, optional notes, tabs and scoped Practice; Calculus shows actual published counts without an unapproved video.');
