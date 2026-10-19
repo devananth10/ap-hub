@@ -1,0 +1,287 @@
+{
+  "topicNumber": "2.2",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "e16cb09e7114f22c952399c0f06910edeefc11b35207d822fc82f2a6ea146ee0",
+  "scopeReview": "CED CHA-2.B.2–4 and CHA-2.C.1: derivative function, notation, equivalent limit forms and tangent-line slopes/equations. Derivatives are derived from limits; power/product/chain rules are not assessed before their topics. Domain restrictions are explicit.",
+  "varietyReview": "Definition selection, identifying a base input, cubic point derivative, point-slope construction, derivative versus coordinate ratio, two derivative functions, unequal one-sided quotient limits, equivalent notation, tangent intercept and horizontal tangent height.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-2-2-001",
+      "independentReasoning": "Check numerator and denominator roles separately: f(x+h)−f(x) is the output change and h is exactly (x+h)−x. For the constant function f=1 the omitted-subtraction expression fails, while any fixed-h quotient in a nonlinear function can differ from the limit. Only the full definition supplies all parts.",
+      "optionReview": [
+        "This omits subtraction of the base output f(x).",
+        "This is an average rate for a finite input change, not the defining limiting rate.",
+        "This takes the limit of the output-change to input-change ratio while holding the base input x fixed.",
+        "The subtracted value and denominator do not describe the required increment from x to x+h."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "lim(h→0) [f(x+h)−f(x)]/h"
+      }
+    },
+    {
+      "questionId": "calc-ab-2-2-002",
+      "independentReasoning": "Identify the base point from both numerator terms before interpreting h→0. The value 5 appears inside f, while h is only the increment. A separate rationalization gives 1/(2√5), confirming that this is a slope rather than the height √5 or a derivative at the endpoint 0.",
+      "optionReview": [
+        "The value at the base input is √5, whereas this expression is a limiting rate.",
+        "The increment tends to zero but the fixed base input is 5, not 0.",
+        "Only one term in the numerator is constant; the other changes with h.",
+        "The numerator is f(5+h)−f(5), with base input 5 and input increment h."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "f′(5)"
+      }
+    },
+    {
+      "questionId": "calc-ab-2-2-003",
+      "independentReasoning": "Expand the difference-of-cubes factorization to verify the exact cancellation, then evaluate the remaining three terms independently at 2. The raw original quotient at nearby inputs is checked separately. This computes from the definition rather than assessing an unintroduced differentiation rule.",
+      "optionReview": [
+        "Factoring x³−8 leaves x²+2x+4, which tends to 12 at input 2.",
+        "This is the point value f(2), not the derivative value.",
+        "This is f(2)/2, which is not the difference quotient in the prompt.",
+        "This omits one of the three contributions after factoring and evaluating."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 2,
+        "expression": [
+          "div",
+          [
+            "sub",
+            [
+              "pow",
+              "x",
+              3
+            ],
+            8
+          ],
+          [
+            "sub",
+            "x",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-2-2-004",
+      "independentReasoning": "Check both independent requirements for every candidate: slope and incidence. Setting x=3 in the correct equation gives y=−2; its slope is 4. The first distractor instead gives y=2, the second has slope −4, and the last gives y=22 at x=3.",
+      "optionReview": [
+        "This uses the wrong sign for the point’s output and passes through (3,2).",
+        "This line has slope 4 and passes through the actual point (3,−2).",
+        "This passes through the point but uses the opposite slope.",
+        "This uses the wrong base input and does not pass through (3,−2)."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "y+2=4(x−3)"
+      }
+    },
+    {
+      "questionId": "calc-ab-2-2-005",
+      "independentReasoning": "Compute the derivative from actual increments to see the constant 3 cancel, then compute y/x from the point (1,5). The two procedures give 2 and 5. This explicit affine counterexample disproves the idea that dy/dx generally means y divided by x.",
+      "optionReview": [
+        "The derivative of an affine line is its slope, not its height divided by the input.",
+        "The constant vertical offset does not contribute to output differences.",
+        "The derivative is the line’s constant rate of output change, whereas y/x uses the actual point values.",
+        "The derivative is obtained from nearby input changes before evaluation at 1."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "dy/dx=2, while y/x=5 at x=1."
+      }
+    },
+    {
+      "questionId": "calc-ab-2-2-006",
+      "independentReasoning": "Independent centered differences of the original quadratic at base inputs −1, 2 and 5 give rates −6, 0 and 6. Only the candidate 2x−4 matches all three; the exact expansion proves the function identity, while samples corroborate it without serving as a general identity proof.",
+      "optionReview": [
+        "This leaves an original squared term instead of its contribution to the normalized increment.",
+        "This drops the contribution −4 from the linear term’s difference.",
+        "This omits the contribution 2x from the squared term.",
+        "The quotient is 2x+h−4 for h≠0, leaving 2x−4 in the limit."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "sub",
+          [
+            "pow",
+            "x",
+            2
+          ],
+          [
+            "mul",
+            4,
+            "x"
+          ]
+        ],
+        "samplePoints": [
+          -1,
+          2,
+          5
+        ],
+        "candidates": {
+          "2x−4": [
+            "sub",
+            [
+              "mul",
+              2,
+              "x"
+            ],
+            4
+          ],
+          "x²−4": [
+            "sub",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            4
+          ],
+          "2x": [
+            "mul",
+            2,
+            "x"
+          ],
+          "−4": -4
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-2-2-007",
+      "independentReasoning": "Use the common denominator x(x+h) to check the numerator x−(x+h)=−h. At any fixed nonzero x a sufficiently small h avoids the other forbidden denominator. Centered differences of the original reciprocal at −2,1,2 independently corroborate the candidate; the exact algebra establishes the full nonzero-domain formula.",
+      "optionReview": [
+        "Combining the difference quotient gives −1/[x(x+h)], tending to −1/x².",
+        "This loses the negative sign produced when subtracting the reciprocal values.",
+        "This omits one factor of x in the limiting denominator.",
+        "This is the wrong reciprocal power and coefficient for the first derivative."
+      ],
+      "check": {
+        "type": "derivative-function",
+        "expression": [
+          "div",
+          1,
+          "x"
+        ],
+        "samplePoints": [
+          -2,
+          1,
+          2
+        ],
+        "candidates": {
+          "−1/x²": [
+            "div",
+            -1,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          "1/x²": [
+            "div",
+            1,
+            [
+              "pow",
+              "x",
+              2
+            ]
+          ],
+          "−1/x": [
+            "div",
+            -1,
+            "x"
+          ],
+          "−2/x³": [
+            "div",
+            -2,
+            [
+              "pow",
+              "x",
+              3
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-2-2-008",
+      "independentReasoning": "Apply the two-sided-limit criterion directly to the given quotient, not to the original function’s values. The supplied finite but unequal rates violate equality of the side limits. No assertion about the general continuity/differentiability converse is needed for this definition question.",
+      "optionReview": [
+        "Unequal one-sided limits are not combined by averaging.",
+        "The defining limit requires the same finite value from both increment directions.",
+        "The ordinary two-sided derivative also requires the negative-increment limit.",
+        "Opposite limiting signs do not force a common limit of zero."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It does not exist as a finite two-sided derivative because the one-sided quotient limits differ."
+      }
+    },
+    {
+      "questionId": "calc-ab-2-2-009",
+      "independentReasoning": "Use the explicit test function f(x)=10−x, which has derivative −1 at 4. Its derivative quotient equals −1, its value at 4 is 6, its coordinate-ratio limit is 3/2, and its unnormalized increment limit is 0. This independently confirms the definition match and disproves every proposed alternative as a guaranteed value.",
+      "optionReview": [
+        "A derivative value does not determine the function height at that input.",
+        "This is not the normalized output increment in the derivative definition.",
+        "This is the equivalent input-approach form of the derivative at 4.",
+        "This lacks division by the input change h."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "lim(x→4) [f(x)−f(4)]/(x−4)"
+      }
+    },
+    {
+      "questionId": "calc-ab-2-2-010",
+      "independentReasoning": "Independently solve y=mx+b at the known point: 2=(1/4)·4+b gives b=1. Substituting x=0 into the point-slope form yields the same intercept. The slope is supplied, so no differentiation rule beyond this topic is required.",
+      "optionReview": [
+        "This is the output at the tangent point, not the y-intercept.",
+        "This reverses the subtraction in the intercept calculation.",
+        "This is the input coordinate at the tangent point.",
+        "The line passes through (4,2), so b=2−(1/4)·4=1."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "evaluate",
+        "inputs": [
+          4
+        ],
+        "expression": [
+          "sub",
+          [
+            "sqrt",
+            4
+          ],
+          [
+            "mul",
+            [
+              "div",
+              1,
+              4
+            ],
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-2-2-011",
+      "independentReasoning": "Compute the original point value and derivative limit separately: the squared term vanishes at 2, while h²/h=h tends to zero. The only horizontal line through the actual point is y=7; each alternative fails either the slope condition or the incidence condition.",
+      "optionReview": [
+        "The tangent is horizontal and passes through (2,f(2))=(2,7).",
+        "A zero slope does not force the graph’s point height to be zero.",
+        "This is a vertical line, not a line of slope zero.",
+        "This line has slope 2 rather than the supplied derivative value 0."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "y=7"
+      }
+    }
+  ]
+}

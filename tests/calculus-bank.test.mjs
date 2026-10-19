@@ -158,3 +158,19 @@ test('IVT models check strict endpoint bracketing, distinct tabular crossings an
   for(const i of [0,4,10])assert.throws(()=>verifyCalculusQuestion({...batch.questions[i],correctIndex:(batch.questions[i].correctIndex+1)%4},qa.questions[i]),/IVT .*key/);
   assert.throws(()=>verifyCalculusQuestion(batch.questions[4],{...qa.questions[4],tableSha256:'stale'}),/Table changed/);
 });
+test('tabular rates use actual endpoint differences and retain table review bindings',()=>{
+  const batch=questionBatches.find(batch=>batch.courseId==='calculus-ab'&&batch.topicId==='derivatives');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-2-1.json','utf8'));
+  verifyCalculusQuestion(batch.questions[0],qa.questions[0]);
+  assert.throws(()=>verifyCalculusQuestion({...batch.questions[0],correctIndex:(batch.questions[0].correctIndex+1)%4},qa.questions[0]),/table rate key/);
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[0],{...qa.questions[0],check:{...qa.questions[0].check,end:1}}),/zero-length/);
+});
+test('derivative functions are corroborated from original function differences at varied nonzero-domain inputs',()=>{
+  const batch=questionBatches.find(batch=>batch.courseId==='calculus-ab'&&batch.topicId==='topic-2-2');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-2-2.json','utf8'));
+  for(const i of [5,6])verifyCalculusQuestion(batch.questions[i],qa.questions[i]);
+  assert.throws(()=>verifyCalculusQuestion({...batch.questions[6],correctIndex:(batch.questions[6].correctIndex+1)%4},qa.questions[6]),/derivative function key/);
+  const review=structuredClone(qa.questions[6]);review.check.samplePoints=[0,1,2];
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[6],review),/domain/);
+  review.check.samplePoints=[1,1,1];assert.throws(()=>verifyCalculusQuestion(batch.questions[6],review),/distinct derivative/);
+});

@@ -116,7 +116,28 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='ivt-bracket') {
+  if (review.check.type==='derivative-function') {
+    const check=review.check,h=check.step||0.001;
+    assert.ok(new Set(check.samplePoints).size>=3&&check.samplePoints.every(Number.isFinite),'Need distinct derivative verification inputs');
+    const matches=question.options.map(option=>{
+      const candidate=check.candidates[option];assert.ok(candidate,'Missing derivative candidate');
+      return check.samplePoints.every(x=>{
+        const finiteDifference=(evaluateExpression(check.expression,x+h)-evaluateExpression(check.expression,x-h))/(2*h);
+        return Math.abs(evaluateExpression(candidate,x)-finiteDifference)<(check.tolerance||0.00001);
+      });
+    });
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique derivative model');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' derivative function key');
+  } else if (review.check.type==='table-rate') {
+    const check=review.check,table=practiceTables[question.id];assert.ok(table);
+    const rows=table.rows.map(row=>row.map(s=>Number(s.replace('−','-'))));
+    const first=rows.find(([x])=>x===check.start),last=rows.find(([x])=>x===check.end);
+    assert.ok(first&&last&&check.start!==check.end,'Missing or zero-length rate interval');
+    const rate=(last[1]-first[1])/(last[0]-first[0]);
+    const matches=question.options.map(option=>Math.abs(numericalOption(option)-rate)<1e-10);
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique tabular rate');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' table rate key');
+  } else if (review.check.type==='ivt-bracket') {
     const check=review.check,matches=question.options.map(option=>{
       const intervals=intervalOption(option);assert.equal(intervals.length,1);
       const {lo,hi}=intervals[0];assert.ok(Number.isFinite(lo)&&Number.isFinite(hi));

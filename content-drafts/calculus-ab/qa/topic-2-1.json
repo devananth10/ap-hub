@@ -1,0 +1,242 @@
+{
+  "topicNumber": "2.1",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "e207ed48c7d6c231a3471f11e9d231cb1a6dd3df17b942ef3b0181ac0390c20f",
+  "scopeReview": "CED CHA-2.A.1 and CHA-2.B.1: average-rate difference quotients and their limits for instantaneous rates. Preserves legacy topic ID derivatives. Uses algebraic definitions rather than power/product/chain rules; explicitly one-sided endpoint rate.",
+  "varietyReview": "Original exact table, cubic net displacement, a quadratic difference quotient, movement despite zero average, units, finite-h versus limiting rates, a reciprocal model, reversing both quotient signs, a clock-origin interpretation, endpoint rationalization and production cost.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-2-1-001",
+      "independentReasoning": "Read both endpoint coordinates from the actual original table, not from an assumed formula. The displacement is 36 meters and elapsed time is 4 seconds. Dividing yields 9 m/s; each distractor omits a different part of the quotient, and no instantaneous velocity is inferred.",
+      "optionReview": [
+        "This divides the final position 40 by the final time 5 instead of using changes from the stated starting time.",
+        "The position change is 40−4=36 meters over 5−1=4 seconds.",
+        "This divides final position 40 by elapsed time 4 while omitting the initial position.",
+        "This is the position change in meters before dividing by elapsed seconds."
+      ],
+      "check": {
+        "type": "table-rate",
+        "start": 1,
+        "end": 5
+      },
+      "tableSha256": "295f5381921512f58da791057506d8c7e2d5eb752399502cdf60953ac7da920d"
+    },
+    {
+      "questionId": "calc-ab-2-1-002",
+      "independentReasoning": "Independent endpoint arithmetic gives equal positions. The numerator of the average-rate quotient is therefore exactly zero while the denominator is 3≠0. The model uses the separately computed endpoint data, and the nonconstant position formula prevents treating zero average displacement as no motion.",
+      "optionReview": [
+        "The common endpoint position is not the change in position per unit time.",
+        "The elapsed time is not the velocity.",
+        "The endpoint positions both equal 4 meters, giving zero displacement over three seconds.",
+        "Dividing a common endpoint position by the final time does not compute the requested difference quotient."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "secant",
+        "inputs": [
+          1,
+          4,
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-2-1-003",
+      "independentReasoning": "Independently compare the linear-in-h term of the increment with the remaining quadratic error h²; after normalization the error is h and vanishes on both sides. The raw uncancelled difference quotient is sampled separately, not the simplified rate expression.",
+      "optionReview": [
+        "This is the position p(2), not the instantaneous position-change rate.",
+        "This comes from p(2)/2, an average from a different interval, rather than the shrinking-interval limit.",
+        "Both changes vanish, so direct substitution gives an indeterminate form rather than a zero rate.",
+        "The difference quotient simplifies to 7+h for nonzero h and tends to 7."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 0,
+        "expression": [
+          "div",
+          [
+            "sub",
+            [
+              "add",
+              [
+                "pow",
+                [
+                  "add",
+                  2,
+                  "x"
+                ],
+                2
+              ],
+              [
+                "mul",
+                3,
+                [
+                  "add",
+                  2,
+                  "x"
+                ]
+              ]
+            ],
+            10
+          ],
+          "x"
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-2-1-004",
+      "independentReasoning": "Evaluate three actual positions: 4,0,4 at times 0,2,4. These verify the return and directly disprove constant position or zero distance. On each side of 2 the squared distance from 2 changes, so the whole-interval average cannot be used as a rate at every time.",
+      "optionReview": [
+        "Equal endpoint positions imply zero displacement, while interior positions can differ.",
+        "For example, s(0)=4 while s(2)=0, so the position changes.",
+        "Returning to the start can involve nonzero travel.",
+        "A zero average over a whole interval does not prescribe every local rate."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The particle returns to its starting position, but it need not be stationary throughout the interval."
+      }
+    },
+    {
+      "questionId": "calc-ab-2-1-005",
+      "independentReasoning": "Dimensional analysis independently identifies liters/minute, while the limit location identifies the instant 6 rather than an entire future time interval. The sign describes direction of change. Neither the amount, reciprocal units nor a permanent constant-rate prediction follows from this local statement.",
+      "optionReview": [
+        "The quotient describes a rate, not the amount V(6).",
+        "A negative change in liters divided by a change in minutes describes an instantaneous decrease.",
+        "This reverses the dependent and independent units.",
+        "An instantaneous rate at one time does not guarantee a constant rate on later intervals."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "At t=6 minutes, the water amount is decreasing at 0.8 liter per minute."
+      }
+    },
+    {
+      "questionId": "calc-ab-2-1-006",
+      "independentReasoning": "Independently evaluate the original function at 1 and 1/2: f(1)=5 and f(1/2)=5/2. At h=−1/2 the actual quotient is (5/2−5)/(−1/2)=5. The four candidate expressions then give 5, 6, −1 and −5/2, respectively, so exactly one survives this check. The exact algebra in the solution proves the equality for every permitted h rather than inferring an identity from one test.",
+      "optionReview": [
+        "This is the limiting instantaneous rate, but it omits the finite-interval correction 2h.",
+        "This keeps only the quadratic contribution and drops the linear-in-h increment.",
+        "Expanding the increment gives 6h+2h², which divided by h becomes 6+2h.",
+        "This is the output change before dividing by the input change h."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "6+2h"
+      }
+    },
+    {
+      "questionId": "calc-ab-2-1-007",
+      "independentReasoning": "Combine the two fractions using their common denominator before cancelling h. The domain includes a whole neighborhood of t=3, with 5+h nonzero. The raw quotient is independently evaluated at nonzero small positive and negative h; its negative sign also agrees with decreasing reciprocal values.",
+      "optionReview": [
+        "This loses the negative sign of the decreasing amount.",
+        "This is the amount W(3) with incorrect rate units.",
+        "This omits the limiting denominator 5 after combining the fractions.",
+        "Combining the difference quotient yields −20/(5+h), whose limit is −4."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 0,
+        "expression": [
+          "div",
+          [
+            "sub",
+            [
+              "div",
+              100,
+              [
+                "add",
+                5,
+                "x"
+              ]
+            ],
+            20
+          ],
+          "x"
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-2-1-008",
+      "independentReasoning": "Apply the sign identity to the entire numerator, not just one term, and separately to the denominator. Nonzero h permits division regardless of sign. As a check, an output change of 6 over an input change −2 gives −3 in both forms, not opposite signs or reciprocals.",
+      "optionReview": [
+        "The two sign reversals cancel and describe the same secant rate.",
+        "This ignores the simultaneous reversal of the denominator.",
+        "Reversing signs does not interchange numerator and denominator.",
+        "The algebra works for either sign of every nonzero h."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Q=R, because reversing both changes multiplies numerator and denominator by −1."
+      }
+    },
+    {
+      "questionId": "calc-ab-2-1-009",
+      "independentReasoning": "Interpret the time origin and dependent/input units separately. The h→0 limit identifies an instantaneous rate, and the negative sign identifies cooling. The alternatives confuse a local rate with a point value, average level or exact future finite change.",
+      "optionReview": [
+        "The derivative-type quotient does not specify the temperature value.",
+        "The input value 4 is four hours after noon, and the quotient units are degrees per hour.",
+        "The shrinking-interval rate at 4 is neither an interval-average temperature nor an average from noon.",
+        "A local rate at one instant does not determine all finite-interval changes."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "At 4 p.m., temperature is decreasing at 2°C per hour."
+      }
+    },
+    {
+      "questionId": "calc-ab-2-1-010",
+      "independentReasoning": "The domain t≥0 makes an explicit right-hand rate appropriate. The conjugate numerator is h, so cancellation is valid for every sampled h>0. The remaining denominator tends to 6≠0. Original-quotient samples on the stated side corroborate the exact rationalization.",
+      "optionReview": [
+        "This is s(0), the starting position rather than its rate.",
+        "This is the limiting conjugate denominator instead of its reciprocal.",
+        "The conjugate turns the quotient into 1/(√(h+9)+3), tending to 1/6.",
+        "The original vanishing numerator and denominator do not justify a zero quotient limit."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 0,
+        "side": "right",
+        "expression": [
+          "div",
+          [
+            "sub",
+            [
+              "sqrt",
+              [
+                "add",
+                "x",
+                9
+              ]
+            ],
+            3
+          ],
+          "x"
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-2-1-011",
+      "independentReasoning": "Independently subtract the endpoint outputs and inputs in the same order, checking dimensions dollars/kg. The reciprocal distractor both reverses the quotient and has the wrong natural units. All four displayed numerical rates differ, and no unprovided derivative is inferred.",
+      "optionReview": [
+        "This is the cost change without dividing by the production change.",
+        "This is the production change with incorrect cost-rate units.",
+        "This reverses the cost and production changes; the reciprocal would have kilograms-per-dollar units.",
+        "The cost increase is 12 dollars over an output increase of 4 kilograms."
+      ],
+      "check": {
+        "type": "numeric",
+        "operation": "secant",
+        "inputs": [
+          10,
+          45,
+          14,
+          57
+        ]
+      }
+    }
+  ]
+}

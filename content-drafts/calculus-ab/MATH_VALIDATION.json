@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 176,
+  "questionsChecked": 198,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -506,6 +506,56 @@
       "questionId": "calc-ab-1-16-011",
       "method": "ivt-values",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-1-001",
+      "method": "table-rate",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-1-002",
+      "method": "numeric",
+      "operation": "secant"
+    },
+    {
+      "questionId": "calc-ab-2-1-003",
+      "method": "punctured-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-1-007",
+      "method": "punctured-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-1-010",
+      "method": "punctured-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-1-011",
+      "method": "numeric",
+      "operation": "secant"
+    },
+    {
+      "questionId": "calc-ab-2-2-003",
+      "method": "punctured-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-2-006",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-2-007",
+      "method": "derivative-function",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-2-2-010",
+      "method": "numeric",
+      "operation": "evaluate"
     }
   ],
   "reasoningReviews": [
@@ -583,7 +633,19 @@
     "calc-ab-1-16-007",
     "calc-ab-1-16-008",
     "calc-ab-1-16-009",
-    "calc-ab-1-16-010"
+    "calc-ab-1-16-010",
+    "calc-ab-2-1-004",
+    "calc-ab-2-1-005",
+    "calc-ab-2-1-006",
+    "calc-ab-2-1-008",
+    "calc-ab-2-1-009",
+    "calc-ab-2-2-001",
+    "calc-ab-2-2-002",
+    "calc-ab-2-2-004",
+    "calc-ab-2-2-005",
+    "calc-ab-2-2-008",
+    "calc-ab-2-2-009",
+    "calc-ab-2-2-011"
   ],
   "humanReviewPerformed": false,
   "limitations": [

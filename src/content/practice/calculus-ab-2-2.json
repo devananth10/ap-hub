@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 2,
+  "topicId": "topic-2-2",
+  "questions": [
+    {
+      "id": "calc-ab-2-2-001",
+      "prompt": "Which expression defines the derivative function f′(x) at inputs where the finite limit exists?",
+      "options": [
+        "lim(h→0) f(x+h)/h",
+        "[f(x+h)−f(x)]/h for one fixed nonzero h",
+        "lim(h→0) [f(x+h)−f(x)]/h",
+        "lim(h→0) [f(x+h)−f(h)]/x"
+      ],
+      "correctIndex": 2,
+      "explanation": "For each fixed base input x, form the average rate over a nonzero increment h, then take h→0. If this finite two-sided limit exists, it is f′(x). Leaving out the base output, the correct input change or the limiting process changes the definition. A: This omits subtraction of the base output f(x). B: This is an average rate for a finite input change, not the defining limiting rate. C: This takes the limit of the output-change to input-change ratio while holding the base input x fixed. D: The subtracted value and denominator do not describe the required increment from x to x+h."
+    },
+    {
+      "id": "calc-ab-2-2-002",
+      "prompt": "Let f(x)=√x. Which derivative value is represented by lim(h→0) [√(5+h)−√5]/h?",
+      "options": [
+        "f(5)",
+        "f′(0)",
+        "The derivative of the constant √5",
+        "f′(5)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Match the quotient to [f(a+h)−f(a)]/h with a=5. Therefore the limit is f′(5). The square-root function is defined on a neighborhood of 5, so both small positive and negative increments are allowed. A: The value at the base input is √5, whereas this expression is a limiting rate. B: The increment tends to zero but the fixed base input is 5, not 0. C: Only one term in the numerator is constant; the other changes with h. D: The numerator is f(5+h)−f(5), with base input 5 and input increment h."
+    },
+    {
+      "id": "calc-ab-2-2-003",
+      "prompt": "For f(x)=x³, evaluate the derivative value f′(2) from the equivalent definition lim(x→2) [f(x)−f(2)]/(x−2).",
+      "options": [
+        "12",
+        "8",
+        "4",
+        "6"
+      ],
+      "correctIndex": 0,
+      "explanation": "Since f(2)=8 and x³−8=(x−2)(x²+2x+4), the quotient equals x²+2x+4 for x≠2. The limit is 4+4+4=12, so the tangent slope f′(2) is 12. A: Factoring x³−8 leaves x²+2x+4, which tends to 12 at input 2. B: This is the point value f(2), not the derivative value. C: This is f(2)/2, which is not the difference quotient in the prompt. D: This omits one of the three contributions after factoring and evaluating."
+    },
+    {
+      "id": "calc-ab-2-2-004",
+      "prompt": "A differentiable function has f(3)=−2 and f′(3)=4. Which equation is the tangent line to its graph at x=3?",
+      "options": [
+        "y−2=4(x−3)",
+        "y+2=4(x−3)",
+        "y+2=−4(x−3)",
+        "y+2=4(x+3)"
+      ],
+      "correctIndex": 1,
+      "explanation": "A tangent line at x=a passes through (a,f(a)) with slope f′(a). The point-slope equation is y−f(3)=f′(3)(x−3). Substituting gives y−(−2)=4(x−3), or y+2=4(x−3). A: This uses the wrong sign for the point’s output and passes through (3,2). B: This line has slope 4 and passes through the actual point (3,−2). C: This passes through the point but uses the opposite slope. D: This uses the wrong base input and does not pass through (3,−2)."
+    },
+    {
+      "id": "calc-ab-2-2-005",
+      "prompt": "For y=f(x)=2x+3, which statement correctly compares dy/dx with the ordinary ratio y/x at x=1?",
+      "options": [
+        "dy/dx=5, because a derivative always equals y/x.",
+        "dy/dx=3, because the constant term is the derivative.",
+        "dy/dx=2, while y/x=5 at x=1.",
+        "dy/dx=0, because x is fixed at 1."
+      ],
+      "correctIndex": 2,
+      "explanation": "For nonzero h, [f(x+h)−f(x)]/h=2h/h=2, so dy/dx=2. At x=1 the output is 5, giving the separate ordinary ratio y/x=5. Derivative notation is not a general instruction to divide the coordinates. A: The derivative of an affine line is its slope, not its height divided by the input. B: The constant vertical offset does not contribute to output differences. C: The derivative is the line’s constant rate of output change, whereas y/x uses the actual point values. D: The derivative is obtained from nearby input changes before evaluation at 1."
+    },
+    {
+      "id": "calc-ab-2-2-006",
+      "prompt": "For f(x)=x²−4x, which derivative function follows by expanding and simplifying [f(x+h)−f(x)]/h and then taking h→0?",
+      "options": [
+        "x²−4",
+        "2x",
+        "−4",
+        "2x−4"
+      ],
+      "correctIndex": 3,
+      "explanation": "Expand f(x+h)−f(x)=(x+h)²−4(x+h)−(x²−4x)=2xh+h²−4h. Dividing by h≠0 gives 2x+h−4. With base x fixed, taking h→0 gives f′(x)=2x−4 for every real x. A: This leaves an original squared term instead of its contribution to the normalized increment. B: This drops the contribution −4 from the linear term’s difference. C: This omits the contribution 2x from the squared term. D: The quotient is 2x+h−4 for h≠0, leaving 2x−4 in the limit."
+    },
+    {
+      "id": "calc-ab-2-2-007",
+      "prompt": "Let f(x)=1/x for x≠0. Which formula for f′(x), on that same nonzero domain, follows from the derivative definition?",
+      "options": [
+        "−1/x²",
+        "1/x²",
+        "−1/x",
+        "−2/x³"
+      ],
+      "correctIndex": 0,
+      "explanation": "For x≠0 and small nonzero h with x+h≠0, [1/(x+h)−1/x]/h=[−h/(x(x+h))]/h=−1/[x(x+h)]. As h→0 this approaches −1/x². The original function and this derivative both exclude x=0. A: Combining the difference quotient gives −1/[x(x+h)], tending to −1/x². B: This loses the negative sign produced when subtracting the reciprocal values. C: This omits one factor of x in the limiting denominator. D: This is the wrong reciprocal power and coefficient for the first derivative."
+    },
+    {
+      "id": "calc-ab-2-2-008",
+      "prompt": "At an input a, the quotient [f(a+h)−f(a)]/h approaches 2 as h→0⁺ and −3 as h→0⁻. What follows about the ordinary two-sided derivative f′(a)?",
+      "options": [
+        "It equals −1/2, the average of the two quotient limits.",
+        "It does not exist as a finite two-sided derivative because the one-sided quotient limits differ.",
+        "It equals 2 because positive increments determine every derivative.",
+        "It equals 0 because the quotients approach different signs."
+      ],
+      "correctIndex": 1,
+      "explanation": "The definition of f′(a) uses h→0 from both signs. Its one-sided limits here are 2 and −3, so the two-sided finite limit does not exist. Neither averaging nor choosing only one side supplies the ordinary derivative. A: Unequal one-sided limits are not combined by averaging. B: The defining limit requires the same finite value from both increment directions. C: The ordinary two-sided derivative also requires the negative-increment limit. D: Opposite limiting signs do not force a common limit of zero."
+    },
+    {
+      "id": "calc-ab-2-2-009",
+      "prompt": "A function has f′(4)=−1. Which expression is guaranteed to equal −1 by the derivative definition?",
+      "options": [
+        "f(4)",
+        "lim(x→4) f(x)/x",
+        "lim(x→4) [f(x)−f(4)]/(x−4)",
+        "lim(h→0) [f(4+h)−f(4)]"
+      ],
+      "correctIndex": 2,
+      "explanation": "The derivative at a is equivalently lim(x→a) [f(x)−f(a)]/(x−a), so the displayed difference quotient with denominator x−4 has value f′(4)=−1. The other expressions use a height, a coordinate ratio or an unnormalized change instead of the defining difference quotient. A: A derivative value does not determine the function height at that input. B: This is not the normalized output increment in the derivative definition. C: This is the equivalent input-approach form of the derivative at 4. D: This lacks division by the input change h."
+    },
+    {
+      "id": "calc-ab-2-2-010",
+      "prompt": "The tangent line to y=√x at x=4 has slope f′(4)=1/4. What is its y-intercept?",
+      "options": [
+        "2",
+        "−1",
+        "4",
+        "1"
+      ],
+      "correctIndex": 3,
+      "explanation": "The point on the curve is (4,√4)=(4,2). With slope 1/4, the tangent equation is y−2=(1/4)(x−4). Expanding gives y=x/4+1, so the y-intercept is 1. A: This is the output at the tangent point, not the y-intercept. B: This reverses the subtraction in the intercept calculation. C: This is the input coordinate at the tangent point. D: The line passes through (4,2), so b=2−(1/4)·4=1."
+    },
+    {
+      "id": "calc-ab-2-2-011",
+      "prompt": "For f(x)=(x−2)²+7, the derivative definition at 2 gives lim(h→0) h²/h=0. Which equation is its tangent line at x=2?",
+      "options": [
+        "y=7",
+        "y=0",
+        "x=2",
+        "y=2x+7"
+      ],
+      "correctIndex": 0,
+      "explanation": "The limiting quotient gives f′(2)=0, so the tangent slope is zero. The point value is f(2)=7. The point-slope equation y−7=0(x−2) reduces to y=7. A zero derivative refers to slope, not height. A: The tangent is horizontal and passes through (2,f(2))=(2,7). B: A zero slope does not force the graph’s point height to be zero. C: This is a vertical line, not a line of slope zero. D: This line has slope 2 rather than the supplied derivative value 0."
+    }
+  ]
+}

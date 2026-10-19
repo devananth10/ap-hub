@@ -1,9 +1,9 @@
 {
   "officialTopics": 81,
   "targetQuestions": 891,
-  "completedTopics": 16,
-  "questions": 176,
-  "numeric": 101,
+  "completedTopics": 18,
+  "questions": 198,
+  "numeric": 111,
   "repeatedPromptPatterns": [],
   "topics": [
     {
@@ -117,11 +117,23 @@
       "count": 11,
       "status": "validated",
       "file": "src/content/practice/calculus-ab-1-16.json"
+    },
+    {
+      "topic": "2.1",
+      "topicId": "derivatives",
+      "count": 11,
+      "status": "validated",
+      "file": "src/content/practice/calculus-ab-2-1.json"
+    },
+    {
+      "topic": "2.2",
+      "topicId": "topic-2-2",
+      "count": 11,
+      "status": "validated",
+      "file": "src/content/practice/calculus-ab-2-2.json"
     }
   ],
   "missing": [
-    "2.1",
-    "2.2",
     "2.3",
     "2.4",
     "2.5",
