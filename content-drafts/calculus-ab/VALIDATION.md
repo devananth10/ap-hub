@@ -1,5 +1,9 @@
 # Calculus AB validation and continuation notes
 
+## Topics 8.9–8.10 — 869 questions
+
+Twenty-two disk-method MCQs pass and are published: 79 complete topics, two topics/22 questions remaining. There are 495 programmatic corroborations and 374 reasoning reviews. Exact geometry checks shifted distances, axis direction, overlapping half-regions, filled disks across an internal axis, farthest-boundary switches and positive inverse-volume parameters. One actual radius graph and two nonuniform radius tables support their questions. All 108 tests, build, TypeScript, structural/math, standard/all-Calculus routes and frozen Chemistry pass. Both full browser sessions show all four reasons and finish 11/11; 8.10 passed at 390×844, viewport reset. Next: 8.11, then 8.12, then the full-course bank audit and verified GitHub checkpoint before any Flipped Math research.
+
 ## Topics 8.7–8.8 — 847 questions
 
 Twenty-two original MCQs pass and are published, with two original base diagrams and two tables. There are 480 programmatic corroborations and 367 reasoning reviews. Exact geometry checks the side/altitude, leg/hypotenuse, radius/diameter and full/half-circle factors; original linear graph widths are squared and integrated with exact corner/clipping formulas. Table side lengths are converted to area before trapezoids. Three distractor values were corrected to match their error descriptions, with no key changes. All 108 tests, TypeScript, build, structural/math, standard/Calculus routes and frozen Chemistry pass. Both full browser sessions finish 11/11 with all four option reasons; 8.8 passed at 390×844 and viewport reset. Next: 8.9; four topics/44 MCQs remain. Full-course audit and Flipped Math integration remain pending.

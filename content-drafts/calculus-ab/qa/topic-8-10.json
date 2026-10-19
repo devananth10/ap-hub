@@ -1,0 +1,423 @@
+{
+  "topicNumber": "8.10",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "ea52daece8ee533025fe2937b2b3b40251e928ae767495a82aeb47c65212ac62",
+  "scopeReview": "CED CHA-5.C.2: disks about other horizontal/vertical lines, distances before squaring, axes intersecting the region and piecewise farthest endpoint. No cylindrical shells or BC-only assessed method.",
+  "varietyReview": "Shifted polynomial, decreasing distance below an axis, negative vertical axis, horizontal square-root slices, translated sphere, translation invariance, internal-axis cylinder, farthest-boundary switch, nonuniform measured-distance table, general distance formula and positive scale calibration. Seven original-distance/table corroborations and four exact geometric reviews.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-8-10-001",
+      "independentReasoning": "Translate vertically by −2 independently: the region becomes 0≤Y≤x² rotated about Y=0, so its volume is π/5. This exact geometric translation corroborates the distance calculation.",
+      "optionReview": [
+        "This uses the upper ordinate 2+x² as a radius from y=0 instead of measuring from y=2.",
+        "This integrates radius x² rather than radius squared.",
+        "The radius is (2+x²)−2=x².",
+        "This uses maximum radius 1 for the full interval."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          "pi",
+          [
+            "pow",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            2
+          ]
+        ],
+        "start": 0,
+        "end": 1,
+        "optionExpressions": {
+          "π/5": [
+            "div",
+            "pi",
+            5
+          ],
+          "π/3": [
+            "div",
+            "pi",
+            3
+          ],
+          "π": "pi",
+          "83π/15": [
+            "div",
+            [
+              "mul",
+              83,
+              "pi"
+            ],
+            15
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-10-002",
+      "independentReasoning": "Independently this is a conical frustum with radii 4 and 2 and height 2. Its volume (π·2/3)(16+8+4)=56π/3 agrees with the disk integral. Radius remains positive throughout the stated interval.",
+      "optionReview": [
+        "This uses the x-coordinate as radius.",
+        "This integrates radius instead of disk area.",
+        "This uses maximum radius 4 over the full x-length 2.",
+        "The distance below the axis is 4−x, so integrate its square times π."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          "pi",
+          [
+            "pow",
+            [
+              "sub",
+              4,
+              "x"
+            ],
+            2
+          ]
+        ],
+        "start": 0,
+        "end": 2,
+        "optionExpressions": {
+          "56π/3": [
+            "div",
+            [
+              "mul",
+              56,
+              "pi"
+            ],
+            3
+          ],
+          "8π/3": [
+            "div",
+            [
+              "mul",
+              8,
+              "pi"
+            ],
+            3
+          ],
+          "6π": [
+            "mul",
+            6,
+            "pi"
+          ],
+          "32π": [
+            "mul",
+            32,
+            "pi"
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-10-003",
+      "independentReasoning": "Independently shift X=x+3, turning the region into 0≤X≤y² about X=0. The familiar coordinate-axis disk integral gives the same result and confirms the use of y-bounds rather than x-bounds.",
+      "optionReview": [
+        "A horizontal disk has radius (y²−3)−(−3)=y².",
+        "This integrates the radius without squaring it.",
+        "This does not accumulate the changing fourth-power disk area.",
+        "This doubles the same solid."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          "pi",
+          [
+            "pow",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            2
+          ]
+        ],
+        "start": 0,
+        "end": 2,
+        "optionExpressions": {
+          "32π/5": [
+            "div",
+            [
+              "mul",
+              32,
+              "pi"
+            ],
+            5
+          ],
+          "8π/3": [
+            "div",
+            [
+              "mul",
+              8,
+              "pi"
+            ],
+            3
+          ],
+          "16π": [
+            "mul",
+            16,
+            "pi"
+          ],
+          "64π/5": [
+            "div",
+            [
+              "mul",
+              64,
+              "pi"
+            ],
+            5
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-10-004",
+      "independentReasoning": "The cross-sectional area is linear in y, increasing from 0 to 9π. Mean area 9π/2 over height 9 gives 81π/2 independently. This checks the shifted axis and direction of integration.",
+      "optionReview": [
+        "This integrates radius rather than area.",
+        "The horizontal distance to the axis is √y, giving area πy.",
+        "This omits the factor 1/2 from the integral of y.",
+        "This is the greatest disk area, not the total volume."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          "pi",
+          [
+            "pow",
+            [
+              "sqrt",
+              "x"
+            ],
+            2
+          ]
+        ],
+        "start": 0,
+        "end": 9,
+        "optionExpressions": {
+          "81π/2": [
+            "div",
+            [
+              "mul",
+              81,
+              "pi"
+            ],
+            2
+          ],
+          "18π": [
+            "mul",
+            18,
+            "pi"
+          ],
+          "81π": [
+            "mul",
+            81,
+            "pi"
+          ],
+          "9π": [
+            "mul",
+            9,
+            "pi"
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-10-005",
+      "independentReasoning": "Independently the sphere formula gives (4/3)π·2³=32π/3. The enclosing radius-2 cylinder has length 4 and volume 16π, so the selected volume also has the expected smaller size.",
+      "optionReview": [
+        "This counts only half the sphere.",
+        "This is the bounding cylinder volume.",
+        "The translated semicircle gives a sphere of radius 2.",
+        "This is the maximum disk area rather than the volume."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          "pi",
+          [
+            "pow",
+            [
+              "sqrt",
+              [
+                "sub",
+                4,
+                [
+                  "pow",
+                  "x",
+                  2
+                ]
+              ]
+            ],
+            2
+          ]
+        ],
+        "start": -2,
+        "end": 2,
+        "optionExpressions": {
+          "32π/3": [
+            "div",
+            [
+              "mul",
+              32,
+              "pi"
+            ],
+            3
+          ],
+          "16π/3": [
+            "div",
+            [
+              "mul",
+              16,
+              "pi"
+            ],
+            3
+          ],
+          "16π": [
+            "mul",
+            16,
+            "pi"
+          ],
+          "4π": [
+            "mul",
+            4,
+            "pi"
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-10-006",
+      "independentReasoning": "Independently apply the rigid translation map (x,y)↦(x,y+7). It preserves lengths and sends the original rotation axis and generated solid to translated copies. No new inner radius or scale factor appears.",
+      "optionReview": [
+        "Coordinate translation does not add a fixed volume.",
+        "The radii are not multiplied by 7 when both region and axis move together.",
+        "Translation preserves whether each slice reaches the axis.",
+        "Every distance to the axis and every axial slice thickness is unchanged."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It stays the same."
+      }
+    },
+    {
+      "questionId": "calc-ab-8-10-007",
+      "independentReasoning": "Independently view the solid as a cylinder of radius 2 and length 3. The top portion sweeps a radius-1 disk already contained in the radius-2 disk swept by the bottom portion; adding or subtracting it would miscount overlap.",
+      "optionReview": [
+        "The filled disk radius is the larger axis-to-endpoint distance, 2.",
+        "This subtracts the shorter endpoint distance as an inner hole, though the segment includes the axis.",
+        "This adds overlapping disk contributions from both sides of the axis.",
+        "This uses only the shorter radius 1."
+      ],
+      "check": {
+        "type": "definite-integral",
+        "integrand": [
+          "mul",
+          "pi",
+          [
+            "pow",
+            2,
+            2
+          ]
+        ],
+        "start": 0,
+        "end": 3,
+        "optionExpressions": {
+          "12π": [
+            "mul",
+            12,
+            "pi"
+          ],
+          "9π": [
+            "mul",
+            9,
+            "pi"
+          ],
+          "15π": [
+            "mul",
+            15,
+            "pi"
+          ],
+          "3π": [
+            "mul",
+            3,
+            "pi"
+          ]
+        }
+      }
+    },
+    {
+      "questionId": "calc-ab-8-10-008",
+      "independentReasoning": "Independently evaluate the setup: the first volume is 8π and the second 19π/3, totaling 43π/3. Testing x=3 and x=5 confirms the farthest-endpoint change. No washer subtraction applies because there is no missing central radius.",
+      "optionReview": [
+        "This ignores the farther lower endpoint on [2,4].",
+        "The lower endpoint is farthest until x=4; afterward the upper endpoint is farther.",
+        "This ignores the expanding upper radius after 4.",
+        "This creates a false inner hole even though every segment includes the axis."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "π∫ from 2 to 4 of 4 dx + π∫ from 4 to 5 of (x−2)² dx"
+      }
+    },
+    {
+      "questionId": "calc-ab-8-10-009",
+      "independentReasoning": "Independently estimate ∫r² as 5/2+20=45/2 before multiplying by π. Adding 1 to each radius would give samples 2,3,5 and the incorrect estimate 13/2+34=81/2; those would be coordinates, not the already-measured distances.",
+      "optionReview": [
+        "This integrates radii rather than squared radii.",
+        "This adds the axis height to values that already represent distances.",
+        "The area samples are π,4π,16π with interval widths 1 and 2.",
+        "This adds sampled areas without the nonuniform trapezoid weights."
+      ],
+      "check": {
+        "type": "table-riemann",
+        "partition": [
+          0,
+          1,
+          3
+        ],
+        "method": "trapezoid",
+        "valuePower": 2,
+        "scale": 3.141592653589793
+      },
+      "tableSha256": "4a36876ef35a30229ebbbf7ac080139c5f84a306207676d92ff830a03675620f"
+    },
+    {
+      "questionId": "calc-ab-8-10-010",
+      "independentReasoning": "Independently take f=k+r with constant r>0: the correct expression gives a radius-r cylinder. The alternative f²−k² becomes r²+2kr and depends on absolute axis location, contradicting translation invariance.",
+      "optionReview": [
+        "This treats coordinate k as an inner radius about y=0, a different axis.",
+        "Adding squared coordinates does not give squared distance to the axis.",
+        "This integrates radius rather than disk area.",
+        "The radius is the distance f−k before it is squared."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "π∫ from a to b of [f(x)−k]² dx"
+      }
+    },
+    {
+      "questionId": "calc-ab-8-10-011",
+      "independentReasoning": "Independently the disk area grows linearly from 0 to 2πc². Its mean is πc² over length 2, confirming volume 2πc². Substitute c=3 to recover 18π exactly, and reject the negative root by the stated positive parameter.",
+      "optionReview": [
+        "The disk volume is 2πc², so c²=9 and c>0.",
+        "This treats the volume as linear in c.",
+        "This does not satisfy the squared-radius volume equation.",
+        "This would multiply the required volume by 4."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "3"
+      }
+    }
+  ]
+}

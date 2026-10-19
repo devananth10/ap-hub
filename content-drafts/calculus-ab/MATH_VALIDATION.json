@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 847,
+  "questionsChecked": 869,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -2401,6 +2401,81 @@
       "questionId": "calc-ab-8-8-010",
       "method": "definite-integral",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-9-001",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-9-002",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-9-003",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-9-004",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-9-005",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-9-007",
+      "method": "figure-cross-section",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-9-008",
+      "method": "table-riemann",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-9-011",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-10-001",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-10-002",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-10-003",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-10-004",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-10-005",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-10-007",
+      "method": "definite-integral",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-8-10-009",
+      "method": "table-riemann",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -2770,7 +2845,14 @@
     "calc-ab-8-7-007",
     "calc-ab-8-7-010",
     "calc-ab-8-8-009",
-    "calc-ab-8-8-011"
+    "calc-ab-8-8-011",
+    "calc-ab-8-9-006",
+    "calc-ab-8-9-009",
+    "calc-ab-8-9-010",
+    "calc-ab-8-10-006",
+    "calc-ab-8-10-008",
+    "calc-ab-8-10-010",
+    "calc-ab-8-10-011"
   ],
   "humanReviewPerformed": false,
   "limitations": [

@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 8,
+  "topicId": "topic-8-9",
+  "questions": [
+    {
+      "id": "calc-ab-8-9-001",
+      "prompt": "Rotate the region between y=x² and y=0 on 0≤x≤2 about the x-axis. What is the volume?",
+      "options": [
+        "8π/3",
+        "32π/5",
+        "32π",
+        "64π/5"
+      ],
+      "correctIndex": 1,
+      "explanation": "A perpendicular slice rotates into a disk of radius x² and area πx⁴. Thus V=π∫ from 0 to 2 of x⁴dx=π[x⁵/5] from 0 to 2=32π/5. The height of the original planar region is a radius, so its square is required before accumulating volume. A: This integrates the radius rather than its square. B: The disk radius is x², so integrate πx⁴. C: This uses maximum radius 4 over the full length 2. D: This doubles the actual disk accumulation."
+    },
+    {
+      "id": "calc-ab-8-9-002",
+      "prompt": "The region 0≤y≤√x, 0≤x≤9 is revolved about the x-axis. Find its volume.",
+      "options": [
+        "18π",
+        "9π",
+        "81π/2",
+        "81π"
+      ],
+      "correctIndex": 2,
+      "explanation": "The radius is the distance from y=0 to y=√x, namely √x. Therefore A(x)=πx and V=π[x²/2] from 0 to 9=81π/2. The disk area rises from 0 to 9π over a length of 9. A: This does not integrate the actual linearly changing disk area. B: This is the final disk area, not its accumulation over x. C: Squaring radius √x gives disk area πx. D: This omits the factor 1/2 from integrating x."
+    },
+    {
+      "id": "calc-ab-8-9-003",
+      "prompt": "Rotate the region 0≤x≤3y−y², 0≤y≤3 about the y-axis. What volume results?",
+      "options": [
+        "9π/2",
+        "81π/5",
+        "27π",
+        "81π/10"
+      ],
+      "correctIndex": 3,
+      "explanation": "Slices perpendicular to the y-axis have thickness dy and radius R=3y−y²≥0. Thus V=π∫ from 0 to 3 of (3y−y²)²dy. Expanding gives 9y²−6y³+y⁴, whose integral is 81−243/2+243/5=81/10; multiply by π. A: This integrates the radius instead of the disk area. B: This doubles the volume without a second nonoverlapping solid. C: This does not account for the changing horizontal radius. D: The horizontal disk radius is 3y−y² and its square integrates to 81/10."
+    },
+    {
+      "id": "calc-ab-8-9-004",
+      "prompt": "With angles in radians, rotate the region under y=cos x above y=0 for 0≤x≤π/2 about the x-axis. Find the volume.",
+      "options": [
+        "π²/4",
+        "π",
+        "π²/2",
+        "π/4"
+      ],
+      "correctIndex": 0,
+      "explanation": "The volume is π∫ from 0 to π/2 of cos²x dx. Using cos²x=(1+cos 2x)/2 gives integral [x/2+sin 2x/4] from 0 to π/2=π/4. Hence V=π²/4. The trigonometric interval and derivatives use radians. A: The integral of cos²x on this interval is π/4. B: This integrates radius cos x rather than its square. C: This uses maximum radius 1 for the full interval. D: This omits the disk-area factor π."
+    },
+    {
+      "id": "calc-ab-8-9-005",
+      "prompt": "The region between y=−(1+x) and y=0 on [0,1] is rotated about the x-axis. What is its volume?",
+      "options": [
+        "−7π/3",
+        "7π/3",
+        "3π/2",
+        "4π"
+      ],
+      "correctIndex": 1,
+      "explanation": "Although the region is below the axis, each slice sweeps a disk of radius |−(1+x)|=1+x. Therefore V=π∫ from 0 to 1 of (1+x)²dx=π[(1+x)³/3] from 0 to 1=7π/3. Radius is a distance, not a signed ordinate. A: Negative y-coordinates do not give negative radii or volume. B: The radius is the positive distance 1+x, so integrate π(1+x)². C: This integrates distance instead of disk area. D: This uses the largest radius 2 throughout the interval."
+    },
+    {
+      "id": "calc-ab-8-9-006",
+      "prompt": "Let f(y)≥0 be continuous for a≤y≤b. The region 0≤x≤f(y) is rotated about the y-axis. Which disk integral gives its volume?",
+      "options": [
+        "π∫ from a to b of y² dy",
+        "π∫ from a to b of f(y) dy",
+        "π∫ from a to b of [f(y)]² dy",
+        "π∫ from a to b of [f(y)]² dx"
+      ],
+      "correctIndex": 2,
+      "explanation": "Perpendicular-to-axis slices are horizontal. Their radius is the x-distance f(y) from the y-axis, giving area π[f(y)]². Accumulate those areas over y from a to b. Disk orientation determines the thickness variable; rotating about the y-axis does not make the radius equal to y. A: The y-coordinate is axial position, not the horizontal radius. B: This does not square the disk radius. C: Horizontal slices have radius f(y) and thickness dy. D: The bounds and radii are expressed in y, so dx is inconsistent here."
+    },
+    {
+      "id": "calc-ab-8-9-007",
+      "prompt": "Rotate the region described by the graph below about the x-axis. What is its volume?",
+      "options": [
+        "9π/2",
+        "18π",
+        "32π",
+        "32π/3"
+      ],
+      "correctIndex": 3,
+      "explanation": "The disk area is πf². For a linear radius with endpoint values a,b over length h, the exact squared-radius integral is h(a²+ab+b²)/3. The first piece contributes 13/3 and the second 19/3, totaling 32/3. Multiply by π for V=32π/3. A: This integrates the radius alone rather than its square. B: This uses the maximum radius 3 throughout length 2. C: This omits the factor 1/3 in the squared-linear integrals. D: The exact squared-radius integrals of the two linear pieces are 13/3 and 19/3."
+    },
+    {
+      "id": "calc-ab-8-9-008",
+      "prompt": "The table below gives disk radii. Estimate volume by applying the trapezoidal rule to disk areas on [0,1] and [1,2].",
+      "options": [
+        "9π",
+        "4π",
+        "18π",
+        "14π"
+      ],
+      "correctIndex": 0,
+      "explanation": "Convert each radius to area before estimating: πr² gives π,4π,9π. With both widths 1, the estimate is (π+4π)/2+(4π+9π)/2=9π. The question asks for the specified area-rule estimate, not an exact volume determined by only three radius observations. A: Area samples π,4π,9π give trapezoids 5π/2 and 13π/2. B: This applies trapezoids to radii rather than areas. C: This doubles the specified area estimate. D: This adds the three area samples without trapezoidal weights."
+    },
+    {
+      "id": "calc-ab-8-9-009",
+      "prompt": "For continuous f(x)>0 on [a,b], rotate the entire region −f(x)≤y≤f(x) about the x-axis. Which cross-sectional area is correct?",
+      "options": [
+        "2π[f(x)]²",
+        "π[f(x)]²",
+        "4π[f(x)]²",
+        "0"
+      ],
+      "correctIndex": 1,
+      "explanation": "At a fixed x the vertical segment extends through the axis, and rotating it fills all radii from 0 to f(x). Its disk radius is f(x), not the full segment width 2f(x). The above-axis and below-axis parts generate overlapping copies of the same disk, so no factor 2 is added. A: This double-counts the same disk formed by both halves. B: The upper and lower halves sweep the same disk, so their volumes must not be added twice. C: The full vertical width 2f is a diameter, not a radius. D: Crossing the axis fills a disk; it does not cancel volume."
+    },
+    {
+      "id": "calc-ab-8-9-010",
+      "prompt": "For k>0, rotate 0≤y≤kx on 0≤x≤3 about the x-axis. If the volume is 36π, what is k?",
+      "options": [
+        "4",
+        "√2",
+        "2",
+        "12"
+      ],
+      "correctIndex": 2,
+      "explanation": "The disk radius is kx, so V=πk²∫ from 0 to 3 of x²dx=9πk². Set this equal to 36π to obtain k²=4. The stated k>0 selects 2 rather than −2; a volume constraint alone depends on the radius scale squared. A: This treats the volume scaling as linear in k. B: This gives half of the required volume. C: Volume is 9πk², so k²=4 and positivity gives k=2. D: This does not solve the squared-radius equation."
+    },
+    {
+      "id": "calc-ab-8-9-011",
+      "prompt": "Rotate the region 0≤y≤√(9−x²), −3≤x≤3 about the x-axis. What is the resulting volume?",
+      "options": [
+        "18π",
+        "9π",
+        "54π",
+        "36π"
+      ],
+      "correctIndex": 3,
+      "explanation": "The upper semicircle rotates into a full sphere. Disk radius squared is 9−x², so V=π[9x−x³/3] from −3 to 3=36π. The square root is real throughout the interval, and the zero-radius endpoints contribute no holes. A: This counts only half the sphere. B: This is the greatest disk area, not the solid’s volume. C: This is the radius-3 bounding cylinder volume. D: The disk area is π(9−x²), whose integral is 36π."
+    }
+  ]
+}
