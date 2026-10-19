@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 77,
+  "questionsChecked": 88,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -251,6 +251,46 @@
       "questionId": "calc-ab-1-7-011",
       "method": "procedure",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-8-001",
+      "method": "squeeze-bounds",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-8-002",
+      "method": "punctured-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-8-003",
+      "method": "punctured-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-8-004",
+      "method": "squeeze-bounds",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-8-006",
+      "method": "squeeze-bounds",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-8-008",
+      "method": "punctured-expression",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-8-009",
+      "method": "squeeze-bounds",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-1-8-011",
+      "method": "punctured-expression",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -280,7 +320,10 @@
     "calc-ab-1-5-011",
     "calc-ab-1-6-011",
     "calc-ab-1-7-005",
-    "calc-ab-1-7-006"
+    "calc-ab-1-7-006",
+    "calc-ab-1-8-005",
+    "calc-ab-1-8-007",
+    "calc-ab-1-8-010"
   ],
   "humanReviewPerformed": false,
   "limitations": [

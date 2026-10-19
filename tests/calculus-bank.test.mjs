@@ -90,3 +90,12 @@ test('procedure selections corroborate their underlying limits and preserve one-
   const right=qa.questions[9];
   assert.throws(()=>verifyCalculusQuestion(batch.questions[9],{...right,check:{...right.check,limitCheck:{...right.check.limitCheck,side:'both'}}}),/domain/);
 });
+test('squeeze checks compare both bounding limits, enforce their order and reject altered answers',()=>{
+  const batch=questionBatches.find(batch=>batch.courseId==='calculus-ab'&&batch.topicId==='topic-1-8');
+  const qa=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-1-8.json','utf8'));
+  for(let i=0;i<11;i++) verifyCalculusQuestion(batch.questions[i],qa.questions[i]);
+  const question=batch.questions[0],review=qa.questions[0];
+  assert.throws(()=>verifyCalculusQuestion({...question,correctIndex:(question.correctIndex+1)%4},review),/squeeze key/);
+  assert.throws(()=>verifyCalculusQuestion(question,{...review,check:{...review.check,upper:4}}),/bounding limits disagree/);
+  assert.throws(()=>verifyCalculusQuestion(question,{...review,check:{...review.check,lower:review.check.upper,upper:review.check.lower}}),/lower bound exceeds/);
+});

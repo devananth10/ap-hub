@@ -1,0 +1,304 @@
+{
+  "topicNumber": "1.8",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "d211c80ca8747c49be6950f81a9ce54c519f114fa70b701440f4517aa9a96c72",
+  "scopeReview": "CED LIM-1.E: determine limits using the Squeeze Theorem. Includes provided bounds, derived absolute-value bounds, radian fundamental limit, sign-sensitive and one-sided applications. No epsilon–delta proof, derivatives, integration or BC-only content.",
+  "varietyReview": "Eleven tasks span bounding limits, oscillation with vanishing amplitude, a denominator inequality, a fundamental trigonometric bound, insufficient bounds, one-sided information, bounded products, half-angle transfer, an error bound, negative-input inequalities and a sum. These are not eleven numerical substitutions of one template.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-1-8-001",
+      "independentReasoning": "Direct substitution in each continuous polynomial gives 3. Subtracting 3 gives |f(x)−3|≤x², whose right side tends to zero. The point value is irrelevant; each other numerical choice differs from the forced common value.",
+      "optionReview": [
+        "Both bounding functions approach 3, so the Squeeze Theorem forces this limit.",
+        "Only the x² terms approach 0; the constant 3 remains in both bounds.",
+        "The theorem uses the common bounding limit, not the sum of the two limits.",
+        "A limit depends on nearby values; no value at 0 is required."
+      ],
+      "check": {
+        "type": "squeeze-bounds",
+        "point": 0,
+        "lower": [
+          "sub",
+          3,
+          [
+            "pow",
+            "x",
+            2
+          ]
+        ],
+        "upper": [
+          "add",
+          3,
+          [
+            "pow",
+            "x",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-8-002",
+      "independentReasoning": "Independently bound the absolute value by x² rather than trying to evaluate sin at infinity. Both signs of x satisfy the same bound. Zero is the only finite option consistent with the bound; the nonexistent sine limit cannot be used to declare the product divergent.",
+      "optionReview": [
+        "The oscillating sine factor is bounded, not necessarily approaching 1.",
+        "The magnitude is at most x², which approaches zero from both sides.",
+        "A negative sine value does not prevent the shrinking x² factor from forcing zero.",
+        "A product can have a limit even when one factor oscillates without a limit."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 0,
+        "expression": [
+          "mul",
+          [
+            "pow",
+            "x",
+            2
+          ],
+          [
+            "sin",
+            [
+              "div",
+              1,
+              "x"
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-8-003",
+      "independentReasoning": "The real-domain denominator never vanishes for x≠0, since x²>0. Its extra nonnegative sine-square term can only reduce the magnitude of x³/x². This inequality proves the two-sided limit; numerical samples only corroborate it and do not establish the bound.",
+      "optionReview": [
+        "The denominator cannot be cancelled to leave a constant; the numerator has an extra factor of x.",
+        "The quotient is negative for negative x, but its magnitude still approaches zero.",
+        "The denominator is at least x²>0, so |h(x)|≤|x| and squeezing gives zero.",
+        "The indeterminate form signals that another argument is needed, not that no limit exists."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 0,
+        "step": 1e-8,
+        "expression": [
+          "div",
+          [
+            "pow",
+            "x",
+            3
+          ],
+          [
+            "add",
+            [
+              "pow",
+              "x",
+              2
+            ],
+            [
+              "pow",
+              [
+                "sin",
+                "x"
+              ],
+              2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-8-004",
+      "independentReasoning": "Check both bounding limits without using the target sine quotient limit itself: cos(0)=1 and the constant is 1. The theorem applies on the full stated punctured neighborhood. Radian measure is explicitly specified; no circular use of a derivative rule is needed.",
+      "optionReview": [
+        "Although sin x approaches 0, the denominator also approaches 0, so the quotient law alone does not give zero.",
+        "The stated lower bound approaches positive 1, not negative 1.",
+        "The exclusion of the approach point is allowed in a limit statement.",
+        "Both cos x and the constant upper bound approach 1."
+      ],
+      "check": {
+        "type": "squeeze-bounds",
+        "point": 0,
+        "lower": [
+          "cos",
+          "x"
+        ],
+        "upper": 1
+      }
+    },
+    {
+      "questionId": "calc-ab-1-8-005",
+      "independentReasoning": "Three explicit countermodels show all possibilities relevant to the options: a zero constant, a one constant, and sine of the reciprocal in radians. Boundedness alone neither fixes a value nor rules out convergence. No choice other than insufficient information survives all three examples.",
+      "optionReview": [
+        "Different bounded functions satisfying the same inequality can have different limits or no limit.",
+        "The bounds have different limits, so their midpoint is not forced.",
+        "A bound does not require the function to approach that bound.",
+        "The Squeeze Theorem is inconclusive here; its failure does not prove nonexistence."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The information does not determine whether the limit exists or what its value is."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-8-006",
+      "independentReasoning": "The approach domain (0,1) contains an entire right-hand neighborhood, and each linear bound tends to zero there. Left-hand information is unnecessary for the stated target. The endpoint and slope distractors confuse input range or coefficient with the output limit.",
+      "optionReview": [
+        "The interval endpoint 1 restricts where the inequality holds; it is not the limiting output.",
+        "Both stated bounds approach 0 from the right, which is the side being requested.",
+        "The coefficient of the upper bound is multiplied by x and does not survive as x approaches zero.",
+        "A right-hand limit requires only the behavior for inputs greater than 0."
+      ],
+      "check": {
+        "type": "squeeze-bounds",
+        "point": 0,
+        "side": "right",
+        "lower": "x",
+        "upper": [
+          "mul",
+          2,
+          "x"
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-8-007",
+      "independentReasoning": "This is not an application of the product limit law with a missing hypothesis. Instead a direct bound applies to every nearby product. The inequality is valid regardless of the sign or oscillation of f; the common bounding limit is zero, ruling out every other option.",
+      "optionReview": [
+        "The number 7 is a bound, not a required limit of f or of the product.",
+        "Multiplying the bound by the input value 2 has no connection to the product of output values.",
+        "The product has magnitude at most 7|g(x)|, which approaches zero.",
+        "The bounded-times-vanishing argument proves convergence without a limit for f."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "0"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-8-008",
+      "independentReasoning": "Independently track the scaling: x²=4(x/2)² and the numerator is twice the sine square, hence 2/4=1/2. Squaring preserves the limiting value 1. The exact identity and provided squeeze-derived limit prove the answer; raw quotient sampling is only a corroboration.",
+      "optionReview": [
+        "Both numerator and denominator approach zero, so direct substitution cannot determine the quotient.",
+        "This misses the factor 1/2 introduced by the half-angle substitution.",
+        "The identity has a factor 2, but the denominator contributes an additional factor 4 after using x/2.",
+        "The half-angle identity produces one half times a squared sine quotient whose limit is 1."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 0,
+        "expression": [
+          "div",
+          [
+            "sub",
+            1,
+            [
+              "cos",
+              "x"
+            ]
+          ],
+          [
+            "pow",
+            "x",
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-8-009",
+      "independentReasoning": "The outer functions are continuous at 2 and evaluate to 4 there. The inequality constrains p on both sides in a punctured neighborhood, exactly where a limit is tested. Zero applies only to the error magnitude, and neither the approach input nor the coefficient is the limiting output.",
+      "optionReview": [
+        "The permitted deviation from 4 approaches zero as x approaches 2.",
+        "The deviation from 4 tends to zero; that does not mean p itself tends to zero.",
+        "The approach input is 2, whereas the inequality controls outputs near 4.",
+        "Adding 3 to 4 ignores that 3 is multiplied by the vanishing distance |x−2|."
+      ],
+      "check": {
+        "type": "squeeze-bounds",
+        "point": 2,
+        "lower": [
+          "sub",
+          4,
+          [
+            "mul",
+            3,
+            [
+              "abs",
+              [
+                "sub",
+                "x",
+                2
+              ]
+            ]
+          ]
+        ],
+        "upper": [
+          "add",
+          4,
+          [
+            "mul",
+            3,
+            [
+              "abs",
+              [
+                "sub",
+                "x",
+                2
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "questionId": "calc-ab-1-8-010",
+      "independentReasoning": "At a sample negative input x=−0.1 the allowed products are between −0.3 and −0.1, corroborating the reversed bounds. The formal sign rule proves the inequality for the whole interval, and both bounds vanish. Each alternative fails even for some constant r between 1 and 3.",
+      "optionReview": [
+        "This fails to reverse the inequality directions when multiplying by a negative input.",
+        "Multiplication by the negative number x reverses both inequalities; both resulting bounds tend to zero.",
+        "Multiplication by x changes the bounds as well as the middle expression.",
+        "The factor x is not identically −1; the product can approach zero and exceed −1."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "3x≤x r(x)≤x"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-8-011",
+      "independentReasoning": "Separate the sum into a continuous term and a bounded-times-vanishing term. The reciprocal cosine need not have a limit, but its contribution has magnitude no larger than |x|. This is an exact bound on all nonzero nearby inputs; small-scale samples only corroborate the result.",
+      "optionReview": [
+        "The cosine factor does not tend to 1, and multiplying it by x still forces that entire term to zero.",
+        "No fixed negative value survives the vanishing magnitude of either term.",
+        "The sine term tends to zero and the second term has magnitude at most |x|.",
+        "Oscillation with amplitude shrinking to zero does not prevent the product term from converging."
+      ],
+      "check": {
+        "type": "punctured-expression",
+        "point": 0,
+        "step": 1e-9,
+        "expression": [
+          "add",
+          [
+            "sin",
+            "x"
+          ],
+          [
+            "mul",
+            "x",
+            [
+              "cos",
+              [
+                "div",
+                1,
+                "x"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

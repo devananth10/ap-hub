@@ -56,7 +56,20 @@ export function verifyCalculusQuestion(question, review) {
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if (review.check.type==='procedure') {
+  if (review.check.type==='squeeze-bounds') {
+    const {lower,upper,...settings}=review.check;
+    const tolerance=settings.tolerance||0.00001;
+    const lo=approachValue({...settings,expression:lower}),hi=approachValue({...settings,expression:upper});
+    assert.ok(typeof lo==='number'&&typeof hi==='number'&&Math.abs(lo-hi)<tolerance,question.id+' bounding limits disagree');
+    const signs=settings.side==='right'?[1]:settings.side==='left'?[-1]:[-1,1];
+    for(const sign of signs) for(const scale of [1,0.5]) {
+      const x=settings.point+sign*(settings.step||0.001)*scale;
+      assert.ok(evaluateExpression(lower,x)<=evaluateExpression(upper,x),question.id+' lower bound exceeds upper bound');
+    }
+    const result=(lo+hi)/2,matches=question.options.map(option=>Math.abs(numericalOption(option)-result)<tolerance);
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique squeeze result');
+    assert.equal(matches.indexOf(true),question.correctIndex,question.id+' squeeze key');
+  } else if (review.check.type==='procedure') {
     const result=approachValue(review.check.limitCheck),expected=review.check.expectedLimit;
     assert.ok(typeof expected==='number'?typeof result==='number'&&Math.abs(result-expected)<(review.check.limitCheck.tolerance||0.00001):result===expected,question.id+' underlying limit corroboration');
     assert.equal(answer,review.check.expectedAnswer,question.id+' procedure answer needs re-review');

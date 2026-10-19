@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 1,
+  "topicId": "topic-1-8",
+  "questions": [
+    {
+      "id": "calc-ab-1-8-001",
+      "prompt": "For every x with 0<|x|<1, 3−x² ≤ f(x) ≤ 3+x². What is lim(x→0) f(x)?",
+      "options": [
+        "3",
+        "0",
+        "6",
+        "Does not exist because f(0) is unspecified."
+      ],
+      "correctIndex": 0,
+      "explanation": "The lower bound 3−x² and upper bound 3+x² both tend to 3. The inequality holds throughout a punctured neighborhood of 0, so f(x) must also tend to 3. A: Both bounding functions approach 3, so the Squeeze Theorem forces this limit. B: Only the x² terms approach 0; the constant 3 remains in both bounds. C: The theorem uses the common bounding limit, not the sum of the two limits. D: A limit depends on nearby values; no value at 0 is required."
+    },
+    {
+      "id": "calc-ab-1-8-002",
+      "prompt": "Angles are in radians. For x≠0 let f(x)=x² sin(1/x). What is lim(x→0) f(x)?",
+      "options": [
+        "1",
+        "0",
+        "−1",
+        "Does not exist because sin(1/x) has no limit."
+      ],
+      "correctIndex": 1,
+      "explanation": "Since −1≤sin(1/x)≤1 and x²≥0, −x²≤x² sin(1/x)≤x². Both outer expressions tend to 0, giving the limit 0 by squeezing. A: The oscillating sine factor is bounded, not necessarily approaching 1. B: The magnitude is at most x², which approaches zero from both sides. C: A negative sine value does not prevent the shrinking x² factor from forcing zero. D: A product can have a limit even when one factor oscillates without a limit."
+    },
+    {
+      "id": "calc-ab-1-8-003",
+      "prompt": "Angles are in radians. For x≠0 define h(x)=x³/(x²+sin²x). What is lim(x→0) h(x)?",
+      "options": [
+        "1",
+        "−1",
+        "0",
+        "Does not exist because direct substitution gives 0/0."
+      ],
+      "correctIndex": 2,
+      "explanation": "For x≠0 the denominator x²+sin²x is positive and at least x². Thus |x³/(x²+sin²x)|≤|x|³/x²=|x|. The outer bounds −|x| and |x| approach 0. A: The denominator cannot be cancelled to leave a constant; the numerator has an extra factor of x. B: The quotient is negative for negative x, but its magnitude still approaches zero. C: The denominator is at least x²>0, so |h(x)|≤|x| and squeezing gives zero. D: The indeterminate form signals that another argument is needed, not that no limit exists."
+    },
+    {
+      "id": "calc-ab-1-8-004",
+      "prompt": "Angles are in radians. You are given cos x ≤ (sin x)/x ≤ 1 for 0<|x|<π/2. Use these bounds to find lim(x→0) (sin x)/x.",
+      "options": [
+        "0",
+        "−1",
+        "Does not exist because x=0 is excluded.",
+        "1"
+      ],
+      "correctIndex": 3,
+      "explanation": "Continuity of cosine gives lim(x→0) cos x=1. The constant upper bound has limit 1 as well. The given inequalities hold on both sides near 0, so the Squeeze Theorem gives 1. A: Although sin x approaches 0, the denominator also approaches 0, so the quotient law alone does not give zero. B: The stated lower bound approaches positive 1, not negative 1. C: The exclusion of the approach point is allowed in a limit statement. D: Both cos x and the constant upper bound approach 1."
+    },
+    {
+      "id": "calc-ab-1-8-005",
+      "prompt": "The only information about r is −1≤r(x)≤1 whenever 0<|x|<1. Which conclusion about lim(x→0) r(x) is justified?",
+      "options": [
+        "The information does not determine whether the limit exists or what its value is.",
+        "The limit must equal 0 because 0 is halfway between the bounds.",
+        "The limit must equal 1 because 1 is the upper bound.",
+        "The limit cannot exist because the bounding limits differ."
+      ],
+      "correctIndex": 0,
+      "explanation": "The lower and upper bounds approach −1 and 1, so they do not squeeze r to a common value. The functions r(x)=0, r(x)=1, and r(x)=sin(1/x) all satisfy the inequality; the first two have different limits and the third has none. A: Different bounded functions satisfying the same inequality can have different limits or no limit. B: The bounds have different limits, so their midpoint is not forced. C: A bound does not require the function to approach that bound. D: The Squeeze Theorem is inconclusive here; its failure does not prove nonexistence."
+    },
+    {
+      "id": "calc-ab-1-8-006",
+      "prompt": "For 0<x<1, x≤f(x)≤2x. No information is provided for x<0. What is lim(x→0⁺) f(x)?",
+      "options": [
+        "1",
+        "0",
+        "2",
+        "Does not exist because the left-hand behavior is unknown."
+      ],
+      "correctIndex": 1,
+      "explanation": "As x approaches 0 through positive values, both x and 2x approach 0. The given inequalities are valid on that side, so the right-hand Squeeze Theorem gives 0. They do not, by themselves, establish a two-sided limit. A: The interval endpoint 1 restricts where the inequality holds; it is not the limiting output. B: Both stated bounds approach 0 from the right, which is the side being requested. C: The coefficient of the upper bound is multiplied by x and does not survive as x approaches zero. D: A right-hand limit requires only the behavior for inputs greater than 0."
+    },
+    {
+      "id": "calc-ab-1-8-007",
+      "prompt": "Suppose |f(x)|≤7 for all x sufficiently close to 2, and lim(x→2) g(x)=0. The limit of f(x) is not assumed to exist. What is lim(x→2) f(x)g(x)?",
+      "options": [
+        "7",
+        "14",
+        "0",
+        "Does not exist because lim(x→2) f(x) is unknown."
+      ],
+      "correctIndex": 2,
+      "explanation": "Use |f(x)g(x)|≤7|g(x)|. Since g(x)→0, continuity of absolute value gives 7|g(x)|→0. Thus −7|g(x)|≤f(x)g(x)≤7|g(x)| forces the product limit to 0. A: The number 7 is a bound, not a required limit of f or of the product. B: Multiplying the bound by the input value 2 has no connection to the product of output values. C: The product has magnitude at most 7|g(x)|, which approaches zero. D: The bounded-times-vanishing argument proves convergence without a limit for f."
+    },
+    {
+      "id": "calc-ab-1-8-008",
+      "prompt": "Angles are in radians. You may use lim(u→0) (sin u)/u=1. What is lim(x→0) (1−cos x)/x²?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "1/2"
+      ],
+      "correctIndex": 3,
+      "explanation": "The identity 1−cos x=2 sin²(x/2) gives (1−cos x)/x²=(1/2)[sin(x/2)/(x/2)]² for x≠0. As x→0, x/2→0, so the permitted fundamental limit gives (1/2)·1²=1/2. A: Both numerator and denominator approach zero, so direct substitution cannot determine the quotient. B: This misses the factor 1/2 introduced by the half-angle substitution. C: The identity has a factor 2, but the denominator contributes an additional factor 4 after using x/2. D: The half-angle identity produces one half times a squared sine quotient whose limit is 1."
+    },
+    {
+      "id": "calc-ab-1-8-009",
+      "prompt": "For all x with 0<|x−2|<1, |p(x)−4|≤3|x−2|. What is lim(x→2) p(x)?",
+      "options": [
+        "4",
+        "0",
+        "2",
+        "7"
+      ],
+      "correctIndex": 0,
+      "explanation": "The absolute-value inequality is equivalent to 4−3|x−2|≤p(x)≤4+3|x−2|. Both bounds approach 4, so the Squeeze Theorem gives p(x)→4. A value of p at x=2 is not needed. A: The permitted deviation from 4 approaches zero as x approaches 2. B: The deviation from 4 tends to zero; that does not mean p itself tends to zero. C: The approach input is 2, whereas the inequality controls outputs near 4. D: Adding 3 to 4 ignores that 3 is multiplied by the vanishing distance |x−2|."
+    },
+    {
+      "id": "calc-ab-1-8-010",
+      "prompt": "For −1<x<0, a function r satisfies 1≤r(x)≤3. Which inequality correctly bounds x r(x) and can prove lim(x→0⁻) x r(x)=0?",
+      "options": [
+        "x≤x r(x)≤3x",
+        "3x≤x r(x)≤x",
+        "1≤x r(x)≤3",
+        "−3≤x r(x)≤−1"
+      ],
+      "correctIndex": 1,
+      "explanation": "Multiplying 1≤r(x)≤3 by x<0 gives x≥x r(x)≥3x. Written in increasing order, this is 3x≤x r(x)≤x. Both 3x and x tend to 0 as x→0⁻, proving the product limit. A: This fails to reverse the inequality directions when multiplying by a negative input. B: Multiplication by the negative number x reverses both inequalities; both resulting bounds tend to zero. C: Multiplication by x changes the bounds as well as the middle expression. D: The factor x is not identically −1; the product can approach zero and exceed −1."
+    },
+    {
+      "id": "calc-ab-1-8-011",
+      "prompt": "Angles are in radians. For x≠0 let q(x)=sin x+x cos(1/x). What is lim(x→0) q(x)?",
+      "options": [
+        "1",
+        "−1",
+        "0",
+        "Does not exist because cos(1/x) oscillates."
+      ],
+      "correctIndex": 2,
+      "explanation": "The bound |x cos(1/x)|≤|x| gives x cos(1/x)→0 by squeezing. Also sin x→0 by continuity. The sum law then gives q(x)→0+0=0. A: The cosine factor does not tend to 1, and multiplying it by x still forces that entire term to zero. B: No fixed negative value survives the vanishing magnitude of either term. C: The sine term tends to zero and the second term has magnitude at most |x|. D: Oscillation with amplitude shrinking to zero does not prevent the product term from converging."
+    }
+  ]
+}
