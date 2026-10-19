@@ -1,0 +1,165 @@
+{
+  "topicNumber": "1.2",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "4448c4a1d0fecdd5c76a3962d4c8d32bde2d8a56694a7c48ed10e9a3a1938f29",
+  "scopeReview": "CED Topic 1.2 LIM-1.A/B: notation, direction, input/output roles and conceptual meaning. No epsilon–delta calculations, derivative rules or BC content. Endpoint example explicitly asks for positive-side notation to avoid convention-dependent ambiguity.",
+  "varietyReview": "Eleven distinct interpretation tasks: basic notation, separate point value, conflicting sides, negative target direction, unbounded output, domain hole, nonconstant nearby behavior, endpoint side, contextual units, necessary consequences and persistent oscillation. Three foundational, five standard and three reasoning/ambiguity-sensitive items.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-1-2-001",
+      "independentReasoning": "Set f(x)=7+(x−2) for x≠2 and leave f(2) undefined. Its nearby outputs approach 7, so a point value is unnecessary. The input and output play different roles in this example, and its local rate is 1 rather than 7.",
+      "optionReview": [
+        "A limit can exist even if the function is undefined or assigned another value at the point.",
+        "This interchanges the input being approached with the output limit.",
+        "Correct: the limit describes nearby output behavior while the input approaches 2.",
+        "A function limit is not, by itself, a statement about an instantaneous rate."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The values f(x) approach 7 as x approaches 2 through nearby domain values with x≠2."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-2-002",
+      "independentReasoning": "The explicit model f(x)=3 for x≠4 and f(4)=−1 realizes both facts at once. It has a two-sided limit of 3; assigning a different isolated value does not change any nearby output.",
+      "optionReview": [
+        "This swaps the supplied point value and nearby behavior.",
+        "These inputs and values are not supplied by the question.",
+        "A disagreement with the point value affects continuity, not the existence of the stated nearby limit.",
+        "Correct: the approached output is 3 while the separately assigned point value is −1."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "lim(x→4) f(x)=3 and f(4)=−1"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-2-003",
+      "independentReasoning": "A step model equal to 2 left of 1 and 5 right of 1 realizes the data. Sequences approaching from opposite sides give different constant outputs, excluding every proposed finite common value.",
+      "optionReview": [
+        "Correct: a finite two-sided limit must agree with both one-sided limits.",
+        "The arithmetic mean is not approached from either side and does not define the two-sided limit.",
+        "The two-sided definition gives neither direction priority.",
+        "A value assigned exactly at 1 cannot change the left-hand limiting behavior."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It does not exist because the one-sided limits disagree."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-2-004",
+      "independentReasoning": "Inputs −2.9, −2.99 and −2.999 all exceed −3 and tend toward it. Their location verifies the plus-side convention independently of any value of q at −3.",
+      "optionReview": [
+        "The minus superscript specifies values smaller than −3, contrary to the stated approach.",
+        "Correct: the superscript plus on −3 specifies input values on its right.",
+        "This reverses the input location and output value.",
+        "A point evaluation does not describe a one-sided approach."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "lim(x→−3⁺) q(x)=4"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-2-005",
+      "independentReasoning": "The model h(x)=1/x² has h(0) undefined, while inputs of magnitude 0.1, 0.01 and 0.001 give outputs 100, 10000 and 1000000. This distinguishes unbounded output from a point value or a large input.",
+      "optionReview": [
+        "Infinity is not a real function value specified by this notation.",
+        "Unbounded behavior means no finite largest bound suffices near the point.",
+        "Correct: +∞ describes unbounded positive behavior, not an attained real output.",
+        "The input approaches 0; it is the output that grows without bound."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The outputs become arbitrarily large and positive as x gets sufficiently close to 0, with x≠0."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-2-006",
+      "independentReasoning": "Both left-side and right-side sequences consist of the constant output 9. An isolated hole cannot affect those sequences, while the exact input 5 remains outside the stated formula’s domain.",
+      "optionReview": [
+        "A limit does not require a value at the approached input.",
+        "This treats the target input as the output.",
+        "The stated domain exception explicitly leaves that point undefined.",
+        "Correct: all nearby outputs are exactly 9 even though the point value is missing."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "lim(x→5) r(x)=9"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-2-007",
+      "independentReasoning": "Take f(x)=x−3 for x≠1 and f(1)=8. Outputs approach −2 as x approaches 1, yet no other nearby x gives exactly −2. This model checks both the limit claim and the overly strong equality distractor.",
+      "optionReview": [
+        "Correct: both sides specify the same approached output, which is distinct from the point value.",
+        "The isolated assignment does not replace the stated nearby behavior.",
+        "This reverses input and output without information near the input −2.",
+        "Approaching −2 does not require nearby outputs to equal −2 exactly."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "lim(x→1) f(x)=−2, regardless of the assigned value 8 at x=1."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-2-008",
+      "independentReasoning": "The positive input sequence 1/n² gives square roots 1/n, both tending toward zero. This verifies the requested side explicitly without relying on a convention about two-sided limits at domain endpoints.",
+      "optionReview": [
+        "For negative x, the real square root is not defined.",
+        "Correct: x→0⁺ explicitly restricts the approach to positive input values.",
+        "As positive inputs grow without bound, their square roots do not approach zero.",
+        "This equality evaluates a point; it does not express the approaching behavior requested."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "lim(x→0⁺) √x=0"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-2-009",
+      "independentReasoning": "Models P(t)=20+(t−6) and P(t)=20−(t−6) share the stated limit while approaching from different output sides. Their rates are not 20, so neither the rate nor increasing-from-below assertion is forced.",
+      "optionReview": [
+        "A limit of volume does not specify a rate, and its units are liters.",
+        "This exchanges the input and output quantities.",
+        "Correct: the input is time and the approached output is volume.",
+        "No monotonic direction or side of the output approach is specified."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The volume approaches 20 liters as the time approaches 6 minutes."
+      }
+    },
+    {
+      "questionId": "calc-ab-1-2-010",
+      "independentReasoning": "H(x)=−4+(x−8)² for x≠8, with H(8) undefined, has the required limit but nearby outputs above −4 and nonconstant. It disproves all three distractors while preserving both one-sided limits.",
+      "optionReview": [
+        "The limit need not equal or even have a defined point value at 8.",
+        "Approach from below is not required; values can approach from above or oscillate.",
+        "Getting arbitrarily close to −4 does not require constant nearby values.",
+        "Correct: both one-sided limits must equal the given finite two-sided limit."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "lim(x→8⁻) H(x)=−4 and lim(x→8⁺) H(x)=−4"
+      }
+    },
+    {
+      "questionId": "calc-ab-1-2-011",
+      "independentReasoning": "Consider two sequences of inputs tending to zero along which outputs remain 1 and −1 respectively. If a finite common limit existed both output sequences would have that value, contradicting their different constant limits. This uses the conceptual limit meaning, not an assessed epsilon–delta proof.",
+      "optionReview": [
+        "Correct: two persistently separated output values cannot both approach one finite number.",
+        "The limit concerns nearby outputs, not the average of two separated values.",
+        "Frequency does not erase arbitrarily close outputs of −1.",
+        "Changing one point does not change either of the stated nearby behaviors."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The function cannot have a finite limit as x approaches 0."
+      }
+    }
+  ]
+}

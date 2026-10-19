@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 1,
+  "topicId": "topic-1-2",
+  "questions": [
+    {
+      "id": "calc-ab-1-2-001",
+      "prompt": "Which statement correctly interprets lim(x→2) f(x)=7?",
+      "options": [
+        "The function must be defined at x=2 with f(2)=7.",
+        "The input x approaches 7 while f(x) approaches 2.",
+        "The values f(x) approach 7 as x approaches 2 through nearby domain values with x≠2.",
+        "The rate of change of f at x=2 is 7."
+      ],
+      "correctIndex": 2,
+      "explanation": "Read the arrow as an input approaching a location and the right side as the output value approached. The assertion concerns f(x) for x near, but not equal to, 2. It does not prescribe f(2) or a rate of change. A: A limit can exist even if the function is undefined or assigned another value at the point. B: This interchanges the input being approached with the output limit. C: Correct: the limit describes nearby output behavior while the input approaches 2. D: A function limit is not, by itself, a statement about an instantaneous rate."
+    },
+    {
+      "id": "calc-ab-1-2-002",
+      "prompt": "A function has f(4)=−1, but its outputs approach 3 from both sides as x approaches 4. Which pair of statements describes these facts?",
+      "options": [
+        "lim(x→4) f(x)=−1 and f(4)=3",
+        "lim(x→−1) f(x)=4 and f(3)=4",
+        "The limit does not exist because f(4)≠3.",
+        "lim(x→4) f(x)=3 and f(4)=−1"
+      ],
+      "correctIndex": 3,
+      "explanation": "The nearby behavior supplies the limit 3. Evaluating the function exactly at 4 instead gives −1. Limit notation and function-value notation record different facts and can both hold. A: This swaps the supplied point value and nearby behavior. B: These inputs and values are not supplied by the question. C: A disagreement with the point value affects continuity, not the existence of the stated nearby limit. D: Correct: the approached output is 3 while the separately assigned point value is −1."
+    },
+    {
+      "id": "calc-ab-1-2-003",
+      "prompt": "Suppose lim(x→1⁻) g(x)=2 and lim(x→1⁺) g(x)=5. What can be concluded about lim(x→1) g(x)?",
+      "options": [
+        "It does not exist because the one-sided limits disagree.",
+        "It equals 3.5, the average of the two values.",
+        "It equals 2 because x approaches from the left first.",
+        "It equals 5 provided g(1)=5."
+      ],
+      "correctIndex": 0,
+      "explanation": "The left- and right-hand approaching outputs must be the same for a finite two-sided limit. Since 2 and 5 are different, there is no single approaching value. No choice of g(1) repairs that disagreement. A: Correct: a finite two-sided limit must agree with both one-sided limits. B: The arithmetic mean is not approached from either side and does not define the two-sided limit. C: The two-sided definition gives neither direction priority. D: A value assigned exactly at 1 cannot change the left-hand limiting behavior."
+    },
+    {
+      "id": "calc-ab-1-2-004",
+      "prompt": "The outputs q(x) approach 4 as x approaches −3 using values greater than −3. Which notation directly expresses this one-sided statement?",
+      "options": [
+        "lim(x→−3⁻) q(x)=4",
+        "lim(x→−3⁺) q(x)=4",
+        "lim(x→4⁺) q(x)=−3",
+        "q(−3)=4"
+      ],
+      "correctIndex": 1,
+      "explanation": "Greater input values lie to the right on the number line, even when the target input is negative. Therefore use x→−3⁺, with 4 as the output limit. The superscript is a direction, not an instruction to make q positive. A: The minus superscript specifies values smaller than −3, contrary to the stated approach. B: Correct: the superscript plus on −3 specifies input values on its right. C: This reverses the input location and output value. D: A point evaluation does not describe a one-sided approach."
+    },
+    {
+      "id": "calc-ab-1-2-005",
+      "prompt": "What is the correct meaning of lim(x→0) h(x)=+∞?",
+      "options": [
+        "h(0) is the real number infinity.",
+        "There is a largest positive output of h near 0.",
+        "The outputs become arbitrarily large and positive as x gets sufficiently close to 0, with x≠0.",
+        "The input x becomes arbitrarily large and positive."
+      ],
+      "correctIndex": 2,
+      "explanation": "An infinite limit is a description of unbounded outputs as the input approaches its specified location. It does not assign infinity as a real number at that location or assert that x itself tends to infinity. A: Infinity is not a real function value specified by this notation. B: Unbounded behavior means no finite largest bound suffices near the point. C: Correct: +∞ describes unbounded positive behavior, not an attained real output. D: The input approaches 0; it is the output that grows without bound."
+    },
+    {
+      "id": "calc-ab-1-2-006",
+      "prompt": "Let r(x)=9 for every x≠5, and leave r(5) undefined. Which statement is correct?",
+      "options": [
+        "lim(x→5) r(x) does not exist because r(5) is undefined.",
+        "lim(x→5) r(x)=5",
+        "r(5)=9 follows from the formula for x≠5.",
+        "lim(x→5) r(x)=9"
+      ],
+      "correctIndex": 3,
+      "explanation": "The limit examines inputs different from 5. At every such nearby input, r(x)=9, so the approaching value is 9. The question deliberately does not define a value at 5. A: A limit does not require a value at the approached input. B: This treats the target input as the output. C: The stated domain exception explicitly leaves that point undefined. D: Correct: all nearby outputs are exactly 9 even though the point value is missing."
+    },
+    {
+      "id": "calc-ab-1-2-007",
+      "prompt": "Near x=1, a function’s outputs approach −2 from both sides, while its assigned value is f(1)=8. Which statement must be true?",
+      "options": [
+        "lim(x→1) f(x)=−2, regardless of the assigned value 8 at x=1.",
+        "lim(x→1) f(x)=8 because f(1)=8.",
+        "lim(x→−2) f(x)=1.",
+        "f(x)=−2 for all x sufficiently close to 1."
+      ],
+      "correctIndex": 0,
+      "explanation": "The one-sided behaviors agree at −2, establishing the two-sided limit. Outputs may get close to −2 without ever equaling it near 1. A separately assigned point value does not determine that approaching value. A: Correct: both sides specify the same approached output, which is distinct from the point value. B: The isolated assignment does not replace the stated nearby behavior. C: This reverses input and output without information near the input −2. D: Approaching −2 does not require nearby outputs to equal −2 exactly."
+    },
+    {
+      "id": "calc-ab-1-2-008",
+      "prompt": "Which notation most directly states that √x approaches 0 as positive x decreases toward 0?",
+      "options": [
+        "lim(x→0⁻) √x=0 over real x",
+        "lim(x→0⁺) √x=0",
+        "lim(x→∞) √x=0",
+        "√0=0 alone"
+      ],
+      "correctIndex": 1,
+      "explanation": "Positive inputs approaching 0 are described by x→0⁺. The square root’s real-domain restriction makes the direction especially relevant. Writing √0=0 is true, but it does not express a limit. A: For negative x, the real square root is not defined. B: Correct: x→0⁺ explicitly restricts the approach to positive input values. C: As positive inputs grow without bound, their square roots do not approach zero. D: This equality evaluates a point; it does not express the approaching behavior requested."
+    },
+    {
+      "id": "calc-ab-1-2-009",
+      "prompt": "A tank’s volume P(t), measured in liters, satisfies lim(t→6) P(t)=20. Time t is measured in minutes. Which interpretation is justified by this notation alone?",
+      "options": [
+        "The filling rate at 6 minutes is 20 liters per minute.",
+        "The time approaches 20 minutes while the volume approaches 6 liters.",
+        "The volume approaches 20 liters as the time approaches 6 minutes.",
+        "The volume must increase toward 20 liters from below."
+      ],
+      "correctIndex": 2,
+      "explanation": "Identify P as an output volume and t as an input time. The notation specifies how volumes behave near t=6, not a derivative, a monotonic trend, or even the exact value at 6. A: A limit of volume does not specify a rate, and its units are liters. B: This exchanges the input and output quantities. C: Correct: the input is time and the approached output is volume. D: No monotonic direction or side of the output approach is specified."
+    },
+    {
+      "id": "calc-ab-1-2-010",
+      "prompt": "If lim(x→8) H(x)=−4 is a finite two-sided limit and H is defined on both sides sufficiently near 8, which statement must also hold?",
+      "options": [
+        "H(8)=−4",
+        "H(x)<−4 for all x sufficiently close to 8",
+        "H is constant on an interval around 8",
+        "lim(x→8⁻) H(x)=−4 and lim(x→8⁺) H(x)=−4"
+      ],
+      "correctIndex": 3,
+      "explanation": "Restricting a common two-sided approach to either side must give the same finite output limit. No additional point-value, inequality-direction or constancy claim follows. A: The limit need not equal or even have a defined point value at 8. B: Approach from below is not required; values can approach from above or oscillate. C: Getting arbitrarily close to −4 does not require constant nearby values. D: Correct: both one-sided limits must equal the given finite two-sided limit."
+    },
+    {
+      "id": "calc-ab-1-2-011",
+      "prompt": "A function takes the value 1 at inputs arbitrarily close to 0 and also takes the value −1 at other inputs arbitrarily close to 0. These two behaviors occur no matter how small a punctured interval around 0 is chosen. What follows?",
+      "options": [
+        "The function cannot have a finite limit as x approaches 0.",
+        "The limit is 0 because 1 and −1 average to 0.",
+        "The limit is 1 if the function equals 1 more frequently.",
+        "The limit equals the value assigned at x=0."
+      ],
+      "correctIndex": 0,
+      "explanation": "A finite limit would require every sufficiently nearby output to approach the same number. Outputs fixed at 1 and −1 remain separated by 2 in every punctured neighborhood, so no finite common limit is possible. A: Correct: two persistently separated output values cannot both approach one finite number. B: The limit concerns nearby outputs, not the average of two separated values. C: Frequency does not erase arbitrarily close outputs of −1. D: Changing one point does not change either of the stated nearby behaviors."
+    }
+  ]
+}

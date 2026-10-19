@@ -131,6 +131,8 @@ The older research manifest is preserved as historical provenance. The official 
 
 Run `pnpm test:workspace` against a running server to check all 91 workspaces, and `pnpm test:preview` for a bounded 80-request development-stability check. The [preview investigation](docs/PREVIEW_STABILITY.md) records the unresolved intermittent manifest warning; passing tests are not a permanent-fix claim.
 
+AP Calculus AB development follows the verified 81-topic curriculum (891-MCQ target). Completed, validated original sets are automatically published one topic at a time under the October 19 policy; other scopes remain honestly empty. See [Calculus progress](content-drafts/calculus-ab/PROGRESS.md), [curriculum audit](content-drafts/calculus-ab/CURRICULUM_AUDIT.md) and [QA limitations](content-drafts/calculus-ab/VALIDATION.md). Run `pnpm test:calculus` for saved question/QA checks and `node --experimental-strip-types tests/calculus-smoke.mjs` against the preview for all 81 topic routes. The Chemistry bank and video catalog remain unchanged.
+
 Practice scores remain session-only. A safe local history proposal is documented in [development progress](docs/DEVELOPMENT_PROGRESS.md); it has not been implemented.
 
 The footer now includes **Rate PrepAtlas**, and every Practice MCQ has a small red **Report this question** flag, including in the Study Workspace. Both forms save to a real private SQLite database on the local server, outside the repository and browser storage. Reviews default to private; public display requires student opt-in and owner privacy moderation. No genuine public reviews exist yet, so that section stays hidden. Owner commands, storage location, abuse limits and future persistent-hosting setup are in [docs/FEEDBACK.md](docs/FEEDBACK.md).
