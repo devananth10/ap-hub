@@ -1,0 +1,218 @@
+{
+  "topicNumber": "7.4",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "a929084c1979da55e815de392dbd0081ecb6bf4d7dc65027d92968f09f98d364",
+  "scopeReview": "CED FUN-7.C.3: reason about solutions and families using slope fields and first-order equations. Exact tangent, sign and curvature reasoning; no Euler method, logistic model or unqualified uniqueness claim for nonsmooth equations.",
+  "varietyReview": "Four original finite fields; initial point versus whole-curve tangency, extrema from sign and second derivatives, equilibrium approach/repulsion, increasing versus concavity/global existence, negative-branch maximum, local implicit-circle geometry, limits of finite data, meeting tangents and a local tangent line.",
+  "repetitionReview": "Each prompt and all four options were read separately; distinct tasks/contexts within this set. Cross-topic exact duplicates checked by validator. Semantic similarity and AP difficulty remain judgment calls, not proven by an automated score.",
+  "questions": [
+    {
+      "questionId": "calc-ab-7-4-001",
+      "independentReasoning": "Independently differentiate each function and compare with its own value, while checking the initial condition separately. All options equal 1 at zero, so the equation genuinely discriminates rather than the initial condition alone. The original finite field also agrees with the equation at every plotted point.",
+      "optionReview": [
+        "Its derivative equals its height everywhere and its initial value is 1.",
+        "Its derivative is 1, not its changing height except at x=0.",
+        "Its slope is negative above the axis, opposing the field.",
+        "Its horizontal tangent disagrees with the field’s slope 1 at height 1."
+      ],
+      "check": {
+        "type": "differential-solution",
+        "rhs": "y",
+        "functions": {
+          "y=eˣ": [
+            "exp",
+            "x"
+          ],
+          "y=1+x": [
+            "add",
+            1,
+            "x"
+          ],
+          "y=e^(−x)": [
+            "exp",
+            [
+              "mul",
+              -1,
+              "x"
+            ]
+          ],
+          "y=1": 1
+        },
+        "samplePoints": [
+          -0.6,
+          0.3,
+          1
+        ],
+        "initial": {
+          "x": 0,
+          "y": 1
+        }
+      },
+      "figureSha256": "d73ca4aa86a5c0da26781d4c60fc7f8dc1ed59b74d9dcbb2b582de880eb3a496",
+      "slopeFieldRhs": "y"
+    },
+    {
+      "questionId": "calc-ab-7-4-002",
+      "independentReasoning": "The exact primitive is x²+C, and the initial datum gives C=1, independently confirming the minimum. This derivative sign analysis concerns motion along a solution as x increases, rather than the sequence of disconnected field segments at one fixed x.",
+      "optionReview": [
+        "That requires a positive-to-negative slope change, opposite to the field.",
+        "Its derivative changes from negative on the left to positive on the right.",
+        "The initial point has height 1, so it does not lie on that axis.",
+        "The slope sign change along the solution establishes a minimum."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The solution has a strict local minimum."
+      },
+      "figureSha256": "7532af82bddeeb8843900a07390765edbcce8d32bc2975f1efaa56b28b5dea56",
+      "slopeFieldRhs": [
+        "mul",
+        2,
+        "x"
+      ]
+    },
+    {
+      "questionId": "calc-ab-7-4-003",
+      "independentReasoning": "Independently an explicit local solution is y=x−1+e^(1−x); at x=1 its value is 1, slope is 0 and second derivative is 1. This confirms the chain differentiation and distinguishes the stationary point from the diagonal’s own slope.",
+      "optionReview": [
+        "A horizontal tangent alone does not establish a maximum.",
+        "The line y=x has derivative 1, not the required zero along that line.",
+        "The second-derivative test applies at this stationary point.",
+        "Differentiating gives y″=1−y′, which is determined at the initial point."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "The solution has a strict local minimum because y′(1)=0 and y″(1)=1."
+      },
+      "figureSha256": "4b6bb19adf187ce2aef21addb908696a9c339ed2e18df31d78c3ed7210b17a89",
+      "slopeFieldRhs": [
+        "sub",
+        "x",
+        "y"
+      ]
+    },
+    {
+      "questionId": "calc-ab-7-4-004",
+      "independentReasoning": "Separate variables or directly differentiate 3e^(−x), then examine its positive exponential factor and limit. The no-crossing claim is justified by this explicit formula and the smooth right side, not asserted for arbitrary nonsmooth differential equations.",
+      "optionReview": [
+        "The unique solution never reaches zero at a finite x; below zero the field would point upward.",
+        "Positive height gives negative derivative in this equation.",
+        "The repeated slope at height 3 is −3, not zero.",
+        "The solution 3e^(−x) has negative slope and approaches zero from above."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It remains positive and decreases toward 0."
+      }
+    },
+    {
+      "questionId": "calc-ab-7-4-005",
+      "independentReasoning": "Use the exact inequality rather than a finite field sample. Differentiating along a solution gives y″=2y y′, which is negative at negative heights and positive at positive heights. The solution tan x near zero also illustrates finite-domain behavior, without requiring a general existence theorem.",
+      "optionReview": [
+        "The derivative is at least 1 for every real y.",
+        "Since y″=2y(1+y²), concavity depends on the sign of y.",
+        "At height zero the derivative is 1, not zero.",
+        "Finite slopes at individual points do not guarantee global existence; solutions can become unbounded."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It is strictly increasing throughout that interval."
+      }
+    },
+    {
+      "questionId": "calc-ab-7-4-006",
+      "independentReasoning": "Put z=y−2, yielding z′=z with z(0)=3. Direct substitution of z=3eˣ proves the description. This is an affine first-order field and an equilibrium interpretation, not a BC logistic model.",
+      "optionReview": [
+        "Above 2 the derivative is positive, so downward motion contradicts the field.",
+        "The solution is 2+3eˣ, so its excess above 2 grows.",
+        "Its explicit excess above 2 is always positive.",
+        "At height 5 the field slope is 3, not zero."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It stays above y=2 and moves upward away from that equilibrium."
+      }
+    },
+    {
+      "questionId": "calc-ab-7-4-007",
+      "independentReasoning": "The explicit solution y=−e^(x²) independently verifies the field and initial value. For negative x its derivative is positive; for positive x it is negative. This sign change confirms the maximum without confusing negative y with a negative derivative.",
+      "optionReview": [
+        "The second derivative is negative, not positive.",
+        "Stationarity is determined by the derivative, not the height.",
+        "At x=0 the slope is zero and y″=2y+2xy′ equals −2.",
+        "The initial value −1 is incompatible with that constant solution."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "A strict local maximum"
+      }
+    },
+    {
+      "questionId": "calc-ab-7-4-008",
+      "independentReasoning": "Independently y=√(4−x²) near zero has derivative −x/√(4−x²), value 2 at zero and second derivative −1/2 there. Its maximal open positive branch excludes ±2; the explanation makes only a local claim and does not extend through the field’s undefined row.",
+      "optionReview": [
+        "The denominator is y=2, so the slope is the finite value zero.",
+        "Concavity depends on the derivative relation, which gives a negative value here.",
+        "That line would have zero derivative everywhere, but −x/2 is not identically zero.",
+        "The derivative is zero there, and differentiating the equation gives y″(0)=−1/2."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It has a horizontal tangent and is concave down."
+      },
+      "figureSha256": "88fa80002ddd4e7a9e3cc5dde7d1dc98b9be4c9fbfb1dccfa8bb805e93bd77cb",
+      "slopeFieldRhs": [
+        "div",
+        [
+          "mul",
+          -1,
+          "x"
+        ],
+        "y"
+      ]
+    },
+    {
+      "questionId": "calc-ab-7-4-009",
+      "independentReasoning": "Given one smooth right side, add a smooth nonzero function that vanishes at every shown grid point, such as a product of squared coordinate distances. This constructs another right side with the same displayed segments but potentially different behavior elsewhere, disproving the uniqueness inference.",
+      "optionReview": [
+        "That is the defined information encoded by a finite slope field.",
+        "Different formulas can agree on every finite grid point and differ between them.",
+        "The diagram gives neither global-domain information nor all intermediate slopes.",
+        "A field usually represents directions for many curves; an initial condition selects a particular one when uniqueness holds."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "It records local tangent directions at the displayed points."
+      }
+    },
+    {
+      "questionId": "calc-ab-7-4-010",
+      "independentReasoning": "Substitution into x+y gives the same result independent of either curve’s history. The smooth equation also has uniqueness, so distinct local solutions cannot actually cross there, but the question’s required conclusion is the common tangent slope and does not rely on that stronger fact.",
+      "optionReview": [
+        "The separate coordinates are not separate derivative choices.",
+        "The right side assigns the same slope 1+2 to any solution passing through that point.",
+        "The field assigns one slope there, so perpendicular tangents are impossible.",
+        "The right side here depends only on the current coordinates."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "Both tangent lines have slope 3."
+      }
+    },
+    {
+      "questionId": "calc-ab-7-4-011",
+      "independentReasoning": "Independently evaluate each line at x=1 and differentiate it. Only the selected line has both the initial height 2 and slope 3. The construction is a single tangent-line interpretation, not the excluded repeated-step Euler method.",
+      "optionReview": [
+        "This uses the height as slope and omits x².",
+        "This has the wrong height at x=1 and the wrong slope.",
+        "The slope is 1²+2=3 and the line passes through (1,2).",
+        "This reverses the field direction at the initial point."
+      ],
+      "check": {
+        "type": "reasoning",
+        "expectedAnswer": "y=2+3(x−1)"
+      }
+    }
+  ]
+}

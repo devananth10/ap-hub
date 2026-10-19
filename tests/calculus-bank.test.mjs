@@ -462,3 +462,34 @@ test('solution verification retains derivative order and includes constant equil
   const bad=structuredClone(qa.questions[3]);bad.check.order=1;
   assert.throws(()=>verifyCalculusQuestion(batch.questions[3],bad),/unique differential solution/);
 });
+
+// These mutations check actual diagram data and its screen geometry, not only a saved key.
+import {slopeSegment} from '../src/lib/practice-figures.ts';
+import {validateSlopeField} from '../scripts/check-calculus-math.mjs';
+test('slope fields reject wrong segment values, duplicate points, stale diagrams and alternate matching keys',()=>{
+  const figure=practiceFigures['calc-ab-7-3-001'];
+  validateSlopeField(figure,['add','x','y']);
+  const bad=structuredClone(figure);bad.slopeField[0].slope+=1;
+  assert.throws(()=>validateSlopeField(bad,['add','x','y']),/Incorrect slope-field segment/);
+  const duplicate=structuredClone(figure);duplicate.slopeField[1]=duplicate.slopeField[0];
+  assert.throws(()=>validateSlopeField(duplicate,['add','x','y']),/Duplicate slope-field point/);
+  const batch=questionBatches.find(b=>b.courseId==='calculus-ab'&&b.topicId==='topic-7-3');
+  const review=JSON.parse(readFileSync('content-drafts/calculus-ab/qa/topic-7-3.json')).questions[0];
+  const wrong=structuredClone(batch.questions[0]);wrong.correctIndex=(wrong.correctIndex+1)%4;
+  assert.throws(()=>verifyCalculusQuestion(wrong,review),/slope-field key/);
+  const equivalent=structuredClone(review);equivalent.check.candidateRhs['y′=x−y']=['add','y','x'];
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[0],equivalent),/unique slope-field equation/);
+  assert.throws(()=>verifyCalculusQuestion(batch.questions[0],{...review,figureSha256:'stale'}),/Slope field changed/);
+});
+test('slope segment rendering preserves signed coordinate slope with unequal axis scales',()=>{
+  const figure=practiceFigures['calc-ab-7-3-001'];
+  for(const slope of [-100,-3,0,2,100]) {
+    const segment=slopeSegment(figure,{x:1,y:-1,slope});
+    assert.ok(Math.abs(Math.hypot(segment.x2-segment.x1,segment.y2-segment.y1)-18)<1e-10);
+    const sx=320/(figure.xRange[1]-figure.xRange[0]),sy=200/(figure.yRange[1]-figure.yRange[0]);
+    const measured=-(segment.y2-segment.y1)/sy/((segment.x2-segment.x1)/sx);
+    assert.ok(Math.abs(measured-slope)<1e-8);
+    assert.ok(Math.abs((segment.x1+segment.x2)/2-264)<1e-10);
+    assert.ok(Math.abs((segment.y1+segment.y2)/2-170)<1e-10);
+  }
+});

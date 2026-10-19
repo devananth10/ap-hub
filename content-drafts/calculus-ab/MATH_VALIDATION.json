@@ -1,6 +1,6 @@
 {
   "status": "passed-for-present-sets-with-recorded-limitations",
-  "questionsChecked": 704,
+  "questionsChecked": 726,
   "programmaticModelChecks": [
     {
       "questionId": "calc-ab-1-1-001",
@@ -1991,6 +1991,36 @@
       "questionId": "calc-ab-7-2-010",
       "method": "differential-solution",
       "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-3-001",
+      "method": "slope-field",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-3-002",
+      "method": "differential-point",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-3-006",
+      "method": "slope-field",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-3-010",
+      "method": "differential-model",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-3-011",
+      "method": "slope-field",
+      "operation": null
+    },
+    {
+      "questionId": "calc-ab-7-4-001",
+      "method": "differential-solution",
+      "operation": null
     }
   ],
   "reasoningReviews": [
@@ -2299,7 +2329,23 @@
     "calc-ab-7-2-005",
     "calc-ab-7-2-008",
     "calc-ab-7-2-009",
-    "calc-ab-7-2-011"
+    "calc-ab-7-2-011",
+    "calc-ab-7-3-003",
+    "calc-ab-7-3-004",
+    "calc-ab-7-3-005",
+    "calc-ab-7-3-007",
+    "calc-ab-7-3-008",
+    "calc-ab-7-3-009",
+    "calc-ab-7-4-002",
+    "calc-ab-7-4-003",
+    "calc-ab-7-4-004",
+    "calc-ab-7-4-005",
+    "calc-ab-7-4-006",
+    "calc-ab-7-4-007",
+    "calc-ab-7-4-008",
+    "calc-ab-7-4-009",
+    "calc-ab-7-4-010",
+    "calc-ab-7-4-011"
   ],
   "humanReviewPerformed": false,
   "limitations": [

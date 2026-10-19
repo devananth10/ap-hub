@@ -1712,5 +1712,960 @@
     ],
     "dots": [],
     "description": "The graph is f on [2,6]. Straight segments join (2,0), (3,3), (4,0) and (6,−6). The region on [2,4] is a triangle above the axis, and [4,6] gives a triangle below it."
+  },
+  "calc-ab-7-3-001": {
+    "xRange": [
+      -2.5,
+      2.5
+    ],
+    "yRange": [
+      -2.5,
+      2.5
+    ],
+    "description": "Slope field on the integer grid −2≤x≤2, −2≤y≤2. Segments are horizontal along y=−x. At (1,1) the slope is 2; at (−1,−1) it is −2. Segment lengths are equal on the screen.",
+    "curves": [],
+    "dots": [],
+    "slopeField": [
+      {
+        "x": -2,
+        "y": -2,
+        "slope": -4
+      },
+      {
+        "x": -2,
+        "y": -1,
+        "slope": -3
+      },
+      {
+        "x": -2,
+        "y": 0,
+        "slope": -2
+      },
+      {
+        "x": -2,
+        "y": 1,
+        "slope": -1
+      },
+      {
+        "x": -2,
+        "y": 2,
+        "slope": 0
+      },
+      {
+        "x": -1,
+        "y": -2,
+        "slope": -3
+      },
+      {
+        "x": -1,
+        "y": -1,
+        "slope": -2
+      },
+      {
+        "x": -1,
+        "y": 0,
+        "slope": -1
+      },
+      {
+        "x": -1,
+        "y": 1,
+        "slope": 0
+      },
+      {
+        "x": -1,
+        "y": 2,
+        "slope": 1
+      },
+      {
+        "x": 0,
+        "y": -2,
+        "slope": -2
+      },
+      {
+        "x": 0,
+        "y": -1,
+        "slope": -1
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "slope": 0
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "slope": 1
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "slope": 2
+      },
+      {
+        "x": 1,
+        "y": -2,
+        "slope": -1
+      },
+      {
+        "x": 1,
+        "y": -1,
+        "slope": 0
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "slope": 1
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "slope": 2
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "slope": 3
+      },
+      {
+        "x": 2,
+        "y": -2,
+        "slope": 0
+      },
+      {
+        "x": 2,
+        "y": -1,
+        "slope": 1
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "slope": 2
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "slope": 3
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "slope": 4
+      }
+    ]
+  },
+  "calc-ab-7-3-006": {
+    "xRange": [
+      -2.5,
+      2.5
+    ],
+    "yRange": [
+      -2.5,
+      2.5
+    ],
+    "description": "Slope field on the integer grid −2≤x≤2, −2≤y≤2. Slopes are zero on both axes, positive in quadrants I and III, and negative in quadrants II and IV. At (2,1) the slope is 2.",
+    "curves": [],
+    "dots": [],
+    "slopeField": [
+      {
+        "x": -2,
+        "y": -2,
+        "slope": 4
+      },
+      {
+        "x": -2,
+        "y": -1,
+        "slope": 2
+      },
+      {
+        "x": -2,
+        "y": 0,
+        "slope": 0
+      },
+      {
+        "x": -2,
+        "y": 1,
+        "slope": -2
+      },
+      {
+        "x": -2,
+        "y": 2,
+        "slope": -4
+      },
+      {
+        "x": -1,
+        "y": -2,
+        "slope": 2
+      },
+      {
+        "x": -1,
+        "y": -1,
+        "slope": 1
+      },
+      {
+        "x": -1,
+        "y": 0,
+        "slope": 0
+      },
+      {
+        "x": -1,
+        "y": 1,
+        "slope": -1
+      },
+      {
+        "x": -1,
+        "y": 2,
+        "slope": -2
+      },
+      {
+        "x": 0,
+        "y": -2,
+        "slope": 0
+      },
+      {
+        "x": 0,
+        "y": -1,
+        "slope": 0
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "slope": 0
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "slope": 0
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "slope": 0
+      },
+      {
+        "x": 1,
+        "y": -2,
+        "slope": -2
+      },
+      {
+        "x": 1,
+        "y": -1,
+        "slope": -1
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "slope": 0
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "slope": 1
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "slope": 2
+      },
+      {
+        "x": 2,
+        "y": -2,
+        "slope": -4
+      },
+      {
+        "x": 2,
+        "y": -1,
+        "slope": -2
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "slope": 0
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "slope": 2
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "slope": 4
+      }
+    ]
+  },
+  "calc-ab-7-3-011": {
+    "xRange": [
+      -2.5,
+      2.5
+    ],
+    "yRange": [
+      -2.5,
+      2.5
+    ],
+    "description": "Slope field on the integer grid −2≤x≤2, −2≤y≤2. Rows y=−1 and y=1 have horizontal segments. Row y=0 has slope 1; rows y=−2 and y=2 have slope −3. Each row repeats across x.",
+    "curves": [],
+    "dots": [],
+    "slopeField": [
+      {
+        "x": -2,
+        "y": -2,
+        "slope": -3
+      },
+      {
+        "x": -2,
+        "y": -1,
+        "slope": 0
+      },
+      {
+        "x": -2,
+        "y": 0,
+        "slope": 1
+      },
+      {
+        "x": -2,
+        "y": 1,
+        "slope": 0
+      },
+      {
+        "x": -2,
+        "y": 2,
+        "slope": -3
+      },
+      {
+        "x": -1,
+        "y": -2,
+        "slope": -3
+      },
+      {
+        "x": -1,
+        "y": -1,
+        "slope": 0
+      },
+      {
+        "x": -1,
+        "y": 0,
+        "slope": 1
+      },
+      {
+        "x": -1,
+        "y": 1,
+        "slope": 0
+      },
+      {
+        "x": -1,
+        "y": 2,
+        "slope": -3
+      },
+      {
+        "x": 0,
+        "y": -2,
+        "slope": -3
+      },
+      {
+        "x": 0,
+        "y": -1,
+        "slope": 0
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "slope": 1
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "slope": 0
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "slope": -3
+      },
+      {
+        "x": 1,
+        "y": -2,
+        "slope": -3
+      },
+      {
+        "x": 1,
+        "y": -1,
+        "slope": 0
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "slope": 1
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "slope": 0
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "slope": -3
+      },
+      {
+        "x": 2,
+        "y": -2,
+        "slope": -3
+      },
+      {
+        "x": 2,
+        "y": -1,
+        "slope": 0
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "slope": 1
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "slope": 0
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "slope": -3
+      }
+    ]
+  },
+  "calc-ab-7-4-001": {
+    "xRange": [
+      -2.5,
+      2.5
+    ],
+    "yRange": [
+      -2.5,
+      2.5
+    ],
+    "description": "Slope field for y′=y on the integer grid −2≤x≤2, −2≤y≤2. Positive rows slope upward, negative rows downward and the row y=0 is horizontal. A solution is required to pass through (0,1).",
+    "curves": [],
+    "dots": [],
+    "slopeField": [
+      {
+        "x": -2,
+        "y": -2,
+        "slope": -2
+      },
+      {
+        "x": -2,
+        "y": -1,
+        "slope": -1
+      },
+      {
+        "x": -2,
+        "y": 0,
+        "slope": 0
+      },
+      {
+        "x": -2,
+        "y": 1,
+        "slope": 1
+      },
+      {
+        "x": -2,
+        "y": 2,
+        "slope": 2
+      },
+      {
+        "x": -1,
+        "y": -2,
+        "slope": -2
+      },
+      {
+        "x": -1,
+        "y": -1,
+        "slope": -1
+      },
+      {
+        "x": -1,
+        "y": 0,
+        "slope": 0
+      },
+      {
+        "x": -1,
+        "y": 1,
+        "slope": 1
+      },
+      {
+        "x": -1,
+        "y": 2,
+        "slope": 2
+      },
+      {
+        "x": 0,
+        "y": -2,
+        "slope": -2
+      },
+      {
+        "x": 0,
+        "y": -1,
+        "slope": -1
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "slope": 0
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "slope": 1
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "slope": 2
+      },
+      {
+        "x": 1,
+        "y": -2,
+        "slope": -2
+      },
+      {
+        "x": 1,
+        "y": -1,
+        "slope": -1
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "slope": 0
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "slope": 1
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "slope": 2
+      },
+      {
+        "x": 2,
+        "y": -2,
+        "slope": -2
+      },
+      {
+        "x": 2,
+        "y": -1,
+        "slope": -1
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "slope": 0
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "slope": 1
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "slope": 2
+      }
+    ]
+  },
+  "calc-ab-7-4-002": {
+    "xRange": [
+      -2.5,
+      2.5
+    ],
+    "yRange": [
+      -2.5,
+      2.5
+    ],
+    "description": "Slope field for y′=2x on the integer grid −2≤x≤2, −2≤y≤2. All slopes are negative left of the y-axis, zero on it and positive right of it. Each vertical column has a repeated slope.",
+    "curves": [],
+    "dots": [],
+    "slopeField": [
+      {
+        "x": -2,
+        "y": -2,
+        "slope": -4
+      },
+      {
+        "x": -2,
+        "y": -1,
+        "slope": -4
+      },
+      {
+        "x": -2,
+        "y": 0,
+        "slope": -4
+      },
+      {
+        "x": -2,
+        "y": 1,
+        "slope": -4
+      },
+      {
+        "x": -2,
+        "y": 2,
+        "slope": -4
+      },
+      {
+        "x": -1,
+        "y": -2,
+        "slope": -2
+      },
+      {
+        "x": -1,
+        "y": -1,
+        "slope": -2
+      },
+      {
+        "x": -1,
+        "y": 0,
+        "slope": -2
+      },
+      {
+        "x": -1,
+        "y": 1,
+        "slope": -2
+      },
+      {
+        "x": -1,
+        "y": 2,
+        "slope": -2
+      },
+      {
+        "x": 0,
+        "y": -2,
+        "slope": 0
+      },
+      {
+        "x": 0,
+        "y": -1,
+        "slope": 0
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "slope": 0
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "slope": 0
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "slope": 0
+      },
+      {
+        "x": 1,
+        "y": -2,
+        "slope": 2
+      },
+      {
+        "x": 1,
+        "y": -1,
+        "slope": 2
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "slope": 2
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "slope": 2
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "slope": 2
+      },
+      {
+        "x": 2,
+        "y": -2,
+        "slope": 4
+      },
+      {
+        "x": 2,
+        "y": -1,
+        "slope": 4
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "slope": 4
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "slope": 4
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "slope": 4
+      }
+    ]
+  },
+  "calc-ab-7-4-003": {
+    "xRange": [
+      -2.5,
+      2.5
+    ],
+    "yRange": [
+      -2.5,
+      2.5
+    ],
+    "description": "Slope field for y′=x−y on the integer grid −2≤x≤2, −2≤y≤2. Segments are horizontal on y=x, upward below that line and downward above it. Consider the solution through (1,1).",
+    "curves": [],
+    "dots": [],
+    "slopeField": [
+      {
+        "x": -2,
+        "y": -2,
+        "slope": 0
+      },
+      {
+        "x": -2,
+        "y": -1,
+        "slope": -1
+      },
+      {
+        "x": -2,
+        "y": 0,
+        "slope": -2
+      },
+      {
+        "x": -2,
+        "y": 1,
+        "slope": -3
+      },
+      {
+        "x": -2,
+        "y": 2,
+        "slope": -4
+      },
+      {
+        "x": -1,
+        "y": -2,
+        "slope": 1
+      },
+      {
+        "x": -1,
+        "y": -1,
+        "slope": 0
+      },
+      {
+        "x": -1,
+        "y": 0,
+        "slope": -1
+      },
+      {
+        "x": -1,
+        "y": 1,
+        "slope": -2
+      },
+      {
+        "x": -1,
+        "y": 2,
+        "slope": -3
+      },
+      {
+        "x": 0,
+        "y": -2,
+        "slope": 2
+      },
+      {
+        "x": 0,
+        "y": -1,
+        "slope": 1
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "slope": 0
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "slope": -1
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "slope": -2
+      },
+      {
+        "x": 1,
+        "y": -2,
+        "slope": 3
+      },
+      {
+        "x": 1,
+        "y": -1,
+        "slope": 2
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "slope": 1
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "slope": 0
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "slope": -1
+      },
+      {
+        "x": 2,
+        "y": -2,
+        "slope": 4
+      },
+      {
+        "x": 2,
+        "y": -1,
+        "slope": 3
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "slope": 2
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "slope": 1
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "slope": 0
+      }
+    ]
+  },
+  "calc-ab-7-4-008": {
+    "xRange": [
+      -2.5,
+      2.5
+    ],
+    "yRange": [
+      -2.5,
+      2.5
+    ],
+    "description": "Slope field for y′=−x/y at x=−2,−1,0,1,2 and y=−2,−1,1,2. The row y=0 is omitted because the equation is undefined there. In the upper-right quadrant slopes are negative. At x=0 and y≠0 the slope is zero.",
+    "curves": [],
+    "dots": [],
+    "slopeField": [
+      {
+        "x": -2,
+        "y": -2,
+        "slope": -1
+      },
+      {
+        "x": -2,
+        "y": -1,
+        "slope": -2
+      },
+      {
+        "x": -2,
+        "y": 1,
+        "slope": 2
+      },
+      {
+        "x": -2,
+        "y": 2,
+        "slope": 1
+      },
+      {
+        "x": -1,
+        "y": -2,
+        "slope": -0.5
+      },
+      {
+        "x": -1,
+        "y": -1,
+        "slope": -1
+      },
+      {
+        "x": -1,
+        "y": 1,
+        "slope": 1
+      },
+      {
+        "x": -1,
+        "y": 2,
+        "slope": 0.5
+      },
+      {
+        "x": 0,
+        "y": -2,
+        "slope": 0
+      },
+      {
+        "x": 0,
+        "y": -1,
+        "slope": 0
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "slope": 0
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "slope": 0
+      },
+      {
+        "x": 1,
+        "y": -2,
+        "slope": 0.5
+      },
+      {
+        "x": 1,
+        "y": -1,
+        "slope": 1
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "slope": -1
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "slope": -0.5
+      },
+      {
+        "x": 2,
+        "y": -2,
+        "slope": 1
+      },
+      {
+        "x": 2,
+        "y": -1,
+        "slope": 2
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "slope": -2
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "slope": -1
+      }
+    ]
   }
 }

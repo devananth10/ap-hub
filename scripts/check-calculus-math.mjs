@@ -151,14 +151,40 @@ export function evaluateBivariate(expression,x,y) {
   const substitute=node=>node==='y'?y:Array.isArray(node)?node.map(substitute):node;
   return evaluateExpression(substitute(expression),x);
 }
+export function validateSlopeField(figure,rhs) {
+  assert.ok(figure?.slopeField?.length>=9,'Slope field needs a finite grid');
+  const seen=new Set();
+  for(const p of figure.slopeField) {
+    assert.ok([p.x,p.y,p.slope].every(Number.isFinite),'Nonfinite slope-field point');
+    assert.ok(!seen.has(`${p.x},${p.y}`),'Duplicate slope-field point');seen.add(`${p.x},${p.y}`);
+    assert.ok(Math.abs(p.slope-evaluateBivariate(rhs,p.x,p.y))<1e-10,'Incorrect slope-field segment');
+  }
+}
 export function verifyCalculusQuestion(question, review) {
   assert.equal(review.questionId,question.id);
   assert.equal(review.optionReview.length,4);
   assert.ok(review.optionReview.every(text=>typeof text==='string' && text.length>=20));
   assert.ok(review.independentReasoning.length>=60);
   const answer=question.options[question.correctIndex];
+  if(practiceFigures[question.id]?.slopeField) {
+    const figure=practiceFigures[question.id];
+    assert.equal(createHash('sha256').update(JSON.stringify(figure)).digest('hex'),review.figureSha256,'Slope field changed after review');
+    assert.ok(review.slopeFieldRhs,'Slope field needs independently recorded equation');
+    validateSlopeField(figure,review.slopeFieldRhs);
+  }
   if(question.prompt.includes('table below')) assert.equal(createHash('sha256').update(JSON.stringify(practiceTables[question.id])).digest('hex'),review.tableSha256,'Table changed after review: '+question.id);
-  if(review.check.type==='differential-model') {
+  if(review.check.type==='slope-field') {
+    const c=review.check,figure=practiceFigures[question.id];
+    assert.equal(createHash('sha256').update(JSON.stringify(figure)).digest('hex'),review.figureSha256,'Slope field changed after review');
+    assert.ok(figure.slopeField?.length>=9);
+    assert.ok(figure.slopeField.every(p=>Math.abs(p.slope-evaluateBivariate(c.rhs,p.x,p.y))<1e-10),'Incorrect slope-field segment');
+    const matches=question.options.map(option=>figure.slopeField.every(p=>Math.abs(p.slope-evaluateBivariate(c.candidateRhs[option],p.x,p.y))<1e-10));
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique slope-field equation');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' slope-field key');
+  } else if(review.check.type==='differential-point') {
+    const c=review.check,expected=evaluateBivariate(c.rhs,c.x,c.y);
+    const matches=question.options.map(option=>Math.abs(numericalOption(option)-expected)<1e-10);
+    assert.equal(matches.filter(Boolean).length,1,question.id+' unique point slope');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' point slope key');
+  } else if(review.check.type==='differential-model') {
     const c=review.check;assert.ok(c.samples.length>=3,'Rate models need varied states');
     const matches=question.options.map(option=>c.samples.every(([x,y,rate])=>Math.abs(evaluateBivariate(c.candidateRhs[option],x,y)-rate)<1e-9));
     assert.equal(matches.filter(Boolean).length,1,question.id+' unique differential model');assert.equal(matches.indexOf(true),question.correctIndex,question.id+' differential model key');

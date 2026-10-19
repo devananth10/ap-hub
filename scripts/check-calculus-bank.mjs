@@ -46,6 +46,15 @@ export function validateCalculusBank() {
         const figure=practiceFigures[question.id];assert.ok(figure,question.id+' missing graph');
         assert.equal(semanticHash(figure),review.figureSha256||review.check.figureSha256,'Graph changed after review: '+question.id);
         assert.ok(figure.description.length>50);
+        if(figure.slopeField) {
+          assert.ok(figure.slopeField.length>=9,'A slope field needs a genuine grid');
+          const locations=new Set();
+          for(const {x,y,slope} of figure.slopeField) {
+            assert.ok([x,y,slope].every(Number.isFinite),'Finite slope-field data required');
+            assert.ok(x>figure.xRange[0]&&x<figure.xRange[1]&&y>figure.yRange[0]&&y<figure.yRange[1]);
+            assert.ok(!locations.has(`${x},${y}`),'Duplicate slope-field point');locations.add(`${x},${y}`);
+          }
+        }
         assert.ok(figure.xRange[0]<=0 && figure.xRange[1]>=0 && figure.yRange[0]<=0 && figure.yRange[1]>=0,'Graph must show origin accurately');
         for(const curve of figure.curves) {
           assert.ok(curve.points.length>=2);

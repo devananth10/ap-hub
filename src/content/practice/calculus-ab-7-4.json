@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 7,
+  "topicId": "topic-7-4",
+  "questions": [
+    {
+      "id": "calc-ab-7-4-001",
+      "prompt": "The slope-field graph below represents y′=y. Which function follows its directions throughout the real line and passes through (0,1)?",
+      "options": [
+        "y=eˣ",
+        "y=1+x",
+        "y=e^(−x)",
+        "y=1"
+      ],
+      "correctIndex": 0,
+      "explanation": "A solution curve must be tangent to the field at every point on the curve, not just at the initial point. For y=eˣ, y′=eˣ=y and y(0)=1. The line 1+x initially shares the same tangent but soon disagrees with the changing field directions. A: Its derivative equals its height everywhere and its initial value is 1. B: Its derivative is 1, not its changing height except at x=0. C: Its slope is negative above the axis, opposing the field. D: Its horizontal tangent disagrees with the field’s slope 1 at height 1."
+    },
+    {
+      "id": "calc-ab-7-4-002",
+      "prompt": "A solution to the equation represented by the slope-field graph below passes through (0,1). What must occur at x=0?",
+      "options": [
+        "The solution has a strict local maximum.",
+        "The solution has a strict local minimum.",
+        "The solution crosses the x-axis.",
+        "No extremum occurs because all horizontal segments are in one column."
+      ],
+      "correctIndex": 1,
+      "explanation": "The field supplies y′=2x along every solution. For x<0 the solution decreases, and for x>0 it increases. Therefore the solution has a strict local minimum at its specified point (0,1). The conclusion follows from field signs without calculating its full formula. A: That requires a positive-to-negative slope change, opposite to the field. B: Its derivative changes from negative on the left to positive on the right. C: The initial point has height 1, so it does not lie on that axis. D: The slope sign change along the solution establishes a minimum."
+    },
+    {
+      "id": "calc-ab-7-4-003",
+      "prompt": "For the solution through (1,1) in the slope-field graph below, y′=x−y. Which conclusion at x=1 is justified by differentiating the equation?",
+      "options": [
+        "It has a local maximum because the field is horizontal there.",
+        "It follows y=x on an interval because that is the zero-slope line.",
+        "The solution has a strict local minimum because y′(1)=0 and y″(1)=1.",
+        "Its concavity cannot be determined even from the stated equation."
+      ],
+      "correctIndex": 2,
+      "explanation": "At (1,1), y′=1−1=0. Differentiating y′=x−y along the solution gives y″=1−y′, hence y″(1)=1>0. The second-derivative test establishes a strict local minimum. The zero-slope locus is not itself a solution curve. A: A horizontal tangent alone does not establish a maximum. B: The line y=x has derivative 1, not the required zero along that line. C: The second-derivative test applies at this stationary point. D: Differentiating gives y″=1−y′, which is determined at the initial point."
+    },
+    {
+      "id": "calc-ab-7-4-004",
+      "prompt": "A solution of y′=−y starts at y(0)=3. Which description is consistent with this smooth field for all x≥0?",
+      "options": [
+        "It crosses y=0 and then continues decreasing into negative values.",
+        "It increases without bound because its initial value is positive.",
+        "It stays at height 3 because each horizontal row has a repeated slope.",
+        "It remains positive and decreases toward 0."
+      ],
+      "correctIndex": 3,
+      "explanation": "The horizontal field at y=0 is an equilibrium solution. For this particular smooth equation, the initial-value solution is 3e^(−x), which is positive, decreasing and tends to zero. Repeated row slopes do not make nonzero constant functions into solutions. A: The unique solution never reaches zero at a finite x; below zero the field would point upward. B: Positive height gives negative derivative in this equation. C: The repeated slope at height 3 is −3, not zero. D: The solution 3e^(−x) has negative slope and approaches zero from above."
+    },
+    {
+      "id": "calc-ab-7-4-005",
+      "prompt": "For y′=1+y², what can be concluded about any real solution on its interval of existence?",
+      "options": [
+        "It is strictly increasing throughout that interval.",
+        "It is concave up throughout every interval.",
+        "It has a horizontal tangent whenever y=0.",
+        "It must exist for every real x because every field slope is finite."
+      ],
+      "correctIndex": 0,
+      "explanation": "Because 1+y²≥1>0, every solution has positive derivative wherever it exists and is therefore strictly increasing. This conclusion concerns its interval of existence. Positive first derivative alone gives no universal concavity or global-domain conclusion. A: The derivative is at least 1 for every real y. B: Since y″=2y(1+y²), concavity depends on the sign of y. C: At height zero the derivative is 1, not zero. D: Finite slopes at individual points do not guarantee global existence; solutions can become unbounded."
+    },
+    {
+      "id": "calc-ab-7-4-006",
+      "prompt": "In the field for y′=y−2, consider a solution with y(0)=5. How does it behave as x increases?",
+      "options": [
+        "It decreases toward y=2 from above.",
+        "It stays above y=2 and moves upward away from that equilibrium.",
+        "It crosses y=2 and continues below it.",
+        "It remains at y=5."
+      ],
+      "correctIndex": 1,
+      "explanation": "The row y=2 is horizontal, but above it y′ is positive. The solution through height 5 is y=2+3eˣ: its difference from 2 stays positive and increases. Thus it moves away from the equilibrium as x grows; the repeated row structure does not imply a constant solution at height 5. A: Above 2 the derivative is positive, so downward motion contradicts the field. B: The solution is 2+3eˣ, so its excess above 2 grows. C: Its explicit excess above 2 is always positive. D: At height 5 the field slope is 3, not zero."
+    },
+    {
+      "id": "calc-ab-7-4-007",
+      "prompt": "A solution of y′=2xy passes through (0,−1). What type of stationary point does it have there?",
+      "options": [
+        "A strict local minimum",
+        "No stationary point because the height is negative",
+        "A strict local maximum",
+        "A point on the constant solution y=0"
+      ],
+      "correctIndex": 2,
+      "explanation": "At the initial point, y′=2·0·(−1)=0. Differentiate the equation by the product rule: y″=2y+2xy′. At x=0 this equals −2, so the second-derivative test gives a strict local maximum even though its height is negative. A: The second derivative is negative, not positive. B: Stationarity is determined by the derivative, not the height. C: At x=0 the slope is zero and y″=2y+2xy′ equals −2. D: The initial value −1 is incompatible with that constant solution."
+    },
+    {
+      "id": "calc-ab-7-4-008",
+      "prompt": "The slope-field graph below represents y′=−x/y. A solution passes through (0,2). Which description is correct near that point?",
+      "options": [
+        "It has a vertical tangent because x=0.",
+        "It is concave up because y is positive.",
+        "It follows the constant line y=2.",
+        "It has a horizontal tangent and is concave down."
+      ],
+      "correctIndex": 3,
+      "explanation": "At (0,2), y′=−0/2=0. Differentiate y y′=−x to obtain (y′)²+y y″=−1. Substituting y=2 and y′=0 yields y″=−1/2. Therefore a local solution has a horizontal tangent and is concave down. A: The denominator is y=2, so the slope is the finite value zero. B: Concavity depends on the derivative relation, which gives a negative value here. C: That line would have zero derivative everywhere, but −x/2 is not identically zero. D: The derivative is zero there, and differentiating the equation gives y″(0)=−1/2."
+    },
+    {
+      "id": "calc-ab-7-4-009",
+      "prompt": "A diagram shows slope segments only at integer grid points in a square. No formula for the differential equation is provided. Which claim can be made from that finite diagram alone?",
+      "options": [
+        "It records local tangent directions at the displayed points.",
+        "It determines the equation uniquely among all possible smooth formulas.",
+        "It proves every solution stays bounded for all real x.",
+        "It determines one solution without an initial point."
+      ],
+      "correctIndex": 0,
+      "explanation": "A finite field displays selected values of a differential right side. It helps visualize solution behavior, but without additional information it does not uniquely determine an arbitrary formula, prove global bounds or select one initial-value solution. Interpret the diagram at its actual level of evidence. A: That is the defined information encoded by a finite slope field. B: Different formulas can agree on every finite grid point and differ between them. C: The diagram gives neither global-domain information nor all intermediate slopes. D: A field usually represents directions for many curves; an initial condition selects a particular one when uniqueness holds."
+    },
+    {
+      "id": "calc-ab-7-4-010",
+      "prompt": "Two proposed differentiable solution curves of y′=x+y meet at (1,2). What must be true about their tangent lines at that point?",
+      "options": [
+        "One must have slope 1 and the other slope 2.",
+        "Both tangent lines have slope 3.",
+        "They must cross at right angles.",
+        "Their tangent slopes depend on their earlier heights."
+      ],
+      "correctIndex": 1,
+      "explanation": "Every solution through (1,2) must satisfy y′=1+2=3 at that point. Thus both proposed tangents coincide in direction. The statement follows immediately from the field’s single slope at that point; it does not require assuming a general uniqueness theorem for arbitrary equations. A: The separate coordinates are not separate derivative choices. B: The right side assigns the same slope 1+2 to any solution passing through that point. C: The field assigns one slope there, so perpendicular tangents are impossible. D: The right side here depends only on the current coordinates."
+    },
+    {
+      "id": "calc-ab-7-4-011",
+      "prompt": "For the solution of y′=x²+y with y(1)=2, which line is tangent at the initial point?",
+      "options": [
+        "y=2+2(x−1)",
+        "y=3+2(x−1)",
+        "y=2+3(x−1)",
+        "y=2−3(x−1)"
+      ],
+      "correctIndex": 2,
+      "explanation": "The field gives the instantaneous slope at the initial point: 1²+2=3. Point-slope form then gives y−2=3(x−1). This tangent line describes local direction; it is not claimed to be the exact solution away from the initial point. A: This uses the height as slope and omits x². B: This has the wrong height at x=1 and the wrong slope. C: The slope is 1²+2=3 and the line passes through (1,2). D: This reverses the field direction at the initial point."
+    }
+  ]
+}

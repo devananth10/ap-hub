@@ -1,0 +1,139 @@
+{
+  "courseId": "calculus-ab",
+  "unitNumber": 7,
+  "topicId": "topic-7-3",
+  "questions": [
+    {
+      "id": "calc-ab-7-3-001",
+      "prompt": "Which differential equation matches every segment in the slope-field graph below? Choose among the four equations listed.",
+      "options": [
+        "y′=x−y",
+        "y′=xy",
+        "y′=y",
+        "y′=x+y"
+      ],
+      "correctIndex": 3,
+      "explanation": "Use both the zero-slope diagonal and a point away from it. On y=−x the sum x+y is zero. At (1,1), x+y=2, as drawn. Substituting each plotted coordinate verifies the selected equation throughout the displayed finite grid; the task is selection among the listed models, not identifying a unique equation from all possible formulas. A: This would give zero slope at (1,1), contrary to the graph. B: This gives slope 1 at (1,1), not the plotted slope 2. C: This gives slope 1 at (1,1) and ignores the horizontal variation. D: At every plotted point, adding its two coordinates gives the segment slope."
+    },
+    {
+      "id": "calc-ab-7-3-002",
+      "prompt": "When sketching the slope field for y′=x²−2y, what slope belongs at (1,3)?",
+      "options": [
+        "−5",
+        "5",
+        "−3",
+        "7"
+      ],
+      "correctIndex": 0,
+      "explanation": "The coordinates supply x=1 and y=3 to the right side of the differential equation. Thus y′=1−6=−5. Draw a short segment through (1,3) that descends steeply from left to right; its slope is a rate, not its height. A: Substitution gives 1²−2·3=−5. B: This reverses the subtraction and gives the wrong orientation. C: This does not account for both the square and the coefficient 2. D: This adds 2y instead of subtracting it."
+    },
+    {
+      "id": "calc-ab-7-3-003",
+      "prompt": "For the slope field of y′=y−x², on which entire curve are the short line segments horizontal?",
+      "options": [
+        "y=x",
+        "y=x²",
+        "y=−x²",
+        "x=0"
+      ],
+      "correctIndex": 1,
+      "explanation": "A horizontal segment has derivative zero, so set y−x²=0 and solve for the point coordinates. This gives the parabola y=x² as a zero-slope locus. This locus is not necessarily a solution curve; it describes where the field’s local tangent directions are horizontal. A: Along this line the right side is x−x², not identically zero. B: The right side vanishes exactly when y=x². C: This gives −2x², zero only at the origin. D: On this vertical line the slope is y, generally not zero."
+    },
+    {
+      "id": "calc-ab-7-3-004",
+      "prompt": "A field is to be drawn for y′=3−y. Which instruction correctly describes the slopes across each horizontal row?",
+      "options": [
+        "Use the same slope down each vertical column; all slopes are positive.",
+        "Reverse the slope whenever x changes sign.",
+        "Use the same slope along each row; rows below y=3 have positive slopes.",
+        "Draw horizontal segments everywhere because x is absent."
+      ],
+      "correctIndex": 2,
+      "explanation": "For fixed y, 3−y is constant as x varies. The row y=3 is horizontal, rows y<3 tilt upward and rows y>3 tilt downward. Each row has its own slope, even though that slope repeats across the row. A: The formula varies with y and is negative above 3. B: The independent coordinate x does not appear in the right side. C: The slope depends only on y and 3−y is positive below 3. D: Absence of x means row invariance, not zero derivative."
+    },
+    {
+      "id": "calc-ab-7-3-005",
+      "prompt": "For y′=x/(y−1), which points must be omitted when constructing a finite-slope field?",
+      "options": [
+        "All points on x=0",
+        "All points with y<1",
+        "Only (0,1); the other points on y=1 have infinite valid slopes.",
+        "All points on y=1"
+      ],
+      "correctIndex": 3,
+      "explanation": "A slope field for this equation can be drawn only where the quotient is defined. The condition is y−1≠0. Zero numerator values give horizontal segments when the denominator is nonzero, but no numerator value makes division by zero valid. A: At x=0 and y≠1 the slope is the valid number zero. B: A negative denominator is allowed and can give finite slopes. C: The original right side is undefined everywhere on y=1. D: The denominator is zero there, so the differential equation is undefined."
+    },
+    {
+      "id": "calc-ab-7-3-006",
+      "prompt": "Which equation matches every segment in the slope-field graph below, including the horizontal segments along both axes?",
+      "options": [
+        "y′=xy",
+        "y′=x+y",
+        "y′=x²+y²",
+        "y′=x/(1+y²)"
+      ],
+      "correctIndex": 0,
+      "explanation": "First inspect the axes: both coordinate axes have zero slope. Then compare quadrant signs. The product xy is positive when x and y share a sign and negative otherwise, precisely matching this field. At (2,1) its value is 2, agreeing with the segment there. A: The product vanishes on both axes and has the displayed quadrant signs. B: This is nonzero at (1,0), unlike the graph. C: This would make all non-origin slopes positive. D: At (1,0) it has slope 1, whereas the displayed segment is horizontal."
+    },
+    {
+      "id": "calc-ab-7-3-007",
+      "prompt": "Two students draw the same slope field at the same grid points. One uses short segments of equal length; the other uses longer segments when |y′| is large. Which criterion is essential for an accurate field?",
+      "options": [
+        "A segment’s length must equal y′, including negative lengths.",
+        "Each segment must pass through its grid point with slope equal to the equation’s right side there.",
+        "Every segment must end on a neighboring grid point.",
+        "The segments must join into a single continuous curve."
+      ],
+      "correctIndex": 1,
+      "explanation": "The defining information at (x,y) is the slope f(x,y). Segment length may be chosen for legibility, provided its center or placement represents that point and its direction gives the correct slope. Short separated segments make the field easier to read without claiming a unique solution. A: A signed derivative is not a geometric length. B: Direction and location encode the derivative; a particular segment length is not prescribed. C: That would restrict possible slopes and is not required. D: A field records local directions for many possible solutions, not one joined curve."
+    },
+    {
+      "id": "calc-ab-7-3-008",
+      "prompt": "At (2,1), a slope field specifies y′=−3/2. Which short segment direction is correct?",
+      "options": [
+        "A rise of 2 units for a run of −3 units",
+        "A rise of 3 units for a run of 2 units",
+        "A rise of −3 units for a run of 2 units",
+        "A horizontal segment because the y-coordinate equals 1"
+      ],
+      "correctIndex": 2,
+      "explanation": "Slope measures vertical change divided by horizontal change. The direction (Δx,Δy)=(2,−3), or any positive scalar multiple of it, has slope −3/2. The segment can be made arbitrarily short and centered at (2,1); the stated direction does not require drawing a segment that long. A: This gives −2/3, the reciprocal slope. B: This gives positive 3/2, reversing the sign. C: The ratio rise/run is −3/2. D: The point height does not replace the specified derivative."
+    },
+    {
+      "id": "calc-ab-7-3-009",
+      "prompt": "A slope field for y′=x²+y² is being sketched. Which description is correct?",
+      "options": [
+        "Every point on either axis has a horizontal segment.",
+        "Quadrants II and IV have negative slopes.",
+        "All segments have the same slope because both variables are squared.",
+        "Only the origin has a horizontal segment; every other segment has positive slope."
+      ],
+      "correctIndex": 3,
+      "explanation": "Both terms are nonnegative, and their sum equals zero only at (0,0). At any other point at least one square is strictly positive. The field therefore tilts upward from left to right everywhere except the horizontal segment at the origin; points at different radii generally have different slopes. A: On an axis the other coordinate’s square can still be positive. B: Squaring eliminates coordinate signs, so the sum cannot be negative. C: The squared values change with the distance from the origin. D: A sum of real squares is zero only when both coordinates vanish."
+    },
+    {
+      "id": "calc-ab-7-3-010",
+      "prompt": "The table below lists the intended slopes at three grid points. Which equation produces all three entries?",
+      "options": [
+        "y′=2x+y",
+        "y′=x+2y",
+        "y′=2x−y",
+        "y′=x+y"
+      ],
+      "correctIndex": 0,
+      "explanation": "Substitute each pair into each proposed formula, preserving the roles of x and y. The expression 2x+y gives −1 at (0,−1), 2 at (1,0) and 1 at (−1,3). All entries must agree; one correct point alone is insufficient to select a model. A: It gives −1, 2 and 1 at the three listed points. B: At (0,−1) it gives −2 instead of −1. C: At (0,−1) it gives 1 instead of −1. D: At (1,0) it gives 1 instead of 2."
+    },
+    {
+      "id": "calc-ab-7-3-011",
+      "prompt": "Which equation matches the slope-field graph below, including both horizontal rows and the signs between and outside them?",
+      "options": [
+        "y′=y²−1",
+        "y′=1−y²",
+        "y′=1−y",
+        "y′=1−x²"
+      ],
+      "correctIndex": 1,
+      "explanation": "The field has row-wise repetition, so a model depending only on y is plausible. Both y=−1 and y=1 have slope zero, but y=0 has positive slope and |y|=2 has negative slope. These observations select 1−y² among the proposed formulas without requiring a solution method. A: Its signs between and outside the rows are reversed. B: It has zero slopes at y=±1, positive slopes between, and negative slopes outside. C: It has only one horizontal row, at y=1. D: Its slopes repeat down columns and its zero lines are vertical."
+    }
+  ]
+}
