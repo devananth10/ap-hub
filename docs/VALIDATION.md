@@ -1,5 +1,9 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topic 1.3
+
+33 MCQs across three topics are now published, with twelve meaningful stimuli (36.36%). Topic 1.3 adds constrained clinic-siting data, a school/floodplain overlay, population-change bars and an observational temperature comparison. Unique eligible-site ranking, point positions, absolute/relative growth and both temperature changes are independently recomputed. All 126 unit tests, TypeScript and the production build passed. All eleven new questions were graded in the browser, producing 11/11; the map, chart and tables were inspected on desktop/mobile. Centered school labels avoid crossing region boundaries. Existing content and storage are preserved. The bank remains incomplete; next topic: 1.4.
+
 ## Human Geography Topics 1.1–1.2
 
 22 original MCQs are published with eight genuine stimuli (36.36%). Topic 1.2 adds a data-collection chart/map and two tables, independent rate/coverage checks and a complete 11/11 browser session. All 125 automated tests, TypeScript/build, 68 topic/Practice scopes and standard smoke checks pass. Desktop/mobile charts and tables, light/dark contrast and lesson-to-Practice integration were checked. The bank remains incomplete; next topic is 1.3. See GEOGRAPHY_STIMULI.md and the progress tracker.

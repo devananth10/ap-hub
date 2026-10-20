@@ -20,6 +20,10 @@ export function verifyGeographyQuestion(question,review,stimulus){
   case 'circle-area':assert.equal(Math.sqrt(review.check.ratio),2);assert.equal(question.correctIndex,3);break;
   case 'sampling-coverage':{assert.equal(stimulus.kind,'chart');const residents=stimulus.series.find(s=>s.label==='Residents').values,users=stimulus.series.find(s=>s.label==='App users').values;assert.deepEqual(users.map((n,i)=>n/residents[i]),[.6,.6,.1]);assert.equal(question.correctIndex,0);break;}
   case 'regional-coverage':{assert.equal(stimulus.kind,'map');assert.ok(stimulus.regions.every(r=>r.value>=0&&r.value<=100));const value=id=>stimulus.regions.find(r=>r.label===id).value;assert.equal((value('NW')+value('NE'))/2,87.5);assert.equal((value('SW')+value('SE'))/2,12.5);assert.equal(question.correctIndex,3);break;}
+  case 'clinic-budget':{const eligible=stimulus.rows.filter(row=>Number(row[1])<=100);const best=eligible.sort((a,b)=>Number(b[2])-Number(a[2]))[0];assert.equal(best[0],'R');assert.equal(eligible.filter(row=>Number(row[2])===Number(best[2])).length,1,'Ambiguous tied eligible sites');assert.equal(question.options[question.correctIndex],best[0]);break;}
+  case 'flood-overlay':{const flood=stimulus.regions.find(r=>r.label==='Floodplain'),xs=flood.polygon.map(p=>p[0]),ys=flood.polygon.map(p=>p[1]);const inside=stimulus.points.filter(p=>p.x>Math.min(...xs)&&p.x<Math.max(...xs)&&p.y>Math.min(...ys)&&p.y<Math.max(...ys));assert.deepEqual(inside.map(p=>p.label),['B']);assert.equal(question.correctIndex,0);break;}
+  case 'absolute-growth':{const old=stimulus.series.find(row=>row.label==='Earlier').values,now=stimulus.series.find(row=>row.label==='Later').values;assert.deepEqual(now.map((n,i)=>n-old[i]),[2000,1000,200]);assert.deepEqual(now.map((n,i)=>(n-old[i])/old[i]),[.5,1,.1]);assert.equal(question.correctIndex,3);break;}
+  case 'comparison-changes':{assert.deepEqual(stimulus.rows.map(row=>Number(row[3])-Number(row[2])),[-3,-3]);assert.deepEqual(stimulus.rows.map(row=>row[1]),['Yes','No']);assert.equal(question.correctIndex,1);break;}
   case 'reasoning':break;
   default:throw Error('Unknown verification model: '+review.check.type);
  }

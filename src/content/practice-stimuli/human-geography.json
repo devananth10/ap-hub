@@ -602,5 +602,199 @@
         "160 vehicles/hour"
       ]
     ]
+  },
+  "hug-1-3-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Candidate clinic sites",
+    "description": "Hypothetical accessibility estimates: R costs 90 units and newly serves 3000 residents; S costs 120 and serves 4000; T costs 70 and serves 2500; U costs 80 and serves 2000. Existing access is excluded from the newly served counts.",
+    "caption": "One site may be funded. Fixed budget: at most 100 units. All other eligibility conditions are assumed equal.",
+    "headers": [
+      "Site",
+      "Cost (units)",
+      "Newly served residents"
+    ],
+    "rows": [
+      [
+        "R",
+        "90",
+        "3000"
+      ],
+      [
+        "S",
+        "120",
+        "4000"
+      ],
+      [
+        "T",
+        "70",
+        "2500"
+      ],
+      [
+        "U",
+        "80",
+        "2000"
+      ]
+    ]
+  },
+  "hug-1-3-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "Schools and mapped floodplain",
+    "description": "Hypothetical north-up map. The middle polygon, x 35–65, is the mapped floodplain. A at (20,15) enrolls 1000; B at (50,15) enrolls 300; C at (80,45) enrolls 500. West and East polygons lie outside the supplied floodplain.",
+    "caption": "Numbers at school points are enrollments. The boundary is a hypothetical screening layer, not a forecast of certain flooding.",
+    "unitLabel": "School locations (enrollment) over mapped floodplain boundary",
+    "regions": [
+      {
+        "label": "West",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            35,
+            0
+          ],
+          [
+            35,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "Floodplain",
+        "polygon": [
+          [
+            35,
+            0
+          ],
+          [
+            65,
+            0
+          ],
+          [
+            65,
+            60
+          ],
+          [
+            35,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "East",
+        "polygon": [
+          [
+            65,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            65,
+            60
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "A",
+        "x": 20,
+        "y": 15,
+        "value": 1000,
+        "labelAlign": "middle"
+      },
+      {
+        "label": "B",
+        "x": 50,
+        "y": 15,
+        "value": 300,
+        "labelAlign": "middle"
+      },
+      {
+        "label": "C",
+        "x": 80,
+        "y": 45,
+        "value": 500,
+        "labelAlign": "middle"
+      }
+    ]
+  },
+  "hug-1-3-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Two hypothetical census counts",
+    "description": "Area A: earlier 4000, later 6000 residents. B: earlier 1000, later 2000. C: earlier 2000, later 2200. Both counts use unchanged area boundaries and the same resident definition.",
+    "caption": "Two observed dates, not forecasts. These counts alone do not measure every type of service need.",
+    "unitLabel": "Residents",
+    "categories": [
+      "Area A",
+      "Area B",
+      "Area C"
+    ],
+    "series": [
+      {
+        "label": "Earlier",
+        "values": [
+          4000,
+          1000,
+          2000
+        ]
+      },
+      {
+        "label": "Later",
+        "values": [
+          6000,
+          2000,
+          2200
+        ]
+      }
+    ],
+    "max": 6000
+  },
+  "hug-1-3-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "District temperature comparison",
+    "description": "Hypothetical matched observation windows: district R received tree planting and changed from 34°C before to 31°C after; district S received no planting and changed from 32°C to 29°C. Districts were not randomly assigned.",
+    "caption": "Comparable measurement procedures and time windows; other environmental and social changes were not controlled.",
+    "headers": [
+      "District",
+      "Tree planting",
+      "Before (°C)",
+      "After (°C)"
+    ],
+    "rows": [
+      [
+        "R",
+        "Yes",
+        "34",
+        "31"
+      ],
+      [
+        "S",
+        "No",
+        "32",
+        "29"
+      ]
+    ]
   }
 }

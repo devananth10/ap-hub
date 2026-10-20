@@ -1,0 +1,136 @@
+{
+  "topicNumber": "1.3",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "a7e55a22138553412e4d7f20d762da40c43b6e5ceece0b03702e06c3de2f5c64",
+  "scopeReview": "IMP-1.C: geographic information used in decision-making by governments, organizations and individuals. Applications include service access, hazard screening, routing, community information, temporal relevance and decision scales. No third-party questions or real-country statistics.",
+  "varietyReview": "Four decision/evidence stimuli plus seven distinct applied scenarios; explicit objectives prevent several plausible policies from becoming competing correct answers. All five skills and all four key positions represented.",
+  "repetitionReview": "No duplicated stem or numeric-only clone. Distinct decisions: constrained access, point-in-polygon hazard exposure, absolute population change, causal comparison and seven information-use limitations. Prior data-collection questions are not reworded as new methods-identification questions.",
+  "questions": [
+    {
+      "questionId": "hug-1-3-001",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "R",
+      "independentReview": "Independently filtered costs <=100, leaving R,T,U, and ranked their newly served populations 3000,2500,2000. The correct site is unique; no assumption of maximizing residents per cost was substituted.",
+      "check": {
+        "type": "clinic-budget"
+      },
+      "questionSha256": "7e158d33d23c243683ddabf162d69b7f1315b2c7c5833f0dd0e18a88bf10e7b4",
+      "stimulusSha256": "2ca67d1aa1c4ad0ea93fa1648cf38475addc3bca59e26fe2d10777d7259dd950"
+    },
+    {
+      "questionId": "hug-1-3-002",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "School B is the mapped floodplain priority, even though School A enrolls more students.",
+      "independentReview": "Checked point-in-polygon positions independently: floodplain x=35..65; A.x=20, B.x=50, C.x=80. Only B is inside. No real hazard probability, causal claim or precise inundation depth is inferred.",
+      "check": {
+        "type": "flood-overlay"
+      },
+      "questionSha256": "020c6be4e49127b107b557e9ef9cb9d19d050c054bb2235cf66c41b2cc44352a",
+      "stimulusSha256": "e63e242cc8cd121f20475e4eab1e34aacfd779b291858ba74d80b22689d425e0"
+    },
+    {
+      "questionId": "hug-1-3-003",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Area A added the greatest number of residents.",
+      "independentReview": "Independently subtracted old from new counts: A2000, B1000, C200. Separately computed relative changes .5,1,.1 to rule out denominator confusion.",
+      "check": {
+        "type": "absolute-growth"
+      },
+      "questionSha256": "8b5ac93414d87c3355cb83b600d6c0b8cefcddfc63636a5f16cc99671b24962b",
+      "stimulusSha256": "7d0c2c62bd197ae272607ff385e94bc6a2a4cc699eff32165b92f575d8f233f1"
+    },
+    {
+      "questionId": "hug-1-3-004",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Both districts cooled equally; these data alone do not isolate the policy effect.",
+      "independentReview": "Independently computed changes 31−34=−3 and29−32=−3; difference in changes=0. A finite observational comparison cannot prove a zero causal effect or complete attribution.",
+      "check": {
+        "type": "comparison-changes"
+      },
+      "questionSha256": "89c63d8b3eb401d3d8baa1e5f2ac445e18e69fb039386e92d1f6640feaea5461",
+      "stimulusSha256": "5393bd6ce922aba8cfbbb6edf7f9606649dbfe4afb94d103c03dad25e3fa6493"
+    },
+    {
+      "questionId": "hug-1-3-005",
+      "skill": "Spatial Relationships",
+      "difficulty": "foundational",
+      "correctOption": "Compare customer locations with the currently usable road network.",
+      "independentReview": "Separated the spatial decision from data acquisition. The combination supplies destinations plus traversable edges; it does not promise globally optimal or permanently valid routes.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "f97e894fa91cf31ecaa10a26880e326f050e21954a200d0e3c59fc463fbcb598"
+    },
+    {
+      "questionId": "hug-1-3-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "The earlier count may omit newer settlement and service needs.",
+      "independentReview": "Checked temporal support: past accuracy and current relevance are different. Supplementation is warranted by changed settlement, not by an unsupported claim that all official data are unreliable.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d1980c5db219f68bc1085bd4e471aaeb2fa846e909eef98c294e9d00881c1491"
+    },
+    {
+      "questionId": "hug-1-3-007",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Compare underlying values, dates and class breaks before inferring change.",
+      "independentReview": "Held the data constant while allowing thresholds to vary. The counterexample proves that changing appearance is insufficient evidence of a changed geographic condition.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "cbfbddf3c76b7b099574aeaaa9b7c2383f836500e1347aa85c1f1864f68f1597"
+    },
+    {
+      "questionId": "hug-1-3-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Aggregate patterns can locate a potential audience without determining individual preferences.",
+      "independentReview": "Distinguished a probabilistic targeting aid from individual-level determinism, without assigning preferences to a real demographic group or claiming an actual business result.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "00815f4b0c37be832b7d34cb4f5106d8ea956f6c2bf2830e6128214d5b7997f6"
+    },
+    {
+      "questionId": "hug-1-3-009",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Regional corridor patterns and local walking connections require different spatial detail.",
+      "independentReview": "Independently matched decision extent to useful evidence: intercity network versus immediate pedestrian connectivity. No claim that the larger-extent map necessarily has a larger representative fraction is made.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "80e49f2ca75a93c3145c73f2df1db05303bdcd40aaa8159dc1e250f2fbeaf56f"
+    },
+    {
+      "questionId": "hug-1-3-010",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "Compare probability estimates with exposure, vulnerability and current observations.",
+      "independentReview": "Separated hazard probability, exposed assets and vulnerability. The correct use does not invent numerical risk totals or equate a model estimate with a certain future event.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "f567c58b0c77483d49f92ba8aab2a41351568ac7665a7c964d4c967b1a5c33ae"
+    },
+    {
+      "questionId": "hug-1-3-011",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Validated community information can reveal spatial connections missing from official records.",
+      "independentReview": "Considered the documented mismatch in feature coverage, not an assumption that official or volunteered records are always correct. Verification can reconcile different collection purposes.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "f50e68ec926585099d9994f0d44abb0da33e8b4bab08446c3fbe98b496eae0cb"
+    }
+  ]
+}

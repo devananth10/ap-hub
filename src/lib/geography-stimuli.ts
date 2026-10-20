@@ -1,6 +1,6 @@
 import data from "../content/practice-stimuli/human-geography.json" with { type: "json" };
 
-type Point = { x: number; y: number; label: string; value?: number };
+type Point = { x: number; y: number; label: string; value?: number; labelAlign?: "start" | "middle" | "end" };
 type Base = { title: string; description: string; caption: string; hypothetical: true; attribution: "Original PrepAtlas schematic and synthetic data" };
 export type MapStimulus = Base & {
   kind: "map"; mapType: "choropleth" | "dot" | "reference" | "flow" | "isoline" | "proportional";
@@ -43,6 +43,7 @@ export function validateGeographyStimulus(stimulus: GeographyStimulus) {
     if (stimulus.mapType === "choropleth" && !stimulus.bins) fail("choropleth needs explicit bins");
     if (stimulus.mapType === "dot" && !stimulus.dots?.length) fail("dot map needs dots");
     for (const point of [...(stimulus.points || []), ...(stimulus.dots || [])]) if (!coords([[point.x,point.y],[point.x,point.y]])) fail("point outside map");
+    for (const point of stimulus.points || []) if (point.labelAlign !== undefined && !["start","middle","end"].includes(point.labelAlign)) fail("invalid point label alignment");
     for (const path of stimulus.paths || []) if (!path.label || !coords(path.points) || path.value !== undefined && !finite(path.value)) fail("invalid path");
     if (stimulus.mapType === "flow" && (!stimulus.paths?.length || !stimulus.paths.every(path => path.arrow))) fail("flow direction must be explicit");
     if (stimulus.kmPerUnit !== undefined && (!finite(stimulus.kmPerUnit) || stimulus.kmPerUnit <= 0)) fail("invalid map scale");

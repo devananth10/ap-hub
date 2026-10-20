@@ -57,3 +57,8 @@ test('sampling-coverage verification recomputes participation ratios independent
  const qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-1-2.json','utf8'));const q=batch.questions[1],review=qa.questions[1],s=structuredClone(geographyStimuli[q.id]);s.series.find(row=>row.label==='App users').values[2]=1000;
  assert.throws(()=>verifyGeographyQuestion(q,{...review,stimulusSha256:semanticHash(s)},s));
 });
+test('planning decisions reject budget/coverage ties and altered population changes even with refreshed data hashes',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-1-3.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-1-3.json','utf8'));
+ const tied=structuredClone(geographyStimuli[batch.questions[0].id]);tied.rows.find(row=>row[0]==='T')[2]='3000';assert.throws(()=>verifyGeographyQuestion(batch.questions[0],{...qa.questions[0],stimulusSha256:semanticHash(tied)},tied),/tied/);
+ const changed=structuredClone(geographyStimuli[batch.questions[2].id]);changed.series.find(s=>s.label==='Later').values[0]=4500;assert.throws(()=>verifyGeographyQuestion(batch.questions[2],{...qa.questions[2],stimulusSha256:semanticHash(changed)},changed));
+});
