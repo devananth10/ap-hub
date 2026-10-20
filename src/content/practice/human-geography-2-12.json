@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 2,
+  "topicId": "topic-2-12",
+  "questions": [
+    {
+      "id": "hug-2-12-001",
+      "prompt": "For the same gross transfer, what does choosing Channel B rather than A change under the stated fee rules?",
+      "options": [
+        "The recipient receives 50 additional units because B removes every fee.",
+        "The sender’s earnings automatically rise by 30 units.",
+        "The recipient receives 30 additional units, with no increase in the gross amount sent.",
+        "The recipient receives 1,020 units because B’s fee is added to the transfer."
+      ],
+      "correctIndex": 2,
+      "explanation": "The fee is deducted from the same 1,000-unit gross transfer. A delivers 1,000−50=950 and B delivers 1,000−20=980, a 30-unit difference. Transfer costs affect the resources reaching the recipient, but the comparison does not establish a change in the sender’s earnings or the uses and wider effects of the money. A: B still charges 20, so the gain is the fee difference of 30 rather than the full 50. B: A cheaper transfer changes net receipt, not automatically the sender’s earnings. C: Both net amounts and the unchanged gross transfer are respected. D: A deducted fee reduces the amount received; it is not an extra payment to the recipient."
+    },
+    {
+      "id": "hug-2-12-002",
+      "prompt": "Which interpretation respects both the directions and the different units of the mapped flows?",
+      "options": [
+        "The origin loses 199,200 people because money units must be subtracted from people.",
+        "Both arrows represent people moving toward the destination.",
+        "The financial arrow proves that every person returns home in the same year.",
+        "People move toward B while remittance money flows toward A; these quantities cannot be combined as one people balance."
+      ],
+      "correctIndex": 3,
+      "explanation": "The upper arrow carries 800 people from A to B, while the lower carries 200,000 currency units from B to A. The map illustrates how migration can link places through a reverse financial flow. People and currency have different units, so adding or subtracting them as if they were one population measure is invalid. A: Subtracting money units from people is dimensionally invalid. B: The reverse arrow is explicitly money rather than people. C: A remittance can reach origin households without the sender returning. D: This preserves each flow’s direction and units without treating money as return migration."
+    },
+    {
+      "id": "hug-2-12-003",
+      "prompt": "Under the listed staffing changes, how many nurses remain in the origin’s workforce at year end, and what migration-related concern does this illustrate?",
+      "options": [
+        "185; skilled emigration can reduce service capacity when not fully offset by other entries.",
+        "265; every emigrant must be added to the origin workforce.",
+        "220; migration flows can be ignored because training occurs locally.",
+        "200; remittances automatically preserve the number of nurses regardless of departures."
+      ],
+      "correctIndex": 0,
+      "explanation": "The workforce balance is 200+30−10−40+5=185 nurses. Training and immigration do not fully offset retirement and emigration in this example. Loss of skilled workers can create service-capacity concerns at the origin, though actual consequences also depend on demand, working conditions, training and possible return or knowledge transfers. Money transfers do not automatically replace a trained person. A: The count and conditional skilled-worker concern both follow from the supplied balance. B: This adds emigrants when they should leave the origin count. C: Ignoring migration yields 220 but omits the specified net loss of 35 nurses through migration. D: No financial flow automatically keeps a headcount unchanged after departures."
+    },
+    {
+      "id": "hug-2-12-004",
+      "prompt": "The new establishments were opened by migrant households offering foods and products associated with their origin. Which geographic effect is directly illustrated?",
+      "options": [
+        "The complete disappearance of all origin cultural practices after arrival.",
+        "The destination’s commercial landscape incorporates cultural practices carried by migrants.",
+        "Every resident now shares the same food preferences and identity.",
+        "The number of businesses establishes exactly how many people migrated."
+      ],
+      "correctIndex": 1,
+      "explanation": "The specified restaurants and shops make origin-associated cultural practices visible in the destination’s landscape. This is consistent with cultural diffusion through movement of people. Establishment counts do not measure every resident’s identity or preferences, the total migrant population, or the disappearance of other cultural forms. A: The businesses explicitly retain and express origin-associated practices. B: This connects the described enterprises to a change in the destination landscape. C: Visible businesses do not establish uniform preferences among all residents. D: Different businesses can serve varied populations; no fixed people-per-business conversion is provided."
+    },
+    {
+      "id": "hug-2-12-005",
+      "prompt": "A migrant returns to the origin and uses skills learned abroad to train workers in a local workshop. Which potential effect does this case illustrate?",
+      "options": [
+        "Knowledge acquired abroad can never be useful in an origin region.",
+        "Every emigrant must permanently remove all skills from the origin.",
+        "Return migration changes only population totals, not economic activities.",
+        "Return and transnational connections can transfer knowledge as well as money."
+      ],
+      "correctIndex": 3,
+      "explanation": "Migration can create links that move knowledge, experience and resources between places. The returning worker’s training activity is a specific example of knowledge transfer. It does not establish that every departure produces a benefit or that losses of scarce skills are always offset; outcomes depend on actual connections and opportunities. A: The scenario directly supplies a useful training application. B: A return and subsequent teaching contradict permanent removal in this case. C: Training can affect local capabilities in addition to headcounts. D: This identifies the supplied mechanism without claiming a universal net benefit."
+    },
+    {
+      "id": "hug-2-12-006",
+      "prompt": "A destination has unfilled jobs requiring skills held by some newly arrived workers. Which economic effect is plausible but still requires evidence about access and matching?",
+      "options": [
+        "Every existing worker’s wage must fall by the same amount.",
+        "Successful matching can fill some vacancies and expand productive activity.",
+        "Every newcomer is automatically employed regardless of credentials or access.",
+        "The arrival makes all labor shortages disappear in every sector."
+      ],
+      "correctIndex": 1,
+      "explanation": "Skills that match demand can help fill vacancies when workers can actually access the relevant jobs. Credential recognition, language, location and other conditions affect realization of that potential. Neither a universal wage effect nor complete elimination of shortages follows from the existence of some suitable skills. A: Wage effects vary by context and are not supplied as a uniform outcome. B: This is the conditional matching mechanism described. C: Suitable skills do not remove every access or matching constraint. D: The scenario concerns some jobs and workers, not every sector."
+    },
+    {
+      "id": "hug-2-12-007",
+      "prompt": "A city receives many international arrivals and an analyst predicts an immediate identical increase in votes for one party. What information is missing?",
+      "options": [
+        "Only the distance from the city to the nearest coast.",
+        "Nothing; every new arrival immediately votes for the same party.",
+        "Voting eligibility, participation and political preferences among the affected residents.",
+        "Only the total land area, which determines party choice."
+      ],
+      "correctIndex": 2,
+      "explanation": "Population change can influence politics, but arrival does not establish voting rights, turnout or one shared preference. Institutional eligibility and actual participation need to be examined alongside diverse views. The statement therefore requires more than a headcount of new residents to support an exact electoral prediction. A: Coastal distance does not supply eligibility or preferences. B: The uniform immediate voting assumption is unsupported. C: These variables are necessary to connect new residents to an actual electoral result. D: Land area does not determine individuals’ party choices."
+    },
+    {
+      "id": "hug-2-12-008",
+      "prompt": "Many working-age adults leave a village while children and older relatives remain. Which origin-side consequence should be investigated?",
+      "options": [
+        "Changes in local labor availability and the distribution of care responsibilities.",
+        "An automatic increase in the number of adults physically present in the village.",
+        "The disappearance of every need for education and older-adult services.",
+        "Proof that every remaining resident receives enough remittances to replace all lost work."
+      ],
+      "correctIndex": 0,
+      "explanation": "Selective departure can change both the local workforce and household responsibilities. Remaining children and older relatives may have different support arrangements, while remittances or return visits may help in ways that need evidence. No universal outcome for every household follows, but labor and care are directly relevant dimensions to assess. A: This follows the specified age-selective movement into plausible economic and social effects. B: Departures do not add the same adults to the origin headcount. C: The presence of remaining children and older relatives means needs cannot simply be assumed to vanish. D: The case provides no universal remittance coverage or proof that money replaces every task."
+    },
+    {
+      "id": "hug-2-12-009",
+      "prompt": "In a migrant neighborhood, families keep an origin festival while using the destination’s main language at school and work. Which interpretation best fits?",
+      "options": [
+        "Keeping one festival proves that no adaptation occurs anywhere.",
+        "Cultural continuity and adaptation can occur together in the same community.",
+        "Using the destination language proves every origin practice has disappeared.",
+        "All residents must now have identical beliefs because they share a neighborhood."
+      ],
+      "correctIndex": 1,
+      "explanation": "Cultural change is not necessarily an all-or-nothing replacement. A community can maintain selected practices while adopting language or routines suited to new settings. The scenario provides evidence of both continuity and adaptation, without establishing identical identities or a single trajectory for every family. A: Language use at school and work supplies an example of adaptation. B: This recognizes both parts of the given evidence. C: The retained festival contradicts complete disappearance. D: Shared location does not establish identical beliefs or behavior."
+    },
+    {
+      "id": "hug-2-12-010",
+      "prompt": "A receiving city initially expands school and language services, while some newcomers later contribute taxes and start businesses. Which approach best evaluates the fiscal effects?",
+      "options": [
+        "Count initial service spending and assume no later contribution is possible.",
+        "Count later taxes and assume all immediate service costs are zero.",
+        "Treat every arrival as having the same age, employment and legal circumstances.",
+        "Compare costs and contributions over time, including differences among groups and government levels."
+      ],
+      "correctIndex": 3,
+      "explanation": "Fiscal effects can vary over time and across institutions. Upfront local services and later revenues may fall on different budgets, and outcomes depend on age, employment, eligibility and other circumstances. Evaluating both sides is more informative than declaring an identical permanent gain or burden from arrivals alone. A: This omits the later contributions explicitly described. B: This omits the immediate costs explicitly described. C: Uniform characteristics are not supplied and would conceal variation. D: This includes the time horizon and distribution of costs and revenues needed for a meaningful assessment."
+    },
+    {
+      "id": "hug-2-12-011",
+      "prompt": "A town has zero net migration: 100 residents aged 65+ leave and 100 people aged 20–29 arrive, with no other population changes. Which effect is possible despite the unchanged total?",
+      "options": [
+        "The age composition changes because arrivals and departures involve different cohorts.",
+        "Every age-group count remains unchanged because the net total is zero.",
+        "The population necessarily rises by 200 because both flows are added.",
+        "The population necessarily falls by 100 because arrivals do not count."
+      ],
+      "correctIndex": 0,
+      "explanation": "Net migration records a balance of people, not the preservation of every characteristic. The total change is 100−100=0, but the older count falls by 100 and the young-adult count rises by 100. Composition and possible service or labor needs can therefore change even with no total growth. A: This distinguishes a zero aggregate balance from changes in the groups composing it. B: Equal total inflow and outflow do not imply matching ages. C: Departures are subtracted in the population balance rather than added. D: Ignoring the 100 arrivals omits half of the supplied accounting."
+    }
+  ]
+}

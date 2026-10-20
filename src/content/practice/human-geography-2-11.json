@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 2,
+  "topicId": "topic-2-11",
+  "questions": [
+    {
+      "id": "hug-2-11-001",
+      "prompt": "All mapped movers are fleeing violence from homes in Country A. Which distinction is established by the routes alone?",
+      "options": [
+        "The 600 who remain in A are internally displaced; the 400 entering B are cross-border displaced, with refugee criteria requiring further assessment.",
+        "All 1,000 are internally displaced because they share an origin country.",
+        "The 400 entering B are internally displaced because they move a shorter distance on the map.",
+        "The 600 who remain in A are automatically voluntary migrants because they do not cross a border."
+      ],
+      "correctIndex": 0,
+      "explanation": "Internal displacement combines forced departure from home with remaining within the country’s internationally recognized border. The 600-person route stays in A, while the 400-person route crosses into B. Border crossing establishes the spatial distinction but does not, by itself, supply every protection criterion or procedural fact needed to classify all cross-border cases. A: This uses both forced departure and the border location without inventing a protection decision. B: A common origin does not make a route ending abroad internal. C: Internal versus international concerns crossing the state border, not relative distance. D: Forced displacement can occur without any international crossing."
+    },
+    {
+      "id": "hug-2-11-002",
+      "prompt": "Which description accurately matches the administrative and spatial facts supplied in the three cases?",
+      "options": [
+        "A has already received formal recognition, while B’s claim is still pending.",
+        "C is an international refugee solely because a flood forced the move.",
+        "A is an asylum-seeker with a pending claim; B has formal refugee recognition; C is internally displaced.",
+        "All three cases are guest-worker programs because they involve relocation."
+      ],
+      "correctIndex": 2,
+      "explanation": "A has applied for protection abroad and awaits a decision; B has the stated formal recognition. C was forced to leave home by a flood but remains within the same country, fitting internal displacement. A pending claimant may already meet a refugee definition: the table distinguishes reported procedure, not whether protection needs are genuine. A: This reverses the explicitly supplied decision statuses for A and B. B: C does not cross an international border, so the supplied case is internal displacement. C: All three descriptions follow the facts while keeping procedure and geography distinct. D: No temporary labor-admission arrangement is described in these cases."
+    },
+    {
+      "id": "hug-2-11-003",
+      "prompt": "The same household makes the two residential moves shown, first from a village to a town and later to a large city. No prior family network is specified. Which pattern is most directly demonstrated?",
+      "options": [
+        "Daily commuting without residential relocation.",
+        "Seasonal movement between grazing areas followed by annual return.",
+        "Chain migration proved solely by having two arrows.",
+        "Step migration through successive settlement stages."
+      ],
+      "correctIndex": 3,
+      "explanation": "The household changes residence in two stages along a settlement hierarchy, illustrating step migration. Chain migration would require a role for earlier migrants or social networks, not merely successive arrows. The recorded moves are residential and separated in time rather than daily travel or seasonal pastoral circulation. A: The diagram explicitly records changes of residence. B: No livestock, seasonal cycle or annual return is supplied. C: Two moves by the same household do not establish a network linking separate migrants. D: This matches the village–town–city sequence and the two residential stages."
+    },
+    {
+      "id": "hug-2-11-004",
+      "prompt": "The same 30 pastoral households move with their herds between seasonal pastures and return each year. Which pattern best fits the chart and description?",
+      "options": [
+        "Permanent rural-to-urban relocation by all 30 households.",
+        "Transhumance, involving seasonal movement between grazing areas.",
+        "Chain migration caused by relatives’ permanent settlement abroad.",
+        "One-way forced displacement with no return."
+      ],
+      "correctIndex": 1,
+      "explanation": "Transhumance involves recurring seasonal movement associated with grazing livestock. The lowland/highland distribution shifts through the seasons while the same 30 households return annually. The description supplies the pastoral purpose and cycle that distinguish it from a permanent urban move or a one-way displacement. A: Both settings are pastures, and the annual return contradicts permanent urban relocation. B: This combines the seasonal cycle, herd movement and grazing purpose. C: No international family network or permanent settlement abroad is supplied. D: The explicitly recurring return contradicts the one-way no-return description."
+    },
+    {
+      "id": "hug-2-11-005",
+      "prompt": "In a historical case, enslaved people are transported under coercion to work in another region. What makes this forced migration?",
+      "options": [
+        "The movement is compelled rather than a freely chosen relocation.",
+        "All moves involving work are necessarily forced.",
+        "Any move to a distant destination is voluntary by definition.",
+        "Crossing a border is the only condition needed to distinguish coercion."
+      ],
+      "correctIndex": 0,
+      "explanation": "The defining fact is coercion: people are compelled to move and work rather than choosing relocation freely. Labor-related movement can also be voluntary, and forced movement can be internal or international. Distance and borders help describe geography but do not substitute for assessing compulsion. A: This identifies the coercive condition explicitly supplied by enslavement. B: Voluntary labor migration exists, so employment alone is not sufficient. C: Distance does not establish consent. D: Forced migration can occur on either side of an international border."
+    },
+    {
+      "id": "hug-2-11-006",
+      "prompt": "A worker chooses a contract permitting employment in another country for a specified limited period under a labor-admission program. Which description is most specific?",
+      "options": [
+        "Internal migration because the contract has an end date.",
+        "Transhumance because any temporary work involves livestock.",
+        "A guest-worker arrangement, which does not by itself establish permanent settlement.",
+        "A pending asylum application because the person crosses a border."
+      ],
+      "correctIndex": 2,
+      "explanation": "The scenario describes an organized temporary labor-admission arrangement, commonly termed guest-worker migration. Its temporary employment purpose does not make it internal, pastoral or an asylum procedure. Actual later residence can depend on rules and circumstances; a fixed-term contract alone neither proves permanent settlement nor captures every worker’s experience. A: The move crosses a country border regardless of contract duration. B: Temporary work is not the same as seasonal pastoral movement. C: This matches the specified labor program and its limited period. D: Border crossing alone does not establish an application for international protection."
+    },
+    {
+      "id": "hug-2-11-007",
+      "prompt": "Earlier migrants help relatives and acquaintances from the same origin find housing and work in their destination neighborhood, encouraging more people to follow. Which pattern is most directly illustrated?",
+      "options": [
+        "Step migration solely because the destination is a city.",
+        "Transhumance because more than one household moves.",
+        "Forced displacement solely because the movers know one another.",
+        "Chain migration supported by a social network."
+      ],
+      "correctIndex": 3,
+      "explanation": "The sequence connects earlier migrants to later movers through information and practical help. That network mechanism characterizes chain migration. The destination’s size, the number of households or social familiarity alone would not establish the other patterns, and the scenario does not supply coercion or seasonal pastoral circulation. A: Step migration requires successive residential stages; no such sequence is supplied here. B: Transhumance concerns recurring pastoral movement, not simply multiple households. C: Social connections do not by themselves establish compulsion. D: This identifies how earlier movers facilitate later movement from a shared origin."
+    },
+    {
+      "id": "hug-2-11-008",
+      "prompt": "A household moves permanently from a farming village to a city within the same country. Which two descriptions can both apply?",
+      "options": [
+        "International migration and transhumance.",
+        "Internal migration and rural-to-urban migration.",
+        "Asylum seeking and forced displacement, solely because the destination is urban.",
+        "Guest-worker migration and international migration, solely because the household seeks work."
+      ],
+      "correctIndex": 1,
+      "explanation": "Migration classifications describe different dimensions and need not be exclusive. The move is internal because it stays within one country and rural-to-urban because it changes settlement type from village to city. The scenario alone does not establish coercion, a protection claim or an international labor-admission program. A: No border is crossed, and a permanent village–city move is not seasonal grazing movement. B: Both terms accurately describe the supplied geography. C: Urban destination alone establishes neither forced departure nor an asylum application. D: Work motives would not turn a same-country move into an international program."
+    },
+    {
+      "id": "hug-2-11-009",
+      "prompt": "A migrant maintains business operations, family responsibilities and regular social connections in both the origin and destination countries. Which concept best captures these continuing cross-border ties?",
+      "options": [
+        "A purely internal move with no international connection.",
+        "A single commuting trip that necessarily involves no residential change.",
+        "Transnational migration and social connections spanning more than one country.",
+        "An end to all origin-country ties immediately upon departure."
+      ],
+      "correctIndex": 2,
+      "explanation": "Transnational connections involve sustained activities and relationships across country boundaries. The continuing business, family and social involvement in both places is more informative than a one-time departure alone. This does not require assuming that every migrant maintains identical ties or that citizenship and residence rules are the same everywhere. A: The case explicitly spans two countries. B: Regular cross-border ties are broader than one specified commute; the case concerns a migrant’s sustained connections. C: This captures the ongoing relationships and activities in multiple national settings. D: The listed activities directly contradict the disappearance of origin ties."
+    },
+    {
+      "id": "hug-2-11-010",
+      "prompt": "Two households choose the same destination, but one flees direct threats while the other seeks a preferred job. What does this comparison show about classifying migration?",
+      "options": [
+        "Destination alone does not establish the degree of choice or compulsion behind a move.",
+        "Everyone choosing the same destination has identical freedom to remain at home.",
+        "A job at the destination proves that no mover faced coercion.",
+        "A border crossing makes every decision equally voluntary."
+      ],
+      "correctIndex": 0,
+      "explanation": "The route and destination do not reveal every condition under which people leave. Threats, livelihood pressures, available alternatives and personal choices can differ even among movers to one place. Forced and voluntary are useful distinctions, but actual circumstances and overlapping pressures must be assessed rather than inferred from a shared endpoint. A: This respects the different supplied conditions despite a common destination. B: The direct threat means freedom to remain cannot be assumed identical. C: Obtaining or seeking work does not erase a threat that compelled departure. D: Border crossing describes location, not an equal degree of consent."
+    },
+    {
+      "id": "hug-2-11-011",
+      "prompt": "An agency reports 500 applications in one new cohort: 200 have received formal refugee recognition and 300 remain pending, with no other decisions. Which administrative conclusion follows?",
+      "options": [
+        "All 500 have already received formal recognition because they applied.",
+        "Only 200 ever needed protection, because pending claims cannot involve refugees.",
+        "The 300 pending cases were all rejected.",
+        "Forty percent have received formal recognition so far; pending cases are not reported decisions."
+      ],
+      "correctIndex": 3,
+      "explanation": "The administrative recognition share is 200/500=40%, and 300 cases remain pending. Applying, receiving recognition and awaiting a decision are different procedural facts. A pending person may already meet a refugee definition; the arithmetic does not determine underlying protection needs or future decisions. A: An application is not the same reported event as formal recognition. B: Pending status does not establish that the person lacks protection needs or cannot meet a refugee definition. C: Pending means no final decision in the supplied record, not rejection. D: Both the fraction and the distinction between pending and decided cases are correct."
+    }
+  ]
+}

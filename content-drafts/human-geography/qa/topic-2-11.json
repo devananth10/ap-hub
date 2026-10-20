@@ -1,0 +1,147 @@
+{
+  "topicNumber": "2.11",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "028644a9443ae75d6d2cce3ab024824351edeab33016cc777c6d5c309bc9f523",
+  "scopeReview": "IMP-2.D.1–2: slavery/forced departure, refugees/asylum seekers/IDPs and transnational, transhumance, internal, chain, step, guest-worker, rural–urban types. Distinguishes overlapping geographic dimensions, compulsion and administrative status. No actual eligibility decisions or national legal advice.",
+  "varietyReview": "Border-crossing flow map, case table, staged settlement model and seasonal household chart. Additional historical, labor, network, transnational and mixed-choice scenarios plus recognition arithmetic. All five skills and varied difficulty/keys.",
+  "repetitionReview": "Unlike2.10 driver questions, these identify movement types using required facts. Step/network tasks contrast one household’s stages with linked households; temporal pastoral cycles differ from permanent labor moves. Border map assesses route categories rather than net flow arithmetic.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.unhcr.org/refugee-statistics/methodology/definition",
+    "https://www.unhcr.org/glossary",
+    "https://refugeedata.unhcr.org/en/documentation/data-coverage/population-categories/",
+    "https://wmr-educatorstoolkit.iom.int/module-3-why-do-people-migrate-instructions"
+  ],
+  "referenceNote": "Primary institutional definitions checked for internal/cross-border and pending/recognized distinctions; pending applicants may meet refugee criteria before recognition. All cases/numbers/figures original. No current legal determination, copied lesson questions, external catalog addition or human review claim.",
+  "questions": [
+    {
+      "questionId": "hug-2-11-001",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "The 600 who remain in A are internally displaced; the 400 entering B are cross-border displaced, with refugee criteria requiring further assessment.",
+      "independentReview": "Checked internal path endpointsx10/40 remain below borderx50; cross-border path endsx75 in B. Counts600+400=1000. Violence supplies forced departure; exact refugee eligibility/procedure is deliberately not inferred from arrows alone.",
+      "check": {
+        "type": "forced-border-routes"
+      },
+      "questionSha256": "c2b8362cd7b3e3d6f51be8ac2ee09551901dc5d28c77783408f098eecfd1839e",
+      "stimulusSha256": "c7fc881fcf755b8606fe2e524be1897029ec8480fcb83995eeea2b340b08e1b2"
+    },
+    {
+      "questionId": "hug-2-11-002",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "A is an asylum-seeker with a pending claim; B has formal refugee recognition; C is internally displaced.",
+      "independentReview": "Read A pending/B recognized/C same-country flood separately. Formal recognition is declaratory rather than what creates a refugee’s underlying circumstances; no claim that a pending person cannot already be a refugee.",
+      "check": {
+        "type": "forced-case-facts"
+      },
+      "questionSha256": "f85c1506df56a73d2b10995c58304fd06bd184faae68e899898ec95c4be68815",
+      "stimulusSha256": "34d6bcf0b0c5f648616fbe7c78bbcf5bacb4414703e4f3243510f99238390a45"
+    },
+    {
+      "questionId": "hug-2-11-003",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Step migration through successive settlement stages.",
+      "independentReview": "Followed the same household acrossVillage→Town→City and distinct2020/2023 move labels. Verified sequential settlement stages, while no family-predecessor or seasonal-return mechanism is present.",
+      "check": {
+        "type": "step-migration-sequence"
+      },
+      "questionSha256": "f5ffd6a2d1ded261f5254af856bbd829f8766004872936cc55c4bc165ebd25e6",
+      "stimulusSha256": "57f8faf85480796b649f833cb6014b27addf548cb75b3f47fc6fd508027efa2d"
+    },
+    {
+      "questionId": "hug-2-11-004",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Transhumance, involving seasonal movement between grazing areas.",
+      "independentReview": "Verified lowland/highland totals30 at every season and winter30/0 versus summer0/30. Counts alone would not identify pastoral purpose; that purpose and annual return are explicitly provided.",
+      "check": {
+        "type": "transhumance-seasonal"
+      },
+      "questionSha256": "093a41c138a74b96f642edd410e69d1fc7e209c8c7da4a3ea697af3c749d7778",
+      "stimulusSha256": "b17b112c45d829f191df012ba5ade77e157c3ea696f94a7e89afea2d1fcc751e"
+    },
+    {
+      "questionId": "hug-2-11-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "The movement is compelled rather than a freely chosen relocation.",
+      "independentReview": "Identified compelled movement as the essential distinction in the supplied historical scenario. Avoided treating all labor migration as slavery or making any unverified route/count claim about a particular historical episode.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "ea1745105fc68758908710b112962aaefd242b900f81c382b07bb208778741bc"
+    },
+    {
+      "questionId": "hug-2-11-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "A guest-worker arrangement, which does not by itself establish permanent settlement.",
+      "independentReview": "Matched explicit voluntary fixed-period cross-border labor admission to the program type. Did not infer a real visa entitlement, later residence outcome, coercion or asylum claim.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "7e72a917f7ed5e3177e5f46e406ae86539a7fb76da6ea09a66efa611edf87ec4"
+    },
+    {
+      "questionId": "hug-2-11-007",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Chain migration supported by a social network.",
+      "independentReview": "Traced the link between predecessor migrants’ assistance and later arrivals. Distinguished a network of separate movers from one household’s staged path, and avoided inferring force from kinship.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b02945a2fc4785ce937c5747cdcc99e91a617dd7c8e79a5e6d27828009a507bc"
+    },
+    {
+      "questionId": "hug-2-11-008",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Internal migration and rural-to-urban migration.",
+      "independentReview": "Checked country-boundary and settlement-type dimensions independently. Both can be true simultaneously without assigning a legal category or a mechanism not given in the scenario.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "556e64038e22770debfcde9d8e64bea8070fd9466f657c6d6d285caa18af4c14"
+    },
+    {
+      "questionId": "hug-2-11-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Transnational migration and social connections spanning more than one country.",
+      "independentReview": "Identified sustained multi-country activities rather than simply international location. No unsupported assertion about dual citizenship, legal residence or universal migrant behavior is made.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "e60f8ec8587939aabdd61dd9c2128f30fb770cc8be54f2fc9709eb0dd8c8117f"
+    },
+    {
+      "questionId": "hug-2-11-010",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Destination alone does not establish the degree of choice or compulsion behind a move.",
+      "independentReview": "Held destination constant while varying the stated departure circumstances. Therefore endpoint cannot identify coercion; no legal refugee determination or claim that all migration fits a perfectly binary choice is inferred.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "ca2379d9b04bc9050517bb75bbc104e5be508170ef7f63346aefc982f77f53a9"
+    },
+    {
+      "questionId": "hug-2-11-011",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Forty percent have received formal recognition so far; pending cases are not reported decisions.",
+      "independentReview": "Independently calculated200/500=.4 and checked200+300=500 with no other outcomes. Interpretation is limited to reported recognition procedures, not a claim that recognition creates refugee circumstances or that pending applicants are unprotected.",
+      "check": {
+        "type": "asylum-procedure-counts",
+        "applications": 500,
+        "recognized": 200,
+        "pending": 300
+      },
+      "questionSha256": "1aa3f5e024c2f3561262fc15ece5159ea233a6810cb6b4918fbb3a2e672c3d48"
+    }
+  ]
+}

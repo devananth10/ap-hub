@@ -1,0 +1,144 @@
+{
+  "topicNumber": "2.12",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "35c013f9ce64b604f33796f5f2ba007370dd0421efbcb5bd7dfcf77114a06f6c",
+  "scopeReview": "IMP-2.E.1: economic, political and cultural effects at origins/destinations. Remittances, skilled-workforce balance, knowledge transfer, labor matching, care, culture, fiscal/electoral limits and composition. Conditional, heterogeneous effects; no real-world financial/legal advice or universal fiscal/wage claim.",
+  "varietyReview": "Fee table, mixed-unit reverse flows, workforce ledger and cultural-establishment bars. Other applied mechanisms include return skills, labor complementarity, political eligibility, household responsibilities, adaptation and time horizons. All five skills, varied keys/difficulty.",
+  "repetitionReview": "Unlike2.10 causes and2.11 types, items assess consequences. Reverse flows use different units, not another net-people subtraction. Workforce entries/exits and net-zero age change differ from total-population accounting; cultural continuity/adaptation is grounded in an original scenario.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.worldbank.org/en/publication/wdr2023",
+    "https://www.worldbank.org/en/brief/2024/09/18/remittances-knomad"
+  ],
+  "referenceNote": "Primary development research corroborates possible remittance/knowledge benefits and skilled-worker costs. All scenario numbers/figures/questions original; no survey/GDP estimates copied or third-party resources added. No independent human review claimed.",
+  "questions": [
+    {
+      "questionId": "hug-2-12-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The recipient receives 30 additional units, with no increase in the gross amount sent.",
+      "independentReview": "Independently computed1000−50=950 and1000−20=980, difference30. Gross amount, earnings and net receipt are distinct; no exchange-rate or extra-charge assumption introduced.",
+      "check": {
+        "type": "migration-remittance-fees"
+      },
+      "questionSha256": "b60bdd0fd5c768d190556aed6b29fb0f8fc7993f7e91cbe7496d105e56a0e90e",
+      "stimulusSha256": "a80ebf5212e76bfeb54b2459ce2b02d2ee21f8b2822de1664e35a3039983afd2"
+    },
+    {
+      "questionId": "hug-2-12-002",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "People move toward B while remittance money flows toward A; these quantities cannot be combined as one people balance.",
+      "independentReview": "Read A→B800people and B→A200000currency separately. Verified opposite arrow endpoints and unit labels; no numerical population balance can mix these units or establish return movement.",
+      "check": {
+        "type": "migration-people-money-flows"
+      },
+      "questionSha256": "f7b5e09d123c07bc527dd77041766eeb0abb4c2e839cb6b73c19afe5defe1a80",
+      "stimulusSha256": "090687127baaa37c65069d561f760000c8e5b8fd3289950fb5f2740bc6e001d5"
+    },
+    {
+      "questionId": "hug-2-12-003",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "185; skilled emigration can reduce service capacity when not fully offset by other entries.",
+      "independentReview": "Independently balanced start200+trained30−retired10−emigrated40+immigrated5=185. Natural workforce entries/exits differ from migration; no universal claim that skilled migration always harms origins or that headcount alone measures care quality.",
+      "check": {
+        "type": "migration-skilled-workforce"
+      },
+      "questionSha256": "c7256933a4b7dd779a814c374f2a62a8730ac0d87b4d8167440dd253d6ab6e99",
+      "stimulusSha256": "63f81bf83b4677b64ddf12f1c58bfbf0729c7e764bf0510318f8367ee53482e9"
+    },
+    {
+      "questionId": "hug-2-12-004",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "The destination’s commercial landscape incorporates cultural practices carried by migrants.",
+      "independentReview": "Verified restaurants4→12 and specialty shops2→8 with migrant ownership/origin practices explicitly supplied. Inference concerns visible commercial culture, not all residents’ behavior or a population count.",
+      "check": {
+        "type": "migration-cultural-establishments"
+      },
+      "questionSha256": "0db462efd3e2854f85768ed2ba2601294b7b5b23d36468e89813da5329cac3b0",
+      "stimulusSha256": "de7bb0be92e70a2cd112e5de18b7807b305f9d964bc17f1f3de1066a9e76427e"
+    },
+    {
+      "questionId": "hug-2-12-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Return and transnational connections can transfer knowledge as well as money.",
+      "independentReview": "Distinguished a specific return-mediated knowledge transfer from a guarantee about every emigrant. The example complements, rather than erases, the separate possibility of origin skilled-worker shortages.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b838ba97c1c7831eaa7d51ce4acdaad1cadca650f901b79aca0ceaf7182639d9"
+    },
+    {
+      "questionId": "hug-2-12-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Successful matching can fill some vacancies and expand productive activity.",
+      "independentReview": "Checked compatibility between skill supply and specified vacancies, with access/recognition constraints retained. No inevitable aggregate wage, employment or shortage result is asserted.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "63bcfb26f87a671927dafb309672140049b7b1bf8a6b22a013a1f3b69a65d30d"
+    },
+    {
+      "questionId": "hug-2-12-007",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Voting eligibility, participation and political preferences among the affected residents.",
+      "independentReview": "Separated population arrival from eligibility, turnout and preference. Avoided any current-country voting-law claim or assumption that migrants form a homogeneous voting bloc.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d20991842eb160fd86e077839a4c6e48465905fca58dc025b5d76c5e765fbee0"
+    },
+    {
+      "questionId": "hug-2-12-008",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Changes in local labor availability and the distribution of care responsibilities.",
+      "independentReview": "Traced a selective adult outflow to potential village labor/care changes while retaining household variation and unmeasured transfers. Did not assume that all remaining older people are dependent or every household is harmed.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "592198450d3f31dd24f72ec9cbd30c1058e22d39d1b0365251eb55f34cd1ebcc"
+    },
+    {
+      "questionId": "hug-2-12-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Cultural continuity and adaptation can occur together in the same community.",
+      "independentReview": "Compared retained festival and adopted institutional language as different cultural dimensions. Coexistence follows directly, while complete isolation or total replacement would contradict one of the stated facts.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "771f9df39573b20da2b531a0410973d09c63d2441e9f9076b3d54b9d800d60a6"
+    },
+    {
+      "questionId": "hug-2-12-010",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Compare costs and contributions over time, including differences among groups and government levels.",
+      "independentReview": "Separated short-run local expenditures from later and possibly differently allocated revenues. No real budget estimate or universal fiscal sign is inferred; heterogeneous outcomes remain an empirical question.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b7e45cd0d1ddc0e0247f1851e858a947a0c3eba9c6353e9f8cd350d690fe6402"
+    },
+    {
+      "questionId": "hug-2-12-011",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The age composition changes because arrivals and departures involve different cohorts.",
+      "independentReview": "Independently checked total0, older−100 and ages20–29+100 under no other changes. No birth, death, employment or exact service-demand outcome is invented.",
+      "check": {
+        "type": "migration-zero-net-composition",
+        "arrivals": 100,
+        "departures": 100
+      },
+      "questionSha256": "575bf5970c3ac6b5e39dc117fab67e718c2356721044463f01c969cae0714228"
+    }
+  ]
+}

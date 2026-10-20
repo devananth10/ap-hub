@@ -175,3 +175,18 @@ test('migration-driver checks preserve intervening order, financing constraints 
   const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
  }
 });
+
+test('migration-type evidence preserves borders, pending status, residential sequences and seasonal totals',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-2-11.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-2-11.json','utf8'));
+ for(const [i,change] of [[0,s=>s.paths[0].points[1][0]=60],[1,s=>s.rows[0][1]='Abroad; formal refugee recognition'],[2,s=>s.edges[0].to='City'],[3,s=>s.series[1].values[2]=20]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+
+test('migration effects retain net receipts, mixed flow units, workforce signs and original cultural counts',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-2-12.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-2-12.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[1][2]='50'],[1,s=>s.paths[1].label='200k people'],[2,s=>s.rows[3][1]='0'],[3,s=>s.series[1].values[0]=4]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+ const q=structuredClone(batch.questions[2]);q.options[1]='225; every emigrant is added.';assert.throws(()=>verifyGeographyQuestion(q,{...qa.questions[2],questionSha256:semanticHash(q)},geographyStimuli[q.id]));
+});

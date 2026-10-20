@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Unit 2 complete
+
+209 original MCQs across nineteen topics are published: all seven Unit1 and twelve Unit2 topics, exactly11 each.76 meaningful stimuli (36.36%) and87 explicit numerical/geometry checks corroborate present sets; no unresolved item is published. Topics2.11–2.12 add displacement borders/procedures, step and seasonal movement, remittance fees/units, skilled-workforce accounting and cultural landscapes. A pending asylum claim does not establish absence of refugee circumstances. Two workforce distractor totals were corrected before publication and are now checked against their stated arithmetic mistakes.
+
+All143 automated tests, TypeScript/build, Geography/standard routes, all172 legacy lesson routes and Chemistry publication/preservation checks passed. Both new full browser sessions scored11/11. All eight new stimuli were inspected at390×844; step-model zoom200/reset100 passed. Adding spaces to a long seasonal description removed default phone overflow (content width305, scroll width305). No existing question or catalog objects changed; no browser notes/progress were edited. This is automated verification, not independent human review or empirical difficulty calibration. The full bank is unfinished:49 topics/539 questions remain, next3.1.
+
 ## Human Geography Topics 2.9–2.10
 
 187 MCQs across seventeen topics are published;68 meaningful stimuli (36.36%) and77 explicit checks. Aging questions distinguish counts/shares, total/old-age dependency, potential/contributor support and conditional policy consequences. Causes of Migration distinguishes after-cost opportunities, intervening destinations, travel financing, overlapping motives and departure-rate denominators. All141 automated tests, TypeScript/build, Geography scopes and standard smoke checks passed. Both complete browser sessions scored11/11; all eight actual stimuli were inspected at390×844. A transient clipped phone-table paint cleared after zoom reset; measured widths/scroll positions were normal and subsequent views were complete. No persistent layout defect or Next.js error was reproduced. Existing content/resources/storage preserved; no human review claim. Next2.11; the bank is incomplete.

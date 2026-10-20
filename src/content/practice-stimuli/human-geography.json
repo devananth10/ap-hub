@@ -3345,5 +3345,366 @@
       }
     ],
     "max": 100
+  },
+  "hug-2-11-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "flow",
+    "title": "Forced moves within and across a state border",
+    "description": "Hypothetical violence displaces people from homes in Country A. The upper600-person route remains in A; the lower400-person route ends in B. The boundary atx50 is an internationally recognized state border.",
+    "caption": "Arrows show destination, not legal recognition or all reasons for flight. Internal and cross-border displacement are distinguished; exact refugee criteria require additional facts.",
+    "unitLabel": "People displaced along each directed route",
+    "regions": [
+      {
+        "label": "Country A",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "Country B",
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ],
+    "paths": [
+      {
+        "label": "600",
+        "points": [
+          [
+            10,
+            15
+          ],
+          [
+            40,
+            15
+          ]
+        ],
+        "arrow": true,
+        "value": 600
+      },
+      {
+        "label": "400",
+        "points": [
+          [
+            10,
+            45
+          ],
+          [
+            75,
+            45
+          ]
+        ],
+        "arrow": true,
+        "value": 400
+      }
+    ]
+  },
+  "hug-2-11-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Three displacement and procedure cases",
+    "description": "Hypothetical A flees persecution abroad and has a pending asylum claim. B has received formal refugee recognition abroad. C flees a flood to another town in the same country.",
+    "caption": "Reported procedures and locations only. A pending claimant may already meet a refugee definition; recognition does not create the underlying circumstances.",
+    "headers": [
+      "Case",
+      "Location or procedure"
+    ],
+    "rows": [
+      [
+        "A",
+        "Abroad; asylum claim pending"
+      ],
+      [
+        "B",
+        "Abroad; formal refugee recognition"
+      ],
+      [
+        "C",
+        "Flood displacement within same country"
+      ]
+    ]
+  },
+  "hug-2-11-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "model",
+    "title": "One household’s successive residential stages",
+    "description": "Hypothetical household relocatesVillage→Town in2020,thenTown→City in2023. All settlements are in one country; no earlier family network is specified.",
+    "caption": "Arrows are residential moves by the same household, not separate households or daily trips.",
+    "assumptions": "Original settlement schematic; two permanent changes of residence, no annual return or livestock movement.",
+    "nodes": [
+      {
+        "label": "Village",
+        "x": 15,
+        "y": 15
+      },
+      {
+        "label": "Town",
+        "x": 50,
+        "y": 45
+      },
+      {
+        "label": "City",
+        "x": 85,
+        "y": 15
+      }
+    ],
+    "edges": [
+      {
+        "from": "Village",
+        "to": "Town",
+        "label": "2020 move"
+      },
+      {
+        "from": "Town",
+        "to": "City",
+        "label": "2023 move"
+      }
+    ]
+  },
+  "hug-2-11-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Seasonal pasture locations of the same households",
+    "description": "Hypothetical lowland/highland household counts: Winter 30/0, Spring 20/10, Summer 0/30, Autumn 20/10. The same 30 pastoral households move with herds and return each winter.",
+    "caption": "Original annual cycle between grazing areas. Counts are household locations, not births, permanent urban settlement or international admissions.",
+    "unitLabel": "Pastoral households",
+    "categories": [
+      "Winter",
+      "Spring",
+      "Summer",
+      "Autumn"
+    ],
+    "series": [
+      {
+        "label": "Lowland",
+        "values": [
+          30,
+          20,
+          0,
+          20
+        ]
+      },
+      {
+        "label": "Highland",
+        "values": [
+          0,
+          10,
+          30,
+          10
+        ]
+      }
+    ],
+    "max": 40
+  },
+  "hug-2-12-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Remittance channels for one gross transfer",
+    "description": "Hypothetical gross transfer1000 currency units through either channel. A deducts a50-unit fee; B deducts20. No exchange-rate or other charge differences.",
+    "caption": "Fees are deducted from the transfer rather than paid separately. The table does not give sender earnings, recipient spending or national economic effects.",
+    "headers": [
+      "Channel",
+      "Gross transfer",
+      "Deducted fee"
+    ],
+    "rows": [
+      [
+        "A",
+        "1000",
+        "50"
+      ],
+      [
+        "B",
+        "1000",
+        "20"
+      ]
+    ]
+  },
+  "hug-2-12-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "flow",
+    "title": "People move one way; money travels back",
+    "description": "Hypothetical upper arrowA→B:800 people. Lower arrowB→A:200000 currency units in remittances. Both refer to the stated year but use different units.",
+    "caption": "People and money cannot be added as one population measure. Remittance receipt does not require the sender to return.",
+    "unitLabel": "Upper: people; lower: currency units",
+    "regions": [
+      {
+        "label": "Origin A",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "Destination B",
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ],
+    "paths": [
+      {
+        "label": "800 people",
+        "points": [
+          [
+            15,
+            15
+          ],
+          [
+            80,
+            15
+          ]
+        ],
+        "arrow": true,
+        "value": 800
+      },
+      {
+        "label": "200k units",
+        "points": [
+          [
+            80,
+            45
+          ],
+          [
+            15,
+            45
+          ]
+        ],
+        "arrow": true,
+        "value": 200000
+      }
+    ]
+  },
+  "hug-2-12-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Origin nurse-workforce changes over one year",
+    "description": "Hypothetical starting workforce200 nurses;30 newly trained join,10 retire,40 emigrate,5 immigrate and join. No other entries or exits occur.",
+    "caption": "Counts are people actively in the origin workforce. Remittances are not a substitute for a headcount entry. Service quality and patient demand are not measured.",
+    "headers": [
+      "Component",
+      "Nurses"
+    ],
+    "rows": [
+      [
+        "Start",
+        "200"
+      ],
+      [
+        "Newly trained join",
+        "30"
+      ],
+      [
+        "Retire",
+        "10"
+      ],
+      [
+        "Emigrate",
+        "40"
+      ],
+      [
+        "Immigrate and join",
+        "5"
+      ]
+    ]
+  },
+  "hug-2-12-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Origin-associated businesses in a destination district",
+    "description": "Hypothetical restaurants4→12 and specialty shops2→8. New establishments are opened by migrant households offering origin-associated foods and products.",
+    "caption": "Original counts show commercial landscape change, not every resident’s preferences, identity or a fixed number of migrants per business.",
+    "unitLabel": "Establishments",
+    "categories": [
+      "Restaurants",
+      "Specialty shops"
+    ],
+    "series": [
+      {
+        "label": "Earlier",
+        "values": [
+          4,
+          2
+        ]
+      },
+      {
+        "label": "Later",
+        "values": [
+          12,
+          8
+        ]
+      }
+    ],
+    "max": 16
   }
 }
