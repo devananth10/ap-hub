@@ -1,5 +1,9 @@
 # PrepAtlas milestone verification
 
+## Flipped Math Version 1 Calculus AB integration — October 19 authorization
+
+All 81 AB topics now have one verified The Algebros Version 1 lesson. The one-time URL ledger, 30 BC-only exclusions, four non-video applet exclusions and verification limits are recorded in [the complete integration report](FLIPPED_MATH_VERIFICATION.md). All 1,892 MCQs and 102 Krug resources are preserved. TypeScript, 111 automated tests, resource validation, production build, complete topic/Practice route checks and preview stability checks passed. Representative desktop/mobile actual playback, fullscreen, note/watched persistence, Practice grading and Chemistry multipart navigation passed. No public deployment.
+
 ## Private ratings and question reporting — October 18, 2026
 
 - Starting checkpoint: `ecd77f3c3997e48f74579d82a947603041280822`; clean main/upstream verified before editing. No published question JSON, curriculum ID, answer key, resource catalog, legacy study-storage key, Practice reducer or video component changed.

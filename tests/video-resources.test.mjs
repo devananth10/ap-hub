@@ -6,7 +6,8 @@ import { publishOfficialResources, resourcesForTopic, watchedVideoKey, courseWit
 import { parseStudyData } from '../src/lib/study-storage.ts';
 const read = path => JSON.parse(readFileSync(path, 'utf8'));
 const catalog = read('src/config/official-resources.json');
-const resources = publishOfficialResources(catalog, courses);
+const allResources = publishOfficialResources(catalog, courses);
+const resources = allResources.filter(resource=>resource.courseId==='chemistry');
 const verification = read('content-drafts/chemistry/research/KRUG_VERIFICATION.json');
 const approval = read('docs/INITIAL_KRUG_APPROVAL.json');
 
@@ -40,7 +41,7 @@ test('every official Chemistry topic has correctly scoped ordered videos; shared
   assert.equal(courseWithResources(chemistry, resources).units.flatMap(unit => unit.topics).filter(topic => topic.ready).length, 91);
   assert.equal(resources.filter(video => video.video.videoId === 'Sl5mJT0tvSE').length, 1);
   assert.equal(resources.find(video => video.video.videoId === 'Sl5mJT0tvSE').part, 'A');
-  assert.deepEqual(resourcesForTopic(resources, 'calculus-ab', 1, 'limits'), []);
+  assert.ok(resourcesForTopic(allResources, 'calculus-ab', 1, 'limits').length>0);
 });
 test('hide/restore, reorder and move preserve identity; changing actual video resets its watched identity', () => {
   const resource = structuredClone(resources[0]);
@@ -61,4 +62,37 @@ test('watched data extends legacy storage without clearing notes, saved IDs or t
   const watched=watchedVideoKey(resources[0]);
   assert.deepEqual(parseStudyData({...legacy,watchedVideos:[watched]},courses),{...legacy,watchedVideos:[watched]});
   assert.throws(()=>parseStudyData({...legacy,watchedVideos:[5]},courses),/watched/);
+});
+
+import {validateFlippedMathInventory} from '../scripts/check-flippedmath-inventory.mjs';
+const flipped=read('content-drafts/calculus-ab/research/FLIPPED_MATH_V1_VERIFICATION.json');
+const flippedApproval=read('docs/INITIAL_FLIPPED_MATH_APPROVAL.json');
+const calculusInventory=read('content-drafts/calculus-ab/research/official-topics.json').inventory;
+test('one-time Flipped Math Version 1 collection verifies and covers exactly the 81 AB topics',()=>{
+  assert.deepEqual(validateFlippedMathInventory(flipped,calculusInventory),{topics:81,videos:81,verified:81,pending:[]});
+  const calc=allResources.filter(r=>r.courseId==='calculus-ab');
+  assert.equal(calc.length,81);assert.equal(allResources.length,183);
+  assert.deepEqual(calc.map(r=>r.url),flippedApproval.approvedUrls);
+  assert.equal(new Set(calc.map(r=>r.video.videoId)).size,81);
+  for(const topic of calculusInventory){
+    const scoped=resourcesForTopic(allResources,'calculus-ab',topic.unitNumber,topic.topicId);
+    assert.equal(scoped.length,1);const resource=scoped[0],evidence=flipped.records.find(r=>r.topicNumber===topic.topicNumber);
+    assert.equal(resource.video.videoId,evidence.videos[0].videoId);
+    assert.equal(resource.title,evidence.videos[0].title);assert.equal(resource.publisher,evidence.videos[0].creator);
+    assert.equal(resource.source.directory,evidence.lessonPage);assert.deepEqual(resource.source.labels,['Version 1',topic.topicNumber]);
+    assert.equal(resource.approval.approvedUrl,resource.url);assert.equal(resource.part,undefined);
+  }
+  assert.equal(courseWithResources(courses.find(c=>c.id==='calculus-ab'),allResources).units.flatMap(u=>u.topics).filter(t=>t.ready).length,81);
+  assert.equal(flippedApproval.excludedBcTopics.length,30);assert.equal(flippedApproval.excludedNonVideoEmbeds.length,4);
+  assert.ok(!calc.some(r=>r.url.includes('geogebra')));
+});
+test('initial Flipped evidence rejects Version 2, wrong creators, BC scopes and changed provider IDs',()=>{
+  const wrongVersion=structuredClone(flipped);wrongVersion.version=2;
+  assert.throws(()=>validateFlippedMathInventory(wrongVersion,calculusInventory));
+  const creator=structuredClone(flipped);creator.records[0].videos[0].creator='Different teacher';
+  assert.throws(()=>validateFlippedMathInventory(creator,calculusInventory));
+  const bc=structuredClone(flipped);bc.records[0].topicNumber='6.11';
+  assert.throws(()=>validateFlippedMathInventory(bc,calculusInventory),/Non-AB topic/);
+  const wrongId=structuredClone(flipped);wrongId.records[0].videos[0].videoId='abcdefghijk';
+  assert.throws(()=>validateFlippedMathInventory(wrongId,calculusInventory));
 });

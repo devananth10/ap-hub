@@ -3,6 +3,9 @@ import {courses} from '../src/lib/courses.ts';
 import {practiceEntries,practiceHref,practiceCount} from '../src/lib/practice.ts';
 import {practiceFigures} from '../src/lib/practice-figures.ts';
 import {practiceTables} from '../src/lib/practice-tables.ts';
+import {readFileSync} from 'node:fs';
+import {publishOfficialResources,resourcesForTopic} from '../src/lib/resource-policy.ts';
+const videos=publishOfficialResources(JSON.parse(readFileSync('src/config/official-resources.json','utf8')),courses);
 const base=process.env.BASE_URL||'http://127.0.0.1:3000';
 const course=courses.find(course=>course.id==='calculus-ab');
 const plain=text=>text.replace(/<!--.*?-->/g,'');
@@ -25,7 +28,10 @@ for(const unit of course.units) {
     } else assert.ok(html.includes('coming soon')&&!html.includes('practice-question-frame'),topic.number+' honest empty state');
     const workspaceResponse=await fetch(`${base}/courses/calculus-ab/${topic.id}`);assert.equal(workspaceResponse.status,200);
     const workspace=plain(await workspaceResponse.text());assert.ok(workspace.includes(`${entries.length} MCQs available`));
-    assert.ok(workspace.includes('No videos yet')&&!workspace.includes('youtube-nocookie.com/embed/'));
+    const lessons=resourcesForTopic(videos,course.id,unit.number,topic.id);
+    if(lessons.length){assert.ok(!workspace.includes('No videos yet'));for(const lesson of lessons)assert.ok(workspace.includes(lesson.url)&&workspace.includes(`data-resource-id="${lesson.id}"`));}
+    else assert.ok(workspace.includes('No videos yet'));
+    assert.ok(!workspace.includes('youtube-nocookie.com/embed/'),'Player remains click-to-load');
     assert.ok(workspace.includes('Show Notes')&&!workspace.includes('id="topic-notes"'));
     assert.ok(workspace.includes(practiceHref(scope).replaceAll('&','&amp;')));
   }
@@ -34,4 +40,4 @@ for(const unit of course.units) {
 }
 const all=await fetch(base+practiceHref({courseId:course.id}));assert.equal(all.status,200);
 assert.ok(plain(await all.text()).includes(`${questions} MCQ questions`));
-console.log(`PASS Calculus: all 81 Practice and 81 workspace routes, eight unit scopes and course scope; ${completed} complete topics / ${questions} published questions, other topics honestly empty, no unapproved video.`);
+console.log(`PASS Calculus: all 81 Practice and topic routes, eight unit scopes and course scope; ${completed} complete topics / ${questions} questions, correctly scoped approved videos and guarded initial answers.`);

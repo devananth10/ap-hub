@@ -91,8 +91,10 @@ Validated and published:
 
 All new sets use the unchanged question schema, four choices and per-choice explanations. QA includes separate recomputation/logic records and semantic hashes. Plain Unicode math, original accessible SVG graph sidecars and complete data descriptions are supported; no raw LaTeX or external diagrams. Automated checks cannot prove all conceptual claims, originality or AP difficulty; read QA notes. Unfinished sets remain unavailable.
 
-Resume by inspecting git status/log, this tracker, official scope and existing files, then generate only missing questions. Validate, publish, test and save ordinary verified GitHub checkpoints. Never change Chemistry or resources for this work.
+The MCQ bank is complete. Resume by inspecting Git status/log and this tracker; do not regenerate completed questions. Preserve Chemistry, both course banks and student data.
 
-## Question bank complete; next development phase
+## Question bank and initial video collection complete
 
-The complete audit is BANK_AUDIT.md. Verify the final bank commit on GitHub, then continue the October 19 Flipped Math Version 1 AB video research/integration assignment. The user explicitly authorized one-time automatic publication of verified initial videos, with uncertain or BC-only entries kept pending/excluded. Do not regenerate this completed MCQ bank. Preserve all Krug records and student storage; no public deployment.
+The complete bank audit is BANK_AUDIT.md; its verified GitHub checkpoint is `cca505aec00bdd9799adcb5496f2206494b34371`. Subsequent research was saved at `1236677c97fb5954573623898c1d356b70cd7571`.
+
+The one-time authorized initial Flipped Math Version 1 collection is integrated: **81 unique verified/published videos across all 81 AB topics; no missing or pending Calculus videos.** Thirty BC-only lessons, two prerequisites and four non-video applet occurrences were excluded. Each topic reuses the existing player, manual watched status, optional notes and eleven-question Practice scope. All 1,892 question objects and 102 Krug records remain unchanged. See `../../docs/FLIPPED_MATH_VERIFICATION.md` for evidence, browser observations, checks and limits. Future replacement URLs require explicit authorization. No public deployment.

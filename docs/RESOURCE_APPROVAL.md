@@ -1,5 +1,7 @@
 # Official resource approval in PrepAtlas
 
+**Separate October 19 exception:** The owner explicitly authorized one-time automatic publication of the initial verified Flipped Math/The Algebros Version 1 Calculus AB videos. All 81 exact URLs and the boundary of that authorization are frozen in `INITIAL_FLIPPED_MATH_APPROVAL.json`. All 81 AB topics have one video. BC-only topics, Version 2 and non-video applets are excluded. This exception does not authorize future URLs/replacements or unrelated resources. The earlier Krug collection remains unchanged. See [Flipped Math verification](FLIPPED_MATH_VERIFICATION.md).
+
 **Only the application owner can approve an official resource.** The owner explicitly authorized one initial verified Jeremy Krug AP Chemistry directory collection on October 18, 2026. Its 102 exact unique URLs are recorded in `INITIAL_KRUG_APPROVAL.json`; all are now published. One duplicate-looking 9.8b directory alias remains pending as a distinct lesson. This exception does not approve future imports, replacement URLs, other creators or other subjects. Normal manual approval resumes outside that recorded collection.
 
 The live catalog is `src/config/official-resources.json`. The previously selected unapproved resources remain removed. The new catalog contains the initial owner-authorized collection with verified creator-directory mapping, public titles and source provenance. Never import a playlist. See [VIDEO_EDIT_GUIDE.md](../VIDEO_EDIT_GUIDE.md) and [VIDEO_VERIFICATION.md](VIDEO_VERIFICATION.md).

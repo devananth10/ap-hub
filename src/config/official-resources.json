@@ -3633,6 +3633,2922 @@
         "approvedUrl": "https://youtu.be/51kjxyY8UTg",
         "reference": "Owner’s October 18 post-publication master prompt, Phase 3.1: ONE-TIME approval of the initial verified Jeremy Krug Chemistry directory collection. See docs/INITIAL_KRUG_APPROVAL.json."
       }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-1-1",
+      "title": "Calculus AB/BC – 1.1 Can Change Occur at an Instant?",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 1.1.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=antLFMkVfXI",
+      "courseId": "calculus-ab",
+      "unitNumber": 1,
+      "topicIds": [
+        "limits"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "antLFMkVfXI",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/11-can-change-occur-at-an-instant.html",
+        "labels": [
+          "Version 1",
+          "1.1"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=antLFMkVfXI",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-1-2",
+      "title": "Calculus AB/BC - 1.2 Defining Limits and Using Limit Notation",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 1.2.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=V98KUHeyQWQ",
+      "courseId": "calculus-ab",
+      "unitNumber": 1,
+      "topicIds": [
+        "topic-1-2"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "V98KUHeyQWQ",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/12-defining-limits-and-using-limit-notation.html",
+        "labels": [
+          "Version 1",
+          "1.2"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=V98KUHeyQWQ",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-1-3",
+      "title": "Calculus AB/BC – 1.3 Estimating Limit Values from Graphs",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 1.3.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=TXTGDlDr2JM",
+      "courseId": "calculus-ab",
+      "unitNumber": 1,
+      "topicIds": [
+        "topic-1-3"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "TXTGDlDr2JM",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/13-limit-values-from-graphs.html",
+        "labels": [
+          "Version 1",
+          "1.3"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=TXTGDlDr2JM",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-1-4",
+      "title": "Calculus AB/BC – 1.4 Estimating Limit Values from Tables",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 1.4.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=qmzzZRr3-5k",
+      "courseId": "calculus-ab",
+      "unitNumber": 1,
+      "topicIds": [
+        "topic-1-4"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "qmzzZRr3-5k",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/14-limit-values-from-tables.html",
+        "labels": [
+          "Version 1",
+          "1.4"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=qmzzZRr3-5k",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-1-5",
+      "title": "Calculus AB/BC – 1.5 Determining Limits Using Algebraic Properties",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 1.5.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=cqOHGzG01lo",
+      "courseId": "calculus-ab",
+      "unitNumber": 1,
+      "topicIds": [
+        "topic-1-5"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "cqOHGzG01lo",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/15-determining-limits-using-algebraic-properties.html",
+        "labels": [
+          "Version 1",
+          "1.5"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=cqOHGzG01lo",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-1-6",
+      "title": "Calculus AB/BC – 1.6 Determining Limits Using Algebraic Manipulation",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 1.6.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=b1jrYrWHVfw",
+      "courseId": "calculus-ab",
+      "unitNumber": 1,
+      "topicIds": [
+        "topic-1-6"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "b1jrYrWHVfw",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/16-determining-limits-using-algebraic-manipulation.html",
+        "labels": [
+          "Version 1",
+          "1.6"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=b1jrYrWHVfw",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-1-7",
+      "title": "Calculus AB/BC – 1.7 Selecting Procedures for Determining Limits",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 1.7.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=-j2cEJYD7Zw",
+      "courseId": "calculus-ab",
+      "unitNumber": 1,
+      "topicIds": [
+        "topic-1-7"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "-j2cEJYD7Zw",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/17-selecting-procedures-for-determining-limits.html",
+        "labels": [
+          "Version 1",
+          "1.7"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=-j2cEJYD7Zw",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-1-8",
+      "title": "Calculus AB/BC – 1.8 Determining Limits Using the Squeeze Theorem",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 1.8.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=6IwCydD8IMQ",
+      "courseId": "calculus-ab",
+      "unitNumber": 1,
+      "topicIds": [
+        "topic-1-8"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "6IwCydD8IMQ",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/18-determining-limits-using-the-squeeze-theorem.html",
+        "labels": [
+          "Version 1",
+          "1.8"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=6IwCydD8IMQ",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-1-9",
+      "title": "Calculus AB/BC – 1.9 Connecting Multiple Representations of Limits",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 1.9.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=dS4LwH2P_Nw",
+      "courseId": "calculus-ab",
+      "unitNumber": 1,
+      "topicIds": [
+        "topic-1-9"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "dS4LwH2P_Nw",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/19-connecting-multiple-representations-of-limits.html",
+        "labels": [
+          "Version 1",
+          "1.9"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=dS4LwH2P_Nw",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-1-10",
+      "title": "Calculus AB/BC – 1.10 Exploring Types of Discontinuities",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 1.10.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=F6ydE70SeeU",
+      "courseId": "calculus-ab",
+      "unitNumber": 1,
+      "topicIds": [
+        "topic-1-10"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "F6ydE70SeeU",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/110-exploring-types-of-discontinuities.html",
+        "labels": [
+          "Version 1",
+          "1.10"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=F6ydE70SeeU",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-1-11",
+      "title": "Calculus AB/BC – 1.11 Defining Continuity at a Point",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 1.11.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=ufcSuOwXirg",
+      "courseId": "calculus-ab",
+      "unitNumber": 1,
+      "topicIds": [
+        "topic-1-11"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "ufcSuOwXirg",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/111-defining-continuity-at-a-point.html",
+        "labels": [
+          "Version 1",
+          "1.11"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=ufcSuOwXirg",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-1-12",
+      "title": "Calculus AB/BC – 1.12 Confirming Continuity Over an Interval",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 1.12.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=LlMx3crSO-0",
+      "courseId": "calculus-ab",
+      "unitNumber": 1,
+      "topicIds": [
+        "topic-1-12"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "LlMx3crSO-0",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/112-confirming-continuity-over-an-interval.html",
+        "labels": [
+          "Version 1",
+          "1.12"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=LlMx3crSO-0",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-1-13",
+      "title": "Calculus AB/BC – 1.13 Removing Discontinuities",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 1.13.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=WAp01hs6q2s",
+      "courseId": "calculus-ab",
+      "unitNumber": 1,
+      "topicIds": [
+        "topic-1-13"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "WAp01hs6q2s",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/113-removing-discontinuities.html",
+        "labels": [
+          "Version 1",
+          "1.13"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=WAp01hs6q2s",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-1-14",
+      "title": "Calculus AB/BC – 1.14 Infinite Limits and Vertical Asymptotes",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 1.14.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=sxbRc50OfwM",
+      "courseId": "calculus-ab",
+      "unitNumber": 1,
+      "topicIds": [
+        "topic-1-14"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "sxbRc50OfwM",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/114-infinite-limits-and-vertical-asymptotes.html",
+        "labels": [
+          "Version 1",
+          "1.14"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=sxbRc50OfwM",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-1-15",
+      "title": "Calculus AB/BC – 1.15 Limits at Infinity and Horizontal Asymptotes",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 1.15.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=KWVlHJaDxkg",
+      "courseId": "calculus-ab",
+      "unitNumber": 1,
+      "topicIds": [
+        "topic-1-15"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "KWVlHJaDxkg",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/115-limits-at-infinity-and-horizontal-asymptotes.html",
+        "labels": [
+          "Version 1",
+          "1.15"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=KWVlHJaDxkg",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-1-16",
+      "title": "Calculus AB/BC – 1.16 Intermediate Value Theorem",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 1.16.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=cHp3foku50g",
+      "courseId": "calculus-ab",
+      "unitNumber": 1,
+      "topicIds": [
+        "topic-1-16"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "cHp3foku50g",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/116-intermediate-value-theorem.html",
+        "labels": [
+          "Version 1",
+          "1.16"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=cHp3foku50g",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-2-1",
+      "title": "Calculus AB/BC – 2.1 Defining Average and Instantaneous Rate of Change at a Point",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 2.1.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=565kZuUBNr8",
+      "courseId": "calculus-ab",
+      "unitNumber": 2,
+      "topicIds": [
+        "derivatives"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "565kZuUBNr8",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/21-defining-average-and-instantaneous-rate-of-change-at-a-point.html",
+        "labels": [
+          "Version 1",
+          "2.1"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=565kZuUBNr8",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-2-2",
+      "title": "Calculus AB/BC – 2.2 Defining the Derivative of a Function and Using Derivative Notation",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 2.2.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=tfdPnsp9bck",
+      "courseId": "calculus-ab",
+      "unitNumber": 2,
+      "topicIds": [
+        "topic-2-2"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "tfdPnsp9bck",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/22-defining-the-derivative-of-a-function-and-using-derivative-notation.html",
+        "labels": [
+          "Version 1",
+          "2.2"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=tfdPnsp9bck",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-2-3",
+      "title": "Calculus AB/BC – 2.3 Estimating Derivatives of a Function at a Point",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 2.3.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=NZb2Dk7aoh0",
+      "courseId": "calculus-ab",
+      "unitNumber": 2,
+      "topicIds": [
+        "topic-2-3"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "NZb2Dk7aoh0",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/23-estimating-derivatives-of-a-function-at-a-point.html",
+        "labels": [
+          "Version 1",
+          "2.3"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=NZb2Dk7aoh0",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-2-4",
+      "title": "Calculus AB/BC – 2.4 Connecting Differentiabilty and Continuity",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 2.4.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=W3xgy5OrwtA",
+      "courseId": "calculus-ab",
+      "unitNumber": 2,
+      "topicIds": [
+        "topic-2-4"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "W3xgy5OrwtA",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/24-connecting-differentiability-and-continuity.html",
+        "labels": [
+          "Version 1",
+          "2.4"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=W3xgy5OrwtA",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-2-5",
+      "title": "Calculus AB/BC – 2.5 Applying the Power Rule",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 2.5.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=j7P7dNbNoME",
+      "courseId": "calculus-ab",
+      "unitNumber": 2,
+      "topicIds": [
+        "topic-2-5"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "j7P7dNbNoME",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/25-applying-the-power-rule.html",
+        "labels": [
+          "Version 1",
+          "2.5"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=j7P7dNbNoME",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-2-6",
+      "title": "Calculus AB/BC – 2.6 Derivative Rules: Constant, Sum, Difference, and Constant Multiple",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 2.6.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=KzBD9M4ETVs",
+      "courseId": "calculus-ab",
+      "unitNumber": 2,
+      "topicIds": [
+        "topic-2-6"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "KzBD9M4ETVs",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/26-derivative-rules-constant-sum-difference-and-constant-multiple.html",
+        "labels": [
+          "Version 1",
+          "2.6"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=KzBD9M4ETVs",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-2-7",
+      "title": "Calculus AB/BC – 2.7 Derivatives of cos(x), sin(x), e^x, and ln(x)",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 2.7.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=8bTwuyLmzQ8",
+      "courseId": "calculus-ab",
+      "unitNumber": 2,
+      "topicIds": [
+        "topic-2-7"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "8bTwuyLmzQ8",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/27-derivatives-of-cosx-sinx-ex-and-lnx.html",
+        "labels": [
+          "Version 1",
+          "2.7"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=8bTwuyLmzQ8",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-2-8",
+      "title": "Calculus AB/BC – 2.8 The Product Rule",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 2.8.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=Qgdm04QqyDs",
+      "courseId": "calculus-ab",
+      "unitNumber": 2,
+      "topicIds": [
+        "topic-2-8"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "Qgdm04QqyDs",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/28-the-product-rule.html",
+        "labels": [
+          "Version 1",
+          "2.8"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=Qgdm04QqyDs",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-2-9",
+      "title": "Calculus AB/BC – 2.9 The Quotient Rule",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 2.9.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=qF96Ayj5mgE",
+      "courseId": "calculus-ab",
+      "unitNumber": 2,
+      "topicIds": [
+        "topic-2-9"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "qF96Ayj5mgE",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/29-the-quotient-rule.html",
+        "labels": [
+          "Version 1",
+          "2.9"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=qF96Ayj5mgE",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-2-10",
+      "title": "Calculus AB/BC – 2.10 Derivatives of tan(x), cot(x), sec(x), csc(x)",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 2.10.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=fWSKy8sJ5gs",
+      "courseId": "calculus-ab",
+      "unitNumber": 2,
+      "topicIds": [
+        "topic-2-10"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "fWSKy8sJ5gs",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/210-derivatives-of-tanx-cotx-secx-cscx.html",
+        "labels": [
+          "Version 1",
+          "2.10"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=fWSKy8sJ5gs",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-3-1",
+      "title": "Calculus AB/BC – 3.1 The Chain Rule",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 3.1.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=1w6t_LkyJFU",
+      "courseId": "calculus-ab",
+      "unitNumber": 3,
+      "topicIds": [
+        "chain-rule"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "1w6t_LkyJFU",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/31-the-chain-rule.html",
+        "labels": [
+          "Version 1",
+          "3.1"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=1w6t_LkyJFU",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-3-2",
+      "title": "Calculus AB/BC – 3.2 Implicit Differentiation",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 3.2.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=qCkUfBiWeX8",
+      "courseId": "calculus-ab",
+      "unitNumber": 3,
+      "topicIds": [
+        "topic-3-2"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "qCkUfBiWeX8",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/32-implicit-differentiation.html",
+        "labels": [
+          "Version 1",
+          "3.2"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=qCkUfBiWeX8",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-3-3",
+      "title": "Calculus AB/BC – 3.3 Differentiating Inverse Functions",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 3.3.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=1dkGdEjXHZc",
+      "courseId": "calculus-ab",
+      "unitNumber": 3,
+      "topicIds": [
+        "topic-3-3"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "1dkGdEjXHZc",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/33-differentiating-inverse-functions.html",
+        "labels": [
+          "Version 1",
+          "3.3"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=1dkGdEjXHZc",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-3-4",
+      "title": "Calculus AB/BC – 3.4 Differentiating Inverse Trigonometric Functions",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 3.4.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=OGRiQbphPfU",
+      "courseId": "calculus-ab",
+      "unitNumber": 3,
+      "topicIds": [
+        "topic-3-4"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "OGRiQbphPfU",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/34-differentiating-inverse-trigonometric-functions.html",
+        "labels": [
+          "Version 1",
+          "3.4"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=OGRiQbphPfU",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-3-5",
+      "title": "Calculus AB/BC – 3.5 Selecting Procedures for Calculating Derivatives",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 3.5.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=uLEl-CMLC-M",
+      "courseId": "calculus-ab",
+      "unitNumber": 3,
+      "topicIds": [
+        "topic-3-5"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "uLEl-CMLC-M",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/35-selecting-procedures-for-calculating-derivatives.html",
+        "labels": [
+          "Version 1",
+          "3.5"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=uLEl-CMLC-M",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-3-6",
+      "title": "Calculus AB/BC – 3.6 Calculating Higher-Order Derivatives",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 3.6.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=gzC-2D_I5U4",
+      "courseId": "calculus-ab",
+      "unitNumber": 3,
+      "topicIds": [
+        "topic-3-6"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "gzC-2D_I5U4",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/36-calculating-higher-order-derivatives.html",
+        "labels": [
+          "Version 1",
+          "3.6"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=gzC-2D_I5U4",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-4-1",
+      "title": "Calculus AB/BC – 4.1 Interpreting the Meaning of the Derivative in Context",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 4.1.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=KRRVYYogYaA",
+      "courseId": "calculus-ab",
+      "unitNumber": 4,
+      "topicIds": [
+        "rates"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "KRRVYYogYaA",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/41-interpreting-the-meaning-of-the-derivative-in-context.html",
+        "labels": [
+          "Version 1",
+          "4.1"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=KRRVYYogYaA",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-4-2",
+      "title": "Calculus AB/BC – 4.2 Straight-Line Motion: Connecting Position, Velocity, and Acceleration",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 4.2.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=3NTNoy1bdHI",
+      "courseId": "calculus-ab",
+      "unitNumber": 4,
+      "topicIds": [
+        "topic-4-2"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "3NTNoy1bdHI",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/42-straight-line-motion-connecting-position-velocity-and-acceleration.html",
+        "labels": [
+          "Version 1",
+          "4.2"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=3NTNoy1bdHI",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-4-3",
+      "title": "Calculus AB/BC – 4.3 Rates of Change in Applied Contexts Other Than              Motion",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 4.3.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=wIzh3fBlY-Y",
+      "courseId": "calculus-ab",
+      "unitNumber": 4,
+      "topicIds": [
+        "topic-4-3"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "wIzh3fBlY-Y",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/43-rates-of-change-in-applied-contexts-other-than-motion.html",
+        "labels": [
+          "Version 1",
+          "4.3"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=wIzh3fBlY-Y",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-4-4",
+      "title": "Calculus AB/BC – 4.4 Introduction to Related Rates",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 4.4.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=fnDT0a1RxP0",
+      "courseId": "calculus-ab",
+      "unitNumber": 4,
+      "topicIds": [
+        "topic-4-4"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "fnDT0a1RxP0",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/44-introduction-to-related-rates.html",
+        "labels": [
+          "Version 1",
+          "4.4"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=fnDT0a1RxP0",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-4-5",
+      "title": "Calculus AB/BC – 4.5 Solving Related Rates Problems",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 4.5.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=tpQM5-r5pgg",
+      "courseId": "calculus-ab",
+      "unitNumber": 4,
+      "topicIds": [
+        "topic-4-5"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "tpQM5-r5pgg",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/45-solving-related-rates-problems.html",
+        "labels": [
+          "Version 1",
+          "4.5"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=tpQM5-r5pgg",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-4-6",
+      "title": "Calculus AB/BC – 4.6 Approximating Values of a Function Using Local Linearity and Linearization",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 4.6.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=6vCK3l_ob24",
+      "courseId": "calculus-ab",
+      "unitNumber": 4,
+      "topicIds": [
+        "topic-4-6"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "6vCK3l_ob24",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/46-approximating-values-of-a-function-using-local-linearity-and-linearization.html",
+        "labels": [
+          "Version 1",
+          "4.6"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=6vCK3l_ob24",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-4-7",
+      "title": "Calculus AB/BC – 4.7 Using L'Hopital's Rule for Determining Limits of Indeterminate Forms",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 4.7.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=kQOQH0ki6hY",
+      "courseId": "calculus-ab",
+      "unitNumber": 4,
+      "topicIds": [
+        "topic-4-7"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "kQOQH0ki6hY",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/47-using-lhopitals-rule-for-determining-limits-of-indeterminate-forms.html",
+        "labels": [
+          "Version 1",
+          "4.7"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=kQOQH0ki6hY",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-5-1",
+      "title": "Calculus AB/BC – 5.1 Using the Mean Value Theorem",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 5.1.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=1Hz2h-AAeM8",
+      "courseId": "calculus-ab",
+      "unitNumber": 5,
+      "topicIds": [
+        "mean-value"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "1Hz2h-AAeM8",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/51-using-the-mean-value-theorem.html",
+        "labels": [
+          "Version 1",
+          "5.1"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=1Hz2h-AAeM8",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-5-2",
+      "title": "Calculus AB/BC – 5.2 Extreme Value Theorem, Global Versus Local Extrema, and Critical Points",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 5.2.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=ZIqfI2QVLRI",
+      "courseId": "calculus-ab",
+      "unitNumber": 5,
+      "topicIds": [
+        "topic-5-2"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "ZIqfI2QVLRI",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/52-extreme-value-theorem-global-versus-local-extrema-and-critical-points.html",
+        "labels": [
+          "Version 1",
+          "5.2"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=ZIqfI2QVLRI",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-5-3",
+      "title": "Calculus AB/BC – 5.3 Determining Intervals on Which a Function is Increasing or Decreasing",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 5.3.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=AF94eEFHWLI",
+      "courseId": "calculus-ab",
+      "unitNumber": 5,
+      "topicIds": [
+        "topic-5-3"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "AF94eEFHWLI",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/53-determining-intervals-on-which-a-function-is-increasing-or-decreasing.html",
+        "labels": [
+          "Version 1",
+          "5.3"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=AF94eEFHWLI",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-5-4",
+      "title": "Calculus AB/BC – 5.4 Using the First Derivative Test to Determine Relative Local Extrema",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 5.4.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=REWoDT08SR4",
+      "courseId": "calculus-ab",
+      "unitNumber": 5,
+      "topicIds": [
+        "topic-5-4"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "REWoDT08SR4",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/54-using-the-first-derivative-test-to-determine-relative-local-extrema.html",
+        "labels": [
+          "Version 1",
+          "5.4"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=REWoDT08SR4",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-5-5",
+      "title": "Calculus AB/BC – 5.5 Using the Candidates Test to Determine Absolute (Global) Extrema",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 5.5.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=VquNgESgX74",
+      "courseId": "calculus-ab",
+      "unitNumber": 5,
+      "topicIds": [
+        "topic-5-5"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "VquNgESgX74",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/55-using-the-candidates-test-to-determine-absolute-global-extrema.html",
+        "labels": [
+          "Version 1",
+          "5.5"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=VquNgESgX74",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-5-6",
+      "title": "Calculus AB/BC – 5.6 Determining Concavity of Functions over Their Domains",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 5.6.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=CutK-XSnJew",
+      "courseId": "calculus-ab",
+      "unitNumber": 5,
+      "topicIds": [
+        "topic-5-6"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "CutK-XSnJew",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/56-determining-concavity-of-functions-over-their-domains.html",
+        "labels": [
+          "Version 1",
+          "5.6"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=CutK-XSnJew",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-5-7",
+      "title": "Calculus AB/BC – 5.7 Using the Second Derivative Test to Determine Extrema",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 5.7.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=wk6jNAW7JWU",
+      "courseId": "calculus-ab",
+      "unitNumber": 5,
+      "topicIds": [
+        "topic-5-7"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "wk6jNAW7JWU",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/57-using-the-second-derivative-test-to-determine-extrema.html",
+        "labels": [
+          "Version 1",
+          "5.7"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=wk6jNAW7JWU",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-5-8",
+      "title": "Calculus AB/BC – 5.8 Sketching Graphs of Functions and Their Derivatives",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 5.8.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=Eiv7ofQ_TeU",
+      "courseId": "calculus-ab",
+      "unitNumber": 5,
+      "topicIds": [
+        "topic-5-8"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "Eiv7ofQ_TeU",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/58-sketching-graphs-of-functions-and-their-derivatives.html",
+        "labels": [
+          "Version 1",
+          "5.8"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=Eiv7ofQ_TeU",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-5-9",
+      "title": "Calculus AB/BC – 5.9 Connecting a Function, Its First Derivative, and Its Second Derivative",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 5.9.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=eckJYWSgUJ4",
+      "courseId": "calculus-ab",
+      "unitNumber": 5,
+      "topicIds": [
+        "topic-5-9"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "eckJYWSgUJ4",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/59-connecting-a-function-its-first-derivative-and-its-second-derivative.html",
+        "labels": [
+          "Version 1",
+          "5.9"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=eckJYWSgUJ4",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-5-10",
+      "title": "Calculus AB/BC – 5.10 Introduction to Optimization Problems",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 5.10.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=ZzW-kBLtHgA",
+      "courseId": "calculus-ab",
+      "unitNumber": 5,
+      "topicIds": [
+        "topic-5-10"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "ZzW-kBLtHgA",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/510-introduction-to-optimization-problems.html",
+        "labels": [
+          "Version 1",
+          "5.10"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=ZzW-kBLtHgA",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-5-11",
+      "title": "Calculus AB/BC – 5.11 Solving Optimization Problems",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 5.11.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=pHSNPkbpcfk",
+      "courseId": "calculus-ab",
+      "unitNumber": 5,
+      "topicIds": [
+        "topic-5-11"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "pHSNPkbpcfk",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/511-solving-optimization-problems.html",
+        "labels": [
+          "Version 1",
+          "5.11"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=pHSNPkbpcfk",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-5-12",
+      "title": "Calculus AB/BC – 5.12 Exploring Behaviors of Implicit Relations",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 5.12.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=vw5AOn6FDzw",
+      "courseId": "calculus-ab",
+      "unitNumber": 5,
+      "topicIds": [
+        "topic-5-12"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "vw5AOn6FDzw",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/512-exploring-behaviors-of-implicit-relations.html",
+        "labels": [
+          "Version 1",
+          "5.12"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=vw5AOn6FDzw",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-6-1",
+      "title": "Calculus AB/BC – 6.1 Exploring Accumulation of Change",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 6.1.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=cgDBFQ9GkZw",
+      "courseId": "calculus-ab",
+      "unitNumber": 6,
+      "topicIds": [
+        "integrals"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "cgDBFQ9GkZw",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/61-exploring-accumulation-of-change.html",
+        "labels": [
+          "Version 1",
+          "6.1"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=cgDBFQ9GkZw",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-6-2",
+      "title": "Calculus AB/BC – 6.2 Approximating Areas with Riemann Sums",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 6.2.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=Tc4Ix6NmKZE",
+      "courseId": "calculus-ab",
+      "unitNumber": 6,
+      "topicIds": [
+        "topic-6-2"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "Tc4Ix6NmKZE",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/62-approximating-areas-with-riemann-sums.html",
+        "labels": [
+          "Version 1",
+          "6.2"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=Tc4Ix6NmKZE",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-6-3",
+      "title": "Calculus AB/BC – 6.3 Riemann Sums, Summation Notation, and Definite Integral Notation",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 6.3.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=wpbPzBcX42c",
+      "courseId": "calculus-ab",
+      "unitNumber": 6,
+      "topicIds": [
+        "topic-6-3"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "wpbPzBcX42c",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/63-riemann-sums-summation-notation-and-definite-integral-notation.html",
+        "labels": [
+          "Version 1",
+          "6.3"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=wpbPzBcX42c",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-6-4",
+      "title": "Calculus AB/BC – 6.4 The Fundamental Theorem of Calculus and Accumulation Functions",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 6.4.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=hnSWSHGHs34",
+      "courseId": "calculus-ab",
+      "unitNumber": 6,
+      "topicIds": [
+        "topic-6-4"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "hnSWSHGHs34",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/64-the-fundamental-theorem-of-calculus-and-accumulation-functions.html",
+        "labels": [
+          "Version 1",
+          "6.4"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=hnSWSHGHs34",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-6-5",
+      "title": "Calculus AB/BC – 6.5 Interpreting the Behavior of Accumulation Functions Involving Area",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 6.5.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=00G3lDAv6e4",
+      "courseId": "calculus-ab",
+      "unitNumber": 6,
+      "topicIds": [
+        "topic-6-5"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "00G3lDAv6e4",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/65-interpreting-the-behavior-of-accumulation-functions-involving-area.html",
+        "labels": [
+          "Version 1",
+          "6.5"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=00G3lDAv6e4",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-6-6",
+      "title": "Calculus AB/BC – 6.6 Applying Properties of Definite Integrals",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 6.6.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=Z_DEopTVoic",
+      "courseId": "calculus-ab",
+      "unitNumber": 6,
+      "topicIds": [
+        "topic-6-6"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "Z_DEopTVoic",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/66-applying-properties-of-definite-integrals.html",
+        "labels": [
+          "Version 1",
+          "6.6"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=Z_DEopTVoic",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-6-7",
+      "title": "Calculus AB/BC – 6.7 The Fundamental Theorem of Calculus and Definite Integrals",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 6.7.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=fdJ-NdflShM",
+      "courseId": "calculus-ab",
+      "unitNumber": 6,
+      "topicIds": [
+        "topic-6-7"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "fdJ-NdflShM",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/67-the-fundamental-theorem-of-calculus-and-definite-integrals.html",
+        "labels": [
+          "Version 1",
+          "6.7"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=fdJ-NdflShM",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-6-8",
+      "title": "Calculus AB/BC – 6.8 Finding Antiderivatives and Indefinite Integrals: Basic Rules and Notation",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 6.8.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=Bl5H1DKCM90",
+      "courseId": "calculus-ab",
+      "unitNumber": 6,
+      "topicIds": [
+        "topic-6-8"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "Bl5H1DKCM90",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/68-finding-antiderivatives-and-indefinite-integrals-basic-rules-and-notation.html",
+        "labels": [
+          "Version 1",
+          "6.8"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=Bl5H1DKCM90",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-6-9",
+      "title": "Calculus AB/BC – 6.9 Integrating Using Substitution",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 6.9.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=VOD8ItScG2I",
+      "courseId": "calculus-ab",
+      "unitNumber": 6,
+      "topicIds": [
+        "topic-6-9"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "VOD8ItScG2I",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/69-integrating-using-substitution.html",
+        "labels": [
+          "Version 1",
+          "6.9"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=VOD8ItScG2I",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-6-10",
+      "title": "Calculus AB/BC – 6.10 Integrating Functions Using Long Division and Completing the Square",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 6.10.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=lgj-y22SmXk",
+      "courseId": "calculus-ab",
+      "unitNumber": 6,
+      "topicIds": [
+        "topic-6-10"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "lgj-y22SmXk",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/610-integrating-functions-using-long-division-and-completing-the-square.html",
+        "labels": [
+          "Version 1",
+          "6.10"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=lgj-y22SmXk",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-6-14",
+      "title": "Calculus AB/BC – 6.14 Selecting Techniques for Antidifferentiation",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 6.14.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=vbC3jC0ui7A",
+      "courseId": "calculus-ab",
+      "unitNumber": 6,
+      "topicIds": [
+        "topic-6-14"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "vbC3jC0ui7A",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/614-selecting-techniques-for-antidifferentiation.html",
+        "labels": [
+          "Version 1",
+          "6.14"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=vbC3jC0ui7A",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-7-1",
+      "title": "Calculus AB/BC – 7.1 Modeling Situations with Differential Equations",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 7.1.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=Elrcj9Ix40c",
+      "courseId": "calculus-ab",
+      "unitNumber": 7,
+      "topicIds": [
+        "equations"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "Elrcj9Ix40c",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/71-modeling-situations-with-differential-equations.html",
+        "labels": [
+          "Version 1",
+          "7.1"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=Elrcj9Ix40c",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-7-2",
+      "title": "Calculus AB/BC – 7.2 Verifying Solutions for Differential Equations",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 7.2.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=4JY40RKmC9c",
+      "courseId": "calculus-ab",
+      "unitNumber": 7,
+      "topicIds": [
+        "topic-7-2"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "4JY40RKmC9c",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/72-verifying-solutions-for-differential-equations.html",
+        "labels": [
+          "Version 1",
+          "7.2"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=4JY40RKmC9c",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-7-3",
+      "title": "Calculus AB/BC – 7.3 Sketching Slope Fields",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 7.3.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=ijA_c48-AxQ",
+      "courseId": "calculus-ab",
+      "unitNumber": 7,
+      "topicIds": [
+        "topic-7-3"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "ijA_c48-AxQ",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/73-sketching-slope-fields.html",
+        "labels": [
+          "Version 1",
+          "7.3"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=ijA_c48-AxQ",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-7-4",
+      "title": "Calculus AB/BC – 7.4 Reasoning Using Slope Fields",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 7.4.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=Ax03UQV9HLM",
+      "courseId": "calculus-ab",
+      "unitNumber": 7,
+      "topicIds": [
+        "topic-7-4"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "Ax03UQV9HLM",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/74-reasoning-using-slope-fields.html",
+        "labels": [
+          "Version 1",
+          "7.4"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=Ax03UQV9HLM",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-7-6",
+      "title": "Calculus AB/BC – 7.6 General Solutions Using Separation of Variables",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 7.6.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=UYxf-G2dgPQ",
+      "courseId": "calculus-ab",
+      "unitNumber": 7,
+      "topicIds": [
+        "topic-7-6"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "UYxf-G2dgPQ",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/76-general-solutions-using-separation-of-variables.html",
+        "labels": [
+          "Version 1",
+          "7.6"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=UYxf-G2dgPQ",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-7-7",
+      "title": "Calculus AB/BC – 7.7 Particular Solutions using Initial Conditions and Separation of Variables",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 7.7.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=RBy5HpCSRfY",
+      "courseId": "calculus-ab",
+      "unitNumber": 7,
+      "topicIds": [
+        "topic-7-7"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "RBy5HpCSRfY",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/77-particular-solutions-using-initial-conditions-and-separation-of-variables.html",
+        "labels": [
+          "Version 1",
+          "7.7"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=RBy5HpCSRfY",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-7-8",
+      "title": "Calculus AB/BC –  7.8 Exponential Models with Differential Equations",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 7.8.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=whbcQMVsJF0",
+      "courseId": "calculus-ab",
+      "unitNumber": 7,
+      "topicIds": [
+        "topic-7-8"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "whbcQMVsJF0",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/78-exponential-models-with-differential-equations.html",
+        "labels": [
+          "Version 1",
+          "7.8"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=whbcQMVsJF0",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-8-1",
+      "title": "Calculus AB/BC – 8.1 Average Value of a Function on an Interval",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 8.1.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=jG8rlgtO-HM",
+      "courseId": "calculus-ab",
+      "unitNumber": 8,
+      "topicIds": [
+        "average"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "jG8rlgtO-HM",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/81-average-value-of-a-function-on-an-interval.html",
+        "labels": [
+          "Version 1",
+          "8.1"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=jG8rlgtO-HM",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-8-2",
+      "title": "Calculus AB/BC –  8.2 Connecting Position, Velocity, and Acceleration of Functions Using Integrals",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 8.2.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=V2GyKVCysHk",
+      "courseId": "calculus-ab",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-2"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "V2GyKVCysHk",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/82-connecting-position-velocity-and-acceleration-of-functions-using-integrals.html",
+        "labels": [
+          "Version 1",
+          "8.2"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=V2GyKVCysHk",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-8-3",
+      "title": "Calculus AB/BC – 8.3 Using Accumulation Functions and Definite Integrals in Applied Contexts",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 8.3.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=NWmYQ-_0EHc",
+      "courseId": "calculus-ab",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-3"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "NWmYQ-_0EHc",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/83-using-accumulation-functions-and-definite-integrals-in-applied-contexts.html",
+        "labels": [
+          "Version 1",
+          "8.3"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=NWmYQ-_0EHc",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-8-4",
+      "title": "Calculus AB/BC – 8.4 Finding the Area Between Curves Expressed as Functions of x",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 8.4.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=jCFtJZ-DcuE",
+      "courseId": "calculus-ab",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-4"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "jCFtJZ-DcuE",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/84-finding-the-area-between-curves-expressed-as-functions-of-x.html",
+        "labels": [
+          "Version 1",
+          "8.4"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=jCFtJZ-DcuE",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-8-5",
+      "title": "Calculus AB/BC – 8.5 Finding Area Between Curves Expressed as Functions of y",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 8.5.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=YuP1GocyG0o",
+      "courseId": "calculus-ab",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-5"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "YuP1GocyG0o",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/85-finding-area-between-curves-expressed-as-functions-of-y.html",
+        "labels": [
+          "Version 1",
+          "8.5"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=YuP1GocyG0o",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-8-6",
+      "title": "Calculus AB/BC – 8.6 Finding the Area Between Curves That Intersect at More Than Two Points",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 8.6.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=Jc_vGvs_ksE",
+      "courseId": "calculus-ab",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-6"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "Jc_vGvs_ksE",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/86-finding-the-area-between-curves-that-intersect-at-more-than-two-points.html",
+        "labels": [
+          "Version 1",
+          "8.6"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=Jc_vGvs_ksE",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-8-7",
+      "title": "Calculus AB/BC – 8.7 Volumes with Cross Sections: Squares and Rectangles",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 8.7.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=ehb2Ykjr0hU",
+      "courseId": "calculus-ab",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-7"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "ehb2Ykjr0hU",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/87-volumes-with-cross-sections-squares-and-rectangles.html",
+        "labels": [
+          "Version 1",
+          "8.7"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=ehb2Ykjr0hU",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-8-8",
+      "title": "Calculus AB/BC – 8.8 Volumes with Cross Sections: Triangles and Semicircles",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 8.8.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=eivHCSggrNg",
+      "courseId": "calculus-ab",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-8"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "eivHCSggrNg",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/88-volumes-with-cross-sections-triangles-and-semicircles.html",
+        "labels": [
+          "Version 1",
+          "8.8"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=eivHCSggrNg",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-8-9",
+      "title": "Calculus AB/BC – 8.9 Volume with Disc Method: Revolving Around the x- or y-Axis",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 8.9.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=bbqmCGWtcDM",
+      "courseId": "calculus-ab",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-9"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "bbqmCGWtcDM",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/89-volume-with-disc-method-revolving-around-the-x--or-y-axis.html",
+        "labels": [
+          "Version 1",
+          "8.9"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=bbqmCGWtcDM",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-8-10",
+      "title": "Calculus AB/BC – 8.10 Volume with Disc Method: Revolving Around Other Axes",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 8.10.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=UZCvQmmifEA",
+      "courseId": "calculus-ab",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-10"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "UZCvQmmifEA",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/810-volume-with-disc-method-revolving-around-other-axes.html",
+        "labels": [
+          "Version 1",
+          "8.10"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=UZCvQmmifEA",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-8-11",
+      "title": "Calculus AB/BC – 8.11 Washer Method: Revolving Around the x- or y-Axis",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 8.11.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=dN7mS08yrc8",
+      "courseId": "calculus-ab",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-11"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "dN7mS08yrc8",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/811-volume-with-washer-method-revolving-around-the-x--or-y-axis.html",
+        "labels": [
+          "Version 1",
+          "8.11"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=dN7mS08yrc8",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
+    },
+    {
+      "id": "flippedmath-calculus-ab-v1-8-12",
+      "title": "Calculus AB/BC – 8.12 Volume with Washer Method: Revolving Around Other Axes",
+      "publisher": "The Algebros",
+      "description": "Flipped Math Version 1 lesson for AP Calculus AB Topic 8.12.",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=-syuzvTJV4o",
+      "courseId": "calculus-ab",
+      "unitNumber": 8,
+      "topicIds": [
+        "topic-8-12"
+      ],
+      "visibility": "published",
+      "order": 1,
+      "video": {
+        "provider": "youtube",
+        "videoId": "-syuzvTJV4o",
+        "embedPolicy": "allowed"
+      },
+      "source": {
+        "directory": "https://calculus.flippedmath.com/812-volume-with-washer-method-revolving-around-other-axes.html",
+        "labels": [
+          "Version 1",
+          "8.12"
+        ],
+        "checkedOn": "2026-10-20",
+        "verification": "Version 1 directory/page mapping and public YouTube title, The Algebros creator and offered embed metadata verified. No full lecture/transcript review or universal playback guarantee."
+      },
+      "approval": {
+        "status": "approved",
+        "approvedBy": "owner",
+        "approvedOn": "2026-10-19",
+        "approvedUrl": "https://www.youtube.com/watch?v=-syuzvTJV4o",
+        "reference": "Owner October 19 master prompt Phases 3–4 and resume request: ONE-TIME approval of the initial verified Flipped Math Version 1 Calculus AB videos. See docs/INITIAL_FLIPPED_MATH_APPROVAL.json."
+      }
     }
   ]
 }

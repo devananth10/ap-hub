@@ -62,4 +62,8 @@ Repository: `devananth10/ap-hub`, branch `main`. Each entry below was saved with
 
 | `d4a304ae58e17e8d703e55868875a37e61742450` | 869 | Disc methods, 108 tests, build/typecheck, routes and both full browser sessions; verified GitHub receipt |
 
-These rows record previously verified receipts. PROGRESS.json records subsequent locally validated publication; Git log and the verified remote branch provide later receipts. Do not invent a future commit SHA inside progress files before committing.
+| `cca505aec00bdd9799adcb5496f2206494b34371` | 891 | Complete 81-topic bank, full final audit, 109 tests, build/typecheck, all routes and browser grading; verified GitHub receipt before video research |
+
+| `1236677c97fb5954573623898c1d356b70cd7571` | 891 | Verified Version 1 inventory: 81 lesson pages/unique videos, all AB topics mapped, BC-only lessons and non-video applets excluded; verified GitHub receipt |
+
+These rows record previously verified receipts. PROGRESS.json records locally validated question publication; Git log and the verified remote branch provide later integration receipts. Do not invent a future commit SHA inside progress files before committing.

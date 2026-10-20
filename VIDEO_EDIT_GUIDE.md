@@ -43,3 +43,15 @@ Open `/courses/chemistry/<topicId>` and check its count, selected title, part or
 ## Known directory issue
 
 Both 9.8a and 9.8b link to `Sl5mJT0tvSE`, whose current provider title identifies Topic 8a. PrepAtlas publishes it once as Part A. The separate Part B entry is pending because no distinct URL was verified. Do not invent or search-import a substitute without the owner's approval. Topic 9.8 still has its eleven MCQs and one verified lesson.
+
+## AP Calculus AB — initial Flipped Math Version 1 collection
+
+The October 19 one-time authorization covers only the 81 exact URLs in `docs/INITIAL_FLIPPED_MATH_APPROVAL.json`. Research and topic mappings are in `content-drafts/calculus-ab/research/FLIPPED_MATH_V1_VERIFICATION.json`; all 81 initial videos have matching public The Algebros metadata. There are currently no verified multipart Calculus lessons: do not invent Part A/B labels or add an unnecessary one-item tab. The shared player already supports multiple future explicitly approved lessons.
+
+Find a Calculus topic using `content-drafts/calculus-ab/research/official-topics.json` or the course registry. Always include `courseId: calculus-ab` when finding a record; Chemistry can have similarly named topic IDs. For example Topic 7.3 uses topic ID `topic-7-3` and resource ID `flippedmath-calculus-ab-v1-7-3`; Topic 1.1 retains legacy ID `limits`. Search the central catalog by resource ID.
+
+Correct a mapping in `unitNumber`/`topicIds`, change `order` for sequencing, or set `visibility` to `hidden`/`published` to hide/restore. Keep the stable resource ID. For a replacement URL, the owner’s exact replacement instruction supplies new authorization; verify the new ID/title/creator, update `url`, `video.videoId`, provenance and the dated approval reference/approvedUrl. Otherwise keep it draft. Never rewrite the frozen initial ledger to pretend a future URL belonged to this import. A changed video ID starts a new watched identity; notes, topic completion and unrelated videos remain intact.
+
+For a future approved multipart topic, add each distinct verified video as its own record with explicit integer order and a part label only when verified. Keep one record per actual YouTube ID per course; share topicIds only within a unit. The existing tabs, keyboard navigation and Previous/Next automatically apply. No new player or public editor is needed.
+
+Validate with `node --experimental-strip-types scripts/check-flippedmath-inventory.mjs`, the unit/type/build checks above, and all topic workspace checks. Open `/courses/calculus-ab/<topicId>` to inspect its lesson, original link, manual watched status, optional notes and the matching eleven-question Practice link. The research script never publishes; after this initial import it requires a separate output path and cannot overwrite the frozen initial evidence by default. Do not auto-import future playlists or replacements.
