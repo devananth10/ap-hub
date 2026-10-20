@@ -1,0 +1,3151 @@
+{
+  "checkedOn": "2026-10-20",
+  "version": 1,
+  "source": "https://calculus.flippedmath.com/list-of-lessons.html",
+  "bankCheckpoint": "cca505aec00bdd9799adcb5496f2206494b34371",
+  "authorization": "Owner October 19 master prompt and resume request: one-time initial verified Version 1 Calculus AB collection only. This research script does not publish or authorize future resources.",
+  "officialTopics": 81,
+  "lessonPagesResearched": 81,
+  "uniqueVideoIdsFound": 81,
+  "verifiedVideoIds": [
+    "antLFMkVfXI",
+    "V98KUHeyQWQ",
+    "TXTGDlDr2JM",
+    "qmzzZRr3-5k",
+    "cqOHGzG01lo",
+    "b1jrYrWHVfw",
+    "-j2cEJYD7Zw",
+    "6IwCydD8IMQ",
+    "dS4LwH2P_Nw",
+    "F6ydE70SeeU",
+    "ufcSuOwXirg",
+    "LlMx3crSO-0",
+    "WAp01hs6q2s",
+    "sxbRc50OfwM",
+    "KWVlHJaDxkg",
+    "cHp3foku50g",
+    "565kZuUBNr8",
+    "tfdPnsp9bck",
+    "NZb2Dk7aoh0",
+    "W3xgy5OrwtA",
+    "j7P7dNbNoME",
+    "KzBD9M4ETVs",
+    "8bTwuyLmzQ8",
+    "Qgdm04QqyDs",
+    "qF96Ayj5mgE",
+    "fWSKy8sJ5gs",
+    "1w6t_LkyJFU",
+    "qCkUfBiWeX8",
+    "1dkGdEjXHZc",
+    "OGRiQbphPfU",
+    "uLEl-CMLC-M",
+    "gzC-2D_I5U4",
+    "KRRVYYogYaA",
+    "3NTNoy1bdHI",
+    "wIzh3fBlY-Y",
+    "fnDT0a1RxP0",
+    "tpQM5-r5pgg",
+    "6vCK3l_ob24",
+    "kQOQH0ki6hY",
+    "1Hz2h-AAeM8",
+    "ZIqfI2QVLRI",
+    "AF94eEFHWLI",
+    "REWoDT08SR4",
+    "VquNgESgX74",
+    "CutK-XSnJew",
+    "wk6jNAW7JWU",
+    "Eiv7ofQ_TeU",
+    "eckJYWSgUJ4",
+    "ZzW-kBLtHgA",
+    "pHSNPkbpcfk",
+    "vw5AOn6FDzw",
+    "cgDBFQ9GkZw",
+    "Tc4Ix6NmKZE",
+    "wpbPzBcX42c",
+    "hnSWSHGHs34",
+    "00G3lDAv6e4",
+    "Z_DEopTVoic",
+    "fdJ-NdflShM",
+    "Bl5H1DKCM90",
+    "VOD8ItScG2I",
+    "lgj-y22SmXk",
+    "vbC3jC0ui7A",
+    "Elrcj9Ix40c",
+    "4JY40RKmC9c",
+    "ijA_c48-AxQ",
+    "Ax03UQV9HLM",
+    "UYxf-G2dgPQ",
+    "RBy5HpCSRfY",
+    "whbcQMVsJF0",
+    "jG8rlgtO-HM",
+    "V2GyKVCysHk",
+    "NWmYQ-_0EHc",
+    "jCFtJZ-DcuE",
+    "YuP1GocyG0o",
+    "Jc_vGvs_ksE",
+    "ehb2Ykjr0hU",
+    "eivHCSggrNg",
+    "bbqmCGWtcDM",
+    "UZCvQmmifEA",
+    "dN7mS08yrc8",
+    "-syuzvTJV4o"
+  ],
+  "topicsFullyVerified": 81,
+  "excluded": [
+    {
+      "url": "https://calculus.flippedmath.com/01-summer-packet.html",
+      "label": "0.1 Summer Packet",
+      "topicNumber": "0.1",
+      "reason": "Prerequisite, outside the 81 AB topics"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/02-calculator-skillz.html",
+      "label": "0.2 Calculator Skillz",
+      "topicNumber": "0.2",
+      "reason": "Prerequisite, outside the 81 AB topics"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/611-integration-by-parts.html",
+      "label": "6.11 Integration by Parts",
+      "topicNumber": "6.11",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/612-integrating-using-linear-partial-fractions.html",
+      "label": "6.12 Integrating Using Linear Partial Fractions",
+      "topicNumber": "6.12",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/613-evaluating-improper-integrals.html",
+      "label": "6.13 Evaluating Improper Integrals",
+      "topicNumber": "6.13",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/75-approximating-solutions-using-eulerrsquos-method.html",
+      "label": "7.5 Approximating Solutions Using Euler&rsquo;s Method",
+      "topicNumber": "7.5",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/79-logistic-models-with-differential-equations.html",
+      "label": "7.9 Logistic Models with Differential Equations",
+      "topicNumber": "7.9",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/813-the-arc-length-of-a-smooth-planar-curve-and-distance-traveled.html",
+      "label": "8.13 The Arc Length of a Smooth, Planar Curve and Distance Traveled",
+      "topicNumber": "8.13",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/91-defining-and-differentiating-parametric-equations.html",
+      "label": "9.1 Defining and Differentiating Parametric Equations",
+      "topicNumber": "9.1",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/92-second-derivatives-of-parametric-equations.html",
+      "label": "9.2 Second Derivatives of Parametric Equations",
+      "topicNumber": "9.2",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/93-finding-arc-lengths-of-curves-given-by-parametric-equations.html",
+      "label": "9.3 Finding Arc Lengths of Curves Given by Parametric Equations",
+      "topicNumber": "9.3",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/94-defining-and-differentiating-vector-valued-functions.html",
+      "label": "9.4 Defining and Differentiating Vector-Valued Functions",
+      "topicNumber": "9.4",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/95-integrating-vector-valued-functions.html",
+      "label": "9.5 Integrating Vector-Valued Functions",
+      "topicNumber": "9.5",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/96-solving-motion-problems-using-parametric-and-vector-valued-functions.html",
+      "label": "9.6 Solving Motion Problems using Parametric and Vector-Valued Functions",
+      "topicNumber": "9.6",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/97-defining-polar-coordinates-and-differentiating-in-polar-form.html",
+      "label": "9.7 Defining Polar Coordinates and Differentiating in Polar Form",
+      "topicNumber": "9.7",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/98-find-the-area-of-a-polar-region-or-the-area-bounded-by-a-single-polar-curve.html",
+      "label": "9.8 Find the Area of a Polar Region or the Area Bounded by a Single Polar Curve",
+      "topicNumber": "9.8",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/99-finding-the-area-of-the-region-bounded-by-two-polar-curves.html",
+      "label": "9.9 Finding the Area of the Region bounded by Two Polar Curves",
+      "topicNumber": "9.9",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/101-defining-convergent-and-divergent-infinite-series.html",
+      "label": "10.1 Defining Convergent and Divergent Infinite Series",
+      "topicNumber": "10.1",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/102-working-with-geometric-series.html",
+      "label": "10.2 Working with Geometric Series",
+      "topicNumber": "10.2",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/103-the-nth-term-test-for-divergence.html",
+      "label": "10.3 The nth Term Test for Divergence",
+      "topicNumber": "10.3",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/104-integral-test-for-convergence.html",
+      "label": "10.4 Integral Test for Convergence",
+      "topicNumber": "10.4",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/105-harmonic-series-and-p-series.html",
+      "label": "10.5 Harmonic Series and p-series",
+      "topicNumber": "10.5",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/106-comparison-tests-for-convergence.html",
+      "label": "10.6 Comparison Tests for Convergence",
+      "topicNumber": "10.6",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/107-alternating-series-test-for-convergence.html",
+      "label": "10.7 Alternating Series Test for Convergence",
+      "topicNumber": "10.7",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/108-ratio-test-for-convergence.html",
+      "label": "10.8 Ratio Test for Convergence",
+      "topicNumber": "10.8",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/109-determining-absolute-or-conditional-convergence.html",
+      "label": "10.9 Determining Absolute or Conditional Convergence",
+      "topicNumber": "10.9",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/1010-alternating-series-error-bound.html",
+      "label": "10.10 Alternating Series Error Bound",
+      "topicNumber": "10.10",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/1011-finding-taylor-polynomial-approximations-of-functions.html",
+      "label": "10.11 Finding Taylor Polynomial Approximations of Functions",
+      "topicNumber": "10.11",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/1012-lagrange-error-bound.html",
+      "label": "10.12 Lagrange Error Bound",
+      "topicNumber": "10.12",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/1013-radius-and-interval-of-convergence-of-power-series.html",
+      "label": "10.13 Radius and Interval of Convergence of Power Series",
+      "topicNumber": "10.13",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/1014-finding-taylor-or-maclaurin-series-for-a-function.html",
+      "label": "10.14 Finding Taylor or Maclaurin Series for a Function",
+      "topicNumber": "10.14",
+      "reason": "BC-only topic excluded by official AB inventory"
+    },
+    {
+      "url": "https://calculus.flippedmath.com/1015-representing-functions-as-a-power-series.html",
+      "label": "10.15 Representing Functions as a Power Series",
+      "topicNumber": "10.15",
+      "reason": "BC-only topic excluded by official AB inventory"
+    }
+  ],
+  "duplicateVideoIds": [],
+  "records": [
+    {
+      "topicNumber": "1.1",
+      "topicId": "limits",
+      "unitNumber": 1,
+      "officialTitle": "Introducing Calculus: Can Change Occur at an Instant?",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/11-can-change-occur-at-an-instant.html",
+      "directoryLabel": "1.1 Can Change Occur at an instant",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "antLFMkVfXI",
+          "url": "https://www.youtube.com/watch?v=antLFMkVfXI",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/antLFMkVfXI",
+          "order": 1,
+          "title": "Calculus AB/BC – 1.1 Can Change Occur at an Instant?",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "1.1"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "ada0e66d9686131f3fb3061772fa13454ccc0a1298c59f94d87940117098fbd0",
+      "pageTitle": "1.1 Can Change Occur at an instant - Calculus"
+    },
+    {
+      "topicNumber": "1.2",
+      "topicId": "topic-1-2",
+      "unitNumber": 1,
+      "officialTitle": "Defining Limits and Using Limit Notation",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/12-defining-limits-and-using-limit-notation.html",
+      "directoryLabel": "1.2 Defining Limits and Using Limit Notation",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "V98KUHeyQWQ",
+          "url": "https://www.youtube.com/watch?v=V98KUHeyQWQ",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/V98KUHeyQWQ",
+          "order": 1,
+          "title": "Calculus AB/BC - 1.2 Defining Limits and Using Limit Notation",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "1.2"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "9156c04750d48c13ee816d77ba759225431afabf78057f9c18cf67c7b79d176b",
+      "pageTitle": "1.2 Defining Limits and Using Limit Notation - Calculus"
+    },
+    {
+      "topicNumber": "1.3",
+      "topicId": "topic-1-3",
+      "unitNumber": 1,
+      "officialTitle": "Estimating Limit Values from Graphs",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/13-limit-values-from-graphs.html",
+      "directoryLabel": "1.3 Limit Values from Graphs",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "TXTGDlDr2JM",
+          "url": "https://www.youtube.com/watch?v=TXTGDlDr2JM",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/TXTGDlDr2JM",
+          "order": 1,
+          "title": "Calculus AB/BC – 1.3 Estimating Limit Values from Graphs",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "1.3"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "308e413cd4e4399c5ea3af3f17610a12c58772a17f09cc07c0eb50d508650b72",
+      "pageTitle": "1.3 Limit Values from Graphs - Calculus"
+    },
+    {
+      "topicNumber": "1.4",
+      "topicId": "topic-1-4",
+      "unitNumber": 1,
+      "officialTitle": "Estimating Limit Values from Tables",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/14-limit-values-from-tables.html",
+      "directoryLabel": "1.4 Limit Values from Tables",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "qmzzZRr3-5k",
+          "url": "https://www.youtube.com/watch?v=qmzzZRr3-5k",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/qmzzZRr3-5k",
+          "order": 1,
+          "title": "Calculus AB/BC – 1.4 Estimating Limit Values from Tables",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "1.4"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "ebed94ffb2ed3455f857e752e793152501e3e3ebfe5621fe8f18d6915fad10ac",
+      "pageTitle": "1.4 Limit Values from Tables - Calculus"
+    },
+    {
+      "topicNumber": "1.5",
+      "topicId": "topic-1-5",
+      "unitNumber": 1,
+      "officialTitle": "Determining Limits Using Algebraic Properties of Limits",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/15-determining-limits-using-algebraic-properties.html",
+      "directoryLabel": "1.5 Determining Limits Using Algebraic Properties",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "cqOHGzG01lo",
+          "url": "https://www.youtube.com/watch?v=cqOHGzG01lo",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/cqOHGzG01lo",
+          "order": 1,
+          "title": "Calculus AB/BC – 1.5 Determining Limits Using Algebraic Properties",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "1.5"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "fee597bae09765433acc345e24deaf0ca92c75ef31a9563823869a95e19e7ab5",
+      "pageTitle": "1.5 Determining Limits Using Algebraic Properties - Calculus"
+    },
+    {
+      "topicNumber": "1.6",
+      "topicId": "topic-1-6",
+      "unitNumber": 1,
+      "officialTitle": "Determining Limits Using Algebraic Manipulation",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/16-determining-limits-using-algebraic-manipulation.html",
+      "directoryLabel": "1.6 Determining Limits Using Algebraic Manipulation",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "b1jrYrWHVfw",
+          "url": "https://www.youtube.com/watch?v=b1jrYrWHVfw",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/b1jrYrWHVfw",
+          "order": 1,
+          "title": "Calculus AB/BC – 1.6 Determining Limits Using Algebraic Manipulation",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "1.6"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "5f191b870777667f8fa436e4b29bcc1a03fb0358954a3e8a961a8ab2b9842325",
+      "pageTitle": "1.6 Determining Limits Using Algebraic Manipulation - Calculus"
+    },
+    {
+      "topicNumber": "1.7",
+      "topicId": "topic-1-7",
+      "unitNumber": 1,
+      "officialTitle": "Selecting Procedures for Determining Limits",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/17-selecting-procedures-for-determining-limits.html",
+      "directoryLabel": "1.7 Selecting Procedures for Determining Limits",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "-j2cEJYD7Zw",
+          "url": "https://www.youtube.com/watch?v=-j2cEJYD7Zw",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/-j2cEJYD7Zw",
+          "order": 1,
+          "title": "Calculus AB/BC – 1.7 Selecting Procedures for Determining Limits",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "1.7"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "0d1dee79a1788bd8bb2bb25709ea782d29862aaf2c671e67fdfaf0c5f06aab0e",
+      "pageTitle": "1.7 Selecting Procedures for Determining Limits - Calculus"
+    },
+    {
+      "topicNumber": "1.8",
+      "topicId": "topic-1-8",
+      "unitNumber": 1,
+      "officialTitle": "Determining Limits Using the Squeeze Theorem",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/18-determining-limits-using-the-squeeze-theorem.html",
+      "directoryLabel": "1.8 Determining Limits Using the Squeeze Theorem",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "6IwCydD8IMQ",
+          "url": "https://www.youtube.com/watch?v=6IwCydD8IMQ",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/6IwCydD8IMQ",
+          "order": 1,
+          "title": "Calculus AB/BC – 1.8 Determining Limits Using the Squeeze Theorem",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "1.8"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "c667fa791cdb2891f31e55e13a687735007b0a2c7294443bebcb6f904ac4ee66",
+      "pageTitle": "1.8 Determining Limits Using the Squeeze Theorem - Calculus"
+    },
+    {
+      "topicNumber": "1.9",
+      "topicId": "topic-1-9",
+      "unitNumber": 1,
+      "officialTitle": "Connecting Multiple Representations of Limits",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/19-connecting-multiple-representations-of-limits.html",
+      "directoryLabel": "1.9 Connecting Multiple Representations of Limits",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "dS4LwH2P_Nw",
+          "url": "https://www.youtube.com/watch?v=dS4LwH2P_Nw",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/dS4LwH2P_Nw",
+          "order": 1,
+          "title": "Calculus AB/BC – 1.9 Connecting Multiple Representations of Limits",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "1.9"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "c1abef43c16ccbe7a3c3d24ea1e5a12fea9189b8ff83c9b3adbc17e9ccb1525d",
+      "pageTitle": "1.9 Connecting Multiple Representations of Limits - Calculus"
+    },
+    {
+      "topicNumber": "1.10",
+      "topicId": "topic-1-10",
+      "unitNumber": 1,
+      "officialTitle": "Exploring Types of Discontinuities",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/110-exploring-types-of-discontinuities.html",
+      "directoryLabel": "1.10 Exploring Types of Discontinuities",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "F6ydE70SeeU",
+          "url": "https://www.youtube.com/watch?v=F6ydE70SeeU",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/F6ydE70SeeU",
+          "order": 1,
+          "title": "Calculus AB/BC – 1.10 Exploring Types of Discontinuities",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "1.10"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "dae3dacfbab5a5c8e4126e4092a2e435e9c76094a2fd8794e23d1e8de0753deb",
+      "pageTitle": "1.10 Exploring Types of Discontinuities - Calculus"
+    },
+    {
+      "topicNumber": "1.11",
+      "topicId": "topic-1-11",
+      "unitNumber": 1,
+      "officialTitle": "Defining Continuity at a Point",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/111-defining-continuity-at-a-point.html",
+      "directoryLabel": "1.11 Defining Continuity at a Point",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "ufcSuOwXirg",
+          "url": "https://www.youtube.com/watch?v=ufcSuOwXirg",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/ufcSuOwXirg",
+          "order": 1,
+          "title": "Calculus AB/BC – 1.11 Defining Continuity at a Point",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "1.11"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "ac4aa56aac0470e3c3592eaa4bd7ea9d91074d6f6f0cf7fcb021659c77266d42",
+      "pageTitle": "1.11 Defining Continuity at a Point - Calculus"
+    },
+    {
+      "topicNumber": "1.12",
+      "topicId": "topic-1-12",
+      "unitNumber": 1,
+      "officialTitle": "Confirming Continuity over an Interval",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/112-confirming-continuity-over-an-interval.html",
+      "directoryLabel": "1.12 Confirming Continuity Over an Interval",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "LlMx3crSO-0",
+          "url": "https://www.youtube.com/watch?v=LlMx3crSO-0",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/LlMx3crSO-0",
+          "order": 1,
+          "title": "Calculus AB/BC – 1.12 Confirming Continuity Over an Interval",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "1.12"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "d06fb1ac8b809676690f25b4b5f751566e0a48bc6a4ef4196d5773459afbcc29",
+      "pageTitle": "1.12 Confirming Continuity Over an Interval - Calculus"
+    },
+    {
+      "topicNumber": "1.13",
+      "topicId": "topic-1-13",
+      "unitNumber": 1,
+      "officialTitle": "Removing Discontinuities",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/113-removing-discontinuities.html",
+      "directoryLabel": "1.13 Removing Discontinuities",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "WAp01hs6q2s",
+          "url": "https://www.youtube.com/watch?v=WAp01hs6q2s",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/WAp01hs6q2s",
+          "order": 1,
+          "title": "Calculus AB/BC – 1.13 Removing Discontinuities",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "1.13"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "8d748a8559c7e7ee21f305a002fa47ca1407d36d492e3b9a5e6ee9590c648f24",
+      "pageTitle": "1.13 Removing Discontinuities - Calculus"
+    },
+    {
+      "topicNumber": "1.14",
+      "topicId": "topic-1-14",
+      "unitNumber": 1,
+      "officialTitle": "Connecting Infinite Limits and Vertical Asymptotes",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/114-infinite-limits-and-vertical-asymptotes.html",
+      "directoryLabel": "1.14 Infinite Limits and Vertical Asymptotes",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "sxbRc50OfwM",
+          "url": "https://www.youtube.com/watch?v=sxbRc50OfwM",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/sxbRc50OfwM",
+          "order": 1,
+          "title": "Calculus AB/BC – 1.14 Infinite Limits and Vertical Asymptotes",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "1.14"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "347e8b22a4c9921c190af12c8b8a395441a90a658f881fad0dae0a70738271ce",
+      "pageTitle": "1.14 Infinite Limits and Vertical Asymptotes - Calculus"
+    },
+    {
+      "topicNumber": "1.15",
+      "topicId": "topic-1-15",
+      "unitNumber": 1,
+      "officialTitle": "Connecting Limits at Infinity and Horizontal Asymptotes",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/115-limits-at-infinity-and-horizontal-asymptotes.html",
+      "directoryLabel": "1.15 Limits at Infinity and Horizontal Asymptotes",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "KWVlHJaDxkg",
+          "url": "https://www.youtube.com/watch?v=KWVlHJaDxkg",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/KWVlHJaDxkg",
+          "order": 1,
+          "title": "Calculus AB/BC – 1.15 Limits at Infinity and Horizontal Asymptotes",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "1.15"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "b22e25f287029b1ec1fa3dcab36d77777eba1fc402ccf848acc4c530b13793a5",
+      "pageTitle": "1.15 Limits at Infinity and Horizontal Asymptotes - Calculus"
+    },
+    {
+      "topicNumber": "1.16",
+      "topicId": "topic-1-16",
+      "unitNumber": 1,
+      "officialTitle": "Working with the Intermediate Value Theorem (IVT)",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/116-intermediate-value-theorem.html",
+      "directoryLabel": "1.16 Intermediate Value Theorem",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "cHp3foku50g",
+          "url": "https://www.youtube.com/watch?v=cHp3foku50g",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/cHp3foku50g?si=klHrzmpdsx-4mogu",
+          "order": 1,
+          "title": "Calculus AB/BC – 1.16 Intermediate Value Theorem",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "1.16"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "ea88eb43c6bf8b118d17ef70c2a0e272b97e98afe6944d3540a653b84eb46793",
+      "pageTitle": "1.16 Intermediate Value Theorem - Calculus"
+    },
+    {
+      "topicNumber": "2.1",
+      "topicId": "derivatives",
+      "unitNumber": 2,
+      "officialTitle": "Defining Average and Instantaneous Rates of Change at a Point",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/21-defining-average-and-instantaneous-rate-of-change-at-a-point.html",
+      "directoryLabel": "2.1 Defining Average and Instantaneous Rate of Change at a Point",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "565kZuUBNr8",
+          "url": "https://www.youtube.com/watch?v=565kZuUBNr8",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/565kZuUBNr8",
+          "order": 1,
+          "title": "Calculus AB/BC – 2.1 Defining Average and Instantaneous Rate of Change at a Point",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "2.1"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [
+        {
+          "url": "https://www.geogebra.org/material/iframe/id/M45X5Avk/width/715/height/395/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false",
+          "reason": "Non-video GeoGebra applet, outside video-only authorization; not imported."
+        }
+      ],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "dd87c626fbdb2404da77d0636692391778aedb3819bfdf9c9886a32c194f9665",
+      "pageTitle": "2.1 Defining Average and Instantaneous Rate of Change at a Point - Calculus"
+    },
+    {
+      "topicNumber": "2.2",
+      "topicId": "topic-2-2",
+      "unitNumber": 2,
+      "officialTitle": "Defining the Derivative of a Function and Using Derivative Notation",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/22-defining-the-derivative-of-a-function-and-using-derivative-notation.html",
+      "directoryLabel": "2.2 Defining the Derivative of a Function and Using Derivative Notation",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "tfdPnsp9bck",
+          "url": "https://www.youtube.com/watch?v=tfdPnsp9bck",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/tfdPnsp9bck",
+          "order": 1,
+          "title": "Calculus AB/BC – 2.2 Defining the Derivative of a Function and Using Derivative Notation",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "2.2"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [
+        {
+          "url": "https://www.geogebra.org/material/iframe/id/NktcRXPz/width/740/height/474/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false",
+          "reason": "Non-video GeoGebra applet, outside video-only authorization; not imported."
+        }
+      ],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "2f1fe9444b4555dbbfc6dcd0eda1470972654cd5b0dc101b1b1b2ab2679198e6",
+      "pageTitle": "2.2 Defining the Derivative of a Function and Using Derivative Notation - Calculus"
+    },
+    {
+      "topicNumber": "2.3",
+      "topicId": "topic-2-3",
+      "unitNumber": 2,
+      "officialTitle": "Estimating Derivatives of a Function at a Point",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/23-estimating-derivatives-of-a-function-at-a-point.html",
+      "directoryLabel": "2.3 Estimating Derivatives of a Function at a Point",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "NZb2Dk7aoh0",
+          "url": "https://www.youtube.com/watch?v=NZb2Dk7aoh0",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/NZb2Dk7aoh0",
+          "order": 1,
+          "title": "Calculus AB/BC – 2.3 Estimating Derivatives of a Function at a Point",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "2.3"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "43c1f8c4b2c9863ad6cbd14ba92375406326cf4b2db060e5bca41087051b9a31",
+      "pageTitle": "2.3 Estimating Derivatives of a Function at a Point - Calculus"
+    },
+    {
+      "topicNumber": "2.4",
+      "topicId": "topic-2-4",
+      "unitNumber": 2,
+      "officialTitle": "Connecting Differentiability and Continuity: Determining When Derivatives Do and Do Not Exist",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/24-connecting-differentiability-and-continuity.html",
+      "directoryLabel": "2.4 Connecting Differentiability and Continuity",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "W3xgy5OrwtA",
+          "url": "https://www.youtube.com/watch?v=W3xgy5OrwtA",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/W3xgy5OrwtA",
+          "order": 1,
+          "title": "Calculus AB/BC – 2.4 Connecting Differentiabilty and Continuity",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "2.4"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "7ef3e09080c39d3ed2613ea1f6c08a883a3d4cadd0d113aba897388bcb6a5d99",
+      "pageTitle": "2.4 Connecting Differentiability and Continuity - Calculus"
+    },
+    {
+      "topicNumber": "2.5",
+      "topicId": "topic-2-5",
+      "unitNumber": 2,
+      "officialTitle": "Applying the Power Rule",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/25-applying-the-power-rule.html",
+      "directoryLabel": "2.5 Applying the Power Rule",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "j7P7dNbNoME",
+          "url": "https://www.youtube.com/watch?v=j7P7dNbNoME",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/j7P7dNbNoME",
+          "order": 1,
+          "title": "Calculus AB/BC – 2.5 Applying the Power Rule",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "2.5"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "b7472d284d726aa4f074ef814f75b130d48665e12df733eb2c6a55d558b4cab7",
+      "pageTitle": "2.5 Applying the Power Rule - Calculus"
+    },
+    {
+      "topicNumber": "2.6",
+      "topicId": "topic-2-6",
+      "unitNumber": 2,
+      "officialTitle": "Derivative Rules: Constant, Sum, Difference, and Constant Multiple",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/26-derivative-rules-constant-sum-difference-and-constant-multiple.html",
+      "directoryLabel": "2.6 Derivative Rules: Constant, Sum, Difference, and Constant Multiple",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "KzBD9M4ETVs",
+          "url": "https://www.youtube.com/watch?v=KzBD9M4ETVs",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/KzBD9M4ETVs",
+          "order": 1,
+          "title": "Calculus AB/BC – 2.6 Derivative Rules: Constant, Sum, Difference, and Constant Multiple",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "2.6"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "c3c696ea11fc35d3e27f3a23e1ce04bffc386eb5884df238394717cd3a60bd88",
+      "pageTitle": "2.6 Derivative Rules: Constant, Sum, Difference, and Constant Multiple - Calculus"
+    },
+    {
+      "topicNumber": "2.7",
+      "topicId": "topic-2-7",
+      "unitNumber": 2,
+      "officialTitle": "Derivatives of cos x, sin x, eˣ, and ln x",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/27-derivatives-of-cosx-sinx-ex-and-lnx.html",
+      "directoryLabel": "2.7 Derivatives of cos(x), sin(x), e^x, and ln(x)",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "8bTwuyLmzQ8",
+          "url": "https://www.youtube.com/watch?v=8bTwuyLmzQ8",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/8bTwuyLmzQ8",
+          "order": 1,
+          "title": "Calculus AB/BC – 2.7 Derivatives of cos(x), sin(x), e^x, and ln(x)",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "2.7"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "18e7c26691666dbc589844ab91ca945aec8467f98a0bb4a406566c6432bc6994",
+      "pageTitle": "2.7 Derivatives of cos(x), sin(x), e^x, and ln(x) - Calculus"
+    },
+    {
+      "topicNumber": "2.8",
+      "topicId": "topic-2-8",
+      "unitNumber": 2,
+      "officialTitle": "The Product Rule",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/28-the-product-rule.html",
+      "directoryLabel": "2.8 The Product Rule",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "Qgdm04QqyDs",
+          "url": "https://www.youtube.com/watch?v=Qgdm04QqyDs",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/Qgdm04QqyDs",
+          "order": 1,
+          "title": "Calculus AB/BC – 2.8 The Product Rule",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "2.8"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "55eefcf3afd3d5f87b8a6ca93f9c8a7f91ab97dc6d4af8b4182ca5e887a05008",
+      "pageTitle": "2.8 The Product Rule - Calculus"
+    },
+    {
+      "topicNumber": "2.9",
+      "topicId": "topic-2-9",
+      "unitNumber": 2,
+      "officialTitle": "The Quotient Rule",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/29-the-quotient-rule.html",
+      "directoryLabel": "2.9 The Quotient Rule",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "qF96Ayj5mgE",
+          "url": "https://www.youtube.com/watch?v=qF96Ayj5mgE",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/qF96Ayj5mgE",
+          "order": 1,
+          "title": "Calculus AB/BC – 2.9 The Quotient Rule",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "2.9"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "b5c3abb219029748e9ec873742852facd4e885ccda6eab7698b2ab3e78ac770d",
+      "pageTitle": "2.9 The Quotient Rule - Calculus"
+    },
+    {
+      "topicNumber": "2.10",
+      "topicId": "topic-2-10",
+      "unitNumber": 2,
+      "officialTitle": "Finding the Derivatives of Tangent, Cotangent, Secant, and/or Cosecant Functions",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/210-derivatives-of-tanx-cotx-secx-cscx.html",
+      "directoryLabel": "2.10 Derivatives of tan(x), cot(x), sec(x), csc(x)",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "fWSKy8sJ5gs",
+          "url": "https://www.youtube.com/watch?v=fWSKy8sJ5gs",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/fWSKy8sJ5gs",
+          "order": 1,
+          "title": "Calculus AB/BC – 2.10 Derivatives of tan(x), cot(x), sec(x), csc(x)",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "2.10"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "8c06154990acfd56b7bd903b81e6ecb2fba477a7fbc0b8d153eaeef3a4bd7ee8",
+      "pageTitle": "2.10 Derivatives of tan(x), cot(x), sec(x), csc(x) - Calculus"
+    },
+    {
+      "topicNumber": "3.1",
+      "topicId": "chain-rule",
+      "unitNumber": 3,
+      "officialTitle": "The Chain Rule",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/31-the-chain-rule.html",
+      "directoryLabel": "3.1 The Chain Rule",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "1w6t_LkyJFU",
+          "url": "https://www.youtube.com/watch?v=1w6t_LkyJFU",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/1w6t_LkyJFU",
+          "order": 1,
+          "title": "Calculus AB/BC – 3.1 The Chain Rule",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "3.1"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "55f7b963a085e322d7373440a9e229ecd7928c13ffe290956d7cedd24555d662",
+      "pageTitle": "3.1 The Chain Rule - Calculus"
+    },
+    {
+      "topicNumber": "3.2",
+      "topicId": "topic-3-2",
+      "unitNumber": 3,
+      "officialTitle": "Implicit Differentiation",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/32-implicit-differentiation.html",
+      "directoryLabel": "3.2 Implicit Differentiation",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "qCkUfBiWeX8",
+          "url": "https://www.youtube.com/watch?v=qCkUfBiWeX8",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/qCkUfBiWeX8",
+          "order": 1,
+          "title": "Calculus AB/BC – 3.2 Implicit Differentiation",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "3.2"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "e674964da7cca42c26782cb32afb1464aa6d3fc62eb5a25434d9d4c7cc245373",
+      "pageTitle": "3.2 Implicit Differentiation - Calculus"
+    },
+    {
+      "topicNumber": "3.3",
+      "topicId": "topic-3-3",
+      "unitNumber": 3,
+      "officialTitle": "Differentiating Inverse Functions",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/33-differentiating-inverse-functions.html",
+      "directoryLabel": "3.3 Differentiating Inverse Functions",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "1dkGdEjXHZc",
+          "url": "https://www.youtube.com/watch?v=1dkGdEjXHZc",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/1dkGdEjXHZc",
+          "order": 1,
+          "title": "Calculus AB/BC – 3.3 Differentiating Inverse Functions",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "3.3"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "1bbde7e32eb45473cbebc183b73721d90567839777e27ae6a5110127d516c002",
+      "pageTitle": "3.3 Differentiating Inverse Functions - Calculus"
+    },
+    {
+      "topicNumber": "3.4",
+      "topicId": "topic-3-4",
+      "unitNumber": 3,
+      "officialTitle": "Differentiating Inverse Trigonometric Functions",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/34-differentiating-inverse-trigonometric-functions.html",
+      "directoryLabel": "3.4 Differentiating Inverse Trigonometric Functions",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "OGRiQbphPfU",
+          "url": "https://www.youtube.com/watch?v=OGRiQbphPfU",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/OGRiQbphPfU",
+          "order": 1,
+          "title": "Calculus AB/BC – 3.4 Differentiating Inverse Trigonometric Functions",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "3.4"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "e017d68bf53144781cbd78b63d728d6bdbe7e1ab0484044e1160b39f7f56698b",
+      "pageTitle": "3.4 Differentiating Inverse Trigonometric Functions - Calculus"
+    },
+    {
+      "topicNumber": "3.5",
+      "topicId": "topic-3-5",
+      "unitNumber": 3,
+      "officialTitle": "Selecting Procedures for Calculating Derivatives",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/35-selecting-procedures-for-calculating-derivatives.html",
+      "directoryLabel": "3.5 Selecting Procedures for Calculating Derivatives",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "uLEl-CMLC-M",
+          "url": "https://www.youtube.com/watch?v=uLEl-CMLC-M",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/uLEl-CMLC-M",
+          "order": 1,
+          "title": "Calculus AB/BC – 3.5 Selecting Procedures for Calculating Derivatives",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "3.5"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "326033fd6edd63ab393e8f5727387b994db0c8a6cc92b66e73640214529477a5",
+      "pageTitle": "3.5 Selecting Procedures for Calculating Derivatives - Calculus"
+    },
+    {
+      "topicNumber": "3.6",
+      "topicId": "topic-3-6",
+      "unitNumber": 3,
+      "officialTitle": "Calculating Higher-Order Derivatives",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/36-calculating-higher-order-derivatives.html",
+      "directoryLabel": "3.6 Calculating Higher-Order Derivatives",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "gzC-2D_I5U4",
+          "url": "https://www.youtube.com/watch?v=gzC-2D_I5U4",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/gzC-2D_I5U4",
+          "order": 1,
+          "title": "Calculus AB/BC – 3.6 Calculating Higher-Order Derivatives",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "3.6"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "e23e63541cc47b5663076767727713132b9eda2f02204c23c7e1b49ca7e45312",
+      "pageTitle": "3.6 Calculating Higher-Order Derivatives - Calculus"
+    },
+    {
+      "topicNumber": "4.1",
+      "topicId": "rates",
+      "unitNumber": 4,
+      "officialTitle": "Interpreting the Meaning of the Derivative in Context",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/41-interpreting-the-meaning-of-the-derivative-in-context.html",
+      "directoryLabel": "4.1 Interpreting the Meaning of the Derivative in Context",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "KRRVYYogYaA",
+          "url": "https://www.youtube.com/watch?v=KRRVYYogYaA",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/KRRVYYogYaA",
+          "order": 1,
+          "title": "Calculus AB/BC – 4.1 Interpreting the Meaning of the Derivative in Context",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "4.1"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "1c5f153f58ac03cb70f689c31dd0b50412b18813cab2f8dc5248b876d9367fec",
+      "pageTitle": "4.1 Interpreting the Meaning of the Derivative in Context - Calculus"
+    },
+    {
+      "topicNumber": "4.2",
+      "topicId": "topic-4-2",
+      "unitNumber": 4,
+      "officialTitle": "Straight-Line Motion: Connecting Position, Velocity, and Acceleration",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/42-straight-line-motion-connecting-position-velocity-and-acceleration.html",
+      "directoryLabel": "4.2 Straight-Line Motion: Connecting Position, Velocity, and Acceleration",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "3NTNoy1bdHI",
+          "url": "https://www.youtube.com/watch?v=3NTNoy1bdHI",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/3NTNoy1bdHI",
+          "order": 1,
+          "title": "Calculus AB/BC – 4.2 Straight-Line Motion: Connecting Position, Velocity, and Acceleration",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "4.2"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "e892ce9761836fc0b4fac81b52fe1af9565ec848efa7f9a86328244899ac6645",
+      "pageTitle": "4.2 Straight-Line Motion: Connecting Position, Velocity, and Acceleration - Calculus"
+    },
+    {
+      "topicNumber": "4.3",
+      "topicId": "topic-4-3",
+      "unitNumber": 4,
+      "officialTitle": "Rates of Change in Applied Contexts Other Than Motion",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/43-rates-of-change-in-applied-contexts-other-than-motion.html",
+      "directoryLabel": "4.3 Rates of Change in Applied Contexts Other Than Motion",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "wIzh3fBlY-Y",
+          "url": "https://www.youtube.com/watch?v=wIzh3fBlY-Y",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/wIzh3fBlY-Y",
+          "order": 1,
+          "title": "Calculus AB/BC – 4.3 Rates of Change in Applied Contexts Other Than              Motion",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "4.3"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "3dd1bc73df206ccbe2d90d4d35ea8700a215b5820465b11a8a6de499495a4d28",
+      "pageTitle": "4.3 Rates of Change in Applied Contexts Other Than Motion - Calculus"
+    },
+    {
+      "topicNumber": "4.4",
+      "topicId": "topic-4-4",
+      "unitNumber": 4,
+      "officialTitle": "Introduction to Related Rates",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/44-introduction-to-related-rates.html",
+      "directoryLabel": "4.4 Introduction to Related Rates",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "fnDT0a1RxP0",
+          "url": "https://www.youtube.com/watch?v=fnDT0a1RxP0",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/fnDT0a1RxP0",
+          "order": 1,
+          "title": "Calculus AB/BC – 4.4 Introduction to Related Rates",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "4.4"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "7aedd41e69c7f5e9265dceb0c3ce6fb1435666eb966afb83d5115f8162983b9b",
+      "pageTitle": "4.4 Introduction to Related Rates - Calculus"
+    },
+    {
+      "topicNumber": "4.5",
+      "topicId": "topic-4-5",
+      "unitNumber": 4,
+      "officialTitle": "Solving Related Rates Problems",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/45-solving-related-rates-problems.html",
+      "directoryLabel": "4.5 Solving Related Rates Problems",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "tpQM5-r5pgg",
+          "url": "https://www.youtube.com/watch?v=tpQM5-r5pgg",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/tpQM5-r5pgg",
+          "order": 1,
+          "title": "Calculus AB/BC – 4.5 Solving Related Rates Problems",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "4.5"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "f00f90faf0a82698333e6c78f187c29d0c77bea266a851fc87b33b82f75f167c",
+      "pageTitle": "4.5 Solving Related Rates Problems - Calculus"
+    },
+    {
+      "topicNumber": "4.6",
+      "topicId": "topic-4-6",
+      "unitNumber": 4,
+      "officialTitle": "Approximating Values of a Function Using Local Linearity and Linearization",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/46-approximating-values-of-a-function-using-local-linearity-and-linearization.html",
+      "directoryLabel": "4.6 Approximating Values of a Function Using Local Linearity and Linearization",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "6vCK3l_ob24",
+          "url": "https://www.youtube.com/watch?v=6vCK3l_ob24",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/6vCK3l_ob24",
+          "order": 1,
+          "title": "Calculus AB/BC – 4.6 Approximating Values of a Function Using Local Linearity and Linearization",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "4.6"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "2a0ed5bce8b7964e6123ec0ece114f03bcd6c09ed6c567c0e3229b620f72e0fc",
+      "pageTitle": "4.6 Approximating Values of a Function Using Local Linearity and Linearization - Calculus"
+    },
+    {
+      "topicNumber": "4.7",
+      "topicId": "topic-4-7",
+      "unitNumber": 4,
+      "officialTitle": "Using L’Hospital’s Rule for Determining Limits of Indeterminate Forms",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/47-using-lhopitals-rule-for-determining-limits-of-indeterminate-forms.html",
+      "directoryLabel": "4.7 Using L'Hopital's Rule for Determining Limits of Indeterminate Forms",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "kQOQH0ki6hY",
+          "url": "https://www.youtube.com/watch?v=kQOQH0ki6hY",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/kQOQH0ki6hY",
+          "order": 1,
+          "title": "Calculus AB/BC – 4.7 Using L'Hopital's Rule for Determining Limits of Indeterminate Forms",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "4.7"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "987986c2054fcab6032e826cebef77d53c032aa0bd054f8c267b69ff0ac09b5b",
+      "pageTitle": "4.7 Using L'Hopital's Rule for Determining Limits of Indeterminate Forms - Calculus"
+    },
+    {
+      "topicNumber": "5.1",
+      "topicId": "mean-value",
+      "unitNumber": 5,
+      "officialTitle": "Using the Mean Value Theorem",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/51-using-the-mean-value-theorem.html",
+      "directoryLabel": "5.1 Using the Mean Value Theorem",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "1Hz2h-AAeM8",
+          "url": "https://www.youtube.com/watch?v=1Hz2h-AAeM8",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/1Hz2h-AAeM8",
+          "order": 1,
+          "title": "Calculus AB/BC – 5.1 Using the Mean Value Theorem",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "5.1"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "33d3ff91672932bd6a6071d6dc90eada3a15f0fcc9917f9d869cd7bdd5397c53",
+      "pageTitle": "5.1 Using the Mean Value Theorem - Calculus"
+    },
+    {
+      "topicNumber": "5.2",
+      "topicId": "topic-5-2",
+      "unitNumber": 5,
+      "officialTitle": "Extreme Value Theorem, Global Versus Local Extrema, and Critical Points",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/52-extreme-value-theorem-global-versus-local-extrema-and-critical-points.html",
+      "directoryLabel": "5.2 Extreme Value Theorem, Global Versus Local Extrema, and Critical Points",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "ZIqfI2QVLRI",
+          "url": "https://www.youtube.com/watch?v=ZIqfI2QVLRI",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/ZIqfI2QVLRI",
+          "order": 1,
+          "title": "Calculus AB/BC – 5.2 Extreme Value Theorem, Global Versus Local Extrema, and Critical Points",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "5.2"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "71db5bbec124ffc717af73dfdc177d01ab1a9901b470509dfbccc9a37d4df788",
+      "pageTitle": "5.2 Extreme Value Theorem, Global Versus Local Extrema, and Critical Points - Calculus"
+    },
+    {
+      "topicNumber": "5.3",
+      "topicId": "topic-5-3",
+      "unitNumber": 5,
+      "officialTitle": "Determining Intervals on Which a Function Is Increasing or Decreasing",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/53-determining-intervals-on-which-a-function-is-increasing-or-decreasing.html",
+      "directoryLabel": "5.3 Determining Intervals on Which a Function is Increasing or Decreasing.",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "AF94eEFHWLI",
+          "url": "https://www.youtube.com/watch?v=AF94eEFHWLI",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/AF94eEFHWLI",
+          "order": 1,
+          "title": "Calculus AB/BC – 5.3 Determining Intervals on Which a Function is Increasing or Decreasing",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "5.3"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "6e4fa198b3c8d6db2e3f271b4cc3c245dd6c523d97d5945dd3b543db4b34ee38",
+      "pageTitle": "5.3 Determining Intervals on Which a Function is Increasing or Decreasing. - Calculus"
+    },
+    {
+      "topicNumber": "5.4",
+      "topicId": "topic-5-4",
+      "unitNumber": 5,
+      "officialTitle": "Using the First Derivative Test to Determine Relative (Local) Extrema",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/54-using-the-first-derivative-test-to-determine-relative-local-extrema.html",
+      "directoryLabel": "5.4 Using the First Derivative Test to Determine Relative Local Extrema",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "REWoDT08SR4",
+          "url": "https://www.youtube.com/watch?v=REWoDT08SR4",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/REWoDT08SR4",
+          "order": 1,
+          "title": "Calculus AB/BC – 5.4 Using the First Derivative Test to Determine Relative Local Extrema",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "5.4"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "97dfd1acdb38a527b9f7e9973d2a8828131b050d92cd159490bf7beb6d2ad2b3",
+      "pageTitle": "5.4 Using the First Derivative Test to Determine Relative Local Extrema - Calculus"
+    },
+    {
+      "topicNumber": "5.5",
+      "topicId": "topic-5-5",
+      "unitNumber": 5,
+      "officialTitle": "Using the Candidates Test to Determine Absolute (Global) Extrema",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/55-using-the-candidates-test-to-determine-absolute-global-extrema.html",
+      "directoryLabel": "5.5 Using the Candidates Test to Determine Absolute (Global) Extrema",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "VquNgESgX74",
+          "url": "https://www.youtube.com/watch?v=VquNgESgX74",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/VquNgESgX74",
+          "order": 1,
+          "title": "Calculus AB/BC – 5.5 Using the Candidates Test to Determine Absolute (Global) Extrema",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "5.5"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "54a78c8301e4130bc7290a53f31d5495116e526e080aa122ad08b76d7af1b9e0",
+      "pageTitle": "5.5 Using the Candidates Test to Determine Absolute (Global) Extrema - Calculus"
+    },
+    {
+      "topicNumber": "5.6",
+      "topicId": "topic-5-6",
+      "unitNumber": 5,
+      "officialTitle": "Determining Concavity of Functions over Their Domains",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/56-determining-concavity-of-functions-over-their-domains.html",
+      "directoryLabel": "5.6 Determining Concavity of Functions over Their Domains",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "CutK-XSnJew",
+          "url": "https://www.youtube.com/watch?v=CutK-XSnJew",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/CutK-XSnJew",
+          "order": 1,
+          "title": "Calculus AB/BC – 5.6 Determining Concavity of Functions over Their Domains",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "5.6"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "ce75649395be5dba89f12fae9d21bdea87f7204cd99ff534ebbe0c396809be6a",
+      "pageTitle": "5.6 Determining Concavity of Functions over Their Domains - Calculus"
+    },
+    {
+      "topicNumber": "5.7",
+      "topicId": "topic-5-7",
+      "unitNumber": 5,
+      "officialTitle": "Using the Second Derivative Test to Determine Extrema",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/57-using-the-second-derivative-test-to-determine-extrema.html",
+      "directoryLabel": "5.7 Using the Second Derivative Test to Determine Extrema",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "wk6jNAW7JWU",
+          "url": "https://www.youtube.com/watch?v=wk6jNAW7JWU",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/wk6jNAW7JWU?si=h7UEP6GbAr-_SD_C",
+          "order": 1,
+          "title": "Calculus AB/BC – 5.7 Using the Second Derivative Test to Determine Extrema",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "5.7"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "86d2fe981d0bfa6c0ced41439da4882a73dd3aa5d8c186d5bbf1358e5a5f16ca",
+      "pageTitle": "5.7 Using the Second Derivative Test to Determine Extrema - Calculus"
+    },
+    {
+      "topicNumber": "5.8",
+      "topicId": "topic-5-8",
+      "unitNumber": 5,
+      "officialTitle": "Sketching Graphs of Functions and Their Derivatives",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/58-sketching-graphs-of-functions-and-their-derivatives.html",
+      "directoryLabel": "5.8 Sketching Graphs of Functions and Their Derivatives",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "Eiv7ofQ_TeU",
+          "url": "https://www.youtube.com/watch?v=Eiv7ofQ_TeU",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/Eiv7ofQ_TeU",
+          "order": 1,
+          "title": "Calculus AB/BC – 5.8 Sketching Graphs of Functions and Their Derivatives",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "5.8"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "ce64ca454e7a965d696020a6bbf674caacc530f6743e41a08701268036308491",
+      "pageTitle": "5.8 Sketching Graphs of Functions and Their Derivatives - Calculus"
+    },
+    {
+      "topicNumber": "5.9",
+      "topicId": "topic-5-9",
+      "unitNumber": 5,
+      "officialTitle": "Connecting a Function, Its First Derivative, and Its Second Derivative",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/59-connecting-a-function-its-first-derivative-and-its-second-derivative.html",
+      "directoryLabel": "5.9 Connecting a Function, Its First Derivative, and Its Second Derivative",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "eckJYWSgUJ4",
+          "url": "https://www.youtube.com/watch?v=eckJYWSgUJ4",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/eckJYWSgUJ4",
+          "order": 1,
+          "title": "Calculus AB/BC – 5.9 Connecting a Function, Its First Derivative, and Its Second Derivative",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "5.9"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "c740d4431c1dba68601945b579524ffb0221bf7da40e8d3d21a1d6a701ebb240",
+      "pageTitle": "5.9 Connecting a Function, Its First Derivative, and Its Second Derivative - Calculus"
+    },
+    {
+      "topicNumber": "5.10",
+      "topicId": "topic-5-10",
+      "unitNumber": 5,
+      "officialTitle": "Introduction to Optimization Problems",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/510-introduction-to-optimization-problems.html",
+      "directoryLabel": "5.10 Introduction to Optimization Problems",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "ZzW-kBLtHgA",
+          "url": "https://www.youtube.com/watch?v=ZzW-kBLtHgA",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/ZzW-kBLtHgA",
+          "order": 1,
+          "title": "Calculus AB/BC – 5.10 Introduction to Optimization Problems",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "5.10"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "c306d164f896441c095e692472ab7ffb43b8b25335462b5f673e451986382941",
+      "pageTitle": "5.10 Introduction to Optimization Problems - Calculus"
+    },
+    {
+      "topicNumber": "5.11",
+      "topicId": "topic-5-11",
+      "unitNumber": 5,
+      "officialTitle": "Solving Optimization Problems",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/511-solving-optimization-problems.html",
+      "directoryLabel": "5.11 Solving Optimization Problems",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "pHSNPkbpcfk",
+          "url": "https://www.youtube.com/watch?v=pHSNPkbpcfk",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/pHSNPkbpcfk",
+          "order": 1,
+          "title": "Calculus AB/BC – 5.11 Solving Optimization Problems",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "5.11"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "fb1bdd64a608cecfbe1b6a1035adac6030f6de3fcf800e79223dd1bb0c782dcc",
+      "pageTitle": "5.11 Solving Optimization Problems - Calculus"
+    },
+    {
+      "topicNumber": "5.12",
+      "topicId": "topic-5-12",
+      "unitNumber": 5,
+      "officialTitle": "Exploring Behaviors of Implicit Relations",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/512-exploring-behaviors-of-implicit-relations.html",
+      "directoryLabel": "5.12 Exploring Behaviors of Implicit Relations",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "vw5AOn6FDzw",
+          "url": "https://www.youtube.com/watch?v=vw5AOn6FDzw",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/vw5AOn6FDzw",
+          "order": 1,
+          "title": "Calculus AB/BC – 5.12 Exploring Behaviors of Implicit Relations",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "5.12"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "e224cc8ff235a365a8c2ffec7913e451e91e8c464f2cbe8eace7b16ea19bd1b4",
+      "pageTitle": "5.12 Exploring Behaviors of Implicit Relations - Calculus"
+    },
+    {
+      "topicNumber": "6.1",
+      "topicId": "integrals",
+      "unitNumber": 6,
+      "officialTitle": "Exploring Accumulations of Change",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/61-exploring-accumulation-of-change.html",
+      "directoryLabel": "6.1 Exploring Accumulation of Change",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "cgDBFQ9GkZw",
+          "url": "https://www.youtube.com/watch?v=cgDBFQ9GkZw",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/cgDBFQ9GkZw",
+          "order": 1,
+          "title": "Calculus AB/BC – 6.1 Exploring Accumulation of Change",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "6.1"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "07131eb09cd9941019a5c20c7de2b30ebbd8f848ecb3ac3de63f77aefccd7ef6",
+      "pageTitle": "6.1 Exploring Accumulation of Change - Calculus"
+    },
+    {
+      "topicNumber": "6.2",
+      "topicId": "topic-6-2",
+      "unitNumber": 6,
+      "officialTitle": "Approximating Areas with Riemann Sums",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/62-approximating-areas-with-riemann-sums.html",
+      "directoryLabel": "6.2 Approximating Areas with Riemann Sums",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "Tc4Ix6NmKZE",
+          "url": "https://www.youtube.com/watch?v=Tc4Ix6NmKZE",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/Tc4Ix6NmKZE",
+          "order": 1,
+          "title": "Calculus AB/BC – 6.2 Approximating Areas with Riemann Sums",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "6.2"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "2e8176f5addced64ca3b3bbebc9f1c7866f53f91f868f26f40a1dc23a7a94d4b",
+      "pageTitle": "6.2 Approximating Areas with Riemann Sums - Calculus"
+    },
+    {
+      "topicNumber": "6.3",
+      "topicId": "topic-6-3",
+      "unitNumber": 6,
+      "officialTitle": "Riemann Sums, Summation Notation, and Definite Integral Notation",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/63-riemann-sums-summation-notation-and-definite-integral-notation.html",
+      "directoryLabel": "6.3 Riemann Sums, Summation Notation, and Definite Integral Notation",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "wpbPzBcX42c",
+          "url": "https://www.youtube.com/watch?v=wpbPzBcX42c",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/wpbPzBcX42c?si=gDFZnpr2FPu0xMJ1",
+          "order": 1,
+          "title": "Calculus AB/BC – 6.3 Riemann Sums, Summation Notation, and Definite Integral Notation",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "6.3"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "cd2a1a9016c2bb97fffa4411602fb178391290cab0946b2cb230ebc104ae1c23",
+      "pageTitle": "6.3 Riemann Sums, Summation Notation, and Definite Integral Notation - Calculus"
+    },
+    {
+      "topicNumber": "6.4",
+      "topicId": "topic-6-4",
+      "unitNumber": 6,
+      "officialTitle": "The Fundamental Theorem of Calculus and Accumulation Functions",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/64-the-fundamental-theorem-of-calculus-and-accumulation-functions.html",
+      "directoryLabel": "6.4 The Fundamental Theorem of Calculus and Accumulation Functions",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "hnSWSHGHs34",
+          "url": "https://www.youtube.com/watch?v=hnSWSHGHs34",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/hnSWSHGHs34",
+          "order": 1,
+          "title": "Calculus AB/BC – 6.4 The Fundamental Theorem of Calculus and Accumulation Functions",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "6.4"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "27f8fc711a76680960a9c7f2edb1bc1a604fe42f72e0168573499cfd79da3911",
+      "pageTitle": "6.4 The Fundamental Theorem of Calculus and Accumulation Functions - Calculus"
+    },
+    {
+      "topicNumber": "6.5",
+      "topicId": "topic-6-5",
+      "unitNumber": 6,
+      "officialTitle": "Interpreting the Behavior of Accumulation Functions Involving Area",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/65-interpreting-the-behavior-of-accumulation-functions-involving-area.html",
+      "directoryLabel": "6.5 Interpreting the Behavior of Accumulation Functions Involving Area",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "00G3lDAv6e4",
+          "url": "https://www.youtube.com/watch?v=00G3lDAv6e4",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/00G3lDAv6e4",
+          "order": 1,
+          "title": "Calculus AB/BC – 6.5 Interpreting the Behavior of Accumulation Functions Involving Area",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "6.5"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "6f151a2c06a32e074d7a6095a88e3ea94d1ddeada8927eaca131ffdd185d63c4",
+      "pageTitle": "6.5 Interpreting the Behavior of Accumulation Functions Involving Area - Calculus"
+    },
+    {
+      "topicNumber": "6.6",
+      "topicId": "topic-6-6",
+      "unitNumber": 6,
+      "officialTitle": "Applying Properties of Definite Integrals",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/66-applying-properties-of-definite-integrals.html",
+      "directoryLabel": "6.6 Applying Properties of Definite Integrals",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "Z_DEopTVoic",
+          "url": "https://www.youtube.com/watch?v=Z_DEopTVoic",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/Z_DEopTVoic",
+          "order": 1,
+          "title": "Calculus AB/BC – 6.6 Applying Properties of Definite Integrals",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "6.6"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "2c27dc5acb8bb57011b59fce7f707797a3c1b76bd47fd64ffdf81e55a6dce77a",
+      "pageTitle": "6.6 Applying Properties of Definite Integrals - Calculus"
+    },
+    {
+      "topicNumber": "6.7",
+      "topicId": "topic-6-7",
+      "unitNumber": 6,
+      "officialTitle": "The Fundamental Theorem of Calculus and Definite Integrals",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/67-the-fundamental-theorem-of-calculus-and-definite-integrals.html",
+      "directoryLabel": "6.7 The Fundamental Theorem of Calculus and Definite Integrals",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "fdJ-NdflShM",
+          "url": "https://www.youtube.com/watch?v=fdJ-NdflShM",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/fdJ-NdflShM",
+          "order": 1,
+          "title": "Calculus AB/BC – 6.7 The Fundamental Theorem of Calculus and Definite Integrals",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "6.7"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "f4995ea015a62aa433d27d6500f0b5c910cd32599670a064593d7c74476de857",
+      "pageTitle": "6.7 The Fundamental Theorem of Calculus and Definite Integrals - Calculus"
+    },
+    {
+      "topicNumber": "6.8",
+      "topicId": "topic-6-8",
+      "unitNumber": 6,
+      "officialTitle": "Finding Antiderivatives and Indefinite Integrals: Basic Rules and Notation",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/68-finding-antiderivatives-and-indefinite-integrals-basic-rules-and-notation.html",
+      "directoryLabel": "6.8 Finding Antiderivatives and Indefinite Integrals: Basic Rules and Notation",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "Bl5H1DKCM90",
+          "url": "https://www.youtube.com/watch?v=Bl5H1DKCM90",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/Bl5H1DKCM90",
+          "order": 1,
+          "title": "Calculus AB/BC – 6.8 Finding Antiderivatives and Indefinite Integrals: Basic Rules and Notation",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "6.8"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "639156af248d9f070ad2d7be83bae0668498f85e12add78adf94da42f1dd22ad",
+      "pageTitle": "6.8 Finding Antiderivatives and Indefinite Integrals: Basic Rules and Notation - Calculus"
+    },
+    {
+      "topicNumber": "6.9",
+      "topicId": "topic-6-9",
+      "unitNumber": 6,
+      "officialTitle": "Integrating Using Substitution",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/69-integrating-using-substitution.html",
+      "directoryLabel": "6.9 Integrating Using Substitution",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "VOD8ItScG2I",
+          "url": "https://www.youtube.com/watch?v=VOD8ItScG2I",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/VOD8ItScG2I",
+          "order": 1,
+          "title": "Calculus AB/BC – 6.9 Integrating Using Substitution",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "6.9"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "db94049cdac655b5353ac38d8b89302c87050c575727131d4a02e7deb531474a",
+      "pageTitle": "6.9 Integrating Using Substitution - Calculus"
+    },
+    {
+      "topicNumber": "6.10",
+      "topicId": "topic-6-10",
+      "unitNumber": 6,
+      "officialTitle": "Integrating Functions Using Long Division and Completing the Square",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/610-integrating-functions-using-long-division-and-completing-the-square.html",
+      "directoryLabel": "6.10 Integrating Functions Using Long Division and Completing the Square",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "lgj-y22SmXk",
+          "url": "https://www.youtube.com/watch?v=lgj-y22SmXk",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/lgj-y22SmXk",
+          "order": 1,
+          "title": "Calculus AB/BC – 6.10 Integrating Functions Using Long Division and Completing the Square",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "6.10"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "16e557cec2775a19ab8a478faa8c745ec35ae8d171fdd4374210e51d35b603fc",
+      "pageTitle": "6.10 Integrating Functions Using Long Division and Completing the Square - Calculus"
+    },
+    {
+      "topicNumber": "6.14",
+      "topicId": "topic-6-14",
+      "unitNumber": 6,
+      "officialTitle": "Selecting Techniques for Antidifferentiation",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/614-selecting-techniques-for-antidifferentiation.html",
+      "directoryLabel": "6.14 Selecting Techniques for Antidifferentiation",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "vbC3jC0ui7A",
+          "url": "https://www.youtube.com/watch?v=vbC3jC0ui7A",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/vbC3jC0ui7A",
+          "order": 1,
+          "title": "Calculus AB/BC – 6.14 Selecting Techniques for Antidifferentiation",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "6.14"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "8449c19e3e8383c42b02bda600f794a177f236ce207c590df5ea708759ae2aff",
+      "pageTitle": "6.14 Selecting Techniques for Antidifferentiation - Calculus"
+    },
+    {
+      "topicNumber": "7.1",
+      "topicId": "equations",
+      "unitNumber": 7,
+      "officialTitle": "Modeling Situations with Differential Equations",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/71-modeling-situations-with-differential-equations.html",
+      "directoryLabel": "7.1 Modeling Situations with Differential Equations",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "Elrcj9Ix40c",
+          "url": "https://www.youtube.com/watch?v=Elrcj9Ix40c",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/Elrcj9Ix40c",
+          "order": 1,
+          "title": "Calculus AB/BC – 7.1 Modeling Situations with Differential Equations",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "7.1"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "6c6c8717643dd968e6f19ae9e02e553a8ca132c25ba44663370c96b898fc3c09",
+      "pageTitle": "7.1 Modeling Situations with Differential Equations - Calculus"
+    },
+    {
+      "topicNumber": "7.2",
+      "topicId": "topic-7-2",
+      "unitNumber": 7,
+      "officialTitle": "Verifying Solutions for Differential Equations",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/72-verifying-solutions-for-differential-equations.html",
+      "directoryLabel": "7.2 Verifying Solutions for Differential Equations",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "4JY40RKmC9c",
+          "url": "https://www.youtube.com/watch?v=4JY40RKmC9c",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/4JY40RKmC9c",
+          "order": 1,
+          "title": "Calculus AB/BC – 7.2 Verifying Solutions for Differential Equations",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "7.2"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "8f8b8b2d0d51aa034c2f8a76303a5f55635f74033904b2aa2406a64010f6ddaf",
+      "pageTitle": "7.2 Verifying Solutions for Differential Equations - Calculus"
+    },
+    {
+      "topicNumber": "7.3",
+      "topicId": "topic-7-3",
+      "unitNumber": 7,
+      "officialTitle": "Sketching Slope Fields",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/73-sketching-slope-fields.html",
+      "directoryLabel": "7.3 Sketching Slope Fields",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "ijA_c48-AxQ",
+          "url": "https://www.youtube.com/watch?v=ijA_c48-AxQ",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/ijA_c48-AxQ",
+          "order": 1,
+          "title": "Calculus AB/BC – 7.3 Sketching Slope Fields",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "7.3"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [
+        {
+          "url": "https://www.geogebra.org/classic/xtp34pjy?embed",
+          "reason": "Non-video GeoGebra applet, outside video-only authorization; not imported."
+        }
+      ],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "e748227dbe9eafeb2db3a27a24ea51b8e3e8f07d505a4c0fe670f6a848f44bd9",
+      "pageTitle": "7.3 Sketching Slope Fields - Calculus"
+    },
+    {
+      "topicNumber": "7.4",
+      "topicId": "topic-7-4",
+      "unitNumber": 7,
+      "officialTitle": "Reasoning Using Slope Fields",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/74-reasoning-using-slope-fields.html",
+      "directoryLabel": "7.4 Reasoning Using Slope Fields",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "Ax03UQV9HLM",
+          "url": "https://www.youtube.com/watch?v=Ax03UQV9HLM",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/Ax03UQV9HLM",
+          "order": 1,
+          "title": "Calculus AB/BC – 7.4 Reasoning Using Slope Fields",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "7.4"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [
+        {
+          "url": "https://www.geogebra.org/classic/xtp34pjy?embed",
+          "reason": "Non-video GeoGebra applet, outside video-only authorization; not imported."
+        }
+      ],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "55a34a740159cf3715eafbed8377b6911a79cf85324216833911ecaa58f98350",
+      "pageTitle": "7.4 Reasoning Using Slope Fields - Calculus"
+    },
+    {
+      "topicNumber": "7.6",
+      "topicId": "topic-7-6",
+      "unitNumber": 7,
+      "officialTitle": "Finding General Solutions Using Separation of Variables",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/76-general-solutions-using-separation-of-variables.html",
+      "directoryLabel": "7.6 General Solutions Using Separation of Variables",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "UYxf-G2dgPQ",
+          "url": "https://www.youtube.com/watch?v=UYxf-G2dgPQ",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/UYxf-G2dgPQ",
+          "order": 1,
+          "title": "Calculus AB/BC – 7.6 General Solutions Using Separation of Variables",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "7.6"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "2c1da1d861051acd9b498bcc5df15a18b1312a4f4c9d61613da2f77d545e0f88",
+      "pageTitle": "7.6 General Solutions Using Separation of Variables - Calculus"
+    },
+    {
+      "topicNumber": "7.7",
+      "topicId": "topic-7-7",
+      "unitNumber": 7,
+      "officialTitle": "Finding Particular Solutions Using Initial Conditions and Separation of Variables",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/77-particular-solutions-using-initial-conditions-and-separation-of-variables.html",
+      "directoryLabel": "7.7 Particular Solutions using Initial Conditions and Separation of Variables",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "RBy5HpCSRfY",
+          "url": "https://www.youtube.com/watch?v=RBy5HpCSRfY",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/RBy5HpCSRfY",
+          "order": 1,
+          "title": "Calculus AB/BC – 7.7 Particular Solutions using Initial Conditions and Separation of Variables",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "7.7"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "aa6ee831e78835de797de6552082a01d3fc88bc41a2c8a52b9bfbb2b822053be",
+      "pageTitle": "7.7 Particular Solutions using Initial Conditions and Separation of Variables - Calculus"
+    },
+    {
+      "topicNumber": "7.8",
+      "topicId": "topic-7-8",
+      "unitNumber": 7,
+      "officialTitle": "Exponential Models with Differential Equations",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/78-exponential-models-with-differential-equations.html",
+      "directoryLabel": "7.8 Exponential Models with Differential Equations",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "whbcQMVsJF0",
+          "url": "https://www.youtube.com/watch?v=whbcQMVsJF0",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/whbcQMVsJF0",
+          "order": 1,
+          "title": "Calculus AB/BC –  7.8 Exponential Models with Differential Equations",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "7.8"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "3caa32721040b3bfe079c9f08cdca688bc632d45aca6e729b1adbe17fcf8ada9",
+      "pageTitle": "7.8 Exponential Models with Differential Equations - Calculus"
+    },
+    {
+      "topicNumber": "8.1",
+      "topicId": "average",
+      "unitNumber": 8,
+      "officialTitle": "Finding the Average Value of a Function on an Interval",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/81-average-value-of-a-function-on-an-interval.html",
+      "directoryLabel": "8.1 Average Value of a Function on an Interval",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "jG8rlgtO-HM",
+          "url": "https://www.youtube.com/watch?v=jG8rlgtO-HM",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/jG8rlgtO-HM",
+          "order": 1,
+          "title": "Calculus AB/BC – 8.1 Average Value of a Function on an Interval",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "8.1"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "3299097b23147e507fa210279f1ff5ed4c5ee9b60c9b3f4c8e5b3e7bf184be69",
+      "pageTitle": "8.1 Average Value of a Function on an Interval - Calculus"
+    },
+    {
+      "topicNumber": "8.2",
+      "topicId": "topic-8-2",
+      "unitNumber": 8,
+      "officialTitle": "Connecting Position, Velocity, and Acceleration of Functions Using Integrals",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/82-connecting-position-velocity-and-acceleration-of-functions-using-integrals.html",
+      "directoryLabel": "8.2 Connecting Position, Velocity, and Acceleration of Functions Using Integrals",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "V2GyKVCysHk",
+          "url": "https://www.youtube.com/watch?v=V2GyKVCysHk",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/V2GyKVCysHk",
+          "order": 1,
+          "title": "Calculus AB/BC –  8.2 Connecting Position, Velocity, and Acceleration of Functions Using Integrals",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "8.2"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "1285a9adccbd8e11a75c601f1371e130a658630a7c6f8b86669f6b83461bd23d",
+      "pageTitle": "8.2 Connecting Position, Velocity, and Acceleration of Functions Using Integrals - Calculus"
+    },
+    {
+      "topicNumber": "8.3",
+      "topicId": "topic-8-3",
+      "unitNumber": 8,
+      "officialTitle": "Using Accumulation Functions and Definite Integrals in Applied Contexts",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/83-using-accumulation-functions-and-definite-integrals-in-applied-contexts.html",
+      "directoryLabel": "8.3 Using Accumulation Functions and Definite Integrals in Applied Contexts",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "NWmYQ-_0EHc",
+          "url": "https://www.youtube.com/watch?v=NWmYQ-_0EHc",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/NWmYQ-_0EHc",
+          "order": 1,
+          "title": "Calculus AB/BC – 8.3 Using Accumulation Functions and Definite Integrals in Applied Contexts",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "8.3"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "f9f8f94d58acaa2cd1943242ff62cd5e8612f3453f8a2ec96ea9e415145ac626",
+      "pageTitle": "8.3 Using Accumulation Functions and Definite Integrals in Applied Contexts - Calculus"
+    },
+    {
+      "topicNumber": "8.4",
+      "topicId": "topic-8-4",
+      "unitNumber": 8,
+      "officialTitle": "Finding the Area Between Curves Expressed as Functions of x",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/84-finding-the-area-between-curves-expressed-as-functions-of-x.html",
+      "directoryLabel": "8.4 Finding the Area Between Curves Expressed as Functions of x",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "jCFtJZ-DcuE",
+          "url": "https://www.youtube.com/watch?v=jCFtJZ-DcuE",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/jCFtJZ-DcuE",
+          "order": 1,
+          "title": "Calculus AB/BC – 8.4 Finding the Area Between Curves Expressed as Functions of x",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "8.4"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "8fcda1dcadf37afe480d670f42138cbb4e697a020d2dc3d4c2e95d71bd02576f",
+      "pageTitle": "8.4 Finding the Area Between Curves Expressed as Functions of x - Calculus"
+    },
+    {
+      "topicNumber": "8.5",
+      "topicId": "topic-8-5",
+      "unitNumber": 8,
+      "officialTitle": "Finding the Area Between Curves Expressed as Functions of y",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/85-finding-area-between-curves-expressed-as-functions-of-y.html",
+      "directoryLabel": "8.5 Finding Area Between Curves Expressed as Functions of y",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "YuP1GocyG0o",
+          "url": "https://www.youtube.com/watch?v=YuP1GocyG0o",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/YuP1GocyG0o",
+          "order": 1,
+          "title": "Calculus AB/BC – 8.5 Finding Area Between Curves Expressed as Functions of y",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "8.5"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "93c933e7b7f6877247772baf976ebbacaefa3533801d90561c17a8859cf37bc5",
+      "pageTitle": "8.5 Finding Area Between Curves Expressed as Functions of y - Calculus"
+    },
+    {
+      "topicNumber": "8.6",
+      "topicId": "topic-8-6",
+      "unitNumber": 8,
+      "officialTitle": "Finding the Area Between Curves That Intersect at More Than Two Points",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/86-finding-the-area-between-curves-that-intersect-at-more-than-two-points.html",
+      "directoryLabel": "8.6 Finding the Area Between Curves That Intersect at More Than Two Points",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "Jc_vGvs_ksE",
+          "url": "https://www.youtube.com/watch?v=Jc_vGvs_ksE",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/Jc_vGvs_ksE",
+          "order": 1,
+          "title": "Calculus AB/BC – 8.6 Finding the Area Between Curves That Intersect at More Than Two Points",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "8.6"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "498eaea8de53d3a362879bcd0209a1554939251292a2096c94245855e8192a8a",
+      "pageTitle": "8.6 Finding the Area Between Curves That Intersect at More Than Two Points - Calculus"
+    },
+    {
+      "topicNumber": "8.7",
+      "topicId": "topic-8-7",
+      "unitNumber": 8,
+      "officialTitle": "Volumes with Cross Sections: Squares and Rectangles",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/87-volumes-with-cross-sections-squares-and-rectangles.html",
+      "directoryLabel": "8.7 Volumes with Cross Sections: Squares and Rectangles",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "ehb2Ykjr0hU",
+          "url": "https://www.youtube.com/watch?v=ehb2Ykjr0hU",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/ehb2Ykjr0hU",
+          "order": 1,
+          "title": "Calculus AB/BC – 8.7 Volumes with Cross Sections: Squares and Rectangles",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "8.7"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "ffc17be78c67da6b0ffd2f1985d43998e0d14226c253a9d3d3c8caac99e34931",
+      "pageTitle": "8.7 Volumes with Cross Sections: Squares and Rectangles - Calculus"
+    },
+    {
+      "topicNumber": "8.8",
+      "topicId": "topic-8-8",
+      "unitNumber": 8,
+      "officialTitle": "Volumes with Cross Sections: Triangles and Semicircles",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/88-volumes-with-cross-sections-triangles-and-semicircles.html",
+      "directoryLabel": "8.8 Volumes with Cross Sections: Triangles and Semicircles",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "eivHCSggrNg",
+          "url": "https://www.youtube.com/watch?v=eivHCSggrNg",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/eivHCSggrNg",
+          "order": 1,
+          "title": "Calculus AB/BC – 8.8 Volumes with Cross Sections: Triangles and Semicircles",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "8.8"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "153a038943864f561b6a0795f6efbaa61ca12515f6fd28f5bc8fb891249d7c57",
+      "pageTitle": "8.8 Volumes with Cross Sections: Triangles and Semicircles - Calculus"
+    },
+    {
+      "topicNumber": "8.9",
+      "topicId": "topic-8-9",
+      "unitNumber": 8,
+      "officialTitle": "Volume with Disc Method: Revolving Around the x- or y-Axis",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/89-volume-with-disc-method-revolving-around-the-x--or-y-axis.html",
+      "directoryLabel": "8.9 Volume with Disc Method: Revolving Around the x- or y-Axis",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "bbqmCGWtcDM",
+          "url": "https://www.youtube.com/watch?v=bbqmCGWtcDM",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/bbqmCGWtcDM",
+          "order": 1,
+          "title": "Calculus AB/BC – 8.9 Volume with Disc Method: Revolving Around the x- or y-Axis",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "8.9"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "c430511fa7319cd5adc5c8b5d4d5af3d352c153b10345e91ed233363727cc5cd",
+      "pageTitle": "8.9 Volume with Disc Method: Revolving Around the x- or y-Axis - Calculus"
+    },
+    {
+      "topicNumber": "8.10",
+      "topicId": "topic-8-10",
+      "unitNumber": 8,
+      "officialTitle": "Volume with Disc Method: Revolving Around Other Axes",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/810-volume-with-disc-method-revolving-around-other-axes.html",
+      "directoryLabel": "8.10 Volume with Disc Method: Revolving Around Other Axes",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "UZCvQmmifEA",
+          "url": "https://www.youtube.com/watch?v=UZCvQmmifEA",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/UZCvQmmifEA",
+          "order": 1,
+          "title": "Calculus AB/BC – 8.10 Volume with Disc Method: Revolving Around Other Axes",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "8.10"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "95d0a166f69bf3f7771501dcd6f4fd7b92636aa84ac93da4ee79d6fe81fe55b2",
+      "pageTitle": "8.10 Volume with Disc Method: Revolving Around Other Axes - Calculus"
+    },
+    {
+      "topicNumber": "8.11",
+      "topicId": "topic-8-11",
+      "unitNumber": 8,
+      "officialTitle": "Volume with Washer Method: Revolving Around the x- or y-Axis",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/811-volume-with-washer-method-revolving-around-the-x--or-y-axis.html",
+      "directoryLabel": "8.11 Volume with Washer Method: Revolving Around the x- or y-axis",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "dN7mS08yrc8",
+          "url": "https://www.youtube.com/watch?v=dN7mS08yrc8",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/dN7mS08yrc8",
+          "order": 1,
+          "title": "Calculus AB/BC – 8.11 Washer Method: Revolving Around the x- or y-Axis",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "8.11"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "8f019ae5aa32d56b640a14cc51d93f1207bd1829daf962e61a7b7fc8bb4719d9",
+      "pageTitle": "8.11 Volume with Washer Method: Revolving Around the x- or y-axis - Calculus"
+    },
+    {
+      "topicNumber": "8.12",
+      "topicId": "topic-8-12",
+      "unitNumber": 8,
+      "officialTitle": "Volume with Washer Method: Revolving Around Other Axes",
+      "version": 1,
+      "lessonPage": "https://calculus.flippedmath.com/812-volume-with-washer-method-revolving-around-other-axes.html",
+      "directoryLabel": "8.12 Volume with Washer Method: Revolving Around Other Axes",
+      "checkedOn": "2026-10-20",
+      "videos": [
+        {
+          "videoId": "-syuzvTJV4o",
+          "url": "https://www.youtube.com/watch?v=-syuzvTJV4o",
+          "sourceEmbedUrl": "https://www.youtube.com/embed/-syuzvTJV4o",
+          "order": 1,
+          "title": "Calculus AB/BC – 8.12 Volume with Washer Method: Revolving Around Other Axes",
+          "creator": "The Algebros",
+          "creatorUrl": "https://www.youtube.com/@TheAlgebros",
+          "provider": "YouTube",
+          "embeddableMetadata": true,
+          "creatorMatched": true,
+          "titleTopics": [
+            "8.12"
+          ],
+          "topicMatched": true,
+          "eligible": true
+        }
+      ],
+      "otherProviders": [],
+      "excludedEmbeds": [],
+      "status": "verified",
+      "issues": [],
+      "pageSha256": "f1cb28edfebf4677fcce778e5bad15d8af2adab818b9bf41f47c69d16ee644da",
+      "pageTitle": "8.12 Volume with Washer Method: Revolving Around Other Axes - Calculus"
+    }
+  ],
+  "limitations": [
+    "Creator-directory mapping and public provider metadata verified, not full human viewing or transcript review.",
+    "oEmbed offering an iframe is evidence of embedding support, not a universal playback guarantee; provider/device/region restrictions may still apply.",
+    "No media, worksheets, answer keys or transcripts downloaded or republished."
+  ]
+}
