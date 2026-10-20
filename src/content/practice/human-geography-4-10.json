@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 4,
+  "topicId": "topic-4-10",
+  "questions": [
+    {
+      "id": "hug-4-10-001",
+      "prompt": "Which interpretation correctly connects the travel-time changes with a possible centripetal effect, without treating access as a direct measure of political loyalty?",
+      "options": [
+        "The Core–Periphery gap widens from 120 to 135 minutes.",
+        "The gap narrows from 120 to 15 minutes, which could support integration, although the chart does not directly measure cohesion.",
+        "Both regions have the same proportional improvement because both travel times fall.",
+        "The access data prove that every regional independence demand has ended."
+      ],
+      "correctIndex": 1,
+      "explanation": "The earlier difference is 180−60=120 minutes; later it is 60−45=15. Both improve, with a larger reduction in Periphery. More equitable access to shared institutions can support integration, but travel times alone do not establish trust, identity or the disappearance of political demands. A: The later gap is 15, not 135; the gap narrows. B: This correctly calculates the change and presents cohesion as a possible consequence rather than a measured certainty. C: Core falls 25%, while Periphery falls about 66.7%, so the proportions differ. D: No political-demand or loyalty measure is provided."
+    },
+    {
+      "id": "hug-4-10-002",
+      "prompt": "Each district contains 100 settlements. What does the service-presence map support without overdiagnosing the state as a whole?",
+      "options": [
+        "Every district has 50% coverage because the national average is 50%.",
+        "The South average is 85% and the North average 15%.",
+        "The national average alone establishes equal territorial reach.",
+        "North averages 85% and South 15%, showing uneven institutional reach; one indicator alone does not establish complete state failure."
+      ],
+      "correctIndex": 3,
+      "explanation": "The northern districts average(90+80)/2=85%, and the southern districts(20+10)/2=15%. Equal settlement totals make the overall average 50%, but that aggregate conceals large territorial differences. Uneven institutional reach can complicate cohesion, while a full state-capacity assessment requires more than this single service indicator. A: An overall average is not the value of every district. B: The two regional averages are reversed. C: The contrasting local values directly show uneven reach despite the overall average. D: This correctly calculates the regional contrast and limits the broader capacity claim."
+    },
+    {
+      "id": "hug-4-10-003",
+      "prompt": "A national campaign presents only group M as the authentic nation. Which possible effect is most consistent with the contrasting reported responses?",
+      "options": [
+        "It may strengthen cohesion among M respondents while alienating N respondents, so a unifying effect at one group scale can accompany division at the state scale.",
+        "Both groups show identical changes, establishing universal national unity.",
+        "The later M response means 95% of all state residents necessarily feel included.",
+        "N’s decline proves that no M respondent can feel more included."
+      ],
+      "correctIndex": 0,
+      "explanation": "M’s reported inclusion rises from 90 to 95, while N’s falls from 30 to 10 among separate 100-person samples. An exclusionary national identity can consolidate an in-group while weakening wider inclusion. These aggregate responses are consistent with that possible effect, but do not prove one cause for every person or provide a population-weighted national total. A: This accommodates the opposing responses and distinguishes group cohesion from state-wide inclusion. B: The changes are+5 and−20 rather than identical. C: The 95% figure refers to the M sample, not all residents. D: A decline in one group does not logically prevent an increase in another."
+    },
+    {
+      "id": "hug-4-10-004",
+      "prompt": "The former state has fragmented into A, B and C. Nation R remains across all three, and none is an independent state of R. Which possible consequence of fragmentation is illustrated?",
+      "options": [
+        "Every R settlement has become a separate independent state.",
+        "R has necessarily lost every member’s citizenship in the successor states.",
+        "A nation can remain spread across successor states without gaining an independent state of its own.",
+        "The new borders prove that all R settlements moved after the breakup."
+      ],
+      "correctIndex": 2,
+      "explanation": "State fragmentation can reorganize political authority without giving every national community its own state. In this supplied case R is distributed across three successors and lacks an independent R state. That does not establish individual lack of citizenship, extinction of identity or residential movement. A: Settlement locations are not themselves independent sovereign states. B: Collective lack of an R state does not imply every individual lacks citizenship. C: This follows the explicitly supplied distribution and political status. D: A border change can alter jurisdiction without residents moving."
+    },
+    {
+      "id": "hug-4-10-005",
+      "prompt": "A government retains international recognition but cannot reliably provide basic security and public services across much of its territory. Which distinction is most important?",
+      "options": [
+        "International recognition guarantees effective control of every locality.",
+        "A state with weak service capacity must have no population or territory.",
+        "The recognition itself proves that every regional grievance is resolved.",
+        "Formal state status and effective governing capacity are different dimensions."
+      ],
+      "correctIndex": 3,
+      "explanation": "State weakness or failure concerns the ability to perform core governing functions, not simply whether a state appears on a diplomatic list. Recognition can persist while effective territorial control and service provision deteriorate. Assessments require multiple indicators and context rather than a single universal label from one observation. A: Formal recognition does not guarantee effective local capacity. B: Weak institutions do not make residents or physical territory disappear. C: Recognition does not measure resolution of domestic grievances. D: This separates formal external status from actual institutional performance."
+    },
+    {
+      "id": "hug-4-10-006",
+      "prompt": "A shared constitutional celebration recognizes several languages and invites all regions to participate. What potential centripetal mechanism should be evaluated?",
+      "options": [
+        "The guarantee that all cultural differences immediately disappear.",
+        "A shared civic framework may support belonging without requiring one uniform cultural identity.",
+        "The automatic creation of separate independent countries for all participants.",
+        "The claim that participation in any event proves perfect equality in every policy field."
+      ],
+      "correctIndex": 1,
+      "explanation": "Shared institutions and inclusive civic practices can offer a sense of common belonging while cultural differences remain. Such a mechanism may support cohesion, but its effectiveness depends on participation and experience. The event does not by itself prove uniform identity or equality across all institutions. A: Cohesion need not require disappearance of cultural diversity. B: This identifies a possible inclusive basis for cohesion. C: A joint event does not create independent statehood. D: Participation is not proof of equality in every other domain."
+    },
+    {
+      "id": "hug-4-10-007",
+      "prompt": "A negotiated regional legislature gives residents more local voice, and support for leaving the state subsequently declines. What possible state-scale effect is illustrated?",
+      "options": [
+        "Devolution can sometimes reduce centrifugal pressure by accommodating demands within a shared state.",
+        "Any transfer of local powers necessarily ends the state immediately.",
+        "The legislature is proof that every resident has lost national citizenship.",
+        "A fall in secession support is a direct measure of physical distance from the capital."
+      ],
+      "correctIndex": 0,
+      "explanation": "Accommodating regional demands can sometimes strengthen the larger state’s cohesion even while authority becomes more dispersed. The supplied decline in support for leaving is consistent with reduced centrifugal pressure, though a single sequence does not isolate all causes. Devolution and disintegration are therefore not inevitable synonyms. A: This recognizes a possible integrative outcome of negotiated internal authority. B: The premise retains the shared state rather than reporting immediate breakup. C: Regional institutions do not themselves remove national citizenship. D: A political preference measure is not a distance measure."
+    },
+    {
+      "id": "hug-4-10-008",
+      "prompt": "Regional underrepresentation is followed by lower investment, which then intensifies grievances about exclusion. Which interpretation best captures this pattern?",
+      "options": [
+        "Uneven development must always be unrelated to political institutions.",
+        "The later grievances prove investment could not be a contributing factor.",
+        "Any economic gap mechanically determines the same constitutional outcome.",
+        "Political exclusion and uneven development can reinforce one another, rather than being only a one-way cause and consequence."
+      ],
+      "correctIndex": 3,
+      "explanation": "Political and economic inequalities can form feedbacks: institutional exclusion may affect investment, and resulting disadvantages may deepen grievances. This does not make every gap politically identical or establish a guaranteed breakup. Investigating timing, decisions and alternative explanations is necessary to assess a real feedback mechanism. A: The scenario explicitly supplies a possible institutional-investment link. B: A later grievance can be consistent with economic disadvantage contributing to it. C: Multiple institutions and responses still shape outcomes. D: This captures the supplied mutually reinforcing sequence without a universal prediction."
+    },
+    {
+      "id": "hug-4-10-009",
+      "prompt": "After a nationwide infrastructure program, officials claim that cultural cohesion has increased. Which evidence would most directly test that additional claim?",
+      "options": [
+        "The number of new road signs alone, treated as a complete identity survey.",
+        "Only the construction budget, without asking about residents’ experiences.",
+        "Comparable measures of belonging, trust and participation across regions and groups before and after, with attention to other changes.",
+        "The assumption that every completed road guarantees identical political attitudes."
+      ],
+      "correctIndex": 2,
+      "explanation": "Infrastructure outputs and cultural-political cohesion are different outcomes. Measures of belonging, trust and participation across groups can directly address the latter claim. Before/after comparisons and other changing conditions matter, and no single measure captures every dimension of cohesion. A: Road signs count an output rather than residents’ sense of belonging. B: A budget does not directly measure cultural or political cohesion. C: This measures the claimed outcome while preserving group variation and causal limits. D: Attitudes are not mechanically determined by construction completion."
+    },
+    {
+      "id": "hug-4-10-010",
+      "prompt": "A state has strong shared national identification but large regional gaps in public services. What conclusion is most appropriate?",
+      "options": [
+        "Cohesion proves infrastructure must already be equally distributed.",
+        "Cohesion and equitable development are distinct outcomes; one does not guarantee the other.",
+        "Regional service differences prove no resident can share a national identity.",
+        "Shared identity makes it unnecessary to study regional institutions."
+      ],
+      "correctIndex": 1,
+      "explanation": "Centripetal processes may support cohesion or more equitable development, but these outcomes do not necessarily occur together. A shared identity can coexist with material inequalities. Studying both dimensions helps identify whose experiences are included in a claim about unity and what challenges remain. A: An identity measure does not establish equal material access. B: This preserves the difference between the two supplied outcomes. C: Material inequality does not logically eliminate every form of common belonging. D: Institutions remain relevant to both identity and regional distribution."
+    },
+    {
+      "id": "hug-4-10-011",
+      "prompt": "A diverse state has regional grievances and strong shared institutions. Which forecast is justified from those facts alone?",
+      "options": [
+        "The state must collapse within a specified year.",
+        "Every regional demand must disappear because a shared institution exists.",
+        "Diversity alone identifies the exact new borders of future states.",
+        "Competing centrifugal and centripetal influences require further evidence; these facts alone do not determine one inevitable outcome."
+      ],
+      "correctIndex": 3,
+      "explanation": "Centrifugal and centripetal influences can coexist and change over time. Their effects depend on institutions, resources, mobilization and responses. The supplied facts identify relevant pressures but do not provide enough evidence for a precise forecast of collapse, permanent unity or future borders. A: No timing or sufficient causal model is supplied. B: Shared institutions may matter without removing every grievance. C: Diversity does not specify an inevitable territorial map. D: This recognizes interacting influences and the limits of the available evidence."
+    }
+  ]
+}

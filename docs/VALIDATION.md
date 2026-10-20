@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Unit 4 complete
+
+407 original MCQs across all37 official topics in Units1–4 are published, eleven each. There are148 meaningful stimuli (36.36%) and162 explicit evidence/numerical/geometry checks. Topics4.9–4.10 compare internal authority, independent statehood, varied international mandates, cross-border environmental links, pooled costs, group/state cohesion and uneven institutional reach. Different denominators and possible rather than inevitable consequences are explicit.
+
+All162 unit tests, structural/evidence checks, TypeScript, production build, all68 Geography scopes and standard live-preview routes passed. Both new full Practice sessions scored11/11; all eight stimuli passed390×844 visual inspection. The existing207 question files and140 stimuli at89281d3, plus the entire approved resource catalog, remain semantically unchanged. Student storage code and browser notes/progress were not touched. No human-review or empirical difficulty-calibration claim. Next5.1;31 topics/341 questions remain. The full748-question audit is still pending completion.
+
 ## Human Geography Topics 4.7–4.8
 
 385 original MCQs across35 topics are published, eleven each;140 meaningful stimuli (36.36%) and153 explicit evidence/numerical/geometry checks. Governance separates constitutionally allocated authority from delegation, local office locations, policy differences and regime type. Devolutionary factors distinguish physical access, fiscal grievances, asserted incorporation claims, separatist aims, coercive displacement, political intimidation and conditional outcomes.

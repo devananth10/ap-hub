@@ -1,0 +1,142 @@
+{
+  "topicNumber": "4.10",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "3a7133d01a21f226b0e93060e885dd451b5eb69d3c1f000fce65a572f410c8b1",
+  "scopeReview": "SPS-4.C.1–2: centrifugal pressures can accompany weak/failed capacity, uneven development, stateless nations and ethnic-national movements; centripetal processes can support ethnonational cohesion, shared infrastructure and cultural cohesion. In-group unity can exclude others, and effects depend on scale and context.",
+  "varietyReview": "Service-travel chart, institutional-reach choropleth, group-specific inclusion table and post-fragmentation settlement map. Other cases distinguish state status/capacity, inclusive belonging, integrative devolution, development feedbacks, outcome measures and nondeterministic forecasts. Four meaningful stimuli, all five skills and varied keys.",
+  "repetitionReview": "Consequence-oriented evidence distinguishes the set from4.8 factors. Different denominators are explicit; cohesion is not reduced to road spending or national averages. No exact duplicate stem or numeric-only clone; no empirical difficulty calibration claimed.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.un.org/en/land-natural-resources-conflict/land-conflict.shtml",
+    "https://www.unesco.org/en/legal-affairs/unesco-universal-declaration-cultural-diversity"
+  ],
+  "referenceNote": "Primary framework and institutional inclusion/grievance context checked. All regions, nations, data and scenarios are original hypothetical teaching cases. No real state is classified as failed, no identity assigned from appearance, no new student resources or human review claimed.",
+  "questions": [
+    {
+      "questionId": "hug-4-10-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The gap narrows from 120 to 15 minutes, which could support integration, although the chart does not directly measure cohesion.",
+      "independentReview": "Recomputed earlier gap120, later15, narrowing105; regional reductions15/60=.25 and120/180=2/3. Lower travel time means better access in this supplied case, not proof of attitude change.",
+      "check": {
+        "type": "forces-infrastructure-gap"
+      },
+      "questionSha256": "04c543d869d16059b3f33e9e13633d37ecc9298b8ec00bd6e76e38d772ae52b6",
+      "stimulusSha256": "812fca0427cf4b1d13cc8f4c0d82a9db31396a7532466ba29a7390dc07aaf662"
+    },
+    {
+      "questionId": "hug-4-10-002",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "North averages 85% and South 15%, showing uneven institutional reach; one indicator alone does not establish complete state failure.",
+      "independentReview": "Independently calculated85,15 and pooled200/400=.5 using equal100-settlement denominators. No security, legitimacy or all-service measures are supplied, so one map is not treated as a conclusive failed-state diagnosis.",
+      "check": {
+        "type": "forces-institutional-reach"
+      },
+      "questionSha256": "37d10a98c7f58d0b81aa6bd36864b5c2b369e4759ce0c50b5cd706f214e933ef",
+      "stimulusSha256": "f7218b3a4679ad91c2f273a874bbf0defc8911cb3ef4fedbbd05b8444bc2127b"
+    },
+    {
+      "questionId": "hug-4-10-003",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "It may strengthen cohesion among M respondents while alienating N respondents, so a unifying effect at one group scale can accompany division at the state scale.",
+      "independentReview": "Checked sample-specific changes95−90=5 and10−30=−20; samples100 each are not population weights. The campaign’s exclusionary content is supplied, not inferred from identity alone, and effects are described conditionally.",
+      "check": {
+        "type": "forces-group-inclusion"
+      },
+      "questionSha256": "d13906503063d13401c7c6c639d682f4c3c44f5c26b93049875a8aeb7fef50aa",
+      "stimulusSha256": "515c0f532379edc8f7922abf7f5bb9647a29962cb42aa4f137337199cc6d4d11"
+    },
+    {
+      "questionId": "hug-4-10-004",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "A nation can remain spread across successor states without gaining an independent state of its own.",
+      "independentReview": "Counted two R settlement locations in each successor territory and checked the supplied absence of an R state. Did not infer all stateless nations arise from fragmentation or assign citizenship from dots.",
+      "check": {
+        "type": "forces-fragmented-nation"
+      },
+      "questionSha256": "e66e5c7db3d817c3807940df19796d698ffb6381e11824c26fa3a64611958fb3",
+      "stimulusSha256": "2dc9d52d2dd2ce9ae0443d953d8778a8d352e6d46aa66ff79ca731ac32232efc"
+    },
+    {
+      "questionId": "hug-4-10-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Formal state status and effective governing capacity are different dimensions.",
+      "independentReview": "Checked the distinction between recognized statehood and capacity rather than diagnosing any real country. The case supplies broad functional weakness; a single service shortfall alone would not justify the same conclusion.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "88497ee0672c01e577fb54a371ea2ad5b76a438db0f29ee2701300f9eb7e9b78"
+    },
+    {
+      "questionId": "hug-4-10-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "A shared civic framework may support belonging without requiring one uniform cultural identity.",
+      "independentReview": "Distinguished inclusive civic cohesion from enforced cultural uniformity. The answer is a mechanism to evaluate rather than a claim that an invented celebration has already resolved all regional tensions.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "7913c58fd06499dacdccb7a305d8ef044b5918061a0cf20473eda2a105a06a1f"
+    },
+    {
+      "questionId": "hug-4-10-007",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Devolution can sometimes reduce centrifugal pressure by accommodating demands within a shared state.",
+      "independentReview": "Checked the apparent paradox by separating dispersed authority from state survival. Described the sequence as consistent with a possible effect, not a proven universal causal relationship.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "53aa47c3ca7be68ee33565b395dd5f4a46d97db7845edba8dcbf5326176a71b2"
+    },
+    {
+      "questionId": "hug-4-10-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "Political exclusion and uneven development can reinforce one another, rather than being only a one-way cause and consequence.",
+      "independentReview": "Traced the proposed feedback in its stated order and distinguished a plausible mechanism from a verified general law. A real causal claim would require evidence beyond correlation between regional poverty and political tension.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "99b9a71eb3e7c58ec0a50acc645c7739ef9fd49250f44bd8dd5c3becd873306d"
+    },
+    {
+      "questionId": "hug-4-10-009",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Comparable measures of belonging, trust and participation across regions and groups before and after, with attention to other changes.",
+      "independentReview": "Matched the claim to direct relevant outcomes rather than a proxy output. Suggested comparisons improve evaluation without claiming one survey or time series proves causation or complete cultural unity.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "8e873e69f29c7aa14485593070749acd7487a85be50cb33e4edd1a9d3d96456b"
+    },
+    {
+      "questionId": "hug-4-10-010",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Cohesion and equitable development are distinct outcomes; one does not guarantee the other.",
+      "independentReview": "Checked the curriculum’s possible consequences without converting them into a required bundle. No claim is made that national cohesion automatically entails democracy, equality or absence of exclusion.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d8b790fc274275ff5f9404e5b3d8bcf816fbe7eae9635fcf293ed3f3ff40fd09"
+    },
+    {
+      "questionId": "hug-4-10-011",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Competing centrifugal and centripetal influences require further evidence; these facts alone do not determine one inevitable outcome.",
+      "independentReview": "Independently checked that neither diversity nor one institution is presented as a sufficient cause. The answer calls for evidence rather than a deterministic forecast or a prescriptive political outcome.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "0bbfca2fbe7b015e6392daff0a7220ac68fdc3b52e47eca4534809bdc5990287"
+    }
+  ]
+}

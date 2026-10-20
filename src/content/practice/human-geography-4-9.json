@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 4,
+  "topicId": "topic-4-9",
+  "questions": [
+    {
+      "id": "hug-4-9-001",
+      "prompt": "What common political-geographic feature do the examples in the table illustrate without assuming their powers are identical?",
+      "options": [
+        "Each listed unit is an independent state with the same external status as its country.",
+        "Every example was created in the same year by the same constitutional process.",
+        "Authority can be organized through subnational territorial institutions within existing states.",
+        "All four countries have dissolved into unrelated independent municipal governments."
+      ],
+      "correctIndex": 2,
+      "explanation": "Spain, Belgium, Canada and Nigeria contain territorial institutions below the independent-state level. Their arrangements have different histories and powers; for example, Canadian provinces and territories are not constitutionally interchangeable. The examples illustrate internal organization of authority rather than automatic separate statehood. A: The listed units remain within their countries rather than sharing identical independent external status. B: The table does not establish one date or process for all arrangements. C: This recognizes the common scale while preserving institutional differences. D: The presence of subnational governments does not establish state dissolution."
+    },
+    {
+      "id": "hug-4-9-002",
+      "prompt": "What interpretation of the communication diagram is most consistent with its different uses?",
+      "options": [
+        "Faster communication must always weaken every international organization.",
+        "Online communication automatically creates independent sovereignty for each regional group.",
+        "The network supports only one political process because all users share a technology.",
+        "The same communication infrastructure can facilitate regional mobilization, civic participation and cross-border cooperation."
+      ],
+      "correctIndex": 3,
+      "explanation": "Communication technology can lower coordination barriers for different actors and purposes. Regional campaigns, civic forums and international projects can all use a network without producing the same constitutional outcome. The diagram supplies possibilities and activities, not proof that technology inevitably causes devolution or democracy. A: Cross-border coordination is one of the supplied uses, so inevitable weakening is unsupported. B: Campaign organization is not itself independent statehood. C: A shared channel can carry different political activities. D: This recognizes the multiple scales and purposes depicted."
+    },
+    {
+      "id": "hug-4-9-003",
+      "prompt": "Pollution released upstream in A reaches water users in B and C. Which rationale most directly supports a joint agreement among the three states?",
+      "options": [
+        "The connected river transmits effects across jurisdictions, so shared monitoring and coordinated rules can address a problem one boundary cannot contain.",
+        "The river stops at every political border, so each state has no downstream effects.",
+        "The downstream states must become provinces of A before any cooperation is possible.",
+        "Moving the map’s country labels would change the physical direction of the river."
+      ],
+      "correctIndex": 0,
+      "explanation": "Transboundary environmental systems connect actions in one jurisdiction to outcomes in others. Monitoring and coordination can help address those interdependencies while states remain distinct. The need for cooperation does not automatically require annexation, nor does an agreement guarantee equal benefits or perfect enforcement. A: This connects physical flow with the institutional scale needed to address it. B: Political lines do not sever the supplied downstream connection. C: Independent states can cooperate without becoming provinces of another state. D: Cartographic labels do not determine actual river flow."
+    },
+    {
+      "id": "hug-4-9-004",
+      "prompt": "Using the institutional roles shown, which organization is the closest fit for a project focused on Arctic environmental research and sustainable development rather than collective military defense?",
+      "options": [
+        "NATO",
+        "Arctic Council",
+        "ASEAN",
+        "African Union"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Arctic Council is the table’s Arctic environmental and sustainable-development forum. NATO’s core role is collective defense; ASEAN and the African Union organize cooperation in different regions. This broad role comparison does not imply all organizations have identical membership, legal authority or current operational capacity. A: NATO is the collective-defense example, not the specified Arctic environmental forum. B: This matches both the geographic focus and the environmental-development role. C: ASEAN’s regional focus is Southeast Asia. D: The African Union’s geographic focus is Africa."
+    },
+    {
+      "id": "hug-4-9-005",
+      "prompt": "South Sudan became an independent state in 2011, whereas an autonomy arrangement can leave a region within an existing state. What distinction is most important?",
+      "options": [
+        "Independent statehood changes the external political arrangement; internal autonomy need not create a separate independent state.",
+        "Every autonomous region is already an independent UN member.",
+        "Every state’s dissolution must produce exactly the same number of successor states.",
+        "The two arrangements differ only in the color used on a map."
+      ],
+      "correctIndex": 0,
+      "explanation": "Fragmentation can involve newly independent states or internal redistribution of authority. South Sudan’s independence is an example of separate statehood; an autonomy arrangement can instead retain the larger state’s external political framework. The broad course discussion includes both without making their outcomes identical. A: This distinguishes separate statehood from authority exercised within an existing state. B: Autonomy alone does not establish independent UN membership. C: Successor outcomes depend on the particular history and political process. D: The difference concerns governing status, not map styling."
+    },
+    {
+      "id": "hug-4-9-006",
+      "prompt": "Three states would each spend 60 million on separate monitoring systems. A shared system providing the specified same monitoring coverage costs 120 million in total. Which result illustrates economies of scale?",
+      "options": [
+        "The shared system costs 180 million more than separate systems.",
+        "Each state necessarily loses all domestic policy authority.",
+        "The group saves 60 million overall; with equal cost sharing, each pays 40 million instead of 60.",
+        "The total saving is 120 million because that is the shared system’s cost."
+      ],
+      "correctIndex": 2,
+      "explanation": "Separate systems cost 3×60=180 million. The shared system costs 120, saving 60 overall; equal sharing gives 120/3=40 per state, or 20 less each. The assumed equivalent coverage makes this an illustrative shared-cost benefit, not evidence that every agreement saves money or removes every sovereign decision. A: One hundred eighty is the separate total, not an added shared cost. B: A cost calculation alone does not establish the scope of transferred authority. C: This correctly computes total and per-state savings under the given assumptions. D: Shared cost and saving are different quantities."
+    },
+    {
+      "id": "hug-4-9-007",
+      "prompt": "EU members accept common rules in specified policy fields while participating in shared institutions. Which sovereignty question should a geographer examine?",
+      "options": [
+        "Whether the arrangement necessarily abolishes all member-state institutions.",
+        "Which choices are constrained or pooled in those fields and which remain national, rather than treating sovereignty as all-or-nothing.",
+        "Whether every other international organization has exactly the same authority as the EU.",
+        "Whether joining any agreement automatically creates one identical national identity."
+      ],
+      "correctIndex": 1,
+      "explanation": "Supranational cooperation can place constraints on unilateral national action in specific fields while states retain other responsibilities and participate in joint decisions. The EU is a strong example of shared institutions, but its exact powers must be examined rather than generalized to every organization or every policy domain. A: Common rules in some fields do not establish abolition of all national institutions. B: This investigates the actual distribution and limits of authority. C: Different organizations have different mandates, rules and powers. D: Institutional cooperation does not require identical national identity."
+    },
+    {
+      "id": "hug-4-9-008",
+      "prompt": "NATO members commit to collective defense under an alliance treaty. What distinguishes this from a region devolving authority inside one state?",
+      "options": [
+        "The alliance makes every member a province of a single national capital.",
+        "Devolution and alliance membership are identical changes in domestic district boundaries.",
+        "A defense commitment proves all members have the same culture.",
+        "An alliance coordinates independent states, whereas internal devolution reallocates authority within a state."
+      ],
+      "correctIndex": 3,
+      "explanation": "A military alliance organizes commitments among states; devolution concerns the territorial organization of authority within a state. Both can affect freedom of action, but they operate through different institutional relationships. NATO’s collective-defense commitment does not by itself turn members into provinces or erase their national identities. A: The treaty relationship does not make each member a province. B: Interstate coordination is not the same as domestic regional power allocation. C: A treaty commitment does not establish cultural uniformity. D: This identifies the different scales and relationships."
+    },
+    {
+      "id": "hug-4-9-009",
+      "prompt": "A researcher groups the UN, NATO, EU, ASEAN, Arctic Council and African Union under the course’s broad discussion of supranational cooperation. What qualification is most important?",
+      "options": [
+        "They have different purposes and levels of authority, so common membership in this broad category does not make their decisions equally binding.",
+        "All six share one currency and one legislature.",
+        "Every member must belong to all six organizations.",
+        "Their regional scopes are identical because they all involve cooperation."
+      ],
+      "correctIndex": 0,
+      "explanation": "The AP framework discusses several forms of international organization together, but they differ substantially. Some coordinate governments through intergovernmental procedures, while others exercise stronger shared authority in particular fields. Their mandates, geographic scope and decision rules need separate analysis rather than one universal model. A: This preserves the broad curricular comparison without erasing institutional differences. B: The organizations do not share one common currency and legislature. C: Membership sets and purposes differ. D: Cooperation can occur at global, regional or issue-specific scales."
+    },
+    {
+      "id": "hug-4-9-010",
+      "prompt": "Online tools allow a civic group to communicate widely, but institutions restrict its participation in actual decisions. Which conclusion best avoids technological determinism?",
+      "options": [
+        "Communication access proves that political participation is already equal and unrestricted.",
+        "Online activity is irrelevant to every form of political organization.",
+        "Communication can facilitate participation, but institutional conditions still affect whether voices influence decisions.",
+        "Every additional online user creates a new independent state."
+      ],
+      "correctIndex": 2,
+      "explanation": "Lower communication costs can help groups exchange information and organize. Whether that translates into meaningful political influence also depends on institutions, access, rights and other conditions. Neither the existence of a tool nor a limitation in one setting determines every possible political outcome. A: Wide communication does not itself establish equal institutional influence. B: The tools may aid organization even when influence is constrained. C: This recognizes facilitation without assuming guaranteed democratization. D: User counts do not create sovereignty."
+    },
+    {
+      "id": "hug-4-9-011",
+      "prompt": "A trade agreement limits a member’s tariffs on specified goods but leaves school administration national. What evidence best supports a precise statement about its effect on sovereignty?",
+      "options": [
+        "The assumption that every government decision has moved to the trade body.",
+        "The claim that no policy choice is constrained because schools remain national.",
+        "The size of the organization’s logo compared with national flags.",
+        "The agreement’s actual scope: a specified trade constraint alongside retained national responsibilities."
+      ],
+      "correctIndex": 3,
+      "explanation": "Authority and constraints can be field-specific. The stated tariff commitment limits some unilateral trade choices, while school administration remains national. A precise account identifies that scope rather than treating the agreement as either total loss of sovereignty or no constraint whatsoever. A: One specified commitment does not establish transfer of all decisions. B: Retained authority in one field does not erase the tariff constraint in another. C: Graphic size is not evidence of institutional competence. D: This directly uses the supplied distribution of obligations and retained choices."
+    }
+  ]
+}

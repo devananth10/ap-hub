@@ -1,0 +1,152 @@
+{
+  "topicNumber": "4.9",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "7d08d891199f841a90799a66a3196acf754e4a9d75e5a1d84d75fc854d27d7be",
+  "scopeReview": "SPS-4.B.1–4: internal autonomous/subnational organization and state disintegration, technology facilitating devolution/cooperation/democratization, transboundary challenges, economies of scale and all six named organizations. Broad curricular supranationalism is qualified by actual institutional differences.",
+  "varietyReview": "Factual subnational comparison table within a hypothetical exercise, communication network, three-state river-flow map and institutional-role table. Additional shared-cost calculation independently checked. Applications distinguish independence, interstate versus internal authority, pooled policy and technological/institutional conditions. Four stimuli and all five skills.",
+  "repetitionReview": "Different scales and mechanisms distinguish this set from4.7 governance forms and4.8 pressure factors. Organization roles support one foundational selection; most items analyze authority or evidence. No exact duplicate stem or numeric-only clone; editorial difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.belgium.be/en/about_belgium/government/federale_staat",
+    "https://www.canada.ca/en/intergovernmental-affairs.html",
+    "https://www.lamoncloa.gob.es/lang/en/espana/spanishinstitutions/Paginas/index.aspx?mode=Light",
+    "https://www.nato.int/en/what-is-nato",
+    "https://european-union.europa.eu/principles-countries-history/principles-and-values/aims-and-values_en",
+    "https://asean.org/what-we-do/",
+    "https://au.int/en/overview",
+    "https://arctic-council.org/news/25-years-of-peace-and-cooperation-highlights-from-the-arctic-frontiers-panel/",
+    "https://www.un.org/en/node/122910"
+  ],
+  "referenceNote": "Primary curriculum and institutional mandates checked; no current membership counts, exchange-rate data or forecasts. Numerical costs, river and communication diagrams are original hypothetical examples. Factual classification tables are identified as such. No new approved student resource or human-review claim.",
+  "questions": [
+    {
+      "questionId": "hug-4-9-001",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Authority can be organized through subnational territorial institutions within existing states.",
+      "independentReview": "Checked the course’s four named subnational examples and primary institutional accounts for Spain, Belgium and Canada. Nigeria’s state-level territorial structure matches the official course example. No counts, identical powers or single historical cause are inferred.",
+      "check": {
+        "type": "sovereignty-subnational-examples"
+      },
+      "questionSha256": "c8a266f129fe7d203a292159fe63da5c5f73b956e2707b393dbc640f84332b17",
+      "stimulusSha256": "567a77295347ae802fd30d9ed179b99948f2811d40409cc8caba4946662eb25a"
+    },
+    {
+      "questionId": "hug-4-9-002",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The same communication infrastructure can facilitate regional mobilization, civic participation and cross-border cooperation.",
+      "independentReview": "Traced three separate links from the network to a regional campaign, civic forum and international project. The model does not equate access with success, equal participation or one unavoidable political effect.",
+      "check": {
+        "type": "sovereignty-communication-uses"
+      },
+      "questionSha256": "aace70e82e5f30bb5003b3920558d466867c0142220e0022e28941e4d964270a",
+      "stimulusSha256": "db5910db0da0772c576bf834d9706fb55c6819b81d1d3ea0989ab4340748a8ac"
+    },
+    {
+      "questionId": "hug-4-9-003",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "The connected river transmits effects across jurisdictions, so shared monitoring and coordinated rules can address a problem one boundary cannot contain.",
+      "independentReview": "Verified the river path crosses A→B→C eastward and the release occurs upstream of the intake. Cooperation is presented as a rationale, not proof of any treaty’s effectiveness or a claim that national authority vanishes.",
+      "check": {
+        "type": "sovereignty-transboundary-river"
+      },
+      "questionSha256": "cb161da0eef19178322694468b7cf5c19b59764871a126df67a026aac6a91342",
+      "stimulusSha256": "dd160c1221cc1bdc9cf531cb4a0f8c4069cdcce02b2e292f8dddc1e2240cb4c1"
+    },
+    {
+      "questionId": "hug-4-9-004",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Arctic Council",
+      "independentReview": "Verified all six broad mandates against official institutional accounts and the course list. The Arctic Council’s founding mandate excludes military security; no assertion of uninterrupted present activities, membership totals or uniform binding power is made.",
+      "check": {
+        "type": "sovereignty-organization-roles"
+      },
+      "questionSha256": "8afa509e154cbc7f512ff9633a4268e91bfa6b7d0403af44fe0e1be04248ff76",
+      "stimulusSha256": "c8d838a872390367695415524339087088d05b2b38b854f3fb00308050fce72a"
+    },
+    {
+      "questionId": "hug-4-9-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Independent statehood changes the external political arrangement; internal autonomy need not create a separate independent state.",
+      "independentReview": "Verified South Sudan’s2011 independence/UN admission through UN records. No claim is made that autonomy always prevents fragmentation or that Sudan’s later conflicts are resolved by this historical fact.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b70b72fba101cb00eefbbe2fe6cd7f15e9aa40a17c3f420ecf836778a683ee07"
+    },
+    {
+      "questionId": "hug-4-9-006",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The group saves 60 million overall; with equal cost sharing, each pays 40 million instead of 60.",
+      "independentReview": "Independently computed3×60−120=60 and60−120/3=20. Equal cost shares and same coverage are explicit; coordination costs outside the stated total are not silently assumed away in actual cases.",
+      "check": {
+        "type": "sovereignty-shared-costs",
+        "states": 3,
+        "separateEach": 60,
+        "shared": 120
+      },
+      "questionSha256": "5c4d7714fab5e7620599905328fbbeb9703a3a7b2ecbfe0e6c9bf49ab857ca37"
+    },
+    {
+      "questionId": "hug-4-9-007",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Which choices are constrained or pooled in those fields and which remain national, rather than treating sovereignty as all-or-nothing.",
+      "independentReview": "Checked the EU’s treaty-based institutional context and avoided an all-domains surrender claim. The question asks how to analyze pooled authority, not for legal advice on a particular regulation or withdrawal.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "aad7b134d8c59968470f9c099c2126b34b19474dd05abe6d430fb7b24fb4f684"
+    },
+    {
+      "questionId": "hug-4-9-008",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "An alliance coordinates independent states, whereas internal devolution reallocates authority within a state.",
+      "independentReview": "Verified NATO’s collective-defense purpose and distinguished interstate cooperation from internal delegation. No automatic declaration of war, identical national response or dissolution of member sovereignty is claimed.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b4656f9e3b982a5b95ea7eb73240a66a35ad5527b5405e4dbe7374a9407240ee"
+    },
+    {
+      "questionId": "hug-4-9-009",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "They have different purposes and levels of authority, so common membership in this broad category does not make their decisions equally binding.",
+      "independentReview": "Reconciled the official course’s broad list with institutional variation rather than describing all six as identical supranational legal systems. The item avoids current membership counts and contested claims about uniform enforcement.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "008a0b8eb54c0d1451ee8effe34f2a58c36019aed1196c2f40e73b0e2d5a0aa1"
+    },
+    {
+      "questionId": "hug-4-9-010",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Communication can facilitate participation, but institutional conditions still affect whether voices influence decisions.",
+      "independentReview": "Separated technical communication capacity from actual decision influence, consistent with the supplied restriction. No particular platform, evasion technique or causal estimate is introduced.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "eb7f8877b8eae056efd838f2bd0e87a84b621287da4c615890634bc096c67b3c"
+    },
+    {
+      "questionId": "hug-4-9-011",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "The agreement’s actual scope: a specified trade constraint alongside retained national responsibilities.",
+      "independentReview": "Checked the two distinct policy domains and avoided a false total-surrender/no-effect dichotomy. The agreement is hypothetical and no real tariff or legal procedure is interpreted.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "6616a6e4059d9b0dd6d7f6282c42bce1546276eab3d5fcfa5dd2d38d79ddc804"
+    }
+  ]
+}

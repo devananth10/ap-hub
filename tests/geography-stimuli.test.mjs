@@ -307,3 +307,18 @@ test('devolution-factor checks preserve physical separation, balanced flows, cro
   const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
  }
 });
+
+test('sovereignty checks retain territorial scale, multiple communication uses, downstream connections and distinct mandates',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-4-9.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-4-9.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[0][1]='Independent foreign states'],[1,s=>s.edges.pop()],[2,s=>s.paths[0].points.reverse()],[3,s=>s.rows[4][1]='Collective defense']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+ const r=structuredClone(qa.questions[5]);r.check.shared=180;assert.throws(()=>verifyGeographyQuestion(batch.questions[5],r));
+});
+
+test('centripetal/centrifugal checks retain access gaps, subnational averages, distinct group responses and successor locations',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-4-10.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-4-10.json','utf8'));
+ for(const [i,change] of [[0,s=>s.series[1].values[1]=180],[1,s=>s.regions[2].value=80],[2,s=>s.rows[1][2]='95'],[3,s=>s.dots[4].x=20]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});

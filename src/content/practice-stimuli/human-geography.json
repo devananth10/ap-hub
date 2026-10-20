@@ -7104,5 +7104,500 @@
       }
     ],
     "max": 100
+  },
+  "hug-4-9-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Examples of subnational territorial institutions",
+    "description": "In a hypothetical classroom comparison, factual examples include Spain’s autonomous communities, Belgium’s regions, Canada’s provinces and territories, and Nigeria’s states. Their powers and origins differ.",
+    "caption": "Original comparative representation, not invented country classifications. Belgium also has communities; Canadian provinces and territories differ constitutionally. The list is illustrative rather than an exhaustive institutional map.",
+    "headers": [
+      "State",
+      "Illustrative territorial units"
+    ],
+    "rows": [
+      [
+        "Spain",
+        "Autonomous communities"
+      ],
+      [
+        "Belgium",
+        "Regions"
+      ],
+      [
+        "Canada",
+        "Provinces and territories"
+      ],
+      [
+        "Nigeria",
+        "States"
+      ]
+    ]
+  },
+  "hug-4-9-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "model",
+    "title": "Several uses of a shared communication network",
+    "description": "Hypothetical digital network helps a regional campaign coordinate, a civic forum share information, and an international environmental project collaborate. The figure records uses rather than guaranteed political outcomes.",
+    "caption": "Original schematic; the same infrastructure can serve different scales and aims. No real platform, causal effect size or automatic constitutional change is represented.",
+    "assumptions": "Arrows mean facilitated communication. They do not establish that campaigns succeed or that every resident has equal access.",
+    "nodes": [
+      {
+        "label": "Digital network",
+        "x": 50,
+        "y": 8,
+        "labelPosition": "above"
+      },
+      {
+        "label": "Regional campaign",
+        "x": 15,
+        "y": 43,
+        "labelPosition": "below"
+      },
+      {
+        "label": "Civic forum",
+        "x": 50,
+        "y": 55,
+        "labelPosition": "below"
+      },
+      {
+        "label": "International project",
+        "x": 85,
+        "y": 43,
+        "labelPosition": "below"
+      }
+    ],
+    "edges": [
+      {
+        "from": "Digital network",
+        "to": "Regional campaign",
+        "label": "Coordinate"
+      },
+      {
+        "from": "Digital network",
+        "to": "Civic forum",
+        "label": "Share"
+      },
+      {
+        "from": "Digital network",
+        "to": "International project",
+        "label": "Collaborate"
+      }
+    ]
+  },
+  "hug-4-9-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "flow",
+    "title": "A river connecting three states",
+    "description": "Hypothetical river flows east from A through B to C. A release near the upstream site can affect the downstream intake. The three areas are independent states with separate governing institutions.",
+    "caption": "Original schematic of physical connectivity, not a real pollution event or hydrological concentration model. Arrow direction, not the political colors, indicates flow.",
+    "unitLabel": "Arrow: downstream river flow",
+    "regions": [
+      {
+        "label": "A",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            33,
+            0
+          ],
+          [
+            33,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "B",
+        "polygon": [
+          [
+            33,
+            0
+          ],
+          [
+            66,
+            0
+          ],
+          [
+            66,
+            60
+          ],
+          [
+            33,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "C",
+        "polygon": [
+          [
+            66,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            66,
+            60
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "Release",
+        "x": 12,
+        "y": 45
+      },
+      {
+        "label": "Intake",
+        "x": 88,
+        "y": 45
+      }
+    ],
+    "paths": [
+      {
+        "label": "River flow",
+        "points": [
+          [
+            12,
+            45
+          ],
+          [
+            50,
+            45
+          ],
+          [
+            88,
+            45
+          ]
+        ],
+        "arrow": true
+      }
+    ]
+  },
+  "hug-4-9-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Selected organizations and broad roles",
+    "description": "Hypothetical classroom comparison using factual broad roles of six organizations. The list compares purposes and regions, not identical legal powers or guaranteed outcomes.",
+    "caption": "Original concise representation of institutional mandates. Organizations differ in decision rules and authority; these are not interchangeable world governments.",
+    "headers": [
+      "Organization",
+      "Broad focus"
+    ],
+    "rows": [
+      [
+        "UN",
+        "Global peace and cooperation"
+      ],
+      [
+        "NATO",
+        "Collective defense"
+      ],
+      [
+        "EU",
+        "European integration and internal market"
+      ],
+      [
+        "ASEAN",
+        "Southeast Asian cooperation"
+      ],
+      [
+        "Arctic Council",
+        "Arctic environment and sustainable development"
+      ],
+      [
+        "African Union",
+        "African cooperation, integration and peace"
+      ]
+    ]
+  },
+  "hug-4-10-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Travel time to shared public services",
+    "description": "Hypothetical typical one-way travel time: Core 60 minutes earlier and 45 later; Periphery 180 earlier and 60 later. The service type and travel-time definition are held constant.",
+    "caption": "Original synthetic access measures. They do not directly measure trust, identity, equal service quality or political preferences; possible integration effects need additional evidence.",
+    "unitLabel": "One-way travel time (minutes)",
+    "categories": [
+      "Earlier",
+      "Later"
+    ],
+    "series": [
+      {
+        "label": "Core",
+        "values": [
+          60,
+          45
+        ]
+      },
+      {
+        "label": "Periphery",
+        "values": [
+          180,
+          60
+        ]
+      }
+    ],
+    "max": 200
+  },
+  "hug-4-10-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "Settlements with regular public-service presence",
+    "description": "Hypothetical districts each contain 100 settlements. Regular service presence: NW 90%, NE 80%, SW 20%, SE 10%. The North is NW+NE and South SW+SE; this is one defined service indicator.",
+    "caption": "Original synthetic territorial-coverage data. Settlement counts are equal; resident populations need not be. The map does not identify ethnicity, legal recognition, every service or security control.",
+    "unitLabel": "Settlements with regular service presence (%)",
+    "regions": [
+      {
+        "label": "NW",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            0,
+            30
+          ]
+        ],
+        "value": 90
+      },
+      {
+        "label": "NE",
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            50,
+            30
+          ]
+        ],
+        "value": 80
+      },
+      {
+        "label": "SW",
+        "polygon": [
+          [
+            0,
+            30
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ],
+        "value": 20
+      },
+      {
+        "label": "SE",
+        "polygon": [
+          [
+            50,
+            30
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ],
+        "value": 10
+      }
+    ],
+    "bins": [
+      {
+        "min": 0,
+        "max": 50,
+        "label": "Below 50%"
+      },
+      {
+        "min": 50,
+        "max": 101,
+        "label": "At least 50%"
+      }
+    ]
+  },
+  "hug-4-10-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Reported inclusion in two respondent groups",
+    "description": "Hypothetical surveys sample 100 M respondents and 100 N respondents at each observation. Those reporting that the national campaign includes their group: M 90 earlier/95 later; N 30 earlier/10 later. Samples are not population weights or necessarily the same individuals.",
+    "caption": "Original synthetic responses. The campaign’s content is supplied in the question; the table alone does not establish causation, every person’s response or the groups’ share of the state population.",
+    "headers": [
+      "Group sample",
+      "Earlier included",
+      "Later included"
+    ],
+    "rows": [
+      [
+        "M: 100 respondents",
+        "90",
+        "95"
+      ],
+      [
+        "N: 100 respondents",
+        "30",
+        "10"
+      ]
+    ]
+  },
+  "hug-4-10-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "dot",
+    "title": "R settlements after a hypothetical breakup",
+    "description": "Hypothetical former state X fragments into independent A, B and C. The same self-identified nation R has two marked settlements in each. None of the successors constitutes an independent state of R; the dots do not imply migration.",
+    "caption": "Original schematic of a supplied political outcome. Dots locate settlements rather than equal populations. Not every breakup produces this outcome, and individual citizenship is not mapped.",
+    "unitLabel": "Dots: settlements of nation R; lines: successor-state borders",
+    "regions": [
+      {
+        "label": "A",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            33,
+            0
+          ],
+          [
+            33,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "B",
+        "polygon": [
+          [
+            33,
+            0
+          ],
+          [
+            66,
+            0
+          ],
+          [
+            66,
+            60
+          ],
+          [
+            33,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "C",
+        "polygon": [
+          [
+            66,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            66,
+            60
+          ]
+        ]
+      }
+    ],
+    "dots": [
+      {
+        "x": 16,
+        "y": 10
+      },
+      {
+        "x": 25,
+        "y": 50
+      },
+      {
+        "x": 46,
+        "y": 10
+      },
+      {
+        "x": 55,
+        "y": 50
+      },
+      {
+        "x": 78,
+        "y": 10
+      },
+      {
+        "x": 87,
+        "y": 50
+      }
+    ]
   }
 }
