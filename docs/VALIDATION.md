@@ -1,5 +1,9 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 1.4–1.5
+
+55 questions are published across five topics, with twenty interpreted stimuli (36.36%). The eight additions include spatial arrangement, travel-time accessibility, distance decay, association, aquifer balance, changing land cover, river connections and a possibilist comparison. All 128 unit tests, structural/model checks, TypeScript and production build passed. Browser sessions for each new topic produced 11/11; desktop/mobile diagrams and tables were inspected. A faint flow arrow on a shaded map was corrected with a dark stroke and light outline before saving. All 68 Geography routes, standard smoke checks and Chemistry preservation/publication checks passed. The bank is incomplete; resume at 1.6.
+
 ## Human Geography Topic 1.3
 
 33 MCQs across three topics are now published, with twelve meaningful stimuli (36.36%). Topic 1.3 adds constrained clinic-siting data, a school/floodplain overlay, population-change bars and an observational temperature comparison. Unique eligible-site ranking, point positions, absolute/relative growth and both temperature changes are independently recomputed. All 126 unit tests, TypeScript and the production build passed. All eleven new questions were graded in the browser, producing 11/11; the map, chart and tables were inspected on desktop/mobile. Centered school labels avoid crossing region boundaries. Existing content and storage are preserved. The bank remains incomplete; next topic: 1.4.

@@ -1,0 +1,136 @@
+{
+  "topicNumber": "1.4",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "1c80c1b34ac599c39612dcbf41a264025e42c4b9a955f7734b68626c4a107b52",
+  "scopeReview": "PSO-1.A/PSO-1.A.1: absolute and relative location, space/place, flows, distance decay, time-space compression and pattern. Aggregation item applies spatial-pattern reasoning without changing official topic IDs. All fictional data are original.",
+  "varietyReview": "Eleven distinct applications, four interpreted stimuli; foundation/intermediate/challenging items, four key positions and all five geographic skills. No real-country statistics or copyrighted question sources.",
+  "repetitionReview": "Reviewed against Topics1.1–1.3: this set focuses on spatial concepts rather than repeating map-type identification, data-collection methods or clinic decisions. Bridge, communication, place identity, remittance flows, density/arrangement and aggregation ask different relationships.",
+  "questions": [
+    {
+      "questionId": "hug-1-4-001",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "The businesses form a linear pattern; its cause is not shown.",
+      "independentReview": "Inspected all five coordinates: every y equals 15; sorted x values are20,35,50,65,80. The points span a line rather than a two-dimensional grid or cluster. No causal feature is supplied.",
+      "check": {
+        "type": "linear-arrangement"
+      },
+      "questionSha256": "8625620bcdc1b50d28215e9bf0b6b2a7387681ac2001344b053da9bcff960d45",
+      "stimulusSha256": "69ed070bbdfed75c8e2cb852a027d50f10011eeaebf38652d6c1ec34cf80bd2a"
+    },
+    {
+      "questionId": "hug-1-4-002",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Town Q is more accessible despite its greater straight-line distance.",
+      "independentReview": "Independently compared20<45 km but50>25 minutes. The criterion is explicitly time, so only Q wins; no route speed or actual transport mode is assumed.",
+      "check": {
+        "type": "relative-access"
+      },
+      "questionSha256": "40d751410bcdc48858d770faeabe6126b659692de2a6dfec663a442131a81494",
+      "stimulusSha256": "a7d9a857d4663d90430f46bbae4515343baf5f38c19ac65c9ac0ef9c711caf4d"
+    },
+    {
+      "questionId": "hug-1-4-003",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The share visiting decreases as distance increases, without establishing that distance is the only cause.",
+      "independentReview": "Checked the ordered distances5,15,25 and shares60,30,10. Successive differences in shares are negative; equal denominators prevent size confounding but do not establish exclusive causality.",
+      "check": {
+        "type": "distance-decay"
+      },
+      "questionSha256": "fe7d5bfdd4aedd38fcc66b5a57a7ea0d2362218df74b129a7d0917209ff19404",
+      "stimulusSha256": "90e026817fd476ecebff2fad4651757f89d98424b3fd3efef836530ef207a879"
+    },
+    {
+      "questionId": "hug-1-4-004",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Higher transit-stop counts occur with higher shop counts, but causal direction is undetermined.",
+      "independentReview": "Independently sorted districts by stops0,5,10 and verified shops4,20,40 also increase. The first increment is16 shops and second20, refuting a fixed four-shops-per-stop rule as well as causal certainty.",
+      "check": {
+        "type": "spatial-association"
+      },
+      "questionSha256": "677695a8f9577f5c423810669ab146c60e3d703cf70252c5ef9f6ca891e27ca2",
+      "stimulusSha256": "e081ac0d68136dc6f1a3eb75cf8335d0ddea49ef0110155ab8c045b7f81552fc"
+    },
+    {
+      "questionId": "hug-1-4-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Their relative accessibility improves while their absolute locations remain fixed.",
+      "independentReview": "Held coordinates constant and varied only network travel time. This uniquely supports a change in relative accessibility, not absolute location, identity or physical separation.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "ae4b75e0b48a8e48703bdaae97e8b1739bbebb27d6ffc64e46200ab1df56b24f"
+    },
+    {
+      "questionId": "hug-1-4-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Faster communication reduces the effective separation of distant collaborators.",
+      "independentReview": "Separated communication latency from physical distance, time zones and universal access. The actual stated change is the time required to connect the two endpoints.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "353c1c225a84a4b35c06af39718cfd88eb6d6e30eb8f9b5d2f13fbe3fe044e3c"
+    },
+    {
+      "questionId": "hug-1-4-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "A sense of place shaped by shared meanings and experiences",
+      "independentReview": "Checked the evidence: shared cultural use and resident meaning, not changed dimensions, coordinates or travel data. The correct inference is bounded to described residents, avoiding a universal identity claim.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "62c1e92c7adbc8cf893586be65db169607d4ac562afc37d24a07780276495eed"
+    },
+    {
+      "questionId": "hug-1-4-008",
+      "skill": "Spatial Relationships",
+      "difficulty": "foundational",
+      "correctOption": "A flow linking places through the movement of funds",
+      "independentReview": "Verified the encoded object is money, not migrating people. A directional relation between origin and destination is sufficient for a flow without implying uniform regional conditions.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "71203e8b363e9f67bfef97787071360972f5728d8949c9c3b159ffc8ec442666"
+    },
+    {
+      "questionId": "hug-1-4-009",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "The districts have equal overall school density but different arrangements.",
+      "independentReview": "Independently formed both densities as12/A for identical A, while retaining distinct within-area configurations. No claim of equal local access follows from the aggregate equality.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "09933f2345bb2683a6d3a6efee635f6d3a00d717f82cdf37471465a5db90dcd2"
+    },
+    {
+      "questionId": "hug-1-4-010",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "It shows that cultural and network connections can modify a general distance-related tendency.",
+      "independentReview": "Tested the universal alternatives against the limited single-pair evidence. Cultural affinity is explicitly supplied, so the warranted conclusion is a conditional limitation, not a denial of all distance effects.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "1197e2b5b565d70f9547e4ec20547afe2af56cf40c2626fa325b2aa3abfabf59"
+    },
+    {
+      "questionId": "hug-1-4-011",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Whether adjacent neighborhoods exchange more visits than nonadjacent neighborhoods",
+      "independentReview": "Identified exactly which variables survive aggregation: province totals remain, neighborhood identities and pair links do not. Only the adjacency question requires information explicitly discarded.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "439e21849abf882453fd75141f0c317c88d0abc5eed2b66b13ef7b094ba34c66"
+    }
+  ]
+}

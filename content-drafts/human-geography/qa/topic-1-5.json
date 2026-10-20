@@ -1,0 +1,136 @@
+{
+  "topicNumber": "1.5",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "f67ee92c0d8cf8e616ac3fbf2618e945c0a89ec24605b3ea3de6bc6dfc312696",
+  "scopeReview": "PSO-1.B.1–2: sustainability, resources, land use and the evolution from environmental determinism to possibilism. Original hypothetical examples avoid ranking real societies or equating climate with human capability.",
+  "varietyReview": "Resource balance, cover-change chart, upstream/downstream map, controlled comparison and seven distinct applied concepts. Four stimuli, all key positions and varied difficulty; no externally sourced statistics or images.",
+  "repetitionReview": "Distinct from prior spatial-data topics: focuses on environmental constraints, choices, modification, resource valuation and sustainability. Similar-setting comparison and the aridity critique distinguish evidence interpretation from theory application rather than repeating the same stem.",
+  "questions": [
+    {
+      "questionId": "hug-1-5-001",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "The proposal draws down storage by 40 million m³ per year under the stated assumptions.",
+      "independentReview": "Recomputed the mass balance independently: recharge100 minus current90=+10; recharge100 minus proposed140=−40 million m³/year. Initial storage is absent, excluding an exact depletion date.",
+      "check": {
+        "type": "aquifer-balance"
+      },
+      "questionSha256": "2336b0e461450e82f42ffc83dada0fab3ea7094a6989218d44e110187a507962",
+      "stimulusSha256": "bb5d7951fa31aaf56472c49f51e89a0ce6982ac835cdc122cd513075c8732bab"
+    },
+    {
+      "questionId": "hug-1-5-002",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Forest area declined while cropland and built-up area increased.",
+      "independentReview": "Independently summed both inventories to100 km² and differences−30,+10,+20. Conservation of total area holds, but aggregate margins cannot identify each source-to-destination land conversion.",
+      "check": {
+        "type": "land-cover-balance"
+      },
+      "questionSha256": "c044b029a8aa042688286518c5dcfd837a2c4d44aaf76140ff82930dd3385132",
+      "stimulusSha256": "848a6ce30d7302773221e2cb7df9029e36d38d86b8be09f95a19f9877bc0f779"
+    },
+    {
+      "questionId": "hug-1-5-003",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "Runoff generated in the heavily paved western area may travel toward the eastern area.",
+      "independentReview": "Checked arrow endpointx90>startx10, west80% vs east20%, and upstream-to-downstream connection. The supplied infiltration premise supports a hypothesis, not a guaranteed flood or quantified discharge.",
+      "check": {
+        "type": "upstream-land-use"
+      },
+      "questionSha256": "b9f1ad15344b099493621c6e36ef4f98ac69831eeba54e4a1f2b8388fb100670",
+      "stimulusSha256": "b9df6a98ecba610959ac8b94f3341530b4c520e4374d0d6773c3559642ac61f2"
+    },
+    {
+      "questionId": "hug-1-5-004",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Similar physical conditions can coexist with different land uses when access to technology differs.",
+      "independentReview": "Compared the controlled scenario fields: rainfall500 mm and similar soils/terrain, but irrigation accessYes/No and cropsvegetables/drought-tolerant grains. This is a counterexample to a unique climate-determined practice, not a proof of unlimited technological control.",
+      "check": {
+        "type": "possibilism-comparison"
+      },
+      "questionSha256": "3641747a6d96fa0664542a4d65b98ae5cb7d05b9e911cb73c744a8476d02d67a",
+      "stimulusSha256": "86350a2ac2ac60ff6ea10ab9fe43c58b186be2abc459ba5161b1b23fb02a88fa"
+    },
+    {
+      "questionId": "hug-1-5-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Water constraints matter, but technology, institutions and connections can produce different responses.",
+      "independentReview": "Assessed the universal wordmust against alternative feasible responses; correct option retains constraint plus agency, unlike the three absolute denials or equivalences. No real group is stereotyped.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d04459dd91ad27a8a6f8ffefcd6b3b8308a4e8ce3e4b83adf2fa8502c4ee8365"
+    },
+    {
+      "questionId": "hug-1-5-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Technology expands some possibilities, while energy costs and waste-management requirements remain relevant.",
+      "independentReview": "Checked the distinction between expanded feasibility and eliminated constraints. The question assumes a functioning system, not universal affordability, zero waste or a climate-fixed policy.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "7fb602e0f6dad2f74ba1cc122646a1f953cdf5a17395dc74247b4af8ede2bcd3"
+    },
+    {
+      "questionId": "hug-1-5-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Human uses and technology help determine which environmental materials are treated as resources.",
+      "independentReview": "Independently separated physical stock from social/economic valuation. Only usefulness changes in the scenario; quantity creation and impact-free extraction are unsupported.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "41ba234a6ad751e7c8a428ca33d933e38d7ff1b9884828c1b8c807b115a1069f"
+    },
+    {
+      "questionId": "hug-1-5-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "Long-term maintenance, ecological outcomes and effects on residents’ housing and livelihoods",
+      "independentReview": "Checked that the answer expands the specified incomplete assessment without prescribing an unsupported policy. Housing/livelihood consequences matter because relocation is explicit, not assumed.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "1f7a037dc278702b357b7be9513ad00ceef25e1d0f5e763df192fb9fd5dc59d4"
+    },
+    {
+      "questionId": "hug-1-5-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Land cover describes the surface, while land use describes its human purpose.",
+      "independentReview": "Tested two possible uses with identical vegetation: sports and grazing. The counterexample establishes why cover alone is insufficient to uniquely classify purpose.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "ec183c59bb128b694e0e4d75356c185054c22cfcff0acd9e18f8d9ca3cf0e5fb"
+    },
+    {
+      "questionId": "hug-1-5-010",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The environmental connection can transmit effects beyond the administrative area where the activity occurs.",
+      "independentReview": "Followed the explicit river pathway across boundaries. The correct inference concerns relevant extent, not an unmeasured amount of farm damage or a claim that every discharge reaches every farm.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "c17d061d6afbc02f2d54479eca249adf3c882fe224c0f0b450c4cec1c9522f65"
+    },
+    {
+      "questionId": "hug-1-5-011",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "People respond to a physical constraint while also modifying the landscape.",
+      "independentReview": "Checked both directions of influence: slope motivates adaptation; construction changes surface form. Neither physical inevitability nor independence is supported.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "80507d0dbbf551226e21749b084eaa260393d85ffa0a9a7dae0aac396d453aa7"
+    }
+  ]
+}

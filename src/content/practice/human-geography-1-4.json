@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 1,
+  "topicId": "topic-1-4",
+  "questions": [
+    {
+      "id": "hug-1-4-001",
+      "prompt": "Each dot marks one business in a hypothetical study area. Which description distinguishes the arrangement of the businesses from a claim about why that arrangement developed?",
+      "options": [
+        "The businesses form an evenly spaced grid across the whole area.",
+        "The businesses are randomly scattered throughout the area.",
+        "The businesses form a compact circular cluster around a central point.",
+        "The businesses form a linear pattern; its cause is not shown."
+      ],
+      "correctIndex": 3,
+      "explanation": "The five equal-valued dots occupy one west–east row. This is evidence of a linear spatial arrangement, but no transport route, river or zoning layer is supplied to explain that arrangement. Describing a pattern and establishing its cause are separate tasks. A: A grid requires rows and columns extending through two dimensions; only one row is present. B: The aligned positions contradict a description of scattering throughout the study area. C: The points extend along a line rather than surrounding a common center in a compact cluster. D: This identifies the mapped arrangement without inventing an unshown road or other cause."
+    },
+    {
+      "id": "hug-1-4-002",
+      "prompt": "A worker compares two towns using the table. If relative accessibility to the same employment center is measured by the listed travel time, which comparison is correct?",
+      "options": [
+        "Town P is more accessible because its straight-line distance is shorter.",
+        "Town Q is more accessible despite its greater straight-line distance.",
+        "The towns have identical accessibility because they share one destination.",
+        "Town Q’s shorter travel time means its straight-line distance must be smaller."
+      ],
+      "correctIndex": 1,
+      "explanation": "Accessibility depends on the relevant connection, not only on geometric distance. P is 20 km away but takes 50 minutes; Q is 45 km away but takes 25 minutes. Under the explicitly stated time measure, Q has better access. Different transport connections can make relative accessibility diverge from straight-line proximity. A: P is geometrically nearer, but the question defines the relevant accessibility measure as travel time. B: Q has the lower listed journey time even though its straight-line distance is greater. C: A shared destination does not make the costs or times of reaching it identical. D: Travel time and straight-line distance are different measurements; one does not determine the ordering of the other."
+    },
+    {
+      "id": "hug-1-4-003",
+      "prompt": "The chart records visits to one recreation center from three equal-sized groups of residents at different distance bands. Which interpretation is most consistent with distance decay?",
+      "options": [
+        "The share visiting decreases as distance increases, without establishing that distance is the only cause.",
+        "The farthest group supplies the largest share of visitors because it spans the greatest distance.",
+        "The pattern shows that no resident beyond the nearest band visits the center.",
+        "The differences must result entirely from unequal numbers of residents in the three groups."
+      ],
+      "correctIndex": 0,
+      "explanation": "Distance decay describes a tendency for interaction to diminish with increasing separation. The observed visiting shares fall from 60% to 30% to 10% across successively farther groups. Equal group sizes remove a simple population-size explanation, but other unmeasured differences could still contribute to the pattern. A: The ordered decline is consistent with distance decay while retaining an appropriate limit on causal inference. B: The farthest group has the smallest visiting share, not the largest. C: Ten percent of the farthest group still visits; decay does not imply an abrupt disappearance of all interaction. D: The caption specifies equal group sizes, and the chart reports within-group percentages."
+    },
+    {
+      "id": "hug-1-4-004",
+      "prompt": "A geographer compares the two variables in the table across three hypothetical districts. What relationship is supported without asserting a cause?",
+      "options": [
+        "Transit-stop counts and shop counts have a negative spatial association.",
+        "Shop counts remain constant as transit-stop counts vary.",
+        "Higher transit-stop counts occur with higher shop counts, but causal direction is undetermined.",
+        "The table proves that adding one transit stop always creates exactly four shops."
+      ],
+      "correctIndex": 2,
+      "explanation": "Across these districts, both counts increase together: 0 stops and 4 shops, 5 and 20, then 10 and 40. This is a positive association between spatially referenced variables. The table contains no experiment, chronology or controls that would determine whether transit attracts shops, shops attract transit, or another condition affects both. A: A negative association would place larger values of one variable with smaller values of the other, which is not this pattern. B: The shop counts differ substantially rather than remaining constant. C: This describes the observed ordering while leaving causal direction open. D: Association does not establish an intervention effect; even the observed ratios are not constant because the zero-stop district has four shops."
+    },
+    {
+      "id": "hug-1-4-005",
+      "prompt": "A new bridge shortens the journey between two towns from 70 minutes to 20 minutes. Neither town changes its coordinates. Which statement describes the geographic change?",
+      "options": [
+        "Both towns acquire new absolute locations because their travel time changes.",
+        "The towns become closer in latitude and longitude while network access stays unchanged.",
+        "Their relative accessibility improves while their absolute locations remain fixed.",
+        "The bridge makes the towns’ local identities identical."
+      ],
+      "correctIndex": 2,
+      "explanation": "Absolute location fixes a position in a coordinate system. Relative location and accessibility concern relationships to other places, including the time or effort needed to reach them. A new connection can alter that relationship without moving either settlement or erasing the distinct meanings attached to each place. A: A travel-time change does not change the towns’ coordinates. B: Latitude and longitude do not change in the scenario, whereas the connection clearly improves. C: This distinguishes the fixed positions from the changed connection between them. D: Improved access does not imply identical histories, identities or experiences in the two places."
+    },
+    {
+      "id": "hug-1-4-006",
+      "prompt": "A manufacturer can now send a design file across an ocean almost instantly instead of waiting days for a physical package. What does this example illustrate about time-space compression?",
+      "options": [
+        "Faster communication reduces the effective separation of distant collaborators.",
+        "Digital communication eliminates every time-zone difference between the collaborators.",
+        "The ocean has become physically narrower in proportion to the time saved.",
+        "All places gain equal access as soon as the technology exists somewhere."
+      ],
+      "correctIndex": 0,
+      "explanation": "Time-space compression refers to reductions in the time or cost of connecting across distance through changes such as transport and communication technology. The example concerns the effective separation of collaborators, not a contraction of Earth’s measured surface or a guarantee that access is universal. A: The much shorter transmission time makes coordination possible across a distance that formerly imposed a longer delay. B: Rapid transmission does not eliminate the different local times or working schedules at the endpoints. C: The measured width of the ocean is not altered by a faster means of communication. D: Availability, infrastructure and cost can remain uneven; the example describes these collaborators, not every place."
+    },
+    {
+      "id": "hug-1-4-007",
+      "prompt": "Two public squares have identical dimensions. One hosts a longstanding neighborhood festival and is described by residents as central to their shared identity. Which concept best explains what the festival adds to the description of that square?",
+      "options": [
+        "A new absolute location determined by the number of festival visitors",
+        "A change in the square’s measured area",
+        "A distance-decay function that applies equally to all visitors",
+        "A sense of place shaped by shared meanings and experiences"
+      ],
+      "correctIndex": 3,
+      "explanation": "Place includes the meanings and characteristics associated with a location, beyond its measurable dimensions. A repeated community event can contribute to attachment and identity. The scenario establishes that association through residents’ descriptions; it does not assert that all residents experience the square in the same way. A: The number or identity of visitors does not determine a site’s coordinates. B: The squares’ dimensions are held constant, so no area change is established. C: No visiting rates by distance are supplied, so a distance-decay function cannot be inferred. D: The described identity and experience concern the significance of a particular location."
+    },
+    {
+      "id": "hug-1-4-008",
+      "prompt": "A map traces money sent from workers in one country to households in another. What is the primary spatial phenomenon represented by the arrows?",
+      "options": [
+        "Absolute locations only, with no relation between places",
+        "A flow linking places through the movement of funds",
+        "A formal region in which every household has the same income",
+        "The physical relocation of every recipient household"
+      ],
+      "correctIndex": 1,
+      "explanation": "Flows connect locations through movements such as people, goods, information or money. These arrows encode transfers of funds between origin and destination places. Their existence does not require recipients to relocate, and it does not establish that all people within a boundary share an attribute. A: The arrows represent a directional connection, not just isolated positions. B: The funds move between places, making this a flow even though no physical person need travel. C: A monetary link does not establish uniform household income across a bounded region. D: Receiving a transfer does not show that the receiving household moved its residence."
+    },
+    {
+      "id": "hug-1-4-009",
+      "prompt": "Two equal-area districts each contain twelve schools. In one district the schools surround a single intersection; in the other they are spread across the district. Which conclusion distinguishes density from spatial pattern?",
+      "options": [
+        "The first district must have a higher school density because its schools cluster.",
+        "The second district must contain more schools because they occupy more positions.",
+        "Both districts have the same pattern because their total counts match.",
+        "The districts have equal overall school density but different arrangements."
+      ],
+      "correctIndex": 3,
+      "explanation": "Overall density is a count per unit area; equal counts and equal total areas give equal district-wide densities. Pattern concerns how features are arranged within that area. The same overall density can therefore coexist with clustering in one district and dispersion in another. A: Clustering increases concentration in part of a district but does not change the stated district-wide count per area. B: The problem fixes both totals at twelve; spreading features does not create additional schools. C: Equal totals do not specify whether points cluster or disperse within an area. D: This keeps the aggregate density calculation separate from the internal arrangement."
+    },
+    {
+      "id": "hug-1-4-010",
+      "prompt": "A remote community communicates more often with a distant community sharing its language than with a nearer community. How should this observation affect the use of distance decay?",
+      "options": [
+        "It proves physical distance never influences any interaction.",
+        "It means the distant communities must occupy the same absolute location.",
+        "It shows that cultural and network connections can modify a general distance-related tendency.",
+        "It proves that all nearby communities have weaker connections than all distant communities."
+      ],
+      "correctIndex": 2,
+      "explanation": "Distance decay is a tendency, not a rule fixing every pairwise interaction. Shared language, established networks, accessibility and other conditions can sustain strong ties across substantial distance. One comparison can show the limits of a distance-only explanation without eliminating distance as a relevant factor elsewhere. A: One exception to a simple ordering cannot establish that distance has no influence in every context. B: Frequent communication does not make the two sets of coordinates identical. C: The scenario supplies an additional relationship that helps explain why interaction does not follow distance alone. D: This universal claim goes far beyond the single comparison described."
+    },
+    {
+      "id": "hug-1-4-011",
+      "prompt": "An analyst removes neighborhood labels and combines all interactions within each large province into one total. Which spatial relationship becomes harder to investigate from the resulting data?",
+      "options": [
+        "Whether adjacent neighborhoods exchange more visits than nonadjacent neighborhoods",
+        "Which province has the largest total number of recorded interactions",
+        "How provincial totals compare with one another",
+        "Whether recorded interaction totals differ between provinces"
+      ],
+      "correctIndex": 0,
+      "explanation": "Spatial relationships depend on the resolution of the evidence. Provincial totals retain comparisons among provinces but discard the origin–destination detail needed to compare adjacent and nonadjacent neighborhoods within them. A larger aggregation does not preserve every pattern observed at finer scales. A: This question needs neighborhood adjacency and pairwise visit information that the aggregation removed. B: Provincial totals directly retain the information needed to rank provinces. C: The new dataset still supplies comparable province-level totals. D: Differences between provincial totals remain measurable; what is lost is the finer internal pattern."
+    }
+  ]
+}

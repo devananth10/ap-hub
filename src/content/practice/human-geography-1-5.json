@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 1,
+  "topicId": "topic-1-5",
+  "questions": [
+    {
+      "id": "hug-1-5-001",
+      "prompt": "The table describes a hypothetical aquifer. Assume annual recharge and withdrawals remain as listed, with no other inflows or outflows. Which assessment of the proposed withdrawal is justified?",
+      "options": [
+        "Stored water will grow because recharge continues every year.",
+        "Withdrawal is sustainable indefinitely simply because groundwater is a renewable resource.",
+        "The proposal draws down storage by 40 million m³ per year under the stated assumptions.",
+        "The aquifer must become empty at the end of the first year."
+      ],
+      "correctIndex": 2,
+      "explanation": "Renewal is a rate, not a guarantee that any level of extraction is sustainable. The proposed withdrawal is 140 million m³ per year while recharge is 100 million m³, so the annual balance is −40 million m³. The initial stock is not given; the calculation establishes a drawdown, not the date of exhaustion or the full social and ecological consequences. A: Recharge does not exceed withdrawal under the proposal, so the stated balance is a decrease in stored water. B: A resource can be renewable yet depleted when removal persistently exceeds replenishment. C: Subtracting withdrawal from recharge gives100−140=−40 million m³ per year. D: Without the starting stock, no exact exhaustion date follows from the annual balance."
+    },
+    {
+      "id": "hug-1-5-002",
+      "prompt": "The chart uses the same 100 km² district boundary in both years. Which conclusion about human modification of land is supported by the two land-cover inventories?",
+      "options": [
+        "Every lost forest parcel became built-up land.",
+        "The district gained 30 km² of forest.",
+        "Cropland declined while built-up land stayed constant.",
+        "Forest area declined while cropland and built-up area increased."
+      ],
+      "correctIndex": 3,
+      "explanation": "The fixed boundary and exhaustive categories permit comparison of areas: forest falls from70 to40 km², cropland rises from20 to30, and built-up land rises from10 to30. These totals show a changing human-modified landscape. They do not trace which particular parcels changed between each pair of uses. A: The totals contain no parcel-by-parcel transition record, and built-up growth of20 km² is smaller than forest loss of30 km². B: Forest declines by30 km² rather than gaining that amount. C: Cropland increases by10 km² and built-up area by20 km². D: This describes the direction of each observed change without inventing a complete conversion history."
+    },
+    {
+      "id": "hug-1-5-003",
+      "prompt": "The map combines paved-surface coverage with the direction of a river. After equal rainfall, paved surfaces generally allow less infiltration than comparable vegetated surfaces. Which human–environment relationship should be investigated using these mapped layers?",
+      "options": [
+        "Runoff generated in the heavily paved western area may travel toward the eastern area.",
+        "The eastern area’s lower paved share proves that it cannot receive runoff from elsewhere.",
+        "River water must flow westward because the western paved percentage is higher.",
+        "The map establishes the exact flood depth at every building in the eastern area."
+      ],
+      "correctIndex": 0,
+      "explanation": "The western area has80% paved cover and lies upstream of the eastern area, which has20%. Land-surface modification can affect runoff, and river connections can carry effects beyond the modified area. The layers identify a plausible relationship to investigate; actual runoff volumes and flood depths require additional rainfall, terrain, drainage and river information. A: This combines the high upstream paved share with the arrow’s eastward direction while keeping the outcome conditional. B: A local cover percentage does not exclude water arriving from upstream. C: The supplied river arrow indicates eastward flow; a percentage of paved cover does not reverse that direction. D: No water levels, building elevations or hydraulic model are supplied for an exact depth calculation."
+    },
+    {
+      "id": "hug-1-5-004",
+      "prompt": "The table describes two hypothetical farming areas. Which interpretation best uses this comparison to assess environmental determinism?",
+      "options": [
+        "The shared rainfall must produce identical farming practices in both areas.",
+        "Similar physical conditions can coexist with different land uses when access to technology differs.",
+        "Irrigation proves that climate places no constraints on either area.",
+        "The comparison establishes which society is culturally superior."
+      ],
+      "correctIndex": 1,
+      "explanation": "Environmental determinism treats physical conditions as fixing human outcomes. Here the listed physical setting is held similar, while irrigation access and crop choices differ. The comparison is consistent with possibilism: people make choices within environmental constraints using unequal technologies and opportunities. It does not erase those constraints or establish a hierarchy of cultures. A: The table explicitly shows different crop systems despite the similar physical setting. B: This recognizes both the common environmental conditions and the different available means of using them. C: Irrigation still requires water, energy and management; it does not eliminate physical limits. D: Differences in land use are not evidence of cultural superiority or inferior human capability."
+    },
+    {
+      "id": "hug-1-5-005",
+      "prompt": "A writer claims that all societies in arid environments must develop the same economy because climate determines their choices. Which criticism best reflects a possibilist perspective?",
+      "options": [
+        "Economic activities are unrelated to water availability in every arid place.",
+        "All arid places have identical technology, institutions and trade connections.",
+        "Human choices can remove every physical limit without cost.",
+        "Water constraints matter, but technology, institutions and connections can produce different responses."
+      ],
+      "correctIndex": 3,
+      "explanation": "Possibilism recognizes environmental constraints while emphasizing different human responses within them. An arid setting influences the opportunities and costs of activities, but it does not uniquely fix an economy. Access to technology, institutions and trade can differ among places exposed to similar broad climatic conditions. A: This replaces determinism with an equally unsupported denial of environmental influence. B: Those social and technological conditions are not fixed by the climatic label. C: Choices can alter some constraints but do not make water, energy or other requirements disappear. D: This retains the environmental constraint without treating it as a complete explanation of social outcomes."
+    },
+    {
+      "id": "hug-1-5-006",
+      "prompt": "A coastal city uses desalination to expand its water supply. Which statement most accurately describes the relationship between technology and the environment?",
+      "options": [
+        "Technology expands some possibilities, while energy costs and waste-management requirements remain relevant.",
+        "Technology makes the city independent of all natural resources.",
+        "The new supply proves every coastal city can adopt the same system at the same cost.",
+        "The city’s decision is fully determined by coastline location, regardless of institutions or resources."
+      ],
+      "correctIndex": 0,
+      "explanation": "A technological response can change how people use environmental resources without making that response costless or universally available. Desalination can add usable water, but it requires inputs and management. Location provides an opportunity rather than uniquely determining the policy or ensuring equal access in all coastal places. A: This recognizes a new option alongside its material requirements and possible environmental consequences. B: The system still uses seawater and energy and produces material outputs that must be handled. C: Local resources, infrastructure and institutions can differ, so equal costs do not follow. D: A coastline alone does not determine whether the technology is selected or can be operated."
+    },
+    {
+      "id": "hug-1-5-007",
+      "prompt": "A mineral deposit once considered of little economic use becomes valuable after a new manufacturing process creates demand for it. What does this illustrate about natural resources?",
+      "options": [
+        "A deposit has the same economic value regardless of technology or demand.",
+        "Human uses and technology help determine which environmental materials are treated as resources.",
+        "Demand creates new mineral matter inside the deposit immediately.",
+        "Economic value proves that extraction has no environmental consequences."
+      ],
+      "correctIndex": 1,
+      "explanation": "A material’s presence is a physical condition, while its usefulness and economic value depend partly on human needs, technology, accessibility and institutions. A change in manufacturing can therefore change how an existing deposit is viewed without creating new matter or removing the environmental effects of extraction. A: The scenario explicitly changes the deposit’s usefulness through a new demand and process. B: The existing physical material acquires a new human use, illustrating the relational meaning of a resource. C: A new use changes demand, not the amount of matter already in the ground. D: Market value is not a measurement of environmental impact, so no such conclusion follows."
+    },
+    {
+      "id": "hug-1-5-008",
+      "prompt": "A city proposes restoring a wetland while relocating nearby households. A sustainability assessment already estimates habitat benefits. Which additional evidence is most necessary for assessing the proposal’s broader sustainability?",
+      "options": [
+        "Only the project’s short-term construction cost, excluding later effects",
+        "Only whether the restored wetland looks attractive in a publicity photograph",
+        "Long-term maintenance, ecological outcomes and effects on residents’ housing and livelihoods",
+        "A claim that any project labeled green has no trade-offs"
+      ],
+      "correctIndex": 2,
+      "explanation": "Sustainability concerns the ability to maintain environmental and human well-being over time. Habitat benefits are relevant, but they are not the entire assessment when a project also affects people and future maintenance obligations. Considering social and economic consequences does not require assuming the project must be accepted or rejected in advance. A: An initial cost alone omits continuing maintenance and distributional effects on residents. B: Appearance does not measure ecological durability or the consequences of displacement. C: This adds temporal, ecological and social information needed to evaluate more than the existing benefit estimate. D: A label cannot substitute for evidence about trade-offs or long-term conditions."
+    },
+    {
+      "id": "hug-1-5-009",
+      "prompt": "An area covered by grass is maintained as a sports field rather than grazed by livestock. Which distinction is demonstrated by comparing the vegetation with the activity?",
+      "options": [
+        "Land cover describes the surface, while land use describes its human purpose.",
+        "Land use is determined solely by the color of vegetation in a single image.",
+        "A grass surface must always be classified as livestock agriculture.",
+        "A recreational use prevents the site from having any physical land cover."
+      ],
+      "correctIndex": 0,
+      "explanation": "Cover and use answer different geographic questions. Grass describes a physical surface; recreation describes what people do with that surface. Similar cover can support different uses, so observation of vegetation alone need not establish a specific economic or social activity. A: The surface and the human activity are distinct attributes of the same location. B: Color or cover alone can be compatible with several uses and may require contextual information. C: The stated purpose is recreation, and grass does not uniquely imply grazing. D: A purpose does not remove the site’s physical surface; both attributes can be recorded together."
+    },
+    {
+      "id": "hug-1-5-010",
+      "prompt": "A mine discharges sediment into a river that crosses several administrative boundaries before reaching downstream farms. Why is analysis confined to the mine’s municipality inadequate for evaluating this interaction?",
+      "options": [
+        "Administrative boundaries stop river-borne material from moving farther.",
+        "Downstream land uses are irrelevant because they lie outside the extraction site.",
+        "Only a global total can reveal the effects on particular downstream farms.",
+        "The environmental connection can transmit effects beyond the administrative area where the activity occurs."
+      ],
+      "correctIndex": 3,
+      "explanation": "Human activities and environmental processes need not share administrative boundaries. A connected river can move material from a local extraction site toward other places and land uses. Evaluating the pathway and affected locations requires an extent suited to that connection, rather than treating the municipality as a physical barrier. A: A jurisdictional boundary is not itself a barrier to river transport. B: The scenario identifies a connecting pathway to downstream agricultural uses, making those places relevant. C: A global total would lose the river-specific and farm-specific detail needed here. D: This recognizes the mismatch between the activity’s local administrative setting and its potentially wider environmental effects."
+    },
+    {
+      "id": "hug-1-5-011",
+      "prompt": "A settlement builds terraces on a steep hillside so that crops can be cultivated on flatter surfaces. Which statement best describes the human–environment interaction?",
+      "options": [
+        "The slope has no influence on human decisions because people modified it.",
+        "The original slope fixes one inevitable social outcome for every hillside settlement.",
+        "People respond to a physical constraint while also modifying the landscape.",
+        "The terraces demonstrate that land use and environmental conditions are unrelated."
+      ],
+      "correctIndex": 2,
+      "explanation": "Terracing both responds to a terrain constraint and changes the land surface. The interaction is therefore reciprocal rather than a complete separation of nature and society or a claim that slope alone determines every outcome. Other hillside communities may respond differently depending on their resources, goals and practices. A: The need for flatter growing surfaces shows that slope is relevant to the choice. B: The example supplies one response, not proof that every society must use the same technique or develop identically. C: The action addresses a physical condition and produces a human-modified landscape at the same time. D: The described purpose directly connects the environmental condition to the land-use decision."
+    }
+  ]
+}

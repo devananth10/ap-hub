@@ -62,3 +62,19 @@ test('planning decisions reject budget/coverage ties and altered population chan
  const tied=structuredClone(geographyStimuli[batch.questions[0].id]);tied.rows.find(row=>row[0]==='T')[2]='3000';assert.throws(()=>verifyGeographyQuestion(batch.questions[0],{...qa.questions[0],stimulusSha256:semanticHash(tied)},tied),/tied/);
  const changed=structuredClone(geographyStimuli[batch.questions[2].id]);changed.series.find(s=>s.label==='Later').values[0]=4500;assert.throws(()=>verifyGeographyQuestion(batch.questions[2],{...qa.questions[2],stimulusSha256:semanticHash(changed)},changed));
 });
+
+test('spatial-concept models reject misaligned points, reversed accessibility and broken distance decay',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-1-4.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-1-4.json','utf8'));
+ for(const [i,change] of [[0,s=>s.dots[2].y=25],[1,s=>s.rows[0][2]='10'],[2,s=>s.series[0].values[1]=80]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+
+test('human-environment checks preserve resource balance, fixed land area and actual river-arrow direction',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-1-5.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-1-5.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[2][1]='80'],[1,s=>s.series[1].values[0]=70],[2,s=>s.paths[0].points.reverse()]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+ const html=render(geographyStimuli[batch.questions[2].id]);assert.match(html,/data-path="River" data-arrow-end="true" points="78,183.5 382,183.5"/);
+ assert.match(html,/class="geo-path geo-path-on-fill"/);assert.match(html,/class="geo-path-halo"/);assert.match(html,/fill="#152c27" stroke="#f3f9f6"/);
+});

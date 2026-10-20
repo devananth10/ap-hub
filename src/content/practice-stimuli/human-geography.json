@@ -796,5 +796,311 @@
         "29"
       ]
     ]
+  },
+  "hug-1-4-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "dot",
+    "title": "Business locations in a study area",
+    "description": "Hypothetical north-up schematic. Five businesses occupy coordinates (20,15),(35,15),(50,15),(65,15),(80,15) on a common local coordinate grid. No road or river is shown.",
+    "caption": "Each dot is one business. The diagram encodes positions, not business size or the cause of the pattern.",
+    "unitLabel": "One dot = one business",
+    "regions": [
+      {
+        "label": "Study area",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      }
+    ],
+    "dots": [
+      {
+        "x": 20,
+        "y": 15
+      },
+      {
+        "x": 35,
+        "y": 15
+      },
+      {
+        "x": 50,
+        "y": 15
+      },
+      {
+        "x": 65,
+        "y": 15
+      },
+      {
+        "x": 80,
+        "y": 15
+      }
+    ]
+  },
+  "hug-1-4-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Two connections to one employment center",
+    "description": "Hypothetical towns P and Q: P is 20 km from the center in straight-line distance and the listed journey takes 50 minutes; Q is 45 km away and takes 25 minutes.",
+    "caption": "Journey times use the same observation period; compare the listed trips, not an unobserved future service.",
+    "headers": [
+      "Town",
+      "Straight-line distance (km)",
+      "Travel time (minutes)"
+    ],
+    "rows": [
+      [
+        "P",
+        "20",
+        "50"
+      ],
+      [
+        "Q",
+        "45",
+        "25"
+      ]
+    ]
+  },
+  "hug-1-4-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Visiting share by distance band",
+    "description": "Hypothetical groups of 100 residents each, represented at 5,15 and 25 km from one recreation center:60%,30% and 10%, respectively, made at least one visit in the same month.",
+    "caption": "Equal-sized groups, one observation period. Other differences between the groups were not controlled.",
+    "unitLabel": "Residents visiting (%)",
+    "categories": [
+      "5 km",
+      "15 km",
+      "25 km"
+    ],
+    "series": [
+      {
+        "label": "Visited",
+        "values": [
+          60,
+          30,
+          10
+        ]
+      }
+    ],
+    "max": 100
+  },
+  "hug-1-4-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Transit stops and shops by district",
+    "description": "Hypothetical districts L,M,N have respectively 0,5,10 transit stops and 4,20,40 shops in the same observation year.",
+    "caption": "District-level counts only; no causal experiment or historical sequence is provided.",
+    "headers": [
+      "District",
+      "Transit stops",
+      "Shops"
+    ],
+    "rows": [
+      [
+        "L",
+        "0",
+        "4"
+      ],
+      [
+        "M",
+        "5",
+        "20"
+      ],
+      [
+        "N",
+        "10",
+        "40"
+      ]
+    ]
+  },
+  "hug-1-5-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Aquifer recharge and withdrawal",
+    "description": "Hypothetical aquifer: annual recharge is 100 million m³, current annual withdrawal is 90 million m³ and proposed annual withdrawal is 140 million m³. The initial volume stored is unspecified.",
+    "caption": "Use the proposed scenario. Assume no other inflows or outflows and unchanged annual rates.",
+    "headers": [
+      "Measure",
+      "Million m³ per year"
+    ],
+    "rows": [
+      [
+        "Recharge",
+        "100"
+      ],
+      [
+        "Current withdrawal",
+        "90"
+      ],
+      [
+        "Proposed withdrawal",
+        "140"
+      ]
+    ]
+  },
+  "hug-1-5-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Land-cover inventories in one district",
+    "description": "Hypothetical fixed 100 km² district: earlier forest 70, cropland 20, built-up 10 km²; later forest 40, cropland 30, built-up 30 km². Categories are exhaustive and mutually exclusive.",
+    "caption": "Both inventories use the same boundary and categories; individual parcel transitions are not supplied.",
+    "unitLabel": "Area (km²)",
+    "categories": [
+      "Forest",
+      "Cropland",
+      "Built-up"
+    ],
+    "series": [
+      {
+        "label": "Earlier",
+        "values": [
+          70,
+          20,
+          10
+        ]
+      },
+      {
+        "label": "Later",
+        "values": [
+          40,
+          30,
+          30
+        ]
+      }
+    ],
+    "max": 100
+  },
+  "hug-1-5-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "flow",
+    "title": "Paved cover and a river connection",
+    "description": "Hypothetical north-up map: West has 80% paved cover and East has 20%. A river arrow runs from the western area toward the eastern area. These are land-cover percentages, not flood probabilities.",
+    "caption": "Arrow shows river direction only. No discharge or building-level flood-depth estimates are given.",
+    "unitLabel": "Paved surface (% of each area); arrow = river direction",
+    "regions": [
+      {
+        "label": "West",
+        "value": 80,
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "East",
+        "value": 20,
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ],
+    "bins": [
+      {
+        "min": 0,
+        "max": 50,
+        "label": "0 to under 50%"
+      },
+      {
+        "min": 50,
+        "max": 101,
+        "label": "50 to 100%"
+      }
+    ],
+    "paths": [
+      {
+        "label": "River",
+        "points": [
+          [
+            10,
+            45
+          ],
+          [
+            90,
+            45
+          ]
+        ],
+        "arrow": true
+      }
+    ]
+  },
+  "hug-1-5-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Two farming responses in similar settings",
+    "description": "Hypothetical areas A and B each receive 500 mm annual rain and have similar soils and terrain. A has irrigation access and grows vegetables; B lacks irrigation access and grows drought-tolerant grains.",
+    "caption": "A deliberately simplified comparison. Crop systems are observed choices, not universal outcomes for these conditions.",
+    "headers": [
+      "Area",
+      "Annual rain (mm)",
+      "Irrigation access",
+      "Crop system"
+    ],
+    "rows": [
+      [
+        "A",
+        "500",
+        "Yes",
+        "Vegetables"
+      ],
+      [
+        "B",
+        "500",
+        "No",
+        "Drought-tolerant grains"
+      ]
+    ]
   }
 }
