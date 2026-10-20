@@ -1930,5 +1930,256 @@
         "10"
       ]
     ]
+  },
+  "hug-2-3-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "pyramid",
+    "title": "Age-sex composition of Population R",
+    "description": "Hypothetical Population R. The accompanying table supplies male and female shares for every cohort. Both sides use one common percentage scale and whole-population denominator; oldest ages appear at the top.",
+    "caption": "Each bar is a percentage of the entire population, not a percentage within one sex. Cohorts below 80 are ten-year groups; 80+ is open-ended. All shares sum to 100%.",
+    "unitLabel": "Percent of total population",
+    "max": 15,
+    "cohorts": [
+      {
+        "label": "0–9",
+        "ageStart": 0,
+        "ageEnd": 9,
+        "male": 8,
+        "female": 8
+      },
+      {
+        "label": "10–19",
+        "ageStart": 10,
+        "ageEnd": 19,
+        "male": 7,
+        "female": 7
+      },
+      {
+        "label": "20–29",
+        "ageStart": 20,
+        "ageEnd": 29,
+        "male": 6.5,
+        "female": 6.5
+      },
+      {
+        "label": "30–39",
+        "ageStart": 30,
+        "ageEnd": 39,
+        "male": 6,
+        "female": 6
+      },
+      {
+        "label": "40–49",
+        "ageStart": 40,
+        "ageEnd": 49,
+        "male": 5.5,
+        "female": 5.5
+      },
+      {
+        "label": "50–59",
+        "ageStart": 50,
+        "ageEnd": 59,
+        "male": 5,
+        "female": 5
+      },
+      {
+        "label": "60–69",
+        "ageStart": 60,
+        "ageEnd": 69,
+        "male": 4.5,
+        "female": 4.5
+      },
+      {
+        "label": "70–79",
+        "ageStart": 70,
+        "ageEnd": 79,
+        "male": 4,
+        "female": 4
+      },
+      {
+        "label": "80+",
+        "ageStart": 80,
+        "ageEnd": null,
+        "male": 3.5,
+        "female": 3.5
+      }
+    ]
+  },
+  "hug-2-3-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "pyramid",
+    "title": "Age-sex composition of Population S",
+    "description": "Hypothetical Population S. Male and female cohort shares use the same whole-population denominator and are provided in the data table. Causes of the pattern are not supplied.",
+    "caption": "Each bar is a percentage of the entire population, not a percentage within one sex. Cohorts below 80 are ten-year groups; 80+ is open-ended. All shares sum to 100%.",
+    "unitLabel": "Percent of total population",
+    "max": 15,
+    "cohorts": [
+      {
+        "label": "0–9",
+        "ageStart": 0,
+        "ageEnd": 9,
+        "male": 4,
+        "female": 4
+      },
+      {
+        "label": "10–19",
+        "ageStart": 10,
+        "ageEnd": 19,
+        "male": 4,
+        "female": 4
+      },
+      {
+        "label": "20–29",
+        "ageStart": 20,
+        "ageEnd": 29,
+        "male": 12,
+        "female": 6
+      },
+      {
+        "label": "30–39",
+        "ageStart": 30,
+        "ageEnd": 39,
+        "male": 12,
+        "female": 6
+      },
+      {
+        "label": "40–49",
+        "ageStart": 40,
+        "ageEnd": 49,
+        "male": 6,
+        "female": 6
+      },
+      {
+        "label": "50–59",
+        "ageStart": 50,
+        "ageEnd": 59,
+        "male": 5,
+        "female": 5
+      },
+      {
+        "label": "60–69",
+        "ageStart": 60,
+        "ageEnd": 69,
+        "male": 4,
+        "female": 5
+      },
+      {
+        "label": "70–79",
+        "ageStart": 70,
+        "ageEnd": 79,
+        "male": 3,
+        "female": 5
+      },
+      {
+        "label": "80+",
+        "ageStart": 80,
+        "ageEnd": null,
+        "male": 2,
+        "female": 7
+      }
+    ]
+  },
+  "hug-2-3-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Age groups for a dependency comparison",
+    "description": "Hypothetical population: 3000 residents aged 0–14, 6000 aged 15–64 and 1000 aged 65+. Groups are mutually exclusive and cover the entire population.",
+    "caption": "These are age groups, not observed employment or financial-support categories.",
+    "headers": [
+      "Age group",
+      "Residents"
+    ],
+    "rows": [
+      [
+        "0–14",
+        "3000"
+      ],
+      [
+        "15–64",
+        "6000"
+      ],
+      [
+        "65+",
+        "1000"
+      ]
+    ]
+  },
+  "hug-2-3-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "pyramid",
+    "title": "Age-sex composition of Population T",
+    "description": "Hypothetical Population T. The full male/female percentage table accompanies the graph. Recorded ages describe population composition, not identical personal needs, employment or exact life expectancy.",
+    "caption": "Each bar is a percentage of the entire population, not a percentage within one sex. Cohorts below 80 are ten-year groups; 80+ is open-ended. All shares sum to 100%.",
+    "unitLabel": "Percent of total population",
+    "max": 15,
+    "cohorts": [
+      {
+        "label": "0–9",
+        "ageStart": 0,
+        "ageEnd": 9,
+        "male": 4,
+        "female": 4
+      },
+      {
+        "label": "10–19",
+        "ageStart": 10,
+        "ageEnd": 19,
+        "male": 4,
+        "female": 4
+      },
+      {
+        "label": "20–29",
+        "ageStart": 20,
+        "ageEnd": 29,
+        "male": 4.5,
+        "female": 4.5
+      },
+      {
+        "label": "30–39",
+        "ageStart": 30,
+        "ageEnd": 39,
+        "male": 5,
+        "female": 5
+      },
+      {
+        "label": "40–49",
+        "ageStart": 40,
+        "ageEnd": 49,
+        "male": 6,
+        "female": 6
+      },
+      {
+        "label": "50–59",
+        "ageStart": 50,
+        "ageEnd": 59,
+        "male": 7,
+        "female": 7
+      },
+      {
+        "label": "60–69",
+        "ageStart": 60,
+        "ageEnd": 69,
+        "male": 7,
+        "female": 7
+      },
+      {
+        "label": "70–79",
+        "ageStart": 70,
+        "ageEnd": 79,
+        "male": 6,
+        "female": 6
+      },
+      {
+        "label": "80+",
+        "ageStart": 80,
+        "ageEnd": null,
+        "male": 5.5,
+        "female": 7.5
+      }
+    ]
   }
 }

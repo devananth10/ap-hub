@@ -108,3 +108,11 @@ test('population-consequence checks distinguish travel access, per-person use an
   const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
  }
 });
+
+test('published composition models verify whole-population denominators, cohort totals and dependency ratios',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-2-3.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-2-3.json','utf8'));
+ for(const [i,change] of [[0,s=>s.cohorts[0].male=9],[1,s=>{s.cohorts[2].male=6;s.cohorts[2].female=12;}],[2,s=>s.rows[1][1]='10000'],[3,s=>{s.cohorts[0].male+=1;s.cohorts[8].male-=1;}]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+ const html=render(geographyStimuli[batch.questions[0].id]);assert.ok(html.indexOf('data-cohort="80+"')<html.indexOf('data-cohort="0–9"'));assert.match(html,/data-cohort="0–9" data-side="male" data-value="8"/);assert.match(html,/<th scope="row">10–19<\/th><td>7<\/td><td>7<\/td>/);
+});

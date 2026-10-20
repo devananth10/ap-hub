@@ -5,6 +5,12 @@ import {validateQuestionBatches} from '../src/lib/practice-bank.ts';
 import {geographyStimuli,validateGeographyStimulus} from '../src/lib/geography-stimuli.ts';
 const read=p=>JSON.parse(readFileSync(p,'utf8'));
 export const semanticHash=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
+function percentagePyramid(stimulus){
+ assert.equal(stimulus.kind,'pyramid');assert.equal(stimulus.unitLabel,'Percent of total population');assert.equal(stimulus.cohorts.length,9);
+ stimulus.cohorts.forEach((row,i)=>{assert.equal(row.ageStart,i*10);assert.equal(row.ageEnd,i===8?null:i*10+9);});
+ assert.equal(stimulus.cohorts.reduce((sum,row)=>sum+row.male+row.female,0),100,'Percentage pyramid must total 100');
+ return stimulus.cohorts;
+}
 export function verifyGeographyQuestion(question,review,stimulus){
  assert.equal(review.questionSha256,semanticHash(question),'Question changed after review: '+question.id);
  assert.equal(question.options[question.correctIndex],review.correctOption,'Stale answer: '+question.id);
@@ -48,6 +54,12 @@ export function verifyGeographyQuestion(question,review,stimulus){
   case 'transport-energy':{assert.deepEqual(stimulus.categories,['Low','Medium','High']);assert.deepEqual(stimulus.series[0].values,[12000,8000,4000]);assert.equal(question.correctIndex,2);break;}
   case 'representation-ratios':{const get=label=>stimulus.regions.find(r=>r.label===label).value;assert.equal(get('SW')/get('NW'),4);assert.equal(get('SE')/get('NE'),4);assert.equal(get('NW'),1000);assert.equal(get('SW'),4000);assert.equal(question.correctIndex,1);break;}
   case 'resource-demand':{assert.deepEqual(stimulus.rows.map(row=>Number(row[1])*Number(row[3])),[100000,100000]);assert.deepEqual(stimulus.rows.map(row=>Number(row[1])/Number(row[2])),[10,100]);assert.equal(question.correctIndex,3);break;}
+  case 'pyramid-young-share':{const rows=percentagePyramid(stimulus),sum=predicate=>rows.filter(predicate).reduce((s,r)=>s+r.male+r.female,0);assert.equal(sum(r=>r.ageStart<20),30);assert.equal(sum(r=>r.ageStart>=60),24);assert.equal(question.correctIndex,2);break;}
+  case 'pyramid-age-sex':{const rows=percentagePyramid(stimulus),group=rows.filter(r=>r.ageStart>=20&&r.ageStart<40);assert.equal(group.reduce((s,r)=>s+r.male,0),24);assert.equal(group.reduce((s,r)=>s+r.female,0),12);assert.equal(rows.reduce((s,r)=>s+r.male,0),52);assert.equal(rows.reduce((s,r)=>s+r.female,0),48);assert.equal(question.correctIndex,0);break;}
+  case 'dependency-ratio':{assert.deepEqual(stimulus.rows.map(row=>Number(row[1])),[3000,6000,1000]);const [young,working,old]=stimulus.rows.map(row=>Number(row[1]));assert.equal(Math.round((young+old)/working*1000)/10,66.7);assert.equal(question.correctIndex,3);break;}
+  case 'pyramid-older-share':{const rows=percentagePyramid(stimulus);assert.equal(rows.filter(r=>r.ageStart>=60).reduce((s,r)=>s+r.male+r.female,0),39);assert.equal(rows.filter(r=>r.ageStart<20).reduce((s,r)=>s+r.male+r.female,0),16);assert.equal(question.correctIndex,1);break;}
+  case 'sex-ratio-share':{const {male,female}=review.check;assert.equal(male/female*100,125);assert.equal(Math.round(male/(male+female)*1000)/10,55.6);assert.equal(Number.parseFloat(question.options[question.correctIndex]),55.6);assert.equal(question.correctIndex,1);break;}
+  case 'cohort-size':{assert.deepEqual(review.check.populations.map(p=>p*review.check.share),[1000,10000]);assert.equal(question.correctIndex,0);break;}
   case 'reasoning':break;
   default:throw Error('Unknown verification model: '+review.check.type);
  }

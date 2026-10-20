@@ -1,0 +1,143 @@
+{
+  "topicNumber": "2.3",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "a5dcab0d2c88f20869b58f3079d9ae4195642beb276d954937c6adedb3d3aece",
+  "scopeReview": "PSO-2.E–F: age structure, sex ratios, population pyramids, differing scales and potential markets/services. All three pyramids use common denominators, symmetric axes and ten-year cohorts0–79;80+ is explicitly open. No exact birth rate, life expectancy, demographic stage or unique cause is inferred from shape alone.",
+  "varietyReview": "Three distinct original pyramids and one age-group table; other tasks distinguish stock/flow, cohort aging, ratio/share, local specialization, absolute/relative size and median/mean. Varied keys and difficulty with explicit data interpretation rather than shape labels alone.",
+  "repetitionReview": "No reuse of prior density calculations as age-composition items. Under20 share, age-specific sex ratio, dependency ratio and older-share comparison use different quantities. The temporal-cohort and current-birth questions assess distinct projection versus inference limits.",
+  "questions": [
+    {
+      "questionId": "hug-2-3-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "30%",
+      "independentReview": "Independently summed the four under20 cells8+8+7+7=30, verified all18 cells total100, and calculated60+ share9+8+7=24. Equal ten-year cohorts0–79 prevent misleading age-width comparisons;80+ is explicitly open.",
+      "check": {
+        "type": "pyramid-young-share"
+      },
+      "questionSha256": "af9aa0e879fc24db4422057719c80827944fea594a545210a32d276680a59af2",
+      "stimulusSha256": "953c8f09cf79ceaf353d8f8215db56c84627d12698b57b4e3efe8a5ac93f4840"
+    },
+    {
+      "questionId": "hug-2-3-002",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "There are twice as many males as females in the combined 20–39 age group.",
+      "independentReview": "Recomputed age20–39 male24/female12=2, and whole-population male52/female48≈1.083. The record describes registered sex categories only; no occupation, gender role or unique migration cause is inferred.",
+      "check": {
+        "type": "pyramid-age-sex"
+      },
+      "questionSha256": "be797277efd8d272d61ae4264b8f400157c6d264c6922f4e35920ade8a647e4a",
+      "stimulusSha256": "d4265e9887ceb4ae60426bd0ebe89d30e00a360b3d2cd03705aab86eec4b0c96"
+    },
+    {
+      "questionId": "hug-2-3-003",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "About 66.7 dependents per 100 working-age residents",
+      "independentReview": "Independently computed total10000, dependent4000, ratio4000/6000*100=66.666…, youth-only50 and reciprocal150. Rounded only the displayed final result to one decimal; employment is not assumed.",
+      "check": {
+        "type": "dependency-ratio"
+      },
+      "questionSha256": "db369edb15d81153cf35147b5165e4211ff12f31f653242825ea3a46ef588dca",
+      "stimulusSha256": "ff4b6fce5c1b8461bd570c76861a7cb9d7451d3bab04b85c2a6c0abe87e70289"
+    },
+    {
+      "questionId": "hug-2-3-004",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "The 60+ share exceeds the under-20 share, making age-appropriate capacity relevant to planning.",
+      "independentReview": "Independently summed60+14+12+13=39 andunder20 8+8=16; all sex/cohort cells total100. The inference concerns potential capacity review, not diagnoses, exact life expectancy or universal dependency.",
+      "check": {
+        "type": "pyramid-older-share"
+      },
+      "questionSha256": "cc571ecb030527d722d9b88e0dfaddb8082e247d39e45589521dfd5d55ecf761",
+      "stimulusSha256": "191b9523f3f356374904b0758f852ff6becf86d732db830135500ac38349413b"
+    },
+    {
+      "questionId": "hug-2-3-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "The numbers in relevant age groups can differ even when total resident counts match.",
+      "independentReview": "Constructed equal-size populations with different child/older shares; identical totals are compatible with different potential markets. Avoided treating age as a complete service-demand forecast.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "eaea3d051709eb53c94aa7bf3d9eb074d1addb1e02538379981aa8500ecefe22"
+    },
+    {
+      "questionId": "hug-2-3-006",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "The bar reflects past cohort formation and survival or migration, not a direct count of current births.",
+      "independentReview": "Distinguished a current stock of30–39-year-old residents from births during the present year. Migration and survival can alter the stock, refuting any unique current birth-rate inference.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "3f6a126634e4edff49597fc1caf5b5695052133c3fb77553d79b7f1f451c50cf"
+    },
+    {
+      "questionId": "hug-2-3-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Surviving members would be aged 20–29, while their future number also depends on mortality and migration.",
+      "independentReview": "Independently added10 to both cohort bounds10–19→20–29. Kept aging separate from the numerical survival/migration assumptions needed for a count projection.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "99c0c00a1f9f38302fbbe93d580a49f6b503115d1812ed932abf9c3cc5c81c94"
+    },
+    {
+      "questionId": "hug-2-3-008",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "55.6%",
+      "independentReview": "Recomputed1250+1000=2250 and1250/2250*100=55.555…%, rounded55.6. Cross-checked reciprocal ratio80 and surplus-relative-to-females25 to confirm distractor origins.",
+      "check": {
+        "type": "sex-ratio-share",
+        "male": 1250,
+        "female": 1000
+      },
+      "questionSha256": "ff7cd14c2231aac5bbd8d76a5919b94b41923b4044880fe97d8154fc2e471a86"
+    },
+    {
+      "questionId": "hug-2-3-009",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "A local concentration associated with the university can differ from the broader national age profile.",
+      "independentReview": "Checked compatibility of a specialized subset with a broader aggregate. The scenario provides the university link but not a claim that every young adult is a student or that the institution is the sole cause.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "e58cfa319575767438dbb39ede7f5ec494bfb26e0f9ea9a78059c603fcf92460"
+    },
+    {
+      "questionId": "hug-2-3-010",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "B has ten times as many residents aged 0–9 as A.",
+      "independentReview": "Independently multiplied.1*10000=1000 and.1*100000=10000; ratio10. Normalized diagrams cannot alone establish equal absolute age-group demand.",
+      "check": {
+        "type": "cohort-size",
+        "populations": [
+          10000,
+          100000
+        ],
+        "share": 0.1
+      },
+      "questionSha256": "0dab0eeaa1d1667777ee8b47c8f99c3784c099ec767937d5675f2d40bc7e8c2a"
+    },
+    {
+      "questionId": "hug-2-3-011",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "At least half of residents are 35 or younger and at least half are 35 or older.",
+      "independentReview": "Checked even/odd ordered examples and ties. The at-least-half inclusive statement holds even when35 is the midpoint of two central ages; no exact age35 count, mean or child share is implied.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "113ac5abe1b2d5d11e9df4714fbfb1369cce392de7ae4a2e6e8c9a5d1fe795c2"
+    }
+  ]
+}

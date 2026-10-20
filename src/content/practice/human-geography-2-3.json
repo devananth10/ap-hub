@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 2,
+  "topicId": "topic-2-3",
+  "questions": [
+    {
+      "id": "hug-2-3-001",
+      "prompt": "Both sides of the pyramid use percentages of the entire population. What share of this hypothetical population is younger than 20?",
+      "options": [
+        "15%",
+        "24%",
+        "30%",
+        "60%"
+      ],
+      "correctIndex": 2,
+      "explanation": "Younger than20 includes the0–9 and10–19 cohorts on both sides. Their shares are8%+8%+7%+7%=30%. The common denominator is the entire population, so the male and female values can be added directly. The open-ended80+ cohort is not part of this calculation. A: 15% adds only one sex’s8% and7%, omitting the corresponding residents on the other side. B: 24% is the combined60+ share in this dataset, not the share younger than20. C: 30% adds all four required bars once using their common whole-population denominator. D: 60% doubles the already combined30%; the percentages do not each use a separate sex-specific denominator."
+    },
+    {
+      "id": "hug-2-3-002",
+      "prompt": "What feature of the second population pyramid is supported by its age-sex data, without assuming the cause of that feature?",
+      "options": [
+        "There are twice as many males as females in the combined 20–39 age group.",
+        "There are twice as many males as females in the whole population.",
+        "The male-to-female ratio is identical in every age cohort.",
+        "The diagram proves that labor migration is the only cause of the 20–39 pattern."
+      ],
+      "correctIndex": 0,
+      "explanation": "The20–29 and30–39 male bars each represent12% of the whole population, while the corresponding female bars each represent6%. Together they give24% male and12% female, a2:1 ratio for ages20–39. The overall male and female totals differ much less, and the shape alone cannot uniquely identify migration or another cause. A: The combined shares24% and12% establish this age-specific ratio with a shared denominator. B: All cohorts together total52% male and48% female, not a2:1 ratio. C: Several cohorts have equal shares, while others differ, so the ratio varies with age. D: Migration is one possible influence, but birth-cohort size, mortality and other histories require additional evidence."
+    },
+    {
+      "id": "hug-2-3-003",
+      "prompt": "For this question, the total age-dependency ratio is defined as residents aged 0–14 plus those aged 65+, divided by residents aged 15–64, multiplied by 100. What is the ratio for the table’s population?",
+      "options": [
+        "40 dependents per 100 working-age residents",
+        "50 dependents per 100 working-age residents",
+        "150 dependents per 100 working-age residents",
+        "About 66.7 dependents per 100 working-age residents"
+      ],
+      "correctIndex": 3,
+      "explanation": "Using the specified age groups, the dependent-age count is3,000+1,000=4,000 and the working-age count is6,000. The ratio is4,000/6,000×100≈66.7. This age-based indicator is not a direct count of employed workers or of people actually receiving financial support. A: 40% uses the dependent-age share of the whole10,000-person population, not the working-age denominator. B: 50 omits the older-age count and calculates only the youth-to-working-age ratio. C: 150 reverses the required ratio by dividing6,000 by4,000 and multiplying by100. D: This combines both dependent-age groups and uses the defined6,000-person working-age denominator."
+    },
+    {
+      "id": "hug-2-3-004",
+      "prompt": "Which observation from the third pyramid is a sound reason to examine older-adult service capacity, without assuming that every person of the same age has identical needs?",
+      "options": [
+        "No residents younger than 20 remain, so all child services can be closed.",
+        "The 60+ share exceeds the under-20 share, making age-appropriate capacity relevant to planning.",
+        "The exact life expectancy can be read from the widest bar.",
+        "Every resident aged 60+ is necessarily retired and unable to work."
+      ],
+      "correctIndex": 1,
+      "explanation": "Ages60+ account for14%+12%+13%=39% of this population, compared with8%+8%=16% younger than20. This composition makes the capacity and accessibility of relevant services worth examining. Age structure helps anticipate potential demand, but neither specifies every individual’s needs nor provides an exact life-expectancy measure. A: The under20 cohorts contain16% of residents, so children and adolescents are still present. B: This uses the actual age shares as planning evidence while retaining individual variation and other service needs. C: A cohort’s current size is not an estimate of expected lifetime at birth. D: Age categories do not directly record retirement, employment or ability to work."
+    },
+    {
+      "id": "hug-2-3-005",
+      "prompt": "Two places have the same total population but different age structures. Why might their expected markets for schools and older-adult services differ?",
+      "options": [
+        "The numbers in relevant age groups can differ even when total resident counts match.",
+        "Equal population totals guarantee identical numbers at every age.",
+        "Age structure records only where people live, never their ages.",
+        "A population total by itself determines the exact number of facilities required."
+      ],
+      "correctIndex": 0,
+      "explanation": "Population composition describes who makes up a population, including age and sex categories. Equal totals can contain different proportions and therefore different counts of children or older adults. These differences inform potential demand, while actual facility requirements also depend on participation, needs, access and existing provision. A: Different age-group shares applied to equal totals produce different numbers of people in those groups. B: A single total does not fix how residents are distributed across ages. C: Age structure explicitly classifies residents by age, distinct from location alone. D: A total does not supply age-specific needs or facility capacity, so it cannot determine an exact requirement."
+    },
+    {
+      "id": "hug-2-3-006",
+      "prompt": "An analyst sees a large 30–39 cohort in a single-year pyramid and claims to know the exact current birth rate from that bar. Why is this claim unsupported?",
+      "options": [
+        "Current birth rates and older cohorts always have the same numerical value.",
+        "People aged 30–39 were all born during the current observation year.",
+        "A population pyramid contains no information about age composition.",
+        "The bar reflects past cohort formation and survival or migration, not a direct count of current births."
+      ],
+      "correctIndex": 3,
+      "explanation": "A pyramid is a snapshot of residents by age and sex. A30–39 cohort reflects births decades earlier and subsequent survival and movement. A current birth rate requires current births and a suitable population denominator over a stated period; it cannot be recovered exactly from one older cohort’s present size. A: The two measures describe different events, periods and denominators and need not match. B: The age label places those births decades before the current observation year. C: The pyramid directly describes age composition, even though it does not supply every demographic flow. D: This separates the cohort stock from the current flow of births and identifies relevant intervening influences."
+    },
+    {
+      "id": "hug-2-3-007",
+      "prompt": "A planner follows a large 10–19 cohort forward by ten years. Which statement is the most defensible use of the current age structure?",
+      "options": [
+        "The entire cohort will remain aged 10–19 because the pyramid labels never change.",
+        "The cohort’s future size is known exactly even if migration and mortality change.",
+        "Surviving members would be aged 20–29, while their future number also depends on mortality and migration.",
+        "The cohort will move directly into the 60+ group in ten years."
+      ],
+      "correctIndex": 2,
+      "explanation": "Cohorts age through time: adding ten years to ages10–19 gives20–29. A projection can follow that age shift while making assumptions about survival and movement. The current bar supplies a starting population, not a guarantee that the future cohort will contain exactly the same number of residents. A: Age labels describe a particular observation time; people do not stop aging when a graph is drawn. B: Migration and mortality can change the number of residents in the cohort. C: This preserves the age progression and identifies why future counts are conditional. D: Ten years of aging does not add the forty or more years needed to reach60+."
+    },
+    {
+      "id": "hug-2-3-008",
+      "prompt": "A hypothetical population contains 1,250 males and 1,000 females in the recorded categories. Its sex ratio is 125 males per 100 females. Approximately what percentage of the total recorded population is male?",
+      "options": [
+        "80%",
+        "55.6%",
+        "125%",
+        "25%"
+      ],
+      "correctIndex": 1,
+      "explanation": "A ratio of males to females uses a different denominator from a share of the total. Here the total is1,250+1,000=2,250. The male share is1,250/2,250×100≈55.6%. Reporting125 males per100 females does not imply125% of the entire population is male. A: 80 comes from1,000/1,250×100 and expresses females per100 males, not males as a share of all residents. B: This uses the combined male and female count as the denominator. C: 125 is the males-per100-females ratio, not a percentage of the whole population. D: The250-person difference divided by1,000 is25%, which is not the male share of the total."
+    },
+    {
+      "id": "hug-2-3-009",
+      "prompt": "A university town has an unusually large 20–29 cohort, while the surrounding country’s age profile is more evenly spread. What follows about the scale of population-composition analysis?",
+      "options": [
+        "The town’s age profile must be an error because it differs from the national pattern.",
+        "Every neighborhood in the country must have the town’s composition.",
+        "The national total proves that the town cannot specialize in an age-related activity.",
+        "A local concentration associated with the university can differ from the broader national age profile."
+      ],
+      "correctIndex": 3,
+      "explanation": "Population composition can vary with the functions and circumstances of places. A university-related concentration of young adults can be visible locally while being diluted in a national aggregate. Both profiles can be accurate because they summarize different resident populations and geographic scales. A: A subset need not reproduce the distribution of the larger population containing it. B: The local concentration is not evidence that every other neighborhood has the same composition. C: A national distribution can include places with specialized functions and age profiles. D: This recognizes a plausible local functional influence and the distinction between local and national populations."
+    },
+    {
+      "id": "hug-2-3-010",
+      "prompt": "Places A and B have identically shaped percentage pyramids, and 10% of each population is aged 0–9. A has 10,000 residents and B has 100,000. Which comparison is correct?",
+      "options": [
+        "B has ten times as many residents aged 0–9 as A.",
+        "They have identical numbers aged 0–9 because the percentages match.",
+        "B has one hundred times as many residents aged 0–9 as A.",
+        "The larger population must have a smaller 0–9 count because the percentage is unchanged."
+      ],
+      "correctIndex": 0,
+      "explanation": "Percentage pyramids show relative composition; absolute cohort sizes also require population totals. A’s0–9 count is0.10×10,000=1,000 and B’s is0.10×100,000=10,000. The same age share can therefore imply different potential market sizes even when the normalized shapes match. A: The counts10,000 and1,000 have a10:1 ratio, matching the total-population ratio. B: Equal percentages applied to different denominators do not give equal counts. C: The population ratio is ten, not one hundred, and the age share is equal. D: With the same positive share, the larger total yields a larger count, not a smaller one."
+    },
+    {
+      "id": "hug-2-3-011",
+      "prompt": "A report gives a median age of 35 years. Which interpretation correctly describes this population-composition measure?",
+      "options": [
+        "Exactly half of residents must be precisely 35 years old.",
+        "The arithmetic mean age must also be exactly 35.",
+        "At least half of residents are 35 or younger and at least half are 35 or older.",
+        "Exactly half of residents must be younger than 18."
+      ],
+      "correctIndex": 2,
+      "explanation": "The median is the middle of an ordered age distribution, not a statement that everyone or half the population has one identical age. Using at least half on either side accommodates ties. A median does not by itself fix the arithmetic mean, the share of children or the shape of every cohort. A: A population can have a median35 with few or no residents at exactly35 when the middle observations straddle that value. B: The mean depends on all ages and can differ from the median when the distribution is asymmetric. C: This is the order-based interpretation, including the possibility of tied ages. D: A median35 supplies no exact share below18."
+    }
+  ]
+}
