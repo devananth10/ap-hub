@@ -5955,5 +5955,613 @@
         ]
       }
     ]
+  },
+  "hug-4-5-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Four actions in one boundary agreement",
+    "description": "Hypothetical record: a treaty describes the agreed route; cartographers draw its course; survey teams install markers; officials operate a checkpoint under crossing rules.",
+    "caption": "Original invented sequence. Functions may overlap in real negotiations, but the recorded actions identify the specific task being compared.",
+    "headers": [
+      "Action",
+      "Recorded work"
+    ],
+    "rows": [
+      [
+        "Treaty description",
+        "Write the agreed route in words"
+      ],
+      [
+        "Detailed map",
+        "Draw the agreed line"
+      ],
+      [
+        "Ground markers",
+        "Install markers at agreed locations"
+      ],
+      [
+        "Checkpoint",
+        "Apply crossing rules"
+      ]
+    ]
+  },
+  "hug-4-5-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "Three supplied distances from a coastal baseline",
+    "description": "Hypothetical coastal baseline at the land–sea edge. Positions A, B and C are respectively 5, 50 and 210 nautical miles seaward from that baseline. The supplied distances, not the drawing’s spacing, determine zone membership.",
+    "caption": "Original not-to-scale diagram. The points are deliberately spread for readability. Assume a 12-nmi territorial sea and 200-nmi EEZ with no overlapping claims; extended continental-shelf questions are outside this exercise.",
+    "unitLabel": "Point labels give nautical miles from the baseline",
+    "regions": [
+      {
+        "label": "Land",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            20,
+            0
+          ],
+          [
+            20,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "Sea",
+        "polygon": [
+          [
+            20,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            20,
+            60
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "A: 5 nmi",
+        "x": 35,
+        "y": 12
+      },
+      {
+        "label": "B: 50 nmi",
+        "x": 58,
+        "y": 25
+      },
+      {
+        "label": "C: 210 nmi",
+        "x": 80,
+        "y": 48
+      }
+    ]
+  },
+  "hug-4-5-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "A transect between two opposite baselines",
+    "description": "Hypothetical opposite baselines A and B are 300 nautical miles apart along the horizontal transect. Each state proposes 200 nmi toward the other. A’s and B’s lands lie at the left and right edges.",
+    "caption": "Original simplified cross-sea geometry. Horizontal separation is supplied as 300 nmi; this is not a real coast, final maritime boundary or two-dimensional overlap-area calculation.",
+    "unitLabel": "Transect separation:300 nautical miles",
+    "regions": [
+      {
+        "label": "A",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            10,
+            0
+          ],
+          [
+            10,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "B",
+        "polygon": [
+          [
+            90,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            90,
+            60
+          ]
+        ]
+      }
+    ],
+    "paths": [
+      {
+        "label": "300 nmi",
+        "points": [
+          [
+            10,
+            42
+          ],
+          [
+            50,
+            42
+          ],
+          [
+            90,
+            42
+          ]
+        ]
+      }
+    ]
+  },
+  "hug-4-5-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Waiting at one unchanged crossing",
+    "description": "Hypothetical crossing waits under earlier and later rules: freight 20 then 50 minutes; commuters 10 then 40 minutes. The border and crossing location remain unchanged.",
+    "caption": "Original synthetic illustrative waits. Same measured categories, different administrative rules; no claim about an actual border or every cause of delay.",
+    "unitLabel": "Average waiting time (minutes)",
+    "categories": [
+      "Earlier",
+      "Later"
+    ],
+    "series": [
+      {
+        "label": "Freight",
+        "values": [
+          20,
+          50
+        ]
+      },
+      {
+        "label": "Commuters",
+        "values": [
+          10,
+          40
+        ]
+      }
+    ],
+    "max": 60
+  },
+  "hug-4-6-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "R votes in nine equal-population precincts",
+    "description": "Hypothetical nine-cell grid, rows A B C; D E F; G H I. Each precinct has 100 residents, all casting one valid R-or-S ballot. R votes are 80 in A/B/C and 40 in every other cell. S receives the remaining votes.",
+    "caption": "Original simplified election, not actual voters or a legal districting template. Each row or column is contiguous and contains 300 residents. Colors encode votes, not identity; the question specifies the district grouping.",
+    "unitLabel": "R votes out of 100 valid votes per precinct",
+    "regions": [
+      {
+        "label": "A",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            30,
+            0
+          ],
+          [
+            30,
+            20
+          ],
+          [
+            0,
+            20
+          ]
+        ],
+        "value": 80
+      },
+      {
+        "label": "B",
+        "polygon": [
+          [
+            30,
+            0
+          ],
+          [
+            60,
+            0
+          ],
+          [
+            60,
+            20
+          ],
+          [
+            30,
+            20
+          ]
+        ],
+        "value": 80
+      },
+      {
+        "label": "C",
+        "polygon": [
+          [
+            60,
+            0
+          ],
+          [
+            90,
+            0
+          ],
+          [
+            90,
+            20
+          ],
+          [
+            60,
+            20
+          ]
+        ],
+        "value": 80
+      },
+      {
+        "label": "D",
+        "polygon": [
+          [
+            0,
+            20
+          ],
+          [
+            30,
+            20
+          ],
+          [
+            30,
+            40
+          ],
+          [
+            0,
+            40
+          ]
+        ],
+        "value": 40
+      },
+      {
+        "label": "E",
+        "polygon": [
+          [
+            30,
+            20
+          ],
+          [
+            60,
+            20
+          ],
+          [
+            60,
+            40
+          ],
+          [
+            30,
+            40
+          ]
+        ],
+        "value": 40
+      },
+      {
+        "label": "F",
+        "polygon": [
+          [
+            60,
+            20
+          ],
+          [
+            90,
+            20
+          ],
+          [
+            90,
+            40
+          ],
+          [
+            60,
+            40
+          ]
+        ],
+        "value": 40
+      },
+      {
+        "label": "G",
+        "polygon": [
+          [
+            0,
+            40
+          ],
+          [
+            30,
+            40
+          ],
+          [
+            30,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ],
+        "value": 40
+      },
+      {
+        "label": "H",
+        "polygon": [
+          [
+            30,
+            40
+          ],
+          [
+            60,
+            40
+          ],
+          [
+            60,
+            60
+          ],
+          [
+            30,
+            60
+          ]
+        ],
+        "value": 40
+      },
+      {
+        "label": "I",
+        "polygon": [
+          [
+            60,
+            40
+          ],
+          [
+            90,
+            40
+          ],
+          [
+            90,
+            60
+          ],
+          [
+            60,
+            60
+          ]
+        ],
+        "value": 40
+      }
+    ],
+    "bins": [
+      {
+        "min": 0,
+        "max": 51,
+        "label": "R 50 or fewer"
+      },
+      {
+        "min": 51,
+        "max": 101,
+        "label": "R more than 50"
+      }
+    ]
+  },
+  "hug-4-6-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Two plans using the same precincts",
+    "description": "Hypothetical row and column plans regroup the same 900 residents and ballots. Every district has 300 residents and valid votes; each elects one representative by simple majority.",
+    "caption": "Original synthetic totals computed from the nine-precinct example. Both plans are contiguous on the supplied grid. This comparison illustrates aggregation effects, not a finding about a real plan’s legality or intent.",
+    "headers": [
+      "Plan / district",
+      "R votes",
+      "S votes"
+    ],
+    "rows": [
+      [
+        "Row: A B C",
+        "240",
+        "60"
+      ],
+      [
+        "Row: D E F",
+        "120",
+        "180"
+      ],
+      [
+        "Row: G H I",
+        "120",
+        "180"
+      ],
+      [
+        "Column: A D G",
+        "160",
+        "140"
+      ],
+      [
+        "Column: B E H",
+        "160",
+        "140"
+      ],
+      [
+        "Column: C F I",
+        "160",
+        "140"
+      ]
+    ]
+  },
+  "hug-4-6-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "One vote share and two seat shares",
+    "description": "Hypothetical R vote share is 53.3% statewide. With the same votes, R wins 33.3% of seats under the row plan and 100% under the column plan. Values are rounded to one decimal where needed.",
+    "caption": "Original synthetic single-member election. Vote share uses 900 ballots; each seat share uses three seats. A mismatch is an outcome to investigate, not by itself proof of unlawful conduct or deliberate manipulation.",
+    "unitLabel": "Percent (rounded to one decimal)",
+    "categories": [
+      "Votes",
+      "Row seats",
+      "Column seats"
+    ],
+    "series": [
+      {
+        "label": "R share",
+        "values": [
+          53.3,
+          33.3,
+          100
+        ]
+      }
+    ],
+    "max": 100
+  },
+  "hug-4-6-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "R votes in four proposed districts",
+    "description": "Hypothetical proposed districts each contain 100 residents casting 100 valid R-or-S votes. R receives 90 in NW and 40 in NE, SW and SE; S receives the remainder. The planner’s stated aim is supplied in the question.",
+    "caption": "Original synthetic district totals. Equal population and simple shapes do not certify fairness; no actual electorate or legal finding is represented. One representative per district, simple majority, no ties.",
+    "unitLabel": "R votes out of 100 in each district",
+    "regions": [
+      {
+        "label": "NW",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            0,
+            30
+          ]
+        ],
+        "value": 90
+      },
+      {
+        "label": "NE",
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            50,
+            30
+          ]
+        ],
+        "value": 40
+      },
+      {
+        "label": "SW",
+        "polygon": [
+          [
+            0,
+            30
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ],
+        "value": 40
+      },
+      {
+        "label": "SE",
+        "polygon": [
+          [
+            50,
+            30
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ],
+        "value": 40
+      }
+    ],
+    "bins": [
+      {
+        "min": 0,
+        "max": 51,
+        "label": "R 50 or fewer"
+      },
+      {
+        "min": 51,
+        "max": 101,
+        "label": "R more than 50"
+      }
+    ]
   }
 }

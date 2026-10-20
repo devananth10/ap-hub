@@ -1,0 +1,142 @@
+{
+  "topicNumber": "4.6",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "88240bcc52feba992eeca1f2fee8a6346576abc5846522f39da098d3257e0084",
+  "scopeReview": "IMP-4.B.5: voting districts, redistricting and gerrymandering affect election outcomes at multiple scales. Includes packing/cracking and distinguishes redistricting from seat apportionment, outcome from intent, and geometric compactness from aggregation. No real legal judgment or election forecast.",
+  "varietyReview": "Nine-precinct choropleth, six-district row/column comparison table, rounded seat–vote share chart and four-district packing/cracking choropleth. Toy elections explicitly fix residents, turnout, preferences and simple-majority rules. Conceptual/source cases complete eleven with all five skills and varied keys. Answer positions were deliberately varied before publication to avoid a repeating four-question key cycle; option-specific explanations moved with their choices.",
+  "repetitionReview": "Shared fixed precinct data support two different calculations and a scale comparison rather than three numeric clones. A separate four-district example tests deliberate packing/cracking. Context and evidence questions avoid asserting all uneven outcomes prove manipulation. Editorial difficulty only, no empirical calibration.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.census.gov/newsroom/press-kits/2021/2020-census-redistricting.html",
+    "https://www.congress.gov/crs_external_products/R/PDF/R45951/R45951.4.pdf"
+  ],
+  "referenceNote": "Primary Census/CRS accounts checked. All maps, voters, parties, counts and results are original synthetic teaching cases, not actual political affiliations. Equal toy populations and contiguity do not certify compliance with any jurisdiction’s legal criteria. Research references remain QA-only; no human-review claim.",
+  "questions": [
+    {
+      "questionId": "hug-4-6-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "1 seat",
+      "independentReview": "Summed mapped precinct values by rows:240,120,120; complements60,180,180. TotalR480/S420. Each row contains300 residents/votes and adjacent grid cells; no ties or changes in turnout are assumed.",
+      "check": {
+        "type": "district-row-seats"
+      },
+      "questionSha256": "63877988d8c41305bf04d5e344a6d9683e4e2782154edee93378cbe0d5ca2534",
+      "stimulusSha256": "c89d7b29b5fe87f6a033d7b2eab5352b65f37701e928b9a19feff0c9b140d422"
+    },
+    {
+      "questionId": "hug-4-6-002",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "R’s seats rise from 1 to 3 while its statewide vote total stays 480.",
+      "independentReview": "Independently summed columnsA/D/G,B/E/H,C/F/I:160 each, complements140. Verified each precinct appears once in each plan, all districts are contiguous/equal population, and totalR480 remains fixed.",
+      "check": {
+        "type": "district-plan-comparison"
+      },
+      "questionSha256": "6faf70186df02612bcae5e7175f137ca1d0d553ec69cfe976050c0c78d3bac5c",
+      "stimulusSha256": "0d869151cd605f95a795f30bba9413342d1f6324898f2050da44640f982a4db6"
+    },
+    {
+      "questionId": "hug-4-6-003",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Its row-plan seat share is 20.0 points lower, while its column-plan seat share is 46.7 points higher.",
+      "independentReview": "Recomputed480/900×100→53.3,1/3×100→33.3,3/3×100=100 rounded to one decimal. Subtracted displayed shares to obtain−20.0/+46.7 points. No mathematical proportionality guarantee or automatic intent inference is claimed.",
+      "check": {
+        "type": "district-seat-vote-shares"
+      },
+      "questionSha256": "3dea90a7f1d868170d0f8e1354d92b153e7db20910b4ff935b49fe93db6436ba",
+      "stimulusSha256": "7ed0964d425025ebae96997f1b62c688e358f1296ba48f2cddafce8e54eecca0"
+    },
+    {
+      "questionId": "hug-4-6-004",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Packing R voters into NW and cracking other R voters among the remaining districts.",
+      "independentReview": "Verified four100-vote districts yield R210/S190 statewide yet R1/S3 seats. R90 is concentrated in one district and R40 remains below50 in three others. Intent is explicitly supplied, not inferred from a rectangle or aggregate gap.",
+      "check": {
+        "type": "district-packing-cracking"
+      },
+      "questionSha256": "1f0d83f165743c6204ad9c03bdc5f735bf7edc5b93905d796e7f7a043d13767b",
+      "stimulusSha256": "2387f8ec5cd54c38e49433013f9444424e44ddd46654c272bc1df8f0b6b91826"
+    },
+    {
+      "questionId": "hug-4-6-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Redistricting of internal electoral boundaries",
+      "independentReview": "Checked the basic redistricting definition against the Census Bureau’s own program. Did not conflate redrawing district lines with apportioning a total number of seats among states.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "0088831d53735fd03db18c543d44d1ecfc814a61df5232dcc89d45da2b06d3fc"
+    },
+    {
+      "questionId": "hug-4-6-006",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Evidence about the drawing process, intended advantage, voter distribution and alternative feasible plans.",
+      "independentReview": "Distinguished visual suspicion from evidence for deliberate advantage using primary CRS discussion. No claim that a specific shape, seat–vote mismatch or single measure proves a real legal violation.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "de3f7f26baed0721dcb59c09669333e8f31087f510b1ca6c5c1a0f7b877c988d"
+    },
+    {
+      "questionId": "hug-4-6-007",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "District majorities and resulting seat totals, because compactness alone does not fix how voters are aggregated.",
+      "independentReview": "Checked that the nine-cell row/column example supplies a concrete counterexample to shape/population alone fixing seats. The claim is possibility, not that every alternative grouping changes outcomes.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b6be54ecdad2251c35c15657909dda982314fa84899fb15c62f5f0272b01239e"
+    },
+    {
+      "questionId": "hug-4-6-008",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Votes are aggregated into geographically defined districts, so local majorities and their arrangement matter.",
+      "independentReview": "Compared statewide and district denominators rather than declaring the outcome mathematically impossible. Spatial concentration, district choices and allocation rules are possible mechanisms; intent is not inferred from the aggregate result alone.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "4729d3016a892c95b20e22a9db1a844606c9c7e4cbd7f4f63392cf9470e8ba76"
+    },
+    {
+      "questionId": "hug-4-6-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Which residents are grouped into each district, rather than necessarily the total seat count.",
+      "independentReview": "Separated seat total from district geography, consistent with the supplied fixed-ten-seat example. No particular jurisdiction’s census timetable or court rule is assumed.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "4071c54ce7cc5e6b69eef100573a138446d5fcf6ccc5920f3711860600317e84"
+    },
+    {
+      "questionId": "hug-4-6-010",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Cracking the bloc across several districts.",
+      "independentReview": "Matched the explicitly deliberate distribution to the cracking mechanism. No claim is made that every below-majority group has been cracked; intent and the supplied drawing process distinguish the scenario.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "f84ffcd6e1719e2fab1c89f54859cd88f6715f1528560e8c065fbfd446921ce8"
+    },
+    {
+      "questionId": "hug-4-6-011",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Multiple factors changed, so a controlled comparison should hold the same vote data fixed while regrouping districts.",
+      "independentReview": "Checked controlled-comparison logic: the toy maps hold ballots fixed, unlike the researcher’s confounded scenario. The proposed analysis isolates grouping under assumptions rather than predicting voter response to a real future redraw.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "48fdf42f0547309df3e8a56dface4031ff2853909cc5a7b79e5c9d5490370ed1"
+    }
+  ]
+}

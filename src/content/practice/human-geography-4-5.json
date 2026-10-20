@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 4,
+  "topicId": "topic-4-5",
+  "questions": [
+    {
+      "id": "hug-4-5-001",
+      "prompt": "Which action in the boundary record is demarcation rather than definition, delimitation or administration?",
+      "options": [
+        "Writing the agreed boundary description in the treaty.",
+        "Drawing the agreed line on a detailed map.",
+        "Installing boundary markers at the agreed locations.",
+        "Operating a checkpoint under the agreed crossing rules."
+      ],
+      "correctIndex": 2,
+      "explanation": "Demarcation physically marks a boundary on the ground. The treaty description defines it, mapping delimits its course, and checkpoint operations administer its use. These activities are related, but putting markers in place is the physical marking requested here. A: Treaty wording establishes the agreed description rather than its physical markers. B: A mapped course is delimitation rather than installation on the ground. C: Physical markers are the clearest example of demarcation in this record. D: Managing crossings is administration, even if the checkpoint is near a marker."
+    },
+    {
+      "id": "hug-4-5-002",
+      "prompt": "Assume the coastal state has a 12-nautical-mile territorial sea and a 200-nautical-mile EEZ, with no overlapping claims. Which statement about the marked positions is correct?",
+      "options": [
+        "B at 50 nmi is beyond the territorial sea but within the EEZ, where resource rights differ from full territorial sovereignty.",
+        "A at 5 nmi is beyond the territorial sea because all maritime limits start at 12 nmi.",
+        "C at 210 nmi is inside this state’s 200-nmi EEZ.",
+        "B is land territory because economic rights make every EEZ equivalent to sovereign land."
+      ],
+      "correctIndex": 0,
+      "explanation": "Distances are measured from the stated baseline. A at 5 nmi is within 12; B at 50 is beyond 12 but within 200; C at 210 exceeds the assumed EEZ limit. In the EEZ, coastal-state resource rights and specified jurisdiction coexist with other states’ navigation freedoms; the zone is not simply equivalent to land territory. A: This correctly locates B and distinguishes the kinds of rights in the two zones. B: Five is less than 12, so A is inside the assumed territorial sea. C: Two hundred ten exceeds the stated 200-nmi limit. D: EEZ rights are not full sovereignty over the zone as if it were land."
+    },
+    {
+      "id": "hug-4-5-003",
+      "prompt": "Along the shown transect, opposite baselines are 300 nmi apart and each state proposes an EEZ extending 200 nmi toward the other. What is the width of the overlapping claimed reach before delimitation?",
+      "options": [
+        "0 nmi, because separate states cannot have overlapping proposals.",
+        "100 nmi, indicating a need to address overlap rather than assume both full proposed reaches are exclusive.",
+        "200 nmi, because one state’s proposed reach is the overlap.",
+        "400 nmi, because adding both reaches gives the overlap itself."
+      ],
+      "correctIndex": 1,
+      "explanation": "Place A’s baseline at 0 and B’s at 300. A’s proposed reach extends to 200; B’s extends toward A to 100. Their common interval is 100–200, or 100 nmi. This simplified overlap calls for maritime delimitation; it does not by itself prescribe the final legally agreed line or resolve other relevant circumstances. A: The supplied proposed reaches intersect. B: This correctly computes 200+200−300=100 along the transect. C: Two hundred is a single proposed reach, not the common interval. D: Four hundred is the sum before accounting for the 300-nmi separation."
+    },
+    {
+      "id": "hug-4-5-004",
+      "prompt": "Crossing rules change but the mapped border stays in the same place. Which interpretation correctly uses the waiting-time data?",
+      "options": [
+        "Both categories have the same proportional increase because both add 30 minutes.",
+        "The border must move because a fixed line cannot change its effects.",
+        "Freight waiting time rises by 4 times, while commuter waiting rises by 2.5 times.",
+        "Both add 30 minutes, but freight rises to 2.5 times its earlier wait and commuter waiting to 4 times."
+      ],
+      "correctIndex": 3,
+      "explanation": "Freight increases from 20 to 50 minutes and commuters from 10 to 40. Both absolute changes are 30, but their ratios differ:50/20=2.5 and 40/10=4. Boundary administration can alter interactions without moving the territorial line. The data illustrate outcomes of the supplied rule change, not a complete causal model for all delays. A: Equal absolute changes can have different ratios when starting values differ. B: A boundary’s administration can change while its location stays fixed. C: The two ratios are reversed. D: This gives both changes correctly and preserves the distinction between line location and its operation."
+    },
+    {
+      "id": "hug-4-5-005",
+      "prompt": "What does the Berlin Conference of 1884–1885 illustrate about the political creation of boundaries in Africa?",
+      "options": [
+        "Existing African cultural divisions were the only basis for every later border.",
+        "Colonial powers’ agreements and claims helped shape territorial control, without implying that every present border was completely drawn at that meeting.",
+        "The meeting abolished European colonial territorial ambitions.",
+        "All present African state borders were surveyed and physically marked at that conference."
+      ],
+      "correctIndex": 1,
+      "explanation": "The Berlin Conference formed part of the colonial process through which outside powers organized claims and control in Africa. It is relevant to politically imposed territorial arrangements, but it did not produce a fully surveyed map of every current border in one meeting. Specific boundaries have distinct negotiations, histories and later changes. A: Political power and colonial claims were central; cultural fit cannot be assumed for every line. B: This recognizes the colonial role without the inaccurate all-borders-at-once claim. C: The conference regulated colonial claims rather than ending those ambitions. D: Physical surveying and marking of every present boundary did not occur at the meeting."
+    },
+    {
+      "id": "hug-4-5-006",
+      "prompt": "The 1953 Korean Armistice established a demilitarized zone as a buffer between opposing forces. What does this show about a boundary-related zone?",
+      "options": [
+        "A buffer must follow an ancient language division.",
+        "A demilitarized zone is simply a river boundary created by erosion.",
+        "Military agreements can create and regulate a spatial buffer rather than merely follow a preexisting cultural or physical division.",
+        "A buffer automatically ends every political dispute between the opposing sides."
+      ],
+      "correctIndex": 2,
+      "explanation": "A demilitarized zone is a politically negotiated spatial arrangement intended to separate forces and regulate activity. The Korean Armistice provides an example. Such an agreement does not require the zone to follow a cultural divide or natural feature, and establishing a buffer does not itself settle every issue in a conflict. A: A military buffer need not coincide with a language division. B: The specified mechanism is an agreement rather than erosion. C: This identifies a policy-created zone and its regulating function. D: A buffer arrangement is not proof that every broader conflict has been resolved."
+    },
+    {
+      "id": "hug-4-5-007",
+      "prompt": "A state claims an EEZ but an analyst says that the claim automatically bans every foreign ship from ordinary navigation there. What is the main error?",
+      "options": [
+        "EEZ resource rights are being confused with unrestricted authority to exclude all foreign navigation.",
+        "An EEZ is measured only from the opposite country’s capital.",
+        "Navigation freedoms eliminate all coastal-state resource-management rights.",
+        "EEZs apply only to inland lakes and never to ocean coasts."
+      ],
+      "correctIndex": 0,
+      "explanation": "UNCLOS distinguishes coastal-state resource rights and specified jurisdiction in an EEZ from other states’ navigation freedoms subject to the Convention. Treating the EEZ as an automatic total exclusion zone overstates those rights. Recognizing navigation freedoms also does not erase the coastal state’s resource responsibilities. A: This correctly identifies the overstatement of the zone’s legal-geographic function. B: EEZ distance is measured from the relevant baseline, not a foreign capital. C: The Convention provides both resource rights and navigation freedoms. D: The concept specifically concerns maritime zones adjacent to coasts."
+    },
+    {
+      "id": "hug-4-5-008",
+      "prompt": "A border closely follows a major language division, but minority-language communities live on each side. Which conclusion is most justified?",
+      "options": [
+        "A cultural correspondence requires every resident on each side to be identical.",
+        "The minority communities prove that no cultural pattern influenced placement.",
+        "The border must stop functioning whenever a bilingual resident crosses.",
+        "A broad cultural correspondence can coexist with internal diversity and cross-border relationships."
+      ],
+      "correctIndex": 3,
+      "explanation": "Political boundaries may correspond with cultural distributions without perfectly separating homogeneous populations. Minority communities, bilingual practices and continuing relationships can remain on both sides. Evaluating the border’s effects requires attention to that variation rather than assuming either perfect alignment or no relationship at all. A: A broad pattern does not require identical individuals. B: Minority presence does not rule out influence from a larger distributional pattern. C: Crossing by a bilingual person does not abolish jurisdiction. D: This recognizes both the stated general correspondence and its limits."
+    },
+    {
+      "id": "hug-4-5-009",
+      "prompt": "A treaty’s words identify a border, but the two governments draw different mapped courses from those words. Which task most directly addresses the disagreement?",
+      "options": [
+        "Counting tourists at the checkpoint without examining the disputed course.",
+        "Clarifying the agreed description and delimiting a mutually agreed mapped course.",
+        "Assuming that any new fence automatically settles the treaty’s meaning.",
+        "Replacing the legal description with the map designer’s favorite color."
+      ],
+      "correctIndex": 1,
+      "explanation": "The disagreement concerns how the agreed description translates into a spatial course. Clarifying the description and agreeing on delimitation addresses that problem. Installing a fence or counting flows does not by itself resolve the interpretive disagreement about where the border belongs. A: Tourist counts do not locate the disputed course. B: This links agreed definition with the missing common mapped interpretation. C: Physical marking alone need not resolve a disagreement over authority or location. D: Cartographic styling does not settle the substantive boundary description."
+    },
+    {
+      "id": "hug-4-5-010",
+      "prompt": "A government opens one border crossing for licensed freight but keeps restrictions on other movement. What is the best description of the boundary’s function?",
+      "options": [
+        "It has disappeared because any permitted movement erases sovereignty.",
+        "It must be completely open to every person because freight is permitted.",
+        "It can filter different flows through selective rules rather than operate only as fully open or fully closed.",
+        "Its location necessarily shifts whenever a freight permit is issued."
+      ],
+      "correctIndex": 2,
+      "explanation": "Boundary administration can differentiate categories of goods, travelers and permissions. Allowing one regulated flow does not automatically remove the boundary or open every other flow. A fixed line can therefore function selectively through gates, permits and different crossing conditions. A: Permitted regulated movement can occur across a continuing boundary. B: Permission for licensed freight does not establish permission for every traveler. C: This accounts for the selective administration explicitly described. D: Issuing a permit does not require moving the jurisdictional line."
+    },
+    {
+      "id": "hug-4-5-011",
+      "prompt": "Two communities share a watershed, but an international boundary places them under different water-management institutions. Which study would best explain the boundary’s resource effects?",
+      "options": [
+        "Compare the institutions’ allocation rules, agreements and upstream/downstream connections rather than assume the line stops the water.",
+        "Treat all water on either side as disconnected because maps use different country colors.",
+        "Infer the entire water agreement from the shapes of national flags.",
+        "Measure only the length of the border without examining the watershed or rules."
+      ],
+      "correctIndex": 0,
+      "explanation": "A political line can divide governing authority while a watershed remains physically connected. Resource effects depend on institutional rules, agreements, uses and the flow relationships across the boundary. Neither map colors nor boundary length alone explains how water is allocated or how one community’s actions affect another. A: This combines physical connectivity and the relevant governing arrangements. B: Political categorization does not sever hydrological connections. C: Flag design does not specify resource-sharing rules. D: Length alone omits the resource network and allocation institutions."
+    }
+  ]
+}

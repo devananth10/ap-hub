@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 4,
+  "topicId": "topic-4-6",
+  "questions": [
+    {
+      "id": "hug-4-6-001",
+      "prompt": "Create three districts from the three horizontal rows: A–B–C, D–E–F and G–H–I. Each district elects one representative by simple majority. How many seats does party R win?",
+      "options": [
+        "0 seats",
+        "2 seats",
+        "3 seats",
+        "1 seat"
+      ],
+      "correctIndex": 3,
+      "explanation": "Each row has 300 valid votes. R has 240 in the top row and 120 in each lower row; S has 60,180 and 180. R therefore wins the top district only, for one of three seats. Statewide vote totals do not substitute for district-level majorities in this single-member system. A: R wins the top row 240 to 60, so it does not lose all three. B: R has only 120 of 300 in each lower row and does not win either. C: A statewide majority does not make R a majority in all three row districts. D: Only the top row gives R more votes than S."
+    },
+    {
+      "id": "hug-4-6-002",
+      "prompt": "The two plans regroup exactly the same nine precincts and votes. What changes when the row plan is replaced by the column plan?",
+      "options": [
+        "R’s seats rise from 1 to 3 while its statewide vote total stays 480.",
+        "The number of residents represented in each district doubles.",
+        "Party S wins all three column districts because each has 140 S votes.",
+        "R’s statewide vote total rises from 480 to 900."
+      ],
+      "correctIndex": 0,
+      "explanation": "In the row plan, R wins 240–60 once and loses 120–180 twice. In the column plan, R wins 160–140 in each district. Both plans total 480 R and 420 S votes, with 300 residents per district. Regrouping changes which votes are aggregated together, not the underlying votes or population. A: This matches the district majorities and unchanged statewide sum. B: Both plans keep three districts of 300 residents each. C: Each column has 160 R votes, so 140 S votes do not win a majority. D: Boundary grouping does not turn S ballots into R ballots."
+    },
+    {
+      "id": "hug-4-6-003",
+      "prompt": "Using the rounded percentages shown, how does R’s seat share compare with its statewide vote share under the two plans?",
+      "options": [
+        "Its row-plan seat share is 20.0 percentage points higher than its vote share.",
+        "Its column-plan seat share is 46.7 percent of its vote share.",
+        "Its row-plan seat share is 20.0 points lower, while its column-plan seat share is 46.7 points higher.",
+        "The three percentages must be equal in every single-member district system."
+      ],
+      "correctIndex": 2,
+      "explanation": "The displayed vote share is 53.3%. The row seat share is 33.3%, a difference of−20.0 percentage points; the column seat share is 100%, a difference of+46.7 points. These are percentage-point differences, not relative percentage changes. A seat–vote mismatch alone does not establish the intent or legality of a real plan. A: The row seat share is lower, not higher. B: Forty-six point seven is the point difference 100−53.3, not the stated ratio. C: Both direction and magnitude match the rounded chart. D: District aggregation can yield seat shares different from statewide vote shares."
+    },
+    {
+      "id": "hug-4-6-004",
+      "prompt": "A planner explicitly seeks to reduce R’s seats by concentrating many R voters in NW and spreading the remaining R voters below a majority in each other district. Which combined strategy is described?",
+      "options": [
+        "Increasing R’s statewide support by changing where the boundaries are drawn.",
+        "Packing R voters into NW and cracking other R voters among the remaining districts.",
+        "Cracking R voters into NW and packing all S voters into one other district.",
+        "Creating proportional representation in which statewide votes directly allocate every seat."
+      ],
+      "correctIndex": 1,
+      "explanation": "Packing concentrates like-minded voters in a district, while cracking divides other supporters among districts where they fall short of a majority. In this supplied plan R wins 90–10 in NW but loses 40–60 in each remaining district. The planner’s stated objective supplies intent; shape or seat totals alone would not prove it in an actual case. A: Boundary drawing regroups existing voters; it does not itself change statewide support. B: This matches the stipulated concentration and below-majority distribution. C: NW concentrates R rather than divides it, and S is not packed into just one district. D: The described system still elects one representative per district rather than allocating seats proportionally statewide."
+    },
+    {
+      "id": "hug-4-6-005",
+      "prompt": "After uneven population growth, a state redraws legislative district lines to reflect the changed distribution of residents. What process is being described?",
+      "options": [
+        "Redistricting of internal electoral boundaries",
+        "The diffusion of a religious hearth",
+        "The creation of an international maritime boundary",
+        "Automatic secession of every growing city"
+      ],
+      "correctIndex": 0,
+      "explanation": "Redistricting redraws electoral district boundaries. Population shifts can change the balance of residents represented by existing districts and motivate new lines. This concerns internal representation, not creation of a new independent state or movement of an international sea boundary. A: This names the redrawing of the specified electoral boundaries. B: No spread of religious practices is described. C: The lines are legislative districts inside a state rather than maritime limits. D: Population growth does not automatically create independent states."
+    },
+    {
+      "id": "hug-4-6-006",
+      "prompt": "A map has an irregular district outline. Which evidence is most important before calling it deliberate partisan gerrymandering?",
+      "options": [
+        "The assumption that all irregular lines necessarily favor the same party.",
+        "Only the number of bends in the outline.",
+        "Evidence about the drawing process, intended advantage, voter distribution and alternative feasible plans.",
+        "Only whether the map uses a blue background."
+      ],
+      "correctIndex": 2,
+      "explanation": "Gerrymandering concerns deliberate manipulation of district boundaries for advantage. Shape can prompt investigation but does not by itself establish purpose or effects. Population geography, geographic barriers, communities and other constraints can also affect outlines, so the process and plausible alternatives matter. A: The beneficiary depends on actual distributions and district assignments. B: Bends alone do not identify intent or the distribution of voters. C: This investigates mechanism, purpose and comparative outcomes in context. D: Background color is a styling choice rather than evidence of manipulation."
+    },
+    {
+      "id": "hug-4-6-007",
+      "prompt": "Two district plans have equally compact shapes and equal population totals, but group the same voters differently. What can still differ?",
+      "options": [
+        "The state’s external sovereignty solely because the internal lines change.",
+        "The number of existing ballots cast statewide solely because the map is redrawn.",
+        "Every voter’s candidate choice solely because the line changes.",
+        "District majorities and resulting seat totals, because compactness alone does not fix how voters are aggregated."
+      ],
+      "correctIndex": 3,
+      "explanation": "Compactness and population balance do not uniquely determine electoral aggregation. Different feasible groupings of the same people can change district majorities in a single-member system. That does not require changing ballots, citizenship or the state’s external status. A: Internal redistricting does not by itself alter external statehood. B: The stated same ballots remain fixed in the comparison. C: The scenario holds choices fixed and changes grouping. D: This identifies an outcome still sensitive to the arrangement of boundaries."
+    },
+    {
+      "id": "hug-4-6-008",
+      "prompt": "Party R wins 53% statewide but receives fewer than half the seats in single-member districts. Which explanation should a geographer investigate before assuming the statewide result is impossible?",
+      "options": [
+        "Seat totals must be proportional because all districts appear on the same map.",
+        "Votes are aggregated into geographically defined districts, so local majorities and their arrangement matter.",
+        "A statewide vote majority guarantees every district is won by R.",
+        "The result proves that some votes physically crossed an international border."
+      ],
+      "correctIndex": 1,
+      "explanation": "A statewide vote share combines votes across the whole territory, while single-member seats depend on separate district outcomes. Spatial concentration and district boundaries can produce different seat shares from the aggregate vote share. Understanding the pattern requires district-level data and the rules used to allocate seats. A: Displaying districts together does not make the allocation rule proportional. B: This identifies the scale and aggregation difference without assuming an illegal cause. C: A statewide majority can coexist with losses in several districts. D: No international movement of votes is needed to produce the described outcome."
+    },
+    {
+      "id": "hug-4-6-009",
+      "prompt": "A state retains ten legislative seats but redraws the internal lines after a census. What is changing in this description?",
+      "options": [
+        "The total number of seats from ten to an unspecified larger value.",
+        "The geographic distance between all residents.",
+        "Which residents are grouped into each district, rather than necessarily the total seat count.",
+        "The number of independent countries in the region."
+      ],
+      "correctIndex": 2,
+      "explanation": "Redistricting changes the geographic grouping of representation even when the total number of seats remains fixed. The premise gives ten seats before and after; it does not specify reapportionment to a larger legislature, new sovereign states or physical relocation of the residents. A: The premise explicitly retains ten seats. B: Drawing lines does not move residents or alter all physical distances. C: This identifies the internal grouping that the process actually changes. D: Internal electoral districts are not new independent countries."
+    },
+    {
+      "id": "hug-4-6-010",
+      "prompt": "A cohesive bloc of voters is deliberately split among several districts so that it is below a majority in each. Which strategy is most directly described?",
+      "options": [
+        "Cracking the bloc across several districts.",
+        "Restoring a relict international border.",
+        "Assigning seats directly in proportion to the statewide vote.",
+        "Packing the bloc into one overwhelming majority district."
+      ],
+      "correctIndex": 0,
+      "explanation": "Cracking spreads a bloc across districts to reduce its ability to form a majority in any one of them. Packing instead concentrates it in a small number of districts. The mechanism concerns district composition, not an international boundary or a statewide proportional-allocation rule. A: This matches the stated splitting and below-majority outcome. B: No former international boundary is involved. C: The strategy operates through district majorities rather than proportional statewide allocation. D: Packing concentrates rather than distributes the bloc across several minority positions."
+    },
+    {
+      "id": "hug-4-6-011",
+      "prompt": "A researcher compares two plans but allows turnout and candidate preferences to change between them. What limits a claim that boundaries alone caused the different seat totals?",
+      "options": [
+        "A single statewide percentage identifies every district’s winning candidate.",
+        "District maps cannot be studied with any quantitative evidence.",
+        "Any difference in turnout proves boundaries had no effect at all.",
+        "Multiple factors changed, so a controlled comparison should hold the same vote data fixed while regrouping districts."
+      ],
+      "correctIndex": 3,
+      "explanation": "To isolate an aggregation effect, a comparison can hold the same votes and population fixed while varying only district membership. If turnout and preferences also change, they may contribute to the seat difference. This does not prove boundaries are irrelevant; it limits attribution to that one factor. A: The statewide percentage alone does not recover the geographic distribution of votes. B: Quantitative district comparisons are useful when their assumptions are clear. C: Other changes do not rule out a boundary effect, but complicate isolation of it. D: This identifies confounding and a clearer controlled comparison."
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "topicNumber": "4.5",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "9172f7330af3d049c1feaf88e51fda46d822d98db68236eaeac2f5ad23ef1096",
+  "scopeReview": "IMP-4.B.1–4: definition/delimitation/demarcation/administration, contested lines, cultural divisions, Berlin Conference, DMZ policy, land/maritime resource interactions and UNCLOS territorial sea/EEZ. Maritime breadths are baseline-based, sovereign resource rights differ from territorial sovereignty, and overlap is not automatically resolved.",
+  "varietyReview": "Boundary-task table, distance-labeled coastal diagram, opposing-baseline overlap map and crossing-wait chart. Other applications address colonial agreements, military buffers, navigation/resource rights, minority distributions, mapped-course disputes, filtering and watersheds. Four meaningful stimuli, all five skills and varied keys.",
+  "repetitionReview": "Function-specific processes distinguish the set from4.4 creation-type classifications. Two maritime figures address different tasks, location/rights and overlap accounting; no repeated numeric clone or copyrighted material. Difficulty is editorial rather than empirically calibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.un.org/Depts/los/convention_agreements/texts/unclos/part2.htm",
+    "https://www.un.org/Depts/los/convention_agreements/texts/unclos/part5.htm",
+    "https://www.un.org/Depts/los/convention_agreements/convention_overview_convention.htm",
+    "https://archiv.diplo.de/arc-en/the-political-archive/general-act-2684414",
+    "https://www.archives.gov/milestone-documents/armistice-agreement-restoration-south-korean-state"
+  ],
+  "referenceNote": "Primary treaty/institutional records checked; all distances, coasts, crossing data and contracts are invented teaching cases. Simplified overlap is one-dimensional, not a final legal delimitation; extended shelf and actual disputes are not adjudicated. Research links remain QA-only. No human review or new educational-resource publication.",
+  "questions": [
+    {
+      "questionId": "hug-4-5-001",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Installing boundary markers at the agreed locations.",
+      "independentReview": "Independently matched all four supplied actions to distinct boundary-making functions. Wording distinguishes the physical installation from both a map and enforcement, preventing the checkpoint’s physical building from becoming a competing marker answer.",
+      "check": {
+        "type": "function-boundary-stages"
+      },
+      "questionSha256": "657122c0d00e1887d245b056af1c2963dc77308c80ebcd56c36198891500c6ea",
+      "stimulusSha256": "740887a1689ab8df6427dffd5e177bad6d80cc3044079a77aacbb6aba3d3c7ed"
+    },
+    {
+      "questionId": "hug-4-5-002",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "B at 50 nmi is beyond the territorial sea but within the EEZ, where resource rights differ from full territorial sovereignty.",
+      "independentReview": "Checked5<12<50<200<210 and UNCLOS Articles3,56–58. Baseline, claimed breadths and lack of overlaps are explicit; no inference denies possible continental-shelf rights beyond200 or treats territorial-sea navigation as unrestricted land access.",
+      "check": {
+        "type": "function-maritime-positions",
+        "distances": [
+          5,
+          50,
+          210
+        ],
+        "territorial": 12,
+        "eez": 200
+      },
+      "questionSha256": "831a50635880faca7f7e30bd05b6af8ed1e006495d9d3c891810b893495aa09e",
+      "stimulusSha256": "674d5588663f980c9c00dfe287c0aa7f2c48bf6cdcb0482451eccec461fbdb73"
+    },
+    {
+      "questionId": "hug-4-5-003",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "100 nmi, indicating a need to address overlap rather than assume both full proposed reaches are exclusive.",
+      "independentReview": "Independently intersected intervals[0,200] and[100,300] to obtain[100,200], width100. Assumed straight opposite baselines on one transect, not a two-dimensional area or guaranteed equidistance outcome; UNCLOS74 requires equitable delimitation by agreement.",
+      "check": {
+        "type": "function-overlapping-reach",
+        "separation": 300,
+        "reach": 200
+      },
+      "questionSha256": "9e0dc1fc79dc68e818a337c808d498ba4a2cc823bf2abf1b5bf568465166b53d",
+      "stimulusSha256": "1bafcf7c0295d52d54078cd98f74c19aab181ec80d665d93dcc94cf815526b2e"
+    },
+    {
+      "questionId": "hug-4-5-004",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Both add 30 minutes, but freight rises to 2.5 times its earlier wait and commuter waiting to 4 times.",
+      "independentReview": "Recomputed50−20=30,40−10=30,50/20=2.5,40/10=4. Does not call the ratios250% and400% increases; the relative increases would be150% and300%. Context supplies rule change but no universal causal estimate.",
+      "check": {
+        "type": "function-crossing-waits"
+      },
+      "questionSha256": "244a6e844ccf88555eab79dd80007b776b10b6243575257f24874ddb97ab2658",
+      "stimulusSha256": "501b4cb14417eed57ba5b7d2ba1f04a7e09c0d39fe5b86d61220ef1c8a61796f"
+    },
+    {
+      "questionId": "hug-4-5-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Colonial powers’ agreements and claims helped shape territorial control, without implying that every present border was completely drawn at that meeting.",
+      "independentReview": "Verified the1884–85 meeting and General Act with Germany’s Foreign Office archive and museum. Avoided claiming every current African boundary was drawn there or that African territories were culturally empty.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "813fcf6fdfb9079d97b04cc96fb1910c5340198e80486b88c0f891704b40e3c8"
+    },
+    {
+      "questionId": "hug-4-5-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Military agreements can create and regulate a spatial buffer rather than merely follow a preexisting cultural or physical division.",
+      "independentReview": "Checked the original armistice context in the U.S. National Archives and UNC history. The DMZ is not equated with a final peace treaty, and no current military deployment or border-crossing advice is provided.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "c9423c5197313e508e65b4680962b69856f681c21b6af7125279754f1ab30ad3"
+    },
+    {
+      "questionId": "hug-4-5-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "EEZ resource rights are being confused with unrestricted authority to exclude all foreign navigation.",
+      "independentReview": "Checked UNCLOS56–58 and official overview. The question concerns ordinary navigation in the general EEZ framework, not a specific security incident, resource violation or unlimited immunity from all applicable laws.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "25c5c59d3a824719aedf67caa4fd251b67f78b2674d7dcc84aaf4e1ed88f524a"
+    },
+    {
+      "questionId": "hug-4-5-008",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "A broad cultural correspondence can coexist with internal diversity and cross-border relationships.",
+      "independentReview": "Checked the distinction between a majority pattern and universal membership. No nationality, political preference or legal citizenship is assigned from a person’s language alone.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "619abcb20e9207798e3b21fa3c3f8537cf38c5c5149f4daa373383d031d72724"
+    },
+    {
+      "questionId": "hug-4-5-009",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Clarifying the agreed description and delimiting a mutually agreed mapped course.",
+      "independentReview": "Matched the dispute to definition/delimitation rather than assuming unilateral physical demarcation settles it. This is a hypothetical analytical example, not advice on an actual treaty dispute.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "3fcbd68cd79175612921595063c8f182877fbc395c61d1db457207749aa90960"
+    },
+    {
+      "questionId": "hug-4-5-010",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "It can filter different flows through selective rules rather than operate only as fully open or fully closed.",
+      "independentReview": "Reviewed categories of flow separately and retained the unchanged-location premise. No claim about the rules of an actual country, visa category or customs procedure is made.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "9aa6221600a7ed48c0baa91e5d7c17df62b50bcb94a6166d4028436dc0ccb0ab"
+    },
+    {
+      "questionId": "hug-4-5-011",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Compare the institutions’ allocation rules, agreements and upstream/downstream connections rather than assume the line stops the water.",
+      "independentReview": "Checked physical connectivity against institutional separation and identified evidence for both. The question does not assign legal entitlement to water or assume a treaty guarantees equal outcomes.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "f34df43bee55ee2416e927cc9dcc40c9bc032dc1d6e0540bc56d95a6f268bce1"
+    }
+  ]
+}

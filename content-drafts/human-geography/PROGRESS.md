@@ -1,8 +1,8 @@
 # AP Human Geography progress
 
-Published **341/748 MCQs across 31/68 topics**. Exactly eleven per completed topic; incomplete topics remain empty. No unresolved item is published. No independent human review.
+Published **363/748 MCQs across 33/68 topics**. Exactly eleven per completed topic; incomplete topics remain empty. No unresolved item is published. No independent human review.
 
-Stimulus questions: **124 (36.36%)**; target 35–40% when the bank is complete. By type: {"map:choropleth":10,"map:dot":5,"map:isoline":1,"map:reference":11,"table":52,"chart":27,"map:flow":6,"model":7,"pyramid":3,"map:proportional":2}. Explicit evidence/numerical/geometry checks: 137; other questions have recorded reasoning reviews.
+Stimulus questions: **132 (36.36%)**; target 35–40% when the bank is complete. By type: {"map:choropleth":12,"map:dot":5,"map:isoline":1,"map:reference":13,"table":54,"chart":29,"map:flow":6,"model":7,"pyramid":3,"map:proportional":2}. Explicit evidence/numerical/geometry checks: 145; other questions have recorded reasoning reviews.
 
 Completed topics:
 - 1.1: eleven published questions; topic-1-1
@@ -36,8 +36,10 @@ Completed topics:
 - 4.2: eleven published questions; topic-4-2
 - 4.3: eleven published questions; topic-4-3
 - 4.4: eleven published questions; topic-4-4
+- 4.5: eleven published questions; topic-4-5
+- 4.6: eleven published questions; topic-4-6
 
-Next topic: **4.5**. Remaining: 4.5, 4.6, 4.7, 4.8, 4.9, 4.10, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 5.10, 5.11, 5.12, 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8, 6.9, 6.10, 6.11, 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8. Resume in official order; do not regenerate completed questions. No pending graphic assets for published topics. Read QA files, rerun validation/browser checks and inspect Git status before continuing.
+Next topic: **4.7**. Remaining: 4.7, 4.8, 4.9, 4.10, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 5.10, 5.11, 5.12, 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8, 6.9, 6.10, 6.11, 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8. Resume in official order; do not regenerate completed questions. No pending graphic assets for published topics. Read QA files, rerun validation/browser checks and inspect Git status before continuing.
 
 Course/video foundation checkpoint: cb53a849201db7b863bfeec26e508dec82c12b8a, verified on GitHub. All 68 topics have both instructors (136 videos), thirteen unmapped extras remain unpublished. Preserve video mappings, notes, instructor preference, watched tracking, feedback and all existing Chemistry/Calculus content. No public deployment or paid API.
 

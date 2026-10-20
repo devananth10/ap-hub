@@ -279,3 +279,17 @@ test('boundary checks retain coordinate placement, relative chronology, former f
   const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
  }
 });
+
+test('boundary-function checks separate tasks, baseline distances, overlap intervals and absolute versus relative waits',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-4-5.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-4-5.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[2][1]='Draw the agreed line'],[1,s=>s.points[1].label='B: 250 nmi'],[2,s=>s.paths[0].label='400 nmi'],[3,s=>s.series[1].values[0]=20]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+
+test('district models recompute fixed-vote row/column seats, rounded shares and packing/cracking totals',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-4-6.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-4-6.json','utf8'));
+ for(const [i,change] of [[0,s=>s.regions[3].value=80],[0,s=>s.regions[3].polygon[0][0]=5],[1,s=>s.rows[3][1]='140'],[2,s=>s.series[0].values[0]=33.3],[3,s=>s.regions[1].value=60]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});

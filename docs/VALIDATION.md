@@ -1,5 +1,13 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 4.5–4.6
+
+363 original MCQs across33 topics are published, eleven each;132 meaningful stimuli (36.36%) and145 explicit evidence/numerical/geometry checks. Boundary functions cover physical marking, mapped courses, administration, maritime distances/rights, overlap and resource connections. Electoral questions use original fixed-vote maps to distinguish district grouping, statewide votes, seat outcomes, packing/cracking and evidence of intent.
+
+All158 unit tests, structural/evidence checks, TypeScript, production build, all68 Geography scopes and standard application routes passed. Both complete browser sessions scored11/11. All eight stimuli passed390×844 inspection; the nine-precinct map also passed desktop light mode, keyboard zoom200/reset100 and review-time enlargement. The district checker validates exact grid polygons, one-time precinct coverage, equal populations, adjacency, majorities and rounded shares. A changed polygon with refreshed hashes is rejected. Answer positions and explanations were varied together before publication to avoid a repeating key cycle. Existing questions, resources and student storage remain untouched. No human review or empirical difficulty-calibration claim. Next4.7;35 topics/385 questions remain.
+
+The first standard smoke run failed on an invalid Biology Practice scope (500 instead of404) with a preview JSON parse error. Logs were preserved; all nine development JSON manifests parsed in a later snapshot. No preview restart or cache deletion was used. A complete smoke rerun and80 no-retry preview requests subsequently passed without new parse errors. This confirms recovery, not a permanent fix; see PREVIEW_STABILITY.md.
+
 ## Human Geography Topics 4.3–4.4
 
 341 original MCQs across31 topics are published, eleven each;124 meaningful stimuli (36.36%) and137 explicit evidence/numerical/geometry checks. Political Power/Territoriality includes routing times, constrained finance, rival-support networks and access permits. One question initially offered two defensible contrasts; hug-4-3-006 was corrected before publication and its hashes/reasoning were renewed. Boundary types distinguish form, chronology, intended correspondence and current function, explicitly allowing overlapping labels.
