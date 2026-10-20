@@ -265,3 +265,17 @@ test('political-process checks preserve independent status, inherited borders, d
   const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
  }
 });
+
+test('power checks recompute detours and permits and retain the supplied financial and rival-support mechanisms',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-4-3.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-4-3.json','utf8'));
+ for(const [i,change] of [[0,s=>s.paths[0].value=600],[1,s=>s.rows[4][1]='Unconstrained alternatives'],[2,s=>s.edges[1].to='Faction R'],[3,s=>s.series[0].values[1]=60]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+
+test('boundary checks retain coordinate placement, relative chronology, former function and cultural correspondence',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-4-4.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-4-4.json','utf8'));
+ for(const [i,change] of [[0,s=>s.regions[1].polygon[0][0]=60],[1,s=>s.rows[2][0]='Before 1850'],[2,s=>s.description=s.description.replace('no longer governs','currently governs')],[3,s=>s.regions[1].value=80]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});

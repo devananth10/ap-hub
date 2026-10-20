@@ -1,0 +1,144 @@
+{
+  "topicNumber": "4.3",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "24a34e4f841b6abaf565d11b3cd19c0d81389a1d00b63b2e88c2a14715a573e1",
+  "scopeReview": "PSO-4.C.1–2: power as control over people, land and resources through neocolonial leverage, shatterbelt configurations and chokepoints; territoriality joins cultural and economic ties to land. Scenarios distinguish effective control, formal status, scale and conditional influence.",
+  "varietyReview": "Shipping-channel map and detour calculation, institutional leverage table, rival-support network and forest-permit allocation chart. Seven applications address land ties, claimed/effective control, Suez, evidence for domination, overlapping claims, shatterbelt counterevidence and network reach. Four stimuli and varied keys.",
+  "repetitionReview": "Different mechanisms and evidence: routing, financial constraints, external rivalry and access redistribution. Territorial claims are not equated with legitimacy. No exact stem reuse or numeric-only clone; empirical difficulty remains uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/"
+  ],
+  "referenceNote": "Primary curriculum and EIA routing/chokepoint context checked. All numerical contracts, permits and factions are original hypothetical cases. No current shipping forecasts, accusation against an actual lender, copied dataset or new approved resource is included. Automated checks do not equal human review.",
+  "questions": [
+    {
+      "questionId": "hug-4-3-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The detour adds 16 hours, showing how control of a narrow route can affect a wider transport network.",
+      "independentReview": "Independently recomputed120/30=4,600/30=20,(600−120)/30=16. Values are hypothetical route lengths, not inferred from schematic map scale; no claim that all ships lack alternatives.",
+      "check": {
+        "type": "power-channel-detour",
+        "normal": 120,
+        "alternative": 600,
+        "speed": 30
+      },
+      "questionSha256": "ba2b97e5b00cf0c2871157e96352aec44b5bb50967b28bc441df34d5dab9873c",
+      "stimulusSha256": "3349f9ccda6c7d82b3f0028fc9d39b8f8c5f3369670bc3b7bdd45bfd6393e530"
+    },
+    {
+      "questionId": "hug-4-3-002",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "External financial leverage can constrain policy even while the state retains formal independence.",
+      "independentReview": "Compared actual stipulated leverage with formal external status. The scenario supplies lender control conditions rather than inferring domination from foreign ownership, trade or debt alone; no real lender is accused.",
+      "check": {
+        "type": "power-financial-leverage"
+      },
+      "questionSha256": "12db419fec8211611ca9958c4c676af3f3a8dce829fafbb3f4b421b38d7d3973",
+      "stimulusSha256": "98b18a0158da59855e2c3cf0c41beb8c32e339ef511c296af20b669b94072522"
+    },
+    {
+      "questionId": "hug-4-3-003",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The combination of internal conflict and competing external geopolitical involvement.",
+      "independentReview": "Traced external P→faction R and external Q→faction S, alongside contest over the same region. Distinct communities alone are not treated as a cause of violence; outside rivalry is explicitly given.",
+      "check": {
+        "type": "power-rival-support"
+      },
+      "questionSha256": "3d9830785ba8c7d5c8947385ee2dc24d0c8557d8ce86646d3de077d73a139540",
+      "stimulusSha256": "e46a248cf8953dbd569a8d2bb2f97277cbba79f295174b55cd6d67bcbac06bb2"
+    },
+    {
+      "questionId": "hug-4-3-004",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Household permits fall from 80 to 20, a decline of 75%, showing a changed allocation of access rather than a direct population measure.",
+      "independentReview": "Independently computed(80−20)/80=.75, (80−20)/20=3 for company growth, and totals100/100. Categories count permits once but do not establish equal permit value, resident numbers or legitimate consent.",
+      "check": {
+        "type": "power-permit-allocation"
+      },
+      "questionSha256": "bd9452b561c0bb48fc834601d54e6de3b0029dcfd5969e05de19704145d558aa",
+      "stimulusSha256": "d9ac9024ff0328370c53eef84ff0fcb0a0aa10cf6a47d379347f93bcab6c6fd1"
+    },
+    {
+      "questionId": "hug-4-3-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "People connect land with belonging, livelihoods and rules governing access.",
+      "independentReview": "Verified that supplied practices connect people and economic/cultural systems to land, matching PSO-4.C.2. The explanation does not reduce territoriality to formal national borders or imply every claim is legally exclusive.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "297101e91ab48d83e7e1953d6f667834522b80214d66f82bef0db746a3f0d925"
+    },
+    {
+      "questionId": "hug-4-3-006",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Claimed or formal authority from effective control over access on the ground.",
+      "independentReview": "Checked two different evidence types, license versus physical entry control. The question does not declare the armed organization’s control legitimate or decide ownership; it asks what distinctions are necessary. Before publication, removed a second defensible contrast in option D and made the question explicitly ask the central contrast; only claimed versus effective control addresses the supplied evidence.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "e40027955915dfad951987ae2dcc94a04eb4510ce025f6b03ad659907a497da7"
+    },
+    {
+      "questionId": "hug-4-3-007",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "A constrained passage connecting major sea routes can affect distant trade through delays or rerouting.",
+      "independentReview": "Checked EIA’s primary chokepoint analysis for Suez and general routing constraints. No current closure, transit volume, price forecast or percentage is asserted; alternative routes are explicitly allowed.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "5c6cf4f78ba5c46f5a2dec9995b073d7531ef3408d75b3f6e1a6473b7d6e1707"
+    },
+    {
+      "questionId": "hug-4-3-008",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Whether unequal leverage materially constrains the smaller state’s policy choices or resource control.",
+      "independentReview": "Distinguished an analytical claim about domination from mere interdependence. The question does not infer a real state’s status from trade alone, nor assume every agreement has the same distribution of power.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "0cf4cd641ca4f1fd2600ef1e0e02dd3515790a3b3a4778fd4ca59d7038b6da0f"
+    },
+    {
+      "questionId": "hug-4-3-009",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The same land can be embedded in different cultural and economic territorial claims at different scales.",
+      "independentReview": "Compared local ritual/access claims with state export interests without assuming one is the sole valid meaning or that communities are internally uniform. No legal ownership outcome is prescribed.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b5fa4585b0a8e669eea4cc9e07ffb7c3f3ef41a0e153a836adf67f956deff296"
+    },
+    {
+      "questionId": "hug-4-3-010",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "The record shows cultural diversity but no internal political fracture or competing external intervention.",
+      "independentReview": "Independently assessed necessary evidentiary components of the course concept, not a deterministic claim that cultural difference causes conflict. Absence in a record is treated as weakening evidence rather than absolute proof of universal peace.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "5a478530358754023ca0f7669dcb55fdc7c72ea7d0f877e3d5e15c5225ea4435"
+    },
+    {
+      "questionId": "hug-4-3-011",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Control of a strategically connected location can influence activity beyond the controller’s territorial jurisdiction.",
+      "independentReview": "Traced a local access rule through inland exporters’ dependence without inventing sovereignty over their provinces. Influence through a network is distinguished from direct territorial administration.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d28bcb2dbb52e3ef7fb9271ccaef041d1281e567df203f9b042c4a0bb324265e"
+    }
+  ]
+}

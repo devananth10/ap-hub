@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 4,
+  "topicId": "topic-4-3",
+  "questions": [
+    {
+      "id": "hug-4-3-001",
+      "prompt": "A ship normally follows the 120-km channel route. Closure requires a 600-km alternative, at the same constant 30 km/h. Which statement best connects the calculation to the channel’s strategic importance?",
+      "options": [
+        "The detour adds 4 hours, so channel access affects only the normal travel time.",
+        "The detour adds 16 hours, showing how control of a narrow route can affect a wider transport network.",
+        "The detour adds 20 hours, because the normal route takes no travel time.",
+        "The detour adds 480 hours, because distance difference is already a time measure."
+      ],
+      "correctIndex": 1,
+      "explanation": "The normal route takes120/30=4 hours and the alternative600/30=20 hours. The additional time is16 hours. This illustrates a chokepoint’s potential network effect when a narrow passage concentrates movement. Actual disruptions would also depend on costs, capacity and other routes, which this simplified case does not model. A: Four hours is the normal route time, not the added time. B: This correctly subtracts the two travel times and links the local passage to the network. C: Twenty hours is the alternative’s total time; subtracting the normal four gives16. D: The480-km distance difference must be divided by speed to obtain hours."
+    },
+    {
+      "id": "hug-4-3-002",
+      "prompt": "Which interpretation of the supplied arrangement best illustrates potential neocolonial influence rather than direct formal colonial administration?",
+      "options": [
+        "The independent government’s flag proves that external actors have no influence.",
+        "The concession automatically changes the state’s international boundary.",
+        "External financial leverage can constrain policy even while the state retains formal independence.",
+        "Any purchase from abroad is sufficient evidence that the purchaser has become a colony."
+      ],
+      "correctIndex": 2,
+      "explanation": "Neocolonialism concerns continuing external domination or strong constraints through mechanisms such as economic dependence rather than necessarily direct colonial administration. The scenario supplies financial leverage over public policy while formal state institutions remain. A loan or foreign transaction alone would not establish this relationship without evidence of such control. A: Formal symbols do not measure the actual leverage described. B: A concession or policy condition does not by itself redraw an international frontier. C: This recognizes the specified external leverage alongside retained formal independence. D: Ordinary foreign exchange alone is not sufficient evidence of colonial domination."
+    },
+    {
+      "id": "hug-4-3-003",
+      "prompt": "Internal factions contest the same region and receive support from rival outside powers. Which feature makes the diagram consistent with a shatterbelt rather than merely a diverse population?",
+      "options": [
+        "The combination of internal conflict and competing external geopolitical involvement.",
+        "The presence of any two cultural practices, even without political rivalry.",
+        "A region’s elevation above sea level regardless of political relationships.",
+        "A permanent rule that all multinational states must experience war."
+      ],
+      "correctIndex": 0,
+      "explanation": "A shatterbelt is a politically fractured region caught in competition among external powers. The scenario combines an internal contest with rival outside support. Cultural diversity alone does not establish this condition, and the concept does not predict inevitable conflict for every diverse state. A: This identifies the two linked levels of competition supplied in the diagram. B: Difference without the specified conflict and external rivalry is insufficient. C: Physical elevation does not identify the political configuration. D: The model describes a conditional geopolitical situation rather than a universal law."
+    },
+    {
+      "id": "hug-4-3-004",
+      "prompt": "A concession changes who can authorize access to a forest used for both livelihoods and community ceremonies. Which interpretation correctly uses the permit chart?",
+      "options": [
+        "Households receive 60 fewer permits, so their population must have fallen by 60%.",
+        "Household permits fall from 80 to 20, a decline of 75%, showing a changed allocation of access rather than a direct population measure.",
+        "Company permits rise by 300%, proving every resident supports the concession.",
+        "The constant total of 100 proves that territorial control and access have not changed."
+      ],
+      "correctIndex": 1,
+      "explanation": "Household permits decline by60 from an initial80:60/80=75%. Company permits rise from20 to80. With100 permits in each period, the allocation of authorized access changes substantially even though the total does not. Permits measure access permissions, not population or consent, and their economic values need not be identical. A: Permit changes are not a population census, and the relative decline is75%, not60%. B: This correctly calculates the decline and preserves the meaning of the indicator. C: The relative increase is300%, but it does not measure residents’ consent. D: A constant total can conceal a major redistribution between holders."
+    },
+    {
+      "id": "hug-4-3-005",
+      "prompt": "Residents maintain grazing routes, mark community land, and negotiate who may use a seasonal pasture. Which aspect most directly illustrates territoriality?",
+      "options": [
+        "The pasture’s latitude alone determines the residents’ political identity.",
+        "All users must have the same citizenship because they share a pasture.",
+        "Land use becomes unrelated to economic life once a route is marked.",
+        "People connect land with belonging, livelihoods and rules governing access."
+      ],
+      "correctIndex": 3,
+      "explanation": "Territoriality links people and their social, cultural or economic practices to space and can involve claims, boundaries and control of use. Grazing routes, community meanings and negotiated access show these connections. Territoriality can operate at local as well as state scales and need not require one uniform identity. A: Latitude alone does not determine the specified social relationships. B: Shared use does not establish identical citizenship. C: Pasture access remains directly connected to livelihoods. D: This captures material use, cultural belonging and rules for access together."
+    },
+    {
+      "id": "hug-4-3-006",
+      "prompt": "A government can issue a resource license on paper, but a different armed organization actually controls entry to the mine. What contrast is central to the political geography of this situation?",
+      "options": [
+        "Claimed or formal authority from effective control over access on the ground.",
+        "The mine’s depth from its mineral composition only.",
+        "Language-family boundaries versus the distribution of religious hearths.",
+        "International borders versus changes in the physical location of mineral deposits."
+      ],
+      "correctIndex": 0,
+      "explanation": "Political power can be expressed through actual control of people, territory and resources. A formal license records a claim or authorization, but it does not by itself establish effective enforcement where another organization controls entry. Both formal institutions and on-the-ground control matter to the spatial analysis. A: This distinguishes the legal-administrative claim from the stipulated effective access control. B: Physical properties alone do not explain the conflict over authority. C: The scenario supplies no language-family or religious-hearth distribution. D: No movement of mineral deposits or change in an international border is specified."
+    },
+    {
+      "id": "hug-4-3-007",
+      "prompt": "Why can the Suez Canal have strategic importance beyond the territory immediately beside it?",
+      "options": [
+        "A canal’s significance is determined only by how many residents live on its banks.",
+        "Every ship worldwide must pass through it regardless of origin or destination.",
+        "A constrained passage connecting major sea routes can affect distant trade through delays or rerouting.",
+        "The existence of an alternative route makes any canal economically irrelevant."
+      ],
+      "correctIndex": 2,
+      "explanation": "A maritime chokepoint concentrates movement through a narrow passage. Its importance depends partly on the networks it connects and on the costs and capacity of alternatives. Local control or disruption can therefore have distant consequences without requiring every ship to use it or all alternatives to vanish. A: Bank-side population alone does not measure the trade network connected through the passage. B: Routes depend on origins, destinations and alternatives; universal passage is not required. C: This connects the local constraint to wider network effects. D: An alternative can still be longer, costlier or capacity constrained."
+    },
+    {
+      "id": "hug-4-3-008",
+      "prompt": "An analyst labels any country that trades heavily with a larger economy “neocolonial.” Which additional evidence is most important to evaluate that label?",
+      "options": [
+        "Whether the two flags use similar colors.",
+        "Whether unequal leverage materially constrains the smaller state’s policy choices or resource control.",
+        "Whether the larger economy has a longer coastline.",
+        "Whether the countries use the same calendar month names."
+      ],
+      "correctIndex": 1,
+      "explanation": "Trade dependence can be relevant, but a neocolonial interpretation requires analysis of domination, leverage and constrained autonomy rather than trade volume alone. Evidence about imposed policy conditions, bargaining alternatives and control of valuable resources would address the proposed mechanism more directly than unrelated similarities. A: Flag colors do not establish economic or political domination. B: This investigates the unequal control implied by the label. C: Coastline length alone does not show a mechanism constraining policy. D: Calendar labels do not demonstrate control of resources or government choices."
+    },
+    {
+      "id": "hug-4-3-009",
+      "prompt": "Two local communities dispute seasonal access to a sacred forest, while state officials view the same forest mainly as a source of export revenue. What does a scale-sensitive analysis recognize?",
+      "options": [
+        "Only national-scale economic claims can have territorial significance.",
+        "The forest can have one meaning only, so all other accounts are measurement errors.",
+        "Local cultural ties automatically determine all external sovereignty questions.",
+        "The same land can be embedded in different cultural and economic territorial claims at different scales."
+      ],
+      "correctIndex": 3,
+      "explanation": "Territoriality can connect a location to local identity, ritual, livelihoods and larger economic systems at the same time. Recognizing these overlapping meanings helps explain conflict over use and authority. It does not determine which claim should prevail or imply that all actors within each group agree. A: Local connections to land are also territorial relationships. B: Different meanings can coexist without making the location itself inconsistent. C: Local meaning and external sovereignty are related but not interchangeable questions. D: This accounts for the supplied overlapping relationships without erasing either scale."
+    },
+    {
+      "id": "hug-4-3-010",
+      "prompt": "Which observation would most weaken a claim that a region is a shatterbelt in the specific geopolitical sense?",
+      "options": [
+        "The record shows cultural diversity but no internal political fracture or competing external intervention.",
+        "Two outside rivals support opposing factions contesting the same territory.",
+        "Regional factions link their conflict to rival international alliances.",
+        "External strategic competition reinforces an existing territorial conflict."
+      ],
+      "correctIndex": 0,
+      "explanation": "The shatterbelt concept involves political fragmentation intertwined with competition by outside powers. Cultural diversity alone is insufficient. A record lacking both internal fracture and rival external involvement weakens this specific diagnosis, although it would not prove the region has no other political challenges. A: This removes the defining combination rather than merely showing cultural variation. B: This is evidence consistent with the concept rather than evidence against it. C: The link between internal factions and outside rivalry supports the diagnosis. D: External competition reinforcing local conflict is also consistent with a shatterbelt."
+    },
+    {
+      "id": "hug-4-3-011",
+      "prompt": "A regional port authority changes access rules at one terminal, and exporters in inland provinces experience delays. Which conclusion best explains the geographic reach of political power?",
+      "options": [
+        "A decision’s effects must stop exactly at the authority’s administrative boundary.",
+        "The delays prove that every inland province has been annexed by the port authority.",
+        "Control of a strategically connected location can influence activity beyond the controller’s territorial jurisdiction.",
+        "Only national governments can influence transport networks."
+      ],
+      "correctIndex": 2,
+      "explanation": "A location’s connections can transmit the effects of access decisions beyond the jurisdiction where they are made. The port authority does not need to govern inland provinces for their exporters to depend on its terminal. Administrative reach and network influence are different spatial relationships. A: Network connections can carry effects beyond a boundary. B: Economic consequences do not by themselves establish annexation. C: This distinguishes jurisdiction from wider influence through the connected terminal. D: Subnational and nonstate actors can also control important network locations."
+    }
+  ]
+}

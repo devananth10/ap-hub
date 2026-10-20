@@ -1,0 +1,141 @@
+{
+  "topicNumber": "4.4",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "bd78ec8c1d9b3e4fbc831dbb17b05216792f4458739ad9103a7aa5dba51d2bda",
+  "scopeReview": "IMP-4.A.1: relict, superimposed, subsequent, antecedent, geometric and consequent boundaries. Questions separate form, chronology, placement intention and current function, allowing labels to overlap rather than creating ambiguous choices. Earlier Indigenous presence is not erased by relative antecedent classification.",
+  "varietyReview": "Coordinate boundary map, relative-chronology table, relict trace map and cultural-share choropleth with a negotiated new line. Other applications address imposition, later urban growth, river chronology, overlapping labels, historical-source quality, subsequent timing and heritage function. All five skills, varied keys and four interpreted stimuli.",
+  "repetitionReview": "Distinct dimensions and evidence prevent eleven definition clones. Subsequent/consequent terminology is explicitly contextualized, and no question pits overlapping defensible labels against each other without a stated criterion. Original hypothetical scenarios; empirical difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://archives.au.int/bitstream/handle/123456789/5042/Delimitation%20and%20Demarcation%20of%20Boundaries%20in%20Africa%20-%20General%20Issues%20and%20Case%20Studies_E.pdf?isAllowed=y&sequence=1"
+  ],
+  "referenceNote": "Official six-type inventory and African Union boundary-program publication’s classification discussion checked. Its consequent/subsequent overlap informs nonexclusive wording; no third-party question or diagram was copied. All data and geometries are original synthetic examples; QA links are not student resource imports. No human review claimed.",
+  "questions": [
+    {
+      "questionId": "hug-4-4-001",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Geometric, because placement is defined by a regular surveyed coordinate.",
+      "independentReview": "Verified both region edges coincide at x50 and the stated agreement uses that coordinate. Asked specifically about form, avoiding the false assumption that geometric, antecedent and superimposed are mutually exclusive histories.",
+      "check": {
+        "type": "boundary-geometric-coordinate"
+      },
+      "questionSha256": "c370c53c0cc650e3da6cb184fe43072919d96c7f6f16ae2fa64d05568a025de0",
+      "stimulusSha256": "d4f4d99354eeb744a87d499809def192cab7940d1e533cfff8228002d33a33d1"
+    },
+    {
+      "questionId": "hug-4-4-002",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Antecedent: the boundary is established before that later settlement pattern develops.",
+      "independentReview": "Checked1850<1900 and the stated comparison landscape. Earlier Indigenous use is explicitly retained, preventing an inference that antecedent means no humans ever occupied the land. No claim about every antecedent boundary is made.",
+      "check": {
+        "type": "boundary-antecedent-order"
+      },
+      "questionSha256": "c7e8d88a427e552ed95d0dd597e9432ff79f693947a8f2c1d77be881f57d4c68",
+      "stimulusSha256": "adcd7e2a8fb8152a9aee6cb3f984fb6935c04b0e517a05c4f577f68e14c84a86"
+    },
+    {
+      "questionId": "hug-4-4-003",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Relict: a former political boundary still leaves traces after its governing role ends.",
+      "independentReview": "Checked the premise explicitly ends jurisdictional function while retaining a trace. The line’s vertical geometry is not mistaken for its historical/current classification, and preservation is not treated as restoration of sovereignty.",
+      "check": {
+        "type": "boundary-relict-trace"
+      },
+      "questionSha256": "4f89a34a3d9e661af2b25dc1dad8108aaaee84249f79741dab6820593a19e3b1",
+      "stimulusSha256": "b12c8ba6357c7d1729be0da444e9f5e3b882a16c58361c5ba27e463d83c28971"
+    },
+    {
+      "questionId": "hug-4-4-004",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Consequent, because the placement is intended to correspond with an existing cultural division.",
+      "independentReview": "Verified western R shares90/80 exceed50 while eastern20/10 are below50; S is the remainder in this simplified exclusive survey. Intent and timing are stated, not inferred from geometry. No perfectly homogeneous groups or universal consent are assumed.",
+      "check": {
+        "type": "boundary-cultural-correspondence"
+      },
+      "questionSha256": "b7e5c40b2542c5045e6a46d09af2035815565ead7634bf66c5a634fe2498164c",
+      "stimulusSha256": "a5c01248e3c2768ebc5aa986472941eeee6fdf0f06be4bb77f0182a990009b74"
+    },
+    {
+      "questionId": "hug-4-4-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Superimposed",
+      "independentReview": "Compared creation process with current function and chronology. External imposition is expressly supplied, not inferred solely from a straight line or an international boundary; no real historical border is assigned without evidence.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "e63b0f1487215aa447ce97ea8fa9af2cd7b37349b5fc130621ccba5ce2ff5984"
+    },
+    {
+      "questionId": "hug-4-4-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "The original chronology remains antecedent even though later growth can create new conflicts over the line.",
+      "independentReview": "Separated a historical relationship from later functional effects. No claim that all boundaries retain the same legal course forever is made; a later redraw would need its own dated evidence.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "96c92b8a8c083636d9c26b607a6eba0b5b53a8099b89c2817ea1dbe9e2d437b5"
+    },
+    {
+      "questionId": "hug-4-4-007",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The timing of boundary establishment relative to the development of the relevant cultural landscape.",
+      "independentReview": "Checked that physical form and historical chronology answer different classification questions. A river is not assumed to be antecedent merely because it is natural or subsequent merely because it is curved.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d4f9980432454b5e3f33bf43121d7b279ee523113a74a89fbee0a5b31bc3a803"
+    },
+    {
+      "questionId": "hug-4-4-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "Geometric in form and antecedent relative to that later landscape.",
+      "independentReview": "Evaluated the two independent dimensions separately: coordinate placement and before/after relationship. This avoids a false one-label-only taxonomy while keeping the particular comparison landscape explicit.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "564d0cb464266489c4ae6ced5e8e624c48dd1b7d372f4e74bcff3979318f732e"
+    },
+    {
+      "questionId": "hug-4-4-009",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Dated negotiation and imposition records alongside the cultural and economic patterns present when the border was created.",
+      "independentReview": "Matched evidence to the claim rather than treating coordinate form as proof of external imposition. Historical records could support or weaken the caption; no predetermined real-world conclusion is supplied.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "34ce40389e660cfb591732e00369a046db2ea9824aef57b34014c71733e762db"
+    },
+    {
+      "questionId": "hug-4-4-010",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Subsequent to development of that settled landscape",
+      "independentReview": "Checked subsequent/consequent terminology against primary boundary scholarship, which may group the labels. The question explicitly asks broad chronology and excludes consequent as a competing option, avoiding a false mutually exclusive distinction.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "4a091cc070645a6ef78ce93c3e727d328d8754225607ce0cd44c834fe1b36dca"
+    },
+    {
+      "questionId": "hug-4-4-011",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Evidence that the line again separates governing jurisdictions, rather than only serving heritage or tourism.",
+      "independentReview": "Distinguished heritage influence from governing function. The item allows a former line to gain new meanings without assuming either all political consequences vanish or its former sovereignty automatically returns.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "ed040720b3e88c1e9fcf44dd1f0c22fcdba54a582d14408e2cdc62cfcfdfd644"
+    }
+  ]
+}

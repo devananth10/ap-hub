@@ -5489,5 +5489,471 @@
         "200"
       ]
     ]
+  },
+  "hug-4-3-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "flow",
+    "title": "A narrow channel on a shipping route",
+    "description": "Hypothetical ships use a 120-km channel route between West and East ports. If it closes, the specified alternative is 600 km. Both are traveled at 30 km/h; only the channel route is drawn.",
+    "caption": "Original schematic, not to scale; route distances are supplied assumptions, not measurements from the drawing. The alternative exists outside this view. No actual strait, current closure or real shipping data are represented.",
+    "unitLabel": "Arrow: normal 120-km route",
+    "regions": [
+      {
+        "label": "North land",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            24
+          ],
+          [
+            0,
+            24
+          ]
+        ]
+      },
+      {
+        "label": "South land",
+        "polygon": [
+          [
+            0,
+            36
+          ],
+          [
+            100,
+            36
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "West port",
+        "x": 10,
+        "y": 30
+      },
+      {
+        "label": "East port",
+        "x": 90,
+        "y": 30
+      }
+    ],
+    "paths": [
+      {
+        "label": "120 km",
+        "points": [
+          [
+            10,
+            30
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            90,
+            30
+          ]
+        ],
+        "arrow": true,
+        "value": 120
+      }
+    ]
+  },
+  "hug-4-3-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Institutions and leverage in a hypothetical agreement",
+    "description": "A hypothetical independent state retains its government and external status. A dominant external financier can withhold essential refinancing unless specified port and revenue policies are accepted; alternatives are severely constrained.",
+    "caption": "Original analytical scenario, not a claim about a real country, company or ordinary lending. The leverage is explicitly supplied; a foreign financial connection alone does not establish domination.",
+    "headers": [
+      "Feature",
+      "Supplied arrangement"
+    ],
+    "rows": [
+      [
+        "Formal status",
+        "Independent state remains"
+      ],
+      [
+        "Government",
+        "Domestic institutions remain"
+      ],
+      [
+        "Financial leverage",
+        "Essential refinancing may be withheld"
+      ],
+      [
+        "Policy condition",
+        "Specified port and revenue rules"
+      ],
+      [
+        "Alternatives",
+        "Severely constrained"
+      ]
+    ]
+  },
+  "hug-4-3-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "model",
+    "title": "Outside support and a regional contest",
+    "description": "Hypothetical rival powers P and Q support opposing factions R and S. The factions contest control of the same region. The model documents political relationships, not ethnic populations.",
+    "caption": "Original simplified schematic. Internal division and external competition are supplied together; no actual conflict or inevitable outcome is asserted.",
+    "assumptions": "P and Q are external rivals; R and S contest the same territory. Support arrows do not quantify aid or imply that factions lack local agency.",
+    "nodes": [
+      {
+        "label": "Power P",
+        "x": 15,
+        "y": 10,
+        "labelPosition": "above"
+      },
+      {
+        "label": "Power Q",
+        "x": 85,
+        "y": 10,
+        "labelPosition": "above"
+      },
+      {
+        "label": "Faction R",
+        "x": 15,
+        "y": 47,
+        "labelPosition": "below"
+      },
+      {
+        "label": "Faction S",
+        "x": 85,
+        "y": 47,
+        "labelPosition": "below"
+      }
+    ],
+    "edges": [
+      {
+        "from": "Power P",
+        "to": "Faction R",
+        "label": "Support"
+      },
+      {
+        "from": "Power Q",
+        "to": "Faction S",
+        "label": "Support"
+      },
+      {
+        "from": "Faction R",
+        "to": "Faction S",
+        "label": "Territorial contest"
+      }
+    ]
+  },
+  "hug-4-3-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Forest access permits before and after a concession",
+    "description": "Hypothetical forest permits: households hold 80 earlier and 20 later; a company holds 20 earlier and 80 later. The same 100 permits are allocated once each. The forest supports livelihoods and community ceremonies.",
+    "caption": "Original synthetic access counts. Permits are not people, consent votes or equal-value resource shares. The concession changes the authority for approving access; no legal ownership dispute is adjudicated.",
+    "unitLabel": "Number of permits",
+    "categories": [
+      "Earlier",
+      "Later"
+    ],
+    "series": [
+      {
+        "label": "Households",
+        "values": [
+          80,
+          20
+        ]
+      },
+      {
+        "label": "Company",
+        "values": [
+          20,
+          80
+        ]
+      }
+    ],
+    "max": 100
+  },
+  "hug-4-4-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "A border defined by a surveyed coordinate",
+    "description": "Hypothetical agreement places the border at straight survey coordinate x=50. Area A lies west and Area B east. No settlement chronology or cultural distribution is supplied.",
+    "caption": "Original planar survey schematic, not a real global projection. The given coordinate defines placement; map appearance alone does not establish the line’s historical origin.",
+    "unitLabel": "Straight surveyed boundary: x=50",
+    "regions": [
+      {
+        "label": "Area A",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "Area B",
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ]
+  },
+  "hug-4-4-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Boundary agreement and later town development",
+    "description": "Hypothetical timeline: earlier Indigenous land use is documented; in 1850 an active boundary is agreed; after 1900 the specified farming-town settlement pattern develops. The question compares the line with that later pattern.",
+    "caption": "Original invented chronology. Earlier land use is not erased or labeled culturally empty; antecedent is evaluated relative to the stated later landscape. The boundary remains active.",
+    "headers": [
+      "Time",
+      "Recorded event"
+    ],
+    "rows": [
+      [
+        "Before 1850",
+        "Earlier Indigenous land use documented"
+      ],
+      [
+        "1850",
+        "Active boundary agreed"
+      ],
+      [
+        "After 1900",
+        "Specified farming towns develop"
+      ]
+    ]
+  },
+  "hug-4-4-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "A former dividing line in one current city",
+    "description": "Hypothetical city now forms one political jurisdiction. The former boundary at x=25 no longer governs territory, but parts of its wall alignment remain visible. The path marks that historical trace.",
+    "caption": "Original schematic. The whole rectangle is one present jurisdiction. A preserved trace is not a current international or administrative frontier.",
+    "unitLabel": "Path: former boundary trace; no current dividing function",
+    "regions": [
+      {
+        "label": "Current city",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      }
+    ],
+    "paths": [
+      {
+        "label": "Former line",
+        "points": [
+          [
+            25,
+            0
+          ],
+          [
+            25,
+            15
+          ],
+          [
+            25,
+            60
+          ]
+        ]
+      }
+    ]
+  },
+  "hug-4-4-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "Reported cultural patterns in four districts",
+    "description": "Hypothetical districts report R shares: NW90%, NE20%, SW80%, SE10%; all other respondents select S. Negotiators later choose the western/eastern divide for a new border. Each district retains a minority share.",
+    "caption": "Original synthetic simplified identity survey, not actual ethnic territories. The north–south center line is the new border; horizontal lines only divide statistical districts. Reported identities are not inferred from appearance or biology.",
+    "unitLabel": "R share of district respondents (%)",
+    "regions": [
+      {
+        "label": "NW",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            0,
+            30
+          ]
+        ],
+        "value": 90
+      },
+      {
+        "label": "NE",
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            50,
+            30
+          ]
+        ],
+        "value": 20
+      },
+      {
+        "label": "SW",
+        "polygon": [
+          [
+            0,
+            30
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ],
+        "value": 80
+      },
+      {
+        "label": "SE",
+        "polygon": [
+          [
+            50,
+            30
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ],
+        "value": 10
+      }
+    ],
+    "bins": [
+      {
+        "min": 0,
+        "max": 50,
+        "label": "R below 50%"
+      },
+      {
+        "min": 50,
+        "max": 101,
+        "label": "R at least 50%"
+      }
+    ],
+    "paths": [
+      {
+        "label": "New border",
+        "points": [
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ]
   }
 }

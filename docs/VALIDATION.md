@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 4.3–4.4
+
+341 original MCQs across31 topics are published, eleven each;124 meaningful stimuli (36.36%) and137 explicit evidence/numerical/geometry checks. Political Power/Territoriality includes routing times, constrained finance, rival-support networks and access permits. One question initially offered two defensible contrasts; hug-4-3-006 was corrected before publication and its hashes/reasoning were renewed. Boundary types distinguish form, chronology, intended correspondence and current function, explicitly allowing overlapping labels.
+
+All156 unit tests, structural/evidence checks, TypeScript, production build, all68 Geography scopes and standard application routes passed. Both complete browser sessions scored11/11. All eight stimuli passed390×844 visual inspection. Regression also verified all172 Chemistry/Calculus lesson routes and unchanged Chemistry publication scopes. Existing question contents, videos and browser storage remain preserved; no human review or empirical difficulty-calibration claim. Next4.5;37 topics/407 questions remain.
+
 ## Human Geography Topics 4.1–4.2
 
 319 original MCQs across 29 topics are published, eleven each; 116 meaningful stimuli (36.36%) and 129 explicit evidence/numerical/geometry checks. Political entities distinguish nations, states, citizenship, tribal self-government and regional autonomy. Political processes distinguish colonial control, independence, inherited borders, devolution and self-determination. Contemporary examples were checked against primary institutional accounts; no disputed recognition or automatic right to secession is adjudicated.

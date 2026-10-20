@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 4,
+  "topicId": "topic-4-4",
+  "questions": [
+    {
+      "id": "hug-4-4-001",
+      "prompt": "The agreement defines the border as the straight surveyed line x=50, without using a river or a cultural division. Which term describes its specified form?",
+      "options": [
+        "Relict, because all surveyed lines have ceased governing territory.",
+        "Consequent, because a straight line proves cultural accommodation.",
+        "Geometric, because placement is defined by a regular surveyed coordinate.",
+        "Antecedent, because the line’s shape alone establishes that it predates settlement."
+      ],
+      "correctIndex": 2,
+      "explanation": "A geometric boundary follows a mathematically defined line rather than necessarily a physical or cultural division. The supplied coordinate provides that basis here. Shape and placement rule do not by themselves establish when settlement occurred, whether cultures were accommodated, or whether the line still has a governing function. A: Surveying does not imply that a boundary has lost its political function. B: A straight coordinate line alone does not prove it follows a cultural division. C: This identifies the explicit coordinate-based placement. D: Antecedent classification requires chronology, which is not supplied by straightness."
+    },
+    {
+      "id": "hug-4-4-002",
+      "prompt": "Relative to the later farming-town landscape described in the timeline, how is the 1850 boundary best classified?",
+      "options": [
+        "Antecedent: the boundary is established before that later settlement pattern develops.",
+        "Superimposed: the table proves an outside power ignored an already established farming-town division.",
+        "Relict: the boundary must have stopped functioning when towns appeared.",
+        "Consequent: the 1850 negotiators followed the exact distribution of towns founded after 1900."
+      ],
+      "correctIndex": 0,
+      "explanation": "An antecedent boundary predates development of the cultural landscape used as the comparison. Here the line is agreed in1850, before the specified farming-town pattern develops after1900. This relative chronology does not mean that the land had no earlier inhabitants or cultural significance. A: This matches the supplied temporal order relative to the named later landscape. B: No already established farming-town division or external imposition is recorded in1850. C: Later settlement does not automatically abolish a boundary. D: A later town distribution cannot have served as an existing pattern in1850."
+    },
+    {
+      "id": "hug-4-4-003",
+      "prompt": "The marked line no longer divides political jurisdictions, but its old wall alignment remains visible in the city. Which classification best describes its current status?",
+      "options": [
+        "Antecedent, solely because a wall segment remains.",
+        "Consequent, because every preserved structure follows a present cultural division.",
+        "Superimposed, because all historic walls were imposed by an external power.",
+        "Relict: a former political boundary still leaves traces after its governing role ends."
+      ],
+      "correctIndex": 3,
+      "explanation": "A relict boundary has ceased to function as a political division but remains evident in the landscape or other patterns. The supplied loss of jurisdictional function and surviving alignment are the relevant evidence. A visible wall alone would not establish either historical imposition or a present cultural divide. A: Persistence of a wall does not establish timing relative to settlement. B: No present cultural division is supplied. C: The identity of the original authority is not given. D: This uses both the former political function and the continuing visible trace."
+    },
+    {
+      "id": "hug-4-4-004",
+      "prompt": "After these cultural patterns develop, negotiators deliberately place the new border between the R-majority western districts and S-majority eastern districts. What best describes its intended basis?",
+      "options": [
+        "Antecedent, because the negotiators placed it before the recorded cultural pattern.",
+        "Consequent, because the placement is intended to correspond with an existing cultural division.",
+        "Superimposed, because the supplied process expressly disregards the cultural distribution.",
+        "Relict, because a newly active border has no governing function."
+      ],
+      "correctIndex": 1,
+      "explanation": "A consequent boundary is drawn to correspond with an existing cultural division. The western districts have R majorities and the eastern districts S majorities, and the stated negotiation explicitly uses that pattern. The correspondence does not eliminate minorities or prove that every resident supports the border. Consequent and subsequent classifications can overlap. A: The premise places negotiation after the pattern develops. B: This identifies the explicitly intended cultural correspondence. C: The stated process considers the cultural distribution rather than expressly ignoring it. D: The question describes a new active border, not a former one without jurisdictional function."
+    },
+    {
+      "id": "hug-4-4-005",
+      "prompt": "An external authority draws an active border through established communities while explicitly disregarding their existing cultural and economic connections. Which historical classification is most appropriate?",
+      "options": [
+        "Superimposed",
+        "Relict",
+        "Antecedent to those established communities",
+        "Consequent cultural accommodation"
+      ],
+      "correctIndex": 0,
+      "explanation": "A superimposed boundary is placed over an already developed cultural landscape without regard for its existing patterns, often by an outside or dominant authority. The scenario explicitly supplies both established communities and disregard for their connections. Straightness is not required for this classification. A: This matches imposition over the supplied established landscape without cultural accommodation. B: The border is active rather than a former line that lost its governing role. C: The communities already exist when it is drawn. D: The authority expressly disregards the cultural connections rather than using them to place the line."
+    },
+    {
+      "id": "hug-4-4-006",
+      "prompt": "A boundary predates the current urban region. As the city expands, the line cuts through commuting networks. What happens to its original antecedent relationship to that urban landscape?",
+      "options": [
+        "It becomes consequent automatically because commuters now cross it.",
+        "It becomes relict automatically because a city has grown nearby.",
+        "It proves that the city existed before the line was created.",
+        "The original chronology remains antecedent even though later growth can create new conflicts over the line."
+      ],
+      "correctIndex": 3,
+      "explanation": "Antecedent describes a historical ordering relative to a cultural landscape. Later urban growth can change the effects of the boundary without reversing which came first. Whether the line becomes relict or is redrawn requires separate evidence about its continuing political function or placement. A: Commuting across the line does not show it was originally drawn to follow the city’s cultural division. B: Urban growth alone does not abolish political jurisdiction. C: The premise explicitly states that the line predates the current city. D: This preserves the chronology while allowing its consequences to change."
+    },
+    {
+      "id": "hug-4-4-007",
+      "prompt": "A present-day map shows a winding boundary along a river. What additional evidence is most necessary to classify it as antecedent or subsequent?",
+      "options": [
+        "The color of the river symbol in the map legend.",
+        "The timing of boundary establishment relative to the development of the relevant cultural landscape.",
+        "The number of letters in the neighboring states’ names.",
+        "Whether the map is printed on paper or displayed on a screen."
+      ],
+      "correctIndex": 1,
+      "explanation": "A river alignment identifies a physical feature used by the boundary, but antecedent/subsequent classification concerns historical sequence. Researchers need records of when the line was established and when the relevant settlement or cultural patterns developed. A present map’s shape cannot supply that chronology alone. A: Symbol color is cartographic styling rather than historical evidence. B: This provides the missing temporal comparison. C: Name length does not establish when settlement or a boundary developed. D: The display medium does not establish the boundary’s origin."
+    },
+    {
+      "id": "hug-4-4-008",
+      "prompt": "An agreement draws a straight coordinate boundary before the specified later settlement pattern develops. Which pair of descriptions can both apply without contradiction?",
+      "options": [
+        "Relict and currently governing, based only on the same unchanged jurisdictional role.",
+        "Consequent to the later settlement pattern and earlier than that pattern.",
+        "Geometric in form and antecedent relative to that later landscape.",
+        "Superimposed over the later pattern even though that pattern does not yet exist."
+      ],
+      "correctIndex": 2,
+      "explanation": "Boundary categories can describe different dimensions. A coordinate-based form can be geometric while its establishment predates a specified later cultural landscape, making it antecedent in that comparison. A form label does not make all historical or functional labels mutually exclusive. A: Relict requires a lost political function, not merely unchanged active jurisdiction. B: Following an existing pattern conflicts with the stated absence of that later pattern at establishment. C: This combines a form criterion and a chronological criterion consistently. D: The specified later pattern cannot already be the developed landscape being overridden."
+    },
+    {
+      "id": "hug-4-4-009",
+      "prompt": "A caption claims that a straight border must be superimposed. Which source would best test the claim about how it was established?",
+      "options": [
+        "A higher-resolution image showing the same straight shape.",
+        "A present-day ranking of the neighboring states’ population totals.",
+        "A list of the map designer’s preferred colors.",
+        "Dated negotiation and imposition records alongside the cultural and economic patterns present when the border was created."
+      ],
+      "correctIndex": 3,
+      "explanation": "Superimposed is a claim about how a line relates to an established landscape and the process of its creation. Dated records of decision-making and the relevant earlier distributions address those criteria. Greater visual precision of a straight line does not establish whether local patterns were considered or ignored. A: Better depiction of shape alone cannot establish the historical process. B: Current population size does not reconstruct decision-making at establishment. C: Color preference has no bearing on historical imposition. D: This combines process, chronology and existing patterns needed to evaluate the label."
+    },
+    {
+      "id": "hug-4-4-010",
+      "prompt": "Several already established settlements negotiate a new active boundary that develops as their economic and social regions evolve. Using the broad timing-based category, which term best fits?",
+      "options": [
+        "Antecedent to those settlements",
+        "Subsequent to development of that settled landscape",
+        "Relict with no present jurisdictional function",
+        "Superimposed by an external ruler who disregards the settlements"
+      ],
+      "correctIndex": 1,
+      "explanation": "Subsequent boundaries develop after the relevant cultural landscape and settlement patterns exist. The scenario gives that chronology and ongoing local negotiation. A more specific consequent description may also apply where evidence shows deliberate correspondence with an existing division; the question asks the broad temporal category. A: The settlements already exist, so the line does not precede them. B: This matches the stated post-settlement development. C: The line is explicitly active. D: The scenario supplies local negotiation rather than external imposition disregarding the landscape."
+    },
+    {
+      "id": "hug-4-4-011",
+      "prompt": "A city turns a former border-wall trace into a heritage walking route. What observation is needed before concluding that the old line has regained political boundary function?",
+      "options": [
+        "Evidence that the line again separates governing jurisdictions, rather than only serving heritage or tourism.",
+        "An increase in visitors photographing the route.",
+        "New signs explaining the wall’s history.",
+        "A guidebook printing the former line in a brighter color."
+      ],
+      "correctIndex": 0,
+      "explanation": "A relict boundary can remain culturally and economically important after losing its jurisdictional function. Tourism, signage and map prominence do not automatically restore political authority along it. A renewed political boundary requires evidence about current governance and jurisdiction rather than visibility alone. A: This tests the political function that distinguishes an active boundary from a historical trace. B: Visitor numbers measure tourism, not jurisdiction. C: Historical interpretation can preserve memory without restoring the former border. D: Cartographic emphasis does not create governmental authority."
+    }
+  ]
+}
