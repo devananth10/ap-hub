@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 3,
+  "topicId": "topic-3-6",
+  "questions": [
+    {
+      "id": "hug-3-6-001",
+      "prompt": "The physical distance between the two cities stays at 1,000 km. Which interpretation of the message-delivery chart best illustrates time–space convergence?",
+      "options": [
+        "The cities become physically closer by 1,000 km.",
+        "Every resident now has equal access to all communication tools.",
+        "Delivery falls from 48 hours to 30 minutes, reducing the time barrier without changing physical distance.",
+        "The final delivery time is 30 hours because 0.5 hours equals 30 hours."
+      ],
+      "correctIndex": 2,
+      "explanation": "Time–space convergence concerns reductions in the time needed to connect places. Here delivery falls from 48 to 0.5 hours, or 30 minutes, across the same distance. This can facilitate interaction without eliminating physical separation, unequal access or cultural differences. A: The stated distance remains unchanged. B: A faster connection for the measured pair does not establish universal access. C: This correctly converts the final time and distinguishes temporal from physical separation. D: Half an hour is 30 minutes, not 30 hours."
+    },
+    {
+      "id": "hug-3-6-002",
+      "prompt": "The diagram documents local interactions producing a performance that is then shared internationally. Which account best explains the combined processes?",
+      "options": [
+        "Urban contact can reshape a practice locally, while digital networks amplify it across larger scales.",
+        "All change must originate outside the city because the final audience is international.",
+        "Online sharing proves that the local groups never interacted.",
+        "A city’s cultural practices are fixed and cannot change through social relationships."
+      ],
+      "correctIndex": 0,
+      "explanation": "Small-scale interaction and large-scale communication can work together. The supplied local contacts contribute to the performance, and the online link expands its potential audience. A global audience does not erase the local processes that created or adapted what is shared, nor guarantee uniform reception everywhere. A: This follows the documented local-to-international sequence without reducing it to one scale. B: International circulation does not identify an exclusively external origin. C: The diagram explicitly records the local contacts. D: The supplied interactions and new performance contradict complete cultural immobility."
+    },
+    {
+      "id": "hug-3-6-003",
+      "prompt": "What does the shared platform and post-language table show about cultural convergence?",
+      "options": [
+        "Equal platform use proves identical language content in both countries.",
+        "Using P makes every resident of both countries a native speaker of the same language.",
+        "The platform percentages and language percentages must be added to obtain one exclusive total.",
+        "A common technology can coexist with different language-content patterns."
+      ],
+      "correctIndex": 3,
+      "explanation": "Both countries report 90% platform use among sampled residents, but the post-language proportions are reversed. A shared technological channel therefore does not establish complete cultural homogenization. Platform use and post-language shares use different denominators and are not one set of mutually exclusive categories. A: The R/S content proportions differ despite the common platform-use share. B: Using a platform does not determine native language. C: Resident platform use and the language composition of posts are separate measures. D: This recognizes technological similarity and continuing content differences together."
+    },
+    {
+      "id": "hug-3-6-004",
+      "prompt": "What can be concluded from the local-language upload counts without inventing a speaker measure?",
+      "options": [
+        "The upload count grew by 35 times because 40−5=35.",
+        "Uploads increased eightfold, but the chart does not measure changes in speaker numbers or proficiency.",
+        "The number of fluent children must have increased eightfold as well.",
+        "Local-language digital production disappeared in the later period."
+      ],
+      "correctIndex": 1,
+      "explanation": "The ratio of 40 to 5 uploads is 8, while the absolute increase is 35 uploads. This documents a larger quantity of digital production in the specified periods. It does not measure unique creators, audience understanding, child acquisition or the vitality of every language domain. A: Thirty-five is the absolute increase, not the multiplicative factor. B: This gives the correct ratio and preserves the limits of the measured indicator. C: No child-speaker or proficiency data are supplied. D: The count rises from 5 to 40 rather than disappearing."
+    },
+    {
+      "id": "hug-3-6-005",
+      "prompt": "A region gains faster international messaging but some rural households still lack reliable connections. Which limitation should accompany a claim about accelerating cultural interaction?",
+      "options": [
+        "Faster networks can expand interaction while access remains unequal across people and places.",
+        "A faster link means every household is already connected at the same quality.",
+        "Households without a connection must have no cultural practices.",
+        "Unequal access proves that no connected person can communicate internationally."
+      ],
+      "correctIndex": 0,
+      "explanation": "Communication improvements can lower barriers for some users without removing every access constraint. Spatial and social differences affect whose practices circulate and whose voices are visible. Recognizing a digital divide does not deny faster links or imply that offline people lack culture. A: This includes the improvement and the specified uneven reach. B: The premise explicitly identifies households with unreliable connections. C: Cultural activity does not depend on internet access. D: Some people’s limited access does not prevent every connected user from interacting."
+    },
+    {
+      "id": "hug-3-6-006",
+      "prompt": "A platform repeatedly recommends a few commercially promoted styles to users in many countries. What contemporary influence should be investigated?",
+      "options": [
+        "The recommendations prove that users have no choices or local alternatives at all.",
+        "Physical distance is the only possible influence on exposure to the styles.",
+        "Commercial and technological decisions can shape which cultural expressions receive repeated exposure.",
+        "Every recommended style must have been independently invented by every user."
+      ],
+      "correctIndex": 2,
+      "explanation": "Media systems select, rank and promote content, so their commercial and technological organization can influence exposure. Exposure is not identical to adoption or uniform interpretation: users can reject, adapt or combine what they encounter. The stated promotion provides a mechanism to investigate without assuming complete control over behavior. A: Repeated recommendations do not establish the absence of every alternative or individual decision. B: The scenario supplies a recommendation mechanism beyond distance. C: This identifies the institutional selection shaping the content users encounter. D: Recommendation of an existing style is not evidence of separate invention by each viewer."
+    },
+    {
+      "id": "hug-3-6-007",
+      "prompt": "A widely used international language gains importance in education and employment, while a smaller language loses some of those domains. Which explanation best reflects contemporary diffusion?",
+      "options": [
+        "A language’s economic role is genetically fixed for its speakers.",
+        "Institutional incentives and global connections can expand one language’s use while putting pressure on another’s domains.",
+        "Learning an international language necessarily erases every home language immediately.",
+        "The loss of a school domain proves that no speaker can use the smaller language anywhere."
+      ],
+      "correctIndex": 1,
+      "explanation": "Languages can gain or lose use in particular domains through education, employment, media and policy. A global communication advantage may encourage wider use while reducing opportunities for another language in some settings. Bilingualism and revitalization are also possible; domain pressure is not an automatic total or immediate disappearance. A: Language roles are socially organized rather than genetically fixed. B: This connects the stated institutional opportunities and domain changes without asserting inevitable extinction. C: People can use more than one language in different settings. D: Loss in one domain does not establish absence from every household, community or medium."
+    },
+    {
+      "id": "hug-3-6-008",
+      "prompt": "Speakers use the same global video technology as other groups to teach a local language and publish distinctive stories. Which conclusion is most defensible?",
+      "options": [
+        "Global technology can only eliminate local cultural expression.",
+        "Local-language content proves that no global communication link exists.",
+        "Using one platform makes all stories culturally identical.",
+        "A global channel can also support local expression and cultural divergence."
+      ],
+      "correctIndex": 3,
+      "explanation": "A communication system can carry varied content. Local groups may use a global infrastructure to sustain or develop distinct expression, so technological integration does not require one cultural outcome. The scenario demonstrates a possible use, not proof that production alone guarantees successful intergenerational transmission. A: The described teaching and stories provide a counterexample to an exclusively erasing role. B: The technology is explicitly global even though the content is local. C: A shared channel does not make different stories identical. D: This recognizes the distinction between common infrastructure and diverse expression."
+    },
+    {
+      "id": "hug-3-6-009",
+      "prompt": "A global food company adapts its menu to local ingredients and dietary preferences in different cities. Which pattern best fits the scenario?",
+      "options": [
+        "Global connections can produce locally modified expressions rather than one identical product everywhere.",
+        "A common company name proves that all menus and preferences are identical.",
+        "Local adaptation means that no global organization is involved.",
+        "Every local ingredient must have been introduced by that company."
+      ],
+      "correctIndex": 0,
+      "explanation": "Global business networks interact with local preferences, resources and social meanings. The explicitly different menus illustrate adaptation within a shared organization. This can create related but nonidentical expressions rather than complete cultural sameness or total separation from global influences. A: This preserves both the common network and the supplied modifications. B: The stated adaptations contradict identical menus. C: The company remains global even when it adapts locally. D: The scenario does not establish the origin of every ingredient."
+    },
+    {
+      "id": "hug-3-6-010",
+      "prompt": "An online poll of urban platform users is used to claim that every region wants the same language policy. Rural residents with limited connectivity were not sampled. What is the central limitation?",
+      "options": [
+        "Language attitudes cannot be studied through any survey.",
+        "A large online audience necessarily includes every resident equally.",
+        "The platform sample may omit relevant populations and cannot automatically represent all regions.",
+        "Excluded residents must hold the same views as included users."
+      ],
+      "correctIndex": 2,
+      "explanation": "The source’s coverage and population scope do not match. Urban users may provide useful evidence about their own views, but unsampled rural residents could have different experiences or preferences. Widespread communication technology does not remove the need for representative design and regional analysis. A: Surveys can study attitudes when their design and claims are appropriate. B: Audience size does not guarantee coverage of people without reliable access. C: This identifies the missing groups and unsupported geographic generalization. D: No views can be assigned to excluded people solely from their exclusion."
+    },
+    {
+      "id": "hug-3-6-011",
+      "prompt": "Migrants share new city-based practices with relatives in their origin, who adapt them and send new versions back online. Which account best fits?",
+      "options": [
+        "Diffusion can move only from the origin to the destination and never back.",
+        "Contemporary networks can support reciprocal, multi-scale cultural change rather than one-way copying.",
+        "Any adaptation proves that all communication stopped.",
+        "The return messages require every relative to change permanent residence."
+      ],
+      "correctIndex": 1,
+      "explanation": "Digital and social ties can connect multiple places in both directions. The supplied cycle includes sharing, local adaptation and further sharing, so neither one-way influence nor perfect copying captures it. Messages can carry practices without requiring every participant to relocate. A: The scenario explicitly records information moving back toward the origin and then outward again. B: This accounts for reciprocal links and changing expressions at multiple places. C: Adaptation is described during continuing interaction, not its absence. D: Communication does not require a permanent residential move by every sender."
+    }
+  ]
+}

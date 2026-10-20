@@ -1,0 +1,148 @@
+{
+  "topicNumber": "3.5",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "acab71ad55ec8912abb90bb841a59b12b35996abd3e86d31ff5f91238396fdae",
+  "scopeReview": "SPS-3.A.1–2: historical contact, colonial/imperial institutions and trade shape current culture, including creolization and lingua franca. Conditional mechanisms, coercion and local agency retained; no claim that all contact languages follow a mandatory pidgin pathway.",
+  "varietyReview": "Trade-network map, institutional timeline, contact-language table and market/home-language bars; other original cases examine coercion, institutional influence without mass settlement, adaptation, forced cultural relocation, names, cross-domain variation and chronology. All five skills and varied difficulty/keys.",
+  "repetitionReview": "Historical causal channels distinguish this set from3.4 diffusion-type identification. Chronology versus current prominence, institution persistence and functional language versus language origins test different inferences. No copied or numeric-only repeated questions.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.unesco.org/en/articles/mother-language-day-2020-celebrating-cross-border-languages-peaceful-dialogue",
+    "https://doi.org/10.1146/annurev-anthro-121319-071304",
+    "https://mufwene.uchicago.edu/publications/CIEC%2013%20-%20GLOBALISATION%20ECONOMIQUE%20MONDIALE%20-%20EMERGENCES%20DES%20CREOLES%20ET%20VITALITE%20LANGAGIERE.pdf"
+  ],
+  "referenceNote": "Official scope plus primary linguistic scholarship/institutional context checked. Original hypothetical data/places/language labels, no quoted lesson text or external catalog additions. No independent human review claimed.",
+  "questions": [
+    {
+      "questionId": "hug-3-5-001",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Frequent trade connections can support diffusion to a more distant place before a closer, weakly connected one.",
+      "independentReview": "Independently compared schematic distances75 versus√1300≈36.1 and contact ratio100/5=20. Earlier uptake at the farther port is compatible with stronger connections; no deterministic causal effect or settlement count follows.",
+      "check": {
+        "type": "historical-trade-connections"
+      },
+      "questionSha256": "a23a229e1c70b0cf189d410f9252d47caee54bc3ceac51145e16c4807ebd3e11",
+      "stimulusSha256": "c3c50a099f2214a2c086aaf844776da2863afac0a56034cb37d49abf7238e4d2"
+    },
+    {
+      "questionId": "hug-3-5-002",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Colonial schooling and administration can create durable language institutions that persist after political control ends.",
+      "independentReview": "Followed introduced school/court use into post-independence retention. The historical sequence supports institutional continuity rather than inferring universal home use or inevitable permanent dominance.",
+      "check": {
+        "type": "historical-institution-timeline"
+      },
+      "questionSha256": "d23c129ad96a0f801f3f64fc2466cbbad01d9f11651d93e69372bc88a8084efa",
+      "stimulusSha256": "79630e7391cc6d78968d5571745441e28db704e815d8552f4a1e615503a8eda1"
+    },
+    {
+      "questionId": "hug-3-5-003",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "The case is consistent with creolization: sustained contact contributes to a community language rather than simple unchanged copying.",
+      "independentReview": "Distinguished the supplied first-language community outcome from unchanged source copying and code switching. Nativization is evidence in this hypothetical case, not a universal requirement that every creole must derive from a prior pidgin.",
+      "check": {
+        "type": "historical-contact-language"
+      },
+      "questionSha256": "71c447ffc996059f46d20e629a4b8a172b1415eddad9031dfa5b9fd6857e784d",
+      "stimulusSha256": "2f9475bcfd9f5343372fed403470933e142a1a16a3cd7f9709886a96b07dffc8"
+    },
+    {
+      "questionId": "hug-3-5-004",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "It serves as a lingua franca at the market despite not being the preferred home language of this sample.",
+      "independentReview": "Recomputed home totals60+40+0=100 and market10+10+80=100. L’s0/80 contrast supports a functional shared-language role under the supplied mixed-language trade context, not a claim that no trader can speak L at home.",
+      "check": {
+        "type": "historical-trade-language"
+      },
+      "questionSha256": "43f5ae465f2058d2b3a20048f30836ee472019eaedf0d4e40005518f88146b8c",
+      "stimulusSha256": "83dacba8e61fb4bf405d04f5879e460454bde29db6d86484be12bc11aa49c1d0"
+    },
+    {
+      "questionId": "hug-3-5-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Institutional power and coercion can shape cultural diffusion and suppress alternatives.",
+      "independentReview": "Classified mandatory institutional use and penalties as power mechanisms, not evidence of biological incapacity or wholly voluntary choice. Preserved the possibility of local agency without minimizing coercion.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "a96cc02b8b359311ecac2b2d19bd6e65ea9c230f83b619813bd5d6d82804da8a"
+    },
+    {
+      "questionId": "hug-3-5-006",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Control of influential institutions can promote selected practices without mass settlement by the controlling population.",
+      "independentReview": "Used explicit institutional control rather than requiring a mass demographic relocation. This tests a possible channel of imperial influence without making a legal claim about a real territory or treating every trade relationship as domination.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "169f8e1d7ae94d12234aaf63a3a3c690570f3a9c43aad51a7f5d3c5f926d1d70"
+    },
+    {
+      "questionId": "hug-3-5-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "People can actively reshape elements from different traditions into a new expression.",
+      "independentReview": "Compared retained rhythmic knowledge with an introduced material element and a newly formed practice. No real musical tradition or group is attributed a fabricated history; the case illustrates creative adaptation.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "1d894e583a9b032a52d862c55d34dd99bf50765d657cc703e715d460a2bc0044"
+    },
+    {
+      "questionId": "hug-3-5-008",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Forced migration can carry cultural practices, even though movement was coerced and conditions constrained their expression.",
+      "independentReview": "Separated the existence of cultural transmission from freedom of movement. The invented case supplies no real route, count or named tradition; no inference of consent or complete cultural uniformity is made.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "788253ba94af9b1f83000a2e703517b73eb99b4c53d30e353b5bdab6facde511"
+    },
+    {
+      "questionId": "hug-3-5-009",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Colonial legacies and later local choices can coexist in the current cultural landscape.",
+      "independentReview": "Tracked historical persistence and later community decisions as distinct layers. The conclusion does not assign a single present attitude from a name or fabricate a specific real renaming dispute.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "21afceac897db2a3c7276dffd2eb7de46cdfb971eb1009e012646654c5616eb4"
+    },
+    {
+      "questionId": "hug-3-5-010",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "One shared communication practice can facilitate exchange without making every cultural dimension converge.",
+      "independentReview": "Held market communication common while varying religious practice, demonstrating nonidentical cultural dimensions. Avoided assuming that lingua franca means a new creole, common first language or one religion.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "59550ec020f0697dcb595f94426416f623d179886ef6ae15f07bfc645cc5d702"
+    },
+    {
+      "questionId": "hug-3-5-011",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Inland has the earliest documented occurrence; Port may have been a relay rather than the original source.",
+      "independentReview": "Independently ordered10<40<70 and separated current industry size from first recorded occurrence. Earliest surviving observation is not automatically proof of an ultimate unobserved hearth.",
+      "check": {
+        "type": "historical-record-order",
+        "records": [
+          10,
+          40,
+          70
+        ]
+      },
+      "questionSha256": "e799aac07a8707d37ed1fef68de71c2093bbebb1dcd53e3f43988c96676b5e84"
+    }
+  ]
+}

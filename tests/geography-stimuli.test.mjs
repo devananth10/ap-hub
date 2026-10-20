@@ -223,3 +223,17 @@ test('model labels can sit outside incoming and outgoing arrows with validated p
  const s=geographyStimuli['hug-3-4-002'],html=render(s);assert.match(html,/data-node-label="West hub" x="104" y="138" text-anchor="end"/);assert.match(html,/data-node-label="East hub" x="356" y="138" text-anchor="start"/);assert.match(html,/data-node-label="Capital office" x="230" y="39.5" text-anchor="middle"/);
  const changed=structuredClone(s);changed.nodes[0].labelPosition='diagonal';assert.throws(()=>validateGeographyStimulus(changed),/label position/);
 });
+
+test('historical diffusion checks distinguish interaction from distance, institutional persistence and language function',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-3-5.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-3-5.json','utf8'));
+ for(const [i,change] of [[0,s=>s.points[1].value=5],[1,s=>s.rows[2][1]='Government removes L from those institutions'],[2,s=>s.rows[1][1]='Adults use only R and S'],[3,s=>s.series[0].values[2]=80]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+
+test('contemporary diffusion checks preserve time conversions, network direction and separate media denominators',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-3-6.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-3-6.json','utf8'));
+ for(const [i,change] of [[0,s=>s.series[0].values[2]=30],[1,s=>s.edges[2].from='Global audience'],[2,s=>s.rows[1][2]='80'],[3,s=>s.series[0].values[0]=0]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});

@@ -4492,5 +4492,274 @@
         "20"
       ]
     ]
+  },
+  "hug-3-5-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "Trading connections from a source area",
+    "description": "Hypothetical Hearth at (10, 15), Port at (85, 15), and Inland at (30, 45). Records give 100 annual trading visits from Hearth to Port and 5 to Inland; the borrowed practice appears earlier at Port.",
+    "caption": "Original schematic, not a real trade route. Parentheses beside destinations give annual visit counts. Stronger links are a plausible pathway, not proof that visits explain every adoption.",
+    "unitLabel": "Destination parentheses = annual trading visits",
+    "regions": [
+      {
+        "label": "Study area",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "Hearth",
+        "x": 10,
+        "y": 15,
+        "labelAlign": "middle"
+      },
+      {
+        "label": "Port",
+        "x": 85,
+        "y": 15,
+        "value": 100,
+        "labelAlign": "middle"
+      },
+      {
+        "label": "Inland",
+        "x": 30,
+        "y": 45,
+        "value": 5,
+        "labelAlign": "middle"
+      }
+    ]
+  },
+  "hug-3-5-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Language use in institutions over time",
+    "description": "Hypothetical timeline of colonial institutional change and later political independence. Household languages remain diverse.",
+    "caption": "Original case, not a claim about any named country. Retained administrative use does not imply identical home-language use or inevitable permanent policy.",
+    "headers": [
+      "Period",
+      "Recorded institutional use"
+    ],
+    "rows": [
+      [
+        "Colonial year 1",
+        "Authority introduces L in schools and courts"
+      ],
+      [
+        "Colonial year 30",
+        "Higher education and administration use L"
+      ],
+      [
+        "After independence",
+        "Government retains L in those institutions"
+      ]
+    ]
+  },
+  "hug-3-5-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "A contact variety across generations",
+    "description": "Hypothetical sustained contact among R- and S-language speakers. T develops in contact and is later acquired as a first community language.",
+    "caption": "Original illustrative pathway, not a universal sequence for all creoles. A creole is not an inferior or incomplete language.",
+    "headers": [
+      "Observation",
+      "Language setting"
+    ],
+    "rows": [
+      [
+        "Earlier adults",
+        "R and S speakers develop and use contact variety T"
+      ],
+      [
+        "Later community",
+        "Children acquire T as a first language"
+      ],
+      [
+        "Recorded form",
+        "T is not an unchanged copy of either R or S"
+      ]
+    ]
+  },
+  "hug-3-5-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Preferred language in two settings",
+    "description": "The same 100 hypothetical traders report one preferred language in each setting. At home: R 60%, S 40%, L 0%. At the mixed-language market: R 10%, S 10%, L 80%.",
+    "caption": "Each setting totals100%; these are preferences, not a test of every language a person can speak. L is used for communication between different home-language groups.",
+    "unitLabel": "Traders choosing each language (%)",
+    "categories": [
+      "R",
+      "S",
+      "L"
+    ],
+    "series": [
+      {
+        "label": "At home",
+        "values": [
+          60,
+          40,
+          0
+        ]
+      },
+      {
+        "label": "At market",
+        "values": [
+          10,
+          10,
+          80
+        ]
+      }
+    ],
+    "max": 100
+  },
+  "hug-3-6-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "display": "line",
+    "title": "Message delivery between the same two cities",
+    "description": "Hypothetical cities remain 1,000 km apart. Message-delivery delays are 48 hours earlier, 6 hours in the middle observation, and 0.5 hours later. No change in physical distance is recorded.",
+    "caption": "Original synthetic communication-delay observations, not actual transport times or proof of equal household access. Stages are ordered observations, not equal calendar intervals.",
+    "unitLabel": "Message-delivery delay (hours)",
+    "categories": [
+      "Earlier",
+      "Middle",
+      "Later"
+    ],
+    "series": [
+      {
+        "label": "Delivery time",
+        "values": [
+          48,
+          6,
+          0.5
+        ]
+      }
+    ],
+    "max": 60
+  },
+  "hug-3-6-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "model",
+    "title": "Local interactions and a wider media audience",
+    "description": "Hypothetical R and S districts interact at a city studio to create a performance, then an online feed shares it internationally.",
+    "caption": "Original schematic; arrows record documented interaction/sharing, not identical audience responses or migration counts.",
+    "assumptions": "Local contacts contribute to the performance; the online feed provides a subsequent international connection.",
+    "nodes": [
+      {
+        "label": "R district",
+        "x": 15,
+        "y": 15,
+        "labelPosition": "above"
+      },
+      {
+        "label": "S district",
+        "x": 85,
+        "y": 15,
+        "labelPosition": "above"
+      },
+      {
+        "label": "City studio",
+        "x": 50,
+        "y": 30,
+        "labelPosition": "above"
+      },
+      {
+        "label": "Global audience",
+        "x": 85,
+        "y": 55,
+        "labelPosition": "below"
+      }
+    ],
+    "edges": [
+      {
+        "from": "R district",
+        "to": "City studio",
+        "label": "Local contact"
+      },
+      {
+        "from": "S district",
+        "to": "City studio",
+        "label": "Local contact"
+      },
+      {
+        "from": "City studio",
+        "to": "Global audience",
+        "label": "Online feed"
+      }
+    ]
+  },
+  "hug-3-6-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Shared platform and language of posts",
+    "description": "Hypothetical countries A and B each have 90% platform P use among surveyed residents. Among their users’ R/S posts, A has 80% R and 20% S; B has 20% R and 80% S.",
+    "caption": "Platform use is a percentage of sampled residents; post languages are percentages of posts. These separate indicators must not be added as one exclusive total.",
+    "headers": [
+      "Country",
+      "Use P (%)",
+      "R posts (%)",
+      "S posts (%)"
+    ],
+    "rows": [
+      [
+        "A",
+        "90",
+        "80",
+        "20"
+      ],
+      [
+        "B",
+        "90",
+        "20",
+        "80"
+      ]
+    ]
+  },
+  "hug-3-6-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Local-language uploads in equal periods",
+    "description": "Hypothetical local-language uploads total 5 earlier and 40 later during equal-length periods. Counts do not identify unique people.",
+    "caption": "Digital production is measured, not speaker totals, child acquisition or proficiency. No real language’s vitality statistics are represented.",
+    "unitLabel": "Recorded uploads",
+    "categories": [
+      "Earlier",
+      "Later"
+    ],
+    "series": [
+      {
+        "label": "Uploads",
+        "values": [
+          5,
+          40
+        ]
+      }
+    ],
+    "max": 50
   }
 }

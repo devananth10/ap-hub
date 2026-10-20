@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 3,
+  "topicId": "topic-3-5",
+  "questions": [
+    {
+      "id": "hug-3-5-001",
+      "prompt": "Historical records show 100 annual trading visits from Hearth to Port but only 5 to Inland. A borrowed practice appears earlier at Port, even though Port is farther away. Which explanation best fits this evidence?",
+      "options": [
+        "Physical proximity must have been the only influence on the sequence.",
+        "Frequent trade connections can support diffusion to a more distant place before a closer, weakly connected one.",
+        "The pattern proves that every trader settled permanently at Port.",
+        "The visit counts establish that Inland’s residents were incapable of learning the practice."
+      ],
+      "correctIndex": 1,
+      "explanation": "Connections as well as distance shape opportunities for cultural exchange. Port is farther from Hearth but has twenty times as many recorded trading visits, providing a plausible interaction pathway for earlier uptake. The evidence supports investigating trade networks; it does not prove that visits caused every adoption or establish permanent migration or anyone’s capacity to learn. A: The earlier adoption at the farther but more connected location challenges a distance-only explanation. B: This uses both the spatial ordering and the recorded interaction difference. C: A trading visit is not necessarily a permanent change of residence. D: A low contact count does not measure an inherent ability to learn."
+    },
+    {
+      "id": "hug-3-5-002",
+      "prompt": "What historical process most directly explains the institutional continuity shown after independence?",
+      "options": [
+        "Political independence automatically removes every previously used language.",
+        "All residents must have used L at home before any colonial institution existed.",
+        "Colonial schooling and administration can create durable language institutions that persist after political control ends.",
+        "The timeline establishes biological inheritance of an administrative language."
+      ],
+      "correctIndex": 2,
+      "explanation": "The timeline explicitly links L to colonial schooling and administration, then records its retention in those functions after independence. Institutions can carry cultural practices beyond the political period in which they were established. This does not mean every resident uses L at home or that later governments and communities have no agency to change language policy. A: The retained institutional use is a counterexample to automatic disappearance. B: No precolonial household-language census is supplied. C: This follows the documented institutional pathway and its persistence. D: Learned language use and institutional rules are not genetic inheritance."
+    },
+    {
+      "id": "hug-3-5-003",
+      "prompt": "In the supplied contact setting, children later acquire variety T as their first community language. Which interpretation best fits the evidence?",
+      "options": [
+        "The case is consistent with creolization: sustained contact contributes to a community language rather than simple unchanged copying.",
+        "The later community language must be an unchanged version of R because R supplied some vocabulary.",
+        "The speakers only alternate between unchanged R and S; the recorded variety T cannot exist.",
+        "The sequence proves that every contact situation must develop through exactly these same stages."
+      ],
+      "correctIndex": 0,
+      "explanation": "The case describes a contact variety that becomes a first community language, consistent with creolization in the specified setting. It should not be treated as an inferior or incomplete language, as merely unchanged R, or as proof that all creole histories follow one required sequence. Language-contact histories vary, and the question supplies this particular pathway rather than a universal law. A: This recognizes a new community-language outcome while limiting the claim to the supplied case. B: Vocabulary contribution alone does not make the resulting language an unchanged copy of one source. C: The notes explicitly describe a distinct variety learned natively, not only switching between unchanged sources. D: One observed pathway does not establish an obligatory origin sequence for every contact language."
+    },
+    {
+      "id": "hug-3-5-004",
+      "prompt": "What function does language L most directly serve in this survey of the same traders in two settings?",
+      "options": [
+        "It must be the first language of every trader because it is used at the market.",
+        "It identifies every trader’s ethnic affiliation.",
+        "Its market use proves that R and S have disappeared from homes.",
+        "It serves as a lingua franca at the market despite not being the preferred home language of this sample."
+      ],
+      "correctIndex": 3,
+      "explanation": "A lingua franca is used for communication between people with different language backgrounds. L is preferred by 80% at the market but by none at home in this sample, while R and S remain home preferences. The functional role does not establish a specific linguistic origin, ethnic identity or universal abandonment of other languages. A: Market use does not make L everyone’s first language; the home preferences differ. B: A communication function is not a record of every individual’s ethnicity. C: The home series explicitly retains R and S. D: This distinguishes the shared market function from the traders’ home-language preferences."
+    },
+    {
+      "id": "hug-3-5-005",
+      "prompt": "A colonial authority requires its language in schools and courts and penalizes local-language teaching. How does this differ from describing all cultural exchange as voluntary borrowing?",
+      "options": [
+        "It proves that the local languages were physically impossible to speak.",
+        "It means no local person could ever preserve or adapt a practice.",
+        "Institutional power and coercion can shape cultural diffusion and suppress alternatives.",
+        "It establishes that every trading interaction is colonial rule."
+      ],
+      "correctIndex": 2,
+      "explanation": "Historical diffusion can involve unequal power rather than only freely chosen exchange. The specified requirements and penalties create incentives and constraints affecting language use. Recognizing this mechanism does not erase local resistance, adaptation or continuity, and it does not equate every commercial contact with colonial domination. A: A political restriction is not a physical inability to use a language. B: Coercive policy does not establish the impossibility of all resistance or continuity. C: This identifies the supplied institutional pressure and its effects on available choices. D: Trade can occur under different political relationships; domination is specifically documented here."
+    },
+    {
+      "id": "hug-3-5-006",
+      "prompt": "A dominant foreign state controls a port’s official curriculum and commercial institutions without moving most of its own population there. What diffusion mechanism remains possible?",
+      "options": [
+        "Cultural influence requires the foreign state’s entire population to relocate.",
+        "Control of influential institutions can promote selected practices without mass settlement by the controlling population.",
+        "No cultural interaction can occur without a formally identical state border.",
+        "Institutional influence guarantees the disappearance of every local practice."
+      ],
+      "correctIndex": 1,
+      "explanation": "Political and economic power can shape what institutions teach, reward or require. Those channels can extend cultural influence without most of the controlling population moving to the port. Actual uptake and local responses vary, so neither mass migration nor total cultural erasure is a necessary inference. A: Institutions can transmit practices through people already living in the affected place. B: This matches the specified control of educational and commercial channels. C: Cultural interaction does not require identical borders or one particular territorial arrangement. D: Influence does not establish complete disappearance of all alternatives."
+    },
+    {
+      "id": "hug-3-5-007",
+      "prompt": "Under a long history of contact, local musicians combine an introduced instrument with inherited rhythms and create a new performance tradition. Which interpretation best recognizes local agency?",
+      "options": [
+        "The resulting tradition must be an unchanged copy of the introduced culture.",
+        "Using an introduced instrument means every inherited rhythm disappeared.",
+        "Only the group that introduced the instrument can create cultural meaning.",
+        "People can actively reshape elements from different traditions into a new expression."
+      ],
+      "correctIndex": 3,
+      "explanation": "Cultural contact can produce new forms through selective adaptation and combination. The inherited rhythms and introduced instrument both contribute to the stated performance. This is neither unchanged copying nor proof that every earlier element vanished; people receiving an influence can be creative participants in the outcome. A: The supplied combination differs from an unchanged copy. B: The scenario explicitly retains inherited rhythms. C: Local performers’ creative choices are part of the described process. D: This recognizes the mixed inputs and the active production of a new tradition."
+    },
+    {
+      "id": "hug-3-5-008",
+      "prompt": "Enslaved people are forcibly moved to a plantation region and sustain some food and musical practices there. Which historical interpretation is most defensible?",
+      "options": [
+        "Forced migration can carry cultural practices, even though movement was coerced and conditions constrained their expression.",
+        "Any surviving practice proves that the movement was freely chosen.",
+        "Coercion makes all cultural transmission logically impossible.",
+        "Every practice in the destination must therefore have one identical origin."
+      ],
+      "correctIndex": 0,
+      "explanation": "The movement of people can carry knowledge and practices under coercive as well as voluntary conditions. Survival and adaptation do not imply consent to enslavement or the absence of severe constraints. The particular retained practices also do not establish a single origin for every cultural feature in the destination. A: This recognizes both relocation of practices and the coercive historical conditions. B: Cultural survival is not evidence that people consented to forced movement. C: Constraints can be severe without making every form of transmission impossible. D: A few documented practices do not identify the origin of every destination feature."
+    },
+    {
+      "id": "hug-3-5-009",
+      "prompt": "A former colonial city retains some imposed street names but also adopts names chosen by local communities. Which account best fits this present landscape?",
+      "options": [
+        "All names must be natural features unrelated to human history.",
+        "Independence proves every visible colonial-era name is an error in the map.",
+        "Colonial legacies and later local choices can coexist in the current cultural landscape.",
+        "Every present resident necessarily endorses the original colonial meaning of every retained name."
+      ],
+      "correctIndex": 2,
+      "explanation": "Place names can preserve earlier political influences while later naming decisions express changing identities and priorities. A mixed landscape can therefore contain both historical persistence and local transformation. Retention alone does not establish that all residents endorse the earlier meaning or that every feature has one origin. A: Names are socially chosen symbolic features, not unmodified physical landforms. B: Political change does not automatically remove every earlier name. C: This includes both sets of supplied naming practices. D: A retained label does not reveal unanimous present agreement with its history."
+    },
+    {
+      "id": "hug-3-5-010",
+      "prompt": "A trading language is used across several ports, but merchants continue different religious practices. What does this suggest about historical cultural interaction?",
+      "options": [
+        "Sharing a trade language necessarily makes all religious practices identical.",
+        "One shared communication practice can facilitate exchange without making every cultural dimension converge.",
+        "Different religions make any shared language impossible.",
+        "Using a lingua franca proves that no cultural trait ever changes through trade."
+      ],
+      "correctIndex": 1,
+      "explanation": "Cultural dimensions can change at different rates and in different ways. A common language for exchange can coexist with religious diversity. Trade may create shared practices without producing complete cultural uniformity, and persistence in one domain does not mean that no exchange or change occurs in another. A: The scenario explicitly supplies different religious practices despite the shared language. B: This distinguishes a functional shared practice from total cultural convergence. C: The coexistence described is a counterexample to impossibility. D: A shared trading language is itself evidence of interaction and does not preclude other changes."
+    },
+    {
+      "id": "hug-3-5-011",
+      "prompt": "Among three documented sites, a decorative method is recorded in Inland in year 10, at Port in year 40 and overseas in year 70. Port has the largest present-day industry. Which conclusion best uses the chronology?",
+      "options": [
+        "Inland has the earliest documented occurrence; Port may have been a relay rather than the original source.",
+        "Port must be the earliest source because its present industry is largest.",
+        "The overseas record proves the method originated there before year 10.",
+        "All three dates necessarily record simultaneous invention."
+      ],
+      "correctIndex": 0,
+      "explanation": "The earliest supplied record is Inland in year 10. Later prominence at Port does not move its documented date backward; a port can relay a practice through trade. These records establish the earliest occurrence among the observed sites, not an infallible global origin date or a complete transmission history without further evidence. A: This respects the order of records and limits the claim to documented evidence. B: Present-day scale does not establish earliest historical occurrence. C: The overseas record is later, not earlier, in the supplied sequence. D: The dates differ and do not establish simultaneous invention."
+    }
+  ]
+}

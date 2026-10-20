@@ -1,0 +1,143 @@
+{
+  "topicNumber": "3.6",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "2bd6cbc334e597b09b181b35fa5b08f5591bf29fa1c9d6b8d24527721c653806",
+  "scopeReview": "SPS-3.A.3–4: socially constructed changing practices, urbanization/globalization, media/technology/politics/economics/social ties, time–space convergence, language-domain pressure and cultural convergence/divergence. English/international-language roles treated contextually without current unverified rankings.",
+  "varietyReview": "Communication line chart, local/global network model, shared-platform/content table and language-upload bars. Other applied cases address uneven access, promotion, language domains, digital local expression, local adaptation, sampling and reciprocal ties. All five skills and mixed difficulty/keys.",
+  "repetitionReview": "Contemporary channels distinguish the set from3.5 historical institutional/trade causes. Time delay is not migration distance; common platform and varied content are different dimensions; production counts do not estimate language vitality. No repeated stems or numeric-only clones.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.unesco.org/en/articles/digital-initiatives-indigenous-languages?hub=67076",
+    "https://www.itu.int/itu-d/reports/statistics/facts-figures-2025/index/"
+  ],
+  "referenceNote": "Official scope and primary institutional context for digital language diversity/access checked. Hypothetical platforms, communities and numbers only; no company algorithm facts, copied datasets, external catalog imports or human-review claims.",
+  "questions": [
+    {
+      "questionId": "hug-3-6-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Delivery falls from 48 hours to 30 minutes, reducing the time barrier without changing physical distance.",
+      "independentReview": "Independently converted0.5×60=30 minutes and compared48/0.5=96 as a delivery-time ratio. Constant1000km prevents inference of physical shrinkage; no universal access claim follows.",
+      "check": {
+        "type": "contemporary-message-times",
+        "distance": 1000
+      },
+      "questionSha256": "62a3d7cd6e96c07a96b72fd4dbcea181b4cdb06287815a5cb298f89e4e49a129",
+      "stimulusSha256": "70cb8ec0ec76a8cc7e461cc8088fc7b1e28f8aa4a3690758c141460cfd6112ab"
+    },
+    {
+      "questionId": "hug-3-6-002",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Urban contact can reshape a practice locally, while digital networks amplify it across larger scales.",
+      "independentReview": "Traced R/S district contacts→city studio→international audience. Distinguished creation/adaptation from circulation and avoided claiming that audience reach establishes identical adoption or meaning.",
+      "check": {
+        "type": "contemporary-urban-network"
+      },
+      "questionSha256": "05d768c968e594411da6ae74c69a00aa83fd792d3ec1f2d482e03ca2a67ba071",
+      "stimulusSha256": "6d0dd503a86fd9cce584615e53f9a1ae46d5717df1f339b296561c88bfa79106"
+    },
+    {
+      "questionId": "hug-3-6-003",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "A common technology can coexist with different language-content patterns.",
+      "independentReview": "Verified platform90/90 alongside R/S80/20 versus20/80, each post-language pair totaling100. Did not mix resident and post denominators or infer every individual’s language from aggregate content.",
+      "check": {
+        "type": "contemporary-platform-content"
+      },
+      "questionSha256": "3e12030e500609c0032440aaa8e57ae7683421e9465830301aa6e2951ad4d23c",
+      "stimulusSha256": "3b9db21df43db4240a3302f9517e253f61b3005686f7c6b60f7c362c18e8609c"
+    },
+    {
+      "questionId": "hug-3-6-004",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Uploads increased eightfold, but the chart does not measure changes in speaker numbers or proficiency.",
+      "independentReview": "Independently computed40/5=8 and40−5=35. Counts are uploads during equal periods, not users or speakers; repeated uploads by one creator are possible.",
+      "check": {
+        "type": "contemporary-language-uploads"
+      },
+      "questionSha256": "1ef7568f069b2c49658417001006c849098e9568fb0a0212547edd65d6028637",
+      "stimulusSha256": "2e766aa08396e9a6580c384c39d4cb97d50e113a38c904d3628c3218ce9b653b"
+    },
+    {
+      "questionId": "hug-3-6-005",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Faster networks can expand interaction while access remains unequal across people and places.",
+      "independentReview": "Separated network performance from household coverage. The supplied rural gap limits universal claims without negating the measured improvements or treating offline communities as culturally absent.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "a68272dd86b8d6c9d7b839903caee251082b5518dad524a42ffc8f8bd7aae62d"
+    },
+    {
+      "questionId": "hug-3-6-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Commercial and technological decisions can shape which cultural expressions receive repeated exposure.",
+      "independentReview": "Distinguished controlled exposure channels from deterministic cultural outcomes. The hypothetical platform mechanism is supplied explicitly; no unverified claim about a real company’s algorithm is made.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "2dae56ea446ea2823646c06ee4e1f8086649aeae484abda85b80afd09d460c8f"
+    },
+    {
+      "questionId": "hug-3-6-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "Institutional incentives and global connections can expand one language’s use while putting pressure on another’s domains.",
+      "independentReview": "Tracked institutional domain shifts rather than equating language learning with immediate replacement. The scenario permits pressure, bilingualism and responses; no real language’s current status is invented.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "2455939ad207f0c7a662f9003c0a62e1dcd0446d627360f18c0724ed8a941d1c"
+    },
+    {
+      "questionId": "hug-3-6-008",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "A global channel can also support local expression and cultural divergence.",
+      "independentReview": "Separated the platform’s scale from the cultural specificity of its content. A possible divergence/revitalization channel is supported without asserting guaranteed language survival.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "036e0064a3cd7d41756c22c7458449c35b1c959c4fcfb2ac2a6d71be571acecf"
+    },
+    {
+      "questionId": "hug-3-6-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Global connections can produce locally modified expressions rather than one identical product everywhere.",
+      "independentReview": "Compared organizational integration with variable menu content. No named company, real dietary rule or historical ingredient-origin claim is supplied.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "0d52bd8c34f79cf7bfeadc32011d3729c275b55be6508035b0cc08467354c9ba"
+    },
+    {
+      "questionId": "hug-3-6-010",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "The platform sample may omit relevant populations and cannot automatically represent all regions.",
+      "independentReview": "Identified coverage bias rather than merely sample size. The policy conclusion exceeds the urban connected sampling frame; no particular rural preference is assumed.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "cceec3573a89a6d85ac8deb0345eafde89d1e11e5a71cbfba5ef3944687b8a1d"
+    },
+    {
+      "questionId": "hug-3-6-011",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Contemporary networks can support reciprocal, multi-scale cultural change rather than one-way copying.",
+      "independentReview": "Traced city→origin adaptation→city feedback as reciprocal connections. Distinguished content transmission from population relocation and avoided a single dominant-source assumption.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "f1136eb31624d7357c49d4b1def800f41b66f42f5192346c9fdc4c73e74fedcb"
+    }
+  ]
+}

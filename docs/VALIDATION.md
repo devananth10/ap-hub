@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 3.5–3.6
+
+275 original MCQs across 25 topics are published, eleven each; 100 meaningful stimuli (36.36%) and 113 explicit evidence/numerical/geometry checks. Historical causes cover trade, colonial institutions, contact-language development and lingua-franca use without treating contact-language histories as uniform. Contemporary causes cover communication delays, urban/global networks, separate platform/content measures and local-language production without inferring speaker vitality from upload counts.
+
+All 150 automated tests, TypeScript, the production build, all 68 Geography scopes and standard route checks passed. Both full Practice sessions scored 11/11. All eight new stimuli were inspected at 390×844; the communication chart passed desktop light-mode and keyboard zoom 200/reset 100 checks. Descriptions were spaced for readable mobile prose. Existing questions, videos and student storage are unchanged; no human review or empirical difficulty-calibration claim. Next: 3.7; 43 topics/473 questions remain.
+
 ## Human Geography Topics 3.3–3.4
 
 253 original MCQs across23 topics are published, exactly11 per completed topic;92 meaningful stimuli (36.36%).104 explicit checks include numeric/geometry models and supplied-evidence assertions, not104 independent scientific proofs. Cultural Patterns examines crosscutting identities and conditional cohesion/division; Types of Diffusion distinguishes documented mechanisms from resemblance, subtype uncertainty, adaptation, movement and cross-scale channels. All148 tests, TypeScript/build, Geography scopes and standard routes passed. Both full browser sessions scored11/11; all eight stimuli passed mobile390×844 inspection.
