@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 2,
+  "topicId": "topic-2-5",
+  "questions": [
+    {
+      "id": "hug-2-5-001",
+      "prompt": "In this original four-stage schematic, which stage has the greatest rate of natural increase?",
+      "options": [
+        "Stage 1",
+        "Stage 2",
+        "Stage 3",
+        "Stage 4"
+      ],
+      "correctIndex": 1,
+      "explanation": "Natural increase depends on the gap between the birth and death rates, not the height of either line alone. The schematic gaps are2,25,16 and0 events per1,000 residents in stages1–4. Stage2 has the largest gap, illustrating the rapid-growth interval when mortality has fallen substantially while fertility remains comparatively high. A: Stage1 has a high birth rate but also a high death rate, leaving a small gap. B: The40−15=25 per1,000 gap is the largest shown. C: The25−9=16 per1,000 gap remains positive but is smaller than in stage2. D: The two rates are both10 per1,000, so the natural-increase gap is zero in this particular schematic."
+    },
+    {
+      "id": "hug-2-5-002",
+      "prompt": "Populations A and D have the same small birth–death gap in the table. What does comparing both rate levels add to their interpretation within the classical demographic transition model?",
+      "options": [
+        "All four populations must have low birth and death rates because none has a negative gap.",
+        "A and D must have identical demographic conditions because their gaps match.",
+        "A has a lower birth rate than D, so it must be the later-stage example.",
+        "A and D can have similarly slow natural increase while representing high-rate and low-rate conditions."
+      ],
+      "correctIndex": 3,
+      "explanation": "A’s40 births and39 deaths per1,000 produce the same1-per1,000 gap as D’s10 and9. The growth gap alone therefore does not distinguish high birth/high death conditions from low birth/low death conditions. In the classical model, these broadly resemble the contrast between early and late stages, though actual classification also benefits from trends and context. A: A nonnegative difference does not establish that either component is low; A and B have high birth rates. B: Matching differences do not make the two component rates or demographic settings identical. C: A’s birth rate40 is higher, not lower, than D’s10. D: This preserves the equal gaps and the different rate levels without asserting that one snapshot supplies every aspect of a country’s history."
+    },
+    {
+      "id": "hug-2-5-003",
+      "prompt": "A report assigns one transition-model label to the whole hypothetical country. What caution does the mapped fertility variation support?",
+      "options": [
+        "A national label can conceal important subnational variation in fertility.",
+        "Every district must share the national label’s exact birth and death rates.",
+        "The map proves that fertility is declining in every district over time.",
+        "Each district’s fertility value directly identifies its total resident population."
+      ],
+      "correctIndex": 0,
+      "explanation": "The map shows different fertility values within one country, so a country-level summary need not describe every district equally well. A single fertility map also does not supply mortality, migration or historical trends needed for a fuller transition analysis. The purpose is to evaluate the scale and limits of a model application, not to assign a complete stage from one variable. A: This recognizes the observed variation and the difference between a national summary and its constituent places. B: The district values differ, and death rates are not provided at all. C: A one-time map cannot establish whether each value rose or fell from an earlier period. D: A fertility estimate is not a count of residents, so population totals cannot be read from it."
+    },
+    {
+      "id": "hug-2-5-004",
+      "prompt": "Which interpretation of the hypothetical cause-of-death counts is supported and is consistent with an epidemiological transition?",
+      "options": [
+        "Infectious diseases have disappeared completely by the later period.",
+        "Because all deaths fell, deaths from chronic conditions must also have fallen.",
+        "All deaths fell while chronic conditions became a larger share; infectious deaths still occurred.",
+        "The total number of deaths rose as chronic conditions became more prominent."
+      ],
+      "correctIndex": 2,
+      "explanation": "The listed total falls from1,000 to400 deaths. Infectious deaths fall from800 to100, while chronic deaths rise from200 to300 and from20% to75% of the total. This illustrates a shift in the composition of mortality without the disappearance of infections. The table does not diagnose individuals or establish the single cause of the transition. A: There are still100 infectious deaths in the later period. B: The total decline can coexist with an increase in one component; chronic deaths rise by100. C: This combines the falling total with the larger chronic share and the nonzero infectious count. D: The total falls by600 rather than rising, even though chronic deaths become more prominent."
+    },
+    {
+      "id": "hug-2-5-005",
+      "prompt": "Why does the classical transition often show a period of rapid natural increase after mortality begins to decline?",
+      "options": [
+        "Birth rates must fall to zero before death rates can decline.",
+        "Mortality decline creates exactly one immigrant for every avoided death.",
+        "The model requires birth and death rates to remain identical throughout the transition.",
+        "Death rates may fall before birth rates fall substantially, widening the birth–death gap."
+      ],
+      "correctIndex": 3,
+      "explanation": "The timing of changes matters. When mortality falls while births remain relatively high, more births than deaths occur per population unit and natural increase can accelerate. Fertility decline may narrow that gap later. This is a general model relationship rather than a fixed timetable or a claim that every place follows identical causes and rates. A: The classical sequence does not require births to vanish before mortality improves. B: Avoided deaths and immigration are different demographic components with no required one-to-one relationship. C: A widening gap between the two rates is central to the rapid-growth interval. D: This identifies the lag that increases natural growth without treating migration as part of the birth–death balance."
+    },
+    {
+      "id": "hug-2-5-006",
+      "prompt": "A stylized Stage 3 trajectory has a falling birth rate that remains above a stable low death rate. Ignoring migration, which population trend follows?",
+      "options": [
+        "Population continues to grow, but its rate of natural increase becomes smaller.",
+        "Population must shrink solely because the birth rate is falling.",
+        "Population grows faster as the birth–death gap narrows.",
+        "Population stays exactly fixed because the birth rate is no longer increasing."
+      ],
+      "correctIndex": 0,
+      "explanation": "Population size and the rate of population change are different quantities. Births still exceed deaths, so natural change remains positive. As the birth rate approaches the low death rate, the positive gap narrows and the rate of natural growth declines. A slower positive increase does not mean a falling total. A: This keeps the positive sign of change separate from its declining magnitude. B: A lower birth rate can still exceed the death rate, so decline is not necessary. C: A narrowing positive gap means a smaller natural-increase rate, not a larger one. D: A fixed total under the no-migration assumption requires births and deaths to balance, which they do not here."
+    },
+    {
+      "id": "hug-2-5-007",
+      "prompt": "A closed hypothetical population has 50,000 residents and annual birth and death rates each equal to 10 per 1,000. Which interpretation matches this low-rate balance?",
+      "options": [
+        "No births and no deaths occur because natural increase is zero.",
+        "There are 5,000 births and 5,000 deaths because each rate is 10 per 1,000.",
+        "There are 500 births and 500 deaths, producing zero natural increase despite continuing demographic events.",
+        "There are 500 births and 50 deaths, so zero natural increase is impossible."
+      ],
+      "correctIndex": 2,
+      "explanation": "Equal low rates do not mean that births and deaths disappear. Each count is50,000×10/1,000=500. With no migration and the two natural components equal, the net natural change is zero. The population can be relatively stable while its members continue to be born and die. A: A zero difference between positive counts does not make both counts zero. B: This is a factor-of-ten conversion error;10 per1,000 is1% of50,000. C: Both event counts and their zero difference follow from the specified rates and population. D: The two rates are identical, so applying different conversion factors to them is incorrect."
+    },
+    {
+      "id": "hug-2-5-008",
+      "prompt": "Two countries reach low fertility and mortality through different histories and over different time spans. What is the strongest implication for using the demographic transition model?",
+      "options": [
+        "The model requires every country to repeat the same calendar dates.",
+        "It is a simplified framework whose timing and pathways must be evaluated against local evidence.",
+        "Different histories prove that birth and death rates cannot be measured.",
+        "The model alone supplies every future migration flow and economic outcome."
+      ],
+      "correctIndex": 1,
+      "explanation": "A model organizes broad relationships while simplifying history. Differences in public health, institutions, livelihoods, technology and other conditions can alter timing and pathways. Using a transition framework critically means comparing it with evidence, rather than treating its stages as a universal calendar or a complete forecast of every demographic and economic variable. A: Classical stages are not calendar dates shared by all countries. B: This retains the framework’s organizing value and its limits when applied to different places. C: Variation in historical patterns does not make the component rates unmeasurable. D: A birth–death framework does not determine all migration or economic outcomes."
+    },
+    {
+      "id": "hug-2-5-009",
+      "prompt": "How does the epidemiological transition complement the demographic transition model in explaining population change?",
+      "options": [
+        "It examines changing mortality causes and disease patterns, helping explain changes in death rates.",
+        "It assumes mortality never changes while the demographic model ignores births.",
+        "It describes only the direction of international migration, without mortality patterns.",
+        "It replaces all birth and death information with the size of political territories."
+      ],
+      "correctIndex": 0,
+      "explanation": "The demographic transition relates broad fertility and mortality changes. The epidemiological transition focuses more directly on changing patterns and causes of mortality, including shifts in the relative importance of different disease groups. The frameworks can inform each other without being identical or implying that infections disappear everywhere. A: A change in the pattern of mortality helps explain a component of the demographic transition. B: Mortality change is central to the epidemiological framework, and births are part of the demographic framework. C: Migration direction is a different subject from the mortality patterns at issue. D: Territorial size is not a substitute for the demographic events or causes of death described by these models."
+    },
+    {
+      "id": "hug-2-5-010",
+      "prompt": "A low-fertility population experiences a temporary epidemic that raises its death rate. Which response best respects the limits of a smooth transition schematic?",
+      "options": [
+        "The epidemic is impossible because later-stage populations cannot have infectious disease.",
+        "One year’s mortality spike proves that birth rates have permanently returned to high levels.",
+        "Every temporary death-rate rise requires the country to remain permanently in the earliest stage.",
+        "The disruption should be investigated with actual evidence rather than treated as an automatic permanent reset of the whole transition."
+      ],
+      "correctIndex": 3,
+      "explanation": "A stylized transition curve summarizes broad changes and does not exclude short-term shocks or renewed infectious disease burdens. A mortality spike alone provides neither a permanent fertility change nor proof of a complete historical reversal. Trends, causes and other demographic components need to be examined rather than inferred from a smooth diagram. A: Low fertility or a later-stage pattern does not make infectious outbreaks impossible. B: A death-rate change does not by itself establish the birth rate or its permanent level. C: A temporary event cannot alone establish an irreversible long-term classification. D: This recognizes the disruption while avoiding unsupported conclusions about every component or future period."
+    },
+    {
+      "id": "hug-2-5-011",
+      "prompt": "A transition diagram shows birth and death rates but no migration. What additional information is needed before using it to infer a country’s total population change?",
+      "options": [
+        "No additional information; the natural-change curves include all migration automatically.",
+        "Net migration, because it can add to or offset the natural-change balance.",
+        "Only the country’s land area, because population changes at a fixed rate per square kilometer.",
+        "Only the names of the stages, because labels determine all actual flows."
+      ],
+      "correctIndex": 1,
+      "explanation": "Birth and death rates describe natural change. Total population change also includes arrivals and departures, so the migration balance matters when applying the framework to an actual open population. Recognizing this omission does not make the diagram useless; it defines what the diagram alone can and cannot establish. A: The two natural-change components do not automatically encode immigration or emigration. B: Net migration supplies the additional component that can reinforce or offset natural change. C: Land area is not the missing flow in population accounting, and no fixed growth per area is given. D: Stage names summarize patterns rather than determining every measured component."
+    }
+  ]
+}

@@ -11,7 +11,7 @@ export type MapStimulus = Base & {
   paths?: { label: string; points: number[][]; arrow?: boolean; value?: number }[];
   kmPerUnit?: number;
 };
-export type ChartStimulus = Base & { kind: "chart"; unitLabel: string; categories: string[]; series: {label:string;values:number[]}[]; max: number };
+export type ChartStimulus = Base & { kind: "chart"; display?: "bar" | "line"; unitLabel: string; categories: string[]; series: {label:string;values:number[]}[]; max: number };
 export type PyramidStimulus = Base & { kind: "pyramid"; unitLabel: string; cohorts: {label:string;ageStart:number;ageEnd:number|null;male:number;female:number}[]; max: number };
 export type ModelStimulus = Base & { kind: "model"; assumptions: string; nodes: Point[]; edges: {from:string;to:string;label:string}[]; rings?: {radius:number;label:string}[] };
 export type TableStimulus = Base & { kind: "table"; headers: string[]; rows: string[][] };
@@ -24,6 +24,7 @@ export function mapBin(value: number, bins: NonNullable<MapStimulus["bins"]>) {
 export const mapX = (value: number) => 40 + value * 3.8;
 export const mapY = (value: number) => 35 + value * 3.3;
 export const chartHeight = (value: number, max: number) => value / max * 170;
+export const lineX = (index: number, count: number) => 80 + index * 360 / (count - 1);
 export const pyramidWidth = (value: number, max: number) => value / max * 140;
 export const symbolRadius = (value: number, max: number) => 20 * Math.sqrt(value / max);
 export function validateGeographyStimulus(stimulus: GeographyStimulus) {
@@ -50,6 +51,7 @@ export function validateGeographyStimulus(stimulus: GeographyStimulus) {
     if (stimulus.mapType === "proportional" && (!stimulus.points?.length || !stimulus.points.every(p => finite(p.value!) && p.value! > 0))) fail("positive symbol values required");
   } else if (stimulus.kind === "chart") {
     if (!finite(stimulus.max) || stimulus.max <= 0 || !stimulus.unitLabel || !stimulus.categories.length || !stimulus.series.length || stimulus.series.length > 3) fail("invalid chart axes");
+    if (stimulus.display !== undefined && !["bar","line"].includes(stimulus.display) || stimulus.display === "line" && stimulus.categories.length < 2) fail("invalid chart display or line categories");
     for (const series of stimulus.series) if (!series.label || series.values.length !== stimulus.categories.length || !series.values.every(n => finite(n) && n >= 0 && n <= stimulus.max)) fail("chart data outside axis");
   } else if (stimulus.kind === "pyramid") {
     if (!finite(stimulus.max) || stimulus.max <= 0 || !stimulus.unitLabel || stimulus.cohorts.length < 3) fail("invalid pyramid axis/cohorts");

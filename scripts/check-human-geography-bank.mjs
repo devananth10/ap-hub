@@ -66,6 +66,11 @@ export function verifyGeographyQuestion(question,review,stimulus){
   case 'migration-flow-balance':{assert.deepEqual(stimulus.paths.map(p=>p.points),[[[20,18],[80,18]],[[80,42],[20,42]]]);assert.deepEqual(stimulus.paths.map(p=>p.value),[3000,500]);assert.ok(stimulus.paths.every(p=>p.arrow&&p.label===String(p.value)));assert.equal(stimulus.paths[0].value-stimulus.paths[1].value,2500);assert.equal(question.correctIndex,2);break;}
   case 'migration-offset':assert.equal(review.check.natural+review.check.migration,1000);assert.equal(question.correctIndex,3);break;
   case 'natural-counts':assert.deepEqual(review.check.populations.map((p,i)=>p*review.check.rates[i]/100),[10000,4000]);assert.equal(question.correctIndex,3);break;
+  case 'dtm-stage-gaps':{assert.equal(stimulus.display,'line');assert.deepEqual(stimulus.categories,['Stage 1','Stage 2','Stage 3','Stage 4']);const births=stimulus.series.find(s=>s.label==='Births').values,deaths=stimulus.series.find(s=>s.label==='Deaths').values;assert.deepEqual(births.map((n,i)=>n-deaths[i]),[2,25,16,0]);assert.equal(question.correctIndex,1);break;}
+  case 'dtm-similar-gaps':{assert.deepEqual(stimulus.rows.map(row=>Number(row[1])-Number(row[2])),[1,26,14,1]);assert.deepEqual(stimulus.rows[0].slice(1),['40','39']);assert.deepEqual(stimulus.rows[3].slice(1),['10','9']);assert.equal(question.correctIndex,3);break;}
+  case 'dtm-within-country':assert.deepEqual(stimulus.regions.map(r=>r.value),[4.2,1.6,3.8,1.4]);assert.equal(new Set(stimulus.regions.map(r=>r.value)).size,4);assert.equal(question.correctIndex,0);break;
+  case 'epidemiological-counts':{for(const row of stimulus.rows)assert.equal(Number(row[1])+Number(row[2]),Number(row[3]));assert.deepEqual(stimulus.rows.map(row=>Number(row[2])/Number(row[3])),[.2,.75]);assert.deepEqual(stimulus.rows.map(row=>Number(row[3])),[1000,400]);assert.equal(Number(stimulus.rows[1][1]),100);assert.equal(question.correctIndex,2);break;}
+  case 'dtm-low-balance':assert.equal(review.check.population*review.check.rate/1000,500);assert.equal(question.correctIndex,2);break;
   case 'reasoning':break;
   default:throw Error('Unknown verification model: '+review.check.type);
  }

@@ -1,0 +1,143 @@
+{
+  "topicNumber": "2.5",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "6ec6e3530c8c41eabaf56f4cc4c92bebff5dc93ff7e977c8a98b37bbe47ff7cc",
+  "scopeReview": "IMP-2.B.1–2: demographic transition and epidemiological transition. Uses a four-stage classical schematic, not a universal timeline or exact country classification. Synthetic numbers and original questions; no external lesson/question text or figures copied.",
+  "varietyReview": "Line-model interpretation, high/low-rate contrast, within-country fertility map and cause-of-death table; other tasks cover mechanisms, growth versus level, turnover, history, model complementarity, shocks and omitted migration. Varied keys/difficulty and all five skills.",
+  "repetitionReview": "Not a numeric-only reprise of2.4: relates rate gaps to model stages and challenges model assumptions. Stage3 slower-positive growth, Stage4 turnover and Stage1/4 equal-gap comparison assess different misinterpretations. Mortality-cause counts are new.",
+  "researchReferences": [
+    "https://www.prb.org/resource/the-demographic-transition-a-contemporary-look-at-a-classic-model/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC2690264/"
+  ],
+  "referenceNote": "Development verification only: classical framework/limits and original epidemiological theory. No third-party resource is added to the student catalog. Original synthetic examples and reasoning, no copied data/figures/questions.",
+  "questions": [
+    {
+      "questionId": "hug-2-5-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Stage 2",
+      "independentReview": "Independently subtracted death from birth at each marker:42−40=2,40−15=25,25−9=16,10−10=0. Stage2 is the unique maximum. The connected markers are conceptual stages, not equal-duration historical observations.",
+      "check": {
+        "type": "dtm-stage-gaps"
+      },
+      "questionSha256": "6814725acf2ee17a2d4aa244b3dbd7fbce5c23c3c4602dbbe5d924b911469e56",
+      "stimulusSha256": "5f71aebdeb6d949b4b4003bef06195949954813894756288febe9054d9b49b92"
+    },
+    {
+      "questionId": "hug-2-5-002",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "A and D can have similarly slow natural increase while representing high-rate and low-rate conditions.",
+      "independentReview": "Recomputed gapsA1,B26,C14,D1 and compared component levelsA40/39 versusD10/9. Identical slow natural increase does not imply identical birth/mortality regimes.",
+      "check": {
+        "type": "dtm-similar-gaps"
+      },
+      "questionSha256": "059a3fb10d176fde6cad81bea6f4b12a134c437945f3d7c7630755598fb57840",
+      "stimulusSha256": "bfb6bbe99474e53eb5e80386defd46f1e8080a2726f794b09c40f5f2bbdc0bd8"
+    },
+    {
+      "questionId": "hug-2-5-003",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "A national label can conceal important subnational variation in fertility.",
+      "independentReview": "Compared four different district TFR values4.2,1.6,3.8,1.4. No mortality/time series is supplied, preventing exact district-stage assignment or a universal downward trend inference.",
+      "check": {
+        "type": "dtm-within-country"
+      },
+      "questionSha256": "5209a6208f05d02b02bea2287d825a6f3600ca79b067f5be9d5e81ca7d49d381",
+      "stimulusSha256": "94d0391f4e8428865cf0d42289b8a5f557d516c18aecd0bdd847a8424aa98564"
+    },
+    {
+      "questionId": "hug-2-5-004",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "All deaths fell while chronic conditions became a larger share; infectious deaths still occurred.",
+      "independentReview": "Independently summed800+200=1000 and100+300=400, computed chronic shares.2/.75 and component changes−700/+100. The interpretation concerns aggregate composition, not complete elimination or individual outcomes.",
+      "check": {
+        "type": "epidemiological-counts"
+      },
+      "questionSha256": "01bf0727fd6f83d845c673dc4c69b6b9b3a0d370511bb85247d19fa4fd51f8e1",
+      "stimulusSha256": "c265078e6f238d50eca27656897880f45151942a3856aff46dfb99c8e460bc78"
+    },
+    {
+      "questionId": "hug-2-5-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Death rates may fall before birth rates fall substantially, widening the birth–death gap.",
+      "independentReview": "Held a relatively high birth rate and reduced death rate, yielding a larger positive difference. The mechanism is a lag between two natural-change components, not migration or instantaneous elimination of births.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "7cd2a5b948a0b0fb65c0c550fa5fa73e24025ff3dfa9a2375c6d7ba932e65a49"
+    },
+    {
+      "questionId": "hug-2-5-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Population continues to grow, but its rate of natural increase becomes smaller.",
+      "independentReview": "Used the inequalitiesbirth>death and decliningbirth with stabledeath: gap stayspositive but decreases. This verifies the direction of both level and rate without inventing an exact trajectory.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "4882fb6a0f6ffba62c38b1f1fc2e1c1beeca862eb69ee3f83074f57210978f5a"
+    },
+    {
+      "questionId": "hug-2-5-007",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "There are 500 births and 500 deaths, producing zero natural increase despite continuing demographic events.",
+      "independentReview": "Independently computed50000*10/1000=500 for each component and difference0. This verifies turnover under balance, distinct from assuming an empty or event-free population.",
+      "check": {
+        "type": "dtm-low-balance",
+        "population": 50000,
+        "rate": 10
+      },
+      "questionSha256": "5fcc45582a1f30be020606ecdd8a53d10b08765f4c4ea7524660a57fcec1ab15"
+    },
+    {
+      "questionId": "hug-2-5-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "It is a simplified framework whose timing and pathways must be evaluated against local evidence.",
+      "independentReview": "Checked the difference between a conceptual sequence and an invariant historical timetable. The observed different pathways are compatible with a useful generalized framework but reject an exact universal schedule.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "8677c1dbfbcaf5e7b38d00f2ac5178dbf85a636d29ffcb91d3d46ee27f8e5a22"
+    },
+    {
+      "questionId": "hug-2-5-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "It examines changing mortality causes and disease patterns, helping explain changes in death rates.",
+      "independentReview": "Verified distinct explanatory targets: fertility/mortality levels versus mortality causes/patterns. Preserved complementarity without claiming a one-to-one universal stage correspondence or complete elimination of disease.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "5ff21fdeddc0339de3442862a8ce71ce29589b1a4dd019624e4360a0dabbb093"
+    },
+    {
+      "questionId": "hug-2-5-010",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "The disruption should be investigated with actual evidence rather than treated as an automatic permanent reset of the whole transition.",
+      "independentReview": "Held fertility low and varied mortality temporarily; there is no logical basis for inferring high births or permanent reversal. This is a model-limit question, not a real outbreak forecast or medical recommendation.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "65f0931be0eca39fc1cfac679ac4ceac4a789bfa7039440ac9a257405bb938b1"
+    },
+    {
+      "questionId": "hug-2-5-011",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Net migration, because it can add to or offset the natural-change balance.",
+      "independentReview": "Checked the accounting identitytotalchange=births−deaths+immigrants−emigrants. The displayed two curves omit the last two terms; a stage label cannot recover their values.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "f7e381be7b5afddd8ea54428e05e9cb7588585599000ffe1e24b48ae4191c8fa"
+    }
+  ]
+}

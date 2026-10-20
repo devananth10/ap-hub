@@ -2356,5 +2356,217 @@
         "arrow": true
       }
     ]
+  },
+  "hug-2-5-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "display": "line",
+    "title": "Four classical transition stages — schematic",
+    "description": "Original hypothetical model: birth/death rates per 1000 are Stage 1 42/40, Stage 2 40/15, Stage 3 25/9 and Stage 4 10/10. A solid line with circles marks births; a dashed line with squares marks deaths.",
+    "caption": "Connected markers summarize four classical stages, not equal-duration years or an actual country. Ignore migration for natural increase; real rates can fluctuate and pathways vary.",
+    "unitLabel": "Events per 1000 residents/year",
+    "categories": [
+      "Stage 1",
+      "Stage 2",
+      "Stage 3",
+      "Stage 4"
+    ],
+    "series": [
+      {
+        "label": "Births",
+        "values": [
+          42,
+          40,
+          25,
+          10
+        ]
+      },
+      {
+        "label": "Deaths",
+        "values": [
+          40,
+          15,
+          9,
+          10
+        ]
+      }
+    ],
+    "max": 50
+  },
+  "hug-2-5-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Different rate levels and growth gaps",
+    "description": "Hypothetical crude birth/death rates per 1000 residents: A 40/39, B 38/12, C 22/8, D 10/9. These are one-time observations using consistent definitions.",
+    "caption": "Compare both rate levels and their differences. A snapshot does not provide a complete historical transition record.",
+    "headers": [
+      "Population",
+      "Births per 1000",
+      "Deaths per 1000"
+    ],
+    "rows": [
+      [
+        "A",
+        "40",
+        "39"
+      ],
+      [
+        "B",
+        "38",
+        "12"
+      ],
+      [
+        "C",
+        "22",
+        "8"
+      ],
+      [
+        "D",
+        "10",
+        "9"
+      ]
+    ]
+  },
+  "hug-2-5-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "Fertility variation within one country",
+    "description": "Hypothetical district total fertility estimates: NW 4.2, NE 1.6, SW 3.8, SE 1.4 births per woman under the specified age-specific fertility schedule. Mortality, migration and earlier observations are not supplied.",
+    "caption": "Color classes summarize fertility only; they are not transition-stage thresholds. No real-country statistics are used.",
+    "unitLabel": "Total fertility estimate (births per woman)",
+    "regions": [
+      {
+        "label": "NW",
+        "value": 4.2,
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            0,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "NE",
+        "value": 1.6,
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            50,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "SW",
+        "value": 3.8,
+        "polygon": [
+          [
+            0,
+            30
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "SE",
+        "value": 1.4,
+        "polygon": [
+          [
+            50,
+            30
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ],
+    "bins": [
+      {
+        "min": 0,
+        "max": 2,
+        "label": "Under 2"
+      },
+      {
+        "min": 2,
+        "max": 5,
+        "label": "2 to under 5"
+      }
+    ]
+  },
+  "hug-2-5-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Changing composition of recorded deaths",
+    "description": "Hypothetical Earlier period: infectious 800, chronic 200, total 1000 deaths. Later period: infectious 100, chronic 300, total 400. Both periods cover equal lengths and a population of 100000.",
+    "caption": "The two cause groups are mutually exclusive and exhaustive in this simplified exercise. Counts describe populations, not individual diagnoses.",
+    "headers": [
+      "Period",
+      "Infectious deaths",
+      "Chronic deaths",
+      "All deaths"
+    ],
+    "rows": [
+      [
+        "Earlier",
+        "800",
+        "200",
+        "1000"
+      ],
+      [
+        "Later",
+        "100",
+        "300",
+        "400"
+      ]
+    ]
   }
 }

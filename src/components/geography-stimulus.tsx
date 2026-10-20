@@ -1,7 +1,7 @@
 "use client";
 import {useId,useState} from "react";
 import {Dialog} from "./ui";
-import {geographyStimuli,mapBin,mapX,mapY,chartHeight,pyramidWidth,symbolRadius,type GeographyStimulus} from "@/lib/geography-stimuli";
+import {geographyStimuli,mapBin,mapX,mapY,chartHeight,lineX,pyramidWidth,symbolRadius,type GeographyStimulus} from "@/lib/geography-stimuli";
 
 export function GeographyStimulus({questionId}:{questionId:string}) {
   const stimulus=geographyStimuli[questionId];
@@ -35,8 +35,11 @@ export function StimulusContent({stimulus:s}:{stimulus:GeographyStimulus}) {
       {s.kind==='chart'&&<>
         <g className="geo-axis"><path d="M62 35 L62 220 L452 220"/>{[0,.25,.5,.75,1].map(f=><g key={f}><line x1="58" x2="452" y1={220-f*170} y2={220-f*170}/><text x="52" y={224-f*170} textAnchor="end">{s.max*f}</text></g>)}</g>
         <text x="62" y="23">{s.unitLabel}</text>
-        {s.series.flatMap((series,j)=>series.values.map((value,i)=>{const group=370/s.categories.length,width=group/(s.series.length+1),x=70+i*group+j*width;return <g key={`${j}-${i}`}><rect className={`geo-bar geo-series-${j}`} data-series={series.label} data-category={s.categories[i]} data-value={value} x={x} y={220-chartHeight(value,s.max)} width={width-3} height={chartHeight(value,s.max)}/><text x={x+width/2} y={213-chartHeight(value,s.max)} textAnchor="middle">{value}</text><text x={x+width/2} y="238" textAnchor="middle">{String.fromCharCode(65+j)}</text></g>;}))}
-        {s.categories.map((label,i)=><text key={label} x={70+(i+.35)*370/s.categories.length} y="262" textAnchor="middle">{label}</text>)}
+        {s.display==='line'?s.series.map((series,j)=>{
+          const color=['#438b78','#b58a56','#648ca3'][j],points=series.values.map((value,i)=>[lineX(i,s.categories.length),220-chartHeight(value,s.max)]);
+          return <g key={series.label}><polyline className="geo-line" data-series={series.label} points={points.map(p=>p.join(',')).join(' ')} stroke={color} strokeDasharray={j===1?'7 4':j===2?'2 4':undefined}/>{points.map(([x,y],i)=><g key={i} data-series={series.label} data-category={s.categories[i]} data-value={series.values[i]}>{j===0?<circle className="geo-line-circle" cx={x} cy={y} r="5" stroke={color}/>:j===1?<rect x={x-3} y={y-3} width="6" height="6" fill={color}/>:<path d={`M${x} ${y-4} L${x+4} ${y+4} L${x-4} ${y+4} Z`} fill={color}/>}<text x={x} y={y+(j===0?-11:j===1?19:31)} textAnchor="middle">{series.values[i]}</text></g>)}</g>;
+        }):s.series.flatMap((series,j)=>series.values.map((value,i)=>{const group=370/s.categories.length,width=group/(s.series.length+1),x=70+i*group+j*width;return <g key={`${j}-${i}`}><rect className={`geo-bar geo-series-${j}`} data-series={series.label} data-category={s.categories[i]} data-value={value} x={x} y={220-chartHeight(value,s.max)} width={width-3} height={chartHeight(value,s.max)}/><text x={x+width/2} y={213-chartHeight(value,s.max)} textAnchor="middle">{value}</text><text x={x+width/2} y="238" textAnchor="middle">{String.fromCharCode(65+j)}</text></g>;}))}
+        {s.categories.map((label,i)=><text key={label} x={s.display==='line'?lineX(i,s.categories.length):70+(i+.35)*370/s.categories.length} y="262" textAnchor="middle">{label}</text>)}
       </>}
       {s.kind==='pyramid'&&<>
         <text x="146" y="24" textAnchor="middle">Male</text><text x="334" y="24" textAnchor="middle">Female</text>
@@ -51,7 +54,7 @@ export function StimulusContent({stimulus:s}:{stimulus:GeographyStimulus}) {
     </svg>
     <p className="stimulus-description">{s.description}</p>
     {s.kind==='map'&&<><p className="stimulus-legend">{s.unitLabel}</p>{s.bins&&<ul className="geo-legend">{s.bins.map((bin,i)=><li key={bin.label}><span className={`geo-shade-${i}`} aria-hidden="true"/>{bin.label}</li>)}</ul>}</>}
-    {s.kind==='chart'&&<><ul className="geo-legend">{s.series.map((series,i)=><li key={series.label}>{String.fromCharCode(65+i)}: {series.label}</li>)}</ul><DataTable headers={['Category',...s.series.map(row=>row.label)]} rows={s.categories.map((category,i)=>[category,...s.series.map(row=>String(row.values[i]))])}/></>}
+    {s.kind==='chart'&&<><ul className="geo-legend">{s.series.map((series,i)=><li key={series.label}>{String.fromCharCode(65+i)}: {series.label}{s.display==='line'?[' · solid / circles',' · dashed / squares',' · dotted / triangles'][i]:''}</li>)}</ul><DataTable headers={['Category',...s.series.map(row=>row.label)]} rows={s.categories.map((category,i)=>[category,...s.series.map(row=>String(row.values[i]))])}/></>}
     {s.kind==='pyramid'&&<DataTable headers={['Age cohort','Male','Female']} rows={s.cohorts.map(row=>[row.label,String(row.male),String(row.female)])}/>}
     {s.kind==='model'&&<p className="stimulus-legend">Assumptions: {s.assumptions}</p>}
   </>;

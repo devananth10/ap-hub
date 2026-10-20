@@ -1,5 +1,9 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topic 2.5 and reusable line charts
+
+132 MCQs across twelve topics are published, with48 meaningful stimuli (36.36%). Topic2.5 adds an original four-stage DTM line schematic, rate-level comparison, subnational fertility map and mortality-cause table. The line renderer uses solid/circle and dashed/square series, numeric labels, a common zero baseline and a full equivalent data table. Categorical stage spacing is explicitly not equal-duration historical time. Browser inspection found a label touching the vertical axis; inward point margins corrected it. All eleven answers produced11/11, and mobile390×844 visuals, light/dark contrast,100–200% keyboard zoom and graded-review enlargement passed. All136 automated tests,52 explicit bank models, TypeScript/build and Geography/standard routes passed. Research sources and limits are recorded in the QA sidecar; no new third-party student resources were published. Next2.6;56 topics/616 questions remain.
+
 ## Human Geography Topic 2.4
 
 121 MCQs across eleven topics are published;44 meaningful stimuli (36.36%) and47 explicit model checks. New checks separate natural increase from net migration, convert per-thousand rates correctly, corroborate the rule-of-70 approximation with logarithmic compounding and verify both migration-arrow directions. A floating-point equality in the checker was replaced with exact integer cross-multiplication before publication; the question’s1.4% answer was correct. All134 automated tests, TypeScript/build, Geography scopes and standard smoke checks passed. Browser grading covered all eleven questions for11/11; all four stimuli were inspected at390×844. Existing content/resources remain intact. Next:2.5;57 topics/627 questions remain.

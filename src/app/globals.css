@@ -317,3 +317,4 @@ kbd { display:flex; gap:3px; align-items:center; margin-left:auto; padding:0 4px
 .geography-graphic text.geo-region-label-unshaded { fill:var(--ink); stroke:none; }
 .geo-table-wrap th { overflow-wrap:normal; }
 @media(max-width:500px) { .geo-table-wrap th,.geo-table-wrap td { padding:8px 6px; } }
+.geo-line { fill:none; stroke-width:2.5; stroke-linejoin:round; }.geo-line-circle { fill:var(--surface); stroke-width:2; }

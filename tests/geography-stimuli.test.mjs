@@ -37,6 +37,11 @@ test('chart bar heights, zero baseline, labels and equivalent data match numeric
  validateGeographyStimulus(chart);const html=render(chart);assert.match(html,/data-value="50" x="[^"]+" y="135" width="[^"]+" height="85"/);assert.ok(html.includes('A: Year 1'));assert.ok(html.includes('B: Year 2'));assert.ok(html.includes('<table>'));assert.match(html,/<td>75<\/td>/);
  const wrong=structuredClone(chart);wrong.series[0].values[0]=101;assert.throws(()=>validateGeographyStimulus(wrong),/outside axis/);
 });
+
+test('line charts plot actual values with distinct patterns/markers and retain equivalent data',()=>{
+ const lines={...chart,display:'line'};validateGeographyStimulus(lines);const html=render(lines);assert.match(html,/data-series="Year 1" points="80,177.5 440,135"/);assert.match(html,/stroke-dasharray="7 4"/);assert.ok(html.includes('solid / circles'));assert.ok(html.includes('dashed / squares'));assert.match(html,/<td>75<\/td>/);
+ const invalid={...lines,categories:['Only'],series:[{label:'A',values:[25]}]};assert.throws(()=>validateGeographyStimulus(invalid),/line categories/);
+});
 test('population pyramids place oldest cohorts at top with symmetric side scales and complete data',()=>{
  validateGeographyStimulus(pyramid);const html=render(pyramid);assert.ok(html.indexOf('data-cohort="65+"')<html.indexOf('data-cohort="0–14"'));assert.match(html,/data-side="male" data-value="50" x="150" y="105" width="70"/);assert.match(html,/data-side="female" data-value="50" x="260" y="105" width="70"/);assert.ok(html.includes('each side uses the same scale'));assert.ok(html.includes('<table>'));
  const wrong=structuredClone(pyramid);wrong.cohorts.reverse();assert.throws(()=>validateGeographyStimulus(wrong),/cohort/);
@@ -123,4 +128,12 @@ test('population dynamics checks preserve signed flows, rate conversion and cons
   const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
  }
  const html=render(geographyStimuli[batch.questions[3].id]);assert.match(html,/data-path="3000" data-arrow-end="true" points="116,94.4 344,94.4"/);assert.match(html,/data-path="500" data-arrow-end="true" points="344,173.6 116,173.6"/);
+});
+
+test('transition-model evidence verifies actual line coordinates, rate contrasts and cause-of-death totals',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-2-5.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-2-5.json','utf8'));
+ for(const [i,change] of [[0,s=>s.series[1].values[1]=41],[2,s=>s.regions.forEach(r=>r.value=1.5)],[3,s=>{s.rows[1][1]='0';s.rows[1][3]='300';}]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+ const html=render(geographyStimuli[batch.questions[0].id]);const points=html.match(/data-series="Births" points="([^"]+)"/)[1].split(' ').map(p=>p.split(',').map(Number));const expected=[[80,77.2],[200,84],[320,135],[440,186]];points.forEach((p,i)=>p.forEach((v,j)=>assert.ok(Math.abs(v-expected[i][j])<1e-9)));assert.ok(html.includes('dashed / squares'));assert.ok(html.includes('<td>42</td><td>40</td>'));
 });
