@@ -1,5 +1,9 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topic 2.4
+
+121 MCQs across eleven topics are published;44 meaningful stimuli (36.36%) and47 explicit model checks. New checks separate natural increase from net migration, convert per-thousand rates correctly, corroborate the rule-of-70 approximation with logarithmic compounding and verify both migration-arrow directions. A floating-point equality in the checker was replaced with exact integer cross-multiplication before publication; the question’s1.4% answer was correct. All134 automated tests, TypeScript/build, Geography scopes and standard smoke checks passed. Browser grading covered all eleven questions for11/11; all four stimuli were inspected at390×844. Existing content/resources remain intact. Next:2.5;57 topics/627 questions remain.
+
 ## Human Geography Topic 2.3 — first published pyramids
 
 110 original MCQs across ten topics are published, with40 genuine stimuli (36.36%): twelve maps, eighteen tables, six charts, three pyramids and one service diagram. All three pyramid datasets sum to100%, use a common whole-population denominator and symmetric scales, and place oldest cohorts at the top. Ten-year cohorts below80 and an explicit open80+ group avoid unequal-width age bands in shape comparisons. Forty-one explicit numerical/geometry checks corroborate the bank. All133 automated tests, TypeScript/build, Geography scopes and standard routes passed. All eleven new questions were answered/graded for11/11 in the browser; mobile pyramids/equivalent tables, keyboard100–200% zoom, light/dark contrast and review-time enlargement were checked. Diagram inspection was visual; an attempted browser geometry measurement was unsupported and is not counted as a successful automated clipping test. No human review is claimed. The full bank remains unfinished:58 topics/638 questions remain, starting2.4.

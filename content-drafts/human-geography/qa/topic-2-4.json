@@ -1,0 +1,146 @@
+{
+  "topicNumber": "2.4",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "e485f009c5d80da7056d46afe9e52f73d7c7df388531a45a9ccbcfd45de536da",
+  "scopeReview": "IMP-2.A.1–3: fertility, mortality, migration, natural increase, doubling time and social/cultural/political/economic influences. All rates and flows are hypothetical; rule70 assumptions explicit. No real policy guidance, health diagnosis or deterministic claim about a population.",
+  "varietyReview": "Four interpreted stimuli separate accounting, paired rates, approximate doubling and migration direction. Other items distinguish age weights, momentum, policy opportunities versus completed flows and rate/count comparisons. All five skills, four keys and varied difficulty represented.",
+  "repetitionReview": "Different from2.3 snapshot composition: measures flows, rates, projection and influences. The two natural-change tasks distinguish rate conversion from a negative-natural/positive-migration counterexample, not merely the same arithmetic with replaced numbers.",
+  "questions": [
+    {
+      "questionId": "hug-2-4-001",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "1.4% natural increase; a net gain of 400 residents",
+      "independentReview": "Recomputed births−deaths1400; immigration−emigration−1000; sum400. Used100000 midyear denominator to obtain1.4% natural increase. Checked per-thousand14 versus percent1.4 and avoided assigning an unsupported end-year population.",
+      "check": {
+        "type": "population-balance"
+      },
+      "questionSha256": "bf635585074cff40c073ea95eec8789277355e1b135c2e291bb092bd2201d52c",
+      "stimulusSha256": "c9d177543f52a86181d12f4c664e1b484a188a51888b2fefaae0f956d2e04a61"
+    },
+    {
+      "questionId": "hug-2-4-002",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "It remains 2% in the first two periods and then falls to 1%.",
+      "independentReview": "Independently computed paired gaps20,20,10 per1000 and percentages2,2,1. Checked that migration is absent from natural increase and no doubling interval is provided by the chart alone.",
+      "check": {
+        "type": "natural-increase-trend"
+      },
+      "questionSha256": "7bc91fff1c0f105d58685c439dc8bbf7610075f1b7f2773b19849ba14e51c44d",
+      "stimulusSha256": "e787eb0e8113ce35a63047923007fa006cb80311b6385c1e0757f60e70027d40"
+    },
+    {
+      "questionId": "hug-2-4-003",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "35 years and 70 years",
+      "independentReview": "Recomputed70/2=35 and70/1=70. Corroborated with discrete compounding ln2/ln1.02≈35.003 and ln2/ln1.01≈69.661 years; approximation errors are under one year.",
+      "check": {
+        "type": "doubling-time"
+      },
+      "questionSha256": "8f54861052478c0a64a781bd4ed11191cd60f8909bcf22b129e277770ecc59f6",
+      "stimulusSha256": "e61bd11ee52ee6f7bd6d43289055df8d9f75f760df3645eef4ee74e8a98dc80c"
+    },
+    {
+      "questionId": "hug-2-4-004",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "Area B has a net migration gain of 2,500 residents; its total change also depends on births and deaths.",
+      "independentReview": "Followed actual arrow endpoints and counts: A→B3000, B→A500. Recomputed Bnet+2500 and Anet−2500, which sum0 for this closed pair, without inferring unshown birth/death balances.",
+      "check": {
+        "type": "migration-flow-balance"
+      },
+      "questionSha256": "b4e0baac89a0b8b7770373c6841391ef3c1d9d571b6ec1b3ee7d65d9e6a8ae42",
+      "stimulusSha256": "71a2ad90111e0f53d4212804691f25de3acc905ff232b29c9bbf7d7114792274"
+    },
+    {
+      "questionId": "hug-2-4-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "The crude birth rate also reflects the population’s age composition, not only fertility behavior.",
+      "independentReview": "Held age-specific fertility schedules similar and varied age weights in the total population. The crude rate is a weighted population outcome and need not equal a per-woman lifetime measure.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "9ee377603426867dd88deb7aaf9cca19f95d01de41ee3bb3ebac2d8abf7253df"
+    },
+    {
+      "questionId": "hug-2-4-006",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Different age composition can raise the crude rate even when age-specific death rates are lower.",
+      "independentReview": "Checked the weighted-rate logic: a population concentrated in higher-mortality age groups can have a higher crude rate despite lower rates within each group. No claim about a real country or individual health diagnosis is made.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "688fc75e4d305164fa3859694d483a163edbb6ab5ec91448ec9a1d75e5ac2fcf"
+    },
+    {
+      "questionId": "hug-2-4-007",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Total population rises by 1,000 despite natural decrease.",
+      "independentReview": "Independently added signed components−1000+2000=1000. Natural decrease and total growth are compatible under the supplied migration balance.",
+      "check": {
+        "type": "migration-offset",
+        "natural": -1000,
+        "migration": 2000
+      },
+      "questionSha256": "7fac611023b38f4ce13b2533ad2f34686e9c211e50969a0b903eebe21427a9a8"
+    },
+    {
+      "questionId": "hug-2-4-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Population momentum can sustain substantial births as a large cohort reaches reproductive ages.",
+      "independentReview": "Separated lower fertility per woman from the size of the population entering childbearing ages. More potential parents can coexist with fewer births per woman; no exact future growth path is asserted.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "619180873f825acb79ee5d9d05c0e36fbff58680073be6a2652dafa2fbb65141"
+    },
+    {
+      "questionId": "hug-2-4-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "These opportunities can influence timing and family-size decisions, without fixing an identical response for everyone.",
+      "independentReview": "Assessed a conditional mechanism rather than a universal claim about education, gender or employment. The hypothetical association supports investigation but not a fixed individual response or a sole-cause conclusion.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "37586323dfdc5766485878afe9a9436863fa51059a6dbcf4dd5678396ead537d"
+    },
+    {
+      "questionId": "hug-2-4-010",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "The decision may influence migration, but actual demographic flows are needed to determine total change.",
+      "independentReview": "Distinguished authorization/eligibility from completed movement and retained the four flow components. No real immigration law or policy outcome is asserted.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "27eb3f7c603446d1e4800031ca0726f0ad646baa480c8f9ea6bca3b5e3a571bb"
+    },
+    {
+      "questionId": "hug-2-4-011",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "M adds 10,000 while N adds 4,000.",
+      "independentReview": "Independently multiplied.01*1000000=10000 and.02*200000=4000. Rates and absolute growth rankings differ; migration is explicitly excluded.",
+      "check": {
+        "type": "natural-counts",
+        "populations": [
+          1000000,
+          200000
+        ],
+        "rates": [
+          1,
+          2
+        ]
+      },
+      "questionSha256": "e7be3509d646edf461585f8918305710046c5663bf1420c416784afc1cc3d207"
+    }
+  ]
+}

@@ -116,3 +116,11 @@ test('published composition models verify whole-population denominators, cohort 
  }
  const html=render(geographyStimuli[batch.questions[0].id]);assert.ok(html.indexOf('data-cohort="80+"')<html.indexOf('data-cohort="0–9"'));assert.match(html,/data-cohort="0–9" data-side="male" data-value="8"/);assert.match(html,/<th scope="row">10–19<\/th><td>7<\/td><td>7<\/td>/);
 });
+
+test('population dynamics checks preserve signed flows, rate conversion and constant-growth doubling assumptions',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-2-4.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-2-4.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[4][1]='500'],[1,s=>s.series[1].values[1]=15],[2,s=>s.rows[0][1]='0'],[3,s=>s.paths[0].points.reverse()]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+ const html=render(geographyStimuli[batch.questions[3].id]);assert.match(html,/data-path="3000" data-arrow-end="true" points="116,94.4 344,94.4"/);assert.match(html,/data-path="500" data-arrow-end="true" points="344,173.6 116,173.6"/);
+});

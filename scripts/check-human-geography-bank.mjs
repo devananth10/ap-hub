@@ -60,6 +60,12 @@ export function verifyGeographyQuestion(question,review,stimulus){
   case 'pyramid-older-share':{const rows=percentagePyramid(stimulus);assert.equal(rows.filter(r=>r.ageStart>=60).reduce((s,r)=>s+r.male+r.female,0),39);assert.equal(rows.filter(r=>r.ageStart<20).reduce((s,r)=>s+r.male+r.female,0),16);assert.equal(question.correctIndex,1);break;}
   case 'sex-ratio-share':{const {male,female}=review.check;assert.equal(male/female*100,125);assert.equal(Math.round(male/(male+female)*1000)/10,55.6);assert.equal(Number.parseFloat(question.options[question.correctIndex]),55.6);assert.equal(question.correctIndex,1);break;}
   case 'cohort-size':{assert.deepEqual(review.check.populations.map(p=>p*review.check.share),[1000,10000]);assert.equal(question.correctIndex,0);break;}
+  case 'population-balance':{const get=label=>Number(stimulus.rows.find(row=>row[0]===label)[1]),natural=get('Births')-get('Deaths'),migration=get('Immigrants')-get('Emigrants');assert.equal(natural*1000,get('Midyear residents')*14);assert.equal(migration,-1000);assert.equal(natural+migration,400);assert.equal(question.correctIndex,0);break;}
+  case 'natural-increase-trend':{const birth=stimulus.series.find(s=>s.label==='Births').values,death=stimulus.series.find(s=>s.label==='Deaths').values;assert.deepEqual(birth.map((n,i)=>(n-death[i])/10),[2,2,1]);assert.equal(question.correctIndex,3);break;}
+  case 'doubling-time':{const rates=stimulus.rows.map(row=>Number(row[1]));assert.ok(rates.every(r=>r>0));assert.deepEqual(rates.map(r=>70/r),[35,70]);rates.forEach(r=>assert.ok(Math.abs(70/r-Math.log(2)/Math.log1p(r/100))<1));assert.equal(question.correctIndex,1);break;}
+  case 'migration-flow-balance':{assert.deepEqual(stimulus.paths.map(p=>p.points),[[[20,18],[80,18]],[[80,42],[20,42]]]);assert.deepEqual(stimulus.paths.map(p=>p.value),[3000,500]);assert.ok(stimulus.paths.every(p=>p.arrow&&p.label===String(p.value)));assert.equal(stimulus.paths[0].value-stimulus.paths[1].value,2500);assert.equal(question.correctIndex,2);break;}
+  case 'migration-offset':assert.equal(review.check.natural+review.check.migration,1000);assert.equal(question.correctIndex,3);break;
+  case 'natural-counts':assert.deepEqual(review.check.populations.map((p,i)=>p*review.check.rates[i]/100),[10000,4000]);assert.equal(question.correctIndex,3);break;
   case 'reasoning':break;
   default:throw Error('Unknown verification model: '+review.check.type);
  }

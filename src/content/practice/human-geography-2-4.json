@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 2,
+  "topicId": "topic-2-4",
+  "questions": [
+    {
+      "id": "hug-2-4-001",
+      "prompt": "Using the annual counts and midyear population in the table, which pair correctly gives the rate of natural increase as a percentage and the total net population change?",
+      "options": [
+        "1.4% natural increase; a net gain of 400 residents",
+        "0.4% natural increase; a net gain of 400 residents",
+        "1.4% natural increase; a net gain of 1,400 residents",
+        "14% natural increase; a net gain of 400 residents"
+      ],
+      "correctIndex": 0,
+      "explanation": "Natural increase excludes migration:2,200 births−800 deaths=1,400, or1,400/100,000×100=1.4%. Net migration is1,500−2,500=−1,000. Total net change is1,400−1,000=+400 residents. The midyear population is the rate denominator; it is not specified as the starting population for an exact end-year count. A: This separates the natural-change rate from the total change after migration. B: 0.4% corresponds to the total change divided by the rate denominator, not the rate of natural increase. C: 1,400 ignores the1,000-person net migration loss when calculating total change. D: The natural increase is14 per1,000, which converts to1.4%, not14%."
+    },
+    {
+      "id": "hug-2-4-002",
+      "prompt": "The chart reports crude birth and death rates per 1,000 residents. Which description correctly tracks the rate of natural increase across the three periods?",
+      "options": [
+        "It declines at every step simply because the crude birth rate declines.",
+        "It equals 3.5%, 2.8% and 1.8%, respectively.",
+        "It shows the population doubles every time the birth rate exceeds the death rate.",
+        "It remains 2% in the first two periods and then falls to 1%."
+      ],
+      "correctIndex": 3,
+      "explanation": "Subtract each crude death rate from its paired crude birth rate, then divide the per-thousand gap by10 to express it as a percentage. The gaps are35−15=20,28−8=20 and18−8=10 per1,000, giving2%,2% and1%. Falling birth rates need not immediately reduce natural increase if death rates also fall. A: Between the first two periods the birth and death rates both fall by7, leaving the gap unchanged. B: These percentages convert the birth rates alone and omit deaths. C: A positive gap indicates natural growth, not an immediate doubling of the total population. D: This uses both rates and the correct per-thousand-to-percent conversion at each period."
+    },
+    {
+      "id": "hug-2-4-003",
+      "prompt": "Assume the listed positive total growth rates remain constant. Using the approximate rule of 70, what are the doubling times for X and Y, respectively?",
+      "options": [
+        "14 years and 7 years",
+        "35 years and 70 years",
+        "70 years and 35 years",
+        "140 years and 70 years"
+      ],
+      "correctIndex": 1,
+      "explanation": "The rule of70 estimates doubling time in years as70 divided by the annual growth rate expressed as a percent. X gives70/2=35 years and Y gives70/1=70 years. The approximation assumes a continuing positive proportional growth rate; it is not a guarantee that real rates remain unchanged. A: These values neither apply70 divided by the given percentage rates nor preserve the faster-growth/shorter-time relationship. B: Both calculations use the percentage numbers2 and1 and give the expected inverse relationship. C: This reverses the country labels: the2% population should double sooner. D: X’s calculation would correspond to0.5% growth rather than the supplied2%."
+    },
+    {
+      "id": "hug-2-4-004",
+      "prompt": "The arrows show all recorded moves between Areas A and B during one year. Which interpretation correctly isolates migration from total population change?",
+      "options": [
+        "Area A has a net migration gain of 2,500 residents.",
+        "Area B’s total population must rise by exactly 3,000 residents.",
+        "Area B has a net migration gain of 2,500 residents; its total change also depends on births and deaths.",
+        "Both areas have zero net migration because people move in both directions."
+      ],
+      "correctIndex": 2,
+      "explanation": "A sends3,000 residents to B and receives500 back, so B’s net migration is3,000−500=+2,500 and A’s is−2,500 for these recorded moves. Births and deaths are not shown. A two-way flow does not imply equal flow volumes or establish total population change by itself. A: This reverses the direction of the net flow; A loses more movers than it receives. B: The3,000 is gross inflow, not net migration, and natural change is still unknown. C: This subtracts both migration directions and keeps natural change separate. D: Two directions can have unequal totals; these flows differ by2,500."
+    },
+    {
+      "id": "hug-2-4-005",
+      "prompt": "Two populations have similar average lifetime fertility estimates but different proportions of residents in childbearing ages. Why can their crude birth rates differ?",
+      "options": [
+        "A lifetime fertility estimate and crude birth rate always have the same denominator.",
+        "The crude birth rate also reflects the population’s age composition, not only fertility behavior.",
+        "Crude birth rates exclude births to residents in childbearing ages.",
+        "Identical lifetime fertility estimates force identical annual birth counts regardless of population size."
+      ],
+      "correctIndex": 1,
+      "explanation": "Fertility measures and crude birth rates summarize different quantities. A total fertility estimate describes births per woman under a specified set of age-specific rates, while the crude birth rate relates annual births to the total population. Different age structures can therefore produce different crude rates even with similar fertility schedules. A: Births per woman under a fertility schedule and annual births per total population are not the same denominator or time concept. B: A different share at ages when births occur can affect births relative to all residents. C: Those births are part of the annual birth count rather than excluded from it. D: Population size and age composition can alter annual totals even when the fertility estimate matches."
+    },
+    {
+      "id": "hug-2-4-006",
+      "prompt": "An older population has a higher crude death rate than a younger population. Why is this alone insufficient to conclude that health conditions are worse at every age in the older population?",
+      "options": [
+        "Different age composition can raise the crude rate even when age-specific death rates are lower.",
+        "A crude death rate is a direct measurement of every individual’s life expectancy.",
+        "A higher share of older residents mathematically guarantees lower crude death rates.",
+        "Crude death rates use the number of births as their denominator."
+      ],
+      "correctIndex": 0,
+      "explanation": "A crude death rate pools deaths across an entire population. Age groups have different mortality risks, so their relative sizes influence the aggregate rate. An older age structure can produce a higher crude rate without implying worse age-specific outcomes everywhere. Comparing age-specific or appropriately standardized evidence would address a different question. A: This identifies the composition effect that prevents the proposed universal inference. B: Annual deaths per population are not each person’s expected lifetime. C: A greater weight on older ages can raise, rather than necessarily lower, the aggregate rate. D: The denominator is total population, not annual births."
+    },
+    {
+      "id": "hug-2-4-007",
+      "prompt": "A region records 1,000 more deaths than births and a net migration gain of 2,000 residents in a year. Which outcome follows?",
+      "options": [
+        "Total population falls by 3,000 because natural decrease and migration must both be losses.",
+        "Total population is unchanged because migration cannot offset natural decrease.",
+        "Total population rises by 2,000 because only migration determines change.",
+        "Total population rises by 1,000 despite natural decrease."
+      ],
+      "correctIndex": 3,
+      "explanation": "Natural change and net migration are separate components of total change. Natural change is−1,000 and net migration is+2,000, so the net result is+1,000. Natural decrease therefore does not necessarily mean total population decline when inward migration more than offsets it. A: The migration component is explicitly a gain, so adding it as another loss reverses its sign. B: Migration can offset the birth–death balance in a total population accounting. C: This omits the1,000-person natural loss from the combined result. D: Adding−1,000 and+2,000 gives the stated1,000-person gain."
+    },
+    {
+      "id": "hug-2-4-008",
+      "prompt": "Average births per woman begin to fall, yet annual births remain numerous because a large cohort is entering childbearing ages. Which explanation best fits this situation?",
+      "options": [
+        "A decline in births per woman must immediately reduce the population total to zero.",
+        "Age structure has no role in population change once a fertility estimate is known.",
+        "Population momentum can sustain substantial births as a large cohort reaches reproductive ages.",
+        "A large cohort means that every member must have the same number of children."
+      ],
+      "correctIndex": 2,
+      "explanation": "Population momentum links a population’s age structure to later change. A large cohort entering childbearing ages can sustain a substantial number of births even if births per woman decline. The effect is conditional on fertility, mortality and migration; it does not guarantee permanent growth or identical individual choices. A: A change in average fertility does not instantaneously erase existing residents or all births. B: The number of people exposed to age-specific fertility rates helps determine total births. C: This connects the large entering cohort to the persistence of births under lower average fertility. D: A cohort is an age group, not a guarantee of uniform reproductive behavior."
+    },
+    {
+      "id": "hug-2-4-009",
+      "prompt": "In a hypothetical population, longer education and wider employment options accompany later average childbearing. Which interpretation appropriately connects social and economic factors to fertility?",
+      "options": [
+        "These opportunities can influence timing and family-size decisions, without fixing an identical response for everyone.",
+        "Education mechanically determines one exact number of births for every person.",
+        "Employment opportunities have no possible relationship to the timing of childbearing.",
+        "The association proves that mortality and migration cannot affect total population change."
+      ],
+      "correctIndex": 0,
+      "explanation": "Social and economic opportunities can affect the circumstances in which people make reproductive decisions, including timing, costs and goals. A contextual influence is different from a deterministic rule for every person. The scenario does not isolate one cause or remove mortality and migration from total population dynamics. A: This recognizes plausible influences while retaining individual variation and the limits of the scenario. B: A population-level association does not assign every individual an exact completed family size. C: The scenario provides a possible timing connection, so an absolute denial is unsupported. D: Other components remain part of population accounting even when fertility is being studied."
+    },
+    {
+      "id": "hug-2-4-010",
+      "prompt": "A country increases legal work-entry permits but publishes no figures for actual arrivals, departures, births or deaths. What can be concluded about total population change from the permit decision alone?",
+      "options": [
+        "Total population must increase by exactly the number of permits offered.",
+        "The decision may influence migration, but actual demographic flows are needed to determine total change.",
+        "Natural increase automatically becomes equal to the permit count.",
+        "Every permit proves that one current resident has emigrated."
+      ],
+      "correctIndex": 1,
+      "explanation": "A policy can affect opportunities for migration, but offered permits are not the same as completed moves. Actual arrivals, departures, births and deaths are needed for total change. The policy is a political influence on demographic conditions, not an accounting substitute for the resulting population flows. A: Not every offered permit necessarily results in arrival, and the other components remain unknown. B: This distinguishes a policy influence from the measured outcomes needed for population accounting. C: Natural increase depends on births and deaths, not the number of work-entry permits. D: An entry opportunity does not establish a matching departure by a current resident."
+    },
+    {
+      "id": "hug-2-4-011",
+      "prompt": "Country M has 1,000,000 residents and an annual rate of natural increase of 1%. Country N has 200,000 residents and a rate of 2%. Ignoring migration, which comparison of annual numerical increase is correct?",
+      "options": [
+        "N adds more residents because its percentage rate is higher.",
+        "Both add the same number because a percentage always represents the same count.",
+        "M adds 1,000 while N adds 400.",
+        "M adds 10,000 while N adds 4,000."
+      ],
+      "correctIndex": 3,
+      "explanation": "A growth percentage must be applied to its population denominator to obtain a count. M gives0.01×1,000,000=10,000 and N gives0.02×200,000=4,000. A higher rate in a smaller population need not produce the larger numerical increase, even when migration is excluded from both comparisons. A: N’s higher rate acts on a much smaller population and yields4,000 rather than10,000. B: The denominators differ, so equal or different percentages need not imply the same count. C: These figures misconvert both percentages by a factor of ten. D: Both products use the correct percentage conversions and population denominators."
+    }
+  ]
+}

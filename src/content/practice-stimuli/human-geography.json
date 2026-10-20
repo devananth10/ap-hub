@@ -2181,5 +2181,180 @@
         "female": 7.5
       }
     ]
+  },
+  "hug-2-4-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Annual population-accounting observations",
+    "description": "Hypothetical midyear population 100000. During the year: 2200 births, 800 deaths, 1500 immigrants and 2500 emigrants. The four flow counts use the same population boundary.",
+    "caption": "Midyear population is the rate denominator. It is not identified as the beginning-of-year population.",
+    "headers": [
+      "Measure",
+      "Count"
+    ],
+    "rows": [
+      [
+        "Midyear residents",
+        "100000"
+      ],
+      [
+        "Births",
+        "2200"
+      ],
+      [
+        "Deaths",
+        "800"
+      ],
+      [
+        "Immigrants",
+        "1500"
+      ],
+      [
+        "Emigrants",
+        "2500"
+      ]
+    ]
+  },
+  "hug-2-4-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Paired crude rates over three periods",
+    "description": "Hypothetical crude birth/death rates per 1000 residents: Early 35/15, Middle 28/8, Later 18/8. Birth and death rates in each pair use a common population denominator.",
+    "caption": "Natural increase excludes migration. These observations do not establish that future rates will remain fixed.",
+    "unitLabel": "Events per 1000 residents/year",
+    "categories": [
+      "Early",
+      "Middle",
+      "Later"
+    ],
+    "series": [
+      {
+        "label": "Births",
+        "values": [
+          35,
+          28,
+          18
+        ]
+      },
+      {
+        "label": "Deaths",
+        "values": [
+          15,
+          8,
+          8
+        ]
+      }
+    ],
+    "max": 40
+  },
+  "hug-2-4-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Assumed positive annual growth rates",
+    "description": "Hypothetical populations X and Y have annual total growth rates of 2% and 1%, respectively. For this projection exercise the rates are assumed to remain constant.",
+    "caption": "Use the approximate rule of 70 divided by the percentage growth rate; real populations need not retain a constant rate.",
+    "headers": [
+      "Population",
+      "Annual growth (%)"
+    ],
+    "rows": [
+      [
+        "X",
+        "2"
+      ],
+      [
+        "Y",
+        "1"
+      ]
+    ]
+  },
+  "hug-2-4-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "flow",
+    "title": "Annual migration between two areas",
+    "description": "Hypothetical north-up map: an arrow from A to B represents 3000 movers and a reverse arrow from B to A represents 500. No other migration is recorded for these areas in this exercise; births and deaths are not shown.",
+    "caption": "Numbers label annual movers in the arrow direction, not population totals or all components of change.",
+    "unitLabel": "Movers per year; arrowhead marks destination",
+    "regions": [
+      {
+        "label": "A",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "B",
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ],
+    "paths": [
+      {
+        "label": "3000",
+        "value": 3000,
+        "points": [
+          [
+            20,
+            18
+          ],
+          [
+            80,
+            18
+          ]
+        ],
+        "arrow": true
+      },
+      {
+        "label": "500",
+        "value": 500,
+        "points": [
+          [
+            80,
+            42
+          ],
+          [
+            20,
+            42
+          ]
+        ],
+        "arrow": true
+      }
+    ]
   }
 }
