@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 2,
+  "topicId": "topic-2-2",
+  "questions": [
+    {
+      "id": "hug-2-2-001",
+      "prompt": "The two areas have the same resident-to-clinic ratio and comparable clinic services. What does the journey information add to an assessment of service access?",
+      "options": [
+        "The dispersed area’s longer mean journey shows why equal service ratios need not mean equal geographic access.",
+        "The compact area must have more clinics because its journeys are shorter.",
+        "The dispersed area must have fewer residents because its settlement is less compact.",
+        "The equal ratio means that the listed journey-time difference cannot be real."
+      ],
+      "correctIndex": 0,
+      "explanation": "Both areas have10,000 residents and one clinic, so the resident-to-clinic ratio is identical. Their mean travel times differ:35 minutes in the dispersed area and5 in the compact area. Distribution and connections can therefore affect access in ways that a count-based ratio does not capture, even with comparable services. A: This uses the actual journey difference while keeping the equal population and clinic counts intact. B: The table fixes both clinic counts at one; a shorter journey does not add a clinic. C: Both resident counts are10,000, so the population difference claimed here contradicts the data. D: An equal ratio does not constrain every spatial or network relationship within an area."
+    },
+    {
+      "id": "hug-2-2-002",
+      "prompt": "The hypothetical chart compares annual transport energy per resident across three settlement patterns. Which conclusion respects both the pattern and the limits of the evidence?",
+      "options": [
+        "The highest-density area has the greatest transport energy use per resident.",
+        "The chart establishes that the highest-density area has the greatest total transport energy use.",
+        "Higher density is associated here with lower transport energy per resident, but other impacts and causes are not established.",
+        "The lower per-resident value proves that density alone caused every difference."
+      ],
+      "correctIndex": 2,
+      "explanation": "The per-resident values fall from12,000 to8,000 to4,000 energy units as the density category increases. The comparison is consistent with potential efficiencies from spatial concentration, but it does not supply total populations, all environmental impacts or a controlled causal estimate. Density can have different consequences depending on infrastructure and other conditions. A: The highest-density category has the lowest displayed per-resident value. B: Total use would require multiplying by each area’s resident population, which is not given. C: This reports the observed per-resident association without treating it as an exhaustive or causal measure. D: The chart alone does not control other differences such as transport systems or trip lengths."
+    },
+    {
+      "id": "hug-2-2-003",
+      "prompt": "In this hypothetical assembly, each mapped district elects exactly one representative. Which consequence of the population distribution follows from that rule?",
+      "options": [
+        "Each northern representative serves four times as many residents as each southern representative.",
+        "Each southern representative serves four times as many residents as each northern representative.",
+        "Equal district areas guarantee equal residents per representative.",
+        "Each southern district automatically receives four representatives because it has more residents."
+      ],
+      "correctIndex": 1,
+      "explanation": "The northern districts each have1,000 residents and the southern districts each have4,000. With one representative per district, those are also the resident-per-representative ratios. Unequal population distribution can therefore create different representation ratios under a fixed one-per-district rule. The example describes a hypothetical rule, not a claim about a particular country’s law. A: This reverses the population comparison; the southern districts have the larger counts. B: The ratio4000/1000=4 describes the stated difference for one representative in each district. C: Equal land area does not imply equal population, as the mapped counts demonstrate. D: The explicit rule assigns one representative to each district, not a number proportional to population."
+    },
+    {
+      "id": "hug-2-2-004",
+      "prompt": "Using the table’s annual per-resident resource demand, which comparison of total annual demand is correct?",
+      "options": [
+        "Area B’s demand is ten times Area A’s because B has ten times as many residents.",
+        "Area A’s demand is ten times Area B’s because its per-resident demand is ten times larger.",
+        "Area B’s total demand is lower because its per-resident demand is lower.",
+        "Both areas demand 100,000 units per year, despite their different populations and densities."
+      ],
+      "correctIndex": 3,
+      "explanation": "Total demand combines population with demand per resident. A uses1,000×100=100,000 units per year; B uses10,000×10=100,000. Both areas have100 km² of land, so B also has ten times A’s arithmetic density. This shows why population or density alone does not determine total resource demand when consumption differs. A: This uses the population ratio but ignores B’s tenfold lower demand per resident. B: This uses the per-resident ratio but ignores A’s tenfold smaller population. C: A lower per-resident value need not yield a lower total when the population is larger. D: Both products give the same total while retaining the stated differences in population and land-based density."
+    },
+    {
+      "id": "hug-2-2-005",
+      "prompt": "Two planners estimate how many people the same resource system can sustain. They assume different per-person consumption and technology. Why can their carrying-capacity estimates differ without either arithmetic calculation being wrong?",
+      "options": [
+        "The estimate depends partly on the assumed resource use and means of obtaining and managing resources.",
+        "Carrying capacity is a fixed property of land area alone, unaffected by any human choices.",
+        "A larger current population always proves that its resource use is sustainable indefinitely.",
+        "Any difference means that no resource limit can exist."
+      ],
+      "correctIndex": 0,
+      "explanation": "Carrying capacity concerns the population that can be sustained under specified environmental and human conditions. Consumption, technology and access to resources can affect that estimate alongside the physical resource base. Different explicit assumptions can therefore yield different conditional estimates without making either estimate a universal permanent number. A: This identifies the changed assumptions and preserves the role of environmental constraints. B: Land area alone does not specify resource productivity, needs, technology or connections. C: A population can temporarily draw down stocks or rely on conditions that do not persist, so current size alone is insufficient. D: Uncertainty or conditional estimates do not imply that all physical constraints disappear."
+    },
+    {
+      "id": "hug-2-2-006",
+      "prompt": "A compact city coordinates transit and water networks for many residents. Which statement best describes a possible economic consequence of this population concentration?",
+      "options": [
+        "Population concentration necessarily eliminates all congestion and infrastructure costs.",
+        "Every additional resident must require an entirely separate city-wide network.",
+        "Shared infrastructure may reduce some per-resident costs, while capacity limits can still create problems.",
+        "A high population density guarantees that every resident can afford the services."
+      ],
+      "correctIndex": 2,
+      "explanation": "Spatial concentration can make it feasible for more people to share infrastructure over shorter connections, potentially lowering some costs per resident. It can also strain capacity or generate congestion. These are conditional possibilities shaped by planning and access, not a guarantee that concentration is entirely beneficial or that services are affordable to everyone. A: Dense settlement can still experience congestion and requires infrastructure investment. B: Networks can be shared; a completely independent network for every resident is not required by concentration. C: This recognizes potential economies while retaining the possibility of capacity-related costs. D: Affordability also depends on income, pricing and institutions, none of which follows from density alone."
+    },
+    {
+      "id": "hug-2-2-007",
+      "prompt": "A sparsely settled district considers mobile clinics instead of requiring all residents to travel to one central facility. Which geographic issue is most directly relevant to comparing these options?",
+      "options": [
+        "The assumption that all sparse districts have identical health needs",
+        "The claim that a district total reveals every household’s travel route",
+        "The belief that distance does not matter when the district has only one administrative government",
+        "The trade-off between reaching dispersed residents and the cost of covering long service routes"
+      ],
+      "correctIndex": 3,
+      "explanation": "Dispersed settlement can make the spatial reach of services important. A mobile service may change who must travel, while creating route, staffing and operating demands of its own. The relevant comparison concerns geographic access and delivery costs, without assuming that one model must always be superior for every sparse district. A: Settlement density does not establish identical needs or conditions across districts. B: An aggregate total lacks the household positions and network detail needed for routing. C: A common government does not erase travel distances or barriers. D: This matches the distribution problem and preserves the need to compare the actual service alternatives."
+    },
+    {
+      "id": "hug-2-2-008",
+      "prompt": "Rapid settlement growth expands built-up land near a sensitive habitat. Which inference appropriately connects population distribution to environmental consequences?",
+      "options": [
+        "Population growth always produces the same habitat outcome regardless of policy or building pattern.",
+        "Concentrated demand can increase land-use pressure, while planning and consumption shape the outcome.",
+        "The presence of more residents proves that the habitat has already disappeared completely.",
+        "A national average density can identify the exact locations of habitat loss."
+      ],
+      "correctIndex": 1,
+      "explanation": "Population concentration can increase demand for housing, infrastructure and other land uses. The environmental result also depends on development patterns, protections, consumption and other decisions. The scenario identifies a plausible pressure on a particular habitat, not a quantified or inevitable loss that can be inferred from population alone. A: Policies and the form of development can affect how a given population uses land. B: This connects the local concentration to a possible pressure without making the consequence inevitable. C: No complete habitat inventory or before–after loss measurement is supplied. D: A national ratio does not locate individual developments or habitat changes."
+    },
+    {
+      "id": "hug-2-2-009",
+      "prompt": "A prolonged drought reduces a region’s renewable water supply while population and per-resident demand remain unchanged. Under these assumptions, what happens to the pressure on the water system?",
+      "options": [
+        "It must fall because the number of residents stays constant.",
+        "It disappears because water is categorized as renewable.",
+        "It increases relative to the available supply, so a formerly supportable demand may no longer be sustainable.",
+        "It proves that the region’s physical land area has decreased."
+      ],
+      "correctIndex": 2,
+      "explanation": "Population pressure on a resource is relational: it depends on demand and available supply. With demand held constant and renewable supply reduced, the demand-to-supply ratio rises. A resource system’s supportable use can therefore change without a population increase. The prompt does not establish an exact exhaustion date or specify which response will be chosen. A: Constant population and consumption hold demand constant, not the reduced supply. B: Renewability does not mean the replenishment rate is unlimited or unaffected by drought. C: This follows the stated changes and retains the conditional nature of sustainability. D: A change in water availability does not imply that the region’s measured area changed."
+    },
+    {
+      "id": "hug-2-2-010",
+      "prompt": "Two districts have the same residents per square kilometer. Why is this insufficient to conclude that households experience the same degree of housing crowding?",
+      "options": [
+        "Area-wide population density does not specify housing supply, room counts or how residents are distributed among dwellings.",
+        "Equal density means that every dwelling must have an identical number of rooms.",
+        "An area-wide ratio directly measures the number of people in each bedroom.",
+        "Housing crowding is determined only by the size of the district boundary."
+      ],
+      "correctIndex": 0,
+      "explanation": "Arithmetic density uses residents and land area. Housing crowding concerns how people occupy housing, requiring information about dwellings, rooms or suitable living space and its distribution. Equal land-based density can coexist with very different housing conditions and cannot alone establish an identical social consequence. A: These missing housing attributes explain why a land-based ratio is not a direct crowding measure. B: Equal residents per land area places no requirement on room counts in individual dwellings. C: A district average has no bedroom-level numerator or denominator. D: Boundary size alone does not describe housing stock or its allocation among residents."
+    },
+    {
+      "id": "hug-2-2-011",
+      "prompt": "A dense metropolitan area imports food and water from distant regions. What should a geographic assessment of its resource consequences include?",
+      "options": [
+        "Only land within the city boundary, because resource use has no effects elsewhere",
+        "A conclusion that imports make every resource flow sustainable forever",
+        "A conclusion that all environmental pressure originates where resources are consumed",
+        "The connected source regions as well as the city’s consumption and resource flows"
+      ],
+      "correctIndex": 3,
+      "explanation": "Resource systems connect population concentrations to places of production, extraction and transport. Imports can support urban residents while shifting some environmental demands beyond the city boundary. Evaluating those connected regions avoids equating local resource availability with the full geographic reach of consumption. A: The explicit imports link the city to outside resource sources, so the boundary does not contain every consequence. B: The existence of trade does not establish the long-term sustainability of production or extraction. C: Production and extraction can create pressures in source regions as well as impacts where goods are used. D: This matches the analysis to the actual spatial connections described."
+    }
+  ]
+}

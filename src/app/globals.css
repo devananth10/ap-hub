@@ -315,3 +315,5 @@ kbd { display:flex; gap:3px; align-items:center; margin-left:auto; padding:0 4px
 .geo-table-wrap th:first-child,.geo-table-wrap td:first-child { min-width:58px; overflow-wrap:normal; }
 .geo-path-on-fill { color:#152c27; }.geo-path-on-fill .geo-path-halo { stroke:#f3f9f6; stroke-width:5; }.geography-graphic .geo-path-on-fill text { fill:#152c27; stroke:#f3f9f6; }
 .geography-graphic text.geo-region-label-unshaded { fill:var(--ink); stroke:none; }
+.geo-table-wrap th { overflow-wrap:normal; }
+@media(max-width:500px) { .geo-table-wrap th,.geo-table-wrap td { padding:8px 6px; } }

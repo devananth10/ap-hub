@@ -44,6 +44,10 @@ export function verifyGeographyQuestion(question,review,stimulus){
   case 'density-ranking':{const ratios=stimulus.rows.map(row=>[Number(row[1])/Number(row[2]),Number(row[1])/Number(row[3])]);assert.deepEqual(ratios,[[200,4000],[400,1000]]);assert.equal(question.correctIndex,3);break;}
   case 'river-concentration':{const path=stimulus.paths.find(p=>p.label==='River');assert.ok(path.points.every(p=>p[0]===50));assert.equal(stimulus.dots.length,16);assert.ok(stimulus.dots.every(p=>Math.abs(p.x-50)<=6));assert.equal(question.correctIndex,0);break;}
   case 'employment-settlement':{const values=stimulus.rows.map(row=>row.slice(1).map(Number));assert.deepEqual(values[1].map((n,i)=>n-values[0][i]),[900,6000]);assert.deepEqual(values[3].map((n,i)=>n-values[2][i]),[0,0]);assert.equal(question.correctIndex,2);break;}
+  case 'service-journeys':{assert.deepEqual(stimulus.rows.map(row=>Number(row[1])/Number(row[2])),[10000,10000]);assert.deepEqual(stimulus.rows.map(row=>Number(row[3])),[35,5]);assert.equal(question.correctIndex,0);break;}
+  case 'transport-energy':{assert.deepEqual(stimulus.categories,['Low','Medium','High']);assert.deepEqual(stimulus.series[0].values,[12000,8000,4000]);assert.equal(question.correctIndex,2);break;}
+  case 'representation-ratios':{const get=label=>stimulus.regions.find(r=>r.label===label).value;assert.equal(get('SW')/get('NW'),4);assert.equal(get('SE')/get('NE'),4);assert.equal(get('NW'),1000);assert.equal(get('SW'),4000);assert.equal(question.correctIndex,1);break;}
+  case 'resource-demand':{assert.deepEqual(stimulus.rows.map(row=>Number(row[1])*Number(row[3])),[100000,100000]);assert.deepEqual(stimulus.rows.map(row=>Number(row[1])/Number(row[2])),[10,100]);assert.equal(question.correctIndex,3);break;}
   case 'reasoning':break;
   default:throw Error('Unknown verification model: '+review.check.type);
  }

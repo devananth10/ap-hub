@@ -1,5 +1,9 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topic 2.2
+
+99 questions across nine topics are published, with36 interpreted stimuli (36.36%). New consequences questions compare service journeys despite equal clinic ratios, per-person transport energy, residents per representative and total resource demand. Independent checks distinguish counts, ratios and totals; conceptual items retain conditional carrying-capacity assumptions. All132 automated tests, TypeScript and production build passed. All eleven new answers were graded in a browser for11/11; mobile map/chart/table enlargement and review-time access were checked. A cramped table header was corrected with shorter labels, unbroken header words and tighter mobile padding. Geography scopes and standard smoke checks pass. Next:2.3; the full bank remains incomplete.
+
 ## Human Geography Topic 2.1
 
 88 MCQs across eight topics are published; 32 meaningful stimuli (36.36%). Topic 2.1 adds three density calculations, reversed arithmetic/physiological rankings, a river-corridor map and an employment/settlement table. All eleven answers were exercised in the browser and produced 11/11. All four stimuli were inspected on mobile; plain map labels now omit the unnecessary outline on unshaded backgrounds. Thirty-one explicit model checks, 131 automated tests, TypeScript and production build passed, with all Geography scopes and standard smoke checks. No previous question/resource objects changed. The next unfinished topic is 2.2; population pyramids remain unpopulated until 2.3.

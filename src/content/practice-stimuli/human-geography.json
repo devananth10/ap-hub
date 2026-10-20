@@ -1737,5 +1737,198 @@
         "2000"
       ]
     ]
+  },
+  "hug-2-2-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Clinic journeys in two settlement patterns",
+    "description": "Hypothetical areas Dispersed and Compact each have 10000 residents and one clinic offering comparable services. Mean one-way clinic journey: Dispersed 35 minutes; Compact 5 minutes.",
+    "caption": "Mean travel time measures journeys, not waiting time or medical quality. Clinic-to-population ratios are the same.",
+    "headers": [
+      "Area",
+      "People",
+      "Clinics",
+      "Mean trip (min)"
+    ],
+    "rows": [
+      [
+        "Dispersed",
+        "10000",
+        "1",
+        "35"
+      ],
+      [
+        "Compact",
+        "10000",
+        "1",
+        "5"
+      ]
+    ]
+  },
+  "hug-2-2-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Transport energy across settlement patterns",
+    "description": "Hypothetical annual transport energy per resident: Low density 12000 units, Medium density 8000, High density 4000. The same measurement procedure is used; populations and other impacts are not supplied.",
+    "caption": "A comparison of per-resident use, not a controlled experiment. Other differences in infrastructure and travel behavior were not controlled.",
+    "unitLabel": "Energy units/person/year",
+    "categories": [
+      "Low",
+      "Medium",
+      "High"
+    ],
+    "series": [
+      {
+        "label": "Transport energy",
+        "values": [
+          12000,
+          8000,
+          4000
+        ]
+      }
+    ],
+    "max": 16000
+  },
+  "hug-2-2-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "Residents in four assembly districts",
+    "description": "Hypothetical equal-area districts: NW and NE each have 1000 residents; SW and SE each have 4000. Every district elects exactly one representative under the stated rule.",
+    "caption": "These are resident counts, not density values or a description of any real country’s electoral law.",
+    "unitLabel": "Residents; one representative per district",
+    "regions": [
+      {
+        "label": "NW",
+        "value": 1000,
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            0,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "NE",
+        "value": 1000,
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            50,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "SW",
+        "value": 4000,
+        "polygon": [
+          [
+            0,
+            30
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "SE",
+        "value": 4000,
+        "polygon": [
+          [
+            50,
+            30
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ],
+    "bins": [
+      {
+        "min": 0,
+        "max": 2000,
+        "label": "Under 2000 residents"
+      },
+      {
+        "min": 2000,
+        "max": 5000,
+        "label": "2000 to under 5000 residents"
+      }
+    ]
+  },
+  "hug-2-2-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Population, land and resource demand",
+    "description": "Hypothetical Area A: 1000 residents, 100 km² total land, annual demand 100 units per resident. Area B: 10000 residents, 100 km² land, annual demand 10 units per resident.",
+    "caption": "The demand measure uses the same resource unit and year in both areas; all residents are included once.",
+    "headers": [
+      "Area",
+      "People",
+      "Land (km²)",
+      "Demand per person"
+    ],
+    "rows": [
+      [
+        "A",
+        "1000",
+        "100",
+        "100"
+      ],
+      [
+        "B",
+        "10000",
+        "100",
+        "10"
+      ]
+    ]
   }
 }

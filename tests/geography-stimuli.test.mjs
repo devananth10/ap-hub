@@ -101,3 +101,10 @@ test('population distribution checks distinguish three land denominators and rej
   const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
  }
 });
+
+test('population-consequence checks distinguish travel access, per-person use and total demand',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-2-2.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-2-2.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[1][2]='2'],[1,s=>s.series[0].values.reverse()],[3,s=>s.rows[1][3]='100']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});

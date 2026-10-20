@@ -74,7 +74,7 @@ $env:BASE_URL = 'http://127.0.0.1:3100'
 pnpm test
 ```
 
-The suite includes 131 unit tests, 20 page-route checks, compiled CSS, seven invalid-route checks, all seven fixed course-art mappings and multiple fresh homepage responses to verify artwork rotation. It checks all published answer keys, scoring/navigation, question-batch validation, publication scope/counts, URL/video policy, legacy saved-data compatibility, branding and absence of unapproved resources. Calculus tests include mathematical-model mutations, original graph/table checks, domains and theorem hypotheses. Synthetic test fixtures are never published or fetched from a provider. `pnpm test:publication` additionally verifies all 91 Chemistry topic routes, nine unit routes and the full Chemistry course, plus frozen question hashes and flagged calculations; it needs a running server. `BASE_URL` also selects its production target.
+The suite includes 132 unit tests, 20 page-route checks, compiled CSS, seven invalid-route checks, all seven fixed course-art mappings and multiple fresh homepage responses to verify artwork rotation. It checks all published answer keys, scoring/navigation, question-batch validation, publication scope/counts, URL/video policy, legacy saved-data compatibility, branding and absence of unapproved resources. Calculus tests include mathematical-model mutations, original graph/table checks, domains and theorem hypotheses. Synthetic test fixtures are never published or fetched from a provider. `pnpm test:publication` additionally verifies all 91 Chemistry topic routes, nine unit routes and the full Chemistry course, plus frozen question hashes and flagged calculations; it needs a running server. `BASE_URL` also selects its production target.
 
 Browser checklist:
 

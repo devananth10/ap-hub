@@ -1,0 +1,136 @@
+{
+  "topicNumber": "2.2",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "1be3cd5b54eaf299fbefbcac501a6ee7c3fa330f669574bafef60ce6bfa79353",
+  "scopeReview": "PSO-2.D.1–2: political/economic/social and environmental consequences of population distribution/density, service provision and carrying capacity. Hypothetical political rules and resource figures are not legal or medical advice; human choices and environmental constraints both retained.",
+  "varietyReview": "Four interpreted stimuli address service access, per-person energy, political representation and total demand; seven applications cover capacity assumptions, shared networks, dispersed delivery, habitat, drought, housing and resource-source scales. Varied keys/difficulty and all five skills represented.",
+  "repetitionReview": "Different from2.1: interprets consequences rather than repeating definitions of three densities. Aquifer balance from1.5 is not reissued with new numbers; demand comparison changes both population and consumption, while drought uses a distinct conditional ratio argument.",
+  "questions": [
+    {
+      "questionId": "hug-2-2-001",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "The dispersed area’s longer mean journey shows why equal service ratios need not mean equal geographic access.",
+      "independentReview": "Independently computed both ratios10000/1=10000 residents/clinic, then compared35>5 minutes. The inference concerns geographic journeys, not an unmeasured clinical-quality difference.",
+      "check": {
+        "type": "service-journeys"
+      },
+      "questionSha256": "8da004cd5bd356156d1cd805e02286ac7abc4423bf05f1190210f188477085f8",
+      "stimulusSha256": "d44fe03f2558288a4e6ce992562b3d1cb65d0fc37fc1e698c9cbb77a110a8da3"
+    },
+    {
+      "questionId": "hug-2-2-002",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Higher density is associated here with lower transport energy per resident, but other impacts and causes are not established.",
+      "independentReview": "Checked per-capita sequence12000,8000,4000 and distinguished it from totals with unknown denominators. No claim of zero environmental burden or a density-only intervention effect is supported.",
+      "check": {
+        "type": "transport-energy"
+      },
+      "questionSha256": "145cf0981f363f06fb0ee1887c924e09eb0595519cd71a45e96ba540c4f4c0c5",
+      "stimulusSha256": "38c61a03e7f0fe077e3d3e7207afa653e206624334978cbdc5894729f092060b"
+    },
+    {
+      "questionId": "hug-2-2-003",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Each southern representative serves four times as many residents as each northern representative.",
+      "independentReview": "Recomputed each population/representative ratio with denominator1 and southern/northern ratio4000/1000=4. No legal entitlement or actual electoral judgment is inferred.",
+      "check": {
+        "type": "representation-ratios"
+      },
+      "questionSha256": "c9daec53e5e23c3811ccd6fb287c9a7a3452fe2f69137a1b67a44fa3c3c0481a",
+      "stimulusSha256": "949ae435f4f7ef63b6b20e19bdaea71dce598ee7f95f017d976ae3cd219bf201"
+    },
+    {
+      "questionId": "hug-2-2-004",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Both areas demand 100,000 units per year, despite their different populations and densities.",
+      "independentReview": "Independently multiplied1000*100=100000 and10000*10=100000, with densities1000/100=10 and10000/100=100. Distinct population and consumption effects offset; units are annual demand, not stocks.",
+      "check": {
+        "type": "resource-demand"
+      },
+      "questionSha256": "1a5bf14fb9f8c09fa52783457703073551fb2a9d1dceb6170c7f505549fef28d",
+      "stimulusSha256": "8fa68f251303ff9dbdf74941dcc6c6066c09b454a4b360ebd039fcbeef979c10"
+    },
+    {
+      "questionId": "hug-2-2-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "The estimate depends partly on the assumed resource use and means of obtaining and managing resources.",
+      "independentReview": "Compared two models of the same resource base with different demand or technology parameters. Their outputs can differ conditionally; this does not establish unlimited capacity or validate current use by its existence.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "a6543ea922c5f6f52ba114dab344983c928215a47536a6592c3ab40a44331d4e"
+    },
+    {
+      "questionId": "hug-2-2-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Shared infrastructure may reduce some per-resident costs, while capacity limits can still create problems.",
+      "independentReview": "Distinguished a potential shared-network efficiency from guarantees of universal benefit. The prompt supplies coordinated networks but not costs, prices or resident incomes.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "7f0630dc9f482c1f14e500c103c1362b1e6911083d85629db4b625ccbe21ed7d"
+    },
+    {
+      "questionId": "hug-2-2-007",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "The trade-off between reaching dispersed residents and the cost of covering long service routes",
+      "independentReview": "Matched the intervention to dispersed origins and route coverage. No medical treatment recommendation or asserted outcome is made; this is a spatial service-delivery comparison.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "76c75a94ac32c647afead3c6142ac7a1c0253746289fac7249f9b2ca7473f05c"
+    },
+    {
+      "questionId": "hug-2-2-008",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Concentrated demand can increase land-use pressure, while planning and consumption shape the outcome.",
+      "independentReview": "Distinguished pressure from a guaranteed outcome and local exposure from national averaging. The scenario does not quantify actual habitat removal or mandate a particular policy.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "c8bbf1317c2514e2c58ac483220d12b6fd80f3fc433cf45f419eda1f8c54b595"
+    },
+    {
+      "questionId": "hug-2-2-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "It increases relative to the available supply, so a formerly supportable demand may no longer be sustainable.",
+      "independentReview": "Held demandD>0 fixed and decreased supplyS>0; D/S increases. No numerical shortage date or universal response is inferred from that inequality.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "213073637b1794db67341bd57a4131799b8496f64d96f9a4e413a43a6987559b"
+    },
+    {
+      "questionId": "hug-2-2-010",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "Area-wide population density does not specify housing supply, room counts or how residents are distributed among dwellings.",
+      "independentReview": "Constructed a counterexample with equal residents/land but different numbers of available rooms. This refutes an equality claim about crowding without drawing medical or individual conclusions.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "109e58efb756ed1b5f0b33a45468c1dc4981a5b5453559c7d59cfa6205ae9e11"
+    },
+    {
+      "questionId": "hug-2-2-011",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "The connected source regions as well as the city’s consumption and resource flows",
+      "independentReview": "Followed imports backward to source regions, distinguishing local support from the wider geography of demand. No invented footprint value or claim that all imports are unsustainable is introduced.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "0fcdb985766c350303ab0f4e487d4417e79b89b1d5935cdb35c5d9fd472ddcb7"
+    }
+  ]
+}
