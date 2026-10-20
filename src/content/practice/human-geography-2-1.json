@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 2,
+  "topicId": "topic-2-1",
+  "questions": [
+    {
+      "id": "hug-2-1-001",
+      "prompt": "Using the table, what are Area P’s arithmetic, physiological and agricultural densities, respectively? Agricultural density here counts farmers, not all rural residents.",
+      "options": [
+        "1,200 people/km²; 200 people/km² of arable land; 50 farmers/km² of arable land",
+        "200 people/km²; 1,200 people/km² of arable land; 50 farmers/km² of arable land",
+        "200 people/km²; 50 people/km² of arable land; 1,200 farmers/km² of arable land",
+        "200 people/km²; 1,200 people/km² of arable land; about 8.3 farmers/km² of arable land"
+      ],
+      "correctIndex": 1,
+      "explanation": "Each density uses a different numerator or denominator. Arithmetic density is120,000/600=200 people per km² of total land. Physiological density is120,000/100=1,200 people per km² of arable land. Agricultural density is5,000/100=50 farmers per km² of arable land. Using the correct units is part of interpreting the measures. A: This reverses the total-land and arable-land denominators for the two population densities. B: All three ratios use the correct population or farmer count and corresponding land base. C: This swaps the total-population and farmer numerators for the two arable-land measures. D: About8.3 comes from5,000/600, but agricultural density uses arable land rather than total land."
+    },
+    {
+      "id": "hug-2-1-002",
+      "prompt": "Which comparison correctly distinguishes the two countries’ arithmetic and physiological densities?",
+      "options": [
+        "Country A is higher on both measures because it has less arable land.",
+        "Country B is lower on both measures because its arable area is larger.",
+        "The two countries have equal values on both measures because populations match.",
+        "Country A has lower arithmetic density but higher physiological density."
+      ],
+      "correctIndex": 3,
+      "explanation": "The equal populations do not imply equal densities because the denominators differ. A’s arithmetic density is400,000/2,000=200 people/km² and B’s is400,000/1,000=400. A’s physiological density is400,000/100=4,000 people per arable km² and B’s is400,000/400=1,000. The ranking reverses when the land base changes. A: A’s smaller arable area raises its physiological density, but its larger total area lowers its arithmetic density. B: B has lower physiological density but higher arithmetic density, not lower values on both. C: Matching numerators do not produce equal ratios when the relevant land areas differ. D: This preserves both independently calculated rankings and shows what each denominator reveals."
+    },
+    {
+      "id": "hug-2-1-003",
+      "prompt": "The map shows the population dots close to the river in an otherwise sparsely represented study area. Which physical factor is most directly consistent with this concentration and worth investigating?",
+      "options": [
+        "Access to water associated with the river corridor",
+        "An unshown national policy requiring every household to live beside the river",
+        "An identical cultural identity among all mapped residents",
+        "A conclusion that every place far from a river is uninhabitable"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fresh water and river corridors can influence where people settle, making proximity to the mapped water feature a relevant physical factor. The distribution alone does not establish that water is the only explanation or that other locations cannot support settlement. Historical, economic and political conditions may also matter. A: This identifies a physical relationship actually represented by the river and nearby population dots. B: The map includes no policy evidence, and a political rule is not the requested physical factor. C: The symbols represent population, not culture, so shared identity is not established. D: The local pattern cannot establish a universal claim about all places away from rivers."
+    },
+    {
+      "id": "hug-2-1-004",
+      "prompt": "The two towns have similar climate, terrain and water access. Using the table, which human factor is most directly suggested for further investigation of their contrasting population changes?",
+      "options": [
+        "An unchanged shared climate alone explains why the towns grew at different rates.",
+        "Town Q’s industrial employment expanded more than Town P’s.",
+        "The expansion of industrial employment in Town P may have affected settlement there.",
+        "The figures prove that every added resident in P works in its factory."
+      ],
+      "correctIndex": 2,
+      "explanation": "P’s recorded industrial jobs rise from100 to1,000 while its population rises from2,000 to8,000. Q’s jobs and population remain unchanged. The contrasting economic opportunity is a human factor plausibly related to settlement growth. These paired observations support investigation, not a proof that jobs account for every person or the entire population increase. A: A shared unchanged physical factor does not by itself account for the contrast shown. B: Q’s industrial employment stays at100, while P’s increases substantially. C: This identifies the economic change aligned with the different settlement trend while retaining causal caution. D: Job totals and population totals are not one-to-one records of each added resident’s occupation."
+    },
+    {
+      "id": "hug-2-1-005",
+      "prompt": "A high mountain area has steep slopes and a short growing season. How can these conditions help explain a sparse population without using environmental determinism?",
+      "options": [
+        "They establish that no person can live anywhere in a mountain region.",
+        "They can raise the costs of farming and transport, while technology and livelihoods affect the response.",
+        "They prove that residents have identical cultural values.",
+        "They make political and economic factors irrelevant in every mountain settlement."
+      ],
+      "correctIndex": 1,
+      "explanation": "Terrain and climate can affect opportunities and costs, including cultivation and connections to other places. Recognizing these constraints does not require treating settlement as inevitable or impossible. Infrastructure, technology, policies and economic activities can modify how people respond to similar physical conditions. A: A constraint on some activities is not a universal prohibition on human residence. B: This links the stated physical conditions to plausible settlement costs while retaining human variation. C: Physical elevation and slope do not establish uniform values among residents. D: Human factors can interact with the physical setting rather than disappear from the explanation."
+    },
+    {
+      "id": "hug-2-1-006",
+      "prompt": "A large settlement remains at an old port after a new port handles most freight. Which historical factor could help explain the older settlement’s continued concentration?",
+      "options": [
+        "An earlier pattern of settlement becomes irrelevant as soon as freight routes change.",
+        "The older settlement must now be smaller than every newer freight port.",
+        "The historic port location proves that all current residents still work in shipping.",
+        "Established housing, institutions and networks can sustain a concentration formed under earlier conditions."
+      ],
+      "correctIndex": 3,
+      "explanation": "Population distributions reflect accumulated development as well as current conditions. A port can attract settlement and infrastructure that later support many activities even after freight patterns shift. Historical influence does not mean that the location remains unchanged forever or that all residents keep the original occupation. A: Established housing and institutions can persist after trade routes change, so earlier development can remain relevant. B: Freight volumes do not directly determine the rank of every settlement’s population, and no comparative counts are provided. C: An earlier economic role does not determine every present resident’s job. D: Existing structures and connections provide a plausible historical explanation for persistence."
+    },
+    {
+      "id": "hug-2-1-007",
+      "prompt": "A government moves administrative offices to a planned inland capital and builds housing and transport there. Which factor is most directly relevant to a subsequent concentration of residents near the new offices?",
+      "options": [
+        "Political decisions directing employment and infrastructure toward a particular location",
+        "A shift in physical water availability throughout the country",
+        "An assumption that all inland locations have the same economic opportunity",
+        "A change in the agricultural land quality at the capital"
+      ],
+      "correctIndex": 0,
+      "explanation": "Policies can influence settlement by concentrating employment, infrastructure and services. The scenario supplies a specific political allocation of these activities to an inland site. That is a human factor affecting population distribution, without implying that the entire physical setting changed or that all other settlement factors became irrelevant. A: The relocation and investment are explicit government choices with a plausible effect on where people live. B: The scenario supplies government relocation and construction, not evidence of a country-wide change in water availability. C: The selected investment makes this location distinctive rather than making every inland site equivalent. D: No change in soil or agricultural capability is supplied; the targeted offices and infrastructure are the observed intervention."
+    },
+    {
+      "id": "hug-2-1-008",
+      "prompt": "A country has extensive sparsely populated land and one densely settled coastal corridor. Which evidence is most useful for studying the corridor’s internal distribution rather than only the country’s average density?",
+      "options": [
+        "One country-wide population-to-total-land ratio with no subnational locations",
+        "Only the country’s total land area, with no population locations",
+        "Population locations or small-area counts within the corridor",
+        "National administrative boundaries without subnational population values"
+      ],
+      "correctIndex": 2,
+      "explanation": "A national arithmetic density summarizes population over the full land area and can mask concentrated settlement. Investigating internal distribution requires geographically detailed locations or counts for subdivisions of the corridor. The useful resolution follows the question being asked, rather than assuming one average reproduces all local patterns. A: This gives an overall density but does not show where people concentrate within the corridor. B: Area alone cannot reveal how many residents occupy different parts of it. C: These observations retain spatial differences at the scale required for the corridor analysis. D: Country boundaries alone do not supply the internal resident locations or small-area counts needed for this analysis."
+    },
+    {
+      "id": "hug-2-1-009",
+      "prompt": "Two areas have equal arable land, but Area X has fewer farmers than Area Y. Which conclusion follows from agricultural density alone?",
+      "options": [
+        "X must have a lower crop yield per hectare.",
+        "X must have a lower total resident population.",
+        "X must import all of its food.",
+        "X has fewer farmers per unit of arable land; differences in machinery and productivity require additional evidence."
+      ],
+      "correctIndex": 3,
+      "explanation": "Agricultural density describes farmers relative to arable land, not crop yield, total population or food trade. Equal arable denominators and a smaller farmer count give X a lower agricultural density. Mechanization may help explain such a difference in some contexts, but the density alone does not measure it or determine productivity. A: Farmer numbers per area do not directly measure the quantity harvested per hectare. B: The total population includes people other than farmers and is not specified. C: Food imports depend on production, consumption and trade, none of which is fully supplied. D: This states the ratio-based result and distinguishes it from possible but unmeasured explanations."
+    },
+    {
+      "id": "hug-2-1-010",
+      "prompt": "A country has high physiological density. Why is this insufficient by itself to conclude that its residents must experience food shortages?",
+      "options": [
+        "Physiological density counts only farmers rather than the total population.",
+        "Food availability also depends on yields, trade, access and other conditions not measured by this ratio.",
+        "A high physiological density means the country has no arable land at all.",
+        "The ratio proves every resident grows enough food for personal use."
+      ],
+      "correctIndex": 1,
+      "explanation": "High physiological density indicates many people relative to the arable land base, which can be relevant to potential pressure on that land. It is not a complete food-security measure. Production methods, imports, distribution, affordability and other conditions can change food availability or access without changing the ratio in the same way. A: Total population is the numerator; the farmer numerator belongs to agricultural density. B: These additional conditions show why land pressure cannot be translated directly into a necessary shortage. C: The finite ratio assumes a positive arable area; a large value does not mean that denominator is zero. D: The ratio supplies neither occupation nor household food production."
+    },
+    {
+      "id": "hug-2-1-011",
+      "prompt": "Within one metropolitan area, households choose to live near an established place of worship and community institutions, even though nearby districts have similar terrain and climate. Which factor is most directly illustrated?",
+      "options": [
+        "Cultural and social connections influencing population distribution at a local scale",
+        "Climate forcing every household in the metropolis to choose the same district",
+        "The absence of all economic considerations in residential choice",
+        "A national average density that identifies each household’s motivation"
+      ],
+      "correctIndex": 0,
+      "explanation": "Social networks and institutions can influence where households settle within a wider urban area. The scenario supplies a local cultural connection while holding broad physical conditions similar. It illustrates one influence without claiming that all members of a community make the same choice or that housing costs and other factors never matter. A: The stated connection to institutions and community provides the relevant local human factor. B: Similar climate does not force the specific concentration described. C: Identifying one factor does not exclude economic or other influences on the same decision. D: An aggregate ratio cannot identify individual motivations without additional evidence."
+    }
+  ]
+}

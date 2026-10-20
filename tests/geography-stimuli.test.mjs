@@ -31,6 +31,7 @@ test('each original stimulus renders its evidence, accessible description and en
  const html=render(geographyStimuli['hug-1-1-001']);assert.match(html,/data-region="NW" data-value="80" data-bin="1"/);assert.match(html,/data-region="NE" data-value="20" data-bin="0"/);assert.ok(html.includes('NW: 80'));assert.equal(mapBin(50,geographyStimuli['hug-1-1-001'].bins),1);
  assert.equal((render(geographyStimuli['hug-1-1-002']).match(/class="geo-dot"/g)||[]).length,15);
  const scale=render(geographyStimuli['hug-1-1-004']);assert.ok(scale.includes('40 km'));assert.ok(scale.includes('Town locations'));
+ assert.ok(scale.includes('geo-region-label-unshaded'));assert.ok(!html.includes('geo-region-label-unshaded'));
 });
 test('chart bar heights, zero baseline, labels and equivalent data match numeric inputs',()=>{
  validateGeographyStimulus(chart);const html=render(chart);assert.match(html,/data-value="50" x="[^"]+" y="135" width="[^"]+" height="85"/);assert.ok(html.includes('A: Year 1'));assert.ok(html.includes('B: Year 2'));assert.ok(html.includes('<table>'));assert.match(html,/<td>75<\/td>/);
@@ -92,4 +93,11 @@ test('regional models retain inclusive thresholds, directed service links and ov
   const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
  }
  const html=render(geographyStimuli[batch.questions[1].id]);assert.ok(html.includes('x1="97" y1="74.6" x2="230" y2="183.5"'));assert.ok(html.includes('300 trips'));assert.ok(html.includes('150 trips'));
+});
+
+test('population distribution checks distinguish three land denominators and reject changed corridor evidence',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-2-1.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-2-1.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[2][1]='600'],[1,s=>s.rows[1][3]='50'],[2,s=>s.dots[0].x=10]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
 });

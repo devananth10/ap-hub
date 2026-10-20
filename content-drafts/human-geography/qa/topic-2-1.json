@@ -1,0 +1,136 @@
+{
+  "topicNumber": "2.1",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "da7fae5cd90a31db02d09266f49f9bbb6a4d59b7f5ae8a5bad80eb0610713882",
+  "scopeReview": "PSO-2.A–C: physical/human factors at different scales and arithmetic, physiological and agricultural density definitions and interpretation. Original hypothetical data; farmer/rural resident distinction explicit. Carrying-capacity consequences and population-composition questions are reserved for later topics.",
+  "varietyReview": "Four interpreted stimuli combine three distinct ratios, reversed density ranks, a river-corridor pattern and employment change. Seven separate applications address terrain, historical persistence, political/cultural factors, scale and limits of density inferences. All five skills and four keys represented.",
+  "repetitionReview": "Density measures are new course content; calculation and rank-reversal items test different tasks. Physical, economic, historical, political and cultural influences use different scenarios and do not infer a single cause from a map or temporal association.",
+  "questions": [
+    {
+      "questionId": "hug-2-1-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "200 people/km²; 1,200 people/km² of arable land; 50 farmers/km² of arable land",
+      "independentReview": "Independently computed population/total120000/600=200, population/arable120000/100=1200 andfarmers/arable5000/100=50. Also checked reversed-denominator distractor5000/600=8.333. All options use explicit units.",
+      "check": {
+        "type": "three-densities"
+      },
+      "questionSha256": "ea8dc4a81f44e60152d4f79af8bc577da75460e22b1d523a06aee93c8fc3e193",
+      "stimulusSha256": "896400f357ad1e5b2b3656cc3722c04d02fe5fa62a15526cca93307aba75aa34"
+    },
+    {
+      "questionId": "hug-2-1-002",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Country A has lower arithmetic density but higher physiological density.",
+      "independentReview": "Recomputed A arithmetic200/physiological4000 and B arithmetic400/physiological1000. Both areas are positive and arable<=total, so the reversal is internally coherent.",
+      "check": {
+        "type": "density-ranking"
+      },
+      "questionSha256": "8f3b1502592f97f90c3a93a6919e01c24ed44e94c8e149544a59daac838c5788",
+      "stimulusSha256": "b50700ae51da68c86d2629e7afbe8e97e252985acf61b8b3031b28bd95008625"
+    },
+    {
+      "questionId": "hug-2-1-003",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Access to water associated with the river corridor",
+      "independentReview": "Checked all16 dots lie within6 schematic units ofx50 river, while the study area spansx0..100. This corroborates corridor concentration without proving a cause or universal environmental limit.",
+      "check": {
+        "type": "river-concentration"
+      },
+      "questionSha256": "f403c4f9b972edf4b4842af201d5d7b3294f7fbfdb270864a27010beb0fa05d0",
+      "stimulusSha256": "ef742662451afc5b70b52f906c16e684791731289d1185363e2f57001dd99b26"
+    },
+    {
+      "questionId": "hug-2-1-004",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The expansion of industrial employment in Town P may have affected settlement there.",
+      "independentReview": "Independently compared P jobs+900/population+6000 and Q0/0. The added population exceeds added jobs, and records are aggregate, so one-to-one employment attribution is unsupported.",
+      "check": {
+        "type": "employment-settlement"
+      },
+      "questionSha256": "f48abe9a7a9690d31ed96ed582d4a186b9bce10fe3cd6554ad3275c3d4c5bb57",
+      "stimulusSha256": "bb2f7f011b1076c7cf331c8a07a43fa1f5f87051b418b1c1e26a89b49b6a3eb1"
+    },
+    {
+      "questionId": "hug-2-1-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "They can raise the costs of farming and transport, while technology and livelihoods affect the response.",
+      "independentReview": "Checked that the answer explains influence rather than inevitability. Steep slopes and a short growing season supply plausible constraints, not evidence of cultural uniformity or universal absence.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "ed4aedacbc0ecfb0d503500d93c73c066dcccd5e2f2c8ca0581295f7e6176839"
+    },
+    {
+      "questionId": "hug-2-1-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Established housing, institutions and networks can sustain a concentration formed under earlier conditions.",
+      "independentReview": "Separated the historical origin of concentration from present occupational composition. The correct mechanism is persistence of established systems, not a claim that the port retains all freight.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "3ccd4e84e6feeb8a3203d3b583ba80fc0521228f50111687267bade257117e19"
+    },
+    {
+      "questionId": "hug-2-1-007",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Political decisions directing employment and infrastructure toward a particular location",
+      "independentReview": "Matched the supplied government action to targeted jobs/infrastructure. The answer does not claim an exact migration total or exclude all physical influences.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "68354a97555211db970cd424c01f141c77d9f2051bcdfc4765bf829f260e8d71"
+    },
+    {
+      "questionId": "hug-2-1-008",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Population locations or small-area counts within the corridor",
+      "independentReview": "Identified the missing geographic resolution in a country-wide ratio. Local locations/counts supply within-corridor structure; no specific map projection or exhaustive survey is assumed.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "42756f598016dd63ae9a801eadf2ce154afccefec5072ccce91abde4fd2a8770"
+    },
+    {
+      "questionId": "hug-2-1-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "X has fewer farmers per unit of arable land; differences in machinery and productivity require additional evidence.",
+      "independentReview": "Held arable denominator fixed and compared farmer numerators. Tested alternatives by considering different possible yields, nonfarm populations and trade with the same farmer/land ratio.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "80197525033c8fb46126dbce4623395ac72123dad1924189bfdb509ec07ba87b"
+    },
+    {
+      "questionId": "hug-2-1-010",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "Food availability also depends on yields, trade, access and other conditions not measured by this ratio.",
+      "independentReview": "Verified the density definition and considered equal ratios with different yields/imports/distribution. That counterexample refutes a necessary shortage while preserving land-pressure relevance.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "44e7810a7f2c310a42ad548c6c53c525f038e77fd260d1eb146eb91787e85c45"
+    },
+    {
+      "questionId": "hug-2-1-011",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Cultural and social connections influencing population distribution at a local scale",
+      "independentReview": "Used the explicitly supplied community ties rather than attributing behavior to any real population or a national generalization. Similar physical conditions do not explain the local contrast on their own.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "73942e3de18d97a0b9a4c8f33aa81a399ab2c82a746905afea4558d0d7520827"
+    }
+  ]
+}

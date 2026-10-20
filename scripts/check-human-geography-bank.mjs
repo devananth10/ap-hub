@@ -40,6 +40,10 @@ export function verifyGeographyQuestion(question,review,stimulus){
   case 'service-region':{assert.deepEqual(stimulus.edges.map(e=>[e.from,e.to,e.label]),[['Town A','Clinic','300 trips'],['Town B','Clinic','150 trips']]);assert.equal(question.correctIndex,1);break;}
   case 'perceptual-inclusion':{assert.ok(stimulus.rows.every(row=>row[1]==='100'));assert.deepEqual(stimulus.rows.map(row=>Number(row[2])),[90,55,20]);assert.ok(stimulus.rows.every(row=>Number(row[2])>0&&Number(row[2])<100));assert.equal(question.correctIndex,2);break;}
   case 'overlapping-regions':{const wet=stimulus.rows.filter(row=>Number(row[1])>=800).map(row=>row[0]),service=stimulus.rows.filter(row=>Number(row[2])>50).map(row=>row[0]);assert.deepEqual(wet,['A','B']);assert.deepEqual(service,['B','C']);assert.deepEqual(wet.filter(label=>service.includes(label)),['B']);assert.equal(question.correctIndex,0);break;}
+  case 'three-densities':{const get=label=>Number(stimulus.rows.find(row=>row[0]===label)[1]);const population=get('Residents'),total=get('Total land (km²)'),arable=get('Arable land (km²)'),farmers=get('Farmers');assert.ok(arable<=total&&farmers<=population);assert.deepEqual([population/total,population/arable,farmers/arable],[200,1200,50]);assert.equal(question.correctIndex,1);break;}
+  case 'density-ranking':{const ratios=stimulus.rows.map(row=>[Number(row[1])/Number(row[2]),Number(row[1])/Number(row[3])]);assert.deepEqual(ratios,[[200,4000],[400,1000]]);assert.equal(question.correctIndex,3);break;}
+  case 'river-concentration':{const path=stimulus.paths.find(p=>p.label==='River');assert.ok(path.points.every(p=>p[0]===50));assert.equal(stimulus.dots.length,16);assert.ok(stimulus.dots.every(p=>Math.abs(p.x-50)<=6));assert.equal(question.correctIndex,0);break;}
+  case 'employment-settlement':{const values=stimulus.rows.map(row=>row.slice(1).map(Number));assert.deepEqual(values[1].map((n,i)=>n-values[0][i]),[900,6000]);assert.deepEqual(values[3].map((n,i)=>n-values[2][i]),[0,0]);assert.equal(question.correctIndex,2);break;}
   case 'reasoning':break;
   default:throw Error('Unknown verification model: '+review.check.type);
  }

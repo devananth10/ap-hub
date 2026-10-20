@@ -1509,5 +1509,233 @@
         "80"
       ]
     ]
+  },
+  "hug-2-1-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Population and land in Area P",
+    "description": "Hypothetical Area P has 120000 residents, 600 km² of total land, 100 km² of arable land and 5000 farmers. Farmers are a subset of residents.",
+    "caption": "All areas use km². Agricultural density uses the number of farmers divided by arable land area.",
+    "headers": [
+      "Measure",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Residents",
+        "120000"
+      ],
+      [
+        "Total land (km²)",
+        "600"
+      ],
+      [
+        "Arable land (km²)",
+        "100"
+      ],
+      [
+        "Farmers",
+        "5000"
+      ]
+    ]
+  },
+  "hug-2-1-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Equal populations with different land bases",
+    "description": "Hypothetical Country A has 400000 residents, 2000 km² total land and 100 km² arable land. Country B has 400000 residents, 1000 km² total land and 400 km² arable land.",
+    "caption": "Population and land refer to the same observation year; arable land is part of total land in each country.",
+    "headers": [
+      "Country",
+      "Residents",
+      "Total km²",
+      "Arable km²"
+    ],
+    "rows": [
+      [
+        "A",
+        "400000",
+        "2000",
+        "100"
+      ],
+      [
+        "B",
+        "400000",
+        "1000",
+        "400"
+      ]
+    ]
+  },
+  "hug-2-1-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "dot",
+    "title": "Settlement near a river corridor",
+    "description": "Hypothetical north-up schematic: sixteen equal-value population dots lie within six horizontal coordinate units of a river at x=50 in a study area extending from x=0 to100. No employment or political layer is shown.",
+    "caption": "Each dot represents the same number of residents; dots show a schematic distribution, not exact household positions.",
+    "unitLabel": "One dot = 500 residents; line = river",
+    "regions": [
+      {
+        "label": "West plain",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "East plain",
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ],
+    "paths": [
+      {
+        "label": "River",
+        "points": [
+          [
+            50,
+            4
+          ],
+          [
+            50,
+            56
+          ]
+        ]
+      }
+    ],
+    "dots": [
+      {
+        "x": 44,
+        "y": 10
+      },
+      {
+        "x": 48,
+        "y": 10
+      },
+      {
+        "x": 52,
+        "y": 10
+      },
+      {
+        "x": 56,
+        "y": 10
+      },
+      {
+        "x": 44,
+        "y": 24
+      },
+      {
+        "x": 48,
+        "y": 24
+      },
+      {
+        "x": 52,
+        "y": 24
+      },
+      {
+        "x": 56,
+        "y": 24
+      },
+      {
+        "x": 44,
+        "y": 38
+      },
+      {
+        "x": 48,
+        "y": 38
+      },
+      {
+        "x": 52,
+        "y": 38
+      },
+      {
+        "x": 56,
+        "y": 38
+      },
+      {
+        "x": 44,
+        "y": 52
+      },
+      {
+        "x": 48,
+        "y": 52
+      },
+      {
+        "x": 52,
+        "y": 52
+      },
+      {
+        "x": 56,
+        "y": 52
+      }
+    ]
+  },
+  "hug-2-1-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Employment and settlement in two towns",
+    "description": "Hypothetical P and Q share similar climate, terrain and water access. P: earlier 100 industrial jobs and 2000 residents, later 1000 jobs and 8000 residents. Q: 100 jobs and 2000 residents at both dates.",
+    "caption": "Jobs and residents are separate counts. The paired observations are not a controlled experiment or individual employment histories.",
+    "headers": [
+      "Town/date",
+      "Industrial jobs",
+      "Residents"
+    ],
+    "rows": [
+      [
+        "P earlier",
+        "100",
+        "2000"
+      ],
+      [
+        "P later",
+        "1000",
+        "8000"
+      ],
+      [
+        "Q earlier",
+        "100",
+        "2000"
+      ],
+      [
+        "Q later",
+        "100",
+        "2000"
+      ]
+    ]
   }
 }
