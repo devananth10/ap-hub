@@ -1,0 +1,140 @@
+{
+  "topicNumber": "3.4",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "8f609454bb36618967f1a8a31725b042eccd2248a43428197dc309b259cf31fa",
+  "scopeReview": "IMP-3.A.1: relocation and expansion including contagious, hierarchical and stimulus. Mechanism evidence, retained origin/new adoption, adaptation, migration, overlapping pathways, barriers and scales. No disease model, invented historical route or unsupported unique inference from shape alone.",
+  "varietyReview": "Contact/adoption map, institutional hierarchy model, adaptation table and relocation ledger. Additional cases distinguish broad/subtype evidence, sequential and cross-scale coexistence, content/contact dimensions, translation barriers, resemblance and goods versus people. All five skills, mixed difficulty and varied keys.",
+  "repetitionReview": "Mechanism classification is new relative to3.3 effects of cultural patterns. Cases test different dimensions rather than repeated labels: positive evidence versus limits, sequence versus scale, adaptation versus route, count redistribution versus new uptake. No numeric-only clones.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf"
+  ],
+  "referenceNote": "Official topic name and type inventory verified. All examples, diagrams and counts original; no copied classroom activities, external resources or human review claim. Conceptual reasoning is recorded but not independent human certification.",
+  "questions": [
+    {
+      "questionId": "hug-3-4-001",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Contagious expansion diffusion through neighboring contacts.",
+      "independentReview": "Checked adoption days0/1/2/3 across ordered neighboring positions15/40/65/90. Mechanism is corroborated by the stated contact-only records, not inferred uniquely from a linear visual pattern.",
+      "check": {
+        "type": "diffusion-neighbor-sequence"
+      },
+      "questionSha256": "8511aebe2a0ff4f40e4799c0e4b35d888355396cc301843137c8c97f630c4e0d",
+      "stimulusSha256": "6c4fd46749a9ec7d1c7ae894c1b625648e4376e79221b2d83644d493cef10418"
+    },
+    {
+      "questionId": "hug-3-4-002",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Hierarchical expansion through linked levels of the organization.",
+      "independentReview": "Followed capital→regional hubs→branch edges and supplied dates, with closer branches explicitly later. Hierarchical means influence/network ordering here, not a universal claim that every large city always adopts first.",
+      "check": {
+        "type": "diffusion-hierarchical-links"
+      },
+      "questionSha256": "2ce37b873e3308c7300ad44291eb48169b739ef0ae095b52b1da8261d2768c7c",
+      "stimulusSha256": "4046165c2cc701b0e51ad0fbb3b95bc512eb5a88f909fd39d9521364404f4f49"
+    },
+    {
+      "questionId": "hug-3-4-003",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The underlying idea spreads while ingredients are modified to fit local preferences.",
+      "independentReview": "Compared constant portable-wrap principle with meat→beans and herb mix→local spice changes. Direct demonstration supplies transmission; adaptation is not inferred merely from superficial similarity.",
+      "check": {
+        "type": "diffusion-stimulus-adaptation"
+      },
+      "questionSha256": "47bac71450cd594c1af31d6466d8bf0710966b0c4e96857062db4b0ffdd812a7",
+      "stimulusSha256": "7d7440dd72546c696b3028970b84ba0ff3ecc570f4eff2475f7282e5b3935b4f"
+    },
+    {
+      "questionId": "hug-3-4-004",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Relocation redistributes 100 practitioners between places without increasing their combined number.",
+      "independentReview": "Recomputed before100+0=100 and after80+20=100, with origin−20/destination+20. Explicit migration and no other uptake/loss establish the mechanism; equal totals alone would not suffice.",
+      "check": {
+        "type": "diffusion-relocation-counts"
+      },
+      "questionSha256": "6dae4ec75b6f7242d2d65e4c51d22db6c89e181eb02d4f56637f6215e6db5a01",
+      "stimulusSha256": "c8ef9eddb8563628eac2929d69a5e9a430c42f419507c0c96dd1cec1598b9599"
+    },
+    {
+      "questionId": "hug-3-4-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "Expansion diffusion, while its more specific contact or hierarchy pathway needs more evidence.",
+      "independentReview": "Separated evidence sufficient for expansion from missing evidence about contact or influence links. No relocation is supplied; choosing a unique subtype would add facts absent from the record.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "f0680d83bd4285ba3b589a2f15e64fab21ce9c49d0189dc507344b39ce51562a"
+    },
+    {
+      "questionId": "hug-3-4-006",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Relocation first, followed by expansion through new adoption.",
+      "independentReview": "Tracked carrier migration separately from subsequent nonmigrant uptake. Temporal sequencing prevents a false either/or classification of the entire history.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "38bdb11d927879db4185d026490588c256daab5c36a661707b9642a88f284b9f"
+    },
+    {
+      "questionId": "hug-3-4-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "The contact pathway can be contagious while the adaptation is also an example of stimulus diffusion.",
+      "independentReview": "Distinguished mode of contact from transformation of content; both are explicitly provided. The question avoids treating diffusion types as always mutually exclusive dimensions or labeling any change independent invention.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "4dd42c6e283f59361b76e63e3bc40a476daf98ffb2b1a32d8d5929d5dcc551f5"
+    },
+    {
+      "questionId": "hug-3-4-008",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "A communication barrier can slow diffusion even across a short distance, and translation can change that barrier.",
+      "independentReview": "Held short distance while varying communication access and noting translation before later adoption. A delay does not prove impossibility; no named language or actual broadcast is represented.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "9821a294288cc5655f407c434cd841992aa36f62462574438f0d4350fbabb3f5"
+    },
+    {
+      "questionId": "hug-3-4-009",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Similarity warrants investigation, but does not by itself distinguish diffusion from independent development.",
+      "independentReview": "Separated resemblance from evidence of historical transmission. The supported conclusion is uncertainty between mechanisms, not proof of either independent invention or a specific diffusion pathway.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "3284d2592b6b61236a909db0db8c05a22e1016744d97eb28f9e77fdc04fb2235"
+    },
+    {
+      "questionId": "hug-3-4-010",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Objects moving does not establish migration of practitioners; the supplied new learning describes expansion among destination residents.",
+      "independentReview": "Checked units and mechanism: shipped goods versus practitioners’ residence. Explicit learning plus no craftsperson migration supports expansion, not an assumed relocation merely because an object crossed a border.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "bc075a024c9ef3d71413a12fb9f9c5fba3293316af490a068a30af7b94b850bd"
+    },
+    {
+      "questionId": "hug-3-4-011",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Hierarchical and contagious pathways can operate at different scales in the same wider spread.",
+      "independentReview": "Mapped regional organizational links to hierarchical spread and within-town neighboring contacts to contagious expansion. This is spatial-scale coexistence, distinct from the separate earlier relocation-then-expansion sequence.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "e2ac94c0699297193f389b26746e589b34f5307a969e47d0c5303d7324e29875"
+    }
+  ]
+}

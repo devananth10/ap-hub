@@ -204,3 +204,22 @@ test('landscape checks retain historical layers, access-rule differences and sea
   const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
  }
 });
+
+test('cultural-pattern checks preserve complementary languages, crosscutting identities and shared institutions',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-3-3.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-3-3.json','utf8'));
+ for(const [i,change] of [[0,s=>s.regions[2].value=0],[1,s=>s.rows[1][2]='80'],[2,s=>s.edges[1].from='R community'],[3,s=>s.points[0].x=25]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+
+test('diffusion checks preserve contact timing, hierarchy links, adaptation and conserved relocation totals',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-3-4.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-3-4.json','utf8'));
+ for(const [i,change] of [[0,s=>s.points[1].value=0],[1,s=>s.edges[2].from='Capital office'],[2,s=>s.rows[1][2]=s.rows[1][1]],[3,s=>s.rows[1][1]='100']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+
+test('model labels can sit outside incoming and outgoing arrows with validated positions',()=>{
+ const s=geographyStimuli['hug-3-4-002'],html=render(s);assert.match(html,/data-node-label="West hub" x="104" y="138" text-anchor="end"/);assert.match(html,/data-node-label="East hub" x="356" y="138" text-anchor="start"/);assert.match(html,/data-node-label="Capital office" x="230" y="39.5" text-anchor="middle"/);
+ const changed=structuredClone(s);changed.nodes[0].labelPosition='diagonal';assert.throws(()=>validateGeographyStimulus(changed),/label position/);
+});

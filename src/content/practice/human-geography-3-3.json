@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 3,
+  "topicId": "topic-3-3",
+  "questions": [
+    {
+      "id": "hug-3-3-001",
+      "prompt": "Residents use only R or S as their preferred service language in this hypothetical survey. Which service-planning conclusion best uses the mapped pattern without assuming uniform districts?",
+      "options": [
+        "R-only services must equally meet every resident’s language preference in all districts.",
+        "Religion can be assigned from the map without collecting religious information.",
+        "S-language demand is relatively greater in the south, while both languages have users in every district.",
+        "No R-language services are relevant in either southern district."
+      ],
+      "correctIndex": 2,
+      "explanation": "R preferences are 80% and 70% in the north but 20% and 10% in the south; under the stated two-category definition, S preferences are the complements. A plan should recognize this regional contrast and the presence of both preferences throughout. Percentages alone do not give absolute service counts without district population totals. A: The different preferences contradict equally meeting everyone’s preference with R alone. B: The source measures service-language preference, not religion. C: This uses the regional pattern and retains within-district minorities. D: R remains preferred by 20% and 10% in the two southern districts."
+    },
+    {
+      "id": "hug-3-3-002",
+      "prompt": "What does comparing the language and religion columns reveal about cultural patterns?",
+      "options": [
+        "Language and religion need not form identical regional patterns; A and B share a language percentage but differ in religion.",
+        "A and B must have identical religious composition because their language percentages match.",
+        "Knowing a district’s language percentage fixes every individual’s ethnicity.",
+        "The columns prove that no person can use R and belong to X."
+      ],
+      "correctIndex": 0,
+      "explanation": "A and B each report 80% R-language preference but 80% and 20% affiliation with X. Likewise, A and C share the X percentage while differing in R. Cultural dimensions can crosscut rather than forming one identical spatial partition. Aggregate percentages also do not provide the individual joint memberships needed to classify each person. A: This identifies the actual crosscutting comparison without assigning individual identities. B: Their X percentages explicitly differ. C: Ethnicity is not measured, and an aggregate language percentage is not an individual identity record. D: The table does not establish individual overlap, much less prove it impossible."
+    },
+    {
+      "id": "hug-3-3-003",
+      "prompt": "Both language communities participate in the shared council shown, and its decisions include representatives from each. Which interpretation best describes the stated integrative mechanism?",
+      "options": [
+        "The council proves that cultural differences have disappeared.",
+        "Different languages inevitably prevent any cooperation.",
+        "Inclusive shared institutions can act as a centripetal force despite cultural differences.",
+        "Participation proves that every resident agrees with every council decision."
+      ],
+      "correctIndex": 2,
+      "explanation": "A centripetal force encourages connection or cohesion. The shared institution offers participation across the two communities rather than requiring cultural identity to disappear. Inclusive representation can support integration, but it does not guarantee unanimous opinion or permanent absence of disagreement. A: Participation does not establish the disappearance of language differences. B: The explicitly shared institution demonstrates that cooperation is possible in this scenario. C: This identifies the common participatory link while preserving cultural variation. D: Representation and participation are not the same as unanimous support for every decision."
+    },
+    {
+      "id": "hug-3-3-004",
+      "prompt": "Both communities traditionally visit the shared site. A new rule excludes East residents. Which interpretation best explains a possible centrifugal effect?",
+      "options": [
+        "The mere existence of two communities proves that conflict is unavoidable.",
+        "The site must unite everyone regardless of access rules.",
+        "Its border location alone establishes identical political views in both communities.",
+        "Exclusion from a valued place can intensify division; the communities’ difference alone does not make that outcome inevitable."
+      ],
+      "correctIndex": 3,
+      "explanation": "A centrifugal force contributes to division. In this scenario, exclusion from a place valued by both communities provides a mechanism for grievance and separation. The location and cultural difference do not alone make conflict inevitable; institutions, access arrangements and responses shape the outcome. A: This substitutes a deterministic claim for the specific exclusion mechanism. B: A shared value does not erase the effects of unequal access. C: Location does not establish political preferences or equal treatment. D: This links the supplied rule to a possible divisive effect without treating diversity as destiny."
+    },
+    {
+      "id": "hug-3-3-005",
+      "prompt": "Two language communities adopt a common second language for regional trade while continuing to use their first languages at home. Which outcome is plausible?",
+      "options": [
+        "The shared language can facilitate connections without necessarily eliminating first-language identities.",
+        "A common second language proves that every first language has disappeared.",
+        "Trade can occur only if all participants have identical religious beliefs.",
+        "Learning a second language prevents any shared economic interaction."
+      ],
+      "correctIndex": 0,
+      "explanation": "A common means of communication can reduce a barrier to exchange and provide an integrative connection. Using it in trade does not require every household to abandon a first language or identity. Different cultural dimensions can persist alongside shared practices used for particular purposes. A: This identifies the communication mechanism and allows continuing cultural identities. B: The scenario explicitly states continued first-language use. C: No identical-religion condition is supplied or required by the communication example. D: The shared language can enable rather than prevent the stated interaction."
+    },
+    {
+      "id": "hug-3-3-006",
+      "prompt": "Residents organize a neighborhood festival around local stories, food and a renovated public square. Which concept best captures their effort to give the area shared meaning?",
+      "options": [
+        "Population doubling through a rise in the crude birth rate.",
+        "A physical process occurring independently of residents’ actions.",
+        "The elimination of every difference among neighborhood residents.",
+        "Placemaking through practices and symbols connected to a sense of place."
+      ],
+      "correctIndex": 3,
+      "explanation": "Placemaking involves how people shape and give meaning to places. Stories, activities and a shared square can contribute to belonging and recognizable local identity. A sense of place need not be identical for all participants, and creating shared meaning is not the same as erasing every difference. A: No birth-rate or population-growth information is supplied. B: The scenario explicitly describes resident organization and interpretation. C: Shared activities do not prove complete agreement or uniform identity. D: This connects the material square with the social practices and meanings supplied."
+    },
+    {
+      "id": "hug-3-3-007",
+      "prompt": "A city’s largest worship building belongs to a small religious community. Why is building size alone a poor measure of religious population share?",
+      "options": [
+        "Every worship building has the same capacity regardless of size.",
+        "Funding, history and use can differ, so a building’s dimensions are not a count of affiliated residents.",
+        "The largest building always represents the largest population group.",
+        "Religious affiliation can be measured only from political borders."
+      ],
+      "correctIndex": 1,
+      "explanation": "A landscape feature can be prominent for reasons other than the number of local adherents. Funding, historical investment, visitors and patterns of use can affect the building. Measuring affiliation requires an appropriate population source and definition rather than converting visual size directly into a population percentage. A: Capacity can differ, but even capacity would not directly count every affiliate. B: This identifies why the proposed proxy does not establish the population share. C: The supplied small community with a large building is a counterexample to that rule. D: Political boundaries alone do not measure religious affiliation."
+    },
+    {
+      "id": "hug-3-3-008",
+      "prompt": "Women’s participation in paid work differs between two regions with different childcare access, job structures and social expectations. Which explanation should a geographer test?",
+      "options": [
+        "Latitude biologically determines every woman’s occupation.",
+        "The regional averages describe every individual’s experience exactly.",
+        "Social institutions, economic opportunities and cultural expectations may jointly shape the pattern.",
+        "One difference proves that all cultural norms operate identically in both regions."
+      ],
+      "correctIndex": 2,
+      "explanation": "Spatial patterns of gender roles can reflect interacting institutions, opportunities and expectations. The supplied differences identify plausible contextual influences to investigate, not a biological rule or an exact prediction for each individual. Regional analysis should preserve variation within groups as well as between places. A: No biological latitude mechanism is supplied or justified. B: An aggregate pattern need not describe each person’s circumstances. C: This matches the multiple contextual dimensions specified. D: The observed differences do not establish identical norms or identical effects."
+    },
+    {
+      "id": "hug-3-3-009",
+      "prompt": "Several ethnic communities use the same main language in a region. Which practice best avoids conflating language and ethnicity in a survey?",
+      "options": [
+        "Assign everyone the ethnicity associated with the language’s name.",
+        "Treat all ethnic identities as physically visible from a map.",
+        "Assume one language can never be shared by multiple communities.",
+        "Collect appropriately defined language-use and self-identified ethnic information separately."
+      ],
+      "correctIndex": 3,
+      "explanation": "Language and ethnicity are related in some contexts but are not interchangeable categories. Separate, clearly defined measures can represent multilingual use and varied identities more accurately than assigning ethnicity from one language. The scenario already supplies multiple communities sharing that language. A: This collapses distinct identities into a single language-based assumption. B: Maps do not directly reveal each person’s self-identification. C: The premise directly contradicts this assertion. D: This distinguishes the variables rather than imposing a one-to-one correspondence."
+    },
+    {
+      "id": "hug-3-3-010",
+      "prompt": "A country’s tourism campaign promotes one national cultural image, while neighborhood research documents several different local identities. What is the best interpretation?",
+      "options": [
+        "A national representation can simplify or omit the diversity visible at local scales.",
+        "The campaign necessarily describes every neighborhood and resident exactly.",
+        "Local variation makes any national symbol impossible.",
+        "The local findings prove that residents share no connections of any kind."
+      ],
+      "correctIndex": 0,
+      "explanation": "A national image can select particular symbols for a broad audience without representing every local experience. Neighborhood-scale evidence can reveal distinctions hidden by that summary. This difference in scale does not require rejecting every shared national connection or assuming that the campaign is a complete cultural census. A: This recognizes the different scope and selectivity of the two sources. B: A promotional representation need not match every local identity. C: Local differences can coexist with broadly shared symbols. D: Variation does not establish total absence of shared connections."
+    },
+    {
+      "id": "hug-3-3-011",
+      "prompt": "In a survey of 400 residents, 300 favor a joint intercommunity festival and 100 oppose it. Which statement accurately reports the evidence about shared-place support?",
+      "options": [
+        "All residents support the festival because a majority does.",
+        "Seventy-five percent of surveyed residents support it, but support is not unanimous and the sample alone does not reveal every subgroup’s view.",
+        "Only 25% support it because 100 residents oppose it.",
+        "The counts establish that each language community has exactly the same support rate."
+      ],
+      "correctIndex": 1,
+      "explanation": "Support is 300/400=75%, leaving 25% opposed. A majority is not unanimity. Without subgroup counts and information about sampling, the totals do not establish equal community-level rates or a universal view among all residents beyond the sample. A: Majority support does not make the 100 opposing responses disappear. B: This gives the correct sample percentage and preserves the limits on unanimity and subgroup inference. C: Twenty-five percent is the opposing share, not the supporting share. D: An aggregate total does not determine how support is distributed between communities."
+    }
+  ]
+}

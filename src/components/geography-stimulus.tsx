@@ -49,7 +49,7 @@ export function StimulusContent({stimulus:s}:{stimulus:GeographyStimulus}) {
       {s.kind==='model'&&<>
         {s.rings&&[...s.rings].sort((a,b)=>b.radius-a.radius).map((ring,i)=><g key={ring.label}><circle className={`geo-ring geo-shade-${i}`} cx={mapX(50)} cy={mapY(30)} r={ring.radius*3.3}/><text x={mapX(50)} y={mapY(30)-ring.radius*3.3+14} textAnchor="middle">{ring.label}</text></g>)}
         {s.edges.map((edge,i)=>{const from=s.nodes.find(n=>n.label===edge.from)!,to=s.nodes.find(n=>n.label===edge.to)!;return <g key={i} className="geo-path"><line x1={mapX(from.x)} y1={mapY(from.y)} x2={mapX(to.x)} y2={mapY(to.y)} markerEnd={`url(#${id}-arrow)`}/><text x={mapX((from.x+to.x)/2)} y={mapY((from.y+to.y)/2)-8} textAnchor="middle">{edge.label}</text></g>;})}
-        {s.nodes.map(n=><g key={n.label}><circle className="geo-point" cx={mapX(n.x)} cy={mapY(n.y)} r="5"/><text x={mapX(n.x)} y={mapY(n.y)+21} textAnchor="middle">{n.label}</text></g>)}
+        {s.nodes.map(n=><g key={n.label}><circle className="geo-point" cx={mapX(n.x)} cy={mapY(n.y)} r="5"/><text data-node-label={n.label} x={mapX(n.x)+(n.labelPosition==='left'?-12:n.labelPosition==='right'?12:0)} y={mapY(n.y)+(n.labelPosition==='above'?-12:n.labelPosition==='left'||n.labelPosition==='right'?4:21)} textAnchor={n.labelPosition==='left'?'end':n.labelPosition==='right'?'start':'middle'}>{n.label}</text></g>)}
       </>}
     </svg>
     <p className="stimulus-description">{s.description}</p>

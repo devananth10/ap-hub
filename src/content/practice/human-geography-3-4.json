@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 3,
+  "topicId": "topic-3-4",
+  "questions": [
+    {
+      "id": "hug-3-4-001",
+      "prompt": "Residents remain in place, and records show the new greeting is learned through daily contact only between successive neighboring settlements A→B→C→D. Which diffusion mechanism is directly supported?",
+      "options": [
+        "Contagious expansion diffusion through neighboring contacts.",
+        "Relocation diffusion proved by permanent migration of the greeting’s users.",
+        "Hierarchical diffusion through administrative ranks supplied by the map.",
+        "Independent invention in every settlement without contact."
+      ],
+      "correctIndex": 0,
+      "explanation": "The records specify person-to-person contact between neighbors while residents remain in place. That supports contagious expansion: new users adopt through contact rather than carriers permanently relocating. The map’s timing alone would not prove the mechanism, but the supplied contact records provide the needed process evidence. A: This fits the explicitly documented neighboring-contact pathway. B: No permanent relocation occurs in the scenario. C: No administrative or settlement-rank transmission route is supplied. D: The records explicitly link learning to contact, contradicting contact-free invention."
+    },
+    {
+      "id": "hug-3-4-002",
+      "prompt": "The organization transmits the practice through its capital office and regional hubs before smaller branches, including branches closer to the source. Which mechanism best fits the documented route?",
+      "options": [
+        "Random adoption unrelated to the organization’s links.",
+        "Relocation of every original user to each branch.",
+        "Hierarchical expansion through linked levels of the organization.",
+        "Contagious spread determined only by nearest physical neighbors."
+      ],
+      "correctIndex": 2,
+      "explanation": "The route follows levels of institutional influence rather than simply the nearest settlement. Hierarchical diffusion can link prominent centers or influential nodes to other places through such relationships. Distance may still matter, but it is not the sole organizing mechanism in the supplied records. A: The directed office/hub/branch links are explicitly documented. B: Transmission of a practice through offices does not require every user to migrate. C: This matches the organizational levels and the skipped nearer branches. D: The stated sequence follows hierarchy despite some closer branches adopting later."
+    },
+    {
+      "id": "hug-3-4-003",
+      "prompt": "Travelers demonstrate the original portable-wrap idea, and recipients develop the local version in the table. Which feature makes this an example of stimulus diffusion?",
+      "options": [
+        "The recipients invent the idea without any contact with the travelers.",
+        "The underlying idea spreads while ingredients are modified to fit local preferences.",
+        "Every ingredient remains identical in both versions.",
+        "All original cooks permanently relocate, with no learning by recipients."
+      ],
+      "correctIndex": 1,
+      "explanation": "Stimulus diffusion involves adoption of an underlying idea with modification rather than exact duplication of every element. The portable-wrap principle is learned from travelers, while filling and seasoning are adapted. The contact evidence distinguishes borrowing from an unsupported claim of independent invention. A: The scenario explicitly supplies demonstration and learning. B: This preserves the shared idea and the changed elements that define the example. C: The table lists different fillings and seasonings. D: The example describes recipient learning and does not require permanent migration of all origin cooks."
+    },
+    {
+      "id": "hug-3-4-004",
+      "prompt": "Twenty practitioners move permanently from Origin to Destination and retain the practice; no one else adopts or abandons it. What does the table show?",
+      "options": [
+        "Expansion from 100 to 120 practitioners because the migrants are counted twice.",
+        "A total loss of 20 practitioners worldwide.",
+        "Contagious expansion proved by an increase in the total number of practitioners.",
+        "Relocation redistributes 100 practitioners between places without increasing their combined number."
+      ],
+      "correctIndex": 3,
+      "explanation": "The total is 100 before and 80+20=100 afterward. The specified permanent move carries the practice to a new location without new adoption, illustrating relocation diffusion. Location changes need not increase the total number of users, and movers should not be counted at both residences in the after period. A: The 20 moved out of the origin count; adding them again there double-counts people. B: The 20 are still practitioners at the destination. C: The combined total does not rise, and the supplied mechanism is migration rather than new contact adoption. D: This preserves both the spatial redistribution and the unchanged total."
+    },
+    {
+      "id": "hug-3-4-005",
+      "prompt": "An innovation remains widely used in its origin while additional residents in other places adopt it without moving. The record gives no contact-network details. Which classification is supported at this level of information?",
+      "options": [
+        "Relocation only, because any appearance in a new place requires permanent migration.",
+        "Expansion diffusion, while its more specific contact or hierarchy pathway needs more evidence.",
+        "Contagious diffusion uniquely, because every expansion must occur only between immediate neighbors.",
+        "Hierarchical diffusion uniquely, because every new user must occupy a higher social rank."
+      ],
+      "correctIndex": 1,
+      "explanation": "Expansion involves spread to additional users or places while the practice remains in the origin. Without information about transmission channels, the description does not uniquely establish contagious or hierarchical expansion. A broad classification can be supported even when a finer subtype is unresolved. A: The scenario explicitly supplies adoption without residential movement. B: This identifies expansion and correctly limits subtype inference. C: Contagious is one expansion pathway, not the definition of every expansion. D: Hierarchical diffusion does not require every new user to be higher-ranked, and no such channel is supplied."
+    },
+    {
+      "id": "hug-3-4-006",
+      "prompt": "Migrants first bring a musical practice to a destination. Later, nonmigrant neighbors learn it from them. Which sequence best describes the two phases?",
+      "options": [
+        "Relocation first, followed by expansion through new adoption.",
+        "Expansion first, followed by no possible diffusion because residents remain in place.",
+        "Only independent invention, because neighbors are nonmigrants.",
+        "Only relocation, because contact learning cannot spread a practice."
+      ],
+      "correctIndex": 0,
+      "explanation": "The first phase carries the practice through migrants’ movement. The second adds users through learning at the destination. Processes can occur sequentially in the same case; recognizing the first mechanism does not exclude later expansion among people who do not relocate. A: This assigns each supplied phase to its matching mechanism. B: The original carriers move first, and later local learning can be diffusion without movement. C: The neighbors learn from existing practitioners rather than inventing without contact. D: New contact-based adoption is an expansion phase rather than another residential move."
+    },
+    {
+      "id": "hug-3-4-007",
+      "prompt": "Neighbors learn a food-preparation idea through local contacts but change its ingredients. Which statement best handles the two observations?",
+      "options": [
+        "Local contact rules out any modification of the borrowed idea.",
+        "Modified ingredients prove that no idea was transmitted.",
+        "The contact pathway can be contagious while the adaptation is also an example of stimulus diffusion.",
+        "The case must be relocation because ingredients differ."
+      ],
+      "correctIndex": 2,
+      "explanation": "The terms can emphasize different aspects of a process. Neighboring contact describes a transmission pathway; modification of the learned idea describes adaptation. Both observations can be recognized instead of requiring every real case to fit only one label. Ingredient change does not itself establish permanent migration. A: Contact transmission does not require perfect copying. B: A learned underlying idea can persist while its expression changes. C: This accounts for both the supplied pathway and the modified expression. D: No residential relocation is supplied by ingredient differences."
+    },
+    {
+      "id": "hug-3-4-008",
+      "prompt": "A radio practice spreads quickly among speakers of one language but reaches a nearby different-language community later after translation. Which interpretation is most defensible?",
+      "options": [
+        "Physical distance alone must explain every difference in adoption time.",
+        "Adjacent communities must adopt every practice at exactly the same time.",
+        "A language difference makes diffusion permanently impossible.",
+        "A communication barrier can slow diffusion even across a short distance, and translation can change that barrier."
+      ],
+      "correctIndex": 3,
+      "explanation": "Proximity does not remove every communication constraint. The supplied translation event provides a plausible mechanism for later access to the practice. A barrier can delay rather than permanently prevent transmission, and other contextual influences would still need evaluation for a complete explanation. A: The scenario supplies a language/translation mechanism beyond distance. B: Neighbors can differ in access and timing. C: The later translated transmission contradicts permanent impossibility. D: This uses the specified barrier and its change without making distance irrelevant everywhere."
+    },
+    {
+      "id": "hug-3-4-009",
+      "prompt": "Two distant groups use similar decorative patterns, but no evidence of contact or transmission has been found. What can the similarity alone establish?",
+      "options": [
+        "Similarity warrants investigation, but does not by itself distinguish diffusion from independent development.",
+        "The groups must have had a documented migration link.",
+        "The resemblance proves the exact direction and date of transmission.",
+        "Diffusion is impossible because the groups are far apart."
+      ],
+      "correctIndex": 0,
+      "explanation": "A similar form can suggest a research question, but demonstrating diffusion requires evidence about connections and transmission. Independent development remains a possibility when such evidence is absent. Distance does not exclude contact, yet resemblance alone does not establish a route, direction or date. A: This keeps the observation distinct from an unproven causal history. B: No migration evidence is supplied. C: Exact direction and timing require more than a visual resemblance. D: Distant places can be connected; distance alone is not proof against diffusion."
+    },
+    {
+      "id": "hug-3-4-010",
+      "prompt": "Pottery is shipped to another country, where residents learn its decorative technique; no craftspeople change residence. Why is the shipment alone insufficient evidence of relocation diffusion by people?",
+      "options": [
+        "Trade cannot transmit ideas or practices under any conditions.",
+        "Objects moving does not establish migration of practitioners; the supplied new learning describes expansion among destination residents.",
+        "Every consumer who sees an imported object becomes a permanent migrant.",
+        "A ship crossing a border establishes that every original craftsperson moved with it."
+      ],
+      "correctIndex": 1,
+      "explanation": "In the cultural-migration distinction used here, relocation concerns practitioners carrying a practice through their movement. A transported object can support learning without that residential migration. The scenario supplies uptake by destination residents, while explicitly excluding craftsperson relocation; trade and diffusion are compatible without conflating goods with people. A: The scenario explicitly includes learning from the imported craft. B: This distinguishes the moving object from residential carriers and recognizes new adoption. C: Learning or viewing an object does not change residence automatically. D: Cargo movement does not establish who migrated, and the premise excludes that movement."
+    },
+    {
+      "id": "hug-3-4-011",
+      "prompt": "A practice spreads between regional offices through organizational links, then between neighboring households within each town. Which analysis best recognizes scale?",
+      "options": [
+        "One diffusion label must describe every link at every scale without examining channels.",
+        "The local household spread disproves the existence of the regional office links.",
+        "Hierarchical and contagious pathways can operate at different scales in the same wider spread.",
+        "Regional links mean no household can learn through direct contact."
+      ],
+      "correctIndex": 2,
+      "explanation": "A regional network may connect influential institutional nodes, while local contact carries the same practice among neighbors. These mechanisms can coexist across scales. Identifying one does not erase the other, so the analysis should match evidence to each part of the transmission network. A: Imposing one label can conceal the explicitly different channels. B: Both regional and local links are supplied and can coexist. C: This matches organizational and neighbor contacts to their respective scales. D: Institutional transmission does not prevent later person-to-person learning."
+    }
+  ]
+}

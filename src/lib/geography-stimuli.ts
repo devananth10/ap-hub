@@ -13,7 +13,7 @@ export type MapStimulus = Base & {
 };
 export type ChartStimulus = Base & { kind: "chart"; display?: "bar" | "line"; unitLabel: string; categories: string[]; series: {label:string;values:number[]}[]; max: number };
 export type PyramidStimulus = Base & { kind: "pyramid"; unitLabel: string; cohorts: {label:string;ageStart:number;ageEnd:number|null;male:number;female:number}[]; max: number };
-export type ModelStimulus = Base & { kind: "model"; assumptions: string; nodes: Point[]; edges: {from:string;to:string;label:string}[]; rings?: {radius:number;label:string}[] };
+export type ModelStimulus = Base & { kind: "model"; assumptions: string; nodes: (Point & {labelPosition?: "above" | "below" | "left" | "right"})[]; edges: {from:string;to:string;label:string}[]; rings?: {radius:number;label:string}[] };
 export type TableStimulus = Base & { kind: "table"; headers: string[]; rows: string[][] };
 export type GeographyStimulus = MapStimulus | ChartStimulus | PyramidStimulus | ModelStimulus | TableStimulus;
 
@@ -65,7 +65,10 @@ export function validateGeographyStimulus(stimulus: GeographyStimulus) {
     if (!stimulus.assumptions || !stimulus.nodes.length) fail("model assumptions and nodes required");
     const labels = new Set(stimulus.nodes.map(n => n.label));
     if (labels.size !== stimulus.nodes.length) fail("unique node labels required");
-    for (const n of stimulus.nodes) if (!coords([[n.x,n.y],[n.x,n.y]])) fail("invalid node");
+    for (const n of stimulus.nodes) {
+      if (!coords([[n.x,n.y],[n.x,n.y]])) fail("invalid node");
+      if (n.labelPosition !== undefined && !["above","below","left","right"].includes(n.labelPosition)) fail("invalid model label position");
+    }
     for (const edge of stimulus.edges) if (!labels.has(edge.from) || !labels.has(edge.to) || !edge.label) fail("unknown model node");
     for (const ring of stimulus.rings || []) if (!finite(ring.radius) || ring.radius <= 0 || ring.radius > 28 || !ring.label) fail("invalid model ring");
   } else if (stimulus.kind === "table") {

@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 3.3–3.4
+
+253 original MCQs across23 topics are published, exactly11 per completed topic;92 meaningful stimuli (36.36%).104 explicit checks include numeric/geometry models and supplied-evidence assertions, not104 independent scientific proofs. Cultural Patterns examines crosscutting identities and conditional cohesion/division; Types of Diffusion distinguishes documented mechanisms from resemblance, subtype uncertainty, adaptation, movement and cross-scale channels. All148 tests, TypeScript/build, Geography scopes and standard routes passed. Both full browser sessions scored11/11; all eight stimuli passed mobile390×844 inspection.
+
+Browser review found node labels crossed arrows. Optional above/below/left/right positions now keep the new council/hierarchy text clear; actual rendered coordinates and invalid positions are tested. Defaults preserve existing diagrams. Three stimulus headings were made neutral to avoid suggesting conclusions:2.6 demand chart,3.2 seasonal-use table and3.3 cultural-measure table. Questions, keys, explanations and data did not change. Approved resources/storage remain untouched.80 preview requests across8 routes at concurrency3 passed without retries or new manifest errors; this is not proof of a permanent fix. No human-review or empirical difficulty-calibration claim. Next3.5;45 topics/495 questions remain.
+
 ## Human Geography Topics 3.1–3.2
 
 231 MCQs across twenty-one topics are published;84 meaningful stimuli (36.36%) and95 explicit evidence/model checks. Introduction to Culture distinguishes social transmission, one-trait distributions, within-group variation and observer attitudes. Cultural Landscapes interprets historical layers, human/environment combinations, gendered access and seasonal uses absent from building counts. All145 tests, TypeScript/build, Geography scopes and standard routes passed. Both complete browser sessions scored11/11; all eight actual stimuli were inspected at390×844. No old questions, videos or storage changed; no human review or empirical difficulty-calibration claim. Next3.3, with47 topics/517 questions remaining.
@@ -251,3 +257,5 @@ An authenticated administration dashboard, student-private bookmark editor, real
 ![PrepAtlas practice](../artifacts/prepatlas-practice.jpg)
 
 ![PrepAtlas mobile practice](../artifacts/prepatlas-practice-mobile.jpg)
+
+Final3.3–3.4 browser receipt: the corrected hierarchy model also passed desktop light-mode inspection, mobile dark-mode inspection and keyboard zoom200/reset100. Theme and viewport were restored; the preview remains at port3000.

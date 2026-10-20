@@ -114,6 +114,15 @@ export function verifyGeographyQuestion(question,review,stimulus){
   case 'landscape-field-evidence':assert.ok(stimulus.rows[0][1].includes('Worship building')&&stimulus.rows[1][1].includes('Hillside terraces'));assert.equal(question.correctIndex,3);break;
   case 'landscape-gender-access':{const [w,m]=stimulus.series.map(s=>s.values);assert.deepEqual(w,[2,8,8]);assert.deepEqual(m,[8,8,8]);assert.deepEqual(m.map((n,i)=>n-w[i]),[6,0,0]);assert.equal(question.correctIndex,1);break;}
   case 'landscape-seasonal-use':assert.deepEqual(stimulus.rows.map(r=>r[0]),['Seasonal use','Management','Meaning','Buildings']);assert.equal(stimulus.rows[3][1],'No permanent houses');assert.equal(question.correctIndex,0);break;
+  case 'cultural-language-services':{const r=stimulus.regions.map(r=>r.value);assert.deepEqual(r,[80,70,20,10]);assert.deepEqual(r.map(n=>100-n),[20,30,80,90]);assert.equal(question.correctIndex,2);break;}
+  case 'cultural-crosscutting':assert.deepEqual(stimulus.rows.map(r=>r.slice(1).map(Number)),[[80,80],[80,20],[20,80],[20,20]]);assert.equal(question.correctIndex,0);break;
+  case 'cultural-shared-institution':assert.deepEqual(stimulus.edges.map(e=>[e.from,e.to,e.label]),[['R community','Shared council','Representatives'],['S community','Shared council','Representatives']]);assert.equal(question.correctIndex,2);break;
+  case 'cultural-contested-site':assert.deepEqual(stimulus.points.map(p=>[p.label,p.x,p.y]),[['Shared site',50,15]]);assert.equal(stimulus.regions[0].polygon[1][0],50);assert.equal(question.correctIndex,3);break;
+  case 'cultural-festival-support':assert.equal(review.check.support/(review.check.support+review.check.oppose),.75);assert.ok(review.check.oppose>0);assert.equal(question.correctIndex,1);break;
+  case 'diffusion-neighbor-sequence':assert.deepEqual(stimulus.points.map(p=>[p.label,p.x,p.value]),[['A',15,0],['B',40,1],['C',65,2],['D',90,3]]);assert.equal(question.correctIndex,0);break;
+  case 'diffusion-hierarchical-links':assert.deepEqual(stimulus.edges.map(e=>[e.from,e.to,e.label]),[['Capital office','West hub','Day 1'],['Capital office','East hub','Day 1'],['West hub','Branch','Day 4'],['East hub','Branch','Day 4']]);assert.equal(question.correctIndex,2);break;
+  case 'diffusion-stimulus-adaptation':assert.equal(stimulus.rows[0][1],stimulus.rows[0][2]);assert.notEqual(stimulus.rows[1][1],stimulus.rows[1][2]);assert.notEqual(stimulus.rows[2][1],stimulus.rows[2][2]);assert.equal(question.correctIndex,1);break;
+  case 'diffusion-relocation-counts':assert.deepEqual(stimulus.rows.map(r=>r.slice(1).map(Number)),[[100,0],[80,20]]);assert.deepEqual(stimulus.rows.map(r=>Number(r[1])+Number(r[2])),[100,100]);assert.equal(question.correctIndex,3);break;
   case 'reasoning':break;
   default:throw Error('Unknown verification model: '+review.check.type);
  }
@@ -125,7 +134,7 @@ export function validateHumanGeographyBank(){
  const prompts=new Set(),topics=new Set(),ids=new Set(),visualCounts={};let total=0,stimulusCount=0,modelChecks=0;
  const rows=[];
  for(const batch of batches){
-  assert.equal(batch.courseId,'human-geography');const topic=inventory.find(t=>t.topicId===batch.topicId);assert.ok(topic);assert.ok(!topics.has(topic.topicId));topics.add(topic.topicId);
+  assert.equal(batch.courseId,'human-geography');const topic=inventory.find(t=>t.topicId===batch.topicId);assert.ok(topic);assert.equal(batch.unitNumber,topic.unitNumber,'Official unit/topic mismatch');assert.ok(!topics.has(topic.topicId));topics.add(topic.topicId);
   const qa=read(`content-drafts/human-geography/qa/topic-${topic.topicNumber.replace('.','-')}.json`);assert.equal(qa.status,'passed');assert.equal(qa.humanReviewPerformed,false);assert.equal(qa.semanticSha256,semanticHash(batch));assert.equal(qa.questions.length,11);assert.ok(qa.scopeReview&&qa.varietyReview&&qa.repetitionReview);
   const keys=new Set();
   batch.questions.forEach((question,i)=>{assert.equal(question.id,`hug-${topic.topicNumber.replace('.','-')}-${String(i+1).padStart(3,'0')}`);ids.add(question.id);const normalized=question.prompt.normalize('NFKC').replace(/\s+/g,' ').trim();assert.ok(!prompts.has(normalized),'Duplicate prompt');prompts.add(normalized);

@@ -1,0 +1,143 @@
+{
+  "topicNumber": "3.3",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "3887801e0a2b88f797d295287815dfaf61547bca53bf01d42c438404093cb683",
+  "scopeReview": "PSO-3.D.1–2: language/religion/ethnicity/gender patterns, sense of place and placemaking, centripetal/centrifugal possibilities. Institutions and exclusion provide explicit mechanisms; diversity is not treated as inevitable conflict. Language, religion and ethnicity remain distinct.",
+  "varietyReview": "Language service map, crosscutting affiliation table, shared institution model and contested-access map. Other applied tasks cover second-language links, place meanings, proxy limits, gender context, survey definitions, national/local representations and sample support. All five skills, varied keys/difficulty.",
+  "repetitionReview": "Unlike3.1 one-trait description, the language map supports service provision using complementary preferences. Crosscutting identities, integrative/divisive mechanisms and public-space meanings introduce new tasks. No repeated stems or numeric-only copies.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://uis.unesco.org/node/3079735"
+  ],
+  "referenceNote": "Official scope and UNESCO diversity definition checked. All institutions, communities and data invented; no stereotyped real groups, copied figures, external student resources or independent human review claims.",
+  "questions": [
+    {
+      "questionId": "hug-3-3-001",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "S-language demand is relatively greater in the south, while both languages have users in every district.",
+      "independentReview": "Computed S complements20/30/80/90 from R80/70/20/10. Every category is present in each district; relative demand differs but absolute demand needs population denominators.",
+      "check": {
+        "type": "cultural-language-services"
+      },
+      "questionSha256": "b9ba9942da79eefcbe2e7cb701d21e3d7bfb879a0aa25f10ded3030c63b17cf8",
+      "stimulusSha256": "49ea0a3f3b0c6c7b6ffdd188e2e9cbbc032d33d4a894a0428758ff145ae37829"
+    },
+    {
+      "questionId": "hug-3-3-002",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Language and religion need not form identical regional patterns; A and B share a language percentage but differ in religion.",
+      "independentReview": "Compared A/B R80 each, X80/20; A/C X80 each, R80/20. Marginal percentages do not determine joint individual membership; matching one trait cannot force matching all others.",
+      "check": {
+        "type": "cultural-crosscutting"
+      },
+      "questionSha256": "876f349b83e7b85eabaacb26375120ac22b09c2df2fef2c630c0101bcf7bbd71",
+      "stimulusSha256": "43896f23c946e3e6cfa8e57e5371de984168d0f61c6806999d5a129276f8f915"
+    },
+    {
+      "questionId": "hug-3-3-003",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Inclusive shared institutions can act as a centripetal force despite cultural differences.",
+      "independentReview": "Read the two communities’ directed representation links to one council and the explicit inclusive-decision condition. Cohesion is a possible integrative role, not proof of complete agreement or cultural sameness.",
+      "check": {
+        "type": "cultural-shared-institution"
+      },
+      "questionSha256": "208984a88b184d755c3f29b90b876d8b12444071eb41b4800e17e2fa98e79734",
+      "stimulusSha256": "8178c6993482d3e9decd6d1677d7c3d085bbf78ebc6fb04cb7f05009d19510b3"
+    },
+    {
+      "questionId": "hug-3-3-004",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Exclusion from a valued place can intensify division; the communities’ difference alone does not make that outcome inevitable.",
+      "independentReview": "Held shared significance constant and introduced unequal access as the specified mechanism. The map establishes a shared boundary-site context, not inevitable conflict or a uniform response from every resident.",
+      "check": {
+        "type": "cultural-contested-site"
+      },
+      "questionSha256": "d1506c32167e8dc0bd54fbdbeb3fb58a2429ad5aa4568511deccbab1a9524e8b",
+      "stimulusSha256": "23a0bc0cc429c12de38515d834acafb8661764b2db9ddebe281d2d3b48aba521"
+    },
+    {
+      "questionId": "hug-3-3-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "The shared language can facilitate connections without necessarily eliminating first-language identities.",
+      "independentReview": "Separated functional second-language use in trade from home-language replacement and religious uniformity. A possible centripetal connection is conditional on interaction, not evidence that all other differences disappear.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "365012770fe45b7cb5c21aeb7898251214de2414933ab2a1691d20edb7718f73"
+    },
+    {
+      "questionId": "hug-3-3-006",
+      "skill": "Spatial Relationships",
+      "difficulty": "foundational",
+      "correctOption": "Placemaking through practices and symbols connected to a sense of place.",
+      "independentReview": "Identified deliberate resident practices and symbolic/material space as the placemaking mechanism. No population process or universal sense of belonging is inferred from the festival alone.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "381d2700edd44d5908b433ccc66b6210e547997e748c0d869a63173f3bb19258"
+    },
+    {
+      "questionId": "hug-3-3-007",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Funding, history and use can differ, so a building’s dimensions are not a count of affiliated residents.",
+      "independentReview": "Distinguished material prominence from affiliation counts; no fixed capacity/adherence ratio is provided. The premise itself contradicts universal size-majority inference without asserting anything about a real religion.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b265fe5da83daa48f59f2fae6ec43b3cffd941d6c0a1258ba1229da0290cf94b"
+    },
+    {
+      "questionId": "hug-3-3-008",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Social institutions, economic opportunities and cultural expectations may jointly shape the pattern.",
+      "independentReview": "Matched the proposed multicausal explanation to childcare, employment and expectations. Avoided biological determinism and ecological inference; the question asks what to test rather than claiming a proven causal effect.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "18da6ee0eceafb79b4afd9f0b1c3a850d9d0d98c3ff4e20e8cbaea57750e3741"
+    },
+    {
+      "questionId": "hug-3-3-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Collect appropriately defined language-use and self-identified ethnic information separately.",
+      "independentReview": "Checked the distinction between a language measure and ethnic self-identification. No ranking of ethnic groups, biological criterion or single fixed identity is imposed.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "47b64e23243d54993231d3ec1c940d9b7001aaf97d649247e8c0157a02ab1b17"
+    },
+    {
+      "questionId": "hug-3-3-010",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "A national representation can simplify or omit the diversity visible at local scales.",
+      "independentReview": "Compared selective national branding with locally differentiated evidence. The inference concerns representation across scales, not a claim that either national belonging or local diversity must be false.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "e82fa565c511b0501323454c518daa7daab44b91c93e97d7dbd4adf172acb26d"
+    },
+    {
+      "questionId": "hug-3-3-011",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Seventy-five percent of surveyed residents support it, but support is not unanimous and the sample alone does not reveal every subgroup’s view.",
+      "independentReview": "Recomputed300/400=.75 and100/400=.25. Missing subgroup denominators prevent equal-rate inference; population generalization also depends on sampling rather than the total count alone.",
+      "check": {
+        "type": "cultural-festival-support",
+        "support": 300,
+        "oppose": 100
+      },
+      "questionSha256": "2fbc847dc5fd1ee04a34e859df02d660f19c64ce271af97a10b101a6bd6b4b56"
+    }
+  ]
+}

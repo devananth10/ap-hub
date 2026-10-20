@@ -2712,7 +2712,7 @@
     "attribution": "Original PrepAtlas schematic and synthetic data",
     "kind": "chart",
     "display": "line",
-    "title": "Changing rather than constant demand growth",
+    "title": "Demand and supply at four steps",
     "description": "Hypothetical demand at steps0–3:10,12,13,13 food units; supply:12,14,16,18. Demand is one unit per resident, with all quantities expressed in the same unit.",
     "caption": "Original hypothetical observations. Constant per-person demand makes changes in demand reflect population-related demand; these are not a forecast or a universal demographic path.",
     "unitLabel": "Food units",
@@ -4043,7 +4043,7 @@
     "hypothetical": true,
     "attribution": "Original PrepAtlas schematic and synthetic data",
     "kind": "table",
-    "title": "Uses not captured by permanent-house counts",
+    "title": "Seasonal practices and permanent buildings",
     "description": "Hypothetical Indigenous community field notes document shared use of a grazing area with no permanent houses.",
     "caption": "Original scenario; documenting cultural uses is distinct from making a legal ownership determination. No real community’s practices are represented.",
     "headers": [
@@ -4066,6 +4066,430 @@
       [
         "Buildings",
         "No permanent houses"
+      ]
+    ]
+  },
+  "hug-3-3-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "Preferred service language across districts",
+    "description": "Hypothetical R-language preference NW80%, NE70%, SW20%, SE10%. Each respondent prefers either R or S, so S is the complement. District population totals are not supplied.",
+    "caption": "Original two-category service survey, not a measure of religion, ethnicity or complete cultural identity. Both preferences occur in every district.",
+    "unitLabel": "Respondents preferring R (%)",
+    "regions": [
+      {
+        "label": "NW",
+        "value": 80,
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            0,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "NE",
+        "value": 70,
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            50,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "SW",
+        "value": 20,
+        "polygon": [
+          [
+            0,
+            30
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "SE",
+        "value": 10,
+        "polygon": [
+          [
+            50,
+            30
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ],
+    "bins": [
+      {
+        "min": 0,
+        "max": 50,
+        "label": "Under 50%"
+      },
+      {
+        "min": 50,
+        "max": 101,
+        "label": "50–100%"
+      }
+    ]
+  },
+  "hug-3-3-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Two cultural measures across four districts",
+    "description": "Hypothetical district percentages: A R80/X80, B R80/X20, C R20/X80, D R20/X20. R is a language preference and X a religious affiliation.",
+    "caption": "Columns are separate population percentages, not mutually exclusive categories or individual joint-membership records. No ethnic variable is measured.",
+    "headers": [
+      "District",
+      "R preference (%)",
+      "X affiliation (%)"
+    ],
+    "rows": [
+      [
+        "A",
+        "80",
+        "80"
+      ],
+      [
+        "B",
+        "80",
+        "20"
+      ],
+      [
+        "C",
+        "20",
+        "80"
+      ],
+      [
+        "D",
+        "20",
+        "20"
+      ]
+    ]
+  },
+  "hug-3-3-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "model",
+    "title": "Two communities in one shared institution",
+    "description": "Hypothetical R- and S-language communities each send representatives to a shared council. Decisions include representatives from both.",
+    "caption": "Original institutional schematic; participation does not prove unanimous opinion or the disappearance of cultural differences.",
+    "assumptions": "Both communities are represented in the council; arrows denote participation, not migration counts.",
+    "nodes": [
+      {
+        "label": "R community",
+        "x": 15,
+        "y": 15,
+        "labelPosition": "above"
+      },
+      {
+        "label": "S community",
+        "x": 85,
+        "y": 15,
+        "labelPosition": "above"
+      },
+      {
+        "label": "Shared council",
+        "x": 50,
+        "y": 45
+      }
+    ],
+    "edges": [
+      {
+        "from": "R community",
+        "to": "Shared council",
+        "label": "Representatives"
+      },
+      {
+        "from": "S community",
+        "to": "Shared council",
+        "label": "Representatives"
+      }
+    ]
+  },
+  "hug-3-3-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "A valued site and unequal access",
+    "description": "Hypothetical West and East communities both traditionally visit a site on their shared boundary. A new rule permits West residents but excludes East residents.",
+    "caption": "Original access scenario. The boundary is between communities, not a claim about a real state or sacred place. Cultural difference alone does not establish inevitable conflict.",
+    "unitLabel": "Shared site with a newly unequal access rule",
+    "regions": [
+      {
+        "label": "West",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "East",
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "Shared site",
+        "x": 50,
+        "y": 15,
+        "labelAlign": "middle"
+      }
+    ]
+  },
+  "hug-3-4-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "Neighbor contacts and adoption days",
+    "description": "Hypothetical settlements A,B,C,D occupy successive neighboring positions. Parentheses give adoption day:A0,B1,C2,D3. Residents remain in place; records document daily learning only between successive neighbors.",
+    "caption": "Original schematic with supplied contact records. Timing and proximity alone would not prove the mechanism without those records.",
+    "unitLabel": "Parentheses = adoption day; no residential moves",
+    "regions": [
+      {
+        "label": "Study area",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "A",
+        "x": 15,
+        "y": 15,
+        "value": 0,
+        "labelAlign": "middle"
+      },
+      {
+        "label": "B",
+        "x": 40,
+        "y": 15,
+        "value": 1,
+        "labelAlign": "middle"
+      },
+      {
+        "label": "C",
+        "x": 65,
+        "y": 15,
+        "value": 2,
+        "labelAlign": "middle"
+      },
+      {
+        "label": "D",
+        "x": 90,
+        "y": 15,
+        "value": 3,
+        "labelAlign": "middle"
+      }
+    ]
+  },
+  "hug-3-4-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "model",
+    "title": "Transmission through organizational levels",
+    "description": "Hypothetical capital office adopts first, regional hubs receive the practice on day1, and smaller branches on day4. Some branches are physically closer to the capital than the hubs but adopt later.",
+    "caption": "Original network; arrows record organizational transmission rather than migration. Node positions are schematic, not physical distances.",
+    "assumptions": "The organization documents transmission through capital, hub and branch levels; distance alone does not determine the order.",
+    "nodes": [
+      {
+        "label": "Capital office",
+        "x": 50,
+        "y": 5,
+        "labelPosition": "above"
+      },
+      {
+        "label": "West hub",
+        "x": 20,
+        "y": 30,
+        "labelPosition": "left"
+      },
+      {
+        "label": "East hub",
+        "x": 80,
+        "y": 30,
+        "labelPosition": "right"
+      },
+      {
+        "label": "Branch",
+        "x": 50,
+        "y": 55,
+        "labelPosition": "below"
+      }
+    ],
+    "edges": [
+      {
+        "from": "Capital office",
+        "to": "West hub",
+        "label": "Day 1"
+      },
+      {
+        "from": "Capital office",
+        "to": "East hub",
+        "label": "Day 1"
+      },
+      {
+        "from": "West hub",
+        "to": "Branch",
+        "label": "Day 4"
+      },
+      {
+        "from": "East hub",
+        "to": "Branch",
+        "label": "Day 4"
+      }
+    ]
+  },
+  "hug-3-4-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "A borrowed idea with a modified expression",
+    "description": "Hypothetical travelers demonstrate a portable filled-bread idea; recipients learn it and change ingredients for local preferences.",
+    "caption": "Original invented food example. Direct demonstration is supplied; no real cuisine, creator lesson or named community is represented.",
+    "headers": [
+      "Element",
+      "Demonstrated form",
+      "Recipient form"
+    ],
+    "rows": [
+      [
+        "Underlying idea",
+        "Portable filled-bread wrap",
+        "Portable filled-bread wrap"
+      ],
+      [
+        "Filling",
+        "Roasted meat",
+        "Beans"
+      ],
+      [
+        "Seasoning",
+        "Herb mixture",
+        "Local spice mixture"
+      ]
+    ]
+  },
+  "hug-3-4-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Practitioners before and after a residential move",
+    "description": "Hypothetical before:Origin100 practitioners,Destination0. After20 permanently move and retain the practice:Origin80,Destination20. No one else adopts or abandons it.",
+    "caption": "Comparable residence counts, no births/deaths or duplicate counting. The stated migration mechanism matters; equal combined totals alone would not prove relocation.",
+    "headers": [
+      "Period",
+      "Origin",
+      "Destination"
+    ],
+    "rows": [
+      [
+        "Before",
+        "100",
+        "0"
+      ],
+      [
+        "After",
+        "80",
+        "20"
       ]
     ]
   }
