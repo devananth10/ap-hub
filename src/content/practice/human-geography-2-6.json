@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 2,
+  "topicId": "topic-2-6",
+  "questions": [
+    {
+      "id": "hug-2-6-001",
+      "prompt": "In the stylized projection, at which displayed step does population-related food demand first EXCEED food supply?",
+      "options": [
+        "Step 0",
+        "Step 1",
+        "Step 2",
+        "Step 3"
+      ],
+      "correctIndex": 3,
+      "explanation": "The comparison must use both lines at the same step. Demand is below supply at steps 0 and 1, equals supply at step 2, and exceeds it at step 3. This illustrates the tension in a simplified Malthusian projection when demand doubles each step while supply gains a fixed amount. It is an assumption-based exercise, not a forecast of an actual country. A: Demand 2 is below supply 4. B: Demand 4 is below supply 6. C: Demand and supply are both 8, so this is equality rather than an excess. D: Demand 16 exceeds supply 10; this is the first displayed strict excess."
+    },
+    {
+      "id": "hug-2-6-002",
+      "prompt": "Which critique of a fixed food-supply growth assumption is best supported by the hypothetical farming table?",
+      "options": [
+        "Yield improvements can increase food output without increasing cultivated area.",
+        "Food output must remain fixed whenever cultivated area remains fixed.",
+        "The population increase necessarily reduced output per resident in these observations.",
+        "The table establishes that future yield growth has no environmental or technical limits."
+      ],
+      "correctIndex": 0,
+      "explanation": "Harvest doubles from 1,000 to 2,000 units on the same 100 hectares because yield doubles. Population rises from 1,000 to 1,500, so output per resident rises from 1 to about 1.33 units. The evidence challenges a rigid supply-growth assumption; it does not establish that every future technological change succeeds or that resources are unlimited. A: This follows from area multiplied by yield and identifies the changing productivity assumption. B: Fixed area does not imply fixed output when yield per hectare changes. C: Population grows 50% while output grows 100%, so output per resident increases. D: Two observations cannot establish limitless future growth or the absence of costs."
+    },
+    {
+      "id": "hug-2-6-003",
+      "prompt": "Each resident requires one food unit for the period. With no transfers between the two districts, which conclusion follows from the map and its population counts?",
+      "options": [
+        "Both districts meet their requirement because the combined total is sufficient.",
+        "West has the lower available food per resident because its population is larger.",
+        "East has a food deficit despite sufficient combined food for both districts.",
+        "The circle radii show that West has exactly ten times East’s population."
+      ],
+      "correctIndex": 2,
+      "explanation": "West has 2,000 available units for 1,000 residents, while East has 100 for 500. The combined 2,100 units exceed the combined requirement of 1,500, yet East is 400 units short under the stated no-transfer condition. Aggregate food quantity therefore does not by itself establish adequate food availability in every place. The circles encode food per resident, not population totals. A: The aggregate surplus does not move food to East when transfers are excluded. B: West has 2 units per resident compared with East’s 0.2, irrespective of the larger population count. C: This distinguishes the regional shortfall from the sufficient aggregate supply. D: Circle areas represent the 10:1 food-per-resident ratio; population counts have a 2:1 ratio, and radii are not proportional to the values."
+    },
+    {
+      "id": "hug-2-6-004",
+      "prompt": "Which assumption of a simple Malthusian projection is most directly challenged by the demand trajectory shown here?",
+      "options": [
+        "Food supply must decline at every step.",
+        "Population-related demand continues to grow by a constant proportion indefinitely.",
+        "Demand must exceed supply whenever either line rises.",
+        "A falling increment in demand means that total demand is already falling."
+      ],
+      "correctIndex": 1,
+      "explanation": "Demand rises by 2 units, then 1, then 0. Under the stated constant one-unit demand per resident, this trajectory is inconsistent with indefinite growth at one fixed positive proportional rate. It illustrates why changing demographic behavior matters to a projection. It does not prove that all future resource constraints disappear. A: Supply rises from 12 to 18; a required supply decline is neither shown nor the relevant assumption. B: The changing increments and eventual plateau contradict fixed positive geometric growth of demand. C: Demand remains below supply at every displayed step, despite earlier increases. D: Smaller positive increments still increase the total; only the last increment is zero."
+    },
+    {
+      "id": "hug-2-6-005",
+      "prompt": "Which pair of assumptions produces the classic population–food tension in a simplified Malthusian model?",
+      "options": [
+        "Population and food output increase at the same fixed percentage indefinitely.",
+        "Unchecked population grows multiplicatively while food output increases by fixed amounts.",
+        "Food output grows multiplicatively while population increases by fixed amounts.",
+        "Population remains fixed while food output rises at an accelerating rate."
+      ],
+      "correctIndex": 1,
+      "explanation": "The classic contrast is geometric population growth against arithmetic growth of subsistence. Under those stylized assumptions, repeated multiplication can eventually outpace repeated addition. The point is the relationship between assumed growth processes, not a claim that actual populations and technologies must follow those paths forever. A: Equal proportional growth preserves their ratio instead of generating the classic divergence. B: This states the geometric-versus-arithmetic contrast underlying the simplified argument. C: This reverses the growth processes assigned to population and subsistence. D: A fixed population with accelerating food output does not produce this particular pressure mechanism."
+    },
+    {
+      "id": "hug-2-6-006",
+      "prompt": "In a historical application of Malthus’s preventive-check concept, which change acts primarily by reducing births rather than increasing deaths?",
+      "options": [
+        "A crop failure raises famine mortality.",
+        "An epidemic increases deaths across several settlements.",
+        "A war increases the number of premature deaths.",
+        "Later marriage delays childbearing and reduces births during the period."
+      ],
+      "correctIndex": 3,
+      "explanation": "A preventive check limits births rather than raising mortality. Later marriage and delayed childbearing fit that distinction in this historical model. Malthus’s use of preventive and positive describes how population growth is checked; it should not be read as a modern endorsement of every policy or event discussed. A: Famine mortality acts through deaths and is a positive check in the model’s terminology. B: An epidemic increasing deaths also acts through mortality. C: War-related deaths are a mortality check rather than the preventive mechanism described. D: This acts through the timing and number of births, making it the preventive example among these choices."
+    },
+    {
+      "id": "hug-2-6-007",
+      "prompt": "A historian describes a famine as a “positive check” in Malthusian terminology. What does that wording mean in the model?",
+      "options": [
+        "The famine raises mortality and thereby limits population growth.",
+        "The famine is morally beneficial and should be promoted.",
+        "The famine increases births enough to restore the food balance.",
+        "The famine prevents births without changing mortality."
+      ],
+      "correctIndex": 0,
+      "explanation": "In this terminology, a positive check operates through increased deaths. The adjective identifies a demographic mechanism, not a favorable moral judgment. A famine can also have other social and demographic consequences, but the mortality channel is what makes the specified event a positive check in the model. A: This identifies the mortality mechanism without endorsing suffering. B: The technical label does not establish that the event is beneficial or desirable. C: Increased births are not the mechanism designated by a positive check. D: Limiting births is the preventive-check distinction, whereas this example explicitly concerns mortality."
+    },
+    {
+      "id": "hug-2-6-008",
+      "prompt": "In a hypothetical farming region, population pressure is followed by investment in irrigation, more intensive cultivation and higher yields. Which interpretation most closely reflects Boserup’s critique of a rigid Malthusian projection?",
+      "options": [
+        "Population pressure guarantees unlimited yield growth in every environment.",
+        "Cultivation techniques cannot respond to changes in population density.",
+        "Population pressure can stimulate agricultural innovation and intensification.",
+        "Any rise in yield proves that population growth has no social or environmental costs."
+      ],
+      "correctIndex": 2,
+      "explanation": "Boserup emphasized that population pressure can induce changes in agricultural techniques and intensity. The scenario supplies an example of such a response rather than treating food production as technologically fixed. This possibility does not guarantee successful innovation everywhere, unlimited resources or the absence of labor and environmental costs. A: The argument allows an induced response; it does not guarantee limitless productivity in every place. B: The observed investments and yield changes directly contradict a completely fixed technique assumption. C: This captures the conditional response of agricultural systems to population pressure. D: Higher yields alone do not measure all social, labor or environmental consequences."
+    },
+    {
+      "id": "hug-2-6-009",
+      "prompt": "Which argument is most characteristic of a broader neo-Malthusian resource-pressure perspective?",
+      "options": [
+        "Population size alone identifies every household’s access to resources.",
+        "Trade permanently removes all resource limits at every geographic scale.",
+        "A larger population always causes the same environmental impact regardless of consumption.",
+        "Population growth and high per-person consumption can together intensify pressure on limited water and other resources."
+      ],
+      "correctIndex": 3,
+      "explanation": "A broader resource-pressure analysis considers how population and consumption can place demands on finite resources beyond food alone. It need not reduce every local problem to head counts. Consumption patterns, technology, institutions and distribution affect actual outcomes, so the statement is a conditional concern rather than an exact universal impact formula. A: Population totals do not establish household income, rights or access to resources. B: Trade can redistribute resources but does not prove the elimination of all global limits. C: Ignoring per-person consumption erases an important source of variation in total pressure. D: This extends the concern to resource demand while recognizing both population and consumption."
+    },
+    {
+      "id": "hug-2-6-010",
+      "prompt": "A densely populated coastal city imports food from distant agricultural regions. What does this connection imply for evaluating a local Malthusian shortage prediction?",
+      "options": [
+        "The city’s food availability is determined only by farms inside its boundary.",
+        "Trade can expand local availability, while creating dependencies and leaving wider resource constraints to be assessed.",
+        "Imports prove that the world’s food supply has no physical or economic limits.",
+        "A city’s population can be inferred exactly from the distance to its nearest farm."
+      ],
+      "correctIndex": 1,
+      "explanation": "Local population and local agricultural output are not a closed system when food crosses boundaries. Imports can support residents beyond what nearby farms alone would supply. The city may then depend on transport, trade relationships and purchasing power, and the resources of producing regions still matter. Scale and connections change the analysis rather than making constraints irrelevant. A: This incorrectly treats an explicitly trading city as closed to outside supply. B: This incorporates interregional flows and the limits of what imports alone demonstrate. C: Local imports do not establish unlimited global output or universal affordability. D: No fixed relationship between farm distance and exact population is supplied or generally implied."
+    },
+    {
+      "id": "hug-2-6-011",
+      "prompt": "A hypothetical closed food system harvests 1,000 units for 800 residents, each requiring one unit. Losses fall from 300 to 100 units while the harvest is unchanged. Assuming all remaining food reaches residents, which accounting result is correct?",
+      "options": [
+        "Usable food rises from 700 to 900 units, changing a shortfall into a surplus.",
+        "Usable food remains 1,000 units in both periods because harvest is unchanged.",
+        "Usable food falls from 300 to 100 units as losses fall.",
+        "Usable food falls from 1,300 to 1,100 units because losses must be added to harvest."
+      ],
+      "correctIndex": 0,
+      "explanation": "Usable food equals harvest minus losses: initially 1,000−300=700 and later 1,000−100=900. Against a requirement of 800, the balance changes from −100 to +100. This narrow example shows that losses can alter effective availability even without additional harvest. Equal access is explicitly assumed; the calculation is not a claim that all real hunger is resolved by loss reduction. A: Both subtraction results and the change relative to the stated requirement are correct. B: Gross harvest and usable food differ when some of the harvest is lost. C: These are the losses themselves, not the amount left for residents. D: Adding losses incorrectly treats unavailable food as an addition to the harvest."
+    }
+  ]
+}

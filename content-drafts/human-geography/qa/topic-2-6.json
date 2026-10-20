@@ -1,0 +1,152 @@
+{
+  "topicNumber": "2.6",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "35698da3e87ebb74cf0cbaf33fa906c2af33d8fc3398f46fc2f92315ef4c955a",
+  "scopeReview": "IMP-2.B.3: Malthusian theory and critiques. Original stylized arithmetic/geometric model, birth/mortality checks, conditional Boserup response, changing demographic behavior, consumption, trade and distribution. No real-country hunger or deterministic forecasts.",
+  "varietyReview": "Two distinct line-chart tasks, productivity table and first proportional-symbol map; historical terminology, conditional innovation, resource pressure, scale and usable-food accounting. All five skills and varied difficulty/keys.",
+  "repetitionReview": "Supply assumption, first crossing, distribution, changing growth rate, preventive versus mortality mechanisms, and scale address different inferences. Q11 isolates changing losses with fixed harvest rather than repeating2.2 population×consumption. No numeric-only duplicates of earlier questions.",
+  "researchReferences": [
+    "https://www.econlib.org/library/Malthus/malPlong.html?chapter_num=3",
+    "https://www.routledge.com/Conditions-of-Agricultural-Growth-1st-Edition/Boserup/p/book/9780415312981",
+    "https://www.ifpri.org/event/boserup-and-beyond/"
+  ],
+  "referenceNote": "Development verification of historical theory and conditional critiques only. Original synthetic data, questions and figures; no third-party resource added to the student catalog; no independent human review claimed.",
+  "questions": [
+    {
+      "questionId": "hug-2-6-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Step 3",
+      "independentReview": "Independently compared demand minus supply: −2, −2, 0, 6. Demand ratios are all 2 and supply increments all 2. Step 3 is uniquely first with a positive difference; equality at step 2 is not a shortage.",
+      "check": {
+        "type": "malthus-crossing"
+      },
+      "questionSha256": "953e1a231bba11b008b47802cdec966e6c154eece5775fc36a14e3de8eb107af",
+      "stimulusSha256": "a8e06bd2d8a1549b12affd136381ee9a5eb0820337ae8eb31c17e08d060f8fe8"
+    },
+    {
+      "questionId": "hug-2-6-002",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Yield improvements can increase food output without increasing cultivated area.",
+      "independentReview": "Recomputed 100×10=1000 and 100×20=2000; divided by populations 1000 and 1500 to obtain 1 and 4/3. The inference is conditional productivity change, not guaranteed endless innovation.",
+      "check": {
+        "type": "malthus-yield"
+      },
+      "questionSha256": "014fe0778e86c3a6b4bc0519e1f8be9d5e3ead1225dc43d8345a73cfd875c8ff",
+      "stimulusSha256": "a7861c68af3186a43fab311acb3dfa4c84bf0c207097ac103272c92f842a3519"
+    },
+    {
+      "questionId": "hug-2-6-003",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "East has a food deficit despite sufficient combined food for both districts.",
+      "independentReview": "Weighted per-resident supply by each district population: 2×1000+0.2×500=2100. Total requirement=1500; East requires500 but has100. Independently checked symbol area ratio2/0.2=10, radius ratio√10.",
+      "check": {
+        "type": "malthus-distribution",
+        "populations": [
+          1000,
+          500
+        ]
+      },
+      "questionSha256": "6319ea875752cde0b5b9c29bf0144dd93b1e0ebceebbb5a1b2fa1893930eaa70",
+      "stimulusSha256": "ecd6d8b3affe364882b6c1fcc76350010f0661f0e288faf407daaac1ad61a179"
+    },
+    {
+      "questionId": "hug-2-6-004",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Population-related demand continues to grow by a constant proportion indefinitely.",
+      "independentReview": "Computed demand differences 2,1,0 and ratios 1.2,13/12,1 rather than a constant positive growth factor. Supply remains above demand at all four steps. Interpretation depends on the explicit constant per-person demand assumption.",
+      "check": {
+        "type": "malthus-changing-growth"
+      },
+      "questionSha256": "9ca339b86228160aed2ae01da7c08b3eb34f815eaa57c097e338bf981997ca9d",
+      "stimulusSha256": "1ecba2219c7c0ab3d911a0b5636274e3d182f2318ada6d479c848f7f46d2bad4"
+    },
+    {
+      "questionId": "hug-2-6-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Unchecked population grows multiplicatively while food output increases by fixed amounts.",
+      "independentReview": "Verified the qualitative growth-process contrast against the primary Malthus text: multiplicative unchecked population versus arithmetic subsistence. Conditional model assumptions are distinct from measured universal laws.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "5745c1654301218e8b4f7cfbe4ef494d770165d27e2b6af2331559d40beec3cc"
+    },
+    {
+      "questionId": "hug-2-6-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Later marriage delays childbearing and reduces births during the period.",
+      "independentReview": "Classified each scenario by its demographic channel, not its desirability: A–C increase deaths; D delays/reduces births. Avoided attributing modern contraceptive advocacy to Malthus’s original argument.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "bc0832a9550d8bbcd89b5b512af05de6251075a9f5b92205e9b495b5bbe605a7"
+    },
+    {
+      "questionId": "hug-2-6-007",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The famine raises mortality and thereby limits population growth.",
+      "independentReview": "Separated technical historical terminology from normative approval. Positive checks refer to mortality-increasing pressures; preventive checks act on births. No claim that every consequence of famine is captured by this single channel.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "efec5e7105100ec16a3a64f0cd0276e40de5df84cef0d7ff9fd00196d288a4ea"
+    },
+    {
+      "questionId": "hug-2-6-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Population pressure can stimulate agricultural innovation and intensification.",
+      "independentReview": "Checked the direction of the Boserup mechanism: population pressure can induce intensification/innovation, subject to conditions and costs. The hypothetical response is evidence against a rigid technology assumption, not proof of inevitable success.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "0d9bb35c461d0264c5dc7387ebffb86100ab107e4b4f58d468e7af9e748cef91"
+    },
+    {
+      "questionId": "hug-2-6-009",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Population growth and high per-person consumption can together intensify pressure on limited water and other resources.",
+      "independentReview": "Distinguished broader neo-Malthusian resource-pressure concerns from a food-only projection. Checked that the correct conditional statement includes consumption and does not assert identical impacts or population-only causation.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "1a754102ebfc3422b3c5170cf430cee890fa73676e25d8477a69d435ec2cef88"
+    },
+    {
+      "questionId": "hug-2-6-010",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "Trade can expand local availability, while creating dependencies and leaving wider resource constraints to be assessed.",
+      "independentReview": "Tested the boundary assumption: imports add to local supply, so local farmland alone is insufficient to infer shortage. The conclusion remains conditional on functioning connections and does not extrapolate local trade to infinite global capacity.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "4e14f76df6d8be66834afa2d52bd0188e99f9c57028fd26988ed69ab9197ee71"
+    },
+    {
+      "questionId": "hug-2-6-011",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Usable food rises from 700 to 900 units, changing a shortfall into a surplus.",
+      "independentReview": "Independently computed usable quantities700/900 and balances−100/+100 relative to800 units required. Held harvest/population constant and access explicit, isolating losses rather than repeating a population-times-consumption comparison.",
+      "check": {
+        "type": "malthus-food-loss",
+        "harvest": 1000,
+        "losses": [
+          300,
+          100
+        ],
+        "requirement": 800
+      },
+      "questionSha256": "40569b70d68db3e37f278b3ac601870de955d036eed7fa3a8f91de68a0316326"
+    }
+  ]
+}

@@ -52,6 +52,7 @@ export function validateGeographyStimulus(stimulus: GeographyStimulus) {
   } else if (stimulus.kind === "chart") {
     if (!finite(stimulus.max) || stimulus.max <= 0 || !stimulus.unitLabel || !stimulus.categories.length || !stimulus.series.length || stimulus.series.length > 3) fail("invalid chart axes");
     if (stimulus.display !== undefined && !["bar","line"].includes(stimulus.display) || stimulus.display === "line" && stimulus.categories.length < 2) fail("invalid chart display or line categories");
+    if (stimulus.display === "line" && stimulus.series.length > 2) fail("line charts support at most two series");
     for (const series of stimulus.series) if (!series.label || series.values.length !== stimulus.categories.length || !series.values.every(n => finite(n) && n >= 0 && n <= stimulus.max)) fail("chart data outside axis");
   } else if (stimulus.kind === "pyramid") {
     if (!finite(stimulus.max) || stimulus.max <= 0 || !stimulus.unitLabel || stimulus.cohorts.length < 3) fail("invalid pyramid axis/cohorts");

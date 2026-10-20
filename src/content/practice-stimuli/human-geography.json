@@ -2568,5 +2568,180 @@
         "400"
       ]
     ]
+  },
+  "hug-2-6-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "display": "line",
+    "title": "Contrasting assumed growth processes",
+    "description": "Hypothetical food-unit demand at steps0–3:2,4,8,16 million; supply:4,6,8,10 million. Solid circles show demand; dashed squares show supply.",
+    "caption": "Original stylized projection, not real observations. Demand is one food unit per resident. Equal conceptual steps use a doubling of demand and a fixed supply increment; no innovation or trade is assumed.",
+    "unitLabel": "Millions of food units",
+    "categories": [
+      "Step 0",
+      "Step 1",
+      "Step 2",
+      "Step 3"
+    ],
+    "series": [
+      {
+        "label": "Demand",
+        "values": [
+          2,
+          4,
+          8,
+          16
+        ]
+      },
+      {
+        "label": "Supply",
+        "values": [
+          4,
+          6,
+          8,
+          10
+        ]
+      }
+    ],
+    "max": 20
+  },
+  "hug-2-6-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Productivity on a fixed cultivated area",
+    "description": "Hypothetical earlier period:100 hectares,10 food units/hectare,1000 units harvest,1000 residents. Later:100 hectares,20 units/hectare,2000 harvest,1500 residents.",
+    "caption": "Synthetic observations with comparable harvest periods. Total harvest equals cultivated area times yield. No claim about future rates or production costs is supplied.",
+    "headers": [
+      "Period",
+      "Area (ha)",
+      "Yield (units/ha)",
+      "Harvest (units)",
+      "Residents"
+    ],
+    "rows": [
+      [
+        "Earlier",
+        "100",
+        "10",
+        "1000",
+        "1000"
+      ],
+      [
+        "Later",
+        "100",
+        "20",
+        "2000",
+        "1500"
+      ]
+    ]
+  },
+  "hug-2-6-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "proportional",
+    "title": "Food availability and district populations",
+    "description": "Two hypothetical districts: West1000 residents with2 available food units per resident; East500 residents with0.2. Circle areas, not radii, encode available food per resident.",
+    "caption": "West:1000 residents; East:500. Each person requires1 unit for this period. No transfers between districts. Circle areas are proportional to food per resident, not population. Schematic boundaries are not to scale.",
+    "unitLabel": "Circle area = available food units per resident",
+    "regions": [
+      {
+        "label": "West",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "East",
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "2 units/person",
+        "x": 25,
+        "y": 15,
+        "value": 2,
+        "labelAlign": "middle"
+      },
+      {
+        "label": "0.2 units/person",
+        "x": 75,
+        "y": 15,
+        "value": 0.2,
+        "labelAlign": "middle"
+      }
+    ]
+  },
+  "hug-2-6-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "display": "line",
+    "title": "Changing rather than constant demand growth",
+    "description": "Hypothetical demand at steps0–3:10,12,13,13 food units; supply:12,14,16,18. Demand is one unit per resident, with all quantities expressed in the same unit.",
+    "caption": "Original hypothetical observations. Constant per-person demand makes changes in demand reflect population-related demand; these are not a forecast or a universal demographic path.",
+    "unitLabel": "Food units",
+    "categories": [
+      "Step 0",
+      "Step 1",
+      "Step 2",
+      "Step 3"
+    ],
+    "series": [
+      {
+        "label": "Demand",
+        "values": [
+          10,
+          12,
+          13,
+          13
+        ]
+      },
+      {
+        "label": "Supply",
+        "values": [
+          12,
+          14,
+          16,
+          18
+        ]
+      }
+    ],
+    "max": 20
   }
 }

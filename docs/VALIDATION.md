@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topic 2.6 — Malthusian theory and critiques
+
+143 MCQs across thirteen topics are published;52 meaningful stimuli (36.36%) and57 explicit numerical/geometry checks. New evidence includes crossing demand/supply lines, changing growth rates, a productivity table and the first proportional-symbol map. Circle areas, not radii, encode food per resident. Independent accounting distinguishes sufficient aggregate food from East's400-unit deficit without transfers, and gross harvest from usable food after losses. Historical checks do not label mortality as morally beneficial or attribute modern contraceptive advocacy to Malthus.
+
+All137 automated tests, TypeScript, production build, all68 Geography scopes and standard smoke routes passed. Every new answer was graded in a complete browser session for11/11. All four actual stimuli were inspected at390×844; map light/dark desktop contrast and100–200% keyboard zoom passed. Line labels now separate crossing series; line charts deliberately support at most two series, while bars retain three. Existing published questions, video catalog and browser storage were preserved. Automated verification is not independent human review. Next topic2.7; the full bank remains unfinished.
+
 ## Human Geography Topic 2.5 and reusable line charts
 
 132 MCQs across twelve topics are published, with48 meaningful stimuli (36.36%). Topic2.5 adds an original four-stage DTM line schematic, rate-level comparison, subnational fertility map and mortality-cause table. The line renderer uses solid/circle and dashed/square series, numeric labels, a common zero baseline and a full equivalent data table. Categorical stage spacing is explicitly not equal-duration historical time. Browser inspection found a label touching the vertical axis; inward point margins corrected it. All eleven answers produced11/11, and mobile390×844 visuals, light/dark contrast,100–200% keyboard zoom and graded-review enlargement passed. All136 automated tests,52 explicit bank models, TypeScript/build and Geography/standard routes passed. Research sources and limits are recorded in the QA sidecar; no new third-party student resources were published. Next2.6;56 topics/616 questions remain.
