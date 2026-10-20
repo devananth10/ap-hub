@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 4,
+  "topicId": "topic-4-1",
+  "questions": [
+    {
+      "id": "hug-4-1-001",
+      "prompt": "The dots mark settlements of one self-identified nation R on both sides of an international boundary. What relationship is most directly shown?",
+      "options": [
+        "One multinational state containing all R settlements.",
+        "A nation-state whose boundaries coincide with all R settlements.",
+        "An autonomous region that has replaced the international boundary.",
+        "A multistate nation whose members live in more than one independent state."
+      ],
+      "correctIndex": 3,
+      "explanation": "A multistate nation extends across the territory of multiple independent states. The map locates R settlements in both A and B. It does not depict one state containing them all, establish an autonomous government, or show that the nation’s distribution coincides with either state boundary. A: A and B are explicitly independent states separated by an international boundary. B: R occurs in both states, so neither boundary encloses the whole mapped distribution. C: The map records settlements and an international border, not a new regional government. D: This matches one national group distributed across more than one state."
+    },
+    {
+      "id": "hug-4-1-002",
+      "prompt": "Which entity in the table best fits an independent state rather than a subnational government or a cultural community?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correctIndex": 0,
+      "explanation": "Entity A is described as governing a permanent population within a territory and possessing independent external authority. B is a province whose external affairs remain with a larger state; C is a cultural community without a territorial government; D is a voluntary association rather than a sovereign territorial polity. These supplied distinctions identify A. A: A has the territorial population, government and external independence described in the question. B: B has governmental functions but remains within another state’s authority. C: A shared cultural identity alone does not establish an independent state. D: Cooperation among members does not by itself create an independent territorial state."
+    },
+    {
+      "id": "hug-4-1-003",
+      "prompt": "State P is one independent state. Its residents identify with nations R and S as shown, and both groups sustain distinct national institutions. Which description best fits P?",
+      "options": [
+        "A multistate nation, because the bars represent two nations within one state.",
+        "A multinational state, because more than one nation is present within its territory.",
+        "Two independent states, because there are two national identity categories.",
+        "A stateless nation, because P has a smaller S population."
+      ],
+      "correctIndex": 1,
+      "explanation": "A multinational state contains more than one nation within one independent state. Here R and S are explicitly identified as national communities with distinct institutions. Their unequal population sizes do not create a second independent state or turn the state itself into a nation lacking a state. A: Multistate refers to one nation extending across several states, not two nations in one state. B: This uses the supplied national identities and the single independent state. C: Cultural categories do not independently establish sovereign governments. D: A minority share alone neither defines P as a nation nor establishes statelessness of S."
+    },
+    {
+      "id": "hug-4-1-004",
+      "prompt": "Region R controls specified local matters, but the outer territory P remains one independent state and retains external affairs. How should the internal line be interpreted?",
+      "options": [
+        "An international frontier separating two independent states.",
+        "A cultural boundary that necessarily separates two unrelated language families.",
+        "A boundary of a self-governing subnational region rather than evidence of full external independence.",
+        "A former boundary with no present governmental function."
+      ],
+      "correctIndex": 2,
+      "explanation": "Autonomy can allocate certain governing powers to a region while it remains within an independent state. The described internal boundary marks the extent of R’s self-government. It is not an international frontier merely because R has institutions, nor is its cultural composition specified. A: The premise explicitly retains one independent state, P. B: No language-family distribution is provided. C: This distinguishes bounded regional authority from independent external statehood. D: The line still identifies where specified regional powers apply."
+    },
+    {
+      "id": "hug-4-1-005",
+      "prompt": "Greenland has self-government under an arrangement within the Kingdom of Denmark, while the constitutional framework reserves key matters including defense at the Realm level. What does this illustrate?",
+      "options": [
+        "Any separate elected government is necessarily an independent state.",
+        "An autonomous political entity can exercise substantial local authority without being a separate independent state.",
+        "Cultural identity and external sovereignty are interchangeable concepts.",
+        "Autonomy requires that a region have no legislative institutions."
+      ],
+      "correctIndex": 1,
+      "explanation": "Greenland’s self-government arrangement provides an example of substantial regional authority within a larger sovereign framework. Governing many local matters does not automatically make a territory an independent state. The allocation of specific powers matters more than whether it has a separate name or elected institutions. A: Separate regional institutions can exist within a larger state. B: This captures the coexistence of self-government and the stated Realm-level responsibilities. C: A cultural community’s identity is not the same as its external constitutional status. D: The premise explicitly describes self-governing institutions."
+    },
+    {
+      "id": "hug-4-1-006",
+      "prompt": "The U.S. Bureau of Indian Affairs describes federally recognized tribes as retaining inherent powers of self-government. Which geographic interpretation best avoids treating them as either ordinary clubs or fully independent foreign countries?",
+      "options": [
+        "They are voluntary cultural clubs with no governmental authority.",
+        "Their governmental powers make each reservation an independent foreign state in every respect.",
+        "A reservation boundary implies all residents have an identical culture and legal status.",
+        "Tribal nations can possess distinct governmental authority within the U.S. political framework."
+      ],
+      "correctIndex": 3,
+      "explanation": "Federally recognized tribal nations have a government-to-government relationship with the United States and retain inherent self-governing powers. Their status differs from a private association and from full external independence as a foreign country. Jurisdictions and reservation populations are complex and are not reduced to a single cultural category. A: This disregards the governmental authority explicitly described. B: Tribal sovereignty within the U.S. framework is not identical to full foreign-state independence. C: A jurisdictional boundary does not establish identical identity or status for every resident. D: This recognizes distinct authority while preserving the larger political context."
+    },
+    {
+      "id": "hug-4-1-007",
+      "prompt": "In an idealized example, the territory of independent State T closely coincides with the homeland and distribution of nation T. Which term most specifically describes that alignment?",
+      "options": [
+        "Nation-state",
+        "Multistate nation",
+        "Supranational organization",
+        "Stateless nation"
+      ],
+      "correctIndex": 0,
+      "explanation": "A nation-state describes close alignment between a nation and a sovereign state’s territory. This is an idealized political-geographic model, not a requirement of biological uniformity or proof that minorities and diverse identities are absent. The prompt supplies the relevant territorial alignment. A: This is the term for the stated close nation–state alignment. B: A multistate nation extends across multiple states, unlike the supplied alignment. C: No organization of several states is described. D: The nation is associated with its own independent state in the example."
+    },
+    {
+      "id": "hug-4-1-008",
+      "prompt": "A national community has a shared political identity but no independent state of its own. Many members are citizens of the states where they live. Which statement uses “stateless nation” accurately?",
+      "options": [
+        "Every member necessarily lacks any legal citizenship.",
+        "The community has no shared identity because it lacks a state.",
+        "The nation lacks its own independent state; that does not mean each person lacks citizenship.",
+        "Each member’s citizenship creates a separate sovereign state."
+      ],
+      "correctIndex": 2,
+      "explanation": "In political geography, a stateless nation is a national community without its own independent state. Individual statelessness, meaning lack of nationality under relevant states’ laws, is a different concept. A person can belong to such a nation while holding citizenship in an existing state. A: This conflates collective political status with individual citizenship status. B: The premise explicitly supplies a shared national identity. C: This separates the two meanings and matches the supplied situation. D: Citizenship identifies a relationship to a state, not creation of a new state by each citizen."
+    },
+    {
+      "id": "hug-4-1-009",
+      "prompt": "A world political map outlines the United States as one country, while a domestic map outlines its fifty states. What explains the different uses of “state”?",
+      "options": [
+        "The domestic map must show fifty independent countries.",
+        "The term can refer to an independent country or to a subnational unit, depending on scale and context.",
+        "The world map establishes that domestic administrative boundaries do not exist.",
+        "Every line on both maps has the same external diplomatic significance."
+      ],
+      "correctIndex": 1,
+      "explanation": "Independent states form the usual country-level units of a world political map. The same English word also names constituent units within countries, including U.S. states. Map scale and constitutional context are needed to distinguish international borders from internal political boundaries. A: Constituent U.S. states are not fifty independent countries in this context. B: This identifies the two meanings and explains why both maps can be valid. C: A country-level outline does not deny smaller administrative divisions. D: Internal and international boundaries have different governing roles."
+    },
+    {
+      "id": "hug-4-1-010",
+      "prompt": "A survey finds three home languages within a state. What additional evidence is most important before classifying it specifically as a multinational state?",
+      "options": [
+        "The number of letters in each language’s alphabet.",
+        "The average distance between the three largest cities.",
+        "Whether all languages are printed on one national banknote.",
+        "Whether distinct self-identified national communities exist, rather than assuming language differences alone establish nations."
+      ],
+      "correctIndex": 3,
+      "explanation": "Language can contribute to national identity, but a language difference is not sufficient by itself to establish a separate nation. Classifying a multinational state requires evidence about distinct national communities and their shared identities, histories or political institutions, while recognizing variation within them. A: Alphabet size does not establish national identification. B: Urban distances do not identify whether the speakers form national communities. C: Banknote language choices alone do not establish the number of nations. D: This investigates the defining distinction missing from a language-only survey."
+    },
+    {
+      "id": "hug-4-1-011",
+      "prompt": "Two maps use the same color for all citizens of State A, but one caption calls that color “one nation.” What is the main problem with the caption?",
+      "options": [
+        "Citizenship data alone do not establish that all citizens share one national identity.",
+        "A sovereign state cannot contain citizens with different cultural practices.",
+        "The map must show a new international boundary for each resident.",
+        "A common color makes the territory a supranational organization."
+      ],
+      "correctIndex": 0,
+      "explanation": "Citizenship is a political-legal relationship with a state, while national identity involves a community’s sense of shared belonging. They can overlap without being identical. A citizenship map may accurately show a state’s citizens but cannot, by itself, establish that they all identify as one nation. A: This identifies the unsupported shift from citizenship categories to national identity. B: States can contain substantial cultural and national diversity. C: Different individual identities do not automatically create international borders. D: Map styling alone cannot create an organization of independent states."
+    }
+  ]
+}

@@ -251,3 +251,17 @@ test('diffusion-effect checks preserve continuing practices, combined inputs, sh
   const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
  }
 });
+
+test('political-entity checks keep cross-border nations, external authority, identity shares and internal borders distinct',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-4-1.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-4-1.json','utf8'));
+ for(const [i,change] of [[0,s=>s.dots[4].x=40],[1,s=>s.rows[1][2]='Independent external authority'],[2,s=>s.series[0].values[1]=0],[3,s=>s.regions[1].polygon[0][0]=40]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+
+test('political-process checks preserve independent status, inherited borders, devolved fields and voting denominators',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-4-2.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-4-2.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[1][2]='External colonial power'],[1,s=>s.regions[1].polygon[0][0]=45],[2,s=>s.series[0].values[1]=10],[3,s=>s.rows[0][1]='800']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});

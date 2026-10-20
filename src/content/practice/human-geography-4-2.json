@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 4,
+  "topicId": "topic-4-2",
+  "questions": [
+    {
+      "id": "hug-4-2-001",
+      "prompt": "Which event in the timeline changes K from a colony into an independent state, rather than reallocating authority within an existing state?",
+      "options": [
+        "The 1920 appointment of a colonial governor.",
+        "The 1960 transfer of external and domestic authority to independent K.",
+        "The 1990 creation of a regional legislature within K.",
+        "All three events establish new independent states."
+      ],
+      "correctIndex": 1,
+      "explanation": "The timeline distinguishes colonial administration, national independence and later regional self-government. In 1960 K acquires the external and domestic authority explicitly described as independence. The 1990 change redistributes specified powers within K rather than creating another independent state. A: An appointed external governor maintains the colonial relationship in this record. B: This is the stated transition from external rule to independence. C: The region remains inside K and does not gain independent external authority. D: Different institutional changes have different consequences for sovereignty."
+    },
+    {
+      "id": "hug-4-2-002",
+      "prompt": "The map shows a former colonial administrative line retained as an international boundary at independence. R residents did not move. What political process explains their new cross-border situation?",
+      "options": [
+        "The R population relocated across the line after independence.",
+        "The international boundary must have been drawn to enclose all R settlements in one state.",
+        "The former administrative line lost every governing role when independence occurred.",
+        "A change in the line’s political status can divide an existing national distribution without moving its residents."
+      ],
+      "correctIndex": 3,
+      "explanation": "Political boundaries can acquire new status while populations remain in place. Here the former internal colonial line becomes the border between independent A and B, leaving the existing R settlements on both sides. The supplied chronology identifies inherited boundary arrangements rather than a migration event. A: The premise explicitly states that residents did not move. B: R settlements remain on both sides, so the line does not enclose them in one state. C: The line now marks independent states, giving it a new external governing role. D: This accounts for a changed political relationship with unchanged residence locations."
+    },
+    {
+      "id": "hug-4-2-003",
+      "prompt": "Ten specified policy fields are counted once each. What does the chart indicate about the later distribution of governing responsibilities?",
+      "options": [
+        "Three fields shift from central to regional administration, consistent with devolution rather than independence.",
+        "Seven new independent states appear because seven fields are regionally administered.",
+        "The number of counted policy fields increases from 10 to 20.",
+        "The central government gains three regional fields in the later period."
+      ],
+      "correctIndex": 0,
+      "explanation": "Regional administration increases from 4 to 7 fields while central administration falls from 6 to 3; the total remains 10. With external affairs explicitly retained by the existing state, the change illustrates devolution of specified responsibilities rather than the creation of sovereign states. Counting fields does not measure their equal political importance. A: This correctly calculates the transfer of three fields and retains the stated external-authority context. B: A policy-field count is not a count of states. C: Each period totals 10, not 20 fields within either period. D: The central count declines by three rather than increasing."
+    },
+    {
+      "id": "hug-4-2-004",
+      "prompt": "What statement correctly summarizes the valid vote while preserving its denominator?",
+      "options": [
+        "Autonomy receives 60% of all registered voters’ support.",
+        "Independence receives 40% of all registered voters’ support.",
+        "Autonomy receives 60% of valid votes, equal to 48% of registered voters.",
+        "Autonomy receives 80% of valid votes because turnout is 80%."
+      ],
+      "correctIndex": 2,
+      "explanation": "There are 800 valid votes from 1,000 registered voters. Autonomy has 480/800=60% of valid votes and 480/1,000=48% of registered voters. Independence has 320/800=40% of valid votes. Turnout and support are different measures; the count alone does not determine a legal outcome or the views of nonvoters. A: Sixty percent uses valid votes as denominator; registered-voter support is 48%. B: Forty percent uses valid votes;320/1,000 gives32% of registered voters. C: This correctly states both denominators without assigning preferences to nonvoters. D: Eighty percent is turnout, not autonomy’s valid-vote share."
+    },
+    {
+      "id": "hug-4-2-005",
+      "prompt": "The former Gold Coast became independent as Ghana in 1957. What wider political process does this transition illustrate?",
+      "options": [
+        "A transfer of only municipal responsibilities within an unchanged colonial administration.",
+        "Decolonization through the establishment of an independent state.",
+        "The replacement of a state by a private cultural association.",
+        "The creation of a supranational organization without a territorial government."
+      ],
+      "correctIndex": 1,
+      "explanation": "Ghana’s independence in 1957 is an example of decolonization: a formerly externally administered territory becomes an independent state. This differs from merely granting a municipality new powers within colonial rule. The example does not imply that every colonial territory followed the same route or became independent in the same year. A: The historical change is independence, not simply a municipal administrative adjustment. B: This identifies the end of colonial rule and establishment of independent Ghana. C: Independence establishes state government rather than a private association. D: Ghana is the independent state in the example, not an organization of several states."
+    },
+    {
+      "id": "hug-4-2-006",
+      "prompt": "The Scottish Parliament can legislate on specified devolved matters while Scotland remains part of the United Kingdom. Which process is illustrated by that allocation of powers?",
+      "options": [
+        "Colonial annexation that necessarily creates a new international frontier.",
+        "Complete independence from every UK institution.",
+        "Abolition of all regional legislative authority.",
+        "Devolution of governing responsibilities within an existing state."
+      ],
+      "correctIndex": 3,
+      "explanation": "Devolution reallocates specified governing responsibilities from a central level to territorial institutions within a state. Scotland’s legislature provides a contemporary example while Scotland remains within the UK. The scope and constitutional basis of devolved powers must be examined rather than assumed to equal independence. A: The scenario concerns an internal allocation of authority, not annexation or a new international border. B: The premise explicitly retains Scotland within the United Kingdom. C: A legislature exercising specified powers is not abolition of regional authority. D: This matches the transfer of specified responsibilities without independent statehood."
+    },
+    {
+      "id": "hug-4-2-007",
+      "prompt": "Which scenario most clearly demonstrates direct territorial colonial rule rather than economic influence alone?",
+      "options": [
+        "An external power appoints the territory’s governor and directly controls its public administration.",
+        "A domestic firm buys machinery from a foreign supplier under a commercial contract.",
+        "Two independent governments voluntarily exchange weather observations.",
+        "Residents watch foreign entertainment while their own government retains governing authority."
+      ],
+      "correctIndex": 0,
+      "explanation": "Direct territorial colonial rule involves external political control over a territory and its administration. An externally appointed governor with governing authority provides stronger evidence of that relationship than trade, information exchange or media consumption alone. Colonial rule need not involve settlement by most of the controlling power’s population. A: This specifies direct external governmental authority over the territory. B: A machinery purchase alone does not establish political subordination. C: Voluntary information exchange does not itself establish colonial rule. D: Cultural exposure is not sufficient evidence of external control of public administration."
+    },
+    {
+      "id": "hug-4-2-008",
+      "prompt": "A national movement demands that people in its region choose between negotiated autonomy and independence. What principle most directly motivates the demand to choose a political future?",
+      "options": [
+        "Environmental determinism",
+        "Complete economic self-sufficiency",
+        "Self-determination",
+        "Uniformity of all cultural identities"
+      ],
+      "correctIndex": 2,
+      "explanation": "Self-determination concerns a people’s capacity to determine its political status. The movement’s request to choose a political arrangement invokes that principle, though political and legal disputes may remain over procedures, territory and outcomes. Invoking it does not mean that every supporter must prefer independence. A: The demand is political, not a claim that environment fixes social outcomes. B: The choices concern governance, not producing every good locally. C: This names the principle underlying the demand to choose political status. D: A demand for political choice does not require identical identities or preferences."
+    },
+    {
+      "id": "hug-4-2-009",
+      "prompt": "An independence movement argues that its nation’s homeland extends across a proposed border, while a neighboring movement claims part of the same area. What complication follows?",
+      "options": [
+        "Shared claims make the area physically disappear from maps.",
+        "National self-determination claims can overlap, so drawing a border may not satisfy every community’s territorial aims.",
+        "Every national claim must match existing state boundaries exactly.",
+        "Recognizing one claim automatically establishes the preferences of all residents in the overlap."
+      ],
+      "correctIndex": 1,
+      "explanation": "National homelands, settlement patterns and political claims do not always fit separate, nonoverlapping polygons. Competing claims can make boundary negotiation difficult, especially where populations are mixed. Identifying the complication does not decide which claim is legally or morally superior or assume every resident shares a movement’s position. A: Competing political claims do not remove physical territory. B: This recognizes the possible mismatch among claims, populations and proposed boundaries. C: The premise explicitly gives overlapping claims rather than perfect alignment. D: A movement’s claim is not a census of all residents’ preferences."
+    },
+    {
+      "id": "hug-4-2-010",
+      "prompt": "A central government transfers education and housing powers to an elected region but retains defense and external relations. What evidence would be needed before describing this change as independence?",
+      "options": [
+        "A new logo for the regional legislature.",
+        "A larger regional school budget without any change in external authority.",
+        "A separate regional holiday on the calendar.",
+        "A change establishing independent state authority, rather than only the specified internal transfer."
+      ],
+      "correctIndex": 3,
+      "explanation": "New regional institutions, symbols or budgets can accompany devolution without establishing independent statehood. The defining issue is the political status and authority of the territory, including its external independence. The supplied transfer leaves it within the existing state’s larger framework. A: A logo is symbolic evidence, not proof of sovereign status. B: A fiscal change alone need not alter external political status. C: Regional holidays can exist within independent states. D: This asks for the political-status change missing from the described devolution."
+    },
+    {
+      "id": "hug-4-2-011",
+      "prompt": "After gaining independence, a state trades extensively and signs cooperative agreements with neighbors. Which conclusion best distinguishes sovereignty from isolation?",
+      "options": [
+        "An independent state can choose international cooperation without thereby ceasing to be a state.",
+        "Any imported product restores direct colonial rule.",
+        "An agreement necessarily transfers all domestic lawmaking to the other signatories.",
+        "Shared economic interests require the states to have one identical national identity."
+      ],
+      "correctIndex": 0,
+      "explanation": "Sovereignty does not require complete economic or diplomatic isolation. Independent states routinely make agreements and participate in cross-border networks. The effects of a particular agreement depend on its terms; trade alone does not establish colonial rule, total transfer of governing authority or a shared national identity. A: This separates independent political status from chosen international connections. B: Importation alone does not show external political administration. C: The extent of an agreement’s authority must be examined rather than assumed. D: Economic cooperation does not require identical national identities."
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "topicNumber": "4.1",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "e752bc8e20ee2ed910877c3542da9711986701e9963b6ad215c4dbb64ae48808",
+  "scopeReview": "PSO-4.A.1–2: independent states, nations, nation-states, stateless and multistate nations, multinational states and autonomous/semiautonomous regions. Contemporary Greenland and U.S. tribal governance examples verified against administering institutions. National identity is not inferred from biology, language or citizenship alone.",
+  "varietyReview": "Cross-border settlement dot map, independent-entity comparison table, national-identity chart and nested autonomy map. Other items distinguish idealized nation-state alignment, collective/individual statelessness, scale-sensitive state terminology and evidence for national identity. Four stimuli, mixed keys/difficulty and all five skills.",
+  "repetitionReview": "Distinct entity relationships rather than eleven synonym definitions. Two real governance examples concern different constitutional contexts, not interchangeable templates. No identical prompt or numerical clone; no assertion of empirical difficulty calibration.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.bia.gov/faqs/what-legal-status-american-indian-and-alaska-native-tribes",
+    "https://stm.dk/en/the-prime-ministers-office/the-unity-of-the-realm/greenland/",
+    "https://stm.dk/statsministeriet/publikationer/faelleserklaering-mellem-eu-groenland-og-danmark/"
+  ],
+  "referenceNote": "Official curriculum and current primary government accounts checked in October2026. Most entities/data are explicitly hypothetical; no disputed state recognition is adjudicated, and the questions are geography education rather than individual legal advice. Sources remain in QA, not student resource imports. No human review claimed.",
+  "questions": [
+    {
+      "questionId": "hug-4-1-001",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "A multistate nation whose members live in more than one independent state.",
+      "independentReview": "Counted four R settlement dots west and four east of x50, with none on the boundary. Nation is explicitly self-identified rather than inferred from language or dots alone; sovereignty of A/B is supplied.",
+      "check": {
+        "type": "political-crossborder-nation"
+      },
+      "questionSha256": "978a23c20fe4781198f67d5bcb39bfa39b7612dba11fdb853f25848a1ca5aee1",
+      "stimulusSha256": "7e1764cb3c46d99bb620d8049b7be651b402c24cb797466e4b3d0634819cbfc7"
+    },
+    {
+      "questionId": "hug-4-1-002",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "A",
+      "independentReview": "Independently compared each row’s governmental and external status rather than population size. Only A combines territorial government with external independence; no inference relies on international recognition disputes or a numerical threshold.",
+      "check": {
+        "type": "political-entity-status"
+      },
+      "questionSha256": "cd30e5bca916c29e41f50eb17f6bc8528e2ddb937e9c2967dd6bc72b4d330d3c",
+      "stimulusSha256": "9d24fa41d4c64bfab875a18d56f77633ba3777a902dc1ae0e2a4126e80f6e991"
+    },
+    {
+      "questionId": "hug-4-1-003",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "A multinational state, because more than one nation is present within its territory.",
+      "independentReview": "Confirmed mutually exclusive reported categories R70+S30=100 within one sovereign territory. The item explicitly supplies national identification and institutions instead of deriving nationhood from percentages or a language difference alone.",
+      "check": {
+        "type": "political-national-shares"
+      },
+      "questionSha256": "3e713ee8a9ff9bc107127ea208a867e4a84f6cbc0e4edd1e0df7010dae065619",
+      "stimulusSha256": "d1de552473478cea6334b53565489c0dbb1a875021c23a83d6efb763d2cf061e"
+    },
+    {
+      "questionId": "hug-4-1-004",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "A boundary of a self-governing subnational region rather than evidence of full external independence.",
+      "independentReview": "Checked R polygon0–35 and remainder35–100 form one outer rectangle without a gap. Internal boundary x35 does not become an international frontier; allocated local powers and retained external affairs are explicitly supplied.",
+      "check": {
+        "type": "political-autonomous-boundary"
+      },
+      "questionSha256": "f7fc9330907cf31dea2af8bde5b5cfe2b1b3b7751bcd62579674321073a30328",
+      "stimulusSha256": "174655ae8133b42e0a91be6cce0595b48d85b81d255198fd481a02325a01e7df"
+    },
+    {
+      "questionId": "hug-4-1-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "An autonomous political entity can exercise substantial local authority without being a separate independent state.",
+      "independentReview": "Verified current Danish Prime Minister’s Office descriptions and the Self-Government Act context. The question avoids claiming Greenland has no international activity or that every policy power remains with Denmark.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b130968ea5313aef43cfba206a02b5fa2cbc6ce5ee5b1cfe430c6292a56c1c21"
+    },
+    {
+      "questionId": "hug-4-1-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Tribal nations can possess distinct governmental authority within the U.S. political framework.",
+      "independentReview": "Checked BIA’s own status explanation. Did not claim every tribe has a reservation, every resident is a tribal member, or all tribal jurisdictions have identical powers; no specific legal dispute is assessed.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "3562c6e877877d0e19ecbb38ff41d4c744f20ca2e7f1673f2d20a62d4ecd54b8"
+    },
+    {
+      "questionId": "hug-4-1-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Nation-state",
+      "independentReview": "Verified the classification from explicitly supplied nation/sovereign-territory alignment, not a population-percentage cutoff. The explanation rejects an inference of genetic purity or absence of minorities.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "6069140809cf4bc3010e42027fe9a31c65a13a11b50a3326dff8ba97a5e523fc"
+    },
+    {
+      "questionId": "hug-4-1-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "The nation lacks its own independent state; that does not mean each person lacks citizenship.",
+      "independentReview": "Distinguished a national community’s lack of its own sovereign state from an individual’s citizenship. No contested real-world national claim or legal determination about a person is required.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "eced18a593b9685ed4249657cc621d4a56ad0e093780a6089181f0c33c82f755"
+    },
+    {
+      "questionId": "hug-4-1-009",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The term can refer to an independent country or to a subnational unit, depending on scale and context.",
+      "independentReview": "Verified the scale/terminology distinction without treating all federal subdivisions worldwide as constitutionally identical. Fifty is the fixed current U.S. state count, not the number of territories or tribal governments.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "1c951f6b9bd1a13e2ffa90aa6d0b92098054f409efd2005ff7be2fcc5f309594"
+    },
+    {
+      "questionId": "hug-4-1-010",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Whether distinct self-identified national communities exist, rather than assuming language differences alone establish nations.",
+      "independentReview": "Checked that the requested classification concerns nations, not simply multilingualism. A single nation may use several languages and one language may be shared across several nations; neither is inferred from the supplied survey alone.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "f6b67f407378f38ad1d67d4609d26356211096731197594eed10bb57a6b509ac"
+    },
+    {
+      "questionId": "hug-4-1-011",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Citizenship data alone do not establish that all citizens share one national identity.",
+      "independentReview": "Compared the actual mapped variable, citizenship, with the caption’s stronger national-identity assertion. No cultural identity is assigned from color, passport or place of residence alone.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "289a50127bb281d4eb92f8340c88c09d01a896b1eaab6f7f1458fa7db3a45537"
+    }
+  ]
+}

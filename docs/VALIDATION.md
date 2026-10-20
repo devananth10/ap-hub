@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 4.1–4.2
+
+319 original MCQs across 29 topics are published, eleven each; 116 meaningful stimuli (36.36%) and 129 explicit evidence/numerical/geometry checks. Political entities distinguish nations, states, citizenship, tribal self-government and regional autonomy. Political processes distinguish colonial control, independence, inherited borders, devolution and self-determination. Contemporary examples were checked against primary institutional accounts; no disputed recognition or automatic right to secession is adjudicated.
+
+All 154 unit tests, structural/evidence checks, TypeScript, production build, all 68 Geography scopes and standard application smoke checks passed. Topic4.1 scored11/11 in a full browser session. Topic4.2 deliberately began with a wrong answer, displayed all-option feedback, accepted a correct retry and correctly retained10/11 (91%) as the first-attempt score. All eight new stimuli passed390×844 inspection. Existing question files and the approved catalog are unchanged; browser student notes/progress were not edited. No human-review or empirical difficulty-calibration claim. Next4.3;39 topics/429 questions remain.
+
 ## Human Geography Unit 3 complete
 
 297 original MCQs across 27 topics are published, eleven each. All eight Unit 3 topics are complete. There are 108 meaningful stimuli (36.36%) and 121 explicit evidence/numerical/geometry checks. Topics 3.7–3.8 distinguish language ancestry from religious identity, carrier movement from conversion, historical names from current speech, and domain-specific adaptation from complete assimilation. AP religious categories are presented as broad curricular conventions with diversity and exceptions.

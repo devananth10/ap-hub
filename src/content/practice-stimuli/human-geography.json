@@ -5119,5 +5119,375 @@
       }
     ],
     "max": 100
+  },
+  "hug-4-1-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "dot",
+    "title": "R settlements and two independent states",
+    "description": "Hypothetical independent states A and B share a north–south international boundary. Four settlements of the same self-identified nation R lie in A and four in B. Dots locate settlements, not equal population counts.",
+    "caption": "Original schematic. The map supplies national identification and state status; it does not map every resident, ethnic identity or an autonomous jurisdiction.",
+    "unitLabel": "Each dot: one R settlement",
+    "regions": [
+      {
+        "label": "State A",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "State B",
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ],
+    "dots": [
+      {
+        "x": 30,
+        "y": 10
+      },
+      {
+        "x": 35,
+        "y": 20
+      },
+      {
+        "x": 35,
+        "y": 40
+      },
+      {
+        "x": 30,
+        "y": 50
+      },
+      {
+        "x": 65,
+        "y": 10
+      },
+      {
+        "x": 70,
+        "y": 20
+      },
+      {
+        "x": 65,
+        "y": 40
+      },
+      {
+        "x": 70,
+        "y": 50
+      }
+    ]
+  },
+  "hug-4-1-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Four hypothetical political entities",
+    "description": "Hypothetical entity A independently governs a territorial population. B is a province, C is a shared cultural community, and D is a voluntary association. Their external authority differs.",
+    "caption": "Original simplified classification exercise, not legal advice about disputed territories or a complete test of international recognition.",
+    "headers": [
+      "Entity",
+      "Territorial government",
+      "External status"
+    ],
+    "rows": [
+      [
+        "A",
+        "Own territory and population",
+        "Independent external authority"
+      ],
+      [
+        "B",
+        "Province of a larger state",
+        "External affairs held by larger state"
+      ],
+      [
+        "C",
+        "No territorial government",
+        "Cultural community only"
+      ],
+      [
+        "D",
+        "No sovereign territory",
+        "Voluntary association only"
+      ]
+    ]
+  },
+  "hug-4-1-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Reported national identities in State P",
+    "description": "Hypothetical survey of State P: 70% identify with nation R and 30% with nation S. For this exercise respondents choose one category; both are established national communities with distinct institutions inside the same independent state.",
+    "caption": "Original synthetic simplified categories, not a claim that national identity is always exclusive or can be inferred from appearance. A survey share does not determine sovereignty.",
+    "unitLabel": "Percent of respondents",
+    "categories": [
+      "Nation R",
+      "Nation S"
+    ],
+    "series": [
+      {
+        "label": "Reported identity",
+        "values": [
+          70,
+          30
+        ]
+      }
+    ],
+    "max": 100
+  },
+  "hug-4-1-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "An internal region within State P",
+    "description": "Hypothetical State P occupies the entire outer rectangle. Region R occupies the western part and governs specified local matters. P retains external affairs; the north–south internal line bounds R rather than a second independent state.",
+    "caption": "Original schematic of an autonomy arrangement. It does not assign identical powers to all real autonomous regions or map cultural boundaries.",
+    "unitLabel": "Entire rectangle: State P; inner line: regional boundary",
+    "regions": [
+      {
+        "label": "Region R",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            35,
+            0
+          ],
+          [
+            35,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "Rest of P",
+        "polygon": [
+          [
+            35,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            35,
+            60
+          ]
+        ]
+      }
+    ]
+  },
+  "hug-4-2-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Three changes in K’s governing institutions",
+    "description": "Hypothetical timeline: 1920, an external power appoints a colonial governor; 1960, K becomes independent with domestic and external authority; 1990, K gives specified local powers to a regional legislature while retaining external affairs.",
+    "caption": "Original invented chronology, not a timeline for an actual state. A regional institution’s creation is distinguished from independent external statehood.",
+    "headers": [
+      "Year",
+      "Institutional change",
+      "External authority"
+    ],
+    "rows": [
+      [
+        "1920",
+        "Colonial governor appointed",
+        "External colonial power"
+      ],
+      [
+        "1960",
+        "K becomes independent",
+        "Independent K"
+      ],
+      [
+        "1990",
+        "Regional legislature created",
+        "K retains external affairs"
+      ]
+    ]
+  },
+  "hug-4-2-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "dot",
+    "title": "Settlements and a boundary after independence",
+    "description": "Hypothetical A and B become independent on either side of a former internal colonial line at x=40. Settlements of self-identified nation R remain in their previous locations on both sides.",
+    "caption": "Original schematic of the post-independence arrangement. Dots locate R settlements rather than equal population totals; the prior colonial line is retained, not inferred from an unlabeled map.",
+    "unitLabel": "Dots: unchanged R settlements; line: inherited boundary",
+    "regions": [
+      {
+        "label": "State A",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            40,
+            0
+          ],
+          [
+            40,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "State B",
+        "polygon": [
+          [
+            40,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            40,
+            60
+          ]
+        ]
+      }
+    ],
+    "dots": [
+      {
+        "x": 22,
+        "y": 12
+      },
+      {
+        "x": 30,
+        "y": 45
+      },
+      {
+        "x": 52,
+        "y": 12
+      },
+      {
+        "x": 65,
+        "y": 45
+      },
+      {
+        "x": 80,
+        "y": 18
+      }
+    ]
+  },
+  "hug-4-2-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Administration of ten specified policy fields",
+    "description": "Hypothetical state: regional bodies administer 4 fields earlier and 7 later; the central government administers 6 earlier and 3 later. The same ten fields are assigned once each. External affairs remain at state level.",
+    "caption": "Original synthetic allocation. A field count does not imply equal political importance, fiscal size or complete regional sovereignty. The state’s international boundary is unchanged.",
+    "unitLabel": "Number of specified fields",
+    "categories": [
+      "Earlier",
+      "Later"
+    ],
+    "series": [
+      {
+        "label": "Regional",
+        "values": [
+          4,
+          7
+        ]
+      },
+      {
+        "label": "Central",
+        "values": [
+          6,
+          3
+        ]
+      }
+    ],
+    "max": 10
+  },
+  "hug-4-2-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "A hypothetical regional consultation",
+    "description": "Hypothetical consultation: 1,000 registered voters, 800 valid votes, 480 for autonomy and 320 for independence. The other 200 registered voters do not vote. No invalid ballots are recorded.",
+    "caption": "Original synthetic consultation. No legal threshold, binding consequence or preference of nonvoters is supplied. The result does not automatically create an independent state.",
+    "headers": [
+      "Measure",
+      "People or votes"
+    ],
+    "rows": [
+      [
+        "Registered voters",
+        "1000"
+      ],
+      [
+        "Valid votes",
+        "800"
+      ],
+      [
+        "Autonomy votes",
+        "480"
+      ],
+      [
+        "Independence votes",
+        "320"
+      ],
+      [
+        "Did not vote",
+        "200"
+      ]
+    ]
   }
 }

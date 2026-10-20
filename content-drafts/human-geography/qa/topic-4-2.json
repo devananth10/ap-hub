@@ -1,0 +1,144 @@
+{
+  "topicNumber": "4.2",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "8647531e84588eaac2768ae0e923b51dcf4a6e58dfcbccbce2796adfc9ad7847",
+  "scopeReview": "PSO-4.B.1–2: sovereignty, nation-states and self-determination; colonialism/imperialism, independence and devolution along national lines shaping boundaries. Ghana independence and Scottish devolution provide verified contrasting examples. No contested recognition or automatic secession claim.",
+  "varietyReview": "Institutional chronology, inherited-boundary settlement map, policy-field transfer chart and consultation table. Other cases distinguish direct rule from connections, choice from predetermined outcome, overlapping claims, internal authority and interdependence. Four meaningful stimuli and all five skills.",
+  "repetitionReview": "Process-oriented evidence distinguishes this set from4.1 entity classification. Numeric items address authority allocation and voting denominators, not arbitrary arithmetic; boundary continuity is given by a historical premise rather than inferred from appearance. No exact duplicate or numeric-only clone.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.un.org/dppa/decolonization/history/former-trust-and-nsgts",
+    "https://judicial.gov.gh/jsweb/index.php/after-independence",
+    "https://www.parliament.scot/about/how-parliament-works/what-are-the-powers-of-the-scottish-parliament",
+    "https://www.un.org/en/about-us/un-charter/chapter-1"
+  ],
+  "referenceNote": "Primary institutional accounts checked; all numerical/territorial cases are invented and clearly labeled. No actual referendum is predicted or legal entitlement adjudicated. Research references remain QA-only; existing approved resource collection unchanged. Automated verification is not human review or empirical calibration.",
+  "questions": [
+    {
+      "questionId": "hug-4-2-001",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The 1960 transfer of external and domestic authority to independent K.",
+      "independentReview": "Checked the sequence and the explicit external-authority column. Only1960 removes colonial control and establishes K’s independence;1990 is internal devolution and does not duplicate the independence event.",
+      "check": {
+        "type": "process-independence-timeline"
+      },
+      "questionSha256": "2952f020268c380f6378d0136b5c907243579ffc1a1c32f3ebf5129e2fdd5192",
+      "stimulusSha256": "43ded6ca79c55beef4273150b26425dfc0803b93cb46dee563f2d153b46be799"
+    },
+    {
+      "questionId": "hug-4-2-002",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "A change in the line’s political status can divide an existing national distribution without moving its residents.",
+      "independentReview": "Verified R dots lie on both sides of x40 and the two polygons meet at that same inherited line. The supplied before/after status changes, while locations remain fixed; classification does not require unrecorded migration.",
+      "check": {
+        "type": "process-inherited-boundary"
+      },
+      "questionSha256": "fdb1d4c60e7b932dbc18f4e2305c7cad4a244c38d74f4bc763696578cfcdf4bb",
+      "stimulusSha256": "efe8dedfbbe60980d8b7731a82fde0a7c68acfe253775d117e55e2336b45da06"
+    },
+    {
+      "questionId": "hug-4-2-003",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Three fields shift from central to regional administration, consistent with devolution rather than independence.",
+      "independentReview": "Recomputed4+6=10 and7+3=10; regional change+3,central−3. Distinct fields are counted once, and the caption does not equate field counts with comparable power or fiscal weight.",
+      "check": {
+        "type": "process-policy-transfer"
+      },
+      "questionSha256": "129e60130f90e9b5f3ebe004b5769c3ee512651e71d8d4f3bd26f49a5dc208b9",
+      "stimulusSha256": "aced250e04714bbda82df06326b9788807d70f2fc8ed82073860a5717a509172"
+    },
+    {
+      "questionId": "hug-4-2-004",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Autonomy receives 60% of valid votes, equal to 48% of registered voters.",
+      "independentReview": "Independently computed480+320=800,800/1000=.8,480/800=.6,480/1000=.48,320/1000=.32. All cast ballots are stipulated valid; registered voters are not silently equated with all residents or all citizens.",
+      "check": {
+        "type": "process-referendum-denominators"
+      },
+      "questionSha256": "d980128eeacbbeb84b110307d2e2f957d40d692996bb16956ef00ab20825c6a0",
+      "stimulusSha256": "14f6b0b71d07c906d03e5cd2f16d9b81bda999c851381545ba58c6d91edfdbc2"
+    },
+    {
+      "questionId": "hug-4-2-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Decolonization through the establishment of an independent state.",
+      "independentReview": "Verified Gold Coast→Ghana1957 in the UN’s former non-self-governing-territory record and Ghana judiciary’s independence chronology. Avoided inaccurate claims that Ghana was the first independent African or sub-Saharan state.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "27030eba53736476d131ce997810f1d3c616b8542cbe52747b37ba4b1fe6594f"
+    },
+    {
+      "questionId": "hug-4-2-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Devolution of governing responsibilities within an existing state.",
+      "independentReview": "Checked the Scottish Parliament’s current powers explanation directly. The item does not predict future independence, treat all matters as devolved, or equate UK arrangements with every federal constitution.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "3ca2485bebdf6fa2fc7dfd54e5eee4da8c7f3c12f2d6edf97c434f15f24c3235"
+    },
+    {
+      "questionId": "hug-4-2-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "An external power appoints the territory’s governor and directly controls its public administration.",
+      "independentReview": "Compared direct territorial administration with noncontrolling international connections. Did not define all foreign trade as imperialism or make large-scale settler migration a necessary condition of colonialism.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "9de34d21ee8afb69720a42744d0de39fef127daf1714daea0d94e7ae6719e60c"
+    },
+    {
+      "questionId": "hug-4-2-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Self-determination",
+      "independentReview": "Checked the self-determination principle against the UN Charter context. The question identifies a geographic-political concept rather than adjudicating a legal right to secede or prescribing a binding referendum outcome.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "80c7cf897a17a1159bf203daef8a94434240a3c030baed27af9eef4f698d1c16"
+    },
+    {
+      "questionId": "hug-4-2-009",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "National self-determination claims can overlap, so drawing a border may not satisfy every community’s territorial aims.",
+      "independentReview": "Reviewed competing territorial claims as a general political-geographic mechanism without selecting a winner or assigning identities from location. A border can change jurisdiction while leaving minority or overlapping claims unresolved.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "a3c7238299e848eda00a0995355bcfdbb1251333b26fbb6f780d36a39b255d19"
+    },
+    {
+      "questionId": "hug-4-2-010",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "A change establishing independent state authority, rather than only the specified internal transfer.",
+      "independentReview": "Checked the stated allocation rather than inferring sovereignty from symbols or spending. The question does not assume a uniform international recognition rule; it asks what distinguishes independence from internal governance.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "883c7862196c04915f3ee6551175a304cc6c08449ed5f51d9ea80b30c160dda6"
+    },
+    {
+      "questionId": "hug-4-2-011",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "An independent state can choose international cooperation without thereby ceasing to be a state.",
+      "independentReview": "Distinguished formal political status, interdependence and actual allocated powers. No particular treaty is interpreted; voluntary links alone cannot establish loss of all sovereignty or renewed direct colonial control.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "9aad303e58454cb1459958164abb0ea8d48aa5bae07d1018318c2652320a1382"
+    }
+  ]
+}
