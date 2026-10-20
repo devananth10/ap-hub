@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 5,
+  "topicId": "topic-5-8",
+  "questions": [
+    {
+      "id": "hug-5-8-001",
+      "prompt": "In this simplified model, which mechanism could favor fresh vegetables in zone I rather than zone IV, assuming other production conditions are suitable?",
+      "options": [
+        "Every crop has exactly the same delivery cost and perishability.",
+        "High costs of delay or spoilage can make proximity to the central market especially valuable for fresh produce.",
+        "The outermost zone is necessarily the only land with fertile soil.",
+        "Zone I must have the lowest land rent because it is closest to buyers."
+      ],
+      "correctIndex": 1,
+      "explanation": "A short trip can be particularly valuable when a product loses quality quickly or requires costly handling. That advantage can help a suitable high-value activity compete for land near the market. The rings illustrate a conditional transport-cost mechanism, not a real map or a promise that all vegetables today are grown nearest one city. A: Different products’ delivery requirements are central to the proposed mechanism. B: This links the crop’s handling/perishability costs to the value of market access. C: The stated model assumes uniform physical conditions rather than an outer fertility advantage. D: Accessible central land can command higher, not necessarily lower, rent."
+    },
+    {
+      "id": "hug-5-8-002",
+      "prompt": "Assume each activity bids up to its displayed surplus before land rent. Which activity has the higher bid at 10 km, and which has the higher bid at 20 km?",
+      "options": [
+        "B at 10 km; A at 20 km",
+        "A at both 10 and 20 km",
+        "B at both 10 and 20 km",
+        "A at 10 km; B at 20 km"
+      ],
+      "correctIndex": 3,
+      "explanation": "At 10 km, A can offer 600 units per hectare compared with B’s 500. At 20 km, A’s surplus is 0 while B’s is 400. A’s steeper decline means its proximity advantage is lost farther from the market. The graph describes potential rent-paying capacity under fixed assumptions, not actual rents or guaranteed crop choices everywhere. A: This reverses both displayed comparisons. B: A is higher at 10 km but lower at 20 km. C: B is higher at 20 km but lower at 10 km. D: This follows the relative heights of both lines at each specified distance."
+    },
+    {
+      "id": "hug-5-8-003",
+      "prompt": "A and B are each 35 km from market M and each ships one tonne. Along A’s route transport costs 2 units per tonne-km; along B’s route it costs 6. What does this demonstrate?",
+      "options": [
+        "Equal geometric distances can have unequal transport costs, so a cheaper corridor can distort ideal circular land-use patterns.",
+        "Both shipments cost 70 units because all equal-distance trips must have the same cost.",
+        "B has the lower cost solely because it lies east of M.",
+        "Transport cost is 210 units for A and 70 for B."
+      ],
+      "correctIndex": 0,
+      "explanation": "A costs 35×2=70 units, while B costs 35×6=210. The equal-distance sites no longer have equal access costs when route rates differ. A road, river or other transport advantage can therefore modify a simple concentric-ring pattern; direction alone is not the cause of the cost difference. A: This correctly separates distance from the cost of using a particular route. B: The per-distance rates differ, so the total costs differ. C: The supplied rates, not east–west direction itself, explain the difference. D: This assigns each rate to the wrong farm."
+    },
+    {
+      "id": "hug-5-8-004",
+      "prompt": "A farmer pays 40 units/tonne in production costs and 3 units/tonne-km in transport. Which market yields the larger remainder, and what model assumption does this comparison relax?",
+      "options": [
+        "M1 yields 50 units/tonne and confirms there can only be one buyer.",
+        "M2 yields 30 units/tonne and removes all distance costs.",
+        "M2 yields 50 units/tonne versus M1’s 30, illustrating competition between markets rather than one isolated market.",
+        "Both yield 30 units/tonne because a more distant buyer cannot offer a higher price."
+      ],
+      "correctIndex": 2,
+      "explanation": "For M1 the remainder is 100−40−3×10=30 units/tonne. For M2 it is 150−40−3×20=50. A higher offered price can outweigh additional transport costs. Two market options relax the single-isolated-market assumption, helping explain why actual land-use patterns need not form one set of rings around one center. A: The 50-unit remainder belongs to M2, and the scenario explicitly has two buyers. B: M2’s remainder is 50, and its 60-unit transport cost remains important. C: This correctly calculates both remainders and identifies the changed assumption. D: The offered prices differ; distance alone does not determine the net comparison."
+    },
+    {
+      "id": "hug-5-8-005",
+      "prompt": "Why can bulky fuelwood appear relatively close to a market in a historical von Thünen interpretation, even though forests are not highly perishable?",
+      "options": [
+        "Perishability is the only factor that can influence transport cost.",
+        "Trees can grow only inside city boundaries.",
+        "Every modern energy system requires identical fuelwood quantities.",
+        "Moving heavy, bulky material with costly historical transport can make distance expensive even without rapid spoilage."
+      ],
+      "correctIndex": 3,
+      "explanation": "Distance-related transport burdens can arise from weight and bulk as well as perishability. In a historical fuelwood-based setting, hauling costs could favor nearby woodland. Modern fuels, freight systems and land uses differ, so this mechanism is not a claim that every present-day city must have a forest ring. A: Weight, bulk, freight rates and handling can also matter. B: The argument concerns transport economics, not a biological restriction to cities. C: Energy sources and demand vary across times and places. D: This supplies a transport-cost mechanism distinct from spoilage."
+    },
+    {
+      "id": "hug-5-8-006",
+      "prompt": "Refrigeration and faster transport reduce the cost of delivering a perishable crop over long distances. All else equal, how could this affect the crop’s production region?",
+      "options": [
+        "It makes the nearest city disappear from the economic system.",
+        "It can make more distant suitable locations competitive, weakening a simple proximity-only pattern.",
+        "It guarantees the same crop will be produced at every location.",
+        "It requires every farm to move closer to the original market."
+      ],
+      "correctIndex": 1,
+      "explanation": "Lower spoilage and delivery costs can reduce the disadvantage of distance, allowing production farther from consumers where other conditions are favorable. The effect depends on land costs, growing conditions, prices and competing supply. It modifies a model assumption rather than guaranteeing uniform global production. A: A transport change does not by itself remove a market. B: This follows the reduced distance penalty while retaining other constraints. C: Suitability and economic conditions can still differ. D: A lower long-distance penalty does not require movement toward the center."
+    },
+    {
+      "id": "hug-5-8-007",
+      "prompt": "A real agricultural region has mountains, variable soils, several cities and a major highway. What is the best use of the idealized von Thünen model there?",
+      "options": [
+        "Use its market-distance and transport-cost logic as one explanation, then examine how the region’s differing conditions modify the pattern.",
+        "Reject every role of transport costs because perfect rings are absent.",
+        "Assume the landscape must actually be flat because the model says so.",
+        "Assign every field a crop solely from its distance to the national capital."
+      ],
+      "correctIndex": 0,
+      "explanation": "A model isolates relationships through assumptions. Its transport-cost logic can remain useful even where uneven terrain, soils, multiple markets and infrastructure prevent perfect rings. Applying it responsibly means checking those departures, rather than forcing actual geography into an ideal diagram or dismissing all economic location reasoning. A: This uses the model as a conditional analytical tool. B: An imperfect fit does not imply transport has no influence. C: A simplifying assumption does not override observed terrain. D: A national capital need not be the relevant crop market."
+    },
+    {
+      "id": "hug-5-8-008",
+      "prompt": "Which evidence would best test whether transport access helps explain where a specialty crop is grown?",
+      "options": [
+        "A map showing only political boundaries with no crop or market information.",
+        "An assumption that all specialty crops share identical water requirements.",
+        "Crop locations combined with market prices, production suitability and actual route costs to buyers.",
+        "The number of letters in the nearest city’s name."
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluating an economic location explanation requires evidence about the crop’s distribution and the conditions affecting feasible returns. Actual routes and prices matter alongside soils, climate and other production costs. Distance alone or unrelated place labels cannot test the model adequately. A: Boundaries alone omit the proposed production and transport relationship. B: An unsupported uniformity assumption does not provide evidence. C: These layers address both economic access and production feasibility. D: Name length is not a measure of market access or crop returns."
+    },
+    {
+      "id": "hug-5-8-009",
+      "prompt": "In a hypothetical two-activity model, rent bids are A=1200−60d and B=600−10d currency units/hectare, with d in km. At what distance are their bids equal?",
+      "options": [
+        "10 km",
+        "20 km",
+        "12 km",
+        "30 km"
+      ],
+      "correctIndex": 2,
+      "explanation": "Set the bids equal:1200−60d=600−10d. Rearranging gives 600=50d, so d=12 km. Substitution gives 480 units/hectare for both. This boundary belongs to the stated linear model; it is not an observed universal crop boundary or a guarantee that other activities could not outbid both. A: At 10 km A bids 600 and B 500, so they differ. B: At 20 km A bids 0 and B 400, so they differ. C: At 12 km both bids are 480. D: At 30 km the formulas differ, and A’s negative value would not support a positive land bid."
+    },
+    {
+      "id": "hug-5-8-010",
+      "prompt": "Two equally distant sites have identical transport access, but only one has the soil and water needed for a specialty crop. Which assumption must be modified before predicting the same land use at both sites?",
+      "options": [
+        "Uniform production conditions across the surrounding plain.",
+        "The existence of a crop market anywhere in the region.",
+        "The definition of distance as a spatial measure.",
+        "The idea that production costs can ever matter."
+      ],
+      "correctIndex": 0,
+      "explanation": "Equal distance does not imply equal feasible production when growing conditions differ. The idealized uniform-land assumption is violated, so yield, input needs or crop feasibility must enter the comparison. The market and transport relationship may still matter, but it cannot determine the outcome alone. A: This is the specific assumption contradicted by different soils and water. B: The scenario does not remove the market. C: Distance remains meaningful even when other variables differ. D: Production feasibility and costs become more relevant, not meaningless."
+    },
+    {
+      "id": "hug-5-8-011",
+      "prompt": "A country has several large consuming regions and extensive food imports. Why would drawing one set of agricultural rings around its capital be an unreliable direct prediction?",
+      "options": [
+        "All agricultural products everywhere have zero transport costs.",
+        "The capital is always the only buyer for every crop.",
+        "National borders guarantee uniform soils and freight rates.",
+        "Several markets, trade links and varied conditions violate the single isolated uniform-market setup."
+      ],
+      "correctIndex": 3,
+      "explanation": "The ideal setup has one isolated market and uniform surrounding conditions. Multiple consuming centers and imports create overlapping opportunities and outside competition. The model can still help examine access costs, but its simple rings should not be imposed unchanged at an inappropriate national scale. A: Distance and delivery costs can still matter within a more complex network. B: A political center is not automatically the only or main agricultural buyer. C: Administrative boundaries do not make environmental or transport conditions uniform. D: This identifies the relevant scale and assumption mismatch."
+    }
+  ]
+}

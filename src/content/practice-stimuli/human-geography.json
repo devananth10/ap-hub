@@ -9337,5 +9337,336 @@
         "Beans"
       ]
     ]
+  },
+  "hug-5-7-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "model",
+    "title": "One grain-to-bread commodity chain",
+    "description": "Hypothetical chain: a farm sends grain to a mill, the mill sends flour to a bakery, and the bakery sends bread to a shop. Arrows describe product movements between linked stages, not money flows or quantities.",
+    "caption": "Original schematic. Milling and baking transform products; stages may be geographically separated. The question specifies no substitute flour supply or inventory.",
+    "assumptions": "Only the displayed suppliers are available; bakery flour inventory is zero.",
+    "nodes": [
+      {
+        "label": "Farm",
+        "x": 10,
+        "y": 30
+      },
+      {
+        "label": "Mill",
+        "x": 35,
+        "y": 30
+      },
+      {
+        "label": "Bakery",
+        "x": 60,
+        "y": 30
+      },
+      {
+        "label": "Shop",
+        "x": 85,
+        "y": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "Farm",
+        "to": "Mill",
+        "label": "Grain"
+      },
+      {
+        "from": "Mill",
+        "to": "Bakery",
+        "label": "Flour"
+      },
+      {
+        "from": "Bakery",
+        "to": "Shop",
+        "label": "Bread"
+      }
+    ]
+  },
+  "hug-5-7-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Equipment cost at two annual output levels",
+    "description": "Hypothetical same equipment and crop. Annual fixed cost 24000 currency units at either output; variable cost 40 units per tonne. Compare farms producing 200 and 1200 tonnes, both within the equipment’s usable capacity.",
+    "caption": "Original synthetic cost assumptions. Include both fixed and variable costs when computing average cost; this does not claim costs fall indefinitely beyond capacity.",
+    "headers": [
+      "Annual output (t)",
+      "Fixed cost (units)",
+      "Variable cost (units/t)"
+    ],
+    "rows": [
+      [
+        "200",
+        "24000",
+        "40"
+      ],
+      [
+        "1200",
+        "24000",
+        "40"
+      ]
+    ]
+  },
+  "hug-5-7-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Operation counts and land per operation",
+    "description": "Hypothetical region with two nonoverlapping size groups and no unlisted farmland. Initially 200 small operations at 10 hectares each and 20 large at 100 each. Later 100 small at 10 each and 30 large at 100 each.",
+    "caption": "Original synthetic census comparison. Counts are not hectares; multiply by land per operation. Size labels do not establish ownership, crop choice or household migration.",
+    "headers": [
+      "Period/group",
+      "Operations",
+      "Hectares each"
+    ],
+    "rows": [
+      [
+        "Initial small",
+        "200",
+        "10"
+      ],
+      [
+        "Initial large",
+        "20",
+        "100"
+      ],
+      [
+        "Later small",
+        "100",
+        "10"
+      ],
+      [
+        "Later large",
+        "30",
+        "100"
+      ]
+    ]
+  },
+  "hug-5-7-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Separate accounts along one product chain",
+    "description": "Hypothetical accounts for stages handling the same final product batch. Receipts/all costs: farm 300/200, mill 900/800, bakery 1800/1600, retail 3000/2900 currency units. All costs include intermediate purchases and other costs of that stage.",
+    "caption": "Original synthetic accounting comparison. Each row is one stage’s account; do not add repeated intermediate sales as if they were distinct final products.",
+    "headers": [
+      "Stage",
+      "Receipts (units)",
+      "All costs (units)"
+    ],
+    "rows": [
+      [
+        "Farm",
+        "300",
+        "200"
+      ],
+      [
+        "Mill",
+        "900",
+        "800"
+      ],
+      [
+        "Bakery",
+        "1800",
+        "1600"
+      ],
+      [
+        "Retail",
+        "3000",
+        "2900"
+      ]
+    ]
+  },
+  "hug-5-8-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "model",
+    "title": "Four zones around one market",
+    "description": "Hypothetical von Thünen-style schematic with central market M. Zones I,II,III,IV run from nearest to farthest. Their boundaries are concentric; the labels do not specify actual crop regions or measured distances.",
+    "caption": "Original idealized rings, not a real agricultural map. Zone widths are illustrative. Crop placement depends on competing returns and transport costs under the stated assumptions.",
+    "assumptions": "One isolated market; uniform suitable land; no preferred transport corridor; comparable routes in all directions.",
+    "nodes": [
+      {
+        "label": "M",
+        "x": 50,
+        "y": 30,
+        "labelPosition": "right"
+      }
+    ],
+    "edges": [],
+    "rings": [
+      {
+        "radius": 7,
+        "label": "I"
+      },
+      {
+        "radius": 14,
+        "label": "II"
+      },
+      {
+        "radius": 21,
+        "label": "III"
+      },
+      {
+        "radius": 28,
+        "label": "IV"
+      }
+    ]
+  },
+  "hug-5-8-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "display": "line",
+    "title": "Two activities’ potential rent bids by distance",
+    "description": "Hypothetical annual surplus before land rent, in currency units/hectare. At 0,10,20 km, A has 1200,600,0; B has 600,500,400. Each line is assumed linear between the plotted distances.",
+    "caption": "Original synthetic bid curves. All production costs and market prices are held fixed; only distance-related delivery costs change. The greater positive surplus can support a higher bid for the same suitable site.",
+    "unitLabel": "Units/hectare/year",
+    "categories": [
+      "0 km",
+      "10 km",
+      "20 km"
+    ],
+    "series": [
+      {
+        "label": "Activity A",
+        "values": [
+          1200,
+          600,
+          0
+        ]
+      },
+      {
+        "label": "Activity B",
+        "values": [
+          600,
+          500,
+          400
+        ]
+      }
+    ],
+    "max": 1600
+  },
+  "hug-5-8-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "flow",
+    "title": "Equal distances with different route costs",
+    "description": "Hypothetical uniform plain. A is 35 km west of market M; B 35 km east. Each ships one tonne to M. A’s corridor costs 2 currency units/tonne-km; B’s ordinary route costs 6. Arrows point toward the market.",
+    "caption": "Original schematic using 1 km per coordinate unit. The two routes are equally long but have different stated freight rates; no actual river, road or national border is mapped.",
+    "unitLabel": "Route labels: currency units/tonne-km",
+    "kmPerUnit": 1,
+    "regions": [
+      {
+        "label": "Uniform plain",
+        "labelPoint": [
+          50,
+          8
+        ],
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "A",
+        "x": 15,
+        "y": 30
+      },
+      {
+        "label": "M",
+        "x": 50,
+        "y": 30
+      },
+      {
+        "label": "B",
+        "x": 85,
+        "y": 30
+      }
+    ],
+    "paths": [
+      {
+        "label": "2/km",
+        "points": [
+          [
+            15,
+            30
+          ],
+          [
+            32,
+            30
+          ],
+          [
+            50,
+            30
+          ]
+        ],
+        "arrow": true
+      },
+      {
+        "label": "6/km",
+        "points": [
+          [
+            85,
+            30
+          ],
+          [
+            68,
+            30
+          ],
+          [
+            50,
+            30
+          ]
+        ],
+        "arrow": true
+      }
+    ]
+  },
+  "hug-5-8-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Two buyers for the same farm product",
+    "description": "Hypothetical one-tonne sale. Market M1 is 10 km away and offers 100 currency units/tonne. M2 is 20 km away and offers 150. Production costs 40 units/tonne; freight costs 3 units/tonne-km to either market.",
+    "caption": "Original synthetic competing-market case. The farmer can choose either buyer with no unlisted costs; no claim is made about all farmers or actual city prices.",
+    "headers": [
+      "Market",
+      "Distance (km)",
+      "Offered price (units/t)"
+    ],
+    "rows": [
+      [
+        "M1",
+        "10",
+        "100"
+      ],
+      [
+        "M2",
+        "20",
+        "150"
+      ]
+    ]
   }
 }

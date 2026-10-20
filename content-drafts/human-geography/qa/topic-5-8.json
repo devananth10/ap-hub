@@ -1,0 +1,156 @@
+{
+  "topicNumber": "5.8",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "d533914554d5ed17de0402deb6414b81dfcc9c3af44aded632ff2e2c7459c861",
+  "scopeReview": "PSO-5.D.1: transport cost and market distance in rural land use, model assumptions and why specialty farming need not form concentric rings. Uses conditional perishability/bulk mechanisms, differing route rates, competing markets and environmental variation rather than requiring one universal modern crop order.",
+  "varietyReview": "Four original stimuli: nested labeled market zones, two linear rent curves, equal-distance/different-rate route map and two-market price/distance table. Fifth check solves and substitutes the equal-bid threshold. Applications test refrigeration, historical fuelwood, model evidence and scale limitations; all four option explanations and varied keys.",
+  "repetitionReview": "Four distinct assumption/representation tasks, not merely different crop names in the same calculation. Equal-bid threshold is separate from choosing at displayed distances. Model predictions are explicitly conditional, diagrams original and difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://transportgeography.org/contents/chapter8/urban-land-use-transportation/von-thunen-regional-land-use/"
+  ],
+  "referenceNote": "Official framework and the model author’s academic transport-geography exposition checked for assumptions/logic; no diagram or lesson wording copied. All coordinates, rings, bids and prices original hypothetical examples. No new student resource or human-review claim.",
+  "questions": [
+    {
+      "questionId": "hug-5-8-001",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "High costs of delay or spoilage can make proximity to the central market especially valuable for fresh produce.",
+      "independentReview": "Checked nested radii7<14<21<28 and centerM, so I is innermost. Physical conditions and one market explicitly assumed; no crop is assigned a universal modern ring. Fresh-produce handling is a conditional reason for proximity, not a complete profit calculation.",
+      "check": {
+        "type": "thunen-ring-order"
+      },
+      "questionSha256": "cc1de4f73f5fa2ba3216b8e7bfe90f982d9b838db7ff98f30d56594316974a47",
+      "stimulusSha256": "9416234af4d5dae6ddbd20c42949179c0e44914b3b47fbb6d85f60edfb64c06c"
+    },
+    {
+      "questionId": "hug-5-8-002",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "A at 10 km; B at 20 km",
+      "independentReview": "Independently evaluated A1200−60d and B600−10d at0/10/20, matching1200/600/0 and600/500/400. At10 A−B100; at20 B−A400. No crop output total or negative rent outside the plotted domain inferred.",
+      "check": {
+        "type": "thunen-rent-lines"
+      },
+      "questionSha256": "735ce46722d722bf19f0a270386cdad2e833c28d6539c58ed934b09fea62f9ee",
+      "stimulusSha256": "0d70ae224bf6bccd2aa62066254bdba6a7e9818cb55862efc0a2382593831877"
+    },
+    {
+      "questionId": "hug-5-8-003",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "Equal geometric distances can have unequal transport costs, so a cheaper corridor can distort ideal circular land-use patterns.",
+      "independentReview": "Verified coordinate distances|15−50|=|85−50|=35 with1km/unit, routes directed toM and rates2 versus6. Recomputed costs70/210 for one tonne. Cheaper corridor is an explicit assumption, not an unverified real road.",
+      "check": {
+        "type": "thunen-route-costs",
+        "rates": [
+          2,
+          6
+        ],
+        "tonnes": 1
+      },
+      "questionSha256": "5fe38fe81a8150e0b774fef242d5e026b1f1d88c5ac5f6102cf468503ca98d14",
+      "stimulusSha256": "6445a78ab1818a06845d4c2e4b317eda960191c7c458d3173d27218ffdc47a87"
+    },
+    {
+      "questionId": "hug-5-8-004",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "M2 yields 50 units/tonne versus M1’s 30, illustrating competition between markets rather than one isolated market.",
+      "independentReview": "Independently calculated100−40−30=30 and150−40−60=50. Identical crop/unit production cost, stated market prices and one-tonne accounting eliminate hidden quantity differences. Net remainder per tonne is not land rent per hectare.",
+      "check": {
+        "type": "thunen-two-markets",
+        "production": 40,
+        "freight": 3
+      },
+      "questionSha256": "33d43e11157d0bef914b2450bc8955029047caada1e00e208fc79db87e39896e",
+      "stimulusSha256": "a0d774d5eb1927fbf7794494e416fc0181f859f64d231169f86e7258de2b5f01"
+    },
+    {
+      "questionId": "hug-5-8-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Moving heavy, bulky material with costly historical transport can make distance expensive even without rapid spoilage.",
+      "independentReview": "Primary model exposition identifies historical firewood transport costs. Kept the claim conditional and historical, avoiding an inaccurate universal modern crop-ring ordering.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "20c6a200c158c72aaaec0aead34a2a1c165d0e70c5dded8e7a05c02819ab1b12"
+    },
+    {
+      "questionId": "hug-5-8-006",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "It can make more distant suitable locations competitive, weakening a simple proximity-only pattern.",
+      "independentReview": "Checked direction of effect from reduced distance-related costs, not a guaranteed increase in every ring’s radius or a claim that cold storage removes all costs.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "52293b9abf95addb910d6172b513c1c66774098bd22f45bea05ccaf1d1b10410"
+    },
+    {
+      "questionId": "hug-5-8-007",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Use its market-distance and transport-cost logic as one explanation, then examine how the region’s differing conditions modify the pattern.",
+      "independentReview": "Directly aligned PSO-5.D.1’s explanatory role and nonconformity limitation. No actual field classification or environmental condition is inferred from a schematic.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "fe94aa7aedb0641e3c336ecb1de7c3c41267b20a6350574280bd797483f6b6d4"
+    },
+    {
+      "questionId": "hug-5-8-008",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Crop locations combined with market prices, production suitability and actual route costs to buyers.",
+      "independentReview": "Selected evidence suited to comparing a transport model with observed specialty farming. Correlation would still require careful interpretation; no claim that a single mapped association proves sole causation.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "1cf2d83fb3bd3d39e4530cad6c7e65d93423c004955a1942de2e4a946a2520cf"
+    },
+    {
+      "questionId": "hug-5-8-009",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "12 km",
+      "independentReview": "Solved independently by600/(60−10)=12 and substitution1200−720=600−120=480. Only one listed distance satisfies equality. This tests a transition threshold, distinct from the earlier displayed-location comparisons.",
+      "check": {
+        "type": "thunen-equal-bids",
+        "intercepts": [
+          1200,
+          600
+        ],
+        "slopes": [
+          60,
+          10
+        ]
+      },
+      "questionSha256": "d2d3f3baa3e46298882e7570e3c302ce14b8caf13a3621b0f50e2adde86e2611"
+    },
+    {
+      "questionId": "hug-5-8-010",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Uniform production conditions across the surrounding plain.",
+      "independentReview": "Separated a physical-suitability departure from the corridor-rate and competing-market departures in the visual questions. No particular real crop’s requirements invented.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "5318cdaf1e037382d1b0c7aec67f87235f464a1e88c814ae284f7a456fdb5a1b"
+    },
+    {
+      "questionId": "hug-5-8-011",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Several markets, trade links and varied conditions violate the single isolated uniform-market setup.",
+      "independentReview": "Compared one-market local abstraction with a stated multiregion trading country. Avoided claiming a model is universally useless or that importing countries cannot produce food.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "6ac97c1be163f15362f4f24040e7532c06d02d7582086fde225aaf46d37cd7f1"
+    }
+  ]
+}

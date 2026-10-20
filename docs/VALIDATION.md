@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 5.7–5.8
+
+495 original MCQs across45 topics are published, eleven each;180 meaningful stimuli (36.36%) and197 explicit evidence/numerical/geometry checks. Spatial Organization traces an original grain/flour/bread chain, capacity-limited scale economies, operated-land concentration and net stage accounts. VonThünen uses original rings, rent-bid lines, equal-distance/different-rate corridors and competing-market accounts; equality independently solved at12 km with bids480. Assumptions and modern limitations are explicit.
+
+All171 tests, structural/evidence checks, TypeScript, production build, all68 Geography scopes and standard preview routes passed. Both full browser sessions scored11/11, all eight mobile stimuli inspected, keyboard ring zoom200/reset100 verified, and the rent graph checked on desktop in light mode. Existing215 checkpoint question files,172 stimuli and the complete approved catalog remain semantically unchanged; no student storage edits. Next5.9;23 topics/253 questions remain. Automated validation does not constitute independent human review or empirical difficulty calibration.
+
 ## Human Geography Topics 5.5–5.6
 
 473 original MCQs across43 topics are published, eleven each;172 meaningful stimuli (36.36%) and188 explicit evidence/numerical/geometry checks. Green Revolution questions assess seed/input interactions, uneven access, irrigation-area expansion offsetting lower unit water use, net farm returns and conditional land sparing. An initial water-balance draft was replaced before publication because it resembled1.5 too closely. Production Regions distinguishes household/sales shares, rent-paying capacity, regional crop concentration and rotation versus simultaneous intercropping;5.7 commodity-chain content is reserved for the next topic.

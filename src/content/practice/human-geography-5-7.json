@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 5,
+  "topicId": "topic-5-7",
+  "questions": [
+    {
+      "id": "hug-5-7-001",
+      "prompt": "The mill stops operating, and the bakery has no flour inventory or alternative supplier. Which effect most directly follows from the depicted commodity chain?",
+      "options": [
+        "Retail bread supply is independent of the mill because only farming is agricultural.",
+        "The bakery can replace flour with unprocessed grain without changing any equipment or process.",
+        "The bakery loses its stated flour supply, potentially interrupting later deliveries of bread to the shop.",
+        "The interruption establishes that every upstream farm has permanently stopped growing grain."
+      ],
+      "correctIndex": 2,
+      "explanation": "The chain links grain production, milling, baking and retail. The bakery depends on the mill’s flour under the stated no-inventory/no-alternative assumption, so a processing interruption can propagate downstream. This illustrates interdependence among stages rather than a guarantee that every actor immediately closes permanently. A: Agricultural commodity chains include processing and distribution, not only field production. B: The scenario provides no substitute processing capability at the bakery. C: This traces the interrupted flour link and the subsequent bread-delivery link. D: A downstream disruption does not by itself prove permanent cessation of upstream growing."
+    },
+    {
+      "id": "hug-5-7-002",
+      "prompt": "Both farms use equipment with the same annual fixed cost and the same variable cost per tonne, within its usable capacity. Which comparison correctly illustrates the fixed-cost economy of scale?",
+      "options": [
+        "Average cost is 160 units/tonne at 200 tonnes and 60 units/tonne at 1200 tonnes.",
+        "Average cost is 120 units/tonne at 200 tonnes and 20 units/tonne at 1200 tonnes.",
+        "Average cost is 40 units/tonne at either scale because fixed costs do not count.",
+        "Total annual cost must be lower at 1200 tonnes than at 200 tonnes."
+      ],
+      "correctIndex": 0,
+      "explanation": "Average cost equals fixed cost divided by output plus variable cost per tonne. At 200 tonnes it is 24000/200+40=160; at 1200 tonnes it is 24000/1200+40=60. The fixed cost is spread over more output. Total cost still rises from 32000 to 72000, so lower average cost does not mean lower total expenditure. A: This includes both the fixed-cost allocation and variable cost. B: These are only fixed costs per tonne and omit 40 variable units per tonne. C: Fixed cost contributes to average cost even when it does not vary with output in this range. D: Producing more uses more variable inputs, making total expenditure larger here."
+    },
+    {
+      "id": "hug-5-7-003",
+      "prompt": "Which statement correctly describes the change in the distribution of operated farmland?",
+      "options": [
+        "The total farmland doubled because the number of large operations increased.",
+        "The large-operation share fell from 75% to 50%.",
+        "The table proves every large operation is owned by a nonfamily corporation.",
+        "Large operations’ share rose from 50% to 75% while total operated farmland remained 4000 hectares."
+      ],
+      "correctIndex": 3,
+      "explanation": "Initially small operations cover 200×10=2000 hectares and large operations 20×100=2000. Later the figures are 100×10=1000 and 30×100=3000. Total land remains 4000, but large operations’ share increases from one-half to three-quarters. These size categories do not identify family ownership or explain every reason for consolidation. A: The area calculations show no change in the total. B: This reverses the direction of the calculated concentration change. C: Operating size and ownership/control are different classifications. D: This correctly combines operation counts with hectares per operation in both periods."
+    },
+    {
+      "id": "hug-5-7-004",
+      "prompt": "For this matched batch, which stage has the largest receipts-minus-all-costs remainder, rather than the largest gross receipts?",
+      "options": [
+        "Farm",
+        "Bakery",
+        "Mill",
+        "Retail"
+      ],
+      "correctIndex": 1,
+      "explanation": "Subtract all stated costs from each stage’s own receipts: farm 300−200=100, mill 900−800=100, bakery 1800−1600=200, retail 3000−2900=100. Bakery has the largest remainder. A higher downstream selling value does not by itself establish a higher profit because purchased inputs and other costs also matter. A: Farm retains 100, below bakery’s 200. B: Bakery’s 200 remainder is the unique largest. C: Mill’s gross receipts exceed farm’s, but its remainder is also 100. D: Retail has the largest receipts but also the largest costs, leaving 100."
+    },
+    {
+      "id": "hug-5-7-005",
+      "prompt": "A family owns and controls a large commercial grain operation. Which correction should be made to a report calling it nonfamily solely because of its acreage?",
+      "options": [
+        "Size and family ownership are separate attributes; the supplied ownership/control evidence supports the family classification.",
+        "All large operations must be nonfamily regardless of who owns and controls them.",
+        "Commercial sales automatically eliminate any family role in ownership.",
+        "Acreage alone identifies every ownership relationship without additional records."
+      ],
+      "correctIndex": 0,
+      "explanation": "Large-scale and family-owned are not mutually exclusive. Farm size measures the scale of operation, while family classification concerns ownership and control under the relevant definition. Consolidation can shift production toward larger family farms as well as other organizations, so a size-only inference is insufficient. A: This uses the relevant evidence rather than substituting acreage for ownership. B: The categorical rule contradicts the stated family ownership and control. C: Market sales describe production purpose, not who owns the business. D: Land area does not identify the legal or managerial relationships."
+    },
+    {
+      "id": "hug-5-7-006",
+      "prompt": "Several small farms share a harvester through a cooperative instead of each buying one. Under what condition could this reduce their average equipment cost?",
+      "options": [
+        "If the machine sits unused and scheduling costs exceed all avoided purchases.",
+        "If cooperation removes every variable operating expense by definition.",
+        "If shared use spreads fixed cost across enough combined output without excessive transport, waiting or coordination costs.",
+        "If owning a smaller farm automatically makes equipment free."
+      ],
+      "correctIndex": 2,
+      "explanation": "Sharing or contracting equipment can allow smaller operations to use capacity and distribute fixed costs over more output. Feasibility depends on scheduling, distance, seasonal timing and other costs. Economies associated with equipment therefore do not require every farmer to sell land or become one enormous operation. A: Those costs could offset or exceed the proposed saving. B: Fuel, repairs and labor can remain even when ownership is shared. C: This states the relevant scale benefit and its practical constraints. D: Farm size does not make purchased equipment costless."
+    },
+    {
+      "id": "hug-5-7-007",
+      "prompt": "A crop producer acquires the processing plant that handles its own harvest. Which organizational change is most directly illustrated?",
+      "options": [
+        "Horizontal expansion solely within crop production, with no change in stages controlled.",
+        "Vertical integration linking production and processing under common control.",
+        "A new independent center of plant domestication.",
+        "Subsistence production replacing every commercial transaction."
+      ],
+      "correctIndex": 1,
+      "explanation": "Vertical integration joins different stages of a commodity chain under common control. Here the producer adds processing. Acquiring another farm at the same production stage would instead illustrate horizontal expansion. Integration does not by itself specify whether all buyers benefit or how profits are distributed. A: The acquisition crosses from growing to processing rather than remaining solely within one stage. B: This names the cross-stage control described. C: Business ownership does not establish a domestication event. D: The scenario concerns organization of commercial activity, not the disappearance of sales."
+    },
+    {
+      "id": "hug-5-7-008",
+      "prompt": "A regional processor closes. Farmers must now truck the same perishable output farther to reach a qualified buyer. Which spatial effect is most plausible, all else equal?",
+      "options": [
+        "The disappearance of processing automatically removes all transport needs.",
+        "Every farm’s soil becomes less fertile at the moment the plant closes.",
+        "Longer journeys guarantee higher farmgate prices regardless of market conditions.",
+        "Greater hauling time and costs can reduce the farm-level return unless prices, methods or outlets change."
+      ],
+      "correctIndex": 3,
+      "explanation": "Processing locations are part of the agricultural production network. Losing a nearby outlet can increase transport expense and spoilage exposure, affecting the return from a given harvest. Actual responses could include alternate buyers, cooling, new processing or changed production, so a single inevitable outcome is not asserted. A: The harvest still needs a route to a buyer or another use. B: Plant closure does not itself change the farm’s soil properties. C: A longer trip does not guarantee compensation through higher prices. D: This links the altered network location to costs and possible adjustments."
+    },
+    {
+      "id": "hug-5-7-009",
+      "prompt": "A retailer’s quality and delivery rules cause farms in another region to change harvest timing and packaging. What does this most clearly illustrate?",
+      "options": [
+        "Only local rainfall can influence agricultural decisions.",
+        "Consumption and retail stages cannot influence producers.",
+        "Decisions at downstream stages can shape practices upstream in an agricultural commodity chain.",
+        "All farms must now have identical ownership and crop yields."
+      ],
+      "correctIndex": 2,
+      "explanation": "Commodity chains connect more than the physical movement of crops: contracts, specifications and demand can influence production and handling. The retailer’s requirements operate through those links. This does not eliminate local environmental constraints or make all participating farms organizationally identical. A: The scenario directly provides an additional institutional influence. B: The stated changes show a downstream-to-upstream influence. C: This identifies the cross-stage relationship without confusing product flow with the direction of instructions. D: Shared requirements do not determine ownership or equal yields."
+    },
+    {
+      "id": "hug-5-7-010",
+      "prompt": "A more productive farming system supports a larger population on a given land area. Which qualification is necessary when interpreting increased carrying capacity?",
+      "options": [
+        "It depends on technology, resource use, consumption and environmental conditions rather than being a permanently unlimited number.",
+        "It means no future input constraint or environmental change can matter.",
+        "It proves every household has equal access to the added output.",
+        "It is exactly equal to the number of farms, regardless of production."
+      ],
+      "correctIndex": 0,
+      "explanation": "Agricultural improvements can increase the population supportable under a set of conditions, but carrying capacity is conditional. Resource degradation, water limits, consumption patterns, technology and distribution can change what is feasible. A production gain is not proof of limitless growth or equal access. A: This retains the productivity relationship while stating its assumptions and limits. B: Inputs and environmental conditions can constrain future output. C: Aggregate capacity does not establish distribution among households. D: Farm count alone does not measure food supply relative to needs."
+    },
+    {
+      "id": "hug-5-7-011",
+      "prompt": "A manager assumes average cost will continue falling at the same rate even after output exceeds the harvester’s capacity and a second machine is needed. What is the best critique?",
+      "options": [
+        "Fixed costs can never affect average cost at any scale.",
+        "A capacity threshold can change the cost structure, so the earlier fixed-cost relationship should not be extrapolated without adjustment.",
+        "Buying a second machine automatically doubles crop yield per hectare.",
+        "Any economy of scale guarantees that total costs fall as output grows."
+      ],
+      "correctIndex": 1,
+      "explanation": "The original average-cost relationship assumes a fixed equipment stock within capacity. Requiring another machine changes fixed cost and may alter scheduling, labor and other inputs. Scale economies can exist over a range without implying the same rate forever or lower total expenditure. A: Fixed-cost allocation is a valid mechanism within its appropriate range. B: This identifies the changed assumption that invalidates a simple extrapolation. C: Equipment capacity and biological yield per hectare are different measures. D: Lower average cost does not require lower total cost."
+    }
+  ]
+}

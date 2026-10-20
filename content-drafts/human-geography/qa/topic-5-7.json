@@ -1,0 +1,143 @@
+{
+  "topicNumber": "5.7",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "b103e63acbc98a84023dd52d9e38af475c4eaaa593197200f519dfe9b35d394a",
+  "scopeReview": "PSO-5.C.3–5: consolidation, complex commodity chains, technology, economies of scale and conditional carrying capacity. Distinguishes operated size from family control; organizational and location links explained without universal ownership or benefit claims.",
+  "varietyReview": "Four meaningful stimuli: directed grain/flour/bread network, fixed/variable cost table, counts×area consolidation comparison and separate stage accounts. Checks recompute dependency structure, average/total costs, conserved farmland and net remainders. Applications assess sharing, cross-stage control, outlet loss and downstream requirements.",
+  "repetitionReview": "Distinct chain-tracing, scale-cost, aggregation and account tasks. The cost-extrapolation question changes an explicit capacity assumption rather than simply replacing numbers. Original hypothetical figures and scenarios; varied keys and all-option reasoning. No empirical difficulty calibration.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.ers.usda.gov/amber-waves/2018/march/examining-consolidation-in-u-s-agriculture",
+    "https://ers.usda.gov/sites/default/files/_laserfiche/publications/45108/39359_err152.pdf",
+    "https://www.fao.org/sustainable-food-value-chains/what-is-it/en/"
+  ],
+  "referenceNote": "USDA original research and FAO framework checked for broad scale/ownership/chain concepts. No historical statistics, third-party diagram, question or resource imported. All numerical evidence invented; no independent human review claimed.",
+  "questions": [
+    {
+      "questionId": "hug-5-7-001",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "The bakery loses its stated flour supply, potentially interrupting later deliveries of bread to the shop.",
+      "independentReview": "Independently traced Farm→Mill→Bakery→Shop with distinct grain/flour/bread products. Inventory and alternative-supplier exclusions make the immediate flour interruption unambiguous; timing and permanent closure are not inferred.",
+      "check": {
+        "type": "organization-chain-dependency"
+      },
+      "questionSha256": "9826aebdbd0f5b8114fa20de1c53f9215a893819a807d40a71e55e3aa6be23ba",
+      "stimulusSha256": "550bf3572f156909721147292f4d6af96770745752013fcdb21b6dc1b85a8d40"
+    },
+    {
+      "questionId": "hug-5-7-002",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Average cost is 160 units/tonne at 200 tonnes and 60 units/tonne at 1200 tonnes.",
+      "independentReview": "Recomputed total costs24000+40×200=32000 and24000+40×1200=72000; average160/60. Capacity assumption excludes a hidden new-machine purchase. Distinguishes economies of scale from unchanged variable-cost rates.",
+      "check": {
+        "type": "organization-fixed-cost-scale"
+      },
+      "questionSha256": "7c82fcaac3fc953771a6af97cf3dcda27a5f673620ecc44c964b8ae984ce3cfd",
+      "stimulusSha256": "c9f250e0e707a82d19cd81c55328803d4ec9e66fecfbe2e5233b06bbafb753a3"
+    },
+    {
+      "questionId": "hug-5-7-003",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Large operations’ share rose from 50% to 75% while total operated farmland remained 4000 hectares.",
+      "independentReview": "Independently multiplied counts by per-operation areas:2000+2000=4000 initially,1000+3000=4000 later. Large share50%→75%, not a count share. No household displacement, ownership or actual historical country data inferred.",
+      "check": {
+        "type": "organization-land-concentration"
+      },
+      "questionSha256": "c6e86c74313e9d1c4871054f7b7720d7c728bee791fa7e9626d07816ed78b2eb",
+      "stimulusSha256": "3b8d191a00a6b7ef833c1a8e2f7a3cf29befbc009612995a0d631892f667f763"
+    },
+    {
+      "questionId": "hug-5-7-004",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Bakery",
+      "independentReview": "Independently calculated all four remainders100/100/200/100. Costs include purchased intermediate goods and all other batch costs, preventing revenue from being mislabeled profit. These are separate business accounts, not additive physical outputs or an invented actual price chain.",
+      "check": {
+        "type": "organization-stage-remainders"
+      },
+      "questionSha256": "1dc7020d4d1073c2f58392c8875c93728f21f9a751594d88023ea0f0014831a2",
+      "stimulusSha256": "8ad1f8ee037bb8edfb9238baeb08399790d2a393cc3b5abdf2de1ecdd4354922"
+    },
+    {
+      "questionId": "hug-5-7-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Size and family ownership are separate attributes; the supplied ownership/control evidence supports the family classification.",
+      "independentReview": "USDA farm-structure research explicitly distinguishes large family and nonfamily operations. No U.S. percentage generalized worldwide and no claim that every national legal definition is identical.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b706a0f2551c2bfd86150dfce97d4332265516e65e9141f75c1372f5664f17e4"
+    },
+    {
+      "questionId": "hug-5-7-006",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "If shared use spreads fixed cost across enough combined output without excessive transport, waiting or coordination costs.",
+      "independentReview": "Checked the condition is sufficient in the simplified cost mechanism, not a guarantee that all cooperatives save money. USDA equipment-sharing discussion corroborates a feasible alternative to land consolidation.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b33d89a8cfa1f74abc235383f7de46becea6e7a5958bb00faadd8828b67c5edb"
+    },
+    {
+      "questionId": "hug-5-7-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Vertical integration linking production and processing under common control.",
+      "independentReview": "Compared cross-stage versus same-stage acquisition directly from the facts. No claim that every vertically integrated firm owns every transport/retail stage or has unlimited market power.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "6bdd4149e52c350fe7f1b4d2b98cbafab91824315156721a7a6902cde65bad9d"
+    },
+    {
+      "questionId": "hug-5-7-008",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Greater hauling time and costs can reduce the farm-level return unless prices, methods or outlets change.",
+      "independentReview": "Checked the statement is conditional on unchanged output and other factors. Cost and perishability are mechanisms, not a quantified forecast or proof all farms close.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "afa4faa86642f5e061011647c9117c95dacbc2c9305e2925221b24dedb0c99ad"
+    },
+    {
+      "questionId": "hug-5-7-009",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Decisions at downstream stages can shape practices upstream in an agricultural commodity chain.",
+      "independentReview": "Distinguished physical product flow toward consumers from information/requirements moving toward suppliers. A realistic hypothetical linkage, not a verified policy attributed to an actual retailer.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "214db516a8c985f82113359d0a2a82f0c533dc6db181e79fe528d3585a016930"
+    },
+    {
+      "questionId": "hug-5-7-010",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "It depends on technology, resource use, consumption and environmental conditions rather than being a permanently unlimited number.",
+      "independentReview": "Cross-checked PSO-5.C.5 technology/carrying-capacity scope, avoiding an immutable global ceiling or an unlimited-growth claim. No unsupported numerical population estimate.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "23b1e9f8f0e3c6d3a6be88c15d740efe7dfc7339ed0689ee0dae7eb6e5b05e43"
+    },
+    {
+      "questionId": "hug-5-7-011",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "A capacity threshold can change the cost structure, so the earlier fixed-cost relationship should not be extrapolated without adjustment.",
+      "independentReview": "Checked against the explicit within-capacity assumption in the numerical item, now testing model transfer rather than another numeric clone. No claim that costs must rise or fall by a particular amount beyond the threshold.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "c898f907c257ca1e043c84e131d99798fe7a447544f3f698bd415bbf3c100757"
+    }
+  ]
+}
