@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 3,
+  "topicId": "topic-3-1",
+  "questions": [
+    {
+      "id": "hug-3-1-001",
+      "prompt": "Which field-note entries most directly describe learned cultural practices rather than a physical environmental measurement?",
+      "options": [
+        "A and C only",
+        "B and C only",
+        "C only",
+        "A and B only"
+      ],
+      "correctIndex": 3,
+      "explanation": "Teaching a shared recipe and transmitting a rule about footwear both describe learned practices and expectations. Annual rainfall is a physical measurement. Environmental conditions can influence available resources and practices, but the rainfall amount itself is not a learned cultural behavior. A: A is a learned practice, but C is a physical climate measurement. B: B is a learned expectation, but C does not describe a transmitted practice. C: C is the environmental observation, not either of the cultural examples. D: Both entries describe practices passed through social learning, while excluding the physical measurement."
+    },
+    {
+      "id": "hug-3-1-002",
+      "prompt": "What is the strongest supported use of this one-trait map when describing culture?",
+      "options": [
+        "Treat each shaded class as a complete, internally uniform culture.",
+        "Describe a north–south difference in courtyard use while recognizing that one trait does not define every cultural characteristic.",
+        "Infer that everyone in the north uses a courtyard and nobody in the south does.",
+        "Assign every resident’s ethnicity from the district percentage."
+      ],
+      "correctIndex": 1,
+      "explanation": "Courtyard use is more frequent in the northern districts in this hypothetical survey, but all values are between zero and 100. The map describes one architectural practice at district scale. Other practices, identities and within-district differences remain unmeasured, so the class boundary is not a complete cultural boundary. A: One architectural measure cannot establish a uniform package of all cultural traits. B: This states the observed pattern and the limits of its cultural interpretation. C: Values of 80/70 and 25/20 show variation rather than universal use or absence. D: An architectural percentage does not determine every individual’s ethnic identity."
+    },
+    {
+      "id": "hug-3-1-003",
+      "prompt": "Each respondent reports the one preparation most often used for a shared staple food. Which interpretation of the age-group data is justified?",
+      "options": [
+        "Practices vary within this society, and the one-time data do not prove that individuals never change their preparation.",
+        "Only the oldest group has culture because it favors Preparation A.",
+        "Every member of each age group uses the same preparation.",
+        "The data prove that Preparation A is biologically inherited."
+      ],
+      "correctIndex": 0,
+      "explanation": "Both preparations occur in every age group, with different proportions. Shared culture can include variation rather than identical behavior by all members. A one-time age comparison does not follow individuals through life or establish whether they later change practices, and it contains no evidence of biological inheritance. A: This preserves the observed variation and the limits of a single-time comparison. B: All groups participate in learned food practices; favoring one preparation is not a test of having culture. C: Every percentage lies between zero and 100, so neither preparation is universal in any group. D: A distribution of learned practices does not establish a genetic mechanism."
+    },
+    {
+      "id": "hug-3-1-004",
+      "prompt": "Which comparison of the two observers’ approaches is most accurate?",
+      "options": [
+        "A is culturally relativist because A ranks the practice using home standards.",
+        "Both observers have established that all practices are identical everywhere.",
+        "A uses an ethnocentric judgment; B seeks contextual understanding associated with cultural relativism.",
+        "B is ethnocentric solely because B asks participants about the practice."
+      ],
+      "correctIndex": 2,
+      "explanation": "Ethnocentrism judges another practice by the observer’s own cultural standards. Cultural relativism seeks to understand a practice in its social and cultural context. Observer B’s inquiry into meanings fits that approach; understanding context does not require claiming that all practices are identical or suspending every ethical assessment. A: Ranking another practice by one’s home standard is the ethnocentric feature, not the relativist one. B: The observations concern different interpretations, not universal identity of practices. C: This matches A’s external ranking and B’s contextual inquiry to the two attitudes. D: Asking participants about meanings is evidence of contextual investigation rather than an automatic external ranking."
+    },
+    {
+      "id": "hug-3-1-005",
+      "prompt": "An apprentice learns a weaving technique from neighbors, then teaches it to others using a newer tool. Which feature of culture does this illustrate?",
+      "options": [
+        "Culture is transmitted socially and can be adapted through changing technologies.",
+        "A practice ceases to be cultural whenever a tool changes.",
+        "Only practices transmitted biologically can be shared.",
+        "Teaching a skill eliminates its social meaning."
+      ],
+      "correctIndex": 0,
+      "explanation": "A learned technique passed between people is an example of cultural transmission. Using a newer tool can modify how the practice is carried out without erasing its learned and shared character. Continuity and change can coexist; culture is not defined by the absence of innovation. A: This accounts for both social learning and adaptation. B: A technological change does not remove the teaching and shared practice described. C: Culture includes learned knowledge and behavior rather than requiring genetic transmission. D: Teaching is a means of transmitting knowledge, not proof that meaning disappears."
+    },
+    {
+      "id": "hug-3-1-006",
+      "prompt": "A community shares both an irrigation device and a customary rotation for access to water. Which statement captures these as cultural features?",
+      "options": [
+        "Only the rainfall total is cultural; learned technologies and rules are not.",
+        "The device is inherited genetically, while the rotation is unrelated to shared behavior.",
+        "Both features must be identical in every community with irrigation.",
+        "The device represents a shared technology, and the rotation represents a learned social practice."
+      ],
+      "correctIndex": 3,
+      "explanation": "Culture includes technologies as well as attitudes, rules and behaviors. The device and the customary access rotation are different but related expressions of shared knowledge and practice. Physical water conditions matter to their use, but they do not require every community to adopt an identical arrangement. A: Rainfall is physical, while the learned device use and access practices are cultural features. B: The scenario describes shared technological knowledge and a customary rule, not a genetic mechanism. C: Different communities can use different technologies or access arrangements in similar settings. D: This identifies the technological and behavioral dimensions without excluding either from culture."
+    },
+    {
+      "id": "hug-3-1-007",
+      "prompt": "Neighboring communities have similar soils and crops but prepare the same grain in different customary ways. What is the best geographic interpretation?",
+      "options": [
+        "Identical resources require identical food customs, so one report must be false.",
+        "Resources influence possibilities, while learned preferences and histories can produce different practices.",
+        "Food preparation is unrelated to culture whenever an ingredient is locally available.",
+        "The difference proves that physical conditions never matter to any practice."
+      ],
+      "correctIndex": 1,
+      "explanation": "Available resources help shape what people can use, but they do not uniquely determine preparation or meaning. Learned preferences, histories and social practices can produce different uses of the same grain. The example supports interaction between environment and culture rather than either complete environmental control or complete irrelevance. A: Similar physical opportunities do not force one unique cultural practice. B: This recognizes environmental possibilities and socially learned variation together. C: Use of a local ingredient can still involve a learned cultural practice. D: Variation does not prove that resource availability is irrelevant in all cases."
+    },
+    {
+      "id": "hug-3-1-008",
+      "prompt": "A survey asks why another society has “failed to adopt our normal family meal.” Which revision most directly reduces the ethnocentric framing?",
+      "options": [
+        "Why is our meal arrangement more civilized than yours?",
+        "How quickly will everyone abandon the inferior meal arrangement?",
+        "How do participants describe the meal’s organization, meaning and place in daily life?",
+        "Which families deviate most from the only proper meal arrangement?"
+      ],
+      "correctIndex": 2,
+      "explanation": "The original wording treats the researcher’s meal as a universal norm and the other arrangement as failure. Asking participants to explain organization and meaning supports contextual investigation. It does not predetermine superiority, inferiority or an inevitable direction of change before evidence is collected. A: This retains an external hierarchy of civilized versus less civilized. B: This assumes inferiority and inevitable abandonment. C: This asks for evidence and participant meanings without pre-ranking the practices. D: This retains the premise that one arrangement is the only proper standard."
+    },
+    {
+      "id": "hug-3-1-009",
+      "prompt": "A long-established festival adds digital ticketing while participants continue teaching its songs and meanings. Which conclusion is most defensible?",
+      "options": [
+        "Digital tools prove that all cultural knowledge has disappeared.",
+        "A traditional practice must remain unchanged in every detail to count as culture.",
+        "A change in ticketing establishes that participants share no identity.",
+        "A transmitted practice can change some organizational features while retaining meaningful continuity."
+      ],
+      "correctIndex": 3,
+      "explanation": "Cultural practices can be maintained and recreated rather than frozen. The supplied teaching of songs and meanings supports continuity, while digital ticketing changes one organizational feature. Neither total disappearance nor complete absence of identity follows from the adoption of a tool. A: The ongoing teaching directly contradicts the disappearance of all knowledge. B: Change does not automatically remove a practice’s learned, shared character. C: A ticketing method does not determine the presence or absence of every shared identity. D: This accommodates both the stated continuity and the specific innovation."
+    },
+    {
+      "id": "hug-3-1-010",
+      "prompt": "A food custom is practiced in settlements on both sides of a political border, with differences within each country. What follows about describing cultural regions?",
+      "options": [
+        "Cultural traits can cross state borders and need not make each country internally uniform.",
+        "Each state boundary must mark the end of every cultural practice.",
+        "All settlements sharing one food custom must share every other trait.",
+        "Within-country variation makes any geographic study of culture impossible."
+      ],
+      "correctIndex": 0,
+      "explanation": "Political and cultural boundaries are not automatically identical. A shared practice can extend across countries while other traits vary locally. A cultural region is therefore interpreted using the relevant traits and scale, not assumed to coincide with every state boundary or to describe complete uniformity. A: This fits the cross-border distribution and within-country variation supplied. B: The stated cross-border practice contradicts such an absolute boundary rule. C: Sharing one trait does not establish identity in all other practices or beliefs. D: Variation is a subject for geographic analysis rather than a reason it cannot be studied."
+    },
+    {
+      "id": "hug-3-1-011",
+      "prompt": "A researcher interviews only volunteers at one traditional-food festival, then says every resident regularly eats those foods. What is the strongest problem with the conclusion?",
+      "options": [
+        "Food preferences can never be studied using interviews.",
+        "A self-selected festival sample may overrepresent participants interested in the tradition.",
+        "A festival automatically includes every resident in equal proportions.",
+        "The interview setting proves that no participant knows the food practice."
+      ],
+      "correctIndex": 1,
+      "explanation": "The sampling frame matters. Volunteers at a specific traditional-food festival may be especially interested in that practice, so their responses cannot automatically represent all residents. Interviews can still provide useful evidence about participants and meanings, but generalizing regular consumption to everyone requires a suitable broader design. A: Interviews can study preferences; the issue is the unsupported population generalization. B: This identifies the selection mechanism that could bias the conclusion. C: No equal or complete resident coverage is supplied. D: The setting does not establish lack of participant knowledge."
+    }
+  ]
+}

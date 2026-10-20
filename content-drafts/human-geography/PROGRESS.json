@@ -1,23 +1,23 @@
 {
   "officialTopics": 68,
   "targetQuestions": 748,
-  "completedTopics": 19,
-  "questions": 209,
-  "stimulusQuestions": 76,
+  "completedTopics": 21,
+  "questions": 231,
+  "stimulusQuestions": 84,
   "stimulusPercent": 36.36,
   "visualCounts": {
-    "map:choropleth": 7,
+    "map:choropleth": 8,
     "map:dot": 3,
     "map:isoline": 1,
-    "map:reference": 3,
-    "table": 34,
-    "chart": 17,
+    "map:reference": 4,
+    "table": 38,
+    "chart": 19,
     "map:flow": 4,
     "model": 2,
     "pyramid": 3,
     "map:proportional": 2
   },
-  "modelChecks": 87,
+  "modelChecks": 95,
   "topics": [
     {
       "topic": "1.1",
@@ -132,11 +132,21 @@
       "topicId": "topic-2-12",
       "unitNumber": 2,
       "questions": 11
+    },
+    {
+      "topic": "3.1",
+      "topicId": "topic-3-1",
+      "unitNumber": 3,
+      "questions": 11
+    },
+    {
+      "topic": "3.2",
+      "topicId": "topic-3-2",
+      "unitNumber": 3,
+      "questions": 11
     }
   ],
   "missing": [
-    "3.1",
-    "3.2",
     "3.3",
     "3.4",
     "3.5",
@@ -187,9 +197,9 @@
   ],
   "withheldQuestionIds": [],
   "humanReviewPerformed": false,
-  "publishedQuestions": 209,
-  "publishedTopics": 19,
-  "nextTopic": "3.1",
+  "publishedQuestions": 231,
+  "publishedTopics": 21,
+  "nextTopic": "3.3",
   "policy": "validated-original-topic-automatic-publication",
   "latestVerifiedCourseVideoCheckpoint": "cb53a849201db7b863bfeec26e508dec82c12b8a",
   "limitations": [

@@ -1,0 +1,142 @@
+{
+  "topicNumber": "3.1",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "5ab745f6ef2420a168eda70b6311ac7bf2008fdeb2149b3dffe285bf8743c679",
+  "scopeReview": "PSO-3.A.1–3: shared transmitted practices/technologies/attitudes/behavior; food, architecture, land use; ethnocentrism and cultural relativism. Avoids biological determinism, uniform-group stereotypes and conflating contextual understanding with unconditional ethical approval. June2026 clarifications do not alter this topic scope.",
+  "varietyReview": "Field-note classification table, one-trait architecture map, within-society age/practice chart and observer-attitude table. Other tasks address technology/norms, resources/preferences, neutral inquiry, continuity/change, political boundaries and sampling. All five skills, mixed difficulty and varied keys.",
+  "repetitionReview": "New cultural constructs distinguish these from Unit1 data methods: contextual interpretation versus ranking, shared technology versus physical statistic and internal cultural variation. Sampling and scale are applied to cultural claims rather than repeating prior stems or data.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description-clarifications.pdf",
+    "https://databrowser.uis.unesco.org/resources/glossary/2520"
+  ],
+  "referenceNote": "Primary curriculum and UNESCO cultural-transmission context; original invented communities/statements/data. No copied activity, named-group stereotypes or student resource additions. No independent human review claimed.",
+  "questions": [
+    {
+      "questionId": "hug-3-1-001",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "A and B only",
+      "independentReview": "Classified transmission mechanisms in supplied notes: recipe taught, etiquette taught, rainfall measured. Interaction between environment and culture does not turn a climate statistic itself into a learned norm.",
+      "check": {
+        "type": "culture-field-note-types"
+      },
+      "questionSha256": "9f4e160fdc721beef2ff31bfe1917d8f3855a64edad836ee91a796d13ba7e39b",
+      "stimulusSha256": "ba2b46bda6cd3e79cae60a46a9f9d994fee88670ec9eb018a25cce7e3e76d75f"
+    },
+    {
+      "questionId": "hug-3-1-002",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Describe a north–south difference in courtyard use while recognizing that one trait does not define every cultural characteristic.",
+      "independentReview": "Compared north80/70 to south25/20, all nonzero and below100. Interpreted a single measured trait, avoiding whole-culture or individual-identity inference from aggregate shading.",
+      "check": {
+        "type": "culture-courtyard-pattern"
+      },
+      "questionSha256": "5fc81c47aa63f156a1439b8cc076c7e9694339608097c400ffe4700b213c6fc3",
+      "stimulusSha256": "5aae9d7918268ee4ad5ae2d02fb43a26f8ef089421afd491be3ade55d1203211"
+    },
+    {
+      "questionId": "hug-3-1-003",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Practices vary within this society, and the one-time data do not prove that individuals never change their preparation.",
+      "independentReview": "Checked each pair sums100 and each preparation appears in all three groups. Observations are cross-sectional, so differences by age do not establish individual constancy or a transmission mechanism.",
+      "check": {
+        "type": "culture-age-practices"
+      },
+      "questionSha256": "4e14aa20430520e6d1051bd61cfc44788a812e97127ca350ef34ac3b862b6b67",
+      "stimulusSha256": "e9907ff224c2c707762379ded0a2639532c2fb6ce846927c5d01f622270ec8c0"
+    },
+    {
+      "questionId": "hug-3-1-004",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "A uses an ethnocentric judgment; B seeks contextual understanding associated with cultural relativism.",
+      "independentReview": "Compared the actual basis of interpretation: A treats home practice as the universal standard; B investigates local meanings. Kept cultural relativism distinct from asserting identical cultures or unconditional moral approval.",
+      "check": {
+        "type": "culture-observer-attitudes"
+      },
+      "questionSha256": "007c950fa84a545102cddca1efa18fc183bc18caaa9c3853354a008991f2e671",
+      "stimulusSha256": "f8aba067f8de6a5c517dc9c67f9f3925a9f35b4e3e5fbb3f9323d6e38c176797"
+    },
+    {
+      "questionId": "hug-3-1-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Culture is transmitted socially and can be adapted through changing technologies.",
+      "independentReview": "Identified neighbor/apprentice teaching as social transmission and the new tool as adaptation. No claim that every technological change preserves all meanings or that cultural continuity requires unchanged equipment.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "8fafdbafbd7927d5cdb9db15aa8aded2a5a6ed23e5696460fbd8439dbcbf8f54"
+    },
+    {
+      "questionId": "hug-3-1-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "The device represents a shared technology, and the rotation represents a learned social practice.",
+      "independentReview": "Separated a material technology from a social access practice while recognizing both as learned cultural expressions. Avoided environmental determinism and any assertion of biological inheritance.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b4d4d09892706cf54e517a3b0dd80682bc05ccffabf75b73577193d557237727"
+    },
+    {
+      "questionId": "hug-3-1-007",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Resources influence possibilities, while learned preferences and histories can produce different practices.",
+      "independentReview": "Held crop/soil conditions similar while varying learned preparation. This rejects one-to-one environmental determination without denying that ingredients constrain possibilities; no real group’s custom is invented.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "745f74240a357c7a5aa57d6aae0ea4e47af5de5e1f03b7c2b0e1dcea5d29af51"
+    },
+    {
+      "questionId": "hug-3-1-008",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "How do participants describe the meal’s organization, meaning and place in daily life?",
+      "independentReview": "Inspected presuppositions in the wording rather than the meal itself. The neutral contextual question does not assume any practice is ethically beyond critique; it avoids embedding a cultural ranking in the data-collection prompt.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "13b11316dd0c4091fe13fe77e72fee959d21ccc9bd007b7cfd9c5398715e9270"
+    },
+    {
+      "questionId": "hug-3-1-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "A transmitted practice can change some organizational features while retaining meaningful continuity.",
+      "independentReview": "Kept the scope of change limited to ticketing and continuity grounded in explicit transmission of songs/meanings. Did not claim that every festival innovation is harmless or that all aspects remain unchanged.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "a792330b396c18b269bb3fa8ba9a47c2c989c19ddced4a28da19b965367972de"
+    },
+    {
+      "questionId": "hug-3-1-010",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Cultural traits can cross state borders and need not make each country internally uniform.",
+      "independentReview": "Compared two spatial partitions: state boundaries and the observed trait distribution. Their mismatch is explicit; no complete culture or individual identity is inferred from one food practice.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "865883a6d299c1946be53ce292029790cb156b2c55db9a9b1534ec757eaeb2b7"
+    },
+    {
+      "questionId": "hug-3-1-011",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "A self-selected festival sample may overrepresent participants interested in the tradition.",
+      "independentReview": "Identified selection into festival attendance and volunteering as possible overrepresentation of the trait. The conclusion fails because its population scope exceeds the sample, not because qualitative interviews are inherently invalid.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "11d93033d9d54d8219e1e24b83404e9ff4393df58da8cc1b5340a0787534ac26"
+    }
+  ]
+}

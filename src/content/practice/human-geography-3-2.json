@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 3,
+  "topicId": "topic-3-2",
+  "questions": [
+    {
+      "id": "hug-3-2-001",
+      "prompt": "The mapped mill building remains but now contains housing; an older rail corridor also remains beside new homes. Which interpretation best fits this landscape?",
+      "options": [
+        "Every feature was created at the same moment because all appear on one current map.",
+        "Reuse removes every trace of the earlier industrial landscape.",
+        "Features from successive periods coexist, illustrating sequent occupance.",
+        "The presence of rail proves that every present resident works in manufacturing."
+      ],
+      "correctIndex": 2,
+      "explanation": "A current cultural landscape can contain layers of earlier and later land use. The retained mill form, changed residential use, rail corridor and newer homes provide evidence of successive occupation and modification. Sequent occupance does not require every earlier feature to remain unchanged or reveal each resident’s occupation. A: A current map can record features with different construction histories. B: The retained mill and corridor are explicit traces despite changed use. C: This recognizes the coexistence of historical layers and adaptation. D: Infrastructure alone does not establish everyone’s current employment."
+    },
+    {
+      "id": "hug-3-2-002",
+      "prompt": "Which description best captures the cultural landscapes documented in the field notes?",
+      "options": [
+        "Only objects with no human modification can be part of a cultural landscape.",
+        "The landscapes consist only of written beliefs, with no material or physical features.",
+        "Agricultural practices cannot express culture because they involve soil and water.",
+        "Physical settings, built forms and shared practices combine in the observed landscapes."
+      ],
+      "correctIndex": 3,
+      "explanation": "Cultural landscapes reflect interactions between people and environments. A worship building and multilingual signs are built and linguistic expressions; terraces and coordinated irrigation combine terrain, technology and social practice. Neither natural setting alone nor beliefs isolated from material expressions captures all the supplied evidence. A: Human modification and meanings are central to these observations, not grounds for exclusion. B: Buildings, signs, terraces and canals are material features as well as expressions of practices. C: Agriculture involves learned land and resource use, not merely unmodified nature. D: This integrates the physical and cultural dimensions documented at both sites."
+    },
+    {
+      "id": "hug-3-2-003",
+      "prompt": "The chart records permitted access hours under stated local rules, not actual attendance. What does it show about the organization of space?",
+      "options": [
+        "Every public site has the same access rules for women and men.",
+        "Gendered rules restrict women’s access to the park more than men’s, while the other two sites have equal hours.",
+        "Women must attend every site for exactly the number of hours permitted.",
+        "Physical terrain alone explains the park difference, despite the explicitly stated rules."
+      ],
+      "correctIndex": 1,
+      "explanation": "At the park, women have two permitted hours and men eight. Both groups have eight hours at the library and transit hall. This illustrates how gender-related rules can shape access to particular spaces. Permission is not actual use, and one site’s inequality should not be generalized to all spaces or attributed solely to physical geography. A: The park values differ, so equality is not universal. B: This accurately locates the unequal rule and the two equal comparisons. C: An available time window does not establish attendance or preferences. D: The scenario specifies institutional rules, so terrain alone is not the supplied mechanism."
+    },
+    {
+      "id": "hug-3-2-004",
+      "prompt": "A land survey labels this area “unused” because it contains no permanent houses. What is the strongest problem with that interpretation?",
+      "options": [
+        "It overlooks documented seasonal use and community meanings that permanent-building counts do not capture.",
+        "No permanent houses proves there are no cultural practices in the area.",
+        "Seasonal grazing automatically eliminates every possible competing land interest.",
+        "The survey can determine every resident’s identity from the absence of houses."
+      ],
+      "correctIndex": 0,
+      "explanation": "Permanent structures are only one kind of landscape evidence. The notes document seasonal grazing, shared management and a gathering place, so an unused label based solely on houses misses activities and meanings. Recognizing those uses does not by itself resolve legal ownership or every competing claim; it improves the geographic description. A: This uses the supplied practices to identify the limitation of the building-only indicator. B: Absence of houses does not negate the explicitly recorded land use. C: Documenting a use is not the same as deciding every legal or political interest. D: Building absence does not identify all individuals or their affiliations."
+    },
+    {
+      "id": "hug-3-2-005",
+      "prompt": "A former worship building has become a public museum while retaining its distinctive tower. What can the visible tower establish by itself?",
+      "options": [
+        "Every museum visitor belongs to the building’s former religious community.",
+        "Its exterior form provides a trace of an earlier use, but does not identify every current user’s beliefs.",
+        "The building cannot have changed function because its tower remains.",
+        "Every resident of the surrounding district practices the same religion."
+      ],
+      "correctIndex": 1,
+      "explanation": "Built forms can retain evidence of earlier cultural uses after functions change. The tower is consistent with the stated history, while the present museum use shows adaptation. Individual beliefs and district-wide religious identity cannot be read directly from one exterior feature. A: Visiting a museum does not establish adherence to its former religious use. B: This distinguishes historical material evidence from present individual identity. C: The explicitly stated conversion shows that form and function can change at different rates. D: One building cannot establish uniform belief throughout a district."
+    },
+    {
+      "id": "hug-3-2-006",
+      "prompt": "An ethnic neighborhood contains bilingual shop signs, a community center and businesses serving several surrounding districts. Which interpretation is most defensible?",
+      "options": [
+        "The neighborhood boundary excludes every person with another identity.",
+        "Each business has exactly the same cultural meaning for every customer.",
+        "The cultural landscape has no connection to shared identity because customers travel there.",
+        "Visible institutions can express identity while the neighborhood remains connected to wider urban flows."
+      ],
+      "correctIndex": 3,
+      "explanation": "Signs and community institutions can contribute to a recognizable neighborhood identity. Customers and other connections also link that place to the wider city, so cultural distinctiveness need not mean complete separation or exclusive occupancy. The evidence does not assign one identity or meaning to every resident or visitor. A: A recognizable cultural district need not have an impermeable social boundary. B: Customers can interpret and use the same business differently. C: Wider connections do not erase the identity expressed in the local landscape. D: This combines local expression with the supplied interdistrict connections."
+    },
+    {
+      "id": "hug-3-2-007",
+      "prompt": "A new civic building deliberately mixes classical columns, a playful oversized arch and contemporary materials rather than following one consistent historical style. Which architectural interpretation best fits?",
+      "options": [
+        "An unmodified natural landform with no cultural design.",
+        "Proof that the building is an untouched ancient structure.",
+        "An example consistent with postmodern stylistic mixing and historical reference.",
+        "Evidence that all buildings using glass have the same style."
+      ],
+      "correctIndex": 2,
+      "explanation": "Deliberate eclectic references and playful combinations of older motifs with contemporary forms are consistent with postmodern architectural design. The scenario supplies more than a material such as glass; style is interpreted from the arrangement and references. A new building using historical forms is not necessarily an ancient structure. A: The described design is human construction rather than an unmodified landform. B: Historical references can be newly built, as the scenario explicitly states. C: This matches the deliberate mixture and play with styles. D: One material alone does not establish the style of every building."
+    },
+    {
+      "id": "hug-3-2-008",
+      "prompt": "Households use locally available timber in a long-taught house design, while neighboring households use imported materials and a different arrangement. What does this suggest?",
+      "options": [
+        "Resources, learned designs and wider connections can all influence architectural landscapes.",
+        "Local timber forces every household to build an identical house.",
+        "Imported materials prevent any house from expressing culture.",
+        "Differences prove that available resources are irrelevant in all cases."
+      ],
+      "correctIndex": 0,
+      "explanation": "Architecture can reflect both material opportunities and learned preferences, with trade expanding the options. The contrasting houses demonstrate that one environment does not impose a single design. Neither local nor imported material removes the cultural knowledge expressed in construction and use. A: This recognizes the interacting material, social and interregional influences. B: The stated variation contradicts a uniquely forced design. C: Imported materials can be incorporated into meaningful learned designs. D: Variation does not establish universal irrelevance of resources."
+    },
+    {
+      "id": "hug-3-2-009",
+      "prompt": "Two equally suitable flat sites are proposed for farming. One is kept as a community burial ground because of its spiritual significance. Which explanation best addresses the land-use difference?",
+      "options": [
+        "Terrain alone requires the burial use despite equal suitability.",
+        "The burial ground has no cultural meaning because it occupies physical land.",
+        "Equal physical suitability requires identical uses in both sites.",
+        "Beliefs and collective values influence land allocation alongside physical suitability."
+      ],
+      "correctIndex": 3,
+      "explanation": "Cultural values can shape which uses people consider appropriate for a place. The specified spiritual significance explains why one physically suitable site is not allocated to farming. This does not require treating material conditions as irrelevant; it shows that suitability alone is not a complete explanation. A: Equal flat suitability does not supply the reason for the stated difference. B: Physical places can carry shared spiritual and social meanings. C: The scenario demonstrates different choices despite similar suitability. D: This includes the explicitly supplied value influencing land allocation."
+    },
+    {
+      "id": "hug-3-2-010",
+      "prompt": "An old industrial district follows a river once used for power, while later workshops use electricity in buildings farther from the channel. Which interpretation is most useful?",
+      "options": [
+        "The current landscape must contain only the newest technology.",
+        "Changing technologies can alter the relationship between production locations and physical features.",
+        "River location determines every future industrial site permanently.",
+        "Electricity removes every social and economic influence on workshop location."
+      ],
+      "correctIndex": 1,
+      "explanation": "Technological change can modify which physical features are important to production sites. The older river-linked pattern can persist in the landscape while newer workshops have different locational options. Other factors such as transport, property and labor still matter; no one technology determines every future site. A: Earlier infrastructure and buildings may remain alongside newer activities. B: This explains the changing role of the river without discarding other influences. C: The supplied later workshops contradict a permanent universal river requirement. D: Electricity changes one constraint, not all social and economic conditions."
+    },
+    {
+      "id": "hug-3-2-011",
+      "prompt": "A city debates replacing colonial-era street names with names honoring local historical figures. What is the most direct cultural-landscape issue?",
+      "options": [
+        "Place names can express contested memory and identity in publicly shared space.",
+        "Renaming physically relocates every street and building.",
+        "All residents necessarily interpret each proposed name identically.",
+        "Street names are purely natural features independent of social choices."
+      ],
+      "correctIndex": 0,
+      "explanation": "Names are symbolic features of the landscape through which communities express and debate identity and memory. A naming dispute concerns meanings attached to public space, even when the physical street stays in place. The existence of debate also cautions against assuming a single shared interpretation. A: This identifies the symbolic and contested public-space dimension. B: Changing a name does not itself move the street or its buildings. C: The stated debate is incompatible with assuming one uniform interpretation. D: Names are selected and used through social and political processes."
+    }
+  ]
+}

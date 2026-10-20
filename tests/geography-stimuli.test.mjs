@@ -190,3 +190,17 @@ test('migration effects retain net receipts, mixed flow units, workforce signs a
  }
  const q=structuredClone(batch.questions[2]);q.options[1]='225; every emigrant is added.';assert.throws(()=>verifyGeographyQuestion(q,{...qa.questions[2],questionSha256:semanticHash(q)},geographyStimuli[q.id]));
 });
+
+test('culture evidence keeps learned practices distinct from rainfall and avoids universal trait inference',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-3-1.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-3-1.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[2][1]='A taught recipe'],[1,s=>s.regions[2].value=100],[2,s=>s.series[1].values[0]=40],[3,s=>s.rows[0][1]='I ask participants about meanings']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+
+test('landscape checks retain historical layers, access-rule differences and seasonal use beyond buildings',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-3-2.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-3-2.json','utf8'));
+ for(const [i,change] of [[0,s=>s.points[0].label='New factory only'],[1,s=>s.rows[1][1]='Unmodified rock'],[2,s=>s.series[0].values[0]=8],[3,s=>s.rows[3][1]='Many permanent houses']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});

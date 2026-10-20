@@ -1,0 +1,142 @@
+{
+  "topicNumber": "3.2",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "205da01a73e332596749518550caeaecf7ceb7ab429b5b0be83ff172f81cfb4c",
+  "scopeReview": "PSO-3.B.1/C.1: physical/cultural landscape combinations, agricultural/industrial/religious/linguistic forms, sequent occupance, traditional/postmodern architecture; ethnicity, gender and Indigenous land/resource practices. Original composite cases; no named community stereotypes or ownership decisions.",
+  "varietyReview": "Historical-layer map, field evidence table, gender-access chart and seasonal-use table. Other tasks interpret reused religious forms, ethnic-neighborhood connections, stylistic mixing, resource/design interactions, values, technology and place names. All five skills, varied difficulty and keys.",
+  "repetitionReview": "Focus is material/symbolic space rather than3.1 culture definition or observer attitude. Sequent occupance is supported by supplied histories, while tower reuse tests inference limits. Gender access measures permission rather than the earlier paid/unpaid time-use table. No numeric-only duplicates.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://whc.unesco.org/en/culturallandscape/",
+    "https://www.moma.org/collection/terms/postmodernism"
+  ],
+  "referenceNote": "Official curriculum verifies architecture and land-use scope; UNESCO source corroborates human/environment landscape combinations. All mapped forms/statements/data original, no copied heritage images or lesson text. No external student resource or human review claim. MoMA terminology corroborates deliberate historical references and eclectic mixing; no image or architectural design copied.",
+  "questions": [
+    {
+      "questionId": "hug-3-2-001",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Features from successive periods coexist, illustrating sequent occupance.",
+      "independentReview": "Matched explicitly different dates and retained forms: mill1810 adapted to lofts2020, rail1890 retained, new homes2020. Current coexistence supports layering; the map does not imply all uses or residents are industrial.",
+      "check": {
+        "type": "landscape-historical-layers"
+      },
+      "questionSha256": "72e17c87ac7c49f7cf9d1bb1fc6aa198f1bf7c30b00e454ba8e5c7d111af0ef0",
+      "stimulusSha256": "4e06939a184f4ab0e95d64577642ab319b8b92ed2a175d83f765d3c65af350ba"
+    },
+    {
+      "questionId": "hug-3-2-002",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Physical settings, built forms and shared practices combine in the observed landscapes.",
+      "independentReview": "Checked that both site descriptions include tangible forms and social practices, with terrace/canal use interacting with terrain. No actual named sacred place or community tradition is copied or inferred.",
+      "check": {
+        "type": "landscape-field-evidence"
+      },
+      "questionSha256": "ef2cfbb81cc55c0a981d64d66043bcbcc586080627180fdc7fbfd8e3c49dd046",
+      "stimulusSha256": "dd994647c124bd11dd9a06afaf276afce0eefc93f8477f152d6d0722e93bec5d"
+    },
+    {
+      "questionId": "hug-3-2-003",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Gendered rules restrict women’s access to the park more than men’s, while the other two sites have equal hours.",
+      "independentReview": "Read women2/8/8 and men8/8/8; gaps6/0/0 hours. Summed access18/24 only as corroboration, not attendance. The source explicitly concerns rules, so observed usage cannot be inferred.",
+      "check": {
+        "type": "landscape-gender-access"
+      },
+      "questionSha256": "d302de6dd5b46392c2e03f61bb4e0182806dcdc0829eea977c70355d9a43037f",
+      "stimulusSha256": "2ac7959896e9c6b366b15d4475da7e97111ca5840c8e1d58ddc384007f2e7900"
+    },
+    {
+      "questionId": "hug-3-2-004",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "It overlooks documented seasonal use and community meanings that permanent-building counts do not capture.",
+      "independentReview": "Compared the survey proxy—permanent houses—to documented seasonal grazing/shared management/gathering. Concluded indicator incompleteness without making a legal ownership determination or treating Indigenous communities as uniform.",
+      "check": {
+        "type": "landscape-seasonal-use"
+      },
+      "questionSha256": "658a5e0acda5607cd8bbef8011632419c6a956d67073c38acbb1fc773029434a",
+      "stimulusSha256": "3c4f96b3f67136546ba08d4e83d75000249a0aee724e15d47f4036f546df1365"
+    },
+    {
+      "questionId": "hug-3-2-005",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Its exterior form provides a trace of an earlier use, but does not identify every current user’s beliefs.",
+      "independentReview": "Used the given former/current functions rather than identifying a real religion from a generic tower. Exterior persistence is historical evidence, not a census of current users or neighbors.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "5839ce8749e4e49bff7d74fc9247d221cdd8f182e7587de008571e6c8e999f04"
+    },
+    {
+      "questionId": "hug-3-2-006",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Visible institutions can express identity while the neighborhood remains connected to wider urban flows.",
+      "independentReview": "Linked neighborhood-scale institutions with city-scale customer flows. Avoided assuming that cultural concentration implies exclusive residence, isolation or identical meanings for all users.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b6c92341ca53e4379464584a32ce6b585431f54375516e328ad544c497038910"
+    },
+    {
+      "questionId": "hug-3-2-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "An example consistent with postmodern stylistic mixing and historical reference.",
+      "independentReview": "Checked the supplied stylistic evidence—eclectic historical motifs and playful scale—rather than relying on one material or age. No real building/architect attribution or copied design is used.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "2719c00131e0f284916830fed001f5e5dd11479c3d79ff39ef948f04bae24cf7"
+    },
+    {
+      "questionId": "hug-3-2-008",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Resources, learned designs and wider connections can all influence architectural landscapes.",
+      "independentReview": "Held neighboring setting while varying materials/design and access to imports. Supports interacting influences, not deterministic climate/material control or a claim that tradition excludes imported inputs.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d66dcff2ad68388d1145ab66f013edc5f96bf7481b9ac42bba32b38fa42137c1"
+    },
+    {
+      "questionId": "hug-3-2-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Beliefs and collective values influence land allocation alongside physical suitability.",
+      "independentReview": "Compared two physical alternatives with one stated cultural constraint. The explanation follows the hypothetical significance rather than attributing a specific burial custom to a real religion or community.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "59f3f49d0cbf832f21672a2dd4cb34fbc3d3ef8c32533a4108f513160ec86c4f"
+    },
+    {
+      "questionId": "hug-3-2-010",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "Changing technologies can alter the relationship between production locations and physical features.",
+      "independentReview": "Tracked older river-power dependence versus later electricity-enabled options as explicitly hypothetical. Did not infer universal footloose location, an actual industrial history or complete removal of other location costs.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "e430ed08449f7617e3f8884d2279f112c73290345f6c0b1add6c60966017125f"
+    },
+    {
+      "questionId": "hug-3-2-011",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Place names can express contested memory and identity in publicly shared space.",
+      "independentReview": "Separated symbolic place naming from physical geometry, and recognized multiple interpretations within one city. No real political group, historical figure or current renaming dispute is represented.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b4233ec311ddd2f4abce6456ec51cb2ee84e29a8aeb38314b1c1426c02eb171b"
+    }
+  ]
+}

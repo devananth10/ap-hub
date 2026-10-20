@@ -1,5 +1,9 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 3.1–3.2
+
+231 MCQs across twenty-one topics are published;84 meaningful stimuli (36.36%) and95 explicit evidence/model checks. Introduction to Culture distinguishes social transmission, one-trait distributions, within-group variation and observer attitudes. Cultural Landscapes interprets historical layers, human/environment combinations, gendered access and seasonal uses absent from building counts. All145 tests, TypeScript/build, Geography scopes and standard routes passed. Both complete browser sessions scored11/11; all eight actual stimuli were inspected at390×844. No old questions, videos or storage changed; no human review or empirical difficulty-calibration claim. Next3.3, with47 topics/517 questions remaining.
+
 ## Human Geography Unit 2 complete
 
 209 original MCQs across nineteen topics are published: all seven Unit1 and twelve Unit2 topics, exactly11 each.76 meaningful stimuli (36.36%) and87 explicit numerical/geometry checks corroborate present sets; no unresolved item is published. Topics2.11–2.12 add displacement borders/procedures, step and seasonal movement, remittance fees/units, skilled-workforce accounting and cultural landscapes. A pending asylum claim does not establish absence of refugee circumstances. Two workforce distractor totals were corrected before publication and are now checked against their stated arithmetic mistakes.

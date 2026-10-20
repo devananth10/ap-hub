@@ -106,6 +106,14 @@ export function verifyGeographyQuestion(question,review,stimulus){
   case 'migration-skilled-workforce':{const get=label=>Number(stimulus.rows.find(r=>r[0]===label)[1]);assert.equal(get('Start')+get('Newly trained join')-get('Retire')-get('Emigrate')+get('Immigrate and join'),185);assert.equal(Number.parseInt(question.options[0]),185);assert.equal(Number.parseInt(question.options[1]),get('Start')+get('Newly trained join')-get('Retire')+get('Emigrate')+get('Immigrate and join'));assert.equal(Number.parseInt(question.options[2]),get('Start')+get('Newly trained join')-get('Retire'));assert.equal(question.correctIndex,0);break;}
   case 'migration-cultural-establishments':assert.deepEqual(stimulus.series.map(s=>s.values),[[4,2],[12,8]]);assert.equal(question.correctIndex,1);break;
   case 'migration-zero-net-composition':assert.equal(review.check.arrivals-review.check.departures,0);assert.equal(review.check.arrivals,100);assert.equal(question.correctIndex,0);break;
+  case 'culture-field-note-types':assert.deepEqual(stimulus.rows.map(r=>r[1]),['Grandparents teach a shared recipe','Children learn when footwear is removed','Mean annual rainfall is 900 mm']);assert.equal(question.correctIndex,3);break;
+  case 'culture-courtyard-pattern':assert.deepEqual(stimulus.regions.map(r=>r.value),[80,70,25,20]);assert.ok(stimulus.regions.every(r=>r.value>0&&r.value<100));assert.equal(question.correctIndex,1);break;
+  case 'culture-age-practices':{const [a,b]=stimulus.series.map(s=>s.values);assert.deepEqual(a,[40,60,80]);assert.deepEqual(b,[60,40,20]);assert.ok(a.every((n,i)=>n+b[i]===100&&n>0&&b[i]>0));assert.equal(question.correctIndex,0);break;}
+  case 'culture-observer-attitudes':assert.ok(stimulus.rows[0][1].includes('inferior')&&stimulus.rows[1][1].includes('ask participants'));assert.equal(question.correctIndex,2);break;
+  case 'landscape-historical-layers':assert.deepEqual(stimulus.points.map(p=>p.label),['Mill → lofts','New homes']);assert.equal(stimulus.paths[0].label,'Rail 1890');assert.ok(stimulus.description.includes('1810')&&stimulus.description.includes('2020'));assert.equal(question.correctIndex,2);break;
+  case 'landscape-field-evidence':assert.ok(stimulus.rows[0][1].includes('Worship building')&&stimulus.rows[1][1].includes('Hillside terraces'));assert.equal(question.correctIndex,3);break;
+  case 'landscape-gender-access':{const [w,m]=stimulus.series.map(s=>s.values);assert.deepEqual(w,[2,8,8]);assert.deepEqual(m,[8,8,8]);assert.deepEqual(m.map((n,i)=>n-w[i]),[6,0,0]);assert.equal(question.correctIndex,1);break;}
+  case 'landscape-seasonal-use':assert.deepEqual(stimulus.rows.map(r=>r[0]),['Seasonal use','Management','Meaning','Buildings']);assert.equal(stimulus.rows[3][1],'No permanent houses');assert.equal(question.correctIndex,0);break;
   case 'reasoning':break;
   default:throw Error('Unknown verification model: '+review.check.type);
  }

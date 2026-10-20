@@ -3706,5 +3706,367 @@
       }
     ],
     "max": 16
+  },
+  "hug-3-1-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Three field-note observations",
+    "description": "Hypothetical notes distinguish socially taught practices from a climate measurement.",
+    "caption": "Original observations for classification, not descriptions of an actual named community.",
+    "headers": [
+      "Entry",
+      "Observation"
+    ],
+    "rows": [
+      [
+        "A",
+        "Grandparents teach a shared recipe"
+      ],
+      [
+        "B",
+        "Children learn when footwear is removed"
+      ],
+      [
+        "C",
+        "Mean annual rainfall is 900 mm"
+      ]
+    ]
+  },
+  "hug-3-1-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "One architectural trait across districts",
+    "description": "Hypothetical household courtyard use: NW80%, NE70%, SW25%, SE20%. Other traits, beliefs and individual identities are not measured.",
+    "caption": "Schematic districts and one-time survey. Shading classes describe one practice, not complete cultures or state borders.",
+    "unitLabel": "Households using a courtyard (%)",
+    "regions": [
+      {
+        "label": "NW",
+        "value": 80,
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            0,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "NE",
+        "value": 70,
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            50,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "SW",
+        "value": 25,
+        "polygon": [
+          [
+            0,
+            30
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "SE",
+        "value": 20,
+        "polygon": [
+          [
+            50,
+            30
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ],
+    "bins": [
+      {
+        "min": 0,
+        "max": 50,
+        "label": "Under 50%"
+      },
+      {
+        "min": 50,
+        "max": 101,
+        "label": "50–100%"
+      }
+    ]
+  },
+  "hug-3-1-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Two preparations within one society",
+    "description": "Hypothetical most-used staple preparations by age:15–29 A40/B60%,30–49 A60/B40%,50+ A80/B20%. Each respondent chooses one preparation.",
+    "caption": "One-time age-group observations, not a follow-up of the same people. Both preparations are learned food practices; no biological mechanism is supplied.",
+    "unitLabel": "Respondents in each age group (%)",
+    "categories": [
+      "15–29",
+      "30–49",
+      "50+"
+    ],
+    "series": [
+      {
+        "label": "Preparation A",
+        "values": [
+          40,
+          60,
+          80
+        ]
+      },
+      {
+        "label": "Preparation B",
+        "values": [
+          60,
+          40,
+          20
+        ]
+      }
+    ],
+    "max": 100
+  },
+  "hug-3-1-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Two approaches to interpreting a shared meal",
+    "description": "Hypothetical observer statements about an unfamiliar meal practice.",
+    "caption": "Original invented statements; contextual understanding is distinct from claiming all practices are identical or beyond ethical assessment.",
+    "headers": [
+      "Observer",
+      "Statement"
+    ],
+    "rows": [
+      [
+        "A",
+        "This meal is inferior because it differs from the proper meal at home."
+      ],
+      [
+        "B",
+        "I will ask participants what the arrangement means in their social setting."
+      ]
+    ]
+  },
+  "hug-3-2-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "Retained forms and changing uses in one district",
+    "description": "Hypothetical older core contains an1810 mill reused as lofts in2020. An1890 rail corridor remains; new homes are added in the eastern expansion in2020.",
+    "caption": "Original plan with supplied feature histories. Current mapped coexistence does not mean simultaneous construction or identical present uses.",
+    "unitLabel": "Historical layers and current adaptations; schematic",
+    "regions": [
+      {
+        "label": "Older core",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "Expansion",
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "Mill → lofts",
+        "x": 25,
+        "y": 15,
+        "labelAlign": "middle"
+      },
+      {
+        "label": "New homes",
+        "x": 75,
+        "y": 15,
+        "labelAlign": "middle"
+      }
+    ],
+    "paths": [
+      {
+        "label": "Rail 1890",
+        "points": [
+          [
+            10,
+            45
+          ],
+          [
+            90,
+            45
+          ]
+        ],
+        "arrow": false
+      }
+    ]
+  },
+  "hug-3-2-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Landscape forms and associated practices",
+    "description": "Hypothetical field notes from two invented sites, combining built forms and social use.",
+    "caption": "These are original composite examples, not descriptions or images of an actual named sacred or agricultural site.",
+    "headers": [
+      "Site",
+      "Observed evidence"
+    ],
+    "rows": [
+      [
+        "A",
+        "Worship building; signs in languages R and S; shared ceremonies"
+      ],
+      [
+        "B",
+        "Hillside terraces; irrigation canals; coordinated water-sharing routines"
+      ]
+    ]
+  },
+  "hug-3-2-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Permitted access under gendered local rules",
+    "description": "Hypothetical permitted daily hours:Park women2/men8,Library8/8,Transit hall8/8. Values describe institutional rules, not attendance or preferences.",
+    "caption": "Original scenario. A difference at one site does not establish identical rules everywhere or uniform behavior by all women or men.",
+    "unitLabel": "Permitted hours per day",
+    "categories": [
+      "Park",
+      "Library",
+      "Transit hall"
+    ],
+    "series": [
+      {
+        "label": "Women",
+        "values": [
+          2,
+          8,
+          8
+        ]
+      },
+      {
+        "label": "Men",
+        "values": [
+          8,
+          8,
+          8
+        ]
+      }
+    ],
+    "max": 8
+  },
+  "hug-3-2-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Uses not captured by permanent-house counts",
+    "description": "Hypothetical Indigenous community field notes document shared use of a grazing area with no permanent houses.",
+    "caption": "Original scenario; documenting cultural uses is distinct from making a legal ownership determination. No real community’s practices are represented.",
+    "headers": [
+      "Evidence",
+      "Field note"
+    ],
+    "rows": [
+      [
+        "Seasonal use",
+        "Herds graze here during the wet season"
+      ],
+      [
+        "Management",
+        "Community members coordinate shared access"
+      ],
+      [
+        "Meaning",
+        "A gathering place connects families to local history"
+      ],
+      [
+        "Buildings",
+        "No permanent houses"
+      ]
+    ]
   }
 }
