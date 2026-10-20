@@ -293,3 +293,17 @@ test('district models recompute fixed-vote row/column seats, rounded shares and 
   const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
  }
 });
+
+test('governance checks retain delegated directions, protected powers, policy variation and multilevel centers',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-4-7.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-4-7.json','utf8'));
+ for(const [i,change] of [[0,s=>s.edges[0].from='West office'],[1,s=>s.rows[1][2]='Permitted by the supplied rules'],[2,s=>s.regions[1].value=40],[3,s=>s.points.pop()]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+
+test('devolution-factor checks preserve physical separation, balanced flows, cross-border claims and support changes',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-4-8.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-4-8.json','utf8'));
+ for(const [i,change] of [[0,s=>s.points[1].x=20],[1,s=>s.rows[0][3]='80'],[2,s=>s.paths[0].points.reverse()],[3,s=>s.series[0].values[1]=25]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});

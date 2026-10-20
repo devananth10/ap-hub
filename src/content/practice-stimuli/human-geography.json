@@ -6563,5 +6563,546 @@
         "label": "R more than 50"
       }
     ]
+  },
+  "hug-4-7-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "model",
+    "title": "Instructions and regional implementation",
+    "description": "Hypothetical national government sends instructions to West and East offices. Their powers are delegated by ordinary national law and can be withdrawn by that central authority.",
+    "caption": "Original simplified hierarchy. Arrows represent supplied authority relationships, not migration, votes or the structure of every unitary state.",
+    "assumptions": "Regional offices implement national decisions; no independently entrenched regional governing powers are supplied.",
+    "nodes": [
+      {
+        "label": "National center",
+        "x": 50,
+        "y": 10,
+        "labelPosition": "above"
+      },
+      {
+        "label": "West office",
+        "x": 15,
+        "y": 45,
+        "labelPosition": "below"
+      },
+      {
+        "label": "East office",
+        "x": 85,
+        "y": 45,
+        "labelPosition": "below"
+      }
+    ],
+    "edges": [
+      {
+        "from": "National center",
+        "to": "West office",
+        "label": "Instructions"
+      },
+      {
+        "from": "National center",
+        "to": "East office",
+        "label": "Instructions"
+      }
+    ]
+  },
+  "hug-4-7-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Two sources of regional governing authority",
+    "description": "Hypothetical A delegates specified regional tasks through ordinary national law. B’s constitution allocates protected responsibilities to both national and regional governments; ordinary central legislation cannot simply abolish the regional level.",
+    "caption": "Original comparison of stated institutional rules, not legal advice about a real constitution. Both can have local offices, elected officials and different levels of service performance.",
+    "headers": [
+      "Case",
+      "Source of regional authority",
+      "Ordinary central abolition?"
+    ],
+    "rows": [
+      [
+        "A",
+        "Delegation by national law",
+        "Permitted by the supplied rules"
+      ],
+      [
+        "B",
+        "Constitutional allocation",
+        "Not permitted by ordinary law alone"
+      ]
+    ]
+  },
+  "hug-4-7-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "Regional household-recycling targets",
+    "description": "Hypothetical regional targets: NW 40%, NE 60%, SW 40%, SE 60% of households. The map does not say whether powers to set targets are constitutionally protected or delegated.",
+    "caption": "Original synthetic policy targets, not achieved outcomes. Regional difference alone does not classify federal/unitary structure or measure the success of either system.",
+    "unitLabel": "Household-recycling target (%)",
+    "regions": [
+      {
+        "label": "NW",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            0,
+            30
+          ]
+        ],
+        "value": 40
+      },
+      {
+        "label": "NE",
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            50,
+            30
+          ]
+        ],
+        "value": 60
+      },
+      {
+        "label": "SW",
+        "polygon": [
+          [
+            0,
+            30
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ],
+        "value": 40
+      },
+      {
+        "label": "SE",
+        "polygon": [
+          [
+            50,
+            30
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ],
+        "value": 60
+      }
+    ],
+    "bins": [
+      {
+        "min": 0,
+        "max": 50,
+        "label": "Below 50%"
+      },
+      {
+        "min": 50,
+        "max": 101,
+        "label": "At least 50%"
+      }
+    ]
+  },
+  "hug-4-7-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "National and regional governing centers",
+    "description": "Hypothetical state has one national center N and four regional capitals W1, E1, W2 and E2. The constitution assigns regional institutions specified local responsibilities and national institutions other responsibilities.",
+    "caption": "Original schematic of locations, not proportional power symbols. Regional boundaries remain internal; constitutional responsibilities, not point size, explain the distributed centers.",
+    "unitLabel": "Points: governing centers within one state",
+    "regions": [
+      {
+        "label": "NW",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            0,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "NE",
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            50,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "SW",
+        "polygon": [
+          [
+            0,
+            30
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "SE",
+        "polygon": [
+          [
+            50,
+            30
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "W1",
+        "x": 20,
+        "y": 7
+      },
+      {
+        "label": "E1",
+        "x": 80,
+        "y": 7
+      },
+      {
+        "label": "W2",
+        "x": 20,
+        "y": 53
+      },
+      {
+        "label": "E2",
+        "x": 80,
+        "y": 53
+      },
+      {
+        "label": "N",
+        "x": 50,
+        "y": 30
+      }
+    ]
+  },
+  "hug-4-8-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "A ridge and access to national services",
+    "description": "Hypothetical single state: West and East are separated by a mountain ridge. The national capital is in West. East residents report difficult access to its services and seek more local decision-making; the figure shows a physical barrier, not an international border.",
+    "caption": "Original schematic; region lines identify physical areas within one state. No scale, real mountain range or necessary political outcome is represented.",
+    "unitLabel": "Ridge: physical barrier; all areas remain one state",
+    "regions": [
+      {
+        "label": "West",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            45,
+            0
+          ],
+          [
+            45,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "Ridge",
+        "polygon": [
+          [
+            45,
+            0
+          ],
+          [
+            55,
+            0
+          ],
+          [
+            55,
+            60
+          ],
+          [
+            45,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "East",
+        "polygon": [
+          [
+            55,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            55,
+            60
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "Capital",
+        "x": 15,
+        "y": 47
+      },
+      {
+        "label": "East town",
+        "x": 80,
+        "y": 47
+      }
+    ]
+  },
+  "hug-4-8-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Two regions and a simplified central budget",
+    "description": "Hypothetical East and West each have 100,000 residents. East contributes 80 million currency units and receives 40 million in the recorded spending; West contributes 20 million and receives 60 million.",
+    "caption": "Original synthetic partial fiscal ledger. It does not capture every service, transfer, distributional goal or resident’s preference. A movement’s grievance is not itself proof of inevitable fragmentation.",
+    "headers": [
+      "Region",
+      "Residents",
+      "Tax (million)",
+      "Spend (million)"
+    ],
+    "rows": [
+      [
+        "East",
+        "100000",
+        "80",
+        "40"
+      ],
+      [
+        "West",
+        "100000",
+        "20",
+        "60"
+      ]
+    ]
+  },
+  "hug-4-8-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "A claim across an existing state border",
+    "description": "Hypothetical State A lies west of the international border at x=40. Borderland R and the rest of B lie east, within State B. A’s government claims R on asserted national ties; the arrow records that claim, not a completed transfer.",
+    "caption": "Original schematic, not a real territorial claim. The line at x=65 only marks the claimed borderland’s extent inside B. No military movement, valid entitlement or political agreement is represented.",
+    "unitLabel": "Arrow: asserted incorporation claim, not migration",
+    "regions": [
+      {
+        "label": "A",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            40,
+            0
+          ],
+          [
+            40,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "R in B",
+        "polygon": [
+          [
+            40,
+            0
+          ],
+          [
+            65,
+            0
+          ],
+          [
+            65,
+            60
+          ],
+          [
+            40,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "Rest of B",
+        "polygon": [
+          [
+            65,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            65,
+            60
+          ]
+        ]
+      }
+    ],
+    "paths": [
+      {
+        "label": "Claim",
+        "points": [
+          [
+            20,
+            15
+          ],
+          [
+            36,
+            15
+          ],
+          [
+            52,
+            15
+          ]
+        ],
+        "arrow": true
+      }
+    ]
+  },
+  "hug-4-8-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Reported support for regional autonomy",
+    "description": "Hypothetical representative surveys: North support is 20% earlier and 55% later; South is 30% earlier and 35% later. Multiple political and economic changes occur between surveys. Different respondents may be sampled.",
+    "caption": "Original synthetic survey estimates with consistent regional populations and question wording. No sampling uncertainty is modeled; the chart alone does not identify a single cause, every individual’s change or support for independence.",
+    "unitLabel": "Respondents supporting autonomy (%)",
+    "categories": [
+      "Earlier",
+      "Later"
+    ],
+    "series": [
+      {
+        "label": "North",
+        "values": [
+          20,
+          55
+        ]
+      },
+      {
+        "label": "South",
+        "values": [
+          30,
+          35
+        ]
+      }
+    ],
+    "max": 100
   }
 }

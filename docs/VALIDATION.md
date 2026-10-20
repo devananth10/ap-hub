@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 4.7–4.8
+
+385 original MCQs across35 topics are published, eleven each;140 meaningful stimuli (36.36%) and153 explicit evidence/numerical/geometry checks. Governance separates constitutionally allocated authority from delegation, local office locations, policy differences and regime type. Devolutionary factors distinguish physical access, fiscal grievances, asserted incorporation claims, separatist aims, coercive displacement, political intimidation and conditional outcomes.
+
+All160 tests, structural/evidence checks, TypeScript, production build, all68 Geography scopes and standard routes passed. Both full browser sessions scored11/11; all eight stimuli were inspected at390×844. The separatist scenario was narrowed before publication to an explicit independent-state aim so mere autonomy is not automatically labeled separatism. Existing questions, approved resources and storage remain preserved; no human review or empirical difficulty-calibration claim. Next4.9;33 topics/363 questions remain.
+
 ## Human Geography Topics 4.5–4.6
 
 363 original MCQs across33 topics are published, eleven each;132 meaningful stimuli (36.36%) and145 explicit evidence/numerical/geometry checks. Boundary functions cover physical marking, mapped courses, administration, maritime distances/rights, overlap and resource connections. Electoral questions use original fixed-vote maps to distinguish district grouping, statewide votes, seat outcomes, packing/cracking and evidence of intent.

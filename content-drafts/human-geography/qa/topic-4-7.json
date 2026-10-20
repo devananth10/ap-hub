@@ -1,0 +1,143 @@
+{
+  "topicNumber": "4.7",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "865feabc00ced27d5bfe225bc44eacf9c4455bfce7abc2257e49ff776291d3bf",
+  "scopeReview": "IMP-4.C.1 andIMP-4.D.1: federal versus unitary forms and their spatial power centers. Constitutional allocation is distinguished from delegated tasks, local office location, policy variation, national identity and regime type; tendencies are not deterministic guarantees.",
+  "varietyReview": "Delegation network, constitutional comparison table, policy-target choropleth and multilevel-center map. Seven cases address Switzerland, unitary decentralization, accountability, shared resources, geographic motives, multinational identity and issue-specific authority. Four interpreted stimuli, all five skills and varied keys.",
+  "repetitionReview": "Evidence distinguishes institutional structure from spatial indicators. Definition is applied through different settings rather than eleven labels; constitution examples remain broad, not jurisdiction-specific legal advice. No exact duplicate stem or numeric-only clone; difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.ch-info.swiss/en/die-schweiz/foederalismus",
+    "https://www.fedlex.admin.ch/redirect/rs/101/en",
+    "https://www.vie-publique.fr/fiches/20167-quest-ce-que-la-deconcentration"
+  ],
+  "referenceNote": "Primary current institutional accounts checked. All diagrams, regions and percentages are original hypothetical examples; Switzerland’s classification is factual. No new approved resource or human-review claim; policies and powers are not generalized beyond stated assumptions.",
+  "questions": [
+    {
+      "questionId": "hug-4-7-001",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "The arrangement illustrates a unitary hierarchy with regional implementation of centrally derived authority.",
+      "independentReview": "Compared source of authority with physical office location. Central instructions alone could occur in multiple systems; the ordinary-law revocable delegation premise is what supports the unitary interpretation.",
+      "check": {
+        "type": "governance-central-delegation"
+      },
+      "questionSha256": "75d25e4438925b0241bb7e38461db21c73dc73e39dd799c192b1a887040ddbd1",
+      "stimulusSha256": "b04136e3ec4bcdce30b7f69287c579a5ae9eedfc78e81ee8254520e7adc3f429"
+    },
+    {
+      "questionId": "hug-4-7-002",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Case B, because its constitution protects authority for both national and regional governments.",
+      "independentReview": "Checked each case’s legal-institutional premise: A ordinary delegation, B constitutional allocation. The item does not claim every federal amendment requires identical consent rules or that regional powers are unlimited.",
+      "check": {
+        "type": "governance-protected-powers"
+      },
+      "questionSha256": "c3fe8040948158df62aa4af59988292be501a5189222ae8d6bce42789ea4b73b",
+      "stimulusSha256": "ae7eda87f615842b51627c3b893a191cef3a7d27ff5caafcdb3ee1457793120a"
+    },
+    {
+      "questionId": "hug-4-7-003",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Constitutional information about regional authority, since policy variation alone does not establish a federal structure.",
+      "independentReview": "Verified the map displays targets40/60/40/60, not constitutional clauses or actual recycling outcomes. Variation is compatible with multiple arrangements, so the question does not infer federalism from an ecological indicator.",
+      "check": {
+        "type": "governance-policy-variation"
+      },
+      "questionSha256": "153309979fe7b8d772dbb67239e6d1fe1b0467bf4ab2ae32dd251cfe81bb7aab",
+      "stimulusSha256": "5f8cd8bd8d7e32ac34ade504ab34c8c385833e881362ebd9d7d79efb1d05193e"
+    },
+    {
+      "questionId": "hug-4-7-004",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Constitutionally meaningful power centers can be distributed across regions alongside a national center.",
+      "independentReview": "Checked four regional centers plus one national center and explicitly supplied constitutional allocation. The map’s mere dots would be insufficient without that premise; no capital is inferred to control every matter.",
+      "check": {
+        "type": "governance-power-centers"
+      },
+      "questionSha256": "bb3055d456b0d50ee0a0875649b115c0969e045e71515e77309c85d6bf4774c9",
+      "stimulusSha256": "88aae5d43b0def017d205e794f6280121ea23283a9f117bd5a5eca5f0e351a36"
+    },
+    {
+      "questionId": "hug-4-7-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "A federal system can distribute authority among territorial levels while remaining one state.",
+      "independentReview": "Verified Switzerland’s current federal structure using its official2026 guide and constitutional framework. Did not repeat the inaccurate claim that every canton has two Council of States seats; representation details are outside this item.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "937a0627684947eed60eb377bcf4a9e8a4f71c4a72a3b5a4800cf078e4535878"
+    },
+    {
+      "questionId": "hug-4-7-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "A unitary state can decentralize tasks; the amount of local activity alone does not establish constitutionally federal authority.",
+      "independentReview": "Checked primary French institutional descriptions showing territorial administration/decentralization within a unitary state. No real local authority’s exact legal competence is generalized to every state.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "8d9693fbb42f90bcd19f01ae41e132ffbebe64b10a350241ff0b5885d76f1b82"
+    },
+    {
+      "questionId": "hug-4-7-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Federal/unitary describes territorial allocation of authority, which does not by itself determine democratic accountability.",
+      "independentReview": "Independently separated territorial power allocation from regime/accountability type. No claim is made that either structure universally guarantees rights, efficiency, equality or legitimacy.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "9117169337f0803a9abea095ded0cef1f4ddf0ff48b3395f23293284d44f80e1"
+    },
+    {
+      "questionId": "hug-4-7-008",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Use the constitutionally allocated responsibilities and intergovernmental procedures to address a cross-regional problem.",
+      "independentReview": "Checked physical interdependence against potentially shared or allocated authority. No uniform water-law rule is prescribed; the answer asks which institutional evidence and procedures are relevant.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "acfe9f0d8aa65ec8ad4155d9c8c6ade4a8ad37fca12d485d985c07d374495547"
+    },
+    {
+      "questionId": "hug-4-7-009",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "Distance and regional differences can motivate dispersed authority, but do not uniquely determine the chosen system or its success.",
+      "independentReview": "Verified that the course describes tendencies in power organization, not a size threshold forcing federalism. The answer preserves institutional choice and possible coordination/resource constraints.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "45053a6745a1dfd9df4aeacce7d3a1555ba79193f27dee12bdb60b869e136db1"
+    },
+    {
+      "questionId": "hug-4-7-010",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Multinational in its communities and unitary in its territorial allocation of authority.",
+      "independentReview": "Compared the4.1 entity dimension with the4.7 governance dimension. Centralization is explicitly supplied; no nation’s identity or constitutional status is inferred from a language or population share.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "845e3ea15108c5dca0ead7aa91826886f2afd4f01661eae6e6c1d30c035bb918"
+    },
+    {
+      "questionId": "hug-4-7-011",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The constitution and relevant allocation of responsibilities for the particular policy issue.",
+      "independentReview": "Matched the specific policy question to actual allocated powers, not proximity or an unsupported all-issues assumption. This is an analytical research task, not advice about a real school’s legal options.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "eca1e7f30733f1fc560fb114c0fea90a7ec4ad0575eac27f660aa62d49641429"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 4,
+  "topicId": "topic-4-7",
+  "questions": [
+    {
+      "id": "hug-4-7-001",
+      "prompt": "The central government can create, alter or withdraw the offices’ delegated powers through ordinary national law. Which interpretation of the diagram is best supported?",
+      "options": [
+        "The offices are necessarily independent states because they are in different places.",
+        "The arrows establish equal constitutionally protected authority at every node.",
+        "The arrangement illustrates a unitary hierarchy with regional implementation of centrally derived authority.",
+        "The national government has no influence outside the capital."
+      ],
+      "correctIndex": 2,
+      "explanation": "A unitary system locates ultimate governing authority at the national level, although it can operate through local offices or devolve responsibilities. The premise specifies that these offices’ authority is delegated and alterable through ordinary national law. Their geographic dispersion alone does not make the structure federal. A: Regional administrative locations are not automatically independent sovereign states. B: The supplied delegation is not equal constitutionally entrenched regional authority. C: This uses the stated source of authority and the top-down implementation links. D: The diagram explicitly connects the center with regional offices."
+    },
+    {
+      "id": "hug-4-7-002",
+      "prompt": "Which case most clearly supplies the institutional feature that distinguishes a federal arrangement from ordinary central delegation?",
+      "options": [
+        "Case B, because its constitution protects authority for both national and regional governments.",
+        "Case A, because any office below a capital is a federal government.",
+        "Both cases must be federal because their governments have addresses.",
+        "Neither case can contain regional institutions unless it becomes several independent countries."
+      ],
+      "correctIndex": 0,
+      "explanation": "Federal systems constitutionally distribute authority between national and territorial governments. Case B explicitly protects both levels against unilateral abolition by ordinary central legislation. Case A instead describes ordinary central delegation. In real states, the extent and amendment of these powers vary, so the supplied institutional rules matter. A: This identifies the constitutional allocation of authority rather than office location. B: A local office can simply implement centrally delegated authority. C: Addresses do not determine constitutional structure. D: Regional institutions can operate within a single independent state."
+    },
+    {
+      "id": "hug-4-7-003",
+      "prompt": "The regions have different recycling targets. What additional evidence is necessary before using the map to classify the state as federal?",
+      "options": [
+        "A brighter palette that exaggerates the difference between 40% and 60%.",
+        "The number of letters in each region’s name.",
+        "The assumption that no unitary state can allow any regional variation.",
+        "Constitutional information about regional authority, since policy variation alone does not establish a federal structure."
+      ],
+      "correctIndex": 3,
+      "explanation": "Regional variation in a policy target can occur under more than one institutional arrangement. It might reflect protected regional powers or discretion granted within a unitary system. Classifying the structure requires evidence about where authority originates and how it is protected, rather than only a map of the resulting targets. A: Changing colors cannot supply missing constitutional evidence. B: Names do not establish the source of governing powers. C: Unitary structures can permit local discretion or decentralization. D: This identifies the institutional information missing from the policy map."
+    },
+    {
+      "id": "hug-4-7-004",
+      "prompt": "The constitution gives each region authority over specified local policies while national institutions retain other responsibilities. What spatial organization is illustrated by the mapped governing centers?",
+      "options": [
+        "All policy decisions must occur only at the national center despite the stated regional powers.",
+        "Constitutionally meaningful power centers can be distributed across regions alongside a national center.",
+        "Each regional capital is automatically a separate independent country.",
+        "A federal arrangement has no national institutions at all."
+      ],
+      "correctIndex": 1,
+      "explanation": "Federal governance can produce multiple territorial centers with real authority in their allocated fields. The national center and regional capitals coexist rather than one necessarily replacing all others. The exact responsibilities are supplied by the constitutional arrangement, not inferred from the physical size of a point on the map. A: This contradicts the explicit allocation of regional responsibilities. B: This connects the stated division of authority with its territorial centers. C: Internal regional authority is not equivalent to independent external statehood. D: The premise explicitly retains national responsibilities and institutions."
+    },
+    {
+      "id": "hug-4-7-005",
+      "prompt": "Switzerland divides governing responsibilities among the Confederation, cantons and communes. What does this verified example most directly illustrate?",
+      "options": [
+        "The word “Confederation” proves the country has no federal institutions.",
+        "Every canton is an independent foreign country in every respect.",
+        "A federal system can distribute authority among territorial levels while remaining one state.",
+        "A country with several governing levels cannot maintain any national institutions."
+      ],
+      "correctIndex": 2,
+      "explanation": "Switzerland is a federal state despite its historical official name. Its constitutional structure distributes responsibilities among national and cantonal institutions, with communes performing local roles. This demonstrates territorial division of authority within one state, not the absence of national government or unlimited external independence of every canton. A: The historical name alone does not override the actual federal constitutional structure. B: Cantonal powers do not make each canton fully equivalent to an independent foreign state. C: This captures the documented multilevel allocation within one state. D: The national level remains part of the supplied arrangement."
+    },
+    {
+      "id": "hug-4-7-006",
+      "prompt": "A unitary state expands elected local councils’ responsibilities while retaining its national constitutional framework. Which conclusion is most defensible?",
+      "options": [
+        "Any local election automatically creates a federation.",
+        "A unitary state can decentralize tasks; the amount of local activity alone does not establish constitutionally federal authority.",
+        "Unitary states cannot have local councils at all.",
+        "Local service provision necessarily eliminates national governing institutions."
+      ],
+      "correctIndex": 1,
+      "explanation": "Unitary does not mean that every task must be carried out personally by a central official. Such states can decentralize responsibilities and provide local discretion. Whether the arrangement is federal depends on the constitutional distribution of authority, not merely the presence of elected councils or local services. A: Local elections do not by themselves establish a federal constitutional allocation. B: This recognizes decentralization without treating it as conclusive evidence of federalism. C: Local councils can exist within unitary systems. D: Local provision and national institutions can coexist."
+    },
+    {
+      "id": "hug-4-7-007",
+      "prompt": "A textbook labels all federal systems democratic and all unitary systems authoritarian. What is the central problem?",
+      "options": [
+        "Federal/unitary describes territorial allocation of authority, which does not by itself determine democratic accountability.",
+        "A state cannot be studied at both national and regional scales.",
+        "Every unitary state lacks a population and territory.",
+        "Every federal state must have no elections at the national level."
+      ],
+      "correctIndex": 0,
+      "explanation": "Federal and unitary classify the spatial organization of governing authority. Democracy and authoritarianism concern other institutional relationships, including political participation and accountability. The territorial structure alone does not establish whether officials are democratically selected or rights are protected. A: This separates two dimensions that the textbook incorrectly treats as identical. B: Multiscale analysis is precisely relevant to governance. C: A unitary state still has population and territory. D: Federal structure does not prohibit national elections."
+    },
+    {
+      "id": "hug-4-7-008",
+      "prompt": "Two regions in a federation disagree about a river that flows across their internal boundary. Which response is most consistent with federal governance?",
+      "options": [
+        "Assume the internal border physically stops the river.",
+        "Treat every regional disagreement as automatic international secession.",
+        "Assume regional authority means the national level can never have a coordinating role.",
+        "Use the constitutionally allocated responsibilities and intergovernmental procedures to address a cross-regional problem."
+      ],
+      "correctIndex": 3,
+      "explanation": "Federal allocation of authority can require coordination where an issue crosses regional boundaries. Relevant institutions may include regional governments, national bodies and agreed dispute procedures, depending on the constitution. Regional powers do not make physical systems stop at borders or necessarily exclude every national role. A: A political line does not sever the hydrological connection. B: A policy dispute is not automatically the creation of a new state. C: The actual allocation may provide national or shared responsibilities. D: This uses the stated institutional framework rather than an absolute assumption."
+    },
+    {
+      "id": "hug-4-7-009",
+      "prompt": "A large, diverse state considers federal institutions to give distant regions more influence over local decisions. Which statement best evaluates that geographic reasoning?",
+      "options": [
+        "Physical size mechanically requires every state to choose the same constitution.",
+        "Diversity makes any shared national institution impossible.",
+        "Distance and regional differences can motivate dispersed authority, but do not uniquely determine the chosen system or its success.",
+        "Federal institutions guarantee that regional inequalities will disappear."
+      ],
+      "correctIndex": 2,
+      "explanation": "Distance and regional variation can shape demands for local responsiveness, making federal arrangements one possible response. Institutional histories, resources and political choices also matter. Geography does not mechanically prescribe one constitution, and dispersing authority does not guarantee equal services or the absence of conflict. A: Size is an influence rather than an automatic constitutional rule. B: Diverse states can retain shared national institutions. C: This gives geography a role without a deterministic or guaranteed-outcome claim. D: Regional inequality can persist under different territorial structures."
+    },
+    {
+      "id": "hug-4-7-010",
+      "prompt": "A state contains several self-identified nations but retains a centralized governing constitution. Which two classifications could describe different aspects of it?",
+      "options": [
+        "It cannot be a state because national identities differ.",
+        "Multinational in its communities and unitary in its territorial allocation of authority.",
+        "Federal solely because several nations exist within it.",
+        "Several independent countries solely because the communities have different names."
+      ],
+      "correctIndex": 1,
+      "explanation": "Multinational describes the presence of more than one nation within a state. Unitary describes the source and organization of governing authority. These address different dimensions and can coexist; the number of national communities does not alone establish a federal constitution or separate sovereign states. A: States can contain more than one national community. B: This combines the supplied community structure and governing arrangement without conflating them. C: Federal classification requires institutional evidence beyond national diversity. D: Community names do not by themselves establish separate external statehood."
+    },
+    {
+      "id": "hug-4-7-011",
+      "prompt": "A school-policy dispute involves both a regional ministry and a national legislature. What should a researcher examine first to identify who has authority?",
+      "options": [
+        "Only which office is geographically closer to the school.",
+        "Only the relative height of the two government buildings.",
+        "The assumption that every federal region controls every school issue without limits.",
+        "The constitution and relevant allocation of responsibilities for the particular policy issue."
+      ],
+      "correctIndex": 3,
+      "explanation": "Physical proximity does not by itself determine legal-institutional authority. The relevant allocation may make a task national, regional, shared or constrained by standards. Researchers should identify those responsibilities before inferring power from where an office is located or from a broad federal/unitary label alone. A: A nearby office need not hold the relevant decision power. B: Building height does not establish competence over policy. C: A broad structure label does not specify every detailed responsibility. D: This investigates the institutional evidence directly relevant to the dispute."
+    }
+  ]
+}

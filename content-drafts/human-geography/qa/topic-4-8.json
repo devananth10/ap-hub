@@ -1,0 +1,142 @@
+{
+  "topicNumber": "4.8",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "1174d8fabc4d634f38bb64d87a9aee6cd787d83af9ac1de122a5c6e69c3d5b8d",
+  "scopeReview": "SPS-4.A.1: physical division, ethnic separatism, ethnic cleansing, terrorism, economic/social problems and irredentism as possible devolutionary factors. Emphasizes interacting conditions, actor objectives, coercion versus voluntary movement, and autonomy versus independence; no inevitable fragmentation.",
+  "varietyReview": "Physical-ridge map, balanced regional fiscal ledger, cross-border claim map and autonomy-support chart. Other cases distinguish political movements from diversity, targeted removal from voluntary change, violence as a conditional pressure, separate endpoints, interacting grievances, communications and source interpretation. Four stimuli, all five skills, varied keys.",
+  "repetitionReview": "Each factor is applied through a distinct mechanism/evidence task. Violence-related cases are non-graphic and non-operational; no group is portrayed as inherently violent. No exact repeated stem or numeric-only clone; editorial difficulty is not empirical calibration.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.un.org/en/node/218413",
+    "https://www.un.org/en/land-natural-resources-conflict/land-conflict.shtml"
+  ],
+  "referenceNote": "Primary curriculum, UN terminology and original institutional grievance/conflict framework checked. All actors, regions, sums and survey estimates are invented. No real territorial claim or criminal charge adjudicated, no tactics supplied, no new student resource imports or human-review claim.",
+  "questions": [
+    {
+      "questionId": "hug-4-8-001",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Physical separation and difficult access can strengthen demands for regional authority without making independence inevitable.",
+      "independentReview": "Checked that one state contains West, Ridge and East and that the physical strip separates the two areas. The prompt supplies access difficulty and a demand, not a causal estimate or an inference of independence from terrain.",
+      "check": {
+        "type": "devolution-physical-barrier"
+      },
+      "questionSha256": "3e2cc3c48348a63ed9773d4b389d7ff6418cee8d6d365be67e722c55f709bb07",
+      "stimulusSha256": "e5a5c471d5197721534282c01c14bda4adf1d61f250fec48f58fcd36d6b5bafb"
+    },
+    {
+      "questionId": "hug-4-8-002",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "East contributes 40 million more than it receives; the political meaning of that net flow depends on wider conditions.",
+      "independentReview": "Recomputed East40−80=−40 and West60−20=+40 million, total contributions/spending100/100. Equal100000 populations imply spending400 versus600 currency units per resident, but do not establish every benefit or normative fairness.",
+      "check": {
+        "type": "devolution-budget-flows"
+      },
+      "questionSha256": "d62bad80469ece9f4b97d6f1c2375f67ffd50b7f909926b7a5e628c129139e56",
+      "stimulusSha256": "37a198937eaa9214c134b5b52d5239bfeea63bd69ef08d63a35400d0ac8e1435"
+    },
+    {
+      "questionId": "hug-4-8-003",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Irredentism: a claim to join territory across an existing border to a state on the basis of asserted shared national ties.",
+      "independentReview": "Checked A’s claim crosses x40 into B’s borderlandR and does not itself change recognized jurisdiction. National ties are asserted by an actor, not assigned as objective identity or justification for annexation.",
+      "check": {
+        "type": "devolution-irredentist-claim"
+      },
+      "questionSha256": "f6ca8ba144c1641bd0816367d4d82e5fc2b405309cb84502a83f8feafb51e993",
+      "stimulusSha256": "53ddc957521695f59b205319d8b84cb15dfca027910f13697f5b317e40ddbcd7"
+    },
+    {
+      "questionId": "hug-4-8-004",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "North rises 35 percentage points and South 5 points; the chart does not isolate a sole cause or show every individual changed.",
+      "independentReview": "Independently calculated55−20=35,35−30=5 percentage points. Surveys are separate samples with the same defined population, not paired individual histories; autonomy and independence are kept distinct.",
+      "check": {
+        "type": "devolution-autonomy-support"
+      },
+      "questionSha256": "b986c3a364fb994b359c84157fe57184eca3e9f1751ecf90b4c367eaebf10371",
+      "stimulusSha256": "e00eb5dce66ec4de488a6aa2c233ba2935ebed4cd800f7821a63dadf361cd8a1"
+    },
+    {
+      "questionId": "hug-4-8-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "An organized political demand to change the relationship between the region and the state is explicitly present.",
+      "independentReview": "Distinguished organized separatist aims from identity alone. The question does not assume all members agree, that every autonomy demand requires independence, or that a separatist movement is necessarily violent. Before publication narrowed the supplied aim to independent statehood so an autonomy-only movement is not automatically labeled separatist.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "7192447090716d5f109e20407b94b61473a3a82dcacd821f35b265e09fe55571"
+    },
+    {
+      "questionId": "hug-4-8-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Forced targeted displacement can rupture communities and intensify territorial conflict; it is not equivalent to voluntary cultural change.",
+      "independentReview": "Checked the UN’s force/intimidation-based discussion of ethnic cleansing. No graphic detail, operational method, real perpetrator accusation or finding about a distinct international criminal charge is included.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "13eb5bd3de02705a38919d1330f30b454fa298db366a08552d5bb6aaec0a88ac"
+    },
+    {
+      "questionId": "hug-4-8-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Such intimidation can strain authority and territorial trust, but whether it produces devolution depends on wider conditions and responses.",
+      "independentReview": "Used the curriculum’s terrorism/political-intimidation factor without operational detail or a real disputed designation. Distinguished pressure on trust/control from an automatic causal or legal outcome.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "ee153bb4b9a15979ffd8deb3f84137f9866443f1cfdadf8341b3eb7d5e3301b2"
+    },
+    {
+      "questionId": "hug-4-8-008",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "X seeks separate statehood; Y’s incorporation claim is irredentist.",
+      "independentReview": "Compared intended endpoints rather than simply grouping all boundary challenges together. Actors’ asserted ties are not treated as unanimous identity or a sufficient legal entitlement.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "3c37f2d96391a08848dc27d4e7586a534110ae3dd8462f7efee05737f9e6cf11"
+    },
+    {
+      "questionId": "hug-4-8-009",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Economic grievances can interact with identity, institutions and mobilization; similar gaps do not guarantee identical political outcomes.",
+      "independentReview": "Checked that the observed comparison weakens a sufficient-cause claim without proving economic conditions irrelevant. Differences in mobilization and institutions are hypotheses to investigate, not established facts invented for either region.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "171f528ea742b9da7ac7847372e88b7a539dd21efd44b20ded1abc4fddc7501c"
+    },
+    {
+      "questionId": "hug-4-8-010",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "A technology can reduce one geographic barrier while increasing a movement’s organizational capacity.",
+      "independentReview": "Separated access/connectivity from mobilization capacity and constitutional outcome. The scenario does not assume a particular platform, algorithm or universal technological effect.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "9d2db4ade8d11f707937cd853957add6e3ebabb6f6746a1ab48b81b7b5ba7c40"
+    },
+    {
+      "questionId": "hug-4-8-011",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "An explicit aim to end the current state arrangement through separate independent statehood, rather than the stated internal autonomy alone.",
+      "independentReview": "Matched the reporting claim to the supplied manifesto rather than inferring disintegration from regional identity. Supports accurate interpretation while allowing later evidence to change the classification.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "de2787657754dac04ce2b4d3c20afcdf3c82a50aff2b5e851e3bf51351d4337e"
+    }
+  ]
+}
