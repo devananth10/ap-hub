@@ -1,0 +1,452 @@
+[
+  {
+    "number": 1,
+    "title": "Thinking Geographically",
+    "topics": [
+      {
+        "id": "topic-1-1",
+        "number": "1.1",
+        "title": "Introduction to Maps",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-1-2",
+        "number": "1.2",
+        "title": "Geographic Data",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-1-3",
+        "number": "1.3",
+        "title": "The Power of Geographic Data",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-1-4",
+        "number": "1.4",
+        "title": "Spatial Concepts",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-1-5",
+        "number": "1.5",
+        "title": "Human–Environmental Interaction",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-1-6",
+        "number": "1.6",
+        "title": "Scales of Analysis",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-1-7",
+        "number": "1.7",
+        "title": "Regional Analysis",
+        "workspaceReady": true
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "title": "Population and Migration Patterns and Processes",
+    "topics": [
+      {
+        "id": "topic-2-1",
+        "number": "2.1",
+        "title": "Population Distribution",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-2-2",
+        "number": "2.2",
+        "title": "Consequences of Population Distribution",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-2-3",
+        "number": "2.3",
+        "title": "Population Composition",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-2-4",
+        "number": "2.4",
+        "title": "Population Dynamics",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-2-5",
+        "number": "2.5",
+        "title": "The Demographic Transition Model",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-2-6",
+        "number": "2.6",
+        "title": "Malthusian Theory",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-2-7",
+        "number": "2.7",
+        "title": "Population Policies",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-2-8",
+        "number": "2.8",
+        "title": "Women and Demographic Change",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-2-9",
+        "number": "2.9",
+        "title": "Aging Populations",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-2-10",
+        "number": "2.10",
+        "title": "Causes of Migration",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-2-11",
+        "number": "2.11",
+        "title": "Forced and Voluntary Migration",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-2-12",
+        "number": "2.12",
+        "title": "Effects of Migration",
+        "workspaceReady": true
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "title": "Cultural Patterns and Processes",
+    "topics": [
+      {
+        "id": "topic-3-1",
+        "number": "3.1",
+        "title": "Introduction to Culture",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-3-2",
+        "number": "3.2",
+        "title": "Cultural Landscapes",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-3-3",
+        "number": "3.3",
+        "title": "Cultural Patterns",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-3-4",
+        "number": "3.4",
+        "title": "Types of Diffusion",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-3-5",
+        "number": "3.5",
+        "title": "Historical Causes of Diffusion",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-3-6",
+        "number": "3.6",
+        "title": "Contemporary Causes of Diffusion",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-3-7",
+        "number": "3.7",
+        "title": "Diffusion of Religion and Language",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-3-8",
+        "number": "3.8",
+        "title": "Effects of Diffusion",
+        "workspaceReady": true
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "title": "Political Patterns and Processes",
+    "topics": [
+      {
+        "id": "topic-4-1",
+        "number": "4.1",
+        "title": "Introduction to Political Geography",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-4-2",
+        "number": "4.2",
+        "title": "Political Processes",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-4-3",
+        "number": "4.3",
+        "title": "Political Power and Territoriality",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-4-4",
+        "number": "4.4",
+        "title": "Defining Political Boundaries",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-4-5",
+        "number": "4.5",
+        "title": "The Function of Political Boundaries",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-4-6",
+        "number": "4.6",
+        "title": "Internal Boundaries",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-4-7",
+        "number": "4.7",
+        "title": "Forms of Governance",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-4-8",
+        "number": "4.8",
+        "title": "Defining Devolutionary Factors",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-4-9",
+        "number": "4.9",
+        "title": "Challenges to Sovereignty",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-4-10",
+        "number": "4.10",
+        "title": "Consequences of Centrifugal and Centripetal Forces",
+        "workspaceReady": true
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "title": "Agriculture and Rural Land-Use Patterns and Processes",
+    "topics": [
+      {
+        "id": "topic-5-1",
+        "number": "5.1",
+        "title": "Introduction to Agriculture",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-5-2",
+        "number": "5.2",
+        "title": "Settlement Patterns and Survey Methods",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-5-3",
+        "number": "5.3",
+        "title": "Agricultural Origins and Diffusions",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-5-4",
+        "number": "5.4",
+        "title": "The Second Agricultural Revolution",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-5-5",
+        "number": "5.5",
+        "title": "The Green Revolution",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-5-6",
+        "number": "5.6",
+        "title": "Agricultural Production Regions",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-5-7",
+        "number": "5.7",
+        "title": "Spatial Organization of Agriculture",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-5-8",
+        "number": "5.8",
+        "title": "Von Thünen Model",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-5-9",
+        "number": "5.9",
+        "title": "The Global System of Agriculture",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-5-10",
+        "number": "5.10",
+        "title": "Consequences of Agricultural Practices",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-5-11",
+        "number": "5.11",
+        "title": "Challenges of Contemporary Agriculture",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-5-12",
+        "number": "5.12",
+        "title": "Women in Agriculture",
+        "workspaceReady": true
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "title": "Cities and Urban Land-Use Patterns and Processes",
+    "topics": [
+      {
+        "id": "topic-6-1",
+        "number": "6.1",
+        "title": "The Origin and Influences of Urbanization",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-6-2",
+        "number": "6.2",
+        "title": "Cities Across the World",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-6-3",
+        "number": "6.3",
+        "title": "Cities and Globalization",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-6-4",
+        "number": "6.4",
+        "title": "The Size and Distribution of Cities",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-6-5",
+        "number": "6.5",
+        "title": "The Internal Structure of Cities",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-6-6",
+        "number": "6.6",
+        "title": "Density and Land Use",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-6-7",
+        "number": "6.7",
+        "title": "Infrastructure",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-6-8",
+        "number": "6.8",
+        "title": "Urban Sustainability",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-6-9",
+        "number": "6.9",
+        "title": "Urban Data",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-6-10",
+        "number": "6.10",
+        "title": "Challenges of Urban Changes",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-6-11",
+        "number": "6.11",
+        "title": "Challenges of Urban Sustainability",
+        "workspaceReady": true
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "title": "Industrial and Economic Development Patterns and Processes",
+    "topics": [
+      {
+        "id": "topic-7-1",
+        "number": "7.1",
+        "title": "The Industrial Revolution",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-7-2",
+        "number": "7.2",
+        "title": "Economic Sectors and Patterns",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-7-3",
+        "number": "7.3",
+        "title": "Measures of Development",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-7-4",
+        "number": "7.4",
+        "title": "Women and Economic Development",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-7-5",
+        "number": "7.5",
+        "title": "Theories of Development",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-7-6",
+        "number": "7.6",
+        "title": "Trade and the World Economy",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-7-7",
+        "number": "7.7",
+        "title": "Changes as a Result of the World Economy",
+        "workspaceReady": true
+      },
+      {
+        "id": "topic-7-8",
+        "number": "7.8",
+        "title": "Sustainable Development",
+        "workspaceReady": true
+      }
+    ]
+  }
+]

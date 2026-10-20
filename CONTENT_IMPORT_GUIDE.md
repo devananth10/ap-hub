@@ -123,3 +123,7 @@ Calculus AB uses course ID `calculus-ab`, stable question IDs `calc-ab-<unit>-<t
 - https://apcentral.collegeboard.org/media/pdf/ap-chemistry-course-and-exam-description-clarifications.pdf
 
 Accessed 2026-10-17. Fall 2024 CED applies in 2026–27. June 2026 clarifications concern front matter, resource references, and Progress Check wording; they do not introduce a different Chemistry topic inventory.
+
+## Human Geography continuation
+
+The verified 68-topic registry is content-drafts/human-geography/research/official-topics.json, with courseId human-geography, unitNumber 1–7 and canonical IDs topic-<unit>-<topic>. Use src/config/human-geography-curriculum.json for runtime names. Question target: eleven original MCQs per topic, 748 total, no placeholders counted. Follow the subsequent visual-question master prompt and permanent validated automatic-publication policy. Question work must preserve all 136 verified video mappings, instructor preferences, notes and watched progress. Track actual completed/published counts in the Human Geography progress file.

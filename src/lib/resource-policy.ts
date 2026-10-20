@@ -1,4 +1,5 @@
 import type { Course } from "./courses.ts";
+import { humanGeographyInstructors, isInstructorId, type InstructorId } from "./video-instructors.ts";
 
 export type ResourceApproval =
   | { status: "draft" }
@@ -18,6 +19,7 @@ export type OfficialResource = {
   visibility?: "published" | "hidden";
   order?: number;
   part?: string;
+  instructorId?: InstructorId;
   source?: { directory: string; labels: string[]; checkedOn: string; verification: string };
   approval: ResourceApproval;
   video?: { provider: "youtube"; embedPolicy: "allowed" | "link-only"; videoId?: string };
@@ -69,6 +71,11 @@ export function publishOfficialResources(config: unknown, courses: Course[]): Pu
     if (value.visibility !== undefined && !["published", "hidden"].includes(String(value.visibility))) fail("visibility must be published or hidden.");
     if (value.order !== undefined && (typeof value.order !== "number" || !Number.isInteger(value.order) || value.order < 0)) fail("order must be a nonnegative integer.");
     if (value.part !== undefined && !nonempty(value.part)) fail("part must be nonempty when supplied.");
+    if (value.instructorId !== undefined && (value.courseId !== "human-geography" || value.kind !== "video" || !isInstructorId(value.instructorId))) fail("instructorId must identify a supported Human Geography video instructor.");
+    if (value.courseId === "human-geography" && value.kind === "video") {
+      const instructor = humanGeographyInstructors.find(item => item.id === value.instructorId);
+      if (!instructor || instructor.publisher !== value.publisher) fail("Human Geography videos require a matching instructorId and publisher.");
+    }
     if (value.source !== undefined && (!isRecord(value.source) || !safeResourceUrl(value.source.directory) || !Array.isArray(value.source.labels) || !value.source.labels.every(nonempty) || !nonempty(value.source.checkedOn) || !nonempty(value.source.verification))) fail("source provenance is incomplete.");
     if (!["title", "publisher", "description"].every((key) => nonempty(value[key]))) fail("title, publisher, and description are required.");
     if (!["video", "reading", "guide", "reference"].includes(String(value.kind))) fail("unknown resource kind.");

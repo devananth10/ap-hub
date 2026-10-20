@@ -1,5 +1,9 @@
 # PrepAtlas milestone verification
 
+## Human Geography course and dual-instructor integration
+
+Seven units and 68 CED-checked topics are registered, with 136 initial verified videos and no Human Geography MCQs at this checkpoint. TypeScript, production build, 118 automated tests, all new topic/empty-Practice scopes and existing course regressions passed. Actual representative playback/fullscreen, preference persistence, separate watched status, notes preservation, keyboard selection and mobile layout were checked. See [full report](HUMAN_GEOGRAPHY.md) for exact counts, thirteen withheld extras, limits and next question phase.
+
 ## Flipped Math Version 1 Calculus AB integration — October 19 authorization
 
 All 81 AB topics now have one verified The Algebros Version 1 lesson. The one-time URL ledger, 30 BC-only exclusions, four non-video applet exclusions and verification limits are recorded in [the complete integration report](FLIPPED_MATH_VERIFICATION.md). All 1,892 MCQs and 102 Krug resources are preserved. TypeScript, 111 automated tests, resource validation, production build, complete topic/Practice route checks and preview stability checks passed. Representative desktop/mobile actual playback, fullscreen, note/watched persistence, Practice grading and Chemistry multipart navigation passed. No public deployment.

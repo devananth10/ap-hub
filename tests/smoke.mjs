@@ -86,7 +86,7 @@ for (const course of courses) {
   assert.ok(!html.includes("data-dashboard-art"), "Course art should not be randomized");
   assert.ok(html.includes(`/practice?course=${course.id}`), "Each course should link to scoped practice");
 }
-console.log("PASS all six fixed course themes and practice entry points");
+console.log("PASS all seven fixed course themes and practice entry points");
 const draws = new Set();
 for (let index = 0; index < 12; index++) {
   const html = await (await fetch(base, { cache: "no-store" })).text();
@@ -96,4 +96,4 @@ for (let index = 0; index < 12; index++) {
 }
 assert.ok(draws.size > 1, "Fresh home responses should draw different academic subjects");
 console.log(`PASS homepage randomization (${draws.size} themes across 12 fresh responses)`);
-console.log(`${cases.length} page routes, CSS, seven 404s, six fixed course themes, and homepage randomization passed. See README for browser checks.`);
+console.log(`${cases.length} page routes, CSS, seven 404s, seven fixed course themes, and homepage randomization passed. See README for browser checks.`);

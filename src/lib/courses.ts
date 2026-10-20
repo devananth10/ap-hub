@@ -1,8 +1,9 @@
 import calculusABUnits from "../config/calculus-ab-curriculum.json" with { type: "json" };
 import chemistryUnits from "../config/chemistry-curriculum.json" with { type: "json" };
+import humanGeographyUnits from "../config/human-geography-curriculum.json" with { type: "json" };
 import type { AcademicTheme } from "./artwork.ts";
 
-export type Topic = { id: string; number: string; title: string; ready?: boolean };
+export type Topic = { id: string; number: string; title: string; ready?: boolean; workspaceReady?: boolean };
 export type Unit = { number: number; title: string; topics: Topic[] };
 export type Course = {
   id: string; title: string; shortTitle: string; category: string;
@@ -31,6 +32,7 @@ export const courses: Course[] = [
   { id: "physics-1", artwork: "physics", title: "AP Physics 1", shortTitle: "Physics 1", category: "Science", color: "blue", icon: "atom", description: "Discover the principles behind how our world moves.", units: [{ number: 1, title: "Kinematics", topics: [{ id: "motion", number: "1.1", title: "Position, velocity, and acceleration" }] }] },
   { id: "english-language", artwork: "literature", title: "AP English Language", shortTitle: "English Language", category: "Humanities", color: "rose", icon: "book", description: "Read with intention. Write with confidence.", units: [{ number: 1, title: "Rhetorical Foundations", topics: [{ id: "rhetoric", number: "1.1", title: "Understanding rhetorical situations" }] }] },
   { id: "us-history", artwork: "history", title: "AP U.S. History", shortTitle: "U.S. History", category: "Humanities", color: "amber", icon: "globe", description: "Connect the people, ideas, and events that shaped a nation.", units: [{ number: 1, title: "Period 1: 1491–1607", topics: [{ id: "context", number: "1.1", title: "Contextualizing Period 1" }] }] },
+  { id: "human-geography", artwork: "geography", title: "AP Human Geography", shortTitle: "Human Geography", category: "Social Science", color: "teal", icon: "globe", description: "Explore the patterns connecting people, places, and our changing world.", units: humanGeographyUnits },
 ];
 
 export const exampleTopic = courses[0].units[0].topics[4];

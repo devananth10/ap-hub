@@ -55,3 +55,13 @@ Correct a mapping in `unitNumber`/`topicIds`, change `order` for sequencing, or 
 For a future approved multipart topic, add each distinct verified video as its own record with explicit integer order and a part label only when verified. Keep one record per actual YouTube ID per course; share topicIds only within a unit. The existing tabs, keyboard navigation and Previous/Next automatically apply. No new player or public editor is needed.
 
 Validate with `node --experimental-strip-types scripts/check-flippedmath-inventory.mjs`, the unit/type/build checks above, and all topic workspace checks. Open `/courses/calculus-ab/<topicId>` to inspect its lesson, original link, manual watched status, optional notes and the matching eleven-question Practice link. The research script never publishes; after this initial import it requires a separate output path and cannot overwrite the frozen initial evidence by default. Do not auto-import future playlists or replacements.
+
+## Human Geography — Mr. Sinn and Heimler
+
+The initial 136 verified URLs are authorized by the owner's automatic-approval update and frozen in docs/INITIAL_HUMAN_GEOGRAPHY_APPROVAL.json. The previous pending-only instruction is superseded for this collection. Thirteen unmapped extras remain unpublished. Future URLs/replacements require separate explicit authorization.
+
+Find records by courseId human-geography and stable resource ID in the central catalog. Set instructorId to mr-sinn with publisher Mr. Sinn, or heimler with publisher Heimler's History. The policy rejects unsupported/mismatched instructors. Keep existing resource IDs when correcting titles, mapping or order; replacing actual video content starts a different watched identity. Do not regenerate IDs merely because their initial suffix was derived from the original video ID.
+
+Use order within each instructor's lessons; part is optional and must reflect a real part label. Tabs/Previous/Next contain only the active instructor's videos. A shared lesson can list multiple topicIds in the same unit; never duplicate its provider ID. visibility hidden removes it safely and published restores it under its existing exact-URL approval. Pending evidence alone never approves a URL. Keep frozen initial ledgers historical when recording future authorized corrections.
+
+Runtime curriculum/IDs: src/config/human-geography-curriculum.json and content-drafts/human-geography/research/official-topics.json. Do not rename canonical topic IDs. Instructor preference is optional in existing student storage and does not replace notes/watched status. See docs/HUMAN_GEOGRAPHY.md and run pnpm test:human-geography, unit/type/build checks and shared regressions.

@@ -71,7 +71,7 @@ const calculusInventory=read('content-drafts/calculus-ab/research/official-topic
 test('one-time Flipped Math Version 1 collection verifies and covers exactly the 81 AB topics',()=>{
   assert.deepEqual(validateFlippedMathInventory(flipped,calculusInventory),{topics:81,videos:81,verified:81,pending:[]});
   const calc=allResources.filter(r=>r.courseId==='calculus-ab');
-  assert.equal(calc.length,81);assert.equal(allResources.length,183);
+  assert.equal(calc.length,81);assert.equal(allResources.filter(r=>['chemistry','calculus-ab'].includes(r.courseId)).length,183);
   assert.deepEqual(calc.map(r=>r.url),flippedApproval.approvedUrls);
   assert.equal(new Set(calc.map(r=>r.video.videoId)).size,81);
   for(const topic of calculusInventory){

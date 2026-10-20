@@ -1,0 +1,491 @@
+{
+  "courseId": "human-geography",
+  "checkedOn": "2026-10-20",
+  "source": "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+  "coursePage": "https://apcentral.collegeboard.org/courses/ap-human-geography",
+  "clarifications": "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description-clarifications.pdf",
+  "effective": "Fall 2020 framework currently linked by AP Central; June 2026 clarifications reviewed",
+  "unitCount": 7,
+  "topicCount": 68,
+  "inventory": [
+    {
+      "unitNumber": 1,
+      "unitTitle": "Thinking Geographically",
+      "topicNumber": "1.1",
+      "topicId": "topic-1-1",
+      "title": "Introduction to Maps"
+    },
+    {
+      "unitNumber": 1,
+      "unitTitle": "Thinking Geographically",
+      "topicNumber": "1.2",
+      "topicId": "topic-1-2",
+      "title": "Geographic Data"
+    },
+    {
+      "unitNumber": 1,
+      "unitTitle": "Thinking Geographically",
+      "topicNumber": "1.3",
+      "topicId": "topic-1-3",
+      "title": "The Power of Geographic Data"
+    },
+    {
+      "unitNumber": 1,
+      "unitTitle": "Thinking Geographically",
+      "topicNumber": "1.4",
+      "topicId": "topic-1-4",
+      "title": "Spatial Concepts"
+    },
+    {
+      "unitNumber": 1,
+      "unitTitle": "Thinking Geographically",
+      "topicNumber": "1.5",
+      "topicId": "topic-1-5",
+      "title": "Human–Environmental Interaction"
+    },
+    {
+      "unitNumber": 1,
+      "unitTitle": "Thinking Geographically",
+      "topicNumber": "1.6",
+      "topicId": "topic-1-6",
+      "title": "Scales of Analysis"
+    },
+    {
+      "unitNumber": 1,
+      "unitTitle": "Thinking Geographically",
+      "topicNumber": "1.7",
+      "topicId": "topic-1-7",
+      "title": "Regional Analysis"
+    },
+    {
+      "unitNumber": 2,
+      "unitTitle": "Population and Migration Patterns and Processes",
+      "topicNumber": "2.1",
+      "topicId": "topic-2-1",
+      "title": "Population Distribution"
+    },
+    {
+      "unitNumber": 2,
+      "unitTitle": "Population and Migration Patterns and Processes",
+      "topicNumber": "2.2",
+      "topicId": "topic-2-2",
+      "title": "Consequences of Population Distribution"
+    },
+    {
+      "unitNumber": 2,
+      "unitTitle": "Population and Migration Patterns and Processes",
+      "topicNumber": "2.3",
+      "topicId": "topic-2-3",
+      "title": "Population Composition"
+    },
+    {
+      "unitNumber": 2,
+      "unitTitle": "Population and Migration Patterns and Processes",
+      "topicNumber": "2.4",
+      "topicId": "topic-2-4",
+      "title": "Population Dynamics"
+    },
+    {
+      "unitNumber": 2,
+      "unitTitle": "Population and Migration Patterns and Processes",
+      "topicNumber": "2.5",
+      "topicId": "topic-2-5",
+      "title": "The Demographic Transition Model"
+    },
+    {
+      "unitNumber": 2,
+      "unitTitle": "Population and Migration Patterns and Processes",
+      "topicNumber": "2.6",
+      "topicId": "topic-2-6",
+      "title": "Malthusian Theory"
+    },
+    {
+      "unitNumber": 2,
+      "unitTitle": "Population and Migration Patterns and Processes",
+      "topicNumber": "2.7",
+      "topicId": "topic-2-7",
+      "title": "Population Policies"
+    },
+    {
+      "unitNumber": 2,
+      "unitTitle": "Population and Migration Patterns and Processes",
+      "topicNumber": "2.8",
+      "topicId": "topic-2-8",
+      "title": "Women and Demographic Change"
+    },
+    {
+      "unitNumber": 2,
+      "unitTitle": "Population and Migration Patterns and Processes",
+      "topicNumber": "2.9",
+      "topicId": "topic-2-9",
+      "title": "Aging Populations"
+    },
+    {
+      "unitNumber": 2,
+      "unitTitle": "Population and Migration Patterns and Processes",
+      "topicNumber": "2.10",
+      "topicId": "topic-2-10",
+      "title": "Causes of Migration"
+    },
+    {
+      "unitNumber": 2,
+      "unitTitle": "Population and Migration Patterns and Processes",
+      "topicNumber": "2.11",
+      "topicId": "topic-2-11",
+      "title": "Forced and Voluntary Migration"
+    },
+    {
+      "unitNumber": 2,
+      "unitTitle": "Population and Migration Patterns and Processes",
+      "topicNumber": "2.12",
+      "topicId": "topic-2-12",
+      "title": "Effects of Migration"
+    },
+    {
+      "unitNumber": 3,
+      "unitTitle": "Cultural Patterns and Processes",
+      "topicNumber": "3.1",
+      "topicId": "topic-3-1",
+      "title": "Introduction to Culture"
+    },
+    {
+      "unitNumber": 3,
+      "unitTitle": "Cultural Patterns and Processes",
+      "topicNumber": "3.2",
+      "topicId": "topic-3-2",
+      "title": "Cultural Landscapes"
+    },
+    {
+      "unitNumber": 3,
+      "unitTitle": "Cultural Patterns and Processes",
+      "topicNumber": "3.3",
+      "topicId": "topic-3-3",
+      "title": "Cultural Patterns"
+    },
+    {
+      "unitNumber": 3,
+      "unitTitle": "Cultural Patterns and Processes",
+      "topicNumber": "3.4",
+      "topicId": "topic-3-4",
+      "title": "Types of Diffusion"
+    },
+    {
+      "unitNumber": 3,
+      "unitTitle": "Cultural Patterns and Processes",
+      "topicNumber": "3.5",
+      "topicId": "topic-3-5",
+      "title": "Historical Causes of Diffusion"
+    },
+    {
+      "unitNumber": 3,
+      "unitTitle": "Cultural Patterns and Processes",
+      "topicNumber": "3.6",
+      "topicId": "topic-3-6",
+      "title": "Contemporary Causes of Diffusion"
+    },
+    {
+      "unitNumber": 3,
+      "unitTitle": "Cultural Patterns and Processes",
+      "topicNumber": "3.7",
+      "topicId": "topic-3-7",
+      "title": "Diffusion of Religion and Language"
+    },
+    {
+      "unitNumber": 3,
+      "unitTitle": "Cultural Patterns and Processes",
+      "topicNumber": "3.8",
+      "topicId": "topic-3-8",
+      "title": "Effects of Diffusion"
+    },
+    {
+      "unitNumber": 4,
+      "unitTitle": "Political Patterns and Processes",
+      "topicNumber": "4.1",
+      "topicId": "topic-4-1",
+      "title": "Introduction to Political Geography"
+    },
+    {
+      "unitNumber": 4,
+      "unitTitle": "Political Patterns and Processes",
+      "topicNumber": "4.2",
+      "topicId": "topic-4-2",
+      "title": "Political Processes"
+    },
+    {
+      "unitNumber": 4,
+      "unitTitle": "Political Patterns and Processes",
+      "topicNumber": "4.3",
+      "topicId": "topic-4-3",
+      "title": "Political Power and Territoriality"
+    },
+    {
+      "unitNumber": 4,
+      "unitTitle": "Political Patterns and Processes",
+      "topicNumber": "4.4",
+      "topicId": "topic-4-4",
+      "title": "Defining Political Boundaries"
+    },
+    {
+      "unitNumber": 4,
+      "unitTitle": "Political Patterns and Processes",
+      "topicNumber": "4.5",
+      "topicId": "topic-4-5",
+      "title": "The Function of Political Boundaries"
+    },
+    {
+      "unitNumber": 4,
+      "unitTitle": "Political Patterns and Processes",
+      "topicNumber": "4.6",
+      "topicId": "topic-4-6",
+      "title": "Internal Boundaries"
+    },
+    {
+      "unitNumber": 4,
+      "unitTitle": "Political Patterns and Processes",
+      "topicNumber": "4.7",
+      "topicId": "topic-4-7",
+      "title": "Forms of Governance"
+    },
+    {
+      "unitNumber": 4,
+      "unitTitle": "Political Patterns and Processes",
+      "topicNumber": "4.8",
+      "topicId": "topic-4-8",
+      "title": "Defining Devolutionary Factors"
+    },
+    {
+      "unitNumber": 4,
+      "unitTitle": "Political Patterns and Processes",
+      "topicNumber": "4.9",
+      "topicId": "topic-4-9",
+      "title": "Challenges to Sovereignty"
+    },
+    {
+      "unitNumber": 4,
+      "unitTitle": "Political Patterns and Processes",
+      "topicNumber": "4.10",
+      "topicId": "topic-4-10",
+      "title": "Consequences of Centrifugal and Centripetal Forces"
+    },
+    {
+      "unitNumber": 5,
+      "unitTitle": "Agriculture and Rural Land-Use Patterns and Processes",
+      "topicNumber": "5.1",
+      "topicId": "topic-5-1",
+      "title": "Introduction to Agriculture"
+    },
+    {
+      "unitNumber": 5,
+      "unitTitle": "Agriculture and Rural Land-Use Patterns and Processes",
+      "topicNumber": "5.2",
+      "topicId": "topic-5-2",
+      "title": "Settlement Patterns and Survey Methods"
+    },
+    {
+      "unitNumber": 5,
+      "unitTitle": "Agriculture and Rural Land-Use Patterns and Processes",
+      "topicNumber": "5.3",
+      "topicId": "topic-5-3",
+      "title": "Agricultural Origins and Diffusions"
+    },
+    {
+      "unitNumber": 5,
+      "unitTitle": "Agriculture and Rural Land-Use Patterns and Processes",
+      "topicNumber": "5.4",
+      "topicId": "topic-5-4",
+      "title": "The Second Agricultural Revolution"
+    },
+    {
+      "unitNumber": 5,
+      "unitTitle": "Agriculture and Rural Land-Use Patterns and Processes",
+      "topicNumber": "5.5",
+      "topicId": "topic-5-5",
+      "title": "The Green Revolution"
+    },
+    {
+      "unitNumber": 5,
+      "unitTitle": "Agriculture and Rural Land-Use Patterns and Processes",
+      "topicNumber": "5.6",
+      "topicId": "topic-5-6",
+      "title": "Agricultural Production Regions"
+    },
+    {
+      "unitNumber": 5,
+      "unitTitle": "Agriculture and Rural Land-Use Patterns and Processes",
+      "topicNumber": "5.7",
+      "topicId": "topic-5-7",
+      "title": "Spatial Organization of Agriculture"
+    },
+    {
+      "unitNumber": 5,
+      "unitTitle": "Agriculture and Rural Land-Use Patterns and Processes",
+      "topicNumber": "5.8",
+      "topicId": "topic-5-8",
+      "title": "Von Thünen Model"
+    },
+    {
+      "unitNumber": 5,
+      "unitTitle": "Agriculture and Rural Land-Use Patterns and Processes",
+      "topicNumber": "5.9",
+      "topicId": "topic-5-9",
+      "title": "The Global System of Agriculture"
+    },
+    {
+      "unitNumber": 5,
+      "unitTitle": "Agriculture and Rural Land-Use Patterns and Processes",
+      "topicNumber": "5.10",
+      "topicId": "topic-5-10",
+      "title": "Consequences of Agricultural Practices"
+    },
+    {
+      "unitNumber": 5,
+      "unitTitle": "Agriculture and Rural Land-Use Patterns and Processes",
+      "topicNumber": "5.11",
+      "topicId": "topic-5-11",
+      "title": "Challenges of Contemporary Agriculture"
+    },
+    {
+      "unitNumber": 5,
+      "unitTitle": "Agriculture and Rural Land-Use Patterns and Processes",
+      "topicNumber": "5.12",
+      "topicId": "topic-5-12",
+      "title": "Women in Agriculture"
+    },
+    {
+      "unitNumber": 6,
+      "unitTitle": "Cities and Urban Land-Use Patterns and Processes",
+      "topicNumber": "6.1",
+      "topicId": "topic-6-1",
+      "title": "The Origin and Influences of Urbanization"
+    },
+    {
+      "unitNumber": 6,
+      "unitTitle": "Cities and Urban Land-Use Patterns and Processes",
+      "topicNumber": "6.2",
+      "topicId": "topic-6-2",
+      "title": "Cities Across the World"
+    },
+    {
+      "unitNumber": 6,
+      "unitTitle": "Cities and Urban Land-Use Patterns and Processes",
+      "topicNumber": "6.3",
+      "topicId": "topic-6-3",
+      "title": "Cities and Globalization"
+    },
+    {
+      "unitNumber": 6,
+      "unitTitle": "Cities and Urban Land-Use Patterns and Processes",
+      "topicNumber": "6.4",
+      "topicId": "topic-6-4",
+      "title": "The Size and Distribution of Cities"
+    },
+    {
+      "unitNumber": 6,
+      "unitTitle": "Cities and Urban Land-Use Patterns and Processes",
+      "topicNumber": "6.5",
+      "topicId": "topic-6-5",
+      "title": "The Internal Structure of Cities"
+    },
+    {
+      "unitNumber": 6,
+      "unitTitle": "Cities and Urban Land-Use Patterns and Processes",
+      "topicNumber": "6.6",
+      "topicId": "topic-6-6",
+      "title": "Density and Land Use"
+    },
+    {
+      "unitNumber": 6,
+      "unitTitle": "Cities and Urban Land-Use Patterns and Processes",
+      "topicNumber": "6.7",
+      "topicId": "topic-6-7",
+      "title": "Infrastructure"
+    },
+    {
+      "unitNumber": 6,
+      "unitTitle": "Cities and Urban Land-Use Patterns and Processes",
+      "topicNumber": "6.8",
+      "topicId": "topic-6-8",
+      "title": "Urban Sustainability"
+    },
+    {
+      "unitNumber": 6,
+      "unitTitle": "Cities and Urban Land-Use Patterns and Processes",
+      "topicNumber": "6.9",
+      "topicId": "topic-6-9",
+      "title": "Urban Data"
+    },
+    {
+      "unitNumber": 6,
+      "unitTitle": "Cities and Urban Land-Use Patterns and Processes",
+      "topicNumber": "6.10",
+      "topicId": "topic-6-10",
+      "title": "Challenges of Urban Changes"
+    },
+    {
+      "unitNumber": 6,
+      "unitTitle": "Cities and Urban Land-Use Patterns and Processes",
+      "topicNumber": "6.11",
+      "topicId": "topic-6-11",
+      "title": "Challenges of Urban Sustainability"
+    },
+    {
+      "unitNumber": 7,
+      "unitTitle": "Industrial and Economic Development Patterns and Processes",
+      "topicNumber": "7.1",
+      "topicId": "topic-7-1",
+      "title": "The Industrial Revolution"
+    },
+    {
+      "unitNumber": 7,
+      "unitTitle": "Industrial and Economic Development Patterns and Processes",
+      "topicNumber": "7.2",
+      "topicId": "topic-7-2",
+      "title": "Economic Sectors and Patterns"
+    },
+    {
+      "unitNumber": 7,
+      "unitTitle": "Industrial and Economic Development Patterns and Processes",
+      "topicNumber": "7.3",
+      "topicId": "topic-7-3",
+      "title": "Measures of Development"
+    },
+    {
+      "unitNumber": 7,
+      "unitTitle": "Industrial and Economic Development Patterns and Processes",
+      "topicNumber": "7.4",
+      "topicId": "topic-7-4",
+      "title": "Women and Economic Development"
+    },
+    {
+      "unitNumber": 7,
+      "unitTitle": "Industrial and Economic Development Patterns and Processes",
+      "topicNumber": "7.5",
+      "topicId": "topic-7-5",
+      "title": "Theories of Development"
+    },
+    {
+      "unitNumber": 7,
+      "unitTitle": "Industrial and Economic Development Patterns and Processes",
+      "topicNumber": "7.6",
+      "topicId": "topic-7-6",
+      "title": "Trade and the World Economy"
+    },
+    {
+      "unitNumber": 7,
+      "unitTitle": "Industrial and Economic Development Patterns and Processes",
+      "topicNumber": "7.7",
+      "topicId": "topic-7-7",
+      "title": "Changes as a Result of the World Economy"
+    },
+    {
+      "unitNumber": 7,
+      "unitTitle": "Industrial and Economic Development Patterns and Processes",
+      "topicNumber": "7.8",
+      "topicId": "topic-7-8",
+      "title": "Sustainable Development"
+    }
+  ],
+  "cedSha256": "570d19e5c92c12c173c56382a5a4d6fa8de0f7e45326ff58e6f8bbd76498b60d",
+  "independentHeadingMatches": 68,
+  "headingCheck": "All 68 numbered CED topic headings matched after whitespace, punctuation and Unicode diacritic normalization. No question/lesson text copied."
+}

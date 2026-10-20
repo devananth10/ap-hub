@@ -122,8 +122,8 @@ test("dashboard artwork pool contains distinct academic subjects", () => {
   assert.equal(new Set(academicThemes.map((theme) => theme.id)).size, 8);
   for (const invalid of [-1, 8, 1.5, NaN]) assert.throws(() => dashboardThemeAt(invalid));
 });
-test("existing courses use stable relevant subject art without adding courses", () => {
+test("registered courses use fixed relevant subject art, including Human Geography", () => {
   assert.deepEqual(Object.fromEntries(courses.map((course) => [course.id, course.artwork])), {
-    chemistry: "chemistry", biology: "biology", "calculus-ab": "calculus", "physics-1": "physics", "english-language": "literature", "us-history": "history",
+    chemistry: "chemistry", biology: "biology", "calculus-ab": "calculus", "physics-1": "physics", "english-language": "literature", "us-history": "history", "human-geography": "geography",
   });
 });

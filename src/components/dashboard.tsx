@@ -15,7 +15,7 @@ import { courseWithResources, resourcesForTopic, type PublishedResource } from "
 
 export function CourseCard({ course }: { course: Course }) {
   const { completed } = useStudy();
-  const available = course.units.flatMap((unit) => unit.topics).filter((topic) => topic.ready);
+  const available = course.units.flatMap((unit) => unit.topics).filter((topic) => topic.ready || topic.workspaceReady);
   const count = available.filter((topic) => completed.includes(topicKey(course.id, topic.id))).length;
   return <article className={`course-card ${course.color}`}><Link className="course-card-main" href={`/courses/${course.id}`}>
     <div className={`course-card-art ${course.color}`}><CourseIcon course={course} size={36} /><span className="subject-category">{course.category}</span><CourseCardArt theme={course.artwork} /></div>
@@ -28,7 +28,7 @@ export function Dashboard({ library = false, approvedResources, illustration = "
   const [pickerOpen, setPickerOpen] = useState(false);
   const selectedCourses = courses.filter((course) => selected.includes(course.id)).map(course => courseWithResources(course, approvedResources));
   const recent = lastTopic ? findTopic(...lastTopic.split("/") as [string, string]) : findTopic("chemistry", "electron-configuration");
-  const resume = recent.topic && (recent.topic.ready || resourcesForTopic(approvedResources, recent.course!.id, recent.unit!.number, recent.topic.id).length) ? recent : findTopic("chemistry", "electron-configuration");
+  const resume = recent.topic && (recent.topic.ready || recent.topic.workspaceReady || resourcesForTopic(approvedResources, recent.course!.id, recent.unit!.number, recent.topic.id).length) ? recent : findTopic("chemistry", "electron-configuration");
   const resourceCount = resourcesForTopic(approvedResources, resume.course!.id, resume.unit!.number, resume.topic!.id).length;
   const resumeHref = `/courses/${resume.course!.id}/${resume.topic!.id}`;
   const noteCount = Object.values(notes).filter((note) => note.trim()).length;
@@ -41,7 +41,7 @@ export function Dashboard({ library = false, approvedResources, illustration = "
     {!library && <div className="dashboard-lower"><section aria-labelledby="jump-title"><div className="section-heading"><h2 id="jump-title">{lastTopic ? "Pick up where you left off" : "A good place to start"}</h2><span className="small muted">ONE TOPIC AT A TIME</span></div><Link href={resumeHref} className="start-lesson panel"><span className="lesson-thumbnail"><AcademicArt theme={resume.course!.artwork} compact /><span className="mini-play"><Play size={15} fill="currentColor" /></span></span><div className="start-lesson-copy"><span className="tiny-label">{resume.course!.title.toUpperCase()} <span> / </span> UNIT {resume.unit!.number}</span><h3>{resume.topic!.title}</h3><div className="lesson-details"><span><BookOpen size={14} /> {resourceCount} resources</span></div></div><span className="circle-arrow"><ArrowRight size={19} /></span></Link></section>
     <section className="session-card panel"><div className="session-card-title"><span className="icon-tile"><Sparkles size={19} /></span><h3>Small steps add up.</h3></div><p>A little progress is still progress.<br />Make this session count.</p><div className="session-stats"><div><strong>{completed.length.toString().padStart(2, "0")}</strong><span><CircleCheck size={13} /> Topics completed</span></div><div><strong>{noteCount.toString().padStart(2, "0")}</strong><span><StickyNote size={13} /> Personal notes</span></div></div><span className="session-footnote"><Check size={13} /> Your progress stays on this device</span></section></div>}
     {!library && <div className="dashboard-tip"><span className="tip-icon"><BookOpen size={19} /></span><p><strong>Study your way.</strong> Watch a lesson, open a resource, or jot down a thought. Keep everything in one place.</p><ArrowDown size={16} /></div>}
-    {library && <p className="outline-disclaimer">AP Chemistry includes video lessons and topic practice. Other course outlines are previews and may be partial.</p>}
+    {library && <p className="outline-disclaimer">Chemistry and Calculus include video lessons and MCQs. Human Geography includes video lessons and optional notes; questions are coming soon. Other outlines may be partial.</p>}
     {pickerOpen && <CoursePicker onClose={() => setPickerOpen(false)} />}
   </div>;
 }

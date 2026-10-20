@@ -11,7 +11,7 @@ import { academicThemes } from "@/lib/artwork";
 
 export function CourseOutline({ course }: { course: Course }) {
   const { selected, toggleCourse, completed } = useStudy();
-  const available = course.units.flatMap((unit) => unit.topics).filter((topic) => topic.ready);
+  const available = course.units.flatMap((unit) => unit.topics).filter((topic) => topic.ready || topic.workspaceReady);
   const practiceCount = countPractice({ courseId: course.id });
   return (
     <div className="page outline-page">
@@ -36,8 +36,8 @@ export function CourseOutline({ course }: { course: Course }) {
                 <summary><span className={`unit-number ${course.color}`}>{unit.number.toString().padStart(2, "0")}</span><span><span className="tiny-label">UNIT {unit.number}</span><strong>{unit.title}</strong></span><span className="unit-topic-count">{unit.topics.length} topics</span><ChevronDown size={18} /></summary>
                 <div className="unit-practice-row"><span>{count ? `${count} MCQs available` : "Questions coming soon"}</span><Link href={practiceHref(unitScope)} className="text-button" aria-label={`${count ? "Start Practice" : "Practice availability"} for ${course.title} Unit ${unit.number}`}><Target size={14} />{count ? "Start Practice" : "Practice coming soon"}<ArrowRight size={13} /></Link></div>
                 <div className="topic-list">{unit.topics.map((topic) => (
-                  <div key={topic.id} className={`topic-row topic-row-with-practice ${topic.ready ? "ready" : ""}`}>
-                    <Link className="topic-study-link" href={`/courses/${course.id}/${topic.id}`}><span className="topic-number">{topic.number}</span><span>{topic.title}</span>{completed.includes(topicKey(course.id, topic.id)) ? <CheckCircle2 size={18} className="text-teal" /> : topic.ready ? <span className="topic-status"><Play size={12} />Study topic</span> : <span className="planned-label">{countPractice({ ...unitScope, topicId: topic.id }) ? "Practice ready" : "Coming soon"}</span>}<ChevronRight size={15} /></Link>
+                  <div key={topic.id} className={`topic-row topic-row-with-practice ${topic.ready || topic.workspaceReady ? "ready" : ""}`}>
+                    <Link className="topic-study-link" href={`/courses/${course.id}/${topic.id}`}><span className="topic-number">{topic.number}</span><span>{topic.title}</span>{completed.includes(topicKey(course.id, topic.id)) ? <CheckCircle2 size={18} className="text-teal" /> : topic.ready ? <span className="topic-status"><Play size={12} />Study topic</span> : topic.workspaceReady ? <span className="topic-status">Open topic</span> : <span className="planned-label">{countPractice({ ...unitScope, topicId: topic.id }) ? "Practice ready" : "Coming soon"}</span>}<ChevronRight size={15} /></Link>
                     <Link href={practiceHref({ ...unitScope, topicId: topic.id })} className="topic-practice-link" aria-label={`Practice ${course.title} Topic ${topic.number}`}><Target size={14} /><span>Practice{countPractice({ ...unitScope, topicId: topic.id }) ? ` · ${countPractice({ ...unitScope, topicId: topic.id })} MCQs` : ""}</span></Link>
                   </div>
                 ))}</div>
@@ -46,7 +46,7 @@ export function CourseOutline({ course }: { course: Course }) {
           })}</div>
         </section>
         <aside className="outline-aside">
-          <div className="panel outline-info"><span className="icon-tile"><Target size={22} /></span><h3>Make understanding stick.</h3><p>{practiceCount ? "Work through available MCQs and check your reasoning." : "Practice for this course is planned. Browse its scope and see what is available."}</p><Link href={practiceHref({ courseId: course.id })} className="button primary">{practiceCount ? "Start Practice" : "Practice availability"}<ArrowRight size={16} /></Link><hr /><strong>{available.length} {available.length === 1 ? "topic is" : "topics are"} ready</strong><p className="small">Explore available lessons and practice. Topics without study materials remain outline previews.</p>{available[0] && <Link href={`/courses/${course.id}/${available[0].id}`} className="text-button">Open a topic<ChevronRight size={15} /></Link>}</div>
+          <div className="panel outline-info"><span className="icon-tile"><Target size={22} /></span><h3>Make understanding stick.</h3><p>{practiceCount ? "Work through available MCQs and check your reasoning." : "Practice for this course is planned. Browse its scope and see what is available."}</p><Link href={practiceHref({ courseId: course.id })} className="button primary">{practiceCount ? "Start Practice" : "Practice availability"}<ArrowRight size={16} /></Link><hr /><strong>{available.length} {available.length === 1 ? "topic is" : "topics are"} ready</strong><p className="small">Open available topics for notes and study tools. Video and question availability is shown separately.</p>{available[0] && <Link href={`/courses/${course.id}/${available[0].id}`} className="text-button">Open a topic<ChevronRight size={15} /></Link>}</div>
           <p className="outline-disclaimer">{course.id === "chemistry" ? "Chemistry practice includes 1,001 original MCQs across all 91 topics, with 11 per topic." : "Practice availability is shown for each course topic."} FRQs and mixed sessions are planned. This independent prototype is not affiliated with College Board.</p>
         </aside>
       </div>

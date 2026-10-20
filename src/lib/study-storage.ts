@@ -1,4 +1,5 @@
 import type { Course } from "./courses.ts";
+import { isInstructorId, type InstructorId } from "./video-instructors.ts";
 
 // These existing keys are deliberately retained across the PrepAtlas rename.
 export const STORAGE_KEY = "ap-hub:v1";
@@ -11,6 +12,8 @@ export type StudyData = {
   saved: string[];
   /** Explicit video completion, keyed by resource ID and actual YouTube ID. */
   watchedVideos: string[];
+  /** Optional additive field: old student data remains valid and unchanged. */
+  preferredInstructors?: Record<string, InstructorId>;
   lastTopic: string | null;
 };
 export const defaultStudyData: StudyData = {
@@ -32,6 +35,8 @@ export function parseStudyData(parsed: unknown, courses: Course[]): StudyData {
     saved: value.saved,
     notes: value.notes,
     watchedVideos: value.watchedVideos || [],
+    ...(value.preferredInstructors && typeof value.preferredInstructors === "object" && !Array.isArray(value.preferredInstructors)
+      ? { preferredInstructors: Object.fromEntries(Object.entries(value.preferredInstructors).filter(([courseId, instructor]) => courseId === "human-geography" && isInstructorId(instructor))) } : {}),
     lastTopic: typeof value.lastTopic === "string" ? value.lastTopic : null,
   };
 }

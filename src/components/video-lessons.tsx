@@ -15,7 +15,7 @@ export function VideoLessons({ resources, selectedId, onSelect, topicNumber, top
   const resource = resources[index];
   const watchedCount = resources.filter(item => watchedVideos.includes(watchedVideoKey(item) || "")).length;
   if (!resource) return <section className="video-card panel" aria-label="Video lessons coming soon">
-    <div className="video-stage video-empty"><div className="video-empty-copy"><span className="hero-eyebrow"><ShieldCheck size={15} /> CURATED LEARNING</span><h2>Your next lesson<br />starts here.</h2><p>No videos yet.</p><span>Lessons for this topic are coming soon. Your notes and available practice are ready below.</span></div><AcademicArt theme={artwork} compact /></div>
+    <div className="video-stage video-empty"><div className="video-empty-copy"><span className="hero-eyebrow"><ShieldCheck size={15} /> CURATED LEARNING</span><h2>Your next lesson<br />starts here.</h2><p>No videos yet.</p><span>Lessons for this topic are coming soon. You can take notes and check practice availability below.</span></div><AcademicArt theme={artwork} compact /></div>
     <div className="video-info"><h2>Video lessons coming soon</h2></div>
   </section>;
   const select = (next: number, focus = false) => {
