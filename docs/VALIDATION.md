@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 5.1–5.2
+
+429 original MCQs across39 topics are published, eleven each;156 meaningful stimuli (36.36%) and171 explicit evidence/numerical/geometry checks. Introduction to Agriculture separates climate constraints, total versus per-hectare inputs, seasonal grazing and whole-cycle fallow land. Rural Settlement/Survey Methods uses four original maps to separate residential concentration, linear frontage, a partial rectangular survey and a deed-referenced parcel.
+
+All164 tests, structural/evidence checks, TypeScript, production build, all68 Geography scopes and standard live-preview routes passed. Both complete browser sessions scored11/11; all eight new stimuli were inspected at390×844. The deed parcel includes the same intermediate creek vertex as its referenced boundary; mutation checks reject a conflicting chord or creek. A field outline was made convex after mobile inspection so its default label stays inside. Desktop light-mode review also separated S/Creek labels from the line; the final shared creek bend and polygon match, and mobile dark mode passed again. Existing209 question files and148 stimuli at aac3155, plus the entire approved catalog, remain unchanged. No student storage edits, human-review or empirical difficulty-calibration claim. Next5.3;29 topics/319 questions remain.
+
 ## Human Geography Unit 4 complete
 
 407 original MCQs across all37 official topics in Units1–4 are published, eleven each. There are148 meaningful stimuli (36.36%) and162 explicit evidence/numerical/geometry checks. Topics4.9–4.10 compare internal authority, independent statehood, varied international mandates, cross-border environmental links, pooled costs, group/state cohesion and uneven institutional reach. Different denominators and possible rather than inevitable consequences are explicit.

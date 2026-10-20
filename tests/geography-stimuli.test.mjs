@@ -322,3 +322,18 @@ test('centripetal/centrifugal checks retain access gaps, subnational averages, d
   const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
  }
 });
+
+test('agriculture checks preserve seasonal timing, land denominators, grazing directions and full fallow cycles',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-5-1.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-5-1.json','utf8'));
+ for(const [i,change] of [[0,s=>s.series[0].values.reverse()],[1,s=>s.rows[1][1]='10'],[2,s=>s.paths[0].points.reverse()],[3,s=>s.rows[2][1]='6']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+
+test('rural-settlement checks retain compact homes, common frontage, partial grid geometry and a matching creek boundary',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-5-2.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-5-2.json','utf8'));
+ for(const [i,change] of [[0,s=>s.dots[0].x=5],[1,s=>s.dots[1].y=20],[2,s=>s.regions[1].polygon[0][0]=10],[3,s=>s.paths[0].points[1][1]=30],[3,s=>s.regions[0].polygon.splice(3,1)]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+ const r=structuredClone(qa.questions[6]);r.check.a[1]=100;assert.throws(()=>verifyGeographyQuestion(batch.questions[6],r));
+});

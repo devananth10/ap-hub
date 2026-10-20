@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 5,
+  "topicId": "topic-5-2",
+  "questions": [
+    {
+      "id": "hug-5-2-001",
+      "prompt": "Most farm households live close together while cultivating fields outside the residential concentration. Which settlement pattern is best supported by the house locations?",
+      "options": [
+        "Dispersed, because every household necessarily lives alone on its own field.",
+        "Clustered or nucleated, because residences are concentrated rather than spread evenly across the farming area.",
+        "Linear, because all houses lie on one straight transport corridor.",
+        "Township and range, which is a household clustering category rather than a survey method."
+      ],
+      "correctIndex": 1,
+      "explanation": "Clustered rural settlement concentrates residences in a village or hamlet even where cultivated fields extend beyond it. The plotted houses form a compact group. This describes residential arrangement, not the land-survey method, farm intensity or reason the village originally formed. A: The supplied houses are close together rather than isolated across individual farms. B: This matches the compact residential distribution. C: The points occupy a small two-dimensional cluster rather than a single line. D: Township and range concerns parcel description and survey organization, not this residential-pattern label."
+    },
+    {
+      "id": "hug-5-2-002",
+      "prompt": "How can the long-lot arrangement shown contribute to the linear placement of houses?",
+      "options": [
+        "It requires every house to be at the center of a large square township.",
+        "It makes the river irrelevant to access for every parcel.",
+        "It proves that all linear settlements use exactly the same survey history.",
+        "Narrow lots extending back from common river frontage can encourage houses to align near that access corridor."
+      ],
+      "correctIndex": 3,
+      "explanation": "Long lots can distribute frontage along a river or road while extending fields inland. Houses near that shared corridor can therefore form a linear settlement. This is one possible relationship between parcel layout and residence location, not proof that all linear settlements derive from long-lot surveys. A: The mapped parcels are elongated, and houses are near the river rather than township centers. B: The common frontage is central to the supplied access arrangement. C: Different histories and corridors can also produce linear settlements. D: This links the narrow frontage arrangement to the plotted row of homes."
+    },
+    {
+      "id": "hug-5-2-003",
+      "prompt": "Survey records identify a principal meridian, a baseline, townships and sections. The map shows only six adjacent cells from a larger grid. Which method is supported by those records?",
+      "options": [
+        "Township and range / rectangular survey",
+        "Long lot, solely because any parcel has a boundary",
+        "Metes and bounds, solely because a map contains letters",
+        "Dispersed settlement, which directly names the legal survey method"
+      ],
+      "correctIndex": 0,
+      "explanation": "The township-and-range system organizes land through a rectangular survey framework referenced to principal meridians and baselines, with townships subdivided into sections. The record terms provide stronger evidence than shape alone. The six displayed cells are a partial schematic, not a claim that a complete township has only six sections. A: This matches the specific survey references in the supplied records. B: Long lots emphasize elongated frontage and are not identified by the existence of any boundary. C: Parcel letters do not establish landmark-and-bearing descriptions. D: Dispersed describes residential arrangement rather than the survey system."
+    },
+    {
+      "id": "hug-5-2-004",
+      "prompt": "The deed starts at stone P, uses recorded bearings and distances between corners, and follows a creek segment from R to S. Which survey-description approach is most directly supported?",
+      "options": [
+        "A settlement-density count without any boundary references.",
+        "A uniform township grid identified only by its principal meridian and section number.",
+        "Metes and bounds using directions, distances and referenced landmarks or features.",
+        "Long lots identified only by equal frontage on one straight road."
+      ],
+      "correctIndex": 2,
+      "explanation": "Metes-and-bounds descriptions locate boundaries through courses, distances and referenced monuments or physical features. The supplied deed information supports that approach; an irregular outline alone would not be enough to establish the description method. The schematic is not a usable legal land description. A: The record describes parcel boundaries, not only residence counts. B: The deed’s courses and landmarks are not the supplied rectangular-survey address. C: This matches the recorded bearings, distances, stone and creek. D: No equal-frontage long-lot subdivision is described."
+    },
+    {
+      "id": "hug-5-2-005",
+      "prompt": "Farmhouses are spread across individual holdings rather than grouped in one village. Which likely spatial issue should a service planner examine?",
+      "options": [
+        "Dispersed residences may require longer routes to serve scattered households, depending on roads and actual distances.",
+        "Every household must be within walking distance of the same village square.",
+        "Dispersal proves every farm uses the same crop and survey method.",
+        "The houses cannot be mapped because they are not clustered."
+      ],
+      "correctIndex": 0,
+      "explanation": "Dispersed settlement distributes homes across the rural landscape. Service access may therefore depend on longer or more branching routes than in a compact cluster, but actual road connections and distances must be examined. The pattern alone does not identify crop choice, wealth or parcel-survey history. A: This identifies a plausible access issue while retaining the need for actual network evidence. B: The premise contrasts the pattern with one clustered village. C: Residential arrangement does not determine all agricultural or survey characteristics. D: Scattered residences remain mappable locations."
+    },
+    {
+      "id": "hug-5-2-006",
+      "prompt": "A rural settlement forms a row along a road, but the adjoining parcels are not elongated long lots. Which statement is most accurate?",
+      "options": [
+        "The houses cannot form a linear pattern unless the parcels are long lots.",
+        "Every linear settlement is a geometric international border.",
+        "The road must have existed before any human land use in the area.",
+        "Linear residence patterns can follow access corridors under more than one parcel-survey arrangement."
+      ],
+      "correctIndex": 3,
+      "explanation": "Linear settlement describes the arrangement of residences along a feature such as a road or river. It can occur with different parcel layouts. Settlement pattern and survey method are related dimensions but are not interchangeable labels or a universal one-to-one relationship. A: A common corridor can align houses even where parcel forms differ. B: A row of residences is not itself an international border. C: The pattern alone does not establish that broad historical chronology. D: This recognizes the road alignment while preserving the distinction from survey history."
+    },
+    {
+      "id": "hug-5-2-007",
+      "prompt": "Parcel A has 40 m of frontage and extends 1000 m inland. Rectangular parcel B has 200 m frontage and 200 m depth. Which comparison is correct?",
+      "options": [
+        "A has five times B’s area because it is five times as deep.",
+        "Both have 4 hectares, but B has five times A’s frontage.",
+        "B has one-fifth A’s area because its depth is smaller.",
+        "Both have the same frontage because their areas are equal."
+      ],
+      "correctIndex": 1,
+      "explanation": "A’s area is 40×1000=40000 m² and B’s 200×200=40000 m². Since 10000 m² is 1 hectare, each has 4 hectares. B’s frontage is 200/40=5 times A’s. Equal area does not imply equal shape, frontage or access opportunities. A: A’s smaller width offsets its greater depth, so the areas are equal. B: This correctly calculates both area and frontage ratio. C: B’s greater frontage offsets its smaller depth. D: Area equality does not make the individual side lengths equal."
+    },
+    {
+      "id": "hug-5-2-008",
+      "prompt": "One farming district contains both old landmark-based parcels and later rectangular subdivisions. What historical interpretation should be investigated?",
+      "options": [
+        "A district must have one survey method for all time, so one map is necessarily false.",
+        "Different shapes establish that the district has no governing institutions.",
+        "Successive settlement and administrative phases can leave more than one survey pattern in the same landscape.",
+        "Every rectangular subdivision must be older than every irregular parcel worldwide."
+      ],
+      "correctIndex": 2,
+      "explanation": "Rural landscapes can preserve layers from different survey and settlement histories. Later subdivisions may coexist with earlier descriptions rather than replacing every old boundary. Dated deeds and maps are needed to identify the local sequence; shape alone does not establish a universal age ordering. A: Different phases can produce multiple valid patterns. B: Parcel variation does not establish absence of government. C: This offers a testable historical explanation for the supplied mixture. D: No universal chronology follows from shape."
+    },
+    {
+      "id": "hug-5-2-009",
+      "prompt": "A compact village lies near a shared well, market and historic meeting place. What evidence would best explain why the settlement became clustered?",
+      "options": [
+        "Only the present village outline, treated as proof of one unique cause.",
+        "Only the village name’s spelling.",
+        "A rule that every cluster must result from the same climate.",
+        "Historical evidence about water access, institutions, security and land-use arrangements alongside the house distribution."
+      ],
+      "correctIndex": 3,
+      "explanation": "A visible cluster identifies a pattern, but several physical and social processes may contribute to its origin. Historical evidence about access, institutions and land arrangements can help distinguish those explanations. The question does not assume that one present feature necessarily caused the village to form. A: Pattern alone does not isolate one historical cause. B: Spelling does not explain the distribution of residences. C: Climate is not a universal single cause of clustered settlement. D: This combines spatial evidence with processes and chronology relevant to origin."
+    },
+    {
+      "id": "hug-5-2-010",
+      "prompt": "A later map shows homes spreading outward from an older linear river settlement along new roads. Which conclusion best uses the two observations?",
+      "options": [
+        "Settlement form can evolve as access networks change, while older alignments may remain visible.",
+        "Any new road automatically erases every earlier property boundary.",
+        "The earlier map must be false because the present pattern differs.",
+        "The newer homes prove the river never influenced any past settlement."
+      ],
+      "correctIndex": 0,
+      "explanation": "Settlement patterns can change with access, population and economic conditions. An older linear core may persist while newer roads encourage additional growth in other directions. Dated maps can therefore show development rather than contradiction, and residential change does not automatically abolish underlying property boundaries. A: This accommodates continuity and change across the two dated observations. B: A road does not by itself erase every legal parcel boundary. C: Different dates can accurately depict different stages. D: Later growth does not disprove an earlier river-related pattern."
+    },
+    {
+      "id": "hug-5-2-011",
+      "prompt": "A regular rectangular parcel grid contains several village clusters at road intersections. Which description correctly combines the two scales of evidence?",
+      "options": [
+        "Clustered houses make a rectangular survey impossible.",
+        "A grid of parcels proves every house must be evenly dispersed.",
+        "Survey geometry and residential clustering can coexist because they describe different features of the rural landscape.",
+        "The village clusters necessarily form independent states within each section."
+      ],
+      "correctIndex": 2,
+      "explanation": "Parcel-survey methods describe how land is divided or referenced; settlement patterns describe where people live. The same grid can contain clustered homes, dispersed farms or linear corridors. Neither the survey nor the residential pattern alone determines every other feature or the external political status of the area. A: Parcel geometry does not prohibit village concentrations. B: A grid does not force an even distribution of residences. C: This keeps land division and residence location analytically distinct. D: A settlement cluster is not automatically a sovereign state."
+    }
+  ]
+}

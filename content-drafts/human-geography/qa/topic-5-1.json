@@ -1,0 +1,143 @@
+{
+  "topicNumber": "5.1",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "d8ef5a5a272256e0cef1d42122df536277cdc3a792b2f6322d480f3f8157edd7",
+  "scopeReview": "PSO-5.A.1–3: physical/climatic influences including Mediterranean and tropical settings; intensive market gardening, plantations and mixed crop-livestock; extensive shifting cultivation, mobile/nomadic herding and ranching. Inputs per land area differ from farm size or capital per worker.",
+  "varietyReview": "Seasonal rainfall chart, per-hectare labor table, irregular grazing-zone movement map and staggered fallow-cycle table. Other cases apply all named systems, interactions among soil/water/temperature, human choices and evidence for intensity. Four interpreted stimuli, all five skills and varied keys.",
+  "repetitionReview": "Distinct mechanisms and denominators: season timing, hours/ha, seasonal resource access and whole-cycle land requirement. All data are original; named practices are applied rather than repeated synonym definitions. No exact stem reuse or numeric-only clone; difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://faoterm.fao.org/viewEntry.html?entryId=181382&language=en",
+    "https://www.fao.org/4/x6543e/X6543E03.htm",
+    "https://anrcatalog.ucanr.edu/pdf/8540.pdf"
+  ],
+  "referenceNote": "Primary course framework, FAO definitions and original UC climate/rangeland publication checked. All plots, seasons, hours and geometries are synthetic examples. No real farm advice, land-clearing instructions, copied provider material or approved-resource imports. No human review claimed.",
+  "questions": [
+    {
+      "questionId": "hug-5-1-001",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Account for the dry summer through crop timing, drought-adapted practices or water management rather than assume rainfall is uniform.",
+      "independentReview": "Checked seasonal totals300+180+20+200=700 and winter/summer ratio15. Seasons are local seasons rather than fixed northern-hemisphere months; the figure supports water-timing analysis, not a precise crop irrigation prescription.",
+      "check": {
+        "type": "agriculture-seasonal-water"
+      },
+      "questionSha256": "3fe1dae09134d3283fc8ac3a4e836755350bfd6e50bb72102a6b27e0368012b8",
+      "stimulusSha256": "c068774071dd46852d2dc49480f726b145e52916c2305c24183101235de74bc1"
+    },
+    {
+      "questionId": "hug-5-1-002",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "A:300 hours per hectare",
+      "independentReview": "Independently calculated300,10,80 hours/ha and ranked A>C>B. Denominator is cultivated farm area, not workers or output; only labor intensity is measured, so capital intensity is not invented.",
+      "check": {
+        "type": "agriculture-labor-intensity"
+      },
+      "questionSha256": "12163c60dc30245f02292d9d7228ce4e8db9dec9e3d6c54c4b603731f1029609",
+      "stimulusSha256": "25a82c6c33bd7a59d9b2abd41369f39f9d95cbbc97f856d54e0ec5cb76ed8107"
+    },
+    {
+      "questionId": "hug-5-1-003",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Using a large changing grazing area can adapt to variable forage and water with relatively low inputs per unit of land.",
+      "independentReview": "Traced the arrow between supplied seasonal resource points. The example is mobile extensive herding, not a claim that every fixed seasonal route is strictly nomadic rather than transhumant; no permanent residential migration is inferred.",
+      "check": {
+        "type": "agriculture-seasonal-grazing"
+      },
+      "questionSha256": "34cdc6023c6a3267e73ec2e1f73e78e0cee204276ebba0ab15236d52d3cc969e",
+      "stimulusSha256": "34cb5aaf1fc2c3681fca27916495a8f92255cbcdb5828a3842d323b8080b5ea8"
+    },
+    {
+      "questionId": "hug-5-1-004",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "25%; land in fallow remains part of the rotational system rather than disappearing from its land requirement.",
+      "independentReview": "Recomputed cycle8, cultivated2/8=.25 and fallow6/8=.75. Equal-area plots and evenly staggered phases are explicit; the result would not follow for every unequal or synchronized shifting-cultivation system.",
+      "check": {
+        "type": "agriculture-fallow-cycle"
+      },
+      "questionSha256": "b409b9e2de0902faf5dd21776853eb9341fdcca4b01f64858a75889cd616b343",
+      "stimulusSha256": "9add2ba2233e01d3e8ee7c80c9e1049ff0536d4e740bc668c9c16d7e9153fe4b"
+    },
+    {
+      "questionId": "hug-5-1-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Agricultural intensity concerns inputs relative to land, not simply whether a farm is physically small.",
+      "independentReview": "Checked PSO-5.A.2 explicitly lists plantation agriculture as intensive. No assumption is made that every plantation has identical inputs, working conditions, ownership or crop.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "4b13ae9cd43a227e184b0b9c4ffda994b101892de6343eed98c7fd44f18b9fdd"
+    },
+    {
+      "questionId": "hug-5-1-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Crop and livestock activities can exchange resources within an intensive land-use system.",
+      "independentReview": "Checked the course’s intensive mixed crop-livestock category and the supplied reciprocal flows. Did not infer zero pollution, complete nutrient closure or whether output is for sale or household consumption.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "22d0d5fd66737d1460d8144e5c46c2b90c211b331486b312b2ed0a11f2514899"
+    },
+    {
+      "questionId": "hug-5-1-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "Capital per worker and inputs per hectare are different ratios; wide grazing with low land-relative inputs can remain extensive.",
+      "independentReview": "Compared capital/worker with input/ha rather than treating them as interchangeable. The scenario supplies low land-relative inputs; no classification is based merely on machinery appearance or ranch size.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d9457d006859291250eb988241a0c3ca1ad3817e1450371c6146d36ea4428710"
+    },
+    {
+      "questionId": "hug-5-1-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Intensive farming",
+      "independentReview": "Verified the named intensive category in PSO-5.A.2. The classification uses the supplied management pattern rather than assuming every vegetable farm has the same size, income or technology.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "77d4b7627cf40f5614672166b209a76cc32651d63a5f0f0665c250f9c621852a"
+    },
+    {
+      "questionId": "hug-5-1-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Warmth affects growing conditions, while soil, rainfall and management still influence which practices are feasible.",
+      "independentReview": "The leaching condition is explicit for the hypothetical soil, not generalized to every tropical soil. Checked the framework’s physical/environmental influence wording and preserved variation and management agency.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "59cf8554daab79ebefed2a197d2e8cb8b1c39931a06b8464850fe5e9947f7a64"
+    },
+    {
+      "questionId": "hug-5-1-010",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Physical geography influences agriculture without uniquely determining every agricultural choice.",
+      "independentReview": "Compared similar physical conditions with explicitly varying human factors. The answer rejects both environmental determinism and an unsupported claim that climate has no role.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "20455db87ac0582c81e338eb18f0ed30373dff6a5f59d05c3dab4fedc4c74227"
+    },
+    {
+      "questionId": "hug-5-1-011",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Comparable labor, capital and other inputs per unit of land, with the land-use cycle clearly defined.",
+      "independentReview": "Matched evidence to the classification and retained the possibility of large intensive plantations or small low-input plots. No photo appearance or ownership label substitutes for actual land-relative inputs.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "ca99a7cae0fde1cbb5c21fa73c3954d36755dd0b36670693d1866d26e9669f43"
+    }
+  ]
+}

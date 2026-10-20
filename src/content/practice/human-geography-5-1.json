@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 5,
+  "topicId": "topic-5-1",
+  "questions": [
+    {
+      "id": "hug-5-1-001",
+      "prompt": "At this mild-winter farm, which planning response most directly addresses the seasonal rainfall pattern shown?",
+      "options": [
+        "Assume summer receives the same rainfall as winter.",
+        "Use the summer rainfall value as proof that no agriculture is possible in any season.",
+        "Treat winter rainfall as unrelated to the timing of water availability.",
+        "Account for the dry summer through crop timing, drought-adapted practices or water management rather than assume rainfall is uniform."
+      ],
+      "correctIndex": 3,
+      "explanation": "The chart records 300 mm in winter but only 20 mm in summer, with 700 mm across the four seasons. A Mediterranean-type dry-summer pattern influences water availability and crop choices. Farmers may adjust timing and practices, but climate does not determine one identical system or guarantee that irrigation water is available. A: Winter and summer rainfall differ substantially in the supplied data. B: A dry summer does not establish the impossibility of every crop or season. C: Seasonal distribution affects when rainfall is available for growth and storage. D: This recognizes the seasonal constraint while allowing different feasible responses."
+    },
+    {
+      "id": "hug-5-1-002",
+      "prompt": "Which farm has the greatest measured annual labor input per hectare, rather than simply the largest total labor input?",
+      "options": [
+        "A:300 hours per hectare",
+        "B:10,000 hours per hectare",
+        "C:8,000 hours per hectare",
+        "All three: the same input because each uses labor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Divide annual labor hours by farmed hectares: A 3000/10=300, B 10000/1000=10 and C 8000/100=80. A has the highest labor intensity per unit of land even though B has the largest total labor hours. Other inputs would also matter to a broader assessment of agricultural intensity. A: This correctly divides A’s total hours by its 10 hectares. B: Ten thousand is B’s total; its per-hectare value is 10. C: Eight thousand is C’s total; its per-hectare value is 80. D: Using some labor does not make the ratios equal."
+    },
+    {
+      "id": "hug-5-1-003",
+      "prompt": "Herders move animals between seasonal grazing and water locations instead of confining them to a small feedlot. Which explanation best connects the mapped movement with extensive herding?",
+      "options": [
+        "A herd’s movement proves that each hectare receives the highest possible purchased input.",
+        "Every seasonal grazing movement is permanent international migration.",
+        "Using a large changing grazing area can adapt to variable forage and water with relatively low inputs per unit of land.",
+        "The route establishes that all herders lack cultural ties to particular places."
+      ],
+      "correctIndex": 2,
+      "explanation": "Extensive herding uses broad grazing areas relative to inputs per unit of land. Moving among seasonal resources can respond to uneven forage and water availability. Such movement does not by itself identify permanent migration, absence of place attachment, or one universal pattern of pastoral life. A: Movement across rangeland does not establish very high purchased inputs per hectare. B: Seasonal herd movement need not cross a state border or change permanent residence. C: This connects resource distribution, mobility and land-relative intensity. D: Pastoral communities can maintain strong knowledge of and connections to places."
+    },
+    {
+      "id": "hug-5-1-004",
+      "prompt": "In the staggered rotation described, each plot is cropped for 2 years and fallowed for 6. What fraction of the whole rotational land is cropped at one time, and why does the denominator matter?",
+      "options": [
+        "75%; only the fallow years should count as the cultivation share.",
+        "25%; land in fallow remains part of the rotational system rather than disappearing from its land requirement.",
+        "33.3%; cultivation years must be divided only by fallow years.",
+        "100%; only currently cropped plots count as land used by the system."
+      ],
+      "correctIndex": 1,
+      "explanation": "The full cycle is 2+6=8 years, so staggered equal-area plots have 2/8=25% in the cropped phase at a time. Fallow land remains part of the land requirement even when not currently planted. This helps explain extensive land use across the cycle without claiming that work on a cropped plot is never intensive. A: Six of eight years gives the 75% fallow share, not the cropped share. B: This uses the whole cycle and includes the land needed for rotation. C: Two divided by six compares cropping with fallow, not with the entire cycle. D: Ignoring fallow land understates the total area supporting the rotation."
+    },
+    {
+      "id": "hug-5-1-005",
+      "prompt": "A large plantation applies substantial labor, irrigation and other inputs per hectare. Why can it be classified as intensive despite its large total area?",
+      "options": [
+        "Agricultural intensity concerns inputs relative to land, not simply whether a farm is physically small.",
+        "Any farm larger than a village must be extensive regardless of inputs.",
+        "Plantations cannot use labor or irrigation.",
+        "High total area proves inputs per hectare are zero."
+      ],
+      "correctIndex": 0,
+      "explanation": "Intensive/extensive distinguishes land-relative input patterns rather than a universal farm-size threshold. The AP framework includes plantation agriculture among intensive practices. A large plantation can use substantial inputs on each hectare; its scale and intensity are different dimensions. A: This directly uses the per-hectare relationship supplied. B: Size alone does not determine intensity. C: The premise explicitly supplies labor and irrigation. D: Total area does not imply zero input per unit area."
+    },
+    {
+      "id": "hug-5-1-006",
+      "prompt": "A mixed crop-livestock farm uses crop residues as animal feed and returns manure to fields. What connection is most directly illustrated?",
+      "options": [
+        "The crop and animal systems are necessarily unrelated.",
+        "Manure recycling proves the farm uses no outside inputs at all.",
+        "Mixed farming makes climate and soil conditions irrelevant.",
+        "Crop and livestock activities can exchange resources within an intensive land-use system."
+      ],
+      "correctIndex": 3,
+      "explanation": "Mixed crop-livestock systems can integrate feed and nutrient flows between activities. This can support intensive use of land, while actual performance still depends on management, environment and additional inputs. Recycling some resources is not proof of a completely closed or impact-free system. A: The supplied residue and manure flows explicitly link the activities. B: Internal recycling does not establish absence of purchased inputs or nutrient losses. C: Environmental conditions continue to influence both crops and livestock. D: This identifies the integration rather than treating the activities as isolated."
+    },
+    {
+      "id": "hug-5-1-007",
+      "prompt": "A ranch uses large grazing areas with few animals and relatively low labor input per hectare, but expensive equipment per worker. What distinction best explains its extensive classification?",
+      "options": [
+        "High capital per worker automatically means every hectare is intensively used.",
+        "Extensive means that no technology of any kind can be used.",
+        "Capital per worker and inputs per hectare are different ratios; wide grazing with low land-relative inputs can remain extensive.",
+        "The number of workers alone determines all land-use categories."
+      ],
+      "correctIndex": 2,
+      "explanation": "Different intensity measures have different denominators. Equipment per worker can be high while labor and other inputs per hectare remain relatively low across a large grazing area. Extensive ranching does not mean no technology, no markets or no skilled management. A: A worker-based ratio cannot be substituted for a land-based ratio. B: Extensive systems can use equipment and technology. C: This distinguishes the two measures and matches the stated grazing pattern. D: Worker count without land area does not establish land-relative intensity."
+    },
+    {
+      "id": "hug-5-1-008",
+      "prompt": "A market garden grows vegetables with repeated harvests and high labor input per hectare. Which course category best fits that stated pattern?",
+      "options": [
+        "Extensive nomadic herding",
+        "Intensive farming",
+        "Extensive ranching solely because some produce travels to a market",
+        "Shifting cultivation solely because harvests occur more than once"
+      ],
+      "correctIndex": 1,
+      "explanation": "The AP framework includes market gardening among intensive practices. Frequent management and high inputs per hectare fit the supplied case. Selling at a market does not turn vegetable production into ranching, and repeated harvests alone do not establish plot rotation with fallow. A: No herd movement is described. B: This matches the explicit land-relative input pattern and course example. C: Market destination does not convert crops into grazing livestock. D: Shifting cultivation requires a different land-use rotation, not merely repeated harvests."
+    },
+    {
+      "id": "hug-5-1-009",
+      "prompt": "A tropical farm has year-round warmth, but intense rainfall can leach nutrients from its particular soil. Which interpretation best avoids a one-factor explanation?",
+      "options": [
+        "Warmth guarantees that every tropical soil is highly fertile.",
+        "Soil constraints prove that tropical climates cannot support agriculture.",
+        "Temperature alone fixes a single farming practice for every tropical region.",
+        "Warmth affects growing conditions, while soil, rainfall and management still influence which practices are feasible."
+      ],
+      "correctIndex": 3,
+      "explanation": "Tropical warmth can permit long growing periods, but agricultural possibilities also depend on water distribution, soils, terrain and management. The supplied soil constraint shows why climate cannot be reduced to temperature alone. Tropical regions and soils are diverse, not one uniform agricultural setting. A: Temperature does not establish nutrient status of every soil. B: A constraint does not make every tropical agricultural system impossible. C: Multiple physical and human conditions affect actual practices. D: This includes the supplied environmental interactions without a deterministic claim."
+    },
+    {
+      "id": "hug-5-1-010",
+      "prompt": "Two farms have similar rainfall and temperature but choose different crops because of irrigation access, local food practices and market connections. What does this comparison illustrate?",
+      "options": [
+        "Physical geography influences agriculture without uniquely determining every agricultural choice.",
+        "Similar climate requires identical crops regardless of technology or culture.",
+        "Market connections prove that physical conditions have no effect at all.",
+        "Different crops prove that the rainfall measurements cannot both be accurate."
+      ],
+      "correctIndex": 0,
+      "explanation": "Physical conditions create opportunities and constraints, while technology, culture and economic connections shape how farmers respond. Different choices under similar climates are therefore possible. This does not make the physical environment irrelevant or require rejecting otherwise comparable measurements. A: This accommodates both environmental influence and the stated human differences. B: The supplied irrigation, cultural and market differences can affect choices. C: Human influences do not eliminate physical constraints. D: Different decisions do not by themselves invalidate climate data."
+    },
+    {
+      "id": "hug-5-1-011",
+      "prompt": "A student classifies every large farm as extensive from area alone. Which additional record best tests that inference?",
+      "options": [
+        "The length of the farm’s name.",
+        "Only the color used to outline it on a map.",
+        "Comparable labor, capital and other inputs per unit of land, with the land-use cycle clearly defined.",
+        "A rule that all farms above one unprovided area threshold must use identical practices."
+      ],
+      "correctIndex": 2,
+      "explanation": "Intensity is land-relative, so input and land-use records are needed to evaluate the inference. Comparing totals without the area denominator or ignoring rotational land can mislead. The relevant records should use consistent definitions, time periods and areas rather than a size-only shortcut. A: Name length does not measure management inputs. B: Map styling does not establish agricultural intensity. C: This supplies the missing inputs, denominator and cycle context. D: No universal size threshold is supplied or justified."
+    }
+  ]
+}

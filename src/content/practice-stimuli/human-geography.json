@@ -7599,5 +7599,612 @@
         "y": 50
       }
     ]
+  },
+  "hug-5-1-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Seasonal rainfall at a mild-winter farm",
+    "description": "Hypothetical seasonal rainfall totals: winter 300 mm, spring 180, summer 20 and autumn 200. Winters are mild. Seasons refer to the local annual cycle, not fixed months shared across hemispheres.",
+    "caption": "Original synthetic rainfall totals, not observations from a named farm. Rainfall timing influences choices alongside soils, water access, technology, labor and markets; no particular irrigation supply is assumed.",
+    "unitLabel": "Seasonal rainfall (mm)",
+    "categories": [
+      "Winter",
+      "Spring",
+      "Summer",
+      "Autumn"
+    ],
+    "series": [
+      {
+        "label": "Rainfall",
+        "values": [
+          300,
+          180,
+          20,
+          200
+        ]
+      }
+    ],
+    "max": 350
+  },
+  "hug-5-1-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Farm area and annual labor inputs",
+    "description": "Hypothetical farms: A uses 3000 labor hours on 10 hectares, B 10000 on 1000 hectares, and C 8000 on 100 hectares. Hours use the same annual definition for all farms.",
+    "caption": "Original synthetic inputs. Farm size, total hours, labor per hectare and labor per worker are different measures. Capital, output prices and profitability are not supplied.",
+    "headers": [
+      "Farm",
+      "Hectares",
+      "Annual labor hours"
+    ],
+    "rows": [
+      [
+        "A",
+        "10",
+        "3000"
+      ],
+      [
+        "B",
+        "1000",
+        "10000"
+      ],
+      [
+        "C",
+        "100",
+        "8000"
+      ]
+    ]
+  },
+  "hug-5-1-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "flow",
+    "title": "One seasonal grazing movement",
+    "description": "Hypothetical herders move animals from a wet-season grazing area toward a dry-season water location, using broad rangelands. The arrow shows one seasonal leg, not a permanent residential move or a full annual cycle.",
+    "caption": "Original schematic of resource access, not actual customary land, a state border or a recommended route. Irregular areas identify physical grazing zones; no geographic scale is given.",
+    "unitLabel": "Arrow: one seasonal herd movement",
+    "regions": [
+      {
+        "label": "Upland",
+        "polygon": [
+          [
+            5,
+            5
+          ],
+          [
+            50,
+            3
+          ],
+          [
+            60,
+            20
+          ],
+          [
+            38,
+            40
+          ],
+          [
+            5,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "Lowland",
+        "polygon": [
+          [
+            45,
+            28
+          ],
+          [
+            85,
+            20
+          ],
+          [
+            95,
+            50
+          ],
+          [
+            55,
+            58
+          ],
+          [
+            38,
+            40
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "Wet range",
+        "x": 15,
+        "y": 10
+      },
+      {
+        "label": "Dry water",
+        "x": 80,
+        "y": 50
+      }
+    ],
+    "paths": [
+      {
+        "label": "Herd movement",
+        "points": [
+          [
+            15,
+            10
+          ],
+          [
+            65,
+            15
+          ],
+          [
+            80,
+            50
+          ]
+        ],
+        "arrow": true
+      }
+    ]
+  },
+  "hug-5-1-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "An evenly staggered cultivation cycle",
+    "description": "Hypothetical equal-area plots rotate through 2 cropped years and 6 fallow years. Phases are evenly staggered across the system, so each cycle position occupies an equal share of its total land.",
+    "caption": "Original simplified rotation, not an instruction to clear land or a universal fallow recommendation. Fallow vegetation and soil recovery are part of the system; actual sustainable timing varies.",
+    "headers": [
+      "Phase",
+      "Years in each 8-year cycle"
+    ],
+    "rows": [
+      [
+        "Cropped",
+        "2"
+      ],
+      [
+        "Fallow",
+        "6"
+      ],
+      [
+        "Whole cycle",
+        "8"
+      ]
+    ]
+  },
+  "hug-5-2-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "dot",
+    "title": "Households near one farming hamlet",
+    "description": "Hypothetical nine farmhouses form a compact cluster near the right side of the mapped farming area. Households cultivate fields beyond the residential cluster; dots locate homes rather than population totals.",
+    "caption": "Original schematic of residences and fields, not a real village or ownership map. A settlement pattern does not by itself identify its historical cause, crop system or survey method.",
+    "unitLabel": "Each dot: one farmhouse",
+    "regions": [
+      {
+        "label": "Fields",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            35,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      }
+    ],
+    "dots": [
+      {
+        "x": 64,
+        "y": 26
+      },
+      {
+        "x": 70,
+        "y": 26
+      },
+      {
+        "x": 76,
+        "y": 26
+      },
+      {
+        "x": 64,
+        "y": 32
+      },
+      {
+        "x": 70,
+        "y": 32
+      },
+      {
+        "x": 76,
+        "y": 32
+      },
+      {
+        "x": 64,
+        "y": 38
+      },
+      {
+        "x": 70,
+        "y": 38
+      },
+      {
+        "x": 76,
+        "y": 38
+      }
+    ]
+  },
+  "hug-5-2-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "dot",
+    "title": "Long lots and homes near a river",
+    "description": "Hypothetical four narrow lots extend inland from the same river frontage. Each contains one house near the bank; the four homes align parallel to the river. Lot labels identify parcels, not independent jurisdictions.",
+    "caption": "Original parcel/residence schematic, not to scale. Each lot reaches the river at its southern end. A straight row is visible, but a real historical survey requires records beyond appearance.",
+    "unitLabel": "Dots: houses; polygons: long lots",
+    "regions": [
+      {
+        "label": "Lot A",
+        "polygon": [
+          [
+            10,
+            0
+          ],
+          [
+            25,
+            0
+          ],
+          [
+            25,
+            50
+          ],
+          [
+            10,
+            50
+          ]
+        ]
+      },
+      {
+        "label": "Lot B",
+        "polygon": [
+          [
+            25,
+            0
+          ],
+          [
+            40,
+            0
+          ],
+          [
+            40,
+            50
+          ],
+          [
+            25,
+            50
+          ]
+        ]
+      },
+      {
+        "label": "Lot C",
+        "polygon": [
+          [
+            40,
+            0
+          ],
+          [
+            55,
+            0
+          ],
+          [
+            55,
+            50
+          ],
+          [
+            40,
+            50
+          ]
+        ]
+      },
+      {
+        "label": "Lot D",
+        "polygon": [
+          [
+            55,
+            0
+          ],
+          [
+            70,
+            0
+          ],
+          [
+            70,
+            50
+          ],
+          [
+            55,
+            50
+          ]
+        ]
+      }
+    ],
+    "dots": [
+      {
+        "x": 17.5,
+        "y": 40
+      },
+      {
+        "x": 32.5,
+        "y": 40
+      },
+      {
+        "x": 47.5,
+        "y": 40
+      },
+      {
+        "x": 62.5,
+        "y": 40
+      }
+    ],
+    "paths": [
+      {
+        "label": "River",
+        "points": [
+          [
+            0,
+            50
+          ],
+          [
+            50,
+            50
+          ],
+          [
+            95,
+            50
+          ]
+        ]
+      }
+    ]
+  },
+  "hug-5-2-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "Six cells from a larger rectangular survey",
+    "description": "Hypothetical partial survey grid with six adjacent cells, A–F. Accompanying records cite a principal meridian, baseline, townships and sections. This is not a whole township or a real survey plat.",
+    "caption": "Original schematic. Standard PLSS townships nominally contain 36 sections; actual surveys and corrections vary. This small excerpt shows a regular pattern without reproducing official section numbering or legal boundaries.",
+    "unitLabel": "Cells: partial rectangular-survey excerpt",
+    "regions": [
+      {
+        "label": "A",
+        "polygon": [
+          [
+            15,
+            5
+          ],
+          [
+            35,
+            5
+          ],
+          [
+            35,
+            28
+          ],
+          [
+            15,
+            28
+          ]
+        ]
+      },
+      {
+        "label": "B",
+        "polygon": [
+          [
+            35,
+            5
+          ],
+          [
+            55,
+            5
+          ],
+          [
+            55,
+            28
+          ],
+          [
+            35,
+            28
+          ]
+        ]
+      },
+      {
+        "label": "C",
+        "polygon": [
+          [
+            55,
+            5
+          ],
+          [
+            75,
+            5
+          ],
+          [
+            75,
+            28
+          ],
+          [
+            55,
+            28
+          ]
+        ]
+      },
+      {
+        "label": "D",
+        "polygon": [
+          [
+            15,
+            28
+          ],
+          [
+            35,
+            28
+          ],
+          [
+            35,
+            51
+          ],
+          [
+            15,
+            51
+          ]
+        ]
+      },
+      {
+        "label": "E",
+        "polygon": [
+          [
+            35,
+            28
+          ],
+          [
+            55,
+            28
+          ],
+          [
+            55,
+            51
+          ],
+          [
+            35,
+            51
+          ]
+        ]
+      },
+      {
+        "label": "F",
+        "polygon": [
+          [
+            55,
+            28
+          ],
+          [
+            75,
+            28
+          ],
+          [
+            75,
+            51
+          ],
+          [
+            55,
+            51
+          ]
+        ]
+      }
+    ]
+  },
+  "hug-5-2-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "A parcel and referenced corner features",
+    "description": "Hypothetical parcel corners P,Q,R,S,T form an irregular outline. A deed starts at stone P, records bearings/distances for courses, and uses the creek from R to S as one referenced feature. The drawing does not supply actual legal measurements.",
+    "caption": "Original schematic of supplied deed references. Shape alone does not identify a survey method, and this is not a legal description, navigation instruction or real property claim.",
+    "unitLabel": "Letters: deed corners; path: creek reference",
+    "regions": [
+      {
+        "label": "Parcel",
+        "polygon": [
+          [
+            15,
+            10
+          ],
+          [
+            70,
+            5
+          ],
+          [
+            85,
+            30
+          ],
+          [
+            85,
+            43
+          ],
+          [
+            60,
+            55
+          ],
+          [
+            20,
+            45
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "P",
+        "x": 15,
+        "y": 10
+      },
+      {
+        "label": "Q",
+        "x": 70,
+        "y": 5
+      },
+      {
+        "label": "R",
+        "x": 85,
+        "y": 30
+      },
+      {
+        "label": "S",
+        "x": 60,
+        "y": 55,
+        "labelAlign": "end"
+      },
+      {
+        "label": "T",
+        "x": 20,
+        "y": 45
+      }
+    ],
+    "paths": [
+      {
+        "label": "Creek",
+        "points": [
+          [
+            85,
+            30
+          ],
+          [
+            85,
+            43
+          ],
+          [
+            60,
+            55
+          ]
+        ]
+      }
+    ]
   }
 }

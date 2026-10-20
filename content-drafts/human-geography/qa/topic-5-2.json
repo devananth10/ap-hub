@@ -1,0 +1,151 @@
+{
+  "topicNumber": "5.2",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "8002012ac9f7be461950981594ba26bf12e91a20dae5cda888921eb6c9baca6d",
+  "scopeReview": "PSO-5.B.1–3: clustered, dispersed and linear rural settlement; metes/bounds, township/range and long-lot survey methods; interactions with agricultural land use, access and historical layers. Distinguishes residential arrangement from land division and records from geometric appearance.",
+  "varietyReview": "Four original maps: compact farmhouse cluster, elongated frontage lots with linear residences, partial rectangular survey and an irregular deed-reference parcel. Additional equal-area/frontage calculation verified. Applied source/history/scale cases complete eleven, with all five skills and varied keys.",
+  "repetitionReview": "Different map tasks interpret concentrations, access frontages, documentary survey references and landmarks. A partial grid is not mistaken for a full36-section township, and no irregular shape alone proves metes/bounds. No copied map, exact repeated stem or numeric-only clone; empirical difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.blm.gov/sites/default/files/SpecificationsForDescriptionsOfLand.pdf",
+    "https://www.ntc.blm.gov/krc/uploads/940/BLM_Module3_Studyguide.pdf",
+    "https://www.blm.gov/programs/lands-and-realty/regional-information/utah"
+  ],
+  "referenceNote": "Primary course/BLM survey descriptions checked; no published plat was copied. All parcels, corners, houses and dimensions are invented teaching examples, not legal property descriptions or guidance on a real dispute. Research remains QA-only; no new student resources or human-review claim.",
+  "questions": [
+    {
+      "questionId": "hug-5-2-001",
+      "skill": "Spatial Relationships",
+      "difficulty": "foundational",
+      "correctOption": "Clustered or nucleated, because residences are concentrated rather than spread evenly across the farming area.",
+      "independentReview": "Checked all nine house coordinates lie within x64–76,y26–38, with variation on both axes rather than one line. Agricultural fields are external to the concentration; no origin cause or property system is inferred from the points alone. Mobile inspection moved the field label into its illustrated field by using a convex field outline; house coordinates and classification remain unchanged.",
+      "check": {
+        "type": "settlement-clustered-houses"
+      },
+      "questionSha256": "44b5819f3c75ad9037104729a23ab9b20f5d11f222fd7dd643d8dbd91b3a2f66",
+      "stimulusSha256": "d9f531ad8d2b2a01bee0bbec83ba0fbb3621771ba7fefa69538225204bd6390c"
+    },
+    {
+      "questionId": "hug-5-2-002",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Narrow lots extending back from common river frontage can encourage houses to align near that access corridor.",
+      "independentReview": "Verified four elongated lots have a shared bank at y50 and houses share y40 within each parcel. The river is a frontage corridor, not a political border; no universal historical cause is inferred from alignment alone.",
+      "check": {
+        "type": "settlement-long-lot-frontage"
+      },
+      "questionSha256": "445d4c4c4888e85284b32f492e622a9f00f52c6cba9dd551539b29fa1e7a9497",
+      "stimulusSha256": "d33502ca69eef2c77318c2e8b9637881b9f1fb716b97d0af6d5cc98621a12c08"
+    },
+    {
+      "questionId": "hug-5-2-003",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Township and range / rectangular survey",
+      "independentReview": "Verified BLM’s rectangular-survey terminology and nominal36-section township structure. The drawing is explicitly partial, near-square at rendering scale and not an exact real survey; no inference that every rectangular parcel worldwide is PLSS is made.",
+      "check": {
+        "type": "settlement-rectangular-survey"
+      },
+      "questionSha256": "8d9323f82f6c41b6f18d9af095e07c5bc5bc91b556725245ba5a4a02c2fca59f",
+      "stimulusSha256": "cb8113044a047cda8ca4bcf0a93b2099d51bc138c19f5605319bbf32e22b090f"
+    },
+    {
+      "questionId": "hug-5-2-004",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Metes and bounds using directions, distances and referenced landmarks or features.",
+      "independentReview": "Checked the deed’s explicit documentary features against BLM’s metes-and-bounds guidance. Polygon shape alone does not determine the method; no actual bearings are invented or presented as a legally valid closed traverse. The parcel boundary includes the intermediate creek vertex, so R–S follows the same plotted feature rather than a conflicting straight chord. Desktop light-mode inspection separated S and Creek labels from the boundary; the shared schematic creek bend was updated in both path and polygon.",
+      "check": {
+        "type": "settlement-metes-bounds"
+      },
+      "questionSha256": "e5df2526268166b0ff6301dccba59a72af4d22b0841272d49434fa57a9201250",
+      "stimulusSha256": "414d9244251cae01524082b6afe438dc4e0d503bd1a9da37c4b4f98f97da92af"
+    },
+    {
+      "questionId": "hug-5-2-005",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Dispersed residences may require longer routes to serve scattered households, depending on roads and actual distances.",
+      "independentReview": "Distinguished a conditional service implication from an exact travel-time prediction. No universal density threshold, farmer income or mode of transport is inferred from dispersal alone.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "1ac2ce54d247ae61d29807e47164515480f5fd30d337670379fb28c43ed1cdac"
+    },
+    {
+      "questionId": "hug-5-2-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Linear residence patterns can follow access corridors under more than one parcel-survey arrangement.",
+      "independentReview": "Used the supplied non-long-lot parcels as a counterexample to a necessary-cause claim. No particular national settlement history is inferred from the row alone.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "9e609caa6ff7ca511b383279cf7c82bebc7ad0ffdea80108ded88ee17a8046fa"
+    },
+    {
+      "questionId": "hug-5-2-007",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Both have 4 hectares, but B has five times A’s frontage.",
+      "independentReview": "Independently computed both40000m² and divided by10000 to get4ha; frontage ratio5. Rectangular shapes and dimensions are explicit, unlike unscaled schematic parcels; no legal entitlement or actual resource value is inferred.",
+      "check": {
+        "type": "settlement-area-frontage",
+        "a": [
+          40,
+          1000
+        ],
+        "b": [
+          200,
+          200
+        ]
+      },
+      "questionSha256": "cbe3b24028e43091673257621c7f6d30f76649f546ee91f9f0cd19bd19960010"
+    },
+    {
+      "questionId": "hug-5-2-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Successive settlement and administrative phases can leave more than one survey pattern in the same landscape.",
+      "independentReview": "Compared a layered-history hypothesis with unsupported uniformity and age claims. The answer calls for historical records rather than assigning exact origins from geometry alone.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "83830417b39112d72bb1ce686c204a6adcf51c74b6e8a9f431fe3d6bd54ad1d1"
+    },
+    {
+      "questionId": "hug-5-2-009",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Historical evidence about water access, institutions, security and land-use arrangements alongside the house distribution.",
+      "independentReview": "Separated pattern recognition from causal explanation. The supplied well/market/meeting place are candidate influences, not independently proven causes or a complete account of the village’s history.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "f10c444cbabaab9dc73e17ff5868dc440a1abb6567c016e18dd10461c62f03e5"
+    },
+    {
+      "questionId": "hug-5-2-010",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Settlement form can evolve as access networks change, while older alignments may remain visible.",
+      "independentReview": "Checked temporal comparison rather than treating present geometry as the only valid pattern. Roads are a plausible supplied access influence, not a guarantee that every new residence follows one cause.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "7e9b5fa6f7f63a4e8a2cfdc6f47ba941c789a265c02792f8ae012671a746ec3a"
+    },
+    {
+      "questionId": "hug-5-2-011",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Survey geometry and residential clustering can coexist because they describe different features of the rural landscape.",
+      "independentReview": "Compared the two mapped layers rather than treating their categories as mutually exclusive. No actual cadastral right, zoning permission or uniform legal system is inferred.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "54ee43115c50f9314e28a44f02bb73f17f0c7c4ffc51eb88425b815106cb7604"
+    }
+  ]
+}
