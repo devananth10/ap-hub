@@ -23,9 +23,9 @@ const pyramid={...base,kind:'pyramid',unitLabel:'People (thousands)',max:100,coh
 test('present geography sets have eleven reviewed questions, unique IDs and genuine stimulus coverage',()=>{
  const result=validateHumanGeographyBank();assert.ok(result.questions>=11);assert.equal(result.questions,result.completedTopics*11);assert.ok(result.stimulusQuestions>=4);assert.equal(result.humanReviewPerformed,false);
 });
-test('each original map renders its evidence, exact legend bin, accessible description and enlargement',()=>{
+test('each original stimulus renders its evidence, accessible description and enlargement',()=>{
  for(const [questionId,stimulus] of Object.entries(geographyStimuli)){
-  validateGeographyStimulus(stimulus);const html=render(stimulus);assert.match(html,/role="img"/);assert.match(html,/<desc/);assert.ok(html.includes('Hypothetical')||html.includes('hypothetical'));
+  validateGeographyStimulus(stimulus);const html=render(stimulus);if(stimulus.kind==='table'){assert.match(html,/<table>/);assert.match(html,/scope="col"/);}else{assert.match(html,/role="img"/);assert.match(html,/<desc/);}assert.ok(html.includes('Hypothetical')||html.includes('hypothetical'));
   const wrapper=renderToStaticMarkup(createElement(GeographyStimulus,{questionId}));assert.ok(wrapper.includes('Enlarge '+stimulus.title));assert.ok(!wrapper.includes('<dialog'));
  }
  const html=render(geographyStimuli['hug-1-1-001']);assert.match(html,/data-region="NW" data-value="80" data-bin="1"/);assert.match(html,/data-region="NE" data-value="20" data-bin="0"/);assert.ok(html.includes('NW: 80'));assert.equal(mapBin(50,geographyStimuli['hug-1-1-001'].bins),1);
@@ -51,4 +51,9 @@ test('flow arrows, proportional area and model edges use their supplied directio
 test('legend gaps, bad provenance, off-map points, stale answers and altered visual calculations are rejected',()=>{
  const original=geographyStimuli['hug-1-1-001'];for(const change of [s=>s.bins[1].min=60,s=>s.regions[0].value=1000,s=>s.hypothetical=false,s=>s.regions[0].polygon[0][0]=-1]){const s=structuredClone(original);change(s);assert.throws(()=>validateGeographyStimulus(s));}
  const batch=JSON.parse(readFileSync('src/content/practice/human-geography-1-1.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-1-1.json','utf8'));const q=batch.questions[3],review=qa.questions[3],s=structuredClone(geographyStimuli[q.id]);s.points[1].x=70;const updated={...review,stimulusSha256:semanticHash(s)};assert.throws(()=>verifyGeographyQuestion(q,updated,s));const changed={...q,correctIndex:0};assert.throws(()=>verifyGeographyQuestion(changed,review,geographyStimuli[q.id]));
+});
+test('sampling-coverage verification recomputes participation ratios independently of bar counts alone',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-1-2.json','utf8'));
+ const qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-1-2.json','utf8'));const q=batch.questions[1],review=qa.questions[1],s=structuredClone(geographyStimuli[q.id]);s.series.find(row=>row.label==='App users').values[2]=1000;
+ assert.throws(()=>verifyGeographyQuestion(q,{...review,stimulusSha256:semanticHash(s)},s));
 });

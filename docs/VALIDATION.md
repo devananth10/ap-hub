@@ -1,5 +1,9 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 1.1–1.2
+
+22 original MCQs are published with eight genuine stimuli (36.36%). Topic 1.2 adds a data-collection chart/map and two tables, independent rate/coverage checks and a complete 11/11 browser session. All 125 automated tests, TypeScript/build, 68 topic/Practice scopes and standard smoke checks pass. Desktop/mobile charts and tables, light/dark contrast and lesson-to-Practice integration were checked. The bank remains incomplete; next topic is 1.3. See GEOGRAPHY_STIMULI.md and the progress tracker.
+
 ## Human Geography visual Practice — Topic 1.1 checkpoint
 
 Eleven original questions are published; the full 748-question bank is still in progress. Four interpreted original map stimuli give 36.36% coverage. Structural/QA checks, five data/geometry recomputations, 124 unit tests, TypeScript and production build pass. All eleven questions were exercised in the browser, including incorrect feedback/retry and expected 10/11 first-attempt scoring. Mobile maps, enlargement/100–200% zoom, answer review and preservation were checked. Charts/pyramids/models/tables have synthetic renderer tests; they are not yet published Geography question types. See [stimulus report](GEOGRAPHY_STIMULI.md) and [actual progress](../content-drafts/human-geography/PROGRESS.md).

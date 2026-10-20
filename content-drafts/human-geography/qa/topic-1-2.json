@@ -1,0 +1,136 @@
+{
+  "topicNumber": "1.2",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "7489e27d313ebce75686518ca12c384a7d995ea83c26061e1c8eb6da681b8f7a",
+  "scopeReview": "IMP-1.B: collection of geographic information through field observations, interviews, census/government data, GPS, GIS, remote sensing and volunteered information. Sampling/metadata cautions serve geographic data interpretation, not advanced statistics or legal advice.",
+  "varietyReview": "Eleven distinct methods/quality/provenance scenarios, four interpreted stimuli, varied answer positions and all five skills. Foundational recognition is paired with applied sampling, missing data and disclosure analysis.",
+  "repetitionReview": "No duplicate prompt or number-only clone of Topic 1.1. Different stimuli and acquisition questions; reference to maps does not make decorative art count as evidence.",
+  "questions": [
+    {
+      "questionId": "hug-1-2-001",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Use the resident’s words as qualitative evidence and the counted passengers as quantitative evidence.",
+      "independentReview": "Independently classified each observation by what its values mean, not merely whether numerals appear. A quoted experience is qualitative; a tally counts people; an identifier is nominal.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "418dfe5553a6a06784444130975a6ad4c434bd555a308ec4dc1ebd2966cba47d",
+      "stimulusSha256": "45ab1a5f259362f4c0b784f28f3884fb363b31024c217b8219aa7251104ae05a"
+    },
+    {
+      "questionId": "hug-1-2-002",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Residents aged 65+ are represented at a lower participation rate than the two younger groups.",
+      "independentReview": "Independently divided user counts by eligible residents: 600/1000=.6,1200/2000=.6,100/1000=.1. The comparison concerns representation, not proof of any group’s travel behavior.",
+      "check": {
+        "type": "sampling-coverage"
+      },
+      "questionSha256": "dac8071c9b86cd57c1c2bd6734b3a432e3ca2a1acbaf8d289f3167c904cbe290",
+      "stimulusSha256": "9c093db0d638a9d01124b0d5b6ba1078448867dcc7c8a94eb1620e37024a55a9"
+    },
+    {
+      "questionId": "hug-1-2-003",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Comparisons may have more missing image evidence in the south; low usable coverage is not itself a land-cover measurement.",
+      "independentReview": "Compared mean cloud-free coverage north=(80+95)/2=87.5%, south=(10+15)/2=12.5%. The missing-data caution follows; neither vegetation nor classification correctness is encoded.",
+      "check": {
+        "type": "regional-coverage"
+      },
+      "questionSha256": "8b6681808cd572be5a29a83d8909e119f28123d5625ca1c9967e555d2e4e74bd",
+      "stimulusSha256": "dfd60feb5bdd39cdbe3c875ee69505630cc4fb805bbbf82eee5cde3c952049d5"
+    },
+    {
+      "questionId": "hug-1-2-004",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Repeat observations on both streets during matched days and time windows, using the same counting rules.",
+      "independentReview": "Checked metadata separately from count magnitudes. The table supports 360 versus160 observed vehicles/hour, but it does not separate street effects from weekday/time-of-day sampling.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "203878f0f8063a8ed634308f9255856afe154a499a19432e0077eedba331f0ce",
+      "stimulusSha256": "b9cd6857d14dee802f09c093f0f3d5065ecfd12c0b8fe57b3cad885fc3a7daf7"
+    },
+    {
+      "questionId": "hug-1-2-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "A receiver using Global Positioning System satellite signals.",
+      "independentReview": "Separated geographic positioning from thematic summaries, non-georeferenced imagery and measured site attributes. No exact GPS accuracy or paid service claim is made.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "f89f0ad63f03014bfc7fc1002095c769324d42e0d7ad68926d894caf64cd8a78"
+    },
+    {
+      "questionId": "hug-1-2-006",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "It stores and relates georeferenced layers, allowing spatial queries after coordinate compatibility is checked.",
+      "independentReview": "Independently distinguished GIS integration/query capability from GPS positioning and remote data acquisition. Coordinate compatibility is a precondition, not an automatic truth.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "75ac5c7010760aec8359e8d3f32a3083623230b9234a5b52d3fd14e9c2e23416"
+    },
+    {
+      "questionId": "hug-1-2-007",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Whether reporting access and participation differ by district, using additional systematic field observations.",
+      "independentReview": "Considered two compatible mechanisms—more potholes and more reporting—so counts alone do not identify the full distribution. Field coverage can assess missingness without stereotyping residents.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "968aa1fb2db3d1b249a6437bef2534431d1ac0d6a3ca41f86ccf7bda71b87435"
+    },
+    {
+      "questionId": "hug-1-2-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Detailed accounts of meanings and experiences that can be coded for recurring themes.",
+      "independentReview": "Matched the instrument to its actual output: qualitative participant accounts. Coding themes does not make the interview sample automatically representative of all residents.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "85c6e88d01d41b103e2621099fac95b4874d513231a9c41037ca7c8a2e897749"
+    },
+    {
+      "questionId": "hug-1-2-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "The student is analyzing secondary data originally collected by another organization.",
+      "independentReview": "Checked provenance rather than novelty of presentation. Data remain secondary to the student even when a new map or derived measure is created.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "20c0933a813ff1455290f3d68cd8608965ffbadb8094031e6e9d162be4abf530"
+    },
+    {
+      "questionId": "hug-1-2-010",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Remote sensing repeated across time.",
+      "independentReview": "Identified the actual acquisition instrument and repeated-date design. Held season/resolution comparable without claiming perfect classification or a causal conclusion.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "8f7de633b2f27849230afe8ccfd2891ee6355d288a041061021917cde30ad74d"
+    },
+    {
+      "questionId": "hug-1-2-011",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Aggregate tracks to appropriate corridor zones and suppress sensitive endpoints, after checking that small groups remain difficult to identify.",
+      "independentReview": "Evaluated what remains inferable from the released geometry. The correct option reduces detail and checks residual risk; all alternatives retain exact sensitive endpoints or promise unsupported anonymity.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "9db9484300dc5832c9730beb96d1ddb7e40e2d23d6fae5a21083007dd65ca595"
+    }
+  ]
+}

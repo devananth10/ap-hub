@@ -18,6 +18,8 @@ export function verifyGeographyQuestion(question,review,stimulus){
   case 'contour-spacing':{const west=stimulus.paths.slice(0,3),east=stimulus.paths.slice(3);const gradient=paths=>(paths[2].value-paths[0].value)/((paths[2].points[0][0]-paths[0].points[0][0])*stimulus.kmPerUnit);assert.equal(gradient(west)/gradient(east),2);assert.equal(question.correctIndex,0);break;}
   case 'map-distance':{const a=stimulus.points.find(p=>p.label==='A'),b=stimulus.points.find(p=>p.label==='B');assert.equal(a.y,b.y);assert.ok(b.x>a.x);assert.equal(Math.hypot(b.x-a.x,b.y-a.y)*stimulus.kmPerUnit,120);assert.equal(question.correctIndex,2);break;}
   case 'circle-area':assert.equal(Math.sqrt(review.check.ratio),2);assert.equal(question.correctIndex,3);break;
+  case 'sampling-coverage':{assert.equal(stimulus.kind,'chart');const residents=stimulus.series.find(s=>s.label==='Residents').values,users=stimulus.series.find(s=>s.label==='App users').values;assert.deepEqual(users.map((n,i)=>n/residents[i]),[.6,.6,.1]);assert.equal(question.correctIndex,0);break;}
+  case 'regional-coverage':{assert.equal(stimulus.kind,'map');assert.ok(stimulus.regions.every(r=>r.value>=0&&r.value<=100));const value=id=>stimulus.regions.find(r=>r.label===id).value;assert.equal((value('NW')+value('NE'))/2,87.5);assert.equal((value('SW')+value('SE'))/2,12.5);assert.equal(question.correctIndex,3);break;}
   case 'reasoning':break;
   default:throw Error('Unknown verification model: '+review.check.type);
  }

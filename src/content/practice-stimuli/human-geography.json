@@ -397,5 +397,210 @@
       }
     ],
     "kmPerUnit": 2
+  },
+  "hug-1-2-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Field inventory records",
+    "description": "Hypothetical records combine an interview description, a passenger tally, a station identifier and a measured location. Each record retains its collection method.",
+    "caption": "The phrase is one participant’s account, not a representative citywide estimate.",
+    "headers": [
+      "Record",
+      "Observed value",
+      "Method"
+    ],
+    "rows": [
+      [
+        "Experience",
+        "“The square feels welcoming.”",
+        "Open-ended interview"
+      ],
+      [
+        "Passengers",
+        "127 people in one hour",
+        "Field tally"
+      ],
+      [
+        "Station ID",
+        "204",
+        "Assigned category code"
+      ],
+      [
+        "Location",
+        "12.34° N, 56.78° E",
+        "GPS reading (hypothetical)"
+      ]
+    ]
+  },
+  "hug-1-2-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Eligible residents and app participants",
+    "description": "Hypothetical residents aged 15 and older: ages 15–24 have 1,000 residents and 600 app users; ages 25–64 have 2,000 residents and 1,200 app users; ages 65+ have 1,000 residents and 100 app users. Counts represent people, not trips.",
+    "caption": "Resident counts come from a complete hypothetical census; app participation is voluntary. Children younger than 15 are outside this dataset.",
+    "unitLabel": "People",
+    "categories": [
+      "15–24",
+      "25–64",
+      "65+"
+    ],
+    "series": [
+      {
+        "label": "Residents",
+        "values": [
+          1000,
+          2000,
+          1000
+        ]
+      },
+      {
+        "label": "App users",
+        "values": [
+          600,
+          1200,
+          100
+        ]
+      }
+    ],
+    "max": 2000
+  },
+  "hug-1-2-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "Usable satellite-image coverage",
+    "description": "Hypothetical equal-area districts with cloud-free usable optical pixels: NW 80%, NE 95%, SW 10%, SE 15%. This is the percentage observed clearly, not a measurement of land-cover type.",
+    "caption": "One collection date; no replacement images or observations of obscured pixels are supplied.",
+    "unitLabel": "Usable cloud-free image area (%)",
+    "regions": [
+      {
+        "label": "NW",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            0,
+            30
+          ]
+        ],
+        "value": 80
+      },
+      {
+        "label": "NE",
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            50,
+            30
+          ]
+        ],
+        "value": 95
+      },
+      {
+        "label": "SW",
+        "polygon": [
+          [
+            0,
+            30
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ],
+        "value": 10
+      },
+      {
+        "label": "SE",
+        "polygon": [
+          [
+            50,
+            30
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ],
+        "value": 15
+      }
+    ],
+    "bins": [
+      {
+        "min": 0,
+        "max": 50,
+        "label": "0 to under 50%"
+      },
+      {
+        "min": 50,
+        "max": 101,
+        "label": "50 through 100%"
+      }
+    ]
+  },
+  "hug-1-2-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Traffic observation metadata",
+    "description": "Hypothetical Street A: weekday 07:00–09:00, 360 vehicles/hour. Street B: Sunday 13:00–15:00, 160 vehicles/hour. Both use observers counting vehicles crossing a fixed point, but collection schedules differ.",
+    "caption": "Each rate summarizes only its stated observation window; neither is an all-week average.",
+    "headers": [
+      "Street",
+      "Collection window",
+      "Observed rate"
+    ],
+    "rows": [
+      [
+        "A",
+        "Weekday, 07:00–09:00",
+        "360 vehicles/hour"
+      ],
+      [
+        "B",
+        "Sunday, 13:00–15:00",
+        "160 vehicles/hour"
+      ]
+    ]
   }
 }

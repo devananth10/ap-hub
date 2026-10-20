@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 1,
+  "topicId": "topic-1-2",
+  "questions": [
+    {
+      "id": "hug-1-2-001",
+      "prompt": "A field team records the observations in the table. Which treatment of the records correctly distinguishes geographic data types?",
+      "options": [
+        "Treat the latitude as qualitative because it identifies a place, and the interview phrase as a population count.",
+        "Treat the station code as a measured quantity and average its digits to estimate satisfaction.",
+        "Use the resident’s words as qualitative evidence and the counted passengers as quantitative evidence.",
+        "Treat the passenger count as a location coordinate and the coordinate pair as an interview response."
+      ],
+      "correctIndex": 2,
+      "explanation": "Geographic data may describe meanings and experiences or measure numerical quantities. The phrase about feeling welcome is qualitative evidence of a person’s experience. The passenger tally is a quantitative count. A station’s numeric-looking identifier is a category code, not a measured amount whose average represents satisfaction. A: Identifying a place does not turn numeric coordinates into an interview, and the phrase is not a count. B: An arbitrary identifier does not measure satisfaction; arithmetic on its digits would have no relevant interpretation. C: This preserves the distinction between a described experience and a measured count. D: Counts and coordinates describe different attributes; swapping their roles misreads the records."
+    },
+    {
+      "id": "hug-1-2-002",
+      "prompt": "Researchers want to use voluntary travel-app records to describe travel among all residents aged 15 and older. What sampling limitation is supported by the chart?",
+      "options": [
+        "Residents aged 65+ are represented at a lower participation rate than the two younger groups.",
+        "The 65+ group has the highest participation rate because it has the smallest number of app users.",
+        "All three groups participate at the same rate because every group has at least 100 users.",
+        "GPS positions in the app must be more accurate for the oldest group than for the other groups."
+      ],
+      "correctIndex": 0,
+      "explanation": "Compare participants with the eligible population in each age group, rather than comparing sample counts alone. The two younger groups each have a 60% participation rate: 600/1,000 and 1,200/2,000. The 65+ group has 100/1,000=10%. A sample of app users therefore underrepresents older residents relative to the population described. A: Ten percent is below the 60% participation rate in each younger group, so the app sample is uneven by age. B: A smaller sample count is not a higher rate; its denominator must also be considered. C: A common minimum count does not make the three sample-to-population ratios equal. D: Participation counts provide no measurement of coordinate accuracy by age."
+    },
+    {
+      "id": "hug-1-2-003",
+      "prompt": "A team classifies land cover from optical satellite images. The map shows the percentage of each district with usable cloud-free pixels on the collection date. Which caution follows from these data?",
+      "options": [
+        "Southern districts must contain less vegetation because their usable-pixel percentages are low.",
+        "The satellite measured more residents in the north because cloud-free pixels count people.",
+        "Northern land-cover classifications are necessarily correct at every location because coverage exceeds 50%.",
+        "Comparisons may have more missing image evidence in the south; low usable coverage is not itself a land-cover measurement."
+      ],
+      "correctIndex": 3,
+      "explanation": "Remote sensing collects observations from a distance, but collection conditions affect what can be measured. NW and NE have 80% and 95% usable coverage; SW and SE have 10% and 15%. The south has more missing optical-image evidence on this date. Coverage alone does not reveal vegetation amounts or guarantee classification accuracy. A: Cloud obstruction is missing observation, not evidence that the obscured surface lacks vegetation. B: Usable-pixel coverage measures image availability, not population. C: High coverage is helpful but does not certify every classification or remove other errors. D: This distinguishes the availability of observations from the land-cover attribute the researchers hope to infer."
+    },
+    {
+      "id": "hug-1-2-004",
+      "prompt": "A team compares traffic on two streets using the collection schedule in the table. Which next step would most directly improve the comparison?",
+      "options": [
+        "Treat the two counts as simultaneous observations because both are vehicles per hour.",
+        "Repeat observations on both streets during matched days and time windows, using the same counting rules.",
+        "Convert the street names to coordinates and assume this removes the scheduling difference.",
+        "Conclude that Street A is always busier because its recorded count is higher."
+      ],
+      "correctIndex": 1,
+      "explanation": "Consistent units do not remove differences in when observations were collected. Weekday morning and Sunday afternoon traffic may reflect different activities. Repeated matched observations on both streets would reduce this confounding collection difference and allow a better-supported comparison. They still would not guarantee that all future traffic conditions are identical. A: Both values are rates, but their sampling days and times differ. B: This addresses the recorded temporal mismatch and applies a common measurement procedure. C: Coordinates locate observations but cannot make measurements from different times simultaneous. D: Two differently timed observations cannot establish an always-true ordering."
+    },
+    {
+      "id": "hug-1-2-005",
+      "prompt": "A fieldworker needs to attach an accurate coordinate pair to each water fountain visited on a walking survey. Which tool most directly collects the required locational data?",
+      "options": [
+        "A regional income choropleth with no fountain symbols.",
+        "A census table of provincial totals.",
+        "An unreferenced photograph of a fountain’s drinking spout.",
+        "A receiver using Global Positioning System satellite signals."
+      ],
+      "correctIndex": 3,
+      "explanation": "GPS uses signals from satellites to estimate a receiver’s location. Recording the receiver’s position at each fountain directly supplies coordinates for the field inventory, subject to ordinary accuracy limits. A map or table about another variable does not collect the fountain’s position simply because it is geographic information. A: Income shading describes another variable and omits the target features. B: Provincial totals are too aggregated and do not locate individual fountains. C: An image without location information does not by itself supply the requested coordinate pair. D: GPS directly supplies a location estimate at the visited site; it does not measure water quality or fountain condition."
+    },
+    {
+      "id": "hug-1-2-006",
+      "prompt": "An analyst has a layer of school coordinates, a floodplain polygon layer and a road-network layer. What makes a GIS appropriate for organizing these geographic data?",
+      "options": [
+        "It replaces each data layer with one location-free national average.",
+        "It guarantees that layers collected in different coordinate systems align without checking.",
+        "It stores and relates georeferenced layers, allowing spatial queries after coordinate compatibility is checked.",
+        "It collects every layer automatically, so field observations and remote sensing are unnecessary."
+      ],
+      "correctIndex": 2,
+      "explanation": "A geographic information system can organize features and attributes in geographically referenced layers and relate them through spatial operations. Reliable combination requires attention to coordinate systems and other metadata. GIS is a framework for managing and analyzing data, not a guarantee that all source information is current, aligned or correct. A: Removing locations would discard the spatial relationships the analyst wants to organize. B: Different coordinate systems or datums can misalign layers unless correctly transformed or reconciled. C: This identifies GIS’s layer-based spatial function while retaining a necessary compatibility check. D: GIS often uses data from surveys, GPS, remote sensing and other sources rather than making collection unnecessary."
+    },
+    {
+      "id": "hug-1-2-007",
+      "prompt": "Volunteers report potholes through a smartphone app. Reports cluster in a wealthy district with many app users. Before interpreting the cluster as the city’s complete pothole distribution, what should a researcher investigate?",
+      "options": [
+        "Whether reporting access and participation differ by district, using additional systematic field observations.",
+        "Whether the city can assign more precise coordinates to only the already reported potholes.",
+        "Whether changing the map’s color palette makes the reports a random sample.",
+        "Whether removing duplicate reports guarantees that unreported districts have no potholes."
+      ],
+      "correctIndex": 0,
+      "explanation": "Volunteered geographic information reflects who can and chooses to contribute, as well as where the reported condition occurs. Unequal access or participation can create a reporting pattern that differs from the full distribution of potholes. Independent systematic observations can test undercoverage; neither wealth nor reporting volume alone proves an underlying cause. A: This checks the selection process and seeks evidence beyond the self-selected reports. B: More precise positions improve locational accuracy but do not reveal missing reports from other districts. C: Symbol design does not change how the observations were sampled. D: Removing duplicates improves records but cannot prove that places without reports lack the condition."
+    },
+    {
+      "id": "hug-1-2-008",
+      "prompt": "A geographer conducts open-ended interviews about how residents experience a recently redesigned public square. Which result is most directly supported by this method?",
+      "options": [
+        "An exact count of every person who will enter the square next year.",
+        "Detailed accounts of meanings and experiences that can be coded for recurring themes.",
+        "A complete aerial classification of tree canopy across the city.",
+        "The precise latitude and longitude of every interviewee’s home without asking."
+      ],
+      "correctIndex": 1,
+      "explanation": "Open-ended interviews can provide qualitative evidence about perceptions, meanings and lived experiences. Researchers may systematically code recurring themes, while retaining context and recognizing sampling limitations. These interviews alone do not enumerate all future visitors, acquire aerial imagery or measure unreported coordinates. A: The method does not observe or count future visits by the complete population. B: Narrative responses directly address how participants experience the place. C: Canopy classification needs suitable spatial observations, such as imagery or a field inventory, rather than interviews alone. D: Coordinates cannot be inferred precisely from an account that does not supply them."
+    },
+    {
+      "id": "hug-1-2-009",
+      "prompt": "A student downloads a government census dataset and creates an original map from it. Relative to the student’s investigation, how should the data collection be described?",
+      "options": [
+        "The map makes the census a new primary field survey conducted by the student.",
+        "The government records become remote sensing because the student views them on a screen.",
+        "The student is analyzing secondary data originally collected by another organization.",
+        "The dataset contains no geographic information unless every respondent’s exact address is public."
+      ],
+      "correctIndex": 2,
+      "explanation": "The distinction concerns who originally collected the observations for this investigation. The student’s map and analysis may be original, but the underlying census observations were collected by the government. Such secondary data can still be geographically referenced to reporting areas without exposing individual addresses. A: Creating a new representation does not mean the student personally conducted the original enumeration. B: Viewing a dataset on a screen is not remote acquisition of surface observations by a sensor. C: This correctly separates original analysis from the source of the observations. D: Aggregated observations linked to geographic areas are geographic data even when individual addresses are withheld."
+    },
+    {
+      "id": "hug-1-2-010",
+      "prompt": "To measure changes in the extent of a hypothetical forest over ten years, a team compares georeferenced satellite images from the same season and with comparable resolution. Which collection method is central to this design?",
+      "options": [
+        "GPS tracking of individual drivers only.",
+        "A single current interview about opinions of the forest.",
+        "A census of city business registrations unrelated to land cover.",
+        "Remote sensing repeated across time."
+      ],
+      "correctIndex": 3,
+      "explanation": "Satellite sensors observe Earth’s surface from a distance. Comparing suitable images across dates can support land-cover change measurement. Matching season and resolution reduces some comparability problems, but classification and other data-quality checks remain necessary; the method does not by itself prove why change occurred. A: Driver positions do not directly map forest extent in both years. B: One present-day opinion is not a comparable spatial measurement of forest boundaries at two dates. C: Business-registration counts about another subject do not supply the specified land-cover observations. D: Repeated satellite observations are an example of multitemporal remote sensing."
+    },
+    {
+      "id": "hug-1-2-011",
+      "prompt": "A researcher studies walking routes using voluntarily contributed GPS tracks that can reveal participants’ homes. Which publication approach would reduce location-disclosure risk while retaining evidence of broad travel corridors?",
+      "options": [
+        "Aggregate tracks to appropriate corridor zones and suppress sensitive endpoints, after checking that small groups remain difficult to identify.",
+        "Replace participants’ names with initials but publish every exact track and home endpoint.",
+        "Publish all exact points because GPS coordinates cannot identify a household.",
+        "Round timestamps while retaining exact unique home endpoints and guarantee that reidentification is impossible."
+      ],
+      "correctIndex": 0,
+      "explanation": "Detailed location traces can expose sensitive places even without names. Appropriate spatial aggregation and endpoint suppression can reduce that risk while preserving broader corridor patterns, but the researcher should still evaluate small-group and reidentification risks. No technique is assumed to guarantee perfect anonymity. A: This deliberately reduces spatial specificity and checks remaining disclosure risk instead of making an absolute guarantee. B: Initials do not remove identifiable location patterns from exact routes and endpoints. C: Coordinates can identify small locations or households, especially when combined with other information. D: Changing time precision alone leaves unique spatial endpoints exposed and cannot justify a guarantee."
+    }
+  ]
+}
