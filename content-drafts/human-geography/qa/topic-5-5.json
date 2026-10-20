@@ -1,0 +1,156 @@
+{
+  "topicNumber": "5.5",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "9c3084548873e6326c1780cbef0b667093a09730499ee6c2484da297b592fb10",
+  "scopeReview": "SPS-5.D.1–2: high-yield seed/input/management systems; production gains, human access/costs, resource balances and environmental effects. Distinguishes conventional breeding from an assumed transgenic requirement and conditional land sparing from guaranteed conservation.",
+  "varietyReview": "Four assessed stimuli: controlled variety/input interaction, original access/adoption map, regional irrigation-expansion chart and whole-cost farm accounts. Fifth numerical check recomputes fixed-demand land requirements; application items cover biology, water quality, equity and balanced evaluation. Eleven original questions with all-option explanations and varied keys.",
+  "repetitionReview": "Distinct units/denominators: t/ha treatment interaction, farm adoption percentage, regional withdrawals despite lower water/ha, net currency return and fixed-demand hectares. No literal or numeric-only clones of prior questions; broader gains/limits integrated rather than asserting a uniform historical outcome. Difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://lte.irri.org/",
+    "https://www.cimmyt.org/news/what-is-sustainable-intensification/",
+    "https://ricetoday.irri.org/smart-fertilizer-management-and-the-quest-for-sustainable-rice-production/"
+  ],
+  "referenceNote": "Primary research institutions verify broad variety/management and sustainability themes; original synthetic trial/account/water data are not copied institutional findings. No technical farm advice, paid API, new video/resource approval or independent human-review claim.",
+  "questions": [
+    {
+      "questionId": "hug-5-5-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Its yield advantage is much greater with the supplied water-and-nutrient package than under low-input conditions.",
+      "independentReview": "Independently recomputed improved-minus-traditional advantages0.2 and2.0 t/ha and within-variety responses2.8 versus1.0. Trial explicitly controls other conditions; water and nutrients form a combined treatment, so their separate effects cannot be isolated.",
+      "check": {
+        "type": "green-variety-input-interaction"
+      },
+      "questionSha256": "660efee70639dc31e9d2b3c9d4f931f201f78f7edc587dd50fac29496367a9a3",
+      "stimulusSha256": "1ecec73296314c341ff8f4ba8fee53139851d05740adf0063cb1546cabf55cdc"
+    },
+    {
+      "questionId": "hug-5-5-002",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Supporting infrastructure and finance may help explain uneven adoption, but the two-district comparison is not a complete causal test.",
+      "independentReview": "Verified map values80% and25%, a55-point gap; notes explicitly provide reliable irrigation/credit differences, not farm-size distributions. No climate, country-specific historical statistic or inevitable causal effect is invented.",
+      "check": {
+        "type": "green-spatial-access"
+      },
+      "questionSha256": "7bf2c865de04563b1b465b1d1a8076bbcca82c7e678654eaa7defe41d09bc875",
+      "stimulusSha256": "d1210aeb27225149e0bdf0a49d170a8066b52c031eabff70a87e5b7282c0b235"
+    },
+    {
+      "questionId": "hug-5-5-003",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "It rises 25%; lower water use per hectare has not reduced total regional withdrawals.",
+      "independentReview": "Independently multiplied area by water/ha:10000×8000=80000000 and20000×5000=100000000m³; total growth25%, unit decline37.5%. Distinct from the earlier aquifer-balance item: this tests expansion offsetting efficiency, not recharge minus withdrawal or an exhaustion date.",
+      "check": {
+        "type": "green-irrigation-expansion",
+        "areas": [
+          10000,
+          20000
+        ],
+        "unitUse": [
+          8000,
+          5000
+        ]
+      },
+      "questionSha256": "770d2f333f6fdc1f128a390e4c80fa025a880f5f23cfc57d1cf7f12285413c70",
+      "stimulusSha256": "563b3493a1f68a4209a6ff8b60ba4d3ee5f7c70cd46d2dcf692c6de70bfcb77a"
+    },
+    {
+      "questionId": "hug-5-5-004",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "It falls from 400 to 300 currency units even though physical output doubles.",
+      "independentReview": "Independently calculated revenues600/1200 and net returns400/300, a100-unit fall or25% decrease. Costs are explicitly all listed annual production costs; no hidden loan rate or invented external loss is required.",
+      "check": {
+        "type": "green-net-return"
+      },
+      "questionSha256": "4bed1cf41ef2ca32d0506e38b3d2b2e54d5acb7211d52ab191f2437217822296",
+      "stimulusSha256": "959ac69b1d2fb679cbaaa352abebb5fd1848567a840fd157affb08d11a40a7c6"
+    },
+    {
+      "questionId": "hug-5-5-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "The spread of high-yield crop varieties with complementary inputs and management, including fertilizers, irrigation where needed and mechanization.",
+      "independentReview": "Cross-checked SPS-5.D.1’s high-yield seed, chemicals and mechanization; irrigation qualified rather than universally required for every improved variety or location.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "82d3fc76098ad875665fff135c812820743e98f76c3fadc78c5936aed0bcccf1"
+    },
+    {
+      "questionId": "hug-5-5-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Conventional crossing and selection can produce improved varieties without inserting genes through transgenic methods.",
+      "independentReview": "Checked that the claim is limited to distinguishing methods, not that no modern improved cultivar is engineered. The original Green Revolution is not defined by compulsory transgenic technology; no disputed event date is needed.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "13b9ac713410972b3424d2b96a892d1e3482e9d4cc5ab808a11e04dc251add31"
+    },
+    {
+      "questionId": "hug-5-5-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "A shared susceptibility across many fields can make losses more correlated if that pathogen spreads.",
+      "independentReview": "Conditioned the conclusion on one specified shared disease susceptibility. Avoided equating all commercial seed with clones or asserting every traditional variety is resistant.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "bf31842c99561a4b321c5cb7dd60c24cd3a3193ec5165784e9d6a212640af16f"
+    },
+    {
+      "questionId": "hug-5-5-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Nutrient enrichment can stimulate algal growth, and subsequent decomposition can reduce dissolved oxygen.",
+      "independentReview": "Verified nitrogen/phosphorus enrichment and decomposition oxygen-demand pathway, avoiding the misconception that all algal presence directly consumes all oxygen only during photosynthesis. No real lake data or agronomic prescription invented.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "56ce3d3b185e7ce25b0668bb52d5af50e1b57c2d58051b1c8b8f92477e23872d"
+    },
+    {
+      "questionId": "hug-5-5-009",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "It falls from 3000 to 1200 hectares, a reduction of 1800 hectares.",
+      "independentReview": "Independently recomputed3000−1200=1800 hectares,60% below the original area. Tested all numeric alternatives against output=area×yield. Land sparing is conditional on fixed demand and no rebound or conversion change.",
+      "check": {
+        "type": "green-fixed-demand-area",
+        "demand": 6000,
+        "yields": [
+          2,
+          5
+        ]
+      },
+      "questionSha256": "bcaaf204670f7667900bb3ef1b060cbedb1a1c142948f84e796da315c5c39858"
+    },
+    {
+      "questionId": "hug-5-5-010",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Net returns, debt exposure and water access separated by farm-size and income groups.",
+      "independentReview": "Selected evidence tied to the stated equity question rather than asserting a universal outcome by farm size. National output and household/farm accounts have different inferential scope.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "7a310cdec1fce3376c2551bf323bee1f403bf40f2619e11d234b3387790a2b47"
+    },
+    {
+      "questionId": "hug-5-5-011",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Higher yields can strengthen food supplies while intensive input use may create water, pollution or access problems that require separate assessment.",
+      "independentReview": "Compared SPS-5.D.2’s positive and negative consequences with IRRI/CIMMYT research themes. Retained conditional language and separate outcome measures; no human-review, guaranteed sustainability or all-farmer-benefit claim.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "ed0636cf44b6bedd9831aecc436ec9890995b821c1265b55c6a4003bfb4b1e09"
+    }
+  ]
+}

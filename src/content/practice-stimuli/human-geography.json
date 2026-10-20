@@ -8951,5 +8951,391 @@
         "3.0"
       ]
     ]
+  },
+  "hug-5-5-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Seed varieties under two management treatments",
+    "description": "Hypothetical controlled cereal trial. Low inputs yield 2.0 tonnes/hectare for traditional seed and 2.2 for improved seed. Reliable water plus suitable nutrients yield 3.0 and 5.0 respectively. Other conditions are held comparable.",
+    "caption": "Original synthetic trial; treatments illustrate complementarity rather than real measured cultivar performance. The combined treatment cannot isolate the effect of water from nutrients.",
+    "headers": [
+      "Treatment",
+      "Traditional (t/ha)",
+      "Improved (t/ha)"
+    ],
+    "rows": [
+      [
+        "Low inputs",
+        "2.0",
+        "2.2"
+      ],
+      [
+        "Reliable water + nutrients",
+        "3.0",
+        "5.0"
+      ]
+    ]
+  },
+  "hug-5-5-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "Adoption of an introduced high-yield package",
+    "description": "Hypothetical adjacent farming districts. West has 80% of farms adopting, reliable irrigation and affordable credit. East has 25% adopting, less reliable irrigation and limited credit. Other possible differences have not been fully controlled.",
+    "caption": "Original synthetic field-note/map comparison, not a real national adoption map. District averages do not show that every household has the same access or results.",
+    "unitLabel": "Share of farms adopting (%)",
+    "regions": [
+      {
+        "label": "West",
+        "value": 80,
+        "labelPoint": [
+          24,
+          31
+        ],
+        "polygon": [
+          [
+            5,
+            8
+          ],
+          [
+            48,
+            5
+          ],
+          [
+            43,
+            28
+          ],
+          [
+            50,
+            55
+          ],
+          [
+            7,
+            52
+          ]
+        ]
+      },
+      {
+        "label": "East",
+        "value": 25,
+        "labelPoint": [
+          74,
+          31
+        ],
+        "polygon": [
+          [
+            48,
+            5
+          ],
+          [
+            94,
+            10
+          ],
+          [
+            92,
+            52
+          ],
+          [
+            50,
+            55
+          ],
+          [
+            43,
+            28
+          ]
+        ]
+      }
+    ],
+    "bins": [
+      {
+        "min": 0,
+        "max": 50,
+        "label": "Below 50%"
+      },
+      {
+        "min": 50,
+        "max": 101,
+        "label": "50–100%"
+      }
+    ]
+  },
+  "hug-5-5-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Regional withdrawals with expanding irrigated area",
+    "description": "Hypothetical region: initially 10,000 irrigated hectares use 8000 cubic meters each, totaling 80 million cubic meters. Later 20,000 irrigated hectares use 5000 each, totaling 100 million. Water use per hectare falls while irrigated land expands.",
+    "caption": "Original synthetic annual irrigation withdrawals. The chart measures totals, not aquifer recharge, stored water or yield. Lower unit use does not alone establish lower total resource pressure.",
+    "unitLabel": "Million cubic meters/year",
+    "categories": [
+      "Initial",
+      "Later"
+    ],
+    "series": [
+      {
+        "label": "Irrigation withdrawal",
+        "values": [
+          80,
+          100
+        ]
+      }
+    ],
+    "max": 120
+  },
+  "hug-5-5-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "One farm’s output, price and annual costs",
+    "description": "Hypothetical one-hectare farm. Before adoption:2 tonnes, price 300 currency units/tonne, all annual production costs 200 units. After:4 tonnes, the same price 300, all annual costs 900. Compare net return as revenue minus the supplied costs.",
+    "caption": "Original synthetic accounting case. No inflation, taxes, household consumption or unlisted cost is to be added. This illustrates why harvest size and net return are distinct.",
+    "headers": [
+      "Period",
+      "Output (t)",
+      "Price (units/t)",
+      "Annual costs (units)"
+    ],
+    "rows": [
+      [
+        "Before",
+        "2",
+        "300",
+        "200"
+      ],
+      [
+        "After",
+        "4",
+        "300",
+        "900"
+      ]
+    ]
+  },
+  "hug-5-6-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Where two farms’ annual harvests go",
+    "description": "Hypothetical farm accounts. Farm A harvests 2000 kilograms, retains 1600 for household use and sells 400. Farm B harvests 1000 kilograms, retains 100 for household use and sells 900. No other destination is included.",
+    "caption": "Original synthetic output destinations, not real farm statistics. Orientation concerns the principal use of output; neither sales nor household consumption has to be entirely absent.",
+    "headers": [
+      "Farm",
+      "Harvest (kg)",
+      "Household use (kg)",
+      "Sold (kg)"
+    ],
+    "rows": [
+      [
+        "A",
+        "2000",
+        "1600",
+        "400"
+      ],
+      [
+        "B",
+        "1000",
+        "100",
+        "900"
+      ]
+    ]
+  },
+  "hug-5-6-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Potential annual surplus before paying land rent",
+    "description": "Hypothetical activities on the same suitable one-hectare site. After all nonland costs, market gardening has 2000 currency units available, grain 400 and pasture 250. Annual rent for that site is 800 units.",
+    "caption": "Original synthetic single-site comparison. Surplus is revenue minus all nonland costs. Other sites, prices, technologies and crop suitability could change the ranking.",
+    "unitLabel": "Currency units/hectare",
+    "categories": [
+      "Gardening",
+      "Grain",
+      "Pasture"
+    ],
+    "series": [
+      {
+        "label": "Before land rent",
+        "values": [
+          2000,
+          400,
+          250
+        ]
+      }
+    ],
+    "max": 2400
+  },
+  "hug-5-6-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "Grain share of cultivated land by district",
+    "description": "Hypothetical crop-area survey: NW 80%, SW 70%, NE 30%, SE 20% of each district’s cropland is grain. All districts also grow other crops; total hectares and sales destinations are not supplied.",
+    "caption": "Original synthetic regional shares. The map summarizes crop concentration at district scale, not total grain tonnes, individual-field mixtures or household market dependence.",
+    "unitLabel": "Grain as a share of district cropland (%)",
+    "regions": [
+      {
+        "label": "NW",
+        "value": 80,
+        "polygon": [
+          [
+            5,
+            5
+          ],
+          [
+            50,
+            5
+          ],
+          [
+            44,
+            30
+          ],
+          [
+            5,
+            30
+          ]
+        ],
+        "labelPoint": [
+          24,
+          17
+        ]
+      },
+      {
+        "label": "SW",
+        "value": 70,
+        "polygon": [
+          [
+            5,
+            30
+          ],
+          [
+            44,
+            30
+          ],
+          [
+            50,
+            55
+          ],
+          [
+            5,
+            55
+          ]
+        ],
+        "labelPoint": [
+          24,
+          43
+        ]
+      },
+      {
+        "label": "NE",
+        "value": 30,
+        "polygon": [
+          [
+            50,
+            5
+          ],
+          [
+            95,
+            5
+          ],
+          [
+            95,
+            30
+          ],
+          [
+            44,
+            30
+          ]
+        ],
+        "labelPoint": [
+          73,
+          17
+        ]
+      },
+      {
+        "label": "SE",
+        "value": 20,
+        "polygon": [
+          [
+            44,
+            30
+          ],
+          [
+            95,
+            30
+          ],
+          [
+            95,
+            55
+          ],
+          [
+            50,
+            55
+          ]
+        ],
+        "labelPoint": [
+          73,
+          43
+        ]
+      }
+    ],
+    "bins": [
+      {
+        "min": 0,
+        "max": 50,
+        "label": "Below 50%"
+      },
+      {
+        "min": 50,
+        "max": 75,
+        "label": "50–74%"
+      },
+      {
+        "min": 75,
+        "max": 101,
+        "label": "75–100%"
+      }
+    ]
+  },
+  "hug-5-6-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Three-season records for four fields",
+    "description": "Hypothetical same-field planting records. A:maize/maize/maize; B:maize/beans/wheat; C:maize+beans together in each season; D:beans/beans/beans. A plus sign means crops share that field during the same season.",
+    "caption": "Original synthetic planting records. Field-level crop diversity and rotation describe different dimensions; neither alone identifies the farm’s sales destination.",
+    "headers": [
+      "Field",
+      "Season 1",
+      "Season 2",
+      "Season 3"
+    ],
+    "rows": [
+      [
+        "A",
+        "Maize",
+        "Maize",
+        "Maize"
+      ],
+      [
+        "B",
+        "Maize",
+        "Beans",
+        "Wheat"
+      ],
+      [
+        "C",
+        "Maize + beans",
+        "Maize + beans",
+        "Maize + beans"
+      ],
+      [
+        "D",
+        "Beans",
+        "Beans",
+        "Beans"
+      ]
+    ]
   }
 }

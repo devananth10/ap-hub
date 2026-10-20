@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 5,
+  "topicId": "topic-5-5",
+  "questions": [
+    {
+      "id": "hug-5-5-001",
+      "prompt": "What does this controlled comparison most directly show about the improved cereal variety?",
+      "options": [
+        "Its yield advantage is much greater with the supplied water-and-nutrient package than under low-input conditions.",
+        "It produces the same yield regardless of management.",
+        "Traditional seed cannot produce any harvest when inputs are low.",
+        "The improved variety increases yield only when both varieties have identical final yields."
+      ],
+      "correctIndex": 0,
+      "explanation": "The improved variety exceeds the traditional variety by 0.2 tonnes/hectare under low inputs and by 2.0 under the water-and-nutrient package. Its own yield rises from 2.2 to 5.0, compared with 2.0 to 3.0 for the traditional variety. The table illustrates interaction between variety and management, not a universal promise about every crop or location. A: This uses both treatment contrasts rather than seed identity alone. B: The improved variety’s yield changes substantially between treatments. C: Traditional seed produces 2.0 tonnes/hectare in the low-input treatment. D: The treatment yields are not identical, and the condition does not explain the results."
+    },
+    {
+      "id": "hug-5-5-002",
+      "prompt": "Adoption is higher in the district with more reliable irrigation and affordable credit. Which interpretation best respects what the map and its field notes establish?",
+      "options": [
+        "The new seed was invented independently in the higher-adoption district.",
+        "The lower-adoption district must be incapable of growing any crop.",
+        "Supporting infrastructure and finance may help explain uneven adoption, but the two-district comparison is not a complete causal test.",
+        "The colors measure farm size, so they prove every large farm adopted the seed."
+      ],
+      "correctIndex": 2,
+      "explanation": "A high-yield crop package may depend on access to reliable water, purchased inputs and finance. The supplied adoption contrast is consistent with those supporting conditions influencing uptake. The evidence does not measure every possible difference, establish an independent seed origin or show the choices of every farm. A: Adoption of an existing variety is not evidence of a new independent invention. B: Lower adoption of one package does not imply the absence of all agriculture. C: This connects the recorded infrastructure differences to adoption while limiting causal certainty. D: The legend measures adopting farms, not farm area or universal behavior."
+    },
+    {
+      "id": "hug-5-5-003",
+      "prompt": "Water applied per irrigated hectare falls from 8000 to 5000 cubic meters, while irrigated area expands from 10,000 to 20,000 hectares. What does the chart show about regional water demand?",
+      "options": [
+        "It falls 37.5%, exactly matching the per-hectare reduction.",
+        "It rises 25%; lower water use per hectare has not reduced total regional withdrawals.",
+        "It remains unchanged because efficiency and total demand are always equivalent.",
+        "It doubles, exactly matching the increase in irrigated land."
+      ],
+      "correctIndex": 1,
+      "explanation": "Initial withdrawals are 10,000×8000=80 million cubic meters; later they are 20,000×5000=100 million. Total withdrawals rise 25% even though water per hectare falls 37.5%. Expanded irrigated area can offset efficiency gains, so evaluating irrigation-dependent intensification requires both unit input and total resource use. A: This applies the per-hectare percentage to the whole region while ignoring doubled irrigated area. B: The 20-million increase divided by the initial 80 million is 25%. C: An efficiency ratio and a total measure need not move together. D: Area doubles, but lower use per hectare means total water demand rises by less than double."
+    },
+    {
+      "id": "hug-5-5-004",
+      "prompt": "Using only the stated revenue and all listed annual production costs, how does the farm’s net return change after adopting the package?",
+      "options": [
+        "It rises from 400 to 1000 currency units because only the extra harvest matters.",
+        "It stays 400 because the output price is unchanged.",
+        "It doubles from 400 to 800 because yield doubles.",
+        "It falls from 400 to 300 currency units even though physical output doubles."
+      ],
+      "correctIndex": 3,
+      "explanation": "Before adoption, revenue is 2×300=600 and net return is 600−200=400. After adoption, revenue is 4×300=1200 and net return is 1200−900=300. Increased output need not increase net returns when associated costs rise more. The exercise is an annual accounting comparison, not a prediction for every adopting farm. A: This omits the larger total cost after adoption. B: The same price per tonne does not imply unchanged total revenue or costs. C: Doubling output doubles gross revenue here, not net return. D: This subtracts the full stated costs from revenue in each period."
+    },
+    {
+      "id": "hug-5-5-005",
+      "prompt": "Which description best identifies the mid-twentieth-century Green Revolution in agriculture?",
+      "options": [
+        "The initial domestication of all crops during the first farming transition.",
+        "The spread of high-yield crop varieties with complementary inputs and management, including fertilizers, irrigation where needed and mechanization.",
+        "A rule requiring all farms to stop using equipment and purchased nutrients.",
+        "A change defined exclusively by certified organic labels in retail stores."
+      ],
+      "correctIndex": 1,
+      "explanation": "The Green Revolution involved improved high-yield crop varieties and supporting input and management systems. Its impacts depended on crop, water, nutrients, infrastructure and access. The term does not mean simply environmentally friendly farming, the first domestication of crops or a uniform technology used everywhere. A: Initial domestication occurred much earlier than this development. B: This describes the relevant combination while allowing differences among farming systems. C: The historical transformation often increased equipment and purchased-input use. D: Organic retail certification is a different concept and does not define this historical change."
+    },
+    {
+      "id": "hug-5-5-006",
+      "prompt": "A plant breeder crosses cereal varieties and selects offspring with useful inherited traits over several generations. Why is it inaccurate to assume that every Green Revolution variety was created by transgenic engineering?",
+      "options": [
+        "Conventional crossing and selection can produce improved varieties without inserting genes through transgenic methods.",
+        "Inherited plant traits can change only after a crop is sold internationally.",
+        "Every improved variety must be a different species from its parents.",
+        "Agricultural yield can change only through a new laboratory gene insertion."
+      ],
+      "correctIndex": 0,
+      "explanation": "Conventional breeding combines existing variation through crossing and selection. High-yield varieties can result from that process without transgenic engineering. Different breeding technologies should not be treated as interchangeable, and improved yield also depends on growing conditions and management. A: This distinguishes conventional breeding from the specific method claimed. B: International sale is not required for inheritance or selection. C: A new variety need not constitute a new species. D: Yield can change through breeding and management without this particular engineering technique."
+    },
+    {
+      "id": "hug-5-5-007",
+      "prompt": "A region replaces many locally maintained cereal varieties with one variety sharing susceptibility to a newly introduced pathogen. Which risk follows most directly from that stated change?",
+      "options": [
+        "All farms will certainly lose their entire harvest in the next season.",
+        "The pathogen can no longer spread because fields use a common variety.",
+        "Every local variety must have had lower yields in every possible condition.",
+        "A shared susceptibility across many fields can make losses more correlated if that pathogen spreads."
+      ],
+      "correctIndex": 3,
+      "explanation": "When many fields share the same susceptibility, a matching disease can affect a larger portion of production at once. Maintaining genetic diversity can be relevant to resilience. The scenario supports a conditional risk, not a certain catastrophe or a claim that all improved varieties are genetically identical. A: Exposure and actual losses depend on whether and how the pathogen spreads. B: Common susceptibility does not provide protection against the specified pathogen. C: The scenario supplies no universal ranking of earlier varieties’ yields. D: This links reduced diversity in the specified trait to correlated vulnerability."
+    },
+    {
+      "id": "hug-5-5-008",
+      "prompt": "After fertilizer use increases, storm runoff carries more nitrogen and phosphorus from fields into a nearby lake. Which environmental pathway is most directly relevant?",
+      "options": [
+        "The nutrients automatically remove all algae and dissolved organic matter.",
+        "Runoff changes legal land ownership but cannot affect water quality.",
+        "Nutrient enrichment can stimulate algal growth, and subsequent decomposition can reduce dissolved oxygen.",
+        "Fertilizer runoff necessarily increases the amount of oxygen available to every aquatic organism."
+      ],
+      "correctIndex": 2,
+      "explanation": "Nutrient-rich runoff can contribute to eutrophication: increased algal production may be followed by decomposition that consumes oxygen. Effects depend on loading, lake conditions and management. This is a potential off-site cost of excess nutrients, not a claim that every fertilizer application causes the same lake response. A: Added nutrients can promote rather than automatically eliminate algal growth. B: Runoff transports material into the lake, making water-quality effects relevant. C: This correctly links nutrient loading, biological growth and oxygen demand. D: The process can reduce oxygen and harm oxygen-dependent organisms."
+    },
+    {
+      "id": "hug-5-5-009",
+      "prompt": "Under a simplified fixed-demand model,6000 tonnes of grain are required annually. If yield rises from 2 to 5 tonnes/hectare, what happens to the area required, assuming all other factors remain unchanged?",
+      "options": [
+        "It falls from 3000 to 1200 hectares, a reduction of 1800 hectares.",
+        "It rises from 1200 to 3000 hectares, an increase of 1800 hectares.",
+        "It falls from 3000 to 2400 hectares, a reduction of 600 hectares.",
+        "It stays 6000 hectares because demand is unchanged."
+      ],
+      "correctIndex": 0,
+      "explanation": "Required area equals output demand divided by yield. Initially 6000/2=3000 hectares; afterward 6000/5=1200 hectares. The model’s potential land reduction is 1800 hectares. Actual land use also responds to prices, demand, exports and policies, so a yield increase alone does not guarantee that habitat will be protected. A: This correctly divides fixed demand by each yield and subtracts the resulting areas. B: This reverses the effect of a higher output per hectare. C: The later area would produce 12000 tonnes at the stated new yield, not 6000. D: Tonnes of demand are not equivalent to hectares of land without using yield."
+    },
+    {
+      "id": "hug-5-5-010",
+      "prompt": "A government evaluates a high-yield package only by national tonnes harvested. Which additional evidence would best test whether benefits and costs are distributed unevenly?",
+      "options": [
+        "The spelling length of the commercial seed brand.",
+        "A single photograph of an unidentified grain store.",
+        "Net returns, debt exposure and water access separated by farm-size and income groups.",
+        "The assumption that every farmer has identical land, credit and yields."
+      ],
+      "correctIndex": 2,
+      "explanation": "Disaggregated financial and access evidence can reveal whether gains and burdens differ among groups. National output is useful for aggregate production, but it cannot identify who can afford inputs or who bears risk. Group comparisons still need careful interpretation and should not assign every farmer the same experience. A: Brand spelling does not measure access, costs or distribution. B: An unidentified image cannot establish the distribution of benefits or burdens. C: These measures address economic outcomes and constraints at the relevant group scale. D: Assuming away differences prevents rather than tests a distributional question."
+    },
+    {
+      "id": "hug-5-5-011",
+      "prompt": "Which evaluation most accurately balances the Green Revolution’s possible human and environmental effects?",
+      "options": [
+        "Increased grain output proves there can be no environmental costs.",
+        "Higher yields can strengthen food supplies while intensive input use may create water, pollution or access problems that require separate assessment.",
+        "Environmental costs prove that no farm ever experienced a production gain.",
+        "A seed’s high-yield label guarantees equal income and nutrition for all households."
+      ],
+      "correctIndex": 1,
+      "explanation": "Production gains and costs can coexist. High-yield systems can expand food supplies, while water withdrawals, nutrient losses, chemical exposure, input expenses and uneven access may create other concerns. Each outcome needs appropriate evidence; neither total success nor total failure follows from one indicator. A: A production measure cannot rule out effects on other systems. B: This recognizes potentially simultaneous gains and costs without assuming every place has identical outcomes. C: Costs do not logically negate every observed production gain. D: Yield potential is not a guarantee about income distribution or actual diets."
+    }
+  ]
+}

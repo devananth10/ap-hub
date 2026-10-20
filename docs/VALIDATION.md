@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 5.5–5.6
+
+473 original MCQs across43 topics are published, eleven each;172 meaningful stimuli (36.36%) and188 explicit evidence/numerical/geometry checks. Green Revolution questions assess seed/input interactions, uneven access, irrigation-area expansion offsetting lower unit water use, net farm returns and conditional land sparing. An initial water-balance draft was replaced before publication because it resembled1.5 too closely. Production Regions distinguishes household/sales shares, rent-paying capacity, regional crop concentration and rotation versus simultaneous intercropping;5.7 commodity-chain content is reserved for the next topic.
+
+All169 tests, structural/evidence checks, TypeScript, production build, all68 Geography scopes and standard live-preview routes passed. Both complete browser sessions scored11/11; all eight new stimuli inspected at390×844, and the crop-share map checked in desktop light mode. Natural spacing prevents crop names splitting into isolated letters. Existing213 checkpoint question files,164 stimuli and the entire approved catalog remain semantically unchanged. Student storage untouched; preview preserved. Next5.7;25 topics/275 questions remain. Automated checks are not independent human review or empirical difficulty calibration.
+
 ## Human Geography Topics 5.3–5.4
 
 451 original MCQs across41 topics are published, eleven each;164 meaningful stimuli (36.36%) and179 explicit evidence/numerical/geometry checks. Origins/Diffusions adds original continental hearth and crop-transfer sketches, historical-evidence comparison and adoption trends. Second Agricultural Revolution separates land/labor productivity, relative food per person, spatial consolidation and a matched seed-placement trial. All four options receive explanations; facts and causal limits are recorded in topic QA.

@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 5,
+  "topicId": "topic-5-6",
+  "questions": [
+    {
+      "id": "hug-5-6-001",
+      "prompt": "Which comparison best classifies the farms by the principal destination of output rather than by harvest size?",
+      "options": [
+        "Farm A is more commercially oriented because its total harvest is larger.",
+        "Both have the same orientation because both sell some output.",
+        "Farm B is more subsistence-oriented because its harvest is smaller.",
+        "Farm A is primarily subsistence-oriented, while Farm B is primarily commercially oriented."
+      ],
+      "correctIndex": 3,
+      "explanation": "Farm A retains 1600 of 2000 kilograms for household consumption and sells 20%, while Farm B sells 900 of 1000 kilograms, or 90%. The primary destination of output differs even though A has the larger harvest. Subsistence and commercial practices form a spectrum: household-oriented farms may sell a surplus and commercial farms may retain some food. A: Harvest size alone does not identify whether output is mainly consumed or sold. B: Selling some output does not make the shares sold identical. C: B sells most output despite the smaller harvest. D: This uses the supplied household and sales proportions rather than total mass."
+    },
+    {
+      "id": "hug-5-6-002",
+      "prompt": "In this simplified one-hectare comparison, annual land rent is 800 currency units and all nonland production costs have already been deducted. Which activity can cover that rent from the displayed surplus?",
+      "options": [
+        "Grain only",
+        "Market gardening only",
+        "Pasture only",
+        "All three equally"
+      ],
+      "correctIndex": 1,
+      "explanation": "Market gardening has 2000 units per hectare remaining before land rent, leaving 1200 after paying 800. Grain has 400 and pasture 250, both below the specified rent. High land costs can favor activities capable of generating a larger surplus per unit of land, subject to suitable markets, environment and access to inputs. A: Grain falls 400 units short of the required land payment. B: Gardening alone has a surplus above 800 under the stated assumptions. C: Pasture falls 550 units short of the required rent. D: The three surpluses differ, and only one exceeds the rent."
+    },
+    {
+      "id": "hug-5-6-003",
+      "prompt": "All four districts grow some grain. Which conclusion about the mapped production pattern is directly supported, without assuming how the harvest is used?",
+      "options": [
+        "The western districts devote larger shares of cropland to grain; the map alone does not establish whether that grain is mainly sold or consumed locally.",
+        "The eastern districts devote larger shares because lower percentages mean more concentration.",
+        "Every household in the west must sell its entire harvest internationally.",
+        "The map proves that every western field grows several crops together at the same time."
+      ],
+      "correctIndex": 0,
+      "explanation": "The western districts show 80% and 70% of cropland in grain, compared with 30% and 20% in the east. This is a regional crop-concentration pattern. Crop-area shares do not reveal sales destinations, household behavior or whether individual fields contain a mixture of crops. A: This follows the legend and retains the distinction between crop concentration and economic purpose. B: The supplied percentages show the opposite west–east pattern. C: International sales and universal household behavior are not mapped. D: A district-wide share does not specify intercropping within each field."
+    },
+    {
+      "id": "hug-5-6-004",
+      "prompt": "Each row records the same field across three growing seasons. Which field illustrates rotation among different crops over time while having a single crop in each displayed season?",
+      "options": [
+        "A",
+        "C",
+        "B",
+        "D"
+      ],
+      "correctIndex": 2,
+      "explanation": "Field B changes from maize to beans to wheat, with one crop listed in each season. It therefore demonstrates temporal crop rotation. C instead lists maize and beans together each season, an intercropping pattern. A and D repeat one crop throughout the recorded period. A commercially oriented farm can rotate crops rather than grow one crop continuously. A: A repeats maize in all three seasons rather than rotating crops. B: C combines two crops within each season rather than changing one crop across seasons. C: B has successive single-crop seasons with different crops. D: D repeats beans throughout the record."
+    },
+    {
+      "id": "hug-5-6-005",
+      "prompt": "An urban fringe has expensive land and reliable demand for fresh vegetables. A farm invests in greenhouse structures and carefully managed inputs on a small area. Which explanation best links land costs and farming intensity?",
+      "options": [
+        "High land costs can encourage greater investment per hectare when high-value output can cover those costs.",
+        "A small land area automatically means low capital input per hectare.",
+        "Intensive farming is defined exclusively by the farm’s total national output.",
+        "Land cost has no possible relationship to the returns required from each hectare."
+      ],
+      "correctIndex": 0,
+      "explanation": "On expensive land, an operation may need high returns per hectare to remain viable. Suitable high-value products and intensive capital or labor investment can support that strategy. The outcome is conditional on prices, costs, crop suitability and management; small area alone does not mean low-input farming. A: This connects the opportunity cost of land with a feasible per-area investment strategy. B: A small greenhouse farm can use substantial capital per unit of land. C: Intensity concerns inputs or production relative to land, not a countrywide output ranking. D: Land payments influence the revenue or surplus an activity must generate."
+    },
+    {
+      "id": "hug-5-6-006",
+      "prompt": "A very large grain farm uses machinery and relatively few work-hours per hectare. Its total harvest is high. Which statement avoids confusing agricultural scale with intensity?",
+      "options": [
+        "Its large total output proves it has the greatest labor input per hectare.",
+        "Mechanization means the farm must produce only for household consumption.",
+        "Every large farm is equally intensive in every input measure.",
+        "Large total output can coexist with relatively low labor input per hectare; farm size and intensity are different measures."
+      ],
+      "correctIndex": 3,
+      "explanation": "An extensive grain operation can achieve a large total harvest over a broad area while using relatively little labor per hectare. Machinery can increase output per worker without making every input per hectare the highest. Farm size, labor productivity and land-use intensity should be assessed separately. A: Total output does not supply a labor-per-area denominator. B: Equipment use does not determine the destination of output. C: Different inputs and systems can have different per-area intensities. D: This distinguishes total scale from the supplied relative labor intensity."
+    },
+    {
+      "id": "hug-5-6-007",
+      "prompt": "A plantation grows one export crop using many workers per hectare. How should its market orientation and stated labor intensity be described?",
+      "options": [
+        "Subsistence-oriented and labor-extensive because every single-crop farm is subsistence-based.",
+        "Commercially oriented and labor-intensive because output is for export and work input per hectare is high.",
+        "Subsistence-oriented and labor-intensive because employing many workers rules out sales.",
+        "Commercially oriented and labor-extensive because any export crop requires little labor per hectare."
+      ],
+      "correctIndex": 1,
+      "explanation": "The plantation is commercially oriented because the crop is grown for sale in export markets. High worker input per hectare makes it labor-intensive by the stated measure. Commercial orientation does not require low labor intensity, and crop specialization alone does not determine the destination of output. A: Export sale conflicts with the proposed subsistence classification. B: Both classifications follow separate, explicit facts in the scenario. C: Labor input does not negate the supplied export purpose. D: The stem states high work input per hectare, the opposite of labor-extensive in this comparison."
+    },
+    {
+      "id": "hug-5-6-008",
+      "prompt": "A household farm primarily grows food for its members but sells a small surplus to buy tools. Which interpretation is most appropriate?",
+      "options": [
+        "Any sale means all its production must now be export-oriented.",
+        "Buying tools proves that no food is consumed by the household.",
+        "Subsistence orientation can coexist with limited market participation.",
+        "The farm’s orientation can be determined only from the color of the soil."
+      ],
+      "correctIndex": 2,
+      "explanation": "Subsistence orientation refers to the principal purpose of production, not complete isolation from markets. A household can retain most output while selling some surplus or buying equipment. Classification should reflect the balance of practices rather than treat any transaction as a total transformation. A: A small sale does not establish that most output is exported. B: Purchased tools and household food consumption can occur together. C: This matches the stated primary use and limited exchange. D: Soil affects production possibilities but does not by itself reveal output destination."
+    },
+    {
+      "id": "hug-5-6-009",
+      "prompt": "A price increase makes a commercial crop attractive, but a nearby site lacks suitable growing conditions. What does this show about an explanation based only on the highest potential market price?",
+      "options": [
+        "Market prices override every physical constraint on crop growth.",
+        "Bid-rent reasoning can be applied without any production costs or yield assumptions.",
+        "Every farmer must select the same crop regardless of local resources.",
+        "Economic incentives operate within environmental and input constraints, so price alone does not determine a viable land use."
+      ],
+      "correctIndex": 3,
+      "explanation": "Prices influence incentives, but feasible production depends on soils, climate, water, technology, costs and access. A high sale price does not guarantee enough output or surplus to cover inputs and land. Economic land-use models therefore require assumptions about production conditions rather than eliminate geography. A: An incentive is not a guarantee that a crop can grow at a site. B: Rent-paying capacity depends on revenue and costs under feasible production. C: Different conditions can support different choices. D: This recognizes interacting economic and geographic constraints without dismissing market influence."
+    },
+    {
+      "id": "hug-5-6-010",
+      "prompt": "A region exports most of its wheat but contains household gardens and farms that retain food for local use. Which description best handles scale?",
+      "options": [
+        "The export share proves every farm in the region is identical.",
+        "A regional commercial specialization can coexist with varied practices at household and farm scales.",
+        "The existence of one household garden means no regional commercial specialization can exist.",
+        "Regional output destinations cannot be studied because individual farms differ."
+      ],
+      "correctIndex": 1,
+      "explanation": "A region may have a dominant commercial crop sector without every farm having the same purpose or intensity. Regional specialization aggregates diverse operations. Local gardens and household-oriented production can coexist with major export activity, so conclusions should match the scale of the evidence. A: An aggregate pattern does not establish uniform behavior for every farm. B: This allows a dominant regional tendency and local diversity at the same time. C: One contrasting local practice does not cancel a regional majority pattern. D: Variation requires careful aggregation rather than making regional study impossible."
+    },
+    {
+      "id": "hug-5-6-011",
+      "prompt": "A farm sells a range of vegetables, fruits and eggs to nearby households. Which conclusion follows from the stated facts?",
+      "options": [
+        "It can be commercially oriented even though its output is diversified rather than one export monoculture.",
+        "It must be subsistence-oriented because commercial farms can sell only one crop.",
+        "It cannot be commercial unless its buyers live on another continent.",
+        "It must have the lowest possible input per hectare because it produces several goods."
+      ],
+      "correctIndex": 0,
+      "explanation": "Commercial production is directed toward sale and can serve local, regional or international markets. Diversification does not make a farm subsistence-oriented, and export monoculture is only one commercial form. The supplied information identifies market orientation but does not determine every per-hectare input. A: This follows the sales purpose without requiring a single crop or overseas customers. B: Commercial farms can diversify crops and animal products. C: Local sales can be commercial production. D: A range of products does not by itself measure input intensity."
+    }
+  ]
+}

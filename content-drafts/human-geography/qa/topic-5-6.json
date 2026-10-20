@@ -1,0 +1,141 @@
+{
+  "topicNumber": "5.6",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "c3f9b75780605f39ad06da14caef26e4cac99693ca384b3f59491dcfdc3353d4",
+  "scopeReview": "PSO-5.C.1–2 for5.6 only: subsistence/commercial orientation and crop specialization; intensive/extensive practices in relation to land costs and conditional bid-rent capacity. Commodity-chain and scale-economy specifics belong to5.7 and are not substituted for this topic.",
+  "varietyReview": "Four assessed stimuli: output-destination accounts, surplus-before-rent bar chart, original crop-share map and three-season field records. Checks independently verify destination percentages, rent viability, regional concentration and unique rotating field. Applications cross-classify export purpose, labor intensity, diversified local sales and aggregate/farm scale.",
+  "repetitionReview": "Different questions assess principal output use, land-cost viability, aggregate crop concentration and temporal versus within-season diversity. No duplicate stems or numerical-only clones; crop and location examples remain conditional rather than cultural stereotypes. Detailed A–D reasoning and varied answer positions; difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf"
+  ],
+  "referenceNote": "Current official curriculum scope checked directly. All records, map regions and financial figures invented for original exercises; no external resource or third-party question imported and no independent human review claimed.",
+  "questions": [
+    {
+      "questionId": "hug-5-6-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Farm A is primarily subsistence-oriented, while Farm B is primarily commercially oriented.",
+      "independentReview": "Independently recomputed A400/2000=.20 sold and B900/1000=.90 sold; household shares80% and10%. Plausible small-farm harvest masses replace oversized household-only totals. Crop mass identifies within-farm allocation, not comparable revenue or nutritional value across crops.",
+      "check": {
+        "type": "regions-output-destination"
+      },
+      "questionSha256": "a77acec65e81acd8d48bb6f9187234b1603b014443049cecc02592b6c8e7643d",
+      "stimulusSha256": "8ebeed3ec0397916cb21b9821d4dd62a5a3aa26844f02312d99d5efd4d1246ca"
+    },
+    {
+      "questionId": "hug-5-6-002",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Market gardening only",
+      "independentReview": "Independently subtracted800 from2000/400/250, obtaining1200/−400/−550 units/ha. All nonland costs already included avoids double-subtraction. Chart is hypothetical profit capacity before rent, not a universal ranking of crops or a full vonThünen distance model.",
+      "check": {
+        "type": "regions-land-rent-threshold",
+        "rent": 800
+      },
+      "questionSha256": "366c425b7922a5f59ac799fbfb00f6751013091fdf6f0d2deece5ec4f57b8825",
+      "stimulusSha256": "7dd97ab8f45ff72aa0d8cdb8e2ee5cca39510aea0915cfbef522aadc7ba7e830"
+    },
+    {
+      "questionId": "hug-5-6-003",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "The western districts devote larger shares of cropland to grain; the map alone does not establish whether that grain is mainly sold or consumed locally.",
+      "independentReview": "Verified westmean75% versus eastmean25% with four explicit district labels. No absolute area comparison is inferred because district cropland hectares are unspecified. Crop concentration is not treated as proof of export orientation or all-field monoculture.",
+      "check": {
+        "type": "regions-crop-concentration"
+      },
+      "questionSha256": "68a99a3d279353d9edb28e25d3f9e9eacef0e51431958c504ef107bf58bc69b1",
+      "stimulusSha256": "f9e02df98142ba7d18c5d8e4bb573751b9fa1cdc550b6119c47d29c90985ee6e"
+    },
+    {
+      "questionId": "hug-5-6-004",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "B",
+      "independentReview": "Checked the option order A,C,B,D gives unique correctB atindex2. Defined temporal versus within-season diversity directly through the supplied records, avoiding a contested equivalence of monoculture in one season with continuous monocropping over years. Mobile inspection added natural spaces around the crop-combination plus signs so words wrap without isolated final letters.",
+      "check": {
+        "type": "regions-crop-sequences"
+      },
+      "questionSha256": "4de5f675a13a3adb326b85f0f98f4d058e37ee32784c307fae424824e41e61a3",
+      "stimulusSha256": "2aeabeed210ad54eb16802af0f66da8a988fe5117c6d665b05e3447586333169"
+    },
+    {
+      "questionId": "hug-5-6-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "High land costs can encourage greater investment per hectare when high-value output can cover those costs.",
+      "independentReview": "Checked bid-rent logic without assuming every expensive site grows vegetables or that profitability follows from revenue alone. The greenhouse is an illustrative local example, not a universal location rule.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "9714c10cbab4bf0906521ff06938bb1527964d060ee6a33059ad227da0f18439"
+    },
+    {
+      "questionId": "hug-5-6-006",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Large total output can coexist with relatively low labor input per hectare; farm size and intensity are different measures.",
+      "independentReview": "Avoided defining all machine farming as either absolutely intensive or extensive regardless of denominator. Statement is explicitly about relatively low work-hours per hectare, not a universal claim about capital, energy or fertilizer.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "248f1662f1b254b0c7a0cce46612cfeb348069da990c8237722a8d5ee7f051f6"
+    },
+    {
+      "questionId": "hug-5-6-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Commercially oriented and labor-intensive because output is for export and work input per hectare is high.",
+      "independentReview": "Cross-classified market destination and relative labor input independently. No specific plantation country, crop yield, labor condition or uniform cultural practice is assumed.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "1eec2b709ef16081498339e7e108536be4789f4080287a2e2878c7173ae38eb3"
+    },
+    {
+      "questionId": "hug-5-6-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Subsistence orientation can coexist with limited market participation.",
+      "independentReview": "Confirmed primary-use classification rather than a rigid no-money definition. No arbitrary percentage threshold is introduced beyond the stem’s clear principal-purpose language.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "80aa3ff5f299fd57f41fabbfb7d84b09ada4dfa8c82efd5023448df15487dc46"
+    },
+    {
+      "questionId": "hug-5-6-009",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "Economic incentives operate within environmental and input constraints, so price alone does not determine a viable land use.",
+      "independentReview": "Checked that the answer does not infer a specific climate limitation absent from the stem. Distinguishes crop price from feasible net returns and conditional location models.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "2e3b86e5a035741648af717fc3807fb20759ffafd91cfc15170a7435f381b521"
+    },
+    {
+      "questionId": "hug-5-6-010",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "A regional commercial specialization can coexist with varied practices at household and farm scales.",
+      "independentReview": "Assessed aggregate versus individual inference using the explicitly supplied coexistence. No claim about actual national export shares or an arbitrary boundary for every production region.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "bda642fdf2ccbe09552f7d5d9cf7605708b33b0250655acf9766e676ecc223c7"
+    },
+    {
+      "questionId": "hug-5-6-011",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "It can be commercially oriented even though its output is diversified rather than one export monoculture.",
+      "independentReview": "Verified no equivalence is asserted between commercial orientation, exports, farm size and continuous monoculture. This complements the field records by applying a separate market-purpose classification.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "9b834a352ba05bc97f4393ae6b786e62e06d46553e8f4a445827b3c4e854e08a"
+    }
+  ]
+}

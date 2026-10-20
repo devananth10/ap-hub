@@ -32,6 +32,19 @@ test('second-revolution evidence checks denominators, relative indices, actual s
   const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
  }
 });
+test('Green Revolution checks preserve treatment interaction, access, aggregate irrigation and whole-cost returns',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-5-5.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-5-5.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[1][2]='2.2'],[1,s=>s.regions[0].value=25],[2,s=>s.series[0].values[1]=50],[3,s=>s.rows[1][3]='200']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+ const r=structuredClone(qa.questions[8]);r.check.yields[1]=2;assert.throws(()=>verifyGeographyQuestion(batch.questions[8],r));
+});
+test('production-region checks retain output destinations, rent viability, crop shares and field sequences',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-5-6.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-5-6.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[0][3]='1600'],[1,s=>s.series[0].values[1]=1000],[2,s=>s.regions[0].value=20],[3,s=>s.rows[1][2]='Maize']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
 const base={title:'TEST ONLY',description:'Original hypothetical test data; not a published question.',caption:'TEST ONLY',hypothetical:true,attribution:'Original PrepAtlas schematic and synthetic data'};
 const chart={...base,kind:'chart',unitLabel:'People (thousands)',categories:['A','B'],series:[{label:'Year 1',values:[25,50]},{label:'Year 2',values:[50,75]}],max:100};
 const pyramid={...base,kind:'pyramid',unitLabel:'People (thousands)',max:100,cohorts:[{label:'0–14',ageStart:0,ageEnd:14,male:50,female:50},{label:'15–64',ageStart:15,ageEnd:64,male:75,female:75},{label:'65+',ageStart:65,ageEnd:null,male:25,female:25}]};
