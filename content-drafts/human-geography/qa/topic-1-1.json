@@ -1,0 +1,137 @@
+{
+  "topicNumber": "1.1",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "64db6e0267a6a0111bc1c44f62ebdbdc7de598500522ef55612802cf6715fc10",
+  "scopeReview": "Aligned to IMP-1.A: reference/thematic maps, spatial patterns, absolute/relative distance and direction, clustering, elevation and selective projection distortion. No copied questions, named-country data or BC/other-subject content.",
+  "varietyReview": "Four interpreted maps plus seven distinct applied/conceptual/data scenarios; all five geographic skills represented. Three foundational/intermediate entry points and demanding limitations/proportional-area questions. All four key positions used.",
+  "repetitionReview": "No duplicate stems or shared numeric-only templates in this initial eleven-question set. No definition-only best-defines stem.",
+  "questions": [
+    {
+      "questionId": "hug-1-1-001",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "The two western districts have higher population densities than the eastern districts.",
+      "independentReview": "Recomputed west and east means from the four synthetic values: 80 versus 20. North and south means are both 50; no causal or total-population claim is needed.",
+      "check": {
+        "type": "district-density"
+      },
+      "questionSha256": "01557485f862d9672b6290c5352126759e888ce69084313b80afcd7544c6f782",
+      "stimulusSha256": "1470422f11698a8b4a3e70a64f2872a42fd740d187a30c511d516d91d5d0f4d5"
+    },
+    {
+      "questionId": "hug-1-1-002",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Most mapped residents are concentrated in a northwest cluster.",
+      "independentReview": "Counted plotted points independently by quadrant: 12 northwest, 3 southeast, none elsewhere. Every point has the same 1,000-person value.",
+      "check": {
+        "type": "dot-count"
+      },
+      "questionSha256": "76ae722eac94ce7e02b38c4b37a9a341b8c9e7be4c62842438e8acb016b64d1b",
+      "stimulusSha256": "e8562ab37f5a4d1213ed8d7874439b8ce9fad547a54142d580cb0f631376d5f9"
+    },
+    {
+      "questionId": "hug-1-1-003",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "A steeper elevation gradient, because the same vertical change occurs over a shorter horizontal distance.",
+      "independentReview": "Compared 200/20 with 200/40 using labeled contour values and horizontal coordinates; west/east gradient ratio is 2. Projection/scale are held uniform by the hypothetical map definition.",
+      "check": {
+        "type": "contour-spacing"
+      },
+      "questionSha256": "3b3f7fec3203d2804d8042eb1ab75f6db061b99bf7937c9ee6528cc77cd6dc51",
+      "stimulusSha256": "4db3714f8e95359ddb1d705db2d476f02429a0f6e8c153b8e9adac3d16e33038"
+    },
+    {
+      "questionId": "hug-1-1-004",
+      "skill": "Spatial Relationships",
+      "difficulty": "foundational",
+      "correctOption": "B is 120 km due east of A in straight-line distance.",
+      "independentReview": "B=(80,15), A=(20,15); Δx=60, Δy=0. North-up means positive screen x is east, with distance 60×2=120 km.",
+      "check": {
+        "type": "map-distance"
+      },
+      "questionSha256": "29d8efa3260a40e76625d8484d4d5552389b1e6e09f98f2b648af3b24021db57",
+      "stimulusSha256": "96e8164070910f1ae216c898bf4049bce1d7c7a71f56290c5dc8d563eb7a78f6"
+    },
+    {
+      "questionId": "hug-1-1-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "An equal-area projection, while accepting that shapes or other properties will be distorted.",
+      "independentReview": "Checked the property demanded by the task: area, not shape/angles/distance. The claim is about projection properties rather than unsourced real-country measurements.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "2f55ab03d9c97023c23b3aa2c907d4ef228f4df004dc61e8d485b38534a642c8"
+    },
+    {
+      "questionId": "hug-1-1-006",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Their straight-line absolute distance stayed constant while their travel-time relative distance increased.",
+      "independentReview": "Separated fixed Euclidean separation from network travel-time impedance; no calculation or road geometry beyond the given times is assumed.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "271d5f0d439898bd43e8cffc2b4ee948cea224aa593471344a109cd75bd4ece6"
+    },
+    {
+      "questionId": "hug-1-1-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Comparing the spatial distribution of unemployment across provinces.",
+      "independentReview": "Matched each task to the explicitly described map information. No claim that all reference maps lack themes or that one map can never combine functions is made.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "665296bd4a4a02139124a0c80fa0d98d1773f94332dc9aea091fe785519faf18"
+    },
+    {
+      "questionId": "hug-1-1-008",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "A province-wide summary can conceal variation among smaller areas.",
+      "independentReview": "Constructed a counterexample: a small high-rate neighborhood and a larger low-rate population can have a low weighted provincial rate. No inference about an individual is warranted.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "4cf13337947ddb7b6dc41fc4873d2ed958e9d9e6b234d468304619f755ac4753"
+    },
+    {
+      "questionId": "hug-1-1-009",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Twice as large.",
+      "independentReview": "Independently solved πrY²/(πrX²)=4. Positive radii give √4=2; distractor areas are 16, 256 and 1 times X.",
+      "check": {
+        "type": "circle-area",
+        "ratio": 4
+      },
+      "questionSha256": "74c6b5b121f623ce7c24f36af85cc639a0c2452edb51a55823cd5feb187afd5c"
+    },
+    {
+      "questionId": "hug-1-1-010",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Its near-current locations address an immediate travel decision that an annual regional average cannot resolve.",
+      "independentReview": "Compared the explicitly stated time supports and units of observation. Rejected the stronger claim that live points ensure a correct arrival forecast or complete information.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "92e9b371813704239deed176d5b81b72af8fd125689c66de981213879d9ca3a2"
+    },
+    {
+      "questionId": "hug-1-1-011",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "Their equality cannot be established from ruler lengths alone without accounting for spatially varying projection distortion.",
+      "independentReview": "The premise establishes nonuniform high-latitude stretching. Both unequal and differently scaled ground distances remain possible; the supported answer is insufficient evidence for equality.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "860a0bb15bb6681a873b0c2453b3caa4736da525eff40ffcdc19894a6818992b"
+    }
+  ]
+}

@@ -22,10 +22,10 @@ const compiled=ts.transpileModule(readFileSync('src/components/instructor-select
 const {InstructorSelector}=await import('data:text/javascript;base64,'+Buffer.from(compiled).toString('base64'));
 const render=(resources,preferred='mr-sinn',ready=true)=>renderToStaticMarkup(createElement(InstructorSelector,{resources,preferred,ready,onChange:()=>{}}));
 
-test('Human Geography is a complete selectable course: seven units, 68 stable topics, zero MCQs',()=>{
+test('Human Geography is a complete selectable course: seven units, 68 stable topics and honest published Practice counts',()=>{
  const course=courses.find(c=>c.id==='human-geography');assert.equal(course.artwork,'geography');assert.equal(course.units.length,7);assert.equal(course.units.flatMap(u=>u.topics).length,68);
  const official=read('content-drafts/human-geography/research/official-topics.json');assert.equal(official.independentHeadingMatches,68);assert.match(official.cedSha256,/^[a-f0-9]{64}$/);
- for(const unit of course.units)for(const topic of unit.topics){const scope={courseId:course.id,unitNumber:unit.number,topicId:topic.id};assert.equal(topic.id,`topic-${topic.number.replace('.','-')}`);assert.ok(topic.workspaceReady);assert.ok(validPracticeScope(scope));assert.equal(practiceCount(scope),0);assert.deepEqual(practiceEntries(scope),[]);}
+ for(const unit of course.units)for(const topic of unit.topics){const scope={courseId:course.id,unitNumber:unit.number,topicId:topic.id};assert.equal(topic.id,`topic-${topic.number.replace('.','-')}`);assert.ok(topic.workspaceReady);assert.ok(validPracticeScope(scope));const entries=practiceEntries(scope);assert.ok([0,11].includes(entries.length));assert.equal(practiceCount(scope),entries.length);}
 });
 test('initial Human Geography evidence and all 136 approved mappings pass; thirteen uncertain extras stay out',()=>{
  assert.deepEqual(checkHumanGeography(),{discovered:149,verified:136,pending:13,published:136,topicsWithBoth:68,topicsWithOne:0,topicsWithNeither:0});

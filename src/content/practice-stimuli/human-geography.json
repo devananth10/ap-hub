@@ -1,0 +1,401 @@
+{
+  "hug-1-1-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "Population density in four districts",
+    "description": "Hypothetical equal-area districts: NW 80, NE 20, SW 80, SE 20 people per square kilometer. North is up. Values are density, not population counts.",
+    "caption": "Each district covers 100 km². The grid shows geographic adjacency, not real countries.",
+    "unitLabel": "Population density (people/km²)",
+    "regions": [
+      {
+        "label": "NW",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            0,
+            30
+          ]
+        ],
+        "value": 80
+      },
+      {
+        "label": "NE",
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            50,
+            30
+          ]
+        ],
+        "value": 20
+      },
+      {
+        "label": "SW",
+        "polygon": [
+          [
+            0,
+            30
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ],
+        "value": 80
+      },
+      {
+        "label": "SE",
+        "polygon": [
+          [
+            50,
+            30
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ],
+        "value": 20
+      }
+    ],
+    "bins": [
+      {
+        "min": 0,
+        "max": 50,
+        "label": "0 to under 50"
+      },
+      {
+        "min": 50,
+        "max": 100,
+        "label": "50 to under 100"
+      }
+    ]
+  },
+  "hug-1-1-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "dot",
+    "title": "Residents in a hypothetical region",
+    "description": "One dot represents 1,000 residents. Twelve dots cluster in the northwest; three lie in the southeast. The center has no plotted dots. No elevation or roads are shown.",
+    "caption": "Dots represent approximate population locations within the hypothetical region.",
+    "unitLabel": "1 dot = 1,000 residents",
+    "regions": [
+      {
+        "label": "Region X",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      }
+    ],
+    "dots": [
+      {
+        "x": 8,
+        "y": 6
+      },
+      {
+        "x": 14,
+        "y": 6
+      },
+      {
+        "x": 20,
+        "y": 6
+      },
+      {
+        "x": 8,
+        "y": 12
+      },
+      {
+        "x": 14,
+        "y": 12
+      },
+      {
+        "x": 20,
+        "y": 12
+      },
+      {
+        "x": 8,
+        "y": 18
+      },
+      {
+        "x": 14,
+        "y": 18
+      },
+      {
+        "x": 20,
+        "y": 18
+      },
+      {
+        "x": 8,
+        "y": 24
+      },
+      {
+        "x": 14,
+        "y": 24
+      },
+      {
+        "x": 20,
+        "y": 24
+      },
+      {
+        "x": 78,
+        "y": 45
+      },
+      {
+        "x": 85,
+        "y": 50
+      },
+      {
+        "x": 90,
+        "y": 43
+      }
+    ]
+  },
+  "hug-1-1-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "isoline",
+    "title": "Two hypothetical elevation slopes",
+    "description": "Uniform-scale elevation contours. West: 100 m at x=10, 200 m at x=20, 300 m at x=30. East: 100 m at x=55, 200 m at x=75, 300 m at x=95. Contours run north–south. Each successive line differs by 100 m.",
+    "caption": "Hypothetical straight contours; compare average eastward gradients between the 100 m and 300 m lines.",
+    "unitLabel": "Elevation isolines: meters above a common datum; interval 100 m",
+    "regions": [
+      {
+        "label": "West",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            43,
+            0
+          ],
+          [
+            43,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "East",
+        "polygon": [
+          [
+            48,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            48,
+            60
+          ]
+        ]
+      }
+    ],
+    "paths": [
+      {
+        "label": "100",
+        "points": [
+          [
+            10,
+            12
+          ],
+          [
+            10,
+            50
+          ]
+        ],
+        "value": 100
+      },
+      {
+        "label": "200",
+        "points": [
+          [
+            20,
+            12
+          ],
+          [
+            20,
+            50
+          ]
+        ],
+        "value": 200
+      },
+      {
+        "label": "300",
+        "points": [
+          [
+            30,
+            12
+          ],
+          [
+            30,
+            50
+          ]
+        ],
+        "value": 300
+      },
+      {
+        "label": "100",
+        "points": [
+          [
+            55,
+            12
+          ],
+          [
+            55,
+            50
+          ]
+        ],
+        "value": 100
+      },
+      {
+        "label": "200",
+        "points": [
+          [
+            75,
+            12
+          ],
+          [
+            75,
+            50
+          ]
+        ],
+        "value": 200
+      },
+      {
+        "label": "300",
+        "points": [
+          [
+            95,
+            12
+          ],
+          [
+            95,
+            50
+          ]
+        ],
+        "value": 300
+      }
+    ],
+    "kmPerUnit": 1
+  },
+  "hug-1-1-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "Three hypothetical towns",
+    "description": "North-up reference map with a uniform scale of 2 km per coordinate unit. A is at (20,15), B at (80,15), C at (20,45). B lies directly east of A; C is south of A. No roads are shown.",
+    "caption": "Straight-line map geometry only. The scale bar represents 40 km.",
+    "unitLabel": "Town locations; uniform distance scale",
+    "regions": [
+      {
+        "label": "Plain",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "A",
+        "x": 20,
+        "y": 15
+      },
+      {
+        "label": "B",
+        "x": 80,
+        "y": 15
+      },
+      {
+        "label": "C",
+        "x": 20,
+        "y": 45
+      }
+    ],
+    "kmPerUnit": 2
+  }
+}

@@ -6,6 +6,7 @@ import type { BankQuestion } from "@/lib/practice-bank";
 import type { PracticeAnswer } from "@/lib/practice-session";
 import { PracticeFigure } from "./practice-figure";
 import { PracticeTable } from "./practice-table";
+import { GeographyStimulus } from "./geography-stimulus";
 
 export function PracticeQuestion({ practice, answer, onSelect, onCheck, onRetry }: { practice: BankQuestion; answer: PracticeAnswer; onSelect: (index: number) => void; onCheck: () => void; onRetry: () => void }) {
   const groupName = useId();
@@ -18,6 +19,7 @@ export function PracticeQuestion({ practice, answer, onSelect, onCheck, onRetry 
     <div className="practice-preview">
       <h2>A quick check for understanding.</h2>
       <p className="muted small">This is not an official College Board question. Answers stay in this session and reset on reload.</p>
+      <GeographyStimulus key={practice.id} questionId={practice.id} />
       <fieldset disabled={checked || !ready} aria-busy={!ready}>
         <legend>{prompt}</legend>
         <PracticeFigure questionId={practice.id} />

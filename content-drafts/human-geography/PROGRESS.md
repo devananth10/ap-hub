@@ -1,14 +1,14 @@
 # AP Human Geography progress
 
-Course/video foundation complete. Baseline: `cd5d5e5eefd2894feeafd6a1bd3a7fd2b7253ed9`.
+Published **11/748 MCQs across 1/68 topics**. Exactly eleven per completed topic; incomplete topics remain empty. No unresolved item is published. No independent human review.
 
-- Seven official units, 68 canonical topics, all working study routes.
-- 136 verified published videos: 68 Mr. Sinn, 68 Heimler. Both available on every topic; thirteen unmapped extras unpublished.
-- Original MCQs published: **0 / 748**. No prior Human Geography questions found or regenerated.
-- Last completed question topic: none. Next: **1.1 Introduction to Maps**, ID `topic-1-1`.
-- Next work: inspect shared Practice figure/table sidecars, implement typed geography stimuli with enlargement/accessibility, then generate eleven original Topic 1.1 questions with meaningful visuals and independent QA before publication. Continue in official order with tested checkpoints.
-- No question/graphic drafts or unresolved application-test failures at the course/video checkpoint. TypeScript/build, 118 tests and new/existing route regressions passed. Question generation has not begun.
+Stimulus questions: **4 (36.36%)**; target 35–40% when the bank is complete. By type: {"map:choropleth":1,"map:dot":1,"map:isoline":1,"map:reference":1}. Independent numerical/geometry models: 5; other questions have recorded reasoning reviews.
 
-The subsequent master prompt authorizes validated original MCQ publication with 35–40% meaningful stimuli, all four option explanations and independent geographic/data/visual checks. No manual MCQ approval is needed. Future video collections/replacements remain separate. Preserve existing banks, videos and student data; no public deployment.
+Completed topics:
+- 1.1: eleven published questions; topic-1-1
 
-Official IDs: `research/official-topics.json`. Results: `../../docs/HUMAN_GEOGRAPHY.md`. Use Git log and verified remote receipts for checkpoint SHAs; never invent a future commit ID.
+Next topic: **1.2**. Remaining: 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 2.10, 2.11, 2.12, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 4.10, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 5.10, 5.11, 5.12, 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8, 6.9, 6.10, 6.11, 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8. Resume in official order; do not regenerate completed questions. No pending graphic assets for published topics. Read QA files, rerun validation/browser checks and inspect Git status before continuing.
+
+Course/video foundation checkpoint: cb53a849201db7b863bfeec26e508dec82c12b8a, verified on GitHub. All 68 topics have both instructors (136 videos), thirteen unmapped extras remain unpublished. Preserve video mappings, notes, instructor preference, watched tracking, feedback and all existing Chemistry/Calculus content. No public deployment or paid API.
+
+Exact IDs: research/official-topics.json. Shared stimulus schema: ../../docs/GEOGRAPHY_STIMULI.md. Verification limits: PROGRESS.json and individual QA. Later GitHub receipts are verified after committing, never invented beforehand.

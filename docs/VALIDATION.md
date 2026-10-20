@@ -1,5 +1,9 @@
 # PrepAtlas milestone verification
 
+## Human Geography visual Practice — Topic 1.1 checkpoint
+
+Eleven original questions are published; the full 748-question bank is still in progress. Four interpreted original map stimuli give 36.36% coverage. Structural/QA checks, five data/geometry recomputations, 124 unit tests, TypeScript and production build pass. All eleven questions were exercised in the browser, including incorrect feedback/retry and expected 10/11 first-attempt scoring. Mobile maps, enlargement/100–200% zoom, answer review and preservation were checked. Charts/pyramids/models/tables have synthetic renderer tests; they are not yet published Geography question types. See [stimulus report](GEOGRAPHY_STIMULI.md) and [actual progress](../content-drafts/human-geography/PROGRESS.md).
+
 ## Human Geography course and dual-instructor integration
 
 Seven units and 68 CED-checked topics are registered, with 136 initial verified videos and no Human Geography MCQs at this checkpoint. TypeScript, production build, 118 automated tests, all new topic/empty-Practice scopes and existing course regressions passed. Actual representative playback/fullscreen, preference persistence, separate watched status, notes preservation, keyboard selection and mobile layout were checked. See [full report](HUMAN_GEOGRAPHY.md) for exact counts, thirteen withheld extras, limits and next question phase.

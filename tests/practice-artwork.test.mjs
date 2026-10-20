@@ -102,7 +102,7 @@ test("bulk-authorized publication covers every Chemistry topic exactly once with
     }
   }
   assert.equal(publishedIds.size, 1001);
-  for (const course of courses.filter(course => !["chemistry","calculus-ab"].includes(course.id))) {
+  for (const course of courses.filter(course => !["chemistry","calculus-ab","human-geography"].includes(course.id))) {
     assert.equal(practiceCount({ courseId: course.id }), 0);
     assert.equal(practiceEntries({ courseId: course.id }).length, 0);
   }

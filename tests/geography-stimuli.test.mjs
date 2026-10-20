@@ -1,0 +1,54 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {createRequire} from 'node:module';
+import {pathToFileURL} from 'node:url';
+import ts from 'typescript';
+import {createElement} from 'react';
+import {renderToStaticMarkup} from 'react-dom/server';
+import {geographyStimuli,validateGeographyStimulus,mapBin,symbolRadius} from '../src/lib/geography-stimuli.ts';
+import {validateHumanGeographyBank,verifyGeographyQuestion,semanticHash} from '../scripts/check-human-geography-bank.mjs';
+const require=createRequire(import.meta.url);
+const compiled=ts.transpileModule(readFileSync('src/components/geography-stimulus.tsx','utf8'),{compilerOptions:{jsx:ts.JsxEmit.ReactJSX,module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText
+ .replace('import { Dialog } from "./ui";','const Dialog=()=>null;')
+ .replaceAll('"react"',JSON.stringify(pathToFileURL(require.resolve('react')).href))
+ .replaceAll('"react/jsx-runtime"',JSON.stringify(pathToFileURL(require.resolve('react/jsx-runtime')).href))
+ .replaceAll('"@/lib/geography-stimuli"',JSON.stringify(new URL('../src/lib/geography-stimuli.ts',import.meta.url).href));
+const {StimulusContent,GeographyStimulus}=await import('data:text/javascript;base64,'+Buffer.from(compiled).toString('base64'));
+const render=stimulus=>renderToStaticMarkup(createElement(StimulusContent,{stimulus}));
+const base={title:'TEST ONLY',description:'Original hypothetical test data; not a published question.',caption:'TEST ONLY',hypothetical:true,attribution:'Original PrepAtlas schematic and synthetic data'};
+const chart={...base,kind:'chart',unitLabel:'People (thousands)',categories:['A','B'],series:[{label:'Year 1',values:[25,50]},{label:'Year 2',values:[50,75]}],max:100};
+const pyramid={...base,kind:'pyramid',unitLabel:'People (thousands)',max:100,cohorts:[{label:'0–14',ageStart:0,ageEnd:14,male:50,female:50},{label:'15–64',ageStart:15,ageEnd:64,male:75,female:75},{label:'65+',ageStart:65,ageEnd:null,male:25,female:25}]};
+
+test('present geography sets have eleven reviewed questions, unique IDs and genuine stimulus coverage',()=>{
+ const result=validateHumanGeographyBank();assert.ok(result.questions>=11);assert.equal(result.questions,result.completedTopics*11);assert.ok(result.stimulusQuestions>=4);assert.equal(result.humanReviewPerformed,false);
+});
+test('each original map renders its evidence, exact legend bin, accessible description and enlargement',()=>{
+ for(const [questionId,stimulus] of Object.entries(geographyStimuli)){
+  validateGeographyStimulus(stimulus);const html=render(stimulus);assert.match(html,/role="img"/);assert.match(html,/<desc/);assert.ok(html.includes('Hypothetical')||html.includes('hypothetical'));
+  const wrapper=renderToStaticMarkup(createElement(GeographyStimulus,{questionId}));assert.ok(wrapper.includes('Enlarge '+stimulus.title));assert.ok(!wrapper.includes('<dialog'));
+ }
+ const html=render(geographyStimuli['hug-1-1-001']);assert.match(html,/data-region="NW" data-value="80" data-bin="1"/);assert.match(html,/data-region="NE" data-value="20" data-bin="0"/);assert.ok(html.includes('NW: 80'));assert.equal(mapBin(50,geographyStimuli['hug-1-1-001'].bins),1);
+ assert.equal((render(geographyStimuli['hug-1-1-002']).match(/class="geo-dot"/g)||[]).length,15);
+ const scale=render(geographyStimuli['hug-1-1-004']);assert.ok(scale.includes('40 km'));assert.ok(scale.includes('Town locations'));
+});
+test('chart bar heights, zero baseline, labels and equivalent data match numeric inputs',()=>{
+ validateGeographyStimulus(chart);const html=render(chart);assert.match(html,/data-value="50" x="[^"]+" y="135" width="[^"]+" height="85"/);assert.ok(html.includes('A: Year 1'));assert.ok(html.includes('B: Year 2'));assert.ok(html.includes('<table>'));assert.match(html,/<td>75<\/td>/);
+ const wrong=structuredClone(chart);wrong.series[0].values[0]=101;assert.throws(()=>validateGeographyStimulus(wrong),/outside axis/);
+});
+test('population pyramids place oldest cohorts at top with symmetric side scales and complete data',()=>{
+ validateGeographyStimulus(pyramid);const html=render(pyramid);assert.ok(html.indexOf('data-cohort="65+"')<html.indexOf('data-cohort="0–14"'));assert.match(html,/data-side="male" data-value="50" x="150" y="105" width="70"/);assert.match(html,/data-side="female" data-value="50" x="260" y="105" width="70"/);assert.ok(html.includes('each side uses the same scale'));assert.ok(html.includes('<table>'));
+ const wrong=structuredClone(pyramid);wrong.cohorts.reverse();assert.throws(()=>validateGeographyStimulus(wrong),/cohort/);
+});
+test('flow arrows, proportional area and model edges use their supplied directions and explicit assumptions',()=>{
+ const region={label:'R',polygon:[[0,0],[100,0],[100,60],[0,60]]};
+ const flow={...base,kind:'map',mapType:'flow',unitLabel:'Migrants',regions:[region],paths:[{label:'A to B',points:[[10,10],[80,50]],arrow:true,value:500}]};validateGeographyStimulus(flow);const html=render(flow);assert.match(html,/data-arrow-end="true"/);assert.ok(html.includes('78,68 344,200'));assert.ok(html.includes('marker-end='));
+ const wrong=structuredClone(flow);wrong.paths[0].arrow=false;assert.throws(()=>validateGeographyStimulus(wrong),/direction/);
+ assert.equal(symbolRadius(4,4)/symbolRadius(1,4),2);
+ const model={...base,kind:'model',assumptions:'Hypothetical two-node model; arrows represent goods, not people.',nodes:[{label:'Core',x:20,y:20},{label:'Periphery',x:80,y:40}],edges:[{from:'Periphery',to:'Core',label:'Raw materials'}]};validateGeographyStimulus(model);const output=render(model);assert.ok(output.includes('Assumptions:'));assert.ok(output.includes('Raw materials'));
+ const invalid=structuredClone(model);invalid.edges[0].to='Unknown';assert.throws(()=>validateGeographyStimulus(invalid));
+});
+test('legend gaps, bad provenance, off-map points, stale answers and altered visual calculations are rejected',()=>{
+ const original=geographyStimuli['hug-1-1-001'];for(const change of [s=>s.bins[1].min=60,s=>s.regions[0].value=1000,s=>s.hypothetical=false,s=>s.regions[0].polygon[0][0]=-1]){const s=structuredClone(original);change(s);assert.throws(()=>validateGeographyStimulus(s));}
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-1-1.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-1-1.json','utf8'));const q=batch.questions[3],review=qa.questions[3],s=structuredClone(geographyStimuli[q.id]);s.points[1].x=70;const updated={...review,stimulusSha256:semanticHash(s)};assert.throws(()=>verifyGeographyQuestion(q,updated,s));const changed={...q,correctIndex:0};assert.throws(()=>verifyGeographyQuestion(changed,review,geographyStimuli[q.id]));
+});

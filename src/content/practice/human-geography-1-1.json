@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 1,
+  "topicId": "topic-1-1",
+  "questions": [
+    {
+      "id": "hug-1-1-001",
+      "prompt": "The choropleth map represents four equal-area districts. Which statement about the spatial pattern is supported by the mapped variable?",
+      "options": [
+        "Population density is uniform across the four districts.",
+        "The two western districts have higher population densities than the eastern districts.",
+        "The northern pair is denser on average than the southern pair.",
+        "The colors represent each district’s total population, regardless of its area."
+      ],
+      "correctIndex": 1,
+      "explanation": "Read the legend as people per square kilometer, then compare both west–east pairs. NW and SW each have 80 people/km²; NE and SE each have 20. The same west–east contrast occurs in both rows. The map supports a density pattern, not an explanation for why it exists. A: Two distinct density values contradict uniform density. B: Both western values are 80 and both eastern values are 20, so this describes the repeated pattern. C: Each row has the same two densities; equal district areas also give both rows the same mean density of 50 people/km². D: The legend identifies a rate per unit area, rather than unstandardized population totals."
+    },
+    {
+      "id": "hug-1-1-002",
+      "prompt": "Each dot on the hypothetical distribution map represents 1,000 residents. Which interpretation describes the mapped settlement pattern without adding unsupported information?",
+      "options": [
+        "Residents are evenly dispersed throughout the region.",
+        "Residents form a continuous linear settlement along a mapped highway.",
+        "The northwest has higher elevation because it contains more dots.",
+        "Most mapped residents are concentrated in a northwest cluster."
+      ],
+      "correctIndex": 3,
+      "explanation": "The evidence is the location and number of equal-value dots. Twelve dots form a compact northwest group and three occur in the southeast. Thus 12,000 of the 15,000 represented residents are in the northwest cluster. The map does not display highways, elevation or the cause of clustering. A: The large empty central area and unequal concentration contradict an even dispersion. B: Neither a highway nor a continuous row of dots is shown, so that specific linear interpretation lacks evidence. C: These dots encode residents, not height; more dots cannot be converted into an elevation claim. D: The northwest cluster contains twelve of the fifteen dots, so it represents most of the mapped residents."
+    },
+    {
+      "id": "hug-1-1-003",
+      "prompt": "The isolines on the hypothetical elevation map use the same 100-meter interval on both slopes. Compared with the eastern slope, what does the western slope’s line spacing indicate?",
+      "options": [
+        "A steeper elevation gradient, because the same vertical change occurs over a shorter horizontal distance.",
+        "A gentler elevation gradient, because the labeled elevations are smaller in the west.",
+        "An identical gradient, because both slopes use the same contour interval.",
+        "A greater population density, because closely spaced elevation lines represent more people."
+      ],
+      "correctIndex": 0,
+      "explanation": "Compare horizontal spacing while holding the vertical contour interval constant. The west rises from 100 to 300 meters across 20 map units; the east makes the same rise across 40 units. With a uniform scale, the west has twice the average elevation gradient between these labeled lines. This is an interpretation of the isolines, not of population. A: The equal 200-meter rise is compressed into half the horizontal distance in the west. B: Both slopes show 100, 200 and 300 meters; their elevation labels are not smaller in the west. C: An equal contour interval controls vertical change but does not make horizontal spacing or gradient equal. D: The legend specifies elevation in meters, and no population variable is mapped."
+    },
+    {
+      "id": "hug-1-1-004",
+      "prompt": "Use the north arrow and scale on the hypothetical reference map. Which description of town B relative to town A is correct?",
+      "options": [
+        "B is 120 km due west of A in straight-line distance.",
+        "B is 60 km due east of A in straight-line distance.",
+        "B is 120 km due east of A in straight-line distance.",
+        "The road trip from A to B must take 120 minutes."
+      ],
+      "correctIndex": 2,
+      "explanation": "Town B lies horizontally to the right of A, which is east on this north-up map. The towns differ by 60 coordinate units, and the uniform scale assigns 2 km per unit: 60×2=120 km. This determines straight-line separation, not travel time or the length of an unshown road route. A: The magnitude is correct but the direction is reversed; west would lie to the left. B: This confuses the 60 coordinate-unit separation with kilometers and omits the scale factor of 2. C: The positions and scale jointly give an eastward separation of 120 km. D: A map distance does not fix travel time; the map supplies neither a route nor a travel speed."
+    },
+    {
+      "id": "hug-1-1-005",
+      "prompt": "A publisher needs a world map for comparing the areas occupied by different climate zones. Which choice best preserves the quantity the comparison depends on?",
+      "options": [
+        "An equal-area projection, while accepting that shapes or other properties will be distorted.",
+        "A projection selected solely because it preserves local angles.",
+        "Any rectangular world map, because the same page width guarantees equal area accuracy.",
+        "A projection that enlarges high-latitude areas to make their boundaries easier to see."
+      ],
+      "correctIndex": 0,
+      "explanation": "The task compares surface areas, so an equal-area projection preserves the relevant relative area relationships. A flat world map cannot preserve every geometric property simultaneously. Selecting a projection therefore requires accepting distortion in properties less central to the task. A: Preserving area directly serves the requested comparison without promising that every shape or distance is also preserved. B: Local angular accuracy is a different property and does not by itself preserve the sizes of climate zones. C: Page shape and width do not identify a projection’s area properties. D: Deliberately enlarging selected areas makes their mapped sizes unsuitable for an unbiased area comparison."
+    },
+    {
+      "id": "hug-1-1-006",
+      "prompt": "Two towns are 25 km apart in straight-line distance. A river crossing closes, increasing the fastest road journey from 30 to 80 minutes while the towns stay in place. Which interpretation distinguishes absolute and relative distance?",
+      "options": [
+        "Both absolute distance and travel-time distance increased by the same proportion.",
+        "Absolute distance increased, but travel-time distance stayed constant.",
+        "The towns’ absolute locations changed because a route closed.",
+        "Their straight-line absolute distance stayed constant while their travel-time relative distance increased."
+      ],
+      "correctIndex": 3,
+      "explanation": "Absolute distance can be expressed in a fixed spatial unit such as kilometers, whereas relative distance may be evaluated in time or cost. Closing the crossing changes accessibility through the transport network without moving either town. The specified straight-line separation remains 25 km. A: The kilometer separation did not change, so the two measures did not increase together. B: This reverses the scenario: the fixed kilometer separation remains constant and the journey time increases. C: A change in access does not move the towns or change their absolute coordinates. D: This preserves the physical separation and recognizes the increased time needed to travel between the places."
+    },
+    {
+      "id": "hug-1-1-007",
+      "prompt": "A thematic map shows provincial unemployment rates, whereas a reference map labels provincial boundaries, capitals and major roads. For which task is the thematic map the more direct tool?",
+      "options": [
+        "Finding which road connects a capital to the nearest border crossing.",
+        "Comparing the spatial distribution of unemployment across provinces.",
+        "Locating the precise intersection of two numbered highways.",
+        "Identifying the official spelling of a capital shown only on the reference map."
+      ],
+      "correctIndex": 1,
+      "explanation": "A thematic map focuses on the spatial distribution of a particular variable—in this case unemployment rates. The reference map instead locates named features and transport routes. The more appropriate map is the one that supplies evidence for the question being asked. A: The requested route information is supplied by the reference map’s roads and boundaries. B: The unemployment-rate theme is precisely the variable needed for that regional comparison. C: An exact highway intersection requires reference information rather than unemployment shading. D: The question specifies that the name appears only on the reference map, so thematic data cannot supply it."
+    },
+    {
+      "id": "hug-1-1-008",
+      "prompt": "A map of disease incidence shades a large province as having a low rate. A health official concludes that every neighborhood in that province must also have a low rate. What limitation of the map most directly weakens that conclusion?",
+      "options": [
+        "Rates cannot be mapped appropriately when provinces have different populations.",
+        "The map’s regional boundaries must follow natural landforms.",
+        "A province-wide summary can conceal variation among smaller areas.",
+        "The provincial rate must equal an unweighted mean of all neighborhood rates."
+      ],
+      "correctIndex": 2,
+      "explanation": "A map that aggregates observations to provinces describes that reporting scale. A low aggregate rate is compatible with a high-rate neighborhood if other areas have lower rates or different population weights. The map is selective: it does not display the within-province distribution needed to justify the official’s universal claim. A: Standardized rates can be mapped across unequal populations; changing denominators is a reason to distinguish rates from totals. B: Reporting regions may be administrative rather than natural; their physical origin does not establish local disease rates. C: Unshown local variation makes the claim about every neighborhood unsupported. D: A combined rate generally weights observations by the relevant populations. An unweighted mean is not guaranteed and would not establish every neighborhood’s rate."
+    },
+    {
+      "id": "hug-1-1-009",
+      "prompt": "A proportional-circle map assigns circle area in direct proportion to city population. City Y has four times the population of city X. How should Y’s circle radius compare with X’s radius?",
+      "options": [
+        "Four times as large.",
+        "Sixteen times as large.",
+        "The same size, because both features are cities.",
+        "Twice as large."
+      ],
+      "correctIndex": 3,
+      "explanation": "The map encodes population through area, and a circle’s area is πr². If Y must have four times X’s mapped area, then (rY/rX)²=4 and the positive radius ratio is 2. Confusing radius with area would exaggerate the larger city’s symbol. A: Multiplying radius by four multiplies area by sixteen, overstating the fourfold population difference. B: A sixteenfold radius gives a 256-fold area, far beyond the required ratio. C: Equal radii would produce equal areas and encode equal populations. D: Doubling radius multiplies area by four, matching the stated population ratio."
+    },
+    {
+      "id": "hug-1-1-010",
+      "prompt": "An online map shows current bus locations as moving points. A second map shades districts by annual average commute time. Why would the first map be more useful to someone deciding whether to walk to a stop now?",
+      "options": [
+        "Its near-current locations address an immediate travel decision that an annual regional average cannot resolve.",
+        "Point symbols necessarily provide complete information about every bus passenger.",
+        "An annual average cannot be displayed on a map at all.",
+        "A moving point eliminates the need to consider the map’s update time."
+      ],
+      "correctIndex": 0,
+      "explanation": "Map usefulness depends on its purpose and temporal as well as spatial detail. Current vehicle positions can support a near-term decision, whereas annual district averages describe a different time period and level of aggregation. Even the live map remains selective and depends on how recently it was updated. A: The first map provides information closer to the immediate question, while the annual regional summary cannot locate today’s approaching bus. B: A vehicle-location symbol does not show all passenger characteristics or other unrecorded details. C: Annual averages are valid thematic-map data, but they answer a different question. D: A point can be stale; update timing remains relevant to the decision."
+    },
+    {
+      "id": "hug-1-1-011",
+      "prompt": "A student measures two routes with the same ruler length on a world map whose projection strongly stretches high latitudes. One route is near the equator and the other is near the pole. What is the best conclusion about their actual ground lengths?",
+      "options": [
+        "They must be equal because their ruler lengths match.",
+        "The polar route must be longer because it is farther north.",
+        "Their equality cannot be established from ruler lengths alone without accounting for spatially varying projection distortion.",
+        "Equal page lengths guarantee equal ground lengths whenever the projection preserves local angles."
+      ],
+      "correctIndex": 2,
+      "explanation": "A projection can vary its scale across a world map. Equal distances measured on the page need not represent equal ground distances at different latitudes. The student needs an appropriate local scale or a distance calculation that accounts for the projection before establishing equality. A: This assumes a uniform scale that the question specifically says cannot be taken for granted. B: Being farther north is not enough to order the actual route lengths from the provided evidence. C: This recognizes the projection limitation without inventing a numerical length or unsupported ordering. D: Preserving local angles is different from preserving distance at a uniform scale over the entire map."
+    }
+  ]
+}

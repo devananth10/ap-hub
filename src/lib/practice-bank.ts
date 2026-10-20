@@ -91,6 +91,7 @@ import chemistry9_10 from "../content/practice/chemistry-9-10.json" with { type:
 import chemistry9_11 from "../content/practice/chemistry-9-11.json" with { type: "json" };
 import { findTopic } from "./courses.ts";
 import { calculusABBatches } from "./calculus-ab-bank.ts";
+import { humanGeographyBatches } from "./human-geography-bank.ts";
 
 export type BankQuestion = { id: string; prompt: string; options: string[]; correctIndex: number; explanation: string };
 export type QuestionBatch = { courseId: string; unitNumber: number; topicId: string; questions: BankQuestion[] };
@@ -213,5 +214,6 @@ export const questionBatches = validateQuestionBatches([
   chemistry9_9,
   chemistry9_10,
   chemistry9_11,
-  ...calculusABBatches
+  ...calculusABBatches,
+  ...humanGeographyBatches
 ]);
