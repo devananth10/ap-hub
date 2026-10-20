@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 2,
+  "topicId": "topic-2-7",
+  "questions": [
+    {
+      "id": "hug-2-7-001",
+      "prompt": "Which classification correctly distinguishes the stated population-policy intentions in the table?",
+      "options": [
+        "A and B both seek more births; C directly limits births.",
+        "A seeks fewer births; B and C both directly regulate births.",
+        "A seeks fewer births, B seeks more births, and C changes immigration admissions.",
+        "A changes immigration admissions, B seeks fewer births, and C seeks more births."
+      ],
+      "correctIndex": 2,
+      "explanation": "Classify a policy by its stated target and mechanism. Voluntary family planning aimed at reducing unintended births is antinatalist in this scenario; a child bonus intended to encourage births is pronatalist. Worker admissions act directly on immigration, even though migrants may also affect future population composition and births. Intent should not be confused with a guaranteed outcome. A: A explicitly aims to reduce unintended births, and C regulates entry rather than births. B: A is classified correctly, but C acts directly on immigration instead of directly regulating births. C: All three classifications match the supplied intentions and mechanisms. D: This assigns every instrument to a different target from the one stated."
+    },
+    {
+      "id": "hug-2-7-002",
+      "prompt": "The fertility-support package began after the first observation in Region P only. Which evaluation is best supported by these observational lines?",
+      "options": [
+        "The shared decline means P’s change alone does not establish a causal effect of the package.",
+        "P’s entire decline of 0.6 births per woman must have been caused by the package.",
+        "Because both regions decline, their final fertility values must be identical.",
+        "The program increased P’s fertility by 0.6 births per woman."
+      ],
+      "correctIndex": 0,
+      "explanation": "P declines from 3.0 to 2.4 while Q, which did not receive the package, declines from 3.0 to 2.3. The presence of a similar background decline challenges attributing all of P’s change to the policy. An observational comparison is not automatically a valid experiment: other regional differences and trends still require evaluation. A: This recognizes the comparison trend without claiming that the chart identifies an exact treatment effect. B: The no-package region also declines; P’s before–after difference alone cannot isolate causation. C: The final values are 2.4 and 2.3, not equal. D: P’s observed value falls by 0.6 rather than increasing by that amount; a causal increase is not established."
+    },
+    {
+      "id": "hug-2-7-003",
+      "prompt": "A national childcare subsidy has the same eligibility rules in all four districts. What does the map show about its practical reach?",
+      "options": [
+        "Uniform national eligibility guarantees identical physical access in every district.",
+        "Southern districts must have fewer eligible households because their access percentages are lower.",
+        "The subsidy necessarily produces a larger birth-rate increase in the north.",
+        "A uniform national rule can coexist with unequal local access to participating services."
+      ],
+      "correctIndex": 3,
+      "explanation": "The mapped percentages concern eligible households within reach of a participating center: 80 and 70 in the north, 30 and 20 in the south. Rules applied nationally do not remove geographic differences in facilities and transport. The map does not report the numbers of households or subsequent fertility responses. A: The observed percentages differ despite identical rules. B: Percentages need eligible-household totals before absolute numbers can be compared. C: Access alone does not establish a birth-rate response or its cause. D: This distinguishes a policy’s national eligibility from its uneven local implementation."
+    },
+    {
+      "id": "hug-2-7-004",
+      "prompt": "Which statement correctly compares the age composition of admissions under the two hypothetical plans?",
+      "options": [
+        "Both plans admit 80% of entrants at ages 15–64.",
+        "Plan B admits 90% of entrants at ages 15–64, compared with 80% under A.",
+        "Plan B admits a smaller number at ages 15–64 because its child count is unchanged.",
+        "Plan B’s 90% working-age share guarantees 90% employment among entrants."
+      ],
+      "correctIndex": 1,
+      "explanation": "Plan A admits 1,000 people, of whom 800 are ages 15–64; Plan B admits 2,000, of whom 1,800 are in that age band. Thus the shares are 80% and 90%. An admissions policy can change age composition, but age classification alone does not establish employment, qualifications or future participation. A: Only A has an 80% share; B’s is 1,800/2,000=90%. B: Both shares use the full total for their respective plan and correctly distinguish the compositions. C: B’s working-age count rises by 1,000 even though both other age counts remain unchanged. D: Working age is a demographic category, not a count of jobs or employed people."
+    },
+    {
+      "id": "hug-2-7-005",
+      "prompt": "A government introduces paid parental leave and subsidized childcare explicitly to encourage births. Which description best separates the policy’s intent from its outcome?",
+      "options": [
+        "It is pronatalist in intent, but the eventual fertility response must be evaluated.",
+        "It is antinatalist because childcare allows parents to work.",
+        "It is an immigration policy because it changes the cost of raising children.",
+        "It proves that every eligible household will have an additional child."
+      ],
+      "correctIndex": 0,
+      "explanation": "The explicitly stated aim is to encourage births, which makes the policy pronatalist in intent. Its actual effect may depend on affordability, eligibility, work conditions and household preferences. A policy label summarizes an objective; it does not establish an identical behavioral response among every household. A: This uses the stated birth-promotion goal and leaves effectiveness as an empirical question. B: Supporting work and encouraging births can be intended together; the stated objective is not to discourage births. C: Changing childrearing costs does not directly regulate movement across a border. D: Eligibility and an incentive do not force an additional birth in every household."
+    },
+    {
+      "id": "hug-2-7-006",
+      "prompt": "Which hypothetical program pursues a lower unintended-birth rate through voluntary choice rather than a compulsory birth quota?",
+      "options": [
+        "A rule penalizing households for a birth above a fixed ceiling.",
+        "A regulation requiring a permit before any household may have a child.",
+        "A rule assigning each household an enforceable maximum number of births.",
+        "A service offering confidential counseling and freely chosen contraception without birth penalties."
+      ],
+      "correctIndex": 3,
+      "explanation": "The distinction concerns the means as well as the demographic aim. Offering information and voluntarily chosen services can help people avoid unintended births without assigning a compulsory household quota. Policies seeking fewer births can differ greatly in consent, enforcement and social consequences; the common demographic aim does not make the instruments equivalent. A: A penalty above a ceiling enforces a quota rather than relying only on voluntary services. B: A required birth permit imposes state authorization on the decision. C: An enforceable household maximum is a quota. D: The specified voluntary service pursues the goal without a compulsory birth allocation."
+    },
+    {
+      "id": "hug-2-7-007",
+      "prompt": "A youthful population’s fertility falls after a voluntary family-planning expansion, but births still exceed deaths. Which explanation best accounts for continued population growth without assuming the program failed?",
+      "options": [
+        "A fall in fertility means the death count must fall to zero.",
+        "Population momentum can sustain many births as large young cohorts enter childbearing ages.",
+        "Fertility decline automatically creates enough immigrants to offset all deaths.",
+        "The total population must stop growing the year fertility falls."
+      ],
+      "correctIndex": 1,
+      "explanation": "The age structure matters in addition to fertility per woman. Large cohorts entering childbearing ages can produce many births even at lower fertility, so births may continue to exceed deaths. This population momentum prevents a simple inference that continued growth proves no behavioral change occurred. Migration is not needed to explain the stated birth–death balance. A: Lower fertility does not imply the disappearance of deaths. B: This links cohort size to birth counts and distinguishes fertility decline from immediate stabilization. C: There is no automatic one-for-one connection between fertility change and migration. D: A change in fertility does not instantly replace the existing age structure or balance births and deaths."
+    },
+    {
+      "id": "hug-2-7-008",
+      "prompt": "A hypothetical country relaxes a long-standing birth ceiling after small cohorts have reached working age. Why might this change take many years to affect the number of new adult workers?",
+      "options": [
+        "Every newborn immediately enters the adult labor force.",
+        "Changing a law instantly enlarges cohorts already born.",
+        "Any additional births must age before entering adult working ages.",
+        "A birth-policy change directly determines the current number of retired immigrants."
+      ],
+      "correctIndex": 2,
+      "explanation": "A policy change can influence future births without changing the birth years of people already alive. Any additional newborns require years to enter adult working ages, so a current small-worker-cohort problem cannot be reversed instantly through new births alone. Actual fertility responses and future labor participation still require evidence. A: Newborns are not adult workers. B: Existing cohort sizes are not retrospectively increased by new birth rules. C: This identifies the cohort lag between a possible birth response and adult entry. D: The rule does not directly set the count of already retired migrants."
+    },
+    {
+      "id": "hug-2-7-009",
+      "prompt": "In one year, a hypothetical country has 30,000 births and 36,000 deaths. Net migration is +10,000 under a new admissions program. What is the population-accounting result?",
+      "options": [
+        "A decline of 6,000, because migration cannot alter population size.",
+        "An increase of 10,000, because births and deaths cancel automatically.",
+        "A decline of 16,000, because immigrants are subtracted from natural change.",
+        "An increase of 4,000, because net immigration more than offsets natural decrease."
+      ],
+      "correctIndex": 3,
+      "explanation": "Natural change is 30,000−36,000=−6,000. Adding net migration of +10,000 yields total change of +4,000. This shows how immigration can offset natural decrease in the specified year. It does not establish that the program changes fertility or that every admitted person joins the labor force. A: This omits the positive migration balance from total change. B: The natural balance is negative rather than zero, so the full migration gain is not the total gain. C: The positive migration balance is added, not subtracted. D: This preserves both the negative natural component and the larger positive migration component."
+    },
+    {
+      "id": "hug-2-7-010",
+      "prompt": "A national admissions program brings new residents mainly to two metropolitan areas. Which local planning response most directly addresses this spatial concentration?",
+      "options": [
+        "Allocate every municipality identical additional housing capacity regardless of arrivals.",
+        "Use settlement patterns to assess housing, transport and service demand in the receiving cities.",
+        "Assume national admissions totals establish that each neighborhood has the same needs.",
+        "Remove city-level monitoring because national authorization eliminates local impacts."
+      ],
+      "correctIndex": 1,
+      "explanation": "A national policy can create uneven local effects when settlement is concentrated. Receiving cities need evidence about where people live and which housing, transport and services they can access. This is a scale-and-distribution problem: a national total is insufficient to distribute local capacity without spatial information. A: Equal allocations ignore the stated concentration and may not match demand. B: This uses the actual geography of settlement to evaluate likely local needs. C: Neighborhood needs cannot be inferred as identical from a country total. D: National authority over admissions does not eliminate housing or service consequences in cities."
+    },
+    {
+      "id": "hug-2-7-011",
+      "prompt": "Births rise for one year after a temporary child bonus and fall the next year. Which additional evidence best distinguishes shifted birth timing from an increase in completed family size?",
+      "options": [
+        "Only the amount of the bonus in the first year.",
+        "Only the total land area of the country.",
+        "The same cohorts’ childbearing histories over a longer period.",
+        "Only the first year’s birth count, repeated without later observations."
+      ],
+      "correctIndex": 2,
+      "explanation": "A short-lived rise can reflect births occurring earlier rather than additional births over a cohort’s lifetime. Following the same cohorts for longer helps distinguish timing changes from changes in completed childbearing. Such evidence still requires careful evaluation of other influences if the goal is to estimate a causal policy effect. A: The incentive amount does not reveal whether births were brought forward from later years. B: Land area does not measure cohort timing or completed family size. C: A cohort history can show whether the early rise was offset by fewer births later. D: Repeating the initial observation adds no information about subsequent compensating changes."
+    }
+  ]
+}

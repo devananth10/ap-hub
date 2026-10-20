@@ -1,0 +1,144 @@
+{
+  "topicNumber": "2.7",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "39b1ffad3038a4c869db7e31696b179b0219ba508ac2b7823f79d75c3c65072b",
+  "scopeReview": "SPS-2.A.1: intentions and effects of pronatalist, antinatalist and immigration policies. All scenarios hypothetical; no legal advice or claims of current national policy. Consent/instrument distinctions, cohort lags, age composition and spatial implementation are explicit.",
+  "varietyReview": "Classification table, observational comparison line chart, access map, admissions chart and signed accounting. Other applied tasks distinguish intent/effect, voluntary versus quota instruments, momentum, lag, local planning and timing versus completed family size. All five skills and varied keys/difficulty.",
+  "repetitionReview": "Prior demographic accounting is now applied to policy components; no existing item is reused. The two evaluation tasks differ: background trends confound causal attribution, whereas cohort histories address tempo versus lifetime totals. No numerical-only duplicate.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.unfpa.org/swp2025"
+  ],
+  "referenceNote": "Curriculum scope and policy/agency context checked from primary institutions. Original hypothetical scenarios and arithmetic; no copied questions, survey statistics or third-party catalog additions. Automated review is not independent human review.",
+  "questions": [
+    {
+      "questionId": "hug-2-7-001",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "A seeks fewer births, B seeks more births, and C changes immigration admissions.",
+      "independentReview": "Read the explicit stated goals rather than inferring policy intention from an assumed effect: A fewer unintended births; B more births; C worker entries. Kept migration policy distinct from natality policy.",
+      "check": {
+        "type": "policy-instruments"
+      },
+      "questionSha256": "c542c8fb6855ce535596422c599f06e6e9cd0bcdb5f00d639a299f1ce022214c",
+      "stimulusSha256": "0c138954a42c6991c683c11443d94b77f9facfdd4e8e363a26da58c5e41d4c8f"
+    },
+    {
+      "questionId": "hug-2-7-002",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "The shared decline means P’s change alone does not establish a causal effect of the package.",
+      "independentReview": "Computed P change−0.6 and Q−0.7; endpoint difference+0.1. Did not equate difference-in-changes with a proven causal effect absent comparable trends/assignment. The supported inference is a limit on attribution.",
+      "check": {
+        "type": "policy-comparison"
+      },
+      "questionSha256": "33a0f4af884e2b866e86329364535ca812ca009833840ecd83bb0f20bc1671bd",
+      "stimulusSha256": "47e293216b7a500e6cdad6127695bc3525f033ebbf2f653983c556af4721e75c"
+    },
+    {
+      "questionId": "hug-2-7-003",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "A uniform national rule can coexist with unequal local access to participating services.",
+      "independentReview": "Compared district access percentages80/70/30/20 while holding eligibility rules fixed. No household denominator or fertility outcomes are supplied, so neither absolute coverage counts nor causal birth changes follow.",
+      "check": {
+        "type": "policy-access"
+      },
+      "questionSha256": "11c716f763e429ea61aa83a69df6b8b50afd5eecaebe414217ec836a4dc8debd",
+      "stimulusSha256": "f8f2cc6286b0e844fa802c48519d870a4580fb27c10c864ee97371f8b0bf0ee8"
+    },
+    {
+      "questionId": "hug-2-7-004",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Plan B admits 90% of entrants at ages 15–64, compared with 80% under A.",
+      "independentReview": "Summed A100+800+100=1000 and B100+1800+100=2000; recomputed working-age shares.8/.9. The correct comparison concerns admissions age composition only, not realized employment.",
+      "check": {
+        "type": "policy-admission-ages"
+      },
+      "questionSha256": "335b03d34962d19cb8a4fad57870263e0b3a178163fb444547c95c15367995bf",
+      "stimulusSha256": "28929e361f757f47bf45a1e494144b4d970331ca8f838905eb5704b7eadca677"
+    },
+    {
+      "questionId": "hug-2-7-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "It is pronatalist in intent, but the eventual fertility response must be evaluated.",
+      "independentReview": "Used the explicit objective as the classification criterion. Checked that supporting employment is compatible with a pronatalist aim and that neither legal eligibility nor an incentive guarantees individual fertility changes.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "dbfff2f7d319703fa047a43190eeeb36bd91618d63e293df1aef02a18df45ada"
+    },
+    {
+      "questionId": "hug-2-7-006",
+      "skill": "Source Analysis",
+      "difficulty": "foundational",
+      "correctOption": "A service offering confidential counseling and freely chosen contraception without birth penalties.",
+      "independentReview": "Compared actual instruments, not merely fewer-birth intentions: A–C impose enforcement/permission constraints; D explicitly preserves voluntary decisions without penalties. Avoided treating antinatalist as synonymous with coercive.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "6e9fa58a6a250d0f4eba2ff2075d4d6691bc5aaa290ce9151459587132eb66e0"
+    },
+    {
+      "questionId": "hug-2-7-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Population momentum can sustain many births as large young cohorts enter childbearing ages.",
+      "independentReview": "Kept fertility per woman distinct from the number of women/cohort size. The specified positive natural change is compatible with lower fertility and a youthful structure; no invented migration balance or immediate stationarity is required.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "c54c7a103371dd5bbac34d00ffb7cca896eb6c942d0eb05591aeba3a297ffd14"
+    },
+    {
+      "questionId": "hug-2-7-008",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Any additional births must age before entering adult working ages.",
+      "independentReview": "Applied the fixed passage of cohorts through ages: new births cannot change current adult cohort counts. Distinguished a possible long-run labor-supply contribution from a guaranteed immediate policy effect.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "082552dbe61b1c0ad09feaf48daa1da52c03335bdf6c2ec66fc1ef45eb67c349"
+    },
+    {
+      "questionId": "hug-2-7-009",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "An increase of 4,000, because net immigration more than offsets natural decrease.",
+      "independentReview": "Independently calculated30000−36000+10000=4000. Signed components checked separately; no assumption that the immigration program raises births or determines employment.",
+      "check": {
+        "type": "policy-migration-balance",
+        "births": 30000,
+        "deaths": 36000,
+        "netMigration": 10000
+      },
+      "questionSha256": "1d1973ae270bbe1ad94e6765d9fbfffad7f589cad86fe42ab6c2bac4fc429538"
+    },
+    {
+      "questionId": "hug-2-7-010",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Use settlement patterns to assess housing, transport and service demand in the receiving cities.",
+      "independentReview": "Tracked the mismatch between national admission counts and concentrated urban settlement. Local demand assessment follows the supplied spatial distribution; no blanket claim about migrants’ needs or effects on every neighborhood is made.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "feee2c41d53e0aacc04862ecec47a88989d1e35ca8b69d5728ffbfd02144fa59"
+    },
+    {
+      "questionId": "hug-2-7-011",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "The same cohorts’ childbearing histories over a longer period.",
+      "independentReview": "Distinguished period birth counts from cumulative cohort fertility. Longer cohort histories address tempo versus completed family size; this is not the same as the separate observational control-trend question and does not by itself identify causation.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d8ecf5768aae65693cc650c8acca7b5975c84ac8d0516ea846e79f102436307b"
+    }
+  ]
+}

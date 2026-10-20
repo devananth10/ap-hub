@@ -1,0 +1,144 @@
+{
+  "topicNumber": "2.8",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "a2ed56753a52ca0f48142f8ebbe205e6f136cabd1e3736e20e8a46254eafaa5a",
+  "scopeReview": "SPS-2.B.1–2: changing education, work, health, contraception and social/political roles influence fertility, mortality and migration. Ravenstein treated as contextual historical tendencies, never biological restrictions. No stereotypes, individual prescriptions or universal fertility targets.",
+  "varietyReview": "District association, migration sex shares, time-use composition and maternal mortality denominator; applied mechanisms cover schooling/marriage, voluntary spacing, independent migration, rural/urban barriers, representation and complementary care policies. All five skills, mixed difficulty and varied keys.",
+  "repetitionReview": "New questions focus on changing women’s roles rather than repeating policy definitions. Cohort timing appears only as a mechanism for early childbearing, not a repeat of2.7 policy-tempo evaluation. Paid/unpaid composition and live-birth denominators introduce distinct quantitative reasoning.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://genderdata.worldbank.org/en/data-stories/adolescent-fertility",
+    "https://www.unfpa.org/swp2025",
+    "https://academic.oup.com/jrsssa/article/48/2/167/7089412"
+  ],
+  "referenceNote": "Primary curriculum/institutional research and Ravenstein publication identity checked; original hypothetical numbers and scenarios. No historical quotations or real-country statistical claims copied. No third-party resources added to the student catalog; no independent human review claimed.",
+  "questions": [
+    {
+      "questionId": "hug-2-8-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Higher completion percentages are associated with lower adolescent birth rates across these districts.",
+      "independentReview": "Sorted completion30/60/90 and paired rates80/50/20, confirming a strict inverse association. Denominators for counts and confounding variables are absent; no individual or causal conclusion is justified.",
+      "check": {
+        "type": "women-education-pattern"
+      },
+      "questionSha256": "7f4f225505fef7ac87674aae03892c3e02bcf5f1cb2e28d9037d9f24360bc171",
+      "stimulusSha256": "1d1e407427a69d25d2d2ed0c053024901b8d28cee3ea662aa918736ad73d19b4"
+    },
+    {
+      "questionId": "hug-2-8-002",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Women are 60% of internal migrants but 40% of international migrants in this sample.",
+      "independentReview": "Independently computed600/(600+400)=.6 and200/(200+300)=.4. Historical tendencies are context-dependent, not biological restrictions or claims that women cannot move internationally.",
+      "check": {
+        "type": "women-migration-shares"
+      },
+      "questionSha256": "d2d58822ccc402fe055bfd4f3529b942c12fc8d43e0e32f9f0c04501141c2e87",
+      "stimulusSha256": "1a53682216733e8d57ea101567c7e24c84e5a96c2d82b7e2813378aef541c951"
+    },
+    {
+      "questionId": "hug-2-8-003",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Equal total work time can coexist with a large difference in the division between paid work and unpaid care.",
+      "independentReview": "Summed4+6=10 and8+2=10; verified paid-hour gap4 and unpaid-care gap4 in opposite directions. Kept time allocation separate from wages, preferences and a causal explanation.",
+      "check": {
+        "type": "women-time-use"
+      },
+      "questionSha256": "27db08ed2573ab21da08a6d6e0d6cf3d245fbea3ab62743a5f93d52e5f2d8f12",
+      "stimulusSha256": "7b0e8ab8146aaa883787ed740e638c1386c844661bb6adf786ab246e00efeb5b"
+    },
+    {
+      "questionId": "hug-2-8-004",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "The ratio falls from 800 to 300 per 100,000 live births; the chart alone does not isolate the cause.",
+      "independentReview": "Independently scaled80/10000×100000=800 and30/10000×100000=300. Both periods use live births, not total residents. The inference is a measured ratio decline, not a treatment effect or medical recommendation.",
+      "check": {
+        "type": "women-maternal-ratios",
+        "liveBirths": 10000
+      },
+      "questionSha256": "118cf31fc79a86dbfa9d3eb15085771169e0a238dbf1fe4762e4e722e720a285",
+      "stimulusSha256": "3a52ffcdff51809716d12eb71c9c26c0586d179f308237fc377a7a038b36bbdc"
+    },
+    {
+      "questionId": "hug-2-8-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Later marriage can delay first births and reduce exposure to early childbearing.",
+      "independentReview": "Checked the mechanism between continued schooling, marriage timing and early births against institutional research. Delayed first births are a conditional pathway, not proof of a fixed reduction in lifetime births or immediate population decline.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "3797987e97f25860c739c8b9dd669b6ce490b382fdf0e7fd027a7074f7862c33"
+    },
+    {
+      "questionId": "hug-2-8-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Greater ability to space or avoid unintended births in line with individual intentions.",
+      "independentReview": "Identified the direct mechanism of the specified voluntary service: enabling desired spacing/avoidance. Avoided universal fertility targets, medical instructions or claims that access alone guarantees zero unintended pregnancies.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "70f6b7eb7ccce5dcc31b55d0c455f990e4157995cc622eaeae6b978236ce27fa"
+    },
+    {
+      "questionId": "hug-2-8-007",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Test them against changing opportunities and observed flows rather than treating them as permanent restrictions.",
+      "independentReview": "Used the supplied causal opportunity—direct skilled-job recruitment—to interpret changing female migration roles. Historical patterns do not logically prohibit new flows; no universal reversal or exclusion of male migration is inferred.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "c7d044a6739a42f7a8fe909a92b43af09b6a6d1ccfa73cb4b468c92b31b6c6ae"
+    },
+    {
+      "questionId": "hug-2-8-008",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Compare rural and urban employment, care responsibilities and access to services.",
+      "independentReview": "Identified the missing within-country dimensions explicitly described: rural/urban location, transport and care. Disaggregated analysis avoids ecological inference while preserving variation within each category.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "94a29620d6893e0e1d28292b03ffc2aa105ffc78ab5f2283cb20cd6f49794f20"
+    },
+    {
+      "questionId": "hug-2-8-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Greater influence over service priorities can improve access relevant to maternal survival.",
+      "independentReview": "Separated political agency, resource allocation and a potential mortality pathway. The question tests demographic mechanisms, not a medical prediction or a claim that political representation mechanically sets outcomes.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "45d3ab24387472a5f6314b1ef70f18ed8cebef82f4e89fb865b63e886b1f472e"
+    },
+    {
+      "questionId": "hug-2-8-010",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Employment conditions, care support, health access and social values can modify the relationship.",
+      "independentReview": "Held one national indicator similar while allowing other relevant conditions to differ. A multicausal interpretation explains nonidentical outcomes without dismissing education or imposing identical individual choices.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "7e907d7ae1af3a6329244decb040fdd666d12a4d7c33fa832c32b3e3120082ca"
+    },
+    {
+      "questionId": "hug-2-8-011",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Reducing care constraints can support women’s employment and reproductive choices without requiring everyone to choose fewer births.",
+      "independentReview": "Checked the distinction between enabling choices and enforcing fewer births. Complementary work/care arrangements can relax constraints; no single fertility direction or guaranteed labor response is asserted.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "6301c2e9537d6baf6196a5d54f432f73cfc557acd365ff02eb35563a23a559d5"
+    }
+  ]
+}

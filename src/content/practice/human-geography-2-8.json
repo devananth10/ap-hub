@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 2,
+  "topicId": "topic-2-8",
+  "questions": [
+    {
+      "id": "hug-2-8-001",
+      "prompt": "Which interpretation of the district education and adolescent-birth data is supported?",
+      "options": [
+        "Every secondary-school graduate in C has fewer children than every nongraduate in A.",
+        "Higher completion percentages are associated with lower adolescent birth rates across these districts.",
+        "The table isolates the causal effect of schooling from income and health-service access.",
+        "District C must have the largest number of adolescent births because its completion percentage is highest."
+      ],
+      "correctIndex": 1,
+      "explanation": "Across A, B and C, secondary completion rises from 30% to 60% to 90%, while adolescent birth rates fall from 80 to 50 to 20 per 1,000. This is an inverse district-level association. The observations do not establish individual outcomes or isolate schooling from other influences such as income, marriage patterns and health-service access. A: An aggregate comparison cannot establish a universal ordering of individuals’ childbearing. B: This describes the pattern shown without treating the association as an experiment. C: No controls or assignment information isolate a causal schooling effect. D: The number of births also requires the number of adolescents; the highest completion percentage does not establish it."
+    },
+    {
+      "id": "hug-2-8-002",
+      "prompt": "The hypothetical migration table resembles one historical Ravenstein tendency. Which statement describes its sex composition without treating that tendency as a universal rule?",
+      "options": [
+        "Women are a majority in both migration categories.",
+        "Men account for 60% of internal migrants and 40% of international migrants.",
+        "No women migrate internationally in the observations.",
+        "Women are 60% of internal migrants but 40% of international migrants in this sample."
+      ],
+      "correctIndex": 3,
+      "explanation": "Internal migrants total 1,000: 600 women and 400 men. International migrants total 500: 200 women and 300 men. Thus women’s shares are 60% and 40%. This sample resembles a historical contrast in sex composition by migration scope, but changing work opportunities and social conditions can yield other patterns; the table is not a universal law of individual behavior. A: Women are a majority internally but a minority internationally in this sample. B: These are women’s shares, not men’s; men’s shares are 40% and 60%. C: The table includes 200 women among international migrants. D: Both shares use the proper category total and retain the limited scope of the evidence."
+    },
+    {
+      "id": "hug-2-8-003",
+      "prompt": "What does the daily time-use table reveal that comparing total work hours alone would conceal?",
+      "options": [
+        "Equal total work time can coexist with a large difference in the division between paid work and unpaid care.",
+        "Women have two more hours of total work than men in this sample.",
+        "Men do no unpaid care because they have more paid hours.",
+        "The table establishes that women prefer unpaid care and do not want paid employment."
+      ],
+      "correctIndex": 0,
+      "explanation": "Both averages total ten hours, but women’s average is four paid plus six unpaid, while men’s is eight paid plus two unpaid. Equal totals therefore conceal different allocations and potentially different earnings and time constraints. The table does not identify preferences, wage rates or the causes of the unequal allocation. A: This preserves equal totals while identifying the different paid/unpaid composition. B: Both totals equal ten, so the stated total-hour difference is incorrect. C: Men average two hours of unpaid care, not zero. D: Observed time allocation alone does not establish freely chosen preferences or lack of employment aspirations."
+    },
+    {
+      "id": "hug-2-8-004",
+      "prompt": "Both periods have 10,000 live births. Which conclusion correctly uses the maternal-death counts in the chart?",
+      "options": [
+        "The maternal mortality ratio rises because service coverage rises.",
+        "The later maternal mortality ratio is 30 deaths per 100,000 live births.",
+        "The ratio falls from 800 to 300 per 100,000 live births; the chart alone does not isolate the cause.",
+        "Maternal deaths are eliminated in the later period."
+      ],
+      "correctIndex": 2,
+      "explanation": "With the same 10,000 live-birth denominator, 80 maternal deaths correspond to 800 per 100,000 and 30 correspond to 300 per 100,000. The decline is compatible with improved health conditions, but the two counts alone do not isolate any particular intervention. A maternal mortality ratio is not an all-population death rate or a direct measure of life expectancy. A: The maternal-death count falls, and no service-coverage series is plotted to establish its cause. B: Thirty is the count; scaling a denominator of 10,000 to 100,000 multiplies it by ten. C: Both scaled ratios and the limitation on causal attribution are correct. D: Thirty deaths remain; a reduction does not mean elimination."
+    },
+    {
+      "id": "hug-2-8-005",
+      "prompt": "A region expands secondary-school access and more young women delay marriage while completing education. Which demographic pathway is most plausible, without assuming identical outcomes for everyone?",
+      "options": [
+        "The total population must decline immediately because marriage is later.",
+        "Later marriage can delay first births and reduce exposure to early childbearing.",
+        "Secondary schooling changes births only by increasing infant mortality.",
+        "Every student must ultimately have exactly one fewer child."
+      ],
+      "correctIndex": 1,
+      "explanation": "Continuing education can change the timing of marriage, opportunities and reproductive decisions. In the specified scenario, later marriage plausibly delays first births and reduces early childbearing. This pathway is conditional: completed family size, migration and total population growth depend on other factors and need not change identically for all students. A: A timing change does not by itself establish total births, deaths, migration or immediate population decline. B: This connects the supplied marriage timing to a plausible childbearing pathway. C: The scenario supplies no increase in infant mortality or such an exclusive mechanism. D: An aggregate opportunity change cannot assign an identical completed family-size change to every individual."
+    },
+    {
+      "id": "hug-2-8-006",
+      "prompt": "A clinic begins offering voluntarily chosen contraception to people who want to postpone pregnancy. Which demographic effect is most directly linked to that service?",
+      "options": [
+        "A required increase in births among every person using the clinic.",
+        "Automatic elimination of all deaths during childbirth.",
+        "A direct change in the country’s immigration admission quota.",
+        "Greater ability to space or avoid unintended births in line with individual intentions."
+      ],
+      "correctIndex": 3,
+      "explanation": "Access to voluntarily chosen contraception can help people act on their preferred timing and number of births. The service described addresses unintended or mistimed pregnancy rather than enforcing a universal family size. Availability, effective use and personal intentions affect actual outcomes; it does not determine every other demographic component. A: People seeking postponement are not being required to increase births. B: The service does not guarantee the elimination of mortality or replace all other health care. C: Immigration admissions are a separate policy mechanism. D: This matches the service to reproductive timing and agency without treating every person’s goal as identical."
+    },
+    {
+      "id": "hug-2-8-007",
+      "prompt": "A growing export-service center recruits women directly for skilled jobs, and some women migrate there independently. How should a geographer use older sex-based migration generalizations in this case?",
+      "options": [
+        "Test them against changing opportunities and observed flows rather than treating them as permanent restrictions.",
+        "Reject the observations because women cannot be independent economic migrants.",
+        "Assume every woman moving to the city must be accompanying a male household member.",
+        "Infer that no men can migrate to a city employing women."
+      ],
+      "correctIndex": 0,
+      "explanation": "Migration generalizations summarize patterns found in particular contexts. Changing employment opportunities and social roles can alter who moves, where and for what reasons. The supplied direct recruitment and independent migration should inform analysis rather than be discarded to preserve an old stereotype. A: This treats empirical generalizations as testable and sensitive to changing circumstances. B: The scenario explicitly documents independent female economic migration. C: That explanation contradicts the supplied independent moves and imposes an unsupported motive. D: Recruitment of women does not exclude men from all migration flows."
+    },
+    {
+      "id": "hug-2-8-008",
+      "prompt": "A national report shows rising women’s paid employment, but rural women still face long journeys to jobs and limited childcare. Which additional analysis would best reveal these differences?",
+      "options": [
+        "Apply the national average to every household without checking local conditions.",
+        "Exclude unpaid care because it cannot affect time available for paid employment.",
+        "Compare rural and urban employment, care responsibilities and access to services.",
+        "Use only the country’s total population to infer every woman’s work schedule."
+      ],
+      "correctIndex": 2,
+      "explanation": "National averages can conceal differences in access and time constraints. Comparing employment with transport, childcare and care responsibilities at rural and urban scales can reveal barriers that one aggregate indicator misses. Such disaggregation describes variation without assuming that every woman in either setting has the same experience. A: Assigning an aggregate average to each household hides the specified inequalities. B: Unpaid care can constrain available time even though it is not counted as paid work. C: This combines the relevant spatial and social dimensions needed to investigate the reported contrast. D: A total population count supplies neither employment access nor individual schedules."
+    },
+    {
+      "id": "hug-2-8-009",
+      "prompt": "More women participate in local government and secure funding for maternity services in previously underserved settlements. Which demographic connection is most direct?",
+      "options": [
+        "Political representation automatically fixes every household’s preferred family size.",
+        "New services change only international migration and cannot affect mortality.",
+        "Representation alone establishes an exact future population growth rate.",
+        "Greater influence over service priorities can improve access relevant to maternal survival."
+      ],
+      "correctIndex": 3,
+      "explanation": "Changing political roles can influence where services are funded and who can access them. In this scenario the direct link is from participation to maternity-service access, which is relevant to maternal survival. Actual mortality outcomes still require evidence about quality, use and other conditions; representation does not itself determine exact demographic rates. A: Political participation does not assign a uniform reproductive preference to every household. B: Maternity-service access is relevant to health and mortality, not solely border movement. C: Population growth requires births, deaths and migration information that representation alone does not provide. D: This traces the supplied institutional pathway without guaranteeing a numerical health outcome."
+    },
+    {
+      "id": "hug-2-8-010",
+      "prompt": "Two countries have similar women’s educational attainment but different fertility rates. Which explanation is most consistent with a geographic analysis of demographic change?",
+      "options": [
+        "Education is irrelevant in every country because one indicator does not explain everything.",
+        "Employment conditions, care support, health access and social values can modify the relationship.",
+        "Matching education necessarily means the fertility data contain an error.",
+        "All women with the same qualification must make the same reproductive decisions."
+      ],
+      "correctIndex": 1,
+      "explanation": "Demographic behavior reflects interacting opportunities, constraints and social contexts. Similar educational attainment does not make work conditions, health access, care support or personal intentions identical. Education can matter without being a single-variable rule that uniquely determines fertility in every place. A: Failure to explain all variation does not make an influential factor universally irrelevant. B: This allows multiple contextual influences and avoids treating education as a deterministic formula. C: The rates can differ legitimately when other conditions differ. D: People with the same qualification need not share intentions, circumstances or behavior."
+    },
+    {
+      "id": "hug-2-8-011",
+      "prompt": "A city expands affordable childcare and shared parental leave so that people can combine paid employment with the families they want. Which interpretation best fits this policy pathway?",
+      "options": [
+        "Reducing care constraints can support women’s employment and reproductive choices without requiring everyone to choose fewer births.",
+        "Supporting paid employment necessarily requires a ban on all future births.",
+        "Only women without children can benefit from care services.",
+        "An increase in childcare capacity fixes the city’s fertility rate at one exact value."
+      ],
+      "correctIndex": 0,
+      "explanation": "Employment and desired family formation need not be treated as mutually exclusive. Care services and shared leave can reduce time and financial constraints, allowing a wider range of choices. The direction and size of an aggregate fertility response depend on intentions and circumstances rather than a compulsory universal reduction in births. A: This identifies the constraint-reduction pathway and respects varied individual goals. B: The scenario supports combining roles rather than prohibiting childbearing. C: Parents needing care support are directly among potential beneficiaries. D: Service capacity alone does not determine an exact demographic rate."
+    }
+  ]
+}

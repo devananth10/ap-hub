@@ -2743,5 +2743,317 @@
       }
     ],
     "max": 20
+  },
+  "hug-2-7-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Three policy instruments and their stated aims",
+    "description": "Hypothetical policies A–C. The statements describe intentions, not measured effects.",
+    "caption": "Original policy scenarios; no actual country’s laws are represented. Classification depends on each stated aim and mechanism.",
+    "headers": [
+      "Policy",
+      "Instrument",
+      "Stated aim"
+    ],
+    "rows": [
+      [
+        "A",
+        "Voluntary family planning",
+        "Reduce unintended births"
+      ],
+      [
+        "B",
+        "Child bonus",
+        "Encourage births"
+      ],
+      [
+        "C",
+        "Worker admission permits",
+        "Increase worker immigration"
+      ]
+    ]
+  },
+  "hug-2-7-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "display": "line",
+    "title": "Fertility trends with and without a package",
+    "description": "Hypothetical P fertility values3,2.8,2.4; Q3,2.7,2.3 births per woman. A fertility-support package began only in P after the first observation.",
+    "caption": "Equal observation intervals. Observational data only; regions were not randomly assigned and other changes are not controlled. No exact causal effect can be read from the lines alone.",
+    "unitLabel": "Births per woman (period TFR)",
+    "categories": [
+      "Before",
+      "Year 2",
+      "Year 4"
+    ],
+    "series": [
+      {
+        "label": "P: package",
+        "values": [
+          3,
+          2.8,
+          2.4
+        ]
+      },
+      {
+        "label": "Q: no package",
+        "values": [
+          3,
+          2.7,
+          2.3
+        ]
+      }
+    ],
+    "max": 4
+  },
+  "hug-2-7-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "Access under uniform subsidy eligibility",
+    "description": "Hypothetical eligible households within30 minutes of a participating childcare center:NW80%,NE70%,SW30%,SE20%. Eligibility rules are the same nationally.",
+    "caption": "Access percentages do not give household totals or observed fertility effects. Districts are schematic, not real places.",
+    "unitLabel": "Eligible households within 30 minutes (%)",
+    "regions": [
+      {
+        "label": "NW",
+        "value": 80,
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            0,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "NE",
+        "value": 70,
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            50,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "SW",
+        "value": 30,
+        "polygon": [
+          [
+            0,
+            30
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "SE",
+        "value": 20,
+        "polygon": [
+          [
+            50,
+            30
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ],
+    "bins": [
+      {
+        "min": 0,
+        "max": 50,
+        "label": "Under 50%"
+      },
+      {
+        "min": 50,
+        "max": 101,
+        "label": "50–100%"
+      }
+    ]
+  },
+  "hug-2-7-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Age composition of planned admissions",
+    "description": "Hypothetical plan A admissions:ages0–14 100,15–64 800,65+100. Plan B:100,1800,100. Values are people, not percentages or employed-worker counts.",
+    "caption": "All admitted people fall into these three mutually exclusive age groups. Working age does not establish employment. Original scenarios, not real-country plans.",
+    "unitLabel": "People admitted",
+    "categories": [
+      "0–14",
+      "15–64",
+      "65+"
+    ],
+    "series": [
+      {
+        "label": "Plan A",
+        "values": [
+          100,
+          800,
+          100
+        ]
+      },
+      {
+        "label": "Plan B",
+        "values": [
+          100,
+          1800,
+          100
+        ]
+      }
+    ],
+    "max": 2000
+  },
+  "hug-2-8-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Education and adolescent birth rates",
+    "description": "Hypothetical districts A,B,C have women’s secondary completion30%,60%,90% and adolescent birth rates80,50,20 per1000 girls ages15–19 per year.",
+    "caption": "Comparable one-time district observations. No individual records, adolescent population totals or controls for other influences are supplied.",
+    "headers": [
+      "District",
+      "Secondary completion (%)",
+      "Births per 1000 ages15–19"
+    ],
+    "rows": [
+      [
+        "A",
+        "30",
+        "80"
+      ],
+      [
+        "B",
+        "60",
+        "50"
+      ],
+      [
+        "C",
+        "90",
+        "20"
+      ]
+    ]
+  },
+  "hug-2-8-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Sex composition by migration scope",
+    "description": "Hypothetical internal migration:600 women,400 men. International migration:200 women,300 men. Each person appears in one category during the observation period.",
+    "caption": "Original sample; counts do not establish causes or a universal migration rule. Internal means within the country, international means across its border.",
+    "headers": [
+      "Migration scope",
+      "Women",
+      "Men"
+    ],
+    "rows": [
+      [
+        "Internal",
+        "600",
+        "400"
+      ],
+      [
+        "International",
+        "200",
+        "300"
+      ]
+    ]
+  },
+  "hug-2-8-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Paid work and unpaid care time",
+    "description": "Hypothetical daily averages among sampled working-age adults: women4 paid hours and6 unpaid care hours; men8 paid and2 unpaid. Categories do not overlap.",
+    "caption": "Original sample averages, not every individual’s schedule. No wages, preferences or causes of time allocation are provided.",
+    "headers": [
+      "Group",
+      "Paid hours/day",
+      "Unpaid care hours/day"
+    ],
+    "rows": [
+      [
+        "Women",
+        "4",
+        "6"
+      ],
+      [
+        "Men",
+        "8",
+        "2"
+      ]
+    ]
+  },
+  "hug-2-8-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Maternal-death counts with equal birth totals",
+    "description": "Hypothetical maternal deaths:Earlier80,Later30. Each comparable period records10000 live births. No particular intervention is assigned by the data.",
+    "caption": "Counts use a consistent maternal-death definition. Compute ratios using live births; this is not an all-population mortality rate or medical advice.",
+    "unitLabel": "Maternal deaths (count)",
+    "categories": [
+      "Earlier",
+      "Later"
+    ],
+    "series": [
+      {
+        "label": "Maternal deaths",
+        "values": [
+          80,
+          30
+        ]
+      }
+    ],
+    "max": 100
   }
 }

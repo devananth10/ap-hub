@@ -1,5 +1,9 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 2.7–2.8
+
+165 MCQs across fifteen topics are published;60 meaningful stimuli (36.36%) and66 explicit numerical/geometry checks. New policy questions distinguish intent, instrument, local access, migration composition, causal attribution and cohort timing. Women/demographic-change questions interpret education associations, contextual migration sex shares, paid/unpaid care and maternal mortality ratios using live births. All139 tests, TypeScript/build, Geography scopes and standard smoke checks pass. Every new answer was graded in two full browser sessions, each11/11. All eight stimuli were inspected at390×844 with readable tables, legends and chart units. Existing question/resource objects and storage are unchanged. No independent human review is claimed. Next2.9; full bank unfinished.
+
 ## Human Geography Topic 2.6 — Malthusian theory and critiques
 
 143 MCQs across thirteen topics are published;52 meaningful stimuli (36.36%) and57 explicit numerical/geometry checks. New evidence includes crossing demand/supply lines, changing growth rates, a productivity table and the first proportional-symbol map. Circle areas, not radii, encode food per resident. Independent accounting distinguishes sufficient aggregate food from East's400-unit deficit without transfers, and gross harvest from usable food after losses. Historical checks do not label mortality as morally beneficial or attribute modern contraceptive advocacy to Malthus.

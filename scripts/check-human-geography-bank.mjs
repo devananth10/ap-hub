@@ -76,6 +76,15 @@ export function verifyGeographyQuestion(question,review,stimulus){
   case 'malthus-distribution':{assert.equal(stimulus.mapType,'proportional');const values=stimulus.points.map(p=>p.value),pop=review.check.populations;assert.deepEqual(values,[2,.2]);assert.deepEqual(pop,[1000,500]);assert.equal(values.reduce((sum,n,i)=>sum+n*pop[i],0),2100);assert.equal(pop.reduce((a,b)=>a+b,0),1500);assert.equal(pop[1]*(1-values[1]),400);assert.equal(values[0]/values[1],10);assert.equal(question.correctIndex,2);break;}
   case 'malthus-changing-growth':{const [demand,supply]=stimulus.series.map(s=>s.values);assert.deepEqual(demand.slice(1).map((n,i)=>n-demand[i]),[2,1,0]);assert.ok(demand.every((n,i)=>n<supply[i]));assert.notEqual(demand[1]/demand[0],demand[2]/demand[1]);assert.equal(question.correctIndex,1);break;}
   case 'malthus-food-loss':{const c=review.check;assert.deepEqual(c.losses.map(n=>c.harvest-n),[700,900]);assert.deepEqual(c.losses.map(n=>c.harvest-n-c.requirement),[-100,100]);assert.equal(question.correctIndex,0);break;}
+  case 'policy-instruments':assert.deepEqual(stimulus.rows.map(row=>row[2]),['Reduce unintended births','Encourage births','Increase worker immigration']);assert.equal(question.correctIndex,2);break;
+  case 'policy-comparison':{const [p,q]=stimulus.series.map(s=>s.values);assert.deepEqual(p,[3,2.8,2.4]);assert.deepEqual(q,[3,2.7,2.3]);assert.ok(p.at(-1)<p[0]&&q.at(-1)<q[0]);assert.ok(Math.abs((p.at(-1)-p[0])-(q.at(-1)-q[0])-.1)<1e-9);assert.equal(question.correctIndex,0);break;}
+  case 'policy-access':assert.deepEqual(stimulus.regions.map(r=>r.value),[80,70,30,20]);assert.equal(question.correctIndex,3);break;
+  case 'policy-admission-ages':{assert.deepEqual(stimulus.categories,['0–14','15–64','65+']);const totals=stimulus.series.map(s=>s.values.reduce((a,b)=>a+b,0));assert.deepEqual(totals,[1000,2000]);assert.deepEqual(stimulus.series.map((s,i)=>s.values[1]/totals[i]),[.8,.9]);assert.equal(question.correctIndex,1);break;}
+  case 'policy-migration-balance':assert.equal(review.check.births-review.check.deaths+review.check.netMigration,4000);assert.equal(question.correctIndex,3);break;
+  case 'women-education-pattern':{const rows=stimulus.rows;assert.deepEqual(rows.map(r=>Number(r[1])),[30,60,90]);assert.deepEqual(rows.map(r=>Number(r[2])),[80,50,20]);assert.equal(question.correctIndex,1);break;}
+  case 'women-migration-shares':{assert.deepEqual(stimulus.rows.map(r=>Number(r[1])/(Number(r[1])+Number(r[2]))),[.6,.4]);assert.equal(question.correctIndex,3);break;}
+  case 'women-time-use':{assert.deepEqual(stimulus.rows.map(r=>Number(r[1])+Number(r[2])),[10,10]);assert.deepEqual(stimulus.rows.map(r=>r.slice(1).map(Number)),[[4,6],[8,2]]);assert.equal(question.correctIndex,0);break;}
+  case 'women-maternal-ratios':assert.deepEqual(stimulus.series[0].values.map(n=>n/review.check.liveBirths*100000),[800,300]);assert.equal(question.correctIndex,2);break;
   case 'reasoning':break;
   default:throw Error('Unknown verification model: '+review.check.type);
  }

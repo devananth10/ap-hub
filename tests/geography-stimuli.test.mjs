@@ -147,3 +147,17 @@ test('Malthusian models reject false crossings and supply totals; proportional s
  }
  const html=render(geographyStimuli[batch.questions[2].id]);const radii=[...html.matchAll(/data-point="[^"]+" data-value="([^"]+)"[^>]* r="([^"]+)"/g)].map(m=>Number(m[2]));assert.equal(radii.length,2);assert.ok(Math.abs((radii[0]/radii[1])**2-10)<1e-9);assert.ok(html.includes('y="56.5"'));assert.ok(html.includes('0.2 units/person'));
 });
+
+test('policy checks distinguish explicit aims, background trends, local access and admissions age shares',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-2-7.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-2-7.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[0][2]='Encourage births'],[1,s=>s.series[1].values[2]=3],[2,s=>s.regions[3].value=80],[3,s=>s.series[1].values[1]=800]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+
+test('women and demographic-change checks retain aggregate scope, migration denominators and unpaid care',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-2-8.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-2-8.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[2][2]='90'],[1,s=>s.rows[1][1]='600'],[2,s=>s.rows[0][2]='0'],[3,s=>s.series[0].values[1]=80]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
