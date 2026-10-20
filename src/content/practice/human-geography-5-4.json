@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 5,
+  "topicId": "topic-5-4",
+  "questions": [
+    {
+      "id": "hug-5-4-001",
+      "prompt": "Using the table, which statement correctly distinguishes land productivity from labor productivity after the farming changes?",
+      "options": [
+        "Yield per hectare tripled, while output per worker rose 50%.",
+        "Yield per hectare rose 50%, while output per worker tripled.",
+        "Both measures doubled because the number of workers fell.",
+        "Output per worker fell because fewer workers remained in farming."
+      ],
+      "correctIndex": 1,
+      "explanation": "Yield per hectare rises from 600/300=2 to 900/300=3 tonnes, a 50% increase. Output per worker rises from 600/60=10 to 900/30=30 tonnes, a threefold increase. The same production change can therefore produce different land- and labor-productivity changes; the denominators must remain distinct. A: This reverses the land and labor results. B: This correctly divides output by the unchanged land area and the reduced workforce. C: Neither measure doubles: one rises by half and the other triples. D: A smaller workforce producing more output raises, rather than lowers, output per worker."
+    },
+    {
+      "id": "hug-5-4-002",
+      "prompt": "Both indices equal 100 initially. What is the change in the food-output-per-person ratio by the later period?",
+      "options": [
+        "It falls 20%, because population also increases.",
+        "It rises 50%, matching the total food-output index alone.",
+        "It stays unchanged because both indices rise.",
+        "It rises 20%, since 150/125=1.20 relative to the initial ratio."
+      ],
+      "correctIndex": 3,
+      "explanation": "Initially the index ratio is 100/100=1. Later it is 150/125=1.2, which is 20% higher. Output growing faster than population can increase food available per person at an aggregate level. The comparison does not show household access, diet diversity, prices, losses or individual health outcomes. A: Population growth reduces the gain compared with total output growth, but does not make the ratio fall here. B: This ignores the 25% growth in the population denominator. C: The indices grow by different proportions, so their ratio changes. D: This calculates the relative per-person change correctly without equating it to measured nutrition."
+    },
+    {
+      "id": "hug-5-4-003",
+      "prompt": "Records state that the same two holders farm these parcels before and after reorganization. Which spatial change is most directly visible?",
+      "options": [
+        "Scattered strips have been consolidated into contiguous holdings, which can reduce movement between a holder’s plots.",
+        "A new independent domestication hearth has formed at the field boundary.",
+        "All residents have necessarily migrated permanently to the factory district.",
+        "The diagram demonstrates that every former common-rights user received equal compensation."
+      ],
+      "correctIndex": 0,
+      "explanation": "Before reorganization, A’s and B’s narrow strips alternate. Afterward, each holder has a contiguous block. Consolidation can make movement and coordinated farming easier, but ownership records, access rights and social outcomes require further evidence. The sketch does not establish universal benefits or a particular household’s migration. A: This follows the alternating-strip versus contiguous-block geometry and states a possible operational effect. B: Changing parcel organization does not establish plant or animal domestication. C: A parcel diagram does not track residents’ decisions or employment destinations. D: Neither compensation nor the treatment of common rights is represented."
+    },
+    {
+      "id": "hug-5-4-004",
+      "prompt": "Assume these matched trial plots differ only in planting method. Which interpretation of the seed drill is supported by the supplied evidence?",
+      "options": [
+        "It guarantees the same yield gain on all soils and in every historical period.",
+        "It creates a new domesticated crop species in one planting season.",
+        "More even seed placement is associated with better establishment and higher yield in this trial.",
+        "It lowers the number of plants established because it uses the same number of seeds."
+      ],
+      "correctIndex": 2,
+      "explanation": "Each trial plot receives 1000 viable seeds, but 800 establish with row placement versus 600 with broadcasting. Yield is also higher in the row-placement treatment. Under the stated matching assumption, improved planting method is a plausible mechanism for greater output. The trial does not guarantee identical gains everywhere or demonstrate a new domestication event. A: A local matched trial cannot establish universal performance across environments. B: Planting an existing seed differently is not the origin of a new domesticated species. C: This connects the controlled method contrast with both supplied outcomes. D: Equal seeds sown does not require equal establishment; the table shows more established plants with the drill."
+    },
+    {
+      "id": "hug-5-4-005",
+      "prompt": "Which set of developments best characterizes the second agricultural revolution rather than the initial origins of agriculture or the twentieth-century Green Revolution?",
+      "options": [
+        "The first transition from collecting wild plants to domesticating crop populations.",
+        "The widespread adoption of twentieth-century high-yield cereal packages with chemical inputs.",
+        "Improved crop rotations, selective livestock breeding and farming equipment associated with rising productivity during industrialization.",
+        "The invention of agriculture by modern satellite navigation systems."
+      ],
+      "correctIndex": 2,
+      "explanation": "The second agricultural revolution is associated with major improvements in methods, breeding and equipment that increased output and labor productivity around the era of industrialization. Initial domestication belongs to an earlier transformation; the Green Revolution refers to later high-yield crop and input packages. These broad phases overlap geographically and did not occur everywhere at the same time. A: Initial domestication describes an earlier agricultural transformation. B: This identifies the later Green Revolution rather than the second agricultural revolution. C: This combines the relevant method, biological and equipment changes without assigning one universal start date. D: Satellite navigation is a recent precision-farming technology, not the origin of agriculture."
+    },
+    {
+      "id": "hug-5-4-006",
+      "prompt": "A rotation replaces a bare-fallow year with clover that supplies fodder. More livestock can be kept through winter, and manure is returned to fields. Which relationship helps explain increased production?",
+      "options": [
+        "Crop and livestock management become linked through feed and nutrient recycling.",
+        "Growing fodder removes every need to manage soil fertility.",
+        "The introduction of one forage crop means all soil types now have identical yields.",
+        "Livestock can supply manure only if crop farming disappears."
+      ],
+      "correctIndex": 0,
+      "explanation": "Fodder crops can support animals, while manure can return nutrients and organic matter to cultivated land. This links crop and livestock systems and can reduce unproductive fallow under suitable management. It does not eliminate nutrient losses, create identical soils or guarantee that every rotation is appropriate in every setting. A: This identifies the two-way connection described in the scenario. B: Fertility still depends on nutrient balances, soil conditions and management. C: Crop choice does not erase differences in soils or climate. D: Mixed crop–livestock systems can retain both production activities."
+    },
+    {
+      "id": "hug-5-4-007",
+      "prompt": "A region’s farms can produce the same food output with fewer workers. Nearby factories are expanding, but access to jobs varies. Which conclusion is best supported?",
+      "options": [
+        "Every displaced worker will immediately obtain a secure factory job.",
+        "Farm labor productivity must have fallen because fewer people work on farms.",
+        "Rural-to-urban migration has become physically impossible.",
+        "Agricultural change can release labor for other sectors, while actual migration and employment depend on additional conditions."
+      ],
+      "correctIndex": 3,
+      "explanation": "Producing the same output with fewer workers indicates higher output per worker and can make labor available for industry. Whether individuals move or find employment also depends on wages, housing, transport, rights and hiring. The general link to industrialization does not imply identical or immediate outcomes for all households. A: Available labor does not ensure job access or security for every person. B: Output per worker rises when output is unchanged and worker numbers fall. C: The scenario supplies no barrier making migration impossible. D: This states the structural labor link while preserving the distinction between availability and actual employment."
+    },
+    {
+      "id": "hug-5-4-008",
+      "prompt": "Why would evidence of increased total food output alone be insufficient to establish that diets improved for every household?",
+      "options": [
+        "Total output and household nutrition are always the same measurement.",
+        "Food access, purchasing power, distribution and diet composition can differ among households.",
+        "Nutrition depends only on national land area, not on food access.",
+        "Higher output rules out any possibility of lower food prices."
+      ],
+      "correctIndex": 1,
+      "explanation": "Greater production can support better diets, but aggregate supply is not the same as actual consumption by each household. Income, food prices, distribution, losses and the mix of available foods influence access and nutrition. A historical tendency toward improved diets therefore should not be interpreted as universal benefit proved by one output total. A: Production and nutrition measure different things at different scales. B: These mediating factors explain why a regional output gain is insufficient for a universal household claim. C: Land area alone cannot determine how much or what a household can eat. D: Supply growth can affect prices, but its exact price effect is not fixed by the statement."
+    },
+    {
+      "id": "hug-5-4-009",
+      "prompt": "An archive contains a farmer’s equipment inventory, crop-output accounts and records of field consolidation. Which additional comparison would best assess whether labor productivity changed?",
+      "options": [
+        "Comparable output and agricultural work-hours before and after the changes.",
+        "The decorative style of the farmhouse before and after the changes.",
+        "The number of pages in each inventory without their contents.",
+        "A modern photograph of the nearest city skyline alone."
+      ],
+      "correctIndex": 0,
+      "explanation": "Labor productivity compares output with labor input, so consistent output and work-hour records can estimate the change. Equipment and consolidation records help describe possible mechanisms, but they do not replace the relevant denominator. A causal attribution would require further comparison with other changing conditions. A: This supplies both the output numerator and a comparable labor-input denominator. B: Architectural style does not measure farm labor input. C: Document length is not evidence of agricultural productivity. D: A city skyline does not supply the farm’s output or labor use."
+    },
+    {
+      "id": "hug-5-4-010",
+      "prompt": "Two districts have access to the same improved implement. One has affordable credit and repair services; the other lacks both. Why might adoption differ?",
+      "options": [
+        "The implement’s availability guarantees identical adoption regardless of financing.",
+        "The district with lower adoption must lie outside every possible agricultural climate.",
+        "Financial and service networks can influence whether farmers can acquire and maintain new technology.",
+        "Low adoption proves that no one in that district understands farming."
+      ],
+      "correctIndex": 2,
+      "explanation": "An implement can be physically available yet difficult to purchase or keep operating. Credit, maintenance, scale, expected returns and risk can influence adoption. Uneven access helps explain why agricultural innovations did not transform all places or households in the same way or at the same pace. A: Availability is only one part of feasible adoption. B: The supplied contrast concerns services and finance, not a demonstrated climate barrier. C: This connects the stated institutional differences to the practical costs of adoption. D: A constraint on resources is not evidence of ignorance or cultural inferiority."
+    },
+    {
+      "id": "hug-5-4-011",
+      "prompt": "A student claims that the second agricultural revolution alone caused all increases in life expectancy during industrialization. Which revision is most defensible?",
+      "options": [
+        "Food production can have no relationship to population health under any circumstances.",
+        "One regional harvest account proves the same health gain in every country.",
+        "All changes in life expectancy must be attributed exclusively to new farm machinery.",
+        "More reliable food supplies could contribute to improved diets and longevity, alongside sanitation, disease conditions and other changes."
+      ],
+      "correctIndex": 3,
+      "explanation": "Agricultural improvements can contribute to better food supplies, diets and longer lives, but historical population health has multiple influences. Sanitation, disease exposure, public health and living conditions can also change. The defensible explanation recognizes the curriculum’s broad relationship without making an exclusive or universal causal claim. A: This dismisses a plausible food-supply connection rather than correcting the overclaim. B: A regional production record cannot establish a universal health effect. C: Machinery is only one possible part of agricultural change and not the only influence on longevity. D: This retains a plausible contribution while allowing other relevant causes."
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "topicNumber": "5.3",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "59c150181856e55fec94f99ad8afbe777bc5b721845727ff57c7862787f7c077",
+  "scopeReview": "SPS-5.A.1 and SPS-5.B.1: selected Fertile Crescent, Indus, Southeast Asian and Central American hearth locations; domestication versus cultivation, historical evidence, later diffusion, Columbian transfers and local adaptation. No contested exact single-site dates or crop-specific Southeast Asian origin asserted.",
+  "varietyReview": "Four meaningful original stimuli: projected broad-hearth map, bidirectional Atlantic crop-flow sketch, chronological/lineage evidence table and two-district adoption line chart. Four deterministic evidence checks plus multistage selection, livestock movement and origin/range source tasks; varied keys and all five skills.",
+  "repetitionReview": "Different demands locate regions, follow crop-specific arrowheads, evaluate historical evidence and compare adoption trajectories. Later application items separate origin, movement, local selection and evidence limits. No existing questions overwritten or copied; difficulty is a design judgment, not empirical calibration.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://repository.si.edu/items/2c81c62c-6108-4d95-9bb5-bf81a534ae11/full",
+    "https://home.nps.gov/articles/latinothemefood.htm"
+  ],
+  "referenceNote": "Primary maize research and institutional food-history scholarship verified broad origin/transfer facts only. All outlines, timelines and adoption figures are original schematic or explicitly hypothetical data, not copied research results. No source added to the student resource library and no human review claimed.",
+  "questions": [
+    {
+      "questionId": "hug-5-3-001",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "B: Fertile Crescent; C: Indus River Valley",
+      "independentReview": "Independently projected approximate regional coordinates: A95°W18°N, B40°E35°N, C70°E28°N, D105°E15°N. These broad teaching markers match the CED hearth inventory; no exact excavation site, current border, exclusive crop origin or precise distance is asserted.",
+      "check": {
+        "type": "origins-hearth-positions"
+      },
+      "questionSha256": "1730ceb2032c9ee2cc9a163f2e8755a8595c65b9985dc15ed5fe08cb11712412",
+      "stimulusSha256": "539cfc46b4aa94dd3073067196354cea1f7d2a97e3431d8ee219361e624c868a"
+    },
+    {
+      "questionId": "hug-5-3-002",
+      "skill": "Spatial Relationships",
+      "difficulty": "foundational",
+      "correctOption": "Maize spread from the Americas toward Afro-Eurasia, while wheat moved toward the Americas.",
+      "independentReview": "Verified maize American origin and Old World wheat introduction using NPS food-history scholarship and primary maize research. Arrowheads independently checked eastward for maize and westward for wheat. Diagram is an aggregate teaching summary, not a claim about one ship or the first use of every route.",
+      "check": {
+        "type": "origins-columbian-directions"
+      },
+      "questionSha256": "6d880a26422527434c807580acee4ca0ed3118dcee6350a9698ba63cee0b0560",
+      "stimulusSha256": "f4d8bb619f50a04e039b94b9b0683b90a6eda1413c034104eb7e03cfb4fd9f57"
+    },
+    {
+      "questionId": "hug-5-3-003",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "An early domestication region near P followed by diffusion to Q and R is consistent with the combined evidence.",
+      "independentReview": "Recomputed8500>6000>4000 years before present, so P is earliest, not latest. Hypothetical shared-lineage evidence is explicitly assumed, not an invented archaeological discovery. Earliest preserved remains alone would not conclusively prove an origin; the correct option says consistent rather than proven.",
+      "check": {
+        "type": "origins-archaeological-sequence"
+      },
+      "questionSha256": "e017776608d03281ef8a400a6f7732128881d58eb3984b14349764d55b7fd778",
+      "stimulusSha256": "8be9490a38a8f5fced066440ec8bce16645000fe195527ad18f115aa06eb629d"
+    },
+    {
+      "questionId": "hug-5-3-004",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Exchange contacts can help spread an already domesticated crop, although the comparison does not isolate every cause.",
+      "independentReview": "Independently calculated75 versus15 percentage-point increases and60-point final gap. Both begin5; supply and physical comparability are stated. The correct conclusion is an association with contact, not a controlled causal estimate, climate diagnosis or new hearth.",
+      "check": {
+        "type": "origins-contact-adoption"
+      },
+      "questionSha256": "f1670ffb8e716f8a97df132883f65f25bca9638fe6b61d86c51b589d912c161e",
+      "stimulusSha256": "76fdc49e17d0e570b7ed0454d6e54bd0054b85b23e87459ec22ce0665bc82afc"
+    },
+    {
+      "questionId": "hug-5-3-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Domestication through human selection of inherited traits useful in cultivation.",
+      "independentReview": "Separated an inherited population change across repeated planting from merely collecting wild plants or one season of growth. No unsupported requirement of total dependence on humans or a single instantaneous domestication event is introduced.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "5900e91dae55605b4193f0239e4377c54725065db43770c6dc7c0a9502842a68"
+    },
+    {
+      "questionId": "hug-5-3-006",
+      "skill": "Spatial Relationships",
+      "difficulty": "foundational",
+      "correctOption": "South Asia, especially the region of present-day Pakistan and adjacent northwestern India.",
+      "independentReview": "Cross-checked the CED’s named Indus hearth against geographic regional location. Modern countries are used only for orientation; neither present sovereignty nor an exact ancient border is inferred.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "4b7c0ee3e225493c7980e1caba9acc223d250a3132dae729b5836f4fb0a6153e"
+    },
+    {
+      "questionId": "hug-5-3-007",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Dated early plant remains combined with evidence about wild relatives and inherited lineages.",
+      "independentReview": "Primary maize research combines archaeological, microfossil and genetic evidence. The task selects relevant evidence, not a claim that one fossil definitively locates all domestication or that modern largest-producer statistics have been verified.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "aefbb5311f74c2a1a15a268c590c04c6f7b5de7bcd0204e0aab658a65e54eeff"
+    },
+    {
+      "questionId": "hug-5-3-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "Its original domestication history remains American, while later diffusion and local selection broaden its cultivation.",
+      "independentReview": "Checked temporal logic: original domestication precedes the stated transfer; receiving-region selection follows it. No specific disputed crop date, direction or independent-origin assertion is needed.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "0be6feea97b5b31d09a335b2ea415a0bf80df13587a63e4dc48bbe12fa7b2841"
+    },
+    {
+      "questionId": "hug-5-3-009",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Previously separated regional plant and animal assemblages became more connected through sustained intercontinental transfers.",
+      "independentReview": "Verified the term applies to postcontact intercontinental exchange, not a claim that the continents had no earlier internal diffusion. Avoided specific mortality estimates, universal benefit claims or unsupported exclusivity.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "ab8014133339bda1b7a739031994ce6b87ae39f073bd91237b6baa015c5ecdf8"
+    },
+    {
+      "questionId": "hug-5-3-010",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Relocation carrying livestock, followed by expansion through exchange among existing households.",
+      "independentReview": "Checked that stages are distinct in the stem: settlers relocate first; neighboring recipients remain. Exchange of breeding animals supports expansion but does not imply contagious disease or an exact domestication date.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "19e37fe11785d65cec3a2159e311d24d11b48ae8b4369055edaca09b8e5ba409"
+    },
+    {
+      "questionId": "hug-5-3-011",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Each later cultivation zone independently domesticated the crop rather than receiving it through diffusion.",
+      "independentReview": "Evaluated evidence type rather than assuming diffusion or independent origins from presence alone. The correct option is the only one demanding a historical inference not supplied by the described distribution map.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "6f2cf017909558e6aadc5ee936ee0a47f57f6ab884b9700a0419a8fa943522d2"
+    }
+  ]
+}

@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 5.3–5.4
+
+451 original MCQs across41 topics are published, eleven each;164 meaningful stimuli (36.36%) and179 explicit evidence/numerical/geometry checks. Origins/Diffusions adds original continental hearth and crop-transfer sketches, historical-evidence comparison and adoption trends. Second Agricultural Revolution separates land/labor productivity, relative food per person, spatial consolidation and a matched seed-placement trial. All four options receive explanations; facts and causal limits are recorded in topic QA.
+
+All167 tests, structural/evidence checks, TypeScript, production build, all68 Geography scopes and standard preview routes passed. Both full browser sessions scored11/11; all eight stimuli inspected at390×844, plus the parcel map on desktop in light mode. Optional map label anchors retain old defaults and reject invalid positions. Alternating strip labels were staggered after mobile inspection. Initial sandbox-only file/network permission failures were resolved by rerunning with approved local access; no preview restart. Existing checkpoint content, stimuli and approved catalog were compared semantically; student storage untouched. Next5.5;27 topics/297 questions remain. Automated checks do not constitute human review or empirical difficulty calibration.
+
 ## Human Geography Topics 5.1–5.2
 
 429 original MCQs across39 topics are published, eleven each;156 meaningful stimuli (36.36%) and171 explicit evidence/numerical/geometry checks. Introduction to Agriculture separates climate constraints, total versus per-hectare inputs, seasonal grazing and whole-cycle fallow land. Rural Settlement/Survey Methods uses four original maps to separate residential concentration, linear frontage, a partial rectangular survey and a deed-referenced parcel.

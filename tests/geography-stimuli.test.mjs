@@ -16,6 +16,22 @@ const compiled=ts.transpileModule(readFileSync('src/components/geography-stimulu
  .replaceAll('"@/lib/geography-stimuli"',JSON.stringify(new URL('../src/lib/geography-stimuli.ts',import.meta.url).href));
 const {StimulusContent,GeographyStimulus}=await import('data:text/javascript;base64,'+Buffer.from(compiled).toString('base64'));
 const render=stimulus=>renderToStaticMarkup(createElement(StimulusContent,{stimulus}));
+test('optional map label anchors preserve old defaults and reject invalid coordinates',()=>{
+ const s=structuredClone(geographyStimuli['hug-1-1-001']);s.regions[0].labelPoint=[18,12];validateGeographyStimulus(s);assert.ok(render(s).includes(`x="${40+18*3.8}" y="${35+12*3.3}" text-anchor="middle">NW: 80`));
+ for(const point of [[-1,12],[18,61],[NaN,12],[18],[18,12,5]]){s.regions[0].labelPoint=point;assert.throws(()=>validateGeographyStimulus(s),/label position/);}
+});
+test('origin evidence rejects reversed transfers, displaced hearths, altered dates and adoption totals',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-5-3.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-5-3.json','utf8'));
+ for(const [i,change] of [[0,s=>s.points[1].x=20],[1,s=>s.paths[0].points.reverse()],[2,s=>s.rows[0][1]='3000'],[3,s=>s.series[1].values[2]=80]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+test('second-revolution evidence checks denominators, relative indices, actual strip geometry and trial results',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-5-4.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-5-4.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[1][3]='60'],[1,s=>s.series[1].values[1]=150],[2,s=>s.regions[1].polygon[0][0]=5],[3,s=>s.rows[1][2]='600']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
 const base={title:'TEST ONLY',description:'Original hypothetical test data; not a published question.',caption:'TEST ONLY',hypothetical:true,attribution:'Original PrepAtlas schematic and synthetic data'};
 const chart={...base,kind:'chart',unitLabel:'People (thousands)',categories:['A','B'],series:[{label:'Year 1',values:[25,50]},{label:'Year 2',values:[50,75]}],max:100};
 const pyramid={...base,kind:'pyramid',unitLabel:'People (thousands)',max:100,cohorts:[{label:'0–14',ageStart:0,ageEnd:14,male:50,female:50},{label:'15–64',ageStart:15,ageEnd:64,male:75,female:75},{label:'65+',ageStart:65,ageEnd:null,male:25,female:25}]};

@@ -5,7 +5,7 @@ type Base = { title: string; description: string; caption: string; hypothetical:
 export type MapStimulus = Base & {
   kind: "map"; mapType: "choropleth" | "dot" | "reference" | "flow" | "isoline" | "proportional";
   unitLabel: string;
-  regions: { label: string; polygon: number[][]; value?: number }[];
+  regions: { label: string; polygon: number[][]; value?: number; labelPoint?: number[] }[];
   bins?: { min: number; max: number; label: string }[];
   points?: Point[]; dots?: {x:number;y:number}[];
   paths?: { label: string; points: number[][]; arrow?: boolean; value?: number }[];
@@ -35,6 +35,7 @@ export function validateGeographyStimulus(stimulus: GeographyStimulus) {
   if (stimulus.kind === "map") {
     if (!["choropleth","dot","reference","flow","isoline","proportional"].includes(stimulus.mapType) || !stimulus.unitLabel || !stimulus.regions.length) fail("map type, legend and regions required");
     for (const region of stimulus.regions) if (!region.label || region.polygon.length < 3 || !coords(region.polygon)) fail("invalid region geometry");
+    for (const region of stimulus.regions) if (region.labelPoint !== undefined && !coords([region.labelPoint,region.labelPoint])) fail("invalid region label position");
     if (new Set(stimulus.regions.map(r => r.label)).size !== stimulus.regions.length) fail("duplicate regions");
     if (stimulus.bins) {
       if (!stimulus.bins.length || stimulus.bins.length > 5) fail("one to five map bins required");

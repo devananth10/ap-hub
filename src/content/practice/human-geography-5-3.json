@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 5,
+  "topicId": "topic-5-3",
+  "questions": [
+    {
+      "id": "hug-5-3-001",
+      "prompt": "Which pairing correctly identifies two of the early agricultural hearth regions marked on the map?",
+      "options": [
+        "A: Fertile Crescent; B: Central America",
+        "C: Southeast Asia; D: Indus River Valley",
+        "B: Fertile Crescent; C: Indus River Valley",
+        "A: Indus River Valley; D: Central America"
+      ],
+      "correctIndex": 2,
+      "explanation": "B lies in Southwest Asia near the Fertile Crescent, while C lies farther east in the Indus region of South Asia. A marks the Mesoamerican/Central American hearth region, and D marks Southeast Asia. These broad hearth regions do not imply that every crop or animal in a region was first domesticated at one exact point. A: A is in the Americas, not Southwest Asia, and B is not in Central America. B: C and D reverse the South Asian and Southeast Asian locations. C: Both identifications agree with the approximate regional positions. D: The Indus is in South Asia; Central America is not at D in Southeast Asia."
+    },
+    {
+      "id": "hug-5-3-002",
+      "prompt": "The arrows summarize two crop transfers after sustained transatlantic contact began in 1492. Which interpretation correctly connects the directions with agricultural diffusion?",
+      "options": [
+        "Maize spread from the Americas toward Afro-Eurasia, while wheat moved toward the Americas.",
+        "Both crops were domesticated in the Atlantic Ocean and spread outward.",
+        "Wheat moved toward Afro-Eurasia, while maize first entered the Americas from Europe.",
+        "The arrows show where the largest harvests occur today rather than transfers between regions."
+      ],
+      "correctIndex": 0,
+      "explanation": "The Columbian Exchange included crops moving in both directions: American maize entered Afro-Eurasian farming systems, while wheat was introduced to the Americas from the Old World. Movement can greatly expand a crop’s growing range without relocating its original domestication history. A: This follows both supplied arrowheads and the historically supported crop transfers. B: The ocean was a route of movement, not the depicted domestication center. C: This reverses both crop directions and maize’s American origin. D: The graphic depicts movements, not present-day production quantities or rankings."
+    },
+    {
+      "id": "hug-5-3-003",
+      "prompt": "Assume the dates are reliable and the later domesticated remains share a distinctive inherited crop lineage with P. Which interpretation best fits the evidence?",
+      "options": [
+        "R is the most likely hearth because its evidence is the most recent.",
+        "The modern country with the greatest output must be the original hearth.",
+        "The same dates demonstrate three independent domestications without movement.",
+        "An early domestication region near P followed by diffusion to Q and R is consistent with the combined evidence."
+      ],
+      "correctIndex": 3,
+      "explanation": "P has the earliest domesticated remains, relevant wild relatives and a lineage also found later at Q and R. Together these observations support a possible origin near P and subsequent spread. They are stronger than modern output alone, although incomplete preservation or new discoveries could refine the reconstruction. A: Recent evidence records later presence, not priority of domestication. B: Present output reflects later environmental, economic and technological conditions. C: The dates differ and the shared lineage supports connection rather than establishing independent origins. D: This uses chronology, wild relatives and lineage evidence together while retaining appropriate uncertainty."
+    },
+    {
+      "id": "hug-5-3-004",
+      "prompt": "The same introduced seed is available in both districts, which have comparable rainfall and soils. What does the adoption pattern most directly suggest?",
+      "options": [
+        "The seed was independently domesticated in each district at year 20.",
+        "Exchange contacts can help spread an already domesticated crop, although the comparison does not isolate every cause.",
+        "The low-contact district must have a physically unsuitable climate because adoption is lower.",
+        "The crop’s original hearth has moved to whichever district reaches 80% adoption."
+      ],
+      "correctIndex": 1,
+      "explanation": "Adoption rises from 5% to 80% where seed-sharing contacts are frequent and from 5% to 20% where they are limited. With similar stated soils and rainfall, the association is consistent with social networks facilitating crop diffusion. Other factors such as costs or preferences would still need investigation before claiming a unique cause. A: Adopting an existing domesticated seed is not a new independent domestication event. B: This connects the contrasting adoption changes to contact while respecting the study’s limits. C: Comparable physical conditions were supplied; lower adoption alone does not diagnose climatic failure. D: A later high adoption share does not change where domestication began."
+    },
+    {
+      "id": "hug-5-3-005",
+      "prompt": "Farmers repeatedly keep seeds from plants whose ripe seeds remain attached instead of scattering before harvest. Across generations, the inherited trait becomes more common. Which process is illustrated?",
+      "options": [
+        "Relocation diffusion, because every farmer necessarily moves to another continent.",
+        "Commercialization, because inherited seed traits can change only through export sales.",
+        "Foraging, because human decisions have no effect on the next generation.",
+        "Domestication through human selection of inherited traits useful in cultivation."
+      ],
+      "correctIndex": 3,
+      "explanation": "Repeatedly selecting and replanting inherited traits can change a managed plant population over generations. Seed retention is useful for harvesting and illustrates a domestication pathway. Domestication need not require modern genetic engineering, long-distance migration or sale in export markets. A: No human relocation is described, even though crops can later travel with people. B: Selection may occur in household farming as well as commercial systems. C: The scenario explicitly connects human seed choice with changing inherited traits. D: This identifies the multigenerational selection process described rather than a later diffusion route."
+    },
+    {
+      "id": "hug-5-3-006",
+      "prompt": "A research poster places the Indus River Valley among the early hearth regions. In which broad present-day geographic area should its marker be placed?",
+      "options": [
+        "South Asia, especially the region of present-day Pakistan and adjacent northwestern India.",
+        "The central Andes of western South America.",
+        "The Mediterranean coast of southwestern Europe.",
+        "The Caribbean island arc east of Central America."
+      ],
+      "correctIndex": 0,
+      "explanation": "The Indus drainage and associated early farming regions lie in South Asia. Present-day Pakistan and adjacent northwestern India provide a useful broad orientation. Modern national boundaries did not define ancient domestication processes, and the regional hearth label does not assign every local crop an exclusive origin. A: This is the appropriate broad South Asian location. B: The Andes are a different important agricultural region in the Americas. C: Southwestern Europe is far west of the Indus system. D: The Caribbean is in the Americas rather than South Asia."
+    },
+    {
+      "id": "hug-5-3-007",
+      "prompt": "A student argues that maize must have first been domesticated in the country with the largest maize harvest today. Which evidence would best test the historical-origin claim?",
+      "options": [
+        "A list of current supermarket maize prices in capital cities.",
+        "The current shipping capacity of the country’s largest port.",
+        "Dated early plant remains combined with evidence about wild relatives and inherited lineages.",
+        "The present number of people employed in grain exporting."
+      ],
+      "correctIndex": 2,
+      "explanation": "A domestication-origin claim concerns past biological and cultural processes, so dated archaeological remains and lineage evidence are directly relevant. Modern trade, prices and output can reflect diffusion and later economic advantages. They do not by themselves identify the earliest domestication region. A: Current retail prices can describe markets but do not date domestication. B: Shipping capacity concerns later transport networks rather than early selection history. C: These independent lines of historical and biological evidence can evaluate an origin hypothesis. D: Export employment may follow modern production and cannot establish ancient priority."
+    },
+    {
+      "id": "hug-5-3-008",
+      "prompt": "After crossing the Atlantic, an American crop is adopted in several Old World regions and selected for local growing seasons. Which statement best distinguishes origin, diffusion and adaptation?",
+      "options": [
+        "Its hearth becomes every region that develops a locally useful variety.",
+        "Its original domestication history remains American, while later diffusion and local selection broaden its cultivation.",
+        "Local selection shows that no interregional seed movement took place.",
+        "Diffusion requires the crop to grow equally well in every receiving environment."
+      ],
+      "correctIndex": 1,
+      "explanation": "Domestication history identifies early processes, diffusion tracks movement and adoption, and adaptation can occur as farmers select traits suited to receiving environments. These processes can be connected without being identical. A locally adapted variety is not evidence that the crop originated independently there. A: Later variety development does not automatically establish a separate initial domestication hearth. B: This keeps the three processes distinct while allowing them to interact. C: Local selection can follow transported seed and does not negate diffusion. D: Environmental differences can constrain adoption or encourage further selection."
+    },
+    {
+      "id": "hug-5-3-009",
+      "prompt": "Which comparison accurately summarizes a broad geographic change associated with the Columbian Exchange?",
+      "options": [
+        "Previously separated regional plant and animal assemblages became more connected through sustained intercontinental transfers.",
+        "Agricultural species stopped moving between places once ocean crossings began.",
+        "Every receiving population experienced identical benefits from each introduced species.",
+        "All crops grown in the Americas after 1492 had originally been domesticated in Europe."
+      ],
+      "correctIndex": 0,
+      "explanation": "Sustained contact linked previously separated biogeographic and agricultural systems through transfers in several directions. Outcomes varied, including new food options and disruptive land-use and social changes. Describing connection does not imply equal benefits, the disappearance of indigenous crops or the absence of earlier regional diffusion. A: This identifies the broad increase in intercontinental connections without claiming universal outcomes. B: The exchange expanded transfers rather than ending them. C: Consequences depended on power, land use, disease and local circumstances. D: Many crops in post 1492 American agriculture had long indigenous domestication histories."
+    },
+    {
+      "id": "hug-5-3-010",
+      "prompt": "In a hypothetical valley, settlers carry domesticated goats to a new village. Neighboring households later obtain breeding animals without moving their homes. Which sequence best describes these two stages?",
+      "options": [
+        "Independent domestication followed by the disappearance of agricultural diffusion.",
+        "Stimulus diffusion without any transported animals, followed by migration of all households.",
+        "Reverse hierarchy from cities to villages, followed by the initial invention of herding.",
+        "Relocation carrying livestock, followed by expansion through exchange among existing households."
+      ],
+      "correctIndex": 3,
+      "explanation": "The first stage transports domesticated animals with migrating people, fitting relocation diffusion. In the second, the practice and breeding stock spread to people who remain in place, an expansion process through exchange. Neither stage requires a fresh independent domestication event. A: Both stages explicitly involve already domesticated livestock and their spread. B: The first stage includes transported animals, while the second specifies households staying. C: No city-size hierarchy or first invention of herding is supplied. D: This matches the contrast between moving carriers and adoption by established neighbors."
+    },
+    {
+      "id": "hug-5-3-011",
+      "prompt": "A regional map shows an ancient domestication hearth, several later cultivation zones and modern trade routes. Which inference requires additional evidence beyond this map?",
+      "options": [
+        "Cultivation can occur outside the mapped hearth.",
+        "Modern trade can connect more than one cultivation region.",
+        "Each later cultivation zone independently domesticated the crop rather than receiving it through diffusion.",
+        "The hearth and current cultivated range describe different geographic features."
+      ],
+      "correctIndex": 2,
+      "explanation": "A distribution map can show where cultivation occurs and how places connect, but independent domestication is a historical and biological claim. It requires suitable archaeological and lineage evidence. A crop can spread far from a hearth, so multiple cultivation regions do not by themselves establish multiple independent origins. A: The later zones outside the hearth directly support this modest spatial observation. B: The depicted routes provide evidence of present connections. C: This moves from spatial presence to an unsupported independent-origin claim. D: The two mapped categories already distinguish origin from later distribution."
+    }
+  ]
+}

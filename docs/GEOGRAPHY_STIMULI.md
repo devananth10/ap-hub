@@ -119,3 +119,8 @@ Both full browser sessions graded11/11; all eight actual mobile stimuli inspecte
 All22 new answers graded11/11 in full sessions; all eight stimuli inspected at390×844. Council labels moved above the source nodes, and hierarchy labels use above/left/right/below positions, with exact rendered coordinates and invalid-value rejection tested. Existing diagram defaults unchanged. Neutral headings replace conclusion-suggesting titles for2.6 demand,3.2 seasonal-use and3.3 cultural-measure evidence; no question/answer/data changes.148 tests, TypeScript/build, Geography/standard routes and80-request preview checks pass. Resume3.5; full-bank final audit still pending completion.
 
 Final3.3–3.4 browser receipt: the corrected hierarchy model also passed desktop light-mode inspection, mobile dark-mode inspection and keyboard zoom200/reset100. Theme and viewport were restored; the preview remains at port3000.
+
+
+## Optional map region labels
+
+A region may supply `labelPoint: [x, y]` within the same0–100 by0–60 schematic bounds. This places labels inside irregular continent outlines or staggers narrow-strip identifiers without changing assessed geometry. If omitted, existing vertex-average placement is retained. Invalid coordinates are rejected. All5.3–5.4 drawings and tables are original, explicitly schematic/synthetic, with equivalent descriptions; the hearth outline does not assert exact coastlines or excavation sites.

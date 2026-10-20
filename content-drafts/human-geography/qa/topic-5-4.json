@@ -1,0 +1,142 @@
+{
+  "topicNumber": "5.4",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "06b101bd65e7301585a27efd07205b572fc095384960039a31f68e3d038af061",
+  "scopeReview": "SPS-5.C.1: technological/method changes, increased production, diets/longevity and labor available to factories. Uses rotations, seed placement, breeding, field consolidation and uneven adoption as mechanisms; distinguishes first domestication and later Green Revolution. No universal chronology or sole-cause enclosure theory.",
+  "varietyReview": "Four meaningful stimuli: land/labor productivity table, food/population indices, original before/after consolidation map and matched seed-placement trial. Deterministic checks recompute ratios, percentage changes, parcel coverage and establishment. Additional source/scale cases vary tasks and answer positions.",
+  "repetitionReview": "Land versus labor denominators, food per person, spatial consolidation and establishment evidence require different reasoning. Nonvisual cases evaluate crop–livestock feedbacks, labor release, household access, historical sources and conditional causes rather than recall-only clones. All questions original; difficulty not empirically calibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.parliament.uk/about/living-heritage/transformingsociety/towncountry/landscape/overview/enclosingland/",
+    "https://www.loc.gov/exhibitions/two-georges/about-this-exhibition/science-and-agriculture/agriculture/crop-rotation/"
+  ],
+  "referenceNote": "CED and Parliament history checked; Library of Congress crop-rotation catalog/search description corroborates the historical theme but its page blocked full retrieval. No artifact, map, question or statistics copied. All quantitative comparisons and parcel drawings are original hypothetical evidence; no human-review claim or new official resources.",
+  "questions": [
+    {
+      "questionId": "hug-5-4-001",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Yield per hectare rose 50%, while output per worker tripled.",
+      "independentReview": "Independently recomputed2→3 tonnes/hectare and10→30 tonnes/worker; percentage changes50% and200%, not300%. Fewer workers is an observed input, not proof of where every former worker went. Output is annual crop mass, not revenue or nutritional quality.",
+      "check": {
+        "type": "revolution-land-labor-productivity"
+      },
+      "questionSha256": "cd1a390ee1a55ac2c2648ebc640a0a8b9afad236dd25f25106598a67bf566632",
+      "stimulusSha256": "92976d244e2e9e29258fc414c0ddec21366cea1e2059444d984434d9b9a72e6e"
+    },
+    {
+      "questionId": "hug-5-4-002",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "It rises 20%, since 150/125=1.20 relative to the initial ratio.",
+      "independentReview": "Calculated(150/125)/(100/100)-1=.20. Checked tempting25-point difference is not itself the percentage ratio change. No direct inference of actual calorie intake, equitable distribution or a sole cause of longer life expectancy.",
+      "check": {
+        "type": "revolution-food-population-index"
+      },
+      "questionSha256": "21f86310c5f360bff6a2af96a2d4fabf9926a7cbebde5d627e470adb5f4dbd42",
+      "stimulusSha256": "30604457145a6183818f47b9a0d49f1544133a64de2d5adfb78cd222615821e5"
+    },
+    {
+      "questionId": "hug-5-4-003",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Scattered strips have been consolidated into contiguous holdings, which can reduce movement between a holder’s plots.",
+      "independentReview": "Checked six alternating strips A1/B1/A2/B2/A3/B3 and two contiguous blocks A/B. Both panels cover30×40 coordinate units, and each holder retains half in this synthetic comparison. Historical enclosure also involved legal rights; geometry alone cannot establish winners, compensation or universal urban migration. Mobile inspection staggered alternating strip labels vertically so neighboring identifiers remain readable at fit width; parcel geometry and areas are unchanged.",
+      "check": {
+        "type": "revolution-parcel-consolidation"
+      },
+      "questionSha256": "734afcbc67ed2cdfa428831fafaa1bd7f0bce54c9b9cf3a87a8a8e2fcbee6e76",
+      "stimulusSha256": "79816405f2c92d6ef2ecb7c3199bea6f874e3f6707ef80cc953d67a396ef50c4"
+    },
+    {
+      "questionId": "hug-5-4-004",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "More even seed placement is associated with better establishment and higher yield in this trial.",
+      "independentReview": "Recomputed establishment60% versus80%, a20-percentage-point gain; trial yield rises2.4→3.0 tonnes/hectare,25%. The question asks a mechanism-supported interpretation, not an unsupported actual eighteenth-century experimental result or universal causal law.",
+      "check": {
+        "type": "revolution-seed-placement-trial"
+      },
+      "questionSha256": "5b50dc4c0329d7231338d6ae7e20832f8eec9eb02dca2994596eb1d23204979e",
+      "stimulusSha256": "4ee29e00b8a238fde31d4b53cd94011317c76a5ae99584b91514647cd58b253e"
+    },
+    {
+      "questionId": "hug-5-4-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Improved crop rotations, selective livestock breeding and farming equipment associated with rising productivity during industrialization.",
+      "independentReview": "Cross-checked CED5.4 versus5.3/5.5 scope. Avoided a fixed worldwide date or attributing an entire transformation to one inventor; technological and institutional changes accumulated unevenly.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "3823d16ab45e1e279f9d7624ea49849a072c2eba4159bc34ab68405b1a707f7f"
+    },
+    {
+      "questionId": "hug-5-4-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Crop and livestock management become linked through feed and nutrient recycling.",
+      "independentReview": "Verified the conditional fodder–livestock–manure mechanism, distinguishing recycling from the false creation of unlimited nutrients. The question concerns productivity links rather than technical agronomic advice or a universal no-fallow recommendation.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "560b51fff3844e35206a89d12c4af6b60529df4f6db2a273816706d25435c984"
+    },
+    {
+      "questionId": "hug-5-4-007",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Agricultural change can release labor for other sectors, while actual migration and employment depend on additional conditions.",
+      "independentReview": "Checked output/worker direction independently and separated regional labor release from individual employment guarantees. CED5.4 factory-labor linkage retained without claiming enclosure is the sole proven cause of migration.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "95d1e304f3b0bd16fe8a04faedee9dca01704a9abfa7a28a9c3474aa3fe02480"
+    },
+    {
+      "questionId": "hug-5-4-008",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Food access, purchasing power, distribution and diet composition can differ among households.",
+      "independentReview": "Checked that the correct answer limits the inference rather than denying the curriculum’s broad food/diet link. No medical or nutritional prescription, actual historical calorie estimate or guaranteed price change is asserted.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "3e89c226b12be1a0bc33b508b8f6fbf1b8d702b0e247f7d0dd9dad1de31e795b"
+    },
+    {
+      "questionId": "hug-5-4-009",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Comparable output and agricultural work-hours before and after the changes.",
+      "independentReview": "Distinguished work-hours from headcount and productivity measurement from causal identification. Comparable before/after records are relevant; the answer does not promise that comparison alone controls all confounders.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "c1dca15fd19203ae23d47698553bc00f3e045dc2dfc2191f5a6fee22247630db"
+    },
+    {
+      "questionId": "hug-5-4-010",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Financial and service networks can influence whether farmers can acquire and maintain new technology.",
+      "independentReview": "Applied the scenario’s explicit credit/repair differences without inventing district climate or farmer attitudes. Conditional reasoning allows other determinants and avoids environmental determinism.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "33b6a78c28462356fee0f496ee673547b9d4f3906b36be2fdd8ff2bb96d4a959"
+    },
+    {
+      "questionId": "hug-5-4-011",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "More reliable food supplies could contribute to improved diets and longevity, alongside sanitation, disease conditions and other changes.",
+      "independentReview": "Checked that no life-expectancy figures or single-factor causal estimates are invented. The correct option qualifies rather than reverses the CED’s relationship between output, diet and longevity.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "2666285ff05d59e7d11b86d8c4f4e072779c632490dd9f5a0e9e0c2034ebf14f"
+    }
+  ]
+}

@@ -8206,5 +8206,750 @@
         ]
       }
     ]
+  },
+  "hug-5-3-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "Selected early agricultural hearth regions",
+    "description": "Hypothetical classroom map with original simplified continental outlines. A is in Mesoamerica/Central America; B in Southwest Asia; C in the Indus region of South Asia; D in Southeast Asia. Markers locate broad regions, not excavation sites.",
+    "caption": "Original outline sketch on a simplified longitude/latitude grid from 80°N to 60°S; not a complete coastline, political-boundary or distance map. The selected hearths are not an exhaustive list of independent domestication centers.",
+    "unitLabel": "A–D: approximate hearth-region markers",
+    "regions": [
+      {
+        "label": "N. America",
+        "polygon": [
+          [
+            3.333333333333333,
+            4.285714285714286
+          ],
+          [
+            13.88888888888889,
+            4.285714285714286
+          ],
+          [
+            16.666666666666668,
+            12.857142857142858
+          ],
+          [
+            27.77777777777778,
+            12.857142857142858
+          ],
+          [
+            33.333333333333336,
+            10.714285714285714
+          ],
+          [
+            32.22222222222222,
+            15
+          ],
+          [
+            27.77777777777778,
+            23.571428571428573
+          ],
+          [
+            27.22222222222222,
+            30
+          ],
+          [
+            23.333333333333332,
+            27.428571428571427
+          ],
+          [
+            19.444444444444443,
+            23.571428571428573
+          ],
+          [
+            14.444444444444445,
+            13.714285714285714
+          ],
+          [
+            3.333333333333333,
+            8.571428571428571
+          ]
+        ],
+        "labelPoint": [
+          20,
+          12
+        ]
+      },
+      {
+        "label": "S. America",
+        "polygon": [
+          [
+            27.77777777777778,
+            30
+          ],
+          [
+            36.11111111111111,
+            32.142857142857146
+          ],
+          [
+            40.27777777777778,
+            36.857142857142854
+          ],
+          [
+            36.11111111111111,
+            45
+          ],
+          [
+            30.555555555555554,
+            57.857142857142854
+          ],
+          [
+            27.77777777777778,
+            40.714285714285715
+          ]
+        ],
+        "labelPoint": [
+          34,
+          47
+        ]
+      },
+      {
+        "label": "Eurasia",
+        "polygon": [
+          [
+            47.22222222222222,
+            19.285714285714285
+          ],
+          [
+            47.22222222222222,
+            8.571428571428571
+          ],
+          [
+            61.11111111111111,
+            4.285714285714286
+          ],
+          [
+            80.55555555555556,
+            4.285714285714286
+          ],
+          [
+            97.22222222222221,
+            8.571428571428571
+          ],
+          [
+            94.44444444444444,
+            15
+          ],
+          [
+            86.11111111111111,
+            19.285714285714285
+          ],
+          [
+            83.33333333333333,
+            25.714285714285715
+          ],
+          [
+            79.16666666666667,
+            36.42857142857143
+          ],
+          [
+            76.38888888888889,
+            30
+          ],
+          [
+            73.61111111111111,
+            25.714285714285715
+          ],
+          [
+            71.66666666666667,
+            30.857142857142858
+          ],
+          [
+            68.88888888888889,
+            24.428571428571427
+          ],
+          [
+            63.888888888888886,
+            23.571428571428573
+          ],
+          [
+            58.33333333333333,
+            22.285714285714285
+          ],
+          [
+            52.77777777777778,
+            17.142857142857142
+          ]
+        ],
+        "labelPoint": [
+          74,
+          10
+        ]
+      },
+      {
+        "label": "Africa",
+        "polygon": [
+          [
+            45.833333333333336,
+            20.571428571428573
+          ],
+          [
+            58.33333333333333,
+            22.285714285714285
+          ],
+          [
+            63.888888888888886,
+            30
+          ],
+          [
+            59.72222222222222,
+            49.285714285714285
+          ],
+          [
+            54.166666666666664,
+            49.285714285714285
+          ],
+          [
+            45.833333333333336,
+            32.142857142857146
+          ],
+          [
+            44.44444444444444,
+            25.714285714285715
+          ]
+        ],
+        "labelPoint": [
+          54,
+          39
+        ]
+      },
+      {
+        "label": "Australia",
+        "polygon": [
+          [
+            81.11111111111111,
+            39.42857142857143
+          ],
+          [
+            92.77777777777777,
+            39.42857142857143
+          ],
+          [
+            92.5,
+            50.57142857142857
+          ],
+          [
+            81.94444444444444,
+            49.285714285714285
+          ]
+        ],
+        "labelPoint": [
+          87,
+          49
+        ]
+      }
+    ],
+    "points": [
+      {
+        "x": 23.61111111111111,
+        "y": 26.571428571428573,
+        "label": "A"
+      },
+      {
+        "x": 61.11111111111111,
+        "y": 19.285714285714285,
+        "label": "B"
+      },
+      {
+        "x": 69.44444444444444,
+        "y": 22.285714285714285,
+        "label": "C"
+      },
+      {
+        "x": 79.16666666666667,
+        "y": 27.857142857142858,
+        "label": "D"
+      }
+    ]
+  },
+  "hug-5-3-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "flow",
+    "title": "Two crop movements in the Columbian Exchange",
+    "description": "Hypothetical simplified Atlantic-centered diagram. A maize arrow runs from the Americas on the left toward Afro-Eurasia on the right. A wheat arrow runs in the opposite direction. These represent post 1492 transfers rather than measured volumes.",
+    "caption": "Original regional sketch; arrow widths and routes are illustrative. Only two crop movements are shown, not the full Columbian Exchange or its unequal social consequences.",
+    "unitLabel": "Arrowheads: direction of crop transfer",
+    "regions": [
+      {
+        "label": "Americas",
+        "labelPoint": [
+          17,
+          32
+        ],
+        "polygon": [
+          [
+            8,
+            8
+          ],
+          [
+            30,
+            6
+          ],
+          [
+            37,
+            19
+          ],
+          [
+            27,
+            34
+          ],
+          [
+            34,
+            50
+          ],
+          [
+            18,
+            57
+          ],
+          [
+            9,
+            40
+          ]
+        ]
+      },
+      {
+        "label": "Afro-Eurasia",
+        "labelPoint": [
+          81,
+          32
+        ],
+        "polygon": [
+          [
+            63,
+            6
+          ],
+          [
+            91,
+            9
+          ],
+          [
+            96,
+            25
+          ],
+          [
+            87,
+            42
+          ],
+          [
+            77,
+            56
+          ],
+          [
+            61,
+            44
+          ],
+          [
+            69,
+            27
+          ]
+        ]
+      }
+    ],
+    "paths": [
+      {
+        "label": "Maize",
+        "points": [
+          [
+            29,
+            17
+          ],
+          [
+            48,
+            17
+          ],
+          [
+            68,
+            17
+          ]
+        ],
+        "arrow": true
+      },
+      {
+        "label": "Wheat",
+        "points": [
+          [
+            68,
+            44
+          ],
+          [
+            48,
+            44
+          ],
+          [
+            29,
+            44
+          ]
+        ],
+        "arrow": true
+      }
+    ]
+  },
+  "hug-5-3-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Evidence for a hypothetical crop lineage",
+    "description": "Hypothetical archaeological exercise, not real excavations or dates. Samples at each site are securely identified and dated; later domesticated samples belong to the same distinctive inherited lineage as P.",
+    "caption": "Years before present increase backward in time. Missing or undiscovered evidence could change an origin hypothesis; a modern harvest ranking would not supply equivalent historical evidence.",
+    "headers": [
+      "Region",
+      "Earliest domesticated remains (years before present)",
+      "Other evidence"
+    ],
+    "rows": [
+      [
+        "P",
+        "8500",
+        "Related wild plants and early selection evidence"
+      ],
+      [
+        "Q",
+        "6000",
+        "Domesticated lineage shared with P"
+      ],
+      [
+        "R",
+        "4000",
+        "Domesticated lineage shared with P"
+      ]
+    ]
+  },
+  "hug-5-3-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Spread of an introduced crop in two districts",
+    "description": "Hypothetical survey of farms adopting the same introduced domesticated seed. Frequent-contact district:5%,40%,80%; limited-contact district:5%,10%,20% at years 0,10,20. Both have comparable rainfall and soils.",
+    "caption": "Original synthetic adoption percentages. Years are equally spaced; farm costs, preferences and other possible differences are not fully controlled.",
+    "unitLabel": "Farms adopting (%)",
+    "categories": [
+      "Year 0",
+      "Year 10",
+      "Year 20"
+    ],
+    "series": [
+      {
+        "label": "Frequent seed exchange",
+        "values": [
+          5,
+          40,
+          80
+        ]
+      },
+      {
+        "label": "Limited seed exchange",
+        "values": [
+          5,
+          10,
+          20
+        ]
+      }
+    ],
+    "max": 100,
+    "display": "line"
+  },
+  "hug-5-4-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Farm output, land and labor before and after changes",
+    "description": "Hypothetical same-region annual crop totals before and after improved farming methods. Crop output rises from 600 to 900 tonnes; cultivated land remains 300 hectares; agricultural workers fall from 60 to 30.",
+    "caption": "Original synthetic comparison, not measured historical data. Output per worker and output per hectare use different denominators; the table does not identify every cause of the changes.",
+    "headers": [
+      "Period",
+      "Crop output (tonnes)",
+      "Land (ha)",
+      "Farm workers"
+    ],
+    "rows": [
+      [
+        "Before",
+        "600",
+        "300",
+        "60"
+      ],
+      [
+        "After",
+        "900",
+        "300",
+        "30"
+      ]
+    ]
+  },
+  "hug-5-4-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Food output and population indices",
+    "description": "Hypothetical region. Initially food output and population both have index 100. Later the food-output index is 150 and the population index 125. Each series uses its own initial value as the base.",
+    "caption": "Original synthetic indices, not quantities in tonnes or numbers of people. The ratio measures a relative aggregate output-per-person change, not access or diet quality.",
+    "unitLabel": "Index (initial=100)",
+    "categories": [
+      "Initial",
+      "Later"
+    ],
+    "series": [
+      {
+        "label": "Food output",
+        "values": [
+          100,
+          150
+        ]
+      },
+      {
+        "label": "Population",
+        "values": [
+          100,
+          125
+        ]
+      }
+    ],
+    "max": 200
+  },
+  "hug-5-4-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "Scattered strips and consolidated holdings",
+    "description": "Hypothetical paired parcel sketch. Left, before: six alternating narrow strips labeled A1,B1,A2,B2,A3,B3. Right, after: one contiguous block A and one contiguous block B. A and B denote the same two holders in both panels.",
+    "caption": "Original schematic of spatial consolidation, not a real enclosure award. Before is on the left and after on the right. Equal schematic areas do not document historic compensation, common rights or household migration.",
+    "unitLabel": "Left: before; right: after. Letters identify holders.",
+    "regions": [
+      {
+        "label": "A1",
+        "polygon": [
+          [
+            5,
+            10
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            10,
+            50
+          ],
+          [
+            5,
+            50
+          ]
+        ],
+        "labelPoint": [
+          7.5,
+          24
+        ]
+      },
+      {
+        "label": "B1",
+        "polygon": [
+          [
+            10,
+            10
+          ],
+          [
+            15,
+            10
+          ],
+          [
+            15,
+            50
+          ],
+          [
+            10,
+            50
+          ]
+        ],
+        "labelPoint": [
+          12.5,
+          36
+        ]
+      },
+      {
+        "label": "A2",
+        "polygon": [
+          [
+            15,
+            10
+          ],
+          [
+            20,
+            10
+          ],
+          [
+            20,
+            50
+          ],
+          [
+            15,
+            50
+          ]
+        ],
+        "labelPoint": [
+          17.5,
+          24
+        ]
+      },
+      {
+        "label": "B2",
+        "polygon": [
+          [
+            20,
+            10
+          ],
+          [
+            25,
+            10
+          ],
+          [
+            25,
+            50
+          ],
+          [
+            20,
+            50
+          ]
+        ],
+        "labelPoint": [
+          22.5,
+          36
+        ]
+      },
+      {
+        "label": "A3",
+        "polygon": [
+          [
+            25,
+            10
+          ],
+          [
+            30,
+            10
+          ],
+          [
+            30,
+            50
+          ],
+          [
+            25,
+            50
+          ]
+        ],
+        "labelPoint": [
+          27.5,
+          24
+        ]
+      },
+      {
+        "label": "B3",
+        "polygon": [
+          [
+            30,
+            10
+          ],
+          [
+            35,
+            10
+          ],
+          [
+            35,
+            50
+          ],
+          [
+            30,
+            50
+          ]
+        ],
+        "labelPoint": [
+          32.5,
+          36
+        ]
+      },
+      {
+        "label": "A",
+        "polygon": [
+          [
+            60,
+            10
+          ],
+          [
+            75,
+            10
+          ],
+          [
+            75,
+            50
+          ],
+          [
+            60,
+            50
+          ]
+        ],
+        "labelPoint": [
+          67.5,
+          30
+        ]
+      },
+      {
+        "label": "B",
+        "polygon": [
+          [
+            75,
+            10
+          ],
+          [
+            90,
+            10
+          ],
+          [
+            90,
+            50
+          ],
+          [
+            75,
+            50
+          ]
+        ],
+        "labelPoint": [
+          82.5,
+          30
+        ]
+      }
+    ]
+  },
+  "hug-5-4-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Matched planting-method trial",
+    "description": "Hypothetical matched plots of the same crop under the same soil and weather conditions. Broadcasting scatters 1000 viable seeds, with 600 plants established and 2.4 tonnes/hectare yield. Drill rows place 1000 seeds, with 800 plants established and 3.0 tonnes/hectare yield.",
+    "caption": "Original synthetic controlled comparison for understanding planting technology. A seed drill places seed in rows at regulated spacing/depth; actual outcomes vary with equipment, management and environment.",
+    "headers": [
+      "Method",
+      "Viable seeds sown",
+      "Plants established",
+      "Yield (t/ha)"
+    ],
+    "rows": [
+      [
+        "Broadcasting",
+        "1000",
+        "600",
+        "2.4"
+      ],
+      [
+        "Drill rows",
+        "1000",
+        "800",
+        "3.0"
+      ]
+    ]
   }
 }
