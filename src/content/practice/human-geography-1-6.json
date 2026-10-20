@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 1,
+  "topicId": "topic-1-6",
+  "questions": [
+    {
+      "id": "hug-1-6-001",
+      "prompt": "The mapped districts contain equal numbers of households. A country-level report gives the overall connection rate as 50%. What does the district-scale map reveal that the country total conceals?",
+      "options": [
+        "Every district has the country’s 50% connection rate.",
+        "Substantial internal variation, with higher rates in the north than in the south.",
+        "The northern districts must contain more households than the southern districts.",
+        "The country-level report and district map cannot both be accurate."
+      ],
+      "correctIndex": 1,
+      "explanation": "With equal household denominators, the four rates90%,70%,10% and30% average to50%. The national figure is compatible with this internal variation: northern rates are higher than southern rates even though the country is summarized by one value. Changing the unit of analysis changes what spatial differences are visible. A: An aggregate rate need not be the rate in each constituent district; none of these four districts has50%. B: The map distinguishes a north–south pattern that is lost in a single country-wide value. C: The caption fixes equal household counts, so a difference in rates does not imply a difference in denominators. D: The equal-denominator calculation reproduces the reported50%, so the two representations are consistent."
+    },
+    {
+      "id": "hug-1-6-002",
+      "prompt": "The table includes every resident in a hypothetical two-country region. What is the regional share with the listed service, rather than the unweighted average of the two national percentages?",
+      "options": [
+        "50%, because each country should contribute half of the regional rate",
+        "90%, because only the larger country determines a regional rate",
+        "82%, because 820 of the region’s 1,000 residents have the service",
+        "10%, because the smaller country’s rate applies to the whole region"
+      ],
+      "correctIndex": 2,
+      "explanation": "A combined population rate uses the combined numerator and denominator. Country E has810 of900 residents served and F has10 of100. The regional rate is(810+10)/(900+100)=820/1,000=82%. Giving each country equal weight instead answers a different question about the mean of country rates. A: The national rates are90% and10%, but equal country weighting ignores their different resident populations. B: The larger country dominates numerically but the smaller country’s residents still belong in both regional totals. C: This uses all served residents and all residents in the stated regional population. D: The smaller country’s rate is not the rate for the combined population."
+    },
+    {
+      "id": "hug-1-6-003",
+      "prompt": "The chart combines the same four local areas under two different grouping plans. No resident changes service status. Which interpretation best explains why the displayed contrast changes?",
+      "options": [
+        "Changing aggregation boundaries can change the visible pattern without changing the underlying local observations.",
+        "Grouping II proves that service access improved in every local area.",
+        "The difference proves that one of the plans must have counted a different total population.",
+        "A regional rate is unaffected by which local areas its boundary includes."
+      ],
+      "correctIndex": 0,
+      "explanation": "Grouping I places the two80% local areas together and the two20% areas together, yielding an80% versus20% contrast. Grouping II pairs one high-rate area with one low-rate area in each zone, yielding50% in both. Equal local populations and unchanged observations make this an aggregation effect rather than evidence of actual service improvement. A: The membership of each reported zone changes, altering the comparison made from the same observations. B: No individual status changes; the chart changes how existing observations are grouped. C: Each plan includes the same four equal-population areas, so both total populations remain equal. D: A combined rate depends on which numerators and denominators fall within the chosen boundary."
+    },
+    {
+      "id": "hug-1-6-004",
+      "prompt": "An analyst compares housing costs at national and city scales using the table. Which conclusion is supported?",
+      "options": [
+        "Because Country A has a lower national median, its listed city must also have a lower median.",
+        "The larger city median proves that Country A’s national figure is mathematically impossible.",
+        "The two national medians determine the rent paid by every household in their countries.",
+        "Country A has the lower national median, while its listed city has the higher city median."
+      ],
+      "correctIndex": 3,
+      "explanation": "The country-level ordering is A600 below B800, while the listed-city ordering is A1,200 above B1,000. The populations summarized differ, so the reversal is possible and meaningful. A national median is neither a universal household value nor a rule fixing the median of every city within that country. A: The actual city entries reverse the national ordering, demonstrating the danger of transferring an aggregate comparison to a smaller population. B: A subset can have a higher median than the full population; no city population weights or household distributions are supplied to claim impossibility. C: A median summarizes a distribution and does not specify every household’s payment. D: This reports both comparisons at their own scales without substituting one for the other."
+    },
+    {
+      "id": "hug-1-6-005",
+      "prompt": "A researcher traces production, finance and shipping links among factories and consumers on several continents. Which scale most directly matches the overall extent of this investigation?",
+      "options": [
+        "A single neighborhood, because each factory occupies one site",
+        "A single municipality, because all consumers live in municipalities",
+        "Global, because the investigation follows connections across multiple world regions",
+        "Only national, because every factory is located within a country"
+      ],
+      "correctIndex": 2,
+      "explanation": "A study’s overall extent can include linked processes across continents even though each observation has a local position. Local sites and national jurisdictions are components of this investigation, but neither alone describes the geographic reach of the network being examined. A: The location of an individual factory does not reduce the full network to one neighborhood. B: A common type of settlement is not the same as a common municipal boundary containing all the connections. C: The cross-continental network matches the described worldwide extent. D: National membership does not prevent relations from being studied across national boundaries."
+    },
+    {
+      "id": "hug-1-6-006",
+      "prompt": "A water study follows one river basin extending across parts of three neighboring countries. Why can this be described as a regional analysis?",
+      "options": [
+        "A region must be identical to exactly one country.",
+        "The study groups connected places using a watershed rather than national borders.",
+        "Regional analysis excludes all physical connections.",
+        "Every study crossing a national boundary necessarily covers the whole globe."
+      ],
+      "correctIndex": 1,
+      "explanation": "A regional analysis can focus on connected areas organized by a shared physical system. A river basin can cross political borders while remaining a geographically coherent focus. Regional is not a fixed synonym for one country, nor does crossing a border by itself make a study global. A: Regional boundaries can be drawn using physical or functional criteria that differ from country boundaries. B: The basin supplies the explicit organizing connection for this multi-country region. C: Physical relationships can be a legitimate basis for grouping and analyzing places. D: Three neighboring countries represent a wider extent than one locality but do not automatically constitute the entire world."
+    },
+    {
+      "id": "hug-1-6-007",
+      "prompt": "A world map plots a separate observation for each surveyed neighborhood without combining the observations into country totals. Which distinction is important when interpreting it?",
+      "options": [
+        "Its geographic extent is global, while its observation units remain local.",
+        "Its neighborhood observations become national totals because the page shows the world.",
+        "The paper map’s width alone identifies the statistical units.",
+        "Global extent guarantees that every neighborhood on Earth was surveyed."
+      ],
+      "correctIndex": 0,
+      "explanation": "Map extent and units of observation are different properties. A world view can display local observations, just as a close view can display coarse aggregates. The map’s size, zoom level or geographic coverage does not automatically change the unit represented by each value or make sampling exhaustive. A: This keeps the area covered distinct from the local units supplying the displayed values. B: Displaying local values over a larger extent does not aggregate them into country totals. C: Paper dimensions do not identify whether values represent individuals, neighborhoods or countries. D: The prompt specifies surveyed neighborhoods, not universal coverage of every neighborhood."
+    },
+    {
+      "id": "hug-1-6-008",
+      "prompt": "A council must choose where to add a pedestrian crossing near a school. Which evidence is best matched to that local decision?",
+      "options": [
+        "A global average of journeys made on foot",
+        "One national total of all road crossings",
+        "A continent-wide ranking of urbanization rates",
+        "Street-level paths, traffic and crossing conditions around the school"
+      ],
+      "correctIndex": 3,
+      "explanation": "The local decision turns on connections and conditions near a particular school. Broad statistics can supply context but omit the location-specific paths, traffic and barriers needed to compare crossing sites. The appropriate scale depends on the question, not on a universal preference for either the broadest or the most detailed dataset. A: A world average does not locate the relevant routes or hazards around this school. B: A national total omits the placement and conditions of nearby crossings. C: Continental urbanization ranks do not describe this street network. D: These observations match the decision’s local extent and the specific features being evaluated."
+    },
+    {
+      "id": "hug-1-6-009",
+      "prompt": "A study explains neighborhood housing prices using local zoning, metropolitan commuting links and cross-border investment. What is the most appropriate interpretation of its scales of analysis?",
+      "options": [
+        "The local outcome means that every explanatory process must also be confined to the neighborhood.",
+        "Processes operating at several scales can contribute to a local outcome.",
+        "Including a global connection makes the local observations invalid.",
+        "Only one scale can be relevant to a geographic explanation at a time."
+      ],
+      "correctIndex": 1,
+      "explanation": "The scale at which an outcome is measured need not contain every process influencing it. Local regulation, regional connections and international investment can interact. Recognizing several scales organizes an explanation without claiming that any named factor has a proven effect merely because it is included in the study. A: A local measurement can be influenced by connections extending beyond its boundary. B: This permits the stated local, metropolitan and international processes to be evaluated together. C: Cross-border connections do not erase or invalidate observations of neighborhood conditions. D: Geographic processes can interact across scales, so a one-scale-only rule is unjustified."
+    },
+    {
+      "id": "hug-1-6-010",
+      "prompt": "A country redraws district boundaries between two censuses. A researcher wants to compare district-level population change over time. Which preparation is most important before interpreting the local differences?",
+      "options": [
+        "Compare all district names without checking which places they contain",
+        "Treat every rate difference as a real migration effect",
+        "Use compatible geographic units or reconstruct comparable boundaries",
+        "Replace local records with the country total and claim that every district changed equally"
+      ],
+      "correctIndex": 2,
+      "explanation": "A district is a geographic unit whose membership can change when boundaries are redrawn. A rate difference may reflect that changed membership as well as actual population change. Harmonizing units or documenting a reliable reconstruction supports a comparison of like geographic areas rather than assuming matching names imply matching extents. A: Names can remain unchanged even when their boundaries and included populations differ. B: The supplied boundary change is an alternative explanation that must be addressed before attributing a difference to migration. C: This addresses the mismatch in spatial units while retaining the intended local comparison. D: A national total cannot establish equal district-level change or recover the removed local detail."
+    },
+    {
+      "id": "hug-1-6-011",
+      "prompt": "An agency replaces annual country totals with daily country totals but still releases no subnational locations. Which statement distinguishes temporal detail from spatial scale?",
+      "options": [
+        "More frequent reporting necessarily reveals neighborhood patterns.",
+        "Daily totals can identify every individual’s location.",
+        "Country boundaries become smaller whenever observations are collected more frequently.",
+        "The time interval is finer, but the reported spatial unit remains the country."
+      ],
+      "correctIndex": 3,
+      "explanation": "Frequency and geographic aggregation are separate dimensions of data. Daily reporting can reveal variation through time within each country’s total while still concealing where events occur inside the country. A shorter reporting interval does not by itself create local geographic detail or individual records. A: Frequency alone does not disaggregate the country totals into neighborhoods. B: No individual locations are released in either version. C: Collecting on a different schedule does not redraw the geographic units. D: This identifies exactly what changed and what remained the same in the released data."
+    }
+  ]
+}

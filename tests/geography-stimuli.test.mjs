@@ -78,3 +78,18 @@ test('human-environment checks preserve resource balance, fixed land area and ac
  const html=render(geographyStimuli[batch.questions[2].id]);assert.match(html,/data-path="River" data-arrow-end="true" points="78,183.5 382,183.5"/);
  assert.match(html,/class="geo-path geo-path-on-fill"/);assert.match(html,/class="geo-path-halo"/);assert.match(html,/fill="#152c27" stroke="#f3f9f6"/);
 });
+
+test('scale-analysis checks recompute weighted totals and aggregation plans from unchanged local rates',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-1-6.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-1-6.json','utf8'));
+ for(const [i,change] of [[1,s=>s.rows[1][1]='900'],[2,s=>s.series[1].values[0]=60],[3,s=>s.rows[0][2]='900']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+
+test('regional models retain inclusive thresholds, directed service links and overlapping membership',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-1-7.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-1-7.json','utf8'));
+ for(const [i,change] of [[0,s=>s.regions[1].value=59],[1,s=>s.edges[0]={from:'Clinic',to:'Town A',label:'300 trips'}],[3,s=>s.rows[1][2]='50']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+ const html=render(geographyStimuli[batch.questions[1].id]);assert.ok(html.includes('x1="97" y1="74.6" x2="230" y2="183.5"'));assert.ok(html.includes('300 trips'));assert.ok(html.includes('150 trips'));
+});

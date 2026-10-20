@@ -1102,5 +1102,412 @@
         "Drought-tolerant grains"
       ]
     ]
+  },
+  "hug-1-6-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "Household connections within one country",
+    "description": "Hypothetical country divided into four districts with equal household counts. Connection rates are NW 90%, NE 70%, SW 10% and SE 30%. The national rate is 50%.",
+    "caption": "The denominator is households in each district. Each district contains the same number of households.",
+    "unitLabel": "Households connected (%)",
+    "regions": [
+      {
+        "label": "NW",
+        "value": 90,
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            0,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "NE",
+        "value": 70,
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            50,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "SW",
+        "value": 10,
+        "polygon": [
+          [
+            0,
+            30
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "SE",
+        "value": 30,
+        "polygon": [
+          [
+            50,
+            30
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ],
+    "bins": [
+      {
+        "min": 0,
+        "max": 40,
+        "label": "0 to under 40%"
+      },
+      {
+        "min": 40,
+        "max": 80,
+        "label": "40 to under 80%"
+      },
+      {
+        "min": 80,
+        "max": 101,
+        "label": "80 to 100%"
+      }
+    ]
+  },
+  "hug-1-6-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Service access in a two-country region",
+    "description": "Hypothetical region containing only countries E and F: E has 900 residents, of whom 810 have the service; F has 100 residents, of whom 10 have the service.",
+    "caption": "All residents in the region are counted once. The same service definition and observation date apply in both countries.",
+    "headers": [
+      "Country",
+      "All residents",
+      "Residents served"
+    ],
+    "rows": [
+      [
+        "E",
+        "900",
+        "810"
+      ],
+      [
+        "F",
+        "100",
+        "10"
+      ]
+    ]
+  },
+  "hug-1-6-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Different groupings of unchanged local data",
+    "description": "Hypothetical equal-population local areas A and B each have 80% access, C and D each have 20%. Grouping I: Zone 1=A+B, Zone 2=C+D. Grouping II: Zone 1=A+C, Zone 2=B+D. Resulting rates are 80%,20% and 50%,50%.",
+    "caption": "Membership changes between grouping plans, not residents’ access. Every local area is included once in each plan.",
+    "unitLabel": "Residents with access (%)",
+    "categories": [
+      "Zone 1",
+      "Zone 2"
+    ],
+    "series": [
+      {
+        "label": "Grouping I",
+        "values": [
+          80,
+          20
+        ]
+      },
+      {
+        "label": "Grouping II",
+        "values": [
+          50,
+          50
+        ]
+      }
+    ],
+    "max": 100
+  },
+  "hug-1-6-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "National and listed-city housing medians",
+    "description": "Hypothetical monthly rent medians in the same currency and year: Country A national 600, listed city 1200; Country B national 800, listed city 1000.",
+    "caption": "National and city medians summarize different populations. City population sizes and individual rent distributions are not supplied.",
+    "headers": [
+      "Country",
+      "National median",
+      "Listed-city median"
+    ],
+    "rows": [
+      [
+        "A",
+        "600",
+        "1200"
+      ],
+      [
+        "B",
+        "800",
+        "1000"
+      ]
+    ]
+  },
+  "hug-1-7-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "Language L household shares",
+    "description": "Hypothetical north-up map: households using Language L at home are NW 70%, NE 60%, SW 55%, SE 30%. These are district shares, not a claim that all households use the same language.",
+    "caption": "Regional inclusion rule: at least 60% of households. Exact threshold values qualify; household language use need not be exclusive.",
+    "unitLabel": "Households using Language L (%)",
+    "regions": [
+      {
+        "label": "NW",
+        "value": 70,
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            0,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "NE",
+        "value": 60,
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            50,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "SW",
+        "value": 55,
+        "polygon": [
+          [
+            0,
+            30
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "SE",
+        "value": 30,
+        "polygon": [
+          [
+            50,
+            30
+          ],
+          [
+            100,
+            30
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ],
+    "bins": [
+      {
+        "min": 0,
+        "max": 60,
+        "label": "Under 60%"
+      },
+      {
+        "min": 60,
+        "max": 101,
+        "label": "60 to 100%"
+      }
+    ]
+  },
+  "hug-1-7-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "model",
+    "title": "Clinic service connections",
+    "description": "Hypothetical service diagram: Town A sends 300 recorded trips to the Clinic and Town B sends 150 recorded trips to the same Clinic during one observation period. Arrowheads point toward the Clinic.",
+    "caption": "Counts represent trips, not unique residents. Positions are schematic; no legal boundary or complete service-area edge is drawn.",
+    "assumptions": "Only the displayed service links are represented. Participation is based on observed trips; no claim of equal population, shared culture or a precise outer boundary.",
+    "nodes": [
+      {
+        "label": "Town A",
+        "x": 15,
+        "y": 12
+      },
+      {
+        "label": "Town B",
+        "x": 85,
+        "y": 12
+      },
+      {
+        "label": "Clinic",
+        "x": 50,
+        "y": 45
+      }
+    ],
+    "edges": [
+      {
+        "from": "Town A",
+        "to": "Clinic",
+        "label": "300 trips"
+      },
+      {
+        "from": "Town B",
+        "to": "Clinic",
+        "label": "150 trips"
+      }
+    ]
+  },
+  "hug-1-7-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Residents’ inclusion of areas in Old Town",
+    "description": "Hypothetical survey of 100 residents for each area: A is included by 90 respondents, B by 55 and C by 20. Each respondent answers yes or no for the relevant area.",
+    "caption": "Responses describe regional perceptions, not legal jurisdiction. Samples are equal in size and are not claimed to represent every resident.",
+    "headers": [
+      "Area",
+      "Respondents",
+      "Include area (%)"
+    ],
+    "rows": [
+      [
+        "A",
+        "100",
+        "90"
+      ],
+      [
+        "B",
+        "100",
+        "55"
+      ],
+      [
+        "C",
+        "100",
+        "20"
+      ]
+    ]
+  },
+  "hug-1-7-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Two regional criteria applied to three areas",
+    "description": "Hypothetical area A has 900 mm annual rain and 40% of recorded trips bound for the central city. B has 900 mm and 80%; C has 400 mm and 80%.",
+    "caption": "Wet criterion: rain at least 800 mm. Functional criterion: more than 50% of trips to the central city. The two attributes are measured separately.",
+    "headers": [
+      "Area",
+      "Rain (mm/year)",
+      "City-bound trips (%)"
+    ],
+    "rows": [
+      [
+        "A",
+        "900",
+        "40"
+      ],
+      [
+        "B",
+        "900",
+        "80"
+      ],
+      [
+        "C",
+        "400",
+        "80"
+      ]
+    ]
   }
 }

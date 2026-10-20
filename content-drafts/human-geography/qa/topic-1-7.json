@@ -1,0 +1,136 @@
+{
+  "topicNumber": "1.7",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "456017ced2c339ee33001e75041b006000b9c10b65c0de155ac43df559477224",
+  "scopeReview": "SPS-1.A.1–4: regions defined by attributes or activities; formal, functional and perceptual types; transitional, overlapping and contested limits; analysis across scales. Fictional language and settlement examples avoid stereotypes and territorial disputes.",
+  "varietyReview": "One threshold map, one original service-node schematic and two interpretation tables; seven distinct applications cover diversity, change, perceptions, scale, gradients, purpose and comparable definitions. All five skills and four answer positions represented.",
+  "repetitionReview": "New questions distinguish regionalization types and criteria rather than repeat scale-only ranking. Formal majority labels, functional flow change and vernacular evidence are different applications; the overlap table tests two simultaneous rules rather than vocabulary alone.",
+  "questions": [
+    {
+      "questionId": "hug-1-7-001",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "A formal region containing the two northern districts because they meet a shared criterion",
+      "independentReview": "Independently applied inclusive>=60 to NW70,NE60,SW55,SE30. Only NW/NE qualify; neither an individual-uniformity claim nor a hub/perception basis follows.",
+      "check": {
+        "type": "formal-threshold"
+      },
+      "questionSha256": "b9e5d457b4a9521557f7450d2dd8b0a4e4c3b812c0249ad2e33e31df157ad612",
+      "stimulusSha256": "60ee5f2b228544ce86197d713b9e2059099406c86fd9c8f3979ec253d9f75444"
+    },
+    {
+      "questionId": "hug-1-7-002",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Both towns are linked to a common service node by the recorded trips.",
+      "independentReview": "Verified both edge destinations equalClinic, with sourcesTown A/Town B and300/150 trips. The interpretation uses node-based activity rather than inferring uniform attributes from connection.",
+      "check": {
+        "type": "service-region"
+      },
+      "questionSha256": "e213ac9d1810a34dfbcd0c1d2ec37d5cbbcda3e43dba9fdf2a5b8d4a528a364f",
+      "stimulusSha256": "e6d53a841c48ed909352e29f23fad3eb4783de0c5eb89bdb25a7bc6976ea5171"
+    },
+    {
+      "questionId": "hug-1-7-003",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The differing inclusion shares are consistent with a perceptual region whose limits are not uniformly agreed.",
+      "independentReview": "Checked equal samples of100: inclusion90,55,20. Every area has both inclusion and exclusion responses, andC has20 positive responses; no zero-membership or unanimous-boundary claim holds.",
+      "check": {
+        "type": "perceptual-inclusion"
+      },
+      "questionSha256": "315f48e8198620a49065f94e5159c46d5f5315fb2cd57754c789235cb71ecf11",
+      "stimulusSha256": "2551fbe20896adcd86dbff5d95a6c3d8765fdb7e6ca2797bde00ad23636a2d68"
+    },
+    {
+      "questionId": "hug-1-7-004",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Area B belongs to both regions under the two stated rules.",
+      "independentReview": "Independently intersected wetset{A,B} with service-set{B,C}, yielding only{B}. Preserved inclusive rain>=800 and strict trips>50; no exclusivity assumption.",
+      "check": {
+        "type": "overlapping-regions"
+      },
+      "questionSha256": "816e5d7a6d243d58487d0ea223a4ead8c03d4789e0fe91b1d6d442f85c582883",
+      "stimulusSha256": "f1782a0287e634bfb515ef6c24352586dca05de30034ef13d3ec07d58b00fb94"
+    },
+    {
+      "questionId": "hug-1-7-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Counties qualify by a shared threshold, while land uses and livelihoods within them can still vary.",
+      "independentReview": "Tested several qualifying percentages and nonfarming residents; these are compatible with the threshold. Correct answer avoids converting an aggregate criterion into universal individual sameness.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "06df338301ed0fa9db48c1f35059db31efe25f6cf6756d9f575df31bf3bf796b"
+    },
+    {
+      "questionId": "hug-1-7-006",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Their effective limits can shift as the shopping flows are reorganized.",
+      "independentReview": "Held city coordinates and resident identity unspecified while changing the defining flows. Only effective service/market reach is directly implicated.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "5b03765b18b07de066ee89e44e6c4d6dc559fb23333fc7336370a4aeee5d3f8e"
+    },
+    {
+      "questionId": "hug-1-7-007",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Residents’ descriptions and mental maps, compared across different communities",
+      "independentReview": "Matched the target constructregional perceptionto evidence eliciting residents’ perceptions. Legal and physical measures could be contextual but are insufficient substitutes for that evidence.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d27682f0c3b7461ee071690b01e277766ffcdcb06bda93e042903df833a2c694"
+    },
+    {
+      "questionId": "hug-1-7-008",
+      "skill": "Scale Analysis",
+      "difficulty": "foundational",
+      "correctOption": "Regions can be defined at different scales when the defining criteria are explicit.",
+      "independentReview": "Compared a bounded transnational belt with a local city district. Scale alone neither invalidates regionalization nor dictates the formal/functional/perceptual type.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "1015b58bbce1a45c92165291b95a0156662db9189ab423593d53115e9670b90e"
+    },
+    {
+      "questionId": "hug-1-7-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "A drawn boundary may simplify a transition zone, and another criterion could produce a different boundary.",
+      "independentReview": "Distinguished a continuous underlying gradient from its discrete map representation. Only a conditional simplification claim follows; neither universal uselessness nor unrelated political movement follows.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "c3bae69292d513ed77ab7c2aa6813d22c77a91c267c31bcd003e064b0708bf46"
+    },
+    {
+      "questionId": "hug-1-7-010",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Group connected habitat areas, while retaining provincial borders as a separate management layer.",
+      "independentReview": "Followed the explicitly cross-border habitat process and distinguished the ecological study unit from governance units. No claim is made about a particular real species or protected area.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "f406789b07707198252420e6fdc50d1f58ab0a48ca684d343ac68cc5d794e48c"
+    },
+    {
+      "questionId": "hug-1-7-011",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "State and compare the inclusion criteria and geographic coverage of each report.",
+      "independentReview": "Constructed plausible alternative coastal definitionsdistance band versus coastal administrative districts. A common label does not fix identical membership; only inspecting rules and units addresses comparability.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "a592156d796440044889ed0615456cace19e97d7f737963678cf0ec35463301e"
+    }
+  ]
+}

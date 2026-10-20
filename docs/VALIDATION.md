@@ -1,5 +1,9 @@
 # PrepAtlas milestone verification
 
+## Human Geography Unit 1 complete
+
+77 original MCQs across all seven Unit 1 topics are published, with exactly eleven each. Twenty-eight genuine stimuli (36.36%) comprise ten maps, five charts, twelve tables and one service-network schematic. Twenty-seven explicit numerical/geometry models corroborate the bank; conceptual questions have recorded option-by-option reasoning reviews, without a claim of independent human review. Topics 1.6 and 1.7 each produced 11/11 in complete browser sessions. Mobile maps, chart/table labels and the actual clinic-node arrows were inspected; the model also passed light/dark inspection. All 130 automated tests, TypeScript, production build, all 68 Geography scopes, standard smoke checks, all 172 Chemistry/Calculus lesson routes and eighty preview-stability requests passed. No new manifest errors were observed; this is not proof of a permanent fix. Existing question/resource objects are preserved. The full bank is unfinished: next is 2.1, with 61 topics/671 questions remaining.
+
 ## Human Geography Topics 1.4–1.5
 
 55 questions are published across five topics, with twenty interpreted stimuli (36.36%). The eight additions include spatial arrangement, travel-time accessibility, distance decay, association, aquifer balance, changing land cover, river connections and a possibilist comparison. All 128 unit tests, structural/model checks, TypeScript and production build passed. Browser sessions for each new topic produced 11/11; desktop/mobile diagrams and tables were inspected. A faint flow arrow on a shaded map was corrected with a dark stroke and light outline before saving. All 68 Geography routes, standard smoke checks and Chemistry preservation/publication checks passed. The bank is incomplete; resume at 1.6.

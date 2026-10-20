@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 1,
+  "topicId": "topic-1-7",
+  "questions": [
+    {
+      "id": "hug-1-7-001",
+      "prompt": "A geographer groups mapped districts where at least 60% of households report using Language L at home. Which interpretation correctly identifies the resulting region and its basis?",
+      "options": [
+        "A functional region containing all four districts because they appear on one map",
+        "A perceptual region based solely on the geographer’s personal sense of belonging",
+        "A region proving that every household in the north uses only Language L",
+        "A formal region containing the two northern districts because they meet a shared criterion"
+      ],
+      "correctIndex": 3,
+      "explanation": "The criterion is an observable district-level attribute: at least60% of households use Language L at home. NW70% and NE60% qualify, including the district exactly at the threshold; SW55% and SE30% do not. Such regionalization uses a shared characteristic rather than a common service hub or reported regional identity. A: The map supplies no common hub or flow connecting all districts into a functional system. B: The rule uses measured household shares, not personal perceptions of the region’s identity. C: A majority threshold permits substantial internal diversity and says nothing about exclusive language use. D: The two qualifying districts form the criterion-defined formal region in this example."
+    },
+    {
+      "id": "hug-1-7-002",
+      "prompt": "The schematic shows the recorded clinic trips from two towns. What most directly supports treating the clinic and the two towns as part of a functional region for this service?",
+      "options": [
+        "Every resident of both towns must have the same cultural identity.",
+        "Both towns are linked to a common service node by the recorded trips.",
+        "The towns must receive identical rainfall because their arrows meet.",
+        "The two towns must have equal populations because both appear in the diagram."
+      ],
+      "correctIndex": 1,
+      "explanation": "A functional region is organized around connections and activities associated with a node. The diagram records trips from both Town A and Town B to the clinic, directly establishing service links. Differences in flow size do not prevent both towns from participating in the same system; the diagram does not measure cultural identity, rainfall or town population. A: A service connection does not establish uniform cultural identity among all residents. B: The directed trips connect both towns to the clinic and supply the relevant functional relationship. C: A travel-flow diagram does not encode climate or show that climates are identical. D: The counts are trips, not resident populations, and the diagram includes two different flow totals."
+    },
+    {
+      "id": "hug-1-7-003",
+      "prompt": "Residents were asked whether each area belongs to a place locally called “Old Town.” No legal boundary is being defined. Which interpretation of the survey is most justified?",
+      "options": [
+        "The name must identify a legally fixed administrative district.",
+        "Every respondent agrees on one precise boundary.",
+        "The differing inclusion shares are consistent with a perceptual region whose limits are not uniformly agreed.",
+        "Area C cannot be included by any resident because its inclusion share is below half."
+      ],
+      "correctIndex": 2,
+      "explanation": "A perceptual or vernacular region is associated with how people identify and understand an area. The survey records90%,55% and20% inclusion for A,B and C. Those different and nonunanimous responses indicate varying perceptions, not a legal declaration or proof that a majority threshold is the only valid way to describe the named area. A: The prompt explicitly distinguishes the survey from a legal boundary-setting process. B: The nonunanimous shares contradict a claim that all respondents agree. C: The distribution of perceptions is the evidence relevant to this kind of region. D: Twenty percent report inclusion, so some respondents include C even though most do not."
+    },
+    {
+      "id": "hug-1-7-004",
+      "prompt": "A study defines a wet formal region as areas with at least 800 mm annual rain and a service-based functional region as areas where more than 50% of recorded trips go to the central city. Using the table, which conclusion is correct?",
+      "options": [
+        "Area B belongs to both regions under the two stated rules.",
+        "Area A belongs to the service region because its rainfall is high.",
+        "Area C belongs to the wet region because its trips go to the city.",
+        "The two regions cannot overlap because their criteria differ."
+      ],
+      "correctIndex": 0,
+      "explanation": "The two criteria classify different attributes and can overlap. A meets the rain threshold but not the trip-share rule; B meets both; C meets the trip-share rule but not the rain threshold. Regional membership depends on the particular criterion, rather than requiring one exclusive regional label for each area. A: B has900 mm rain and80% city-bound trips, satisfying both>=800 mm and>50%. B: A’s40% city-bound trip share fails the functional criterion even though its rain qualifies for the wet region. C: C’s400 mm rain fails the wet-region threshold, independently of its80% city-bound trip share. D: Different attributes can be present in the same place, as B explicitly demonstrates."
+    },
+    {
+      "id": "hug-1-7-005",
+      "prompt": "An official growing region is defined as counties where at least half of cultivated land is planted with a particular crop. Which statement avoids overgeneralizing from that formal-region label?",
+      "options": [
+        "Every resident in the region must grow the crop.",
+        "The region cannot have towns, forests or other crops.",
+        "Counties qualify by a shared threshold, while land uses and livelihoods within them can still vary.",
+        "The label proves that all included counties have exactly the same crop percentage."
+      ],
+      "correctIndex": 2,
+      "explanation": "A formal region can be defined by a threshold characteristic of areas without being perfectly uniform at every point or for every resident. A crop-share rule identifies a common agricultural feature, while allowing other crops, nonagricultural land and different livelihoods within the same counties. A: The unit is cultivated land in qualifying counties, not every resident’s occupation. B: The rule applies to cultivated land and does not exclude other land covers or activities. C: This respects the area-level criterion while retaining internal diversity. D: Values of50%,70% and90% could all satisfy the same minimum threshold, so equality is not implied."
+    },
+    {
+      "id": "hug-1-7-006",
+      "prompt": "After a new transport connection opens, many households begin shopping in a different city. How might the functional retail regions change?",
+      "options": [
+        "Their effective limits can shift as the shopping flows are reorganized.",
+        "Their limits must remain fixed because functional regions are legally permanent.",
+        "Both cities must acquire the same absolute location.",
+        "All shared cultural characteristics of the households must disappear."
+      ],
+      "correctIndex": 0,
+      "explanation": "Functional retail regions are delineated through relationships such as trips and market connections to centers. If those connections change, the area associated with each center can change as well. This describes changing patterns of activity, not necessarily a legal annexation, a movement of the cities or a change in every cultural attribute. A: Reorganized trips can change the pattern used to identify each center’s retail reach. B: Functional regions are not inherently permanent legal jurisdictions; their boundaries depend on the selected activity and method. C: The new link changes connections rather than the coordinates of the cities. D: Changing a shopping destination does not establish that household culture disappears."
+    },
+    {
+      "id": "hug-1-7-007",
+      "prompt": "A researcher wants to study residents’ understanding of a locally named region rather than its legal jurisdiction. Which evidence is best matched to that purpose?",
+      "options": [
+        "A legal border alone, treated as proof that all residents use the same regional name",
+        "An elevation contour alone, treated as proof of shared regional identity",
+        "The total length of roads, without any information on residents’ perceptions",
+        "Residents’ descriptions and mental maps, compared across different communities"
+      ],
+      "correctIndex": 3,
+      "explanation": "A question about a vernacular or perceptual region calls for evidence of how people identify places. Descriptions and mental maps can reveal both shared meanings and disagreement. Legal or physical boundaries may provide context, but neither alone establishes how residents understand a regional name. A: A jurisdiction can differ from a vernacular region and does not prove unanimous naming or belonging. B: Elevation describes a physical attribute rather than directly measuring residents’ regional identification. C: A road-length total supplies neither the named locations nor the perceptions being investigated. D: This directly gathers the perspectives required by the research question and allows differences to be analyzed."
+    },
+    {
+      "id": "hug-1-7-008",
+      "prompt": "A study delineates a shared agricultural belt spanning several countries, while another delineates a commercial district within one city. What do these examples show about regional analysis?",
+      "options": [
+        "A region must cover at least one entire country.",
+        "Regions can be defined at different scales when the defining criteria are explicit.",
+        "A city district cannot be a region because its area is too small.",
+        "A cross-border region must always be perceptual rather than formal or functional."
+      ],
+      "correctIndex": 1,
+      "explanation": "Regionalization is a way of grouping places by characteristics, activities or perceptions; it is not confined to one fixed geographic size. A transnational agricultural pattern and a local commercial concentration can each be investigated as a region when the relevant basis and extent are specified. A: A minimum of one whole country is not part of the concept of a region. B: The examples differ in extent but each can have a meaningful geographic organizing criterion. C: Local districts can be regions for appropriate questions and criteria. D: Crossing a political boundary does not determine whether the criterion is an attribute, a function or a perception."
+    },
+    {
+      "id": "hug-1-7-009",
+      "prompt": "Across a broad landscape, vegetation changes gradually rather than at one abrupt line. What is the strongest reason to treat a mapped regional boundary cautiously?",
+      "options": [
+        "Every regional boundary is fictitious and therefore useless.",
+        "A line on a map proves that no transition exists on the ground.",
+        "A drawn boundary may simplify a transition zone, and another criterion could produce a different boundary.",
+        "A gradual vegetation change proves that all political borders move every year."
+      ],
+      "correctIndex": 2,
+      "explanation": "Regional boundaries depend on the purpose and criteria used to distinguish areas. A sharp cartographic line can simplify a gradual environmental transition rather than marking a sudden change at every point. That limitation makes transparent criteria important; it does not make all regional analysis useless or imply changes in unrelated political boundaries. A: A simplification can be analytically useful when its purpose and limits are clear. B: The supplied gradual change is compatible with a simplified map boundary, not disproved by it. C: This recognizes both the transition and the role of the selected criterion. D: A vegetation gradient is not evidence that legally defined political boundaries change on the same schedule."
+    },
+    {
+      "id": "hug-1-7-010",
+      "prompt": "A conservation team studies animals moving through a shared habitat across provincial borders. Which regionalization is most directly aligned with that ecological question?",
+      "options": [
+        "Group connected habitat areas, while retaining provincial borders as a separate management layer.",
+        "Use provinces only because every physical process ends at their boundaries.",
+        "Use residents’ favorite regional nicknames as the sole measure of habitat connectivity.",
+        "Assume all land within each province has identical habitat."
+      ],
+      "correctIndex": 0,
+      "explanation": "The investigation concerns habitat connections rather than only administrative authority. A region based on connected habitat matches that question, while provincial boundaries can remain relevant to management responsibilities. The choice of ecological criteria need not erase the political layer or imply environmental uniformity within provinces. A: This matches the organizing criterion to the process and keeps useful administrative context available. B: Provincial borders do not necessarily stop animal movement or habitat connections. C: Regional nicknames may be relevant to identity research but do not by themselves measure ecological connectivity. D: Administrative membership is not evidence of identical habitat throughout a province."
+    },
+    {
+      "id": "hug-1-7-011",
+      "prompt": "Two reports use the term “coastal region” but include different districts. What should an analyst do before treating their statistics as directly comparable?",
+      "options": [
+        "Assume the shared name guarantees identical boundaries.",
+        "Choose whichever definition produces the preferred result without explaining it.",
+        "Remove every district near a disputed boundary without applying a rule.",
+        "State and compare the inclusion criteria and geographic coverage of each report."
+      ],
+      "correctIndex": 3,
+      "explanation": "A regional name is not a complete operational definition. Different reports may use distance from shore, administrative units, economic connections or local perceptions. Comparing their actual inclusion rules and coverage makes it possible to identify whether the statistical populations match or require harmonization. A: The same label can be attached to regions defined by different criteria or extents. B: Selecting a definition for a desired result undermines a transparent comparison. C: Arbitrary removal can introduce another inconsistent definition rather than resolve the original mismatch. D: This checks what each named region includes before comparing its aggregate measures."
+    }
+  ]
+}

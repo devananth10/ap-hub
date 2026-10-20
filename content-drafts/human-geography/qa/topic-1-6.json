@@ -1,0 +1,164 @@
+{
+  "topicNumber": "1.6",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "f00437e734021aaf9250a6dfd2a05f9da652f6daacd5431c2ecda8d6bb44d56d",
+  "scopeReview": "PSO-1.C–D: local, national, regional and global scales, variations and interpretations revealed by different scales. Applied weighting, aggregation and median comparisons operationalize these objectives without requiring advanced statistical terminology.",
+  "varietyReview": "Four interpreted stimuli and seven applications distinguish aggregation, changing zones, units versus extent, cross-scale processes, suitable local evidence, comparable boundaries and spatial versus temporal detail. Difficulty and all four keys are varied.",
+  "repetitionReview": "Reviewed earlier sets: national/local concealment is assessed through new denominators and boundary comparisons rather than a repeat of dot identification or clinic choice. Two aggregation stimuli distinguish rescaling populations from redrawing memberships; separate models corroborate both.",
+  "questions": [
+    {
+      "questionId": "hug-1-6-001",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Substantial internal variation, with higher rates in the north than in the south.",
+      "independentReview": "Recomputed the national rate as(90+70+10+30)/4=50 under equal household counts, and northern mean80 versus southern20. The aggregate is consistent, not evidence of uniformly50% local access.",
+      "check": {
+        "type": "nested-access"
+      },
+      "questionSha256": "5cda73cc03f9c85dc4b63564d363fc386f5e03ab1321ce908941533e36eeb75d",
+      "stimulusSha256": "0192f5f35a0fa445a47009e45f54854a0be1a7f67ec50c0b4b3992d04e85743d"
+    },
+    {
+      "questionId": "hug-1-6-002",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "82%, because 820 of the region’s 1,000 residents have the service",
+      "independentReview": "Independently summed numerator810+10=820 and denominator900+100=1000. Checked unweighted national mean50% differs from the resident-weighted82%; the prompt explicitly asks the latter.",
+      "check": {
+        "type": "regional-weighting"
+      },
+      "questionSha256": "7c7aef5eca941978790f2848ede2a711fbee952a7ecae4701e9f911bfc49e55d",
+      "stimulusSha256": "c70ba116b836bfd5576770d789349109c27d961490f76d7dc474365abe0e9897"
+    },
+    {
+      "questionId": "hug-1-6-003",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Changing aggregation boundaries can change the visible pattern without changing the underlying local observations.",
+      "independentReview": "Independently reconstructed planI means(A80+B80)/2=80 and(C20+D20)/2=20; planII(A80+C20)/2=50 and(B80+D20)/2=50. Both overall means remain50 with unchanged equal denominators.",
+      "check": {
+        "type": "aggregation-plans",
+        "localRates": {
+          "A": 80,
+          "B": 80,
+          "C": 20,
+          "D": 20
+        },
+        "groups": [
+          [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C",
+              "D"
+            ]
+          ],
+          [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "D"
+            ]
+          ]
+        ]
+      },
+      "questionSha256": "608830acc03c19b6c5ff99b742118a9c5d833aa98c38c318f185c257251865f0",
+      "stimulusSha256": "444c25951c6b8a9709cdad87ff263e4720463b9b94d85049267ef97cd5c6fc23"
+    },
+    {
+      "questionId": "hug-1-6-004",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Country A has the lower national median, while its listed city has the higher city median.",
+      "independentReview": "Checked national600<800 but city1200>1000. Medians cannot be added or averaged here; no unsupported population weighting or individual rent claim is used.",
+      "check": {
+        "type": "cross-scale-ordering"
+      },
+      "questionSha256": "b2f485b5c9c132b9ffa3b5cefe74dfb8927e886864fc5353a5fcdb8a2daec678",
+      "stimulusSha256": "36a5112a8b1fd49509c093306d0ddf3f2b0ef3cf380baa6b3d08f8aa46833b8e"
+    },
+    {
+      "questionId": "hug-1-6-005",
+      "skill": "Scale Analysis",
+      "difficulty": "foundational",
+      "correctOption": "Global, because the investigation follows connections across multiple world regions",
+      "independentReview": "Matched the explicit multi-continent extent to the global option; the distractors confuse the location of individual observations with the coverage of the investigation.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "f7c9db51d53ee36402f9d059f4d25a430c27e9556fd4b40c95ae3baf85136383"
+    },
+    {
+      "questionId": "hug-1-6-006",
+      "skill": "Scale Analysis",
+      "difficulty": "foundational",
+      "correctOption": "The study groups connected places using a watershed rather than national borders.",
+      "independentReview": "Compared the bounded three-country basin with single-country and whole-world extents. The criterion is an explicit watershed connection; no claim that all regions must be watersheds is made.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "1e5a24aefb6493c532f854228601ce9fed92afb4cd0361eda3872cdb90f7360f"
+    },
+    {
+      "questionId": "hug-1-6-007",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Its geographic extent is global, while its observation units remain local.",
+      "independentReview": "Held the neighborhood unit fixed while varying display extent. Distinguished global coverage of the map from complete sampling coverage, preventing a second unsupported inference.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "524d4c89890ba18dab0f64d0635f5d43555f3a5dcacbfe1945b91c5b44a52836"
+    },
+    {
+      "questionId": "hug-1-6-008",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Street-level paths, traffic and crossing conditions around the school",
+      "independentReview": "Checked the evidence required to compare actual crossing sites: nearby paths and traffic. None of the aggregate alternatives retains site position or conditions.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "c399ad581c7b184d1bef4793db95cce04dd99d54aa82b302790c2d04d455e7c1"
+    },
+    {
+      "questionId": "hug-1-6-009",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Processes operating at several scales can contribute to a local outcome.",
+      "independentReview": "Separated outcome scale from candidate mechanism scale. The correct answer permits cross-scale analysis but does not assert a causal estimate unsupported by the prompt.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "fce750334bcd0f7fe983541a31b8c26555d3a7439247035bc1cf66b90129622c"
+    },
+    {
+      "questionId": "hug-1-6-010",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Use compatible geographic units or reconstruct comparable boundaries",
+      "independentReview": "Tested a counterexample in which population stays put while a district gains a neighborhood through redrawing. Its count changes without migration, demonstrating the need for comparable geographic support.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "e317b4ae596c7144df2dcc20512a2eadc5732db59da1f87c8ea26b976b3e34bc"
+    },
+    {
+      "questionId": "hug-1-6-011",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "The time interval is finer, but the reported spatial unit remains the country.",
+      "independentReview": "Varied only the reporting interval and held country aggregation fixed. The supported comparison is temporal refinement without a finer spatial unit.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "798cff02bb08b8dea274d6c06835b11c878776255316e55698a79c0ccfd406bf"
+    }
+  ]
+}
