@@ -1,0 +1,143 @@
+{
+  "topicNumber": "5.10",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "49b593ae17fd4b31fdf48b6dec155e7d76fd99179400dae64275ec8ceaf6e40f",
+  "scopeReview": "IMP-5.A.1–3: pollution/salinization, land-cover/hydrologic change, desertification and conservation; terraces, irrigation, shifting cultivation, wetland drainage and pastoral management; economic purpose, workloads and social consequences. Practices evaluated conditionally without stereotypes or universal effects.",
+  "varietyReview": "Four meaningful stimuli:salt-mass budget, sediment trial bars, original before/after wetland plan and group time accounts. Deterministic checks balance salt, calculate80% erosion reduction, verify ditch/outlet geometry and sum changed workloads. Additional cases examine recovery, grazing, conversion tradeoffs and social-evidence limits.",
+  "repetitionReview": "Salt mass is distinct from water-volume accounts; sediment percentages from yield; before/after panels from adjacent-property maps; workload expansion from earlier equal-total time allocation. No copied or numeric-only clone. Varied keys and complete option reasoning; difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.fao.org/4/T0234e/T0234E02.htm",
+    "https://www.fao.org/4/t0234e/T0234E03.htm",
+    "https://www.unccd.int/article-1-use-terms"
+  ],
+  "referenceNote": "FAO irrigation/drainage and UNCCD primary definitions checked; no technical treatment prescription, actual field statistics, third-party diagram or question copied. All quantitative and map data hypothetical; student resources unchanged and no human-review claim.",
+  "questions": [
+    {
+      "questionId": "hug-5-10-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Stored salt increases by 70 tonnes, creating a salinization risk if the imbalance persists.",
+      "independentReview": "Independently recomputed100−30=70 tonnes retained. Distinguished salt mass from water volume; no assumption that all irrigation is harmful, no exact soil concentration from unspecified soil mass, and no crop threshold invented.",
+      "check": {
+        "type": "consequences-salt-budget"
+      },
+      "questionSha256": "d14a3bd58faeb0447fe066df15344eac864019b07903df422bbc79eee2eade45",
+      "stimulusSha256": "927bf27c70f289cbce45cc0ddbb48c088ff2977127936fb26be9d270a6b8eff6"
+    },
+    {
+      "questionId": "hug-5-10-002",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "80%",
+      "independentReview": "Independently calculated(40−8)/40=.8. Kept sediment units t/ha and percent distinct. Chart does not show yield or total runoff volume, so those are not inferred; no technical terrace design advice.",
+      "check": {
+        "type": "consequences-sediment-reduction"
+      },
+      "questionSha256": "c50613aea03e54272bd8aba24ecd0d18b5544c8c916593676fffd0b6f79bd86c",
+      "stimulusSha256": "88a509b98917154f3920c6455b692bacda05f171d06f42da1a510ac7b219643a"
+    },
+    {
+      "questionId": "hug-5-10-003",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Additional cropland may come with reduced wetland storage or habitat functions, requiring assessment beyond crop area alone.",
+      "independentReview": "Checked distinct before/after polygons, right-panel drainage arrow to an outlet, and supplied storage/habitat notes. No hydrologic flood magnitude or universal ecosystem outcome inferred from an illustrative plan. Ditch label is placed along the upper vertical segment to avoid the outlet label; flow direction and the downstream outlet remain unchanged. Desktop inspection moved the outlet farther below the crop boundary to keep its text clear of that line; the ditch remains directed toward the outlet.",
+      "check": {
+        "type": "consequences-wetland-conversion"
+      },
+      "questionSha256": "ecca64f809aae2cf738d639a6b1cbe320fce34a97580202a516ed322891b3da7",
+      "stimulusSha256": "130733baafe73d19dafa02ec1dc69a07b8a509b43c9eab86021c381c6c85f0f3"
+    },
+    {
+      "questionId": "hug-5-10-004",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Women’s paid work rises by 4 hours and total listed work rises from 9 to 13 hours, while unpaid work stays 6 hours.",
+      "independentReview": "Independently summed women9→13, men7→9; paid women3→7, unpaid6→6. Distinct from earlier equal-total time-allocation cases: this records an increased combined burden. Group averages for one fictional community, not universal gender roles.",
+      "check": {
+        "type": "consequences-workload-change"
+      },
+      "questionSha256": "ad52e9add5bd794609f0ef05ee9f343b1ce79cedbe2f2571c404d7b541239014",
+      "stimulusSha256": "0b0d64d17fad1d159a232c12cf64482bd6f20ccd9eddc201e3768609f0f198ad"
+    },
+    {
+      "questionId": "hug-5-10-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Shorter, less steep surface-flow paths can slow runoff and reduce its capacity to move soil.",
+      "independentReview": "Verified the conditional physical mechanism, avoiding a design recommendation or guaranteed conservation result. Separates erosion control from a quantitative yield claim.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "6454b944f74ff3c181e5377a25cdad00e7a7aeab16c22ebf057546fadc534ed3"
+    },
+    {
+      "questionId": "hug-5-10-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Reduced recovery time can weaken vegetation regrowth and soil-fertility restoration under those conditions.",
+      "independentReview": "Checked that no universal safe fallow length or stereotype about a named community is given. Conditional impact of reduced recovery distinguishes management change from condemnation of an entire farming system.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "6632982ad5a49dc46bdb7ad81cd84e855099e880e76d40d26ee9863f87638018"
+    },
+    {
+      "questionId": "hug-5-10-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "A semiarid grazing area experiences sustained losses of vegetation and soil productivity under combined climatic stress and damaging land use.",
+      "independentReview": "Checked against UNCCD Article1:arid, semiarid and dry-subhumid degradation, not the spread of all natural deserts or hyperaridity itself. No invented erosion threshold or single-factor attribution.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "6f674ba264922635828573bc493713e35da96c6b3be6a3aaf153272aa1133a96"
+    },
+    {
+      "questionId": "hug-5-10-008",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Pastoral mobility by itself proves that all herding causes identical permanent degradation.",
+      "independentReview": "Avoided equating extensive/pastoral/nomadic systems with automatic overgrazing. Correct option is explicitly the claim to avoid; other options remain qualified evidence-based statements.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "e2c9d266cb8e0f21366072b8ac307c29eff212cd0e83e50802e44c342839f0da"
+    },
+    {
+      "questionId": "hug-5-10-009",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Crop output and returns alongside habitat, carbon-storage, soil and water changes.",
+      "independentReview": "No quantified carbon emission, actual forest claim or automatic causal estimate assigned. The question selects an assessment scope rather than declaring all forest conversion identical.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "6814bdcf6cfea4272ac3093db1924784b84042613fe31171afd89300557478fa"
+    },
+    {
+      "questionId": "hug-5-10-010",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Compare soil/water benefits, crop opportunity costs, maintenance and affected groups rather than use one indicator alone.",
+      "independentReview": "Assessed tradeoffs without recommending a technical buffer width or claiming benefit-cost magnitudes that were not supplied. No paid policy decision or real farm intervention.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "e2613c4820de3f0984198bd0c2a011c1524288b5fa13d2f6ae78d12dec370399"
+    },
+    {
+      "questionId": "hug-5-10-011",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Every household member must now have greater decision-making power and a more varied diet.",
+      "independentReview": "Aligned IMP-5.A.3 social consequences while withholding unsupported causal or universal conclusions. No actual community or gender-income statistic invented.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "ebf20bad1cde43ac6ee6f9050aa9790506889dce5ef8405d83e5b5950bccf7c9"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "topicNumber": "5.9",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "6aa4bd488390a3199f6875a2f960c569a95e50fb7cc35a21055017c7b3b117b8",
+  "scopeReview": "PSO-5.E.1–3: global agricultural chains, commodity-export dependence, political relationships, infrastructure and trade patterns. Food availability and household access are separated; risks and benefits remain conditional rather than uniformly pro- or anti-trade.",
+  "varietyReview": "Four meaningful original stimuli: cross-border staged product map, export-price-shock table, signed grain-flow chart and landed-cost offers. Deterministic checks trace directions, compute shock exposure, balance one grain and add price/freight/duty. Remaining cases apply resilience, seasonality and multiscale transmission.",
+  "repetitionReview": "Unlike5.7 domestic chain organization, this set emphasizes cross-border dependence, sourcing conditions and trade shocks. Four distinct evidence tasks, not country-name substitutions. All data invented; varied keys and detailed option reasoning, difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.fao.org/agrifood-economics/publications/detail/en/c/1757411/",
+    "https://www.fao.org/publications/fao-flagship-publications/the-state-of-agricultural-commodity-markets"
+  ],
+  "referenceNote": "Official scope and FAO research themes checked; no current tariff, actual national export statistic, third-party question or trade map copied. All assumptions explicit; no new resources or human-review claim.",
+  "questions": [
+    {
+      "questionId": "hug-5-9-001",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Growing, processing and final consumption can occur in different countries linked by trade.",
+      "independentReview": "Verified the A→B beans and B→C processed-product routes and distinct territorial polygons. All three countries are invented; no claim about actual cocoa-country trade patterns, revenue shares or unequal treatment is inferred solely from arrows.",
+      "check": {
+        "type": "global-stage-flows"
+      },
+      "questionSha256": "1fb3f27ebeeee87796374d9be11341fb33025fae014ea7c22eeb02eb0306e4f6",
+      "stimulusSha256": "247dd7b5c44e35a9eb1b1edfd612ccbb74777c79ba053265f4dc2645db772f94"
+    },
+    {
+      "questionId": "hug-5-9-002",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "X:20%; Y:5%",
+      "independentReview": "Independently computed coffee shares80% and20%, multiplied by25% to obtain20% and5%. Postshock totals80 and190 million. Distinct denominators avoid conflating absolute revenue losses20/10 with percentage losses.",
+      "check": {
+        "type": "global-export-shock",
+        "priceDrop": 0.25
+      },
+      "questionSha256": "1557bac2eb7726bca68f765e1fa87e810648568e48c6623716d04ca3ee57c13e",
+      "stimulusSha256": "2b4e6c7546b7d5eaa8353c573d31195020f62635bc4f1c5ae6d555f6b1fc373f"
+    },
+    {
+      "questionId": "hug-5-9-003",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "90 thousand tonnes",
+      "independentReview": "Independently balanced80+40=120 entering;10+20=30 leaving;90 remaining. Same grain, same year and explicit no-stock/no-other-use assumption prevent mixed-product or hidden allocation ambiguity. Not a nutritional adequacy measure.",
+      "check": {
+        "type": "global-grain-account"
+      },
+      "questionSha256": "f232e782e4d8674547cb6dd69e4f29e9326f96e54e8532948742c51df4ee0d75",
+      "stimulusSha256": "3e384166b658719292ce25e3538bb6de956bac164d206c551ea4f67c0a28dd09"
+    },
+    {
+      "questionId": "hug-5-9-004",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Far:120 units/tonne, despite its higher freight cost.",
+      "independentReview": "Recomputed140 versus120, a20-unit difference. Duty is explicitly fixed units/tonne rather than a percentage, so there is no disputed tax base. No legal or actual-country tariff claim.",
+      "check": {
+        "type": "global-landed-cost"
+      },
+      "questionSha256": "53e4c61da57bd360abe98193bb2a7631a059c37fe18a4b8f3565c1bd3b8a2509",
+      "stimulusSha256": "55ca4cf0d714b8c155ebc951e1dbf4c5304968de95f24ae2b4610168ffac4a4b"
+    },
+    {
+      "questionId": "hug-5-9-005",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Lower export earnings can reduce purchasing capacity for imports and transmit pressure through the wider economy.",
+      "independentReview": "Cross-checked FAO commodity-dependence research for possible macroeconomic shock transmission. No exact exchange-rate response, welfare estimate or uniform country outcome assumed.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "bb99c1f07418f3a807d3acf45388cd427c705fa2a93ef7a83883826a21ccc02a"
+    },
+    {
+      "questionId": "hug-5-9-006",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "Both routes share a bottleneck, so disruption at that facility could affect both despite different origins.",
+      "independentReview": "Checked common-node logic rather than treating all trade diversification as ineffective. Conditional facility disruption, not a fabricated real crisis or forecast.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "9c274d3631497279898461ddb5b8ba4249c6e1d291cd11fb29a9076877932094"
+    },
+    {
+      "questionId": "hug-5-9-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Complementary seasonal production and transport links can connect supply in one region with demand in another.",
+      "independentReview": "Used a hypothetical suitable season rather than claiming all opposite-hemisphere crops share one harvest calendar. No actual shipment, footprint or current price invented.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "f28244d44daf9b22ca950fee2e3dcf43635e1688a3d4dac5a7491fc6430c7abd"
+    },
+    {
+      "questionId": "hug-5-9-008",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "High export tonnage alone proves that every resident is food secure.",
+      "independentReview": "Checked the answer targets an inference to avoid rather than condemning all export farming. No causal direction is inferred from coexistence of exports and unmet access.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "c3d2526116ddd285baa88aacb23b281a4bb573ba04efa9e4fb8a3a9a2e3aa3d3"
+    },
+    {
+      "questionId": "hug-5-9-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "One trade barrier is reduced, while remaining infrastructure limits may still constrain reliable perishable-food delivery.",
+      "independentReview": "Aligned political/infrastructure mechanisms with PSO-5.E.3. Hypothetical procedural change, not current law or a claim that refrigeration is required for every food.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d6f24658aa0cd30c86eeef961011e1ed6f7a9db3e696628cb2660ac085c12533"
+    },
+    {
+      "questionId": "hug-5-9-010",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Alternative suppliers’ usable capacity, prices, shipping access and compatibility with domestic handling requirements.",
+      "independentReview": "Selected evidence needed for a conditional resilience claim without inventing actual exporter capacity or using current political events. Production is distinguished from grain available for export.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "398f8bbf977fe5ae43be8560de5588f1c0ea5c1a9e50e1e33ca6d09fc0aa256d"
+    },
+    {
+      "questionId": "hug-5-9-011",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Interdependence links a production-region shock with consumption and trade conditions elsewhere.",
+      "independentReview": "Consistent with FAO trade-shock framework; no particular real drought, country, food-price increase or guaranteed impact magnitude claimed.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "2d5ac8232861d6d384db5c56b65a890c530e935ca50b04872f2e7e2de0c2e40f"
+    }
+  ]
+}

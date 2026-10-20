@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 5,
+  "topicId": "topic-5-10",
+  "questions": [
+    {
+      "id": "hug-5-10-001",
+      "prompt": "Assume no other salt enters or leaves the irrigated soil during the year. Which interpretation follows from the salt budget?",
+      "options": [
+        "Evaporating water removes all dissolved salts, so none can accumulate.",
+        "The soil loses 70 tonnes of salt because irrigation is an outflow.",
+        "Stored salt increases by 70 tonnes, creating a salinization risk if the imbalance persists.",
+        "The 100 tonnes entering must all leave through the 30-tonne drainage flow."
+      ],
+      "correctIndex": 2,
+      "explanation": "The net salt addition is 100−30=70 tonnes. Water can leave through evaporation and plant use without removing an equivalent quantity of dissolved salts. Repeated accumulation can raise soil salinity, depending on drainage, water quality, soils and management. The budget does not specify a crop’s tolerance or an exact yield loss. A: Evaporation removes water rather than all the salts dissolved in it. B: Irrigation is the supplied salt input, while drainage is the output. C: This correctly balances the two flows and treats harm as a risk rather than an invented yield percentage. D: The unequal stated flows leave a residual instead of forcing equality."
+    },
+    {
+      "id": "hug-5-10-002",
+      "prompt": "Relative to the bare-soil treatment, what percentage reduction in measured sediment loss occurs in the terraced treatment?",
+      "options": [
+        "80%",
+        "20%",
+        "32%",
+        "500%"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sediment loss falls from 40 to 8 tonnes/hectare: a reduction of 32. Relative to the original 40, that is 32/40×100=80%. Terraces and cover can reduce erosion under suitable design and management, but these trial results do not guarantee the same reduction at every site or measure all environmental outcomes. A: This divides the 32-tonne reduction by the original 40. B: Twenty percent is the remaining share 8/40, not the reduction. C: Thirty-two is the absolute difference in tonnes/hectare, not the percentage. D: The new loss is one-fifth of the old, not a reduction exceeding 100%."
+    },
+    {
+      "id": "hug-5-10-003",
+      "prompt": "Field notes state that the former wetland stored seasonal floodwater and provided wetland habitat. What is a reasonable consequence to evaluate after the mapped drainage and conversion?",
+      "options": [
+        "All flood risk everywhere must disappear because cropland replaces wetland.",
+        "The drainage ditch proves crop yields are maximized without any further inputs.",
+        "Every former wetland species will necessarily thrive in the drained fields.",
+        "Additional cropland may come with reduced wetland storage or habitat functions, requiring assessment beyond crop area alone."
+      ],
+      "correctIndex": 3,
+      "explanation": "Drainage can make land available for cultivation while changing hydrology and habitat. The supplied field notes identify functions that may be reduced by conversion. The map does not establish the size of any downstream flood change, actual yields or the response of every species; those need further evidence. A: Changing one site’s storage does not guarantee the removal of all flood risk. B: A ditch does not establish soil suitability, input needs or maximum yield. C: Wetland-dependent habitat conditions can be altered rather than universally improved. D: This recognizes a potential production benefit alongside the specific functions that need evaluation."
+    },
+    {
+      "id": "hug-5-10-004",
+      "prompt": "What does the time-use evidence show about women’s work after the commercial-crop expansion?",
+      "options": [
+        "Women’s total work falls because paid work replaces all unpaid work.",
+        "Women’s paid work rises by 4 hours and total listed work rises from 9 to 13 hours, while unpaid work stays 6 hours.",
+        "Women and men have identical total workloads after the change.",
+        "The table proves that women control every unit of the new crop income."
+      ],
+      "correctIndex": 1,
+      "explanation": "For women the totals are 3+6=9 hours before and 7+6=13 after. Paid work rises by 4 hours while unpaid work is unchanged. New earning opportunities can therefore coexist with a larger combined workload in this community. Time records do not establish income control, voluntariness or the experience of all women elsewhere. A: The unpaid amount remains 6 hours, so it has not been fully replaced. B: This correctly separates paid, unpaid and combined work changes. C: Afterward men total 7+2=9, compared with women’s 13. D: Hours worked do not identify who decides how income is used."
+    },
+    {
+      "id": "hug-5-10-005",
+      "prompt": "A hillside farm builds and maintains level planting benches across a slope. Which mechanism can help explain reduced soil erosion?",
+      "options": [
+        "The benches make gravity stop acting on the entire landscape.",
+        "The practice removes every need to manage drainage or unstable slopes.",
+        "Shorter, less steep surface-flow paths can slow runoff and reduce its capacity to move soil.",
+        "The benches guarantee the same harvest increase for every crop and rainfall pattern."
+      ],
+      "correctIndex": 2,
+      "explanation": "Terraces alter slope geometry and water movement. When appropriately built and maintained, they can slow surface flow and help retain soil and water. Outcomes depend on drainage, construction, soils and upkeep; a failed or poorly placed terrace can create problems rather than provide universal protection. A: Gravity continues to influence water and slope stability. B: Drainage and stability remain important. C: This connects the landscape modification with a plausible erosion-control pathway. D: The mechanism does not establish an identical crop-yield response everywhere."
+    },
+    {
+      "id": "hug-5-10-006",
+      "prompt": "A shifting-cultivation system originally leaves land in long fallow, but later reuses the same plots much sooner without compensating fertility management. Which concern follows most directly?",
+      "options": [
+        "Shorter fallow proves soil recovery is instantaneous.",
+        "Every shifting-cultivation system is identical to permanent urban construction.",
+        "A change in fallow length cannot affect vegetation or nutrients.",
+        "Reduced recovery time can weaken vegetation regrowth and soil-fertility restoration under those conditions."
+      ],
+      "correctIndex": 3,
+      "explanation": "Fallow periods can allow vegetation and soil processes to recover between cropping episodes. Shortening them without compensating practices can increase pressure on fertility and cover. The effect depends on environment and management, so shifting cultivation should not be treated as inherently identical to permanent deforestation or uniformly damaging. A: Less recovery time does not imply faster or complete recovery. B: Rotating cropped and fallow plots differs from permanent construction. C: Recovery duration can matter to the processes named. D: This follows the changed recovery interval and the stated absence of compensating management."
+    },
+    {
+      "id": "hug-5-10-007",
+      "prompt": "Which situation most clearly illustrates desertification as a land-degradation process rather than simply the existence of a natural desert?",
+      "options": [
+        "A semiarid grazing area experiences sustained losses of vegetation and soil productivity under combined climatic stress and damaging land use.",
+        "A naturally hyperarid desert remains unchanged in vegetation and productivity.",
+        "A town receives one dry afternoon after a wet morning.",
+        "Any agricultural region changes its legal boundary."
+      ],
+      "correctIndex": 0,
+      "explanation": "Desertification concerns degradation in dryland environments, including losses of biological or economic productivity from interacting climatic and human factors. It is not synonymous with the presence of a naturally dry desert or every short dry spell. The scenario supplies a sustained productivity decline in a semiarid area. A: This identifies relevant dryland conditions and degradation, without assigning a single cause. B: An unchanged natural desert does not by itself demonstrate a degradation process. C: A brief weather event alone does not establish sustained land degradation. D: Administrative change is not a measure of ecological productivity."
+    },
+    {
+      "id": "hug-5-10-008",
+      "prompt": "Herders adjust seasonal routes and stocking to available forage. Which claim should be avoided when evaluating the environmental consequences?",
+      "options": [
+        "Forage supply and grazing pressure can vary across seasons.",
+        "Pastoral mobility by itself proves that all herding causes identical permanent degradation.",
+        "Concentrated use near limited water points can require careful management.",
+        "Actual vegetation condition and recovery matter when assessing grazing effects."
+      ],
+      "correctIndex": 1,
+      "explanation": "Pastoral systems differ in mobility, stocking, access rules and environmental conditions. Mobility can help match variable forage availability, while excessive pressure at particular sites can cause damage. The practice should be assessed with evidence rather than equating movement itself with a universal environmental outcome. A: This is a relevant seasonal relationship. B: This is the unsupported categorical inference the question asks students to avoid. C: Water access can concentrate use, making local evidence relevant. D: Observed condition and recovery help distinguish impacts among settings."
+    },
+    {
+      "id": "hug-5-10-009",
+      "prompt": "A forest is cleared for crop production. Which set of outcomes should be evaluated together to assess consequences rather than only the amount of new cropland?",
+      "options": [
+        "Only the new field boundary’s geometric shape.",
+        "Only the number of letters in the crop name.",
+        "A guarantee that every resident’s diet and income improve equally.",
+        "Crop output and returns alongside habitat, carbon-storage, soil and water changes."
+      ],
+      "correctIndex": 3,
+      "explanation": "Land conversion can create agricultural output while changing ecosystem functions and social returns. A complete evaluation needs evidence on those different outcomes and who experiences them. It should not infer a uniform benefit or harm from cropland area alone or assume that every effect has the same magnitude in every forest. A: Shape alone omits production, environmental and distributional effects. B: Crop-name length is unrelated to the relevant consequences. C: Equal improvements are not established by a land-cover change. D: These measures cover production and several relevant environmental dimensions."
+    },
+    {
+      "id": "hug-5-10-010",
+      "prompt": "A conservation strip reduces sediment leaving fields but also occupies land formerly cropped. What is the best way to evaluate the change?",
+      "options": [
+        "Compare soil/water benefits, crop opportunity costs, maintenance and affected groups rather than use one indicator alone.",
+        "Conclude it has no benefit because cropped area decreases.",
+        "Conclude it has no cost because sediment loss decreases.",
+        "Assume the same strip width is optimal for every site without additional evidence."
+      ],
+      "correctIndex": 0,
+      "explanation": "A conservation practice can involve benefits and costs at different scales and times. Reduced sediment may help soil and downstream water, while land and maintenance have opportunity costs. Evaluation should consider local conditions and distribution rather than treat one metric as a complete answer. A: This recognizes multiple outcomes and the need for context. B: Reduced cropped area does not negate possible conservation benefits. C: An environmental gain does not eliminate land or maintenance costs. D: Site-specific evidence is needed before an optimal design can be identified."
+    },
+    {
+      "id": "hug-5-10-011",
+      "prompt": "Commercial-crop earnings increase in a community, but no information is collected about who controls the money or how household diets change. Which claim remains unsupported?",
+      "options": [
+        "Crop commercialization can change the economic purpose of production.",
+        "Additional data could examine income control and household food choices.",
+        "Every household member must now have greater decision-making power and a more varied diet.",
+        "Higher crop earnings and social outcomes are related questions requiring distinct evidence."
+      ],
+      "correctIndex": 2,
+      "explanation": "Rising earnings can create opportunities, but household bargaining, spending, food access and workload can change differently. Without those observations, universal claims about power or diet go beyond the evidence. This does not establish that commercialization is always beneficial or always harmful. A: A move toward sales can change production’s economic orientation. B: Those observations would directly address the missing social outcomes. C: This is the unverified universal inference. D: Keeping economic totals and household outcomes distinct is appropriate."
+    }
+  ]
+}

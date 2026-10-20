@@ -59,6 +59,18 @@ test('von Thunen checks retain centered ring order, true rent curves, route rate
  const r=structuredClone(qa.questions[8]);r.check.slopes[0]=50;assert.throws(()=>verifyGeographyQuestion(batch.questions[8],r));
  const html=render(geographyStimuli['hug-5-8-001']);assert.match(html,/cx="230" cy="134" r="92.39999999999999"/);assert.ok(html.includes('>IV</text>'));
 });
+test('global agricultural checks retain cross-border stages, shock shares, signed grain flows and landed costs',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-5-9.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-5-9.json','utf8'));
+ for(const [i,change] of [[0,s=>s.paths[1].points.reverse()],[1,s=>s.rows[1][2]='20'],[2,s=>s.series[0].values[3]=0],[3,s=>s.rows[0][3]='0']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+test('agricultural-consequence checks preserve salt mass, sediment percentages, drainage geometry and combined work',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-5-10.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-5-10.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[1][1]='100'],[1,s=>s.series[0].values[2]=32],[2,s=>s.paths[0].points.reverse()],[3,s=>s.rows[1][2]='2']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
 const base={title:'TEST ONLY',description:'Original hypothetical test data; not a published question.',caption:'TEST ONLY',hypothetical:true,attribution:'Original PrepAtlas schematic and synthetic data'};
 const chart={...base,kind:'chart',unitLabel:'People (thousands)',categories:['A','B'],series:[{label:'Year 1',values:[25,50]},{label:'Year 2',values:[50,75]}],max:100};
 const pyramid={...base,kind:'pyramid',unitLabel:'People (thousands)',max:100,cohorts:[{label:'0–14',ageStart:0,ageEnd:14,male:50,female:50},{label:'15–64',ageStart:15,ageEnd:64,male:75,female:75},{label:'65+',ageStart:65,ageEnd:null,male:25,female:25}]};

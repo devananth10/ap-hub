@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 5,
+  "topicId": "topic-5-9",
+  "questions": [
+    {
+      "id": "hug-5-9-001",
+      "prompt": "Which interpretation best explains the international division of activities shown by the product flows?",
+      "options": [
+        "Growing, processing and final consumption can occur in different countries linked by trade.",
+        "Country C must grow every bean used in its final products.",
+        "The location of processing proves all farm income remains in Country B.",
+        "A product can cross a national boundary only before it is processed."
+      ],
+      "correctIndex": 0,
+      "explanation": "The diagram places growing in A, processing in B and the final consumer market in C. These activities can be geographically separated and connected through trade. Product movements do not by themselves show ownership, income distribution, freight emissions or the location of every other supplier. A: This traces the distinct stages and countries supplied in the map. B: The depicted bean-growing stage is in A rather than C. C: The arrows show products, not a complete financial or ownership account. D: The second arrow explicitly carries a processed product across a boundary."
+    },
+    {
+      "id": "hug-5-9-002",
+      "prompt": "Coffee export prices fall 25%, while coffee volumes and all other export earnings stay fixed. By what percentage does total export revenue fall in each economy?",
+      "options": [
+        "X:25%; Y:25%",
+        "X:20%; Y:20%",
+        "X:5%; Y:20%",
+        "X:20%; Y:5%"
+      ],
+      "correctIndex": 3,
+      "explanation": "X initially earns 80+20=100 million units; coffee loses 20, reducing total revenue 20%. Y initially earns 40+160=200; coffee loses 10, reducing total revenue 5%. A commodity’s share of total earnings affects exposure to its price shock. These are export accounts, not complete measures of GDP, household income or food access. A: The 25% price fall applies only to coffee earnings, not all exports. B: Y’s loss is 10 out of 200, not 20%. C: This reverses the two economies’ dependence and effects. D: This applies the shock to coffee and then divides by each economy’s original total."
+    },
+    {
+      "id": "hug-5-9-003",
+      "prompt": "For this one grain and year, there are no stock changes or other uses beyond the chart. How much remains for domestic food use after exports and the listed losses?",
+      "options": [
+        "110 thousand tonnes",
+        "90 thousand tonnes",
+        "130 thousand tonnes",
+        "150 thousand tonnes"
+      ],
+      "correctIndex": 1,
+      "explanation": "Domestic food availability in this simplified account is production plus imports minus exports and losses:80+40−10−20=90 thousand tonnes. International inflows can supplement production, while exports and losses reduce what remains. The total does not show whether all households can afford or obtain the grain. A: This subtracts exports but omits the 20 thousand tonnes of losses. B: This assigns the correct signs to all four supplied flows. C: This incorrectly adds exports instead of subtracting them and omits losses. D: This adds all four quantities even though two leave the domestic food account."
+    },
+    {
+      "id": "hug-5-9-004",
+      "prompt": "A buyer chooses between suppliers using the listed price, freight and hypothetical import duty per tonne. Which offer has the lower landed cost?",
+      "options": [
+        "Near:110 units/tonne, because import duties are not costs.",
+        "Near:140 units/tonne, which is lower than Far’s 150.",
+        "Far:120 units/tonne, despite its higher freight cost.",
+        "Both:140 units/tonne, because distance determines all delivered prices."
+      ],
+      "correctIndex": 2,
+      "explanation": "Near totals 100+10+30=140 units/tonne. Far totals 90+30+0=120. Production price, infrastructure-related freight and political trade rules together affect sourcing. A more distant or higher-freight supplier can still be cheaper overall; these invented fixed duties are not statements of current law. A: This leaves out the explicitly applicable 30-unit duty. B: Far’s stated components total 120, not 150. C: This correctly adds each offer’s components and compares totals. D: The offers differ in both prices and duties, not just freight."
+    },
+    {
+      "id": "hug-5-9-005",
+      "prompt": "An economy relies heavily on one agricultural export to earn foreign exchange used to buy imported food and fuel. Why can a fall in that export’s price affect more than its farms?",
+      "options": [
+        "The export price can influence only the physical shape of farm fields.",
+        "Lower export earnings can reduce purchasing capacity for imports and transmit pressure through the wider economy.",
+        "Every household must experience exactly the same income loss as the export sector.",
+        "A lower export price automatically raises all import purchasing power."
+      ],
+      "correctIndex": 1,
+      "explanation": "Export dependence can link farm-sector earnings with access to foreign goods and other economic activity. A negative price shock may reduce purchasing capacity or public and private revenue, although reserves, exchange rates, policy and other sectors influence the actual result. Effects need not be identical for every household. A: The question supplies a financial connection to imports, not only field morphology. B: This identifies the intersectoral transmission while retaining uncertainty about outcomes. C: Different households and institutions have different exposures and buffers. D: A loss of earnings does not automatically improve the capacity to purchase imports."
+    },
+    {
+      "id": "hug-5-9-006",
+      "prompt": "Two food-import routes depend on the same single port and warehouse. Why might counting the routes alone overstate supply resilience?",
+      "options": [
+        "Both routes share a bottleneck, so disruption at that facility could affect both despite different origins.",
+        "Different origin labels guarantee the routes cannot share infrastructure.",
+        "Two routes necessarily provide twice the resilience of one under every disruption.",
+        "A warehouse interruption can affect only the country where the food was grown."
+      ],
+      "correctIndex": 0,
+      "explanation": "Supplier diversity and infrastructure diversity are different. Two sources can still depend on one port, storage site or transport corridor. Evaluating resilience requires tracing shared facilities and backup capacity, not merely counting origin countries. The scenario does not prove that an interruption will occur. A: This follows the explicit common facility and explains the vulnerability. B: The stem specifies the same port and warehouse. C: Resilience depends on how routes overlap and what alternatives exist. D: A distribution bottleneck can affect consumers and other stages far from farms."
+    },
+    {
+      "id": "hug-5-9-007",
+      "prompt": "A region imports fresh produce during its own winter from a region experiencing a suitable growing season. Which explanation best accounts for the connection?",
+      "options": [
+        "Seasonal climate differences eliminate the need for transport or trade networks.",
+        "Imports prove that the receiving region can never grow any food.",
+        "Complementary seasonal production and transport links can connect supply in one region with demand in another.",
+        "Every place has identical growing seasons, so the shipment cannot occur."
+      ],
+      "correctIndex": 2,
+      "explanation": "Agricultural trade can connect places with different growing seasons and production conditions. Storage, handling, infrastructure and prices determine whether particular shipments are feasible. Seasonal imports do not imply permanent incapacity to produce food or the absence of environmental and economic tradeoffs. A: Seasonal complementarity still requires a means of moving and handling the product. B: An off-season import does not establish a universal farming limitation. C: This combines physical timing with the network needed to supply consumers. D: Seasonal patterns differ across regions and hemispheres."
+    },
+    {
+      "id": "hug-5-9-008",
+      "prompt": "A country exports large amounts of one crop while some residents struggle to obtain a varied diet. Which inference should be avoided?",
+      "options": [
+        "Export production and household food access measure different outcomes.",
+        "Income and distribution can affect whether residents obtain food.",
+        "A strong export sector can coexist with uneven household access.",
+        "High export tonnage alone proves that every resident is food secure."
+      ],
+      "correctIndex": 3,
+      "explanation": "National export totals do not establish that all households have sufficient, affordable and appropriate food. Distribution, earnings, prices and local access matter. Recognizing this limit does not prove that exports always cause hunger or that trade has no benefits; it keeps the conclusion at the scale supported by the evidence. A: This is an appropriate distinction between aggregate flows and household outcomes. B: These are relevant mediating conditions. C: The two facts can coexist without a logical contradiction. D: This is the unsupported universal inference from an aggregate export measure."
+    },
+    {
+      "id": "hug-5-9-009",
+      "prompt": "An agreement removes a border delay for food shipments, but the receiving area still lacks refrigerated storage. What is the most defensible expectation?",
+      "options": [
+        "One trade barrier is reduced, while remaining infrastructure limits may still constrain reliable perishable-food delivery.",
+        "Every supply-chain constraint has been removed by the agreement.",
+        "Cold storage can no longer influence spoilage after border procedures change.",
+        "All farmers automatically receive an identical share of any savings."
+      ],
+      "correctIndex": 0,
+      "explanation": "Political arrangements and physical infrastructure interact. Reduced border delays can help delivery, but missing cold storage, roads or handling capacity can remain important. The combined network must be evaluated before predicting total benefits or their distribution. A: This recognizes both the improved rule and the remaining stated bottleneck. B: The storage limitation remains explicitly unresolved. C: Handling after border clearance can still affect product quality. D: The agreement alone does not determine who captures savings."
+    },
+    {
+      "id": "hug-5-9-010",
+      "prompt": "An analyst finds a trading partner supplied most imported grain last year. Which additional information is most relevant before concluding the country could easily replace that partner?",
+      "options": [
+        "The length of the partner’s official name.",
+        "Only the receiving country’s flag colors.",
+        "Alternative suppliers’ usable capacity, prices, shipping access and compatibility with domestic handling requirements.",
+        "An assumption that every exporter can immediately supply unlimited grain."
+      ],
+      "correctIndex": 2,
+      "explanation": "Replacing a supplier depends on feasible alternatives, not just the presence of other producing countries. Available export quantities, product suitability, costs, contracts and transport/storage connections can limit substitution. A map of many producers does not alone establish immediate replacement capacity. A: Name length does not measure substitution capacity. B: Flag colors do not establish grain supply or delivery conditions. C: These measures address the practical capacity and costs of alternative sourcing. D: Unlimited immediate supply is an unsupported assumption."
+    },
+    {
+      "id": "hug-5-9-011",
+      "prompt": "A drought reduces export harvests in one major supplier region, and buyers elsewhere face higher replacement costs. What geographic concept best explains the spread of effects?",
+      "options": [
+        "Every importing country must have experienced the same drought locally.",
+        "Interdependence links a production-region shock with consumption and trade conditions elsewhere.",
+        "National borders prevent every economic effect from crossing them.",
+        "The shock proves that all agricultural products have one global price and no local differences."
+      ],
+      "correctIndex": 1,
+      "explanation": "Connected supply networks can transmit a localized production shock through trade, sourcing costs and prices. The receiving regions need not experience the same physical hazard. The extent of transmission depends on reserves, alternatives, contracts and policy, so a global connection does not imply uniform prices or impacts. A: Trade can transmit effects without identical local weather. B: This connects the originating production disruption with distant market consequences. C: Cross-border commodity links are explicitly part of the scenario. D: Products, markets and exposures remain different."
+    }
+  ]
+}

@@ -9668,5 +9668,386 @@
         "150"
       ]
     ]
+  },
+  "hug-5-9-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "flow",
+    "title": "Three countries in one agricultural product network",
+    "description": "Hypothetical countries A,B,C. Beans are grown in A, shipped to a processor in B, and processed products are shipped from B to consumers in C. Arrows show product directions rather than money or tonnage.",
+    "caption": "Original international-network schematic, not a world map or real trade route. Country shapes, labels and activities are invented for the exercise.",
+    "unitLabel": "Arrows: successive product transfers",
+    "regions": [
+      {
+        "label": "A",
+        "polygon": [
+          [
+            3,
+            10
+          ],
+          [
+            24,
+            5
+          ],
+          [
+            28,
+            45
+          ],
+          [
+            8,
+            52
+          ]
+        ],
+        "labelPoint": [
+          14,
+          45
+        ]
+      },
+      {
+        "label": "B",
+        "polygon": [
+          [
+            38,
+            8
+          ],
+          [
+            61,
+            10
+          ],
+          [
+            63,
+            50
+          ],
+          [
+            40,
+            48
+          ]
+        ],
+        "labelPoint": [
+          50,
+          45
+        ]
+      },
+      {
+        "label": "C",
+        "polygon": [
+          [
+            76,
+            5
+          ],
+          [
+            96,
+            12
+          ],
+          [
+            95,
+            52
+          ],
+          [
+            73,
+            48
+          ]
+        ],
+        "labelPoint": [
+          85,
+          45
+        ]
+      }
+    ],
+    "paths": [
+      {
+        "label": "Beans",
+        "points": [
+          [
+            16,
+            25
+          ],
+          [
+            32,
+            25
+          ],
+          [
+            50,
+            25
+          ]
+        ],
+        "arrow": true
+      },
+      {
+        "label": "Processed",
+        "points": [
+          [
+            50,
+            25
+          ],
+          [
+            68,
+            25
+          ],
+          [
+            84,
+            25
+          ]
+        ],
+        "arrow": true
+      }
+    ]
+  },
+  "hug-5-9-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Export earnings before a coffee-price shock",
+    "description": "Hypothetical annual export revenues in million currency units. X:coffee 80, other exports 20. Y:coffee 40, other exports 160. Only coffee prices change in the question; volumes and other earnings remain fixed.",
+    "caption": "Original synthetic concentration comparison. Coffee earnings are one component of total exports; the table does not describe complete national production or household outcomes.",
+    "headers": [
+      "Economy",
+      "Coffee (million units)",
+      "Other exports (million units)"
+    ],
+    "rows": [
+      [
+        "X",
+        "80",
+        "20"
+      ],
+      [
+        "Y",
+        "40",
+        "160"
+      ]
+    ]
+  },
+  "hug-5-9-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "One grain’s annual production and trade account",
+    "description": "Hypothetical annual grain account, all in thousand tonnes:domestic production 80, imports 40, exports 10, losses 20. No stock changes, seed, feed or other unlisted uses occur in this exercise.",
+    "caption": "Original synthetic flows. Bars are positive magnitudes; decide which add to and which subtract from domestic food availability. This is not a household-access measure.",
+    "unitLabel": "Thousand tonnes/year",
+    "categories": [
+      "Production",
+      "Imports",
+      "Exports",
+      "Losses"
+    ],
+    "series": [
+      {
+        "label": "Recorded amount",
+        "values": [
+          80,
+          40,
+          10,
+          20
+        ]
+      }
+    ],
+    "max": 100
+  },
+  "hug-5-9-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Two hypothetical import offers",
+    "description": "Hypothetical per-tonne offers in currency units. Near:product price 100, freight 10, import duty 30. Far:price 90, freight 30, duty 0. No other cost or restriction applies.",
+    "caption": "Original sourcing exercise. Duties are invented fixed amounts per tonne, not percentages or current government policies. Add all three components for landed cost.",
+    "headers": [
+      "Supplier",
+      "Price",
+      "Freight",
+      "Duty"
+    ],
+    "rows": [
+      [
+        "Near",
+        "100",
+        "10",
+        "30"
+      ],
+      [
+        "Far",
+        "90",
+        "30",
+        "0"
+      ]
+    ]
+  },
+  "hug-5-10-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Annual salt inputs and drainage losses",
+    "description": "Hypothetical irrigated area. Water brings 100 tonnes of dissolved salts into the soil during a year; drainage removes 30 tonnes. There are no other salt inputs or outputs in this exercise.",
+    "caption": "Original synthetic salt budget, not a water-volume balance. Initial salt stock and soil mass are unspecified, so calculate the stock change rather than a final concentration or crop loss.",
+    "headers": [
+      "Salt flow",
+      "Tonnes/year"
+    ],
+    "rows": [
+      [
+        "Enters with irrigation",
+        "100"
+      ],
+      [
+        "Leaves with drainage",
+        "30"
+      ]
+    ]
+  },
+  "hug-5-10-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Sediment loss in a matched rainfall trial",
+    "description": "Hypothetical matched plots with comparable slope, soil and applied rainfall. Measured sediment loss:bare soil 40 tonnes/hectare, continuous cover 10, maintained terraces 8. Treatments differ in surface management.",
+    "caption": "Original synthetic trial, not measured outcomes at a real farm. Sediment leaving a plot is not the same measure as crop yield, runoff volume or downstream damage.",
+    "unitLabel": "Sediment (tonnes/hectare)",
+    "categories": [
+      "Bare soil",
+      "Cover",
+      "Terraces"
+    ],
+    "series": [
+      {
+        "label": "Measured loss",
+        "values": [
+          40,
+          10,
+          8
+        ]
+      }
+    ],
+    "max": 40
+  },
+  "hug-5-10-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "Wetland conversion in a before-and-after plan",
+    "description": "Hypothetical same site shown before on the left and after on the right. Before:a wetland with recorded seasonal water-storage and habitat functions. After:drained cropland with a ditch leading to an outlet. Panels are schematics of the same place, not adjacent properties.",
+    "caption": "Original land-cover change sketch. The arrow indicates drainage toward an outlet. Cultivated area, hydrologic effects, habitat conditions and actual crop returns require separate measurements.",
+    "unitLabel": "Left:before. Right:after conversion.",
+    "regions": [
+      {
+        "label": "Wetland",
+        "labelPoint": [
+          22,
+          25
+        ],
+        "polygon": [
+          [
+            5,
+            5
+          ],
+          [
+            40,
+            5
+          ],
+          [
+            40,
+            45
+          ],
+          [
+            5,
+            45
+          ]
+        ]
+      },
+      {
+        "label": "Cropland",
+        "labelPoint": [
+          77,
+          15
+        ],
+        "polygon": [
+          [
+            60,
+            5
+          ],
+          [
+            95,
+            5
+          ],
+          [
+            95,
+            45
+          ],
+          [
+            60,
+            45
+          ]
+        ]
+      }
+    ],
+    "paths": [
+      {
+        "label": "Ditch",
+        "points": [
+          [
+            77,
+            28
+          ],
+          [
+            77,
+            39
+          ],
+          [
+            77,
+            57
+          ],
+          [
+            95,
+            57
+          ]
+        ],
+        "arrow": true
+      }
+    ],
+    "points": [
+      {
+        "label": "Outlet",
+        "x": 95,
+        "y": 57,
+        "labelAlign": "end"
+      }
+    ]
+  },
+  "hug-5-10-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Daily work hours in one farming community",
+    "description": "Hypothetical group-average daily hours before and after commercial-crop expansion. Women:paid 3→7, unpaid 6→6. Men:paid 5→7, unpaid 2→2. Categories are separate and do not overlap.",
+    "caption": "Original synthetic time-use data. The comparison records workloads, not income control, wages or all causes of the change; group averages do not describe every individual.",
+    "headers": [
+      "Group/period",
+      "Paid hours",
+      "Unpaid hours"
+    ],
+    "rows": [
+      [
+        "Women before",
+        "3",
+        "6"
+      ],
+      [
+        "Women after",
+        "7",
+        "6"
+      ],
+      [
+        "Men before",
+        "5",
+        "2"
+      ],
+      [
+        "Men after",
+        "7",
+        "2"
+      ]
+    ]
   }
 }

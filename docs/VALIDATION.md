@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 5.9–5.10
+
+517 original MCQs across47 topics are published, eleven each;188 meaningful stimuli (36.36%) and205 explicit evidence/numerical/geometry checks. Global System covers international production stages, export-revenue shocks, a signed grain account and landed costs. Consequences covers salt accumulation, sediment reduction, original wetland conversion and combined paid/unpaid workloads. Primary FAO/UNCCD definitions checked; all four options explained and causal limits retained.
+
+All173 tests, structural/evidence checks, TypeScript, production build, all68 Geography scopes and standard preview checks passed. Both complete browser sessions scored11/11; all eight mobile stimuli inspected. The wetland outlet was moved below the field boundary after desktop inspection, then rechecked in mobile dark and desktop light mode. Existing217 checkpoint question files,180 stimuli and complete approved catalog remain semantically unchanged; student storage and preview preserved. Next5.11;21 topics/231 questions remain. No independent human review or empirical difficulty calibration claimed.
+
 ## Human Geography Topics 5.7–5.8
 
 495 original MCQs across45 topics are published, eleven each;180 meaningful stimuli (36.36%) and197 explicit evidence/numerical/geometry checks. Spatial Organization traces an original grain/flour/bread chain, capacity-limited scale economies, operated-land concentration and net stage accounts. VonThünen uses original rings, rent-bid lines, equal-distance/different-rate corridors and competing-market accounts; equality independently solved at12 km with bids480. Assumptions and modern limitations are explicit.
