@@ -4761,5 +4761,363 @@
       }
     ],
     "max": 50
+  },
+  "hug-3-7-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "flow",
+    "title": "Movement and later adoption at Harbor",
+    "description": "Hypothetical families move east from Hearth to Harbor. After arrival, some nonmigrant Harbor residents adopt religion R through contact. Dates record a sequence, not measured travel time.",
+    "caption": "Original schematic; the arrow represents residential movement. Later local adoption is separately documented, not a second migration arrow. No real religion or geographic scale is represented.",
+    "unitLabel": "Documented residential movement",
+    "regions": [
+      {
+        "label": "Region",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "Hearth",
+        "x": 15,
+        "y": 40
+      },
+      {
+        "label": "Harbor",
+        "x": 85,
+        "y": 40
+      }
+    ],
+    "paths": [
+      {
+        "label": "Families move",
+        "points": [
+          [
+            15,
+            40
+          ],
+          [
+            50,
+            40
+          ],
+          [
+            85,
+            40
+          ]
+        ],
+        "arrow": true
+      }
+    ]
+  },
+  "hug-3-7-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Three languages in a classification exercise",
+    "description": "In this hypothetical classroom exercise, an original table lists English as Indo-European/Germanic, Spanish as Indo-European/Romance, and Hindi as Indo-European/Indo-Aryan. These are factual classifications, not invented language relationships.",
+    "caption": "Original teaching representation of established classifications. The hypothetical exercise is not a speaker survey, complete family tree or map of present-day religions.",
+    "headers": [
+      "Language",
+      "Family",
+      "Branch"
+    ],
+    "rows": [
+      [
+        "English",
+        "Indo-European",
+        "Germanic"
+      ],
+      [
+        "Spanish",
+        "Indo-European",
+        "Romance"
+      ],
+      [
+        "Hindi",
+        "Indo-European",
+        "Indo-Aryan"
+      ]
+    ]
+  },
+  "hug-3-7-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Place-name origins and household language",
+    "description": "Hypothetical district: 70% of its recorded old place names derive from language L; 20% of currently surveyed households report L as their main home language.",
+    "caption": "Two separate percentages with separate denominators. Names and households are not interchangeable or exclusive categories; no actual district is depicted.",
+    "unitLabel": "Percent within each measure",
+    "categories": [
+      "Old names",
+      "Households"
+    ],
+    "series": [
+      {
+        "label": "L-associated share",
+        "values": [
+          70,
+          20
+        ]
+      }
+    ],
+    "max": 100
+  },
+  "hug-3-7-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "One community’s membership ledger",
+    "description": "Hypothetical community begins with 100 adherents. It records 10 births within the community, 20 arriving adherents and 30 nonmigrant residents converting. No deaths or departures occur; final membership is 160.",
+    "caption": "Original synthetic accounting, not statistics for a real religion. Categories are distinct additions and count people once; it does not model every kind of religious change.",
+    "headers": [
+      "Entry",
+      "People"
+    ],
+    "rows": [
+      [
+        "Starting adherents",
+        "100"
+      ],
+      [
+        "Births",
+        "10"
+      ],
+      [
+        "Arriving adherents",
+        "20"
+      ],
+      [
+        "Local conversions",
+        "30"
+      ],
+      [
+        "Final adherents",
+        "160"
+      ]
+    ]
+  },
+  "hug-3-8-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Two practices in the same participant group",
+    "description": "Hypothetical repeated survey of the same 100 people. City-language use rises from 30 to 80; inherited-festival participation stays at 70. A person may report both practices.",
+    "caption": "Original synthetic paired-group totals. Measures are not mutually exclusive, and individual overlaps are not supplied. Counts do not establish every dimension of identity.",
+    "headers": [
+      "Reported practice",
+      "Earlier",
+      "Later"
+    ],
+    "rows": [
+      [
+        "Use city language",
+        "30",
+        "80"
+      ],
+      [
+        "Attend inherited festival",
+        "70",
+        "70"
+      ]
+    ]
+  },
+  "hug-3-8-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "model",
+    "title": "Contributions to a new ceremony",
+    "description": "Hypothetical participants use a melody from tradition R and an instrument and rhythm from tradition S in one newly created ceremony.",
+    "caption": "Original schematic of documented contributions, not a claim that entire cultures merge or lose every distinction.",
+    "assumptions": "Both contributions are intentionally combined in one ceremony; arrows represent cultural inputs, not migration or population totals.",
+    "nodes": [
+      {
+        "label": "R melody",
+        "x": 15,
+        "y": 12,
+        "labelPosition": "above"
+      },
+      {
+        "label": "S rhythm",
+        "x": 85,
+        "y": 12,
+        "labelPosition": "above"
+      },
+      {
+        "label": "New ceremony",
+        "x": 50,
+        "y": 48,
+        "labelPosition": "below"
+      }
+    ],
+    "edges": [
+      {
+        "from": "R melody",
+        "to": "New ceremony",
+        "label": "Contribution"
+      },
+      {
+        "from": "S rhythm",
+        "to": "New ceremony",
+        "label": "Contribution"
+      }
+    ]
+  },
+  "hug-3-8-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "Cultural centers and a shared school",
+    "description": "Hypothetical West and East districts each have a cultural center. Routes from both centers reach one shared public school. Cultural institutions are protected and school access is open to both groups.",
+    "caption": "Original schematic; paths represent available access, not compulsory attendance or residential separation. Cultural affiliation of every resident is not mapped.",
+    "unitLabel": "Centers and shared civic access",
+    "regions": [
+      {
+        "label": "West",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "East",
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "R center",
+        "x": 18,
+        "y": 12
+      },
+      {
+        "label": "S center",
+        "x": 82,
+        "y": 12
+      },
+      {
+        "label": "Shared school",
+        "x": 50,
+        "y": 50
+      }
+    ],
+    "paths": [
+      {
+        "label": "West access",
+        "points": [
+          [
+            18,
+            16
+          ],
+          [
+            18,
+            40
+          ],
+          [
+            50,
+            47
+          ]
+        ]
+      },
+      {
+        "label": "East access",
+        "points": [
+          [
+            82,
+            16
+          ],
+          [
+            82,
+            40
+          ],
+          [
+            50,
+            47
+          ]
+        ]
+      }
+    ]
+  },
+  "hug-3-8-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Home-language use across three cohorts",
+    "description": "Hypothetical descendant-generation cohorts: national-language home use is 50%, 85%, 95%; ancestral-language home use is 70%, 35%, 10%. Households may use both.",
+    "caption": "Original synthetic cross-sectional cohorts, not the same people tracked through time. Each percentage refers to households within its cohort; language measures can overlap.",
+    "unitLabel": "Percent of cohort households",
+    "categories": [
+      "First",
+      "Second",
+      "Third"
+    ],
+    "series": [
+      {
+        "label": "National language",
+        "values": [
+          50,
+          85,
+          95
+        ]
+      },
+      {
+        "label": "Ancestral language",
+        "values": [
+          70,
+          35,
+          10
+        ]
+      }
+    ],
+    "max": 100
   }
 }

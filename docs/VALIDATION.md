@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Unit 3 complete
+
+297 original MCQs across 27 topics are published, eleven each. All eight Unit 3 topics are complete. There are 108 meaningful stimuli (36.36%) and 121 explicit evidence/numerical/geometry checks. Topics 3.7–3.8 distinguish language ancestry from religious identity, carrier movement from conversion, historical names from current speech, and domain-specific adaptation from complete assimilation. AP religious categories are presented as broad curricular conventions with diversity and exceptions.
+
+All 152 automated tests, TypeScript, production build, Geography scopes and standard route checks passed. Both new full Practice sessions scored 11/11. All eight stimuli were inspected at 390×844. Map routes were repositioned to separate text from region/point labels; review-time enlargement remains available. A typecheck launched during build-generated type replacement initially failed on missing generated files; the sequential rerun passed. Future build/typecheck runs should remain sequential. Existing question contents, resources and storage remain unchanged; no human review or empirical difficulty-calibration claim. Next 4.1; 41 topics/451 questions remain.
+
 ## Human Geography Topics 3.5–3.6
 
 275 original MCQs across 25 topics are published, eleven each; 100 meaningful stimuli (36.36%) and 113 explicit evidence/numerical/geometry checks. Historical causes cover trade, colonial institutions, contact-language development and lingua-franca use without treating contact-language histories as uniform. Contemporary causes cover communication delays, urban/global networks, separate platform/content measures and local-language production without inferring speaker vitality from upload counts.

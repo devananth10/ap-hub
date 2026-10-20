@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 3,
+  "topicId": "topic-3-8",
+  "questions": [
+    {
+      "id": "hug-3-8-001",
+      "prompt": "The same 100 participants are surveyed twice. Which interpretation best accounts for learning the city’s main language while maintaining the inherited festival?",
+      "options": [
+        "Complete assimilation, because any increase in a new language eliminates inherited practices.",
+        "Acculturation can add a new practice without requiring abandonment of the measured inherited practice.",
+        "Relocation diffusion, because each additional language user must have moved between surveys.",
+        "Independent invention, because the new language was learned without contact with other speakers."
+      ],
+      "correctIndex": 1,
+      "explanation": "Acculturation involves cultural changes associated with contact. Here reported language use rises from 30 to 80 people, while festival participation remains at 70. The observations support adoption in one domain alongside continuity in another; they do not establish complete assimilation, movement, or invention of a language. A: Festival participation remains at 70, so the data do not support the stated total replacement. B: This accommodates both the increase in the new language and the retained festival practice. C: The sample is the same people, and no change in residence is specified. D: The premise describes learning the city’s language, not inventing an unrelated one."
+    },
+    {
+      "id": "hug-3-8-002",
+      "prompt": "Participants create one new ceremony combining the melody of tradition R with the instrument and rhythm of tradition S. Which effect of diffusion does the diagram most directly illustrate?",
+      "options": [
+        "Assimilation that replaces both inputs with an unchanged copy of R.",
+        "Multicultural coexistence with two ceremonies that remain separate and unmodified.",
+        "Relocation of a completed ceremony with no change in its elements.",
+        "Syncretism that combines elements into a new cultural expression."
+      ],
+      "correctIndex": 3,
+      "explanation": "Syncretism combines elements from different traditions into an expression with a new configuration. The scenario explicitly describes one newly created ceremony drawing on both inputs. It differs from merely placing two unchanged ceremonies side by side or copying only one tradition. A: The result contains elements from S as well as R, so it is not an unchanged copy of R. B: The inputs are combined in one ceremony rather than retained only as separate events. C: The specified change is cultural recombination; movement of a finished ceremony is not recorded. D: This describes the new combination shown by the two inputs and one output."
+    },
+    {
+      "id": "hug-3-8-003",
+      "prompt": "A city protects both groups’ cultural centers and provides a shared public school accessible from both sides. Which policy interpretation best fits the mapped arrangement and stated protections?",
+      "options": [
+        "Multicultural recognition can preserve distinct institutions while supporting shared civic participation.",
+        "Assimilation requires both centers to retain their differences permanently.",
+        "The shared school proves both cultural centers teach identical beliefs.",
+        "The arrangement establishes legal segregation because there are two cultural centers."
+      ],
+      "correctIndex": 0,
+      "explanation": "Multiculturalism can recognize distinct traditions alongside participation in common institutions. The two cultural centers and shared school are consistent with that approach when access is open and cultural protections are explicit. Their locations alone do not prove equal outcomes, identical beliefs, or exclusionary laws. A: This uses both the recognized cultural institutions and the shared civic facility. B: Assimilation is not defined by requiring permanent preservation of all cultural distinctions. C: A common school does not establish identical beliefs within the separate centers. D: Separate cultural institutions do not by themselves establish legally enforced separation."
+    },
+    {
+      "id": "hug-3-8-004",
+      "prompt": "Which conclusion is supported by the two home-language measures across descendant-generation cohorts?",
+      "options": [
+        "National-language use rises by 90 percentage points between the first and third cohorts.",
+        "The first cohort cannot contain bilingual households because its two percentages total more than 100.",
+        "The national language becomes more common at home, but these measures alone cannot establish complete cultural assimilation.",
+        "The chart proves that every individual abandoned the ancestral language while growing older."
+      ],
+      "correctIndex": 2,
+      "explanation": "National-language use rises from 50% to 95%, a 45-percentage-point increase; ancestral-language use falls from 70% to 10%. Households can use both languages. These patterns are compatible with linguistic assimilation in this domain, but they do not measure every cultural practice or follow the same people as they age. A: The increase is 95−50=45 percentage points; 90% is a relative increase from the initial 50. B: The categories are nonexclusive, so bilingual households can make the total exceed 100. C: This interprets the domain measured without equating one indicator with total identity loss. D: The chart compares different cohorts, not individual life histories or every household’s choices."
+    },
+    {
+      "id": "hug-3-8-005",
+      "prompt": "A government requires students to stop using their inherited language at school and replaces community ceremonies with a single state ceremony. Which intended cultural effect is most consistent with those measures?",
+      "options": [
+        "Syncretism through jointly designed combinations of both ceremonies.",
+        "Assimilation toward a dominant public culture through coercive institutions.",
+        "Multiculturalism that gives equal institutional support to both languages.",
+        "Relocation diffusion caused by voluntary household movement."
+      ],
+      "correctIndex": 1,
+      "explanation": "The measures attempt to replace distinct public practices with a dominant language and ceremony. That intent is assimilative and institutionally coercive. Identifying the intent does not show that people fully comply or that inherited identities disappear in private life. A: The premise describes replacement, not joint cultural recombination. B: This matches the directed replacement of minority public practices. C: One language is suppressed, so the policy is not equal support for linguistic plurality. D: No household relocation is supplied as the mechanism."
+    },
+    {
+      "id": "hug-3-8-006",
+      "prompt": "Builders adapt an introduced courtyard layout to a local rainy climate while retaining an inherited roof form. What additional observation would most directly show a resulting change in the cultural landscape?",
+      "options": [
+        "The builders report that they have never heard of an overseas city.",
+        "Annual rainfall was recorded with a newly calibrated instrument.",
+        "The same introduced plan remains only in an architect’s unpublished sketch.",
+        "Occupied buildings now visibly combine the courtyard arrangement and inherited roofs."
+      ],
+      "correctIndex": 3,
+      "explanation": "The cultural landscape includes material forms shaped by human practices. Constructed, occupied buildings combining the introduced layout and inherited roof form directly show cultural interaction expressed in the built environment. A proposal alone does not establish a realized landscape change. A: An unrelated statement about overseas cities does not document the described construction. B: Rainfall measurement is environmental data rather than evidence that a cultural design was built. C: A sketch records an idea, not necessarily an altered built landscape. D: This supplies observable material evidence of the combined design in use."
+    },
+    {
+      "id": "hug-3-8-007",
+      "prompt": "Migrants learn workplace customs in a destination while continuing family rituals and regular exchanges with relatives abroad. Which account best fits the effects of cultural contact?",
+      "options": [
+        "They can acculturate in one setting while maintaining inherited practices and transnational ties.",
+        "Learning workplace customs establishes complete assimilation in all private and public domains.",
+        "Continuing family rituals shows they have adopted no destination practices.",
+        "Transnational exchanges mean their residence remains in the origin country."
+      ],
+      "correctIndex": 0,
+      "explanation": "Cultural adaptation can differ among settings. Learning workplace practices can coexist with inherited rituals and ongoing cross-border relationships. Neither a newly learned custom nor a retained practice alone establishes what happens across every domain of identity or where a household resides. A: This accommodates the supplied changes and continuities together. B: The retained rituals and ties prevent the claimed complete replacement from following. C: The premise explicitly records adoption of workplace practices. D: Cross-border communication does not by itself determine permanent residence."
+    },
+    {
+      "id": "hug-3-8-008",
+      "prompt": "Two food traditions are displayed at separate stalls. A later dish intentionally combines the seasoning technique of one with the preparation method of the other. What change is most specifically documented?",
+      "options": [
+        "From syncretism to independent invention of both original traditions.",
+        "From assimilation to the elimination of both preparation methods.",
+        "From coexistence of distinct expressions to a new syncretic combination.",
+        "From relocation to a reduction in the geographic distance between the stalls."
+      ],
+      "correctIndex": 2,
+      "explanation": "Separate stalls can show cultural plurality without blending the dishes themselves. The later combined recipe adds a specific syncretic expression. This does not require both original traditions to disappear or every diner to adopt the new dish. A: The chronology supplies a later combination, not a reversal toward separate independent origins. B: Both traditions contribute to the new dish rather than being eliminated from it. C: This distinguishes side-by-side presence from an intentionally combined expression. D: The key evidence concerns a recipe’s elements, not relocation or measured stall distance."
+    },
+    {
+      "id": "hug-3-8-009",
+      "prompt": "A city adopts a multicultural charter, but a study finds that some minority-language residents cannot obtain public services in an understandable language. What conclusion best evaluates the charter?",
+      "options": [
+        "The charter’s existence proves that all residents already receive equally accessible services.",
+        "A stated policy of recognition should be distinguished from its implementation and residents’ actual access.",
+        "Unequal service access proves that no cultural groups live in the city.",
+        "The service gap establishes that all minority residents want complete assimilation."
+      ],
+      "correctIndex": 1,
+      "explanation": "Policy statements and experienced outcomes are different types of evidence. A multicultural charter may express recognition while service design still creates unequal access. Evaluation requires information about implementation and affected residents rather than treating either a promise or one gap as a complete account of society. A: A formal statement does not measure whether services are accessible in practice. B: This identifies the relevant gap between declared recognition and observed access. C: The premise identifies minority-language residents, so the gap does not show their absence. D: Difficulty accessing services does not establish residents’ cultural preferences."
+    },
+    {
+      "id": "hug-3-8-010",
+      "prompt": "A religious building gains local construction materials and decorative forms, but worshippers retain the central practices of their tradition. Which interpretation is most justified?",
+      "options": [
+        "The local decoration alone establishes conversion to a different religion.",
+        "Unchanged central practices prove the building has experienced no cultural contact.",
+        "The building’s materials establish the birthplace of the religion.",
+        "Material adaptation can alter the landscape without demonstrating complete religious assimilation."
+      ],
+      "correctIndex": 3,
+      "explanation": "Cultural contact can change visible forms while other practices continue. Materials and decoration are evidence about the building, not sufficient evidence that worshippers have changed affiliation or abandoned their central practices. Different cultural domains can change at different rates. A: Decoration is not a direct record of religious conversion. B: The supplied local forms document adaptation despite continuity in worship. C: Construction materials identify a material choice, not necessarily a historical religious hearth. D: This recognizes the visible change and limits the claim about religious identity."
+    },
+    {
+      "id": "hug-3-8-011",
+      "prompt": "A researcher claims that a new majority-language sign policy caused private language use to decline. Which study design would most improve that causal claim?",
+      "options": [
+        "Compare private language use before and after the policy in similar affected and unaffected communities, accounting for other changes.",
+        "Count only new public signs after the policy and treat them as a direct census of private speech.",
+        "Interview only policy supporters after implementation and generalize to all households.",
+        "Replace household observations with the number of streets in the city."
+      ],
+      "correctIndex": 0,
+      "explanation": "To evaluate an effect on private language use, researchers need observations of that outcome and a credible comparison for change that might have occurred without the policy. Before/after measures in comparable affected and unaffected communities, with attention to other changes, improve the design without guaranteeing perfect causal identification. A: This measures the relevant outcome over time and introduces a comparison while recognizing confounding. B: Signs measure public display, which need not equal private use. C: A selected group of supporters cannot automatically represent all affected households. D: Street counts do not measure the proposed private-language outcome."
+    }
+  ]
+}

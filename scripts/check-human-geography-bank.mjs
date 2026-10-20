@@ -132,6 +132,14 @@ export function verifyGeographyQuestion(question,review,stimulus){
   case 'contemporary-urban-network':assert.deepEqual(stimulus.edges.map(e=>[e.from,e.to,e.label]),[['R district','City studio','Local contact'],['S district','City studio','Local contact'],['City studio','Global audience','Online feed']]);assert.equal(question.correctIndex,0);break;
   case 'contemporary-platform-content':{assert.deepEqual(stimulus.rows.map(r=>r.slice(1).map(Number)),[[90,80,20],[90,20,80]]);assert.ok(stimulus.rows.every(r=>Number(r[2])+Number(r[3])===100));assert.equal(question.correctIndex,3);break;}
   case 'contemporary-language-uploads':assert.deepEqual(stimulus.series[0].values,[5,40]);assert.equal(stimulus.series[0].values[1]/stimulus.series[0].values[0],8);assert.equal(stimulus.series[0].values[1]-stimulus.series[0].values[0],35);assert.equal(question.correctIndex,1);break;
+  case 'religion-route-sequence':assert.deepEqual(stimulus.points.map(p=>[p.label,p.x,p.y]),[['Hearth',15,40],['Harbor',85,40]]);assert.deepEqual(stimulus.paths.map(p=>[p.label,p.points,p.arrow]),[['Families move',[[15,40],[50,40],[85,40]],true]]);assert.equal(question.correctIndex,2);break;
+  case 'language-family-branches':assert.deepEqual(stimulus.rows,[['English','Indo-European','Germanic'],['Spanish','Indo-European','Romance'],['Hindi','Indo-European','Indo-Aryan']]);assert.equal(question.correctIndex,0);break;
+  case 'language-toponym-denominators':assert.deepEqual(stimulus.categories,['Old names','Households']);assert.deepEqual(stimulus.series[0].values,[70,20]);assert.equal(question.correctIndex,3);break;
+  case 'religion-growth-ledger':{const v=stimulus.rows.map(r=>Number(r[1]));assert.deepEqual(v,[100,10,20,30,160]);assert.equal(v[0]+v[1]+v[2]+v[3],v[4]);assert.equal(v[3]/(v[4]-v[0]),.5);assert.equal(question.correctIndex,1);break;}
+  case 'effects-domain-continuity':assert.deepEqual(stimulus.rows.map(r=>r.slice(1).map(Number)),[[30,80],[70,70]]);assert.equal(Number(stimulus.rows[0][2])-Number(stimulus.rows[0][1]),50);assert.equal(question.correctIndex,1);break;
+  case 'effects-combined-expression':assert.deepEqual(stimulus.edges.map(e=>[e.from,e.to]),[['R melody','New ceremony'],['S rhythm','New ceremony']]);assert.equal(question.correctIndex,3);break;
+  case 'effects-shared-access':assert.deepEqual(stimulus.points.map(p=>[p.label,p.x,p.y]),[['R center',18,12],['S center',82,12],['Shared school',50,50]]);assert.deepEqual(stimulus.paths.map(p=>p.points.at(-1)),[[50,47],[50,47]]);assert.equal(question.correctIndex,0);break;
+  case 'effects-language-cohorts':{assert.deepEqual(stimulus.series.map(s=>s.values),[[50,85,95],[70,35,10]]);assert.equal(stimulus.series[0].values[2]-stimulus.series[0].values[0],45);assert.equal(stimulus.series[1].values[2]-stimulus.series[1].values[0],-60);assert.equal(question.correctIndex,2);break;}
   case 'reasoning':break;
   default:throw Error('Unknown verification model: '+review.check.type);
  }

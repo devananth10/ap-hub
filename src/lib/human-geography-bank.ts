@@ -24,6 +24,8 @@ import topic3_3 from "../content/practice/human-geography-3-3.json" with {type:"
 import topic3_4 from "../content/practice/human-geography-3-4.json" with {type:"json"};
 import topic3_5 from "../content/practice/human-geography-3-5.json" with {type:"json"};
 import topic3_6 from "../content/practice/human-geography-3-6.json" with {type:"json"};
+import topic3_7 from "../content/practice/human-geography-3-7.json" with {type:"json"};
+import topic3_8 from "../content/practice/human-geography-3-8.json" with {type:"json"};
 export const humanGeographyBatches = [
   topic1_1,
   topic1_2,
@@ -49,5 +51,7 @@ export const humanGeographyBatches = [
   topic3_3,
   topic3_4,
   topic3_5,
-  topic3_6
+  topic3_6,
+  topic3_7,
+  topic3_8
 ];

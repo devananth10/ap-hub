@@ -237,3 +237,17 @@ test('contemporary diffusion checks preserve time conversions, network direction
   const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
  }
 });
+
+test('religion and language checks retain migration direction, classifications, denominator differences and conversion accounting',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-3-7.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-3-7.json','utf8'));
+ for(const [i,change] of [[0,s=>s.paths[0].points.reverse()],[1,s=>s.rows[2][1]='Germanic'],[2,s=>s.categories.reverse()],[3,s=>s.rows[3][1]='60']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+
+test('diffusion-effect checks preserve continuing practices, combined inputs, shared access and cohort changes',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-3-8.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-3-8.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[1][2]='0'],[1,s=>s.edges[1].to='R melody'],[2,s=>s.paths[1].points[2]=[82,12]],[3,s=>s.series[0].values[0]=5]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});

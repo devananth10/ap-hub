@@ -1,0 +1,142 @@
+{
+  "topicNumber": "3.8",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "1c93de232b2964d6ab78ed9d542684bf0ad1257e982aae309c542d162b577b60",
+  "scopeReview": "SPS-3.B.1: effects of diffusion through acculturation, assimilation, syncretism and multiculturalism, linked to changing cultural landscapes. Distinguishes domain-specific adaptation, coercive policy intent, recombination, plural recognition and actual outcomes.",
+  "varietyReview": "Paired-group practice table, two-input ceremony model, civic-access map and cross-sectional language-cohort chart. Seven other applications address coercion, material realization, transnational domains, coexistence versus blending, policy implementation, architecture and causal evidence. Mixed difficulty, keys and all five skills.",
+  "repetitionReview": "Four distinct evidentiary tasks with explicit denominators and cohort limits. Conceptual items distinguish related processes through observed mechanisms rather than treating all contact as assimilation. No copied question, exact repeated stem or numeric-only clone; empirical difficulty remains uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1464-0597.1997.tb01087.x",
+    "https://www.unesco.org/en/legal-affairs/unesco-universal-declaration-cultural-diversity"
+  ],
+  "referenceNote": "Primary framework, original acculturation scholarship and institutional cultural-diversity principles checked. Original hypothetical groups, synthetic counts and diagrams; no real population classified from appearance or single behavior. Research is QA-only; no new student resources or human-review claim.",
+  "questions": [
+    {
+      "questionId": "hug-3-8-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Acculturation can add a new practice without requiring abandonment of the measured inherited practice.",
+      "independentReview": "Checked paired sample size100 and changes80−30=50,70−70=0. The two indicators are nonexclusive and do not reveal which individuals participate in both; no complete-identity inference is made.",
+      "check": {
+        "type": "effects-domain-continuity"
+      },
+      "questionSha256": "017803cbaa92a2919e6ca8cb9d9eb2dd50e0bef692a864fa41e5e972ec0dfba1",
+      "stimulusSha256": "9c7e00ee5d042bbc00d91101b11858b43d166395d72d29f8fc61489398e465b1"
+    },
+    {
+      "questionId": "hug-3-8-002",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Syncretism that combines elements into a new cultural expression.",
+      "independentReview": "Verified the inputs R melody and S instrument/rhythm feed a single combined ceremony. Shared elements do not establish a merger of every belief or community, and simple coexistence is distinguished from recombination.",
+      "check": {
+        "type": "effects-combined-expression"
+      },
+      "questionSha256": "a877695628665ba785ff5584b69e5e99ef54d22c4c6883be5729f32e17086464",
+      "stimulusSha256": "b73c84b674541bb922e8dd7f1cf8605803d0b399e79968cccab6f80ec5331fd8"
+    },
+    {
+      "questionId": "hug-3-8-003",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Multicultural recognition can preserve distinct institutions while supporting shared civic participation.",
+      "independentReview": "Traced two access paths ending at one school and preserved the explicit protection/open-access premise. The map does not encode residents’ ethnicity, compulsory assignment, or actual equality of educational outcomes.",
+      "check": {
+        "type": "effects-shared-access"
+      },
+      "questionSha256": "07c4a76ce5c1aeb4eca2deb8e67546a783bd908876710a9eaaf78460d40fe28c",
+      "stimulusSha256": "c5b7c503642d20217cbd1f979cb9dd8ecf6bb2bd2c15bb29048eec5140585be6"
+    },
+    {
+      "questionId": "hug-3-8-004",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "The national language becomes more common at home, but these measures alone cannot establish complete cultural assimilation.",
+      "independentReview": "Recomputed national increase45 percentage points and90% relative, ancestral decline60 points. First-cohort sum120 permits overlap, not an error. Separate cohorts prevent longitudinal individual-level inference.",
+      "check": {
+        "type": "effects-language-cohorts"
+      },
+      "questionSha256": "2748b6c63fbeaca91bb48501146fadffc0c3f9113bf3ec483f879e7edb287717",
+      "stimulusSha256": "3cadb8d9c31ad99bea06d0ea0f9ad173660783154763cb08f09a6a89aa845ef3"
+    },
+    {
+      "questionId": "hug-3-8-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Assimilation toward a dominant public culture through coercive institutions.",
+      "independentReview": "Distinguished intended institutional assimilation from actual complete assimilation. The imposed rules are evidence of coercion, not voluntary preference; private adherence and resistance remain possible.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d1da67b36abc1fe72a3361170e8daca3ded7b2eed6c2007db9474d63d796e8e0"
+    },
+    {
+      "questionId": "hug-3-8-006",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Occupied buildings now visibly combine the courtyard arrangement and inherited roofs.",
+      "independentReview": "Checked the distinction between a proposed cultural expression and its material realization. Climate adaptation does not imply environmental determinism, complete cultural replacement, or a single origin for all architectural features.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "39fc9a868b98c2d61c6b838f05842fd02a24dc8e295c13923b782b2a310903a8"
+    },
+    {
+      "questionId": "hug-3-8-007",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "They can acculturate in one setting while maintaining inherited practices and transnational ties.",
+      "independentReview": "Checked all three supplied domains separately: workplace adaptation, family continuity and transnational exchange. No conflict between them requires total separation or total assimilation; migration residence is not inferred from communication.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "cc2dd9529f1f509701f2a28a139bb78e76353f10b2c82ddddabdcdaea5fac483"
+    },
+    {
+      "questionId": "hug-3-8-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "From coexistence of distinct expressions to a new syncretic combination.",
+      "independentReview": "Verified that simultaneous presence alone is not sufficient evidence of syncretism, while explicitly combining techniques is. The scenario avoids claiming all cultural contact must produce fusion or erase original practices.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "deef4f779698b5e044f33cda397a058c37c2578552536c80ace2f942cbc9dbac"
+    },
+    {
+      "questionId": "hug-3-8-009",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "A stated policy of recognition should be distinguished from its implementation and residents’ actual access.",
+      "independentReview": "Compared policy intent with an observed outcome without assuming either proves every dimension of equality or integration. Language access is an operational service measure, not a direct measure of every resident’s identity preference.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "e90de13636753628df7d9d4a0b7da7b19a1c183748b2681102d58bd75b0e48fb"
+    },
+    {
+      "questionId": "hug-3-8-010",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Material adaptation can alter the landscape without demonstrating complete religious assimilation.",
+      "independentReview": "Separated observed built-form adaptation from unmeasured conversion or complete assimilation. The central practices explicitly persist, so the landscape change is not taken as proof of total replacement.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "2f864eeaf2a92727521b735c7c500ec381592e3f609eadf0062ba6d40caa3872"
+    },
+    {
+      "questionId": "hug-3-8-011",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Compare private language use before and after the policy in similar affected and unaffected communities, accounting for other changes.",
+      "independentReview": "Verified outcome alignment, temporal ordering and comparison logic. The design is described as an improvement, not a guarantee: selection, spillovers and other changing conditions can still threaten a causal interpretation.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "c3fa6dcd17e15a0261ccbbbd469a5224f7b1e0dcfde87bbf439672940caa90ac"
+    }
+  ]
+}

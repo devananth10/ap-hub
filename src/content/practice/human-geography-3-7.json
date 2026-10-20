@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 3,
+  "topicId": "topic-3-7",
+  "questions": [
+    {
+      "id": "hug-3-7-001",
+      "prompt": "Families carrying religion R move from Hearth to Harbor. Later, Harbor residents who did not move adopt R through contact with those families. Which sequence best explains the mapped observations?",
+      "options": [
+        "Contagious expansion to Harbor, followed by relocation of the nonmoving residents.",
+        "Independent invention at Harbor, followed by hierarchical diffusion from a capital.",
+        "Relocation to Harbor, followed by expansion among residents at the destination.",
+        "Stimulus diffusion to Harbor, followed by disappearance at the hearth."
+      ],
+      "correctIndex": 2,
+      "explanation": "The first event moves adherents and their practices between residences. The later event adds adherents among people already living at Harbor. These are relocation followed by expansion; both mechanisms can contribute to a religion’s distribution without requiring identical patterns everywhere. A: The first event explicitly involves residential movement; the later residents stay in place. B: The account supplies contact with arriving adherents, not separate invention or a capital’s influence. C: This distinguishes movement of carriers from subsequent adoption by nonmigrants. D: No adapted substitute or disappearance at Hearth is recorded."
+    },
+    {
+      "id": "hug-3-7-002",
+      "prompt": "What inference about English, Spanish and Hindi is supported by the language classification table?",
+      "options": [
+        "They share a broad ancestral family even though they belong to different branches.",
+        "They are dialects of one modern language because they share a family name.",
+        "English is more closely related to Spanish than to every unlisted Germanic language.",
+        "Their speakers must share the same religious affiliation because the languages are related."
+      ],
+      "correctIndex": 0,
+      "explanation": "A language family groups languages by historical descent. English, Spanish and Hindi are Indo-European languages in different branches. A shared family does not make them mutually intelligible dialects, establish every pairwise relationship, or determine the religions of their speakers. A: This uses the common family while preserving the branch distinctions shown. B: A family is broader than a single present-day language and its dialects. C: The table lists no other Germanic language, so that proposed ranking is unsupported. D: Linguistic ancestry and religious affiliation are different cultural characteristics."
+    },
+    {
+      "id": "hug-3-7-003",
+      "prompt": "In this hypothetical district, old place names and current household-language use have different distributions. What is the best interpretation?",
+      "options": [
+        "Seventy percent of present households must speak L because 70% of place names have L origins.",
+        "The two measures show that 90% of residents either speak L or live in an L-named place.",
+        "The smaller household share establishes that the place-name records are inaccurate.",
+        "Place names can preserve earlier language influence after everyday language use changes."
+      ],
+      "correctIndex": 3,
+      "explanation": "Toponyms can retain evidence of earlier cultural influence while a population’s language practices change. Here the historical name inventory and the current household survey measure different things. They cannot be substituted for one another or added into one resident percentage. A: Names are not households, and their 70% share does not estimate household language. B: The two denominators differ and the observations are not mutually exclusive resident categories. C: Different present and historical indicators can both be accurate. D: This accounts for persistence in the named landscape without inventing current language dominance."
+    },
+    {
+      "id": "hug-3-7-004",
+      "prompt": "The ledger lists all changes in the hypothetical community, with no deaths or departures. Which calculation best distinguishes conversion from relocation as a source of its growth?",
+      "options": [
+        "All 60 additional adherents represent relocation because the community grew.",
+        "Conversions account for 30 of 60 additional adherents; arriving adherents account for 20.",
+        "Relocation accounts for 50 additional adherents because converts and arrivals must be combined.",
+        "Conversion accounts for 10 additional adherents because only births are counted as expansion."
+      ],
+      "correctIndex": 1,
+      "explanation": "The community increases from 100 to 160: 10 births, 20 arriving adherents and 30 conversions among nonmigrant residents. Conversion adds 30/60, or half, of the net increase. The 20 arriving adherents represent relocation; births are a separate demographic component, not conversion. A: Growth alone does not show that all additions moved; the ledger separates three causes. B: This correctly separates 30 conversions, 20 arrivals and the 60-person total increase. C: Combining arrivals and converts obscures the difference between migration and local adoption. D: The 10 births are not the 30 documented conversions."
+    },
+    {
+      "id": "hug-3-7-005",
+      "prompt": "A museum traces Sikh origins to Guru Nanak and the Punjab region, then documents Sikh families establishing gurdwaras after settling abroad. Which explanation best links the hearth and later distribution?",
+      "options": [
+        "The overseas institutions identify the original hearth, while Punjab is a recent receiving region.",
+        "The shared institutions demonstrate contagious diffusion without any movement of adherents.",
+        "Punjab is the historical hearth; migration can carry the tradition to distant communities.",
+        "The distant communities establish that Sikhism originated independently in each receiving country."
+      ],
+      "correctIndex": 2,
+      "explanation": "The Sikh tradition developed around Guru Nanak and subsequent Gurus in Punjab. Later institutions created by migrants in other regions can reflect relocation diffusion from that heartland. A current institution’s location does not by itself establish where a religion originated or the mechanisms of every later conversion. A: This reverses the supplied historical chronology. B: The families’ settlement abroad provides explicit evidence of movement. C: This connects the historical hearth with the documented migration pathway. D: Shared migrant institutions do not demonstrate independent origins of the tradition."
+    },
+    {
+      "id": "hug-3-7-006",
+      "prompt": "Along a historical trade network, Buddhist monks travel to a new region, establish teaching centers, and attract local followers. Which interpretation best explains Buddhism’s spread in this account?",
+      "options": [
+        "Travel of religious specialists and teaching to new followers can combine relocation and expansion.",
+        "The teaching centers establish only natural population increase among descendants of migrants.",
+        "The local followers show that the monks’ movement was irrelevant to the documented contact.",
+        "The trade route is evidence that Buddhism originated independently at every stop."
+      ],
+      "correctIndex": 0,
+      "explanation": "Movement of teachers and interactions with local populations can work together in religious diffusion. Historical Buddhist exchanges along Eurasian routes included traveling religious specialists and centers of learning. The supplied account specifically includes both movement and local adoption rather than growth solely through births. A: This recognizes the two documented processes without claiming one route explains all Buddhist history. B: Local followers are explicitly attracted by teaching, not identified only as descendants. C: The account connects the arriving teachers to the subsequent contact. D: A route connecting communities is not evidence of independent religious invention at each stop."
+    },
+    {
+      "id": "hug-3-7-007",
+      "prompt": "A Jewish community abroad maintains religious institutions after generations of migration from other regions. Which conclusion best applies the AP distinction between ethnic and universalizing religions?",
+      "options": [
+        "An ethnic religion can be present outside its hearth only if it is reclassified as universalizing.",
+        "A community outside the hearth proves the religious tradition originated in that destination.",
+        "Ethnic classification means that no conversions or changes of practice can occur.",
+        "Relocation can create distant communities of an ethnic religion; the category is not an exceptionless rule about every person."
+      ],
+      "correctIndex": 3,
+      "explanation": "The AP framework describes Judaism and Hinduism as ethnic religions whose distributions often reflect hearth connections and relocation. Diasporic communities are consistent with that framework. These broad geographic categories do not deny conversion, internal diversity, adaptation or complicated individual identities. A: The category permits relocation beyond the hearth. B: Present residence alone cannot establish historical origin. C: A broad distributional category is not a prohibition on every conversion or change. D: This recognizes migration while avoiding an absolute claim about membership or beliefs."
+    },
+    {
+      "id": "hug-3-7-008",
+      "prompt": "Which pair is classified as ethnic religions in the AP Human Geography framework, rather than as universalizing religions?",
+      "options": [
+        "Christianity and Islam",
+        "Hinduism and Judaism",
+        "Buddhism and Sikhism",
+        "Islam and Buddhism"
+      ],
+      "correctIndex": 1,
+      "explanation": "The AP framework lists Hinduism and Judaism as ethnic examples, and Christianity, Islam, Buddhism and Sikhism as universalizing examples. These labels concern broad relationships among recruitment, identity, hearths and diffusion. They are not a ranking of religions or a claim that all members live near one place. A: Both are listed as universalizing examples. B: These are the two ethnic examples explicitly included in the course framework. C: Both are listed as universalizing examples, even where adherents are geographically concentrated. D: Both are listed as universalizing examples rather than the requested ethnic pair."
+    },
+    {
+      "id": "hug-3-7-009",
+      "prompt": "Two communities on opposite sides of a state border use closely related dialects, while one state contains several unrelated language families. What should a geographer conclude?",
+      "options": [
+        "Political boundaries and language relationships need not coincide.",
+        "Cross-border dialects establish that both communities must share one state government.",
+        "Multiple language families within one state are evidence that the state has no political border.",
+        "A state border is sufficient evidence to classify the dialects as unrelated families."
+      ],
+      "correctIndex": 0,
+      "explanation": "Language relationships reflect histories of descent, contact and movement, while state borders reflect political processes. A border can cross a dialect continuum, and a state can contain many linguistic communities. Neither political unity nor separation alone establishes genealogical language classification. A: This accommodates both supplied patterns without conflating political and linguistic boundaries. B: Related dialects do not establish shared sovereignty. C: Linguistic diversity does not eliminate a state’s political borders. D: A political boundary alone provides no evidence of unrelated linguistic ancestry."
+    },
+    {
+      "id": "hug-3-7-010",
+      "prompt": "A language-family map marks the most prevalent family in each country with one color. A researcher uses it to locate every minority-language neighborhood. What additional information is most necessary?",
+      "options": [
+        "The same majority map with more saturated colors.",
+        "A list of national capital populations with no language information.",
+        "Subnational language distributions that retain minority groups rather than only national majorities.",
+        "The geographic area of each country without information on its residents."
+      ],
+      "correctIndex": 2,
+      "explanation": "A national majority category suppresses internal variation. Locating minority-language neighborhoods requires finer-scale language observations with appropriate definitions and coverage. Enlarging the same simplified map or adding unrelated totals does not recover groups omitted by its classification. A: Changing saturation does not add missing minority observations. B: Capital size alone cannot identify neighborhood languages. C: This adds the missing linguistic and spatial detail at the relevant scale. D: Area measures do not identify who speaks which language or where they live."
+    },
+    {
+      "id": "hug-3-7-011",
+      "prompt": "A scholar finds similar gender roles in two distant religious communities. Which evidence would most strengthen a specific claim that the roles diffused between them?",
+      "options": [
+        "The communities have equal population totals in the latest census.",
+        "Dated records show contact, teaching about the roles, and later adoption in the receiving community.",
+        "Both communities are located at the same latitude.",
+        "Their present religious buildings have approximately equal floor areas."
+      ],
+      "correctIndex": 1,
+      "explanation": "Similarity alone cannot establish a path of transmission. A dated sequence connecting contact, communication of the specific practice and subsequent adoption provides stronger evidence for diffusion. Population size, latitude and building area do not directly document how the roles were learned or transmitted. A: Equal totals do not document transmission of a cultural practice. B: This supplies a plausible mechanism and chronological sequence tied to the particular roles. C: Latitude is not a record of social contact or adoption. D: Building area does not establish the origin or transmission of gender expectations."
+    }
+  ]
+}

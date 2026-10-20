@@ -1,0 +1,144 @@
+{
+  "topicNumber": "3.7",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "c2c94c740141ea844680e2abbf7cddafdda3140ad6863e7273ed86333d32e223",
+  "scopeReview": "IMP-3.B.1–5: hearths, languages/families/dialects, toponyms and representations, religion origins, expansion/relocation, six official religion examples, ethnic cultures and gender-role transmission. Categories are broad AP conventions rather than universal membership rules.",
+  "varietyReview": "One flow map, language classification table, separate-denominator bar chart and growth ledger. Other cases cover Sikh origins/diaspora, Buddhist networks, ethnic diaspora, official classifications, border mismatch, scale and evidence for gender-role transmission. Varied keys and all five skills.",
+  "repetitionReview": "Distinct mechanisms and representations: residential carriers versus converts; ancestry versus religion; names versus households; births versus arrivals. One classification recall item supports the official six-example requirement; applied questions dominate. No exact repeated stem or copied provider content.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.cambridge.org/core/books/the-indo-european-language-family/4B44B5ACF0D3BBA89B9408050F112A52",
+    "https://pluralism.org/introduction-to-sikhism",
+    "https://pluralism.org/sikhism",
+    "https://festival.si.edu/2002/the-silk-road/the-silk-road-crossroads-and-encounters-of-faith/smithsonian"
+  ],
+  "referenceNote": "Primary course framework and original institutional/scholarly accounts checked. Synthetic maps, counts and classroom representations are original; factual classifications are identified as such. Research references remain QA-only, not additions to the approved student resource library. Automated review is not independent human review.",
+  "questions": [
+    {
+      "questionId": "hug-3-7-001",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Relocation to Harbor, followed by expansion among residents at the destination.",
+      "independentReview": "Separated changes in residence from changes in adherence. The directed route ends at Harbor and the later local adoptions occur there; no evidence identifies a new belief system or a government hierarchy.",
+      "check": {
+        "type": "religion-route-sequence"
+      },
+      "questionSha256": "dc7b1fc59d2639183c690ce150f592a71a399e8188ee7f4f05224f21efd72ac7",
+      "stimulusSha256": "a3094d971816b31e3236ab88ab0f8ea628889bcfc2c92345911a5976efac0c0b"
+    },
+    {
+      "questionId": "hug-3-7-002",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "They share a broad ancestral family even though they belong to different branches.",
+      "independentReview": "Cross-checked English/Germanic, Spanish/Romance and Hindi/Indo-Aryan classifications against the primary scholarly Indo-European reference. Family descent does not establish modern mutual intelligibility or religious identity.",
+      "check": {
+        "type": "language-family-branches"
+      },
+      "questionSha256": "1d4c6681d4245f5e7ae049de00e54b2b13a37fad8cb1245e2afcda4490cef725",
+      "stimulusSha256": "1f3935f061a10b8a1c62bf2866014f0946d53adefc1a24e867bda6d981bfb83a"
+    },
+    {
+      "questionId": "hug-3-7-003",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Place names can preserve earlier language influence after everyday language use changes.",
+      "independentReview": "Independently checked 70% uses a place-name denominator while 20% uses households; no joint distribution is supplied. Historical naming can outlast predominant spoken use and cannot identify an exclusive diffusion mechanism.",
+      "check": {
+        "type": "language-toponym-denominators"
+      },
+      "questionSha256": "2e2115403a494871631fc90464fdf8c5bc476ed50a014769995322b2c6c6692a",
+      "stimulusSha256": "e6999c379ce521fd8ce5d9ff5472a93b89bab0aa81ed85aefdc3810079301465"
+    },
+    {
+      "questionId": "hug-3-7-004",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Conversions account for 30 of 60 additional adherents; arriving adherents account for 20.",
+      "independentReview": "Recomputed 100+10+20+30=160 and growth60; conversion30/60=0.5, arrival20/60=1/3. Births are not labeled conversions. Supplied zero departures/deaths avoids an unstated net-growth offset.",
+      "check": {
+        "type": "religion-growth-ledger"
+      },
+      "questionSha256": "d460d2bb075fcd6187bdbcc15d6b29d30710d0545849b1518b76c9c128a7bdb1",
+      "stimulusSha256": "3dd80337170bab956d22eae66e9ce9100c0b3a35a1811626deac6c8033086833"
+    },
+    {
+      "questionId": "hug-3-7-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Punjab is the historical hearth; migration can carry the tradition to distant communities.",
+      "independentReview": "Verified the Punjab/Nanak origins and diaspora institution context against Harvard’s Pluralism Project. Did not assign the cross-border Punjab hearth exclusively to a modern nation or claim all Sikhs have the same migration history.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "a51a8c4d88083cc38fa4652593da4f3c66203fef0fa0c4cb767af16e0ccaf1f4"
+    },
+    {
+      "questionId": "hug-3-7-006",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Travel of religious specialists and teaching to new followers can combine relocation and expansion.",
+      "independentReview": "Checked primary Smithsonian scholarship on Buddhist exchanges through Silk Road networks. The scenario does not assign a modern majority region as the original hearth or assume spread occurred through military conquest.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "573623ef10f8de9ddb1c3e42544937e8d4fe3fac9245d4d71de9cbfa7cd56270"
+    },
+    {
+      "questionId": "hug-3-7-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Relocation can create distant communities of an ethnic religion; the category is not an exceptionless rule about every person.",
+      "independentReview": "Checked official IMP-3.B.5 wording, which says generally rather than always. Diaspora is consistent with relocation; the item does not equate Judaism with a single nationality or forbid conversion.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "bb69693bae2fcbbd328ea39945ab72626375c2b4905728828ae9e865a36107f3"
+    },
+    {
+      "questionId": "hug-3-7-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Hinduism and Judaism",
+      "independentReview": "Verified all six categories directly against IMP-3.B.4–5. In particular Sikhism remains a universalizing example under the official AP classification; concentration in Punjab does not change this expected curricular label.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b504e58dcf675bacbf31e4dc010e578f69250c3b42caac026976d30db10b1247"
+    },
+    {
+      "questionId": "hug-3-7-009",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Political boundaries and language relationships need not coincide.",
+      "independentReview": "Distinguished political membership, linguistic relatedness and local practice as separate dimensions. Both observed cases directly reject a one-state/one-language-family assumption without requiring contested real-world language-versus-dialect labels.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "c0b41abee217df259119a1c66a404c31911abce87b6589a934f362d372fe004d"
+    },
+    {
+      "questionId": "hug-3-7-010",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Subnational language distributions that retain minority groups rather than only national majorities.",
+      "independentReview": "Checked the inference against the map’s stated unit and majority-only classification. A national color cannot recover minority locations; finer spatial resolution also needs minority-inclusive attributes, not just smaller polygons.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "95cd74517bd485abcfd301195a8d57daa742c9289b6a345595de41dc21be1dfd"
+    },
+    {
+      "questionId": "hug-3-7-011",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Dated records show contact, teaching about the roles, and later adoption in the receiving community.",
+      "independentReview": "Compared evidence for mechanism and temporal order rather than assuming resemblance proves diffusion. The item treats roles as socially transmitted and variable, not biologically fixed or uniform across a religion.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "ea4d1c24fb212631f738a819087233760a6da4705ec524aafdfebac350943993"
+    }
+  ]
+}
