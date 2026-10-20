@@ -3055,5 +3055,295 @@
       }
     ],
     "max": 100
+  },
+  "hug-2-9-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Aging through changing population shares",
+    "description": "Hypothetical earlier counts:ages0–14 2000,15–64 7000,65+1000. Later:1000,6000,1000. The older count is unchanged.",
+    "caption": "Comparable age definitions; categories cover the whole population. Counts alone do not identify the causes of change.",
+    "headers": [
+      "Period",
+      "0–14",
+      "15–64",
+      "65+"
+    ],
+    "rows": [
+      [
+        "Earlier",
+        "2000",
+        "7000",
+        "1000"
+      ],
+      [
+        "Later",
+        "1000",
+        "6000",
+        "1000"
+      ]
+    ]
+  },
+  "hug-2-9-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Changing components of age dependency",
+    "description": "Hypothetical earlier counts2500,6000,1500 and later1600,6000,2400 for ages0–14,15–64,65+. Each population totals10000.",
+    "caption": "Age-based dependency categories are demographic conventions, not actual employment or financial-dependence counts.",
+    "unitLabel": "Residents",
+    "categories": [
+      "0–14",
+      "15–64",
+      "65+"
+    ],
+    "series": [
+      {
+        "label": "Earlier",
+        "values": [
+          2500,
+          6000,
+          1500
+        ]
+      },
+      {
+        "label": "Later",
+        "values": [
+          1600,
+          6000,
+          2400
+        ]
+      }
+    ],
+    "max": 8000
+  },
+  "hug-2-9-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "proportional",
+    "title": "Older counts in two settlement populations",
+    "description": "Hypothetical Rural has1000 residents including250 aged65+; City has10000 including1500 aged65+. Circle areas encode older-resident counts.",
+    "caption": "Rural total population1000; City total10000. Counts and shares answer different planning questions. Schematic locations and boundaries are not to scale.",
+    "unitLabel": "Circle area = residents aged 65+ (count)",
+    "regions": [
+      {
+        "label": "Rural",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "City",
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "Rural older",
+        "x": 25,
+        "y": 15,
+        "value": 250,
+        "labelAlign": "middle"
+      },
+      {
+        "label": "City older",
+        "x": 75,
+        "y": 15,
+        "value": 1500,
+        "labelAlign": "middle"
+      }
+    ]
+  },
+  "hug-2-9-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Potential age support and actual contributors",
+    "description": "Hypothetical districts A/B each have6000 residents aged15–64 and2000 aged65+. Actual pension contributors are3000 in A and5000 in B.",
+    "caption": "Contributors are a subset of the working-age population in this exercise. No wage levels, benefit rules or other revenues are provided.",
+    "headers": [
+      "District",
+      "Ages15–64",
+      "Ages65+",
+      "Contributors"
+    ],
+    "rows": [
+      [
+        "A",
+        "6000",
+        "2000",
+        "3000"
+      ],
+      [
+        "B",
+        "6000",
+        "2000",
+        "5000"
+      ]
+    ]
+  },
+  "hug-2-10-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Secured job offers and comparable living costs",
+    "description": "Hypothetical monthly wages and necessary costs in currency units:A1200/900,B1600/1400. Both jobs are secured; listed costs are exhaustive for this comparison.",
+    "caption": "Only this after-cost accounting is being compared. Family, safety, moving costs and preferences are not measured or ranked.",
+    "headers": [
+      "Destination",
+      "Wage/month",
+      "Costs/month"
+    ],
+    "rows": [
+      [
+        "A",
+        "1200",
+        "900"
+      ],
+      [
+        "B",
+        "1600",
+        "1400"
+      ]
+    ]
+  },
+  "hug-2-10-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "An opportunity between origin and planned destination",
+    "description": "Hypothetical west-to-east locations:Origin atx15,Mid town at50,Far city at85 on the same east–west line. A household plans Far city, then settles at Mid town when suitable work opens.",
+    "caption": "Original schematic: the new job at Mid town changes the planned destination. No barrier, coercion or family network is supplied. Locations are not to scale.",
+    "unitLabel": "Settlement locations and a newly available job",
+    "regions": [
+      {
+        "label": "Study area",
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "Origin",
+        "x": 15,
+        "y": 15,
+        "labelAlign": "middle"
+      },
+      {
+        "label": "Mid town",
+        "x": 50,
+        "y": 15,
+        "labelAlign": "middle"
+      },
+      {
+        "label": "Far city",
+        "x": 85,
+        "y": 15,
+        "labelAlign": "middle"
+      }
+    ]
+  },
+  "hug-2-10-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Desire to move and ability to pay",
+    "description": "Hypothetical households both want to leave a hazard-affected area. A has1000 savings; B300. Each faces an800-unit fare paid upfront; neither can borrow.",
+    "caption": "Only the specified travel-financing constraint is compared. Observed immobility does not establish satisfaction with the origin or absence of hazard.",
+    "headers": [
+      "Household",
+      "Wants to leave",
+      "Savings",
+      "Upfront fare"
+    ],
+    "rows": [
+      [
+        "A",
+        "Yes",
+        "1000",
+        "800"
+      ],
+      [
+        "B",
+        "Yes",
+        "300",
+        "800"
+      ]
+    ]
+  },
+  "hug-2-10-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Reported reasons with multiple responses allowed",
+    "description": "Hypothetical survey of100 movers:70 select Jobs,50 Family,40 Safety. Respondents may select more than one reason.",
+    "caption": "The categories can overlap. Counts do not identify exclusive motives, exact intersections or universal causal shares.",
+    "unitLabel": "Respondents selecting each reason",
+    "categories": [
+      "Jobs",
+      "Family",
+      "Safety"
+    ],
+    "series": [
+      {
+        "label": "Selections",
+        "values": [
+          70,
+          50,
+          40
+        ]
+      }
+    ],
+    "max": 100
   }
 }

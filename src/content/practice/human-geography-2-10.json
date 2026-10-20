@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 2,
+  "topicId": "topic-2-10",
+  "questions": [
+    {
+      "id": "hug-2-10-001",
+      "prompt": "Assume both job offers are secured and the listed monthly costs are the only costs being compared. Which interpretation of economic attraction is supported?",
+      "options": [
+        "B leaves more income after costs because its nominal wage is higher.",
+        "A leaves 300 units after costs, compared with 200 in B, despite A’s lower wage.",
+        "Both destinations leave the same amount because both have jobs.",
+        "The table establishes that every migrant will prefer A regardless of other considerations."
+      ],
+      "correctIndex": 1,
+      "explanation": "Subtract the comparable costs from each secured wage: A leaves 1,200−900=300 units and B leaves 1,600−1,400=200. Nominal wages alone therefore do not determine the stated after-cost comparison. Actual destination choices can also depend on family, safety, amenities and preferences, which the table does not measure. A: The higher wage in B comes with higher costs and a smaller stated remainder. B: Both subtractions and the contrast with nominal wages are correct. C: Having a job does not make wage and cost differences disappear. D: The narrow accounting comparison does not rank every consideration for every person."
+    },
+    {
+      "id": "hug-2-10-002",
+      "prompt": "A household initially plans to move from Origin to Far city. When suitable work becomes available in Mid town, it settles there instead. Which concept does the mapped sequence illustrate?",
+      "options": [
+        "An intervening obstacle that blocks all work in Mid town.",
+        "Forced displacement caused by a compulsory relocation order.",
+        "Chain migration because family members are stated to have moved first.",
+        "An intervening opportunity that changes the intended destination."
+      ],
+      "correctIndex": 3,
+      "explanation": "Mid town lies between the origin and the initially intended destination, and the new suitable job changes where the household settles. That is an intervening opportunity. The scenario does not supply a barrier, compulsory order or family network, so those different mechanisms cannot be substituted merely because migration occurs. A: Suitable work is an opportunity here, not a barrier preventing it. B: No order or coercion is described. C: No earlier family migration or network is supplied. D: The closer opportunity redirects the planned move before Far city is reached."
+    },
+    {
+      "id": "hug-2-10-003",
+      "prompt": "Both households want to leave the hazard-affected area, but neither can borrow and the fare must be paid in advance. Which conclusion follows?",
+      "options": [
+        "Household B may remain because it cannot finance the fare, not because the desire to move is absent.",
+        "Household B must be more able to leave because lower savings reduce travel costs.",
+        "Both households can pay the fare because both report wanting to move.",
+        "Remaining in the area proves that Household B considers the hazard harmless."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ability and motivation are different. A has 1,000 units against an 800-unit fare, while B has only 300 and cannot borrow. The same stated desire can therefore coexist with different capacities to move. Observed immobility alone does not establish contentment, safety or absence of migration pressure. A: This uses both the financing constraint and the explicitly shared desire. B: Savings do not alter the given fare, and B’s available funds are insufficient. C: A preference does not pay the required upfront cost. D: The supplied financial obstacle provides an alternative explanation for remaining."
+    },
+    {
+      "id": "hug-2-10-004",
+      "prompt": "One hundred surveyed movers could select more than one reason. What is the correct interpretation of the chart?",
+      "options": [
+        "The survey is necessarily invalid because its category counts sum to more than 100.",
+        "Exactly 70 respondents moved for jobs and for no other reason.",
+        "Several motives can overlap, so the counts do not partition the sample into exclusive groups.",
+        "Jobs caused exactly 70% of all migration in every country."
+      ],
+      "correctIndex": 2,
+      "explanation": "The selections total 160, which is possible when respondents may report overlapping motives. Seventy selected jobs, but the chart does not show how many of those also selected family or safety. It describes this sample’s reported reasons, not mutually exclusive causal shares or a universal ranking for all places. A: Multiple responses permit a sum above the respondent count without a counting error. B: The chart supplies selections, not the number choosing jobs exclusively. C: This respects the survey design and the possibility of multiple interacting drivers. D: A local sample and self-reports cannot establish an exact universal causal proportion."
+    },
+    {
+      "id": "hug-2-10-005",
+      "prompt": "A factory closes in a worker’s home town while employers elsewhere advertise higher wages. Which classification is most appropriate?",
+      "options": [
+        "Both events are destination pull factors because they concern work.",
+        "Factory closure is an origin push factor; advertised destination wages are a pull factor.",
+        "Factory closure is a pull factor; the higher destination wages are a push factor.",
+        "Both events are physical intervening barriers between the two places."
+      ],
+      "correctIndex": 1,
+      "explanation": "Push and pull describe how conditions relate to a potential origin and destination. Loss of local employment can encourage departure, while perceived jobs or wages elsewhere can attract movement. Both are economic, but sharing a category does not make their geographic roles identical or guarantee that the worker can or will move. A: The closure is a condition at the origin rather than an attraction at the destination. B: This correctly assigns the departure pressure and destination attraction. C: This reverses the roles of the two stated conditions. D: Neither is a physical barrier encountered along the route in this scenario."
+    },
+    {
+      "id": "hug-2-10-006",
+      "prompt": "A drought reduces farm earnings, and some households move to seek work while others remain. Which explanation best captures the interacting drivers?",
+      "options": [
+        "Every household exposed to drought must cross an international border.",
+        "The movement is purely cultural because it involves households.",
+        "The drought cannot matter because the movers also seek employment.",
+        "Environmental stress can affect livelihoods, while resources and opportunities influence whether and where people move."
+      ],
+      "correctIndex": 3,
+      "explanation": "Environmental and economic influences can operate together. Reduced agricultural earnings may contribute to movement, while savings, networks, work options and constraints shape responses. Different responses to one hazard do not disprove its relevance, nor does a job motive erase the environmental pathway. A: Exposure does not force identical movement or an international destination for every household. B: The supplied drought and earnings change cannot be reduced to an exclusively cultural explanation. C: A livelihood pathway can connect environmental conditions to employment-seeking migration. D: This incorporates interacting drivers and differences in capacity and destination choice."
+    },
+    {
+      "id": "hug-2-10-007",
+      "prompt": "Relatives in a destination provide a newcomer with temporary accommodation and reliable information about work. How can this network influence later migration?",
+      "options": [
+        "It can reduce information and settlement costs, making the destination more feasible.",
+        "It guarantees employment and eliminates all risk for every future mover.",
+        "It creates an impassable physical obstacle between origin and destination.",
+        "It proves that no economic motives are involved in the move."
+      ],
+      "correctIndex": 0,
+      "explanation": "A social network can make an otherwise uncertain move easier by providing information and initial support. These connections can interact with job motives and other attractions. Assistance changes feasibility and perceived costs; it does not ensure a job, erase every risk or mean that all decisions have one exclusive cause. A: This identifies the practical information and accommodation mechanism supplied. B: Support does not guarantee every outcome or eliminate all uncertainty. C: The described help facilitates movement rather than creating a physical barrier. D: Social support and economic motives can operate together."
+    },
+    {
+      "id": "hug-2-10-008",
+      "prompt": "A household prefers a distant destination but cannot obtain the required entry permit. Which concept best describes the permit problem in this scenario?",
+      "options": [
+        "An intervening opportunity offering suitable work nearer home.",
+        "A destination amenity that increases the household’s attraction to the place.",
+        "A political or institutional intervening obstacle to the intended move.",
+        "A natural increase produced by more births than deaths."
+      ],
+      "correctIndex": 2,
+      "explanation": "The permit requirement constrains the feasibility of a preferred move, making it an institutional obstacle. An obstacle need not be a mountain or ocean; rules and costs can also shape routes and destinations. This classification does not determine the household’s legal options or imply that the destination has ceased to be attractive. A: No replacement opportunity or closer suitable job is supplied. B: The problem restricts entry rather than providing an amenity. C: The institutional constraint prevents the intended route despite the preference. D: Birth–death accounting is separate from permission for migration."
+    },
+    {
+      "id": "hug-2-10-009",
+      "prompt": "Young adults with training and travel funds are more represented among movers than among all origin residents. What is the most defensible interpretation?",
+      "options": [
+        "All older residents have no wish to move.",
+        "The movers exactly represent the origin population in every characteristic.",
+        "Education makes migration inevitable for every person who receives training.",
+        "Migration can be selective because opportunities and capacity vary among population groups."
+      ],
+      "correctIndex": 3,
+      "explanation": "Movers need not be a random cross-section of their origin. Training, age, resources and opportunities may influence both ability and potential benefits, producing a selective flow. The reported overrepresentation does not establish that every trained person moves or that nonmovers lack motives. A: Nonmovement can reflect constraints or different opportunities rather than no desire. B: The stated overrepresentation directly contradicts exact representativeness. C: A higher representation is not an inevitable individual outcome. D: This recognizes selection while keeping motives and capacities distinct."
+    },
+    {
+      "id": "hug-2-10-010",
+      "prompt": "A retired household moves to be near relatives and a milder climate rather than to take a higher-paying job. What does this case show about destination attractions?",
+      "options": [
+        "They must always be employment-related for a move to count as migration.",
+        "Social ties and environmental amenities can be pull factors alongside economic ones.",
+        "A milder climate is necessarily an origin push factor wherever the household starts.",
+        "Family proximity makes all constraints on relocation disappear."
+      ],
+      "correctIndex": 1,
+      "explanation": "Migration drivers include social and environmental attractions as well as jobs. In this case the desired family proximity and climate describe destination pull factors. Their presence does not remove moving costs, housing constraints or other barriers, and the scenario does not supply enough information to classify every origin condition. A: A residential move need not be motivated by employment. B: This fits the stated attractions without imposing one universal cause. C: The stated climate attraction is at the destination; no origin climate pressure is specified. D: Family support can help but does not logically eliminate every relocation constraint."
+    },
+    {
+      "id": "hug-2-10-011",
+      "prompt": "Origin A has 10,000 residents and 100 departures in a year; Origin B has 100 residents and 10 departures. Which comparison is valid before investigating their causes?",
+      "options": [
+        "B has the higher departure rate, 10% versus A’s 1%, despite fewer departures.",
+        "A has the higher departure rate because 100 is greater than 10.",
+        "The two rates are equal because each place has some departures.",
+        "The counts prove that poverty is the sole cause in both origins."
+      ],
+      "correctIndex": 0,
+      "explanation": "Normalize departures by each origin population: A is 100/10,000=1% and B is 10/100=10%. A contributes more movers in absolute terms, while B has a higher departure rate. Neither the counts nor the rates identify a sole cause; economic, social, political and environmental evidence would be needed to investigate drivers. A: Both normalized rates and the count/rate distinction are correct. B: Comparing counts without the different denominators reverses the rate ranking. C: A nonzero flow does not imply equal proportions. D: No poverty or motive information is supplied by these counts."
+    }
+  ]
+}

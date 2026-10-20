@@ -161,3 +161,17 @@ test('women and demographic-change checks retain aggregate scope, migration deno
   const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
  }
 });
+
+test('aging checks separate counts from shares and demographic ratios from contributor support',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-2-9.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-2-9.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[1][3]='2000'],[1,s=>s.series[1].values[0]=2500],[2,s=>s.points[1].value=250],[3,s=>s.rows[1][3]='3000']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+
+test('migration-driver checks preserve intervening order, financing constraints and overlapping responses',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-2-10.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-2-10.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[1][2]='1000'],[1,s=>s.points[1].x=95],[2,s=>s.rows[1][2]='1000'],[3,s=>s.series[0].values[2]=0]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});

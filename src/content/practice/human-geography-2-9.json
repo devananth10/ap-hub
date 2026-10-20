@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 2,
+  "topicId": "topic-2-9",
+  "questions": [
+    {
+      "id": "hug-2-9-001",
+      "prompt": "Which statement correctly identifies population aging in the table?",
+      "options": [
+        "The older population doubled because the total population became smaller.",
+        "The older share fell because fewer children remained.",
+        "The share aged 65+ rose from 10% to 12.5% even though its count stayed at 1,000.",
+        "Population aging is impossible unless the number aged 65+ increases."
+      ],
+      "correctIndex": 2,
+      "explanation": "Population aging concerns the age distribution, not simply the number of older residents. The population falls from 10,000 to 8,000 while the count aged 65+ remains 1,000. Its share therefore rises from 10% to 12.5%. This example establishes a compositional change without requiring an increase in the older count or identifying the cause of the total decline. A: The count stays at 1,000; a smaller denominator does not double it. B: The older share rises as the denominator falls. C: Both percentages and the unchanged older count follow from the table. D: An older group can become a larger fraction even when its count is unchanged."
+    },
+    {
+      "id": "hug-2-9-002",
+      "prompt": "Define total age dependency as (ages 0–14 plus 65+)/ages 15–64, and old-age dependency as ages 65+/ages 15–64. What do the bars show?",
+      "options": [
+        "Total age dependency stays the same while old-age dependency rises.",
+        "Both ratios stay the same because both populations total 10,000.",
+        "Total age dependency rises while old-age dependency falls.",
+        "Old-age dependency falls because there are fewer children."
+      ],
+      "correctIndex": 0,
+      "explanation": "The combined younger and older groups total 4,000 in both periods, against 6,000 working-age residents, so total age dependency remains about 66.7 per 100. The older component rises from 1,500 to 2,400, raising old-age dependency from 25 to 40 per 100. A stable overall ratio can conceal a shift in the kinds of services and support needed. A: This distinguishes the unchanged total ratio from the rising older component. B: Equal total populations do not force equal age composition or component ratios. C: The total numerator is unchanged, while the older numerator increases. D: The old-age ratio excludes children and rises with the larger older numerator."
+    },
+    {
+      "id": "hug-2-9-003",
+      "prompt": "A planner must distinguish the intensity of local aging from the number of older residents who might use services. Which comparison uses both the mapped counts and the population totals correctly?",
+      "options": [
+        "City has the larger older share because its older count is larger.",
+        "Rural has more older residents because its older share is larger.",
+        "Both places have the same older share because the circles use one common area scale.",
+        "Rural has a larger older share, but City has a larger older count."
+      ],
+      "correctIndex": 3,
+      "explanation": "Rural has 250 older residents out of 1,000, or 25%; City has 1,500 out of 10,000, or 15%. Rural has the higher concentration, while City has six times as many older residents. Both counts and shares can matter to planning; neither alone describes access, individual needs or the full distribution of demand. A: A larger count can occur in a much larger population with a lower share. B: Rural’s 250 older residents are fewer than City’s 1,500 despite its higher percentage. C: A common symbol scale permits count comparison; it does not make population-normalized shares equal. D: This correctly separates concentration from absolute number."
+    },
+    {
+      "id": "hug-2-9-004",
+      "prompt": "Both districts have the same ratio of working-age residents to older residents. What does the contributor column add to a pension-support analysis?",
+      "options": [
+        "The same age ratio guarantees identical contributor support.",
+        "Equal age ratios can conceal different numbers of contributors per older resident.",
+        "Every working-age resident must already be a contributor.",
+        "The contributor ratio is lower in B because B has more contributors."
+      ],
+      "correctIndex": 1,
+      "explanation": "Both districts have 6,000 working-age and 2,000 older residents, a potential age-based support ratio of 3. Actual contributors number 3,000 in A and 5,000 in B, giving 1.5 and 2.5 contributors per older resident. The age ratio therefore does not fully describe the funding base. Wage levels, contribution rates and benefit rules would still matter. A: The equal age ratio does not make contributor counts equal. B: This recognizes the measured difference in the funding-base proxy despite identical age structure. C: The contributor counts are below the working-age total in both places. D: With the same older denominator, more contributors give B a higher ratio."
+    },
+    {
+      "id": "hug-2-9-005",
+      "prompt": "Which combination can contribute to an increasing share of older residents over time?",
+      "options": [
+        "Persistently lower fertility combined with more people surviving into older ages.",
+        "Higher fertility that immediately increases the number of people already aged 65+.",
+        "A larger newborn cohort with no survival of anyone into older ages.",
+        "A higher birth count that makes every existing resident younger."
+      ],
+      "correctIndex": 0,
+      "explanation": "Lower fertility can reduce the relative size of younger cohorts, while improved survival can increase the number reaching older ages. Together these processes can shift the age distribution toward older groups. Their timing and strength vary, and migration can also change local age composition; no single exact age structure follows from the combination alone. A: This identifies two major demographic pathways consistent with population aging. B: Newborns do not instantly enter ages 65+, and higher fertility usually adds to younger cohorts first. C: Without survival into old age, that combination cannot create an older group. D: Births add new people; they do not reduce the ages of people already alive."
+    },
+    {
+      "id": "hug-2-9-006",
+      "prompt": "An aging country’s crude death rate rises even though death rates within each age group remain unchanged. Which explanation is most plausible?",
+      "options": [
+        "The unchanged age-specific rates prove that the crude rate cannot change.",
+        "A larger older share necessarily means every medical service has deteriorated.",
+        "Births must have been incorrectly counted as deaths.",
+        "More residents are in older age groups with higher death rates, changing the weighted average."
+      ],
+      "correctIndex": 3,
+      "explanation": "A crude death rate combines age groups using their population shares as weights. If a larger share is in older groups with higher mortality, the overall rate can rise even when each group’s rate is unchanged. Comparing health conditions therefore benefits from age-specific or age-standardized measures rather than reading the crude change alone as a quality-of-care verdict. A: The weights can change while the component rates remain fixed. B: Composition alone can raise the crude rate, so deterioration is not established. C: No counting error is needed to explain a weighted-average change. D: This directly explains the aggregate increase under the stated constant component rates."
+    },
+    {
+      "id": "hug-2-9-007",
+      "prompt": "A town wants residents with varying mobility levels to remain active as its population ages. Which response most directly addresses the built environment?",
+      "options": [
+        "Assume all older residents can use stairs because they share an age category.",
+        "Limit analysis to pension payments and ignore transport access.",
+        "Improve step-free routes, crossing times and access to essential destinations.",
+        "Move every older resident to the same institution regardless of preference or need."
+      ],
+      "correctIndex": 2,
+      "explanation": "Accessible routes and transport can reduce environmental barriers to participation. Older residents differ in capacity, resources and preferences, so designing for varied mobility is more informative than assuming an age group is uniform. Pension policy may matter too, but it does not replace the built-environment response specified by the question. A: Chronological age does not establish identical mobility. B: A financial measure alone does not resolve physical access barriers. C: This changes the environment relevant to reaching services and participating in community life. D: Uniform compulsory relocation ignores variation and does not directly improve ordinary local routes."
+    },
+    {
+      "id": "hug-2-9-008",
+      "prompt": "In a simplified annual pay-as-you-go plan, 5,000 contributors fund benefits of 1,000 units for each recipient. If recipients rise from 2,000 to 2,500 and all other funding is excluded, what contribution per person balances each year?",
+      "options": [
+        "200 units initially and 250 later.",
+        "400 units initially and 500 later.",
+        "1,000 units initially and 1,250 later.",
+        "2,000 units initially and 2,500 later."
+      ],
+      "correctIndex": 1,
+      "explanation": "The initial benefit bill is 2,000×1,000=2,000,000 units, divided among 5,000 contributors: 400 each. Later the bill is 2,500,000, requiring 500 each under the specified assumptions. This illustrates a funding pressure from changing recipient counts, not a prediction for a real pension system with assets, taxes, varied benefits and changing productivity. A: These amounts would raise only half of the required benefit bills. B: Both amounts divide the full benefit bill by the fixed contributor count. C: The per-recipient benefit is not the same as the contribution needed from each of a larger contributor group. D: These are recipient counts rather than per-contributor monetary amounts."
+    },
+    {
+      "id": "hug-2-9-009",
+      "prompt": "A government considers raising the retirement age as one response to population aging. Which limitation is most relevant to evaluating the proposal?",
+      "options": [
+        "Changing the legal age guarantees every affected person a suitable job and equal health.",
+        "A higher legal retirement age makes the population biologically younger overnight.",
+        "Age rules can change potential participation, but health, job availability and unequal work conditions affect actual outcomes.",
+        "Retirement-age rules determine the birth rate without any household decisions."
+      ],
+      "correctIndex": 2,
+      "explanation": "A later legal retirement age can alter eligibility and potential years of participation, but it does not create jobs or equalize health and working conditions. Evaluating the policy requires evidence on who can and wants to work, the types of jobs available and distributional effects. An administrative age boundary does not reverse demographic aging. A: Neither job matching nor identical health follows from a legal age change. B: The existing ages and birth years of residents do not change. C: This distinguishes a rule from actual participation and recognizes unequal circumstances. D: The rule does not mechanically determine reproductive behavior."
+    },
+    {
+      "id": "hug-2-9-010",
+      "prompt": "The share of older voters rises in a district. Which claim requires additional evidence rather than following automatically from that change?",
+      "options": [
+        "Older voters constitute a larger fraction of the electorate.",
+        "Age composition may become relevant to campaign planning.",
+        "Campaigns could investigate varied housing and care concerns.",
+        "All older voters share the same party preference and will vote as one bloc."
+      ],
+      "correctIndex": 3,
+      "explanation": "A larger age-group share can make its diverse concerns relevant to political analysis, but age alone does not establish uniform beliefs, turnout or party choice. Political consequences of aging need evidence on preferences and participation, not an assumption that everyone within a cohort behaves identically. A: This restates the given compositional change. B: Considering changing electorate composition is a possible response, not a claim of uniform preference. C: Investigating concerns acknowledges potential relevance and variation. D: This imposes a uniform political behavior that the age-share observation does not supply."
+    },
+    {
+      "id": "hug-2-9-011",
+      "prompt": "An aging district relies heavily on unpaid family caregivers, some of whom reduce paid work hours. Which analysis best captures a broader economic consequence?",
+      "options": [
+        "Count only formal care spending, because unpaid care has no opportunity cost.",
+        "Examine care needs, unpaid hours, lost earnings and how responsibilities are distributed.",
+        "Assume all older residents require the same number of care hours.",
+        "Treat reduced paid work as proof that all family members prefer to leave employment."
+      ],
+      "correctIndex": 1,
+      "explanation": "Consequences extend beyond formal budgets when unpaid care uses time that might otherwise be spent in employment or other activities. Examining hours, earnings and the distribution of responsibilities can reveal costs and inequalities. Neither the age category nor observed work reduction establishes identical needs or freely chosen preferences. A: Unpaid activity can still consume time and involve foregone earnings. B: This includes both formal and informal dimensions and their unequal distribution. C: Care requirements vary among people of the same age. D: Constraints can cause reduced paid work; the observation alone does not reveal preferences."
+    }
+  ]
+}

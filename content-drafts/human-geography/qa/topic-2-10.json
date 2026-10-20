@@ -1,0 +1,151 @@
+{
+  "topicNumber": "2.10",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "adab99c394022610152194a23fa381d0b12bd1fa8bff6c4de0544cb2ea90168f",
+  "scopeReview": "IMP-2.C.1–2: push/pull factors and intervening opportunities/obstacles across economic, environmental, cultural/social, political and demographic contexts. Distinguishes motivation, capacity, selectivity and multiple drivers without assigning legal statuses.",
+  "varietyReview": "After-cost offers, intervening settlement map, travel-finance table and overlapping-motive chart; additional origin rate normalization. Applied concepts include work loss, drought/livelihood interaction, networks, permits, selective flows and amenity migration. All five skills and varied keys/difficulty.",
+  "repetitionReview": "Unlike prior density/rate items, these questions use denominators to constrain driver inference. The job comparison tests secured net resources, not universal highest-wage choice; mobility constraints and overlapping survey responses supply new inferential tasks. No repeated stems or numeric-only copies.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://wmr-educatorstoolkit.iom.int/module-3-why-do-people-migrate-instructions",
+    "https://publications.iom.int/books/iom-perspectives-migration-environment-and-climate-change"
+  ],
+  "referenceNote": "Primary curriculum and IOM research/education context corroborate interacting drivers and capacity. Original synthetic scenarios/data; no institutional lesson questions, current policy claims or third-party catalog additions. No independent human review.",
+  "questions": [
+    {
+      "questionId": "hug-2-10-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "A leaves 300 units after costs, compared with 200 in B, despite A’s lower wage.",
+      "independentReview": "Independently computed remainders300/200 under secured jobs and exhaustive listed costs. No unemployment probabilities, hidden costs or universal utility model assumed; other migration motives are explicitly unmeasured.",
+      "check": {
+        "type": "migration-after-costs"
+      },
+      "questionSha256": "0eb10c74031c88cffdccfddb9bbeb8530ae87b956a90fcac6a65a38d9a353303",
+      "stimulusSha256": "b9ee34d28bf04680882b6fcb236acb89eed741659e208afce6c5a3fa7f87ad46"
+    },
+    {
+      "questionId": "hug-2-10-002",
+      "skill": "Spatial Relationships",
+      "difficulty": "foundational",
+      "correctOption": "An intervening opportunity that changes the intended destination.",
+      "independentReview": "Confirmed the schematic west-to-east orderOrigin15,Mid50,Far85 with a common horizontal coordinate. The behavioral change is explicitly due to suitable work at the intervening settlement, not an inferred obstacle or network.",
+      "check": {
+        "type": "migration-intervening-opportunity"
+      },
+      "questionSha256": "fa15fe4581efe380a2bcd5732afc88d4c4398769ef0383b213961835dfd492b4",
+      "stimulusSha256": "33e4a1c27f562275a8aaced5484af7669a8cee40a46f70e10c540827313c3611"
+    },
+    {
+      "questionId": "hug-2-10-003",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Household B may remain because it cannot finance the fare, not because the desire to move is absent.",
+      "independentReview": "Checked funding gapsA1000−800=+200,B300−800=−500 under no borrowing. Held motivation equal; remaining cannot be interpreted as low concern or low desire without ignoring the stated constraint.",
+      "check": {
+        "type": "migration-finance-barrier"
+      },
+      "questionSha256": "a21fe0db990b05832eb56ffa1087c24c9c820837fde2d53ab22b92ea95b746c4",
+      "stimulusSha256": "168c85aaf9cd86701dd48b608f9cbd16abdf3ddbdee8b0bac5bd629e9c9ea9e3"
+    },
+    {
+      "questionId": "hug-2-10-004",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Several motives can overlap, so the counts do not partition the sample into exclusive groups.",
+      "independentReview": "Summed70+50+40=160 selections among100 respondents; because multiple responses are permitted, overlaps are necessary but exact intersections are unknown. No exclusive job-only count can be derived.",
+      "check": {
+        "type": "migration-overlapping-reasons",
+        "respondents": 100
+      },
+      "questionSha256": "0199649178a81639453c25a44f5bec07e08e7f9caccaf5b81ef681aa0f1d7b24",
+      "stimulusSha256": "6b7d1078f9eb7c2adffff12fa0d33137258ed62b819e1325e9f4833c12f9b665"
+    },
+    {
+      "questionId": "hug-2-10-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Factory closure is an origin push factor; advertised destination wages are a pull factor.",
+      "independentReview": "Classified by location and direction of influence, not solely by economic category. Retained conditional motivation rather than claiming that every displaced worker necessarily migrates.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b0f0d8eeeac1e7bebc8ca0f28fc5cfe7d213ef122b4dff442fb1bd7e032c9001"
+    },
+    {
+      "questionId": "hug-2-10-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Environmental stress can affect livelihoods, while resources and opportunities influence whether and where people move.",
+      "independentReview": "Traced drought→farm-income pressure alongside heterogeneous household capacity/opportunities. No claim of automatic cross-border movement, single-cause attribution or a legal protection category is made.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "c33e6552158712b80cc7f3577ef7e22b8f6927fd5e4a84459d0f59c817617654"
+    },
+    {
+      "questionId": "hug-2-10-007",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "It can reduce information and settlement costs, making the destination more feasible.",
+      "independentReview": "Matched each supplied network resource to a reduced information/settlement constraint. Kept facilitation distinct from guaranteed success or an exclusive motive; no new destination resources are imported.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "53cd163bcee000262fd1f85a1d0ea5087f2f5150001bb4c33408a3d105705f25"
+    },
+    {
+      "questionId": "hug-2-10-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "A political or institutional intervening obstacle to the intended move.",
+      "independentReview": "Classified the specified entry constraint as a barrier, preserving the distinction between attraction and feasibility. No real-country legal rules, eligibility determination or advice is asserted.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b5a9007f431a6b71fc783fed6adec3d7607925852bd3e42fa31a0f3af83a6237"
+    },
+    {
+      "questionId": "hug-2-10-009",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Migration can be selective because opportunities and capacity vary among population groups.",
+      "independentReview": "Used the explicit difference between mover composition and origin composition to identify selectivity. Avoided ecological inference about all older people or deterministic claims about education.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "87c8a0a7fd3852da42f91cb9c5c8ac8f6ad469a4a445e6cdb9db540f111ca4d4"
+    },
+    {
+      "questionId": "hug-2-10-010",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Social ties and environmental amenities can be pull factors alongside economic ones.",
+      "independentReview": "Classified family proximity and preferred climate as social/environmental destination attractions. No medical claim about climate or guarantee of successful relocation is implied.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "9105c7bf1ab90fa4ecbaf4859d21ccb8dad2c547ec9dd04f7f6f3e0e294aa3b4"
+    },
+    {
+      "questionId": "hug-2-10-011",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "B has the higher departure rate, 10% versus A’s 1%, despite fewer departures.",
+      "independentReview": "Independently computed100/10000=.01 and10/100=.1. A’s count is larger but B’s normalized rate is ten times higher; neither permits causal attribution.",
+      "check": {
+        "type": "migration-origin-rates",
+        "populations": [
+          10000,
+          100
+        ],
+        "departures": [
+          100,
+          10
+        ]
+      },
+      "questionSha256": "bdf826778075e0329132b5c38f30524c50f5dfd530b6406da86061d5f84ef426"
+    }
+  ]
+}

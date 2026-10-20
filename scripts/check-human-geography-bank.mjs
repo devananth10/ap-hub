@@ -85,6 +85,17 @@ export function verifyGeographyQuestion(question,review,stimulus){
   case 'women-migration-shares':{assert.deepEqual(stimulus.rows.map(r=>Number(r[1])/(Number(r[1])+Number(r[2]))),[.6,.4]);assert.equal(question.correctIndex,3);break;}
   case 'women-time-use':{assert.deepEqual(stimulus.rows.map(r=>Number(r[1])+Number(r[2])),[10,10]);assert.deepEqual(stimulus.rows.map(r=>r.slice(1).map(Number)),[[4,6],[8,2]]);assert.equal(question.correctIndex,0);break;}
   case 'women-maternal-ratios':assert.deepEqual(stimulus.series[0].values.map(n=>n/review.check.liveBirths*100000),[800,300]);assert.equal(question.correctIndex,2);break;
+  case 'aging-share-count':{const totals=stimulus.rows.map(r=>r.slice(1).reduce((s,n)=>s+Number(n),0));assert.deepEqual(totals,[10000,8000]);assert.deepEqual(stimulus.rows.map((r,i)=>Number(r[3])/totals[i]),[.1,.125]);assert.equal(stimulus.rows[0][3],stimulus.rows[1][3]);assert.equal(question.correctIndex,2);break;}
+  case 'aging-dependency-composition':{const [a,b]=stimulus.series.map(s=>s.values);assert.deepEqual(a,[2500,6000,1500]);assert.deepEqual(b,[1600,6000,2400]);assert.equal((a[0]+a[2])/a[1],(b[0]+b[2])/b[1]);assert.deepEqual([a[2]/a[1],b[2]/b[1]],[.25,.4]);assert.equal(question.correctIndex,0);break;}
+  case 'aging-spatial-denominators':{const counts=stimulus.points.map(p=>p.value);assert.deepEqual(counts,[250,1500]);assert.deepEqual(counts.map((n,i)=>n/review.check.populations[i]),[.25,.15]);assert.equal(counts[1]/counts[0],6);assert.equal(question.correctIndex,3);break;}
+  case 'aging-contributor-ratios':{assert.deepEqual(stimulus.rows.map(r=>Number(r[1])/Number(r[2])),[3,3]);assert.deepEqual(stimulus.rows.map(r=>Number(r[3])/Number(r[2])),[1.5,2.5]);assert.equal(question.correctIndex,1);break;}
+  case 'aging-weighted-mortality':{const c=review.check,values=c.olderShares.map(s=>c.rates[0]*(1-s)+c.rates[1]*s);assert.ok(Math.abs(values[0]-3.8)<1e-9);assert.ok(Math.abs(values[1]-7.4)<1e-9);assert.equal(question.correctIndex,3);break;}
+  case 'aging-pension-accounting':{const c=review.check;assert.deepEqual(c.recipients.map(n=>n*c.benefit/c.contributors),[400,500]);assert.equal(question.correctIndex,1);break;}
+  case 'migration-after-costs':assert.deepEqual(stimulus.rows.map(r=>Number(r[1])-Number(r[2])),[300,200]);assert.equal(question.correctIndex,1);break;
+  case 'migration-intervening-opportunity':{assert.deepEqual(stimulus.points.map(p=>p.label),['Origin','Mid town','Far city']);assert.deepEqual(stimulus.points.map(p=>p.x),[15,50,85]);assert.equal(new Set(stimulus.points.map(p=>p.y)).size,1);assert.equal(question.correctIndex,3);break;}
+  case 'migration-finance-barrier':assert.deepEqual(stimulus.rows.map(r=>Number(r[2])-Number(r[3])),[200,-500]);assert.ok(stimulus.rows.every(r=>r[1]==='Yes'));assert.equal(question.correctIndex,0);break;
+  case 'migration-overlapping-reasons':assert.deepEqual(stimulus.series[0].values,[70,50,40]);assert.equal(stimulus.series[0].values.reduce((a,b)=>a+b,0),160);assert.equal(review.check.respondents,100);assert.equal(question.correctIndex,2);break;
+  case 'migration-origin-rates':assert.deepEqual(review.check.departures.map((n,i)=>n/review.check.populations[i]),[.01,.1]);assert.equal(question.correctIndex,0);break;
   case 'reasoning':break;
   default:throw Error('Unknown verification model: '+review.check.type);
  }

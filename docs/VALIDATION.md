@@ -1,5 +1,9 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 2.9–2.10
+
+187 MCQs across seventeen topics are published;68 meaningful stimuli (36.36%) and77 explicit checks. Aging questions distinguish counts/shares, total/old-age dependency, potential/contributor support and conditional policy consequences. Causes of Migration distinguishes after-cost opportunities, intervening destinations, travel financing, overlapping motives and departure-rate denominators. All141 automated tests, TypeScript/build, Geography scopes and standard smoke checks passed. Both complete browser sessions scored11/11; all eight actual stimuli were inspected at390×844. A transient clipped phone-table paint cleared after zoom reset; measured widths/scroll positions were normal and subsequent views were complete. No persistent layout defect or Next.js error was reproduced. Existing content/resources/storage preserved; no human review claim. Next2.11; the bank is incomplete.
+
 ## Human Geography Topics 2.7–2.8
 
 165 MCQs across fifteen topics are published;60 meaningful stimuli (36.36%) and66 explicit numerical/geometry checks. New policy questions distinguish intent, instrument, local access, migration composition, causal attribution and cohort timing. Women/demographic-change questions interpret education associations, contextual migration sex shares, paid/unpaid care and maternal mortality ratios using live births. All139 tests, TypeScript/build, Geography scopes and standard smoke checks pass. Every new answer was graded in two full browser sessions, each11/11. All eight stimuli were inspected at390×844 with readable tables, legends and chart units. Existing question/resource objects and storage are unchanged. No independent human review is claimed. Next2.9; full bank unfinished.

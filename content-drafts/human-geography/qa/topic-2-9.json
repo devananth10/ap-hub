@@ -1,0 +1,160 @@
+{
+  "topicNumber": "2.9",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "a90123b88ddffce12977cb7598bc3f3b92193482329b527ea8017c4e27579ed8",
+  "scopeReview": "SPS-2.C.1–2: causes and political/social/economic consequences of population aging. Explicit age conventions, count/share distinction, component dependency, labor participation, pensions, care and access. No stereotypes or real-world financial/medical advice.",
+  "varietyReview": "Two tables, paired-age bars and a proportional count map; additional weighted mortality and funding calculations independently checked. Concepts address causes, environment, policy limits, politics and unpaid care. All five skills, varied keys and foundational/intermediate/challenging items.",
+  "repetitionReview": "Unlike2.3 shape/share identification, these tasks examine aging with a constant older count, unchanged total dependency hiding rising old-age dependency, and contributors distinct from potential support. Map reverses count/share ranking for service planning; no numeric-only clone of an earlier pyramid question.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.who.int/en/news-room/fact-sheets/detail/ageing-and-health",
+    "https://www.un.org/development/desa/pd/content/population-ageing"
+  ],
+  "referenceNote": "Official curriculum and institutional ageing context checked; UN page search excerpt available but direct fetch unavailable, so no claim of full-page review. Original synthetic data/calculations and conditional mechanisms; no third-party catalog additions or human review claim.",
+  "questions": [
+    {
+      "questionId": "hug-2-9-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The share aged 65+ rose from 10% to 12.5% even though its count stayed at 1,000.",
+      "independentReview": "Summed earlier2000+7000+1000=10000 and later1000+6000+1000=8000; computed1000/10000=.10 and1000/8000=.125. Count change0 but share change+2.5 percentage points.",
+      "check": {
+        "type": "aging-share-count"
+      },
+      "questionSha256": "1e18ab39c4e31710568d721508164e6e43dc0e4eb39f063ceb074f92a8601612",
+      "stimulusSha256": "277c878c3333e033aa48a75306cceaa7edb3db2d63b74bdfc47c457bb313a742"
+    },
+    {
+      "questionId": "hug-2-9-002",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "Total age dependency stays the same while old-age dependency rises.",
+      "independentReview": "Recomputed dependency totals(2500+1500)/6000=(1600+2400)/6000=2/3 and older ratios1500/6000=.25,2400/6000=.4. Age-based ratios do not identify actual employment or individual dependence.",
+      "check": {
+        "type": "aging-dependency-composition"
+      },
+      "questionSha256": "33f49839674b9ccc308067ec4014ecede816beb6b60750a1a3287f85e1692fda",
+      "stimulusSha256": "6f325ba1c991af0532f58b54a56d9b29702a7b5707f1989c7ed786bc43edf1b0"
+    },
+    {
+      "questionId": "hug-2-9-003",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "Rural has a larger older share, but City has a larger older count.",
+      "independentReview": "Computed250/1000=.25 and1500/10000=.15, while1500/250=6. Symbol areas encode counts with a6:1 area ratio; they do not encode age percentages or prove identical needs.",
+      "check": {
+        "type": "aging-spatial-denominators",
+        "populations": [
+          1000,
+          10000
+        ]
+      },
+      "questionSha256": "8c7cd286ab11c27d96833b2db6c846dfabe5a28ca953dae4c965642f6825e8ac",
+      "stimulusSha256": "5fdfd915f80c9cbbe8437c18e16869bab967ee726cfb0ce2cec13ee8c54d8098"
+    },
+    {
+      "questionId": "hug-2-9-004",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Equal age ratios can conceal different numbers of contributors per older resident.",
+      "independentReview": "Independently calculated age support6000/2000=3 each and contributor ratios3000/2000=1.5,5000/2000=2.5. Kept potential demographic support distinct from actual contributions and from solvency.",
+      "check": {
+        "type": "aging-contributor-ratios"
+      },
+      "questionSha256": "0c07871d3513b477836b206eb9316f178251ceff4e751ed23cec695152295c06",
+      "stimulusSha256": "fc8d49a37de97a7755c5ee0801d3a50500e08c27d9c8e016f14762ac29806786"
+    },
+    {
+      "questionId": "hug-2-9-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Persistently lower fertility combined with more people surviving into older ages.",
+      "independentReview": "Checked numerator/denominator mechanisms separately: fewer young entrants and more survival to old age can increase older share. This concerns population composition, not the claim that an individual’s biological aging is caused by fertility decline.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d0420c2e6497a166602d13507932fa799789cd8ea01243d65e62641466534014"
+    },
+    {
+      "questionId": "hug-2-9-006",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "More residents are in older age groups with higher death rates, changing the weighted average.",
+      "independentReview": "Verified with a separate example: young/older rates2/20 per1000 give3.8 with10% older and7.4 with30% older. Rates unchanged, weights changed. No medical-care decline can be inferred from this crude comparison alone.",
+      "check": {
+        "type": "aging-weighted-mortality",
+        "rates": [
+          2,
+          20
+        ],
+        "olderShares": [
+          0.1,
+          0.3
+        ]
+      },
+      "questionSha256": "593c89528a07dedaca8a06c5c6f5d4b799e4a9a3a0991ae682b262be92669f93"
+    },
+    {
+      "questionId": "hug-2-9-007",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Improve step-free routes, crossing times and access to essential destinations.",
+      "independentReview": "Mapped the stated mobility/access goal to physical routes and destinations. Verified against age-friendly-environment principles without treating all older people as disabled, inactive or in need of institutions.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "90b2cb3ebc74186d791a7c0c722ede8f6ab3d061fd3cc1a8ab8f3bd4daa6026d"
+    },
+    {
+      "questionId": "hug-2-9-008",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "400 units initially and 500 later.",
+      "independentReview": "Independently multiplied recipients by1000 and divided by5000, obtaining400/500; checked total receipts exactly match2million/2.5million. Assumptions exclude assets, other revenue and contribution differences.",
+      "check": {
+        "type": "aging-pension-accounting",
+        "contributors": 5000,
+        "benefit": 1000,
+        "recipients": [
+          2000,
+          2500
+        ]
+      },
+      "questionSha256": "5ea6116c886d761dbf42551ecdd780f43247be4520d5b9828e788835121c6842"
+    },
+    {
+      "questionId": "hug-2-9-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Age rules can change potential participation, but health, job availability and unequal work conditions affect actual outcomes.",
+      "independentReview": "Separated legal eligibility, actual labor participation and chronological composition. Conditional effects avoid asserting a policy recommendation or universal capacity to extend working lives.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b65fdf9e794cc354f2ae63d28b9590c8ecfc1ff4b21e0389c47f1c7306715831"
+    },
+    {
+      "questionId": "hug-2-9-010",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "All older voters share the same party preference and will vote as one bloc.",
+      "independentReview": "Distinguished the given aggregate share from unobserved within-group preferences. A larger older electorate permits investigation of political consequences but cannot establish unanimous party choice or turnout.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "1ade1b2338aaacf45ac659bb09a161f840b80fe0f3f307f9c89d08359957c931"
+    },
+    {
+      "questionId": "hug-2-9-011",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Examine care needs, unpaid hours, lost earnings and how responsibilities are distributed.",
+      "independentReview": "Traced household care demands to labor-market and distributional consequences rather than only government expenditures. Avoided equating every older person with dependence or assuming that constrained work choices reveal preferences.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "9f546be70be745dabda1c7089cb7415a13188b43105fadd2617b92c07992e9c2"
+    }
+  ]
+}
