@@ -23,6 +23,12 @@ The files are in `C:\Users\devan\OneDrive\Documents\ChatGPT\StudyHub` on this co
 
 Development builds use `.next-preview/`, while production builds use `.next/`. Both are ignored by Git. The development preview can stay open during production validation.
 
+### Preview on another device on the same network
+
+Stop the existing preview with Ctrl+C, then run `pnpm dev:lan` instead of `pnpm dev`. This runs one development server on port 3000, reachable through both `http://127.0.0.1:3000` on this computer and `http://<this-computer's-private-IPv4-address>:3000` on your Wi-Fi/LAN. Use the computer's address, not `127.0.0.1`, on another device. Windows Firewall must allow inbound TCP 3000 from your local subnet; keep any rule limited to that subnet, port and Node executable. Do not configure router port forwarding or a public tunnel. Return to `pnpm dev` for computer-only access.
+
+Guest study works over the LAN. Existing account origin checks and OAuth redirects remain configured for the local computer; LAN account sign-in/sync is not enabled by this command. Registration stays closed. Guest progress is separate for each browser and address, so keep using the original Local Preview URL to access existing device-local work. No saved data is moved or deleted by changing the listener.
+
 ## What works
 
 - Dashboard, selectable course outlines, search, unit/topic navigation, and the primary AP Chemistry example workspace.
