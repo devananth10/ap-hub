@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Unit 6 complete — Topics 6.9–6.11
+
+660 original MCQs across 60 topics are published, exactly eleven each; 240 meaningful stimuli (36.36%) and 257 explicit evidence/numerical/geometry checks. Urban Data checks age counts/shares, qualitative accounts, growth contributions and survey coverage. Urban Changes checks rent ratios, cohort turnover, exposure disparities and inclusionary shares, plus historically accurate discrimination concepts and governance. Urban Sustainability tests land consumption, brownfield assessment, sector-energy accounting and regional growth-boundary evaluation.
+
+All 187 unit tests, full structural/evidence checks, TypeScript, production build, all 68 Geography topic/Practice scopes and standard preview checks passed. All 33 new browser questions were graded to three 11/11 sessions; all twelve mobile stimuli inspected, chart keyboard zoom200/reset100 and desktop light-mode rendering checked. Existing 229 checkpoint question files,228 stimuli and complete approved catalog are unchanged. Student storage and live preview preserved. All 172 existing Chemistry/Calculus lesson routes passed. The Chemistry Practice regression initially hit the documented intermittent preview JSON parse error at Topic 9.1, entropy: evidence preserved, no restart/cache deletion, full Chemistry regression recovered and passed, then 80 requests passed without retries or new errors. See PREVIEW_STABILITY.md; permanent fix remains unresolved. Next 7.1; eight topics/88 questions remain. Full748 final audit and subsequent UI/summary phase remain pending. Automated review does not constitute independent human review or calibrated difficulty.
+
 ## Human Geography Topics 6.7–6.8
 
 627 original MCQs across 57 topics are published, eleven each; 228 meaningful stimuli (36.36%) and 245 explicit evidence/numerical/geometry checks. Infrastructure compares connection rates, reachable jobs, reliability and capacity. Urban Sustainability covers mixed uses, walkability, transit-oriented design, smart growth, New Urbanism, greenbelts and slow growth with conditional benefits and tradeoffs.

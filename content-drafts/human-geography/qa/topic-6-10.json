@@ -1,0 +1,141 @@
+{
+  "topicNumber": "6.10",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "67b09a28ccc6b22c03f0ec2179f2328fc1a60c5407e2ae16d70522118d156d08",
+  "scopeReview": "SPS-6.A.1–5: housing affordability and discrimination, environmental burdens, informal tenure, inclusionary housing/local food responses, renewal/gentrification tradeoffs and fragmented governance.",
+  "varietyReview": "Four original assessed stimuli compare rent shares, tracked original households, mapped exposure and a fictional inclusionary rule. Additional distinct applications cover redlining, blockbusting, reinvestment evidence, tenure, renewal, food access and institutions.",
+  "repetitionReview": "Avoids treating all turnover as forced displacement, every renovation as gentrification or all informal residents as one legal/social group. Numeric and conceptual tasks differ; all options explained and keys varied. Difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.hudhousingcounselors.hud.gov/themes/custom/b5subtheme/pdf/training/202209_Module3.1.pdf"
+  ],
+  "referenceNote": "Official scope and primary HUD historical discrimination definitions checked. Original hypothetical accounts only; no actual lending assessment, legal advice, diagnosis, private data, third-party question or new student resource. Automated review is not independent human review.",
+  "questions": [
+    {
+      "questionId": "hug-6-10-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "A spends 30% and B spends 36%, so B has the higher rent-to-income share.",
+      "independentReview": "Independently computed.30/.36 and gap6 percentage points. Same monthly currency/net-income definition; no legal housing threshold, personalized advice or judgment about real households.",
+      "check": {
+        "type": "urban-change-rent-income"
+      },
+      "questionSha256": "b8b233ad0ed8dc831cb8c343965b7bfe698c4f363746bb072d51b2bb7edcd750",
+      "stimulusSha256": "42995cad3748e14ea8c0fa7abe0bb99b3498cb96472d842ad5ecd9cb641deb9b"
+    },
+    {
+      "questionId": "hug-6-10-002",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Exactly 400 original households are no longer present; their reasons for leaving require further evidence.",
+      "independentReview": "Independently verified1000−600=400 and400/1000=.4. Same original-household cohort; no household splitting/merging in this simplified account, and no count of newcomers.",
+      "check": {
+        "type": "urban-change-household-cohort"
+      },
+      "questionSha256": "79b387eab38e2b5538445f81bf2febbf60c34f7bf84cc87a164182ea44a6406e",
+      "stimulusSha256": "8c67a356074294d761467978103c79adc0fea80a408252e40235ded99c32d653"
+    },
+    {
+      "questionId": "hug-6-10-003",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "The pattern warrants investigation of unequal environmental burdens, while individual outcomes and causes remain unmeasured.",
+      "independentReview": "Index is explicitly synthetic, not a pollutant concentration or medical threshold. Checked A70>B20 and avoided individual-income or racial inference from area means.",
+      "check": {
+        "type": "urban-change-environmental-burden"
+      },
+      "questionSha256": "4b19d3333960b30dadd3a278851941359817056d4258cc6d05521529c6a525b5",
+      "stimulusSha256": "8196e1b93497f360add20ce38adeb2c0c555ba7cbe8ae0a6c9ff02503c53d510"
+    },
+    {
+      "questionId": "hug-6-10-004",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "30",
+      "independentReview": "Calculated150*.2=30 exactly, no rounding or actual jurisdiction rule. Twenty percent explicitly refers to all project dwellings, avoiding floor-area/bedroom ambiguity.",
+      "check": {
+        "type": "urban-change-inclusionary-share"
+      },
+      "questionSha256": "abd3872ca8f36bc56d01146e5c8cd63d7024d46018295bff17669a17e58ece7d",
+      "stimulusSha256": "6db2dd977d966d16104de0f4c15d54f6c6e82b2f6be5c67346a3bcadf50d3ade"
+    },
+    {
+      "questionId": "hug-6-10-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Redlining that restricts credit through discriminatory neighborhood classification.",
+      "independentReview": "Historical discriminatory mechanism checked against primary HUD training; applicants explicitly otherwise eligible. No current legal advice or assertion of sole causation by HOLC maps.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "cfe2e7cb75cd372723e2a2567e93329562fdc2dbd677ff46bf0ca7617f767a30"
+    },
+    {
+      "questionId": "hug-6-10-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Blockbusting.",
+      "independentReview": "Avoided repeating discriminatory claims as facts. Broker’s manipulation, not racial identity or actual value decline, defines the mechanism; fictional historical example.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d5afbda6434936a0bdd3c5dee5d2b7728424861b33b376416c8f47dabf63762d"
+    },
+    {
+      "questionId": "hug-6-10-007",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Reinvestment and housing-cost trends together with resident and business turnover and social-composition evidence.",
+      "independentReview": "Distinguishes renovation, reinvestment and social change without defining all urban improvement as displacement. Same-household linkage and causality remain separate questions.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "7691c5b405a10bc33e9d8fa3d6f84491e227ab36db3f2212401c1aa7004a2860"
+    },
+    {
+      "questionId": "hug-6-10-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Secure tenure depends on recognized rights and institutions, not only the physical condition of a building.",
+      "independentReview": "No real legal-status determination, stigmatizing criminality claim or advice. Squatter/informal settlement relation stated through varied tenure, consistent with official A.2.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "a71ca3d9d2bdf8850a84cba410e72fc9b7c529f8fa15fe09afee3f8207cf0ca1"
+    },
+    {
+      "questionId": "hug-6-10-009",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Physical upgrades can coexist with relocation costs and disrupted social networks, so both outcomes require assessment.",
+      "independentReview": "Conditional tradeoff not a conclusion about an actual renewal program. Distinguishes aggregate assets from distribution and lived experience.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "65469791b88243d5dd351179f4df41f990452e8b7eb567bf34aa89334dbbf1e5"
+    },
+    {
+      "questionId": "hug-6-10-010",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Prices, operating times, usable travel routes and the foods available relative to residents’ needs.",
+      "independentReview": "Focuses on local-food response in urban A.3, not duplicating agricultural yield or nutrition requirements. No dietary or medical recommendation.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "1f8a40367741cd06cdd6cb9e1573585ad4b78d1357f4e60e8bf890aad98e0f05"
+    },
+    {
+      "questionId": "hug-6-10-011",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Fragmented authority can hinder coordinated responses to problems that cross jurisdictions.",
+      "independentReview": "Direct A.5 alignment, no assertion of one legally required institutional structure or that regional government always resolves conflict.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "dd2b42028f69e409a0189877789ad1eac3edbbebe8345e55bfb83a10289c32a2"
+    }
+  ]
+}

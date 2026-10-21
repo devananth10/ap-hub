@@ -1,0 +1,140 @@
+{
+  "topicNumber": "6.9",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "8614681e8136cf633fb5d7e631a09c07a16de8f5be21d665e2068515f1f8038a",
+  "scopeReview": "IMP-6.E.1/E.2: census/survey quantities, fieldwork and narratives explaining urban change. Includes composition, fixed-boundary trends, sampling coverage, causal limits, metadata and aggregate-versus-individual interpretation.",
+  "varietyReview": "Four meaningful stimuli: age-count/share table, fictional contrasting accounts, original two-series line chart and survey-coverage comparison. Additional questions apply mixed-method and source evaluation to original urban scenarios.",
+  "repetitionReview": "Distinct analytical targets rather than repeated vocabulary: count/share, narrative meaning, contribution to combined growth and target-population coverage. Avoids copying earlier migration ledgers. Varied keys, detailed options and uncalibrated difficulty.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf"
+  ],
+  "referenceNote": "Official scope checked. Every count, interview account and scenario is fictional/original; no real personal data, borrowed quotations, added external resource or independent human review.",
+  "questions": [
+    {
+      "questionId": "hug-6-9-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Their number rises by 100 while their share falls from 50% to 30%.",
+      "independentReview": "Independent arithmetic:600−500=100,500/1000=.5,600/2000=.3. Fixed boundaries/age definition supplied; composition change not attributed to one demographic mechanism.",
+      "check": {
+        "type": "urban-data-count-share"
+      },
+      "questionSha256": "6920ddf01e3834b6f7ca25b65da764f285fe4f90d0f7588803656de4576031bb",
+      "stimulusSha256": "4199cdd0826a665ea4dc2fd3374bb0247885a5455b9394e07e4357f4e72f6e53"
+    },
+    {
+      "questionId": "hug-6-9-002",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "They identify contrasting experiences and questions to investigate, without estimating citywide prevalence.",
+      "independentReview": "The two fictional accounts are explicitly selected, not randomly sampled; no fabricated real interview attribution or population inference. They concern different outcomes and can both be valid experiences.",
+      "check": {
+        "type": "urban-data-narratives"
+      },
+      "questionSha256": "a21c716179b1fbd7ab217c1eca813d99ab944580f98536cfa9dd6fbcb0aea15d",
+      "stimulusSha256": "8bff5184d613be1686a67f198e32a65b4c196cfc2cfd71a08a72e105f4a7be91"
+    },
+    {
+      "questionId": "hug-6-9-003",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "About 83.3%",
+      "independentReview": "Recomputed increments200/1000,combined1200,outerfraction5/6. Final Outer population share2000/3200=.625 and own growth100% are distinct distractor concepts; chart intervals equal five years.",
+      "check": {
+        "type": "urban-data-growth-contribution"
+      },
+      "questionSha256": "f2137e24c945a119df379f02b865aca4d79c27d2782d172666e9f8d07b375143",
+      "stimulusSha256": "3e10327ad9a4f28b48efe57e5255e6c8b22ec2bd4bae46465ea2b9feb036f865"
+    },
+    {
+      "questionId": "hug-6-9-004",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "The station survey reports 80% support and the city sample 52%, but they cover different populations and recruitment methods.",
+      "independentReview": "Rates independently recalculated. City sample described as a probability sample with acceptable coverage, not a census or flawless truth; larger size alone is not the justification.",
+      "check": {
+        "type": "urban-data-survey-coverage"
+      },
+      "questionSha256": "6e493707b53c8778c688af5da0872887a00bf36931ff433c188716c1316eb9ad",
+      "stimulusSha256": "30e2e9972c0cf36f5001c848bb61404529bd1c7037384498a8fbd962a6435d04"
+    },
+    {
+      "questionId": "hug-6-9-005",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Compatible census counts plus diverse resident interviews and field observations.",
+      "independentReview": "Mixed evidence directly matches E.1/E.2. Does not imply qualitative data are inherently unrigorous or that census totals reveal attitudes.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "24edcfe463576725eae036a1b897037761d6ad3985523665d03d37799cb7e0e1"
+    },
+    {
+      "questionId": "hug-6-9-006",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Spatial association does not isolate causation, and other changes may influence both patterns.",
+      "independentReview": "No actual business or policy effect asserted. Separates a mapped relationship from a uniquely identified causal explanation.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "da16f79f2e17c3b770a427258c6d3e1d6341ed5ec4aa3a94ce0448281531b7a0"
+    },
+    {
+      "questionId": "hug-6-9-007",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Evidence of place meaning that a building-condition inventory may not capture.",
+      "independentReview": "Fictional context, not attributed to an actual culture. Place attachment distinguished from a census estimate or universal preference.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "20438c7b7943ac154f8287f67201e8a71723179b11649dbe0dc2ad0bc325a5b2"
+    },
+    {
+      "questionId": "hug-6-9-008",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Information linking changes to original residents, including turnover and the distribution of incomes.",
+      "independentReview": "Does not request identifiable student or household data. Explicitly avoids ecological inference from an aggregate mean to all individuals.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b60d6b3e9b9a07a1b5d89e883153eef56341aa041e078650feab87d70e7e846e"
+    },
+    {
+      "questionId": "hug-6-9-009",
+      "skill": "Data Analysis",
+      "difficulty": "foundational",
+      "correctOption": "They help distinguish actual population change from differences in the time or area measured.",
+      "independentReview": "Kept as metadata reasoning rather than repeating a prior reclassification calculation. No false implication that all boundaries must be static if data are harmonized.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "abccc8d5a4459c9aa56d006eb0cbcad0bbaacab08e4451a7967083fbb34ed0f6"
+    },
+    {
+      "questionId": "hug-6-9-010",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "The rent is quantitative; the open description is qualitative, and both can inform a study.",
+      "independentReview": "Evidence type is determined by recorded information, not by whether the source is called a survey. No actual personal housing information collected.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "27d8873b20b0072dd1c598e6f52c9467d329301e7aa7c154be870b530d2510aa"
+    },
+    {
+      "questionId": "hug-6-9-011",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "It improves temporal comparability while combining observed landscape change with experience.",
+      "independentReview": "Repeated field-study case aligned to E.2; no assumption that controlled observation time eliminates every seasonality or selection concern.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "82938169e963d56b0ac3ed8d7eb33333637b4c6b810b92f98e26045427998ff6"
+    }
+  ]
+}

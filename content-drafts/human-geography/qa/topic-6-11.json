@@ -1,0 +1,142 @@
+{
+  "topicNumber": "6.11",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "e598b4aef3ef4e78fd0089e5e3bf494d118b4de3abb8b7f804fd66b29d178d45",
+  "scopeReview": "SPS-6.B.1/B.2: land-extensive development, sanitation, climate adaptation, environmental accounting and energy; regional planning, brownfield reuse, growth boundaries and farmland protection evaluated by outcomes and distribution.",
+  "varietyReview": "Four meaningful original stimuli: urban land/population account, parcel histories, sector-energy chart and regional additions table. Other applications test cross-boundary systems, embodied burdens, site reuse, farmland, adaptation and tradeoffs.",
+  "repetitionReview": "Different measures and scales: land per person, potential contamination, sector totals/shares and regional flow of new additions. No forced attribution of growth to a boundary or assumed household displacement. Varied keys and complete explanations; difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.epa.gov/brownfields/understanding-brownfields",
+    "https://www.epa.gov/smartgrowth/smart-growth-and-infill-brownfields-redevelopment"
+  ],
+  "referenceNote": "Official framework and primary EPA brownfield/reuse scope checked. All scenarios and statistics original/hypothetical, not site certifications, copied figures, outside lesson imports or independent human review.",
+  "questions": [
+    {
+      "questionId": "hug-6-11-001",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Land area grows 40% while population grows 20%, so land used per resident rises.",
+      "independentReview": "Independently computed land1.4,population1.2,land/person7/6,density6/7. Built-area definition consistent; not a proof of one spatial form or a direct ecological-footprint-area measure.",
+      "check": {
+        "type": "urban-sustainability-land-population"
+      },
+      "questionSha256": "5232da2634652131909492fd8478e2fd4a6e2ec3d2ae7447736e5a4b8ad08c2f",
+      "stimulusSha256": "bff1382a955fdc072b702b85071fe32212d111a11d1e84a957f3a558585ddddc"
+    },
+    {
+      "questionId": "hug-6-11-002",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "A, because past industrial use and possible contamination can complicate reuse; site-specific assessment informs the next steps.",
+      "independentReview": "Primary EPA definition includes presence or potential presence; no demand for proven contamination before brownfield classification. Hypothetical site review only, not a real safety clearance or cleanup specification.",
+      "check": {
+        "type": "urban-sustainability-brownfield-records"
+      },
+      "questionSha256": "143143d882fe356d7cf076c5352b1e04ce8d8487084002adaca99309b4d8bfba",
+      "stimulusSha256": "9e523fa4b1d698b033284d8ab72b40b9e38c0d484601203492f8f8cd7f05efaf"
+    },
+    {
+      "questionId": "hug-6-11-003",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Total use stays at 100 units, while transport’s share rises from 20% to 40%.",
+      "independentReview": "Independent sums100/100 andtransportshares.2/.4 verified. Same accounting boundary and no double counting supplied; no energy-to-emissions conversion without fuel factors.",
+      "check": {
+        "type": "urban-sustainability-energy-mix"
+      },
+      "questionSha256": "81102619e7d1a9abd90d10452a7e095bf0c6a09e63ff923f028a0bba6c8a9191",
+      "stimulusSha256": "7040035d028acd610599e617c878afdc5312bd71da3ba1b1a83fb6331a5cd13a"
+    },
+    {
+      "questionId": "hug-6-11-004",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Development outside the boundary increased more than inside; regional evidence is needed before concluding that growth was contained or identifying the cause.",
+      "independentReview": "Recomputed inside300−200=100/outside250−50=200. These are changes in annual additions, not cumulative stocks or household displacement counts; no causal claim from a single before/after.",
+      "check": {
+        "type": "urban-sustainability-boundary-spillover"
+      },
+      "questionSha256": "da56d06b100e61b623d191358ee1b06a16f78d2d9dfd2749ea91c307cdada1b4",
+      "stimulusSha256": "caef0da191888c28c272b56b8b54609cbbda5260ee92aeb34247db9e59b1a521"
+    },
+    {
+      "questionId": "hug-6-11-005",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Shared waterways and connected settlement systems can transmit effects across separate authorities.",
+      "independentReview": "No pollutant concentration, treatment design or health prescription. Focus is regional sustainability effectiveness rather than a claim that one institutional form always succeeds.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "4f6bdf5e5e94e3768ab3b91e7ec2faa9fb63a4bd6b0e58467f381d36b625c366"
+    },
+    {
+      "questionId": "hug-6-11-006",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "A local inventory may omit burdens embodied in goods produced outside the city.",
+      "independentReview": "Distinguishes territorial and consumption accounting without asserting all relocations have identical emissions or supplying an unsupported numerical footprint.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "3b3334580b46828946e9c75f03ef384b0ffba958a73fe2a341f09c0720463c2f"
+    },
+    {
+      "questionId": "hug-6-11-007",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Site-specific environmental follow-up together with access, housing costs and benefits to different resident groups.",
+      "independentReview": "No statement that all brownfields contain the same contaminant, all reuse is residentially safe or a geographic indicator replaces qualified environmental assessment.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "9ffd3cb6ca32cd457f393d2f97814501c59adf173b02e776cc9f11da1deb6e64"
+    },
+    {
+      "questionId": "hug-6-11-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "It can preserve working land and limit some conversion, while transport, housing demand and shifted growth still require regional evaluation.",
+      "independentReview": "Direct SPS-6.B.2 scope; avoids causal guarantees, farm-practice stereotypes and numerical emissions claims.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "762c5e005f2c2a8d40c1dbbcf8153053e2d10702835153b615ea65cb8822ae56"
+    },
+    {
+      "questionId": "hug-6-11-009",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Temperature conditions and usable access across neighborhoods, including previously underserved areas.",
+      "independentReview": "General urban climate-adaptation concept, not medical advice or a fixed cooling estimate. Does not presume a shade project fully resolves climate change.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "a997015f90103d81af991a31944441ee93172f85cf8cc33ab8c2d6fdfbb671ab"
+    },
+    {
+      "questionId": "hug-6-11-010",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "Evaluate mobility gains alongside flood exposure, service capacity and who bears the risks.",
+      "independentReview": "Hypothetical planning comparison, no real flood-risk classification, construction recommendation or health/safety clearance.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "494d715f4b98411e8f5749ff3f5648cc919d4e4eddc94e78d3d4437d71b3f3b8"
+    },
+    {
+      "questionId": "hug-6-11-011",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Observed outcomes can differ from aims because of implementation, behavior, regional spillovers and changing conditions.",
+      "independentReview": "Completes effectiveness focus with no claim that monitoring alone isolates causality or that every initiative fails its stated objectives.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "44da47f42ce4863af53be9c5f4915fb52de607c2c25b4bc4ff5d966859baef80"
+    }
+  ]
+}

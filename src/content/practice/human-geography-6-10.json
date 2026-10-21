@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 6,
+  "topicId": "topic-6-10",
+  "questions": [
+    {
+      "id": "hug-6-10-001",
+      "prompt": "Which statement correctly compares the share of monthly household income spent on rent?",
+      "options": [
+        "A spends 36% and B spends 30%.",
+        "Both spend 30% because B has the higher income.",
+        "A spends 30% and B spends 36%, so B has the higher rent-to-income share.",
+        "B has the lower share because its income is 500 units higher."
+      ],
+      "correctIndex": 2,
+      "explanation": "For household A the ratio is 600/2000 = 30%; for B it is 900/2500 = 36%. B has a higher income but also a sufficiently higher rent to produce a larger share. This ratio is one affordability indicator, not a complete account of household needs, housing quality or other expenses, and no legal eligibility threshold is being applied. A: These calculated percentages are reversed. B: Higher income does not hold the rent-to-income ratio fixed. C: This correctly divides each rent by the corresponding household income. D: The income difference alone omits B’s 300-unit higher rent."
+    },
+    {
+      "id": "hug-6-10-002",
+      "prompt": "What can be concluded from these original-household records without equating every departure with forced displacement?",
+      "options": [
+        "Exactly 400 original households are no longer present; their reasons for leaving require further evidence.",
+        "Exactly 400 were evicted by redevelopment, regardless of other evidence.",
+        "The number of original households increased by 400.",
+        "The neighborhood necessarily has only 600 households in total after the project."
+      ],
+      "correctIndex": 0,
+      "explanation": "The cohort starts with 1000 original households, of which 600 remain in the neighborhood at the follow-up. Thus 400 are no longer present, a 40% departure share. The records do not identify reasons, destinations or new arrivals. Investigating displacement requires additional evidence about pressures and constraints rather than treating all turnover as either voluntary or forced. A: This correctly counts departures and preserves the causal limit. B: No eviction or reason-for-moving records are provided. C: The remaining original-household count fell, not rose. D: New households may have arrived, so the cohort count is not the full later neighborhood total."
+    },
+    {
+      "id": "hug-6-10-003",
+      "prompt": "District A has lower average household income than B and a higher mapped exposure index. Which conclusion is justified?",
+      "options": [
+        "The map proves each individual in A has a particular illness.",
+        "The map proves a specific official intentionally created the unequal pattern.",
+        "The districts have equal measured exposure because they share a border.",
+        "The pattern warrants investigation of unequal environmental burdens, while individual outcomes and causes remain unmeasured."
+      ],
+      "correctIndex": 3,
+      "explanation": "The map shows a spatial inequality: A’s exposure index is 70 and B’s is 20, alongside the stated difference in average income. This is relevant to investigating environmental injustice and decision-making histories. It does not by itself establish an individual health outcome, each resident’s income or the intent and causal role of a particular actor. A: An area-level exposure indicator is not a diagnosis of every resident. B: Intent and causes require historical and institutional evidence beyond this map. C: Adjacency does not require equal infrastructure or environmental burdens. D: This recognizes the disparity without converting it into unsupported individual or causal claims."
+    },
+    {
+      "id": "hug-6-10-004",
+      "prompt": "Under the hypothetical rule, how many of this project’s new dwellings must meet the stated affordability condition?",
+      "options": [
+        "20",
+        "30",
+        "120",
+        "150"
+      ],
+      "correctIndex": 1,
+      "explanation": "The requirement is 20% of all 150 new dwellings, so 0.20 × 150 = 30. This is an inclusionary-zoning illustration because the project must include a specified affordable share. The numerical requirement does not alone establish who receives homes, the duration of affordability, enforcement or whether the wider city’s housing need is met. A: Twenty is the percentage, not the dwelling count. B: Thirty is one-fifth of 150, using the stated project-wide base. C: This is the remaining 80%, not the required affordable share. D: That would require every new dwelling rather than 20%."
+    },
+    {
+      "id": "hug-6-10-005",
+      "prompt": "A historical lender refuses otherwise eligible applicants because their neighborhood is associated with a racial minority. Which process is most directly illustrated?",
+      "options": [
+        "Gentrification through reinvestment and changing housing demand.",
+        "Inclusionary zoning requiring an affordable housing share.",
+        "Redlining that restricts credit through discriminatory neighborhood classification.",
+        "Urban renewal that physically clears and rebuilds an area."
+      ],
+      "correctIndex": 2,
+      "explanation": "Redlining refers here to discriminatory restrictions on lending tied to neighborhood location and racialized classification, rather than an applicant’s relevant individual financial qualifications. Such practices can constrain investment and reinforce spatial inequality. The example is a fictional historical mechanism, not a legal assessment of a real lender or a claim that a single map created every later disparity. A: The scenario concerns credit exclusion, not incoming investment and residential change. B: An affordable-unit requirement is a different planning tool. C: This matches the explicit neighborhood-based discriminatory lending mechanism. D: Physical clearance and rebuilding are not described."
+    },
+    {
+      "id": "hug-6-10-006",
+      "prompt": "A broker exploits racial fears to pressure owners to sell cheaply, then resells the properties for profit. Which process is being described?",
+      "options": [
+        "Blockbusting.",
+        "Redlining through neighborhood-based lending exclusions.",
+        "Urban renewal through publicly directed clearance and rebuilding.",
+        "Inclusionary zoning that sets an affordable dwelling requirement."
+      ],
+      "correctIndex": 0,
+      "explanation": "Blockbusting exploits racial prejudice and fears about neighborhood change to induce sales, often enabling profit through subsequent transactions. It concerns manipulation in the housing market, not a physical infrastructure project or an administrative boundary change. Describing this practice critically does not endorse the stereotypes used or imply that demographic change itself lowers property value. A: This identifies the stated discriminatory sales-pressure mechanism. B: The scenario concerns a broker inducing sales, rather than a lender denying credit. C: No clearance-and-rebuilding program is described. D: No affordable housing requirement is being imposed in this scenario."
+    },
+    {
+      "id": "hug-6-10-007",
+      "prompt": "Which evidence would best distinguish gentrification from physical renovation alone?",
+      "options": [
+        "Renovation permits alone, treating any repair as proof of socioeconomic replacement.",
+        "The latest median asking rent alone, without a baseline or resident information.",
+        "A population increase alone, without investment or housing-market evidence.",
+        "Reinvestment and housing-cost trends together with resident and business turnover and social-composition evidence."
+      ],
+      "correctIndex": 3,
+      "explanation": "Gentrification involves neighborhood reinvestment and socioeconomic change rather than every instance of repair. Housing costs, investment, business change and resident composition can help evaluate the process. Such evidence should also examine who remains and why people move, rather than assuming all original residents are displaced or all investment is beneficial. A: Repairs can occur without the broader reinvestment and socioeconomic process. B: A single current rent level does not establish change or its social dimensions. C: Population growth can occur through several processes other than gentrification. D: This supplies evidence relevant to both reinvestment and social change."
+    },
+    {
+      "id": "hug-6-10-008",
+      "prompt": "Why can an informal settlement’s residents face insecurity even when they have built durable homes?",
+      "options": [
+        "A durable wall necessarily grants a documented land title.",
+        "Secure tenure depends on recognized rights and institutions, not only the physical condition of a building.",
+        "Informal settlement proves every household has an identical income and legal situation.",
+        "A building’s age alone establishes ownership of the underlying land."
+      ],
+      "correctIndex": 1,
+      "explanation": "Physical housing quality and security of tenure are different dimensions. Residents may have uncertain or contested rights to occupy land despite investing in structures. Tenure arrangements and recognition vary, so informality should not be treated as proof of a single legal status, resident identity or inevitable outcome. This is a geographic concept rather than advice on an individual land dispute. A: Construction materials do not automatically create recognized title. B: This separates the built structure from rights to occupy or own land. C: Households and tenure arrangements can differ within an informal settlement. D: Building age alone does not resolve land rights."
+    },
+    {
+      "id": "hug-6-10-009",
+      "prompt": "An urban renewal project replaces deteriorated infrastructure but clears occupied homes and local businesses. Which assessment is most complete?",
+      "options": [
+        "Physical upgrades can coexist with relocation costs and disrupted social networks, so both outcomes require assessment.",
+        "Infrastructure improvements prove that every displaced household benefited.",
+        "Relocation proves that no physical improvement occurred.",
+        "A higher total property value alone measures every resident’s welfare."
+      ],
+      "correctIndex": 0,
+      "explanation": "Urban renewal can change physical conditions while imposing costs on residents and businesses required to move. Evaluation should consider infrastructure, services, relocation, access, social networks and the distribution of gains. A single aggregate property-value measure or a binary label cannot establish all household outcomes. A: This recognizes distinct physical and social consequences. B: A project-level benefit does not prove universal household gains. C: Physical improvement and relocation can occur in the same project. D: Aggregate value can rise while some residents face losses or exclusion."
+    },
+    {
+      "id": "hug-6-10-010",
+      "prompt": "A local food initiative adds a market in a poorly served district. Which evaluation best tests whether access actually improves?",
+      "options": [
+        "Only the number of stalls, treating that as proof every household can shop there.",
+        "Only citywide food production, without locating the district or its residents.",
+        "Prices, operating times, usable travel routes and the foods available relative to residents’ needs.",
+        "Only an assumption that all residents have cars and identical schedules."
+      ],
+      "correctIndex": 2,
+      "explanation": "A new outlet can improve local access, but usefulness depends on affordability, timing, mobility and the food offered. Evaluating these dimensions with residents helps distinguish an outlet’s physical presence from practical access. Neither stall count nor regional production alone establishes whether the intended population can obtain suitable food. A: Stalls measure one facility feature, not universal usable access. B: Citywide production does not show local distribution or affordability. C: These measures test practical access rather than simply facility presence. D: The assumption erases potentially important transport and time constraints."
+    },
+    {
+      "id": "hug-6-10-011",
+      "prompt": "An urban region’s housing, transport and drainage decisions are split among municipalities and agencies. What challenge can this create?",
+      "options": [
+        "Administrative boundaries automatically prevent all physical movement.",
+        "Each agency necessarily serves the same geography and population.",
+        "One municipality’s decision can never affect neighbors.",
+        "Fragmented authority can hinder coordinated responses to problems that cross jurisdictions."
+      ],
+      "correctIndex": 3,
+      "explanation": "Functional and geographic fragmentation divides responsibilities and territories among institutions. Housing access, commuting and drainage may cross those divisions, creating coordination and accountability challenges. Cooperation can address some conflicts, but neither fragmentation nor regional coordination guarantees a particular outcome without attention to powers, resources and local needs. A: Boundaries divide authority, not necessarily all movement or physical flows. B: Jurisdictions and functional responsibilities can overlap or differ. C: Cross-border flows and markets can transmit effects. D: This identifies the mismatch between interconnected issues and divided authority."
+    }
+  ]
+}

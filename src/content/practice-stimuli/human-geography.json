@@ -12941,5 +12941,357 @@
         "1000"
       ]
     ]
+  },
+  "hug-6-9-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Population counts and age composition",
+    "description": "Hypothetical urban district with unchanged boundaries and the same under-18 definition in both censuses. Counts include all residents under the stated enumeration method.",
+    "caption": "Original synthetic census-style observations. An increase in a group’s count need not mean an increase in its share, and age alone does not identify every household type.",
+    "headers": [
+      "Census",
+      "All residents",
+      "Residents under 18"
+    ],
+    "rows": [
+      [
+        "Earlier",
+        "1000",
+        "500"
+      ],
+      [
+        "Later",
+        "2000",
+        "600"
+      ]
+    ]
+  },
+  "hug-6-9-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Selected residents describe a changing district",
+    "description": "Hypothetical field notes written for this question, not real quotations. Two selected participants discuss a recent station-area redevelopment; they were not chosen as a representative survey.",
+    "caption": "Original fictional accounts. Narrative evidence can reveal meanings and mechanisms while leaving the prevalence of each view uncertain.",
+    "headers": [
+      "Participant",
+      "Account summarized by researcher"
+    ],
+    "rows": [
+      [
+        "R",
+        "The new walking connection makes the shops easier for me to reach."
+      ],
+      [
+        "S",
+        "I welcome the connection but worry about rising housing costs."
+      ]
+    ]
+  },
+  "hug-6-9-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "display": "line",
+    "title": "Population change within fixed urban districts",
+    "description": "Hypothetical census counts at equal five-year intervals. Inner: 1000, 1100, 1200. Outer: 1000, 1500, 2000. District definitions and enumeration methods remain unchanged.",
+    "caption": "Original synthetic time series. Lines connect census observations and do not imply observations for each intervening year or a particular cause of change.",
+    "unitLabel": "Residents",
+    "categories": [
+      "2010",
+      "2015",
+      "2020"
+    ],
+    "series": [
+      {
+        "label": "Inner",
+        "values": [
+          1000,
+          1100,
+          1200
+        ]
+      },
+      {
+        "label": "Outer",
+        "values": [
+          1000,
+          1500,
+          2000
+        ]
+      }
+    ],
+    "max": 2400
+  },
+  "hug-6-9-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Two surveys about one redevelopment plan",
+    "description": "Hypothetical surveys. Station respondents volunteered at one station. The city survey used a probability sample of city residents with suitable geographic coverage; neither result is a census.",
+    "caption": "Original sample records. Assess target population, recruitment, wording and nonresponse as well as sample size when evaluating urban attitudes.",
+    "headers": [
+      "Recruitment",
+      "Responses",
+      "Support"
+    ],
+    "rows": [
+      [
+        "Station volunteers",
+        "100",
+        "80"
+      ],
+      [
+        "City resident sample",
+        "1000",
+        "520"
+      ]
+    ]
+  },
+  "hug-6-10-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Two hypothetical household housing budgets",
+    "description": "Hypothetical households using the same currency and monthly net-income definition. A: income 2000, rent 600. B: income 2500, rent 900. No other spending or household-size data are supplied.",
+    "caption": "Original budget comparison for a geographic affordability indicator. It is not financial advice or an eligibility determination; costs and household needs require more context.",
+    "headers": [
+      "Household",
+      "Income/month",
+      "Rent/month"
+    ],
+    "rows": [
+      [
+        "A",
+        "2000",
+        "600"
+      ],
+      [
+        "B",
+        "2500",
+        "900"
+      ]
+    ]
+  },
+  "hug-6-10-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Tracking an original household cohort after redevelopment",
+    "description": "Hypothetical linked records follow the same 1000 original households. At follow-up 600 remain in the neighborhood. Treat each original household as one tracked unit; no splitting or merging occurs in this simplified account.",
+    "caption": "Original cohort illustration. Records identify presence, not moving reasons, coercion, destinations or the number of newly arriving households.",
+    "headers": [
+      "Cohort measure",
+      "Households"
+    ],
+    "rows": [
+      [
+        "Original households at start",
+        "1000"
+      ],
+      [
+        "Original households still present",
+        "600"
+      ]
+    ]
+  },
+  "hug-6-10-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "Unequal modeled exposure in neighboring districts",
+    "description": "Hypothetical districts. A has a modeled exposure index of 70 and lower average household income than B; B has an index of 20. Higher index means more modeled exposure on the same 0–100 scale. No actual pollutant or health threshold is represented.",
+    "caption": "Original synthetic disparity map. It supports a question about environmental burdens, not individual health, every household’s income or a proven historical cause.",
+    "unitLabel": "Modeled exposure index (0–100)",
+    "bins": [
+      {
+        "min": 0,
+        "max": 50,
+        "label": "0–49"
+      },
+      {
+        "min": 50,
+        "max": 101,
+        "label": "50–100"
+      }
+    ],
+    "regions": [
+      {
+        "label": "A",
+        "value": 70,
+        "polygon": [
+          [
+            5,
+            5
+          ],
+          [
+            50,
+            5
+          ],
+          [
+            50,
+            55
+          ],
+          [
+            5,
+            55
+          ]
+        ]
+      },
+      {
+        "label": "B",
+        "value": 20,
+        "polygon": [
+          [
+            50,
+            5
+          ],
+          [
+            95,
+            5
+          ],
+          [
+            95,
+            55
+          ],
+          [
+            50,
+            55
+          ]
+        ]
+      }
+    ]
+  },
+  "hug-6-10-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "A fictional inclusionary housing requirement",
+    "description": "Hypothetical project rule written for this question. It requires 20% of all new dwellings to satisfy the rule’s affordability condition. The project contains 150 new dwellings, with no exemptions or rounding issues.",
+    "caption": "Original policy arithmetic, not a real regulation or advice about compliance. Eligibility, prices, duration and enforcement are not specified.",
+    "headers": [
+      "Project measure",
+      "Value"
+    ],
+    "rows": [
+      [
+        "All new dwellings",
+        "150"
+      ],
+      [
+        "Required affordable share",
+        "20%"
+      ]
+    ]
+  },
+  "hug-6-11-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Urban land consumption and population growth",
+    "description": "Hypothetical metropolitan region. Urbanized land is measured by the same built-area definition in both periods, and population refers to that land. Regional administrative boundaries do not change.",
+    "caption": "Original synthetic footprint indicators. Built land per resident is one measure of land consumption, not the complete ecological footprint of goods and resources consumed elsewhere.",
+    "headers": [
+      "Period",
+      "Urbanized land (km²)",
+      "Residents"
+    ],
+    "rows": [
+      [
+        "Initial",
+        "100",
+        "100000"
+      ],
+      [
+        "Later",
+        "140",
+        "120000"
+      ]
+    ]
+  },
+  "hug-6-11-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Parcel histories for a redevelopment discussion",
+    "description": "Hypothetical site records. A is a disused industrial parcel inside the urban area with possible contamination. B is never-developed farmland outside it. C is an occupied shop with no reported reuse barrier; absence of a report is not a safety certification.",
+    "caption": "Original fictional inventory. Prior use and potential contamination are reasons for site-specific investigation, not a medical risk estimate or permission to occupy land.",
+    "headers": [
+      "Parcel",
+      "History and current condition"
+    ],
+    "rows": [
+      [
+        "A",
+        "Disused industrial site; possible contamination"
+      ],
+      [
+        "B",
+        "Never-developed farmland beyond urban edge"
+      ],
+      [
+        "C",
+        "Operating shop; no reported reuse barrier"
+      ]
+    ]
+  },
+  "hug-6-11-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Energy use by sector in two periods",
+    "description": "Hypothetical city energy account. Initial: housing 30, industry 50, transport 20 units. Later: housing 25, industry 35, transport 40. Categories do not overlap, and the same accounting boundary and energy unit are used.",
+    "caption": "Original synthetic energy data. The account measures consumption, not emissions, population, industrial output or the life-cycle footprint of all imported goods.",
+    "unitLabel": "Energy units",
+    "categories": [
+      "Housing",
+      "Industry",
+      "Transport"
+    ],
+    "series": [
+      {
+        "label": "Initial",
+        "values": [
+          30,
+          50,
+          20
+        ]
+      },
+      {
+        "label": "Later",
+        "values": [
+          25,
+          35,
+          40
+        ]
+      }
+    ],
+    "max": 60
+  },
+  "hug-6-11-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "New building additions inside and beyond a growth boundary",
+    "description": "Hypothetical regional monitoring. Counts are new buildings added in each observation year, inside and beyond one designated urban growth boundary. Boundaries and counting methods are fixed; no control region is supplied.",
+    "caption": "Original synthetic regional data. Building counts do not measure occupied households, parcel area, displacement or policy causation.",
+    "headers": [
+      "Location",
+      "Earlier annual additions",
+      "Later annual additions"
+    ],
+    "rows": [
+      [
+        "Inside",
+        "200",
+        "300"
+      ],
+      [
+        "Beyond",
+        "50",
+        "250"
+      ]
+    ]
   }
 }

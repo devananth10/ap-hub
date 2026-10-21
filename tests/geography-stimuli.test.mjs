@@ -137,6 +137,18 @@ test('sustainable-design evidence retains route denominators, station access, tr
   const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
  }
 });
+test('urban data checks retain composition, narratives, combined growth denominators and survey coverage',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-6-9.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-6-9.json','utf8'));
+ for(const[i,change]of[[0,s=>s.rows[1][1]='1000'],[1,s=>s.rows[1][1]='All residents agree'],[2,s=>s.series[1].values[2]=1200],[3,s=>s.rows[1][2]='800']]){const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));}
+});
+test('urban change checks retain rent shares, original cohorts, burdens and affordable dwelling counts',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-6-10.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-6-10.json','utf8'));
+ for(const[i,change]of[[0,s=>s.rows[1][2]='600'],[1,s=>s.rows[1][1]='1000'],[2,s=>s.regions[0].value=20],[3,s=>s.rows[0][1]='100']]){const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));}
+});
+test('sustainability checks retain land denominators, parcel histories, energy totals and regional additions',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-6-11.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-6-11.json','utf8'));
+ for(const[i,change]of[[0,s=>s.rows[1][1]='120'],[1,s=>s.rows[0][1]='Never-developed farmland'],[2,s=>s.series[1].values[2]=20],[3,s=>s.rows[1][2]='50']]){const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));}
+});
 const base={title:'TEST ONLY',description:'Original hypothetical test data; not a published question.',caption:'TEST ONLY',hypothetical:true,attribution:'Original PrepAtlas schematic and synthetic data'};
 const chart={...base,kind:'chart',unitLabel:'People (thousands)',categories:['A','B'],series:[{label:'Year 1',values:[25,50]},{label:'Year 2',values:[50,75]}],max:100};
 const pyramid={...base,kind:'pyramid',unitLabel:'People (thousands)',max:100,cohorts:[{label:'0–14',ageStart:0,ageEnd:14,male:50,female:50},{label:'15–64',ageStart:15,ageEnd:64,male:75,female:75},{label:'65+',ageStart:65,ageEnd:null,male:25,female:25}]};

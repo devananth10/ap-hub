@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 6,
+  "topicId": "topic-6-9",
+  "questions": [
+    {
+      "id": "hug-6-9-001",
+      "prompt": "Which statement correctly separates the number of younger residents from their share of the district population?",
+      "options": [
+        "Their number falls by 100 and their share rises to 60%.",
+        "Their number rises by 100 while their share falls from 50% to 30%.",
+        "Their number is unchanged because the population doubles.",
+        "Their share rises by 20 percentage points because their number rises."
+      ],
+      "correctIndex": 1,
+      "explanation": "Residents under 18 increase from 500 to 600, but the total rises from 1000 to 2000. Their shares are 500/1000 = 50% and 600/2000 = 30%. Counts and composition therefore move in different directions. These observations do not identify births, deaths, migration or the experience of particular households without additional data. A: The count increases, and the later share is 30%, not 60%. B: This uses the correct count change and a separate denominator for each year. C: The under-18 count is explicitly 100 higher. D: The percentage-point change in share is negative 20, not positive 20."
+    },
+    {
+      "id": "hug-6-9-002",
+      "prompt": "What contribution do these field interviews make to an analysis of urban change?",
+      "options": [
+        "They establish that 50% of all city residents oppose the project.",
+        "They replace any need to measure changes in access or housing costs.",
+        "They show that every resident has exactly the same experience.",
+        "They identify contrasting experiences and questions to investigate, without estimating citywide prevalence."
+      ],
+      "correctIndex": 3,
+      "explanation": "Qualitative accounts can reveal how people interpret or experience a changing place. These two selected accounts raise questions about access and housing pressure, but are not a representative count of all residents. Combining interviews with suitable quantitative records can investigate the scale and distribution of those experiences without erasing disagreement. A: One of two selected accounts is not a probability estimate for the city. B: Accounts complement rather than replace compatible measurements. C: The supplied accounts explicitly express different concerns. D: This describes the explanatory value and sampling limit of the evidence."
+    },
+    {
+      "id": "hug-6-9-003",
+      "prompt": "What share of the combined population increase between 2010 and 2020 occurred in Outer?",
+      "options": [
+        "20%",
+        "50%",
+        "About 83.3%",
+        "100%"
+      ],
+      "correctIndex": 2,
+      "explanation": "Inner increases by 1200 − 1000 = 200 residents, while Outer increases by 2000 − 1000 = 1000. The combined increase is 1200, of which Outer contributes 1000/1200 ≈ 83.3%. This is the share of the increase, not Outer’s share of the final population or its own percentage growth rate. A: Twenty percent is Inner’s own growth rate, not Outer’s share of the combined increase. B: Equal starting populations do not mean equal contributions to later growth. C: This divides Outer’s increase by the sum of both increases. D: Inner also gained 200 residents, so Outer did not account for all growth."
+    },
+    {
+      "id": "hug-6-9-004",
+      "prompt": "Which interpretation best accounts for the difference between the reported support percentages?",
+      "options": [
+        "The station survey reports 80% support and the city sample 52%, but they cover different populations and recruitment methods.",
+        "The station survey proves exactly 80% of all city residents support the plan.",
+        "The city sample reports 80% because it includes more responses.",
+        "Both estimates must be identical because both concern the same plan."
+      ],
+      "correctIndex": 0,
+      "explanation": "The station count gives 80/100 = 80%; the city sample gives 520/1000 = 52%. Recruiting willing respondents at one station can select a different population from a citywide probability sample. The city sample is better aligned with a citywide target under its stated design, but still has sampling and possible nonresponse uncertainty rather than a guaranteed exact population value. A: This correctly calculates each observed rate and recognizes differences in coverage. B: A selected station sample cannot automatically represent all residents. C: The city sample proportion is 520 divided by 1000, independent of its larger size. D: A shared subject does not remove selection, coverage or sampling differences."
+    },
+    {
+      "id": "hug-6-9-005",
+      "prompt": "Which source combination best examines both population change and residents’ interpretations of a neighborhood redevelopment?",
+      "options": [
+        "Census counts alone, treating changes in totals as direct measures of residents’ attitudes.",
+        "Interviews alone, treating a few participants as a complete population enumeration.",
+        "Compatible census counts plus diverse resident interviews and field observations.",
+        "Population totals for different boundaries, treating the boundary difference as irrelevant."
+      ],
+      "correctIndex": 2,
+      "explanation": "Census counts can describe changes in population size or composition, while interviews and field observations can reveal experiences and possible mechanisms. Their usefulness depends on compatible dates, boundaries, methods and a thoughtful range of perspectives. Combining evidence does not eliminate uncertainty, but it addresses more of the question than promotion or undocumented totals. A: Population totals do not directly record attitudes or interpretations. B: Selected interviews provide experience rather than a complete count of residents. C: This pairs quantitative patterns with qualitative context and source checks. D: Boundary differences can change the populations being compared."
+    },
+    {
+      "id": "hug-6-9-006",
+      "prompt": "A researcher maps rising rents and new cafés, then concludes that the cafés alone caused every rent increase. What is the main analytical problem?",
+      "options": [
+        "Spatial association does not isolate causation, and other changes may influence both patterns.",
+        "Maps cannot show where businesses are located.",
+        "Rent data are qualitative because they concern housing.",
+        "A shared neighborhood boundary proves a single cause."
+      ],
+      "correctIndex": 0,
+      "explanation": "Co-location or a parallel trend can suggest a question, but does not by itself establish a causal effect. Investment, transport, housing supply, demand and policy may influence both rent and business patterns. Investigating timing, plausible mechanisms and relevant comparisons is necessary before assigning one exclusive cause to every observed change. A: This identifies the unsupported causal leap. B: Business locations can be mapped with suitable records. C: Numerical rents are quantitative even though they describe a social condition. D: A boundary is an analytical unit, not causal proof."
+    },
+    {
+      "id": "hug-6-9-007",
+      "prompt": "An interview study finds that several long-term residents value a market that redevelopment plans call obsolete. What can the interviews add?",
+      "options": [
+        "A precise count of every resident who will move.",
+        "A reason to omit all physical land-use records.",
+        "Proof that every resident has identical values.",
+        "Evidence of place meaning that a building-condition inventory may not capture."
+      ],
+      "correctIndex": 3,
+      "explanation": "Qualitative evidence can reveal attachments, uses and meanings that are not reducible to a building’s assessed condition. Those accounts help explain attitudes toward change, while their scope and participant selection still matter. They do not automatically represent every resident or replace physical and quantitative evidence needed for other parts of the analysis. A: The stated interviews do not enumerate future moves. B: Place meanings complement rather than erase physical evidence. C: Several accounts cannot establish universal agreement. D: This identifies a distinct contribution of narrative evidence."
+    },
+    {
+      "id": "hug-6-9-008",
+      "prompt": "A tract’s average income rises. Which additional evidence is most necessary before claiming that all original residents became wealthier?",
+      "options": [
+        "Only the tract’s latest median income, without information about who remained.",
+        "Information linking changes to original residents, including turnover and the distribution of incomes.",
+        "Only the number of newly built housing units, with no resident income records.",
+        "Only citywide population growth, without neighborhood or resident continuity information."
+      ],
+      "correctIndex": 1,
+      "explanation": "An area average can change because residents’ incomes change, because people move in or out, or because the distribution changes. It does not track every original resident. Longitudinal or suitably linked aggregate evidence on continuing residents and turnover is needed, with privacy protections and clear definitions, before making the stated individual-level claim. A: A latest median is another area summary and still does not track original residents. B: This addresses the difference between area composition and individual change. C: Construction totals do not establish the income paths of continuing residents. D: A citywide headcount does not show individual or neighborhood income changes."
+    },
+    {
+      "id": "hug-6-9-009",
+      "prompt": "Why should dates and boundary definitions accompany two urban population maps being compared?",
+      "options": [
+        "They help distinguish actual population change from differences in the time or area measured.",
+        "They make every mapped causal explanation correct.",
+        "They remove all uncertainty from sample-based estimates.",
+        "They convert interview narratives into a complete census."
+      ],
+      "correctIndex": 0,
+      "explanation": "A population comparison is meaningful only when the spatial and temporal units are understood. Annexation, tract redefinition or unequal observation intervals can change what two totals represent. Documentation allows comparable units to be constructed or limits to be stated; it does not automatically prove a mechanism or remove measurement uncertainty. A: This identifies why metadata matter for comparison. B: Compatible units do not establish causality on their own. C: Sampling uncertainty remains even when dates and boundaries are clear. D: Metadata do not change the evidence type or enumerate missing residents."
+    },
+    {
+      "id": "hug-6-9-010",
+      "prompt": "A questionnaire asks for a monthly rent and then invites an open-ended description of neighborhood change. How should these responses be treated?",
+      "options": [
+        "Both are numerical because they appear on one form.",
+        "Both are unusable because one form cannot collect different evidence types.",
+        "The rent is quantitative; the open description is qualitative, and both can inform a study.",
+        "The open description gives an exact population percentage without coding or sampling."
+      ],
+      "correctIndex": 2,
+      "explanation": "A single survey can collect different kinds of evidence. A stated rent is a numerical observation, while an open description provides narrative material that may be interpreted and coded carefully. Coding can summarize themes, but does not by itself make the respondents representative or erase differences in meaning. A: The collection instrument does not make all responses numerical. B: Mixed-method instruments can be useful when designed and analyzed appropriately. C: This correctly distinguishes the data while allowing complementary analysis. D: Population estimation still depends on sampling and appropriate analysis."
+    },
+    {
+      "id": "hug-6-9-011",
+      "prompt": "Researchers revisit a changing commercial street and record which shops are open, their uses and residents’ accounts at the same times of day. What is a benefit of that design?",
+      "options": [
+        "It guarantees that no business ever changes hours.",
+        "It improves temporal comparability while combining observed landscape change with experience.",
+        "It proves every change was caused by national migration.",
+        "It makes all unvisited streets identical to the observed one."
+      ],
+      "correctIndex": 1,
+      "explanation": "Repeated observations under comparable conditions can help distinguish changes in recorded land use from simple differences in observation time. Residents’ accounts can add context about how those changes are experienced. The design still has spatial, sampling and causal limits, so findings should not automatically be generalized to every street or assigned one cause. A: Comparable visits do not freeze business behavior. B: This states the design’s useful comparison and complementary evidence. C: The method does not uniquely identify national migration as a cause. D: One selected street does not enumerate other streets."
+    }
+  ]
+}

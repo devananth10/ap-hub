@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 6,
+  "topicId": "topic-6-11",
+  "questions": [
+    {
+      "id": "hug-6-11-001",
+      "prompt": "What does this comparison show about the urban land footprint relative to population?",
+      "options": [
+        "Land and population grow at the same rate, keeping average density unchanged.",
+        "Land area grows 40% while population grows 20%, so land used per resident rises.",
+        "Population grows 40% while land grows 20%, so land used per resident falls.",
+        "Average density rises because both totals are larger."
+      ],
+      "correctIndex": 1,
+      "explanation": "Urban land rises from 100 to 140 km², a 40% increase, while population rises from 100,000 to 120,000, a 20% increase. Land per resident consequently rises from 0.001 to about 0.001167 km², about 16.7%. Average density falls from 1000 to about 857 residents/km². The aggregate measures suggest a more land-extensive pattern, but do not locate each development or quantify every environmental effect. A: The two percentage changes differ. B: This correctly compares growth rates and the direction of land per person. C: The stated growth rates are reversed. D: Larger totals do not guarantee a larger population-to-land ratio."
+    },
+    {
+      "id": "hug-6-11-002",
+      "prompt": "Which parcel most clearly illustrates a brownfield reuse opportunity, and why is assessment relevant?",
+      "options": [
+        "B, because all undeveloped farmland is already a contaminated industrial site.",
+        "C, because any occupied shop must be unsafe to use.",
+        "A, because past industrial use and possible contamination can complicate reuse; site-specific assessment informs the next steps.",
+        "A, because an inside-city location guarantees that no cleanup is needed."
+      ],
+      "correctIndex": 2,
+      "explanation": "A previously used industrial parcel with possible contamination is a clear brownfield example. Uncertainty can complicate redevelopment, making site-specific assessment and appropriate remediation planning relevant before reuse. A brownfield is not simply any vacant parcel, and an urban location does not establish that a site is clean or suitable for every proposed use. A: B’s undeveloped farmland history does not establish the stated brownfield condition. B: C’s ordinary occupied use does not itself show potential contamination or a reuse barrier. C: This connects prior use, possible contamination and the reason to investigate. D: Location inside the city does not remove contamination concerns."
+    },
+    {
+      "id": "hug-6-11-003",
+      "prompt": "Which conclusion follows from the energy accounts without assuming any particular emissions factor?",
+      "options": [
+        "Total energy falls by 20% because housing use falls.",
+        "Transport use falls from 40 to 20 units.",
+        "Every sector becomes more energy efficient per resident.",
+        "Total use stays at 100 units, while transport’s share rises from 20% to 40%."
+      ],
+      "correctIndex": 3,
+      "explanation": "Initial use sums to 30 + 50 + 20 = 100 energy units and later use to 25 + 35 + 40 = 100. Transport grows from 20 to 40 units, doubling its share of the unchanged total. Population, output and fuel mix are not supplied, so the chart cannot establish per-person efficiency, per-unit production efficiency or total greenhouse-gas emissions. A: Declines in two sectors are offset by increased transport use. B: The transport direction is reversed. C: Efficiency requires an appropriate output or population denominator. D: This correctly combines sector values and computes their shares."
+    },
+    {
+      "id": "hug-6-11-004",
+      "prompt": "What do these regional observations suggest a growth-boundary evaluation should investigate?",
+      "options": [
+        "Development outside the boundary increased more than inside; regional evidence is needed before concluding that growth was contained or identifying the cause.",
+        "Growth beyond the boundary stopped completely.",
+        "Exactly 200 households were forced out of the city by the boundary.",
+        "The count of buildings is a direct measure of farmland area protected."
+      ],
+      "correctIndex": 0,
+      "explanation": "The annual additions increase by 100 inside and by 200 outside. That pattern raises a question about displaced or independently growing development beyond the boundary. It does not prove the policy caused the difference, identify household moves or measure land area; project sizes, market conditions, timing and a wider regional comparison are needed. A: This reads the two changes and recognizes the evaluation’s spatial and causal limits. B: Outside additions rise from 50 to 250 rather than stop. C: Building approvals are not records of the same households moving or their reasons. D: Building counts do not specify parcel areas or farmland protection."
+    },
+    {
+      "id": "hug-6-11-005",
+      "prompt": "Why can regional cooperation be important when one city improves wastewater treatment but neighboring settlements remain poorly served?",
+      "options": [
+        "Water flows necessarily stop at municipal boundaries.",
+        "Shared waterways and connected settlement systems can transmit effects across separate authorities.",
+        "A treatment plant’s existence proves every regional household has sanitation access.",
+        "Municipal cooperation guarantees identical population growth in all settlements."
+      ],
+      "correctIndex": 1,
+      "explanation": "Waterways and infrastructure networks can link places across administrative borders. Improving one part of a system may not resolve regional discharge or access problems when other areas remain underserved. Coordinated planning, monitoring and investment can address those connections, while actual results still depend on operations, coverage and local conditions. A: Administrative boundaries do not stop water flow. B: This identifies the regional connection relevant to sanitation planning. C: A facility does not establish every household’s connection or service quality. D: Cooperation does not determine identical demographic change."
+    },
+    {
+      "id": "hug-6-11-006",
+      "prompt": "A city’s local air emissions fall after manufacturing moves elsewhere, but residents continue buying the same products. What issue does this raise?",
+      "options": [
+        "All environmental costs of those products necessarily disappear.",
+        "The city no longer consumes resources from any other place.",
+        "A local inventory may omit burdens embodied in goods produced outside the city.",
+        "Imported goods cannot have any associated energy use."
+      ],
+      "correctIndex": 2,
+      "explanation": "A production-based local inventory records activity within its boundary, while consumption can support resource use and emissions elsewhere. Relocating production may reduce a city’s measured local emissions without removing the wider burden associated with its purchases. A broader accounting boundary is needed before claiming a reduced overall consumption footprint. A: Moving a production location does not automatically eliminate its impacts. B: The stated continued purchases can involve external resources. C: This recognizes the spatial accounting issue. D: Production and transport of imported goods can use energy."
+    },
+    {
+      "id": "hug-6-11-007",
+      "prompt": "Which evidence best evaluates whether a restored brownfield provides broadly shared urban benefits?",
+      "options": [
+        "Only the project’s total property value after completion.",
+        "Only the fact that the site was once industrial.",
+        "Only the number of advertisements for new apartments.",
+        "Site-specific environmental follow-up together with access, housing costs and benefits to different resident groups."
+      ],
+      "correctIndex": 3,
+      "explanation": "Reuse effectiveness includes the condition of the site and how the resulting services, housing or public space reach people. Environmental follow-up can assess the intended remediation, while access and distributional evidence examines who benefits or faces new costs. Neither a former-use label nor one property-value total captures all dimensions. A: Aggregate value does not establish environmental performance or distribution. B: Past use does not measure the outcomes of the completed project. C: Advertising does not document actual access, costs or site conditions. D: This combines environmental and social outcomes relevant to sustainable reuse."
+    },
+    {
+      "id": "hug-6-11-008",
+      "prompt": "How can farmland protection contribute to a metropolitan sustainability strategy without guaranteeing a complete solution?",
+      "options": [
+        "It can preserve working land and limit some conversion, while transport, housing demand and shifted growth still require regional evaluation.",
+        "It automatically removes every demand for new housing.",
+        "It guarantees that every nearby farm uses identical production methods.",
+        "It eliminates all environmental effects of food imported into the region."
+      ],
+      "correctIndex": 0,
+      "explanation": "Protecting farmland addresses one land-use pressure: conversion of agricultural space to urban development. Its results interact with development demand, enforcement, commuting and the location of growth elsewhere. Preserving land therefore can be part of a strategy, but is not proof of identical farming practices, universal affordability or a zero external footprint. A: This states the protection aim and relevant limits. B: Housing demand can persist even when conversion is restricted. C: Land protection does not determine every farm’s methods. D: Imported food can retain external production and transport impacts."
+    },
+    {
+      "id": "hug-6-11-009",
+      "prompt": "A city adds shaded public spaces to address hotter conditions. Which evaluation most directly examines adaptation and equitable access?",
+      "options": [
+        "Only the total number of shade structures, with no location information.",
+        "Temperature conditions and usable access across neighborhoods, including previously underserved areas.",
+        "Only the city’s national population rank.",
+        "The assumption that everyone can reach every shaded space regardless of location."
+      ],
+      "correctIndex": 1,
+      "explanation": "Climate adaptation concerns how places respond to changing conditions, and its benefits can be unevenly distributed. Measuring local temperature conditions together with access helps assess whether the intervention reaches intended users. Counting installations measures an input, but their locations, design, opening times and use affect the experienced outcome. A: The count alone omits spatial coverage and effectiveness. B: These measures connect the environmental aim with the distribution of access. C: Population rank does not measure local thermal conditions or access. D: Universal access is a proposition to test rather than assume."
+    },
+    {
+      "id": "hug-6-11-010",
+      "prompt": "A compact development plan reduces some car trips but adds homes on a flood-prone site. What should a sustainability assessment do?",
+      "options": [
+        "Treat fewer car trips as proof every environmental risk is lower.",
+        "Ignore flood exposure because it is unrelated to land location.",
+        "Evaluate mobility gains alongside flood exposure, service capacity and who bears the risks.",
+        "Assume every resident and building has identical exposure."
+      ],
+      "correctIndex": 2,
+      "explanation": "Sustainability involves interacting objectives and place-specific constraints. A mobility benefit can coexist with greater exposure to another hazard, so the analysis should compare impacts rather than collapse them into one label. Suitable site, infrastructure and distributional evidence is needed; the scenario does not provide a risk estimate or a site-safety determination. A: One benefit cannot establish the direction of every other impact. B: Flood exposure depends partly on the site and surrounding systems. C: This examines tradeoffs and the spatial distribution of outcomes. D: Building positions, characteristics and resident circumstances can differ."
+    },
+    {
+      "id": "hug-6-11-011",
+      "prompt": "Why should planners monitor a sustainability initiative after its implementation rather than rely only on its stated intentions?",
+      "options": [
+        "Announcing a goal establishes all later outcomes.",
+        "Implementation necessarily affects every neighborhood in the same way.",
+        "A policy’s name is an exact measure of resource use.",
+        "Observed outcomes can differ from aims because of implementation, behavior, regional spillovers and changing conditions."
+      ],
+      "correctIndex": 3,
+      "explanation": "Initiatives operate within economic, social and environmental systems that can respond in unanticipated ways. Monitoring comparable outcome measures and distributional effects helps assess effectiveness and refine interpretations. Intentions and implementation counts remain useful records, but do not replace evidence about actual resource use, access or regional change. A: A statement of intent is not an observed result. B: Benefits and costs can vary spatially. C: Policy terminology does not quantify outcomes. D: This explains the need for ongoing empirical evaluation."
+    }
+  ]
+}
