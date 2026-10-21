@@ -298,6 +298,14 @@ export function verifyGeographyQuestion(question,review,stimulus){
   case 'gender-earnings-gap':assert.deepEqual(stimulus.series.map(s=>s.values),[[80,90],[100,100]]);assert.deepEqual(stimulus.series[0].values.map((v,i)=>v/stimulus.series[1].values[i]),[.8,.9]);assert.equal(question.correctIndex,3);break;
   case 'gender-unpaid-care':assert.deepEqual(stimulus.rows.map(r=>Number(r[1])),[20,10]);assert.equal(20-10,10);assert.equal(question.correctIndex,0);break;
   case 'gender-microloan-observation':assert.deepEqual(stimulus.rows.map(r=>r.slice(1).map(Number)),[[100,140],[100,130]]);assert.deepEqual(stimulus.rows.map(r=>Number(r[2])-Number(r[1])),[40,30]);assert.equal((140-100)-(130-100),10);assert.equal(question.correctIndex,2);break;
+  case 'theories-rostow-sequence':assert.deepEqual(stimulus.nodes.map(n=>n.label),['I','II','III','IV','V']);assert.deepEqual(stimulus.edges.map(e=>[e.from,e.to]),[['I','II'],['II','III'],['III','IV'],['IV','V']]);assert.equal(question.options[question.correctIndex],'IV');assert.equal(question.correctIndex,3);break;
+  case 'theories-semiperipheral-functions':assert.deepEqual(stimulus.rows.map(r=>r[0]),['A','B','C']);assert.ok(stimulus.rows[1][1].includes('manufacturing')&&stimulus.rows[1][1].includes('dependence'));assert.equal(question.correctIndex,1);break;
+  case 'theories-commodity-shock':assert.deepEqual(stimulus.rows.map(r=>r.slice(1).map(Number)),[[80,20],[20,80]]);assert.deepEqual(stimulus.rows.map(r=>Number(r[1])*.75+Number(r[2])),[80,95]);assert.equal(question.correctIndex,2);break;
+  case 'theories-explanatory-emphases':assert.deepEqual(stimulus.rows,[['R','Internal structural changes supporting a proposed sequence of growth'],['D','External control and unequal relationships shaping domestic opportunities']]);assert.equal(question.correctIndex,0);break;
+  case 'trade-comparative-advantage':assert.deepEqual(stimulus.rows.map(r=>r.slice(1).map(Number)),[[12,6],[4,4]]);assert.deepEqual(stimulus.rows.map(r=>Number(r[2])/Number(r[1])),[.5,1]);assert.deepEqual(stimulus.rows.map(r=>Number(r[1])/Number(r[2])),[2,1]);assert.equal(question.correctIndex,1);break;
+  case 'trade-tariff-example':assert.deepEqual(stimulus.rows.map(r=>r[1]),['100','10%','0']);assert.equal(100+100*.1,110);assert.equal(Number.parseInt(question.options[question.correctIndex]),110);assert.equal(question.correctIndex,2);break;
+  case 'trade-supply-network':assert.deepEqual(stimulus.nodes.map(n=>n.label),['S','A','M']);assert.deepEqual(stimulus.edges,[{from:'S',to:'A',label:'Parts'},{from:'A',to:'M',label:'Goods'}]);assert.equal(question.correctIndex,0);break;
+  case 'trade-debt-export-ratio':assert.deepEqual(stimulus.rows.map(r=>r.slice(1).map(Number)),[[20,100],[20,80]]);assert.deepEqual(stimulus.rows.map(r=>Number(r[1])/Number(r[2])),[.2,.25]);assert.equal(question.correctIndex,3);break;
   case 'reasoning':break;
   default:throw Error('Unknown verification model: '+review.check.type);
  }

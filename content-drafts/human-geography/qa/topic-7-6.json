@@ -1,0 +1,144 @@
+{
+  "topicNumber": "7.6",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "1268aa426f94a94567bcd8c3342a37eb701d6eb7c7a76a37b1a1158858f6fca1",
+  "scopeReview": "PSO-7.A.1–4: complementarity/comparative advantage, policy and trade institutions, tariffs, international finance and interdependence. No BC content or actual financial recommendation.",
+  "varietyReview": "Four assessed original stimuli: alternative-output table, hypothetical tariff calculation, directed supply-chain model and debt-service/export ratios. Other applications distinguish organizational roles, distribution and transmission channels.",
+  "repetitionReview": "Opportunity cost distinguished from absolute productivity; tariff pass-through stipulated only for numeric case; exports distinct from GDP in financing ratio. OPEC not mislabeled a general free-trade bloc. Detailed options, varied keys; difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.wto.org/english/res_e/reser_e/cadv_e.htm",
+    "https://www.wto.org/english/theWTO_e/whatis_e/whatis_e.htm",
+    "https://www.opec.org/speech-detail/320-22-october-2003.html",
+    "https://www.imf.org/en/about/factsheets/imf-at-a-glance"
+  ],
+  "referenceNote": "Official scope and primary WTO/OPEC/IMF functional descriptions checked. All production, tariff, network and financing data original/hypothetical, no actual compliance/borrowing guidance, new resource or independent human review.",
+  "questions": [
+    {
+      "questionId": "hug-7-6-001",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "A in grain and B in cloth, because their opportunity costs differ.",
+      "independentReview": "Independently computed reciprocalcostsAgrain.5cloth/Acloth2grain;Bgrain1cloth/Bcloth1grain. Constantlineartradeoffs, same labor-day and either/oroutput, no transportcost. No claim universal individualgains.",
+      "check": {
+        "type": "trade-comparative-advantage"
+      },
+      "questionSha256": "e70002874fdd9a1482271405cde90ec9975004c635b7822049d449e891486733",
+      "stimulusSha256": "f9944b376c7b8c45447b3183e7a4a3f35bc6506b1a1d055d55ec9107ada12993"
+    },
+    {
+      "questionId": "hug-7-6-002",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "110 currency units",
+      "independentReview": "Calculated100*.1=10,total110; no compoundingothercharges or real tariffclassification. Educationalfictionnotlegalcomplianceguidance or currentpriceforecast.",
+      "check": {
+        "type": "trade-tariff-example"
+      },
+      "questionSha256": "4b9042856e6443b20310b184cb3722ff2f967ce5ddfa411728bd0e5d34464b7d",
+      "stimulusSha256": "1e94ea48ef0e4f114bf43096d141e349629633e79497e514bfe690000416fb6f"
+    },
+    {
+      "questionId": "hug-7-6-003",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "A disruption at S can affect assembly at A and deliveries to M even though they are in different economies.",
+      "independentReview": "Unique suppliedcriticalcomponent/no substitutecondition; directededgesS→A→M verified. No inventedvideo/maprealroute or deterministic duration/costforecast.",
+      "check": {
+        "type": "trade-supply-network"
+      },
+      "questionSha256": "ed1245d649d9acffb39ceeaa06c77562f5e33402119eb01ac5a20bc5efb4f5b2",
+      "stimulusSha256": "262249e4a98eec974b445dcbdc1c62e3f35bc2a2017075ef08d00545e8624996"
+    },
+    {
+      "questionId": "hug-7-6-004",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Its share rises from 20% to 25% because export receipts fall.",
+      "independentReview": "Independently computed.2/.25,5percentagepointincrease. Exportreceipts notGDP/governmentrevenue; debtserviceincludesstatedpaymentand comparablecurrency, notpersonaldebtadvice.",
+      "check": {
+        "type": "trade-debt-export-ratio"
+      },
+      "questionSha256": "d6bb785c637450c621dc5a5865e597e467340d46180433de13b2236283d7fb24",
+      "stimulusSha256": "0e271c05455cb075472c18e089a590bae2d512dc01a5459328abcc4653642c0c"
+    },
+    {
+      "questionId": "hug-7-6-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "One region supplies a good another region demands, creating a potential exchange connection.",
+      "independentReview": "Direct PSO-7.A.1 definition, no assumptioncomplementarityovercomesallcostsorbarriers.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "9b5c7d5e817a28f37a4cce31a3c395640bcda12aa5945c81ce2dba52598bb9c1"
+    },
+    {
+      "questionId": "hug-7-6-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Comparative advantage concerns lower opportunity cost, while absolute advantage concerns producing more from comparable inputs.",
+      "independentReview": "Primary WTO distinctionverified, no incorrectlyassignedproducer basedonwagesalone.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "701632277aed0a01ea71b5593dc5415bdbdebe57adff1e7919668a2fd9b8daa0"
+    },
+    {
+      "questionId": "hug-7-6-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "The WTO concerns rules of trade among members; OPEC coordinates member petroleum policies.",
+      "independentReview": "VerifieddirectWTOandOPECmissiondescriptions; no currentmembercounts, productionquotas or assertion OPEC is a free-tradebloc.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "22d3af7be7e20fcf94b245cf26b0f227c38664df38af37c31aae230cec444a62"
+    },
+    {
+      "questionId": "hug-7-6-008",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "It can change the relative costs of cross-border exchange and influence sourcing or market links.",
+      "independentReview": "Generalconditionalmechanism, not a realagreementlegalinterpretation or claim allbarriersremoved.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "3dd69c758e81a5bcaf5ca3e135515aa4cf528c0ca2f47fd9a7e42856184b64a0"
+    },
+    {
+      "questionId": "hug-7-6-009",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Protection from competing imports may help one industry while higher imported-input costs affect downstream users.",
+      "independentReview": "No actualrate, nationalwelfareestimate or blanketendorsement/opposition. Conditionaleffectsnot guaranteedpass-throughoutsideq2assumption.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "e155a07708e2d1781fbcd4e11bf90ee5588e427f0e01559b28ef4d2ca2723a7a"
+    },
+    {
+      "questionId": "hug-7-6-010",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "IMF financing addresses member-country external financing needs; microlending commonly addresses small-scale borrower or enterprise needs.",
+      "independentReview": "VerifiedprimaryIMFrolewithoutlistingcurrentprogramterms or givingborrowingadvice. Doesnotclaimallmicrofinanceprogramshaveidenticalterms.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "6d0ad8d774c1faf7524d0fefce8e489ef7f7ff595bfd2335446543465a669205"
+    },
+    {
+      "questionId": "hug-7-6-011",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "Lower import demand or tighter financing can transmit pressure through trade and financial links.",
+      "independentReview": "No futurefinancialadvice or actualcrisiscausalclaim. Preservesdistinctionbetweenpossiblechannelandquantifiedeffect.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "40401eb7f3cdfe7491af79435812a9f701065f04cf43e953772acf18cdc87306"
+    }
+  ]
+}

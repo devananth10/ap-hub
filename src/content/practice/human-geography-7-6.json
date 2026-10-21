@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 7,
+  "topicId": "topic-7-6",
+  "questions": [
+    {
+      "id": "hug-7-6-001",
+      "prompt": "Under the stated constant opportunity costs, which specialization follows comparative advantage?",
+      "options": [
+        "A in both goods because its absolute output is larger in both.",
+        "A in grain and B in cloth, because their opportunity costs differ.",
+        "A in cloth and B in grain, because A sacrifices more grain per cloth.",
+        "Neither can benefit from specialization because B has no absolute advantage."
+      ],
+      "correctIndex": 1,
+      "explanation": "A sacrifices 6/12 = 0.5 cloth per grain; B sacrifices 4/4 = 1 cloth per grain, so A has comparative advantage in grain. For cloth, A gives up 2 grain and B 1, so B has comparative advantage in cloth. A’s absolute advantage in both outputs does not remove these relative differences or guarantee that every person benefits equally from trade. A: Comparative advantage depends on relative opportunity cost, not absolute output alone. B: This correctly assigns the lower opportunity cost for each good. C: This reverses the comparative advantage in each good. D: A country can have comparative advantage without an absolute advantage."
+    },
+    {
+      "id": "hug-7-6-002",
+      "prompt": "Under the hypothetical full-pass-through assumption, what is the buyer’s price after the tariff?",
+      "options": [
+        "90 currency units",
+        "100 currency units",
+        "110 currency units",
+        "120 currency units"
+      ],
+      "correctIndex": 2,
+      "explanation": "The tariff is 10% of the 100-unit import value, or 10 units. With the assumed full pass-through and no other change, the buyer pays 100 + 10 = 110. This is a stipulated arithmetic example: actual price responses depend on market conditions, supply chains and how costs are shared, so a tariff rate alone does not guarantee a specific real consumer-price change. A: This subtracts the charge rather than adds it. B: This omits the tariff under the stated pass-through assumption. C: This correctly applies the percentage to the supplied base. D: This would be a 20% charge on the stated base."
+    },
+    {
+      "id": "hug-7-6-003",
+      "prompt": "With no substitute component available, what consequence best illustrates this network’s interdependence?",
+      "options": [
+        "A disruption at S can affect assembly at A and deliveries to M even though they are in different economies.",
+        "Only S can be affected because international borders stop supply-chain disruptions.",
+        "A can make the same output without the required component under the stated assumption.",
+        "The arrows prove that every participating worker receives equal income."
+      ],
+      "correctIndex": 0,
+      "explanation": "A production chain connects activity in different places. If the required input from S is unavailable and there is no substitute, assembly at A and delivery of the resulting goods to M can be disrupted. The schematic identifies a transmission pathway, not the size or duration of a real shock or the distribution of benefits among workers. A: This follows the stated component dependence through both links. B: Commercial connections can transmit disruptions across borders. C: This contradicts the no-substitute condition. D: Flow direction does not measure wages or bargaining power."
+    },
+    {
+      "id": "hug-7-6-004",
+      "prompt": "How does the fixed debt-service payment compare with export receipts in the two periods?",
+      "options": [
+        "Its share falls from 25% to 20%.",
+        "Its share stays 20% because the payment is unchanged.",
+        "The payment doubles from 20 to 40 units.",
+        "Its share rises from 20% to 25% because export receipts fall."
+      ],
+      "correctIndex": 3,
+      "explanation": "Debt service is 20/100 = 20% of export receipts initially and 20/80 = 25% later. The payment does not rise, but it represents a larger share of the stated foreign-earnings measure. This illustrates one external-financing pressure without providing a complete debt-sustainability assessment or identifying why export receipts fell. A: The direction is reversed. B: A fixed numerator can become a larger share of a smaller denominator. C: The payment remains 20 in both periods. D: This correctly computes the ratios and separates payment size from relative burden."
+    },
+    {
+      "id": "hug-7-6-005",
+      "prompt": "Which example most directly illustrates complementarity as a basis for trade?",
+      "options": [
+        "Two places have no demand for anything produced elsewhere.",
+        "One region supplies a good another region demands, creating a potential exchange connection.",
+        "Two countries must have identical resources and needs before they can exchange.",
+        "Distance alone creates a market even when no demand exists."
+      ],
+      "correctIndex": 1,
+      "explanation": "Complementarity connects a potential supply in one place with demand in another. That match can motivate exchange, while transfer costs, institutions and alternative sources affect whether trade occurs. It is different from claiming that any distance automatically produces a market or that trading partners must have identical economies. A: No relevant demand-supply match is described. B: This identifies the complementary supply and demand relationship. C: Different resource or production conditions can support exchange. D: A usable market also needs demand and feasible exchange conditions."
+    },
+    {
+      "id": "hug-7-6-006",
+      "prompt": "What distinguishes comparative advantage from absolute advantage?",
+      "options": [
+        "Comparative advantage means the largest population in every case.",
+        "Absolute advantage requires a lower opportunity cost rather than higher productivity.",
+        "Comparative advantage concerns lower opportunity cost, while absolute advantage concerns producing more from comparable inputs.",
+        "A country with no absolute advantage cannot have comparative advantage in any good."
+      ],
+      "correctIndex": 2,
+      "explanation": "Absolute advantage compares production from comparable resources, while comparative advantage compares what is given up to make one good rather than another. Relative tradeoffs can differ even when one economy is more productive in all goods. The distinction explains potential specialization without assuming away distributional consequences or all trade costs. A: Population size does not define the relative tradeoff. B: This assigns the comparative-cost definition to absolute advantage. C: This correctly distinguishes the two concepts. D: Different opportunity costs can still provide a comparative advantage."
+    },
+    {
+      "id": "hug-7-6-007",
+      "prompt": "Which comparison of international organizations is accurate?",
+      "options": [
+        "The WTO concerns rules of trade among members; OPEC coordinates member petroleum policies.",
+        "OPEC is a general free-trade area for all products, while the WTO sets every oil producer’s output.",
+        "Both are identical institutions with the same members and authority.",
+        "The WTO is a local household microloan program, while OPEC conducts national censuses."
+      ],
+      "correctIndex": 0,
+      "explanation": "The organizations have different functions. The WTO provides a framework for trade rules and related member cooperation, whereas OPEC coordinates petroleum policies among its members. Neither should be treated as a generic label for every form of globalization or as a guarantee of a particular market outcome. A: This accurately distinguishes the broad institutional functions. B: This confuses their functions and treats producer coordination as general free trade. C: Their purposes, membership and authority are not identical. D: These are not the institutions’ defining roles."
+    },
+    {
+      "id": "hug-7-6-008",
+      "prompt": "What is one way a trade agreement that reduces selected barriers can reshape spatial economic connections?",
+      "options": [
+        "It makes all distances physically zero.",
+        "It guarantees every producer in each partner economy gains equally.",
+        "It prevents firms from changing suppliers or market locations.",
+        "It can change the relative costs of cross-border exchange and influence sourcing or market links."
+      ],
+      "correctIndex": 3,
+      "explanation": "Rules and barriers help shape the cost and feasibility of exchange. Reducing some barriers can alter firms’ sourcing, production and market relationships, although effects depend on infrastructure, demand, compliance and adjustment. The agreement does not abolish geography or guarantee equal gains to all groups. A: Policy does not remove physical separation. B: Benefits and adjustment costs can be uneven. C: Changed incentives can encourage changes in networks. D: This identifies a conditional institutional influence on spatial links."
+    },
+    {
+      "id": "hug-7-6-009",
+      "prompt": "Why can an import tariff benefit some domestic producers while burdening other domestic firms?",
+      "options": [
+        "All firms sell the same products and buy the same inputs.",
+        "Protection from competing imports may help one industry while higher imported-input costs affect downstream users.",
+        "A tariff can affect only foreign people, never domestic transactions.",
+        "The presence of a tariff proves all imports stop."
+      ],
+      "correctIndex": 1,
+      "explanation": "Firms occupy different positions in production networks. A tariff may shield producers of a competing good while raising costs for firms that use that good as an input, depending on pricing and substitution. Assessing consequences requires tracing these connections rather than assuming one uniform national effect. A: Input use and markets differ among firms. B: This identifies a plausible distributional and supply-chain mechanism. C: Domestic prices and users can be affected. D: Trade can continue under a tariff, with responses depending on conditions."
+    },
+    {
+      "id": "hug-7-6-010",
+      "prompt": "Which comparison correctly distinguishes IMF lending from local enterprise microlending?",
+      "options": [
+        "Both necessarily lend directly to the same individual shop owners.",
+        "The IMF is a factory exporting manufactured goods rather than a financial institution.",
+        "IMF financing addresses member-country external financing needs; microlending commonly addresses small-scale borrower or enterprise needs.",
+        "Microlending guarantees national balance-of-payments stability without other institutions."
+      ],
+      "correctIndex": 2,
+      "explanation": "The IMF works with member countries on macroeconomic and external financing issues, including balance-of-payments needs. Microlending generally involves smaller-scale credit for individuals or enterprises. Both connect finance and development, but their scale, borrowers, conditions and objectives differ; neither label alone guarantees an outcome. A: The relevant borrowers and scale differ. B: That is not the IMF’s institutional function. C: This identifies the distinct scales and purposes. D: Small-scale credit alone does not guarantee a national external balance."
+    },
+    {
+      "id": "hug-7-6-011",
+      "prompt": "How can a financial crisis in a major importing economy affect a distant export-dependent region?",
+      "options": [
+        "Lower import demand or tighter financing can transmit pressure through trade and financial links.",
+        "International distance prevents any economic transmission.",
+        "Only regions sharing a land border can lose export orders.",
+        "The crisis necessarily raises every exporter’s revenue by the same amount."
+      ],
+      "correctIndex": 0,
+      "explanation": "Interdependence can transmit a shock through demand, credit, investment and production networks across long distances. Exporters may receive fewer orders or face financing constraints, with effects shaped by diversification and institutions. This is a mechanism of possible transmission rather than a prediction of identical losses or a financial-market forecast. A: This traces plausible channels connecting the economies. B: Economic networks can connect distant places. C: Trade relationships do not require a shared border. D: Revenue effects vary and are not necessarily positive."
+    }
+  ]
+}

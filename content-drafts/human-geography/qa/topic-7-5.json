@@ -1,0 +1,144 @@
+{
+  "topicNumber": "7.5",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "e810453a8d62510ac2722ee5bce181ee943d307369510ac8f1160dc4dd087654",
+  "scopeReview": "SPS-7.E.1: Rostow, world-systems, dependency and commodity dependence; strengths/limits, structural positions, internal diversity and evidence for changing relationships.",
+  "varietyReview": "Four meaningful original stimuli: five-stage sequence, functional world-system records, two-economy commodity shock and contrasting analyst interpretations. Applications examine universal forecasts, volume/value, power and local processing.",
+  "repetitionReview": "No fixed country rankings or staged human-worth claims. Distinguishes theory emphasis from complete exclusion of other factors, world-system roles from income terciles and commodity quantity from revenue. Varied keys and all-option reasoning; difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.cambridge.org/core/books/abs/stages-of-economic-growth/introduction/46BE64B205189A306445C9A682948C2E",
+    "https://www.cambridge.org/core/books/abs/stages-of-economic-growth/drive-to-maturity/86144AB056A22FEAE695A6E3CEE5C7AA",
+    "https://www.csub.edu/~gsantos/WORLDSYS.HTML",
+    "https://unctad.org/publication/state-commodity-dependence-2023"
+  ],
+  "referenceNote": "Official scope, primary Rostow excerpts and Wallerstein text checked. UNCTAD indexed publication supports price-vulnerability context; full page access403, no actual statistics or threshold imported. All questions/figures original, no independent human review.",
+  "questions": [
+    {
+      "questionId": "hug-7-5-001",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "IV",
+      "independentReview": "Original sequencecheckedagainstRostow primary chapter order; itemrequires stagepositionplus broaderdiversification, not exact historicaldates or investmentthresholds.",
+      "check": {
+        "type": "theories-rostow-sequence"
+      },
+      "questionSha256": "b139e07d615644e7307fbb4c53fd454ec3b08947167d0a43f0cb132dc9268453",
+      "stimulusSha256": "cec699dad2ff62b530cd1f3125333f17b26dd774d04e308ca42a2901964ff664"
+    },
+    {
+      "questionId": "hug-7-5-002",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "B, combining substantial industry with an intermediate position in control and dependence.",
+      "independentReview": "Primary Wallerstein differentiates intermediate structuralroles fromarbitrary statisticalmiddle; fictionalfunctionrecordsnotcontemporarycountryrankings.",
+      "check": {
+        "type": "theories-semiperipheral-functions"
+      },
+      "questionSha256": "af53929e5d029d67fbe759cc10bc549302dc65537f7522da07139d8e494eadc2",
+      "stimulusSha256": "d6aa932954cf8a3d251877a56fad94b46bf641096a15c5df5b6f7d0b9c239711"
+    },
+    {
+      "questionId": "hug-7-5-003",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "A loses 20% and B loses 5%, illustrating different exposure to the same commodity-price shock.",
+      "independentReview": "Independent weightedshock:80*.75+20=80;20*.75+80=95. Initialtotal100each,loss20/5%; no adjustment of volume, exchange rate or other prices. Not a national GDPforecast.",
+      "check": {
+        "type": "theories-commodity-shock"
+      },
+      "questionSha256": "bd2939316f3a405e0f4b4a870170957c3f56bc6d6bd00078dee2826d73585c00",
+      "stimulusSha256": "06ff981420bbf30a888632f86ef0d1f4c54efbd561386e4769f1457cfc51d717"
+    },
+    {
+      "questionId": "hug-7-5-004",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "R emphasizes a staged internal transformation; D emphasizes unequal external relationships and constraints.",
+      "independentReview": "Fictional analyst summaries, not quotes from authors. Stageinternal/externaldependencycontrastqualified; doesnotclaimRostowignoredallexternalforces, primarytextmentionsexternalpreconditions.",
+      "check": {
+        "type": "theories-explanatory-emphases"
+      },
+      "questionSha256": "cfaa0e74d65d84df77e8d277c3b0f6cebd8e8e417b155dba4c579cfd05e11f1f",
+      "stimulusSha256": "bdf8e07cc02be6bd053a12ff7b2850a9454ba9ce4ddd53e6ae92b488bf201c84"
+    },
+    {
+      "questionId": "hug-7-5-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "It may underrepresent diverse histories, external power relations and development goals that differ from one linear consumption-centered path.",
+      "independentReview": "Critique scoped to universality, not false assertionRostowneverdiscussedexternalfactors. No rankingofculturesorhumanworth.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "e557ec6f02ba67cc68a070ea3748cebd05ec45d68a8551ae0d37796e1fa28d34"
+    },
+    {
+      "questionId": "hug-7-5-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Unequal historical and contemporary economic relationships can help reproduce development constraints.",
+      "independentReview": "Broad official dependency scope, not a claim all tradeinevitablyimpoverishesparticipants or countrieslackagency.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "425b24d9930d898754cf4184ed77d664ed06dfea6589af17d47ee0d26572504c"
+    },
+    {
+      "questionId": "hug-7-5-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Volume alone does not remove price exposure, buyer concentration, limited diversification or external control.",
+      "independentReview": "NofixedUNCTADthresholdneeded; commoditydependenceconsideredstructurally, volumeversusvalue not actualforecast.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "1be10a3432eae9c6d874d66ff14a1d09cae89504f432f96b0e3a8261bd504921"
+    },
+    {
+      "questionId": "hug-7-5-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "It occupies mixed relational positions, with both dominant and dependent functions in the wider system.",
+      "independentReview": "VerifieddirectprimaryWallersteinstatement againstresidualstatisticalcategory. No permanentcountrylabels.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "4dc9e1564447b31760f3a1818638267df0c5bcc48593374fa25004d3ee9aaf70"
+    },
+    {
+      "questionId": "hug-7-5-009",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Examine internal regions and their links to wider networks rather than treat the territory as uniform.",
+      "independentReview": "Testswithin-countryvariationwithoutassigningactualpeopleclassesorassertingnationalframeworkuseless.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "7e962ad4de4becb8e7d305ab3cc6f7b47b8f7c1ba6d15c2a76ce2a0f7d38c0d1"
+    },
+    {
+      "questionId": "hug-7-5-010",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Local value capture, ownership, skill development, input reliance and control over markets and finance.",
+      "independentReview": "No policyguarantee or actualinvestmentadvice. Distinguishes industrialactivityfrom power/returnrelationships.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "788eff9f24018e06a18c10ef55625f17e20b277658844a96640581253d075b10"
+    },
+    {
+      "questionId": "hug-7-5-011",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Each isolates mechanisms and assumptions whose explanatory fit can differ by place, time and scale.",
+      "independentReview": "Original synthesisavoids allmodels equallyvalidclaim. Evidencequality andspecificmechanismsremainnecessary.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "e1061647ff35925507775ed73aa8d3d3ac29e7c8f136f77fc1446cbff02d5eab"
+    }
+  ]
+}

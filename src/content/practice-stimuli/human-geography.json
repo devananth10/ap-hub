@@ -13981,5 +13981,258 @@
         "130"
       ]
     ]
+  },
+  "hug-7-5-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "model",
+    "title": "Five stages in a stylized growth framework",
+    "description": "Hypothetical teaching diagram of Rostow’s sequence. I: traditional society; II: preconditions for take-off; III: take-off; IV: drive to maturity; V: high mass consumption. Numbers are model stages, not years or measures of human worth.",
+    "caption": "Original diagram, not a copied historical figure. The sequence is a theoretical generalization with limits; contemporary societies should not be assumed to fit it perfectly.",
+    "assumptions": "Arrows indicate the proposed stage order only. Real development paths can differ, and historical/global relationships require additional analysis.",
+    "nodes": [
+      {
+        "label": "I",
+        "x": 10,
+        "y": 30,
+        "labelPosition": "below"
+      },
+      {
+        "label": "II",
+        "x": 30,
+        "y": 30,
+        "labelPosition": "below"
+      },
+      {
+        "label": "III",
+        "x": 50,
+        "y": 30,
+        "labelPosition": "below"
+      },
+      {
+        "label": "IV",
+        "x": 70,
+        "y": 30,
+        "labelPosition": "below"
+      },
+      {
+        "label": "V",
+        "x": 90,
+        "y": 30,
+        "labelPosition": "below"
+      }
+    ],
+    "edges": [
+      {
+        "from": "I",
+        "to": "II",
+        "label": "then"
+      },
+      {
+        "from": "II",
+        "to": "III",
+        "label": "then"
+      },
+      {
+        "from": "III",
+        "to": "IV",
+        "label": "then"
+      },
+      {
+        "from": "IV",
+        "to": "V",
+        "label": "then"
+      }
+    ]
+  },
+  "hug-7-5-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Three fictional positions in a production system",
+    "description": "Hypothetical roles for analyzing a world-system. These summaries describe dominant relationships, not every firm or resident in a territory.",
+    "caption": "Original functional comparison. Core, semiperiphery and periphery are relational and historically changeable; no real country is assigned a fixed status.",
+    "headers": [
+      "Region",
+      "Dominant pattern in this abstraction"
+    ],
+    "rows": [
+      [
+        "A",
+        "Major finance and design control; strong influence over production networks"
+      ],
+      [
+        "B",
+        "Substantial manufacturing and some control functions; dependence on external finance or technology remains"
+      ],
+      [
+        "C",
+        "Raw-material supply with limited control over major buyers and prices"
+      ]
+    ]
+  },
+  "hug-7-5-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Export composition and commodity-price exposure",
+    "description": "Hypothetical economies with initial merchandise-export earnings of 100 currency units each. A: commodity exports 80, other exports 20. B: commodities 20, other exports 80. Consider only the stated common commodity-price shock.",
+    "caption": "Original synthetic export account. A larger commodity share can increase vulnerability to those prices; actual outcomes also depend on volumes, buffers, contracts and the wider economy.",
+    "headers": [
+      "Economy",
+      "Commodity earnings",
+      "Other earnings"
+    ],
+    "rows": [
+      [
+        "A",
+        "80",
+        "20"
+      ],
+      [
+        "B",
+        "20",
+        "80"
+      ]
+    ]
+  },
+  "hug-7-5-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Two interpretations of uneven development",
+    "description": "Hypothetical analysts’ summaries written for this question. R studies a sequence of investment and production changes. D studies how external ownership, unequal bargaining and historical ties constrain development options.",
+    "caption": "Original comparative interpretations, not attributed quotations. Theoretical emphasis is not proof that all other factors are absent.",
+    "headers": [
+      "Interpretation",
+      "Main explanatory focus"
+    ],
+    "rows": [
+      [
+        "R",
+        "Internal structural changes supporting a proposed sequence of growth"
+      ],
+      [
+        "D",
+        "External control and unequal relationships shaping domestic opportunities"
+      ]
+    ]
+  },
+  "hug-7-6-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Alternative outputs from one labor-day",
+    "description": "Hypothetical economies. With one labor-day A can make either 12 grain units or 6 cloth units; B either 4 grain or 4 cloth. Assume constant linear tradeoffs and transferable labor within each economy, ignoring trade costs.",
+    "caption": "Original production possibilities, not simultaneous output of both goods. Opportunity cost compares forgone alternative production; no current country or policy is represented.",
+    "headers": [
+      "Economy",
+      "Grain only",
+      "Cloth only"
+    ],
+    "rows": [
+      [
+        "A",
+        "12",
+        "6"
+      ],
+      [
+        "B",
+        "4",
+        "4"
+      ]
+    ]
+  },
+  "hug-7-6-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "A fictional import-charge calculation",
+    "description": "Hypothetical rule: a 10% tariff applies to an import value of 100 currency units. Assume the full charge is passed to the buyer and that transport, exchange rates and all other charges or prices stay unchanged.",
+    "caption": "Original simplified example, not a current tariff, customs classification, legal instruction or prediction of actual pass-through.",
+    "headers": [
+      "Assumption",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Import value",
+        "100"
+      ],
+      [
+        "Tariff on that value",
+        "10%"
+      ],
+      [
+        "Other changes",
+        "0"
+      ]
+    ]
+  },
+  "hug-7-6-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "model",
+    "title": "A cross-border component and assembly network",
+    "description": "Hypothetical economies: S supplies a required component, A assembles the finished product, M is the final market. There is no alternative source for the component within the scenario. Arrows show the stated shipment chain.",
+    "caption": "Original functional network. Actual firms can diversify or adapt; the no-substitute condition is an explicit teaching assumption rather than a claim about all supply chains.",
+    "assumptions": "S → A: required parts. A → M: finished goods. Each node is in a different economy; quantities and shipment times are not specified.",
+    "nodes": [
+      {
+        "label": "S",
+        "x": 12,
+        "y": 30,
+        "labelPosition": "below"
+      },
+      {
+        "label": "A",
+        "x": 50,
+        "y": 30,
+        "labelPosition": "below"
+      },
+      {
+        "label": "M",
+        "x": 88,
+        "y": 30,
+        "labelPosition": "below"
+      }
+    ],
+    "edges": [
+      {
+        "from": "S",
+        "to": "A",
+        "label": "Parts"
+      },
+      {
+        "from": "A",
+        "to": "M",
+        "label": "Goods"
+      }
+    ]
+  },
+  "hug-7-6-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Fixed external payments and falling export receipts",
+    "description": "Hypothetical national account in the same foreign-currency unit. Annual debt-service payments remain 20; export receipts fall from 100 to 80. No reserves, other inflows or maturity details are supplied.",
+    "caption": "Original simplified financing indicator. The payment-to-export ratio alone does not establish default, a complete sustainability judgment or an individual borrowing recommendation.",
+    "headers": [
+      "Period",
+      "Debt service",
+      "Export receipts"
+    ],
+    "rows": [
+      [
+        "Initial",
+        "20",
+        "100"
+      ],
+      [
+        "Later",
+        "20",
+        "80"
+      ]
+    ]
   }
 }

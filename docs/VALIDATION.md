@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 7.5–7.6
+
+726 original MCQs across66 topics are published, eleven each;264 meaningful stimuli (36.36%) and281 explicit evidence/numerical/geometry checks. Development theories compare staged growth, relational roles, commodity exposure and dependency with qualified limits. Trade checks comparative versus absolute advantage, fictional tariff arithmetic, chain direction, debt/export ratios and accurate institutional functions.
+
+All193 unit tests, structural/evidence checks, TypeScript, production build, all68 Geography scopes and standard preview checks passed. Both full browser sessions scored11/11; all eight mobile stimuli inspected; network keyboard zoom200/reset100 and desktop light-mode rendering passed. Existing236 checkpoint question files,256 stimuli and approved catalog unchanged. Student storage preserved. Next7.7; two topics/22 questions remain. Full748 audit and subsequent UI/summary phase pending; no human-review or calibrated-difficulty claim.
+
 ## Human Geography Topics 7.3–7.4
 
 704 original MCQs across64 topics are published, eleven each;256 meaningful stimuli (36.36%) and273 explicit evidence/numerical/geometry checks. Measures of Development distinguishes GDP/GNI/residency, income distribution, HDI components and GII direction. Women/Economic Development checks participation denominators, earnings, unpaid care and nonrandom microloan-study observations without claiming causal effects.

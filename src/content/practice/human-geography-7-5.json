@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 7,
+  "topicId": "topic-7-5",
+  "questions": [
+    {
+      "id": "hug-7-5-001",
+      "prompt": "In the displayed Rostow sequence, which numbered stage follows take-off and emphasizes wider technological diffusion across an increasingly diverse economy?",
+      "options": [
+        "II",
+        "III",
+        "V",
+        "IV"
+      ],
+      "correctIndex": 3,
+      "explanation": "Stage IV is the drive to maturity, following the take-off stage III and preceding high mass consumption V in this framework. It emphasizes broader technological application and diversification rather than only initial leading-sector expansion. This is an interpretation of a model, not a guarantee that every society follows identical timing or values. A: II represents preconditions rather than the post-take-off stage. B: III is take-off itself, not the following stage. C: V is the later high-mass-consumption stage. D: IV is the drive to maturity in the sequence supplied."
+    },
+    {
+      "id": "hug-7-5-002",
+      "prompt": "Within the stated world-systems framework, which region most clearly illustrates a semiperipheral mix of roles?",
+      "options": [
+        "A, solely because the framework requires every region with headquarters to be intermediate.",
+        "B, combining substantial industry with an intermediate position in control and dependence.",
+        "C, solely because it supplies raw materials and has little control over buyer prices.",
+        "All three, because participating in trade removes every core/periphery distinction."
+      ],
+      "correctIndex": 1,
+      "explanation": "The semiperiphery combines aspects of more dominant and more dependent economic roles. B has substantial manufacturing and some control functions but remains dependent on important external finance or technology. These relational roles are not simply middle income or a permanent label for every person and industry in a territory. A: A is described as exercising dominant control, not merely an intermediate role. B: This identifies the mixed position supplied for B. C: C’s supplied dependence most directly illustrates the peripheral role in this abstraction. D: Participation alone does not erase unequal control and production relationships."
+    },
+    {
+      "id": "hug-7-5-003",
+      "prompt": "Commodity prices fall 25% while exported quantities and all other export earnings stay fixed. Which comparison follows?",
+      "options": [
+        "A’s total export earnings fall 25% and B’s also fall 25%.",
+        "A loses 5% and B loses 20%.",
+        "A loses 20% and B loses 5%, illustrating different exposure to the same commodity-price shock.",
+        "Neither loses earnings because exported quantities are unchanged."
+      ],
+      "correctIndex": 2,
+      "explanation": "A initially earns 80 from commodities and 20 from other exports. After the shock it earns 60 + 20 = 80, a 20% decline from 100. B changes from 20 + 80 = 100 to 15 + 80 = 95, a 5% decline. The greater commodity share creates greater exposure under these assumptions, without proving that all commodity-exporting economies have identical outcomes. A: The 25% decline applies only to commodity earnings, not every export category. B: The loss percentages are reversed. C: This correctly weights the price shock by each economy’s export composition. D: Fixed quantities do not prevent revenue changes when prices change."
+    },
+    {
+      "id": "hug-7-5-004",
+      "prompt": "Which comparison best distinguishes the analytical emphasis of these two interpretations?",
+      "options": [
+        "R emphasizes a staged internal transformation; D emphasizes unequal external relationships and constraints.",
+        "Both explain the difference only through climate and latitude.",
+        "D says every trade connection provides equal gains; R rejects all investment.",
+        "R and D require identical predictions for every place because both study development."
+      ],
+      "correctIndex": 0,
+      "explanation": "The R interpretation follows a stage-oriented emphasis on changes in investment and production within an economy. D focuses on how external control and unequal relationships can shape domestic possibilities, consistent with dependency reasoning. Comparing emphases does not mean each theory ignores every other influence or that either automatically explains all cases. A: This identifies the contrasting mechanisms and scales in the supplied interpretations. B: Neither account presents climate or latitude as the sole mechanism. C: These claims contradict the descriptions of R and D. D: Theories can address the same outcome through different explanations and assumptions."
+    },
+    {
+      "id": "hug-7-5-005",
+      "prompt": "What is a major limitation of applying Rostow’s stages as a universal forecast?",
+      "options": [
+        "It can never describe any change in production structure.",
+        "It may underrepresent diverse histories, external power relations and development goals that differ from one linear consumption-centered path.",
+        "It requires all historical evidence to be discarded before any comparison.",
+        "It is the same measure as GDP per capita and therefore has no assumptions."
+      ],
+      "correctIndex": 1,
+      "explanation": "A stage model simplifies historical development into a proposed sequence. Diverse colonial histories, global relationships, institutions and social or environmental goals can make that sequence an incomplete explanation. Recognizing limits does not make the model useless; it means testing assumptions and comparing alternatives rather than treating the sequence as a guaranteed future. A: Its concepts can still illuminate selected structural changes. B: This identifies substantive limits of universal application. C: Historical evidence is essential for assessing the model. D: A developmental theory is different from a single numerical indicator."
+    },
+    {
+      "id": "hug-7-5-006",
+      "prompt": "Which claim is most consistent with dependency theory?",
+      "options": [
+        "Every economy is isolated from global markets.",
+        "All foreign investment necessarily creates identical benefits.",
+        "Unequal historical and contemporary economic relationships can help reproduce development constraints.",
+        "Per-capita income alone fully explains every historical relationship."
+      ],
+      "correctIndex": 2,
+      "explanation": "Dependency approaches examine how external economic ties and unequal power can shape development and reproduce constraints. This is different from treating countries as isolated units following one internally determined sequence. A careful application still needs evidence of specific ownership, trade, finance and institutions rather than declaring every external connection harmful by definition. A: Cross-border relationships are central to the approach. B: The approach investigates unequal outcomes rather than assumes identical benefits. C: This states the relational mechanism without claiming universal harm. D: A current average does not summarize the relevant historical mechanisms."
+    },
+    {
+      "id": "hug-7-5-007",
+      "prompt": "Why can increased commodity export volume coexist with persistent vulnerability?",
+      "options": [
+        "Volume alone does not remove price exposure, buyer concentration, limited diversification or external control.",
+        "More volume guarantees a fixed world price forever.",
+        "Every extra exported ton eliminates one unit of debt regardless of price.",
+        "A larger export quantity means all domestic households receive the same income."
+      ],
+      "correctIndex": 0,
+      "explanation": "Export volume is only one determinant of revenue and development outcomes. Prices, bargaining power, production costs, ownership and the range of other activities matter. A commodity-based economy may benefit from sales while retaining exposure to shocks, so rising volume is not by itself proof of diversification or equal domestic gains. A: This identifies the relevant sources of vulnerability beyond volume. B: World prices are not fixed by a single economy’s quantity increase. C: Debt and revenue cannot be related through an unspecified physical-unit rule. D: Distribution depends on ownership, wages and institutions rather than tonnage alone."
+    },
+    {
+      "id": "hug-7-5-008",
+      "prompt": "In world-systems analysis, what makes the semiperiphery more than an arbitrary middle-income group?",
+      "options": [
+        "It consists only of places at middle latitudes.",
+        "It is defined by equal population sizes.",
+        "It excludes all manufacturing and all state institutions.",
+        "It occupies mixed relational positions, with both dominant and dependent functions in the wider system."
+      ],
+      "correctIndex": 3,
+      "explanation": "Semiperipheral positions combine features associated with core and peripheral relationships, such as industrial capacity alongside dependence in finance or control. The classification is structural and relational rather than a simple midpoint on a monetary scale. Roles can change over time, and a territory may contain varied activities and unequal internal conditions. A: Latitude does not define the category. B: Population equality is not the defining criterion. C: Manufacturing and institutions can be important in semiperipheral positions. D: This captures the relational mix rather than an arbitrary statistical middle."
+    },
+    {
+      "id": "hug-7-5-009",
+      "prompt": "A national development label hides a wealthy financial district and a region dependent on low-return extraction. What is the best response?",
+      "options": [
+        "Assume national classification determines each resident’s income.",
+        "Examine internal regions and their links to wider networks rather than treat the territory as uniform.",
+        "Discard all evidence of international relationships.",
+        "Classify every household solely by the national average."
+      ],
+      "correctIndex": 1,
+      "explanation": "Development relationships operate across scales and can produce substantial internal variation. Examining ownership, production and links among regions can complement a national classification. The existence of variation does not eliminate the wider system, but it prevents a broad label from becoming a complete description of all local functions or people. A: A national category does not specify each person’s resources. B: This preserves both internal diversity and external relationships. C: International links may help explain the local contrast. D: An aggregate average cannot classify every household’s circumstances."
+    },
+    {
+      "id": "hug-7-5-010",
+      "prompt": "A government expands local processing of a raw-material export. What evidence best tests whether this reduces dependency?",
+      "options": [
+        "Only the number of factories, assuming ownership and control no longer matter.",
+        "Only the tonnage exported, assuming prices and inputs remain irrelevant.",
+        "Local value capture, ownership, skill development, input reliance and control over markets and finance.",
+        "A change in the product’s label, without any production or ownership records."
+      ],
+      "correctIndex": 2,
+      "explanation": "Processing can alter production functions, but its developmental significance depends on who controls technology, finance, inputs and returns. Evidence on local capabilities and value capture helps evaluate whether relationships change rather than simply assuming a higher processing stage removes all external constraints. Results can vary among firms and communities. A: Factories can remain externally controlled or highly input-dependent. B: Tonnage alone omits value, costs and control. C: These measures address the relationships central to the question. D: A label does not document a structural change."
+    },
+    {
+      "id": "hug-7-5-011",
+      "prompt": "Why should development theories be compared with historical evidence instead of used as automatic labels?",
+      "options": [
+        "Each isolates mechanisms and assumptions whose explanatory fit can differ by place, time and scale.",
+        "Every theory uses the same mechanism and makes identical predictions.",
+        "A theory’s name alone identifies each household’s living conditions.",
+        "Different development outcomes prove that all systematic explanation is impossible."
+      ],
+      "correctIndex": 0,
+      "explanation": "Theories emphasize selected processes, such as staged structural change, unequal global relationships or commodity exposure. Historical and contemporary evidence can test which mechanisms are relevant and where assumptions fail. Comparing them supports explanation without requiring one universal template or treating people as interchangeable examples of a category. A: This states why evidence and scope matter. B: The theories differ in emphasis and assumptions. C: A theory does not enumerate individual conditions. D: Variation invites comparison and refinement rather than rejecting explanation altogether."
+    }
+  ]
+}
