@@ -11510,5 +11510,1131 @@
         "y": 10.055172518903841
       }
     ]
+  },
+  "hug-6-5-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "A concentric internal-city abstraction",
+    "description": "Hypothetical teaching diagram inspired by the Burgess model. The CBD is central; II is a transition zone, III and IV residential zones, and V an outer commuting zone. These are stylized land-use bands, not observed neighborhoods.",
+    "caption": "Original nested polygons approximate circles without copying a published figure. Historical model categories do not determine the wealth, identity or conditions of every present-day resident.",
+    "unitLabel": "CBD:center; II:transition; III–IV:residential; V:outer commuting",
+    "regions": [
+      {
+        "label": "V",
+        "polygon": [
+          [
+            74.3157894736842,
+            30
+          ],
+          [
+            73.48724903923944,
+            37.246933262870584
+          ],
+          [
+            71.05809139728477,
+            44
+          ],
+          [
+            67.19385962674657,
+            49.79898987322333
+          ],
+          [
+            62.15789473684211,
+            54.24871130596428
+          ],
+          [
+            56.29338941249287,
+            57.04592313609391
+          ],
+          [
+            50,
+            58
+          ],
+          [
+            43.70661058750713,
+            57.04592313609391
+          ],
+          [
+            37.842105263157904,
+            54.248711305964285
+          ],
+          [
+            32.80614037325343,
+            49.798989873223334
+          ],
+          [
+            28.94190860271523,
+            44
+          ],
+          [
+            26.512750960760552,
+            37.24693326287059
+          ],
+          [
+            25.68421052631579,
+            30.000000000000004
+          ],
+          [
+            26.512750960760552,
+            22.753066737129416
+          ],
+          [
+            28.941908602715227,
+            16.000000000000007
+          ],
+          [
+            32.80614037325341,
+            10.20101012677668
+          ],
+          [
+            37.84210526315788,
+            5.751288694035722
+          ],
+          [
+            43.70661058750713,
+            2.9540768639060886
+          ],
+          [
+            49.99999999999999,
+            2
+          ],
+          [
+            56.293389412492864,
+            2.954076863906085
+          ],
+          [
+            62.15789473684211,
+            5.751288694035718
+          ],
+          [
+            67.19385962674657,
+            10.201010126776666
+          ],
+          [
+            71.05809139728476,
+            15.999999999999988
+          ],
+          [
+            73.48724903923944,
+            22.753066737129394
+          ]
+        ],
+        "labelPoint": [
+          50,
+          6
+        ]
+      },
+      {
+        "label": "IV",
+        "polygon": [
+          [
+            69.45263157894736,
+            30
+          ],
+          [
+            68.78979923139156,
+            35.797546610296465
+          ],
+          [
+            66.84647311782781,
+            41.199999999999996
+          ],
+          [
+            63.75508770139726,
+            45.83919189857866
+          ],
+          [
+            59.72631578947369,
+            49.39896904477142
+          ],
+          [
+            55.0347115299943,
+            51.636738508875126
+          ],
+          [
+            50,
+            52.4
+          ],
+          [
+            44.9652884700057,
+            51.636738508875126
+          ],
+          [
+            40.27368421052632,
+            49.39896904477143
+          ],
+          [
+            36.24491229860274,
+            45.83919189857866
+          ],
+          [
+            33.15352688217219,
+            41.199999999999996
+          ],
+          [
+            31.210200768608445,
+            35.79754661029647
+          ],
+          [
+            30.547368421052635,
+            30.000000000000004
+          ],
+          [
+            31.21020076860844,
+            24.202453389703535
+          ],
+          [
+            33.15352688217219,
+            18.800000000000004
+          ],
+          [
+            36.244912298602735,
+            14.160808101421345
+          ],
+          [
+            40.27368421052631,
+            10.60103095522858
+          ],
+          [
+            44.9652884700057,
+            8.36326149112487
+          ],
+          [
+            49.99999999999999,
+            7.600000000000001
+          ],
+          [
+            55.03471152999429,
+            8.36326149112487
+          ],
+          [
+            59.72631578947369,
+            10.601030955228577
+          ],
+          [
+            63.75508770139726,
+            14.160808101421333
+          ],
+          [
+            66.84647311782781,
+            18.79999999999999
+          ],
+          [
+            68.78979923139156,
+            24.202453389703518
+          ]
+        ],
+        "labelPoint": [
+          50,
+          11.600000000000001
+        ]
+      },
+      {
+        "label": "III",
+        "polygon": [
+          [
+            64.58947368421053,
+            30
+          ],
+          [
+            64.09234942354367,
+            34.348159957722345
+          ],
+          [
+            62.63485483837086,
+            38.4
+          ],
+          [
+            60.316315776047944,
+            41.879393923933996
+          ],
+          [
+            57.294736842105266,
+            44.54922678357857
+          ],
+          [
+            53.77603364749572,
+            46.22755388165635
+          ],
+          [
+            50,
+            46.8
+          ],
+          [
+            46.22396635250428,
+            46.22755388165635
+          ],
+          [
+            42.70526315789474,
+            44.54922678357857
+          ],
+          [
+            39.683684223952056,
+            41.879393923934
+          ],
+          [
+            37.36514516162914,
+            38.4
+          ],
+          [
+            35.907650576456334,
+            34.34815995772235
+          ],
+          [
+            35.410526315789475,
+            30.000000000000004
+          ],
+          [
+            35.907650576456334,
+            25.65184004227765
+          ],
+          [
+            37.36514516162914,
+            21.600000000000005
+          ],
+          [
+            39.68368422395205,
+            18.120606076066007
+          ],
+          [
+            42.705263157894734,
+            15.450773216421434
+          ],
+          [
+            46.22396635250428,
+            13.772446118343652
+          ],
+          [
+            50,
+            13.2
+          ],
+          [
+            53.776033647495716,
+            13.772446118343648
+          ],
+          [
+            57.294736842105266,
+            15.450773216421432
+          ],
+          [
+            60.316315776047944,
+            18.120606076065997
+          ],
+          [
+            62.634854838370856,
+            21.599999999999994
+          ],
+          [
+            64.09234942354367,
+            25.651840042277637
+          ]
+        ],
+        "labelPoint": [
+          50,
+          17.2
+        ]
+      },
+      {
+        "label": "II",
+        "polygon": [
+          [
+            59.72631578947368,
+            30
+          ],
+          [
+            59.39489961569578,
+            32.89877330514823
+          ],
+          [
+            58.423236558913906,
+            35.6
+          ],
+          [
+            56.87754385069863,
+            37.91959594928933
+          ],
+          [
+            54.863157894736844,
+            39.69948452238571
+          ],
+          [
+            52.51735576499715,
+            40.81836925443756
+          ],
+          [
+            50,
+            41.2
+          ],
+          [
+            47.48264423500285,
+            40.81836925443756
+          ],
+          [
+            45.13684210526316,
+            39.69948452238572
+          ],
+          [
+            43.12245614930137,
+            37.91959594928933
+          ],
+          [
+            41.576763441086094,
+            35.6
+          ],
+          [
+            40.60510038430422,
+            32.89877330514823
+          ],
+          [
+            40.27368421052632,
+            30
+          ],
+          [
+            40.60510038430422,
+            27.101226694851768
+          ],
+          [
+            41.576763441086094,
+            24.400000000000002
+          ],
+          [
+            43.122456149301364,
+            22.080404050710673
+          ],
+          [
+            45.136842105263156,
+            20.30051547761429
+          ],
+          [
+            47.48264423500285,
+            19.181630745562437
+          ],
+          [
+            50,
+            18.8
+          ],
+          [
+            52.51735576499714,
+            19.181630745562437
+          ],
+          [
+            54.863157894736844,
+            20.30051547761429
+          ],
+          [
+            56.87754385069863,
+            22.080404050710666
+          ],
+          [
+            58.423236558913906,
+            24.399999999999995
+          ],
+          [
+            59.39489961569578,
+            27.101226694851757
+          ]
+        ],
+        "labelPoint": [
+          50,
+          22.8
+        ]
+      },
+      {
+        "label": "CBD",
+        "polygon": [
+          [
+            54.863157894736844,
+            30
+          ],
+          [
+            54.69744980784789,
+            31.449386652574116
+          ],
+          [
+            54.21161827945696,
+            32.8
+          ],
+          [
+            53.438771925349315,
+            33.959797974644665
+          ],
+          [
+            52.43157894736842,
+            34.84974226119286
+          ],
+          [
+            51.258677882498574,
+            35.409184627218785
+          ],
+          [
+            50,
+            35.6
+          ],
+          [
+            48.741322117501426,
+            35.409184627218785
+          ],
+          [
+            47.56842105263158,
+            34.84974226119286
+          ],
+          [
+            46.561228074650685,
+            33.959797974644665
+          ],
+          [
+            45.78838172054304,
+            32.8
+          ],
+          [
+            45.30255019215211,
+            31.449386652574116
+          ],
+          [
+            45.136842105263156,
+            30
+          ],
+          [
+            45.30255019215211,
+            28.550613347425884
+          ],
+          [
+            45.78838172054304,
+            27.200000000000003
+          ],
+          [
+            46.561228074650685,
+            26.040202025355335
+          ],
+          [
+            47.56842105263158,
+            25.150257738807145
+          ],
+          [
+            48.741322117501426,
+            24.59081537278122
+          ],
+          [
+            50,
+            24.4
+          ],
+          [
+            51.258677882498574,
+            24.59081537278122
+          ],
+          [
+            52.43157894736842,
+            25.150257738807145
+          ],
+          [
+            53.438771925349315,
+            26.040202025355335
+          ],
+          [
+            54.21161827945695,
+            27.199999999999996
+          ],
+          [
+            54.69744980784789,
+            28.55061334742588
+          ]
+        ],
+        "labelPoint": [
+          50,
+          31
+        ]
+      }
+    ]
+  },
+  "hug-6-5-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "Selected urban sectors along directional corridors",
+    "description": "Hypothetical Hoyt-style example. A is a residential sector extending along an amenity/access corridor; B is an industrial sector along rail access. Both extend outward from the CBD. Only selected sectors are shown.",
+    "caption": "Original schematic, not a real city. Sector shape illustrates directionality; it does not imply all actual cities or income groups follow fixed wedges.",
+    "unitLabel": "A:residential sector; B:industrial sector; CBD:center",
+    "regions": [
+      {
+        "label": "A",
+        "polygon": [
+          [
+            25,
+            45
+          ],
+          [
+            75,
+            4
+          ],
+          [
+            90,
+            8
+          ]
+        ],
+        "labelPoint": [
+          68,
+          16
+        ]
+      },
+      {
+        "label": "B",
+        "polygon": [
+          [
+            25,
+            45
+          ],
+          [
+            92,
+            43
+          ],
+          [
+            92,
+            58
+          ]
+        ],
+        "labelPoint": [
+          74,
+          50
+        ]
+      },
+      {
+        "label": "CBD",
+        "polygon": [
+          [
+            29.342105263157894,
+            45
+          ],
+          [
+            29.194151614149902,
+            46.294095225512606
+          ],
+          [
+            28.760373463800853,
+            47.5
+          ],
+          [
+            28.070332076204746,
+            48.53553390593274
+          ],
+          [
+            27.17105263157895,
+            49.33012701892219
+          ],
+          [
+            26.123819537945156,
+            49.829629131445344
+          ],
+          [
+            25,
+            50
+          ],
+          [
+            23.876180462054844,
+            49.829629131445344
+          ],
+          [
+            22.828947368421055,
+            49.33012701892219
+          ],
+          [
+            21.929667923795254,
+            48.53553390593274
+          ],
+          [
+            21.239626536199147,
+            47.5
+          ],
+          [
+            20.805848385850098,
+            46.294095225512606
+          ],
+          [
+            20.657894736842106,
+            45
+          ],
+          [
+            20.805848385850098,
+            43.705904774487394
+          ],
+          [
+            21.239626536199147,
+            42.5
+          ],
+          [
+            21.929667923795254,
+            41.46446609406726
+          ],
+          [
+            22.82894736842105,
+            40.66987298107781
+          ],
+          [
+            23.876180462054844,
+            40.170370868554656
+          ],
+          [
+            25,
+            40
+          ],
+          [
+            26.123819537945153,
+            40.170370868554656
+          ],
+          [
+            27.17105263157895,
+            40.66987298107781
+          ],
+          [
+            28.070332076204746,
+            41.46446609406726
+          ],
+          [
+            28.76037346380085,
+            42.5
+          ],
+          [
+            29.194151614149902,
+            43.705904774487394
+          ]
+        ],
+        "labelPoint": [
+          25,
+          46
+        ]
+      }
+    ],
+    "paths": [
+      {
+        "label": "Rail",
+        "points": [
+          [
+            30,
+            46
+          ],
+          [
+            60,
+            47
+          ],
+          [
+            90,
+            49
+          ]
+        ]
+      }
+    ]
+  },
+  "hug-6-5-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "Distinct functional clusters within one urban region",
+    "description": "Hypothetical urban plan with an older CBD, a separate retail center and an industrial cluster near specialized freight access. Field records link their separation to different site needs and incompatibility of some activities.",
+    "caption": "Original selected-cluster schematic. Blank space is not a complete land-use inventory; multiple-nuclei reasoning does not imply all clusters have equal power, population or independence.",
+    "unitLabel": "Three distinct activity clusters, not three separate cities",
+    "regions": [
+      {
+        "label": "CBD",
+        "polygon": [
+          [
+            10,
+            20
+          ],
+          [
+            30,
+            20
+          ],
+          [
+            30,
+            35
+          ],
+          [
+            10,
+            35
+          ]
+        ],
+        "labelPoint": [
+          20,
+          28
+        ]
+      },
+      {
+        "label": "Shops",
+        "polygon": [
+          [
+            50,
+            5
+          ],
+          [
+            70,
+            5
+          ],
+          [
+            70,
+            20
+          ],
+          [
+            50,
+            20
+          ]
+        ],
+        "labelPoint": [
+          60,
+          14
+        ]
+      },
+      {
+        "label": "Industry",
+        "polygon": [
+          [
+            65,
+            40
+          ],
+          [
+            90,
+            40
+          ],
+          [
+            90,
+            55
+          ],
+          [
+            65,
+            55
+          ]
+        ],
+        "labelPoint": [
+          77,
+          49
+        ]
+      }
+    ]
+  },
+  "hug-6-5-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Selected features considered in regional urban models",
+    "description": "Hypothetical model-comparison notes. They highlight selected historical relationships rather than classify all actual cities or residents in a region.",
+    "caption": "Original summary of model questions, not copied diagrams or an exhaustive regional typology. Apply each with local evidence and attention to subsequent change.",
+    "headers": [
+      "Model context",
+      "Selected feature or analytical question"
+    ],
+    "rows": [
+      [
+        "Latin America",
+        "A commercial spine extending the CBD, with a related higher-cost residential sector"
+      ],
+      [
+        "Southeast Asian port-city contexts",
+        "Historic port functions and associated commercial activities shaping internal organization"
+      ],
+      [
+        "African urban contexts",
+        "Local and colonial histories contributing different business districts and settlement forms"
+      ]
+    ]
+  },
+  "hug-6-6-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Dwelling units and residential land area",
+    "description": "Hypothetical districts. A contains 200 dwelling units on 10 residential hectares; B contains 100 units on 2 residential hectares. Areas refer to residential land under the same definition.",
+    "caption": "Original synthetic housing-stock data. Dwelling units are not resident counts; identical housing-unit density would not require identical household sizes or occupancy.",
+    "headers": [
+      "District",
+      "Dwelling units",
+      "Residential area (ha)"
+    ],
+    "rows": [
+      [
+        "A",
+        "200",
+        "10"
+      ],
+      [
+        "B",
+        "100",
+        "2"
+      ]
+    ]
+  },
+  "hug-6-6-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "A vacant urban parcel before and after infill",
+    "description": "Hypothetical same urban site in two panels. Left before:a vacant parcel lies between existing north/south buildings. Right after:new homes occupy that parcel; the urban edge and neighboring buildings are unchanged.",
+    "caption": "Original paired-site schematic, not adjacent neighborhoods. Labels identify existing buildings and the changed parcel. The drawing does not specify rents, tenure or individual household outcomes.",
+    "unitLabel": "Left:before. Right:after. Outer boxes:unchanged urban edge.",
+    "regions": [
+      {
+        "label": "Before",
+        "polygon": [
+          [
+            2,
+            2
+          ],
+          [
+            44,
+            2
+          ],
+          [
+            44,
+            58
+          ],
+          [
+            2,
+            58
+          ]
+        ],
+        "labelPoint": [
+          23,
+          7
+        ]
+      },
+      {
+        "label": "After",
+        "polygon": [
+          [
+            56,
+            2
+          ],
+          [
+            98,
+            2
+          ],
+          [
+            98,
+            58
+          ],
+          [
+            56,
+            58
+          ]
+        ],
+        "labelPoint": [
+          77,
+          7
+        ]
+      },
+      {
+        "label": "B north",
+        "polygon": [
+          [
+            10,
+            12
+          ],
+          [
+            36,
+            12
+          ],
+          [
+            36,
+            21
+          ],
+          [
+            10,
+            21
+          ]
+        ],
+        "labelPoint": [
+          23,
+          18
+        ]
+      },
+      {
+        "label": "Vacant",
+        "polygon": [
+          [
+            10,
+            24
+          ],
+          [
+            36,
+            24
+          ],
+          [
+            36,
+            37
+          ],
+          [
+            10,
+            37
+          ]
+        ],
+        "labelPoint": [
+          23,
+          32
+        ]
+      },
+      {
+        "label": "B south",
+        "polygon": [
+          [
+            10,
+            41
+          ],
+          [
+            36,
+            41
+          ],
+          [
+            36,
+            51
+          ],
+          [
+            10,
+            51
+          ]
+        ],
+        "labelPoint": [
+          23,
+          48
+        ]
+      },
+      {
+        "label": "A north",
+        "polygon": [
+          [
+            64,
+            12
+          ],
+          [
+            90,
+            12
+          ],
+          [
+            90,
+            21
+          ],
+          [
+            64,
+            21
+          ]
+        ],
+        "labelPoint": [
+          77,
+          18
+        ]
+      },
+      {
+        "label": "New homes",
+        "polygon": [
+          [
+            64,
+            24
+          ],
+          [
+            90,
+            24
+          ],
+          [
+            90,
+            37
+          ],
+          [
+            64,
+            37
+          ]
+        ],
+        "labelPoint": [
+          77,
+          32
+        ]
+      },
+      {
+        "label": "A south",
+        "polygon": [
+          [
+            64,
+            41
+          ],
+          [
+            90,
+            41
+          ],
+          [
+            90,
+            51
+          ],
+          [
+            64,
+            51
+          ]
+        ],
+        "labelPoint": [
+          77,
+          48
+        ]
+      }
+    ]
+  },
+  "hug-6-6-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Housing stock by building type in two periods",
+    "description": "Hypothetical dwelling-unit counts. Initial:detached 600, attached 200, apartments 200. Later:detached 500, attached 300, apartments 700. Categories do not overlap; the chart counts units rather than people.",
+    "caption": "Original synthetic housing mix. Type can relate to land-use intensity, but unit totals alone do not establish exact land area, occupancy, rents or resident characteristics.",
+    "unitLabel": "Dwelling units",
+    "categories": [
+      "Detached",
+      "Attached",
+      "Apartments"
+    ],
+    "series": [
+      {
+        "label": "Initial",
+        "values": [
+          600,
+          200,
+          200
+        ]
+      },
+      {
+        "label": "Later",
+        "values": [
+          500,
+          300,
+          700
+        ]
+      }
+    ],
+    "max": 800
+  },
+  "hug-6-6-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Same population, different land-area definitions",
+    "description": "Hypothetical districts A and B each contain 1000 residents on 10 total hectares. A has 5 residential hectares; B has 2. All residents live within the designated residential area, and the remaining land has other uses.",
+    "caption": "Original synthetic density comparison. The question explicitly defines gross and net measures; different agencies may use other boundaries, so do not compare unlabeled densities.",
+    "headers": [
+      "District",
+      "Residents",
+      "All land (ha)",
+      "Residential (ha)"
+    ],
+    "rows": [
+      [
+        "A",
+        "1000",
+        "10",
+        "5"
+      ],
+      [
+        "B",
+        "1000",
+        "10",
+        "2"
+      ]
+    ]
   }
 }

@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 6,
+  "topicId": "topic-6-6",
+  "questions": [
+    {
+      "id": "hug-6-6-001",
+      "prompt": "Which comparison correctly calculates housing-unit density using residential land in each district?",
+      "options": [
+        "A:200 units/hectare; B:100 units/hectare",
+        "A:50 units/hectare; B:20 units/hectare",
+        "A:20 units/hectare; B:50 units/hectare",
+        "Both:10 units/hectare"
+      ],
+      "correctIndex": 2,
+      "explanation": "Housing-unit density divides dwelling units by the specified residential land area. A has 200/10=20 units/hectare; B has 100/2=50. B has fewer units in total but more per hectare. These are dwelling-unit densities, not people per hectare; resident counts or occupancy would be needed for population density. A: These are the total unit counts, not the per-area densities. B: This reverses the calculated values. C: This correctly uses each district’s own residential-area denominator. D: The ratios are neither equal nor 10."
+    },
+    {
+      "id": "hug-6-6-002",
+      "prompt": "The after panel adds homes to the former vacant parcel while the mapped urban edge stays the same. Which process is most directly illustrated?",
+      "options": [
+        "Leapfrog development beyond the urban edge.",
+        "The disappearance of all existing buildings.",
+        "A national rank-size hierarchy of separate cities.",
+        "Infill development within an already developed urban area."
+      ],
+      "correctIndex": 3,
+      "explanation": "Infill adds development to vacant or underused land within an existing built-up area. The supplied boundary and neighboring buildings remain, while the central parcel changes use. This differs from extending development beyond the edge or placing disconnected patches farther out. The drawing does not establish affordability or the fate of particular households. A: The new homes remain inside the unchanged mapped edge. B: The neighboring existing buildings are retained in both panels. C: This is a site-scale before/after change rather than city populations. D: This matches the location and use change described."
+    },
+    {
+      "id": "hug-6-6-003",
+      "prompt": "Which statement correctly describes the apartment share of the housing stock, without treating dwelling units as residents?",
+      "options": [
+        "It rises from 20% to about 46.7%, while the total number of dwelling units also increases.",
+        "It stays 20% because detached houses still exist.",
+        "It falls because apartments increase from 200 to 700.",
+        "The chart proves all households now have the same size."
+      ],
+      "correctIndex": 0,
+      "explanation": "Initial stock totals 600+200+200=1000 units, with apartments 200/1000=20%. Later the total is 500+300+700=1500, with apartments 700/1500≈46.7%. The mix and total stock change. These unit counts do not measure occupied units, residents, household size, affordability or architectural quality. A: This uses the total stock denominator in each period. B: One category’s continued presence does not fix another’s share. C: Apartment counts and share both rise in the supplied data. D: No household-size data are provided."
+    },
+    {
+      "id": "hug-6-6-004",
+      "prompt": "Define gross density using all district land and net residential density using only residential land. Which comparison is correct?",
+      "options": [
+        "A and B have identical gross and net densities because both contain 1000 residents.",
+        "A’s gross density is 200 and B’s 100 residents/hectare.",
+        "Both gross densities are 100 residents/hectare, but net residential densities are 200 for A and 500 for B.",
+        "B’s net density is lower because it has less residential land."
+      ],
+      "correctIndex": 2,
+      "explanation": "Both gross densities equal 1000/10=100 residents/hectare. Net residential density is 1000/5=200 for A and 1000/2=500 for B. The conclusion changes with the area included, so definitions and units must be stated before comparing residential patterns. Net density here does not describe how evenly people are distributed within each residential area. A: Equal population does not ensure the same residential-only denominator. B: Both total district areas are 10, so both gross values are 100. C: This uses the stated gross and residential-only definitions consistently. D: With the same residents on less residential land, the net ratio is higher."
+    },
+    {
+      "id": "hug-6-6-005",
+      "prompt": "Why can a tall office tower have fewer permanent residents than a low-rise apartment complex?",
+      "options": [
+        "Every tall building must contain exactly one household.",
+        "Building height is the same measure as population density.",
+        "All low-rise buildings have identical land area and occupancy.",
+        "Building use, dwelling count, occupancy and site area differ; height alone does not count residents."
+      ],
+      "correctIndex": 3,
+      "explanation": "Height describes a building’s form, not who lives there. Offices may have many daytime workers but few or no permanent residents, while low-rise housing may contain many occupied units. Comparing residential density requires resident or dwelling counts with a defined land area rather than height alone. A: No such universal household rule follows from height. B: Height is a vertical dimension, while population density is a people-per-area ratio. C: Those characteristics can vary substantially. D: This identifies the measurements needed and the difference between daytime function and residence."
+    },
+    {
+      "id": "hug-6-6-006",
+      "prompt": "How can elevators and construction technologies influence residential land use?",
+      "options": [
+        "They make land prices and building regulations irrelevant.",
+        "They can enable more usable floors on a site, but costs, demand, regulation and design affect whether that capacity is used for housing.",
+        "They require every city to have exactly the same building heights.",
+        "They guarantee that more floors always mean more affordable homes."
+      ],
+      "correctIndex": 1,
+      "explanation": "Technology can change what forms of construction and access are feasible. It interacts with land markets, rules, demand and investment rather than determining one inevitable urban form. More floor space also does not by itself establish the rent, tenure or accessibility of the homes provided. A: Financial and regulatory conditions remain relevant. B: This recognizes both the technical possibility and the other shaping conditions. C: Cities can choose and experience different development forms. D: Affordability depends on additional costs, institutions and allocation."
+    },
+    {
+      "id": "hug-6-6-007",
+      "prompt": "Older courtyard homes and newer apartment blocks coexist in one district. What is the most defensible interpretation of this landscape?",
+      "options": [
+        "Different development periods, cultural practices and capabilities can leave layers of residential form.",
+        "Every building must have been constructed in the same year.",
+        "One building style proves every resident has the same identity or income.",
+        "New construction necessarily erases every earlier cultural practice."
+      ],
+      "correctIndex": 0,
+      "explanation": "Residential landscapes can retain features from successive development cycles and cultural practices. Coexistence of forms can reveal questions about history, regulation, technology and adaptation. It does not alone identify each resident’s background or establish that social practices have disappeared. A: This allows several relevant influences and historical layers. B: The scenario explicitly contrasts older and newer forms. C: Architectural form cannot uniquely identify every household. D: Continuing practices can persist or adapt alongside physical change."
+    },
+    {
+      "id": "hug-6-6-008",
+      "prompt": "Two neighborhoods each have 40 occupied dwellings per hectare, but one uses row houses and the other small apartment buildings. What follows?",
+      "options": [
+        "The density figures must be false because only one building form can produce any given density.",
+        "Every household in both places has identical daily routines.",
+        "Both must contain the same number of residents per dwelling.",
+        "Different building arrangements can produce similar dwelling densities, while household sizes and lived conditions may still differ."
+      ],
+      "correctIndex": 3,
+      "explanation": "A density ratio summarizes units relative to area rather than one unique design. Different forms can achieve similar unit densities. Population density, private and shared space, access, occupancy and household composition need their own evidence, so equal numerical density does not imply identical neighborhoods. A: Several forms can produce the same units-per-area ratio. B: A shared density does not determine behavior. C: Household sizes were not supplied. D: This separates the aggregate ratio from design and other social measures."
+    },
+    {
+      "id": "hug-6-6-009",
+      "prompt": "A city allows housing on an underused commercial parcel within the existing urban footprint. Which evidence would best evaluate the resulting residential change?",
+      "options": [
+        "Only the new project’s advertising slogan.",
+        "An assumption that every added unit is occupied by a new city resident.",
+        "Before/after use, dwelling and resident counts, relevant area, occupancy and the timing of redevelopment.",
+        "Only a distant photograph without a date or location."
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluating land-use change requires compatible spatial and temporal records. New units may differ in occupancy or replace other uses; resident counts and area definitions help distinguish changes in stock from population density. Publicity or an unidentified image cannot establish those outcomes. A: A slogan is not a measurement of housing or population. B: Added units do not guarantee a one-to-one relation with new residents. C: These records address the actual dimensions and sequence of change. D: Missing time and location make the comparison unreliable."
+    },
+    {
+      "id": "hug-6-6-010",
+      "prompt": "A neighborhood’s average population density rises. Which additional claim is unsupported without more evidence?",
+      "options": [
+        "Every dwelling is overcrowded and every household experiences the same conditions.",
+        "The population-to-area ratio changed under the supplied definition.",
+        "Household occupancy and rooms could help investigate crowding.",
+        "The pattern may vary within the neighborhood."
+      ],
+      "correctIndex": 0,
+      "explanation": "Density and crowding are related but different measures. Population per land area does not directly count people per room or reveal every household’s access to space. Investigating overcrowding requires suitable household or dwelling information rather than a universal inference from one area average. A: This improperly converts an aggregate land ratio into an identical dwelling-level condition. B: This is what a higher measured density means, assuming comparable definitions. C: These measures are directly relevant to crowding. D: An average can conceal local differences."
+    },
+    {
+      "id": "hug-6-6-011",
+      "prompt": "Why can density patterns differ among cities even when their populations are similar?",
+      "options": [
+        "Equal population guarantees identical land area, technology and history.",
+        "Planning rules, land availability, transport, cultural preferences and development cycles can shape how residents and buildings occupy space.",
+        "Population size removes every influence of policy or the environment.",
+        "All cities must pass through the same forms at exactly the same dates."
+      ],
+      "correctIndex": 1,
+      "explanation": "Similar population totals can be distributed across different areas and built forms. Institutions, costs, mobility, land constraints, cultural choices and historical development influence that arrangement. A shared size does not establish one density, housing type or inevitable development sequence. A: Those conditions can differ despite equal headcounts. B: This identifies interacting influences consistent with the topic. C: Population does not make the other shaping conditions disappear. D: Urban development is not one synchronized universal sequence."
+    }
+  ]
+}

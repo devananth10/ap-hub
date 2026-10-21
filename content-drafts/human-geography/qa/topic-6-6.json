@@ -1,0 +1,140 @@
+{
+  "topicNumber": "6.6",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "cd64548ec863db1638a62e3f30c3f0af1a1e120097291232bba5ea1f6f82c06a",
+  "scopeReview": "IMP-6.A.1:residential forms and low/medium/high intensity, cultural/technological influences, development cycles and infill. Definitions distinguish dwelling units, residents, gross/net area, height, occupancy and crowding rather than attach universal value judgments to density.",
+  "varietyReview": "Four meaningful stimuli:unit/area accounts, original paired infill plan, changing housing mix and gross/net denominators. Checks compute20/50 units perha, preserve the unchanged edge, recalculate20%/46.7% apartments and100gross versus200/500net. Source/scale cases complete eleven.",
+  "repetitionReview": "Separate housing-stock, spatial-infill, mix-share and land-denominator tasks; added application items test equal density with different forms, height/use and crowding. No city name/number-only clone of prior geography items; varied keys and all-option reasoning, difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf"
+  ],
+  "referenceNote": "Official scope checked. Every housing count, parcel, rule change and example is original/hypothetical. No actual rent, code threshold, construction recommendation or resident identity inferred; no new resources or independent human review.",
+  "questions": [
+    {
+      "questionId": "hug-6-6-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "A:20 units/hectare; B:50 units/hectare",
+      "independentReview": "Independently computed20 and50units/ha, ratioB/A2.5. Units and residential-only area explicitly supplied; no household-size or occupancy assumption. Different from farming input intensity:the task identifies residential stock density.",
+      "check": {
+        "type": "density-dwelling-units"
+      },
+      "questionSha256": "6fe06252e4084b90f44179036d4269afb8f5a33cddee544cf53366da5341fbac",
+      "stimulusSha256": "bd11ee22819a0a0799fc134b2a10543f09fb9f17c1040837e9197ad62f6f0261"
+    },
+    {
+      "questionId": "hug-6-6-002",
+      "skill": "Spatial Relationships",
+      "difficulty": "foundational",
+      "correctOption": "Infill development within an already developed urban area.",
+      "independentReview": "Checked paired identical-size urban-edge polygons and central-lot replacement, with existing north/south buildings retained. No boundary expansion or displacement of listed residents is asserted; the parcel was explicitly vacant.",
+      "check": {
+        "type": "density-infill-parcel"
+      },
+      "questionSha256": "cc12af096b380abc8d48e9b03eb7cb7fc5540d369b2b86a5a217545703177ece",
+      "stimulusSha256": "6eb07bee482e56bbcf26f808f73c225c8d00223caf280f256f0602b42bd07c9f"
+    },
+    {
+      "questionId": "hug-6-6-003",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "It rises from 20% to about 46.7%, while the total number of dwelling units also increases.",
+      "independentReview": "Independently summed1000→1500 units; apartment shares.20 and.466666..., rounded46.7%. Counts are housing stock, not population or occupied households, and categories are mutually exclusive.",
+      "check": {
+        "type": "density-housing-mix"
+      },
+      "questionSha256": "21c3e57fa815cd4f49c2909de2ed1738af6b41eef893e5dd77d09c617ed67453",
+      "stimulusSha256": "49dca8f5d3a93dfe7383f5bebc84dd44255f650fe35c24101e507dc22283e965"
+    },
+    {
+      "questionId": "hug-6-6-004",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Both gross densities are 100 residents/hectare, but net residential densities are 200 for A and 500 for B.",
+      "independentReview": "Independently recomputed gross[100,100] andnet[200,500]. Residential areas are subsets of the10ha totals. No assumption of uniform distribution, public-space quality or an objective best density.",
+      "check": {
+        "type": "density-gross-net"
+      },
+      "questionSha256": "9bdb50049f749a7a6d33f8bbbd6940d067ef311f6321e8f300e9882dce5052cb",
+      "stimulusSha256": "57db6e75311eab21dcbd995555d0e918f062b01aa1be63fa7a7e2fbd5b6bca7b"
+    },
+    {
+      "questionId": "hug-6-6-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Building use, dwelling count, occupancy and site area differ; height alone does not count residents.",
+      "independentReview": "Avoided equating skyscrapers, crowding and residential density. No actual tower occupancy or universal height-to-person conversion invented.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "f50dfc982c431ce691739604b6fcbe389a172f9718bf5f15d1e77c9992223b43"
+    },
+    {
+      "questionId": "hug-6-6-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "They can enable more usable floors on a site, but costs, demand, regulation and design affect whether that capacity is used for housing.",
+      "independentReview": "Aligned technological capabilities in IMP-6.A.1 without engineering advice or a guaranteed affordability effect.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "c523aed0c0414af8aeedd60c9004a093cba0b91891cc9f7df38cb5a7c2e44c6b"
+    },
+    {
+      "questionId": "hug-6-6-007",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Different development periods, cultural practices and capabilities can leave layers of residential form.",
+      "independentReview": "No actual culture assigned a fixed architecture or income category. Described built-form evidence without turning it into individual demographic inference.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "04e0599ac662e91537f18bf934c1677be70d96dbfd5aae1c1ad038b1e8a524a8"
+    },
+    {
+      "questionId": "hug-6-6-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Different building arrangements can produce similar dwelling densities, while household sizes and lived conditions may still differ.",
+      "independentReview": "No numerical-only clone of the first comparison; this tests nonuniqueness of built form under an equal measured ratio.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "020c71e3d79a507c7c75ad3c2ae06ae9b68959b4adfb16fd668a6c95af800156"
+    },
+    {
+      "questionId": "hug-6-6-009",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Before/after use, dwelling and resident counts, relevant area, occupancy and the timing of redevelopment.",
+      "independentReview": "Evidence selection does not assume a specific policy effect or that all underused sites are vacant. Keeps this redevelopment case distinct from the explicitly vacant infill map.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "86063de74a0335c8fb5767de77c2521f6b3ee80ff3a909c34025efcf15d7dc97"
+    },
+    {
+      "questionId": "hug-6-6-010",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Every dwelling is overcrowded and every household experiences the same conditions.",
+      "independentReview": "Separated people/hectare from people/room without a medical or legal overcrowding threshold. No density range labeled inherently good or bad.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "98509441dde8f53048c3ee15b09089187a8c2e2d77d14f55901638e97fcef88d"
+    },
+    {
+      "questionId": "hug-6-6-011",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Planning rules, land availability, transport, cultural preferences and development cycles can shape how residents and buildings occupy space.",
+      "independentReview": "Aligned cultural, technological and development-cycle scope; no specific contemporary city density or causal estimate invented.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "02167b88b92ecf308e7f0163bd6f8e91f749e963c0a1f9ccf5a6a567665c25a6"
+    }
+  ]
+}

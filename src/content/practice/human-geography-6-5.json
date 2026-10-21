@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 6,
+  "topicId": "topic-6-5",
+  "questions": [
+    {
+      "id": "hug-6-5-001",
+      "prompt": "The diagram represents a CBD surrounded by successive transition and residential bands. Which model most directly corresponds to this idealized internal structure?",
+      "options": [
+        "Hoyt’s sector model, defined here by wedges rather than full bands.",
+        "Burgess’s concentric-zone model.",
+        "Harris and Ullman’s multiple-nuclei model, requiring several distinct activity centers in this example.",
+        "Christaller’s regional central-place hierarchy of separate settlements."
+      ],
+      "correctIndex": 1,
+      "explanation": "Burgess’s model organizes the internal city around a central business district with successive surrounding zones. The supplied transition and residential bands match that abstraction. It is a historically specific model rather than a universal map of all cities; sectors, separate nuclei and intercity service hierarchies represent different organizing ideas. A: The drawing emphasizes complete bands, not directional wedges. B: This identifies the concentric internal-city structure shown. C: The supplied drawing has one dominant center rather than several distinct nuclei. D: This concerns internal land use, not a hierarchy of separate towns and market areas."
+    },
+    {
+      "id": "hug-6-5-002",
+      "prompt": "Field records describe growth outward along directional transport and amenity corridors rather than identical full rings. Which model best fits the selected wedges?",
+      "options": [
+        "The rank-size rule for populations of different cities.",
+        "A primate-city distribution, based solely on these parcels.",
+        "A requirement that every land use form a complete circle.",
+        "Hoyt’s sector model, emphasizing direction as well as distance."
+      ],
+      "correctIndex": 3,
+      "explanation": "Hoyt’s model represents urban land uses extending in sectors from a center, influenced by routes and other directional advantages. The drawing shows selected housing and industrial wedges rather than a complete empirical city. The model does not imply that a corridor alone uniquely explains all land values or every household’s location. A: Rank-size compares city populations rather than internal wedges. B: Parcel shape does not establish dominance in a national city system. C: That contradicts the directional pattern supplied. D: This matches the sector organization and its stated corridor influence."
+    },
+    {
+      "id": "hug-6-5-003",
+      "prompt": "Distinct commercial and industrial clusters developed around different access needs, and incompatible uses did not all concentrate beside one CBD. Which model most directly addresses that pattern?",
+      "options": [
+        "Harris and Ullman’s multiple-nuclei model.",
+        "A universal requirement for one CBD and only complete concentric bands.",
+        "The national rank-size rule, which directly assigns each parcel’s land use.",
+        "A gravity index that counts only city populations and contains no land-use information."
+      ],
+      "correctIndex": 0,
+      "explanation": "The multiple-nuclei model recognizes several centers that develop different functions, influenced by attraction, incompatibility and specialized location needs. The supplied CBD, retail node and industrial area illustrate that organizing idea. Other models may also explain aspects of a real polycentric region; identifying a useful abstraction is not proving one exclusive cause. A: This fits the distinct functional centers and stated development mechanisms. B: The scenario explicitly describes more than one activity center. C: Rank-size concerns population relationships among cities, not this parcel-level pattern. D: A size/distance index alone does not identify the internal clusters described."
+    },
+    {
+      "id": "hug-6-5-004",
+      "prompt": "What is the most appropriate way to use these regional model features when analyzing an actual city?",
+      "options": [
+        "Assume every city on a continent has exactly the same arrangement.",
+        "Use the regional label to infer every resident’s income and identity.",
+        "Compare the selected historical mechanisms with local evidence and recognize that the diagrams are generalizations.",
+        "Reject all local history because one North American model must explain every city."
+      ],
+      "correctIndex": 2,
+      "explanation": "Regional urban models draw attention to histories and processes that a single universal diagram may overlook. Their features can guide questions about trade, planning, colonial legacies and local development, but must be checked against actual places. A regional prototype cannot determine every neighborhood’s form or every resident’s characteristics. A: Continents and regions contain diverse city histories and contemporary structures. B: A model label cannot identify individual circumstances. C: This treats models as contextual analytical tools rather than literal universal maps. D: Local evidence is necessary when comparing any model with an observed city."
+    },
+    {
+      "id": "hug-6-5-005",
+      "prompt": "In a Latin American city model using a commercial spine, what spatial relationship is being emphasized?",
+      "options": [
+        "A commercial axis extending from the CBD and its connection with a high-amenity residential sector.",
+        "A requirement that every commercial activity form a complete circular band.",
+        "A claim that no household can live outside the spine.",
+        "A guarantee that the model remains unchanged in every Latin American city."
+      ],
+      "correctIndex": 0,
+      "explanation": "The spine idea links an extension of central commercial activity with a related residential sector. It captures a directional feature alongside other zones and processes. Its usefulness depends on place and period; it does not require all commerce or all residents to occupy the spine or make every city conform. A: This identifies the spatial axis and related sector. B: A spine is directional rather than an entire uniform ring. C: Other residential and commercial areas remain part of an urban system. D: A historical model needs comparison with subsequent and local development."
+    },
+    {
+      "id": "hug-6-5-006",
+      "prompt": "Why can historic port activity be important when evaluating models drawn from some Southeast Asian cities?",
+      "options": [
+        "Every city in Southeast Asia must be a port with an identical plan.",
+        "A port eliminates all influence of inland transport and local institutions.",
+        "Trade routes and port-related commercial development can leave structural influences that differ from a simple inland concentric model.",
+        "A regional label proves all contemporary jobs remain in shipping."
+      ],
+      "correctIndex": 2,
+      "explanation": "Port trade and associated commercial organization can influence where business districts, transport and development occur. Such histories can help explain some urban patterns beyond a single inland-ring abstraction. They do not apply identically to every city, exclude inland relationships or freeze later urban change. A: The question concerns some historically relevant contexts rather than every city. B: Inland routes and institutions can interact with port activity. C: This identifies a conditional historical mechanism. D: Later economies can diversify and reorganize."
+    },
+    {
+      "id": "hug-6-5-007",
+      "prompt": "An African city combines older local commercial areas, colonial-era planning and newer activity centers. Which approach is most defensible?",
+      "options": [
+        "Treat the entire continent as one unchanging neighborhood map.",
+        "Use its specific historical layers and present functions when evaluating regional and other urban models.",
+        "Assume local urban history began only with colonial planning.",
+        "Infer every household’s occupation solely from a regional model title."
+      ],
+      "correctIndex": 1,
+      "explanation": "Urban structure can reflect several historical layers and ongoing changes. Local evidence helps distinguish which regional or general models explain particular patterns. Neither colonial planning nor a continental label erases earlier urban histories or determines every resident’s current circumstances. A: A continental generalization cannot replace local observation. B: This preserves historical specificity and permits several useful explanatory ideas. C: The supplied older local areas directly contradict that erasure. D: Model names do not provide individual occupational records."
+    },
+    {
+      "id": "hug-6-5-008",
+      "prompt": "A metropolitan region has several peripheral office, retail and residential nodes connected by major roadways around an older center. Which concept most directly captures this automobile-era decentralized pattern?",
+      "options": [
+        "The primate-city rule for national population dominance.",
+        "A requirement for five complete social bands around one CBD.",
+        "The rank-size formula alone, applied to individual streets.",
+        "The galactic or peripheral city model, emphasizing linked decentralized nodes."
+      ],
+      "correctIndex": 3,
+      "explanation": "The galactic/peripheral-city idea emphasizes dispersed suburban activity nodes and road connections in a decentralized metropolitan landscape. It can complement other polycentric explanations. It is not a population-ranking rule, nor a claim that every city has the same highway pattern or that the older core disappears. A: National dominance does not directly explain the internal road-linked nodes. B: The supplied arrangement is nodal rather than only complete concentric bands. C: Rank-size relates different cities’ populations rather than individual streets. D: This matches the stated decentralized metropolitan structure."
+    },
+    {
+      "id": "hug-6-5-009",
+      "prompt": "Why might centrally accessible land support taller buildings and higher commercial bids, all else equal?",
+      "options": [
+        "Centrality guarantees construction costs are zero.",
+        "All businesses earn the same revenue at every location.",
+        "Access advantages can raise potential returns, while intensive vertical use can spread high land costs over more usable floor space.",
+        "Every central site must contain the same building height regardless of regulation or demand."
+      ],
+      "correctIndex": 2,
+      "explanation": "Bid-rent reasoning links willingness to pay for land with expected returns from a location. Where accessibility raises those returns, activities may compete for expensive sites and use land more intensively. Building costs, demand, regulation and technology still shape whether height is feasible; centrality alone is not a universal prediction. A: Construction and operating expenses remain. B: Location can affect returns differently among activities. C: This connects access, land competition and floor-space intensity conditionally. D: Regulations, costs and local markets can produce varied outcomes."
+    },
+    {
+      "id": "hug-6-5-010",
+      "prompt": "A river barrier, planning history and several employment nodes produce an irregular pattern unlike any one ideal diagram. What is the best response?",
+      "options": [
+        "Combine relevant model mechanisms with local evidence rather than force every district into one perfect template.",
+        "Conclude urban geography has no useful explanatory concepts.",
+        "Move the observed river on the map until all rings become perfect.",
+        "Assume every model was intended as a literal universal forecast."
+      ],
+      "correctIndex": 0,
+      "explanation": "Models simplify different processes, such as distance, directional growth, clustering and historical organization. Real cities can combine those influences with physical barriers and policy. A mismatch with one diagram calls for examining assumptions and alternatives, rather than discarding evidence or treating every model as a universal law. A: This uses models as complementary analytical tools. B: An imperfect fit does not remove all explanatory value. C: Observations should not be altered to fit a model. D: The diagrams are abstractions with contexts and limits."
+    },
+    {
+      "id": "hug-6-5-011",
+      "prompt": "What is the main scale difference between an internal urban model and a regional central-place model?",
+      "options": [
+        "Both always describe exactly one building.",
+        "Internal models compare activities within a city; central-place reasoning examines service relationships among centers and surrounding market areas.",
+        "An internal model automatically supplies every country’s city-population ranking.",
+        "Central-place theory excludes every surrounding settlement and customer trip."
+      ],
+      "correctIndex": 1,
+      "explanation": "Internal-city models organize land uses and functions within an urban area. Central-place reasoning concerns a regional system of centers and their service catchments. The ideas can interact, but the appropriate unit of analysis and evidence differ; one diagram should not be applied at another scale without adjustment. A: Both commonly involve broader spatial systems than one building. B: This identifies the different scales and relationships. C: A parcel-level pattern does not determine a national population hierarchy. D: Relationships with surrounding demand are central to that framework."
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "topicNumber": "6.5",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "a9767647299b3b7b0aa157f83acf14681da0d353d2389322149cb33ec66cdd39",
+  "scopeReview": "PSO-6.D.1: Burgess, Hoyt, Harris/Ullman, galactic/peripheral, bid-rent and regionally contextual urban models. Explicitly evaluates strengths/limitations, historical origins, differing scales and individual-inference limits. No model made universal.",
+  "varietyReview": "Four assessed stimuli:original nested-zone polygons, selected directional sectors, distinct functional nuclei and regional model-comparison records. Geometry/function checks validate each diagram and historical features remain broad and qualified. Nonvisual applications cover spine, port context, layered African urbanism, decentralization, land costs and scale.",
+  "repetitionReview": "Concentric, directional and multi-center patterns require distinct evidence; answer options avoid two overlapping polycentric models as rival correct choices. Regional content uses contextual reasoning instead of stereotyping residents. Original diagrams and detailed options, varied keys; difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://transportgeography.org/contents/chapter8/urban-land-use-transportation/",
+    "https://transportgeography.org/contents/chapter8/urban-land-use-transportation/sector-nuclei-land-use/",
+    "https://www.jstor.org/stable/214076",
+    "https://eclass.aegean.gr/modules/document/file.php/GEO181/AstikigeografiaDialexi7.pdf"
+  ],
+  "referenceNote": "Official framework and authored academic model expositions checked; Griffin/Ford bibliographic record and indexed original-text spine description verified, journal full page not fully retrievable. Regional features remain selected historical questions, not rigid contemporary maps or fixed ethnic assignments. No published figure/question copied, no new student resources or human-review claim.",
+  "questions": [
+    {
+      "questionId": "hug-6-5-001",
+      "skill": "Spatial Relationships",
+      "difficulty": "foundational",
+      "correctOption": "Burgess’s concentric-zone model.",
+      "independentReview": "Independently checked five nested original polygons at rendered radii92.4/73.92/55.44/36.96/18.48px, one CBD and labels within intended bands. Explicit historical abstraction avoids assigning a universal socioeconomic status to actual residents.",
+      "check": {
+        "type": "structure-concentric-bands"
+      },
+      "questionSha256": "6b6e764e9562c152dd391cbc9e35103f7c2f83531471fdb507c3cdf8eb6d0377",
+      "stimulusSha256": "1402aa34f4bb911632734414ba8a6a15a0172baba20650ef5717120f5c228f5a"
+    },
+    {
+      "questionId": "hug-6-5-002",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Hoyt’s sector model, emphasizing direction as well as distance.",
+      "independentReview": "Checked two distinct apex-based sectors and a selected rail corridor from the central area. Only selected wedges are drawn, not a complete land-use inventory; no claim that transport is the sole causal factor.",
+      "check": {
+        "type": "structure-sector-wedges"
+      },
+      "questionSha256": "b7e145ab5a3beddc1920517ff1e066440e2deb59b267a9cf1a5eb0b020d432c2",
+      "stimulusSha256": "3b6ee5d39433e404108b081f4b827c0d1ad487e3a50af89e5f47834cba894665"
+    },
+    {
+      "questionId": "hug-6-5-003",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Harris and Ullman’s multiple-nuclei model.",
+      "independentReview": "Checked three separated regions with distinct CBD/retail/industrial functions. Avoided offering another overlapping polycentric model as an equally defensible alternative, and explicitly retained the possibility of complementary explanations.",
+      "check": {
+        "type": "structure-multiple-nuclei"
+      },
+      "questionSha256": "adc463de4176c682b4c47df79ad1d721831648ea7d87b7952bf4436da91a08c5",
+      "stimulusSha256": "b4028c061a985b8a24a1f9571030059c9b0d6a434935fa178fbf02bdec0e3d76"
+    },
+    {
+      "questionId": "hug-6-5-004",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Compare the selected historical mechanisms with local evidence and recognize that the diagrams are generalizations.",
+      "independentReview": "Records are explicit teaching abstractions, not claims about every present-day Latin American, Southeast Asian or African city. Exact three-CBD counts or fixed ethnic neighborhoods are deliberately not universalized; historical port/spine mechanisms are checked at broad scope.",
+      "check": {
+        "type": "structure-regional-comparison"
+      },
+      "questionSha256": "6585d9aaa4caca15eff12fa38fac0270c2c5f9b11f56235a54a5244b00fba196",
+      "stimulusSha256": "bb980f0e634b51e6388a8cd36c2430dc6262435b7ccaba262df0a3bb7165cb6a"
+    },
+    {
+      "questionId": "hug-6-5-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "A commercial axis extending from the CBD and its connection with a high-amenity residential sector.",
+      "independentReview": "Original Griffin/Ford paper terminology checked through indexed original text and bibliographic record. No copied neighborhood, full diagram, contemporary universal claim or individual-status inference.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "bb3a6a29006ff5c5b7004ecb41c200f8345d855320e7c2c2a065c8ec61a9a6fd"
+    },
+    {
+      "questionId": "hug-6-5-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Trade routes and port-related commercial development can leave structural influences that differ from a simple inland concentric model.",
+      "independentReview": "Used only broad port-city historical context corroborated by academic urban-model exposition; no fixed ethnic-quarter map or contested single universal McGee diagram asserted.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "54d17260e972d9e99103ae2a3506bffc826c89de13c674487f506153e6cdd19a"
+    },
+    {
+      "questionId": "hug-6-5-007",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Use its specific historical layers and present functions when evaluating regional and other urban models.",
+      "independentReview": "Avoided universalizing an exact count of CBDs or portraying African urbanism as beginning with colonialism. Scenario supplies the layers; no specific real-city historical claim introduced.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "383381982ee81b412427cb3c74e522398e45cf7c535903870fa81a128cb70f8d"
+    },
+    {
+      "questionId": "hug-6-5-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "The galactic or peripheral city model, emphasizing linked decentralized nodes.",
+      "independentReview": "Kept distinct from national hierarchy and avoided an ambiguous choice between two overlapping polycentric frameworks. No assertion that all travel is by private car or that all centers have equal functions.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "bd737e9104d565fa435305191e9d4c7e0fac9f39f251372c16dcdf4d32407ec7"
+    },
+    {
+      "questionId": "hug-6-5-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "Access advantages can raise potential returns, while intensive vertical use can spread high land costs over more usable floor space.",
+      "independentReview": "No unverified rent schedule, real investment advice or universal height rule. Distinguishes land price from per-unit floor-space cost and acknowledges construction constraints.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "191b79b239a6677577f17375313d47d5e9fd587b5223515cad85cc7669471884"
+    },
+    {
+      "questionId": "hug-6-5-010",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Combine relevant model mechanisms with local evidence rather than force every district into one perfect template.",
+      "independentReview": "Directly matched the official skill of evaluating model strengths and limitations in a specified context. No claim that any combination automatically explains every observation.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "acee29e08df30be4ebb1597aec8b232a9c22195441a680e93df69d5a82741680"
+    },
+    {
+      "questionId": "hug-6-5-011",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Internal models compare activities within a city; central-place reasoning examines service relationships among centers and surrounding market areas.",
+      "independentReview": "Separates6.5 internal structure from6.4 regional hierarchy without claiming the scales are entirely unrelated.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "888f71a5d914c9b2d98ba250d1e55a505b99ad75292e07655a347c30122d4497"
+    }
+  ]
+}

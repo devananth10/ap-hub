@@ -113,6 +113,18 @@ test('urban-hierarchy evidence recomputes primacy, rank-size and gravity and che
   const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
  }
 });
+test('internal-structure checks retain actual concentric radii, directional wedges and distinct functional nuclei',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-6-5.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-6-5.json','utf8'));
+ for(const [i,change] of [[0,s=>s.regions[0].polygon[0][0]=60],[1,s=>s.regions[0].polygon[1][1]=40],[2,s=>s.regions[1].polygon[0][0]=10],[3,s=>s.rows[0][1]='No commercial axis']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+test('density checks retain dwelling units, unchanged infill edge, housing totals and gross/net areas',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-6-6.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-6-6.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[1][2]='10'],[1,s=>s.regions[1].polygon[1][0]=100],[2,s=>s.series[1].values[2]=200],[3,s=>s.rows[1][3]='5']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
 const base={title:'TEST ONLY',description:'Original hypothetical test data; not a published question.',caption:'TEST ONLY',hypothetical:true,attribution:'Original PrepAtlas schematic and synthetic data'};
 const chart={...base,kind:'chart',unitLabel:'People (thousands)',categories:['A','B'],series:[{label:'Year 1',values:[25,50]},{label:'Year 2',values:[50,75]}],max:100};
 const pyramid={...base,kind:'pyramid',unitLabel:'People (thousands)',max:100,cohorts:[{label:'0–14',ageStart:0,ageEnd:14,male:50,female:50},{label:'15–64',ageStart:15,ageEnd:64,male:75,female:75},{label:'65+',ageStart:65,ageEnd:null,male:25,female:25}]};

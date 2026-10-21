@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 6.5–6.6
+
+605 original MCQs across 55 topics are published, eleven each; 220 meaningful stimuli (36.36%) and 237 explicit evidence/numerical/geometry checks. Internal-city models use original concentric, sector and multiple-nuclei abstractions and contextual regional comparisons. Density independently checks dwelling units per hectare, unchanged-boundary infill, housing mix and gross/net population densities.
+
+All 182 unit tests, structural/evidence checks, TypeScript, production build, all 68 Geography topic scopes and standard preview checks passed. Both full browser sessions scored 11/11; all eight new mobile stimuli were inspected, with keyboard zoom 200/reset 100 and desktop light-mode infill also checked. Existing 225 checkpoint question files, 212 stimuli and the complete approved catalog remain semantically unchanged. Student data and preview are preserved. Next 6.7; 13 topics/143 questions remain. Full 748-question audit and subsequent UI/summary phase remain pending. Automated review is not independent human review or empirical difficulty calibration.
+
 ## Human Geography Topics 6.3–6.4
 
 583 original MCQs across53 topics are published, eleven each;212 meaningful stimuli (36.36%) and229 explicit evidence/numerical/geometry checks. Cities/Globalization separates population from coordinating functions, organizational networks, near/far contracting and cultural connections. Size/Distribution independently checks primacy4:1, ideal rank-three4 million, gravity indices1000/500 and seven adjoining central-place hexagons. Geometry is original and verified in rendered pixel scale; it is a general threshold example, not a strict K=3 diagram.
