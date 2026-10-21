@@ -57,3 +57,13 @@ Added Chemistry 6.1–6.9, Calculus AB 6.1–6.10 plus 6.14, and Geography 6.1�
 The original accumulation/rate graph uses F(x)=x²/2−2x and F′(x)=x−2, with every sampled value checked against its formula. Mobile browser inspection confirmed the distinct curve styles, minimum (2,−2), rate zero at 2 and readable zoom dialog. The shared player and notes remain outside summary remounting. The megacity threshold and boundary-comparison distinction were checked with the [UN DESA urbanization release](https://www.un.org/en/desa/WUP-2025); no current global population figures or new student resource links were added.
 
 203 unit tests, TypeScript, production build, all 179 published summary route mappings/unavailable-topic boundaries, general smoke and complete 2,640-question preservation gate passed. No bank data, question-figure data, approved URLs or storage keys changed. The full-summary completion gate remains pending until all 240 are available.
+
+## Seventh batch: 206 cumulative summaries
+
+Added Chemistry 7.1–7.12, Calculus AB 7.1–7.4 and 7.6–7.8, and Geography 7.1–7.8. Counts 69/69/68; Geography's complete 68-topic summary inventory is now published. The remaining 34 are Chemistry Units 8–9 and Calculus Unit 8, starting 8.1 in both. All identities, reading lengths, seals and recorded numerical checks passed.
+
+Independently reviewed rate-versus-concentration equilibrium distinctions, Q/K powers, ICE balances, temperature/volume effects, Ksp/common-ion approximations, differential equation verification/separation including zero solutions, exponential notation and continuous-rate meaning, comparative opportunity costs and development denominators. Small-value checks cover Ksp values near 10⁻¹² and common-ion solubility near 10⁻⁸ without the former absolute tolerance weakness.
+
+The original field for y′=x−y has 25 independently checked slopes, bounded coordinates and a caption distinguishing tangents from trajectories. Invalid infinite slopes are rejected. Mobile browser inspection confirmed the diagonal horizontal pattern, correct signs, readable axes and keyboard zoom200. Exponent notation was clarified as e^(x²) and e^(0.040t) where nested or decimal superscripts could be ambiguous. AB7.5/7.9 remain excluded.
+
+203 unit tests, TypeScript, production build, all 206 published summary mappings/unavailable boundaries, general smoke and complete question-preservation gate passed. No question data, approved video URLs or student-storage identities changed. The final 240-summary gate remains pending for the last 34 topics.

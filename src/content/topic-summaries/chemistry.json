@@ -3178,5 +3178,665 @@
       ],
       "contentHash": "d1853afff0c3c99d2b944c3e1d0b293dfa37559f7a46c43bf0a12214c7c962a5"
     }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "equilibrium",
+    "topicNumber": "7.1",
+    "unitNumber": 7,
+    "title": "Introduction to Equilibrium",
+    "status": "published",
+    "overview": "Chemical equilibrium is a dynamic condition in which forward and reverse reaction rates balance. Macroscopic concentrations can remain steady even while individual particles continue reacting.",
+    "keyConcepts": [
+      {
+        "title": "Dynamic balance",
+        "text": "Equal forward and reverse rates produce zero net change. Equilibrium does not mean that both reactions have stopped."
+      },
+      {
+        "title": "Amounts",
+        "text": "Equilibrium concentrations need not be equal. The relationship depends on the reaction, temperature and conserved amounts."
+      },
+      {
+        "title": "Conditions",
+        "text": "A closed system can establish equilibrium when both directions remain possible under fixed conditions. A steady concentration caused by continuous inflow and outflow is not automatically equilibrium."
+      }
+    ],
+    "example": {
+      "prompt": "Two interconverting isomers A and B have equilibrium concentrations 0.800 M and 0.200 M. The forward and reverse reaction rates are both 0.020 M/s.",
+      "steps": [
+        "Equal rates mean each direction changes amounts at the same rate, giving zero net conversion.",
+        "The unequal concentrations are compatible with equilibrium because rate constants can differ."
+      ],
+      "conclusion": "Individual A and B particles still interconvert. The steady values describe a macroscopic balance, not the permanent identity of each particle."
+    },
+    "misconception": "Equal rates do not require equal concentrations or equal forward and reverse rate constants.",
+    "apTip": "Identify whether evidence concerns a rate, a concentration or net change, and distinguish a closed equilibrium from a flow-maintained steady state.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 7.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Equal .020 rates yield zero net conversion despite unequal amounts; isomer example avoids an atom-identity ambiguity in A/B placeholders.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            0.02,
+            0.02
+          ],
+          "expected": 0,
+          "evidence": "zero net conversion"
+        }
+      ],
+      "contentHash": "e18c83171ff7484b1b2ede293f18c4035ce88a193761c0b4adf0fb4a11f845ca"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-7-2",
+    "topicNumber": "7.2",
+    "unitNumber": 7,
+    "title": "Direction of Reversible Reactions",
+    "status": "published",
+    "overview": "A reversible reaction can proceed in both directions while showing a net change toward one side. The net direction at an instant reflects the difference between the forward and reverse rates.",
+    "keyConcepts": [
+      {
+        "title": "Initial conditions",
+        "text": "Starting mostly with reactants can favor forward conversion initially. As products accumulate, the reverse rate can become more important."
+      },
+      {
+        "title": "Net versus individual rates",
+        "text": "A net forward change does not mean the reverse process is absent. Both directions can occur simultaneously at unequal rates."
+      },
+      {
+        "title": "Approach to balance",
+        "text": "At equilibrium the opposing rates are equal. After a disturbance, they may differ again until the system approaches a new equilibrium under the new conditions."
+      }
+    ],
+    "example": {
+      "prompt": "At one instant for A ⇌ B, the forward rate is 0.040 M/s and the reverse rate is 0.010 M/s. Interpret the net behavior.",
+      "steps": [
+        "Subtract reverse from forward: the net forward rate is 0.030 M/s.",
+        "A is being converted to B overall, even though B is also converting back to A."
+      ],
+      "conclusion": "If both rates later become 0.020 M/s, net conversion becomes zero. Their common equilibrium rate need not equal either of the earlier rates."
+    },
+    "misconception": "A reaction moving toward equilibrium does not have to proceed exclusively in one direction.",
+    "apTip": "Compare opposing rates using a consistent stoichiometric convention and explain the net result separately from the continuing molecular events.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 7.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Rate difference .030 and later zero independently checked; no assumption that the common final rate equals an initial directional rate.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            0.04,
+            0.01
+          ],
+          "expected": 0.03,
+          "evidence": "0.030 M/s"
+        }
+      ],
+      "contentHash": "df780f6be90a98d590a10f99d1f9cbb8ada1406e31a73e52ec7eda98273b820e"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-7-3",
+    "topicNumber": "7.3",
+    "unitNumber": 7,
+    "title": "Reaction Quotient and Equilibrium Constant",
+    "status": "published",
+    "overview": "The reaction quotient Q describes the current composition through a reaction-specific expression. Comparing it with the equilibrium constant K predicts the thermodynamically favored net direction at the same temperature.",
+    "keyConcepts": [
+      {
+        "title": "Expression",
+        "text": "Use product activities over reactant activities, raised to balanced coefficients. AP concentration forms use the corresponding concentration terms; pure solids and liquids are omitted."
+      },
+      {
+        "title": "Comparison",
+        "text": "Q < K favors net forward change, Q > K favors net reverse change and Q = K describes equilibrium composition."
+      },
+      {
+        "title": "Temperature",
+        "text": "K belongs to the stated reaction and temperature. Q can change as concentrations change, even while K remains fixed."
+      }
+    ],
+    "example": {
+      "prompt": "For N₂ + 3H₂ ⇌ 2NH₃, use current concentrations 0.500 M N₂, 0.200 M H₂ and 0.100 M NH₃. Suppose Kc = 10.",
+      "steps": [
+        "Qc = [NH₃]²/([N₂][H₂]³) = 0.0100/(0.500 × 0.00800) = 2.50.",
+        "Because 2.50 < 10, the composition favors net formation of ammonia."
+      ],
+      "conclusion": "This predicts direction, not how rapidly equilibrium is reached or the exact final concentrations."
+    },
+    "misconception": "Initial or momentary concentrations belong in Q; they do not automatically define K unless equilibrium is established.",
+    "apTip": "Balance the equation, write the expression and compare numerical values at the same temperature before discussing a shift.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 7.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Concentration powers and quotient independently recomputed; standard concentration convention and direction versus kinetics distinction explicit.",
+      "checks": [
+        {
+          "operation": "power",
+          "operands": [
+            0.2,
+            3
+          ],
+          "expected": 0.008,
+          "evidence": "0.00800"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            0.01,
+            0.004
+          ],
+          "expected": 2.5,
+          "evidence": "2.50"
+        }
+      ],
+      "contentHash": "dfe385b5f0a6d4bd6ab610ad84b3cc5a3ff1c7629fe9a762f61b95e775217655"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-7-4",
+    "topicNumber": "7.4",
+    "unitNumber": 7,
+    "title": "Calculating the Equilibrium Constant",
+    "status": "published",
+    "overview": "Calculate an equilibrium constant from equilibrium composition using the expression for the balanced reaction. The timing and physical states of the data are as important as the numerical substitution.",
+    "keyConcepts": [
+      {
+        "title": "Equilibrium data",
+        "text": "Only concentrations or partial pressures describing equilibrium can directly determine K through the appropriate expression. Initial values generally require additional analysis."
+      },
+      {
+        "title": "Coefficients and phases",
+        "text": "Raise each included term to its stoichiometric coefficient. Pure solids and liquids have constant activity and do not appear as variable concentration terms."
+      },
+      {
+        "title": "Consistent form",
+        "text": "Use a concentration expression with concentration data or a pressure expression with the corresponding gas data. Keep the reaction direction and temperature fixed."
+      }
+    ],
+    "example": {
+      "prompt": "For A₂(g) ⇌ 2A(g), equilibrium concentrations are [A₂] = 0.200 M and [A] = 0.100 M. Find Kc.",
+      "steps": [
+        "The expression is Kc = [A]²/[A₂].",
+        "Substitute equilibrium values: 0.100²/0.200 = 0.0500 using the standard concentration convention."
+      ],
+      "conclusion": "The square reflects the coefficient two. Using 0.100/0.200 instead would evaluate a different expression and give an incorrect constant."
+    },
+    "misconception": "Changing the amount of a pure solid does not directly insert a new concentration factor into K, provided the relevant phase remains present.",
+    "apTip": "Label the data as equilibrium values and inspect each exponent and state before calculating.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 7.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Exponent and quotient independently checked; phase omission qualified by continued presence of the relevant pure phase.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            0.01,
+            0.2
+          ],
+          "expected": 0.05,
+          "evidence": "0.0500"
+        }
+      ],
+      "contentHash": "cb200943e3c76e3551ff215731d5ac417349ab9f36300d29f4710af1d15c33dc"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-7-5",
+    "topicNumber": "7.5",
+    "unitNumber": 7,
+    "title": "Magnitude of the Equilibrium Constant",
+    "status": "published",
+    "overview": "The magnitude of K describes the balance of product and reactant activities at equilibrium for a particular written reaction. It does not directly measure reaction speed or guarantee complete conversion.",
+    "keyConcepts": [
+      {
+        "title": "Large and small",
+        "text": "A large K favors the product side of the expression; a small K favors reactants. Stoichiometric powers and the starting material balance still matter for actual concentrations."
+      },
+      {
+        "title": "Equilibrium versus rate",
+        "text": "K does not specify activation barriers or how long equilibration takes. A product-favored reaction can still be slow."
+      },
+      {
+        "title": "Extent",
+        "text": "Even a large finite K can leave measurable reactant. Use a material balance rather than assuming every reactant particle disappears."
+      }
+    ],
+    "example": {
+      "prompt": "For interconverting isomers A ⇌ B, let Kc = [B]/[A] = 100 and the conserved total [A] + [B] = 1.00 M.",
+      "steps": [
+        "Substitute [B] = 100[A] into the total: 101[A] = 1.00.",
+        "Thus [A] ≈ 0.00990 M and [B] ≈ 0.990 M."
+      ],
+      "conclusion": "The product is strongly favored, but the equilibrium still contains reactant. The concentration ratio, not equal amounts, matches K."
+    },
+    "misconception": "A large equilibrium constant is not a large rate constant. Their meanings and possible units or conventions differ.",
+    "apTip": "Explain what the expression’s ratio indicates, then use stoichiometry and conserved totals for quantitative amounts.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 7.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent total-and-ratio solution gives1/101 and100/101; rounded amounts consistent with K100 and nonzero reactant.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            1,
+            101
+          ],
+          "expected": 0.009900990099009901,
+          "evidence": "0.00990 M"
+        }
+      ],
+      "contentHash": "ef23948f250f726c3d00625c0db4522c8c583f0c609e7266b4c684101ee3cea5"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-7-6",
+    "topicNumber": "7.6",
+    "unitNumber": 7,
+    "title": "Properties of the Equilibrium Constant",
+    "status": "published",
+    "overview": "An equilibrium constant is tied to an equation’s direction and coefficient scale. When an equation is reversed, multiplied or combined, transform K consistently rather than treating it like a reaction enthalpy.",
+    "keyConcepts": [
+      {
+        "title": "Reverse",
+        "text": "Reversing the reaction inverts the quotient, so the new constant is 1/K. It does not change K to a negative number."
+      },
+      {
+        "title": "Scale",
+        "text": "Multiplying every coefficient by a factor raises K to that power. Doubling coefficients gives K² rather than 2K."
+      },
+      {
+        "title": "Combine",
+        "text": "Adding compatible reactions multiplies their constants after any required reversals or scaling. All values must correspond to the same temperature and appropriate states."
+      }
+    ],
+    "example": {
+      "prompt": "At one temperature, A ⇌ B has K₁ = 4 and B ⇌ C has K₂ = 3. Determine constants for selected equations.",
+      "steps": [
+        "For A ⇌ C, adding the reactions gives K = 4 × 3 = 12.",
+        "For B ⇌ A, reversing the first gives K = 1/4."
+      ],
+      "conclusion": "For 2A ⇌ 2B, doubling the first gives K = 4² = 16. These transformations follow the algebra of the activity expressions."
+    },
+    "misconception": "Do not add equilibrium constants when adding equations, or multiply K by two when doubling coefficients.",
+    "apTip": "Build the desired net equation first, then apply the matching inverse, power or product operation to the constants.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 7.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent quotient algebra verifies12,.25,16; temperature/state compatibility explicitly required.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            4,
+            3
+          ],
+          "expected": 12,
+          "evidence": "= 12"
+        },
+        {
+          "operation": "power",
+          "operands": [
+            4,
+            2
+          ],
+          "expected": 16,
+          "evidence": "= 16"
+        }
+      ],
+      "contentHash": "16fda0523583707ba64ce09cd4fdeb4a232b2d7cb9eba06afe39cae11a864e23"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-7-7",
+    "topicNumber": "7.7",
+    "unitNumber": 7,
+    "title": "Calculating Equilibrium Concentrations",
+    "status": "published",
+    "overview": "Equilibrium concentrations follow from both the equilibrium expression and conservation. An initial–change–equilibrium table organizes the stoichiometric changes without assuming that initial and final values are interchangeable.",
+    "keyConcepts": [
+      {
+        "title": "Change variable",
+        "text": "Define a reaction change x with concentration changes proportional to balanced coefficients. Choose its sign to match the expected net direction."
+      },
+      {
+        "title": "Solve and screen",
+        "text": "Substitute final expressions into K and solve. Reject roots that give negative amounts or exceed the available material."
+      },
+      {
+        "title": "Approximation",
+        "text": "Neglecting a small change can simplify algebra, but the resulting value must be checked against the approximation and original expression."
+      }
+    ],
+    "example": {
+      "prompt": "For isomers A ⇌ B, initially [A] = 1.00 M and [B] = 0. Let Kc = 4. Find final concentrations at fixed volume.",
+      "steps": [
+        "Write [A]eq = 1.00 − x and [B]eq = x.",
+        "Then x/(1.00 − x) = 4, giving x = 0.800 M."
+      ],
+      "conclusion": "The final values are 0.200 M A and 0.800 M B. Their sum remains 1.00 M and their ratio is four, checking both conservation and equilibrium."
+    },
+    "misconception": "The reaction change x is not automatically the concentration of every species. Coefficients determine each species’ change.",
+    "apTip": "Check the final values in K and in the material balance. A mathematically valid root can still be chemically impossible.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 7.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent linear solution and substitution verify ratio4 and total1; isomer setup supports conserved one-to-one total.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            0.8,
+            0.2
+          ],
+          "expected": 4,
+          "evidence": "ratio is four"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            0.2,
+            0.8
+          ],
+          "expected": 1,
+          "evidence": "1.00 M"
+        }
+      ],
+      "contentHash": "12623df037dba2aa27bc66310a91deddfb97cc374fe809597bb78c39a59d034a"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-7-8",
+    "topicNumber": "7.8",
+    "unitNumber": 7,
+    "title": "Representations of Equilibrium",
+    "status": "published",
+    "overview": "Equilibrium representations connect particle counts, macroscopic composition and continuing molecular events. A diagram’s key and represented volume determine what can be inferred quantitatively.",
+    "keyConcepts": [
+      {
+        "title": "Counts and ratios",
+        "text": "Count each molecular or ionic species using the legend. Equal-volume diagrams can compare concentrations through particle counts, but different volumes require normalization."
+      },
+      {
+        "title": "Conservation",
+        "text": "Check the total atoms and charge before and after a change. Species counts can differ because particles may combine or dissociate."
+      },
+      {
+        "title": "Evidence of equilibrium",
+        "text": "Stable composition is compatible with equal forward and reverse rates, but two similar snapshots alone do not prove those rates or establish that no reaction occurs."
+      }
+    ],
+    "example": {
+      "prompt": "For A₂ ⇌ 2A, a schematic snapshot contains three A₂ molecules and four A atoms. A later equal-volume snapshot has the same counts.",
+      "steps": [
+        "Both snapshots represent ten A atoms in total: two per A₂ plus four separate atoms.",
+        "The matching counts show unchanged represented composition, not necessarily unchanged identities of individual particles."
+      ],
+      "conclusion": "If independent evidence establishes equal opposing rates, the diagrams are consistent with dynamic equilibrium. Without it, a stalled system could also have stable counts."
+    },
+    "misconception": "A static diagram cannot directly display how many molecular reaction events occur per second.",
+    "apTip": "Use counts to discuss composition and conservation, and use appropriate rate evidence to support a dynamic-equilibrium claim.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 7.8; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Atom total2*3+4=10 independently checked; snapshot equality not treated as sufficient proof of equilibrium or stopped reactions.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            6,
+            4
+          ],
+          "expected": 10,
+          "evidence": "ten A atoms"
+        }
+      ],
+      "contentHash": "298d249bec892aa14ced871c64a1270f0dac541cb438f1f529bf077c9e112a5d"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-7-9",
+    "topicNumber": "7.9",
+    "unitNumber": 7,
+    "title": "Introduction to Le Châtelier’s Principle",
+    "status": "published",
+    "overview": "Le Châtelier’s principle qualitatively predicts how an equilibrium composition responds to a disturbance. Identify the actual change and keep temperature effects on K separate from concentration or volume effects on composition.",
+    "keyConcepts": [
+      {
+        "title": "Concentration",
+        "text": "Adding or removing a participating species can favor net change that partially counteracts the disturbance. This does not necessarily restore every original concentration."
+      },
+      {
+        "title": "Gas volume",
+        "text": "Compression at fixed temperature can favor the side with fewer gas particles. Merely raising total pressure by adding inert gas at fixed volume need not change reacting partial pressures."
+      },
+      {
+        "title": "Temperature",
+        "text": "Heating favors the endothermic direction and changes K. A catalyst affects rates but does not shift equilibrium at the same temperature."
+      }
+    ],
+    "example": {
+      "prompt": "Consider an endothermic gas dissociation A₂(g) ⇌ 2A(g). Compare heating with compression at fixed temperature.",
+      "steps": [
+        "Heating favors dissociation toward A and increases K for this written endothermic reaction.",
+        "Compression favors association toward A₂ because that side has fewer gas particles, while K stays fixed at unchanged temperature."
+      ],
+      "conclusion": "These disturbances act through different mechanisms and need not favor the same direction."
+    },
+    "misconception": "A pressure statement is incomplete without knowing whether volume, temperature or an inert-gas amount changed.",
+    "apTip": "Specify the disturbance, count relevant gas coefficients and state whether K itself changes or only the composition responds.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 7.9; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Endothermic temperature direction and one-versus-two gas coefficient comparison independently checked; inert fixed-volume and catalyst exceptions explicit.",
+      "checks": [],
+      "contentHash": "9567998f67af49908ada98c82f8b163c04faf2e9866f34f2471737bc034ba059"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-7-10",
+    "topicNumber": "7.10",
+    "unitNumber": 7,
+    "title": "Reaction Quotient and Le Châtelier’s Principle",
+    "status": "published",
+    "overview": "Reaction-quotient reasoning gives a quantitative foundation for equilibrium shifts. Distinguish the immediate concentration change caused by a disturbance from the later reaction that moves Q toward the new or unchanged K.",
+    "keyConcepts": [
+      {
+        "title": "Immediate response",
+        "text": "A sudden volume change alters concentrations before substantial reaction occurs. Recalculate Q from those immediate values rather than jumping directly to final equilibrium."
+      },
+      {
+        "title": "Compare with K",
+        "text": "At unchanged temperature, K is unchanged. Q > K favors reverse reaction, while Q < K favors forward reaction."
+      },
+      {
+        "title": "Partial adjustment",
+        "text": "The reaction changes composition until equilibrium is approached again. It does not generally undo every effect of the original disturbance."
+      }
+    ],
+    "example": {
+      "prompt": "An equilibrium A₂(g) ⇌ 2A(g) is compressed to half its volume at constant temperature. Determine the initial quotient change.",
+      "steps": [
+        "Both species’ concentrations double. The numerator [A]² increases fourfold, while denominator [A₂] doubles.",
+        "Thus Qnew = 2Qold = 2K, so Qnew > K."
+      ],
+      "conclusion": "Net association toward A₂ follows, consistent with the fewer-gas-particles prediction. The factor two describes the immediate quotient, not the final concentration change."
+    },
+    "misconception": "K does not double simply because Q doubles. Temperature and reaction definition determine K.",
+    "apTip": "Apply concentration multipliers to every term and exponent, compare with K and label which stage of the disturbance you are describing.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 7.10; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent concentration-power ratio4/2=2 checked; immediate Q shift separated from re-equilibration and unchanged K.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            4,
+            2
+          ],
+          "expected": 2,
+          "evidence": "2K"
+        }
+      ],
+      "contentHash": "c826f8e9c8b3c8c7692726feba903566dcbe3f50da589f5b71e0d622d08a2c7f"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-7-11",
+    "topicNumber": "7.11",
+    "unitNumber": 7,
+    "title": "Introduction to Solubility Equilibria",
+    "status": "published",
+    "overview": "A solubility equilibrium relates an ionic solid to its dissolved ions. The solubility product uses ion activities or the corresponding AP concentration expression, omitting the pure solid.",
+    "keyConcepts": [
+      {
+        "title": "Expression",
+        "text": "For CaF₂(s) ⇌ Ca²⁺ + 2F⁻, Ksp = [Ca²⁺][F⁻]². Stoichiometric exponents are essential."
+      },
+      {
+        "title": "Molar solubility",
+        "text": "In pure water under the simplified model, dissolving s mol/L gives [Ca²⁺] = s and [F⁻] = 2s. Ksp is therefore 4s³, not s²."
+      },
+      {
+        "title": "Saturation",
+        "text": "Compare the current ion product with Ksp. Above Ksp, precipitation is thermodynamically favored; actual observed timing can also involve kinetic factors."
+      }
+    ],
+    "example": {
+      "prompt": "Suppose Ksp for CaF₂ is 4.00 × 10⁻¹² at the stated temperature. Find molar solubility in pure water, ignoring other equilibria.",
+      "steps": [
+        "Set 4s³ = 4.00 × 10⁻¹², so s³ = 1.00 × 10⁻¹².",
+        "The positive cube root gives s = 1.00 × 10⁻⁴ M. Fluoride concentration is 2.00 × 10⁻⁴ M."
+      ],
+      "conclusion": "Substituting s(2s)² returns the supplied Ksp, checking the stoichiometric relationship."
+    },
+    "misconception": "Ksp is not numerically identical to molar solubility. Different ion stoichiometries require different algebra.",
+    "apTip": "Write the dissolution equation and all ion concentrations before solving, and state any simplifying assumptions.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 7.11; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Cube-root solution and reverse substitution independently checked; ion stoichiometry and pure-water/other-equilibria assumptions explicit.",
+      "checks": [
+        {
+          "operation": "power",
+          "operands": [
+            1e-12,
+            0.3333333333333333
+          ],
+          "expected": 0.0001,
+          "evidence": "1.00 × 10⁻⁴ M"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            0.0001,
+            0.0002,
+            0.0002
+          ],
+          "expected": 4e-12,
+          "evidence": "4.00 × 10⁻¹²"
+        }
+      ],
+      "contentHash": "6c13e8560a7ff5d1113af7e1f49d84a1e5b7087f14237805c260c0e4e9127634"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-7-12",
+    "topicNumber": "7.12",
+    "unitNumber": 7,
+    "title": "Common-Ion Effect",
+    "status": "published",
+    "overview": "A common ion changes solubility-equilibrium composition by adding an ion already present in the dissolution expression. At fixed temperature, Ksp remains the same while the compatible ion concentrations adjust.",
+    "keyConcepts": [
+      {
+        "title": "Shared ion",
+        "text": "Adding a soluble source of one dissolution product can suppress further dissolution under the simple common-ion model. It does not make solubility exactly zero."
+      },
+      {
+        "title": "Approximation",
+        "text": "If added ion concentration greatly exceeds the small additional amount from dissolution, it can sometimes be treated as approximately constant. Check that assumption afterward."
+      },
+      {
+        "title": "Limits",
+        "text": "Other acid–base reactions, complex formation or activity effects can alter the simple prediction. State when they are neglected."
+      }
+    ],
+    "example": {
+      "prompt": "For CaF₂ with Ksp = 4.00 × 10⁻¹², estimate molar solubility in 0.0100 M fluoride, neglecting other equilibria.",
+      "steps": [
+        "Use [Ca²⁺] = s and [F⁻] ≈ 0.0100 M. Then s(0.0100)² = 4.00 × 10⁻¹².",
+        "The estimate is s = 4.00 × 10⁻⁸ M. Dissolution adds only 2s = 8.00 × 10⁻⁸ M fluoride, negligible relative to 0.0100 M."
+      ],
+      "conclusion": "The suppressed solubility is consistent with the unchanged Ksp and larger fluoride concentration."
+    },
+    "misconception": "A common ion changes the equilibrium position, not Ksp at the same temperature.",
+    "apTip": "Include pre-existing ion amounts in the equilibrium table and verify every neglected change against the concentration it was neglected beside.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 7.12; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent division gives4e-8M; added fluoride8e-8M is tiny relative .01M. Ksp and approximation validity checked.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            4e-12,
+            0.0001
+          ],
+          "expected": 4e-8,
+          "evidence": "4.00 × 10⁻⁸ M"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            2,
+            4e-8
+          ],
+          "expected": 8e-8,
+          "evidence": "8.00 × 10⁻⁸ M"
+        }
+      ],
+      "contentHash": "ec5998fcc7533e77bd48e654ae8b24a2a9b0771a4c67a4ec33143b7481e1606d"
+    }
   }
 ]

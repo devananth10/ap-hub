@@ -3069,5 +3069,416 @@
       "checks": [],
       "contentHash": "a101b7d55edb8a191ebe4df1c7a46c048e3c83908c40c3a9a1aeb4bdadcbd567"
     }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-7-1",
+    "topicNumber": "7.1",
+    "unitNumber": 7,
+    "title": "The Industrial Revolution",
+    "status": "published",
+    "overview": "The Industrial Revolution transformed production through mechanization, concentrated workplaces and new energy and transport systems. Its spread changed urbanization, labor relationships and the geography of resource use.",
+    "keyConcepts": [
+      {
+        "title": "Production change",
+        "text": "Machines and factory organization increased some forms of output and specialization. Effects depended on skills, capital, institutions and market connections."
+      },
+      {
+        "title": "Location",
+        "text": "Coal, water power, raw materials, labor and transport influenced early industrial locations. New technologies could change which location factors mattered most."
+      },
+      {
+        "title": "Consequences",
+        "text": "Industrialization could expand employment and incomes while also producing dangerous work, pollution and uneven regional benefits. It was not a uniform improvement experienced identically by everyone."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional early factory locates near coal supplies and a canal, then later production expands along a railway network.",
+      "steps": [
+        "Energy access and bulk transport help explain the initial site.",
+        "The railway changes connectivity and can make additional locations competitive without erasing every earlier advantage."
+      ],
+      "conclusion": "The example shows historically changing location conditions, not a rule that factories always belong beside a coalfield. Labor, capital and demand still matter."
+    },
+    "misconception": "Industrialization is not simply the presence of one machine. It involves linked changes in production organization, energy, labor and settlement.",
+    "apTip": "Connect a technology or institutional change to a specific spatial or social consequence, and distinguish a plausible mechanism from a universal historical pathway.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 7.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Energy/transport mechanisms and changing constraints reviewed; no claim that one resource alone determines industrialization or universal welfare effects.",
+      "checks": [],
+      "contentHash": "2d8d092822fd0eb4ac866cda573c4a34a1e37cc4f7d1a7b8be09684bad36d6a8"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-7-2",
+    "topicNumber": "7.2",
+    "unitNumber": 7,
+    "title": "Economic Sectors and Patterns",
+    "status": "published",
+    "overview": "Economic sectors classify activities by their role in production and services. Sector shares can show structural patterns, but classifications and employment quality vary across datasets and places.",
+    "keyConcepts": [
+      {
+        "title": "Primary and secondary",
+        "text": "Primary activities obtain resources, such as farming, fishing or mining. Secondary activities transform materials through manufacturing or construction."
+      },
+      {
+        "title": "Services",
+        "text": "Tertiary activities provide services. Some schemes distinguish information and research as quaternary and high-level decision-making as quinary within a more detailed service classification."
+      },
+      {
+        "title": "Interpretation",
+        "text": "A rising service share can accompany economic change, but it does not prove every service job is highly paid or that industrial output has declined."
+      }
+    ],
+    "example": {
+      "prompt": "Trace a hypothetical timber chain from logging through a sawmill to delivery and research.",
+      "steps": [
+        "Logging is primary resource extraction; converting logs into boards is secondary processing.",
+        "Transport and sales are services. A research laboratory may be classified as quaternary under the stated scheme."
+      ],
+      "conclusion": "The chain links sectors rather than describing isolated economies. Compare the same definitions when using sector percentages across countries or years."
+    },
+    "misconception": "A lower manufacturing employment share does not automatically mean less manufactured output; productivity or growth in other sectors can change the share.",
+    "apTip": "Classify the activity actually performed, then distinguish employment share, output share and job conditions before drawing a development conclusion.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 7.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Extraction versus transformation and service subcategories reviewed; denominator and productivity caveats prevent false inference from sector share alone.",
+      "checks": [],
+      "contentHash": "d11db3f65fa5b012fb325cea566cd67a284662eb50ac0d6da9452371a9d41619"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-7-3",
+    "topicNumber": "7.3",
+    "unitNumber": 7,
+    "title": "Measures of Development",
+    "status": "published",
+    "overview": "Development measures describe different aspects of economic and human well-being. Compare the quantity, population denominator, purchasing power and distribution before ranking places by one indicator.",
+    "keyConcepts": [
+      {
+        "title": "Economic measures",
+        "text": "GDP measures production within an economy, while GNI concerns income accruing to residents, including the relevant net income from abroad. Neither is a complete measure of well-being."
+      },
+      {
+        "title": "Per capita and purchasing power",
+        "text": "Divide a total by population for a per-person mean. Purchasing-power comparisons address price-level differences, while a mean still does not show inequality."
+      },
+      {
+        "title": "Human indicators",
+        "text": "Health, education and composite measures such as HDI add dimensions beyond income. Different indicators can reveal different strengths and disadvantages."
+      }
+    ],
+    "example": {
+      "prompt": "Fictional economies A and B have output of 200 and 100 billion in the same currency and year, with populations of 20 and 5 million.",
+      "steps": [
+        "A’s output per person is 10,000; B’s is 20,000.",
+        "B has a smaller total economy but a higher per-capita figure."
+      ],
+      "conclusion": "The calculation does not establish that every B resident is wealthier or that B has better outcomes on all health, education or equality measures."
+    },
+    "misconception": "A per-capita mean is not the income of a typical individual and does not reveal the distribution within a country.",
+    "apTip": "Use more than one relevant measure and state what each can establish, including its units, date and denominator.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 7.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Both per-capita quotients independently checked; resident-income versus territorial-production distinction and inequality limits retained.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            200000000000,
+            20000000
+          ],
+          "expected": 10000,
+          "evidence": "10,000"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            100000000000,
+            5000000
+          ],
+          "expected": 20000,
+          "evidence": "20,000"
+        }
+      ],
+      "contentHash": "2679ea9c58ac832f3084d7962a3a57fff42a6b09c510f73ed54d4460190f1b82"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-7-4",
+    "topicNumber": "7.4",
+    "unitNumber": 7,
+    "title": "Women and Economic Development",
+    "status": "published",
+    "overview": "Women’s economic participation and development are connected through access to education, health, employment, resources and decision-making. Evaluate the institutions and measures involved rather than treating participation as a single universal experience.",
+    "keyConcepts": [
+      {
+        "title": "Access and opportunity",
+        "text": "Schooling, credit, legal rights, childcare and workplace conditions can affect entry, earnings and advancement. Barriers vary across places and social groups."
+      },
+      {
+        "title": "Unpaid work",
+        "text": "Care work, household production and informal activity may be excluded from some employment or income measures despite their economic importance."
+      },
+      {
+        "title": "Indicators",
+        "text": "Gender measures can examine health, empowerment and economic participation, but different indices use different components. Disaggregated evidence is needed to understand a particular inequality."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional region reports rising paid employment among women while unpaid care responsibilities remain unequal and managerial representation stays low.",
+      "steps": [
+        "The paid-work trend describes one change, not the removal of every barrier.",
+        "Care responsibilities and access to advancement help explain why participation and control can differ."
+      ],
+      "conclusion": "Evaluation should compare earnings, hours, job conditions, resources and decision-making alongside the headline employment share."
+    },
+    "misconception": "More recorded work does not automatically mean greater autonomy or equal benefits, and low recorded employment can hide unpaid contributions.",
+    "apTip": "Connect a specific access barrier to an observed outcome and identify which indicator or additional evidence would test the explanation.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 7.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Participation, unpaid work and decision-making separated; no essentialist ability claim or assertion that a single indicator captures all inequalities.",
+      "checks": [],
+      "contentHash": "5a8187a6d8a798bbcec0a2ba2a7bbffff3b7c0ee4d8ba85d23103a0564df05a3"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-7-5",
+    "topicNumber": "7.5",
+    "unitNumber": 7,
+    "title": "Theories of Development",
+    "status": "published",
+    "overview": "Development theories explain patterns through different assumptions about change, institutions and global relationships. Use them as analytical models and examine their limits rather than treating one sequence as an inevitable future.",
+    "keyConcepts": [
+      {
+        "title": "Stages approaches",
+        "text": "Rostow’s model describes a progression toward industrial and consumption stages. Critiques question its linearity and how well one historical pathway fits diverse places."
+      },
+      {
+        "title": "Dependency",
+        "text": "Dependency approaches emphasize unequal external relationships that can constrain local development, including control over finance, production or trade."
+      },
+      {
+        "title": "World systems",
+        "text": "Core, semiperipheral and peripheral roles describe positions in a global division of labor and power. They are not simply permanent labels assigned from one income statistic."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional region exports raw materials while outside firms control most processing and financing.",
+      "steps": [
+        "A dependency interpretation would examine how bargaining power and external control affect local options and value capture.",
+        "A stages approach might instead emphasize structural changes needed for industrial transformation."
+      ],
+      "conclusion": "Neither description alone proves a fixed destiny; evidence about institutions, technology, ownership and policy is needed to evaluate the models."
+    },
+    "misconception": "Exporting one raw commodity is not enough to classify an entire economy’s global position or predict that development is impossible.",
+    "apTip": "State a model’s mechanism, connect it to specific evidence and identify an assumption or limitation when comparing interpretations.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 7.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Stage, dependency and world-system perspectives distinguished; roles not inferred from a single commodity or treated as biologically/geographically fixed.",
+      "checks": [],
+      "contentHash": "77367902f6374e31d5292faa605ab7eaf8b12e4b18708b776142c63ef0a19378"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-7-6",
+    "topicNumber": "7.6",
+    "unitNumber": 7,
+    "title": "Trade and the World Economy",
+    "status": "published",
+    "overview": "Trade connects economies through specialization, exchange and institutions. Comparative advantage concerns opportunity cost, while transport, policies and bargaining power shape how potential gains are distributed.",
+    "keyConcepts": [
+      {
+        "title": "Opportunity cost",
+        "text": "A producer has comparative advantage in the activity requiring less forgone alternative output. This differs from producing more output with the same resources."
+      },
+      {
+        "title": "Rules and connections",
+        "text": "Tariffs, quotas, trade agreements, logistics and standards can alter flows and location choices. A lower barrier does not guarantee equal outcomes for every group."
+      },
+      {
+        "title": "Distribution",
+        "text": "Trade can expand choices and output while affecting workers, sectors and places differently. Examine the particular chain and time period."
+      }
+    ],
+    "example": {
+      "prompt": "In one worker-day, fictional A can produce 12 grain units or 6 cloth units; B can produce 4 grain or 4 cloth units.",
+      "steps": [
+        "One cloth costs A two grain units but B only one. B has comparative advantage in cloth.",
+        "One grain costs A half a cloth unit, versus one in B, so A has comparative advantage in grain."
+      ],
+      "conclusion": "A has greater absolute output capacity in both goods, yet opportunity costs still support different comparative advantages."
+    },
+    "misconception": "Absolute productivity and comparative advantage are not the same measure. Compare forgone alternatives, not just the largest output number.",
+    "apTip": "Keep resource and time bases equal, calculate both opportunity costs and separate potential total gains from their actual distribution.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 7.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Four opportunity costs independently checked under equal worker-day basis; A absolute advantage in both correctly coexists with B comparative cloth advantage.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            12,
+            6
+          ],
+          "expected": 2,
+          "evidence": "two grain"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            4,
+            4
+          ],
+          "expected": 1,
+          "evidence": "only one"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            6,
+            12
+          ],
+          "expected": 0.5,
+          "evidence": "half a cloth"
+        }
+      ],
+      "contentHash": "1f8c54e4ea3edbad913c9713f3f8ca56c7c0181032e425e3ba56cd8223c3115f"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-7-7",
+    "topicNumber": "7.7",
+    "unitNumber": 7,
+    "title": "Changes as a Result of the World Economy",
+    "status": "published",
+    "overview": "The world economy changes production locations, employment structures and connections among firms. Distinguish relocation, contracting and productivity effects before explaining a local economic shift.",
+    "keyConcepts": [
+      {
+        "title": "Offshoring and outsourcing",
+        "text": "Offshoring moves activity to another country; outsourcing contracts activity to another organization. A decision can involve either, both or neither."
+      },
+      {
+        "title": "Industrial change",
+        "text": "Manufacturing employment can decline while output remains stable or rises through productivity gains. Deindustrialization measures require clear definitions and spatial scale."
+      },
+      {
+        "title": "Clustering and dispersion",
+        "text": "Agglomeration can provide suppliers, knowledge and specialized labor, while congestion or costs can encourage dispersion. Global chains combine these location pressures."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional firm retains its domestic headquarters but opens a wholly owned factory abroad.",
+      "steps": [
+        "The move is offshoring because production crosses a national boundary.",
+        "It is not necessarily outsourcing because the firm still owns the factory rather than contracting production to an outside company."
+      ],
+      "conclusion": "To assess domestic effects, examine jobs, output, supplier relationships and adjustment over time rather than assuming one uniform national outcome."
+    },
+    "misconception": "A company’s international move does not by itself identify who owns production, why it moved or whether total output fell.",
+    "apTip": "Trace ownership and location separately, then connect a documented change to specific workers, firms or regions.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 7.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Wholly owned foreign production classified as offshoring without assumed outsourcing; output/employment and scale distinctions reviewed.",
+      "checks": [],
+      "contentHash": "c26f6d3422425f9079b7bf992f4cb1dd02e599a85b7b19eb750834c6489ca9ec"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-7-8",
+    "topicNumber": "7.8",
+    "unitNumber": 7,
+    "title": "Sustainable Development",
+    "status": "published",
+    "overview": "Sustainable development links present well-being with the capacity to sustain environmental and social systems over time. Efficiency, equity and long-term resource conditions must be considered together.",
+    "keyConcepts": [
+      {
+        "title": "Multiple dimensions",
+        "text": "Economic opportunity, social inclusion and environmental protection can reinforce one another or involve tradeoffs. A single income or production total is insufficient."
+      },
+      {
+        "title": "Intensity versus totals",
+        "text": "Using less energy per unit of output improves efficiency, but total resource use can still rise if output expands enough."
+      },
+      {
+        "title": "Implementation",
+        "text": "Institutions, access, financing, technology and participation affect whether a strategy produces durable and broadly shared benefits. Goals need measures and follow-through."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional producer initially makes 100 units using 1,000 kWh. Later it makes 200 units at 8 kWh per unit.",
+      "steps": [
+        "Energy intensity falls from 10 to 8 kWh per unit, a 20% improvement.",
+        "Total energy becomes 200(8) = 1,600 kWh, which is 60% above the original total."
+      ],
+      "conclusion": "The case shows that relative efficiency gains do not by themselves establish lower absolute energy use or lower environmental impact."
+    },
+    "misconception": "Lower energy intensity is not automatically lower total energy consumption. The energy source and other impacts also matter.",
+    "apTip": "State the indicator, scale and time horizon, and distinguish an efficiency gain from an absolute reduction and from improved social outcomes.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 7.8; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Initial intensity10, new total1600, intensity reduction20% and total increase60% independently checked; no claim that growth must always erase efficiency gains.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            1000,
+            100
+          ],
+          "expected": 10,
+          "evidence": "10 to 8"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            200,
+            8
+          ],
+          "expected": 1600,
+          "evidence": "1,600 kWh"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            600,
+            1000
+          ],
+          "expected": 0.6,
+          "evidence": "60%"
+        }
+      ],
+      "contentHash": "ffead1c1d9b4d04b8860342b9cfa81ec072f24337d701a1fba3a2a43695a7465"
+    }
   }
 ]

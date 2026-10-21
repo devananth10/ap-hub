@@ -81,4 +81,8 @@ test('original summary graphs preserve analytical values, non-color curve labels
  const accumulation=getTopicSummary('calculus-ab','topic-6-5');assert.ok(accumulation?.mathFigure);
  for(const [x,y] of accumulation.mathFigure.curves[0].points)assert.ok(Math.abs(y-(x*x/2-2*x))<1e-9);
  for(const [x,y] of accumulation.mathFigure.curves[1].points)assert.equal(y,x-2);
+ const field=getTopicSummary('calculus-ab','topic-7-3');assert.ok(field?.mathFigure?.slopeField?.length===25);
+ for(const p of field.mathFigure.slopeField)assert.equal(p.slope,p.x-p.y);
+ const badField=structuredClone(field);badField.mathFigure.slopeField[0].slope=Infinity;
+ assert.ok(validateTopicSummary(badField,courses).some(e=>e.includes('slope field')));
 });

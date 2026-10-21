@@ -3942,5 +3942,509 @@
       "checks": [],
       "contentHash": "67039a3cb6ed3a9a19389d7e5ba301431353f9dc37ccdd63217d138fe2553cc4"
     }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "equations",
+    "topicNumber": "7.1",
+    "unitNumber": 7,
+    "title": "Modeling Situations with Differential Equations",
+    "status": "published",
+    "overview": "A differential equation models how a quantity changes in relation to its current state and independent variable. Interpret the rate statement first, then distinguish the equation from any particular solution.",
+    "keyConcepts": [
+      {
+        "title": "Translate words",
+        "text": "“Rate proportional to population” suggests P′ = kP, while a fixed numerical inflow gives a constant contribution. The proportionality constant’s units must make the equation consistent."
+      },
+      {
+        "title": "Signs",
+        "text": "A growth or decay mechanism determines the sign of the rate. An equation should reflect the stated direction rather than using a positive parameter without interpretation."
+      },
+      {
+        "title": "Initial information",
+        "text": "A rate law describes possible trajectories. An initial value supplies an amount at a specified input and can select a particular trajectory under suitable conditions."
+      }
+    ],
+    "example": {
+      "prompt": "A hypothetical population grows at an instantaneous rate proportional to its size, with proportionality constant 0.030 per year and P(0) = 5,000.",
+      "steps": [
+        "The model is dP/dt = 0.030P with time measured in years.",
+        "Initially, the rate is 0.030(5,000) = 150 people per year."
+      ],
+      "conclusion": "This is not a fixed addition of 150 people every year: as P changes, the proportional rate changes too."
+    },
+    "misconception": "An equation for P′ is not automatically a formula for P. The population and its rate have different units.",
+    "apTip": "Define variables and units, translate each mechanism and state the initial condition separately from the differential equation.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 7.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Proportional model and initial150 rate independently checked; instantaneous relative growth distinguished from fixed yearly addition.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            0.03,
+            5000
+          ],
+          "expected": 150,
+          "evidence": "150 people"
+        }
+      ],
+      "contentHash": "58d2bb8280d959a58fffd12a9f2a557a661be64f5fd4456914149bd6ff1ea1cf"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-7-2",
+    "topicNumber": "7.2",
+    "unitNumber": 7,
+    "title": "Verifying Solutions for Differential Equations",
+    "status": "published",
+    "overview": "Verifying a differential-equation solution means substituting the function and its derivatives into the equation. If an initial condition is supplied, check it separately as well.",
+    "keyConcepts": [
+      {
+        "title": "Equation check",
+        "text": "Differentiate the candidate and compare the two sides at allowed inputs. One matching value is not proof that the differential equation holds throughout an interval."
+      },
+      {
+        "title": "Initial condition",
+        "text": "Evaluate the original candidate at the stated initial input. Satisfying the equation alone does not guarantee it is the requested particular solution."
+      },
+      {
+        "title": "Domain",
+        "text": "Retain restrictions from the equation and candidate, including denominators, logarithms and any transformations used."
+      }
+    ],
+    "example": {
+      "prompt": "Determine whether y = x² + 4 solves y′ = 2x with y(1) = 5.",
+      "steps": [
+        "Differentiating the candidate gives y′ = 2x, so the differential equation holds for every real x.",
+        "At x = 1, the candidate gives 1 + 4 = 5, satisfying the initial condition."
+      ],
+      "conclusion": "The similar function x² + 5 also solves the differential equation but gives y(1) = 6, so it is not the requested solution."
+    },
+    "misconception": "A correct initial point does not guarantee the right derivative, and a correct derivative does not guarantee the right initial point.",
+    "apTip": "Write an equation substitution and an initial-value substitution as two distinct checks before accepting a candidate.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 7.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Candidate derivative and both point evaluations independently checked; equation-family versus particular-solution distinction explicit.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            1,
+            4
+          ],
+          "expected": 5,
+          "evidence": "= 5"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            1,
+            5
+          ],
+          "expected": 6,
+          "evidence": "= 6"
+        }
+      ],
+      "contentHash": "c028cc3e1f9215ee648132c4bc77273f6a6d6ddae90d5e5ba9944ffbdc719692"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-7-3",
+    "topicNumber": "7.3",
+    "unitNumber": 7,
+    "title": "Sketching Slope Fields",
+    "status": "published",
+    "overview": "A slope field displays the local slopes prescribed by a differential equation at many points. Each short segment indicates a possible tangent direction, not a complete solution path.",
+    "keyConcepts": [
+      {
+        "title": "Compute locally",
+        "text": "For y′ = F(x, y), substitute both coordinates into F to determine the segment’s slope at that point."
+      },
+      {
+        "title": "Patterns",
+        "text": "Locations with equal computed slopes form visible patterns. Zero slope segments are horizontal; positive and negative values tilt in opposite directions."
+      },
+      {
+        "title": "Solution curves",
+        "text": "A solution passing through a point must be tangent to the segment direction there. Sketch smooth trajectories consistent with the field and the initial condition."
+      }
+    ],
+    "example": {
+      "prompt": "Construct representative slopes for y′ = x − y.",
+      "steps": [
+        "At (0, 0), the slope is 0. At (1, 0), it is +1; at (0, 1), it is −1.",
+        "All points on y = x have zero slope. Below that line, x − y is positive; above it, the difference is negative."
+      ],
+      "conclusion": "These local facts organize the field, but the line of horizontal segments is not itself automatically a solution curve."
+    },
+    "misconception": "Do not connect all segment centers into one curve. The field describes a family of possible solutions.",
+    "apTip": "Use several coordinate checks and identify sign patterns before sketching. This AB topic does not require Euler’s method.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 7.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Coordinate substitutions and diagonal sign pattern independently checked; y=x is not a solution because its derivative1 disagrees with field slope0.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            1,
+            0
+          ],
+          "expected": 1,
+          "evidence": "+1"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            0,
+            1
+          ],
+          "expected": -1,
+          "evidence": "−1"
+        }
+      ],
+      "contentHash": "dfacf755477f47ad20534d0f3bd300abc677007eb031b0930bba6e9a0a01931c"
+    },
+    "mathFigure": {
+      "title": "Field for y′=x−y",
+      "description": "Horizontal on y=x; positive below that line and negative above.",
+      "caption": "Original tangent segments, not complete solution curves.",
+      "xRange": [
+        -2.5,
+        2.5
+      ],
+      "yRange": [
+        -2.5,
+        2.5
+      ],
+      "curves": [],
+      "dots": [],
+      "slopeField": [
+        {
+          "x": -2,
+          "y": -2,
+          "slope": 0
+        },
+        {
+          "x": -1,
+          "y": -2,
+          "slope": 1
+        },
+        {
+          "x": 0,
+          "y": -2,
+          "slope": 2
+        },
+        {
+          "x": 1,
+          "y": -2,
+          "slope": 3
+        },
+        {
+          "x": 2,
+          "y": -2,
+          "slope": 4
+        },
+        {
+          "x": -2,
+          "y": -1,
+          "slope": -1
+        },
+        {
+          "x": -1,
+          "y": -1,
+          "slope": 0
+        },
+        {
+          "x": 0,
+          "y": -1,
+          "slope": 1
+        },
+        {
+          "x": 1,
+          "y": -1,
+          "slope": 2
+        },
+        {
+          "x": 2,
+          "y": -1,
+          "slope": 3
+        },
+        {
+          "x": -2,
+          "y": 0,
+          "slope": -2
+        },
+        {
+          "x": -1,
+          "y": 0,
+          "slope": -1
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "slope": 0
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "slope": 1
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "slope": 2
+        },
+        {
+          "x": -2,
+          "y": 1,
+          "slope": -3
+        },
+        {
+          "x": -1,
+          "y": 1,
+          "slope": -2
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "slope": -1
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "slope": 0
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "slope": 1
+        },
+        {
+          "x": -2,
+          "y": 2,
+          "slope": -4
+        },
+        {
+          "x": -1,
+          "y": 2,
+          "slope": -3
+        },
+        {
+          "x": 0,
+          "y": 2,
+          "slope": -2
+        },
+        {
+          "x": 1,
+          "y": 2,
+          "slope": -1
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "slope": 0
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-7-4",
+    "topicNumber": "7.4",
+    "unitNumber": 7,
+    "title": "Reasoning Using Slope Fields",
+    "status": "published",
+    "overview": "Slope fields can reveal increasing behavior, equilibrium solutions and how trajectories bend. Reason from the differential equation’s local values and any available analytical checks rather than relying only on a visual guess.",
+    "keyConcepts": [
+      {
+        "title": "Direction",
+        "text": "Positive field slopes indicate locally increasing solutions, while negative slopes indicate decreasing ones. Their magnitude describes steepness in graph units."
+      },
+      {
+        "title": "Equilibrium",
+        "text": "A constant y value can be a solution when the prescribed derivative is zero along its entire horizontal line. A single zero segment is insufficient."
+      },
+      {
+        "title": "Concavity",
+        "text": "Differentiate the rate relation along a solution when justified, or observe how its tangent slopes change. The field’s individual segment height is not a function value trend by itself."
+      }
+    ],
+    "example": {
+      "prompt": "Analyze y′ = 1 − y with initial value y(0) = 0.",
+      "steps": [
+        "Below y = 1 the rate is positive; at y = 1 it is zero; above it the rate is negative.",
+        "For the selected solution, y = 1 − e⁻ˣ verifies the equation and initial value. It increases toward 1."
+      ],
+      "conclusion": "Along it, y″ = −y′ < 0, so the rising trajectory is concave down. The horizontal line y = 1 is an equilibrium solution."
+    },
+    "misconception": "Horizontal segments at isolated points do not by themselves define a constant solution. Check the entire proposed line.",
+    "apTip": "Combine sign patterns, the initial point and an equation check before asserting a trajectory’s long-run behavior.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 7.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Explicit1-e^-x independently verifies rate and initial0; second derivative negative and limit1 checked. This is linear, not BC logistic modeling.",
+      "checks": [],
+      "contentHash": "61e98b45956d5fb38c4cc6111ef06d879f95944ba9f3128328158c3e43b88611"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-7-6",
+    "topicNumber": "7.6",
+    "unitNumber": 7,
+    "title": "Finding General Solutions Using Separation of Variables",
+    "status": "published",
+    "overview": "Separation of variables solves suitable differential equations by collecting the dependent-variable expression with its differential on one side and the independent-variable expression on the other.",
+    "keyConcepts": [
+      {
+        "title": "Separate",
+        "text": "For y′ = g(x)h(y), divide by h(y) only where it is nonzero, then integrate both sides. Keep track of solutions that division may exclude."
+      },
+      {
+        "title": "Integrate",
+        "text": "Include a constant of integration and solve for y when practical. A renamed multiplicative constant may appear after exponentiating a logarithm."
+      },
+      {
+        "title": "Verify",
+        "text": "Differentiate the resulting family and check any excluded constant solutions directly in the original equation."
+      }
+    ],
+    "example": {
+      "prompt": "Solve y′ = 2xy.",
+      "steps": [
+        "For y ≠ 0, separation gives dy/y = 2x dx and integration gives ln|y| = x² + C.",
+        "Exponentiating and absorbing signs into a real constant gives y = Ce^(x²) for nonzero C."
+      ],
+      "conclusion": "The constant solution y = 0 also satisfies the original equation, so allowing C = 0 includes it. Differentiation gives y′ = 2xCe^(x²) = 2xy."
+    },
+    "misconception": "Dividing by a variable can lose a valid equilibrium solution. It is not enough to verify only the nonzero family.",
+    "apTip": "State division restrictions, solve and then check the original differential equation. No BC-only integration method is needed here.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 7.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Separation integration and chain-rule verification independently checked, including lost-zero solution recovery. Canonical7.6 preserved with BC7.5 skipped.",
+      "checks": [],
+      "contentHash": "1e807528e861bc4361b703942938d481244ed3f4a9cd81e0528769a544941833"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-7-7",
+    "topicNumber": "7.7",
+    "unitNumber": 7,
+    "title": "Finding Particular Solutions Using Initial Conditions and Separation of Variables",
+    "status": "published",
+    "overview": "An initial condition can determine the constant in a general solution family. Apply it to the solution itself, then verify both the equation and the stated point.",
+    "keyConcepts": [
+      {
+        "title": "Solve first",
+        "text": "Separate and integrate under valid conditions to obtain a general family. Track any excluded equilibrium solutions."
+      },
+      {
+        "title": "Use the point",
+        "text": "Substitute the initial independent and dependent values into the family and solve for the constant. Do not substitute the point so early that a changing variable becomes a constant."
+      },
+      {
+        "title": "Check the result",
+        "text": "Differentiate the particular function and compare with the original equation. Also evaluate the initial point and identify the valid interval."
+      }
+    ],
+    "example": {
+      "prompt": "Solve y′ = 2y with y(0) = 3.",
+      "steps": [
+        "Separation gives ln|y| = 2x + C and the family y = Ae²ˣ, together with the zero solution.",
+        "The initial condition gives 3 = Ae⁰, so A = 3 and y = 3e²ˣ."
+      ],
+      "conclusion": "Its derivative is 6e²ˣ = 2y, and y(0) = 3. The expression is defined for every real x and remains positive for this initial value."
+    },
+    "misconception": "The constant in a logarithmic equation is not always the same numerical constant as the multiplier after exponentiating.",
+    "apTip": "Preserve the complete initial point, solve the constant carefully and perform both final checks rather than assuming the integration step guarantees everything.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 7.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent differentiation and initial evaluation verify particular3e^(2x); zero family member correctly excluded by nonzero initial value.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            3,
+            2
+          ],
+          "expected": 6,
+          "evidence": "6e²ˣ"
+        }
+      ],
+      "contentHash": "e4c3386c91da5ba31371a8853c8748746eade81f70fce505c54cc4846a38dfde"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-7-8",
+    "topicNumber": "7.8",
+    "unitNumber": 7,
+    "title": "Exponential Models with Differential Equations",
+    "status": "published",
+    "overview": "Exponential models arise when instantaneous change is proportional to the current amount. For P′ = kP, the solution P(t) = P₀eᵏᵗ connects a continuous relative rate to growth or decay.",
+    "keyConcepts": [
+      {
+        "title": "Parameter meaning",
+        "text": "Positive k gives growth and negative k gives decay for positive initial amount. The units of k are inverse time."
+      },
+      {
+        "title": "Time comparisons",
+        "text": "Doubling or half-life questions use ratios, allowing the initial amount to cancel. Logarithms solve for the elapsed time."
+      },
+      {
+        "title": "Model limits",
+        "text": "A constant proportional rate is an assumption. Resource constraints or changing conditions can invalidate a long-term extrapolation; logistic modeling is outside this AB task."
+      }
+    ],
+    "example": {
+      "prompt": "Let P′ = 0.040P with time in years and P(0) = 1,000. Find the model’s doubling time.",
+      "steps": [
+        "The particular solution is P(t) = 1,000e^(0.040t). Set it equal to 2,000 and divide by 1,000.",
+        "Then e^(0.040t) = 2, so t = ln(2)/0.040 ≈ 17.3 years."
+      ],
+      "conclusion": "The doubling time is independent of P₀ within this model. The parameter describes a continuous relative rate, not an identical fixed population addition each year."
+    },
+    "misconception": "A continuous rate parameter is not automatically the same as a finite-period percentage multiplier.",
+    "apTip": "Use dimensionless amount ratios, consistent time units and an explicit proportional-rate assumption before extrapolating.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 7.8; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent logarithmic solution gives17.3287 years; using ln2≈.693 yields17.325, correctly rounding17.3. No logistic/Euler/BC topic generated.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            0.693,
+            0.04
+          ],
+          "expected": 17.325,
+          "evidence": "17.3 years"
+        }
+      ],
+      "contentHash": "de22241fcbb20441dde5d1b6c2dfd758b54bd6b1e81f05871bfe39d424d7dbb7"
+    }
   }
 ]

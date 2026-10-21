@@ -45,9 +45,11 @@ export function validateTopicSummary(s: TopicSummary, courses: Course[]): string
   if(s.figure)try{validateGeographyStimulus(s.figure);}catch{errors.push('Invalid original summary figure');}
   if(s.mathFigure){
     const f=s.mathFigure;
+    const hasField=Array.isArray(f.slopeField)&&f.slopeField.length>0;
     const range=(r:number[])=>Array.isArray(r)&&r.length===2&&r.every(Number.isFinite)&&r[1]>r[0]&&r[1]-r[0]<=24;
     const point=(p:number[])=>Array.isArray(p)&&p.length===2&&p.every(Number.isFinite)&&p[0]>=f.xRange[0]&&p[0]<=f.xRange[1]&&p[1]>=f.yRange[0]&&p[1]<=f.yRange[1];
-    if(!validText(f.title)||!validText(f.description)||!validText(f.caption)||!range(f.xRange)||!range(f.yRange)||!Array.isArray(f.curves)||!f.curves.length||f.curves.some(c=>!Array.isArray(c.points)||c.points.length<2||!c.points.every(point)||!['open','closed'].includes(c.start)||!['open','closed'].includes(c.end))||!Array.isArray(f.dots)||!f.dots.every(d=>point([d.x,d.y]))||f.slopeField)errors.push('Invalid original mathematical summary figure');
+    if(!validText(f.title)||!validText(f.description)||!validText(f.caption)||!range(f.xRange)||!range(f.yRange)||!Array.isArray(f.curves)||!f.curves.length&&!hasField||f.curves.some(c=>!Array.isArray(c.points)||c.points.length<2||!c.points.every(point)||!['open','closed'].includes(c.start)||!['open','closed'].includes(c.end))||!Array.isArray(f.dots)||!f.dots.every(d=>point([d.x,d.y])))errors.push('Invalid original mathematical summary figure');
+    if(f.slopeField!==undefined&&(!hasField||f.slopeField.length>250||f.slopeField.some(p=>!point([p.x,p.y])||!Number.isFinite(p.slope))))errors.push('Invalid original slope field');
     if(f.curves.length>2||f.curves.length===2&&(!f.curves.every(c=>validText(c.label))||!!f.curves[0].dashed===!!f.curves[1].dashed))errors.push('Multiple mathematical curves require labels and different line styles');
   }
   const v=s.validation;
