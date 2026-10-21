@@ -10455,5 +10455,476 @@
         "label": "60–100%"
       }
     ]
+  },
+  "hug-6-1-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "Local setting and connections at settlement P",
+    "description": "Hypothetical coastal setting. P is beside a river mouth and inlet; field notes identify deep sheltered water and near-level ground there. A road links P with an inland settlement. Coastline shape alone does not establish water depth.",
+    "caption": "Original schematic. Local terrain/water observations describe the site; connections with other settlements describe situation. No real port, navigability survey or growth forecast is represented.",
+    "unitLabel": "Coast, river, road and settlements",
+    "regions": [
+      {
+        "label": "Land",
+        "labelPoint": [
+          21,
+          25
+        ],
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            65,
+            0
+          ],
+          [
+            55,
+            20
+          ],
+          [
+            65,
+            40
+          ],
+          [
+            55,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "Sea",
+        "labelPoint": [
+          82,
+          30
+        ],
+        "polygon": [
+          [
+            65,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            55,
+            60
+          ],
+          [
+            65,
+            40
+          ],
+          [
+            55,
+            20
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "P",
+        "x": 50,
+        "y": 20
+      },
+      {
+        "label": "Inland",
+        "x": 20,
+        "y": 45
+      }
+    ],
+    "paths": [
+      {
+        "label": "River",
+        "points": [
+          [
+            10,
+            10
+          ],
+          [
+            35,
+            10
+          ],
+          [
+            55,
+            20
+          ]
+        ]
+      },
+      {
+        "label": "Road",
+        "points": [
+          [
+            50,
+            20
+          ],
+          [
+            50,
+            40
+          ],
+          [
+            20,
+            45
+          ]
+        ]
+      }
+    ]
+  },
+  "hug-6-1-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Components of recorded urban population change",
+    "description": "Hypothetical urban population ledger starting at 100,000. Births 3000; deaths 1000; arrivals 6000; departures 2000; another 2000 residents are reclassified as urban. The reclassified group has not moved and is not included in the other entries.",
+    "caption": "Original synthetic accounting example. Reclassification changes an urban category’s count rather than necessarily creating physical migration. No other change occurs in this exercise.",
+    "headers": [
+      "Component",
+      "Residents"
+    ],
+    "rows": [
+      [
+        "Births",
+        "3000"
+      ],
+      [
+        "Deaths",
+        "1000"
+      ],
+      [
+        "Arrivals",
+        "6000"
+      ],
+      [
+        "Departures",
+        "2000"
+      ],
+      [
+        "Reclassified as urban",
+        "2000"
+      ]
+    ]
+  },
+  "hug-6-1-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Urban and rural populations in two periods",
+    "description": "Hypothetical national population, thousands of people. Initial:urban 100, rural 100. Later:urban 120, rural 180. Urban/rural classifications remain consistent between periods.",
+    "caption": "Original synthetic counts. A change in urban population is not automatically a change in its share of the country’s population; use both categories for the denominator.",
+    "unitLabel": "Thousand residents",
+    "categories": [
+      "Initial",
+      "Later"
+    ],
+    "series": [
+      {
+        "label": "Urban",
+        "values": [
+          100,
+          120
+        ]
+      },
+      {
+        "label": "Rural",
+        "values": [
+          100,
+          180
+        ]
+      }
+    ],
+    "max": 200
+  },
+  "hug-6-1-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "model",
+    "title": "Hub travel times before and after a transport project",
+    "description": "Hypothetical unchanged settlement sites P and Q connect to a regional hub. P’s journey changes 60→20 minutes; Q’s remains 30→30. Arrows indicate trips toward the hub, not population migration.",
+    "caption": "Original accessibility schematic; line length is not travel time. The project changes connections rather than the physical location or local soil of either settlement.",
+    "assumptions": "Compare the same trip definition and hub before/after; other connections and settlement sites remain unchanged.",
+    "nodes": [
+      {
+        "label": "P",
+        "x": 15,
+        "y": 15,
+        "labelPosition": "left"
+      },
+      {
+        "label": "Q",
+        "x": 15,
+        "y": 45,
+        "labelPosition": "left"
+      },
+      {
+        "label": "Hub",
+        "x": 85,
+        "y": 30,
+        "labelPosition": "right"
+      }
+    ],
+    "edges": [
+      {
+        "from": "P",
+        "to": "Hub",
+        "label": "60→20 min"
+      },
+      {
+        "from": "Q",
+        "to": "Hub",
+        "label": "30→30 min"
+      }
+    ]
+  },
+  "hug-6-2-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Three hypothetical urban agglomerations",
+    "description": "Hypothetical populations measured in the same year using comparable agglomeration boundaries:A 8.5 million, B 12 million, C 22 million. The question supplies the population thresholds to apply.",
+    "caption": "Original synthetic city counts, not current city rankings. Size categories are not automatically measures of global economic influence, wealth or service quality.",
+    "headers": [
+      "Agglomeration",
+      "Population (millions)"
+    ],
+    "rows": [
+      [
+        "A",
+        "8.5"
+      ],
+      [
+        "B",
+        "12"
+      ],
+      [
+        "C",
+        "22"
+      ]
+    ]
+  },
+  "hug-6-2-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "Different forms beyond an established urban core",
+    "description": "Hypothetical region. The old core is near the west. X is a large new office/retail job concentration on formerly rural land; E is a mainly residential far-outer settlement with commuting ties across intervening open land.",
+    "caption": "Original schematic. Roles come from field records, not a population inferred from point size. Edge-city-type centers and exurban settlements describe different functions and spatial relationships.",
+    "unitLabel": "Core:old center; X:job/retail cluster; E:far-outer homes",
+    "regions": [
+      {
+        "label": "Core",
+        "polygon": [
+          [
+            8,
+            10
+          ],
+          [
+            32,
+            10
+          ],
+          [
+            35,
+            35
+          ],
+          [
+            10,
+            40
+          ]
+        ],
+        "labelPoint": [
+          20,
+          26
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "X",
+        "x": 60,
+        "y": 20
+      },
+      {
+        "label": "E",
+        "x": 85,
+        "y": 48
+      }
+    ],
+    "paths": [
+      {
+        "label": "Corridor",
+        "points": [
+          [
+            30,
+            25
+          ],
+          [
+            38,
+            25
+          ],
+          [
+            60,
+            20
+          ],
+          [
+            85,
+            48
+          ]
+        ]
+      }
+    ]
+  },
+  "hug-6-2-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Residents in the center and outer municipalities",
+    "description": "Hypothetical metropolitan population, millions. Initial:center 1.0, outer municipalities 1.0. Later:center 1.1, outer municipalities 2.0. Boundaries and component definitions stay constant.",
+    "caption": "Original synthetic within-metro counts. Resident distribution does not directly measure jobs, household origins, travel mode or individual migration routes.",
+    "unitLabel": "Million residents",
+    "categories": [
+      "Initial",
+      "Later"
+    ],
+    "series": [
+      {
+        "label": "Center",
+        "values": [
+          1,
+          1.1
+        ]
+      },
+      {
+        "label": "Outer municipalities",
+        "values": [
+          1,
+          2
+        ]
+      }
+    ],
+    "max": 4
+  },
+  "hug-6-2-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "Compact and separated development patterns",
+    "description": "Hypothetical alternative development sketches. Left:C is one compact block. Right:X,Y,Z are separate developed patches with open spaces between. The panels illustrate arrangement, not actual cities or measured commuting routes.",
+    "caption": "Original schematic contrast. Open land is the unfilled space; the letters identify developed patches. Fragmentation can raise infrastructure and land-use questions, but actual costs and travel modes require evidence.",
+    "unitLabel": "Left:compact C. Right:separated X,Y,Z.",
+    "regions": [
+      {
+        "label": "C",
+        "polygon": [
+          [
+            8,
+            12
+          ],
+          [
+            28,
+            12
+          ],
+          [
+            28,
+            42
+          ],
+          [
+            8,
+            42
+          ]
+        ],
+        "labelPoint": [
+          18,
+          27
+        ]
+      },
+      {
+        "label": "X",
+        "polygon": [
+          [
+            50,
+            5
+          ],
+          [
+            70,
+            5
+          ],
+          [
+            70,
+            25
+          ],
+          [
+            50,
+            25
+          ]
+        ],
+        "labelPoint": [
+          60,
+          15
+        ]
+      },
+      {
+        "label": "Y",
+        "polygon": [
+          [
+            78,
+            5
+          ],
+          [
+            98,
+            5
+          ],
+          [
+            98,
+            25
+          ],
+          [
+            78,
+            25
+          ]
+        ],
+        "labelPoint": [
+          88,
+          15
+        ]
+      },
+      {
+        "label": "Z",
+        "polygon": [
+          [
+            64,
+            36
+          ],
+          [
+            84,
+            36
+          ],
+          [
+            84,
+            56
+          ],
+          [
+            64,
+            56
+          ]
+        ],
+        "labelPoint": [
+          74,
+          46
+        ]
+      }
+    ]
   }
 }

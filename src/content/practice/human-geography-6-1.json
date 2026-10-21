@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 6,
+  "topicId": "topic-6-1",
+  "questions": [
+    {
+      "id": "hug-6-1-001",
+      "prompt": "Field notes describe near-level ground and a deep, sheltered inlet at P. Which statement identifies a site characteristic rather than situation?",
+      "options": [
+        "P’s connections to buyers in other regions.",
+        "P’s position within a regional trade network.",
+        "The inlet and near-level ground at the settlement itself.",
+        "P’s travel time to distant markets."
+      ],
+      "correctIndex": 2,
+      "explanation": "Site concerns characteristics of the place itself, including its local terrain and water setting. Situation concerns relationships to other places and networks. The deep sheltered inlet and near-level ground are supplied local characteristics; their economic value still depends on technology, trade and other conditions. A: Connections to other regions describe relative location. B: A network position is a situational relationship. C: These are physical attributes at P, directly supported by the field notes. D: Travel time relates P to another destination rather than describing only its local ground."
+    },
+    {
+      "id": "hug-6-1-002",
+      "prompt": "The urban population begins at 100,000. Using the ledger, which pair correctly gives net migration and the total recorded urban increase?",
+      "options": [
+        "Net migration 8000; total increase 4000",
+        "Net migration 2000; total increase 6000",
+        "Net migration 6000; total increase 12000",
+        "Net migration 4000; total increase 8000"
+      ],
+      "correctIndex": 3,
+      "explanation": "Net migration is 6000−2000=4000. Natural increase is 3000−1000=2000. Reclassification adds 2000 residents to the urban statistical category without requiring their migration. The total recorded increase is 4000+2000+2000=8000, giving 108,000. Urban growth can therefore combine demographic change and boundary/classification effects. A: This confuses the total increase with the migration component. B: Two thousand is natural increase or reclassification here, not net migration. C: Six thousand is gross arrivals rather than arrivals minus departures. D: This correctly separates migration, natural increase and reclassification."
+    },
+    {
+      "id": "hug-6-1-003",
+      "prompt": "Urban and rural definitions stay constant. Which statement correctly distinguishes urban population growth from a rising urban share?",
+      "options": [
+        "The urban share rises because the urban population increases.",
+        "Urban population rises, but its share falls from 50% to 40% because rural population grows faster.",
+        "The urban share stays 50% because both categories increase.",
+        "The urban population falls from 100 to 40 thousand."
+      ],
+      "correctIndex": 1,
+      "explanation": "Initially 100 of 200 thousand residents are urban, or 50%. Later 120 of 300 thousand are urban, or 40%. Urban headcount grows 20%, yet the share falls because rural growth is larger. Urbanization as an increasing proportion urban should not be inferred from one growing urban count alone. A: The national total also changes, so a larger numerator does not ensure a larger share. B: This uses the correct total population in each period. C: The increases are unequal, so the original share need not persist. D: Forty is the later percentage, not the urban headcount."
+    },
+    {
+      "id": "hug-6-1-004",
+      "prompt": "After a transport project, which conclusion best describes P’s changed situation relative to Q?",
+      "options": [
+        "P becomes faster to reach the hub than Q, despite no change in P’s physical site.",
+        "P’s local soil must become more fertile because travel takes less time.",
+        "Q’s access improves by the same amount as P’s.",
+        "The new journey time proves P will grow faster under every other condition."
+      ],
+      "correctIndex": 0,
+      "explanation": "P’s trip falls from 60 to 20 minutes, while Q remains 30. P changes from the slower to the faster hub connection. That is a change in relative accessibility, or situation, without moving the settlement or changing its local terrain. The travel comparison alone does not establish a unique future growth rate. A: This correctly compares before and after access while retaining the site distinction. B: Transport time does not measure soil fertility. C: Q’s time is unchanged. D: Accessibility can influence growth, but other economic, demographic and policy conditions still matter."
+    },
+    {
+      "id": "hug-6-1-005",
+      "prompt": "How can agricultural surplus contribute to the development of urban settlements?",
+      "options": [
+        "It requires every resident to grow all of their own food.",
+        "It makes transportation and exchange unnecessary.",
+        "It guarantees a city forms wherever any single farm has a good harvest.",
+        "Food beyond producers’ immediate needs can support people specializing in nonfarm work, provided systems of exchange and distribution exist."
+      ],
+      "correctIndex": 3,
+      "explanation": "A surplus can help support specialists in crafts, administration, trade and other activities away from direct food production. Storage, exchange, transport and institutions influence whether that possibility supports an urban center. Surplus is a contributing condition, not a sufficient guarantee of city formation at every productive farm. A: Specialization can mean some residents do less direct food growing. B: Moving and allocating food remain important. C: A temporary surplus at one farm does not establish an entire urban system. D: This links surplus to specialization while retaining necessary social and distributional conditions."
+    },
+    {
+      "id": "hug-6-1-006",
+      "prompt": "A government locates administrative offices and invests in roads at a planned city. Which explanation best captures a possible influence on urban growth?",
+      "options": [
+        "Physical geography is the only influence, so policy cannot matter.",
+        "Policy can concentrate employment and access, potentially attracting residents and businesses alongside other conditions.",
+        "The city’s population must grow even if every job disappears.",
+        "Administrative status makes migration, housing and infrastructure irrelevant."
+      ],
+      "correctIndex": 1,
+      "explanation": "Government decisions can influence urban functions through jobs, public services and transport investment. They operate alongside site conditions, private activity, migration and housing. A planned administrative role can therefore help explain growth without guaranteeing the same result in every city. A: The scenario supplies policy and investment mechanisms beyond physical geography. B: This identifies plausible employment/access channels and keeps the effect conditional. C: Loss of employment could change the growth context. D: Administrative roles do not remove practical demographic or infrastructure constraints."
+    },
+    {
+      "id": "hug-6-1-007",
+      "prompt": "A former river-trade center loses traffic when freight shifts to a new rail corridor that bypasses it. Its local terrain remains unchanged. Which distinction best explains the change?",
+      "options": [
+        "Its situation within transport networks changed while many site characteristics stayed the same.",
+        "Its physical site must have moved to another continent.",
+        "All cities with the same terrain must experience identical growth.",
+        "A site’s economic role cannot change after a city is founded."
+      ],
+      "correctIndex": 0,
+      "explanation": "A city’s relationships to routes, markets and other settlements can change as transport technology and networks change. Stable local terrain does not guarantee a stable economic position. The bypass illustrates changing situation, though actual population outcomes would also depend on alternative functions and adaptation. A: This directly matches the changed network and unchanged terrain. B: A changed route does not move the settlement. C: Similar physical sites can have different economic connections. D: Urban functions can evolve with technology, policy and trade."
+    },
+    {
+      "id": "hug-6-1-008",
+      "prompt": "Rural residents move toward an expanding industrial city, but some have difficulty obtaining housing and secure employment. Which interpretation is appropriate?",
+      "options": [
+        "Migration proves every newcomer immediately receives a well-paid job.",
+        "Rural-to-urban movement cannot influence urban population size.",
+        "The absence of guaranteed benefits means no employment incentive could have influenced migration.",
+        "Job opportunities can attract migration while urban outcomes still depend on labor demand, housing and other constraints."
+      ],
+      "correctIndex": 3,
+      "explanation": "Migration can contribute to city growth when people seek employment or other opportunities. Expectations and actual outcomes are not identical: limited housing, job access and services can shape experiences. Recognizing constraints does not erase the role of opportunities in influencing movement. A: An attraction does not ensure a specific outcome for every migrant. B: Net migration can change city population. C: An incentive can exist even when benefits are uneven or uncertain. D: This connects a growth driver with the conditions affecting actual experiences."
+    },
+    {
+      "id": "hug-6-1-009",
+      "prompt": "Communication technology allows some firms to coordinate activities farther from a traditional center. Which conclusion is too strong?",
+      "options": [
+        "Communication networks can influence where firms operate.",
+        "Physical transport and face-to-face interaction may still matter.",
+        "All cities must become obsolete because digital communication removes every advantage of concentration.",
+        "Different industries can respond differently to new communications."
+      ],
+      "correctIndex": 2,
+      "explanation": "Communication changes can alter urban functions and location choices, but they do not eliminate every benefit of proximity, infrastructure, labor markets or specialized services. Industries and activities vary. The unsupported claim is a universal end to cities rather than a possible change in urban organization. A: This is a plausible influence consistent with the curriculum. B: Physical and social connections can remain relevant. C: This extrapolates one technology into an unjustified universal outcome. D: Different coordination and production needs can produce varied responses."
+    },
+    {
+      "id": "hug-6-1-010",
+      "prompt": "Which evidence best supports an explanation of a city’s growth as involving several interacting drivers?",
+      "options": [
+        "Matched information on migration, natural increase, employment, transport investment and policy over the same period.",
+        "Only a current photograph of one downtown building.",
+        "An assumption that its population grew solely because a river exists nearby.",
+        "Only the spelling of its name."
+      ],
+      "correctIndex": 0,
+      "explanation": "Urban growth can reflect demographic, economic, technological and political changes together. Comparable time-based records help examine their contributions and sequence. They do not automatically prove each cause, but provide a stronger basis than one image, an unrelated label or a single-factor assumption. A: These records address several relevant mechanisms at compatible times. B: One image cannot establish the population trajectory or its causes. C: A river may matter to site or situation without explaining all later growth. D: Name spelling is not evidence for the stated demographic and economic processes."
+    },
+    {
+      "id": "hug-6-1-011",
+      "prompt": "A growing coastal city builds protective infrastructure on flood-prone land. What is the best assessment of the relationship between physical setting and urbanization?",
+      "options": [
+        "Engineering removes all possible hazard and maintenance costs permanently.",
+        "A flood-prone site proves no city can ever exist there.",
+        "All coastal cities face identical physical conditions and policy choices.",
+        "Physical conditions create constraints and opportunities that technology and policy can modify, while costs and residual risks remain."
+      ],
+      "correctIndex": 3,
+      "explanation": "Physical geography influences urban possibilities, but people can adapt through infrastructure, planning and other choices. Such interventions do not erase every cost or hazard, and conditions vary among coastal sites. This avoids both environmental determinism and the assumption that technology makes geography irrelevant. A: Protection has design limits, maintenance needs and residual risk. B: Cities can occupy challenging sites, although consequences require assessment. C: Coastal settings and responses differ. D: This allows interaction between setting, adaptation and remaining constraints."
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "topicNumber": "6.1",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "8f11ffaf48a7e80969494b7745fc8c38ef78aa7315db1f405cdee11051e21ec6",
+  "scopeReview": "PSO-6.A.1–2: urban site/situation and influences from transport, communication, population, migration, development and policy. Distinguishes urban headcount growth, statistical reclassification and increasing urban share.6.2 megacity/suburban forms reserved for the next topic.",
+  "varietyReview": "Four meaningful stimuli:original coastal-site map, growth ledger including reclassification, urban/rural count bars and changed hub-access network. Checks locate supplied site data, balance distinct components, recompute shares and compare access before/after. Applied historical/policy/evidence cases complete eleven.",
+  "repetitionReview": "Site characteristics, reclassification, changing national shares and relative travel access require distinct operations. Population ledger includes a new nonmigration classification component; no old numerical-only clone. Original fictional cities and data, varied keys, complete explanations; difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf"
+  ],
+  "referenceNote": "Official scope checked directly. All maps, populations and urban scenarios original/hypothetical; no real first-city date, current ranking, forecast or resource added. No independent human review claimed.",
+  "questions": [
+    {
+      "questionId": "hug-6-1-001",
+      "skill": "Spatial Relationships",
+      "difficulty": "foundational",
+      "correctOption": "The inlet and near-level ground at the settlement itself.",
+      "independentReview": "Checked P lies on the land side beside the supplied inlet at the river mouth; depth/shelter come from explicit hypothetical notes, not inferred from an outline. Distinguished local characteristics from regional access without asserting deterministic city growth.",
+      "check": {
+        "type": "urban-site-inlet"
+      },
+      "questionSha256": "0efaa2479f650d6b536f7597049892bebb7cc6f891ac39332a3d12401561a14c",
+      "stimulusSha256": "a7c65a16c004acf98a0399a79eb73081f9955957a6c68860b735630e76de1339"
+    },
+    {
+      "questionId": "hug-6-1-002",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Net migration 4000; total increase 8000",
+      "independentReview": "Independently balanced births−deaths=2000, arrivals−departures=4000, reclassified=2000, total8000. Reclassification explicitly excludes any duplication with births/migration and concerns statistical urban growth, unlike simply repeating an earlier natural-growth item.",
+      "check": {
+        "type": "urban-growth-reclassification"
+      },
+      "questionSha256": "c3eb68b50d394ba0c6cfbc7653f8ad0cda679854878013263858908dcf17a66a",
+      "stimulusSha256": "54b154cb63584889ebda045766c350348d4f18e6338b6eed609466461fccc868"
+    },
+    {
+      "questionId": "hug-6-1-003",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Urban population rises, but its share falls from 50% to 40% because rural population grows faster.",
+      "independentReview": "Independently summed200→300 thousand and ratios100/200=.5,120/300=.4; urban count100→120, rural100→180. Definitions constant to exclude reclassification as an alternative explanation.",
+      "check": {
+        "type": "urban-count-versus-share"
+      },
+      "questionSha256": "c5db0f401aab536c2ee3343a7d529dd91e0ecd0fe150538255ab3e8a0ce84f8d",
+      "stimulusSha256": "53b8e13d58cbbdec1b314d8fe5d74b94cd2e54927df8994533f273f6fe9c6edf"
+    },
+    {
+      "questionId": "hug-6-1-004",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "P becomes faster to reach the hub than Q, despite no change in P’s physical site.",
+      "independentReview": "Independently compared60>30 initially and20<30 afterward. P improves40 minutes, Q0. Fixed node positions and no physical-site change explicitly supplied; no actual causal city-growth estimate.",
+      "check": {
+        "type": "urban-situation-travel"
+      },
+      "questionSha256": "22533585469d8be6d4f258982c4260e7fa89ac0b289fa31cc57b87fc3b145bcf",
+      "stimulusSha256": "a65ecc721b340d2fd05cdb624a661caf625af08e539ea79f43865862b3fce8df"
+    },
+    {
+      "questionId": "hug-6-1-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Food beyond producers’ immediate needs can support people specializing in nonfarm work, provided systems of exchange and distribution exist.",
+      "independentReview": "Checked a conditional origin mechanism rather than a single-cause history of all cities. No exact date, first-city ranking or universal development sequence asserted.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d5d466c3dfb17dc393daa274130653aff1a22c0ed589ff935ca76384e80fdee0"
+    },
+    {
+      "questionId": "hug-6-1-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Policy can concentrate employment and access, potentially attracting residents and businesses alongside other conditions.",
+      "independentReview": "Aligned PSO-6.A.2 government-policy influence without an actual capital-city case or guaranteed growth claim.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "4969836a227386c9918a8b5f6028b525a53add9823a68f8ee994771b5834d400"
+    },
+    {
+      "questionId": "hug-6-1-007",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Its situation within transport networks changed while many site characteristics stayed the same.",
+      "independentReview": "Distinct from the travel-time diagram: this concerns historical functional decline after network bypass rather than a shorter trip to one hub. Fictional example, no disputed real port history.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d96b59acf164f0df84ed443358e4fc142eca8240178677d8bee8feaff78b4b96"
+    },
+    {
+      "questionId": "hug-6-1-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Job opportunities can attract migration while urban outcomes still depend on labor demand, housing and other constraints.",
+      "independentReview": "Separated motivation from guaranteed outcomes without stereotyping rural migrants or assigning a real city’s labor conditions.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "6140a45a01e548a8b9adaffbba6abd6510dd505aff891770cc824e0e5ce276d3"
+    },
+    {
+      "questionId": "hug-6-1-009",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "All cities must become obsolete because digital communication removes every advantage of concentration.",
+      "independentReview": "No current technology adoption statistic or forecast claimed. Evaluated model scope and differing functions rather than asserting digital tools always decentralize all work.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "acaf8036a520e4b31967d18867da04b7cd417cd30c22b2f27a388f070e5a1e2c"
+    },
+    {
+      "questionId": "hug-6-1-010",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Matched information on migration, natural increase, employment, transport investment and policy over the same period.",
+      "independentReview": "Evidence-selection question, not a promise that correlation isolates every causal contribution. Scope consistent with PSO-6.A.1–2.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "1ef18db44591290a00d09f7164230ee948b49554193f8deb23d345f4ec0c02a2"
+    },
+    {
+      "questionId": "hug-6-1-011",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Physical conditions create constraints and opportunities that technology and policy can modify, while costs and residual risks remain.",
+      "independentReview": "A conceptual hypothetical, not engineering advice or a real flood forecast. Site constraints acknowledged without claiming they alone determine a city’s existence or growth.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "77593735bc6116caff2da39429795e5a8f1c8fb4e746f659ae38cde1e131bb3c"
+    }
+  ]
+}

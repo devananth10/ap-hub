@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 6.1–6.2
+
+561 original MCQs across51 topics are published, eleven each;204 meaningful stimuli (36.36%) and221 explicit evidence/numerical/geometry checks. Urban Origins distinguishes local site, changing situation, growth/reclassification and urban shares. Cities Across the World assesses comparable size thresholds, peripheral job/residential forms, within-metro redistribution and separated development. All city data and shapes are original/hypothetical; source terminology verified.
+
+All178 tests, structural/evidence checks, TypeScript, production build, all68 Geography scopes and standard preview checks passed. Both full sessions scored11/11 and all eight mobile stimuli were inspected. The peripheral corridor was routed through X and its label moved clear of the point. A max2.4 floating-point tick was detected on the new redistribution chart; max4 now gives whole-number ticks with unchanged data. A shared rendering regression checks every published chart text for long decimal artifacts. No general UI refinement begun. Desktop light/mobile dark checks passed. Existing221 question files,196 stimuli and approved catalog unchanged; student data untouched. Next6.3;17 topics/187 questions remain. The final748 audit and later UI/summary phase are still pending. No human-review or empirical-calibration claim.
+
 ## Human Geography Unit 5 complete — Topics 5.11–5.12
 
 539 original MCQs across49 topics are published, eleven each;196 meaningful stimuli (36.36%) and213 explicit evidence/numerical/geometry checks. Units1–5 are complete. Contemporary Agriculture adds context-specific crop-trait trials, store travel, advance-payment/harvest-sharing terms and aquaculture ratios. Women in Agriculture separates workers/owners, task participation, applicant approval rates and regional management from rights, causes or individual roles. All evidence original and hypothetical.

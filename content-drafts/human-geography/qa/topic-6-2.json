@@ -1,0 +1,145 @@
+{
+  "topicNumber": "6.2",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "6ac80a451204e2921fca756d2c47d3a910ac33f62b05b4c016c8df5144f79f1d",
+  "scopeReview": "PSO-6.A.3–4: megacity/metacity scale and spatial patterns; suburbanization, decentralization, edge-city functions, exurbs, boomburbs and sprawl. Distinguishes size from global influence, core share from absolute change, and forms from measured consequences.",
+  "varietyReview": "Four meaningful stimuli:consistent agglomeration counts, original peripheral-function map, metro redistribution chart and separated-versus-compact polygons. Checks classify thresholds, verify supplied functions/locations, compute shares and test nonoverlapping development geometry. Source/scale applications avoid universal city stereotypes.",
+  "repetitionReview": "Different concepts and representations than6.1:population size categories, functional peripheral nodes, within-metropolitan redistribution and fragmentation. Definitions/boundaries explicit, no real-city ranking or numerical-only clone; varied keys and detailed options. Difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://unhabitat.org/harmonization-of-urban-definitions-key-to-monitoring-implementation-of-sdgs-and-the-nua",
+    "https://www.un.org/en/desa/WUP-2025",
+    "https://www.census.gov/library/working-papers/2010/demo/marlay-01.html",
+    "https://www.census.gov/library/stories/2024/05/exurbs-city-population.html",
+    "https://www.brookings.edu/books/boomburbs/"
+  ],
+  "referenceNote": "Primary institutional urban definitions and original boomburb research checked. All city populations, diagrams and field records synthetic; no copied question/map, exact contested threshold case or new resource. No independent human-review claim.",
+  "questions": [
+    {
+      "questionId": "hug-6-2-001",
+      "skill": "Data Analysis",
+      "difficulty": "foundational",
+      "correctOption": "C only",
+      "independentReview": "Checked8.5<10<12<20<22 with comparable agglomeration boundaries. Definitions explicitly supplied; no item depends on exactly20 million or a disputed current real-city estimate. UN/UN-Habitat primary descriptions corroborate approximate thresholds.",
+      "check": {
+        "type": "cities-size-thresholds"
+      },
+      "questionSha256": "4adf6347dd5636eefbdd1c6e0efc30ce09b68e1fec90193c289536e3c9be3f83",
+      "stimulusSha256": "03c808be047d8b0c0b9400950530e1b950af9c15db667ce81a95a0952cdcf642"
+    },
+    {
+      "questionId": "hug-6-2-002",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "X:edge-city-type employment center; E:exurban settlement",
+      "independentReview": "Verified mapped Core20,25, X60,20 and E85,48; field notes, not distance alone, supply job/retail and residential functions. No claim of satisfying every exact Garreau floor-area threshold or a universal Census exurb definition. Mobile inspection routed the illustrative corridor explicitly through X and placed its label farther left to avoid the X marker. Settlement positions and classifications are unchanged.",
+      "check": {
+        "type": "cities-peripheral-functions"
+      },
+      "questionSha256": "374a25f346d717f08b0609bd1e4d228eab7bad2eb44983b5406765b8ce8dc6b5",
+      "stimulusSha256": "3380008684628339e670ed7552a484dcd6cf946b95c0ab0265a9b91d12cbe8c5"
+    },
+    {
+      "questionId": "hug-6-2-003",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Outer municipalities gain residents faster, reducing the center’s share even while its population grows.",
+      "independentReview": "Independently computed totals2.0→3.1 million and center shares50%→35.48%; outer growth100%, center10%. Fixed metro components and classifications stated. Distinct from national urban/rural shares: this is within-metro redistribution. Mobile rendering exposed a floating-point axis tick at max2.4; the new chart now uses max4 and whole-number ticks without changing any values, labels, answers or ratios. All chart text is checked for long decimal artifacts.",
+      "check": {
+        "type": "cities-metropolitan-redistribution"
+      },
+      "questionSha256": "bc963c8a5b821f26ad5cfa0f5bb75b5207a533649485ceaf75c4ccbdad3577e1",
+      "stimulusSha256": "01a0609d308ad1e8250ea3347048aeaa44b24e060ec5ea841f1bc9d5a83310d6"
+    },
+    {
+      "questionId": "hug-6-2-004",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "New developed patches are spatially separated by intervening undeveloped land.",
+      "independentReview": "Checked separated X/Y/Z polygons with nonzero gaps and a single contiguous C polygon. Schematic polygon areas600 versus1200 illustrate contrasting footprints but no real hectares or commuter distances are inferred.",
+      "check": {
+        "type": "cities-leapfrog-geometry"
+      },
+      "questionSha256": "a3adca6ac432a5c25c929878621b58dbbf9ce07805c5d4c01394c14ec52dd70c",
+      "stimulusSha256": "51a8e520b60a9e9560dd0ae96f74b1bacc432be15ddd8664c35e851e4a75cae1"
+    },
+    {
+      "questionId": "hug-6-2-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "A boomburb: a large, rapidly growing suburban municipality.",
+      "independentReview": "Verified original Brookings book description:large rapidly growing incorporated communities over100000, not the region’s biggest city. No arbitrary exact annual-growth cutoff or current real city label imposed.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "245b31b338a36d4a4289e08f7f2fe5c288077038d85692d973657424f7c0d2da"
+    },
+    {
+      "questionId": "hug-6-2-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Major offices and shopping facilities shift to a peripheral employment center.",
+      "independentReview": "Separated functional decentralization from residence counts and ordinary natural increase. No assumption all suburbs contain jobs or all central businesses leave.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "0f080efca780860a00ceb852d5c0f4ff1758f5917816d5349f4f648cd02aa60e"
+    },
+    {
+      "questionId": "hug-6-2-007",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Exurban, with metropolitan ties despite a partly rural landscape.",
+      "independentReview": "Checked Census primary discussion acknowledges no single Bureau exurb definition and describes far-outer mixed rural/urban character. No universal legal boundary or density threshold asserted.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "61b0cd5e05289bf06e56940b838fe82a9b6b1b84ebaae66725b6377f5b7ee844"
+    },
+    {
+      "questionId": "hug-6-2-008",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Municipal cores, continuous built-up areas and wider metropolitan regions may include different populations.",
+      "independentReview": "UN-Habitat urban-definition harmonization theme verified. No current city ranking or historical growth inferred from mismatched estimates.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "66ea51a5f5041434c776d912e15d5d06facdc0f72ebd04d85a5f0b0e433100f3"
+    },
+    {
+      "questionId": "hug-6-2-009",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The pattern describes a broad distributional tendency, while city sizes, histories and challenges still vary within and across regions.",
+      "independentReview": "Aligned PSO-6.A.3 without assigning actual countries a permanent income/world-system category or inventing a contemporary ranking. Broad tendency explicitly distinguished from universal classification.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "639b1bee818be2131490db57e486493d0c94a30c04360a51808c5e66cf1a4a30"
+    },
+    {
+      "questionId": "hug-6-2-010",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Actual trip patterns, transport options, service-network lengths and costs, alongside population and land-use data.",
+      "independentReview": "Distinguished form from measured outcomes, avoiding a universal per-capita emissions or infrastructure-cost estimate. No real transport policy prescribed.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "51b4b7777f4cfc2a6a733b366953b10c260c270d71f8e1428ee825a2512c71fc"
+    },
+    {
+      "questionId": "hug-6-2-011",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "All suburbs are permanently identical bedroom communities with the same residents and jobs.",
+      "independentReview": "No real demographic group or city stereotyped. Conceptual distinction between dynamic urban forms and rigid labels, within6.2 scope rather than a new unsupported typology.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "504f331790e936f191e84e0bc515b582846cbadbfbb1c1eb9afbd50c77157f0f"
+    }
+  ]
+}

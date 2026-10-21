@@ -83,6 +83,24 @@ test('women-in-agriculture evidence preserves distinct work, ownership, role, ap
   const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
  }
 });
+test('urban-origin evidence retains local setting, reclassification, changing shares and situational access',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-6-1.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-6-1.json','utf8'));
+ for(const [i,change] of [[0,s=>s.points[0].x=85],[1,s=>s.rows[4][1]='0'],[2,s=>s.series[1].values[1]=80],[3,s=>s.edges[0].label='60→60 min']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+test('urban-form evidence retains population thresholds, peripheral functions, component shares and open gaps',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-6-2.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-6-2.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[1][1]='25'],[1,s=>s.points[1].x=20],[2,s=>s.series[1].values[1]=1],[3,s=>s.regions[2].polygon[0][0]=70]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+test('published chart text avoids long floating-point decimal artifacts in axes and data labels',()=>{
+ for(const s of Object.values(geographyStimuli).filter(s=>s.kind==='chart')){
+  const labels=[...render(s).matchAll(/<text\b[^>]*>([^<]*)<\/text>/g)].map(m=>m[1]);
+  assert.ok(labels.every(label=>!/-?\d+\.\d{7,}/.test(label)),s.title+' has an unreadable numeric label');
+ }
+});
 const base={title:'TEST ONLY',description:'Original hypothetical test data; not a published question.',caption:'TEST ONLY',hypothetical:true,attribution:'Original PrepAtlas schematic and synthetic data'};
 const chart={...base,kind:'chart',unitLabel:'People (thousands)',categories:['A','B'],series:[{label:'Year 1',values:[25,50]},{label:'Year 2',values:[50,75]}],max:100};
 const pyramid={...base,kind:'pyramid',unitLabel:'People (thousands)',max:100,cohorts:[{label:'0–14',ageStart:0,ageEnd:14,male:50,female:50},{label:'15–64',ageStart:15,ageEnd:64,male:75,female:75},{label:'65+',ageStart:65,ageEnd:null,male:25,female:25}]};

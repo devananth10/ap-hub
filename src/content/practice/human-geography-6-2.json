@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 6,
+  "topicId": "topic-6-2",
+  "questions": [
+    {
+      "id": "hug-6-2-001",
+      "prompt": "For this exercise, a megacity has at least 10 million residents and a metacity more than 20 million. Which listed agglomeration qualifies as a metacity and also as a megacity?",
+      "options": [
+        "A only",
+        "B only",
+        "C only",
+        "B and C"
+      ],
+      "correctIndex": 2,
+      "explanation": "C has 22 million residents, exceeding both thresholds. B’s 12 million meets the megacity threshold but not the stated metacity threshold, and A’s 8.5 million meets neither. The categories overlap: a metacity is not excluded from being a megacity. Comparable boundaries matter when applying population thresholds. A: A is below 10 million. B: B is below the stated 20-million metacity threshold. C: C meets both criteria under the explicit definitions. D: B qualifies as a megacity but not a metacity."
+    },
+    {
+      "id": "hug-6-2-002",
+      "prompt": "Field records describe X as a large office-and-retail employment cluster on formerly rural land outside the old core; E is a mainly residential far-outer settlement with commuting ties. Which pairing best fits?",
+      "options": [
+        "X:exurb; E:the original central business district",
+        "X:only an agricultural village; E:megacity solely because it is distant",
+        "X:old central business district; E:edge city solely because residents commute",
+        "X:edge-city-type employment center; E:exurban settlement"
+      ],
+      "correctIndex": 3,
+      "explanation": "X combines substantial employment and retail outside the established core, consistent with an edge-city-type node. E’s far-outer, mainly residential and commuting-linked setting fits an exurban description. Distance alone does not distinguish every form; function and development history are important. These terms have varied operational definitions. A: The supplied employment node and residential far-outer settlement are reversed or misidentified. B: X’s documented office/retail functions contradict a purely agricultural label; E’s distance gives no population threshold. C: The old core is mapped separately, and commuting alone does not establish an edge-city employment concentration. D: This uses each place’s function and relation to the old core."
+    },
+    {
+      "id": "hug-6-2-003",
+      "prompt": "Within this metropolitan area, which conclusion about the redistribution of residents is supported?",
+      "options": [
+        "The center loses residents because its metropolitan share falls.",
+        "Outer municipalities gain residents faster, reducing the center’s share even while its population grows.",
+        "Every new suburban resident must have moved out of the center.",
+        "The chart proves employment decentralizes by exactly the same amount."
+      ],
+      "correctIndex": 1,
+      "explanation": "The center grows from 1.0 to 1.1 million while outer municipalities grow from 1.0 to 2.0 million. The center’s share falls from 1/2=50% to 1.1/3.1≈35.5%. This is a relative shift toward the metropolitan periphery, not proof of central population decline, the origins of every newcomer or the location of jobs. A: A falling share is compatible with the center’s 0.1-million absolute increase. B: This distinguishes relative decentralization from absolute central decline. C: Births, arrivals from elsewhere and classification could also contribute; origins are not given. D: The chart measures residents, not employment."
+    },
+    {
+      "id": "hug-6-2-004",
+      "prompt": "The left plan groups new development in C; the right separates it into X,Y,Z with open land between. Which feature of the right plan most clearly illustrates leapfrog development?",
+      "options": [
+        "Every new building is contiguous with one compact central block.",
+        "The map proves all residents drive the same distance each day.",
+        "New developed patches are spatially separated by intervening undeveloped land.",
+        "The open gaps establish that no road or utility could ever connect the patches."
+      ],
+      "correctIndex": 2,
+      "explanation": "Leapfrog development places new built areas beyond or apart from continuous existing development, leaving open gaps. X,Y,Z illustrate this fragmented pattern. The drawing alone does not show residents’ travel behavior, infrastructure cost or the specific policies that produced it, though these are relevant questions to investigate. A: That describes the compact left-side contrast rather than the separated right-side patches. B: Travel behavior and destinations are not supplied. C: This identifies the visible separation and gaps. D: Open gaps do not make future connections physically impossible."
+    },
+    {
+      "id": "hug-6-2-005",
+      "prompt": "A rapidly growing incorporated suburban community has 150,000 residents and is not the largest city in its metropolitan region. Which term most closely describes that combination?",
+      "options": [
+        "A metacity, solely because it is growing rapidly.",
+        "A primate city, solely because it is incorporated.",
+        "A rural hamlet, because it is not the largest regional city.",
+        "A boomburb: a large, rapidly growing suburban municipality."
+      ],
+      "correctIndex": 3,
+      "explanation": "Boomburb describes a large, rapidly growing suburban incorporated community rather than the dominant core city. The term highlights suburban growth at substantial scale. Population 150,000 does not approach metacity size, and incorporation alone does not establish national urban primacy. A: Rapid growth is not the same as the very large population threshold. B: Primate-city status concerns dominance within an urban system, not legal incorporation alone. C: A large suburban municipality is not a small rural hamlet. D: This matches the supplied size, growth and noncore metropolitan position."
+    },
+    {
+      "id": "hug-6-2-006",
+      "prompt": "Which example best illustrates decentralization of urban functions rather than only residential growth outside the core?",
+      "options": [
+        "A central household adds a child while staying in the same home.",
+        "Major offices and shopping facilities shift to a peripheral employment center.",
+        "A city’s national flag is redesigned.",
+        "An unchanged farm remains isolated from metropolitan jobs and services."
+      ],
+      "correctIndex": 1,
+      "explanation": "Decentralization can involve employment, retail and services moving away from a traditional center, creating several activity nodes. Residential suburbanization can occur alongside this process but is not its only form. The office-and-shopping shift directly concerns the location of urban functions. A: This changes household size without relocating an urban function. B: This supplies a functional shift toward a peripheral node. C: Flag design does not locate employment or services. D: The unchanged isolated farm provides no stated decentralization process."
+    },
+    {
+      "id": "hug-6-2-007",
+      "prompt": "A low-density settlement beyond the continuously built-up suburbs mixes homes and open land while maintaining strong commuting links. Which description is most appropriate?",
+      "options": [
+        "Exurban, with metropolitan ties despite a partly rural landscape.",
+        "The central business district, because every commuter lives downtown.",
+        "A metacity solely because some residents commute.",
+        "Outside every urban influence because it includes open land."
+      ],
+      "correctIndex": 0,
+      "explanation": "Exurban settlements commonly lie at the far metropolitan fringe, combining lower-density or partly rural character with economic and commuting ties. Open land does not necessarily mean isolation from the urban system. Exact definitions vary, so the supplied functional relationships are more informative than scenery alone. A: This combines the outer location, mixed landscape and commuting relationship. B: The scenario places the settlement beyond the built-up suburbs. C: Commuting does not establish a population threshold. D: Metropolitan linkages can cross open or sparsely settled land."
+    },
+    {
+      "id": "hug-6-2-008",
+      "prompt": "Why should a comparison of megacity populations use consistent dates and spatial definitions?",
+      "options": [
+        "City-proper boundaries and metropolitan agglomerations always contain exactly the same people.",
+        "A name alone guarantees a fixed population measure for all time.",
+        "Political boundaries can never affect an urban population count.",
+        "Municipal cores, continuous built-up areas and wider metropolitan regions may include different populations."
+      ],
+      "correctIndex": 3,
+      "explanation": "Different spatial units can generate different population totals for the same named urban region. Boundary choice, reference year and methodology must be clear before ranking or applying thresholds. A larger reported number may reflect broader coverage rather than faster actual growth. A: A municipal core can exclude settlements included in a wider agglomeration. B: Named cities change over time and can be measured with different units. C: Administrative boundaries can affect which residents are counted. D: This identifies the comparability problem."
+    },
+    {
+      "id": "hug-6-2-009",
+      "prompt": "The official framework notes many very large urban growth outcomes in peripheral and semiperipheral settings. Which interpretation avoids an overgeneralization?",
+      "options": [
+        "Every city in those settings is a metacity.",
+        "Core economies can contain no large cities.",
+        "The pattern describes a broad distributional tendency, while city sizes, histories and challenges still vary within and across regions.",
+        "All megacities have identical incomes, infrastructure and governance."
+      ],
+      "correctIndex": 2,
+      "explanation": "A broad spatial pattern does not assign the same size, income or experience to every city in a category. Large urban agglomerations exist in varied settings, and urban growth can have different historical and institutional contexts. The framework’s tendency should not be read as a universal rule about every city or resident. A: Many settlements remain below the population thresholds. B: The tendency does not exclude large cities elsewhere. C: This retains the general pattern while allowing documented variation. D: Population size does not make economic and institutional conditions identical."
+    },
+    {
+      "id": "hug-6-2-010",
+      "prompt": "A map shows low-density outward development. What additional evidence would best evaluate claims about its effects on travel and infrastructure?",
+      "options": [
+        "Actual trip patterns, transport options, service-network lengths and costs, alongside population and land-use data.",
+        "Only the color used to shade the development.",
+        "An assumption that every resident drives alone because the map has open space.",
+        "Only the name of the largest suburb."
+      ],
+      "correctIndex": 0,
+      "explanation": "Spatial form can suggest questions about access and infrastructure, but evaluating consequences requires actual behavior, available transport and service-network evidence. Low density alone does not reveal every household’s mode choice or quantify costs. Data should match the specific effect being claimed. A: These measures address the proposed consequences rather than infer them from appearance alone. B: Map color is a design choice, not a travel or cost measurement. C: The claim substitutes an assumption for observations. D: A place name does not measure routes, services or expenditure."
+    },
+    {
+      "id": "hug-6-2-011",
+      "prompt": "A suburb’s population rises while its housing and jobs become more diverse. Which conclusion requires caution?",
+      "options": [
+        "Suburbs can change in function and demographic composition.",
+        "All suburbs are permanently identical bedroom communities with the same residents and jobs.",
+        "Population growth can occur outside an older central city.",
+        "Land-use forms can evolve as a metropolitan region changes."
+      ],
+      "correctIndex": 1,
+      "explanation": "Suburban places vary and can acquire employment centers, denser housing and changing populations. Treating every suburb as one fixed residential type ignores that variation and evolution. Growth outside a core does not by itself establish the same trajectory or composition in all peripheral settlements. A: This is compatible with the supplied changes. B: This is the unsupported universal and unchanging characterization. C: This is consistent with suburban growth. D: This recognizes evolution rather than imposing a fixed category."
+    }
+  ]
+}
