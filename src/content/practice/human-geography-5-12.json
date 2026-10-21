@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 5,
+  "topicId": "topic-5-12",
+  "questions": [
+    {
+      "id": "hug-5-12-001",
+      "prompt": "Which statement correctly compares women’s shares in the two separate records?",
+      "options": [
+        "Women are 20% of agricultural workers and 60% of registered owners.",
+        "Women are 60% of recorded agricultural workers but 20% of registered landowners; participation and registered ownership are different measures.",
+        "Women are 60% of registered owners because 90 women work in agriculture.",
+        "Every woman who works in agriculture must appear in the landowner register."
+      ],
+      "correctIndex": 1,
+      "explanation": "The worker record gives 90/(90+60)=60% women. The owner register gives 10/(10+40)=20%. Different denominators and categories describe work and ownership. These group totals cannot identify whether an individual worker owns land, the area owned, unregistered rights or who controls production decisions. A: This reverses the two calculated shares. B: This computes each share with its own denominator and keeps the concepts distinct. C: Worker counts cannot substitute for the owner-register denominator. D: No individual linkage between the two records is supplied."
+    },
+    {
+      "id": "hug-5-12-002",
+      "prompt": "Which role pattern is supported by this survey, without assuming the same people perform every task?",
+      "options": [
+        "Women are a majority in planting and selling, but a minority in packing.",
+        "Women are a majority in all three roles because 80 is the largest count.",
+        "Men are absent from all stages of food production and distribution.",
+        "The chart shows that every surveyed woman owns a farm."
+      ],
+      "correctIndex": 0,
+      "explanation": "Women account for 60 of 100 recorded planting workers,10 of 100 packing workers and 80 of 100 selling workers. Their majority/minority position therefore differs by stage. The counts concern task-specific workers; they do not establish ownership, pay or whether the same individuals appear in multiple stages. A: This correctly compares women and men separately within each role. B: Packing has 10 women and 90 men, so one high selling count cannot describe every role. C: Men are explicitly recorded in each role. D: Task participation does not identify land ownership."
+    },
+    {
+      "id": "hug-5-12-003",
+      "prompt": "What is the correct comparison of the credit-approval results among applicants?",
+      "options": [
+        "Women have a 75% approval rate because 40 approvals exceed 15.",
+        "Men have more approvals in total, so their rate is necessarily lower.",
+        "Women receive more approvals in total, but their approval rate is 50%, below men’s 75%.",
+        "The totals prove every difference is caused by one particular lending rule."
+      ],
+      "correctIndex": 2,
+      "explanation": "Women have 40/80=50% approval; men 15/20=75%. Women receive more approvals in absolute number because more applied. The comparison can identify a disparity worth examining, but applicant characteristics, products and rules need further evidence before assigning a specific cause. A: Forty is a count; dividing by 80 gives 50%, not 75%. B: Men have 15 approvals rather than 40. C: This distinguishes absolute approvals from the group-specific rates. D: The table shows an outcome difference but does not isolate its cause."
+    },
+    {
+      "id": "hug-5-12-004",
+      "prompt": "Northern districts specialize in market gardening and southern districts in grain in this hypothetical region. Which conclusion best matches the management pattern and its limits?",
+      "options": [
+        "Every woman in the north manages a farm.",
+        "The map proves an innate biological preference for a particular crop.",
+        "Women manage a larger share in every southern district than in either northern district.",
+        "Women manage larger shares of operations in the northern gardening districts, but location and production type vary together and do not isolate a cause."
+      ],
+      "correctIndex": 3,
+      "explanation": "The north has 65% and 55% women-managed operations, compared with 25% and 35% in the south. This demonstrates variation among the supplied production regions. Because region and production type coincide, the map cannot establish an independent crop-type effect, innate preference or the role of every individual. A: The denominator is operations, not all women living in a district. B: An aggregate spatial association cannot establish an innate cause. C: Both northern values exceed both southern values. D: This identifies the observed contrast and the confounding of place with production type."
+    },
+    {
+      "id": "hug-5-12-005",
+      "prompt": "A farm census interviews only the person listed as household head and records only paid jobs. Which limitation is especially relevant to measuring women’s agricultural contributions?",
+      "options": [
+        "Unpaid family production, processing and marketing work may be missed when only paid jobs and one respondent’s status are counted.",
+        "All unpaid work must be unrelated to food production.",
+        "The head’s job automatically describes every other household member’s work.",
+        "A count of paid jobs is a complete measure of every form of agricultural labor."
+      ],
+      "correctIndex": 0,
+      "explanation": "Agrifood work can include unpaid family labor and tasks not captured by a narrow paid-job question. Interviewing one designated head can also conceal variation among household members. More complete measurement should distinguish tasks, time and compensation rather than assume that absence from payroll means no contribution. A: This identifies a plausible measurement omission without assigning every woman the same role. B: Unpaid work can contribute directly to farming and food handling. C: Household members can perform different activities. D: Paid-job counts omit the categories explicitly excluded by the survey."
+    },
+    {
+      "id": "hug-5-12-006",
+      "prompt": "Men in a community leave for off-farm work, and some women take on new crop-management and marketing decisions. What is the most defensible interpretation?",
+      "options": [
+        "Migration guarantees the same role change in every household worldwide.",
+        "Management change proves women now hold every legal land title.",
+        "Labor mobility can reshape agricultural roles, but the extent and associated rights need local evidence.",
+        "Women’s management responsibilities must be biologically fixed and unchanging."
+      ],
+      "correctIndex": 2,
+      "explanation": "Migration can change who supplies labor and makes farm decisions. In the scenario some women take on management, but land rights, income control and workloads may change differently. The appropriate explanation is a context-specific social and economic process rather than a universal or innate role. A: The stem describes some households in one community, not all places. B: Management and legal ownership are separate. C: This follows the supplied change while retaining the need to study rights and outcomes. D: The scenario directly shows roles changing with circumstances."
+    },
+    {
+      "id": "hug-5-12-007",
+      "prompt": "Women run a cooperative that processes crops and negotiates sales, while many members also grow food. What does this show about their roles?",
+      "options": [
+        "Women participate only in household consumption, not distribution.",
+        "Women’s contributions can extend across production, processing, marketing and collective decision-making.",
+        "Processing leadership proves that growing crops is unnecessary everywhere.",
+        "A cooperative guarantees identical returns and authority for every member."
+      ],
+      "correctIndex": 1,
+      "explanation": "Women may work and lead at several stages of agrifood systems. The cooperative illustrates processing, market negotiation and collective organization alongside cultivation. Recognizing this range avoids reducing women’s roles to one task while leaving actual pay and decision structures open to investigation. A: The supplied activities include processing and sales. B: This accurately recognizes the multiple described roles. C: The scenario links rather than eliminates growing and processing. D: Cooperative membership alone does not establish identical outcomes for all members."
+    },
+    {
+      "id": "hug-5-12-008",
+      "prompt": "A training program moves sessions to times compatible with participants’ care schedules, and attendance rises. Which further claim needs additional evidence?",
+      "options": [
+        "Scheduling can affect whether people are able to attend.",
+        "The attendance change is a program outcome worth recording.",
+        "Care responsibilities can constrain access to some opportunities.",
+        "Attendance alone proves all participants acquired secure land rights and equal control over farm income."
+      ],
+      "correctIndex": 3,
+      "explanation": "Attendance measures participation in training. It does not directly measure ownership, secure rights, skills gained, income or control of earnings. Removing a time barrier can be useful while other constraints remain. Additional outcomes require their own evidence rather than being assumed from one improved indicator. A: This is consistent with the stated timing change. B: Recording participation is relevant, though not the full evaluation. C: The scenario supplies care-schedule compatibility as a potential access factor. D: This leaps from attendance to unrelated rights and decision outcomes."
+    },
+    {
+      "id": "hug-5-12-009",
+      "prompt": "Two groups show different crop yields, but they also differ in land quality, water access, equipment and credit. Why is an innate-ability explanation unsupported?",
+      "options": [
+        "Observed yield differences always reveal biological ability without any other evidence.",
+        "Inputs and conditions cannot affect yields.",
+        "The groups face different production conditions, so the comparison does not isolate the proposed innate cause.",
+        "Equalizing one input would automatically prove every other difference irrelevant."
+      ],
+      "correctIndex": 2,
+      "explanation": "Yield reflects interacting resources, conditions, practices and opportunities. A comparison with unequal land and inputs cannot isolate an innate cause from those differences. Studying access and constraints is more appropriate than treating an aggregate gap as a biological explanation or assuming one adjustment resolves every factor. A: An outcome difference alone does not identify a cause. B: The listed production conditions can influence yields. C: This identifies confounding and limits the causal inference. D: Other conditions can remain different after one changes."
+    },
+    {
+      "id": "hug-5-12-010",
+      "prompt": "A national statistic gives women’s share of agricultural employment. What additional detail would most improve an analysis of geographic variation in roles?",
+      "options": [
+        "Disaggregation by region, production type and task, with clear denominators and attention to paid and unpaid work.",
+        "An assumption that every region matches the national share.",
+        "Only the country’s total land area, without employment information.",
+        "Replacing all local observations with the national average."
+      ],
+      "correctIndex": 0,
+      "explanation": "A national share can hide regional differences in production systems, tasks, compensation and survey coverage. Disaggregated evidence can show those contrasts when denominators and definitions are consistent. It should still not be used to assign one identical role to every person within a category. A: This supplies the spatial and production distinctions relevant to the question. B: That assumption removes the variation being investigated. C: Land area alone does not identify people’s work roles. D: Replacing detail with an average would conceal rather than explain variation."
+    },
+    {
+      "id": "hug-5-12-011",
+      "prompt": "Researchers want to know whether women influence farm decisions rather than only supply work-hours. Which evidence most directly addresses that question?",
+      "options": [
+        "A count of total hours alone, with no information on decisions.",
+        "Records of who participates in crop, spending and sale decisions, alongside ownership and work information.",
+        "An assumption that the longest-working person controls all income.",
+        "Only the farm’s total output weight."
+      ],
+      "correctIndex": 1,
+      "explanation": "Decision-making is a distinct dimension of agricultural roles. Evidence about who participates in production, expenditure and sales choices directly addresses influence. Ownership and labor records add context but should not substitute for observing decision processes; high hours alone do not establish control. A: Hours measure labor contribution rather than authority. B: These records directly concern the decisions of interest and distinguish related roles. C: Workload does not logically determine control of earnings. D: Output weight does not identify who makes choices."
+    }
+  ]
+}

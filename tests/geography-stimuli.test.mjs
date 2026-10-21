@@ -71,6 +71,18 @@ test('agricultural-consequence checks preserve salt mass, sediment percentages, 
   const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
  }
 });
+test('contemporary-agriculture evidence retains trait context, store access, cash timing and aquaculture ratios',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-5-11.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-5-11.json','utf8'));
+ for(const [i,change] of [[0,s=>s.series[1].values[1]=6],[1,s=>s.regions[1].value=10],[2,s=>s.rows[0][1]='After harvest'],[3,s=>s.rows[1][1]='20']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+test('women-in-agriculture evidence preserves distinct work, ownership, role, applicant and management denominators',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-5-12.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-5-12.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[1][1]='40'],[1,s=>s.series[0].values[1]=90],[2,s=>s.rows[0][1]='40'],[3,s=>s.regions[0].value=15]]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
 const base={title:'TEST ONLY',description:'Original hypothetical test data; not a published question.',caption:'TEST ONLY',hypothetical:true,attribution:'Original PrepAtlas schematic and synthetic data'};
 const chart={...base,kind:'chart',unitLabel:'People (thousands)',categories:['A','B'],series:[{label:'Year 1',values:[25,50]},{label:'Year 2',values:[50,75]}],max:100};
 const pyramid={...base,kind:'pyramid',unitLabel:'People (thousands)',max:100,cohorts:[{label:'0–14',ageStart:0,ageEnd:14,male:50,female:50},{label:'15–64',ageStart:15,ageEnd:64,male:75,female:75},{label:'65+',ageStart:65,ageEnd:null,male:25,female:25}]};

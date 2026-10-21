@@ -1,5 +1,13 @@
 # PrepAtlas milestone verification
 
+## Human Geography Unit 5 complete — Topics 5.11–5.12
+
+539 original MCQs across49 topics are published, eleven each;196 meaningful stimuli (36.36%) and213 explicit evidence/numerical/geometry checks. Units1–5 are complete. Contemporary Agriculture adds context-specific crop-trait trials, store travel, advance-payment/harvest-sharing terms and aquaculture ratios. Women in Agriculture separates workers/owners, task participation, applicant approval rates and regional management from rights, causes or individual roles. All evidence original and hypothetical.
+
+All175 tests, structural/evidence checks, TypeScript, production build, all68 Geography scopes and standard preview checks passed. Both full browser sessions scored11/11; all eight mobile stimuli inspected plus the management map on desktop in light mode. All172 Chemistry/Calculus lessons and all91 Chemistry Practice topics/nine units/course passed regression checks. Existing219 question files,188 stimuli and complete approved catalog remain semantically unchanged. Notes, browser keys, watched state and feedback untouched.
+
+Next6.1 — The Origin and Influences of Urbanization;19 topics/209 questions remain. The full748-question final audit is still pending bank completion. The owner’s new UI/Topic Summary phase is explicitly deferred until that audit passes; see NEXT_DEVELOPMENT_PHASE.md. No independent human review, empirical difficulty calibration or public deployment claimed.
+
 ## Human Geography Topics 5.9–5.10
 
 517 original MCQs across47 topics are published, eleven each;188 meaningful stimuli (36.36%) and205 explicit evidence/numerical/geometry checks. Global System covers international production stages, export-revenue shocks, a signed grain account and landed costs. Consequences covers salt accumulation, sediment reduction, original wetland conversion and combined paid/unpaid workloads. Primary FAO/UNCCD definitions checked; all four options explained and causal limits retained.

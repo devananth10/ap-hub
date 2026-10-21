@@ -1,0 +1,142 @@
+{
+  "topicNumber": "5.12",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "f1be8cc51dcd02a220e3523e8864f05d5335f56616e3dd8b063fd45218e43d8f",
+  "scopeReview": "IMP-5.C.1: geographic variation in women’s food-production, distribution and consumption roles across production types. Distinguishes participation, registered ownership, management, access and decision-making; includes agency and cooperative leadership alongside structural constraints, without fixed gender stereotypes.",
+  "varietyReview": "Four meaningful stimuli:work versus owner denominators, three-stage worker bars, credit applications/rates and original management-share map across production regions. Checks independently compute60%/20%, task-specific shares,50%/75% approval and north/south contrast. Qualitative source/scale cases assess omitted work, mobility and decision measurement.",
+  "repetitionReview": "Different denominators and evidence types prevent work, ownership, task shares, applicant rates and operation management being conflated. No global factual percentages or earlier time-use clone. Original synthetic examples, varied keys and all-option explanations; difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.fao.org/interactive/women-in-agrifood-systems/en/",
+    "https://www.fao.org/gender/the-status-of-women-in-agrifood-systems"
+  ],
+  "referenceNote": "FAO primary synthesis verified the relevance of resource access, unpaid work and varied agrifood roles. All counts, regions and programs fictional, not copied statistics; no personal data or real credit eligibility decision. No resource addition or independent human-review claim.",
+  "questions": [
+    {
+      "questionId": "hug-5-12-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Women are 60% of recorded agricultural workers but 20% of registered landowners; participation and registered ownership are different measures.",
+      "independentReview": "Independently calculated90/150=.60 and10/50=.20. Registers are separate universes, not necessarily disjoint; no assumption that owner counts measure hectares, secure customary rights or decision authority.",
+      "check": {
+        "type": "women-work-ownership"
+      },
+      "questionSha256": "dec0e64df11ac63cc9a9ed7783dd040c7125f48b7bfa1a7be48e5813b9f1b362",
+      "stimulusSha256": "9a3eb35d274a29497ac1b3086ae1b29cc7fd637e7488ad0319fe62b8c1a1c84b"
+    },
+    {
+      "questionId": "hug-5-12-002",
+      "skill": "Data Analysis",
+      "difficulty": "foundational",
+      "correctOption": "Women are a majority in planting and selling, but a minority in packing.",
+      "independentReview": "Independently checked women’s stage shares60%,10%,80%. Each denominator100 is supplied; role groups may overlap, so no total unique population is obtained by adding all role counts.",
+      "check": {
+        "type": "women-stage-participation"
+      },
+      "questionSha256": "c7486b8c09b7b5b1c39738bd8643e37ad536c872f480f4600b43be3e862c8852",
+      "stimulusSha256": "addf4178b5e539da5334ed183ddbd4fead38bfd9b85b4937700c48c9503c23d0"
+    },
+    {
+      "questionId": "hug-5-12-003",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Women receive more approvals in total, but their approval rate is 50%, below men’s 75%.",
+      "independentReview": "Independently recomputed50% versus75% and40>15. Denominator is applicants, not all farmers or all women/men in the community. No causal discrimination finding or actual credit decision inferred.",
+      "check": {
+        "type": "women-credit-denominators"
+      },
+      "questionSha256": "0ed0904fad273cc6386196c33a9e66c02cdeb4a53bf0025c38377143e1294bb5",
+      "stimulusSha256": "5370df12dbedf83b7efbd7a2f009811fbc3501d4761594047b2a95d1428d435f"
+    },
+    {
+      "questionId": "hug-5-12-004",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "Women manage larger shares of operations in the northern gardening districts, but location and production type vary together and do not isolate a cause.",
+      "independentReview": "Checked each northvalue65/55 exceeds each southvalue25/35, and map values are shares of operations managed, not shares of female residents employed. Fictional regional mix cannot establish biological traits, universal roles or an independent causal crop effect.",
+      "check": {
+        "type": "women-regional-management"
+      },
+      "questionSha256": "a02815c3d78138352e859ab89060b4ea563ab101af938af69363820c0f458259",
+      "stimulusSha256": "079e6d1779266d52d1129e339321357630dbb8a7fa5866c49e67f1a765a41f05"
+    },
+    {
+      "questionId": "hug-5-12-005",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Unpaid family production, processing and marketing work may be missed when only paid jobs and one respondent’s status are counted.",
+      "independentReview": "FAO measurement themes checked; no global labor percentage or assumption that every household head is male. The concern follows the stated survey exclusions.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "7262a8729e8702567eaf9882688a0182c6d90d57ca906110e130e658ce5e0235"
+    },
+    {
+      "questionId": "hug-5-12-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Labor mobility can reshape agricultural roles, but the extent and associated rights need local evidence.",
+      "independentReview": "Separated migration-associated responsibility from automatic empowerment or ownership. No claim that every male migrant leaves permanently or that all remaining women experience the same changes.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "c66f5d3b252228a1378861b6afadf1ec3ea4e909dec93d8102a110ce71198cf5"
+    },
+    {
+      "questionId": "hug-5-12-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Women’s contributions can extend across production, processing, marketing and collective decision-making.",
+      "independentReview": "Aligned IMP-5.C.1 food production/distribution/consumption and variation by production type. Agency and leadership retained; no stereotype that women only perform subsistence labor.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b355496343bc4ba477a8bc08f40aeba671dbfa590a4e4f474222e878a5c80d78"
+    },
+    {
+      "questionId": "hug-5-12-008",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Attendance alone proves all participants acquired secure land rights and equal control over farm income.",
+      "independentReview": "Kept an improved participation indicator distinct from ownership or empowerment measures. No causal effect size or universal care role assigned.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "73749cef0bd9277c6734c722780660cc7f517bfc1f8a0c9abeb91c6332397044"
+    },
+    {
+      "questionId": "hug-5-12-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "The groups face different production conditions, so the comparison does not isolate the proposed innate cause.",
+      "independentReview": "Avoided introducing a real sex-based yield gap or claiming any intervention is guaranteed to close it. The correct logic follows unequal observed conditions, not an unsupported biological assertion.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "178f87fefd46b3103ea7838006029c6a31f8fe4442477c911b478d21265d144a"
+    },
+    {
+      "questionId": "hug-5-12-010",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Disaggregation by region, production type and task, with clear denominators and attention to paid and unpaid work.",
+      "independentReview": "Directly matched official geographic-variation objective. No global average substituted for local evidence; clear categories avoid mixing women’s share of workers with all women’s employment rate.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "84cdb78df22d9c2b48048bf42c1fe0c6ab5c2321b2e1265e1d83d1d488b999fa"
+    },
+    {
+      "questionId": "hug-5-12-011",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Records of who participates in crop, spending and sale decisions, alongside ownership and work information.",
+      "independentReview": "Checked outcome-to-measure alignment and preserved joint as well as individual decision possibilities. No universal inference from household title, membership or hours to power.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "f6041170e2732c265cceffd0e3e69975e1dc68e9c25456ee5e6370712c057b08"
+    }
+  ]
+}

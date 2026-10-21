@@ -10049,5 +10049,411 @@
         "2"
       ]
     ]
+  },
+  "hug-5-11-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Yield response to one target-insect-resistant trait",
+    "description": "Hypothetical matched trial of otherwise comparable crop lines. With high target-insect pressure:conventional yield 3, resistant yield 5 tonnes/hectare. Without that insect:both yield 5. Other trial conditions are matched within each location.",
+    "caption": "Original synthetic trait/context comparison. The graph measures yield, not all costs, pesticide use, biodiversity effects or food safety. No actual cultivar is represented.",
+    "unitLabel": "Tonnes/hectare",
+    "categories": [
+      "High pest",
+      "No target pest"
+    ],
+    "series": [
+      {
+        "label": "Conventional",
+        "values": [
+          3,
+          5
+        ]
+      },
+      {
+        "label": "Target-resistant",
+        "values": [
+          5,
+          5
+        ]
+      }
+    ],
+    "max": 6
+  },
+  "hug-5-11-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "Travel time to a full-service food store",
+    "description": "Hypothetical district medians for a one-way trip:West 10 minutes, Central 50, East 20. Recorded household incomes and food prices are comparable for this exercise. Other aspects of access are not fully measured.",
+    "caption": "Original synthetic screening map. Store type and trip definition are held consistent; medians can hide within-district variation, and the map alone does not establish every resident’s food security.",
+    "unitLabel": "Median one-way travel time (minutes)",
+    "regions": [
+      {
+        "label": "West",
+        "value": 10,
+        "polygon": [
+          [
+            5,
+            5
+          ],
+          [
+            34,
+            5
+          ],
+          [
+            30,
+            55
+          ],
+          [
+            5,
+            55
+          ]
+        ],
+        "labelPoint": [
+          19,
+          30
+        ]
+      },
+      {
+        "label": "Central",
+        "value": 50,
+        "polygon": [
+          [
+            34,
+            5
+          ],
+          [
+            63,
+            5
+          ],
+          [
+            67,
+            55
+          ],
+          [
+            30,
+            55
+          ]
+        ],
+        "labelPoint": [
+          48,
+          30
+        ]
+      },
+      {
+        "label": "East",
+        "value": 20,
+        "polygon": [
+          [
+            63,
+            5
+          ],
+          [
+            95,
+            5
+          ],
+          [
+            95,
+            55
+          ],
+          [
+            67,
+            55
+          ]
+        ],
+        "labelPoint": [
+          81,
+          30
+        ]
+      }
+    ],
+    "bins": [
+      {
+        "min": 0,
+        "max": 25,
+        "label": "Under 25 minutes"
+      },
+      {
+        "min": 25,
+        "max": 45,
+        "label": "25–44 minutes"
+      },
+      {
+        "min": 45,
+        "max": 61,
+        "label": "45–60 minutes"
+      }
+    ]
+  },
+  "hug-5-11-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Two direct-sale arrangements",
+    "description": "Hypothetical farm offers. A:members pay 300 currency units before planting and receive a season’s harvest share, whose quantity varies with the harvest. B:buyers pay for individual purchases on delivery with no preseason payment.",
+    "caption": "Original terms for comparing cash timing and shared production risk. Neither arrangement promises a particular profit, identical food value or affordability for every household.",
+    "headers": [
+      "Arrangement",
+      "When money is paid",
+      "What the buyer receives"
+    ],
+    "rows": [
+      [
+        "A",
+        "Before planting",
+        "Variable seasonal harvest share"
+      ],
+      [
+        "B",
+        "At each delivery purchase",
+        "The purchased quantity"
+      ]
+    ]
+  },
+  "hug-5-11-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Two aquaculture systems with equal fish output",
+    "description": "Hypothetical annual systems comparison. A:fish output 10 tonnes, feed 20 tonnes, measured nutrient discharge 100 kg. B:fish output 10 tonnes, feed 12 tonnes, nutrient discharge 40 kg.",
+    "caption": "Original synthetic efficiency/discharge data. The nutrient is measured consistently between systems; unlisted outcomes remain unknown. Ratios compare feed and output in the same mass unit.",
+    "headers": [
+      "System",
+      "Fish (t)",
+      "Feed (t)",
+      "Discharge (kg)"
+    ],
+    "rows": [
+      [
+        "A",
+        "10",
+        "20",
+        "100"
+      ],
+      [
+        "B",
+        "10",
+        "12",
+        "40"
+      ]
+    ]
+  },
+  "hug-5-12-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Work participation and registered ownership records",
+    "description": "Hypothetical community. Agricultural-worker record:women 90, men 60. Registered-landowner record:women 10, men 40. Each row is a separate complete record; individual links and land areas are not supplied.",
+    "caption": "Original synthetic data. A worker may or may not be a registered owner. Registration is not a complete measure of all use rights, management or control of earnings.",
+    "headers": [
+      "Record",
+      "Women",
+      "Men"
+    ],
+    "rows": [
+      [
+        "Agricultural workers",
+        "90",
+        "60"
+      ],
+      [
+        "Registered landowners",
+        "10",
+        "40"
+      ]
+    ]
+  },
+  "hug-5-12-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Recorded workers in three agrifood roles",
+    "description": "Hypothetical task survey. Planting:women 60, men 40. Packing:women 10, men 90. Selling:women 80, men 20. Each role has 100 recorded workers; a person may be counted in more than one role.",
+    "caption": "Original synthetic participation counts. Compare roles separately; do not add them to estimate unique people or infer wages, ownership or decision-making.",
+    "unitLabel": "Recorded workers",
+    "categories": [
+      "Planting",
+      "Packing",
+      "Selling"
+    ],
+    "series": [
+      {
+        "label": "Women",
+        "values": [
+          60,
+          10,
+          80
+        ]
+      },
+      {
+        "label": "Men",
+        "values": [
+          40,
+          90,
+          20
+        ]
+      }
+    ],
+    "max": 100
+  },
+  "hug-5-12-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Applications and approvals for one farm-credit program",
+    "description": "Hypothetical program records:women 80 applicants and 40 approvals; men 20 applicants and 15 approvals. Every approval belongs to a listed applicant. Other applicant and loan characteristics are not provided.",
+    "caption": "Original synthetic aggregate outcomes. Rates use applicants as denominators; the table alone does not explain why an application was approved or denied.",
+    "headers": [
+      "Applicant group",
+      "Applications",
+      "Approvals"
+    ],
+    "rows": [
+      [
+        "Women",
+        "80",
+        "40"
+      ],
+      [
+        "Men",
+        "20",
+        "15"
+      ]
+    ]
+  },
+  "hug-5-12-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "Women-managed operations in four production districts",
+    "description": "Hypothetical survey:NW 65%, NE 55%, SW 25%, SE 35% of agricultural operations are women-managed. Northern districts specialize in market gardening; southern districts in grain. Other regional conditions may also differ.",
+    "caption": "Original synthetic production-region comparison. Management, ownership and labor participation are separate categories. District percentages do not identify every resident’s role or establish why the pattern occurs.",
+    "unitLabel": "Operations managed by women (%)",
+    "regions": [
+      {
+        "label": "NW",
+        "value": 65,
+        "polygon": [
+          [
+            5,
+            5
+          ],
+          [
+            50,
+            5
+          ],
+          [
+            45,
+            30
+          ],
+          [
+            5,
+            30
+          ]
+        ],
+        "labelPoint": [
+          24,
+          17
+        ]
+      },
+      {
+        "label": "NE",
+        "value": 55,
+        "polygon": [
+          [
+            50,
+            5
+          ],
+          [
+            95,
+            5
+          ],
+          [
+            95,
+            30
+          ],
+          [
+            45,
+            30
+          ]
+        ],
+        "labelPoint": [
+          73,
+          17
+        ]
+      },
+      {
+        "label": "SW",
+        "value": 25,
+        "polygon": [
+          [
+            5,
+            30
+          ],
+          [
+            45,
+            30
+          ],
+          [
+            50,
+            55
+          ],
+          [
+            5,
+            55
+          ]
+        ],
+        "labelPoint": [
+          24,
+          43
+        ]
+      },
+      {
+        "label": "SE",
+        "value": 35,
+        "polygon": [
+          [
+            45,
+            30
+          ],
+          [
+            95,
+            30
+          ],
+          [
+            95,
+            55
+          ],
+          [
+            50,
+            55
+          ]
+        ],
+        "labelPoint": [
+          73,
+          43
+        ]
+      }
+    ],
+    "bins": [
+      {
+        "min": 0,
+        "max": 40,
+        "label": "Under 40%"
+      },
+      {
+        "min": 40,
+        "max": 60,
+        "label": "40–59%"
+      },
+      {
+        "min": 60,
+        "max": 101,
+        "label": "60–100%"
+      }
+    ]
   }
 }

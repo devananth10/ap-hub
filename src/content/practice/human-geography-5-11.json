@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 5,
+  "topicId": "topic-5-11",
+  "questions": [
+    {
+      "id": "hug-5-11-001",
+      "prompt": "The two crop lines are otherwise comparable, and each location has matched trial conditions. What does the pattern suggest about the target-insect-resistant trait?",
+      "options": [
+        "It raises yield by the same amount regardless of target-insect pressure.",
+        "The no-pressure location proves all crop biotechnology is ineffective.",
+        "The observed yield benefit depends on the target pest’s pressure; the trial does not establish every environmental or economic outcome.",
+        "The trial proves that all engineered crops have identical effects in every place."
+      ],
+      "correctIndex": 2,
+      "explanation": "Under high target-pest pressure, the resistant line yields 5 versus 3 tonnes/hectare. Where the target pest is absent, both yield 5. The trait’s observed benefit is context-dependent. These yield observations alone do not measure pesticide use, seed costs, resistance evolution or broader environmental performance. A: The benefit is 2 tonnes/hectare in one treatment and 0 in the other. B: No yield difference without that pest does not negate a benefit under pest pressure. C: This follows both comparisons while limiting the conclusion to measured outcomes. D: A particular trait and trial cannot establish uniform outcomes for all crop technologies."
+    },
+    {
+      "id": "hug-5-11-002",
+      "prompt": "The districts have similar recorded household incomes and the same food prices. Which district has the largest mapped transport-access barrier to the specified full-service food store?",
+      "options": [
+        "Central, with a 50-minute one-way trip; access still requires evidence beyond a travel-time map.",
+        "West, because 10 minutes is the longest trip shown.",
+        "East, because 20 minutes exceeds 50 minutes.",
+        "All districts have identical access because a store exists somewhere in the region."
+      ],
+      "correctIndex": 0,
+      "explanation": "Central’s 50-minute median trip is longer than West’s 10 and East’s 20. Travel time can constrain food access even when income and prices are comparable. The map is a screening measure for one store/service definition, not proof of every household’s diet, transport mode or food security. A: This identifies the measured barrier and retains the limits of a district median. B: Ten minutes is shorter than both other district values. C: Twenty is below 50. D: Regional store presence does not make each district’s journey equal."
+    },
+    {
+      "id": "hug-5-11-003",
+      "prompt": "Which arrangement provides money before planting while members share the stated variability of the season’s harvest?",
+      "options": [
+        "Arrangement B, because no prepayment is required.",
+        "Neither arrangement, because farming risk disappears whenever food is sold.",
+        "Arrangement A, because members prepay for a harvest share rather than a guaranteed quantity.",
+        "Both arrangements guarantee each member exactly the same harvest under every weather condition."
+      ],
+      "correctIndex": 2,
+      "explanation": "In A, members pay before the season for a variable harvest share, supplying early cash while accepting the stated production risk. This is a community-supported-agriculture mechanism. B’s payment at each purchase can serve a market but does not provide the same upfront subscription funding under these terms. A: B’s pay-at-purchase terms do not supply money before planting. B: Sales arrangements can allocate risk without eliminating it. C: This follows the supplied payment timing and variable-share condition. D: A explicitly offers a variable share rather than a guaranteed amount."
+    },
+    {
+      "id": "hug-5-11-004",
+      "prompt": "Both aquaculture systems produce 10 tonnes of fish. Which assessment is supported by the measured feed and nutrient-discharge evidence?",
+      "options": [
+        "A uses less feed per tonne because 20 is less than 12.",
+        "B has no environmental impacts of any kind because one discharge measure is lower.",
+        "A and B have identical feed requirements because fish output is equal.",
+        "B uses less feed per tonne and releases less of the measured nutrient, but other impacts still need assessment."
+      ],
+      "correctIndex": 3,
+      "explanation": "A uses 20/10=2 tonnes of feed per tonne of fish; B uses 12/10=1.2. The measured nutrient discharge is also lower in B:40 versus 100 kg. These are improvements in the stated indicators, not proof about water demand, habitat, disease, feed sourcing or every social and environmental outcome. A: A has the larger feed input for the same fish output. B: A lower measured discharge does not establish zero impacts in all categories. C: Equal output can be achieved with different input quantities. D: This correctly compares both indicators and retains the assessment’s limits."
+    },
+    {
+      "id": "hug-5-11-005",
+      "prompt": "A farm earns a premium for a documented production label. What additional evidence is needed before concluding that the labeled system has lower overall environmental impact?",
+      "options": [
+        "Only the label’s color and package size.",
+        "Measures of relevant outcomes and inputs under comparable conditions, rather than assume one label proves every outcome.",
+        "An assumption that all labeled farms have zero land and water use.",
+        "Only the retail price, which directly measures all ecosystem effects."
+      ],
+      "correctIndex": 1,
+      "explanation": "Labels can describe standards, methods or market commitments, but overall impacts require evidence about production, water, soils, biodiversity and other relevant outcomes. Comparable contexts and clear system boundaries matter. This applies to debates over organic and other systems without treating a label as proof of zero impacts or dismissing the practices it represents. A: Visual branding does not measure production impacts. B: This tests the claim using relevant evidence rather than the name alone. C: All farming requires resources; the assumption would substitute for assessment. D: Price reflects market factors and is not a complete environmental inventory."
+    },
+    {
+      "id": "hug-5-11-006",
+      "prompt": "A community considers growing vegetables on vacant urban plots near residents with limited food access. Which evaluation best matches the proposal’s potential and limits?",
+      "options": [
+        "It could add a nearby food source, but land suitability, water, tenure, costs and distribution still affect feasibility and access.",
+        "It guarantees all food needs will be met without considering available area.",
+        "It makes every existing food retailer and delivery route unnecessary.",
+        "It proves urban land always has identical growing conditions to rural farmland."
+      ],
+      "correctIndex": 0,
+      "explanation": "Urban farming can create local production opportunities, but its role depends on usable land, growing conditions, resources, rights and how food reaches residents. A nearby plot can complement rather than automatically replace wider food networks. Production location alone does not guarantee affordability or sufficient volume. A: This recognizes a plausible contribution and the relevant conditions to examine. B: A limited plot does not establish sufficient output for all needs. C: Other supply channels can remain important. D: Urban sites vary and require evidence about suitability rather than an assumption of uniformity."
+    },
+    {
+      "id": "hug-5-11-007",
+      "prompt": "A specialty-food cooperative raises its selling price, but certification, processing and marketing costs also rise. Which measure best tests whether participating growers benefit financially?",
+      "options": [
+        "Gross retail price alone.",
+        "The number of products displayed on the package.",
+        "Growers’ actual net returns and payment terms, including added costs and how the premium is distributed.",
+        "An assumption that every premium reaches every farmer in full."
+      ],
+      "correctIndex": 2,
+      "explanation": "A higher final price may be divided among several stages and offset by expenses. Evaluating value-added or fair-trade-oriented initiatives therefore requires actual grower payments, costs, risks and terms. The label or premium alone does not establish equal gains or the distribution of returns. A: Gross retail price does not isolate what growers receive or spend. B: Package variety does not measure their financial result. C: These accounts address the proposed beneficiary and relevant costs. D: Assuming full transfer would pre-empt rather than test the question."
+    },
+    {
+      "id": "hug-5-11-008",
+      "prompt": "Suburban housing replaces productive farmland near a city. Which assessment avoids treating one land-use benefit as the whole outcome?",
+      "options": [
+        "The new houses prove food production has increased on the converted land.",
+        "Farmland conversion has no possible relationship to local food-production capacity.",
+        "All housing construction must be rejected without considering demand or alternatives.",
+        "Housing needs, lost production capacity, infrastructure and environmental effects should be examined together."
+      ],
+      "correctIndex": 3,
+      "explanation": "Suburbanization can meet housing demand while removing or fragmenting farmland and changing infrastructure and environmental conditions. A balanced assessment considers these outcomes and alternatives. It should not infer that either one benefit or one cost makes every conversion identical or determines the appropriate local decision. A: Housing replaces rather than directly demonstrates crop production on that parcel. B: Removing productive land can affect local capacity. C: A complete assessment includes needs and alternatives instead of assuming an outcome. D: This includes the relevant competing uses and consequences."
+    },
+    {
+      "id": "hug-5-11-009",
+      "prompt": "Consumers shift demand toward foods requiring more feed-crop inputs per unit of final output. All else equal, what upstream change might producers need to consider?",
+      "options": [
+        "Greater demand for feed crops and associated land, water or input use along the production chain.",
+        "The disappearance of all links between diets and farming.",
+        "An automatic reduction in every agricultural input regardless of production method.",
+        "A guarantee that every food has the same resource requirement."
+      ],
+      "correctIndex": 0,
+      "explanation": "Dietary choices can alter demand not only for final foods but also for upstream feed and other inputs. The scenario specifies greater feed needs, so those linked resources become relevant. Actual impacts depend on sourcing, production systems and efficiency; the statement is not nutritional advice or a universal ranking of every food. A: This traces the additional input requirement to upstream production. B: Consumption changes can influence production through market demand. C: That contradicts the stated greater feed requirement under otherwise unchanged conditions. D: Different products and systems can have different input requirements."
+    },
+    {
+      "id": "hug-5-11-010",
+      "prompt": "A subsidy makes one farming technology cheaper to acquire. Which conclusion about its adoption is most defensible?",
+      "options": [
+        "Every farmer must adopt immediately regardless of suitability or operating costs.",
+        "Acquisition price is the only possible cost of using technology.",
+        "The policy changes an incentive, but suitability, operating costs, knowledge and access can still produce uneven uptake.",
+        "Government policies cannot influence agricultural choices."
+      ],
+      "correctIndex": 2,
+      "explanation": "Policy can alter relative costs and incentives without determining every decision. Operating expenses, training, farm conditions, credit and expected returns still matter. Evaluating adoption requires both the policy change and the circumstances in which producers operate. A: Lower purchase cost does not remove all constraints or risks. B: Maintenance, labor and other costs may remain. C: This recognizes the policy’s influence and remaining sources of variation. D: Changing costs is a plausible way for policy to affect choices."
+    },
+    {
+      "id": "hug-5-11-011",
+      "prompt": "A region’s food shops have adequate stocks, but many households cannot afford them. What does this show about the challenge of feeding people?",
+      "options": [
+        "Food insecurity can be evaluated only by national harvest tonnage.",
+        "Physical availability and affordable access are different dimensions; increasing supply alone may not resolve the stated barrier.",
+        "Adequate shop stocks prove every household consumes a sufficient diet.",
+        "Affordability is unrelated to whether people can obtain food."
+      ],
+      "correctIndex": 1,
+      "explanation": "Food can be present in a region yet inaccessible to some households because of income and prices. The stated problem is purchasing access rather than the complete absence of stocks. Production and distribution remain important, but this case requires evidence and responses relevant to the actual constraint. A: Harvest totals do not measure each household’s purchasing ability. B: This identifies the barrier without equating supply with access. C: Shop inventory does not establish household consumption. D: Purchasing power can directly affect obtaining food."
+    }
+  ]
+}

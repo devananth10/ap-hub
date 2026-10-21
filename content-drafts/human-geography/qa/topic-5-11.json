@@ -1,0 +1,143 @@
+{
+  "topicNumber": "5.11",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "ba807a664c7e3c37b7018ea17ad659cba0fed1e3977cfeb80eb1f1f809695726",
+  "scopeReview": "IMP-5.B.1–4: contextual biotechnology/aquaculture evaluation, food-choice movements and direct sales, food access/distribution/weather and suburban land conversion, and policy/economic incentives. No universal GMO, organic, local-food or fair-trade benefit/harm claim.",
+  "varietyReview": "Four meaningful stimuli:target-pest yield comparison, original store-travel map, direct-sale terms and aquaculture input/discharge accounts. Checks compare response differences, unique travel maximum, advance cash/risk terms and feed ratios. Applied cases cover labels, urban growing, premiums, diets and policy.",
+  "repetitionReview": "Access, contextual trait performance, contract timing and feed conversion are distinct tasks. The final affordability case distinguishes price constraints from geographic travel; no exact repeated stem or numerical-only clone. Original synthetic evidence, detailed options and varied keys; difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.fao.org/4/y5098e/y5098e05.htm",
+    "https://www.fao.org/fishery/docs/CDrom/T583/root/full.pdf",
+    "https://www.fsa.usda.gov/Internet/FSA_File/1-nap_r02_a17.pdf"
+  ],
+  "referenceNote": "Primary aquaculture research themes and USDA CSA risk-sharing description checked. No actual cultivar, medical claim, current legal certification rule, third-party content or resource imported. Fictional sale terms are not legal advice; no independent human review claimed.",
+  "questions": [
+    {
+      "questionId": "hug-5-11-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The observed yield benefit depends on the target pest’s pressure; the trial does not establish every environmental or economic outcome.",
+      "independentReview": "Independently compared matched yields5−3=2 under pressure and5−5=0 without. Trait specifically targets one insect, not all pests or drought. No health/safety inference, chemical-use quantity or universal GMO effect claimed.",
+      "check": {
+        "type": "challenges-target-pest-trial"
+      },
+      "questionSha256": "21a4b780bb73650abd68396d9c96e0fde493a9208349acd91a24f8f81ec829c4",
+      "stimulusSha256": "0fd971ff125067ba47f212a40fdf51dd971d85341080ed25a8d877cc862164c9"
+    },
+    {
+      "questionId": "hug-5-11-002",
+      "skill": "Spatial Relationships",
+      "difficulty": "foundational",
+      "correctOption": "Central, with a 50-minute one-way trip; access still requires evidence beyond a travel-time map.",
+      "independentReview": "Checked the maximum50 is unique and means one-way median travel, not distance, income or all-household behavior. Avoided assigning a formal real-world food-desert designation from one metric alone.",
+      "check": {
+        "type": "challenges-food-access"
+      },
+      "questionSha256": "e2cc5bfab970cec98632a7286173036130f53472fd959a8c5aeebe6060b8949d",
+      "stimulusSha256": "b221828270ad4e01bf0c3b09b7e1ebd13079a1db00df300ed319a3166d88bb4f"
+    },
+    {
+      "questionId": "hug-5-11-003",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Arrangement A, because members prepay for a harvest share rather than a guaranteed quantity.",
+      "independentReview": "Checked contract terms as a hypothetical CSA example, not a claim all CSAs use identical rules. No legal contract interpretation or guaranteed farmer profit asserted; members’ cash timing and risk terms are separate.",
+      "check": {
+        "type": "challenges-csa-terms"
+      },
+      "questionSha256": "f07f70955554537d830fa3565531d9a0628d50e1f053172a6684af58dd28bc13",
+      "stimulusSha256": "497844e665c0a4331695bde5b66c4e4b69357fa7bacabd0447784c34f7b9b9ae"
+    },
+    {
+      "questionId": "hug-5-11-004",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "B uses less feed per tonne and releases less of the measured nutrient, but other impacts still need assessment.",
+      "independentReview": "Independently recomputed feed ratios2.0/1.2 and nutrient reduction60%. No assumption all fish species/systems share those efficiencies or that feed ingredients have identical upstream effects.",
+      "check": {
+        "type": "challenges-aquaculture-inputs"
+      },
+      "questionSha256": "8d8f90c39702390612d47258d5d0c3431013ea45e2815dd69825006fe793de23",
+      "stimulusSha256": "dec34bac128db5803d05d1e900de9ddbaea3d37b94212092e73685b55561ed24"
+    },
+    {
+      "questionId": "hug-5-11-005",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Measures of relevant outcomes and inputs under comparable conditions, rather than assume one label proves every outcome.",
+      "independentReview": "Avoided unverified current certification rules or universal health claims. Question asks evidence for a broad impact claim, not whether any particular label is legally valid.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "8f958779f4ddb4ca9f8514349818ccd9391040541d3c8f3c16fb843b19d34f1b"
+    },
+    {
+      "questionId": "hug-5-11-006",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "It could add a nearby food source, but land suitability, water, tenure, costs and distribution still affect feasibility and access.",
+      "independentReview": "A hypothetical planning assessment, not practical soil-treatment advice or an actual health/safety claim. No automatic food-security guarantee from geographic proximity.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "43222d1130e4be749925025d59ec9ae640c21b36b78a72209782f2ebc7a7b7e9"
+    },
+    {
+      "questionId": "hug-5-11-007",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Growers’ actual net returns and payment terms, including added costs and how the premium is distributed.",
+      "independentReview": "No current certification guarantee, named fair-trade organization or actual premium claimed. Distinguishes final product price from producer outcomes and allows possible benefits without asserting universality.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "732ace319a2797822bc48ca61a0604bcefcfce8c89fac6b0eec9fc9ce45bef26"
+    },
+    {
+      "questionId": "hug-5-11-008",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Housing needs, lost production capacity, infrastructure and environmental effects should be examined together.",
+      "independentReview": "Aligned farmland loss to suburbanization in IMP-5.B.3 without prescribing a real zoning decision or assuming uniform soil value, food supply or housing demand.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "9bdbc3e12fe64aa2a91d7cc5c4d739a10b8e8db0ec85f7c0eae0403bdcd4100f"
+    },
+    {
+      "questionId": "hug-5-11-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Greater demand for feed crops and associated land, water or input use along the production chain.",
+      "independentReview": "Used a stated hypothetical input difference rather than an unsupported livestock/crop footprint statistic. No dietary health guidance or claim that all animal foods use identical feed systems.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "f00fac5281171664ea05ce15e56b676210d55cb8be256e3942149d02d16ddcbf"
+    },
+    {
+      "questionId": "hug-5-11-010",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "The policy changes an incentive, but suitability, operating costs, knowledge and access can still produce uneven uptake.",
+      "independentReview": "Hypothetical incentive, not a current subsidy or legal entitlement. Conditional uptake reasoning avoids guaranteeing profitability or requiring a farmer to adopt.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "9049af654de94305872b6614d0768c2696e420112271394986cc385ef45d2519"
+    },
+    {
+      "questionId": "hug-5-11-011",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Physical availability and affordable access are different dimensions; increasing supply alone may not resolve the stated barrier.",
+      "independentReview": "Separated an explicitly stated affordability constraint from transport access in the map item. No specific real food-insecurity threshold or program recommendation introduced.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "8eac364e7ccf915a8dad16fcd5038c8fee6c25905efb0a77572628425a68cbf0"
+    }
+  ]
+}

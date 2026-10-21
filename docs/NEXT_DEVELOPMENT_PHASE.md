@@ -1,0 +1,15 @@
+# Authorized development order — October 20, 2026
+
+The owner's latest instruction explicitly requires completing **all 748 Human Geography MCQs across 68 official topics**, then passing the full bank/content/Practice audit and saving a verified GitHub checkpoint **before** starting the following UI or summary work. Current counts and the exact next topic are in `content-drafts/human-geography/PROGRESS.json`. Preserve valid unfinished work and never run concurrent generators or regenerate complete sets.
+
+## After the complete Geography bank passes its final audit
+
+The owner also authorized these subsequent phases; they are pending, not completed or abandoned:
+
+1. Refine the shared lesson interface within the existing green/teal design: concise canonical topic headers/breadcrumbs, explicit selected-instructor versus total video counts, readable supporting text, one clear topic Start Practice action, and distinct topic completion/video watched/Practice score semantics. Preserve all storage and playback.
+2. Investigate chart series-letter labels, including the reported repeated A in Human Geography 4.1. Determine their purpose before changing the shared renderer. Improve suitable desktop stimulus/answers layouts while retaining readable stacked mobile views, all legends/equivalent data, zoom/focus and Practice state. Put secondary scoring instructions in an accessible disclosure without changing first-graded-answer rules. Preserve reporting and navigation.
+3. Replace the demo with **Topic Summary**: original, pre-generated, curriculum-aligned, validated content, never presented as live AI or a video analysis. Target all actual canonical topics in the three developed courses: Chemistry91, Calculus AB81, Human Geography68 (verify240 total). Structured central storage with course/topic IDs and validation/publication status, shared instant expand/collapse renderer near video/notes, no playback reset. Unvalidated entries stay honestly unavailable.
+4. Create summaries in tested batches: approximately1–2-minute reading, overview,3–5 key concepts, one original worked example, misconception and useful AP application reminder. Use flexible headings, supported math/tables/diagrams where useful. Independently verify chemistry, units/equations, AB calculations/theorem conditions and geographic concepts/models; preserve scope. No teacher transcripts, exam text, textbooks or paid-guide copying. Owner authorizes automatic publication only after validation.
+5. Test desktop/mobile, light/dark contrast, keyboard/focus/screen-reader labels, course mappings, math and geography rendering. Check existing question banks, approved videos/instructor preference, notes/watched/saved progress and feedback. Save tested incremental commits and verify normal pushes to the existing upstream.
+
+No paid AI APIs, new repository, public deployment, broad redesign, changed scoring rules or erased student data. Record precise published summary counts and next unfinished topics if interrupted. Automated checks are not independent human review. Do not claim any pending phase is implemented merely because this plan is saved.
