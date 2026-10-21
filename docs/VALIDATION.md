@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 7.1–7.2
+
+682 original MCQs across 62 topics are published, eleven each; 248 meaningful stimuli (36.36%) and 265 explicit evidence/numerical/geometry checks. Industrial Revolution covers resources/technology, productivity, employment composition, networks, class and industrial motives for imperial expansion without false universal chronology. Economic Sectors checks the five-sector framework, original least-cost totals120/115/110, source/market freight costs200/600, sector shares and ship-to-rail transfer.
+
+All189 unit tests, structural/evidence checks, TypeScript, production build, all68 Geography scopes and standard preview checks passed. Both full sessions scored11/11; all eight mobile stimuli inspected. Freight-map keyboard zoom200/reset100 and desktop light-mode rendering passed. Existing232 checkpoint question files,240 stimuli and complete approved catalog are unchanged. No student storage edits. Next7.3; six topics/66 questions remain. Full748 audit and UI/summary phase pending; no human-review or calibrated-difficulty claim.
+
 ## Human Geography Unit 6 complete — Topics 6.9–6.11
 
 660 original MCQs across 60 topics are published, exactly eleven each; 240 meaningful stimuli (36.36%) and 257 explicit evidence/numerical/geometry checks. Urban Data checks age counts/shares, qualitative accounts, growth contributions and survey coverage. Urban Changes checks rent ratios, cohort turnover, exposure disparities and inclusionary shares, plus historically accurate discrimination concepts and governance. Urban Sustainability tests land consumption, brownfield assessment, sector-energy accounting and regional growth-boundary evaluation.

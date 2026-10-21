@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 7,
+  "topicId": "topic-7-1",
+  "questions": [
+    {
+      "id": "hug-7-1-001",
+      "prompt": "Which explanation is most consistent with this schematic of an early industrial district?",
+      "options": [
+        "Coal and transport access could support power and input movement, alongside capital, labor and technology.",
+        "The drawing proves coal alone caused industrialization in every region.",
+        "The mill’s position shows that water transport was impossible.",
+        "Factory location proves all nearby residents received equal gains."
+      ],
+      "correctIndex": 0,
+      "explanation": "Accessible fuel and transport can support mechanized production by supplying energy and moving inputs or output. The mill’s position near a coal source and canal is consistent with that mechanism. It does not prove one resource is a sufficient cause of industrialization or establish working conditions, ownership, wages or equal benefits for residents. A: This recognizes the relevant location advantages and the role of other conditions. B: Resource availability alone does not account for institutions, investment and technological adoption. C: The schematic explicitly includes a canal connection. D: Location does not enumerate the distribution of income or benefits."
+    },
+    {
+      "id": "hug-7-1-002",
+      "prompt": "What does the output account show when the workforce and total hours are held fixed?",
+      "options": [
+        "Output per worker falls from 30 to 10 units.",
+        "Employment triples because output triples.",
+        "Output per worker rises from 10 to 30 units, while the worker count remains 100.",
+        "A tripled output proves every worker’s wage triples."
+      ],
+      "correctIndex": 2,
+      "explanation": "Output per worker is 1000/100 = 10 units initially and 3000/100 = 30 later, a threefold increase. The same number of workers and hours is stipulated, so this is a productivity comparison rather than employment growth. Output records alone do not show wages, working conditions, prices or how productivity gains are distributed. A: The before and after productivity values are reversed. B: The workforce is explicitly fixed at 100. C: This correctly separates productivity from workforce size. D: Wages and bargaining arrangements are not supplied."
+    },
+    {
+      "id": "hug-7-1-003",
+      "prompt": "Which interpretation correctly compares agricultural employment in the two periods?",
+      "options": [
+        "It falls from 800 to 400 workers because its share halves.",
+        "Its share falls from 80% to 40%, but its count remains 800 because total employment doubles.",
+        "It doubles because all sector shares must grow with total employment.",
+        "It remains 80% because its worker count is unchanged."
+      ],
+      "correctIndex": 1,
+      "explanation": "Agriculture initially employs 80% of 1000 = 800 workers and later 40% of 2000 = 800. A declining share can accompany a constant count when the workforce expands. Factory employment grows from 100 to 800, but the table does not track individual moves or identify the full sequence of demographic and economic change. A: The later percentage must be applied to 2000, not 1000. B: This correctly distinguishes the sector’s share from its count. C: The agricultural count does not double under the supplied shares. D: A constant numerator can form a smaller share of a larger workforce."
+    },
+    {
+      "id": "hug-7-1-004",
+      "prompt": "What industrial-era motive for imperial expansion is illustrated by the two connections?",
+      "options": [
+        "A desire to end every long-distance exchange.",
+        "A guarantee that colonial and metropolitan actors receive identical bargaining power.",
+        "The invention of colonialism only after every country had industrialized.",
+        "Seeking raw-material supplies and markets for manufactured goods."
+      ],
+      "correctIndex": 3,
+      "explanation": "Growing industrial production can create demand for raw materials and for markets in which to sell manufactured goods. Those interests contributed to imperial expansion and unequal colonial relationships, alongside political and other motives. The schematic illustrates one economic connection rather than the entire history of colonialism, which predated industrialization in many settings. A: The arrows represent expanded exchange rather than its elimination. B: Trade arrows do not demonstrate equal power; the scenario explicitly places the links in an imperial setting. C: Colonialism existed before the industrial era, so this chronology is false. D: This identifies the two stated economic interests."
+    },
+    {
+      "id": "hug-7-1-005",
+      "prompt": "Which statement best describes the early Industrial Revolution’s geographic origins?",
+      "options": [
+        "It began as one simultaneous transformation in every world region.",
+        "Early mechanized industrialization developed in Britain and subsequently spread unevenly through connected regions.",
+        "It began only after all colonial empires had ended.",
+        "Its spread required every region to possess identical local resources and institutions."
+      ],
+      "correctIndex": 1,
+      "explanation": "Britain was an early center of the Industrial Revolution, with subsequent industrialization spreading through different networks and under varied local conditions. Technology, resources, finance, labor and markets interacted; their combination and timing differed among regions. Identifying an early center is not a claim that other societies lacked knowledge, production or complex economies. A: Timing and intensity differed substantially among regions. B: This identifies the early center while recognizing uneven diffusion. C: Industrialization overlapped with imperial expansion rather than waiting for all empires to end. D: Regions could industrialize with different resource endowments and institutional arrangements."
+    },
+    {
+      "id": "hug-7-1-006",
+      "prompt": "Why did improved steam technology expand some factories’ location options compared with exclusive reliance on fast-flowing water?",
+      "options": [
+        "It could provide mechanical power away from suitable water-power sites, although fuel, water supply and transport still mattered.",
+        "It made fuel supply and machinery irrelevant.",
+        "It instantly removed every water-powered mill from use.",
+        "It made all industrial locations equally profitable."
+      ],
+      "correctIndex": 0,
+      "explanation": "Steam technology could reduce dependence on a particular flowing-water power site, enabling more location options where other requirements were met. Fuel access, water for operation, engineering, capital and transport still constrained adoption. Steam and water power coexisted, and a new technical option did not erase costs or make all locations equivalent. A: This states the expanded option together with its continuing constraints. B: Steam engines require fuel and machinery rather than eliminate them. C: Technologies can coexist over a long transition. D: Production costs, markets and infrastructure continue to vary by place."
+    },
+    {
+      "id": "hug-7-1-007",
+      "prompt": "How could agricultural productivity improvements contribute to industrial urban growth?",
+      "options": [
+        "They necessarily removed the need for any farmers or rural settlements.",
+        "They guaranteed equal diets and wages for every urban resident.",
+        "They could support larger nonfarm populations and alter rural labor demand, alongside other demographic and economic changes.",
+        "They prevented any migration toward industrial employment."
+      ],
+      "correctIndex": 2,
+      "explanation": "More output from agricultural work can help sustain workers outside farming, while changes in rural labor demand and industrial job opportunities can affect migration. These are connected processes rather than a single universal sequence. Food distribution, purchasing power, institutions and demographic change still shape who benefits and how urban populations grow. A: Agriculture and rural settlements continue even when productivity changes. B: Food supply does not by itself establish distribution or wages. C: This identifies plausible supply and labor connections without making them universal. D: Industrial job opportunities can instead encourage some urbanward movement."
+    },
+    {
+      "id": "hug-7-1-008",
+      "prompt": "What distinguishes factory production from dispersed household craft production in a typical industrial-era comparison?",
+      "options": [
+        "Factories necessarily eliminate every skilled task.",
+        "Household craft production cannot involve trade.",
+        "Factory workers must own all machinery collectively.",
+        "Factories concentrate machinery and coordinated labor at a production site, often reorganizing work and control."
+      ],
+      "correctIndex": 3,
+      "explanation": "A factory system often combines powered machinery, coordinated tasks and a larger workforce at one site, changing production organization and relations between owners and workers. Skills, ownership and labor conditions vary, so concentration does not imply the disappearance of craft skill or one required ownership form. Household producers could also participate in extensive markets. A: Factories can contain skilled work as well as repetitive tasks. B: Household production can be market-oriented and connected through merchants. C: Ownership is not determined by the physical concentration of production. D: This identifies the organizational and spatial distinction."
+    },
+    {
+      "id": "hug-7-1-009",
+      "prompt": "Which evidence most directly tests whether industrialization altered a city’s class structure?",
+      "options": [
+        "Changing occupational, ownership, wage and housing patterns across social groups over time.",
+        "Only the number of chimneys visible in a painting.",
+        "Only the factory’s total output, treating output as every household’s income.",
+        "A list of machine patents without information on people or ownership."
+      ],
+      "correctIndex": 0,
+      "explanation": "Class relations concern ownership, work, resources and social position, so occupational and distributional evidence is needed to investigate change. Factories or output can signal industrial activity but do not alone show who owns assets, earns income or experiences changing housing conditions. Comparable records across time help avoid assigning one experience to an entire city. A: These sources address social relations and their spatial expression. B: Chimneys do not enumerate ownership or household resources. C: Output and individual income are different measures. D: Patents document technology rather than the full social distribution of its effects."
+    },
+    {
+      "id": "hug-7-1-010",
+      "prompt": "Why did canals and railways assist the spread of industrial production beyond individual factory sites?",
+      "options": [
+        "They made all places equally connected at the same time.",
+        "They connected resource areas, production centers and markets, reducing some movement constraints.",
+        "They required every factory to use the same product and workforce.",
+        "They removed all dependence on investment and political decisions."
+      ],
+      "correctIndex": 1,
+      "explanation": "Transport networks link production to inputs, labor and markets, helping techniques and output circulate across a wider region. Their benefits depend on routes, costs and connections, which can reinforce some locations’ advantages and bypass others. Network expansion therefore supports diffusion without producing simultaneous or uniform industrial development everywhere. A: Routes and access develop unevenly. B: This identifies the relevant connecting mechanism. C: Networks can carry inputs and outputs for different industries. D: Financing, regulation and political choices continue to shape networks."
+    },
+    {
+      "id": "hug-7-1-011",
+      "prompt": "Two regions possess coal, but only one rapidly industrializes. What is the strongest conclusion?",
+      "options": [
+        "The coal deposits must be identical in every economically relevant way.",
+        "Resource possession alone guarantees the same development schedule.",
+        "Natural resources interact with technology, investment, labor, markets and institutions rather than determining industrialization by themselves.",
+        "The slower region cannot have any existing production or trade."
+      ],
+      "correctIndex": 2,
+      "explanation": "A resource can enable industrial activity without being sufficient to produce it. Extraction costs, technical capabilities, investment, labor conditions, institutions and market connections can differ between regions. Comparing these influences is more defensible than assuming one resource guarantees an identical sequence or treating slower industrialization as an absence of economic life. A: Deposit quality, accessibility and costs were not specified as identical. B: The observed difference contradicts that deterministic claim. C: This recognizes the interacting conditions relevant to the comparison. D: Nonindustrial or differently organized production and trade can already exist."
+    }
+  ]
+}

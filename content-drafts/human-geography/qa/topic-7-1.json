@@ -1,0 +1,144 @@
+{
+  "topicNumber": "7.1",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "2895bbc796f18e7b0a20cf3b590a0771231cfab8f214c79961c5f63eaeffb05e",
+  "scopeReview": "SPS-7.A.1–3: technologies/resources, uneven industrial diffusion, food/population/labor/class changes and demand for raw materials/markets as a contributor to imperial expansion.",
+  "varietyReview": "Four assessed original stimuli: coal/canal schematic, fixed-workforce productivity, sector count/share shifts and a simplified imperial input/output network. Additional applications distinguish steam options, organization, class evidence and resource determinism.",
+  "repetitionReview": "Different evidence demands and varied keys; avoids inventing historical city data, a universal start date, instantaneous water-power replacement or colonialism originating only with industry. Every option explained; difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://blog.sciencemuseum.org.uk/james-watt-and-the-separate-condenser/",
+    "https://blog.sciencemuseumgroup.org.uk/climate-and-the-collection/",
+    "https://www.nationalarchives.gov.uk/education/resources/victorian-industrial-towns/",
+    "https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/environmental-history/"
+  ],
+  "referenceNote": "Official scope and primary museum/archive history checked. Questions, accounts and schematics original; no historical source figure/question copied, no new student resource and no independent human-review claim.",
+  "questions": [
+    {
+      "questionId": "hug-7-1-001",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Coal and transport access could support power and input movement, alongside capital, labor and technology.",
+      "independentReview": "Original hypothetical coal/canal/mill geometry checked; no invented historical city. Mechanism plausible, not a deterministic causal estimate or claim steam immediately displaced all water power.",
+      "check": {
+        "type": "industry-coal-canal"
+      },
+      "questionSha256": "3ee3d77fe63de898dc3f950d204e97ad34455996b6c41a8b0b31897004738a6f",
+      "stimulusSha256": "d9ad3b48c3b4bc24f5247e30a323f9fb80093634c04adeec8d123c45c7fcbfb7"
+    },
+    {
+      "questionId": "hug-7-1-002",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Output per worker rises from 10 to 30 units, while the worker count remains 100.",
+      "independentReview": "Independently divided1000/100 and3000/100. Same product/time/total hours stated, no cross-product quantity comparison or assumption of equal distribution.",
+      "check": {
+        "type": "industry-output-productivity"
+      },
+      "questionSha256": "c3ee917ed956295cb19dcf0ab2b667d8210de1270d745782e5c72e634d42c4be",
+      "stimulusSha256": "10cedcc73e5d919bb4bde703a1e1b1846874547635f4e02bb1b1e40ac27f6b5b"
+    },
+    {
+      "questionId": "hug-7-1-003",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Its share falls from 80% to 40%, but its count remains 800 because total employment doubles.",
+      "independentReview": "Allshares80+10+10=100 and40+40+20=100. Independently calculated agriculture800/800, factory100/800, others100/400. No inference that all workers moved from farming.",
+      "check": {
+        "type": "industry-sector-shift"
+      },
+      "questionSha256": "7d93e25799053704c0d05fcb4a93a0fc0d758f29cc3e89a16de8319c1794465a",
+      "stimulusSha256": "9ef20bc720342d671068f1ab39ebb2e5d1e3af47b989394860f39396615baa92"
+    },
+    {
+      "questionId": "hug-7-1-004",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Seeking raw-material supplies and markets for manufactured goods.",
+      "independentReview": "Historical sequence checked: industrial demand contributed to later imperial expansion, not origin of all colonialism. Fictional R/F/M nodes avoid fabricated country statistics or a claim trade alone proves domination.",
+      "check": {
+        "type": "industry-imperial-links"
+      },
+      "questionSha256": "15419aca6832067532e5dd377012e057c1ab777b9c8ccf0171e46d1919f2e7bb",
+      "stimulusSha256": "02e5893a63333155f35d300341489cb1979d71bb9b7479284db7a00abc3803a0"
+    },
+    {
+      "questionId": "hug-7-1-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Early mechanized industrialization developed in Britain and subsequently spread unevenly through connected regions.",
+      "independentReview": "Primary Science Museum chronology checked; no exact contested starting year or claim of universal linear superiority.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "af7f26dabf194918803d955dcf7f5f1b65182d7958e8be6d08749f9b626643a1"
+    },
+    {
+      "questionId": "hug-7-1-006",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "It could provide mechanical power away from suitable water-power sites, although fuel, water supply and transport still mattered.",
+      "independentReview": "Verified separate-condenser context without copying patent wording or claiming a water-free steam process. No instantaneous displacement of water mills.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "93b4d81f713c044a49e3f5cc25a90f8fd2f9d88ff110c9e35af04374d5de64eb"
+    },
+    {
+      "questionId": "hug-7-1-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "They could support larger nonfarm populations and alter rural labor demand, alongside other demographic and economic changes.",
+      "independentReview": "Retains SPS-7.A.2 food/population/labor linkage without asserting mechanization alone accounts for all migration or immediate universal welfare gains.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b46f48aeb308492c75f70fbfa52d0fa82daebc6392f489125917fefffa1527fe"
+    },
+    {
+      "questionId": "hug-7-1-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Factories concentrate machinery and coordinated labor at a production site, often reorganizing work and control.",
+      "independentReview": "General historical comparison, not a claim every factory shares identical labor organization or that household industry was purely subsistence.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "0b899300dbcaaac386690f589709e34e49ba969bac9269550d7bd763706180ed"
+    },
+    {
+      "questionId": "hug-7-1-009",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Changing occupational, ownership, wage and housing patterns across social groups over time.",
+      "independentReview": "Class change not equated with a universal improvement or with one occupational count. No actual person classified.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "abebe509aacd814256e1c91fe0b7b1864d440547da445c42c13b00dd6e6f4115"
+    },
+    {
+      "questionId": "hug-7-1-010",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "They connected resource areas, production centers and markets, reducing some movement constraints.",
+      "independentReview": "Diffusion tied to networks and uneven accessibility, not technological determinism or the claim railways originated all regional industry.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "6ea5e473fc506e382e13c96d03390255583110808dbe66d2d76b3fab7931d833"
+    },
+    {
+      "questionId": "hug-7-1-011",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Natural resources interact with technology, investment, labor, markets and institutions rather than determining industrialization by themselves.",
+      "independentReview": "No ranking of inherent cultural ability or single-cause explanation. Original contrast addresses the limits of resource determinism.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "6ef7a7ca35c6157da0be48a74afe286189b098bc968d9a99a3a9fd13e30fa05f"
+    }
+  ]
+}

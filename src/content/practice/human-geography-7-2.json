@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 7,
+  "topicId": "topic-7-2",
+  "questions": [
+    {
+      "id": "hug-7-2-001",
+      "prompt": "Using transport + labor − agglomeration savings, which site has the least stated daily cost?",
+      "options": [
+        "A, 120 cost units",
+        "B, 100 cost units",
+        "B, 115 cost units",
+        "C, 110 cost units"
+      ],
+      "correctIndex": 3,
+      "explanation": "The model totals are A: 80 + 40 − 0 = 120, B: 100 + 15 − 0 = 115 and C: 90 + 30 − 10 = 110. C is least costly under the specified assumptions. This illustrates interacting transport, labor and clustering effects in least-cost reasoning; it does not establish the best real site when taxes, environment, reliability and other factors are omitted. A: This correctly totals A but is not the minimum. B: This omits B’s labor cost. C: This correctly totals B but exceeds C by 5. D: This correctly subtracts the specified clustering savings and identifies the minimum."
+    },
+    {
+      "id": "hug-7-2-002",
+      "prompt": "For this weight-losing process, what is the transport-cost difference between the two stated plant options?",
+      "options": [
+        "The source option costs 200 units and the market option 600, favoring the source by 400.",
+        "The source option costs 600 and the market option 200, favoring the market by 400.",
+        "Both cost 600 because the input mass is always shipped the full route.",
+        "Both cost 200 because only the finished product ever needs transport."
+      ],
+      "correctIndex": 0,
+      "explanation": "At S, processing occurs beside the input source, so only the 1-ton product travels 100 km: 1 × 100 × 2 = 200. At M, 3 tons of input travel that distance before processing: 3 × 100 × 2 = 600. Source location saves 400 under the given assumptions. The material ratio is 3/1 = 3, illustrating weight-losing source orientation, not a universal rule for all industries. A: This applies the correct mass to the route for each option. B: The transported masses are reversed. C: Input does not travel the full route when the plant is at its source. D: Input transport matters when processing occurs at the market."
+    },
+    {
+      "id": "hug-7-2-003",
+      "prompt": "Which reading of the broad employment sectors is correct without using these shares alone as a complete development ranking?",
+      "options": [
+        "A has 55% in services, compared with B’s 15%.",
+        "B has a 40-percentage-point higher service share than A.",
+        "B has no manufacturing because services are its largest category.",
+        "The primary-sector share is identical in both regions."
+      ],
+      "correctIndex": 1,
+      "explanation": "Services account for 55% in B and 15% in A, a difference of 40 percentage points. B also has a 30% secondary share, so a large service sector does not imply no manufacturing. Employment structure is useful evidence, but incomes, productivity, informality, health and distribution are needed for a fuller development comparison. A: The service shares are reversed. B: This correctly compares 55% with 15%. C: The chart explicitly records a 30% secondary share in B. D: Primary shares differ: 60% in A and 15% in B."
+    },
+    {
+      "id": "hug-7-2-004",
+      "prompt": "Cargo arrives by ship at P and continues inland by rail. What makes P a break-of-bulk point in this example?",
+      "options": [
+        "Its position necessarily marks the world’s largest city.",
+        "Every arriving cargo must be manufactured at P.",
+        "Cargo transfers between transport modes at the port.",
+        "The route means all cargo is consumed before it leaves the ship."
+      ],
+      "correctIndex": 2,
+      "explanation": "A break-of-bulk point is a place where freight transfers between transport modes or stages, such as ship to rail. Handling, storage and related services can make such nodes important location factors. The transfer itself does not establish where the goods were produced, whether processing occurs or the population rank of the port city. A: Population ranking is not what defines the transfer function. B: Manufacturing may occur near a port but is not required for a modal transfer. C: This identifies the supplied ship-to-rail connection. D: The scenario explicitly states that cargo continues inland."
+    },
+    {
+      "id": "hug-7-2-005",
+      "prompt": "Which sequence correctly classifies the activities into primary, secondary and tertiary sectors?",
+      "options": [
+        "Mining ore; making steel; providing freight transport.",
+        "Making steel; mining ore; providing freight transport.",
+        "Providing freight transport; making steel; mining ore.",
+        "Mining ore; providing freight transport; making steel."
+      ],
+      "correctIndex": 0,
+      "explanation": "Primary activity obtains resources, secondary activity transforms materials into manufactured products, and tertiary activity provides services. Mining, steelmaking and freight transport illustrate those functions respectively. A firm may coordinate several functions, so the classification applies to the activity rather than proving all workers in one company belong to one sector. A: This assigns extraction, transformation and service correctly. B: This reverses primary extraction and secondary processing. C: Transport is a service rather than resource extraction, and mining is not a service classification here. D: This reverses manufacturing and service activities."
+    },
+    {
+      "id": "hug-7-2-006",
+      "prompt": "A research team analyzes data while a senior board sets the organization’s strategic policy. Which distinction is most appropriate in the five-sector framework?",
+      "options": [
+        "Both activities are primary because they support an industry.",
+        "Both are secondary because decisions are used by a manufacturer.",
+        "Data analysis extracts a natural resource, while policy setting manufactures a physical product.",
+        "Specialized information work can be quaternary; top-level decision-making can be quinary."
+      ],
+      "correctIndex": 3,
+      "explanation": "In the five-sector framework, quaternary activities emphasize specialized information, research and knowledge services, while quinary activities emphasize high-level decision-making and leadership. The terms classify functions, not a person’s inherent status or worth. Both may be grouped within broad services in a three-sector statistical account. A: Supporting industry does not turn knowledge work into resource extraction. B: The employer’s output does not make every task manufacturing. C: Neither description matches the stated activity. D: This identifies the functional distinction and remains compatible with broad service groupings."
+    },
+    {
+      "id": "hug-7-2-007",
+      "prompt": "Why can a plant with high inbound material losses be attracted to a raw-material source?",
+      "options": [
+        "It must transport the same mass regardless of where processing occurs.",
+        "Processing near the source can avoid shipping material that will not remain in the finished product.",
+        "A raw-material source guarantees the lowest labor cost.",
+        "Weight loss makes all market access irrelevant."
+      ],
+      "correctIndex": 1,
+      "explanation": "If processing removes a substantial part of a localized input’s weight, source-side production can reduce the mass carried over a long distance. This transport mechanism is one part of location analysis. Labor, energy, other inputs, markets and institutional conditions may modify the result, so a weight-losing process is not an unconditional location rule. A: The mass shipped can differ between unprocessed input and finished output. B: This states the relevant weight-loss mechanism. C: Resource location does not establish local labor costs. D: The finished output still needs a route to buyers."
+    },
+    {
+      "id": "hug-7-2-008",
+      "prompt": "A standardized container can move from ship to rail without individual cartons being rehandled at the transfer. What is the relevant effect?",
+      "options": [
+        "It eliminates every port, terminal and customs process.",
+        "It makes distance exactly zero between trading places.",
+        "It can reduce some transfer time and handling costs while retaining the need for intermodal facilities.",
+        "It requires every commodity to use the same route and freight price."
+      ],
+      "correctIndex": 2,
+      "explanation": "Containerization standardizes a cargo unit that can move among compatible transport modes. It can reduce handling and support wider logistical networks, but still needs terminals, equipment, schedules and regulatory processes. Reduced friction is different from no friction, and effects vary by commodity and route. A: Terminals and other processes remain necessary. B: Standardization does not remove physical separation. C: This describes the plausible handling advantage and its limits. D: Routes, rates and suitable cargo types can differ."
+    },
+    {
+      "id": "hug-7-2-009",
+      "prompt": "Several firms share suppliers and a specialized labor pool in one district. Why might they accept higher land prices there?",
+      "options": [
+        "Clustering benefits can offset some higher location costs.",
+        "Agglomeration means every cost must be zero.",
+        "Higher land prices prove firms have no location alternatives.",
+        "Shared suppliers prevent any competition among firms."
+      ],
+      "correctIndex": 0,
+      "explanation": "Agglomeration economies can arise through specialized suppliers, knowledge links and labor matching. Those advantages may outweigh some higher rents or transport costs for particular firms. Congestion, competition and land costs can also create disadvantages, so clustering is a balance of influences rather than universal costlessness or a ban on competition. A: This recognizes the relevant tradeoff in total location costs and benefits. B: Shared advantages do not eliminate every expense. C: A high price does not establish that no alternative exists. D: Firms can compete while benefiting from shared resources."
+    },
+    {
+      "id": "hug-7-2-010",
+      "prompt": "What is a key limitation of using a simple least-cost model to predict every contemporary factory location?",
+      "options": [
+        "Transport and labor costs can never matter.",
+        "The model may omit institutions, risk, service reliability, environmental constraints and strategic market decisions.",
+        "Every factory uses only one input and sells to exactly one market.",
+        "A cost model directly measures all workers’ quality of life."
+      ],
+      "correctIndex": 1,
+      "explanation": "A simplified model isolates selected influences to clarify their mechanisms. Real firms may consider multiple inputs and markets, institutions, supply-chain risk, service reliability and other constraints. Its usefulness lies in explaining part of a decision, not proving that omitted factors are absent or that minimum private cost is identical to a socially preferred outcome. A: Those costs can remain important even if they are not sufficient. B: This identifies relevant omitted influences and the limit of the abstraction. C: The one-input/one-market assumption is not universal. D: Workers’ well-being requires different evidence."
+    },
+    {
+      "id": "hug-7-2-011",
+      "prompt": "Why should core, semiperiphery and periphery classifications not be inferred from one factory’s wage alone?",
+      "options": [
+        "The classifications require every location to produce the same goods.",
+        "One wage proves a country has no internal economic differences.",
+        "Every factory in a peripheral setting has the same ownership and function.",
+        "They describe broader relational roles and production patterns; wages are only one indicator and substantial variation can exist."
+      ],
+      "correctIndex": 3,
+      "explanation": "These classifications concern positions within wider economic relationships, not a complete description of every worker or factory in a country. Ownership, control, production functions, trade and internal variation matter alongside wages. A single workplace observation therefore cannot establish a region’s full role or erase changing and mixed economic functions. A: Different functions and goods are central to the relational framework. B: A workplace wage does not demonstrate uniform national conditions. C: Firms and functions can vary within broader regional roles. D: This retains relational scale and the limits of one indicator."
+    }
+  ]
+}

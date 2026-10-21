@@ -1,0 +1,142 @@
+{
+  "topicNumber": "7.2",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "35d8cb0972e55120c1d4f9bfd9feb561cdd8727b13914da61f5da76452beaa23",
+  "scopeReview": "SPS-7.B.1/B.2: five activity sectors, broad employment structure, labor/transport/resources/markets, intermodal transfer and containers, least-cost reasoning and relational production patterns.",
+  "varietyReview": "Four assessed original stimuli: three-site cost account, two-location weight-loss model, sector-share chart and ship/rail transfer map. Other applications distinguish activities, knowledge/leadership functions, source orientation, containerization and clustering.",
+  "repetitionReview": "Numeric tasks separate total private cost and tonne-km mass change. Sector and intermodal tasks require different evidence. Avoids reducing country roles to one wage or claiming all modern locations follow Weber. Varied keys and all-option explanations; difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://transportgeography.org/contents/chapter2/transport-and-location/weber-location-triangle/",
+    "https://transportgeography.org/contents/chapter2/transport-and-location/"
+  ],
+  "referenceNote": "Official curriculum and authored academic explanation of least transport cost/labor/agglomeration checked. Original figures and assumptions only; no borrowed questions, new student resource or independent human review.",
+  "questions": [
+    {
+      "questionId": "hug-7-2-001",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "C, 110 cost units",
+      "independentReview": "Independent totals120/115/110,unique minimumC. Savings are positive amounts explicitly subtracted, not added; no hidden negative costs or unrelated site recommendation.",
+      "check": {
+        "type": "sectors-least-cost"
+      },
+      "questionSha256": "833c3f6ce530836e275c877ea0e8cb448396b04e94f41f61b5b2218b4bfc813a",
+      "stimulusSha256": "b9349d377c7c1b33a47aab28182d613b1c41555a422d56612fc7e6378e3a29bb"
+    },
+    {
+      "questionId": "hug-7-2-002",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "The source option costs 200 units and the market option 600, favoring the source by 400.",
+      "independentReview": "Independently recomputed tonne-km costs200/600 anddifference400. One source, one market, no local movement charge, equal rate and all other costs equal; options limited to S/M, no unstated intermediate optimum.",
+      "check": {
+        "type": "sectors-weight-losing-route"
+      },
+      "questionSha256": "1e8025c0dd55d5598550be5d29adabaf6a6e673d2b439acd113266c8a4ec1526",
+      "stimulusSha256": "c15af2b438cd52fccff315d322109af0e458a0d1a46d7d5eb877b57ed0ec1b19"
+    },
+    {
+      "questionId": "hug-7-2-003",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "B has a 40-percentage-point higher service share than A.",
+      "independentReview": "Verified totals100 forboth[60,25,15]/[15,30,55] andservicegap40points. Services include higher-order service functions here; categories are not counted twice.",
+      "check": {
+        "type": "sectors-employment-shares"
+      },
+      "questionSha256": "78e5662fc971943ac40d7109ac985aa33d8382f056ba2483dac45593e97b9c87",
+      "stimulusSha256": "cdddc75326d4c75233f16c799f9587d662d709e0f37aa910b47701fc3133aa3a"
+    },
+    {
+      "questionId": "hug-7-2-004",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Cargo transfers between transport modes at the port.",
+      "independentReview": "NodeP is sharedendpointofship andrail routes; F is inlanddestination. Does not equate containerization with no handling or imply break-of-bulk requires opening every container.",
+      "check": {
+        "type": "sectors-break-bulk"
+      },
+      "questionSha256": "ed422f261dc7e2bd713b8bfad846ea1f3d305e5f2fe52b63259ce35251e9c0f8",
+      "stimulusSha256": "9efd81bfcb0940bf5a0c788f0f742b42162c5bb9474830559beba97294840ed7"
+    },
+    {
+      "questionId": "hug-7-2-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Mining ore; making steel; providing freight transport.",
+      "independentReview": "Activity-based classification avoids firm-name confusion or treating transport of physical goods as manufacturing.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "62e920c672762a676108d66a3cb5c6ab1d0b95d7004c776d57f2cae3abd8bccd"
+    },
+    {
+      "questionId": "hug-7-2-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Specialized information work can be quaternary; top-level decision-making can be quinary.",
+      "independentReview": "Acknowledges grouping conventions vary and higher-order services nested in broad services; no double counting or universal occupational-rank claim.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "3fcd1221d9b7034fec53105b035d0949339500bccf60cfad45441fd138f48027"
+    },
+    {
+      "questionId": "hug-7-2-007",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Processing near the source can avoid shipping material that will not remain in the finished product.",
+      "independentReview": "Conceptual extension of the numeric two-option model without introducing an unverified real material ratio; one answer defensible under conditional wording.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "e7cdb71b99f9fe507c1b811d8a07a67cd20ff3e220821d302ea2ca871d9cdec2"
+    },
+    {
+      "questionId": "hug-7-2-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "It can reduce some transfer time and handling costs while retaining the need for intermodal facilities.",
+      "independentReview": "No fixed numerical cost saving or claim containers eliminate transshipment. Matches explicit shipping-container location scope.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "02cf1cde9380caae062847043f01f4f954379054c73e1ec162db47be1646a976"
+    },
+    {
+      "questionId": "hug-7-2-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Clustering benefits can offset some higher location costs.",
+      "independentReview": "Uses agglomeration as one of least-cost adjustments with conditional advantages; preserves distinction from economies of scale within one firm.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "7c171a319ecf15a0565e96a99589dcf1850db34c519d2b171615b26202bd89f1"
+    },
+    {
+      "questionId": "hug-7-2-010",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "The model may omit institutions, risk, service reliability, environmental constraints and strategic market decisions.",
+      "independentReview": "Rejects universal model fit without claiming cost factors no longer matter. No real business location recommendation.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "697a31ac412afa9453a7d0cb376255e95b8e0551611aae15bca0a07292f91480"
+    },
+    {
+      "questionId": "hug-7-2-011",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "They describe broader relational roles and production patterns; wages are only one indicator and substantial variation can exist.",
+      "independentReview": "Uses broad B.2 location classifications without fixed contemporary country rankings, deterministic stereotypes or BC/other-course material.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "e341f67be1f75696c9d3455645e8379d19e65a88a228ddc13318a8fd690077bb"
+    }
+  ]
+}

@@ -13293,5 +13293,383 @@
         "250"
       ]
     ]
+  },
+  "hug-7-1-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "Fuel and transport in a fictional industrial district",
+    "description": "Hypothetical early-industrial district. A coal source and mill are connected to a canal corridor. The map illustrates possible location advantages, not an actual historical town or a sufficient explanation of industrialization.",
+    "caption": "Original schematic. Capital, labor, institutions, markets and technology are not measured by the drawing; the canal is a transport connection rather than a claim about the mill’s power source.",
+    "unitLabel": "Coal, mill and canal connection",
+    "regions": [
+      {
+        "label": "District",
+        "polygon": [
+          [
+            3,
+            3
+          ],
+          [
+            97,
+            3
+          ],
+          [
+            97,
+            57
+          ],
+          [
+            3,
+            57
+          ]
+        ],
+        "labelPoint": [
+          50,
+          9
+        ]
+      }
+    ],
+    "points": [
+      {
+        "x": 25,
+        "y": 34,
+        "label": "Coal",
+        "labelAlign": "middle"
+      },
+      {
+        "x": 65,
+        "y": 34,
+        "label": "Mill",
+        "labelAlign": "middle"
+      }
+    ],
+    "paths": [
+      {
+        "label": "Canal",
+        "points": [
+          [
+            10,
+            34
+          ],
+          [
+            48,
+            34
+          ],
+          [
+            90,
+            34
+          ]
+        ]
+      }
+    ]
+  },
+  "hug-7-1-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Production before and after mechanization",
+    "description": "Hypothetical workshop producing the same standardized product in equal observation periods. Both periods use 100 workers and the same total working hours; output changes from 1000 to 3000 units.",
+    "caption": "Original synthetic productivity account. It illustrates output per worker, not actual historical statistics, a wage record or proof that technology always increases employment.",
+    "headers": [
+      "Period",
+      "Workers",
+      "Product units"
+    ],
+    "rows": [
+      [
+        "Before",
+        "100",
+        "1000"
+      ],
+      [
+        "After",
+        "100",
+        "3000"
+      ]
+    ]
+  },
+  "hug-7-1-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "An expanding workforce and changing sector shares",
+    "description": "Hypothetical region. Sector categories are mutually exclusive and cover all workers. Initial total 1000; later total 2000. Entries are employment percentages rather than output values.",
+    "caption": "Original synthetic structural-change data. Composition changes do not by themselves follow individual workers or identify causes of workforce growth.",
+    "headers": [
+      "Period",
+      "Workers",
+      "Agriculture (%)",
+      "Factories (%)",
+      "Other (%)"
+    ],
+    "rows": [
+      [
+        "Initial",
+        "1000",
+        "80",
+        "10",
+        "10"
+      ],
+      [
+        "Later",
+        "2000",
+        "40",
+        "40",
+        "20"
+      ]
+    ]
+  },
+  "hug-7-1-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "model",
+    "title": "Material and market links in an imperial trading system",
+    "description": "Hypothetical industrial-era imperial system: R is a raw-material region, F a metropolitan manufacturing center and M a colonial market. Arrows show R supplying cotton to F and F selling cloth to M. Political control is part of the scenario, not inferred solely from arrow direction.",
+    "caption": "Original simplified network. Colonial relationships were unequal and varied; this is one industrial economic motive, not a universal history of all trade or imperialism.",
+    "assumptions": "R supplies material; F manufactures; M buys cloth. Links indicate functions, not equal gains or flow quantities.",
+    "nodes": [
+      {
+        "label": "R",
+        "x": 15,
+        "y": 45,
+        "labelPosition": "below"
+      },
+      {
+        "label": "F",
+        "x": 50,
+        "y": 10,
+        "labelPosition": "above"
+      },
+      {
+        "label": "M",
+        "x": 85,
+        "y": 45,
+        "labelPosition": "below"
+      }
+    ],
+    "edges": [
+      {
+        "from": "R",
+        "to": "F",
+        "label": "Cotton"
+      },
+      {
+        "from": "F",
+        "to": "M",
+        "label": "Cloth"
+      }
+    ]
+  },
+  "hug-7-2-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Transport, labor and clustering savings at three sites",
+    "description": "Hypothetical manufacturer making the same output each day at A, B or C. Cost units are comparable. Daily total = transport + labor − agglomeration savings. All omitted costs are assumed equal.",
+    "caption": "Original simplified least-cost comparison. Agglomeration can reduce some costs, but actual clustering may also bring congestion or other disadvantages not included here.",
+    "headers": [
+      "Site",
+      "Transport",
+      "Labor",
+      "Savings"
+    ],
+    "rows": [
+      [
+        "A",
+        "80",
+        "40",
+        "0"
+      ],
+      [
+        "B",
+        "100",
+        "15",
+        "0"
+      ],
+      [
+        "C",
+        "90",
+        "30",
+        "10"
+      ]
+    ]
+  },
+  "hug-7-2-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "model",
+    "title": "One source, one market and a weight-losing process",
+    "description": "Hypothetical batch: 3 tons of localized input at S yield 1 ton of finished product sold at M. The route is 100 km and freight costs 2 units per ton-km. Consider a plant either at S or M; local movement costs zero and all other costs are equal.",
+    "caption": "Original two-location transport model. A given shipping rate and weight change do not describe every real industry or account for all location factors.",
+    "assumptions": "S is the sole input source; M is the sole market. Plant choices are S or M only. One batch, uniform rate, no intermediate input or product trips.",
+    "nodes": [
+      {
+        "label": "S",
+        "x": 15,
+        "y": 30,
+        "labelPosition": "below"
+      },
+      {
+        "label": "M",
+        "x": 85,
+        "y": 30,
+        "labelPosition": "below"
+      }
+    ],
+    "edges": [
+      {
+        "from": "S",
+        "to": "M",
+        "label": "100 km"
+      }
+    ]
+  },
+  "hug-7-2-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Broad employment sectors in two fictional regions",
+    "description": "Hypothetical shares of all employed workers. A: primary 60%, secondary 25%, services 15%. B: primary 15%, secondary 30%, services 55%. Broad services include tertiary and higher-order service activities in this three-part account.",
+    "caption": "Original synthetic shares. Employment percentages do not directly measure sector output, productivity, wages, job quality or a complete level of development.",
+    "unitLabel": "Employment share (%)",
+    "categories": [
+      "Primary",
+      "Secondary",
+      "Services"
+    ],
+    "series": [
+      {
+        "label": "Region A",
+        "values": [
+          60,
+          25,
+          15
+        ]
+      },
+      {
+        "label": "Region B",
+        "values": [
+          15,
+          30,
+          55
+        ]
+      }
+    ],
+    "max": 80
+  },
+  "hug-7-2-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "flow",
+    "title": "A ship-to-rail freight connection",
+    "description": "Hypothetical coast and cargo route. Sea is west, land east. A ship route reaches port P; cargo transfers to rail and continues to inland F. Arrows show shipment direction rather than flow volume.",
+    "caption": "Original schematic. Transfer can occur without unpacking each container or processing goods at the port; no actual route, distance or population is represented.",
+    "unitLabel": "Ship → port P → rail → inland F",
+    "regions": [
+      {
+        "label": "Sea",
+        "polygon": [
+          [
+            2,
+            3
+          ],
+          [
+            40,
+            3
+          ],
+          [
+            40,
+            57
+          ],
+          [
+            2,
+            57
+          ]
+        ],
+        "labelPoint": [
+          20,
+          12
+        ]
+      },
+      {
+        "label": "Land",
+        "polygon": [
+          [
+            40,
+            3
+          ],
+          [
+            98,
+            3
+          ],
+          [
+            98,
+            57
+          ],
+          [
+            40,
+            57
+          ]
+        ],
+        "labelPoint": [
+          70,
+          12
+        ]
+      }
+    ],
+    "points": [
+      {
+        "x": 40,
+        "y": 35,
+        "label": "P",
+        "labelAlign": "middle"
+      },
+      {
+        "x": 90,
+        "y": 35,
+        "label": "F",
+        "labelAlign": "middle"
+      }
+    ],
+    "paths": [
+      {
+        "label": "Ship",
+        "points": [
+          [
+            8,
+            35
+          ],
+          [
+            22,
+            35
+          ],
+          [
+            40,
+            35
+          ]
+        ],
+        "arrow": true
+      },
+      {
+        "label": "Rail",
+        "points": [
+          [
+            40,
+            35
+          ],
+          [
+            66,
+            35
+          ],
+          [
+            90,
+            35
+          ]
+        ],
+        "arrow": true
+      }
+    ]
   }
 }
