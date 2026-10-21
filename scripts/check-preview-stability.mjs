@@ -2,7 +2,7 @@
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
 const base=process.env.BASE_URL || 'http://127.0.0.1:3000';
-const log='tmp/preview-restored-stderr.log';
+const log=process.env.PREVIEW_ERROR_LOG || 'tmp/preview-restored-stderr.log';
 const start=existsSync(log)?readFileSync(log).length:0;
 const routes=['/','/courses/chemistry','/courses/chemistry/moles','/courses/chemistry/topic-3-4','/courses/calculus-ab/limits','/practice?course=chemistry&unit=3&topic=intermolecular-forces','/practice?course=calculus-ab&unit=1&topic=limits','/notes'];
 let cursor=0,checked=0;

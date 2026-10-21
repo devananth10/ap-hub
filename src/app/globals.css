@@ -370,3 +370,6 @@ kbd { display:flex; gap:3px; align-items:center; margin-left:auto; padding:0 4px
 .topic-summary ol, .summary-concepts { padding-left:22px; }
 .topic-summary .summary-result { border-left:3px solid var(--teal); padding-left:14px; }
 .topic-summary .practice-table { font-size:13px; overflow-wrap:normal; }
+.topic-summary .practice-figure figcaption { font-size:13px; }
+.summary-math-dialog .practice-figure { max-width:none; }
+.geography-stimulus > .ring-graphic { max-width:520px; margin-inline:auto; }

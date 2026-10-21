@@ -2189,5 +2189,974 @@
       ],
       "contentHash": "56960c4359fe71e13d62d250a7d21cfb98747370e9fa168f5ae851b6d716e418"
     }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "mean-value",
+    "topicNumber": "5.1",
+    "unitNumber": 5,
+    "title": "Using the Mean Value Theorem",
+    "status": "published",
+    "overview": "The Mean Value Theorem connects an interval’s average rate to a matching instantaneous rate somewhere inside. Verify its hypotheses before claiming that such a point must exist.",
+    "keyConcepts": [
+      {
+        "title": "Hypotheses",
+        "text": "The function must be continuous on the closed interval [a, b] and differentiable on the open interval (a, b). Endpoint differentiability is not required."
+      },
+      {
+        "title": "Conclusion",
+        "text": "At least one interior c satisfies f′(c) = [f(b) − f(a)]/(b − a). The theorem guarantees existence, not necessarily uniqueness."
+      },
+      {
+        "title": "Geometric meaning",
+        "text": "A tangent line at a qualifying point is parallel to the secant through the endpoints. The matching quantity is slope rather than function height."
+      }
+    ],
+    "example": {
+      "prompt": "Apply the theorem to f(x) = x² on [1, 3] and find a qualifying c.",
+      "steps": [
+        "The polynomial is continuous on [1, 3] and differentiable on (1, 3).",
+        "The secant slope is (9 − 1)/(3 − 1) = 4. Solve f′(c) = 2c = 4."
+      ],
+      "conclusion": "The value c = 2 lies inside the interval and satisfies the conclusion. Other functions could have more than one qualifying point."
+    },
+    "misconception": "Endpoint values alone cannot establish the theorem’s hypotheses. A jump or interior corner can prevent its guarantee from applying.",
+    "apTip": "State both hypotheses, compute the average rate and confirm that any solved candidate lies strictly between the endpoints.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 5.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent secant and derivative calculations yield c2 with correct interval membership; no uniqueness claimed from theorem alone.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            8,
+            2
+          ],
+          "expected": 4,
+          "evidence": "= 4"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            4,
+            2
+          ],
+          "expected": 2,
+          "evidence": "c = 2"
+        }
+      ],
+      "contentHash": "6dd9dc7c0739607a1c8c841d4d1e9f7029d8f5bf6700182e1129e62211e768e9"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-5-2",
+    "topicNumber": "5.2",
+    "unitNumber": 5,
+    "title": "Extreme Value Theorem, Global Versus Local Extrema, and Critical Points",
+    "status": "published",
+    "overview": "The Extreme Value Theorem guarantees that a continuous function attains an absolute maximum and minimum on a closed, bounded interval. Local extrema and critical points describe related but different features.",
+    "keyConcepts": [
+      {
+        "title": "Existence guarantee",
+        "text": "Continuity over the entire closed interval is sufficient for both absolute extrema. If a hypothesis fails, extrema might still occur, but this theorem no longer guarantees them."
+      },
+      {
+        "title": "Local versus absolute",
+        "text": "A local extremum compares nearby domain values. An absolute extremum compares every value in the specified domain; endpoints can be absolute candidates."
+      },
+      {
+        "title": "Critical points",
+        "text": "An interior domain input is critical when the derivative is zero or does not exist while the function is defined. Critical points are candidates, not automatically extrema."
+      }
+    ],
+    "example": {
+      "prompt": "Consider f(x) = |x| on [−1, 2]. Explain its extrema and critical point.",
+      "steps": [
+        "The function is continuous on the closed interval, so both absolute extrema are attained.",
+        "At x = 0 the derivative does not exist, but f is defined. Its value 0 is the absolute minimum."
+      ],
+      "conclusion": "Endpoint values are 1 and 2, so the absolute maximum is 2 at x = 2. The corner does not invalidate the Extreme Value Theorem."
+    },
+    "misconception": "EVT requires continuity, not differentiability. A continuous corner can coexist with the theorem’s guarantee.",
+    "apTip": "Identify the domain and theorem hypotheses separately from the later calculation that locates candidates and compares their heights.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 5.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Absolute-value continuity, defined critical corner and endpoint values independently checked; EVT distinguished from MVT differentiability requirements.",
+      "checks": [],
+      "contentHash": "b790fc9f32a9bf480ab602a0392a0056342c9320fb6cef33582c1f84c9ff7626"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-5-3",
+    "topicNumber": "5.3",
+    "unitNumber": 5,
+    "title": "Determining Intervals on Which a Function Is Increasing or Decreasing",
+    "status": "published",
+    "overview": "The sign of a derivative reveals whether a differentiable function increases or decreases over an interval. Build a sign analysis across critical inputs rather than inspecting only where the derivative equals zero.",
+    "keyConcepts": [
+      {
+        "title": "Positive and negative",
+        "text": "A positive derivative throughout an interval ensures the function increases there. A negative derivative ensures it decreases there."
+      },
+      {
+        "title": "Partition the domain",
+        "text": "Zeros and undefined points of the derivative can separate intervals with different signs. Retain any restrictions of the original function."
+      },
+      {
+        "title": "Zero values",
+        "text": "An isolated zero derivative does not force a change in monotonicity. A function can increase through a horizontal tangent, as x³ does at zero."
+      }
+    ],
+    "example": {
+      "prompt": "Suppose f′(x) = (x + 2)(x − 1) for every real x. Determine increasing and decreasing intervals.",
+      "steps": [
+        "The derivative zeros are −2 and 1, dividing the line into three intervals.",
+        "The product is positive for x < −2, negative for −2 < x < 1 and positive for x > 1."
+      ],
+      "conclusion": "Thus f increases on (−∞, −2) and (1, ∞), and decreases on (−2, 1). Function heights are not needed for these sign conclusions."
+    },
+    "misconception": "A positive derivative does not mean the original function is above the horizontal axis. Slope and height are different quantities.",
+    "apTip": "Test a representative input in each interval or reason from factor signs, then express the conclusion in terms of f, not merely f′.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 5.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Factor sign products independently tested at -3,0,2: positive,negative,positive. Increasing-through-zero counterexample valid.",
+      "checks": [],
+      "contentHash": "e874e894a64202b67054c4565a9cd56bcf412d4758f7b5d4bd1a50de34b6ce42"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-5-4",
+    "topicNumber": "5.4",
+    "unitNumber": 5,
+    "title": "Using the First Derivative Test to Determine Relative (Local) Extrema",
+    "status": "published",
+    "overview": "The First Derivative Test uses sign changes to classify local extrema. A critical point becomes a local maximum or minimum only when the surrounding behavior supports that conclusion.",
+    "keyConcepts": [
+      {
+        "title": "Maximum",
+        "text": "A derivative changing from positive to negative means the function changes from increasing to decreasing, giving a local maximum under the usual continuity conditions."
+      },
+      {
+        "title": "Minimum",
+        "text": "A negative-to-positive change gives decreasing then increasing behavior and a local minimum."
+      },
+      {
+        "title": "No change",
+        "text": "If the derivative retains the same sign on both sides, the critical point does not give a local extremum merely because its derivative is zero."
+      }
+    ],
+    "example": {
+      "prompt": "Classify the critical input of g(x) = x⁴ at x = 0, then compare with h(x) = x³.",
+      "steps": [
+        "For g, g′(x) = 4x³ is negative to the left and positive to the right of zero.",
+        "Therefore g has a local minimum at zero, with value zero."
+      ],
+      "conclusion": "For h, h′(x) = 3x² is positive on both sides. Its horizontal tangent at zero is not a local extremum."
+    },
+    "misconception": "Solving f′(x) = 0 finds candidates, not a complete classification. A sign change must be justified rather than assumed.",
+    "apTip": "Describe the function’s behavior on both sides and connect that behavior to the extremum label. Check continuity at a candidate when the definition is piecewise.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 5.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Power derivatives and signs independently checked; x4 minimum contrasted with x3 stationary non-extremum without relying on second derivative.",
+      "checks": [],
+      "contentHash": "001bb77c9106da73ac03b0d6d4e3254290aec2aac4619675a06cfa632d61a618"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-5-5",
+    "topicNumber": "5.5",
+    "unitNumber": 5,
+    "title": "Using the Candidates Test to Determine Absolute (Global) Extrema",
+    "status": "published",
+    "overview": "The Candidates Test finds absolute extrema on a closed interval by comparing function values at all eligible locations. A continuous function may have several inputs sharing the same extreme value.",
+    "keyConcepts": [
+      {
+        "title": "Interior candidates",
+        "text": "Find inputs inside the interval where the derivative is zero or undefined and the function is defined. Do not omit nondifferentiable corners."
+      },
+      {
+        "title": "Endpoints",
+        "text": "Include both endpoints when they belong to the domain. Absolute extrema can occur there even though a two-sided derivative is not available."
+      },
+      {
+        "title": "Comparison",
+        "text": "Evaluate the original function at every candidate and compare heights. A derivative value is not the quantity being maximized."
+      }
+    ],
+    "example": {
+      "prompt": "Find absolute extrema of f(x) = x³ − 3x on [−2, 3].",
+      "steps": [
+        "The derivative 3x² − 3 vanishes at −1 and 1. Include endpoints −2 and 3.",
+        "The values are f(−2) = −2, f(−1) = 2, f(1) = −2 and f(3) = 18."
+      ],
+      "conclusion": "The absolute maximum is 18 at 3; the absolute minimum is −2 at both −2 and 1."
+    },
+    "misconception": "A local maximum need not be the largest value over the whole interval, and an absolute minimum need not occur at only one input.",
+    "apTip": "List every candidate before comparing, and report both the extreme value and all inputs where it occurs.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 5.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "All four cubic evaluations independently recomputed; duplicate absolute minima deliberately retained and endpoint maximum not confused with local stationary point.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            -8,
+            6
+          ],
+          "expected": -2,
+          "evidence": "f(−2) = −2"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            27,
+            -9
+          ],
+          "expected": 18,
+          "evidence": "f(3) = 18"
+        }
+      ],
+      "contentHash": "a7dad3c9432e6ff373d795ad8cc39eeecf72cedafcdab7290427aab86b261eaa"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-5-6",
+    "topicNumber": "5.6",
+    "unitNumber": 5,
+    "title": "Determining Concavity of Functions over Their Domains",
+    "status": "published",
+    "overview": "Concavity describes how a function’s slopes change, not whether its outputs are positive. Use the second derivative or the behavior of the first derivative to justify the direction of bending.",
+    "keyConcepts": [
+      {
+        "title": "Concave up",
+        "text": "When f′ increases, the function is concave up; a positive second derivative on an interval is a standard sufficient condition. Slopes may still be negative."
+      },
+      {
+        "title": "Concave down",
+        "text": "When f′ decreases, the function is concave down. A negative second derivative on an interval supports that conclusion."
+      },
+      {
+        "title": "Inflection",
+        "text": "An inflection point requires a change in concavity at a point on the graph. Solving f″ = 0 only identifies possible locations."
+      }
+    ],
+    "example": {
+      "prompt": "Analyze concavity for f(x) = x³.",
+      "steps": [
+        "Its first derivative is 3x² and its second derivative is 6x.",
+        "For x < 0, f″ is negative; for x > 0 it is positive."
+      ],
+      "conclusion": "The graph changes from concave down to concave up at (0, 0), so that point is an inflection point."
+    },
+    "misconception": "Zero second derivative alone is insufficient: x⁴ has f″(0) = 0 but remains concave up on both sides.",
+    "apTip": "Check the signs on adjacent intervals and verify that the proposed inflection location belongs to the graph.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 5.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Second derivative 6x and sign change independently checked; x4 counterexample has nonnegative 12x² and no concavity switch.",
+      "checks": [],
+      "contentHash": "47565923e0cf13cbed8311e487a1dd1d81cc5d73c7f83250dc066490cdd480ec"
+    },
+    "mathFigure": {
+      "title": "Concavity of x³",
+      "description": "f″(x)=6x is negative left of zero and positive right of zero.",
+      "caption": "Original sampled cubic in a limited window.",
+      "xRange": [
+        -1.5,
+        1.5
+      ],
+      "yRange": [
+        -3.5,
+        3.5
+      ],
+      "curves": [
+        {
+          "points": [
+            [
+              -1.5,
+              -3.375
+            ],
+            [
+              -1.4,
+              -2.744
+            ],
+            [
+              -1.3,
+              -2.197
+            ],
+            [
+              -1.2,
+              -1.728
+            ],
+            [
+              -1.1,
+              -1.331
+            ],
+            [
+              -1,
+              -1
+            ],
+            [
+              -0.9,
+              -0.729
+            ],
+            [
+              -0.8,
+              -0.512
+            ],
+            [
+              -0.7,
+              -0.343
+            ],
+            [
+              -0.6,
+              -0.216
+            ],
+            [
+              -0.5,
+              -0.125
+            ],
+            [
+              -0.4,
+              -0.064
+            ],
+            [
+              -0.3,
+              -0.027
+            ],
+            [
+              -0.2,
+              -0.008
+            ],
+            [
+              -0.1,
+              -0.001
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0.1,
+              0.001
+            ],
+            [
+              0.2,
+              0.008
+            ],
+            [
+              0.3,
+              0.027
+            ],
+            [
+              0.4,
+              0.064
+            ],
+            [
+              0.5,
+              0.125
+            ],
+            [
+              0.6,
+              0.216
+            ],
+            [
+              0.7,
+              0.343
+            ],
+            [
+              0.8,
+              0.512
+            ],
+            [
+              0.9,
+              0.729
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1.1,
+              1.331
+            ],
+            [
+              1.2,
+              1.728
+            ],
+            [
+              1.3,
+              2.197
+            ],
+            [
+              1.4,
+              2.744
+            ],
+            [
+              1.5,
+              3.375
+            ]
+          ],
+          "start": "closed",
+          "end": "closed"
+        }
+      ],
+      "dots": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-5-7",
+    "topicNumber": "5.7",
+    "unitNumber": 5,
+    "title": "Using the Second Derivative Test to Determine Extrema",
+    "status": "published",
+    "overview": "The Second Derivative Test can classify a stationary point using nearby curvature information. It is a sufficient test with an important inconclusive case, not a replacement for identifying eligible critical points.",
+    "keyConcepts": [
+      {
+        "title": "Minimum condition",
+        "text": "If f′(c) = 0 and f″(c) > 0 under the test’s conditions, the function has a local minimum at c."
+      },
+      {
+        "title": "Maximum condition",
+        "text": "If f′(c) = 0 and f″(c) < 0, the function has a local maximum there. The derivative-zero condition is essential."
+      },
+      {
+        "title": "Inconclusive result",
+        "text": "When f″(c) = 0 or the required derivative information is unavailable, use another method such as a first-derivative sign test."
+      }
+    ],
+    "example": {
+      "prompt": "Classify stationary points of g(x) = x⁴ − 2x².",
+      "steps": [
+        "The first derivative is 4x(x² − 1), giving c = −1, 0 and 1.",
+        "The second derivative is 12x² − 4. It equals 8 at ±1 and −4 at 0."
+      ],
+      "conclusion": "Thus ±1 are local minima with value −1, while 0 is a local maximum with value 0. These are local classifications, not an automatic global comparison on an unspecified domain."
+    },
+    "misconception": "A zero second derivative does not mean there is no extremum. For example, x⁴ still has a minimum at zero.",
+    "apTip": "Find stationary inputs first and apply the second derivative at those inputs. State explicitly when the test is inconclusive.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 5.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Both derivatives, critical roots and values independently evaluated; positive8/negative4 curvature classification correct.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            12,
+            4
+          ],
+          "expected": 8,
+          "evidence": "equals 8"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            0,
+            4
+          ],
+          "expected": -4,
+          "evidence": "−4 at 0"
+        }
+      ],
+      "contentHash": "8e687973188b3938714e028977cc0e2be677056ccba72df2bb6c396ba8ef88ae"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-5-8",
+    "topicNumber": "5.8",
+    "unitNumber": 5,
+    "title": "Sketching Graphs of Functions and Their Derivatives",
+    "status": "published",
+    "overview": "Sketching a function and its derivative requires translating height into slope and slope into height. Keep the two graphs labeled so that shared coordinates are not mistaken for shared meanings.",
+    "keyConcepts": [
+      {
+        "title": "Function to derivative",
+        "text": "Where f rises, f′ is positive; where f falls, f′ is negative. A horizontal tangent can give a zero of f′."
+      },
+      {
+        "title": "Derivative to shape",
+        "text": "Increasing f′ supports concave-up behavior of f, while decreasing f′ supports concave-down behavior. The derivative graph need not resemble the original curve."
+      },
+      {
+        "title": "Vertical placement",
+        "text": "Derivative information alone does not determine the original function’s vertical shift. Adding a constant changes height without changing its derivative."
+      }
+    ],
+    "example": {
+      "prompt": "Compare f(x) = x² with f′(x) = 2x in the original graph.",
+      "steps": [
+        "At x = −1, the function height is 1 but its tangent slope is −2, so the derivative graph lies below zero.",
+        "At x = 0, the function has a horizontal tangent and f′ is zero."
+      ],
+      "conclusion": "For x > 0 the function rises with increasing positive slope, consistent with the upward-sloping derivative line."
+    },
+    "misconception": "A positive function can have a negative derivative. A function’s zero is also not automatically a derivative zero.",
+    "apTip": "Label each graph and justify a feature using the correct relationship: height of f′ means slope of f.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 5.8; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Parabola/line relation independently checked at -1,0,1. Original plotted values verified against x² and 2x, with distinct line styles.",
+      "checks": [],
+      "contentHash": "9a7be2fa1e01b8a2ac70d839bb66ff02985c0b8442df89692b3eda8e4cb3c101"
+    },
+    "mathFigure": {
+      "title": "Function and derivative",
+      "description": "Solid: f(x)=x². Dashed: f′(x)=2x. Compare heights and slopes at each input.",
+      "caption": "Original sampled curves; only the displayed window is shown.",
+      "xRange": [
+        -2,
+        2
+      ],
+      "yRange": [
+        -4,
+        4
+      ],
+      "curves": [
+        {
+          "label": "f(x) = x²",
+          "points": [
+            [
+              -2,
+              4
+            ],
+            [
+              -1.9,
+              3.61
+            ],
+            [
+              -1.8,
+              3.24
+            ],
+            [
+              -1.7,
+              2.89
+            ],
+            [
+              -1.6,
+              2.56
+            ],
+            [
+              -1.5,
+              2.25
+            ],
+            [
+              -1.4,
+              1.96
+            ],
+            [
+              -1.3,
+              1.69
+            ],
+            [
+              -1.2,
+              1.44
+            ],
+            [
+              -1.1,
+              1.21
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -0.9,
+              0.81
+            ],
+            [
+              -0.8,
+              0.64
+            ],
+            [
+              -0.7,
+              0.49
+            ],
+            [
+              -0.6,
+              0.36
+            ],
+            [
+              -0.5,
+              0.25
+            ],
+            [
+              -0.4,
+              0.16
+            ],
+            [
+              -0.3,
+              0.09
+            ],
+            [
+              -0.2,
+              0.04
+            ],
+            [
+              -0.1,
+              0.01
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0.1,
+              0.01
+            ],
+            [
+              0.2,
+              0.04
+            ],
+            [
+              0.3,
+              0.09
+            ],
+            [
+              0.4,
+              0.16
+            ],
+            [
+              0.5,
+              0.25
+            ],
+            [
+              0.6,
+              0.36
+            ],
+            [
+              0.7,
+              0.49
+            ],
+            [
+              0.8,
+              0.64
+            ],
+            [
+              0.9,
+              0.81
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1.1,
+              1.21
+            ],
+            [
+              1.2,
+              1.44
+            ],
+            [
+              1.3,
+              1.69
+            ],
+            [
+              1.4,
+              1.96
+            ],
+            [
+              1.5,
+              2.25
+            ],
+            [
+              1.6,
+              2.56
+            ],
+            [
+              1.7,
+              2.89
+            ],
+            [
+              1.8,
+              3.24
+            ],
+            [
+              1.9,
+              3.61
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "start": "closed",
+          "end": "closed"
+        },
+        {
+          "label": "f′(x) = 2x",
+          "dashed": true,
+          "points": [
+            [
+              -2,
+              -4
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "start": "closed",
+          "end": "closed"
+        }
+      ],
+      "dots": []
+    },
+    "table": {
+      "caption": "Original reference values",
+      "headers": [
+        "x",
+        "f(x)",
+        "f′(x)"
+      ],
+      "rows": [
+        [
+          "−1",
+          "1",
+          "−2"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "1",
+          "2"
+        ]
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-5-9",
+    "topicNumber": "5.9",
+    "unitNumber": 5,
+    "title": "Connecting a Function, Its First Derivative, and Its Second Derivative",
+    "status": "published",
+    "overview": "The graphs of a function, its first derivative and its second derivative describe connected but distinct behavior. Read each as evidence about the next relationship rather than treating their signs as interchangeable.",
+    "keyConcepts": [
+      {
+        "title": "First derivative",
+        "text": "The sign of f′ controls increasing or decreasing behavior of f. Zeros and sign changes can identify local-extremum candidates and classifications."
+      },
+      {
+        "title": "Second derivative",
+        "text": "The sign of f″ describes whether f′ increases or decreases and supports concavity conclusions for f."
+      },
+      {
+        "title": "Combined reasoning",
+        "text": "A function can be positive, decreasing and concave up simultaneously. Height, direction of change and change in slope are separate properties."
+      }
+    ],
+    "example": {
+      "prompt": "For f(x) = e⁻ˣ, connect all three functions.",
+      "steps": [
+        "Differentiation gives f′(x) = −e⁻ˣ and f″(x) = e⁻ˣ.",
+        "Since the exponential is positive, f stays above zero, f′ is negative and f″ is positive."
+      ],
+      "conclusion": "Thus f decreases while remaining concave up: its negative slopes become less negative as x increases. At zero, the three values are 1, −1 and 1."
+    },
+    "misconception": "A concave-up function need not be increasing, and a negative first derivative need not imply negative original values.",
+    "apTip": "Build a sign statement for each function separately, then translate it into an appropriately named feature of the original graph.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 5.9; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Chain-rule signs checked through two derivatives; positivity of exponential gives decreasing/concave-up combination without sign conflation.",
+      "checks": [],
+      "contentHash": "133ee3b7f904a85dce08339e421cd59dfa3513baa3792a2d2067b8af74db43eb"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-5-10",
+    "topicNumber": "5.10",
+    "unitNumber": 5,
+    "title": "Introduction to Optimization Problems",
+    "status": "published",
+    "overview": "Optimization starts with a mathematical model of a goal and its constraints. Differentiation becomes useful only after the quantity to optimize has been expressed over a physically meaningful domain.",
+    "keyConcepts": [
+      {
+        "title": "Objective",
+        "text": "Identify the output being maximized or minimized, such as area, cost or distance. Different goals can produce different optimal inputs for the same setting."
+      },
+      {
+        "title": "Constraint",
+        "text": "Use fixed totals or geometric relations to eliminate extra variables. The resulting objective should depend on the chosen independent variable."
+      },
+      {
+        "title": "Domain",
+        "text": "Include feasibility conditions such as positive lengths and available materials. Mathematical critical points outside that domain cannot solve the original problem."
+      }
+    ],
+    "example": {
+      "prompt": "Model the area of a rectangle made with 40 m of fencing around all four sides.",
+      "steps": [
+        "Let width be x and length be y. The constraint 2x + 2y = 40 gives y = 20 − x.",
+        "The objective becomes A(x) = x(20 − x), with 0 < x < 20 for a nondegenerate rectangle."
+      ],
+      "conclusion": "This model is ready for a derivative-based maximum test; the boundary dimensions approach zero area and help interpret candidate behavior."
+    },
+    "misconception": "The constraint is not always the objective. Maximizing perimeter when the goal is maximum area would solve a different problem.",
+    "apTip": "State the objective, constraint and domain before computing a derivative, and retain units when interpreting the model.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 5.10; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Perimeter constraint and area substitution independently checked; domain excludes negative and degenerate side lengths.",
+      "checks": [],
+      "contentHash": "28c060664d01bd3497ca95caba6c12e21807c1201dd12b815600cce127e1b353"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-5-11",
+    "topicNumber": "5.11",
+    "unitNumber": 5,
+    "title": "Solving Optimization Problems",
+    "status": "published",
+    "overview": "An optimization solution needs both a candidate and a justification that it gives the desired extreme within the feasible domain. Interpret the result in the original situation, including all requested dimensions or units.",
+    "keyConcepts": [
+      {
+        "title": "Candidate search",
+        "text": "Differentiate the one-variable objective and solve for eligible critical inputs. Include endpoints when they belong to the feasible problem."
+      },
+      {
+        "title": "Justification",
+        "text": "Use a valid sign test, concavity argument or complete candidate comparison rather than assuming every derivative zero is a maximum."
+      },
+      {
+        "title": "Interpretation",
+        "text": "Translate the mathematical input back into the original variables. Check the original constraint and distinguish the optimizing input from the optimized output."
+      }
+    ],
+    "example": {
+      "prompt": "Use 60 m of fencing for three sides of a rectangle beside a straight river, with no fence along the river. Maximize area.",
+      "steps": [
+        "With two widths x and one length y, 2x + y = 60, so A(x) = 60x − 2x² for 0 < x < 30.",
+        "A′(x) = 60 − 4x gives x = 15. Since A″ = −4, the parabola is concave down and this candidate is the maximum."
+      ],
+      "conclusion": "Then y = 30 m and area = 450 m². The fence check is 2(15) + 30 = 60 m."
+    },
+    "misconception": "Reporting only the critical width does not answer a request for dimensions and maximum area.",
+    "apTip": "Check feasibility, justify the extremum and substitute back into the original quantities.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 5.11; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent completing-square form A=450-2(x-15)² confirms the maximum; dimensions and fence balance checked.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            15,
+            30
+          ],
+          "expected": 450,
+          "evidence": "450 m²"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            30,
+            30
+          ],
+          "expected": 60,
+          "evidence": "60 m"
+        }
+      ],
+      "contentHash": "a0e9f43c53480395f4c448633e79df742d5b6ef3678a40db2b3adf4e896ee79f"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-5-12",
+    "topicNumber": "5.12",
+    "unitNumber": 5,
+    "title": "Exploring Behaviors of Implicit Relations",
+    "status": "published",
+    "overview": "Implicit relations can have several branches, so analyzing their behavior requires attention to both coordinates and the original equation. A derivative expression describes local slope only where its conditions permit.",
+    "keyConcepts": [
+      {
+        "title": "Tangents",
+        "text": "For a derivative written as a quotient, a zero numerator with nonzero denominator can indicate a horizontal tangent. A zero denominator needs separate analysis rather than automatic classification."
+      },
+      {
+        "title": "Branch behavior",
+        "text": "The same x can correspond to multiple y values. Substitute the complete point when evaluating slope or concavity."
+      },
+      {
+        "title": "Second derivatives",
+        "text": "Differentiate the implicit first-derivative relation again with respect to x, keeping chain and product factors involving y."
+      }
+    ],
+    "example": {
+      "prompt": "Analyze the top point (0, 1) on x² + 4y² = 4.",
+      "steps": [
+        "The point satisfies the relation. Differentiating gives 2x + 8y·y′ = 0, so y′ = 0 there.",
+        "Differentiate again: 2 + 8(y′)² + 8y·y″ = 0. At the point, y″ = −2/8 = −1/4."
+      ],
+      "conclusion": "The branch has a horizontal tangent and is locally concave down. The lower point (0, −1) requires its own substitution and has opposite concavity."
+    },
+    "misconception": "An implicit curve need not define one global function y of x. A single derivative expression does not erase branch distinctions.",
+    "apTip": "Check point membership, nonzero divisors and the appropriate branch before interpreting a tangent or curvature result.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 5.12; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent explicit upper branch y=.5sqrt(4-x²) confirms slope0 and curvature-.25; lower branch sign reverses.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            -2,
+            8
+          ],
+          "expected": -0.25,
+          "evidence": "−1/4"
+        }
+      ],
+      "contentHash": "8144e37a52ff13279e70c6c0ac580290ddc6dbec471bb7bfa6332cc64c063785"
+    }
   }
 ]

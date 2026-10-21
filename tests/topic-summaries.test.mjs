@@ -13,10 +13,16 @@ import {validateTopicSummary,recomputeCheck} from '../src/lib/topic-summary-poli
 const require=createRequire(import.meta.url);
 const compiled=ts.transpileModule(fs.readFileSync('src/components/topic-summary.tsx','utf8'),{compilerOptions:{jsx:ts.JsxEmit.ReactJSX,module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText
  .replace("import { GeographyStimulus } from './geography-stimulus';",'const GeographyStimulus=()=>null;')
+ .replace("import { SummaryMathFigure } from './summary-math-figure';",'const SummaryMathFigure=()=>null;')
  .replaceAll("'lucide-react'",JSON.stringify(pathToFileURL(require.resolve('lucide-react')).href))
  .replaceAll('"react/jsx-runtime"',JSON.stringify(pathToFileURL(require.resolve('react/jsx-runtime')).href))
  .replaceAll("'@/lib/topic-summary-policy'",JSON.stringify(new URL('../src/lib/topic-summary-policy.ts',import.meta.url).href));
 const {TopicSummary}=await import('data:text/javascript;base64,'+Buffer.from(compiled).toString('base64'));
+const figureCode=ts.transpileModule(fs.readFileSync('src/components/practice-figure.tsx','utf8'),{compilerOptions:{jsx:ts.JsxEmit.ReactJSX,module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText
+ .replaceAll('"react"',JSON.stringify(pathToFileURL(require.resolve('react')).href))
+ .replaceAll('"react/jsx-runtime"',JSON.stringify(pathToFileURL(require.resolve('react/jsx-runtime')).href))
+ .replaceAll('"@/lib/practice-figures"',JSON.stringify(new URL('../src/lib/practice-figures.ts',import.meta.url).href));
+const {PracticeFigure}=await import('data:text/javascript;base64,'+Buffer.from(figureCode).toString('base64'));
 
 test('all available summaries have canonical IDs, distinct original text and sealed validated publication',()=>{
  const keys=new Set();
@@ -61,4 +67,15 @@ test('shared renderer shows every original example, table headers and honest mis
   if(s.table)assert.ok(html.includes('scope="col"')&&html.includes('scope="row"'));
  }
  const html=renderToStaticMarkup(createElement(TopicSummary,{onClose:()=>{}}));assert.ok(html.includes('being prepared and checked'));assert.ok(!html.includes('Worked example'));
+});
+test('original summary graphs preserve analytical values, non-color curve labels and bounded geometry',()=>{
+ const cubic=getTopicSummary('calculus-ab','topic-5-6'),pair=getTopicSummary('calculus-ab','topic-5-8');assert.ok(cubic?.mathFigure&&pair?.mathFigure);
+ for(const [x,y] of cubic.mathFigure.curves[0].points)assert.ok(Math.abs(y-x**3)<1e-9);
+ for(const [x,y] of pair.mathFigure.curves[0].points)assert.ok(Math.abs(y-x*x)<1e-9);
+ for(const [x,y] of pair.mathFigure.curves[1].points)assert.equal(y,2*x);
+ const html=renderToStaticMarkup(createElement(PracticeFigure,{questionId:'summary-function-pair',figure:pair.mathFigure}));
+ assert.ok(html.includes('stroke-dasharray="6 4"')&&html.includes('Graph curves')&&html.includes('dashed')&&html.includes('solid'));
+ assert.ok(html.includes('role="img"')&&html.includes('<desc'));
+ const invalid=structuredClone(pair);invalid.mathFigure.curves[0].points[0][1]=999;
+ assert.ok(validateTopicSummary(invalid,courses).some(e=>e.includes('mathematical')));
 });

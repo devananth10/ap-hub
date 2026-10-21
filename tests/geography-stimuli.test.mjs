@@ -34,6 +34,9 @@ test('original summary diagrams use the shared accessible renderer with independ
  assert.deepEqual(flow.paths[0].points,[[20,20],[50,20],[80,20]]);assert.equal(flow.paths[0].arrow,true);
  const [a,b,c]=flow.points;assert.ok(Math.hypot((c.x-a.x)*3.8,(c.y-a.y)*3.3)<Math.hypot((b.x-a.x)*3.8,(b.y-a.y)*3.3));
  assert.ok(c.label.includes('not yet'));assert.ok(render(flow).includes('data-arrow-end="true"'));
+ const rings=summaries.find(s=>s.topicNumber==='5.8')?.figure;assert.ok(rings);validateGeographyStimulus(rings);
+ assert.deepEqual([...rings.rings].sort((a,b)=>a.radius-b.radius).map(r=>r.label),['Dairy','Forest','Grain','Grazing']);
+ assert.equal((render(rings).match(/class="geo-region-label"/g)||[]).length,4,'Ring labels retain dark text and a halo on filled bands in either theme');
 });
 test('optional map label anchors preserve old defaults and reject invalid coordinates',()=>{
  const s=structuredClone(geographyStimuli['hug-1-1-001']);s.regions[0].labelPoint=[18,12];validateGeographyStimulus(s);assert.ok(render(s).includes(`x="${40+18*3.8}" y="${35+12*3.3}" text-anchor="middle">NW: 80`));

@@ -2,7 +2,7 @@ import calculusFigures from "../content/practice-figures/calculus-ab.json" with 
 export type PracticeFigure = {
   xRange: number[]; yRange: number[]; description: string;
   title?:string; caption?:string;
-  curves: { points: number[][]; start: "open" | "closed"; end: "open" | "closed" }[];
+  curves: { points: number[][]; start: "open" | "closed"; end: "open" | "closed"; label?:string; dashed?:boolean }[];
   dots: {x:number;y:number}[];
   slopeField?: {x:number;y:number;slope:number}[];
 };

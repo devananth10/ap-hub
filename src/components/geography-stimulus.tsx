@@ -20,7 +20,7 @@ export function StimulusContent({stimulus:s}:{stimulus:GeographyStimulus}) {
   if(s.kind==='table')return <><p className="stimulus-description">{s.description}</p><DataTable headers={s.headers} rows={s.rows}/></>;
   const pairs=s.kind==='pyramid'?[...s.cohorts].reverse():[];
   return <>
-    <svg className="geography-graphic" viewBox={s.kind==='pyramid'?`0 0 480 ${100+s.cohorts.length*30}`:'0 0 480 280'} role="img" aria-labelledby={`${id}-title ${id}-description`}>
+    <svg className={s.kind==='model'&&s.rings?'geography-graphic ring-graphic':'geography-graphic'} viewBox={s.kind==='pyramid'?`0 0 480 ${100+s.cohorts.length*30}`:s.kind==='model'&&s.rings?'110 15 260 250':'0 0 480 280'} role="img" aria-labelledby={`${id}-title ${id}-description`}>
       <title id={`${id}-title`}>{s.title}</title><desc id={`${id}-description`}>{s.description}</desc>
       <defs><marker id={`${id}-arrow`} markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill={s.kind==='map'&&s.bins?'#152c27':'currentColor'} stroke={s.kind==='map'&&s.bins?'#f3f9f6':undefined} strokeWidth=".6"/></marker></defs>
       {s.kind==='map'&&<>
@@ -47,7 +47,7 @@ export function StimulusContent({stimulus:s}:{stimulus:GeographyStimulus}) {
         {[0,.5,1].map(f=><g key={f}><text x={220-f*140} y={65+pairs.length*30} textAnchor="middle">{s.max*f}</text><text x={260+f*140} y={65+pairs.length*30} textAnchor="middle">{s.max*f}</text></g>)}<text x="240" y={92+pairs.length*30} textAnchor="middle">{s.unitLabel} · each side uses the same scale</text>
       </>}
       {s.kind==='model'&&<>
-        {s.rings&&[...s.rings].sort((a,b)=>b.radius-a.radius).map((ring,i)=><g key={ring.label}><circle className={`geo-ring geo-shade-${i}`} cx={mapX(50)} cy={mapY(30)} r={ring.radius*3.3}/><text x={mapX(50)} y={mapY(30)-ring.radius*3.3+14} textAnchor="middle">{ring.label}</text></g>)}
+        {s.rings&&[...s.rings].sort((a,b)=>b.radius-a.radius).map((ring,i)=><g key={ring.label}><circle className={`geo-ring geo-shade-${i}`} cx={mapX(50)} cy={mapY(30)} r={ring.radius*3.3}/><text x={mapX(50)} y={mapY(30)-ring.radius*3.3+14} className="geo-region-label" textAnchor="middle">{ring.label}</text></g>)}
         {s.edges.map((edge,i)=>{const from=s.nodes.find(n=>n.label===edge.from)!,to=s.nodes.find(n=>n.label===edge.to)!;return <g key={i} className="geo-path"><line x1={mapX(from.x)} y1={mapY(from.y)} x2={mapX(to.x)} y2={mapY(to.y)} markerEnd={`url(#${id}-arrow)`}/><text x={mapX((from.x+to.x)/2)} y={mapY((from.y+to.y)/2)-8} textAnchor="middle">{edge.label}</text></g>;})}
         {s.nodes.map(n=><g key={n.label}><circle className="geo-point" cx={mapX(n.x)} cy={mapY(n.y)} r="5"/><text data-node-label={n.label} x={mapX(n.x)+(n.labelPosition==='left'?-12:n.labelPosition==='right'?12:0)} y={mapY(n.y)+(n.labelPosition==='above'?-12:n.labelPosition==='left'||n.labelPosition==='right'?4:21)} textAnchor={n.labelPosition==='left'?'end':n.labelPosition==='right'?'start':'middle'}>{n.label}</text></g>)}
       </>}

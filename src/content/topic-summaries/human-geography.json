@@ -1902,5 +1902,629 @@
       "checks": [],
       "contentHash": "a199df12f93d822295e3f29dc79c251a8939e2a2dbe74c99c2a32ceaf2a9a5fc"
     }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-5-1",
+    "topicNumber": "5.1",
+    "unitNumber": 5,
+    "title": "Introduction to Agriculture",
+    "status": "published",
+    "overview": "Agriculture deliberately modifies environments to produce crops, livestock and other useful biological materials. Agricultural practices vary with climate, technology, markets, land access and cultural preferences rather than following one universal progression.",
+    "keyConcepts": [
+      {
+        "title": "Production goals",
+        "text": "Subsistence-oriented farming primarily supports producers’ households, while commercial farming emphasizes sales. Many farms combine both functions rather than fitting a perfect binary."
+      },
+      {
+        "title": "Intensity",
+        "text": "Intensive production uses relatively high labor or capital inputs per land area; extensive production generally uses more land relative to inputs. Farm size alone does not define intensity."
+      },
+      {
+        "title": "Human–environment interaction",
+        "text": "Farmers respond to rainfall, soils and terrain while also changing water flows, vegetation and land cover. Technology can modify constraints without removing all limits."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional household grows vegetables for its own meals and sells a surplus at a nearby market.",
+      "steps": [
+        "Household consumption shows a subsistence function, while surplus sales connect the farm to commercial exchange.",
+        "If family members invest substantial labor in a small plot, the production may be labor-intensive even without expensive machinery."
+      ],
+      "conclusion": "These observations describe different dimensions: purpose, market connection and input intensity need separate evidence."
+    },
+    "misconception": "A small farm is not automatically subsistence-only, and a large farm is not necessarily high-input per hectare.",
+    "apTip": "Classify the stated production goal and input-to-land relationship separately, then explain how a particular environmental or market condition affects the practice.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 5.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Subsistence/commercial continuum and per-area intensity reviewed; size, machinery and purpose not conflated.",
+      "checks": [],
+      "contentHash": "ce5e6578393e3bb217f331795e5257b8909da8f3d99234f38d798483c0b52189"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-5-2",
+    "topicNumber": "5.2",
+    "unitNumber": 5,
+    "title": "Settlement Patterns and Survey Methods",
+    "status": "published",
+    "overview": "Rural settlement patterns describe the arrangement of homes and activity, while survey systems describe how land parcels are divided. Similar settlement forms can coexist with different property boundaries.",
+    "keyConcepts": [
+      {
+        "title": "Settlement",
+        "text": "Clustered settlements group buildings together; dispersed settlements spread them across the landscape; linear settlements follow a feature such as a road or river."
+      },
+      {
+        "title": "Survey methods",
+        "text": "Metes-and-bounds descriptions use local reference features and directions. Township-and-range systems impose a rectangular framework, while long lots create narrow parcels extending back from a frontage."
+      },
+      {
+        "title": "Interpretation",
+        "text": "A visible parcel pattern reflects institutional history and access needs, but it does not establish every resident’s identity or the ownership history of each property."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional river corridor has narrow farms, each with a short river frontage and a long strip extending inland.",
+      "steps": [
+        "The parcel geometry supports identifying a long-lot survey pattern.",
+        "Shared access to the river helps explain the arrangement, while houses along the frontage may also form a linear settlement."
+      ],
+      "conclusion": "The survey and settlement labels can both apply because they describe land division and building arrangement, respectively."
+    },
+    "misconception": "A grid of fields does not by itself prove that all houses form a dispersed settlement, nor does a line of houses reveal every parcel boundary.",
+    "apTip": "Identify whether the evidence shows buildings, legal descriptions or parcel shapes, then connect the arrangement to access and historical organization.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 5.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Long-lot parcel geometry and possible linear settlement distinguished; no unsupported ethnic or ownership inference from pattern alone.",
+      "checks": [],
+      "contentHash": "6a2de79710ed56a94b06310c562f2c8411d3bccd359c75408ae437c2899392ae"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-5-3",
+    "topicNumber": "5.3",
+    "unitNumber": 5,
+    "title": "Agricultural Origins and Diffusions",
+    "status": "published",
+    "overview": "Agriculture developed through domestication in multiple regions and spread through movement, exchange and adaptation. Crop and livestock distributions reflect both biological suitability and historical connections.",
+    "keyConcepts": [
+      {
+        "title": "Domestication",
+        "text": "People selected and managed plants and animals across generations, changing traits and relationships with the environment. Domestication is more than simply collecting a wild resource."
+      },
+      {
+        "title": "Multiple hearths",
+        "text": "Agricultural practices emerged in several world regions. Different crops and animals have different origins, so one hearth cannot explain every modern agricultural system."
+      },
+      {
+        "title": "Diffusion",
+        "text": "Migration, trade, conquest and intercontinental exchange moved species and techniques. Receiving communities adapted them to local conditions and preferences."
+      }
+    ],
+    "example": {
+      "prompt": "Consider maize moving from its Mesoamerican domestication region to other continents through later exchange.",
+      "steps": [
+        "Its origin and its present production areas are different geographic questions.",
+        "Transport networks and historical contact help explain movement, while local climates, farming knowledge and demand help explain adoption."
+      ],
+      "conclusion": "A modern field of maize outside its hearth therefore does not demonstrate independent domestication at that field’s location."
+    },
+    "misconception": "A crop’s current concentration does not necessarily identify its origin. Diffusion and subsequent specialization can relocate major production areas.",
+    "apTip": "Distinguish domestication, movement and local adoption as separate processes. Support an origin claim with historical evidence rather than a present-day distribution map alone.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 5.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Maize Mesoamerican origin and distinction between hearth and current distribution checked; no invented dates or single-hearth account of all agriculture.",
+      "checks": [],
+      "contentHash": "56cf98464152f0ba56c7edfc6e174e0de4d936f7829e0e8ce47aa465c628352f"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-5-4",
+    "topicNumber": "5.4",
+    "unitNumber": 5,
+    "title": "The Second Agricultural Revolution",
+    "status": "published",
+    "overview": "The Second Agricultural Revolution involved changes such as improved tools, crop rotations, selective breeding and mechanization associated with expanding markets and industrialization. Effects varied across places and social groups.",
+    "keyConcepts": [
+      {
+        "title": "Productivity",
+        "text": "Improved practices can raise output per hectare, output per worker or both. These measures use different denominators and need not change at the same rate."
+      },
+      {
+        "title": "Economic connections",
+        "text": "Rising food production can support urban populations and release some labor for other work. Land tenure, markets and access influence who benefits."
+      },
+      {
+        "title": "Historical distinction",
+        "text": "This transformation differs from initial domestication and from the later Green Revolution’s high-yield crop and input packages. Do not collapse all agricultural innovation into one event."
+      }
+    ],
+    "example": {
+      "prompt": "A hypothetical farm keeps 40 hectares while output rises from 100 to 160 tonnes and its workforce falls from ten to five workers.",
+      "steps": [
+        "Yield rises from 100/40 = 2.5 to 160/40 = 4 tonnes per hectare.",
+        "Output per worker rises from 10 to 32 tonnes."
+      ],
+      "conclusion": "The example shows both land and labor productivity increases, but the numbers alone do not isolate which particular tool or practice caused them."
+    },
+    "misconception": "Higher output does not always mean more land was cultivated. Increased yield can raise production on unchanged acreage.",
+    "apTip": "Name the productivity measure and explain a plausible mechanism while considering unequal access and possible labor displacement.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 5.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "All four productivity ratios independently recomputed; historical phases and causal-evidence limits distinguished.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            100,
+            40
+          ],
+          "expected": 2.5,
+          "evidence": "2.5"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            160,
+            40
+          ],
+          "expected": 4,
+          "evidence": "4 tonnes"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            160,
+            5
+          ],
+          "expected": 32,
+          "evidence": "32 tonnes"
+        }
+      ],
+      "contentHash": "c14d817d6e2806178327b4728c0fbf0473e89a3ac3647821cb247ef90dc4a9cd"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-5-5",
+    "topicNumber": "5.5",
+    "unitNumber": 5,
+    "title": "The Green Revolution",
+    "status": "published",
+    "overview": "The Green Revolution expanded the use of high-yield crop varieties together with supporting inputs and management. It increased production in many settings while creating uneven social and environmental consequences.",
+    "keyConcepts": [
+      {
+        "title": "Input package",
+        "text": "Improved seeds often performed best with reliable water, fertilizers, pest control and suitable practices. Seeds alone did not guarantee the same yield everywhere."
+      },
+      {
+        "title": "Benefits",
+        "text": "Greater yields could increase food supply and farmer income where resources and markets supported adoption. More output per hectare differs from expanding cultivated area."
+      },
+      {
+        "title": "Costs and access",
+        "text": "Water demand, chemical pollution, financing costs and unequal land or credit access could affect outcomes. Smaller producers did not all experience the same benefits or risks."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional wheat farm holds area at 50 hectares while yield rises from 2 to 4 tonnes per hectare after adopting an input package.",
+      "steps": [
+        "Output rises from 100 to 200 tonnes without expanding acreage.",
+        "Assessing benefits also requires input costs, water availability and access to the harvest, not just gross output."
+      ],
+      "conclusion": "The production increase does not by itself prove that every household becomes food-secure or that the same package is sustainable everywhere."
+    },
+    "misconception": "High-yield varieties are not automatically genetically engineered; breeding methods and the Green Revolution are not identical categories.",
+    "apTip": "Explain both a production mechanism and one distributional or environmental qualification using the stated local conditions.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 5.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Fixed-area output change recomputed; yield versus area, gross production versus access, and high-yield breeding versus transgenic methods distinguished.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            50,
+            2
+          ],
+          "expected": 100,
+          "evidence": "100"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            50,
+            4
+          ],
+          "expected": 200,
+          "evidence": "200 tonnes"
+        }
+      ],
+      "contentHash": "973b023fac71269d9cb1fc11804f53c7971023373d1d3340fbc8116790dc8fe3"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-5-6",
+    "topicNumber": "5.6",
+    "unitNumber": 5,
+    "title": "Agricultural Production Regions",
+    "status": "published",
+    "overview": "Agricultural production regions reflect combinations of environmental conditions, markets, technology and cultural practices. Compare the system’s inputs, outputs and spatial setting instead of treating climate as a complete explanation.",
+    "keyConcepts": [
+      {
+        "title": "Environmental setting",
+        "text": "Water, temperature, soils and seasonality influence suitable activities. Irrigation, transport and investment can modify opportunities but impose costs and limits."
+      },
+      {
+        "title": "Production systems",
+        "text": "Dairy farming, mixed crop–livestock farming, commercial grain, ranching and plantation systems organize land and labor differently. Intensive and extensive describe input-to-area relationships."
+      },
+      {
+        "title": "Market connection",
+        "text": "Perishability, transport, processing and consumer demand affect where activities are profitable. Similar climates can support different systems under different economic conditions."
+      }
+    ],
+    "example": {
+      "prompt": "Compare a dairy operation supplying an urban market with extensive cattle ranching in a drier interior region.",
+      "steps": [
+        "Milk’s perishability makes reliable collection, cooling and market access important for the dairy operation.",
+        "Ranching may use a large land area for grazing, with lower inputs per hectare under the described conditions."
+      ],
+      "conclusion": "These mechanisms help explain the contrast, but neither city proximity nor dryness alone proves what every farm must produce."
+    },
+    "misconception": "A regional label does not imply that all farms inside it use one technique or have identical market access.",
+    "apTip": "Use evidence about land use, labor or capital intensity and supply chains to justify the system rather than relying on a climate label alone.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 5.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Dairy perishability and extensive grazing mechanisms qualified; within-region variation and economic mediation preserve geographic reasoning.",
+      "checks": [],
+      "contentHash": "2479a71fc17899e3a9f79ef939f494017871f353e5a7794b97bdf15441bc827e"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-5-7",
+    "topicNumber": "5.7",
+    "unitNumber": 5,
+    "title": "Spatial Organization of Agriculture",
+    "status": "published",
+    "overview": "Agricultural land use is organized through connections among farms, processors, transport systems and markets. Decisions at one point in a commodity chain can reshape production and settlement elsewhere.",
+    "keyConcepts": [
+      {
+        "title": "Commodity chains",
+        "text": "Production, processing, distribution and retail connect locations with different roles. The distance between stages affects cost, timing and risk."
+      },
+      {
+        "title": "Agribusiness organization",
+        "text": "Vertical integration places several stages under coordinated control, while contracts and cooperatives organize connections in other ways. Ownership and bargaining power can affect producer choices."
+      },
+      {
+        "title": "Spatial competition",
+        "text": "Land values, transport costs, perishability and infrastructure influence which activities can compete at a location. Patterns are not determined by distance alone."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional dairy processor collects milk from farms along refrigerated truck routes and requires deliveries within a fixed time window.",
+      "steps": [
+        "Farms with reliable access to the routes face different collection conditions from equally distant farms without suitable roads.",
+        "The processor’s schedule and infrastructure help organize the production region."
+      ],
+      "conclusion": "The pattern reflects a network and commodity-chain relationship, not merely a perfect circle around the city or proof that all farms share ownership."
+    },
+    "misconception": "A tightly connected supply chain does not necessarily mean every stage belongs to the same company. Coordination and ownership are separate questions.",
+    "apTip": "Identify the relevant chain stages, flows and constraints, then explain how a specific connection influences location or producer behavior.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 5.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Network accessibility versus straight-line distance and coordination versus ownership independently reviewed; no unsupported universal ring pattern.",
+      "checks": [],
+      "contentHash": "f6009e03cbcb13b709cd6fe762b1a74959054bc5e6dab7562f13ef646ed26704"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-5-8",
+    "topicNumber": "5.8",
+    "unitNumber": 5,
+    "title": "Von Thünen Model",
+    "status": "published",
+    "overview": "The von Thünen model explains agricultural location using competition for land near a market. Its simplified assumptions help isolate transport costs and product characteristics, not reproduce every real farming landscape.",
+    "keyConcepts": [
+      {
+        "title": "Assumptions",
+        "text": "The classic model uses one central market and broadly uniform surrounding land and transport conditions. Real terrain, multiple cities and infrastructure can alter the pattern."
+      },
+      {
+        "title": "Rent and transport",
+        "text": "Activities able to pay more for access locate closer to the market. Perishability, bulk and transport costs help explain different rent gradients."
+      },
+      {
+        "title": "Classic sequence",
+        "text": "An idealized sequence places intensive market farming near the city, then forest, field crops and more extensive grazing outward. Historical fuel and transport conditions matter."
+      }
+    ],
+    "example": {
+      "prompt": "Two hypothetical activities have net returns before land rent of A = 1000 − 20d and B = 600 − 5d, with distance d in km.",
+      "steps": [
+        "At 10 km, A offers 800 and B 550 monetary units per hectare annually.",
+        "At 40 km, A offers 200 and B 400, so B can outbid A there under the model."
+      ],
+      "conclusion": "The changing comparison illustrates transport-related rent competition rather than a universal crop boundary."
+    },
+    "misconception": "Actual farms need not form concentric rings. Changing assumptions can change the predicted arrangement.",
+    "apTip": "Connect a location to costs and returns, and state which model assumption is supported or violated.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 5.8; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Four net returns independently recomputed; classic sequence and isolated-market assumptions checked without presenting them as universal contemporary facts. Original concentric rings follow Dairy/Forest/Grain/Grazing outward, representing selected classic activities under explicit assumptions.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            1000,
+            200
+          ],
+          "expected": 800,
+          "evidence": "800"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            600,
+            50
+          ],
+          "expected": 550,
+          "evidence": "550"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            1000,
+            800
+          ],
+          "expected": 200,
+          "evidence": "200"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            600,
+            200
+          ],
+          "expected": 400,
+          "evidence": "400"
+        }
+      ],
+      "contentHash": "49f9d084e57560ee7f51d3cb20f921beabcd49fda14f9685e75671a0ed21c7a4"
+    },
+    "figure": {
+      "kind": "model",
+      "title": "Ideal agricultural rings",
+      "description": "Representative activities around one market on uniform land. Dairy represents the innermost intensive farming zone.",
+      "caption": "Original schematic; not a real land-use map.",
+      "hypothetical": true,
+      "attribution": "Original PrepAtlas schematic and synthetic data",
+      "assumptions": "One central market; uniform land and transport; historical production costs.",
+      "nodes": [
+        {
+          "label": "Market",
+          "x": 50,
+          "y": 30,
+          "labelPosition": "below"
+        }
+      ],
+      "edges": [],
+      "rings": [
+        {
+          "radius": 11,
+          "label": "Dairy"
+        },
+        {
+          "radius": 17,
+          "label": "Forest"
+        },
+        {
+          "radius": 23,
+          "label": "Grain"
+        },
+        {
+          "radius": 28,
+          "label": "Grazing"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-5-9",
+    "topicNumber": "5.9",
+    "unitNumber": 5,
+    "title": "The Global System of Agriculture",
+    "status": "published",
+    "overview": "The global agricultural system links producers and consumers through trade, investment, processing and distribution. Local farming can therefore respond to decisions and events far beyond the producing region.",
+    "keyConcepts": [
+      {
+        "title": "Trade connections",
+        "text": "Export production can provide income and market access while exposing producers to price changes, transport disruption and demand shifts elsewhere."
+      },
+      {
+        "title": "Unequal roles",
+        "text": "Different chain stages capture different revenues and face different risks. A higher retail value alone does not measure a farmer’s profit because costs and processing also differ."
+      },
+      {
+        "title": "Food access",
+        "text": "Imports and exports can improve availability or create vulnerabilities depending on infrastructure, purchasing power and policy. Self-sufficiency and food security are related but distinct concepts."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional coffee-growing region sells to overseas processors. A transport interruption delays shipments while households depend on export earnings.",
+      "steps": [
+        "The disruption can reduce timely sales and cash income, affecting the ability to buy food and other necessities.",
+        "The mechanism involves a commodity-chain connection, not a sudden disappearance of all locally grown food."
+      ],
+      "conclusion": "Evaluating the overall outcome requires storage capacity, alternative buyers, household reserves and the duration of the disruption."
+    },
+    "misconception": "Producing a large food or cash-crop harvest does not guarantee that every household can afford a nutritious diet.",
+    "apTip": "Trace a cross-border flow and explain its local effect, including who bears a particular risk and what evidence would establish its magnitude.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 5.9; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Income, logistics and purchasing-power mechanisms reviewed; trade not treated as universally beneficial or harmful and gross retail value not equated with profit.",
+      "checks": [],
+      "contentHash": "b7c07cf0c4de71cd68057924c4e5316a391551cc603c3076cc04c46e0cdeffef"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-5-10",
+    "topicNumber": "5.10",
+    "unitNumber": 5,
+    "title": "Consequences of Agricultural Practices",
+    "status": "published",
+    "overview": "Agricultural practices can change soils, water systems, biodiversity and climate-related emissions. Evaluate a consequence through its specific physical mechanism and the local management conditions.",
+    "keyConcepts": [
+      {
+        "title": "Soil and water",
+        "text": "Tillage, vegetation removal and poorly managed irrigation can contribute to erosion, salinization or waterlogging. These are distinct processes with different causes."
+      },
+      {
+        "title": "Chemical flows",
+        "text": "Fertilizer or pesticide movement beyond fields can affect ecosystems. Nutrient runoff can contribute to excessive aquatic growth and subsequent oxygen depletion."
+      },
+      {
+        "title": "Land cover",
+        "text": "Clearing land or simplifying habitats can alter carbon storage and biodiversity. Conservation practices can reduce some impacts but have context-dependent tradeoffs."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional irrigated field in a dry region develops increasing surface salt accumulation.",
+      "steps": [
+        "Irrigation water contains dissolved salts; evaporation removes water but leaves much of the salt behind.",
+        "Where drainage and flushing are inadequate, repeated irrigation can concentrate salts and impair plant growth."
+      ],
+      "conclusion": "This explains salinization. It is different from erosion removing topsoil or waterlogging reducing soil aeration, although problems can coexist."
+    },
+    "misconception": "Every irrigation system does not inevitably salinize soil. Water quality, drainage, climate and management influence the outcome.",
+    "apTip": "Name the process, explain the material or energy flow and identify a management or environmental condition that affects its severity.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 5.10; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Evaporation/salt mass mechanism and distinction from erosion/waterlogging checked; eutrophication pathway and conditional management interpretation reviewed.",
+      "checks": [],
+      "contentHash": "32c4f61fbccaee991092c27d0ed0d248925563895266ad756a7f0fdf19c971ac"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-5-11",
+    "topicNumber": "5.11",
+    "unitNumber": 5,
+    "title": "Challenges of Contemporary Agriculture",
+    "status": "published",
+    "overview": "Contemporary agriculture faces challenges involving production, access, sustainability and resilience. Food security requires more than a large harvest: people need reliable access to suitable food over time.",
+    "keyConcepts": [
+      {
+        "title": "Availability and access",
+        "text": "A place may have adequate aggregate supply while some households lack purchasing power, transport or safe and nutritious options."
+      },
+      {
+        "title": "Environmental pressure",
+        "text": "Water limitations, soil degradation and changing weather can affect yields and reliability. Diversification and management can reduce some risks without guaranteeing protection from all shocks."
+      },
+      {
+        "title": "Economic organization",
+        "text": "Input costs, land access, debt, market concentration and volatile prices shape producer choices. Technology can help but may have unequal benefits and requirements."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional country reports a record grain harvest while low-income households report difficulty buying food.",
+      "steps": [
+        "The observations can coexist because total production and household economic access measure different conditions.",
+        "Investigate prices, incomes, distribution and the types of food available before concluding that the harvest solved food insecurity."
+      ],
+      "conclusion": "A production-only response might miss transport or purchasing-power barriers, while an access-only response might miss future production risks."
+    },
+    "misconception": "Food insecurity is not synonymous with insufficient national production, and a single annual total does not establish stability over time.",
+    "apTip": "Identify the specific barrier in the evidence and propose a response linked to that mechanism, while acknowledging practical tradeoffs and uncertainty.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 5.11; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Aggregate supply versus household access and temporal stability distinguished; no unsupported policy or technological guarantee.",
+      "checks": [],
+      "contentHash": "b8c463b00c92d054e5e3c5bf6556058ab3df96a2d0081ad7fe4295a7a1b92b19"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-5-12",
+    "topicNumber": "5.12",
+    "unitNumber": 5,
+    "title": "Women in Agriculture",
+    "status": "published",
+    "overview": "Women’s roles in agriculture vary across production systems and places, including cultivation, livestock care, processing, marketing and household food provision. Evaluate access and decision-making as well as the amount of visible labor.",
+    "keyConcepts": [
+      {
+        "title": "Work and recognition",
+        "text": "Unpaid, seasonal or household-based agricultural work may be missed by narrow employment measures. Reported job counts can understate contributions."
+      },
+      {
+        "title": "Resources and power",
+        "text": "Land rights, credit, extension services, tools and market access can influence productivity and autonomy. Barriers are institutional and contextual rather than evidence of inherent ability."
+      },
+      {
+        "title": "Variation",
+        "text": "Commercialization, migration and changing household arrangements can alter responsibilities. Women do not perform the same tasks or face identical conditions everywhere."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional farming survey records only registered landowners and paid full-time workers. Many women cultivate family plots and sell produce seasonally.",
+      "steps": [
+        "The survey design may omit substantial work, producing an incomplete picture of agricultural participation.",
+        "Adding questions about unpaid labor, seasonal activity, resource access and control of income would improve interpretation."
+      ],
+      "conclusion": "A low recorded ownership share does not establish a low contribution to production or explain every household’s decision-making."
+    },
+    "misconception": "Women’s participation cannot be inferred reliably from land-title counts alone, and greater labor responsibility does not automatically mean greater control of resources.",
+    "apTip": "Identify the measure’s denominator and definition, explain a specific access mechanism and acknowledge geographic and household variation.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 5.12; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Measurement exclusion, resource-control distinction and geographic variation reviewed; no essentialist labor or productivity claim.",
+      "checks": [],
+      "contentHash": "b7b7b97c99352e5a2ce57923d720caa9ab7d09241127cd0b431f44542ba2f1df"
+    }
   }
 ]

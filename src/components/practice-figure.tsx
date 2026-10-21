@@ -1,9 +1,9 @@
 "use client";
 import {useId} from "react";
-import {practiceFigures,slopeSegment} from "@/lib/practice-figures";
+import {practiceFigures,slopeSegment,type PracticeFigure as Figure} from "@/lib/practice-figures";
 
-export function PracticeFigure({questionId}:{questionId:string}) {
-  const id=useId(), figure=practiceFigures[questionId];
+export function PracticeFigure({questionId,figure:provided}:{questionId:string;figure?:Figure}) {
+  const id=useId(), figure=provided||practiceFigures[questionId];
   if(!figure) return null;
   const [xmin,xmax]=figure.xRange,[ymin,ymax]=figure.yRange;
   const x=(value:number)=>40+(value-xmin)/(xmax-xmin)*320;
@@ -17,11 +17,12 @@ export function PracticeFigure({questionId}:{questionId:string}) {
       <g className="plot-grid">{xticks.map(tick=><line key={'x'+tick} x1={x(tick)} y1={30} x2={x(tick)} y2={230}/>)}{yticks.map(tick=><line key={'y'+tick} x1={40} y1={y(tick)} x2={360} y2={y(tick)}/>)}</g>
       <g className="plot-axes"><line x1={40} y1={axisY} x2={370} y2={axisY}/><line x1={axisX} y1={240} x2={axisX} y2={20}/></g>
       <g className="plot-labels">{xticks.filter(tick=>tick!==0).map(tick=><text key={'x'+tick} x={x(tick)} y={axisY+15} textAnchor="middle">{tick}</text>)}{yticks.filter(tick=>tick!==0).map(tick=><text key={'y'+tick} x={axisX-8} y={y(tick)+3} textAnchor="end">{tick}</text>)}<text x={375} y={axisY+4}>x</text><text x={axisX+7} y={18}>y</text><text x={axisX-9} y={axisY+14}>0</text></g>
-      <g className="plot-curves">{figure.curves.map((curve,i)=><polyline key={i} points={curve.points.map(([px,py])=>`${x(px)},${y(py)}`).join(' ')}/>)}</g>
+      <g className="plot-curves">{figure.curves.map((curve,i)=><polyline key={i} strokeDasharray={curve.dashed?'6 4':undefined} points={curve.points.map(([px,py])=>`${x(px)},${y(py)}`).join(' ')}/>)}</g>
       <g className="plot-curves">{figure.slopeField?.map((point,i)=><line key={i} {...slopeSegment(figure,point)}/>)}</g>
       {figure.curves.flatMap((curve,i)=>[curve.points[0],curve.points.at(-1)!].map(([px,py],j)=><circle key={`${i}-${j}`} className={j===0?curve.start:curve.end} cx={x(px)} cy={y(py)} r={4}/>))}
       {figure.dots.map((dot,i)=><circle key={'dot'+i} className="closed" cx={x(dot.x)} cy={y(dot.y)} r={4}/>)}
     </svg>
+    {figure.curves.some(c=>c.label)&&<ul className="figure-legend" aria-label="Graph curves">{figure.curves.map((c,i)=><li key={i}>{c.label} · {c.dashed?'dashed':'solid'}</li>)}</ul>}
     <figcaption>{figure.caption??(figure.slopeField?figure.description:'Hollow dots exclude a point; filled dots show its assigned value.')}</figcaption>
   </figure>;
 }

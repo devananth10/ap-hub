@@ -2067,5 +2067,602 @@
       ],
       "contentHash": "b218460e257efd5be60347712066fbad123ee28080a9b32a91f8901a08123b20"
     }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "rates",
+    "topicNumber": "5.1",
+    "unitNumber": 5,
+    "title": "Reaction Rates",
+    "status": "published",
+    "overview": "Reaction rate measures how rapidly reactant or product amounts change. A concentration–time graph connects an average rate over an interval to an instantaneous rate given by a local slope.",
+    "keyConcepts": [
+      {
+        "title": "Sign and normalization",
+        "text": "Reactant concentration decreases, so its slope is negative. A positive reaction rate uses a minus sign and divides each species’ concentration change by its stoichiometric coefficient."
+      },
+      {
+        "title": "Average versus instantaneous",
+        "text": "An interval quotient gives an average rate. A tangent slope gives an instantaneous rate, which can vary as the reaction proceeds."
+      },
+      {
+        "title": "Units",
+        "text": "Concentration-based rates commonly use mol/(L·s), or M/s. The amount disappearing for one species need not equal the amount appearing for another."
+      }
+    ],
+    "example": {
+      "prompt": "For 2A → B, [A] falls from 0.800 M to 0.200 M over 10.0 s at constant volume. Find the average reaction rate.",
+      "steps": [
+        "The A concentration slope is (0.200 − 0.800)/10.0 = −0.0600 M/s.",
+        "Divide its positive disappearance rate by two: reaction rate = 0.0300 M/s."
+      ],
+      "conclusion": "B appears at 0.0300 M/s, half the magnitude of A’s disappearance rate, as required by the balanced ratio."
+    },
+    "misconception": "A reaction rate and a particular reactant’s disappearance rate are not always numerically identical. Check the coefficient convention.",
+    "apTip": "Write the species and sign next to every slope, and distinguish an interval average from a rate at a single instant.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 5.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Concentration difference, interval quotient and stoichiometric half-factor independently checked under constant volume.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            -0.6,
+            10
+          ],
+          "expected": -0.06,
+          "evidence": "−0.0600 M/s"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            0.06,
+            2
+          ],
+          "expected": 0.03,
+          "evidence": "0.0300 M/s"
+        }
+      ],
+      "contentHash": "72232d008599f61763f84e5e621da0d39bf0165b6e515af9bbfd04b56106ad20"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-5-2",
+    "topicNumber": "5.2",
+    "unitNumber": 5,
+    "title": "Introduction to Rate Law",
+    "status": "published",
+    "overview": "A rate law relates an observed reaction rate to reactant concentrations under specified conditions. Its exponents are determined from evidence and are not generally copied from the overall balanced equation.",
+    "keyConcepts": [
+      {
+        "title": "Experimental orders",
+        "text": "Compare experiments that change one concentration while holding the others and temperature fixed. A rate multiplier reveals the corresponding concentration exponent."
+      },
+      {
+        "title": "Rate constant",
+        "text": "In rate = k[A]ᵐ[B]ⁿ, k contains the remaining proportionality and has units that depend on the total order m + n."
+      },
+      {
+        "title": "Scope",
+        "text": "A zero order means the measured rate is independent of that concentration in the studied regime, not that the species is absent or irrelevant in every circumstance."
+      }
+    ],
+    "example": {
+      "prompt": "At constant temperature, doubling [A] quadruples rate, while doubling [B] at fixed [A] doubles rate. Determine the law.",
+      "steps": [
+        "The A dependence is second order because 2² = 4; the B dependence is first order.",
+        "Thus rate = k[A]²[B], with total order three. If [A] = [B] = 0.100 M and rate = 0.00100 M/s, then k = 1.00 M⁻²s⁻¹."
+      ],
+      "conclusion": "The units follow from dividing M/s by M³. The overall reaction coefficients alone could not establish this law."
+    },
+    "misconception": "A large coefficient in a balanced equation does not prove a high experimental order unless the step is explicitly elementary.",
+    "apTip": "Choose comparisons that isolate one variable and verify the proposed law against every supplied experiment.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 5.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Exponent multipliers and rate constant .001/(.1²*.1)=1 independently checked; third-order constant units M^-2 s^-1 verified.",
+      "checks": [
+        {
+          "operation": "power",
+          "operands": [
+            2,
+            2
+          ],
+          "expected": 4,
+          "evidence": "2² = 4"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            0.001,
+            0.001
+          ],
+          "expected": 1,
+          "evidence": "k = 1.00"
+        }
+      ],
+      "contentHash": "b0d5845419efa62c636def0095b4cc07155506f94e76e22434f59910ab0bd7fa"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-5-3",
+    "topicNumber": "5.3",
+    "unitNumber": 5,
+    "title": "Concentration Changes Over Time",
+    "status": "published",
+    "overview": "Concentration–time data can identify reaction order by testing which transformed plot is linear. Use the correct slope relationship and rate-constant units for the proposed kinetic model.",
+    "keyConcepts": [
+      {
+        "title": "Linear plots",
+        "text": "For a single monitored reactant, zero order gives linear [A] versus time, first order gives linear ln[A], and second order gives linear 1/[A] under the corresponding rate laws."
+      },
+      {
+        "title": "Slopes",
+        "text": "The zero- and first-order plots have slope −k; the second-order reciprocal plot has slope +k. Concentration falling over time does not by itself identify an order."
+      },
+      {
+        "title": "First-order half-life",
+        "text": "A first-order half-life is constant and equals approximately 0.693/k. Equal time intervals remove equal fractions, rather than equal concentration amounts."
+      }
+    ],
+    "example": {
+      "prompt": "A first-order reaction has k = 0.0100 s⁻¹ and initial concentration 0.800 M. Find its half-life and concentration after two half-lives.",
+      "steps": [
+        "The half-life is 0.693/0.0100 = 69.3 s.",
+        "After one half-life, concentration is 0.400 M; after two, it is 0.200 M."
+      ],
+      "conclusion": "The two-half-life interval is 138.6 s. The second interval removes less absolute concentration but the same fraction as the first."
+    },
+    "misconception": "Constant half-life is a first-order property, not a universal property of every reaction.",
+    "apTip": "Identify the plotted vertical variable before using a slope, and check the sign and units of k.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 5.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Half-life quotient, repeated halving and total time independently checked. Integrated-plot scope matches zero/first/second-order CED relationships.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            0.693,
+            0.01
+          ],
+          "expected": 69.3,
+          "evidence": "69.3 s"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            0.8,
+            4
+          ],
+          "expected": 0.2,
+          "evidence": "0.200 M"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            2,
+            69.3
+          ],
+          "expected": 138.6,
+          "evidence": "138.6 s"
+        }
+      ],
+      "contentHash": "d05f61ae402bd1c43c205c3b476f7e31289031fd3bcba66326b0277d0b9b9466"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-5-4",
+    "topicNumber": "5.4",
+    "unitNumber": 5,
+    "title": "Elementary Reactions",
+    "status": "published",
+    "overview": "An elementary reaction is a single molecular event in a proposed mechanism. Its reactant stoichiometry can determine its mass-action rate expression, unlike the coefficients of an arbitrary overall multistep reaction.",
+    "keyConcepts": [
+      {
+        "title": "Molecularity",
+        "text": "Unimolecular and bimolecular steps involve one or two reacting particles in the elementary event. Simultaneous collisions among many particles are less probable."
+      },
+      {
+        "title": "Rate expression",
+        "text": "For an explicitly elementary A + B → P step, the event rate is proportional to [A][B]. A step with two A particles gives a dependence on [A]²."
+      },
+      {
+        "title": "Overall versus step",
+        "text": "Adding elementary steps gives a net equation but generally does not give the overall experimental rate law by copying the summed coefficients."
+      }
+    ],
+    "example": {
+      "prompt": "An explicitly elementary step is A + B → AB. Predict how its rate changes when both reactant concentrations double at fixed temperature.",
+      "steps": [
+        "The mass-action rate expression is k[A][B].",
+        "Doubling each factor multiplies rate by 2 × 2 = 4."
+      ],
+      "conclusion": "If only [A] doubled while [B] stayed fixed, the multiplier would be two. The elementary-step assumption is essential to deriving the expression directly."
+    },
+    "misconception": "Writing a balanced overall equation does not establish that all its reactant particles collide in one elementary event.",
+    "apTip": "Look for the word elementary or an explicit mechanism before inferring exponents from coefficients. State whether a rate refers to reaction events or a species’ consumption.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 5.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Bimolecular mass-action factors and fourfold scaling independently checked; no inference from unspecified overall coefficients.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            2,
+            2
+          ],
+          "expected": 4,
+          "evidence": "= 4"
+        }
+      ],
+      "contentHash": "c08c2b39c7a33c08d390ebd584ed6ceaf6f574beaafb1ad7e86c4f906fec569b"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-5-5",
+    "topicNumber": "5.5",
+    "unitNumber": 5,
+    "title": "Collision Model",
+    "status": "published",
+    "overview": "The collision model explains why particle contact alone is insufficient for reaction. A productive collision needs a suitable arrangement and enough energy to access the reaction pathway.",
+    "keyConcepts": [
+      {
+        "title": "Energy requirement",
+        "text": "Activation energy is a barrier along the pathway. Only a fraction of collisions have sufficient energy under the relevant model."
+      },
+      {
+        "title": "Orientation",
+        "text": "Reacting sites must meet in a suitable geometry. Increasing collision frequency does not guarantee that every collision becomes productive."
+      },
+      {
+        "title": "Temperature and concentration",
+        "text": "Higher temperature usually increases the fraction exceeding the barrier, while higher reactant concentration can increase collision opportunities. Distinguish these mechanisms."
+      }
+    ],
+    "example": {
+      "prompt": "Two samples have the same reactants and concentrations, but one is warmer. Explain a likely rate increase using collision theory.",
+      "steps": [
+        "The warmer sample has a higher average kinetic energy and a changed distribution of collision energies.",
+        "A larger fraction can overcome the same activation barrier, increasing the frequency of successful collisions."
+      ],
+      "conclusion": "This explanation does not require claiming that the activation energy itself falls when the sample is heated. The pathway may be unchanged."
+    },
+    "misconception": "Heating does not normally lower the activation barrier for an unchanged pathway. A catalyst changes the pathway rather than simply giving every particle more energy.",
+    "apTip": "Connect a changed condition to collision frequency, orientation or energy distribution, and identify which factor the evidence actually changes.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 5.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Temperature distribution effect distinguished from barrier change; same-pathway and usual-rate qualifications prevent an absolute claim for every mechanism.",
+      "checks": [],
+      "contentHash": "970a899c24baadbf5a6fee567640268381cb9754c5ad53c1d51ef12f397ba4dc"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-5-6",
+    "topicNumber": "5.6",
+    "unitNumber": 5,
+    "title": "Reaction Energy Profile",
+    "status": "published",
+    "overview": "A reaction energy profile shows relative energies along a pathway. Separate the activation barrier from the overall reactant-to-product energy change: these answer different questions about kinetics and energetics.",
+    "keyConcepts": [
+      {
+        "title": "Barrier",
+        "text": "The forward activation barrier is the transition-state energy minus the reactant energy for that step. A higher barrier generally makes access less likely at the same temperature."
+      },
+      {
+        "title": "Reaction energy",
+        "text": "The product energy minus reactant energy describes the net change. Products below reactants indicate energy release in the simplified profile."
+      },
+      {
+        "title": "Reverse direction",
+        "text": "The reverse barrier is measured from the products to the same transition state, not from the reactants again."
+      }
+    ],
+    "example": {
+      "prompt": "A simplified profile assigns reactants 0, the transition state 80 and products −30 kJ/mol. Find the forward barrier, reverse barrier and net energy change.",
+      "steps": [
+        "The forward barrier is 80 − 0 = 80 kJ/mol.",
+        "The reverse barrier is 80 − (−30) = 110 kJ/mol, and the net change is −30 − 0 = −30 kJ/mol."
+      ],
+      "conclusion": "The reaction releases energy overall but still has a substantial forward barrier. Energy release alone does not establish a fast rate."
+    },
+    "misconception": "A downhill overall reaction is not barrier-free. Thermodynamic favorability and reaction speed are different properties.",
+    "apTip": "Measure each barrier from the appropriate starting level and identify whether the diagram concerns one step or several.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 5.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Relative energy differences independently checked: 80 forward,110 reverse,-30 net. No rate inferred solely from downhill products.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            80,
+            -30
+          ],
+          "expected": 110,
+          "evidence": "110 kJ/mol"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            -30,
+            0
+          ],
+          "expected": -30,
+          "evidence": "−30 kJ/mol"
+        }
+      ],
+      "contentHash": "25335e0ed5bf4e070b4b77a5782aedeb8582b38ee4e3e4213fda749248f60be0"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-5-7",
+    "topicNumber": "5.7",
+    "unitNumber": 5,
+    "title": "Introduction to Reaction Mechanisms",
+    "status": "published",
+    "overview": "A reaction mechanism is a proposed sequence of elementary steps whose sum gives an overall reaction. Distinguish species that participate only along the pathway from those that remain in the net equation.",
+    "keyConcepts": [
+      {
+        "title": "Step addition",
+        "text": "Add reactants and products, then cancel identical species appearing on opposite sides. The remaining coefficients describe the overall stoichiometry."
+      },
+      {
+        "title": "Intermediates",
+        "text": "An intermediate forms in one step and is consumed later. It can be absent initially and disappear from the net equation after cancellation."
+      },
+      {
+        "title": "Evidence",
+        "text": "A mechanism must be consistent with stoichiometry and experimental kinetics, but agreement does not uniquely prove that no alternative pathway is possible."
+      }
+    ],
+    "example": {
+      "prompt": "Consider the hypothetical steps A + B → AB, followed by AB + B → AB₂. Find the net equation and intermediate.",
+      "steps": [
+        "Adding the steps places AB on both sides, so it cancels.",
+        "The net result is A + 2B → AB₂. The AB species is formed then consumed, making it an intermediate."
+      ],
+      "conclusion": "The summed equation conserves one A and two B atoms, but does not establish which step is slow or what experimental rate law is observed."
+    },
+    "misconception": "An intermediate is not automatically a catalyst. Its order of formation and consumption differs from that of a regenerated catalyst.",
+    "apTip": "Check cancellation, atom and charge balance, then compare the proposed pathway with rate evidence rather than relying on the net equation alone.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 5.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Hypothetical molecular formulas preserve A1/B2 and intermediate cancellation; no unsupported claim that stoichiometry alone determines rate or verifies mechanism.",
+      "checks": [],
+      "contentHash": "16fad88a3c69ae8df5a14322f4b3b6d3645252f4b5cc40d3d79649695b0482f1"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-5-8",
+    "topicNumber": "5.8",
+    "unitNumber": 5,
+    "title": "Reaction Mechanism and Rate Law",
+    "status": "published",
+    "overview": "A proposed mechanism connects elementary step rates to the observed rate law. A slow first step can provide a simple starting model, but intermediates require careful treatment when they occur in a rate expression.",
+    "keyConcepts": [
+      {
+        "title": "Slow-step model",
+        "text": "When a first elementary step controls the rate under the stated conditions, its reactant molecularity supplies the corresponding concentration dependence."
+      },
+      {
+        "title": "Overall coefficients",
+        "text": "Stoichiometric coefficients in the net reaction need not match observed exponents because several elementary events can combine into that reaction."
+      },
+      {
+        "title": "Consistency",
+        "text": "Compare the derived law with experimental concentration dependence. A matching law supports a mechanism but does not prove that it is the only possible one."
+      }
+    ],
+    "example": {
+      "prompt": "Suppose A + B → AB is slow, followed by fast AB + B → AB₂. Derive the predicted rate law.",
+      "steps": [
+        "The stated rate-controlling first step is elementary and bimolecular, giving rate = k[A][B].",
+        "Adding the steps gives A + 2B → AB₂, but the second B enters after the controlling first event."
+      ],
+      "conclusion": "The model therefore predicts first order in B, not second order merely because its net coefficient is two. Doubling B alone doubles the predicted rate."
+    },
+    "misconception": "Do not copy the final balanced equation into a rate law. Also, a later slow step containing an intermediate cannot always be expressed using initial reactants without another justified relationship.",
+    "apTip": "Identify the elementary controlling step, state the kinetic assumptions and test the resulting concentration exponents against data.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 5.8; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Slow-first-step mass action and overall A1/B2 conservation independently checked; later-step intermediate caveat retained.",
+      "checks": [],
+      "contentHash": "d17e74cc4a22504b720d66d165e5d7bbc008e743cd0a3e91f30d3c65c8e8f1b1"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-5-9",
+    "topicNumber": "5.9",
+    "unitNumber": 5,
+    "title": "Pre-Equilibrium Approximation",
+    "status": "published",
+    "overview": "The pre-equilibrium approximation can remove an intermediate from a slow-step rate law when an earlier reversible step remains close to equilibrium. This is a kinetic assumption about the mechanism and conditions, not a rule for every multistep reaction.",
+    "keyConcepts": [
+      {
+        "title": "Fast reversible step",
+        "text": "For A + B ⇌ I, balancing forward and reverse step rates gives k₁[A][B] ≈ k₋₁[I]."
+      },
+      {
+        "title": "Substitution",
+        "text": "Solve for [I] ≈ (k₁/k₋₁)[A][B], then substitute into the slow-step rate expression. Keep the concentration factors and units."
+      },
+      {
+        "title": "Validity",
+        "text": "The early equilibrium must be maintained sufficiently closely while the slower pathway proceeds. A fast reaction label alone does not justify every equilibrium substitution."
+      }
+    ],
+    "example": {
+      "prompt": "After that fast equilibrium, suppose I + B → P is slow with rate k₂[I][B]. Derive a reactant-only rate law.",
+      "steps": [
+        "Substituting the equilibrium expression gives rate ≈ k₂(k₁/k₋₁)[A][B]².",
+        "For k₁/k₋₁ = 2 M⁻¹, k₂ = 3 M⁻¹s⁻¹, [A] = 0.100 M and [B] = 0.200 M, [I] ≈ 0.0400 M."
+      ],
+      "conclusion": "The predicted rate is 3(0.0400)(0.200) = 0.0240 M/s, matching the substituted expression."
+    },
+    "misconception": "An intermediate should not simply be deleted from a rate expression; a justified relationship is needed to replace its concentration.",
+    "apTip": "Show the reversible-step relation explicitly before substitution, and distinguish this approximation from assuming the entire reaction has reached equilibrium.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 5.9; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Forward/reverse balance and substitution independently recomputed; ratio units M^-1 and final M/s verified. No unsupported steady-state derivation.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            2,
+            0.1,
+            0.2
+          ],
+          "expected": 0.04,
+          "evidence": "0.0400 M"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            3,
+            0.04,
+            0.2
+          ],
+          "expected": 0.024,
+          "evidence": "0.0240 M/s"
+        }
+      ],
+      "contentHash": "08f4396d0cc466e76aa9617e03e368a86d1c6b5d616a65be3b1dda9aafa43bb4"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-5-10",
+    "topicNumber": "5.10",
+    "unitNumber": 5,
+    "title": "Multistep Reaction Energy Profile",
+    "status": "published",
+    "overview": "A multistep reaction profile contains several transition-state peaks and intermediate valleys. Each step’s activation barrier must be measured from its own starting level, not from one common baseline.",
+    "keyConcepts": [
+      {
+        "title": "Peaks and valleys",
+        "text": "A peak represents a transition state. A valley between steps can represent an intermediate; neither is automatically a stable final product."
+      },
+      {
+        "title": "Local barriers",
+        "text": "For each forward step, subtract the preceding minimum from that step’s peak. The highest absolute peak is not always the largest local barrier."
+      },
+      {
+        "title": "Overall change",
+        "text": "The final product-to-initial-reactant difference gives the overall energy change. A catalyst or altered pathway can change barriers without changing those endpoint energies."
+      }
+    ],
+    "example": {
+      "prompt": "A hypothetical profile has reactants at 0, first peak at 80, intermediate at 50, second peak at 100 and products at −20 kJ/mol.",
+      "steps": [
+        "The first barrier is 80 − 0 = 80 kJ/mol.",
+        "The second is 100 − 50 = 50 kJ/mol, despite its higher absolute peak. The overall change is −20 kJ/mol."
+      ],
+      "conclusion": "If other kinetic factors are comparable, the larger first barrier can indicate a slower first step. The diagram alone does not uniquely establish an experimental rate law."
+    },
+    "misconception": "Do not choose a rate-controlling step simply by locating the highest point on the page. Starting levels and other kinetic factors matter.",
+    "apTip": "Label all minima and peaks before calculating, then distinguish local barriers from the overall energy change.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 5.10; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Local energy subtraction 80 and 50 and overall -20 independently checked; kinetic conclusion qualified by other factors.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            100,
+            50
+          ],
+          "expected": 50,
+          "evidence": "50 kJ/mol"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            -20,
+            0
+          ],
+          "expected": -20,
+          "evidence": "−20 kJ/mol"
+        }
+      ],
+      "contentHash": "cef8c63bd3858aeb26d473f38f50e39d4fdd516a448bcc8878abfa48d4093dcf"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-5-11",
+    "topicNumber": "5.11",
+    "unitNumber": 5,
+    "title": "Catalysis",
+    "status": "published",
+    "overview": "A catalyst increases reaction rate by providing a different pathway and is regenerated over the catalytic cycle. Its role changes how quickly a system approaches equilibrium, not the equilibrium position at a fixed temperature.",
+    "keyConcepts": [
+      {
+        "title": "Pathway",
+        "text": "A catalytic route can lower an effective activation barrier or improve how reactants encounter one another. It does not need to increase the average kinetic energy of the sample."
+      },
+      {
+        "title": "Regeneration",
+        "text": "A catalyst may be consumed in one step and produced in another, so it cancels from the net equation. An intermediate forms and is consumed within the pathway instead."
+      },
+      {
+        "title": "Equilibrium",
+        "text": "Catalysts accelerate access in both directions without changing the reaction’s equilibrium constant or overall endpoint energy difference at the same temperature."
+      }
+    ],
+    "example": {
+      "prompt": "Consider the hypothetical steps A + C → AC and AC + B → AB + C. Identify the catalyst and intermediate.",
+      "steps": [
+        "Adding the steps cancels C and AC, leaving A + B → AB.",
+        "C is consumed then regenerated, so it is the catalyst. AC forms then is consumed, so it is an intermediate."
+      ],
+      "conclusion": "The cycle illustrates regeneration but does not by itself prove that this proposed pathway is faster; energy or kinetic evidence would support that claim."
+    },
+    "misconception": "A catalyst does not increase equilibrium yield merely by being present. It can help equilibrium be reached sooner.",
+    "apTip": "Trace the species across all steps and distinguish evidence for a catalytic cycle from evidence for its actual rate enhancement.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 5.11; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Catalyst/intermediate temporal roles, net cancellation and unchanged equilibrium properties checked; proposed-cycle kinetics not asserted without evidence.",
+      "checks": [],
+      "contentHash": "0662e47c649d077e56a09a49a577b3618edc3683397f94efe6a607d1185f2d2b"
+    }
   }
 ]
