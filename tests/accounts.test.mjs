@@ -2,6 +2,8 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { publicCloudConfig,safeReturnTo,isSameOrigin } from '../src/lib/account-policy.ts';
 import { emptyCloud,queueChange,acceptChange,conflictChange,resolveConflict,visibleRecords,projectStudy,legacyChanges,validChange } from '../src/lib/cloud-model.ts';
+import {serializeAccountCache,parseAccountCache} from '../src/lib/account-cache.ts';
+import {recoveryProof,verifyRecovery} from '../src/lib/recovery-proof.ts';
 const id=()=>crypto.randomUUID();
 test('missing/privileged cloud keys fail closed, same-origin and redirect validation',()=>{
  assert.equal(publicCloudConfig(),null);assert.equal(publicCloudConfig('https://test.supabase.co','sb_secret_test'),null);
@@ -27,4 +29,12 @@ test('legacy import creates canonical changes without mutating originals or over
  const legacy={selected:['chemistry','calculus-ab','human-geography'],notes:{'chemistry/moles':'C','calculus-ab/limits':'M','human-geography/topic-1-1':'G','old/no-topic':'recover'},completed:['human-geography/topic-1-1'],watchedVideos:[],saved:[],lastTopic:null};const before=JSON.stringify(legacy);
  const changes=legacyChanges(legacy);assert.equal(changes.filter(r=>r.kind==='note').length,3);assert.equal(JSON.stringify(legacy),before);
  assert.equal(validChange({...changes[0],revision:0,mutation:id(),user_id:id()}),false);
+});
+test('account caches fail closed for other owners, corrupted records and forged recovery proofs',()=>{
+ const state=queueChange(emptyCloud(),'note','chemistry/moles','private A',id());const raw=serializeAccountCache('A',state);
+ assert.deepEqual(parseAccountCache(raw,'A'),state);assert.throws(()=>parseAccountCache(raw,'B'));assert.throws(()=>parseAccountCache('{bad','A'));
+ const before=process.env.AUTH_FLOW_SECRET;try{
+  process.env.AUTH_FLOW_SECRET=crypto.randomUUID()+crypto.randomUUID();const proof=recoveryProof('A','session-A');assert.equal(verifyRecovery(proof,'A','session-A'),true);
+  assert.equal(verifyRecovery(proof,'B','session-A'),false);assert.equal(verifyRecovery(proof,'A','session-B'),false);assert.equal(verifyRecovery(proof+'x','A','session-A'),false);assert.equal(verifyRecovery('A','A','session-A'),false);
+ }finally{if(before===undefined)delete process.env.AUTH_FLOW_SECRET;else process.env.AUTH_FLOW_SECRET=before;}
 });

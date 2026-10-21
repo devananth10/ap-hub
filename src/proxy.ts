@@ -1,11 +1,12 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { cloudConfig } from "./lib/supabase/config";
+import { timedFetch } from "./lib/supabase/request";
 export async function proxy(request: NextRequest) {
   const config = cloudConfig();
   if (!config) return NextResponse.next();
   let response = NextResponse.next({ request });
-  const supabase = createServerClient(config.url, config.key, { cookies: {
+  const supabase = createServerClient(config.url, config.key, { global:{fetch:timedFetch}, cookies: {
     getAll: () => request.cookies.getAll(),
     setAll(items, headers) {
       for (const { name, value } of items) request.cookies.set(name, value);

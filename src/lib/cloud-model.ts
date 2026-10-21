@@ -1,10 +1,11 @@
 import { courses, findTopic } from "./courses.ts";
 import { isInstructorId } from "./video-instructors.ts";
 import type { StudyData } from "./study-storage.ts";
+import syncCatalog from "../config/sync-catalog.json" with {type:"json"};
 
 export const kinds = ["course", "topic", "video", "instructor", "note", "saved", "recent", "attempt", "import"] as const;
 export type Kind = typeof kinds[number];
-export type Attempt = { id: string; courseId: string; topicId: string | null; questionIds: string[]; total: number; correct: number; answered: number; percent: number; startedAt: string; completedAt: string };
+export type Attempt = { id: string; courseId: string|null; topicId: string | null; questionIds: string[]; total: number; correct: number; answered: number; percent: number; startedAt: string; completedAt: string };
 export type RecordValue = boolean | string | Attempt | { completed: boolean; lastStudied: string | null };
 export type CloudRecord = { kind: Kind; key: string; value: RecordValue; revision: number };
 export type Change = CloudRecord & { mutation: string };
@@ -23,14 +24,14 @@ export function validRecord(record: unknown): record is CloudRecord {
   if (r.kind === "note") return canonicalTopic(r.key) && typeof v === "string" && v.length <= 50000;
   if (r.kind === "topic") return canonicalTopic(r.key) && !!v && typeof v === "object" && "completed" in v && typeof v.completed === "boolean" && (v.lastStudied === null || date(v.lastStudied)) && Object.keys(v).length === 2;
   if (r.kind === "instructor") return r.key === "human-geography" && isInstructorId(v);
-  if (r.kind === "video") return /^[a-zA-Z0-9_-]+:[a-zA-Z0-9_-]{11}$/.test(r.key) && typeof v === "boolean";
-  if (r.kind === "saved") return /^[a-zA-Z0-9_-]+$/.test(r.key) && typeof v === "boolean";
+  if (r.kind === "video") return syncCatalog.videos.includes(r.key) && typeof v === "boolean";
+  if (r.kind === "saved") return syncCatalog.resources.includes(r.key) && typeof v === "boolean";
   if (r.kind === "recent") return r.key === "last" && typeof v === "string" && canonicalTopic(v);
   if (r.kind === "import") return /^[a-f0-9]{64}$/.test(r.key) && v === true;
   if (r.kind === "attempt") {
     if (!v || typeof v !== "object" || !("questionIds" in v)) return false;
     const a = v as Attempt;
-    return uuid(r.key) && a.id === r.key && courses.some(c=>c.id===a.courseId) && (a.topicId===null || !!findTopic(a.courseId,a.topicId).topic) && Array.isArray(a.questionIds) && a.questionIds.length===a.total && a.questionIds.every(id=>typeof id==="string" && /^[\w-]{1,100}$/.test(id)) && new Set(a.questionIds).size===a.total && Number.isInteger(a.total) && a.total>0 && a.total<=2640 && Number.isInteger(a.correct) && Number.isInteger(a.answered) && a.correct>=0 && a.correct<=a.answered && a.answered<=a.total && a.percent===Math.round(a.correct/a.total*100) && date(a.startedAt) && date(a.completedAt) && Date.parse(a.completedAt)>=Date.parse(a.startedAt) && Object.keys(a).length===10;
+    return uuid(r.key) && a.id === r.key && (a.courseId===null||courses.some(c=>c.id===a.courseId)) && (a.topicId===null || !!a.courseId&&!!findTopic(a.courseId,a.topicId).topic) && Array.isArray(a.questionIds) && a.questionIds.length===a.total && a.questionIds.every(id=>typeof id==="string" && /^[\w-]{1,100}$/.test(id)) && new Set(a.questionIds).size===a.total && Number.isInteger(a.total) && a.total>0 && a.total<=2640 && Number.isInteger(a.correct) && Number.isInteger(a.answered) && a.correct>=0 && a.correct<=a.answered && a.answered<=a.total && a.percent===Math.round(a.correct/a.total*100) && date(a.startedAt) && date(a.completedAt) && Date.parse(a.completedAt)>=Date.parse(a.startedAt) && Object.keys(a).length===10;
   }
   return false;
 }

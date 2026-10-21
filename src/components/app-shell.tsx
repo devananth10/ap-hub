@@ -9,11 +9,14 @@ import { useStudy } from "./study-provider";
 import { CourseIcon, Dialog } from "./ui";
 import { CoursePicker } from "./course-picker";
 import { FeedbackDialog } from "./feedback-dialog";
+import { AccountMenu } from "./account-menu";
+import { useAuth } from "./auth-provider";
 
 const nav = [ { href: "/", label: "Overview", icon: LayoutGrid }, { href: "/courses", label: "My courses", icon: BookOpen }, { href: "/practice", label: "Practice", icon: Target }, { href: "/resources", label: "Saved resources", icon: Bookmark }, { href: "/notes", label: "My notes", icon: StickyNote } ];
 export function AppShell({ children }: { children: ReactNode }) {
   const path = usePathname();
   const { selected, theme, toggleTheme, storageError } = useStudy();
+  const auth=useAuth();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [pickerOpen, setPickerOpen] = useState(false);
   const [feedbackOpen, setFeedbackOpen] = useState(false);
@@ -55,11 +58,11 @@ export function AppShell({ children }: { children: ReactNode }) {
       <div className="sidebar-section-title"><span>MY COURSES</span><button className="icon-button small-icon" aria-label="Manage courses" onClick={() => setPickerOpen(true)}><Plus size={17} /></button></div>
       <nav className="course-nav">{courses.filter((course) => selected.includes(course.id)).map((course) => <Link href={`/courses/${course.id}`} key={course.id} className={path.includes(`/courses/${course.id}`) ? "current" : ""}><span className={`course-dot ${course.color}`} />{course.title}</Link>)}{selected.length === 0 && <p className="small muted">Your courses will appear here.</p>}</nav>
       <div className="sidebar-bottom"><div className="sidebar-note"><span className="tiny-label"><Sparkles size={14} /> A LITTLE, EVERY DAY</span><p>Big goals start with<br />small study sessions.</p><Link href="/courses">Find your next topic <ArrowRight size={14} /></Link></div>
-      <div className="local-profile"><span className="avatar">Y</span><span><strong>Your progress</strong><small>Saved on this device</small></span><span className="online-dot" /></div></div>
+      <Link href="/progress" className="local-profile"><span className="avatar">{(auth.user?.displayName||"Y")[0].toUpperCase()}</span><span><strong>My progress</strong><small>{auth.user?"Your private account":"Saved on this device"}</small></span><span className="online-dot" /></Link></div>
     </aside>
     <div className="app-body" inert={isMobile && mobileOpen}>
       <header className="topbar"><div className="header-left"><button ref={mobileTrigger} className="icon-button mobile-menu" aria-label={mobileOpen ? "Close menu" : "Open menu"} aria-expanded={mobileOpen} onClick={() => setMobileOpen((open) => !open)}>{mobileOpen ? <X size={20} /> : <Menu size={20} />}</button><span className="breadcrumb-top">PrepAtlas <ChevronRight size={14} /><strong>{path === "/" ? "Overview" : path.startsWith("/courses/") ? "Courses" : nav.find((item) => item.href === path)?.label || "PrepAtlas"}</strong></span></div>
-        <div className="header-actions"><button className="search-trigger" aria-label="Search courses and topics" onClick={() => setSearchOpen(true)}><Search size={17} /><span>Find a course or topic</span><kbd><Command size={10} /> K</kbd></button><span className="header-divider" /><button className="icon-button theme-toggle" aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`} onClick={toggleTheme}>{theme === "light" ? <Moon size={20} /> : <Sun size={20} />}</button><span className="avatar header-avatar">Y</span></div>
+        <div className="header-actions"><button className="search-trigger" aria-label="Search courses and topics" onClick={() => setSearchOpen(true)}><Search size={17} /><span>Find a course or topic</span><kbd><Command size={10} /> K</kbd></button><span className="header-divider" /><button className="icon-button theme-toggle" aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`} onClick={toggleTheme}>{theme === "light" ? <Moon size={20} /> : <Sun size={20} />}</button><AccountMenu/></div>
       </header>
       {storageError && <div className="storage-warning" role="alert">Local saving is unavailable. Keep this tab open and copy any important notes before leaving.</div>}
       <main id="main-content" className="main-content">{children}</main>

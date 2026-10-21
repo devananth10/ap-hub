@@ -13,3 +13,4 @@ sql+=rows('study_resources','id',catalog.resources.map(r=>[r.id]));
 sql+=rows('study_videos','video_key,course_id,topic_id',catalog.resources.filter(r=>r.kind==='video'&&r.approval?.status==='approved'&&r.visibility!=='hidden'&&watchedVideoKey(r)).map(r=>[watchedVideoKey(r),r.courseId,r.topicIds[0]||null]));
 mkdirSync(new URL('../supabase/migrations/',import.meta.url),{recursive:true});
 writeFileSync(new URL('../supabase/migrations/202610210002_catalog.sql',import.meta.url),sql);
+writeFileSync(new URL('../src/config/sync-catalog.json',import.meta.url),JSON.stringify({resources:catalog.resources.map(r=>r.id),videos:catalog.resources.filter(r=>r.kind==='video'&&r.approval?.status==='approved'&&r.visibility!=='hidden'&&watchedVideoKey(r)).map(r=>watchedVideoKey(r))},null,2)+'\n');
