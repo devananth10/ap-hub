@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 7.3–7.4
+
+704 original MCQs across64 topics are published, eleven each;256 meaningful stimuli (36.36%) and273 explicit evidence/numerical/geometry checks. Measures of Development distinguishes GDP/GNI/residency, income distribution, HDI components and GII direction. Women/Economic Development checks participation denominators, earnings, unpaid care and nonrandom microloan-study observations without claiming causal effects.
+
+All191 unit tests, structural/evidence checks, TypeScript, production build, all68 Geography scopes and standard preview checks passed. Both full sessions scored11/11; all eight mobile stimuli inspected. Mobile national-income table initially split a six-digit number: changed display to explicitly labeled billion-currency amounts and million-resident population, preserving quantities and18000/person result. Revalidated, browser-graded corrected item, inspected mobile/desktop, rebuilt. Keyboard zoom200/reset100 and light-mode rendering checked. Existing234 checkpoint question files,248 stimuli and full approved catalog unchanged. Next7.5; four topics/44 questions remain. Full748 audit and UI/summary phase pending; no human-review or calibrated-difficulty claim.
+
 ## Human Geography Topics 7.1–7.2
 
 682 original MCQs across 62 topics are published, eleven each; 248 meaningful stimuli (36.36%) and 265 explicit evidence/numerical/geometry checks. Industrial Revolution covers resources/technology, productivity, employment composition, networks, class and industrial motives for imperial expansion without false universal chronology. Economic Sectors checks the five-sector framework, original least-cost totals120/115/110, source/market freight costs200/600, sector shares and ship-to-rail transfer.

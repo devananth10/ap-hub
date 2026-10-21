@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 7,
+  "topicId": "topic-7-3",
+  "questions": [
+    {
+      "id": "hug-7-3-001",
+      "prompt": "Using GNI = GDP + net primary income from abroad, what is this economy’s GNI per resident?",
+      "options": [
+        "20000 currency units",
+        "22000 currency units",
+        "18000 currency units",
+        "90000 currency units"
+      ],
+      "correctIndex": 2,
+      "explanation": "GNI is 100 billion plus −10 billion = 90 billion, or 90,000 million currency units. Dividing by 5 million residents gives 18,000 per resident. The negative net flow makes GNI smaller than GDP here. These are aggregate averages, not each person’s income or a measure of how evenly resources are distributed. A: This divides GDP rather than GNI by population. B: This treats a negative net flow as a positive addition. C: This correctly adjusts for the net flow and cancels the million units. D: This uses the total in millions without the correct population division."
+    },
+    {
+      "id": "hug-7-3-002",
+      "prompt": "Which claim is supported by the household-income accounts?",
+      "options": [
+        "Both groups have a mean income of 25, but A has a more concentrated distribution than B.",
+        "A’s mean is 70 because its highest household receives 70.",
+        "B’s total income exceeds A’s because all B households receive 25.",
+        "Equal means prove every household in A and B has the same income."
+      ],
+      "correctIndex": 0,
+      "explanation": "Both totals are 100 currency units across four households, so each mean is 25. A allocates 70 to one household and 10 to each of three others, while B allocates 25 to each. An equal average can therefore conceal unequal distribution. These fictional groups do not establish a national Gini coefficient or every dimension of well-being. A: This correctly calculates the means and interprets the distribution. B: The maximum is not the arithmetic mean. C: Both supplied totals are 100. D: The listed individual incomes explicitly differ in A."
+    },
+    {
+      "id": "hug-7-3-003",
+      "prompt": "What is the most defensible comparison of these HDI-related dimensions without calculating a composite index?",
+      "options": [
+        "A must lead on every dimension because its income is higher.",
+        "B has higher longevity and schooling measures, while A has higher income; a composite ranking needs the specified index method.",
+        "B’s lower income proves its health and education measures are lower too.",
+        "Adding the raw years and currency values gives a valid HDI."
+      ],
+      "correctIndex": 1,
+      "explanation": "The supplied dimensions differ: B has higher life expectancy and both schooling measures, whereas A has higher per-capita income. HDI combines normalized health, education and income indices, rather than adding raw years to currency. These values permit a dimension-by-dimension comparison, but the question does not provide the transformations needed to compute an exact composite. A: A higher income does not reverse the listed health and schooling differences. B: This correctly compares components and preserves the composite-method requirement. C: The supplied B values contradict this inference. D: Raw indicators use different units and HDI does not sum them in this way."
+    },
+    {
+      "id": "hug-7-3-004",
+      "prompt": "Under the stated GII convention, which spatial comparison is supported?",
+      "options": [
+        "The southern regions have less measured gender inequality because their index values are larger.",
+        "Every individual in the northern regions has equal pay.",
+        "GII measures only the value of industrial output per resident.",
+        "Both northern regions have lower measured gender inequality than either southern region."
+      ],
+      "correctIndex": 3,
+      "explanation": "The northern values are 0.2 and 0.3, below the southern values 0.6 and 0.7. Under the GII convention lower values indicate lower measured inequality across its reproductive-health, empowerment and labor-market dimensions. Regional index values do not establish that every person has equal pay or identical opportunities, nor do they replace the component indicators. A: This reverses the supplied interpretation of the scale. B: An aggregate index is not proof of equality for every individual or wage. C: That is not the set of dimensions summarized by GII. D: This correctly compares the values using the stated direction."
+    },
+    {
+      "id": "hug-7-3-005",
+      "prompt": "Which distinction between GDP and GNI is correct?",
+      "options": [
+        "GDP concerns production within an economy; GNI adjusts for residents’ net primary income flows with other economies.",
+        "GDP counts only citizens’ output wherever they live; GNI counts only exports.",
+        "GNI is always GDP multiplied by the literacy rate.",
+        "GDP and GNI must be equal whenever a country has a border."
+      ],
+      "correctIndex": 0,
+      "explanation": "GDP measures domestic production, whereas GNI relates to residents’ income and incorporates net primary income flows with the rest of the world. The totals can differ in either direction depending on those flows. Neither measure by itself describes household distribution, political freedoms or every dimension of development. A: This identifies the territorial-production and resident-income distinction. B: Citizenship is not the domestic-production definition, and GNI is not an export total. C: Literacy is a separate indicator rather than the national-account adjustment. D: Cross-border income flows can make the two totals differ."
+    },
+    {
+      "id": "hug-7-3-006",
+      "prompt": "Why can an economy have substantial productive activity that is difficult to measure with standard formal-business records?",
+      "options": [
+        "Informal activity necessarily produces no goods or services.",
+        "Every unregistered activity is already counted perfectly in tax records.",
+        "Informal production and work may be missing or estimated imperfectly even though they contribute to livelihoods.",
+        "Only factory activity qualifies as economic production."
+      ],
+      "correctIndex": 2,
+      "explanation": "Informal work and enterprises can produce goods and services without appearing fully in formal registration or administrative systems. Statistical agencies may estimate some activity, so informality does not mean complete exclusion from every national account. Measurement limits matter when comparing livelihoods and sector structures across places. A: Informal does not mean nonproductive. B: Registration and tax coverage can be incomplete. C: This recognizes actual activity and qualified measurement limits. D: Service and primary activities also contribute to production."
+    },
+    {
+      "id": "hug-7-3-007",
+      "prompt": "What is the strongest reason to supplement a national average literacy rate with regional and group-level evidence?",
+      "options": [
+        "The national average already identifies each group’s rate separately.",
+        "An average can conceal regional or group differences, and other evidence can examine learning opportunities.",
+        "A national literacy rate makes all income and health indicators unnecessary.",
+        "Disaggregation turns a descriptive rate into proof that one policy caused every difference."
+      ],
+      "correctIndex": 1,
+      "explanation": "An average can summarize a measured share while concealing unequal access and outcomes within the population. Disaggregation and clear age/definition metadata help interpret literacy, and educational quality requires additional evidence. The measure is useful, but should not be treated as every person’s schooling experience or as a direct individual wage prediction. A: One aggregate does not separately identify the rates of its component groups. B: This identifies meaningful variation and dimensions the average omits. C: Literacy is one dimension rather than a replacement for every other indicator. D: Disaggregation can show differences without independently establishing their causes."
+    },
+    {
+      "id": "hug-7-3-008",
+      "prompt": "Two economies have the same GDP per capita but different life expectancies and access to care. What follows?",
+      "options": [
+        "Their full development conditions must be identical.",
+        "Health measures cannot differ when average production matches.",
+        "The GDP figures must be false because social indicators differ.",
+        "Income or production averages should be complemented by social and access indicators."
+      ],
+      "correctIndex": 3,
+      "explanation": "A similar production average does not ensure that resources are distributed or translated into services in the same way. Social indicators and access records provide additional dimensions of development. The comparison does not identify a single cause of the health difference or require dismissing either economic or social data. A: One matched indicator does not establish all dimensions. B: Service access and health conditions can differ. C: Different dimensions can coexist without a mathematical contradiction. D: This recognizes the need for a multidimensional comparison."
+    },
+    {
+      "id": "hug-7-3-009",
+      "prompt": "Which statement best explains the value and limitation of HDI?",
+      "options": [
+        "It combines selected health, education and income achievements, but cannot represent every inequality or environmental condition.",
+        "It directly counts only export goods and military spending.",
+        "It is an exact description of every resident’s living conditions.",
+        "It removes the need to inspect any underlying indicators."
+      ],
+      "correctIndex": 0,
+      "explanation": "HDI provides a composite summary of selected average achievements in longevity, knowledge and living standards. This supports comparisons but necessarily omits dimensions and can conceal internal distribution. Looking at components and complementary indicators is therefore essential; a summary index is not a complete account of people’s opportunities. A: This states both the index’s purpose and its limits. B: These are not its defining dimensions. C: National averages do not describe each individual. D: Component and additional evidence help explain and qualify the summary."
+    },
+    {
+      "id": "hug-7-3-010",
+      "prompt": "A country reports a falling infant mortality rate. What is an appropriate interpretation of this development indicator?",
+      "options": [
+        "Every infant is guaranteed to survive.",
+        "All regional and household differences have disappeared.",
+        "Fewer deaths under age one occur per stated live-birth base, while causes and distribution require more evidence.",
+        "The country’s total infant deaths must rise whenever births fall."
+      ],
+      "correctIndex": 2,
+      "explanation": "Infant mortality is typically expressed as deaths before age one per 1000 live births. A falling rate describes a change in that risk measure, not universal survival or the disappearance of inequalities. Counts also depend on births, and explaining the pattern requires information on conditions and services rather than an automatic single-cause conclusion. A: A lower rate need not be zero. B: An aggregate improvement can conceal unequal outcomes. C: This correctly interprets a rate and retains its explanatory limits. D: The relationship between deaths and births depends on the rate as well as the birth count."
+    },
+    {
+      "id": "hug-7-3-011",
+      "prompt": "Why should comparable price bases and population definitions accompany income-per-capita comparisons?",
+      "options": [
+        "They guarantee that everyone receives the average income.",
+        "They help distinguish purchasing-power and denominator differences from the economic pattern being compared.",
+        "They make income distribution irrelevant.",
+        "They convert total GDP into a direct count of years of schooling."
+      ],
+      "correctIndex": 1,
+      "explanation": "Comparisons depend on what monetary amounts can buy, the price period or conversion method, and which population is used as the denominator. Documenting these choices improves interpretation without making the average a distribution measure. Even comparable per-capita values do not directly describe every household’s resources or all social outcomes. A: Comparability does not imply equal distribution. B: This identifies relevant monetary and denominator metadata. C: Distribution remains important even with comparable averages. D: Income and schooling retain different units and meanings."
+    }
+  ]
+}

@@ -13671,5 +13671,315 @@
         "arrow": true
       }
     ]
+  },
+  "hug-7-3-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Domestic production and residents’ national income",
+    "description": "Hypothetical economy in one year. GDP and net primary income are in billions of the same currency; population is in millions. Net primary income from abroad can be negative. Use the stated GNI identity, converting billions to millions before dividing.",
+    "caption": "Original simplified national accounts. Per-resident GNI is an average of residents’ aggregate income, not a household wage, distribution measure or financial recommendation.",
+    "headers": [
+      "Measure (units shown)",
+      "Amount"
+    ],
+    "rows": [
+      [
+        "GDP (billion currency)",
+        "100"
+      ],
+      [
+        "Net primary income from abroad (billion currency)",
+        "-10"
+      ],
+      [
+        "Population (million residents)",
+        "5"
+      ]
+    ]
+  },
+  "hug-7-3-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Equal means and different income distributions",
+    "description": "Hypothetical groups of four households, with comparable household sizes and income definitions. Entries are total income in the same currency and period. This is not a national sample.",
+    "caption": "Original synthetic distribution example. Average income is useful but can conceal differences among households; no real household is represented.",
+    "headers": [
+      "Household",
+      "Group A income",
+      "Group B income"
+    ],
+    "rows": [
+      [
+        "1",
+        "10",
+        "25"
+      ],
+      [
+        "2",
+        "10",
+        "25"
+      ],
+      [
+        "3",
+        "10",
+        "25"
+      ],
+      [
+        "4",
+        "70",
+        "25"
+      ]
+    ]
+  },
+  "hug-7-3-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Contrasting human-development dimensions",
+    "description": "Hypothetical economies. Life expectancy is at birth; mean schooling refers to adults and expected schooling to children entering school. Income is comparable GNI per capita in purchasing-power units. No normalized indices or composite formula are provided.",
+    "caption": "Original synthetic indicators, not real-country values. HDI summarizes selected average dimensions and does not include every environmental, political or distributional condition.",
+    "headers": [
+      "Indicator",
+      "A",
+      "B"
+    ],
+    "rows": [
+      [
+        "Life expectancy (years)",
+        "65",
+        "78"
+      ],
+      [
+        "Mean schooling (years)",
+        "6",
+        "11"
+      ],
+      [
+        "Expected schooling (years)",
+        "10",
+        "16"
+      ],
+      [
+        "Comparable GNI/person",
+        "30000",
+        "20000"
+      ]
+    ]
+  },
+  "hug-7-3-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "A hypothetical gender-inequality index pattern",
+    "description": "Hypothetical comparable regional GII values: NW 0.2, NE 0.3, SW 0.6, SE 0.7. Lower GII indicates lower measured gender inequality; the index summarizes reproductive health, empowerment and labor-market dimensions.",
+    "caption": "Original synthetic index map. These are not real regional estimates and cannot identify each resident’s income, identity or opportunities.",
+    "unitLabel": "GII (lower = less measured inequality)",
+    "bins": [
+      {
+        "min": 0,
+        "max": 0.4,
+        "label": "0–0.39"
+      },
+      {
+        "min": 0.4,
+        "max": 1.01,
+        "label": "0.40–1.00"
+      }
+    ],
+    "regions": [
+      {
+        "label": "NW",
+        "value": 0.2,
+        "polygon": [
+          [
+            4,
+            4
+          ],
+          [
+            50,
+            4
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            4,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "NE",
+        "value": 0.3,
+        "polygon": [
+          [
+            50,
+            4
+          ],
+          [
+            96,
+            4
+          ],
+          [
+            96,
+            30
+          ],
+          [
+            50,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "SW",
+        "value": 0.6,
+        "polygon": [
+          [
+            4,
+            30
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            50,
+            56
+          ],
+          [
+            4,
+            56
+          ]
+        ]
+      },
+      {
+        "label": "SE",
+        "value": 0.7,
+        "polygon": [
+          [
+            50,
+            30
+          ],
+          [
+            96,
+            30
+          ],
+          [
+            96,
+            56
+          ],
+          [
+            50,
+            56
+          ]
+        ]
+      }
+    ]
+  },
+  "hug-7-4-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Working-age population and labor-force participation",
+    "description": "Hypothetical labor statistics using two reported categories. Labor force includes employed and qualifying unemployed jobseekers; working age and jobseeking definitions are the same across groups.",
+    "caption": "Original synthetic data. The table does not capture all gender identities, unpaid care, job quality or equal opportunity; those require additional evidence.",
+    "headers": [
+      "Reported group",
+      "Working-age people",
+      "In labor force"
+    ],
+    "rows": [
+      [
+        "Women",
+        "300",
+        "180"
+      ],
+      [
+        "Men",
+        "400",
+        "320"
+      ]
+    ]
+  },
+  "hug-7-4-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Comparable average hourly earnings over time",
+    "description": "Hypothetical reported averages in the same price-adjusted currency. Women: 80 then 90; men: 100 then 100. Categories and hourly-earnings definitions stay the same; occupational composition is not controlled.",
+    "caption": "Original synthetic earnings comparison. An unadjusted group average does not establish pay for identical work, the experience of every worker or the sole cause of a gap.",
+    "unitLabel": "Currency/hour",
+    "categories": [
+      "Earlier",
+      "Later"
+    ],
+    "series": [
+      {
+        "label": "Women",
+        "values": [
+          80,
+          90
+        ]
+      },
+      {
+        "label": "Men",
+        "values": [
+          100,
+          100
+        ]
+      }
+    ],
+    "max": 120
+  },
+  "hug-7-4-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Reported unpaid-care time in a fictional community",
+    "description": "Hypothetical comparable time-use survey. Average weekly unpaid-care hours are 20 for women and 10 for men in the reported categories. These are not total weekly hours of work or a complete account of every identity and task.",
+    "caption": "Original synthetic group averages. Unpaid work has economic and social significance even when it is absent from paid-employment counts.",
+    "headers": [
+      "Reported group",
+      "Unpaid care (hours/week)"
+    ],
+    "rows": [
+      [
+        "Women",
+        "20"
+      ],
+      [
+        "Men",
+        "10"
+      ]
+    ]
+  },
+  "hug-7-4-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Observed incomes in a microenterprise-loan study",
+    "description": "Hypothetical women-led microenterprises. Groups had the same initial average but loan participation was not randomly assigned. Values are comparable monthly net enterprise income after stated business expenses; no individual records are shown.",
+    "caption": "Original synthetic evaluation data. Group averages do not guarantee loan benefits, identify causes or describe repayment risk for a real borrower.",
+    "headers": [
+      "Group",
+      "Before income",
+      "After income"
+    ],
+    "rows": [
+      [
+        "Loan participants",
+        "100",
+        "140"
+      ],
+      [
+        "Comparison nonparticipants",
+        "100",
+        "130"
+      ]
+    ]
   }
 }

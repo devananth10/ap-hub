@@ -1,0 +1,141 @@
+{
+  "topicNumber": "7.4",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "97db6fc6b8a494e8939de8de4cb73e69575393f7c7318dcc5fc1e95132723750",
+  "scopeReview": "SPS-7.D.1–3: changing women’s economic roles, participation versus wage/opportunity equity and microloan opportunities with context. Explicit treatment of unpaid work and multiscale barriers.",
+  "varietyReview": "Four assessed original stimuli: labor-force denominators, average hourly earnings chart, unpaid-care time and nonrandom loan-study income changes. Additional questions examine transport/education, enterprise conditions and spatial variation.",
+  "repetitionReview": "Distinct participation, earnings, time and evaluation measures; no conflation of a workforce share with participation, an unadjusted gap with identical-work discrimination or a before/after loan change with proven causation. Detailed options, varied keys, uncalibrated difficulty.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://hdr.undp.org/data-center/thematic-composite-indices/gender-inequality-index"
+  ],
+  "referenceNote": "Official framework and primary index scope checked. All records and examples hypothetical/original, reported statistical categories not a claim to capture all gender identities. No personal credit/eligibility advice, copied content or independent human review.",
+  "questions": [
+    {
+      "questionId": "hug-7-4-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Women 60%, men 80%, a 20-percentage-point gap.",
+      "independentReview": "Independent ratios.6/.8 andgap.2. Record uses two reported statistical categories, not a claim all gender identities or unpaid work are captured; laborforce not equal employed.",
+      "check": {
+        "type": "gender-participation-denominator"
+      },
+      "questionSha256": "f04d926b1f6e1cced7ace222cd3ffec067b62cb390e9575980d3efbd62d8a6c7",
+      "stimulusSha256": "2710bb72be8dac7a536b9d19366cb38d5044ccc936f5a27cf356759de55da03c"
+    },
+    {
+      "questionId": "hug-7-4-002",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The ratio rises from 80% to 90%, but the later average earnings remain unequal.",
+      "independentReview": "Recomputed ratios.8/.9,absolutegaps20/10. Hourly averages comparable; not an adjusted equal-pay estimate or proof of a single discriminatory mechanism.",
+      "check": {
+        "type": "gender-earnings-gap"
+      },
+      "questionSha256": "0ddd16879733d594f5ac040f663ff590b6f0b6cac1e0311346c719aee8e90537",
+      "stimulusSha256": "147747c790789d9636d9fc97ef0ef7563abcff3476247cfcc22c14307bb962c7"
+    },
+    {
+      "questionId": "hug-7-4-003",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Women average 10 more unpaid-care hours per week, which can constrain access to paid opportunities unless other conditions offset the burden.",
+      "independentReview": "Independently20−10=10hours. Categories meanreportedcaretime, not totalwork/timebudget; no assumption allwomen/men share identical roles or causalityproved.",
+      "check": {
+        "type": "gender-unpaid-care"
+      },
+      "questionSha256": "57f1a9439ae3f49aaef42e0520505b87164bcfb5a5001bcd3643eb4b26272212",
+      "stimulusSha256": "ef6416a6c3629d91a91e0dc6a5cc532ecbb94a1a82cbce227febeae6d33a4683"
+    },
+    {
+      "questionId": "hug-7-4-004",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Participants gained 40 and the comparison group 30; the 10-unit difference in changes is descriptive without stronger design evidence.",
+      "independentReview": "Independently computed gains40/30 anddifference10. Not a causal difference-in-differences estimate: nonrandomgroups with no paralleltrend validation, no individual investment advice.",
+      "check": {
+        "type": "gender-microloan-observation"
+      },
+      "questionSha256": "a695894d073746b0084c720d20f298e51603e7132de269f82f0fce9b2a2b9e50",
+      "stimulusSha256": "d606edbb5f282edc93c1cd56d32accbc6702a8b7780f0f8c37a478e91ae5635c"
+    },
+    {
+      "questionId": "hug-7-4-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Wages, job security, advancement, working conditions and unpaid burdens may remain unequal.",
+      "independentReview": "Direct SPS-7.D.2: participation versus equity; no claim every workplace gap has one cause or allwomen share one experience.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "a15ea0f73d55294e0578c598a3a9005e7b1c69294b3c88b03ec9496656525983"
+    },
+    {
+      "questionId": "hug-7-4-006",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "They can expand skills and reachable work options, while institutions, care responsibilities and labor demand still shape outcomes.",
+      "independentReview": "No location-based high-impact eligibility decision or promise. Original mechanism case retains context and unequal access.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d20f2d7235db376c10f29d5abe4ef17d1b1d7f4b1a7bc51ec24bd5d13894e03f"
+    },
+    {
+      "questionId": "hug-7-4-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Small-scale credit can support enterprises, but demand, costs, repayment obligations and other conditions affect results.",
+      "independentReview": "Official D.3 opportunity presented conditionally, not personal credit advice or a universal effectiveness claim.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "fdc61855bcba33682850c795a4bcff9f03df73752215ca4c9c0dee442f875395"
+    },
+    {
+      "questionId": "hug-7-4-008",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Compare scales and investigate local transport, care, employment and institutional conditions.",
+      "independentReview": "No actualcountryranking, ruralstereotype or individual classification. Distinguishes aggregate trend from local access conditions.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "752e7a2adcac83cbfde82fe98ec064f9f2179b623a2aa77d7cbdb23f243b379c"
+    },
+    {
+      "questionId": "hug-7-4-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Unpaid care and household production may not appear in paid-employment counts despite using labor and supporting livelihoods.",
+      "independentReview": "Care/time case distinguished from claiming every unregistered activity is excluded from GDP. No universal genderrole assumed.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "2b02f47dad54ae9d87c5e15de10e0a3aaa80995d6bff1881d86473373c950f56"
+    },
+    {
+      "questionId": "hug-7-4-010",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Examine credit access and terms, control over income, customer access and care constraints among relevant local groups.",
+      "independentReview": "Aggregate educationalstudy only, not a recommendation to approve/deny individual credit. No sensitive data collection or unsupported causality.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "15d23eb4eff5fb06bc52cb51f7e0ab4b8e40b4df8c75103f629291f81686c056"
+    },
+    {
+      "questionId": "hug-7-4-011",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Roles and opportunities can change through economic restructuring and institutions, with different patterns and persistent inequalities across places.",
+      "independentReview": "D.1–3 alignment without a deterministic gender-development sequence or claim national income uniquely sets roles.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "131c52e1e2187a52c3799ae7b9856677f06d6a499f7f9fbac928bd03789ed05e"
+    }
+  ]
+}

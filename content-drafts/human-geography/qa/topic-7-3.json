@@ -1,0 +1,144 @@
+{
+  "topicNumber": "7.3",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "ef9ae503829fb4f19e630cc1b235fad6f4f88f664e0c661353584b608b3de803",
+  "scopeReview": "SPS-7.C.1–3: GDP/GNI per capita, formal/informal structure, distribution, literacy and health indicators, GII and HDI with scope and comparison limits.",
+  "varietyReview": "Four meaningful original stimuli: national-income adjustment, household distributions, raw HDI components and a regional GII choropleth. Other applications test metadata, informal measurement and multidimensional development.",
+  "repetitionReview": "Different denominators, units and index directions; no fabricated composite formula or ranking. Residency distinguished from citizenship, standard HDI from broader sustainability and national means from individual outcomes. Varied keys; all options explained, difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://hdr.undp.org/data-center/human-development-index",
+    "https://hdr.undp.org/data-center/thematic-composite-indices/gender-inequality-index",
+    "https://www.worldbank.org/en/brief/2021/04/30/icp2021-concepts-definitions",
+    "https://databank.worldbank.org/metadataglossary/africa-development-indicators/series/NY.GNP.PCAP.KD"
+  ],
+  "referenceNote": "Official scope and primary UNDP/World Bank definitions checked. All values and diagrams hypothetical/original; no personal financial/medical advice, source question copying or independent human-review claim.",
+  "questions": [
+    {
+      "questionId": "hug-7-3-001",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "18000 currency units",
+      "independentReview": "Independently converted GDP100 billion minus10 billion =90 billion =90000 million, divided by5 million residents =18000 per resident. Mobile table uses compact billion amounts, retaining explicit different population units; no split signed numbers or change in economic facts.",
+      "check": {
+        "type": "development-gni-per-capita"
+      },
+      "questionSha256": "e37295b3155d1d8663de27c4d852923d9249f2fd43845d4d08236f98c365acd9",
+      "stimulusSha256": "afc8ecbc0415c95aacf898470be6bdf38dd53bf2ab79455dc3f42eb834b22119"
+    },
+    {
+      "questionId": "hug-7-3-002",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Both groups have a mean income of 25, but A has a more concentrated distribution than B.",
+      "independentReview": "Independently summed100 for each anddivided4=25; Amedian10/B25, highshare.7versus.25. No unsupported national ranking or unspecified Gini formula.",
+      "check": {
+        "type": "development-income-distribution"
+      },
+      "questionSha256": "cf6eb8158db1113d60b8c35146049b82e15566b1404213282fbdfdeb3c1118aa",
+      "stimulusSha256": "eacc5a4eb46c23c094ca9631631750c552919e317d2d0c4e2713731685e48bbd"
+    },
+    {
+      "questionId": "hug-7-3-003",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "B has higher longevity and schooling measures, while A has higher income; a composite ranking needs the specified index method.",
+      "independentReview": "Primary UNDP dimensions/indicator definitions checked. No invented HDI value or simple arithmetic-average formula; comparisonlimitedto providedrawindicators.",
+      "check": {
+        "type": "development-hdi-components"
+      },
+      "questionSha256": "e416980d36ec6d9f9b6fc5be62240d96524ec314fff7523aa7b7ca5cdd9118dd",
+      "stimulusSha256": "c98aecf172dc917b420449b3d02c283d117b6c408bdbdabf8443e19a3dc9573f"
+    },
+    {
+      "questionId": "hug-7-3-004",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Both northern regions have lower measured gender inequality than either southern region.",
+      "independentReview": "Verified northmax.3<southmin.6 and lower-GII meaning against primary UNDP. Hypothetical regional indexillustration, not new actual-country estimates or individual classification.",
+      "check": {
+        "type": "development-gii-map"
+      },
+      "questionSha256": "4439be959e137ad41a67539d85ff644cfbd2e88d4f29a36aadb70cd534bf3783",
+      "stimulusSha256": "1c5a64af72b5be728706180440f844de43a357f1523321d79dae5fc30744496f"
+    },
+    {
+      "questionId": "hug-7-3-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "GDP concerns production within an economy; GNI adjusts for residents’ net primary income flows with other economies.",
+      "independentReview": "Primary World Bank residency/flow definition verified. GNP terminology formerly used for national measure acknowledged by framework, no citizenship/residency conflation.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "7877cea39f4c6822da70f71af2e44b64810a525ae5f0e1898eb76f5fbcdd83ac"
+    },
+    {
+      "questionId": "hug-7-3-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Informal production and work may be missing or estimated imperfectly even though they contribute to livelihoods.",
+      "independentReview": "No equation of informal with illegal or universally uncounted GDP. Distinguishes administrative coverage from real economic activity.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "569d4a3fcc738adac2e82a357a30ea7214e2774585718ad1714be655e93e7331"
+    },
+    {
+      "questionId": "hug-7-3-007",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "An average can conceal regional or group differences, and other evidence can examine learning opportunities.",
+      "independentReview": "No inherent-capacity claim about groups. Checks aggregate-versus-disaggregated analysis without implying rates are useless.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "7f6d164593594e2bd3dfb75fbe43f50fbd7054efa5cc221d744c0f8e7b642808"
+    },
+    {
+      "questionId": "hug-7-3-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Income or production averages should be complemented by social and access indicators.",
+      "independentReview": "No medical explanation or individual-care recommendation. Broad official development-measure scope only.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "a06674867b98f551a80d7de98accb72e9e3e5897452b66da236fef593e2d15f9"
+    },
+    {
+      "questionId": "hug-7-3-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "It combines selected health, education and income achievements, but cannot represent every inequality or environmental condition.",
+      "independentReview": "UNDP explicitly documents these scope limits. No fabricated current ranking, formula change or environmental variable asserted to be in standard HDI.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "bca4b86489510576f8fde0d159aa79f48ad19da525efe0a43761e92db673edbb"
+    },
+    {
+      "questionId": "hug-7-3-010",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Fewer deaths under age one occur per stated live-birth base, while causes and distribution require more evidence.",
+      "independentReview": "Definitionconsistentwithunderone/livebirths not underfive/deathshare. Educational population indicator, no medical advice or invented causal estimate.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "ec808f5b64326535431367ee5e45bbaf33f161003a076d6e707659a97bd29b42"
+    },
+    {
+      "questionId": "hug-7-3-011",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "They help distinguish purchasing-power and denominator differences from the economic pattern being compared.",
+      "independentReview": "No current financial, exchange-rate or country-income threshold advice. General PPP/real-price/denominator interpretive point checked against World Bank definitions.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "2b97860ca142df82596cc239ad0a23a9e0a468ad928cdb135f506ff576e635f2"
+    }
+  ]
+}

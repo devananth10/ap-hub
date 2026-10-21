@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 7,
+  "topicId": "topic-7-4",
+  "questions": [
+    {
+      "id": "hug-7-4-001",
+      "prompt": "Which labor-force participation comparison uses the appropriate working-age denominators?",
+      "options": [
+        "Women 75%, men 125%.",
+        "Women 60%, men 80%, a 20-percentage-point gap.",
+        "Women 36%, men 64%, using the combined labor force.",
+        "Women 80%, men 60%, a 20-percentage-point gap."
+      ],
+      "correctIndex": 1,
+      "explanation": "Participation is the labor force divided by the corresponding working-age population: 180/300 = 60% for women and 320/400 = 80% for men. The difference is 20 percentage points. This is not the share of the combined workforce or an employment rate: the labor force includes employed people and qualifying people seeking work under the stated definition. A: These ratios use the wrong bases and even exceed 100% for men. B: This uses each group’s own working-age denominator. C: Those are shares of the combined labor force, answering a different question. D: The two calculated participation rates are reversed."
+    },
+    {
+      "id": "hug-7-4-002",
+      "prompt": "What does the chart show about the measured earnings gap?",
+      "options": [
+        "The women-to-men ratio falls from 90% to 80%.",
+        "Equal earnings are reached in the later period.",
+        "The initial 20-unit gap remains unchanged.",
+        "The ratio rises from 80% to 90%, but the later average earnings remain unequal."
+      ],
+      "correctIndex": 3,
+      "explanation": "Women’s measured hourly earnings rise from 80 to 90 while men’s remain 100, so the ratio rises from 0.80 to 0.90 and the absolute gap narrows from 20 to 10 units. Progress on this average does not establish full wage equity or equal opportunity. Occupational mix, hours definitions and other factors require analysis before assigning a single cause. A: The direction of the ratio change is reversed. B: The later values are 90 and 100, not equal. C: The gap falls from 20 to 10. D: This correctly states the improvement and remaining measured difference."
+    },
+    {
+      "id": "hug-7-4-003",
+      "prompt": "What is the strongest conclusion about these reported average time burdens?",
+      "options": [
+        "Women average 10 more unpaid-care hours per week, which can constrain access to paid opportunities unless other conditions offset the burden.",
+        "Men perform no unpaid care.",
+        "The difference proves every woman has exactly the same schedule.",
+        "Only paid employment can affect the time available for work and training."
+      ],
+      "correctIndex": 0,
+      "explanation": "The averages are 20 and 10 hours, giving a 10-hour difference. Unpaid responsibilities can influence the time and flexibility available for paid work, education or business activity. These group averages are not every person’s schedule and do not identify the full division of household tasks or the availability of support services. A: This calculates the average difference and states a conditional opportunity mechanism. B: The table records 10 hours for men. C: An average can conceal wide individual variation. D: Unpaid tasks also use time and can shape paid-work options."
+    },
+    {
+      "id": "hug-7-4-004",
+      "prompt": "Which interpretation accurately compares the observed income changes without claiming that the loan caused the entire difference?",
+      "options": [
+        "Participants gained 40 units and nonparticipants gained none.",
+        "Both groups gained 40 units.",
+        "Participants gained 40 and the comparison group 30; the 10-unit difference in changes is descriptive without stronger design evidence.",
+        "The loan is proven to increase every participant’s income by 140 units."
+      ],
+      "correctIndex": 2,
+      "explanation": "Participants’ average monthly income rises by 140 − 100 = 40; the comparison group rises by 130 − 100 = 30. The difference in observed changes is 10. Because participation was not randomly assigned and other conditions may differ, this comparison does not by itself establish a causal loan effect or predict each borrower’s outcome. A: The comparison group gains 30, not zero. B: The comparison change is 30 rather than 40. C: This correctly computes both changes and retains the design limit. D: The later level is not the gain, and individual causal effects are not proven."
+    },
+    {
+      "id": "hug-7-4-005",
+      "prompt": "Why does a rising number of women in paid work not by itself demonstrate gender equity?",
+      "options": [
+        "Paid participation guarantees equal pay and access to every leadership role.",
+        "Wages, job security, advancement, working conditions and unpaid burdens may remain unequal.",
+        "A higher count means all women have identical occupations.",
+        "Gender equity concerns only the number of factories in a country."
+      ],
+      "correctIndex": 1,
+      "explanation": "Participation is one dimension of opportunity, while compensation, conditions, security, influence and time burdens can differ. A rising count may coexist with unequal access to high-paying roles or continued unpaid responsibilities. Assessing equity therefore requires more than headcounts and must allow differences within the reported groups. A: Entry into paid work does not guarantee these outcomes. B: These dimensions explain why participation alone is insufficient. C: Employment growth does not require identical occupations. D: Factory counts do not measure gendered opportunities or conditions."
+    },
+    {
+      "id": "hug-7-4-006",
+      "prompt": "How can access to education and usable transport affect women’s economic opportunities?",
+      "options": [
+        "They can expand skills and reachable work options, while institutions, care responsibilities and labor demand still shape outcomes.",
+        "They guarantee that every person obtains the same job and wage.",
+        "They remove every household’s unpaid responsibilities immediately.",
+        "They make workplace rules and discrimination irrelevant."
+      ],
+      "correctIndex": 0,
+      "explanation": "Education can support skills and credentials, and usable transport can widen the set of accessible workplaces or training sites. These opportunities interact with hiring, demand, care arrangements, safety and institutions. A supportive condition therefore can improve options without guaranteeing a uniform outcome or eliminating other barriers. A: This identifies conditional mechanisms and their interaction with other constraints. B: Skills and access do not fix identical employment outcomes. C: Care arrangements require separate changes and support. D: Institutional and discriminatory barriers can remain."
+    },
+    {
+      "id": "hug-7-4-007",
+      "prompt": "Which description best captures the intended role and a limitation of microloans in development?",
+      "options": [
+        "They automatically eliminate poverty for all borrowers.",
+        "They are the same as a guaranteed wage and require no repayment.",
+        "They remove all needs for customers, skills or infrastructure.",
+        "Small-scale credit can support enterprises, but demand, costs, repayment obligations and other conditions affect results."
+      ],
+      "correctIndex": 3,
+      "explanation": "Microloans can provide credit to people whose enterprises face financing constraints. The availability of funds alone does not establish a viable market, sufficient income or manageable obligations. Development analysis should examine terms, use, outcomes and distribution, rather than treating borrowing itself as a guaranteed improvement in living standards. A: Outcomes vary, so universal poverty elimination is unsupported. B: A loan is not a guaranteed wage and generally entails repayment under its terms. C: Enterprise activity still depends on markets and operating conditions. D: This states the opportunity together with relevant limits."
+    },
+    {
+      "id": "hug-7-4-008",
+      "prompt": "A country’s national participation gap narrows, but gaps remain much larger in some rural districts. What is the best analytical response?",
+      "options": [
+        "Use the national average to assume identical opportunity in every district.",
+        "Discard all national data because subnational variation exists.",
+        "Compare scales and investigate local transport, care, employment and institutional conditions.",
+        "Infer every rural woman’s occupation from the district average."
+      ],
+      "correctIndex": 2,
+      "explanation": "National trends summarize a wider population and can coexist with uneven local conditions. Disaggregated comparisons help identify where access and constraints differ, while national evidence remains useful for context. Neither scale directly describes every individual, and investigating mechanisms is preferable to assuming a uniform regional experience. A: An average can conceal persistent spatial differences. B: Variation does not make the aggregate meaningless. C: This uses both scales and relevant local evidence. D: A district rate cannot identify each resident’s occupation."
+    },
+    {
+      "id": "hug-7-4-009",
+      "prompt": "Why can employment statistics understate women’s contribution to economic and social reproduction?",
+      "options": [
+        "Unpaid care and household production may not appear in paid-employment counts despite using labor and supporting livelihoods.",
+        "Every unpaid task is automatically recorded as a paid job.",
+        "Only activities paid in cash use time or resources.",
+        "All informal work is already registered in the same way as formal salaried employment."
+      ],
+      "correctIndex": 0,
+      "explanation": "Paid-employment measures focus on particular work definitions and may not capture unpaid care or household production. Those tasks support people and the capacity to participate in other activities. Recognizing this limit does not mean all national accounts ignore all household production or that all people in one gender category perform the same tasks. A: This identifies significant work outside the stated paid-employment measure. B: A task can be unpaid and absent from that count. C: Unpaid activity also uses time and resources. D: Informal registration and measurement can differ."
+    },
+    {
+      "id": "hug-7-4-010",
+      "prompt": "Which study best investigates a possible barrier to women’s business development?",
+      "options": [
+        "Compare only the total number of men in a distant country.",
+        "Examine credit access and terms, control over income, customer access and care constraints among relevant local groups.",
+        "Assume every applicant has identical collateral, support and opportunities.",
+        "Count new businesses and label every closure a personal failure."
+      ],
+      "correctIndex": 1,
+      "explanation": "Business development depends on resources, institutions, markets and the ability to control time and income. Studying these conditions across relevant local groups can reveal barriers and variation. Raw counts or stereotypes cannot identify one universal cause of success or closure, and evaluation should avoid blaming individuals for unmeasured structural conditions. A: That count does not investigate the local business constraints. B: These measures directly examine relevant opportunities and barriers. C: The assumed equality erases the conditions being studied. D: Closure has multiple possible explanations not established by the count."
+    },
+    {
+      "id": "hug-7-4-011",
+      "prompt": "What is a defensible account of changes in women’s economic roles as economies develop?",
+      "options": [
+        "All countries follow the same path at identical dates.",
+        "A rising national income automatically eliminates every gender inequality.",
+        "Roles and opportunities can change through economic restructuring and institutions, with different patterns and persistent inequalities across places.",
+        "Economic change can affect men’s work but cannot affect women’s work."
+      ],
+      "correctIndex": 2,
+      "explanation": "Development can reorganize employment, education, mobility and household work, but these changes interact with institutions, social norms and local conditions. Gains can coexist with persistent inequalities in pay, power and unpaid labor. A country-level trend therefore should not be made into a universal schedule or an account of every person’s experience. A: Timing and social arrangements differ across contexts. B: Income alone does not guarantee equity. C: This allows change, spatial variation and remaining inequalities. D: Economic restructuring can affect opportunities across reported groups."
+    }
+  ]
+}
