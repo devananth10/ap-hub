@@ -35,8 +35,8 @@ export function PracticeSession({ entries }: { entries: PracticeEntry[] }) {
     <div className="flex-actions"><button className="button secondary" onClick={() => { move(0); dispatch({ type: "review" }); }}>Review answers</button><button className="button primary" onClick={() => { navigating.current = true; dispatch({ type: "restart" }); }}><RotateCcw size={15} />Start again</button></div>
   </div>;
   return <>
-    <div className="practice-position"><span role="status">Question {state.index + 1} of {entries.length}</span><QuestionReport key={entry.id} entry={entry} displayedNumber={state.index+1} /><span className="practice-position-help">{score.answered} checked · Answers are kept while you move between questions.</span></div>
-    <p className="practice-score-policy small muted">Your first graded answer counts. Finishing also grades remaining selections; unanswered questions count as incorrect. Retries are for learning.</p>
+    <div className="practice-position"><span role="status">Question {state.index + 1} of {entries.length}</span><QuestionReport key={entry.id} entry={entry} displayedNumber={state.index+1} /><span className="practice-position-help">{score.answered} checked</span></div>
+    <div className="practice-instructions"><p>Your first graded answer counts.</p><details><summary>How scoring works</summary><p>Selections are kept when you move between questions. Finish grades any remaining selections; unanswered questions count as incorrect. Retries help you learn without changing your first score. Scores stay in this session and reset on reload.</p></details></div>
     <div className="progress-track practice-progress" aria-hidden="true"><span style={{ width: `${(state.index + 1) / entries.length * 100}%` }} /></div>
     <div ref={panel} role="group" tabIndex={-1} className="practice-question-frame" aria-label={`Question ${state.index + 1} of ${entries.length}`}>
       <div className="practice-context"><BookOpen size={15} /><span>{entry.course.title} · Topic {entry.topic.number}: {entry.topic.title}</span><Link href={`/courses/${entry.course.id}/${entry.topic.id}`}>Open topic<ArrowRight size={13} /></Link></div>

@@ -7,6 +7,7 @@ import type { PracticeAnswer } from "@/lib/practice-session";
 import { PracticeFigure } from "./practice-figure";
 import { PracticeTable } from "./practice-table";
 import { GeographyStimulus } from "./geography-stimulus";
+import { geographyStimuli } from "@/lib/geography-stimuli";
 
 export function PracticeQuestion({ practice, answer, onSelect, onCheck, onRetry }: { practice: BankQuestion; answer: PracticeAnswer; onSelect: (index: number) => void; onCheck: () => void; onRetry: () => void }) {
   const groupName = useId();
@@ -15,11 +16,15 @@ export function PracticeQuestion({ practice, answer, onSelect, onCheck, onRetry 
   useEffect(() => { setReady(true); }, []);
   const { selected, checked } = answer;
   const { options, prompt, correctIndex, explanation } = practice;
+  const stimulus = geographyStimuli[practice.id];
+  const splitSuitable = stimulus && (stimulus.kind === "map" || stimulus.kind === "model" || stimulus.kind === "pyramid" || stimulus.kind === "chart" && stimulus.categories.length <= 4 || stimulus.kind === "table" && stimulus.headers.length <= 3);
   return (
     <div className="practice-preview">
-      <h2>A quick check for understanding.</h2>
-      <p className="muted small">This is not an official College Board question. Answers stay in this session and reset on reload.</p>
+      <h2 className="sr-only">Practice question</h2>
+      <p className="muted small practice-source-note">Original PrepAtlas question. This is not an official College Board question.</p>
+      <div className={`practice-task-layout ${splitSuitable ? "can-split" : ""}`}>
       <GeographyStimulus key={practice.id} questionId={practice.id} />
+      <div className="practice-answer-pane">
       <fieldset disabled={checked || !ready} aria-busy={!ready}>
         <legend>{prompt}</legend>
         <PracticeFigure questionId={practice.id} />
@@ -38,6 +43,7 @@ export function PracticeQuestion({ practice, answer, onSelect, onCheck, onRetry 
           <button className="text-button" onClick={onRetry}><RotateCcw size={14} />Try again</button>
         </div>
       ) : <button className="button primary" disabled={!ready || selected === null} onClick={onCheck}>Check answer<ArrowRight size={15} /></button>}
+      </div></div>
     </div>
   );
 }

@@ -17,7 +17,7 @@ for(const unit of course.units){
   const href=`/courses/human-geography/${topic.id}`,scope=unitScope+`&topic=${topic.id}`;
   assert.ok(outline.includes(href));const html=await page(href);
   assert.ok(html.includes('Choose Your Instructor'));assert.equal((html.match(/name="lesson-instructor"/g)||[]).length,2);
-  assert.equal((html.match(/class="video-play"/g)||[]).length,1);const entries=practiceEntries({courseId:course.id,unitNumber:unit.number,topicId:topic.id});assert.ok(html.includes(`1 video · ${entries.length} MCQs available`));
+  assert.equal((html.match(/class="video-play"/g)||[]).length,1);const entries=practiceEntries({courseId:course.id,unitNumber:unit.number,topicId:topic.id});assert.ok(html.includes(`1 video from Mr. Sinn · 2 total across instructors · ${entries.length} MCQs available`));
   const lessons=resourcesForTopic(resources,course.id,unit.number,topic.id);assert.equal(lessons.length,2);
   const sinn=lessons.find(r=>r.instructorId==='mr-sinn');assert.ok(html.includes(`data-resource-id="${sinn.id}"`));
   assert.ok(html.includes('Mark as Watched'));assert.ok(!html.includes('aria-label="Video lessons" role="tablist"'));

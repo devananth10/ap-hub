@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect } from "react";
 import { ArrowRight, BookOpen, Check, CheckCircle2, ChevronDown, ChevronRight, Play, Plus, Target } from "lucide-react";
 import { topicKey, type Course } from "@/lib/courses";
 import { practiceCount as countPractice, practiceHref } from "@/lib/practice-scope";
@@ -13,6 +14,16 @@ export function CourseOutline({ course }: { course: Course }) {
   const { selected, toggleCourse, completed } = useStudy();
   const available = course.units.flatMap((unit) => unit.topics).filter((topic) => topic.ready || topic.workspaceReady);
   const practiceCount = countPractice({ courseId: course.id });
+  useEffect(() => {
+    const expandLinkedUnit = () => {
+      if (!/^#unit-\d+$/.test(window.location.hash)) return;
+      const target = document.getElementById(window.location.hash.slice(1));
+      if (target instanceof HTMLDetailsElement) { target.open = true; target.scrollIntoView({ block: "start" }); }
+    };
+    expandLinkedUnit();
+    window.addEventListener("hashchange", expandLinkedUnit);
+    return () => window.removeEventListener("hashchange", expandLinkedUnit);
+  }, [course.id]);
   return (
     <div className="page outline-page">
       <div className="breadcrumbs"><Link href="/courses">My courses</Link><ChevronRight size={14} /><span>{course.title}</span></div>
@@ -32,7 +43,7 @@ export function CourseOutline({ course }: { course: Course }) {
             const unitScope = { courseId: course.id, unitNumber: unit.number };
             const count = countPractice(unitScope);
             return (
-              <details key={unit.number} className="unit panel" open={index === 0}>
+              <details key={unit.number} id={`unit-${unit.number}`} className="unit panel" open={index === 0}>
                 <summary><span className={`unit-number ${course.color}`}>{unit.number.toString().padStart(2, "0")}</span><span><span className="tiny-label">UNIT {unit.number}</span><strong>{unit.title}</strong></span><span className="unit-topic-count">{unit.topics.length} topics</span><ChevronDown size={18} /></summary>
                 <div className="unit-practice-row"><span>{count ? `${count} MCQs available` : "Questions coming soon"}</span><Link href={practiceHref(unitScope)} className="text-button" aria-label={`${count ? "Start Practice" : "Practice availability"} for ${course.title} Unit ${unit.number}`}><Target size={14} />{count ? "Start Practice" : "Practice coming soon"}<ArrowRight size={13} /></Link></div>
                 <div className="topic-list">{unit.topics.map((topic) => (

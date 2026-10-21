@@ -202,6 +202,11 @@ test('chart bar heights, zero baseline, labels and equivalent data match numeric
  validateGeographyStimulus(chart);const html=render(chart);assert.match(html,/data-value="50" x="[^"]+" y="135" width="[^"]+" height="85"/);assert.ok(html.includes('A: Year 1'));assert.ok(html.includes('B: Year 2'));assert.ok(html.includes('<table>'));assert.match(html,/<td>75<\/td>/);
  const wrong=structuredClone(chart);wrong.series[0].values[0]=101;assert.throws(()=>validateGeographyStimulus(wrong),/outside axis/);
 });
+test('single-series identity charts omit redundant letter keys while grouped charts retain their non-color keys',()=>{
+ const original=geographyStimuli['hug-4-1-003'];assert.equal(original.kind,'chart');assert.equal(original.series.length,1);
+ const single=render(original);assert.ok(!single.includes('data-series-key='));assert.ok(single.includes('Nation R')&&single.includes('Nation S'));assert.ok(single.includes('<table>'));
+ const grouped=render(chart);assert.ok(grouped.includes('data-series-key="Year 1"')&&grouped.includes('data-series-key="Year 2"'));assert.ok(grouped.includes('A: Year 1')&&grouped.includes('B: Year 2'));
+});
 
 test('line charts plot actual values with distinct patterns/markers and retain equivalent data',()=>{
  const lines={...chart,display:'line'};validateGeographyStimulus(lines);const html=render(lines);assert.match(html,/data-series="Year 1" points="80,177.5 440,135"/);assert.match(html,/stroke-dasharray="7 4"/);assert.ok(html.includes('solid / circles'));assert.ok(html.includes('dashed / squares'));assert.match(html,/<td>75<\/td>/);
