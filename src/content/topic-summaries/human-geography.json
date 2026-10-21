@@ -340,5 +340,710 @@
       "checks": [],
       "contentHash": "75fdd0dd8d67c2b418ede717d65216ce409550217d6dcf542c30c0da48ef107f"
     }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-2-1",
+    "topicNumber": "2.1",
+    "unitNumber": 2,
+    "title": "Population Distribution",
+    "status": "published",
+    "overview": "Population distribution describes where people live, while density relates a population to a specified area. Physical conditions, economic opportunities, transport and historical processes interact to produce uneven settlement patterns.",
+    "keyConcepts": [
+      {
+        "title": "Distribution and causes",
+        "text": "Access to water, suitable terrain, employment and established networks can attract settlement. Avoid treating any single physical factor as a universal explanation."
+      },
+      {
+        "title": "Density measures",
+        "text": "Arithmetic density uses total land area. Physiological density uses arable land, while agricultural density compares farmers with arable land. Their different denominators answer different questions."
+      },
+      {
+        "title": "Scale and variation",
+        "text": "A national average can hide dense cities and sparsely settled interiors. Compare patterns at an appropriate level before explaining local conditions."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional country has 2,000,000 residents, 10,000 km² of total land and 2,000 km² of arable land. Compare two population densities.",
+      "steps": [
+        "Arithmetic density is 2,000,000/10,000 = 200 people per km² of total land.",
+        "Physiological density is 2,000,000/2,000 = 1,000 people per km² of arable land."
+      ],
+      "conclusion": "The second value describes population relative to cultivable land. It does not prove actual food shortage, because productivity, trade and diet also matter."
+    },
+    "misconception": "Physiological density does not count only people living on farms. Its numerator is the total population.",
+    "apTip": "Name both numerator and denominator, then explain what the measure can and cannot establish about population pressure.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 2.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Both density denominators independently verified; pressure distinguished from demonstrated scarcity and national averages from local distribution.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            2000000,
+            10000
+          ],
+          "expected": 200,
+          "evidence": "200 people"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            2000000,
+            2000
+          ],
+          "expected": 1000,
+          "evidence": "1,000 people"
+        }
+      ],
+      "contentHash": "874be7ed8bee74ec53e699c0e03c58c0ad6b0e57dc0110e733d39392ec41c004"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-2-2",
+    "topicNumber": "2.2",
+    "unitNumber": 2,
+    "title": "Consequences of Population Distribution",
+    "status": "published",
+    "overview": "Population concentration affects demand for housing, transport, water, services and land. Consequences depend on infrastructure, resource access and institutions, so the same numerical density can produce different outcomes in different places.",
+    "keyConcepts": [
+      {
+        "title": "Service efficiency",
+        "text": "Concentrated settlement can support frequent transit and shared infrastructure, but rapid growth can overload capacity if investment and access lag."
+      },
+      {
+        "title": "Environmental effects",
+        "text": "Population and consumption interact with technology and resource management. Density alone does not determine pollution, food security or the environmental impact of residents."
+      },
+      {
+        "title": "Carrying capacity",
+        "text": "The population an environment can support depends on assumptions about consumption, technology and resource flows. It is not necessarily a permanently fixed head count."
+      }
+    ],
+    "example": {
+      "prompt": "Two fictional cities each contain one million residents in the same land area. City A has reliable public transit and water infrastructure; City B has fragmented services.",
+      "steps": [
+        "Their arithmetic population densities are equal, but service accessibility and infrastructure capacity differ.",
+        "Residents in B may face longer collection times or less reliable water despite the matching density statistic."
+      ],
+      "conclusion": "The comparison shows why an explanation should connect population concentration to specific systems rather than declaring density alone harmful or beneficial."
+    },
+    "misconception": "A dense place is not automatically overpopulated. Evidence about resources, consumption, distribution and service capacity is needed for that judgment.",
+    "apTip": "Give a causal chain: concentration changes demand, institutions or infrastructure mediate access, and a measurable social or environmental consequence follows.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 2.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Equal-density counterexample reviewed; effects stated conditionally, not inferred as measured facts from absent infrastructure data.",
+      "checks": [],
+      "contentHash": "e58bf78e6e944edf46f5829a532ad2cb8ffd6b7466fa311f4142e7501567441b"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-2-3",
+    "topicNumber": "2.3",
+    "unitNumber": 2,
+    "title": "Population Composition",
+    "status": "published",
+    "overview": "Population composition describes characteristics such as age and sex. A population pyramid shows cohort shares or counts on two sides; its shape can suggest service needs, but the axis units and age intervals matter.",
+    "keyConcepts": [
+      {
+        "title": "Read the denominator",
+        "text": "A percentage may refer to the total population or to one sex. Identify this before adding bars or comparing diagrams."
+      },
+      {
+        "title": "Age structure",
+        "text": "A large younger share suggests future demand for schooling and, later, jobs. A larger older share can increase demand for pensions and care."
+      },
+      {
+        "title": "Dependency indicator",
+        "text": "A conventional age-dependency ratio compares ages 0–14 plus 65+ with ages 15–64. It is a demographic proxy, not a count of actual workers and nonworkers."
+      }
+    ],
+    "example": {
+      "prompt": "In the original hypothetical pyramid, ages 0–14 total 23%, ages 15–64 total 62%, and ages 65+ total 15%. Find the age-dependency ratio.",
+      "steps": [
+        "Add dependent-age shares: 23 + 15 = 38%.",
+        "Calculate 38/62 × 100 ≈ 61.3 dependent-age residents per 100 working-age residents."
+      ],
+      "conclusion": "This does not mean that every working-age person is employed or that every older person is economically dependent."
+    },
+    "misconception": "Unequal-width age bands cannot establish annual birth trends by comparing bar lengths alone.",
+    "apTip": "Use specific cohort evidence and describe an implication without assuming an inevitable outcome.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 2.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "All six plotted shares sum to 100; working-age 30+32=62 and dependent 12+11+7+8=38. Dependency calculation independently checked; unequal age-bin caveat retained.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            12,
+            11,
+            30,
+            32,
+            7,
+            8
+          ],
+          "expected": 100,
+          "evidence": "total population"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            38,
+            62
+          ],
+          "expected": 0.6129032258064516,
+          "evidence": "38/62"
+        }
+      ],
+      "contentHash": "ee1c67910e3959cd9b4ada75b092fca24303b6cf47d6dd4f778f1d8c1850e5cc"
+    },
+    "figure": {
+      "hypothetical": true,
+      "attribution": "Original PrepAtlas schematic and synthetic data",
+      "kind": "pyramid",
+      "title": "Original broad age profile",
+      "description": "Each bar is a percentage of the total population. Age bands have unequal widths.",
+      "caption": "Synthetic age composition, not a forecast.",
+      "unitLabel": "Percent of total population",
+      "max": 35,
+      "cohorts": [
+        {
+          "label": "0–14",
+          "ageStart": 0,
+          "ageEnd": 14,
+          "male": 12,
+          "female": 11
+        },
+        {
+          "label": "15–64",
+          "ageStart": 15,
+          "ageEnd": 64,
+          "male": 30,
+          "female": 32
+        },
+        {
+          "label": "65+",
+          "ageStart": 65,
+          "ageEnd": null,
+          "male": 7,
+          "female": 8
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-2-4",
+    "topicNumber": "2.4",
+    "unitNumber": 2,
+    "title": "Population Dynamics",
+    "status": "published",
+    "overview": "Population change combines births, deaths and migration. Distinguish absolute counts from rates and natural change from overall growth before interpreting a country’s demographic trend.",
+    "keyConcepts": [
+      {
+        "title": "Natural increase",
+        "text": "Births minus deaths determine natural change. When crude birth and death rates are expressed per thousand, divide their difference by ten to obtain a percentage rate."
+      },
+      {
+        "title": "Migration contribution",
+        "text": "Immigration minus emigration gives net migration. This can reinforce or offset natural change, so natural increase is not necessarily total population growth."
+      },
+      {
+        "title": "Other indicators",
+        "text": "Total fertility rate estimates births per woman under current age-specific rates; life expectancy summarizes mortality conditions. Neither measure is identical to the crude birth or death rate."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional population of 100,000 records 1,800 births, 900 deaths, 500 arrivals and 1,200 departures in one year. Find its change.",
+      "steps": [
+        "Natural change is 1,800 − 900 = 900. Net migration is 500 − 1,200 = −700.",
+        "Total change is 900 − 700 = 200, giving an approximate 0.2% growth rate using the starting population."
+      ],
+      "conclusion": "The population grows slightly despite net emigration. Its natural-increase rate alone would have been 0.9%."
+    },
+    "misconception": "A positive natural-increase rate does not guarantee overall growth when migration losses are larger.",
+    "apTip": "Write the full balance equation and label whether each rate is per thousand or percent. Use the stated time interval and population denominator.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 2.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Birth/death and migration balances independently checked; 200/100000*100=.2%, natural .9%, approximate denominator convention explicit.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            1800,
+            900
+          ],
+          "expected": 900,
+          "evidence": "= 900"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            500,
+            1200
+          ],
+          "expected": -700,
+          "evidence": "−700"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            900,
+            -700
+          ],
+          "expected": 200,
+          "evidence": "= 200"
+        }
+      ],
+      "contentHash": "682c28cec9692f40b62a542059dd1f4d11472edbeee94d49507e43079fc3499b"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-2-5",
+    "topicNumber": "2.5",
+    "unitNumber": 2,
+    "title": "The Demographic Transition Model",
+    "status": "published",
+    "overview": "The Demographic Transition Model organizes changes in birth and death rates associated with broad social and economic shifts. It is a useful framework, not a timetable every country must follow.",
+    "keyConcepts": [
+      {
+        "title": "Early change",
+        "text": "When death rates fall before birth rates, natural increase accelerates. Improvements in food access, sanitation and health can contribute to mortality decline."
+      },
+      {
+        "title": "Later change",
+        "text": "Falling fertility can narrow the birth–death gap. Low rates in later stages do not necessarily mean zero growth."
+      },
+      {
+        "title": "Limitations",
+        "text": "Migration, conflict, policy and uneven development can complicate the model. Proposed stage-five decline is not an inevitable destination."
+      }
+    ],
+    "example": {
+      "prompt": "Interpret the original model’s stage II values: birth rate 38 and death rate 16 per thousand.",
+      "steps": [
+        "The natural increase is 38 − 16 = 22 per thousand, or 2.2% per year.",
+        "Stage III has a narrower gap because the illustrative birth rate falls while death remains relatively low."
+      ],
+      "conclusion": "These are synthetic teaching values, not diagnostic thresholds or forecasts for a real country."
+    },
+    "misconception": "Low death rates do not mean nobody dies; crude rates also reflect age composition. The chart omits migration.",
+    "apTip": "Explain the gap between the curves and the process changing it, rather than assigning a stage from one statistic alone.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 2.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "All five birth-minus-death gaps checked: 1,22,13,1,-3 per thousand. Axis and migration exclusion stated; values do not impose universal stage thresholds.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            38,
+            16
+          ],
+          "expected": 22,
+          "evidence": "22 per thousand"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            22,
+            10
+          ],
+          "expected": 2.2,
+          "evidence": "2.2%"
+        }
+      ],
+      "contentHash": "1d94f5f87727cc596d735c42b1143c165e86504493c1463fe732e0e51590157c"
+    },
+    "figure": {
+      "hypothetical": true,
+      "attribution": "Original PrepAtlas schematic and synthetic data",
+      "kind": "chart",
+      "display": "line",
+      "title": "Original transition illustration",
+      "description": "Illustrative birth and death rates across five model stages.",
+      "caption": "Synthetic rates; stages are not universal thresholds.",
+      "unitLabel": "Per 1,000 / year",
+      "categories": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "series": [
+        {
+          "label": "Birth rate",
+          "values": [
+            39,
+            38,
+            24,
+            11,
+            8
+          ]
+        },
+        {
+          "label": "Death rate",
+          "values": [
+            38,
+            16,
+            11,
+            10,
+            11
+          ]
+        }
+      ],
+      "max": 45
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-2-6",
+    "topicNumber": "2.6",
+    "unitNumber": 2,
+    "title": "Malthusian Theory",
+    "status": "published",
+    "overview": "Malthusian theory raises the possibility that population can grow faster than food supply, creating pressure on subsistence. Evaluate its assumptions alongside evidence about technology, distribution, consumption and demographic change.",
+    "keyConcepts": [
+      {
+        "title": "Growth assumptions",
+        "text": "The classic argument contrasts multiplicative population growth with additive food increases. These are model assumptions, not unchanging laws governing every society."
+      },
+      {
+        "title": "Checks and responses",
+        "text": "Mortality crises and delayed family formation were discussed as restraints on growth. Modern analysis also considers voluntary fertility change and public-health improvements."
+      },
+      {
+        "title": "Critiques and extensions",
+        "text": "Agricultural innovation, trade and fertility decline can alter the relationship. Food insecurity can arise from poverty, conflict or distribution even when aggregate food supply is sufficient."
+      }
+    ],
+    "example": {
+      "prompt": "In a hypothetical model, population starts at 100 and doubles each period, while a food-capacity index starts at 100 and rises by 50 each period.",
+      "steps": [
+        "After two periods, population is 100 × 2² = 400.",
+        "The capacity index is 100 + 2(50) = 200, so this model produces rising pressure."
+      ],
+      "conclusion": "That result follows from the chosen assumptions. It does not prove that real food output must grow additively or that all hunger is caused by population size."
+    },
+    "misconception": "A simplified growth comparison is not a forecast unless its assumptions fit the actual case.",
+    "apTip": "Compare a model’s prediction with a specific mechanism that might change it, such as productivity, access, trade or fertility.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 2.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Multiplicative versus additive arithmetic checked; synthetic indices are explicitly comparable model quantities, not real statistics or a universal famine prediction.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            100,
+            4
+          ],
+          "expected": 400,
+          "evidence": "= 400"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            100,
+            100
+          ],
+          "expected": 200,
+          "evidence": "= 200"
+        }
+      ],
+      "contentHash": "bb82daf9112e75c7fff2b4138e487dc2fac74b3a23385f6aeabe1c73f505ab80"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-2-7",
+    "topicNumber": "2.7",
+    "unitNumber": 2,
+    "title": "Population Policies",
+    "status": "published",
+    "overview": "Population policies attempt to influence births, migration or population composition. Evaluate a policy’s intended mechanism separately from its measured results and from questions about rights and unequal impacts.",
+    "keyConcepts": [
+      {
+        "title": "Policy goals",
+        "text": "Pronatalist policies encourage births; antinatalist policies discourage births. Immigration policies can also alter population growth and labor-force composition."
+      },
+      {
+        "title": "Mechanisms",
+        "text": "Childcare support, parental leave, access to reproductive health services and migration rules operate through different incentives or constraints. Intent alone does not establish effectiveness."
+      },
+      {
+        "title": "Consequences",
+        "text": "Policies can have delayed or uneven effects across social groups. Coercion, unequal access and unintended age or sex imbalances require attention in an evaluation."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional country with a rising older-age share introduces subsidized childcare and parental leave to encourage births.",
+      "steps": [
+        "The goal is pronatalist: reducing some financial and workplace barriers to having children.",
+        "Any increase in births would affect labor-force size only after a substantial delay, not immediately."
+      ],
+      "conclusion": "To evaluate results, compare fertility trends with access, implementation and other changing conditions; a before-and-after difference alone does not isolate the policy’s causal effect."
+    },
+    "misconception": "A policy intended to raise fertility does not guarantee higher fertility, nor does it automatically solve immediate worker shortages.",
+    "apTip": "Identify the goal, explain a specific mechanism and discuss one plausible limitation or unintended consequence. Distinguish voluntary support from coercive restriction.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 2.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Pronatalist classification and cohort time lag reviewed; causal attribution caveat prevents claiming policy success from correlation.",
+      "checks": [],
+      "contentHash": "06386edf16072867333d6c9de1d57a0c93431d27963d3c9f27a5352ecbe93d69"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-2-8",
+    "topicNumber": "2.8",
+    "unitNumber": 2,
+    "title": "Women and Demographic Change",
+    "status": "published",
+    "overview": "Changes in women’s access to education, paid work, health services and decision-making can influence demographic patterns. These relationships operate through social and economic mechanisms rather than a universal rule linking one characteristic to fertility.",
+    "keyConcepts": [
+      {
+        "title": "Education and opportunity",
+        "text": "Longer schooling and expanded employment options can affect the timing of family formation and the opportunity costs associated with childbearing."
+      },
+      {
+        "title": "Health and autonomy",
+        "text": "Access to contraception, maternal care and informed reproductive choices can help people realize their preferred family size and improve health outcomes."
+      },
+      {
+        "title": "Context matters",
+        "text": "Laws, household expectations, childcare, income and rural–urban differences can mediate outcomes. National averages may hide unequal opportunities among groups."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional region expands secondary schooling and voluntary reproductive-health services. Over time, average age at first birth rises and fertility falls.",
+      "steps": [
+        "Later family formation and improved access to family planning provide plausible mechanisms connecting the changes.",
+        "However, employment, household income and social norms may also have changed during the same period."
+      ],
+      "conclusion": "The observed association supports further investigation; it does not prove that schooling alone caused the entire fertility decline or that every woman followed the same pattern."
+    },
+    "misconception": "Women are not a uniform demographic category with identical goals or constraints. Aggregate patterns do not determine an individual’s choices.",
+    "apTip": "Connect a specific change in access or autonomy to a demographic mechanism, and acknowledge variation and competing explanations.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 2.8; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Causal pathways, autonomy and aggregate-versus-individual limits checked. No deterministic or culturally essentialist fertility claim.",
+      "checks": [],
+      "contentHash": "2327f609356f87c2b18862a21548771396d94a5b0099de148d9a0ea482b41b40"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-2-9",
+    "topicNumber": "2.9",
+    "unitNumber": 2,
+    "title": "Aging Populations",
+    "status": "published",
+    "overview": "Population aging occurs when older age groups make up a larger share of the population. Lower fertility and improved survival often contribute, while migration and past cohort sizes can alter the local pattern.",
+    "keyConcepts": [
+      {
+        "title": "Age structure",
+        "text": "A rising older share can result from fewer births as well as more people surviving to older ages. A high crude death rate can coexist with long life expectancy in an older population."
+      },
+      {
+        "title": "Economic implications",
+        "text": "A larger retired-age cohort relative to working-age residents may affect pension financing, staffing and tax revenue. Age categories do not identify actual employment or dependence."
+      },
+      {
+        "title": "Service responses",
+        "text": "Communities may adapt housing, transport, health care and work arrangements. Policy effects depend on access, resources and the particular age structure."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional region has 30,000 residents aged 65+ and 75,000 aged 15–64. Calculate its old-age dependency ratio.",
+      "steps": [
+        "Divide 30,000 by 75,000 and multiply by 100.",
+        "The result is 40 older residents per 100 working-age residents."
+      ],
+      "conclusion": "This age-based indicator is not a count of forty nonworkers per hundred workers: some older residents work and some working-age residents do not."
+    },
+    "misconception": "An older population is not automatically unhealthy or uniformly dependent. Use evidence about actual needs and institutions.",
+    "apTip": "Distinguish old-age dependency from total age dependency, and connect an age-structure trend to a specific service or financing implication.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 2.9; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Old-age ratio denominator excludes youth and numerator excludes working-age; .4*100=40 checked. Crude mortality and life expectancy distinguished.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            30000,
+            75000
+          ],
+          "expected": 0.4,
+          "evidence": "40 older residents"
+        }
+      ],
+      "contentHash": "c13ecea25b68efcf988bfbbbb4b120b4792b1fb6e0250bb6aca3a8a554d0b5c2"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-2-10",
+    "topicNumber": "2.10",
+    "unitNumber": 2,
+    "title": "Causes of Migration",
+    "status": "published",
+    "overview": "Migration decisions reflect interacting pressures at origins, attractions at destinations and conditions along the route. Economic, political, environmental and social factors can operate together rather than as mutually exclusive causes.",
+    "keyConcepts": [
+      {
+        "title": "Push and pull",
+        "text": "Push factors encourage departure, while pull factors attract migrants toward a destination. The same type of condition can function differently depending on location."
+      },
+      {
+        "title": "Intervening conditions",
+        "text": "A closer job opportunity may redirect a planned move. Costs, borders, transport barriers or danger can obstruct movement even when a destination is attractive."
+      },
+      {
+        "title": "Networks and agency",
+        "text": "Family and community connections can provide information and support, reducing some risks or costs. Access to such networks is uneven."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional worker considers moving from a town with declining employment to a distant city offering jobs. A nearer city then offers comparable work and family support.",
+      "steps": [
+        "The employment decline is a push factor, and the distant job market is a pull factor.",
+        "The nearer opportunity can redirect the move as an intervening opportunity."
+      ],
+      "conclusion": "Choosing the nearer city does not mean distance alone determined the decision; job quality, family connections, cost and legal access may all matter."
+    },
+    "misconception": "An environmental event does not produce identical migration responses for every household. Resources and constraints influence who can move and where.",
+    "apTip": "Explain a sequence linking conditions to a route or destination, using evidence rather than assuming one universal migrant motive.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 2.10; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Push/pull locations and intervening opportunity distinguished; migration not reduced to a single factor or deterministic distance rule.",
+      "checks": [],
+      "contentHash": "686048ab451904b8eff662d7a2fda9a452e454b20a94d17df732071b15ba0de7"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-2-11",
+    "topicNumber": "2.11",
+    "unitNumber": 2,
+    "title": "Forced and Voluntary Migration",
+    "status": "published",
+    "overview": "Migration ranges from constrained choices to forced displacement. Classify a movement by the circumstances and boundary crossed rather than by distance or a person’s appearance.",
+    "keyConcepts": [
+      {
+        "title": "Forced displacement",
+        "text": "War, persecution, coercion and disasters can force people from their homes. Internally displaced people remain within their country; crossing a border changes the geographic classification."
+      },
+      {
+        "title": "Protection terminology",
+        "text": "A refugee has crossed an international border and meets applicable protection criteria. An asylum seeker is seeking protection while the claim is unresolved; not every cross-border migrant is a refugee."
+      },
+      {
+        "title": "Voluntary patterns",
+        "text": "Internal, rural-to-urban, chain and step migration describe different aspects of movement. A single move can fit more than one pattern, and economic constraints can complicate the voluntary–forced distinction."
+      }
+    ],
+    "example": {
+      "prompt": "Conflict forces two fictional households to leave the same town. Household A moves elsewhere inside the country; household B crosses a national border and requests protection.",
+      "steps": [
+        "A is internally displaced because the move remains within the country.",
+        "B is an asylum-seeking household while its protection claim is unresolved; crossing alone does not establish the final legal determination."
+      ],
+      "conclusion": "The shared cause is forced displacement, but the boundary crossed and protection process distinguish the categories."
+    },
+    "misconception": "A long-distance move is not automatically international, and crossing a border does not by itself establish refugee status. An asylum seeker may also meet refugee criteria before a formal decision.",
+    "apTip": "Use the supplied cause, boundary and status evidence. Avoid inferring legal categories from an arrow on a map alone.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 2.11; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Academic protection terms checked against UNHCR definitions; pending claim distinguished from final recognition. No individual legal advice or automatic status assertion. Refugee criteria and pending asylum-process categories can overlap.",
+      "checks": [],
+      "contentHash": "9b0323a487ad44a30b2c2c917bc76b2434bdf72c966401176141941344b6e8ee"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-2-12",
+    "topicNumber": "2.12",
+    "unitNumber": 2,
+    "title": "Effects of Migration",
+    "status": "published",
+    "overview": "Migration changes both origin and destination places through population shifts, labor markets, cultural connections and political debates. Effects vary across groups and over time, so avoid presenting migration as uniformly beneficial or harmful.",
+    "keyConcepts": [
+      {
+        "title": "Origins",
+        "text": "Remittances can support households and local spending, while the loss of particular workers can strain services or alter age structures. Return migration may bring skills and new connections."
+      },
+      {
+        "title": "Destinations",
+        "text": "New residents can expand the labor force and cultural networks while increasing demand for housing, schools and transport. Outcomes depend on institutions and access."
+      },
+      {
+        "title": "Transnational links",
+        "text": "Migrants may maintain economic, family and cultural relationships across borders. These continuing ties connect places rather than necessarily replacing one identity with another."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional region records 4,000 arrivals and 2,500 departures in one year, while many emigrants send money to relatives.",
+      "steps": [
+        "Net migration is 4,000 − 2,500 = +1,500 residents.",
+        "Remittances are a separate financial flow; they do not enter that population subtraction as additional people."
+      ],
+      "conclusion": "The positive net total conceals larger two-way movements. Evaluating consequences requires information about ages, skills, household needs and local service capacity."
+    },
+    "misconception": "Net migration is not the total number of people who moved. A small net balance can hide substantial arrival and departure flows.",
+    "apTip": "Identify an origin effect and a destination effect, explain their mechanisms and qualify who experiences each outcome.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 2.12; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Net count recomputed and distinguished from gross 6500 movements; remittances correctly classified as money, not demographic arrivals.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            4000,
+            2500
+          ],
+          "expected": 1500,
+          "evidence": "+1,500 residents"
+        }
+      ],
+      "contentHash": "e38327beb1a4634fa419c9ad99c5442ea4ce63c800342fffb8b63f8a522b93a7"
+    }
   }
 ]

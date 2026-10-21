@@ -16,6 +16,21 @@ const compiled=ts.transpileModule(readFileSync('src/components/geography-stimulu
  .replaceAll('"@/lib/geography-stimuli"',JSON.stringify(new URL('../src/lib/geography-stimuli.ts',import.meta.url).href));
 const {StimulusContent,GeographyStimulus}=await import('data:text/javascript;base64,'+Buffer.from(compiled).toString('base64'));
 const render=stimulus=>renderToStaticMarkup(createElement(StimulusContent,{stimulus}));
+
+test('original summary diagrams use the shared accessible renderer with independently checked demographic data',()=>{
+ const summaries=JSON.parse(readFileSync('src/content/topic-summaries/human-geography.json','utf8'));
+ const pyramid=summaries.find(s=>s.topicNumber==='2.3')?.figure,dtm=summaries.find(s=>s.topicNumber==='2.5')?.figure;
+ assert.ok(pyramid&&dtm,'Published model summaries have their original figures');
+ validateGeographyStimulus(pyramid);validateGeographyStimulus(dtm);
+ assert.deepEqual(pyramid.cohorts.map(c=>c.male+c.female),[23,62,15]);
+ assert.equal(pyramid.cohorts.reduce((total,c)=>total+c.male+c.female,0),100);
+ assert.deepEqual(dtm.series[0].values.map((v,i)=>v-dtm.series[1].values[i]),[1,22,13,1,-3]);
+ const html=renderToStaticMarkup(createElement(GeographyStimulus,{questionId:'summary-demographic-model',stimulus:dtm}));
+ assert.ok(html.includes('Enlarge Original transition illustration')&&html.includes('scope="col"'));
+ assert.ok(html.includes('stroke-dasharray="7 4"')&&html.includes('solid / circles')&&html.includes('dashed / squares'));
+ for(const [j,series] of dtm.series.entries())for(const [i,value] of series.values.entries())assert.ok(html.includes(`data-category="${dtm.categories[i]}" data-value="${value}"`));
+ assert.ok(render(pyramid).includes('age cohort')||render(pyramid).includes('Age cohort'));
+});
 test('optional map label anchors preserve old defaults and reject invalid coordinates',()=>{
  const s=structuredClone(geographyStimuli['hug-1-1-001']);s.regions[0].labelPoint=[18,12];validateGeographyStimulus(s);assert.ok(render(s).includes(`x="${40+18*3.8}" y="${35+12*3.3}" text-anchor="middle">NW: 80`));
  for(const point of [[-1,12],[18,61],[NaN,12],[18],[18,12,5]]){s.regions[0].labelPoint=point;assert.throws(()=>validateGeographyStimulus(s),/label position/);}

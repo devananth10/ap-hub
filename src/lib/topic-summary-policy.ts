@@ -1,4 +1,5 @@
 import type { Course } from './courses.ts';
+import { validateGeographyStimulus, type GeographyStimulus } from './geography-stimuli.ts';
 
 export type SummaryCheck = { operation: 'sum' | 'product' | 'quotient' | 'difference' | 'power'; operands: number[]; expected: number; evidence: string };
 export type TopicSummary = {
@@ -7,11 +8,12 @@ export type TopicSummary = {
   example: { prompt: string; steps: string[]; conclusion: string };
   misconception: string; apTip: string;
   table?: { caption: string; headers: string[]; rows: string[][] };
+  figure?: GeographyStimulus;
   validation: { status: 'pending' | 'validated'; checkedAt: string; scope: string; reasoning: string; checks: SummaryCheck[]; contentHash: string };
 };
 
 export function summaryText(s: TopicSummary): string {
-  return [s.overview, ...s.keyConcepts.flatMap(c => [c.title,c.text]), s.example.prompt, ...s.example.steps, s.example.conclusion, s.misconception, s.apTip, ...(s.table ? [s.table.caption,...s.table.headers,...s.table.rows.flat()] : [])].join(' ');
+  return [s.overview, ...s.keyConcepts.flatMap(c => [c.title,c.text]), s.example.prompt, ...s.example.steps, s.example.conclusion, s.misconception, s.apTip, ...(s.table ? [s.table.caption,...s.table.headers,...s.table.rows.flat()] : []), ...(s.figure?[s.figure.title,s.figure.description,s.figure.caption]:[])].join(' ');
 }
 export function summaryWordCount(s: TopicSummary): number { return summaryText(s).trim().split(/\s+/u).length; }
 export function recomputeCheck(c: SummaryCheck): number {
@@ -38,6 +40,7 @@ export function validateTopicSummary(s: TopicSummary, courses: Course[]): string
   const words=summaryWordCount(s);if(words<150||words>250)errors.push(`Reading length ${words}; expected 150–250 words`);
   if(/https?:\/\/|<\/?\w|owner.approved|human.reviewed|video.{0,15}analy[sz]ed|as an ai|lorem ipsum/iu.test(summaryText(s)))errors.push('Unsupported markup, external resource or misleading provenance');
   if(s.table&&(!validText(s.table.caption)||s.table.headers.length<2||s.table.rows.length<1||[...s.table.headers,...s.table.rows.flat()].some(v=>!validText(v))||s.table.rows.some(r=>r.length!==s.table!.headers.length)))errors.push('Invalid accessible table');
+  if(s.figure)try{validateGeographyStimulus(s.figure);}catch{errors.push('Invalid original summary figure');}
   const v=s.validation;
   if(!v||!['pending','validated'].includes(v.status)||!validText(v.scope)||!validText(v.reasoning)||!/^\d{4}-\d{2}-\d{2}$/.test(v.checkedAt)||!Array.isArray(v.checks))errors.push('Missing validation evidence');
   else for(const c of v.checks){

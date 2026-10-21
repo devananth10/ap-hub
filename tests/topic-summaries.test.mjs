@@ -12,6 +12,7 @@ import {validateTopicSummary,recomputeCheck} from '../src/lib/topic-summary-poli
 
 const require=createRequire(import.meta.url);
 const compiled=ts.transpileModule(fs.readFileSync('src/components/topic-summary.tsx','utf8'),{compilerOptions:{jsx:ts.JsxEmit.ReactJSX,module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText
+ .replace("import { GeographyStimulus } from './geography-stimulus';",'const GeographyStimulus=()=>null;')
  .replaceAll("'lucide-react'",JSON.stringify(pathToFileURL(require.resolve('lucide-react')).href))
  .replaceAll('"react/jsx-runtime"',JSON.stringify(pathToFileURL(require.resolve('react/jsx-runtime')).href))
  .replaceAll("'@/lib/topic-summary-policy'",JSON.stringify(new URL('../src/lib/topic-summary-policy.ts',import.meta.url).href));

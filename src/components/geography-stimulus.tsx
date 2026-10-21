@@ -3,8 +3,8 @@ import {useId,useState} from "react";
 import {Dialog} from "./ui";
 import {geographyStimuli,mapBin,mapX,mapY,chartHeight,lineX,pyramidWidth,symbolRadius,type GeographyStimulus} from "@/lib/geography-stimuli";
 
-export function GeographyStimulus({questionId}:{questionId:string}) {
-  const stimulus=geographyStimuli[questionId];
+export function GeographyStimulus({questionId,stimulus:provided}:{questionId:string;stimulus?:GeographyStimulus}) {
+  const stimulus=provided||geographyStimuli[questionId];
   const [expanded,setExpanded]=useState(false);
   const [zoom,setZoom]=useState(100);
   if(!stimulus)return null;

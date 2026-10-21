@@ -879,5 +879,565 @@
       ],
       "contentHash": "fd3a8088b6eedbccba8ba7c485aae4e3fe7835e904a1c9349f79d7195157d40e"
     }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "derivatives",
+    "topicNumber": "2.1",
+    "unitNumber": 2,
+    "title": "Defining Average and Instantaneous Rates of Change at a Point",
+    "status": "published",
+    "overview": "Average and instantaneous rates answer different questions about a changing quantity. The average rate summarizes an interval; an instantaneous rate describes local behavior at one input through a limiting process.",
+    "keyConcepts": [
+      {
+        "title": "Secant slope",
+        "text": "Over [a, b], average rate is [f(b) − f(a)]/(b − a). Its units are output units per input unit, and its graph is a secant slope."
+      },
+      {
+        "title": "Tangent slope",
+        "text": "The instantaneous rate at a is the limit of nearby secant slopes, when that finite limit exists. It gives the tangent-line slope rather than the height of the graph."
+      },
+      {
+        "title": "Context and sign",
+        "text": "A negative rate means the output decreases as the input increases locally. It does not necessarily mean that the output itself is negative."
+      }
+    ],
+    "example": {
+      "prompt": "A tank’s volume is V(t) = 20 − t² liters for 0 ≤ t ≤ 3 minutes. Compare its average rate over [1, 3] with its instantaneous rate at 1.",
+      "steps": [
+        "V(1) = 19 and V(3) = 11, so the average rate is (11 − 19)/(3 − 1) = −4 L/min.",
+        "At t = 1, the difference quotient simplifies to −2 − h, which approaches −2 as h → 0."
+      ],
+      "conclusion": "The tank is losing volume at 2 L/min at that instant, while its average loss rate over the larger interval is 4 L/min."
+    },
+    "misconception": "Average rate is not the average of the endpoint output values. It compares output change with input change.",
+    "apTip": "Keep the interval and units in an interpretation, and distinguish a signed rate from the magnitude of a loss.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 2.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Expanded difference quotient -2-h independently; interval secant -8/2=-4. Volume remains positive throughout stated domain.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            -8,
+            2
+          ],
+          "expected": -4,
+          "evidence": "−4 L/min"
+        }
+      ],
+      "contentHash": "79a0b78302c56fbf3a0e37db3803670aa8fdbc95d2493700d47abb62d3d4c3bd"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-2-2",
+    "topicNumber": "2.2",
+    "unitNumber": 2,
+    "title": "Defining the Derivative of a Function and Using Derivative Notation",
+    "status": "published",
+    "overview": "The derivative formalizes instantaneous rate of change. At a point, it is a number; when evaluated at varying inputs, it defines a new function wherever the required limit exists.",
+    "keyConcepts": [
+      {
+        "title": "Definition",
+        "text": "f′(a) = lim as h → 0 of [f(a + h) − f(a)]/h, when the limit is finite. Nearby h values are nonzero during simplification."
+      },
+      {
+        "title": "Equivalent notation",
+        "text": "The limit of [f(x) − f(a)]/(x − a) as x → a defines the same point derivative. Symbols f′(x), y′ and dy/dx identify derivative functions or rates."
+      },
+      {
+        "title": "Tangent interpretation",
+        "text": "The tangent line at x = a uses slope f′(a) and point (a, f(a)). The derivative and the function value play different roles."
+      }
+    ],
+    "example": {
+      "prompt": "Use the definition to find f′(2) for f(x) = x² + 1.",
+      "steps": [
+        "f(2 + h) − f(2) = (2 + h)² + 1 − 5 = 4h + h².",
+        "For h ≠ 0, divide by h to obtain 4 + h, whose limit is 4."
+      ],
+      "conclusion": "Thus f′(2) = 4. Since f(2) = 5, the tangent line is y − 5 = 4(x − 2)."
+    },
+    "misconception": "The expression dy/dx denotes a derivative; treating it as an ordinary numerical fraction without the relevant calculus context can lead to errors.",
+    "apTip": "When recognizing a derivative hidden in a limit, identify the base input, the increment and the complete numerator difference.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 2.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Definition expanded independently; derivative 2x confirms value 4 and tangent passes through (2,5).",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            2,
+            2
+          ],
+          "expected": 4,
+          "evidence": "f′(2) = 4"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            4,
+            1
+          ],
+          "expected": 5,
+          "evidence": "f(2) = 5"
+        }
+      ],
+      "contentHash": "40a0162e30a1ac8adc053c31d888f0f365ac7eda16aeec662a4c3bb8697a11f4"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-2-3",
+    "topicNumber": "2.3",
+    "unitNumber": 2,
+    "title": "Estimating Derivatives of a Function at a Point",
+    "status": "published",
+    "overview": "When only a table or graph is available, estimate a derivative using nearby slopes. The estimate is a local rate, so choose relevant nearby data and acknowledge the limits of the available representation.",
+    "keyConcepts": [
+      {
+        "title": "Table estimates",
+        "text": "A difference quotient between nearby inputs gives an average rate that may approximate the derivative. A centered interval often balances the two sides, but it is still an estimate."
+      },
+      {
+        "title": "Graph estimates",
+        "text": "Estimate a tangent slope using two readable points on the tangent, not two arbitrary points far apart on the function’s curve."
+      },
+      {
+        "title": "Units and uncertainty",
+        "text": "Divide output change by input change. Sparse data, rounding and curve behavior can affect accuracy; a numerical estimate alone does not prove differentiability."
+      }
+    ],
+    "example": {
+      "prompt": "Estimate f′(2) from the original values table, whose function values follow x².",
+      "steps": [
+        "Use the centered secant from 1.9 to 2.1: (4.41 − 3.61)/(2.1 − 1.9).",
+        "The quotient is 0.80/0.20 = 4. This estimates the tangent slope near 2."
+      ],
+      "conclusion": "For this particular quadratic it agrees with the exact derivative 2x at 2. Such exact agreement is not guaranteed for every function or table."
+    },
+    "misconception": "The nearest listed output is an estimate of function height, not derivative. A slope requires comparing at least two distinct inputs.",
+    "apTip": "State which data points you used and include units when the table describes a real quantity.",
+    "table": {
+      "caption": "Original values for estimating a local slope",
+      "headers": [
+        "x",
+        "f(x)"
+      ],
+      "rows": [
+        [
+          "1.9",
+          "3.61"
+        ],
+        [
+          "2.0",
+          "4.00"
+        ],
+        [
+          "2.1",
+          "4.41"
+        ]
+      ]
+    },
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 2.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Centered secant recomputed; exact derivative 2x independently confirms special quadratic agreement without claiming universal error reduction.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            0.8,
+            0.2
+          ],
+          "expected": 4,
+          "evidence": "= 4"
+        }
+      ],
+      "contentHash": "e0fa96c7a4862ba0fbe55528969f8816f64d9eac35eb6d2e73cf0c735890a1f8"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-2-4",
+    "topicNumber": "2.4",
+    "unitNumber": 2,
+    "title": "Connecting Differentiability and Continuity: Determining When Derivatives Do and Do Not Exist",
+    "status": "published",
+    "overview": "Differentiability requires a well-defined finite local slope. It implies continuity, but a continuous function can still fail to have a derivative at a point.",
+    "keyConcepts": [
+      {
+        "title": "Necessary continuity",
+        "text": "If a function is differentiable at a point, it is continuous there. A discontinuity therefore rules out differentiability immediately."
+      },
+      {
+        "title": "Unequal slopes",
+        "text": "At a corner or cusp, the left and right difference-quotient behaviors do not agree in a finite derivative. Check slopes rather than only checking heights."
+      },
+      {
+        "title": "Vertical tangents",
+        "text": "An unbounded slope does not give an ordinary finite derivative. Distinguish this behavior from a vertical asymptote, where the function values themselves become unbounded."
+      }
+    ],
+    "example": {
+      "prompt": "Analyze continuity and differentiability of f(x) = |x| at x = 0.",
+      "steps": [
+        "The function value is zero, and both sides approach zero, so f is continuous there.",
+        "The difference quotient is |h|/h. It equals −1 for h < 0 and +1 for h > 0."
+      ],
+      "conclusion": "The unequal one-sided slopes mean f′(0) does not exist. The corner provides a concrete example of continuity without differentiability."
+    },
+    "misconception": "A graph without a break need not have a derivative everywhere. Continuity concerns function values; differentiability requires a stronger local-slope condition.",
+    "apTip": "For piecewise functions, check continuity first, then compare derivative behavior from both sides at the joining input.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 2.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Absolute-value quotient evaluated separately for signs; continuity verified independently. Finite-derivative convention and vertical-tangent distinction explicit.",
+      "checks": [],
+      "contentHash": "32b483dcb26ac1d11888c1efaf1a980bc5e0f4c9946eeb67b4e7431e06aceb12"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-2-5",
+    "topicNumber": "2.5",
+    "unitNumber": 2,
+    "title": "Applying the Power Rule",
+    "status": "published",
+    "overview": "The power rule differentiates powers of the input on intervals where the functions and derivatives are defined. Rewriting roots and reciprocals as powers often makes the rule easier to apply.",
+    "keyConcepts": [
+      {
+        "title": "Power rule",
+        "text": "For f(x) = xⁿ, the derivative is nxⁿ⁻¹ where the rule applies. Multiply by the original exponent, then reduce that exponent by one."
+      },
+      {
+        "title": "Useful rewrites",
+        "text": "For example, 1/x² = x⁻² and √x = x¹ᐟ² on their respective domains. Preserve domain restrictions when rewriting."
+      },
+      {
+        "title": "Constants and endpoints",
+        "text": "A constant has derivative zero. For fractional powers, examine excluded inputs or domain endpoints separately rather than applying a symbolic formula blindly."
+      }
+    ],
+    "example": {
+      "prompt": "Differentiate f(x) = x⁴ and g(x) = 1/x², then find f′(2).",
+      "steps": [
+        "For f, the rule gives f′(x) = 4x³. At 2 this is 4(8) = 32.",
+        "Rewrite g as x⁻². Its derivative is −2x⁻³ = −2/x³ for x ≠ 0."
+      ],
+      "conclusion": "The negative exponent does not make g negative: g is positive on its domain, while its derivative’s sign depends on x."
+    },
+    "misconception": "The derivative is not xⁿ divided by n, and the exponent does not simply disappear. Integration uses a different procedure.",
+    "apTip": "After differentiating, check exponent subtraction carefully, retain any excluded inputs and evaluate a point derivative only after finding the derivative expression.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 2.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Power coefficients and exponents checked; reciprocal derivative confirmed from quotient of constant and x². Point 4*8=32 verified.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            4,
+            8
+          ],
+          "expected": 32,
+          "evidence": "= 32"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            -2,
+            1
+          ],
+          "expected": -3,
+          "evidence": "−2x⁻³"
+        }
+      ],
+      "contentHash": "6b1e79e7f6890bb467efc6c87d5e8b401c5897a87bf8df8a84bebfd117bafb69"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-2-6",
+    "topicNumber": "2.6",
+    "unitNumber": 2,
+    "title": "Derivative Rules: Constant, Sum, Difference, and Constant Multiple",
+    "status": "published",
+    "overview": "Derivatives respect sums and constant multiples. This allows a polynomial or a linear combination of familiar functions to be differentiated term by term without returning to the limit definition every time.",
+    "keyConcepts": [
+      {
+        "title": "Linearity",
+        "text": "The derivative of af(x) + bg(x) is af′(x) + bg′(x), when the component derivatives exist and a and b are constants."
+      },
+      {
+        "title": "Constants",
+        "text": "The derivative of an isolated constant is zero because it contributes no change in output as the input varies."
+      },
+      {
+        "title": "Rule boundaries",
+        "text": "A constant multiple is different from multiplication by another changing function. Products of two nonconstant functions require a separate rule."
+      }
+    ],
+    "example": {
+      "prompt": "Differentiate p(x) = 3x⁴ − 5x² + 7x − 9 and evaluate p′(1).",
+      "steps": [
+        "Apply the power rule to each changing term: p′(x) = 12x³ − 10x + 7.",
+        "The final −9 contributes zero. At x = 1, the derivative is 12 − 10 + 7 = 9."
+      ],
+      "conclusion": "Thus the graph’s tangent slope at 1 is 9, while its actual height is p(1) = −4."
+    },
+    "misconception": "Do not keep an isolated constant unchanged in the derivative. Also, differentiating a sum term by term does not justify multiplying derivatives for a product.",
+    "apTip": "Write one derivative term for each original term, then simplify. Checking a point value can help reveal an omitted coefficient or incorrect sign.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 2.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Term derivatives independently recomputed; p(1)=3-5+7-9=-4 distinct from slope 9. Linearity hypotheses retained.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            12,
+            -10,
+            7
+          ],
+          "expected": 9,
+          "evidence": "= 9"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            3,
+            -5,
+            7,
+            -9
+          ],
+          "expected": -4,
+          "evidence": "= −4"
+        }
+      ],
+      "contentHash": "9cb8ffd9824008f53c5b08b5ea525e53f7f31cb9e8d7bbb706e3953bc7256f6e"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-2-7",
+    "topicNumber": "2.7",
+    "unitNumber": 2,
+    "title": "Derivatives of cos x, sin x, eˣ, and ln x",
+    "status": "published",
+    "overview": "Several elementary derivative formulas provide building blocks for more complicated functions. Know their signs, domains and angle convention before combining them with other derivative rules.",
+    "keyConcepts": [
+      {
+        "title": "Trigonometric derivatives",
+        "text": "With angles in radians, d(sin x)/dx = cos x and d(cos x)/dx = −sin x. The negative sign in the cosine derivative matters."
+      },
+      {
+        "title": "Exponential derivative",
+        "text": "The derivative of eˣ is eˣ. This special identity is tied to base e and does not hold unchanged for every exponential base."
+      },
+      {
+        "title": "Logarithmic derivative",
+        "text": "The derivative of ln x is 1/x for x > 0. The derivative formula does not extend the original real logarithm to zero or negative inputs."
+      }
+    ],
+    "example": {
+      "prompt": "Differentiate f(x) = 2 sin x + eˣ − ln x for x > 0, then evaluate at x = 1.",
+      "steps": [
+        "Use linearity and the elementary rules to obtain f′(x) = 2 cos x + eˣ − 1/x.",
+        "At x = 1, f′(1) = 2 cos(1) + e − 1, with the cosine input in radians."
+      ],
+      "conclusion": "The exact expression is a valid point derivative; a decimal approximation would require retaining enough calculator precision."
+    },
+    "misconception": "The logarithm’s domain remains x > 0 even though the expression 1/x is defined for some additional inputs.",
+    "apTip": "Check the angle mode and original domain. Distinguish these basic formulas from derivatives of composite expressions, which require an additional chain-rule factor.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 2.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Linearity, elementary signs and log domain checked; exact point expression avoids an unnecessary unverified rounded decimal.",
+      "checks": [],
+      "contentHash": "00b492852e42244fa36666c07a44002214d0a64df5025ff18ae102cd0a6e27b2"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-2-8",
+    "topicNumber": "2.8",
+    "unitNumber": 2,
+    "title": "The Product Rule",
+    "status": "published",
+    "overview": "The product rule differentiates two changing factors together. It accounts for the contribution from each factor’s change rather than multiplying their derivative values.",
+    "keyConcepts": [
+      {
+        "title": "Rule",
+        "text": "If u and v are differentiable, (uv)′ = u′v + uv′. Each term differentiates one factor and leaves the other undifferentiated."
+      },
+      {
+        "title": "Point data",
+        "text": "A derivative at a point can be found from u, v, u′ and v′ at that point, even when complete formulas are unavailable."
+      },
+      {
+        "title": "Equivalent routes",
+        "text": "For simple polynomial products, expanding first and differentiating term by term provides an independent way to check the result."
+      }
+    ],
+    "example": {
+      "prompt": "Differentiate h(x) = x²(x + 1), then evaluate h′(2).",
+      "steps": [
+        "The product rule gives h′(x) = 2x(x + 1) + x²(1).",
+        "Simplify to 3x² + 2x. At x = 2 this gives 12 + 4 = 16."
+      ],
+      "conclusion": "As a separate check, expand h to x³ + x² and differentiate; the same derivative 3x² + 2x results."
+    },
+    "misconception": "The product of the derivatives, 2x · 1, omits how each original factor scales the other’s change. It is not the derivative of the product.",
+    "apTip": "Identify both original factors before differentiating. When using a table, distinguish the function-value column from the derivative column in each term.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 2.8; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent expansion derivative matches product-rule expression; numeric 3*4+2*2=16 checked.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            12,
+            4
+          ],
+          "expected": 16,
+          "evidence": "= 16"
+        }
+      ],
+      "contentHash": "579b1634dc7128ffaa0a3c5e6ecad1fcc19b5de8fed46bdb8fc10ac2f7290105"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-2-9",
+    "topicNumber": "2.9",
+    "unitNumber": 2,
+    "title": "The Quotient Rule",
+    "status": "published",
+    "overview": "The quotient rule differentiates a ratio while preserving the influence of both numerator and denominator. The original denominator must be nonzero at the input being analyzed.",
+    "keyConcepts": [
+      {
+        "title": "Rule and order",
+        "text": "For differentiable u and v with v ≠ 0, (u/v)′ = (u′v − uv′)/v². Reversing the numerator subtraction changes the sign."
+      },
+      {
+        "title": "Domain",
+        "text": "A derivative formula cannot restore an input excluded from the original quotient. Simplification may disguise a hole, so keep track of restrictions."
+      },
+      {
+        "title": "Alternative checks",
+        "text": "When convenient, algebraically rewrite the original quotient and differentiate the equivalent nearby form. Compare results at an allowed input."
+      }
+    ],
+    "example": {
+      "prompt": "Find f′(1) for f(x) = (x² + 1)/(x + 1).",
+      "steps": [
+        "Use u = x² + 1 and v = x + 1. The rule gives [2x(x + 1) − (x² + 1)]/(x + 1)².",
+        "At 1, the numerator is 4 − 2 = 2 and the denominator is 4, giving f′(1) = 1/2."
+      ],
+      "conclusion": "An independent rewrite is f(x) = x − 1 + 2/(x + 1); differentiating it gives the same value at 1."
+    },
+    "misconception": "The derivative of a quotient is generally not the quotient of the derivatives. The squared denominator and ordered subtraction are essential.",
+    "apTip": "Check that the evaluation input is allowed before substituting, then verify numerator signs separately from denominator arithmetic.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 2.9; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Polynomial division independently gives x-1+2/(x+1); derivative 1-2/(x+1)^2 at 1 is 1/2. Original domain excludes -1.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            4,
+            2
+          ],
+          "expected": 2,
+          "evidence": "= 2"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            2,
+            4
+          ],
+          "expected": 0.5,
+          "evidence": "= 1/2"
+        }
+      ],
+      "contentHash": "4b0dae5156218c4505c6dd24db8b898076f5737b6edb00ee0f1baad692c2ba91"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-2-10",
+    "topicNumber": "2.10",
+    "unitNumber": 2,
+    "title": "Finding the Derivatives of Tangent, Cotangent, Secant, and/or Cosecant Functions",
+    "status": "published",
+    "overview": "Derivatives of tangent, cotangent, secant and cosecant can be obtained from sine and cosine using quotient or reciprocal forms. These formulas use radian angles and retain the original trigonometric domains.",
+    "keyConcepts": [
+      {
+        "title": "Tangent and cotangent",
+        "text": "The derivative of tan x is sec²x, while the derivative of cot x is −csc²x. Their opposite signs reflect different quotient arrangements."
+      },
+      {
+        "title": "Secant and cosecant",
+        "text": "The derivative of sec x is sec x tan x; the derivative of csc x is −csc x cot x. Keep the negative sign in the cosecant formula."
+      },
+      {
+        "title": "Domain restrictions",
+        "text": "Tangent and secant require cos x ≠ 0. Cotangent and cosecant require sin x ≠ 0. A derivative calculation does not define a function at an excluded input."
+      }
+    ],
+    "example": {
+      "prompt": "Use tan x = sin x/cos x to derive its derivative, then find the tangent slope at x = 0.",
+      "steps": [
+        "The quotient rule gives [cos²x + sin²x]/cos²x where cos x is nonzero.",
+        "The identity sin²x + cos²x = 1 reduces this to sec²x."
+      ],
+      "conclusion": "At zero, cos 0 = 1, so the derivative is 1. The point is allowed because the original denominator is nonzero there."
+    },
+    "misconception": "Do not confuse sec²x with sec(x²); one squares the output and the other changes the input.",
+    "apTip": "If a formula is uncertain, reconstruct it from sine and cosine and the quotient rule. Check signs and domain before evaluating.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 2.10; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Quotient derivation and Pythagorean identity independently checked; basic secant-squared at zero is 1, with radian convention explicit.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            1,
+            1
+          ],
+          "expected": 1,
+          "evidence": "derivative is 1"
+        }
+      ],
+      "contentHash": "a8baaf208c09f7048ba0c80a96e0ca49581458aa6fd9a8400d746f7bbf630f67"
+    }
   }
 ]

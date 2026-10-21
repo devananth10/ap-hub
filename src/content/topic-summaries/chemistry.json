@@ -498,5 +498,374 @@
       ],
       "contentHash": "0ce9a28d66e3c83e6ee0cc2bc4b72b3f7c97a475a73e4dede37c4b76e6d4cd78"
     }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "bonds",
+    "topicNumber": "2.1",
+    "unitNumber": 2,
+    "title": "Types of Chemical Bonds",
+    "status": "published",
+    "overview": "Chemical bonding reflects electrostatic interactions among nuclei and electrons. Ionic, covalent and metallic models describe different arrangements of particles and electron density; real bonds can have intermediate character.",
+    "keyConcepts": [
+      {
+        "title": "Ionic model",
+        "text": "Cations and anions attract in an extended structure. Electron transfer is a useful account of ion formation, but the attraction between opposite charges holds the solid together."
+      },
+      {
+        "title": "Covalent model",
+        "text": "Atoms share electron density. An electronegativity difference can make that sharing unequal, producing bond polarity without requiring complete electron transfer."
+      },
+      {
+        "title": "Metallic model",
+        "text": "Positive metal cores are held together through attraction to delocalized valence electrons. Mobile electrons help explain electrical conductivity in metals."
+      }
+    ],
+    "example": {
+      "prompt": "Classify the dominant bonding models in solid NaCl, an isolated HCl molecule and solid Cu.",
+      "steps": [
+        "NaCl contains an extended arrangement of Na⁺ and Cl⁻ ions, so the ionic model applies.",
+        "HCl contains a shared electron pair attracted more strongly toward chlorine, giving a polar covalent bond."
+      ],
+      "conclusion": "Cu is described by metal cores and delocalized electrons. Its bonding is not a collection of separate Cu₂ molecules."
+    },
+    "misconception": "A polar covalent bond is not automatically an ionic bond, and a numerical electronegativity cutoff is not a universal physical boundary.",
+    "apTip": "Connect the particle arrangement and electron behavior to an observed property. Distinguish bond polarity from the overall polarity of a molecule.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 2.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Classifications checked for specified states and particle models; ionic attraction separated from transfer and bond polarity distinguished from molecular polarity.",
+      "checks": [],
+      "contentHash": "63bd93b8e2a95f46ad0a2f7c6e228810cc095a141346da4bfc76cd31aa3554ea"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "potential-energy",
+    "topicNumber": "2.2",
+    "unitNumber": 2,
+    "title": "Intramolecular Force and Potential Energy",
+    "status": "published",
+    "overview": "A bond’s potential-energy curve describes how energy changes as two atoms approach or separate. The stable bond distance occurs where competing attractions and repulsions produce a minimum in potential energy.",
+    "keyConcepts": [
+      {
+        "title": "Attractive region",
+        "text": "At moderate separation, attractions between electrons and the other nucleus can lower the system’s potential energy as atoms approach."
+      },
+      {
+        "title": "Short-range repulsion",
+        "text": "At very short separation, nucleus–nucleus and electron–electron repulsions cause the energy to rise sharply. A shorter distance is therefore not always more stable."
+      },
+      {
+        "title": "Bond length and strength",
+        "text": "The minimum identifies equilibrium bond length. Relative to separated atoms, a deeper well generally indicates more energy required to break that bond."
+      }
+    ],
+    "example": {
+      "prompt": "Two hypothetical bonds have minima at −300 and −450 kJ/mol relative to separated atoms at zero. Which requires more energy to dissociate?",
+      "steps": [
+        "Breaking the first bond raises its potential energy by 300 kJ/mol.",
+        "Breaking the second raises it by 450 kJ/mol, requiring 150 kJ/mol more energy."
+      ],
+      "conclusion": "The second bond is stronger by this measure. The well depths alone do not determine which bond has the shorter equilibrium distance; the horizontal positions are also needed."
+    },
+    "misconception": "The minimum is not a point where all electric interactions vanish. It represents a balance giving zero net force at equilibrium.",
+    "apTip": "Read both axes and the chosen energy reference. Explain strength using energy differences and length using the location of the minimum.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 2.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Energy signs and changes independently checked. Depth does not alone establish length; net-force balance distinguished from absence of forces.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            450,
+            300
+          ],
+          "expected": 150,
+          "evidence": "150 kJ/mol"
+        }
+      ],
+      "contentHash": "c8c1b47443f3c9b3692f26328fcfb3af48d1722675244b025c9549cad72ab124"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-2-3",
+    "topicNumber": "2.3",
+    "unitNumber": 2,
+    "title": "Structure of Ionic Solids",
+    "status": "published",
+    "overview": "An ionic solid is an extended arrangement of oppositely charged ions. Its macroscopic behavior follows from electrostatic attractions throughout the lattice and from whether charged particles can move.",
+    "keyConcepts": [
+      {
+        "title": "Lattice arrangement",
+        "text": "Each ion interacts with surrounding ions in three dimensions. A formula unit gives the simplest neutral ratio, not an individual molecule embedded in the crystal."
+      },
+      {
+        "title": "Attraction strength",
+        "text": "For comparable arrangements, larger charge magnitudes and smaller ion separations generally strengthen electrostatic attraction. Compare both charge and size rather than only one variable."
+      },
+      {
+        "title": "Properties",
+        "text": "Ions in an intact solid cannot move freely, so the solid usually does not conduct electricity. Molten salts and aqueous ionic solutions conduct when mobile ions are present."
+      }
+    ],
+    "example": {
+      "prompt": "Compare the expected electrostatic attractions in NaF and MgO, assuming broadly comparable ion separations.",
+      "steps": [
+        "Na⁺ and F⁻ have charge magnitudes one; their charge product has magnitude one.",
+        "Mg²⁺ and O²⁻ have magnitudes two; their product has magnitude four."
+      ],
+      "conclusion": "The larger charge product supports stronger attractions in MgO under the stated comparison. Exact lattice energies also depend on distances and crystal structure."
+    },
+    "misconception": "Strong lattice attractions do not imply that a solid conducts. Conductivity requires charge mobility, not merely charged particles.",
+    "apTip": "Use a particle-level explanation for melting, brittleness or conductivity. Do not assume that every ionic solid dissolves readily in water.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 2.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Charge products checked independently; conditional distance/structure comparison avoids numerical lattice-energy claim or blanket solubility rule.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            2,
+            2
+          ],
+          "expected": 4,
+          "evidence": "magnitude four"
+        }
+      ],
+      "contentHash": "c7c8ec2962d6b2f0f421f06d426a26491a480ac5d55e96e133b64f2c53768963"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-2-4",
+    "topicNumber": "2.4",
+    "unitNumber": 2,
+    "title": "Structure of Metals and Alloys",
+    "status": "published",
+    "overview": "Metallic bonding involves metal cores attracted to delocalized valence electrons. Because the bonding is not restricted to fixed pairs of neighboring atoms, many metals can change shape while maintaining cohesion.",
+    "keyConcepts": [
+      {
+        "title": "Conductivity",
+        "text": "Mobile electrons carry charge through a metal. In an electrical circuit, the metal’s atoms need not travel from one end of the wire to the other."
+      },
+      {
+        "title": "Malleability",
+        "text": "Layers of metal cores can shift while remaining attracted to the shared electron population. This differs from an ionic lattice, where displacement can bring like charges together."
+      },
+      {
+        "title": "Alloy structures",
+        "text": "Substitutional alloys replace some metal atoms with similarly sized atoms. Interstitial alloys place sufficiently small atoms in spaces between larger metal atoms, often hindering layer motion."
+      }
+    ],
+    "example": {
+      "prompt": "A hypothetical alloy contains 90 g Cu and 10 g Zn. The Zn atoms replace some Cu atoms at lattice sites. Classify the alloy and find its zinc mass percentage.",
+      "steps": [
+        "Replacement at metal lattice sites identifies a substitutional alloy.",
+        "The total mass is 100 g, so zinc contributes 10/100 × 100 = 10% by mass."
+      ],
+      "conclusion": "The mass percentage does not mean 10% of the atoms are Zn; atom fraction would require converting each mass to moles."
+    },
+    "misconception": "An alloy is not necessarily a compound with a fixed formula. Its properties can change with composition and microscopic structure.",
+    "apTip": "Connect the stated atomic sizes and positions to the alloy model, and distinguish mass fraction from particle fraction.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 2.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Substitutional criterion and composition checked; mass-to-atom distinction prevents an incorrect equal-fraction inference.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            90,
+            10
+          ],
+          "expected": 100,
+          "evidence": "100 g"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            10,
+            100
+          ],
+          "expected": 0.1,
+          "evidence": "10% by mass"
+        }
+      ],
+      "contentHash": "d201a05c6581001ebbbd9f5a5d3b220c11d275c3c88c45d9c306113f50b15ff4"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-2-5",
+    "topicNumber": "2.5",
+    "unitNumber": 2,
+    "title": "Lewis Diagrams",
+    "status": "published",
+    "overview": "Lewis diagrams account for valence electrons as bonding pairs and lone pairs. They are bookkeeping models that help predict connectivity and prepare for shape analysis, rather than literal drawings of electron trajectories.",
+    "keyConcepts": [
+      {
+        "title": "Count electrons",
+        "text": "Add valence electrons from each atom, adding electrons for a negative ionic charge or subtracting for a positive charge. Count the total before arranging bonds."
+      },
+      {
+        "title": "Build the structure",
+        "text": "Choose a plausible skeleton, connect atoms, complete terminal valence shells and place remaining electrons. Hydrogen normally forms one bond; second-period central atoms follow the octet constraint."
+      },
+      {
+        "title": "Check the result",
+        "text": "Every bonding pair and lone pair contributes to the total. Multiple bonds may be needed to satisfy octets, and ionic structures require brackets and an overall charge label."
+      }
+    ],
+    "example": {
+      "prompt": "Construct a Lewis description of CO₂. Carbon supplies four valence electrons and each oxygen supplies six.",
+      "steps": [
+        "The available total is 4 + 6 + 6 = 16 electrons. Start with O–C–O connectivity.",
+        "Two C=O double bonds and two lone pairs on each oxygen use sixteen electrons and give every atom an octet."
+      ],
+      "conclusion": "The resulting connectivity is O=C=O. A double bond contains four shared electrons, while each lone pair contains two."
+    },
+    "misconception": "A drawn line represents an electron pair, not one electron. A Lewis diagram alone is also not a complete three-dimensional shape description.",
+    "apTip": "Recount electrons after adding multiple bonds, and check the total charge before applying a geometry model.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 2.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "16-electron count checked; 8 bonding plus 8 nonbonding electrons satisfy three octets without exceeding carbon’s octet.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            4,
+            6,
+            6
+          ],
+          "expected": 16,
+          "evidence": "16 electrons"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            8,
+            8
+          ],
+          "expected": 16,
+          "evidence": "sixteen electrons"
+        }
+      ],
+      "contentHash": "7aa3789f3416efa67616f05000496ca5004c31cf6e9041fbc3fda57a2bf92e3d"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-2-6",
+    "topicNumber": "2.6",
+    "unitNumber": 2,
+    "title": "Resonance and Formal Charge",
+    "status": "published",
+    "overview": "Resonance represents electron delocalization when more than one valid Lewis arrangement describes the same connected atoms. Formal charge helps evaluate electron bookkeeping and compare candidate structures.",
+    "keyConcepts": [
+      {
+        "title": "Formal charge",
+        "text": "For an atom, formal charge equals valence electrons minus nonbonding electrons minus half the bonding electrons. Sum all atomic formal charges to recover the species’ overall charge."
+      },
+      {
+        "title": "Resonance contributors",
+        "text": "Keep atomic connectivity fixed while rearranging electrons and bond locations. Equivalent contributors indicate a symmetric distribution, not separate molecules switching rapidly between drawings."
+      },
+      {
+        "title": "Relative importance",
+        "text": "Structures with reasonable octets, reduced charge separation and favorable placement of negative formal charge often contribute more. Formal charges are not the same as measured partial charges."
+      }
+    ],
+    "example": {
+      "prompt": "In one nitrate-ion contributor, N is central with one N=O bond and two N–O bonds. Determine the formal charges.",
+      "steps": [
+        "Nitrogen has no lone pairs and eight bonding electrons: 5 − 0 − 4 = +1.",
+        "The double-bonded O has formal charge zero; each single-bonded O has −1. Their sum is +1 + 0 − 1 − 1 = −1."
+      ],
+      "conclusion": "Three equivalent contributors place the double bond on different oxygens. Actual N–O bonding is delocalized, rather than one permanently distinct double bond."
+    },
+    "misconception": "Resonance moves electrons in a model, not atoms between different skeletons. The real ion is not any one contributor alone.",
+    "apTip": "Check the charge sum and connectivity before comparing resonance drawings. Explain equivalent bonds using delocalization rather than rapid structural switching.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 2.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "N and O formal charges recomputed from valence ownership; total -1 and equivalent nitrate connectivity verified.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            1,
+            0,
+            -1,
+            -1
+          ],
+          "expected": -1,
+          "evidence": "= −1"
+        }
+      ],
+      "contentHash": "6740599ea27ebd565eae2facac5512d1ee0e4db3fdc79bfd9076dba8ae3518b8"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-2-7",
+    "topicNumber": "2.7",
+    "unitNumber": 2,
+    "title": "VSEPR and Hybridization",
+    "status": "published",
+    "overview": "VSEPR predicts three-dimensional arrangements by treating bonding regions and lone pairs as electron domains that repel. Molecular geometry describes atom positions, while electron-domain geometry includes lone pairs.",
+    "keyConcepts": [
+      {
+        "title": "Count domains",
+        "text": "Each single, double or triple bond counts as one region of electron density around the central atom. A lone pair counts as another domain."
+      },
+      {
+        "title": "Geometry and polarity",
+        "text": "Use domain arrangement to identify molecular shape, then combine bond dipoles as vectors. Polar bonds can cancel in a symmetric molecule but need not cancel in an asymmetric one."
+      },
+      {
+        "title": "Hybridization model",
+        "text": "Two, three and four domains correspond to the familiar sp, sp² and sp³ descriptions. Hybridization is a bonding model, not an extra electron-counting rule."
+      },
+      {
+        "title": "Multiple bonds",
+        "text": "A double bond contains one σ and one π bond; a triple bond contains one σ and two π bonds."
+      }
+    ],
+    "example": {
+      "prompt": "Use NH₃ to connect its Lewis description, geometry and polarity.",
+      "steps": [
+        "Nitrogen has three N–H bonds and one lone pair: four electron domains with a tetrahedral domain arrangement.",
+        "Considering only atom positions gives a trigonal-pyramidal molecular shape. The lone pair compresses the H–N–H angle below the ideal tetrahedral angle."
+      ],
+      "conclusion": "The bond dipoles do not cancel, so NH₃ is polar; the common hybridization description for nitrogen is sp³."
+    },
+    "misconception": "Four electron domains do not always mean a tetrahedral molecular shape. Lone pairs affect the atom arrangement even though they are not drawn as bonded atoms.",
+    "apTip": "Count domains from a valid Lewis structure, distinguish the two geometry labels and justify polarity using shape as well as bond polarity.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 2.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "NH3 electron-domain count, lone pair, pyramidal shape and noncanceling dipoles checked. Only sp/sp2/sp3 hybridization used; no d-orbital hybridization claim. Sigma/pi multiplicities verified for double and triple bonds.",
+      "checks": [],
+      "contentHash": "4bc14b9fbd07e751cd65bd5de05fffb72a91f12c43c7c5d12ca1fe31eeb9e41c"
+    }
   }
 ]
