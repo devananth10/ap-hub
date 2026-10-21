@@ -1,0 +1,141 @@
+{
+  "topicNumber": "6.4",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "cf558004426686c844869f7256f2b309a5bbcb097ef86c5113636a0a3e16af4d",
+  "scopeReview": "PSO-6.C.1:rank-size, primate-city dominance, gravity-style interaction, Christaller/central-place hierarchy, threshold, range and functional hinterlands. Models remain conditional, boundaries/units clear and definitions separated.",
+  "varietyReview": "Four assessed stimuli:primate population bars, missing ideal rank-size entry, gravity-index inputs and original seven-hexagon/local-service diagram. Checks recompute4:1 dominance, rank-three4 million,1000/500 indices and actual rendered hex geometry/center coverage. Further source and application items test thresholds, range and model limits.",
+  "repetitionReview": "Different hierarchy operations rather than city-name substitutions; all populations/model parameters invented. Hex diagram is a general threshold illustration, explicitly not a strict K=3 reproduction. Numerical tasks independently recomputed; complete option reasoning and varied keys. Difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://transportgeography.org/contents/chapter2/transport-and-spatial-organization/central-places-theory-market-principle/"
+  ],
+  "referenceNote": "Official scope and original academic model exposition checked for conceptual limits. No figure, actual urban-system data, official exam question or proprietary ranking copied. All diagram geometry original; no independent human review or new resource.",
+  "questions": [
+    {
+      "questionId": "hug-6-4-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The largest city has four times the second-largest city’s population and stands well above the simple rank-size expectation.",
+      "independentReview": "Independently checked12/3=4 and rank-two benchmark12/2=6. Chose an unambiguous large disparity, not a contested exact minimum definition of primacy. No welfare or government-function conclusion inferred.",
+      "check": {
+        "type": "hierarchy-primate-pattern"
+      },
+      "questionSha256": "5a21363d97be35c38c90ec6fc6967d097b1a1227b91c2956d535e0e06544e6b2",
+      "stimulusSha256": "35cf8e6f13bad3d4b0e0b69058777bb0f2c65ab31bdfa62bb88679a55d466364"
+    },
+    {
+      "questionId": "hug-6-4-002",
+      "skill": "Data Analysis",
+      "difficulty": "foundational",
+      "correctOption": "4 million",
+      "independentReview": "Independently substituted ranks1–4 into12/r, obtaining12,6,4,3. The missing entry is not already shown as a bar value; no rounding or multiple-correct alternative.",
+      "check": {
+        "type": "hierarchy-rank-size-missing"
+      },
+      "questionSha256": "94135025f03f226262c6f7ef2e7596fbe15c27c2782cee4bb9bba722ea8d8204",
+      "stimulusSha256": "362aaa5443f8111c8af9dadff1d762490cdc926cfccfbbd382fa4c5428791a62"
+    },
+    {
+      "questionId": "hug-6-4-003",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "A’s index is twice B’s despite B’s larger population.",
+      "independentReview": "Independently recomputed1000 versus500 and ratio2. The common-origin population and proportionality constant are fixed/omitted; units and formula explicitly defined. Not an exact real trip forecast.",
+      "check": {
+        "type": "hierarchy-gravity-comparison"
+      },
+      "questionSha256": "7c6a43657a9d67df67ead9425863b1a6e3d87fdd9f230ff2bc782d04e2953fd9",
+      "stimulusSha256": "bde985d5125bdba437cf07e523f091d715438f2810258440cf161d512b0d05e6"
+    },
+    {
+      "questionId": "hug-6-4-004",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "A larger demand threshold can require a wider customer base, supporting fewer higher-order centers.",
+      "independentReview": "Verified seven adjoining original local-area hexagons/dots and one H specialty designation; local grocers exist at all seven. No claim the hospital/repair catchment is an exact Christaller K=3 market principle; this is a general threshold/hierarchy illustration.",
+      "check": {
+        "type": "hierarchy-central-place-hexagons"
+      },
+      "questionSha256": "6a815ab6901caefea1ce7284385acf40e3cbb73cba33cb7c1cf0b6043212d912",
+      "stimulusSha256": "909c5a675c8427598af0d7d0b8a2e87f5338f420091be27b086ddf5fe31d3542"
+    },
+    {
+      "questionId": "hug-6-4-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "The town can meet the bakery’s threshold but not the specialist’s under the stated assumptions.",
+      "independentReview": "Compared5000 to2000/50000 directly. Population is stipulated as the proxy for demand in this model; no guarantee every resident purchases or a real business should open/close.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "c88b2e7d0a13ba67c5268ff540b1f556824ca0de98b24f9ab5f86f5d08fc1073"
+    },
+    {
+      "questionId": "hug-6-4-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Primacy concerns dominance within an urban system; administrative capital status is a separate function that may or may not coincide.",
+      "independentReview": "No actual capital/primacy case or contested2:1 cutoff used. Distinction is conceptual and aligned with urban hierarchy rather than political trivia.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d49ae9785d707e1fb5aa4ef69540bb8a2bc123ec6d513f8adc2a16f19df0ff9d"
+    },
+    {
+      "questionId": "hug-6-4-007",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "It suggests stronger interaction under the model’s assumptions, but actual flows require data and may differ because of omitted factors.",
+      "independentReview": "Distinguished a relative model result from measured flows, independent of the numeric comparison item. No universal distance exponent asserted for every empirical gravity application.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b87c10a96463cc227d26c2515a3fec32d38ba830e8f548a9aad0bb8269082285"
+    },
+    {
+      "questionId": "hug-6-4-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "The range people are willing to travel for different services.",
+      "independentReview": "Explicitly contrasted range with threshold and avoided assuming Euclidean range guarantees access through every actual network. Fictional preferences, not health travel guidance.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "abad95cd73b765823499b382770a5297fedba7c50fea322ae241aff3ac656c38"
+    },
+    {
+      "questionId": "hug-6-4-009",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "Market areas and interactions may be distorted by access differences, so the ideal geometry needs adjustment.",
+      "independentReview": "Kept multiple competing central places distinct from the one-market vonThünen setup. No exact distorted boundary or actual mountain settlement inferred.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "91c099b3e34612b4cbde3bb0e2e2f0c29b6ae76dfd0749441b238106a6ad7276"
+    },
+    {
+      "questionId": "hug-6-4-010",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "The inventory’s coverage and consistent urban definitions may influence the apparent pattern, especially toward lower ranks.",
+      "independentReview": "Evidence-coverage issue specific to hierarchy testing, not a fabricated national ranking. Does not assert the largest few ranks must change solely because small cities were omitted.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "2fcd9d07f36f1f9c122131979d8819495ad6ba358936eff326685f0c1cc0bb03"
+    },
+    {
+      "questionId": "hug-6-4-011",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Goods, services and customer trips link the center to a surrounding market area, within a wider hierarchy of places.",
+      "independentReview": "Recognized overlapping functional areas without claiming one rigid catchment for every service. Consistent with model limitations and interdependence in PSO-6.C.1.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "6d20b011850304006eb4b90bc617e9a40372e363fc6a8832284d05c334252c56"
+    }
+  ]
+}

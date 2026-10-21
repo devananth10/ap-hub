@@ -1,0 +1,142 @@
+{
+  "topicNumber": "6.3",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "55d9e2ca86a1823f11f122466532bed6696942a905a2b62d0cecd22f8cbf3494",
+  "scopeReview": "PSO-6.B.1–2:world-city coordinating functions, global networks/linkages and city mediation of global processes. Separates economic/cultural functions from population and capital status; examines methods, within-city variation and multiscale transmission.",
+  "varietyReview": "Four assessed stimuli:function-versus-size records, directed coordination network, original near/distant contract map and direct cultural-link evidence table. Checks preserve functions, endpoints, contract contrast and source selection. Further cases address services, institutions, measurement and uneven outcomes.",
+  "repetitionReview": "Different city-network tasks rather than repeating6.2 size classes. Agriculture-specific price shocks are not reused; the transmission case concerns coordination schedules. All scenarios fictional, varied keys and all-option explanations; difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://gawc.lboro.ac.uk/gawc-worlds/the-world-according-to-gawc/",
+    "https://www.lboro.ac.uk/media-centre/press-releases/2024/october/london-new-york-worlds-most-connected-cities/"
+  ],
+  "referenceNote": "Primary GaWC research verified service-network concepts and measurement limits only. No actual classification, proprietary data, third-party graphic or question copied; synthetic indicators are not a claimed real GaWC index. No new resources or independent human review.",
+  "questions": [
+    {
+      "questionId": "hug-6-3-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "A shows stronger evidence of international corporate coordination in these indicators, despite its smaller population.",
+      "independentReview": "Checked4<18 million but120>10 headquarters and150>20 connected foreign offices. Original indicators do not constitute an actual GaWC score or prove every dimension of influence; no real city assigned a fabricated rank.",
+      "check": {
+        "type": "global-cities-functions-versus-size"
+      },
+      "questionSha256": "66252bde090928a8bfbf01cb7bf04ed90f4b9fcc4325f9cd96597c4367912442",
+      "stimulusSha256": "609950d3240fc63ab8ab3bf7715f8955b5a653e6334d2b3ee49ca58db0f0a0ff"
+    },
+    {
+      "questionId": "hug-6-3-002",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "A city can mediate activities elsewhere through financial, informational and organizational links.",
+      "independentReview": "Independently traced three distinct outgoing H links, with finance/service/coordination meanings rather than population movement. No inferred global rank solely from the drawing or a promise that H controls every activity in each destination.",
+      "check": {
+        "type": "global-cities-coordination-network"
+      },
+      "questionSha256": "e99cc69b5bfa0330cddfab7cb28846f218b0362bfe77947158a139ec95e974af",
+      "stimulusSha256": "277eaa289cfd9efc3c0afebc924be0412f1a51f1eaca938ff11542f7649b2535"
+    },
+    {
+      "questionId": "hug-6-3-003",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "Functional city networks need not match physical proximity alone; the map does not isolate why these contract counts differ.",
+      "independentReview": "Checked A20,20 andB35,20 are closer in schematic coordinates thanC80,45; counts3 versus30. Paths explicitly connect correct endpoints. No specific geographic distance or fixed national-border effect inferred.",
+      "check": {
+        "type": "global-cities-network-distance"
+      },
+      "questionSha256": "89815a8247d4b619083df15279b18feb4b328dff6a63426adfba86abf401bacd",
+      "stimulusSha256": "8be32ad59253c721a8ee2d9db64488fedd1a479a84d7efe57b21831c9104e5e8"
+    },
+    {
+      "questionId": "hug-6-3-004",
+      "skill": "Source Analysis",
+      "difficulty": "foundational",
+      "correctOption": "Record C",
+      "independentReview": "Checked onlyC explicitly records an overseas cultural collaborator. The task asks direct evidence rather than claiming global processes consist only of corporate finance or that all other activities are entirely isolated.",
+      "check": {
+        "type": "global-cities-cultural-records"
+      },
+      "questionSha256": "a37b9cb1e41b661c7f6007d9bff7369a9c769c1d93cd8b58c8995e0c84ca3986",
+      "stimulusSha256": "f0dd9f6ba9fb8e1178fe0eee8432ff9c97efed8d0e2ca5b8a03c42b1e4e2e309"
+    },
+    {
+      "questionId": "hug-6-3-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Financing, contracts and organizational decisions can shape operations across a network of places.",
+      "independentReview": "Primary world-city research emphasizes advanced service integration; no actual company, city ranking or universal command relationship asserted.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "2814450acff00483cb2b5032b822639e12e68a9c6d15de7c4db5ba662ce36c49"
+    },
+    {
+      "questionId": "hug-6-3-006",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Capital status describes a political role, but evidence of cross-border functions and connections is needed to evaluate global integration.",
+      "independentReview": "Avoided equating capital, megacity and world city while allowing overlap among those categories. No single proprietary ranking presented as the only definition.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "4e51fc3632bcbc9007b4784b0a2263a3e03351864dc8f07a297b84c9b3c94b40"
+    },
+    {
+      "questionId": "hug-6-3-007",
+      "skill": "Scale Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Greater global integration can coexist with uneven local benefits and burdens.",
+      "independentReview": "No causal rent effect or universal welfare outcome inferred solely from coexistence. The hypothetical concern is distribution across scales, not a real investment recommendation.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "f20758a8721ad4cbfe5803400177c29888406f7feee3f05748d94fff7e7e4033"
+    },
+    {
+      "questionId": "hug-6-3-008",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "They measure different aspects of urban networks, so definitions and methods must be considered before comparison.",
+      "independentReview": "Consistent with GaWC’s explicit service-network focus; no claim that an office-derived measure directly observes all actual flows or is interchangeable with an airport count.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "bda2024e79d309013999ede7cbd37593a8db988bf90623bb7859e3fbb6988929"
+    },
+    {
+      "questionId": "hug-6-3-009",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "City networks can transmit effects across places even without an identical local physical disruption.",
+      "independentReview": "Distinct from agricultural export-price shocks:the hypothetical mechanism is coordination/delivery scheduling in an urban network. No real event or fixed impact magnitude claimed.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "084eeb71db8e4fb3b400c016fe82026689025e91e3586c38a7adad531308183c"
+    },
+    {
+      "questionId": "hug-6-3-010",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Transport access can help, but connectivity, skills, institutions and industry needs interact; an airport alone does not guarantee a top global role.",
+      "independentReview": "A conditional urban development scenario, not a prediction or recommendation about an actual airport. No transport mode is treated as the only possible international link.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "e1d0539d5e8294aae0d6e6545a52e2ea257a6b3737d752d41e84e4ab5323d89d"
+    },
+    {
+      "questionId": "hug-6-3-011",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "By adapting external investment, information and demand through local institutions and networks, which can influence wider outcomes.",
+      "independentReview": "Directly aligned PSO-6.B.2’s mediation idea. Avoided a deterministic external-control model or a claim that local governments can override all global conditions.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "c9ad8059b0a915c6cdd8220380251b818efc27ab25f815b672db06ee6f4fc1e5"
+    }
+  ]
+}

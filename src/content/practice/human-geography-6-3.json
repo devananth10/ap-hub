@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 6,
+  "topicId": "topic-6-3",
+  "questions": [
+    {
+      "id": "hug-6-3-001",
+      "prompt": "Which interpretation best distinguishes a world city’s coordinating functions from population size alone?",
+      "options": [
+        "B necessarily has the stronger global coordinating role because it has more residents.",
+        "A shows stronger evidence of international corporate coordination in these indicators, despite its smaller population.",
+        "Neither city can have global functions unless it exceeds 20 million residents.",
+        "Population and headquarters counts measure exactly the same feature."
+      ],
+      "correctIndex": 1,
+      "explanation": "A has more multinational headquarters and connected overseas offices in the supplied records, while B has more residents. World-city roles concern global command, coordination and service networks rather than a population threshold alone. These selected indicators support a functional comparison, not a complete ranking of every cultural, political or economic role. A: A larger resident population does not automatically establish greater global coordination. B: This uses the functional indicators while keeping the population comparison separate. C: A metacity-size threshold is not a requirement for every global coordinating function. D: One measures residents and the others aspects of business organization and connections."
+    },
+    {
+      "id": "hug-6-3-002",
+      "prompt": "H coordinates finance and service decisions for firms operating in the other cities. What does the diagram best illustrate?",
+      "options": [
+        "Only physical goods can connect cities, so the links have no geographic relevance.",
+        "A headquarters decision can never affect work in another city.",
+        "Every connected city must have the same income and decision-making authority.",
+        "A city can mediate activities elsewhere through financial, informational and organizational links."
+      ],
+      "correctIndex": 3,
+      "explanation": "The supplied links show coordination among different cities rather than a single isolated local economy. Finance, legal services and information can connect production and decisions across space. Their presence does not establish equal power or identical welfare in all nodes, nor does the diagram measure every possible connection. A: Service and information flows are relevant geographic connections. B: The scenario explicitly places coordination at H and operations elsewhere. C: A connection does not imply identical control or economic conditions. D: This follows the stated functions and cross-city links."
+    },
+    {
+      "id": "hug-6-3-003",
+      "prompt": "A is geographically closer to B, but records show more service contracts between A and distant C. What is the most defensible conclusion?",
+      "options": [
+        "Functional city networks need not match physical proximity alone; the map does not isolate why these contract counts differ.",
+        "The farther pair must always have more interaction for every type of activity.",
+        "A and B can have no relationship because their contract count is smaller.",
+        "The national border makes every A–C connection impossible."
+      ],
+      "correctIndex": 0,
+      "explanation": "The map shows 3 contracts between A and nearby B and 30 between A and more distant C. Specialized services, institutions or organizational connections can shape links beyond proximity. This selected pattern is not proof that distance never matters or that the exact cause of the difference has been established. A: This follows the supplied contrast while retaining its causal and scope limits. B: One example cannot establish a universal rule favoring distance. C: Three contracts are still a relationship. D: The depicted cross-border contracts contradict a claim of impossibility."
+    },
+    {
+      "id": "hug-6-3-004",
+      "prompt": "Which record most directly documents a cross-border cultural connection, even without information about multinational headquarters?",
+      "options": [
+        "Record A",
+        "Record B",
+        "Record C",
+        "Record D"
+      ],
+      "correctIndex": 2,
+      "explanation": "C explicitly links producers in one city with venues in another country, documenting a cultural network across borders. The other records describe local activities without a specified foreign link. This does not prove those local activities have no indirect global connections; it identifies the strongest direct evidence in the supplied records. A: Trips within one city do not explicitly document a cross-border cultural link. B: Local park visits do not supply the required foreign connection. C: The collaboration connects cultural production and performance in different countries. D: A block’s refuse collection is a local service record, not the stated cultural connection."
+    },
+    {
+      "id": "hug-6-3-005",
+      "prompt": "Why can a city with a major international financial and legal-services cluster influence production occurring far away?",
+      "options": [
+        "It must physically contain every factory whose products enter its banks.",
+        "Its population must be greater than every manufacturing city’s population.",
+        "Only the country’s capital can influence firms elsewhere.",
+        "Financing, contracts and organizational decisions can shape operations across a network of places."
+      ],
+      "correctIndex": 3,
+      "explanation": "Control and coordination functions can be geographically separated from production. Credit, contracts and corporate decisions can connect service centers with factories, suppliers and consumers elsewhere. This does not mean a financial center has unlimited control or that every producer lacks agency. A: Financial and legal coordination can occur away from production sites. B: Relative resident counts do not determine every organizational relationship. C: Administrative capital status is not required for such functions. D: This identifies the network mechanisms rather than equating influence with local factory count."
+    },
+    {
+      "id": "hug-6-3-006",
+      "prompt": "A report calls a city global solely because it is the national capital. What is the strongest critique?",
+      "options": [
+        "Capitals can never have international functions.",
+        "Capital status describes a political role, but evidence of cross-border functions and connections is needed to evaluate global integration.",
+        "Every capital automatically has the same international network position.",
+        "Political boundaries and business connections are identical measurements."
+      ],
+      "correctIndex": 1,
+      "explanation": "A capital may be globally connected, but its administrative title alone does not establish the range or strength of international links. Political functions, corporate services, cultural networks, transport and other connections can be investigated separately. Global integration should be supported by relevant functional evidence. A: The critique should not exclude capitals that do have extensive international links. B: This distinguishes an administrative label from the evidence needed for the claim. C: Cities with the same political title can differ greatly in connections. D: Boundaries locate jurisdictions rather than measure all flows."
+    },
+    {
+      "id": "hug-6-3-007",
+      "prompt": "Foreign investment expands a city’s international business district while some neighborhoods face rising housing costs. Which statement best matches the scale of analysis?",
+      "options": [
+        "Greater global integration can coexist with uneven local benefits and burdens.",
+        "Every resident must receive an identical income gain.",
+        "Housing outcomes cannot be connected with any economic change.",
+        "One neighborhood’s experience proves all global investment has the same effect everywhere."
+      ],
+      "correctIndex": 0,
+      "explanation": "City-level connections and neighborhood-level experiences are related but distinct. International activity can bring jobs and investment while effects on income, housing and access differ among groups and locations. Evaluating these outcomes requires local evidence rather than a universal benefit or harm claim. A: This allows multiple outcomes and differences within the city. B: An aggregate expansion does not establish identical individual gains. C: Economic change can be relevant, although causation needs evidence. D: A single case does not establish a universal effect."
+    },
+    {
+      "id": "hug-6-3-008",
+      "prompt": "Two city-connectivity studies use different indicators:one counts selected service-firm offices, while the other measures international passenger flows. Why might their rankings differ?",
+      "options": [
+        "Any difference proves both studies fabricated all their data.",
+        "The two indicators must identify exactly the same functions.",
+        "Population size alone makes every methodological choice irrelevant.",
+        "They measure different aspects of urban networks, so definitions and methods must be considered before comparison."
+      ],
+      "correctIndex": 3,
+      "explanation": "Service-office integration and passenger traffic describe different connections. Each measure can be useful for a specific question without capturing every dimension of a city’s role. Comparing rankings requires attention to coverage, dates and methods, rather than assuming one label is a complete description. A: Different measures can yield different results without fabrication. B: Business organization and passenger movement are not identical. C: The research question and indicator remain important. D: This identifies the relevant measurement distinction."
+    },
+    {
+      "id": "hug-6-3-009",
+      "prompt": "A disruption at an international coordinating center changes delivery schedules in several distant cities. What does this illustrate?",
+      "options": [
+        "Only the original center can experience any consequence.",
+        "National borders eliminate every transmission of organizational change.",
+        "City networks can transmit effects across places even without an identical local physical disruption.",
+        "Every connected city must lose the same number of jobs."
+      ],
+      "correctIndex": 2,
+      "explanation": "Organizational connections can carry consequences through production and service networks. A schedule change at one center can affect distant operations, although impacts depend on alternatives, inventories, contracts and local responses. The scenario does not establish identical employment or welfare changes everywhere. A: The stated links create possible effects elsewhere. B: Cross-border organizations can connect schedules and decisions. C: This identifies a network transmission rather than requiring the same local hazard. D: No job-loss counts or equal exposures are supplied."
+    },
+    {
+      "id": "hug-6-3-010",
+      "prompt": "A city invests in an international airport but lacks the specialized services needed by a target industry. Which conclusion is most defensible?",
+      "options": [
+        "Transport access can help, but connectivity, skills, institutions and industry needs interact; an airport alone does not guarantee a top global role.",
+        "Building an airport automatically makes the city the world’s leading financial center.",
+        "Skills and institutions can never influence urban functions.",
+        "International links are possible only through air passenger travel."
+      ],
+      "correctIndex": 0,
+      "explanation": "Global connections involve multiple infrastructures and capabilities. An airport can improve access, while service expertise, digital networks, institutions and business relationships affect particular activities. Investment in one asset is not a guarantee of the same network position for every city. A: This recognizes complementarity and the stated capability gap. B: A transport asset alone does not establish global leadership in another function. C: The target industry’s needs can make those factors relevant. D: Goods, information, finance and organizational links use several channels."
+    },
+    {
+      "id": "hug-6-3-011",
+      "prompt": "How can a globally connected city mediate rather than merely receive external economic processes?",
+      "options": [
+        "By having no firms, institutions or local policy responses.",
+        "By adapting external investment, information and demand through local institutions and networks, which can influence wider outcomes.",
+        "By making every external process occur identically in all cities.",
+        "By replacing all connections with complete isolation."
+      ],
+      "correctIndex": 1,
+      "explanation": "Cities can interpret, organize and redirect flows through firms, government, labor, infrastructure and local institutions. Their responses can shape how globalization operates rather than treating the city as a passive container. Outcomes vary with local capabilities and relationships, without implying complete independence from external pressures. A: The absence of all mediating institutions would not explain active coordination. B: This identifies mechanisms through which local and wider processes interact. C: Local differences mean outcomes need not be identical. D: Isolation removes the network relationship described by the question."
+    }
+  ]
+}

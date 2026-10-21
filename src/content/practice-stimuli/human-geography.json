@@ -10926,5 +10926,589 @@
         ]
       }
     ]
+  },
+  "hug-6-3-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Population and selected international business functions",
+    "description": "Hypothetical city records. A:4 million residents,120 multinational headquarters,150 connected overseas offices. B:18 million residents,10 headquarters,20 connected offices. Indicators are illustrative, not an official ranking formula.",
+    "caption": "Original synthetic comparison. Corporate functions, network integration and population are different dimensions; headquarters counts alone are not a complete measure of urban importance.",
+    "headers": [
+      "City",
+      "Residents (million)",
+      "Headquarters",
+      "Foreign offices"
+    ],
+    "rows": [
+      [
+        "A",
+        "4",
+        "120",
+        "150"
+      ],
+      [
+        "B",
+        "18",
+        "10",
+        "20"
+      ]
+    ]
+  },
+  "hug-6-3-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "model",
+    "title": "A city coordinating activities in other cities",
+    "description": "Hypothetical cities in different countries. H coordinates financing, legal services and production information with A,B,C. Arrows show the supplied coordination links, not measured worker migration or equality of power.",
+    "caption": "Original network schematic. Organizational and service connections can join distant cities. The graph is a selected example, not a full world-city hierarchy or quantified flow model.",
+    "assumptions": "Links identify functions in the field records; unshown links may exist and geometric line length is not distance.",
+    "nodes": [
+      {
+        "label": "H",
+        "x": 50,
+        "y": 30,
+        "labelPosition": "below"
+      },
+      {
+        "label": "A",
+        "x": 15,
+        "y": 10,
+        "labelPosition": "left"
+      },
+      {
+        "label": "B",
+        "x": 15,
+        "y": 50,
+        "labelPosition": "left"
+      },
+      {
+        "label": "C",
+        "x": 85,
+        "y": 30,
+        "labelPosition": "right"
+      }
+    ],
+    "edges": [
+      {
+        "from": "H",
+        "to": "A",
+        "label": "Finance"
+      },
+      {
+        "from": "H",
+        "to": "B",
+        "label": "Services"
+      },
+      {
+        "from": "H",
+        "to": "C",
+        "label": "Coordination"
+      }
+    ]
+  },
+  "hug-6-3-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "flow",
+    "title": "Near and distant service-contract links",
+    "description": "Hypothetical selected contracts:A–B 3 annually, A–C 30. A and B lie in one country and C in another; C is farther from A in the schematic. Arrows indicate the recorded direction of service contracting.",
+    "caption": "Original schematic, not a real geography or complete count of interaction. Contract number does not directly measure financial value, worker flows or the cause of a relationship.",
+    "unitLabel": "Route numbers:annual service contracts",
+    "regions": [
+      {
+        "label": "Country West",
+        "labelPoint": [
+          25,
+          7
+        ],
+        "polygon": [
+          [
+            0,
+            0
+          ],
+          [
+            50,
+            0
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "label": "Country East",
+        "labelPoint": [
+          75,
+          7
+        ],
+        "polygon": [
+          [
+            50,
+            0
+          ],
+          [
+            100,
+            0
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            50,
+            60
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "label": "A",
+        "x": 20,
+        "y": 20
+      },
+      {
+        "label": "B",
+        "x": 35,
+        "y": 20
+      },
+      {
+        "label": "C",
+        "x": 80,
+        "y": 45
+      }
+    ],
+    "paths": [
+      {
+        "label": "3",
+        "value": 3,
+        "points": [
+          [
+            20,
+            20
+          ],
+          [
+            28,
+            20
+          ],
+          [
+            35,
+            20
+          ]
+        ],
+        "arrow": true
+      },
+      {
+        "label": "30",
+        "value": 30,
+        "points": [
+          [
+            20,
+            20
+          ],
+          [
+            50,
+            35
+          ],
+          [
+            80,
+            45
+          ]
+        ],
+        "arrow": true
+      }
+    ]
+  },
+  "hug-6-3-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Four observations of urban activities",
+    "description": "Hypothetical field records for one city. The task is to identify an explicitly recorded cross-border cultural connection rather than infer it from population or headquarters counts.",
+    "caption": "Original invented source notes. A local record may have wider context that is not shown; judge what each observation directly establishes.",
+    "headers": [
+      "Record",
+      "Observed activity"
+    ],
+    "rows": [
+      [
+        "A",
+        "Bus trips between neighborhoods in the same city"
+      ],
+      [
+        "B",
+        "Visits to a neighborhood park"
+      ],
+      [
+        "C",
+        "City producers collaborate with performance venues in another country"
+      ],
+      [
+        "D",
+        "Refuse collection serving one residential block"
+      ]
+    ]
+  },
+  "hug-6-4-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Populations in one hypothetical urban hierarchy",
+    "description": "Hypothetical same-year urban agglomerations using comparable boundaries. Ranked populations are 12,3,2,1 million. The largest is four times the second-largest.",
+    "caption": "Original synthetic population distribution. Use the simple rank-size benchmark P(r)=P(1)/r for comparison; the chart does not identify the causes of the observed hierarchy.",
+    "unitLabel": "Million residents",
+    "categories": [
+      "Rank 1",
+      "Rank 2",
+      "Rank 3",
+      "Rank 4"
+    ],
+    "series": [
+      {
+        "label": "Observed population",
+        "values": [
+          12,
+          3,
+          2,
+          1
+        ]
+      }
+    ],
+    "max": 16
+  },
+  "hug-6-4-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "An ideal rank-size model with one missing value",
+    "description": "Hypothetical model hierarchy with largest city 12 million. Rank two is 6 million, rank three is missing, and rank four is 3 million. Apply P(r)=P(1)/r, with consistent population units.",
+    "caption": "Original model exercise, not an observed country. Rank is an ordering number, not a distance or administrative level.",
+    "headers": [
+      "Rank",
+      "Population (millions)"
+    ],
+    "rows": [
+      [
+        "1",
+        "12"
+      ],
+      [
+        "2",
+        "6"
+      ],
+      [
+        "3",
+        "?"
+      ],
+      [
+        "4",
+        "3"
+      ]
+    ]
+  },
+  "hug-6-4-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Destination size and distance from one origin",
+    "description": "Hypothetical destinations. A has 100,000 residents at 10 km; B has 200,000 at 20 km. For this exercise compare P(destination)/distance², holding origin size and all other model terms fixed.",
+    "caption": "Original gravity-style index exercise. Distance is in the same unit for both routes. The index is not an observed number of trips and does not include every influence on interaction.",
+    "headers": [
+      "Destination",
+      "Residents",
+      "Distance (km)"
+    ],
+    "rows": [
+      [
+        "A",
+        "100000",
+        "10"
+      ],
+      [
+        "B",
+        "200000",
+        "20"
+      ]
+    ]
+  },
+  "hug-6-4-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "dot",
+    "title": "Local markets and one higher-order service center",
+    "description": "Hypothetical uniform region with seven local market areas. Each center, H and A–F, has a grocer. H also has a specialty service requiring more customers than one local area supplies. Hexagons are an idealized coverage pattern, not real boundaries.",
+    "caption": "Original central-place-style schematic. Higher-order demand draws across local areas; this does not assign an exact historical K-order or universal service geography. Dots locate centers, not resident counts.",
+    "unitLabel": "Each dot:local grocer. H:also a specialty service.",
+    "regions": [
+      {
+        "label": "H",
+        "labelPoint": [
+          50,
+          25.5
+        ],
+        "polygon": [
+          [
+            60,
+            30
+          ],
+          [
+            55,
+            39.97241374054808
+          ],
+          [
+            45,
+            39.97241374054808
+          ],
+          [
+            40,
+            30
+          ],
+          [
+            45,
+            20.027586259451923
+          ],
+          [
+            55,
+            20.027586259451923
+          ]
+        ]
+      },
+      {
+        "label": "A",
+        "labelPoint": [
+          65,
+          15.527586259451923
+        ],
+        "polygon": [
+          [
+            75,
+            20.027586259451923
+          ],
+          [
+            70,
+            30
+          ],
+          [
+            60,
+            30
+          ],
+          [
+            55,
+            20.027586259451923
+          ],
+          [
+            60,
+            10.055172518903843
+          ],
+          [
+            70,
+            10.055172518903843
+          ]
+        ]
+      },
+      {
+        "label": "B",
+        "labelPoint": [
+          65,
+          35.47241374054808
+        ],
+        "polygon": [
+          [
+            75,
+            39.97241374054808
+          ],
+          [
+            70,
+            49.944827481096155
+          ],
+          [
+            60,
+            49.944827481096155
+          ],
+          [
+            55,
+            39.97241374054808
+          ],
+          [
+            60,
+            30
+          ],
+          [
+            70,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "C",
+        "labelPoint": [
+          50,
+          45.444827481096155
+        ],
+        "polygon": [
+          [
+            60,
+            49.944827481096155
+          ],
+          [
+            55,
+            59.91724122164423
+          ],
+          [
+            45,
+            59.91724122164423
+          ],
+          [
+            40,
+            49.944827481096155
+          ],
+          [
+            45,
+            39.97241374054808
+          ],
+          [
+            55,
+            39.97241374054808
+          ]
+        ]
+      },
+      {
+        "label": "D",
+        "labelPoint": [
+          35,
+          35.47241374054808
+        ],
+        "polygon": [
+          [
+            45,
+            39.97241374054808
+          ],
+          [
+            40,
+            49.944827481096155
+          ],
+          [
+            30,
+            49.944827481096155
+          ],
+          [
+            25,
+            39.97241374054808
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            40,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "E",
+        "labelPoint": [
+          35,
+          15.527586259451923
+        ],
+        "polygon": [
+          [
+            45,
+            20.027586259451923
+          ],
+          [
+            40,
+            30
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            25,
+            20.027586259451923
+          ],
+          [
+            30,
+            10.055172518903843
+          ],
+          [
+            40,
+            10.055172518903843
+          ]
+        ]
+      },
+      {
+        "label": "F",
+        "labelPoint": [
+          50,
+          5.5551725189038414
+        ],
+        "polygon": [
+          [
+            60,
+            10.055172518903841
+          ],
+          [
+            55,
+            20.027586259451923
+          ],
+          [
+            45,
+            20.027586259451923
+          ],
+          [
+            40,
+            10.055172518903841
+          ],
+          [
+            45,
+            0.08275877835576217
+          ],
+          [
+            55,
+            0.08275877835576217
+          ]
+        ]
+      }
+    ],
+    "dots": [
+      {
+        "x": 50,
+        "y": 30
+      },
+      {
+        "x": 65,
+        "y": 20.027586259451923
+      },
+      {
+        "x": 65,
+        "y": 39.97241374054808
+      },
+      {
+        "x": 50,
+        "y": 49.944827481096155
+      },
+      {
+        "x": 35,
+        "y": 39.97241374054808
+      },
+      {
+        "x": 35,
+        "y": 20.027586259451923
+      },
+      {
+        "x": 50,
+        "y": 10.055172518903841
+      }
+    ]
   }
 }

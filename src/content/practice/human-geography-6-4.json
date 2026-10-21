@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 6,
+  "topicId": "topic-6-4",
+  "questions": [
+    {
+      "id": "hug-6-4-001",
+      "prompt": "Compared with an ideal rank-size pattern, which feature most clearly suggests a strongly primate city system in these data?",
+      "options": [
+        "The smallest city is larger than the largest city.",
+        "All four cities have equal populations.",
+        "The largest city is exactly twice the second-largest, as required by this dataset.",
+        "The largest city has four times the second-largest city’s population and stands well above the simple rank-size expectation."
+      ],
+      "correctIndex": 3,
+      "explanation": "The largest city has 12 million residents versus 3 million in the second, a 4:1 ratio. Under the simple rank-size rule with a 12-million largest city, rank two would have 6 million. This pronounced dominance is consistent with primacy. The population pattern alone does not establish its historical cause or political-capital status. A: The bars show the opposite size ordering. B: The populations differ substantially. C: The ratio is 12/3=4 rather than 2. D: This compares the observed dominance with the explicit simple benchmark."
+    },
+    {
+      "id": "hug-6-4-002",
+      "prompt": "Under the ideal rank-size rule P(r)=P(1)/r, which population fills the missing rank-three entry?",
+      "options": [
+        "6 million",
+        "4 million",
+        "3 million",
+        "2 million"
+      ],
+      "correctIndex": 1,
+      "explanation": "Divide the largest population by rank:12/3=4 million. The other supplied entries also fit the ideal rule:12/2=6 and 12/4=3. This is a model calculation, not a requirement that every real country have exactly that distribution or that deviation signals failure. A: Six million is the rank-two prediction. B: Four million is the rank-three prediction. C: Three million is the rank-four prediction. D: Two million would correspond to rank six under this benchmark."
+    },
+    {
+      "id": "hug-6-4-003",
+      "prompt": "For trips from a fixed origin, use the simplified relative interaction index I=P(destination)/d². What comparison follows?",
+      "options": [
+        "A’s index is twice B’s despite B’s larger population.",
+        "B’s index is twice A’s because B has twice the population.",
+        "Both indices are equal because larger size always exactly offsets greater distance.",
+        "A’s index is four times B’s."
+      ],
+      "correctIndex": 0,
+      "explanation": "A’s index is 100000/10²=1000; B’s is 200000/20²=500. Doubling destination population does not fully offset doubling distance when distance is squared. These values are relative indicators under the supplied model, not measured trips or a guarantee that all other social and transport conditions are equal in reality. A: This correctly computes the two indices and their 2:1 ratio. B: It uses population alone and omits the larger squared-distance denominator. C: A doubled distance multiplies that denominator by four, not two. D: Four is the denominator change alone, before B’s doubled population is included."
+    },
+    {
+      "id": "hug-6-4-004",
+      "prompt": "Each local center supports a grocer, while the specialty service at H requires customers from several local market areas. Which central-place concept best explains why that service is less common?",
+      "options": [
+        "Its threshold must be zero because it is specialized.",
+        "It can survive without any demand because H is central on the page.",
+        "A larger demand threshold can require a wider customer base, supporting fewer higher-order centers.",
+        "Every small center must offer every specialized service under all conditions."
+      ],
+      "correctIndex": 2,
+      "explanation": "A threshold is the minimum demand needed to sustain a service. A specialized activity with a larger required customer base may be supported at fewer centers drawing from several local areas. The diagram is an idealized hierarchy illustration, not proof that actual markets form exact hexagons or that one fixed service hierarchy fits every region. A: Specialization does not imply no minimum demand requirement. B: A drawn location does not create customers or viability. C: This connects the stated larger demand requirement with fewer service locations. D: Higher-order services need not be viable at each small local center."
+    },
+    {
+      "id": "hug-6-4-005",
+      "prompt": "A specialist instrument-repair shop needs a customer base of 50,000 under a simplified model, while a bakery needs 2000. A town of 5000 has no outside customers in the exercise. What follows?",
+      "options": [
+        "Both necessarily meet their stated demand thresholds.",
+        "The town can meet the bakery’s threshold but not the specialist’s under the stated assumptions.",
+        "The town meets the specialist’s threshold because rare services require fewer customers.",
+        "Population thresholds determine every business outcome without considering any other condition."
+      ],
+      "correctIndex": 1,
+      "explanation": "Five thousand exceeds 2000 but is below 50,000. Within the simplified no-hinterland assumption, the bakery has a sufficient population base and the specialist does not. Actual viability also depends on purchasing behavior, prices and costs; a larger catchment or external customers could change the result. A: The specialist’s stated threshold exceeds the town’s base. B: This correctly applies both thresholds while limiting the conclusion to the model. C: The supplied specialist threshold is larger, not smaller. D: The model isolates one requirement rather than every determinant of real viability."
+    },
+    {
+      "id": "hug-6-4-006",
+      "prompt": "Why does a highly dominant primate city not automatically have to be the political capital?",
+      "options": [
+        "Population dominance is defined by the color of an administrative boundary.",
+        "Every capital must be smaller than every other city.",
+        "Primate status means a city has no economic connections.",
+        "Primacy concerns dominance within an urban system; administrative capital status is a separate function that may or may not coincide."
+      ],
+      "correctIndex": 3,
+      "explanation": "A city can dominate population and economic activity without holding the national government. Political and urban-system roles can overlap, but one does not define the other. Relevant comparisons concern the country’s city distribution and functions rather than an assumption that every largest city is a capital. A: Map styling does not define population dominance. B: No such universal capital-size rule applies. C: A dominant city may have extensive connections. D: This separates two classifications while allowing overlap."
+    },
+    {
+      "id": "hug-6-4-007",
+      "prompt": "A gravity-style interaction model produces a larger index for one pair of cities. Which interpretation is most appropriate?",
+      "options": [
+        "It proves exactly that many people travel between the cities each day.",
+        "It removes the need to examine borders, transport services or cultural ties.",
+        "It suggests stronger interaction under the model’s assumptions, but actual flows require data and may differ because of omitted factors.",
+        "It proves the smaller-index pair has no interaction of any kind."
+      ],
+      "correctIndex": 2,
+      "explanation": "Gravity models summarize how size and separation can relate to interaction. Their indices or predictions depend on specification and calibration. Transport networks, institutions, costs and other relationships can alter actual flows, so an uncalibrated index should not be presented as observed trips or universal causation. A: An index without appropriate calibration and units is not a literal daily traveler count. B: Those factors can be relevant omissions. C: This states the model’s conditional explanatory role. D: A smaller positive index does not mean zero connections."
+    },
+    {
+      "id": "hug-6-4-008",
+      "prompt": "Residents will travel up to 40 km for a rare repair service but only 4 km for frequent small grocery purchases in a hypothetical survey. Which concept is being compared?",
+      "options": [
+        "The range people are willing to travel for different services.",
+        "The minimum population needed to sustain each business, directly measured by kilometers.",
+        "The national rank of each city.",
+        "The number of residents in every market area."
+      ],
+      "correctIndex": 0,
+      "explanation": "Range concerns how far customers are willing to travel for a good or service under particular conditions. Threshold concerns the demand needed for viability. The survey provides travel limits, not customer counts, business costs or city ranks; willingness can change with price, alternatives and transport. A: This matches the distance-based evidence. B: Kilometers do not directly measure a minimum population or demand threshold. C: No city-ranking information is supplied. D: Travel limits alone do not count the people within them."
+    },
+    {
+      "id": "hug-6-4-009",
+      "prompt": "A central-place model begins with a uniform plain, evenly distributed demand and similar transport costs in all directions. What should happen when applying it to a region with a mountain barrier?",
+      "options": [
+        "The real mountains must be ignored because a model always overrides observations.",
+        "Every service must disappear on both sides of the mountains.",
+        "The model’s hexagons become real legal borders automatically.",
+        "Market areas and interactions may be distorted by access differences, so the ideal geometry needs adjustment."
+      ],
+      "correctIndex": 3,
+      "explanation": "A barrier can change travel costs and feasible connections, departing from the uniform-access assumptions. Central-place ideas about functions and customer bases can still inform analysis, but exact ideal shapes should not be imposed unchanged. Service locations also reflect history, resources and institutions. A: Observed physical conditions are relevant to evaluating model assumptions. B: Different access does not imply the disappearance of all services. C: An analytical market area is not automatically an administrative jurisdiction. D: This identifies the changed assumption and its possible spatial effect."
+    },
+    {
+      "id": "hug-6-4-010",
+      "prompt": "A study tests a national rank-size relationship but lists only cities above a high reporting threshold. What limitation should be checked?",
+      "options": [
+        "Omitted smaller cities can never affect the observed rank-size distribution.",
+        "The inventory’s coverage and consistent urban definitions may influence the apparent pattern, especially toward lower ranks.",
+        "A reporting cutoff guarantees every unlisted place has zero residents.",
+        "The list’s alphabetical order supplies its population ranks."
+      ],
+      "correctIndex": 1,
+      "explanation": "An urban-system analysis depends on which settlements are included and how their populations are defined. A high cutoff can truncate the lower-rank distribution. Comparable dates, boundaries and complete coverage for the intended range are needed before treating the listed pattern as the entire national system. A: Truncation affects what part of the distribution is observed. B: This identifies the sampling/definition issue relevant to the test. C: Unreported is not the same as uninhabited. D: Population rank is based on population, not spelling."
+    },
+    {
+      "id": "hug-6-4-011",
+      "prompt": "How does central-place reasoning connect a town with its hinterland?",
+      "options": [
+        "Goods, services and customer trips link the center to a surrounding market area, within a wider hierarchy of places.",
+        "Every customer must live inside the town’s municipal boundary.",
+        "The hinterland is defined as land with no economic relationship to the town.",
+        "All surrounding settlements must provide the same rare services as the largest center."
+      ],
+      "correctIndex": 0,
+      "explanation": "A center supplies functions to people in surrounding settlements as well as within its own boundaries. Market areas and service hierarchies describe those relationships. They need not coincide with municipal lines, and different functions can draw different ranges or overlapping catchments. A: This identifies functional connections rather than restricting them to one legal border. B: Customers can travel from outside a municipality. C: The concept concerns an area related to the center. D: Different demand thresholds can support different service levels."
+    }
+  ]
+}

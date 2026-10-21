@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 6.3–6.4
+
+583 original MCQs across53 topics are published, eleven each;212 meaningful stimuli (36.36%) and229 explicit evidence/numerical/geometry checks. Cities/Globalization separates population from coordinating functions, organizational networks, near/far contracting and cultural connections. Size/Distribution independently checks primacy4:1, ideal rank-three4 million, gravity indices1000/500 and seven adjoining central-place hexagons. Geometry is original and verified in rendered pixel scale; it is a general threshold example, not a strict K=3 diagram.
+
+All180 tests, structural/evidence checks, TypeScript, production build, all68 Geography scopes and standard preview checks passed. Both full sessions scored11/11; all eight mobile stimuli inspected. Central-place keyboard zoom200/reset100 and desktop light-mode geometry passed. Existing223 checkpoint question files,204 stimuli and complete approved catalog remain semantically unchanged; student data and preview preserved. Next6.5;15 topics/165 questions remain. Full748 audit and UI/summary phase still pending; no independent human-review or empirical-calibration claim.
+
 ## Human Geography Topics 6.1–6.2
 
 561 original MCQs across51 topics are published, eleven each;204 meaningful stimuli (36.36%) and221 explicit evidence/numerical/geometry checks. Urban Origins distinguishes local site, changing situation, growth/reclassification and urban shares. Cities Across the World assesses comparable size thresholds, peripheral job/residential forms, within-metro redistribution and separated development. All city data and shapes are original/hypothetical; source terminology verified.
