@@ -1,0 +1,142 @@
+{
+  "topicNumber": "6.7",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "806dd71edaae909adf38e363ac1a0676503f961ff165c77448a75ddd3452f73f",
+  "scopeReview": "IMP-6.B.1: location and quality of urban infrastructure, development patterns, politics, social access and environmental burdens. Separates coverage, reliability, capacity, affordability and usable accessibility.",
+  "varietyReview": "Four assessed stimuli: original access choropleth, fixed-inventory job-access table, outage-hours chart and capacity account. Additional applications examine network benefits, corridor burdens, budgeting, industrial reliability and maintenance.",
+  "repetitionReview": "Distinct numerators and reasoning demands: rate gap, changing accessibility gap, quality despite full coverage and capacity versus distribution. Varied keys and all-option explanations; no actual city claims or number-only clones. Difficulty is uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://unhabitat.org/4-urban-basic-services",
+    "https://unhabitat.org/sites/default/files/2024/11/wcr2024_-_full_report.pdf"
+  ],
+  "referenceNote": "Official curriculum and primary UN-Habitat service/access account checked. All question wording, values and geometry are original hypothetical teaching material; no external student resource added and no independent human-review claim.",
+  "questions": [
+    {
+      "questionId": "hug-6-7-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Western households have a 50-percentage-point higher connection rate.",
+      "independentReview": "Recomputed 90 minus 40 = 50 percentage points, not 50% relative growth. Mapped household denominators are explicit; no count, reliability or causal inference is made.",
+      "check": {
+        "type": "infrastructure-water-gap"
+      },
+      "questionSha256": "332165b9a45fddefac4e414a0819d9a384274850be2f48a87aa89e0cef51d9f7",
+      "stimulusSha256": "5bca2216bed76217913759037582d5eb7176c0a50a9afa772b64b70ff725a35c"
+    },
+    {
+      "questionId": "hug-6-7-002",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "It narrowed from 20,000 to 5,000 reachable jobs.",
+      "independentReview": "Independently subtracted B minus A: 40000−20000=20000 and 45000−40000=5000. Fixed inventory isolates the accessibility measure, not causation or individual employment.",
+      "check": {
+        "type": "infrastructure-job-gap"
+      },
+      "questionSha256": "ac021a0e7dbad7948800e247abd89d22d3428a0c4efe132c0338591ce0e6e24b",
+      "stimulusSha256": "e85fcc1fca0ce2d96bddc26b0b724407504b8197b938d1a8868df54863c516ad"
+    },
+    {
+      "questionId": "hug-6-7-003",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "A improved its reliability, while B’s recorded outage hours stayed unchanged.",
+      "independentReview": "Checked series A[12,3], B[4,4], declines 9 and 0 hours. The chart measures average outage hours, not counts of outage events; the options compare hours only.",
+      "check": {
+        "type": "infrastructure-outage-hours"
+      },
+      "questionSha256": "dde4edd9f746f0ed2ce1d9d01c5fc0f30e60c04396f3c4ae25597bffbcba348b",
+      "stimulusSha256": "45965588e5b93b622ebb19b9731b421d35b041694e59e5acfd45d609e3406660"
+    },
+    {
+      "questionId": "hug-6-7-004",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "4 units/day; the location of capacity and households also affects whether service reaches them.",
+      "independentReview": "Verified 10−6=4 capacity units/day. Abstract units avoid real engineering specifications, and both quantities use the same daily metric; no treatment-design or health recommendation.",
+      "check": {
+        "type": "infrastructure-capacity-gap"
+      },
+      "questionSha256": "ca00d4ffccc33ff1fefc9e780e1bcb9c7c9cad8c2e45cf2c5fc73e493c44234d",
+      "stimulusSha256": "279240066492b5fc1e2f3018d46a26a200225d6928aa075601d9df059512032d"
+    },
+    {
+      "questionId": "hug-6-7-005",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "A shorter and more reliable trip can connect residents with more workplaces and services.",
+      "independentReview": "Direct mechanism is changed network accessibility, not a universal economic outcome. No prediction of individual employment or neighborhood income.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "157451c74fc9386f9e2bbb482fb158b863f50a74b759967bf73d35542cad8976"
+    },
+    {
+      "questionId": "hug-6-7-006",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Nearby communities may face barriers, displacement or pollution exposure that a savings map omits.",
+      "independentReview": "Omitted dimensions are conditional, not claims of measured harm in an actual city. Distinguishes regional network benefits from neighborhood consequences.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "2ff15d724c77b1b37690d49fb2e0923b479f98bc1670f3e1dcce56b46bec2476"
+    },
+    {
+      "questionId": "hug-6-7-007",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Infrastructure allocation is a political and social decision informed by several forms of evidence.",
+      "independentReview": "No recommendation about a real budget or household. Independent review checked the distinction between complementary evidence and one deterministic ranking.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "303a2852caea396f583346fdfb72d5f452f390b34c62d2b0ecdfeb40f915415e"
+    },
+    {
+      "questionId": "hug-6-7-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Interruptions can disrupt production and raise costs, with effects varying by activity and backup capacity.",
+      "independentReview": "Does not apply a universal loss estimate or claim one factor fully determines industry location. Infrastructure quality linked to activity-specific development.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "b7b3099c91e65c501b873984ef4205718e52354c400e607eb51869068e7f593f"
+    },
+    {
+      "questionId": "hug-6-7-009",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Travel cost, usable station access and trips possible at relevant times for different resident groups.",
+      "independentReview": "Accessibility concerns are supplied in the scenario, not inferred from location alone. Uses aggregate group measures rather than sensitive individual eligibility decisions.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "3722a98ee2cdf92f77fd28ee6af2547d1286e2bdf878d6b8b3b669a3e5a368c7"
+    },
+    {
+      "questionId": "hug-6-7-010",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Service depends on sustained operation and repair as well as the initial network location.",
+      "independentReview": "Checked coverage-versus-quality distinction and avoided asserting a quantified lifespan, a particular treatment design or a universal budget priority.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "435e9f26b3b9138a7520fe2d5af8507b033d5626ef976dadf0088a75908a7204"
+    },
+    {
+      "questionId": "hug-6-7-011",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "New accessibility can influence land demand, while local rules, housing supply and household resources mediate its effects.",
+      "independentReview": "Conditional mechanism is consistent with official infrastructure scope; no claim that transport alone causes every observed rent change or household outcome.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d404c8b33ab4ff0144fceaba63eec6170208cb984aa8ba453221fbaea5d76d35"
+    }
+  ]
+}

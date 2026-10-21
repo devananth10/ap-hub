@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 6,
+  "topicId": "topic-6-8",
+  "questions": [
+    {
+      "id": "hug-6-8-001",
+      "prompt": "Which comparison best explains why Plan B can support walking even though both plans have the same straight-line separation?",
+      "options": [
+        "Plan A has the shorter walking route because it separates land uses.",
+        "The plans offer identical walking access because their straight-line distances match.",
+        "Plan B removes every need for motorized travel throughout the region.",
+        "Plan B has a walking route one-third as long, illustrating the importance of network connections."
+      ],
+      "correctIndex": 3,
+      "explanation": "The usable walking routes are 900 meters in A and 300 in B, although straight-line separation is 200 in both. The route ratio B/A is 300/900 = one-third. Connections, barriers and crossings affect practical walkability; proximity measured as a straight line alone does not establish that a pedestrian can take a direct, safe route. A: A’s measured walking route is longer, not shorter. B: Equal straight-line distance does not imply equal network distance. C: The local comparison cannot eliminate every regional travel need. D: This correctly compares usable route lengths and identifies connectivity."
+    },
+    {
+      "id": "hug-6-8-002",
+      "prompt": "Which proposed evaluation most appropriately addresses both the aim and a possible limitation of this station-area plan?",
+      "options": [
+        "Count the homes and shops together and conclude affordability is guaranteed.",
+        "Measure transit and walking access alongside housing costs and who can remain or move into the area.",
+        "Measure only highway capacity outside the region because local access is irrelevant.",
+        "Treat the presence of mixed uses as proof that no residents use cars."
+      ],
+      "correctIndex": 1,
+      "explanation": "The plan combines homes, shops and a station, consistent with mixed-use and transit-oriented design. It can support access without guaranteeing affordability, inclusion or travel behavior. Evaluating both access and housing outcomes tests intended benefits and possible distributional limits rather than equating a design label with a successful result. A: A land-use mix does not by itself determine housing prices or inclusion. B: These measures examine accessibility and potential cost or displacement concerns. C: Distant highway capacity alone misses the station-area design’s direct objectives. D: Travel choices also depend on destinations, schedules, cost and individual needs."
+    },
+    {
+      "id": "hug-6-8-003",
+      "prompt": "What happens to total daily vehicle travel in this scenario, despite the lower per-person value?",
+      "options": [
+        "It rises from 1.2 million to 1.6 million vehicle-km/day.",
+        "It falls from 1.2 million to 0.8 million vehicle-km/day.",
+        "It stays at 1.2 million because per-person travel falls.",
+        "It doubles to 2.4 million because population doubles."
+      ],
+      "correctIndex": 0,
+      "explanation": "Total vehicle travel equals population times the per-person daily value. Initially 100,000 × 12 = 1,200,000 vehicle-km/day; later 200,000 × 8 = 1,600,000. The intensity improves but the total rises by 400,000. Evaluating an urban initiative may require both per-person and aggregate measures, rather than claiming either one alone describes every sustainability outcome. A: This correctly combines the population and intensity in each period. B: The later population is 200,000, not 100,000. C: The decline per person is not large enough to offset population doubling. D: That keeps the old 12-km intensity instead of using the later value of 8."
+    },
+    {
+      "id": "hug-6-8-004",
+      "prompt": "Which outcome is consistent with these observations, without concluding that every effect was caused by the design initiative?",
+      "options": [
+        "Walking declined and median rent fell.",
+        "Walking increased but median rent was unchanged.",
+        "Walking increased by 15 percentage points while median monthly rent increased by 200 currency units.",
+        "Walking doubled while median rent increased by 50%."
+      ],
+      "correctIndex": 2,
+      "explanation": "The walking share changes from 20% to 35%, a rise of 15 percentage points, and median rent changes from 800 to 1000, an increase of 200 currency units or 25%. The observations are consistent with improved walking uptake alongside a possible affordability concern, but require income, resident turnover and comparison evidence before establishing household burdens or causality. A: Both supplied indicators increased rather than decreased. B: The rent increased from 800 to 1000. C: These are the correctly stated absolute changes in their respective units. D: Walking rises by 75% relative to its initial share, not 100%; rent rises by 25%, not 50%."
+    },
+    {
+      "id": "hug-6-8-005",
+      "prompt": "A town permits apartments above shops and places daily services near homes. Which design principle is most directly illustrated?",
+      "options": [
+        "A policy requiring each use to occupy a separate distant district.",
+        "A regional export-processing zone focused on foreign assembly.",
+        "A population ranking that determines the town’s national rank.",
+        "Mixed land use intended to bring different daily activities closer together."
+      ],
+      "correctIndex": 3,
+      "explanation": "Mixed land use combines compatible activities such as housing, retail and services within a building or neighborhood. Proximity can support shorter trips and more activity at different times, although street connections, prices and access matter. The principle describes an arrangement of uses rather than a guaranteed travel outcome or a city-population ranking. A: Separating uses into distant districts describes the contrasting arrangement. B: An export-processing designation concerns a different economic function. C: A population ranking does not describe the supplied building-use arrangement. D: This identifies the co-location of everyday activities."
+    },
+    {
+      "id": "hug-6-8-006",
+      "prompt": "Which proposal best fits New Urbanist design principles rather than merely using that label?",
+      "options": [
+        "A walkable, connected neighborhood with a mix of uses and housing forms.",
+        "A single-use housing tract whose only exit is a high-speed road.",
+        "A retail center separated from nearby homes by an uncrossable barrier.",
+        "A requirement that all daily destinations be accessible only by private car."
+      ],
+      "correctIndex": 0,
+      "explanation": "New Urbanist approaches commonly emphasize walkable neighborhoods, connected streets, mixed uses and varied housing forms. A label alone does not establish those features or guarantee affordability and inclusion. The other proposals reduce practical pedestrian connections or impose car dependence, so they do not illustrate the stated design principles. A: This combines the relevant physical-design features. B: One high-speed-road exit does not provide the connected local pedestrian network described. C: An uncrossable barrier blocks the benefit of proximity. D: Exclusive car access conflicts with the walking and access aims."
+    },
+    {
+      "id": "hug-6-8-007",
+      "prompt": "A city restricts outward building in a surrounding greenbelt. Which concern should planners investigate rather than assume away?",
+      "options": [
+        "Protected open space necessarily ceases to exist once growth is limited.",
+        "Development pressure may shift beyond the belt or affect housing costs if other conditions constrain supply.",
+        "The belt changes every household’s employment sector at once.",
+        "A boundary designation alone guarantees the same rent throughout the region."
+      ],
+      "correctIndex": 1,
+      "explanation": "A greenbelt can protect open land and contain some outward development. Its broader consequences depend on enforcement, housing supply inside the boundary and the wider regional market. Leapfrog growth beyond the protected area or higher costs under constrained supply are possible concerns, not inevitable outcomes of every greenbelt. A: Protection is intended to retain open space rather than automatically remove it. B: This identifies conditional regional and affordability concerns requiring evidence. C: An urban boundary does not directly determine each person’s employment sector. D: Housing costs also reflect demand, supply, quality and local institutions."
+    },
+    {
+      "id": "hug-6-8-008",
+      "prompt": "What distinguishes transit-oriented development from placing a large parking lot beside a station with no pedestrian connection?",
+      "options": [
+        "Only the number of parking spaces matters for transit-oriented design.",
+        "A station on a map proves all surrounding destinations are accessible.",
+        "Development is organized to support usable access to transit and nearby activities, including pedestrian connections.",
+        "Transit-oriented development requires a ban on every shop near housing."
+      ],
+      "correctIndex": 2,
+      "explanation": "Transit-oriented development relates land-use intensity and a mix of activities to usable transit access. A nearby station separated by a barrier or without a practical walking connection may not provide that access. Evaluating routes, crossings, service and destinations is more informative than distance or a label alone. A: Parking supply alone does not establish transit-oriented access. B: Actual connections and operating service must also be considered. C: This describes the relationship between development and usable transit. D: Nearby compatible activities commonly support, rather than contradict, this approach."
+    },
+    {
+      "id": "hug-6-8-009",
+      "prompt": "A slow-growth policy limits new building approvals. What evidence best tests whether it is meeting its goals without overlooking distributional effects?",
+      "options": [
+        "Only the number of approvals denied, with no measure of the stated goals.",
+        "A guarantee that all current and prospective residents benefit equally.",
+        "The assumption that development demand disappears at the municipal border.",
+        "Changes in development location, open space, housing availability and costs across the affected region."
+      ],
+      "correctIndex": 3,
+      "explanation": "Restricting approvals is an action, not a complete measure of outcomes. Evaluating a slow-growth initiative requires observing whether development and open-space goals are met and how housing access or costs change. Regional evidence can detect shifted growth outside the municipality, while distributional measures examine who benefits or faces constraints. A: Denied approvals measure implementation but not the full environmental and social result. B: Equal benefit is a claim to test, not evidence. C: Demand and development can cross administrative boundaries. D: These outcomes address both intended effects and possible regional or housing consequences."
+    },
+    {
+      "id": "hug-6-8-010",
+      "prompt": "Why might a redevelopment initiative that improves pedestrian access still face criticism from long-term residents?",
+      "options": [
+        "Rising costs or loss of valued local features may accompany the access improvements.",
+        "Improved access logically prevents any change in housing costs.",
+        "Every resident values the same design features in the same way.",
+        "New sidewalks prove all previous neighborhood institutions have been preserved."
+      ],
+      "correctIndex": 0,
+      "explanation": "Urban initiatives can achieve some goals while raising other concerns. Changes to costs, businesses, buildings or valued local character may affect residents differently even when pedestrian access improves. Criticism therefore need not deny the physical access benefit; it can address a separate dimension of the project or its distribution. A: This recognizes a plausible tradeoff that needs local evidence. B: Walking access does not fix housing costs. C: Preferences, resources and experiences can differ. D: A sidewalk does not document the survival of every institution."
+    },
+    {
+      "id": "hug-6-8-011",
+      "prompt": "Two neighborhoods adopt the same mixed-use zoning, but only one develops affordable homes near frequent transit. What follows?",
+      "options": [
+        "The zoning name alone determines identical built and social outcomes.",
+        "Design rules interact with investment, housing policy, markets and transport service.",
+        "Mixed-use zoning is a measure of national population growth.",
+        "A different outcome proves that neither neighborhood contains mixed uses."
+      ],
+      "correctIndex": 1,
+      "explanation": "A zoning provision allows or regulates uses but does not alone finance buildings, set all prices or operate transit. Investment, institutions, market conditions and transport decisions affect implementation. Comparing these factors helps explain different outcomes without abandoning design analysis or assuming a common label guarantees identical results. A: The observed difference itself shows that the shared name is insufficient. B: This recognizes mechanisms shaping implementation and social access. C: Zoning concerns permitted land uses, not national demographic growth. D: Outcome differences do not establish the absence of the permitted use mix."
+    }
+  ]
+}

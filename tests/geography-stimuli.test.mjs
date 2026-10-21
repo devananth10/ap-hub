@@ -125,6 +125,18 @@ test('density checks retain dwelling units, unchanged infill edge, housing total
   const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
  }
 });
+test('infrastructure evidence rejects altered access rates, travel thresholds, reliability hours and capacity totals',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-6-7.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-6-7.json','utf8'));
+ for(const [i,change] of [[0,s=>s.regions[1].value=90],[1,s=>s.rows[1][2]='40000'],[2,s=>s.series[0].values[1]=12],[3,s=>s.rows[0][1]='10']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
+test('sustainable-design evidence retains route denominators, station access, travel totals and rent changes',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-6-8.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-6-8.json','utf8'));
+ for(const [i,change] of [[0,s=>s.rows[1][2]='900'],[1,s=>s.points[0].x=95],[2,s=>s.rows[1][1]='100000'],[3,s=>s.rows[1][2]='800']]){
+  const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));
+ }
+});
 const base={title:'TEST ONLY',description:'Original hypothetical test data; not a published question.',caption:'TEST ONLY',hypothetical:true,attribution:'Original PrepAtlas schematic and synthetic data'};
 const chart={...base,kind:'chart',unitLabel:'People (thousands)',categories:['A','B'],series:[{label:'Year 1',values:[25,50]},{label:'Year 2',values:[50,75]}],max:100};
 const pyramid={...base,kind:'pyramid',unitLabel:'People (thousands)',max:100,cohorts:[{label:'0–14',ageStart:0,ageEnd:14,male:50,female:50},{label:'15–64',ageStart:15,ageEnd:64,male:75,female:75},{label:'65+',ageStart:65,ageEnd:null,male:25,female:25}]};

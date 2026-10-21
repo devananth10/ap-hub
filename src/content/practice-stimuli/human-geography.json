@@ -12636,5 +12636,310 @@
         "2"
       ]
     ]
+  },
+  "hug-6-7-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "choropleth",
+    "title": "Households connected to the water network",
+    "description": "Hypothetical neighboring districts: West 90% and East 40% of households have a water-network connection. The map records connections, not service reliability or water consumption.",
+    "caption": "Original synthetic access rates. District sizes on this schematic do not represent household totals. Investigating unequal access also requires investment histories and local evidence.",
+    "unitLabel": "Connected households (%)",
+    "bins": [
+      {
+        "min": 0,
+        "max": 50,
+        "label": "0–49%"
+      },
+      {
+        "min": 50,
+        "max": 101,
+        "label": "50–100%"
+      }
+    ],
+    "regions": [
+      {
+        "label": "West",
+        "value": 90,
+        "polygon": [
+          [
+            5,
+            5
+          ],
+          [
+            50,
+            5
+          ],
+          [
+            50,
+            55
+          ],
+          [
+            5,
+            55
+          ]
+        ]
+      },
+      {
+        "label": "East",
+        "value": 40,
+        "polygon": [
+          [
+            50,
+            5
+          ],
+          [
+            95,
+            5
+          ],
+          [
+            95,
+            55
+          ],
+          [
+            50,
+            55
+          ]
+        ]
+      }
+    ]
+  },
+  "hug-6-7-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Jobs reachable within a transit travel-time threshold",
+    "description": "Hypothetical residents of districts A and B. Each count is jobs reachable within 45 minutes by transit. The same regional job inventory and counting method are used before and after a network change.",
+    "caption": "Original accessibility counts, not employment gains. Schedules, transfers and routes can change reachable opportunities even when the job inventory is held constant.",
+    "headers": [
+      "District",
+      "Before: reachable jobs",
+      "After: reachable jobs"
+    ],
+    "rows": [
+      [
+        "A",
+        "20000",
+        "40000"
+      ],
+      [
+        "B",
+        "40000",
+        "45000"
+      ]
+    ]
+  },
+  "hug-6-7-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Monthly service interruptions despite full coverage",
+    "description": "Hypothetical water-network districts. All households are connected in both years. Values are average monthly hours without service, measured with the same method: A 12 then 3, B 4 then 4.",
+    "caption": "Original quality-of-service data. Fewer outage hours represent greater reliability on this measure; no cause, outage-event count or water-quality result is specified.",
+    "unitLabel": "Outage hours/month",
+    "categories": [
+      "Year 1",
+      "Year 2"
+    ],
+    "series": [
+      {
+        "label": "District A",
+        "values": [
+          12,
+          3
+        ]
+      },
+      {
+        "label": "District B",
+        "values": [
+          4,
+          4
+        ]
+      }
+    ],
+    "max": 16
+  },
+  "hug-6-7-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "A citywide service-capacity account",
+    "description": "Hypothetical planning account using the same abstract daily capacity unit for both entries. Existing capacity is usable under the scenario; projected need is for the same service and date.",
+    "caption": "Original simplified comparison. Capacity totals do not locate network branches, determine household connection prices or provide engineering design guidance.",
+    "headers": [
+      "Measure",
+      "Capacity units/day"
+    ],
+    "rows": [
+      [
+        "Existing usable capacity",
+        "6"
+      ],
+      [
+        "Projected need",
+        "10"
+      ]
+    ]
+  },
+  "hug-6-8-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Straight-line proximity and usable walking routes",
+    "description": "Hypothetical neighborhood plans. The same home-to-shop comparison is measured in each. Route length follows a legal pedestrian connection, including required crossings; straight-line distance ignores the street network.",
+    "caption": "Original design comparison. A short usable route can support walkability, but surface conditions, crossings, accessibility and safety also need evaluation.",
+    "headers": [
+      "Plan",
+      "Straight line (m)",
+      "Walking route (m)"
+    ],
+    "rows": [
+      [
+        "A",
+        "200",
+        "900"
+      ],
+      [
+        "B",
+        "200",
+        "300"
+      ]
+    ]
+  },
+  "hug-6-8-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "A mixed-use station-area proposal",
+    "description": "Hypothetical plan with homes west of a station and shops east of it. A continuous pedestrian route links the three. All parcels shown are within the proposed station-area district; no real city or measured travel-time radius is represented.",
+    "caption": "Original schematic of land-use and access relationships. Physical design does not establish prices, accessibility for every user, service frequency or actual travel behavior.",
+    "unitLabel": "Homes + shops + pedestrian access to transit",
+    "regions": [
+      {
+        "label": "Homes",
+        "polygon": [
+          [
+            8,
+            15
+          ],
+          [
+            35,
+            15
+          ],
+          [
+            35,
+            45
+          ],
+          [
+            8,
+            45
+          ]
+        ]
+      },
+      {
+        "label": "Shops",
+        "polygon": [
+          [
+            65,
+            15
+          ],
+          [
+            92,
+            15
+          ],
+          [
+            92,
+            45
+          ],
+          [
+            65,
+            45
+          ]
+        ]
+      }
+    ],
+    "points": [
+      {
+        "x": 50,
+        "y": 30,
+        "label": "Station",
+        "labelAlign": "middle"
+      }
+    ],
+    "paths": [
+      {
+        "label": "Walk",
+        "points": [
+          [
+            22,
+            37
+          ],
+          [
+            38,
+            37
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            78,
+            37
+          ]
+        ]
+      }
+    ]
+  },
+  "hug-6-8-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Travel intensity and a changing city population",
+    "description": "Hypothetical city in two periods. Vehicle travel includes all motor-vehicle kilometers allocated per resident using the same accounting method. Values are not emissions measurements.",
+    "caption": "Original planning indicators. Per-person and total outcomes may move in different directions when population changes; the figures alone do not identify a policy’s causal effect.",
+    "headers": [
+      "Period",
+      "Residents",
+      "Vehicle-km/person/day"
+    ],
+    "rows": [
+      [
+        "Initial",
+        "100000",
+        "12"
+      ],
+      [
+        "Later",
+        "200000",
+        "8"
+      ]
+    ]
+  },
+  "hug-6-8-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Two indicators following a neighborhood redesign",
+    "description": "Hypothetical comparable neighborhood observations before and after redesign: walking share among surveyed local trips and median monthly asking rent. No control neighborhood or household-income observations are provided.",
+    "caption": "Original synthetic indicators. A median asking rent is not every existing tenant’s rent, and a before/after association does not isolate the cause of a change.",
+    "headers": [
+      "Measure",
+      "Before",
+      "After"
+    ],
+    "rows": [
+      [
+        "Walking share (%)",
+        "20",
+        "35"
+      ],
+      [
+        "Median asking rent (currency/month)",
+        "800",
+        "1000"
+      ]
+    ]
   }
 }

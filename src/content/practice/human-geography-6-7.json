@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 6,
+  "topicId": "topic-6-7",
+  "questions": [
+    {
+      "id": "hug-6-7-001",
+      "prompt": "Which conclusion about access is supported by the map, without assuming that network connections guarantee reliable service?",
+      "options": [
+        "Eastern households are more likely to have a network connection.",
+        "Western households have a 50-percentage-point higher connection rate.",
+        "Western households receive twice as many hours of water each day.",
+        "Eastern households necessarily consume more water per person."
+      ],
+      "correctIndex": 1,
+      "explanation": "The mapped measure is the percentage of households connected to the water network: 90% in West and 40% in East. Subtracting gives a 50-percentage-point gap. Connection indicates one dimension of infrastructure access, but does not measure service hours, water quality, consumption, costs or the causes of the difference. A: East has the lower connection percentage, not the higher one. B: This correctly compares the same measure across the two districts. C: No daily service-hour observations are supplied. D: Neither consumption nor population per household is shown."
+    },
+    {
+      "id": "hug-6-7-002",
+      "prompt": "Using the same job inventory in both periods, how did the accessibility gap between B and A change?",
+      "options": [
+        "It widened from 20,000 to 25,000 reachable jobs.",
+        "It stayed at 20,000 jobs because the inventory was fixed.",
+        "It narrowed from 20,000 to 5,000 reachable jobs.",
+        "It reversed, leaving A with 5,000 more reachable jobs."
+      ],
+      "correctIndex": 2,
+      "explanation": "Initially B residents could reach 40,000 jobs and A residents 20,000, a gap of 20,000. Later the values are 45,000 and 40,000, so the gap is 5,000. A improved more, but B still has the higher count. Reachable opportunities under a travel-time threshold are not jobs actually obtained or a guarantee of equal outcomes. A: The later difference is 45,000 minus 40,000, not 25,000. B: Holding the inventory fixed does not hold travel times or access fixed. C: These differences use the stated threshold and comparable inventory. D: B remains ahead by 5,000 jobs; the sign has not reversed."
+    },
+    {
+      "id": "hug-6-7-003",
+      "prompt": "Which interpretation best distinguishes infrastructure quality from the mere presence of a connection?",
+      "options": [
+        "Average monthly outage hours increased in both districts.",
+        "Connections in A were all removed in Year 2.",
+        "The districts had identical reliability in Year 1.",
+        "A improved its reliability, while B’s recorded outage hours stayed unchanged."
+      ],
+      "correctIndex": 3,
+      "explanation": "Both districts remain fully connected in both years, but average monthly outage hours differ. A falls from 12 to 3 hours; B remains at 4. Thus connection coverage alone would miss a change in service quality. These observations do not by themselves identify the repair policy, investment decision or environmental event responsible. A: A decreases and B is unchanged, so neither shows the claimed general increase. B: Connection coverage is explicitly unchanged at 100%. C: A had 12 outage hours compared with B’s 4 in the first year. D: This correctly reads the direction of the two reliability measures."
+    },
+    {
+      "id": "hug-6-7-004",
+      "prompt": "On this stated capacity measure, what is the projected shortfall, and which additional geographic issue remains relevant?",
+      "options": [
+        "4 units/day; the location of capacity and households also affects whether service reaches them.",
+        "4 units/day; adding that amount proves every household will be connected.",
+        "6 units/day; all existing capacity should be counted as a shortfall.",
+        "10 units/day; current capacity should be ignored when comparing supply with need."
+      ],
+      "correctIndex": 0,
+      "explanation": "Projected need is 10 capacity units per day and existing usable capacity is 6, so the numerical shortfall is 4. This aggregate balance does not describe where pipes, treatment facilities and households are located or who can afford connection. A citywide capacity target therefore needs spatial and social analysis rather than an automatic promise of universal access. A: This calculates the difference and recognizes the limits of an aggregate total. B: Capacity alone does not establish distribution, connections or affordability. C: Six is the existing capacity, not the difference from projected need. D: Ten is projected need before subtracting the usable capacity."
+    },
+    {
+      "id": "hug-6-7-005",
+      "prompt": "A city extends a frequent bus corridor to previously poorly served neighborhoods. Which mechanism could most directly support local economic access?",
+      "options": [
+        "The corridor reduces the national distance between all cities.",
+        "A shorter and more reliable trip can connect residents with more workplaces and services.",
+        "The route changes the neighborhood’s physical elevation.",
+        "The route converts every traveler into an owner of a central-city business."
+      ],
+      "correctIndex": 1,
+      "explanation": "Transport infrastructure changes accessibility through routes, travel time, reliability and cost. A useful connection can expand the practical set of workplaces or services residents can reach. Actual benefits depend on schedules, fares, destinations and accessibility needs, so a new line alone does not establish identical gains for every resident. A: An urban route does not physically move cities closer together. B: This identifies the relevant accessibility mechanism without guaranteeing employment. C: Elevation is not changed by assigning bus service. D: Business ownership is not an automatic consequence of using transit."
+    },
+    {
+      "id": "hug-6-7-006",
+      "prompt": "Why might mapping only a proposed highway’s travel-time savings give an incomplete account of its local effects?",
+      "options": [
+        "Travel-time measures cannot be represented spatially.",
+        "Benefits to through traffic necessarily equal benefits to adjacent residents.",
+        "Nearby communities may face barriers, displacement or pollution exposure that a savings map omits.",
+        "A city boundary prevents transport projects from having environmental effects."
+      ],
+      "correctIndex": 2,
+      "explanation": "An infrastructure project can distribute benefits and burdens unevenly. Faster regional movement may coexist with local severance, relocation or exposure along the corridor. Evaluating those effects requires route-level evidence and community experience as well as network travel times. The point is to compare dimensions, not presume every highway has the same consequences. A: Travel times can be mapped using a network and defined origins and destinations. B: Regional movement gains and local effects concern different populations and measures. C: This identifies plausible omitted effects requiring separate evidence. D: Administrative borders do not block physical or social spillovers."
+    },
+    {
+      "id": "hug-6-7-007",
+      "prompt": "A council prioritizes repairs after comparing outage maps, infrastructure age and residents’ testimony. What does this illustrate?",
+      "options": [
+        "Infrastructure allocation is a political and social decision informed by several forms of evidence.",
+        "Physical infrastructure exists independently of budgeting decisions.",
+        "Resident testimony is a direct substitute for every technical measurement.",
+        "The oldest pipe necessarily serves the household with the lowest income."
+      ],
+      "correctIndex": 0,
+      "explanation": "Repair priorities depend on public choices about budgets, need, risk and whose experience is heard. Maps and technical records can be combined with residents’ accounts to identify spatial gaps and service problems. Neither age alone nor one form of evidence establishes every household’s circumstances or determines an uncontested priority. A: This connects infrastructure location and quality to local governance and society. B: Budgets affect where construction and maintenance occur. C: Testimony adds experience but does not replace all measurements. D: A pipe-age measure does not identify individual incomes."
+    },
+    {
+      "id": "hug-6-7-008",
+      "prompt": "An industrial site has inexpensive land but unreliable electricity. How can that infrastructure condition affect its economic use?",
+      "options": [
+        "Only land price can influence firms’ location choices.",
+        "Electricity reliability changes the site’s latitude.",
+        "Every firm faces an identical loss regardless of its production process.",
+        "Interruptions can disrupt production and raise costs, with effects varying by activity and backup capacity."
+      ],
+      "correctIndex": 3,
+      "explanation": "Reliable infrastructure can matter to business location and operation alongside land, labor, transport and markets. Interrupted electricity may affect continuous production, refrigeration or communication differently. A low purchase price therefore does not summarize the site’s full operating conditions, and different firms may respond differently. A: Operating conditions and several other location factors also matter. B: Reliability is a service characteristic rather than a geographic coordinate. C: Activities and backup arrangements vary in their sensitivity to outages. D: This identifies a conditional cost and production mechanism."
+    },
+    {
+      "id": "hug-6-7-009",
+      "prompt": "A metropolitan network is extensive, but peripheral households report high fares and inaccessible stations. Which measure best complements route length?",
+      "options": [
+        "The year in which the city adopted its name.",
+        "Travel cost, usable station access and trips possible at relevant times for different resident groups.",
+        "The number of colors in the transit authority’s logo.",
+        "Regional land area alone, without information about residents or service."
+      ],
+      "correctIndex": 1,
+      "explanation": "A physical network’s extent is different from usable access. Fares, station design, operating times and destination connections can constrain who benefits. Group-specific trip measures help reveal disparities hidden by aggregate route length, while protecting privacy and avoiding assumptions that every peripheral resident faces identical barriers. A: The naming date does not measure these practical barriers. B: These measures directly address affordability, physical access and service usefulness. C: Visual branding does not establish accessibility. D: Land area alone cannot show how service reaches people and destinations."
+    },
+    {
+      "id": "hug-6-7-010",
+      "prompt": "Why should a city consider maintenance when comparing a new water line with improvements to existing service?",
+      "options": [
+        "Only new construction affects the built landscape.",
+        "Existing infrastructure cannot deteriorate once installed.",
+        "Service depends on sustained operation and repair as well as the initial network location.",
+        "Maintenance records directly reveal every household’s cultural identity."
+      ],
+      "correctIndex": 2,
+      "explanation": "Infrastructure provision includes ongoing operation and maintenance, not simply installation. A connected neighborhood can experience unreliable service if components deteriorate or operations are underfunded. Comparing expansion with improvements requires evidence about both coverage and quality, along with spatial priorities and costs. A: Existing assets and their condition also shape the landscape and access. B: Components can deteriorate and require repair. C: This distinguishes maintaining usable service from adding network coverage. D: Maintenance records do not establish personal identities."
+    },
+    {
+      "id": "hug-6-7-011",
+      "prompt": "A regional rail extension raises land demand around stations, but rents and resident outcomes differ between stops. What is the soundest interpretation?",
+      "options": [
+        "New accessibility can influence land demand, while local rules, housing supply and household resources mediate its effects.",
+        "All rent differences must be measurement errors because one rail line serves every stop.",
+        "Rail accessibility fixes the same rent at every station distance.",
+        "Higher land demand proves that every original resident benefited."
+      ],
+      "correctIndex": 0,
+      "explanation": "Accessibility improvements can alter the attractiveness of locations and interact with existing land markets. Regulations, housing supply, ownership, affordability measures and household resources help shape the resulting pattern. A network improvement is therefore a relevant influence rather than proof of identical rents or universally shared gains. A: This links infrastructure to spatial development while retaining other influences. B: Stops may differ in existing conditions and local institutions. C: Distance to a station is not the only influence on land or housing costs. D: Aggregate demand does not reveal each resident’s costs or benefits."
+    }
+  ]
+}

@@ -1,5 +1,11 @@
 # PrepAtlas milestone verification
 
+## Human Geography Topics 6.7–6.8
+
+627 original MCQs across 57 topics are published, eleven each; 228 meaningful stimuli (36.36%) and 245 explicit evidence/numerical/geometry checks. Infrastructure compares connection rates, reachable jobs, reliability and capacity. Urban Sustainability covers mixed uses, walkability, transit-oriented design, smart growth, New Urbanism, greenbelts and slow growth with conditional benefits and tradeoffs.
+
+All 184 unit tests, structural/evidence checks, TypeScript, production build, all 68 Geography scopes and standard preview checks passed. Both full browser sessions scored 11/11; all eight mobile stimuli inspected, keyboard zoom 200/reset 100 and desktop light-mode station plan checked. Browser inspection caught a route stopping short of its station: corrected to pass through the marker, rehashed, independently rechecked and rebuilt before checkpoint. Existing 227 checkpoint question files, 220 stimuli and approved catalog remain unchanged. Student data and preview preserved. Next 6.9; 11 topics/121 questions remain. Full bank audit and UI/summary phase pending; no human-review or calibrated-difficulty claim.
+
 ## Human Geography Topics 6.5–6.6
 
 605 original MCQs across 55 topics are published, eleven each; 220 meaningful stimuli (36.36%) and 237 explicit evidence/numerical/geometry checks. Internal-city models use original concentric, sector and multiple-nuclei abstractions and contextual regional comparisons. Density independently checks dwelling units per hectare, unchanged-boundary infill, housing mix and gross/net population densities.

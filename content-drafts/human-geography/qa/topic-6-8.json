@@ -1,0 +1,143 @@
+{
+  "topicNumber": "6.8",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "e9845fbfe3fd8e15ab135f008e3959962b135a55318effea2121c714703f8b72",
+  "scopeReview": "IMP-6.C.1 and D.1: mixed uses, walkability, transit-oriented development, smart growth, New Urbanism, greenbelts and slow growth; intended access/livability benefits and possible housing, segregation or place-character concerns.",
+  "varietyReview": "Four assessed stimuli compare straight-line/network distances, an original station-area plan, per-person versus aggregate travel and joint walking/rent indicators. Remaining cases evaluate specific initiatives, implementation and regional tradeoffs.",
+  "repetitionReview": "Quantitative tasks use different denominators and causal limits; map requires interpreting access plus an evaluation. New applications avoid claiming a design label guarantees equity. Answer positions vary and explanations address each option; difficulty not empirically calibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.epa.gov/smartgrowth/about-smart-growth",
+    "https://www.epa.gov/smartgrowth/smart-location-mapping",
+    "https://www.epa.gov/smartgrowth/smart-growth-and-housing"
+  ],
+  "referenceNote": "Official scope and primary EPA design/access descriptions checked. Scenarios, counts and diagram are original and hypothetical; no copied figures, new student resources or independent human-review claim.",
+  "questions": [
+    {
+      "questionId": "hug-6-8-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Plan B has a walking route one-third as long, illustrating the importance of network connections.",
+      "independentReview": "Independently checked 300/900=1/3 and route/direct ratios 4.5 versus1.5. Route distance only, no assumption about walking speed, safety or causal health effects.",
+      "check": {
+        "type": "sustainability-walking-route"
+      },
+      "questionSha256": "f12ef1a88f680c01c68022b68e97c2e913e1a348870c396043999f8d0bd0156a",
+      "stimulusSha256": "7a86e7d6a8b4ca15818cedf52bb304525a5fa4c98bc79437c9f69a80782b5a69"
+    },
+    {
+      "questionId": "hug-6-8-002",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Measure transit and walking access alongside housing costs and who can remain or move into the area.",
+      "independentReview": "Map confirms homes/shops/station proximity only; question asks an evaluation, not proof of realized affordability or reduced driving. Plan is a hypothetical teaching abstraction without a claimed walk-distance scale. Browser geometry corrected before checkpoint: continuous route now passes exactly through station [50,30], with the Walk label anchored away from the Station label.",
+      "check": {
+        "type": "sustainability-station-plan"
+      },
+      "questionSha256": "e5ea240974b07e85a059f7c895f2fb48659004324a4e10c58a436c4e09a9839e",
+      "stimulusSha256": "3c4d93370e4ccde3f0b6ad45d1f290069320c575efaea5574e7f1bb0a4e04085"
+    },
+    {
+      "questionId": "hug-6-8-003",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "It rises from 1.2 million to 1.6 million vehicle-km/day.",
+      "independentReview": "Recomputed totals1.2m and1.6m; later/initial4/3. No emissions inferred because vehicle types/energy factors absent. Before/after association does not prove the plan caused the change.",
+      "check": {
+        "type": "sustainability-travel-total"
+      },
+      "questionSha256": "7882f9e6aa9ee5e5e8a8921d79107a42b312ee2219a3ae28c32a4b14f3ce7c9b",
+      "stimulusSha256": "4b5e8960d4d874a9df29bd0bac6c6ceb21acaa2a44fb4cc060913efc7ba113dc"
+    },
+    {
+      "questionId": "hug-6-8-004",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Walking increased by 15 percentage points while median monthly rent increased by 200 currency units.",
+      "independentReview": "Independently checked35−20=15 percentage points,1000−800=200,relative ratios.75 and.25. No inference that the same residents were surveyed or all households face identical costs.",
+      "check": {
+        "type": "sustainability-walk-rent"
+      },
+      "questionSha256": "c768bf5b8d46ebac7844ada19125dbbdae5fdea40afc1d994884e81ece2304ec",
+      "stimulusSha256": "9ee94e285232eb4dfc94b26b0782da6d788dc4b9a5903d85681d1decd345432a"
+    },
+    {
+      "questionId": "hug-6-8-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Mixed land use intended to bring different daily activities closer together.",
+      "independentReview": "Official C.1 mixed-use scope; no claim that every combination of industrial and residential activity is compatible or that proximity guarantees accessibility.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "1c6a1eb54a6f6eafb80151746a7c8be4d4886e1b8e068c3a24b6ae94bf1d7480"
+    },
+    {
+      "questionId": "hug-6-8-006",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "A walkable, connected neighborhood with a mix of uses and housing forms.",
+      "independentReview": "Verified broad New Urbanist features against CED/EPA. Distinguishes design principles from guaranteed social outcomes or a universal architectural style.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "8c81960f0f79c149ec0b41e3631334336769709ec8d1cbdd26c5d7f9ff1264e7"
+    },
+    {
+      "questionId": "hug-6-8-007",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Development pressure may shift beyond the belt or affect housing costs if other conditions constrain supply.",
+      "independentReview": "No categorical claim that greenbelts always raise prices or cause leapfrog development. Retains both the intended open-space function and conditional spillover assessment.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "9f90bd04e4728158b86e0625fdffc921e4dc6e405505a33d164a54c698068703"
+    },
+    {
+      "questionId": "hug-6-8-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Development is organized to support usable access to transit and nearby activities, including pedestrian connections.",
+      "independentReview": "Distinguishes actual access from nominal proximity; transportation-oriented term in framework is rendered with common transit-oriented usage, no fixed universal station radius.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "a2900a210adb616454558e49e690d23e46862dd30d23a3c95e81d0edc4c603f4"
+    },
+    {
+      "questionId": "hug-6-8-009",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Changes in development location, open space, housing availability and costs across the affected region.",
+      "independentReview": "No assumption that lower approvals necessarily protect every habitat or cause any fixed price change. Checks implementation-versus-outcome and municipal-versus-regional scale.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d3d074036793b753f67c54f7bb8f01e4dd8ccd5cef8d9e9fd2f22c8fbbf23856"
+    },
+    {
+      "questionId": "hug-6-8-010",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Rising costs or loss of valued local features may accompany the access improvements.",
+      "independentReview": "Matches D.1 benefits/criticisms without treating any criticism as an established outcome in a real place. Original application, no actual resident attribution.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "048800f6ec2e95efc967108c8f1c3c3e6ae6b762951335c2d5c77edcd2a2282d"
+    },
+    {
+      "questionId": "hug-6-8-011",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "Design rules interact with investment, housing policy, markets and transport service.",
+      "independentReview": "Separates zoning permission, realized construction and social outcomes. No real policy prescription, price guarantee or unverified causal statistic.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "6348e9f2b989566ab4494797193a1fe57e8ac63268a08eefc65f82c0b0255fcb"
+    }
+  ]
+}
