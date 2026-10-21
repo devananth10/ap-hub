@@ -1,0 +1,344 @@
+[
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-1-1",
+    "topicNumber": "1.1",
+    "unitNumber": 1,
+    "title": "Introduction to Maps",
+    "status": "published",
+    "overview": "Maps select and organize spatial information for a purpose. Before interpreting a pattern, identify the mapped variable, the geographic units, the legend and the map’s scale. A projection necessarily distorts some properties of Earth’s curved surface.",
+    "keyConcepts": [
+      {
+        "title": "Reference and thematic maps",
+        "text": "Reference maps locate features; thematic maps emphasize a variable or relationship. Choropleth shading, proportional symbols and dot distributions encode information differently."
+      },
+      {
+        "title": "Counts and rates",
+        "text": "A population count measures people, while a rate or density relates people to a denominator. A dark region does not always contain the largest population."
+      },
+      {
+        "title": "Projection choices",
+        "text": "Equal-area projections preserve relative area, whereas conformal projections preserve local angles. No flat world map preserves every distance, shape, direction and area simultaneously."
+      }
+    ],
+    "example": {
+      "prompt": "Two fictional districts contain 12,000 and 20,000 residents, occupying 10 and 40 km² respectively. Which is denser?",
+      "steps": [
+        "District A has 12,000/10 = 1,200 people per km². District B has 20,000/40 = 500.",
+        "A population-count map would emphasize B; a density choropleth would give A the higher category."
+      ],
+      "conclusion": "Neither map contradicts the other: their variables answer different geographic questions."
+    },
+    "misconception": "A choropleth’s uniform shading does not mean residents are evenly distributed within each district.",
+    "apTip": "Use the legend and denominator before comparing colors. Explain what the map supports and identify one limitation of its aggregation.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 1.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Densities recomputed with correct area denominators; count versus density inference and projection tradeoffs reviewed.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            12000,
+            10
+          ],
+          "expected": 1200,
+          "evidence": "1,200 people"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            20000,
+            40
+          ],
+          "expected": 500,
+          "evidence": "500"
+        }
+      ],
+      "contentHash": "2f00fbe70ade5ff9e629fc28707d04f7b8f05765abbfce19562786a0cc37028b"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-1-2",
+    "topicNumber": "1.2",
+    "unitNumber": 1,
+    "title": "Geographic Data",
+    "status": "published",
+    "overview": "Geographic data describe locations, characteristics and relationships. Different collection methods answer different questions, so evaluate how observations were obtained before using them to explain a spatial pattern.",
+    "keyConcepts": [
+      {
+        "title": "Collection methods",
+        "text": "A census aims to enumerate a population, while a sample surveys a subset. Field observations and interviews can provide detail that a large numerical dataset misses."
+      },
+      {
+        "title": "Geospatial tools",
+        "text": "GPS estimates location, remote sensing observes Earth from a distance, and GIS stores and analyzes geographically referenced layers. These tools complement one another rather than performing identical tasks."
+      },
+      {
+        "title": "Data quality",
+        "text": "Check dates, coverage, definitions, sampling methods and missing observations. Positional precision does not guarantee that the measured social characteristic is accurate or representative."
+      }
+    ],
+    "example": {
+      "prompt": "A town wants to identify bus stops that lack shade. It has stop coordinates, recent aerial imagery and interviews with riders.",
+      "steps": [
+        "Map the coordinates as one GIS layer and interpret tree cover from imagery as another.",
+        "Use interviews or field checks to determine whether shelter actually provides shade when riders wait."
+      ],
+      "conclusion": "The combined evidence identifies candidate improvements, while ground checks address imagery dates, seasonal cover and rider experience."
+    },
+    "misconception": "A GPS coordinate tells where an observation is located, not why a social pattern exists or whether a survey sample represents everyone.",
+    "apTip": "Match the collection method to the claim. Explain which information each layer contributes and what additional evidence would strengthen the conclusion.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 1.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "GPS, GIS and remote-sensing roles distinguished; example does not treat aerial vegetation as proof of usable shade or interviews as a census.",
+      "checks": [],
+      "contentHash": "299279a48a514ef28538f7d072e8ab242316842a1b5ee533d5872b53d7cf2397"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-1-3",
+    "topicNumber": "1.3",
+    "unitNumber": 1,
+    "title": "The Power of Geographic Data",
+    "status": "published",
+    "overview": "Geographic data influence decisions by making spatial patterns visible. Governments, businesses and communities can compare locations, estimate service needs and evaluate alternatives, but the interpretation depends on who collected the data and how they are used.",
+    "keyConcepts": [
+      {
+        "title": "Decision support",
+        "text": "Mapping service areas, travel times and population characteristics can reveal gaps that a citywide total conceals. Location affects accessibility as well as the number of facilities."
+      },
+      {
+        "title": "Evidence and inference",
+        "text": "An association between two mapped variables does not establish a causal relationship. Confounding factors, historical processes and measurement choices require investigation."
+      },
+      {
+        "title": "Ethics and representation",
+        "text": "Detailed location records can expose private behavior. Missing groups, outdated boundaries and unequal digital access can bias a seemingly complete map."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional city maps clinic locations and census districts. One district has many older residents and a long bus journey to the nearest clinic.",
+      "steps": [
+        "Combine demographic information with the transport network rather than measuring straight-line distance alone.",
+        "Compare a mobile clinic, a new bus connection and a permanent facility using current demand and accessibility evidence."
+      ],
+      "conclusion": "The layers identify a service gap and possible responses; they do not prove that every older resident has the same medical needs."
+    },
+    "misconception": "A precise-looking map is not automatically objective or complete. Classification and data availability can change which needs appear most urgent.",
+    "apTip": "Link a specific spatial finding to a decision, then acknowledge uncertainty, privacy or representation limits that affect that recommendation.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 1.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Accessibility inference reviewed: network travel differs from Euclidean distance; aggregate age does not justify individual medical assumptions.",
+      "checks": [],
+      "contentHash": "074a21329c8cc69be965a03fe98fd0086e7ea571cb1ac184f2c80109e8e4d1de"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-1-4",
+    "topicNumber": "1.4",
+    "unitNumber": 1,
+    "title": "Spatial Concepts",
+    "status": "published",
+    "overview": "Spatial concepts describe how phenomena are located and connected. Distinguish the arrangement you observe from the processes that might produce it; the same pattern can have more than one possible explanation.",
+    "keyConcepts": [
+      {
+        "title": "Location and place",
+        "text": "Absolute location uses a coordinate or address system. Relative location describes position in relation to other places, while place includes physical and human characteristics."
+      },
+      {
+        "title": "Pattern and distribution",
+        "text": "Density measures amount per area, concentration describes how clustered or dispersed features are, and pattern describes their arrangement. These are related but different properties."
+      },
+      {
+        "title": "Connection and distance",
+        "text": "Distance decay describes weakening interaction with increasing separation. Transportation and communication can reduce effective travel time without changing physical distance."
+      }
+    ],
+    "example": {
+      "prompt": "Two square districts each cover 4 km² and contain eight grocery stores. In A the stores cluster near a rail station; in B they are spread evenly.",
+      "steps": [
+        "Both have density 8/4 = 2 stores per km².",
+        "A has greater concentration around one node, despite identical overall density."
+      ],
+      "conclusion": "The shared density alone cannot establish equal accessibility: residents’ locations, routes and travel times also matter."
+    },
+    "misconception": "High density does not necessarily mean clustering, and dispersed locations do not prove low density without an area comparison.",
+    "apTip": "Name the spatial property supported by the evidence. When explaining a cluster, identify a plausible mechanism and avoid treating the visible arrangement as proof of that mechanism.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 1.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Density computation checked; concentration versus density separated; clustering is descriptive rather than proof of rail causation.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            8,
+            4
+          ],
+          "expected": 2,
+          "evidence": "2 stores per km²"
+        }
+      ],
+      "contentHash": "bc31857ae0a2ab4a0fdd91a60f385afc2580f37964bade1bc7f5df49a8b2ca36"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-1-5",
+    "topicNumber": "1.5",
+    "unitNumber": 1,
+    "title": "Human–Environmental Interaction",
+    "status": "published",
+    "overview": "People shape environments and respond to environmental opportunities and constraints. Human–environment interaction involves technology, institutions, culture and unequal access to resources, as well as physical conditions.",
+    "keyConcepts": [
+      {
+        "title": "Environmental determinism",
+        "text": "This approach treats physical conditions as determining social outcomes. It oversimplifies human differences and has been used to justify discriminatory explanations."
+      },
+      {
+        "title": "Possibilism",
+        "text": "Physical settings constrain or enable choices, but societies select among possibilities through knowledge, technology and social organization. The same environment can support different responses."
+      },
+      {
+        "title": "Reciprocal change",
+        "text": "Irrigation, urban construction and resource extraction modify landscapes. Benefits and costs can be distributed unevenly across places and social groups."
+      }
+    ],
+    "example": {
+      "prompt": "Two fictional farming communities face seasonal drought. One builds shared reservoirs; the other shifts planting dates and grows less water-demanding crops.",
+      "steps": [
+        "Drought limits available water in both places, but it does not prescribe one inevitable agricultural system.",
+        "Financing, land rights, technical knowledge and local priorities help explain the different adaptations."
+      ],
+      "conclusion": "The comparison illustrates possibilism and human agency while retaining the importance of a real environmental constraint."
+    },
+    "misconception": "Possibilism does not mean that technology removes all physical limits or that every community has equal freedom to choose.",
+    "apTip": "Explain the interaction in both directions: how the environment affects choices and how a chosen practice alters the environment. Avoid claims that climate alone determines culture or development.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 1.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Determinism critique and constrained agency checked; example avoids universal adaptation claims and acknowledges unequal capacities.",
+      "checks": [],
+      "contentHash": "732eb8a7cfa96dda4b9aac0d53d02d936708e2526200683c02377d2ef2aeb4fd"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-1-6",
+    "topicNumber": "1.6",
+    "unitNumber": 1,
+    "title": "Scales of Analysis",
+    "status": "published",
+    "overview": "Scale of analysis is the geographic level at which information is examined, such as a neighborhood, city, country or world region. A pattern at one level can conceal important differences at another.",
+    "keyConcepts": [
+      {
+        "title": "Aggregation",
+        "text": "Combining smaller units into larger ones can hide local variation. The boundaries used for aggregation can also affect the pattern shown."
+      },
+      {
+        "title": "Scale distinctions",
+        "text": "A map’s scale relates map distance to ground distance; analytical scale concerns the level of geographic inquiry. A small-scale world map covers a large area."
+      },
+      {
+        "title": "Inference limits",
+        "text": "An average for a district cannot establish the characteristics of every resident. Compare equivalent units and definitions before drawing conclusions across places."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional city has two neighborhoods with equally sized labor forces and unemployment rates of 4% and 16%. What does its overall 10% rate hide?",
+      "steps": [
+        "Because the labor-force sizes are equal, the mean is (4 + 16)/2 = 10%.",
+        "The citywide value conceals a twelve-percentage-point gap between neighborhoods."
+      ],
+      "conclusion": "Local analysis reveals unequal outcomes that the city average alone cannot locate. With unequal labor-force sizes, a weighted mean would be required."
+    },
+    "misconception": "Changing the level of analysis does not necessarily reveal a contradiction. Different aggregations may answer different questions.",
+    "apTip": "State the level used in the evidence and the level of your conclusion. Do not transfer an aggregate relationship directly to individuals.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 1.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Equal labor-force condition explicitly required; mean and percentage-point gap checked. Analytical scale distinguished from map scale.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            20,
+            2
+          ],
+          "expected": 10,
+          "evidence": "10%"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            16,
+            4
+          ],
+          "expected": 12,
+          "evidence": "twelve-percentage-point"
+        }
+      ],
+      "contentHash": "2ca8bb7bd4d4c3800723e55b6698242c6a95400478055ea6fb07f053fc249635"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-1-7",
+    "topicNumber": "1.7",
+    "unitNumber": 1,
+    "title": "Regional Analysis",
+    "status": "published",
+    "overview": "Regions organize places by shared characteristics, connections or perceptions. Their boundaries depend on the criteria used, so a single place can belong to several overlapping regions at once.",
+    "keyConcepts": [
+      {
+        "title": "Formal regions",
+        "text": "A formal region shares one or more defined traits, such as a legal jurisdiction or a threshold in a measured characteristic. Internal variation may still exist."
+      },
+      {
+        "title": "Functional regions",
+        "text": "A functional region is organized through interaction with a node, such as commuting toward an employment center. Its extent can change as connections change."
+      },
+      {
+        "title": "Perceptual regions",
+        "text": "A perceptual or vernacular region reflects people’s beliefs and identities. Its boundaries can be contested and differ among individuals or groups."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional metro area includes an official county boundary, a commuter network centered on a downtown station and residents’ differing ideas of the “north side.”",
+      "steps": [
+        "The county is a formal region defined by a legal boundary.",
+        "The commuter network is functional because flows connect outlying places to a node; it may cross county lines."
+      ],
+      "conclusion": "The “north side” is perceptual when membership depends on local interpretations rather than a single agreed boundary."
+    },
+    "misconception": "A region need not have perfectly uniform characteristics or a sharp, permanent boundary. Functional regions may overlap formal ones.",
+    "apTip": "Identify the defining criterion, not just the region’s name. Use evidence of shared traits, flows or perceptions to justify the classification.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 1.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Regional categories reviewed against criteria; example makes perceptual basis explicit and does not assume all named north-side districts are vernacular.",
+      "checks": [],
+      "contentHash": "75fdd0dd8d67c2b418ede717d65216ce409550217d6dcf542c30c0da48ef107f"
+    }
+  }
+]

@@ -1,0 +1,883 @@
+[
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "limits",
+    "topicNumber": "1.1",
+    "unitNumber": 1,
+    "title": "Introducing Calculus: Can Change Occur at an Instant?",
+    "status": "published",
+    "overview": "Calculus describes change and accumulation by examining limiting processes. To describe change at an instant, begin with average rates over intervals and consider what happens as those intervals shrink.",
+    "keyConcepts": [
+      {
+        "title": "Average rate",
+        "text": "For an output f(x), the average rate from a to b is [f(b) − f(a)]/(b − a). Graphically, this is the slope of a secant line."
+      },
+      {
+        "title": "Instantaneous change",
+        "text": "An instantaneous rate is approached by secant slopes over increasingly short intervals around a point. The interval width approaches zero; it is not set equal to zero in the quotient."
+      },
+      {
+        "title": "Accumulation",
+        "text": "Adding contributions over many small intervals motivates integral calculus. Rate and accumulated change are connected ideas, but they represent different quantities and often have different units."
+      }
+    ],
+    "example": {
+      "prompt": "A particle has position s(t) = t² meters for time t in seconds. Estimate its rate of change near t = 2.",
+      "steps": [
+        "From t = 2 to 2.1, the average rate is (4.41 − 4)/0.1 = 4.1 m/s.",
+        "From t = 2 to 2.01, it is (4.0401 − 4)/0.01 = 4.01 m/s."
+      ],
+      "conclusion": "The secant rates approach 4 m/s as the interval shrinks, suggesting the instantaneous velocity at t = 2."
+    },
+    "misconception": "Zero elapsed time does not make instantaneous velocity zero. Directly dividing by a zero interval is undefined.",
+    "apTip": "Identify the input, output and rate units before interpreting a numerical or graphical result.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 1.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Secant computations checked and limit confirmed independently by expansion: ((2+h)^2-4)/h=4+h for h nonzero.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            0.41,
+            0.1
+          ],
+          "expected": 4.1,
+          "evidence": "4.1 m/s"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            0.0401,
+            0.01
+          ],
+          "expected": 4.01,
+          "evidence": "4.01 m/s"
+        }
+      ],
+      "contentHash": "a4afc0c339ea57d084ea9e949228b2e5f15e6cebf0bfa44ad5bece5567f6d5d6"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-1-2",
+    "topicNumber": "1.2",
+    "unitNumber": 1,
+    "title": "Defining Limits and Using Limit Notation",
+    "status": "published",
+    "overview": "A limit describes the value a function approaches as the input approaches a specified number. It depends on nearby function behavior, not necessarily on the function’s defined value at that input.",
+    "keyConcepts": [
+      {
+        "title": "Notation",
+        "text": "The expression lim as x → c of f(x) = L says that f(x) approaches L as x approaches c through nearby domain values."
+      },
+      {
+        "title": "One-sided behavior",
+        "text": "A left-hand limit uses x values less than c; a right-hand limit uses values greater than c. The two-sided limit exists as a finite number only when both finite one-sided limits agree."
+      },
+      {
+        "title": "Point value",
+        "text": "A filled point gives f(c). It can differ from the limit, and a limit can exist even when f(c) is undefined. Keep these statements separate."
+      }
+    ],
+    "example": {
+      "prompt": "Suppose f(x) = x + 2 for x ≠ 1, but f(1) = 8. Determine the limit at 1 and the function value.",
+      "steps": [
+        "For nearby inputs on either side of 1, x + 2 approaches 3.",
+        "The left-hand and right-hand limits are both 3, so the two-sided limit is 3."
+      ],
+      "conclusion": "The separate definition gives f(1) = 8. The mismatch makes the function discontinuous at 1 without changing its limit there."
+    },
+    "misconception": "A limit is not a promise that the function reaches its limiting value or that substitution always gives the answer.",
+    "apTip": "Write separate conclusions for the left limit, right limit and point value when a graph includes holes or jumps.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 1.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Piecewise definition distinguishes punctured-neighborhood behavior from isolated value; both sides approach 3, not 8.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            1,
+            2
+          ],
+          "expected": 3,
+          "evidence": "approaches 3"
+        }
+      ],
+      "contentHash": "08fbdd06e531597590651b58e90f5932fba902856710040b9c2f10aa244c212c"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-1-3",
+    "topicNumber": "1.3",
+    "unitNumber": 1,
+    "title": "Estimating Limit Values from Graphs",
+    "status": "published",
+    "overview": "A graph can show what outputs approach near a selected input. Trace the curve from each side before reading the value of any filled point at that input.",
+    "keyConcepts": [
+      {
+        "title": "Left approach",
+        "text": "Move along the graph through x values below the target and observe the approaching y value. This is a one-sided statement about nearby behavior."
+      },
+      {
+        "title": "Right approach",
+        "text": "Repeat from inputs above the target. A two-sided finite limit exists only if the two approaches agree."
+      },
+      {
+        "title": "Graph conventions",
+        "text": "An open circle indicates a point omitted from that curve, while a filled point specifies a function value. A jump, hole and unbounded branch represent different behaviors."
+      }
+    ],
+    "example": {
+      "prompt": "Imagine a graph whose left branch approaches the open point (2, 1), whose right branch approaches (2, 4), and whose filled point is (2, 3).",
+      "steps": [
+        "The left-hand limit at x = 2 is 1; the right-hand limit is 4.",
+        "Because 1 and 4 differ, there is no two-sided limit at x = 2."
+      ],
+      "conclusion": "The filled point gives f(2) = 3. Moving that filled point alone would not make the two one-sided limits agree."
+    },
+    "misconception": "Do not average the two approaching heights. Neither the midpoint nor the filled point can repair unequal one-sided limits.",
+    "apTip": "Read the axes carefully and report a numerical limit only when both sides support it. Distinguish a finite value from unbounded behavior.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 1.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "One-sided branch heights deliberately distinct; point value does not affect nonexistence. No numerical extrapolation beyond described graph.",
+      "checks": [],
+      "contentHash": "bb740686311fa32751de8abc7303c02d2c227872c4732dc9bf23ee4b82d004bc"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-1-4",
+    "topicNumber": "1.4",
+    "unitNumber": 1,
+    "title": "Estimating Limit Values from Tables",
+    "status": "published",
+    "overview": "A table can suggest a limit by showing values for inputs progressively closer to a target. Inspect both sides and the precision of the data; a finite table supplies evidence rather than a proof of all nearby behavior.",
+    "keyConcepts": [
+      {
+        "title": "Approach direction",
+        "text": "Use entries smaller and larger than the target when estimating a two-sided limit. One-sided samples alone cannot establish agreement across the target."
+      },
+      {
+        "title": "Numerical pattern",
+        "text": "Look for stabilization toward a common output, not simply the value in the row closest to the target. Rounding can conceal differences."
+      },
+      {
+        "title": "Undefined entries",
+        "text": "A missing or undefined value at the target does not by itself prevent a limit. Investigate the surrounding values independently."
+      }
+    ],
+    "example": {
+      "prompt": "Estimate the limit of (x² − 4)/(x − 2) as x approaches 2, using the original table.",
+      "steps": [
+        "Inputs below 2 give outputs approaching 4 from below; inputs above 2 approach 4 from above.",
+        "Both sides support the estimate 4. Algebra also gives x + 2 for every x ≠ 2."
+      ],
+      "conclusion": "The original quotient is undefined at 2, but its limit is 4. The algebraic simplification verifies the numerical evidence."
+    },
+    "misconception": "Calculator rounding can make different outputs look identical. A table estimate is not a proof that no unexpected behavior occurs between sampled inputs.",
+    "apTip": "Use multiple approaching inputs from both sides, then confirm with an appropriate algebraic or graphical argument when possible.",
+    "table": {
+      "caption": "Original nearby values",
+      "headers": [
+        "x",
+        "(x² − 4)/(x − 2)"
+      ],
+      "rows": [
+        [
+          "1.9",
+          "3.9"
+        ],
+        [
+          "1.99",
+          "3.99"
+        ],
+        [
+          "2.01",
+          "4.01"
+        ],
+        [
+          "2.1",
+          "4.1"
+        ]
+      ]
+    },
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 1.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Table values independently generated using cancellation valid only for x not 2. Both approach directions and undefined point preserved.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            1.99,
+            2
+          ],
+          "expected": 3.99,
+          "evidence": "3.99"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            2.01,
+            2
+          ],
+          "expected": 4.01,
+          "evidence": "4.01"
+        }
+      ],
+      "contentHash": "167898488defedf7b8a4eb83a018b9d53602f1af4fdbaeb4b21c20f36e4349da"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-1-5",
+    "topicNumber": "1.5",
+    "unitNumber": 1,
+    "title": "Determining Limits Using Algebraic Properties of Limits",
+    "status": "published",
+    "overview": "Limit laws allow finite limits of simpler expressions to determine limits of sums, products and quotients. Apply each law only when its hypotheses hold; an undefined direct substitution is a signal to investigate, not a final answer.",
+    "keyConcepts": [
+      {
+        "title": "Combining limits",
+        "text": "If f(x) approaches A and g(x) approaches B, sums and products approach the corresponding sums and products of A and B. Constants behave as expected."
+      },
+      {
+        "title": "Quotients",
+        "text": "The quotient law requires a nonzero limiting denominator. A quotient whose substitution yields 0/0 cannot be evaluated by that law alone."
+      },
+      {
+        "title": "Continuous expressions",
+        "text": "Polynomial limits can be found by substitution. Rational expressions can also be evaluated this way wherever their denominators are nonzero."
+      }
+    ],
+    "example": {
+      "prompt": "Given lim f(x) = 3 and lim g(x) = −2 as x → a, find the limit of [2f(x) + g(x)]/[g(x) − 1].",
+      "steps": [
+        "The numerator approaches 2(3) + (−2) = 4.",
+        "The denominator approaches −2 − 1 = −3, which is nonzero."
+      ],
+      "conclusion": "The quotient therefore approaches −4/3. The finite component limits and nonzero denominator justify using the quotient law."
+    },
+    "misconception": "A 0/0 result is an indeterminate form, not the number zero and not automatic proof that a limit does not exist.",
+    "apTip": "State the limiting denominator when justifying a rational limit. If it is zero, choose another procedure before drawing a conclusion.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 1.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Numerator and denominator independently evaluated; nonzero-denominator condition explicit; no assumption of continuity of f or g at a.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            6,
+            -2
+          ],
+          "expected": 4,
+          "evidence": "= 4"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            -2,
+            1
+          ],
+          "expected": -3,
+          "evidence": "= −3"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            4,
+            -3
+          ],
+          "expected": -1.3333333333333333,
+          "evidence": "−4/3"
+        }
+      ],
+      "contentHash": "7d3d81d5d6d2d1958c0bfc8cca883259e8e7e471527782d6f05d30198500b98a"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-1-6",
+    "topicNumber": "1.6",
+    "unitNumber": 1,
+    "title": "Determining Limits Using Algebraic Manipulation",
+    "status": "published",
+    "overview": "Algebraic rewriting can reveal the behavior of a quotient that initially gives 0/0. Equivalent formulas need agree only near the target, excluding the target itself, to have the same limit there.",
+    "keyConcepts": [
+      {
+        "title": "Factor and cancel",
+        "text": "Factor numerator and denominator before canceling a common nonzero factor. Cancel factors, not isolated terms within a sum."
+      },
+      {
+        "title": "Use a conjugate",
+        "text": "For differences involving square roots, multiply by a suitable conjugate to expose a factor that can cancel. Respect the original domain."
+      },
+      {
+        "title": "Preserve the distinction",
+        "text": "A simplified expression may be defined at a point where the original is not. Use the simplified expression to find a limit, without silently redefining the original function."
+      }
+    ],
+    "example": {
+      "prompt": "Evaluate the limit of (√(x + 5) − 3)/(x − 4) as x → 4.",
+      "steps": [
+        "Multiply by the conjugate ratio (√(x + 5) + 3)/(√(x + 5) + 3).",
+        "The numerator becomes x + 5 − 9 = x − 4. For x ≠ 4, cancel to obtain 1/(√(x + 5) + 3)."
+      ],
+      "conclusion": "Substitution in the simplified expression gives 1/(3 + 3) = 1/6. The original quotient remains undefined at 4."
+    },
+    "misconception": "Cancellation removes a common factor from nearby values; it does not prove that the original point value exists.",
+    "apTip": "After rewriting, recheck the denominator and domain before substituting. Explain why the new formula has the same nearby behavior.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 1.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Conjugate product checked symbolically; x+5 is positive near 4 and simplified denominator tends to 6, so cancellation is valid nearby.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            3,
+            3
+          ],
+          "expected": 6,
+          "evidence": "3 + 3"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            1,
+            6
+          ],
+          "expected": 0.16666666666666666,
+          "evidence": "1/6"
+        }
+      ],
+      "contentHash": "1bc14784c3864688f9b8798f70b51ffd272f4ff7dfafb1789d9d12debed6ff42"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-1-7",
+    "topicNumber": "1.7",
+    "unitNumber": 1,
+    "title": "Selecting Procedures for Determining Limits",
+    "status": "published",
+    "overview": "Choosing a limit method begins with the expression’s structure and the type of approach. A short diagnostic sequence is more reliable than applying the same algebraic trick to every problem.",
+    "keyConcepts": [
+      {
+        "title": "Start with conditions",
+        "text": "Try substitution when continuity or the limit laws justify it. For piecewise formulas or graphs, inspect one-sided behavior at a boundary."
+      },
+      {
+        "title": "Diagnose indeterminate forms",
+        "text": "If substitution gives 0/0, look for factoring, a conjugate or a known trigonometric limit. A nonzero numerator over a denominator approaching zero requires sign analysis instead."
+      },
+      {
+        "title": "Check the conclusion",
+        "text": "Decide whether the result is a finite limit, a one-sided infinite behavior or nonexistence. An intermediate algebraic form is not the final interpretation."
+      }
+    ],
+    "example": {
+      "prompt": "Choose a method for lim as x → 3 of (x² − 9)/(x − 3), then evaluate.",
+      "steps": [
+        "Substitution gives 0/0, so the quotient law does not yet apply.",
+        "Factor x² − 9 as (x − 3)(x + 3), and cancel for x ≠ 3."
+      ],
+      "conclusion": "The nearby formula is x + 3, so the limit is 6. Factoring directly addresses the common zero-producing factor."
+    },
+    "misconception": "An undefined substituted expression does not tell you whether a limit exists. Different causes of a zero denominator can lead to different outcomes.",
+    "apTip": "Name why a method applies, and keep the target and approach direction visible while simplifying.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 1.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Factoring and excluded point checked; scope deliberately uses existing AB limit methods without requiring derivatives or L’Hôpital prematurely.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            3,
+            3
+          ],
+          "expected": 6,
+          "evidence": "limit is 6"
+        }
+      ],
+      "contentHash": "798fc394cdfb162e8032d323388b1a2ae238f50092197fb2acb94d618e40c2a8"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-1-8",
+    "topicNumber": "1.8",
+    "unitNumber": 1,
+    "title": "Determining Limits Using the Squeeze Theorem",
+    "status": "published",
+    "overview": "The Squeeze Theorem determines a limit by trapping a function between two functions with the same limiting value. It is especially helpful when an oscillating factor prevents direct substitution.",
+    "keyConcepts": [
+      {
+        "title": "Bounding requirement",
+        "text": "Find lower and upper bounds that hold throughout a sufficiently small neighborhood of the target, except possibly at the target itself."
+      },
+      {
+        "title": "Matching limits",
+        "text": "Both bounding functions must approach the same value. Merely being bounded does not guarantee that the trapped function has a limit."
+      },
+      {
+        "title": "Sign awareness",
+        "text": "Multiplying an inequality by a negative expression reverses its direction. Nonnegative factors such as x² often provide convenient safe bounds."
+      }
+    ],
+    "example": {
+      "prompt": "Find lim as x → 0 of x² sin(1/x), defined for x ≠ 0.",
+      "steps": [
+        "Since −1 ≤ sin(1/x) ≤ 1 and x² ≥ 0, the expression lies between −x² and x².",
+        "Both −x² and x² approach 0 as x approaches 0 from either side."
+      ],
+      "conclusion": "The Squeeze Theorem gives limit 0, even though sin(1/x) alone has no limit at 0."
+    },
+    "misconception": "A graph that appears to oscillate does not automatically imply nonexistence. Shrinking amplitude can force convergence despite continuing oscillations.",
+    "apTip": "Write both inequalities and both bounding limits. Verify that the bounds apply near the target rather than only at a few sampled values.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 1.8; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Bounds follow from sine range and nonnegative x²; both limits zero. No false assertion of a limit for sin(1/x) or product-law use.",
+      "checks": [],
+      "contentHash": "769b7f275b41ba8aa04f3ec36ed211b92aad63c079737bcfb18ee58aed07a94a"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-1-9",
+    "topicNumber": "1.9",
+    "unitNumber": 1,
+    "title": "Connecting Multiple Representations of Limits",
+    "status": "published",
+    "overview": "Limits can be expressed in formulas, graphs, tables and words. Connecting these representations means identifying the same approach behavior in each, while recognizing that each representation supplies different kinds of evidence.",
+    "keyConcepts": [
+      {
+        "title": "Translate the input",
+        "text": "The target x value and the approach direction must stay the same when moving from notation to a graph or table."
+      },
+      {
+        "title": "Separate nearby and exact values",
+        "text": "A graph’s hole, a table’s missing row and an algebraic zero denominator may all describe an undefined point with an existing limit."
+      },
+      {
+        "title": "Evaluate evidence",
+        "text": "Tables and sketches suggest behavior; an exact formula can justify it when valid. Do not infer more precision from a sketch than its labels support."
+      }
+    ],
+    "example": {
+      "prompt": "Let f(x) = (x² − 1)/(x − 1) for x ≠ 1. Connect its algebra, graph and nearby outputs at x = 1.",
+      "steps": [
+        "Factoring gives f(x) = x + 1 for all allowed inputs.",
+        "The graph is the line y = x + 1 with a hole at (1, 2). A table using 0.99 and 1.01 gives outputs 1.99 and 2.01."
+      ],
+      "conclusion": "All three representations support lim as x → 1 of f(x) = 2, but none defines f(1) for the original formula."
+    },
+    "misconception": "A hole does not necessarily mean the limit fails, and a filled point elsewhere does not determine the nearby trend.",
+    "apTip": "Explain the agreement using the same input target and output value, not just a matching visual shape.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 1.9; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Factoring checked away from excluded input; nearby values and missing point consistently represent limit 2.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            0.99,
+            1
+          ],
+          "expected": 1.99,
+          "evidence": "1.99"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            1.01,
+            1
+          ],
+          "expected": 2.01,
+          "evidence": "2.01"
+        }
+      ],
+      "contentHash": "ee07a797cfb16cc9d428eaa3d9d99f3ef69c9dc25b171628df6e01db98e898e5"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-1-10",
+    "topicNumber": "1.10",
+    "unitNumber": 1,
+    "title": "Exploring Types of Discontinuities",
+    "status": "published",
+    "overview": "Discontinuities describe failures of continuity at an input. Classifying the nearby behavior helps determine whether changing a single point value could repair the function there.",
+    "keyConcepts": [
+      {
+        "title": "Removable discontinuity",
+        "text": "A finite two-sided limit exists, but the point is missing or has a different value. Assigning the limiting value can repair this single-point failure."
+      },
+      {
+        "title": "Jump discontinuity",
+        "text": "Finite one-sided limits exist but differ. No single assigned point value can make the function continuous at that input."
+      },
+      {
+        "title": "Infinite behavior",
+        "text": "At least one relevant approach becomes unbounded near the input. An infinite limit describes behavior, not a finite value that can be assigned to repair continuity."
+      }
+    ],
+    "example": {
+      "prompt": "Define f(x) = x + 1 for x < 2 and f(x) = x + 3 for x ≥ 2. Classify its behavior at 2.",
+      "steps": [
+        "From the left, f(x) approaches 3. From the right, it approaches 5.",
+        "Since the finite one-sided limits differ, the two-sided limit does not exist."
+      ],
+      "conclusion": "This is a jump discontinuity. Although f(2) = 5, redefining only f(2) cannot make the two approaching values agree."
+    },
+    "misconception": "Not every discontinuity is a hole, and not every failure can be fixed by supplying a missing value.",
+    "apTip": "Support a classification with one-sided limits and the point value when relevant. Do not use “undefined” as a substitute for analyzing nearby behavior.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 1.10; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Both branch limits and existing point checked; redefining isolated point cannot change jump.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            2,
+            1
+          ],
+          "expected": 3,
+          "evidence": "approaches 3"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            2,
+            3
+          ],
+          "expected": 5,
+          "evidence": "approaches 5"
+        }
+      ],
+      "contentHash": "da81809bc03c8bf77f3c88e02974b945aaf9d264793c1f557fd0e213a80d7416"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-1-11",
+    "topicNumber": "1.11",
+    "unitNumber": 1,
+    "title": "Defining Continuity at a Point",
+    "status": "published",
+    "overview": "Continuity at a point means the actual function value agrees with the value approached nearby. Check each condition explicitly rather than relying on an informal claim that a graph looks unbroken.",
+    "keyConcepts": [
+      {
+        "title": "Defined value",
+        "text": "The number f(c) must exist. A hole at c fails this condition, even if nearby behavior is smooth."
+      },
+      {
+        "title": "Existing limit",
+        "text": "The two-sided limit as x approaches c must exist as a finite number. For an interior point, this requires agreement of both one-sided limits."
+      },
+      {
+        "title": "Agreement",
+        "text": "The existing limit must equal f(c). A separately assigned point above or below the approaching curve fails this condition."
+      }
+    ],
+    "example": {
+      "prompt": "Let f(x) = x² for x ≠ 2 and f(2) = 7. Is f continuous at 2?",
+      "steps": [
+        "The point value exists and equals 7.",
+        "The nearby values follow x², whose limit at 2 is 4 from both sides."
+      ],
+      "conclusion": "Since 4 ≠ 7, the function is not continuous at 2. Assigning f(2) = 4 would repair this removable discontinuity."
+    },
+    "misconception": "Having a defined point value is necessary but not sufficient. A filled dot alone cannot establish continuity.",
+    "apTip": "When justifying continuity or its failure, state the limit and point value separately, then compare them. Use a one-sided condition at an endpoint of a restricted interval rather than demanding values outside the domain.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 1.11; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Polynomial limit 4 and assigned value 7 checked; endpoint caveat avoids inappropriate two-sided demand at domain boundaries.",
+      "checks": [
+        {
+          "operation": "power",
+          "operands": [
+            2,
+            2
+          ],
+          "expected": 4,
+          "evidence": "limit at 2 is 4"
+        }
+      ],
+      "contentHash": "5118c197e8480504e3dc75b4e6f670626b6962bed4aea510d9e36cefbadef71c"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-1-12",
+    "topicNumber": "1.12",
+    "unitNumber": 1,
+    "title": "Confirming Continuity over an Interval",
+    "status": "published",
+    "overview": "Continuity on an interval requires continuity throughout that interval, not just at a few sampled inputs. Analyze the function’s domain and any piecewise boundaries before applying continuity over a larger region.",
+    "keyConcepts": [
+      {
+        "title": "Familiar functions",
+        "text": "Polynomials are continuous for every real input. Rational functions are continuous wherever their denominators are nonzero; other familiar functions also retain their domain restrictions."
+      },
+      {
+        "title": "Interior and endpoints",
+        "text": "Interior points require the ordinary two-sided continuity condition. On a closed interval, use right continuity at the left endpoint and left continuity at the right endpoint."
+      },
+      {
+        "title": "Combinations",
+        "text": "Sums, products and suitable compositions of continuous functions are continuous where the required operations and component functions are defined."
+      }
+    ],
+    "example": {
+      "prompt": "Is r(x) = (x + 1)/(x − 3) continuous on [0, 2]? What about [0, 4]?",
+      "steps": [
+        "The denominator is nonzero throughout [0, 2], so the rational function is continuous there, with the appropriate endpoint conditions.",
+        "The larger interval includes x = 3, where r is undefined and unbounded nearby."
+      ],
+      "conclusion": "Thus r is not continuous on [0, 4]. It is continuous separately on intervals that avoid 3."
+    },
+    "misconception": "A function need not be continuous everywhere to be continuous on a particular interval. Conversely, checking only the endpoints does not certify the interior.",
+    "apTip": "Identify every domain restriction inside the proposed interval before invoking a theorem that requires continuity there.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 1.12; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Denominator zero only at 3; interval membership and endpoint one-sided conventions reviewed. No false blanket continuity claim for rational functions.",
+      "checks": [],
+      "contentHash": "69a306e8fcbceb919910cb6263a38b263498f82bae267262049031510a6807a9"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-1-13",
+    "topicNumber": "1.13",
+    "unitNumber": 1,
+    "title": "Removing Discontinuities",
+    "status": "published",
+    "overview": "A removable discontinuity can be repaired by assigning the point value equal to its finite nearby limit. For a piecewise definition, parameter choices must also make the relevant one-sided limits agree.",
+    "keyConcepts": [
+      {
+        "title": "Find the nearby formula",
+        "text": "Factor or otherwise simplify where appropriate, preserving the excluded input. The simplified expression determines nearby behavior, not automatically the original point value."
+      },
+      {
+        "title": "Match the limit",
+        "text": "If both sides approach the same finite number L, assigning f(c) = L makes the function continuous at c."
+      },
+      {
+        "title": "Recognize impossible repairs",
+        "text": "A jump or unbounded approach cannot be repaired by changing only the value at one point. A parameter in an entire branch may affect more than the point value."
+      }
+    ],
+    "example": {
+      "prompt": "Define f(x) = (x² − 9)/(x − 3) for x ≠ 3, and f(3) = k. Choose k for continuity.",
+      "steps": [
+        "For x ≠ 3, factor and cancel to obtain x + 3.",
+        "Both sides approach 6 as x approaches 3. Continuity requires k = 6."
+      ],
+      "conclusion": "With that assignment, the point value and the common limit agree. The cancellation alone did not set k; the continuity requirement did."
+    },
+    "misconception": "Choosing any value merely fills a plotted dot. Only the common limiting value removes this discontinuity.",
+    "apTip": "Write an equation matching the point value and limit, and verify both sides when the formulas differ across a boundary.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 1.13; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Factored quotient has common limit 6; k is isolated point value, so exactly one assignment repairs discontinuity.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            3,
+            3
+          ],
+          "expected": 6,
+          "evidence": "k = 6"
+        }
+      ],
+      "contentHash": "9389160aa6bfbb0395fdf7be7ecc347f56bfde8b5c4ca52161a5445e905dc0d0"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-1-14",
+    "topicNumber": "1.14",
+    "unitNumber": 1,
+    "title": "Connecting Infinite Limits and Vertical Asymptotes",
+    "status": "published",
+    "overview": "An infinite limit describes function values that become arbitrarily large in magnitude near a finite input. A vertical asymptote is associated with this unbounded nearby behavior, which may differ on the two sides.",
+    "keyConcepts": [
+      {
+        "title": "Signed behavior",
+        "text": "Positive infinity and negative infinity specify the direction of unbounded output. They are not ordinary real-number function values."
+      },
+      {
+        "title": "One-sided analysis",
+        "text": "Determine the sign of numerator and denominator on each side of a suspected asymptote. Opposite signs can produce different one-sided behaviors."
+      },
+      {
+        "title": "Algebraic caution",
+        "text": "A zero denominator can create a removable hole instead of an asymptote when a factor cancels. Analyze the remaining nearby expression before classifying."
+      }
+    ],
+    "example": {
+      "prompt": "Describe f(x) = 1/(x − 2) as x approaches 2.",
+      "steps": [
+        "For x slightly below 2, the denominator is small and negative, so f(x) tends to −∞.",
+        "For x slightly above 2, it is small and positive, so f(x) tends to +∞."
+      ],
+      "conclusion": "The line x = 2 is a vertical asymptote. There is no common signed two-sided infinite limit, and no finite two-sided limit."
+    },
+    "misconception": "Infinity is not a point height to substitute into a formula. A function may be defined separately at an asymptote’s x coordinate without removing its unbounded nearby behavior.",
+    "apTip": "Include the approach direction and sign in your conclusion. A sign chart can prevent confusing the left and right limits.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 1.14; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Denominator sign checked on both sides; asymptote distinguished from common signed limit and removable holes.",
+      "checks": [],
+      "contentHash": "095ef7ef96c611d8b6053506f983f9f813780919ee6118c7a0cbae0315dc00ed"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-1-15",
+    "topicNumber": "1.15",
+    "unitNumber": 1,
+    "title": "Connecting Limits at Infinity and Horizontal Asymptotes",
+    "status": "published",
+    "overview": "A limit at infinity describes long-run behavior as the input grows without bound in a specified direction. A finite limiting output determines a horizontal asymptote on that end of the graph.",
+    "keyConcepts": [
+      {
+        "title": "Compare dominant terms",
+        "text": "For a rational function, divide by the highest power in the denominator or compare leading degrees. Terms with negative powers of x vanish as magnitude grows."
+      },
+      {
+        "title": "Analyze both ends",
+        "text": "Behavior as x → +∞ and x → −∞ can differ. A conclusion for one direction does not automatically establish the other."
+      },
+      {
+        "title": "Interpret asymptotes",
+        "text": "A horizontal asymptote concerns end behavior. A graph may cross that line at a finite input without contradicting the limiting statement."
+      }
+    ],
+    "example": {
+      "prompt": "Find the end limits of r(x) = (3x² + 1)/(2x² − 5).",
+      "steps": [
+        "Divide numerator and denominator by x² to obtain (3 + 1/x²)/(2 − 5/x²) for x ≠ 0.",
+        "As x approaches either positive or negative infinity, both reciprocal-square terms approach zero."
+      ],
+      "conclusion": "Both limits are 3/2, so y = 3/2 is the horizontal asymptote on both ends."
+    },
+    "misconception": "A horizontal asymptote is not a barrier the graph can never touch or cross. It also says nothing by itself about continuity at finite inputs.",
+    "apTip": "Show which terms vanish and retain signs when analyzing different ends. Do not confuse a finite input approaching a vertical asymptote with an input approaching infinity.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 1.15; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Dividing by x² independently checked; limiting denominator 2 is nonzero, and reciprocal-square behavior agrees on both ends.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            3,
+            2
+          ],
+          "expected": 1.5,
+          "evidence": "3/2"
+        }
+      ],
+      "contentHash": "cd0ab64b3a70524d84d633c7694a8bbadbdb1d59a2eb983399202b93fe687473"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-1-16",
+    "topicNumber": "1.16",
+    "unitNumber": 1,
+    "title": "Working with the Intermediate Value Theorem (IVT)",
+    "status": "published",
+    "overview": "The Intermediate Value Theorem guarantees that a continuous function takes every output value between its endpoint outputs. It establishes existence within an interval without necessarily locating a solution or proving it unique.",
+    "keyConcepts": [
+      {
+        "title": "Continuity hypothesis",
+        "text": "The function must be continuous on the entire closed interval [a, b]. A jump can skip intermediate values, so endpoint comparisons alone are insufficient."
+      },
+      {
+        "title": "Target condition",
+        "text": "Choose an output L strictly between f(a) and f(b) to guarantee some interior c with f(c) = L. The target is an output, not an input."
+      },
+      {
+        "title": "Root application",
+        "text": "Opposite-sign endpoint values place zero between the outputs. Combined with continuity, this guarantees at least one zero between the endpoints."
+      }
+    ],
+    "example": {
+      "prompt": "Show that f(x) = x³ + x − 1 has a root between 0 and 1.",
+      "steps": [
+        "As a polynomial, f is continuous on [0, 1]. Its endpoint values are f(0) = −1 and f(1) = 1.",
+        "Zero lies strictly between −1 and 1, so the theorem guarantees c in (0, 1) with f(c) = 0."
+      ],
+      "conclusion": "This argument proves existence. Establishing a unique root or a numerical approximation would require additional reasoning."
+    },
+    "misconception": "The theorem does not guarantee exactly one solution, nor does it apply across a discontinuity simply because endpoint signs differ.",
+    "apTip": "State continuity, give the endpoint outputs, place the target between them and conclude existence on the correct open interval.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 1.16; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Endpoint evaluations independently checked. Existence conclusion deliberately does not claim uniqueness from IVT alone.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            1,
+            1,
+            -1
+          ],
+          "expected": 1,
+          "evidence": "f(1) = 1"
+        }
+      ],
+      "contentHash": "fd3a8088b6eedbccba8ba7c485aae4e3fe7835e904a1c9349f79d7195157d40e"
+    }
+  }
+]

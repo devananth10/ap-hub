@@ -84,6 +84,6 @@ The workspace shell supports any registered topic, with optional notes and publi
 
 ## Summary and practice boundaries
 
-The existing six-bullet Topic 1.5 recap is original prototype text. Other topics honestly state when no sample summary exists. No video has been analyzed, no transcript fetched and no AI API connected. The 1,001 original Chemistry MCQs are already published and unchanged; scores are session-only. FRQs and mixed practice remain unavailable. Do not copy College Board questions without permission.
+The former summary demo is replaced by original, pre-written Topic Summaries in validated batches. Current availability is recorded in content-drafts/topic-summaries/PROGRESS.json; unavailable topics say their summary is being prepared. No video is analyzed, no transcript fetched and no AI API connected. See TOPIC_SUMMARIES.md for scope and publication checks. All 2,640 existing MCQs remain published and unchanged; scores are session-only. FRQs and mixed practice remain unavailable. Do not copy College Board questions without permission.
 
 Human Geography initial exception: the owner’s automatic-video-approval update authorizes only the 136 verified initial Mr. Sinn/Heimler URLs in INITIAL_HUMAN_GEOGRAPHY_APPROVAL.json. It supersedes the earlier pending-only attachment instruction. Thirteen unmapped extras remain unpublished, and future collections/replacements require explicit authorization. See HUMAN_GEOGRAPHY.md.

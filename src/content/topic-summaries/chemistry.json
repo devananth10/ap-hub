@@ -1,0 +1,502 @@
+[
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "moles",
+    "topicNumber": "1.1",
+    "unitNumber": 1,
+    "title": "Moles and Molar Mass",
+    "status": "published",
+    "overview": "A mole connects laboratory-scale mass with numbers of microscopic particles. Use the identity of the substance to decide whether you are counting atoms, molecules or formula units before choosing a conversion factor.",
+    "keyConcepts": [
+      {
+        "title": "Molar mass",
+        "text": "Add the atomic masses indicated by the chemical formula. Molar mass has units of grams per mole; subscripts affect this sum."
+      },
+      {
+        "title": "Conversions",
+        "text": "Use n = m/M and N = nNₐ, with Nₐ approximately 6.022 × 10²³ particles per mole. Cancel units at every step."
+      },
+      {
+        "title": "Particle identity",
+        "text": "A mole of molecules is not necessarily a mole of atoms. Multiply by the relevant subscript when counting atoms within a compound."
+      }
+    ],
+    "example": {
+      "prompt": "How many oxygen atoms are in 8.80 g of CO₂? Use M(CO₂) = 44.0 g/mol.",
+      "steps": [
+        "Convert mass: 8.80/44.0 = 0.200 mol CO₂.",
+        "Each molecule contains two oxygen atoms: 0.200 × 2 = 0.400 mol O atoms."
+      ],
+      "conclusion": "Multiply by Nₐ: 0.400 × 6.022 × 10²³ = 2.41 × 10²³ oxygen atoms, to three significant figures."
+    },
+    "misconception": "Equal mole amounts contain equal numbers of the specified entities, not equal masses. Compare formulas and molar masses before making a mass claim.",
+    "apTip": "Write the particle name next to each numerical answer. This prevents confusing total atoms with molecules when interpreting a particulate diagram.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 1.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Recomputed mass-to-mole conversion and oxygen multiplicity separately. Avogadro factor counts atoms after, not before, the factor of two.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            8.8,
+            44
+          ],
+          "expected": 0.2,
+          "evidence": "0.200 mol"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            0.2,
+            2
+          ],
+          "expected": 0.4,
+          "evidence": "0.400 mol"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            0.4,
+            6.022e+23
+          ],
+          "expected": 2.4088e+23,
+          "evidence": "2.41 × 10²³"
+        }
+      ],
+      "contentHash": "2793881e6a133dca1625fff12000f06a5058c39cc0b68630ccae73c038514b35"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "mass-spectra",
+    "topicNumber": "1.2",
+    "unitNumber": 1,
+    "title": "Mass Spectra of Elements",
+    "status": "published",
+    "overview": "A mass spectrum identifies isotopes through their mass-to-charge ratios and relative abundances. For the singly charged atomic ions typically used in introductory isotope problems, peak positions approximate isotope masses rather than average atomic mass.",
+    "keyConcepts": [
+      {
+        "title": "Isotopes",
+        "text": "Isotopes of one element share a proton count but differ in neutron count. Their chemical identities are therefore the same despite different masses."
+      },
+      {
+        "title": "Peak abundance",
+        "text": "Relative peak heights or areas represent isotope abundance under the stated measurement convention. Convert percentages to fractions and normalize ratios when needed."
+      },
+      {
+        "title": "Weighted average",
+        "text": "Calculate average atomic mass by multiplying each isotope mass by its fractional abundance, then adding the contributions. The result lies between the isotope masses."
+      }
+    ],
+    "example": {
+      "prompt": "A hypothetical element has isotopes of mass 62.0 u and 64.0 u at abundances of 75.0% and 25.0%. Find its average atomic mass.",
+      "steps": [
+        "Use fractions 0.750 and 0.250, whose sum is one.",
+        "Calculate 62.0(0.750) + 64.0(0.250) = 46.5 + 16.0."
+      ],
+      "conclusion": "The weighted mean is 62.5 u, closer to the more abundant lighter isotope."
+    },
+    "misconception": "The tallest peak is the most abundant isotope, not automatically the average mass. A mean need not coincide with an actual isotope peak.",
+    "apTip": "Check whether the problem specifies atomic ions or molecular fragments before assigning peaks. Explain averages using abundance as well as mass.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 1.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Weighted contributions independently recomputed; hypothetical masses avoid confusing mass number with measured isotope mass.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            46.5,
+            16
+          ],
+          "expected": 62.5,
+          "evidence": "62.5 u"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            62,
+            0.75
+          ],
+          "expected": 46.5,
+          "evidence": "46.5"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            64,
+            0.25
+          ],
+          "expected": 16,
+          "evidence": "16.0"
+        }
+      ],
+      "contentHash": "691f44d5b462eb0810bc6035b3e1add41d113ba6b40282b3c5aa4852969653bb"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "composition",
+    "topicNumber": "1.3",
+    "unitNumber": 1,
+    "title": "Elemental Composition of Pure Substances",
+    "status": "published",
+    "overview": "A pure compound has a fixed ratio of its constituent elements. Elemental mass data can reveal an empirical formula, while a separate molar-mass measurement can determine the molecular formula.",
+    "keyConcepts": [
+      {
+        "title": "Mass fractions",
+        "text": "Divide an element’s mass contribution in one mole by the compound’s molar mass. Multiply by 100 to express mass percent."
+      },
+      {
+        "title": "Empirical formula",
+        "text": "Convert each element’s mass to moles, divide by the smallest mole amount, then obtain whole-number ratios. Do not compare gram ratios directly."
+      },
+      {
+        "title": "Molecular formula",
+        "text": "Divide molecular molar mass by empirical-formula molar mass. This whole-number factor multiplies every empirical-formula subscript."
+      }
+    ],
+    "example": {
+      "prompt": "A pure carbon–hydrogen compound is 80.0% carbon and 20.0% hydrogen by mass. Use C = 12.0 and H = 1.00 g/mol; its molar mass is 30.0 g/mol.",
+      "steps": [
+        "For a 100 g sample, n(C) = 80.0/12.0 = 6.67 mol and n(H) = 20.0 mol.",
+        "Divide both by 6.67: the ratio is approximately 1:3, so the empirical formula is CH₃."
+      ],
+      "conclusion": "CH₃ has mass 15.0 g/mol. The factor 30.0/15.0 = 2 gives the molecular formula C₂H₆."
+    },
+    "misconception": "An empirical formula reports the simplest whole-number ratio; it need not represent an individual molecule.",
+    "apTip": "Use unrounded intermediate mole amounts when establishing ratios. Multiply all ratios together if a simple fraction remains.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 1.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Rechecked 80/12 and H:C = 3; empirical mass 15 and molecular factor 2 yield C2H6, with 24/30 = 80% carbon.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            20,
+            6.666666666666667
+          ],
+          "expected": 3,
+          "evidence": "1:3"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            30,
+            15
+          ],
+          "expected": 2,
+          "evidence": "30.0/15.0 = 2"
+        }
+      ],
+      "contentHash": "662cdcc0f3d0e789806946e60403eebe9c7b4a49ca3823ba30d18bdb2d9e7916"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "mixtures",
+    "topicNumber": "1.4",
+    "unitNumber": 1,
+    "title": "Composition of Mixtures",
+    "status": "published",
+    "overview": "A mixture contains substances physically combined in proportions that can vary. Its overall composition reflects the amounts of its components, rather than a single chemical formula describing every particle.",
+    "keyConcepts": [
+      {
+        "title": "Mixture versus compound",
+        "text": "A pure compound has a fixed composition and chemically bonded elements. A mixture can contain elements or compounds without forming a new chemical substance."
+      },
+      {
+        "title": "Mass accounting",
+        "text": "Component masses add to the total mass in a closed preparation. Mass fraction equals component mass divided by total mixture mass."
+      },
+      {
+        "title": "Separation evidence",
+        "text": "Physical methods exploit properties such as solubility, volatility or particle size. Choose a method that separates the actual components without assuming a chemical reaction."
+      }
+    ],
+    "example": {
+      "prompt": "A dry mixture contains 6.00 g NaCl and 4.00 g sand. Water dissolves the salt but not the sand. How much of the original mixture is NaCl by mass?",
+      "steps": [
+        "The initial total is 6.00 + 4.00 = 10.00 g.",
+        "The salt mass fraction is 6.00/10.00 = 0.600, or 60.0%."
+      ],
+      "conclusion": "Dissolving, filtering off sand and evaporating the water can recover salt; the added water is not part of the original dry-mixture mass."
+    },
+    "misconception": "A homogeneous appearance does not prove purity: a salt solution is uniform but contains multiple substances.",
+    "apTip": "Identify exactly which sample the denominator describes. Distinguish the original mixture from a later solution containing added solvent.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 1.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Closed initial mass balance and fraction checked; filtration removes insoluble sand while dissolved salt passes with water.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            6,
+            4
+          ],
+          "expected": 10,
+          "evidence": "10.00 g"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            6,
+            10
+          ],
+          "expected": 0.6,
+          "evidence": "0.600"
+        }
+      ],
+      "contentHash": "7ce849a3a1d2180d7814ece6df68f51349d56152049536179c5fa4977e0e2ec1"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "electron-configuration",
+    "topicNumber": "1.5",
+    "unitNumber": 1,
+    "title": "Atomic Structure and Electron Configuration",
+    "status": "published",
+    "overview": "An electron configuration describes how electrons occupy atomic energy levels and subshells. It connects atomic structure to periodic position and helps explain which electrons are removed when ions form.",
+    "keyConcepts": [
+      {
+        "title": "Subshell occupancy",
+        "text": "An s subshell holds up to two electrons and a p subshell up to six. Each orbital holds at most two electrons with opposite spins."
+      },
+      {
+        "title": "Ground-state arrangement",
+        "text": "Electrons occupy lower-energy available orbitals first. Within equal-energy orbitals, they occupy separate orbitals with parallel spins before pairing."
+      },
+      {
+        "title": "Ion formation",
+        "text": "Count electrons using atomic number and charge. For main-group cations, remove electrons from the outer occupied principal level; do not remove core electrons first."
+      }
+    ],
+    "example": {
+      "prompt": "Write the ground-state configurations of Mg and Mg²⁺, given atomic number 12.",
+      "steps": [
+        "Neutral Mg has twelve electrons: 1s² 2s² 2p⁶ 3s². The exponents sum to 12.",
+        "Mg²⁺ has lost two electrons from the outer 3s subshell, leaving ten electrons."
+      ],
+      "conclusion": "The ion is 1s² 2s² 2p⁶, or [Ne]. Its nucleus still contains twelve protons."
+    },
+    "misconception": "A positive ion has fewer electrons than its neutral atom, not fewer protons. Changing proton count would change the element.",
+    "apTip": "Check both the total electron count and the occupied outer level. Relate configuration to charge rather than memorizing a symbol alone.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 1.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Configuration totals independently counted: 2+2+6+2=12; cation loses 3s electrons, with protons unchanged.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            2,
+            2,
+            6,
+            2
+          ],
+          "expected": 12,
+          "evidence": "sum to 12"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            12,
+            2
+          ],
+          "expected": 10,
+          "evidence": "ten electrons"
+        }
+      ],
+      "contentHash": "e0ddf6a4e58d872faed4295ac908a37ea90ae69bde55ba9d2467ab0aba23ae1f"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "photoelectron-spectroscopy",
+    "topicNumber": "1.6",
+    "unitNumber": 1,
+    "title": "Photoelectron Spectroscopy",
+    "status": "published",
+    "overview": "Photoelectron spectroscopy measures the energy needed to eject electrons from occupied atomic subshells. Peak positions show binding energies, while relative peak intensities help identify the numbers of electrons represented.",
+    "keyConcepts": [
+      {
+        "title": "Binding energy",
+        "text": "A tightly attracted core electron generally has a larger binding energy than an outer electron. Read the axis direction because spectra may place larger energies on either side."
+      },
+      {
+        "title": "Peak occupancy",
+        "text": "Under the problem’s stated intensity model, relative peak area reflects electron population. Use both position and relative intensity to assign subshells."
+      },
+      {
+        "title": "Comparing atoms",
+        "text": "Nuclear charge, shielding and distance influence electron binding. Compare corresponding subshells rather than attributing every difference solely to electron count."
+      }
+    ],
+    "example": {
+      "prompt": "A simplified spectrum for one neutral atom shows three occupied subshell peaks, assigned 1s, 2s and 2p, with relative areas 2:2:3. Identify its electron count and outer configuration.",
+      "steps": [
+        "Add the populations: 2 + 2 + 3 = 7 electrons.",
+        "With a neutral atom, seven electrons imply seven protons, identifying nitrogen."
+      ],
+      "conclusion": "The configuration is 1s² 2s² 2p³. The 1s electrons are more strongly bound than the outer n = 2 electrons."
+    },
+    "misconception": "A peak is not one electron or one individual orbital. A subshell peak may represent several electrons.",
+    "apTip": "Use intensity and binding energy together, and state which attraction or shielding comparison supports an assignment.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 1.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Electron population gives Z=7 for the specified neutral atom. Core versus outer binding ordering checked; no axis-direction assumption or quantum calculation required.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            2,
+            2,
+            3
+          ],
+          "expected": 7,
+          "evidence": "7 electrons"
+        }
+      ],
+      "contentHash": "a8fa09b0381e7f272daa19ae00285ae32756688716a9cee3183113a515f41294"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "periodic-trends",
+    "topicNumber": "1.7",
+    "unitNumber": 1,
+    "title": "Periodic Trends",
+    "status": "published",
+    "overview": "Periodic trends emerge from competition between attraction to the nucleus, shielding by other electrons and the distances of occupied energy levels. Use these mechanisms to explain comparisons rather than relying only on arrow diagrams.",
+    "keyConcepts": [
+      {
+        "title": "Across a period",
+        "text": "Increasing nuclear charge with broadly similar core shielding generally draws valence electrons closer. Atomic radius tends to decrease while first ionization energy generally increases."
+      },
+      {
+        "title": "Down a group",
+        "text": "Additional principal levels place outer electrons farther from the nucleus and increase shielding. Atomic radius generally increases and first ionization energy generally decreases."
+      },
+      {
+        "title": "Exceptions and ions",
+        "text": "Subshell energies and electron pairing can interrupt simple ionization-energy trends. Within an isoelectronic series, greater proton count generally produces a smaller radius."
+      }
+    ],
+    "example": {
+      "prompt": "Compare the radii of O²⁻, F⁻ and Na⁺. Their atomic numbers are 8, 9 and 11.",
+      "steps": [
+        "Each ion has ten electrons: 8 + 2, 9 + 1 and 11 − 1.",
+        "Because their electron configurations match, compare nuclear attraction: eleven protons attract the same electron population more strongly than eight."
+      ],
+      "conclusion": "The radius order is O²⁻ > F⁻ > Na⁺. This comparison does not require assuming that all anions are larger than all cations."
+    },
+    "misconception": "More protons alone cannot explain every comparison across different principal energy levels; distance and shielding also matter.",
+    "apTip": "Name the particles and explain the attractive force. A trend arrow without a mechanism is an incomplete justification.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 1.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Isoelectronic counts and proton ordering checked independently. Trend exceptions are acknowledged, avoiding an absolute monotonic claim.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            8,
+            2
+          ],
+          "expected": 10,
+          "evidence": "ten electrons"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            11,
+            1
+          ],
+          "expected": 10,
+          "evidence": "eleven protons"
+        }
+      ],
+      "contentHash": "a674e2fe096d74e07b1b181e8cde829bdf081b1ed57fddd5a53cae4cfd074078"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "valence",
+    "topicNumber": "1.8",
+    "unitNumber": 1,
+    "title": "Valence Electrons and Ionic Compounds",
+    "status": "published",
+    "overview": "Valence electrons largely govern main-group bonding and common ionic charges. Ionic formulas express charge-neutral ratios of cations and anions in an extended solid, rather than isolated molecules.",
+    "keyConcepts": [
+      {
+        "title": "Valence patterns",
+        "text": "Main-group atoms in the same group generally have similar outer electron configurations. These patterns help predict electron loss or gain in familiar ionic compounds."
+      },
+      {
+        "title": "Charge balance",
+        "text": "Total positive and negative charge must cancel. Choose the smallest whole-number ratio of ions, keeping each ion’s identity and charge intact."
+      },
+      {
+        "title": "Formula interpretation",
+        "text": "Subscripts count ions in a formula-unit ratio. Parentheses keep a polyatomic ion together when more than one copy is required."
+      }
+    ],
+    "example": {
+      "prompt": "Determine the formula for an ionic compound containing Mg²⁺ and N³⁻.",
+      "steps": [
+        "Find the smallest shared charge magnitude: six. Three Mg²⁺ ions contribute +6, and two N³⁻ ions contribute −6.",
+        "The neutral ratio is therefore three magnesium ions to two nitride ions."
+      ],
+      "conclusion": "The formula is Mg₃N₂. The subscripts describe ion ratios; they do not change Mg²⁺ into Mg³⁺ or N³⁻ into N²⁻."
+    },
+    "misconception": "Ionic charge is not a subscript to copy directly. A plausible-looking formula can still carry a net charge.",
+    "apTip": "Check the signed charge sum after writing a formula. Use the formula-unit ratio when converting moles of compound into moles of a particular ion.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 1.8; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Charge products +6 and -6 cancel; 3:2 ratio is reduced. Main-group scope avoids unsupported transition-metal charge generalizations.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            6,
+            -6
+          ],
+          "expected": 0,
+          "evidence": "neutral ratio"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            3,
+            2
+          ],
+          "expected": 6,
+          "evidence": "+6"
+        }
+      ],
+      "contentHash": "0ce9a28d66e3c83e6ee0cc2bc4b72b3f7c97a475a73e4dede37c4b76e6d4cd78"
+    }
+  }
+]

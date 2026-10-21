@@ -362,3 +362,11 @@ kbd { display:flex; gap:3px; align-items:center; margin-left:auto; padding:0 4px
   .practice-options>label { font-size:14px; }
   .geo-table-wrap table { font-size:12px; min-width:260px; }
 }
+/* Original topic reviews share the lesson panel without replacing the player. */
+.topic-summary { font-size:14px; line-height:1.8; overflow-wrap:anywhere; }
+.topic-summary h3 { margin:24px 0 8px; font-size:15px; line-height:1.5; }
+.topic-summary .summary-provenance { font-size:12px; color:var(--muted); }
+.topic-summary li + li { margin-top:10px; }
+.topic-summary ol, .summary-concepts { padding-left:22px; }
+.topic-summary .summary-result { border-left:3px solid var(--teal); padding-left:14px; }
+.topic-summary .practice-table { font-size:13px; overflow-wrap:normal; }

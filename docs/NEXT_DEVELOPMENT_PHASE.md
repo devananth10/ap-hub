@@ -1,5 +1,7 @@
 # Authorized development order — October 20, 2026
 
+Status October 21: all 2,640 MCQs are complete; Geography's final audit is saved at b0ad13d. Shared UI phases 1–2 below are complete at a0700d9. The Topic Summary system is implemented and publishing original reviews in checked batches; exact counts and next topics are in content-drafts/topic-summaries/PROGRESS.json. Continue the summary phase rather than regenerating question banks. The 240-summary target is not yet complete.
+
 The owner's latest instruction explicitly requires completing **all 748 Human Geography MCQs across 68 official topics**, then passing the full bank/content/Practice audit and saving a verified GitHub checkpoint **before** starting the following UI or summary work. Current counts and the exact next topic are in `content-drafts/human-geography/PROGRESS.json`. Preserve valid unfinished work and never run concurrent generators or regenerate complete sets.
 
 ## After the complete Geography bank passes its final audit
