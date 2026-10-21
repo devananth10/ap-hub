@@ -14,6 +14,7 @@
     "typecheck": "tsc --noEmit",
     "test": "pnpm test:unit && pnpm test:smoke",
     "test:unit": "node --experimental-strip-types --test tests/resource-policy.test.mjs tests/practice-artwork.test.mjs tests/practice-session.test.mjs tests/video-resources.test.mjs tests/feedback.test.mjs tests/calculus-bank.test.mjs tests/human-geography.test.mjs tests/geography-stimuli.test.mjs tests/topic-summaries.test.mjs",
+    "test:accounts": "node --experimental-strip-types --test tests/accounts.test.mjs tests/accounts-database.test.mjs",
     "feedback:admin": "node --experimental-strip-types scripts/feedback-admin.mjs",
     "test:smoke": "node tests/smoke.mjs",
     "test:publication": "node --experimental-strip-types scripts/check-chemistry-publication.mjs && node --experimental-strip-types tests/chemistry-publication-smoke.mjs",
@@ -27,17 +28,20 @@
     "test:summaries:complete": "node --experimental-strip-types scripts/check-topic-summaries.mjs --write --complete"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.118.0",
+    "lucide-react": "^0.468.0",
     "next": "^16.0.0",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "lucide-react": "^0.468.0"
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "^0.5.10",
     "@tailwindcss/postcss": "^4.1.0",
-    "tailwindcss": "^4.1.0",
-    "typescript": "^5.9.0",
     "@types/node": "^24.0.0",
     "@types/react": "^19.2.0",
-    "@types/react-dom": "^19.2.0"
+    "@types/react-dom": "^19.2.0",
+    "tailwindcss": "^4.1.0",
+    "typescript": "^5.9.0"
   }
 }
