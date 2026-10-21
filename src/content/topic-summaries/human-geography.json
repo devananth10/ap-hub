@@ -2526,5 +2526,548 @@
       "checks": [],
       "contentHash": "b7b7b97c99352e5a2ce57923d720caa9ab7d09241127cd0b431f44542ba2f1df"
     }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-6-1",
+    "topicNumber": "6.1",
+    "unitNumber": 6,
+    "title": "The Origin and Influences of Urbanization",
+    "status": "published",
+    "overview": "Urbanization concerns the growing importance of urban settlement, commonly measured by an increasing urban share of population. Cities’ origins and growth reflect food surpluses, institutions, trade, transport and economic change.",
+    "keyConcepts": [
+      {
+        "title": "Early urban development",
+        "text": "Agricultural surpluses supported specialization and concentrated institutions. Water access, defensible sites and exchange networks helped some settlements develop urban functions."
+      },
+      {
+        "title": "Growth processes",
+        "text": "Migration, natural increase and reclassification can change urban population totals. Industrial and service employment can attract people without being the only cause of growth."
+      },
+      {
+        "title": "Number versus share",
+        "text": "Absolute urban population and the percentage urban are different measures. One can rise while the other falls if the total population changes differently."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional country’s urban population rises from 4 to 5 million while total population rises from 10 to 14 million.",
+      "steps": [
+        "Initially, 4/10 = 40% of residents are urban.",
+        "Later, 5/14 ≈ 35.7% are urban, despite the larger urban count."
+      ],
+      "conclusion": "The figures show growth in urban numbers but a decline in the measured urban share. They do not reveal whether migration, births or boundary changes caused the pattern."
+    },
+    "misconception": "A growing city population does not automatically establish a rising national urbanization percentage.",
+    "apTip": "Identify the measure, spatial boundary and time period, then connect a proposed growth process to evidence rather than treating every increase as migration.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 6.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Population shares independently computed; absolute-versus-relative distinction and unknown growth mechanisms explicit.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            4,
+            10
+          ],
+          "expected": 0.4,
+          "evidence": "40%"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            5,
+            14
+          ],
+          "expected": 0.35714285714285715,
+          "evidence": "35.7%"
+        }
+      ],
+      "contentHash": "87740d9e73b1ccda5dc9aa412c66268ab7c012df899d14e5124704adddbac7e0"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-6-2",
+    "topicNumber": "6.2",
+    "unitNumber": 6,
+    "title": "Cities Across the World",
+    "status": "published",
+    "overview": "Cities differ in size, growth, functions and regional context. Comparing them requires consistent boundaries and definitions because an administrative city, a built-up area and a metropolitan region can contain different populations.",
+    "keyConcepts": [
+      {
+        "title": "Urban boundaries",
+        "text": "Municipal borders reflect administration, while metropolitan definitions often include connected surrounding settlements and commuting relationships. Compare like units before ranking cities."
+      },
+      {
+        "title": "Scale and growth",
+        "text": "A megacity is commonly defined as an urban agglomeration with at least ten million residents. Population size does not by itself describe wealth, infrastructure quality or global influence."
+      },
+      {
+        "title": "Regional diversity",
+        "text": "Historical development, migration, economic opportunities and planning shape different urban forms. Broad world-region patterns do not characterize every city equally."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional central municipality has 2 million residents, but its connected metropolitan region contains 8 million. A second city reports 5 million using a metropolitan boundary.",
+      "steps": [
+        "Comparing 2 million directly with 5 million would mix administrative and functional units.",
+        "Using metropolitan definitions gives a more comparable 8-versus-5-million comparison."
+      ],
+      "conclusion": "Even then, check dates and definition details before concluding which region is larger or growing faster."
+    },
+    "misconception": "A city’s official municipal count may omit much of the population participating in its daily urban economy.",
+    "apTip": "State the boundary and measure, and distinguish population size from growth rate, development conditions and economic function.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 6.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Administrative/functional population distinction and like-boundary comparison reviewed; megacity size not conflated with development or global-city role.",
+      "checks": [],
+      "contentHash": "488be1b9c8b3673eec725941fe61e1e85af5aeec06e2a3867e378c6686299a4f"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-6-3",
+    "topicNumber": "6.3",
+    "unitNumber": 6,
+    "title": "Cities and Globalization",
+    "status": "published",
+    "overview": "Cities participate in globalization through flows of finance, information, goods, people and cultural activity. A city’s network role can matter more than its population rank alone.",
+    "keyConcepts": [
+      {
+        "title": "Global-city functions",
+        "text": "Concentrations of corporate coordination, specialized services and international connections can give a city influence beyond its own region."
+      },
+      {
+        "title": "Networks",
+        "text": "Air transport, ports, digital infrastructure and business relationships link cities in different roles. Not every connected city controls the same activities or captures equal benefits."
+      },
+      {
+        "title": "Local consequences",
+        "text": "Global investment can create jobs and services while also increasing exposure to distant shocks or intensifying local inequalities. Outcomes vary across neighborhoods and occupations."
+      }
+    ],
+    "example": {
+      "prompt": "Fictional City A has four million residents and hosts major international financial and corporate networks. City B has twelve million residents but mainly serves a domestic market.",
+      "steps": [
+        "B is larger by population, while A may have greater influence in the specified international coordination networks.",
+        "The comparison separates city size from global functional reach."
+      ],
+      "conclusion": "A complete assessment would examine the actual flows and decision-making roles, not simply count headquarters or assume every resident benefits equally."
+    },
+    "misconception": "A very large urban population does not automatically make a city a leading global command center.",
+    "apTip": "Identify the type of flow or control function and connect it to a local consequence, while distinguishing network influence from population size.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 6.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Specified network roles support conditional functional comparison; no automatic inference from one institution or uniform resident benefit.",
+      "checks": [],
+      "contentHash": "f87f990863204f21d66071c134beb1f29fb54dbf83d97388f7cbe9d3c54c3792"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-6-4",
+    "topicNumber": "6.4",
+    "unitNumber": 6,
+    "title": "The Size and Distribution of Cities",
+    "status": "published",
+    "overview": "City systems describe how settlements of different sizes and functions are distributed. Rank-size, primacy and central-place ideas highlight different patterns rather than interchangeable labels.",
+    "keyConcepts": [
+      {
+        "title": "Rank-size relationship",
+        "text": "An ideal rank-size pattern gives the nth city a population near the largest city’s population divided by n. It is an approximate model, not a required national law."
+      },
+      {
+        "title": "Primacy",
+        "text": "A primate city is disproportionately dominant in population and important functions. Examine the settlement system and influence rather than relying on one universal numerical cutoff."
+      },
+      {
+        "title": "Central places",
+        "text": "Services have demand thresholds and consumer travel ranges. Higher-order specialized services usually require larger catchments than frequently used local services."
+      }
+    ],
+    "example": {
+      "prompt": "The largest city in a fictional system has 1.2 million residents. What would rank-size predict for ranks two and three?",
+      "steps": [
+        "Divide by rank: the predictions are 600,000 and 400,000.",
+        "If actual values are 300,000 and 200,000 and the first city also dominates national functions, the pattern is consistent with stronger primacy than the ideal rank-size relationship."
+      ],
+      "conclusion": "Three population figures alone do not explain why the pattern developed; history and network roles require additional evidence."
+    },
+    "misconception": "Threshold is the demand needed to support a service; range is the distance consumers are willing or able to travel.",
+    "apTip": "Name which model the evidence addresses and separate a size-pattern calculation from a causal explanation.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 6.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Rank divisions independently recomputed; primacy qualified by stated functional dominance and no fixed cutoff. Threshold/range distinction checked.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            1200000,
+            2
+          ],
+          "expected": 600000,
+          "evidence": "600,000"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            1200000,
+            3
+          ],
+          "expected": 400000,
+          "evidence": "400,000"
+        }
+      ],
+      "contentHash": "48601d434ed9ad16419303dfd848e9ad8be5af0d6abb4b64de915ff6c68e7309"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-6-5",
+    "topicNumber": "6.5",
+    "unitNumber": 6,
+    "title": "The Internal Structure of Cities",
+    "status": "published",
+    "overview": "Urban structure models simplify the arrangement of activities within cities. They highlight mechanisms such as land competition, transport corridors and multiple employment centers, but real cities combine historical layers and local conditions.",
+    "keyConcepts": [
+      {
+        "title": "Concentric zones",
+        "text": "The classic concentric model organizes successive land-use zones around a central business district. It assumes a simplified pattern of outward change."
+      },
+      {
+        "title": "Sectors",
+        "text": "The sector model emphasizes corridors or wedges extending from the center, often shaped by transport and established land values."
+      },
+      {
+        "title": "Multiple nuclei",
+        "text": "The multiple-nuclei model includes several activity centers, such as industry, airports and specialized business districts, rather than one organizing center alone."
+      },
+      {
+        "title": "Context",
+        "text": "Regional models and actual landscapes reflect colonial history, planning, informality and different development trajectories. A classic model is a comparison tool, not a universal map."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional city has an older downtown, a separate airport business cluster and an industrial employment center across the metropolitan area.",
+      "steps": [
+        "The several distinct activity nodes are consistent with a multiple-nuclei interpretation.",
+        "Transport routes and land compatibility can help explain why each cluster develops."
+      ],
+      "conclusion": "The pattern does not prove the absence of a strong downtown or establish the city’s country from shape alone."
+    },
+    "misconception": "A model’s resemblance to part of a city does not certify that every assumption or zone applies.",
+    "apTip": "Identify a specific spatial feature, explain its organizing mechanism and state a limitation when applying a model.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 6.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Three classic models and contextual limitations reviewed; multiple nodes not mistaken for evidence of a particular national culture or no CBD.",
+      "checks": [],
+      "contentHash": "80dc4944447492a8bd133b1a460466760096586ba3621ebd34d4266da4e9cef9"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-6-6",
+    "topicNumber": "6.6",
+    "unitNumber": 6,
+    "title": "Density and Land Use",
+    "status": "published",
+    "overview": "Urban density and land use reflect competition for accessibility, space and amenities. Distinguish the number of residents from building height, employment concentration and the amount of land devoted to different activities.",
+    "keyConcepts": [
+      {
+        "title": "Density measures",
+        "text": "Population density divides residents by area. A district of tall office buildings can have high daytime employment but relatively few permanent residents."
+      },
+      {
+        "title": "Land competition",
+        "text": "Activities willing and able to pay for access can bid for central locations. Transport, zoning, technology and amenities can alter these rent patterns."
+      },
+      {
+        "title": "Urban form",
+        "text": "Mixed uses, residential segregation, suburban development and redevelopment shape density patterns. A single center-to-edge gradient does not describe every city."
+      }
+    ],
+    "example": {
+      "prompt": "Two fictional districts each cover 2 km². District A contains 10,000 residents; district B has 4,000 residents and many office towers.",
+      "steps": [
+        "Residential densities are 5,000 and 2,000 people per km², respectively.",
+        "B’s taller skyline does not make its residential density higher under the supplied counts."
+      ],
+      "conclusion": "To compare overall activity intensity, additional measures such as jobs, floor area or daytime population would be needed."
+    },
+    "misconception": "Building height is not a direct substitute for population density. The denominator and the kind of population being counted matter.",
+    "apTip": "Name the density measure, connect location choices to access or regulation and acknowledge variation within the metropolitan area.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 6.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Both per-area rates independently checked; office activity versus permanent-resident population kept distinct.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            10000,
+            2
+          ],
+          "expected": 5000,
+          "evidence": "5,000"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            4000,
+            2
+          ],
+          "expected": 2000,
+          "evidence": "2,000"
+        }
+      ],
+      "contentHash": "2f72d83f5f7884946bb01740247085dd89239241d754c6e55bf8a01816e99aa3"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-6-7",
+    "topicNumber": "6.7",
+    "unitNumber": 6,
+    "title": "Infrastructure",
+    "status": "published",
+    "overview": "Infrastructure includes the networks and facilities that support urban life, such as transport, water, sanitation, energy and communication. Its distribution and reliability affect access, health and economic opportunity.",
+    "keyConcepts": [
+      {
+        "title": "Network accessibility",
+        "text": "Straight-line distance can differ greatly from actual travel time or usable routes. Barriers, service frequency and cost shape effective access."
+      },
+      {
+        "title": "Capacity and maintenance",
+        "text": "Building a facility is only one part of providing a service. Demand, staffing, repair, financing and reliable operation affect its usefulness."
+      },
+      {
+        "title": "Equity",
+        "text": "Unequal infrastructure can reinforce neighborhood disadvantages. Compare availability and quality as well as total citywide provision."
+      }
+    ],
+    "example": {
+      "prompt": "Two fictional neighborhoods are each 2 km from a clinic in straight-line distance. A river barrier gives one a direct bridge route and the other a 10 km detour.",
+      "steps": [
+        "Equal map distance does not imply equal travel access.",
+        "The route network helps explain different travel burdens, with further differences possible from cost or service frequency."
+      ],
+      "conclusion": "A proposed connection could improve access, but evaluating it requires feasibility, safety, demand and distributional evidence rather than distance alone."
+    },
+    "misconception": "A citywide count of facilities does not establish that all residents can reach them reliably or afford their services.",
+    "apTip": "Link a specific network condition to a practical access outcome, and distinguish infrastructure presence from quality, reliability and usable access.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 6.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Euclidean-versus-network contrast and conditional improvement mechanism reviewed; no unsupported claim that proximity alone establishes equitable service.",
+      "checks": [],
+      "contentHash": "36117e217168d2f9699a188c996d0df720a3b123255e6d6dea159db52b1476b1"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-6-8",
+    "topicNumber": "6.8",
+    "unitNumber": 6,
+    "title": "Urban Sustainability",
+    "status": "published",
+    "overview": "Urban sustainability seeks to maintain environmental quality and human well-being over time. Strategies must be evaluated for social and economic consequences as well as their intended environmental benefits.",
+    "keyConcepts": [
+      {
+        "title": "Compact connections",
+        "text": "Mixed land use, walkable design and public transit can reduce some travel demands. Actual effects depend on accessibility, affordability and how residents use the system."
+      },
+      {
+        "title": "Land reuse",
+        "text": "Brownfield redevelopment can reuse previously developed land, but contaminated sites may require assessment and cleanup before safe new uses."
+      },
+      {
+        "title": "Tradeoffs",
+        "text": "Green space, growth boundaries and efficient buildings can have benefits while also affecting housing costs, displacement or development in nearby jurisdictions."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional city proposes converting a contaminated industrial site near transit into housing, shops and a park.",
+      "steps": [
+        "Reusing the site could limit demand for some outward expansion and support shorter trips.",
+        "Environmental assessment and remediation are necessary considerations rather than assuming the abandoned land is safe."
+      ],
+      "conclusion": "Affordability, existing community needs and transport capacity would help determine whether the project’s benefits are broadly shared."
+    },
+    "misconception": "A project labeled green is not automatically sustainable in every dimension. Resource savings can coexist with social costs.",
+    "apTip": "Identify a strategy’s mechanism and a measurable outcome, then discuss a relevant tradeoff or implementation condition rather than listing benefits alone.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 6.8; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Brownfield contamination/remediation and compact-access mechanisms checked; effects qualified by actual travel behavior and distribution rather than guaranteed by branding.",
+      "checks": [],
+      "contentHash": "303890f80ced1c3f3f87cbc541f45f922d5f35e61e0e114c1f29dc9f6e4062ca"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-6-9",
+    "topicNumber": "6.9",
+    "unitNumber": 6,
+    "title": "Urban Data",
+    "status": "published",
+    "overview": "Urban data reveal patterns only within their definitions, boundaries and collection limits. Combine quantitative indicators with contextual evidence to understand differences among neighborhoods and residents.",
+    "keyConcepts": [
+      {
+        "title": "Comparable units",
+        "text": "Check whether data describe municipalities, neighborhoods or metropolitan areas, and whether dates and variable definitions match."
+      },
+      {
+        "title": "Aggregation",
+        "text": "A citywide average can conceal unequal outcomes. Boundary choices and population weights can affect the pattern, so do not infer every resident’s condition from an area statistic."
+      },
+      {
+        "title": "Methods",
+        "text": "Census records, surveys, interviews, observation and GIS layers provide different evidence. Unregistered or informal activity may be missed by some official measures."
+      }
+    ],
+    "example": {
+      "prompt": "Two equally sized groups of commuters have mean journeys of 15 and 45 minutes. The combined mean is 30 minutes.",
+      "steps": [
+        "Equal commuter counts justify averaging the two means: (15 + 45)/2 = 30.",
+        "The citywide mean hides the difference between the groups and does not mean everyone travels for thirty minutes."
+      ],
+      "conclusion": "With unequal group sizes, a weighted average would be necessary; medians would require a different analysis."
+    },
+    "misconception": "Area-level averages cannot identify the experience of a particular individual. A precise figure can still represent incomplete coverage.",
+    "apTip": "Identify the numerator, denominator, population and geographic unit, then state what additional qualitative or disaggregated evidence would improve interpretation.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 6.9; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Equal-count mean computation and distinction from unequal weights/medians independently checked; ecological inference limitation explicit.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            60,
+            2
+          ],
+          "expected": 30,
+          "evidence": "= 30"
+        }
+      ],
+      "contentHash": "45ed3c6dfb07f3a094f5fcf9cb859e03728343ebc361898e60d8b675207bfad1"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-6-10",
+    "topicNumber": "6.10",
+    "unitNumber": 6,
+    "title": "Challenges of Urban Changes",
+    "status": "published",
+    "overview": "Urban change can involve reinvestment, displacement, suburban expansion and changing service needs. Evaluate who experiences the benefits and costs rather than assuming that a rising property value or a new building improves every resident’s situation.",
+    "keyConcepts": [
+      {
+        "title": "Reinvestment",
+        "text": "Gentrification involves neighborhood change associated with higher-income investment and residents, often raising affordability concerns. Not every repair or new business alone establishes the complete process."
+      },
+      {
+        "title": "Outward growth",
+        "text": "Suburbanization and sprawl can alter commuting, land consumption and infrastructure costs. Their impacts depend on density, connections and planning."
+      },
+      {
+        "title": "Unequal vulnerability",
+        "text": "Income, tenure, discrimination and historical investment patterns influence who can remain, move or access services during change."
+      }
+    ],
+    "example": {
+      "prompt": "In a fictional neighborhood, typical rent rises from 800 to 1,200 units while household incomes rise by 10%.",
+      "steps": [
+        "The rent increase is 400/800 = 50%, faster than the given income growth.",
+        "This supports concern about affordability pressure, but does not by itself prove how many households have been displaced."
+      ],
+      "conclusion": "Tenant turnover, eviction, housing supply and household circumstances would help evaluate actual outcomes."
+    },
+    "misconception": "An affordability risk is not identical to demonstrated displacement, and a neighborhood average does not describe every household.",
+    "apTip": "Explain a concrete process, calculate changes using the correct starting denominator and distinguish observed outcomes from plausible but unmeasured effects.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 6.10; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "50% rent growth independently computed; pressure distinguished from proven displacement or complete gentrification diagnosis.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            400,
+            800
+          ],
+          "expected": 0.5,
+          "evidence": "50%"
+        }
+      ],
+      "contentHash": "5434fa5ae79d0b33d1b9ffe5038354d3aff29a8200840ff0360e2aa13dac1023"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-6-11",
+    "topicNumber": "6.11",
+    "unitNumber": 6,
+    "title": "Challenges of Urban Sustainability",
+    "status": "published",
+    "overview": "Urban sustainability faces interacting environmental, financial and governance challenges. Progress at one scale can shift costs elsewhere, so assess the urban region as well as a single jurisdiction or project.",
+    "keyConcepts": [
+      {
+        "title": "Environmental pressures",
+        "text": "Heat, pollution, flooding, waste and resource demand affect neighborhoods differently. Exposure and ability to adapt can be unequal."
+      },
+      {
+        "title": "Implementation",
+        "text": "Infrastructure and environmental strategies need maintenance, funding, coordination and accessible services. Announcing a target does not establish a lasting outcome."
+      },
+      {
+        "title": "Regional connections",
+        "text": "Commuting, water systems and development cross municipal boundaries. A policy that improves one city’s indicator can move activity or burdens to surrounding places."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional city restricts new outward development inside its border, while nearby towns absorb housing demand and long commutes increase.",
+      "steps": [
+        "The city’s own land-conversion indicator may improve.",
+        "However, regional land use and transport impacts may differ from the city-only result."
+      ],
+      "conclusion": "Evaluation should compare the metropolitan pattern, housing access and actual travel outcomes rather than declaring success from one boundary-limited measure."
+    },
+    "misconception": "Environmental improvement within one administrative boundary does not automatically show a reduction in total regional impact.",
+    "apTip": "State the scale, population and time horizon of the measure, and explain a tradeoff or coordination problem using a specific flow or resource connection.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 6.11; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Boundary-shift example illustrates possible leakage, not an inevitable result of all growth controls. Regional versus local measurement and implementation limits reviewed.",
+      "checks": [],
+      "contentHash": "a101b7d55edb8a191ebe4df1c7a46c048e3c83908c40c3a9a1aeb4bdadcbd567"
+    }
   }
 ]

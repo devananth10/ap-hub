@@ -2664,5 +2664,519 @@
       "checks": [],
       "contentHash": "0662e47c649d077e56a09a49a577b3618edc3683397f94efe6a607d1185f2d2b"
     }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "energy",
+    "topicNumber": "6.1",
+    "unitNumber": 6,
+    "title": "Endothermic and Exothermic Processes",
+    "status": "published",
+    "overview": "Endothermic and exothermic describe energy transfer between a defined system and its surroundings. Establish the boundary before assigning a sign or interpreting a measured temperature change.",
+    "keyConcepts": [
+      {
+        "title": "Endothermic",
+        "text": "The system absorbs heat from its surroundings. At constant pressure under the usual reaction conditions, a positive enthalpy change describes heat entering the reacting system."
+      },
+      {
+        "title": "Exothermic",
+        "text": "The system releases heat to its surroundings, giving a negative reaction enthalpy at constant pressure. The surroundings may warm if other transfers are negligible."
+      },
+      {
+        "title": "System definition",
+        "text": "Reacting chemicals, surrounding solution and calorimeter can be treated as different parts of an energy balance. A temperature measurement often concerns the surroundings rather than the reaction directly."
+      }
+    ],
+    "example": {
+      "prompt": "A reaction in an insulated cup warms the surrounding solution. The solution gains 1.20 kJ, and calorimeter absorption is negligible.",
+      "steps": [
+        "The solution’s heat change is +1.20 kJ.",
+        "Energy conservation gives the reaction’s heat change as −1.20 kJ under the stated approximation."
+      ],
+      "conclusion": "The reaction is exothermic even though the measured solution temperature rises. The sign refers to the reacting system’s transfer."
+    },
+    "misconception": "A rise in thermometer reading does not imply a positive reaction enthalpy. Identify which part of the apparatus the thermometer measures.",
+    "apTip": "Label system and surroundings, then use opposite heat-transfer signs where the isolated energy balance justifies them.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 6.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "System/surroundings signs independently balanced with neglected calorimeter explicitly stated. Constant-pressure enthalpy qualification retained.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            1.2,
+            -1.2
+          ],
+          "expected": 0,
+          "evidence": "Energy conservation"
+        }
+      ],
+      "contentHash": "d7914c4687ef74fb5b357fef087f0aa073c48bc1b7e18961f9fcb5a5f0dadf3e"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-6-2",
+    "topicNumber": "6.2",
+    "unitNumber": 6,
+    "title": "Energy Diagrams",
+    "status": "published",
+    "overview": "Energy diagrams compare relative energies of states along a process. The endpoint difference gives the overall change, while any intervening barrier describes a different feature of the pathway.",
+    "keyConcepts": [
+      {
+        "title": "Endpoint comparison",
+        "text": "Products above reactants indicate an energy increase for the system; products below reactants indicate a decrease in the stated diagram."
+      },
+      {
+        "title": "Reference level",
+        "text": "An arbitrary common zero does not change the energy difference. Use the same units and basis for every level being compared."
+      },
+      {
+        "title": "Barrier distinction",
+        "text": "A transition-state peak is not the product energy. A large activation barrier can coexist with either an endothermic or exothermic overall change."
+      }
+    ],
+    "example": {
+      "prompt": "A simplified diagram assigns reactants 20 and products 75 kJ per stated reaction amount. The pathway reaches a peak at 130 kJ on that same scale.",
+      "steps": [
+        "The system’s endpoint change is 75 − 20 = +55 kJ, so the process is endothermic in this representation.",
+        "The forward barrier is 130 − 20 = 110 kJ, a different quantity."
+      ],
+      "conclusion": "Shifting every level down by 20 would change the labels to 0, 55 and 110 without changing either result."
+    },
+    "misconception": "A high peak does not tell you whether products lie above or below reactants. Kinetic barriers and net energy changes must be read separately.",
+    "apTip": "Identify the diagram’s energy basis and subtract final minus initial for the overall process, rather than using the height of the peak.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 6.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Endpoint and barrier differences independently checked under one common reference; reference-shift invariance verified.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            75,
+            20
+          ],
+          "expected": 55,
+          "evidence": "+55 kJ"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            130,
+            20
+          ],
+          "expected": 110,
+          "evidence": "110 kJ"
+        }
+      ],
+      "contentHash": "092f74060a0a82384091b55ccac38566e6f343475245d429d186cc11530f6130"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-6-3",
+    "topicNumber": "6.3",
+    "unitNumber": 6,
+    "title": "Heat Transfer and Thermal Equilibrium",
+    "status": "published",
+    "overview": "Heat transfer occurs because of a temperature difference and proceeds toward thermal equilibrium. Equal final temperatures do not mean equal transferred heats per gram or equal total stored energies.",
+    "keyConcepts": [
+      {
+        "title": "Direction",
+        "text": "Without an external driving process, heat transfers from the hotter object toward the cooler one. Heat is energy in transfer, not a material substance stored inside an object."
+      },
+      {
+        "title": "Energy balance",
+        "text": "For an isolated combined system, heat lost by one part equals heat gained by the others, including any apparatus that absorbs appreciable energy."
+      },
+      {
+        "title": "Mass and capacity",
+        "text": "Temperature changes depend on mass and heat capacity. A larger or higher-capacity object can transfer more energy for the same temperature change."
+      }
+    ],
+    "example": {
+      "prompt": "Mix equal masses of liquid water at 40°C and 20°C in an insulated container, neglecting its heat capacity and any phase change.",
+      "steps": [
+        "The two water samples have the same specific heat capacity, so their temperature-change magnitudes must match.",
+        "The equilibrium temperature is 30°C: one sample cools by 10°C and the other warms by 10°C."
+      ],
+      "conclusion": "Their heat transfers have opposite signs and equal magnitudes under these assumptions. Unequal masses or capacities would require a weighted energy balance."
+    },
+    "misconception": "The simple average is not a universal mixing rule. Its use here depends on equal masses, equal capacities and negligible other transfers.",
+    "apTip": "Write the energy balance before solving, and check whether heat loss, phase change or the container must be included.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 6.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Equal-mass/capacity cancellation independently gives 30°C; equal heat magnitude and opposite signs conditional on isolated setup.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            60,
+            2
+          ],
+          "expected": 30,
+          "evidence": "30°C"
+        }
+      ],
+      "contentHash": "7f1c7f1077513ed9b4297067f57cacccf0c615bdf8ad7abffe7c718bb3f9912c"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-6-4",
+    "topicNumber": "6.4",
+    "unitNumber": 6,
+    "title": "Heat Capacity and Calorimetry",
+    "status": "published",
+    "overview": "Calorimetry determines heat transfer from temperature changes and heat capacities. Use an energy balance to connect the measured solution or apparatus response to the reaction being studied.",
+    "keyConcepts": [
+      {
+        "title": "Heat equation",
+        "text": "For a temperature change without a phase change, q = mcΔT uses mass, specific heat capacity and final-minus-initial temperature change."
+      },
+      {
+        "title": "Capacity units",
+        "text": "Specific heat capacity is energy per mass per temperature change; total heat capacity is energy per temperature change. Match the equation to the supplied quantity."
+      },
+      {
+        "title": "Reaction balance",
+        "text": "If other transfers are negligible, q(reaction) = −q(solution). Include calorimeter heat or environmental loss when the model requires them."
+      }
+    ],
+    "example": {
+      "prompt": "A 100.0 g solution with specific heat capacity 4.18 J/(g·°C) warms by 5.00°C during a reaction. Neglect other heat transfers.",
+      "steps": [
+        "The solution absorbs q = 100.0(4.18)(5.00) = 2090 J = 2.09 kJ.",
+        "The reaction releases approximately 2.09 kJ, so its heat change is −2.09 kJ for the amount reacted."
+      ],
+      "conclusion": "A per-mole enthalpy would require dividing by the appropriate reaction amount, not reporting this sample heat as a universal molar value."
+    },
+    "misconception": "Use the mass of the solution described by the heat-capacity assumption, not automatically only the original solvent mass.",
+    "apTip": "Check sign, units, sample amount and which parts of the apparatus are included in the model.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 6.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "mcΔT and J-to-kJ conversion independently checked; sample heat distinguished from molar enthalpy.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            100,
+            4.18,
+            5
+          ],
+          "expected": 2090,
+          "evidence": "2090 J"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            2090,
+            1000
+          ],
+          "expected": 2.09,
+          "evidence": "2.09 kJ"
+        }
+      ],
+      "contentHash": "6c4a0a8c1b0819657534a171a6497aed5ab38eedaca688487848408125327b1a"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-6-5",
+    "topicNumber": "6.5",
+    "unitNumber": 6,
+    "title": "Energy of Phase Changes",
+    "status": "published",
+    "overview": "Phase changes transfer energy while changing particle arrangement and intermolecular potential energy. For a pure substance changing phase at constant pressure, temperature can remain constant while heat is absorbed or released.",
+    "keyConcepts": [
+      {
+        "title": "Latent heat",
+        "text": "During a specified phase change, q = nΔH(change) relates energy to moles converted. Use the phase-change enthalpy at the relevant conditions."
+      },
+      {
+        "title": "Direction and sign",
+        "text": "Melting and vaporization absorb energy; freezing and condensation release it. Reversing the same phase change reverses its enthalpy sign."
+      },
+      {
+        "title": "Heating curves",
+        "text": "Sloped segments describe temperature changes within a phase, while plateaus describe phase change under the stated equilibrium conditions. A full path may require adding several heat terms."
+      }
+    ],
+    "example": {
+      "prompt": "Melt 0.500 mol of ice already at its melting point, using ΔH(fusion) = 6.01 kJ/mol.",
+      "steps": [
+        "Only the melting term is needed because no initial warming is specified.",
+        "The heat absorbed is 0.500(6.01) = 3.005 kJ, reported as 3.01 kJ."
+      ],
+      "conclusion": "Freezing the same amount at the same conditions would release the same magnitude. Heating the resulting liquid further would require an additional mcΔT term."
+    },
+    "misconception": "A constant thermometer reading during a phase change does not mean zero energy transfer. The energy changes the state rather than requiring higher average kinetic energy.",
+    "apTip": "Divide a heating or cooling path into phase-specific segments and use the correct relation for each.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 6.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Latent heat multiplication and rounding checked; reverse sign and distinction from sensible heating retained.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            0.5,
+            6.01
+          ],
+          "expected": 3.005,
+          "evidence": "3.005 kJ"
+        }
+      ],
+      "contentHash": "04055af159cbaab479367ddd73296a3a3230ca8d014e95f955929fa15d0ca887"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-6-6",
+    "topicNumber": "6.6",
+    "unitNumber": 6,
+    "title": "Introduction to Enthalpy of Reaction",
+    "status": "published",
+    "overview": "An enthalpy of reaction is tied to the balanced equation, physical states and stated conditions. Scale the energy consistently with the amount of reaction rather than treating it as an amount-independent sample heat.",
+    "keyConcepts": [
+      {
+        "title": "Stoichiometric basis",
+        "text": "A thermochemical equation associates an enthalpy change with its coefficients as written. Multiplying every coefficient multiplies the corresponding enthalpy change."
+      },
+      {
+        "title": "Direction",
+        "text": "Reversing a reaction reverses the sign of its enthalpy. Exothermic in one direction means endothermic in the reverse at the same conditions."
+      },
+      {
+        "title": "State dependence",
+        "text": "Changing a product from liquid to gas changes the enthalpy difference. State labels therefore belong in a quantitative thermochemical description."
+      }
+    ],
+    "example": {
+      "prompt": "For the hypothetical reaction A₂ + B₂ → 2AB, the enthalpy change is −100 kJ per reaction as written. React 0.500 mol A₂ with sufficient B₂.",
+      "steps": [
+        "The amount is half the written one-mole A₂ basis.",
+        "The heat at constant pressure under the usual assumptions is 0.500(−100) = −50.0 kJ. One mole of AB is produced."
+      ],
+      "conclusion": "Reversing that actual amount of reaction would require +50.0 kJ, with the same specified states and conditions."
+    },
+    "misconception": "A coefficient of two for product does not mean every mole of that product corresponds to the full written reaction enthalpy.",
+    "apTip": "Write the enthalpy’s stoichiometric basis before converting quantities, then check both the reaction direction and physical states.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 6.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Reaction extent .5 produces 1 mol AB and heat -50; independent per-product basis -50 kJ/mol confirms result.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            0.5,
+            -100
+          ],
+          "expected": -50,
+          "evidence": "−50.0 kJ"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            0.5,
+            2
+          ],
+          "expected": 1,
+          "evidence": "One mole"
+        }
+      ],
+      "contentHash": "09450983308445ab68994a6e5df105f48481ec937b9965c678e05c10074528f3"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-6-7",
+    "topicNumber": "6.7",
+    "unitNumber": 6,
+    "title": "Bond Enthalpies",
+    "status": "published",
+    "overview": "Average bond enthalpies estimate reaction enthalpy by comparing the energy needed to break reactant bonds with the energy released when product bonds form. The method is approximate and must count every bond consistently.",
+    "keyConcepts": [
+      {
+        "title": "Breaking",
+        "text": "Breaking a bond requires energy input. Add the bond enthalpies of all bonds broken in the balanced gas-phase description."
+      },
+      {
+        "title": "Forming",
+        "text": "Forming bonds releases energy. Subtract the total product bond-formation magnitude from the bond-breaking total."
+      },
+      {
+        "title": "Limitations",
+        "text": "Tabulated average values depend on molecular environments. Phase changes and other contributions can make the estimate differ from an experimental reaction enthalpy."
+      }
+    ],
+    "example": {
+      "prompt": "Estimate H₂(g) + Cl₂(g) → 2HCl(g) using bond enthalpies H–H = 436, Cl–Cl = 243 and H–Cl = 431 kJ/mol.",
+      "steps": [
+        "Breaking one H–H and one Cl–Cl bond requires 436 + 243 = 679 kJ per written reaction.",
+        "Forming two H–Cl bonds releases a magnitude of 2(431) = 862 kJ."
+      ],
+      "conclusion": "The estimate is 679 − 862 = −183 kJ. The stronger total product bonding accounts for the exothermic estimate."
+    },
+    "misconception": "Energy is not released by breaking bonds alone. The overall release can occur because bond formation more than offsets the breaking cost.",
+    "apTip": "Balance the reaction, count bonds with coefficients and subtract broken-minus-formed in that order.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 6.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Bond counts, sums and subtraction independently checked; all species gas and average-bond approximation explicit.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            436,
+            243
+          ],
+          "expected": 679,
+          "evidence": "679 kJ"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            2,
+            431
+          ],
+          "expected": 862,
+          "evidence": "862 kJ"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            679,
+            862
+          ],
+          "expected": -183,
+          "evidence": "−183 kJ"
+        }
+      ],
+      "contentHash": "4c2af66ab7664b3f9cfc42fe7f9a3baec9e553bf97b5ef64bd9a582f03b8ccb6"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-6-8",
+    "topicNumber": "6.8",
+    "unitNumber": 6,
+    "title": "Enthalpy of Formation",
+    "status": "published",
+    "overview": "Standard enthalpies of formation provide a consistent reference for calculating reaction enthalpies. Each value describes forming one mole of a substance from elements in their specified reference states.",
+    "keyConcepts": [
+      {
+        "title": "Reference states",
+        "text": "An element in its standard reference form has formation enthalpy zero by convention. Other allotropes or phases are not automatically zero."
+      },
+      {
+        "title": "Reaction calculation",
+        "text": "Use the sum of coefficient-weighted product formation enthalpies minus the corresponding reactant sum. Include physical states and every nonzero contribution."
+      },
+      {
+        "title": "Units and basis",
+        "text": "Formation values are per mole of substance formed; the final reaction enthalpy follows the complete balanced equation as written."
+      }
+    ],
+    "example": {
+      "prompt": "For CO(g) + ½O₂(g) → CO₂(g), use ΔH°f(CO) = −111, ΔH°f(CO₂) = −394 and ΔH°f(O₂) = 0 kJ/mol.",
+      "steps": [
+        "The product sum is −394 kJ; the reactant sum is −111 + ½(0) = −111 kJ.",
+        "Subtract reactants from products: −394 − (−111) = −283 kJ per written reaction."
+      ],
+      "conclusion": "The negative result indicates an exothermic reaction under the stated reference conditions. Keeping parentheses around the negative reactant value prevents a sign error."
+    },
+    "misconception": "Zero formation enthalpy is a reference convention, not a claim that an element contains no energy.",
+    "apTip": "Check elemental reference forms, coefficients and states before calculating, and keep the product-minus-reactant order explicit.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 6.8; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Weighted formation sums and subtraction independently checked; zero reference correctly limited to the specified elemental state.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            -394,
+            -111
+          ],
+          "expected": -283,
+          "evidence": "−283 kJ"
+        }
+      ],
+      "contentHash": "ef020d647863ddcef63779e4a955236aa5463c7dfe1b6762236adb6864159da4"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-6-9",
+    "topicNumber": "6.9",
+    "unitNumber": 6,
+    "title": "Hess’s Law",
+    "status": "published",
+    "overview": "Hess’s Law states that a reaction’s enthalpy change depends on its initial and final states, not on the path used to connect them. Add thermochemical equations algebraically while applying the same changes to their enthalpies.",
+    "keyConcepts": [
+      {
+        "title": "Reversal",
+        "text": "Reverse an equation to reverse the sign of its enthalpy change. Reactants and products must switch together."
+      },
+      {
+        "title": "Scaling",
+        "text": "Multiply all coefficients and the enthalpy by the same factor. A fractional coefficient is acceptable when it represents the desired stoichiometric basis."
+      },
+      {
+        "title": "Addition",
+        "text": "Add equations and cancel identical species with matching physical states. Check the resulting net equation before accepting the energy sum."
+      }
+    ],
+    "example": {
+      "prompt": "Combine C(s) + O₂(g) → CO₂(g), ΔH = −394 kJ, with CO(g) + ½O₂(g) → CO₂(g), ΔH = −283 kJ, to form CO from the elements.",
+      "steps": [
+        "Reverse the second equation, giving CO₂ → CO + ½O₂ with ΔH = +283 kJ.",
+        "Add it to the first and cancel CO₂ plus the common oxygen amount."
+      ],
+      "conclusion": "The net is C(s) + ½O₂(g) → CO(g), with ΔH = −394 + 283 = −111 kJ."
+    },
+    "misconception": "Canceling symbols with different physical states can conceal an unaccounted phase-change enthalpy.",
+    "apTip": "Choose equation operations to build the target first, then sum energies and independently audit atoms, states and signs.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 6.9; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Equation addition, oxygen half-coefficient and sign reversal independently verified; energy agrees with CO formation value.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            -394,
+            283
+          ],
+          "expected": -111,
+          "evidence": "−111 kJ"
+        }
+      ],
+      "contentHash": "d1853afff0c3c99d2b944c3e1d0b293dfa37559f7a46c43bf0a12214c7c962a5"
+    }
   }
 ]

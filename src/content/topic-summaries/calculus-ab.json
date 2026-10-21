@@ -3158,5 +3158,789 @@
       ],
       "contentHash": "8144e37a52ff13279e70c6c0ac580290ddc6dbec471bb7bfa6332cc64c063785"
     }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "integrals",
+    "topicNumber": "6.1",
+    "unitNumber": 6,
+    "title": "Exploring Accumulations of Change",
+    "status": "published",
+    "overview": "Accumulation combines a changing rate with the interval over which it acts. Signed contributions add to net change, while an initial amount is needed to recover a final amount.",
+    "keyConcepts": [
+      {
+        "title": "Rate times interval",
+        "text": "A constant rate over an interval contributes rate multiplied by interval length. The units combine to give the units of the accumulated quantity."
+      },
+      {
+        "title": "Signed change",
+        "text": "Positive and negative rates add and remove the quantity. Net change differs from adding the magnitudes of every contribution."
+      },
+      {
+        "title": "Variable rates",
+        "text": "For a changing rate, short-interval products can approximate accumulation. Increasingly fine partitions motivate the definite integral."
+      }
+    ],
+    "example": {
+      "prompt": "A tank initially holds 10 L. Its net inflow is +2 L/min for three minutes, then −1 L/min for two minutes. Find final volume.",
+      "steps": [
+        "The first interval contributes +6 L and the second contributes −2 L.",
+        "Net change is 6 − 2 = 4 L, so final volume is 10 + 4 = 14 L."
+      ],
+      "conclusion": "Adding absolute changes would give 8 L of total volume-change magnitude, a different quantity from net change or final volume."
+    },
+    "misconception": "An accumulated change is not automatically the final amount. Include the initial value when the question asks how much is present afterward.",
+    "apTip": "Label the rate, time interval, sign and resulting units before adding contributions, especially when a rate changes direction.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 6.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent interval products and initial-value balance checked: +6,-2, net4, final14, absolute-change8.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            2,
+            3
+          ],
+          "expected": 6,
+          "evidence": "+6 L"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            6,
+            2
+          ],
+          "expected": 4,
+          "evidence": "4 L"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            10,
+            4
+          ],
+          "expected": 14,
+          "evidence": "14 L"
+        }
+      ],
+      "contentHash": "efc0a118c11f608452e414d4af1fc8b7ad91272cb8f38735ef451960a987f60e"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-6-2",
+    "topicNumber": "6.2",
+    "unitNumber": 6,
+    "title": "Approximating Areas with Riemann Sums",
+    "status": "published",
+    "overview": "Riemann sums approximate a definite integral by adding signed rectangle contributions. The partition widths and sample locations must match the interval and the chosen left, right or midpoint rule.",
+    "keyConcepts": [
+      {
+        "title": "Rectangle contribution",
+        "text": "Each term is a sampled function value multiplied by an interval width. With unequal subintervals, use each width separately."
+      },
+      {
+        "title": "Sample choice",
+        "text": "Left and right endpoint sums use different heights. For an increasing function with positive widths, left sums underestimate the integral and right sums overestimate it."
+      },
+      {
+        "title": "Refinement",
+        "text": "Finer partitions can improve approximation for suitable functions, but an individual numerical sum is not automatically exact. Midpoint accuracy depends on the function."
+      }
+    ],
+    "example": {
+      "prompt": "Approximate ∫ from 0 to 2 of x² dx using two equal subintervals.",
+      "steps": [
+        "Each width is 1. The left sum is (0² + 1²)(1) = 1.",
+        "The right sum is (1² + 2²)(1) = 5. The midpoint sum is (0.5² + 1.5²)(1) = 2.5."
+      ],
+      "conclusion": "Because x² increases on this interval, the left and right sums bound the integral in the stated directions; the midpoint value is another approximation."
+    },
+    "misconception": "Adding heights without widths generally gives the wrong quantity. Negative heights also contribute signed area rather than positive geometric area.",
+    "apTip": "Write the partition and sample inputs explicitly, then check monotonicity before asserting an overestimate or underestimate.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 6.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "All three sums independently recomputed; exact integral 8/3 confirms left1/right5 bounds and midpoint2.5 without asserting universal midpoint superiority.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            0.25,
+            2.25
+          ],
+          "expected": 2.5,
+          "evidence": "= 2.5"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            1,
+            4
+          ],
+          "expected": 5,
+          "evidence": "= 5"
+        }
+      ],
+      "contentHash": "d9379181a80c9238616495035e8782db8cd13222c71b7a97f605a8b71991e619"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-6-3",
+    "topicNumber": "6.3",
+    "unitNumber": 6,
+    "title": "Riemann Sums, Summation Notation, and Definite Integral Notation",
+    "status": "published",
+    "overview": "Definite integral notation records a limit of accumulated contributions over an interval. Summation notation makes the width, sample input and number of pieces explicit before that limiting process.",
+    "keyConcepts": [
+      {
+        "title": "Partition width",
+        "text": "For n equal pieces of [a, b], Δx = (b − a)/n. A right endpoint is a + iΔx for i = 1 through n."
+      },
+      {
+        "title": "Riemann-sum form",
+        "text": "A sum of f(a + iΔx)Δx approximates accumulation. For a continuous function, its limit as n grows without bound gives the definite integral."
+      },
+      {
+        "title": "Notation roles",
+        "text": "In ∫ from a to b of f(x) dx, a and b are bounds and x is a dummy integration variable. Changing its name consistently does not change the value."
+      }
+    ],
+    "example": {
+      "prompt": "Write a right-endpoint sum whose limit equals ∫ from 1 to 3 of x² dx.",
+      "steps": [
+        "The width is Δx = 2/n and the ith right endpoint is 1 + 2i/n.",
+        "The sum is (2/n)Σ from i = 1 to n of (1 + 2i/n)²."
+      ],
+      "conclusion": "As n → ∞, this approaches the stated integral. The final sampled input is 3, while the first is just to the right of 1."
+    },
+    "misconception": "The symbol n → ∞ describes a limit of finite sums, not substitution of an ordinary number called infinity.",
+    "apTip": "Recover the lower bound, interval length and function from a sum, and ensure that the width factor appears exactly once per term.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 6.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Endpoint formula and width independently checked: nth endpoint3, lower bound1, total width n(2/n)=2.",
+      "checks": [],
+      "contentHash": "d997ec158ab6a3fe177f26bccd4b8cfb117db7899358a6fdccce6a7b5e9178b1"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-6-4",
+    "topicNumber": "6.4",
+    "unitNumber": 6,
+    "title": "The Fundamental Theorem of Calculus and Accumulation Functions",
+    "status": "published",
+    "overview": "The Fundamental Theorem of Calculus connects accumulation and instantaneous change. For a continuous integrand, differentiating an accumulation with a variable upper bound returns the integrand at that bound, with any needed chain factor.",
+    "keyConcepts": [
+      {
+        "title": "Basic form",
+        "text": "If F(x) = ∫ from a to x of f(t) dt and f is continuous, then F′(x) = f(x). The fixed lower bound does not contribute a varying term."
+      },
+      {
+        "title": "Changing bound",
+        "text": "For an upper bound g(x), the derivative is f(g(x))g′(x) under the appropriate conditions. The chain rule still applies."
+      },
+      {
+        "title": "Dummy variable",
+        "text": "The integration variable t disappears after evaluation. Keep the bound variable separate from the dummy variable when reading or differentiating."
+      }
+    ],
+    "example": {
+      "prompt": "Differentiate G(x) = ∫ from 0 to x² of sin t dt.",
+      "steps": [
+        "The integrand at the upper bound is sin(x²).",
+        "The upper bound changes at rate 2x, so G′(x) = 2x sin(x²)."
+      ],
+      "conclusion": "As an independent check, G(x) = 1 − cos(x²); differentiating that explicit expression gives the same result."
+    },
+    "misconception": "Simply writing sin x would ignore both the actual upper bound and its rate of change.",
+    "apTip": "Check integrand continuity and identify the moving bound before substituting. You often can find the derivative without first evaluating the integral.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 6.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent explicit antiderivative evaluation and chain differentiation agree; sine continuity holds for every real bound.",
+      "checks": [],
+      "contentHash": "6da94b283aa6d8a43b8dafbcea79d8c0ef7ff2af0a7b4aabb49c02fa6b02787d"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-6-5",
+    "topicNumber": "6.5",
+    "unitNumber": 6,
+    "title": "Interpreting the Behavior of Accumulation Functions Involving Area",
+    "status": "published",
+    "overview": "An accumulation function’s behavior can be inferred from its integrand. The Fundamental Theorem turns a graph or formula for the rate into evidence about increasing behavior, extrema and concavity of the accumulated quantity.",
+    "keyConcepts": [
+      {
+        "title": "Monotonicity",
+        "text": "For F(x) = ∫ from a to x of f(t) dt with continuous f, F′ = f. Positive integrand values make F increase; negative values make it decrease."
+      },
+      {
+        "title": "Extrema",
+        "text": "A change in f from negative to positive supports a local minimum of F. A positive-to-negative change supports a local maximum."
+      },
+      {
+        "title": "Concavity",
+        "text": "Where f increases, F is concave up; where f decreases, F is concave down, subject to the relevant regularity conditions."
+      }
+    ],
+    "example": {
+      "prompt": "Analyze F(x) = ∫ from 0 to x of (t − 2) dt for 0 ≤ x ≤ 4.",
+      "steps": [
+        "F′(x) = x − 2 is negative before 2 and positive after 2.",
+        "Thus F decreases then increases, with a minimum at 2. Its value there is the signed triangular area −2."
+      ],
+      "conclusion": "The explicit formula F(x) = x²/2 − 2x confirms the minimum and shows F(0) = F(4) = 0."
+    },
+    "misconception": "A positive accumulated value and a positive current rate are different statements. The rate controls slope, not the entire past total.",
+    "apTip": "Label whether the supplied graph represents f or F, then translate sign and slope information through the theorem.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 6.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "FTC and independent antiderivative give F=.5x²-2x; minimum -2 at2 and endpoint zeros checked.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            2,
+            -4
+          ],
+          "expected": -2,
+          "evidence": "−2"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            8,
+            -8
+          ],
+          "expected": 0,
+          "evidence": "F(4) = 0"
+        }
+      ],
+      "contentHash": "a3bd5d498ed4b9f7a7e7905f49f4c5029fabdfe52e15127bb203795d07ee89ef"
+    },
+    "mathFigure": {
+      "title": "Accumulation and rate",
+      "description": "Solid F(x)=x²/2−2x; dashed F′(x)=x−2. F decreases before 2 and increases afterward.",
+      "caption": "Original sampled functions in the stated window.",
+      "xRange": [
+        0,
+        4
+      ],
+      "yRange": [
+        -2.5,
+        2.5
+      ],
+      "curves": [
+        {
+          "label": "F(x) = x²/2 − 2x",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              0.1,
+              -0.195
+            ],
+            [
+              0.2,
+              -0.38
+            ],
+            [
+              0.3,
+              -0.555
+            ],
+            [
+              0.4,
+              -0.72
+            ],
+            [
+              0.5,
+              -0.875
+            ],
+            [
+              0.6,
+              -1.02
+            ],
+            [
+              0.7,
+              -1.155
+            ],
+            [
+              0.8,
+              -1.28
+            ],
+            [
+              0.9,
+              -1.395
+            ],
+            [
+              1,
+              -1.5
+            ],
+            [
+              1.1,
+              -1.595
+            ],
+            [
+              1.2,
+              -1.68
+            ],
+            [
+              1.3,
+              -1.755
+            ],
+            [
+              1.4,
+              -1.82
+            ],
+            [
+              1.5,
+              -1.875
+            ],
+            [
+              1.6,
+              -1.92
+            ],
+            [
+              1.7,
+              -1.955
+            ],
+            [
+              1.8,
+              -1.98
+            ],
+            [
+              1.9,
+              -1.995
+            ],
+            [
+              2,
+              -2
+            ],
+            [
+              2.1,
+              -1.995
+            ],
+            [
+              2.2,
+              -1.98
+            ],
+            [
+              2.3,
+              -1.955
+            ],
+            [
+              2.4,
+              -1.92
+            ],
+            [
+              2.5,
+              -1.875
+            ],
+            [
+              2.6,
+              -1.82
+            ],
+            [
+              2.7,
+              -1.755
+            ],
+            [
+              2.8,
+              -1.68
+            ],
+            [
+              2.9,
+              -1.595
+            ],
+            [
+              3,
+              -1.5
+            ],
+            [
+              3.1,
+              -1.395
+            ],
+            [
+              3.2,
+              -1.28
+            ],
+            [
+              3.3,
+              -1.155
+            ],
+            [
+              3.4,
+              -1.02
+            ],
+            [
+              3.5,
+              -0.875
+            ],
+            [
+              3.6,
+              -0.72
+            ],
+            [
+              3.7,
+              -0.555
+            ],
+            [
+              3.8,
+              -0.38
+            ],
+            [
+              3.9,
+              -0.195
+            ],
+            [
+              4,
+              0
+            ]
+          ],
+          "start": "closed",
+          "end": "closed"
+        },
+        {
+          "label": "F′(x) = x − 2",
+          "dashed": true,
+          "points": [
+            [
+              0,
+              -2
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "start": "closed",
+          "end": "closed"
+        }
+      ],
+      "dots": [
+        {
+          "x": 2,
+          "y": -2
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-6-6",
+    "topicNumber": "6.6",
+    "unitNumber": 6,
+    "title": "Applying Properties of Definite Integrals",
+    "status": "published",
+    "overview": "Properties of definite integrals allow accumulation to be split, combined and reversed without requiring a complete integrand formula. Keep interval orientation and constant factors explicit.",
+    "keyConcepts": [
+      {
+        "title": "Add intervals",
+        "text": "An integral from a to c equals the sum from a to b and from b to c under the relevant integrability conditions."
+      },
+      {
+        "title": "Linearity",
+        "text": "Constants can be factored out, and integrals of sums can be split. The integral of a constant k over [a, b] is k(b − a)."
+      },
+      {
+        "title": "Orientation",
+        "text": "Reversing the bounds negates an integral; equal bounds give zero. Signed accumulation follows orientation rather than always representing positive area."
+      }
+    ],
+    "example": {
+      "prompt": "Suppose ∫ from 1 to 4 of f = 7 and ∫ from 1 to 2 of f = 3. Find ∫ from 4 to 2 of (2f(x) − 1) dx.",
+      "steps": [
+        "First, ∫ from 2 to 4 of f = 7 − 3 = 4.",
+        "Over [2, 4], the requested integrand accumulates 2(4) − (4 − 2) = 6."
+      ],
+      "conclusion": "Reverse the bounds to obtain −6. The constant term contributes the interval length, not just the number one."
+    },
+    "misconception": "Reversing bounds changes the sign once, not the function itself. Avoid accidentally reversing both and canceling the required sign.",
+    "apTip": "Write a short chain of equalities identifying the property used at each step, especially when several transformations combine.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 6.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Interval subtraction, linearity and final orientation independently checked:4, then6, then-6.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            7,
+            3
+          ],
+          "expected": 4,
+          "evidence": "= 4"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            8,
+            2
+          ],
+          "expected": 6,
+          "evidence": "= 6"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            -1,
+            6
+          ],
+          "expected": -6,
+          "evidence": "−6"
+        }
+      ],
+      "contentHash": "c3df11b68d8a595f1424438f5d697d3dbe7060d8ed9bafb177507557c36cc2eb"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-6-7",
+    "topicNumber": "6.7",
+    "unitNumber": 6,
+    "title": "The Fundamental Theorem of Calculus and Definite Integrals",
+    "status": "published",
+    "overview": "The evaluation form of the Fundamental Theorem of Calculus turns a definite integral into an endpoint difference of an antiderivative. It computes signed accumulation rather than automatically positive geometric area.",
+    "keyConcepts": [
+      {
+        "title": "Antiderivative",
+        "text": "Find F with F′ = f over the relevant interval. Continuity of f is a standard sufficient condition for the familiar evaluation theorem."
+      },
+      {
+        "title": "Endpoint difference",
+        "text": "Evaluate F(b) − F(a). This is not F(b − a), and the lower endpoint contribution must be subtracted with all its signs."
+      },
+      {
+        "title": "Interpretation",
+        "text": "The result is a number with accumulation units when the variables have context. Regions below the axis contribute negatively to the signed integral."
+      }
+    ],
+    "example": {
+      "prompt": "Evaluate ∫ from 1 to 3 of (2x + 1) dx.",
+      "steps": [
+        "An antiderivative is F(x) = x² + x.",
+        "Compute F(3) = 12 and F(1) = 2, then subtract to obtain 10."
+      ],
+      "conclusion": "The integrand is positive on this interval, so the signed integral also equals the geometric area there. That equality depends on the sign, not merely on using an integral."
+    },
+    "misconception": "A +C term is unnecessary in the final definite-integral value: the same constant cancels in the endpoint difference.",
+    "apTip": "Differentiate the proposed antiderivative as a check, preserve parentheses around the lower evaluation and interpret the sign in context.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 6.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Derivative check2x+1 and endpoint values12/2 independently verified; positive integrand justifies area interpretation.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            12,
+            2
+          ],
+          "expected": 10,
+          "evidence": "10"
+        }
+      ],
+      "contentHash": "4097fc08a51b903bbad12515a3a57b31328a9b532835f89cf3276aee877a85a2"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-6-8",
+    "topicNumber": "6.8",
+    "unitNumber": 6,
+    "title": "Finding Antiderivatives and Indefinite Integrals: Basic Rules and Notation",
+    "status": "published",
+    "overview": "An indefinite integral describes a family of antiderivatives on an interval. Finding one is the reverse of differentiation, but the algebraic rules differ from derivative rules.",
+    "keyConcepts": [
+      {
+        "title": "Power rule",
+        "text": "For n ≠ −1, an antiderivative of xⁿ is xⁿ⁺¹/(n + 1). Include the constant of integration for the full family."
+      },
+      {
+        "title": "Special forms",
+        "text": "The reciprocal 1/x integrates to ln|x| on intervals avoiding zero. Familiar exponential and trigonometric derivatives also supply basic antiderivatives."
+      },
+      {
+        "title": "Check by differentiation",
+        "text": "Differentiate the proposed result to recover the original integrand. This catches missing coefficients, incorrect signs and domain issues."
+      }
+    ],
+    "example": {
+      "prompt": "Find ∫(3x² − 4 + 1/x) dx on an interval that does not contain zero.",
+      "steps": [
+        "Integrate term by term: 3x² gives x³ and −4 gives −4x.",
+        "The reciprocal term gives ln|x|, so the family is x³ − 4x + ln|x| + C."
+      ],
+      "conclusion": "Differentiating returns 3x² − 4 + 1/x. The interval restriction matters because the original integrand is undefined at zero."
+    },
+    "misconception": "Using the power formula at n = −1 would divide by zero. That exponent requires the logarithmic form instead.",
+    "apTip": "Keep a constant for indefinite integrals and verify the derivative on the specified domain, rather than treating one algebraic expression as valid everywhere.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 6.8; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Termwise antiderivatives and derivative of ln|x| independently checked on connected intervals excluding zero; no BC-only technique required.",
+      "checks": [],
+      "contentHash": "feeffea7264e593efd2b978f51495fdb11c90b035ad1219cba4864ca9fcc7b22"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-6-9",
+    "topicNumber": "6.9",
+    "unitNumber": 6,
+    "title": "Integrating Using Substitution",
+    "status": "published",
+    "overview": "Substitution reverses the chain rule by replacing a repeated inner expression with a new variable. Match the differential factor carefully, including any numerical constant.",
+    "keyConcepts": [
+      {
+        "title": "Choose u",
+        "text": "Look for an inner function whose derivative appears elsewhere in the integrand. A useful substitution simplifies both the expression and its differential."
+      },
+      {
+        "title": "Keep variables consistent",
+        "text": "After substitution, express the complete integral in u. For a definite integral, either change bounds to u values or return fully to the original variable before using original bounds."
+      },
+      {
+        "title": "Verification",
+        "text": "Differentiate an indefinite result or compare a definite evaluation through a separate antiderivative. Missing factors commonly arise from an incomplete differential conversion."
+      }
+    ],
+    "example": {
+      "prompt": "Evaluate ∫ from 0 to 1 of 2x(x² + 1)³ dx.",
+      "steps": [
+        "Let u = x² + 1, so du = 2x dx. The bounds become u = 1 and u = 2.",
+        "The integral becomes ∫ from 1 to 2 of u³ du = [u⁴/4] from 1 to 2."
+      ],
+      "conclusion": "Its value is (16 − 1)/4 = 15/4. Differentiating (x² + 1)⁴/4 independently recovers the original integrand."
+    },
+    "misconception": "Do not use x bounds in a u integral unless they have been converted. Mixing variables can accidentally give a plausible but wrong number.",
+    "apTip": "Write du and the transformed bounds before integrating, then audit every remaining factor.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 6.9; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Chain-rule reverse check and transformed endpoints independently verified; final15/4 arithmetic correct.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            15,
+            4
+          ],
+          "expected": 3.75,
+          "evidence": "15/4"
+        }
+      ],
+      "contentHash": "cfc160bcb6b551719be604c6097ffa7beabb81d4a5a4de49e67a50ef7438f0e8"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-6-10",
+    "topicNumber": "6.10",
+    "unitNumber": 6,
+    "title": "Integrating Functions Using Long Division and Completing the Square",
+    "status": "published",
+    "overview": "Algebraic rewriting can turn a rational integrand into familiar antiderivative forms. Long division and completing the square are useful AB techniques when direct substitution does not immediately simplify the expression.",
+    "keyConcepts": [
+      {
+        "title": "Long division",
+        "text": "When numerator degree is at least denominator degree, divide first. A rational expression can become a polynomial plus a simpler remainder quotient."
+      },
+      {
+        "title": "Completing the square",
+        "text": "Rewrite a quadratic denominator to reveal a shifted square plus or minus a constant. Check the algebra before selecting an inverse-trigonometric or other basic form."
+      },
+      {
+        "title": "Scale factors",
+        "text": "A normalized substitution can introduce constants in both the differential and denominator. Keep them rather than copying an arctangent template without adjustment."
+      }
+    ],
+    "example": {
+      "prompt": "Find ∫ 1/(x² + 2x + 5) dx.",
+      "steps": [
+        "Complete the square: x² + 2x + 5 = (x + 1)² + 4.",
+        "Let u = (x + 1)/2. Then dx = 2du and the denominator is 4(u² + 1), leaving ½∫1/(u² + 1) du."
+      ],
+      "conclusion": "The result is ½arctan((x + 1)/2) + C. Differentiation verifies the original reciprocal quadratic."
+    },
+    "misconception": "Completing the square changes the expression’s form, not its value. An incorrect constant adjustment changes the entire integral.",
+    "apTip": "Check the rewrite by expansion and the answer by differentiation. Stay with the stated AB methods rather than importing BC-only techniques.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 6.10; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent derivative .5*.5/[1+(x+1)²/4] simplifies to 1/(x²+2x+5). Square expansion and differential factor checked.",
+      "checks": [],
+      "contentHash": "07fc33d2981237644931c4889f7de85ca76aba80bd45d09150e350e0e909a898"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-6-14",
+    "topicNumber": "6.14",
+    "unitNumber": 6,
+    "title": "Selecting Techniques for Antidifferentiation",
+    "status": "published",
+    "overview": "Selecting an antidifferentiation method requires recognizing structure before manipulating symbols. Use familiar forms, substitution or appropriate algebraic rewriting while preserving the original domain.",
+    "keyConcepts": [
+      {
+        "title": "Direct forms",
+        "text": "Powers, exponentials and familiar trigonometric forms may integrate directly. Remember that the reciprocal-power exception leads to a logarithm."
+      },
+      {
+        "title": "Inner derivative",
+        "text": "Substitution is promising when an inner expression’s derivative appears up to a constant factor. Check that the full differential can be accounted for."
+      },
+      {
+        "title": "Rewrite first",
+        "text": "Expand, divide polynomials or complete a square when those changes reveal a basic form. Method choice should simplify the actual integrand rather than add unnecessary operations."
+      }
+    ],
+    "example": {
+      "prompt": "Choose a method for ∫ x/(x² + 4) dx.",
+      "steps": [
+        "The denominator’s derivative is 2x, matching the numerator up to a factor. Let u = x² + 4, so x dx = du/2.",
+        "The integral is ½∫1/u du, giving ½ln(x² + 4) + C."
+      ],
+      "conclusion": "Because x² + 4 is positive for real x, the logarithm is defined throughout the real domain. Differentiating returns x/(x² + 4)."
+    },
+    "misconception": "A matching inner expression alone is insufficient; the accompanying differential factor must also match.",
+    "apTip": "Justify the chosen technique and verify by differentiation. This AB topic does not require integration by parts or partial fractions from the BC-only inventory.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 6.14; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent derivative .5*(2x)/(x²+4) confirms result; denominator positive and half-factor required. Canonical6.14 retained while BC6.11-6.13 skipped.",
+      "checks": [],
+      "contentHash": "67039a3cb6ed3a9a19389d7e5ba301431353f9dc37ccdd63217d138fe2553cc4"
+    }
   }
 ]

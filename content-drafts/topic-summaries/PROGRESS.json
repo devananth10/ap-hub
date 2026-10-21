@@ -1,17 +1,17 @@
 {
   "updated": "2026-10-21",
   "target": 240,
-  "published": 148,
-  "remaining": 92,
+  "published": 179,
+  "remaining": 61,
   "counts": {
-    "chemistry": 48,
-    "calculus-ab": 51,
-    "human-geography": 49
+    "chemistry": 57,
+    "calculus-ab": 62,
+    "human-geography": 60
   },
   "next": {
-    "chemistry": "6.1",
-    "calculus-ab": "6.1",
-    "human-geography": "6.1"
+    "chemistry": "7.1",
+    "calculus-ab": "7.1",
+    "human-geography": "7.1"
   },
   "independentHumanReview": false
 }
