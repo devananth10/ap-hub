@@ -1788,5 +1788,406 @@
       ],
       "contentHash": "9123dccfdaeb09f9db73ba58e28c41bbd288e71447017bf8cced081db815b7c4"
     }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "rates",
+    "topicNumber": "4.1",
+    "unitNumber": 4,
+    "title": "Interpreting the Meaning of the Derivative in Context",
+    "status": "published",
+    "overview": "A derivative describes how an output changes locally with respect to its input. A contextual interpretation must identify the quantity, the input value, the sign and the correct units.",
+    "keyConcepts": [
+      {
+        "title": "Rate units",
+        "text": "Derivative units are output units divided by input units. A water-volume derivative with respect to time has units such as liters per minute."
+      },
+      {
+        "title": "Point versus rate",
+        "text": "The function value gives an amount or level. The derivative gives its instantaneous rate of change; neither can generally replace the other."
+      },
+      {
+        "title": "Approximate change",
+        "text": "For a short input interval, multiplying the derivative by the input change estimates the output change. This is local reasoning, not a guarantee of a constant rate over a long interval."
+      }
+    ],
+    "example": {
+      "prompt": "A tank has V(4) = 50 L and V′(4) = −3 L/min, with time in minutes. Interpret both statements and estimate the change over the next 0.1 min.",
+      "steps": [
+        "At four minutes, the tank contains 50 liters. Its volume is decreasing at an instantaneous rate of three liters per minute.",
+        "The short-interval change is approximately (−3)(0.1) = −0.3 L."
+      ],
+      "conclusion": "This suggests roughly 49.7 L at t = 4.1, provided the rate does not change substantially over that short interval."
+    },
+    "misconception": "A negative derivative does not mean the original amount is negative. Here the volume remains positive while decreasing.",
+    "apTip": "Use “at” for the specified input and name the output quantity and rate units explicitly.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 4.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Local change -0.3 and estimated volume 49.7 independently checked; instantaneous rate distinguished from a long-term constant-rate claim.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            -3,
+            0.1
+          ],
+          "expected": -0.3,
+          "evidence": "−0.3 L"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            50,
+            -0.3
+          ],
+          "expected": 49.7,
+          "evidence": "49.7 L"
+        }
+      ],
+      "contentHash": "63cd7cf31f2b0cadedaebf283cd2ed3c2823b2f8fb5e6020d8a40a4a3f66c10c"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-4-2",
+    "topicNumber": "4.2",
+    "unitNumber": 4,
+    "title": "Straight-Line Motion: Connecting Position, Velocity, and Acceleration",
+    "status": "published",
+    "overview": "For straight-line motion, position, velocity and acceleration describe different features of a particle’s movement. Their signs must be interpreted together rather than using acceleration alone to decide whether speed increases.",
+    "keyConcepts": [
+      {
+        "title": "Derivative relationships",
+        "text": "Velocity is the derivative of position and acceleration is the derivative of velocity. Speed is the magnitude |v|, so it cannot be negative."
+      },
+      {
+        "title": "Direction",
+        "text": "Positive velocity means motion in the chosen positive direction; negative velocity means motion in the opposite direction. A zero velocity can indicate a stopping or turning instant."
+      },
+      {
+        "title": "Speed change",
+        "text": "When velocity and acceleration share a sign, speed increases. When their signs oppose, speed decreases, away from instants where further analysis is needed."
+      }
+    ],
+    "example": {
+      "prompt": "A particle has s(t) = t² − 6t + 10 meters. Analyze its motion at t = 2 and t = 4 seconds.",
+      "steps": [
+        "Differentiate to obtain v(t) = 2t − 6 and a(t) = 2.",
+        "At t = 2, velocity is −2 m/s and acceleration is +2 m/s²: the particle moves negatively while slowing."
+      ],
+      "conclusion": "At t = 4, velocity is +2 m/s with the same positive acceleration: it moves positively while speeding up."
+    },
+    "misconception": "Positive acceleration does not always mean speeding up, and negative velocity does not mean negative speed.",
+    "apTip": "Find the signs of both v and a on the relevant interval, then distinguish direction of motion from change in speed.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 4.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Polynomial differentiated twice; velocity -2/+2 and acceleration +2 checked. Sign reasoning uses speed magnitude rather than signed velocity alone.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            4,
+            6
+          ],
+          "expected": -2,
+          "evidence": "−2 m/s"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            8,
+            6
+          ],
+          "expected": 2,
+          "evidence": "+2 m/s"
+        }
+      ],
+      "contentHash": "340793524ee57a6ce0cd14e42b23b287e4420b6e4f4244118031dd286fc189a6"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-4-3",
+    "topicNumber": "4.3",
+    "unitNumber": 4,
+    "title": "Rates of Change in Applied Contexts Other Than Motion",
+    "status": "published",
+    "overview": "Rates of change describe many quantities besides motion, including cost, temperature, concentration and population. Identify which variable changes and what the derivative’s denominator means before interpreting the result.",
+    "keyConcepts": [
+      {
+        "title": "Marginal quantities",
+        "text": "A derivative with respect to number of items describes a local output change per additional item. It approximates a discrete one-item change when the model is suitable."
+      },
+      {
+        "title": "Rates in time",
+        "text": "A derivative with respect to time answers a different question from a derivative with respect to output quantity. The units reveal which comparison is being made."
+      },
+      {
+        "title": "Model limits",
+        "text": "A differentiable model may approximate discrete real-world quantities. Its derivative is an instantaneous mathematical rate rather than an exact prediction for every finite change."
+      }
+    ],
+    "example": {
+      "prompt": "A hypothetical cost model is C(x) = 100 + 5x + 0.01x² dollars. Interpret C′(50).",
+      "steps": [
+        "Differentiate: C′(x) = 5 + 0.02x, so C′(50) = 6 dollars per item.",
+        "Near fifty items, one additional item is estimated to increase cost by about six dollars."
+      ],
+      "conclusion": "The exact model difference C(51) − C(50) is 6.01 dollars, showing why the derivative is a local approximation rather than the exact discrete change."
+    },
+    "misconception": "Marginal cost is not total cost or average cost per item. Those are different functions with different interpretations.",
+    "apTip": "Name the input and output units and specify the operating point. Distinguish an estimated finite change from a derivative value.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 4.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Derivative and independent finite difference checked: 5+.01(2601-2500)=6.01. Hypothetical context is mathematical, not business advice.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            5,
+            1
+          ],
+          "expected": 6,
+          "evidence": "= 6 dollars"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            5,
+            1.01
+          ],
+          "expected": 6.01,
+          "evidence": "6.01 dollars"
+        }
+      ],
+      "contentHash": "623057537b8ea0d050daa5c4cf1f6297e2fc180da726b60b4425551254e3083e"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-4-4",
+    "topicNumber": "4.4",
+    "unitNumber": 4,
+    "title": "Introduction to Related Rates",
+    "status": "published",
+    "overview": "Related rates connect quantities that change together through an equation. The key step is to differentiate the relationship with respect to the shared independent variable, usually time.",
+    "keyConcepts": [
+      {
+        "title": "Define variables",
+        "text": "Assign symbols and units to changing quantities, then write a geometric or physical relationship valid throughout the process. Separate fixed constants from changing variables."
+      },
+      {
+        "title": "Differentiate first",
+        "text": "Apply the chain rule to every time-dependent quantity. Substituting a changing variable’s momentary value before differentiation can incorrectly make it look constant."
+      },
+      {
+        "title": "Interpret the rate",
+        "text": "A derivative’s sign describes increasing or decreasing quantity. Its units follow from the differentiated relationship and need not match the given rate’s units."
+      }
+    ],
+    "example": {
+      "prompt": "A circular patch has radius r = 2 m increasing at dr/dt = 0.5 m/min. Find its area growth rate.",
+      "steps": [
+        "The relationship is A = πr², with radius treated as a function of time.",
+        "Differentiate to obtain dA/dt = 2πr·dr/dt. Substitute the momentary data to get 2π(2)(0.5) = 2π m²/min."
+      ],
+      "conclusion": "The result is an area rate, not a radius rate. It is positive because the expanding radius increases area."
+    },
+    "misconception": "The expression dA/dr is not automatically dA/dt. The additional factor dr/dt connects the two rates.",
+    "apTip": "Write the relationship and units before substituting numbers, and clearly state which instant the given dimensions describe.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 4.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Chain-rule area rate independently recomputed; coefficient 2*2*.5=2 and square-meter/minute units checked.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            2,
+            2,
+            0.5
+          ],
+          "expected": 2,
+          "evidence": "2π m²/min"
+        }
+      ],
+      "contentHash": "bf05cb0c66d84fbe372f89b33791aa033fccc5be738cb1192a669a902c78b249"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-4-5",
+    "topicNumber": "4.5",
+    "unitNumber": 4,
+    "title": "Solving Related Rates Problems",
+    "status": "published",
+    "overview": "Solving a related-rates problem requires a relationship that remains valid while quantities change. Draw the situation, identify known and unknown rates, and substitute instantaneous data only after differentiating.",
+    "keyConcepts": [
+      {
+        "title": "Geometric constraints",
+        "text": "Use a valid equation such as a Pythagorean relation or volume formula. A fixed length remains constant, while distances describing the current configuration usually vary."
+      },
+      {
+        "title": "Chain-rule rates",
+        "text": "Differentiate with respect to time and include a derivative for each changing quantity. Then solve algebraically for the requested rate."
+      },
+      {
+        "title": "Signs and feasibility",
+        "text": "Check that the dimensions fit the constraint and that the answer’s sign matches the described motion. A height falling over time has a negative signed rate."
+      }
+    ],
+    "example": {
+      "prompt": "A 5 m ladder leans against a wall. Its base is 3 m from the wall and moves outward at 2 m/s. Find the top’s vertical rate.",
+      "steps": [
+        "Let x be base distance and y be height. The fixed ladder gives x² + y² = 25, so at x = 3, y = 4.",
+        "Differentiate: 2x·dx/dt + 2y·dy/dt = 0. Thus dy/dt = −(x/y)dx/dt."
+      ],
+      "conclusion": "At this instant, dy/dt = −(3/4)(2) = −1.5 m/s. The top moves downward."
+    },
+    "misconception": "The ladder length is constant, but its height is not. Replacing y by 4 before differentiating would remove the very rate being sought.",
+    "apTip": "Check the geometric constraint and convert the final signed rate into a clear verbal direction.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 4.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "3-4-5 geometry and differentiated constraint independently verified; negative 1.5 consistent with outward base and descending top.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            9,
+            16
+          ],
+          "expected": 25,
+          "evidence": "= 25"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            -0.75,
+            2
+          ],
+          "expected": -1.5,
+          "evidence": "−1.5 m/s"
+        }
+      ],
+      "contentHash": "6c96c7d6440273aa5ad738cf9c00e48047c5a91ec5d4b6646ff1ca1733b879d5"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-4-6",
+    "topicNumber": "4.6",
+    "unitNumber": 4,
+    "title": "Approximating Values of a Function Using Local Linearity and Linearization",
+    "status": "published",
+    "overview": "Local linearity uses a tangent line to approximate a differentiable function near a known input. The approximation is most useful when the reference value and derivative are easy to calculate.",
+    "keyConcepts": [
+      {
+        "title": "Linearization",
+        "text": "At x = a, L(x) = f(a) + f′(a)(x − a). The tangent line matches the function’s height and slope at the reference point."
+      },
+      {
+        "title": "Small change",
+        "text": "The estimated output change is f′(a)Δx. Keep the input difference signed so that a move left and a move right are handled correctly."
+      },
+      {
+        "title": "Accuracy",
+        "text": "Differentiability supports a local approximation, not an exact equality over an arbitrary interval. Distance from the reference point and curve behavior affect error."
+      }
+    ],
+    "example": {
+      "prompt": "Approximate √4.1 using a tangent line at x = 4.",
+      "steps": [
+        "For f(x) = √x, f(4) = 2 and f′(4) = 1/(2√4) = 1/4.",
+        "The input change is 4.1 − 4 = 0.1. Thus L(4.1) = 2 + (1/4)(0.1) = 2.025."
+      ],
+      "conclusion": "This is an estimate of √4.1, not an assertion that the square root is exactly 2.025. The chosen reference is close and has a simple square root."
+    },
+    "misconception": "The slope multiplies the change x − a, not the complete target input x. Omitting the base value also gives the wrong quantity.",
+    "apTip": "Label approximations clearly and justify the reference point using both proximity and an easily known value.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 4.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Tangent derivative .25 and increment .025 independently checked. Squaring 2.025 gives 4.100625, confirming approximation rather than exactness.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            2,
+            0.025
+          ],
+          "expected": 2.025,
+          "evidence": "= 2.025"
+        }
+      ],
+      "contentHash": "48ec474ee271c45cc46b22964d61346c29f318f660473bf9b0b350feca8fd120"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-4-7",
+    "topicNumber": "4.7",
+    "unitNumber": 4,
+    "title": "Using L’Hospital’s Rule for Determining Limits of Indeterminate Forms",
+    "status": "published",
+    "overview": "L’Hospital’s Rule can evaluate certain indeterminate quotient limits by comparing derivatives. It applies under specific conditions; it is not a general identity that replaces any quotient by a quotient of derivatives.",
+    "keyConcepts": [
+      {
+        "title": "Eligible forms",
+        "text": "The rule addresses 0/0 or infinity/infinity forms when its differentiability and nonzero denominator-derivative conditions hold nearby and the derivative quotient has a suitable limit."
+      },
+      {
+        "title": "Recheck after use",
+        "text": "If the new quotient remains indeterminate, another application may be possible, but the conditions must be checked again. Other forms may need algebraic rewriting first."
+      },
+      {
+        "title": "Limit versus derivative",
+        "text": "The quotient rule differentiates a function. L’Hospital’s Rule instead relates limits of quotients under its hypotheses; the two procedures answer different questions."
+      }
+    ],
+    "example": {
+      "prompt": "Evaluate lim as x → 0 of sin(3x)/x.",
+      "steps": [
+        "Both numerator and denominator approach zero; the functions are differentiable nearby and the denominator derivative is 1.",
+        "Differentiate numerator and denominator separately: the new quotient is 3cos(3x)/1, whose limit is 3."
+      ],
+      "conclusion": "As an independent check, write the original quotient as 3·sin(3x)/(3x) and use the standard sine limit to obtain 3."
+    },
+    "misconception": "If a derivative quotient fails to have a limit, that failure alone does not prove that the original quotient has no limit.",
+    "apTip": "State the original indeterminate form and relevant conditions before applying the rule. Prefer a simpler algebraic method when it gives an immediate justified result.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 4.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Rule hypotheses and chain factor checked; independent standard sine-limit rescaling confirms 3 without L’Hospital.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            3,
+            1
+          ],
+          "expected": 3,
+          "evidence": "limit is 3"
+        }
+      ],
+      "contentHash": "56960c4359fe71e13d62d250a7d21cfb98747370e9fa168f5ae851b6d716e418"
+    }
   }
 ]

@@ -1555,5 +1555,517 @@
       ],
       "contentHash": "e1be174d440d20928d037ac8c6f2488838748acddd4a556e0a306096538da692"
     }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "reactions",
+    "topicNumber": "4.1",
+    "unitNumber": 4,
+    "title": "Introduction for Reactions",
+    "status": "published",
+    "overview": "A chemical reaction changes which substances are present by rearranging atoms and electrons. Connect a macroscopic observation to evidence about particle identity rather than treating any visible change as automatic proof of reaction.",
+    "keyConcepts": [
+      {
+        "title": "Evidence",
+        "text": "Gas formation, a precipitate, color change or energy transfer can support a reaction claim when interpreted in context. Each observation can also have physical explanations."
+      },
+      {
+        "title": "Conservation",
+        "text": "A balanced equation conserves each element and total charge. It need not conserve the number of molecules because atoms can regroup into different particles."
+      },
+      {
+        "title": "Representations",
+        "text": "Chemical formulas and state labels summarize reactants and products. Coefficients change amounts; changing a formula subscript changes the substance itself."
+      }
+    ],
+    "example": {
+      "prompt": "Interpret the balanced reaction 2H₂(g) + O₂(g) → 2H₂O(g).",
+      "steps": [
+        "Two hydrogen molecules and one oxygen molecule supply four hydrogen atoms and two oxygen atoms.",
+        "Two water molecules contain the same atom totals, but the atoms have different bonding partners."
+      ],
+      "conclusion": "The number of molecules changes from three to two while every element is conserved. State labels specify vapor here; a different physical state would require its own label."
+    },
+    "misconception": "Balancing by changing H₂O to H₂O₂ would replace water with another substance rather than balance the intended reaction.",
+    "apTip": "Check atom counts and charge separately. Explain why an observation supports new substance formation, and consider a plausible physical alternative.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 4.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Atom balance 4H/2O and molecule counts 3-to-2 checked independently. Observation inference qualified and product identity preserved.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            2,
+            1
+          ],
+          "expected": 3,
+          "evidence": "three to two"
+        }
+      ],
+      "contentHash": "b16da21f8387d8d6241c96a6cd304cc660340e1f10ceea0f97c08d0900879526"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-4-2",
+    "topicNumber": "4.2",
+    "unitNumber": 4,
+    "title": "Net Ionic Equations",
+    "status": "published",
+    "overview": "A net ionic equation displays the species that actually change in an aqueous reaction. Removing spectator ions makes the chemical process clearer without changing its atom or charge balance.",
+    "keyConcepts": [
+      {
+        "title": "Dissociation rules",
+        "text": "Separate dissolved strong electrolytes into ions in the complete ionic equation. Keep solids, liquids, gases and weak molecular species intact as appropriate."
+      },
+      {
+        "title": "Spectators",
+        "text": "Ions appearing unchanged on both sides can cancel. Being present in a solution does not necessarily mean an ion participates in the reaction."
+      },
+      {
+        "title": "Verification",
+        "text": "The remaining equation must conserve each element and total charge. Include state labels so the representation distinguishes dissolved ions from a precipitate."
+      }
+    ],
+    "example": {
+      "prompt": "Mix aqueous AgNO₃ and NaCl under conditions that produce solid AgCl. Write the net ionic equation.",
+      "steps": [
+        "The complete ionic representation contains Ag⁺, NO₃⁻, Na⁺ and Cl⁻ on the reactant side, with AgCl(s), Na⁺ and NO₃⁻ as products.",
+        "Cancel the unchanged Na⁺ and NO₃⁻ ions."
+      ],
+      "conclusion": "The net equation is Ag⁺(aq) + Cl⁻(aq) → AgCl(s). Both sides contain one Ag and one Cl, and the total charge is zero."
+    },
+    "misconception": "Do not split the solid AgCl product into free aqueous ions; doing so would erase the precipitation process.",
+    "apTip": "Identify electrolyte strength and physical state before canceling. A correctly balanced molecular equation does not automatically mean every written species belongs in the net ionic equation.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 4.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Spectators and state-specific splitting checked; atom and zero-net-charge balance verified for the precipitation reaction.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            1,
+            -1
+          ],
+          "expected": 0,
+          "evidence": "charge is zero"
+        }
+      ],
+      "contentHash": "a0e406f756c0bc688a01f68ca98409a879bf43936c393aaf09183fb17fd05b61"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-4-3",
+    "topicNumber": "4.3",
+    "unitNumber": 4,
+    "title": "Representations of Reactions",
+    "status": "published",
+    "overview": "Particle diagrams represent reacting amounts through explicit counts of atoms, molecules or ions. Translate the key and reaction ratio before deciding what reacts, what remains and what the final diagram should contain.",
+    "keyConcepts": [
+      {
+        "title": "Conserved atoms",
+        "text": "Every atom in the initial diagram must appear somewhere in the final one for a closed system. Products can regroup atoms, but cannot create a missing element."
+      },
+      {
+        "title": "Limiting reactant",
+        "text": "The limiting species runs out relative to the balanced stoichiometric ratio. The species with fewer drawn particles is not automatically limiting."
+      },
+      {
+        "title": "Leftovers",
+        "text": "A final diagram can contain both products and unreacted excess reactant. Distinguish those particles instead of assuming everything disappears."
+      }
+    ],
+    "example": {
+      "prompt": "For the hypothetical reaction A₂ + 3B₂ → 2AB₃, begin with four A₂ molecules and nine B₂ molecules.",
+      "steps": [
+        "Nine B₂ can react with three A₂, producing six AB₃ molecules.",
+        "One A₂ remains. The final counts are six AB₃, one A₂ and no B₂."
+      ],
+      "conclusion": "Atom accounting confirms eight A atoms and eighteen B atoms both before and after the reaction."
+    },
+    "misconception": "Compare available reaction amounts using coefficients rather than choosing the smallest particle count. Here B₂ limits despite its larger initial count.",
+    "apTip": "Redraw all remaining species and audit each element. A diagram must represent the same volume or amount basis if you compare concentrations.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 4.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent atom totals: initial A8/B18, final A6+2/B18. Reaction extent 9/3=3 yields six product molecules and one excess A2.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            9,
+            3
+          ],
+          "expected": 3,
+          "evidence": "three A₂"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            3,
+            2
+          ],
+          "expected": 6,
+          "evidence": "six AB₃"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            4,
+            3
+          ],
+          "expected": 1,
+          "evidence": "One A₂"
+        }
+      ],
+      "contentHash": "8dd8d7126dac853e4e6ed1ff5af21bbf09423fed41283631d75c28b5085a4270"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-4-4",
+    "topicNumber": "4.4",
+    "unitNumber": 4,
+    "title": "Physical and Chemical Changes",
+    "status": "published",
+    "overview": "Physical changes alter states, arrangements or distributions without necessarily forming new chemical substances. Chemical changes alter particle identities through changes in bonding or electron arrangement.",
+    "keyConcepts": [
+      {
+        "title": "Phase changes",
+        "text": "Melting and boiling usually change spacing and intermolecular relationships while preserving molecular identity. Individual particles do not have to break into atoms."
+      },
+      {
+        "title": "Chemical transformations",
+        "text": "A reaction forms different chemical species, even if the total mass and element counts remain conserved. Macroscopic appearance alone may not identify those species."
+      },
+      {
+        "title": "Evidence in context",
+        "text": "Reversibility, heat flow and bubbles are not exclusive tests for chemical change. Some reactions are reversible, while boiling produces bubbles without a new substance."
+      }
+    ],
+    "example": {
+      "prompt": "Compare boiling water with electrolyzing water into hydrogen and oxygen.",
+      "steps": [
+        "Boiling produces H₂O vapor from H₂O liquid, so the molecule’s chemical identity is retained.",
+        "Electrolysis can be represented as 2H₂O → 2H₂ + O₂, producing new substances with different bonding."
+      ],
+      "conclusion": "Both processes involve energy and visible changes, but the second changes chemical identity. The balanced reaction still conserves hydrogen and oxygen atoms."
+    },
+    "misconception": "A change that is difficult to reverse is not automatically chemical, and a reversible change is not automatically physical.",
+    "apTip": "Explain the distinction using named particles before and after, not only a list of observed signs. If identity is uncertain, state what additional evidence would help.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 4.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Phase versus decomposition species checked; electrolysis atom balance verified. Energy and reversibility are correctly treated as nonexclusive evidence.",
+      "checks": [],
+      "contentHash": "fca0849498fecca0b1d4e620ead3dd4523e69b4177be05f127d50a1134519eb1"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-4-5",
+    "topicNumber": "4.5",
+    "unitNumber": 4,
+    "title": "Stoichiometry",
+    "status": "published",
+    "overview": "Stoichiometry uses a balanced equation to connect reacting and produced amounts. Convert to moles before applying coefficient ratios, and determine which reactant limits when more than one amount is supplied.",
+    "keyConcepts": [
+      {
+        "title": "Mole ratios",
+        "text": "Coefficients give ratios of particles or moles, not direct gram ratios. Mass conversions require the relevant molar masses."
+      },
+      {
+        "title": "Limiting amount",
+        "text": "Compute the product possible from each reactant or compare moles divided by coefficients. The smaller allowed reaction extent controls theoretical yield."
+      },
+      {
+        "title": "Yield and excess",
+        "text": "Theoretical yield follows from the limiting reactant. Actual yield is measured; excess reactant can remain even after a complete limiting-reactant consumption."
+      }
+    ],
+    "example": {
+      "prompt": "React 0.400 mol Al with 0.450 mol Cl₂ using 2Al + 3Cl₂ → 2AlCl₃. Find theoretical product and excess Al.",
+      "steps": [
+        "The reaction extents are 0.400/2 = 0.200 and 0.450/3 = 0.150 mol of reaction, so Cl₂ limits.",
+        "Product is 2(0.150) = 0.300 mol AlCl₃. The same 0.300 mol of Al is consumed."
+      ],
+      "conclusion": "Excess Al is 0.400 − 0.300 = 0.100 mol. The initial amounts cannot produce more product merely because some aluminum remains."
+    },
+    "misconception": "The smaller supplied mole amount is not always limiting; the balanced ratio determines how much is required.",
+    "apTip": "Label every ratio with species and keep unrounded intermediate amounts until the final reported result.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 4.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent product-from-each-reactant comparison gives .400 versus .300 mol; chlorine limits and excess Al .100 confirmed.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            0.45,
+            3
+          ],
+          "expected": 0.15,
+          "evidence": "0.150"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            2,
+            0.15
+          ],
+          "expected": 0.3,
+          "evidence": "0.300 mol"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            0.4,
+            0.3
+          ],
+          "expected": 0.1,
+          "evidence": "0.100 mol"
+        }
+      ],
+      "contentHash": "867f056d977a9f80b3ce46a6e4de9e0c43be2832f0529cc69aad6b51107cfdee"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-4-6",
+    "topicNumber": "4.6",
+    "unitNumber": 4,
+    "title": "Introduction to Titration",
+    "status": "published",
+    "overview": "A titration determines an unknown amount by reacting it with a measured amount of a solution of known concentration. The balanced equation connects the substances at equivalence.",
+    "keyConcepts": [
+      {
+        "title": "Mole accounting",
+        "text": "Convert titrant concentration and delivered volume into moles. Use the reaction’s stoichiometric ratio to determine analyte moles before dividing by sample volume."
+      },
+      {
+        "title": "Equivalence and endpoint",
+        "text": "Equivalence is the stoichiometric completion condition. The endpoint is an observed signal, such as an indicator change, chosen to approximate that condition."
+      },
+      {
+        "title": "Measurement",
+        "text": "Delivered buret volume is final reading minus initial reading. Use the original analyte sample volume when calculating its initial concentration."
+      }
+    ],
+    "example": {
+      "prompt": "A 20.0 mL H₂SO₄ sample requires 30.0 mL of 0.100 M NaOH for complete neutralization. Find acid concentration.",
+      "steps": [
+        "H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O requires two moles of base per mole of acid.",
+        "NaOH amount is 0.100 × 0.0300 = 0.00300 mol; acid amount is 0.00150 mol."
+      ],
+      "conclusion": "Divide by 0.0200 L to obtain 0.0750 M H₂SO₄. This is the concentration before adding titrant, not after dilution in the flask."
+    },
+    "misconception": "Equal titrant and analyte mole amounts are valid only for a 1:1 reaction. Equivalence also does not universally mean pH 7.",
+    "apTip": "Balance first, distinguish endpoint from equivalence and check which solution the requested concentration describes.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 4.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Diprotic full-neutralization ratio, base moles and original acid-volume denominator independently verified; no unsupported pH inference.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            0.1,
+            0.03
+          ],
+          "expected": 0.003,
+          "evidence": "0.00300 mol"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            0.003,
+            2
+          ],
+          "expected": 0.0015,
+          "evidence": "0.00150 mol"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            0.0015,
+            0.02
+          ],
+          "expected": 0.075,
+          "evidence": "0.0750 M"
+        }
+      ],
+      "contentHash": "152d1636032868fb61a6adce3ef382316557d539ef0fe8c21444618ca8028c98"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-4-7",
+    "topicNumber": "4.7",
+    "unitNumber": 4,
+    "title": "Types of Chemical Reactions",
+    "status": "published",
+    "overview": "Reaction categories identify useful patterns in how species change. Precipitation, acid–base and oxidation–reduction descriptions emphasize different processes; one overall reaction can sometimes fit more than one description.",
+    "keyConcepts": [
+      {
+        "title": "Precipitation",
+        "text": "Dissolved ions combine into a poorly soluble solid. A net ionic equation shows the ions incorporated into that solid rather than the unchanged spectators."
+      },
+      {
+        "title": "Acid–base",
+        "text": "A Brønsted acid donates a proton and a base accepts it. Neutralization can consume acid and base without requiring electron transfer between elements."
+      },
+      {
+        "title": "Redox",
+        "text": "Oxidation numbers change as electrons are transferred or redistributed. Check oxidation states rather than assuming that any visible reaction must be redox."
+      }
+    ],
+    "example": {
+      "prompt": "Aqueous MgCl₂ and NaOH form Mg(OH)₂(s). Identify the primary reaction type.",
+      "steps": [
+        "The net equation is Mg²⁺(aq) + 2OH⁻(aq) → Mg(OH)₂(s).",
+        "Solid formation from dissolved ions identifies precipitation. Magnesium remains at oxidation number +2, and oxygen and hydrogen retain their usual states in hydroxide."
+      ],
+      "conclusion": "This precipitation equation does not require a change in oxidation numbers. Sodium and chloride ions remain spectators in solution."
+    },
+    "misconception": "Forming a solid does not by itself show electron transfer. The equation and oxidation states supply the needed evidence.",
+    "apTip": "Identify the changing species and name the process with a balanced equation. Allow overlapping descriptions when the actual chemistry supports them.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 4.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Precipitation state, charge balance and unchanged Mg/O/H oxidation numbers checked independently; no false universal exclusivity among categories.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            2,
+            -2
+          ],
+          "expected": 0,
+          "evidence": "Mg(OH)₂(s)"
+        }
+      ],
+      "contentHash": "718e52b6ec39209504755a60b6a510bfa5f68db54a5484cb75ab071526692305"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-4-8",
+    "topicNumber": "4.8",
+    "unitNumber": 4,
+    "title": "Introduction to Acid-Base Reactions",
+    "status": "published",
+    "overview": "Brønsted–Lowry acid–base reactions transfer a proton between species. Identify the donor and acceptor in the actual equation rather than classifying a substance only from its formula.",
+    "keyConcepts": [
+      {
+        "title": "Acid and base",
+        "text": "An acid donates H⁺ and a base accepts H⁺. A base need not contain hydroxide before the reaction begins."
+      },
+      {
+        "title": "Conjugate partners",
+        "text": "An acid and its conjugate base differ by one proton. The corresponding change in charge follows from gaining or losing H⁺."
+      },
+      {
+        "title": "Water’s role",
+        "text": "Water can act as an acid or as a base depending on its reaction partner. Its behavior is contextual rather than permanently limited to one category."
+      }
+    ],
+    "example": {
+      "prompt": "Analyze NH₃ + H₂O ⇌ NH₄⁺ + OH⁻.",
+      "steps": [
+        "NH₃ accepts a proton to become NH₄⁺, so NH₃ is the base and NH₄⁺ is its conjugate acid.",
+        "Water donates that proton to become OH⁻, making H₂O the acid and OH⁻ its conjugate base."
+      ],
+      "conclusion": "Both atoms and charge balance: the neutral reactants produce charges +1 and −1 whose sum is zero."
+    },
+    "misconception": "Conjugate pairs are not simply any acid and base on opposite sides; they must differ by exactly one proton.",
+    "apTip": "Trace the proton from donor to acceptor and identify both conjugate pairs. Do not assume that every acid–base mixture ends at neutral pH.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 4.8; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Proton transfer, conjugate identities and H/N/O plus charge balance checked; weak equilibrium arrow retained for ammonia in water.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            1,
+            -1
+          ],
+          "expected": 0,
+          "evidence": "sum is zero"
+        }
+      ],
+      "contentHash": "0bcadfb4251e789613098befff6c222b97b0a59897387a718f7c2cc486ab19a6"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-4-9",
+    "topicNumber": "4.9",
+    "unitNumber": 4,
+    "title": "Oxidation-Reduction (Redox) Reactions",
+    "status": "published",
+    "overview": "Oxidation–reduction reactions involve changes in oxidation numbers. Tracking those changes identifies which species loses electrons, which gains them and how electron transfer must balance.",
+    "keyConcepts": [
+      {
+        "title": "Oxidation numbers",
+        "text": "Use formal assignment rules to track electron ownership. An oxidation number is not necessarily an atom’s actual charge in a covalent molecule."
+      },
+      {
+        "title": "Oxidation and reduction",
+        "text": "Oxidation increases oxidation number and corresponds to electron loss; reduction decreases it and corresponds to electron gain. The total electrons lost and gained must match."
+      },
+      {
+        "title": "Agents",
+        "text": "The reducing agent donates electrons and is oxidized. The oxidizing agent accepts electrons and is reduced; the names describe their effects on the other species."
+      }
+    ],
+    "example": {
+      "prompt": "Analyze Zn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s).",
+      "steps": [
+        "Zn changes from 0 to +2, losing two electrons. Cu changes from +2 to 0, gaining two electrons.",
+        "Half-reactions are Zn → Zn²⁺ + 2e⁻ and Cu²⁺ + 2e⁻ → Cu. Electrons cancel when added."
+      ],
+      "conclusion": "Zn is the reducing agent; Cu²⁺ is the oxidizing agent. Total charge is +2 on each side of the overall equation."
+    },
+    "misconception": "The species being oxidized is the reducing agent, not the oxidizing agent. Keep the action and agent terminology distinct.",
+    "apTip": "Assign oxidation numbers before naming agents, then verify electron count, element balance and total charge independently.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 4.9; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Half-reaction charges and two-electron cancellation checked; agent identities follow actual electron direction, not their product charges.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            2,
+            0
+          ],
+          "expected": 2,
+          "evidence": "two electrons"
+        }
+      ],
+      "contentHash": "b218460e257efd5be60347712066fbad123ee28080a9b32a91f8901a08123b20"
+    }
   }
 ]

@@ -1451,5 +1451,456 @@
       "checks": [],
       "contentHash": "a21c26c60c4463ee8b54c771de0fc647fac83a4c639d42f75a2d876df8e7ee91"
     }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-4-1",
+    "topicNumber": "4.1",
+    "unitNumber": 4,
+    "title": "Introduction to Political Geography",
+    "status": "published",
+    "overview": "Political geography examines how authority, identity and territory are organized. Distinguish states from nations so that a map of sovereign boundaries is not mistaken for a map of shared national identity.",
+    "keyConcepts": [
+      {
+        "title": "State and sovereignty",
+        "text": "A state exercises political authority over territory and population. Sovereignty concerns its authority to govern; a government is the institution exercising power, not a synonym for every national community."
+      },
+      {
+        "title": "Nation",
+        "text": "A nation is a community with a shared national identity. It may have a state, live across several states or seek political recognition without possessing an independent state."
+      },
+      {
+        "title": "Spatial relationships",
+        "text": "A multinational state contains multiple nations. A multistate nation extends across state boundaries. A nation-state describes close alignment between a nation and a state."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional nation R has communities in independent states P and Q. State P also contains a distinct nation S.",
+      "steps": [
+        "R is a multistate nation because its members live in more than one state.",
+        "P is a multinational state because it contains more than one national community."
+      ],
+      "conclusion": "These labels are compatible because one describes a nation’s distribution and the other a state’s population. They do not establish the identity of every resident."
+    },
+    "misconception": "A shared language alone does not prove that people form one nation, and a state boundary need not match a national boundary.",
+    "apTip": "Identify whether the question describes a population, a government or a territorial political unit before selecting a term.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 4.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Different objects classified independently; specified national identity avoids inferring nationhood solely from language or ethnicity.",
+      "checks": [],
+      "contentHash": "83069f5b45c7586da303eec1e128cec1c028214db5c6c9bc47a7cab41c399a94"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-4-2",
+    "topicNumber": "4.2",
+    "unitNumber": 4,
+    "title": "Political Processes",
+    "status": "published",
+    "overview": "Contemporary political boundaries and identities developed through historical processes rather than appearing as inevitable natural divisions. Colonial rule, independence movements and nationalism can leave layered effects on state organization.",
+    "keyConcepts": [
+      {
+        "title": "Colonialism",
+        "text": "External powers can establish political control over territory and institutions, shaping borders, settlement and economic connections. Imposed divisions may cross existing cultural or political arrangements."
+      },
+      {
+        "title": "Decolonization",
+        "text": "Independence changes formal political authority, but inherited borders and economic relationships may persist. A new sovereign state need not have a population with one national identity."
+      },
+      {
+        "title": "Self-determination",
+        "text": "Groups may seek authority over their political future through autonomy, representation or independence. Such claims can compete with existing state territorial arrangements."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional former colony becomes independent while retaining an administrative boundary drawn under colonial rule. Several national communities live within it.",
+      "steps": [
+        "Decolonization changes who formally governs the territory.",
+        "The inherited line shows how earlier administrative decisions can continue shaping the political map."
+      ],
+      "conclusion": "The new state’s independence does not prove that its borders coincide with a single nation or that all earlier economic dependencies disappear."
+    },
+    "misconception": "Political independence does not automatically erase colonial landscape patterns, boundary disputes or unequal external relationships.",
+    "apTip": "Explain a historical process and its lasting spatial consequence. Use evidence about who controlled territory and when, rather than interpreting a current line without context.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 4.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Formal independence separated from inherited boundaries and economic continuity; self-determination not equated solely with secession.",
+      "checks": [],
+      "contentHash": "cece0263eee2fa4a63e1dc80840d99f9c1c047e5ccd2241803c76e75d7152c17"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-4-3",
+    "topicNumber": "4.3",
+    "unitNumber": 4,
+    "title": "Political Power and Territoriality",
+    "status": "published",
+    "overview": "Political power has a spatial dimension: actors influence people, resources and flows by controlling access to territory and networks. Territoriality describes efforts to establish and maintain such spatial control.",
+    "keyConcepts": [
+      {
+        "title": "Territorial practices",
+        "text": "Boundaries, checkpoints, permits and administrative rules can regulate who enters, uses resources or makes decisions in an area. Control can operate at several scales."
+      },
+      {
+        "title": "Strategic locations",
+        "text": "Chokepoints concentrate transport flows, giving access and disruption potential geopolitical significance. A location’s importance depends on networks and alternatives, not only its area."
+      },
+      {
+        "title": "Unequal influence",
+        "text": "Neocolonial relationships can involve external economic or political leverage without direct colonial administration. Trade alone does not demonstrate such control; evidence of asymmetrical constraints matters."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional state controls a narrow shipping passage used by neighboring states and requires permits for passage through its administered port.",
+      "steps": [
+        "The permit system is a territorial practice regulating access at a strategic node.",
+        "Dependence on that route can give the controlling state leverage, especially when alternative routes are costly."
+      ],
+      "conclusion": "This does not prove ownership of all neighboring territory or unlimited authority over every ship beyond its jurisdiction."
+    },
+    "misconception": "A large territory is not automatically more powerful than a small strategic location. Network position and institutions affect influence.",
+    "apTip": "Identify the actor, the space or flow being controlled and the mechanism connecting that control to power.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 4.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Territorial access mechanism and chokepoint leverage reviewed with jurisdiction limits; ordinary trade not mislabeled automatically as neocolonialism.",
+      "checks": [],
+      "contentHash": "de9c1f6ad1213ee50b08db973378417c4b68efd28b929a4f3272e4dff58b734c"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-4-4",
+    "topicNumber": "4.4",
+    "unitNumber": 4,
+    "title": "Defining Political Boundaries",
+    "status": "published",
+    "overview": "Boundary classifications describe how lines originated, what they follow and whether they remain politically active. Historical context is often necessary because a line’s appearance cannot reveal its entire origin.",
+    "keyConcepts": [
+      {
+        "title": "Timing",
+        "text": "Antecedent boundaries precede major settlement patterns in the relevant context; subsequent boundaries develop after settlement. Avoid interpreting antecedent as meaning no humans ever occupied the region."
+      },
+      {
+        "title": "Imposition and form",
+        "text": "A superimposed boundary is imposed without adequately reflecting existing cultural arrangements. Geometric boundaries follow abstract lines, while other boundaries use physical or cultural features."
+      },
+      {
+        "title": "Relict boundaries",
+        "text": "A relict line no longer functions as the active political division but can remain visible or influential in the landscape."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional colonial authority draws a straight line through an established language region. After independence, two states retain that line.",
+      "steps": [
+        "The straight form supports describing it as geometric.",
+        "Its imposed relationship to existing cultural patterns supports describing its origin as superimposed."
+      ],
+      "conclusion": "Both descriptions can apply because they classify different dimensions. It is not relict while it still functions as the active state boundary."
+    },
+    "misconception": "A geometric line is not automatically superimposed, and a river boundary is not automatically peaceful or uncontested.",
+    "apTip": "Identify the classification criterion and use timing or historical evidence when the label requires it. Do not choose a boundary type from shape alone.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 4.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Form and historical origin intentionally distinguished; active versus relict function explicit, avoiding ambiguous single-label assumptions.",
+      "checks": [],
+      "contentHash": "95033216d0c901df1dc485119528dfa5a70983334963af588ee38b4dbb5ce5f2"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-4-5",
+    "topicNumber": "4.5",
+    "unitNumber": 4,
+    "title": "The Function of Political Boundaries",
+    "status": "published",
+    "overview": "Political boundaries organize jurisdiction and regulate movement, resources and authority. A boundary’s legal description, mapped location, physical marking and daily administration are related but distinct stages.",
+    "keyConcepts": [
+      {
+        "title": "Boundary process",
+        "text": "Definition describes a line, delimitation places it on a map, demarcation marks it on the ground and administration governs its operation. Physical markers need not exist along every segment."
+      },
+      {
+        "title": "Functions",
+        "text": "Boundaries can filter migration and trade, separate jurisdictions and structure cooperation or dispute. Their permeability may vary for different people and goods."
+      },
+      {
+        "title": "Maritime distinctions",
+        "text": "Different maritime zones carry different navigation and resource rights. An exclusive economic zone does not confer all the sovereignty associated with land territory."
+      }
+    ],
+    "example": {
+      "prompt": "Two fictional states agree that their boundary follows a specified river channel, map the agreed line and install markers near crossings.",
+      "steps": [
+        "The agreement defines the line, the map delimits it and the markers demarcate it.",
+        "Checkpoint rules and maintenance arrangements are part of administration."
+      ],
+      "conclusion": "A later dispute about where the agreed channel lies is different from a disagreement about which goods may cross; location and operation need separate evidence."
+    },
+    "misconception": "A marked line does not guarantee that all boundary disputes are resolved. Nor does a border always stop every type of movement.",
+    "apTip": "Identify whether the issue concerns description, location, marking or operation, then explain the relevant geographic consequence.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 4.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Boundary-process sequence checked; maritime rights distinction verified against UNCLOS Part V without giving individualized legal advice.",
+      "checks": [],
+      "contentHash": "b8aefef4c7c99776b69df8917159995740a7ed8165b3d87390d91fc16ad26ab4"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-4-6",
+    "topicNumber": "4.6",
+    "unitNumber": 4,
+    "title": "Internal Boundaries",
+    "status": "published",
+    "overview": "Internal boundaries shape representation and administration within states. Electoral outcomes depend on both vote distributions and the arrangement of districts, not only on a jurisdiction’s total vote share.",
+    "keyConcepts": [
+      {
+        "title": "Districting",
+        "text": "Redistricting redraws electoral districts. Under single-member plurality rules, each district awards a seat to its local winner rather than translating the overall vote share directly into seats."
+      },
+      {
+        "title": "Packing and cracking",
+        "text": "Packing concentrates opponents in a few districts; cracking disperses them across districts where they lose. These techniques can alter representation."
+      },
+      {
+        "title": "Evidence and intent",
+        "text": "An unusual shape or vote–seat difference alone does not prove deliberate gerrymandering. Geographic distribution, district rules and evidence of intent or design matter."
+      }
+    ],
+    "example": {
+      "prompt": "In five hypothetical districts with 100 voters each, Party A receives 100, 100, 33, 33 and 34 votes. Only A and B compete.",
+      "steps": [
+        "A totals 300 of 500 votes, or 60%, but wins only the first two districts.",
+        "Its seat share is 2/5 = 40%. The other three districts each favor B."
+      ],
+      "conclusion": "This count illustrates concentrated support and vote–seat differences; without a map and design history, it does not by itself establish intent or a valid real district plan."
+    },
+    "misconception": "Winning a majority of all votes does not necessarily guarantee most seats in a district-based system.",
+    "apTip": "Calculate district winners separately from aggregate votes, and avoid inferring motive from arithmetic alone.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 4.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Vote total 300/500=.6 and winners 2/5=.4 independently checked; equal electorate, two-party and plurality assumptions explicit. No unverified contiguity claim.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            100,
+            100,
+            33,
+            33,
+            34
+          ],
+          "expected": 300,
+          "evidence": "300 of 500"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            300,
+            500
+          ],
+          "expected": 0.6,
+          "evidence": "60%"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            2,
+            5
+          ],
+          "expected": 0.4,
+          "evidence": "40%"
+        }
+      ],
+      "contentHash": "13033d202763715d412eb1f8cc9c804055098418f1775e1493f2a24f7272777e"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-4-7",
+    "topicNumber": "4.7",
+    "unitNumber": 4,
+    "title": "Forms of Governance",
+    "status": "published",
+    "overview": "Forms of governance describe where authority is located within a state. Federal and unitary arrangements differ in the basis of regional powers, while their actual operation depends on constitutional and institutional context.",
+    "keyConcepts": [
+      {
+        "title": "Federal arrangements",
+        "text": "Authority is divided between central and regional governments, with regional powers constitutionally protected in the specified system. Some matters remain national and others are shared or regional."
+      },
+      {
+        "title": "Unitary arrangements",
+        "text": "The central government is the principal source of authority and can delegate tasks or powers to local bodies. Delegation can be extensive without making every arrangement federal."
+      },
+      {
+        "title": "Context",
+        "text": "Size, diversity, history and access can influence governance choices, but no one factor determines them. Federalism and democracy describe different dimensions of political organization."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional constitution assigns education powers to regions and prevents the national legislature from removing those powers by ordinary law.",
+      "steps": [
+        "This protected division of authority supports identifying a federal arrangement.",
+        "Contrast a specified system where local education powers exist only through a central statute that the legislature can withdraw: this illustrates delegated authority in a unitary arrangement."
+      ],
+      "conclusion": "The comparison concerns the basis of regional power, not simply how many local offices exist."
+    },
+    "misconception": "A federal state is not automatically democratic, and a unitary state need not administer every service directly from its capital.",
+    "apTip": "Use evidence about the legal distribution and protection of powers rather than equating decentralization, local offices and federalism.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 4.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Protected versus delegated power distinguished in explicitly hypothetical constitutions; democracy and federalism not conflated.",
+      "checks": [],
+      "contentHash": "ce48beeeefad60d38e4bbcd5ec030fff3f699f65699fac8931f9a9e54cb81077"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-4-8",
+    "topicNumber": "4.8",
+    "unitNumber": 4,
+    "title": "Defining Devolutionary Factors",
+    "status": "published",
+    "overview": "Devolution transfers authority from central government toward regional or local levels. Pressures for it may arise from cultural identity, uneven development, physical separation or dissatisfaction with representation.",
+    "keyConcepts": [
+      {
+        "title": "Cultural and political factors",
+        "text": "Distinct identities or perceived exclusion can support demands for greater self-government. Cultural difference alone does not inevitably produce separatism."
+      },
+      {
+        "title": "Economic and spatial factors",
+        "text": "Unequal investment, control of resource revenues or difficult access to a distant capital can strengthen regional grievances. Institutions mediate how these pressures develop."
+      },
+      {
+        "title": "Possible outcomes",
+        "text": "Autonomy, fiscal powers or regional assemblies may redistribute authority without creating a new sovereign state. Secession is a possible demand, not the definition of every devolution process."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional island region argues that a distant capital controls its tax revenues while providing inadequate transport. It requests authority over local spending and education.",
+      "steps": [
+        "Physical separation and perceived fiscal inequality help explain the regional demand.",
+        "Granting those powers could constitute devolution while the region remains inside the state."
+      ],
+      "conclusion": "The scenario does not establish that all island populations seek independence or that devolved authority will necessarily resolve every grievance."
+    },
+    "misconception": "An autonomy demand is not automatically a declaration of independence. Identify the specific power requested and the level receiving it.",
+    "apTip": "Explain a causal link between an observed regional condition, a grievance and a political demand, while acknowledging alternative outcomes.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 4.8; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Devolution separated from secession; island and fiscal mechanisms contextualized rather than treated as deterministic causes.",
+      "checks": [],
+      "contentHash": "265f1635134712ac10ed4fd3154dbfd3d84027a6baacdadba72571c53ef9a1c5"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-4-9",
+    "topicNumber": "4.9",
+    "unitNumber": 4,
+    "title": "Challenges to Sovereignty",
+    "status": "published",
+    "overview": "State sovereignty can be challenged by cross-border networks, regional autonomy pressures and organizations that operate beyond a single government’s control. Distinguish formal authority from the practical ability to regulate an activity.",
+    "keyConcepts": [
+      {
+        "title": "Supranational cooperation",
+        "text": "States may agree to shared rules or institutions that constrain some unilateral choices. Cooperation can also increase their collective capacity to address common problems."
+      },
+      {
+        "title": "Internal challenges",
+        "text": "Regional movements or nonstate actors can contest effective authority within a state. A challenge does not automatically eliminate international recognition or every government function."
+      },
+      {
+        "title": "Transboundary flows",
+        "text": "Digital communication, capital, migration and environmental effects can cross borders faster than national institutions regulate them. Responses can involve both restrictions and cooperation."
+      }
+    ],
+    "example": {
+      "prompt": "Fictional states join a trade organization and agree to common product standards. A member cannot change those standards unilaterally under the agreement.",
+      "steps": [
+        "The shared institution constrains a particular policy choice, illustrating pooled decision-making.",
+        "The member still governs its territory and may gain access or bargaining advantages through cooperation."
+      ],
+      "conclusion": "This differs from devolution to a region inside one state: the scale and direction of authority sharing are different."
+    },
+    "misconception": "Joining a shared institution does not mean a state has ceased to exist or surrendered every aspect of sovereignty.",
+    "apTip": "Name the actor and the specific power or flow at issue. Explain both the limitation and any capacity gained through cooperation.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 4.9; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Voluntary pooled rules distinguished from total loss of statehood and from inward devolution. Fictional agreement avoids unverified real treaty claims.",
+      "checks": [],
+      "contentHash": "d5f2a9f2f6443914d591213ce54dbe2966713b6154c6885f3f43adac419fdad3"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-4-10",
+    "topicNumber": "4.10",
+    "unitNumber": 4,
+    "title": "Consequences of Centrifugal and Centripetal Forces",
+    "status": "published",
+    "overview": "Centripetal forces support cohesion within a state, while centrifugal forces encourage division or separation. Their effects depend on inclusion, institutions and the groups experiencing a policy or condition.",
+    "keyConcepts": [
+      {
+        "title": "Cohesion mechanisms",
+        "text": "Accessible services, shared institutions or inclusive national symbols can support belonging. A shared label alone does not guarantee that everyone feels represented."
+      },
+      {
+        "title": "Division mechanisms",
+        "text": "Unequal development, discrimination or exclusion from power can strengthen regional grievances. Diversity itself is not an automatic cause of conflict."
+      },
+      {
+        "title": "Scale and context",
+        "text": "One policy can have different effects across groups and regions. Evaluate its actual distribution of benefits rather than assigning a permanent cohesive or divisive label."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional government builds a transport network intended to connect peripheral regions with national markets and services.",
+      "steps": [
+        "If access improves broadly, the network may support economic integration and shared participation, acting as a centripetal force.",
+        "If investment instead concentrates benefits in the capital while displacing peripheral residents without compensation, grievances may deepen."
+      ],
+      "conclusion": "The relevant explanation links the policy’s distributional effects to cohesion or division, not simply the existence of a railway."
+    },
+    "misconception": "A national project is not automatically centripetal for every resident. Likewise, multiple languages do not inevitably fragment a state.",
+    "apTip": "Use a concrete mechanism and identify who benefits or is excluded. Distinguish a plausible effect from an outcome demonstrated by evidence.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 4.10; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Conditional transport mechanisms and group-specific effects reviewed; no automatic infrastructure-cohesion or cultural-diversity-conflict inference.",
+      "checks": [],
+      "contentHash": "a199df12f93d822295e3f29dc79c251a8939e2a2dbe74c99c2a32ceaf2a9a5fc"
+    }
   }
 ]
