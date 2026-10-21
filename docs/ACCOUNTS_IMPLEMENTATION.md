@@ -1,5 +1,7 @@
 # Student accounts implementation plan and checkpoint
 
+Final status: independent implementation is complete. See docs/ACCOUNTS_VALIDATION.md for the actual local checks/limits and OWNER_SETUP_TODO.md for all pending owner/provider actions. Do not regenerate content or rerun account implementation from scratch. Foundation was pushed at 5a8e932 and integration at 3a9d182; final hardening/handoff is saved in the following Git checkpoint.
+
 ## Audit — October 21, 2026
 
 Baseline `7000b47` has a clean working tree. The interrupted run reached the read-only audit; no partial account code or crash log was saved. Shell, dependency installation and repository access work. No competing development run was active. There is no existing database or authentication. Next 16.4 uses `src/proxy.ts` and asynchronous cookies; installed Next authentication, proxy and cookies guides were read before implementation.

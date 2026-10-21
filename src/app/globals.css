@@ -36,7 +36,10 @@
 .progress-stat-grid strong { display:block; font-size:28px; color:var(--teal); }
 .progress-stat-grid span { color:var(--muted); }
 .progress-course p { margin:14px 0; }
-.progress-course progress { width:100%; accent-color:var(--teal); }
+.progress-course progress { width:100%; height:6px; appearance:none; border:0; border-radius:20px; background:var(--border); accent-color:var(--teal); overflow:hidden; }
+.progress-course progress::-webkit-progress-bar { background:var(--border); border-radius:20px; }
+.progress-course progress::-webkit-progress-value { background:var(--teal); border-radius:20px; }
+.progress-course progress::-moz-progress-bar { background:var(--teal); border-radius:20px; }
 .progress-list { display:grid; gap:12px; padding-left:20px; }
 .history-table-wrap { overflow:auto; }
 .history-table-wrap table { border-collapse:collapse; min-width:500px; width:100%; text-align:left; }

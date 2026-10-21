@@ -1,7 +1,7 @@
 "use client";
 import { useEffect,useRef,useState,useCallback } from "react";
 import { accountCacheKey,parseAccountCache,serializeAccountCache,ACCOUNT_CACHE_PREFIX } from "@/lib/account-cache";
-import { emptyCloud,queueChange,acceptChange,conflictChange,resolveConflict,visibleRecords,validRecord,recordId,type CloudState,type Kind,type RecordValue,type CloudRecord } from "@/lib/cloud-model";
+import { emptyCloud,queueChange,acceptChange,conflictChange,resolveConflict,visibleRecords,validRecord,recordId,recordValuesEqual,type CloudState,type Kind,type RecordValue,type CloudRecord } from "@/lib/cloud-model";
 export type SyncStatus="loading"|"saving"|"saved"|"offline"|"error"|"conflict";
 export function useCloudStudy(owner:string|null,enabled:boolean){
  const [state,setState]=useState<CloudState>(emptyCloud),[status,setStatus]=useState<SyncStatus>("loading"),[storageError,setStorageError]=useState(false),[initialized,setInitialized]=useState(false),[hydrated,setHydrated]=useState(false),[tick,setTick]=useState(0);
@@ -14,8 +14,15 @@ export function useCloudStudy(owner:string|null,enabled:boolean){
  useEffect(()=>{
   active.current=true;if(!owner||!enabled)return;
   try{
-   let tab=sessionStorage.getItem("prepatlas-tab");if(!tab){tab=crypto.randomUUID();sessionStorage.setItem("prepatlas-tab",tab);}key.current=accountCacheKey(owner,tab);
-   const raw=localStorage.getItem(key.current);if(raw){const next=parseAccountCache(raw,owner);current.current=next;setState(next);setHydrated(true);}
+   // Duplicate Tab clones sessionStorage in some browsers. Fork the prior cache
+   // into a fresh per-page outbox so two open pages never write the same file.
+   const pointer="prepatlas-tab:"+owner;
+   const previous=sessionStorage.getItem(pointer)||sessionStorage.getItem("prepatlas-tab");
+   const raw=previous?localStorage.getItem(accountCacheKey(owner,previous)):null;
+   const tab=crypto.randomUUID();sessionStorage.setItem(pointer,tab);key.current=accountCacheKey(owner,tab);
+   if(raw){const next=parseAccountCache(raw,owner);current.current=next;setState(next);setHydrated(true);localStorage.setItem(key.current,serializeAccountCache(owner,next));}
+   const importMarker=previous?localStorage.getItem(accountCacheKey(owner,previous)+":import"):null;
+   if(importMarker)localStorage.setItem(key.current+":import",importMarker);
   }catch{key.current=accountCacheKey(owner,crypto.randomUUID());setStorageError(true);}
   setInitialized(true);
   return()=>{active.current=false;abort.current?.abort();};
@@ -88,7 +95,7 @@ export function useCloudStudy(owner:string|null,enabled:boolean){
   if(current.current.records.some(r=>r.kind==="import"&&r.key===fingerprint))return;
   for(const record of records){
    const existing=visibleRecords(current.current).find(r=>recordId(r)===recordId(record));
-   if(existing&&JSON.stringify(existing.value)===JSON.stringify(record.value))continue;
+   if(existing&&recordValuesEqual(existing,record))continue;
    const sent={...record,revision:0,mutation:crypto.randomUUID()};
    if(existing)persist(conflictChange(current.current,sent,existing));else persist(queueChange(current.current,record.kind,record.key,record.value,sent.mutation));
   }

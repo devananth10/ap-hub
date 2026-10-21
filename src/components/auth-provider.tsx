@@ -21,14 +21,14 @@ export function AuthProvider({children}:{children:ReactNode}){
  },[]);
  useEffect(()=>{
   void refresh().then(()=>{if(verified.current)channel.current?.postMessage({userId:knownUser.current});});let debounce:ReturnType<typeof setTimeout>|undefined;
-  const changed=()=>{setState(s=>({...s,ready:false,user:null}));clearTimeout(debounce);debounce=setTimeout(()=>void refresh(),0);};
+  const changed=()=>{++seq.current;setState(s=>({...s,ready:false,user:null}));clearTimeout(debounce);debounce=setTimeout(()=>void refresh(),0);};
   const client=browserSupabase();const subscription=client?.auth.onAuthStateChange((event,session)=>{if(event==="SIGNED_IN"&&session?.user?.id===knownUser.current)void refresh();else if(event==="SIGNED_IN"||event==="SIGNED_OUT"||event==="PASSWORD_RECOVERY"||event==="USER_UPDATED")changed();else if(event==="TOKEN_REFRESHED")void refresh();});
   if(typeof BroadcastChannel!=="undefined"){channel.current=new BroadcastChannel("prepatlas-auth");channel.current.onmessage=event=>{if(event.data?.userId===knownUser.current)void refresh();else changed();};}
   const focus=()=>{if(document.visibilityState==="visible")void refresh();};document.addEventListener("visibilitychange",focus);
   return()=>{++seq.current;clearTimeout(debounce);subscription?.data.subscription.unsubscribe();channel.current?.close();document.removeEventListener("visibilitychange",focus);};
  },[refresh]);
  const signOut=async()=>{
-  try{await accountRequest("/api/auth",{action:"logout"});knownUser.current=null;setState(s=>({...s,user:null}));channel.current?.postMessage({userId:null});await refresh();return true;}
+  try{await accountRequest("/api/auth",{action:"logout"});++seq.current;knownUser.current=null;setState(s=>({...s,user:null}));channel.current?.postMessage({userId:null});await refresh();return true;}
   catch{return false;}
  };
  return <Context.Provider value={{...state,refresh,signOut}}>{children}</Context.Provider>;

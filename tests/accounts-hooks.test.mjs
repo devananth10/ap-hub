@@ -128,3 +128,14 @@ test('actual AuthProvider revalidates account changes but does not lock an uncha
   await act(async()=>{await pause(10);});await act(async()=>{resolve.release();resolve=null;await pause(0);});assert.equal(auth.user.id,'B');
  }finally{if(root)await act(async()=>root.unmount());globalThis.BroadcastChannel=oldChannel;}
 });
+test('duplicated page storage is forked so separate live pages retain independent unsynced notes',async()=>{
+ setup();navigator.onLine=false;let first,second,a,b;
+ function First(){first=useCloudStudy('A',true);return null;}function Second(){second=useCloudStudy('A',true);return null;}
+ await act(async()=>{a=create(React.createElement(First));});await act(async()=>first.change('note','chemistry/moles','source edit'));
+ const sourceKey=[...localStorage.map.keys()].find(k=>k.startsWith('prepatlas:account:v1:A:'));
+ await act(async()=>{b=create(React.createElement(Second));});await act(async()=>second.change('note','chemistry/moles','duplicate edit'));
+ assert.equal(JSON.parse(localStorage.getItem(sourceKey)).state.pending[0].value,'source edit');
+ assert.ok([...localStorage.map.values()].some(raw=>raw.includes('duplicate edit')));
+ assert.equal(first.state.pending[0].value,'source edit');assert.equal(second.state.pending[0].value,'duplicate edit');
+ await act(async()=>{a.unmount();b.unmount();});
+});

@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { publicCloudConfig,safeReturnTo,isSameOrigin } from '../src/lib/account-policy.ts';
-import { emptyCloud,queueChange,acceptChange,conflictChange,resolveConflict,visibleRecords,projectStudy,legacyChanges,validChange } from '../src/lib/cloud-model.ts';
+import { emptyCloud,queueChange,acceptChange,conflictChange,resolveConflict,visibleRecords,projectStudy,legacyChanges,validChange,recordValuesEqual } from '../src/lib/cloud-model.ts';
 import {serializeAccountCache,parseAccountCache} from '../src/lib/account-cache.ts';
 import {recoveryProof,verifyRecovery} from '../src/lib/recovery-proof.ts';
 const id=()=>crypto.randomUUID();
@@ -37,4 +37,9 @@ test('account caches fail closed for other owners, corrupted records and forged 
   process.env.AUTH_FLOW_SECRET=crypto.randomUUID()+crypto.randomUUID();const proof=recoveryProof('A','session-A');assert.equal(verifyRecovery(proof,'A','session-A'),true);
   assert.equal(verifyRecovery(proof,'B','session-A'),false);assert.equal(verifyRecovery(proof,'A','session-B'),false);assert.equal(verifyRecovery(proof+'x','A','session-A'),false);assert.equal(verifyRecovery('A','A','session-A'),false);
  }finally{if(before===undefined)delete process.env.AUTH_FLOW_SECRET;else process.env.AUTH_FLOW_SECRET=before;}
+});
+test('import compares equivalent database timestamps/key order without duplicating or changing attempts',()=>{
+ const first={kind:'attempt',value:{startedAt:'2026-10-21T12:00:00.000Z',completedAt:'2026-10-21T12:01:00.000Z',correct:1}};
+ const remote={kind:'attempt',value:{correct:1,completedAt:'2026-10-21T12:01:00+00:00',startedAt:'2026-10-21T12:00:00+00:00'}};
+ assert.equal(recordValuesEqual(first,remote),true);assert.equal(recordValuesEqual(first,{...remote,value:{...remote.value,correct:0}}),false);
 });

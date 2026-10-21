@@ -12,6 +12,15 @@ export type Change = CloudRecord & { mutation: string };
 export type CloudState = { records: CloudRecord[]; pending: Change[]; conflicts: { local: Change; remote: CloudRecord | null }[] };
 export const emptyCloud = (): CloudState => ({ records: [], pending: [], conflicts: [] });
 export const recordId = (r: Pick<CloudRecord,"kind"|"key">) => `${r.kind}:${r.key}`;
+export function recordValuesEqual(a:Pick<CloudRecord,"kind"|"value">,b:Pick<CloudRecord,"kind"|"value">){
+  function normalize(value:unknown,key=""):unknown{
+    if(typeof value==="string"&&["startedAt","completedAt","lastStudied"].includes(key)&&Number.isFinite(Date.parse(value)))return new Date(value).toISOString();
+    if(Array.isArray(value))return value.map(v=>normalize(v));
+    if(value&&typeof value==="object")return Object.fromEntries(Object.entries(value).sort(([a],[b])=>a.localeCompare(b)).map(([k,v])=>[k,normalize(v,k)]));
+    return value;
+  }
+  return a.kind===b.kind&&JSON.stringify(normalize(a.value))===JSON.stringify(normalize(b.value));
+}
 export const uuid = (v: unknown): v is string => typeof v === "string" && /^[\da-f]{8}-[\da-f]{4}-[\da-f]{4}-[\da-f]{4}-[\da-f]{12}$/i.test(v);
 const date = (v: unknown): v is string => typeof v === "string" && v.length <= 40 && Number.isFinite(Date.parse(v));
 export function canonicalTopic(key: string) { const [c,t,...extra] = key.split("/"); return !extra.length && !!findTopic(c,t).topic; }

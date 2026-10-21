@@ -1,5 +1,7 @@
 # Authorized development order — October 20, 2026
 
+October 21 accounts update: the owner separately authorized and the app now implements Supabase accounts and private progress sync, with guest studying preserved. Independent implementation/validation is complete; external provider setup and real cloud tests remain pending in OWNER_SETUP_TODO.md. See docs/ACCOUNTS_VALIDATION.md. Registration remains closed by default and public deployment remains unauthorized. Do not rebuild these features or regenerate completed content.
+
 Status October 21: all 2,640 MCQs remain complete and unchanged. Shared UI phases 1–2 are complete at a0700d9. **All 240 Topic Summaries are validated and published**: Chemistry 91, Calculus AB 81, Geography 68. The full audit is in content-drafts/topic-summaries/BANK_AUDIT.md and AUDIT.json. No topic remains unfinished. Do not regenerate completed content or start unrelated work without a new request.
 
 The owner's latest instruction explicitly requires completing **all 748 Human Geography MCQs across 68 official topics**, then passing the full bank/content/Practice audit and saving a verified GitHub checkpoint **before** starting the following UI or summary work. Current counts and the exact next topic are in `content-drafts/human-geography/PROGRESS.json`. Preserve valid unfinished work and never run concurrent generators or regenerate complete sets.
