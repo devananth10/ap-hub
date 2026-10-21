@@ -15,7 +15,7 @@
     "typecheck": "tsc --noEmit",
     "test": "pnpm test:unit && pnpm test:smoke",
     "test:unit": "node --experimental-strip-types --test tests/resource-policy.test.mjs tests/practice-artwork.test.mjs tests/practice-session.test.mjs tests/video-resources.test.mjs tests/feedback.test.mjs tests/calculus-bank.test.mjs tests/human-geography.test.mjs tests/geography-stimuli.test.mjs tests/topic-summaries.test.mjs",
-    "test:accounts": "node --experimental-strip-types --test tests/accounts.test.mjs tests/accounts-database.test.mjs tests/accounts-hooks.test.mjs tests/accounts-auth.test.mjs",
+    "test:accounts": "node --experimental-strip-types --test tests/accounts.test.mjs tests/accounts-database.test.mjs tests/accounts-hooks.test.mjs tests/accounts-auth.test.mjs tests/accounts-sync.test.mjs",
     "test:accounts:smoke": "node tests/accounts-smoke.mjs",
     "feedback:admin": "node --experimental-strip-types scripts/feedback-admin.mjs",
     "test:smoke": "node tests/smoke.mjs",

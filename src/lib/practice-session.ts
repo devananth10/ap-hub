@@ -1,7 +1,7 @@
 import type { BankQuestion } from "./practice-bank.ts";
 
 export type PracticeAnswer = { selected: number | null; checked: boolean; firstAnswer?: number };
-export type SessionState = { index: number; answers: Record<string, PracticeAnswer>; finished: boolean };
+export type SessionState = { index: number; answers: Record<string, PracticeAnswer>; finished: boolean; scoredAnswers?: Record<string, PracticeAnswer> };
 export const emptyAnswer: PracticeAnswer = { selected: null, checked: false };
 export const initialSession: SessionState = { index: 0, answers: {}, finished: false };
 type SessionAction =
@@ -18,7 +18,8 @@ export function sessionReducer(state: SessionState, action: SessionAction): Sess
     const answers = Object.fromEntries(Object.entries(state.answers).map(([id, answer]) => [id,
       answer.selected === null ? answer : { ...answer, checked: true, firstAnswer: answer.firstAnswer ?? answer.selected },
     ]));
-    return { ...state, answers, finished: true };
+    // Review can teach previously skipped questions without changing the completed attempt.
+    return { ...state, answers, finished: true, scoredAnswers: state.scoredAnswers ?? answers };
   }
   if (action.type === "review") return { ...state, finished: false };
   if (action.type === "move") {

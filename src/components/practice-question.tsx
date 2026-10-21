@@ -9,7 +9,7 @@ import { PracticeTable } from "./practice-table";
 import { GeographyStimulus } from "./geography-stimulus";
 import { geographyStimuli } from "@/lib/geography-stimuli";
 
-export function PracticeQuestion({ practice, answer, onSelect, onCheck, onRetry }: { practice: BankQuestion; answer: PracticeAnswer; onSelect: (index: number) => void; onCheck: () => void; onRetry: () => void }) {
+export function PracticeQuestion({ practice, answer, onSelect, onCheck, onRetry, disabled = false }: { practice: BankQuestion; answer: PracticeAnswer; onSelect: (index: number) => void; onCheck: () => void; onRetry: () => void; disabled?: boolean }) {
   const groupName = useId();
   // Do not let an early native radio click precede React's controlled state.
   const [ready, setReady] = useState(false);
@@ -25,7 +25,7 @@ export function PracticeQuestion({ practice, answer, onSelect, onCheck, onRetry 
       <div className={`practice-task-layout ${splitSuitable ? "can-split" : ""}`}>
       <GeographyStimulus key={practice.id} questionId={practice.id} />
       <div className="practice-answer-pane">
-      <fieldset disabled={checked || !ready} aria-busy={!ready}>
+      <fieldset disabled={checked || !ready || disabled} aria-busy={!ready || disabled}>
         <legend>{prompt}</legend>
         <PracticeFigure questionId={practice.id} />
         <PracticeTable questionId={practice.id} />
@@ -40,9 +40,9 @@ export function PracticeQuestion({ practice, answer, onSelect, onCheck, onRetry 
         <div role="status" className="practice-feedback">
           <strong>{selected === correctIndex ? "That’s it." : "Not quite. Review the explanation."}</strong>
           <p>{explanation}</p>
-          <button className="text-button" onClick={onRetry}><RotateCcw size={14} />Try again</button>
+          <button className="text-button" disabled={disabled} onClick={onRetry}><RotateCcw size={14} />Try again</button>
         </div>
-      ) : <button className="button primary" disabled={!ready || selected === null} onClick={onCheck}>Check answer<ArrowRight size={15} /></button>}
+      ) : <button className="button primary" disabled={!ready || disabled || selected === null} onClick={onCheck}>Check answer<ArrowRight size={15} /></button>}
       </div></div>
     </div>
   );

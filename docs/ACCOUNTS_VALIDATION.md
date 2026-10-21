@@ -1,5 +1,7 @@
 # Student accounts — local validation and handoff
 
+For the subsequent configured-project, read-only security audit and focused Practice fixes, see [CLOUD_PROGRESS_AUDIT.md](CLOUD_PROGRESS_AUDIT.md). The original results below describe the initial implementation checkpoint, not the current provider setup.
+
 Implementation is complete for work that does not require owner configuration. Public registration remains closed by default; no Supabase project, Google client, email service, live students, secrets or public deployment were created.
 
 ## Architecture and security

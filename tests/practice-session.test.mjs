@@ -71,3 +71,14 @@ test('invalid choices, checks without selections, edits after grading and naviga
   assert.equal(sessionReducer(initialSession, { type: 'move', index: 20, total: 11 }).index, 10);
   assert.equal(sessionReducer(initialSession, { type: 'move', index: 1, total: NaN }), initialSession);
 });
+
+test('completed score freezes skipped questions while review feedback and new attempts remain usable',()=>{
+ const [first,second]=questions;
+ let state=check(select(initialSession,first,first.correctIndex),first);
+ state=sessionReducer(state,{type:'finish'});const original=state.scoredAnswers;
+ assert.deepEqual(sessionScore([first,second],original),{correct:1,answered:1,total:2,percent:50});
+ state=sessionReducer(state,{type:'review'});state=check(select(state,second,second.correctIndex),second);
+ assert.equal(state.answers[second.id].checked,true,'review feedback still works');
+ state=sessionReducer(state,{type:'finish'});assert.equal(state.scoredAnswers,original);assert.equal(sessionScore([first,second],state.scoredAnswers).percent,50);
+ state=sessionReducer(state,{type:'restart'});assert.equal(state.scoredAnswers,undefined);
+});

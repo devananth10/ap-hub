@@ -24,7 +24,7 @@ export function PracticeSession({ entries }: { entries: PracticeEntry[] }) {
       navigating.current = false;
     }
   }, [state.index, state.finished]);
-  const score = sessionScore(entries.map(entry => entry.question), state.answers);
+  const score = sessionScore(entries.map(entry => entry.question), state.scoredAnswers ?? state.answers);
   useEffect(()=>{
     if(!state.finished||!study.ready||!attempt.current||attempt.current.saved||!entries.length)return;
     const first=entries[0];const courseId=entries.every(e=>e.course.id===first.course.id)?first.course.id:null;
@@ -52,8 +52,8 @@ export function PracticeSession({ entries }: { entries: PracticeEntry[] }) {
     <div className="progress-track practice-progress" aria-hidden="true"><span style={{ width: `${(state.index + 1) / entries.length * 100}%` }} /></div>
     <div ref={panel} role="group" tabIndex={-1} className="practice-question-frame" aria-label={`Question ${state.index + 1} of ${entries.length}`}>
       <div className="practice-context"><BookOpen size={15} /><span>{entry.course.title} · Topic {entry.topic.number}: {entry.topic.title}</span><Link href={`/courses/${entry.course.id}/${entry.topic.id}`}>Open topic<ArrowRight size={13} /></Link></div>
-      <PracticeQuestion key={entry.id} practice={entry.question} answer={state.answers[entry.id] || emptyAnswer} onSelect={selected => dispatch({ type: "select", id: entry.id, selected })} onCheck={() => dispatch({ type: "check", id: entry.id })} onRetry={() => dispatch({ type: "retry", id: entry.id })} />
+      <PracticeQuestion key={entry.id} disabled={!study.ready} practice={entry.question} answer={state.answers[entry.id] || emptyAnswer} onSelect={selected => dispatch({ type: "select", id: entry.id, selected })} onCheck={() => dispatch({ type: "check", id: entry.id })} onRetry={() => dispatch({ type: "retry", id: entry.id })} />
     </div>
-    <div className="practice-navigation"><button className="button secondary" disabled={state.index === 0} onClick={() => move(state.index - 1)}><ArrowLeft size={15} />Previous</button><div className="practice-navigation-actions"><button className="button secondary" onClick={() => { navigating.current = true; dispatch({ type: "finish" }); }}>Finish practice</button><button className="button primary" disabled={state.index === entries.length - 1} onClick={() => move(state.index + 1)}>Next question<ArrowRight size={15} /></button></div></div>
+    <div className="practice-navigation"><button className="button secondary" disabled={!study.ready || state.index === 0} onClick={() => move(state.index - 1)}><ArrowLeft size={15} />Previous</button><div className="practice-navigation-actions"><button className="button secondary" disabled={!study.ready} onClick={() => { navigating.current = true; dispatch({ type: "finish" }); }}>Finish practice</button><button className="button primary" disabled={!study.ready || state.index === entries.length - 1} onClick={() => move(state.index + 1)}>Next question<ArrowRight size={15} /></button></div></div>
   </>;
 }
