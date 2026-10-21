@@ -1,11 +1,18 @@
-# Topic Summary development
+# Topic Summary milestone complete — 2026-10-21
 
-The question bank is complete at 2,640 questions. Do not regenerate it. Shared UI refinements passed their milestone checks at a0700d9.
+**240/240 original Topic Summaries are validated and published. None are missing or withheld.**
 
-Current checkpoint: all Unit 1–7 topics, Chemistry 69, Calculus AB 69, Human Geography 68; **206/240 published, 34 remaining**. Human Geography is complete. Next missing topic is **8.1 in Chemistry and Calculus AB**. Machine-readable counts are in PROGRESS.json. The first 31-summary batch was saved and verified at b51d6ff; the 60-summary batch was verified at 6015566, and the 87-summary batch at 2b9ad5a, and the 113-summary batch at 10d1219. Unit 5 was verified at 4281a68 and Unit 6 at 2ce61e7.
+| Course | Published | Canonical topics |
+| --- | ---: | ---: |
+| AP Chemistry | 91 | 91 |
+| AP Calculus AB | 81 | 81 |
+| AP Human Geography | 68 | 68 |
+| Total | 240 | 240 |
 
-Every published review has original prose, 3–5 key concepts, a worked example, misconception, AP application reminder, exact canonical mapping, content-revision seal and recorded conceptual/numerical checks. Calculus 1.4 and 2.3 include original accessible values tables. Geography 2.3 and 2.5 include original demographic diagrams, equivalent tables and shared zoom; 3.4 adds an original diffusion schematic. Chemistry 3.8 adds original solute-particle accounting. The complete 240-topic audit has not passed because 34 summaries remain unwritten. Automated/model verification is not independent human review.
+Each review has 3–5 concepts, an original worked example, misconception and AP application reminder. Bodies contain 179–247 words. The inventory records 267 numerical operations, eight original diagrams and four additional reference tables. Conceptual review notes accompany every record. Automated/model checks are not independent human review.
 
-During review, Geography 1.6 was corrected to specify equal labor-force sizes before averaging unemployment rates; equal population alone would not suffice. Scientific/numerical and application checks must continue for each batch. See docs/TOPIC_SUMMARIES.md for editing and publication rules.
+All 2,640 MCQs remain unchanged. Approved video URLs, notes, watched status, saved resources, storage keys and feedback were preserved. No paid AI, transcript import or public deployment was added.
 
-Unit 5 adds original Calculus cubic/function-derivative graphs with labeled solid/dashed curves, equivalent reference values and zoom. Geography 5.8 adds classic agricultural rings with explicit model assumptions. Preserve these summary-only data while continuing.
+Full results: BANK_AUDIT.md, VALIDATION.md and AUDIT.json. The explicit full-course gate passed. **There is no next unfinished topic in this assignment.** Future sessions should address requested corrections or new milestones, not regenerate completed content.
+
+Verified checkpoints: UI a0700d9; 31 summaries b51d6ff; 60 at 6015566; 87 at 2b9ad5a; 113 at 10d1219; 148 at 4281a68; 179 at 2ce61e7; 206 at 3dc018e. The final 240-summary checkpoint follows the complete audit.

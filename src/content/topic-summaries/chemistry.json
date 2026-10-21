@@ -3838,5 +3838,1234 @@
       ],
       "contentHash": "ec5998fcc7533e77bd48e654ae8b24a2a9b0771a4c67a4ec33143b7481e1606d"
     }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "acids",
+    "topicNumber": "8.1",
+    "unitNumber": 8,
+    "title": "Introduction to Acids and Bases",
+    "status": "published",
+    "overview": "Acid–base behavior in water involves proton transfer and the resulting equilibria. Distinguish acid strength, concentration and the measured acidity of a solution rather than treating them as synonyms.",
+    "keyConcepts": [
+      {
+        "title": "Proton transfer",
+        "text": "A Brønsted acid donates H⁺ and a base accepts it. Water can serve either role depending on the other species in the reaction."
+      },
+      {
+        "title": "Conjugate pairs",
+        "text": "An acid and its conjugate base differ by one proton and the corresponding unit of charge. Track the pair through the equation."
+      },
+      {
+        "title": "Strength versus amount",
+        "text": "Strong and weak describe the extent of reaction or ionization under the relevant model; concentrated and dilute describe amount per volume. Neither word alone supplies a solution pH."
+      }
+    ],
+    "example": {
+      "prompt": "Identify acid, base and conjugate partners in HF + H₂O ⇌ H₃O⁺ + F⁻.",
+      "steps": [
+        "HF donates a proton, making it the acid and F⁻ its conjugate base.",
+        "Water accepts that proton, making it the base and H₃O⁺ its conjugate acid."
+      ],
+      "conclusion": "HF is a weak acid in water, so the equilibrium description does not assume complete conversion merely because a hydrogen appears in the formula."
+    },
+    "misconception": "A weak acid is not automatically a dilute solution, and an acid–base label can depend on the reaction partner.",
+    "apTip": "Write the proton-transfer equation, identify pairs differing by one H⁺ and use equilibrium information when comparing strengths or predicting pH.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 8.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Proton and charge balance independently checked; HF weak-acid role and water acceptor role distinguished from concentration.",
+      "checks": [],
+      "contentHash": "18091c587e8a50eb70c2a7ac294987992131d7e0f856730404b092537fe984b1"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-8-2",
+    "topicNumber": "8.2",
+    "unitNumber": 8,
+    "title": "pH and pOH of Strong Acids and Bases",
+    "status": "published",
+    "overview": "pH and pOH express hydronium and hydroxide activities on logarithmic scales. In the usual dilute-solution approximation, concentrations provide the corresponding AP calculations.",
+    "keyConcepts": [
+      {
+        "title": "Definitions",
+        "text": "pH = −log[H₃O⁺] and pOH = −log[OH⁻] using the standard concentration convention. A tenfold concentration change corresponds to one logarithmic unit."
+      },
+      {
+        "title": "Water equilibrium",
+        "text": "At 25°C, Kw ≈ 1.0 × 10⁻¹⁴ and pH + pOH ≈ 14.00. At other temperatures, use the appropriate Kw rather than automatically using fourteen."
+      },
+      {
+        "title": "Strong species",
+        "text": "Strong acids and dissolved strong bases can be treated as fully ionized in suitable calculations. Count the number of ions released per formula unit and consider water when solutions are extremely dilute."
+      }
+    ],
+    "example": {
+      "prompt": "Find pH of 0.00500 M dissolved Ca(OH)₂ at 25°C under the ideal strong-base approximation.",
+      "steps": [
+        "Each formula unit supplies two hydroxide ions, so [OH⁻] = 0.0100 M.",
+        "pOH = −log(0.0100) = 2.00. Therefore pH = 14.00 − 2.00 = 12.00."
+      ],
+      "conclusion": "The concentration used in the logarithm is hydroxide concentration, not the original formula-unit concentration."
+    },
+    "misconception": "Neutrality means equal hydronium and hydroxide activities; neutral pH is seven only under the corresponding temperature conditions.",
+    "apTip": "Check temperature, ion multiplicity, logarithm sign and whether the result describes pH or pOH.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 8.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Hydroxide factor2, negative logarithm and 25°C subtraction independently recomputed; water/temperature caveats retained.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            2,
+            0.005
+          ],
+          "expected": 0.01,
+          "evidence": "0.0100 M"
+        },
+        {
+          "operation": "negativeLog10Ratio",
+          "operands": [
+            0.01,
+            1
+          ],
+          "expected": 2,
+          "evidence": "2.00"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            14,
+            2
+          ],
+          "expected": 12,
+          "evidence": "12.00"
+        }
+      ],
+      "contentHash": "32cfab515b6ad0aef1ce3cb7018a973636268dcac33e0bda9b6f4c0713b60c3e"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-8-3",
+    "topicNumber": "8.3",
+    "unitNumber": 8,
+    "title": "Weak Acid and Base Equilibria",
+    "status": "published",
+    "overview": "Weak acids and bases establish equilibria rather than completely converting to ions. Use an equilibrium expression and a material balance, then check any simplifying approximation.",
+    "keyConcepts": [
+      {
+        "title": "Acid expression",
+        "text": "For HA + H₂O ⇌ H₃O⁺ + A⁻, Ka = [H₃O⁺][A⁻]/[HA] in the standard concentration form. Pure water is omitted."
+      },
+      {
+        "title": "Base relationship",
+        "text": "A weak base has its own Kb. Conjugate Ka and Kb satisfy KaKb = Kw at the same temperature; stronger acid and conjugate-base strength are inversely related."
+      },
+      {
+        "title": "Small-change check",
+        "text": "Approximating C − x by C is useful only when x is small relative to C. Verify the ratio after solving or use the full equation."
+      }
+    ],
+    "example": {
+      "prompt": "A monoprotic weak acid has Ka = 1.00 × 10⁻⁵ and initial concentration 0.100 M. Estimate its pH, neglecting water ionization.",
+      "steps": [
+        "Write Ka = x²/(0.100 − x). If x is small, x ≈ √(KaC) = 0.00100 M.",
+        "This is 1.0% of the initial concentration, supporting the small-change approximation."
+      ],
+      "conclusion": "The estimated pH is 3.00. The full quadratic gives a slightly different value, so the approximation must remain labeled."
+    },
+    "misconception": "A small Ka is not itself the percentage ionization. Initial concentration and the equilibrium balance also matter.",
+    "apTip": "Check the species, temperature, approximation and physical root before converting concentration to pH.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 8.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent exact root is about .000995 M, confirming1% approximation and pH≈3.00; not claimed exact.",
+      "checks": [
+        {
+          "operation": "power",
+          "operands": [
+            0.000001,
+            0.5
+          ],
+          "expected": 0.001,
+          "evidence": "0.00100 M"
+        },
+        {
+          "operation": "negativeLog10Ratio",
+          "operands": [
+            0.001,
+            1
+          ],
+          "expected": 3,
+          "evidence": "3.00"
+        }
+      ],
+      "contentHash": "fc6fe4ff7392283d23976ee5f92fc1e2154f97be21e076d043b8b1c8375d07cd"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-8-4",
+    "topicNumber": "8.4",
+    "unitNumber": 8,
+    "title": "Acid-Base Reactions and Buffers",
+    "status": "published",
+    "overview": "When strong acid or base is added to a weak-acid/conjugate-base mixture, complete the stoichiometric neutralization before analyzing the remaining equilibrium. Buffer behavior depends on what remains after that reaction.",
+    "keyConcepts": [
+      {
+        "title": "Neutralize first",
+        "text": "Added H₃O⁺ reacts with conjugate base, while added OH⁻ reacts with weak acid. Update moles using the balanced proton-transfer equation."
+      },
+      {
+        "title": "Check the mixture",
+        "text": "Appreciable amounts of both weak acid and conjugate base can form a buffer. Exhausting one component changes which calculation is appropriate."
+      },
+      {
+        "title": "Use shared volume",
+        "text": "For the same final mixture, a conjugate-base-to-acid concentration ratio equals their mole ratio because the common volume cancels."
+      }
+    ],
+    "example": {
+      "prompt": "An appreciably concentrated buffer contains 0.200 mol HA and 0.100 mol A⁻. Add 0.0500 mol OH⁻.",
+      "steps": [
+        "The reaction HA + OH⁻ → A⁻ + H₂O consumes 0.0500 mol HA and produces the same amount of A⁻.",
+        "Final amounts are 0.150 mol of each, with no excess strong base under the stated conditions."
+      ],
+      "conclusion": "Their ratio is one, so the buffer approximation gives pH ≈ pKa. Calculating pH from the originally added OH⁻ concentration would ignore its reaction."
+    },
+    "misconception": "A reagent’s added amount is not necessarily its final free concentration after neutralization.",
+    "apTip": "Draw a mole table, identify any excess strong species and choose the equilibrium model only after checking the final composition.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 8.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "HA consumption and A production independently balanced; equal .150 amounts and complete strong-base consumption verified.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            0.2,
+            0.05
+          ],
+          "expected": 0.15,
+          "evidence": "0.150 mol"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            0.1,
+            0.05
+          ],
+          "expected": 0.15,
+          "evidence": "0.150 mol"
+        }
+      ],
+      "contentHash": "5d8c1465568239b985043fe73887dd7498ac589e4d83b86ff9a50c2d9dfa01e6"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-8-5",
+    "topicNumber": "8.5",
+    "unitNumber": 8,
+    "title": "Acid-Base Titrations",
+    "status": "published",
+    "overview": "An acid–base titration passes through different chemical regimes. The applicable pH calculation depends on amounts before, at or after equivalence, not simply on how much titrant has been added.",
+    "keyConcepts": [
+      {
+        "title": "Before equivalence",
+        "text": "For a weak acid titrated with strong base, remaining acid and produced conjugate base can form a buffer. Neutralization stoichiometry determines their amounts first."
+      },
+      {
+        "title": "At equivalence",
+        "text": "The original weak acid has been converted mainly to its conjugate base, whose hydrolysis can make the solution basic at 25°C. Equivalence is not universally pH 7."
+      },
+      {
+        "title": "After equivalence",
+        "text": "Excess strong base can dominate pH; divide its remaining moles by total solution volume. Indicator endpoint and stoichiometric equivalence remain distinct concepts."
+      }
+    ],
+    "example": {
+      "prompt": "Titrate 25.0 mL of 0.100 M monoprotic HA with 0.100 M NaOH. Let pKa = 4.00. Identify the half-equivalence condition.",
+      "steps": [
+        "Initial HA is 0.00250 mol, so equivalence requires 25.0 mL base.",
+        "At 12.5 mL, half the acid has reacted, leaving equal HA and A⁻ amounts."
+      ],
+      "conclusion": "The buffer relationship gives pH ≈ 4.00 there. This is the half-equivalence pH, not the equivalence-point pH."
+    },
+    "misconception": "An indicator color change is an experimental signal near a chosen transition range, not a definition that every titration ends at pH 7.",
+    "apTip": "Locate the stoichiometric region and identify the dominant species before selecting a pH formula.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 8.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Initial moles,25mL equivalence and 12.5mL half-equivalence independently checked for1:1 monoprotic reaction.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            0.025,
+            0.1
+          ],
+          "expected": 0.0025,
+          "evidence": "0.00250 mol"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            25,
+            2
+          ],
+          "expected": 12.5,
+          "evidence": "12.5 mL"
+        }
+      ],
+      "contentHash": "98eb3e85532c92d6a5723e3c17734408988e8083d34729cea131217a22294555"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-8-6",
+    "topicNumber": "8.6",
+    "unitNumber": 8,
+    "title": "Molecular Structure of Acids and Bases",
+    "status": "published",
+    "overview": "Acid and base strength can be explained through molecular structure and the stability of conjugate species. Compare related structures rather than using the number of hydrogen atoms as a strength rule.",
+    "keyConcepts": [
+      {
+        "title": "Conjugate stability",
+        "text": "An acid tends to be stronger when proton loss produces a more stabilized conjugate base. Resonance and electron-withdrawing groups can contribute."
+      },
+      {
+        "title": "Bond and atom effects",
+        "text": "For related binary acids, electronegativity and bond strength matter. Trends across a period and down a group can reflect different dominant factors."
+      },
+      {
+        "title": "Base availability",
+        "text": "Basicity depends on the ability to accept a proton, including the availability of an electron pair and stabilization of the resulting species."
+      }
+    ],
+    "example": {
+      "prompt": "Compare acetic acid, CH₃COOH, with ethanol, CH₃CH₂OH, as proton donors from their O–H groups.",
+      "steps": [
+        "Acetate, the conjugate base of acetic acid, can delocalize negative charge across two oxygen atoms through resonance.",
+        "The corresponding ethanol conjugate base lacks that same two-oxygen delocalization."
+      ],
+      "conclusion": "This structural difference helps explain why acetic acid is the stronger acid. It does not require claiming that every oxygen-containing molecule has the same acidity."
+    },
+    "misconception": "A molecule with more hydrogen atoms is not automatically more acidic. Which bond loses a proton and what remains are crucial.",
+    "apTip": "Draw the relevant conjugate species, identify a stabilizing or destabilizing feature and connect it to the equilibrium tendency.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 8.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Carboxylate versus alkoxide resonance distinction independently reviewed; comparison concerns O–H deprotonation, not arbitrary hydrogen counting.",
+      "checks": [],
+      "contentHash": "fd3ab2ceba7a4ce5db0f958641773d149cf35b3df79dd28edf5406d283a1e288"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-8-7",
+    "topicNumber": "8.7",
+    "unitNumber": 8,
+    "title": "pH and pKa",
+    "status": "published",
+    "overview": "pKa expresses acid strength logarithmically, while pH describes solution acidity. Their relationship helps interpret which conjugate form predominates without equating a substance property with the condition of every solution containing it.",
+    "keyConcepts": [
+      {
+        "title": "Strength scale",
+        "text": "pKa = −log Ka. A lower pKa corresponds to a larger Ka and a stronger acid under the stated conditions."
+      },
+      {
+        "title": "Relative forms",
+        "text": "For a weak-acid equilibrium, pH equal to pKa corresponds to equal acid and conjugate-base activities. Higher pH favors the base form relative to the acid."
+      },
+      {
+        "title": "Concentration matters",
+        "text": "A solution’s pH depends on composition as well as Ka. Acid-strength comparisons alone do not give the pH of arbitrary mixtures."
+      }
+    ],
+    "example": {
+      "prompt": "A weak acid has Ka = 1.00 × 10⁻⁴. At pH 5.00, find its conjugate-base-to-acid ratio under the concentration model.",
+      "steps": [
+        "Its pKa is 4.00, and the hydronium concentration at pH 5.00 is 1.00 × 10⁻⁵ M.",
+        "From Ka = [H₃O⁺][A⁻]/[HA], the ratio [A⁻]/[HA] is 10."
+      ],
+      "conclusion": "The base form predominates ten to one, rather than the pH being forced to equal the acid’s pKa."
+    },
+    "misconception": "A difference of one pKa unit means a tenfold Ka ratio, not a fixed tenfold hydronium ratio for every possible solution.",
+    "apTip": "Identify whether a question asks about intrinsic equilibrium strength, current pH or the ratio of conjugate forms.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 8.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Negative logarithm and Ka/H ratio independently checked; pH versus acid-strength property distinguished.",
+      "checks": [
+        {
+          "operation": "negativeLog10Ratio",
+          "operands": [
+            0.0001,
+            1
+          ],
+          "expected": 4,
+          "evidence": "4.00"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            0.0001,
+            0.00001
+          ],
+          "expected": 10,
+          "evidence": "ratio [A⁻]/[HA] is 10"
+        }
+      ],
+      "contentHash": "9981b0e9591ab5c150816b808693324249c591da848f23689345274705de589e"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-8-8",
+    "topicNumber": "8.8",
+    "unitNumber": 8,
+    "title": "Properties of Buffers",
+    "status": "published",
+    "overview": "A buffer contains a weak acid and its conjugate base in amounts able to consume modest added acid or base. Its resistance is limited and depends on composition as well as total concentration.",
+    "keyConcepts": [
+      {
+        "title": "Response",
+        "text": "Conjugate base reacts with added acid, while weak acid reacts with added base. These reactions limit changes in the free hydronium concentration."
+      },
+      {
+        "title": "Ratio and pH",
+        "text": "The conjugate-base-to-acid ratio strongly influences pH. Equal ratios can give similar pH values even when total concentrations differ."
+      },
+      {
+        "title": "Concentration and capacity",
+        "text": "For equal sample volumes, a more concentrated suitable pair can consume more added acid or base before its composition changes greatly."
+      }
+    ],
+    "example": {
+      "prompt": "Compare two 100 mL buffers with the same pKa: one contains 0.100 M of each partner and the other 0.0100 M of each.",
+      "steps": [
+        "Both have a one-to-one ratio, so both have pH approximately equal to pKa.",
+        "The stronger-concentration sample contains 0.0100 mol of each component, while the dilute sample contains 0.00100 mol of each."
+      ],
+      "conclusion": "Their equal initial pH values do not mean equal resistance to the same added acid amount. The first has greater capacity in these equal volumes."
+    },
+    "misconception": "Dilution can leave the ratio and approximate pH similar while reducing capacity per unit volume. It does not necessarily remove the original batch’s solute moles.",
+    "apTip": "Check for an appropriate conjugate pair and distinguish initial pH from the amount of disturbance the sample can absorb.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 8.8; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Equal-volume mole amounts and ratio equality independently checked; per-volume dilution statement avoids confusing concentration reduction with loss of total buffer moles.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            0.1,
+            0.1
+          ],
+          "expected": 0.01,
+          "evidence": "0.0100 mol"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            0.01,
+            0.1
+          ],
+          "expected": 0.001,
+          "evidence": "0.00100 mol"
+        }
+      ],
+      "contentHash": "330f8115e7292c3dfe3f62ddb5b9a1c46dc05169d2376540624b1b04652c1967"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-8-9",
+    "topicNumber": "8.9",
+    "unitNumber": 8,
+    "title": "Henderson-Hasselbalch Equation",
+    "status": "published",
+    "overview": "The Henderson–Hasselbalch relationship rewrites a weak-acid equilibrium in terms of pKa and the conjugate-base-to-acid ratio. It is especially useful for suitable buffer mixtures after any strong-acid/base reaction has been accounted for.",
+    "keyConcepts": [
+      {
+        "title": "Equation",
+        "text": "pH = pKa + log([A⁻]/[HA]) using equilibrium activities or appropriate concentration approximations. Keep the base over the acid."
+      },
+      {
+        "title": "Mole ratios",
+        "text": "Within one final solution, the common volume cancels in the ratio. Updated mole amounts can be used after neutralization when the buffer approximation is appropriate."
+      },
+      {
+        "title": "Limits",
+        "text": "A remaining excess of strong acid or base, extremely dilute components or an unsuitable pair can require a different analysis. Do not use the equation mechanically for every mixture."
+      }
+    ],
+    "example": {
+      "prompt": "A suitable buffer has pKa 4.00, [A⁻] = 0.200 M and [HA] = 0.0200 M. Estimate pH.",
+      "steps": [
+        "The conjugate-base-to-acid ratio is 10.0.",
+        "Its base-ten logarithm is 1.00, giving pH = 4.00 + 1.00 = 5.00."
+      ],
+      "conclusion": "The higher base fraction makes the pH higher than pKa. Reversing the ratio would incorrectly predict a lower pH."
+    },
+    "misconception": "The logarithm acts on the ratio, not on its numerator alone. Parentheses matter when entering a calculation.",
+    "apTip": "Perform reaction stoichiometry first, check that both buffer partners remain appreciable and verify the ratio direction before calculating.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 8.9; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent log10(.200/.0200)= 1 and pH 5 checked; concentration-ratio approximation explicitly limited to a suitable buffer.",
+      "checks": [
+        {
+          "operation": "log10Ratio",
+          "operands": [
+            0.2,
+            0.02
+          ],
+          "expected": 1,
+          "evidence": "logarithm is 1.00"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            4,
+            1
+          ],
+          "expected": 5,
+          "evidence": "= 5.00"
+        }
+      ],
+      "contentHash": "c116088ab5c3cce22cd38718c3eade1687d3b62527594173a6b6c41da62fd714"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-8-10",
+    "topicNumber": "8.10",
+    "unitNumber": 8,
+    "title": "Buffer Capacity",
+    "status": "published",
+    "overview": "Buffer capacity describes how much added acid or base a sample can accommodate before its pH changes substantially. It depends on available amounts and on the direction of the disturbance, not only the starting pH.",
+    "keyConcepts": [
+      {
+        "title": "Total amount",
+        "text": "At a given volume and similar ratio, more concentrated components generally provide greater capacity. Distinguish per-volume capacity from the total amount in a larger batch."
+      },
+      {
+        "title": "Balance",
+        "text": "For a fixed total concentration, a ratio near one provides balanced resistance to acid and base. A strongly unequal ratio offers less capacity against the reagent that consumes the smaller component."
+      },
+      {
+        "title": "Limits",
+        "text": "Once a partner is exhausted, ordinary buffer reasoning can fail. The useful pH range near pKa is a practical guide rather than a sharp universal boundary."
+      }
+    ],
+    "example": {
+      "prompt": "Two buffers have pKa 4.00 and equal acid/base ratios. A contains 0.100 mol of each partner; B contains 0.0100 mol of each. Add 0.00500 mol H⁺ to each.",
+      "steps": [
+        "The added acid converts A⁻ to HA. A’s final ratio is 0.095/0.105; B’s is 0.005/0.015.",
+        "The estimated pH values are about 3.96 for A and 3.52 for B."
+      ],
+      "conclusion": "Both started near 4.00, but the smaller buffer undergoes the larger change."
+    },
+    "misconception": "Identical initial pH does not establish identical capacity, and a buffer cannot neutralize an unlimited reagent amount.",
+    "apTip": "Update moles first and compare the remaining ratio and total capacity before judging resistance.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 8.10; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent HH evaluation gives 3.9565 and 3.5229; both mole balances and unequal response verified.",
+      "checks": [
+        {
+          "operation": "log10Ratio",
+          "operands": [
+            0.095,
+            0.105
+          ],
+          "expected": -0.0434656937810903,
+          "evidence": "0.095/0.105"
+        },
+        {
+          "operation": "log10Ratio",
+          "operands": [
+            0.005,
+            0.015
+          ],
+          "expected": -0.4771212547196624,
+          "evidence": "0.005/0.015"
+        }
+      ],
+      "contentHash": "dab87a20d035af9f063861942c2f4a74a6a3d2770befe7b7f19bb32777358dd0"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-8-11",
+    "topicNumber": "8.11",
+    "unitNumber": 8,
+    "title": "pH and Solubility",
+    "status": "published",
+    "overview": "pH can affect solubility when dissolved ions participate in acid–base reactions. Combine the dissolution equilibrium with proton transfer rather than treating Ksp alone as a complete description of every condition.",
+    "keyConcepts": [
+      {
+        "title": "Coupled equilibria",
+        "text": "Removing a dissolved ion through another reaction can favor additional dissolution while the solid phase remains available. Ksp itself stays fixed at the same temperature."
+      },
+      {
+        "title": "Hydroxide solids",
+        "text": "Added acid can consume OH⁻ and promote dissolution of many metal hydroxides under the simple model. Other complexation or amphoteric behavior can modify specific cases."
+      },
+      {
+        "title": "Basic anions",
+        "text": "Protonating anions such as fluoride or carbonate reduces their free-ion concentrations, which can affect the compatible dissolved metal concentration."
+      }
+    ],
+    "example": {
+      "prompt": "Explain why acid can increase CaF₂ solubility when F⁻ is protonated to HF, ignoring other effects.",
+      "steps": [
+        "The dissolution expression is Ksp = [Ca²⁺][F⁻]².",
+        "Proton transfer lowers free [F⁻], reducing the ion product before additional solid dissolves."
+      ],
+      "conclusion": "Further dissolution can restore the equilibrium relationship, so total molar solubility can rise even though Ksp has not changed. Total fluoride in all forms is not the same as free fluoride in Ksp."
+    },
+    "misconception": "Plugging total analytical concentration into a free-ion equilibrium expression can be incorrect when substantial protonation or complexation occurs.",
+    "apTip": "Identify which species pH changes, write both relevant reactions and state the assumptions before predicting the solubility response.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 8.11; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Free-fluoride consumption and squared ion-product response reviewed; total versus free concentration and unchanged Ksp distinguished.",
+      "checks": [],
+      "contentHash": "611b55cf384c21a4b0a18914f75166b2f40efa510e75d1f67fb9f20720bb3a78"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "entropy",
+    "topicNumber": "9.1",
+    "unitNumber": 9,
+    "title": "Introduction to Entropy",
+    "status": "published",
+    "overview": "Entropy describes how many microscopic arrangements are compatible with a system’s macroscopic state and how energy is distributed. Qualitative comparisons should specify the particles, state and conditions rather than equating entropy with everyday untidiness.",
+    "keyConcepts": [
+      {
+        "title": "Accessible arrangements",
+        "text": "More accessible positions and energy distributions generally correspond to greater entropy. Temperature, phase and particle numbers can influence the comparison."
+      },
+      {
+        "title": "Phase trends",
+        "text": "For the same substance under comparable conditions, a gas generally has greater molar entropy than its liquid or solid because particles have many more positional possibilities."
+      },
+      {
+        "title": "System and surroundings",
+        "text": "A system’s entropy change alone does not establish the total entropy change or thermodynamic favorability of every process. Include the surroundings when that criterion is required."
+      }
+    ],
+    "example": {
+      "prompt": "Compare the entropy of an ideal-gas sample before and after its available volume doubles at the same temperature and particle number.",
+      "steps": [
+        "The particles can occupy more spatial arrangements in the larger volume.",
+        "The system entropy increases, even though no extra particles were added and the temperature is unchanged."
+      ],
+      "conclusion": "This qualitative system comparison does not specify the heat exchanged with surroundings or prove a particular process rate."
+    },
+    "misconception": "Calling one state more “disordered” without identifying microscopic possibilities is an incomplete explanation.",
+    "apTip": "State what is held fixed and identify a specific change in positions, motion or accessible energy arrangements to support the entropy comparison.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 9.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Ideal-gas isothermal expansion increases accessible positional states; particle count and temperature held fixed, no unsupported total-entropy or rate inference.",
+      "checks": [],
+      "contentHash": "1891f5d30713639e04085b59ff2bfbc1ccfdb102f8b8b0996242048da4f0196d"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-9-2",
+    "topicNumber": "9.2",
+    "unitNumber": 9,
+    "title": "Absolute Entropy and Entropy Change",
+    "status": "published",
+    "overview": "Absolute molar entropies provide values for comparing states and calculating standard reaction entropy changes. Their reference differs from the zero convention used for elemental standard formation enthalpies.",
+    "keyConcepts": [
+      {
+        "title": "Absolute reference",
+        "text": "The third-law reference assigns zero entropy to an ideal perfect crystal at zero kelvin. Elements at ordinary standard temperatures generally have nonzero molar entropies."
+      },
+      {
+        "title": "Reaction calculation",
+        "text": "Use coefficient-weighted product entropies minus coefficient-weighted reactant entropies, retaining consistent temperature and units."
+      },
+      {
+        "title": "Qualitative check",
+        "text": "Changes in gas particle amounts and phases can suggest a sign, but detailed molecular properties and tabulated values determine the quantitative result."
+      }
+    ],
+    "example": {
+      "prompt": "For N₂(g) + 3H₂(g) →2NH₃(g), use molar entropies 192,131 and 193 J/(mol·K), respectively, at one specified temperature.",
+      "steps": [
+        "The product sum is 2(193) = 386 J/K per written reaction amount.",
+        "The reactant sum is 192 + 3(131) = 585 J/K, so ΔS° = 386 −585 = −199 J/K on that basis."
+      ],
+      "conclusion": "The negative sign is consistent with fewer gas particles, but the supplied entropy values establish the numerical result."
+    },
+    "misconception": "Do not set S° of N₂ or H₂ to zero merely because they are elements in reference states. That is not the entropy convention.",
+    "apTip": "Check coefficients, physical states and the reaction basis, and distinguish J from kJ when combining entropy with enthalpy later.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 9.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Weighted sums386/585 and difference-199 independently checked; absolute entropy distinguished from formation enthalpy convention.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            2,
+            193
+          ],
+          "expected": 386,
+          "evidence": "= 386"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            192,
+            393
+          ],
+          "expected": 585,
+          "evidence": "= 585"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            386,
+            585
+          ],
+          "expected": -199,
+          "evidence": "−199 J/K"
+        }
+      ],
+      "contentHash": "bb609a9a244715e9665cb238780d88dc2238763f4809465c47058b2376e752ea"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-9-3",
+    "topicNumber": "9.3",
+    "unitNumber": 9,
+    "title": "Gibbs Free Energy and Thermodynamic Favorability",
+    "status": "published",
+    "overview": "Gibbs free energy combines enthalpy and entropy to assess thermodynamic favorability at constant temperature and pressure. Keep the temperature absolute and the energy units consistent.",
+    "keyConcepts": [
+      {
+        "title": "Relationship",
+        "text": "ΔG =ΔH −TΔS. A negative value favors the written forward process under the specified conditions, while zero describes equilibrium for the current composition."
+      },
+      {
+        "title": "Temperature effects",
+        "text": "When ΔH and ΔS share a sign, temperature can change the balance. Treating them as constant over a range is an approximation that should be stated."
+      },
+      {
+        "title": "Standard distinction",
+        "text": "Standard-state values produce ΔG°. The actual driving force at a nonstandard composition can differ, so the symbol and conditions matter."
+      }
+    ],
+    "example": {
+      "prompt": "Assume ΔH° =+ 40.0 kJ/mol and ΔS° =+ 100 J/(mol·K) remain approximately constant. Compare ΔG° at 300 and 500 K.",
+      "steps": [
+        "Convert entropy to 0.100 kJ/(mol·K). At 300 K, ΔG° = 40.0 −30.0 =+ 10.0 kJ/mol.",
+        "At 500 K, it is 40.0 −50.0 = −10.0 kJ/mol."
+      ],
+      "conclusion": "The balance changes at approximately 400 K in this model. This is a standard-state comparison, not a prediction of instantaneous reaction speed."
+    },
+    "misconception": "Using Celsius or combining kJ enthalpy with unconverted J entropy can reverse a conclusion numerically.",
+    "apTip": "Label standard versus actual quantities, convert units and interpret the sign only under the stated conditions.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 9.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent unit conversion and both temperature products checked; threshold40/.100=400K under explicit constant-parameter approximation.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            40,
+            30
+          ],
+          "expected": 10,
+          "evidence": "+ 10.0 kJ/mol"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            40,
+            50
+          ],
+          "expected": -10,
+          "evidence": "−10.0 kJ/mol"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            40,
+            0.1
+          ],
+          "expected": 400,
+          "evidence": "400 K"
+        }
+      ],
+      "contentHash": "2e2f1fbfe201b800f276795417ecd88ada287115c269f14a950d6c21e272a1c8"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-9-4",
+    "topicNumber": "9.4",
+    "unitNumber": 9,
+    "title": "Thermodynamic and Kinetic Control",
+    "status": "published",
+    "overview": "Thermodynamic favorability and observable rate are different questions. A process with a favorable driving force can remain extremely slow because reaching its pathway requires overcoming a large kinetic barrier.",
+    "keyConcepts": [
+      {
+        "title": "Driving force",
+        "text": "Free-energy information describes the favored direction or equilibrium tendency under specified conditions. It does not directly supply a time scale."
+      },
+      {
+        "title": "Barrier",
+        "text": "Activation energy and the available pathway affect how rapidly particles can react. A high barrier can produce kinetic control even when the process is favorable."
+      },
+      {
+        "title": "Catalysis",
+        "text": "A catalyst can provide a faster pathway without changing the reaction’s equilibrium constant or standard free-energy difference at the same temperature."
+      }
+    ],
+    "example": {
+      "prompt": "A hypothetical reaction has a negative actual ΔG under the stated conditions but shows no measurable change during a short observation. Its pathway has a large activation barrier.",
+      "steps": [
+        "The absence of visible change does not contradict the favorable thermodynamic direction.",
+        "The barrier can make successful reaction events too rare to observe on that time scale."
+      ],
+      "conclusion": "The sample is not proven to be at equilibrium merely because its composition appears unchanged. Additional kinetic or thermodynamic evidence is needed."
+    },
+    "misconception": "A slow reaction is not necessarily unfavorable, and an apparently stable sample is not automatically an equilibrium sample.",
+    "apTip": "Use free energy to discuss direction and a pathway or rate model to discuss speed, keeping the two explanations distinct.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 9.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Kinetic-control interpretation checked against CED9.4; negative actual driving force not mistaken for standard-state-only or immediate-rate evidence.",
+      "checks": [],
+      "contentHash": "31548505ff04995b02e9b99fc365220882766e98ede9ae5ed16526ecc4105ba4"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-9-5",
+    "topicNumber": "9.5",
+    "unitNumber": 9,
+    "title": "Free Energy and Equilibrium",
+    "status": "published",
+    "overview": "Standard free energy and the equilibrium constant express related information about the written reaction at a fixed temperature. The actual driving force also depends on the present composition.",
+    "keyConcepts": [
+      {
+        "title": "Standard relationship",
+        "text": "ΔG° =−RT ln K. A K greater than one corresponds to negative ΔG°, while K below one corresponds to positive ΔG°."
+      },
+      {
+        "title": "Actual composition",
+        "text": "ΔG =ΔG° +RT ln Q. At equilibrium Q =K and actual ΔG is zero, even if ΔG° is not zero."
+      },
+      {
+        "title": "Conditions and basis",
+        "text": "Use kelvin, an R consistent with the energy units and the same balanced reaction for K and ΔG°. Reversing or scaling the reaction changes the related quantities consistently."
+      }
+    ],
+    "example": {
+      "prompt": "At 300 K a reaction has K =e², so ln K = 2. Use R = 8.314 J/(mol·K) to find ΔG°.",
+      "steps": [
+        "Calculate −(8.314)(300)(2) = −4988.4 J/mol.",
+        "This is approximately−4.99 kJ/mol, consistent with K greater than one."
+      ],
+      "conclusion": "If the actual mixture later reaches Q =K, the composition term cancels this standard value and actual ΔG becomes zero."
+    },
+    "misconception": "Equilibrium does not generally require ΔG° = 0. It requires zero actual driving force at the equilibrium composition.",
+    "apTip": "Identify whether a question asks about standard favorability or the present mixture, then use K or Q accordingly.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 9.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent product-4988.4J and kJ conversion checked; equilibrium cancellation uses lnK=2 and does not require K=1.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            -8.314,
+            300,
+            2
+          ],
+          "expected": -4988.4,
+          "evidence": "−4988.4 J/mol"
+        }
+      ],
+      "contentHash": "6bb363127e1f289c71383c8fdf00680f910617fa9acc80e334e44ea5aa7b8ce0"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-9-6",
+    "topicNumber": "9.6",
+    "unitNumber": 9,
+    "title": "Free Energy of Dissolution",
+    "status": "published",
+    "overview": "Dissolution reflects an energy and entropy balance involving both solute and solvent. Breaking a lattice or disrupting solvent interactions can cost energy, while new interactions and dispersal contribute to the overall result.",
+    "keyConcepts": [
+      {
+        "title": "Enthalpy balance",
+        "text": "Separating solute particles and some solvent contacts competes with formation of solute–solvent interactions. Dissolution can be endothermic or exothermic."
+      },
+      {
+        "title": "Entropy balance",
+        "text": "Dispersal can increase accessible arrangements, but solvent organization around solute can offset some of that change. Dissolution entropy is not universally positive."
+      },
+      {
+        "title": "Free energy",
+        "text": "The combination ΔG =ΔH −TΔS, with appropriate composition and conditions, determines the driving force. Saturation limits the extent even when initial dissolution is favored."
+      }
+    ],
+    "example": {
+      "prompt": "A hypothetical dissolution has ΔH° =+ 10.0 kJ/mol and ΔS° =+ 50.0 J/(mol·K) at 300 K. Evaluate its standard free-energy change.",
+      "steps": [
+        "Convert entropy to 0.0500 kJ/(mol·K), giving TΔS° = 15.0 kJ/mol.",
+        "Then ΔG° = 10.0 −15.0 = −5.0 kJ/mol."
+      ],
+      "conclusion": "The positive enthalpy does not prevent standard-state favorability. It also does not prove that unlimited solid dissolves at every concentration."
+    },
+    "misconception": "A cooling solution can accompany a favorable dissolution. Temperature change alone does not determine solubility or free energy.",
+    "apTip": "Describe solute–solute, solvent–solvent and solute–solvent contributions, then distinguish the driving force from the equilibrium amount dissolved.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 9.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent entropy unit conversion and free-energy subtraction checked; favorable standard value not conflated with complete dissolution.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            300,
+            0.05
+          ],
+          "expected": 15,
+          "evidence": "15.0 kJ/mol"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            10,
+            15
+          ],
+          "expected": -5,
+          "evidence": "−5.0 kJ/mol"
+        }
+      ],
+      "contentHash": "3112618dc0ce44c7d060cfc77bf27cf85de7dbd698250c47837a8cfefcf08d6a"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-9-7",
+    "topicNumber": "9.7",
+    "unitNumber": 9,
+    "title": "Coupled Reactions",
+    "status": "published",
+    "overview": "Coupling can make an unfavorable component process part of a favorable overall pathway. The reactions must be chemically linked so that the energy-releasing process can actually drive the desired change.",
+    "keyConcepts": [
+      {
+        "title": "Energy addition",
+        "text": "Free-energy changes add when compatible reactions are combined on the same basis. A sufficiently favorable contribution can offset an unfavorable one."
+      },
+      {
+        "title": "Chemical connection",
+        "text": "A shared intermediate, transfer process or other mechanism is needed. Placing two unrelated reactions nearby does not automatically establish useful coupling."
+      },
+      {
+        "title": "Extent and rate",
+        "text": "A favorable sum does not specify an instantaneous rate or complete conversion. Mechanism, equilibrium composition and conditions still matter."
+      }
+    ],
+    "example": {
+      "prompt": "For a hypothetical connected pathway, A →B has ΔG =+ 20 kJ and B +C →D has ΔG = −35 kJ on compatible reaction bases.",
+      "steps": [
+        "Adding the equations cancels intermediate B and gives A +C →D.",
+        "The combined free-energy change is 20 −35 = −15 kJ, favoring that overall direction under the stated conditions."
+      ],
+      "conclusion": "The shared B connects the stoichiometry, but experimental or mechanistic evidence would still be needed to show the pathway operates effectively."
+    },
+    "misconception": "A negative numerical sum alone does not demonstrate that two processes are physically coupled in a real system.",
+    "apTip": "Build the net equation, check the reaction bases and explain the actual connection that allows the favorable process to support the other.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 9.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Compatible equation addition and -15 sum independently checked; pathway existence/rate not claimed solely from arithmetic.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            20,
+            -35
+          ],
+          "expected": -15,
+          "evidence": "−15 kJ"
+        }
+      ],
+      "contentHash": "5413be76ca9c19773761c79295b4d5e26b83a8deaadd23466fe274da5ac557b7"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-9-8",
+    "topicNumber": "9.8",
+    "unitNumber": 9,
+    "title": "Galvanic (Voltaic) and Electrolytic Cells",
+    "status": "published",
+    "overview": "Electrochemical cells separate oxidation and reduction so electron transfer can interact with an external circuit. Anode and cathode names describe reactions, while electrode signs depend on whether the cell operates galvanically or electrolytically.",
+    "keyConcepts": [
+      {
+        "title": "Reaction locations",
+        "text": "Oxidation occurs at the anode and reduction at the cathode in both cell types. Electrons move through the external circuit from anode to cathode."
+      },
+      {
+        "title": "Energy direction",
+        "text": "A galvanic cell uses a favorable reaction to supply electrical energy. An electrolytic cell requires external energy to drive the chosen unfavorable direction."
+      },
+      {
+        "title": "Charge transport",
+        "text": "Ions move through an electrolyte or bridge to maintain charge balance. Electrons do not travel through an ordinary salt bridge as the current-carrying species."
+      }
+    ],
+    "example": {
+      "prompt": "In a galvanic Zn/Zn²⁺ and Cu²⁺/Cu cell, identify the reaction sites and electron direction.",
+      "steps": [
+        "Zn is oxidized at the anode: Zn →Zn²⁺ + 2e⁻. Cu²⁺ is reduced at the cathode.",
+        "Electrons flow from the zinc electrode toward the copper electrode through the wire; zinc mass decreases while copper deposits under the stated reaction."
+      ],
+      "conclusion": "The galvanic anode is negative and cathode positive. Those signs reverse in an electrolytic setup, but oxidation/anode and reduction/cathode definitions remain."
+    },
+    "misconception": "A positive electrode is not universally an anode or cathode without identifying the cell type.",
+    "apTip": "Trace electrons and ions separately, and use the half-reactions to name electrodes before assigning signs.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 9.8; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Zn/Cu half-reactions, electrode mass changes, external electron direction and galvanic/electrolytic sign distinction independently reviewed.",
+      "checks": [],
+      "contentHash": "f203d2a398b03cfe96ca3c73f6d0b1c46a0463deeba1cf7737b4c304d3826514"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-9-9",
+    "topicNumber": "9.9",
+    "unitNumber": 9,
+    "title": "Cell Potential and Free Energy",
+    "status": "published",
+    "overview": "Cell potential connects electrochemical driving force to free-energy change. Use consistent half-reaction conventions and the balanced electron-transfer amount before calculating.",
+    "keyConcepts": [
+      {
+        "title": "Standard potential",
+        "text": "With tabulated reduction potentials, E°cell =E°cathode −E°anode. Reverse the appropriate half-reaction chemically while keeping the subtraction convention clear."
+      },
+      {
+        "title": "Free energy",
+        "text": "ΔG° =−nFE°cell, where n is moles of electrons transferred per written reaction and F is charge per mole of electrons. Positive E° gives negative ΔG°."
+      },
+      {
+        "title": "Scaling",
+        "text": "Potential is an intensive quantity. Multiplying a balanced reaction changes n and ΔG°, but does not multiply the associated cell potential."
+      }
+    ],
+    "example": {
+      "prompt": "Use Cu²⁺/Cu =+ 0.34 V and Zn²⁺/Zn = −0.76 V for the standard Zn/Cu cell. Let F = 96,485 C/mol e⁻.",
+      "steps": [
+        "E°cell = 0.34 −(−0.76) = 1.10 V.",
+        "The balanced transfer uses two electrons, so ΔG° = −2(96,485)(1.10) = −212,267 J per mole of written reaction."
+      ],
+      "conclusion": "This is about −212 kJ/mol, supporting standard forward favorability without claiming an actual nonstandard cell must have the same potential."
+    },
+    "misconception": "Do not multiply a reduction potential by its balancing coefficient. Energies scale with reaction amount; potential does not.",
+    "apTip": "Balance electrons, label reduction values and check the sign and J-versus-kJ conversion independently.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 9.9; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent potential difference1.10 and -nFE product-212267J checked for n2; intensive-potential scaling distinguished.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            0.34,
+            -0.76
+          ],
+          "expected": 1.1,
+          "evidence": "1.10 V"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            -2,
+            96485,
+            1.1
+          ],
+          "expected": -212267,
+          "evidence": "−212,267 J"
+        }
+      ],
+      "contentHash": "ee5977eeb0810ccc31eea5f871eb2147a6fad948c88c8810b254095ed972767e"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-9-10",
+    "topicNumber": "9.10",
+    "unitNumber": 9,
+    "title": "Cell Potential Under Nonstandard Conditions",
+    "status": "published",
+    "overview": "Under nonstandard conditions, a cell’s driving force depends on current composition. Use reaction-quotient and free-energy reasoning rather than treating an operating cell as though it were already at equilibrium.",
+    "keyConcepts": [
+      {
+        "title": "Quotient relationship",
+        "text": "Qualitatively, E =E° −(RT/nF)ln Q. At fixed temperature and the same reaction, lowering Q increases E; raising Q decreases it."
+      },
+      {
+        "title": "Approach to equilibrium",
+        "text": "At Q =K, actual E is zero. Standard E° corresponds to the standard quotient condition Q = 1, not generally to equilibrium."
+      },
+      {
+        "title": "Interpretation",
+        "text": "A cell’s measured performance can also be affected by resistance and kinetics. A weak current alone does not prove equilibrium composition."
+      }
+    ],
+    "example": {
+      "prompt": "For Zn +Cu²⁺ →Zn²⁺ +Cu, compare Q = 1 with Q = 0.10 at fixed temperature.",
+      "steps": [
+        "The quotient is [Zn²⁺]/[Cu²⁺] in the concentration approximation; pure metals are omitted.",
+        "At Q = 0.10, ln Q is negative, so subtracting the quotient term makes E larger than E° for this forward reaction."
+      ],
+      "conclusion": "This is a qualitative driving-force comparison, not a numerical voltage calculation or an equilibrium-shift argument applied to a running cell."
+    },
+    "misconception": "A higher total solute concentration is not enough to predict the sign of the potential change; the specific quotient ratio matters.",
+    "apTip": "Write Q, identify which active species change and explain the direction through the logarithmic term. Algorithmic substitution alone does not demonstrate the required conceptual understanding.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 9.10; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Current CED9.10 qualitative Nernst scope checked; ln(.10)<0 and active-ion quotient direction verified. No Le Châtelier equilibrium argument or algorithm-only voltage exercise.",
+      "checks": [],
+      "contentHash": "32fdf518770d487db3dd47c22c97fed609f744376a9ba3bea4656911a45dc218"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-9-11",
+    "topicNumber": "9.11",
+    "unitNumber": 9,
+    "title": "Electrolysis and Faraday’s Law",
+    "status": "published",
+    "overview": "Faraday’s Law connects electrical charge with the amount transformed in electrolysis. Convert current and time to charge, charge to moles of electrons, and electron amount to the product using a balanced half-reaction.",
+    "keyConcepts": [
+      {
+        "title": "Charge",
+        "text": "Q =It when current is constant, with amperes equal to coulombs per second. Convert time units before multiplying."
+      },
+      {
+        "title": "Electron amount",
+        "text": "Moles of electrons equal Q/F. The product amount depends on electrons required per ion, not simply on equal moles of electrons and metal."
+      },
+      {
+        "title": "Assumptions",
+        "text": "A theoretical yield assumes the specified reaction receives the relevant charge. Side reactions and less than complete current efficiency can reduce actual product."
+      }
+    ],
+    "example": {
+      "prompt": "Assume 100% current efficiency for Cu²⁺ + 2e⁻ →Cu. A current of 2.00 A flows for 965 s. Use F ≈96,500 C/mol e⁻ and M(Cu) = 63.5 g/mol.",
+      "steps": [
+        "The charge is 2.00(965) = 1930 C, giving 0.0200 mol electrons.",
+        "Divide by two to obtain 0.0100 mol Cu, then multiply by 63.5 g/mol."
+      ],
+      "conclusion": "The predicted deposited mass is 0.635 g. The two-electron requirement is essential; equating copper moles to electron moles would double the result."
+    },
+    "misconception": "Current measures charge per time, not moles per time until Faraday and stoichiometric conversions are included.",
+    "apTip": "Write the reduction half-reaction and show every unit conversion, then distinguish theoretical deposition from actual current efficiency.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 9.11; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent Q1930/F96500=.0200mol e, Cu.0100mol and mass.635g checked with explicitly rounded F and100% efficiency.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            2,
+            965
+          ],
+          "expected": 1930,
+          "evidence": "1930 C"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            1930,
+            96500
+          ],
+          "expected": 0.02,
+          "evidence": "0.0200 mol"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            0.01,
+            63.5
+          ],
+          "expected": 0.635,
+          "evidence": "0.635 g"
+        }
+      ],
+      "contentHash": "afd061bff5a68b7c604043448898d9fa1547ba4ae5e0d6c95ea117020dc332c8"
+    }
   }
 ]

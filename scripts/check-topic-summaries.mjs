@@ -23,6 +23,13 @@ for(const id of ['chemistry','calculus-ab','human-geography']){
 const total=Object.values(counts).reduce((a,b)=>a+b,0);
 assert.equal(courses.filter(c=>Object.keys(counts).includes(c.id)).flatMap(c=>c.units.flatMap(u=>u.topics)).length,240);
 const progress={updated:'2026-10-21',target:240,published:total,remaining:240-total,counts,next,independentHumanReview:false};
-if(process.argv.includes('--complete'))assert.equal(total,240,'Complete-course audit requires all 240 summaries');
-if(process.argv.includes('--write'))writeFileSync('content-drafts/topic-summaries/PROGRESS.json',JSON.stringify(progress,null,2)+'\n');
+if(process.argv.includes('--complete')){
+ assert.equal(total,240,'Complete-course audit requires all 240 summaries');
+ for(const id of ['chemistry','calculus-ab','human-geography'])assert.equal(counts[id],courses.find(c=>c.id===id).units.flatMap(u=>u.topics).length,'Full canonical coverage '+id);
+}
+if(process.argv.includes('--write')){
+ writeFileSync('content-drafts/topic-summaries/PROGRESS.json',JSON.stringify(progress,null,2)+'\n');
+ const inventory=topicSummaryCatalog.map(s=>({courseId:s.courseId,topicId:s.topicId,topicNumber:s.topicNumber,unitNumber:s.unitNumber,title:s.title,words:summaryWordCount(s),numericalChecks:s.validation.checks.length,figure:!!(s.figure||s.mathFigure),table:!!s.table,status:s.status,contentHash:s.validation.contentHash}));
+ writeFileSync('content-drafts/topic-summaries/AUDIT.json',JSON.stringify({...progress,numericalChecks:inventory.reduce((n,s)=>n+s.numericalChecks,0),figures:inventory.filter(s=>s.figure).length,tables:inventory.filter(s=>s.table).length,minimumWords:Math.min(...inventory.map(s=>s.words)),maximumWords:Math.max(...inventory.map(s=>s.words)),inventory},null,2)+'\n');
+}
 console.log('SUMMARY AUDIT',JSON.stringify(progress));

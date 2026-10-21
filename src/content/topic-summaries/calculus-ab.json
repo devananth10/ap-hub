@@ -2347,7 +2347,7 @@
     "keyConcepts": [
       {
         "title": "Maximum",
-        "text": "A derivative changing from positive to negative means the function changes from increasing to decreasing, giving a local maximum under the usual continuity conditions."
+        "text": "A derivative changing from positive to negative means the function changes from increasing to decreasing, giving a local maximum provided f is continuous at that point."
       },
       {
         "title": "Minimum",
@@ -2374,7 +2374,7 @@
       "scope": "Original review of canonical calculus-ab Topic 5.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
       "reasoning": "Power derivatives and signs independently checked; x4 minimum contrasted with x3 stationary non-extremum without relying on second derivative.",
       "checks": [],
-      "contentHash": "001bb77c9106da73ac03b0d6d4e3254290aec2aac4619675a06cfa632d61a618"
+      "contentHash": "5b7643e3871a67b36be314c5097a5e7106001f39fe5273aa8cf911b2f85bd49b"
     }
   },
   {
@@ -4445,6 +4445,650 @@
         }
       ],
       "contentHash": "de22241fcbb20441dde5d1b6c2dfd758b54bd6b1e81f05871bfe39d424d7dbb7"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "average",
+    "topicNumber": "8.1",
+    "unitNumber": 8,
+    "title": "Finding the Average Value of a Function on an Interval",
+    "status": "published",
+    "overview": "A function’s average value over an interval equals its accumulated value divided by interval length. It is different from the average rate of change and from simply averaging endpoint heights.",
+    "keyConcepts": [
+      {
+        "title": "Formula",
+        "text": "For an integrable function on [a, b] with a < b, average value is (1/(b − a))∫ from a to b of f(x) dx."
+      },
+      {
+        "title": "Units",
+        "text": "The integral has function-units times input-units; dividing by interval length returns the original function units."
+      },
+      {
+        "title": "Existence interpretation",
+        "text": "For a continuous function, an interval point attains the average height. The matching rectangle has the same signed accumulation as the function over that interval."
+      }
+    ],
+    "example": {
+      "prompt": "Find the average value of f(x) = x² on [0, 3].",
+      "steps": [
+        "The integral is [x³/3] from 0 to 3 = 9.",
+        "Divide by interval length 3 to obtain an average value of 3."
+      ],
+      "conclusion": "The function reaches that height at x = √3 within the interval. Averaging endpoint values instead would give 4.5, which is not the integral-based average here."
+    },
+    "misconception": "The average derivative over an interval concerns net change per input length; the average function value concerns accumulated height per input length.",
+    "apTip": "Identify what is being averaged, calculate the integral with the correct bounds and divide by the interval length only once.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 8.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Integral9, average3 and matching input√3 independently checked. Endpoint average4.5 intentionally distinguished from correct value.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            9,
+            3
+          ],
+          "expected": 3,
+          "evidence": "average value of 3"
+        }
+      ],
+      "contentHash": "aa812cd953d69b2d041bdbce7da5a0742ec0a57afd3c6efb0352dcf6e01c9d34"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-8-2",
+    "topicNumber": "8.2",
+    "unitNumber": 8,
+    "title": "Connecting Position, Velocity, and Acceleration of Functions Using Integrals",
+    "status": "published",
+    "overview": "Integrals connect position, velocity and acceleration through accumulated change. Keep signed displacement separate from total distance, and include an initial value when recovering a quantity rather than only its change.",
+    "keyConcepts": [
+      {
+        "title": "From acceleration",
+        "text": "Integrating acceleration gives velocity change. Add initial velocity to obtain velocity at a later time."
+      },
+      {
+        "title": "From velocity",
+        "text": "Integrating velocity gives displacement. Add initial position for final position. The integral can be zero even when the particle moves."
+      },
+      {
+        "title": "Distance",
+        "text": "Integrate speed |v|, splitting at direction changes when needed. Negative velocity contributes positively to total distance through its magnitude."
+      }
+    ],
+    "example": {
+      "prompt": "A particle has v(t) = t − 2 m/s for 0 ≤ t ≤4 seconds. Find displacement and distance traveled.",
+      "steps": [
+        "Velocity is negative before 2 and positive after 2. The two signed triangular areas are −2 and+ 2 meters.",
+        "Displacement is 0, while total distance is 2 + 2 = 4 m."
+      ],
+      "conclusion": "The particle returns to its initial position, but it has traveled four meters. Its actual final coordinate still depends on the initial position."
+    },
+    "misconception": "Zero displacement does not mean zero distance, and integrating acceleration does not directly give position without another accumulation step and initial data.",
+    "apTip": "Name the quantity, check velocity sign changes and decide whether signed change or magnitude is requested before integrating.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 8.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent antiderivative .5t²−2t yields zero displacement; two triangle magnitudes2 each yield distance4.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            -2,
+            2
+          ],
+          "expected": 0,
+          "evidence": "Displacement is 0"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            2,
+            2
+          ],
+          "expected": 4,
+          "evidence": "= 4 m"
+        }
+      ],
+      "contentHash": "2497610b79bc545b1e39ad2b00ec3c49bdaf3882315166b1dfe5eca05c616822"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-8-3",
+    "topicNumber": "8.3",
+    "unitNumber": 8,
+    "title": "Using Accumulation Functions and Definite Integrals in Applied Contexts",
+    "status": "published",
+    "overview": "Accumulation models turn rates into changes in quantities such as volume, inventory or population. When additions and removals occur together, integrate the net rate and then apply the initial amount.",
+    "keyConcepts": [
+      {
+        "title": "Net rate",
+        "text": "Subtract the removal rate from the addition rate using consistent units and sign conventions. Do not integrate both as positive contributions to the amount present."
+      },
+      {
+        "title": "Initial condition",
+        "text": "The amount at time t equals its initial amount plus the accumulated net change from the initial time."
+      },
+      {
+        "title": "Feasibility",
+        "text": "Check whether the model’s quantities and rates remain meaningful over the interval, such as a tank not becoming empty before an assumed outflow continues."
+      }
+    ],
+    "example": {
+      "prompt": "A tank starts with 20 L. Inflow is 5 + t L/min and outflow is 2 + 0.5t L/min for the next four minutes. Find final volume.",
+      "steps": [
+        "The net rate is 3 + 0.5t L/min.",
+        "Its accumulation from 0 to 4 is[3t + 0.25t²] from 0 to 4 = 16 L."
+      ],
+      "conclusion": "Add the initial 20 L to obtain 36 L. The net rate is positive throughout the interval, so the stated tank does not empty."
+    },
+    "misconception": "The integral of net rate gives change, not automatically the final amount. Omitting the initial value answers a different question.",
+    "apTip": "Write an amount balance with bounds and units, and test whether any event changes the rate model before the requested endpoint.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 8.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent inflow integral28 and outflow12 give net16; initial20 gives36 and positivity supports no-empty assumption.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            12,
+            4
+          ],
+          "expected": 16,
+          "evidence": "= 16 L"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            20,
+            16
+          ],
+          "expected": 36,
+          "evidence": "36 L"
+        }
+      ],
+      "contentHash": "c9a9ec7aad6d4ef41fe3c85be9d5f5f919540438dfb0477b9afa488c49b3f031"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-8-4",
+    "topicNumber": "8.4",
+    "unitNumber": 8,
+    "title": "Finding the Area Between Curves Expressed as Functions of x",
+    "status": "published",
+    "overview": "Area between curves using vertical slices is the integral of top minus bottom with respect to x. Establish the interval and vertical ordering before writing the subtraction.",
+    "keyConcepts": [
+      {
+        "title": "Bounds",
+        "text": "Intersections can determine endpoints, but other stated boundaries may also limit the region. Solve and check which points enclose the requested area."
+      },
+      {
+        "title": "Height",
+        "text": "Each vertical slice has height f(top) − g(bottom) at the same x. Multiplying by a small width gives its area contribution."
+      },
+      {
+        "title": "Nonnegative result",
+        "text": "Geometric area is nonnegative. If the ordering changes, split the integral instead of allowing positive and negative pieces to cancel."
+      }
+    ],
+    "example": {
+      "prompt": "Find the area between y = x and y = x² for 0 ≤ x ≤1.",
+      "steps": [
+        "The line is above the parabola on the interior because x − x² is positive there.",
+        "Area is∫ from 0 to 1 of(x − x²) dx = [x²/2 − x³/3] from 0 to 1."
+      ],
+      "conclusion": "The result is 1/2 −1/3 = 1/6 square units. The endpoints coincide, but the curves enclose a positive region between them."
+    },
+    "misconception": "The difference of two separate signed integrals gives geometric area only when the chosen top–bottom ordering is valid throughout.",
+    "apTip": "Sketch or test the ordering, label the slice height and check that the final quantity has area units.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 8.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Intersection0/1 and sign x(1-x) independently checked; antiderivative evaluation yields1/6.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            0.5,
+            0.3333333333333333
+          ],
+          "expected": 0.16666666666666666,
+          "evidence": "= 1/6"
+        }
+      ],
+      "contentHash": "bc8928646060cb93f1d49cc1a572764fccf5e047fcbc532b51d5f9ca6c0d444f"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-8-5",
+    "topicNumber": "8.5",
+    "unitNumber": 8,
+    "title": "Finding the Area Between Curves Expressed as Functions of y",
+    "status": "published",
+    "overview": "Horizontal slices can simplify an area problem when boundaries are expressed as functions of y. Use right minus left and integrate with respect to y, preserving the meaning of each coordinate.",
+    "keyConcepts": [
+      {
+        "title": "Orientation",
+        "text": "A horizontal slice has length x(right) − x(left), so its small area is that length times dy."
+      },
+      {
+        "title": "Bounds",
+        "text": "The integration limits are y values. Convert intersection coordinates appropriately rather than using x endpoints in a y integral."
+      },
+      {
+        "title": "Choice",
+        "text": "Either orientation can be valid, but one may avoid splitting the region or solving difficult expressions. Check the domain of square-root branches."
+      }
+    ],
+    "example": {
+      "prompt": "Find the area between x = √y and x = y/2 for 0 ≤ y ≤4.",
+      "steps": [
+        "On this interval, √y lies to the right of y/2, meeting it at y = 0 and 4.",
+        "Area is∫ from 0 to 4 of(√y − y/2) dy =[(2/3)y^(3/2) − y²/4] from 0 to 4."
+      ],
+      "conclusion": "The result is 16/3 −4 = 4/3 square units. A vertical-slice check over 0 ≤ x ≤2 using 2x − x² gives the same value."
+    },
+    "misconception": "Right minus left concerns x coordinates, even though the variable of integration is y. Do not subtract top minus bottom for a horizontal slice.",
+    "apTip": "Label one representative slice and its coordinate bounds before choosing the more convenient orientation.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 8.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent vertical integral4−8/3 confirms4/3; nonnegative square-root branch and y-bounds checked.",
+      "checks": [
+        {
+          "operation": "difference",
+          "operands": [
+            5.333333333333333,
+            4
+          ],
+          "expected": 1.3333333333333333,
+          "evidence": "= 4/3"
+        }
+      ],
+      "contentHash": "2c8ee1f5a0983c79987dded47ec33308f9eca70c70f68dd25e3e53fb38aba1b4"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-8-6",
+    "topicNumber": "8.6",
+    "unitNumber": 8,
+    "title": "Finding the Area Between Curves That Intersect at More Than Two Points",
+    "status": "published",
+    "overview": "When bounding curves cross several times, the upper and lower functions can switch. Geometric area requires tracking that ordering over each subinterval rather than taking one signed difference over the entire span.",
+    "keyConcepts": [
+      {
+        "title": "Find every crossing",
+        "text": "Solve intersections within the requested domain and use them to partition the interval. Missing an interior crossing can reverse the required subtraction."
+      },
+      {
+        "title": "Test ordering",
+        "text": "Check a point or analyze factor signs in each subinterval. Use top minus bottom separately where needed."
+      },
+      {
+        "title": "Add magnitudes",
+        "text": "Sum the positive area pieces. A signed integral can cancel regions even when their geometric areas are substantial."
+      }
+    ],
+    "example": {
+      "prompt": "Find the area between y = x³ − x and the x-axis from −1 to 1.",
+      "steps": [
+        "The curve crosses at −1,0 and 1. It is positive on(−1,0) and negative on(0,1).",
+        "Using antiderivative x⁴/4 − x²/2, the left piece has signed integral 1/4 and the right piece −1/4."
+      ],
+      "conclusion": "Geometric area is 1/4 + 1/4 = 1/2, while the full signed integral is zero."
+    },
+    "misconception": "Taking the absolute value of the final signed total is not generally the same as adding the absolute contributions before cancellation.",
+    "apTip": "List crossings, mark the sign or ordering on every interval and verify that the final area includes all regions requested.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 8.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Factor x(x-1)(x+1) and cubic antiderivative independently checked; odd symmetry agrees with zero signed total but area.5.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            0.25,
+            0.25
+          ],
+          "expected": 0.5,
+          "evidence": "= 1/2"
+        }
+      ],
+      "contentHash": "83cdf74f702beb08d07142c5b6b5b2cee8bec56528c500b2f4a2fab20f98d084"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-8-7",
+    "topicNumber": "8.7",
+    "unitNumber": 8,
+    "title": "Volumes with Cross Sections: Squares and Rectangles",
+    "status": "published",
+    "overview": "Volume with known cross sections is accumulated cross-sectional area along an axis. First translate the base-region slice into the dimensions of the specified square or rectangle.",
+    "keyConcepts": [
+      {
+        "title": "Area function",
+        "text": "For square side s(x), A(x) = s(x)². For a rectangle, use the actual base and height relationship rather than assuming a square."
+      },
+      {
+        "title": "Orientation",
+        "text": "Cross sections perpendicular to the x-axis use dx; those perpendicular to the y-axis use dy with the corresponding coordinate bounds."
+      },
+      {
+        "title": "Volume units",
+        "text": "Integrating area over length gives volume. The base width alone has length units and cannot be integrated as though it were already cross-sectional area."
+      }
+    ],
+    "example": {
+      "prompt": "A base lies between y = 2 − x and y = 0 for 0 ≤ x ≤2. Perpendicular x-axis cross sections are squares. Find volume.",
+      "steps": [
+        "The square side is the base’s vertical width s(x) = 2 − x.",
+        "Therefore V =∫ from 0 to 2 of(2 − x)² dx."
+      ],
+      "conclusion": "Evaluating [4x −2x² +x³/3] from 0 to 2 gives 8/3 cubic units. The cross sections shrink to zero at the right endpoint."
+    },
+    "misconception": "The bounded base region is not itself the solid’s volume. Its width must first determine each cross-sectional area.",
+    "apTip": "Draw one section, state its shape and dimensions and check the differential orientation before integrating.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 8.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent substitution u=2-x gives integral0to2 u²=8/3; square-side rather than area confusion ruled out.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            8,
+            -8,
+            2.6666666666666665
+          ],
+          "expected": 2.6666666666666665,
+          "evidence": "8/3 cubic"
+        }
+      ],
+      "contentHash": "84b4d8a5f1108a9bf6a11026789029d903e65eb9fe6348f0776d46561259f391"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-8-8",
+    "topicNumber": "8.8",
+    "unitNumber": 8,
+    "title": "Volumes with Cross Sections: Triangles and Semicircles",
+    "status": "published",
+    "overview": "Nonrectangular cross sections require the correct shape formula before integration. A segment in the base may specify a side, a diameter or a height, and those roles lead to different area functions.",
+    "keyConcepts": [
+      {
+        "title": "Triangles",
+        "text": "Use A =½bh, with any stated relationship between height and base. For an equilateral triangle of side s, A =√3s²/4."
+      },
+      {
+        "title": "Semicircles",
+        "text": "If the base segment is diameter d, radius is d/2 and area isπd²/8. Treating the diameter as a radius multiplies the area incorrectly."
+      },
+      {
+        "title": "Accumulation",
+        "text": "Integrate the section’s area over the correct coordinate interval; the geometric constant remains part of the integrand."
+      }
+    ],
+    "example": {
+      "prompt": "For 0 ≤ x ≤1, a solid has semicircular cross sections whose diameter is d(x) = 2x. Find its volume.",
+      "steps": [
+        "Each radius is x, so the semicircle area is A(x) =½πx².",
+        "The volume is∫ from 0 to 1 of½πx² dx =π/6 cubic units."
+      ],
+      "conclusion": "Using π(2x)² would incorrectly model a full circle with the wrong radius rather than the stated semicircle."
+    },
+    "misconception": "A triangular or semicircular shape does not determine its size until the problem identifies which dimension the base-region segment supplies.",
+    "apTip": "Write the shape formula with named dimensions, substitute the base-region width and only then integrate.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 8.8; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Diameter-to-radius factor and semicircle half-factor independently checked; integrating x²/2 gives1/6 coefficient ofπ.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            0.5,
+            3
+          ],
+          "expected": 0.16666666666666666,
+          "evidence": "π/6"
+        }
+      ],
+      "contentHash": "183b9173327cacb0874653d25b304b512ff8e9fa0e1f3730b38eccb5c4ccbf9e"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-8-9",
+    "topicNumber": "8.9",
+    "unitNumber": 8,
+    "title": "Volume with Disc Method: Revolving Around the x- or y-Axis",
+    "status": "published",
+    "overview": "The disc method finds a rotational volume when perpendicular slices sweep out full circles without holes. The radius is the distance from the rotation axis to the boundary of the filled region.",
+    "keyConcepts": [
+      {
+        "title": "Disc area",
+        "text": "A full circular cross section has areaπR². Square the radius function before integrating."
+      },
+      {
+        "title": "Axis orientation",
+        "text": "About the x-axis, vertical slices commonly give dx. About the y-axis, horizontal slices commonly give dy, with radius described as a horizontal distance."
+      },
+      {
+        "title": "Hole check",
+        "text": "A region separated from the axis creates a washer rather than a filled disc. Inspect the actual region and axis before selecting a formula."
+      }
+    ],
+    "example": {
+      "prompt": "Rotate the region 0 ≤ y ≤√x for 0 ≤ x ≤4 about the x-axis. Find volume.",
+      "steps": [
+        "The radius is R(x) =√x because the region extends from the axis to that curve.",
+        "V =π∫ from 0 to 4 of(√x)² dx =π∫ from 0 to 4 ofx dx."
+      ],
+      "conclusion": "The result is 8π cubic units. The square applies to the radius, not to the complete definite integral."
+    },
+    "misconception": "A graph’s height is a radius only when measured from the specified axis; moving the axis changes that distance.",
+    "apTip": "Show a perpendicular slice, verify that it has no hole and label its radius before calculating.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 8.9; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent integral .5x² at4 gives8; disc radius and filled-axis condition verified. No BC shell technique used.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            16,
+            2
+          ],
+          "expected": 8,
+          "evidence": "8π cubic"
+        }
+      ],
+      "contentHash": "bd00ebb5c38df82a2af96915361c856d5647c574814cea646d4d1ac866f347e7"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-8-10",
+    "topicNumber": "8.10",
+    "unitNumber": 8,
+    "title": "Volume with Disc Method: Revolving Around Other Axes",
+    "status": "published",
+    "overview": "Disc rotations about noncoordinate axes use distances from the stated line. A nonzero axis coordinate changes the radius even when the region’s boundary formula is unchanged.",
+    "keyConcepts": [
+      {
+        "title": "Distance",
+        "text": "For a horizontal axis y =k, a vertical distance is |f(x) − k|. For a vertical axis x =h, horizontal distance is |g(y) − h|."
+      },
+      {
+        "title": "Full disc condition",
+        "text": "The region must fill from the axis to its outer boundary for each slice. If a gap remains, use a washer instead."
+      },
+      {
+        "title": "Consistent slices",
+        "text": "Choose slices perpendicular to the axis and keep their variable, limits and radius function consistent."
+      }
+    ],
+    "example": {
+      "prompt": "Rotate the region between y = 2 and y =x + 2 for 0 ≤ x ≤1 about y = 2.",
+      "steps": [
+        "The region touches the axis, so each perpendicular slice produces a filled disc. Its radius is(x + 2) −2 =x.",
+        "Volume isπ∫ from 0 to 1 ofx² dx =π/3 cubic units."
+      ],
+      "conclusion": "Using radius x + 2 would measure from y = 0 rather than from the actual axis and would compute a different solid."
+    },
+    "misconception": "Changing the axis does not merely change a label; it can alter radii and whether a hole exists.",
+    "apTip": "Write the axis value into every distance expression and inspect the region-axis relationship before choosing disc or washer geometry.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 8.10; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Axis-relative distance independently checked; integral coefficient1/3 follows R=x and region touchingy2.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            1,
+            3
+          ],
+          "expected": 0.3333333333333333,
+          "evidence": "π/3"
+        }
+      ],
+      "contentHash": "33aa1bd98785c6ba49d4cd5f7dac45786e5b620033de4f0e8dd687d24a0b69f4"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-8-11",
+    "topicNumber": "8.11",
+    "unitNumber": 8,
+    "title": "Volume with Washer Method: Revolving Around the x- or y-Axis",
+    "status": "published",
+    "overview": "Washers represent rotational cross sections with a hole. Their area subtracts the inner circle’s area from the outer circle’s area, so both radii must be measured from the same axis.",
+    "keyConcepts": [
+      {
+        "title": "Area difference",
+        "text": "A =π(R² − r²), with outer radius R at least inner radius r. This is generally different fromπ(R − r)²."
+      },
+      {
+        "title": "Orientation",
+        "text": "Slices perpendicular to the x-axis use vertical radii and dx; slices perpendicular to the y-axis use horizontal radii and dy."
+      },
+      {
+        "title": "Ordering",
+        "text": "Check which boundary is farther from the axis over the interval. A change in ordering or hole structure may require splitting the calculation."
+      }
+    ],
+    "example": {
+      "prompt": "Rotate the region 1 ≤ y ≤x + 1 for 0 ≤ x ≤1 about the x-axis.",
+      "steps": [
+        "The outer radius is x + 1 and the inner radius is 1.",
+        "V =π∫ from 0 to 1 of[(x + 1)² −1] dx =π∫ from 0 to 1 of(x² + 2x) dx."
+      ],
+      "conclusion": "The result is 4π/3 cubic units. Squaring only the gap x would omit the area contributed by the offset radii."
+    },
+    "misconception": "Subtract squared radii, not radii followed by one square. Both constructions can look plausible but describe different geometry.",
+    "apTip": "Label the axis, outer distance and inner distance on a slice, and check that the area is nonnegative.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 8.11; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Expanded washer area x²+2x independently integrated to1/3+1=4/3; gap-only wrong result distinguished.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            0.3333333333333333,
+            1
+          ],
+          "expected": 1.3333333333333333,
+          "evidence": "4π/3"
+        }
+      ],
+      "contentHash": "eb446440ac70989c718e035937ad9752412e1c20191c698d5eb890ec95b999f2"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-8-12",
+    "topicNumber": "8.12",
+    "unitNumber": 8,
+    "title": "Volume with Washer Method: Revolving Around Other Axes",
+    "status": "published",
+    "overview": "Washer rotations around other axes require translating each boundary into an axis-relative distance. Preserve the distinction between the gap between curves and the two distances defining the circles.",
+    "keyConcepts": [
+      {
+        "title": "Shifted radii",
+        "text": "For an axis outside the region, determine which boundary is farther and which is nearer. Add or subtract the axis coordinate according to the geometry."
+      },
+      {
+        "title": "Geometry first",
+        "text": "If the axis crosses the region, a single washer expression may no longer apply throughout. Inspect sections and split or change the model as necessary."
+      },
+      {
+        "title": "Verification",
+        "text": "Expand or evaluate the squared-radius difference carefully, retaining all offset terms. Check endpoints and a representative interior slice."
+      }
+    ],
+    "example": {
+      "prompt": "Rotate the region between y =x² and y =x on[0,1] about y =−1.",
+      "steps": [
+        "The outer radius is x + 1 and the inner radius is x² + 1, since the line lies above the parabola.",
+        "Their squared difference simplifies to 2x −x² −x⁴. Integrating from 0 to 1 gives 1 −1/3 −1/5 = 7/15."
+      ],
+      "conclusion": "The volume is 7π/15 cubic units. Both radii agree at the endpoints, but the interior sections have positive area."
+    },
+    "misconception": "The vertical gap x −x² is not an outer radius measured from y =−1.",
+    "apTip": "Use a sketch to verify distance signs and ordering, then check algebra independently before evaluating the integral.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 8.12; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent expansion and integration give7/15; centroid-distance check also yields7π/15 without adding a new required student technique.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            1,
+            -0.3333333333333333,
+            -0.2
+          ],
+          "expected": 0.4666666666666667,
+          "evidence": "= 7/15"
+        }
+      ],
+      "contentHash": "c8ff69e70f7a7b78b9eebfaa65eb6e3c348408e6e00df7cf8be7dd47ad9ce247"
     }
   }
 ]

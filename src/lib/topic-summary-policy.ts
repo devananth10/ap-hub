@@ -2,7 +2,7 @@ import type { Course } from './courses.ts';
 import { validateGeographyStimulus, type GeographyStimulus } from './geography-stimuli.ts';
 import type { PracticeFigure } from './practice-figures.ts';
 
-export type SummaryCheck = { operation: 'sum' | 'product' | 'quotient' | 'difference' | 'power'; operands: number[]; expected: number; evidence: string };
+export type SummaryCheck = { operation: 'sum' | 'product' | 'quotient' | 'difference' | 'power' | 'log10Ratio' | 'negativeLog10Ratio'; operands: number[]; expected: number; evidence: string };
 export type TopicSummary = {
   schemaVersion: 1; courseId: string; topicId: string; topicNumber: string; unitNumber: number; title: string;
   status: 'draft' | 'published'; overview: string; keyConcepts: { title: string; text: string }[];
@@ -26,6 +26,8 @@ export function recomputeCheck(c: SummaryCheck): number {
     case 'quotient': return a/b;
     case 'difference': return a-b;
     case 'power': return a**b;
+    case 'log10Ratio': return Math.log10(a/b);
+    case 'negativeLog10Ratio': return -Math.log10(a/b);
     default: return NaN;
   }
 }
@@ -55,8 +57,9 @@ export function validateTopicSummary(s: TopicSummary, courses: Course[]): string
   const v=s.validation;
   if(!v||!['pending','validated'].includes(v.status)||!validText(v.scope)||!validText(v.reasoning)||!/^\d{4}-\d{2}-\d{2}$/.test(v.checkedAt)||!Array.isArray(v.checks))errors.push('Missing validation evidence');
   else for(const c of v.checks){
-    if(!Array.isArray(c.operands)||c.operands.length<2||c.operands.some(n=>!Number.isFinite(n))||(['quotient','difference','power'].includes(c.operation)&&c.operands.length!==2)||!Number.isFinite(c.expected)||!Number.isFinite(recomputeCheck(c))||Math.abs(recomputeCheck(c)-c.expected)>1e-9*Math.max(Number.MIN_VALUE,Math.abs(c.expected),Math.abs(recomputeCheck(c))))errors.push('Independent numerical check failed');
+    if(!Array.isArray(c.operands)||c.operands.length<2||c.operands.some(n=>!Number.isFinite(n))||(['quotient','difference','power','log10Ratio','negativeLog10Ratio'].includes(c.operation)&&c.operands.length!==2)||!Number.isFinite(c.expected)||!Number.isFinite(recomputeCheck(c))||Math.abs(recomputeCheck(c)-c.expected)>1e-9*Math.max(Number.MIN_VALUE,Math.abs(c.expected),Math.abs(recomputeCheck(c))))errors.push('Independent numerical check failed');
     if(!validText(c.evidence)||!summaryText(s).includes(c.evidence))errors.push('Numerical evidence must appear in displayed content');
+    if(['log10Ratio','negativeLog10Ratio'].includes(c.operation)&&c.operands.some(n=>n<=0))errors.push('Logarithmic concentration ratios require positive inputs');
   }
   if(s.status==='published'&&(v?.status!=='validated'||!v.contentHash?.match(/^[a-f0-9]{64}$/)))errors.push('Published summaries require validation and a sealed revision');
   return errors;

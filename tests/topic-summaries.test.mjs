@@ -41,6 +41,10 @@ test('summary policy rejects bad mappings, incomplete content, misleading claims
  s=copy();s.validation.status='pending';assert.ok(validateTopicSummary(s,courses).length);
  s=copy();s.validation.contentHash='';assert.ok(validateTopicSummary(s,courses).length);
  assert.equal(recomputeCheck({operation:'quotient',operands:[8,2]}),4);
+ assert.equal(recomputeCheck({operation:'negativeLog10Ratio',operands:[.01,1]}),2);
+ assert.equal(recomputeCheck({operation:'log10Ratio',operands:[.2,.02]}),1);
+ assert.ok(!Number.isFinite(recomputeCheck({operation:'negativeLog10Ratio',operands:[-1,1]})));
+ s=copy();s.validation.checks=[{operation:'log10Ratio',operands:[-1,-1],expected:0,evidence:s.example.steps[0]}];assert.ok(validateTopicSummary(s,courses).some(e=>e.includes('positive inputs')));
 });
 test('published gate withholds stale content, pending revisions, duplicate identities and draft entries',()=>{
  const s=topicSummaryCatalog[0],saved=structuredClone(s);

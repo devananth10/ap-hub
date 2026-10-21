@@ -16,7 +16,7 @@ An original slope field may replace curve data using up to 250 bounded finite `(
 
 After substantive review, set `validation.status` to `validated`, use a truthful check date and seal that exact revision with `summaryHash` from `src/lib/topic-summaries.ts`. Its SHA-256 covers content, mapping, publication state and validation evidence except the hash itself. The seal detects later edits; it is not proof of scientific accuracy. Any edit requires review and a new seal. Draft, pending, duplicate, malformed or changed/unsealed entries are withheld by `getTopicSummary`; unavailable topics show an honest preparation message.
 
-Run `pnpm test:summaries` to validate and update `content-drafts/topic-summaries/PROGRESS.json`. Run the unit tests, TypeScript, build and preview smoke checks before a checkpoint. `node --experimental-strip-types scripts/check-topic-summaries.mjs --complete` intentionally fails until all 240 exist. Never lower the target or mark missing reviews complete.
+Run `pnpm test:summaries` to validate and update `content-drafts/topic-summaries/PROGRESS.json` and AUDIT.json. `pnpm test:summaries:complete` additionally requires all 240 canonical topics; this full gate has passed. Run unit tests, TypeScript, build and preview smoke before a checkpoint. Never lower the target or mark missing reviews complete.
 
 ## Scope verification
 

@@ -1,12 +1,12 @@
 # Authorized development order — October 20, 2026
 
-Status October 21: all 2,640 MCQs are complete; Geography's final audit is saved at b0ad13d. Shared UI phases 1–2 below are complete at a0700d9. The Topic Summary system is implemented and publishing original reviews in checked batches; exact counts and next topics are in content-drafts/topic-summaries/PROGRESS.json. Continue the summary phase rather than regenerating question banks. The 240-summary target is not yet complete.
+Status October 21: all 2,640 MCQs remain complete and unchanged. Shared UI phases 1–2 are complete at a0700d9. **All 240 Topic Summaries are validated and published**: Chemistry 91, Calculus AB 81, Geography 68. The full audit is in content-drafts/topic-summaries/BANK_AUDIT.md and AUDIT.json. No topic remains unfinished. Do not regenerate completed content or start unrelated work without a new request.
 
 The owner's latest instruction explicitly requires completing **all 748 Human Geography MCQs across 68 official topics**, then passing the full bank/content/Practice audit and saving a verified GitHub checkpoint **before** starting the following UI or summary work. Current counts and the exact next topic are in `content-drafts/human-geography/PROGRESS.json`. Preserve valid unfinished work and never run concurrent generators or regenerate complete sets.
 
 ## After the complete Geography bank passes its final audit
 
-The owner also authorized these subsequent phases; they are pending, not completed or abandoned:
+The owner authorized the following scope, now completed and retained here as the development record:
 
 1. Refine the shared lesson interface within the existing green/teal design: concise canonical topic headers/breadcrumbs, explicit selected-instructor versus total video counts, readable supporting text, one clear topic Start Practice action, and distinct topic completion/video watched/Practice score semantics. Preserve all storage and playback.
 2. Investigate chart series-letter labels, including the reported repeated A in Human Geography 4.1. Determine their purpose before changing the shared renderer. Improve suitable desktop stimulus/answers layouts while retaining readable stacked mobile views, all legends/equivalent data, zoom/focus and Practice state. Put secondary scoring instructions in an accessible disclosure without changing first-graded-answer rules. Preserve reporting and navigation.

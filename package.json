@@ -23,7 +23,8 @@
     "test:human-geography": "node --experimental-strip-types scripts/check-human-geography.mjs && node --experimental-strip-types tests/human-geography-smoke.mjs",
     "test:geography-bank": "node --experimental-strip-types scripts/check-human-geography-bank.mjs",
     "test:geography-complete": "node --experimental-strip-types scripts/check-human-geography-complete.mjs",
-    "test:summaries": "node --experimental-strip-types scripts/check-topic-summaries.mjs --write"
+    "test:summaries": "node --experimental-strip-types scripts/check-topic-summaries.mjs --write",
+    "test:summaries:complete": "node --experimental-strip-types scripts/check-topic-summaries.mjs --write --complete"
   },
   "dependencies": {
     "next": "^16.0.0",

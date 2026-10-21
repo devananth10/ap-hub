@@ -67,3 +67,13 @@ Independently reviewed rate-versus-concentration equilibrium distinctions, Q/K p
 The original field for y′=x−y has 25 independently checked slopes, bounded coordinates and a caption distinguishing tangents from trajectories. Invalid infinite slopes are rejected. Mobile browser inspection confirmed the diagonal horizontal pattern, correct signs, readable axes and keyboard zoom200. Exponent notation was clarified as e^(x²) and e^(0.040t) where nested or decimal superscripts could be ambiguous. AB7.5/7.9 remain excluded.
 
 203 unit tests, TypeScript, production build, all 206 published summary mappings/unavailable boundaries, general smoke and complete question-preservation gate passed. No question data, approved video URLs or student-storage identities changed. The final 240-summary gate remains pending for the last 34 topics.
+
+## Final batches: 240/240 complete
+
+Chemistry 8.1–8.11, Calculus 8.1–8.12 and Chemistry 9.1–9.11 complete the assignment: 91/81/68 published, none missing or withheld. The 229-summary interim passed its build/routes before the final Chemistry batch. The final explicit completion gate verifies each entire course inventory; AUDIT.json records 240 seals, 267 numerical operations, eight diagrams, four additional tables and 179–247-word bodies.
+
+Final reasoning review checked weak-acid approximation, buffer neutralization/ratio/capacity, temperature-dependent pKw, structural acidity, curve ordering, cross-section geometry, axis-relative radii, entropy references, ΔG versus ΔG°, coupling and Faraday/electron accounting. Logarithmic inputs must be positive, including when two negative operands would give a positive ratio. Nested/decimal exponent notation, joined-word spacing and first-derivative-test continuity were clarified. Current CED 9.10 requires qualitative Nernst understanding; algorithm-only calculation is insufficient and equilibrium-shift arguments are not applied to running cells.
+
+Final checks passed: 203 tests, TypeScript, production build, all 240 summary and lesson routes, Chemistry 91 and Calculus 81 published Practice routes, Geography 68 topic/Practice routes and general smoke. Existing Chemistry scientific/publication, Calculus structure/math and Geography final audits passed unchanged. Browser testing confirmed wrong→retry-correct explanations, Next/Previous answer retention, optional-panel toggles and the expected first-attempt final score. Final desktop summary had no overflow, notes hidden and no observed console warnings/errors; theme and viewport were restored.
+
+No public deployment, paid AI, unapproved-resource import or student-data reset occurred. BANK_AUDIT.md lists limitations. Earlier incremental sections are historical checkpoints, not current missing-work reports.
