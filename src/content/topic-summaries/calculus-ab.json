@@ -1439,5 +1439,354 @@
       ],
       "contentHash": "a8baaf208c09f7048ba0c80a96e0ca49581458aa6fd9a8400d746f7bbf630f67"
     }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "chain-rule",
+    "topicNumber": "3.1",
+    "unitNumber": 3,
+    "title": "The Chain Rule",
+    "status": "published",
+    "overview": "The chain rule differentiates a composition: a function applied to another changing function. Track the outer operation and the inner input so that both rates of change are included.",
+    "keyConcepts": [
+      {
+        "title": "Composition",
+        "text": "For h(x) = f(g(x)), the derivative is f′(g(x))g′(x). Evaluate the outer derivative at the unchanged inner expression before multiplying by the inner derivative."
+      },
+      {
+        "title": "Nested operations",
+        "text": "A power, exponential or trigonometric expression may contain another function. Work from the outside inward, applying additional chain factors for deeper nesting."
+      },
+      {
+        "title": "Evaluation",
+        "text": "When using tables, the outer derivative is evaluated at g(a), not automatically at a. Keep function inputs and function outputs distinct."
+      }
+    ],
+    "example": {
+      "prompt": "Differentiate h(x) = (2x + 1)³ and find h′(1).",
+      "steps": [
+        "The outer derivative contributes 3(2x + 1)², and the inner derivative is 2.",
+        "Thus h′(x) = 6(2x + 1)². At x = 1, this is 6(3²) = 54."
+      ],
+      "conclusion": "As an independent check, expand h to 8x³ + 12x² + 6x + 1; its derivative gives the same value at 1."
+    },
+    "misconception": "Differentiating only the outer function omits the rate at which its input changes. The inner factor is not optional.",
+    "apTip": "Identify outer and inner functions explicitly, and preserve parentheses until every chain factor is present.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 3.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Independent polynomial expansion derivative 24x²+24x+6 gives 54 at 1, confirming composed derivative and inner factor.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            6,
+            9
+          ],
+          "expected": 54,
+          "evidence": "= 54"
+        }
+      ],
+      "contentHash": "208538be8de0a2e70adbdb370f93c51e2373a903db4a89dac2aaa7ee06247a3a"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-3-2",
+    "topicNumber": "3.2",
+    "unitNumber": 3,
+    "title": "Implicit Differentiation",
+    "status": "published",
+    "overview": "Implicit differentiation treats one variable as a function of another even when an equation is not solved explicitly. Apply derivative rules to both sides, including a chain factor whenever a term depends on y.",
+    "keyConcepts": [
+      {
+        "title": "Dependent variable",
+        "text": "When differentiating with respect to x, the derivative of y² is 2y·dy/dx. Treating y as a constant would erase its actual dependence on x."
+      },
+      {
+        "title": "Solve for the rate",
+        "text": "After differentiating the entire equation, collect all dy/dx terms and isolate the derivative algebraically. Product and chain rules may both be needed."
+      },
+      {
+        "title": "Check the point",
+        "text": "A requested point must lie on the original curve. Dividing by an expression that is zero may require separate analysis of a vertical tangent or other behavior."
+      }
+    ],
+    "example": {
+      "prompt": "Find the tangent slope to x² + 3y² = 16 at (2, 2).",
+      "steps": [
+        "Check the point: 2² + 3(2²) = 4 + 12 = 16.",
+        "Differentiating gives 2x + 6y·dy/dx = 0, so dy/dx = −x/(3y) when y ≠ 0."
+      ],
+      "conclusion": "At (2, 2), the slope is −2/6 = −1/3. An explicit positive-y branch gives the same slope when differentiated."
+    },
+    "misconception": "Implicit differentiation does not let you ignore a y term because it is not written as y(x). Its dependence is part of the equation.",
+    "apTip": "Keep the original relation alongside the derivative and check both the point and any nonzero-denominator conditions.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 3.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Explicit y=sqrt((16-x²)/3) differentiates to -x/(3y) on the positive branch; point membership and -1/3 slope checked.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            4,
+            12
+          ],
+          "expected": 16,
+          "evidence": "= 16"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            -2,
+            6
+          ],
+          "expected": -0.3333333333333333,
+          "evidence": "= −1/3"
+        }
+      ],
+      "contentHash": "ea804fb2d82dd229e19da540229e19037159fcb49651866954625ceb8100d4b0"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-3-3",
+    "topicNumber": "3.3",
+    "unitNumber": 3,
+    "title": "Differentiating Inverse Functions",
+    "status": "published",
+    "overview": "An inverse function reverses a function’s input–output relationship. Its derivative reflects reciprocal local slopes at corresponding points, provided an inverse exists nearby and the original derivative is nonzero.",
+    "keyConcepts": [
+      {
+        "title": "Corresponding inputs",
+        "text": "If f(a) = b, then f⁻¹(b) = a. The inverse derivative at b depends on f′ at a, not on f′ at b."
+      },
+      {
+        "title": "Derivative rule",
+        "text": "Writing g = f⁻¹, the relation is g′(b) = 1/f′(g(b)) when the hypotheses hold. This follows by differentiating f(g(x)) = x."
+      },
+      {
+        "title": "Graph interpretation",
+        "text": "Reflection across y = x exchanges coordinates and produces reciprocal finite nonzero tangent slopes. A zero original derivative requires separate treatment."
+      }
+    ],
+    "example": {
+      "prompt": "Let f(x) = x³ + x and g = f⁻¹. Find g′(2).",
+      "steps": [
+        "Since f(1) = 2, the corresponding original input is 1 and g(2) = 1.",
+        "The derivative f′(x) = 3x² + 1 gives f′(1) = 4, so g′(2) = 1/4."
+      ],
+      "conclusion": "The original function is strictly increasing because its derivative is positive everywhere, supporting the inverse used here."
+    },
+    "misconception": "The inverse function f⁻¹ is not the reciprocal function 1/f. Their values and derivatives generally differ.",
+    "apTip": "Find the matching original input first, then evaluate the derivative and take its reciprocal. Check that the relevant derivative is nonzero.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 3.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Input-output inversion and derivative 4 independently checked; f′=3x²+1>0 ensures global one-to-one behavior.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            1,
+            1
+          ],
+          "expected": 2,
+          "evidence": "f(1) = 2"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            3,
+            1
+          ],
+          "expected": 4,
+          "evidence": "f′(1) = 4"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            1,
+            4
+          ],
+          "expected": 0.25,
+          "evidence": "1/4"
+        }
+      ],
+      "contentHash": "7eab5b22781f6c0deda2c1ec88bfac15200cc671a2acfc7ebe194c6b46535e37"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-3-4",
+    "topicNumber": "3.4",
+    "unitNumber": 3,
+    "title": "Differentiating Inverse Trigonometric Functions",
+    "status": "published",
+    "overview": "Inverse trigonometric functions return principal angles, and their derivatives follow from inverse-function reasoning. Their notation, domains and principal ranges matter as much as the derivative formulas.",
+    "keyConcepts": [
+      {
+        "title": "Basic formulas",
+        "text": "The derivatives of arcsin x and arccos x are 1/√(1 − x²) and −1/√(1 − x²), respectively, for −1 < x < 1."
+      },
+      {
+        "title": "Arctangent",
+        "text": "The derivative of arctan x is 1/(1 + x²) for every real x. Composite arguments require the chain rule as well."
+      },
+      {
+        "title": "Inverse notation",
+        "text": "The expression sin⁻¹x normally means arcsin x in this context, not 1/sin x. Write arcsin when there is any risk of confusion."
+      }
+    ],
+    "example": {
+      "prompt": "Derive the arctangent derivative using y = arctan x.",
+      "steps": [
+        "On the principal interval −π/2 < y < π/2, tan y = x. Differentiate to get sec²y·dy/dx = 1.",
+        "Use sec²y = 1 + tan²y = 1 + x², giving dy/dx = 1/(1 + x²)."
+      ],
+      "conclusion": "At x = 0, the derivative is 1. The angle convention is radians."
+    },
+    "misconception": "The endpoint values of arcsin and arccos exist at ±1, but their displayed finite-derivative formulas apply only on the open interval.",
+    "apTip": "Check the original function’s domain before using a derivative expression, and include an inner derivative for a nontrivial argument.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 3.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Implicit derivation of arctan checked using principal range and identity; inverse sine/cosine signs and endpoint exclusions independently reviewed.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            1,
+            1
+          ],
+          "expected": 1,
+          "evidence": "derivative is 1"
+        }
+      ],
+      "contentHash": "586a7494ac1dab876a9293632ba790d5bcb17813a82798d8fe61d42947b6e1f6"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-3-5",
+    "topicNumber": "3.5",
+    "unitNumber": 3,
+    "title": "Selecting Procedures for Calculating Derivatives",
+    "status": "published",
+    "overview": "Complicated derivatives usually combine a small set of familiar rules. Identify the outer structure first, then identify any nested expressions, so the order of the work follows the function’s actual organization.",
+    "keyConcepts": [
+      {
+        "title": "Outer operation",
+        "text": "A sum suggests term-by-term differentiation; a product or quotient may require its corresponding rule. Do not select a rule merely because one symbol appears somewhere inside the expression."
+      },
+      {
+        "title": "Inner structure",
+        "text": "An exponential, trigonometric function or power with a changing input also needs the chain rule. A single derivative can require several rules."
+      },
+      {
+        "title": "Verification",
+        "text": "Simplify enough to compare equivalent forms, but preserve the original domain. A separate expansion, factorization or point calculation can expose missing factors or signs."
+      }
+    ],
+    "example": {
+      "prompt": "Choose and apply the rules for h(x) = x²e³ˣ.",
+      "steps": [
+        "The outer structure is a product of x² and e³ˣ, so differentiate one factor at a time.",
+        "The exponential factor uses the chain rule: its derivative is 3e³ˣ. Thus h′(x) = 2xe³ˣ + 3x²e³ˣ."
+      ],
+      "conclusion": "Factoring gives xe³ˣ(2 + 3x). At x = 1, this is 5e³, consistent with evaluating the two product-rule terms separately."
+    },
+    "misconception": "Applying the chain rule inside one factor does not replace the product rule for the complete expression.",
+    "apTip": "Annotate the function’s structure before calculating, then check every original factor appears in the appropriate derivative term.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 3.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Product plus inner exponential factor independently tracked; derivative factors to xe^(3x)(2+3x), with value 5e³ at 1.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            2,
+            3
+          ],
+          "expected": 5,
+          "evidence": "5e³"
+        }
+      ],
+      "contentHash": "1ff233ad9435ea0d5e95505fa345a546b8a75e485743b33da245ef66667ccda8"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "calculus-ab",
+    "topicId": "topic-3-6",
+    "topicNumber": "3.6",
+    "unitNumber": 3,
+    "title": "Calculating Higher-Order Derivatives",
+    "status": "published",
+    "overview": "Higher-order derivatives result from differentiating repeatedly. The first derivative measures a rate; the second measures how that rate changes. Their meanings and units depend on the original variables.",
+    "keyConcepts": [
+      {
+        "title": "Notation",
+        "text": "The symbols f″(x) and d²y/dx² denote a second derivative, not the square of f′(x). Further differentiation gives third and higher derivatives where they exist."
+      },
+      {
+        "title": "Changing units",
+        "text": "Each differentiation divides the output units by another input unit. For position versus time, the first derivative is velocity and the second is acceleration."
+      },
+      {
+        "title": "Local meaning",
+        "text": "A positive second derivative means the first derivative increases locally. It does not by itself mean the original function or its first derivative is positive."
+      }
+    ],
+    "example": {
+      "prompt": "For position s(t) = t³ − 6t² + 9t meters, find velocity and acceleration at t = 1 second.",
+      "steps": [
+        "Differentiate once: v(t) = 3t² − 12t + 9. At 1, v = 0 m/s.",
+        "Differentiate again: a(t) = 6t − 12. At 1, a = −6 m/s²."
+      ],
+      "conclusion": "Zero instantaneous velocity does not force zero acceleration. The particle’s velocity is changing even at this instant when its velocity equals zero."
+    },
+    "misconception": "Squaring a derivative is a different operation from differentiating it again. Keep the order notation and physical units separate.",
+    "apTip": "Check each successive derivative from the preceding one, then interpret its sign using the quantity it actually measures.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical calculus-ab Topic 3.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Polynomial differentiated twice independently; 3-12+9=0 and 6-12=-6 checked. Motion interpretation avoids confusing stationary instant with zero acceleration.",
+      "checks": [
+        {
+          "operation": "sum",
+          "operands": [
+            3,
+            -12,
+            9
+          ],
+          "expected": 0,
+          "evidence": "0 m/s"
+        },
+        {
+          "operation": "difference",
+          "operands": [
+            6,
+            12
+          ],
+          "expected": -6,
+          "evidence": "−6 m/s²"
+        }
+      ],
+      "contentHash": "9123dccfdaeb09f9db73ba58e28c41bbd288e71447017bf8cced081db815b7c4"
+    }
   }
 ]

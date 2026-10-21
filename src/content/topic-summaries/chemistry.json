@@ -867,5 +867,693 @@
       "checks": [],
       "contentHash": "4bc14b9fbd07e751cd65bd5de05fffb72a91f12c43c7c5d12ca1fe31eeb9e41c"
     }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "intermolecular-forces",
+    "topicNumber": "3.1",
+    "unitNumber": 3,
+    "title": "Intermolecular and Interparticle Forces",
+    "status": "published",
+    "overview": "Interparticle attractions help explain boiling, melting and solution behavior. Identify the particles first: attractions between molecules differ from the covalent bonds that hold each molecule together.",
+    "keyConcepts": [
+      {
+        "title": "Dispersion",
+        "text": "Temporary fluctuations in electron density produce attractions in all atoms and molecules. Greater polarizability and effective contact can increase dispersion attractions."
+      },
+      {
+        "title": "Permanent polarity",
+        "text": "Polar molecules can exhibit dipole–dipole attractions in addition to dispersion. Hydrogen bonding involves hydrogen bonded to N, O or F interacting with an appropriate lone pair."
+      },
+      {
+        "title": "Ions in solution",
+        "text": "Ion–dipole attractions occur between ions and polar solvent molecules. Their strength depends on charge, distance and solvent orientation."
+      }
+    ],
+    "example": {
+      "prompt": "Compare the boiling behavior of ethanol and dimethyl ether, which share formula C₂H₆O.",
+      "steps": [
+        "Both molecular substances exhibit dispersion and have polar bonds.",
+        "Ethanol has an O–H group and can form hydrogen-bonded networks among its own molecules; dimethyl ether lacks that donor group."
+      ],
+      "conclusion": "Ethanol’s stronger overall intermolecular attractions help explain its higher boiling temperature, without claiming that its covalent bonds must break during boiling."
+    },
+    "misconception": "A molecule containing oxygen does not automatically hydrogen-bond to identical molecules. A suitable hydrogen-bond donor and acceptor arrangement matters.",
+    "apTip": "Name the relevant attractions and connect them to the energy needed to separate particles. Do not claim that boiling necessarily breaks intramolecular bonds.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 3.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Isomer formulas, donor/acceptor distinction and phase-change mechanism checked. Ether can accept hydrogen bonds from water but is not its own conventional donor.",
+      "checks": [],
+      "contentHash": "0282ca7b41380e9739bb6d086523ba340c9a8fb3f59445624af488d1d6efdda9"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-3-2",
+    "topicNumber": "3.2",
+    "unitNumber": 3,
+    "title": "Properties of Solids",
+    "status": "published",
+    "overview": "Solid properties depend on the particles present and the interactions connecting them. Distinguish molecular, ionic, metallic and covalent-network solids before predicting conductivity, hardness or melting behavior.",
+    "keyConcepts": [
+      {
+        "title": "Molecular solids",
+        "text": "Discrete molecules are held together by intermolecular attractions. Melting typically overcomes these attractions while leaving the molecules’ internal covalent bonds intact."
+      },
+      {
+        "title": "Extended structures",
+        "text": "Ionic solids contain ion lattices, metallic solids contain delocalized electrons, and covalent-network solids contain extended covalent bonding rather than separate small molecules."
+      },
+      {
+        "title": "Property reasoning",
+        "text": "Strong attractions can increase melting temperature, but electrical conductivity requires mobile charge. Structure and mobility must both enter the explanation."
+      }
+    ],
+    "example": {
+      "prompt": "Explain why solid diamond and solid copper differ in electrical conductivity.",
+      "steps": [
+        "Diamond’s atoms form a three-dimensional covalent network in which valence electrons are localized in bonds.",
+        "Copper’s metallic structure includes mobile delocalized electrons that can carry charge through the solid."
+      ],
+      "conclusion": "Copper conducts readily, whereas pure diamond is a poor electrical conductor under ordinary conditions. The difference is not simply whether their bonds are strong."
+    },
+    "misconception": "All covalent substances do not have low melting points. A network solid can require breaking many covalent connections rather than separating discrete molecules.",
+    "apTip": "Identify the structural category from particle evidence, then explain the specific observed property. Remember that different structures of the same element can behave differently.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 3.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Diamond versus copper charge mobility checked; network and molecular distinction retained, avoiding a universal rule for all carbon structures.",
+      "checks": [],
+      "contentHash": "25398ce1769eae4a31b4b14e79c2d48b0f7996834a1c86d857c151b08680cda1"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-3-3",
+    "topicNumber": "3.3",
+    "unitNumber": 3,
+    "title": "Solids, Liquids, and Gases",
+    "status": "published",
+    "overview": "Solids, liquids and gases differ in particle arrangement, spacing and freedom of motion. A change of state usually changes these relationships without changing the chemical identity of the particles.",
+    "keyConcepts": [
+      {
+        "title": "Solid",
+        "text": "Particles occupy relatively fixed positions while vibrating. Their arrangement may be ordered or disordered; being solid does not mean particles stop moving."
+      },
+      {
+        "title": "Liquid",
+        "text": "Particles remain close together but can move past one another. A liquid has a relatively fixed volume while adopting the shape of its container."
+      },
+      {
+        "title": "Gas",
+        "text": "Particles are widely separated relative to their sizes and move throughout the available space. Gas compressibility largely reflects the empty space between particles."
+      }
+    ],
+    "example": {
+      "prompt": "A sealed sample of liquid water evaporates into a larger available space. Describe its particles before and after vaporization.",
+      "steps": [
+        "The particles remain H₂O molecules; their internal O–H bonds are not generally broken by this physical change.",
+        "Average separation increases greatly in the vapor, and molecules can move throughout the available volume."
+      ],
+      "conclusion": "If vaporization occurs at constant temperature, added energy changes intermolecular potential energy rather than requiring a rise in average kinetic energy."
+    },
+    "misconception": "Particles do not grow larger when a substance expands. Increasing spacing can increase sample volume while individual molecular size remains essentially unchanged.",
+    "apTip": "Distinguish particle size, spacing and motion in a diagram. Check whether the described process changes phase or produces new chemical species.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 3.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Physical vaporization and constant-temperature energy distinction checked; no claim of molecular enlargement or stationary solid particles.",
+      "checks": [],
+      "contentHash": "83d4dc58e9c5cebafe947ce86fc8d912e6ef63fe6c76400c37bddf676e6e449a"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-3-4",
+    "topicNumber": "3.4",
+    "unitNumber": 3,
+    "title": "Ideal Gas Law",
+    "status": "published",
+    "overview": "The ideal gas law relates pressure, volume, amount and absolute temperature for a simplified gas model. Consistent units and a clear distinction between fixed and changing quantities are essential.",
+    "keyConcepts": [
+      {
+        "title": "Equation",
+        "text": "PV = nRT uses temperature in kelvin. Select a gas constant whose pressure and volume units match the measurements, or convert the measurements first."
+      },
+      {
+        "title": "Proportional reasoning",
+        "text": "At fixed n and T, pressure varies inversely with volume. At fixed n and V, pressure is proportional to absolute temperature, not Celsius temperature."
+      },
+      {
+        "title": "Mixtures",
+        "text": "For ideal gases sharing a container, total pressure is the sum of partial pressures. Each partial pressure reflects that gas’s amount under the same volume and temperature."
+      }
+    ],
+    "example": {
+      "prompt": "An ideal sample contains 2.00 mol at 300 K in 24.6 L. Find pressure using R = 0.0820 L·atm/(mol·K).",
+      "steps": [
+        "Rearrange to P = nRT/V. The numerator is 2.00(0.0820)(300) = 49.2 L·atm.",
+        "Divide by 24.6 L to obtain 2.00 atm."
+      ],
+      "conclusion": "The liters cancel, leaving pressure units. Halving the volume at the same temperature and amount would double the pressure."
+    },
+    "misconception": "Doubling Celsius temperature does not generally double pressure. Convert to kelvin before using temperature ratios.",
+    "apTip": "Write the units through the calculation and state which quantities remain fixed before applying a proportional relationship.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 3.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "PV product and nRT independently balanced; R unit matching and kelvin requirement checked.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            2,
+            0.082,
+            300
+          ],
+          "expected": 49.2,
+          "evidence": "49.2 L·atm"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            49.2,
+            24.6
+          ],
+          "expected": 2,
+          "evidence": "2.00 atm"
+        }
+      ],
+      "contentHash": "d5e33c288a4c2e93cf37597568c81b727e9aa255d2812fd872dd934171dd9c03"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-3-5",
+    "topicNumber": "3.5",
+    "unitNumber": 3,
+    "title": "Kinetic Molecular Theory",
+    "status": "published",
+    "overview": "Kinetic molecular theory connects gas behavior to particles moving and colliding. The ideal model treats particles as negligibly small, with no intermolecular attractions and elastic collisions.",
+    "keyConcepts": [
+      {
+        "title": "Temperature and energy",
+        "text": "Average translational kinetic energy depends on absolute temperature. Different ideal gases at the same temperature have the same average translational kinetic energy."
+      },
+      {
+        "title": "Mass and speed",
+        "text": "Equal average kinetic energy does not mean equal speed. Lighter particles have greater root-mean-square speed at the same temperature."
+      },
+      {
+        "title": "Pressure",
+        "text": "Collisions with container walls transfer momentum and produce pressure. Changing particle number, speed or available volume affects collision behavior."
+      }
+    ],
+    "example": {
+      "prompt": "Compare the root-mean-square speeds of H₂ and O₂ at the same temperature, using molar masses 2.0 and 32.0 g/mol.",
+      "steps": [
+        "Since vᵣₘₛ is proportional to 1/√M at fixed temperature, the ratio v(H₂)/v(O₂) is √(32/2).",
+        "The mass ratio is 16, so the speed ratio is 4."
+      ],
+      "conclusion": "H₂ has four times the root-mean-square speed, but both samples still have the same average translational kinetic energy."
+    },
+    "misconception": "Gas particles do not all travel at the same speed. Temperature describes an average over a distribution, not the speed of every individual particle.",
+    "apTip": "Check whether a comparison asks about speed, kinetic energy or pressure. State the fixed-temperature condition when using inverse-square-root mass reasoning.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 3.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "RMS ratio independently derived from equal average translational kinetic energy and mass ratio; energy and speed conclusions separated.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            32,
+            2
+          ],
+          "expected": 16,
+          "evidence": "mass ratio is 16"
+        },
+        {
+          "operation": "power",
+          "operands": [
+            16,
+            0.5
+          ],
+          "expected": 4,
+          "evidence": "speed ratio is 4"
+        }
+      ],
+      "contentHash": "b56eeba9baac29a470d1f32e7b6ae67bbd437cef5fe155c7b0aa94a1a9a5d16c"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-3-6",
+    "topicNumber": "3.6",
+    "unitNumber": 3,
+    "title": "Deviation from Ideal Gas Law",
+    "status": "published",
+    "overview": "Real gases deviate from the ideal model because particles attract one another and occupy space. The dominant correction depends on conditions, so deviations can occur in more than one direction.",
+    "keyConcepts": [
+      {
+        "title": "Attractions",
+        "text": "At fixed amount, volume and temperature, attractions can reduce wall-collision momentum transfer and lower measured pressure relative to the ideal prediction."
+      },
+      {
+        "title": "Finite particle volume",
+        "text": "At high density, the space occupied by particles becomes significant compared with container volume. Excluded-volume effects can raise pressure relative to a point-particle prediction."
+      },
+      {
+        "title": "Conditions",
+        "text": "Low temperature makes attractions more influential relative to kinetic energy. Low density and sufficiently high temperature often make ideal behavior a better approximation."
+      }
+    ],
+    "example": {
+      "prompt": "At fixed n, V and T, a sample’s measured pressure is below nRT/V. Which nonideal effect is consistent with that direction?",
+      "steps": [
+        "A pressure reduction is consistent with attractive interactions lowering the momentum transferred to the walls.",
+        "Finite-volume effects alone would tend to push pressure in the opposite direction under this comparison."
+      ],
+      "conclusion": "The observation supports an attraction-dominated deviation; it does not mean particle volume is literally zero or attractions are the only interaction present."
+    },
+    "misconception": "Real gas pressure is not always lower than ideal pressure. Attractive and excluded-volume effects compete.",
+    "apTip": "Identify what is held fixed, compare measured and ideal values, and explain the direction using the relevant particle-level assumption.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 3.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Fixed-state pressure comparison and competing correction directions checked; approximation conditions qualified rather than asserted universally.",
+      "checks": [],
+      "contentHash": "23ff173c78c4588f6af77f3f8fef667802d81d6a1b96d373832c136c8fa725ab"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-3-7",
+    "topicNumber": "3.7",
+    "unitNumber": 3,
+    "title": "Solutions and Mixtures",
+    "status": "published",
+    "overview": "A solution is a homogeneous mixture at the particle scale. Concentration specifies how much solute is present relative to a stated amount of solution or solvent, so the denominator must remain explicit.",
+    "keyConcepts": [
+      {
+        "title": "Molarity",
+        "text": "Molarity M equals moles of solute divided by liters of solution. It uses final solution volume, not automatically the volume of solvent initially added."
+      },
+      {
+        "title": "Dilution",
+        "text": "Adding solvent lowers concentration while conserving solute amount, provided no reaction, loss or additional solute occurs. The relationship M₁V₁ = M₂V₂ follows from that mole balance."
+      },
+      {
+        "title": "Species",
+        "text": "A molecular solute and a dissociating ionic solute can produce different numbers and identities of dissolved particles for the same formula-unit concentration."
+      }
+    ],
+    "example": {
+      "prompt": "Dilute 20.0 mL of 0.250 M NaCl to a final solution volume of 100.0 mL. Find the final formula-unit concentration.",
+      "steps": [
+        "The initial solute amount is 0.250 mol/L × 0.0200 L = 0.00500 mol.",
+        "Divide by the final 0.1000 L to obtain 0.0500 M NaCl."
+      ],
+      "conclusion": "Assuming complete dissociation, Na⁺ and Cl⁻ each have concentration 0.0500 M. Their combined ion concentration is 0.100 M."
+    },
+    "misconception": "Dilution does not remove solute. It changes the amount of solvent and the solution volume around the same conserved solute amount.",
+    "apTip": "Convert volume to liters for mole calculations, and distinguish formula-unit concentration from concentrations of individual ions.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 3.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Mole conservation, final-volume denominator and 1:1 NaCl dissociation checked independently.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            0.25,
+            0.02
+          ],
+          "expected": 0.005,
+          "evidence": "0.00500 mol"
+        },
+        {
+          "operation": "quotient",
+          "operands": [
+            0.005,
+            0.1
+          ],
+          "expected": 0.05,
+          "evidence": "0.0500 M"
+        }
+      ],
+      "contentHash": "3e9582e4544065bc61824968a8f588caf0817bf65e56e7206c26976634ad6191"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-3-8",
+    "topicNumber": "3.8",
+    "unitNumber": 3,
+    "title": "Representations of Solutions",
+    "status": "published",
+    "overview": "Particle representations connect a solution’s formula, composition and concentration to its microscopic contents. Read the key and the represented volume before interpreting the number or arrangement of symbols.",
+    "keyConcepts": [
+      {
+        "title": "Dissociation",
+        "text": "A soluble ionic compound may appear as separated ions rather than intact formula units. The ion ratio and total charge must match the chemical formula."
+      },
+      {
+        "title": "Concentration",
+        "text": "For equal represented volumes, more solute particles indicate greater concentration. If diagram volumes differ, particle counts alone are insufficient."
+      },
+      {
+        "title": "Solvation",
+        "text": "Water’s partially negative oxygen end tends to face cations, while its partially positive hydrogen ends tend to face anions. Solvation does not create covalent water–ion molecules."
+      }
+    ],
+    "example": {
+      "prompt": "Represent complete dissolution of three formula units of CaCl₂ in water.",
+      "steps": [
+        "Each formula unit supplies one Ca²⁺ ion and two Cl⁻ ions, giving three calcium ions and six chloride ions.",
+        "Their total charges are +6 and −6, so the diagram remains electrically neutral."
+      ],
+      "conclusion": "Show separated solvated ions rather than three permanently bonded CaCl₂ clusters. Water may be omitted only if the diagram clearly states that omission."
+    },
+    "misconception": "An ionic formula is a ratio, not evidence that dissolved ions must remain attached in fixed groups.",
+    "apTip": "Check atom conservation, charge balance, solvent orientation and represented volume. Do not infer concentration from symbol size.",
+    "table": {
+      "caption": "Original solute-particle accounting; solvent omitted",
+      "headers": [
+        "Species",
+        "Relative count"
+      ],
+      "rows": [
+        [
+          "Ca²⁺",
+          "3"
+        ],
+        [
+          "Cl⁻",
+          "6"
+        ]
+      ]
+    },
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 3.8; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Ca:Cl count 3:6 and charge cancellation independently checked. Hydration orientation correct; formula units not treated as molecules.",
+      "checks": [
+        {
+          "operation": "product",
+          "operands": [
+            3,
+            2
+          ],
+          "expected": 6,
+          "evidence": "six chloride ions"
+        },
+        {
+          "operation": "sum",
+          "operands": [
+            6,
+            -6
+          ],
+          "expected": 0,
+          "evidence": "electrically neutral"
+        }
+      ],
+      "contentHash": "199e2179a7bc1ec271ae80d6654e61eda6e02f3835e9c10dc489a297c53c8906"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-3-9",
+    "topicNumber": "3.9",
+    "unitNumber": 3,
+    "title": "Separation of Solutions and Mixtures",
+    "status": "published",
+    "overview": "Separation methods exploit physical differences between mixture components. Choose a method based on particle properties and interactions, not simply on whether the mixture looks uniform.",
+    "keyConcepts": [
+      {
+        "title": "Filtration",
+        "text": "A filter can retain an insoluble solid while liquid and dissolved solute pass through. Ordinary filtration does not separate dissolved salt ions from water."
+      },
+      {
+        "title": "Chromatography",
+        "text": "Components partition differently between mobile and stationary phases. Stronger attraction to the stationary phase often produces less travel under otherwise comparable conditions."
+      },
+      {
+        "title": "Volatility",
+        "text": "Distillation uses differences in vaporization behavior. The vapor can be enriched in a more volatile component, without requiring a chemical decomposition."
+      }
+    ],
+    "example": {
+      "prompt": "On the same paper chromatogram, a solvent front moves 8.0 cm and dye A moves 2.0 cm from the starting line. Find its retention factor.",
+      "steps": [
+        "Measure both distances from the original baseline, not from the paper’s edge.",
+        "R_f = dye travel/solvent-front travel = 2.0/8.0 = 0.25."
+      ],
+      "conclusion": "Compared with a dye traveling farther in this same setup, A is more strongly retained relative to the moving solvent. Different solvents or stationary phases can change the comparison."
+    },
+    "misconception": "An R_f value is not a universal identity independent of experimental conditions. A spot’s color alone also does not prove purity.",
+    "apTip": "Explain separation using relative attractions or volatility, and identify which phase carries a component during the procedure.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 3.9; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Distance ratio and common baseline checked. Retention interpretation is relative to both phases and specified conditions, not an unconditional polarity ranking.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            2,
+            8
+          ],
+          "expected": 0.25,
+          "evidence": "= 0.25"
+        }
+      ],
+      "contentHash": "fb2ea8efd390db4b06f36aba03b1623b8b7ec227cd7b7004335349ec8a4552de"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-3-10",
+    "topicNumber": "3.10",
+    "unitNumber": 3,
+    "title": "Solubility",
+    "status": "published",
+    "overview": "Dissolving involves separating some solute–solute and solvent–solvent contacts while forming solute–solvent interactions. Whether mixing is favorable depends on the overall balance, not just on a label such as polar or ionic.",
+    "keyConcepts": [
+      {
+        "title": "Compatible interactions",
+        "text": "Substances with similar dominant intermolecular interactions often mix well. “Like dissolves like” is a useful starting model, not an exception-free law."
+      },
+      {
+        "title": "Ionic dissolution",
+        "text": "Water can stabilize separated ions through ion–dipole attractions. Strong lattice attractions can still limit an ionic solid’s solubility."
+      },
+      {
+        "title": "Molecular structure",
+        "text": "Polar functional groups can interact with water, while a large nonpolar region may reduce favorable mixing. Compare the whole molecule rather than one atom alone."
+      }
+    ],
+    "example": {
+      "prompt": "Explain why ethanol mixes readily with water while a long-chain hydrocarbon does not mix extensively under ordinary conditions.",
+      "steps": [
+        "Ethanol’s O–H group supports favorable hydrogen-bonding interactions with water.",
+        "A hydrocarbon offers mainly dispersion interactions and cannot replace water’s interaction network comparably."
+      ],
+      "conclusion": "This particle-level comparison explains the observed contrast, but does not imply that every oxygen-containing compound is highly water-soluble."
+    },
+    "misconception": "All ionic compounds are not freely soluble, and dissolving does not necessarily release heat. Several energetic and dispersal contributions affect the outcome.",
+    "apTip": "Identify interactions being disrupted and formed. Use a qualified explanation based on structure rather than treating polarity as a complete numerical solubility prediction.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 3.10; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Whole-molecule interaction reasoning checked; avoids blanket ionic solubility and exothermic-dissolution claims. No excluded colligative calculations.",
+      "checks": [],
+      "contentHash": "8a8ef1a5dc85da292462ed266a83a871640c633b64b7fbcb93d29ac8f1e86c78"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-3-11",
+    "topicNumber": "3.11",
+    "unitNumber": 3,
+    "title": "Spectroscopy and the Electromagnetic Spectrum",
+    "status": "published",
+    "overview": "Spectroscopy relates absorbed or emitted electromagnetic radiation to energy changes in matter. Different spectral regions often probe different kinds of molecular motion or electronic behavior.",
+    "keyConcepts": [
+      {
+        "title": "Radiation and energy",
+        "text": "Higher frequency corresponds to greater photon energy, while longer wavelength corresponds to lower frequency in the same propagation medium."
+      },
+      {
+        "title": "Types of transitions",
+        "text": "Microwave absorption commonly probes molecular rotation, infrared probes vibration, and ultraviolet/visible radiation can produce electronic transitions. These are characteristic associations, not a guarantee that every molecule absorbs every wavelength."
+      },
+      {
+        "title": "Spectral evidence",
+        "text": "Absorption occurs when radiation can drive an allowed transition with a matching energy gap. A spectrum’s pattern can provide structural evidence without being a direct photograph of a molecule."
+      }
+    ],
+    "example": {
+      "prompt": "A sample absorbs infrared radiation at a particular frequency. What type of energy change is most directly associated with that spectral region?",
+      "steps": [
+        "Infrared absorption is associated with changes in molecular vibrational states.",
+        "The absorbed photon supplies the energy difference between the relevant states."
+      ],
+      "conclusion": "This observation alone does not uniquely identify the sample or establish an electronic transition; additional spectral and chemical evidence is needed."
+    },
+    "misconception": "Absorbing radiation does not always break a bond. A transition can change a molecule’s energy state while its connectivity remains intact.",
+    "apTip": "Match the spectral region to the type of transition, then distinguish what the observation supports from what it leaves uncertain.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 3.11; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Rotation/microwave, vibration/IR and electronic/UV-visible scope checked against CED; allowed-transition caveat avoids universal absorption claim.",
+      "checks": [],
+      "contentHash": "00bef3767f77826a1058e6d17e177b96dd561841a9bcd1633055d38645d29496"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-3-12",
+    "topicNumber": "3.12",
+    "unitNumber": 3,
+    "title": "Properties of Photons",
+    "status": "published",
+    "overview": "Photons carry discrete amounts of energy linked to frequency. For radiation in vacuum, c = λν and E = hν = hc/λ connect wavelength, frequency and energy per photon.",
+    "keyConcepts": [
+      {
+        "title": "Inverse wavelength relationship",
+        "text": "At fixed light speed, shorter wavelength means higher frequency and greater energy per photon. Convert wavelength into units compatible with c before calculating."
+      },
+      {
+        "title": "Transitions",
+        "text": "Absorption increases an atom or molecule’s energy by the photon energy; emission decreases it by that amount. The relevant transition must match an available energy gap."
+      },
+      {
+        "title": "Per photon versus per mole",
+        "text": "E = hν gives energy for one photon. Multiply by Avogadro’s constant only when a molar quantity is requested."
+      }
+    ],
+    "example": {
+      "prompt": "Find the energy of one 6.00 × 10² nm photon using c = 3.00 × 10⁸ m/s and h = 6.626 × 10⁻³⁴ J·s.",
+      "steps": [
+        "Convert wavelength: 600 nm = 6.00 × 10⁻⁷ m. Then ν = c/λ = 5.00 × 10¹⁴ s⁻¹.",
+        "Multiply hν to obtain 3.313 × 10⁻¹⁹ J, approximately 3.31 × 10⁻¹⁹ J per photon."
+      ],
+      "conclusion": "A shorter-wavelength photon would carry more energy, not less."
+    },
+    "misconception": "A larger wavelength does not mean a more energetic photon. Keep energy per photon separate from the total energy in a light pulse.",
+    "apTip": "Cancel meters and seconds explicitly, and check that your final quantity answers the requested particle or molar scale.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 3.12; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Frequency and photon energy independently calculated; power-of-ten conversion from nanometers checked. Per-photon units not confused with molar energy.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            300000000,
+            6e-7
+          ],
+          "expected": 500000000000000,
+          "evidence": "5.00 × 10¹⁴"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            6.626e-34,
+            500000000000000
+          ],
+          "expected": 3.313e-19,
+          "evidence": "3.313 × 10⁻¹⁹"
+        }
+      ],
+      "contentHash": "d1908f003d85149cd0da79b4824e5a0ff211d7a421c83b94eb3baf787dbcf4d1"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "chemistry",
+    "topicId": "topic-3-13",
+    "topicNumber": "3.13",
+    "unitNumber": 3,
+    "title": "Beer-Lambert Law",
+    "status": "published",
+    "overview": "The Beer–Lambert relationship connects absorbance with concentration for a suitable solution at a fixed wavelength. It supports quantitative analysis when the measurement conditions and linear range are controlled.",
+    "keyConcepts": [
+      {
+        "title": "Equation",
+        "text": "A = εbc, where ε is molar absorptivity, b is optical path length and c is concentration. Absorbance is dimensionless; the other units must cancel consistently."
+      },
+      {
+        "title": "Proportionality",
+        "text": "For the same species, wavelength and path length within the linear range, absorbance is proportional to concentration. A calibration plot can determine an unknown concentration."
+      },
+      {
+        "title": "Measurement conditions",
+        "text": "Use an appropriate blank and consistent cuvettes. Scattering, changing chemical speciation or excessive concentration can undermine a simple linear interpretation."
+      }
+    ],
+    "example": {
+      "prompt": "A solution has absorbance 0.300 in a 1.00 cm cell. Its molar absorptivity is 150 L/(mol·cm). Find concentration.",
+      "steps": [
+        "Rearrange to c = A/(εb).",
+        "Calculate 0.300/(150 × 1.00) = 0.00200 mol/L."
+      ],
+      "conclusion": "Diluting to half that concentration would give absorbance 0.150 under the same conditions, provided the linear model still applies."
+    },
+    "misconception": "An absorbance of 0.300 does not mean 30.0% of light was absorbed. Absorbance is not a percentage scale.",
+    "apTip": "Check the blank, wavelength, path length and calibration range before using a measured absorbance to infer concentration.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical chemistry Topic 3.13; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Units cancel to mol/L; inverse concentration calculation and half-concentration absorbance checked independently. Percent-absorption confusion explicitly avoided.",
+      "checks": [
+        {
+          "operation": "quotient",
+          "operands": [
+            0.3,
+            150
+          ],
+          "expected": 0.002,
+          "evidence": "0.00200 mol/L"
+        },
+        {
+          "operation": "product",
+          "operands": [
+            0.3,
+            0.5
+          ],
+          "expected": 0.15,
+          "evidence": "0.150"
+        }
+      ],
+      "contentHash": "e1be174d440d20928d037ac8c6f2488838748acddd4a556e0a306096538da692"
+    }
   }
 ]

@@ -31,6 +31,7 @@ test('summary policy rejects bad mappings, incomplete content, misleading claims
  s=copy();s.keyConcepts=[];assert.ok(validateTopicSummary(s,courses).length);
  s=copy();s.overview='This video was analyzed by live AI.';assert.ok(validateTopicSummary(s,courses).length);
  s=copy();s.validation.checks=[{operation:'quotient',operands:[8,2],expected:5,evidence:'nonsense'}];assert.ok(validateTopicSummary(s,courses).some(e=>e.includes('numerical')));
+ s=copy();s.validation.checks=[{operation:'product',operands:[6.626e-34,5e14],expected:0,evidence:s.example.steps[0]}];assert.ok(validateTopicSummary(s,courses).some(e=>e.includes('numerical')),'Small photon energies must not be accepted as zero by an absolute tolerance');
  s=copy();s.validation.status='pending';assert.ok(validateTopicSummary(s,courses).length);
  s=copy();s.validation.contentHash='';assert.ok(validateTopicSummary(s,courses).length);
  assert.equal(recomputeCheck({operation:'quotient',operands:[8,2]}),4);

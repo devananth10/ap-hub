@@ -1045,5 +1045,411 @@
       ],
       "contentHash": "e38327beb1a4634fa419c9ad99c5442ea4ce63c800342fffb8b63f8a522b93a7"
     }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-3-1",
+    "topicNumber": "3.1",
+    "unitNumber": 3,
+    "title": "Introduction to Culture",
+    "status": "published",
+    "overview": "Culture includes learned practices, beliefs, values and material expressions shared and negotiated within social groups. It changes across generations and places, and individuals can participate in several cultural communities at once.",
+    "keyConcepts": [
+      {
+        "title": "Material and nonmaterial",
+        "text": "Buildings, clothing and tools are material expressions; languages, beliefs and social expectations are nonmaterial. These dimensions influence one another rather than operating separately."
+      },
+      {
+        "title": "Traits and practices",
+        "text": "A cultural trait may be one custom or practice. A broader cultural pattern combines traits, institutions and meanings whose expression can vary within a group."
+      },
+      {
+        "title": "Interpretation",
+        "text": "Ethnocentrism judges other cultures through one’s own standards. Cultural relativism seeks to understand practices within their context; understanding does not require endorsing every practice."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional community builds houses around shared courtyards and holds regular neighborhood meals there. Identify material and nonmaterial aspects.",
+      "steps": [
+        "The courtyards and buildings are material features of the landscape.",
+        "Expectations of hospitality and the meanings attached to sharing food are nonmaterial aspects expressed through those spaces."
+      ],
+      "conclusion": "The example shows interaction between built form and social practice, without proving that every resident interprets the custom identically."
+    },
+    "misconception": "Culture is learned and dynamic, not a biological destiny or a fixed list describing every member of a population.",
+    "apTip": "Use a specific practice and its meaning as evidence. Recognize internal variation and explain a process rather than assigning stereotypes to a region.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 3.1; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Material versus nonmaterial distinction and contextual interpretation reviewed; no biological or uniform-group inference.",
+      "checks": [],
+      "contentHash": "7105c89423074a8d89242e5a9539db55d0cafde0a2bd06385ce2f634de4f2e91"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-3-2",
+    "topicNumber": "3.2",
+    "unitNumber": 3,
+    "title": "Cultural Landscapes",
+    "status": "published",
+    "overview": "A cultural landscape is the visible imprint of human activity and meaning on a place. Buildings, street patterns, signs, sacred spaces and land uses can reveal layered histories without telling the complete story of every resident.",
+    "keyConcepts": [
+      {
+        "title": "Built evidence",
+        "text": "Architecture and settlement patterns reflect available technology, environmental conditions, institutions and cultural practices. A feature may serve new purposes over time."
+      },
+      {
+        "title": "Layered landscapes",
+        "text": "Successive populations and activities can leave overlapping traces, often called sequent occupance. New uses may coexist with older forms rather than completely erasing them."
+      },
+      {
+        "title": "Interpretive limits",
+        "text": "A monument or religious building can express identity and power, but its presence alone does not establish the beliefs or ancestry of everyone nearby."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional neighborhood contains a former factory converted to housing, bilingual storefronts and an old theater used for community meetings.",
+      "steps": [
+        "The factory’s structure records an industrial phase, while its present use records later economic and social change.",
+        "Bilingual signs suggest language use and an intended audience, but do not prove every resident is bilingual."
+      ],
+      "conclusion": "The combined features show a layered cultural landscape whose meaning must be interpreted using context and additional evidence."
+    },
+    "misconception": "A landscape is not a perfectly preserved museum of one culture. Reuse, contestation and unequal power can shape what remains visible.",
+    "apTip": "Describe an observable feature, connect it to a process and qualify what cannot be inferred from appearance alone.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 3.2; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Sequent occupance and adaptive reuse distinguished from an unsupported claim about individual identity or uniform cultural replacement.",
+      "checks": [],
+      "contentHash": "121a4b443ecbb0f21a9b8414e0ce2be0b1b509623d77dc25624e5eae40c3de0c"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-3-3",
+    "topicNumber": "3.3",
+    "unitNumber": 3,
+    "title": "Cultural Patterns",
+    "status": "published",
+    "overview": "Cultural patterns describe spatial arrangements of languages, religions, identities and practices. They can connect people across borders or create contested boundaries within a place, depending on institutions and historical relationships.",
+    "keyConcepts": [
+      {
+        "title": "Distribution and identity",
+        "text": "Cultural regions often have overlapping or gradual boundaries. Language or religion can contribute to identity without determining nationality, political views or every individual’s behavior."
+      },
+      {
+        "title": "Cohesion",
+        "text": "Shared symbols or communication practices can act as centripetal forces by supporting belonging and collective institutions. Their effects depend on who is included."
+      },
+      {
+        "title": "Division",
+        "text": "Exclusion or conflict over cultural recognition can act as centrifugal forces. A shared national label does not eliminate internal linguistic, religious or ethnic variation."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional multilingual state offers services in several regional languages but proposes using only one language in all public offices.",
+      "steps": [
+        "A common administrative language could ease some communication and support a shared institution.",
+        "However, residents unable to access services in that language may experience exclusion, strengthening regional grievances."
+      ],
+      "conclusion": "The same policy can therefore have different cohesive and divisive effects across groups; the outcome cannot be inferred from language counts alone."
+    },
+    "misconception": "A map dominated by one language category does not prove cultural uniformity or the absence of multilingual people.",
+    "apTip": "Identify the specific mechanism connecting a cultural pattern to cooperation or conflict, and state which groups and scale your evidence concerns.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 3.3; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Centripetal/centrifugal mechanisms contextualized; multilingualism and individual variation preserved, avoiding a deterministic diversity-conflict claim.",
+      "checks": [],
+      "contentHash": "016e675f489664ec7db0cbb51f577608c34acf4affd96ed9d388dd3a8d4a3e50"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-3-4",
+    "topicNumber": "3.4",
+    "unitNumber": 3,
+    "title": "Types of Diffusion",
+    "status": "published",
+    "overview": "Diffusion describes how cultural traits spread. Distinguish the movement of people from the movement of a trait, and examine the pathway rather than assuming every spread follows physical distance.",
+    "keyConcepts": [
+      {
+        "title": "Relocation and expansion",
+        "text": "Relocation diffusion occurs when people carry traits to new places. Expansion diffusion spreads a trait outward while it remains established at its origin."
+      },
+      {
+        "title": "Pathways",
+        "text": "Contagious diffusion spreads through close contact; hierarchical diffusion follows influential nodes or ranks and may bypass nearer places."
+      },
+      {
+        "title": "Stimulus",
+        "text": "Stimulus diffusion occurs when an underlying idea spreads but is adapted into a different local form."
+      }
+    ],
+    "example": {
+      "prompt": "In the original schematic, a new music style spreads from influential City A to influential City B before adoption in nearer Town C.",
+      "steps": [
+        "The jump between major centers supports hierarchical diffusion in this specified sequence.",
+        "Later neighbor-to-neighbor adoption around either city could involve contagious diffusion as well."
+      ],
+      "conclusion": "The map shows a teaching sequence, not proof that distance never matters or that a whole cultural process has only one pathway."
+    },
+    "misconception": "A trait can spread through several mechanisms over time. Do not classify diffusion solely from the number of places reached.",
+    "apTip": "Use who moves, which places adopt first and whether the trait changes as evidence for the mechanism.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 3.4; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Influential-node sequence explicitly provided, not inferred from distance alone. Relocation, expansion, contagious and stimulus distinctions reviewed. Original arrow runs A to B; Town C is closer in drawn geometry but not yet adopting. This illustrates the supplied influence hierarchy, not proof from proximity alone.",
+      "checks": [],
+      "contentHash": "4c71fd54f5607a212f08db36d51d3a814e823eacbd4a326e0d667a92b050f87a"
+    },
+    "figure": {
+      "kind": "map",
+      "mapType": "flow",
+      "title": "Original hierarchical spread",
+      "description": "Influential cities adopt in sequence A, then B, before nearer Town C.",
+      "caption": "Only the first spread is drawn; Town C has not adopted.",
+      "hypothetical": true,
+      "attribution": "Original PrepAtlas schematic and synthetic data",
+      "unitLabel": "Schematic; no distance scale",
+      "regions": [
+        {
+          "label": "Teaching region",
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              100,
+              0
+            ],
+            [
+              100,
+              60
+            ],
+            [
+              0,
+              60
+            ]
+          ]
+        }
+      ],
+      "points": [
+        {
+          "x": 20,
+          "y": 20,
+          "label": "City A: first"
+        },
+        {
+          "x": 80,
+          "y": 20,
+          "label": "City B: second"
+        },
+        {
+          "x": 50,
+          "y": 45,
+          "label": "Town C: not yet"
+        }
+      ],
+      "paths": [
+        {
+          "label": "Early spread",
+          "points": [
+            [
+              20,
+              20
+            ],
+            [
+              50,
+              20
+            ],
+            [
+              80,
+              20
+            ]
+          ],
+          "arrow": true
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-3-5",
+    "topicNumber": "3.5",
+    "unitNumber": 3,
+    "title": "Historical Causes of Diffusion",
+    "status": "published",
+    "overview": "Historical diffusion followed migration, trade, conquest, colonization and missionary networks. Cultural spread was shaped by unequal power as well as voluntary exchange, and local communities responded through adaptation, retention and resistance.",
+    "keyConcepts": [
+      {
+        "title": "Networks",
+        "text": "Trade routes and migration connected distant places, carrying languages, beliefs, technologies and practices through repeated contact."
+      },
+      {
+        "title": "Power",
+        "text": "Colonial administrations and imperial institutions could promote or impose particular languages and religions. Political influence helps explain spread that proximity alone cannot."
+      },
+      {
+        "title": "Local responses",
+        "text": "People could adopt selected practices while preserving others. Historical diffusion did not necessarily create uniform cultures or erase every earlier language and belief."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional colonial port adopts the administration’s language in government and long-distance trade, while households continue using local languages.",
+      "steps": [
+        "Administrative power and commercial networks help explain the spread of the new official language.",
+        "Continued household language use shows retention alongside adoption rather than automatic total replacement."
+      ],
+      "conclusion": "To explain the resulting pattern, examine institutions, movement and local choices instead of assuming all diffusion was peaceful imitation."
+    },
+    "misconception": "A contemporary language boundary is not proof of one isolated historical event. Several waves of migration, state policy and exchange may have contributed.",
+    "apTip": "Connect a present pattern to a named historical mechanism and relevant evidence, while acknowledging layered causes and the agency of receiving communities.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 3.5; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Historically plausible institutional pathway checked without assigning invented real dates or claiming universal replacement, peaceful spread or a single cause.",
+      "checks": [],
+      "contentHash": "5df53f5d644c3d5e652a2e698fcdf0532104adcf3a3895e781fce0c378570407"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-3-6",
+    "topicNumber": "3.6",
+    "unitNumber": 3,
+    "title": "Contemporary Causes of Diffusion",
+    "status": "published",
+    "overview": "Contemporary diffusion uses digital communication, mass media, tourism, migration and global economic networks. These connections can accelerate spread while still reflecting unequal access, cultural preferences and political restrictions.",
+    "keyConcepts": [
+      {
+        "title": "Network reach",
+        "text": "An idea can move rapidly between distant connected places. Communication can reduce some time barriers without eliminating geographic distance or material inequalities."
+      },
+      {
+        "title": "Uneven access",
+        "text": "Language, internet infrastructure, income, censorship and platform choices affect who encounters a trait and how it is interpreted."
+      },
+      {
+        "title": "Local adaptation",
+        "text": "Receiving communities can reinterpret a global product or practice. Faster communication can support both wider shared culture and renewed local identities."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional song becomes popular first among online communities in several distant cities, then gains local-language remixes.",
+      "steps": [
+        "Digital networks help explain rapid spread across physical distance without requiring the performers to migrate to each city.",
+        "The remixes show adaptation, so adoption does not imply identical cultural expression everywhere."
+      ],
+      "conclusion": "Evidence about platform access and audience networks would help explain why some places adopt earlier than others."
+    },
+    "misconception": "Global connectivity does not mean everyone receives the same information or responds in the same way.",
+    "apTip": "Identify the actual channel of diffusion and explain an access barrier or local response. Distinguish movement of information from relocation of the people who created it.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 3.6; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Contemporary network spread distinguished from migration; adaptation and access caveats prevent a false universal homogenization claim.",
+      "checks": [],
+      "contentHash": "c69446f2ef7c77aa6a27c300e37b0297985938795acf14957f30a74b42c33221"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-3-7",
+    "topicNumber": "3.7",
+    "unitNumber": 3,
+    "title": "Diffusion of Religion and Language",
+    "status": "published",
+    "overview": "Languages and religions spread through population movement, institutions and interpersonal contact. Their present distributions reflect multiple histories, so a map should be interpreted as evidence of patterns rather than proof of a single cause.",
+    "keyConcepts": [
+      {
+        "title": "Language relationships",
+        "text": "Language families and branches describe historical relationships among languages. Geographic proximity alone does not establish membership in the same family."
+      },
+      {
+        "title": "Religious spread",
+        "text": "Universalizing religions generally seek adherents across populations, while ethnic religions are often closely associated with particular peoples or places. These broad categories do not describe every individual practice."
+      },
+      {
+        "title": "Combined mechanisms",
+        "text": "Missionary activity may spread a religion by expansion, while migrants carry beliefs and languages through relocation. States and trade networks can influence both processes."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional religious community sends missionaries to a distant city while member families separately move there for work.",
+      "steps": [
+        "Missionaries gaining new local adherents illustrate expansion diffusion.",
+        "Families carrying existing practices to their new residence illustrate relocation diffusion."
+      ],
+      "conclusion": "The receiving city can show both processes at once. A single distribution map would not necessarily reveal which process accounted for each congregation."
+    },
+    "misconception": "A religion’s distribution does not establish that every resident shares that faith, and a language’s spread does not necessarily replace all local languages.",
+    "apTip": "Use specific historical or movement evidence to identify a mechanism. Keep language relatedness, religious affiliation and political boundaries distinct.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 3.7; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Universalizing/ethnic generalizations qualified; missionary conversion and migrant relocation distinct but compatible mechanisms, without inferring individual identity from a map.",
+      "checks": [],
+      "contentHash": "8978cc24f6298f34483f6557f1fd4214fc919018f7d2c55155008352d1f38148"
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "courseId": "human-geography",
+    "topicId": "topic-3-8",
+    "topicNumber": "3.8",
+    "unitNumber": 3,
+    "title": "Effects of Diffusion",
+    "status": "published",
+    "overview": "Diffusion can reshape cultural practices through adoption, adaptation and combination. Different outcomes may coexist within the same community, and change does not require every older practice to disappear.",
+    "keyConcepts": [
+      {
+        "title": "Acculturation",
+        "text": "People adopt some traits of another culture while retaining elements of their existing practices or identity. The degree and direction of exchange can vary."
+      },
+      {
+        "title": "Assimilation",
+        "text": "A group may increasingly adopt dominant cultural patterns, sometimes losing earlier distinct practices. This is a broader process than adopting one item of food or clothing."
+      },
+      {
+        "title": "Syncretism",
+        "text": "Elements from different traditions combine into a new cultural form. This differs from merely displaying unchanged traditions side by side."
+      }
+    ],
+    "example": {
+      "prompt": "A fictional community combines an introduced musical instrument with an older local rhythm and uses the new style at a continuing community festival.",
+      "steps": [
+        "The combined musical form illustrates syncretism because elements become integrated into a new practice.",
+        "The retained festival and identity show that adopting an outside element does not alone establish complete assimilation."
+      ],
+      "conclusion": "Additional evidence about language, institutions and daily practices would be needed to describe broader cultural change."
+    },
+    "misconception": "One borrowed trait is not sufficient evidence that an entire culture has vanished or that every member has assimilated.",
+    "apTip": "Identify what is adopted, retained or transformed, and support the label with a specific example rather than treating all cultural mixing as the same outcome.",
+    "validation": {
+      "status": "validated",
+      "checkedAt": "2026-10-21",
+      "scope": "Original review of canonical human-geography Topic 3.8; curriculum scope checked against the official CED. No copied lesson or exam material.",
+      "reasoning": "Integrated musical form supports syncretism; retained identity prevents unjustified total-assimilation inference. Outcomes treated as processes with possible overlap.",
+      "checks": [],
+      "contentHash": "a21c26c60c4463ee8b54c771de0fc647fac83a4c639d42f75a2d876df8e7ee91"
+    }
   }
 ]

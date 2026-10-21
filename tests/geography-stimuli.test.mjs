@@ -30,6 +30,10 @@ test('original summary diagrams use the shared accessible renderer with independ
  assert.ok(html.includes('stroke-dasharray="7 4"')&&html.includes('solid / circles')&&html.includes('dashed / squares'));
  for(const [j,series] of dtm.series.entries())for(const [i,value] of series.values.entries())assert.ok(html.includes(`data-category="${dtm.categories[i]}" data-value="${value}"`));
  assert.ok(render(pyramid).includes('age cohort')||render(pyramid).includes('Age cohort'));
+ const flow=summaries.find(s=>s.topicNumber==='3.4')?.figure;assert.ok(flow);validateGeographyStimulus(flow);
+ assert.deepEqual(flow.paths[0].points,[[20,20],[50,20],[80,20]]);assert.equal(flow.paths[0].arrow,true);
+ const [a,b,c]=flow.points;assert.ok(Math.hypot((c.x-a.x)*3.8,(c.y-a.y)*3.3)<Math.hypot((b.x-a.x)*3.8,(b.y-a.y)*3.3));
+ assert.ok(c.label.includes('not yet'));assert.ok(render(flow).includes('data-arrow-end="true"'));
 });
 test('optional map label anchors preserve old defaults and reject invalid coordinates',()=>{
  const s=structuredClone(geographyStimuli['hug-1-1-001']);s.regions[0].labelPoint=[18,12];validateGeographyStimulus(s);assert.ok(render(s).includes(`x="${40+18*3.8}" y="${35+12*3.3}" text-anchor="middle">NW: 80`));
