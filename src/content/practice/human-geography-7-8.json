@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 7,
+  "topicId": "topic-7-8",
+  "questions": [
+    {
+      "id": "hug-7-8-001",
+      "prompt": "The process needs the same total material input per batch. How does recovered material change the virgin-input requirement under the stated substitution assumption?",
+      "options": [
+        "Virgin input stays at 100 units because the total batch input is unchanged.",
+        "Virgin input falls to 40 units, a 60% reduction.",
+        "Virgin input rises to 140 units because recovered input is added on top.",
+        "Virgin input falls to 60 units, a 40% reduction, without proving the whole process has zero environmental impact."
+      ],
+      "correctIndex": 3,
+      "explanation": "The batch requires 100 input units in either plan. With 40 usable recovered units substituting one-for-one, virgin input is 100 − 40 = 60, down 40% from 100. Reuse can reduce virgin resource demand under these assumptions, but recovery, processing and transport may still use energy and produce impacts. The account does not establish endless recyclability or a complete life-cycle improvement. A: This ignores the stipulated substitution of recovered material for virgin input. B: Forty is the recovered amount, not the remaining virgin requirement. C: The recovered input replaces part of the fixed total rather than increasing it. D: This correctly balances inputs and qualifies the environmental interpretation."
+    },
+    {
+      "id": "hug-7-8-002",
+      "prompt": "Which comparison of local income capture is correct, without claiming that income alone proves ecological sustainability?",
+      "options": [
+        "B retains 50% of receipts locally versus A’s 30%, and B’s retained amount is 3000 units higher.",
+        "A retains 50% and B 30%, because A has more visitors.",
+        "Both retain the same amount because both offer nature visits.",
+        "B’s lower visitor count proves its total ecological impact is zero."
+      ],
+      "correctIndex": 0,
+      "explanation": "A retains 3000/10000 = 30% of receipts locally; B retains 6000/12000 = 50%. The retained amount is 6000 − 3000 = 3000 higher in B despite fewer visitors. These are economic-linkage measures, not direct evidence of habitat conservation, resident consent, labor conditions or the full environmental footprint of travel. A: This correctly calculates both shares and the amount difference. B: Visitor totals do not determine the receipt-retention ratios. C: The stated retained amounts differ. D: A visitor count cannot establish zero impact."
+    },
+    {
+      "id": "hug-7-8-003",
+      "prompt": "What is the most defensible assessment of these development indicators?",
+      "options": [
+        "Every environmental and social objective improved because income rose.",
+        "Some social and economic measures improve while emissions rise, so progress is mixed rather than captured by income alone.",
+        "Sanitation access fell because the population denominator is not a currency amount.",
+        "The indicators prove that a single project caused every observed change."
+      ],
+      "correctIndex": 1,
+      "explanation": "Sanitation access increases from 40% to 80% and comparable income rises from 10 to 15, while annual emissions rise from 100 to 150. These measures point to progress on some dimensions alongside an environmental challenge. Assessing sustainable development requires their joint interpretation, disaggregation and causal evidence rather than declaring universal success from one income indicator. A: The emissions measure moves in the adverse direction for an emissions-reduction objective. B: This recognizes the different dimensions and avoids an unsupported overall guarantee. C: Sanitation access is a percentage of residents, not a monetary ratio, and it rises. D: No design isolating a particular project’s effect is supplied."
+    },
+    {
+      "id": "hug-7-8-004",
+      "prompt": "Based on the supplied habitat boundary, which route comparison is supported without claiming that any route has zero impact?",
+      "options": [
+        "A avoids the core while B crosses it.",
+        "Both routes pass through the core because both share the same entry point.",
+        "B avoids the mapped core, whereas A crosses it; other ecological and community effects still need assessment.",
+        "The map proves B is the cheapest and safest route in an actual park."
+      ],
+      "correctIndex": 2,
+      "explanation": "Route A crosses the mapped core directly. Route B bends north of it and remains outside that polygon. Avoiding one sensitive area is relevant to conservation-minded visitor management, but does not measure erosion, disturbance outside the core, resident access, costs or safety. This is a hypothetical spatial comparison rather than permission to use a real route. A: The supplied geometry shows the reverse. B: A shared endpoint does not require an identical path. C: This correctly reads the boundary and retains the evaluation limits. D: No actual park, cost or safety data are supplied."
+    },
+    {
+      "id": "hug-7-8-005",
+      "prompt": "Which principle most directly distinguishes sustainable development from maximizing current output alone?",
+      "options": [
+        "Raising output guarantees that resource limits disappear.",
+        "Meeting present needs while considering future capabilities, environmental limits and the distribution of benefits and burdens.",
+        "Every development project must have no costs or tradeoffs whatsoever.",
+        "Only the number of factories matters, regardless of resource use or living conditions."
+      ],
+      "correctIndex": 1,
+      "explanation": "Sustainable development considers social and economic needs alongside environmental conditions and future opportunities. Current production is relevant but cannot by itself establish whether resource stocks, ecosystems and access are maintained or how gains and costs are distributed. Evaluating tradeoffs is part of the task rather than assuming they cannot exist. A: Output growth does not remove physical or institutional constraints. B: This includes present, future and distributional dimensions. C: Real choices can involve tradeoffs requiring assessment. D: Factory counts omit key environmental and human outcomes."
+    },
+    {
+      "id": "hug-7-8-006",
+      "prompt": "Which project most clearly fits ecotourism principles rather than merely using an environmental marketing label?",
+      "options": [
+        "Nature-based visits with conservation management, interpretation and meaningful local participation and benefits.",
+        "A project that advertises wildlife while ignoring habitat damage and community decisions.",
+        "Any hotel with a picture of a forest, regardless of its operations.",
+        "An unrestricted visitor increase treated as proof of conservation."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ecotourism links nature-based experiences with conservation, learning and attention to local community well-being. A label or forest setting alone does not establish those practices. Outcomes still need monitoring, since visitor pressure, external ownership and resource use can undermine stated aims even in a project designed around nature. A: This combines the relevant aims and management elements. B: Ignoring damage and community decisions contradicts the stated principles. C: A promotional image does not establish practice or outcomes. D: Higher visitor numbers can create pressures rather than automatically conserve habitat."
+    },
+    {
+      "id": "hug-7-8-007",
+      "prompt": "What is an appropriate use of the UN Sustainable Development Goals?",
+      "options": [
+        "Treat them as proof every announced project has already succeeded.",
+        "Use a single income indicator to replace all social and environmental measures.",
+        "Assume all countries face identical starting conditions and priorities.",
+        "Use a shared multidimensional framework to assess progress, while examining local conditions and suitable indicators."
+      ],
+      "correctIndex": 3,
+      "explanation": "The SDGs provide a framework spanning economic, social and environmental objectives. Indicators and local context help evaluate progress and distribution, rather than turning a commitment into an observed result. A shared framework can support comparison while acknowledging different starting conditions, capacities and interactions among goals. A: A commitment is not measured achievement. B: The framework includes more dimensions than income alone. C: Conditions and implementation challenges vary. D: This recognizes both common goals and context-sensitive assessment."
+    },
+    {
+      "id": "hug-7-8-008",
+      "prompt": "A manufacturer replaces one material with a lower-waste substitute, but producing the substitute uses more water elsewhere. What assessment is most useful?",
+      "options": [
+        "Measure only waste inside the final factory and ignore all external production.",
+        "Assume any substitute described as green must improve every outcome.",
+        "Compare relevant life-cycle resource and pollution effects across locations instead of shifting the accounting boundary to hide a burden.",
+        "Conclude that any tradeoff makes all systematic comparison impossible."
+      ],
+      "correctIndex": 2,
+      "explanation": "A material change can move impacts among stages and places. A broader assessment can examine input extraction, manufacture, use and disposal together with who bears the effects. This does not predetermine which option is preferable; it requires relevant evidence rather than counting one visible local improvement as a complete environmental result. A: That can omit burdens shifted to suppliers or other places. B: Marketing language does not establish all outcomes. C: This examines the relevant connected system and spatial transfers. D: Tradeoffs require careful comparison rather than abandoning evidence."
+    },
+    {
+      "id": "hug-7-8-009",
+      "prompt": "Why should an industrial emissions transition consider the workers and regions dependent on the affected industries?",
+      "options": [
+        "Environmental gains can coexist with concentrated adjustment costs, so job access, skills and support help assess a transition’s distribution.",
+        "Lower emissions guarantee every worker obtains a higher-paying replacement job immediately.",
+        "Employment conditions are unrelated to social development.",
+        "A national emissions total directly identifies each worker’s future occupation."
+      ],
+      "correctIndex": 0,
+      "explanation": "A transition can improve an environmental measure while changing employment, skills and local revenue in particular places. Examining adjustment and access alongside emissions makes the social and spatial consequences visible. This is not a claim that all transitions cause identical losses or a guarantee that any specific support program will succeed. A: This recognizes potentially uneven costs and the need for distributional evidence. B: Replacement opportunities depend on several conditions and are not automatic. C: Work and livelihoods are relevant social and economic dimensions. D: An aggregate environmental measure does not track individual occupations."
+    },
+    {
+      "id": "hug-7-8-010",
+      "prompt": "Which evidence best evaluates a small-scale finance project described as supporting sustainable development?",
+      "options": [
+        "Only the number of loans issued, assuming repayment and enterprise results are irrelevant.",
+        "Enterprise outcomes, repayment conditions, access across groups and relevant social or environmental effects.",
+        "Only a list of the lender’s advertisements.",
+        "An assumption that every borrower’s income rises by the full loan amount."
+      ],
+      "correctIndex": 1,
+      "explanation": "Finance provision is an input, while sustainable-development outcomes concern what activities and opportunities it enables and at what costs. Enterprise results, terms, access and relevant wider effects help test those claims. A loan is not itself income, and success cannot be inferred solely from issuance totals or promotion. A: Issuance counts do not establish the resulting benefits or burdens. B: These measures connect provision with outcomes and their distribution. C: Advertising does not independently measure impacts. D: Borrowed funds carry obligations and do not equal an income gain."
+    },
+    {
+      "id": "hug-7-8-011",
+      "prompt": "A public-transport project receives SDG-related funding. What best shows progress beyond construction itself?",
+      "options": [
+        "Only the fact that the funding was announced.",
+        "Only the completed station count, with no service or access records.",
+        "A claim that all residents benefit equally because the project uses an SDG label.",
+        "Usable service, changes in access and travel burdens, and measured environmental and distributional outcomes against the project’s aims."
+      ],
+      "correctIndex": 3,
+      "explanation": "Funding and construction document implementation, but progress depends on what service is operated and how it changes access, costs and environmental conditions. Comparing suitable outcomes with the stated aims and across groups can reveal success, limitations or tradeoffs. An SDG association does not itself provide causal proof or universal benefit. A: Announcement records intent rather than experienced outcomes. B: Infrastructure counts omit usability, operation and distribution. C: The label does not enumerate each resident’s circumstances. D: This links implementation to relevant multidimensional outcomes."
+    }
+  ]
+}

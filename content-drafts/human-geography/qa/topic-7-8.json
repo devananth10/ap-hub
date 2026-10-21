@@ -1,0 +1,144 @@
+{
+  "topicNumber": "7.8",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "f18a26c3f77b5d1201272038ab9076a29a7595074be72f4e9d0713d9fb62d5e3",
+  "scopeReview": "IMP-7.A.1–3: resource depletion, consumption, pollution and climate in spatial/industrial development; ecotourism and community conservation; SDGs including finance and public transport assessed through multidimensional outcomes.",
+  "varietyReview": "Four meaningful original stimuli: industrial recovered-input substitution, tourism receipt retention, development dashboard and visitor-route geometry. Other applications cover future needs, SDGs, lifecycle transfers and transition distribution.",
+  "repetitionReview": "New stock-flow, local-retention and conservation-route tasks rather than number-only copies of urban intensity comparisons. Distinguishes renewability from sustainable use, nature marketing from ecotourism and project inputs from outcomes. Varied keys and all-option explanations; difficulty uncalibrated. Final review found the initial new aquifer balance too close to1.5; replaced this new item, preserving1.5 and its IDs. Revised case analyzes industrial material recovery rather than annual groundwater recharge.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://sdgs.un.org/goals",
+    "https://www.un.org/sustainabledevelopment/development-goals/",
+    "https://www.untourism.int/sustainable-development/ecotourism-and-protected-areas",
+    "https://www.untourism.int/glossary-tourism-terms"
+  ],
+  "referenceNote": "Official curriculum and primary UN/UN Tourism definitions checked. All accounts, routes and examples are original hypothetical material; no real ecological clearance, safety/financial advice, outside lesson import or independent human review.",
+  "questions": [
+    {
+      "questionId": "hug-7-8-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Virgin input falls to 60 units, a 40% reduction, without proving the whole process has zero environmental impact.",
+      "independentReview": "Final repetition review replaced a new aquifer-stock exercise overlapping Topic1.5 with this industrial recovered-input problem. Independently computed initial virgin100−0=100, recovery100−40=60, reduction40/100=.4. One-for-one usable substitution and fixed output explicit; no zero-impact or perpetual-recycling claim.",
+      "check": {
+        "type": "sustainable-recovered-inputs"
+      },
+      "questionSha256": "a5fba05831e5f5aee8c74ad86dd12c901cd7d0f3aad84d61931c6dab24b6309a",
+      "stimulusSha256": "350e4d1364b7552be125bb81842f239e67fc14acca37e4f752d4ca9c9af83666"
+    },
+    {
+      "questionId": "hug-7-8-002",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "B retains 50% of receipts locally versus A’s 30%, and B’s retained amount is 3000 units higher.",
+      "independentReview": "Independentretentions.3/.5,amountgap3000 andfewerBvisitors800<1000. Receiptsnotprofit; localretentiondefinitionidentical, nocommunityequityorconservationguarantee.",
+      "check": {
+        "type": "sustainable-tourism-retention"
+      },
+      "questionSha256": "3169d795004ff79b7940e8131cd581904e5c440f82bdf8bc8f7bad441b5b1a8c",
+      "stimulusSha256": "8da09ba6dcba901db1375f08538f313694cac46b1b9a263357a922c05bd48d4f"
+    },
+    {
+      "questionId": "hug-7-8-003",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Some social and economic measures improve while emissions rise, so progress is mixed rather than captured by income alone.",
+      "independentReview": "Checkedaccess+40points,income+50%,emissions+50%; emissionsaretotalnotpercapita. Differentunitskeptinseparatetable rows, noarbitrary compositeindex or causalclaim.",
+      "check": {
+        "type": "sustainable-multidimensional-dashboard"
+      },
+      "questionSha256": "74951dccb65afdd37860d5efff59fa8450dbf87d47c42a71427f1ef5bb959e37",
+      "stimulusSha256": "e855803c9b11821a26910dd3c1bdc58cdcb0ce24525500beecbbfa0934ca56af"
+    },
+    {
+      "questionId": "hug-7-8-004",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "B avoids the mapped core, whereas A crosses it; other ecological and community effects still need assessment.",
+      "independentReview": "GeometrycheckedA horizontal y30 intersects corex40–60/y15–45; B segmentsx10→30 remainx<40 theny8 thenx70→90 stayx>60. No measuredphysicaldistances or actualrouteadvice.",
+      "check": {
+        "type": "sustainable-visitor-routes"
+      },
+      "questionSha256": "828fa15fbc9c051bb02e93129bd0c23a66d97cd54ef17257355ed188cb44f136",
+      "stimulusSha256": "cceab4541bf1f6b862b1fb4e0a3466ade465e1abca7b0d5c29663ef50b2c5305"
+    },
+    {
+      "questionId": "hug-7-8-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "foundational",
+      "correctOption": "Meeting present needs while considering future capabilities, environmental limits and the distribution of benefits and burdens.",
+      "independentReview": "GeneralUNsustainabledevelopmentprinciple, no inventeduniversalnumericthreshold or promiseofzeroimpact.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "4c74ee1e57a5c8170e585ff6dd934410e7fd41d95c6bd40eb4997d7bb5a1ec5a"
+    },
+    {
+      "questionId": "hug-7-8-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Nature-based visits with conservation management, interpretation and meaningful local participation and benefits.",
+      "independentReview": "PrimaryUNTourismdefinitionchecked; no implicationallnaturetourismnecessarilyecotourism or everylocalresidentautomaticallybenefits.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "a738860a9cc4691754ff1d4f23a5e6473d55958ce5099c21ec3aa086ff30a4f9"
+    },
+    {
+      "questionId": "hug-7-8-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Use a shared multidimensional framework to assess progress, while examining local conditions and suitable indicators.",
+      "independentReview": "VerifiedprimaryUN17-goalframework withoutinventingcurrentcountryprogress or treatinggoalsaslegallyself-executingrules.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "5c3b1f6611611eb0ef66aac49366a4d714e3371c782f7da21f962ac0b44bc393"
+    },
+    {
+      "questionId": "hug-7-8-008",
+      "skill": "Scale Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Compare relevant life-cycle resource and pollution effects across locations instead of shifting the accounting boundary to hide a burden.",
+      "independentReview": "Noactualmaterialhealthclaim or technologyrecommendation. Differentfromurbanterritorialinventorycase: changesinmaterialproductionstageandmultipleimpacts, no fabricated lifecyclecoefficient.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "cf9ee8589683d9362726618fba913edcacfc5312f640d117205ed2d608cfede5"
+    },
+    {
+      "questionId": "hug-7-8-009",
+      "skill": "Spatial Relationships",
+      "difficulty": "challenging",
+      "correctOption": "Environmental gains can coexist with concentrated adjustment costs, so job access, skills and support help assess a transition’s distribution.",
+      "independentReview": "Originalindustrialtransitioncase, no actualemploymenteligibilitydecision or claimedpolicywelfareestimate.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "bcdef25268fe38ea31203948888716784c6d7f29254ad993b38007b847297128"
+    },
+    {
+      "questionId": "hug-7-8-010",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Enterprise outcomes, repayment conditions, access across groups and relevant social or environmental effects.",
+      "independentReview": "OfficialIMP-7.A.3small-scalefinanceevaluation, not personalborrowingadvice. Differentfrom7.4incomecomparison: multidimensionaloutcomesandtermsnotnumericcausalclaim.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "32a30d6c332b59268ed078b79591c47f64235461e5ea2d6d94da6730316f453e"
+    },
+    {
+      "questionId": "hug-7-8-011",
+      "skill": "Source Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Usable service, changes in access and travel burdens, and measured environmental and distributional outcomes against the project’s aims.",
+      "independentReview": "DirectpublictransportexampleinA.3, no changetoscore/progressappfeatures or unsupportedactualprojectevaluation.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "8f18edb1564232ad6215d7b2f580600706ed23a3c1cfef4d22994b6c05ab816d"
+    }
+  ]
+}

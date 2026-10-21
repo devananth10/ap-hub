@@ -14234,5 +14234,297 @@
         "80"
       ]
     ]
+  },
+  "hug-7-7-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "chart",
+    "title": "Employment shifts between manufacturing and services",
+    "description": "Hypothetical region with two exhaustive job categories in this account. Earlier: manufacturing 80, services 20. Later: manufacturing 50, services 70. The same job-count definition is used, and no worker-level transition data are supplied.",
+    "caption": "Original synthetic restructuring account. Job counts do not establish output, wages, hours, job security or which people found new work.",
+    "unitLabel": "Jobs",
+    "categories": [
+      "Manufacturing",
+      "Services"
+    ],
+    "series": [
+      {
+        "label": "Earlier",
+        "values": [
+          80,
+          20
+        ]
+      },
+      {
+        "label": "Later",
+        "values": [
+          50,
+          70
+        ]
+      }
+    ],
+    "max": 100
+  },
+  "hug-7-7-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Output scale and average production cost",
+    "description": "Hypothetical producer of one standardized product. Output and total cost refer to comparable production periods using the same currency and accounting method; selling prices are not supplied.",
+    "caption": "Original simplified cost account. A scale advantage over two observations is not a universal forecast or an investment recommendation.",
+    "headers": [
+      "Output (products)",
+      "Total cost (currency)"
+    ],
+    "rows": [
+      [
+        "100",
+        "1000"
+      ],
+      [
+        "200",
+        "1600"
+      ]
+    ]
+  },
+  "hug-7-7-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "model",
+    "title": "Design, assembly and market functions in different places",
+    "description": "Hypothetical network. D provides design specifications to A; A assembles products and ships them to market M. Nodes are in different economies. The first arrow is information, the second finished goods.",
+    "caption": "Original functional diagram. Geography of tasks does not alone establish ownership, wages, the value retained locally or the number of jobs.",
+    "assumptions": "D → A: design information. A → M: finished products. Neither arrow represents a worker migration count or equal returns.",
+    "nodes": [
+      {
+        "label": "D",
+        "x": 15,
+        "y": 15,
+        "labelPosition": "above"
+      },
+      {
+        "label": "A",
+        "x": 85,
+        "y": 30,
+        "labelPosition": "right"
+      },
+      {
+        "label": "M",
+        "x": 15,
+        "y": 48,
+        "labelPosition": "below"
+      }
+    ],
+    "edges": [
+      {
+        "from": "D",
+        "to": "A",
+        "label": "Design"
+      },
+      {
+        "from": "A",
+        "to": "M",
+        "label": "Goods"
+      }
+    ]
+  },
+  "hug-7-7-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Inventory buffers under a delivery interruption",
+    "description": "Hypothetical plants use the same input at 20 units per day, with no substitutions. Standard begins with 100 units; Lean with 40. Consider three days with no new arrivals and enough demand for planned production.",
+    "caption": "Original stock-flow example. Lean inventory is one feature associated with just-in-time methods, not a complete description of every production or risk-management strategy.",
+    "headers": [
+      "Plant",
+      "Starting input units",
+      "Required units/day"
+    ],
+    "rows": [
+      [
+        "Standard",
+        "100",
+        "20"
+      ],
+      [
+        "Lean",
+        "40",
+        "20"
+      ]
+    ]
+  },
+  "hug-7-8-001": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Virgin and recovered inputs for one production batch",
+    "description": "Hypothetical manufacturer. Each plan needs 100 units of material input for the same batch output and quality. Recovered material is already processed, usable and substitutes one-for-one for virgin material. It contributes 0 units in Initial and 40 in Recovery.",
+    "caption": "Original synthetic input account. Recovery is not impact-free, and the example does not specify recycling losses, energy costs or an unlimited supply of recovered material.",
+    "headers": [
+      "Plan",
+      "Total input units",
+      "Recovered units"
+    ],
+    "rows": [
+      [
+        "Initial",
+        "100",
+        "0"
+      ],
+      [
+        "Recovery",
+        "100",
+        "40"
+      ]
+    ]
+  },
+  "hug-7-8-002": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "Visitor receipts and local economic retention",
+    "description": "Hypothetical nature-tourism projects using the same period and accounting definition. Local retention means receipts paid to local workers, suppliers and owners in this account, not net profit or equal distribution among residents.",
+    "caption": "Original synthetic tourism data. Local income capture is one dimension; conservation, community participation, working conditions and travel impacts require separate evidence.",
+    "headers": [
+      "Project",
+      "Visitors",
+      "Receipts",
+      "Retained locally"
+    ],
+    "rows": [
+      [
+        "A",
+        "1000",
+        "10000",
+        "3000"
+      ],
+      [
+        "B",
+        "800",
+        "12000",
+        "6000"
+      ]
+    ]
+  },
+  "hug-7-8-003": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "table",
+    "title": "A multidimensional development dashboard",
+    "description": "Hypothetical region with comparable measurement methods across periods. Sanitation is the resident access share; income uses the same price-adjusted per-person units; emissions are the annual total under a fixed regional accounting boundary.",
+    "caption": "Original synthetic indicators, not official country estimates or a computed SDG score. Progress on one dimension can coexist with a challenge on another.",
+    "headers": [
+      "Indicator",
+      "Earlier",
+      "Later"
+    ],
+    "rows": [
+      [
+        "Sanitation access (%)",
+        "40",
+        "80"
+      ],
+      [
+        "Comparable income/person",
+        "10",
+        "15"
+      ],
+      [
+        "Annual emissions (units)",
+        "100",
+        "150"
+      ]
+    ]
+  },
+  "hug-7-8-004": {
+    "hypothetical": true,
+    "attribution": "Original PrepAtlas schematic and synthetic data",
+    "kind": "map",
+    "mapType": "reference",
+    "title": "Two visitor-route options and a sensitive habitat core",
+    "description": "Hypothetical conservation-planning sketch. The rectangle is a sensitive habitat core. A crosses it on a direct line; B bends north around it. Both connect the same entry and exit. No real park, distance, cost or safety rating is represented.",
+    "caption": "Original schematic for evaluating one spatial constraint. Avoiding a mapped core does not eliminate every effect on ecosystems, local communities or access.",
+    "unitLabel": "Core = sensitive habitat; A and B = proposed routes",
+    "regions": [
+      {
+        "label": "Core",
+        "polygon": [
+          [
+            40,
+            15
+          ],
+          [
+            60,
+            15
+          ],
+          [
+            60,
+            45
+          ],
+          [
+            40,
+            45
+          ]
+        ],
+        "labelPoint": [
+          50,
+          40
+        ]
+      }
+    ],
+    "points": [
+      {
+        "x": 10,
+        "y": 30,
+        "label": "Entry",
+        "labelAlign": "middle"
+      },
+      {
+        "x": 90,
+        "y": 30,
+        "label": "Exit",
+        "labelAlign": "middle"
+      }
+    ],
+    "paths": [
+      {
+        "label": "A",
+        "points": [
+          [
+            10,
+            30
+          ],
+          [
+            50,
+            30
+          ],
+          [
+            90,
+            30
+          ]
+        ]
+      },
+      {
+        "label": "B",
+        "points": [
+          [
+            10,
+            30
+          ],
+          [
+            30,
+            8
+          ],
+          [
+            70,
+            8
+          ],
+          [
+            90,
+            30
+          ]
+        ]
+      }
+    ]
   }
 }

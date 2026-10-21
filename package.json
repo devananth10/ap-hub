@@ -21,7 +21,8 @@
     "test:preview": "node scripts/check-preview-stability.mjs",
     "test:calculus": "node --experimental-strip-types scripts/check-calculus-bank.mjs --write && node --experimental-strip-types scripts/check-calculus-math.mjs",
     "test:human-geography": "node --experimental-strip-types scripts/check-human-geography.mjs && node --experimental-strip-types tests/human-geography-smoke.mjs",
-    "test:geography-bank": "node --experimental-strip-types scripts/check-human-geography-bank.mjs"
+    "test:geography-bank": "node --experimental-strip-types scripts/check-human-geography-bank.mjs",
+    "test:geography-complete": "node --experimental-strip-types scripts/check-human-geography-complete.mjs"
   },
   "dependencies": {
     "next": "^16.0.0",

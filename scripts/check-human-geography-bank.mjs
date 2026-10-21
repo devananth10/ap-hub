@@ -306,6 +306,14 @@ export function verifyGeographyQuestion(question,review,stimulus){
   case 'trade-tariff-example':assert.deepEqual(stimulus.rows.map(r=>r[1]),['100','10%','0']);assert.equal(100+100*.1,110);assert.equal(Number.parseInt(question.options[question.correctIndex]),110);assert.equal(question.correctIndex,2);break;
   case 'trade-supply-network':assert.deepEqual(stimulus.nodes.map(n=>n.label),['S','A','M']);assert.deepEqual(stimulus.edges,[{from:'S',to:'A',label:'Parts'},{from:'A',to:'M',label:'Goods'}]);assert.equal(question.correctIndex,0);break;
   case 'trade-debt-export-ratio':assert.deepEqual(stimulus.rows.map(r=>r.slice(1).map(Number)),[[20,100],[20,80]]);assert.deepEqual(stimulus.rows.map(r=>Number(r[1])/Number(r[2])),[.2,.25]);assert.equal(question.correctIndex,3);break;
+  case 'restructuring-employment':assert.deepEqual(stimulus.series.map(s=>s.values),[[80,20],[50,70]]);assert.deepEqual(stimulus.series.map(s=>s.values.reduce((a,b)=>a+b,0)),[100,120]);assert.equal(question.correctIndex,2);break;
+  case 'restructuring-scale-cost':assert.deepEqual(stimulus.rows.map(r=>r.map(Number)),[[100,1000],[200,1600]]);assert.deepEqual(stimulus.rows.map(r=>Number(r[1])/Number(r[0])),[10,8]);assert.equal(question.correctIndex,0);break;
+  case 'restructuring-functional-network':assert.deepEqual(stimulus.nodes.map(n=>n.label),['D','A','M']);assert.deepEqual(stimulus.edges,[{from:'D',to:'A',label:'Design'},{from:'A',to:'M',label:'Goods'}]);assert.equal(question.correctIndex,3);break;
+  case 'restructuring-inventory-buffer':assert.deepEqual(stimulus.rows.map(r=>r.slice(1).map(Number)),[[100,20],[40,20]]);assert.deepEqual(stimulus.rows.map(r=>Number(r[1])/Number(r[2])),[5,2]);assert.equal(3*20-40,20);assert.equal(question.correctIndex,1);break;
+  case 'sustainable-recovered-inputs':assert.deepEqual(stimulus.rows.map(r=>r.slice(1).map(Number)),[[100,0],[100,40]]);assert.deepEqual(stimulus.rows.map(r=>Number(r[1])-Number(r[2])),[100,60]);assert.equal((100-60)/100,.4);assert.equal(question.correctIndex,3);break;
+  case 'sustainable-tourism-retention':assert.deepEqual(stimulus.rows.map(r=>r.slice(1).map(Number)),[[1000,10000,3000],[800,12000,6000]]);assert.deepEqual(stimulus.rows.map(r=>Number(r[3])/Number(r[2])),[.3,.5]);assert.equal(6000-3000,3000);assert.equal(question.correctIndex,0);break;
+  case 'sustainable-multidimensional-dashboard':assert.deepEqual(stimulus.rows.map(r=>r.slice(1).map(Number)),[[40,80],[10,15],[100,150]]);assert.deepEqual(stimulus.rows.map(r=>Number(r[2])-Number(r[1])),[40,5,50]);assert.equal(question.correctIndex,1);break;
+  case 'sustainable-visitor-routes':assert.deepEqual(stimulus.regions[0].polygon,[[40,15],[60,15],[60,45],[40,45]]);assert.deepEqual(stimulus.paths.map(p=>p.points),[[[10,30],[50,30],[90,30]],[[10,30],[30,8],[70,8],[90,30]]]);assert.equal(question.correctIndex,2);break;
   case 'reasoning':break;
   default:throw Error('Unknown verification model: '+review.check.type);
  }

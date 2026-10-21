@@ -173,6 +173,14 @@ test('trade checks recompute comparative costs, tariff arithmetic and debt ratio
  const batch=JSON.parse(readFileSync('src/content/practice/human-geography-7-6.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-7-6.json','utf8'));
  for(const[i,change]of[[0,s=>s.rows[1][2]='2'],[1,s=>s.rows[1][1]='20%'],[2,s=>s.edges[0].from='M'],[3,s=>s.rows[1][2]='100']]){const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));}
 });
+test('restructuring evidence retains job totals, average cost, functional links and inventory-day coverage',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-7-7.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-7-7.json','utf8'));
+ for(const[i,change]of[[0,s=>s.series[1].values[1]=20],[1,s=>s.rows[1][1]='2000'],[2,s=>s.edges[0].to='M'],[3,s=>s.rows[1][1]='100']]){const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));}
+});
+test('sustainable-development evidence retains input substitution, receipt denominators, multidimensional indicators and habitat routes',()=>{
+ const batch=JSON.parse(readFileSync('src/content/practice/human-geography-7-8.json','utf8')),qa=JSON.parse(readFileSync('content-drafts/human-geography/qa/topic-7-8.json','utf8'));
+ for(const[i,change]of[[0,s=>s.rows[1][2]='0'],[1,s=>s.rows[1][2]='6000'],[2,s=>s.rows[2][2]='50'],[3,s=>s.paths[1].points[1]=[50,30]]]){const s=structuredClone(geographyStimuli[batch.questions[i].id]);change(s);assert.throws(()=>verifyGeographyQuestion(batch.questions[i],{...qa.questions[i],stimulusSha256:semanticHash(s)},s));}
+});
 const base={title:'TEST ONLY',description:'Original hypothetical test data; not a published question.',caption:'TEST ONLY',hypothetical:true,attribution:'Original PrepAtlas schematic and synthetic data'};
 const chart={...base,kind:'chart',unitLabel:'People (thousands)',categories:['A','B'],series:[{label:'Year 1',values:[25,50]},{label:'Year 2',values:[50,75]}],max:100};
 const pyramid={...base,kind:'pyramid',unitLabel:'People (thousands)',max:100,cohorts:[{label:'0–14',ageStart:0,ageEnd:14,male:50,female:50},{label:'15–64',ageStart:15,ageEnd:64,male:75,female:75},{label:'65+',ageStart:65,ageEnd:null,male:25,female:25}]};

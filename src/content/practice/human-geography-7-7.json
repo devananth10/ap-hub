@@ -1,0 +1,139 @@
+{
+  "courseId": "human-geography",
+  "unitNumber": 7,
+  "topicId": "topic-7-7",
+  "questions": [
+    {
+      "id": "hug-7-7-001",
+      "prompt": "Which reading of the employment restructuring is correct?",
+      "options": [
+        "Manufacturing gains 30 jobs while services lose 50.",
+        "Total employment falls by 20 because manufacturing declines.",
+        "Manufacturing loses 30 jobs, services gain 50 and total employment rises by 20.",
+        "All 30 former manufacturing workers must now hold the new service jobs."
+      ],
+      "correctIndex": 2,
+      "explanation": "Manufacturing employment changes from 80 to 50, a loss of 30, while services change from 20 to 70, a gain of 50. Totals rise from 100 to 120, or 20 jobs. The sector counts show restructuring but do not identify individual workers’ transitions, wage changes or manufacturing output; those require separate records. A: Both sector directions are reversed. B: Service gains exceed manufacturing losses, making the total larger. C: This correctly combines the two sector changes. D: Aggregate counts do not follow the same individuals or establish who obtained new jobs."
+    },
+    {
+      "id": "hug-7-7-002",
+      "prompt": "What cost comparison is consistent with economies of scale over this output range?",
+      "options": [
+        "Average cost falls from 10 to 8 units per product even though total cost rises.",
+        "Average cost rises from 8 to 10 because total cost rises.",
+        "Total cost falls by 20% because average cost falls by 20%.",
+        "The larger output guarantees larger profit without any selling-price information."
+      ],
+      "correctIndex": 0,
+      "explanation": "Average cost is total cost divided by output: 1000/100 = 10 and 1600/200 = 8. Average cost falls 20% while total cost rises by 600. This is consistent with economies of scale in the stated range, but does not prove that increasing scale indefinitely will continue lowering cost or that revenue exceeds total cost. A: This calculates the two averages and distinguishes them from totals. B: The averages are reversed. C: The total rises rather than falls. D: Profit also requires revenue or selling-price information."
+    },
+    {
+      "id": "hug-7-7-003",
+      "prompt": "What geographic organization is illustrated by the allocation of functions?",
+      "options": [
+        "Each place performs every function independently without exchange.",
+        "The arrows establish equal wages and control at all three locations.",
+        "Assembly necessarily captures all income from design and marketing.",
+        "A spatial division of production functions linked through knowledge and shipment networks."
+      ],
+      "correctIndex": 3,
+      "explanation": "Design, assembly and sales can be distributed among different locations and connected through information and goods flows. This illustrates an international or interregional division of labor. The allocation alone does not quantify wages, profits, control or local spillovers; these require evidence about firms, institutions and working conditions. A: The diagram explicitly separates functions and connects them. B: Flow direction does not measure pay or bargaining power. C: Income capture depends on ownership and contracts, not assembly location alone. D: This describes the supplied functional and spatial links."
+    },
+    {
+      "id": "hug-7-7-004",
+      "prompt": "If no deliveries arrive for three days, which inventory can cover the full three days of planned production?",
+      "options": [
+        "Both, because their daily requirements are identical.",
+        "Only Standard: its stock covers 5 days, while Lean covers 2 days and lacks 20 units for the third day.",
+        "Only Lean: 40 units cover more days than 100 at the same daily requirement.",
+        "Neither, because any delivery interruption consumes all stock immediately."
+      ],
+      "correctIndex": 1,
+      "explanation": "Standard has 100/20 = 5 days of input, while Lean has 40/20 = 2 days. Three days require 60 units, so Standard can cover them and retain 40; Lean is short 20 for the third day. A smaller inventory can reduce carrying costs but provides less buffer under these explicit assumptions. Actual just-in-time systems may use other resilience strategies. A: Equal consumption rates do not make unequal stocks last the same time. B: This correctly computes coverage and the shortage. C: At the same usage rate the smaller stock covers fewer days. D: Existing stock can support production until it is exhausted."
+    },
+    {
+      "id": "hug-7-7-005",
+      "prompt": "Which production arrangement most closely illustrates a post-Fordist tendency?",
+      "options": [
+        "Flexible batches and specialized supplier networks responding to differentiated demand.",
+        "Only one permanently unchanged product made in identical quantities regardless of demand.",
+        "A rule that every task must occur in one self-contained national factory.",
+        "A complete end to all mass production everywhere."
+      ],
+      "correctIndex": 0,
+      "explanation": "Post-Fordist descriptions commonly emphasize flexibility, differentiated products, specialized networks and adaptable organization rather than only standardized mass production. These are tendencies that can coexist with large-scale production and older methods. The label does not imply that every firm has changed in the same way or that all production has become small-scale. A: This identifies the relevant organizational tendency. B: That describes rigid standardization rather than the flexible contrast. C: Networked production can distribute tasks among firms and places. D: Mass and flexible production can coexist."
+    },
+    {
+      "id": "hug-7-7-006",
+      "prompt": "A company contracts payroll work to an independent firm in the same country. Which distinction is correct?",
+      "options": [
+        "This is necessarily offshoring because all contracting crosses a border.",
+        "It cannot be outsourcing unless a factory closes.",
+        "It is outsourcing, while offshoring would specifically involve relocating activity across national borders.",
+        "It is identical to moving work abroad to a company-owned subsidiary in every ownership respect."
+      ],
+      "correctIndex": 2,
+      "explanation": "Outsourcing transfers a function to an external provider, and the provider may be domestic or foreign. Offshoring concerns the international location of activity and can occur within one company or through a contractor. Ownership boundaries and national borders are separate dimensions, so the scenario establishes outsourcing but not offshoring. A: The provider is explicitly domestic. B: Outsourcing can concern services without a factory closure. C: This correctly separates the organizational and geographic dimensions. D: An independent domestic provider differs from a foreign company-owned unit in both location and ownership."
+    },
+    {
+      "id": "hug-7-7-007",
+      "prompt": "Why might a government designate an export-processing zone with specialized infrastructure and selected incentives?",
+      "options": [
+        "To ensure every product is consumed only within the zone.",
+        "To attract export-oriented production and investment, although local benefits depend on linkages, conditions and implementation.",
+        "To guarantee that no foreign company can operate there.",
+        "To make labor conditions and environmental impacts identical in every zone worldwide."
+      ],
+      "correctIndex": 1,
+      "explanation": "Export-processing zones seek to attract production connected to external markets through a designated policy and infrastructure environment. Outcomes depend on investment, local supplier links, skill development, labor conditions and institutions. A zone designation does not automatically establish universal benefits, local value capture or one uniform regulatory arrangement. A: Export orientation concerns external markets rather than exclusively local consumption. B: This states the purpose and relevant qualifications. C: Such zones can seek foreign investment rather than necessarily exclude it. D: Zone rules and outcomes vary by jurisdiction and implementation."
+    },
+    {
+      "id": "hug-7-7-008",
+      "prompt": "A new industrial employer purchases locally and its workers spend some earnings in nearby shops. What process can create additional local activity?",
+      "options": [
+        "A guarantee that every wage unit remains in the region forever.",
+        "A population census that fixes the number of suppliers.",
+        "The elimination of all imports and all leakage.",
+        "Multiplier effects through supplier demand and subsequent spending, limited by leakage and local capacity."
+      ],
+      "correctIndex": 3,
+      "explanation": "Direct activity can support indirect demand for suppliers and further activity through worker spending. The scale depends on what is purchased locally, savings, taxes, imports and available capacity. A multiplier mechanism is therefore not an infinite expansion or a guarantee that all benefits stay in the host region. A: Spending can leave the area or be saved. B: A census does not fix economic linkages. C: Imports and other leakages can remain. D: This identifies the spending channels and their limits."
+    },
+    {
+      "id": "hug-7-7-009",
+      "prompt": "What distinguishes agglomeration from economies of scale within one firm?",
+      "options": [
+        "Agglomeration concerns benefits from proximity among activities; firm-level scale economies concern lower average cost as one operation expands.",
+        "Agglomeration requires all firms to merge into one owner.",
+        "Economies of scale mean a city’s population must double whenever one firm expands.",
+        "Both terms describe only physical distance and never production organization."
+      ],
+      "correctIndex": 0,
+      "explanation": "Agglomeration can involve shared suppliers, knowledge or labor among nearby firms and institutions. Economies of scale refer to how average costs change as a particular operation’s output grows. The mechanisms can interact, but proximity among activities and scale within an operation are not interchangeable explanations. A: This identifies the different units and mechanisms. B: Separate firms can benefit from proximity without merging. C: A firm’s output change does not determine an exact city population change. D: Organization, sharing and cost structure are central to the concepts."
+    },
+    {
+      "id": "hug-7-7-010",
+      "prompt": "A technology-oriented growth pole is established, but most suppliers and specialist workers come from elsewhere. What should evaluation examine?",
+      "options": [
+        "Only the announcement of the project, treating it as realized regional development.",
+        "Only the number of office towers, without employment or linkage evidence.",
+        "Local supplier connections, skills, access to jobs and where earnings and profits are spent or retained.",
+        "An assumption that nearby residence guarantees entry into every specialist job."
+      ],
+      "correctIndex": 2,
+      "explanation": "A concentrated investment may stimulate surrounding development, but spillovers depend on actual linkages and access. Imported inputs, commuting and external ownership can direct gains elsewhere. Evaluating local capacity, employment pathways and retained activity helps test the growth-pole mechanism rather than treating location alone as proof of broad benefits. A: An announcement is an input rather than an observed outcome. B: Buildings do not establish who gains or how firms connect locally. C: These measures address the hypothesized local spillovers. D: Qualifications, hiring, transport and other conditions affect access."
+    },
+    {
+      "id": "hug-7-7-011",
+      "prompt": "Why can manufacturing employment decline while manufacturing output rises?",
+      "options": [
+        "Employment and output must always change in exactly the same proportion.",
+        "Higher labor productivity, automation or changed task allocation can produce more output with fewer counted manufacturing jobs.",
+        "Every service job is necessarily recorded as a manufacturing job.",
+        "Output is defined as the count of employed workers, so the comparison is impossible."
+      ],
+      "correctIndex": 1,
+      "explanation": "Output and employment are different quantities. Technology, productivity and reorganization can alter the labor required per unit or move support tasks to service providers. Evidence is needed to distinguish these mechanisms from relocation or reduced demand. A job decline alone therefore is not a complete measure of productive capacity or worker outcomes. A: Productivity and organization can change their relationship. B: This identifies plausible mechanisms without claiming one is proven. C: Statistical sector definitions can separate service from manufacturing work. D: Output measures produced goods or value rather than simply counting workers."
+    }
+  ]
+}

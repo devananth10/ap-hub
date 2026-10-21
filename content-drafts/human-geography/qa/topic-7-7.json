@@ -1,0 +1,143 @@
+{
+  "topicNumber": "7.7",
+  "status": "passed",
+  "humanReviewPerformed": false,
+  "semanticSha256": "5bcbb15e220610ddfdaca8a89ac813bdcdc27c116ed037a1282e4905ad03182f",
+  "scopeReview": "PSO-7.A.5–7: restructuring, outsourcing/offshoring, production zones, international division of labor, post-Fordism, scale/agglomeration, just-in-time, multiplier effects and high-tech growth poles.",
+  "varietyReview": "Four assessed original stimuli: sector job chart, average-cost account, design/assembly network and inventory interruption. Additional applications distinguish organizational/geographic changes and local spillover conditions.",
+  "repetitionReview": "Avoids equating job decline with output decline, outsourcing with offshoring, internal scale with external proximity or any zone with guaranteed local gains. Inventory assumptions explicit; varied keys and detailed options. Difficulty uncalibrated.",
+  "researchReferences": [
+    "https://apcentral.collegeboard.org/media/pdf/ap-human-geography-course-and-exam-description.pdf",
+    "https://www.ilo.org/publications/linking-jobs-global-supply-chains-demand",
+    "https://www.ilo.org/supplychains",
+    "https://www.ilo.org/publications/automation-employment-and-reshoring-case-studies-apparel-and-electronics"
+  ],
+  "referenceNote": "Official scope and primary ILO production/task/employment analysis checked. Synthetic accounts and original diagrams only; no actual firm/worker claims, outside lesson import or independent human review.",
+  "questions": [
+    {
+      "questionId": "hug-7-7-001",
+      "skill": "Data Analysis",
+      "difficulty": "intermediate",
+      "correctOption": "Manufacturing loses 30 jobs, services gain 50 and total employment rises by 20.",
+      "independentReview": "Independently80+20=100,50+70=120,changes−30/+50/+20. Jobsnonoverlapcompleteaccount; no claim joblossimpliesoutputdecline or equaljobquality.",
+      "check": {
+        "type": "restructuring-employment"
+      },
+      "questionSha256": "b8c2b1eea1d8a1862731675a9c4a0ed30860d390a99582b8b0db8d103d2383df",
+      "stimulusSha256": "7a43913ad33d327a900dd644d095501005c1c3112d3c97a115c0dbf9e315f7c9"
+    },
+    {
+      "questionId": "hug-7-7-002",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Average cost falls from 10 to 8 units per product even though total cost rises.",
+      "independentReview": "Independentcostratios10/8,totalrise600,average20%fall. Sameproduct/time/currency, no distributioncosts doublecounted and no indefiniteextrapolation.",
+      "check": {
+        "type": "restructuring-scale-cost"
+      },
+      "questionSha256": "a3dafbd1b5dd1cd5256d12886d8a46a438fc3a9dd566fa35736652b9eb50935d",
+      "stimulusSha256": "40b2a773f9561ce512ccdea104f23c98eec6f163b0319068e20e0d6dedd8e886"
+    },
+    {
+      "questionId": "hug-7-7-003",
+      "skill": "Spatial Relationships",
+      "difficulty": "intermediate",
+      "correctOption": "A spatial division of production functions linked through knowledge and shipment networks.",
+      "independentReview": "DirectedD→Aknowledge andA→Mgoods verified. Labels identifyfunctionsnotnationaldevelopmentcategories; no actualcountrywageassignment.",
+      "check": {
+        "type": "restructuring-functional-network"
+      },
+      "questionSha256": "9b893a33f4cd70d70bffe8677ac3edb7496fbc22ba07dce499c8c85b60f60ad7",
+      "stimulusSha256": "28f65dbb9c93ebf41a073ec526945e1b66927d0a6868bf0f59a3f744c377688f"
+    },
+    {
+      "questionId": "hug-7-7-004",
+      "skill": "Data Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Only Standard: its stock covers 5 days, while Lean covers 2 days and lacks 20 units for the third day.",
+      "independentReview": "Independently100/20=5 and40/20=2,three-dayneed60;leanmissing20 notnegativephysicalstock. Fixeduse/nootherarrivals/substitutes,notclaimallJITsystemsinevitablyfail.",
+      "check": {
+        "type": "restructuring-inventory-buffer"
+      },
+      "questionSha256": "3250e3db45b16e1d57c5c1962ec103f734bca44a3bb615002192d30dc8061230",
+      "stimulusSha256": "cd636f533209be555962e62b327674083968bb3a9eae4de5c6a1c8472452bfe9"
+    },
+    {
+      "questionId": "hug-7-7-005",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Flexible batches and specialized supplier networks responding to differentiated demand.",
+      "independentReview": "OfficialA.7 contrastqualified; no totalreplacementofFordism or oneuniversalcontemporarymethod.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "beb7eb39a48f7a374268809aa576674701d8e919941b5919fb9f0e20b77ea19d"
+    },
+    {
+      "questionId": "hug-7-7-006",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "It is outsourcing, while offshoring would specifically involve relocating activity across national borders.",
+      "independentReview": "Commonoutsourcing/offshoringconfusionexplicitlyresolved. No assumptionallexternalproviderworkislowwage.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "1145238564f225413458ff5e4160e953f0b7074d667e2ebfbb6d909e82f2f544"
+    },
+    {
+      "questionId": "hug-7-7-007",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "To attract export-oriented production and investment, although local benefits depend on linkages, conditions and implementation.",
+      "independentReview": "Noactualzonelegalterms/taxratesasserted. DistinguishesEPZexportorientationfromallSEZhavingidenticalfunctions.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "beb38901b09144cc42211c957ca9bb6624c4d9332ad5779c955c6ff55e36ff92"
+    },
+    {
+      "questionId": "hug-7-7-008",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Multiplier effects through supplier demand and subsequent spending, limited by leakage and local capacity.",
+      "independentReview": "Noinventedmultipliercoefficientorindefinitesum; direct/indirect/inducedchannelsqualifiedandnotdoublecounted.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "111395d29f40b8c13d8c9ddcd37b05fffc054bf0a441faf2eaab31fd2748d5ec"
+    },
+    {
+      "questionId": "hug-7-7-009",
+      "skill": "Concepts and Processes",
+      "difficulty": "challenging",
+      "correctOption": "Agglomeration concerns benefits from proximity among activities; firm-level scale economies concern lower average cost as one operation expands.",
+      "independentReview": "Distinctfrom7.2clusteringapplication: hereexplicitunit-of-analysiscomparisonwithinternalaveragecost, notnumber-onlyduplicate.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "71db08202c37343fa6b3d9e0084acc4ddc36ad1937634c158112e7c997c0794c"
+    },
+    {
+      "questionId": "hug-7-7-010",
+      "skill": "Source Analysis",
+      "difficulty": "challenging",
+      "correctOption": "Local supplier connections, skills, access to jobs and where earnings and profits are spent or retained.",
+      "independentReview": "Noactualjobeligibilitydecision. Evaluateshypothesizedgrowthpolenetworkratherthanclaimingallclusterssharebenefits.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d09088eecd2f6d8431988867a7d2ba79360cbffb8e94bf111891ac972ec40905"
+    },
+    {
+      "questionId": "hug-7-7-011",
+      "skill": "Concepts and Processes",
+      "difficulty": "intermediate",
+      "correctOption": "Higher labor productivity, automation or changed task allocation can produce more output with fewer counted manufacturing jobs.",
+      "independentReview": "Noassertionautomationexplainsalljoblossor outputalwaysrisesduringdeindustrialization. Originalmeasurementmechanismcase.",
+      "check": {
+        "type": "reasoning"
+      },
+      "questionSha256": "d5a64e974c34fda5a57895057d2b26fce6b197603c4a29a718d7a0f82c3b04b8"
+    }
+  ]
+}

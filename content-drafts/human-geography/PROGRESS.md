@@ -1,8 +1,8 @@
 # AP Human Geography progress
 
-Published **726/748 MCQs across 66/68 topics**. Exactly eleven per completed topic; incomplete topics remain empty. No unresolved item is published. No independent human review.
+Published **748/748 MCQs across 68/68 topics**. Exactly eleven per completed topic; incomplete topics remain empty. No unresolved item is published. No independent human review.
 
-Stimulus questions: **264 (36.36%)**; target 35–40% when the bank is complete. By type: {"map:choropleth":21,"map:dot":9,"map:isoline":1,"map:reference":30,"table":118,"chart":50,"map:flow":13,"model":17,"pyramid":3,"map:proportional":2}. Explicit evidence/numerical/geometry checks: 281; other questions have recorded reasoning reviews.
+Stimulus questions: **272 (36.36%)**; target 35–40% when the bank is complete. By type: {"map:choropleth":21,"map:dot":9,"map:isoline":1,"map:reference":31,"table":123,"chart":51,"map:flow":13,"model":18,"pyramid":3,"map:proportional":2}. Explicit evidence/numerical/geometry checks: 289; other questions have recorded reasoning reviews.
 
 Completed topics:
 - 1.1: eleven published questions; topic-1-1
@@ -71,9 +71,13 @@ Completed topics:
 - 7.4: eleven published questions; topic-7-4
 - 7.5: eleven published questions; topic-7-5
 - 7.6: eleven published questions; topic-7-6
+- 7.7: eleven published questions; topic-7-7
+- 7.8: eleven published questions; topic-7-8
 
-Next topic: **7.7**. Remaining: 7.7, 7.8. Resume in official order; do not regenerate completed questions. No pending graphic assets for published topics. Read QA files, rerun validation/browser checks and inspect Git status before continuing.
+Next topic: **none**. Remaining: none. Resume in official order; do not regenerate completed questions. No pending graphic assets for published topics. Read QA files, rerun validation/browser checks and inspect Git status before continuing.
 
 Course/video foundation checkpoint: cb53a849201db7b863bfeec26e508dec82c12b8a, verified on GitHub. All 68 topics have both instructors (136 videos), thirteen unmapped extras remain unpublished. Preserve video mappings, notes, instructor preference, watched tracking, feedback and all existing Chemistry/Calculus content. No public deployment or paid API.
 
 Exact IDs: research/official-topics.json. Shared stimulus schema: ../../docs/GEOGRAPHY_STIMULI.md. Verification limits: PROGRESS.json and individual QA. Later GitHub receipts are verified after committing, never invented beforehand.
+
+Completion audit: see BANK_AUDIT.md. All68 topics/748 questions complete, zero withheld. Next development phase: docs/NEXT_DEVELOPMENT_PHASE.md, after verified GitHub checkpoint. Do not regenerate completed sets.
