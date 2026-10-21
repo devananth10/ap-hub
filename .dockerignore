@@ -1,0 +1,27 @@
+# Allowlist the build context. Local secrets, progress, feedback databases,
+# Git history, drafts, logs, dependencies and generated output never enter it.
+**
+!Dockerfile
+!.dockerignore
+!package.json
+!pnpm-lock.yaml
+!next.config.ts
+!next-env.d.ts
+!postcss.config.mjs
+!tsconfig.json
+!src
+!src/**
+!public
+!public/**
+
+# Defense in depth, including files accidentally placed inside src/public.
+**/.env*
+**/*.pem
+**/*.key
+**/*.sqlite
+**/*.sqlite-*
+**/*.db
+**/*.db-*
+**/*.log
+**/node_modules
+**/.git

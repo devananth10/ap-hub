@@ -31,6 +31,8 @@ Guest study works over the LAN. Existing account origin checks and OAuth redirec
 
 ## What works
 
+For a separate local production container on port 3001, see [Docker setup](docs/DOCKER.md). The existing development preview and hosted Supabase project are preserved.
+
 - Dashboard, selectable course outlines, search, unit/topic navigation, and the primary AP Chemistry example workspace.
 - Optional notes, hidden until opened, with local autosave and a notes library.
 - Local course selections, official resource bookmark IDs, completion tracking, last topic, and light/dark mode.

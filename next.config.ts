@@ -8,6 +8,8 @@ const localNetworkHosts = Object.values(networkInterfaces()).flatMap((addresses)
   ).map(({ address }) => address)
 );
 const nextConfig: NextConfig = {
+  // Docker builds opt in; ordinary Windows builds and the live preview are unchanged.
+  output: process.env.PREPATLAS_STANDALONE === "1" ? "standalone" : undefined,
   devIndicators: false,
   allowedDevOrigins: ["127.0.0.1", ...localNetworkHosts],
   // Keep the live development preview separate from production build output.
