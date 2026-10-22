@@ -1,0 +1,12 @@
+# Build an account-configured image for both Docker Desktop and Raspberry Pi.
+# Combine with compose.yaml and --env-file .env.local; do not use this alone.
+services:
+  app:
+    image: api.repoflow.io/prepatlas/prepatlas/studyhub-app:latest
+    build:
+      platforms:
+        - linux/amd64
+        - linux/arm64
+      args:
+        NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL:?Configure NEXT_PUBLIC_SUPABASE_URL in .env.local before publishing}
+        NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY:?Configure NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY in .env.local before publishing}

@@ -60,6 +60,36 @@ The container's `APP_ORIGIN` is explicitly set to `http://127.0.0.1:3001`, match
 
 **Registration remains disabled by Compose.** Existing email/password accounts may sign in after configuration. OAuth and email recovery for this new origin require separately reviewed exact Supabase callback/redirect URLs before testing; this task does not alter provider settings. The current Google-registration gate is retained. Use a separate browser profile for initial container testing: cookies can be shared across ports on the same hostname.
 
+## Configured Raspberry Pi image
+
+The message "Cloud accounts are not configured yet" means the app rejected or lacks account configuration; it does not mean the student database was deleted. The Pi's `/api/account` returned `configured: false` during diagnosis. A common cause is rebuilding with `docker buildx --build-arg NAME` without first exporting the named variable: that does not load `.env.local`. Next embeds the two public settings when building, so adding `--env-file` only to `docker run` cannot repair an image built without them.
+
+From the Windows project folder, the following loads `.env.local` directly through Compose, requires both public build settings, builds AMD64 and ARM64, and uploads to the existing registry tag:
+
+```powershell
+docker compose --env-file .env.local -f compose.yaml -f compose.publish.yaml build --push app
+```
+
+If authentication to the registry is needed, run `docker login api.repoflow.io` locally. Do not paste registry credentials into chat. This publishes an image, not a publicly accessible website. The public client key is intended for browser use; server secrets remain runtime-only. Do not replace it with a secret/service-role key. Never share expanded Compose output. The base guest-only build remains supported; the publish override deliberately refuses missing public settings.
+
+After a verified successful build/upload, replace only the Pi's existing app container, preserving `studyhub_feedback`:
+
+```bash
+docker pull api.repoflow.io/prepatlas/prepatlas/studyhub-app:latest
+# Continue only if the pull succeeds. Keep the Pi's current runtime .env.local.
+docker stop prepatlas && docker rm prepatlas && docker run -d --name prepatlas --restart unless-stopped --init --cap-drop ALL --security-opt no-new-privileges:true -p 127.0.0.1:3001:3000 -p 192.168.86.26:3001:3000 --env-file .env.local -e APP_ORIGIN=http://127.0.0.1:3001 -e APP_REGISTRATION_ENABLED=false --mount type=volume,source=studyhub_feedback,target=/app/data api.repoflow.io/prepatlas/prepatlas/studyhub-app:latest
+```
+
+The Pi address above must match its current LAN IP. Never remove/prune the named volume. Browser guest progress remains at its original address; do not import it automatically when changing addresses.
+
+Account actions remain restricted to the canonical loopback origin. For private email-account testing from a Windows browser without changing provider settings or allowing LAN HTTP authentication, first ensure local port 3001 is free, then keep this SSH tunnel running in a Windows terminal:
+
+```powershell
+ssh -N -o ExitOnForwardFailure=yes -L 127.0.0.1:3001:127.0.0.1:3001 admin@192.168.86.26
+```
+
+Enter an SSH password only in your own terminal when prompted. Open `http://127.0.0.1:3001/login` in a separate browser profile to avoid mixing this origin's Windows-container guest data/cookies. The tunnel must use the same local port as `APP_ORIGIN`; substituting another local port will fail origin checks. Google sign-in remains closed, and provider callback/recovery URLs still need separate review. A normal HTTPS setup is required for account testing directly at a shared network address. Do not bypass origin validation, weaken cookie security, or enable registration to hide this configuration problem.
+
 ## Persistent data
 
 - Cloud notes, selections, watched state, completion, bookmarks and finished scores stay in the existing Supabase account.
@@ -103,5 +133,13 @@ The multi-stage Dockerfile uses the lockfile and pinned pnpm version, Next stand
 - Windows rejected creating the scoped firewall rule with **Access is denied**. The administrator command above remains owner-required if another home device cannot connect. A request from this computer to its own LAN address does not verify inbound firewall access from a second device.
 - The LAN milestone passed TypeScript and a fresh native production build. The first restricted build encountered a Windows `EPERM` while creating generated output; the authorized retry completed successfully without changing application code or the running container.
 - **Pending:** authenticated container flows and cross-device browser verification. Native standalone checks do not certify live authentication or two-device synchronization.
+
+## Pi account-configuration diagnosis
+
+- The running Pi endpoint returned HTTP 200 with `configured: false` and registration closed. This confirms the disabled account UI; the Pi's environment and build history were not accessible over SSH, so the exact missing/invalid value there remains unverified.
+- The configured publish override resolved both required public variables from the local Windows `.env.local`, retained only those two build arguments, targeted AMD64/ARM64 and kept registration false. Values were not printed.
+- A local configured Docker build succeeded. In a temporary container with no network access, published ports or student volumes, `/api/account` returned HTTP 200, `configured: true`, `registration: false`, and no signed-in user. The temporary container was removed and existing containers were preserved. This verifies configuration recognition, not live Supabase sign-in or synchronization.
+- Both missing-variable refusal checks passed. TypeScript, the native production build and the existing read-only route/CSS/artwork smoke suite against the Pi passed. No live login, account writes or student migration were performed.
+- The registry upload was not performed: automatic approval review required explicit authorization to export the rebuilt application image to the external registry. The configured image has not been installed on the Pi. No Supabase settings, schema, RLS, student data or registration gates were changed.
 
 References: [Docker multi-stage builds](https://docs.docker.com/build/building/multi-stage/), [build context exclusions](https://docs.docker.com/build/concepts/context/), [Compose environment configuration](https://docs.docker.com/compose/how-tos/environment-variables/set-environment-variables/), [Next standalone output](https://nextjs.org/docs/app/api-reference/config/next-config-js/output).
