@@ -1,0 +1,6 @@
+# Combine with compose.yaml. Publish only the chosen Wi-Fi IPv4 address,
+# preserving the base file's loopback mapping and existing data volume.
+services:
+  app:
+    ports:
+      - "${PREPATLAS_LAN_IP:?Set PREPATLAS_LAN_IP to this computer's Wi-Fi IPv4 address}:${PREPATLAS_DOCKER_PORT:-3001}:3000"

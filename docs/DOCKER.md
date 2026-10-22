@@ -4,7 +4,7 @@ This packages the existing app as a Node 24 production server. It does not deplo
 
 ## Prerequisite
 
-Install/start [Docker Desktop for Windows](https://docs.docker.com/desktop/setup/install/windows-install/) with **Linux containers** and Docker Compose v2. Docker Desktop/WSL were not installed on this computer during implementation. Their installation may require Windows administrator access and a restart. No installer or Windows features were changed automatically.
+Install/start [Docker Desktop for Windows](https://docs.docker.com/desktop/setup/install/windows-install/) with **Linux containers** and Docker Compose v2. Docker Desktop is now installed and the PrepAtlas Linux container is running on this computer.
 
 Check `docker version` and `docker compose version` before continuing.
 
@@ -17,7 +17,30 @@ docker compose up --build -d
 docker compose ps
 ```
 
-Open **http://127.0.0.1:3001/**. The existing development preview remains at port 3000. Compose binds only to this computer's loopback address. No router/firewall changes or public tunnel are required.
+Open **http://127.0.0.1:3001/** on this computer. The container uses a separate port from the development preview on 3000; it does not start that development server. The base configuration accepts computer-only connections.
+
+## Home-network preview
+
+To add the specific Wi-Fi IPv4 address while retaining computer-only access, run in PowerShell:
+
+```powershell
+$env:PREPATLAS_LAN_IP = '192.168.86.28'
+docker compose --env-file .env.local -f compose.yaml -f compose.lan.yaml up -d --no-build app
+```
+
+Then open **http://192.168.86.28:3001/** on another device connected to the same home network. The Wi-Fi address can change when reconnecting; update `PREPATLAS_LAN_IP` accordingly. Keep both `-f` arguments and the same address on subsequent LAN recreation commands. Add `--build` when updating application source. To return to computer-only access, run the base `docker compose --env-file .env.local up -d --no-build app` command.
+
+This binds the requested Wi-Fi address rather than every network interface. No router port forwarding or public tunnel is needed or authorized. Windows Firewall may require an administrator-created inbound TCP 3001 rule limited to the local subnet; do not disable the firewall.
+
+If another home device still cannot connect, open **PowerShell as administrator** and run this once (update the address if it changes):
+
+```powershell
+New-NetFirewallRule -Name 'PrepAtlas-Docker-LAN-3001' -DisplayName 'PrepAtlas Docker home-network preview (3001)' -Direction Inbound -Action Allow -Protocol TCP -LocalPort 3001 -LocalAddress 192.168.86.28 -RemoteAddress LocalSubnet -InterfaceAlias 'Wi-Fi' -Profile Any
+```
+
+This permits only local-subnet devices through Wi-Fi to that address/port, including when Windows labels the home Wi-Fi as Public. It does not change the network profile. Remove it later with `Remove-NetFirewallRule -Name 'PrepAtlas-Docker-LAN-3001'` in administrator PowerShell if no longer needed.
+
+LAN HTTP is for guest study preview. Authenticated writes remain protected by the existing canonical-origin checks, and account actions from the LAN address are not supported by this change. Continue using the configured loopback origin for local account testing. Secure cross-device authentication requires a separately configured HTTPS origin and reviewed provider redirects; do not loosen those checks to enable HTTP sign-in.
 
 Without Supabase variables the normal guest experience remains available. Next.js loads no local environment files into the image. Compose does not automatically read `.env.local`.
 
@@ -71,10 +94,14 @@ The multi-stage Dockerfile uses the lockfile and pinned pnpm version, Next stand
 
 ## Verification recorded October 21, 2026
 
-- Native TypeScript, production build, all 230 unit/account tests, and development preview route/account smoke checks passed; the original preview remains running.
-- Compose YAML passed the official Compose Specification JSON schema, plus checks for local-only binding, persistent feedback, closed registration and public-only build arguments. No actual environment values were expanded for this validation.
+- During initial packaging, native TypeScript, production build, all 230 unit/account tests, and development preview route/account smoke checks passed; the original preview was preserved at that time. At the later LAN diagnosis, no server was listening on 3000; the existing Docker container on 3001 was the running app.
+- Compose YAML passed the official Compose Specification JSON schema, plus checks for persistent feedback, closed registration and public-only build arguments. The later optional LAN override adds one explicit Wi-Fi address while retaining loopback access. No actual environment values were displayed for this validation.
 - The Node image tag and pinned pnpm package were confirmed available from their official registries.
 - A separate allowlisted copy, with no environment files, generated Next standalone output on Windows. Its production server passed the route/CSS/artwork and production-mode account smoke suites; the sign-in form hydrated in the browser and correctly disabled unconfigured cloud controls. That temporary server/copy was stopped/removed afterwards.
-- **Pending:** actual Docker/Linux image build/run, container health/non-root/volume persistence and authenticated container flows. Docker Desktop and WSL were unavailable. Native standalone checks are not a claim that these Docker checks passed.
+- The owner subsequently installed Docker Desktop and built/started the Linux image. The existing container was observed healthy and served the home page with HTTP 200 before the LAN binding correction.
+- After recreating only the existing app container with the LAN override, Docker reported healthy, running as `node`, with exactly loopback and `192.168.86.28` port-3001 bindings. Home, login, signup, account and progress returned HTTP 200 at both addresses from this computer. The route/CSS/artwork smoke suite passed at the LAN address. Account smoke passed at the canonical loopback origin; its redirect-origin assertion intentionally does not match the LAN guest address.
+- Windows rejected creating the scoped firewall rule with **Access is denied**. The administrator command above remains owner-required if another home device cannot connect. A request from this computer to its own LAN address does not verify inbound firewall access from a second device.
+- The LAN milestone passed TypeScript and a fresh native production build. The first restricted build encountered a Windows `EPERM` while creating generated output; the authorized retry completed successfully without changing application code or the running container.
+- **Pending:** authenticated container flows and cross-device browser verification. Native standalone checks do not certify live authentication or two-device synchronization.
 
 References: [Docker multi-stage builds](https://docs.docker.com/build/building/multi-stage/), [build context exclusions](https://docs.docker.com/build/concepts/context/), [Compose environment configuration](https://docs.docker.com/compose/how-tos/environment-variables/set-environment-variables/), [Next standalone output](https://nextjs.org/docs/app/api-reference/config/next-config-js/output).
