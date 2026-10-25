@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850" role="img" aria-labelledby="title desc">
+<title id="title">3. Where pages, videos and student data live</title>
+<desc id="desc">Three storage places have different jobs: the browser, the Pi disk, and the Supabase database. Straight lines connect labeled rectangular components. Dashed lines indicate an unverified, disabled or proposed connection.</desc>
+<rect x="0" y="0" width="1200" height="850" fill="#FFFFFF" stroke="none" stroke-width="1.3"/>
+<text x="50" y="45" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#217462">PREPATLAS / SYSTEM ARCHITECTURE</text>
+<text x="50" y="89" font-family="Arial,Helvetica,sans-serif" font-size="32" font-weight="700" text-anchor="start" fill="#193C37">3. Where pages, videos and student data live</text>
+<text x="50" y="123" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#52655F">Three storage places have different jobs: the browser, the Pi disk, and the Supabase database.</text>
+<text x="50" y="175" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#217462">BROWSER</text>
+<text x="455" y="175" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#217462">RASPBERRY PI</text>
+<text x="860" y="175" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#217462">SUPABASE CLOUD</text>
+<rect x="50" y="205" width="290" height="190" fill="#EFF6F2" stroke="#217462" stroke-width="1.3"/>
+<text x="68" y="237" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#193C37">PrepAtlas interface</text>
+<text x="68" y="267" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Dashboard and course pages</text>
+<text x="68" y="291" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Study page + optional notes</text>
+<text x="68" y="315" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Practice + grading + scores</text>
+<text x="68" y="339" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Topic summaries + themes</text>
+<text x="68" y="363" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Video tools + browser Auth SDK</text>
+<rect x="455" y="205" width="290" height="190" fill="#EFF6F2" stroke="#217462" stroke-width="1.3"/>
+<text x="473" y="237" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#193C37">PrepAtlas server</text>
+<text x="473" y="267" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Next.js runs on Node.js 24</text>
+<text x="473" y="291" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Pages + authenticated APIs</text>
+<text x="473" y="315" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Bundled original study content</text>
+<text x="473" y="339" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Approved video-link manifest</text>
+<text x="473" y="363" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Input + account checks</text>
+<rect x="860" y="205" width="290" height="190" fill="#EFF6F2" stroke="#217462" stroke-width="1.3"/>
+<text x="878" y="237" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#193C37">Supabase services</text>
+<text x="878" y="267" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Auth: accounts + sessions</text>
+<text x="878" y="291" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Data API: private progress</text>
+<text x="878" y="315" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Recovery + Google OAuth code</text>
+<text x="878" y="339" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Google sign-in remains closed</text>
+<text x="878" y="363" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Registration remains closed</text>
+<rect x="50" y="525" width="290" height="150" fill="#EFF6F2" stroke="#217462" stroke-width="1.3"/>
+<text x="68" y="557" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#193C37">Browser local storage</text>
+<text x="68" y="587" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Guest notes + study progress</text>
+<text x="68" y="611" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Account cache + pending edits</text>
+<text x="68" y="635" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Conflicts preserve both notes</text>
+<rect x="455" y="525" width="290" height="150" fill="#EFF6F2" stroke="#217462" stroke-width="1.3"/>
+<text x="473" y="557" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#193C37">Pi persistent feedback</text>
+<text x="473" y="587" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Reviews + question reports</text>
+<text x="473" y="611" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">SQLite: feedback.sqlite</text>
+<text x="473" y="635" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Volume: studyhub_feedback</text>
+<rect x="860" y="505" width="290" height="190" fill="#EFF6F2" stroke="#217462" stroke-width="1.3"/>
+<text x="878" y="537" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#193C37">Private PostgreSQL data</text>
+<text x="878" y="567" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Profile / notes / courses</text>
+<text x="878" y="591" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Topics / watched videos</text>
+<text x="878" y="615" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Bookmarks / instructor choice</text>
+<text x="878" y="639" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Completed Practice attempts</text>
+<text x="878" y="663" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">RLS: each student owns rows</text>
+<polyline points="340,285 455,285" fill="none" stroke="#8A9E96" stroke-width="1.5"/>
+<polygon points="455,285 446.0,281.0 446.0,289.0" fill="#8A9E96"/>
+<polygon points="340,285 349.0,289.0 349.0,281.0" fill="#8A9E96"/>
+<rect x="359.310546875" y="255" width="75.37890625" height="21" fill="#FFFFFF" stroke="none" stroke-width="1.3"/>
+<text x="397" y="270" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#52655F">page / API</text>
+<polyline points="745,285 860,285" fill="none" stroke="#8A9E96" stroke-width="1.5"/>
+<polygon points="860,285 851.0,281.0 851.0,289.0" fill="#8A9E96"/>
+<polygon points="745,285 754.0,289.0 754.0,281.0" fill="#8A9E96"/>
+<rect x="761.7744140625" y="255" width="80.451171875" height="21" fill="#FFFFFF" stroke="none" stroke-width="1.3"/>
+<text x="802" y="270" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#52655F">auth + data</text>
+<polyline points="195,395 195,525" fill="none" stroke="#8A9E96" stroke-width="1.5"/>
+<polygon points="195,525 199.0,516.0 191.0,516.0" fill="#8A9E96"/>
+<polygon points="195,395 191.0,404.0 199.0,404.0" fill="#8A9E96"/>
+<rect x="111.19873046875" y="450" width="167.6025390625" height="21" fill="#FFFFFF" stroke="none" stroke-width="1.3"/>
+<text x="195" y="465" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#52655F">local save + queued sync</text>
+<polyline points="600,395 600,525" fill="none" stroke="#8A9E96" stroke-width="1.5"/>
+<polygon points="600,525 604.0,516.0 596.0,516.0" fill="#8A9E96"/>
+<polygon points="600,395 596.0,404.0 604.0,404.0" fill="#8A9E96"/>
+<rect x="553.3623046875" y="450" width="93.275390625" height="21" fill="#FFFFFF" stroke="none" stroke-width="1.3"/>
+<text x="600" y="465" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#52655F">feedback API</text>
+<polyline points="1005,395 1005,505" fill="none" stroke="#8A9E96" stroke-width="1.5"/>
+<polygon points="1005,505 1009.0,496.0 1001.0,496.0" fill="#8A9E96"/>
+<polygon points="1005,395 1001.0,404.0 1009.0,404.0" fill="#8A9E96"/>
+<rect x="931.52099609375" y="450" width="146.9580078125" height="21" fill="#FFFFFF" stroke="none" stroke-width="1.3"/>
+<text x="1005" y="465" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#52655F">user-scoped Data API</text>
+<text x="50" y="725" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#52655F">Inside the app image: 2,640 original MCQs + 240 summaries + 319 approved video links. Video files stay on YouTube.</text>
+<rect x="50" y="754" width="1100" height="1" fill="#8A9E96" stroke="none" stroke-width="1.3"/>
+<text x="50" y="781" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#52655F">Browser Auth SDK also refreshes sessions directly with Supabase. Server sync uses RLS, revision checks and stable attempt IDs.</text>
+<text x="50" y="804" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#52655F">Guest data is device/browser-specific. Import requires a choice. Unfinished Practice answers remain session-only. No paid AI API.</text>
+<text x="1150" y="45" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="end" fill="#52655F">3 / 4</text>
+</svg>

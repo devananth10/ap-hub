@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850" role="img" aria-labelledby="title desc">
+<title id="title">4. How PuTTY lets us control the Pi</title>
+<desc id="desc">PuTTY is the remote control. SSH is its encrypted connection. A browser is how a student uses the app. Straight lines connect labeled rectangular components. Dashed lines indicate an unverified, disabled or proposed connection.</desc>
+<rect x="0" y="0" width="1200" height="850" fill="#FFFFFF" stroke="none" stroke-width="1.3"/>
+<text x="50" y="45" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#217462">PREPATLAS / SYSTEM ARCHITECTURE</text>
+<text x="50" y="89" font-family="Arial,Helvetica,sans-serif" font-size="32" font-weight="700" text-anchor="start" fill="#193C37">4. How PuTTY lets us control the Pi</text>
+<text x="50" y="123" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#52655F">PuTTY is the remote control. SSH is its encrypted connection. A browser is how a student uses the app.</text>
+<text x="50" y="175" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#217462">WINDOWS PC</text>
+<text x="455" y="175" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#217462">HOME NETWORK</text>
+<text x="860" y="175" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#217462">RASPBERRY PI</text>
+<rect x="50" y="205" width="290" height="150" fill="#EFF6F2" stroke="#217462" stroke-width="1.3"/>
+<text x="68" y="237" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#193C37">PuTTY / SSH terminal</text>
+<text x="68" y="267" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Owner types Pi commands</text>
+<text x="68" y="291" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Connects as admin</text>
+<text x="68" y="315" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Remote control, not hosting</text>
+<rect x="455" y="205" width="290" height="150" fill="#EFF6F2" stroke="#217462" stroke-width="1.3"/>
+<text x="473" y="237" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#193C37">Home router / Wi-Fi</text>
+<text x="473" y="267" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Carries the local connection</text>
+<text x="473" y="291" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">No public SSH access assumed</text>
+<text x="473" y="315" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Keeps PC and Pi connected</text>
+<rect x="860" y="205" width="290" height="150" fill="#EFF6F2" stroke="#217462" stroke-width="1.3"/>
+<text x="878" y="237" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#193C37">Pi SSH service</text>
+<text x="878" y="267" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">192.168.86.26:22</text>
+<text x="878" y="291" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Verifies host + user login</text>
+<text x="878" y="315" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Runs owner-issued commands</text>
+<polyline points="340,280 455,280" fill="none" stroke="#8A9E96" stroke-width="1.5"/>
+<polygon points="455,280 446.0,276.0 446.0,284.0" fill="#8A9E96"/>
+<polygon points="340,280 349.0,284.0 349.0,276.0" fill="#8A9E96"/>
+<rect x="344.9208984375" y="250" width="104.158203125" height="21" fill="#FFFFFF" stroke="none" stroke-width="1.3"/>
+<text x="397" y="265" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#52655F">encrypted SSH</text>
+<polyline points="745,280 860,280" fill="none" stroke="#8A9E96" stroke-width="1.5"/>
+<polygon points="860,280 851.0,276.0 851.0,284.0" fill="#8A9E96"/>
+<polygon points="745,280 754.0,284.0 754.0,276.0" fill="#8A9E96"/>
+<rect x="771.32421875" y="250" width="61.3515625" height="21" fill="#FFFFFF" stroke="none" stroke-width="1.3"/>
+<text x="802" y="265" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#52655F">TCP :22</text>
+<rect x="50" y="525" width="290" height="150" fill="#EFF6F2" stroke="#217462" stroke-width="1.3"/>
+<text x="68" y="557" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#193C37">Browser on Windows</text>
+<text x="68" y="587" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">127.0.0.1:3001/login</text>
+<text x="68" y="611" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Private login test address</text>
+<text x="68" y="635" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Use a separate browser profile</text>
+<rect x="455" y="525" width="290" height="150" fill="#FFFFFF" stroke="#8A9E96" stroke-width="1.3" stroke-dasharray="6 5"/>
+<text x="473" y="557" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#193C37">Optional SSH tunnel</text>
+<text x="473" y="587" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">OpenSSH or PuTTY forwarding</text>
+<text x="473" y="611" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">PC :3001 -&gt; Pi loopback :3001</text>
+<text x="473" y="635" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Suggested; not verified active</text>
+<rect x="860" y="525" width="290" height="150" fill="#EFF6F2" stroke="#217462" stroke-width="1.3"/>
+<text x="878" y="557" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#193C37">Pi Docker web service</text>
+<text x="878" y="587" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Pi 127.0.0.1:3001</text>
+<text x="878" y="611" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Forwards to app port 3000</text>
+<text x="878" y="635" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Cloud data stays in Supabase</text>
+<polyline points="340,600 455,600" fill="none" stroke="#8A9E96" stroke-width="1.5" stroke-dasharray="6 5"/>
+<polygon points="455,600 446.0,596.0 446.0,604.0" fill="#8A9E96"/>
+<polygon points="340,600 349.0,604.0 349.0,596.0" fill="#8A9E96"/>
+<rect x="362.810546875" y="570" width="68.37890625" height="21" fill="#FFFFFF" stroke="none" stroke-width="1.3"/>
+<text x="397" y="585" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#52655F">proposed</text>
+<polyline points="745,600 860,600" fill="none" stroke="#8A9E96" stroke-width="1.5" stroke-dasharray="6 5"/>
+<polygon points="860,600 851.0,596.0 851.0,604.0" fill="#8A9E96"/>
+<polygon points="745,600 754.0,604.0 754.0,596.0" fill="#8A9E96"/>
+<rect x="747.9794921875" y="570" width="108.041015625" height="21" fill="#FFFFFF" stroke="none" stroke-width="1.3"/>
+<text x="802" y="585" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#52655F">SSH forwarding</text>
+<text x="50" y="446" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#52655F">For shared domain login, a matching HTTPS app origin + reviewed callback URLs are required; verification is pending.</text>
+<text x="50" y="725" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#52655F">PuTTY itself is not needed to serve pages. The Pi and Docker keep the app running after the terminal disconnects.</text>
+<rect x="50" y="754" width="1100" height="1" fill="#8A9E96" stroke="none" stroke-width="1.3"/>
+<text x="50" y="781" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#52655F">Known login issue: LAN HTTP requests did not match the configured loopback origin. A tunnel was suggested for private testing.</text>
+<text x="50" y="804" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#52655F">Public HTTPS reachability is verified; successful domain login, tunnel setup and end-to-end cloud sync are not verified here.</text>
+<text x="1150" y="45" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="end" fill="#52655F">4 / 4</text>
+</svg>

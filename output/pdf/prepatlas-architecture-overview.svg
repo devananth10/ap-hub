@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850" role="img" aria-labelledby="title desc">
+<title id="title">1. How a student reaches PrepAtlas</title>
+<desc id="desc">The browser is the window. The router is the road junction. The Pi is the small computer serving the app. Straight lines connect labeled rectangular components. Dashed lines indicate an unverified, disabled or proposed connection.</desc>
+<rect x="0" y="0" width="1200" height="850" fill="#FFFFFF" stroke="none" stroke-width="1.3"/>
+<text x="50" y="45" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#217462">PREPATLAS / SYSTEM ARCHITECTURE</text>
+<text x="50" y="89" font-family="Arial,Helvetica,sans-serif" font-size="32" font-weight="700" text-anchor="start" fill="#193C37">1. How a student reaches PrepAtlas</text>
+<text x="50" y="123" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#52655F">The browser is the window. The router is the road junction. The Pi is the small computer serving the app.</text>
+<text x="50" y="165" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#217462">STUDENT DEVICE</text>
+<text x="455" y="165" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#217462">HOME NETWORK</text>
+<text x="860" y="165" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" text-anchor="start" fill="#217462">CLOUD / INTERNET</text>
+<rect x="50" y="190" width="270" height="130" fill="#EFF6F2" stroke="#217462" stroke-width="1.3"/>
+<text x="68" y="222" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#193C37">Student browser</text>
+<text x="68" y="252" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Phone, tablet or laptop</text>
+<text x="68" y="276" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Shows PrepAtlas pages</text>
+<text x="68" y="300" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Keeps guest saves locally</text>
+<rect x="455" y="190" width="270" height="130" fill="#EFF6F2" stroke="#217462" stroke-width="1.3"/>
+<text x="473" y="222" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#193C37">Home router / Wi-Fi</text>
+<text x="473" y="252" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Connects home devices</text>
+<text x="473" y="276" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">192.168.86.x network</text>
+<text x="473" y="300" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Also provides Internet access</text>
+<rect x="860" y="190" width="290" height="130" fill="#EFF6F2" stroke="#217462" stroke-width="1.3"/>
+<text x="878" y="222" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#193C37">prepatlas.app</text>
+<text x="878" y="252" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Cloudflare DNS + web edge</text>
+<text x="878" y="276" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">HTTPS website responds</text>
+<text x="878" y="300" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Route to Pi: not yet verified</text>
+<rect x="455" y="420" width="270" height="230" fill="#EFF6F2" stroke="#217462" stroke-width="1.3"/>
+<text x="473" y="452" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#193C37">Raspberry Pi</text>
+<text x="473" y="482" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Linux / ARM64 computer</text>
+<text x="473" y="506" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">LAN IP: 192.168.86.26</text>
+<text x="473" y="530" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Docker Engine runs the app</text>
+<text x="473" y="554" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Container name: prepatlas</text>
+<text x="473" y="578" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">PrepAtlas: Next.js + Node</text>
+<text x="473" y="602" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Pi :3001 -&gt; container :3000</text>
+<rect x="50" y="460" width="270" height="130" fill="#EFF6F2" stroke="#217462" stroke-width="1.3"/>
+<text x="68" y="492" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#193C37">YouTube</text>
+<text x="68" y="522" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Approved lesson videos</text>
+<text x="68" y="546" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Chemistry / Calculus / Geo</text>
+<text x="68" y="570" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Stream to browser directly</text>
+<rect x="860" y="460" width="290" height="130" fill="#EFF6F2" stroke="#217462" stroke-width="1.3"/>
+<text x="878" y="492" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" text-anchor="start" fill="#193C37">Supabase cloud</text>
+<text x="878" y="522" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">Auth: student accounts</text>
+<text x="878" y="546" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">PostgreSQL: private progress</text>
+<text x="878" y="570" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#52655F">App sends account requests</text>
+<polyline points="320,255 455,255" fill="none" stroke="#8A9E96" stroke-width="1.5"/>
+<polygon points="455,255 446.0,251.0 446.0,259.0" fill="#8A9E96"/>
+<rect x="321.6796875" y="225" width="130.640625" height="21" fill="#FFFFFF" stroke="none" stroke-width="1.3"/>
+<text x="387" y="240" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#52655F">home page request</text>
+<polyline points="590,320 590,420" fill="none" stroke="#8A9E96" stroke-width="1.5"/>
+<polygon points="590,420 594.0,411.0 586.0,411.0" fill="#8A9E96"/>
+<rect x="528.18994140625" y="360" width="123.6201171875" height="21" fill="#FFFFFF" stroke="none" stroke-width="1.3"/>
+<text x="590" y="375" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#52655F">LAN access :3001</text>
+<polyline points="185,190 185,145 1005,145 1005,190" fill="none" stroke="#8A9E96" stroke-width="1.5"/>
+<polygon points="1005,190 1009.0,181.0 1001.0,181.0" fill="#8A9E96"/>
+<rect x="487.53662109375" y="130" width="204.9267578125" height="21" fill="#FFFFFF" stroke="none" stroke-width="1.3"/>
+<text x="590" y="145" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#52655F">public website lookup + HTTPS</text>
+<polyline points="1005,320 1005,370 710,370 710,420" fill="none" stroke="#8A9E96" stroke-width="1.5" stroke-dasharray="6 5"/>
+<polygon points="710,420 714.0,411.0 706.0,411.0" fill="#8A9E96"/>
+<rect x="794.48681640625" y="355" width="231.0263671875" height="21" fill="#FFFFFF" stroke="none" stroke-width="1.3"/>
+<text x="910" y="370" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#52655F">origin connection method unverified</text>
+<polyline points="185,320 185,460" fill="none" stroke="#8A9E96" stroke-width="1.5"/>
+<polygon points="185,460 189.0,451.0 181.0,451.0" fill="#8A9E96"/>
+<rect x="144.9794921875" y="380" width="80.041015625" height="21" fill="#FFFFFF" stroke="none" stroke-width="1.3"/>
+<text x="185" y="395" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#52655F">plays video</text>
+<polyline points="725,525 860,525" fill="none" stroke="#8A9E96" stroke-width="1.5"/>
+<polygon points="860,525 851.0,521.0 851.0,529.0" fill="#8A9E96"/>
+<polygon points="725,525 734.0,529.0 734.0,521.0" fill="#8A9E96"/>
+<rect x="749.83984375" y="495" width="84.3203125" height="21" fill="#FFFFFF" stroke="none" stroke-width="1.3"/>
+<text x="792" y="510" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#52655F">login + sync</text>
+<text x="50" y="701" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#52655F">Solid line: implemented / observed / owner-reported. Dashed line: unverified, proposed or disabled.</text>
+<rect x="50" y="754" width="1100" height="1" fill="#8A9E96" stroke="none" stroke-width="1.3"/>
+<text x="50" y="781" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#52655F">prepatlas.app: public HTTPS and Cloudflare DNS verified October 25, 2026. This does not prove the origin is the Pi.</text>
+<text x="50" y="804" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" text-anchor="start" fill="#52655F">Diagram is a logical map: Internet connections also travel through the home router. No router port forwarding is assumed.</text>
+<text x="1150" y="45" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="end" fill="#52655F">1 / 4</text>
+</svg>
