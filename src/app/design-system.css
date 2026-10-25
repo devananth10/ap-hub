@@ -110,9 +110,8 @@ input, select, textarea { accent-color: var(--teal); }
 .sidebar-note a { font-size: 12px; }
 .local-profile { padding: 14px 12px; margin: 8px 0 20px; min-height: 68px; border: 1px solid var(--control-border); border-radius: var(--radius-control); background: var(--surface); transition: background-color 140ms ease, border-color 140ms ease; }
 .local-profile:hover, .local-profile[aria-current="page"] { background: var(--teal-light); border-color: var(--teal); }
-.local-profile>span:nth-child(2) { min-width: 0; }
+.local-profile>span { min-width: 0; }
 .local-profile>svg { margin-left: auto; color: var(--teal); }
-.local-profile .avatar { background: var(--surface-alt); color: var(--teal); }
 .local-profile strong { font-size: 13px; }
 .local-profile small { font-size: 11px; }
 .avatar { background: var(--surface-alt); color: var(--ink); }
