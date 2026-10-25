@@ -10,7 +10,7 @@ Prepared October 25, 2026. This explains the existing project; it does not chang
 4. RepoFlow keeps that box on a shelf until the Raspberry Pi downloads it.
 5. The Pi runs the box as a container and sends website pages to the browser.
 6. The router connects devices at home and provides their Internet connection.
-7. `prepatlas.app` is the easy-to-remember website name. Cloudflare supplies DNS and the public HTTPS edge.
+7. `prepatlas.app` is the easy-to-remember website name. Cloudflare supplies DNS and the public HTTPS edge. Cloudflare Tunnel connects that edge to the Pi's PrepAtlas app.
 8. Supabase handles accounts and private cloud progress. YouTube sends the lesson video streams.
 9. PuTTY is our remote control for the Pi. It is not where the website lives.
 
@@ -29,7 +29,8 @@ Prepared October 25, 2026. This explains the existing project; it does not chang
 | Docker container `prepatlas` | Running app box | Pi port 3001 maps to app port 3000. Replacing the box can keep its named storage volume. |
 | PuTTY / SSH | Remote control + locked connection | Owner command-line access to the Pi, normally on TCP port 22. PuTTY is not a reverse proxy, browser or web host. |
 | `prepatlas.app` | Easy address | Public domain name. DNS tells clients which network address to contact. |
-| Cloudflare | Address book + HTTPS front door | Authoritative Cloudflare nameservers and a public HTTPS response containing PrepAtlas branding were observed. The exact origin route was not inspected. |
+| Cloudflare | Address book + HTTPS front door | Authoritative Cloudflare nameservers and a public HTTPS response containing PrepAtlas branding were observed. Cloudflare Tunnel carries website traffic to the Pi, as confirmed by owner-supplied feedback. |
+| Cloudflare Tunnel / cloudflared | Private passage to the Pi | The Pi's tunnel connector initiates an encrypted outbound connection to Cloudflare. Requests and responses travel through it to the app. This is separate from PuTTY/SSH; an inbound router port does not need to be opened. |
 | Supabase Auth | Account desk | Email sign-in, sessions and recovery. Google OAuth integration is prepared; registration and Google sign-in remain closed in the saved configuration. |
 | Google OAuth | Optional sign-in helper | An alternative identity provider through Supabase, not the place where notes or grades are stored. Activation is not assumed. |
 | Supabase PostgreSQL | Private cloud notebook | Profiles, courses, notes, topic progress, individual watched videos, instructor preferences, saved resources and completed Practice attempts. |
@@ -55,15 +56,18 @@ Prepared October 25, 2026. This explains the existing project; it does not chang
 ## Verification and boundaries
 
 - On October 25, public DNS for `prepatlas.app` returned Cloudflare addresses and nameservers. Its HTTPS page returned 200 with `server: cloudflare` and PrepAtlas branding.
-- The connection from Cloudflare to its origin was not inspected. Do not infer Cloudflare Tunnel, an open router port, reverse-proxy software or a particular public IP from these observations.
+- **October 25 correction:** owner-supplied feedback confirms that Cloudflare Tunnel connects Cloudflare and the Pi. The overview now shows this as a solid connection and names the `cloudflared` connector on the Pi. This confirmation is separate from our earlier DNS/HTTPS observations; no private tunnel configuration, credentials or service logs were accessed.
+- The Pi connector opens the tunnel outbound through the home router, and web requests/responses use that connection. No inbound router-port forwarding is required for Cloudflare Tunnel. The specific tunnel ID, ingress origin URL and whether the connector is a Linux service or separate container were not inspected; the diagram does not invent them.
 - The Pi host, running Docker container and port mappings come from previously verified diagnostics and the owner's terminal output. PuTTY usage is owner-reported.
 - The repository checkpoint at the start of this documentation task was `f622e3a`. App implementation is shown separately from live-service verification.
-- An SSH tunnel was suggested for private loopback login testing. It is not verified active. Successful public-domain login, OAuth, two-device sync and current Pi environment settings were not tested for this diagram.
+- An SSH tunnel was suggested for private loopback login testing. It is separate from the confirmed Cloudflare Tunnel and is not verified active. Successful public-domain login, OAuth, two-device sync and current Pi environment settings were not tested for this diagram. Only this optional private test path remains dashed; the public Cloudflare Tunnel connection is solid.
 - Previously, LAN HTTP login failed because its origin differed from `APP_ORIGIN`. Do not remove origin checks or weaken cookie security. A real shared HTTPS origin needs matching app/provider configuration and testing.
 - Last known private addresses: PC `192.168.86.28`; Pi `192.168.86.26`. These can change. `127.0.0.1` always means the device on which the browser or command is running.
 - Browser guest data belongs to an exact origin. Changing IP, hostname or port does not automatically transfer it.
 - Registry publishing is not website deployment. No automatic GitHub-to-Pi deployment pipeline is configured in this project.
 - Feedback data on Windows and the Pi are separate. A similarly named Docker volume on two machines is not shared storage.
+
+Cloudflare's [Tunnel documentation](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/) explains the outbound `cloudflared` connection and why inbound router ports are unnecessary. That provider guidance describes the mechanism; owner feedback establishes its use in this project.
 
 ## Editable diagrams
 
@@ -77,13 +81,15 @@ flowchart TB
   browser[Student browser]
   router[Home router / Wi-Fi]
   pi[Raspberry Pi / Linux<br/>Docker Engine / prepatlas container<br/>Pi port 3001 to app port 3000]
+  connector[cloudflared connector<br/>Runs on the Raspberry Pi]
   domain[prepatlas.app<br/>Cloudflare DNS + HTTPS edge]
   supabase[Supabase cloud<br/>Accounts + private PostgreSQL data]
   youtube[YouTube<br/>Approved lesson streams]
   browser -->|home access| router
   router -->|local network| pi
   browser -->|public HTTPS| domain
-  domain -.->|origin route unverified| pi
+  connector <-->|Cloudflare Tunnel / outbound initiated by Pi| domain
+  connector <-->|forwards website traffic| pi
   pi <-->|account + progress APIs| supabase
   browser -->|video playback| youtube
 ```
