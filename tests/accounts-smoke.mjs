@@ -1,5 +1,8 @@
 import assert from 'node:assert/strict';
 const base=process.env.BASE_URL||'http://127.0.0.1:3000';
+// A local preview may intentionally retain a separately configured HTTPS origin.
+// Assert that explicit trusted target, rather than inferring it from a response.
+const authOrigin=new URL(process.env.EXPECTED_AUTH_ORIGIN||base).origin;
 // Production prerenders useSearchParams forms behind their existing Suspense shells.
 const productionShells={'/login':'Loading sign in…','/signup':'Loading account form…','/forgot-password':'Loading recovery…','/reset-password':'Loading reset form…'};
 for(const [path,text] of [['/login','Welcome back.'],['/signup','Make room for your progress.'],['/forgot-password','Reset your password.'],['/reset-password','Choose a new password.'],['/account','Account &amp; settings'],['/progress','My progress'],['/privacy','DRAFT'],['/terms','DRAFT']]){
@@ -15,6 +18,6 @@ if(!account.configured){
  console.log('PASS unconfigured authentication fails honestly; guest routes work; private data unavailable');
 }
 for(const path of ['/auth/callback?code=unusable&next=https://evil.invalid','/auth/confirm?type=recovery&token_hash=unusable&next=//evil.invalid']){
- const r=await fetch(base+path,{redirect:'manual'});assert.equal(r.status,307);assert.ok(r.headers.get('location').startsWith(base+'/login?error='));assert.match(r.headers.get('cache-control'),/no-store/);
+ const r=await fetch(base+path,{redirect:'manual'});assert.equal(r.status,307);const destination=new URL(r.headers.get('location'));assert.equal(destination.origin,authOrigin);assert.equal(destination.pathname,'/login');assert.ok(destination.searchParams.has('error'));assert.ok(!destination.searchParams.has('code')&&!destination.searchParams.has('token_hash'));assert.match(r.headers.get('cache-control'),/no-store/);
 }
 console.log('PASS callback failures stay on the configured origin and never expose tokens');

@@ -5,6 +5,7 @@ import { findTopic, lessonHref } from "@/lib/courses";
 import { useStudy } from "./study-provider";
 import { ResourceCard } from "./resource-card";
 import type { PublishedResource } from "@/lib/resource-policy";
+import { useAuth } from "./auth-provider";
 export function ResourcesPage({ resources }: { resources: PublishedResource[] }) {
   const { saved } = useStudy();
   const items = resources.filter((resource) => saved.includes(resource.id));
@@ -20,6 +21,7 @@ export function ResourcesPage({ resources }: { resources: PublishedResource[] })
 }
 export function NotesPage() {
   const { notes } = useStudy();
+  const auth = useAuth();
   const items = Object.entries(notes).filter(([, note]) => note.trim());
-  return <div className="page"><div className="eyebrow">IN YOUR OWN WORDS</div><h1>My notes</h1><p className="page-description">A few thoughts, a useful connection, a question for later. All yours.</p>{items.length ? <div className="notes-grid">{items.map(([key, note]) => { const [courseId, topicId] = key.split("/"); const { course, topic } = findTopic(courseId, topicId); return <article key={key} className="panel note-preview"><span className="tiny-label">{course?.title || "Personal note"} · {topic?.number}</span><h2>{topic?.title || "Study note"}</h2><p>{note}</p><Link href={`/courses/${key}#notes`} className="text-button">Continue writing<ArrowRight size={16} /></Link></article>; })}</div> : <div className="empty-state panel"><StickyNote size={34} /><h2>Room for your own thinking.</h2><p>Notes are always optional. Open “My notes” inside a topic when something clicks.</p><Link className="button primary" href={lessonHref}>Open a topic<ArrowRight size={17} /></Link></div>}<p className="outline-disclaimer">Notes are saved in this browser on this device. Clearing browser data removes them.</p></div>;
+  return <div className="page"><div className="eyebrow">IN YOUR OWN WORDS</div><h1>My notes</h1><p className="page-description">A few thoughts, a useful connection, a question for later. All yours.</p>{items.length ? <div className="notes-grid">{items.map(([key, note]) => { const [courseId, topicId] = key.split("/"); const { course, topic } = findTopic(courseId, topicId); return <article key={key} className="panel note-preview"><span className="tiny-label">{course?.title || "Personal note"} · {topic?.number}</span><h2>{topic?.title || "Study note"}</h2><p>{note}</p><Link href={`/courses/${key}#notes`} className="text-button">Continue writing<ArrowRight size={16} /></Link></article>; })}</div> : <div className="empty-state panel"><StickyNote size={34} /><h2>Room for your own thinking.</h2><p>Notes are always optional. Open a topic and choose Show Notes when something clicks.</p><Link className="button primary" href={lessonHref}>Open a topic<ArrowRight size={17} /></Link></div>}<p className="outline-disclaimer">{auth.user ? "Your private notes sync to your account. Check saving status inside the topic or in Account." : "Guest notes are saved in this browser on this device. Clearing browser data removes them."}</p></div>;
 }

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { ArrowLeft, ArrowRight, Target } from "lucide-react";
+import { ArrowLeft, ArrowRight, ChevronDown, Target } from "lucide-react";
 import { courses } from "@/lib/courses";
 import { practiceCount, practiceHref, type PracticeScope } from "@/lib/practice-scope";
 import type { PracticeEntry } from "@/lib/practice";
@@ -26,13 +26,16 @@ export function PracticeCenter({ scope, entries }: { scope: PracticeScope; entri
         <div className="practice-focus-copy"><span className="tiny-label">YOUR FOCUS</span><h2>{label}</h2><p>{entries.length} MCQ {entries.length === 1 ? "question" : "questions"} available in this scope.</p></div>
         <div className="practice-focus-art"><AcademicArt theme={course?.artwork || "calculus"} compact /></div>
       </section>
+      <details className="practice-scope-controls" open={!topic}>
+      <summary><span>Change focus</span><small>Course, unit, and topic</small><ChevronDown size={16} aria-hidden="true" /></summary>
       <div className="practice-filters">
         <label>Course<select aria-label="Practice course" value={course?.id || ""} onChange={(event) => router.push(practiceHref(event.target.value ? { courseId: event.target.value } : {}))}><option value="">All courses</option>{courses.map((item) => <option key={item.id} value={item.id}>{item.title}</option>)}</select></label>
         <label>Unit<select aria-label="Practice unit" disabled={!course} value={unit?.number || ""} onChange={(event) => router.push(practiceHref({ courseId: course?.id, ...(event.target.value ? { unitNumber: Number(event.target.value) } : {}) }))}><option value="">All units</option>{course?.units.map((item) => <option key={item.number} value={item.number}>Unit {item.number} · {item.title}</option>)}</select></label>
         <label>Topic<select aria-label="Practice topic" disabled={!unit} value={topic?.id || ""} onChange={(event) => router.push(practiceHref({ courseId: course?.id, unitNumber: unit?.number, ...(event.target.value ? { topicId: event.target.value } : {}) }))}><option value="">All topics</option>{unit?.topics.map((item) => <option key={item.id} value={item.id}>{item.number} · {item.title}</option>)}</select></label>
       </div>
+      </details>
       <section className="panel practice-session" aria-label="Practice session">
-        <div className="practice-mode-row"><div className="practice-modes" role="group" aria-label="Practice format"><button className="selected" aria-pressed="true">MCQs <span>PRACTICE</span></button><button disabled>FRQs <span>COMING SOON</span></button><button disabled>Mixed <span>COMING SOON</span></button></div><Link className="small muted" href="/progress">Completed scores · My progress</Link></div>
+        <div className="practice-mode-row"><div className="practice-modes" role="group" aria-label="Practice format"><button className="selected" aria-pressed="true">MCQs <span>Practice</span></button><button disabled>FRQs <span>Coming soon</span></button><button disabled>Mixed <span>Coming soon</span></button></div><Link className="small muted" href="/progress">Completed scores · My progress</Link></div>
         {entries.length ? <PracticeSession key={practiceHref(scope)} entries={entries} /> : <div className="empty-state practice-empty"><Target size={32} /><h2>{courseHasPractice ? `Practice questions for ${course?.title} ${label} are coming soon.` : emptyTitle}</h2><p>{courseHasPractice ? "Explore the published questions elsewhere in this course, or return to your topic." : "There are no published questions in this course yet. Your selected study context stays available below."}</p>{courseHasPractice && <Link className="button primary" href={practiceHref({ courseId: course!.id })}>Explore available {course!.title} practice<ArrowRight size={15} /></Link>}<Link className="button secondary" href={topic ? `/courses/${course!.id}/${topic.id}` : course ? `/courses/${course.id}` : "/courses"}>{topic ? "Back to topic" : course ? `Back to ${course.title}` : "Browse courses"}<ArrowRight size={15} /></Link></div>}
       </section>
       <div className="lesson-bottom-nav"><Link className="text-button" href={course ? `/courses/${course.id}` : "/courses"}><ArrowLeft size={15} />{course ? `Back to ${course.title}` : "Browse courses"}</Link><span className="small muted">FRQs and mixed sessions are not available yet.</span></div>

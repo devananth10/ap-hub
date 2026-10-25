@@ -30,9 +30,11 @@ export function PracticeQuestion({ practice, answer, onSelect, onCheck, onRetry,
         <PracticeFigure questionId={practice.id} />
         <PracticeTable questionId={practice.id} />
         <div className="practice-options">{options.map((option, index) => (
-          <label key={option} className={`${selected === index ? "selected" : ""} ${checked && index === correctIndex ? "correct" : ""}`}>
+          <label key={option} className={`${selected === index ? "selected" : ""} ${checked && index === correctIndex ? "correct" : ""} ${checked && selected === index && index !== correctIndex ? "incorrect" : ""}`}>
             <input type="radio" name={groupName} value={String(index)} checked={selected === index} onChange={() => onSelect(index)} />
-            <span>{String.fromCharCode(65 + index)}</span>{option}
+            <span>{String.fromCharCode(65 + index)}</span><span className="answer-text">{option}</span>
+            {checked && index === correctIndex && <small className="answer-state">{selected === index ? "Your answer · Correct" : "Correct answer"}</small>}
+            {checked && selected === index && index !== correctIndex && <small className="answer-state">Your answer · Incorrect</small>}
           </label>
         ))}</div>
       </fieldset>

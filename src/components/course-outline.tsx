@@ -38,7 +38,7 @@ export function CourseOutline({ course }: { course: Course }) {
       </div>
       <div className="outline-layout">
         <section>
-          <div className="section-heading"><h2>Course outline</h2><span className="small muted">{course.units.length} units in this preview</span></div>
+          <div className="section-heading"><h2>Course outline</h2><span className="small muted">{course.units.length} units</span></div>
           <div className="units-list">{course.units.map((unit, index) => {
             const unitScope = { courseId: course.id, unitNumber: unit.number };
             const count = countPractice(unitScope);
