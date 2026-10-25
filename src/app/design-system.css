@@ -337,7 +337,11 @@ kbd { font-size: 11px; padding: 0 4px; border-radius: 4px; }
 .auth-links { font-size: 14px; gap: 12px 20px; }
 .account-notice, .account-message { border-radius: 14px; padding: 18px 20px; font-size: 14px; line-height: 1.8; }
 .sync-status { font-size: 13px; line-height: 1.7; }
-.account-menu-panel { padding: 20px; border-radius: 16px; width: 260px; box-shadow: var(--shadow-raised); font-size: 14px; }
+.account-menu>summary { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; }
+.account-menu .avatar { width: 40px; height: 40px; border: 1px solid var(--control-border); background: var(--teal-light); color: var(--teal); font-size: 13px; }
+.account-menu>summary:hover .avatar, .account-menu[open] .avatar { border-color: var(--teal); }
+.account-menu-panel { top: calc(100% + 10px); padding: 20px; border-radius: 16px; width: 260px; box-shadow: var(--shadow-raised); font-size: 14px; }
+.account-menu-panel>strong { overflow-wrap: anywhere; }
 .account-menu-panel small { overflow-wrap: anywhere; }
 .account-menu-panel a, .account-menu-panel button { min-height: 36px; display: flex; align-items: center; }
 .conflict-versions pre { border-radius: 12px; font-size: 14px; }
