@@ -62,6 +62,18 @@ The container's `APP_ORIGIN` is explicitly set to `http://127.0.0.1:3001`, match
 
 ## Configured Raspberry Pi image
 
+### Public HTTPS through Cloudflare Tunnel
+
+Keep the Pi's existing Compose project, port mapping, image and feedback volume. Set `APP_ORIGIN` in the private runtime configuration to the public PrepAtlas HTTPS origin. The Cloudflare Tunnel can continue forwarding to the existing local port. The incoming browser origin and the origin used to generate auth redirects must match.
+
+The base Compose file and the direct `docker run` example below set a loopback origin for private testing. For the Pi's public deployment, set `APP_ORIGIN` explicitly in its existing service `environment` block or append `-f compose.production.yaml` after the other Compose files for service `app`. Pass the private environment file using `--env-file` when using this override. Keep `APP_REGISTRATION_ENABLED` false and retain the existing server-only `AUTH_FLOW_SECRET`. A container restart alone will keep its old environment. Recreate the app service with `docker compose [existing options] up -d --no-deps --no-build --force-recreate app`, using the same project and files as the running deployment and including the override if applicable. Changing the runtime origin alone requires no image rebuild.
+
+Check the Supabase Site URL and the exact allowed `/auth/callback?next=%2Freset-password` URL on the public HTTPS origin. PrepAtlas's reset template expects the public `/auth/confirm` route with `token_hash={{ .TokenHash }}` and `type=recovery`. That route verifies the link and sets the short-lived proof used by the new-password form. Compare against [Supabase redirect URLs](https://supabase.com/docs/guides/auth/redirect-urls) and [email templates](https://supabase.com/docs/guides/auth/auth-email-templates). Once the public callback points to the correct host, test email delivery with an authorized test account.
+
+For a check that sends no email, request `/auth/callback` and `/auth/confirm` without parameters and inspect only the redirect destination. Both should return to `/login` on the public host. A malformed email submitted to the recovery endpoint from the public origin should reach email validation. If a real test still fails, compare Supabase Auth `/recover` logs against the request time. On builds with recovery diagnostics, filter the app service logs for `[auth] Password recovery provider error` to see the provider's numeric status without addresses, tokens or response details.
+
+### Building the image and private Pi testing
+
 The message "Cloud accounts are not configured yet" means the app rejected or lacks account configuration; it does not mean the student database was deleted. The Pi's `/api/account` returned `configured: false` during diagnosis. A common cause is rebuilding with `docker buildx --build-arg NAME` without first exporting the named variable: that does not load `.env.local`. Next embeds the two public settings when building, so adding `--env-file` only to `docker run` cannot repair an image built without them.
 
 From the Windows project folder, the following loads `.env.local` directly through Compose, requires both public build settings, builds AMD64 and ARM64, and uploads to the existing registry tag:

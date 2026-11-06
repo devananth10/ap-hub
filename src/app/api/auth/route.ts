@@ -1,4 +1,4 @@
-import { body, json } from "@/lib/account-server";
+import { body, json, OriginMismatchError } from "@/lib/account-server";
 import { serverSupabase } from "@/lib/supabase/server";
 import { appOrigin, registrationEnabled } from "@/lib/supabase/config";
 import { validEmail, validPassword, safeReturnTo } from "@/lib/account-policy";
@@ -40,8 +40,14 @@ export async function POST(request:Request){
   if(action==="forgot"){
     if(!recoveryReady())return json({error:"Password recovery still needs server setup. Guest studying remains available."},503);
     const redirect=new URL("/auth/callback",appOrigin());redirect.searchParams.set("next","/reset-password");
-    // Deliberately identical result for unknown and known addresses.
-    await client.auth.resetPasswordForEmail(input.email,{redirectTo:redirect.toString()});
+    // Keep the response identical for known and unknown addresses, including provider rejections.
+    const { error } = await client.auth.resetPasswordForEmail(input.email, { redirectTo: redirect.toString() });
+    if (error) {
+      const status = error.status;
+      console.warn("[auth] Password recovery provider error", {
+        status: typeof status === "number" && Number.isInteger(status) && status >= 0 && status <= 599 ? status : undefined,
+      });
+    }
     return json({ok:true,message:"If recovery is available for that address, a reset email will arrive. Check your inbox and spam folder."});
   }
   if(action==="login"?(typeof input.password!=="string"||input.password.length<1||input.password.length>128):!validPassword(input.password))return json({error:"Enter a valid password. New passwords need 12–128 characters."},400);
@@ -54,5 +60,10 @@ export async function POST(request:Request){
     return error?json({error:"Sign-in was unsuccessful. Check your details, email confirmation, or try password recovery."},400):json({ok:true,next});
   }
   return json({error:"Unknown authentication action."},400);
- }catch{return json({error:"Authentication is temporarily unavailable. Your local study data is unchanged."},503);}
+ } catch (error) {
+   if (error instanceof OriginMismatchError) {
+     return json({ error: "Account requests are unavailable on this address. Open PrepAtlas from its usual address and try again." }, 403);
+   }
+   return json({ error: "Authentication is temporarily unavailable. Your local study data is unchanged." }, 503);
+ }
 }

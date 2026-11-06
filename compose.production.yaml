@@ -1,0 +1,6 @@
+# Add to the Pi's existing Compose files for the app service behind the HTTPS tunnel.
+services:
+  app:
+    environment:
+      APP_ORIGIN: ${APP_ORIGIN:?Set APP_ORIGIN to the public HTTPS origin for the Pi deployment}
+      APP_REGISTRATION_ENABLED: "false"

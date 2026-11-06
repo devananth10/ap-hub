@@ -4,8 +4,11 @@ import { appOrigin } from "./supabase/config";
 import { serverSupabase } from "./supabase/server";
 export const privateHeaders = { "Cache-Control":"private, no-store, no-cache, max-age=0", "Pragma":"no-cache", "Expires":"0", "Vary":"Cookie", "X-Content-Type-Options":"nosniff", "Referrer-Policy":"no-referrer" };
 export function json(body: unknown, status=200) { return NextResponse.json(body,{status,headers:privateHeaders}); }
+export class OriginMismatchError extends Error {}
+
 export async function body(request: Request, limit=420000) {
-  if(!isSameOrigin(request.headers.get("origin"),appOrigin()) || !request.headers.get("content-type")?.startsWith("application/json")) throw new Error("origin");
+  if (!isSameOrigin(request.headers.get("origin"), appOrigin())) throw new OriginMismatchError();
+  if (!request.headers.get("content-type")?.startsWith("application/json")) throw new Error("content type");
   if(Number(request.headers.get("content-length"))>limit) throw new Error("size");
   const reader=request.body?.getReader();if(!reader)throw new Error("body");
   const chunks:Uint8Array[]=[];let size=0;
