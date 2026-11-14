@@ -1,26 +1,26 @@
 /* Shared presentation contract. Feature layouts and saved-state behavior stay
    in their existing modules. Keep new surface, control and type rules here. */
 :root {
-  --bg: #f6f8f6;
+  --bg: #f7f8fa;
   --surface: #ffffff;
-  --surface-alt: #eef3ef;
-  --sidebar-bg: #fbfcfb;
-  --ink: #182c23;
-  --muted: #596d60;
-  --border: #dce5de;
-  --control-border: #789080;
-  --teal: #196746;
-  --teal-light: #e7f2ea;
+  --surface-alt: #f5f7f7;
+  --sidebar-bg: #ffffff;
+  --ink: #243336;
+  --muted: #627074;
+  --border: #e6eaeb;
+  --control-border: #75868b;
+  --teal: #267668;
+  --teal-light: #edf5f1;
   --on-brand: #ffffff;
-  --hero: #153f2f;
-  --hero-ink: #f4faf5;
-  --hero-muted: #c6dfcf;
-  --focus-ring: #267950;
+  --hero: #25383f;
+  --hero-ink: #f4f7f8;
+  --hero-muted: #c2cfd3;
+  --focus-ring: #267668;
   --danger-ink: #963e35;
   --danger-bg: #fbefeb;
   --danger-border: #b9685c;
-  --shadow-card: 0 4px 20px #182c2305;
-  --shadow-raised: 0 12px 32px #182c230a;
+  --shadow-card: 0 4px 20px #24333605;
+  --shadow-raised: 0 12px 32px #2433360a;
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
@@ -38,21 +38,21 @@
 }
 
 :root[data-theme="dark"] {
-  --bg: #0f1713;
-  --surface: #17221c;
-  --surface-alt: #1e2d24;
-  --sidebar-bg: #121d17;
-  --ink: #eaf2ec;
-  --muted: #a4b8a9;
-  --border: #304338;
-  --control-border: #688674;
-  --teal: #9ddfba;
-  --teal-light: #233d2e;
-  --on-brand: #10261a;
-  --hero: #173f2c;
-  --hero-ink: #f4faf5;
-  --hero-muted: #c6dfcf;
-  --focus-ring: #9ddfba;
+  --bg: #101b1d;
+  --surface: #192629;
+  --surface-alt: #1e2d30;
+  --sidebar-bg: #192629;
+  --ink: #e3eeeb;
+  --muted: #a2b3b3;
+  --border: #304044;
+  --control-border: #70878d;
+  --teal: #87cbb6;
+  --teal-light: #263f39;
+  --on-brand: #14292d;
+  --hero: #223338;
+  --hero-ink: #f4f7f8;
+  --hero-muted: #c2cfd3;
+  --focus-ring: #87cbb6;
   --danger-ink: #f1b9ad;
   --danger-bg: #3d2823;
   --danger-border: #bd806f;
@@ -131,10 +131,10 @@ kbd { font-size: 11px; padding: 0 4px; border-radius: 4px; }
 .welcome-copy h2 { font-size: clamp(34px, 3.5vw, 48px); line-height: 1.12; letter-spacing: -.04em; font-weight: 600; margin-top: 18px; }
 .welcome-copy p { font-size: 15px; line-height: 1.7; color: var(--hero-muted); margin-top: 16px; }
 .hero-actions { gap: 16px; margin-top: 24px; }
-.hero-button { background: #edf7ee; border-color: #edf7ee; color: #183f2b; font-size: 14px; padding: 12px 18px; }
+.hero-button { background: #edf5f1; border-color: #edf5f1; color: #24594e; font-size: 14px; padding: 12px 18px; }
 .hero-study-link { color: var(--hero-ink); font-size: 14px; min-height: 44px; }
 .hero-practice-disclosure { font-size: 12px; color: var(--hero-muted); margin-top: 16px; }
-.hero-art-wrap { width: 36%; max-width: 300px; margin: 0 0 0 28px; color: #b4d6c1; }
+.hero-art-wrap { width: 36%; max-width: 300px; margin: 0 0 0 28px; color: var(--hero-muted); }
 .courses-section { margin-top: 40px; }
 .course-grid { gap: var(--space-5); }
 .course-card { border-radius: var(--radius-card); box-shadow: var(--shadow-card); transition: border-color 140ms ease, box-shadow 140ms ease; }
@@ -145,7 +145,7 @@ kbd { font-size: 11px; padding: 0 4px; border-radius: 4px; }
 .blue { --course-bg: #e8eff5; --course-fg: #3f6581; }
 .rose { --course-bg: #f4e9ed; --course-fg: #87526a; }
 .amber { --course-bg: #f4f0df; --course-fg: #73612e; }
-[data-theme="dark"] .teal { --course-bg: #213d2f; --course-fg: #a4d3b5; }
+[data-theme="dark"] .teal { --course-bg: #233438; --course-fg: #9fcebf; }
 [data-theme="dark"] .violet { --course-bg: #332d41; --course-fg: #c6b5e1; }
 [data-theme="dark"] .peach { --course-bg: #403227; --course-fg: #dfbd9d; }
 [data-theme="dark"] .blue { --course-bg: #273b48; --course-fg: #accfe6; }
@@ -229,6 +229,9 @@ kbd { font-size: 11px; padding: 0 4px; border-radius: 4px; }
 .resource-card { gap: 16px; padding: 24px 0; }
 .resource-card .tiny-label, .resource-original { font-size: 12px; }
 .video-info { padding: 24px; gap: 16px; }
+.video-stage { background: var(--bg); }
+.video-poster, .video-empty { background: var(--hero); color: var(--hero-ink); }
+.poster-top, .poster-subtitle, .poster-bottom, .video-empty p, .video-empty-copy>span:last-child { color: var(--hero-muted); }
 .video-info h2 { font-size: 19px; line-height: 1.5; }
 .video-info .small, .video-sequence, .player-fallback { font-size: 13px; }
 .video-info .text-button { font-size: 13px; min-height: 44px; }
