@@ -19,6 +19,7 @@ image = "api.repoflow.io/prepatlas/prepatlas/studyhub-app@sha256:" + "a" * 64
 class ReleasePreparationTests(unittest.TestCase):
     def setUp(self):
         self.calls = []
+        self.current = "prepatlas-new"
         self.existing = "prepatlas-new\n"
         self.old = {
             "Id": "a" * 64,
@@ -40,7 +41,7 @@ class ReleasePreparationTests(unittest.TestCase):
         command = arguments[1:]
         if command[:2] == ["container", "ls"]:
             output = self.existing
-        elif command == ["inspect", "prepatlas-new"]:
+        elif command == ["inspect", self.current]:
             output = json.dumps([self.old])
         elif command[:2] == ["image", "inspect"]:
             output = json.dumps([{"Architecture": "arm64", "Os": "linux"}])
@@ -53,7 +54,7 @@ class ReleasePreparationTests(unittest.TestCase):
                 patch.object(release.Path, "is_file", return_value=True), \
                 patch.object(release.subprocess, "run", side_effect=self.run_docker), \
                 contextlib.redirect_stdout(io.StringIO()):
-            release.prepare(image, "prepatlas-release-test")
+            release.prepare(image, "prepatlas-release-test", current=self.current)
 
     def test_stopped_release_keeps_ports_volume_environment_and_security(self):
         self.prepare()
@@ -105,6 +106,17 @@ class ReleasePreparationTests(unittest.TestCase):
         with self.assertRaises(RuntimeError):
             self.prepare()
         self.assertEqual(len(self.calls), 1)
+
+    def test_explicit_current_release_is_inspected_and_used_for_all_mounts(self):
+        self.current = "prepatlas-release-0a2bca1"
+        self.existing = self.current + "\nprepatlas-new\n"
+        self.prepare()
+        commands = [call[0] for call in self.calls]
+        self.assertIn(["inspect", self.current], commands)
+        self.assertNotIn(["inspect", "prepatlas-new"], commands)
+        create = next(command for command in commands if command[0] == "create")
+        self.assertEqual(create[create.index("--volumes-from") + 1], self.current)
+        self.assertEqual(len([argument for argument in create if argument == "--publish"]), 2)
 
 
 if __name__ == "__main__":

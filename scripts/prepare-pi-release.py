@@ -130,9 +130,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("image", help="Verified registry image pinned by digest")
     parser.add_argument("name", help="New, unique container name")
+    parser.add_argument("--current", default="prepatlas-new", help="Existing running container to preserve for rollback")
     arguments = parser.parse_args()
     try:
-        prepare(arguments.image, arguments.name)
+        prepare(arguments.image, arguments.name, current=arguments.current)
     except RuntimeError as error:
         raise SystemExit(str(error) + " Production was not stopped.")
     except (ValueError, KeyError, OSError):
