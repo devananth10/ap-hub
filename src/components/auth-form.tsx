@@ -1,14 +1,54 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { MailCheck } from "lucide-react";
 import { useSearchParams } from "next/navigation";
 import { accountRequest,useAuth } from "./auth-provider";
 import { safeReturnTo } from "@/lib/account-policy";
 export function AuthForm({mode}:{mode:"login"|"signup"|"forgot"|"password"}){
  const auth=useAuth(),params=useSearchParams();const [email,setEmail]=useState(""),[password,setPassword]=useState(""),[busy,setBusy]=useState(false),[message,setMessage]=useState(""),[error,setError]=useState("");
+ const [recoverySent, setRecoverySent] = useState(false);
+ const recoveryHeading = useRef<HTMLHeadingElement>(null);
+ useEffect(() => {
+   if (mode === "forgot" && recoverySent) recoveryHeading.current?.focus();
+ }, [mode, recoverySent]);
  const next=safeReturnTo(params.get("next"));const title={login:"Welcome back.",signup:"Make room for your progress.",forgot:"Reset your password.",password:"Choose a new password."}[mode];
  const enabled=auth.ready&&auth.configured&&(mode!=="signup"||auth.registration);
- async function submit(action:string=mode){setBusy(true);setMessage("");setError("");try{const result=await accountRequest("/api/auth",{action,email,password,next});if(result.url)window.location.assign(result.url);else if(action==="login"){await auth.refresh();window.location.assign(next);}else{setMessage(result.message||"Saved.");setPassword("");await auth.refresh();}}catch(e){setError((e as Error).message);}finally{setBusy(false);}}
+ async function submit(action: string = mode) {
+   setBusy(true);
+   setMessage("");
+   setError("");
+   try {
+     const result = await accountRequest("/api/auth", { action, email, password, next });
+     if (result.url) window.location.assign(result.url);
+     else if (action === "login") {
+       await auth.refresh();
+       window.location.assign(next);
+     } else {
+       if (action === "forgot") setRecoverySent(true);
+       else setMessage(result.message || "Saved.");
+       setPassword("");
+       await auth.refresh();
+     }
+   } catch (error) {
+     setError((error as Error).message);
+   } finally {
+     setBusy(false);
+   }
+ }
+ if (mode === "forgot" && recoverySent) {
+   return <div className="page account-page"><section className="panel auth-card recovery-success-card" aria-labelledby="recovery-success-heading">
+     <span className="eyebrow">PREPATLAS · YOUR ACCOUNT</span>
+     <div className="recovery-success-content" role="status" aria-live="polite" aria-atomic="true">
+       <span className="recovery-success-icon" aria-hidden="true"><MailCheck size={32} strokeWidth={1.6} /></span>
+       <h1 id="recovery-success-heading" ref={recoveryHeading} tabIndex={-1}>Check your email!</h1>
+       <p>If an account exists for that email address, we'll send a password-reset link shortly.</p>
+       <p className="recovery-success-hint">Don't see it? Check your spam folder.</p>
+     </div>
+     <Link className="button primary" href={`/login?next=${encodeURIComponent(next)}`}>Back to sign in</Link>
+     <Link className="recovery-guest-link" href="/">Continue as a guest</Link>
+   </section></div>;
+ }
  return <div className="page account-page"><section className="panel auth-card"><span className="eyebrow">PREPATLAS · YOUR ACCOUNT</span><h1>{title}</h1><p>{mode==="forgot"?"We’ll send a recovery link if one is available for your address.":mode==="password"?"Use the recovery link from your email. Your study data stays in your account.":"Keep your notes and learning progress together across devices."}</p>
  {!auth.ready?<p role="status">Checking account availability…</p>:!auth.configured?<div className="account-notice" role="status">Cloud accounts are not configured yet. You can keep studying as a guest; your work is saved in this browser.</div>:!auth.registration&&(mode==="signup"||mode==="login")?<div className="account-notice">New accounts and Google sign-in are closed pending setup and privacy review. Existing test accounts can use email sign-in.</div>:null}
  {(params.get("error")||auth.error)&&<p role="alert" className="form-error">{auth.error||"The sign-in link expired or was canceled. Please try again or request a new link."}</p>}

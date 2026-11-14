@@ -334,6 +334,16 @@ kbd { font-size: 11px; padding: 0 4px; border-radius: 4px; }
 .auth-card input, .account-section input:not([type="checkbox"]) { min-height: 48px; padding: 12px 14px; border-radius: var(--radius-control); font-size: 16px; border-color: var(--control-border); background: var(--bg); }
 .auth-card form>.button { width: 100%; }
 .auth-card small { font-size: 12px; line-height: 1.7; }
+.recovery-success-card { text-align: center; }
+.recovery-success-content { padding: 32px 0; animation: recovery-success-enter 180ms ease-out both; }
+.recovery-success-icon { width: 72px; height: 72px; margin: 0 auto 24px; display: grid; place-items: center; border: 1px solid var(--border); border-radius: 24px; background: var(--teal-light); color: var(--teal); }
+.recovery-success-content h1 { font-size: clamp(28px, 4vw, 34px); line-height: 1.2; letter-spacing: -.035em; margin-bottom: 16px; }
+.recovery-success-content p { max-width: 36ch; margin: 0 auto; color: var(--muted); }
+.recovery-success-content .recovery-success-hint { margin-top: 20px; font-size: 13px; }
+.recovery-success-card>.button { width: 100%; min-height: 48px; }
+.recovery-guest-link { display: inline-flex; align-items: center; min-height: 44px; margin-top: 12px; font-size: 14px; color: var(--teal); }
+@keyframes recovery-success-enter { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { .recovery-success-content { animation: none; } }
 .auth-links { font-size: 14px; gap: 12px 20px; }
 .account-notice, .account-message { border-radius: 14px; padding: 18px 20px; font-size: 14px; line-height: 1.8; }
 .sync-status { font-size: 13px; line-height: 1.7; }
