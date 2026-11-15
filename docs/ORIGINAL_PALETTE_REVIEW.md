@@ -2,6 +2,8 @@
 
 Status: restored locally for owner color approval; no Docker image built or pushed and no deployment performed.
 
+Subsequent owner approval: the original palette in `2d7ff95` was approved. For release preparation, the sole authorized color adjustment is light-mode muted text `#657377` → `#657177` (two green-channel steps darker), improving its contrast on `#edf5f1` from 4.43:1 to 4.53:1. All other approved colors remain unchanged. The historical review and results below describe the original review checkpoint; release verification is recorded separately.
+
 ## Historical reference
 
 The retained registry image `api.repoflow.io/prepatlas/prepatlas/studyhub-app@sha256:70e9e5fb81d92646a1b1649198e14e8c8fbdfd405e8cd730a821bd3d11793261` is recorded in `docs/DOCKER.md` at Git checkpoint `f622e3a`. Its compiled CSS was extracted without starting the application. Its base palette and relevant component colors match that checkpoint's `src/app/globals.css`, which remains unchanged in this restoration.

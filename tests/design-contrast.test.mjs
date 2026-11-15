@@ -54,11 +54,12 @@ for (const [theme,palette] of [['light',light],['dark',dark]]) {
   });
 }
 
-test('the original deployment palette is retained exactly in both themes',()=>{
+test('the approved original palette is retained with only the light muted-ink contrast correction',()=>{
   // Verified against the archived October 21 image at digest 70e9e5fb...393261
   // and its matching Git source f622e3a, rather than the later green redesign.
+  // The owner authorized only the two-step light muted-ink correction for release.
   const original = {
-    light:{'--bg':'#f7f8fa','--surface':'#ffffff','--surface-alt':'#f5f7f7','--ink':'#243336','--muted':'#657377','--border':'#e6eaeb','--teal':'#267668','--teal-light':'#edf5f1','--hero':'#174b43'},
+    light:{'--bg':'#f7f8fa','--surface':'#ffffff','--surface-alt':'#f5f7f7','--ink':'#243336','--muted':'#657177','--border':'#e6eaeb','--teal':'#267668','--teal-light':'#edf5f1','--hero':'#174b43'},
     dark:{'--bg':'#101b1d','--surface':'#192629','--surface-alt':'#1e2d30','--ink':'#e3eeeb','--muted':'#a2b3b3','--border':'#304044','--teal':'#87cbb6','--teal-light':'#263f39','--hero':'#163e38'},
   };
   for(const [theme,palette] of [['light',light],['dark',dark]]) {
