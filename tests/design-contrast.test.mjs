@@ -5,6 +5,7 @@ import test from 'node:test';
 // Check the actual shipped palettes, not a copied test palette. This prevents
 // future cosmetic adjustments from quietly reducing text/control contrast.
 const css = readFileSync(new URL('../src/app/design-system.css', import.meta.url), 'utf8');
+const baseCSS = readFileSync(new URL('../src/app/globals.css', import.meta.url), 'utf8');
 const tokens = block => Object.fromEntries([...block.matchAll(/(--[\w-]+):\s*(#[\da-f]{6})\s*;/gi)].map(([,name,value]) => [name,value]));
 const light = tokens(css.match(/:root\s*\{([^}]+)\}/s)[1]);
 const dark = tokens(css.match(/:root\[data-theme="dark"\]\s*\{([^}]+)\}/s)[1]);
@@ -39,11 +40,31 @@ for (const [theme,palette] of [['light',light],['dark',dark]]) {
     }
   });
   test(`${theme} course category labels remain readable on their subject surfaces`,()=>{
+    // Category text uses its own historic ink color, independently of the
+    // decorative subject icon color. Test the actual label foreground.
+    const categoryInk = css.match(/\.subject-category\s*\{[^}]*color:\s*(#[\da-f]{6})/i)?.[1];
+    assert.ok(categoryInk, 'Missing category text color');
     for(const subject of ['teal','violet','peach','blue','rose','amber']) {
       const selector = theme==='dark' ? `\\[data-theme="dark"\\] \\.${subject}` : `^\\.${subject}`;
-      const block = css.match(new RegExp(`${selector} \\{([^}]+)\\}`,'m'));
+      const block = css.match(new RegExp(`${selector} \\{([^}]+)\\}`,'m'))
+        || baseCSS.match(new RegExp(`(?:^|\\})\\s*\\.${subject} \\{([^}]+)\\}`));
       assert.ok(block, `Missing ${theme}/${subject} palette`);
-      meets(tokens(block[1]),'--course-fg','--course-bg',4.5);
+      meets({...tokens(block[1]), '--category-ink':categoryInk},'--category-ink','--course-bg',4.5);
     }
   });
 }
+
+test('the original deployment palette is retained exactly in both themes',()=>{
+  // Verified against the archived October 21 image at digest 70e9e5fb...393261
+  // and its matching Git source f622e3a, rather than the later green redesign.
+  const original = {
+    light:{'--bg':'#f7f8fa','--surface':'#ffffff','--surface-alt':'#f5f7f7','--ink':'#243336','--muted':'#657377','--border':'#e6eaeb','--teal':'#267668','--teal-light':'#edf5f1','--hero':'#174b43'},
+    dark:{'--bg':'#101b1d','--surface':'#192629','--surface-alt':'#1e2d30','--ink':'#e3eeeb','--muted':'#a2b3b3','--border':'#304044','--teal':'#87cbb6','--teal-light':'#263f39','--hero':'#163e38'},
+  };
+  for(const [theme,palette] of [['light',light],['dark',dark]]) {
+    for(const [name,value] of Object.entries(original[theme])) assert.equal(palette[name],value,`${theme}/${name}`);
+  }
+  assert.match(css,/\.hero-button\s*\{[^}]*background:\s*#e8edda/);
+  assert.match(css,/\.topbar\s*\{[^}]*background:\s*var\(--surface\)/);
+  assert.match(css,/\.practice-focus\s*\{[^}]*background:\s*var\(--hero\)/);
+});
